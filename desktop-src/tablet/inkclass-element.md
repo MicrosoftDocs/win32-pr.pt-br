@@ -4,12 +4,12 @@ ms.assetid: 7c064ff9-e0d9-4be4-be83-c10bbfd71134
 title: Elemento InkClass
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 78faa7a0d331ba6e904154891d7f53d8a143115d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 128a74e758248a8965c974603e3825899961ff10
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110334"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432418"
 ---
 # <a name="inkclass-element"></a>Elemento InkClass
 
@@ -23,7 +23,7 @@ Representa os traços de tinta coletados em um espaço de tinta.
 
 ## <a name="parent-elements"></a>Elementos pai
 
-[**Senha**](drawing-element.md)
+[**Desenho**](drawing-element.md)
 
 ## <a name="child-elements"></a>Elementos filho
 
@@ -37,7 +37,7 @@ Nenhum.
 
 
 
-|              |                                            |
+|  Elemento     | Valor                                                     |
 |--------------|--------------------------------------------|
 | Tipo de elemento | **xs:string**                              |
 | Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk |

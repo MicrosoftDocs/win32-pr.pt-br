@@ -4,12 +4,12 @@ description: Identifica a \_ propriedade de \_ tachado PKEY fontproperties de in
 ms.assetid: 18ee653d-db01-4615-a85d-ad4ac6a0f422
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b07804a74671bb219b34b1c67580af083fd5c34c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9b684704fdd90a8dd1b88b14db2b52540b15fccb
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366550"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443787"
 ---
 # <a name="ui_pkey_fontproperties_strikethrough"></a>Interface do usuário \_ PKEY \_ fontproperties \_ tachado
 
@@ -17,12 +17,12 @@ Identifica a \_ propriedade de \_ tachado PKEY fontproperties de interface do us
 
 ```
 propertyDescription
-   name = UI_PKEY_FontProperties_Strikethrough
-   shellPKey = UI_PKEY_FontProperties_Strikethrough
-   formatID = 00000306-7363-696e-8441798acf5aebb7
-   propID = 306
-   typeInfo
-      type = UI_FONTPROPERTIES
+   name = UI_PKEY_FontProperties_Strikethrough
+   shellPKey = UI_PKEY_FontProperties_Strikethrough
+   formatID = 00000306-7363-696e-8441798acf5aebb7
+   propID = 306
+   typeInfo
+      type = UI_FONTPROPERTIES
 ```
 
 ## <a name="remarks"></a>Comentários
@@ -41,7 +41,7 @@ A tabela a seguir descreve as propriedades e o resultado da interface do usuári
 
 
 
-|                                  |                                                                              |
+|   Propriedade                       |    Resultado da IU                                                                 |
 |----------------------------------|------------------------------------------------------------------------------|
 | `UI_FONTPROPERTIES_NOTAVAILABLE` | O botão **tachado** está desabilitado e só pode ser definido pelo aplicativo. |
 | `UI_FONTPROPERTIES_NOTSET`       | O botão **tachado** não está selecionado.                                    |
@@ -49,7 +49,7 @@ A tabela a seguir descreve as propriedades e o resultado da interface do usuári
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -64,6 +64,6 @@ A tabela a seguir descreve as propriedades e o resultado da interface do usuári
 [Controle de fonte](windowsribbon-controls-fontcontrol.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

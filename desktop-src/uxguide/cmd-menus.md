@@ -1,33 +1,33 @@
 ---
-title: Menus (noções básicas de Design)
-description: Os menus são listas hierárquicas de comandos ou opções disponíveis para os usuários no contexto atual.
+title: Menus (noções básicas de design)
+description: Menus são listas hierárquicas de comandos ou opções disponíveis para os usuários no contexto atual.
 ms.assetid: 3772ff8e-8057-476d-b62b-efbd5e07907f
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 8054a01e4198f3592a34ae09635dd60f392da1eb
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 7d5c52e56c88f4066e8f1dc068ac89070c7d4974
+ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104172424"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111524370"
 ---
-# <a name="menus-design-basics"></a>Menus (noções básicas de Design)
+# <a name="menus-design-basics"></a>Menus (noções básicas de design)
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
 
-Os menus são listas hierárquicas de comandos ou opções disponíveis para os usuários no contexto atual.
+Menus são listas hierárquicas de comandos ou opções disponíveis para os usuários no contexto atual.
 
-Menus suspensos são menus exibidos sob demanda no clique do mouse ou em foco. Eles normalmente são ocultados da exibição e, portanto, são um meio eficiente de economizar espaço na tela. Um submenu ou menu em cascata é um menu secundário exibido sob demanda de dentro de um menu. Elas são indicadas por uma seta no final do rótulo do submenu. Um item de menu é um comando individual ou uma opção dentro de um menu.
+Os menus suspensos são menus exibidos sob demanda ao clicar ou passar o mouse. Normalmente, eles ficam ocultos da exibição e, portanto, são um meio eficiente de conservar espaço na tela. Um submenu ou menu em cascata é um menu secundário exibido sob demanda de dentro de um menu. Eles são indicados por uma seta no final do rótulo de submenu. Um item de menu é um comando ou opção individual dentro de um menu.
 
-Os menus são geralmente exibidos de uma barra de menus, que é uma lista de categorias de menu rotuladas normalmente localizadas próximo à parte superior de uma janela. Por outro lado, um menu de contexto cai quando os usuários clicam com o botão direito do mouse em uma região de objeto ou janela que dá suporte a um menu de contexto.
+Os menus geralmente são exibidos em uma barra de menus, que é uma lista de categorias de menu rotuladas normalmente localizadas próximos à parte superior de uma janela. Por outro lado, um menu de contexto é suspenso quando os usuários clicam com o botão direito do mouse em um objeto ou região de janela que dá suporte a um menu de contexto.
 
 ![captura de tela da barra de menus com menu e submenu ](images/cmd-menus-image1.png)
 
 Uma barra de menus típica que exibe um menu suspenso e um submenu.
 
 > [!Note]  
-> As diretrizes relacionadas a [botões de comando](ctrl-command-buttons.md), barras de [ferramentas](cmd-toolbars.md)e [teclado](inter-keyboard.md) são apresentadas em artigos separados.
+> As diretrizes [relacionadas aos](ctrl-command-buttons.md)botões de comando , barras de ferramentas e [teclado](inter-keyboard.md) são [apresentadas](cmd-toolbars.md)em artigos separados.
 
  
 
@@ -37,20 +37,20 @@ Os menus têm vários padrões de uso:
 
 
 
-|                                                                                                                                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Uso                                                                                                                                                |    Exemplo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Barras de menu**<br/> uma barra de menus exibe comandos e opções nos menus suspensos. <br/>                                               | as barras de menu são muito comuns e fáceis de encontrar, bem como um uso eficiente de espaço. <br/> ![captura de tela da barra de menus com o menu suspenso ](images/cmd-menus-image2.png)<br/> Uma barra de menus do Windows Mail.<br/>                                                                                                                                                                                                                                                                                                                                                                                                          |
-| **Menus da barra de ferramentas**<br/> uma barra de menus implementada como uma barra de ferramentas. <br/>                                                                   | os menus da barra de ferramentas são barras de ferramentas que consistem principalmente em comandos em [botões de menu](ctrl-command-buttons.md) e botões de divisão, com apenas alguns comandos diretos, se houver. <br/> ![captura de tela do menu da barra de ferramentas com o menu suspenso ](images/cmd-menus-image3.png)<br/> Um menu da barra de ferramentas na Galeria de fotos do Windows.<br/> Para obter diretrizes sobre esse padrão, consulte [barras de ferramentas](cmd-toolbars.md).<br/>                                                                                                                                                                                                             |
-| **Menus de guia**<br/> botões dentro de guias que exibem um pequeno conjunto de comandos e opções relacionadas a uma guia em um menu suspenso. <br/> | guias com menus são semelhantes a guias comuns, exceto que sua parte inferior tem um botão com a seta suspensa. clicar no botão exibe um menu suspenso em vez de selecionar a guia. <br/> ![captura de tela do menu guia com o menu suspenso ](images/cmd-menus-image4.png)<br/> Os menus de guia são usados no Windows Media Player.<br/>                                                                                                                                                                                                                                                                                           |
-| **Botões de menu**<br/> botões de comando que exibem um pequeno conjunto de comandos relacionados em um menu suspenso. <br/>                       | os [botões de menu](ctrl-command-buttons.md) parecem botões de comando comuns, exceto por terem uma seta suspensa dentro deles. clicar no botão exibe um menu suspenso em vez de executar um comando.<br/> os [botões de divisão](ctrl-command-buttons.md) são semelhantes aos botões de menu, exceto que eles são variações de um comando, e clicar na parte esquerda do botão executa a ação diretamente no rótulo.<br/> ![captura de tela do botão de menu com comandos suspensos ](images/cmd-menus-image5.png)<br/> Um botão de menu com um pequeno conjunto de comandos relacionados.<br/> |
-| **Menus de contexto**<br/> menus suspensos que exibem um pequeno conjunto de comandos e opções relacionadas ao contexto atual. <br/>       | menu suspenso de menus de contexto quando os usuários clicam com o botão direito do mouse em uma região de objeto ou de janela que oferece suporte a menus de contexto. <br/> ![captura de tela do menu de contexto exibindo comandos ](images/cmd-menus-image6.png)<br/> um menu de contexto do Windows Explorer.<br/> Se os menus de contexto forem a melhor opção de menu, mas você precisar de uma solução adequada para todos os usuários, você poderá usar um botão de seta suspensa menu. <br/> ![captura de tela de foto com o botão de menu suspenso ](images/cmd-menus-image7.png)<br/> Um menu de contexto ficou visível com um botão suspenso de menu.<br/>                                                   |
-| **Menus do painel de tarefas**<br/> um pequeno conjunto de comandos relacionados ao modo de programa ou objeto selecionado. <br/>                              | ao contrário dos menus de contexto, eles são exibidos automaticamente dentro de um painel de janela, em vez de sob demanda. <br/> ![captura de tela de foto com o menu do painel de tarefas à direita ](images/cmd-menus-image8.png)<br/> Um menu do painel de tarefas no Visualizador da Galeria de fotos do Windows.<br/>                                                                                                                                                                                                                                                                                                                                                         |
+| **Barras de menu**<br/> uma barra de menus exibe comandos e opções em menus suspensos. <br/>                                               | As barras de menu são muito comuns e fáceis de encontrar, bem como um uso eficiente de espaço. <br/> ![captura de tela da barra de menus com o menu suspenso ](images/cmd-menus-image2.png)<br/> Uma barra de menus do Windows Mail.<br/>                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Menus da barra de ferramentas**<br/> uma barra de menus implementada como uma barra de ferramentas. <br/>                                                                   | Os menus da barra de ferramentas são barras de ferramentas que consistem principalmente em comandos em botões de [menu](ctrl-command-buttons.md) e botões de divisão, com apenas alguns comandos diretos, se for o caso. <br/> ![captura de tela do menu da barra de ferramentas com o menu suspenso ](images/cmd-menus-image3.png)<br/> Um menu da barra de ferramentas no Windows Galeria de Fotos.<br/> Para ver diretrizes sobre esse padrão, consulte [Barras de ferramentas.](cmd-toolbars.md)<br/>                                                                                                                                                                                                             |
+| **Menus de tabulação**<br/> botões em guias que exibem um pequeno conjunto de comandos e opções relacionados a uma guia em um menu suspenso. <br/> | guias com menus parecem guias comuns, exceto que sua parte inferior tem um botão com seta para baixo. clicar no botão exibe um menu suspenso em vez de selecionar a guia. <br/> ![captura de tela do menu guia com o menu suspenso ](images/cmd-menus-image4.png)<br/> Os menus de tabulação são usados Windows Media Player.<br/>                                                                                                                                                                                                                                                                                           |
+| **Botões de menu**<br/> botões de comando que exibem um pequeno conjunto de comandos relacionados em um menu suspenso. <br/>                       | [os botões de menu](ctrl-command-buttons.md) se parecem com botões de comando comuns, exceto que eles têm uma seta para baixo dentro deles. clicar no botão exibe um menu suspenso em vez de executar um comando.<br/> [Os botões de divisão](ctrl-command-buttons.md) são semelhantes aos botões de menu, exceto que são variações de um comando e clicar na parte esquerda do botão executa a ação no rótulo diretamente.<br/> ![captura de tela do botão de menu com comandos suspensos ](images/cmd-menus-image5.png)<br/> Um botão de menu com um pequeno conjunto de comandos relacionados.<br/> |
+| **Menus de contexto**<br/> menus suspensos que exibem um pequeno conjunto de comandos e opções relacionados ao contexto atual. <br/>       | menus de contexto suspensos quando os usuários clicam com o botão direito do mouse em um objeto ou região de janela que dá suporte a um menu de contexto. <br/> ![captura de tela do menu de contexto exibindo comandos ](images/cmd-menus-image6.png)<br/> um menu de contexto do Windows Explorer.<br/> se os menus de contexto são a melhor opção de menu, mas você precisa de uma solução adequada para todos os usuários, você pode usar um botão de seta para baixo do menu. <br/> ![captura de tela da foto com o botão de menu suspenso ](images/cmd-menus-image7.png)<br/> Um menu de contexto tornou-se visível com um botão suspenso do menu.<br/>                                                   |
+| **Menus do painel de tarefas**<br/> um pequeno conjunto de comandos relacionados ao objeto ou modo de programa selecionado. <br/>                              | ao contrário dos menus de contexto, eles são exibidos automaticamente em um painel de janela, em vez de sob demanda. <br/> ![captura de tela da foto com o menu do painel de tarefas à direita ](images/cmd-menus-image8.png)<br/> Um menu do painel de tarefas do windows Galeria de Fotos visualizador.<br/>                                                                                                                                                                                                                                                                                                                                                         |
 
 
 
  
 
-## <a name="is-this-the-right-user-interface"></a>Esta é a interface do usuário correta?
+## <a name="is-this-the-right-user-interface"></a>Essa é a interface do usuário certa?
 
 Para decidir, considere estas perguntas:
 
@@ -58,64 +58,64 @@ Para decidir, considere estas perguntas:
 
 As seguintes condições se aplicam:
 
--   A janela é uma janela principal?
+-   A janela é uma janela primária?
 -   Há muitos itens de menu?
 -   Há muitas categorias de menu?
--   A maioria dos itens de menu se aplica a todo o programa e à janela principal?
+-   A maioria dos itens de menu se aplica a todo o programa e à janela primária?
 -   O menu precisa funcionar para todos os usuários?
 
-Nesse caso, considere usar uma barra de menus.
+Se sim, considere usar uma barra de menus.
 
 ### <a name="toolbar-menus"></a>Menus da barra de ferramentas
 
 As seguintes condições se aplicam:
 
--   A janela é uma janela principal?
+-   A janela é uma janela primária?
 -   A janela tem uma barra de ferramentas?
 -   Há apenas algumas categorias de menu?
 -   O menu precisa funcionar para todos os usuários?
 
 Nesse caso, considere usar um menu da barra de ferramentas em vez de ou além de uma barra de menus.
 
-### <a name="tab-menus"></a>Menus de guia
+### <a name="tab-menus"></a>Menus de tabulação
 
 As seguintes condições se aplicam:
 
--   A janela é uma janela principal?
--   A janela tem guias, onde cada guia é usada para um conjunto dedicado de tarefas (em oposição ao uso de guias para mostrar diferentes modos de exibição)?
+-   A janela é uma janela primária?
+-   A janela tem guias, em que cada guia é usada para um conjunto dedicado de tarefas (em vez de usar guias para mostrar exibições diferentes)?
 -   Há uma categoria de menu que se aplica a cada guia?
 -   Há muitos comandos e opções, mas apenas um pequeno conjunto para cada guia?
 
-Nesse caso, considere usar um menu de guia em vez de uma barra de menus.
+Se sim, considere usar um menu de tabulação em vez de uma barra de menus.
 
 ### <a name="context-menu"></a>Menu de contexto
 
 As seguintes condições se aplicam:
 
--   Há um pequeno conjunto de comandos e opções contextuais que se aplicam ao objeto ou à região da janela selecionada?
+-   Há um pequeno conjunto de comandos contextuais e opções que se aplicam ao objeto selecionado ou à região da janela?
 -   Esses itens de menu são redundantes?
--   Os usuários de destino estão familiarizados com os menus de contexto?
+-   Os usuários de destino estão familiarizados com menus de contexto?
 
 Nesse caso, considere fornecer menus de contexto para os objetos e regiões de janela que precisam deles.
 
-Para programas baseados em navegador, os menus do painel de tarefas são uma solução mais comum para comandos contextuais. Atualmente, os usuários esperam que os menus de contexto em programas baseados em navegador sejam genéricos e não tenham ajuda.
+Para programas baseados em navegador, os menus do painel de tarefas são uma solução mais comum para comandos contextuais. Atualmente, os usuários esperam que os menus de contexto em programas baseados em navegador sejam genéricos e sem ajuda.
 
 ### <a name="task-pane-menu"></a>Menu do painel de tarefas
 
 As seguintes condições se aplicam:
 
--   A janela é uma janela principal?
--   Há um pequeno conjunto de comandos contextuais e opções que se aplicam ao modo de programa ou objeto selecionado?
+-   A janela é uma janela primária?
+-   Há um pequeno conjunto de comandos contextuais e opções que se aplicam ao objeto ou modo de programa selecionado?
 -   Há algumas categorias de menu?
 -   O menu precisa funcionar para todos os usuários?
 
-Nesse caso, considere usar um menu de painel de tarefas em vez de um menu de contexto.
+Nesse caso, considere usar um menu do painel de tarefas em vez de um menu de contexto.
 
 ## <a name="design-concepts"></a>Conceitos de design
 
-Menus eficientes que promovem uma boa experiência do usuário:
+Menus efetivos que promovem uma boa experiência do usuário:
 
--   Use uma apresentação de comando que corresponda ao tipo de programa, tipos de janela, uso de comando e usuários de destino.
+-   Use uma apresentação de comando que corresponde ao tipo de programa, tipos de janela, uso de comando e usuários de destino.
 -   São bem organizados, usando a organização de menu padrão quando apropriado.
 -   Use barras de menus, barras de ferramentas e menus de contexto com eficiência.
 -   Use ícones com eficiência.
@@ -203,7 +203,7 @@ Neste exemplo, o novo submenu substitui comandos separados para nova mensagem de
 
 ### <a name="presentation"></a>Apresentação
 
--   **Desabilite os itens de menu que não se aplicam ao contexto atual,** em vez de removê-los. Isso torna o conteúdo da barra de menus estável e mais fácil de encontrar. **Exceção**
+-   **Desabilite os itens de menu que não se aplicam ao contexto atual,** em vez de removê-los. Isso torna o conteúdo da barra de menus estável e mais fácil de encontrar. **Exceções:**
     -   Para categorias de menu contextual, **remova em vez de Desabilitar itens de menu de contexto que não se aplicam ao contexto atual.** Uma categoria de menu é contextual quando é exibida somente para modos específicos, como quando um determinado tipo de objeto é selecionado. Para obter detalhes, consulte as diretrizes [remover versus desabilitar](#context-menus) para menus de contexto.
     -   Se a determinação de quando um item de menu deve ser desabilitado causar problemas de desempenho perceptíveis, deixe o item de menu ativo e, se necessário, terá sua seleção resultante de uma mensagem de erro.
 
@@ -307,90 +307,90 @@ Para obter mais diretrizes e exemplos, consulte [teclado](inter-keyboard.md).
 -   **Não atribua diferentes significados a teclas de atalho bem conhecidas.** Como eles são memorizados, os significados inconsistentes para atalhos bem conhecidos são frustrantes e sujeitos a erros. Consulte teclas de atalho do teclado do Windows para obter as teclas de atalho bem conhecidas usadas por programas do Windows.
 -   **Não tente atribuir teclas de atalho do programa em todo o sistema.** As teclas de atalho do programa terão efeito somente quando o seu programa tiver o foco de entrada.
 -   **Documente todas as teclas de atalho.** Isso ajuda os usuários a aprender as atribuições de teclas de atalho.
-    -   **Exceção:** Não exibir as atribuições de teclas de atalho nos menus de contexto. Os menus de contexto não exibem as atribuições de teclas de atalho porque elas são otimizadas para eficiência.
+    -   **Exceção:** Não exibir as atribuições de teclas de atalho nos menus de contexto. Os menus de contexto não exibem as atribuições de tecla de atalho porque são otimizadas para eficiência.
 -   **Para atribuições de chave não padrão:**
-    -   **Escolha as teclas de atalho que não têm atribuições padrão.** Nunca reatribua as teclas de atalho padrão.
-    -   **Use atribuições de chave não padrão consistentemente em todo o programa.** Não atribua diferentes significados em janelas diferentes.
-    -   **Se possível, escolha atribuições de chave mnemônico,** especialmente para comandos usados com frequência.
-    -   **Use as teclas de função para comandos que têm um efeito de pequena escala,** como comandos que se aplicam ao objeto selecionado. Por exemplo, F2 renomeia o item selecionado.
-    -   **Use combinações de teclas CTRL para comandos que têm um efeito de grande escala,** como comandos que se aplicam a um documento inteiro. Por exemplo, CTRL + S salva o documento atual.
-    -   **Use combinações de teclas Shift para comandos que estendem ou complementem as ações da tecla de atalho padrão.** Por exemplo, a tecla de atalho Alt + Tab percorre as janelas primárias abertas, enquanto os ciclos Alt + Shift + Tab na ordem inversa. Da mesma forma, F1 exibe a ajuda, enquanto Shift + F1 exibe a ajuda contextual.
-    -   **Não use os seguintes caracteres para as teclas de atalho:** @ $ {} \[ \] \\  ~  \| ^ '  < >. Esses caracteres exigem diferentes combinações de teclas em idiomas ou são específicos da localidade.
-    -   **Não use combinações CTRL + ALT,** porque o Windows interpreta essa combinação em algumas versões de idioma como uma chave AltGr, que gera caracteres alfanuméricos.
--   **Se o programa atribuir muitas teclas de atalho, forneça a capacidade de personalizar as atribuições.** Isso permite que os usuários reatribuam teclas de atalho conflitantes e migrem de outros produtos. A maioria dos programas não atribui teclas de atalho suficientes para que você precise desse recurso.
+    -   **Escolha teclas de atalho que não têm atribuições padrão.** Nunca reatribuir teclas de atalho padrão.
+    -   **Use atribuições de chave não padrão consistentemente em todo o programa.** Não atribua significados diferentes em janelas diferentes.
+    -   **Se possível, escolha atribuições de chave mnemônica, especialmente** para comandos usados com frequência.
+    -   **Use chaves de função para comandos que têm um efeito** de pequena escala, como comandos que se aplicam ao objeto selecionado. Por exemplo, F2 renomeia o item selecionado.
+    -   **Use combinações de teclas Ctrl para comandos** que têm um efeito em grande escala, como comandos que se aplicam a um documento inteiro. Por exemplo, Ctrl+S salva o documento atual.
+    -   **Use combinações de teclas Shift para comandos que estendem ou complementam as ações da tecla de atalho padrão.** Por exemplo, a tecla de atalho Alt+Tab passa pelas janelas primárias abertas, enquanto Alt+Shift+Tab é um ciclo na ordem inversa. Da mesma forma, F1 exibe a Ajuda, enquanto Shift+F1 exibe a Ajuda contextitivo.
+    -   **Não use os seguintes caracteres para teclas de atalho:** @ $ {} \[ \] \\  ~  \| ^ ' < >. Esses caracteres exigem combinações de teclas diferentes entre idiomas ou são específicos da localidade.
+    -   **Não use combinações Ctrl+Alt,** pois o Windows interpreta essa combinação em algumas versões de linguagem como uma chave AltGR, que gera caracteres alfanuméricos.
+-   **Se o programa atribuir muitas teclas de atalho, forneça a capacidade de personalizar as atribuições.** Isso permite que os usuários reatribuam chaves de atalho conflitantes e migre de outros produtos. A maioria dos programas não atribui teclas de atalho suficientes para precisar desse recurso.
 
-Para obter mais diretrizes e atribuições de teclas de atalho padrão, consulte [teclado](inter-keyboard.md).
+Para obter mais diretrizes e atribuições de teclas de atalho padrão, consulte [Teclado](inter-keyboard.md).
 
 ### <a name="standard-menus"></a>Menus padrão
 
--   **Use a organização do menu padrão para programas que criam ou exibem documentos.** A organização do menu padrão torna os itens de menu comuns previsíveis e fáceis de localizar.
--   **Para outros tipos de programas, use a organização de menu padrão somente quando fizer sentido.** Considere organizar seus comandos e opções em categorias mais úteis e naturais com base na finalidade do seu programa e na maneira como os usuários consideram suas tarefas e metas.
+-   **Use a organização de menu padrão para programas que criam ou visualizam documentos.** A organização do menu padrão torna os itens de menu comuns previsíveis e fáceis de encontrar.
+-   **Para outros tipos de programas, use a organização de menu padrão somente quando fizer sentido.** Considere organizar seus comandos e opções em categorias mais úteis e naturais com base na finalidade do programa e na maneira como os usuários pensam sobre suas tarefas e metas.
 
-**Barras de menus padrão**
+**Barras de menu padrão**
 
-A estrutura de barra de menus padrão é a seguinte. Esta lista mostra os rótulos de categoria e item de menu, sua ordem com separadores, suas teclas de acesso e de atalho e suas reticências.
+A estrutura da barra de menus padrão é a seguinte. Esta lista mostra a categoria de menu e rótulos de item, sua ordem com separadores, suas teclas de acesso e atalho e suas reellipses.
 
-<dl> Arquivo<dl> Novo Ctrl + N  
-Abrir... CTRL + O  
+<dl> Arquivo<dl> Novo Ctrl+N  
+Aberto... Ctrl+O  
 Feche o <separator>  
-Salvar Ctrl + S  
+Salvar Ctrl+S  
 Salvar como... <separator>  
 Enviar para <separator>  
-Imprimir... CTRL + P  
-Visualizar impressão  
+Imprimir... Ctrl+P  
+Visualização de impressão  
 Configuração de página <separator>  
 1 <filename> 2 <filename> 3 <filename> ... <separator>  
-Sair de Alt + F4 (atalho geralmente não fornecido)
-</dl> </dd> Edit<dl> Desfazer CTRL + Z  
-Refazer Ctrl + Y <separator>  
-Recortar CTRL + X  
-Copiar CTRL + C  
-Colar Ctrl + V <separator>  
-Selecionar tudo Ctrl + A <separator>  
-Excluir del (o atalho normalmente não foi fornecido) <separator>  
-Localizar... Ctrl + F  
-Localizar próximo F3 (comando geralmente não fornecido)  
-Substituir... CTRL + H  
-Ir para... CTRL + G
+Sair de Alt+F4 (o atalho geralmente não é dado)
+</dl> </dd> Edit<dl> Desfazer Ctrl+Z  
+Refazer Ctrl+Y <separator>  
+Recortar Ctrl+X  
+Copiar Ctrl+C  
+Colar Ctrl+V <separator>  
+Select all Ctrl+A <separator>  
+Excluir Del (o atalho geralmente não é dado) <separator>  
+Encontrar... Ctrl+F  
+Encontre o próximo F3 (o comando geralmente não é dado)  
+Substituir... Ctrl+H  
+Ir para... Ctrl+G
 </dl> </dd> View<dl> Barras de ferramentas  
 Barra de status <separator>  
-</dl> </dd> Zoom<dl> Ampliar CTRL + +  
-Reduzir CTRL +- <separator>  
+</dl> </dd> Zoom<dl> Ampliar Ctrl++  
+Reduzir Ctrl+- <separator>  
 Tela inteira F11  
 Atualizar F5
 </dl> </dd> <dd>Ferramentas<dl> ... <separator>  
 Opções
 </dl> </dd> Ajuda<dl> <program name> ajuda F1 <separator>  
-Pensar <program name>  
+Sobre <program name>  
 </dl> </dd> </dl>
 
 **Botões de menu da barra de ferramentas padrão**
 
-Os botões de menu da barra de ferramentas padrão são os seguintes. Esta lista mostra os rótulos de categoria e item de menu, sua ordem com separadores, suas teclas de atalho e suas reticências.
+Os botões de menu da barra de ferramentas padrão são os a seguir. Esta lista mostra a categoria de menu e rótulos de item, sua ordem com separadores, suas teclas de atalho e suas reellipses.
 
-<dl> Ferramentas<dl> ScreenF11 completo (reatribuir a chave de acesso se localizar também for usado.)  
-Barras de ferramentas (Observe que o comando da barra de menus é inserido aqui.) <separator>  
+<dl> Ferramentas<dl> Tela inteiraF11(Reatribuir chave de acesso se Find também for usado.)  
+Barras de ferramentas (Observe que o comando da barra de menus é aqui.) <separator>  
 Imprimir...  
-Localizar... <separator>  
+Encontrar... <separator>  
 Zoom  
 Tamanho do texto <separator>  
 Opções
-</dl> </dd> Organize<dl> Novo folderCtrl + N <separator>  
-CutCtrl + X  
-CopyCtrl + C  
-PasteCtrl + V <separator>  
-Selecione eu CTRL + A <separator>  
-DeleteDel (o atalho normalmente não foi fornecido)  
-Nome <separator>  
+</dl> </dd> Organize<dl> Nova pastaCtrl+N <separator>  
+CutCtrl+X  
+CopyCtrl+C  
+ColarCtrl+V <separator>  
+Selecione allCtrl+A <separator>  
+DeleteDel (o atalho geralmente não é dado)  
+Renomear <separator>  
 Opções
-</dl> </dd> Page<dl> Novo windowCtrl + N <separator>  
+</dl> </dd> Page<dl> Nova janelaCtrl+N <separator>  
 Zoom  
 Tamanho do texto
 </dl> </dd> </dl>
 
 **Menus de contexto padrão**
 
-O conteúdo do menu de contexto padrão é o seguinte. Esta lista mostra os rótulos de item de menu, sua ordem com separadores, suas chaves de acesso e suas reticências. Os menus de contexto não mostram as teclas de atalho.
+O conteúdo do menu de contexto padrão é o seguinte. Esta lista mostra os rótulos do item de menu, seu pedido com separadores, suas chaves de acesso e suas reellipses. Os menus de contexto não mostram teclas de atalho.
 
 <dl> Aberto  
 Executar  
@@ -399,10 +399,10 @@ Editar
 Imprimir... <separator>  
 Recortar  
 Copiar  
-Olar <separator>  
+Colar <separator>  
 Excluir  
-Nome <separator>  
-Bloquear <object name> (marca de seleção)  
+Renomear <separator>  
+Bloquear <object name> o (marca de seleção)  
 Propriedades
 </dl>
 

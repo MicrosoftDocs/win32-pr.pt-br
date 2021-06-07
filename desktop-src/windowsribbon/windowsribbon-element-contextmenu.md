@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c824e87c063fb863e79f10cb9755b74df36023f7
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 916a031ed642a76fb22ecc58dbbe1ce29cbcd105
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103638528"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443458"
 ---
 # <a name="contextmenu-element"></a>Elemento ContextMenu
 
@@ -167,12 +167,8 @@ Esta seção de código mostra um conjunto de declarações de controle **Contex
 
 ## <a name="element-information"></a>Informações do elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo com suporte<br/> | Windows 7 |
-| Pode estar vazio                        | Não        |
+* **Sistema mínimo com suporte**: Windows 7
+* **Pode estar vazio**: não
 
 
 

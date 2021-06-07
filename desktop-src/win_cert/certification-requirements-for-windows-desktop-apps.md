@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4789c4069221b0ea6f65a8636ee35501171089e6
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.openlocfilehash: ab03c15c6e72e4854ecf64d067d268c3ca4c775f
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "104366804"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444167"
 ---
 # <a name="certification-requirements-for-windows-desktop-apps"></a>Requisitos de certificação de Aplicativos da Área de Trabalho do Windows
 
@@ -115,7 +115,7 @@ Uma instalação limpa e reversível permite que os usuários gerenciem com êxi
 
 ## <a name="6-apps-must-digitally-sign-files-and-drivers"></a>6. os aplicativos devem assinar digitalmente arquivos e drivers
 
-Uma assinatura digital Authenticode permite que os usuários tenham certeza de que o software é autêntico. Ele também permite detectar se um arquivo foi violado, como se ele foi infectado por um vírus. A imposição de assinatura de código no modo kernel é um recurso do Windows conhecido como integridade de código (CI), que melhora a segurança do sistema operacional, verificando a integridade de um arquivo cada vez que a imagem do arquivo é carregada na memória. O CI detecta se o código mal-intencionado modificou um arquivo binário do sistema. Também gera um evento de log de diagnóstico e auditoria do sistema quando a assinatura de um módulo kernel não é verificada corretamente. <dl> 6,1 todos os arquivos executáveis (. exe,. dll,. ocx,. sys,. cpl,. drv,. SCR) devem ser assinados com um certificado Authenticode  
+Uma assinatura digital Authenticode permite que os usuários tenham certeza de que o software é autêntico. Ele também permite detectar se um arquivo foi violado, como se ele foi infectado por um vírus. A imposição de assinatura de código no modo kernel é um recurso do Windows conhecido como integridade de código (CI), que melhora a segurança do sistema operacional, verificando a integridade de um arquivo cada vez que a imagem do arquivo é carregada na memória. O CI detecta se o código mal-intencionado modificou um arquivo binário do sistema. Também gera um evento de log de diagnóstico e auditoria do sistema quando a assinatura de um módulo kernel não é verificada corretamente. <dl> 6,1 todos os arquivos executáveis (.exe, .dll,. ocx, .sys, .cpl,. drv,. SCR) devem ser assinados com um certificado Authenticode  
 6,2 todos os drivers de modo kernel instalados pelo aplicativo devem ter uma assinatura da Microsoft obtida por meio do programa de certificação de hardware do Windows. Todos os drivers de filtro do sistema de arquivos devem ser assinados pela Microsoft.  
 6,3 exceções e renúncias <dl> As renúncias serão consideradas apenas para redistribuíveis de terceiros não assinados, excluindo drivers. Uma prova de comunicação solicitando uma versão assinada dos redistribuíveis (s) é necessária para que essa renúncia seja concedida.  
 </dl> </dd> </dl>
@@ -205,16 +205,15 @@ Obrigado novamente por ingressar em nosso compromisso de fornecer excelentes exp
 
 
 
-|               |         |                                        |                                                                                  |
-|---------------|---------|----------------------------------------|----------------------------------------------------------------------------------|
 | Data          | Versão | Descrição da revisão                   | Link para o documento                                                                 |
+|---------------|---------|----------------------------------------|----------------------------------------------------------------------------------|
 | 20 de dezembro de 2011  | 1.0     | Rascunho inicial do documento para visualização. |                                                                                  |
 | 26 de janeiro de 2012  | 1,1     | Atualize para a seção \# 2.                 | [1.1](archive--certification-requirements-for-windows-desktop-apps-v1-1.md)     |
-| 31 de maio de 2012  | 1.2     | Resultados de teste de resumo adicionados             | [1.2](archive--certification-requirements-for-windows-desktop-apps-v1-2.md)     |
+| 31 de maio de 2012  | 1.2     | Resultados de teste de resumo adicionados             | [1,2](archive--certification-requirements-for-windows-desktop-apps-v1-2.md)     |
 | 29 de junho de 2012  | 3.0     | Documento final do Windows 8               | [3.0](archive--certification-requirements-for-windows-desktop-apps-v3-0.md)     |
 | 18 de junho de 2013  | 3.1     | Windows 8.1 documento                   | [3.1](archive--certification-requirements-for-windows-desktop-apps-v3-1.md)     |
 | 20 de fevereiro de 2014  | 3.2     | Atualização interna                        |                                                                                  |
-| 18 de março de 2014  | 3.3     | Atualização do Windows 8.1 1                   | [3.3](https://www.bing.com/search?q=3.3) |
+| 18 de março de 2014  | 3.3     | Atualização do Windows 8.1 1                   | [3,3](https://www.bing.com/search?q=3.3) |
 | 29 de julho de 2015 | 10      | Atualização do Windows 10                      | 10                                                                               |
 
 

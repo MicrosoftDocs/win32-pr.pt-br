@@ -1,9 +1,9 @@
 ---
 title: Elemento Group
-description: Representa um controle de grupo que funciona como um contêiner para um grupo de elementos.
+description: Representa um controle Group que funciona como um contêiner para um grupo de elementos.
 ms.assetid: b0d3fcda-7165-40f4-9e57-c7ab88b31711
 keywords:
-- Faixa de das janelas do elemento de grupo
+- Faixa de Opções do Windows do elemento group
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3a42e9efb30397862037426041420d96be8fd387
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1162055491f61ae6feffa385bbc5015e4f1b66f0
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366339"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111442867"
 ---
 # <a name="group-element"></a>Elemento Group
 
-Representa um controle de [grupo](windowsribbon-controls-group.md) que funciona como um contêiner para um grupo de elementos.
+Representa um [controle](windowsribbon-controls-group.md) Group que funciona como um contêiner para um grupo de elementos.
 
 ## <a name="usage"></a>Uso
 
@@ -59,21 +59,21 @@ Representa um controle de [grupo](windowsribbon-controls-group.md) que funciona 
 <td><strong>ApplicationModes</strong><br/></td>
 <td>xs:string<br/></td>
 <td>Não<br/></td>
-<td><dt><span></span><span></span><strong></strong> (xs: String)<br/> </dt> <dd> Uma cadeia de caracteres que contém uma lista de inteiros separados por vírgulas entre 0 e 31.<br/> O espaço em branco é válido e ignorado.<br/> Comprimento máximo: 250 caracteres. <br/> </dd> </dl></td>
+<td><dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Uma cadeia de caracteres que contém uma lista separada por vírgulas de inteiros entre 0 e 31.<br/> O espaço em branco é válido e ignorado.<br/> Comprimento máximo: 250 caracteres. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>CommandName</strong><br/></td>
-<td>xs: positiveInteger ou xs: String<br/></td>
+<td>xs:positiveInteger ou xs:string<br/></td>
 <td>Não<br/></td>
-<td>Associa o elemento a um <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs: positiveInteger ou xs: String)<br/> </dt> <dd> Uma cadeia de caracteres, um valor inteiro entre 2 e 59999, inclusive, ou um valor hexadecimal entre 0x2 e 0xea5f, inclusive. <br/> O valor deve ser exclusivo no documento XML da faixa de faixas. <br/> Comprimento máximo: 100 caracteres. <br/> </dd> </dl></td>
+<td>Associa o elemento a um <a href="windowsribbon-element-command.md"><strong>Comando</strong></a>.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger ou xs:string)<br/> </dt> <dd> Uma cadeia de caracteres, um valor inteiro entre 2 e 59999, inclusive ou um valor hexadecimal entre 0x2 e 0xea5f, inclusive. <br/> O valor deve ser exclusivo dentro do documento XML da Faixa de Opções. <br/> Comprimento máximo: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>SizeDefinition</strong><br/></td>
 <td>xs:string<br/></td>
 <td>Não<br/></td>
-<td>Quando especificado, o valor de <em>SizeDefinition</em> é restrito a um dos <a href="windowsribbon-templates.md">modelos de layout</a> definidos pela estrutura da faixa de opção. <br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs: String)<br/> </dt> <dd> Qualquer sequência de zero ou mais caracteres.<br/> O comprimento máximo é não associado.<br/> </dd> </dl></td>
+<td>Quando especificado, o valor de <em>SizeDefinition</em> é restrito a um dos <a href="windowsribbon-templates.md">modelos de layout definidos</a> pela estrutura ribbon. <br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Qualquer sequência de zero ou mais caracteres.<br/> O comprimento máximo não ébounded.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -87,9 +87,9 @@ Representa um controle de [grupo](windowsribbon-controls-group.md) que funciona 
 | Elemento                                                                             | Descrição                                        |
 |-------------------------------------------------------------------------------------|----------------------------------------------------|
 | [**Botão**](windowsribbon-element-button.md)<br/>                           | Pode ocorrer uma ou mais vezes<br/> <br/> |
-| [**CheckBox**](windowsribbon-element-checkbox.md)<br/>                       | Pode ocorrer uma ou mais vezes<br/> <br/> |
+| [**Checkbox**](windowsribbon-element-checkbox.md)<br/>                       | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**ComboBox**](windowsribbon-element-combobox.md)<br/>                       | Pode ocorrer uma ou mais vezes<br/> <br/> |
-| [**Controlador de controle**](windowsribbon-element-controlgroup.md)<br/>               | Pode ocorrer uma ou mais vezes<br/> <br/> |
+| [**ControlGroup**](windowsribbon-element-controlgroup.md)<br/>               | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**DropDownButton**](windowsribbon-element-dropdownbutton.md)<br/>           | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md)<br/> | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**DropDownGallery**](windowsribbon-element-dropdowngallery.md)<br/>         | Pode ocorrer uma ou mais vezes<br/> <br/> |
@@ -109,7 +109,7 @@ Representa um controle de [grupo](windowsribbon-controls-group.md) que funciona 
 
 | Elemento                                             |
 |-----------------------------------------------------|
-| [**Tab**](windowsribbon-element-tab.md)<br/> |
+| [**Guia**](windowsribbon-element-tab.md)<br/> |
 
 
 
@@ -117,15 +117,15 @@ Representa um controle de [grupo](windowsribbon-controls-group.md) que funciona 
 
 Opcional.
 
-Pode ocorrer uma ou mais vezes para cada elemento de [**guia**](windowsribbon-element-tab.md) .
+Pode ocorrer uma ou mais vezes para cada [**elemento Tab.**](windowsribbon-element-tab.md)
 
-[**Guia**](windowsribbon-element-tab.md) dá suporte a [modos de aplicativo](ribbon-applicationmodes.md).
+[**A guia**](windowsribbon-element-tab.md) dá suporte [aos modos de aplicativo](ribbon-applicationmodes.md).
 
-A marcação da faixa de faixas é válida somente quando os elementos filho do **grupo** correspondem ao modelo especificado para *SizeDefinition*.
+A marcação Faixa de Opções é válida somente quando os elementos filho de **Group** correspondem ao modelo especificado para *SizeDefinition.*
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir ilustra o uso de um modelo personalizado em um **grupo**.
+O exemplo de código a seguir ilustra o uso de um modelo personalizado em um **Grupo**.
 
 
 ```
@@ -138,12 +138,8 @@ O exemplo de código a seguir ilustra o uso de um modelo personalizado em um **g
 
 ## <a name="element-information"></a>Informações do elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo com suporte<br/> | Windows 7 |
-| Pode estar vazio                        | Não        |
+* **Sistema mínimo com suporte:** Windows 7
+* **Pode estar vazio:** Não
 
 
 
@@ -151,13 +147,13 @@ O exemplo de código a seguir ilustra o uso de um modelo personalizado em um **g
 
 <dl> <dt>
 
-[Personalizando uma faixa de guia por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
+[Personalização de uma faixa de opções por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
 </dt> <dt>
 
 [Controle de grupo](windowsribbon-controls-group.md)
 </dt> <dt>
 
-[**Setmodos**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes)
+[**SetModes**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes)
 </dt> </dl>
 
  

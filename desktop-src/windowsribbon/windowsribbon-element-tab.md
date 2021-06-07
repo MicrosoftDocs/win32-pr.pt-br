@@ -1,9 +1,9 @@
 ---
 title: Elemento Tab
-description: Representa um núcleo ou uma guia contextual.
+description: Representa uma guia principal ou contextual.
 ms.assetid: 2e73a89c-4d31-4075-93c8-e43213a20791
 keywords:
-- Faixa de das janelas do elemento Tab
+- Faixa de Opções do Windows do elemento Tab
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4e54abc7e13906ada69c1e10f81878c77c4bf5d8
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 410326961df84f6ae62d3c43bee3e651c9533066
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007949"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443877"
 ---
 # <a name="tab-element"></a>Elemento Tab
 
-Representa um [núcleo](windowsribbon-controls-tab.md) ou uma guia [contextual](windowsribbon-controls-tabgroup.md) .
+Representa uma [guia principal](windowsribbon-controls-tab.md) [ou contextual.](windowsribbon-controls-tabgroup.md)
 
 ## <a name="usage"></a>Uso
 
@@ -58,15 +58,15 @@ Representa um [núcleo](windowsribbon-controls-tab.md) ou uma guia [contextual](
 <td><strong>ApplicationModes</strong><br/></td>
 <td>xs:string<br/></td>
 <td>Não<br/></td>
-<td>Válido somente se o <a href="windowsribbon-element-menugroup.md"><strong>MyMenu</strong></a> for o elemento pai.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs: String)<br/> </dt> <dd> Uma cadeia de caracteres que contém uma lista de inteiros separados por vírgulas entre 0 e 31.<br/> O espaço em branco é válido e ignorado.<br/> Comprimento máximo: 250 caracteres. <br/> </dd> </dl></td>
+<td>Válido somente se <a href="windowsribbon-element-menugroup.md"><strong>MenuGroup</strong></a> for o elemento pai.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Uma cadeia de caracteres que contém uma lista separada por vírgulas de inteiros entre 0 e 31.<br/> O espaço em branco é válido e ignorado.<br/> Comprimento máximo: 250 caracteres. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>CommandName</strong><br/></td>
-<td>xs: positiveInteger ou xs: String<br/></td>
+<td>xs:positiveInteger ou xs:string<br/></td>
 <td>Não<br/></td>
-<td>Associa o elemento a um <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs: positiveInteger ou xs: String)<br/> </dt> <dd> Uma cadeia de caracteres, um valor inteiro entre 2 e 59999, inclusive, ou um valor hexadecimal entre 0x2 e 0xea5f, inclusive. <br/> O valor deve ser exclusivo no documento XML da faixa de faixas. <br/> Comprimento máximo: 100 caracteres. <br/> </dd> </dl></td>
+<td>Associa o elemento a um <a href="windowsribbon-element-command.md"><strong>Comando</strong></a>.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger ou xs:string)<br/> </dt> <dd> Uma cadeia de caracteres, um valor inteiro entre 2 e 59999, inclusive ou um valor hexadecimal entre 0x2 e 0xea5f, inclusive. <br/> O valor deve ser exclusivo dentro do documento XML da Faixa de Opções. <br/> Comprimento máximo: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -79,8 +79,8 @@ Representa um [núcleo](windowsribbon-controls-tab.md) ou uma guia [contextual](
 
 | Elemento                                                                         | Descrição                                        |
 |---------------------------------------------------------------------------------|----------------------------------------------------|
-| [**Group**](windowsribbon-element-group.md)<br/>                         | Pode ocorrer uma ou mais vezes<br/> <br/> |
-| [**Guia. ScalingPolicy**](windowsribbon-element-tab-scalingpolicy.md)<br/> | Pode ocorrer no máximo uma vez<br/> <br/>      |
+| [**Grupo**](windowsribbon-element-group.md)<br/>                         | Pode ocorrer uma ou mais vezes<br/> <br/> |
+| [**Tab.ScalingPolicy**](windowsribbon-element-tab-scalingpolicy.md)<br/> | Pode ocorrer no máximo uma vez<br/> <br/>      |
 
 
 
@@ -90,8 +90,8 @@ Representa um [núcleo](windowsribbon-controls-tab.md) ou uma guia [contextual](
 
 | Elemento                                                             |
 |---------------------------------------------------------------------|
-| [**Faixa de guia. guias**](windowsribbon-element-ribbon-tabs.md)<br/> |
-| [**TabGroup**](windowsribbon-element-tabgroup.md)<br/>       |
+| [**Ribbon.Tabs**](windowsribbon-element-ribbon-tabs.md)<br/> |
+| [**Tabgroup**](windowsribbon-element-tabgroup.md)<br/>       |
 
 
 
@@ -99,17 +99,17 @@ Representa um [núcleo](windowsribbon-controls-tab.md) ou uma guia [contextual](
 
 Obrigatórios.
 
-Deve ocorrer pelo menos uma vez para cada elemento [**Ribbon. Tabs**](windowsribbon-element-ribbon-tabs.md) ou [**TabGroup**](windowsribbon-element-tabgroup.md) .
+Deve ocorrer pelo menos uma vez para cada [**elemento Ribbon.Tabs**](windowsribbon-element-ribbon-tabs.md) ou [**TabGroup.**](windowsribbon-element-tabgroup.md)
 
-**Guia** dá suporte a [modos de aplicativo](ribbon-applicationmodes.md).
+**A guia** dá suporte [aos modos de aplicativo](ribbon-applicationmodes.md).
 
-Se [**ScalingPolicy. IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) estiver presente para o elemento **Tab** , uma entrada para cada elemento [**Group**](windowsribbon-element-group.md) e seu tamanho ideal serão necessários em **ScalingPolicy. IdealSizes**.
+Se [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) estiver presente para o elemento **Tab,** uma entrada para cada elemento [**Group**](windowsribbon-element-group.md) e seu tamanho ideal será necessária em **ScalingPolicy.IdealSizes**.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra a marcação básica para o elemento **Tab** .
+O exemplo a seguir demonstra a marcação básica para o **elemento Tab.**
 
-Esta seção de código mostra as declarações de comando de **guia** para uma guia **página inicial** .
+Esta seção de código mostra as declarações **comando tab** para uma **guia** Página Início.
 
 
 ```XML
@@ -177,7 +177,7 @@ Esta seção de código mostra as declarações de comando de **guia** para uma 
 
 
 
-Esta seção de código mostra as declarações de controle de **guia** .
+Esta seção de código mostra as **declarações de controle** Tab.
 
 
 ```XML
@@ -195,12 +195,8 @@ Esta seção de código mostra as declarações de controle de **guia** .
 
 ## <a name="element-information"></a>Informações do elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo com suporte<br/> | Windows 7 |
-| Pode estar vazio                        | Não        |
+- **Sistema mínimo com suporte:** Windows 7 
+- **Pode estar vazio:** Não
 
 
 
@@ -211,10 +207,10 @@ Esta seção de código mostra as declarações de controle de **guia** .
 [Controle guia](windowsribbon-controls-tab.md)
 </dt> <dt>
 
-[Controle de grupo de guias](windowsribbon-controls-tabgroup.md)
+[Controle De grupo de guias](windowsribbon-controls-tabgroup.md)
 </dt> <dt>
 
-[**Setmodos**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes)
+[**SetModes**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes)
 </dt> </dl>
 
  

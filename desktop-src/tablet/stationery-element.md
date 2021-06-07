@@ -4,12 +4,12 @@ ms.assetid: 39cc8ee6-b010-428e-b729-de49fa34b91b
 title: Elemento de papel de carta
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7f681e7c27424af573425e852fe7ab345091728
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 012ec2c271d7b0509cf0a9669a9d7898cf7956b6
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105779567"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432618"
 ---
 # <a name="stationery-element"></a>Elemento de papel de carta
 
@@ -27,7 +27,7 @@ Contém informações sobre o papel de carta usado na nota do diário, incluindo
 
 ## <a name="child-elements"></a>Elementos filho
 
-[**Tela de fundo**](background-element.md)
+[**Segundo plano**](background-element.md)
 
 [**Título**](title-element.md)
 
@@ -41,7 +41,7 @@ Nenhum.
 
 
 
-|              |                                                                   |
+|  Elemento     | Valor                                                             |
 |--------------|-------------------------------------------------------------------|
 | Tipo de elemento | ComplexType [**StationeryType**](stationerytype-complex-type.md) |
 | Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk                        |

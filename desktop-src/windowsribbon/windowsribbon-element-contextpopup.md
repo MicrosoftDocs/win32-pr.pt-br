@@ -1,9 +1,9 @@
 ---
 title: Elemento ContextPopup
-description: Representa o controle Popup de contexto na exibição ContextPopup.
+description: Representa o controle Pop-up de contexto na exibição ContextPopup.
 ms.assetid: b955be16-803e-47b5-a72d-f993180fbf14
 keywords:
-- Faixa de ContextPopup do elemento do Windows
+- Elemento ContextPopup Da Faixa de Opções do Windows
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4feb7c4fbd2ca538fe4d0c2b2584163ee8c9fcea
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: f779b0196d14fb42246c2a10d476352d835b6cf8
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104006590"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443457"
 ---
 # <a name="contextpopup-element"></a>Elemento ContextPopup
 
-Representa o controle [Popup de contexto](windowsribbon-controls-contextpopup.md) na exibição ContextPopup.
+Representa o [controle Pop-up de](windowsribbon-controls-contextpopup.md) contexto na exibição ContextPopup.
 
 ## <a name="usage"></a>Uso
 
@@ -43,7 +43,7 @@ Não há atributos.
 | Elemento                                                                                         | Descrição                                   |
 |-------------------------------------------------------------------------------------------------|-----------------------------------------------|
 | [**ContextPopup.ContextMaps**](windowsribbon-element-contextpopup-contextmaps.md)<br/>   | Pode ocorrer no máximo uma vez<br/> <br/> |
-| [**ContextPopup. ContextMenus**](windowsribbon-element-contextpopup-contextmenus.md)<br/> | Pode ocorrer no máximo uma vez<br/> <br/> |
+| [**ContextPopup.ContextMenus**](windowsribbon-element-contextpopup-contextmenus.md)<br/> | Pode ocorrer no máximo uma vez<br/> <br/> |
 | [**ContextPopup.MiniToolbars**](windowsribbon-element-contextpopup-minitoolbars.md)<br/> | Pode ocorrer no máximo uma vez<br/> <br/> |
 
 
@@ -54,7 +54,7 @@ Não há atributos.
 
 | Elemento                                                                         |
 |---------------------------------------------------------------------------------|
-| [**Application. views**](windowsribbon-element-application-views.md)<br/> |
+| [**Application.Views**](windowsribbon-element-application-views.md)<br/> |
 
 
 
@@ -62,11 +62,11 @@ Não há atributos.
 
 Opcional.
 
-Pode ocorrer no máximo uma vez para cada [**Application. views**](windowsribbon-element-application-views.md).
+Pode ocorrer no máximo uma vez para cada [**Application.Views.**](windowsribbon-element-application-views.md)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra a marcação básica para uma exibição **ContextPopup** .
+O exemplo a seguir demonstra a marcação básica para uma **Exibição contextpopup.**
 
 
 ```XML
@@ -155,12 +155,8 @@ O exemplo a seguir demonstra a marcação básica para uma exibição **ContextP
 
 ## <a name="element-information"></a>Informações do elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo com suporte<br/> | Windows 7 |
-| Pode estar vazio                        | Não        |
+* **Sistema mínimo com suporte:** Windows 7
+* **Pode estar vazio:** Não
 
 
 
@@ -168,7 +164,7 @@ O exemplo a seguir demonstra a marcação básica para uma exibição **ContextP
 
 <dl> <dt>
 
-[Controle Popup de contexto](windowsribbon-controls-contextpopup.md)
+[Controle pop-up de contexto](windowsribbon-controls-contextpopup.md)
 </dt> </dl>
 
  

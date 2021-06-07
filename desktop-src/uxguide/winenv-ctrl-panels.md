@@ -1,96 +1,96 @@
 ---
 title: Painéis de controle
-description: Use itens do painel de controle para ajudar os usuários a configurar recursos de nível de sistema e executar tarefas relacionadas. Os programas que têm uma interface do usuário devem ser configurados diretamente de sua interface do seu.
+description: Use itens do painel de controle para ajudar os usuários a configurar recursos no nível do sistema e executar tarefas relacionadas. Programas que têm uma interface do usuário devem ser configurados diretamente de sua interface do usuário.
 ms.assetid: 845325ef-9f1d-4aa7-a5b0-685fac74a9f8
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: dde41544f2bf8c920365f160f71dce7e88d89b81
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 3b0e6fdf4e0c916f80ae3c1783e4e9e5fee920a8
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "103930061"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443307"
 ---
 # <a name="control-panels"></a>Painéis de controle
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
 
-Use itens do painel de controle para ajudar os usuários a configurar recursos de nível de sistema e executar tarefas relacionadas. Os programas que têm uma interface do usuário devem ser configurados diretamente de sua interface do seu.
+Use itens do painel de controle para ajudar os usuários a configurar recursos no nível do sistema e executar tarefas relacionadas. Programas que têm uma interface do usuário devem ser configurados diretamente de sua interface do usuário.
 
-Com o painel de controle no Microsoft Windows, os usuários podem configurar recursos de nível de sistema e executar tarefas relacionadas. Exemplos de configuração de recursos no nível do sistema incluem configuração de hardware e software e configuração, segurança, manutenção do sistema e gerenciamento de conta de usuário.
+Com Painel de Controle no Microsoft Windows, os usuários podem configurar recursos no nível do sistema e executar tarefas relacionadas. Exemplos de configuração de recursos no nível do sistema incluem configuração e configuração de hardware e software, segurança, manutenção do sistema e gerenciamento de conta de usuário.
 
-O termo painel de controle refere-se a todo o recurso do painel de controle do Windows. Os painéis de controle individuais são chamados de itens do painel de controle. Um item do painel de controle é considerado de nível superior quando ele está diretamente acessível no painel de controle home page ou em uma página de categoria.
+O termo Painel de Controle refere-se a todo o recurso Painel de Controle Windows. Os painéis de controle individuais são chamados de itens do painel de controle. Um item do painel de controle é considerado de nível superior quando ele é diretamente acessível no painel de controle home page ou em uma página de categoria.
 
 ![captura de tela da categoria de fala do painel de controle ](images/winenv-ctrl-panels-image1.png)
 
-Um item de painel de controle típico.
+Um item típico do painel de controle.
 
-O painel de controle home page é o ponto de entrada principal para todos os itens do painel de controle. Ele lista os itens por sua categoria, juntamente com as tarefas mais comuns. Ele é exibido quando os usuários clicam em painel de controle no menu iniciar.
+O painel de controle home page é o ponto de entrada principal para todos os itens do painel de controle. Ele lista os itens por sua categoria, juntamente com as tarefas mais comuns. Ele é exibido quando os usuários clicam Painel de Controle no menu Iniciar.
 
 Uma página de categoria do painel de controle lista os itens em uma única categoria, juntamente com as tarefas mais comuns. Ele é exibido quando os usuários clicam em um nome de categoria no home page.
 
-Os itens do painel de controle são implementados usando [fluxos de tarefas](glossary.md) ou folhas de propriedades. Para o Windows Vista e posterior, os fluxos de tarefas são a interface do usuário preferida.
+Os itens do painel de controle são implementados usando [fluxos de tarefas](glossary.md) ou folhas de propriedades. Para o Windows Vista e posterior, os fluxos de tarefas são a interface do usuário preferencial.
 
-**Desenvolvedores:** Para saber como criar itens do painel de controle, consulte [itens do painel de controle](/previous-versions//bb776838(v=vs.85)).
+**Desenvolvedores:** Para saber como criar itens do painel de controle, [consulte Painel de Controle Itens](/previous-versions//bb776838(v=vs.85)).
 
-**Observação:** As diretrizes relacionadas às [folhas de propriedades](win-property-win.md) são apresentadas em um artigo separado.
+**Observação:** Diretrizes relacionadas [a folhas de propriedades](win-property-win.md) são apresentadas em um artigo separado.
 
-## <a name="is-this-the-right-user-interface"></a>Esta é a interface do usuário correta?
+## <a name="is-this-the-right-user-interface"></a>Essa é a interface do usuário certa?
 
 Para decidir, considere estas perguntas:
 
--   **É a finalidade de configurar recursos de nível de sistema?** Caso contrário, use outro ponto de integração. Torne os recursos do aplicativo configuráveis diretamente da interface do usuário usando caixas de diálogo de opções, em vez de usar o painel de controle. Para utilitários que não são usados para instalação, configuração ou tarefas relacionadas (como solução de problemas), use o menu iniciar como o ponto de integração.
--   **O recurso de nível de sistema tem sua própria interface do usuário?** Nesse caso, essa interface do usuário é onde os usuários devem ir para fazer alterações. Por exemplo, um utilitário de backup do sistema deve ser configurado de suas opções de programa em vez de no painel de controle.
--   **Os usuários precisarão alterar a configuração com frequência?** Nesse caso (digamos, várias vezes por semana), considere soluções alternativas, talvez além de usar o painel de controle. Por exemplo, a configuração de volume mestre do Windows pode ser configurada diretamente de seu ícone na área de notificação. Algumas configurações podem ser definidas automaticamente. No Windows Explorer, por exemplo, a guia compatibilidade para propriedades de aplicativo permite que um aplicativo seja executado no modo de cor 256 em vez de exigir que os usuários alterem o modo de vídeo manualmente.
--   **Os usuários de destino são profissionais de ti?** Nesse caso, use um snap-in do [MMC (console de gerenciamento Microsoft)](/previous-versions/windows/desktop/mmc/microsoft-management-console-start-page) , que foi projetado especificamente para tarefas de gerenciamento do sistema. Em alguns casos, a melhor solução é ter um item do painel de controle para usuários gerais e um snap-in do MMC para profissionais de ti.
+-   **A finalidade é configurar recursos no nível do sistema?** Caso não, use outro ponto de integração. Tornar os recursos do aplicativo configuráveis diretamente da interface do usuário usando caixas de diálogo de opções, em vez de usar Painel de Controle. Para utilitários que não são usados para instalação, configuração ou tarefas relacionadas (como solução de problemas), use o menu Iniciar como o ponto de integração.
+-   **O recurso de nível de sistema tem sua própria interface do usuário?** Nesse caso, essa interface do usuário é o local em que os usuários devem ir para fazer alterações. Por exemplo, um utilitário de backup do sistema deve ser configurado de suas opções de programa em vez de Painel de Controle.
+-   **Os usuários precisarão alterar a configuração com frequência?** Nesse caso (digamos, várias vezes por semana), considere soluções alternativas, talvez além de usar Painel de Controle. Por exemplo, a configuração de volume mestre do Windows pode ser configurada diretamente de seu ícone na área de notificação. Algumas configurações podem ser configuradas automaticamente. No Windows Explorer, por exemplo, a guia Compatibilidade para propriedades do aplicativo permite que um aplicativo seja executado no modo de cores 256, em vez de exigir que os usuários alterem o modo de vídeo manualmente.
+-   **Os usuários de destino são profissionais de TI?** Nesse caso, use um [snap-in Console de Gerenciamento Microsoft (MMC),](/previous-versions/windows/desktop/mmc/microsoft-management-console-start-page) que foi projetado especificamente para tarefas de gerenciamento do sistema. Em alguns casos, a melhor solução é ter um item de painel de controle para usuários gerais e um snap-in do MMC para profissionais de TI.
 
     ![captura de tela da janela de gerenciamento do computador ](images/winenv-ctrl-panels-image2.png)
 
-    Neste exemplo, o snap-in do MMC usuários e grupos locais fornece gerenciamento de usuários direcionado a profissionais de ti. Outros usuários têm mais probabilidade de usar o item contas de usuário no painel de controle.
+    Neste exemplo, o snap-in MMC Usuários e Grupos Locais fornece gerenciamento de usuários direcionado a profissionais de TI. Outros usuários têm maior probabilidade de usar o item Contas de Usuário no Painel de Controle.
 
--   **O recurso é um recurso OEM usado somente durante a configuração inicial do sistema?** Nesse caso, use o centro de boas-vindas do Windows como o ponto de integração.
+-   **O recurso é um recurso OEM usado somente durante a configuração inicial do sistema?** Se sim, use o windows Centro de Boas-Vindas como o ponto de integração.
 
-Os itens do painel de controle são necessários porque muitos recursos de nível de sistema não têm um ponto de integração mais óbvio ou direto. No entanto, o painel de controle não deve ser exibido como "um local" para todas as definições de configuração. **Os programas que têm uma interface do usuário devem ser configurados diretamente da interface de usuário em vez de usar itens do painel de controle.**
+Itens do painel de controle são necessários porque muitos recursos no nível do sistema não têm um ponto de integração mais óbvio ou direto. Ainda Painel de Controle não deve ser exibido como o "único lugar" para todas as definições de configuração. **Programas que têm uma interface do usuário devem ser configurados diretamente de sua interface do usuário em vez de usar itens do painel de controle.**
 
 **Incorreto:**
 
-![captura de tela do item de opções da Internet do painel de controle ](images/winenv-ctrl-panels-image3.png)
+![captura de tela do item opções da Internet do painel de controle ](images/winenv-ctrl-panels-image3.png)
 
-Neste exemplo, o Windows Internet Explorer não deve ser representado no painel de controle, porque sua própria interface do usuário é um ponto de integração melhor.
+Neste exemplo, o Windows Internet Explorer não deve ser representado no Painel de Controle, pois sua própria interface do usuário é um ponto de integração melhor.
 
 ### <a name="create-a-new-control-panel-item-or-extend-an-existing-one"></a>Criar um novo item do painel de controle ou estender um existente?
 
 Para decidir, considere estas perguntas:
 
--   **A funcionalidade pode ser expressa como tarefas que podem ser conectadas a um item existente do painel de controle extensível?** Os seguintes itens do painel de controle são extensíveis: dispositivos Bluetooth, vídeo, Internet, teclado, mouse, rede, energia, sistema, sem fio (infravermelho).
--   **As propriedades e tarefas substituem os recursos do item existente do painel de controle extensível?** Nesse caso, você deve estender o item existente do painel de controle porque isso resulta em uma experiência de usuário mais simples. Caso contrário, crie um novo item do painel de controle.
+-   **A funcionalidade pode ser expressa como tarefas que podem se conectar a um item de painel de controle extensível existente?** Os seguintes itens do painel de controle são extensíveis: Dispositivos Bluetooth, Exibição, Internet, Teclado, Mouse, Rede, Energia, Sistema, Sem fio (sem fio).
+-   **As propriedades e as tarefas substituem os recursos do item do painel de controle extensível existente?** Nesse caso, você deve estender o item do painel de controle existente porque isso resulta em uma experiência de usuário mais simples. Caso não, crie um novo item do painel de controle.
 
 ## <a name="design-concepts"></a>Conceitos de design
 
-**O conceito do painel de controle é baseado em uma metáfora do mundo real.** Um painel de controle do mundo real é uma coleção de controles (botões, opções, medidores e monitores) usados para monitorar e controlar um dispositivo. Os usuários desses painéis de controle geralmente precisam de treinamento para entender como usá-los.
+**O Painel de Controle conceito é baseado em uma metáfora do mundo real.** Um painel de controle do mundo real é uma coleção de controles (botões, comutadores, medidores e exibições) usados para monitorar e controlar um dispositivo. Os usuários desses painéis de controle geralmente precisam de treinamento para entender como usá-los.
 
-Ao contrário de suas contrapartes do mundo real, **os designs do painel de controle do Windows são otimizados para usuários de primeira hora.** Os usuários não executam a maioria das tarefas do painel de controle com muita frequência, de modo que normalmente não se lembram de como fazê-las e precisam reaprender cada vez mais com eficiência.
+Ao contrário de suas contrapartes do mundo real, os designs do painel de controle do **Windows são otimizados para usuários de primeira vez.** Os usuários não executam a maioria das tarefas do painel de controle com muita frequência, portanto, geralmente não se lembram de como fazê-las e efetivamente precisam reaprender todas as vezes.
 
 Para criar um item do painel de controle que seja útil e fácil de usar:
 
--   Verifique se as propriedades são necessárias.
--   Apresente as propriedades em termos de metas de usuário em vez de tecnologia.
--   Apresente as propriedades no nível certo.
--   Páginas de design para tarefas específicas.
--   Páginas de design para usuários padrão e administradores protegidos.
+-   Certifique-se de que as propriedades sejam necessárias.
+-   Apresentar propriedades em termos de metas do usuário em vez de tecnologia.
+-   Apresentar propriedades no nível direito.
+-   Criar páginas para tarefas específicas.
+-   Criar páginas para usuários padrão e administradores protegidos.
 
-Ao criar e avaliar itens a serem incluídos no painel de controle, determine as tarefas comuns que os usuários executam e verifique se há um caminho claro para executar essas tarefas. Os usuários normalmente executam os seguintes tipos de tarefas com itens do painel de controle:
+Ao projetar e avaliar itens a incluir no Painel de Controle, determine as tarefas comuns que os usuários executam e certifique-se de que há um caminho claro para executar essas tarefas. Normalmente, os usuários executam os seguintes tipos de tarefas com itens do painel de controle:
 
 -   Configuração inicial
--   Alterações frequentes (para a maioria das configurações)
+-   Alterações pouco frequentes (para a maioria das configurações)
 -   Alterações frequentes (para algumas configurações importantes)
 -   Reverter configurações para um estado inicial ou anterior
 -   Solução de problemas
 
 **Se você fizer apenas uma coisa...**
 
-Crie páginas do painel de controle para tarefas específicas e apresente-as em termos de metas do usuário em vez de tecnologia.
+Criar páginas do painel de controle para tarefas específicas e apresentá-las em termos de metas do usuário em vez de tecnologia.
 
 ## <a name="usage-patterns"></a>Padrões de uso
 
@@ -98,16 +98,16 @@ Para itens do painel de controle, você pode usar um fluxo de tarefas ou uma fol
 
 ### <a name="task-flow-patterns"></a>Padrões de fluxo de tarefas
 
-Itens de fluxo de tarefas usam uma página de Hub para apresentar as opções de alto nível e as páginas do spoke para executar a configuração real.
+Os itens de fluxo de tarefas usam uma página de hub para apresentar as opções de alto nível e as páginas spoke para executar a configuração real.
 
-**Páginas de Hub**
+**Páginas do hub**
 
--   Páginas de Hub baseadas em tarefas. Essas páginas de Hub apresentam as tarefas usadas com mais frequência. Elas são mais bem usadas para algumas tarefas mais usadas ou importantes em que os usuários precisam de mais orientações e explicações. As páginas de Hub não têm botões de confirmação. As páginas de Hub baseadas em tarefas híbridas também têm algumas propriedades ou comandos diretamente. As páginas de Hub híbrido são altamente recomendadas quando os usuários têm mais probabilidade de usar o painel de controle para acessar essas propriedades e comandos.
--   Páginas de Hub baseadas em objeto. Essas páginas de Hub apresentam os objetos disponíveis usando um controle de exibição de lista. Eles são mais bem usados quando podem existir vários objetos. As páginas de Hub não têm botões de confirmação.
+-   Páginas de hub baseadas em tarefas. Essas páginas de hub apresentam as tarefas mais usadas. Eles são mais usados para algumas tarefas comumente usadas ou importantes em que os usuários precisam de mais diretrizes e explicações. As páginas do hub não têm botões de commit. As páginas de hub baseadas em tarefas híbridas também têm algumas propriedades ou comandos diretamente neles. As páginas de hub híbrido são altamente recomendadas quando os usuários têm maior probabilidade de usar Painel de Controle acessar essas propriedades e comandos.
+-   Páginas de hub baseadas em objeto. Essas páginas de hub apresentam os objetos disponíveis usando um controle de exibição de lista. Eles são mais bem usados quando pode haver vários objetos. As páginas do hub não têm botões de commit.
 
-**Páginas do spoke**
+**Páginas spoke**
 
--   Páginas de tarefas. Essas páginas spoke apresentam uma tarefa ou uma etapa em uma tarefa com uma instrução principal específica baseada em tarefa. Eles são mais bem usados para tarefas que se beneficiam de diretrizes e explicações adicionais.
+-   Páginas de tarefas. Essas páginas spoke apresentam uma tarefa ou uma etapa em uma tarefa com uma instrução principal específica baseada em tarefas. Eles são mais bem usados para tarefas que se beneficiam de diretrizes e explicações adicionais.
 -   Páginas de formulário. Essas páginas spoke apresentam uma coleção de propriedades e tarefas relacionadas com base em uma instrução principal geral. Eles são mais bem usados para recursos que têm muitas propriedades e se beneficiam de uma apresentação direta de página única, como propriedades avançadas.
 
 ### <a name="property-sheet-patterns"></a>Padrões de folha de propriedades
@@ -286,80 +286,80 @@ Isso mantém o significado dos botões de confirmação para a tarefa principal 
     -   A ação tem consequências significativas e, se incorreta, não corrigível prontamente.
     -   A ação pode resultar em uma perda significativa do tempo ou esforço do usuário.
     -   A ação está claramente inconsistente com outras ações.
--   **Não confirme se os usuários abandonam as alterações** navegando para longe usando voltar, fechar ou a barra de endereços. No entanto, você pode confirmar se uma navegação potencialmente indesejada pode resultar em uma perda significativa do tempo ou esforço do usuário.
--   **Não use links de comando ou de navegação** (inclusive consulte também links). Nas páginas do spoke final, os usuários devem concluir ou cancelar explicitamente a tarefa. Os usuários não devem ser incentivados a navegar em outro lugar, pois isso provavelmente cancelaria a tarefa implicitamente.
--   **Quando os usuários concluírem ou cancelarem uma tarefa, eles deverão ser enviados de volta para a página de Hub da qual a tarefa foi iniciada.** Se não houver essa página, feche a janela painel de controle. Não presuma que as páginas spoke são sempre iniciadas em outra página.
--   **Remova as páginas "confirmadas" obsoletas da pilha voltar do Windows Explorer** ao retornar os usuários de volta para a página da qual a tarefa foi iniciada. Os usuários nunca devem ver as páginas às quais eles já se confirmaram ao clicar no botão voltar. Os usuários sempre devem fazer alterações adicionais refazendo completamente a tarefa em vez de clicar em voltar para modificar páginas obsoletas.
-    -   **Desenvolvedores:** Você pode remover essas páginas obsoletas usando as APIs ITravelLog:: FindTravelEntry () e ITravelLogEx::D eleteEntry ().
+-   **Não confirme se os usuários abandonam as alterações** navegando para longe usando voltar, fechar ou a barra de endereços. No entanto, você pode confirmar se uma navegação potencialmente não intencional pode resultar em uma perda significativa do tempo ou do esforço do usuário.
+-   **Não use links de comando ou navegação** (incluindo Ver também links). Nas páginas de spoke finais, os usuários devem concluir explicitamente ou cancelar a tarefa. Os usuários não devem ser incentivados a navegar para outro lugar, pois isso provavelmente cancelaria a tarefa implicitamente.
+-   **Quando os usuários concluirem ou cancelarem uma tarefa, eles deverão ser enviados de volta para a página do hub da qual a tarefa foi lançada.** Se não houver essa página, feche a janela do painel de controle. Não suponha que as páginas spoke sejam sempre lançadas de outra página.
+-   **Remova as páginas "comprometidas"** da pilha Windows Explorer back quando você retornar os usuários para a página da onde a tarefa foi lançada. Os usuários nunca devem ver as páginas com as que já se comprometeram ao clicar no botão Voltar. Os usuários sempre devem fazer alterações adicionais redondo completamente a tarefa em vez de clicar em Voltar para modificar páginas desocadas.
+    -   **Desenvolvedores:** Você pode remover essas páginas stale usando as APIs ITravelLog::FindTravelEntry() e ITravelLogEx::D eleteEntry().
 
-**Botões de confirmação**
+**Botões de commit**
 
-**Observação:** Os botões cancelar são considerados botões de confirmação.
+**Observação:** Os botões Cancelar são considerados botões de commit.
 
--   **Confirme as tarefas usando botões de confirmação que são respostas específicas para a instrução principal, em vez de rótulos genéricos, como OK.** Os rótulos em botões de confirmação devem fazer sentido por conta própria. Evite usar OK porque não é uma resposta específica para a instrução principal e, portanto, mais fácil de lamentavelmente. Além disso, normalmente é usado com caixas de diálogo modais e, incorretamente, indica o fechamento da janela do item do painel de controle.
-    -   **Exceção**
+-   **Confirme as tarefas usando botões de confirmação que são respostas específicas para a instrução principal, em vez de rótulos genéricos, como OK.** Os rótulos nos botões de confirmação devem fazer sentido por conta própria. Evite usar OK porque não é uma resposta específica à instrução principal e, portanto, é mais fácil de entender mal. Além disso, OK normalmente é usado com caixas de diálogo modais e implica incorretamente o fechamento da janela de item do painel de controle.
+    -   **Exceções:**
         -   Use OK para páginas que não têm configurações.
-        -   Use OK quando a resposta específica ainda for genérica, como salvar, selecionar ou escolher, como ao alterar uma configuração específica ou uma coleção de configurações.
-        -   Use OK se a página tiver botões de opção que são respostas para a instrução principal. Para manter o modelo de confirmação atrasada, você não pode usar links de tarefas em uma página final do spoke.
+        -   Use OK quando a resposta específica ainda for genérica, como Salvar, Selecionar ou Escolher, como ao alterar uma configuração específica ou uma coleção de configurações.
+        -   Use OK se a página tiver botões de rádio que são respostas à instrução principal. Para manter o modelo de confirmação atrasada, você não pode usar links de tarefa em uma página de spoke final.
 
             ![captura de tela de restrições da Web com o botão OK ](images/winenv-ctrl-panels-image10.png)
 
-            Neste exemplo, os botões de opção, não os botões de confirmação, são respostas para a instrução principal.
--   **Forneça um botão Cancelar para permitir que os usuários abandonem explicitamente as alterações.** Embora os usuários possam abandonar implicitamente uma tarefa não confirmando as alterações, fornecer um botão Cancelar permite que eles façam isso com maior confiança.
-    -   **Exceção:** Não forneça um botão Cancelar para tarefas em que os usuários não podem fazer alterações. O botão OK tem o mesmo efeito que cancelar nesse caso.
--   **Não use botões de confirmação de fechamento, concluído ou término.** Normalmente, esses botões são usados com caixas de diálogo modais e incorretamente, fechando a janela do item do painel de controle. Os usuários podem fechar a janela usando o botão fechar na barra de título. Além disso, a conclusão e a conclusão são enganosas porque os usuários são retornados para a página na qual a tarefa foi iniciada, para que eles não sejam realmente feitos.
--   **Não desabilite os botões de confirmação.** Caso contrário, os usuários precisam deduzir por que os botões de confirmação estão desabilitados. É melhor deixar os botões de confirmação habilitados e fornecer uma mensagem de erro útil sempre que houver um problema.
--   **Verifique se os botões de confirmação aparecem na página sem rolagem.** Se a página for longa, você poderá tornar os botões de confirmação sempre visíveis colocando-os em uma [área de comando](glossary.md), em vez de na área de conteúdo.
+            Neste exemplo, os botões de rádio, não os botões de confirmação, são respostas à instrução principal.
+-   **Forneça um botão Cancelar para permitir que os usuários abandonem explicitamente as alterações.** Embora os usuários possam abandonar implicitamente uma tarefa não confirmando suas alterações, fornecer um botão Cancelar permite que eles o façam com maior confiança.
+    -   **Exceção:** Não forneça um botão Cancelar para tarefas em que os usuários não possam fazer alterações. O botão OK tem o mesmo efeito que Cancelar nesse caso.
+-   **Não use os botões Fechar, Concluir ou Concluir commit.** Esses botões normalmente são usados com caixas de diálogo modais e implicam incorretamente o fechamento da janela de item do painel de controle. Os usuários podem fechar a janela usando o botão Fechar na barra de título. Além disso, Done e Finish são enganosos porque os usuários são retornados para a página da qual a tarefa foi lançada, portanto, eles não são realmente feitos.
+-   **Não desabilite os botões de commit.** Caso contrário, os usuários terão que deduzir por que os botões de confirmação estão desabilitados. É melhor deixar os botões de commit habilitados e dar uma mensagem de erro útil sempre que houver um problema.
+-   **Certifique-se de que os botões de confirmação apareçam na página sem rolar.** Se a página for longa, você poderá tornar os botões de confirmação sempre visíveis colocando-os em uma área de comando [,](glossary.md)em vez de na área de conteúdo.
 
-    ![captura de tela da caixa de diálogo reprodução automática ](images/winenv-ctrl-panels-image11.png)
+    ![captura de tela da caixa de diálogo de reprodução automática ](images/winenv-ctrl-panels-image11.png)
 
-    Neste exemplo, o tamanho da área de conteúdo é não associado, portanto, os botões de confirmação são colocados na área de comando.
+    Neste exemplo, o tamanho da área de conteúdo não é desaconsudido, portanto, os botões de confirmação são colocados na área de comando.
 
--   Alinhar os botões de confirmação e usar esta ordem (da esquerda para a direita): botões de confirmação positivos, cancelar e aplicar.
+-   Alinhe com o botão direito os botões de confirmação e use essa ordem (da esquerda para a direita): botões de confirmação positivos, Cancelar e Aplicar.
 
 **Botões de visualização**
 
--   Verifique se **o botão de visualização significa aplicar as alterações pendentes agora, mas restaure as configurações atuais se os usuários navegarem para fora da página sem confirmar as alterações.**
--   **Você pode usar os botões de visualização em qualquer página do spoke.** As páginas de Hub não precisam de botões de visualização porque usam um [modelo de confirmação imediata](glossary.md).
--   **Considere usar um botão de visualização em vez de um botão Aplicar para páginas do painel de controle.** Os botões de visualização são mais fáceis para os usuários entenderem e podem ser usados em qualquer página do spoke.
--   **Forneça um botão de visualização somente se a página tiver configurações (pelo menos uma) com efeitos que os usuários podem ver.** Os usuários devem ser capazes de visualizar uma alteração, avaliar a alteração e fazer outras alterações com base nessa avaliação.
--   **Sempre habilite o botão Visualizar.**
+-   Certifique-se de que o botão Visualizar significa aplicar as alterações pendentes agora, mas restaure as configurações atuais se os usuários navegarem para fora da página sem se comprometer **com as alterações.**
+-   **Você pode usar os botões Visualizar em qualquer página spoke.** As páginas do hub não precisam de botões de Visualização porque usam um [modelo de commit imediato.](glossary.md)
+-   **Considere usar um botão Visualizar em vez de um botão Aplicar para páginas do painel de controle.** Os botões de visualização são mais fáceis de entender e podem ser usados em qualquer página spoke.
+-   **Forneça um botão Visualizar somente se a página tiver configurações (pelo menos uma) com efeitos que os usuários podem ver.** Os usuários devem ser capazes de visualizar uma alteração, avaliar a alteração e fazer outras alterações com base nessa avaliação.
+-   **Sempre habilita o botão Visualizar.**
 
-**Visualizações dinâmicas**
+**Visualizações ao vivo**
 
-Um item do painel de controle tem visualização dinâmica quando o efeito das alterações em uma página do spoke pode ser visto imediatamente.
+Um item do painel de controle tem visualização ao vivo quando o efeito das alterações em uma página spoke pode ser visto imediatamente.
 
--   **Considere usar a visualização dinâmica para configurações de exibição quando:**
-    -   O efeito é óbvio, normalmente porque se aplica ao monitor inteiro.
+-   **Considere usar a visualização ao vivo para configurações de exibição quando:**
+    -   O efeito é óbvio, normalmente porque se aplica a todo o monitor.
     -   O efeito pode ser aplicado sem atraso significativo.
     -   O efeito é seguro e pode ser desfeito facilmente.
 
-        ![captura de tela da caixa de diálogo Alterar configurações de cores ](images/winenv-ctrl-panels-image12.png)
+        ![captura de tela da caixa de diálogo Alterar configurações de cor ](images/winenv-ctrl-panels-image12.png)
 
-        Neste exemplo, o efeito das configurações de cor e aparência do Windows é visto imediatamente. Isso permite que os usuários façam alterações com o mínimo de esforço.
+        Neste exemplo, o efeito das configurações de Cor e Aparência do Windows é visto imediatamente. Isso permite que os usuários façam alterações com esforço mínimo.
 
--   **Use salvar alterações e cancelar para os botões de confirmação.** "Salvar alterações" mantém as configurações atuais, enquanto cancelar reverte para as configurações originais. "Salvar alterações" é usado em vez de OK para deixar claro que todas as alterações visualizadas ainda não foram aplicadas.
--   **Não forneça um botão Aplicar.** A visualização dinâmica torna desnecessária a aplicação.
--   **Restaure as alterações se os usuários navegarem para longe** usando voltar, fechar ou a barra de endereços. Para preservar as alterações, os usuários devem confirmá-las explicitamente.
+-   **Use Salvar alterações e Cancelar para os botões de confirmação.** "Salvar alterações" mantém as configurações atuais, enquanto Cancelar reverte para as configurações originais. "Salvar alterações" é usado em vez de OK para deixar claro que as alterações visualizadas ainda não foram aplicadas.
+-   **Não forneça um botão Aplicar.** A visualização ao vivo torna a aplicação desnecessária.
+-   **Restaure as alterações se os usuários navegarem para fora** usando Voltar, Fechar ou a barra de endereços. Para preservar as alterações, os usuários devem fazer commit delas explicitamente.
 
 **Aplicar botões**
 
--   Certifique-se **de que o botão Aplicar significa aplicar as alterações pendentes (feitas desde que a tarefa foi iniciada ou a última aplicação), mas permanece na página atual.** Isso permite que os usuários avaliem as alterações antes de passar para outras tarefas.
--   **Use os botões aplicar somente nas páginas do spoke final.** Os botões aplicar não devem ser usados em páginas de spoke intermediárias para manter um modelo de confirmação imediata.
-    -   **Exceção:** Você pode usar os botões aplicar em uma página de Hub híbrido se a alteração de uma configuração exigir [elevação](glossary.md). Para obter mais detalhes, consulte [interação de página de Hub](#hub-pages).
--   **Forneça um botão aplicar somente se a página tiver configurações (pelo menos uma) com efeitos que os usuários podem avaliar de maneira significativa.** Normalmente, os botões aplicar são usados quando as configurações fazem alterações visíveis. Os usuários devem ser capazes de aplicar uma alteração, avaliar a alteração e fazer outras alterações com base nessa avaliação.
--   **Habilitar o botão aplicar somente quando houver alterações pendentes;** caso contrário, desabilite-o.
+-   Certifique-se de que o botão Aplicar significa aplicar as alterações pendentes (feitas desde que a tarefa foi iniciada ou a última Aplicar), mas permaneça **na página atual.** Isso permite que os usuários avaliem as alterações antes de passar para outras tarefas.
+-   **Use os botões Aplicar somente nas páginas de spoke finais.** Os botões apply não devem ser usados em páginas spoke intermediárias para manter um modelo de commit imediato.
+    -   **Exceção:** Você poderá usar os botões Aplicar em uma página de hub híbrido se alterar uma configuração exigir [elevação](glossary.md). Para obter mais detalhes, consulte [interação de página do hub](#hub-pages).
+-   **Forneça um botão Aplicar somente se a página tiver configurações (pelo menos uma) com efeitos que os usuários podem avaliar de maneira significativa.** Normalmente, os botões Aplicar são usados quando as configurações fazem alterações visíveis. Os usuários devem ser capazes de aplicar uma alteração, avaliar a alteração e fazer outras alterações com base nessa avaliação.
+-   **Habilita o botão Aplicar somente quando houver alterações pendentes;** caso contrário, desabilite-o.
 -   **Atribua "A" como a chave de acesso.**
 
 ### <a name="control-panel-integration"></a>Integração do painel de controle
 
-Para integrar o item do painel de controle com o Windows, você pode:
+Para integrar o item do painel de controle ao Windows, você pode:
 
--   **Registre o item do painel de controle (incluindo seu nome, descrição e ícone)**, para que o Windows esteja ciente dele.
+-   **Registre o item do painel de controle (incluindo seu nome, descrição** e ícone) , para que o Windows esteja ciente dele.
 -   Se o item do painel de controle for de nível superior (veja abaixo):
-    -   Associe-o à **página de categoria** apropriada.
-    -   **Forneça links de tarefas (incluindo seu nome, descrição, palavras-chave e linha de comando)** para indicar as tarefas principais e permitir que os usuários naveguem diretamente para as tarefas.
--   **Forneça termos de pesquisa** para ajudar os usuários a localizar os links de tarefas usando o recurso de pesquisa do painel de controle.
+    -   Associá-lo à página **de categoria apropriada**.
+    -   **Forneça links de tarefa (incluindo seu nome, descrição,** palavras-chave e linha de comando) para indicar tarefas primárias e permitir que os usuários naveguem diretamente para as tarefas.
+-   **Forneça termos de pesquisa** para ajudar os usuários a encontrar seus links de tarefa usando o recurso Painel de Controle pesquisa.
 
     Observe que você pode fornecer essas informações somente para itens de painel de controle individuais que não pode adicionar ou alterar essas informações para itens existentes do painel de controle que você estende.
 
@@ -367,88 +367,88 @@ Para integrar o item do painel de controle com o Windows, você pode:
 
 -   **Adicione o item do painel de controle a uma página de categoria somente se:**
 
-    -   A maioria dos usuários precisa dela. Exemplo: Central de rede e compartilhamento
-    -   Ele é usado muitas vezes. Exemplo: sistema
-    -   Ele fornece uma funcionalidade importante que não é exposta em outro lugar. Exemplo: impressoras
+    -   A maioria dos usuários precisa dele. Exemplo: Central de Rede e Compartilhamento
+    -   Ele é usado muitas vezes. Exemplo: Sistema
+    -   Ele fornece uma funcionalidade importante que não é exposta em outro lugar. Exemplo: Impressoras
 
     Os itens do painel de controle que atendem a esses critérios são chamados de nível superior.
 
 -   **Não adicione o item do painel de controle a uma página de categoria se:**
 
-    -   Ele raramente é usado ou usado para configuração única. Exemplo: centro de boas-vindas
-    -   Ele é destinado a usuários avançados ou profissionais de ti. Exemplo: gerenciamento de cores
-    -   Ele não se aplica à configuração atual de hardware ou de software. Exemplo: Windows SideShow (se não houver suporte para o hardware atual).
+    -   Raramente é usado ou usado para a configuração única. Exemplo: Centro de Boas-Vindas
+    -   Ele é direcionado a usuários avançados ou profissionais de TI. Exemplo: Gerenciamento de Cores
+    -   Ele não se aplica à configuração atual de hardware ou software. Exemplo: Windows SideShow (se não for suportado pelo hardware atual).
 
-    Remover esses itens do painel de controle das páginas de categoria torna os itens de nível superior mais fáceis de localizar. Dado seu uso, esses itens do painel de controle são descobertos suficientemente por meio de pesquisa ou pontos de entrada contextuais.
+    A remoção desses itens do painel de controle das páginas de categoria torna os itens de nível superior mais fáceis de encontrar. Considerando seu uso, esses itens do painel de controle são suficientemente descobriveis por meio de pontos de pesquisa ou de entrada contextuais.
 
--   **Associe o item do painel de controle de nível superior à categoria sob a qual os usuários têm mais probabilidade de procurar.** Essa decisão deve ser baseada no teste do usuário.
--   **Considere associar o item do painel de controle de nível superior com a segunda categoria mais provável também.** Você deve associar um item do painel de controle com duas categorias se for provável que os usuários procurem suas principais tarefas em mais de um lugar.
--   **Não associe o item do painel de controle com mais de duas categorias.** O valor da categorização será subminado se os itens do painel de controle aparecerem em várias categorias.
+-   **Associe o item do painel de controle de nível superior à categoria na qual os usuários provavelmente o procurarão.** Essa decisão deve ser baseada no teste do usuário.
+-   **Considere associar o item do painel de controle de nível superior à segunda categoria mais provável também.** Você deve associar um item do painel de controle a duas categorias se os usuários provavelmente procurarem suas principais tarefas em mais de um lugar.
+-   **Não associe o item do painel de controle a mais de duas categorias.** O valor da categorização será prejudicado se os itens do painel de controle aparecerem em várias categorias.
 
-**Links de tarefas**
+**Links de tarefa**
 
--   **Associe o item do painel de controle às suas tarefas principais.** Você pode exibir até cinco tarefas em uma página de categoria, mas tarefas adicionais são usadas para pesquisa no painel de controle. Use a mesma frase que você faz para links de tarefas, possivelmente removendo algumas palavras para tornar os links de tarefa mais sucintos.
--   **Prefira que os links de tarefas levam a locais diferentes no item do painel de controle.** Ter vários links para o mesmo local pode ser confuso.
+-   **Associe o item do painel de controle às tarefas principais.** Você pode exibir até cinco tarefas em uma página Categoria, mas tarefas adicionais são usadas para pesquisa de painel de controle. Use a mesma frase que você faz para links de tarefa, possivelmente removendo algumas palavras para tornar os links de tarefa mais sucintas.
+-   **Prefira que os links de tarefa levam a locais diferentes no item do painel de controle.** Ter vários links para o mesmo local pode ser confuso.
 
 **Termos de pesquisa**
 
--   **Registre os termos de pesquisa para o item do painel de controle que os usuários têm mais probabilidade de usar para descrevê-lo.** Esses termos de pesquisa devem incluir:
+-   **Registre os termos de pesquisa para o item do painel de controle que os usuários têm maior probabilidade de usar para descrevê-lo.** Esses termos de pesquisa devem incluir:
 
     -   Os recursos ou objetos configurados.
-    -   As tarefas principais.
+    -   As tarefas primárias.
 
     Esses termos de pesquisa devem ser baseados no teste do usuário.
 
--   **Inclua também sinônimos comuns para esses termos de pesquisa.** Por exemplo, monitor e exibição são sinônimos, portanto, ambas as palavras devem ser incluídas.
--   **Inclua grafias alternativas ou quebras de palavras.** Por exemplo, os usuários podem pesquisar o site e o site da Web. Considere também fornecer erros de grafia comuns.
--   **Considere os formulários de substantivos do singular e do plural.** O recurso de pesquisa do painel de controle não pesquisa automaticamente os dois formulários; forneça os formulários para os quais os usuários provavelmente pesquisarão.
--   **Use verbos conjugação presentes simples.** Se você registrar a conexão como um termo de pesquisa, o recurso de pesquisa não procurará conexões, conexões e conectadas automaticamente.
--   **Não se preocupe com o caso.** O recurso de pesquisa não diferencia maiúsculas de minúsculas.
+-   **Inclua também sinônimos comuns para esses termos de pesquisa.** Por exemplo, monitorar e exibir são sinônimos, portanto, ambas as palavras devem ser incluídas.
+-   **Inclua ortografias alternativas ou quebras de palavras.** Por exemplo, os usuários podem pesquisar site e site. Considere fornecer erros de ortagem comuns também.
+-   **Considere formulários singulares versus substantivos plurais.** O recurso de pesquisa do painel de controle não pesquisa automaticamente os dois formulários; fornecem os formulários para os quais os usuários provavelmente pesquisam.
+-   **Use verbos tensos atuais simples.** Se você registrar conectar-se como um termo de pesquisa, o recurso de pesquisa não procurará automaticamente se conectar, conectar-se e conectá-lo.
+-   **Não se preocupe com o caso.** O recurso de pesquisa não é sensível a minúsculas.
 
 ### <a name="standard-users-and-protected-administrators"></a>Usuários padrão e administradores protegidos
 
-**Muitas configurações exigem privilégios de administrador para serem alteradas.** Se um processo exigir privilégios de administrador, o Windows Vista e posterior exigirá que [os usuários padrão](glossary.md) e [os administradores protegidos](glossary.md) elevem seus privilégios explicitamente. Isso ajuda a impedir que códigos mal-intencionados sejam executados com privilégios de administrador.
+**Muitas configurações exigem privilégios de administrador para alteração.** Se um processo exigir privilégios de administrador, o Windows Vista e posterior exigirão que usuários [Standard](glossary.md) e administradores [protegidos](glossary.md) elevem seus privilégios explicitamente. Isso ajuda a impedir que código mal-intencionado seja executado com privilégios de administrador.
 
-Para obter mais informações e exemplos, consulte [controle de conta de usuário](winenv-uac.md).
+Para obter mais informações e exemplos, consulte [Controle de Conta de Usuário](winenv-uac.md).
 
 ### <a name="schemes-and-themes"></a>Esquemas e temas
 
-Um esquema é uma coleção nomeada de configurações visuais. Um tema é uma coleção nomeada de configurações no sistema. Exemplos de esquemas e temas incluem exibição, mouse, telefone e modem, opções de energia e opções de som e áudio.
+Um esquema é uma coleção nomeada de configurações visuais. Um tema é uma coleção nomeada de configurações em todo o sistema. Exemplos de esquemas e temas incluem Exibição, Mouse, Telefone e Modem, Opções de Energia e Opções de Som e Áudio.
 
 -   **Permitir que os usuários criem esquemas quando:**
 
     -   **É provável que os usuários alterem as configurações.**
-    -   **Os usuários têm mais probabilidade de alterar as configurações como uma coleção.**
+    -   **É mais provável que os usuários alterem as configurações como uma coleção.**
 
-    Os esquemas são úteis quando os usuários estão em um ambiente diferente, como um local físico diferente (país/região, fuso horário); usando o computador em uma situação diferente (baterias, encaixadas/desencaixadas); ou usando seu computador para uma função diferente (apresentações, reprodução de vídeo).
+    Os esquemas são úteis quando os usuários estão em um ambiente diferente, como um local físico diferente (país/região, fuso horário); usando seu computador em uma situação diferente (em baterias, encaixadas/desencaixadas); ou usando seu computador para uma função diferente (apresentações, reprodução de vídeo).
 
--   **Forneça pelo menos um esquema padrão.** O esquema padrão deve estar bem nomeado e ser aplicado à maioria dos usuários na maioria das circunstâncias. Os usuários não devem precisar criar um esquema próprio.
--   **Forneça uma visualização** ou outro mecanismo para que os usuários possam ver as configurações no esquema.
+-   **Forneça pelo menos um esquema padrão.** O esquema padrão deve ser bem nomeado e se aplicar à maioria dos usuários na maioria das circunstâncias. Os usuários não devem ter que criar um esquema próprio.
+-   **Forneça uma versão prévia** ou outro mecanismo para que os usuários possam ver as configurações dentro do esquema.
 
-    ![captura de tela da caixa de diálogo personalização ](images/winenv-ctrl-panels-image13.png)
+    ![captura de tela da caixa de diálogo de personalização ](images/winenv-ctrl-panels-image13.png)
 
-    Neste exemplo, o item Painel de controle de personalização mostra uma visualização das configurações de área de trabalho e aparência.
+    Neste exemplo, o item do painel de controle Personalização mostra uma visualização das configurações de aparência e área de trabalho.
 
--   **Forneça os comandos Salvar como e excluir.** Um comando de renomeação não é necessário. os usuários podem renomear esquemas salvando sob o nome desejado e excluindo o esquema original.
--   Se as configurações não puderem ser aplicadas sem um esquema, **não permita que os usuários excluam todos os esquemas.** Os usuários não devem precisar criar um esquema próprio.
--   Se os esquemas não forem completamente independentes (por exemplo, os esquemas de energia dependem do modo de operação atual do laptop), **Verifique se há uma maneira fácil de alterar as configurações que se aplicam em todos os esquemas.** Por exemplo, com os esquemas de energia, verifique se os usuários podem definir o que acontece quando a tampa de um computador portátil é fechada em um único local.
+-   **Forneça os comandos Salvar como e Excluir.** Um comando de renomeação não é necessário para que os usuários possam renomear esquemas salvando sob o nome desejado e excluindo o esquema original.
+-   Se as configurações não puderem ser aplicadas sem um esquema, não permita que os usuários **excluam todos os esquemas.** Os usuários não devem ter que criar um esquema próprio.
+-   Se os esquemas não são completamente independentes (por exemplo, os esquemas de energia dependem do modo de operação do laptop atual), certifique-se de que haja uma maneira fácil de alterar as configurações que se aplicam a todos os **esquemas.** Por exemplo, com esquemas de energia, certifique-se de que os usuários possam definir o que acontece quando a tampa de um computador portátil é fechada em um único local.
 
 ### <a name="miscellaneous"></a>Diversos
 
--   **Use extensões do painel de controle para recursos que substituem ou estendem a funcionalidade existente do Windows.** Os seguintes itens do painel de controle são extensíveis: dispositivos Bluetooth, vídeo, Internet, teclado, mouse, rede, energia, sistema, sem fio (infravermelho).
+-   **Use Painel de Controle extensões para recursos que substituem ou estendem a funcionalidade existente do Windows.** Os seguintes itens do painel de controle são extensíveis: Dispositivos Bluetooth, Exibição, Internet, Teclado, Mouse, Rede, Energia, Sistema, Sem fio (sem fio).
 
 ### <a name="default-values"></a>Valores padrão
 
--   **As configurações em um item do painel de controle devem refletir o estado atual do recurso.** Caso contrário, seria enganoso e, possivelmente, resultaria em resultados indesejados. Por exemplo, se as configurações refletirem as recomendações, mas não o estado atual, os usuários poderão clicar em Cancelar em vez de fazer alterações, pensando que nenhuma alteração é necessária.
--   **Escolha o mais seguro (para evitar a perda de dados ou acesso ao sistema) e o estado inicial mais seguro.** Suponha que a maioria dos usuários não alterará as configurações.
--   **Se não houver fatores de segurança e segurança, escolha o estado inicial mais provável ou conveniente.**
+-   **As configurações em um item do painel de controle devem refletir o estado atual do recurso.** Fazer o contrário seria enganoso e possivelmente levar a resultados indesejáveis. Por exemplo, se as configurações refletirem as recomendações, mas não o estado atual, os usuários poderão clicar em Cancelar em vez de fazer alterações, pensando que nenhuma alteração é necessária.
+-   **Escolha o mais seguro (para evitar perda de dados ou acesso ao sistema) e o estado inicial mais seguro.** Suponha que a maioria dos usuários não altere as configurações.
+-   **Se segurança e segurança não são fatores, escolha o estado inicial mais provável ou conveniente.**
 
-## <a name="text"></a>Texto
+## <a name="text"></a>Text
 
 ### <a name="item-names"></a>Nomes de item
 
--   **Escolha um nome descritivo que se comunique claramente e diferencie o que o item do painel de controle faz.** A maioria dos nomes descreve o recurso do Windows ou o objeto que está sendo configurado e são exibidos no modo de exibição clássico do painel de controle home page.
--   **Não inclua as palavras "configurações", "opções", "Propriedades" ou "configuração" no nome.** Isso é implícito e deixá-lo desativado torna mais fácil para os usuários verificar.
+-   **Escolha um nome descritivo que se comunique claramente e diferencie o que o item do painel de controle faz.** A maioria dos nomes descreve o recurso ou objeto do Windows que está sendo configurado e são exibidos na Exibição Clássica do painel de controle home page.
+-   **Não inclua as palavras "Configurações", "Opções", "Propriedades" ou "Configuração" no nome.** Isso é implícito e deixá-lo desligado facilita a verificação dos usuários.
 
     **Incorreto:**
 
@@ -468,11 +468,11 @@ Um esquema é uma coleção nomeada de configurações visuais. Um tema é uma c
 
     Energia
 
-    Idiomas e formatos regionais
+    Formatos e idiomas regionais
 
     Nos exemplos corretos, palavras desnecessárias são removidas.
 
--   **Se o item do painel de controle configurar recursos relacionados, liste somente os recursos necessários para identificar o item e liste os recursos mais prováveis de serem reconhecidos ou usados primeiro.**
+-   **Se o item do painel de controle configurar recursos relacionados, liste apenas os recursos necessários para identificar o item e liste os recursos com maior probabilidade de serem reconhecidos ou usados primeiro.**
 
     **Incorreto:**
 
@@ -486,67 +486,64 @@ Um esquema é uma coleção nomeada de configurações visuais. Um tema é uma c
 
     Modem
 
-    Nos exemplos corretos, os recursos de item do painel de controle primário recebem ênfase.
+    Nos exemplos corretos, os recursos de item do painel de controle primário têm ênfase.
 
 -   Use [a capitalização de estilo de título](glossary.md).
 
 ### <a name="page-titles"></a>Títulos de página
 
-**Observação:** Assim como acontece com todas as janelas do Explorer, os títulos das páginas do painel de controle são exibidos na [barra de endereços](glossary.md), mas não na barra de título.
+**Observação:** Assim como em todas as janelas do Explorer, os títulos da página do painel de controle são exibidos na barra [de endereços,](glossary.md)mas não na barra de título.
 
--   **Para páginas de Hub, use o nome do item do painel de controle.**
--   **Para páginas do spoke, use um resumo conciso da finalidade da página.** Use a instrução principal da página se ela for concisa; caso contrário, use uma recondição concisa da instrução principal.
+-   **Para páginas de hub, use o nome do item do painel de controle.**
+-   **Para páginas spoke, use um resumo conciso da finalidade da página.** Use a instrução principal da página se ela for concisa; caso contrário, use uma restatementação concisa da instrução principal.
 
     ![captura de tela da caixa de diálogo opções de energia ](images/winenv-ctrl-panels-image6.png)
 
-    Neste exemplo, as opções de energia são usadas para o título da página em vez da instrução principal.
+    Neste exemplo, Opções de Energia é usado para o título da página em vez da instrução principal.
 
 -   Use a capitalização de estilo de título.
 
 ### <a name="task-link-text"></a>Texto do link da tarefa
 
-As diretrizes a seguir se aplicam a links para páginas de tarefas, como links de tarefas da página de categorias e consulte também links.
+As diretrizes a seguir se aplicam a links para páginas de tarefas, como links de tarefa de página Categoria e Ver também links.
 
--   **Escolha nomes de tarefas concisos que se comunicam e diferenciam claramente a tarefa.** Os usuários não devem ter que descobrir o que a tarefa realmente significa ou como ela difere de outras tarefas.
+-   **Escolha nomes concisos de tarefas que se comuniquem claramente e diferenciem a tarefa.** Os usuários não devem ter que descobrir o que a tarefa realmente significa ou como ela difere de outras tarefas.
 
     **Incorreto:**
 
-    Ajustar configurações de exibição
+    Ajustar as configurações de exibição
 
     **Correto:**
 
     Resolução da tela
 
-    No exemplo correto, as palavras transmitem mais precisão.
+    No exemplo correto, o texto transmite mais precisão.
 
--   **Manter uma linguagem semelhante entre links de tarefas e as páginas para as quais apontam.** Os usuários não devem ficar surpresos com a página que é exibida por um link.
--   **Para páginas de tarefas, crie a instrução principal, os botões de confirmação e os links de tarefa como um conjunto de texto relacionado.**
-
-    **Exemplos:**
-
+-   **Reter um idioma semelhante entre links de tarefa e as páginas para as que eles apontam.** Os usuários não devem se surpresa com a página exibida por um link.
+-   **Para páginas de tarefas, projete a instrução principal, os botões de confirmação e os links de tarefa como um conjunto relacionado de texto.**
     
 
-    |                              |                                                       |
+    | Exemplo                             |    Instrução                                                   |
     |------------------------------|-------------------------------------------------------|
     | Link da tarefa:<br/>        | Conectar a uma rede sem fio<br/>              |
-    | Instrução principal:<br/> | Escolha uma rede à qual se conectar<br/>             |
-    | Botão de confirmação:<br/>    | Conectar<br/>                                    |
+    | Instrução principal:<br/> | Escolher uma rede à qual se conectar<br/>             |
+    | Botão De commit:<br/>    | Conectar<br/>                                    |
     | Link da tarefa:<br/>        | Configurar controles dos pais<br/>                   |
     | Instrução principal:<br/> | Escolher um usuário e configurar controles dos pais<br/> |
-    | Botão de confirmação:<br/>    | Aplicar controle dos pais<br/>                     |
-    | Link da tarefa:<br/>        | Resolver os conflitos de sincronização<br/>                |
+    | Botão De commit:<br/>    | Aplicar o controle dos pais<br/>                     |
+    | Link da tarefa:<br/>        | Resolver seus conflitos de sincronização<br/>                |
     | Instrução principal:<br/> | Como você deseja resolver esse conflito?<br/>  |
-    | Botão de confirmação:<br/>    | Resolver<br/>                                    |
+    | Botão De commit:<br/>    | Resolver<br/>                                    |
 
     
 
      
 
-    Esses exemplos mostram a relação do texto do link da tarefa, a instrução principal e o texto do botão de confirmação.
+    Esses exemplos mostram a relação do texto do link de tarefa, a instrução principal e o texto do botão de confirmação.
 
--   Embora as tarefas geralmente comecem com verbos, **considere omitir o verbo nas páginas de categoria se for um verbo genérico relacionado à configuração que não ajuda a comunicar a tarefa.**
+-   Embora as tarefas geralmente comecem com verbos, considere omitir o verbo em páginas categoria se ele for um verbo genérico relacionado à configuração que não **ajude a comunicar a tarefa.**
 
-    **Verbos úteis específicos:**
+    **Verbos específicos e úteis:**
 
     Adicionar
 
@@ -574,7 +571,7 @@ As diretrizes a seguir se aplicam a links para páginas de tarefas, como links d
 
     Solucionar problemas
 
-    **Verbos genéricos, não auxiliares:**
+    **Verbos genéricos e sem ajuda:**
 
     Ajustar
 
@@ -600,23 +597,23 @@ As diretrizes a seguir se aplicam a links para páginas de tarefas, como links d
 
     Visualizar
 
--   **Se a tarefa configurar vários recursos relacionados, liste apenas os recursos representativos do conjunto.** Omita os detalhes que podem ser prontamente inferidos.
+-   **Se a tarefa configurar vários recursos relacionados, liste apenas os recursos que são representativos do conjunto.** Omita detalhes que podem ser inferidos prontamente.
 
     **Incorreto:**
 
-    Volume do alto-falante, mudo, ícone de volume
+    Volume do locutor, mudo, ícone de volume
 
-    Palestrantes, microfones, MIDI e esquemas de som
+    Alto-falantes, microfones, MIDI e esquemas de som
 
     **Correto:**
 
-    Volume do palestrante
+    Volume do locutor
 
     Alto-falantes e microfones
 
-    Nos exemplos corretos, somente os recursos representativos são fornecidos no link de tarefa.
+    Nos exemplos corretos, somente os recursos representativos são dados no link da tarefa.
 
--   **Você deve formular tarefas em termos de tecnologia apenas se os usuários de destino também o fizerem.**
+-   **Você deve formular tarefas em termos de tecnologia somente se os usuários de destino também fizerem isso.**
 
     **Incorreto:**
 
@@ -634,33 +631,33 @@ As diretrizes a seguir se aplicam a links para páginas de tarefas, como links d
 
     Mouse
 
-    Os exemplos corretos são termos baseados em tecnologia que os usuários de destino têm probabilidade de usar, enquanto os exemplos incorretos não são.
+    Os exemplos corretos são termos baseados em tecnologia que os usuários de destino provavelmente usarão, enquanto os exemplos incorretos não são.
 
--   Use os substantivos do plural somente se o sistema puder dar suporte a mais de um.
--   Use [a capitalização no estilo de frase](glossary.md).
+-   Use substantivos plurais somente se o sistema puder dar suporte a mais de um.
+-   Use [a capitalização de estilo de frase](glossary.md).
 -   Não use pontuação final.
 
 ### <a name="main-instructions"></a>Instruções principais
 
--   **Para a página Hub, use a instrução principal para explicar o objetivo do usuário com o item do painel de controle.** A instrução principal deve ajudar os usuários a determinar se eles selecionaram o item do painel de controle correto. Tenha em mente que os usuários podem ter selecionado o item do painel de controle em erro e estão, na verdade, procurando configurações que fazem parte de outro item do painel de controle.
+-   **Para a página do hub, use a instrução principal para explicar o objetivo do usuário com o item do painel de controle.** A instrução principal deve ajudar os usuários a determinar se eles selecionaram o item do painel de controle correto. Tenha em mente que os usuários podem ter selecionado o item do painel de controle com erro e, na verdade, estão procurando configurações que fazem parte de outro item do painel de controle.
 
     **Exemplos:**
 
     Mantenha seu computador seguro e atualizado
 
-    Otimize seu computador para que seja mais fácil ver, ouvir e controlar
+    Otimizar o computador para que seja mais fácil ver, ouvir e controlar
 
--   **Para páginas do spoke, use a instrução principal para explicar o que fazer na página.** A instrução deve ser uma instrução específica, uma direção imperativa ou uma pergunta. Boas instruções comunicam o objetivo do usuário com a página em vez de se concentrar puramente na mecânica de manipulação.
+-   **Para páginas spoke, use a instrução principal para explicar o que fazer na página.** A instrução deve ser uma instrução específica, uma direção imperativa ou uma pergunta. Boas instruções comunicam o objetivo do usuário com a página em vez de se concentrar apenas na mecânica de manipulação.
 
     **Incorreto:**
 
-    Escolha uma tarefa de notificação
+    Escolher uma tarefa de notificação
 
     **Correto:**
 
-    Indique como lidar com informações de entrada
+    Indicar como lidar com informações de entrada
 
-    A versão correta comunica-se melhor ao objetivo obtido pela página.
+    A versão correta comunica melhor a meta alcançada pela página.
 
 -   **Use verbos específicos sempre que possível.** Verbos específicos são mais significativos para usuários do que os genéricos.
 -   Use [a capitalização no estilo de frase](glossary.md).

@@ -4,12 +4,12 @@ description: Na primeira experiência ideal, os usuários instalam seu programa 
 ms.assetid: d925f71c-fc5a-4ff2-8f5d-9434c162b4b4
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: c965ae77507b0041d17cabb34c4f53dc8216c134
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 04610b75e8ca4ea7602d00b840bbbd9002397d9e
+ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104172436"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111524450"
 ---
 # <a name="first-experience"></a>Primeira experiência
 
@@ -89,9 +89,8 @@ Apresente as configurações e as tarefas para os usuários durante as primeiras
 
 
 
-|                                             |                                                                                                                                                    |
+| Primeira experiência  | Alternativas       |
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Primeira experiência**<br/>             | **Alternativas**<br/>                                                                                                                        |
 | Perguntas de instalação<br/>                  | Selecione os padrões apropriados.<br/> Permitir que os usuários alterem as opções do programa.<br/> Forneça caminhos de instalação típicos e personalizados. <br/> |
 | Perguntas do primeiro uso<br/>              | Selecione os padrões apropriados e permita que os usuários alterem as opções do programa.<br/>                                                            |
 | Primeiras tarefas de uso<br/>                  | Presente contextualmente.<br/>                                                                                                           |

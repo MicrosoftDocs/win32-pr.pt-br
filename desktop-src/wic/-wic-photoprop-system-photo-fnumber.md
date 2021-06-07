@@ -1,21 +1,21 @@
 ---
-description: A política de metadados de foto para a propriedade System. Photo. FNumber.
+description: A política de metadados de foto para a propriedade System.Photo.FNumber.
 ms.assetid: 434d52cb-c98d-4860-87f7-4aedab7f8188
-title: Política de metadados de foto System. Photo. FNumber
+title: Política de metadados de foto System.Photo.FNumber
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c518ef2a05dde8fd7e812d1d76a79cbe3efb4217
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 85443b849d9f810709f3e75c3082738e5377092f
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170298"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443617"
 ---
-# <a name="systemphotofnumber-photo-metadata-policy"></a>Política de metadados de foto System. Photo. FNumber
+# <a name="systemphotofnumber-photo-metadata-policy"></a>Política de metadados de foto System.Photo.FNumber
 
-A política de metadados de foto para a propriedade [System. Photo. FNumber](../properties/props-system-photo-fnumber.md) .
+A política de metadados de foto para a [propriedade System.Photo.FNumber.](../properties/props-system-photo-fnumber.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
 PKEY \_ Photo \_ FNumber
 
@@ -25,25 +25,25 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-Yes
+Sim
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
 
-R8 de VT \_
+VT \_ R8
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
 
-Esse valor é gerado em System. Photo. FNumberNumerator e System. Photo. FNumberDenominator. Ele não pode ser gravado diretamente. Os valores de esquemas diferentes são reconciliados.
+Esse valor é gerado de System.Photo.FNumberNumerator e System.Photo.FNumberDenominator. Ele não pode ser gravado diretamente. Valores de esquemas diferentes são reconciliados.
 
 ### <a name="jpeg-policy"></a>Política JPEG
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{UShort = 33437} |             |
+| 1     | /app1/ifd/exif/{ushort=33437} |             |
 | 2     | /xmp/exif:FNumber             |             |
 
 
@@ -54,14 +54,10 @@ Esse valor é gerado em System. Photo. FNumberNumerator e System. Photo. FNumber
 
 
 
-|       |                               |             |     |
-|-------|-------------------------------|-------------|-----|
-| Ordem | Caminho                          | Formato de disco |     |
-| 1     | /App1/IFD/EXIF/{UShort = 33437} |             |     |
-| 2     | /xmp/exif:FNumber             |             |     |
-
-
-
+| Ordem | Caminho                          | Formato de disco |
+|-------|-------------------------------|-------------|
+| 1     | /app1/ifd/exif/{ushort=33437} |             |
+| 2     | /xmp/exif:FNumber             |             | 
  
 
 ### <a name="remove-paths"></a>Remover caminhos
@@ -70,7 +66,7 @@ Esse valor é gerado em System. Photo. FNumberNumerator e System. Photo. FNumber
 
 | Ordem | Caminho                          |
 |-------|-------------------------------|
-| 1     | /App1/IFD/EXIF/{UShort = 33437} |
+| 1     | /app1/ifd/exif/{ushort=33437} |
 | 2     | /xmp/exif:fnumber             |
 
 
@@ -79,13 +75,13 @@ Esse valor é gerado em System. Photo. FNumberNumerator e System. Photo. FNumber
 
 ### <a name="tiff-policies"></a>Políticas TIFF
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /IFD/EXIF/{UShort = 33437} |             |
+| 1     | /ifd/exif/{ushort=33437} |             |
 | 2     | /ifd/xmp/exif:FNumber    |             |
 
 
@@ -98,7 +94,7 @@ Esse valor é gerado em System. Photo. FNumberNumerator e System. Photo. FNumber
 
 | Ordem | Caminho                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /IFD/EXIF/{UShort = 33437} |             |
+| 1     | /ifd/exif/{ushort=33437} |             |
 | 2     | /ifd/xmp/exif:FNumber    |             |
 
 
@@ -111,7 +107,7 @@ Esse valor é gerado em System. Photo. FNumberNumerator e System. Photo. FNumber
 
 | Ordem | Caminho                     |
 |-------|--------------------------|
-| 1     | /IFD/EXIF/{UShort = 33437} |
+| 1     | /ifd/exif/{ushort=33437} |
 | 2     | /ifd/xmp/exif:fnumber    |
 
 
@@ -124,7 +120,7 @@ Esse valor é gerado em System. Photo. FNumberNumerator e System. Photo. FNumber
 
 <dl> <dt>
 
-[System. Photo. FNumber](../properties/props-system-photo-fnumber.md)
+[System.Photo.FNumber](../properties/props-system-photo-fnumber.md)
 </dt> </dl>
 
  

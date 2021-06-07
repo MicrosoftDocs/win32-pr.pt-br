@@ -1,9 +1,9 @@
 ---
 title: Elemento ControlNameDefinition
-description: Representa um nome de um controle em um modelo de layout de SizeDefinition personalizado.
+description: Representa um nome de um controle em um modelo de layout SizeDefinition personalizado.
 ms.assetid: 94b724bd-a4e3-40e0-9cf0-3cc6a71100d2
 keywords:
-- Faixa de ControlNameDefinition do elemento do Windows
+- Faixa de Opções do Windows do elemento ControlNameDefinition
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 14ec269ce51b0074b9a03f78aea218b482955d1b
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 6b2dc1db251d4d657c3793d2a66a9add1d324c37
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104293234"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443437"
 ---
 # <a name="controlnamedefinition-element"></a>Elemento ControlNameDefinition
 
-Representa um nome de um controle em um modelo de layout de [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizado.
+Representa um nome de um controle em um modelo de layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizado.
 
 ## <a name="usage"></a>Uso
 
@@ -39,7 +39,7 @@ Representa um nome de um controle em um modelo de layout de [**SizeDefinition**]
 
 | Atributo           | Type                                       | Obrigatório      | Descrição                                                                                                                                                                                                                                                                                                                                                                           |
 |---------------------|--------------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Nome**<br/> | xs: positiveInteger ou xs: String<br/> | Não<br/> | <dt> (xs: positiveInteger ou xs: String)<br/> </dt> <dd> Uma cadeia de caracteres, um valor inteiro entre 2 e 59999, inclusive, ou um valor hexadecimal entre 0x2 e 0xea5f, inclusive. <br/> O valor deve ser exclusivo no documento XML da faixa de faixas. <br/> Comprimento máximo: 100 caracteres. <br/> </dd> </dl> |
+| **Nome**<br/> | xs:positiveInteger ou xs:string<br/> | Não<br/> | <dt> (xs:positiveInteger ou xs:string)<br/> </dt> <dd> Uma cadeia de caracteres, um valor inteiro entre 2 e 59999, inclusive ou um valor hexadecimal entre 0x2 e 0xea5f, inclusive. <br/> O valor deve ser exclusivo dentro do documento XML da Faixa de Opções. <br/> Comprimento máximo: 100 caracteres. <br/> </dd> </dl> |
 
 
 
@@ -67,11 +67,11 @@ Representa um nome de um controle em um modelo de layout de [**SizeDefinition**]
 
 Opcional.
 
-Pode ocorrer uma ou mais vezes para cada elemento [**ControlNameMap**](windowsribbon-element-controlnamemap.md) .
+Pode ocorrer uma ou mais vezes para cada [**elemento ControlNameMap.**](windowsribbon-element-controlnamemap.md)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir demonstra a marcação básica para um modelo personalizado de layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) de quatro botões com quatro elementos **ControlNameDefinition** .
+O exemplo de código a seguir demonstra a marcação básica para um modelo de layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizado de quatro botões com quatro **elementos ControlNameDefinition.**
 
 
 ```XML
@@ -163,12 +163,8 @@ O exemplo de código a seguir demonstra a marcação básica para um modelo pers
 
 ## <a name="element-information"></a>Informações do elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo com suporte<br/> | Windows 7 |
-| Pode estar vazio                        | Não        |
+* **Sistema mínimo com suporte:** Windows 7
+* **Pode estar vazio:** Não
 
 
 
@@ -176,7 +172,7 @@ O exemplo de código a seguir demonstra a marcação básica para um modelo pers
 
 <dl> <dt>
 
-[Personalizando uma faixa de guia por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
+[Personalização de uma faixa de opções por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  

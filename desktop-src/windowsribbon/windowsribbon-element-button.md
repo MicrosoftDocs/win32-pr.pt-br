@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 132c037a598a4a853db3203162bcdbe6cd71afca
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 40236b60a9fe9c72dd35d67fcf7c98bc188938af
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084576"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443567"
 ---
 # <a name="button-element"></a>Elemento Button
 
@@ -92,7 +92,7 @@ Não há elementos filho.
 | [**Controlador de controle**](windowsribbon-element-controlgroup.md)<br/>                                                     |
 | [**DropDownButton**](windowsribbon-element-dropdownbutton.md)<br/>                                                 |
 | [**DropDownGallery**](windowsribbon-element-dropdowngallery.md)<br/>                                               |
-| [**Group**](windowsribbon-element-group.md)<br/>                                                                   |
+| [**Grupo**](windowsribbon-element-group.md)<br/>                                                                   |
 | [**Grupo Backstage**](windowsribbon-element-menugroup.md)<br/>                                                           |
 | [**QuickAccessToolbar.ApplicationDefaults**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md)<br/> |
 | [**SplitButton**](windowsribbon-element-splitbutton.md)<br/>                                                       |
@@ -204,12 +204,8 @@ Esta seção de código mostra as declarações de controle de **botão** .
 
 ## <a name="element-information"></a>Informações do elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo com suporte<br/> | Windows 7 |
-| Pode estar vazio                        | Sim       |
+* **Sistema mínimo com suporte**: Windows 7
+* **Pode estar vazio**: Sim
 
 
 

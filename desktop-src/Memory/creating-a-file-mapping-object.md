@@ -4,12 +4,12 @@ ms.assetid: e00d8742-b717-419c-902c-9a286d75d8aa
 title: Criando um objeto de mapeamento de arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65badc2af8aed5211c2f5c590fc0998019dae264
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 550609cf9d8a052e324c585fc046472278bb428c
+ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296722"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111524350"
 ---
 # <a name="creating-a-file-mapping-object"></a>Criando um objeto de mapeamento de arquivo
 
@@ -36,15 +36,17 @@ Os parâmetros *dwMaximumSizeHigh* e *dwMaximumSizeLow* de [**CreateFileMapping*
 
 O tamanho do objeto de mapeamento de arquivo que você seleciona controla o quanto no arquivo você pode "ver" com o mapeamento de memória. Se você criar um objeto de mapeamento de arquivo que tenha 500 KB de tamanho, terá acesso somente ao primeiro 500 KB do arquivo, independentemente do tamanho do arquivo. Como não custa a você nenhum recurso do sistema para criar um objeto de mapeamento de arquivo maior, crie um objeto de mapeamento de arquivo que seja o tamanho do arquivo (defina os parâmetros *dwMaximumSizeHigh* e *dwMaximumSizeLow* de [**CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) como zero), mesmo se você não espera exibir o arquivo inteiro. O custo nos recursos do sistema é criar os modos de exibição e acessá-los.
 
-Se você quiser exibir uma parte do arquivo que não inicia no início do arquivo, você deve criar um objeto de mapeamento de arquivo. Esse objeto é o tamanho da parte do arquivo que você deseja exibir mais o deslocamento no arquivo.
+Você pode exibir uma parte do arquivo que não inicia no início do arquivo. Para obter mais informações, consulte [criando uma exibição dentro de um arquivo](creating-a-view-within-a-file.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
+  
+[Criando uma exibição de arquivo](creating-a-file-view.md)
+</dt> <dt>
 
 [Criando uma exibição dentro de um arquivo](creating-a-view-within-a-file.md)
 </dt> </dl>
 
- 
 
  

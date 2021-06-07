@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7f0d0f484ebded1233e3c64f6c7830882395b90a
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 812256b0ff329073eb516c6ab2eb7501db8de40d
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103638669"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444987"
 ---
 # <a name="scalingpolicy-element"></a>Elemento ScalingPolicy
 
@@ -144,12 +144,8 @@ O manifesto **ScalingPolicy** neste exemplo especifica uma preferência de [**Sc
 
 ## <a name="element-information"></a>Informações do elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo com suporte<br/> | Windows 7 |
-| Pode estar vazio                        | Não        |
+- **Sistema mínimo com suporte**: Windows 7 
+- **Pode estar vazio**: não
 
 
 

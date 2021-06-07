@@ -1,107 +1,107 @@
 ---
 title: Som
-description: O som é o elemento de áudio da experiência do usuário.
+description: Som é o elemento de áudio da experiência do usuário.
 ms.assetid: 2a276370-eff9-4844-b008-eba9ae5ac395
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 664d78d00cf75dae8f43717db07290a26574f0c6
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 035f718494e5a0548324f3c5449c5e3ac3f49fa1
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104556331"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444537"
 ---
 # <a name="sound"></a>Som
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
 
-O *som* é o elemento de áudio da experiência do usuário. Quando usado adequadamente, o som pode ser uma forma eficaz de comunicação que estabelece uma relação não verbal e mesmo emocional com seus usuários. Os sons podem ser usados sozinhas ou como um suplemento para a interface do usuário visual. Por exemplo, adicionar um efeito de som a uma notificação aumenta a probabilidade de que ele seja notado, especialmente se o usuário não estiver olhando para a tela quando ocorrer um evento.
+*Som* é o elemento de áudio da experiência do usuário. Quando usado adequadamente, o som pode ser uma forma efetiva de comunicação que estabelece uma relação não verbal e até mesmo emocional com seus usuários. Os sons podem ser usados sozinhos ou como um suplemento para a interface do usuário visual. Por exemplo, adicionar um efeito de som a uma notificação aumenta a probabilidade de que ela seja notada, especialmente se o usuário não estiver olhando para a tela quando um evento ocorrer.
 
-![captura de tela da caixa de diálogo som ](images/vis-sound-image1.png)
+![captura de tela da caixa de diálogo de som ](images/vis-sound-image1.png)
 
-Na guia sons do item do painel de controle de som, os usuários podem fazer alterações em seus sons do sistema.
+Na guia Sons do item do painel de controle de som, os usuários podem fazer alterações em seus sons do sistema.
 
-Este artigo aborda o uso de sons em um programa como resposta a eventos e ações do usuário e a integração do controle de som de um programa com o Windows. Ele não cobre o uso de música ou fala.
+Este artigo aborda o uso de sons em um programa como uma resposta a eventos e ações do usuário e a integração do controle de som de um programa com o Windows. Ele não abrange o uso de música ou fala.
 
-**Observação:** As diretrizes relacionadas a [notificações](mess-notif.md) e [identidade visual](exper-branding.md) são apresentadas em artigos separados.
+**Observação:** Diretrizes [relacionadas a notificações e](mess-notif.md) [identidade visual](exper-branding.md) são apresentadas em artigos separados.
 
-## <a name="is-this-the-right-user-interface"></a>Esta é a interface do usuário correta?
+## <a name="is-this-the-right-user-interface"></a>Essa é a interface do usuário certa?
 
-Para decidir se você deve usar o som, considere estas perguntas:
+Para decidir se você deve usar som, considere estas perguntas:
 
--   **Há um benefício de usuário claro para usar som?** Como as desvantagens do uso de som podem superar facilmente os benefícios, use o som somente quando houver uma vantagem clara.
--   **O uso do som é apropriado?** O uso de som soa a atenção para as coisas que são dignas de atenção? Os usuários perderam o som se estivessem ausentes? Concentre-se em sons que mantêm os usuários informados, é provável que eles alterem seu comportamento ou forneçam comentários úteis.
--   **O uso de som parece confuso?** Há sons frequentes, dissonantes? Os usuários provavelmente reduzirão o volume do sistema ou o volume do programa como resultado do seu uso de som?
--   **Você está usando som como uma forma primária de comunicação?** Em muitos casos, como para usuários que têm algum nível de perda de audição, o som não deve ser usado como o principal meio de comunicação. O som é mais eficaz como um suplemento para outros meios de comunicação (como texto ou visuais).
--   **Os principais usuários de destino são profissionais de ti?** Normalmente, o som é ineficaz para tarefas direcionadas a profissionais de ti, pois muitas de suas tarefas são executadas de forma autônoma. Além disso, o som não é dimensionado para eles, imagine a execução de centenas de tarefas por vez e receba sons quando eles forem concluídos ou falharem.
+-   **Há um benefício claro do usuário ao usar som?** Como as desvantagens de usar o som podem superar facilmente os benefícios, use o som somente quando houver uma vantagem clara.
+-   **O uso de som é apropriado?** O uso de som chama a atenção para coisas que são importantes para a atenção? Os usuários perderiam o som se ele estivesse ausente? Concentre-se em sons que mantêm os usuários informados, provavelmente alterarão seu comportamento ou fornecerão comentários úteis.
+-   **O uso de som causa distração?** Há sons frequentes, barulhentos e barulhentos? É provável que os usuários reduzam o volume do sistema ou o volume do programa como resultado do uso do som?
+-   **Você está usando o som como uma forma principal de comunicação?** Em muitos casos, como para usuários que têm algum nível de perda auditiva, o som não deve ser usado como o principal meio de comunicação. O som é mais eficaz como um suplemento para outros meios de comunicação (como texto ou visuais).
+-   **Os principais usuários de TI são profissionais de TI?** O som geralmente é ineficaz para tarefas direcionadas aos profissionais de TI porque muitas de suas tarefas são executadas de forma autônoma. Além disso, o som não é dimensionado para eles imaginem executar centenas de tarefas por vez e obter sons quando eles são concluídos ou falham.
 
 ## <a name="design-concepts"></a>Conceitos de design
 
-Normalmente, o som é obtido por uma ou todas as seguintes finalidades:
+Normalmente, o som atinge qualquer ou todas as seguintes finalidades:
 
--   **Notification.** O som pode ser associado a eventos específicos. Por exemplo, um som de "novo email" informa os usuários quando o email chega sem interromper a tarefa atual.
--   **Receber.** O som pode fornecer comentários para ações específicas do usuário. Por exemplo, um som sutil que é reproduzido quando você libera o controle deslizante no controle de volume fornece comentários sobre o nível da configuração atual.
--   **Identidade visual.** O som pode ser associado a um conteúdo específico para marcar seu produto, aplicativo ou serviço. O Windows usa som dessa maneira para a inicialização do sistema operacional.
--   **Entretenimento.** O som é normalmente usado para aprimorar produtos de entretenimento e para tornar qualquer produto mais atraente. Por exemplo, a maioria dos jogos, aplicativos de treinamento e produtos de consumo usam som para usuários de entretenimento e aprimoram sua experiência.
+-   **Notificação.** O som pode ser associado a eventos específicos. Por exemplo, um som de "novo email" informa aos usuários quando o email chega sem interromper sua tarefa atual.
+-   **Feedback.** O som pode fornecer comentários para ações específicas do usuário. Por exemplo, um som sutil que é reproduzindo quando você libera o controle deslizante no controle de volume fornece comentários sobre o nível da configuração atual.
+-   **Marca.** O som pode ser associado a conteúdo específico para a marca de seu produto, aplicativo ou serviço. O Windows usa o som dessa maneira para a inicialização do sistema operacional.
+-   **Entretenimento.** O som é comumente usado para aprimorar produtos de entretenimento e tornar qualquer produto mais envolvente. Por exemplo, a maioria dos jogos, aplicativos de treinamento e produtos de consumidor usa som para animar os usuários e aprimorar sua experiência.
 
-Alguns sons podem atender a várias dessas finalidades de uma só vez. O som de inicialização do Windows, por exemplo, indica que o processo de inicialização foi concluído e que a área de trabalho está pronta para uso. Ele também fornece uma forma poderosa de identidade visual do produto e, até mesmo, envolve momentaneamente os usuários.
+Determinados sons podem atender a várias dessas finalidades ao mesmo tempo. O som de Inicialização do Windows, por exemplo, indica que o processo de inicialização foi concluído e que a área de trabalho está pronta para uso. Ele também fornece uma forma poderosa de identidade visual do produto e, até mesmo, envolve momentaneamente os usuários.
 
-Os sons que atenderem a nenhuma dessas finalidades provavelmente serão eliminados.
+Sons que não cumprem nenhuma dessas finalidades provavelmente devem ser eliminados.
 
 ### <a name="inappropriate-use-of-sound"></a>Uso inadequado de som
 
-**Apesar dos benefícios do som, o uso apropriado de som requer um retentor significativo para que o contrário possa tornar um programa desagradável e distrair.** Os usuários desligarão seu som completamente se eles se tornarem imprecisados por sons frequentes, repetitivos, dissonantes, de interrupção e mal projetados; em parte, isso ocorre porque, por sua natureza, o som exige atenção e é difícil de ignorar. Para obter dicas sobre como encontrar um saldo razoável, consulte as [diretrizes de design de som](#sound-design).
+**Apesar dos benefícios do som, o uso apropriado do som requer uma grande pressão para fazer de outra forma, o que pode tornar um programa entediante e uma distração.** Os usuários desligarão completamente o som se se tornarem desaloquesados por sons frequentes, repetitivos, repetitivos, interruptivos e mal projetados; em parte, isso é porque, por sua própria natureza, o som exige atenção e é difícil de ignorar. Para ver dicas sobre como encontrar um equilíbrio razoável, confira as [Diretrizes de design de som.](#sound-design)
 
-Como as desvantagens do uso de som podem superar facilmente os benefícios, use o som somente quando houver uma vantagem clara. **Em caso de dúvida, não use som.**
+Como as desvantagens de usar o som podem superar facilmente os benefícios, use o som somente quando houver uma vantagem clara. **Em caso de dúvida, não use som.**
 
-### <a name="make-sound-supplemental"></a>Tornar o som suplementar
+### <a name="make-sound-supplemental"></a>Tornar o som complementar
 
 Mesmo que o som seja usado adequadamente, há muitas situações em que o som pode não ser eficaz para todos os usuários:
 
--   Alguns usuários podem trabalhar em um ambiente barulhento em que os sons não possam ser ouvidos.
--   Alguns usuários podem trabalhar em um ambiente silencioso que exige que o som seja desativado ou definido em um volume baixo.
--   Alguns usuários podem ter deficiências ou perdas.
+-   Alguns usuários podem trabalhar em um ambiente barulhento em que os sons não podem ser ouvido.
+-   Alguns usuários podem trabalhar em um ambiente silencioso que exige que o som seja desligado ou definido em um volume baixo.
+-   Alguns usuários podem ter deficiências auditivas ou perda.
 -   O computador pode não ter alto-falantes.
 
-Por esses motivos, **o som usado para notificações e comentários nunca deve ser o único método de comunicação,** mas, em vez disso, deve complementar visuais ou indicações de texto.
+Por esses motivos, o som usado para notificações e comentários nunca deve ser o único método de **comunicação,** mas deve complementar dicas visuais ou textuais.
 
 ### <a name="desirable-characteristics-of-sound"></a>Características desejáveis do som
 
 Em geral, os sons devem ser:
 
--   de média a alta frequência (600 Hertz \[ Hz \] a 2 kilohertz \[ kHz \] ).
--   curto (menos de um segundo).
--   flexível ou moderada no volume.
--   significativo.
--   agradável, sem alarme ou dissonante.
--   não verbal.
--   Não repetitivo.
+-   frequência média a alta (600 Hertz \[ Hz \] a 2 quilohertz \[ kHz \] ).
+-   short (menos de um segundo).
+-   soft ou moderado em volume.
+-   Significativo.
+-   não é alarme ou jarring.
+-   não verbais.
+-   não repetitivo.
 
-Com som, menos é mais. **O efeito de som ideal é aquele que os usuários raramente percebem, mas eles perdem se estavam ausentes.**
+Com o som, menos é mais. **O efeito de som ideal é aquele que os usuários mal notam, mas eles perderiam se estivesse ausente.**
 
-**Um equívoco comum é que sons de eventos críticos precisam ser altos e dissonantedos para obter a atenção do usuário.** Isso não é verdade, porque o som é, na verdade, destinado a ser um meio suplementar de comunicação. No caso de uma mensagem de erro crítica, sua apresentação (talvez em uma caixa de diálogo modal), seu ícone (um ícone de erro) e seu texto e Tom são combinados para comunicar a natureza do erro. Um som de erro efetivo pode ser um pouco mais alto do que o som típico do Windows, mas não precisa ser significativamente mais alto.
+**Um erro comum é que os sons para eventos críticos precisam ser altos e chamativas para chamar a atenção do usuário.** Isso não é verdade, porque o som é realmente destinado a ser um meio complementar de comunicação. No caso de uma mensagem de erro crítica, sua apresentação (talvez em uma caixa de diálogo modal), seu ícone (um ícone de erro) e seu texto e tom se combinam para comunicar a natureza do erro. Um som de erro efetivo pode ser ligeiramente mais baixo do que o som típico do Windows, mas não precisa ser significativamente mais intenso.
 
 ### <a name="characteristics-of-windows-sounds"></a>Características dos sons do Windows
 
-Além desta chamada geral para o mínimo, a estética do som do Windows usa luz, tons puros e sons de vidro e nada, com um esmaecimento suave e fade-out ("bordas" suaves) para evitar efeitos abruptas, dissonante e percussive. Elas foram projetadas para se sentir sutis, AdaBoost e consoante. Os sons do Windows usam eco, reverberação e equalização para alcançar uma sensação natural e ambiental.
+Além dessa chamada geral para minimalismo, o som modernos do Windows usa sons claros, puros e frios, com um esmaecimento suave e esmaecimento ("bordas") suaves para evitar efeitos repentinos, jarring e percussivos. Eles são projetados para se sentir sutis, ofensivos e consoantes. Os sons do Windows usam eco, reverb e equalização para obter uma sensação natural e ambiente.
 
-O esquema de som padrão para o Windows geralmente não usa sons diários ou reconhecíveis que são muito específicos ou musicais. Exemplos de sons que ele evita são instrumentos musicais, como piano ou instrumentos de percussão, sons de animais, ruídos ambientais, fala, vozes, efeitos de som semelhantes a filmes ou outros sons de humanos. Além disso, os sons do Windows não devem ser percebidos como música (ou seja, desde Melodies de várias anotações). Isso torna os sons do Windows funcionalmente distintos de outros tipos de sons.
+O esquema de som padrão para Windows geralmente não usa sons instrumentais ou reconhecíveis todos os dias que são muito específicos ou músicais. Exemplos de sons que ele evita são instrumentos instrumentais, como instrumentações ou instrumentos instrumentais, sons de animais, ruídos ambientais, fala, vozes, efeitos de som parecidos com o filme ou outros sons de humanos. Além disso, os sons do Windows não devem ser percebidos como música (ou seja, com várias notas). Isso faz com que o Windows pareça funcionalmente diferente de outros tipos de sons.
 
-Como os sons do Windows foram projetados profissionalmente para ter as características desejáveis e apelo a um público amplo, **Considere o uso desses sons internos do Windows sempre que for apropriado.**
+Como os sons do Windows foram projetados profissionalmente para ter as características desejáveis e atrair um público amplo, considere usar esses sons do Windows integrados sempre **que apropriado.**
 
-### <a name="designing-your-own-sounds"></a>Criando seus próprios sons
+### <a name="designing-your-own-sounds"></a>Projetando seus próprios sons
 
-Se você precisar criar seus próprios sons, crie-os para ter as características descritas anteriormente. Busque que eles complementem suas tarefas ou eventos associados.
+Se você precisa criar seus próprios sons, projete-os para ter as características descritas anteriormente. Se esforça para fazer com que eles complementem suas tarefas ou eventos associados.
 
-Entenda que a criação de sons originais é difícil de fazer muito bem, especialmente para os sons destinados a um público amplo. O som pode ser um elemento de design Polarizing. Para cada usuário que adora um som, haverá muitos que não gostariam dele.
+Entenda que a criação de sons originais é difícil de fazer bem, especialmente para sons destinados a um público amplo. O som pode ser um elemento de design polarizador. Para cada usuário que adora um som, haverá muitos que o desagradam.
 
-**Crie os sons do seu programa como um grupo para se sentirem como variações relacionadas a um tema.** A experiência de auditoria do programa deve ser coordenada com sua experiência visual. Além disso, o "Tom" dos sons deve ser coordenado com o [Tom do texto](text-style-tone.md). Considere como o texto com um tom natural e agradável pode ser subminado quando acompanhado por sons inadequados, alarmes.
+**Projete os sons do programa como um grupo para parecer que eles são variações relacionadas em um tema.** A experiência auditiva do programa deve ser coordenada com sua experiência visual. Além disso, o "tom" dos sons deve ser coordenado com [o tom do texto](text-style-tone.md). Considere como o texto com um tom natural e agradável pode ser prejudicado quando acompanhado por sons agressivos e alarmes.
 
 **Se você fizer apenas quatro coisas...**
 
-1.  Use o som com o retentor Verifique se há um benefício geral de usuário claro. Em caso de dúvida, não use som.
-2.  Use os sons internos do Windows sempre que apropriado.
+1.  Use som com restrição, certifique-se de que haja um benefício geral claro do usuário. Em caso de dúvida, não use som.
+2.  Use os sons do Windows integrados sempre que apropriado.
 3.  Se você criar seus próprios sons, certifique-se de que eles tenham as características de som desejáveis e como uma aparência completa, como variações de um tema.
 4.  Não presuma que os sons precisam ser altos e dissonantes para obter a atenção do usuário.
 
@@ -111,7 +111,7 @@ Os sons têm vários padrões de uso:
 
 
 
-|                                                                                                                                                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|     Uso de som                                                                                                                                                                 |  Exemplo                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Conclusão da ação**<br/> o Sonic notifica os usuários quando uma ação de longa execução iniciada pelo usuário é concluída com êxito. <br/>                             | ![captura de tela da caixa de diálogo de download de arquivo ](images/vis-sound-image2.png)<br/> Neste exemplo, a caixa de diálogo reproduz um som para notificar os usuários de que o download foi concluído.<br/>                                                                                                                                                                                                                                      |
 | **Falha na ação**<br/> o Sonic notifica os usuários quando uma ação de longa execução iniciada pelo usuário falha. <br/>                                                 | ![captura de tela da mensagem disco de backup não acessível ](images/vis-sound-image3.png)<br/> Neste exemplo, o Windows desempenha um som para notificar os usuários de que a operação de backup falhou.<br/>                                                                                                                                                                                                                                  |
@@ -192,7 +192,7 @@ Ao criar seus próprios sons:
 -   Para programas DirectSound que têm seu próprio controle de volume, **defina o volume do programa como 100 por padrão.** Isso maximiza o intervalo dinâmico do seu áudio.
 -   **Não bloqueie outros eventos de som executando seu programa em modo exclusivo.** Isso pode impedir que outros programas funcionem corretamente. Por exemplo, o uso de modo exclusivo impede que um computador seja usado como um dispositivo de telefonia.
 
-## <a name="text"></a>Texto
+## <a name="text"></a>Text
 
 -   Não use a frase adaptador de som. Em vez disso, use a placa de som.
 -   Use o dispositivo para se referir genericamente a palestrantes, fones de ouvido e microfones.

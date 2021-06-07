@@ -4,12 +4,12 @@ ms.assetid: 8f32422e-25ec-48bc-9d79-57dbb3b53e93
 title: WIA (Windows Image Acquisition)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0ff1f3fb51a4c87d909637a90591336d9d2eb30
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 664b5accaa1312eae3baf6161e41c9c65e718c69
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501778"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443087"
 ---
 # <a name="windows-image-acquisition-wia"></a>WIA (Windows Image Acquisition)
 
@@ -121,7 +121,7 @@ Os tópicos da WIA são organizados conforme mostrado na tabela a seguir.
 
 
 
-|                                                                                                                              |                                                                                                   |
+|  Tópico                                                                                                                            | Descrição                                                                                                   |
 |------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | [Sobre a aquisição de imagens do Windows](-wia-about-windows-image-acquisition.md)                                                  | Informações gerais sobre WIA                                                                     |
 | [Drivers de aquisição de imagem do Windows](/windows-hardware/drivers/image/windows-image-acquisition-drivers)                  | Desenvolvimento de driver WIA                                                                            |

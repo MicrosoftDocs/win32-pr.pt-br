@@ -4,12 +4,12 @@ ms.assetid: 566542f3-b824-442d-9d8b-0064ebcf9b68
 title: Elemento Drawing
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe516a4ba33e6e597b17ce8365d792f19468c3b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d87c0a3d8879fb5f3146c46c9c88d83a6e658d8
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105790541"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432508"
 ---
 # <a name="drawing-element"></a>Elemento Drawing
 
@@ -43,7 +43,7 @@ Contém o conteúdo que foi classificado pelo analisador ou pelo usuário como u
 
 | Atributo  | Type                      | Obrigatório | Descrição                                                                             | Valores possíveis           |
 |------------|---------------------------|----------|-----------------------------------------------------------------------------------------|---------------------------|
-| **Mantida**   | **xs:integer**            | Obrigatório | A distância da origem até o ponto mais à esquerda na caixa delimitadora para o elemento. | Qualquer inteiro.              |
+| **Left**   | **xs:integer**            | Obrigatório | A distância da origem até o ponto mais à esquerda na caixa delimitadora para o elemento. | Qualquer inteiro.              |
 | **Top**    | **xs:integer**            | Obrigatório | A distância da origem até o ponto superior na caixa delimitadora para o elemento.  | Qualquer inteiro.              |
 | **Largura**  | **xs:nonNegativeInteger** | Obrigatório | A largura da caixa delimitadora para o elemento.                                          | Qualquer inteiro não negativo. |
 | **Altura** | **xs:nonNegativeInteger** | Obrigatório | A altura da caixa delimitadora para o elemento.                                         | Qualquer inteiro não negativo. |
@@ -56,7 +56,7 @@ Contém o conteúdo que foi classificado pelo analisador ou pelo usuário como u
 
 
 
-|              |                                                             |
+|  Elemento     | Valor                                                     |
 |--------------|-------------------------------------------------------------|
 | Tipo de elemento | ComplexType de [**drawingtype**](drawingtype-complex-type.md) |
 | Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk                  |

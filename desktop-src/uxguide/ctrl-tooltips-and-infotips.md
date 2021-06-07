@@ -1,43 +1,43 @@
 ---
-title: Dicas de ferramenta e Infotips
-description: Uma dica de ferramenta é uma pequena janela pop-up que rotula o controle sem rótulo que está sendo apontado, como controles de barra de ferramentas ou botões de comando sem rótulo.
+title: Dicas de ferramenta e infotips
+description: Uma dica de ferramenta é uma pequena janela pop-up que rotula o controle sem rótulo que está sendo apontado, como controles de barra de ferramentas sem rótulo ou botões de comando.
 ms.assetid: 80979281-eefb-485a-b42f-7f9e05665357
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: ddccf694b51bf8357dd779bd70146bebf4f14345
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 8911c5a008d2de6cec2bd564fd786a23c670d633
+ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "103837566"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111524530"
 ---
-# <a name="tooltips-and-infotips"></a>Dicas de ferramenta e Infotips
+# <a name="tooltips-and-infotips"></a>Dicas de ferramenta e infotips
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
 
-Uma dica de ferramenta é uma pequena janela pop-up que rotula o controle sem rótulo que está sendo apontado, como controles de barra de ferramentas ou botões de comando sem rótulo.
+Uma dica de ferramenta é uma pequena janela pop-up que rotula o controle sem rótulo que está sendo apontado, como controles de barra de ferramentas sem rótulo ou botões de comando.
 
-![Captura de tela que mostra o botão Imprimir com a dica de ferramenta ' Print (Ctrl + P) ' exibida.](images/ctrl-tooltips-and-infotips-image1.png)
+![Captura de tela que mostra o botão imprimir com a dica de ferramenta 'Imprimir (Ctrl+P)' exibida.](images/ctrl-tooltips-and-infotips-image1.png)
 
-Uma dica de ferramenta típica para um botão da barra de ferramentas.
+Uma dica de ferramenta típica para um botão de barra de ferramentas.
 
-Como as dicas de ferramentas provaram tão úteis, um controle relacionado chamado Infotips existe, que fornece um texto mais descritivo do que é possível com dicas de ferramenta.
+Como as dicas de ferramenta se mostraram tão úteis, existe um controle relacionado chamado infotips, que fornece texto mais descritivo do que é possível com dicas de ferramenta.
 
-Um InfoTip é uma pequena janela pop-up que descreve de forma concisa o objeto que está sendo apontado, como descrições de controles da barra de ferramentas, ícones, elementos gráficos, links, objetos do Windows Explorer, itens de menu iniciar e botões da barra de tarefas. Infotips são uma forma de [controles de divulgação progressivos](ctrl-progressive-disclosure-controls.md), eliminando a necessidade sempre de ter texto descritivo na tela.
+Uma infotip é uma pequena janela pop-up que descreve concisamente o objeto que está sendo apontado, como descrições de controles de barra de ferramentas, ícones, elementos gráficos, links, objetos Windows Explorer, itens de menu Iniciar e botões da barra de tarefas. As infotips são uma forma de [controles de divulgação progressiva,](ctrl-progressive-disclosure-controls.md)eliminando a necessidade de sempre ter texto descritivo na tela.
 
-![captura de tela do botão compartilhar com InfoTip ](images/ctrl-tooltips-and-infotips-image2.png)
+![captura de tela do botão compartilhar com infotip ](images/ctrl-tooltips-and-infotips-image2.png)
 
-Um InfoTip típico.
+Um infotip típico.
 
-Para os fins deste artigo, tooltips e Infotips são referidos coletivamente como dicas.
+Para os fins deste artigo, dicas de ferramenta e infotips são conhecidas coletivamente como dicas.
 
-Dicas ajudam os usuários a entender objetos desconhecidos ou desconhecidos que não são descritos diretamente na interface do usuário. Eles são exibidos automaticamente quando os usuários focalizam o ponteiro sobre um objeto e são removidos quando os usuários clicam no controle ou movem o mouse, ou quando a gorjeta atinge o tempo limite.
+As dicas ajudam os usuários a entender objetos desconhecidos ou desconhecidos que não são descritos diretamente na interface do usuário. Eles são exibidos automaticamente quando os usuários passarem o ponteiro sobre um objeto e removidos quando os usuários clicam no controle ou movem o mouse ou quando a dica se apaga.
 
-**Desenvolvedores:** Não há controle InfoTip; Infotips são implementados com o controle ToolTip. A distinção está em uso, não na implementação.
+**Desenvolvedores:** Não há controle de infotip; as infotips são implementadas com o controle de dica de ferramenta. A distinção está no uso, não na implementação.
 
 > [!Note]  
-> As diretrizes relacionadas a [balões](ctrl-balloons.md), [barras de ferramentas](cmd-toolbars.md)e [ajuda](winenv-help.md) são apresentadas em artigos separados.
+> Diretrizes [relacionadas a balão,](ctrl-balloons.md) [barras de ferramentas](cmd-toolbars.md)e [Ajuda](winenv-help.md) são apresentadas em artigos separados.
 
  
 
@@ -45,59 +45,59 @@ Dicas ajudam os usuários a entender objetos desconhecidos ou desconhecidos que 
 
 Para decidir, considere estas perguntas:
 
--   **As informações são exibidas com base no foco do ponteiro?** Se não, use outro controle. Exibir dicas somente como resultado da interação do usuário nunca exibi-las por conta própria. Por outro lado, os [balões](ctrl-balloons.md) podem ser exibidos por conta própria (como acontece com notificações), portanto, eles têm uma cauda que identifica sua origem.
--   **Um controle tem um rótulo de texto?** Se não, use uma dica de ferramenta para fornecer o rótulo. Observe que a maioria dos controles deve ser rotulada e, portanto, não ter dicas de ferramenta. Os controles da barra de ferramentas e os botões de comando com rótulos gráficos devem ter dicas de ferramenta.
--   **Um objeto se beneficia de uma descrição complementar ou mais informações?** Nesse caso, use um InfoTip. No entanto, o texto deve ser suplementar, ou seja, não essencial para as tarefas principais. Se for essencial, coloque-o diretamente na interface do usuário para que os usuários não precisem procurar nem buscá-lo.
--   **As informações complementares são um erro, aviso ou status?** Nesse caso, use outro elemento de interface do usuário, como um balão, uma [mensagem de erro](mess-error.md)ou uma [barra de status](ctrl-status-bars.md). Ícone de área de notificação Infotips são uma exceção porque podem ser usadas para mostrar informações de status.
+-   **As informações são exibidas com base no foco do ponteiro?** Se não, use outro controle. Exibir dicas somente como resultado da interação do usuário nunca as exibe por conta própria. Por outro lado, [os balão podem](ctrl-balloons.md) ser exibidos por conta própria (como fazem com notificações), para que eles tenham uma cauda que identifica sua origem.
+-   **Um controle tem um rótulo de texto?** Se não, use uma dica de ferramenta para fornecer o rótulo. Observe que a maioria dos controles deve ser rotulada e, portanto, não tem dicas de ferramenta. Controles de barra de ferramentas e botões de comando com rótulos gráficos devem ter dicas de ferramenta.
+-   **Um objeto se beneficia de uma descrição complementar ou informações adicionais?** Se sim, use uma infotip. No entanto, o texto deve ser suplementar ou seja, não essencial para as tarefas primárias. Se for essencial, coloque-o diretamente na interface do usuário para que os usuários não precisem procurar nem buscá-lo.
+-   **As informações complementares são um erro, aviso ou status?** Nesse caso, use outro elemento de interface do usuário, como um balão, [mensagem de erro](mess-error.md)ou barra de [status](ctrl-status-bars.md). As infotips de ícone da área de notificação são uma exceção porque podem ser usadas para mostrar informações de status.
 -   **Os usuários precisam interagir com a dica?** Nesse caso, use outro controle, como um balão. Os usuários não podem interagir com dicas porque mover o mouse faz com que elas desapareçam.
--   **Os usuários precisam imprimir as informações complementares?** Nesse caso, use outro controle, como um campo de comentário estático. No entanto, você também pode usar o Infotips para fornecer acesso direto a essas informações.
+-   **Os usuários precisam imprimir as informações complementares?** Nesse caso, use outro controle, como um campo de comentário estático. No entanto, você também pode usar infotips para fornecer acesso mais direto a essas informações.
 
     ![captura de tela do balão de comentário ](images/ctrl-tooltips-and-infotips-image3.png)
 
     Neste exemplo, um campo de comentário estático no Microsoft Word permite que os usuários imprimam comentários.
 
--   **O contexto é para que os usuários possam encontrar as dicas irritantes ou distraindo?** Nesse caso, considere usar outra solução, incluindo fazer nada. Se você usar dicas em tais contextos, permita que os usuários os desativem.
+-   **O contexto é tal que os usuários podem achar as dicas entediantes ou desalocar?** Nesse caso, considere usar outra solução, incluindo não fazer nada. Se você usar dicas nesses contextos, permita que os usuários as desliguem.
 
-Quando usado adequadamente, as dicas melhoram a comunicação com o usuário. **Nunca use dicas como um substituto para um bom design.** Se um elemento gráfico, um botão ou outro objeto exigir que os usuários continuem verificando uma dica para entender, o design é inadequado. Em vez disso, corrija o design.
+Quando usadas adequadamente, as dicas melhoram a comunicação com o usuário. **Nunca use dicas como um substituto para um bom design.** Se um gráfico, um botão ou outro objeto exigir que os usuários continuem verificando uma dica para entender isso, o design será ruim. Corrige o design em vez disso.
 
 ## <a name="design-concepts"></a>Conceitos de design
 
-Dicas são uma maneira eficiente de simplificar uma interface do usuário. Eles fornecem informações de que os usuários precisam quando precisam, com esforço mínimo de sua parte. As dicas podem ajudá-lo a usar o espaço da tela com mais eficiência e reduzir a desordem na tela. No entanto, dicas mal projetadas podem ser irritantes, distração, não auxiliares, incorretas ou no caminho. Os conceitos de design a seguir destinam-se a mostrar a diferença.
+Dicas são uma maneira eficiente de simplificar uma interface do usuário. Eles fornecem informações de que os usuários precisam quando precisam dela, com esforço mínimo de sua parte. As dicas podem ajudá-lo a usar o espaço na tela com mais eficiência e reduzir a desorganização da tela. No entanto, dicas mal projetadas podem ser entediantes, desinteressante, insaciáveis, sobrecarregáveis ou no caminho. Os conceitos de design a seguir destinam-se a mostrar a diferença.
 
 ### <a name="discoverability"></a>Detectabilidade
 
-As dicas são exibidas automaticamente quando os usuários passam o ponteiro do mouse sobre um objeto por um período de tempo. Esse mecanismo de atraso de tempo torna as dicas muito convenientes, mas também reduz a sua capacidade de descoberta.
+As dicas são exibidas automaticamente quando os usuários passar o ponteiro sobre um objeto por um período de tempo. Esse mecanismo de atraso de tempo torna as dicas muito convenientes, mas também reduz sua capacidade de descoberta.
 
-Ao longo do tempo, os usuários aprendem que determinados objetos padrão, como botões da barra de ferramentas, botões gráficos, itens do menu iniciar e ícones da área de notificação têm dicas, para que você possa levar a sua capacidade de descoberta para a concessão.
+Ao longo do tempo, os usuários aprendem que determinados objetos padrão, como botões de barra de ferramentas, botões gráficos, menu Iniciar itens e ícones de área de notificação, têm dicas para que você possa usar sua descoberta como concedida.
 
-Leva os usuários mais tempo para descobrir dicas em locais não padrão. Não há nenhuma pista visual, como uma alteração de ponteiro ou ponto de acesso, que indica que um objeto tem uma gorjeta. Pior ainda, alguns usuários movem o mouse em excesso, especialmente quando eles estão aprendendo a navegar pela interface do usuário. Os usuários precisam saber que um objeto tem uma gorjeta, seja por experiência passada ou por experimentação.
+Leva mais tempo para os usuários descobrirem dicas em locais não padrão. Não há nenhuma dica visual, como um ponto de contato ou alteração de ponteiro, que indica que um objeto tem uma gorjeta. Pior ainda, alguns usuários movem muito o mouse, especialmente quando estão aprendendo a navegar na interface do usuário. Os usuários têm que saber que um objeto tem uma dica, seja pela experiência passada ou pela experimentação.
 
-Você pode melhorar a descoberta usando dicas de forma consistente, o que, por sua vez, promove a previsibilidade. Se você fornecer dicas para alguns objetos, deverá fornecê-los para todos os objetos semelhantes para os quais os usuários provavelmente desejarão informações complementares. Às vezes, fazer isso pode ser desafiador, pois você também deve ter certeza de que as dicas são úteis e não óbvias.
+Você pode melhorar a descoberta usando dicas consistentemente, o que, por sua vez, promove a previsibilidade. Se você fornecer dicas para alguns objetos, forneça-os para todos os objetos semelhantes para os quais os usuários provavelmente querem informações complementares. Às vezes, fazer isso pode ser um desafio, pois você também deve garantir que as dicas sejam úteis e não óbvias.
 
-Se fornecer dicas detectáveis, úteis de forma consistente, comprova ser um problema, considere designs alternativos, como rótulos de controle autoexplicativos ou texto suplementar in-loco.
+Se fornecer dicas de descoberta consistentemente úteis provam ser um problema, considere designs alternativos, como rótulos de controle autoexplicativos ou texto suplementar in-locar.
 
 ### <a name="appropriate-information"></a>Informações apropriadas
 
-As informações apropriadas para obter dicas têm as seguintes características:
+As informações apropriadas para dicas têm as seguintes características:
 
--   **Visão.** As janelas pop-up usadas por dicas são perfeitos para frases curtas e fragmentos de sentença, bem como texto formatado. Blocos de texto Grandes e não formatados são difíceis de ler e sobrecarregar.
--   **Complementos.** O texto da dica deve ser informativo. Não deve ser óbvio ou apenas repetir o que já está na tela.
--   **Complementares.** Como o texto da dica nem sempre está visível, ele deve ser uma informação complementar que os usuários não precisam ler. Informações importantes devem ser comunicadas usando rótulos de controle autoexplicativos ou texto suplementar in-loco.
--   **Auto-estática.** Os usuários não esperam que as dicas mudem de uma instância para outra, portanto, é improvável que eles percebam alterações no conteúdo dinâmico, como informações de status. Dicas de ícone da área de notificação são uma exceção notável: os usuários têm mais probabilidade de descobrir alterações nas informações de Tip porque esses ícones se comunicam principalmente com o status.
+-   **Concisa.** As janelas pop-up usadas por dicas são perfeitas para frases curtas e fragmentos de frase, bem como texto formatado. Blocos grandes e não formatados de texto são difíceis de ler e sobrecarregáveis.
+-   **Útil.** O texto da dica deve ser informativo. Não deve ser óbvio ou apenas repetir o que já está na tela.
+-   **Suplementar.** Como o texto da dica nem sempre está visível, deve ser informações complementares que os usuários não têm que ler. Informações importantes devem ser comunicadas usando rótulos de controle autoexplicativos ou texto suplementar in-locar.
+-   **Estático.** Os usuários não esperam que as dicas mudem de uma instância para outra, portanto, é improvável que eles observem alterações no conteúdo dinâmico, como informações de status. As dicas de ícone da área de notificação são uma exceção notável: os usuários têm maior probabilidade de descobrir alterações nas informações de gorjeta porque esses ícones se comunicam principalmente com o status.
 
-### <a name="appropriate-timeouts"></a>Tempos limite apropriados
+### <a name="appropriate-timeouts"></a>Tempos de vida apropriados
 
-A exibição automática apropriada e a remoção de dicas são cruciais para a meta de usuários que mantêm o controle de seu ambiente de interface do usuário. As dicas têm três valores de tempo limite:
+A exibição e remoção automática apropriadas de dicas é crucial para a meta dos usuários manterem o controle de seu ambiente de interface do usuário. As dicas têm três valores de tempoout:
 
--   **This.** A hora em que o ponteiro deve permanecer fixo para que a dica apareça. O tempo padrão é de 0,5 segundos.
--   **Reexibir.** A hora em que o ponteiro deve permanecer estacionário como o ponteiro se move de um destino para outro. O tempo padrão é de 0,1 segundos.
--   **Removidos.** O tempo após o qual a gorjeta é automaticamente removida. O tempo padrão é de 5 segundos.
+-   **Inicial.** O tempo em que o ponteiro deve permanecer estacionário para que a dica seja exibida. O tempo padrão é 0,5 segundos.
+-   **Reshow.** O tempo em que o ponteiro deve permanecer estacionário à medida que o ponteiro se move de um destino para outro. O tempo padrão é 0,1 segundo.
+-   **Remoção.** A hora após a qual a dica é removida automaticamente. O tempo padrão é de 5 segundos.
 
-Ter valores iniciais e remostrados muito curtos resulta em uma experiência irritante e sem interrupções, pois eles geralmente seriam mostrados inadvertidamente, enquanto muito longos resultam em dicas que não respondem ou não estão sendo descobertos. O tempo de remoção padrão funciona bem para texto de dica curta, conforme usado nas dicas de ferramenta. Infotips têm texto mais longo, portanto, eles precisam de mais tempo de exibição.
+Ter valores iniciais e de remostr muito curtos resulta em uma experiência entediante e interrupção, pois eles geralmente seriam mostrados inadvertidamente, enquanto que muito tempo resulta em dicas sem resposta ou não sendo descobertas. O tempo de remoção padrão funciona bem para texto de dica curta, conforme usado em dicas de ferramenta. As infotips têm texto mais longo, portanto, precisam de tempos de exibição mais longos.
 
 ### <a name="appropriate-placement"></a>Posicionamento apropriado
 
-As dicas devem ser colocadas perto do objeto que está sendo focalizado, geralmente na parte final ou na cabeça do ponteiro, se possível. No entanto, eles nunca devem ser colocados de forma que interfira no que o usuário está fazendo ao obscurecer o objeto de interesse. Impedir esse problema pode exigir que você mova a ponta para longe do ponteiro, mas adjacente ao objeto. Isso não é um problema, desde que a relação entre o objeto e sua dica esteja clara. Certifique-se de que os usuários não movam o ponteiro apenas para que as dicas do programa fiquem ausentes.
+As dicas devem ser colocadas perto do objeto que está sendo colocado, geralmente na parte final ou na cabeça do ponteiro, se possível. No entanto, eles nunca devem ser colocados de forma que interfira no que o usuário está fazendo ao obscurecer o objeto de interesse. Impedir esse problema pode exigir que você mova a ponta para longe do ponteiro, mas adjacente ao objeto. Isso não é um problema, desde que a relação entre o objeto e sua dica esteja clara. Certifique-se de que os usuários não movam o ponteiro apenas para que as dicas do programa fiquem ausentes.
 
 ### <a name="accessibility"></a>Acessibilidade
 
@@ -119,7 +119,7 @@ As dicas têm vários padrões de uso:
 
 
 
-|                                                                                                                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|    Uso                                                                                                                             |    Exemplo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |---------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Dicas de ferramentas**<br/> exibe o rótulo de um controle ou glifo sem rótulo. <br/>                                         | Como essas dicas servem como rótulos, seu texto segue as diretrizes de rótulo para o controle subjacente. <br/> ![captura de tela do botão Exportar lista com dica de ferramenta ](images/ctrl-tooltips-and-infotips-image5.png)<br/> Neste exemplo, a dica de ferramenta fornece o rótulo de comando.<br/> ![captura de tela do botão fechar com dica de ferramenta ](images/ctrl-tooltips-and-infotips-image6.png)![captura de tela do botão reproduzir com dica de ferramenta ](images/ctrl-tooltips-and-infotips-image7.png)<br/> nesses exemplos, as dicas de ferramenta rotulam botões gráficos.<br/> ![captura de tela do glifo do menu Mostrar com dica de ferramenta ](images/ctrl-tooltips-and-infotips-image8.png)<br/> Neste exemplo, a dica de ferramenta rotula um glifo.<br/> |
 | **Infotips**<br/> forneça uma descrição ou explicação suplementar de um objeto ou controle. <br/>                  | Use Infotips para descrever ou explicar objetos e controles como controles [da barra de ferramentas](cmd-toolbars.md) , [ícones](vis-icons.md) (incluindo sobreposições de ícone), [links](ctrl-links.md), [guias](ctrl-tabs.md), [controles de divulgação progressivos](ctrl-progressive-disclosure-controls.md)e controles personalizados. <br/> ![captura de tela do botão de email com InfoTip ](images/ctrl-tooltips-and-infotips-image9.png)<br/> ![captura de tela do botão gravar com InfoTip ](images/ctrl-tooltips-and-infotips-image10.png)<br/> Nestes exemplos, Infotips fornece informações complementares sobre controles e objetos.<br/>                                                                                        |
@@ -293,29 +293,29 @@ As dicas têm vários padrões de uso:
 
     **Incorreto:**
 
-    ![captura de tela da dica de ferramenta: criar DVDs ](images/ctrl-tooltips-and-infotips-image39.png)
+    ![captura de tela da dica de ferramenta: criar dvds ](images/ctrl-tooltips-and-infotips-image39.png)
 
     **Correto:**
 
-    ![captura de tela da dica de ferramenta: criar (gravar) CDs, DVDs ](images/ctrl-tooltips-and-infotips-image40.png)
+    ![captura de tela da dica de ferramenta: criar (gravar) cds, dvds ](images/ctrl-tooltips-and-infotips-image40.png)
 
-    No exemplo correto, o InfoTip tem sinônimos comuns.
+    No exemplo correto, a infotip tem sinônimos comuns.
 
 -   Use a capitalização com estilo de frase.
--   **Desenvolvedores:** O texto de infotip do menu iniciar vem do campo de comentário do item.
+-   **Desenvolvedores:** O menu Iniciar do infotip do item vem do campo Comentário do item.
 
-### <a name="quick-launch-tooltips"></a>Dicas de ferramenta de início rápido
+### <a name="quick-launch-tooltips"></a>Início Rápido dicas de ferramenta
 
 -   **Use uma dica de ferramenta com o formato:** Iniciar (nome completo do programa)
 -   Não use pontuação final.
--   Não use texto adicional para descrever o programa ou o que ele faz. Como os usuários escolhem os programas exibidos na barra de início rápido, eles já conhecem sua finalidade.
+-   Não use texto adicional para descrever o programa ou o que ele faz. Como os usuários escolhem os programas exibidos na barra Início Rápido, eles já sabem sua finalidade.
 
-### <a name="control-panel-infotips"></a>Infotips do painel de controle
+### <a name="control-panel-infotips"></a>Painel de Controle infotips
 
--   Use o painel de controle Infotips para **descrever de forma concisa as tarefas do painel de controle e o hardware e o software configurados.**
--   **Os nomes e ícones do painel de controle devem ter Infotips.** As tarefas individuais não têm dicas de ferramenta.
--   **Seja útil.** Concentre-se no que os usuários podem fazer. Não basta repetir o nome do item do painel de controle ou até mesmo usá-lo na descrição.
--   **Seja específico.** Evite verbos genéricos e frases "catch-all" como e outros hardwares. Se as informações forem importantes, liste-as especificamente; caso contrário, suponha que os usuários entendam que nem tudo está listado no Infotips.
+-   Use Painel de Controle infotips para descrever **concisamente as tarefas Painel de Controle e o hardware e o software configurados.**
+-   **Painel de Controle nomes e ícones devem ter infotips.** Tarefas individuais não têm dicas de ferramenta.
+-   **Ser útil.** Concentre-se no que os usuários podem fazer. Não apenas repita o nome Painel de Controle item ou até mesmo use-o na descrição.
+-   **Seja específico.** Evite verbos genéricos e catch-all frases como e outro hardware. Se as informações são importantes, liste-as especificamente; caso contrário, suponha que os usuários entendam que nem tudo está listado nas infotips.
 
     **Incorreto:**
 
@@ -323,66 +323,66 @@ As dicas têm vários padrões de uso:
 
     **Correto:**
 
-    ![captura de tela de dica de ferramenta detalhada para configurações do mouse ](images/ctrl-tooltips-and-infotips-image42.png)
+    ![captura de tela da dica de ferramenta detalhada para configurações do mouse ](images/ctrl-tooltips-and-infotips-image42.png)
 
-    No exemplo correto, os tipos de hardware configurados estão listados especificamente.
+    No exemplo correto, os tipos de hardware configurados são listados especificamente.
 
--   **Seja conciso.** Use 25 palavras ou menos. Infotips mais desejando a leitura.
--   **Comece com um verbo presente-conjugação, imperativo.**
+-   **Seja conciso.** Use 25 palavras ou menos. Infotips mais longos não desestimuem a leitura.
+-   **Comece com um verbo imperativo e presente.**
 
     **Correto:**
 
     Definir configurações de conexão e exibição da Internet.
 
-    Ajuste as configurações de visão, audição e mobilidade.
+    Ajuste as configurações de visão, auditiva e mobilidade.
 
--   **Fique à direita até o ponto.** Não use o idioma que se aplica a qualquer painel de controle, como "Use para exibir e definir configurações para a aparência e a funcionalidade do seu..." ou "fornece opções para você..."
--   Não use um idioma que pareça marketing.
+-   **Vá direto para o ponto.** Não use o idioma que se aplica a qualquer Painel de Controle, como "Usar para exibir e definir configurações para a aparência e a funcionalidade do seu..." ou "Fornece opções para você..."
+-   Não use uma linguagem que pareça marketing.
 
     **Incorreto:**
 
-    Seu ponto de partida de uma só interrupção para todas as suas necessidades de configuração de disco.
+    Seu ponto de partida único para todas as suas necessidades de configuração de disco.
 
--   Como esses Infotips são indexados para a caixa de pesquisa do painel de controle, **descreva os itens usando os termos para os quais os usuários têm mais probabilidade de Pesquisar.** Considere o uso de sinônimos comuns para tarefas e objetos populares.
+-   Como essas infotips são indexadas para a Painel de Controle de pesquisa, descreva os itens que usam termos para os quais os usuários têm maior probabilidade **de pesquisar.** Considere o uso de sinônimos comuns para tarefas e objetos populares.
 
     ![captura de tela da dica de ferramenta com tarefas do controlador de jogo ](images/ctrl-tooltips-and-infotips-image43.png)
 
-    Neste exemplo, o item é descrito usando os termos para os quais os usuários têm mais probabilidade de Pesquisar.
+    Neste exemplo, o item é descrito usando termos para os quais os usuários têm maior probabilidade de pesquisar.
 
--   Se for provável que um item do painel de controle seja confundido com outras pessoas, explique como ele é diferente no InfoTip.
+-   Se um Painel de Controle item for provavelmente confundido com outras pessoas, explique como ele é diferente na dica de informação.
 
     **Incorreto:**
 
-    ![captura de tela de infotip sem detalhes específicos ](images/ctrl-tooltips-and-infotips-image44.png)
+    ![captura de tela do infotip sem detalhes específicos ](images/ctrl-tooltips-and-infotips-image44.png)
 
-    Neste exemplo, os itens do painel de controle configuram o som, mas o InfoTip não esclarece a diferença.
+    Neste exemplo, os Painel de Controle itens configuram o som, mas o infotip não esclarece a diferença.
 
     **Correto:**
 
-    ![captura de tela de infotip com detalhes específicos ](images/ctrl-tooltips-and-infotips-image45.png)
+    ![captura de tela do infotip com detalhes específicos ](images/ctrl-tooltips-and-infotips-image45.png)
 
-    Neste exemplo, a diferença entre os dois itens é mais evidente devido à dica.
+    Neste exemplo, a diferença entre os dois itens é mais evidente devido à gorjeta.
 
 ### <a name="icons"></a>Ícones
 
-Ao contrário das versões anteriores do Windows, o Windows Vista permite dicas para ter ícones.
+Ao contrário das versões anteriores do Windows, o Windows Vista permite que as dicas tenham ícones.
 
 -   Para dicas de ferramenta, não use ícones.
--   Para infotips, use ícones somente se eles auxiliarem no reconhecimento ou na compreensão ou fornecerem contexto. A maioria das Infotips não deve ter ícones.
+-   Para infotips, use ícones somente se eles ajudarem no reconhecimento ou na compreensão ou fornecerem contexto. A maioria das infotips não deve ter ícones.
 
-    ![captura de tela do volume InfoTip com o ícone de fone de ouvido ](images/ctrl-tooltips-and-infotips-image46.png)
+    ![captura de tela da infotip de volume com o ícone de fone de ouvido ](images/ctrl-tooltips-and-infotips-image46.png)
 
-    Neste exemplo, o InfoTip tem um ícone para ajudar a associar o ícone ao seu significado.
+    Neste exemplo, a infotip tem um ícone para ajudar a associar o ícone ao seu significado.
 
--   O ícone deve usar o [estilo Aero](vis-icons.md) e ter uma aparência discreta.
+-   O ícone deve usar o [estilo Aero](vis-icons.md) e ter uma aparência não discreta.
 
-Para obter diretrizes e exemplos de ícone geral, consulte [ícones](vis-icons.md).
+Para ver exemplos e diretrizes gerais de ícone, consulte [Ícones](vis-icons.md).
 
 ## <a name="documentation"></a>Documentação
 
-Ao fazer referência a dicas:
+Ao se referir a dicas:
 
--   Em programação e outras documentações técnicas, consulte o tipo de Tip (ToolTip ou InfoTip). Em todos os lugares, basta chamá-lo de uma dica.
--   As seguintes variações estão incorretas: dica de ferramenta, ToolTip e dica de ferramentas.
+-   Na programação e em outras documentações técnicas, consulte o tipo de dica (dica de ferramenta ou infotip). Em qualquer outro lugar, basta chamá-lo de dica.
+-   As seguintes variações estão incorretas: dica de ferramenta, Dica de ferramenta e Dica de Ferramenta.
 -   Para descrever a interação do usuário, use hover.
 

@@ -4,12 +4,12 @@ ms.assetid: 703217EA-70C8-4F86-B8DF-95468C78C8DA
 title: Visão geral do formato PNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 118d6af831c8fb6f8cacc8407e90f610c0fc426d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4bb00b7530a22fcdbcce112053431ace5e553383
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105765267"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444437"
 ---
 # <a name="png-format-overview"></a>Visão geral do formato PNG
 
@@ -21,7 +21,7 @@ A tabela a seguir fornece informações de identificação do codec.
 
 
 
-|                        |                                 |
+|     Componente          | Descrição                     |
 |------------------------|---------------------------------|
 | Nome (s) formal (es)         | PNG |
 | Extensão (s) de nome de arquivo | png                             |
@@ -62,7 +62,7 @@ O codec PNG usa opções básicas de codificador de WIC. A tabela a seguir lista
 
 
 
-| Nome da Propriedade   | VARTYPE  | Intervalo de valores                                                 | Valor padrão                                                    |
+| Nome da propriedade   | VARTYPE  | Intervalo de valores                                                 | Valor Padrão                                                    |
 |-----------------|----------|-------------------------------------------------------------|------------------------------------------------------------------|
 | InterlaceOption | BOOL do VT \_ | **Verdadeiro** / **Falso**                                          | **FALSE**                                                        |
 | FilterOption    | \_UI1 VT  | [**WICPngFilterOption**](/windows/desktop/api/Wincodec/ne-wincodec-wicpngfilteroption) | [**WICPngFilterUnspecified**](/windows/desktop/api/Wincodec/ne-wincodec-wicpngfilteroption) |
@@ -77,7 +77,7 @@ Se uma opção de codificador estiver presente na lista de opções de [**IPrope
 
 Especifica se os dados da imagem devem ser codificados como entrelaçados.
 
-O valor padrão é **false**.
+O valor padrão é **FALSE**.
 
 ### <a name="filteroption"></a>FilterOption
 

@@ -4,12 +4,12 @@ description: Com uma caixa de seleção, os usuários tomarão uma decisão entr
 ms.assetid: 7c39987d-807b-41c1-9788-65c3d468b976
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 7a175893b2dfab2999ce37e3f00395d881f03973
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 20cf5bc4fd13b974f87fbb33a5fea9a365f99735
+ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "103930062"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111524293"
 ---
 # <a name="check-boxes"></a>Caixas de seleção
 
@@ -75,7 +75,7 @@ As caixas de seleção têm vários padrões de uso:
 
 
 
-|                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|    Uso                                                                          |         Exemplo                                                                                             |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Uma opção individual** Uma única caixa de seleção é usada para selecionar uma opção individual. <br/>                                                                                                             | ![captura de tela de uma caixa de seleção com o rótulo lembrar-me ](images/ctrl-check-boxes-image6.png)<br/> Uma única caixa de seleção é usada para uma escolha individual.<br/>                                                                                                                                                                                                                                                                                                                        |
 | **Opções independentes (zero ou mais)** Um grupo de caixas de seleção é usado para selecionar de um conjunto de zero ou mais opções.<br/>                                                                              | ao contrário dos controles de seleção única, como [botões de opção](ctrl-radio-buttons.md), os usuários podem selecionar qualquer combinação de opções em um grupo de caixas de seleção.<br/> ![captura de tela de duas das três caixas de seleção selecionadas ](images/ctrl-check-boxes-image7.png)<br/> Um grupo de caixas de seleção é usado para escolhas independentes.<br/>                                                                                                                                                  |
@@ -131,7 +131,7 @@ As caixas de seleção têm vários padrões de uso:
 
     **Incorreto:**
 
-    ![captura de tela de quatro caixas de seleção mostrando progresso ](images/ctrl-check-boxes-image15.png)
+    ![captura de tela de quatro caixas de seleção mostrando o progresso ](images/ctrl-check-boxes-image15.png)
 
     Neste exemplo, as caixas de seleção são usadas incorretamente como um indicador de progresso.
 
@@ -141,46 +141,46 @@ As caixas de seleção têm vários padrões de uso:
 
     Exemplo de uma barra de progresso típica.
 
--   **Mostrar caixas de seleção desabilitadas usando o estado de seleção correto.** Mesmo que os usuários não possam alterá-los, as caixas de seleção desativadas transmitem informações para que sejam consistentes com os resultados.
+-   **Mostrar caixas de seleção desabilitadas usando o estado de seleção correto.** Embora os usuários não possam alterá-los, as caixas de seleção desabilitadas transmitem informações para que eles sejam consistentes com os resultados.
 
     **Incorreto:**
 
-    ![captura de tela de uma das duas caixas de seleção esmaecidas ](images/ctrl-check-boxes-image17.png)
+    ![captura de tela de uma das duas caixas de seleção esmaecida ](images/ctrl-check-boxes-image17.png)
 
-    Neste exemplo, a opção "sempre ler esta seção em voz alta" deve ser desmarcada porque a seção não é lida quando a opção está desabilitada.
+    Neste exemplo, a opção "Sempre ler esta seção em voz alta" deve ser limpa porque a seção não é lida quando a opção está desabilitada.
 
 -   **Não use a seleção de uma caixa de seleção para**:
     -   Executar comandos.
-    -   Exiba outras janelas, como uma caixa de diálogo para coletar mais entradas.
-    -   Exibir dinamicamente outros controles relacionados ao controle selecionado (leitores de tela não podem detectar esses eventos).
+    -   Exibir outras janelas, como uma caixa de diálogo para coletar mais entradas.
+    -   Exibir dinamicamente outros controles relacionados ao controle selecionado (os leitores de tela não podem detectar esses eventos).
 
-### <a name="dont-show-this-item-again"></a>Não mostrar este <item> outra
+### <a name="dont-show-this-item-again"></a>Não mostre isso <item> Novamente
 
--   **Considere usar uma opção não mostrar esta <item> novamente para permitir que os usuários suprimem uma caixa de diálogo recorrente somente se não houver uma alternativa melhor.** Tente determinar com antecedência se os usuários realmente precisam da caixa de diálogo; Se fizerem isso, sempre mostrarão a caixa de diálogo e, se não forem, eliminará a caixa de diálogo.
+-   **Considere usar uma opção Não mostrar novamente para permitir que os usuários suprimem uma caixa de diálogo recorrente somente se não <item> houver uma alternativa melhor.** Tente determinar com antecedência se os usuários realmente precisam da caixa de diálogo; se fizerem isso, sempre mostre a caixa de diálogo e, se não o fizerem, elimine a caixa de diálogo.
 
-Para obter mais diretrizes e exemplos, consulte [caixas de diálogo](win-dialog-box.md).
+Para obter mais diretrizes e exemplos, consulte Caixas [de diálogo](win-dialog-box.md).
 
 ### <a name="subordinate-controls"></a>Controles subordinados
 
--   Coloque controles subordinados à direita ou abaixo (recuado, libere com o rótulo da caixa de seleção) a caixa de seleção e seu rótulo. Termine o rótulo da caixa de seleção com dois-pontos.
+-   Coloque os controles subordinados à direita ou abaixo (recuado, liberando com o rótulo da caixa de seleção) a caixa de seleção e seu rótulo. Termine o rótulo da caixa de seleção com dois-pontos.
 
     ![captura de tela da caixa de texto abaixo do rótulo da caixa de seleção ](images/ctrl-check-boxes-image18.png)
 
     Neste exemplo, a caixa de seleção e seu controle subordinado compartilham o rótulo da caixa de seleção e sua chave de acesso.
 
--   **Deixe caixas de texto editáveis e listas suspensas dependentes habilitadas se compartilharem o rótulo da caixa de seleção.** Quando os usuários digitam ou colam qualquer coisa na caixa, selecione a opção correspondente automaticamente. Fazer isso simplifica a interação.
+-   **Deixe caixas de texto editáveis dependentes e listas listadas habilitadas se elas compartilharem o rótulo da caixa de seleção.** Quando os usuários digitarem ou colarem qualquer coisa na caixa, selecione a opção correspondente automaticamente. Isso simplifica a interação.
 
-    ![captura de tela de caixas de texto de cabeçalho e rodapé ](images/ctrl-check-boxes-image19.png)
+    ![captura de tela das caixas de texto de rodapé e de rodapé ](images/ctrl-check-boxes-image19.png)
 
-    Neste exemplo, a inserção de um cabeçalho ou rodapé automaticamente seleciona a opção.
+    Neste exemplo, inserir um rodapé ou um rodapé seleciona automaticamente a opção .
 
--   Se você aninhar caixas de seleção com botões de opção ou outras caixas de seleção, **Desabilite esses controles subordinados até que a opção de alto nível seja selecionada**. Isso evita a confusão sobre o significado dos controles subordinados.
--   Torne os controles subordinados a uma caixa de seleção contíguas com a caixa de seleção na ordem de tabulação.
--   **Se a seleção de uma opção implica selecionar caixas de seleção subordinadas, marque explicitamente as caixas de seleção para tornar a relação clara.**
+-   Se você aninhar caixas de seleção com botões de opção ou outras caixas de seleção, **desabilite** esses controles subordinados até que a opção de alto nível seja selecionada . Isso evita confusão sobre o significado dos controles subordinados.
+-   Tornar os controles subordinados em uma caixa de seleção contíguas com a caixa de seleção na ordem de tabulação.
+-   **Se selecionar uma opção implica marcar caixas de seleção subordinadas, marque explicitamente essas caixas de seleção para limpar a relação.**
 
     **Incorreto:**
 
-    ![captura de tela: botão selecionado, caixas de seleção desmarcadas ](images/ctrl-check-boxes-image20.png)
+    ![captura de tela: botão selecionado, caixas de seleção des limpas ](images/ctrl-check-boxes-image20.png)
 
     Neste exemplo, as caixas de seleção subordinadas não estão selecionadas.
 
@@ -188,105 +188,105 @@ Para obter mais diretrizes e exemplos, consulte [caixas de diálogo](win-dialog-
 
     ![captura de tela: botão selecionado, caixas de seleção selecionadas ](images/ctrl-check-boxes-image21.png)
 
-    Neste exemplo, as caixas de seleção subordinadas são selecionadas, tornando sua relação com a opção selecionada desmarcada.
+    Neste exemplo, as caixas de seleção subordinadas são selecionadas, tornando sua relação com a opção selecionada clara.
 
--   **Use as caixas de seleção dependentes se as alternativas adicionarem complexidade desnecessária**. Enquanto as caixas de seleção devem ser opções independentes, algumas vezes alternativas como botões de opção adicionam complexidade desnecessária.
+-   **Use caixas de seleção dependentes se as alternativas adicionarem complexidade desnecessária.** Embora as caixas de seleção devem ser opções independentes, às vezes, alternativas como botões de opção adicionam complexidade desnecessária.
 
     **Correto:**
 
     ![captura de tela de botões confusos e caixas de seleção ](images/ctrl-check-boxes-image22.png)
 
-    Neste exemplo, o uso de botões de opção é preciso, mas cria uma complexidade desnecessária.
+    Neste exemplo, o uso de botões de rádio é preciso, mas cria complexidade desnecessária.
 
     **Melhor:**
 
-    ![captura de tela apenas de caixas de seleção ](images/ctrl-check-boxes-image23.png)
+    ![captura de tela somente de caixas de seleção ](images/ctrl-check-boxes-image23.png)
 
     Neste exemplo, o uso de caixas de seleção é mais simples e permite que os usuários se concentrem na seleção das opções desejadas em vez de em sua relação complexa.
 
-    **Importante: aplique essa diretriz somente em circunstâncias extremamente raras**, quando a exibição das dependências adicionar uma complexidade significativa sem aumentar a clareza. No exemplo anterior, é improvável que os usuários tentem escolher sobrescrito e subscrito e, se tiverem feito isso, seria fácil entender que eram opções exclusivas.
+    **Importante: aplique essa diretriz somente em circunstâncias extremamente raras,** ao mostrar que as dependências adicionam complexidade significativa sem adicionar clareza. No exemplo anterior, é improvável que os usuários tentarem escolher o superscrito e o subscrito e, se o fizeram, seria fácil entender que eles eram opções exclusivas.
 
 ### <a name="default-values"></a>Valores padrão
 
--   Se uma caixa de seleção for para uma opção de usuário, **defina o mais seguro (para evitar a perda de dados ou acesso ao sistema), o estado mais seguro e privado por padrão.** Se não houver fatores de segurança e segurança, selecione o valor mais provável ou conveniente.
+-   Se uma caixa de seleção for para uma opção de usuário, de definir o mais seguro (para evitar a perda de dados ou acesso ao sistema), o estado mais **seguro e privado por padrão.** Se segurança e segurança não são fatores, selecione o valor mais provável ou conveniente.
 
-## <a name="recommended-sizing-and-spacing"></a>Dimensionamento e espaçamento recomendados
+## <a name="recommended-sizing-and-spacing"></a>Espaçamento e o espaçamento recomendados
 
-![figura do espaçamento e dimensionamento da caixa de seleção sugerido ](images/ctrl-check-boxes-image24.png)
+![figura do espaçamento e o espaçamento sugeridos da caixa de seleção ](images/ctrl-check-boxes-image24.png)
 
-Dimensionamento e espaçamento recomendados para caixas de seleção.
+O espaçamento e o espaçamento recomendados para caixas de seleção.
 
 ## <a name="labels"></a>Rótulos
 
 **Rótulos da caixa de seleção**
 
--   Rotular todas as caixas de seleção.
--   Atribua uma [chave de acesso](glossary.md) exclusiva para cada rótulo. Para obter diretrizes, consulte [teclado](inter-keyboard.md).
--   Use [a capitalização no estilo de frase](glossary.md).
--   Escreva o rótulo como uma frase ou uma frase imperativa e não use pontuação final.
-    -   **Exceção:** Se um rótulo da caixa de seleção também rotular um controle subordinado que o segue, termine o rótulo com dois-pontos.
+-   Marque cada caixa de seleção.
+-   Atribua uma chave [de acesso exclusiva](glossary.md) a cada rótulo. Para diretrizes, consulte [Teclado](inter-keyboard.md).
+-   Use [a capitalização de estilo de frase](glossary.md).
+-   Escreva o rótulo como uma frase ou uma frase imperativa e não use nenhuma pontuação final.
+    -   **Exceção:** Se um rótulo de caixa de seleção também rotular um controle subordinado que o segue, termine o rótulo com dois-pontos.
 -   Escreva o rótulo para que ele descreva o estado selecionado da caixa de seleção.
--   Para um grupo de caixas de seleção, use frases paralelas e tente manter o comprimento sobre o mesmo para todos os rótulos.
--   Para um grupo de caixas de seleção, concentre o texto do rótulo nas diferenças entre as opções. Se todas as opções tiverem o mesmo texto introdutório, mova esse texto para o rótulo do grupo.
--   Use frases positivas. Não formule um rótulo para que a seleção de uma caixa de seleção signifique não executar uma ação.
+-   Para um grupo de caixas de seleção, use frase paralela e tente manter o comprimento aproximadamente o mesmo para todos os rótulos.
+-   Para um grupo de caixas de seleção, concentre o texto do rótulo nas diferenças entre as opções. Se todas as opções têm o mesmo texto introdutório, mova esse texto para o rótulo do grupo.
+-   Use frases positivas. Não expresse um rótulo para que a seleção de uma caixa de seleção significa não executar uma ação.
 
-    -   **Exceção: não mostrar esta <item>** caixa de seleção novamente.
+    -   **Exceção: não mostre novamente as <item> caixas** de seleção.
 
     **Incorreto:**
 
-    ![captura de tela do rótulo negativo ' desligar '](images/ctrl-check-boxes-image25.png)
+    ![captura de tela do rótulo negativo 'desligar'](images/ctrl-check-boxes-image25.png)
 
-    Neste exemplo, a opção não usa frases positivas.
+    Neste exemplo, a opção não usa frase positiva.
 
--   Descreva apenas a opção com o rótulo. Mantenha os rótulos breves para que seja fácil consultá-los em mensagens e documentação. Se a opção exigir mais explicações, forneça a explicação em um controle de [texto estático](./glossary.md) usando frases completas e pontuação final.
+-   Descreva apenas a opção com o rótulo. Mantenha os rótulos breves para que seja fácil fazer referência a eles em mensagens e documentação. Se a opção exigir mais explicação, forneça a explicação em um controle de [texto](./glossary.md) estático usando frases completas e pontuação final.
 
     > [!Note]
     >
-    > Adicionar uma explicação a uma caixa de seleção em um grupo não significa que você precisa fornecer explicações para todas as caixas de seleção no grupo. Forneça as informações relevantes no rótulo, se possível, e use explicações somente quando necessário. Não apenas redeclare o rótulo para fins de consistência.
+    > Adicionar uma explicação a uma caixa de seleção em um grupo não significa que você precisa fornecer explicações para todas as caixas de seleção no grupo. Forneça as informações relevantes no rótulo, se possível, e use explicações somente quando necessário. Não apenas restate o rótulo para consistência.
 
      
 
-    ![captura de tela de caixa de seleção, rótulo e descrição ](images/ctrl-check-boxes-image26.png)
+    ![captura de tela da caixa de seleção, rótulo e descrição ](images/ctrl-check-boxes-image26.png)
 
-    Neste exemplo, um rótulo de caixa de seleção tem um texto explicativo adicional abaixo dele.
+    Neste exemplo, um rótulo de caixa de seleção tem texto explicativo adicional abaixo dele.
 
--   Se uma opção for altamente recomendável, considere adicionar "(recomendado)" ao rótulo. Certifique-se de adicionar ao rótulo de controle, não às anotações complementares.
--   Se você precisar usar rótulos de várias linhas, alinhe a parte superior do rótulo com a caixa de seleção.
--   Não use um controle subordinado, os valores que ele contém ou seu rótulo de unidades para criar uma frase ou frase. Esse tipo de design não é localizável porque a estrutura da frase varia de acordo com a linguagem.
+-   Se uma opção for altamente recomendada, considere adicionar "(recomendado)" ao rótulo. Certifique-se de adicionar ao rótulo de controle, não às notas complementares.
+-   Se você precisa usar rótulos de várias linhas, alinhe a parte superior do rótulo com a caixa de seleção.
+-   Não use um controle subordinado, os valores que ele contém ou seu rótulo de unidades para criar uma frase ou frase. Esse design não é localizável porque a estrutura de frase varia de acordo com o idioma.
 
     **Incorreto:**
 
-    ![captura de tela de rótulo de caixa de seleção com caixa de texto ](images/ctrl-check-boxes-image27.png)
+    ![captura de tela do rótulo da caixa de seleção com a caixa de texto nele ](images/ctrl-check-boxes-image27.png)
 
     Neste exemplo, a caixa de texto é colocada incorretamente dentro do rótulo da caixa de seleção.
 
 **Rótulos de grupo da caixa de seleção**
 
--   Use o rótulo de grupo para explicar a finalidade do grupo, não como fazer a seleção. Suponha que os usuários saibam como usar as caixas de seleção. Por exemplo, não diga "Selecione qualquer uma das opções a seguir".
+-   Use o rótulo do grupo para explicar a finalidade do grupo, não como fazer a seleção. Suponha que os usuários saibam como usar caixas de seleção. Por exemplo, não diga "Selecione qualquer uma das opções a seguir".
 -   Termine cada rótulo com dois-pontos.
--   Não atribua uma chave de acesso ao rótulo. Fazer isso não é necessário e torna mais difícil atribuir as outras chaves de acesso.
+-   Não atribua uma chave de acesso ao rótulo. Isso não é necessário e torna as outras chaves de acesso mais difíceis de atribuir.
 -   Para uma seleção de uma ou mais opções dependentes, explique o requisito no rótulo.
 
     **Correto:**
 
     ![captura de tela do rótulo para dois controles: protocolos ](images/ctrl-check-boxes-image28.png)
 
-    Neste exemplo, os usuários podem imaginar que eles só podem fazer uma seleção.
+    Neste exemplo, os usuários podem pensar que só podem fazer uma seleção.
 
     **Melhor:**
 
-    ![captura de tela de rótulo: protocolos selecione um ou mais ](images/ctrl-check-boxes-image29.png)
+    ![captura de tela do rótulo: os protocolos selecionam um ou mais ](images/ctrl-check-boxes-image29.png)
 
-    Neste exemplo, é claro que os usuários podem fazer mais de uma seleção.
+    Neste exemplo, fica claro que os usuários podem fazer mais de uma seleção.
 
 ## <a name="documentation"></a>Documentação
 
-Ao se referir a caixas de seleção:
+Ao fazer referência às caixas de seleção:
 
--   Use o texto exato do rótulo, incluindo sua capitalização, mas não inclua a tecla de acesso sublinhado ou dois-pontos. Inclua a caixa de seleção Word.
--   Consulte uma caixa de seleção como caixa de seleção, não opção, caixa de seleção ou caixa apenas, porque a caixa sozinha é ambígua para os localizadores.
+-   Use o texto exato do rótulo, incluindo sua capitalização, mas não inclua o sublinhado ou dois-pontos da chave de acesso. Inclua a caixa de seleção palavra.
+-   Veja uma caixa de seleção como uma caixa de seleção, não uma opção, uma caixa de seleção ou apenas uma caixa, porque a caixa é ambígua para localizadores.
 -   Para descrever a interação do usuário, use selecionar e limpar.
--   Quando possível, formate o rótulo usando texto em negrito. Caso contrário, coloque o rótulo entre aspas somente se necessário para evitar confusão.
+-   Quando possível, forja o rótulo usando texto em negrito. Caso contrário, coloque o rótulo entre aspas somente se necessário para evitar confusão.
 
-    Exemplo: marque a caixa de seleção **sublinhado** .
+    Exemplo: marque a **caixa de seleção Sublinhado.**
 

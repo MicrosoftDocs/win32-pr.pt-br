@@ -1,25 +1,25 @@
 ---
 title: Visão geral do storyboard
-description: Esta visão geral concentra-se em como as transições e os storyboards são usados na animação do Windows.
+description: Esta visão geral se concentra em como transições e storyboards são usados na Animação do Windows.
 ms.assetid: d37718ac-0256-4a24-a26c-d29173593be0
 keywords:
-- Animação Windows animação do Windows, visão geral do storyboard
-- Animação de storyboards do Windows, descrita
-- transição de animação do Windows, descrita
-- transições de animação do Windows, personalizadas
-- Animação de interpolação do Windows, descrita
+- Animação do Windows Animação do Windows , visão geral do storyboard
+- animação do Windows storyboards, descrita
+- transições da Animação do Windows, descritas
+- faz a transição da Animação do Windows, personalizada
+- interpoladores Animação do Windows , descrito
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22d8e0af3937cd31ccdc43216a9d3426bad0e7b0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 58210ae98f6d3a96c554276466ad72b3364d72a1
+ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641300"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111524280"
 ---
 # <a name="storyboard-overview"></a>Visão geral do storyboard
 
-Esta visão geral concentra-se em como as transições e os storyboards são usados na animação do Windows. Para obter uma visão geral dos componentes da animação do Windows, consulte [visão geral da animação do Windows](scenic-animation-api-overview.md).
+Esta visão geral se concentra em como transições e storyboards são usados na Animação do Windows. Para ter uma visão geral dos componentes da Animação do Windows, consulte Visão [geral da animação do Windows.](scenic-animation-api-overview.md)
 
 Este tópico contém as seguintes seções:
 
@@ -28,42 +28,42 @@ Este tópico contém as seguintes seções:
     -   [Transições personalizadas](#custom-transitions)
 -   [Storyboards](#storyboards)
     -   [Criando um storyboard simples](#building-a-simple-storyboard)
-    -   [Usando uma duração de Context-Sensitive](#using-a-context-sensitive-duration)
+    -   [Usando uma duração Context-Sensitive dados](#using-a-context-sensitive-duration)
     -   [Criando um storyboard mais complexo](#building-a-more-complex-storyboard)
-    -   [Usando quadros-chave](#using-keyframes)
+    -   [Usando keyframes](#using-keyframes)
     -   [Mantendo variáveis](#holding-variables)
     -   [Agendando um storyboard](#scheduling-a-storyboard)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="transitions"></a>Transições
 
-Uma transição define como uma variável de animação única é alterada em um intervalo de tempo específico. A animação do Windows inclui uma biblioteca de transições comuns que os desenvolvedores podem aplicar a uma ou mais variáveis de animação. Diferentes tipos de transições têm conjuntos diferentes de parâmetros, que podem incluir o valor da variável quando a transição for concluída, a duração da transição ou as quantidades exclusivas da função matemática subjacente, como aceleração ou intervalo de oscilação.
+Uma transição define como uma única variável de animação muda em um intervalo de tempo específico. A Animação do Windows inclui uma biblioteca de transições comuns que os desenvolvedores podem aplicar a uma ou mais variáveis de animação. Diferentes tipos de transições têm conjuntos diferentes de parâmetros, que podem incluir o valor da variável quando a transição é concluída, a duração da transição ou quantidades exclusivas para a função matemática subjacente, como aceleração ou intervalo de oscilação.
 
-Todas as transições compartilham dois parâmetros implícitos: o valor inicial e a velocidade inicial (inclinação) da função matemática. Eles podem ser especificados explicitamente pelo aplicativo, mas normalmente são definidos pelo Gerenciador de animação para o valor e a velocidade da variável de animação quando a transição começa.
+Todas as transições compartilham dois parâmetros implícitos: o valor inicial e a velocidade inicial (inclinação) da função matemática. Eles podem ser especificados explicitamente pelo aplicativo, mas normalmente são definidos pelo gerenciador de animação como o valor e a velocidade da variável de animação quando a transição é iniciada.
 
 -   [Biblioteca de transição](#transition-library)
 -   [Transições personalizadas](#custom-transitions)
 
 ### <a name="transition-library"></a>Biblioteca de transição
 
-As transições a seguir são atualmente fornecidas pela biblioteca de transição. Se um aplicativo exigir um efeito que não possa ser especificado usando a biblioteca de transição, os desenvolvedores poderão criar outros tipos de transições implementando um interpolador personalizado para o aplicativo ou usando uma biblioteca de transição de terceiros.
+As transições a seguir são fornecidas atualmente pela biblioteca de transição. Se um aplicativo exigir um efeito que não pode ser especificado usando a biblioteca de transição, os desenvolvedores poderão criar outros tipos de transições implementando um interpolador personalizado para o aplicativo ou usando uma biblioteca de transição de terceiros.
 
 
 
 | Nome da transição                        | Descrição                                                                                                                                                                                          |
 |----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| acelerar-desacelerar<br/>       | A variável de animação acelera e diminui a velocidade de uma determinada duração.<br/>                                                                                                               |
-| constante<br/>                    | A variável de animação permanece em seu valor inicial durante toda a transição.<br/>                                                                                                            |
-| cúbicas<br/>                       | A variável de animação muda de seu valor inicial para um valor final especificado, com uma velocidade final especificada, em uma determinada duração.<br/>                                                 |
-| própria<br/>                    | A variável de animação permanece em seu valor inicial para um tempo de atraso especificado e alterna instantaneamente para um valor final especificado e permanece nesse valor para um determinado tempo de espera.<br/> |
-| instantânea<br/>               | A variável de animação é alterada instantaneamente de seu valor atual para um valor final especificado.<br/>                                                                                               |
-| linear<br/>                      | A variável de animação faz a transição linearmente de seu valor inicial para um valor final especificado em uma determinada duração.<br/>                                                                      |
-| linear da velocidade<br/>           | A variável de animação faz a transição linearmente de seu valor inicial para um valor final especificado com uma velocidade especificada.<br/>                                                                     |
+| aceleração/desaceleração<br/>       | A variável de animação acelera e, em seguida, diminui durante uma determinada duração.<br/>                                                                                                               |
+| constante<br/>                    | A variável de animação permanece em seu valor inicial durante a transição.<br/>                                                                                                            |
+| cúbicas<br/>                       | A variável de animação muda de seu valor inicial para um valor final especificado, com uma velocidade final especificada, durante uma determinada duração.<br/>                                                 |
+| Discreta<br/>                    | A variável de animação permanece em seu valor inicial por um tempo de atraso especificado e, em seguida, alterna instantaneamente para um valor final especificado e permanece nesse valor por um determinado tempo de espera.<br/> |
+| Instantânea<br/>               | A variável de animação muda instantaneamente de seu valor atual para um valor final especificado.<br/>                                                                                               |
+| linear<br/>                      | A variável de animação faz a transição linear de seu valor inicial para um valor final especificado durante uma determinada duração.<br/>                                                                      |
+| linear da velocidade<br/>           | A variável de animação faz a transição linear de seu valor inicial para um valor final especificado com uma velocidade especificada.<br/>                                                                     |
 | parabólico da aceleração<br/> | A variável de animação faz a transição de seu valor inicial para um valor final especificado, com uma velocidade final especificada, alterando sua velocidade com uma aceleração especificada.<br/>               |
-| versa<br/>                    | A variável muda de direção em uma determinada duração. O valor final será o mesmo que o valor inicial e a velocidade final será o negativo da velocidade inicial.<br/>          |
-| sinusoidal do intervalo<br/>       | A variável oscila dentro de um determinado intervalo de valores, com um período especificado de oscilação, para uma determinada duração.<br/>                                                                     |
-| sinusoidal da velocidade<br/>    | A variável oscila com um período especificado de oscilação para uma determinada duração. A amplitude de oscilação é determinada pela velocidade inicial da variável.<br/>                      |
-| interrupção suave<br/>                 | A variável de animação chega a uma parada suave em um valor final especificado, dentro de uma duração máxima de tempo.<br/>                                                                              |
+| Reversão<br/>                    | A variável altera a direção durante uma determinada duração. O valor final será o mesmo que o valor inicial e a velocidade final será o negativo da velocidade inicial.<br/>          |
+| sinusoidal do intervalo<br/>       | A variável oscila dentro de um determinado intervalo de valores, com um período especificado de oscilação, por uma determinada duração.<br/>                                                                     |
+| sinusoidal da velocidade<br/>    | A variável oscila com um período especificado de oscilação, por uma determinada duração. A amplitude da oscilação é determinada pela velocidade inicial da variável.<br/>                      |
+| smooth stop<br/>                 | A variável de animação chega a uma parada suave em um valor final especificado, dentro de uma duração máxima do tempo.<br/>                                                                              |
 
 
 
@@ -73,12 +73,12 @@ A tabela a seguir contém ilustrações para cada uma dessas transições.
 
 
 
-|                                                                                                                                                                                                                                                                                                                                                                                                    |
+|    Ilustrações                                                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![ilustração de uma transição instantânea](images/instantaneoustransition.png)  ![ilustração de uma transição constante](images/constanttransition.png)  ![ilustração de uma transição linear](images/lineartransition.png)  ![ilustração de uma transição de Lineat da velocidade](images/lineartransitionfromspeed.png)  ![ilustração de uma transição discreta](images/discretetransition.png) |
-| ![ilustração de uma transição parabólico da aceleração](images/parabolictransitionfromacceleration.png)  ![ilustração de uma transição cúbica](images/cubictransition.png)  ![ilustração de uma transição de interrupção suave](images/smoothstoptransition.png)                                                                                                                                       |
-| ![ilustração de uma transição de estorno](images/reversaltransition.png)  ![ilustração de uma transição de sinusoidal da velocidade](images/sinusolidaltransitionfromvelocity.png)  ![ilustração de uma transição de sinusoidal do intervalo](images/sinusolidaltransitionfromrange.png)                                                                                                                  |
-| ![ilustração de transições de accellerate e desaceleração](images/acceleratedeceleratetransition.png)                                                                                                                                                                                                                                                                                               |
+| ![ilustração de uma transição instantânea](images/instantaneoustransition.png)  ![ilustração de uma transição constante](images/constanttransition.png)  ![ilustração de uma transição linear](images/lineartransition.png)  ![ilustração de uma transição de lineat da velocidade](images/lineartransitionfromspeed.png)  ![ilustração de uma transição discreta](images/discretetransition.png) |
+| ![ilustração de uma transição parabólica da aceleração](images/parabolictransitionfromacceleration.png)  ![ilustração de uma transição cúbica](images/cubictransition.png)  ![ilustração de uma transição de parada suave](images/smoothstoptransition.png)                                                                                                                                       |
+| ![ilustração de uma transição de reversão](images/reversaltransition.png)  ![ilustração de uma transição sinusoidal da velocidade](images/sinusolidaltransitionfromvelocity.png)  ![ilustração de uma transição sinusoidal do intervalo](images/sinusolidaltransitionfromrange.png)                                                                                                                  |
+| ![ilustração de transições de accrate e decelerate](images/acceleratedeceleratetransition.png)                                                                                                                                                                                                                                                                                               |
 
 
 
@@ -86,22 +86,22 @@ A tabela a seguir contém ilustrações para cada uma dessas transições.
 
 ### <a name="custom-transitions"></a>Transições personalizadas
 
-Um *interpolador* define a função matemática que determina como uma variável de animação muda ao longo do tempo conforme progride de seu valor inicial para um valor final. Cada transição na biblioteca de transição tem um objeto interpolador associado que é fornecido pelo sistema e implementa a função interpolador. Se um aplicativo exigir um efeito que não possa ser especificado usando a biblioteca de transição, ele poderá implementar uma ou mais transições personalizadas implementando um objeto interpolador para cada nova transição. Os objetos do interpolador não podem ser usados diretamente por aplicativos e, em vez disso, devem ser encapsulados em uma transição associada. Uma *fábrica de transição* é usada para gerar transições de um objeto interpolador. Consulte [**IUIAnimationInterpolator**](/windows/desktop/api/UIAnimation/nn-uianimation-iuianimationinterpolator) e [**IUIAnimationTransitionFactory**](/windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtransitionfactory) para obter mais detalhes.
+Um *interpolador* define a função matemática que determina como uma variável de animação muda ao longo do tempo à medida que progride de seu valor inicial para um valor final. Cada transição na biblioteca de transição tem um objeto interpolador associado fornecido pelo sistema e implementa a função interpolador. Se um aplicativo exigir um efeito que não pode ser especificado usando a biblioteca de transição, ele poderá implementar uma ou mais transições personalizadas implementando um objeto interpolador para cada nova transição. Objetos interpoladores não podem ser usados diretamente por aplicativos e devem ser envolvidos em uma transição associada. Uma *fábrica de transição* é usada para gerar transições de um objeto interpolador. Consulte [**IUIAnimationInterpolator**](/windows/desktop/api/UIAnimation/nn-uianimation-iuianimationinterpolator) e [**IUIAnimationTransitionFactory**](/windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtransitionfactory) para obter mais detalhes.
 
-Observe que a maioria dos aplicativos terá todas as transições de que precisam usando a biblioteca de transição e, portanto, não precisará implementar um interpolador.
+Observe que a maioria dos aplicativos terá todas as transições de que precisa usando a biblioteca de transição e, portanto, não precisaria implementar um interpolador.
 
 ## <a name="storyboards"></a>Storyboards
 
-Um Storyboard é uma coleção de transições aplicadas a uma ou mais variáveis de animação ao longo do tempo. As transições em um storyboard têm garantia de permanecer sincronizadas em relação umas às outras, e o storyboard é agendado ou cancelado como uma unidade. Depois de criar as transições desejadas, um aplicativo cria um storyboard usando o Gerenciador de animação, adiciona as transições ao storyboard, configura o storyboard adequadamente e o agenda para reprodução assim que possível. O Gerenciador de animação determina a hora de início real do storyboard, porque pode haver contenção com outros storyboards que atualmente animam as mesmas variáveis.
+Um storyboard é uma coleção de transições aplicadas a uma ou mais variáveis de animação ao longo do tempo. As transições em um storyboard têm a garantia de permanecer sincronizadas em relação umas às outras e o storyboard é agendado ou cancelado como uma unidade. Depois de criar as transições desejadas, um aplicativo cria um storyboard usando o gerenciador de animação, adiciona as transições ao storyboard, configura o storyboard adequadamente e o agenda para ser reproduzível assim que possível. O gerenciador de animação determina a hora de início real do storyboard, pois pode haver contenção com outros storyboards atualmente animando as mesmas variáveis.
 
-A duração geral de um storyboard depende das durações das transições dentro do storyboard. A duração de uma transição não precisa ser corrigida; Ele pode ser determinado pelo valor e velocidade das variáveis animadas quando a transição começa. Portanto, a duração de um storyboard também pode depender do estado das variáveis que ele anima.
+A duração geral de um storyboard depende das durações das transições dentro do storyboard. A duração de uma transição não precisa ser corrigida; ele pode ser determinado pelo valor e pela velocidade das variáveis animadas quando a transição é iniciada. Portanto, a duração de um storyboard também pode depender do estado das variáveis que ele anima.
 
-Os exemplos a seguir pressupõem que um Gerenciador de animação, uma biblioteca de transição e um temporizador foram criados. Para obter mais informações, consulte [criar os objetos de animação principal](adding-animation-to-an-application.md). Os exemplos também pressupõem que o aplicativo criou três variáveis de animação (X, Y e Z) usando o método [**IUIAnimationManager:: CreateAnimationVariable**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-createanimationvariable) e cinco transições (T1, T2, T3, T4 e T5) usando um dos métodos da interface [**IUIAnimationTransitionLibrary**](/windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtransitionlibrary) .
+Os exemplos a seguir pressuem que um gerenciador de animação, uma biblioteca de transição e um temporizador foram criados. Para obter mais informações, consulte [Criar os objetos de animação principais](adding-animation-to-an-application.md). Os exemplos também pressupom que o aplicativo criou três variáveis de animação (X, Y e Z) usando o método [**IUIAnimationManager::CreateAnimationVariable**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-createanimationvariable) e cinco transições (T1, T2, T3, T4 e T5) usando um dos métodos da interface [**IUIAnimationTransitionLibrary.**](/windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtransitionlibrary)
 
 -   [Criando um storyboard simples](#building-a-simple-storyboard)
--   [Usando uma duração de Context-Sensitive](#using-a-context-sensitive-duration)
+-   [Usando uma duração Context-Sensitive dados](#using-a-context-sensitive-duration)
 -   [Criando um storyboard mais complexo](#building-a-more-complex-storyboard)
--   [Usando quadros-chave](#using-keyframes)
+-   [Usando keyframes](#using-keyframes)
 -   [Mantendo variáveis](#holding-variables)
 -   [Agendando um storyboard](#scheduling-a-storyboard)
 

@@ -4,12 +4,12 @@ description: Exemplos visuais de muitos elementos da interface do usuário abord
 ms.assetid: be99bf83-dcd7-44df-be0d-b1b17305a2d6
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 29cdbeb2b03ec373163bfbbce462038e0c3db681
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 2dc56707564115b612cc008d66697a2543191859
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "103930058"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444597"
 ---
 # <a name="visual-index"></a>Índice Visual
 
@@ -31,7 +31,7 @@ Esse índice é dividido nas seguintes seções:
 
 
 
-|                                                                                                                                                                             |
+|   &nbsp;  | 
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [balões](ctrl-balloons.md)<br/> ![captura de tela de balão que indica que Caps Lock está ativado ](images/visual-index-image1.png)<br/>                                   |
 | [caixas de seleção](ctrl-check-boxes.md)<br/> ![captura de tela de quatro caixas de seleção ](images/visual-index-image2.png)<br/>                                               |
@@ -64,7 +64,7 @@ Esse índice é dividido nas seguintes seções:
 
 
 
-|                                                                                                                                 |
+|     &nbsp;                                                                                                                              |
 |---------------------------------------------------------------------------------------------------------------------------------|
 | [completos](cmd-menus.md)<br/> ![captura de tela do menu exibir e seus submenus ](images/visual-index-image23.png)<br/> |
 | [barras](cmd-toolbars.md)<br/> ![captura de tela de uma barra de ferramentas ](images/visual-index-image24.png)<br/>                |
@@ -78,7 +78,7 @@ Esse índice é dividido nas seguintes seções:
 
 
 
-|                                                                                                                                                       |
+|            &nbsp;                                                                                                                                             |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [trabalhando em segundo plano](inter-mouse.md)<br/> ![captura de tela do ponteiro com formato de rosca com seta ](images/visual-index-image26.png)<br/> |
 | [carregado](inter-mouse.md)<br/> ![captura de tela do ponteiro moldado em forma de rosca ](images/visual-index-image27.png)<br/>                             |
@@ -92,7 +92,7 @@ Esse índice é dividido nas seguintes seções:
 
 
 
-|                                                                                                                                                 |
+|     &nbsp;                                                                                                                                              |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|
 | [caixas de diálogo](win-dialog-box.md)<br/> ![captura de tela da caixa de diálogo ajuda do Windows ](images/visual-index-image29.png)<br/>        |
 | [janelas de propriedades](win-property-win.md)<br/> ![captura de tela de uma nova janela de propriedades de pasta ](images/visual-index-image30.png)<br/> |
@@ -107,7 +107,7 @@ Esse índice é dividido nas seguintes seções:
 
 
 
-|                                                                                                                                                                 |
+|    &nbsp;                                                                                                                                                               |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [na](winenv-taskbar.md)<br/> ![captura de tela de uma barra de tarefas ](images/visual-index-image35.png)<br/>                                               |
 | [pontos de entrada de controle de conta de usuário](winenv-uac.md)<br/> ![captura de tela de ícones grandes de proteção de segurança pequenos](images/visual-index-image36.png)<br/> |
@@ -123,7 +123,7 @@ Esse índice é dividido nas seguintes seções:
 
 
 
-|                                                                                                                                                  |
+|         &nbsp;                                                                                                                                           |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|
 | [quadros de janela](win-window-frames.md)<br/> ![captura de tela de um quadro em uma janela do bloco de notas ](images/visual-index-image38.png)<br/> |
 | [TrueType](vis-fonts.md)<br/> ![captura de tela do alfabeto na fonte do sistema Windows ](images/visual-index-image39.png)<br/>             |

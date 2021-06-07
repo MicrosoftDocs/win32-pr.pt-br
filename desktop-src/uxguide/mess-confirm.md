@@ -1,103 +1,103 @@
 ---
 title: Confirmações
-description: Uma confirmação é uma caixa de diálogo modal que pergunta se o usuário deseja prosseguir com uma ação.
+description: Uma confirmação é uma caixa de diálogo modal que pergunta se o usuário deseja continuar com uma ação.
 ms.assetid: 086302cd-c8a1-479c-87be-580945e5d3e6
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: b979987daa4cf2c40308a0cda9c23b08b73f4795
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 321cab040423df3a6dc0069d568d66c85e3aa8cc
+ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104550336"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111524520"
 ---
 # <a name="confirmations"></a>Confirmações
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
 
-Uma confirmação é uma caixa de diálogo modal que pergunta se o usuário deseja prosseguir com uma ação.
+Uma confirmação é uma caixa de diálogo modal que pergunta se o usuário deseja continuar com uma ação.
 
-![Captura de tela que mostra um bloco de notas ' deseja salvar as alterações? ' .](images/mess-confirm-image1.png)
+![Captura de tela que mostra um bloco de notas "você deseja salvar alterações?". .](images/mess-confirm-image1.png)
 
 Uma confirmação típica.
 
-Confirmações têm estas características essenciais:
+As confirmações têm estas características essenciais:
 
 -   Eles são exibidos como o resultado direto de uma ação iniciada pelo usuário.
--   Eles verificam se o usuário deseja prosseguir com a ação.
+-   Eles verificam se o usuário deseja continuar com a ação.
 -   Eles consistem em uma pergunta simples e duas ou mais respostas.
 
-Confirmações são mais úteis quando a ação exige que o usuário faça uma escolha relevante e distinta que não possa ser feita posteriormente. Essa escolha geralmente envolve algum elemento de risco que não é óbvio para o usuário, mas o risco não é essencial para confirmações. Esses elementos são necessários para justificar a interrupção de resposta a uma caixa de diálogo modal.
+As confirmações são mais úteis quando a ação exige que o usuário faça uma escolha relevante e distinta que não pode ser feita posteriormente. Essa opção geralmente envolve algum elemento de risco que não é óbvio para o usuário, mas o risco não é essencial para confirmações. Esses elementos são necessários para justificar a interrupção da resposta a um diálogo modal.
 
-Por outro lado, [mensagens de aviso](mess-warn.md) apresentam uma condição que pode causar um problema no futuro. Sua característica fundamental é que eles envolvem risco:
+Por outro lado, [as mensagens de](mess-warn.md) aviso apresentam uma condição que pode causar um problema no futuro. Sua característica fundamental é que eles envolvem riscos:
 
--   Eles envolvem perda potencial de um ou mais dos seguintes itens:
+-   Eles envolvem uma possível perda de um ou mais dos seguintes:
     -   Um ativo valioso, como perda de dados ou perda financeira.
-    -   Integridade ou acesso do sistema.
+    -   Acesso ou integridade do sistema.
     -   Privacidade ou controle sobre informações confidenciais.
-    -   Tempo do usuário (um valor significativo, como 30 segundos ou mais).
--   Eles têm consequências inesperadas ou indesejadas.
--   Eles exigem o tratamento correto agora porque os erros não podem ser facilmente corrigidos e podem até mesmo ser irreversível.
+    -   Tempo do usuário (uma quantidade significativa, como 30 segundos ou mais).
+-   Eles têm consequências inesperadas ou não intencionais.
+-   Agora, eles exigem o tratamento correto porque os erros não podem ser facilmente corrigidos e podem até mesmo ser irreversíveis.
 
 Se uma confirmação envolver risco, ela também poderá ser considerada um aviso. Consequentemente, as diretrizes de mensagem de aviso também se aplicam.
 
-**Observação:** As diretrizes relacionadas a [caixas de diálogo](win-dialog-box.md), mensagens de [erro](mess-error.md), [layout](vis-layout.md)e [mensagens de aviso](mess-warn.md) são apresentadas em artigos separados.
+**Observação:** As diretrizes relacionadas às [caixas de diálogo](win-dialog-box.md), mensagens [de](mess-error.md)erro, [layout](vis-layout.md)e mensagens [de aviso](mess-warn.md) são apresentadas em artigos separados.
 
-## <a name="is-this-the-right-user-interface"></a>Esta é a interface do usuário correta?
+## <a name="is-this-the-right-user-interface"></a>Essa é a interface do usuário certa?
 
 Para decidir, considere estas perguntas:
 
--   **O usuário está sendo solicitado a fazer uma pergunta para continuar com uma ação que tenha duas ou mais respostas?** Caso contrário, a mensagem não será uma confirmação.
--   **A interface do usuário está apresentando um erro ou problema que ocorreu?** Nesse caso, use uma [mensagem de erro](mess-error.md) em vez disso.
--   **Prosseguir com a ação requer que o usuário faça uma escolha que não tenha um padrão adequado?** Nesse caso, uma confirmação pode ser apropriada.
--   **Há um design alternativo que elimina a necessidade da confirmação?** Às vezes, a necessidade de uma confirmação indica uma falha de design. Geralmente, há uma alternativa de design melhor que não precisa de uma confirmação.
--   **O usuário está prestes a executar uma ação arriscada?** Nesse caso, uma confirmação será apropriada se a ação tiver consequências significativas ou não puder ser facilmente desfeita.
--   **O usuário está prestes a abandonar uma tarefa?** Nesse caso, não confirme. Suponha que os usuários compreendam as consequências de não concluir uma tarefa.
--   **A ação tem consequências de que os usuários podem não estar cientes?** Nesse caso, uma confirmação pode ser apropriada.
--   **Considerando o contexto atual, os usuários provavelmente estão executando uma ação em caso de erro?** Nesse caso, uma confirmação pode ser apropriada.
--   **Os usuários executam a ação com frequência?** Nesse caso, considere um design alternativo. Confirmações frequentes são irritantes e têm pouco valor porque os usuários aprendem a responder sem pensar.
--   **A ação tem implicações de segurança?** Nesse caso, uma confirmação pode ser necessária mesmo se os testes anteriores indicarem o contrário.
+-   **O usuário está fazendo uma pergunta para prosseguir com uma ação que tem duas ou mais respostas?** Caso não seja, a mensagem não é uma confirmação.
+-   **A interface do usuário está apresentando um erro ou problema que ocorreu?** Em caso afirmado, use uma [mensagem de erro.](mess-error.md)
+-   **Continuar com a ação exige que o usuário faça uma escolha que não tenha um padrão adequado?** Em caso afirmaível, uma confirmação pode ser apropriada.
+-   **Há um design alternativo que elimina a necessidade da confirmação?** A necessidade de uma confirmação às vezes indica uma falha de design. Geralmente, há uma alternativa de design melhor que não precisa de uma confirmação.
+-   **O usuário está prestes a executar uma ação arriscada?** Em caso afirmativa, uma confirmação será apropriada se a ação tiver consequências significativas ou não puder ser facilmente desfeita.
+-   **O usuário está prestes a abandonar uma tarefa?** Se sim, não confirme. Suponha que os usuários compreendam as consequências de não concluir uma tarefa.
+-   **A ação tem consequências das quais os usuários podem não estar cientes?** Em caso afirmaível, uma confirmação pode ser apropriada.
+-   **Considerando o contexto atual, os usuários provavelmente estão executando uma ação com erro?** Em caso afirmaível, uma confirmação pode ser apropriada.
+-   **Os usuários executam a ação com frequência?** Se sim, considere um design alternativo. As confirmações frequentes são entediantes e têm pouco valor porque os usuários aprendem a responder sem pensar.
+-   **A ação tem implicações de segurança?** Em caso afirmativos, uma confirmação pode ser necessária mesmo que os testes anteriores indiquem o contrário.
 
 ## <a name="design-concepts"></a>Conceitos de design
 
-### <a name="unnecessary-confirmations-are-annoying"></a>Confirmações desnecessárias são irritantes
+### <a name="unnecessary-confirmations-are-annoying"></a>As confirmações desnecessárias são entediantes
 
-A primeira confirmação do Windows que nunca foi criada sem dúvida é parecida com esta:
+A primeira confirmação do Windows criada sem dúvida se parece com esta:
 
-![captura de tela de ' tem certeza? ' confirmação ](images/mess-confirm-image2.png)
+![captura de tela de 'você tem certeza?' confirmação ](images/mess-confirm-image2.png)
 
-A confirmação irritante original.
+A confirmação de confirmação de confirmação original.
 
-Isso foi um início muito inadequado. Se você quiser que os usuários detestem seu programa, apenas disparam confirmações assim por diante. Para entender o porquê, considere o ponto de vista do usuário. O usuário acabou de executar uma ação pela definição de uma confirmação, portanto, a menos que algo tenha sido clicado ou pressionado acidentalmente, é claro que o usuário deseja continuar.
+Esse foi um início muito ruim. Se você quiser que os usuários odiam seu programa, basta confirmar confirmações como esta. Para entender o motivo, considere o ponto de vista do usuário. O usuário acabou de pedir para executar uma ação pela definição de uma confirmação para que, a menos que algo tenha sido de alguma forma clicado ou pressionado acidentalmente, é claro que o usuário deseja continuar.
 
-Não apenas as confirmações desnecessárias são irritantes, mas elas não são eficazes na proteção do usuário contra erros. Os usuários detectam rapidamente quando um programa tem confirmações desnecessárias e sua resposta natural é descartá-los o mais rápido possível, geralmente sem ler. Consequentemente, essas confirmações fazem pouco mais do que adicionar uma etapa extra a essas tarefas.
+Não apenas as confirmações desnecessárias são entediantes, mas não são eficazes na proteção do usuário contra erros. Os usuários descobrem rapidamente quando um programa tem confirmações desnecessárias e sua resposta natural é descartá-las o mais rápido possível, geralmente sem ler. Consequentemente, essas confirmações fazem pouco mais do que adicionar uma etapa extra a essas tarefas.
 
-Não use confirmações apenas porque há a possibilidade de que os usuários cometam um erro. **Em vez disso, as confirmações são mais eficientes quando usadas para confirmar ações que têm consequências significativas ou indesejadas.** Boas confirmações nunca declaram o óbvio; Eles devem comunicar algo que os usuários precisam estar cientes de um bom motivo para não continuar. E eles são usados apenas quando são realmente necessários para uma ação, como solicitar que os usuários salvem as alterações somente quando houver alterações que valem a pena ser salvas. Fazer isso exige a atenção do usuário apenas quando ele é realmente garantido.
+Não use confirmações apenas porque há a possibilidade de os usuários cometerem um erro. **Em vez disso, as confirmações são mais eficazes quando usadas para confirmar ações que têm consequências significativas ou não intencionais.** Boas confirmações nunca são o óbvio; eles devem comunicar algo que os usuários precisam estar cientes de um bom motivo para não continuar. E eles são usados somente quando são realmente necessários por uma ação, como pedir que os usuários salvem as alterações somente quando houver alterações que vale a pena salvar. Isso exige a atenção do usuário somente quando ele realmente é assegurado.
 
-Para outros tipos de confirmações, muitas vezes há uma alternativa de design melhor do que forçar os usuários a responder uma pergunta.
+Para outros tipos de confirmações, geralmente há uma alternativa de design melhor do que forçar os usuários a responder a uma pergunta.
 
 ### <a name="consider-the-design-alternatives"></a>Considere as alternativas de design
 
-Aqui estão algumas alternativas de design que eliminam a necessidade de confirmações rotineiras:
+Aqui estão algumas alternativas de design que eliminam a necessidade de confirmações de rotina:
 
--   **Evitar erros.** Crie tarefas para que erros significativos sejam difíceis de fazer acidentalmente. Por exemplo, separe fisicamente os comandos destrutivos de outros comandos e exija que várias ações sejam concluídas.
--   **Fornecer desfazer.** Forneça a capacidade de reverter ações. Por exemplo, a exclusão de um arquivo no Microsoft Windows geralmente não exige uma confirmação porque os arquivos excluídos podem ser recuperados da lixeira. Observe que, se uma ação for muito fácil de executar, apenas fazer com que os usuários refaça a ação pode ser suficiente.
--   **Forneça comentários.** Torne os resultados indesejáveis óbvios. Fornecer somente desfazer não será suficiente se os usuários não perceberem quando cometerem um erro. Por exemplo, o efeito da manipulação direta (como uma operação de arrastar e soltar) sempre deve ser óbvio.
--   **Suponha o resultado provável, mas facilite a alteração.** Se você não tiver certeza do que os usuários desejam, mas houver uma opção provável, segura e segura, assuma essa opção, deixe claro o que aconteceu e facilite a alteração usando um menu de contexto. Por exemplo, o Microsoft Word pressupõe que os usuários desejam soletrar palavras corretamente. Se ele reconhecer uma palavra incorreta e souber a grafia provável correta, o Word fará a correção automaticamente, mas permitirá que os usuários revertam.
--   **Elimine a escolha completamente.** Se a escolha não for importante, os usuários simplesmente não se importarão. Melhor para [simplificar](/previous-versions//dn742474(v=vs.85)) seu programa e eliminar a escolha.
+-   **Evitar erros.** Projete tarefas para que erros significativos sejam difíceis de fazer acidentalmente. Por exemplo, separe comandos destrutivas fisicamente de outros comandos e exigirá a conclusão de várias ações.
+-   **Forneça desfazer.** Forneça a capacidade de reverter ações. Por exemplo, a exclusão de um arquivo no Microsoft Windows geralmente não requer uma confirmação porque os arquivos excluídos podem ser recuperados do Lixeira. Observe que, se uma ação for muito fácil de executar, apenas fazer com que os usuários refeitom a ação pode ser suficiente.
+-   **Forneça comentários.** Tornar resultados indesejáveis óbvios. Fornecer desfazer sozinho não será suficiente se os usuários não perceberem quando cometerem um erro. Por exemplo, o efeito da manipulação direta (como uma operação do tipo "arrastar e soltar" sempre deve ser óbvio.
+-   **Suponha o resultado provável, mas facilmente altere.** Se você não tiver certeza do que os usuários querem, mas houver uma opção provável, segura e segura, suponha essa opção, deixe claro o que aconteceu e facilmente altere usando um menu de contexto. Por exemplo, o Microsoft Word presume que os usuários querem ort ortá-lo corretamente. Se ele reconhecer uma palavra com ortografia incorretamente e souber a ortografia provavelmente correta, o Word fará a correção automaticamente, mas permitirá que os usuários revertem.
+-   **Elimine completamente a escolha.** Se a escolha não for importante, os usuários não se importarão. Melhor simplificar [seu](/previous-versions//dn742474(v=vs.85)) programa e eliminar a escolha.
 
-### <a name="make-confirmations-require-thought"></a>Fazer confirmações exigem pensamento
+### <a name="make-confirmations-require-thought"></a>Fazer confirmações exigirem um pensamento
 
-Para que uma confirmação tenha valor, os usuários precisam entender o motivo para não continuar. Às vezes, o motivo é óbvio, quando os usuários estão fechando um documento com alterações que não foram salvas:
+Para que uma confirmação tenha valor, os usuários precisam entender o motivo para não continuar. Às vezes, o motivo é óbvio, como quando os usuários estão fechando um documento com alterações que não foram salvas:
 
-![Captura de tela que mostra uma pintura ' deseja salvar as alterações? ' .](images/mess-confirm-image3.png)
+![Captura de tela que mostra uma pintura "Você deseja salvar as alterações?". .](images/mess-confirm-image3.png)
 
 Neste exemplo, o motivo da confirmação é óbvio.
 
 Em outras situações, o motivo pode não ser tão óbvio.
 
-Ao escolher os rótulos do botão confirmar para caixas de diálogo, as [diretrizes gerais](win-dialog-box.md) são escolher rótulos que são respostas específicas para a instrução principal. Isso leva a uma tomada de decisão eficiente, pois os usuários precisam ler uma quantidade mínima de texto para continuar. No entanto, essa meta de eficiência pode ser contratada para confirmações. Considere este exemplo:
+Ao escolher rótulos de botão de confirmação para caixas de diálogo, as diretrizes gerais são escolher [rótulos](win-dialog-box.md) que são respostas específicas para a instrução principal. Isso leva a uma tomada de decisão eficiente, pois os usuários precisam ler uma quantidade mínima de texto para continuar. No entanto, essa meta de eficiência pode ser contratada para confirmações. Considere este exemplo:
 
 **Incorreto:**
 
@@ -186,14 +186,14 @@ Confirmações têm vários padrões de uso:
 
 
 
-|                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|   Uso                                                                                                                                                                    |    Exemplo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Confirmações rotineiras**<br/> Confirme se o usuário deseja prosseguir com uma ação de rotina e baixo risco. <br/>                                              | Essas confirmações geralmente são frases "tem certeza...?" e, com frequência, uma caixa de seleção não mostrar esta mensagem novamente para minimizar o aborrecimento. <br/> ![captura de tela de ' mover pasta para a Lixeira? ' ](images/mess-confirm-image11.png)<br/> ![captura de tela de ' não mostrar mensagem novamente ' ](images/mess-confirm-image12.png)<br/> Exemplos de confirmações rotineiras.<br/> **Observação:** Esse padrão geralmente é desnecessário e deve ser evitado.<br/>                                                                                                                                                                                                                                                                                        |
 | **Confirmações de ações arriscadas**<br/> Confirme se o usuário deseja prosseguir com uma ação que tenha algum risco e não possa ser facilmente desfeito. <br/>            | Como eles têm risco, essas confirmações geralmente têm um ícone de aviso. <br/> ![Captura de tela que mostra um exemplo de confirmação de formatação de volume.](images/mess-confirm-image13.png)<br/> ![Captura de tela que mostra um exemplo de confirmação de exclusão permanente.](images/mess-confirm-image14.png)<br/> Exemplos de confirmações de ações arriscadas.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **Confirmações de conseqüência não intencional**<br/> Confirme se o usuário deseja prosseguir com uma ação que tenha consequências inesperadas ou indesejadas. <br/> | Além de fazer uma pergunta, essas confirmações destacam as consequências indesejadas. como elas têm consequências indesejadas, essas confirmações geralmente têm um ícone de aviso. <br/> ![captura de tela de ' fechar todas as guias? ' Confirme ](images/mess-confirm-image15.png)<br/> ![captura de tela de ' cancelar instalação? ' Confirme ](images/mess-confirm-image16.png)<br/> exemplos de confirmações de conseqüência não intencional.<br/> no entanto, esse padrão requer que as consequências não sejam realmente intencionais. <br/> **incorreto**<br/> ![captura de tela de ' desativar agente de chaves? ' Confirme ](images/mess-confirm-image17.png)<br/> As consequências são destinadas aqui, portanto, essa é uma confirmação de rotina.<br/> |
-| **Esclarecimentos**<br/> esclareça como o usuário deseja prosseguir com uma ação que tenha consequências potencialmente ambíguas ou inesperadas. <br/>             | As operações de arrastar e soltar podem resultar em esclarecimentos se o efeito da operação puder ser interpretado incorretamente. <br/> ![captura de tela de ' alterar apenas esta ocorrência? '](images/mess-confirm-image18.png)<br/> ![captura de tela de ' sempre salvar ao sair? ' Confirme ](images/mess-confirm-image19.png)<br/> Exemplos de esclarecimentos.<br/> **Observação:** Esse padrão deve ser evitado porque é melhor criar ações sem consequências ambíguas e assumir o resultado desejado mais provável. <br/>                                                                                                                                                                                                                                     |
-| **Confirmações de segurança**<br/> Confirme se o usuário deseja continuar com uma ação com consequências de segurança. <br/>                                   | ![captura de tela de ' deseja executar este software? ' ](images/mess-confirm-image20.png)<br/> ![captura de tela de ' lembrar senha? ' confirmação ](images/mess-confirm-image21.png)<br/> Exemplos de confirmações de segurança.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| **Confirmações do ulterior motivação**<br/> forneça informações sobre uma ação, mas apresente-as como uma confirmação. <br/>                                       | Embora essas caixas de diálogo sejam apresentadas como confirmações, sua verdadeira meta é a educação do usuário ou o anúncio dos recursos. <br/> ![captura de tela de deseja esta barra de ferramentas na barra de tarefas? ](images/mess-confirm-image22.png)<br/> Um exemplo de uma confirmação da motivação de ulterior.<br/> **Observação:** Esse padrão não é recomendado porque geralmente há uma alternativa melhor e mais direta. Por exemplo, as [animações](vis-animations.md) são uma maneira melhor de mostrar a relação entre causa e efeito. <br/>                                                                                                                                                                                                                                     |
+| **Confirmações de conseqüência não intencional**<br/> Confirme se o usuário deseja prosseguir com uma ação que tenha consequências inesperadas ou indesejadas. <br/> | Além de fazer uma pergunta, essas confirmações destacam as consequências indesejadas. como elas têm consequências indesejadas, essas confirmações geralmente têm um ícone de aviso. <br/> ![captura de tela de ' fechar todas as guias? ' Confirme ](images/mess-confirm-image15.png)<br/> ![captura de tela de ' cancelar instalação? ' Confirme ](images/mess-confirm-image16.png)<br/> exemplos de confirmações de conseqüência não intencional.<br/> no entanto, esse padrão requer que as consequências não sejam realmente intencionais. <br/> **incorreto**<br/> ![captura de tela de ' desativar agente de chaves? ' Confirmação ](images/mess-confirm-image17.png)<br/> As consequências são destinadas aqui, portanto, essa é uma confirmação de rotina.<br/> |
+| **Esclarecimentos**<br/> esclarecer como o usuário deseja prosseguir com uma ação que tem consequências potencialmente ambíguas ou inesperadas. <br/>             | Operações do tipo "arrastar e soltar" poderão resultar em esclarecimentos se o efeito da operação puder ser interpretado ininterruptamente. <br/> ![captura de tela de 'alterar apenas esta ocorrência?'](images/mess-confirm-image18.png)<br/> ![captura de tela de 'sempre salvar na saída?' Confirmação ](images/mess-confirm-image19.png)<br/> Exemplos de esclarecimentos.<br/> **Observação:** Esse padrão deve ser evitado porque é melhor projetar ações sem consequências ambíguas e assumir o resultado desejado mais provável. <br/>                                                                                                                                                                                                                                     |
+| **Confirmações de segurança**<br/> confirme se o usuário deseja prosseguir com uma ação com consequências de segurança. <br/>                                   | ![captura de tela de 'você deseja executar este software?' ](images/mess-confirm-image20.png)<br/> ![captura de tela de 'lembrar senha?' confirmação ](images/mess-confirm-image21.png)<br/> Exemplos de confirmações de segurança.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Confirmações de motivo ulterior**<br/> forneça informações sobre uma ação, mas apresente-a como uma confirmação. <br/>                                       | Embora essas caixas de diálogo sejam apresentadas como confirmações, sua meta real é a educação do usuário ou anúncio de recursos. <br/> ![captura de tela de deseja esta barra de ferramentas na barra de tarefas? ](images/mess-confirm-image22.png)<br/> Um exemplo de confirmação de motivo ulterior.<br/> **Observação:** Esse padrão não é recomendado porque geralmente há uma alternativa melhor e mais direta. Por exemplo, [animações](vis-animations.md) são uma maneira melhor de mostrar a relação entre a causa e o efeito. <br/>                                                                                                                                                                                                                                     |
 
 
 
@@ -203,94 +203,94 @@ Confirmações têm vários padrões de uso:
 
 ### <a name="general"></a>Geral
 
--   **Use confirmações "salvar alterações" somente quando houver alterações significativas.** Não confirme as alterações que não foram feitas diretamente pelo usuário, como reformatação automática de documentos.
+-   **Use as confirmações "Salvar alterações" somente quando houver alterações significativas.** Não confirme as alterações que não foram feitas diretamente pelo usuário, como a reformatação automática de documentos.
 
 **Incorreto:**
 
-![Captura de tela que mostra um Microsoft Office Outlook ' deseja salvar as alterações? ' .](images/mess-confirm-image23.png)
+![Captura de tela que mostra Microsoft Office outlook "você deseja salvar alterações?". .](images/mess-confirm-image23.png)
 
-Este exemplo está incorreto quando usado para um email ou documento vazio que não foi alterado pelo usuário.
+Este exemplo está incorreto quando usado para um email vazio ou documento que não foi alterado pelo usuário.
 
 ### <a name="icons"></a>Ícones
 
--   Confirmações não usam ícones da barra de título.
--   **O ícone da área de conteúdo para uma confirmação é baseado em seu padrão de design:**
+-   As confirmações não usam ícones de barra de título.
+-   **O ícone de área de conteúdo para uma confirmação baseia-se em seu padrão de design:**
 
 
 
     | Padrão                                                | ícone                                                                                                                                             |
     |--------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-    | Confirmações rotineiras <br/>                | Nenhum ícone. <br/>                                                                                                                         |
-    | Confirmações de ações arriscadas <br/>           | Ícone de aviso. <br/>                                                                                                                    |
-    | Confirmações de conseqüência não intencional <br/> | Use um ícone de aviso se houver risco, o ícone de recurso, se disponível; caso contrário, nenhum ícone. <br/>                                          |
+    | Confirmações de rotina <br/>                | Nenhum ícone. <br/>                                                                                                                         |
+    | Confirmações de ação arriscada <br/>           | Ícone de aviso. <br/>                                                                                                                    |
+    | Confirmações de consequência não intencionais <br/> | Use um ícone de aviso se houver risco, o ícone de recurso, se disponível; caso contrário, nenhum ícone. <br/>                                          |
     | Esclarecimentos <br/>                       | Se a confirmação envolver um documento, use a miniatura do documento; caso contrário, use o ícone de recurso, se disponível, ou nenhum ícone. <br/> |
     | Confirmações de segurança <br/>               | Ícone de aviso. <br/>                                                                                                                    |
-    | Confirmações do ulterior motivação <br/>        | Nenhum ícone. <br/>                                                                                                                         |
+    | Confirmações de motivo ulterior <br/>        | Nenhum ícone. <br/>                                                                                                                         |
 
 
 
  
 
--   **Não use ícones de aviso para perguntas rotineiras.** Fazer isso é um contador para o [Tom incentivado do Windows](text-style-tone.md) e faz com que o seu programa se sinta como uma atividade perigosa. Suponha que os usuários compreendam as consequências de cancelar uma tarefa antes que ela seja concluída.
+-   **Não use ícones de aviso para perguntas de rotina.** Isso é um contador para o tom [incentivador do Windows e](text-style-tone.md) faz com que o uso do programa se sinta como uma atividade perigosa. Suponha que os usuários compreendam as consequências de cancelar uma tarefa antes de ela ser concluída.
 
 **Incorreto:**
 
-![captura de tela de ' deseja encerrar o tutorial? ' ](images/mess-confirm-image24.png)
+![captura de tela de 'você deseja encerrar o tutorial?' ](images/mess-confirm-image24.png)
 
-Neste exemplo, um ícone de aviso é usado para fazer uma pergunta rotineira.
+Neste exemplo, um ícone de aviso é usado para fazer uma pergunta de rotina.
 
-### <a name="commit-buttons"></a>Botões de confirmação
+### <a name="commit-buttons"></a>Botões de commit
 
--   **Use respostas específicas para a instrução principal se o motivo da confirmação for óbvio ou se puder se tornar auto-explicativo.**
+-   **Use respostas específicas para a instrução principal se o motivo da confirmação for óbvio ou se puder ser autoexplicativo.**
 
-![captura de tela de ' deseja salvar as alterações? ' ](images/mess-confirm-image25.png)
+![captura de tela de 'você deseja salvar as alterações?' ](images/mess-confirm-image25.png)
 
-Neste exemplo, o motivo da confirmação é óbvio, portanto, salve e não salve bem o trabalho.
+Neste exemplo, o motivo da confirmação é óbvio, portanto, Salvar e Não salvar trabalho bem.
 
--   **Caso contrário, use os botões Sim e não para respostas de confirmação.** Isso faz com que os usuários consigam pensar na confirmação antes de responder. Nunca use OK e cancele para confirmações.
+-   **Caso contrário, use os botões Sim e Não para respostas de confirmação.** Isso faz com que os usuários deem à confirmação alguma ideia antes de responder. Nunca use OK e Cancelar para confirmações.
 
 **Correto:**
 
-![captura de tela de ' deseja desinstalar arquivos de suporte? ' ](images/mess-confirm-image26.png)
+![captura de tela de 'deseja desinstalar arquivos de suporte?' ](images/mess-confirm-image26.png)
 
-Neste exemplo, o uso de botões Sim/não confirmar força os usuários a, pelo menos, ler a instrução principal.
+Neste exemplo, usar botões de confirmação Sim/Não força os usuários a lerem pelo menos a instrução principal.
 
 **Incorreto:**
 
-![captura de tela de ' cancelar sua reserva? ' ](images/mess-confirm-image27.png)
+![captura de tela de 'cancelar sua reserva?' ](images/mess-confirm-image27.png)
 
-Neste exemplo, usar OK/cancelar é confuso.
+Neste exemplo, usar OK/Cancelar é confuso.
 
--   **Para fechar um programa ou reiniciar o Windows, use respostas específicas para a instrução principal.** Para evitar qualquer mal-entendido, não use fechar ou sim/não para essa finalidade.
+-   **Para fechar um programa ou reiniciar o Windows, use respostas específicas para a instrução principal.** Para evitar qualquer confusão, não use Fechar ou Sim/Não para essa finalidade.
 
 **Correto:**
 
-![captura de tela do botão reiniciar o Windows agora](images/mess-confirm-image28.png)
+![captura de tela do botão reiniciar janelas agora](images/mess-confirm-image28.png)
 
 **Incorreto:**
 
-![captura de tela do botão Sim](images/mess-confirm-image29.png)
+![captura de tela do botão sim](images/mess-confirm-image29.png)
 
-No exemplo incorreto, sim é usado para reiniciar o Windows.
+No exemplo incorreto, Sim é usado para reiniciar o Windows.
 
 ### <a name="command-links"></a>Links de comando
 
--   **Para o padrão de esclarecimentos, considere o uso de links de comando para tornar as alternativas claras.**
+-   **Para o padrão de esclarecimentos, considere usar links de comando para deixar as alternativas claras.**
 
 **Aceitável:**
 
-![captura de tela de ' alterar uma ou todas as ocorrências? ' ](images/mess-confirm-image30.png)
+![captura de tela de 'alterar uma ou todas as ocorrências?' ](images/mess-confirm-image30.png)
 
 **Melhor:**
 
 ![captura de tela da mesma pergunta usando links de comando ](images/mess-confirm-image31.png)
 
-No exemplo melhor, os links de comando tornam as alternativas desclaradas.
+No melhor exemplo, os links de comando limpam as alternativas.
 
--   **Apresente os links de comando mais comumente usados primeiro.** A ordem resultante deve seguir aproximadamente a probabilidade de uso, mas também ter um fluxo lógico.
--   Se um link de comando exigir mais explicações, **forneça uma explicação suplementar.** Explicações suplementares descrevem por que os usuários talvez queiram escolher a opção ou o que acontece se a opção for escolhida.
+-   **Apresente os links de comando mais usados primeiro.** A ordem resultante deve seguir aproximadamente a probabilidade de uso, mas também ter um fluxo lógico.
+-   Se um link de comando exigir mais explicações, **forneça uma explicação complementar.** Explicações complementares descrevem por que os usuários podem querer escolher a opção ou o que acontece se a opção for escolhida.
 
-Para obter mais diretrizes e exemplos, consulte [links de comando](ctrl-command-links.md).
+Para obter mais diretrizes e exemplos, consulte [Links de comando.](ctrl-command-links.md)
 
 ### <a name="default-values"></a>Valores padrão
 
@@ -300,9 +300,9 @@ Para obter mais diretrizes e exemplos, consulte [links de comando](ctrl-command-
 
     | Padrão                                                 | Resposta padrão                                                                                |
     |--------------------------------------------------|---------------------------------------------------------------------------------|
-    | Confirmações rotineiras <br/>                | Dar. <br/>                                                            |
-    | Confirmações de ações arriscadas <br/>           | Não prossiga (ou a opção segura). <br/>                                 |
-    | Confirmações de conseqüência não intencional <br/> | Se as consequências forem significativas, não continue; caso contrário, continue. <br/> |
+    | Confirmações de rotina <br/>                | Prosseguir. <br/>                                                            |
+    | Confirmações de ação arriscada <br/>           | Não continue (ou a escolha segura). <br/>                                 |
+    | Confirmações de consequência não intencionais <br/> | Se as consequências são significativas, não prossiga; caso contrário, prossiga. <br/> |
     | Esclarecimentos <br/>                       | A resposta mais provável. <br/>                                           |
     | Confirmações de segurança <br/>               | Não continue. <br/>                                                      |
     | Confirmações do ulterior motivação <br/>        | Dar. <br/>                                                            |
@@ -356,7 +356,7 @@ Para obter diretrizes de rotulamento, consulte [divulgação progressiva](ctrl-p
 -   **Não use a interface do usuário de elevação do controle de conta de usuários (UAC) como um substituto para uma confirmação.** Se uma ação precisar de uma confirmação, use uma caixa de diálogo separada. Durante a [interface do usuário de elevação](winenv-uac.md), os usuários precisam se concentrar em se eles começaram a tarefa e se o programa é confiável.
 -   **Exiba a confirmação antes da interface do usuário de elevação.** Isso elimina elevações desnecessárias.
 
-## <a name="text"></a>Texto
+## <a name="text"></a>Text
 
 ### <a name="general"></a>Geral
 
@@ -459,14 +459,14 @@ Neste exemplo, "permanentemente" indica que a ação não pode ser desfeita.
     </tr>
     <tr class="odd">
     <td>Todos os outros <br/></td>
-    <td>Explique quaisquer motivos não óbvios pelos quais o usuário talvez não queira continuar. Tais motivos incluem: <br/>
+    <td>Explique os motivos não óbvios pelos quais o usuário talvez não queira continuar. Esses motivos incluem: <br/>
     <ul>
-    <li>Possível perda de um ou mais dos seguintes itens: <ul>
+    <li>Possível perda de um ou mais dos seguintes: <ul>
     <li>Um ativo valioso, como perda de dados ou perda financeira.</li>
-    <li>Integridade ou acesso do sistema.</li>
+    <li>Acesso ou integridade do sistema.</li>
     <li>Privacidade ou controle sobre informações confidenciais.</li>
     </ul></li>
-    <li>Ações que são irreversíveis.</li>
+    <li>Ações irreversíveis.</li>
     </ul></td>
     </tr>
     </tbody>
@@ -476,18 +476,18 @@ Neste exemplo, "permanentemente" indica que a ação não pode ser desfeita.
 
      
 
--   **Não repita a instrução principal com uma palavra ligeiramente diferente.** Em vez disso, omita a instrução complementar se não houver mais a adicionar.
--   **Para confirmações de conseqüência não intencional, considere usar o termo de qualquer forma para indicar de forma concisa que há um motivo para não continuar** caso o usuário tenha ignorado a instrução principal. Consulte conceitos de design para obter mais informações.
--   Use frases completas, maiúsculas e minúsculas no estilo da frase e pontuação final.
+-   **Não repita a instrução principal com um texto ligeiramente diferente.** Em vez disso, omita a instrução complementar se não houver mais a adicionar.
+-   **Para confirmações de** consequência não intencionais, considere usar o termo de qualquer forma para indicar concisamente que há um motivo para não continuar caso o usuário tenha ignorado a instrução principal. Confira Conceitos de design para obter mais informações.
+-   Use frases completas, capitalização de estilo de frase e pontuação final.
 
 ## <a name="documentation"></a>Documentação
 
 Ao fazer referência a confirmações:
 
 -   Consulte uma confirmação por seu título se o título for específico para a confirmação (ou seja, não o nome do programa); caso contrário, consulte-o por sua instrução principal.
--   Se necessário, você pode se referir a uma caixa de diálogo de confirmação como uma mensagem.
+-   Se necessário, você pode consultar uma caixa de diálogo de confirmação como uma mensagem.
 -   Use o texto exato, incluindo sua capitalização.
--   Quando possível, formate o texto usando negrito. Caso contrário, coloque o texto entre aspas somente se necessário para evitar confusão.
+-   Quando possível, forja o texto usando negrito. Caso contrário, coloque o texto entre aspas somente se necessário para evitar confusão.
 
-Exemplo: na mensagem **Copiar arquivo** , clique no arquivo mais recente.
+Exemplo: na mensagem **Copiar Arquivo,** clique no arquivo mais recente.
 

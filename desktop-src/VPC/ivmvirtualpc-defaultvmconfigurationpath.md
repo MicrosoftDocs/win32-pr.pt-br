@@ -18,12 +18,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e13fc2323cb15bdbeb8c42e61810a376e49b3988
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 09f6370dfb868ec386e05f361240a74412f13a7d
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644957"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111387632"
 ---
 # <a name="ivmvirtualpcdefaultvmconfigurationpath-property"></a>IVMVirtualPC: Propriedade efaultVMConfigurationPath de:D
 
@@ -33,7 +33,7 @@ Recupera e define o diretório padrão a ser procurado por arquivos de configura
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -50,7 +50,7 @@ HRESULT get_DefaultVMConfigurationPath(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Especifica o caminho do diretório para os arquivos de configuração padrão da máquina virtual. Na cadeia de caracteres de caminho, uma barra invertida ( \) pode aparecer imediatamente antes do caractere nulo de terminação.
+Especifica o caminho do diretório para os arquivos de configuração padrão da máquina virtual. Na cadeia de caracteres de caminho, uma barra invertida ( \\ ) pode aparecer imediatamente antes do caractere nulo de terminação.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
@@ -84,7 +84,7 @@ Por padrão, esse valor de propriedade é definido como o seguinte diretório: "
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
 | Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
 | IID<br/>                      | IID \_ IVMVirtualPC é definido como 236ba0d9-a24a-4292-a132-27c1421dfd01<br/>               |
 
 

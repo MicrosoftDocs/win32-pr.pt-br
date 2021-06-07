@@ -1,33 +1,33 @@
 ---
 title: Links de comando
-description: Com os links de comando, os usuários selecionam uma única resposta a uma instrução principal e, ao fazer isso, passam para a próxima etapa em uma tarefa.
+description: Com links de comando, os usuários selecionam uma única resposta para uma instrução principal e, fazendo isso, vá para a próxima etapa em uma tarefa.
 ms.assetid: a77819b1-9a32-4468-94fb-3f73a469fb81
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 29031b4456950db6ceff30d75b354dece92c5897
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: b579f554d46d48fd7e373d28df516ae1c0baca6a
+ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "103663752"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111524270"
 ---
 # <a name="command-links"></a>Links de comando
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
 
-Com os links de comando, os usuários selecionam uma única resposta a uma instrução principal e, ao fazer isso, passam para a próxima etapa em uma tarefa.
+Com links de comando, os usuários selecionam uma única resposta para uma instrução principal e, fazendo isso, vá para a próxima etapa em uma tarefa.
 
-Os links de comando têm uma aparência limpa e leve que permite rótulos descritivos e são exibidos com uma seta padrão ou um ícone personalizado e uma explicação suplementar opcional.
+Os links de comando têm uma aparência limpa e leve que permite rótulos descritivos e são exibidos com uma seta padrão ou um ícone personalizado e uma explicação complementar opcional.
 
 ![captura de tela de uma caixa de diálogo típica de link de comando ](images/ctrl-command-links-image1.png)
 
 Um conjunto típico de links de comando.
 
-Os links de comando são semelhantes aos [botões de opção](ctrl-radio-buttons.md) em que são usados para selecionar um conjunto de opções relacionadas mutuamente exclusivas. Como botões de opção, os links de comando são sempre apresentados em conjuntos, nunca individualmente. Na aparência, os links de comando têm a aparência leve semelhante a [links](ctrl-links.md)regulares, sem um quadro ou outra maneira forte [de clique.](glossary.md) Os links de comando também são semelhantes aos [botões de comando](ctrl-command-buttons.md), pois podem ser o "botão de comando" padrão e podem ter uma chave de acesso atribuída. Como [botões de confirmação](glossary.md), ao clicar, eles fecham a janela (para caixas de diálogo) ou avança para a próxima página (para fluxos de páginas e assistentes).
+Os links de comando são [semelhantes](ctrl-radio-buttons.md) aos botões de opção, já que eles são usados para selecionar de um conjunto de opções mutuamente exclusivas e relacionadas. Assim como os botões de rádio, os links de comando sempre são apresentados em conjuntos, nunca individualmente. Na aparência, os links de comando têm a aparência leve semelhante aos [links regulares,](ctrl-links.md)sem um quadro ou outra aparência de clique [forte.](glossary.md) Os links de comando também são [semelhantes](ctrl-command-buttons.md)aos botões de comando , pois eles podem ser o "botão de comando" padrão e podem ter uma chave de acesso atribuída. Assim [como os botões de](glossary.md)confirmação , ao clicar, eles fecham a janela (para caixas de diálogo) ou avançam para a próxima página (para fluxos de assistentes e páginas).
 
 > [!Note]  
-> As diretrizes relacionadas a [links](ctrl-links.md) e [layout](vis-layout.md) são apresentadas em artigos separados.
+> Diretrizes relacionadas [a links](ctrl-links.md) [e layout](vis-layout.md) são apresentadas em artigos separados.
 
  
 
@@ -35,38 +35,38 @@ Os links de comando são semelhantes aos [botões de opção](ctrl-radio-buttons
 
 Para decidir, considere estas perguntas:
 
--   **As opções são respostas para a instrução principal e estão relacionadas ao objetivo principal da janela ou da página?** Os usuários devem responder a eles para fazer algo além de simplesmente navegar para uma página diferente? Caso contrário, use outro controle, como botões de comando ou links. Links de comando não são apropriados para opções secundárias ou opcionais, ou navegação pura.
+-   **As opções são respostas à instrução principal e relacionadas à finalidade principal da janela ou da página?** Os usuários devem responder a eles para fazer algo diferente de apenas navegar para uma página diferente? Caso não, use outro controle, como botões de comando ou links. Links de comando não são apropriados para opções secundárias ou opcionais ou navegação pura.
 
-    ![captura de tela de um item de painel de controle personalizado ](images/ctrl-command-links-image2.png)
+    ![captura de tela de um item do painel de controle de personalização ](images/ctrl-command-links-image2.png)
 
-    Enquanto o item do painel de controle de personalização é parecido com o uso de links de comando, as opções são links regulares porque essa [página de Hub](winenv-ctrl-panels.md) é para navegação pura.
+    Embora o item Painel de Controle personalização pareça estar usando links de comando, as opções são links regulares, pois essa página do [hub](winenv-ctrl-panels.md) é para navegação pura.
 
 -   **O controle é usado para escolher uma resposta de um conjunto de respostas mutuamente exclusivas?** Se não, use outro controle. Para permitir que os usuários escolham comandos individuais, use botões de comando ou links.
--   **Para caixas de diálogo, clicar no controle fecha a janela?** Caso contrário, use um controle que não exija o fechamento da janela, como botões de opção, botões de comando ou links.
+-   **Para caixas de diálogo, clicar no controle fecha a janela?** Caso não, use um controle que não exige o fechamento da janela, como botões de rádio, botões de comando ou links.
 
     **Incorreto:**
 
-    ![captura de tela da caixa de diálogo Configurações de firewall com guias ](images/ctrl-command-links-image3.png)
+    ![captura de tela da caixa de diálogo configurações de firewall com guias ](images/ctrl-command-links-image3.png)
 
-    Os links de comando não podem ser usados em janelas de propriedades ou em caixas de diálogo com guias porque clicar no controle fecha a janela.
+    Links de comando não podem ser usados em janelas de propriedades ou caixas de diálogo com guias porque clicar no controle fecha a janela.
 
--   **Para assistentes e fluxos de página, você clica em avançar para a próxima página sem compromisso?** Não use links de comando para confirmar uma tarefa; em vez disso, use os botões de confirmação. Como links de comando parecem links e os usuários associam links a navegação em um fluxo de página, os links não são apropriados para [páginas de confirmação](glossary.md) porque os usuários sempre devem ser capazes de fazer backup.
--   **Para assistentes e fluxos de página, existem outras páginas usando links de comando?** Nesse caso, e todos os outros fatores são iguais, prefira links de comando para consistência entre páginas.
--   **É o número de respostas entre dois e cinco?** Nunca deve haver um único link de comando. Como os links de comando são controles grandes e o espaço da tela usado é proporcional ao número de opções, mantenha o número de respostas para cinco ou menos. Para seis ou mais opções, use botões de opção, links comuns ou uma [exibição de lista](ctrl-list-views.md)de seleção única.
+-   **Para assistentes e fluxos de página, o clique avança para a próxima página sem compromisso?** Não use links de comando para fazer commit de uma tarefa; em vez disso, use botões de commit. Como os links de comando se parecem com links e os usuários [](glossary.md) associam links à navegação dentro de um fluxo de página, os links não são apropriados para páginas de commit porque os usuários sempre devem ser capazes de fazer o back-out.
+-   **Para assistentes e fluxos de página, outras páginas estão usando links de comando?** Se sim, e todos os outros fatores serem iguais, prefira links de comando para consistência entre páginas.
+-   **O número de respostas entre dois e cinco?** Nunca deve haver um único link de comando. Como os links de comando são controles grandes e o espaço de tela usado é proporcional ao número de opções, mantenha o número de respostas para cinco ou menos. Para seis ou mais opções, use botões de opção, links regulares ou uma exibição de lista [de seleção única](ctrl-list-views.md).
 
     ![captura de tela da caixa de diálogo com a lista de comandos ](images/ctrl-command-links-image4.png)
 
-    Neste exemplo, o recurso de reprodução automática no Microsoft Windows usa um modo de exibição de lista.
+    Neste exemplo, o recurso Reprodução Automática no Microsoft Windows usa uma exibição de lista.
 
--   **Uma combinação de botões de opção e um botão de confirmação é uma opção melhor?** Os botões de opção são uma opção melhor quando qualquer uma das seguintes opções é verdadeira:
-    -   **Há uma opção padrão forte que você deseja que a maioria dos usuários Selecione.** Os usuários têm menos probabilidade de alterar um botão de opção padrão do que um link de comando padrão, especialmente em um assistente, no qual os usuários estão acostumados a clicar em avançar para aceitar os padrões apropriados. Por outro lado, os links de comando são uma opção melhor se você quiser encorajar os usuários a fazer uma escolha explícita.
-    -   **Os usuários precisam interagir com as opções (talvez para ver informações adicionais) antes de tomar uma decisão.** Por exemplo, selecionar um botão de opção pode exibir uma descrição da opção dinamicamente.
+-   **Uma combinação de botões de opção e um botão de commit seria uma opção melhor?** Os botões de opção são uma opção melhor quando qualquer um dos seguintes é verdadeiro:
+    -   **Há uma opção padrão forte que você deseja que a maioria dos usuários selecione.** Os usuários têm menos probabilidade de alterar um botão de opção padrão do que um link de comando padrão, especialmente em um assistente, em que os usuários estão acostumados a clicar em Próximo para aceitar os padrões apropriados. Por outro lado, os links de comando são uma opção melhor se você quiser incentivar os usuários a fazer uma escolha explícita.
+    -   **Os usuários precisam interagir com as opções (talvez para ver informações adicionais) antes de tomar uma decisão.** Por exemplo, selecionar um botão de opção pode exibir uma descrição sobre a opção dinamicamente.
 
-        ![captura de tela da caixa de diálogo com botões de opção ](images/ctrl-command-links-image5.png)
+        ![captura de tela da caixa de diálogo com botões de rádio ](images/ctrl-command-links-image5.png)
 
-        Neste exemplo, a seleção de um botão de opção exibe uma descrição da opção.
+        Neste exemplo, selecionar um botão de opção exibe uma descrição da opção.
 
-    -   **Há opções secundárias ou relacionadas na página.** Os links de comando tendem a dominar a página, facilitando a ignorar todo o resto. Além disso, quando um link de comando é clicado, é impossível selecionar opções secundárias.
+    -   **Há opções secundárias ou relacionadas na página.** Os links de comando tendem a dominar a página, tornando mais fácil ignorar todo o resto. Além disso, depois que um link de comando é clicado, é impossível selecionar opções secundárias.
 
         **Incorreto:**
 
@@ -78,9 +78,9 @@ Para decidir, considere estas perguntas:
 
         ![captura de tela da caixa de diálogo com os mesmos controles ](images/ctrl-command-links-image7.png)
 
-        Neste exemplo, os botões de opção tornam as respostas claras, permitindo que os usuários selecionem opções secundárias.
+        Neste exemplo, os botões de opção limpam as respostas, permitindo que os usuários selecionem opções secundárias.
 
--   **Para caixas de diálogo, um grupo de botões de confirmação seria uma opção melhor?** Os links de comando funcionam melhor quando as opções exigem respostas mais longas, mais explicativas e explicações complementares, mas um grupo de botões de confirmação é uma opção melhor se houver algumas opções simples.
+-   **Para caixas de diálogo, um grupo de botões de commit seria uma opção melhor?** Os links de comando funcionam melhor quando as opções exigem respostas mais longas, mais explicativas e explicações complementares, mas um grupo de botões de confirmação é uma opção melhor se houver algumas opções simples.
 
     **Incorreto:**
 
@@ -90,11 +90,11 @@ Para decidir, considere estas perguntas:
 
     **Correto:**
 
-    ![Captura de tela que mostra uma caixa de diálogo com os botões de confirmação ' salvar ', ' não salvar ' e ' Cancelar '.](images/ctrl-command-links-image9.png)
+    ![Captura de tela que mostra uma caixa de diálogo com os botões de commit "Salvar", "Não salvar" e "Cancelar".](images/ctrl-command-links-image9.png)
 
-    Neste exemplo, o uso de botões de confirmação simples fica direto até o ponto.
+    Neste exemplo, o uso de botões de confirmação simples chega ao ponto.
 
-    No entanto, os links de comando autoexplicativos são sempre melhor opção quando o texto é usado para explicar os botões de confirmação.
+    No entanto, os links de comando autoexplicativos são sempre melhores quando o texto é usado para explicar os botões de commit.
 
     **Incorreto:**
 
@@ -106,36 +106,36 @@ Para decidir, considere estas perguntas:
 
     ![captura de tela de rótulos que não precisam de mais texto ](images/ctrl-command-links-image11.png)
 
-    Neste exemplo, os links de comando são auto-explicativos.
+    Neste exemplo, os links de comando são autoexplicativos.
 
 > [!Note]  
-> Os links de comando exigem o Windows Vista ou posterior, portanto, eles não são adequados para versões anteriores do Windows. Você pode usar links regulares como substitutos.
+> Os links de comando exigem o Windows Vista ou posterior, portanto, eles não são adequados para versões anteriores do Windows. Você pode usar links regulares como um substituto.
 
  
 
 ![captura de tela de links regulares com ícones e texto ](images/ctrl-command-links-image12.png)
 
-Neste exemplo, links regulares com um ícone e uma explicação suplementar são usados como um substituto para links de comando no Windows XP.
+Neste exemplo, links regulares com um ícone e uma explicação complementar são usados como um substituto para links de comando no Windows XP.
 
 ## <a name="design-concepts"></a>Conceitos de design
 
-Só porque os links de comando permitem que você use rótulos mais descritivos e explicações complementares opcionais não significa que você deveria. Considere o seguinte exemplo:
+Apenas porque os links de comando permitem que você use rótulos mais descritivos e explicações complementares opcionais não significa que você deve. Considere o seguinte exemplo:
 
 **Incorreto:**
 
 ![captura de tela da caixa de diálogo com muito texto ](images/ctrl-command-links-image13.png)
 
-Essa caixa de diálogo é seriamente se comunicando com excesso de comunicação.
+Essa caixa de diálogo está se comunicando muito.
 
-Essa caixa de diálogo usa uma pergunta simples e desnecessariamente complica-a com o texto do link do comando. Os usuários não querem ler todo esse texto para essas perguntas simples.
+Essa caixa de diálogo faz uma pergunta simples e complica-a desnecessariamente com o texto do link de comando. Os usuários não querem ler todo esse texto para perguntas simples.
 
 Podemos simplificar essa caixa de diálogo aplicando três diretrizes de link de comando:
 
--   **Não use uma explicação suplementar que seja uma redescrição de palavras do link de comando.** Use uma explicação suplementar somente quando não for possível tornar um link de comando auto-explicativo. Fornecer uma explicação suplementar para um link de comando não significa que você precise fornecê-los para todos os comandos.
--   **Selecione o mais seguro (para evitar a perda de dados ou acesso ao sistema) e a resposta mais segura para o padrão.** Se não houver fatores de segurança e segurança, selecione a resposta mais provável ou conveniente.
--   **Forneça um botão de cancelamento explícito.** Não use um link de comando para essa finalidade.
+-   **Não use uma explicação complementar que seja uma restatementação wordy do link de comando.** Use uma explicação complementar somente quando não for possível tornar um link de comando autoexplicativo. Fornecer uma explicação complementar para um link de comando não significa que você precisa forenciá-los para todos os comandos.
+-   **Selecione o mais seguro (para evitar a perda de dados ou acesso ao sistema) e a resposta mais segura seja o padrão.** Se segurança e segurança não são fatores, selecione a resposta mais provável ou conveniente.
+-   **Forneça um botão Cancelar explícito.** Não use um link de comando para essa finalidade.
 
-Ao aplicar essas diretrizes, podemos eliminar as explicações suplementares desnecessárias, tornar a resposta mais conveniente o padrão e fornecer um botão de cancelamento explícito.
+Aplicando essas diretrizes, podemos eliminar as explicações complementares desnecessárias, tornar a resposta mais conveniente o padrão e fornecer um botão Cancelar explícito.
 
 **Melhor:**
 
@@ -165,7 +165,7 @@ Os links de comando têm vários padrões de uso:
 
 
 
-|                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Uso                                                                                                                      | Exemplo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |--------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Respostas de página** Os links de comando são usados para responder à instrução principal e avançar para a próxima página.    | com esse padrão, os links de comando substituem o botão Avançar, mas ainda há um botão Cancelar.<br/>As respostas de página não implicam em compromisso. como links de comando parecem links e os usuários associam links a navegação em um fluxo de página, os links não são apropriados para páginas de confirmação. os usuários sempre devem ser capazes de fazer backup. <br/> ![Captura de tela que mostra uma caixa de diálogo ' conectar à Internet ' com os links de comando ' sem fio, ' de banda larga (PPPoE) ' e ' dial-up '.](images/ctrl-command-links-image16.png)<br/>Neste exemplo, os links de comando são usados para fornecer respostas descritivas à instrução principal. Embora os botões de opção possam ser usados aqui, os links de comando permitem que os usuários respondam com um único clique.<br/> |
 | **Respostas da caixa de diálogo** Os links de comando são usados para responder à instrução principal e fechar a caixa de diálogo.  | com esse padrão, os links de comando substituem os botões de confirmação (como ok), mas ainda há um botão Cancelar.<br/>Ao contrário dos fluxos de página, não há nenhuma maneira de sair de uma resposta baseada na caixa de diálogo quando ela tiver sido feita. Consequentemente, os links de comando da caixa de diálogo implicam em compromisso. <br/> ![captura de tela da caixa de diálogo com links de comando ](images/ctrl-command-links-image17.png)<br/>Neste exemplo, os links de comando são usados para fornecer respostas descritivas à instrução principal. Embora os botões de opção possam ser usados aqui, os links de comando permitem que os usuários escolham com um único clique.<br/>                                                   |

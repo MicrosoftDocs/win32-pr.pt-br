@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3235d58d6499d7d57c54e33e1049f40c50dd189a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: cf03d85dd0402548d02f107dafb209b68c13bb72
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105814089"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444397"
 ---
 # <a name="splitbutton-element"></a>Elemento SplitButton
 
@@ -80,7 +80,7 @@ Representa um controle de [botão de divisão](windowsribbon-controls-splitbutto
 | Elemento                                                                                   | Descrição                                        |
 |-------------------------------------------------------------------------------------------|----------------------------------------------------|
 | [**Botão**](windowsribbon-element-button.md)<br/>                                 | Pode ocorrer uma ou mais vezes<br/> <br/> |
-| [**CheckBox**](windowsribbon-element-checkbox.md)<br/>                             | Pode ocorrer uma ou mais vezes<br/> <br/> |
+| [**Verificação**](windowsribbon-element-checkbox.md)<br/>                             | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**DropDownButton**](windowsribbon-element-dropdownbutton.md)<br/>                 | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md)<br/>       | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**DropDownGallery**](windowsribbon-element-dropdowngallery.md)<br/>               | Pode ocorrer uma ou mais vezes<br/> <br/> |
@@ -100,7 +100,7 @@ Representa um controle de [botão de divisão](windowsribbon-controls-splitbutto
 |-----------------------------------------------------------------------------------|
 | [**Controlador de controle**](windowsribbon-element-controlgroup.md)<br/>             |
 | [**DropDownGallery**](windowsribbon-element-dropdowngallery.md)<br/>       |
-| [**Group**](windowsribbon-element-group.md)<br/>                           |
+| [**Grupo**](windowsribbon-element-group.md)<br/>                           |
 | [**Grupo Backstage**](windowsribbon-element-menugroup.md)<br/>                   |
 | **SplitButton**<br/>                                                        |
 | [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md)<br/> |
@@ -119,8 +119,8 @@ Pode ocorrer uma ou mais vezes para cada elemento [**Control**](windowsribbon-el
 
 [**SplitButton. MenuGroups**](windowsribbon-element-splitbutton-menugroups.md) deve ocorrer uma vez se os seguintes não estiverem presentes como elementos filho de **SplitButton**:
 
--   [**Button**](windowsribbon-element-button.md)
--   [**CheckBox**](windowsribbon-element-checkbox.md)
+-   [**Botão**](windowsribbon-element-button.md)
+-   [**Verificação**](windowsribbon-element-checkbox.md)
 -   [**DropDownButton**](windowsribbon-element-dropdownbutton.md)
 -   [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md)
 -   [**DropDownGallery**](windowsribbon-element-dropdowngallery.md)
@@ -211,12 +211,8 @@ Esta seção de código mostra as declarações de controle **SplitButton** .
 
 ## <a name="element-information"></a>Informações do elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo com suporte<br/> | Windows 7 |
-| Pode estar vazio                        | Não        |
+- **Sistema mínimo com suporte**: Windows 7 
+- **Pode estar vazio**: não
 
 
 

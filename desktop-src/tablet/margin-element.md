@@ -4,12 +4,12 @@ ms.assetid: c3047706-affd-4feb-9d48-cfb4c7dd6fa0
 title: Elemento Margin
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0500d4db165012393cb600c1e118089b68c76695
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 547177a10fc3724f3b9bf3dde65f857d03f0f2a4
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171849"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432128"
 ---
 # <a name="margin-element"></a>Elemento Margin
 
@@ -106,7 +106,7 @@ Nenhum..
 
 
 
-|              |                                                           |
+|  Elemento     | Valor                                                     |
 |--------------|-----------------------------------------------------------|
 | Tipo de elemento | ComplexType de [**margintype**](margintype-complex-type.md) |
 | Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk                |

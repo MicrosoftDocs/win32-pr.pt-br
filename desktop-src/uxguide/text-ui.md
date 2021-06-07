@@ -1,27 +1,27 @@
 ---
-title: Texto da interface do usuário
-description: O texto da interface do usuário é exibido nas superfícies da interface de usuários.
+title: Interface do Usuário texto
+description: Saiba mais sobre o texto da interface do usuário que aparece nas superfícies da interface do usuário.
 ms.assetid: db42fe22-9baf-453a-9b89-9bbb251b0b6f
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 1c1a60ba0bfef33dcf1e72c5ba19b11c4a5f38a2
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: a0ab5025407d5149d1747fbd083fed7df345e3f3
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104567645"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444737"
 ---
-# <a name="user-interface-text"></a>Texto da interface do usuário
+# <a name="user-interface-text"></a>Interface do Usuário texto
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
 
-O texto da interface do usuário é exibido nas superfícies da interface de usuários. Esse texto inclui rótulos de controle e texto estático:
+O texto da interface do usuário é exibido nas superfícies da interface do usuário. Este texto inclui rótulos de controle e texto estático:
 
--   Os rótulos de controle identificam controles e são colocados diretamente em ou ao lado dos controles.
--   Texto estático, que é tão chamado porque não faz parte de um controle interativo, fornece aos usuários instruções detalhadas ou explicações para que eles possam tomar decisões informadas.
+-   Os rótulos de controle identificam os controles e são colocados diretamente ou ao lado dos controles.
+-   O texto estático, que é chamado porque não faz parte de um controle interativo, fornece aos usuários instruções ou explicações detalhadas para que possam tomar decisões informadas.
 
-**Observação:** As diretrizes relacionadas a rótulos de controle de [estilo e Tom](text-style-tone.md), [fontes](vis-fonts.md)e [controles](controls.md) de as são apresentadas em artigos separados.
+**Observação:** As diretrizes relacionadas [ao estilo e ao tom,](text-style-tone.md)às fontes e aos [rótulos](vis-fonts.md) [de controle de comon](controls.md) são apresentadas em artigos separados.
 
 ## <a name="usage-patterns"></a>Padrões de uso
 
@@ -29,13 +29,13 @@ O texto da interface do usuário tem vários padrões de uso:
 
 
 
-|                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|   Uso                                                                                                                                                                                          |    Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Texto da barra de título**<br/> Use o texto da barra de título para identificar uma janela ou a origem de uma caixa de diálogo. <br/>                                                                            | ![captura de tela da barra de título de opções de pasta](images/text-ui-image1.png)<br/> Neste exemplo, o texto da barra de título identifica uma janela.<br/>                                                                                                                                                                                                                                                                                                             |
-| **Instruções principais**<br/> Use a instrução principal proeminente para explicar de forma concisa o que fazer na janela ou na página. <br/>                                                      | A instrução deve ser uma instrução específica, uma direção imperativa ou uma pergunta. boas instruções principais comunicam o objetivo do usuário em vez de se concentrar apenas na manipulação da interface do usuário. <br/> ![captura de tela de pergunta: deseja obter a ajuda mais recente? ](images/text-ui-image2.png)<br/> Neste exemplo, o texto de instrução principal envolve diretamente o usuário com uma pergunta em termos de interesse ou benefício do usuário.<br/>             |
-| **Instruções complementares**<br/> quando necessário, use uma instrução complementar para apresentar informações adicionais úteis para entender ou usar a janela ou a página. <br/> | Você pode fornecer informações mais detalhadas, fornecer contexto e definir a terminologia. instruções complementares elaboradas sobre a instrução principal sem simplesmente reformular a ti. <br/> ![captura de tela de texto ao alternar para a conta do administrador ](images/text-ui-image3.png)<br/> Neste exemplo, as instruções complementares fornecem dois possíveis cursos de ação a serem adotados em resposta às informações apresentadas na instrução principal.<br/> |
-| **Rótulos de controle**<br/> rótulos diretamente no ou ao lado dos controles. <br/>                                                                                                           | ![captura de tela das opções de relógio da área de trabalho ](images/text-ui-image4.png)<br/> Neste exemplo, os rótulos de controle identificam as configurações de relógio da área de trabalho que os usuários podem selecionar ou modificar.<br/>                                                                                                                                                                                                                                                                       |
-| **Explicações suplementares**<br/> um elaboration dos rótulos de controle (normalmente para links de comando, botões de opção e caixas de seleção). <br/>                                    | ![Captura de tela que mostra uma caixa de diálogo Configurações de segurança.](images/text-ui-image5.png)<br/> Neste exemplo, as explicações suplementares esclarecem as opções.<br/>                                                                                                                                                                                                                                                                                             |
+| **Texto da barra de título**<br/> use o texto da barra de título para identificar uma janela ou a origem de uma caixa de diálogo. <br/>                                                                            | ![captura de tela da barra de título das opções de pasta](images/text-ui-image1.png)<br/> Neste exemplo, o texto da barra de título identifica uma janela.<br/>                                                                                                                                                                                                                                                                                                             |
+| **Instruções principais**<br/> use a instrução principal proeminente para explicar concisamente o que fazer na janela ou na página. <br/>                                                      | A instrução deve ser uma instrução específica, uma direção imperativa ou uma pergunta. boas instruções principais comunicam o objetivo do usuário em vez de se concentrar apenas em manipular a interface do usuário. <br/> ![captura de tela da pergunta: você deseja a ajuda mais recente? ](images/text-ui-image2.png)<br/> Neste exemplo, o texto de instrução principal envolve diretamente o usuário com uma pergunta em termos de benefício ou interesse próprio do usuário.<br/>             |
+| **Instruções complementares**<br/> Quando necessário, use uma instrução complementar para apresentar informações adicionais úteis para entender ou usar a janela ou a página. <br/> | Você pode fornecer informações mais detalhadas, fornecer contexto e definir terminologia. instruções complementares detalham a instrução principal sem simplesmente repromentá-la. <br/> ![captura de tela do texto ao alternar para a conta de administrador ](images/text-ui-image3.png)<br/> Neste exemplo, as instruções complementares fornecem dois cursos possíveis de ação a tomar em resposta às informações apresentadas na instrução principal.<br/> |
+| **Rótulos de controle**<br/> rótulos diretamente em ou ao lado de controles. <br/>                                                                                                           | ![captura de tela das opções do relógio da área de trabalho ](images/text-ui-image4.png)<br/> Neste exemplo, os rótulos de controle identificam as configurações do relógio da área de trabalho que os usuários podem selecionar ou modificar.<br/>                                                                                                                                                                                                                                                                       |
+| **Explicações complementares**<br/> uma união dos rótulos de controle (normalmente para links de comando, botões de opção e caixas de seleção). <br/>                                    | ![Captura de tela que mostra uma caixa de diálogo de configurações de segurança.](images/text-ui-image5.png)<br/> Neste exemplo, as explicações complementares esclarecem as opções.<br/>                                                                                                                                                                                                                                                                                             |
 
 
 
@@ -43,77 +43,77 @@ O texto da interface do usuário tem vários padrões de uso:
 
 ## <a name="design-concepts"></a>Conceitos de design
 
-Os desenvolvedores de software geralmente consideram o texto relegado à documentação do produto e ao suporte técnico. "Primeiro vamos escrever o código e, em seguida, contrataremos alguém para nos ajudar a explicar o que desenvolvemos." Ainda na realidade, o texto importante é escrito anteriormente no processo, pois a interface do usuário é concebida e codificada. Esse texto é, afinal, visto com mais frequência e por mais pessoas do que talvez qualquer outro tipo de escrita técnica.
+Os desenvolvedores de software geralmente pensam no texto como relegado à documentação do produto e ao suporte técnico. "Primeiro, escreveremos o código e, em seguida, contratamos alguém para nos ajudar a explicar o que desenvolvemos." No entanto, na realidade, um texto importante é escrito anteriormente no processo, pois a interface do usuário é criada e codificada. Esse texto é visto com mais frequência e por mais pessoas do que talvez qualquer outro tipo de escrita técnica.
 
-**O texto abrangente é crucial para a interface do usuário efetiva.** Os autores e editores profissionais devem trabalhar com desenvolvedores de software no texto da interface do usuário como parte integrante do processo de design. Faça com que eles trabalhem no texto antecipadamente porque problemas de texto geralmente revelam problemas de design. Se sua equipe tiver problemas para explicar um design, com muita frequência ele é o design, não a explicação, que precisa de melhoria.
+**O texto compreensível é crucial para a interface do usuário efetiva.** Editores e editores profissionais devem trabalhar com desenvolvedores de software no texto da interface do usuário como parte integrante do processo de design. Fazer com que eles trabalhem no texto no início porque os problemas de texto geralmente revelam problemas de design. Se sua equipe tiver problemas para explicar um design, geralmente é o design, não a explicação, que precisa melhorar.
 
 ### <a name="a-design-model-for-ui-text"></a>Um modelo de design para texto da interface do usuário
 
-Como você imagina o texto da interface do usuário e seu posicionamento nas suas superfícies de interface do usuário, considere estes fatos:
+Ao pensar sobre o texto da interface do usuário e seu posicionamento nas superfícies da interface do usuário, considere estes fatos:
 
--   Durante o foco, a leitura de imersão, as pessoas lidam em uma ordem da esquerda para a direita, de cima para baixo (em culturas ocidentais).
--   Ao usar o software, os usuários não estão imersos na própria interface do usuário, mas em seu trabalho. Consequentemente, os usuários não lêem o texto da interface do usuário que o examinam.
--   Ao digitalizar uma janela, os usuários podem parecer ler o texto quando, na realidade, estão filtrando. Em geral, eles não entendem verdadeiramente o texto da interface do usuário, a menos que eles se compreendam a necessidade.
--   Em uma janela, diferentes elementos da interface do usuário recebem diferentes níveis de atenção. Os usuários tendem a ler os rótulos de controle primeiro, especialmente aqueles que parecem relevantes para concluir a tarefa em questão. Por outro lado, os usuários tendem a ler texto estático apenas quando acham que precisam.
+-   Durante a leitura focada e imersiva, as pessoas leem em uma ordem da esquerda para a direita, de cima para baixo (em culturas ocidental).
+-   Ao usar software, os usuários não são imersos na própria interface do usuário, mas em seu trabalho. Consequentemente, os usuários não leem o texto da interface do usuário que o digitalizarem.
+-   Ao digitalr uma janela, os usuários podem parecer estar lendo texto quando, na realidade, estão filtrando-o. Geralmente, eles não compreendem realmente o texto da interface do usuário, a menos que percebam a necessidade.
+-   Dentro de uma janela, diferentes elementos da interface do usuário recebem diferentes níveis de atenção. Os usuários tendem a ler rótulos de controle primeiro, especialmente aqueles que parecem relevantes para concluir a tarefa em questão. Por outro lado, os usuários tendem a ler texto estático somente quando eles pensam que precisam.
 
-Para um modelo de design geral, não assuma que os usuários leiam atentamente o texto em uma ordem da esquerda para a direita, de cima para baixo. Em vez disso, suponha que os usuários comecem verificando rapidamente toda a janela e, em seguida, leia o texto da interface do usuário em aproximadamente a seguinte ordem:
+Para um modelo de design geral, não suponha que os usuários leiam cuidadosamente o texto em uma ordem da esquerda para a direita, de cima para baixo. Em vez disso, suponha que os usuários comecem digitalizando rapidamente toda a janela e, em seguida, leiam o texto da interface do usuário aproximadamente na seguinte ordem:
 
 -   Controles interativos no centro
 -   Os [botões de confirmação](glossary.md)
 -   Controles interativos encontrados em outro lugar
 -   Instrução principal
--   Explicações suplementares
+-   Explicações complementares
 -   Título da janela
 -   Outro texto estático no corpo principal
 -   Notas de rodapé
 
-Você também deve supor que, depois que os usuários decidirem o que fazer, eles imediatamente irão parar de ler e fazer isso.
+Você também deve supor que, depois que os usuários decidirem o que fazer, eles interromperão imediatamente a leitura e o fazerão.
 
 ### <a name="eliminate-redundancy"></a>Eliminar redundância
 
-O texto redundante não só leva um espaço de tela valioso, mas enfraquece a eficácia das ideias ou ações importantes que você está tentando transmitir. Também é um desperdício do tempo do leitor, e tudo isso em um contexto em que a verificação é a norma. **O Windows se esforça para explicar o que os usuários precisam fazer uma vez bem e concisamente.**
+O texto redundante não só ocupa espaço valioso na tela, mas também diminui a eficácia das ideias ou ações importantes que você está tentando transmitir. Também é um desperdício de tempo do leitor e muito mais em um contexto em que a verificação é a norma. **O Windows se esforça para explicar o que os usuários precisam fazer uma vez de forma bem e concisa.**
 
-Examine cada janela e elimine palavras e instruções duplicadas, dentro e entre os controles. Não evite que textos importantes sejam explícitos sempre que necessário, mas não sejam redundantes e não expliquem o óbvio.
+Revise cada janela e elimine palavras e instruções duplicadas, dentro e entre controles. Não evite que texto importante seja explícito sempre que necessário, mas não seja redundante e não explique o óbvio.
 
-### <a name="avoid-over-communication"></a>Evitar comunicação excessiva
+### <a name="avoid-over-communication"></a>Evitar a comunicação em excesso
 
-Mesmo que o texto não seja redundante, ele pode simplesmente ser um pouco simples em um esforço para explicar cada detalhe. **O excesso de texto não incentiva a leitura do olho tende a ignorar a ti de forma Ironic, resultando em menos comunicação em vez de mais.** No texto da interface do usuário, comunique-se de forma concisa as informações essenciais. Se mais informações forem necessárias para alguns usuários ou alguns cenários, forneça um link para o conteúdo mais detalhado da [ajuda](winenv-help.md)ou talvez em uma entrada de glossário para esclarecimentos de um termo.
+Mesmo que o texto não seja redundante, ele pode simplesmente ser muito wordy em um esforço para explicar cada detalhe. **O excesso de texto desestimula a leitura do olho tende a ignorar imediatamente, resultando em menos comunicação em vez de mais.** No texto da interface do usuário, comunique concisamente as informações essenciais. Se mais informações são necessárias para alguns usuários ou alguns [](winenv-help.md)cenários, forneça um link para conteúdo de Ajuda mais detalhado ou talvez para uma entrada de glossário para esclarecimento de um termo.
 
 **Incorreto:**
 
 ![captura de tela da caixa de diálogo com 6 parágrafos](images/text-ui-image6.png)
 
-Neste exemplo, há muito texto para examinar facilmente. Embora não seja destinado ao designer, há muito texto que provavelmente os usuários clicarão em avançar sem ler nada.
+Neste exemplo, há muito texto para examinar facilmente. Embora não seja pretendido pelo designer, há tanto texto que os usuários provavelmente clicarão em Próximo sem ler nada.
 
-Para evitar texto que desanime a leitura, crie seu texto para fazer cada contagem de palavras. O que não adiciona subtração, portanto, use texto simples e conciso.
+Para evitar texto que não desanimo a leitura, crie seu texto para fazer com que cada palavra seja contada. O que não adiciona subtrações, portanto, use texto simples e conciso.
 
 ### <a name="use-the-inverted-pyramid"></a>Usar a pirâmide invertida
 
-A escrita acadêmica normalmente usa um estilo estrutural "pirâmide" que apresenta uma base de fatos, trabalha com esses fatos e cria até uma conclusão formando uma estrutura semelhante a pirâmide. Por outro lado, os jornalistas usam um estilo de "pirâmide invertida" que começa com a conclusão do "argumento" fundamental que os leitores devem ter. Em seguida, ele preenche progressivamente mais detalhes que os leitores podem estar interessados em talvez apenas examinar. A vantagem desse estilo é que ele fica certo até o ponto e permite que os leitores parem de ler a qualquer momento que escolherem e ainda compreendam as informações essenciais.
+A escrita acadêmica normalmente usa um estilo estrutural de "pirâmide" que estabelece uma base de fatos, funciona com esses fatos e se acumula até uma conclusão que forma uma estrutura como pirâmide. Por outro lado, os amigos usam um estilo de "pirâmide invertida" que começa com a conclusão da "mudança" fundamental que os leitores devem ter. Em seguida, ele preenche progressivamente mais detalhes em que os leitores podem estar interessados, talvez, apenas para verificar. A vantagem desse estilo é que ele chega ao ponto certo e permite que os leitores pare de ler a qualquer momento que escolherem e ainda entendam as informações essenciais.
 
-Você deve aplicar a estrutura de pirâmide invertida ao texto da interface do usuário. Fique à direita até o ponto com as informações essenciais, deixe que os usuários parem de ler a qualquer momento que escolherem e use um link de ajuda para apresentar o restante da pirâmide.
+Você deve aplicar a estrutura de pirâmide invertida ao texto da interface do usuário. Vá direto ao ponto com as informações essenciais, deixe os usuários pararem de ler a qualquer momento que escolherem e use um link da Ajuda para apresentar o restante da pirâmide.
 
-![captura de tela de mensagem ao ingressar no programa do Windows ](images/text-ui-image7.png)
+![captura de tela da mensagem ao ingressar no programa Windows ](images/text-ui-image7.png)
 
-Neste exemplo, as informações essenciais estão na consulta do texto de instrução principal, informações úteis adicionais estão nas instruções complementares e os detalhes estão disponíveis ao clicar em um link de ajuda.
+Neste exemplo, as informações essenciais estão na consulta do texto de instrução principal, informações úteis adicionais estão nas instruções complementares e os detalhes estão disponíveis clicando em um link da Ajuda.
 
 **Se você fizer apenas cinco coisas...**
 
-1.  Trabalhe no texto antecipadamente porque problemas de texto geralmente revelam problemas de design.
+1.  Trabalhe no texto no início porque os problemas de texto geralmente revelam problemas de design.
 2.  Projete seu texto para verificação.
-3.  Elimine o texto redundante.
-4.  Use texto fácil de entender; Não se comunique mais.
-5.  Quando necessário, forneça links para o conteúdo da ajuda para obter informações mais detalhadas.
+3.  Eliminar texto redundante.
+4.  Usar texto fácil de entender; não se comunicam em excesso.
+5.  Quando necessário, forneça links para o conteúdo da Ajuda para obter informações mais detalhadas.
 
 ## <a name="guidelines"></a>Diretrizes
 
 ### <a name="general"></a>Geral
 
--   **Remova o texto redundante.** Procure texto redundante em títulos de janela, instruções principais, instruções complementares, áreas de conteúdo, links de comando e botões de confirmação. Em geral, deixe texto completo nas instruções principais e nos controles interativos e remova qualquer redundância dos outros locais.
+-   **Remova texto redundante.** Procure texto redundante em títulos de janela, instruções principais, instruções complementares, áreas de conteúdo, links de comando e botões de commit. Em geral, deixe o texto completo nas instruções principais e controles interativos e remova qualquer redundância de outros locais.
 -   **Evite grandes blocos de texto da interface do usuário.** As maneiras de fazer isso incluem:
-    -   Agrupamento de texto em frases e parágrafos menores.
-    -   Quando necessário, fornecendo [links de ajuda](winenv-help.md) para informações úteis, mas não essenciais.
--   **Escolha nomes de objetos e rótulos que se comunicam claramente e diferenciam o que o objeto faz.** Os usuários não devem ter que descobrir o que o objeto realmente significa ou como ele difere de outros objetos.
+    -   Em partes de texto em frases e parágrafos mais curtos.
+    -   Quando necessário, fornecer [links de Ajuda](winenv-help.md) para informações úteis, mas não essenciais.
+-   **Escolha nomes de objeto e rótulos que se comunicam claramente e diferenciem o que o objeto faz.** Os usuários não devem ter que descobrir o que o objeto realmente significa ou como ele difere de outros objetos.
 
     Incorreto:
 
@@ -125,14 +125,14 @@ Neste exemplo, as informações essenciais estão na consulta do texto de instru
 
     No exemplo incorreto, os nomes de objeto não são diferenciados; o exemplo melhor mostra uma diferenciação forte por nome do produto.
 
--   **Se você quiser garantir que os usuários leiam texto específico relacionado a uma ação, coloque-o em um controle interativo.**
+-   **Se você quiser garantir que os usuários leiam textos específicos relacionados a uma ação, coloque-o em um controle interativo.**
     -   **Aceitável:**
-    -   ![captura de tela de aviso de formatação usando o botão OK ](images/text-ui-image10.png)
-    -   Neste exemplo, há a possibilidade de que os usuários não leiam o texto que explica o que eles estão confirmando.
+    -   ![captura de tela do aviso de formatação usando o botão OK ](images/text-ui-image10.png)
+    -   Neste exemplo, há uma chance de os usuários não lerem o texto que explica o que eles estão confirmando.
     -   **Melhor:**
-    -   ![captura de tela da formatação de aviso e botão Formatar ](images/text-ui-image11.png)
+    -   ![captura de tela do botão de aviso e formato de formatação ](images/text-ui-image11.png)
     -   Neste exemplo, você pode ter certeza de que pelo menos os usuários entendem que estão prestes a formatar um disco.
--   **Use um espaço entre as frases.** Não dois.
+-   **Use um espaço entre frases.** Não dois.
 
 ### <a name="text-fonts-sizes-and-colors"></a>Fontes de texto, tamanhos e cores
 
@@ -143,51 +143,51 @@ As fontes e cores a seguir são padrões para o Windows.
 
 
 
-| Padrão                                                                                     | Símbolo de tema                            | Fonte, cor                                                           |
+| Padrão                                                                                     | Símbolo de tema                            | Fonte, Cor                                                           |
 |--------------------------------------------------------------------------------------|-----------------------------|------------------------------------------------------------|
 | ![primeira coluna: texto da barra de título ](images/text-ui-image12.png)<br/>              | CaptionFont<br/>      | 9 pt. preto ( \# 000000) Segoe UI<br/>                 |
-| ![primeira coluna: instruções principais ](images/text-ui-image13.png)<br/>           | MainInstruction<br/>  | 12 pt. azul ( \# 003399) Segoe UI<br/>                 |
+| ![primeira coluna: instruções principais ](images/text-ui-image13.png)<br/>           | MainInstruction<br/>  | 12 pt. blue ( \# 003399) Segoe UI<br/>                 |
 | ![primeira coluna: instruções secundárias ](images/text-ui-image14.png)<br/>      | Instrução<br/>      | 9 pt. preto ( \# 000000) Segoe UI<br/>                 |
-| ![primeira coluna: texto normal ](images/text-ui-image15.png)<br/>                 | BodyText<br/>         | 9 pt. preto ( \# 000000) Segoe UI<br/>                 |
-| ![primeira coluna: texto enfatizado ](images/text-ui-image16.png)<br/>             | BodyText<br/>         | 9 pt. preto ( \# 000000) Segoe UI, negrito ou itálico<br/> |
-| ![primeira coluna: texto editável ](images/text-ui-image17.png)<br/>               | BodyText<br/>         | 9 pt. preto ( \# 000000) Segoe UI, em uma caixa<br/>       |
+| ![primeira coluna: texto normal ](images/text-ui-image15.png)<br/>                 | Bodytext<br/>         | 9 pt. preto ( \# 000000) Segoe UI<br/>                 |
+| ![primeira coluna: texto enfatizado ](images/text-ui-image16.png)<br/>             | Bodytext<br/>         | 9 pt. preto ( \# 000000) Segoe UI, negrito ou itálico<br/> |
+| ![primeira coluna: texto editável ](images/text-ui-image17.png)<br/>               | Bodytext<br/>         | 9 pt. preto ( \# 000000) Segoe UI, em uma caixa<br/>       |
 | ![primeira coluna: texto desabilitado ](images/text-ui-image18.png)<br/>               | Desabilitado<br/>         | 9 pt. cinza-escuro ( \# 323232) Segoe UI<br/>             |
-| ![primeira coluna: link ](images/text-ui-image19.png)<br/>                        | HyperLinkText<br/>    | 9 pt. Segoe UI azul ( \# 0066CC)<br/>                  |
-| ![primeira coluna: links (focalizar) ](images/text-ui-image20.png)<br/>               | Frequente<br/>              | 9 pt. azul-claro ( \# 3399FF) Segoe UI<br/>            |
-| ![primeira coluna: cabeçalho do grupo ](images/text-ui-image21.png)<br/>                |  <br/>                | 11 pt. azul ( \# 003399) Segoe UI<br/>                 |
+| ![primeira coluna: link ](images/text-ui-image19.png)<br/>                        | HyperLinkText<br/>    | 9 pt. blue ( \# 0066CC) Segoe UI<br/>                  |
+| ![primeira coluna: links (foco) ](images/text-ui-image20.png)<br/>               | Frequente<br/>              | 9 pt. azul-claro ( \# 3399FF) Segoe UI<br/>            |
+| ![primeira coluna: título do grupo ](images/text-ui-image21.png)<br/>                |  <br/>                | 11 pt. blue ( \# 003399) Segoe UI<br/>                 |
 | ![primeira coluna: nome do arquivo (na exibição de conteúdo) ](images/text-ui-image22.png)<br/> |  <br/>                | 11 pt. preto ( \# 000000) Segoe UI<br/>                |
-| ![primeira coluna: texto do documento ](images/text-ui-image23.png)<br/>               | (nenhum)<br/>           | 9 pt. preto ( \# 000000) Calibri<br/>                  |
-| ![primeira coluna: títulos de documento ](images/text-ui-image24.png)<br/>           | (nenhum)<br/>           | 17 pt. preto ( \# 000000) Calibri<br/>                 |
+| ![primeira coluna: texto do documento ](images/text-ui-image23.png)<br/>               | (nenhum)<br/>           | 9 pt. black ( \# 000000) Californiabri<br/>                  |
+| ![primeira coluna: títulos de documento ](images/text-ui-image24.png)<br/>           | (nenhum)<br/>           | 17 pt. black ( \# 000000) Californiabri<br/>                 |
 
 
 
  
 
-Para obter mais informações e exemplos, consulte [fontes](vis-fonts.md) e [cores](vis-color.md).
+Para obter mais informações e exemplos, consulte [Fontes](vis-fonts.md) e [cores.](vis-color.md)
 
 ### <a name="other-text-characteristics"></a>Outras características de texto
 
 **Negrito**
 
--   **Use em negrito para chamar atenção para texto que os usuários devem ler.** Por exemplo, os usuários que verificam uma lista de opções de botão de opção podem apreciar a exibição dos rótulos em negrito, para destacar o texto que adiciona informações complementares sobre cada opção. Lembre-se de que o uso de muito mais negrito diminui seu impacto.
+-   **Use negrito com moderação para chamar a atenção para o texto que os usuários devem ler.** Por exemplo, os usuários que examinam uma lista de opções de botão de opção podem gostar de ver os rótulos em negrito, para se destacar do texto que adiciona informações complementares sobre cada opção. Esteja ciente de que o uso de negrito demais diminui seu impacto.
 -   **Com os dados rotulados, use negrito para enfatizar o que for mais importante para os dados como um todo.**
-    -   Para os dados mais genéricos (onde os dados têm pouco significado sem seus rótulos, como com numerais ou datas), use rótulos em negrito e dados sem formatação para que os usuários possam examinar e entender os tipos de dados com mais facilidade.
-    -   Para obter principalmente dados autoexplicativos, use rótulos simples e dados em negrito para que os usuários possam se concentrar nos dados em si.
-    -   Como alternativa, você pode usar texto cinza escuro para desenfatizar informações menos importantes em vez de usar negrito para enfatizar as informações mais importantes.
+    -   Para dados genéricos principalmente (em que os dados têm pouco significado sem seus rótulos, como com numerais ou datas), use rótulos em negrito e dados simples para que os usuários possam examinar e entender mais facilmente os tipos de dados.
+    -   Para dados principalmente autoexplicativos, use rótulos simples e dados em negrito para que os usuários possam se concentrar nos dados em si.
+    -   Como alternativa, você pode usar texto cinza escuro para des enfatizar informações menos importantes em vez de usar negrito para enfatizar as informações mais importantes.
 
-        ![captura de tela do modo de exibição de miniatura do Windows Explorer ](images/text-ui-image25.png)
+        ![captura de tela da exibição em miniatura do Windows Explorer ](images/text-ui-image25.png)
 
-        Neste exemplo, em vez de enfatizar os dados usando negrito, os rótulos são realçados com o uso de cinza escuro.
+        Neste exemplo, em vez de enfatizar os dados usando negrito, os rótulos são des enfatizados usando cinza-escuro.
 
--   **Nem todas as fontes dão suporte a negrito, portanto, nunca deve ser crucial para entender o texto.**
+-   **Nem todas as fontes são suportadas em negrito, portanto, nunca deve ser crucial entender o texto.**
 
 **Itálico**
 
--   Use para fazer referência ao texto literalmente. Não use aspas para essa finalidade.
+-   Use para se referir ao texto literalmente. Não use aspas para essa finalidade.
 
     **Correto:**
 
-    Os termos documento e arquivo são frequentemente usados de maneira intercambiável.
+    Os termos documento e arquivo geralmente são usados de forma intercambiável.
 
 -   Use para [prompts](glossary.md) em [caixas de texto](ctrl-text-boxes.md) e [listas suspensas editáveis](/windows/desktop/uxguide/ctrl-drop).
 
@@ -529,7 +529,7 @@ A tabela a seguir mostra os rótulos de botão de confirmação mais comuns e se
 <td>Digite<br/></td>
 </tr>
 <tr class="odd">
-<td><strong>Sim/não</strong><br/></td>
+<td><strong>Sim/Não</strong><br/></td>
 <td>Sim é a resposta afirmativo para uma pergunta Sim ou não, enquanto que não é a resposta negativa.<br/></td>
 <td><ul>
 <li>Use os botões Sim e não apenas para responder a sim ou nenhuma pergunta. Nunca use OK e cancele para Sim ou sem perguntas.</li>

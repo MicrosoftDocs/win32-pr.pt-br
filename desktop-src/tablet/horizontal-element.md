@@ -1,19 +1,19 @@
 ---
-description: Contém informações de formatação para as linhas horizontais usadas para o papel de carta em uma nota do diário.
+description: Contém informações de formatação para as linhas horizontais usadas para a papelaria em uma nota de Diário.
 ms.assetid: e3c9e7a8-8de6-4871-b386-2186883f2ee7
-title: Elemento horizontal
+title: Elemento Horizontal
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0e380ca35f86ce1012084d31de732cd66c79363
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50de08008d0243d27f8a8c5f64d6aeac5ddbcc1c
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647248"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432368"
 ---
-# <a name="horizontal-element"></a>Elemento horizontal
+# <a name="horizontal-element"></a>Elemento Horizontal
 
-Contém informações de formatação para as linhas horizontais usadas para o papel de carta em uma nota do diário.
+Contém informações de formatação para as linhas horizontais usadas para a papelaria em uma nota de Diário.
 
 ## <a name="definition"></a>Definição
 
@@ -53,7 +53,7 @@ Nenhum.
 <tbody>
 <tr class="odd">
 <td><strong>Estilo</strong></td>
-<td><a href="linelayoutstyletype-simple-type.md"><strong>LineLayoutStyleType</strong></a> simpleType</td>
+<td><a href="linelayoutstyletype-simple-type.md"><strong>SimpleType LineLayoutStyleType</strong></a></td>
 <td>Obrigatório</td>
 <td>Especifica o tipo de linha a ser desenhada.</td>
 <td><ul>
@@ -68,23 +68,23 @@ Nenhum.
 </tr>
 <tr class="even">
 <td><strong>Cor</strong></td>
-<td>SimpleType de <a href="colortype-simple-type.md"><strong>ColorType</strong></a></td>
+<td><a href="colortype-simple-type.md"><strong>ColorType</strong></a> simpleType</td>
 <td>Opcional</td>
 <td>Cor do elemento.</td>
-<td>Um valor RGB hexadecimal. Corresponde à seguinte expressão regular: # [0-9A-zA-Z] {6} . Por exemplo, #4a79B5.<br/></td>
+<td>Um valor RGB hexadecimal. Corresponde à seguinte expressão regular: #[0-9a-zA-Z] {6} . Por exemplo, #4a79B5.<br/></td>
 </tr>
 <tr class="odd">
 <td><strong>SpacingBefore</strong></td>
 <td><strong>xs:nonNegativeInteger</strong></td>
 <td>Opcional</td>
-<td>Espaçamento antes do elemento.</td>
+<td>Espaçamento antes do elemento .</td>
 <td>Qualquer inteiro não negativo.</td>
 </tr>
 <tr class="even">
 <td><strong>SpacingBetween</strong></td>
 <td><strong>xs:nonNegativeInteger</strong></td>
 <td>Opcional</td>
-<td>Espaçamento entre este elemento e elementos circundantes.</td>
+<td>Espaçamento entre esse elemento e elementos ao redor.</td>
 <td>Qualquer inteiro não negativo.</td>
 </tr>
 </tbody>
@@ -98,11 +98,11 @@ Nenhum.
 
 
 
-|              |                                                                   |
+|  Elemento     | Valor                                                     |
 |--------------|-------------------------------------------------------------------|
-| Tipo de elemento | [**ComplexType de horizontaltype**](horizontaltype-complex-type.md) |
-| Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk                        |
-| Nome do esquema  | Leitor de diário                                                    |
+| Tipo de elemento | [**ComplexType HorizontalType**](horizontaltype-complex-type.md) |
+| Namespace    | urn:schemas-microsoft-com:tabletpc:richink                        |
+| Nome do esquema  | Leitor de Diário                                                    |
 
 
 

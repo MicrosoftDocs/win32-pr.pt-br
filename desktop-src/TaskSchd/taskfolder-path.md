@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6733c79d19bbb3d55531f05412a8c9263d76eb90
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 26c917a7f03a28f7b5c379673229976897af9b5f
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918147"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111387005"
 ---
 # <a name="taskfolderpath-property"></a>Propriedade TaskFolder. Path
 
 Para scripts, obtém o caminho para onde a pasta é armazenada.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```VB
@@ -38,7 +38,7 @@ TaskFolder.Path As String
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O caminho para onde a pasta é armazenada. A pasta de tarefas raiz é especificada com uma barra invertida ( \) . Um exemplo de um caminho de pasta de tarefas, sob a pasta da tarefa raiz, é \\ MyTaskFolder.
+O caminho para onde a pasta é armazenada. A pasta de tarefas raiz é especificada com uma barra invertida ( \\ ). Um exemplo de um caminho de pasta de tarefas, sob a pasta da tarefa raiz, é \\ MyTaskFolder.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,19 +1,19 @@
 ---
-description: Contém o conteúdo de uma página de diário.
+description: Contém o conteúdo de uma página De diário.
 ms.assetid: 1df78a17-1cd4-4e98-aed1-b09d2b357703
-title: Elemento Content [leitor de diário]
+title: Elemento Content [Leitor de Diário]
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5b5a7c9631cd69d38b8db54e2a2f8e69636f7e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3fec59601a91d63b09c703557b7c6cd28fd11620
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105813347"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432148"
 ---
-# <a name="content-element-journal-reader"></a>Leitor de diário de elementos de conteúdo \[\]
+# <a name="content-element-journal-reader"></a>Leitor de Diário \[ do Elemento de Conteúdo\]
 
-Contém o conteúdo de uma página de diário.
+Contém o conteúdo de uma página De diário.
 
 ## <a name="definition"></a>Definição
 
@@ -31,13 +31,13 @@ Contém o conteúdo de uma página de diário.
 
 [**Paragraph**](paragraph-element.md)
 
-[**Senha**](drawing-element.md)
+[**Desenho**](drawing-element.md)
 
-[**Texto**](text-element.md)
+[**Text**](text-element.md)
 
 [**Imagem**](image-element.md)
 
-[**Sinalizador**](flag-element.md)
+[**Bandeira**](flag-element.md)
 
 ## <a name="attributes"></a>Atributos
 
@@ -68,7 +68,7 @@ Contém o conteúdo de uma página de diário.
 <td>Se o tipo for &quot; Inert &quot; , o conteúdo não poderá ser modificado.<br/></td>
 <td><ul>
 <li>Normal</li>
-<li>Inert</li>
+<li>Inerte</li>
 </ul></td>
 </tr>
 </tbody>
@@ -82,11 +82,11 @@ Contém o conteúdo de uma página de diário.
 
 
 
-|              |                                                             |
+|  Elemento     | Valor                                                     |
 |--------------|-------------------------------------------------------------|
-| Tipo de elemento | ComplexType [**ContentType**](contenttype-complex-type.md) |
-| Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk                  |
-| Nome do esquema  | Leitor de diário                                              |
+| Tipo de elemento | [**ComplexType ContentType**](contenttype-complex-type.md) |
+| Namespace    | urn:schemas-microsoft-com:tabletpc:richink                  |
+| Nome do esquema  | Leitor de Diário                                              |
 
 
 

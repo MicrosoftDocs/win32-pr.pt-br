@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e2ddcc8bdea16f5e00974b2b2e58934941e44c68
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: 4754fc75ca09e39cdc7eabbeae2a0a2d2630c31f
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "105764513"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443007"
 ---
 # <a name="contextmap-element"></a>Elemento ContextMap
 
@@ -193,11 +193,8 @@ Esta seção de código mostra um conjunto de declarações de controle **Contex
 ## <a name="element-information"></a>Informações do elemento
 
 
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo com suporte<br/> | Windows 7 |
-| Pode estar vazio                        | Sim       |
+* **Sistema mínimo com suporte**: Windows 7
+* **Pode estar vazio**: Sim
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: Elemento InRibbonGallery
-description: Representa a Galeria de In-Ribbon, um controle baseado na galeria que expõe um subconjunto padrão de itens diretamente na faixa de bits. Todos os itens restantes são exibidos quando um botão de menu suspenso é clicado.
+description: Representa a In-Ribbon, um controle baseado em galeria que expõe um subconjunto padrão de itens diretamente na Faixa de Opções. Todos os itens restantes são exibidos quando um botão de menu suspenso é clicado.
 ms.assetid: 07d035e2-e6db-49fa-b786-a37cbceb58f6
 keywords:
-- Faixa de InRibbonGallery do elemento do Windows
+- Faixa de Opções do Windows do elemento InRibbonGallery
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 24ecf9a34c74d8b66f838e0e49c815f00c80b89c
-ms.sourcegitcommit: 2387bc0339a1764564c1509e72ed5f2e8ae60b36
+ms.openlocfilehash: a25b2ebb937d954adce58231fd8c6b3347a031a7
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "104007275"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443367"
 ---
 # <a name="inribbongallery-element"></a>Elemento InRibbonGallery
 
-Representa a [Galeria na faixa de faixas](windowsribbon-controls-inribbongallery.md), um controle baseado na galeria que expõe um subconjunto padrão de itens diretamente na faixa de bits. Todos os itens restantes são exibidos quando um botão de menu suspenso é clicado.
+Representa a [Galeria na Faixa de Opções](windowsribbon-controls-inribbongallery.md), um controle baseado em galeria que expõe um subconjunto padrão de itens diretamente na Faixa de Opções. Todos os itens restantes são exibidos quando um botão de menu suspenso é clicado.
 
 ## <a name="usage"></a>Uso
 
@@ -65,95 +65,95 @@ Representa a [Galeria na faixa de faixas](windowsribbon-controls-inribbongallery
 <tbody>
 <tr class="odd">
 <td><strong>CommandName</strong><br/></td>
-<td>xs: positiveInteger ou xs: String<br/></td>
+<td>xs:positiveInteger ou xs:string<br/></td>
 <td>Não<br/></td>
-<td>Associa o elemento a um <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs: positiveInteger ou xs: String)<br/> </dt> <dd> Uma cadeia de caracteres, um valor inteiro entre 2 e 59999, inclusive, ou um valor hexadecimal entre 0x2 e 0xea5f, inclusive. <br/> O valor deve ser exclusivo no documento XML da faixa de faixas. <br/> Comprimento máximo: 100 caracteres. <br/> </dd> </dl></td>
+<td>Associa o elemento a um <a href="windowsribbon-element-command.md"><strong>Comando</strong></a>.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger ou xs:string)<br/> </dt> <dd> Uma cadeia de caracteres, um valor inteiro entre 2 e 59999, inclusive ou um valor hexadecimal entre 0x2 e 0xea5f, inclusive. <br/> O valor deve ser exclusivo dentro do documento XML da Faixa de Opções. <br/> Comprimento máximo: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>HasLargeItems</strong><br/></td>
 <td>Boolean<br/></td>
 <td>Não<br/></td>
-<td>Determina se o recurso de imagem grande ou pequena do comando é exibido no controle galeria. <br/>
+<td>Determina se o recurso de imagem grande ou pequeno do Comando é exibido no controle da galeria. <br/>
 <blockquote>
 [!Note]<br />
-Aplica-se somente a galerias em que o valor do atributo <em>Type</em> é igual a <code>Command</code> .
+Aplica-se somente a galerias em que o valor do <em>atributo Type</em> é igual a <code>Command</code> .
 </blockquote>
-<br/> Restrito a um dos valores a seguir (0 e 1 não são válidos):<br/> <br/>
-<dt><span></span><span></span><strong></strong> true<br/> </dt> <dd> Padrão. <br/> </dd> <dt><span></span><span></span><strong></strong> for<br/> </dt> <dd></dd> </dl></td>
+<br/> Restrito a um dos seguintes valores (0 e 1 não são válidos):<br/> <br/>
+<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Padrão. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="odd">
-<td><strong>ItemHeight</strong><br/></td>
+<td><strong>Itemheight</strong><br/></td>
 <td>xs:integer<br/></td>
 <td>Não<br/></td>
-<td>Junto com o @ <em>Width</em>, determina o tamanho da imagem do item que é exibido no controle da galeria. <br/>
+<td>Junto com <em>ItemWidth</em>, determina o tamanho da imagem do item que é exibida no controle da galeria. <br/>
 <blockquote>
 [!Note]<br />
-Aplica-se somente a galerias em que o valor do atributo de <em>tipo</em> é igual a <code>Item</code>.
+Aplica-se somente a galerias em que o valor do <em>atributo Type</em> é igual a <code>Item</code>.
 </blockquote>
 <br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs: Integer)<br/> </dt> <dd> O padrão é -1. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:integer)<br/> </dt> <dd> O padrão é -1. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
-<td><strong>@ Width</strong><br/></td>
+<td><strong>Itemwidth</strong><br/></td>
 <td>xs:integer<br/></td>
 <td>Não<br/></td>
 <td>Junto com <em>ItemHeight</em>, determina o tamanho da imagem do item que é exibida no controle da galeria. <br/>
 <blockquote>
 [!Note]<br />
-Aplica-se somente a galerias em que o valor do atributo de <em>tipo</em> é igual a <code>Item</code>.
+Aplica-se somente a galerias em que o valor do <em>atributo Type</em> é igual a <code>Item</code>.
 </blockquote>
 <br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs: Integer)<br/> </dt> <dd> O padrão é -1. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:integer)<br/> </dt> <dd> O padrão é -1. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>MaxColumns</strong><br/></td>
 <td>xs:integer<br/></td>
 <td>Não<br/></td>
-<td>Especifica o número máximo de colunas que o <strong>InRibbonGallery</strong> exibe, por exemplo, na lista suspensa layout de grupo <em>grande</em> .<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs: Integer)<br/> </dt> <dd></dd> </dl></td>
+<td>Especifica o número máximo de colunas que a <strong>InRibbonGallery</strong> <em></em> exibe, por exemplo, na lista de layouts de grupo grande.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:integer)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>MaxColumnsMedium</strong><br/></td>
 <td>xs:integer<br/></td>
 <td>Não<br/></td>
-<td>Especifica o número máximo de colunas que o <strong>InRibbonGallery</strong> exibe no layout de grupo <em>médio</em> , antes de alternar para o layout <em>grande</em> . <br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs: Integer)<br/> </dt> <dd></dd> </dl></td>
+<td>Especifica o número máximo de colunas que a <strong>InRibbonGallery</strong> exibe no layout do grupo Médio, antes de alternar para <em>Layout Grande.</em> <em></em> <br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:integer)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>MaxRows</strong><br/></td>
 <td>xs:integer<br/></td>
 <td>Não<br/></td>
-<td>Especifica o número máximo de linhas para o layout dos itens <strong>InRibbonGallery</strong> . <br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs: Integer)<br/> </dt> <dd> O padrão é 1. <br/> </dd> </dl></td>
+<td>Especifica o número máximo de linhas para o layout de <strong>itens InRibbonGallery.</strong> <br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:integer)<br/> </dt> <dd> O padrão é 1. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>MinColumnsLarge</strong><br/></td>
 <td>xs:integer<br/></td>
 <td>Não<br/></td>
-<td>Especifica o número mínimo de colunas que o <strong>InRibbonGallery</strong> exibe no layout de grupo <em>grande</em> , antes de passar para <em>médio</em>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs: Integer)<br/> </dt> <dd></dd> </dl></td>
+<td>Especifica o número mínimo de colunas que a <strong>InRibbonGallery</strong> exibe no layout <em>do</em> grupo Grande, antes de alternar para <em>Médio.</em><br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:integer)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>MinColumnsMedium</strong><br/></td>
 <td>xs:integer<br/></td>
 <td>Não<br/></td>
-<td>Especifica o número mínimo de colunas que o <strong>InRibbonGallery</strong> exibe no layout de grupo <em>médio</em> , antes de mudar para <em>pequeno</em>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs: Integer)<br/> </dt> <dd></dd> </dl></td>
+<td>Especifica o número mínimo de colunas que a <strong>InRibbonGallery</strong> exibe no layout <em>do</em> grupo Médio, antes de alternar para <em>Pequeno.</em><br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:integer)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>TextPosition</strong><br/></td>
-<td>Textpositiontype<br/></td>
+<td>TextPositionType<br/></td>
 <td>Não<br/></td>
 <td>Especifica onde o rótulo do item é exibido, em relação à imagem. <br/> Restrito a um dos seguintes valores:<br/> <br/>
-<dt><span></span><span></span><strong></strong> Resultado<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Exibe<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Mantida<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Post<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Adequada<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Melhor<br/> </dt> <dd></dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (Inferior)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Ocultar)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Esquerda)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Sobreposição)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Direita)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Superior)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>Tipo</strong><br/></td>
 <td>xs:string<br/></td>
 <td>Não<br/></td>
 <td>Restrito a um dos seguintes valores:<br/> <br/>
-<dt><span></span><span></span><strong></strong> Los<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Comandos<br/> </dt> <dd></dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (Itens)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Comandos)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -166,10 +166,10 @@ Aplica-se somente a galerias em que o valor do atributo de <em>tipo</em> é igua
 
 | Elemento                                                                                           | Descrição                                        |
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| [**Verificação**](windowsribbon-element-checkbox.md)<br/>                                     | Pode ocorrer uma ou mais vezes<br/> <br/> |
+| [**Checkbox**](windowsribbon-element-checkbox.md)<br/>                                     | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**InRibbonGallery.MenuGroups**](windowsribbon-element-inribbongallery-menugroups.md)<br/> | Deve ocorrer exatamente uma vez<br/> <br/>     |
 | [**InRibbonGallery.MenuLayout**](windowsribbon-element-inribbongallery-menulayout.md)<br/> | Pode ocorrer no máximo uma vez<br/> <br/>      |
-| [**Button**](windowsribbon-element-button.md)<br/>                                       | Pode ocorrer uma ou mais vezes<br/> <br/> |
+| [**Botão**](windowsribbon-element-button.md)<br/>                                       | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**SplitButton**](windowsribbon-element-splitbutton.md)<br/>                               | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**ToggleButton**](windowsribbon-element-togglebutton.md)<br/>                             | Pode ocorrer uma ou mais vezes<br/> <br/> |
 
@@ -192,18 +192,18 @@ Aplica-se somente a galerias em que o valor do atributo de <em>tipo</em> é igua
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="windowsribbon-element-controlgroup.md"><strong>Controlador de controle</strong></a><br/></td>
+<td><a href="windowsribbon-element-controlgroup.md"><strong>ControlGroup</strong></a><br/></td>
 
 </tr>
 <tr class="even">
-<td><a href="windowsribbon-element-group.md"><strong>Group</strong></a><br/></td>
+<td><a href="windowsribbon-element-group.md"><strong>Grupo</strong></a><br/></td>
 
 </tr>
 <tr class="odd">
 <td><a href="windowsribbon-element-quickaccesstoolbar-applicationdefaults.md"><strong>QuickAccessToolbar.ApplicationDefaults</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-Windows 8 e mais recente.
+Windows 8 e mais novos.
 </blockquote>
 <br/> <br/></td>
 </tr>
@@ -216,17 +216,17 @@ Windows 8 e mais recente.
 
 Opcional.
 
-Pode ocorrer no máximo uma vez para cada elemento [**Control**](windowsribbon-element-controlgroup.md) ou [**Group**](windowsribbon-element-group.md) .
+Pode ocorrer no máximo uma vez para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md) [**ou Group.**](windowsribbon-element-group.md)
 
-A captura de tela a seguir ilustra o controle da [Galeria de faixa de](windowsribbon-controls-inribbongallery.md) opções no Microsoft Paint para Windows 7.
+A captura de tela a seguir ilustra o controle [Galeria](windowsribbon-controls-inribbongallery.md) na Faixa de Opções na Faixa de Opções Microsoft Paint para Windows 7.
 
-![captura de tela de um controle da galeria na faixa de faixas na faixa de bits do Microsoft Paint.](images/controls/inribbongallery.png)
+![captura de tela de um controle na galeria na faixa de opções na faixa de opções do Microsoft Paint.](images/controls/inribbongallery.png)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra a marcação básica para uma [Galeria na faixa de](windowsribbon-controls-inribbongallery.md)opções.
+O exemplo a seguir demonstra a marcação básica para uma [Galeria na Faixa de Opções](windowsribbon-controls-inribbongallery.md).
 
-Esta seção de código mostra as declarações de comando **InRibbonGallery** , com um [**grupo**](windowsribbon-element-group.md) associado que atua como o contêiner pai para o elemento **InRibbonGallery** .
+Esta seção de código mostra as declarações de Comando **InRibbonGallery,** com um Grupo associado que atua como o contêiner pai para o elemento **InRibbonGallery.** [](windowsribbon-element-group.md)
 
 
 ```XML
@@ -243,7 +243,7 @@ Esta seção de código mostra as declarações de comando **InRibbonGallery** ,
 
 
 
-Esta seção de código mostra as declarações de controle **InRibbonGallery** .
+Esta seção de código mostra as **declarações de controle InRibbonGallery.**
 
 
 ```XML
@@ -277,11 +277,8 @@ Esta seção de código mostra as declarações de controle **InRibbonGallery** 
 ## <a name="element-information"></a>Informações do elemento
 
 
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo com suporte<br/> | Windows 7 |
-| Pode estar vazio                        | Não        |
+* **Sistema mínimo com suporte:** Windows 7
+* **Pode estar vazio:** Não
 
 
 
@@ -289,13 +286,13 @@ Esta seção de código mostra as declarações de controle **InRibbonGallery** 
 
 <dl> <dt>
 
-[Controle da Galeria de faixa de bits](windowsribbon-controls-inribbongallery.md)
+[Controle na Galeria na Faixa de Opções](windowsribbon-controls-inribbongallery.md)
 </dt> <dt>
 
 [Trabalhando com galerias](ribbon-controls-galleries.md)
 </dt> <dt>
 
-[Exemplo de galeria](windowsribbon-gallerysample.md)
+[Exemplo da Galeria](windowsribbon-gallerysample.md)
 </dt> </dl>
 
  

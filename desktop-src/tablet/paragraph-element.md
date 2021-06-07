@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - windows.ui.xaml.documents.h
-ms.openlocfilehash: bfe3752541bb54571e9802f557e83dcc7632f845
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2f246294c80814ec809c0a1ca035fcb4741c30c5
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105771763"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432228"
 ---
 # <a name="paragraph-element"></a>Elemento Paragraph
 
@@ -38,7 +38,7 @@ Contém um parágrafo.
 
 ## <a name="child-elements"></a>Elementos filho
 
-[**Linha**](line-element.md)
+[**Descritos**](line-element.md)
 
 [**ParagraphLineMetrics**](paragraphlinemetrics-element.md)
 
@@ -48,7 +48,7 @@ Contém um parágrafo.
 
 | Atributo       | Type                      | Obrigatório | Descrição                                                                             | Valores possíveis           |
 |-----------------|---------------------------|----------|-----------------------------------------------------------------------------------------|---------------------------|
-| **Mantida**        | **xs:integer**            | Obrigatório | A distância da origem até o ponto mais à esquerda na caixa delimitadora para o elemento. | Qualquer inteiro.              |
+| **Left**        | **xs:integer**            | Obrigatório | A distância da origem até o ponto mais à esquerda na caixa delimitadora para o elemento. | Qualquer inteiro.              |
 | **Top**         | **xs:integer**            | Obrigatório | A distância da origem até o ponto superior na caixa delimitadora para o elemento.  | Qualquer inteiro.              |
 | **Largura**       | **xs:nonNegativeInteger** | Obrigatório | A largura da caixa delimitadora para o elemento.                                          | Qualquer inteiro não negativo. |
 | **Altura**      | **xs:nonNegativeInteger** | Obrigatório | A altura da caixa delimitadora para o elemento.                                         | Qualquer inteiro não negativo. |
@@ -63,7 +63,7 @@ Contém um parágrafo.
 
 
 
-|              |                                                                 |
+|  Elemento     | Valor                                                     |
 |--------------|-----------------------------------------------------------------|
 | Tipo de elemento | ComplexType de [**paragraphtype**](paragraphtype-complex-type.md) |
 | Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk                      |

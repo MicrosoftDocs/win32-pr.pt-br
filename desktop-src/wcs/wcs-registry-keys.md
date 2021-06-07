@@ -20,12 +20,12 @@ keywords:
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95a1c0072d9a00fe0cff4a4dbe57af839f65731b
-ms.sourcegitcommit: 3f366316c02c411c4c5e14620a699f6f30608634
+ms.openlocfilehash: 058ec839b226e96542604f151f06e2654a4180d5
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "105766588"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444667"
 ---
 # <a name="wcs-registry-keys"></a>Chaves do Registro do WCS
 
@@ -43,7 +43,7 @@ Os aplicativos da área de trabalho devem escutar alterações no registro para 
 
 
 
-|                                  |                                                                                                                                                    |
+|    &nbsp;  |  &nbsp;      | 
 |----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Associações de perfil por usuário    | **HKEY \_ Current \_ User Software \\ Microsoft \\ Windows NT \\ CurrentVersion \\ ICM \\ ProfileAssociations \\ Display \\ {4d36e96e-E325-11CE-BFC1-08002BE10318}** |
 | Associações de perfil em todo o sistema | **HKEY \_ \_ computador local \\ System sistema de \\ \\ controle CurrentControlSet \\ classe \\ {4d36e96e-E325-11CE-BFC1-08002BE10318}**                                        |
