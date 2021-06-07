@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_DDE_INITIATE (DDE. h)
-description: Um aplicativo cliente troca dinâmica de dados (DDE) envia uma mensagem de início do WM \_ DDE \_ para iniciar uma conversa com um aplicativo de servidor respondendo aos nomes de aplicativo e de tópico especificados.
+title: WM_DDE_INITIATE mensagem (Dde.h)
+description: Um aplicativo troca dinâmica de dados cliente (DDE) envia uma mensagem WM DDE INITIATE para iniciar uma conversa com um aplicativo de servidor que responde aos nomes de aplicativo e \_ \_ tópico especificados.
 ms.assetid: d486f584-75a3-4ffd-ba5d-f95f2692cd6c
 keywords:
-- Troca de dados de mensagem WM_DDE_INITIATE
+- WM_DDE_INITIATE troca de dados de mensagens
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 36485db262c46d5364ee0ee26e7e6f39ccf0e677
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bf65e222c7711d429db44e391d4f03c35997e219
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369546"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111386719"
 ---
-# <a name="wm_dde_initiate-message"></a>Mensagem de inicialização de \_ DDE do WM \_
+# <a name="wm_dde_initiate-message"></a>Mensagem WM \_ DDE \_ INITIATE
 
-Um aplicativo cliente troca dinâmica de dados (DDE) envia uma mensagem de **\_ \_ início do WM DDE** para iniciar uma conversa com um aplicativo de servidor respondendo aos nomes de aplicativo e de tópico especificados. Ao receber essa mensagem, todos os aplicativos de servidor com nomes que correspondem ao aplicativo especificado e que dão suporte ao tópico especificado devem confirmá-lo. (Para obter mais informações, consulte a mensagem de [**\_ \_ ACK DDE do WM**](wm-dde-ack.md) .)
+Um troca dinâmica de dados cliente (DDE) envia uma mensagem **WM \_ DDE \_ INITIATE** para iniciar uma conversa com um aplicativo de servidor que responde aos nomes de aplicativo e tópico especificados. Ao receber essa mensagem, todos os aplicativos de servidor com nomes que corresponderem ao aplicativo especificado e que deem suporte ao tópico especificado devem confirmá-lo. (Para obter mais informações, consulte a [**mensagem WM \_ DDE \_ ACK.)**](wm-dde-ack.md)
 
 
 ```C++
@@ -39,36 +39,36 @@ Um aplicativo cliente troca dinâmica de dados (DDE) envia uma mensagem de **\_ 
 *wParam* 
 </dt> <dd>
 
-Um identificador para a janela do cliente que está enviando a mensagem.
+Um alça para a janela do cliente que envia a mensagem.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-A palavra de ordem inferior contém um Atom que identifica o aplicativo com o qual uma conversa é solicitada. O nome do aplicativo não pode conter barras (/) ou barras invertidas ( \) . Esses caracteres são reservados para implementações de rede. Se esse parâmetro for **NULL**, será solicitada uma conversa com todos os aplicativos.
+A palavra de ordem baixa contém um atom que identifica o aplicativo com o qual uma conversa é solicitada. O nome do aplicativo não pode conter barras (/) ou barras in backslashes ( \\ ). Esses caracteres são reservados para implementações de rede. Se esse parâmetro for **NULL,** uma conversa com todos os aplicativos será solicitada.
 
-A palavra de ordem superior contém um átomo que identifica o tópico para o qual uma conversa é solicitada. Se o tópico for **nulo**, as conversas de todos os tópicos disponíveis serão solicitadas.
+A palavra de ordem alta contém um atom que identifica o tópico para o qual uma conversa é solicitada. Se o tópico for **NULL,** serão solicitadas conversas para todos os tópicos disponíveis.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Se a palavra de ordem inferior de *lParam* for **nula**, qualquer aplicativo de servidor poderá responder. Se a palavra de ordem superior de *lParam* for **nula**, qualquer tópico será válido. Após receber uma solicitação de **\_ \_ inicialização de DDE do WM** com a palavra de ordem superior do parâmetro *lParam* definido como **NULL**, um servidor deve enviar uma mensagem de [**\_ \_ ACK DDE do WM**](wm-dde-ack.md) para cada um dos tópicos com suporte.
+Se a palavra de ordem baixa *de lParam* for **NULL,** qualquer aplicativo de servidor poderá responder. Se a palavra de ordem alta de *lParam* for **NULL,** qualquer tópico será válido. Ao receber uma solicitação WM DDE INITIATE com a palavra de ordem alta do parâmetro *lParam* definida como **NULL**, um servidor deve enviar uma mensagem WM **\_ \_ DDE** [**\_ \_ ACK**](wm-dde-ack.md) para cada um dos tópicos aos que ele dá suporte.
 
 ### <a name="sending"></a>Envio
 
-O cliente transmite a mensagem para todas as janelas de nível superior definindo o primeiro parâmetro de [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) para a **\_ difusão de hWnd**.
+O cliente transmite a mensagem para todas as janelas de nível superior definindo o primeiro parâmetro de [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) como **HWND \_ BROADCAST.**
 
-Se o aplicativo cliente já tiver obtido o identificador de janela do servidor desejado, ele poderá enviar o **WM \_ DDE \_ inicie** diretamente para a janela do servidor passando o identificador de janela do servidor como o primeiro parâmetro de [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage).
+Se o aplicativo cliente já tiver obtido o handle de janela do servidor desejado, ele poderá enviar **WM \_ DDE \_ INITIATE** diretamente para a janela do servidor passando o alça de janela do servidor como o primeiro parâmetro [**de SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage).
 
-O aplicativo cliente aloca Atoms chamando a função [**GlobalAddAtom**](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma) .
+O aplicativo cliente aloca átomos chamando a [**função GlobalAddAtom.**](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma)
 
-Quando [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) retorna, o aplicativo cliente deve excluir os átomos.
+Quando [**SendMessage retorna,**](/windows/desktop/api/winuser/nf-winuser-sendmessage) o aplicativo cliente deve excluir os átomos.
 
 ### <a name="receiving"></a>Recebimento
 
-Para concluir a inicialização de uma conversa, o aplicativo de servidor deve responder com uma ou mais mensagens de [**\_ \_ ACK DDE do WM**](wm-dde-ack.md) , em que cada mensagem é para um tópico separado. Ao enviar a mensagem de **\_ \_ ACK DDE do WM** , o servidor deve criar novos átomos; ele não deve reutilizar os átomos enviados com o **WM \_ DDE \_ Iniciar**.
+Para concluir o início de uma conversa, o aplicativo de servidor deve responder com uma ou mais mensagens [**WM \_ DDE \_ ACK,**](wm-dde-ack.md) em que cada mensagem é para um tópico separado. Ao enviar **a mensagem WM \_ DDE \_ ACK,** o servidor deve criar novos átomos; ele não deve reutilizar os átomos enviados com **WM \_ DDE \_ INITIATE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -78,7 +78,7 @@ Para concluir a inicialização de uma conversa, o aplicativo de servidor deve r
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                 |
-| Cabeçalho<br/>                   | <dl> <dt>DDE. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Dde.h (inclua Windows.h)</dt> </dl> |
 
 
 
@@ -89,7 +89,7 @@ Para concluir a inicialização de uma conversa, o aplicativo de servidor deve r
 **Referência**
 </dt> <dt>
 
-[**GlobalAddAtom**](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma)
+[**Globaladdatom**](/windows/desktop/api/Winbase/nf-winbase-globaladdatoma)
 </dt> <dt>
 
 [**PostMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea)
@@ -98,10 +98,10 @@ Para concluir a inicialização de uma conversa, o aplicativo de servidor deve r
 [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage)
 </dt> <dt>
 
-[**\_ACK de DDE do WM \_**](wm-dde-ack.md)
+[**WM \_ DDE \_ ACK**](wm-dde-ack.md)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Sobre troca dinâmica de dados](about-dynamic-data-exchange.md)

@@ -4,12 +4,12 @@ description: Este tópico fornece informações sobre funções de objeto que n�
 ms.assetid: 0c3a3ccf-f02a-4aca-9380-a13774598a19
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f3d7fbdbb6dfbf83729f3e1c1d4caa3027f8d51
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f17e8573142a57e0acf08980895fdae3ea6d1841
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641531"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443997"
 ---
 # <a name="other-object-roles-and-supported-methods-msaa-ui-element-reference"></a>Outras funções de objeto e métodos com suporte (referência de elemento de interface do usuário do MSAA)
 
@@ -18,13 +18,13 @@ Este tópico fornece informações sobre funções de objeto que não estão inc
 > [!Note]  
 > Use este tópico como uma diretriz. É altamente recomendável que você use as ferramentas de Acessibilidade Ativa da Microsoft para verificar o comportamento esperado de uma função de objeto individual.
 
- 
+ 
 
 A tabela a seguir lista as funções de objeto adicionais às quais Oleacc.dll dá suporte.
 
 
 
-|                                                                         |                                                           |
+| &nbsp; |  &nbsp; |
 |-------------------------------------------------------------------------|-----------------------------------------------------------|
 | [**\_alerta do sistema de funções \_**](/windows)                           | [**\_lista suspensa do sistema de funções \_**](/windows)       |
 | [**\_aplicativo do sistema de funções \_**](/windows)               | [**\_equação do sistema de funções \_**](/windows)       |
@@ -43,7 +43,7 @@ A tabela a seguir lista as funções de objeto adicionais às quais Oleacc.dll d
 
 
 
- 
+ 
 
 ## <a name="role_system_alert"></a>\_alerta do sistema de funções \_
 
@@ -126,383 +126,383 @@ Para obter mais informações sobre essa função, [**consulte \_ sistema \_ de 
 -   obter \_ accHelp
 -   obter \_ accHelpTopic
 -   obter \_ accKeyboardShortcut
--   obter \_ accName
--   obter \_ accParent
--   obter \_ accRole
--   obter \_ accState
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
 
-## <a name="role_system_buttonmenu"></a>\_BUTTONMENU do sistema de função \_
+## <a name="role_system_buttonmenu"></a>BOTÃO \_ DO SISTEMA DE \_ FUNÇÃOMENU
 
-Para obter mais informações sobre essa função, [**consulte \_ sistema \_ de funções BUTTONMENU**](object-roles.md).
-
-**Propriedades e métodos com suporte**
-
--   accDoDefaultAction
--   accHitTest
--   accLocation
--   accNavigate
--   obter \_ accDefaultAction
--   obter \_ accFocus
--   obter \_ accHelp
--   obter \_ accHelpTopic
--   obter \_ accKeyboardShortcut
--   obter \_ accName
--   obter \_ accParent
--   obter \_ accRole
--   obter \_ accState
-
-## <a name="role_system_cell"></a>\_célula do sistema de funções \_
-
-Para obter mais informações sobre essa função, [**consulte \_ \_ célula do sistema de funções**](object-roles.md).
+Para obter mais informações sobre essa função, consulte [**ROLE \_ SYSTEM \_ BUTTONMENU**](object-roles.md).
 
 **Propriedades e métodos com suporte**
 
--   accHitTest
--   accLocation
--   accNavigate
--   accSelect
--   obter \_ accChild
--   obter \_ accChildCount
--   obter \_ accFocus
--   obter \_ accHelp
--   obter \_ accHelpTopic
--   obter \_ accKeyboardShortcut
--   obter \_ accName
--   obter \_ accParent
--   obter \_ accRole
--   obter \_ accState
--   obter \_ accValue
+-   Accdodefaultaction
+-   Acchittest
+-   Acclocation
+-   Accnavigate
+-   get \_ accDefaultAction
+-   get \_ accFocus
+-   get \_ accHelp
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
 
-## <a name="role_system_character"></a>\_caractere do sistema de funções \_
+## <a name="role_system_cell"></a>CÉLULA \_ DO SISTEMA DE \_ FUNÇÃO
 
-Para obter mais informações sobre essa função, consulte [**função do \_ \_ caractere do sistema**](object-roles.md).
+Para obter mais informações sobre essa função, consulte [**ROLE \_ SYSTEM \_ CELL**](object-roles.md).
 
 **Propriedades e métodos com suporte**
 
--   accHitTest
--   accLocation
--   accNavigate
--   obter \_ accDescription
--   obter \_ accFocus
--   obter \_ accKeyboardShortcut
--   obter \_ accName
--   obter \_ accParent
--   obter \_ accRole
--   obter \_ accState
--   obter \_ accValue
+-   Acchittest
+-   Acclocation
+-   Accnavigate
+-   Accselect
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accFocus
+-   get \_ accHelp
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+-   get \_ accValue
 
-## <a name="role_system_chart"></a>\_gráfico do sistema de funções \_
+## <a name="role_system_character"></a>CARACTERE \_ DO SISTEMA DE \_ FUNÇÃO
 
-Para obter mais informações sobre essa função, [**consulte \_ \_ gráfico do sistema de funções**](object-roles.md).
-
-**Propriedades e métodos com suporte**
-
--   accHitTest
--   accLocation
--   accNavigate
--   obter \_ accChild
--   obter \_ accChildCount
--   obter \_ accFocus
--   obter \_ accHelp
--   obter \_ accHelpTopic
--   obter \_ accKeyboardShortcut
--   obter \_ accName
--   obter \_ accParent
--   obter \_ accRole
--   obter \_ accState
-
-## <a name="role_system_clock"></a>\_relógio do sistema de função \_
-
-Para obter mais informações sobre essa função, [**consulte \_ \_ relógio do sistema de funções**](object-roles.md).
+Para obter mais informações sobre essa função, consulte [**ROLE \_ SYSTEM \_ CHARACTER**](object-roles.md).
 
 **Propriedades e métodos com suporte**
 
--   accHitTest
--   accLocation
--   accNavigate
--   obter \_ accFocus
--   obter \_ accHelp
--   obter \_ accHelpTopic
--   obter \_ accKeyboardShortcut
--   obter \_ accName
--   obter \_ accParent
--   obter \_ accRole
--   obter \_ accState
--   obter \_ accValue
+-   Acchittest
+-   Acclocation
+-   Accnavigate
+-   get \_ accDescription
+-   get \_ accFocus
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+-   get \_ accValue
 
-## <a name="role_system_column"></a>\_coluna do sistema de funções \_
+## <a name="role_system_chart"></a>GRÁFICO \_ DO SISTEMA DE \_ FUNÇÕES
 
-Para obter mais informações sobre essa função, [**consulte \_ \_ coluna do sistema de funções**](object-roles.md).
-
-**Propriedades e métodos com suporte**
-
--   accHitTest
--   accLocation
--   accNavigate
--   accSelect
--   obter \_ accChild
--   obter \_ accChildCount
--   obter \_ accFocus
--   obter \_ accName
--   obter \_ accParent
--   obter \_ accRole
--   obter \_ accState
--   obter \_ accValue
-
-## <a name="role_system_diagram"></a>\_diagrama do sistema de funções \_
-
-Para obter mais informações sobre essa função, [**consulte \_ \_ diagrama do sistema de funções**](object-roles.md).
+Para obter mais informações sobre essa função, consulte [**ROLE \_ SYSTEM \_ CHART**](object-roles.md).
 
 **Propriedades e métodos com suporte**
 
--   accHitTest
--   accLocation
--   accNavigate
--   obter \_ accChild
--   obter \_ accChildCount
--   obter \_ accFocus
--   obter \_ accHelp
--   obter \_ accHelpTopic
--   obter \_ accKeyboardShortcut
--   obter \_ accName
--   obter \_ accParent
--   obter \_ accRole
--   obter \_ accState
+-   Acchittest
+-   Acclocation
+-   Accnavigate
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accFocus
+-   get \_ accHelp
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
 
-## <a name="role_system_dial"></a>\_discagem do sistema de função \_
+## <a name="role_system_clock"></a>RELÓGIO \_ DO SISTEMA DE \_ FUNÇÃO
 
-Para obter mais informações sobre essa função, consulte [**role \_ System \_ Dial**](object-roles.md).
-
-**Propriedades e métodos com suporte**
-
--   accDoDefaultAction
--   accHitTest
--   accLocation
--   accNavigate
--   obter \_ accDefaultAction
--   obter \_ accFocus
--   obter \_ accHelp
--   obter \_ accHelpTopic
--   obter \_ accKeyboardShortcut
--   obter \_ accName
--   obter \_ accParent
--   obter \_ accRole
--   obter \_ accState
--   obter \_ accValue
-
-## <a name="role_system_document"></a>\_documento do sistema de funções \_
-
-Para obter mais informações sobre essa função, [**consulte \_ \_ documento do sistema de funções**](object-roles.md).
+Para obter mais informações sobre essa função, consulte [**ROLE \_ SYSTEM \_ CLOCK**](object-roles.md).
 
 **Propriedades e métodos com suporte**
 
--   accHitTest
--   accLocation
--   accNavigate
--   accSelect
--   obter \_ accChild
--   obter \_ accChildCount
--   obter \_ accFocus
--   obter \_ accName
--   obter \_ accParent
--   obter \_ accRole
--   obter \_ accState
+-   Acchittest
+-   Acclocation
+-   Accnavigate
+-   get \_ accFocus
+-   get \_ accHelp
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+-   get \_ accValue
 
-## <a name="role_system_droplist"></a>\_lista suspensa do sistema de funções \_
+## <a name="role_system_column"></a>COLUNA \_ DO SISTEMA DE \_ FUNÇÃO
 
-Para obter mais informações sobre essa função, [**consulte \_ \_ lista suspensa do sistema de funções**](object-roles.md).
-
-**Propriedades e métodos com suporte**
-
--   accDoDefaultAction
--   accHitTest
--   accLocation
--   accNavigate
--   obter \_ accChild
--   obter \_ accChildCount
--   obter \_ accDefaultAction
--   obter \_ accFocus
--   obter \_ accHelp
--   obter \_ accHelpTopic
--   obter \_ accKeyboardShortcut
--   obter \_ accName
--   obter \_ accParent
--   obter \_ accRole
--   obter \_ accState
-
-## <a name="role_system_equation"></a>\_equação do sistema de funções \_
-
-Para obter mais informações sobre essa função, [**consulte \_ \_ equação do sistema de funções**](object-roles.md).
+Para obter mais informações sobre essa função, consulte [**ROLE \_ SYSTEM \_ COLUMN**](object-roles.md).
 
 **Propriedades e métodos com suporte**
 
--   accHitTest
--   accLocation
--   accNavigate
--   obter \_ accFocus
--   obter \_ accName
--   obter \_ accParent
--   obter \_ accRole
--   obter \_ accState
--   obter \_ accValue
+-   Acchittest
+-   Acclocation
+-   Accnavigate
+-   Accselect
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accFocus
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+-   get \_ accValue
 
-## <a name="role_system_graphic"></a>\_elemento gráfico do sistema de funções \_
+## <a name="role_system_diagram"></a>DIAGRAMA \_ DO SISTEMA DE \_ FUNÇÃO
 
-Para obter mais informações sobre essa função, [**consulte \_ \_ elemento gráfico do sistema de funções**](object-roles.md).
-
-**Propriedades e métodos com suporte**
-
--   accHitTest
--   accLocation
--   accNavigate
--   obter \_ accFocus
--   obter \_ accHelp
--   obter \_ accHelpTopic
--   obter \_ accKeyboardShortcut
--   obter \_ accName
--   obter \_ accParent
--   obter \_ accRole
--   obter \_ accState
-
-## <a name="role_system_helpballoon"></a>\_HELPBALLOON do sistema de função \_
-
-Para obter mais informações sobre essa função, [**consulte \_ sistema \_ de funções HELPBALLOON**](object-roles.md).
+Para obter mais informações sobre essa função, consulte [**ROLE \_ SYSTEM \_ DIAGRAM**](object-roles.md).
 
 **Propriedades e métodos com suporte**
 
--   accHitTest
--   accLocation
--   accNavigate
--   obter \_ accChild
--   obter \_ accChildCount
--   obter \_ accDefaultAction
--   obter \_ accName
--   obter \_ accParent
--   obter \_ accRole
--   obter \_ accState
--   obter \_ accValue
+-   Acchittest
+-   Acclocation
+-   Accnavigate
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accFocus
+-   get \_ accHelp
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
 
-## <a name="role_system_ipaddress"></a>\_IPAddress do sistema de função \_
+## <a name="role_system_dial"></a>ROLE \_ SYSTEM \_ DIAL
 
-Para obter mais informações sobre essa função, [**consulte \_ \_ IPAddress do sistema de função**](object-roles.md).
-
-**Propriedades e métodos com suporte**
-
--   accHitTest
--   accLocation
--   accNavigate
--   obter \_ accChild
--   obter \_ accChildCount
--   obter \_ accFocus
--   obter \_ accHelp
--   obter \_ accHelpTopic
--   obter \_ accKeyboardShortcut
--   obter \_ accName
--   obter \_ accParent
--   obter \_ accRole
--   obter \_ accState
--   obter \_ accValue
-
-## <a name="role_system_link"></a>\_link do sistema de funções \_
-
-Para obter mais informações sobre essa função, [**consulte \_ \_ link do sistema de funções**](object-roles.md).
+Para obter mais informações sobre essa função, consulte [**ROLE \_ SYSTEM \_ DIAL**](object-roles.md).
 
 **Propriedades e métodos com suporte**
 
--   accDoDefaultAction
--   accHitTest
--   accLocation
--   accNavigate
--   obter \_ accChild
--   obter \_ accChildCount
--   obter \_ accDefaultAction
--   obter \_ accDescription
--   obter \_ accFocus
--   obter \_ accKeyboardShortcut
--   obter \_ accName
--   obter \_ accParent
--   obter \_ accRole
--   obter \_ accState
--   obter \_ accValue
+-   Accdodefaultaction
+-   Acchittest
+-   Acclocation
+-   Accnavigate
+-   get \_ accDefaultAction
+-   get \_ accFocus
+-   get \_ accHelp
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+-   get \_ accValue
 
-## <a name="role_system_pane"></a>\_painel do sistema de funções \_
+## <a name="role_system_document"></a>DOCUMENTO DO \_ SISTEMA \_ DE FUNÇÃO
 
-Para obter mais informações sobre essa função, [**consulte \_ \_ painel do sistema de funções**](object-roles.md).
-
-**Propriedades e métodos com suporte**
-
--   accHitTest
--   accLocation
--   accNavigate
--   obter \_ accChild
--   obter \_ accChildCount
--   obter \_ accFocus
--   obter \_ accHelp
--   obter \_ accHelpTopic
--   obter \_ accKeyboardShortcut
--   obter \_ accName
--   obter \_ accParent
--   obter \_ accRole
--   obter \_ accState
-
-## <a name="role_system_row"></a>\_linha do sistema de função \_
-
-Para obter mais informações sobre essa função, [**consulte \_ \_ linha do sistema de funções**](object-roles.md).
+Para obter mais informações sobre essa função, consulte [**ROLE \_ SYSTEM \_ DOCUMENT**](object-roles.md).
 
 **Propriedades e métodos com suporte**
 
--   accHitTest
--   accLocation
--   accNavigate
--   accSelect
--   obter \_ accChild
--   obter \_ accChildCount
--   obter \_ accDescription
--   obter \_ accFocus
--   obter \_ accName
--   obter \_ accParent
--   obter \_ accRole
--   obter \_ accState
--   obter \_ accValue
+-   Acchittest
+-   Acclocation
+-   Accnavigate
+-   Accselect
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accFocus
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
 
-## <a name="role_system_rowheader"></a>subcabeçalho de sistema de função \_ \_
+## <a name="role_system_droplist"></a>LISTA \_ DE DROPLIST DO \_ SISTEMA DE FUNÇÕES
 
-Para obter mais informações sobre essa função, consulte [**função do sistema de funções \_ \_**](object-roles.md).
+Para obter mais informações sobre essa função, consulte [**ROLE \_ SYSTEM \_ DROPLIST**](object-roles.md).
 
 **Propriedades e métodos com suporte**
 
--   accHitTest
--   accLocation
--   accNavigate
--   accSelect
--   obter \_ accChild
--   obter \_ accChildCount
--   obter \_ accDefaultAction
--   obter \_ accDescription
--   obter \_ accFocus
--   obter \_ accName
--   obter \_ accParent
--   obter \_ accRole
--   obter \_ accState
--   obter \_ accValue
+-   Accdodefaultaction
+-   Acchittest
+-   Acclocation
+-   Accnavigate
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accDefaultAction
+-   get \_ accFocus
+-   get \_ accHelp
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
 
-## <a name="role_system_separator"></a>separador de sistema de função \_ \_
+## <a name="role_system_equation"></a>EQUAÇÃO \_ DO SISTEMA DE \_ FUNÇÃO
 
-Para obter mais informações sobre essa função, [**consulte \_ \_ separador de sistema de funções**](object-roles.md).
+Para obter mais informações sobre essa função, consulte [**ROLE \_ SYSTEM \_ EQUATION**](object-roles.md).
 
 **Propriedades e métodos com suporte**
 
--   accHitTest
--   accLocation
--   obter \_ accChild
--   obter \_ accChildCount
--   obter \_ accParent
--   obter \_ accRole
--   obter \_ accState
+-   Acchittest
+-   Acclocation
+-   Accnavigate
+-   get \_ accFocus
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+-   get \_ accValue
 
-## <a name="role_system_sound"></a>\_som do sistema de função \_
+## <a name="role_system_graphic"></a>GRÁFICO \_ DO SISTEMA DE \_ FUNÇÃO
 
-Para obter mais informações sobre essa função, [**consulte \_ \_ som do sistema de função**](object-roles.md).
+Para obter mais informações sobre essa função, consulte [**ROLE \_ SYSTEM \_ GRAPHIC**](object-roles.md).
+
+**Propriedades e métodos com suporte**
+
+-   Acchittest
+-   Acclocation
+-   Accnavigate
+-   get \_ accFocus
+-   get \_ accHelp
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+
+## <a name="role_system_helpballoon"></a>ROLE \_ SYSTEM \_ HELPBALLBALLBALLBALL
+
+Para obter mais informações sobre essa função, [**consulte ROLE \_ SYSTEM \_ HELPBALLBALLBALL .**](object-roles.md)
+
+**Propriedades e métodos com suporte**
+
+-   Acchittest
+-   Acclocation
+-   Accnavigate
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accDefaultAction
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+-   get \_ accValue
+
+## <a name="role_system_ipaddress"></a>ROLE \_ SYSTEM \_ IPADDRESS
+
+Para obter mais informações sobre essa função, consulte [**ROLE \_ SYSTEM \_ IPADDRESS**](object-roles.md).
+
+**Propriedades e métodos com suporte**
+
+-   Acchittest
+-   Acclocation
+-   Accnavigate
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accFocus
+-   get \_ accHelp
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+-   get \_ accValue
+
+## <a name="role_system_link"></a>\_LINK DO SISTEMA DE \_ FUNÇÃO
+
+Para obter mais informações sobre essa função, consulte [**ROLE \_ SYSTEM \_ LINK**](object-roles.md).
+
+**Propriedades e métodos com suporte**
+
+-   Accdodefaultaction
+-   Acchittest
+-   Acclocation
+-   Accnavigate
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accDefaultAction
+-   get \_ accDescription
+-   get \_ accFocus
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+-   get \_ accValue
+
+## <a name="role_system_pane"></a>PAINEL \_ SISTEMA \_ DE FUNÇÃO
+
+Para obter mais informações sobre essa função, consulte [**ROLE \_ SYSTEM \_ PANE**](object-roles.md).
+
+**Propriedades e métodos com suporte**
+
+-   Acchittest
+-   Acclocation
+-   Accnavigate
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accFocus
+-   get \_ accHelp
+-   get \_ accHelpTopic
+-   get \_ accKeyboardShortcut
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+
+## <a name="role_system_row"></a>LINHA \_ DO SISTEMA DE \_ FUNÇÃO
+
+Para obter mais informações sobre essa função, consulte [**ROLE \_ SYSTEM \_ ROW**](object-roles.md).
+
+**Propriedades e métodos com suporte**
+
+-   Acchittest
+-   Acclocation
+-   Accnavigate
+-   Accselect
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accDescription
+-   get \_ accFocus
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+-   get \_ accValue
+
+## <a name="role_system_rowheader"></a>\_ROWHEADER DO SISTEMA DE \_ FUNÇÃO
+
+Para obter mais informações sobre essa função, [**consulte ROLE \_ SYSTEM \_ ROWHEADER**](object-roles.md).
+
+**Propriedades e métodos com suporte**
+
+-   Acchittest
+-   Acclocation
+-   Accnavigate
+-   Accselect
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accDefaultAction
+-   get \_ accDescription
+-   get \_ accFocus
+-   get \_ accName
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+-   get \_ accValue
+
+## <a name="role_system_separator"></a>SEPARADOR \_ DO \_ SISTEMA DE FUNÇÃO
+
+Para obter mais informações sobre essa função, consulte [**ROLE \_ SYSTEM \_ SEPARATOR**](object-roles.md).
+
+**Propriedades e métodos com suporte**
+
+-   Acchittest
+-   Acclocation
+-   get \_ accChild
+-   get \_ accChildCount
+-   get \_ accParent
+-   get \_ accRole
+-   get \_ accState
+
+## <a name="role_system_sound"></a>SOM \_ DO SISTEMA DE \_ FUNÇÃO
+
+Para obter mais informações sobre essa função, consulte [**ROLE \_ SYSTEM \_ SOUND**](object-roles.md).
 
 **Propriedades e métodos com suporte**
 
@@ -564,6 +564,6 @@ Para obter mais informações sobre essa função, [**consulte \_ espaço em \_ 
 -   obter \_ accRole
 -   obter \_ accState
 
- 
+ 
 
- 
+ 

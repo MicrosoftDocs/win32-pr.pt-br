@@ -4,12 +4,12 @@ description: DirectMLX é uma biblioteca auxiliar somente de cabeçalho do C++ p
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 11/05/2020
-ms.openlocfilehash: 2ddd6d9063002b76449224ebafdb6dd021b27fa0
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: ba7eca27a39b690f678bdac1ea0feba1991e8b40
+ms.sourcegitcommit: d168355cd7112871f24643b4079c2640b36f4975
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107803361"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111521183"
 ---
 # <a name="directmlx"></a>DirectMLX
 
@@ -174,4 +174,4 @@ auto result = dml::Convolution(/* ... */);
 * [GitHub DirectML](https://github.com/microsoft/DirectML/tree/master/Libraries)
 * [Exemplo de yolov4 de DirectMLX](https://github.com/microsoft/DirectML/tree/master/Samples/yolov4)
 * [Usando progressos para expressar o layout de enchimento e de memória](./dml-strides.md)
-* [Estrutura de DML_GRAPH_DESC](./directml/ns-directml-dml_graph_desc.md)
+* [Estrutura de DML_GRAPH_DESC](/windows/win32/api/directml/ns-directml-dml_graph_desc)

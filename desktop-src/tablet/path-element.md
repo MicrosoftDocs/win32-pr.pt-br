@@ -1,19 +1,19 @@
 ---
-description: O caminho para a imagem usada para o plano de fundo de uma nota do diário.
+description: O caminho para a imagem usada para a plano de fundo de uma nota de Diário.
 ms.assetid: bf7f39ec-8f1f-437c-b172-fd6f94af97bc
 title: Elemento Path
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 707dda1a82a99b863148be5fa312900f6cfe28eb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee8299e66874a04ba9ff338b0b77d73ffd547ec4
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011172"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432369"
 ---
 # <a name="path-element"></a>Elemento Path
 
-O caminho para a imagem usada para o plano de fundo de uma nota do diário.
+O caminho para a imagem usada para a plano de fundo de uma nota de Diário.
 
 ## <a name="definition"></a>Definição
 
@@ -37,11 +37,11 @@ Nenhum.
 
 
 
-|              |                                            |
+|  Elemento     | Valor                                                     |
 |--------------|--------------------------------------------|
 | Tipo de elemento | **xs:string**                              |
-| Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk |
-| Nome do esquema  | Leitor de diário                             |
+| Namespace    | urn:schemas-microsoft-com:tabletpc:richink |
+| Nome do esquema  | Leitor de Diário                             |
 
 
 

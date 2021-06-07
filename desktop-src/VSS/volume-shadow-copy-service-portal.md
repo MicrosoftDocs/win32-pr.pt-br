@@ -4,12 +4,12 @@ ms.assetid: 1eca1e3e-fc86-44b5-b3c4-bcee41bc5a43
 title: Serviço de Cópias de Sombra de Volume
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 438ef32f1cbbc5fc82878486d9ad35b549f4535a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2159d39f407f7ae5dbde454ab6cf3562307d892c
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763762"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443077"
 ---
 # <a name="volume-shadow-copy-service"></a>Serviço de Cópias de Sombra de Volume
 
@@ -49,7 +49,7 @@ Todos os aplicativos VSS de 32 bits (solicitantes, provedores e gravadores) deve
 
 
 
-|                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|   Recurso                                 |   Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 |------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Windows Vista e posterior            | O VSS está disponível no SDK (Software Development Kit) do Microsoft Windows. Você pode instalar o SDK para Windows 7 e Windows Server 2008 R2 no [centro de download do Windows](https://www.microsoft.com/download/details.aspx?id=8279). Você também pode baixar a [versão ISO](https://www.microsoft.com/download/details.aspx?id=8442) do SDK no centro de download do Windows. As versões anteriores do SDK podem ser baixadas na [página de Download SDK do Windows](https://msdn.microsoft.com/windows/bb980924.aspx). |
 | Windows Server 2003 e Windows XP | O VSS está disponível no SDK do Serviço de Cópias de Sombra de Volume 7,2, que pode ser baixado no [centro de download do Windows](https://www.microsoft.com/download/details.aspx?id=23490). Observe que os arquivos vssapi. lib de 64 bits nos diretórios no diretório do Win2003 \\ obj podem ser usados para as versões de 64 bits do Windows Server 2003 e do Windows XP.                                                                                                                                                                 |

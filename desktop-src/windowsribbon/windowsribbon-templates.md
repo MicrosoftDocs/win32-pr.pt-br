@@ -1,73 +1,73 @@
 ---
-title: Personalizando uma faixa de guia por meio de definições de tamanho e políticas de dimensionamento
-description: Os controles hospedados na barra de comandos da faixa de opções estão sujeitos a regras de layout que são impostas pela estrutura da faixa de opções do Windows e com base em uma combinação de comportamentos padrão e modelos de layout (ambos definidos pelo Framework e personalizados), conforme declarado na marcação da faixa de opções. Essas regras definem os comportamentos de layout adaptável da estrutura da faixa de opção que influenciam como os controles na barra de comandos se adaptam a vários tamanhos de faixa de opção em tempo de execução.
+title: Personalização de uma faixa de opções por meio de definições de tamanho e políticas de dimensionamento
+description: Os controles hospedados na barra de comandos da faixa de opções estão sujeitos a regras de layout impostas pela estrutura da Faixa de Opções do Windows e com base em uma combinação de comportamentos padrão e modelos de layout (definidos por estrutura e personalizados), conforme declarado na marcação faixa de opções. Essas regras definem os comportamentos de layout adaptável da estrutura da Faixa de Opções que influenciam como os controles na barra de comandos se adaptam a vários tamanhos de faixa de opções em tempo de corrida.
 ms.assetid: b5869394-3fa9-4817-add9-54487434fc4f
 keywords:
-- Faixa de, personalização do Windows
-- Faixa de faixas, personalizando
-- Windows Ribbon, modelos de SizeDefinition
-- Faixa de SizeDefinition, modelos de modelo
-- Faixa de-se do Windows, modelos personalizados
-- Faixa de, modelos personalizados
-- Personalizando a faixa de-se do Windows
+- Faixa de Opções do Windows, personalização
+- Faixa de opções, personalização
+- Faixa de Opções do Windows, Modelos sizeDefinition
+- Ribbon,SizeDefinition templates
+- Faixa de Opções do Windows, modelos personalizados
+- Faixa de opções, modelos personalizados
+- personalização da Faixa de Opções do Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b12618f88576cddeff119534215e501216193c3
-ms.sourcegitcommit: 2387bc0339a1764564c1509e72ed5f2e8ae60b36
+ms.openlocfilehash: f6576a672aa8c3d328a341370a7568595e988908
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "104557577"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444137"
 ---
-# <a name="customizing-a-ribbon-through-size-definitions-and-scaling-policies"></a>Personalizando uma faixa de guia por meio de definições de tamanho e políticas de dimensionamento
+# <a name="customizing-a-ribbon-through-size-definitions-and-scaling-policies"></a>Personalização de uma faixa de opções por meio de definições de tamanho e políticas de dimensionamento
 
-Os controles hospedados na barra de comandos da faixa de opções estão sujeitos a regras de layout que são impostas pela estrutura da faixa de opções do Windows e com base em uma combinação de comportamentos padrão e modelos de layout (ambos definidos pelo Framework e personalizados), conforme declarado na marcação da faixa de opções. Essas regras definem os comportamentos de layout adaptável da estrutura da faixa de opção que influenciam como os controles na barra de comandos se adaptam a vários tamanhos de faixa de opção em tempo de execução.
+Os controles hospedados na barra de comandos da faixa de opções estão sujeitos a regras de layout impostas pela estrutura da Faixa de Opções do Windows e com base em uma combinação de comportamentos padrão e modelos de layout (definidos por estrutura e personalizados), conforme declarado na marcação faixa de opções. Essas regras definem os comportamentos de layout adaptável da estrutura da Faixa de Opções que influenciam como os controles na barra de comandos se adaptam a vários tamanhos de faixa de opções em tempo de corrida.
 
 -   [Introdução](#introduction)
-    -   [Modelos de faixa de SizeDefinition](#customizing-a-ribbon-through-size-definitions-and-scaling-policies)
+    -   [Tamanho da Faixa de Opções Modelos de Definição](#customizing-a-ribbon-through-size-definitions-and-scaling-policies)
     -   [Modelos personalizados](#custom-templates)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="introduction"></a>Introdução
 
-O layout adaptável, conforme definido pela estrutura da faixa de opção, é a capacidade de todos os controles dentro da interface do usuário da faixa de opção ajustarem dinamicamente sua organização, tamanho, formato e escala relativa com base nas alterações no tamanho da faixa de opção em tempo de execução.
+O layout adaptável, conforme definido pela estrutura da Faixa de Opções, é a capacidade de todos os controles na interface do usuário da faixa de opções ajustar dinamicamente sua organização, tamanho, formato e escala relativa com base nas alterações no tamanho da faixa de opções em tempo de executar.
 
-A estrutura expõe a funcionalidade de layout adaptável por meio de um conjunto de elementos de marcação dedicados à especificação e à personalização de vários comportamentos de layout. Uma coleção de modelos, chamada [**SizeDefinitions**](windowsribbon-element-sizedefinition.md), é definida pela estrutura, cada um com suporte para vários cenários de controle e layout. No entanto, a estrutura também dá suporte a modelos personalizados caso os modelos predefinidos não forneçam a experiência de interface do usuário ou os layouts exigidos por um aplicativo.
+A estrutura expõe a funcionalidade de layout adaptável por meio de um conjunto de elementos de marcação dedicados a especificar e personalizar vários comportamentos de layout. Uma coleção de modelos, chamada [**SizeDefinitions,**](windowsribbon-element-sizedefinition.md)é definida pela estrutura , cada uma com suporte a vários cenários de controle e layout. No entanto, a estrutura também dá suporte a modelos personalizados caso os modelos predefinidos não forneçam a experiência da interface do usuário ou os layouts exigidos por um aplicativo.
 
-Para exibir controles em um layout preferencial em um tamanho de faixa de opções específico, os modelos predefinidos e os modelos personalizados funcionam em conjunto com o elemento [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md) . Esse elemento contém um manifesto de preferências de tamanho que a estrutura usa como um guia ao renderizar a faixa de opções.
+Para exibir controles em um layout preferencial em um tamanho de faixa de opções específico, modelos predefinidos e modelos personalizados funcionam em conjunto com o [**elemento ScalingPolicy.**](windowsribbon-element-scalingpolicy.md) Esse elemento contém um manifesto de preferências de tamanho que a estrutura usa como um guia ao renderizar a faixa de opções.
 
 > [!Note]  
-> A estrutura da faixa de opção fornece comportamentos de layout padrão com base em um conjunto de heurísticas internas para a organização e apresentação de controles em tempo de execução sem a necessidade de modelos [**SizeDefinition**](windowsribbon-element-sizedefinition.md) predefinidos. No entanto, esse recurso destina-se apenas a fins de protótipo.
+> A estrutura da Faixa de Opções fornece comportamentos de layout padrão com base em um conjunto de heurísticas internos para a organização e apresentação de controles em tempo de operação sem a necessidade de modelos [**SizeDefinition**](windowsribbon-element-sizedefinition.md) predefinidos. No entanto, essa funcionalidade destina-se apenas a fins de criação de protótipos.
 
  
 
-### <a name="ribbon-sizedefinition-templates"></a>Modelos de faixa de SizeDefinition
+### <a name="ribbon-sizedefinition-templates"></a>Tamanho da Faixa de Opções Modelos de Definição
 
-A estrutura da faixa de opção fornece um conjunto abrangente de modelos [**SizeDefinition**](windowsribbon-element-sizedefinition.md) que especificam o comportamento de tamanho e layout para um [grupo](windowsribbon-controls-group.md) de controles de faixa de opção. Esses modelos abrangem os cenários mais comuns para organizar controles em um aplicativo da faixa de faixas.
+A estrutura ribbon fornece um conjunto abrangente de modelos [**SizeDefinition**](windowsribbon-element-sizedefinition.md) que especificam o tamanho e o comportamento de layout para um [grupo de](windowsribbon-controls-group.md) controles de faixa de opções. Esses modelos abrangem os cenários mais comuns para organizar controles em um aplicativo de Faixa de Opções.
 
-Para impor uma experiência de usuário consistente em aplicativos de faixa de faixas, cada modelo de [**SizeDefinition**](windowsribbon-element-sizedefinition.md) impõe restrições aos controles ou à família de controles com suporte.
+Para impor uma experiência de usuário consistente em aplicativos de Faixa de Opções, cada modelo [**SizeDefinition**](windowsribbon-element-sizedefinition.md) impõe restrições aos controles ou à família de controles aos que ele dá suporte.
 
-Por exemplo, a família de botões de controles inclui:
+Por exemplo, a família de controles de botão inclui:
 
 -   [Botão](windowsribbon-controls-button.md)
 -   [Botão de alternância](windowsribbon-controls-togglebutton.md)
--   [Botão suspenso](windowsribbon-controls-dropdownbutton.md)
--   [Botão de divisão](windowsribbon-controls-splitbutton.md)
--   [Galeria suspensa](windowsribbon-controls-dropdowngallery.md)
--   [Galeria de botões de divisão](windowsribbon-controls-splitbuttongallery.md)
--   [Seletor de cores suspensa](windowsribbon-controls-dropdowncolorpicker.md)
+-   [Botão de lista listada](windowsribbon-controls-dropdownbutton.md)
+-   [Botão Dividir](windowsribbon-controls-splitbutton.md)
+-   [Galeria de lista listada](windowsribbon-controls-dropdowngallery.md)
+-   [Galeria de Botões divididos](windowsribbon-controls-splitbuttongallery.md)
+-   [Lista Seletor de Cor](windowsribbon-controls-dropdowncolorpicker.md)
 
-Embora a família de entrada de controles inclua:
+Embora a família de controles de entrada inclua:
 
 -   [Caixa de combinação](windowsribbon-controls-combobox.md)
 -   [Controle giratório](windowsribbon-controls-spinner.md)
 
-A [caixa de seleção](windowsribbon-controls-checkbox.md) e a [Galeria de faixa de](windowsribbon-controls-inribbongallery.md) opções não pertencem à família de botões ou à família de entrada. Esses dois controles podem ser usados apenas onde indicado explicitamente em um modelo [**SizeDefinition**](windowsribbon-element-sizedefinition.md) .
+[A Caixa de](windowsribbon-controls-checkbox.md) Seleção [e a Galeria](windowsribbon-controls-inribbongallery.md) na Faixa de Opções não pertencem à família de botões ou à família de entrada. Esses dois controles só podem ser usados quando explicitamente indicados em um [**modelo SizeDefinition.**](windowsribbon-element-sizedefinition.md)
 
-A seguir está uma lista dos modelos [**SizeDefinition**](windowsribbon-element-sizedefinition.md) com uma descrição do layout e dos controles permitidos por cada modelo.
+Veja a seguir uma lista dos modelos [**SizeDefinition**](windowsribbon-element-sizedefinition.md) com uma descrição do layout e dos controles permitidos por cada modelo.
 
 > [!IMPORTANT]
-> Se os controles declarados na marcação não forem mapeados exatamente para o tipo de controle, a ordem e a quantidade definidos no modelo associado, um [erro de validação](windowsribbon-compilationerrors.md) será registrado pelo [compilador de marcação](windowsribbon-intentcl.md) e a compilação será encerrada.
+> Se os controles declarados na marcação não mapearem exatamente para o tipo de controle, a ordem e [a](windowsribbon-compilationerrors.md) quantidade definidos no modelo associado, um erro de validação será registrado pelo [compilador](windowsribbon-intentcl.md) de marcação e a compilação será encerrada.
 
  
 
@@ -75,103 +75,103 @@ A seguir está uma lista dos modelos [**SizeDefinition**](windowsribbon-element-
 
 OneButton
 
-Um controle de família de botões.<br/> Há suporte apenas para o tamanho do grupo grande.<br/>
+Um controle de família de botões.<br/> Há suporte apenas para tamanho de grupo grande.<br/>
 
-![imagem do modelo oneButton sizedefinition.](images/overviews/sizedefinition-onebutton.png)
+![imagem do modelo de sizeefinition onebutton.](images/overviews/sizedefinition-onebutton.png)
 
 TwoButtons
 
-Dois controles de família de botões.<br/> Há suporte apenas para tamanhos de grupo grande e médio.<br/>
+Dois controles de família de botões.<br/> Há suporte apenas para tamanhos de grupo Grande e Médio.<br/>
 
-![imagem do modelo twobuttons grande sizedefinition.](images/overviews/sizedefinition-twobuttons-large.png)
+![imagem do modelo de design de tamanho grande de dois botões.](images/overviews/sizedefinition-twobuttons-large.png)
 
-![Picture of twobuttons Medium sizedefinition template.](images/overviews/sizedefinition-twobuttons-medium.png)
+![imagem do modelo de dimensionamento médio de dois botões.](images/overviews/sizedefinition-twobuttons-medium.png)
 
 ThreeButtons
 
-Controles da família de três botões.<br/> Há suporte apenas para tamanhos de grupo grande e médio.<br/>
+Três controles de família de botões.<br/> Há suporte apenas para tamanhos de grupo Grande e Médio.<br/>
 
-![imagem do modelo threebuttons grande sizedefinition.](images/overviews/sizedefinition-threebuttons-large.png)
+![imagem de modelo de projeto de tamanho grande de três botões.](images/overviews/sizedefinition-threebuttons-large.png)
 
-![Picture of threebuttons Medium sizedefinition template.](images/overviews/sizedefinition-threebuttons-medium.png)
+![imagem do modelo de dimensionamento médio de trêsbuttons.](images/overviews/sizedefinition-threebuttons-medium.png)
 
 ThreeButtons-OneBigAndTwoSmall
 
-Controles da família de três botões.<br/> O primeiro botão é apresentado em destaque em todos os três tamanhos.<br/>
+Três controles de família de botões.<br/> O primeiro botão é apresentado em destaque em todos os três tamanhos.<br/>
 
-![imagem do modelo threebuttons-onebigandtwosmall grande sizedefinition.](images/overviews/sizedefinition-threebuttons-onebigandtwosmall-large.png)
+![imagem do modelo threebuttons-onebtonedtwosmall large sizeefinition.](images/overviews/sizedefinition-threebuttons-onebigandtwosmall-large.png)
 
-![Picture of threebuttons-onebigandtwosmall Medium sizedefinition template.](images/overviews/sizedefinition-threebuttons-onebigandtwosmall-medium.png)
+![imagem do modelo threebuttons-onebtonedtwosmall medium sizeefinition.](images/overviews/sizedefinition-threebuttons-onebigandtwosmall-medium.png)
 
-![imagem do modelo threebuttons-onebigandtwosmall Small sizedefinition.](images/overviews/sizedefinition-threebuttons-onebigandtwosmall-small.png)
+![imagem do modelo threebuttons-onebtonedtwosmall small sizeefinition.](images/overviews/sizedefinition-threebuttons-onebigandtwosmall-small.png)
 
 ThreeButtonsAndOneCheckBox
 
-Controles de família de botões acompanhados por um único controle de caixa de seleção.<br/> Há suporte apenas para tamanhos de grupo grande e médio.<br/>
+Três controles de família de botões acompanhados por um único controle CheckBox.<br/> Há suporte apenas para tamanhos de grupo Grande e Médio.<br/>
 
-![imagem do modelo threebuttonsandonecheckbox grande sizedefinition.](images/overviews/sizedefinition-threebuttonsandonecheckbox-large.png)
+![imagem do modelo threebuttonsandonecheckbox large sizeefinition.](images/overviews/sizedefinition-threebuttonsandonecheckbox-large.png)
 
-![Picture of threebuttonsandonecheckbox Medium sizedefinition template.](images/overviews/sizedefinition-threebuttonsandonecheckbox-medium.png)
+![imagem do modelo de dimensionamento médio threebuttonsandonecheckbox.](images/overviews/sizedefinition-threebuttonsandonecheckbox-medium.png)
 
 FourButtons
 
-Controles de família de botões.<br/>
+Quatro controles de família de botões.<br/>
 
-![imagem do modelo fourbuttons grande sizedefinition.](images/overviews/sizedefinition-fourbuttons-large.png)
+![imagem do modelo de design de tamanho grande de quatro botões.](images/overviews/sizedefinition-fourbuttons-large.png)
 
-![Picture of fourbuttons Medium sizedefinition template.](images/overviews/sizedefinition-fourbuttons-medium.png)
+![imagem do modelo de dimensionamento médio de quatrobuttons.](images/overviews/sizedefinition-fourbuttons-medium.png)
 
-![imagem do modelo de sizedefinition pequeno do fourbuttons.](images/overviews/sizedefinition-fourbuttons-small.png)
+![imagem do modelo de dimensionamento pequeno de quatro botões.](images/overviews/sizedefinition-fourbuttons-small.png)
 
 FiveButtons
 
-Controles da família de cinco botões.<br/>
+Cinco controles de família de botões.<br/>
 
-![imagem do modelo fivebuttons grande sizedefinition.](images/overviews/sizedefinition-fivebuttons-large.png)
+![imagem do modelo fivebuttons large sizeefinition.](images/overviews/sizedefinition-fivebuttons-large.png)
 
-![Picture of fivebuttons Medium sizedefinition template.](images/overviews/sizedefinition-fivebuttons-medium.png)
+![imagem do modelo de dimensionamento médio de fivebuttons.](images/overviews/sizedefinition-fivebuttons-medium.png)
 
-![imagem do modelo de sizedefinition pequeno do fivebuttons.](images/overviews/sizedefinition-fivebuttons-small.png)
+![imagem do modelo fivebuttons small sizeefinition.](images/overviews/sizedefinition-fivebuttons-small.png)
 
 FiveOrSixButtons
 
-Os cinco controles da família de botões e um sexto botão opcional.<br/>
+Cinco controles de família de botões e um sexto botão opcional.<br/>
 
-![imagem do modelo fiveorsixbuttons grande sizedefinition.](images/overviews/sizedefinition-fiveorsixbuttons-large.png)
+![imagem do modelo fiveorsixbuttons large sizeefinition.](images/overviews/sizedefinition-fiveorsixbuttons-large.png)
 
-![Picture of fiveorsixbuttons Medium sizedefinition template.](images/overviews/sizedefinition-fiveorsixbuttons-medium.png)
+![imagem do modelo fiveorsixbuttons medium sizeefinition.](images/overviews/sizedefinition-fiveorsixbuttons-medium.png)
 
-![imagem do modelo de sizedefinition pequeno do fiveorsixbuttons.](images/overviews/sizedefinition-fiveorsixbuttons-small.png)
+![imagem do modelo fiveorsixbuttons small sizeefinition.](images/overviews/sizedefinition-fiveorsixbuttons-small.png)
 
 SixButtons
 
-Seis controles da família de botões.<br/>
+Seis controles de família de botões.<br/>
 
-![imagem do modelo sixbuttons grande sizedefinition.](images/overviews/sizedefinition-sixbuttons-large.png)
+![imagem do modelo de design de tamanho grande de seis botões.](images/overviews/sizedefinition-sixbuttons-large.png)
 
-![Picture of sixbuttons Medium sizedefinition template.](images/overviews/sizedefinition-sixbuttons-medium.png)
+![imagem do modelo de dimensionamento médio de seis botões.](images/overviews/sizedefinition-sixbuttons-medium.png)
 
-![imagem do modelo de sizedefinition pequeno do sixbuttons.](images/overviews/sizedefinition-sixbuttons-small.png)
+![imagem de modelo de dimensionamento pequeno de seis botões.](images/overviews/sizedefinition-sixbuttons-small.png)
 
 SixButtons-TwoColumns
 
-Seis botões – controles da família (apresentação alternativa).<br/>
+Seis controles de família de botões (apresentação alternativa).<br/>
 
-![imagem do modelo sixbuttons-twocolumns grande sizedefinition.](images/overviews/sizedefinition-sixbuttons-twocolumns-large.png)
+![imagem do modelo de projeto de dimensionamento grande sixbuttons-twocolumns.](images/overviews/sizedefinition-sixbuttons-twocolumns-large.png)
 
-![sixbuttons-twocolumns Medium sizedefinition template.](images/overviews/sizedefinition-sixbuttons-twocolumns-medium.png)
+![modelo de dimensionamento médio sixbuttons-twocolumns.](images/overviews/sizedefinition-sixbuttons-twocolumns-medium.png)
 
-![imagem do modelo sixbuttons-twocolumns Small sizedefinition.](images/overviews/sizedefinition-sixbuttons-twocolumns-small.png)
+![imagem do modelo de projeto de dimensionamento pequeno sixbuttons-twocolumns.](images/overviews/sizedefinition-sixbuttons-twocolumns-small.png)
 
 SevenButtons
 
 Sete controles de família de botões.<br/>
 
-![imagem do modelo sevenbuttons grande sizedefinition.](images/overviews/sizedefinition-sevenbuttons-large.png)
+![imagem do modelo sevenbuttons large sizeefinition.](images/overviews/sizedefinition-sevenbuttons-large.png)
 
 ![imagem do modelo sevenbuttons mediumsizedefinition.](images/overviews/sizedefinition-sevenbuttons-medium.png)
 
-![imagem do modelo de sizedefinition pequeno do sevenbuttons.](images/overviews/sizedefinition-sevenbuttons-small.png)
+![imagem do modelo sevenbuttons small sizeefinition.](images/overviews/sizedefinition-sevenbuttons-small.png)
 
 EightButtons
 
@@ -811,11 +811,11 @@ As imagens a seguir mostram como os modelos do exemplo anterior são aplicados �
 
 
 
-|        |                                                                                                    |
+|  Tipo  |      Imagem                                                                                         |
 |--------|----------------------------------------------------------------------------------------------------|
 | Grande  | ![imagem de um modelo personalizado grande embutido.](images/overviews/sizedefinition-custom-large.png)   |
 | Médio | ![imagem de um modelo personalizado médio embutido.](images/overviews/sizedefinition-custom-medium.png) |
-| Small  | ![imagem de um modelo personalizado pequeno embutido.](images/overviews/sizedefinition-custom-small.png)   |
+| Pequeno  | ![imagem de um modelo personalizado pequeno embutido.](images/overviews/sizedefinition-custom-small.png)   |
 | Pop-up  | ![imagem de um modelo personalizado pop-up embutido.](images/overviews/sizedefinition-custom-popup.png)   |
 
 
@@ -832,7 +832,7 @@ As imagens a seguir mostram como os modelos do exemplo anterior são aplicados �
 [**Escalonáve**](windowsribbon-element-scale.md)
 </dt> <dt>
 
-[**Group**](windowsribbon-element-group.md)
+[**Grupo**](windowsribbon-element-group.md)
 </dt> </dl>
 
  

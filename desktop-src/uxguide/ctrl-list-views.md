@@ -1,31 +1,31 @@
 ---
 title: Listar exibições
-description: Com um modo de exibição de lista, os usuários podem exibir e interagir com uma coleção de objetos de dados, usando uma única seleção ou seleção múltipla.
+description: Com uma exibição de lista, os usuários podem exibir e interagir com uma coleção de objetos de dados, usando seleção única ou seleção múltipla.
 ms.assetid: 62a7bfc8-96a9-450d-9db9-ec9dab6687b7
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: c3c823b23c03f29ac6b80e10df79eac36653f2e4
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 13847e484ccaa78fd08ac9fe60b1432d272b9efa
+ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "103663750"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111524560"
 ---
 # <a name="list-views"></a>Listar exibições
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
 
-Com um modo de exibição de lista, os usuários podem exibir e interagir com uma coleção de objetos de dados, usando uma única seleção ou seleção múltipla.
+Com uma exibição de lista, os usuários podem exibir e interagir com uma coleção de objetos de dados, usando seleção única ou seleção múltipla.
 
-![captura de tela da exibição de lista com cabeçalhos de coluna ](images/ctrl-list-views-image1.png)
+![captura de tela da exibição de lista com os headers de coluna ](images/ctrl-list-views-image1.png)
 
 Uma exibição de lista típica.
 
-As exibições de lista têm mais flexibilidade e funcionalidade do que as caixas de listagem. Ao contrário das caixas de listagem, elas dão suporte à alteração de exibições, agrupamento, várias colunas com títulos, classificação por colunas, alteração de larguras de coluna e ordem, sendo uma origem de arrastar, um destino de soltar e a cópia de dados de e para a área de transferência.
+As exibições de lista têm mais flexibilidade e funcionalidade do que as caixas de listagem. Ao contrário das caixas de listagem, elas suportam alterar exibições, agrupar, várias colunas com títulos, classificar por colunas, alterar larguras de coluna e ordem, ser uma origem de arrastar ou um destino de soltar e copiar dados de e para a área de transferência.
 
 > [!Note]  
-> As diretrizes relacionadas às caixas de [layout](vis-layout.md) e de [lista](ctrl-list-boxes.md) são apresentadas em artigos separados.
+> As diretrizes relacionadas [ao layout](vis-layout.md) e às caixas [de listagem](ctrl-list-boxes.md) são apresentadas em artigos separados.
 
  
 
@@ -35,13 +35,12 @@ Uma exibição de lista é mais do que apenas uma caixa de listagem mais flexív
 
 
 
-|                             |                                           |                                                                                                                                               |
+|   Uso                          | Caixas de listagem                 | Modos de exibição de lista               |
 |-----------------------------|-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-|                             | **Caixas de listagem**<br/>                 | **Modos de exibição de lista**<br/>                                                                                                                     |
-| **Data type**<br/>    | Opções de dados e programas.<br/> | Somente dados.<br/>                                                                                                                         |
+| **Data type**<br/>    | Opções de dados e programa.<br/> | Somente dados.<br/>                                                                                                                         |
 | **Contents**<br/>     | Somente rótulos.<br/>                   | Rótulos e dados auxiliares, possivelmente em várias colunas.<br/>                                                                           |
-| **Interação**<br/>  | Usado para fazer seleções.<br/>    | Pode ser usado para fazer seleções, mas geralmente é usado para exibir e interagir com dados. Pode ser uma origem de arrastar ou um destino de soltar.<br/> |
-| **Apresentação**<br/> | Fixado.<br/>                         | Os usuários podem alterar modos de exibição, agrupar, classificar por colunas e alterar larguras de coluna e ordem.<br/>                                                |
+| **Interação**<br/>  | Usado para fazer seleções.<br/>    | Pode ser usado para fazer seleções, mas geralmente usado para exibir e interagir com os dados. Pode ser uma origem de arrastar ou um destino de soltar.<br/> |
+| **Apresentação**<br/> | Fixo.<br/>                         | Os usuários podem alterar exibições, agrupar, classificar por colunas e alterar a ordem e a largura da coluna.<br/>                                                |
 
 
 
@@ -49,25 +48,25 @@ Uma exibição de lista é mais do que apenas uma caixa de listagem mais flexív
 
 Para decidir se esse é o controle certo, considere estas perguntas:
 
--   **A lista apresenta dados, em vez de opções de programa?** Caso contrário, considere usar uma caixa de listagem em vez disso.
--   **Os usuários precisam alterar as exibições, agrupar, classificar por colunas ou alterar as larguras e a ordem das colunas?** Caso contrário, use uma caixa de listagem em vez disso.
--   **O controle precisa ser uma origem de arrastar ou um destino de soltura?** Nesse caso, use um modo de exibição de lista.
--   **Os itens da lista precisam ser copiados ou colados da área de transferência?** Nesse caso, use um modo de exibição de lista.
+-   **A lista apresenta dados, em vez de opções de programa?** Caso contrário, considere usar uma caixa de listagem.
+-   **Os usuários precisam alterar exibições, agrupar, classificar por colunas ou alterar a ordem e a largura da coluna?** Caso contrário, use uma caixa de listagem.
+-   **O controle precisa ser uma origem de arrastar ou um destino de soltar?** Se sim, use uma exibição de lista.
+-   **Os itens de lista precisam ser copiados ou copiados da área de transferência?** Se sim, use uma exibição de lista.
 
 ### <a name="check-box-list-views"></a>Exibições da lista de caixas de seleção
 
--   **O controle é usado para escolher zero ou mais itens de uma lista de dados?** Para escolher um item, use uma única seleção em vez disso.
--   **A seleção é essencial para a tarefa ou é normalmente usada?** Nesse caso, use uma exibição de lista da caixa de seleção para tornar a seleção mais óbvia, especialmente se os usuários de destino não forem avançados. Caso contrário, use uma exibição de lista de seleção múltipla padrão se as caixas de seleção desenharem muita atenção para a seleção múltipla ou resultarem em muita confusão na tela.
--   **A estabilidade da seleção múltipla é importante?** Nesse caso, use uma lista de [caixas de seleção](ctrl-list-boxes.md), o construtor de listas ou a lista de adicionar/remover porque clicar em altera apenas um único item por vez. Com uma lista de seleção múltipla padrão, é muito fácil limpar todas as seleções mesmo por acidente.
+-   **O controle é usado para escolher zero ou mais itens de uma lista de dados?** Para escolher um item, use uma única seleção.
+-   **A seleção múltipla é essencial para a tarefa ou normalmente usada?** Em caso afirmativos, use uma exibição de lista de caixas de seleção para tornar a seleção múltipla óbvia, especialmente se os usuários de destino não são avançados. Caso não, use uma exibição de lista de seleção múltipla padrão se as caixas de seleção chamarem muita atenção para várias seleções ou resultarem em muita confusão na tela.
+-   **A estabilidade da seleção múltipla é importante?** Nesse caso, use uma lista [de](ctrl-list-boxes.md)caixas de seleção , construtor de lista ou adicionar/remover lista, pois clicar em altera apenas um único item por vez. Com uma lista de seleção múltipla padrão, é muito fácil limpar todas as seleções, mesmo por acidente.
 
 > [!Note]  
-> Às vezes, um controle parecido com um modo de exibição de lista é implementado usando uma caixa de listagem e vice-versa. Nesses casos, aplique as diretrizes com base no uso, não na implementação.
+> Às vezes, um controle que se parece com uma exibição de lista é implementado usando uma caixa de listagem e vice-versa. Nesses casos, aplique as diretrizes com base no uso, não na implementação.
 
  
 
 ## <a name="usage-patterns"></a>Padrões de uso
 
-Todas as exibições dão suporte à seleção única, em que os usuários podem selecionar apenas um item por vez e várias seleções, nas quais os usuários podem selecionar qualquer número de itens, incluindo nenhum. As exibições de lista dão suporte ao [modo de seleção estendida](glossary.md), em que a seleção pode ser estendida arrastando ou com SHIFT + clique ou CTRL + clique para selecionar grupos de valores contíguos ou não adjacentes, respectivamente. Ao contrário das caixas de listagem, elas não dão suporte ao [modo de seleção múltipla](glossary.md), no qual clicar em qualquer item alterna seu estado de seleção, independentemente das teclas Shift e Ctrl.
+Todas as exibições suportam seleção única, em que os usuários podem selecionar apenas um item por vez e várias seleções, em que os usuários podem selecionar qualquer número de itens, incluindo nenhum. As exibições de lista suportam o modo de seleção [estendida,](glossary.md)em que a seleção pode ser estendida arrastando ou com Shift+ clique ou Ctrl+clique para selecionar grupos de valores contíguos ou não adjacentes, respectivamente. Ao contrário das caixas de listagem, elas não têm suporte para vários modos de [seleção,](glossary.md)em que clicar em qualquer item alterna seu estado de seleção, independentemente das teclas Shift e Ctrl.
 
 ### <a name="standard-list-view"></a>Exibição de lista padrão
 
@@ -75,13 +74,13 @@ O controle de exibição de lista dá suporte a cinco exibições padrão:
 
 
 
-|                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                           |
+|    Uso    |   Exemplo        |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Bloco**<br/> cada item aparece como um ícone médio, com um rótulo e detalhes opcionais à direita. <br/>                                                                                                                         | ![captura de tela de miniaturas com títulos e detalhes ](images/ctrl-list-views-image2.png)<br/> Exibição de bloco mostra ícones médios com rótulos e detalhes opcionais à direita.<br/>                                                                                                                                                                |
-| **Ícone grande**<br/> cada item aparece como um ícone extra grande, grande ou médio com um rótulo abaixo dele.<br/>                                                                                                                      | ![captura de tela da exibição de lista de miniatura grande ](images/ctrl-list-views-image3.png)<br/> Exibição de ícones grandes mostra cada item como um ícone grande com um rótulo abaixo dele.<br/>                                                                                                                                                                              |
-| **Ícone pequeno**<br/> cada item é exibido como um ícone pequeno com um rótulo à direita.<br/>                                                                                                                                           | ![captura de tela da exibição de lista de miniatura pequena ](images/ctrl-list-views-image4.png)<br/> A exibição de ícones pequenos mostra cada item como um ícone pequeno com seu rótulo à direita.<br/>                                                                                                                                                                        |
-| **Lista**<br/> cada item é exibido como um ícone pequeno com um rótulo à direita.<br/>                                                                                                                                                 | no modo de lista, essa exibição ordena itens em colunas e usa uma barra de rolagem horizontal. por outro lado, os modos de exibição de ícone ordenam itens em linhas e usam uma barra de rolagem vertical. <br/> ![captura de tela do modo de exibição de lista no modo de lista ](images/ctrl-list-views-image5.png)<br/> O modo de lista mostra cada item como um ícone pequeno com seu rótulo à direita.<br/> |
-| **Detalhes**<br/> cada item aparece como uma linha em um formato tabular. a coluna mais à esquerda contém o ícone e o rótulo opcionais do item, e as colunas subsequentes contêm informações adicionais, como propriedades do item.<br/> | Além disso, as colunas podem ser adicionadas ou removidas, reordenadas e redimensionadas. as linhas podem ser agrupadas, classificadas por coluna. <br/> ![captura de tela da exibição de lista no modo de detalhes ](images/ctrl-list-views-image6.png)<br/> Exibição de detalhes mostra cada item como uma linha em um formato de tabela.<br/>                                                              |
+| **Telha**<br/> cada item aparece como um ícone médio, com um rótulo e detalhes opcionais à direita. <br/>                                                                                                                         | ![captura de tela de miniaturas com títulos e detalhes ](images/ctrl-list-views-image2.png)<br/> A exibição lado a lado mostra ícones médios com rótulos e detalhes opcionais à direita.<br/>                                                                                                                                                                |
+| **Ícone grande**<br/> cada item aparece como um ícone extra grande, grande ou médio com um rótulo abaixo dele.<br/>                                                                                                                      | ![captura de tela da exibição de lista de miniaturas grandes ](images/ctrl-list-views-image3.png)<br/> A exibição Ícone Grande mostra cada item como um ícone grande com um rótulo abaixo dele.<br/>                                                                                                                                                                              |
+| **Ícone pequeno**<br/> cada item aparece como um ícone pequeno com um rótulo à direita.<br/>                                                                                                                                           | ![captura de tela da exibição de lista em miniatura pequena ](images/ctrl-list-views-image4.png)<br/> A exibição Ícone Pequeno mostra cada item como um ícone pequeno com seu rótulo à direita.<br/>                                                                                                                                                                        |
+| **Lista**<br/> cada item aparece como um ícone pequeno com um rótulo à direita.<br/>                                                                                                                                                 | no modo de lista, essa exibição ordena itens em colunas e usa uma barra de rolagem horizontal. Por outro lado, os modos de exibição de ícone solicitam itens em linhas e usam uma barra de rolagem vertical. <br/> ![captura de tela da exibição de lista no modo de lista ](images/ctrl-list-views-image5.png)<br/> O modo de lista mostra cada item como um ícone pequeno com seu rótulo à direita.<br/> |
+| **Detalhes**<br/> cada item aparece como uma linha em um formato tabular. a coluna mais à esquerda contém o ícone e o rótulo opcionais do item e as colunas subsequentes contêm informações adicionais, como propriedades do item.<br/> | além disso, as colunas podem ser adicionadas ou removidas e reordenadas e reorganizadas. as linhas podem ser agrupadas, ordenadas por coluna. <br/> ![captura de tela da exibição de lista no modo de detalhes ](images/ctrl-list-views-image6.png)<br/> A exibição Detalhes mostra cada item como uma linha em um formato de tabela.<br/>                                                              |
 
 
 
@@ -98,18 +97,18 @@ O controle de exibição de lista dá suporte a cinco exibições padrão:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><strong>Seletor de coluna</strong><br/> As exibições de lista às vezes têm tantas colunas que não é prático mostrar todas elas. Nesse caso, a melhor abordagem é exibir as colunas mais úteis por padrão e permitir que os usuários adicionem ou removam colunas conforme necessário. <br/></td>
-<td><img src="images/ctrl-list-views-image7.png" alt="Screen shot of list view with Column Chooser menu " /><br/> Clicar com o botão direito do mouse no título da coluna exibe um menu de contexto que permite aos usuários adicionar ou remover colunas.<br/> <img src="images/ctrl-list-views-image8.png" alt="Screen shot of Choose Details dialog box " /><br/> Clicar em mais no menu de contexto de cabeçalho de coluna exibe a caixa de diálogo escolher colunas, que permite aos usuários adicionar ou remover colunas, bem como reordená-las.<br/></td>
+<td><strong>Seletor de coluna</strong><br/> Às vezes, as exibições de lista têm tantas colunas que não é prático mostrar todas elas. Nesse caso, a melhor abordagem é exibir as colunas mais úteis por padrão e permitir que os usuários adicionem ou removam colunas conforme necessário. <br/></td>
+<td><img src="images/ctrl-list-views-image7.png" alt="Screen shot of list view with Column Chooser menu " /><br/> Clicar com o botão direito do mouse no título da coluna exibe um menu de contexto que permite aos usuários adicionar ou remover colunas.<br/> <img src="images/ctrl-list-views-image8.png" alt="Screen shot of Choose Details dialog box " /><br/> Clicar em Mais no menu de contexto do header da coluna exibe a caixa de diálogo Escolher Colunas, que permite aos usuários adicionar ou remover colunas, bem como reordená-las.<br/></td>
 </tr>
 <tr class="even">
-<td><strong>Exibir lista de caixas de seleção</strong><br/> Permitir que os usuários selecionem vários itens.<br/></td>
-<td>As exibições de lista de seleção múltipla têm exatamente a mesma aparência que as exibições de lista de seleção única, portanto, não há nenhuma pista visual de que ofereça suporte a seleção múltipla. Uma exibição de lista da caixa de seleção pode ser usada para indicar claramente que a seleção múltipla é possível. Consequentemente, esse padrão deve ser usado para tarefas em que a seleção múltipla é essencial ou comumente usada.<br/> <img src="images/ctrl-list-views-image9.png" alt="Screen shot of dialog box with several check boxes " /><br/> Neste exemplo, um modo de exibição de ícone pequeno usa caixas de seleção porque várias seleções são essenciais para a tarefa.<br/></td>
+<td><strong>Exibição de lista de caixas de seleção</strong><br/> Permitir que os usuários selecionem vários itens.<br/></td>
+<td>As exibições da lista de seleção múltipla têm exatamente a mesma aparência das exibições de lista de seleção única, portanto, não há nenhuma dica visual de que elas suportam várias seleções. Uma exibição de lista de caixas de seleção pode ser usada para indicar claramente que várias seleções são possíveis. Consequentemente, esse padrão deve ser usado para tarefas em que várias seleções são essenciais ou comumente usadas.<br/> <img src="images/ctrl-list-views-image9.png" alt="Screen shot of dialog box with several check boxes " /><br/> Neste exemplo, uma exibição ícone pequeno usa caixas de seleção porque várias seleções são essenciais para a tarefa.<br/></td>
 </tr>
 <tr class="odd">
 <td><strong>Listar exibições com grupos</strong><br/> Organize os dados em grupos.<br/></td>
-<td>Embora as exibições de detalhes com frequência ofereçam suporte à classificação dos dados por qualquer uma das colunas, as exibições de lista permitem que os usuários organizem os itens em grupos. Alguns benefícios do agrupamento são:<br/>
+<td>Embora as exibições detalhes geralmente deem suporte à classificação dos dados por qualquer uma das colunas, as exibições de lista permitem que os usuários organizem os itens em grupos. Alguns benefícios do grupo são:<br/>
 <ul>
-<li>Os grupos funcionam em todas as exibições (exceto lista); portanto, por exemplo, os usuários podem agrupar um grande modo de exibição de ícones grandes de álbuns por artista.</li>
+<li>Os grupos funcionam em todas as exibições (exceto lista), portanto, por exemplo, os usuários podem agrupar uma exibição de ícones extra grandes de álbums por artista.</li>
 <li>Os grupos podem ser coleções de alto nível, que geralmente são mais significativas do que o agrupamento diretamente dos dados. Por exemplo, o Windows Explorer agrupa datas em hoje, ontem, semana passada, no início deste ano e há muito tempo.</li>
 </ul>
 <img src="images/ctrl-list-views-image10.png" alt="Screen shot of list view with several data groups " /><br/> Neste exemplo, o centro de boas-vindas do Windows mostra itens agrupados em uma exibição de lista.<br/></td>

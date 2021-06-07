@@ -3,7 +3,7 @@ title: Elemento GroupSizeDefinition
 description: Representa um tamanho de layout para um grupo de controles em um modelo personalizado.
 ms.assetid: c0e20c80-16af-41d5-81e1-0dc32e92e3fa
 keywords:
-- Faixa de GroupSizeDefinition do elemento do Windows
+- Faixa de Opções do Windows do elemento GroupSizeDefinition
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5cf166dbf428c9d17beb148887cc94be73dc11a0
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 650301a29ace2c6df9316a315d4cdbad448e5573
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105763053"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443377"
 ---
 # <a name="groupsizedefinition-element"></a>Elemento GroupSizeDefinition
 
@@ -58,7 +58,7 @@ Representa um tamanho de layout para um grupo de controles em um modelo personal
 <td>xs:string<br/></td>
 <td>Não<br/></td>
 <td>Restrito a um dos seguintes valores:<br/> <br/>
-<dt><span></span><span></span><strong></strong> Vários<br/> </dt> <dd> Padrão. <br/> </dd> <dt><span></span><span></span><strong></strong> Médio<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Menores<br/> </dt> <dd></dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (Grande)<br/> </dt> <dd> Padrão. <br/> </dd> <dt><span></span><span></span><strong></strong> (Médio)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Pequeno)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -72,9 +72,9 @@ Representa um tamanho de layout para um grupo de controles em um modelo personal
 | Elemento                                                                                 | Descrição                                        |
 |-----------------------------------------------------------------------------------------|----------------------------------------------------|
 | [**ColumnBreak**](windowsribbon-element-columnbreak.md)<br/>                     | Pode ocorrer uma ou mais vezes<br/> <br/> |
-| [**Controlador de controle**](windowsribbon-element-controlgroup.md)<br/>                   | Pode ocorrer uma ou mais vezes<br/> <br/> |
-| [**ControlSizeDefinition**](windowsribbon-element-controlsizedefinition.md)<br/> | Pode ocorrer uma ou mais vezes<br/> <br/> |
-| [**Fila**](windowsribbon-element-row.md)<br/>                                     | Pode ocorrer uma ou mais vezes<br/> <br/> |
+| [**ControlGroup**](windowsribbon-element-controlgroup.md)<br/>                   | Pode ocorrer uma ou mais vezes<br/> <br/> |
+| [**Controlsizedefinition**](windowsribbon-element-controlsizedefinition.md)<br/> | Pode ocorrer uma ou mais vezes<br/> <br/> |
+| [**Linha**](windowsribbon-element-row.md)<br/>                                     | Pode ocorrer uma ou mais vezes<br/> <br/> |
 
 
 
@@ -92,7 +92,7 @@ Representa um tamanho de layout para um grupo de controles em um modelo personal
 
 Opcional.
 
-Pode ocorrer até três vezes para cada elemento [**SizeDefinition**](windowsribbon-element-sizedefinition.md) (uma vez para cada *tamanho*).
+Pode ocorrer até três vezes para cada [**elemento SizeDefinition**](windowsribbon-element-sizedefinition.md) (uma vez para cada *Tamanho*).
 
 ## <a name="examples"></a>Exemplos
 
@@ -188,12 +188,8 @@ O exemplo de código a seguir ilustra um modelo personalizado básico que inclui
 
 ## <a name="element-information"></a>Informações do elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo com suporte<br/> | Windows 7 |
-| Pode estar vazio                        | Não        |
+* **Sistema mínimo com suporte:** Windows 7
+* **Pode estar vazio:** Não
 
 
 
@@ -201,7 +197,7 @@ O exemplo de código a seguir ilustra um modelo personalizado básico que inclui
 
 <dl> <dt>
 
-[Personalizando uma faixa de guia por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
+[Personalização de uma faixa de opções por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  

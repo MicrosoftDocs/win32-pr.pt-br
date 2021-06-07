@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 98af363aeb70a61def04eaee0ad13ff60e6e7640
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a42b8ffb6d39c1da8993972c0b25995f778bdaca
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641580"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111442957"
 ---
 # <a name="dropdownbutton-element"></a>Elemento DropDownButton
 
@@ -80,7 +80,7 @@ Representa um controle de [botão suspenso](windowsribbon-controls-dropdownbutto
 | Elemento                                                                             | Descrição                                        |
 |-------------------------------------------------------------------------------------|----------------------------------------------------|
 | [**Botão**](windowsribbon-element-button.md)<br/>                           | Pode ocorrer uma ou mais vezes<br/> <br/> |
-| [**CheckBox**](windowsribbon-element-checkbox.md)<br/>                       | Pode ocorrer uma ou mais vezes<br/> <br/> |
+| [**Verificação**](windowsribbon-element-checkbox.md)<br/>                       | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**ComboBox**](windowsribbon-element-combobox.md)<br/>                       | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | **DropDownButton**<br/>                                                       | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md)<br/> | Pode ocorrer uma ou mais vezes<br/> <br/> |
@@ -101,7 +101,7 @@ Representa um controle de [botão suspenso](windowsribbon-controls-dropdownbutto
 | [**Controlador de controle**](windowsribbon-element-controlgroup.md)<br/>             |
 | **DropDownButton**<br/>                                                     |
 | [**DropDownGallery**](windowsribbon-element-dropdowngallery.md)<br/>       |
-| [**Group**](windowsribbon-element-group.md)<br/>                           |
+| [**Grupo**](windowsribbon-element-group.md)<br/>                           |
 | [**Grupo Backstage**](windowsribbon-element-menugroup.md)<br/>                   |
 | [**SplitButton**](windowsribbon-element-splitbutton.md)<br/>               |
 | [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md)<br/> |
@@ -165,12 +165,8 @@ Esta seção de código mostra as declarações de controle **DropDownButton** .
 
 ## <a name="element-information"></a>Informações do elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo com suporte<br/> | Windows 7 |
-| Pode estar vazio                        | Não        |
+* **Sistema mínimo com suporte**: Windows 7
+* **Pode estar vazio**: não
 
 
 

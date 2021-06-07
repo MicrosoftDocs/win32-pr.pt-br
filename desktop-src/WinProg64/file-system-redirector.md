@@ -8,12 +8,12 @@ keywords:
 - Programação WOW64 de 64 bits do Windows, redirecionador de sistema de arquivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 561d03c8da51bd37a2d97746296bc74e24e43154
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 568ddde85d18f90b951051251774c3509081dfdd
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007878"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443627"
 ---
 # <a name="file-system-redirector"></a>Redirecionador do sistema de arquivos
 
@@ -24,24 +24,23 @@ Na maioria dos casos, sempre que um aplicativo de 32 bits tenta acessar% windir%
 > [!Note]  
 > Esses caminhos são fornecidos apenas para referência. Para compatibilidade, os aplicativos não devem usar esses caminhos diretamente. Em vez disso, eles devem chamar as APIs descritas abaixo.
 
- 
+ 
 
 
 
-|                              |                                          |                                          |
-|------------------------------|------------------------------------------|------------------------------------------|
 | Caminho Original                | Caminho Redirecionado para processos x86 de 32 bits | Caminho Redirecionado para processos ARM de 32 bits |
+|------------------------------|------------------------------------------|------------------------------------------|
 | % WINDIR% \\ System32           | % WINDIR% \\ SysWOW64                       | % WINDIR% \\ SysArm32                       |
 | % WINDIR% \\ LastGood \\ System32 | % WINDIR% \\ LastGood \\ SysWOW64             | % WINDIR% \\ LastGood \\ SysArm32             |
 | % WINDIR% \\regedit.exe        | % WINDIR% \\ SysWOW64 \\regedit.exe          | % WINDIR% \\ SysArm32 \\regedit.exe         |
 
 
 
- 
+ 
 
 Se o acesso fizer com que o sistema exiba o prompt do UAC, o redirecionamento não ocorrerá. Em vez disso, a versão de 64 bits do arquivo solicitado é iniciada. Para evitar esse problema, especifique o diretório SysWOW64 para evitar o redirecionamento e garanta o acesso à versão de 32 bits do arquivo ou execute o aplicativo de 32 bits com privilégios de administrador para que o prompt do UAC não seja exibido.
 
-**Windows Server 2003 e Windows XP:  ** Não há suporte para o UAC.
+* * Não há suporte para o Windows Server 2003 e o Windows XP: * * UAC.
 
 Determinados subdiretórios são isentos do redirecionamento. O acesso a esses subdiretórios não é redirecionado para% WINDIR% \\ SysWOW64: <dl> % WINDIR% \\ System32 \\ Catroot  
 % WINDIR% \\ System32 \\ Catroot2  
@@ -51,7 +50,7 @@ Determinados subdiretórios são isentos do redirecionamento. O acesso a esses s
 % WINDIR% \\ System32 \\ spool  
 </dl>
 
-**Windows server 2008, Windows Vista, Windows server 2003 e Windows XP:  **% windir% \\ System32 \\ DriverStore é redirecionado.
+* * Windows Server 2008, Windows Vista, Windows Server 2003 e Windows XP: * *% WINDIR% \\ System32 \\ DriverStore é redirecionado.
 
 Para recuperar o nome do diretório do sistema de 32 bits, os aplicativos de 64 bits devem usar a função [**GetSystemWow64Directory2**](/windows/desktop/api/wow64apiset/nf-wow64apiset-getsystemwow64directory2a) (Windows 10, versão 1511) ou a função [**GetSystemWow64Directory**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetknownfolderpath) .
 
@@ -65,6 +64,6 @@ os aplicativos de 32 bits podem acessar o diretório nativo do sistema substitui
 
 **Windows Server 2003 e Windows XP:** O alias SysNative foi adicionado a partir do Windows Vista.
 
- 
+ 
 
- 
+ 

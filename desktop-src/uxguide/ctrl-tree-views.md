@@ -1,48 +1,48 @@
 ---
 title: Exibições de árvore
-description: Com um modo de exibição de árvore, os usuários podem exibir e interagir com uma coleção hierarquicamente organizada de objetos, usando uma única seleção ou seleção múltipla.
+description: Com um exibição de árvore, os usuários podem exibir e interagir com uma coleção hierárquica de objetos, usando seleção única ou seleção múltipla.
 ms.assetid: f0206485-e028-41d8-9be2-5d59f0a0b677
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: c5cb2b6d48a30cba6de2136659231d9d37361621
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: ade51b421350dc90bf72e2ff1a683bf1d352f7c1
+ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104555887"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111524490"
 ---
 # <a name="tree-views"></a>Exibições de árvore
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
 
-Com um modo de exibição de árvore, os usuários podem exibir e interagir com uma coleção hierarquicamente organizada de objetos, usando uma única seleção ou seleção múltipla.
+Com um exibição de árvore, os usuários podem exibir e interagir com uma coleção hierárquica de objetos, usando seleção única ou seleção múltipla.
 
-Em uma árvore, os objetos que contêm dados são chamados nós de folha e objetos que contêm outros objetos são chamados de nós de contêiner. Um único nó de contêiner mais alto é chamado de nó raiz. Os usuários podem expandir e recolher nós de contêiner clicando nos botões mais e menos expansor.
+Em uma árvore, os objetos que contêm dados são chamados de nós folha e objetos que contêm outros objetos são chamados de nós de contêiner. Um único nó de contêiner superior é chamado de nó raiz. Os usuários podem expandir e retraí-los clicando nos botões do expansador de mais e menos.
 
-![captura de tela do modo de exibição de árvore do Windows Explorer ](images/ctrl-tree-views-image1.png)
+![captura de tela do exibição de árvore do Windows Explorer ](images/ctrl-tree-views-image1.png)
 
-Um modo de exibição de árvore típico.
+Uma exibição de árvore típica.
 
 > [!Note]  
-> As diretrizes relacionadas ao [layout](vis-layout.md) e aos [menus](cmd-menus.md) são apresentadas em artigos separados.
+> As diretrizes relacionadas [ao layout](vis-layout.md) [e aos menus](cmd-menus.md) são apresentadas em artigos separados.
 
  
 
 ## <a name="is-this-the-right-control"></a>Esse é o controle correto?
 
-**Ter dados hierárquicos não significa que você deve usar um modo de exibição de árvore.** Muitas vezes, uma [exibição de lista](ctrl-list-views.md) é uma opção mais simples, mas mais poderosa. Exibições de lista:
+**Ter dados hierárquicos não significa que você deve usar uma exibição de árvore.** Muitas vezes, uma [exibição de](ctrl-list-views.md) lista é uma opção mais simples, mas mais poderosa. Listar exibições:
 
 -   Suporte a várias exibições diferentes.
--   Suporte à classificação de dados por qualquer uma das colunas na exibição de detalhes.
--   Suporte à organização de dados em grupos, formando uma hierarquia de dois níveis.
+-   Suporte à classificação de dados por qualquer uma das colunas na exibição Detalhes.
+-   Suporte à organização de dados em grupos, formar uma hierarquia de dois níveis.
 
-**Para usar um modo de exibição de lista, você pode mesclar informações hierárquicas usando as seguintes técnicas:**
+**Para usar uma exibição de lista, você pode nivelar informações hierárquicas usando as seguintes técnicas:**
 
--   Remova o nó raiz, se estiver presente, porque ele geralmente não é necessário.
--   Use grupos de exibição de lista, guias, [listas suspensas](/windows/desktop/uxguide/ctrl-drop)ou [títulos expansíveis](glossary.md) para substituir os contêineres de nível superior.
+-   Remova o nó raiz se estiver presente, porque geralmente não é necessário.
+-   Use grupos de exibição de lista, guias, [listas](/windows/desktop/uxguide/ctrl-drop)listadas ou [títulos expansíveis](glossary.md) para substituir os contêineres de nível superior.
 
-    ![captura de tela de grupos de exibição de lista contendo listas ](images/ctrl-tree-views-image2.png)
+    ![captura de tela de grupos de exibição de lista que contêm listas ](images/ctrl-tree-views-image2.png)
 
     Neste exemplo, os grupos de exibição de lista são usados para os contêineres de nível superior.
 
@@ -50,71 +50,71 @@ Um modo de exibição de árvore típico.
 
     Neste exemplo, as guias são usadas para os contêineres de nível superior
 
-    ![captura de tela da lista suspensa usada como um contêiner ](images/ctrl-tree-views-image4.png)
+    ![captura de tela da lista lista listada usada como um contêiner ](images/ctrl-tree-views-image4.png)
 
-    Neste exemplo, uma lista suspensa é usada para os contêineres de nível superior.
+    Neste exemplo, uma listada é usada para os contêineres de nível superior.
 
 -   Se um controle associado exibir o conteúdo do contêiner selecionado, esse controle poderá exibir níveis inferiores da hierarquia.
 
-    ![captura de tela do painel Sumário ](images/ctrl-tree-views-image5.png)
+    ![captura de tela do painel de tabela de conteúdo ](images/ctrl-tree-views-image5.png)
 
-    Neste exemplo, os contêineres de nível baixo são exibidos na janela do documento.
+    Neste exemplo, contêineres de baixo nível são exibidos na janela do documento.
 
-**Você deve usar um modo de exibição de árvore se precisar exibir uma hierarquia de mais de dois níveis (não incluindo o nó raiz).**
+**Você deverá usar um exibição de árvore se precisar exibir uma hierarquia de mais de dois níveis (não incluindo o nó raiz).**
 
-Para decidir se um modo de exibição de árvore é o controle certo, considere estas perguntas:
+Para decidir se uma exibição de árvore é o controle certo, considere estas perguntas:
 
 -   **Os dados são hierárquicos?** Se não, use outro controle.
--   **A hierarquia tem pelo menos três níveis (não incluindo a raiz)?** Caso contrário, considere alternativas como grupos de exibição de lista, guias, listas suspensas ou títulos expansíveis.
--   **Os itens têm dados auxiliares?** Nesse caso, considere usar um modo de exibição de lista no modo de exibição de detalhes para aproveitar ao máximo os dados auxiliares.
--   **Os dados de nível inferior estão relacionados a subtarefas independentes?** Nesse caso, considere exibir as informações em um controle associado ou em uma janela separada (exibida usando [botões de comando](ctrl-command-buttons.md) ou [links](ctrl-command-links.md)).
--   **Os usuários de destino são avançados?** Os usuários avançados são mais proficientes no uso de árvores. Se seu aplicativo for destinado a usuários iniciantes, evite usar exibições de árvore.
--   **Os itens têm uma categorização única, natural e hierárquica familiar para a maioria dos usuários?** Nesse caso, os dados são ideais para um modo de exibição de árvore. Se houver uma necessidade de várias exibições ou classificação, use uma exibição de lista em vez disso.
--   **Os usuários precisam ver os dados de nível inferior em alguns, mas não em todos os cenários, ou alguns, mas não o tempo todo?** Nesse caso, os dados são ideais para um modo de exibição de árvore.
+-   **A hierarquia tem pelo menos três níveis (não incluindo a raiz)?** Caso não, considere alternativas como grupos de exibição de lista, guias, listas listadas ou títulos expansíveis.
+-   **Os itens têm dados auxiliares?** Nesse caso, considere usar uma exibição de lista no modo de exibição Detalhes para aproveitar ao máximo os dados auxiliares.
+-   **Os dados de nível inferior estão relacionados a subtarefas independentes?** Nesse caso, considere exibir as informações em um controle associado ou em uma janela separada (exibida usando botões [de comando](ctrl-command-buttons.md) ou [links](ctrl-command-links.md)).
+-   **Os usuários de destino são avançados?** Os usuários avançados são mais proficientes ao usar árvores. Se seu aplicativo for destinado a usuários iniciantes, evite usar exibições de árvore.
+-   **Os itens têm uma categorização única, natural e hierárquica que seja familiar para a maioria dos usuários?** Se sim, os dados são ideais para um modo de exibição de árvore. Se houver necessidade de várias exibições ou classificação, use uma exibição de lista.
+-   **Os usuários precisam ver os dados de nível inferior em alguns, mas não em todos os cenários ou em alguns, mas não o tempo todo?** Se sim, os dados são ideais para um modo de exibição de árvore.
 
 > [!Note]  
-> Às vezes, um controle parecido com um modo de exibição de árvore é implementado usando uma exibição de lista. Nesses casos, aplique as diretrizes com base no uso, não na implementação.
+> Às vezes, um controle que se parece com um exibição de árvore é implementado usando uma exibição de lista. Nesses casos, aplique as diretrizes com base no uso, não na implementação.
 
  
 
 ## <a name="design-concepts"></a>Conceitos de design
 
-As árvores são destinadas a organizar dados e facilitar a localização, ainda que seja difícil tornar os dados dentro de uma árvore facilmente detectáveis. Tenha em mente os princípios a seguir ao decidir sobre exibições de árvore e sua organização.
+As árvores destinam-se a organizar dados e facilitar a descoberta, mas é difícil tornar os dados em uma árvore facilmente descobriveis. Tenha os princípios a seguir em mente ao decidir sobre exibições de árvore e sua organização.
 
 ### <a name="predictability-and-discoverability"></a>Previsibilidade e descoberta
 
-**Um modo de exibição de árvore é baseado nas relações entre objetos.** As árvores funcionam melhor quando os objetos formam uma relação clara, bem conhecida, mutuamente exclusiva, na qual cada objeto é mapeado para um contêiner único e fácil de determinar.
+**Uma exibição de árvore baseia-se nas relações entre objetos.** As árvores funcionam melhor quando os objetos formam uma relação clara, bem conhecida e mutuamente exclusiva na qual cada objeto é mapeado para um único contêiner fácil de determinar.
 
-**Um problema significativo é que um objeto pode aparecer em nós diferentes.** Por exemplo, onde os usuários esperam encontrar um dispositivo de hardware que reproduza música, tem um disco rígido grande e usa uma porta USB? Talvez em qualquer um dos vários nós de contêiner diferentes, como multimídia, armazenamento, USB e possivelmente em recursos de hardware. Uma solução é colocar cada objeto sob o contêiner único mais apropriado, independentemente das circunstâncias; outra abordagem é inserir cada objeto em todos os contêineres que se aplicam. A primeira promove uma hierarquia simples e limpa, e a segunda promove a descoberta, cada uma tem vantagens e problemas potenciais.
+**Um problema significativo é que um objeto pode aparecer em nós diferentes.** Por exemplo, onde os usuários esperam encontrar um dispositivo de hardware que reproduz música, tem um disco rígido grande e usa uma porta USB? Talvez em qualquer um dos vários nós de contêiner diferentes, como Multimídia, Armazenamento, USB e, possivelmente, em Recursos de Hardware. Uma solução é colocar cada objeto no único contêiner mais apropriado, independentemente das circunstâncias; outra abordagem é colocar cada objeto em todos os contêineres que se aplicam. O primeiro promove uma hierarquia simples e limpa e a segunda promove a descoberta, cada uma tem vantagens e possíveis problemas.
 
-**Os usuários podem não entender completamente o layout da árvore, mas eles formarão um modelo mental das relações depois de interagir com a árvore por um tempo.** Se esse modelo mental estiver incorreto, isso resultará em confusão. Por exemplo, suponha que um player de música possa ser encontrado nos contêineres multimídia, armazenamento e USB. Essa disposição melhora a capacidade de descoberta. Se um usuário encontrar o dispositivo pela primeira vez em multimídia, o usuário poderá concluir que todos os dispositivos, como players de música, apareçam no contêiner multimídia. O usuário esperará que dispositivos semelhantes, como câmeras digitais, apareçam no contêiner de multimídia e se tornarão confusos se não for o caso.
+**Os usuários podem não entender completamente o layout da árvore, mas formarão um modelo mental das relações depois de interagir com a árvore por um tempo.** Se esse modelo mental estiver incorreto, isso causará confusão. Por exemplo, suponha que um player de música possa ser encontrado nos contêineres Multimídia, Armazenamento e USB. Essa disposição melhora a capacidade de descoberta. Se um usuário encontrar primeiro o dispositivo em Multimídia, o usuário poderá concluir que todos os dispositivos como players de música aparecem no contêiner Multimídia. Em seguida, o usuário esperará que dispositivos semelhantes, como câmeras digitais, apareçam no contêiner Multimídia e se confundirão se esse não for o caso.
 
-**O desafio ao criar uma árvore é equilibrar a capacidade de descoberta com um modelo de usuário previsível que minimiza a confusão.**
+**O desafio ao projetar uma árvore é equilibrar a descoberta com um modelo de usuário previsível que minimiza a confusão.**
 
 ### <a name="breadth-vs-depth"></a>Amplitude versus profundidade
 
-Estudos de usabilidade mostraram que **os usuários são mais bem-sucedidos na localização de objetos em uma árvore que é ampla do que em uma árvore que é profunda**, portanto, ao criar uma árvore, você deve preferir a amplitude em profundidade. O ideal é que uma árvore não tenha mais de quatro níveis (não contando o nó raiz) e os objetos acessados com mais frequência apareçam nos dois primeiros níveis.
+Os estudos de usabilidade mostraram que os usuários são mais bem-sucedidos em localizar objetos em uma árvore ampla do que em uma árvore que é **profunda,** portanto, ao projetar uma árvore, você deve preferir amplitude em vez de profundidade. O ideal é que uma árvore não tenha mais de quatro níveis (sem contar o nó raiz) e os objetos mais acessados devem aparecer nos dois primeiros níveis.
 
 ### <a name="other-principles"></a>Outros princípios
 
--   Quando os usuários encontram o que estão procurando, eles param de procurar. Eles não parecem ver onde mais um objeto pode ser encontrado, pois eles não precisam. Esses usuários podem pressupor que o primeiro caminho encontrado é o único caminho.
--   Os usuários têm dificuldade para localizar objetos em árvores grandes e complexas. Os usuários não executarão uma pesquisa manual e completa para localizar objetos em tais árvores; Eles param de quando acham que gastaram um esforço razoável. Consequentemente, árvores grandes e complexas precisam ser complementadas com outros métodos de acesso, como o Word Search, um índice ou uma filtragem.
--   Alguns programas permitem que os usuários criem suas próprias árvores. Embora essas árvores autoprojetadas possam ser alinhadas com o modelo mental de um usuário, elas são criadas com frequência e são mantidas de forma insatisfatória. Por exemplo, embora um sistema de arquivos, programa de email e lista de favoritos normalmente armazenem tipos semelhantes de informações, os usuários raramente se preocupam em organizá-los da mesma maneira.
+-   Quando os usuários encontram o que estão procurando, eles param de procurar. Eles não parecem ver onde mais um objeto pode ser encontrado porque não é necessário. Esses usuários podem assumir que o primeiro caminho que eles encontram é o único caminho.
+-   Os usuários têm problemas para localizar objetos em árvores grandes e complexas. Os usuários não executarão uma pesquisa manual e exaustiva para encontrar objetos em tais árvores; eles param quando pensam que gastaram um esforço razoável. Consequentemente, árvores grandes e complexas precisam ser complementadas com outros métodos de acesso, como pesquisa de palavras, índice ou filtragem.
+-   Alguns programas permitem que os usuários criem suas próprias árvores. Embora essas árvores autoprofissadas possam ser alinhadas com o modelo mental de um usuário, elas geralmente são criadas hafafamente e mal mantidas. Por exemplo, embora um sistema de arquivos, um programa de email e uma lista de Favoritos normalmente armazenem tipos semelhantes de informações, os usuários raramente se preocupam em organizá-las da mesma maneira.
 
 **Se você fizer apenas uma coisa...**
 
-Avalie atentamente os benefícios e as desvantagens do uso de exibições de árvore. Ter dados hierarquicamente organizados não significa que você precisa usar uma exibição de árvore.
+Avalie cuidadosamente os benefícios e desvantagens do uso de exibições de árvore. Ter dados organizados hierarquicamente não significa que você precisa usar uma exibição de árvore.
 
 ## <a name="usage-patterns"></a>Padrões de uso
 
-Os modos de exibição de árvore têm vários padrões de uso:
+As exibições de árvore têm vários padrões de uso:
 
 
 
-|                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Uso                           |    Exemplo                         |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Exibições de árvore com apenas nós de contêiner**<br/> os usuários podem exibir e interagir com um contêiner por vez. <br/>                        | Normalmente, essas exibições de árvore têm um controle associado que exibe o conteúdo do contêiner selecionado, para que os usuários possam interagir com apenas um contêiner por vez. <br/> ![captura de tela do painel de contêineres e painel de conteúdo ](images/ctrl-tree-views-image6.png)<br/> Neste exemplo, o modo de exibição de árvore tem apenas nós de contêiner. O conteúdo do nó selecionado é exibido no controle de exibição de lista associado.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| **Exibições de árvore com nós de contêiner e folha**<br/> os usuários podem exibir e interagir com contêineres e folhas.<br/>                       | Normalmente, essas exibições de árvore têm um controle associado que exibe o conteúdo do contêiner ou folha selecionado. permitir que os usuários interajam com as folhas geralmente torna necessário dar suporte a várias seleções. <br/> ![captura de tela do painel de exibição de árvore e do painel de conteúdo ](images/ctrl-tree-views-image7.png)<br/> Neste exemplo, o modo de exibição de árvore tem nós de contêiner e folha. como há suporte para várias seleções, o conteúdo dos itens abertos é exibido usando [guias](ctrl-tabs.md) no controle associado.<br/> Como alternativa, o modo de exibição de árvore pode ter uma lista organizada, onde os contêineres são os cabeçalhos e as folhas são opções. <br/> ![captura de tela de exibição em árvore com títulos e opções ](images/ctrl-tree-views-image8.png)<br/> Neste exemplo, a árvore deixa as opções e os contêineres são categorias de opção.<br/> |
+| **Exibições de árvore com apenas nós de contêiner**<br/> os usuários podem exibir e interagir com um contêiner por vez. <br/>                        | Normalmente, essas exibições de árvore têm um controle associado que exibe o conteúdo do contêiner selecionado, para que os usuários possam interagir com apenas um contêiner por vez. <br/> ![captura de tela do painel de contêiner e do painel de conteúdo ](images/ctrl-tree-views-image6.png)<br/> Neste exemplo, o exibição de árvore tem apenas nós de contêiner. O conteúdo do nó selecionado é exibido no controle de exibição de lista associado.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **Exibições de árvore com nós de contêiner e folha**<br/> os usuários podem exibir e interagir com contêineres e folhas.<br/>                       | Normalmente, essas exibições de árvore têm um controle associado que exibe o conteúdo do contêiner ou folha selecionado. permitir que os usuários interajam com folhas geralmente torna necessário dar suporte a várias seleções. <br/> ![captura de tela do painel de exibição de árvore e do painel de conteúdo ](images/ctrl-tree-views-image7.png)<br/> Neste exemplo, o modo de exibição de árvore tem nós de contêiner e folha. como há suporte para várias seleções, o conteúdo dos itens abertos é exibido usando [guias](ctrl-tabs.md) no controle associado.<br/> Como alternativa, o modo de exibição de árvore pode ter uma lista organizada, onde os contêineres são os cabeçalhos e as folhas são opções. <br/> ![captura de tela de exibição em árvore com títulos e opções ](images/ctrl-tree-views-image8.png)<br/> Neste exemplo, a árvore deixa as opções e os contêineres são categorias de opção.<br/> |
 | **Exibições de árvore da caixa de seleção**<br/> os usuários podem selecionar qualquer número de itens, incluindo nenhum.<br/>                                             | As caixas de seleção indicam claramente que a seleção múltipla é possível. Use esse padrão de árvore quando várias seleções forem essenciais ou usadas com frequência. <br/> ![captura de tela de exibição de árvore com caixas de seleção ](images/ctrl-tree-views-image9.png)<br/> Neste exemplo, uma exibição de árvore da caixa de seleção permite que a seleção de recursos seja ativada ou desativada.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | **Construtores de exibição de árvore**<br/> os usuários podem criar uma árvore adicionando um contêiner ou folha por vez e, opcionalmente, definindo a ordem.<br/> | Muitas árvores podem ser criadas ou modificadas pelos usuários. algumas árvores são criadas no local usando menus de contexto e arrastar e soltar (como as pastas no Windows Explorer), enquanto outras árvores são criadas usando uma caixa de diálogo especializada (como a lista de favoritos no Windows Internet Explorer). <br/> ![captura de tela da caixa de diálogo favoritos ](images/ctrl-tree-views-image10.png)<br/> Neste exemplo do Internet Explorer, os usuários podem criar sua própria lista de favoritos usando uma caixa de diálogo.<br/>                                                                                                                                                                                                                                                                                                                                                                                     |
 | **Exibições de árvore com métodos de acesso alternativos**<br/> os usuários podem encontrar objetos de outras maneiras além de usar uma árvore hierárquica.<br/>        | Conforme mencionado anteriormente, os usuários têm dificuldade em encontrar objetos em árvores grandes e complexas, portanto, essas árvores devem ser complementadas com outros métodos de acesso, como uma pesquisa de palavras, um índice ou uma filtragem. <br/> ![captura de tela de conteúdo, guias de índice e favoritos ](images/ctrl-tree-views-image11.png)<br/> Neste exemplo, os usuários também podem acessar informações usando um sumário, um índice e favoritos. para alguns usuários, as guias de índice e pesquisa podem ser mais úteis do que a guia conteúdo.<br/> ![captura de tela do menu Iniciar do Windows e caixa de pesquisa ](images/ctrl-tree-views-image12.png)<br/> Neste exemplo, o menu Iniciar do Windows também permite que os usuários acessem programas, arquivos e páginas da Web digitando parte do nome na caixa de pesquisa.<br/>                                                                                                             |

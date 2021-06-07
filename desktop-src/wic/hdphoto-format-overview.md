@@ -4,12 +4,12 @@ ms.assetid: C73752AB-3D6E-4D92-9FDE-CB68B6A9743C
 title: Visão geral do formato de foto HD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9275abd4b74c7eb4be7673d85bb4eab5f45a163d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 62c526667c6bf77d340e895bdb66dc073134c33d
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105765268"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444867"
 ---
 # <a name="hd-photo-format-overview"></a>Visão geral do formato de foto HD
 
@@ -35,7 +35,7 @@ A tabela a seguir fornece informações de identificação do codec.
 
 
 
-|                        |                                                                                 |
+|   Componente            | Descrição                                                                     |
 |------------------------|---------------------------------------------------------------------------------|
 | Nome (s) formal (es)         | Foto de HD, foto do Windows Media                                                   |
 | Extensão (s) de nome de arquivo | wdp                                                                             |
@@ -72,7 +72,7 @@ O HD Photo codec usa ambas as opções básicas de WIC e fornece várias opçõe
 
 Opções básicas do codificador do WIC
 
-| Nome da Propriedade | VARTYPE | Intervalo de valores | Valor padrão |
+| Nome da propriedade | VARTYPE | Intervalo de valores | Valor Padrão |
 |---------------|---------|-------------|---------------|
 | [ImageQuality](#imagequality-option) | VT \_ R4 | 0-1,0 | 0,9 |
 | [Lossless](#lossless-option) | BOOL do VT \_ | **verdadeiro**, **falso** | **FALSE** |
@@ -80,7 +80,7 @@ Opções básicas do codificador do WIC
 
 Opções de codificador de HD específico
 
-| Nome da Propriedade | VARTYPE | Intervalo de valores | Valor padrão |
+| Nome da propriedade | VARTYPE | Intervalo de valores | Valor Padrão |
 |---------------|---------|-------------|---------------|
 | [UseCodecOptions](#usecodecoptions-option) | BOOL do VT \_ | **verdadeiro**, **falso** | **FALSE** |
 | [Qualidade](#quality-option) | \_UI1 VT | 1 - 255 | 10 |
@@ -89,49 +89,49 @@ Opções de codificador de HD específico
 | [HorizontalTileSlices](#horizontaltileslices-verticaltileslices-options) | \_UI2 VT | 0 - 4095 | (largura da imagem – 1)  >> 8 |
 | [VerticalTileSlices](#horizontaltileslices-verticaltileslices-options) | \_UI2 VT | 0 - 4095 | (altura da imagem – 1)  >> 8 |
 | [FrequencyOrder](#frequencyorder-option) | BOOL do VT \_ | **verdadeiro**, **falso** | **TRUE** |
-| [InterleavedAlpha](#interleavedalpha-option) | BOOL do VT \_ | **verdadeiro**, **falso** | **FALSE** |
-| [AlphaQuality](#alphaquality-option) | \_UI1 VT | 1 - 255 | 1 |
-| [CompressedDomainTranscode](#compresseddomaintranscode-option) | BOOL do VT \_ | **verdadeiro**, **falso** | **TRUE** |
-| [ImageDataDiscard](#imagedatadiscard-option) | \_UI1 VT | 0 a 3 | 0 |
-| [AlphaDataDiscard](#alphadatadiscard-option) | \_UI1 VT | 0 - 4 | não usado. |
-| [IgnoreOverlap](#ignoreoverlap-option) | BOOL do VT \_ | **verdadeiro**, **falso** | **FALSE** |
+| [InterleavedAlpha](#interleavedalpha-option) | BOOL da VT \_ | **TRUE,** **FALSE** | **FALSE** |
+| [AlfaQuality](#alphaquality-option) | VT \_ UI1 | 1 - 255 | 1 |
+| [Compresseddomaintranscode](#compresseddomaintranscode-option) | BOOL da VT \_ | **TRUE,** **FALSE** | **TRUE** |
+| [ImageDataDiscard](#imagedatadiscard-option) | VT \_ UI1 | 0 a 3 | 0 |
+| [AlphaDataDiscard](#alphadatadiscard-option) | VT \_ UI1 | 0 - 4 | não usado. |
+| [IgnoreOverlap](#ignoreoverlap-option) | BOOL da VT \_ | **TRUE,** **FALSE** | **FALSE** |
 
 
-Se uma opção de codificador estiver presente na lista de opções de [**IPropertyBag2**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768192(v=vs.85)) para a qual o codec não dá suporte, ela será ignorada.
+Se uma opção de codificador estiver presente na lista de opções [**IPropertyBag2**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768192(v=vs.85)) à qual o codec não dá suporte, ela será ignorada.
 
 ### <a name="imagequality-option"></a>Opção ImageQuality
 
-Especifica a fidelidade da imagem desejada. 0,0 indica a menor fidelidade possível e 1,0 especifica a fidelidade mais alta. Para o formato HD Photo Image, um valor 1,0 resulta em uma compactação matematicamente sem perdas.
+Especifica a fidelidade da imagem desejada. 0,0 indica a fidelidade mais baixa possível e 1,0 especifica a fidelidade mais alta. Para o formato de imagem do HD Photo, um valor 1.0 resulta em uma compactação matematicamente sem perda.
 
 O valor padrão é 0,9.
 
 ### <a name="compressionquality-option"></a>Opção CompressionQuality
 
-Especifica a qualidade de compactação desejada. 0,0 indica o esquema de compactação eficiente disponível. Normalmente, esse esquema produz uma codificação mais rápida, mas uma saída maior. Um valor de 1,0 especifica o esquema de compactação mais eficiente disponível, que normalmente produz uma codificação mais longa, mas uma saída menor.
+Especifica a qualidade de compactação desejada. 0.0 indica o esquema de compactação eficiente disponível. Normalmente, esse esquema produz uma codificação mais rápida, mas uma saída maior. Um valor de 1,0 especifica o esquema de compactação mais eficiente disponível, que normalmente produz uma codificação mais longa, mas uma saída menor.
 
-A foto de HD não dá suporte a essa opção de codificador. Esse valor será ignorado se estiver presente na lista de parâmetros [**IPropertyBag2**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768192(v=vs.85)) .
+O HD Photo não dá suporte a essa opção de codificador. Esse valor será ignorado se estiver presente na lista [**de parâmetros IPropertyBag2.**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768192(v=vs.85))
 
-### <a name="lossless-option"></a>Opção sem perdas
+### <a name="lossless-option"></a>Opção sem perda
 
-Especifica se o modo de compactação de perdas deve ser usado. Para o formato de imagem de HD Photo, esse valor substitui o valor da opção [ImageQuality](#imagequality-option) .
+Especifica se o modo de compactação de perdas deve ser usado. Para o formato de imagem do HD Photo, esse valor substitui o [valor da opção ImageQuality.](#imagequality-option)
 
-O valor padrão é **false**.
+O valor padrão é **FALSE**.
 
 ### <a name="bitmaptransform-option"></a>Opção BitmapTransform
 
-Especifica como a imagem é transformada durante a decodificação de imagem. Você deve definir essa opção como um dos valores de enumeração [**WICBitmapTransformOptions**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmaptransformoptions) .
+Especifica como a imagem é transformada durante a decodificação da imagem. Você deve definir essa opção como um dos valores de enumeração [**WICBitmapTransformOptions.**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmaptransformoptions)
 
-O valor padrão é [**WICBitmapTransformOptions:: WICBitmapTransformRotate0**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmaptransformoptions).
+O valor padrão é [**WICBitmapTransformOptions::WICBitmapTransformRotate0**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmaptransformoptions).
 
 ### <a name="usecodecoptions-option"></a>Opção UseCodecOptions
 
-Se o valor for VARIANT \_ true, as opções de [qualidade](#quality-option), [sobreposição](#overlap-option)e [subamostragem](#subsampling-option) , em vez do valor da opção.
+Se o valor for VARIANT TRUE, as opções \_ [Quality](#quality-option), [Overlap](#overlap-option)e [Subsampling](#subsampling-option) em vez do valor da opção.
 
-O valor padrão é **false**.
+O valor padrão é **FALSE**.
 
 ### <a name="quality-option"></a>Opção de qualidade
 
-Especifica a qualidade de compactação para a imagem. Um valor de 1 indica o modo sem perdas. Os valores crescentes resultam em taxas de compactação mais altas e qualidade de imagem inferior.
+Especifica a qualidade da compactação para a imagem. Um valor de 1 indica o modo sem perda. O aumento de valores resulta em taxas de compactação mais altas e menor qualidade da imagem.
 
 O valor padrão é 10.
 
@@ -146,8 +146,8 @@ A tabela a seguir lista os níveis de processamento de sobreposição disponíve
 | Valor | Descrição                                                                                                                                                                                 |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0     | Nenhum processamento de sobreposição está habilitado.                                                                                                                                                           |
-| 1     | Um nível de processamento de sobreposição está habilitado, modificando valores codificados em bloco 4x4 com base nos valores de blocos vizinhos.                                                                       |
-| 2     | Dois níveis de processamento de sobreposição estão habilitados. Além do processamento de primeiro nível, os valores codificados dos blocos de macro 16x16 são modificados com base nos valores de blocos de macro vizinhos. |
+| 1     | Um nível de processamento de sobreposição está habilitado, modificando valores codificados em bloco 4x4 com base em valores de blocos vizinhos.                                                                       |
+| 2     | Dois níveis de processamento de sobreposição estão habilitados. Além do processamento de primeiro nível, os valores codificados de blocos de macro 16x16 são modificados com base nos valores de blocos de macro vizinhos. |
 
 
 
@@ -155,40 +155,40 @@ A tabela a seguir lista os níveis de processamento de sobreposição disponíve
 
 O valor padrão é 1.
 
-### <a name="subsampling-option"></a>Opção de subamostragem
+### <a name="subsampling-option"></a>Opção de subampling
 
-Especifica a compactação adicional no espaço croma. Dessa forma, você pode preservar os detalhes de luminância às custas dos detalhes da cor. Essa opção se aplica somente a imagens RGB.
+Especifica a compactação adicional no espaço de chroma. Dessa forma, você pode preservar os detalhes de luminância às custas dos detalhes da cor. Essa opção se aplica somente a imagens RGB.
 
-A tabela a seguir lista as opções de subamostras disponíveis.
+A tabela a seguir lista as opções de subampling disponíveis.
 
 
 
 | Valor | Descrição                                                                                                                                                                                                                                                                                 |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 3     | a codificação 4:4:4 preserva a resolução de croma completa.                                                                                                                                                                                                                                            |
-| 2     | a codificação 4:2:2 reduz a resolução de croma para 1/2 da resolução de luminância.                                                                                                                                                                                                                      |
-| 1     | a codificação 4:2:0 reduz a resolução de croma para 1/4 da resolução de luminância.                                                                                                                                                                                                                      |
-| 0     | a codificação 4:0:0 descarta todo o conteúdo do Croma e preserva apenas a luminância. Como o codec usa uma definição ligeiramente modificada de luminância para melhorar o desempenho, é recomendável que você converta uma imagem RGB em monocromático antes da codificação, em vez de usar esse modo de subamostragem croma. |
+| 3     | 4:4:4 A codificação preserva a resolução de chroma completa.                                                                                                                                                                                                                                            |
+| 2     | A codificação 4:2:2 reduz a resolução de chroma para 1/2 de resolução de luminância.                                                                                                                                                                                                                      |
+| 1     | A codificação 4:2:0 reduz a resolução de chroma para 1/4 de resolução de luminância.                                                                                                                                                                                                                      |
+| 0     | A codificação 4:0:0 descarta todo o conteúdo de chroma e preserva apenas a luminância. Como o codec usa uma definição ligeiramente modificada de luminância para melhorar o desempenho, recomendamos que você converta uma imagem RGB em monocromática antes da codificação, em vez de usar esse modo de subamplagem chroma. |
 
 
 
  
 
-O valor padrão é 3 se [ImageQuality](#imagequality-option) > 0,8; caso contrário, 1.
+O valor padrão será 3 se [ImageQuality](#imagequality-option) > 0,8; caso contrário, 1.
 
-### <a name="horizontaltileslices-verticaltileslices-options"></a>HorizontalTileSlices, opções de VerticalTileSlices
+### <a name="horizontaltileslices-verticaltileslices-options"></a>Opções HorizontalTileSlices, VerticalTileSlices
 
-Especifique os blocos gráficos horizontais e verticais da imagem antes de executar a codificação de compactação para o desempenho ideal da decodificação de região. Dividindo a imagem em blocos retangulares durante a codificação, você pode decodificar regiões da imagem sem processar todo o fluxo de dados compactado. O valor padrão 0 não especifica nenhuma subdivisão, portanto, a imagem inteira é tratada como um único bloco. Um valor de 1 para cada parâmetro cria uma única divisão vertical e horizontal única, dividindo efetivamente a imagem em quatro blocos igualmente dimensionados. O valor máximo de 4095 para cada parâmetro divide a imagem em 4096 linhas de bloco com 4096 blocos por linha. Em outras palavras, os valores de parâmetro são iguais ao número de blocos horizontais e verticais (respectivamente) menos 1. Um bloco nunca pode ter menos de 16 pixels de largura ou altura, portanto, o codificador de fotos de alta definição pode ajustar esse parâmetro para manter o tamanho mínimo necessário do bloco. Como há sobrecarga de armazenamento e processamento associada a cada bloco, você deve escolher esses valores cuidadosamente para atender ao cenário específico.
+Especifique o bloco horizontal e vertical da imagem antes de executar a codificação de compactação para o desempenho ideal da decodificar região. Ao dividir a imagem em blocos retangulares durante a codificação, você pode decodificar regiões da imagem sem processar todo o fluxo de dados compactado. O valor padrão de 0 não especifica nenhuma subdivisão, portanto, toda a imagem é tratada como um único lado. Um valor de 1 para cada parâmetro cria uma única divisão horizontal e vertical, dividindo efetivamente a imagem em quatro blocos de tamanho igual. O valor máximo de 4095 para cada parâmetro divide a imagem em 4.096 linhas de bloco com 4096 blocos por linha. Em outras palavras, os valores de parâmetro são iguais ao número de blocos horizontais e verticais (respectivamente) menos 1. Um lado nunca pode ter menos de 16 pixels de largura ou altura, portanto, o codificador hd photo pode ajustar esse parâmetro para manter o tamanho mínimo necessário do lado. Como há sobrecarga de armazenamento e processamento associada a cada lado, você deve escolher esses valores com cuidado para atender ao cenário específico.
 
-[HorizontalTileSlices](/windows): o valor padrão é (largura da imagem – 1)  >> 8.
+[HorizontalTileSlices:](/windows)o valor padrão é (Largura da Imagem – 1) >> 8.
 
-[VerticalTileSlices](/windows): o valor padrão é (altura da imagem – 1)  >> 8.
+[VerticalTileSlices:](/windows)o valor padrão é (Altura da Imagem – 1) >> 8.
 
 ### <a name="frequencyorder-option"></a>Opção FrequencyOrder
 
-Especifica que a imagem deve ser codificada em ordem de frequência. Os dados de frequência mais baixos aparecem primeiro no arquivo, e o conteúdo da imagem é agrupado por sua frequência, em vez de sua orientação espacial. Organizar um arquivo por ordem de frequência fornece o melhor desempenho para qualquer decodificação baseada em frequência e, portanto, é recomendável. Implementações de dispositivo de codificadores de fotos de HD podem organizar um arquivo em ordem espacial para reduzir a superfície de memória necessária durante a codificação.
+Especifica que a imagem deve ser codificada em ordem de frequência. Os dados de menor frequência aparecem primeiro no arquivo e o conteúdo da imagem é agrupado por sua frequência em vez de sua orientação espacial. Organizar um arquivo por ordem de frequência fornece o melhor desempenho para qualquer decodificação baseada em frequência e, portanto, é recomendável. Implementações de dispositivo de codificadores de fotos HD podem organizar um arquivo em ordem espacial para reduzir o espaço de memória necessário durante a codificação.
 
-O valor padrão é **true** e recomendamos que aplicativos e dispositivos sempre usem a ordem de frequência, a menos que você tenha motivos específicos de desempenho ou de aplicativo para usar a ordem espacial.
+O valor padrão é **TRUE** e recomendamos que os aplicativos e dispositivos sempre usem a ordem de frequência, a menos que você tenha motivos específicos do aplicativo ou desempenho para usar a ordem espacial.
 
 ### <a name="interleavedalpha-option"></a>Opção InterleavedAlpha
 
@@ -196,7 +196,7 @@ Definir essa opção como **true** instrui o codec a codificar as informações 
 
 Definir esse parâmetro como **false** resulta em um canal do planar alfanumérico, codificado como uma imagem separada com seu próprio valor de qualidade opcional. Usando um canal alfanumérico planar, você pode decodificar os dados da imagem e o canal alfa de forma independente. Há suporte para canais alfa intercalados apenas para determinados formatos de pixel RGB. Você pode associar um canal alfanumérico planar a qualquer formato de imagem que define um canal alfa.
 
-O valor padrão é **false**.
+O valor padrão é **FALSE**.
 
 ### <a name="alphaquality-option"></a>Opção AlphaQuality
 
@@ -276,7 +276,7 @@ Sem valor padrão.
 
 Essa opção só será válida se a propriedade [CompressedDomainTranscode](#compresseddomaintranscode-option) for **true** e uma transcodificação de sub-região de exatamente um ou mais blocos for solicitada. A operação padrão para uma transcodificação de região (ou decodificação) é expandir a região solicitada para incluir os pixels adjacentes que são necessários para a decodificação de sobreposição das bordas da região. Quando esse parâmetro é definido como **true**, os pixels adjacentes são ignorados e apenas o bloco selecionado ou os blocos são extraídos. Novamente, isso requer que a região solicitada corresponda exatamente às coordenadas de um ou mais blocos. Se a imagem de origem não for um lado ou se a região solicitada especificar quaisquer blocos parciais, esse parâmetro será ignorado.
 
-O valor padrão é **false**.
+O valor padrão é **FALSE**.
 
 ## <a name="decoding"></a>Decodificação
 
@@ -289,31 +289,31 @@ Além das interfaces necessárias para ser um codec habilitado para WIC, o decod
 -   Decodifique uma sub-região retangular da imagem.
 -   Decodificar para uma resolução mais baixa
 -   Decodificar para um formato de pixel diferente
--   Executar uma transformação (rotação/inverter) durante a decodificação
+-   Executar uma transformação (rotação/invasão) durante a decodificação
 
-O HD Photo codec nativo fornece o seguinte nível de suporte para a interface [**IWICBitmapSourceTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsourcetransform) .
+O codec nativo do HD Photo fornece o nível de suporte a seguir para a interface [**IWICBitmapSourceTransform.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsourcetransform)
 
 ### <a name="doessupporttransform"></a>DoesSupportTransform
 
-A implementação nativa dá suporte a todas as transformações de [**WICBitmapTransformOptions**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmaptransformoptions) .
+A implementação nativa dá suporte a [**todas as transformaçãos WICBitmapTransformOptions.**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmaptransformoptions)
 
 ### <a name="getclosestsize"></a>GetClosestSize
 
-Para solicitações que são menores que 1/2 a dimensão da imagem de origem em ambas as dimensões, o HD Photo retorna o próximo tamanho de imagem de inteiro maior que é igualmente divisível por um fator de dois. Para todos os outros tamanhos solicitados, o HD Photo retorna as dimensões da imagem original.
+Para solicitações que são menores que 1/2 a dimensão da imagem de origem em ambas as dimensões, o HD Photo retorna o próximo maior tamanho de imagem de inteiro que é divisível por um fator de dois. Para todos os outros tamanhos solicitados, o HD Photo retorna as dimensões da imagem original.
 
 ### <a name="getclosestpixelformat"></a>GetClosestPixelFormat
 
-HD Photo retorna o formato de pixel da imagem codificada.
+O HD Photo retorna o formato de pixel da imagem codificada.
 
-### <a name="copypixels"></a>CopyPixels
+### <a name="copypixels"></a>Copypixels
 
-A foto de HD aceita qualquer região solicitada especificada pelo parâmetro [**WICRect**](/windows/desktop/api/Wincodec/ns-wincodec-wicrect) e retorna essa parte da imagem.
+O HD Photo aceita qualquer região solicitada especificada pelo [**parâmetro WICRect**](/windows/desktop/api/Wincodec/ns-wincodec-wicrect) e retorna essa parte da imagem.
 
-Os parâmetros *uiWidth* e *uiHeight* devem especificar dimensões, conforme retornado pela função [**GetClosestSize**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-getclosestsize) . Quaisquer outros valores retornam um erro.
+Os *parâmetros uiWidth* e *uiHeight* devem especificar dimensões, conforme retornado pela [**função GetClosestSize.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-getclosestsize) Quaisquer outros valores retornam um erro.
 
-O parâmetro *pguidDstFormat* deve especificar o formato de pixel retornado pela função [**GetClosestPixelFormat**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-getclosestpixelformat) . Qualquer outro valor retorna um erro.
+O *parâmetro pguidDstFormat* deve especificar o formato de pixel retornado pela [**função GetClosestPixelFormat.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-getclosestpixelformat) Qualquer outro valor retorna um erro.
 
-A foto de HD aceita qualquer valor permitido para o parâmetro *dstTransform* . Observe que os valores permitidos pelo WIC para esse parâmetro são diferentes dos valores usados pela foto de HD para a marca de metadados de transformação.
+O HD Photo aceita qualquer valor acessível para o *parâmetro dstTransform.* Observe que os valores permitidos pelo WIC para esse parâmetro são diferentes dos valores usados pelo HD Photo para a marca de metadados de Transformação.
 
  
 

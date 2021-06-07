@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ae66dadb0c943b1ca33be3e696ac1c8ca7d6234
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 93a873ef59ea9d099a7a739e5238c722f4b908fd
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105753335"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111387067"
 ---
 # <a name="taskfoldercreatefolder-method"></a>Método TaskFolder. CreateFolder
 
@@ -46,7 +46,7 @@ ppFolder = .CreateFolder( _
 *nome_da_pasta* \[ no\]
 </dt> <dd>
 
-O nome usado para identificar a pasta. Se "nome_da_pasta \\ subpasta1 \\ SubFolder2" for especificado, toda a árvore de pastas será criada se as pastas não existirem. Esse parâmetro pode ser um caminho relativo para a instância de [**TaskFolder**](taskfolder.md) atual. A pasta de tarefas raiz é especificada com uma barra invertida ( \) . Um exemplo de um caminho de pasta de tarefas, sob a pasta da tarefa raiz, é \\ MyTaskFolder. O caractere '. ' não pode ser usado para especificar a pasta de tarefas atual e o '.. ' os caracteres não podem ser usados para especificar a pasta pai da tarefa no caminho.
+O nome usado para identificar a pasta. Se "nome_da_pasta \\ subpasta1 \\ SubFolder2" for especificado, toda a árvore de pastas será criada se as pastas não existirem. Esse parâmetro pode ser um caminho relativo para a instância de [**TaskFolder**](taskfolder.md) atual. A pasta de tarefas raiz é especificada com uma barra invertida ( \\ ). Um exemplo de um caminho de pasta de tarefas, sob a pasta da tarefa raiz, é \\ MyTaskFolder. O caractere '. ' não pode ser usado para especificar a pasta de tarefas atual e o '.. ' os caracteres não podem ser usados para especificar a pasta pai da tarefa no caminho.
 
 </dd> <dt>
 

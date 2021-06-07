@@ -1,98 +1,98 @@
 ---
-title: Caixas de diálogo (noções básicas de Design)
-description: Uma caixa de diálogo é uma janela secundária que permite aos usuários executar um comando, pergunta aos usuários uma pergunta ou fornece aos usuários informações ou comentários sobre o progresso.
+title: Caixas de diálogo (noções básicas de design)
+description: Uma caixa de diálogo é uma janela secundária que permite aos usuários executar um comando, faz uma pergunta aos usuários ou fornece aos usuários informações ou comentários de progresso.
 ms.assetid: 2ded9f30-d45f-4027-a85d-4e7d0e412793
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 0db9d705cb697cdad9ed29dad86faf5f96665dd5
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: b0e0deb28a706436e4d33ece35a40c26bd7499e0
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104559160"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444847"
 ---
-# <a name="dialog-boxes-design-basics"></a>Caixas de diálogo (noções básicas de Design)
+# <a name="dialog-boxes-design-basics"></a>Caixas de diálogo (noções básicas de design)
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
 
-Uma caixa de diálogo é uma janela secundária que permite aos usuários executar um comando, pergunta aos usuários uma pergunta ou fornece aos usuários informações ou comentários sobre o progresso.
+Uma caixa de diálogo é uma janela secundária que permite aos usuários executar um comando, faz uma pergunta aos usuários ou fornece aos usuários informações ou comentários de progresso.
 
-![elementos da caixa de diálogo identificação da captura de tela ](images/win-dialog-box-image1.png)
+![captura de tela identificando elementos da caixa de diálogo ](images/win-dialog-box-image1.png)
 
 Uma caixa de diálogo típica.
 
-As caixas de diálogo consistem em uma barra de título (para identificar o comando, o recurso ou o programa do qual uma caixa de diálogo veio), uma instrução principal opcional (para explicar o objetivo do usuário com a caixa de diálogo), vários controles na área de conteúdo (para apresentar opções) e botões de confirmação (para indicar como o usuário deseja confirmar a tarefa).
+As caixas de diálogo consistem em uma barra de título (para identificar o comando, o recurso ou o programa de onde veio uma caixa de diálogo), uma instrução principal opcional (para explicar o objetivo do usuário com a caixa de diálogo), vários controles na área de conteúdo (para apresentar opções) e botões de confirmação (para indicar como o usuário deseja se comprometer com a tarefa).
 
 As caixas de diálogo têm dois tipos fundamentais:
 
--   As **caixas de diálogo modais** exigem que os usuários concluam e fechem antes de continuar com a janela do proprietário. Essas caixas de diálogo são mais bem usadas para tarefas críticas ou pouco frequentes que exigem conclusão antes de continuar.
--   As **caixas de diálogo sem janela restrita** permitem que os usuários alternem entre a caixa de diálogo e a janela do proprietário conforme desejado. Essas caixas de diálogo são mais bem usadas para tarefas contínuas, repetitivas e frequentes.
+-   **As caixas de diálogo modais** exigem que os usuários concluam e fechem antes de continuar com a janela do proprietário. Essas caixas de diálogo são mais bem usadas para tarefas críticas ou pouco frequentes que exigem conclusão antes de continuar.
+-   **As caixas de diálogo sem modo** permitem que os usuários alternem entre a caixa de diálogo e a janela do proprietário conforme desejado. Essas caixas de diálogo são mais bem usadas para tarefas frequentes, repetitivas e em movimento.
 
-**Uma caixa de diálogo de tarefas é implementada usando a API (interface de programação de aplicativo) de diálogo de tarefa.** Eles consistem nas seguintes partes, que podem ser montadas em uma variedade de combinações:
+**Uma caixa de diálogo de tarefa é uma caixa de diálogo implementada usando a API (interface de programação de aplicativo) da caixa de diálogo de tarefa.** Elas consistem nas seguintes partes, que podem ser montadas em uma variedade de combinações:
 
--   Uma **barra de título** para identificar o recurso do aplicativo ou do sistema no qual a caixa de diálogo veio.
+-   Uma **barra de título** para identificar o recurso do aplicativo ou do sistema de onde veio a caixa de diálogo.
 -   Uma **instrução principal**, com um ícone opcional, para identificar o objetivo do usuário com a caixa de diálogo.
--   Uma **área de conteúdo** para informações e controles descritivos.
--   Uma **área de comando** para botões de confirmação, incluindo um botão de cancelamento e mais opções opcionais e não mostrar isso <item> novamente controles.
--   Uma **área de nota de rodapé** para obter explicações e ajuda adicionais opcionais, normalmente direcionadas a usuários menos experientes.
+-   Uma **área de conteúdo** para controles e informações descritivas.
+-   Uma **área de comando** para botões de commit, incluindo um botão Cancelar e opções mais opcionais e Não mostrar isso <item> controles novamente.
+-   Uma **área de nota de rodapé** para explicações adicionais opcionais e ajuda, normalmente direcionada a usuários menos experientes.
 
 ![captura de tela de uma caixa de diálogo de tarefa típica ](images/win-dialog-box-image2.png)
 
 Uma caixa de diálogo de tarefa típica.
 
-**As caixas de diálogo de tarefas são recomendadas sempre que forem apropriadas, pois são fáceis de criar e elas obtêm uma aparência consistente.** As caixas de diálogo de tarefas exigem o Windows Vista ou posterior, portanto, elas não são adequadas para versões anteriores do Microsoft Windows.
+**As caixas de diálogo de tarefa são recomendadas sempre que apropriados porque são fáceis de criar e atingem uma aparência consistente.** As caixas de diálogo de tarefa exigem o Windows Vista ou posterior, portanto, elas não são adequadas para versões anteriores do Microsoft Windows.
 
-Um painel de tarefas é como uma caixa de diálogo, exceto que é apresentada dentro de um painel de janela em vez de uma janela separada. Como resultado, os painéis de tarefas têm uma ideia mais direta e contextual do que as caixas de diálogo. Embora tecnicamente eles não sejam os mesmos, os **painéis de tarefas são tão semelhantes às caixas de diálogo que suas diretrizes são apresentadas neste artigo**.
+Um painel de tarefas é como uma caixa de diálogo, exceto que ele é apresentado dentro de um painel de janela em vez de uma janela separada. Como resultado, os painéis de tarefas têm uma sensação mais direta e contextual do que as caixas de diálogo. Embora tecnicamente eles não sejam os mesmos, os painéis de tarefas são tão semelhantes às caixas de diálogo que suas diretrizes são **apresentadas neste artigo.**
 
 ![captura de tela de um painel de tarefas típico ](images/win-dialog-box-image3.png)
 
 Um painel de tarefas típico.
 
-As [janelas de propriedades](win-property-win.md) são um tipo especializado de caixa de diálogo usado para exibir e alterar propriedades de um objeto, coleção de objetos ou um programa. Além disso, as janelas de propriedades normalmente dão suporte a várias tarefas, enquanto as caixas de diálogo normalmente dão suporte a uma única tarefa ou etapa em uma tarefa. Como seu uso é especializado, as **janelas de propriedades são cobertas em um conjunto diferente de diretrizes**.
+[As janelas](win-property-win.md) de propriedades são um tipo especializado de caixa de diálogo usada para exibir e alterar propriedades de um objeto, coleção de objetos ou um programa. Além disso, as janelas de propriedades normalmente suportam várias tarefas, enquanto as caixas de diálogo normalmente suportam uma única tarefa ou etapa em uma tarefa. Como seu uso é especializado, **as janelas de propriedades são abordadas em um conjunto diferente de diretrizes**.
 
-As caixas de diálogo podem ter [guias](ctrl-tabs.md)e, se forem chamadas de caixas de diálogo com guias. As janelas de propriedades são determinadas pela apresentação das propriedades, não pelo uso de guias.
+As caixas de diálogo [podem ter guias](ctrl-tabs.md)e, se for o caso, são chamadas caixas de diálogo com guias. As janelas de propriedades são determinadas pela apresentação das propriedades, não pelo uso de guias.
 
-**Observação:** As diretrizes relacionadas ao [layout](vis-layout.md), ao [Gerenciamento de janelas](win-window-mgt.md), às caixas de diálogo comuns, janelas de [Propriedades](win-property-win.md), [assistentes](win-wizards.md), [confirmações](mess-confirm.md), [mensagens de erro](mess-error.md)e mensagens de [aviso](mess-warn.md) são apresentadas em artigos separados.
+**Observação:** As diretrizes relacionadas ao [layout,](vis-layout.md)gerenciamento de [janelas,](win-window-mgt.md)caixas de diálogo [comuns,](win-property-win.md)janelas de propriedades, [assistentes,](win-wizards.md)confirmações, [](mess-error.md)mensagens de erro e mensagens [de](mess-warn.md) aviso são [apresentadas](mess-confirm.md)em artigos separados.
 
-## <a name="is-this-the-right-user-interface"></a>Esta é a interface do usuário correta?
+## <a name="is-this-the-right-user-interface"></a>Essa é a interface do usuário certa?
 
 Para decidir, considere estas perguntas:
 
--   **É a finalidade de fornecer aos usuários informações, pedir aos usuários uma pergunta ou permitir que os usuários selecionem opções para executar um comando ou uma tarefa?** Caso contrário, use outra interface do usuário (IU).
--   **É a finalidade de exibir e alterar as propriedades de um objeto, coleção de objetos ou um programa?** Em caso afirmativo, use uma [janela de propriedades](win-property-win.md) ou uma [barra de ferramentas](cmd-toolbars.md) .
--   **É a finalidade de apresentar uma coleção de comandos ou ferramentas?** Nesse caso, use uma barra de ferramentas ou uma [janela de paleta](glossary.md).
--   **É a finalidade de verificar se o usuário deseja continuar com uma ação?** Há um motivo claro para não continuar e uma chance razoável que às vezes os usuários não? Nesse caso, use uma [confirmação](mess-confirm.md).
--   **É a finalidade de fornecer uma mensagem de erro ou de aviso?** Nesse caso, use uma mensagem de [erro](mess-error.md) ou [mensagem de aviso](mess-warn.md).
--   É a finalidade:
-    -   Arquivos abertos
+-   **A finalidade é fornecer informações aos usuários, fazer uma pergunta aos usuários ou permitir que os usuários selecionem opções para executar um comando ou tarefa?** Caso não, use outra interface do usuário.
+-   **A finalidade é exibir e alterar as propriedades de um objeto, coleção de objetos ou um programa?** Em caso afirmado, use uma [janela de propriedades](win-property-win.md) ou uma barra de [ferramentas.](cmd-toolbars.md)
+-   **A finalidade é apresentar uma coleção de comandos ou ferramentas?** Em caso afirmado, use uma barra de ferramentas [ou uma janela de paleta](glossary.md).
+-   **A finalidade é verificar se o usuário deseja continuar com uma ação?** Há um motivo claro para não continuar e uma chance razoável de que, às vezes, os usuários não continuarão? Em caso afirmado, use uma [confirmação](mess-confirm.md).
+-   **A finalidade é dar uma mensagem de erro ou de aviso?** Em caso afirmado, use uma [mensagem de erro](mess-error.md) ou uma mensagem de [aviso](mess-warn.md).
+-   É a finalidade de:
+    -   Abrir arquivos
     -   Salvar arquivos
     -   Abrir pastas
-    -   Localizar ou substituir texto
+    -   Encontrar ou substituir texto
     -   Imprimir um documento
     -   Selecionar atributos de uma página impressa
     -   Selecionar uma fonte
     -   Escolher uma cor
-    -   Procurar um arquivo, uma pasta, um computador ou uma impressora
+    -   Procurar um arquivo, pasta, computador ou impressora
     -   Pesquisar usuários, computadores ou grupos no Microsoft Active Directory
-    -   Solicitar um nome de usuário e uma senha?
+    -   Solicitar um nome de usuário e senha?
 
-Em caso afirmativo, use a [caixa de diálogo comum](win-common-dlg.md) apropriada. Muitas dessas caixas de diálogo comuns são extensíveis.
+Em caso afirmaível, use a caixa [de diálogo comum](win-common-dlg.md) apropriada. Muitos desses diálogos comuns são extensíveis.
 
--   **É a finalidade de executar uma tarefa de várias etapas que requer mais de uma única janela?** Em caso afirmativo, use um [fluxo de tarefas](glossary.md) ou um [Assistente](win-wizards.md) .
--   **É a finalidade de informar os usuários de um evento do sistema ou do programa que não está relacionado à atividade do usuário atual, que não exige ação imediata do usuário e que os usuários podem ignorar livremente?** Nesse caso, use uma [notificação](mess-notif.md) .
--   **É a finalidade de mostrar o status do programa?** Nesse caso, use uma [barra de status](ctrl-status-bars.md) .
--   **Seria preferível usar a interface do usuário in-loco?** As caixas de diálogo podem interromper o fluxo do usuário exigindo atenção. Às vezes, esse intervalo de interrupção é justificado, por exemplo, quando o usuário deve executar uma ação que está fora do contexto atual. Em outros casos, uma abordagem melhor é apresentar a interface do usuário no contexto, seja diretamente com a interface do usuário in-loco (como um painel de tarefas) ou sob demanda usando a [divulgação progressiva](ctrl-progressive-disclosure-controls.md).
--   **É a finalidade de exibir um problema de entrada de usuário não crítico ou uma condição especial?** Nesse caso, use um [balão](ctrl-balloons.md) .
--   **Para fluxos de tarefas, seria preferível usar outra página?** Em geral, você deseja que uma tarefa flua de uma página para uma página em uma única janela. Use caixas de diálogo para confirmar comandos in-loco, para obter entrada para comandos in-loco e para executar tarefas secundárias e autônomas que são mais bem executadas de forma independente e fora do fluxo de tarefas principal.
--   **Para selecionar opções, é provável que os usuários alterem as opções?** Caso contrário, considere alternativas, como:
+-   **A finalidade é executar uma tarefa de várias etapas que requer mais de uma única janela?** Em caso afirmado, use um [fluxo de tarefas](glossary.md) ou um [assistente.](win-wizards.md)
+-   **A finalidade é informar os usuários sobre um evento de sistema ou programa que não está relacionado à atividade do usuário atual, que não exige ação imediata do usuário e os usuários podem ignorar livremente?** Em caso afirmado, use uma [notificação.](mess-notif.md)
+-   **A finalidade é mostrar o status do programa?** Em caso afirmado, use uma [barra de status.](ctrl-status-bars.md)
+-   **Seria preferível usar a interface do usuário in-locar?** As caixas de diálogo podem quebrar o fluxo do usuário exigindo atenção. Às vezes, essa quebra no fluxo é justificada, como quando o usuário deve executar uma ação que está fora do contexto atual. Em outros casos, uma abordagem melhor é apresentar a interface do usuário no contexto, seja diretamente com a interface do usuário in-loque (como um painel de tarefas) ou sob demanda usando a divulgação [progressiva.](ctrl-progressive-disclosure-controls.md)
+-   **A finalidade é exibir um problema de entrada de usuário não crítico ou uma condição especial?** Em caso afirmado, use um [balão.](ctrl-balloons.md)
+-   **Para fluxos de tarefas, seria preferível usar outra página?** Geralmente, você deseja que uma tarefa flua de página para página em uma única janela. Use caixas de diálogo para confirmar comandos in-locar, para obter entrada para comandos in-locar e executar tarefas secundárias e autônomas que são melhor feitas de forma independente e fora do fluxo de tarefas principal.
+-   **Para selecionar opções, os usuários têm probabilidade de alterar as opções?** Caso não, considere alternativas, como:
     -   Usar as opções padrão sem perguntar, mas permitir que os usuários façam alterações posteriormente.
-    -   Fornecendo uma versão com opções (por exemplo, **Imprimir...** em um menu), bem como uma versão sem opções (por exemplo, **Imprimir** na barra de ferramentas). Geralmente, os comandos da barra de ferramentas devem ser imediatos e evitar a exibição das caixas de diálogo.
+    -   Fornecendo uma versão com opções (por exemplo, **Imprimir...** em um menu), bem como uma versão sem opções (por exemplo, **Imprimir** na barra de ferramentas). Em geral, os comandos da barra de ferramentas devem ser imediatos e evitar exibir caixas de diálogo.
 -   **Para selecionar opções, há uma maneira mais simples e direta de apresentar as opções?** Nesse caso, considere alternativas, como:
     -   Usando um [botão de divisão](ctrl-command-buttons.md) para selecionar variações de um comando.
-    -   Usando um submenu para comandos, caixas de seleção, botões de opção e listas simples.
+    -   Usando um submenu para comandos, caixas de seleção, botões de rádio e listas simples.
 
-![Captura de tela que mostra um menu e um submenu.](images/win-dialog-box-image4.png)
+![Captura de tela que mostra um menu e um sub menu.](images/win-dialog-box-image4.png)
 
 ![captura de tela de um menu e submenu ](images/win-dialog-box-image5.png)
 
@@ -100,35 +100,35 @@ Nesses exemplos, os submenus são usados em vez de caixas de diálogo para sele�
 
 ## <a name="design-concepts"></a>Conceitos de design
 
-Quando usadas corretamente, as caixas de diálogo são uma ótima maneira de fornecer energia e flexibilidade ao seu programa. Quando inutilizados, as caixas de diálogo são uma maneira fácil de incomodar os usuários, interromper seu fluxo e fazer com que o programa se sinta indireto e entediante para uso. **As caixas de diálogo modais exigem a atenção dos usuários.** As caixas de diálogo geralmente são mais fáceis de implementar do que as UIs alternativas, para que elas tendem a ser utilizadas.
+Quando usadas corretamente, as caixas de diálogo são uma ótima maneira de dar potência e flexibilidade ao programa. Quando usadas indevidamente, as caixas de diálogo são uma maneira fácil de atrapalhar os usuários, interromper seu fluxo e fazer com que o programa se sinta indireto e entediante de usar. **As caixas de diálogo modais exigem a atenção dos usuários.** As caixas de diálogo geralmente são mais fáceis de implementar do que as UIs alternativas, portanto, elas tendem a ser superutilizadas.
 
-**Uma caixa de diálogo é mais eficaz quando suas características de design correspondem a seu uso.** O design de uma caixa de diálogo é determinado principalmente por sua finalidade (para oferecer opções, fazer perguntas, fornecer informações ou comentários), digitar (modal ou sem janela restrita) e interação do usuário (obrigatória, resposta opcional ou confirmação), enquanto seu uso é basicamente determinado por seu contexto (iniciado pelo usuário ou programa), a probabilidade de ação do usuário e a frequência de exibição.
+**Uma caixa de diálogo é mais eficaz quando suas características de design corresponderem ao seu uso.** O design de uma caixa de diálogo é determinado em grande parte por sua finalidade (oferecer opções, fazer perguntas, fornecer informações ou comentários), tipo (modal ou sem modo) e interação do usuário (obrigatório, resposta opcional ou confirmação), enquanto seu uso é determinado em grande parte por seu contexto (iniciado pelo usuário ou programa), probabilidade de ação do usuário e frequência de exibição.
 
-Para criar caixas de diálogo em vigor, use os seguintes elementos com eficiência:
+Para criar caixas de diálogo efetivas, use os seguintes elementos com eficiência:
 
 -   Texto da caixa de diálogo
 -   Instruções principais
--   Não mostrar este <item> opção novamente
+-   Não mostre isso <item> opção again
 
 **Se você fizer apenas uma coisa...**
 
-Verifique se o design da caixa de diálogo (determinado por sua finalidade, tipo e interação do usuário) corresponde ao seu uso (determinado por seu contexto, probabilidade de ação do usuário e frequência de exibição).
+Certifique-se de que o design da caixa de diálogo (determinado por sua finalidade, tipo e interação do usuário) corresponde ao uso (determinado pelo contexto, probabilidade de ação do usuário e frequência de exibição).
 
 ## <a name="usage-patterns"></a>Padrões de uso
 
 As caixas de diálogo têm vários padrões de uso:
 
--   As caixas de diálogo de pergunta (usando botões) fazem com que os usuários façam uma única pergunta ou confirmem um comando e usam respostas simples em botões de comando organizados horizontalmente.
--   As caixas de diálogo de perguntas (usando links de comando) perguntam aos usuários uma única pergunta ou selecionam uma tarefa a ser executada e usam respostas detalhadas em links de comando organizados verticalmente.
+-   As caixas de diálogo de pergunta (usando botões) fazem aos usuários uma única pergunta ou para confirmar um comando e usam respostas simples em botões de comando organizados horizontalmente.
+-   As caixas de diálogo de pergunta (usando links de comando) fazem aos usuários uma única pergunta ou selecionam uma tarefa para executar e usam respostas detalhadas em links de comando organizados verticalmente.
 -   As caixas de diálogo de escolha apresentam aos usuários um conjunto de opções, geralmente para especificar um comando mais completamente. Ao contrário das caixas de diálogo de pergunta, as caixas de diálogo de escolha podem fazer várias perguntas.
--   As caixas de diálogo de progresso apresentam aos usuários comentários de progresso durante uma operação demorada (mais de cinco segundos), junto com um comando para cancelar ou parar a operação.
+-   As caixas de diálogo de progresso apresentam aos usuários comentários de progresso durante uma operação demorada (mais de cinco segundos), juntamente com um comando para cancelar ou parar a operação.
 -   As caixas de diálogo informativas exibem informações solicitadas pelo usuário.
 
 ## <a name="guidelines"></a>Diretrizes
 
 ### <a name="general"></a>Geral
 
--   **Não use caixas de diálogo roláveis.** Não use caixas de diálogo que exijam o uso de uma barra de rolagem para ser exibida completamente durante o uso normal. Em vez disso, Reprojete a caixa de diálogo. Considere o uso de [revelações progressivas](ctrl-progressive-disclosure-controls.md) ou [guias](ctrl-tabs.md).
+-   **Não use caixas de diálogo roláveis.** Não use caixas de diálogo que exigem que o uso de uma barra de rolagem seja exibido completamente durante o uso normal. Em vez disso, reprojete a caixa de diálogo. Considere o uso [de divulgação](ctrl-progressive-disclosure-controls.md) progressiva [ou guias](ctrl-tabs.md).
 -   **Não tem uma barra de menus ou barra de status.** Em vez disso, forneça acesso a comandos e status diretamente na própria caixa de diálogo ou usando menus de contexto nos controles relevantes.
 
     -   **Exceção:** As barras de menu são aceitáveis quando uma caixa de diálogo é usada para implementar uma janela primária (como um utilitário).
@@ -137,32 +137,32 @@ As caixas de diálogo têm vários padrões de uso:
 
     ![captura de tela de uma caixa de diálogo com uma barra de menus ](images/win-dialog-box-image6.png)
 
-    Neste exemplo, localizar certificados é uma caixa de diálogo sem janela restrita com uma barra de menus.
+    Neste exemplo, Encontrar Certificados é uma caixa de diálogo sem modo com uma barra de menus.
 
--   Se uma caixa de diálogo exigir atenção imediata e o programa não estiver ativo, **piscará o botão da barra de tarefas três vezes para chamar a atenção e deixá-lo realçado.** Não faça mais nada: Não restaure ou ative a janela e não jogue nenhum efeito de som. Em vez disso, respeite a seleção de estado da janela do usuário e deixe o usuário ativar a janela quando estiver pronto.
--   Para obter mais diretrizes e exemplos, consulte [barra de tarefas](winenv-taskbar.md).
+-   Se uma caixa de diálogo exigir atenção imediata e o programa não estiver ativo, flash seu botão de barra de tarefas três vezes para chamar a atenção e **deixe-o realçado.** Não faça mais nada: não restaure nem ative a janela e não reproduza nenhum efeito de som. Em vez disso, respeitar a seleção de estado da janela do usuário e permitir que o usuário ative a janela quando estiver pronto.
+-   Para obter mais diretrizes e exemplos, consulte [Barra de tarefas](winenv-taskbar.md).
 
 ### <a name="modal-dialog-boxes"></a>Caixas de diálogo modais
 
 -   **Use para tarefas críticas ou pouco frequentes que exigem conclusão antes de continuar.**
--   Use um [modelo de confirmação atrasado](glossary.md) para que as alterações não entrem em vigor até explicitamente confirmadas.
--   **Implemente usando uma caixa de diálogo de tarefa sempre que apropriado para obter uma aparência consistente.** As caixas de diálogo de tarefas exigem o Windows Vista ou posterior, portanto, elas não são adequadas para versões anteriores do Windows.
+-   Use um [modelo de commit atrasado para](glossary.md) que as alterações não entre em vigor até que seja explicitamente comprometida.
+-   **Implemente o uso de uma caixa de diálogo de tarefa sempre que apropriado para obter uma aparência consistente.** As caixas de diálogo de tarefa exigem o Windows Vista ou posterior, portanto, elas não são adequadas para versões anteriores do Windows.
 
-### <a name="modeless-dialog-boxes"></a>Caixas de diálogo sem janela restrita
+### <a name="modeless-dialog-boxes"></a>Caixas de diálogo sem modo
 
--   **Use para tarefas em andamento frequentes e repetitivas.**
--   Use um [modelo de confirmação imediata](glossary.md) para que as alterações entrem em vigor imediatamente.
--   Para caixas de diálogo sem janela restrita, use um botão de comando fechar explícito na caixa de diálogo para fechar a janela. Para ambos, use um botão fechar na barra de título para fechar a janela.
--   **Considere tornar caixas de diálogo sem janela restritas encaixáveis.** As caixas de diálogo sem janela restrita do encaixáveis permitem um posicionamento mais flexível.
+-   **Use para tarefas frequentes, repetitivas e em movimento.**
+-   Use um [modelo de commit imediato para](glossary.md) que as alterações entre em vigor imediatamente.
+-   Para caixas de diálogo sem modo, use um botão de comando Fechar explícito na caixa de diálogo para fechar a janela. Para ambos, use um botão Fechar na barra de título para fechar a janela.
+-   **Considere tornar as caixas de diálogo sem modo encaixadas.** Diálogos sem modo encaixado permitem um posicionamento mais flexível.
 
-![captura de tela de uma caixa de diálogo encaixáveis, sem janela restrita ](images/win-dialog-box-image7.png)
+![captura de tela de uma caixa de diálogo encaixada sem modo ](images/win-dialog-box-image7.png)
 
-Algumas caixas de diálogo sem janela restrita usadas no Microsoft Office são encaixáveis.
+Algumas caixas de diálogo sem modo usadas Microsoft Office são encaixadas.
 
 ### <a name="multiple-dialog-boxes"></a>Várias caixas de diálogo
 
--   **Não exiba mais de uma caixa de diálogo de escolha de propriedade de cada vez em uma caixa de diálogo de escolha de proprietário.** Exibir mais de um torna o significado dos botões de confirmação difíceis para os usuários entenderem. Você pode exibir outros tipos de caixas de diálogo (como caixas de diálogo de pergunta), conforme necessário.
--   **Para uma sequência de caixas de diálogo relacionadas, considere o uso de uma caixa de diálogo de várias páginas, se possível.** Use caixas de diálogo individuais se elas não estiverem claramente relacionadas.
+-   **Não exibir mais de uma caixa de diálogo de propriedade por vez de uma caixa de diálogo de escolha do proprietário.** Exibir mais de um dificulta o entendimento do significado dos botões de confirmação para os usuários. Você pode exibir outros tipos de caixas de diálogo (como diálogos de pergunta) conforme necessário.
+-   **Para uma sequência de diálogos relacionados, considere usar uma caixa de diálogo de várias páginas, se possível.** Use diálogos individuais se eles não estão claramente relacionados.
 
 ### <a name="multi-page-dialog-boxes"></a>Caixas de diálogo de várias páginas
 
@@ -171,153 +171,153 @@ Algumas caixas de diálogo sem janela restrita usadas no Microsoft Office são e
     -   Uma página de progresso
     -   Uma única página de resultados
 
-A página de entrada é opcional porque a tarefa pode ter sido iniciada em outro lugar. **Isso dá à experiência resultante uma sensação simples e estável.**
+A página de entrada é opcional porque a tarefa pode ter sido iniciada em outro lugar. **Isso proporciona à experiência resultante uma sensação estável, simples e leve.**
 
 ![captura de tela de uma barra de progresso ](images/win-dialog-box-image8.png)
 
-![captura de tela da mensagem ' nenhum problema encontrado ' ](images/win-dialog-box-image9.png)
+![captura de tela da mensagem 'sem problemas encontrados' ](images/win-dialog-box-image9.png)
 
-Neste exemplo, o diagnóstico de rede do Windows consiste em páginas de progresso e resultados.
+Neste exemplo, o Diagnóstico de Rede do Windows consiste em páginas de progresso e resultados.
 
--   **Não use uma caixa de diálogo de várias páginas se a página de entrada for uma caixa de diálogo padrão.** Nesse caso, a consistência do uso de uma caixa de diálogo padrão é mais importante.
--   **Não use os botões Avançar ou voltar e não tem mais de três páginas.** As caixas de diálogo de várias páginas são para tarefas de uma única etapa com comentários. Eles não são [assistentes](win-wizards.md), que são usados para tarefas de várias etapas. Os assistentes têm uma sensação pesada e indireta em comparação com as caixas de diálogo de várias páginas.
--   **Na página entrada, use botões de comando ou links de comando específicos para iniciar a tarefa.**
--   **Use um botão Cancelar nas páginas de entrada e de progresso e um botão fechar na página resultados.**
+-   **Não use uma caixa de diálogo de várias páginas se a página de entrada for um diálogo padrão.** Nesse caso, a consistência de usar uma caixa de diálogo padrão é mais importante.
+-   **Não use os botões Próximo ou Voltar e não tenha mais de três páginas.** As caixas de diálogo de várias páginas são para tarefas de etapa única com comentários. Eles não são [assistentes](win-wizards.md), que são usados para tarefas de várias etapas. Os assistentes têm uma sensação pesada e indireta em comparação com caixas de diálogo de várias páginas.
+-   **Na página de entrada, use botões de comando específicos ou links de comando para iniciar a tarefa.**
+-   **Use um botão Cancelar nas páginas de entrada e progresso e um botão Fechar na página de resultados.**
 
-**Desenvolvedores:** Você pode criar caixas de diálogo de tarefas de várias páginas usando a mensagem da [ \_ \_ página de navegação TDM](../controls/tdm-navigate-page.md) .
+**Desenvolvedores:** Você pode criar caixas de diálogo de tarefa de várias páginas usando a [mensagem TDM \_ NAVIGATE \_ PAGE.](../controls/tdm-navigate-page.md)
 
 ### <a name="presentation"></a>Apresentação
 
-Para facilitar a localização e o acesso às caixas de diálogo, associe claramente a caixa de diálogo à sua fonte e trabalhe bem com vários monitores:
+Para tornar as caixas de diálogo fáceis de encontrar e acessar, associe claramente a caixa de diálogo à sua origem e funcione bem com vários monitores:
 
--   **Inicialmente, exiba caixas de diálogo "centralizadas" na parte superior da janela do proprietário.** Para exibição subsequente, considere exibi-lo em seu último local (relativo à janela do proprietário) se isso for mais conveniente.
+-   **Inicialmente, exibe diálogos "centralizados" na parte superior da janela do proprietário.** Para exibição subsequente, considere exibi-lo em seu último local (em relação à janela do proprietário) se isso for provavelmente mais conveniente.
 
-![diagrama da caixa de diálogo centralizado na janela por trás dela ](images/win-dialog-box-image10.png)
+![diagrama da caixa de diálogo centralizada na janela atrás dela ](images/win-dialog-box-image10.png)
 
-Primeiras caixas de diálogo centralizadas sobre a janela do proprietário.
+Inicialmente, centralmente as caixas de diálogo na parte superior da janela do proprietário.
 
--   **Se uma caixa de diálogo for contextual, exiba-a próximo ao objeto do qual ele foi iniciado.** No entanto, coloque-o fora do caminho (preferivelmente desloca para baixo e para a direita) para que o objeto não seja coberto pela caixa de diálogo.
+-   **Se uma caixa de diálogo for contextual, exibe-a perto do objeto do qual ele foi lançado.** No entanto, coloque-o fora do caminho (preferencialmente deslocamento para baixo e para a direita) para que o objeto não seja coberto pela caixa de diálogo.
 
-![o diagrama da caixa de diálogo é deslocado para baixo e para a direita ](images/win-dialog-box-image11.png)
+![diagrama de deslocamento da caixa de diálogo para baixo e para a direita ](images/win-dialog-box-image11.png)
 
-As propriedades de um objeto são exibidas ao lado do objeto.
+As propriedades de um objeto são exibidas perto do objeto .
 
--   **Para caixas de diálogo sem janela restrita, exiba inicialmente na parte superior da janela do proprietário para facilitar a localização.** Se o usuário ativar a janela do proprietário, isso poderá obscurecer a caixa de diálogo sem janela restrita.
--   **Se necessário, ajuste o local inicial para que a caixa de diálogo inteira fique visível no monitor de destino.** Se uma janela redimensionável for maior do que o monitor de destino, reduza-a para caber.
--   **Quando uma caixa de diálogo for reexibida, considere exibi-la no mesmo estado que o último acessado.** Ao fechar, salve o monitor usado, o tamanho da janela, o local e o estado (maximizado versus restauração). Na reexibição, restaure o tamanho, o local e o estado da caixa de diálogo salvos usando o monitor apropriado. Além disso, considere fazer esses atributos persistirem em instâncias de programa por usuário.
--   **Para janelas redimensionáveis, defina um tamanho mínimo de janela se houver um tamanho abaixo do qual o conteúdo não pode mais ser usado.** Considere alterar a apresentação para tornar o conteúdo utilizável em tamanhos menores.
+-   **Para caixas de diálogo sem modo, é exibida inicialmente na parte superior da janela do proprietário para facilitar a encontrá-la.** Se o usuário ativar a janela do proprietário, isso poderá obscurecer a caixa de diálogo sem modo.
+-   **Se necessário, ajuste o local inicial para que toda a caixa de diálogo seja visível no monitor de destino.** Se uma janela resizável for maior que o monitor de destino, reduza-a para se ajustar.
+-   **Quando uma caixa de diálogo for replayada, considere exibi-la no mesmo estado do último acesso.** Ao fechar, salve o monitor usado, o tamanho da janela, o local e o estado (maximizada versus restauração). Na reprodução, restaure o tamanho, o local e o estado da caixa de diálogo salvos usando o monitor apropriado. Além disso, considere fazer com que esses atributos persistam entre instâncias do programa por usuário.
+-   **Para janelas reizáveis, de definir um tamanho mínimo de janela se houver um tamanho abaixo do qual o conteúdo não é mais acessível.** Considere alterar a apresentação para tornar o conteúdo acessível em tamanhos menores.
 
-![captura de tela dos botões do Media Player centralizado ](images/win-dialog-box-image12.png)
+![captura de tela dos botões centralizados do player de mídia ](images/win-dialog-box-image12.png)
 
 Neste exemplo, o Windows Media Player altera seu formato quando a janela se torna muito pequena para o formato padrão.
 
--   **Não use o atributo Top Always on.**
-    -   **Exceção:** Use somente quando uma caixa de diálogo implementar uma operação essencialmente modal, mas precisar ser suspensa rapidamente para acessar a janela do proprietário. Por exemplo, ao verificar a ortografia de um documento, os usuários podem ocasionalmente deixar a caixa de diálogo de verificação ortográfica e acessar o documento para corrigir erros.
+-   **Não use o atributo Always On Top.**
+    -   **Exceção:** Use somente quando uma caixa de diálogo implementa uma operação essencialmente modal, mas ela precisa ser suspensa brevemente para acessar a janela do proprietário. Por exemplo, ao verificar orticamente um documento, os usuários podem, ocasionalmente, sair da caixa de diálogo de seleção ortagem e acessar o documento para corrigir erros.
 
 Para obter mais informações e exemplos, consulte [Gerenciamento de janelas](win-window-mgt.md).
 
 ### <a name="title-bars"></a>Barras de título
 
--   **As caixas de diálogo não têm ícones de barra de título.** Os ícones da barra de título são usados como uma distinção visual entre [janelas primárias](glossary.md) e [secundárias](glossary.md).
-    -   **Exceção:** Se uma caixa de diálogo for usada para implementar uma janela primária (como um utilitário) e, portanto, aparecer na barra de tarefas, ela terá um ícone de barra de título. Nesse caso, otimize o título para exibição na barra de tarefas colocando concisamente as informações de distinção primeiro.
--   **As caixas de diálogo sempre têm um botão fechar.** Caixas de diálogo sem janela restrita também podem ter um botão minimizar. Caixas de diálogo redimensionáveis podem ter um botão Maximizar.
--   **Não desabilite o botão fechar.** Ter um botão de fechamento ajuda os usuários a manter o controle, permitindo que eles fechem janelas que não querem.
-    -   **Exceção:** Para caixas de diálogo de progresso, você pode desabilitar o botão fechar se a tarefa deve ser executada até a conclusão para atingir um estado válido ou evitar a perda de dados.
--   **O botão fechar na barra de título deve ter o mesmo efeito que o botão cancelar ou fechar** dentro da caixa de diálogo. Nunca dê o mesmo efeito que OK.
--   Se a legenda e o ícone da barra de título já forem exibidos de forma proeminente na parte superior da janela, você poderá ocultar a legenda da barra de título e o ícone para evitar redundância. No entanto, você ainda precisa definir um título adequado internamente para uso pelo Windows.
+-   **As caixas de diálogo não têm ícones de barra de título.** Os ícones da barra de título são usados como uma distinção visual entre [janelas primárias](glossary.md) [e secundárias.](glossary.md)
+    -   **Exceção:** Se uma caixa de diálogo for usada para implementar uma janela primária (como um utilitário) e, portanto, aparecer na barra de tarefas, ela terá um ícone de barra de título. Nesse caso, otimize o título para exibição na barra de tarefas colocando as informações de distinção primeiro.
+-   **As caixas de diálogo sempre têm um botão Fechar.** Caixas de diálogo sem modo também podem ter um botão Minimizar. Caixas de diálogo reizáveis podem ter um botão Maximizar.
+-   **Não desabilite o botão Fechar.** Ter um botão Fechar ajuda os usuários a permanecerem no controle, permitindo que eles fechem as janelas que não querem.
+    -   **Exceção:** Para as caixas de diálogo de progresso, você poderá desabilitar o botão Fechar se a tarefa tiver que ser concluída para atingir um estado válido ou evitar a perda de dados.
+-   **O botão Fechar na barra de título deve ter o mesmo** efeito que o botão Cancelar ou Fechar dentro da caixa de diálogo. Nunca dê a ele o mesmo efeito que OK.
+-   Se a legenda e o ícone da barra de título já estão exibidos de maneira proeminente perto da parte superior da janela, você pode ocultar a legenda e o ícone da barra de título para evitar a redundância. No entanto, você ainda precisa definir um título adequado internamente para uso pelo Windows.
 
 ### <a name="interaction"></a>Interação
 
--   **Quando exibidas, as caixas de diálogo iniciadas pelo usuário devem sempre assumir o foco de entrada.** As caixas de diálogo iniciadas pelo programa não devem tomar o foco de entrada porque o usuário pode estar interagindo com outra janela. Essa interação informada indiretamente na caixa de diálogo pode ter consequências indesejadas.
--   **Atribua o foco de entrada inicial ao controle que os usuários têm mais probabilidade de interagir com o primeiro**, que geralmente é (mas nem sempre) o primeiro controle interativo. Evite atribuir o foco de entrada inicial a um link de ajuda.
--   **Para navegação por teclado, a ordem de tabulação deve fluir em uma ordem lógica, geralmente da esquerda para a direita, de cima para baixo.** Geralmente, a ordem de tabulação segue a ordem de leitura, mas considere fazer estas exceções:
+-   **Quando exibidas, as caixas de diálogo iniciadas pelo usuário sempre devem ter o foco de entrada.** As caixas de diálogo iniciadas pelo programa não devem ter o foco de entrada porque o usuário pode estar interagindo com outra janela. Essa interação mal direcionada na caixa de diálogo pode ter consequências não intencionais.
+-   **Atribua o foco de entrada inicial** ao controle com o qual os usuários têm maior probabilidade de interagir primeiro, que geralmente é (mas nem sempre) o primeiro controle interativo. Evite atribuir o foco de entrada inicial a um link da Ajuda.
+-   **Para navegação por teclado, a ordem de tabulação deve fluir em uma ordem lógica, geralmente da esquerda para a direita, de cima para baixo.** Geralmente, a ordem de tabulação segue a ordem de leitura, mas considere fazer essas exceções:
 
-    -   Coloque os controles mais comumente usados anteriormente na ordem de tabulação.
-    -   Coloque os links da ajuda na parte inferior de uma caixa de diálogo, após os botões de confirmação na ordem de tabulação.
+    -   Coloque os controles mais usados anteriormente na ordem de tabulação.
+    -   Coloque os links da Ajuda na parte inferior de uma caixa de diálogo, após os botões de confirmação na ordem de tabulação.
 
-    Ao atribuir a ordem, suponha que os usuários exibam caixas de diálogo para sua finalidade pretendida; Portanto, por exemplo, os usuários exibem caixas de diálogo de escolha para fazer escolhas, não para revisar e clicar em cancelar.
+    Ao atribuir o pedido, suponha que os usuários exibem caixas de diálogo para sua finalidade pretendido; portanto, por exemplo, os usuários exibem diálogos de escolha para fazer escolhas, não para revisar e clicar em Cancelar.
 
--   **Pressionar a tecla ESC sempre fecha uma caixa de diálogo ativa.** Isso é verdadeiro para caixas de diálogo com cancelamento ou fechamento e, mesmo que o cancelamento tenha sido renomeado para fechar, porque os resultados não podem mais ser desfeitos.
+-   **Pressionar a tecla Esc sempre fecha uma caixa de diálogo ativa.** Isso é verdadeiro para caixas de diálogo com Cancelar ou Fechar e, mesmo que Cancel tenha sido renomeado para Fechar porque os resultados não podem mais ser desfeitos.
 
 **Chaves de acesso**
 
--   **Sempre que possível, atribua chaves de acesso exclusivas a todos os controles interativos ou seus rótulos.** [Caixas de texto somente leitura](ctrl-text-boxes.md) são controles interativos (porque os usuários podem rolar e copiar texto) para que se beneficiem das chaves de acesso. **Não atribua chaves de acesso para:**
-    -   **Botões OK, cancelar e fechar.** Enter e ESC são usados para suas chaves de acesso. No entanto, sempre atribua uma chave de acesso a um controle que significa OK ou cancelar, mas tem um rótulo diferente.
+-   **Sempre que possível, atribua chaves de acesso exclusivas a todos os controles interativos ou seus rótulos.** [As caixas de texto somente](ctrl-text-boxes.md) leitura são controles interativos (porque os usuários podem rolar e copiar texto) para que se beneficiem das chaves de acesso. **Não atribua chaves de acesso a:**
+    -   **Botões OK, Cancelar e Fechar.** Enter e Esc são usados para suas chaves de acesso. No entanto, sempre atribua uma chave de acesso a um controle que significa OK ou Cancelar, mas tem um rótulo diferente.
 
-        ![captura de tela da caixa de diálogo excluir arquivo ](images/win-dialog-box-image13.png)
+        ![captura de tela da caixa de diálogo Excluir arquivo ](images/win-dialog-box-image13.png)
 
-        Neste exemplo, o botão de confirmação positivo tem uma chave de acesso atribuída.
+        Neste exemplo, o botão de confirmação positiva tem uma chave de acesso atribuída.
 
-    -   **Rótulos de grupo.** Normalmente, os controles individuais dentro de um grupo recebem chaves de acesso e, portanto, o rótulo do grupo não precisa de um. No entanto, se houver uma falta de chaves de acesso, atribua uma chave de acesso ao rótulo do grupo e não aos controles individuais.
-    -   **Botões de ajuda genéricos,** que são acessados com F1.
-    -   **Rótulos de link.** Geralmente, há muitos links para atribuir chaves de acesso exclusivas, e os sublinhados geralmente são usados para significar que os links ocultam os sublinhados da chave de acesso. Acesse links com a chave da guia em vez disso.
-    -   **Nomes de guias.** As guias são alternadas usando Ctrl + Tab e Ctrl + Shift + Tab.
-    -   **Procurar botões rotulados como "...".** Esses botões de procura não podem receber chaves de acesso exclusivamente.
-    -   **Controles sem rótulo,** como controles de rotação, botões de comando gráficos e controles de divulgação progressivos sem rótulo.
-    -   **Texto estático não rotulado ou rótulos para controles que não são interativos,** como barras de progresso.
+    -   **Rótulos de grupo.** Normalmente, os controles individuais em um grupo são atribuídos a chaves de acesso, portanto, o rótulo do grupo não precisa de uma. No entanto, se houver uma falta de chaves de acesso, atribua uma chave de acesso ao rótulo do grupo e não aos controles individuais.
+    -   **Botões de Ajuda Genérica,** que são acessados com F1.
+    -   **Rótulos de link.** Geralmente, há muitos links para atribuir chaves de acesso exclusivas e os sublinhados geralmente usados para significar links ocultam os sublinhados da chave de acesso. Em vez disso, acesse links com a tecla Tab.
+    -   **Nomes de tabulação.** As guias são ciclodas usando Ctrl+Tab e Ctrl+Shift+Tab.
+    -   **Procure os botões rotulados como "...".** Esses botões Procurar não podem ser atribuídos exclusivamente às chaves de acesso.
+    -   **Controles sem rótulo, como controles** de rotação, botões de comando gráfico e controles de divulgação progressiva sem rótulo.
+    -   **Texto estático sem rótulo ou rótulos para controles que não são interativos,** como barras de progresso.
 
--   **Sempre que possível, atribua chaves de acesso para comandos comumente usados de acordo com as atribuições de chave de acesso padrão**. Embora as atribuições de chave de acesso consistente nem sempre sejam possíveis, elas certamente são preferenciais especialmente para caixas de diálogo usadas com frequência.
--   **Atribua as chaves de acesso do botão confirmar primeiro para garantir que elas tenham as atribuições de chave padrão.** Se não houver uma atribuição de chave padrão, use a primeira letra da primeira palavra. Por exemplo, a tecla de acesso para botões Sim e não confirmar sempre deve ser "Y" e "N", independentemente dos outros controles na caixa de diálogo.
--   **Para facilitar a localização das chaves de acesso, atribua as chaves de acesso a um caractere que aparece no início do rótulo,** idealmente o primeiro caractere, mesmo se houver uma palavra-chave que aparece posteriormente no rótulo.
+-   **Sempre que possível, atribua chaves de acesso para comandos comumente** usados de acordo com as Atribuições de Chave de Acesso Padrão . Embora as atribuições de chave de acesso consistentes nem sempre sejam possíveis, elas certamente são preferenciais especialmente para caixas de diálogo usadas com frequência.
+-   **Atribua primeiro as chaves de acesso do botão de confirmação para garantir que elas tenham as atribuições de chave padrão.** Se não houver uma atribuição de chave padrão, use a primeira letra da primeira palavra. Por exemplo, a chave de acesso para os botões Sim e Não de confirmação sempre deve ser "Y" e "N", independentemente dos outros controles na caixa de diálogo.
+-   Para tornar as chaves de acesso fáceis de encontrar, atribua as chaves de acesso a um caractere que aparece no início do **rótulo,** idealmente o primeiro caractere, mesmo que haja uma palavra-chave que apareça posteriormente no rótulo.
 -   **Prefira caracteres com larguras largas,** como w, m e letras maiúsculas.
--   **Prefira uma consoante distinta ou uma vogal,** como "x" na saída.
--   **Evite usar caracteres que tornem o sublinhado difícil de ver,** como (do mais problemático ao menos problemático):
+-   **Prefira uma consoante distinta ou uma voga,** como "x" em Exit.
+-   Evite usar caracteres que dificultam a viagem do **sublinhado,** como (da mais problemática para a menos problemática):
     -   Letras que têm apenas um pixel de largura, como i e l.
     -   Letras com descendentes, como g, j, p, q e y.
-    -   As letras ao lado de uma letra com um descendente.
+    -   Letras ao lado de uma letra com um descendente.
 
-Para obter mais diretrizes e exemplos, consulte [teclado](inter-keyboard.md).
+Para obter mais diretrizes e exemplos, consulte [Teclado](inter-keyboard.md).
 
-### <a name="progress-dialogs"></a>Caixas de diálogo de progresso
+### <a name="progress-dialogs"></a>Diálogos de progresso
 
-Para tarefas de execução longa, **assuma que os usuários farão algo mais enquanto a tarefa estiver sendo concluída**. Projete a tarefa para ser executada de forma autônoma.
+Para tarefas de execução longa, **suponha que os usuários vão fazer outra coisa enquanto a tarefa está concluindo**. Projete a tarefa para ser executado de forma autônoma.
 
--   **Apresentar os usuários com o comentário de progresso caixa de diálogo se uma operação demorar mais de cinco segundos para ser concluída**, juntamente com um comando para cancelar ou parar a operação.
-    -   **Exceção:** Para assistentes e fluxos de tarefas, use uma caixa de diálogo modal para progredir somente se a tarefa permanecer na mesma página (em vez de avançar para outra página) e os usuários não puderem fazer nada enquanto estiverem aguardando. Caso contrário, use uma página de progresso ou um progresso in-loco.
--   Se a operação for uma tarefa de execução longa (mais de 30 segundos) e puder ser executada em segundo plano, use uma caixa de diálogo de progresso sem janela restrita para que os usuários possam continuar a usar seu programa enquanto aguardam.
--   Caixas de diálogo de progresso sem janela restrita:
-    -   Ter um botão de minimização na barra de título.
+-   **Apresente aos usuários a caixa de diálogo comentários** de progresso se uma operação levar mais de cinco segundos para ser concluída, juntamente com um comando para cancelar ou parar a operação.
+    -   **Exceção:** Para assistentes e fluxos de tarefas, use uma caixa de diálogo modal para progresso somente se a tarefa permanecer na mesma página (em vez de avançar para outra página) e os usuários não puderem fazer nada enquanto aguardam. Caso contrário, use uma página de progresso ou o progresso in-locar.
+-   Se a operação for uma tarefa de execução longa (mais de 30 segundos) e puder ser executada em segundo plano, use uma caixa de diálogo de progresso sem modo para que os usuários possam continuar a usar seu programa enquanto aguardam.
+-   Caixas de diálogo de progresso sem modo:
+    -   Tenha um botão Minimizar na barra de título.
     -   São exibidos na barra de tarefas.
--   Implementar caixas de diálogo de progresso sem janela restrita para que elas continuem a ser executadas mesmo que o proprietário esteja fechado.
+-   Implemente diálogos de progresso sem modo para que eles continuem a ser executados mesmo que a janela do proprietário seja fechada.
 
-![captura de tela da caixa de diálogo de cópia com barra de progresso ](images/win-dialog-box-image14.png)
+![captura de tela da caixa de diálogo copiar com a barra de progresso ](images/win-dialog-box-image14.png)
 
-Neste exemplo, a cópia do arquivo continua mesmo que a janela do proprietário seja fechada.
+Neste exemplo, a cópia do arquivo continuará mesmo se a janela do proprietário estiver fechada.
 
--   **Forneça um botão de comando para interromper a operação se demorar mais de alguns segundos para ser concluído ou se o potencial nunca for concluído.** Rotular o botão cancelar se cancelar retornar o ambiente para seu estado anterior (não deixando nenhum efeito colateral); caso contrário, rotule a parada do botão para indicar que ele deixa a operação parcialmente concluída intacta. Você pode alterar o rótulo do botão de cancelar para parar no meio da operação, se em algum momento não for possível retornar o ambiente para seu estado anterior.
+-   **Forneça um botão de comando para interromper a operação se levar mais de alguns segundos para ser concluída ou tiver o potencial de nunca ser concluído.** Rotule o botão Cancelar se cancelar retornar o ambiente ao estado anterior (sem efeitos colaterais); caso contrário, rotule o botão Parar para indicar que ele deixa a operação parcialmente concluída intacta. Você pode alterar o rótulo do botão de Cancelar para Parar no meio da operação, se, em algum momento, não for possível retornar o ambiente para seu estado anterior.
 
 ![captura de tela da caixa de diálogo com o botão Cancelar ](images/win-dialog-box-image15.png)
 
-Neste exemplo, a interrupção do diagnóstico do problema não tem efeito colateral.
+Neste exemplo, interromper o diagnóstico do problema não tem nenhum efeito colateral.
 
--   **Forneça um botão de comando para pausar a operação se ela demorar mais de alguns minutos para ser concluída e prejudica a capacidade dos usuários de realizar o trabalho.** Fazer isso não força o usuário a escolher entre concluir a tarefa e realizar seu trabalho.
+-   **Forneça um botão de comando para pausar a operação se levar mais de vários minutos para ser concluída e isso prejudicará a capacidade dos usuários de realizar o trabalho.** Isso não força o usuário a escolher entre concluir a tarefa e realizar seu trabalho.
 -   **Reúna o máximo de informações possível antes de iniciar a tarefa.**
--   **Se forem detectados problemas recuperáveis, faça com que os usuários lidem com todos os problemas encontrados no final da tarefa.** Se isso não for prático, faça com que os usuários lidem com problemas à medida que ocorrerem.
--   **Não abandone as tarefas como resultado de erros recuperáveis.**
+-   **Se problemas recuperáveis são detectados, os usuários lidam com todos os problemas encontrados no final da tarefa.** Se isso não for prático, os usuários lidarão com problemas conforme eles ocorrem.
+-   **Não abandone tarefas como resultado de erros recuperáveis.**
 
-![captura de tela da caixa de diálogo com o botão tentar novamente ](images/win-dialog-box-image16.png)
+![captura de tela da caixa de diálogo com o botão Tentar novamente ](images/win-dialog-box-image16.png)
 
-Neste exemplo, o Windows Explorer permite que os usuários continuem com a tarefa após um erro recuperável.
+Neste exemplo, Windows Explorer permite que os usuários continuem com a tarefa após um erro recuperável.
 
--   **Indique problemas ao ativar a barra de progresso em vermelho.**
+-   **Indique problemas, transformando a barra de progresso em vermelho.**
 
-![captura de tela da barra de progresso e botão tentar novamente ](images/win-dialog-box-image17.png)
+![captura de tela da barra de progresso e tente novamente botão ](images/win-dialog-box-image17.png)
 
 Neste exemplo, um disco removível foi removido durante uma cópia de arquivo.
 
--   **Se os resultados forem claramente aparentes para os usuários, feche a caixa de diálogo de progresso automaticamente na conclusão bem-sucedida.** Caso contrário, use comentários apenas para relatar problemas:
-    -   Para exibir comentários simples, exiba os comentários na caixa de diálogo de progresso e altere o botão Cancelar para fechar.
-    -   Para exibir comentários detalhados, feche a caixa de diálogo progresso e exiba um diálogo informativo.
+-   **Se os resultados são claramente aparentes para os usuários, feche a caixa de diálogo de progresso automaticamente após a conclusão bem-sucedida.** Caso contrário, use comentários somente para relatar problemas:
+    -   Para exibir comentários simples, exibe os comentários na caixa de diálogo de progresso e altere o botão Cancelar para Fechar.
+    -   Para exibir comentários detalhados, feche a caixa de diálogo progresso e exibir uma caixa de diálogo informacional.
 
-**Não use uma notificação para comentários de conclusão.** Use uma caixa de diálogo de progresso ou uma [notificação de êxito de ação](mess-notif.md), mas não ambas.
+**Não use uma notificação para comentários de conclusão.** Use uma caixa de diálogo de progresso ou uma [notificação de êxito de ação,](mess-notif.md)mas não ambas.
 
 **Tempo restante**
 
--   **Use os formatos de hora a seguir.** Comece com o primeiro dos seguintes formatos em que a unidade de tempo maior não é zero e, em seguida, altere para o próximo formato depois que a unidade de tempo maior se tornar zero.
+-   **Use os formatos de hora a seguir.** Comece com o primeiro dos formatos a seguir em que a maior unidade de tempo não é zero e, em seguida, altere para o próximo formato quando a maior unidade de tempo se tornar zero.
 
 **Para barras de progresso:**
 
-**Se as informações relacionadas forem mostradas em um formato de dois-pontos:**
+**Se as informações relacionadas são mostradas em um formato de dois-pontos:**
 
 Tempo restante: h horas, m minutos
 
@@ -325,7 +325,7 @@ Tempo restante: m minutos, s segundos
 
 Tempo restante: s segundos
 
-**Se o espaço da tela estiver em um Premium:**
+**Se o espaço na tela estiver em um premium:**
 
 h horas, m min restante
 
@@ -333,7 +333,7 @@ m min, s segundos restantes
 
 s segundos restantes
 
-**Caso contrário:**
+**,**
 
 h horas, m minutos restantes
 
@@ -392,9 +392,8 @@ Neste exemplo, o elemento gráfico grande não tem nenhuma finalidade.
 
 
 
-|                                      |                                                                                                                            |
+| Padrão | Ícone de corpo |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| **Padrão**<br/>               | **Ícone de corpo**<br/>                                                                                                   |
 | **Caixas de diálogo de pergunta**<br/>      | Programa, recurso, objeto, ícone de aviso (se possível perda de dados ou acesso ao sistema), aviso de segurança ou nenhum.<br/> |
 | **Caixas de diálogo de escolha**<br/>        | Nenhum.<br/>                                                                                                           |
 | **Caixas de diálogo de progresso**<br/>      | Nenhum (mas pode ter uma animação).<br/>                                                                               |
@@ -500,201 +499,201 @@ Para obter mais informações e exemplos, consulte [ícones](vis-icons.md).
      
 
 -   **Todos os botões de confirmação, exceto aplicar resultado, fechando a janela da caixa de diálogo.**
--   **Não confirme os botões de confirmação.** Fazer isso desnecessariamente pode ser muito irritante. **Exceção**
+-   **Não confirme os botões de confirmação.** Fazer isso desnecessariamente pode ser muito irritante. **Exceções:**
 
     -   A ação é potencialmente catastrófica.
-    -   A ação está claramente inconsistente com outras ações.
-    -   Se estiver incorreta, a ação poderá resultar em uma perda significativa de dados, hora ou esforço em nome do usuário.
+    -   A ação é claramente inconsistente com outras ações.
+    -   Se estiver incorreta, a ação poderá resultar em uma perda significativa de dados, tempo ou esforço em nome do usuário.
 
-    Para obter mais diretrizes e exemplos, consulte [confirmações](mess-confirm.md).
+    Para obter mais diretrizes e exemplos, consulte [Confirmações](mess-confirm.md).
 
--   **Não desabilite os botões de confirmação. Exceção**
-    -   **Se os usuários precisarem elevar para fazer uma alteração, desabilite os botões de confirmação positivos até que o usuário faça uma alteração.** Isso impede que os usuários elevem apenas para fechar uma janela, forçando-os a clicar em cancelar.
-    -   Para obter mais exceções, consulte [desabilitando ou removendo controles vs. fornecendo mensagens de erro](#disabling-or-removing-controls-vs-giving-error-messages).
--   Os **botões de confirmação são alinhados à direita em uma única linha na parte inferior da caixa de diálogo,** mas acima da área da nota de rodapé. Faça isso mesmo se houver um único botão de confirmação (como OK).
+-   **Não desabilite os botões de commit. Exceções:**
+    -   **Se os usuários precisam elevar para fazer uma alteração, desabilite os botões de confirmação positivos até que o usuário faça uma alteração.** Isso impede que os usuários elevem apenas para fechar uma janela, forçando-os a clicar em Cancelar.
+    -   Para obter mais exceções, consulte Desabilitando ou [removendo controles versus dando mensagens de erro](#disabling-or-removing-controls-vs-giving-error-messages).
+-   **Alinhe com** o botão direito os botões de confirmação em uma única linha na parte inferior da caixa de diálogo, mas acima da área de nota de rodapé. Faça isso mesmo se houver um único botão de commit (como OK).
 
     **Incorreto:**
 
-    ![captura de tela de mensagem com botão OK centralizado ](images/win-dialog-box-image25.png)
+    ![captura de tela da mensagem com o botão ok centralizado ](images/win-dialog-box-image25.png)
 
-    Neste exemplo, o botão OK está centralizado incorretamente.
+    Neste exemplo, o botão OK é centralizado incorretamente.
 
 -   **Apresente os botões de confirmação na seguinte ordem:**
-    1.  OK/ \[ fazer o \] /Yes
-    2.  \[Não faça isso \] /não
+    1.  OK/ \[ Faça isso \] /Sim
+    2.  \[Não faça isso \] /Não
     3.  Cancelar
-    4.  Aplicar (se houver)
+    4.  Aplicar (se presente)
     5.  Ajuda (se presente)
--   **Se você tiver muitos botões de confirmação relacionados, consolide-os usando botões de divisão**.
--   **Ter uma separação clara dos botões de confirmação (que fecham a janela) e todos os outros botões de comando (como avançado).**
+-   **Se você tiver muitos botões de commit relacionados, consolide-os usando botões de divisão**.
+-   **Ter uma separação clara dos botões de confirmação (que fecham a janela) e de todos os outros botões de comando (como Avançado).**
 
 **Respondendo às instruções principais**
 
--   **Use botões de confirmação positivos que são respostas específicas para a instrução principal, em vez de rótulos genéricos, como OK ou sim/não.** Os usuários devem ser capazes de entender as opções lendo apenas o texto do botão. **Exceção**
-    -   Use fechar para caixas de diálogo que não têm configurações, como caixas de diálogo informativas. Nunca use fechar para caixas de diálogo com configurações.
-    -   Use OK quando as respostas "específicas" ainda forem genéricas, como salvar, selecionar ou escolher. Use OK ao alterar uma configuração específica ou uma coleção de configurações.
-    -   **Para caixas de diálogo herdadas sem uma instrução principal, você pode usar rótulos genéricos, como OK.** Muitas vezes, essas caixas de diálogo não foram projetadas para executar uma tarefa específica, impedindo respostas mais específicas.
-    -   Determinadas tarefas exigem uma leitura mais cuidadosa e cuidadoso para que os usuários tomem decisões informadas. Normalmente, esse é o caso com [confirmações](mess-confirm.md). **Nesses casos, você pode usar os rótulos do botão de confirmação genérico de forma intencional para forçar os usuários a ler as principais instruções e evitar decisões apressars.**
+-   **Use botões de confirmação positiva que são respostas específicas para a instrução principal, em vez de rótulos genéricos, como OK ou Sim/Não.** Os usuários devem ser capazes de entender as opções lendo o texto do botão sozinho. **Exceções:**
+    -   Use Fechar para caixas de diálogo que não têm configurações, como caixas de diálogo informativas. Nunca use Fechar para caixas de diálogo que têm configurações.
+    -   Use OK quando as respostas "específicas" ainda são genéricas, como Salvar, Selecionar ou Escolher. Use OK ao alterar uma configuração específica ou uma coleção de configurações.
+    -   **Para caixas de diálogo herdadas sem uma instrução principal, você pode usar rótulos genéricos, como OK.** Geralmente, essas caixas de diálogo não são projetadas para executar uma tarefa específica, impedindo respostas mais específicas.
+    -   Determinadas tarefas exigem mais atenção e leitura cuidadosa para os usuários tomarem decisões informadas. Normalmente, esse é o caso com [confirmações](mess-confirm.md). **Nesses casos, você pode usar propositalmente rótulos de botão de confirmação genéricos para forçar os usuários a lerem as instruções principais e evitar decisões hasty.**
 
         **Correto:**
 
-        ![captura de tela de mensagem com botões Sim e não](images/win-dialog-box-image26.png)
+        ![captura de tela da mensagem com botões sim e sem](images/win-dialog-box-image26.png)
 
-        Neste exemplo, o uso de botões Sim/não confirmar força os usuários a, pelo menos, ler a instrução principal.
+        Neste exemplo, usar botões de confirmação Sim/Não força os usuários a lerem pelo menos a instrução principal.
 
--   **Como alternativa, você pode adicionar a palavra "mesmo assim" ao rótulo do botão de confirmação positivo para indicar que a caixa de diálogo apresenta um motivo para não continuar** e que os usuários devem ler com cuidado o diálogo antes de continuar.
-
-    **Correto:**
-
-    ![captura de tela de mensagem e desinstalação de qualquer botão ](images/win-dialog-box-image27.png)
-
-    Neste exemplo, "mesmo assim" é adicionado ao rótulo do botão confirmar para indicar que os usuários devem prosseguir com cuidado.
-
--   **Use cancelar ou fechar para botões de confirmação negativos em vez de respostas específicas para a instrução principal.** Com muita frequência, os usuários percebem que não querem executar uma tarefa depois que eles veem uma caixa de diálogo. Se Cancel ou Close foram rerotulados para respostas específicas, os usuários teriam que ler atentamente todos os botões de confirmação para determinar como cancelar. **Rotular cancelar e fechar consistentemente torna-os mais fáceis de encontrar. Exceção**
-    -   **Não use Sim/cancelar.** Sempre use Sim/não como um par.
-    -   **Use uma resposta específica quando cancelar for ambíguo.**
--   **Não mapeie rótulos genéricos para seu significado específico com texto na área de conteúdo.** Em vez disso, use rótulos de botão de confirmação específicos ou uma caixa de diálogo de pergunta usando links se os rótulos forem longos.
-
-    **Incorreto:**
-
-    ![captura de tela de mensagem com uso incorreto de botões ](images/win-dialog-box-image28.png)
-
-    Neste exemplo, OK é mapeado para continuar, o cancelamento é mapeado para permanecer na página.
-
-**Sim e nenhum botão**
-
--   **Prefira respostas específicas para botões Sim e não.** Embora não haja nada de errado com o uso de Sim e não, respostas específicas podem ser compreendidas mais rapidamente, resultando em uma tomada de decisão eficiente. No entanto, as [confirmações](mess-confirm.md) geralmente têm botões Sim e não para fazer com que os usuários dêem [uma idéia alguma](mess-confirm.md) antes de responder.
--   **Use os botões Sim e não apenas para responder a sim ou nenhuma pergunta.** A instrução principal deve ser naturalmente expressa como uma pergunta Sim ou não. Nunca use OK e cancele para Sim ou sem perguntas.
-
-    **Incorreto:**
-
-    ![Captura de tela que mostra uma mensagem com um ' OK ' para uma pergunta Sim-não.](images/win-dialog-box-image29.png)
+-   Como alternativa, você pode adicionar a palavra **"mesmo assim"** ao rótulo do botão de confirmação positiva para indicar que a caixa de diálogo apresenta um motivo para não continuar e que os usuários devem ler a caixa de diálogo com cuidado antes de continuar.
 
     **Correto:**
 
-    ![captura de tela de mensagem com Sim para a mesma pergunta ](images/win-dialog-box-image30.png)
+    ![captura de tela da mensagem e do botão desinstalar mesmo assim ](images/win-dialog-box-image27.png)
+
+    Neste exemplo, "de qualquer forma" é adicionado ao rótulo do botão de confirmação para indicar que os usuários devem continuar com cuidado.
+
+-   **Use Cancelar ou Fechar para botões de confirmação negativos em vez de respostas específicas à instrução principal.** Muitas vezes, os usuários percebe que não querem executar uma tarefa quando veem uma caixa de diálogo. Se Cancelar ou Fechar fosse rotulado para respostas específicas, os usuários teriam que ler cuidadosamente todos os botões de confirmação para determinar como cancelar. **Rotular Cancelar e Fechar de forma consistente os torna fáceis de encontrar. Exceções:**
+    -   **Não use Sim/Cancelar.** Sempre use Sim/Não como um par.
+    -   **Use uma resposta específica quando Cancelar for ambíguo.**
+-   **Não mapeie rótulos genéricos para seu significado específico com texto na área de conteúdo.** Em vez disso, use rótulos de botão de confirmação específicos ou uma caixa de diálogo de pergunta usando links se os rótulos são longos.
+
+    **Incorreto:**
+
+    ![captura de tela da mensagem com uso não claro de botões ](images/win-dialog-box-image28.png)
+
+    Neste exemplo, OK é mapeado para Continuar, Cancelar é mapeado para Permanecer na Página.
+
+**Botões Sim e Não**
+
+-   **Prefira respostas específicas aos botões Sim e Não.** Embora não haja nada de errado com o uso de Sim e Não, respostas específicas podem ser compreendidas mais rapidamente, resultando em uma tomada de decisão eficiente. No entanto, [as confirmações](mess-confirm.md) geralmente têm os botões Sim e Não para fazer com que os usuários façam a confirmação [pensar um pouco antes](mess-confirm.md) de responder.
+-   **Use os botões Sim e Não apenas para responder a perguntas sim ou não.** A instrução principal deve ser expressa naturalmente como uma pergunta sim ou não. Nunca use OK e Cancelar para perguntas sim ou não.
+
+    **Incorreto:**
+
+    ![Captura de tela que mostra uma mensagem com um "OK" para uma pergunta sim-não.](images/win-dialog-box-image29.png)
+
+    **Correto:**
+
+    ![captura de tela da mensagem com sim para a mesma pergunta ](images/win-dialog-box-image30.png)
 
     **Melhor:**
 
-    ![captura de tela da mensagem com execução para a mesma pergunta ](images/win-dialog-box-image31.png)
+    ![captura de tela da mensagem com executar para a mesma pergunta ](images/win-dialog-box-image31.png)
 
-    Nesses exemplos, sim e não são boas respostas a Sim e nenhuma pergunta, mas respostas específicas são ainda melhores.
+    Nesses exemplos, Sim e Não são boas respostas para sim e nenhuma pergunta, mas respostas específicas são ainda melhores.
 
--   **Considere formular a instrução principal como Sim ou nenhuma pergunta se os botões de confirmação com frases específicas forem longos ou inconvenientes.** Como alternativa, você pode usar links de comando para respostas mais longas (cinco palavras ou mais) para a instrução principal.
+-   **Considere a frase da instrução principal como uma pergunta sim ou não se os botões de confirmação com frases específicas são longos ou complicados.** Como alternativa, você pode usar links de comando para respostas mais longas (cinco palavras ou mais) para a instrução principal.
 
     **Incorreto:**
 
-    ![captura de tela de mensagem com rótulos de botão de palavra ](images/win-dialog-box-image32.png)
+    ![captura de tela da mensagem com rótulos de botão wordy ](images/win-dialog-box-image32.png)
 
     **Correto:**
 
-    ![captura de tela de mensagem com rótulos de botão Sim/não ](images/win-dialog-box-image33.png)
+    ![captura de tela da mensagem com rótulos de botão sim/não ](images/win-dialog-box-image33.png)
 
-    As frases específicas no exemplo incorreto são muito longas, portanto, o exemplo correto usa Sim e não.
+    A frase específica no exemplo incorreto é muito longa, portanto, o exemplo correto usa Sim e Não.
 
--   **Não use botões Sim e não se o significado da resposta não estiver claro.** Nesse caso, use respostas específicas.
+-   **Não use os botões Sim e Não se o significado da resposta Não estiver claro.** Se sim, use respostas específicas em vez disso.
 
 **Botões OK**
 
 -   **Em caixas de diálogo modais, clicar em OK significa aplicar os valores, executar a tarefa e fechar a janela.**
 -   **Não use botões OK para responder a perguntas.**
--   **Não atribua chaves de acesso para OK, pois Enter é a chave de acesso para o botão padrão.** Isso torna as outras chaves de acesso mais fáceis de atribuir.
--   **Rotular botões OK corretamente.** O botão OK deve ser rotulado como OK, não OK ou sem problemas.
--   **Não use botões OK para erros ou avisos.** Os problemas nunca são OK. Em vez disso, use fechar.
+-   **Não atribua chaves de acesso a OK, pois Enter é a chave de acesso para o botão padrão.** Isso facilita a atribuição das outras chaves de acesso.
+-   **Rotule os botões OK corretamente.** O botão OK deve ser rotulado OK, não OK ou Ok.
+-   **Não use botões OK para erros ou avisos.** Os problemas nunca estão ok. Em vez disso, use Fechar.
 
     **Incorreto:**
 
     ![captura de tela da mensagem com o botão OK ](images/win-dialog-box-image34.png)
 
-    Neste exemplo, fechar deve ser usado em vez de OK.
+    Neste exemplo, Close deve ser usado em vez de OK.
 
--   **Não use botões OK em caixas de diálogo sem janela restrita.** Em vez disso, caixas de diálogo sem janela restrita devem usar botões de confirmação específicos da tarefa (por exemplo, localizar). No entanto, algumas caixas de diálogo sem janela restrita exigem apenas um botão fechar.
+-   **Não use botões OK em caixas de diálogo sem modo.** Em vez disso, as caixas de diálogo sem modo devem usar botões de commit específicos da tarefa (por exemplo, Find). No entanto, algumas caixas de diálogo sem modo exigem apenas um botão Fechar.
 
-**Botões cancelar**
+**Botões Cancelar**
 
--   **Clicar em cancelar significa abandonar todas as alterações, cancelar a tarefa, fechar a janela e retornar o ambiente ao estado anterior, não deixando nenhum efeito colateral.** Para caixas de diálogo de escolha aninhadas, clicar em cancelar na caixa de diálogo proprietário escolha significa que todas as alterações feitas por caixas de diálogo de escolha de propriedade também são abandonadas.
--   **Forneça um botão Cancelar para permitir que os usuários abandonem explicitamente as alterações.** As caixas de diálogo precisam de um ponto de saída claro. Não dependa dos usuários que localizam o botão fechar na barra de título.
+-   **Clicar em Cancelar significa abandonar todas as alterações, cancelar a tarefa, fechar a janela e retornar o ambiente para seu estado anterior, sem nenhum efeito colateral.** Para caixas de diálogo de escolha aninhadas, clicar em Cancelar na caixa de diálogo de escolha do proprietário significa que todas as alterações feitas pelos diálogos de escolha de propriedade também serão abandonadas.
+-   **Forneça um botão Cancelar para permitir que os usuários abandonem explicitamente as alterações.** As caixas de diálogo precisam de um ponto de saída claro. Não dependa dos usuários localizarem o botão Fechar na barra de título.
 
-    -   **Exceção:** Não forneça um botão Cancelar para caixas de diálogo sem configurações. Os botões OK e fechar têm o mesmo efeito que cancelar nesse caso.
-
-    **Incorreto:**
-
-    ![captura de tela da mensagem com o botão OK apenas ](images/win-dialog-box-image35.png)
-
-    Neste exemplo, ter apenas um botão fechar na barra de título faz parecer que os usuários não têm uma opção.
-
--   **Não use os botões cancelar para responder a perguntas.**
+    -   **Exceção:** Não forneça um botão Cancelar para caixas de diálogo sem configurações. Os botões OK e Close têm o mesmo efeito que Cancelar nesse caso.
 
     **Incorreto:**
 
-    ![captura de tela de mensagem com OK para Sim – sem pergunta ](images/win-dialog-box-image36.png)
+    ![captura de tela da mensagem apenas com o botão OK ](images/win-dialog-box-image35.png)
 
-    Neste exemplo, OK e cancelar são usados incorretamente para responder a uma pergunta Sim ou não.
+    Neste exemplo, ter apenas um botão Fechar na barra de título faz com que pareça que os usuários não têm uma opção.
 
--   **Não atribua chaves de acesso para cancelar, pois ESC é a chave de acesso.** Isso torna as outras chaves de acesso mais fáceis de atribuir.
--   **Não use os botões cancelar em caixas de diálogo sem janela restrita.** Em vez disso, use fechar.
+-   **Não use os botões Cancelar para responder a perguntas.**
+
+    **Incorreto:**
+
+    ![captura de tela da mensagem com ok para pergunta sim-não ](images/win-dialog-box-image36.png)
+
+    Neste exemplo, OK e Cancelar são usados incorretamente para responder a uma pergunta Sim ou Não.
+
+-   **Não atribua chaves de acesso a Cancelar, pois Esc é a chave de acesso.** Isso facilita a atribuição das outras chaves de acesso.
+-   **Não use os botões Cancelar em caixas de diálogo sem modo.** Em vez disso, use Fechar.
 -   **Não desabilite o botão Cancelar.** Os usuários sempre devem ser capazes de cancelar caixas de diálogo.
-    -   **Exceção:** Você pode desabilitar o botão Cancelar em uma caixa de diálogo de progresso se houver um período durante o qual a operação não pode ser cancelada. No entanto, uma solução melhor é criar essas operações para sempre serem canceláveis.
+    -   **Exceção:** Você poderá desabilitar o botão Cancelar em uma caixa de diálogo de progresso se houver um período durante o qual a operação não possa ser cancelada. No entanto, uma solução melhor é projetar essas operações para que sempre sejam canceláveis.
 
-**Botões de fechamento**
+**Fechar botões**
 
--   **Use botões fechar para caixas de diálogo sem janela restrita, bem como caixas de diálogo modais que não podem ser canceladas.**
--   **Clicar em fechar significa fechar a janela da caixa de diálogo, deixando quaisquer efeitos colaterais existentes.** Não use o Done, pois não é uma construção imperativa. Para caixas de diálogo de escolha aninhadas, clicar em fechar na caixa de diálogo proprietário escolha significa que todas as alterações feitas por caixas de diálogo de escolha de propriedade são preservadas.
--   **Coloque um botão de fechamento explícito no corpo da caixa de diálogo.** As caixas de diálogo precisam de um ponto de saída claro. Não dependa dos usuários que localizam o botão fechar na barra de título.
--   **Verifique se o botão fechar na barra de título tem o mesmo efeito que cancelar ou fechar.**
--   **Não atribua chaves de acesso para fechar, pois ESC é a chave de acesso.** Isso torna as outras chaves de acesso mais fáceis de atribuir.
+-   **Use botões Fechar para caixas de diálogo sem modo, bem como caixas de diálogo modais que não podem ser canceladas.**
+-   **Clicar em Fechar significa fechar a janela da caixa de diálogo, deixando quaisquer efeitos colaterais existentes.** Não use Done, porque não é uma construção imperativa. Para caixas de diálogo de escolha aninhadas, clicar em Fechar na caixa de diálogo de escolha do proprietário significa que todas as alterações feitas por caixas de diálogo de escolha de propriedade serão preservadas.
+-   **Coloque um botão Fechar explícito no corpo da caixa de diálogo.** As caixas de diálogo precisam de um ponto de saída claro. Não dependa dos usuários localizarem o botão Fechar na barra de título.
+-   **Certifique-se de que o botão Fechar na barra de título tenha o mesmo efeito que Cancelar ou Fechar.**
+-   **Não atribua chaves de acesso para Fechar, pois Esc é a chave de acesso.** Isso facilita a atribuição das outras chaves de acesso.
 
 **Aplicar botões**
 
--   **Não use os botões aplicar em caixas de diálogo que não sejam folhas de propriedades ou painéis de controle.** O botão Aplicar significa aplicar as alterações pendentes, mas deixar a janela aberta. Isso permite que os usuários avaliem as alterações antes de fechar a janela. No entanto, somente os painéis de controle e de folha de propriedades têm essa necessidade.
+-   **Não use os botões Aplicar em caixas de diálogo que não são folhas de propriedades ou painéis de controle.** O botão Aplicar significa aplicar as alterações pendentes, mas deixe a janela aberta. Isso permite que os usuários avaliem as alterações antes de fechar a janela. No entanto, somente a folha de propriedades e os painéis de controle têm essa necessidade.
 
     **Incorreto:**
 
-    ![captura de tela da caixa de diálogo com o botão aplicar ](images/win-dialog-box-image37.png)
+    ![captura de tela da caixa de diálogo com o botão Aplicar ](images/win-dialog-box-image37.png)
 
-    Neste exemplo, uma caixa de diálogo de escolha desnecessariamente tem um botão Aplicar.
+    Neste exemplo, uma caixa de diálogo de escolha sem necessidade tem um botão Aplicar.
 
-**Botões de confirmação para caixas de diálogo indiretas**
+**Botões de commit para caixas de diálogo indiretas**
 
-**Observação:** As caixas de diálogo indiretas são exibidas fora do contexto, como um resultado indireto de uma tarefa ou o resultado de um problema com um sistema ou processo em segundo plano. Para caixas de diálogo indiretas, o botão Cancelar é ambíguo porque pode significar cancelar a caixa de diálogo ou cancelar a tarefa inteira.
+**Observação:** As caixas de diálogo indiretas são exibidas fora do contexto, como um resultado indireto de uma tarefa ou o resultado de um problema com um sistema ou processo em segundo plano. Para diálogos indiretos, o botão Cancelar é ambíguo porque pode significar cancelar a caixa de diálogo ou cancelar toda a tarefa.
 
--   **Se os usuários precisarem cancelar a caixa de diálogo e a tarefa, conceda botões de confirmação para fazer ambos.** Rotule o botão que cancela a caixa de diálogo com uma resposta negativa para a instrução principal. Rotule o botão que cancela a tarefa inteira com cancelar. O uso de cancelar permite que a caixa de diálogo seja usada em muitos contextos.
+-   **Se os usuários precisam cancelar a caixa de diálogo e a tarefa, dê botões de confirmação para fazer ambos.** Rotule o botão que cancela a caixa de diálogo com uma resposta negativa à instrução principal. Rotule o botão que cancela toda a tarefa com Cancelar. Usar Cancelar permite que a caixa de diálogo seja usada em muitos contextos.
 
     **Correto:**
 
     ![captura de tela da caixa de diálogo com salvar/não salvar ](images/win-dialog-box-image38.png)
 
-    Neste exemplo, essa caixa de diálogo é exibida pelo Windows Paint como resultado de um comando novo ou sair quando o gráfico não tiver sido salvo. Não salvar fecha a caixa de diálogo sem salvar, enquanto cancelar cancela o comando novo ou sair.
+    Neste exemplo, essa caixa de diálogo é exibida pelo Windows Paint como resultado de um comando New ou Exit quando o gráfico não foi salvo. Não Salvar fecha a caixa de diálogo sem salvar, enquanto Cancelar cancela o comando Novo ou Sair.
 
     **Incorreto:**
 
-    ![captura de tela da caixa de diálogo com botões Sim/não ](images/win-dialog-box-image39.png)
+    ![captura de tela da caixa de diálogo com botões sim/não ](images/win-dialog-box-image39.png)
 
-    Neste exemplo, não há como cancelar a tarefa (fechar a barra de atalhos do Office) que levou a exibir essa caixa de diálogo. Essa caixa de diálogo precisa de um botão Cancelar.
+    Neste exemplo, não há como cancelar a tarefa (fechando a Barra de Atalhos do Office) que levou à exibição dessa caixa de diálogo. Essa caixa de diálogo precisa de um botão Cancelar.
 
--   **Se os usuários precisarem apenas cancelar a caixa de diálogo, mas não a tarefa, use um botão com uma resposta específica negativa para a instrução principal** e não tenha um botão Cancelar.
+-   Se os usuários apenas precisam cancelar a caixa de diálogo, mas não **a tarefa, use** um botão com uma resposta negativa específica à instrução principal e não tenha um botão Cancelar.
 
     ![captura de tela da caixa de diálogo com executar/não executar ](images/win-dialog-box-image24.png)
 
-    Neste exemplo, essa caixa de diálogo é exibida indiretamente como o resultado da navegação para uma página da Web que instala um controle ActiveX. O uso de Cancel seria ambíguo aqui, portanto, não execute é usado em vez disso.
+    Neste exemplo, essa caixa de diálogo é exibida indiretamente como resultado da navegação para uma página da Web que instala um controle ActiveX. Usar Cancelar seria ambíguo aqui, portanto, Não executar é usado em vez disso.
 
-Para obter mais informações e exemplos, consulte [botões de comando](ctrl-command-buttons.md).
+Para obter mais informações e exemplos, consulte [Botões de comando](ctrl-command-buttons.md).
 
 ### <a name="command-links"></a>Links de comando
 
 -   **Apresente um conjunto de comandos longos usando links de comando, em vez de botões de comando ou uma combinação de botões de opção e um botão OK.** Isso permite que os usuários respondam com um único clique. No entanto, essa abordagem funciona apenas para uma única pergunta.
--   **Apresente os links de comando mais comumente usados primeiro.** A ordem resultante deve seguir aproximadamente a probabilidade de uso, mas também ter um fluxo lógico.
-    -   **Exceção:** Links de comando que resultam em fazer tudo devem ser colocados primeiro.
--   Se um link de comando exigir mais explicações, **forneça uma explicação suplementar.** Explicações suplementares descrevem por que os usuários talvez queiram escolher o comando ou o que acontece se o comando for escolhido.
--   **Não use explicações suplementares que são reinstruções de palavras do link de comando.** Use uma explicação suplementar somente quando não for possível tornar um link de comando auto-explicativo. Fornecer uma explicação suplementar para um link de comando não significa que você precise fornecê-los para todos os comandos.
+-   **Apresente os links de comando mais usados primeiro.** A ordem resultante deve seguir aproximadamente a probabilidade de uso, mas também ter um fluxo lógico.
+    -   **Exceção:** Os links de comando que resultam em fazer tudo devem ser colocados primeiro.
+-   Se um link de comando exigir mais explicações, **forneça uma explicação complementar.** Explicações complementares descrevem por que os usuários podem querer escolher o comando ou o que acontece se o comando for escolhido.
+-   **Não use explicações complementares que são restatementações wordy do link de comando.** Use uma explicação complementar somente quando não for possível tornar um link de comando autoexplicativo. Fornecer uma explicação complementar para um link de comando não significa que você precisa forenciá-los para todos os comandos.
 
-![captura de tela da caixa de diálogo com opções de texto de exibição ](images/win-dialog-box-image40.png)
+![captura de tela da caixa de diálogo com opções de notação de texto ](images/win-dialog-box-image40.png)
 
-Neste exemplo, a explicação suplementar descreve as implicações de uma das opções.
+Neste exemplo, a explicação complementar descreve as implicações de uma das opções.
 
--   **Use frases que comecem com um verbo, sem pontuação final.**
--   **Se um comando for altamente recomendado, considere adicionar "(recomendado)" ao rótulo.** Certifique-se de adicionar ao rótulo do link, não à explicação suplementar.
--   **Se um comando for destinado apenas a usuários avançados, considere adicionar "(avançado)" ao rótulo.** Certifique-se de adicionar ao rótulo do link, não à explicação suplementar.
+-   **Use frases que começam com um verbo, sem terminar a pontuação.**
+-   **Se um comando for altamente recomendado, considere adicionar "(recomendado)" ao rótulo.** Certifique-se de adicionar ao rótulo do link, não à explicação complementar.
+-   **Se um comando for destinado somente a usuários avançados, considere adicionar "(advanced)" ao rótulo.** Certifique-se de adicionar ao rótulo do link, não à explicação complementar.
 -   **Sempre forneça um botão Cancelar explícito**. Não use um link de comando para essa finalidade.
 
 **Incorreto:**
@@ -703,29 +702,29 @@ Neste exemplo, a explicação suplementar descreve as implicações de uma das o
 
 Neste exemplo, a caixa de diálogo usa um link de comando em vez de um botão Cancelar.
 
-Para obter mais informações e exemplos, consulte [Command links](ctrl-command-links.md).
+Para obter mais informações e exemplos, consulte [Links de comando.](ctrl-command-links.md)
 
-### <a name="dont-show-this-item-again"></a>Não mostrar este <item> outra
+### <a name="dont-show-this-item-again"></a>Não mostre isso <item> Novamente
 
--   **Considere o uso de uma opção não mostrar esta <item> novamente para permitir que os usuários suprimem uma caixa de diálogo recorrente, somente se não houver uma alternativa melhor.** É melhor mostrar sempre a caixa de diálogo se os usuários realmente precisarem dela ou simplesmente eliminá-la se não forem.
--   **Use essa formulação específica substituir <item> pelo item específico.** Por exemplo, não mostrar este lembrete novamente. Ao fazer referência a uma caixa de diálogo em geral, use não mostrar esta mensagem novamente.
--   **Indique claramente quando a entrada do usuário será usada para valores padrão futuros** adicionando a seguinte frase sob a opção: suas seleções serão usadas por padrão no futuro.
--   **Não selecione a opção por padrão. Se a caixa de diálogo realmente deve ser exibida apenas uma vez, faça isso sem perguntar.** Não use essa opção como uma desculpa para incomodar os usuários para garantir que o comportamento padrão não seja irritante.
+-   **Considere usar uma opção Não mostrar novamente para permitir que os usuários suprimem uma caixa de diálogo recorrente, somente se não <item> houver uma alternativa melhor.** É melhor sempre mostrar a caixa de diálogo se os usuários realmente precisam dela ou simplesmente eliminá-la caso não precisem.
+-   **Use essa frase específica para substituir <item> pelo item específico.** Por exemplo, Não mostrar este lembrete novamente. Ao fazer referência a uma caixa de diálogo em geral, use Não mostrar esta mensagem novamente.
+-   **Indique claramente quando a entrada do usuário será** usada para valores padrão futuros adicionando a seguinte frase na opção: Suas seleções serão usadas por padrão no futuro.
+-   **Não selecione a opção por padrão. Se a caixa de diálogo realmente precisar ser exibida apenas uma vez, faça isso sem perguntar.** Não use essa opção como um contraspeso para que os usuários se certifiquem de que o comportamento padrão não seja entediante.
 
 **Incorreto:**
 
-![captura de tela de mensagem solicitando pergunta desnecessária ](images/win-dialog-box-image42.png)
+![captura de tela da mensagem fazendo uma pergunta desnecessária ](images/win-dialog-box-image42.png)
 
 Neste exemplo, a mensagem deve ser exibida apenas uma vez. Não é necessário perguntar.
 
 -   **Faça com que a configuração persista por usuário.**
--   **Se os usuários selecionarem a opção e clicarem em cancelar, essa opção entrará em vigor.** Essa configuração é uma meta-opção, portanto, não segue o comportamento padrão de cancelar de deixar nenhum efeito colateral. Observe que, se os usuários não desejarem ver a caixa de diálogo no futuro, provavelmente também desejarem cancelá-lo.
--   Se os usuários podem precisar restaurar essas caixas de diálogo, forneça um comando **restaurar mensagens** na caixa de diálogo opções do programa.
+-   **Se os usuários selecionarem a opção e clicarem em Cancelar, essa opção entre em vigor.** Essa configuração é uma meta-opção, portanto, ela não segue o comportamento padrão Cancelar de não deixar nenhum efeito colateral. Observe que, se os usuários não quiserem ver a caixa de diálogo no futuro, provavelmente eles também querem cancelá-la.
+-   Se os usuários talvez precisem restaurar essas caixas de diálogo, forneça **um comando Restaurar** mensagens na caixa de diálogo Opções do programa.
 
 ### <a name="ask-me-later"></a>Perguntar depois
 
 -   Forneça esta opção para descartar uma caixa de diálogo somente quando:
-    -   **A caixa de diálogo é indireta** e, portanto, é provável que os usuários estejam concentrados em outra tarefa.
+    -   **A caixa de diálogo é indireta,** portanto, os usuários provavelmente se concentram em outra tarefa.
     -   **Os usuários devem responder, mas não imediatamente**, para que possam continuar com seu trabalho.
     -   **A pergunta requer pensamento ou esforço suficiente** , de forma que os usuários possam tomar decisões melhores se receberem mais tempo.
     -   **A caixa de diálogo ou a opção será apresentada automaticamente mais tarde** (para que os usuários realmente sejam solicitados posteriormente).
@@ -850,7 +849,7 @@ Neste exemplo, é mais provável que os usuários escolham as mesmas configuraç
 -   **Janelas redimensionáveis podem ser otimizadas para resoluções mais altas, mas são dimensionadas conforme necessário no momento da exibição para a resolução de tela real.**
 -   **Escolha um tamanho de janela padrão apropriado para seu conteúdo.** Não tenha medo de usar tamanhos de janela iniciais maiores se você puder usar o espaço com eficiência.
 
-## <a name=&quot;text&quot;></a>Texto
+## <a name=&quot;text&quot;></a>Text
 
 ### <a name=&quot;general&quot;></a>Geral
 
@@ -883,7 +882,7 @@ Escolha uma conta
 ### <a name="dialog-box-titles"></a>Títulos da caixa de diálogo
 
 -   **Use o título para identificar o comando, o recurso ou o programa do qual uma caixa de diálogo veio.**
-    -   Se a caixa de diálogo for iniciada pelo usuário, identifique-a usando o comando ou o nome do recurso. **Exceção**
+    -   Se a caixa de diálogo for iniciada pelo usuário, identifique-a usando o comando ou o nome do recurso. **Exceções:**
         -   Se uma caixa de diálogo for exibida por vários comandos diferentes, considere usar o nome do programa em vez disso.
         -   Se esse título fosse redundante com a instrução principal, use o nome do programa em vez disso.
     -   Se for um programa ou sistema iniciado (e, portanto, fora do contexto), identifique-o usando o nome do programa ou do recurso para dar contexto.

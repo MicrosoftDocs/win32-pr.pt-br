@@ -11,12 +11,12 @@ keywords:
 - arquivos IDL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87e24eec21a481de4603392942b40013ec55086c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 19e3d4ecd7f4f9df7b884cf70de3ba3ad62c7939
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105800185"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444007"
 ---
 # <a name="compiling-the-idl-files-supplied-with-the-sdk"></a>Compilando os arquivos IDL fornecidos com o SDK
 
@@ -44,9 +44,8 @@ Vários dos arquivos IDL fornecidos têm dependências de compilação. Se você
 
 
 
-|                            |                                                                                  |
+|   INSERI                      |   Dependências                                                                   |
 |----------------------------|----------------------------------------------------------------------------------|
-| **INSERI**                    | **Dependências**                                                                 |
 | icomponentauthenticate. idl | importe "oaidl. idl";<br/> \#incluir "icomponentauthenticate. idl"<br/> |
 | WMDM. idl                   | Nenhuma dependência externa                                                         |
 | WmdmLog. idl                | Nenhuma dependência externa                                                         |

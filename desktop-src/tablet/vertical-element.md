@@ -4,12 +4,12 @@ ms.assetid: af6f485e-13df-41bb-b57a-10d8393b83e7
 title: Elemento vertical
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 191a9c5cb3190cff9b1e379a68dbfab49ddc25a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 42565e6f2828c4ef27d1b28830502303a03e6f13
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296303"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432118"
 ---
 # <a name="vertical-element"></a>Elemento vertical
 
@@ -98,7 +98,7 @@ Nenhum.
 
 
 
-|              |                                                               |
+|  Elemento     | Valor                                                         |
 |--------------|---------------------------------------------------------------|
 | Tipo de elemento | ComplexType de [**verticaltype**](verticaltype-complex-type.md) |
 | Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk                    |

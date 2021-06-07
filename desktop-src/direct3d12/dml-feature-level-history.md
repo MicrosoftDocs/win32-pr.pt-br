@@ -4,12 +4,12 @@ description: TBD
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 11/05/2020
-ms.openlocfilehash: 68633f531c627eed8b02c7f65a248213743ca8bc
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: fdc489184b3220afd0b8c75738fa1d40de207c8d
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107803784"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111387045"
 ---
 # <a name="directml-feature-level-history"></a>Histórico do nível de recurso do DirectML
 
@@ -19,9 +19,9 @@ Para obter o histórico de versões gerais do DirectML, consulte [histórico de 
 
 Introduzido na versão 1.5.0 do DirectML.
 
-Adicionado suporte para os seguintes operadores.
+Adicionado suporte para os seguintes [operadores](/windows/win32/api/directml/ne-directml-dml_operator_type).
 
-* [DML_OPERATOR_ELEMENT_WISE_ATAN_YX](/windows/win32/api/directml/ne-directml-dml_operator_type)
+* **DML_OPERATOR_ELEMENT_WISE_ATAN_YX**
 * **DML_OPERATOR_ELEMENT_WISE_CLIP_GRAD**
 * **DML_OPERATOR_ELEMENT_WISE_DIFFERENCE_SQUARE**
 * **DML_OPERATOR_LOCAL_RESPONSE_NORMALIZATION_GRAD**
@@ -46,9 +46,9 @@ O número máximo de dimensões com suporte para os seguintes operadores aumento
 
 Introduzido na versão DirectML 1.4.0.
 
-Adicionado suporte para os seguintes operadores.
+Adicionado suporte para os seguintes [operadores](/windows/win32/api/directml/ne-directml-dml_operator_type).
 
-* [DML_OPERATOR_ELEMENT_WISE_BIT_AND](/windows/win32/api/directml/ne-directml-dml_operator_type)
+* **DML_OPERATOR_ELEMENT_WISE_BIT_AND**
 * **DML_OPERATOR_ELEMENT_WISE_BIT_OR**
 * **DML_OPERATOR_ELEMENT_WISE_BIT_XOR**
 * **DML_OPERATOR_ELEMENT_WISE_BIT_NOT**
@@ -152,25 +152,25 @@ Foram adicionados os seguintes aprimoramentos.
   * **DML_OPERATOR_TILE**
   * **DML_OPERATOR_TOP_K** e **DML_OPERATOR_TOP_K1**
   * **DML_OPERATOR_ONE_HOT**
-  * **DML_OPERATOR_REDUCE**, ao usar uma das funções de redução a seguir.
+  * **DML_OPERATOR_REDUCE**, ao usar uma das seguintes funções de redução.
     * **DML_REDUCE_FUNCTION_ARGMIN**
     * **DML_REDUCE_FUNCTION_ARGMAX**
     * **DML_REDUCE_FUNCTION_MAX**
     * **DML_REDUCE_FUNCTION_MIN**
     * **DML_REDUCE_FUNCTION_MULTIPLY**
     * **DML_REDUCE_FUNCTION_SUM**
-* Restrições de formas tensor reduzidas para **DML_OPERATOR_GATHER**
+* Restrições de forma tensor para **DML_OPERATOR_GATHER**
 
 ## <a name="dml_feature_level_2_0"></a>DML_FEATURE_LEVEL_2_0
 
-Introduzido no DirectML versão 1.1.0.
+Introduzido na versão 1.1.0 do DirectML.
 
-Foram adicionadas as seguintes APIs.
+Adicionadas as APIs a seguir.
 * [Função DMLCreateDevice1](./directml/nf-directml-dmlcreatedevice1.md)
-* [Enumeração de DML_FEATURE_LEVEL](/windows/win32/api/directml/ne-directml-dml_feature_level)
-* Consultas de nível de recurso (consulte [DML_FEATURE_QUERY_FEATURE_LEVELS](/windows/win32/api/directml/ns-directml-dml_feature_query_feature_levels))
+* [DML_FEATURE_LEVEL enumeração](/windows/win32/api/directml/ne-directml-dml_feature_level)
+* Consultas de nível de recurso [(consulte DML_FEATURE_QUERY_FEATURE_LEVELS](/windows/win32/api/directml/ns-directml-dml_feature_query_feature_levels))
 
-Adicionado suporte para os seguintes operadores.
+Adicionado suporte para os operadores a seguir.
 
 * **DML_OPERATOR_ELEMENT_WISE_SIGN**
 * **DML_OPERATOR_ELEMENT_WISE_IS_NAN**
@@ -192,10 +192,10 @@ Adicionado suporte para os seguintes operadores.
 * **DML_OPERATOR_ONE_HOT**
 * **DML_OPERATOR_RESAMPLE**
 
-Foram adicionados os seguintes aprimoramentos.
+Foram adicionados os aprimoramentos a seguir.
 
-* Ao ligar um recurso de entrada para expedição de um [IDMLOperatorInitializer](/windows/win32/api/directml/nn-directml-idmloperatorinitializer), agora é legal fornecer um recurso com [D3D12_HEAP_TYPE_CUSTOM](/windows/win32/api/d3d12/ne-d3d12-d3d12_heap_type) (além de **D3D12_HEAP_TYPE_DEFAULT**), desde que as propriedades de heap apropriadas também sejam definidas. Consulte [Binding in DirectML](./dml-binding.md).
-* Os seguintes operadores boolianos lógicos agora dão suporte a tempos de saída **UINT8** , além do suporte existente para **UINT32**.
+* Ao vincular um recurso de entrada para expedição de [um IDMLOperatorInitializer](/windows/win32/api/directml/nn-directml-idmloperatorinitializer), agora é legal fornecer um recurso com [D3D12_HEAP_TYPE_CUSTOM](/windows/win32/api/d3d12/ne-d3d12-d3d12_heap_type) (além do **D3D12_HEAP_TYPE_DEFAULT ),** desde que as propriedades de heap apropriadas também sejam definidas. Consulte [Associação no DirectML.](./dml-binding.md)
+* Os operadores booliano lógicos a seguir agora são suportados por tensores de saída **UINT8,** além do suporte existente para **UINT32**.
   * **DML_OPERATOR_ELEMENT_WISE_LOGICAL_AND**
   * **DML_OPERATOR_ELEMENT_WISE_LOGICAL_EQUALS**
   * **DML_OPERATOR_ELEMENT_WISE_LOGICAL_GREATER_THAN**
@@ -203,7 +203,7 @@ Foram adicionados os seguintes aprimoramentos.
   * **DML_OPERATOR_ELEMENT_WISE_LOGICAL_NOT**
   * **DML_OPERATOR_ELEMENT_WISE_LOGICAL_OR**
   * **DML_OPERATOR_ELEMENT_WISE_LOGICAL_XOR**
-* as funções de ativação de 5D agora dão suporte ao uso de progressos em seus tempos de entrada e de saída.
+* As funções de ativação 5D agora suportam o uso de passadas em seus tensores de entrada e saída.
 
 ## <a name="dml_feature_level_1_0"></a>DML_FEATURE_LEVEL_1_0
 
@@ -212,6 +212,6 @@ O nível de recurso no qual o DirectML foi introduzido.
 ## <a name="see-also"></a>Confira também
 
 * [Histórico de versão do DirectML](./dml-version-history.md)
-* [Enumeração de DML_FEATURE_LEVEL](/windows/win32/api/directml/ne-directml-dml_feature_level)
+* [DML_FEATURE_LEVEL enumeração](/windows/win32/api/directml/ne-directml-dml_feature_level)
 * [Função DMLCreateDevice1](./directml/nf-directml-dmlcreatedevice1.md)
-* [Estrutura de DML_FEATURE_QUERY_FEATURE_LEVELS](/windows/win32/api/directml/ns-directml-dml_feature_query_feature_levels)
+* [DML_FEATURE_QUERY_FEATURE_LEVELS estrutura](/windows/win32/api/directml/ns-directml-dml_feature_query_feature_levels)

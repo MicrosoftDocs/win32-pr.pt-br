@@ -4,12 +4,12 @@ description: Identifica a \_ Propriedade PKEY QuickAccessToolbarDock da interfac
 ms.assetid: 77f7b0a8-f276-4501-9d53-fb5a3185edcc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d1ae48cb9ef2ee665739de2f3aacab197b461665
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5e28ec2e153755fd243bf78ee389cad40485a348
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366096"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443757"
 ---
 # <a name="ui_pkey_quickaccesstoolbardock"></a>\_QuickAccessToolbarDock PKEY \_ UI
 
@@ -33,7 +33,7 @@ O valor da propriedade é da [**enumeração \_ CONTROLDOCK da interface do usu�
 
 
 
-|                         |                                                                                                                                                                                                                                                       |
+|    Enumeração                     |    Descrição                                                                                                                                                                                                                                                   |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \_ \_ parte superior da interface do usuário CONTROLDOCK    | O QAT é encaixado na área não cliente do aplicativo host da faixa de opções, conforme mostrado na captura de tela a seguir.![captura de tela da barra de ferramentas de acesso rápido encaixada acima da faixa de opções na área não cliente.](images/properties/qat-docktop.png)<br/> |
 | \_CONTROLDOCK \_ inferior da interface do usuário | O QAT é encaixado como uma faixa visualmente integral abaixo da faixa de opções, conforme mostrado na captura de tela a seguir. ![captura de tela da barra de ferramentas de acesso rápido encaixada abaixo da faixa de faixas.](images/properties/qat-dockbottom.png)<br/>                           |

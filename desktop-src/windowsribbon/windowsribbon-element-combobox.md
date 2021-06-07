@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5bdcc95c64c2bd60df4f2f53d3bd3699c0a7ee65
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: 60ad8866b655be587e0c3d0f123d8bc59b6b8a21
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "105763939"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443577"
 ---
 # <a name="combobox-element"></a>Elemento ComboBox
 
@@ -191,12 +191,8 @@ Esta seção de código mostra as declarações de controle de **ComboBox** .
 
 ## <a name="element-information"></a>Informações do elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo com suporte<br/> | Windows 7 |
-| Pode estar vazio                        | Sim       |
+* **Sistema mínimo com suporte**: Windows 7
+* **Pode estar vazio**: Sim
 
 
 

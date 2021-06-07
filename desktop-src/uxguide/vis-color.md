@@ -1,17 +1,17 @@
 ---
-title: Cor
+title: Color
 description: Color é um elemento visual importante da maioria das interfaces de usuário.
 ms.assetid: 30a60e9e-ebb4-40f2-8535-a9b58dc668a8
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: ae58ddf232a3d8311a917ea0475c7aca1bae8949
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 598654c7e96f025bbcc1ff2a97c96df1a328c046
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104091862"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444637"
 ---
-# <a name="color"></a>Cor
+# <a name="color"></a>Color
 
 > [!NOTE]
 > Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
@@ -217,9 +217,8 @@ Todos os elementos da tela devem ser legíveis e aparecem conforme o esperado, m
 
 
 
-|                                      |                                                                               |                                                                                                                                                                 |
+| Matiz | Significado | Usar no Windows  |
 |--------------------------------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Matiz**<br/>                   | **Significado**<br/>                                                        | **Usar no Windows**<br/>                                                                                                                                   |
 | azul/verde<br/>                | Marca do Windows<br/>                                                      | Plano de fundo: identidade visual do Windows.<br/>                                                                                                                        |
 | vidro, preto, cinza, branco<br/> | neutro<br/>                                                            | Plano de fundo: quadros de janela padrão, menu Iniciar, barra de tarefas, barra lateral.<br/> Primeiro plano: texto normal.<br/>                                                |
 | blue<br/>                      | Iniciar, confirmar<br/>                                                      | Plano de fundo: botões de comando padrão, Pesquisar, fazer logon.<br/> Ícones: informações, ajuda.<br/> Primeiro plano: instruções principais, links.<br/>           |

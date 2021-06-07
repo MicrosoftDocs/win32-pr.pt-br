@@ -1,9 +1,9 @@
 ---
 title: Elemento SplitButtonGallery
-description: Representa um controle da Galeria de botões de divisão com um menu suspenso baseado na galeria.
+description: Representa um controle Dividir Galeria de Botões com um menu suspenso baseado em galeria.
 ms.assetid: 65b6af50-6d9a-4285-b2d9-26dfb904d0b8
 keywords:
-- Faixa de SplitButtonGallery do elemento do Windows
+- Elemento SplitButtonGallery Da Faixa de Opções do Windows
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 68e90137325c16af6942f9f3929f8abfdf795660
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f5f8767135b9472acba333b1cdfa6ab102e9b7f4
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104454231"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444827"
 ---
 # <a name="splitbuttongallery-element"></a>Elemento SplitButtonGallery
 
-Representa um controle da [Galeria de botões de divisão](windowsribbon-controls-splitbuttongallery.md) com um menu suspenso baseado na galeria.
+Representa um [controle Dividir Galeria de](windowsribbon-controls-splitbuttongallery.md) Botões com um menu suspenso baseado em galeria.
 
 ## <a name="usage"></a>Uso
 
@@ -62,54 +62,54 @@ Representa um controle da [Galeria de botões de divisão](windowsribbon-control
 <tr class="odd">
 <td><strong>ApplicationModes</strong><br/></td>
 <td>xs:string<br/></td>
-<td>No<br/></td>
-<td>Válido somente se o <a href="windowsribbon-element-menugroup.md"><strong>MyMenu</strong></a> for o elemento pai.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs: String)<br/> </dt> <dd> Uma cadeia de caracteres que contém uma lista de inteiros separados por vírgulas entre 0 e 31.<br/> O espaço em branco é válido e ignorado.<br/> Comprimento máximo: 250 caracteres. <br/> </dd> </dl></td>
+<td>Não<br/></td>
+<td>Válido somente se <a href="windowsribbon-element-menugroup.md"><strong>MenuGroup</strong></a> for o elemento pai.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Uma cadeia de caracteres que contém uma lista separada por vírgulas de inteiros entre 0 e 31.<br/> O espaço em branco é válido e ignorado.<br/> Comprimento máximo: 250 caracteres. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>CommandName</strong><br/></td>
-<td>xs: positiveInteger ou xs: String<br/></td>
-<td>No<br/></td>
-<td>Associa o elemento a um <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs: positiveInteger ou xs: String)<br/> </dt> <dd> Uma cadeia de caracteres, um valor inteiro entre 2 e 59999, inclusive, ou um valor hexadecimal entre 0x2 e 0xea5f, inclusive. <br/> O valor deve ser exclusivo no documento XML da faixa de faixas. <br/> Comprimento máximo: 100 caracteres. <br/> </dd> </dl></td>
+<td>xs:positiveInteger ou xs:string<br/></td>
+<td>Não<br/></td>
+<td>Associa o elemento a um <a href="windowsribbon-element-command.md"><strong>Comando</strong></a>.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger ou xs:string)<br/> </dt> <dd> Uma cadeia de caracteres, um valor inteiro entre 2 e 59999, inclusive ou um valor hexadecimal entre 0x2 e 0xea5f, inclusive. <br/> O valor deve ser exclusivo dentro do documento XML da Faixa de Opções. <br/> Comprimento máximo: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>HasLargeItems</strong><br/></td>
 <td>Boolean<br/></td>
-<td>No<br/></td>
-<td>Determina se o recurso de imagem grande ou pequena do comando é exibido no controle galeria. <br/>
+<td>Não<br/></td>
+<td>Determina se o recurso de imagem grande ou pequeno do Comando é exibido no controle da galeria. <br/>
 <blockquote>
 [!Note]<br />
-Aplica-se somente a galerias em que o valor do atributo <em>Type</em> é igual a <code>Command</code> .
+Aplica-se somente a galerias em que o valor do <em>atributo Type</em> é igual a <code>Command</code> .
 </blockquote>
-<br/> Restrito a um dos valores a seguir (0 e 1 não são válidos):<br/> <br/>
-<dt><span></span><span></span><strong></strong> true<br/> </dt> <dd> Padrão. <br/> </dd> <dt><span></span><span></span><strong></strong> for<br/> </dt> <dd></dd> </dl></td>
+<br/> Restrito a um dos seguintes valores (0 e 1 não são válidos):<br/> <br/>
+<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Padrão. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="even">
-<td><strong>ItemHeight</strong><br/></td>
+<td><strong>Itemheight</strong><br/></td>
 <td>xs:integer<br/></td>
-<td>No<br/></td>
-<td><dt><span></span><span></span><strong></strong> (xs: Integer)<br/> </dt> <dd> O padrão é -1. <br/> </dd> </dl></td>
+<td>Não<br/></td>
+<td><dt><span></span><span></span><strong></strong> (xs:integer)<br/> </dt> <dd> O padrão é -1. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
-<td><strong>@ Width</strong><br/></td>
+<td><strong>Itemwidth</strong><br/></td>
 <td>xs:integer<br/></td>
-<td>No<br/></td>
-<td><dt><span></span><span></span><strong></strong> (xs: Integer)<br/> </dt> <dd> O padrão é -1. <br/> </dd> </dl></td>
+<td>Não<br/></td>
+<td><dt><span></span><span></span><strong></strong> (xs:integer)<br/> </dt> <dd> O padrão é -1. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>TextPosition</strong><br/></td>
-<td>Textpositiontype<br/></td>
-<td>No<br/></td>
+<td>TextPositionType<br/></td>
+<td>Não<br/></td>
 <td>Restrito a um dos seguintes valores:<br/> <br/>
-<dt><span></span><span></span><strong></strong> Resultado<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Exibe<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Mantida<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Post<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Adequada<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Melhor<br/> </dt> <dd></dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (Inferior)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Ocultar)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Esquerda)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Sobreposição)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Direita)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Superior)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>Tipo</strong><br/></td>
 <td>xs:string<br/></td>
-<td>No<br/></td>
+<td>Não<br/></td>
 <td>Restrito a um dos seguintes valores:<br/> <br/>
-<dt><span></span><span></span><strong></strong> Los<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Comandos<br/> </dt> <dd></dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (Itens)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Comandos)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -123,7 +123,7 @@ Aplica-se somente a galerias em que o valor do atributo <em>Type</em> é igual a
 | Elemento                                                                                                 | Descrição                                        |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------|
 | [**Botão**](windowsribbon-element-button.md)<br/>                                               | Pode ocorrer uma ou mais vezes<br/> <br/> |
-| [**CheckBox**](windowsribbon-element-checkbox.md)<br/>                                           | Pode ocorrer uma ou mais vezes<br/> <br/> |
+| [**Checkbox**](windowsribbon-element-checkbox.md)<br/>                                           | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**SplitButton**](windowsribbon-element-splitbutton.md)<br/>                                     | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**SplitButtonGallery.MenuGroups**](windowsribbon-element-splitbuttongallery-menugroups.md)<br/> | Deve ocorrer exatamente uma vez<br/> <br/>     |
 | [**SplitButtonGallery.MenuLayout**](windowsribbon-element-splitbuttongallery-menulayout.md)<br/> | Pode ocorrer no máximo uma vez<br/> <br/>      |
@@ -148,7 +148,7 @@ Aplica-se somente a galerias em que o valor do atributo <em>Type</em> é igual a
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="windowsribbon-element-controlgroup.md"><strong>Controlador de controle</strong></a><br/></td>
+<td><a href="windowsribbon-element-controlgroup.md"><strong>ControlGroup</strong></a><br/></td>
 
 </tr>
 <tr class="even">
@@ -156,14 +156,14 @@ Aplica-se somente a galerias em que o valor do atributo <em>Type</em> é igual a
 
 </tr>
 <tr class="odd">
-<td><a href="windowsribbon-element-menugroup.md"><strong>Grupo Backstage</strong></a><br/></td>
-<td>Quando contido em um <a href="windowsribbon-element-applicationmenu.md"><strong>ApplicationMenu</strong></a>. Esse elemento só tem suporte no primeiro nível e não deve ter nenhum elemento filho.<br/> <br/></td>
+<td><a href="windowsribbon-element-menugroup.md"><strong>Menugroup</strong></a><br/></td>
+<td>Quando contido em um <a href="windowsribbon-element-applicationmenu.md"><strong>ApplicationMenu.</strong></a> Esse elemento só tem suporte no primeiro nível e não deve ter elementos filho.<br/> <br/></td>
 </tr>
 <tr class="even">
 <td><a href="windowsribbon-element-quickaccesstoolbar-applicationdefaults.md"><strong>QuickAccessToolbar.ApplicationDefaults</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-Windows 8 e mais recente.
+Windows 8 e mais novos.
 </blockquote>
 <br/> <br/></td>
 </tr>
@@ -180,21 +180,21 @@ Windows 8 e mais recente.
 
 Opcional.
 
-Pode ocorrer uma ou mais vezes para cada elemento [**Control**](windowsribbon-element-controlgroup.md), [**Group**](windowsribbon-element-group.md), [**menu**](windowsribbon-element-menugroup.md)ou [**SplitButton**](windowsribbon-element-splitbutton.md) .
+Pode ocorrer uma ou mais vezes para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup**](windowsribbon-element-menugroup.md)ou [**SplitButton.**](windowsribbon-element-splitbutton.md)
 
-O **SplitButtonGallery** dá suporte a [modos de aplicativo](ribbon-applicationmodes.md).
+**SplitButtonGallery dá** suporte [aos modos de aplicativo](ribbon-applicationmodes.md).
 
-[Interface do usuário \_ PKEY \_ boolianvalue](windowsribbon-reference-properties-uipkey-booleanvalue.md) é usado por um aplicativo para consultar o estado de alternância para o controle de botão de um **SplitButtonGallery**.
+[Interface do usuário \_ PKEY \_ BooleanValue](windowsribbon-reference-properties-uipkey-booleanvalue.md) é usado por um aplicativo para consultar o estado de alternância para o controle de botão de **um SplitButtonGallery**.
 
-A captura de tela a seguir ilustra o controle da [Galeria de botões de divisão](windowsribbon-controls-splitbuttongallery.md) da faixa de opções no Microsoft Paint para Windows 7.
+A captura de tela a seguir ilustra o controle [Galeria](windowsribbon-controls-splitbuttongallery.md) de Botões divididos da Faixa de Opções Microsoft Paint para Windows 7.
 
-![captura de tela de um controle de galeria de botões de divisão no Microsoft Paint para Windows 7.](images/controls/splitbuttongallery.png)
+![captura de tela de um controle de galeria de botões divididos no Microsoft Paint para Windows 7.](images/controls/splitbuttongallery.png)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra a marcação básica para a [Galeria de botões de divisão](windowsribbon-controls-splitbuttongallery.md).
+O exemplo a seguir demonstra a marcação básica para a [Galeria de Botões divididos.](windowsribbon-controls-splitbuttongallery.md)
 
-Esta seção de código mostra as declarações de comando **SplitButtonGallery** , com um [**grupo**](windowsribbon-element-group.md) associado que funciona como o contêiner pai para o elemento **SplitButtonGallery** .
+Esta seção de código mostra as declarações de Comando **SplitButtonGallery,** com um Grupo associado que funciona como o contêiner pai para o elemento **SplitButtonGallery.** [](windowsribbon-element-group.md)
 
 
 ```XML
@@ -211,7 +211,7 @@ Esta seção de código mostra as declarações de comando **SplitButtonGallery*
 
 
 
-Esta seção de código mostra as declarações de controle **SplitButtonGallery** .
+Esta seção de código mostra as declarações **de controle SplitButtonGallery.**
 
 
 ```XML
@@ -241,11 +241,8 @@ Esta seção de código mostra as declarações de controle **SplitButtonGallery
 ## <a name="element-information"></a>Informações do elemento
 
 
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo com suporte<br/> | Windows 7 |
-| Pode estar vazio                        | Não        |
+- **Sistema mínimo com suporte**: Windows 7 
+- **Pode estar vazio**: não
 
 
 

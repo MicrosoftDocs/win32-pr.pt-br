@@ -4,12 +4,12 @@ ms.assetid: ff05276a-1d40-4844-b649-10e32e3f1937
 title: Conjunto de Trabalho
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f54ed26e9809ebffd01edb30f48f36d398689e88
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4985e7eb526d5dda8469ccc2f46bfe6fd050c745
+ms.sourcegitcommit: b01ad017c152c6756f3638623fe335877644d414
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105775713"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "111549888"
 ---
 # <a name="working-set"></a>Conjunto de Trabalho
 
@@ -25,7 +25,7 @@ Uma *falha de página de hardware* deve ser resolvida lendo o conteúdo da pági
 
 As páginas podem ser removidas de um conjunto de trabalho de processo como resultado das seguintes ações:
 
--   O processo reduz ou esvazia o conjunto de trabalho chamando a função [**SetProcessWorkingSetSize**](/windows/win32/api/winbase/nf-winbase-setprocessworkingsetsize), [**SetProcessWorkingSetSizeEx**](/windows/win32/api/memoryapi/nf-memoryapi-setprocessworkingsetsizeex) ou [**EmptyWorkingSet**](/windows/win32/api/psapi/nf-psapi-emptyworkingset) .
+-   O processo reduz ou esvazia o conjunto de trabalho chamando a função [**SetProcessWorkingSetSize**](/windows/win32/api/memoryapi/nf-memoryapi-setprocessworkingsetsize), [**SetProcessWorkingSetSizeEx**](/windows/win32/api/memoryapi/nf-memoryapi-setprocessworkingsetsizeex) ou [**EmptyWorkingSet**](/windows/win32/api/psapi/nf-psapi-emptyworkingset) .
 -   O processo chama a função [**VirtualUnlock**](/windows/win32/api/memoryapi/nf-memoryapi-virtualunlock) em um intervalo de memória que não está bloqueado.
 -   O processo cancela o mapeamento de uma exibição mapeada de um arquivo usando a função [**UnmapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-unmapviewoffile) .
 -   O Gerenciador de memória corta as páginas do conjunto de trabalho para criar mais memória disponível.

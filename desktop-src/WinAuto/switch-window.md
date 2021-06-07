@@ -4,12 +4,12 @@ description: A janela comutador é exibida sempre que um usuário pressiona ALT 
 ms.assetid: 77b32eb1-7722-410b-b141-ac09fc7fdffb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eead618e23f8a56c90b37eae2386f16a90f6dd67
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5aa12b5fa3bfb9e6207ddaff4133b030e6c233c3
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103637111"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443977"
 ---
 # <a name="switch-window-msaa-ui-element-reference"></a>Alternar janela (referência de elemento de interface do usuário do MSAA)
 
@@ -33,7 +33,7 @@ A janela switch dá suporte aos seguintes métodos [**IAccessible**](/windows/de
 
 
 
- 
+ 
 
 ## <a name="iaccessible-properties"></a>Propriedades de IAccessible
 
@@ -41,7 +41,7 @@ A janela switch dá suporte às seguintes propriedades [**IAccessible**](/window
 
 
 
-|                                                                                |                                                                                                                                                                                                                                |
+|      Propriedade                                                                          |      Descrição                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**obter \_ accChildCount**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accchildcount)       | A propriedade **ChildCount** é zero.                                                                                                                                                                                           |
 | [**obter \_ accDefaultAction**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accdefaultaction) | O objeto de janela de opção em si não tem uma propriedade **DefaultAction** . A propriedade **DefaultAction** para cada item na janela switch é "switch".                                                                     |
@@ -52,7 +52,7 @@ A janela switch dá suporte às seguintes propriedades [**IAccessible**](/window
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -61,9 +61,9 @@ A janela switch dá suporte às seguintes propriedades [**IAccessible**](/window
 [Interface IAccessible](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

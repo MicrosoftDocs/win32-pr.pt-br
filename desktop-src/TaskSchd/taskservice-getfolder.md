@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 74504e9cad124f8cbc9ec23e896ba4dec7d7f50c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5e58f2d930a0577b6f1be620891b7ba631f18d77
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105753525"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111387095"
 ---
 # <a name="taskservicegetfolder-method"></a>Método TaskService. GetFolder
 
@@ -45,7 +45,7 @@ TaskService.GetFolder( _
 *caminho* \[ do no\]
 </dt> <dd>
 
-O caminho para a pasta a ser recuperada. Não use uma barra invertida após o nome da última pasta no caminho. A pasta de tarefas raiz é especificada com uma barra invertida ( \) . Um exemplo de um caminho de pasta de tarefas, sob a pasta da tarefa raiz, é \\ MyTaskFolder. O caractere '. ' não pode ser usado para especificar a pasta de tarefas atual e o '.. ' os caracteres não podem ser usados para especificar a pasta pai da tarefa no caminho.
+O caminho para a pasta a ser recuperada. Não use uma barra invertida após o nome da última pasta no caminho. A pasta de tarefas raiz é especificada com uma barra invertida ( \\ ). Um exemplo de um caminho de pasta de tarefas, sob a pasta da tarefa raiz, é \\ MyTaskFolder. O caractere '. ' não pode ser usado para especificar a pasta de tarefas atual e o '.. ' os caracteres não podem ser usados para especificar a pasta pai da tarefa no caminho.
 
 </dd> </dl>
 

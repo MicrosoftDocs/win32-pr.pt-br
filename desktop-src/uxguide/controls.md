@@ -4,12 +4,12 @@ description: Os controles são elementos da interface do usuário com os quais s
 ms.assetid: 5c48728b-6d86-4827-9757-f06c23ca54d8
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 056ad9379ea3ac2a06749ec1ae0227d934abb986
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: c44e7b5f3772984b1dc24b166b9fe8c03a395f8a
+ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104172417"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111524310"
 ---
 # <a name="controls-design-basics"></a>Controles (noções básicas de Design)
 
@@ -20,7 +20,7 @@ Os controles são elementos da interface do usuário com os quais seus usuários
 
 
 
-|                                                                                                                                                                                                                                                                                                                                                                                     |
+|          Exemplos                                                                                                                                                                                                                                                                                                                                                                           |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ![ballon](images/controls-image1.png)<br/> Os [balões](ctrl-balloons.md) informam os usuários de um problema não crítico ou uma condição especial em um controle.<br/>                                                                                                                                                                                                                 |
 | ![verificação](images/controls-image2.png)<br/> As [caixas de seleção](ctrl-check-boxes.md) permitem que os usuários tomem uma decisão entre duas ou mais opções claramente diferentes.<br/>                                                                                                                                                                                                     |

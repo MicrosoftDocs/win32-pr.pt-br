@@ -4,12 +4,12 @@ ms.assetid: b193f6c2-5f26-41f9-acc8-d734c426b069
 title: Elemento TitleArea
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c009d817af9679edda618dd0262c7cbb85a612ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88d563e8d7f6fc0107bc3302d3f8d94d29dfbfb8
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922744"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432188"
 ---
 # <a name="titlearea-element"></a>Elemento TitleArea
 
@@ -35,7 +35,7 @@ Nenhum.
 
 | Atributo  | Type                      | Obrigatório | Descrição                                                                             | Valores possíveis           |
 |------------|---------------------------|----------|-----------------------------------------------------------------------------------------|---------------------------|
-| **Mantida**   | **xs:integer**            | Obrigatório | A distância da origem até o ponto mais à esquerda na caixa delimitadora para o elemento. | Qualquer inteiro.              |
+| **Left**   | **xs:integer**            | Obrigatório | A distância da origem até o ponto mais à esquerda na caixa delimitadora para o elemento. | Qualquer inteiro.              |
 | **Top**    | **xs:integer**            | Obrigatório | A distância da origem até o ponto superior na caixa delimitadora para o elemento.  | Qualquer inteiro.              |
 | **Largura**  | **xs:nonNegativeInteger** | Obrigatório | A largura da caixa delimitadora para o elemento.                                          | Qualquer inteiro não negativo. |
 | **Altura** | **xs:nonNegativeInteger** | Obrigatório | A altura da caixa delimitadora para o elemento.                                         | Qualquer inteiro não negativo. |
@@ -48,7 +48,7 @@ Nenhum.
 
 
 
-|              |                                                                 |
+|   Elemento    | Valor                                                           |
 |--------------|-----------------------------------------------------------------|
 | Tipo de elemento | ComplexType [**TitleAreaType**](titleareatype-complex-type.md) |
 | Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk                      |

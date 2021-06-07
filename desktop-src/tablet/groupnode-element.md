@@ -4,12 +4,12 @@ ms.assetid: 59ee3037-7178-41c8-84d5-d5c68fa2cf9b
 title: Elemento GroupNode
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ee141691ef58d14e6c08a49544e9cf3ecf7540b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cbc4d39a592b5b6328bd31ff37761cfd3f0138c0
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105747473"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432561"
 ---
 # <a name="groupnode-element"></a>Elemento GroupNode
 
@@ -31,13 +31,13 @@ Contém um conjunto de elementos ([**parágrafo**](paragraph-element.md), [**Ink
 
 [**InkWord**](inkword-element.md)
 
-[**Senha**](drawing-element.md)
+[**Desenho**](drawing-element.md)
 
-[**Texto**](text-element.md)
+[**Text**](text-element.md)
 
 [**Imagem**](docimage-element.md)
 
-[**Sinalizador**](flag-element.md)
+[**Identificar**](flag-element.md)
 
 ## <a name="attributes"></a>Atributos
 
@@ -45,7 +45,7 @@ Contém um conjunto de elementos ([**parágrafo**](paragraph-element.md), [**Ink
 
 | Atributo  | Type                      | Obrigatório | Descrição                                                                             | Valores possíveis           |
 |------------|---------------------------|----------|-----------------------------------------------------------------------------------------|---------------------------|
-| **Mantida**   | **xs:integer**            | Obrigatório | A distância da origem até o ponto mais à esquerda na caixa delimitadora para o elemento. | Qualquer inteiro.              |
+| **Left**   | **xs:integer**            | Obrigatório | A distância da origem até o ponto mais à esquerda na caixa delimitadora para o elemento. | Qualquer inteiro.              |
 | **Top**    | **xs:integer**            | Obrigatório | A distância da origem até o ponto superior na caixa delimitadora para o elemento.  | Qualquer inteiro.              |
 | **Largura**  | **xs:nonNegativeInteger** | Obrigatório | A largura da caixa delimitadora para o elemento.                                          | Qualquer inteiro não negativo. |
 | **Altura** | **xs:nonNegativeInteger** | Obrigatório | A altura da caixa delimitadora para o elemento.                                         | Qualquer inteiro não negativo. |
@@ -58,7 +58,7 @@ Contém um conjunto de elementos ([**parágrafo**](paragraph-element.md), [**Ink
 
 
 
-|              |                                                                 |
+|  Elemento     | Valor                                                     |
 |--------------|-----------------------------------------------------------------|
 | Tipo de elemento | ComplexType [**GroupNodeType**](groupnodetype-complex-type.md) |
 | Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk                      |
