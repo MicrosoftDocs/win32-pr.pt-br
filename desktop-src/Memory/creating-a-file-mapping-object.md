@@ -4,12 +4,12 @@ ms.assetid: e00d8742-b717-419c-902c-9a286d75d8aa
 title: Criando um objeto de mapeamento de arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b502c484dd0466b47a87f4db205d1da5499bf5ef
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: c54e32f62be48f2957e2f3d6f12a3da91b49793e
+ms.sourcegitcommit: 5f0167ce703bc477a11c3b58db04df99c8fd5000
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432498"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "111563212"
 ---
 # <a name="creating-a-file-mapping-object"></a>Criando um objeto de mapeamento de arquivo
 
@@ -41,9 +41,11 @@ Você pode exibir uma parte do arquivo que não é iniciada no início do arquiv
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
-[Criando uma exibição de](creating-a-file-view.md)
-</dt> <dt> 
-[arquivo criando uma exibição dentro de um arquivo](creating-a-view-within-a-file.md)
+
+[Criando uma exibição de arquivo](creating-a-file-view.md)
+</dt> <dt>
+
+[Criando uma exibição dentro de um arquivo](creating-a-view-within-a-file.md)
 </dt> </dl>
 
 
