@@ -6,12 +6,12 @@ keywords:
 - referência de linha de comando MIDL, comando Response File
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f624f8bb4fd50fa77df604e5d56f48c9e55c89a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 26cf4d07ce8465239874ff666537646da2c4c564
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916520"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111387662"
 ---
 # <a name="the-response-file-command"></a>O comando arquivo de resposta
 
@@ -36,7 +36,7 @@ Especifica o nome de um arquivo de resposta. O nome do arquivo de resposta deve 
 
 Como uma alternativa para colocar todas as opções associadas a uma opção na linha de comando, o compilador MIDL aceita arquivos de resposta que contêm opções e argumentos. As opções em um arquivo de resposta são interpretadas como se elas estivessem presentes nesse local na linha de comando MIDL.
 
-Cada argumento em um arquivo de resposta deve começar e terminar na mesma linha. O caractere de barra invertida ( \) não pode ser usado para concatenar linhas. Quando ele faz parte de uma cadeia de caracteres entre aspas no arquivo de resposta, o caractere de barra invertida só pode ser usado antes de outra barra invertida ou antes de um caractere de aspas duplas ("). Quando não faz parte de uma cadeia de caracteres entre aspas, o caractere de barra invertida só pode ser usado antes de um caractere de aspas duplas.
+Cada argumento em um arquivo de resposta deve começar e terminar na mesma linha. O caractere de barra invertida ( \\ ) não pode ser usado para concatenar linhas. Quando ele faz parte de uma cadeia de caracteres entre aspas no arquivo de resposta, o caractere de barra invertida só pode ser usado antes de outra barra invertida ou antes de um caractere de aspas duplas ("). Quando não faz parte de uma cadeia de caracteres entre aspas, o caractere de barra invertida só pode ser usado antes de um caractere de aspas duplas.
 
 O MIDL dá suporte a argumentos de linha de comando que incluem um ou mais arquivos de resposta combinados com outras opções de linha de comando.
 
@@ -55,9 +55,9 @@ O compilador MIDL não oferece suporte a arquivos de resposta aninhados.
 [Sintaxe de linha de comando MIDL geral](general-midl-command-line-syntax.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

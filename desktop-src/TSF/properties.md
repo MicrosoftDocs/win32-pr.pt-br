@@ -20,12 +20,12 @@ keywords:
 - armazenamento persistente de propriedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bff852bccfb7d9b6c94e57a2fa0cf8eef6fbdf18
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: f5b94a1f6c504fcd3e6491af9e66b399d59a3eeb
+ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105782921"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111524210"
 ---
 # <a name="properties-common-elements"></a>Propriedades (elementos comuns)
 
@@ -71,7 +71,7 @@ O TSF define três tipos diferentes de propriedades.
 
 
 
-|                |                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|   Tipo de propriedade             |   Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Estático         | Um objeto de propriedade estática armazena os dados de propriedade com texto. Ele também armazena o intervalo de informações de texto para cada intervalo ao qual a propriedade se aplica. ITfReadOnlyProperty:: GetType retorna a \_ \_ categoria estática TFCAT propstyle do GUID \_ .                                                                                                                                                                                                                      |
 | Static-Compact | Um objeto de propriedade estática-Compact é idêntico a um objeto de propriedade estática, exceto que uma propriedade estática-Compact não armazena dados de intervalo. Quando o intervalo coberto por uma propriedade estática-Compact é solicitado, um intervalo é criado para cada grupo de propriedades adjacentes. As propriedades de compactação estática são a maneira mais eficiente de armazenar propriedades por caractere. ITfReadOnlyProperty:: GetType retorna a \_ categoria STATICCOMPACT do GUID TFCAT \_ propstyle \_ . |

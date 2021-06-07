@@ -3,7 +3,7 @@ title: Elemento FlowMenuLayout
 description: Representa um layout horizontal com quebras de linha para itens em uma galeria.
 ms.assetid: 40c3a2e1-e58a-4d34-a237-b1bea116c82e
 keywords:
-- Faixa de FlowMenuLayout do elemento do Windows
+- Faixa de Opções do Windows do elemento FlowMenuLayout
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8ec9690dd9839755a90abee4c8649c32eae4db6b
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 31a040fb51ad46feb30147fea97c19210cc16094
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105793205"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111442877"
 ---
 # <a name="flowmenulayout-element"></a>Elemento FlowMenuLayout
 
@@ -57,22 +57,22 @@ Representa um layout horizontal com quebras de linha para itens em uma galeria.
 <td><strong>Colunas</strong><br/></td>
 <td>xs:integer<br/></td>
 <td>Não<br/></td>
-<td>Especifica o número de itens a serem exibidos em uma única linha.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs: Integer)<br/> </dt> <dd> Qualquer inteiro positivo ou negativo. <br/> O padrão é <strong>2</strong>. <br/> </dd> </dl></td>
+<td>Especifica o número de itens a exibir em uma única linha.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:integer)<br/> </dt> <dd> Qualquer inteiro positivo ou negativo. <br/> O padrão é <strong>2</strong>. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
-<td><strong>Garra</strong><br/></td>
+<td><strong>Gripper</strong><br/></td>
 <td>xs:string<br/></td>
 <td>Não<br/></td>
-<td>Um identificador de redimensionamento anexado ao menu suspenso da galeria. <br/> <img src="images/controls/gripper.png" alt="Screen shot of a vertical gripper." /><br/> Restrito a um dos seguintes valores:<br/> <br/>
-<dt><span></span><span></span><strong></strong> None<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Vertical<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> Canto<br/> </dt> <dd> Padrão. <br/> </dd> </dl></td>
+<td>Um alça de reizing anexado à lista de lista listada da galeria. <br/> <img src="images/controls/gripper.png" alt="Screen shot of a vertical gripper." /><br/> Restrito a um dos seguintes valores:<br/> <br/>
+<dt><span></span><span></span><strong></strong> (Nenhum)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Vertical)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Canto)<br/> </dt> <dd> Padrão. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>Linhas</strong><br/></td>
 <td>xs:integer<br/></td>
 <td>Não<br/></td>
 <td>Especifica o número de linhas de item a serem visíveis sem rolagem. <br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs: Integer)<br/> </dt> <dd> Qualquer inteiro positivo ou negativo. <br/> O padrão é <strong>-1</strong> , que especifica a exibição de quantas linhas de item possível.<br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:integer)<br/> </dt> <dd> Qualquer inteiro positivo ou negativo. <br/> O padrão é <strong>-1,</strong> que especifica para exibir o máximo de linhas de item possível.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -99,15 +99,15 @@ Não há elementos filho.
 
 Obrigatórios.
 
-O elemento [**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md) ou **FlowMenuLayout** deve ocorrer uma vez para cada elemento [**DropDownGallery. MenuLayout**](windowsribbon-element-dropdowngallery-menulayout.md), [**InRibbonGallery. MenuLayout**](windowsribbon-element-inribbongallery-menulayout.md)ou [**SplitButtonGallery. MenuLayout**](windowsribbon-element-splitbuttongallery-menulayout.md) .
+O [**elemento VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md) ou **FlowMenuLayout** deve ocorrer uma vez para cada [**elemento DropDownGallery.MenuLayout**](windowsribbon-element-dropdowngallery-menulayout.md), [**InRibbonGallery.MenuLayout**](windowsribbon-element-inribbongallery-menulayout.md)ou [**SplitButtonGallery.MenuLayout.**](windowsribbon-element-splitbuttongallery-menulayout.md)
 
-Os elementos são organizados de acordo com as propriedades de quebra de linha inerentes aos atributos de *linha* e *coluna* . Quando o conteúdo excede o comprimento de uma única linha, o menu quebra linhas, delimita linhas e alinha o conteúdo adequadamente.
+Os elementos são organizados de acordo com as propriedades de quebra de linha inerentes aos atributos *de linha* *e* coluna. Quando o conteúdo excede o comprimento de uma única linha, o menu quebra linhas, quebra linhas e alinha o conteúdo adequadamente.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra a marcação básica para o [**DropDownGallery**](windowsribbon-element-dropdowngallery.md).
+O exemplo a seguir demonstra a marcação básica para [**o DropDownGallery**](windowsribbon-element-dropdowngallery.md).
 
-Esta seção de código mostra a declaração de controle [**DropDownGallery. MenuLayout**](windowsribbon-element-dropdowngallery-menulayout.md) com uma especificação **FlowMenuLayout** .
+Esta seção de código mostra a declaração de controle [**DropDownGallery.MenuLayout**](windowsribbon-element-dropdowngallery-menulayout.md) com uma **especificação FlowMenuLayout.**
 
 
 ```XML
@@ -140,13 +140,8 @@ Esta seção de código mostra a declaração de controle [**DropDownGallery. Me
 
 ## <a name="element-information"></a>Informações do elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo com suporte<br/> | Windows 7 |
-| Pode estar vazio                        | Sim       |
-
+* **Sistema mínimo com suporte:** Windows 7
+* **Pode estar vazio:** Sim
 
 
  

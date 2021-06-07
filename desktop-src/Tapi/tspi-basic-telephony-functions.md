@@ -4,12 +4,12 @@ ms.assetid: 4250f3a0-a66a-4a6e-8566-d71be7463179
 title: Funções de telefonia básicas do TSPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6276be51482620af32650ad1625eea97bddb8e5c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5308def0c94df9fa59f2022bf25c4dbb1843e2f8
+ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837179"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111524150"
 ---
 # <a name="tspi-basic-telephony-functions"></a>Funções de telefonia básicas do TSPI
 
@@ -30,7 +30,7 @@ Todos os provedores de serviço devem implementar funções de telefonia básica
 
 
 
-|                                                           |                                                           |
+|  Função                                                         |   Descrição                                                        |
 |-----------------------------------------------------------|-----------------------------------------------------------|
 | [**TUISPI \_ providerInstall**](/windows/win32/api/tspi/nf-tspi-tuispi_providerinstall) | Instala um TSP. Synchronous.                              |
 | [**TSPI \_ providerInstall**](/windows/win32/api/tspi/nf-tspi-tspi_providerinstall)     | Instala o TSP. Obsoleto com a versão 2,0. Synchronous. |
@@ -47,7 +47,7 @@ Todos os provedores de serviço devem implementar funções de telefonia básica
 
 
 
-|                                                                           |                                                                                         |
+|  Função                                                         |   Descrição                                                        |
 |---------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | [**TSPI \_ phoneNegotiateTSPIVersion**](/windows/win32/api/tspi/nf-tspi-tspi_phonenegotiatetspiversion) | Retorna a versão SPI mais alta com a qual o provedor de serviços pode operar para este dispositivo. |
 
@@ -59,7 +59,7 @@ Todos os provedores de serviço devem implementar funções de telefonia básica
 
 
 
-|                                                                         |                                                                                                 |
+|  Função                                                         |   Descrição                                                        |
 |-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | [**TSPI \_ lineNegotiateTSPIVersion**](/windows/win32/api/tspi/nf-tspi-tspi_linenegotiatetspiversion) | Permite que um aplicativo negocie uma versão do TSPI para usar com um determinado dispositivo de linha. Synchronous. |
 
@@ -71,7 +71,7 @@ Todos os provedores de serviço devem implementar funções de telefonia básica
 
 
 
-|                                                                     |                                                                                                                                                                |
+|  Função                                                         |   Descrição                                                        |
 |---------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**TSPI \_ lineGetDevCaps**](/windows/win32/api/tspi/nf-tspi-tspi_linegetdevcaps)                 | Retorna os recursos de um determinado dispositivo de linha. Synchronous.                                                                                                  |
 | [**TSPI \_ lineGetDevConfig**](/windows/win32/api/tspi/nf-tspi-tspi_linegetdevconfig)             | Retorna a configuração de um dispositivo de fluxo de mídia. Synchronous.                                                                                                   |
@@ -91,7 +91,7 @@ Todos os provedores de serviço devem implementar funções de telefonia básica
 
 
 
-|                                                                 |                                                                                          |
+|  Função                                                         |   Descrição                                                        |
 |-----------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | [**TSPI \_ lineGetAddressCaps**](/windows/win32/api/tspi/nf-tspi-tspi_linegetaddresscaps)     | Retorna os recursos de telefonia de um endereço. Synchronous.                           |
 | [**TSPI \_ lineGetAddressStatus**](/windows/win32/api/tspi/nf-tspi-tspi_linegetaddressstatus) | Retorna o status atual de um endereço especificado. Synchronous.                              |
@@ -106,23 +106,23 @@ Todos os provedores de serviço devem implementar funções de telefonia básica
 
 
 
-|                                           |                                                                                                            |
+|  Função                                                         |   Descrição                                                        |
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------|
 | [**TSPI \_ lineOpen**](/windows/win32/api/tspi/nf-tspi-tspi_lineopen)   | Abre um dispositivo de linha especificado para fornecer monitoramento e/ou controle subsequente da linha. Synchronous. |
-| [**TSPI \_ lineClose**](/windows/win32/api/tspi/nf-tspi-tspi_lineclose) | Fecha um dispositivo de linha aberto especificado. Synchronous.                                                        |
+| [**TSPI \_ lineClose**](/windows/win32/api/tspi/nf-tspi-tspi_lineclose) | Fecha um dispositivo de linha aberta especificado. Synchronous.                                                        |
 
 
 
  
 
-## <a name="call-states-and-events"></a>Estados de chamada e eventos
+## <a name="call-states-and-events"></a>Chamar estados e eventos
 
 
 
-|                                                             |                                                                                     |
+|  Função                                                         |   Descrição                                                        |
 |-------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| [**TSPI \_ lineGetCallInfo**](/windows/win32/api/tspi/nf-tspi-tspi_linegetcallinfo)       | Retorna informações fixas sobre uma chamada. Synchronous.                                |
-| [**TSPI \_ lineGetCallStatus**](/windows/win32/api/tspi/nf-tspi-tspi_linegetcallstatus)   | Retorna informações de status de chamada completas para a chamada especificada. Synchronous.       |
+| [**Linha \_ TSPIGetCallInfo**](/windows/win32/api/tspi/nf-tspi-tspi_linegetcallinfo)       | Retorna informações fixas sobre uma chamada. Synchronous.                                |
+| [**Linha \_ TSPIGetCallStatus**](/windows/win32/api/tspi/nf-tspi-tspi_linegetcallstatus)   | Retorna informações completas de status de chamada para a chamada especificada. Synchronous.       |
 | [**TSPI \_ lineSetAppSpecific**](/windows/win32/api/tspi/nf-tspi-tspi_linesetappspecific) | Define o campo específico do aplicativo da estrutura de informações de uma chamada. Synchronous. |
 
 
@@ -133,10 +133,10 @@ Todos os provedores de serviço devem implementar funções de telefonia básica
 
 
 
-|                                                 |                                                                        |
+|  Função                                                         |   Descrição                                                        |
 |-------------------------------------------------|------------------------------------------------------------------------|
-| [**TSPI \_ lineMakeCall**](/windows/win32/api/tspi/nf-tspi-tspi_linemakecall) | Faz uma chamada de saída e retorna um identificador de chamada para ela. Assíncrono. |
-| [**TSPI \_ lineDial**](/windows/win32/api/tspi/nf-tspi-tspi_linedial)         | Disca (partes de um ou mais) endereços de discagem. Assíncrono.         |
+| [**Linha \_ TSPIMakeCall**](/windows/win32/api/tspi/nf-tspi-tspi_linemakecall) | Faz uma chamada de saída e retorna um alça de chamada para ela. Assíncrono. |
+| [**TSPI \_ lineDial**](/windows/win32/api/tspi/nf-tspi-tspi_linedial)         | Disca (partes de um ou mais) endereços discáveis. Assíncrono.         |
 
 
 
@@ -146,7 +146,7 @@ Todos os provedores de serviço devem implementar funções de telefonia básica
 
 
 
-|                                             |                                         |
+|  Função                                                         |   Descrição                                                        |
 |---------------------------------------------|-----------------------------------------|
 | [**TSPI \_ lineAnswer**](/windows/win32/api/tspi/nf-tspi-tspi_lineanswer) | Responde a uma chamada de entrada. Assíncrono. |
 
@@ -154,13 +154,13 @@ Todos os provedores de serviço devem implementar funções de telefonia básica
 
  
 
-## <a name="call-drop-functions"></a>Chamar drop Functions
+## <a name="call-drop-functions"></a>Funções de soltar chamada
 
 
 
-|                                         |                                                                           |
+|  Função                                                         |   Descrição                                                        |
 |-----------------------------------------|---------------------------------------------------------------------------|
-| [**TSPI \_ lineDrop**](/windows/win32/api/tspi/nf-tspi-tspi_linedrop) | Desconecta uma chamada ou abandona uma tentativa de chamada em andamento. Assíncrono. |
+| [**TSPI \_ lineDrop**](/windows/win32/api/tspi/nf-tspi-tspi_linedrop) | Desconecta uma chamada ou abandonará uma tentativa de chamada em andamento. Assíncrono. |
 
 
 

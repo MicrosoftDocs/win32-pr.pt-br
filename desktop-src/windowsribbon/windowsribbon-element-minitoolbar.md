@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cb5e4a27d10fe5233f8e7059bc9da8ecfd2fa383
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: ceea8ba1a220674f177e740411bf98a13d7bfc2e
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104084143"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443257"
 ---
 # <a name="minitoolbar-element"></a>Elemento Minibarra
 
@@ -39,7 +39,7 @@ Representa uma barra de ferramentas contextual.
 
 | Atributo           | Type                 | Obrigatório       | Descrição                                                                                                                                                                                                                |
 |---------------------|----------------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Nome**<br/> | xs:string<br/> | Yes<br/> | <dt> (xs: String)<br/> </dt> <dd> Uma cadeia de caracteres composta de qualquer sequência de caracteres, incluindo espaços em branco e caracteres de quebra de linha.<br/> </dd> </dl> |
+| **Nome**<br/> | xs:string<br/> | Sim<br/> | <dt> (xs: String)<br/> </dt> <dd> Uma cadeia de caracteres composta de qualquer sequência de caracteres, incluindo espaços em branco e caracteres de quebra de linha.<br/> </dd> </dl> |
 
 
 
@@ -173,12 +173,8 @@ Esta seção de código mostra um conjunto de declarações de controle **Miniba
 
 ## <a name="element-information"></a>Informações do elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo com suporte<br/> | Windows 7 |
-| Pode estar vazio                        | Não        |
+* **Sistema mínimo com suporte**: Windows 7
+* **Pode estar vazio**: não
 
 
 

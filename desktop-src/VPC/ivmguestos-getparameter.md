@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0acbdd5a1d633a8c032651d2df16f4d0e26dec70
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d12bddec3fac5dc918f06d926fe5e5656b70d84d
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499714"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111387642"
 ---
 # <a name="ivmguestosgetparameter-method"></a>Método IVMGuestOS:: getParameter
 
@@ -48,7 +48,7 @@ HRESULT GetParameter(
 *Inparametrizaname* \[ no\]
 </dt> <dd>
 
-O nome do parâmetro. Ele deve ter entre 1 e 255 caracteres de comprimento e não pode conter uma barra invertida ( \) caractere.
+O nome do parâmetro. Ele deve ter entre 1 e 255 caracteres de comprimento e não pode conter um caractere de barra invertida ( \\ ).
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Quando o sistema operacional convidado é iniciado, os seguintes valores de cade
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
 | Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
 | IID<br/>                      | IID \_ IVMGuestOS é definido como 99fea0db-4880-499a-B6D8-73dff9bc91be<br/>                 |
 
 

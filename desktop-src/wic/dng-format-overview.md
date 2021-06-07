@@ -1,37 +1,37 @@
 ---
-description: Este tópico fornece informações sobre o codec DNG nativo disponível por meio do Windows Imaging Component (WIC).
+description: Este tópico fornece informações sobre o codec DNG nativo disponível por meio Windows Imaging Component (WIC).
 ms.assetid: 6F87A47D-E54A-42D9-92DC-2411803278AA
 title: Visão geral do formato DNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63f766356f7c13d7b2bb25adab5411ae55c2735f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0815d6a24bb8e57e6c64b90f9e9068765838e148
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104296812"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444927"
 ---
 # <a name="dng-format-overview"></a>Visão geral do formato DNG
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-Este tópico fornece informações sobre o codec DNG nativo disponível por meio do Windows Imaging Component (WIC).
+Este tópico fornece informações sobre o codec DNG nativo disponível por meio Windows Imaging Component (WIC).
 
--   [Identidade do codec](#codec-identity)
+-   [Identidade do Codec](#codec-identity)
 -   [Decodificação](#decoding)
 
-## <a name="codec-identity"></a>Identidade do codec
+## <a name="codec-identity"></a>Identidade do Codec
 
-A tabela a seguir fornece informações de identificação do codec.
+A tabela a seguir fornece informações de identificação de codec.
 
 
 
-|                        |                                                      |
+|     Componente          |  Descrição                                         |
 |------------------------|------------------------------------------------------|
-| Nome (s) formal (es)         | Negativo digital (DNG)                               |
-| Extensão (s) de nome de arquivo | .dng                                                 |
-| Tipo (s) MIME           | imagem/DNG                                            |
-| Suporte à especificação  | Especificação de DNG (digital negativo) versão 1.4.0.0 |
+| Nomes formais         | DNG (Digital Negative)                               |
+| Extensões de nome de arquivo | .dng                                                 |
+| Tipos MIME           | image/DNG                                            |
+| Suporte à especificação  | Especificação DNG (Digital Negative) Versão 1.4.0.0 |
 
 
 
@@ -43,8 +43,8 @@ A tabela a seguir lista os GUIDs usados para identificar os componentes nativos 
 
 | Componente        | Nome amigável             | GUID                                |
 |------------------|---------------------------|-------------------------------------|
-| Formato do contêiner | \_CONTAINERFORMATADNG GUID | f3ff6d0d-38c0-41c4-b1fe1f3824f17b84 |
-| Decodificador          | \_WICADNGDECODER CLSID     | 981d9411-909e-42a7-8f5da747ff052edb |
+| Formato do contêiner | GUID \_ ContainerFormatAdng | f3ff6d0d-38c0-41c4-b1fe1f3824f17b84 |
+| Decodificador          | CLSID \_ WICAdngDecoder     | 981d9411-909e-42a7-8f5da747ff052edb |
 
 
 
@@ -52,9 +52,9 @@ A tabela a seguir lista os GUIDs usados para identificar os componentes nativos 
 
 ## <a name="decoding"></a>Decodificação
 
-A API de decodificação de WIC é projetada para ser independente de codec e a decodificação de imagem para codecs habilitados para WIC é essencialmente a mesma. Para obter mais informações sobre a decodificação de imagem, consulte a [visão geral da decodificação](-wic-creating-decoder.md). Para obter mais informações sobre como usar dados de imagem decodificados, consulte a [visão geral de fontes de bitmap](-wic-bitmapsources.md).
+A API de decodificação do WIC foi projetada para ser independente de codec e a decodificação de imagem para codecs habilitados para WIC é essencialmente a mesma. Para obter mais informações sobre decodificação de imagem, consulte Visão [geral de decodificação.](-wic-creating-decoder.md) Para obter mais informações sobre como usar dados de imagem decodificados, consulte Visão geral das [fontes de bitmap](-wic-bitmapsources.md).
 
-O decodificador não dá suporte à decodificação de dados de sensor bruto e só dá suporte a arquivos com uma representação de imagem não bruta inserida em uma IFD com NewSubFileType igual a 1.
+O decodificador não dá suporte à decodificação de dados brutos do sensor e só dá suporte a arquivos com uma representação de imagem não bruta inserida em um IFD com NewSubFileType igual a 1.
 
  
 

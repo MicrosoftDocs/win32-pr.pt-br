@@ -17,12 +17,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 71dc92264dbd1bd2f5a4b1136d9a6138e1fcffa3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 966d259cf427bcc83e9a8b2fb65670a2a05b9458
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750552"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111387652"
 ---
 # <a name="comboboxex-control-extended-styles"></a>Estilos estendidos do controle ComboBoxEx
 
@@ -36,7 +36,7 @@ Dê suporte aos estilos estendidos listados nesta seção, bem como a maioria do
 | <span id="CBES_EX_NOEDITIMAGE"></span><span id="cbes_ex_noeditimage"></span><dl> <dt>**CBES \_ ex \_ NOEDITIMAGE**</dt> </dl>                   | A caixa de edição e a lista suspensa não exibirão imagens de item. <br/>                                                                                                                                                                                                                                                          |
 | <span id="CBES_EX_NOEDITIMAGEINDENT"></span><span id="cbes_ex_noeditimageindent"></span><dl> <dt>**CBES \_ ex \_ NOEDITIMAGEINDENT**</dt> </dl> | A caixa de edição e a lista suspensa não exibirão imagens de item. <br/>                                                                                                                                                                                                                                                          |
 | <span id="CBES_EX_NOSIZELIMIT"></span><span id="cbes_ex_nosizelimit"></span><dl> <dt>**CBES \_ ex \_ NOSIZELIMIT**</dt> </dl>                   | Permite que o controle ComboBoxEx seja verticalmente dimensionado menor do que seu controle de caixa de combinação contido. Se o ComboBoxEx for menor que a caixa de combinação, a caixa de combinação será recortada. <br/>                                                                                                                                  |
-| <span id="CBES_EX_PATHWORDBREAKPROC"></span><span id="cbes_ex_pathwordbreakproc"></span><dl> <dt>**CBES \_ ex \_ PATHWORDBREAKPROC**</dt> </dl> | Somente Windows NT. A caixa de edição usará a barra (/), as barras invertidas ( \) e os caracteres de ponto (.) como delimitadores de palavras. Isso torna os atalhos de teclado para o movimento de cursor de palavra por palavra efetivo em nomes de caminho e URLs.<br/>                                                                                                       |
+| <span id="CBES_EX_PATHWORDBREAKPROC"></span><span id="cbes_ex_pathwordbreakproc"></span><dl> <dt>**CBES \_ ex \_ PATHWORDBREAKPROC**</dt> </dl> | Somente Windows NT. A caixa de edição usará os caracteres de barra (/), barra invertida ( \\ ) e ponto (.) como delimitadores de palavras. Isso torna os atalhos de teclado para o movimento de cursor de palavra por palavra efetivo em nomes de caminho e URLs.<br/>                                                                                                       |
 | <span id="CBES_EX_TEXTENDELLIPSIS"></span><span id="cbes_ex_textendellipsis"></span><dl> <dt>**CBES \_ ex \_ TEXTENDELLIPSIS**</dt> </dl>       | **Windows Vista e posterior.** Faz com que os itens na lista suspensa e na caixa de edição (quando a caixa de edição é somente leitura) sejam truncados com reticências ("...") em vez de apenas recortados pela borda do controle. Isso é útil quando o controle precisa ser definido com uma largura fixa, mas as entradas na lista podem ser longas.<br/> |
 
 

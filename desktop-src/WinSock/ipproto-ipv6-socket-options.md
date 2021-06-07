@@ -4,12 +4,12 @@ ms.assetid: 65f8f7a4-757b-43a3-9d47-b115754c89d6
 title: Opções de soquete IPPROTO_IPV6
 ms.topic: article
 ms.date: 10/07/2019
-ms.openlocfilehash: 1ceaf08c2a59a24b9ff694ac9ff42b28fbf18480
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 86f8156f91e5f7e185319224e06d7bf54e87c6da
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105793696"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444247"
 ---
 # <a name="ipproto_ipv6-socket-options"></a>Opções de soquete do IPPROTO \_ IPv6
 
@@ -53,25 +53,25 @@ Algumas opções de soquete exigem mais explicações do que essas tabelas podem
 | Opção | Windows 8 | Windows Server 2012 | Windows 7 | Windows Server 2008 | Windows Vista |
 |-|-|-|-|-|-|
 | chegada de IP \_ original \_ \_ se | x | x | x | | |
-| IPV6_ADD_IFLIST | A partir do Windows 10, versão 1803 | | | | | |
-| \_Adicionar \_ Associação de IPv6 | x | x | x | x | x |
-| IPV6_DEL_IFLIST | A partir do Windows 10, versão 1803 | | | | | |
-| \_Associação de remoção de IPv6 \_ | x | x | x | x | x |
-| IPV6_GET_IFLIST | A partir do Windows 10, versão 1803 | | | | | |
-| \_HDRINCL IPv6 | x | x | x | x | x |
-| \_HOPLIMIT IPv6 | x | x | x | x | x |
-| IPV6_IFLIST | A partir do Windows 10, versão 1803 | | | | | |
-| \_Grupo de junção IPv6 \_ | x | x | x | x | x |
-| \_Grupo de saída IPv6 \_ | x | x | x | x | x |
-| \_Saltos de multicast IPv6 \_ | x | x | x | x | x |
-| \_Multicast IPv6 \_ se | x | x | x | x | x |
-| \_Loop de multicast IPv6 \_ | x | x | x | x | x |
-| \_PKTINFO IPv6 | x | x | x | x | x |
-| [\_Nível de proteção IPv6 \_](ipv6-protection-level.md) | x | x | x | x | x |
-| \_RECVIF IPv6 | x | x | x | x | x |
-| \_Saltos de unicast IPv6 \_ | x | x | x | x | x |
-| Unicast IPV6 \_ \_ se | x | x | x | x | x |
-| \_V6ONLY IPv6 | x | x | x | x | x |
+| IPV6_ADD_IFLIST | Começando com Windows 10, versão 1803 | | | | |
+| IPV6 \_ ADD \_ MEMBERSHIP | x | x | x | x | x |
+| IPV6_DEL_IFLIST | Começando com Windows 10, versão 1803 | | | | |
+| IPV6 \_ DROP \_ MEMBERSHIP | x | x | x | x | x |
+| IPV6_GET_IFLIST | Começando com Windows 10, versão 1803 | | | | |
+| IPV6 \_ HDRINCL | x | x | x | x | x |
+| IPV6 \_ HOPLIMIT | x | x | x | x | x |
+| IPV6_IFLIST | Começando com Windows 10, versão 1803 | | | | |
+| GRUPO DE JUNÇÃO IPV6 \_ \_ | x | x | x | x | x |
+| IPV6 \_ LEAVE \_ GROUP | x | x | x | x | x |
+| SALTOS MULTICAST IPV6 \_ \_ | x | x | x | x | x |
+| IPV6 \_ MULTICAST \_ IF | x | x | x | x | x |
+| IPV6 \_ MULTICAST \_ LOOP | x | x | x | x | x |
+| IPV6 \_ PKTINFO | x | x | x | x | x |
+| [NÍVEL DE PROTEÇÃO \_ IPV6 \_](ipv6-protection-level.md) | x | x | x | x | x |
+| IPV6 \_ RECVIF | x | x | x | x | x |
+| SALTOS UNICAST IPV6 \_ \_ | x | x | x | x | x |
+| IPV6 \_ UNICAST \_ IF | x | x | x | x | x |
+| IPV6 \_ V6ONLY | x | x | x | x | x |
 
 <br/>
 

@@ -4,12 +4,12 @@ description: Uma notificação informa os usuários de eventos que não estão r
 ms.assetid: dcac2fb7-e503-4ea3-a2c5-e3cb660c040a
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 5de312b33a970245d2f6f410e55a891c286d9aa7
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: be783ac6aac25e818d4ddf3612c726e55efa5fa5
+ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104562784"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111524510"
 ---
 # <a name="notifications-design-basics"></a>Notificações (noções básicas de Design)
 
@@ -117,17 +117,17 @@ Nestes exemplos, o gerenciamento de energia do Windows usa o ícone da área de 
 
 Neste exemplo, o gerenciamento de energia do Windows usa uma notificação para informar aos usuários que a energia da bateria está fraca.
 
-Essa notificação é exibida enquanto os usuários ainda têm várias opções. Os usuários podem conectar-se, alterar suas opções de energia, concluir o trabalho e desligar o computador, ou ignorar a notificação e continuar trabalhando. À medida que a bateria continua a drenar, o texto e o ícone da notificação refletem a urgência adicional. No entanto, quando a energia da bateria fica tão baixa que os usuários devem agir imediatamente, o gerenciamento de energia do Windows notifica os usuários usando uma caixa de mensagem [modal](glossary.md) .
+Essa notificação é exibida enquanto os usuários ainda têm várias opções. Os usuários podem conectar, alterar suas opções de energia, encerrar seu trabalho e desligar o computador ou ignorar a notificação e continuar funcionando. À medida que a energia da bateria continua a ser descarregada, o texto e o ícone da notificação refletem a urgência adicional. No entanto, depois que a energia da bateria ficar tão baixa que os usuários devem agir imediatamente, o gerenciamento de energia do Windows notifica os usuários usando uma [caixa de mensagem](glossary.md) modal.
 
-![captura de tela de aviso de energia de bateria seriamente baixa](images/mess-notif-image9.png)
+![captura de tela de aviso de bateria muito baixa](images/mess-notif-image9.png)
 
-Neste exemplo, o gerenciamento de energia do Windows usa uma caixa de mensagem modal para notificar os usuários sobre a energia de bateria criticamente baixa.
+Neste exemplo, o gerenciamento de energia do Windows usa uma caixa de mensagem modal para notificar os usuários de falta de energia crítica da bateria.
 
 **Se você fizer apenas três coisas...**
 
-1.  Use notificações somente se realmente precisar. Quando você exibe uma notificação, você está potencialmente interrompendo os usuários ou até mesmo irritantes. Certifique-se de que a interrupção seja justificada.
-2.  Use notificações para eventos não críticos ou situações que não exigem ação imediata do usuário. Para eventos críticos ou situações que exigem ação imediata do usuário, use uma interface de usuário alternativa (como uma caixa de diálogo modal).
-3.  Se você usar notificações, torne-a uma boa experiência do usuário. Não tente forçar os usuários a ver suas notificações. Se os usuários estiverem tão imersoss em seu trabalho de que não veem suas notificações, seu design será bom.
+1.  Use notificações somente se você realmente precisar. Ao exibir uma notificação, você pode interromper os usuários ou até mesmo desative-los. Certifique-se de que a interrupção seja justificada.
+2.  Use notificações para eventos não críticos ou situações que não exigem ação imediata do usuário. Para eventos críticos ou situações que exigem ação imediata do usuário, use uma interface do usuário alternativa (como uma caixa de diálogo modal).
+3.  Se você usar notificações, faça dela uma boa experiência do usuário. Não tente forçar os usuários a ver suas notificações. Se os usuários estão tão envolvidos em seu trabalho que não veem suas notificações, seu design é bom.
 
 ## <a name="usage-patterns"></a>Padrões de uso
 
@@ -142,31 +142,31 @@ As notificações têm vários padrões de uso:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><strong>Êxito na ação</strong><br/> Notifica os usuários quando uma ação assíncrona, iniciada pelo usuário, é concluída com êxito. <br/></td>
-<td><strong>Correto:</strong><br/> <img src="images/mess-notif-image10.png" alt="Screen shot of balloon showing successful updates " /><br/> Neste exemplo, Windows Update notifica os usuários quando seu computador foi atualizado com êxito.<br/> <strong>Incorreto:</strong><br/> <img src="images/mess-notif-image11.png" alt="Screen shot of balloon showing file check complete " /><br/> Neste exemplo, o Microsoft Outlook notifica os usuários quando uma verificação de arquivo de dados é concluída. O que os usuários devem fazer agora? E por que avisar os usuários sobre a conclusão bem-sucedida?<br/> <strong>Mostrar quando:</strong> Após a conclusão de uma tarefa assíncrona. Notifique os usuários sobre ações bem-sucedidas somente se eles provavelmente estiverem aguardando a conclusão ou após falhas recentes.<br/> <strong>Mostrar como:</strong> Use a opção em tempo real para que essas notificações não sejam enfileiradas quando os usuários estiverem executando um aplicativo de tela inteira ou não estiverem usando o computador ativamente.<br/> <strong>Mostre com que frequência:</strong> Mesmo.<br/> <strong>Fator de incômodo:</strong> Baixo se o sucesso não for esperado devido a falhas recentes, o sucesso é após uma falha crítica ou altamente incomum, portanto, o usuário precisa de comentários adicionais ou o usuário está aguardando a conclusão; alto se não.<br/> <strong>Alternativas:</strong> Faça comentários &quot; sob demanda &quot; exibindo um ícone (ou alterando um ícone existente) na área de notificação enquanto a operação está sendo executada; remova o ícone (ou restaure o ícone anterior) quando a operação for concluída. <br/></td>
+<td><strong>Sucesso da ação</strong><br/> Notifica os usuários quando uma ação assíncrona iniciada pelo usuário é concluída com êxito. <br/></td>
+<td><strong>Correto:</strong><br/> <img src="images/mess-notif-image10.png" alt="Screen shot of balloon showing successful updates " /><br/> Neste exemplo, o Windows Update notifica os usuários quando o computador foi atualizado com êxito.<br/> <strong>Incorreto:</strong><br/> <img src="images/mess-notif-image11.png" alt="Screen shot of balloon showing file check complete " /><br/> Neste exemplo, o Microsoft Outlook notifica os usuários quando uma verificação de arquivo de dados é concluída. O que os usuários devem fazer agora? E por que avisar os usuários sobre a conclusão bem-sucedida?<br/> <strong>Mostrar quando:</strong> Após a conclusão de uma tarefa assíncrona. Notifique os usuários sobre ações bem-sucedidas somente se eles provavelmente aguardarem a conclusão ou após falhas recentes.<br/> <strong>Mostrar como:</strong> Use a opção em tempo real para que essas notificações não sejam en fila quando os usuários estão executando um aplicativo de tela inteira ou não estão usando ativamente seu computador.<br/> <strong>Mostrar com que frequência:</strong> Quando.<br/> <strong>Fator de ressarcimento:</strong> Baixo se o sucesso não for esperado devido a falhas recentes, o sucesso ocorrerá após uma falha crítica ou altamente incomum, portanto, o usuário precisa de comentários adicionais ou o usuário está aguardando a conclusão; alta se não.<br/> <strong>Alternativas:</strong> Dê comentários sob demanda exibindo um ícone (ou alterando um ícone existente) na área de notificação enquanto a operação está sendo executada; remova o ícone (ou restaure o ícone anterior) quando a operação &quot; &quot; for concluída. <br/></td>
 </tr>
 <tr class="even">
-<td><strong>Falha na ação</strong><br/> Notifica os usuários quando uma ação assíncrona, iniciada pelo usuário, falha. <br/></td>
-<td><strong>Correto:</strong><br/> <img src="images/mess-notif-image12.png" alt="Screen shot of notification of failure to install " /><br/> Neste exemplo, a ativação do Windows notifica os usuários sobre a falha.<br/> <strong>Incorreto:</strong><br/> <img src="images/mess-notif-image13.png" alt="Screen shot of notification of failure to update " /><br/> Neste exemplo, o Microsoft Outlook costumava notificar os usuários de uma falha de que eles provavelmente não se preocupam.<br/> <strong>Mostrar quando:</strong> Após a falha de uma tarefa assíncrona.<br/> <strong>Mostre com que frequência:</strong> Mesmo.<br/> <strong>Fator de incômodo:</strong> Baixo se for útil e relevante; alto se o problema se resolver imediatamente ou se os usuários não se preocupam.<br/> <strong>Alternativas:</strong> Use uma caixa de diálogo modal se os usuários precisarem resolver a falha imediatamente. <br/></td>
+<td><strong>Falha de ação</strong><br/> Notifica os usuários quando uma ação assíncrona iniciada pelo usuário falha. <br/></td>
+<td><strong>Correto:</strong><br/> <img src="images/mess-notif-image12.png" alt="Screen shot of notification of failure to install " /><br/> Neste exemplo, a ativação do Windows notifica os usuários de falha.<br/> <strong>Incorreto:</strong><br/> <img src="images/mess-notif-image13.png" alt="Screen shot of notification of failure to update " /><br/> Neste exemplo, o Microsoft Outlook usou para notificar os usuários sobre uma falha com a que eles provavelmente não se importam.<br/> <strong>Mostrar quando:</strong> Após a falha de uma tarefa assíncrona.<br/> <strong>Mostrar com que frequência:</strong> Quando.<br/> <strong>Fator de ressarcimento:</strong> Baixo se for útil e relevante; alta se o problema resolver imediatamente a si mesmo ou os usuários, caso contrário, não se importam.<br/> <strong>Alternativas:</strong> Use uma caixa de diálogo modal se os usuários deverão resolver a falha imediatamente. <br/></td>
 </tr>
 <tr class="odd">
-<td><strong>Evento não crítico do sistema</strong><br/> Notifica os usuários sobre o status ou eventos significativos do sistema que podem ser ignorados com segurança, pelo menos temporariamente. <br/></td>
-<td><img src="images/mess-notif-image8.png" alt="Screen shot of notification of low battery power " /><br/> Neste exemplo, o Windows avisa os usuários com pouca energia da bateria, mas ainda há bastante tempo antes de executarem uma ação.<br/> <strong>Mostrar quando:</strong> Quando um evento ocorre e o usuário está ativo, ou uma condição continua a existir. Se for resultante de um problema, remova imediatamente as notificações exibidas no momento quando o problema for resolvido. Assim como acontece com as notificações de ação, notifique os usuários sobre eventos de sistema bem-sucedidos somente se os usuários provavelmente estiverem aguardando o evento ou após falhas recentes.<br/> <strong>Mostre com que frequência:</strong> Uma vez quando o evento ocorre pela primeira vez. Se isso resultar de um problema que os usuários precisam resolver, reexiba uma vez por dia.<br/> <strong>Fator de incômodo:</strong> Baixo, contanto que a notificação não seja exibida com muita frequência.<br/> <strong>Alternativas:</strong> Se os usuários devem, eventualmente, resolver um problema, use o escalonamento progressivo exibindo, por fim, uma caixa de diálogo modal quando a resolução se tornar obrigatória. <br/></td>
+<td><strong>Evento do sistema não crítico</strong><br/> Notifica os usuários sobre eventos ou status significativos do sistema que podem ser ignorados com segurança, pelo menos temporariamente. <br/></td>
+<td><img src="images/mess-notif-image8.png" alt="Screen shot of notification of low battery power " /><br/> Neste exemplo, o Windows avisa os usuários sobre pouca energia da bateria, mas ainda há muito tempo antes de eles tomarem medidas.<br/> <strong>Mostrar quando:</strong> Quando ocorre um evento e o usuário está ativo ou uma condição continua a existir. Se for resultante de um problema, remova as notificações exibidas no momento imediatamente depois que o problema for resolvido. Assim como ocorre com as notificações de ação, notifique os usuários sobre eventos bem-sucedidos do sistema somente se os usuários provavelmente aguardarem o evento ou após falhas recentes.<br/> <strong>Mostrar com que frequência:</strong> Uma vez quando o evento ocorre pela primeira vez. Se isso for resultado de um problema que os usuários precisam resolver, redisplay uma vez por dia.<br/> <strong>Fator de ressarcimento:</strong> Baixa, desde que a notificação não seja exibida com muita frequência.<br/> <strong>Alternativas:</strong> Se os usuários eventualmente deverão resolver um problema, use o escalonamento progressivo exibindo, por fim, uma caixa de diálogo modal quando a resolução se tornar obrigatória. <br/></td>
 </tr>
 <tr class="even">
-<td><strong>Tarefa opcional do usuário</strong><br/> Notifica os usuários sobre as tarefas assíncronas que eles devem executar. Seja opcional ou obrigatório, a tarefa pode ser adiada com segurança. <br/></td>
-<td><img src="images/mess-notif-image14.png" alt="Screen shot of notification of available updates " /><br/> Neste exemplo, Windows Update está notificando os usuários sobre uma nova atualização de segurança.<br/> <strong>Mostrar quando:</strong> Quando a necessidade de executar uma tarefa é determinada e o usuário está ativo.<br/> <strong>Mostre com que frequência:</strong> Uma vez por dia, no máximo três vezes.<br/> <strong>Fator de incômodo:</strong> Baixo, contanto que os usuários considerem a tarefa importante e a notificação não seja exibida com muita frequência.<br/> <strong>Alternativas:</strong> Se os usuários precisarem executar a tarefa eventualmente, use o escalonamento progressivo exibindo, por fim, uma caixa de diálogo modal quando a tarefa se tornar obrigatória. <br/></td>
+<td><strong>Tarefa de usuário opcional</strong><br/> Notifica os usuários sobre tarefas assíncronas que eles devem executar. Seja opcional ou obrigatório, a tarefa pode ser adiada com segurança. <br/></td>
+<td><img src="images/mess-notif-image14.png" alt="Screen shot of notification of available updates " /><br/> Neste exemplo, o Windows Update está notificando os usuários sobre uma nova atualização de segurança.<br/> <strong>Mostrar quando:</strong> Quando a necessidade de executar uma tarefa é determinada e o usuário está ativo.<br/> <strong>Mostrar com que frequência:</strong> Uma vez por dia para um máximo de três vezes.<br/> <strong>Fator de ressarcimento:</strong> Baixa, desde que os usuários considerem a tarefa importante e a notificação não seja exibida com muita frequência.<br/> <strong>Alternativas:</strong> Se os usuários eventualmente devem executar a tarefa, use o escalonamento progressivo, exibindo, por fim, uma caixa de diálogo modal quando a tarefa se torna obrigatória. <br/></td>
 </tr>
 <tr class="odd">
-<td><strong>CONHECIMENTO</strong><br/> Notifica os usuários sobre informações potencialmente úteis e relevantes. Você pode notificar os usuários sobre a relevância marginal se for opcional e os usuários aceitarem. <br/></td>
-<td><strong>Correto:</strong><br/> <img src="images/mess-notif-image15.png" alt="Screen shot of notification of new e-mail message " /><br/> Neste exemplo, os usuários são notificados quando uma nova mensagem de email é recebida.<br/> <strong>Correto:</strong><br/> <img src="images/mess-notif-image16.png" alt="Screen shot of notification of contact signed in " /><br/> Neste exemplo, os usuários são notificados quando os contatos ficam online e optam por receber essas informações opcionais.<br/> <strong>Incorreto:</strong><br/> <img src="images/mess-notif-image17.png" alt="Screen shot of notification for faster performance " /><br/> Neste exemplo, as informações serão úteis apenas se o usuário já tiver portas USB de alta velocidade instaladas. Caso contrário, o usuário provavelmente não fará nada diferente como resultado dele.<br/> <strong>Mostrar quando:</strong> Quando o evento de disparo ocorre.<br/> <strong>Mostrar como:</strong> Use a opção em tempo real para que essas notificações não sejam enfileiradas quando os usuários estiverem executando um aplicativo de tela inteira ou não estiverem usando o computador ativamente.<br/> <strong>Mostre com que frequência:</strong> Mesmo.<br/> <strong>Fator de incômodo:</strong> De médio a alto, dependendo da percepção de utilidade e relevância dos usuários. Não é recomendado se houver uma baixa probabilidade de interesse do usuário.<br/> <strong>Alternativas:</strong> Não notifique os usuários. <br/></td>
+<td><strong>Fyi</strong><br/> Notifica os usuários sobre informações potencialmente úteis e relevantes. Você poderá notificar os usuários sobre informações de relevância marginal se ela for opcional e os usuários optarem por isso. <br/></td>
+<td><strong>Correto:</strong><br/> <img src="images/mess-notif-image15.png" alt="Screen shot of notification of new e-mail message " /><br/> Neste exemplo, os usuários são notificados quando uma nova mensagem de email é recebida.<br/> <strong>Correto:</strong><br/> <img src="images/mess-notif-image16.png" alt="Screen shot of notification of contact signed in " /><br/> Neste exemplo, os usuários são notificados quando os contatos ficam online e optam por receber essas informações opcionais.<br/> <strong>Incorreto:</strong><br/> <img src="images/mess-notif-image17.png" alt="Screen shot of notification for faster performance " /><br/> Neste exemplo, as informações serão úteis somente se o usuário já tiver portas USB de alta velocidade instaladas. Caso contrário, o usuário provavelmente não fará nada diferente como resultado dele.<br/> <strong>Mostrar quando:</strong> Quando o evento de gatilho ocorre.<br/> <strong>Mostrar como:</strong> Use a opção em tempo real para que essas notificações não sejam en fila quando os usuários estão executando um aplicativo de tela inteira ou não estão usando ativamente seu computador.<br/> <strong>Mostrar com que frequência:</strong> Quando.<br/> <strong>Fator de ressarcimento:</strong> Médio a alto, dependendo da percepção dos usuários de utilidade e relevância. Não recomendado se houver uma baixa probabilidade de interesse do usuário.<br/> <strong>Alternativas:</strong> Não notifique os usuários. <br/></td>
 </tr>
 <tr class="even">
-<td><strong>Anúncio de recurso</strong><br/> Notifica os usuários sobre recursos do sistema ou do aplicativo recentemente instalados e não utilizados.<br/></td>
-<td><strong>Não use notificações para anúncios de recursos!</strong> Em vez disso, use outra maneira de tornar o recurso detectável, como: <br/>
+<td><strong>Anúncio de recurso</strong><br/> Notifica os usuários sobre recursos de aplicativo ou sistema recém-instalados ou não.<br/></td>
+<td><strong>Não use notificações para anúncios de recursos!</strong> Em vez disso, use outra maneira de tornar o recurso descobrivel, como: <br/>
 <ul>
-<li>Projete o recurso para ser mais fácil de descobrir em contextos onde for necessário.</li>
-<li>Não faça nada de especial e permita que os usuários descubram o recurso por conta própria.</li>
+<li>Projete o recurso para ser mais fácil de descobrir em contextos em que ele é necessário.</li>
+<li>Não faça nada especial e deixe que os usuários descubram o recurso por conta própria.</li>
 </ul>
 <strong>Incorreto:</strong><br/> <img src="images/mess-notif-image4.png" alt="Screen shot of notification of new features " /><br/> Não use notificações para anúncios de recursos.<br/></td>
 </tr>
@@ -181,16 +181,16 @@ As notificações têm vários padrões de uso:
 
 ### <a name="general"></a>Geral
 
--   **Selecione o padrão de notificação com base em seu uso.** Para obter uma descrição de cada padrão de uso, consulte a tabela anterior.
--   **Não use nenhuma notificação durante a experiência inicial do Windows.** Para melhorar sua primeira experiência, o Windows 7 suprime todas as notificações exibidas durante as primeiras horas de uso. Projete seu programa supondo que os usuários não vejam essas notificações.
+-   **Selecione o padrão de notificação com base em seu uso.** Para ver uma descrição de cada padrão de uso, consulte a tabela anterior.
+-   **Não use nenhuma notificação durante a experiência inicial do Windows.** Para melhorar sua primeira experiência, o Windows 7 suprime todas as notificações exibidas durante as primeiras horas de uso. Projete seu programa supondo que os usuários não verão essas notificações.
 
 ### <a name="what-to-notify"></a>O que notificar
 
 -   **Não notifique as operações bem-sucedidas, exceto nas seguintes circunstâncias:**
-    -   **Segurança.** Os usuários consideram que as operações de segurança sejam de importância mais alta, portanto, notifique os usuários sobre as operações de segurança bem-sucedidas.
-    -   **Falha recente.** Os usuários não precisam de operações bem-sucedidas para serem concedidas se estivessem falhando imediatamente antes, portanto, notifique os usuários de sucesso quando a operação falhar recentemente.
-    -   **Evite inconveniência.** Relatar operações bem-sucedidas ao fazer isso pode evitar usuários incomodar. Consequentemente, notifique os usuários quando uma operação bem-sucedida for executada de forma inesperada, por exemplo, quando uma operação for longa ou for concluída antes ou depois do esperado.
--   **Em outras circunstâncias, não forneça nenhum comentário para o sucesso ou forneça comentários "sob demanda".** Suponha que os usuários realizem as operações bem-sucedidas para serem concedidas. Você pode fornecer comentários sob demanda exibindo um ícone (ou alterando um ícone existente) na área de notificação enquanto a operação está sendo executada e removendo o ícone (ou restaurando o ícone anterior) quando a operação for concluída.
+    -   **Segurança.** Os usuários consideram as operações de segurança da mais alta importância, portanto, notifiquem os usuários sobre operações de segurança bem-sucedidas.
+    -   **Falha recente.** Os usuários não fazem operações bem-sucedidas para concedidos se estavam falhando imediatamente antes, portanto, notifique os usuários sobre o sucesso quando a operação falhou recentemente.
+    -   **Evitar inconveniência.** Relatar operações bem-sucedidas ao fazer isso pode evitar a inconveniência de usuários. Consequentemente, notifique os usuários quando uma operação bem-sucedida for executada de maneira inesperada, como quando uma operação for longa ou concluída anterior ou posterior ao esperado.
+-   **Em outras circunstâncias, não dê comentários sobre o sucesso ou dê comentários "sob demanda".** Suponha que os usuários assumam operações bem-sucedidas para concedidas. Você pode fornecer comentários sob demanda exibindo um ícone (ou alterando um ícone existente) na área de notificação enquanto a operação está sendo executada e removendo o ícone (ou restaurando o ícone anterior) quando a operação for concluída.
 -   Para o padrão de FYI, **não dê uma notificação se os usuários puderem continuar a funcionar normalmente ou se for improvável que você faça algo diferente como resultado da notificação.**
 
     **Incorreto:**
@@ -227,9 +227,8 @@ As notificações têm vários padrões de uso:
 
 
 
-|                                      |                                                                                                                                                                                                                    |
+| Padrão              | Quando notificar          |
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Padrão**<br/>               | **Quando notificar**<br/>                                                                                                                                                                                      |
 | Êxito na ação<br/>            | Após a conclusão de uma tarefa assíncrona. Notifique os usuários sobre ações bem-sucedidas somente se eles provavelmente estiverem aguardando a conclusão ou após falhas recentes.<br/>                                             |
 | Falha na ação<br/>            | Após a falha de uma tarefa assíncrona.<br/>                                                                                                                                                                   |
 | Evento não crítico do sistema<br/> | Quando um evento ocorre e o usuário está ativo, ou a condição continua a existir. Se isso resultar de um problema, remova a notificação atualmente exibida imediatamente depois que o problema for resolvido.<br/> |
@@ -265,9 +264,8 @@ No Windows Vista e posterior, as notificações são exibidas por uma duração 
 
 
 
-|                                      |                                                                                                                             |
+| Padrão           | Com que frequência notificar  |
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| **Padrão**<br/>               | **Com que frequência notificar**<br/>                                                                                          |
 | Êxito na ação<br/>            | Uma vez.<br/>                                                                                                            |
 | Falha na ação<br/>            | Uma vez.<br/>                                                                                                            |
 | Evento não crítico do sistema<br/> | Uma vez quando o evento ocorre pela primeira vez. Se isso resultar de um problema que os usuários precisam resolver, reexiba uma vez por dia.<br/> |
@@ -315,55 +313,55 @@ No Windows Vista e posterior, as notificações são exibidas por uma duração 
 
 Neste exemplo, os usuários podem compreender rapidamente a natureza da notificação com uma visão geral do ícone grande.
 
-### <a name="notification-queuing"></a>Enfileiramento de notificações
+### <a name="notification-queuing"></a>Fila de notificação
 
-**Observação:** As notificações são enfileiradas sempre que não podem ser exibidas imediatamente, como quando outra notificação está sendo exibida, o usuário está executando um aplicativo de tela inteira ou o usuário não está usando o computador ativamente. As notificações em tempo real permanecem na fila por apenas 60 segundos.
+**Observação:** As notificações são en fila sempre que não podem ser exibidas imediatamente, como quando outra notificação está sendo exibida, o usuário está executando um aplicativo de tela inteira ou o usuário não está usando ativamente o computador. As notificações em tempo real permanecem na fila por apenas 60 segundos.
 
--   **Para os padrões de ação êxito e FYI, use a opção em tempo real** para que a notificação não seja enfileirada por tempo. Essas notificações têm valor somente quando podem ser exibidas imediatamente.
--   **Remova as notificações em fila quando elas não forem mais relevantes.**
--   **Desenvolvedores:** Você pode fazer isso definindo o sinalizador de \_ informações de nse em uFlags e definir szInfo como uma cadeia de caracteres vazia. Não há nenhum dano em fazer isso se a notificação não estiver mais na fila.
+-   **Para os padrões de FYI** e sucesso da ação, use a opção em tempo real para que a notificação não seja ensalada por muito tempo. Essas notificações têm valor somente quando podem ser exibidas imediatamente.
+-   **Remova as notificações na fila quando elas não são mais relevantes.**
+-   **Desenvolvedores:** Você pode fazer isso definindo o sinalizador NIF \_ INFO em uFlags e definir szInfo como uma cadeia de caracteres vazia. Não haverá nenhum dano ao fazer isso se a notificação não estiver mais na fila.
 
 ### <a name="system-integration"></a>Integração do sistema
 
--   Se o seu aplicativo nem sempre tiver um ícone na [área de notificação](winenv-notification.md) quando estiver em execução, **exiba um ícone temporariamente durante a tarefa ou evento assíncrono que causou a notificação.**
+-   Se o aplicativo nem sempre tiver [](winenv-notification.md) um ícone na área de notificação quando ele estiver em execução, exibirá um ícone temporariamente durante a tarefa ou evento assíncrono que causou **a notificação.**
 
-## <a name="text"></a>Texto
+## <a name="text"></a>Text
 
 ### <a name="title-text"></a>Texto do título
 
--   **Use o texto do título que resume brevemente as informações mais importantes que você precisa para se comunicar com os usuários em linguagem clara, simples, concisa e específica.** Os usuários devem ser capazes de entender a finalidade das informações de notificação rapidamente e com um mínimo de esforço.
--   **Use fragmentos de texto ou frases completas sem pontuação final.**
+-   **Use o texto do título que resume brevemente as informações mais importantes que você precisa para se comunicar com os usuários em um idioma claro, simples, conciso e específico.** Os usuários devem ser capazes de entender a finalidade das informações de notificação rapidamente e com esforço mínimo.
+-   **Use fragmentos de texto ou frases completas sem terminar a pontuação.**
 -   **Use a capitalização com estilo de frase.**
--   **Use no máximo 48 caracteres (em inglês) para acomodar a localização.** O título tem um comprimento máximo de 63 caracteres, mas você deve permitir a expansão de 30 por cento quando o texto do idioma inglês for traduzido.
+-   **Use não mais de 48 caracteres (em inglês) para acomodar a localização.** O título tem um comprimento máximo de 63 caracteres, mas você deve permitir uma expansão de 30% quando o texto em inglês é traduzido.
 
 ### <a name="body-text"></a>Texto do corpo
 
--   **Use o corpo de texto que fornece uma descrição (sem repetir as informações no título) e, opcionalmente, que fornece detalhes específicos sobre a notificação e também permite que os usuários saibam qual ação está disponível.**
+-   **Use o texto do corpo que fornece uma descrição (sem repetir as informações no título) e, opcionalmente, que fornece detalhes específicos sobre a notificação e também permite que os usuários saibam qual ação está disponível.**
 -   **Use frases completas com pontuação final.**
 -   **Use a capitalização com estilo de frase.**
--   **Use no máximo 200 caracteres (em inglês) para acomodar a localização.** O texto do corpo tem um comprimento máximo de 255 caracteres, mas você deve permitir a expansão de 30 por cento quando o texto do idioma inglês for traduzido.
--   **Inclua informações essenciais no corpo do texto, como nomes de objetos específicos.** (Exemplos: nomes de usuário, nomes de arquivo ou URLs.) Os usuários não devem abrir outra janela para localizar essas informações.
--   **Coloque aspas duplas ao contrário dos nomes de objetos.**
+-   **Use não mais de 200 caracteres (em inglês) para acomodar a localização.** O texto do corpo tem um comprimento máximo de 255 caracteres, mas você deve permitir uma expansão de 30% quando o texto em inglês é traduzido.
+-   **Inclua informações essenciais no texto do corpo, como nomes de objeto específicos.** (Exemplos: nomes de usuário, nomes de arquivo ou URLs.) Os usuários não devem ter que abrir outra janela para encontrar essas informações.
+-   **Coloque aspas duplas em torno de nomes de objeto.**
     -   **Exceção:** Não use aspas quando:
-        -   O nome do objeto sempre usa a [capitalização no estilo de título](glossary.md), como com nomes de usuário.
-        -   O nome do objeto é offset com dois-pontos (exemplo: nome da impressora: minha impressora).
-        -   O nome do objeto pode ser facilmente determinado a partir do contexto.
--   **Se você precisar truncar nomes de objeto para um tamanho máximo fixo para acomodar a localização, use uma elipse para indicar truncamento.**
+        -   O nome do objeto sempre usa [a capitalização de estilo de título,](glossary.md)como com nomes de usuário.
+        -   O nome do objeto é deslocamento com dois-pontos (exemplo: Nome da impressora: Minha impressora).
+        -   O nome do objeto pode ser facilmente determinado no contexto.
+-   **Se você deve truncar nomes de objeto para um tamanho máximo fixo para acomodar a localização, use uma reellipse para indicar truncamento.**
 
-    ![captura de tela da mensagem contendo o nome abreviado ](images/mess-notif-image23.png)
+    ![captura de tela da mensagem que contém o nome abreviado ](images/mess-notif-image23.png)
 
-    Neste exemplo, um nome de objeto é truncado usando uma elipse.
+    Neste exemplo, um nome de objeto é truncado usando uma reellipse.
 
--   **Use a seguinte frase se a notificação for acionável:**
+-   **Use a seguinte frase se a notificação for a actionable:**
     -   Se os usuários puderem clicar na notificação para executar uma ação:
 
         < breve descrição das informações essenciais>
 
         <optional details>
 
-        Clique em para <do something> .
+        Clique em <do something> .
 
-        ![captura de tela da mensagem: ' clique para exibir o progresso ' ](images/mess-notif-image24.png)
+        ![captura de tela da mensagem: 'clique para exibir o progresso' ](images/mess-notif-image24.png)
 
         Neste exemplo, os usuários podem clicar para executar uma ação.
 
@@ -379,34 +377,34 @@ Neste exemplo, os usuários podem compreender rapidamente a natureza da notifica
 
         Neste exemplo, os usuários podem clicar para obter mais informações.
 
--   **Não diga que o usuário "deve" executar uma ação em uma notificação.** As notificações são para informações não críticas que os usuários podem ignorar livremente. Se os usuários realmente precisarem executar uma ação, não use notificações.
--   **Se os usuários devem executar uma ação, torne a importância clara.**
--   Para os padrões de falha de ação e de evento não crítico **do sistema, descreva problemas em linguagem sem formatação.**
+-   **Não diga que o usuário "deve" executar uma ação em uma notificação.** As notificações são para informações não críticas que os usuários podem ignorar livremente. Se os usuários realmente devem executar uma ação, não use notificações.
+-   **Se os usuários devem executar uma ação, limpe a importância.**
+-   Para a falha de ação e padrões de eventos do sistema não críticos, **descreva problemas em linguagem sem-texto.**
 
     **Incorreto:**
 
     ![captura de tela de mensagem longa e complexa ](images/mess-notif-image26.png)
 
-    Neste exemplo, o problema é descrito usando a linguagem excessivamente técnica, mas não específica.
+    Neste exemplo, o problema é descrito usando linguagem muito técnica, mas não específica.
 
     **Correto:**
 
     ![captura de tela de mensagem clara e concisa ](images/mess-notif-image27.png)
 
-    Neste exemplo, o problema é descrito em linguagem sem formatação.
+    Neste exemplo, o problema é descrito em linguagem sem-texto.
 
--   **Descreva o evento de forma relevante para os usuários de destino.** Uma notificação é relevante se houver uma chance razoável de os usuários executarem uma tarefa ou alterarem seu comportamento como resultado da notificação. Muitas vezes, você pode fazer isso descrevendo as notificações em termos de metas do usuário em vez de problemas tecnológicos.
+-   **Descreva o evento de uma maneira relevante para os usuários de destino.** Uma notificação será relevante se houver uma chance razoável de os usuários executarem uma tarefa ou alterarem seu comportamento como resultado da notificação. Geralmente, você pode fazer isso descrevendo notificações em termos de metas do usuário em vez de problemas tecnológicos.
 
 ## <a name="documentation"></a>Documentação
 
 Ao fazer referência a notificações:
 
--   Use o texto do título exato, incluindo sua capitalização.
+-   Use o texto de título exato, incluindo sua capitalização.
 -   Consulte o componente como uma notificação, não como um balão ou um alerta.
 -   Para descrever a interação do usuário, use clique.
--   Quando possível, formate o texto do título usando texto em negrito. Caso contrário, coloque o título entre aspas somente se necessário para evitar confusão.
+-   Quando possível, forja o texto do título usando texto em negrito. Caso contrário, coloque o título entre aspas somente se necessário para evitar confusão.
 
-Exemplo: quando a notificação **atualizações críticas estão prontas para serem instaladas** é exibida, clique na notificação para iniciar o processo.
+Exemplo: quando as **atualizações críticas estão prontas para instalar** a notificação aparecer, clique na notificação para iniciar o processo.
 
 Ao fazer referência à área de notificação:
 

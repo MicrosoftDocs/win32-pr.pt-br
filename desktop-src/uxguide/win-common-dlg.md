@@ -4,12 +4,12 @@ description: Os diálogos comuns do Microsoft Windows consistem nas caixas de di
 ms.assetid: 3f9fb0c9-bc1a-48c4-b021-99f155f8ea9e
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 336cb368fa25bf68313e2bf336de68845a87e663
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 9d64dee640037fe70b88c10294ed04bfbc74fac4
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104370811"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443677"
 ---
 # <a name="common-dialogs"></a>Caixas de diálogo comuns
 
@@ -42,7 +42,7 @@ Abrir pasta é especificamente para escolher pastas.
 
 A opção Localizar permite que os usuários pesquisem cadeias de caracteres de texto, enquanto a versão de substituição permite que os usuários substituam correspondências por outra cadeia de caracteres.
 
-## <a name="print"></a>Imprimir
+## <a name="print"></a>Impressão
 
 ![captura de tela da caixa de diálogo Imprimir ](images/win-common-dlg-image5.png)
 
@@ -60,7 +60,7 @@ A configuração de página permite que os usuários selecionem o tamanho e a or
 
 Fonte exibe as fontes e os tamanhos de pontos das fontes instaladas disponíveis.
 
-## <a name="color"></a>Cor
+## <a name="color"></a>Color
 
 ![captura de tela da caixa de diálogo Editar cores ](images/win-common-dlg-image8.png)
 
@@ -106,17 +106,16 @@ Para o Windows Vista, o arquivo aberto e o arquivo de salvamento têm uma nova a
 
 
 
-|                              |                                               |
-|------------------------------|-----------------------------------------------|
-| **Caixa de diálogo comum**<br/> | **Comando**<br/>                        |
+| Caixa de diálogo comum          | Comando                                 |
+|------------------------|-----------------------------------------|
 | Abrir arquivo<br/>         | Abrir...<br/>                            |
 | Salvar arquivo<br/>         | Salvar como...<br/>                         |
 | Abrir Pasta<br/>       | Abrir pasta... ou escolha a pasta...<br/> |
 | Localizar e Substituir<br/>  | Localizar... ou substituir...<br/>              |
-| Imprimir<br/>             | Imprimir...<br/>                           |
+| Impressão<br/>             | Imprimir...<br/>                           |
 | Configurar Página<br/>        | Configurar página...<br/>                      |
 | Fonte<br/>              | Fonte... ou escolha a fonte...<br/>          |
-| Cor<br/>             | Cor... ou escolha cor...<br/>        |
+| Color<br/>             | Cor... ou escolha cor...<br/>        |
 
 
 
@@ -138,47 +137,47 @@ Para o Windows Vista, o arquivo aberto e o arquivo de salvamento têm uma nova a
     -   **Desenvolvedores:** Você pode obter a pasta temporária do usuário atual usando a função de API GetTempPath.
 -   Para o nome de arquivo padrão inicial, use um nome padrão exclusivo com base em:
     -   O conteúdo do arquivo, se conhecido. Exemplo: as primeiras palavras em um documento.
-    -   Um padrão escolhido pelo usuário. Exemplo: se o arquivo anterior tiver sido denominado "Havaí 1.jpg", escolha "Havaí 2.jpg" como o próximo arquivo.
+    -   Um padrão escolhido pelo usuário. Exemplo: se o arquivo anterior foi nomeado "1.jpg Havaiano", escolha "2.jpg Havaiana" como o próximo arquivo.
     -   Um padrão genérico com base no tipo de arquivo. Exemplo: "Photo1.jpg".
--   Para os padrões subsequentes (se o arquivo já existir), use a pasta e o nome atuais do arquivo.
--   Ao salvar um arquivo, preserve sua data de criação. Se o programa salvar arquivos criando um arquivo temporário, excluir o original e renomear o arquivo temporário para o nome do arquivo original, certifique-se de copiar a data de criação do arquivo original.
--   Use salvar arquivo se o usuário selecionar o comando salvar sem especificar um nome de arquivo.
+-   Para padrões subsequentes (se o arquivo já existir), use a pasta e o nome atuais do arquivo.
+-   Ao salvar um arquivo, preserve sua data de criação. Se o programa salvar arquivos criando um arquivo temporário, excluir o original e renomear o arquivo temporário para o nome do arquivo original, copie a data de criação do arquivo original.
+-   Use Salvar Arquivo se o usuário selecionar o comando Salvar sem especificar um nome de arquivo.
 
 ### <a name="file-types-lists"></a>Listas de tipos de arquivo
 
-**Observação:** As listas de tipos de arquivo são usadas por arquivo aberto e arquivo de salvamento para determinar os tipos de arquivos exibidos e a extensão de arquivo padrão.
+**Observação:** As listas de tipos de arquivo são usadas por Abrir Arquivo e Salvar Arquivo para determinar os tipos de arquivos exibidos e a extensão de arquivo padrão.
 
--   Se a lista de tipos de arquivo for curta (cinco ou menos), ordene a lista por probabilidade de uso. Se a lista for longa (seis ou mais), use uma ordem alfabética para facilitar a localização dos tipos.
--   Para salvar arquivo, inclua todas as variações das extensões de arquivo com suporte, mesmo se não forem comuns, e coloque a extensão mais comum primeiro. A lógica de manipulação de arquivo examina essa lista para determinar se o usuário forneceu uma extensão de arquivo com suporte. Exemplo: se uma lista de tipos de arquivo JPEG incluir apenas. jpg e. jpeg, o arquivo Test. jpe poderá ser salvo como test.jpe.jpg.
--   Para salvar arquivo, o tipo de arquivo padrão inicial é o mais provável escolhido pelo usuário de destino. O padrão subsequente é o tipo atual do arquivo.
--   Para o arquivo aberto, o tipo de arquivo padrão inicial é o mais provável escolhido pelo usuário de destino. O padrão subsequente deve ser o último tipo de arquivo usado.
--   Para abrir arquivo, inclua uma entrada "todos os arquivos" como o primeiro item se os usuários puderem abrir qualquer tipo de arquivo ou se precisar ver todos os arquivos em uma pasta ao mesmo tempo. Considere fornecer outros filtros meta, como "todas as imagens", "todas as músicas" e "todos os vídeos". Coloque-os imediatamente após "todos os arquivos".
--   Use o formato "nome do tipo de arquivo ( \* . EXT1; \* . ext2). " O nome do tipo de arquivo deve ser o nome do tipo de arquivo registrado, que pode ser exibido no item do painel de controle opções de pasta. Exemplo: "documento HTML ( \* . htm; \* . HTML). "
-    -   **Exceção:** Para meta-filtros, remova a lista de extensão de arquivo para eliminar a desordem. Exemplos: "todos os arquivos", "todas as imagens", "todas as músicas" e "todos os vídeos".
--   Use a [capitalização de estilo de frase](glossary.md) para os nomes de tipo de arquivo e minúsculas para as extensões de tipo de arquivo.
+-   Se a lista de tipos de arquivo for curta (cinco ou menos), peça a lista por probabilidade de uso. Se a lista for longa (seis ou mais), use uma ordem alfabética para tornar os tipos fáceis de encontrar.
+-   Para Salvar Arquivo, inclua todas as variações das extensões de arquivo com suporte, mesmo que incomuns, e coloque a extensão mais comum primeiro. A lógica de tratamento de arquivo analisa essa lista para determinar se o usuário forneceu uma extensão de arquivo com suporte. Exemplo: se uma lista de tipos de arquivo JPEG incluir apenas .jpg e .jpeg, o arquivo test.jpe poderá ser salvo como test.jpe.jpg.
+-   Para Salvar Arquivo, o tipo de arquivo padrão inicial é o mais provável escolhido pelo usuário de destino. O padrão subsequente é o tipo atual do arquivo.
+-   Para Abrir Arquivo, o tipo de arquivo padrão inicial é o mais provável escolhido pelo usuário de destino. O padrão subsequente deve ser o último tipo de arquivo usado.
+-   Para Abrir Arquivo, inclua uma entrada "Todos os arquivos" como o primeiro item se os usuários puderem abrir qualquer tipo de arquivo ou talvez precisem ver todos os arquivos em uma pasta ao mesmo tempo. Considere fornecer outros metadados, como "Todas as imagens", "Todas as músicas" e "Todos os vídeos". Coloque-os imediatamente após "Todos os arquivos".
+-   Use o formato "Nome do tipo de arquivo ( \* .ext1; \* . ext2)." O nome do tipo de arquivo deve ser o nome do tipo de arquivo registrado, que pode ser visualizado no item do painel de controle Opções de Pasta. Exemplo: "Documento HTML ( \*.htm; \*.html)."
+    -   **Exceção:** Para metadados, remova a lista de extensões de arquivo para eliminar a confusão. Exemplos: "Todos os arquivos", "Todas as imagens", "Todas as músicas" e "Todos os vídeos".
+-   Use [a capitalização de estilo de frase](glossary.md) para os nomes de tipo de arquivo e minúsculas para as extensões de tipo de arquivo.
 
 ### <a name="open-folder"></a>Abrir Pasta
 
--   **Para novos programas, use a caixa de diálogo abrir arquivos no modo "escolher pastas".** Isso requer o Windows Vista ou posterior, portanto, use a caixa de diálogo abrir pasta para programas que são executados em versões anteriores do Windows.
-    -   **Desenvolvedores:** Você pode usar a caixa de diálogo abrir arquivos no modo "escolher pastas" usando o \_ sinalizador FOS PICKFOLDERS.
+-   **Para novos programas, use a caixa de diálogo Abrir Arquivos no modo "escolher pastas".** Isso requer o Windows Vista ou posterior, portanto, use a caixa de diálogo Abrir Pasta para programas executados em versões anteriores do Windows.
+    -   **Desenvolvedores:** Você pode usar a caixa de diálogo Abrir Arquivos no modo "escolher pastas" usando o sinalizador FOS \_ PICKFOLDERS.
 
 ### <a name="font"></a>Fonte
 
--   Se necessário, você pode filtrar a lista de fontes para mostrar apenas as fontes disponíveis para seu programa.
+-   Se necessário, você pode filtrar a lista de fontes para mostrar apenas as fontes disponíveis para o programa.
 
 ### <a name="persistence"></a>Persistência
 
 -   Considere tornar os seguintes valores persistentes para usar como padrões subsequentes:
     -   Valores de entrada (exemplos: pastas padrão, nomes de arquivo padrão).
     -   Opções selecionadas (exemplos: impressora selecionada, opções de impressão).
-    -   Exibições (exemplos: mostrando imagens no modo de exibição de miniatura, mostrando imagens sem nomes de arquivos, classificando por data, larguras de coluna).
-    -   Apresentação (exemplos: tamanho da janela, localização e conteúdo).
+    -   Exibições (exemplos: mostrando imagens na exibição em miniatura, mostrando imagens sem nomes de arquivo, classificação por data, larguras de coluna).
+    -   Apresentação (exemplos: tamanho da janela, local e conteúdo).
 
-**Exceção:** Não faça esses valores persistirem em caixas de diálogo comuns quando seu uso for, de modo que os usuários têm a probabilidade muito mais desejados de iniciar completamente.
+**Exceção:** Não faça com que esses valores persistam para caixas de diálogo comuns quando seu uso é tal que os usuários têm muito mais probabilidade de querer começar completamente.
 
--   Ao determinar os valores padrão, considere o que os usuários de destino têm mais probabilidade de se desejarem com base nos cenários importantes. Além disso, considere cenários em uma instância de programa, em várias instâncias (consecutivas ou simultâneas) e em vários documentos. Não faça com que os valores persistam em circunstâncias que provavelmente não são úteis.
-    -   **Exemplo:** Para um aplicativo típico baseado em documento, é útil usar as configurações persistentes abrir arquivo e salvar arquivo em uma instância do programa e em instâncias consecutivas, mas manter as instâncias simultâneas independentes. Dessa forma, os usuários podem trabalhar com eficiência com vários documentos de cada vez.
--   Faça as configurações persistirem em uma base por programa por usuário.
+-   Ao determinar valores padrão, considere o que os usuários de destino têm mais probabilidade de querer com base nos cenários importantes. Além disso, considere cenários em uma instância do programa, em várias instâncias (consecutivas ou simultâneas) e em vários documentos. Não faça com que os valores persistam em circunstâncias que provavelmente não sejam úteis.
+    -   **Exemplo:** Para um aplicativo típico baseado em documento, é útil usar configurações persistentes de Abrir Arquivo e Salvar Arquivo em uma instância do programa e entre instâncias consecutivas, mas manter instâncias simultâneas independentes. Dessa forma, os usuários podem trabalhar com eficiência com vários documentos por vez.
+-   Faça com que as configurações persistam por programa, por usuário.
 
  
 

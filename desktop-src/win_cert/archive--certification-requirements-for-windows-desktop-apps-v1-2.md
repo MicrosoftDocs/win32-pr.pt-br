@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: bfc652aaeb318458ea2df391114d16aca7580cf8
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: dd84d5586d682b22947b182bd7d5a11625fcf537
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294395"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444227"
 ---
 # <a name="archive-certification-requirements-for-windows-desktop-apps-v12"></a>Arquivo: requisitos de certificação para aplicativos da área de trabalho do Windows v 1.2
 
@@ -102,7 +102,7 @@ Uma instalação limpa e reversível permite que os usuários gerenciem com êxi
 
 ## <a name="6-apps-must-digitally-sign-files-and-drivers"></a>6. os aplicativos devem assinar digitalmente arquivos e drivers
 
-Uma assinatura digital Authenticode permite que os usuários tenham certeza de que o software é autêntico. Ele também permite detectar se um arquivo foi violado, como se ele foi infectado por um vírus. A imposição de assinatura de código no modo kernel é um recurso do Windows conhecido como integridade de código (CI), que melhora a segurança do sistema operacional, verificando a integridade de um arquivo cada vez que a imagem do arquivo é carregada na memória. O CI detecta se o código mal-intencionado modificou um arquivo binário do sistema. Também gera um evento de log de diagnóstico e auditoria do sistema quando a assinatura de um módulo kernel não é verificada corretamente. <dl> 6,1 todos os arquivos executáveis (. exe,. dll,. ocx,. sys,. cpl,. drv,. SCR) devem ser assinados com um certificado Authenticode  
+Uma assinatura digital Authenticode permite que os usuários tenham certeza de que o software é autêntico. Ele também permite detectar se um arquivo foi violado, como se ele foi infectado por um vírus. A imposição de assinatura de código no modo kernel é um recurso do Windows conhecido como integridade de código (CI), que melhora a segurança do sistema operacional, verificando a integridade de um arquivo cada vez que a imagem do arquivo é carregada na memória. O CI detecta se o código mal-intencionado modificou um arquivo binário do sistema. Também gera um evento de log de diagnóstico e auditoria do sistema quando a assinatura de um módulo kernel não é verificada corretamente. <dl> 6,1 todos os arquivos executáveis (.exe, .dll,. ocx, .sys, .cpl,. drv,. SCR) devem ser assinados com um certificado Authenticode  
 6,2 todos os drivers de modo kernel instalados pelo aplicativo devem ter uma assinatura da Microsoft obtida por meio do programa de certificação de hardware do Windows. Todos os drivers de filtro do sistema de arquivos devem ser assinados pela Microsoft.  
 6,3 exceções e renúncias <dl> As renúncias serão consideradas apenas para redistribuíveis de terceiros não assinados, excluindo drivers. Uma prova de comunicação solicitando uma versão assinada dos redistribuíveis (s) é necessária para que essa renúncia seja concedida.  
 </dl> </dd> </dl>
@@ -114,92 +114,91 @@ Uma assinatura digital Authenticode permite que os usuários tenham certeza de q
 
 -   Aplicativos que são entregues como um pacote que também são executados no Windows XP, no Windows Vista e no Windows 7, e precisam verificar a versão do sistema operacional para determinar quais componentes devem ser instalados em um determinado sistema operacional.
 -   Aplicativos que verificam apenas a versão mínima do sistema operacional (durante a instalação apenas, não em tempo de execução) usando apenas as chamadas à API aprovadas e que listam corretamente o requisito mínimo de versão no manifesto do aplicativo.
--   Aplicativos de segurança (antivírus, firewall, etc.), utilitários do sistema (por exemplo, desfragmentação, backups e ferramentas de diagnóstico) que verificam a versão do sistema operacional usando apenas as chamadas de API aprovadas.
+-   Aplicativos de segurança (antivírus, firewall etc.), utilitários do sistema (por exemplo, desfragmentação, backups e ferramentas de diagnóstico) que verificam a versão do sistema operacional usando apenas as chamadas à API aprovadas.
 
   
 </dl>
 
-## <a name="8-apps-don-t-load-services-or-drivers-in-safe-mode"></a>8. os aplicativos Don t carregam serviços ou drivers no modo de segurança
+## <a name="8-apps-don-t-load-services-or-drivers-in-safe-mode"></a>8. Os aplicativos não carregam serviços ou drivers no modo de segurança
 
-O modo de segurança permite que os usuários diagnostiquem e solucionem problemas no Windows. Os drivers e serviços não devem ser definidos para carregar no modo de segurança, a menos que sejam necessários para operações básicas do sistema, como drivers de dispositivo de armazenamento ou para fins de diagnóstico e recuperação, como scanners antivírus,. Por padrão, quando o Windows está no modo de segurança, ele inicia somente os drivers e serviços que vieram pré-instalados com o Windows.
+O modo de segurança permite aos usuários diagnosticar e solucionar problemas do Windows. Drivers e serviços não devem ser definidos para serem carregados no modo de segurança, a menos que sejam necessários para operações básicas do sistema, como drivers de dispositivo de armazenamento ou para fins de diagnóstico e recuperação, como scanners antivírus, . Por padrão, quando o Windows está no modo de segurança, ele inicia apenas os drivers e serviços que foram pré-instalados com o Windows.
 
--   8,1 exceções e renúncias <dl> Os drivers e serviços que devem ser iniciados no modo de segurança exigem uma renúncia. A solicitação de renúncia deve incluir cada driver ou serviço aplicável ao gravar nas chaves do registro de inicialização segura e descrever os motivos técnicos pelos quais o aplicativo ou serviço deve ser executado no modo de segurança. O instalador do aplicativo deve registrar todos esses drivers e serviços usando essas chaves do registro:  
+-   8.1 Exceções e exceções <dl> Drivers e serviços que devem ser iniciados no modo de segurança exigem uma isenção. A solicitação de isenção deve incluir cada driver ou serviço aplicável que escreve nas chaves do Registro SafeBoot e descrever os motivos técnicos pelos quais o aplicativo ou serviço deve ser executado no modo de segurança. O instalador do aplicativo deve registrar todos esses drivers e serviços usando estas chaves do Registro:  
     </dl>
     -   HKLM/System/CurrentControlSet/Control/SafeBoot/Minimal
     -   HKLM/System/CurrentControlSet/Control/SafeBoot/Network
 
 **Observação:** Você deve testar esses drivers e serviços para garantir que eles funcionem no modo de segurança sem erros.
 
-## <a name="9-apps-must-follow-user-account-control-guidelines"></a>9. os aplicativos devem seguir as diretrizes de controle de conta de usuário
+## <a name="9-apps-must-follow-user-account-control-guidelines"></a>9. Os aplicativos devem seguir as diretrizes de Controle de Conta de Usuário
 
-Alguns aplicativos do Windows são executados no contexto de segurança de uma conta de administrador, e os aplicativos geralmente solicitam direitos de usuário e privilégios de Windows excessivos. Controlar o acesso a recursos permite que os usuários estejam no controle de seus sistemas e os protejam contra alterações indesejadas. Uma alteração indesejada pode ser mal-intencionada, como um rootkit assumindo o controle do computador, ou ser o resultado de uma ação feita por pessoas que têm privilégios limitados. A regra mais importante para controlar o acesso a recursos é fornecer a menor quantidade de contexto de usuário padrão de acesso necessário para que um usuário execute suas tarefas necessárias. As diretrizes de controle de conta de usuário (UAC) a seguir fornecem ao aplicativo as permissões necessárias quando são necessárias para o aplicativo, sem deixar o sistema constantemente exposto a riscos de segurança. A maioria dos aplicativos não requer privilégios de administrador em tempo de execução e deve ser apenas uma boa execução como usuário padrão.<dl> 9,1 seu aplicativo deve ter um manifesto que define os níveis de execução e informa ao sistema operacional quais privilégios o aplicativo requer para ser executado <dl> A marcação do manifesto do aplicativo só se aplica a EXEs, não a DLLs. Isso ocorre porque o UAC não inspeciona DLLs durante a criação do processo. Também vale a pena observar que as regras de UAC não se aplicam aos serviços do Windows. O manifesto pode ser inserido ou externo.  
-Para criar um manifesto, crie um arquivo com o nome <nome do aplicativo \_ # C1.exe. manifest e armazene-o no mesmo diretório que o exe. Observe que qualquer manifesto externo será ignorado se o aplicativo tiver um manifesto interno. Por exemplo:  
-<requestedExecutionLevel Level = "" asInvoker \| highestAvailable \| requireAdministrator "" UIAccess = "" true \| false ""/>  
-</dl> </dd> 9.2 Your app s main process must be run as a standard user (asInvoker). <dl> Todos os recursos administrativos devem ser movidos para um processo separado que seja executado com privilégios administrativos. Os aplicativos voltados para o usuário, como aqueles acessíveis por meio do grupo de programas no menu Iniciar, e exigem elevação devem ser assinados por Authenticode.  
-</dl> </dd> 9.3 Exceptions and Waivers <dl> Uma renúncia é necessária para aplicativos que executam seu processo principal com privilégios elevados (requireAdministrator ou highestAvailable). O processo principal é identificado como o ponto de entrada do usuário para o aplicativo. As renúncias serão consideradas para os seguintes cenários:
+Alguns aplicativos do Windows são executados no contexto de segurança de uma conta de administrador e os aplicativos geralmente solicitam direitos de usuário excessivos e privilégios do Windows. Controlar o acesso a recursos permite que os usuários controlem seus sistemas e protejam-nos contra alterações indesejadas. Uma alteração indesejada pode ser mal-intencionada, como um rootkit assumindo o controle do computador ou ser o resultado de uma ação feita por pessoas que têm privilégios limitados.. A regra mais importante para controlar o acesso aos recursos é fornecer a menor quantidade de contexto de usuário padrão de acesso necessária para que um usuário execute suas tarefas necessárias. As diretrizes de UAC (controle de conta de usuário) a seguir fornece ao aplicativo as permissões necessárias quando elas são necessárias para o aplicativo, sem deixar o sistema constantemente exposto a riscos de segurança. A maioria dos aplicativos não exige privilégios de administrador em tempo de execução e deve estar funcionando bem como um usuário padrão.<dl> 9.1 Seu aplicativo deve ter um manifesto que define os níveis de execução e informa ao sistema operacional quais privilégios o aplicativo requer para ser executado <dl> A marcação do manifesto do aplicativo se aplica somente a EXEs, não DLLs. Isso acontece porque o UAC não inspeciona DLLs durante a criação do processo. Também vale a pena notar que as regras de UAC não se aplicam aos Serviços do Windows. O manifesto pode ser inserido ou externo.  
+Para criar um manifesto, crie um arquivo com o nome <nome do aplicativo>.exe.manifest e armazene-o \_ no mesmo diretório que EXE. Observe que qualquer manifesto externo será ignorado se o aplicativo tiver um manifesto interno. Por exemplo:  
+<requestedExecutionLevel level=""asInvoker \| highestAvailable \| requireAdministrator"" uiAccess="true \| false""/>  
+</dl> </dd> 9.2 Your app s main process must be run as a standard user (asInvoker). <dl> Todos os recursos administrativos devem ser movidos para um processo separado que é executado com privilégios administrativos. Aplicativos voltados para o usuário, como aqueles acessíveis por meio do grupo de programas no Menu Inicial, e que exigem elevação devem ser assinados pelo Authenticode.  
+</dl> </dd> 9.3 Exceptions and Waivers <dl> Uma isenção é necessária para aplicativos que executem seu processo principal com privilégios elevados (requireAdministrator ou highestAvailable). O processo principal é identificado como o ponto de entrada do usuário para o aplicativo. As isenções serão consideradas para os seguintes cenários:
 
--   Ferramentas administrativas ou do sistema com o nível de execução definido como highestAvailable e/ou requireAdministrator
--   Somente acessibilidade ou aplicativo de estrutura de automação de interface do usuário define o sinalizador uiAccess como true para ignorar o UIPI (isolamento de privilégio de interface do usuário). Para iniciar corretamente a utilização do aplicativo, esse sinalizador deve ser assinado por Authenticode e deve residir em um local protegido no sistema de arquivos, ou seja, arquivos de programas.
+-   Ferramentas administrativas ou do sistema com nível de execução definido como highestAvailable e/ou requireAdministrator
+-   Somente o aplicativo de estrutura de automação de acessibilidade ou interface do usuário define o sinalizador uiAccess como true para ignorar o UIPI (isolamento de privilégio de interface do usuário). Para iniciar corretamente a utilização do aplicativo, esse sinalizador deve ser assinado por Authenticode e deve residir em um local protegido no sistema de arquivos, ou seja, Arquivos de Programas.
 
   
 </dl> </dd> </dl>
 
-## <a name="10-apps-must-install-to-the-correct-folders-by-default"></a>10. os aplicativos devem ser instalados nas pastas corretas por padrão
+## <a name="10-apps-must-install-to-the-correct-folders-by-default"></a>10. Os aplicativos devem ser instalados nas pastas corretas por padrão
 
-Os usuários devem ter uma experiência consistente e segura com o local de instalação padrão dos arquivos, mantendo a opção de instalar um aplicativo no local de sua escolha. Também é necessário armazenar os dados do aplicativo no local correto para permitir que várias pessoas usem o mesmo computador sem corromper ou substituir os dados e as configurações uns dos outros. O Windows fornece locais específicos no sistema de arquivos para armazenar programas e componentes de software, dados de aplicativos compartilhados e dados de aplicativo específicos de um usuário<dl> 10,1 seu aplicativo deve ser instalado na pasta arquivos de programas por padrão <dl> Para aplicativos nativos de 32 bits e 64 bits em% ProgramFiles% e% ProgramFiles (x86)% para aplicativos de 32 bits em execução em x64. Os dados do usuário ou os dados do aplicativo nunca devem ser armazenados nesse local devido às permissões de segurança configuradas para essa pasta.  
-</dl> </dd> 10.2 Your app must avoid starting automatically on startup <dl> Por exemplo, seu aplicativo não deve definir nenhum dos seguintes itens;  
+Os usuários devem ter uma experiência consistente e segura com o local de instalação padrão dos arquivos, mantendo a opção de instalar um aplicativo no local de sua escolha. Também é necessário armazenar dados do aplicativo no local correto para permitir que várias pessoas usem o mesmo computador sem corromper ou sobrescrever os dados e as configurações umas das outras. O Windows fornece locais específicos no sistema de arquivos para armazenar programas e componentes de software, dados de aplicativo compartilhados e dados de aplicativo específicos para um usuário<dl> 10.1 Seu aplicativo deve ser instalado na pasta Arquivos de Programas por padrão <dl> Para aplicativos nativos de 32 bits e 64 bits em %ProgramFiles%, e %ProgramFiles(x86)% para aplicativos de 32 bits em execução no x64. Os dados do usuário ou os dados do aplicativo nunca devem ser armazenados nesse local devido às permissões de segurança configuradas para essa pasta.  
+</dl> </dd> 10.2 Your app must avoid starting automatically on startup <dl> Por exemplo, seu aplicativo não deve definir nenhum dos seguintes;  
 </dl>
 
--   Chaves de execução do Registro HKLM e, ou HKCU em software \\ Microsoft \\ Windows \\ CurrentVersion
--   Chaves de execução do Registro HKLM, e ou HKCU em software \\ Wow6432Node \\ Microsoft \\ Windows \\ CurrentVersion
--   Menu iniciar todos os programas > inicialização
+-   Chaves de run do Registro HKLM e ou HKCU em Software \\ Microsoft \\ Windows \\ CurrentVersion
+-   Chaves de run do Registro HKLM e ou HKCU em Software \\ Wow6432Nãode \\ Microsoft \\ windows \\ CurrentVersion
+-   Iniciar Menu TodosProgramas > INICIALIZAÇÃO
 
 </dd> 10.3 Your app data, which must be shared among users on the computer, should be stored within ProgramData  
-10.4 Your app s data that is exclusive to a specific user and that is not to be shared with other users of the computer, must be stored in Users\\<username>\\AppData  
-10,5 seu aplicativo nunca deve gravar diretamente no diretório "Windows" e ou subdiretórios <dl> Use os métodos corretos para instalar arquivos, como fontes ou drivers.  
-</dl> </dd> 10.6 Your app must write user data at first run and not during the installation in  per-machine  installations <dl> Quando o aplicativo é instalado, não há nenhum local de usuário correto no qual armazenar dados. As tentativas de um aplicativo para modificar os comportamentos de associação padrão em um nível de máquina após a instalação não serão bem-sucedidas. Em vez disso, os padrões devem ser reivindicados em um nível por usuário, o que impede que vários usuários substituam os padrões uns dos outros.  
-</dl> </dd> 10.7 Exceptions and Waivers <dl> Uma renúncia é necessária para aplicativos que gravam em aplicativos .NET do GAC (cache de assembly global) devem manter as dependências de assembly particulares e armazená-las no diretório do aplicativo, a menos que o compartilhamento de um assembly seja explicitamente necessário.  
+10.4 Your app s data that is exclusive to a specific user and that is not to be shared with other users of the computer, must be stored in Users\\<username>\\Appdata  
+10.5 Seu aplicativo nunca deve gravar diretamente no diretório "Windows" e ou subdireções <dl> Use os métodos corretos para instalar arquivos, como fontes ou drivers.  
+</dl> </dd> 10.6 Your app must write user data at first run and not during the installation in  per-machine  installations <dl> Quando o aplicativo é instalado, não há nenhum local de usuário correto no qual armazenar dados. As tentativas de um aplicativo de modificar comportamentos de associação padrão em um nível de computador após a instalação não serão bem-sucedidas. Em vez disso, os padrões devem ser reivindicados em um nível por usuário, o que impede que vários usuários sobrescrevam os padrões uns dos outros.  
+</dl> </dd> 10.7 Exceptions and Waivers <dl> Uma isenção é necessária para aplicativos que escrevem no GAC (cache de assembly global) . Os aplicativos .NET devem manter as dependências de assembly privadas e armazená-los no diretório do aplicativo, a menos que o compartilhamento de um assembly seja explicitamente necessário.  
 </dl> </dd> </dl>
 
-## <a name="11-apps-must-support-multi-user-sessions"></a>11. os aplicativos devem dar suporte a sessões de vários usuários
+## <a name="11-apps-must-support-multi-user-sessions"></a>11. Os aplicativos devem dar suporte a sessões de vários usuários
 
-Os usuários do Windows devem ser capazes de executar sessões simultâneas sem conflitos ou interrupções.<dl> 11,1 seu aplicativo deve garantir que, ao ser executado em várias sessões localmente ou remotamente, a funcionalidade normal do aplicativo não seja afetada negativamente  
-11,2 as configurações e os arquivos de dados do seu aplicativo não devem persistir entre os usuários  
-11,3 a privacidade e as preferências de um usuário devem ser isoladas na sessão s do usuário  
-11,4 as instâncias do aplicativo s devem ser isoladas umas das outras <dl> Isso significa que os dados do usuário de uma instância não são visíveis para outra instância do aplicativo. O som em uma sessão de usuário inativa não deve ser ouvido em uma sessão de usuário ativa. Nos casos em que várias instâncias de aplicativo usam recursos compartilhados, o aplicativo deve garantir que não haja um conflito.  
+Os usuários do Windows devem ser capazes de executar sessões simultâneas sem conflitos ou interrupções.<dl> 11.1 Seu aplicativo deve garantir que, ao executar em várias sessões local ou remotamente, a funcionalidade normal do aplicativo não seja afetada negativamente  
+11.2 As configurações e os arquivos de dados do aplicativo não devem persistir entre os usuários  
+11.3 A privacidade e as preferências de um usuário devem ser isoladas para a sessão do usuário  
+11.4 As instâncias do aplicativo devem ser isoladas umas das outras <dl> Isso significa que os dados do usuário de uma instância não são visíveis para outra instância do aplicativo. O som em uma sessão de usuário inativo não deve ser ouvido em uma sessão de usuário ativa. Nos casos em que várias instâncias de aplicativo usam recursos compartilhados, o aplicativo deve garantir que não haja um conflito.  
 </dl> </dd> 11.5 Apps that are installed for multiple users must store data in the correct folder(s) and registry locations <dl> Consulte os requisitos do UAC.  
 </dl> </dd> 11.6 User apps must be able to run in multiple user sessions (Fast User Switching) for both local and remote access  
 11.7 Your app must check other terminal service (TS) sessions for existing instances of the app  
 </dl>**Note:** If an app does not support multiple user sessions or remote access, it must clearly state this when launched from this kind of session.
 
-## <a name="12-apps-must-support-x64-versions-of-windows"></a>12. os aplicativos devem oferecer suporte a versões x64 do Windows
+## <a name="12-apps-must-support-x64-versions-of-windows"></a>12. Os aplicativos devem dar suporte a versões x64 do Windows
 
-Como o hardware de 64 bits se torna mais comum, os usuários esperam que os desenvolvedores de aplicativos aproveitem os benefícios da arquitetura de 64 bits migrando seus aplicativos para 64 bits ou que as versões de 32 bits do aplicativo sejam executadas bem em versões de 64 bits do Windows.<dl> 12,1 seu aplicativo deve dar suporte nativo a 64 bits ou, no mínimo, aplicativos baseados no Windows de 32 bits devem ser executados diretamente em sistemas de 64 bits para manter a compatibilidade com as versões de 64 bits do Windows  
-12,2 seu aplicativo e seus instaladores não devem conter nenhum código de 16 bits ou contar com qualquer componente de 16 bits  
-12,3 a instalação do aplicativo deve detectar e instalar os drivers e componentes adequados para a arquitetura de 64 bits  
-12,4 os plug-ins de shell devem ser executados em versões de 64 bits do Windows  
-12,5 aplicativo em execução no emulador WoW64 não deve tentar subverter ou ignorar mecanismos de virtualização WOW64 <dl> Se houver cenários específicos em que os aplicativos precisam detectar se estão sendo executados no emulador WoW64, eles devem fazer isso chamando IsWow64Process.  
+À medida que o hardware de 64 bits se torna mais comum, os usuários esperam que os desenvolvedores de aplicativos aproveitem os benefícios da arquitetura de 64 bits migrando seus aplicativos para 64 bits ou que as versões de 32 bits do aplicativo são bem executados em versões de 64 bits do Windows.<dl> 12.1 Seu aplicativo deve dar suporte nativo a 64 bits ou, no mínimo, aplicativos baseados no Windows de 32 bits devem ser executados perfeitamente em sistemas de 64 bits para manter a compatibilidade com versões de 64 bits do Windows  
+12.2 Seu aplicativo e seus instaladores não devem conter nenhum código de 16 bits nem depender de nenhum componente de 16 bits  
+12.3 A instalação do aplicativo deve detectar e instalar os drivers e componentes adequados para a arquitetura de 64 bits  
+12.4 Todos os plug-ins de shell devem ser executados em versões de 64 bits do Windows  
+12.5 O aplicativo em execução no emulador WoW64 não deve tentar subverter ou ignorar mecanismos de virtualização wow64 <dl> Se houver cenários específicos em que os aplicativos precisam detectar se estão em execução no emulador WoW64, eles devem fazer isso chamando IsWow64Process.  
 </dl> </dd> </dl>
 
-## <a name="summary-of-the-tests-performed-on-desktop-apps"></a>Resumo dos testes executados em aplicativos da área de trabalho
+## <a name="summary-of-the-tests-performed-on-desktop-apps"></a>Resumo dos testes executados em aplicativos da Área de Trabalho
 
 
 
-|                                                                         |                           |
+|   Nome do teste                                                             |   Resultados possíveis do teste   |
 |-------------------------------------------------------------------------|---------------------------|
-| **Nome do teste**                                                           | **Possíveis resultados de teste** |
-| Aderir às mensagens do Gerenciador de reinicialização do sistema                               | Aprovado/reprovado               |
-| Instalação reversível limpa                                                | Aprovação/falha/aviso     |
-| Compatibilidade & teste de resiliência                                         | Aprovação/falha/aviso     |
-| Teste de arquivo assinado digitalmente                                              | Aprovação/falha/aviso     |
-| Instalar no teste de pastas corretos                                     | Aviso                   |
+| Aderir às mensagens do gerenciador de reinicialização do sistema                               | Passar/Falhar               |
+| Limpar instalação reversível                                                | Pass/Fail/Warning     |
+| Teste de & de resiliência                                         | Pass/Fail/Warning     |
+| Teste de arquivo assinado digitalmente                                              | Pass/Fail/Warning     |
+| Instalar para o teste de pastas correto                                     | Aviso                   |
 | Teste de sessão multiusuário                                                  | Aviso                   |
-| Teste de verificação de versão do so                                                | Aprovado/reprovado               |
-| Teste do modo de segurança                                                          | Aprovado/reprovado               |
-| Suporte ao teste do Windows x64                                                | Aprovado/reprovado               |
-| Testar alterações nos recursos de segurança do Windows (analisador de superfície de ataque) | Aprovação/falha/aviso     |
-| Testar alterações nos recursos de segurança do Windows (analisador de binário BinScope) | Aviso                   |
-| Teste de controle de conta de usuário (UAC)                                         | Aprovação/falha/aviso     |
+| Teste de verificação de versão do sistema operacional                                                | Passar/Falhar               |
+| Teste de modo de segurança                                                          | Passar/Falhar               |
+| Suporte ao teste do Windows x64                                                | Passar/Falhar               |
+| Testar alterações nos recursos de segurança do Windows (Analisador de Superfície de Ataque) | Pass/Fail/Warning     |
+| Testar alterações nos recursos de segurança do Windows (Analisador Binário binScope) | Aviso                   |
+| Teste de UAC (controle de conta de usuário)                                         | Pass/Fail/Warning     |
 
 
 
@@ -207,7 +206,7 @@ Como o hardware de 64 bits se torna mais comum, os usuários esperam que os dese
 
 ## <a name="conclusion"></a>Conclusão
 
-À medida que esses requisitos evoluem, observaremos as alterações no histórico de revisão abaixo. Os requisitos estáveis são essenciais para fazer seu melhor trabalho, portanto, direcionaremos para garantir que as alterações que fazemos são sustentáveis e continuem a proteger e aprimorar seus aplicativos.
+À medida que esses requisitos evoluem, observaremos as alterações no histórico de revisão abaixo. Os requisitos estáveis são essenciais para fazer seu melhor trabalho, portanto, vamos garantir que as alterações feitas sejam sustentáveis e continuar a proteger e aprimorar seus aplicativos.
 
 Obrigado novamente por ingressar em nosso compromisso de fornecer excelentes experiências do cliente.
 
@@ -215,9 +214,8 @@ Obrigado novamente por ingressar em nosso compromisso de fornecer excelentes exp
 
 
 
-|              |         |                                                                 |                                                                              |
-|--------------|---------|-----------------------------------------------------------------|------------------------------------------------------------------------------|
 | Data         | Versão | Descrição da revisão                                            | Link para o documento                                                             |
+|--------------|---------|-----------------------------------------------------------------|------------------------------------------------------------------------------|
 | 20 de dezembro de 2011 | 1.0     | Rascunho inicial do documento para visualização.                          |                                                                              |
 | 26 de janeiro de 2012 | 1,1     | Atualize para a seção \# 2.                                          | [1.1](archive--certification-requirements-for-windows-desktop-apps-v1-1.md) |
 | 31 de maio de 2012 | 1.2     | Resultados de teste de resumo adicionados<br/> Documento final<br/> | 1.2                                                                          |
@@ -230,9 +228,8 @@ Obrigado novamente por ingressar em nosso compromisso de fornecer excelentes exp
 
 
 
-|                                                                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                             |
-|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Requisito                                                                     | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Mais detalhes                                                                                                                                                                                                                                                                                |
+|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Compatibilidade e resiliência                                                    | Falhas & travas são uma grande interrupção dos usuários e causam frustração. Os aplicativos devem ser resilientes e estáveis, eliminando essas falhas ajuda a garantir que o software seja mais previsível, passível de manutenção, com bom desempenho e confiável.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | [Sistemas operacionais Windows Vista, Windows 7 e Windows 8](/previous-versions/windows/it-pro/windows-7/cc722305(v=ws.10))<br/> [Application Verifier](/previous-versions/aa480483(v=msdn.10))<br/> [AppInit DLLs](https://support.microsoft.com/kb/197571)<br/> |
 | Siga as práticas recomendadas de segurança do Windows                                       | Usar as práticas recomendadas de segurança do Windows ajudará a evitar a criação de exposição a superfícies de ataque do Windows. As superfícies de ataque são os pontos de entrada que um invasor mal-intencionado poderia usar para explorar o sistema operacional aproveitando as vulnerabilidades no software de destino. Uma das piores vulnerabilidades de segurança é a elevação de privilégio.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | [Analisador de superfície de ataque](https://technet.microsoft.com/security/gg749821)<br/> [Listas de controle de acesso](/windows/desktop/SecAuthZ/access-control-lists)<br/>                                                                                                                                |
 | Suporte a recursos de segurança do Windows                                               | O sistema operacional Windows implementou muitas medidas para dar suporte à segurança e privacidade do sistema. Os aplicativos devem dar suporte a essas medidas para manter a integridade do sistema operacional. Aplicativos compilados incorretamente poderiam causar estouros de buffer que, por sua vez, poderiam causar negação de serviço ou fazer com que um código mal-intencionado seja executado.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | [Referência da ferramenta BinScope](https://blogs.microsoft.com/cybertrust/2012/08/15/microsofts-free-security-tools-binscope-binary-analyzer/)<br/>                                                                                                                                             |

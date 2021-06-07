@@ -4,12 +4,12 @@ description: As guias fornecem uma maneira de apresentar informações relaciona
 ms.assetid: d90228ce-aa95-4359-be8e-ea2014d71ae6
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: b2649862885e55bdfe10fdca7f34b7618d976a38
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: d6922865abcaa060cc2e4b13e4768d57bcd17aa8
+ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104565953"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111524470"
 ---
 # <a name="tabs"></a>Guias
 
@@ -49,7 +49,7 @@ As guias têm vários padrões de uso:
 
 
 
-|                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                     |
+|  Uso                                                                                                                                                                                                 |    Exemplo                                                                                                                                                                                                                                                                                                                                                                 |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Superfície de janela dinâmica**<br/> como barras de rolagem, as guias podem ser usadas para aumentar a área de superfície da janela para mostrar informações relacionadas.<br/>                                                    | Com esse padrão, o uso de guias é conceitualmente semelhante a colocar todas as informações nas guias linearmente em uma única superfície rolável, com os rótulos da guia como títulos. <br/> ![captura de tela de cinco guias ](images/ctrl-tabs-image1.png)<br/> Neste exemplo, as guias aumentam efetivamente a área da superfície da janela.<br/>                          |
 | **Várias exibições**<br/> como botões de divisão ou listas suspensas, as guias podem ser usadas para mostrar exibições diferentes da mesma ou de informações relacionadas. <br/>                                           | ![captura de tela das guias design, divisão e visualização ](images/ctrl-tabs-image2.png)<br/> Neste exemplo, as guias alteram exibições em um documento.<br/>                                                                                                                                                                                                         |

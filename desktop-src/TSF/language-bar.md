@@ -17,12 +17,12 @@ keywords:
 - botões de menu
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c41d64a488406f6eefcff5fef6c11093af00bc5b
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 0e3c4359c6753f5d96613435f9501036f1d5f317
+ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104369163"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111524440"
 ---
 # <a name="language-bar-text-services"></a>Barra de idiomas (serviços de texto)
 
@@ -34,7 +34,7 @@ Quatro tipos de itens de barra de idiomas podem ser instalados e cada uma das in
 
 
 
-|               |                                                                                                                                                                                   |
+|   Elemento            |    Descrição                                                                                                                                                                               |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Botão        | Um botão de barra de idiomas funciona como um botão de comando, um controle de alternância ou um menu na barra de idiomas. O objeto deve dar suporte à interface ITfLangBarItemButton.                   |
 | Balão       | Um balão de barra de idiomas funciona como uma notificação pop-up na barra de idiomas. O objeto deve dar suporte à interface ITfLangBarItemBalloon.                                       |
@@ -51,7 +51,7 @@ Um elemento Button pode funcionar como qualquer um dos seguintes. A função do 
 
 
 
-|               |                                                                                                                                                                                                                                                                                                                                                                                      |
+|    Elemento           |    Descrição                                                                                                                                                                                                                                                                                                                                                                                  |
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Botão        | O botão funciona como um botão de comando padrão. Esse estilo de botão é identificado pelo \_ estilo de botão TF bin \_ Style \_ BTN \_ . ITfLangBarItemButton:: OnClick é chamado quando o item é clicado. ITfLangBarItemButton:: InitMenu e ITfLangBarItemButton:: OnMenuSelect não são usados.                                                                                                   |
 | Botão de alternância | O botão funciona como um controle de alternância que pode manter um estado clicado, semelhante a uma caixa de seleção. Esse estilo de botão é identificado pelo \_ estilo de alternância TF bin \_ Style \_ BTN \_ . ITfLangBarItemButton:: OnClick é chamado quando o item é clicado. ITfLangBarItemButton:: InitMenu e ITfLangBarItemButton:: OnMenuSelect não são usados.                                                  |

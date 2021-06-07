@@ -4,12 +4,12 @@ ms.assetid: fbb86bef-68f7-4aad-8a98-1c68e79ea2de
 title: Elemento de imagem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8437495a4c248a8e5bc68a0f7b75a2cf7d761387
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e9dd3b37a39ce45ee0294f46922fbab376523b64
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105807168"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432578"
 ---
 # <a name="image-element"></a>Elemento de imagem
 
@@ -37,7 +37,7 @@ Nenhum.
 
 | Atributo  | Type                      | Obrigatório | Descrição                                                                             | Valores possíveis           |
 |------------|---------------------------|----------|-----------------------------------------------------------------------------------------|---------------------------|
-| **Mantida**   | **xs:integer**            | Obrigatório | A distância da origem até o ponto mais à esquerda na caixa delimitadora para o elemento. | Qualquer inteiro.              |
+| **Left**   | **xs:integer**            | Obrigatório | A distância da origem até o ponto mais à esquerda na caixa delimitadora para o elemento. | Qualquer inteiro.              |
 | **Top**    | **xs:integer**            | Obrigatório | A distância da origem até o ponto superior na caixa delimitadora para o elemento.  | Qualquer inteiro.              |
 | **Largura**  | **xs:nonNegativeInteger** | Obrigatório | A largura da caixa delimitadora para o elemento.                                          | Qualquer inteiro não negativo. |
 | **Altura** | **xs:nonNegativeInteger** | Obrigatório | A altura da caixa delimitadora para o elemento.                                         | Qualquer inteiro não negativo. |
@@ -50,7 +50,7 @@ Nenhum.
 
 
 
-|              |                                                         |
+|  Elemento     | Valor                                                     |
 |--------------|---------------------------------------------------------|
 | Tipo de elemento | ComplexType [**ImageType**](imagetype-complex-type.md) |
 | Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk              |
@@ -64,7 +64,7 @@ Nenhum.
 
 <dl> <dt>
 
-[**Tela de fundo**](background-element.md)
+[**Segundo plano**](background-element.md)
 </dt> </dl>
 
  

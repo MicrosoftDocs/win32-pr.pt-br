@@ -4,12 +4,12 @@ description: A interação é a variedade de maneiras como os usuários interage
 ms.assetid: 1509c885-f4dc-4cf9-86a3-cc6754d3b4a0
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: fbbbed55bbee1b1b0a028bada4e9d97682d9c293
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 869034e8d7cc8b9d7023e1511482dae203c14b49
+ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105770548"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111524170"
 ---
 # <a name="interaction"></a>Interação
 
@@ -32,9 +32,8 @@ Esta tabela mostra algumas das diferenças entre os dispositivos de entrada que 
 
 
 
-|                                 |                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                 |                                                     |
+| Fator          | Interações por toque   | Interações de mouse, teclado e caneta/stylus | Touchpad  |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| **Fator**<br/>           | **Interações por toque**<br/>                                                                                                                                                                                | **Interações de mouse, teclado e caneta/stylus**<br/>                                                                                                                                                                                                                                                         | **Touchpad**<br/>                             |
 | **Precisão**<br/>        | A área de contato da ponta do dedo é maior do que uma coordenada x-y única, o que aumenta a probabilidade de ativações de comando acidentais.<br/>                                                               | O mouse e a caneta/stylus fornecem uma coordenada x-y precisa.<br/>                                                                                                                                                                                                                                            | Igual ao mouse.<br/>                           |
 |                                 | O formato da área de contato altera ao longo do movimento. <br/>                                                                                                                                       | Os movimentos do mouse e traços da caneta/stylus fornecem uma coordenada x-y precisa. O foco do teclado é explícito.<br/>                                                                                                                                                                                                   | Igual ao mouse.<br/>                           |
 |                                 | Não há cursor do mouse para ajudar no direcionamento.<br/>                                                                                                                                                    | O cursor do mouse, o cursor da caneta/stylus e o foco do teclado, todos ajudarão no direcionamento.<br/>                                                                                                                                                                                                                   | Igual ao mouse.<br/>                           |

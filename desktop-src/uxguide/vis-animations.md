@@ -1,338 +1,338 @@
 ---
 title: Animações e transições
-description: O uso estratégico de animações e transições pode tornar seu programa mais fácil de entender, se sentir mais suave, mais natural e de maior qualidade e ser mais atrativo.
+description: O uso estratégico de animações e transições pode tornar seu programa mais fácil de entender, se sentir mais suave, mais natural e de maior qualidade e ser mais envolvente.
 ms.assetid: 9e0e9604-f051-47e4-bcd0-59fbfd38b9c1
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 6d57c696bd78df9c9505bb85453456f10631a00d
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 546c1d0a59808b54f4ffa12fc7cd034554521ca3
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104557197"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444757"
 ---
 # <a name="animations-and-transitions"></a>Animações e transições
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
 
-O uso estratégico de animações e transições pode tornar seu programa mais fácil de entender, se sentir mais suave, mais natural e de maior qualidade e ser mais atrativo. Mas o uso gratuito de animações e transições pode deixar seu programa confuso e até mesmo irritante.
+O uso estratégico de animações e transições pode tornar seu programa mais fácil de entender, se sentir mais suave, mais natural e de maior qualidade e ser mais envolvente. Mas o uso gratuito de animações e transições pode tornar seu programa uma distração e até mesmo entediante.
 
-As animações dão a aparência de movimento ou alteração ao longo do tempo. Use a animação para fornecer comentários, Visualizar o efeito de uma ação, mostrar a relação entre objetos, chamar a atenção para alterar ou explicar uma tarefa visualmente.
+Animações dão a aparência de movimento ou alteração ao longo do tempo. Use a animação para fazer comentários, visualizar o efeito de uma ação, mostrar a relação entre objetos, chamar a atenção para a alteração ou explicar uma tarefa visualmente.
 
 ![figura do teclado numérico com uma chave realçada ](images/vis-animations-image1.png)
 
-O Microsoft Windows usa uma animação flash em segundo plano para fornecer comentários de que o objeto foi clicado.
+O Microsoft Windows usa uma animação flash em segundo plano para dar comentários de que o objeto foi clicado.
 
-As transições são animações usadas para manter os usuários orientados durante alterações de estado da interface do usuário e manipulações de objetos e fazer com que essas alterações se sintam suaves em vez de dissonante. Boas transições sentem-se naturais, geralmente dando a ilusão de que os usuários estão interagindo com objetos do mundo real.
+As transições são animações usadas para manter os usuários orientados durante as alterações de estado da interface do usuário e manipulações de objeto e fazer com que essas alterações se sintam suaves em vez de jarring. As boas transições são naturais, geralmente dando a ilusão de que os usuários estão interagindo com objetos do mundo real.
 
-![Captura de tela que mostra três tamanhos de gadgets meteorológicos.](images/vis-animations-image2.png)
+![Captura de tela que mostra três tamanhos de weather weather.](images/vis-animations-image2.png)
 
-Os gadgets do Windows Desktop usam transições suaves entre seus Estados conciso e detalhados.
+Os Desktop Desktops do Windows usam transições suaves entre seus estados concisos e de detalhes.
 
-Em geral, as melhores animações e transições são usadas para se comunicar com os usuários de forma não verbal, e para fazer alterações de estado mais naturais e menos perceptíveis. Por outro lado, o menos eficaz é gratuito, pois eles não se comunicam nada nem desenham atenção desnecessária. As animações são mais bem usadas como uma forma secundária de comunicação. Eles devem comunicar informações que são úteis, mas não são essenciais, e para serem acessíveis, os usuários devem ser capazes de determinar informações equivalentes por meio de outros meios.
+Em geral, as melhores animações e transições são usadas para se comunicar com usuários não verbais e para tornar as alterações de estado mais naturais e menos perceptíveis. Por outro lado, os menos eficazes são gratuitos, já que eles não comunicam nada ou chamam atenção desnecessária. As animações são mais bem usadas como uma forma secundária de comunicação. Eles devem comunicar informações úteis, mas não críticas, e para serem acessíveis, os usuários devem ser capazes de determinar informações equivalentes por outros meios.
 
-**Observação:** As diretrizes relacionadas à [identidade visual](exper-branding.md), [som](vis-sound.md)e [acessibilidade](inter-accessibility.md) de software são apresentadas em artigos separados.
+**Observação:** Diretrizes relacionadas à identidade visual [de](vis-sound.md) [software,](exper-branding.md)som [e acessibilidade](inter-accessibility.md) são apresentadas em artigos separados.
 
-## <a name="is-this-the-right-user-interface"></a>Esta é a interface do usuário correta?
+## <a name="is-this-the-right-user-interface"></a>Essa é a interface do usuário certa?
 
 Para decidir, considere as perguntas a seguir.
 
 ### <a name="animations"></a>Animações
 
-As seguintes condições se aplicam?
+As condições a seguir se aplicam?
 
--   A animação comunica visualmente algo útil, como fornecer comentários, mostrar relações, causas e efeitos ou dar atenção à alteração importante.
+-   A animação comunica visualmente algo útil, como dar comentários, mostrar relações, causas e efeitos ou chamar a atenção para mudanças importantes.
 -   Ver a animação não é essencial. Informações equivalentes podem ser obtidas de outra maneira. Os usuários podem não se beneficiar da animação se:
-    -   Eles desligaram as animações.
-    -   Sua atenção é em outro lugar.
+    -   Eles desligaram animações.
+    -   A atenção deles está em outro lugar.
     -   Eles são visualmente prejudicados.
     -   A animação é obscurecida por outra janela.
-    -   A animação não é reproduzida devido ao desempenho insuficiente do sistema.
+    -   A animação não é tocada devido ao desempenho insuficiente do sistema.
 -   A animação não afeta a produtividade do usuário. Ou:
     -   Isso ocorre rapidamente (200 milissegundos ou menos).
     -   Ele não interfere na interação ou pode ser interrompido.
-    -   O usuário precisa esperar de qualquer forma.
+    -   O usuário precisa aguardar mesmo assim.
 -   A animação não afeta o fluxo do usuário.
-    -   Ele está no centro do usuário de atenção ou chama atenção para algo fora do centro de atenção que é importante ou útil para a conclusão de uma tarefa.
-    -   Ele é facilmente ignorável, sem distração ou irritante.
-    -   Ele não se torna cansativo. Os usuários ainda acham apropriado e agradável mesmo após a exibição repetida.
+    -   Ele está no centro da atenção do usuário ou chama a atenção para algo fora do centro da atenção que é importante ou útil na conclusão de uma tarefa.
+    -   Ele é facilmente ignorável, não é desapregável nem entediante.
+    -   Isso não se torna cansativa. Os usuários ainda o acharão apropriado e agradável mesmo após a exibição repetida.
 
-Nesse caso, considere usar uma animação.
+Se sim, considere o uso de uma animação.
 
 ### <a name="transitions"></a>Transições
 
-É um estado de alteração de objeto ou de cena e todas as condições acima para usar animações, bem como qualquer uma das seguintes condições se aplicam?
+Um objeto ou um estado de alteração de cena e todas as condições acima para usar animações, bem como qualquer uma das condições a seguir, se aplicam?
 
--   A alteração de estado é, de forma conceitual, desorientada, confusa ou difícil de entender.
--   A alteração de estado é visualmente dissonante, não tem continuidade ou suavidade, ou pisca; ou parecer innatural, inaprimored ou de baixa qualidade, especialmente se envolver uma área de tela grande.
--   O uso de uma transição faria com que a alteração de estado fosse mais rápida.
--   A alteração de estado é digna de atenção especial do usuário.
+-   A alteração de estado é conceitualmente confusa, confusa ou difícil de entender.
+-   A alteração de estado é visualmente jarring, não tem continuidade ou suavidade ou flashes; ou aparece desinteressado, desbaixado ou de baixa qualidade, especialmente se envolver uma área de tela grande.
+-   Usar uma transição faria a alteração de estado aparecer mais rapidamente.
+-   A alteração de estado é o que vale a atenção especial do usuário.
 
-Nesse caso, considere usar uma transição.
+Se sim, considere o uso de uma transição.
 
 ## <a name="design-concepts"></a>Conceitos de design
 
-Animações e transições são uma maneira eficaz de comunicar informações visualmente que, de outra forma, exigem texto para explicar ou podem ser perdidas por usuários.
+Animações e transições são uma maneira eficaz de comunicar informações visualmente que, de outra forma, exigiriam texto para explicar ou que poderiam ser perdidas pelos usuários.
 
 **Incorreto:**
 
-![captura de tela da caixa de diálogo com a mensagem ](images/vis-animations-image3.png)
+![captura de tela da caixa de diálogo com mensagem ](images/vis-animations-image3.png)
 
 **Correto:**
 
-![Figura de comunicação visual de animação ](images/vis-animations-image4.png)
+![figura de animação se comunicando visualmente ](images/vis-animations-image4.png)
 
-O uso de uma animação comunica as mesmas informações, mas de forma natural e discreta. Qual seria o que você veria em milhares de vezes?
+O uso de uma animação comunica as mesmas informações, mas de maneira natural e não discreta. Qual você prefere ver milhares de vezes?
 
-**Animações e transições não precisam exigir atenção para serem bem-sucedidas.** Na verdade, eles costumam ser usados para evitar a atenção da mecânica para programar a qual os usuários não precisam estar cientes. Muitas animações bem-sucedidas são tão naturais que os usuários nem mesmo estão cientes delas; em vez disso, os usuários observarão apenas sua ausência. A frequência de ocorrências aumenta a necessidade de sutilezas, portanto, salve os efeitos que exigem atenção para eventos infrequentes que realmente merecem a atenção.
+**Animações e transições não têm que exigir atenção para serem bem-sucedidas.** Na verdade, elas geralmente são usadas para evitar chamar a atenção para a mecânica do programa que os usuários não precisam estar cientes. Muitas animações bem-sucedidas são tão naturais que os usuários nem estão cientes delas; em vez de os usuários perceberem apenas sua ausência. A frequência de ocorrência aumenta a necessidade de sutileza, portanto, salve os efeitos que exigem atenção para eventos pouco frequentes que realmenteam a atenção.
 
 ![captura de tela de todos os programas mudando para seta para voltar ](images/vis-animations-image5.png)
 
-Uma transição do menu iniciar que evita a atenção do desenho.
+Uma menu Iniciar transição que evita chamar a atenção.
 
-Além de tornar seu programa mais fácil de entender e se sentir mais suave, **animações e transições bem projetadas são uma ótima maneira de adicionar personalidade, caractere e estilo ao seu programa.** Eles podem tornar a experiência do usuário mais imersiva e envolvente, dando a ele uma sensação natural e real.
+Além de tornar seu programa mais fácil de entender e se sentir mais suave, animações e transições bem projetadas são uma ótima maneira de adicionar personalidade, caractere e **estilo ao seu programa.** Eles podem tornar a experiência do usuário mais imersiva e envolvente, dando a ele uma sensação natural e real.
 
-![Figura mostrando como o foco afeta a cor do botão ](images/vis-animations-image6.png)
+![figura mostrando como o foco afeta a cor do botão ](images/vis-animations-image6.png)
 
-O Windows 7 realça os botões da barra de tarefas em foco com base na posição atual do mouse e na cor do ícone do programa. Essa abordagem é visualmente atraente, mas sutil, que transmite uma personalidade modesta.
+O Windows 7 realça os botões da barra de tarefas ao passar o mouse com base na posição atual do mouse e na cor do ícone do programa. Essa abordagem é visualmente atraente, mas sutil, transmitindo uma personalidade descarada.
 
-**No entanto, animações e transições são mais eficazes e boas-vindas quando atendem a uma finalidade clara.** Eles devem ser usados para melhorar a usabilidade, a suavidade e o fluxo, bem como a percepção da qualidade, sem prejudicar o desempenho de forma significativa.
+**No entanto, animações e transições são mais eficazes e bem-vindas quando atendem a uma finalidade clara.** Eles devem ser usados para melhorar a usabilidade, a suavidade e o fluxo e a percepção da qualidade, sem prejudicar significativamente o desempenho.
 
-Embora alguns tipos de animações sejam usados para atrair a atenção do usuário, certifique-se de que a atenção seja bem merecida e digno de interrupção do treinamento de pensamento do usuário. O olho humano é sensível ao movimento, especialmente o movimento periférico. Pode ser difícil para os usuários se concentrarem quando houver um botão de barra de tarefas piscando ou um ícone de área de notificação girando. **Evite usar animações para interromper ou distrair os usuários ou chamar a atenção para coisas que não asseguram a atenção do usuário.**
+Embora alguns tipos de animações sejam usados para chamar a atenção do usuário, certifique-se de que a atenção seja bem animada e meso de interromper o treinamento de pensamento do usuário. O olhar humano é sensível ao movimento, especialmente o movimento periférico. Pode ser difícil para os usuários se concentrarem quando há um botão de barra de tarefas piscando ou um ícone de área de notificação giratória. **Evite usar animações para interromper ou desviar os usuários ou chamar a atenção para coisas que não garantem a atenção do usuário.**
 
 **Incorreto:**
 
-![figura do botão da barra de tarefas realçado sem motivo ](images/vis-animations-image7.png)
+![figura do botão de barra de tarefas realçada sem motivo ](images/vis-animations-image7.png)
 
-Os programas não devem piscar o botão da barra de tarefas a menos que os usuários devam fazer algo importante imediatamente. Nesse caso, a única coisa que o usuário precisa fazer é ativar o programa.
+Os programas não devem piscar o botão da barra de tarefas, a menos que os usuários devem fazer algo importante imediatamente. Nesse caso, a única coisa que o usuário precisa fazer é ativar o programa.
 
-**Use animações e transições porque seu programa precisa delas, não apenas porque você pode.** E para acessibilidade, não use animação como a única maneira de transmitir informações essenciais. Certifique-se de que os usuários possam obter informações equivalentes de uma maneira diferente.
+**Use animações e transições porque seu programa precisa delas, não simplesmente porque você pode.** E, para acessibilidade, não use animação como a única maneira de transmitir informações essenciais. Certifique-se de que os usuários possam obter informações equivalentes de uma maneira diferente.
 
 ### <a name="attributes-of-good-animations-and-transitions"></a>Atributos de boas animações e transições
 
-Boas animações e transições têm o equilíbrio certo entre estes atributos:
+As boas animações e transições atingem o equilíbrio certo entre esses atributos:
 
--   **São claramente intencionais.** As boas animações estão lá porque precisam se comunicar com informações, fazer uma interação real ou chamar a atenção para algo digno de opinião. E as animações intencionais são precisas; se uma animação mostrar que uma tarefa está sendo feita, é porque a tarefa está sendo realmente executada.
+-   **São claramente proposital.** Boas animações estão lá porque precisam estar, seja para comunicar informações, fazer com que uma interação se sinta real ou chamar a atenção para algo importante. E animações propositivas são precisas; se uma animação mostra que uma tarefa está sendo feita, é porque a tarefa está sendo feita na verdade.
 
 **Incorreto:**
 
-![captura de tela do ícone de bateria e rótulo com cobrança total ](images/vis-animations-image8.png)
+![captura de tela do ícone de bateria e rótulo de carga total ](images/vis-animations-image8.png)
 
-Neste exemplo, a animação mostra que uma bateria totalmente carregada está sendo cobrada.
+Neste exemplo, a animação mostra que uma bateria totalmente carregada está sendo carregada.
 
--   **Parecer suave e contínuo.** Boas animações removem suavemente as emendas entre as alterações de estado da cena ou do elemento mostrando relações e fornecendo uma noção de lugar e contexto. A continuidade ajuda os usuários a entender como eles têm onde eles estão e como voltar para onde eles vieram.
+-   **Parece suave e contínua.** As boas animações removem suavemente as seams entre as alterações de estado da cena ou do elemento mostrando relações e fornecendo uma noção de local e contexto. A continuidade ajuda os usuários a entender como eles foram para onde estão e como voltar para o local em que eles vieram.
 
 ![captura de tela de três visualizações da janela da barra de tarefas ](images/vis-animations-image9.png)
 
-A janela da barra de tarefas do Windows 7 visualização é metamorfoseada para fins de continuidade à medida que o usuário passa de um programa para outro.
+A visualização da janela da barra de tarefas do Windows 7 se transforma para continuidade à medida que o usuário passa de um programa para outro.
 
--   **São realistas.** Boas animações simulam as propriedades físicas e o comportamento de um objeto no mundo real. Isso ajuda os usuários a prever e entender os resultados de suas interações. Você não precisa modelar o mundo real exatamente, mas se você usar animações realistas, deverá mantê-las consistentes com o mundo real. Os usuários nunca devem ficar surpresos ou confusos com os resultados, especialmente com animações usadas para manipulação direta.
+-   **São realistas.** As boas animações simulam as propriedades físicas e o comportamento de um objeto do mundo real. Isso ajuda os usuários a prever e entender os resultados de suas interações. Você não precisa modelar o mundo real exatamente, mas se usar animações realistas, deverá mantê-las consistentes com o mundo real. Os usuários nunca devem se confundir ou se confundir com os resultados, especialmente com animações usadas para manipulação direta.
 
-![figura do botão da barra de tarefas arrastada para nova posição ](images/vis-animations-image10.png)
+![figura do botão de barra de tarefas arrastado para a nova posição ](images/vis-animations-image10.png)
 
-Neste exemplo, a animação "sair da forma" usada pela barra de tarefas do Windows 7 se sente mais realista do que um ponto de inserção estático.
+Neste exemplo, a animação "sair do caminho" usada pela barra de tarefas do Windows 7 parece mais realista do que um ponto de inserção estático.
 
--   **São autênticos.** Até mesmo os objetos que não são encontrados no mundo real podem parecer naturais com base no comportamento real de um objeto diferente, mas relacionado. Essa metáfora só funcionará se a relação se comunicar claramente com a finalidade e o comportamento pretendidos.
+-   **São autenticas.** Até mesmo objetos que não são encontrados no mundo real podem parecer naturais com base no comportamento do mundo real de um objeto diferente, mas relacionado. Essa metáfora só funcionará se a relação comunicar claramente a finalidade e o comportamento pretendido.
 
 ![captura de tela do efeito gerado por trás da janela movida ](images/vis-animations-image11.png)
 
-Neste exemplo, a animação de janela "Squeegee" usada pelo Windows 7 é autêntica porque é consistente com a forma como as janelas de vidro podem se comportar no mundo real.
+Neste exemplo, a animação de "squeegee" da janela usada pelo Windows 7 parece autenticada porque é consistente com como as janelas de vidro podem se comportar no mundo real.
 
--   **Use o mapeamento natural.** Os mapeamentos naturais são físicos ou culturais. Um mapeamento natural baseado em cultura, por exemplo, pode começar do fato que nas culturas ocidentais, as pessoas lêem da esquerda para a direita. Consequentemente, para expressar uma sequência de tempo de objetos, o objeto do meio é atual, os objetos à esquerda são do passado e os objetos à direita estão no futuro. O avanço no tempo é indicado pelo movimento da esquerda para a direita.
+-   **Use o mapeamento natural.** Mapeamentos naturais são físicos ou culturais. Um mapeamento natural baseado culturalmente, por exemplo, pode começar com o fato de que, em culturas ocidental, as pessoas leem da esquerda para a direita. Consequentemente, para expressar uma sequência de tempo de objetos, o objeto do meio é atual, os objetos à esquerda são do passado e os objetos à direita estão no futuro. Avançar no tempo é indicado pelo movimento da esquerda para a direita.
 
 ![captura de tela da barra de progresso do player de mídia ](images/vis-animations-image12.png)
 
-Neste exemplo, o controle do Windows Media Player tem um mapeamento natural porque a reprodução move a posição da esquerda para a direita.
+Neste exemplo, o controle Windows Media Player tem um mapeamento natural porque a reprodução move a posição da esquerda para a direita.
 
--   **Têm personalidade.** As animações bem escolhidas são ótimas maneiras de adicionar personalidade, caractere e estilo ao seu programa. Eles podem tornar a experiência do usuário mais envolvente e envolvente. Embora o tipo de animação determine o que ele comunica, a maneira específica na qual a animação é executada mostra a personalidade do programa. Boas animações projetam a personalidade certa para seu programa, seja sério ou estranho ou em algum lugar entre eles.
+-   **Ter personalidade.** Animações bem escolhidas são ótimas maneiras de adicionar personalidade, caractere e estilo ao programa. Eles podem tornar a experiência do usuário mais imersiva e envolvente. Embora o tipo de animação determine o que ela se comunica, a maneira específica na qual a animação é executada mostra a personalidade do programa. Boas animações projetam a personalidade certa para seu programa, seja sério ou desalmado, ou em algum lugar entre eles.
 
-![captura de tela da interface Zune criada de forma criativa ](images/vis-animations-image13.png)
+![captura de tela da interface zune projetada de forma criadora ](images/vis-animations-image13.png)
 
-Neste exemplo, o uso Zune do texto animado e da ajuda de perspectiva dinâmica forma sua personalidade.
+Neste exemplo, o uso de Zune de texto animado e perspectiva dinâmica ajuda a moldar sua personalidade.
 
--   **Aparência responsiva.** Boas animações não prejudicam a produtividade do usuário, bloqueando os usuários de outras interações ou forçando os usuários a assistirem. Não importa quão naturais e envolvem as animações de seu programa, ninguém deseja esperar por elas exclusivamente. Boas animações também parecem responsivas sem serem dissonantedas tendo um início rápido com uma aterrissagem flexível. Animações responsivas também se beneficiam da comunicação rápida da sua finalidade. Os usuários não precisam observar uma animação por muito tempo apenas para descobrir o que está fazendo ou quando isso é feito. Para a manipulação direta, animações responsivas são essenciais para manter uma sensação direta e envolvente do mundo real. Para se sentir direto, os pontos de contato de um objeto devem permanecer sob o ponteiro sem problemas em toda a manipulação. Qualquer atraso, resposta instável ou perda de contato destrói a percepção da manipulação direta.
+-   **Procure e sinta-se responsivo.** Boas animações não prejudicam a produtividade do usuário bloqueando os usuários de outras interações ou forçando os usuários a assistir. Não importa o quanto as animações do programa sejam naturais e envolvente, ninguém quer esperar por elas exclusivamente. Animações boas também parecem responsivas sem serem jarring, tendo um início rápido com uma aterrissagem suave. Animações responsivas também se beneficiam de comunicar sua finalidade rapidamente. Os usuários não devem ter que assistir a uma animação por um longo tempo apenas para descobrir o que ela está fazendo ou quando ela é feita. Para manipulação direta, animações responsivas são essenciais para manter uma sensação direta e envolvente do mundo real. Para se sentir direto, os pontos de contato de um objeto devem permanecer sob o ponteiro sem problemas durante a manipulação. Qualquer retardo, resposta mesiva ou perda de contato destrói a percepção da manipulação direta.
 
 ![figura do dedo tocando em uma tela sensível ao toque ](images/vis-animations-image14.png)
 
-Neste exemplo, a transição de panorâmica de toque se sente responsivo mantendo o ponto de contato sob o dedo do usuário em toda a manipulação.
+Neste exemplo, a transição de panorâmico de toque parece responsiva mantendo o ponto de contato sob o dedo do usuário durante a manipulação.
 
--   **Atraia o nível certo de atenção.** Boas animações são geralmente sutis e desenham apenas a atenção necessária para atender às suas finalidades. Como resultado, eles não são confusos, irritantes, excessivamente complexos, excessivamente longos ou repetitivos. Eles não se tornam cansativo após as exibições repetidas.
+-   **Atrair o nível certo de atenção.** Animações boas geralmente são sutis e chamam apenas a atenção necessária para atender às suas finalidades. Como resultado, eles não são desalocar, entediantes, muito complexos, muito longos ou repetitivos. Elas não se tornam cansativas após exibições repetidas.
 
-![captura de tela do realce de esmaecimento em nomes de arquivo ](images/vis-animations-image15.png)
+![captura de tela de realce de esbotão em nomes de arquivo ](images/vis-animations-image15.png)
 
-Neste exemplo, o Windows Search chama temporariamente a atenção para correspondência de palavras de pesquisa e, em seguida, desaparece.
+Neste exemplo, a pesquisa do Windows chama temporariamente a atenção para palavras de pesquisa correspondentes e, em seguida, esmaece.
 
--   **Só se parece especial se for autêntico.** A frequência aumenta a necessidade de sutilezas, portanto, as interações comuns precisam de animações simples que comunicam uma ideia simples de uma maneira simples. Reserve animações especiais e complexas para experiências especiais e frequentes.
+-   **Só será especial se for genuinamente especial.** A frequência aumenta a necessidade de sutileza, portanto, as interações comuns precisam de animações simples que comuniquem uma ideia simples de maneira simples. Reserve animações especiais e complexas para experiências especiais e pouco frequentes.
 
-![captura de tela de quatro círculos se tornando o logotipo do Windows ](images/vis-animations-image16.png)
+![captura de tela de quatro círculos se tornando logotipo do Windows ](images/vis-animations-image16.png)
 
-Neste exemplo, o Windows usa uma animação com atenção na inicialização para fazer com que a experiência se sinta especial, mas essa animação seria inadequada em outro lugar.
+Neste exemplo, o Windows usa uma animação de atenção na inicialização para fazer com que a experiência se sinta especial, mas essa animação seria inadequada em outro lugar.
 
-Você saberá que atingiu o equilíbrio certo quando a experiência geral for prejudicada se qualquer um desses atributos fosse removido.
+Você saberá que atingiu o equilíbrio certo quando a experiência geral seria prejudicada se qualquer um desses atributos fosse removido.
 
 ### <a name="creating-an-animation-vocabulary"></a>Criando um vocabulário de animação
 
-Boas animações são sobre a comunicação visual eficaz, e a consistência é crucial para sua eficácia. Se você usar uma transição específica, como enviar por push uma cena da direita para avançar para a próxima cena, essa deve ser a única transição usada para essa finalidade e essa transição não deve ser usada para nenhuma outra finalidade. A atribuição de diferentes significados à mesma animação prejudica sua capacidade de comunicação. Ao atribuir animações específicas e transições para significados específicos, você está criando um vocabulário de animação.
+Boas animações são sobre comunicação visual eficaz e a consistência é crucial para sua eficácia. Se você usar uma transição específica, como efetuar o pushing de uma cena da direita para avançar para a próxima cena, essa deverá ser a única transição usada para essa finalidade e essa transição não deve ser usada para nenhuma outra finalidade. Atribuir significados diferentes à mesma animação prejudica sua capacidade de comunicação. Ao atribuir animações específicas e transições para significados específicos, você está criando um vocabulário de animação.
 
-Esse problema se aplica a animações e transições que têm significado, e não genéricos, que os usuários não têm probabilidade de atribuir significado ou aqueles cuja finalidade seja não perceptível. Por exemplo, animações como efeitos especiais e fades, como dessoluções, não têm significado específico, para que possam ser usadas livremente.
+Esse problema se aplica a animações e transições que têm significado, não a aquelas genéricas às quais os usuários provavelmente não atribuem significado ou aquelas cuja finalidade deve ser imperceptível. Por exemplo, animações como esmaecem e efeitos especiais, como sempre, não têm nenhum significado específico, portanto, podem ser usadas livremente.
 
-Um bom vocabulário atribui animações que modelam o comportamento físico de um objeto. Se você precisar atribuir uma animação a um objeto ou ação que não tenha um equivalente do mundo real, escolha uma animação que mostre como o objeto pode se comportar era real.
+Um bom vocabulário atribui animações que modelam o comportamento físico e do mundo real de um objeto. Se você precisar atribuir uma animação a um objeto ou ação que não tenha um equivalente do mundo real, escolha uma animação que mostre como o objeto pode se comportar se ele for real.
 
-![captura de tela de como o hover torna o brilho do logotipo do Windows ](images/vis-animations-image17.png)
+![captura de tela de como o foco faz com que o logotipo do Windows brilhe ](images/vis-animations-image17.png)
 
-Embora o menu Iniciar não seja um objeto do mundo real, seu efeito de foco aparece como um objeto do mundo real pode ser quando ativado.
+Embora o menu Iniciar não seja um objeto do mundo real, seu efeito de foco se apaga como um objeto do mundo real quando ativado.
 
-Cada animação em um vocabulário precisa ser claramente distinta. As animações devem ter comportamentos semelhantes somente se suas ações associadas estiverem relacionadas de forma semelhante. Por exemplo, as transições de movimento sugerem navegação, para que você possa usar transições de movimento de direções diferentes para indicar diferentes tipos de navegação.
+Cada animação em um vocabulário precisa ser claramente distinta. As animações deverão ter comportamentos semelhantes somente se suas ações associadas estão relacionadas da mesma forma. Por exemplo, as transições de movimento sugerem navegação, para que você possa usar transições de movimento de diferentes direções para indicar diferentes tipos de navegação.
 
-Você saberá que suas animações e transições não estão se comunicando bem quando os usuários encontram os resultados confusos, surpreendentes ou inesperados. Geralmente, é melhor conseguir uma única finalidade bem do que várias finalidades não tão bem.
+Você saberá que suas animações e transições não estão se comunicando bem quando os usuários acharem os resultados confusos, surpreendentes ou inesperados. Em geral, é melhor atingir uma única finalidade bem do que várias finalidades não tão bem.
 
-Idealmente, seu vocabulário de animação deve ser abrangente em todas as áreas do seu programa que precisam delas. Se apenas algumas interações tiverem animações naturais, isso chamará a atenção para as que não o fizerem.
+O ideal é que seu vocabulário de animação seja abrangente em todas as áreas do programa que precisam deles. Se apenas algumas interações têm animações naturais, isso chamará a atenção para aquelas que não têm.
 
-Para saber mais sobre o vocabulário de animação do Windows, consulte a seção [padrões de uso](#usage-patterns) deste artigo.
+Para saber mais sobre o vocabulário de animação do Windows, consulte a [seção Padrões de](#usage-patterns) uso deste artigo.
 
-### <a name="designing-the-right-personality"></a>Projetando a personalidade correta
+### <a name="designing-the-right-personality"></a>Projetando a personalidade certa
 
-Embora o tipo de animação determine o que ele comunica, a maneira específica na qual a animação é executada fala sobre a personalidade do programa e reforça sua marca.
+Embora o tipo de animação determine o que ela se comunica, a maneira específica na qual a animação é executada fala com a personalidade do programa e reforça sua marca.
 
-A personalidade do seu programa deve refletir a natureza de suas tarefas e a personalidade de seus usuários, portanto, não é uma opção arbitrária. Em vez disso, uma personalidade bem projetada deve parecer autêntica; Nunca tente forçá-lo. A personalidade deve fazer uma conexão emocional com o usuário. Alguns fatores a considerar:
+A personalidade do programa deve refletir a natureza de suas tarefas e a personalidade de seus usuários, portanto, não é uma opção arbitrária. Em vez disso, uma personalidade bem projetada deve se sentir autenticada; nunca tente forçá-lo. A personalidade deve fazer uma conexão emocional com o usuário. Alguns fatores a considerar:
 
 -   **Tarefas:** Sério ou divertido; opcional ou obrigatório.
--   **Consequências:** Sério ou secundário.
--   **Custo:** Gratuito ou adquirido; Se adquirido, com preço moderado ou caro.
+-   **Consequências:** Sério ou menor.
+-   **Custo:** Gratuito ou comprado; se comprado, com preços moderados ou caros.
 -   **Foco do usuário:** Grupo relativamente estreito de usuários de destino ou público geral amplo.
--   **Ambiente do usuário:** Profissional, casual ou doméstica.
--   **Idade do usuário:** Mais jovem ou mais antigo.
--   **Frequência de uso:** Frequente ou frequente.
+-   **Ambiente do usuário:** Professional, casual ou home.
+-   **Idade do usuário:** Mais novo ou mais antigo.
+-   **Frequência de uso:** Frequente ou pouco frequente.
 
-A combinação desses fatores ajuda a determinar uma personalidade apropriada para o seu programa. Aqui estão algumas combinações adequadas para tipos comuns de programas:
+A combinação desses fatores ajuda a determinar uma personalidade apropriada para seu programa. Aqui estão algumas combinações adequadas para tipos comuns de programas:
 
 **Aplicativos de produtividade**
 
-Naturalmente, os aplicativos de produtividade devem se concentrar na produtividade. Embora algumas experiências especiais possam se destacar, a maioria das outras animações deve ter essas características:
+Naturalmente, os aplicativos de produtividade devem se concentrar na produtividade. Embora algumas experiências especiais possam se destacar, a maioria das outras animações deve ter estas características:
 
--   Small
+-   Pequeno
 -   Natural, realista
--   Sutil, subdued
--   Rápido e eficiente
+-   Sutil, desleixado
+-   Rápido, eficiente
 -   Reduzido
 
 **Utilitários**
 
-Os utilitários normalmente são usados rapidamente, portanto, o uso da animação pode ser mais agressivo:
+Os utilitários normalmente são usados brevemente, portanto, o uso da animação pode ser mais agressivo:
 
--   Realista, ilustrativo e auto-explicativo
+-   Realista, ilustrativo, autoexplicativo
 -   Safe
--   Envolventes
+-   Envolver
 
 **Entretenimento, jogos**
 
-Como o objetivo desses programas é envolver e fascinamr os usuários, as animações e transições podem ser muito mais agressivas com essas características:
+Como o objetivo desses programas é envolver e atrair usuários, as animações e transições podem ser muito mais agressivas tendo estas características:
 
--   Grande (possivelmente se tornando parte integrante da experiência)
--   Artificial, surreal
--   Impactado, vibrante
--   Emocional, filhotes, estranho
+-   Grande (possivelmente se tornando uma parte integrante da experiência)
+-   Artificial, ltda
+-   Impactful, vibrante
+-   Emocional, lúdico, cômico
 -   Energético
 
-Fazer uma conexão emocional é tão importante para os programas de entretenimento que é aceitável entortar algumas regras, caso isso ajude a tornar os usuários ficarem em amor com o programa. Por exemplo, é aceitável que uma animação ou transição se torne cansativo após o tempo centésimo, se a maioria dos usuários for improvável de usar o programa que geralmente.
+Fazer uma conexão emocional é tão importante para programas de entretenimento que é aceitável distorcer algumas regras se isso ajudar a fazer com que os usuários se apantes com o programa. Por exemplo, será aceitável se uma animação ou transição se tornar cansativa após a centésimo vez se a maioria dos usuários não usar o programa com frequência.
 
-Em geral, animações e transições que são pequenas, naturais, subdueds, eficientes, porém relaxadas são a aposta mais segura. As transições com essas características normalmente levam o caminho mais curto do início ao fim, começam rapidamente, terminam de forma flexível e não estão superlançadas. Além disso, as transições bem projetadas são projetadas para funcionar bem em todo o intervalo de distâncias em que serão usadas.
+Em geral, animações e transições pequenas, naturais, desaqueadas, eficientes, mas que são mais seguras são as mais seguras. As transições com essas características normalmente levam o caminho mais curto do início ao fim, começam rapidamente, terminam de forma suave e não se sobrecarram. Além disso, transições bem projetadas são projetadas para funcionar bem em toda a gama de distâncias em que elas serão usadas.
 
 ### <a name="animation-performance"></a>Desempenho da animação
 
-Ao projetar animações, certifique-se de que elas não afetem a capacidade dos usuários de usar seu programa com eficiência. Em geral, torne suas animações lentas o suficiente para atender à sua finalidade, mas rápido o suficiente para que elas não interfiram na capacidade de resposta, exigem muita atenção ou se tornam cansativo.
+Ao criar animações, certifique-se de que elas não afetem a capacidade dos usuários de usar seu programa com eficiência. Em geral, torne suas animações lentas o suficiente para atender às suas finalidades, mas rápido o suficiente para que elas não interfiram na capacidade de resposta, exijam muita atenção ou se tornem cansativas.
 
 **Incorreto:**
 
-![Figura de folheio de página da direita para a esquerda ](images/vis-animations-image18.png)
+![figura da página que se transforma da direita para a esquerda ](images/vis-animations-image18.png)
 
-Embora esta página virando a animação tenha uma aparência envolvente e real, ela diminui a produtividade dos usuários ao levar mais tempo para transformar as páginas.
+Embora essa página que ativa a animação tenha uma sensação envolvente e real, ela diminui a produtividade dos usuários, levando mais tempo para transformar páginas.
 
-As transições breves (200 milissegundos ou menos) são um caso especial (especialmente quando elas geralmente funcionam de um atraso) porque os usuários terão que esperar um segundo dividido para elas. Os usuários estão dispostos a esperar por tais animações se:
+Transições breves (200 milissegundos ou menos) são um caso especial (especialmente quando geralmente funcionam com um atraso), pois os usuários estarão cientes de que precisam aguardar uma fração de segundo por eles. Os usuários estão dispostos a aguardar essas animações se:
 
 -   A espera percebida é extremamente breve (200 milissegundos ou menos).
--   A transição faz com que a interação fique mais suave e natural.
--   A transição faz com que a interação fique mais responsiva.
+-   A transição faz com que a interação se sinta mais suave e natural.
+-   A transição faz com que a interação se sinta mais responsiva.
 -   Qualquer atraso ajuda a manter o usuário no controle da interação.
 
-![Figura dos botões da barra de tarefas arrastados para a nova posição ](images/vis-animations-image19.png)
+![figura de botões da barra de tarefas arrastados para a nova posição ](images/vis-animations-image19.png)
 
-Os usuários aceitarão um breve atraso para o botão da barra de tarefas reordenar a animação porque ela é muito breve e torna a interação mais natural.
+Os usuários aceitarão um breve atraso para a animação de reordenação do botão da barra de tarefas porque ela é muito breve e torna a interação mais natural.
 
 Há três maneiras pelas quais as animações podem afetar negativamente o desempenho: velocidade, capacidade de resposta e percepção.
 
-Para velocidade, algumas animações são visuais veneerss sobre tarefas de uso intensivo de CPU, portanto, a última coisa que você deve fazer é tornar essas tarefas mais lentas com animações com uso intensivo de CPU. A maioria das animações com uso intensivo de CPU (animações "pesadas") tendem a:
+Para velocidade, algumas animações são veneers visuais em tarefas com uso intensivo de CPU, portanto, a última coisa que você deve fazer é tornar essas tarefas mais lentas com animações com uso intensivo de CPU. As animações com maior uso de CPU ("animações pesadas) tendem a:
 
--   Envolvem muitos elementos que se movem de forma independente.
--   Jogue por uma longa duração ou distância.
--   Envolver uma grande quantidade de espaço na tela.
+-   Envolva muitos elementos que se movem independentemente.
+-   Reproduzir por uma longa duração ou distância.
+-   Envolva uma grande quantidade de espaço na tela.
 -   São matematicamente intensivas.
 
-Animações com menos impacto no desempenho:
+Animações com menos impacto sobre o desempenho:
 
--   Envolve um único objeto.
--   Jogue por uma curta duração ou distância.
--   Envolve uma pequena quantidade de espaço na tela.
--   Não são matematicamente intensivas.
+-   Envolver um único objeto.
+-   Reproduzir por uma curta duração ou distância.
+-   Envolva uma pequena quantidade de espaço na tela.
+-   Não são matematicamente intensivos.
 
-Para garantir um bom desempenho, animações pesadas devem ser usadas apenas para tarefas que não são intensivas na CPU, enquanto animações leves podem ser usadas em qualquer lugar.
+Para garantir um bom desempenho, animações pesadas devem ser usadas apenas para tarefas que não têm uso intensivo de CPU, enquanto animações leves podem ser usadas em qualquer lugar.
 
-Para capacidade de resposta, a maioria das animações e transições deve ser projetada para que os usuários possam interagir enquanto a animação estiver em execução. A menos que uma animação faça parte de um processo, torne-a independente da interação principal do usuário e permita que os usuários a interrompam.
+Para capacidade de resposta, a maioria das animações e transições deve ser projetada para que os usuários possam interagir enquanto a animação está em execução. A menos que uma animação faça parte de um processo, faça com que ela seja independente da interação principal do usuário e permita que os usuários a interrompam.
 
-Uma animação pode não afetar negativamente o desempenho de uma tarefa na realidade, mas os usuários podem ter a percepção que ela faz. Por exemplo, não use uma animação que pareça pesada para uma tarefa lenta de uso intensivo de CPU, mesmo que não danifique o desempenho, pois os usuários podem concluir que a animação é o motivo pelo qual a tarefa está lenta. **Se algo parecer lento, ele ficará lento, portanto, é melhor usar animações que se sintam simples, leves e rápidas.** O uso de animações com inícios instantâneos para tarefas de uso intensivo de CPU ajuda.
+Uma animação pode não afetar negativamente o desempenho de uma tarefa na realidade, mas os usuários podem ter a percepção de que ela tem. Por exemplo, não use uma animação que pareça pesada para uma tarefa lenta e com uso intensivo de CPU, mesmo se não prejudicar o desempenho, porque os usuários podem concluir que a animação é o motivo pelo qual a tarefa está lenta. **Se algo parecer lento, será lento, portanto, é melhor usar animações que pareçam simples, leves e rápidas.** O uso de animações com inícios de snappy para tarefas com uso intensivo de CPU ajuda.
 
-**Situação**
+**Arriscado:**
 
-![captura de tela da caixa de diálogo de cópia com barra de progresso ](images/vis-animations-image20.png)
+![captura de tela da caixa de diálogo copiar com a barra de progresso ](images/vis-animations-image20.png)
 
-Embora a animação na caixa de diálogo de cópia de arquivos do Windows não danifique o desempenho da cópia do arquivo, ela corre o risco de que os usuários considerem isso.
+Embora a animação na caixa de diálogo de cópia de arquivo do Windows não prejudicar o desempenho da cópia de arquivo, ela corre o risco de fazer os usuários pensarem que sim.
 
 **Também arriscado:**
 
-![captura de tela do progresso exibido na barra de endereços ](images/vis-animations-image21.png)
+![captura de tela do progresso exibida na barra de endereços ](images/vis-animations-image21.png)
 
-Neste exemplo, a animação de progresso de aparência lenta na barra de endereços do Windows Explorer faz com que algumas tarefas pareçam muito lentas.
+Neste exemplo, a animação de progresso de aparência lenta na barra Windows Explorer endereços faz com que algumas tarefas pareçam lentamente lentas.
 
-Animações e transições não têm valor se sua qualidade for tão ruim que tornam a experiência menos suave e menos atraente. Para manter sua qualidade, as animações devem ser projetadas para degradar normalmente sempre que recursos do sistema suficientes não estiverem disponíveis. As animações podem diminuir com a existência de variações que exigem menos recursos (como comprimentos menores ou taxas de quadros inferiores) ou até mesmo não sendo executadas. Independentemente dos recursos disponíveis, verifique se as animações têm alta qualidade e se parecem com animações em vez de bugs de software.
+Animações e transições não terão valor se sua qualidade for tão ruim que tornarão a experiência menos suave e menos envolvente. Para manter sua qualidade, as animações devem ser projetadas para degradar normalmente sempre que recursos suficientes do sistema não estão disponíveis. As animações podem ser degradadas com variações que exigem menos recursos (como comprimentos mais curtos ou taxas de quadros menores) ou até mesmo não em execução. Independentemente dos recursos disponíveis, certifique-se de que as animações tenham alta qualidade e se pareçam com animações em vez de bugs de software.
 
-Por fim, se os usuários acreditarem que as animações e as transições do programa reduzem sua produtividade, há uma boa chance de que alguns usuários desejarão desativá-las. Para dar suporte a essa capacidade, respeite a opção de desativar **todas as animações desnecessárias** encontradas na central de facilidade de acesso do Windows.
+Por fim, se os usuários acreditarem que as animações e transições do seu programa são prejudicadas de sua produtividade, há uma boa chance de alguns usuários quererem desativar. Para dar suporte a essa capacidade, respeita a opção para **Desativar todas as animações desnecessárias encontradas** no Windows Central de Facilidade de Acesso.
 
 ### <a name="attracting-the-right-level-of-attention"></a>Atraindo o nível certo de atenção
 
-Embora apenas alguns tipos de animações e transições sejam projetados especificamente para atrair a atenção do usuário, eles devem ser projetados para atrair o nível certo de atenção para atender bem às suas finalidades. Quais são as diferentes maneiras de atrair atenção e como escolher a correta?
+Embora apenas alguns tipos de animações e transições sejam especificamente projetados para atrair a atenção do usuário, eles devem ser projetados para atrair o nível certo de atenção para atender bem à finalidade. Quais são as diferentes maneiras de chamar a atenção e como escolher a correta?
 
 **Efeitos de animação**
 
-Efeitos de animação diferentes atraiem níveis diferentes de atenção. A lista a seguir resume os métodos mais comuns, começando com a obtenção de mais atenção:
+Diferentes efeitos de animação atraindo diferentes níveis de atenção. A lista a seguir resume os métodos mais comuns, começando com a maior atenção:
 
--   **Piscando rapidamente.** Exige atenção imediata. Pode interromper a concentração dos usuários, independentemente de onde a intermitência está ocorrendo.
--   **Intermitência moderada.** Mesmo, mas exige menos atenção com a frequência mais baixa.
--   **Saltando.** Notável na visão periférica e relativamente exigente de natureza. É provável que os usuários percebam, mas podem continuar a se concentrar em outro lugar somente se a duração for curta.
--   **Motion.** Notável na visão periférica, mas não exige. No entanto, as animações complexas ou 3D atraiem mais atenção do que os movimentos simples ou 2D. É provável que os usuários percebam, mas podem continuar a se concentrar em outro lugar.
--   **Pulsing moderado.** Perceptível, mas sem distração na visão periférica. Os usuários podem continuar a se concentrar em outro lugar. Pode pulsar brilho, cores e tamanhos.
--   **Pulsing/brilho lento.** Perceptível, mas sutil. Atrai mais atenção do que um efeito estático, mas os usuários talvez não percebam a animação, a menos que já estejam olhando.
--   **Efeito.** Ainda menos perceptível. Atrai mais atenção do que um efeito estático, mas os usuários talvez não percebam a animação, a menos que já estejam olhando.
--   **Realce estático/gleam.** É perceptível se os usuários optarem por procurar, mas não exigirá atenção se estiver em outro lugar.
--   **Ambiente/natural.** Não é intencionalmente perceptível por ter uma aparência natural e real.
+-   **Piscando rapidamente.** Exige atenção imediata. Pode quebrar a concentração dos usuários, independentemente do local em que o flash está ocorrendo.
+-   **Piscar moderadamente.** Mesmo, mas exige menos atenção com menor frequência.
+-   **Saltando.** Perceptível na visão periférico e relativamente exigente por natureza. É provável que os usuários observem, mas podem continuar se concentrando em outro lugar somente se a duração for curta.
+-   **Movimento.** Perceptível na visão periférico, mas não exigindo. No entanto, movimentos complexos ou 3D chamam mais atenção do que movimentos simples ou 2D. É provável que os usuários observem, mas podem continuar se concentrando em outro lugar.
+-   **Pulsação moderada.** Perceptível, mas não desalocar a visão periférico. Os usuários podem continuar se concentrando em outro lugar. Pode pulsar brilho, cores e tamanhos.
+-   **Pulsing/slow lento.** Perceptível, mas sutil. Chama mais atenção do que um efeito estático, mas os usuários podem não perceber a animação, a menos que já estão procurando.
+-   **Desaparecer.** Ainda menos perceptível. Chama mais atenção do que um efeito estático, mas os usuários podem não perceber a animação, a menos que já estão procurando.
+-   **Realça-se/ressaldo estático.** Perceptível se os usuários optarem por procurar, mas não exigirem atenção se ele estiver em outro lugar.
+-   **Ambiente/natural.** Propositalmente não é perceptível tendo uma aparência natural e real.
 
-Para determinar a abordagem certa para seu programa ou recurso, considere como esses fatores se relacionam aos cenários do seu recurso.
+Para determinar a abordagem certa para seu programa ou recurso, considere como esses fatores se relacionam com os cenários do recurso.
 
-Por exemplo, suponha que você está criando um programa de mensagens instantâneas e alguém acabou de enviar uma mensagem para o usuário. Esse cenário requer a atenção do usuário, deve ser perceptível em qualquer lugar e, geralmente, o usuário desejará responder rapidamente. Esse cenário sugere que uma animação de intermitência moderada seria uma boa opção. Por outro lado, suponha que você queira informar aos usuários que um trabalho de impressão foi concluído. Os usuários devem ser capazes de continuar a se concentrar e trabalhar de forma produtiva em outro lugar, e é aceitável se os usuários não notarem. Esse cenário sugere que a Pulsing ou o brilho de moderado a lento seria uma boa opção.
+Por exemplo, suponha que você está projetando um programa de mensagens instantâneas e alguém acabou de enviar uma mensagem ao usuário. Esse cenário exige a atenção do usuário, ele deve ser perceptível em qualquer lugar e, geralmente, o usuário deseja responder rapidamente. Esse cenário sugere que uma animação intermitente moderada seria uma boa opção. Por outro lado, suponha que você queira informar aos usuários que um trabalho de impressão foi concluído. Os usuários devem ser capazes de continuar a se concentrar e trabalhar de maneira produtiva em outro lugar, e isso será aceitável se os usuários não perceberem. Esse cenário sugere que a pulsação moderada a lenta ou a desiluminação seria uma boa opção.
 
 **Duration**
 
-A duração apropriada para uma atenção ao obter animação depende do cenário e do tipo específico de animação usado. Quanto mais atenção um efeito de animação exigir, menor será a duração. Embora efeitos muito sutis que exigem pouca atenção (como Pulsing lentas) possam ser reproduzidos indefinidamente, a atenção dos efeitos deve ser reproduzida apenas entre 1 e 3 segundos. Os riscos mais longos tornam a animação incômodo e irritante.
+A duração apropriada para uma animação de atenção depende do cenário e do tipo específico de animação usado. Quanto mais atenção um efeito de animação exigir, menor será a duração. Embora efeitos muito sutis que exijam pouca atenção (como pulsões lentas) possam ser desempenhados indefinidamente, os efeitos que exigem atenção só devem ser interpretados entre 1 e 3 segundos. Qualquer coisa mais longa corre o risco de tornar a animação sobrecarregante e entediante.
 
-![captura de tela do botão da barra de tarefas realçado ](images/vis-animations-image22.png)
+![captura de tela do botão da barra de tarefas realçada ](images/vis-animations-image22.png)
 
-No Windows 7, a barra de tarefas pisca em atenção apenas por um segundo. Qualquer um mais incômodo seria irritante.
+No Windows 7, a barra de tarefas pisca para atenção por apenas um segundo. Por mais tempo seria entediante.
 
 **Decaimento de efeito**
 
-Você deve planejar a atenção-obtendo animações com base na suposição de que, se os usuários não responderem imediatamente, isso ocorre porque estão ocupados fazendo alguma outra coisa e não querem ser interrompidos. Portanto, seu objetivo deve ser atrair atenção sem exigir.
+Você deve criar animações de atenção com base na suposição de que, se os usuários não responderem imediatamente, é porque eles estão ocupados fazendo outra coisa e não querem ser interrompidos. Portanto, sua meta deve ser chamar a atenção sem exigi-la.
 
-Para obter o equilíbrio certo de atrair atenção sem exigir isso, decaimento a intensidade de um efeito ao longo do tempo. Por exemplo, para atrair a atenção, você pode tornar o efeito inicialmente forte, mas retardar o efeito rapidamente. Ao fazer isso, a potência atrativa é basicamente determinada pelo efeito inicial, mas a impressão geral do usuário é determinada principalmente pelo seu término.
+Para obter o equilíbrio certo de chamar a atenção sem exigi-la, decaa a intensidade de um efeito ao longo do tempo. Por exemplo, para atrair a atenção, você pode tornar o efeito inicialmente forte, mas retardar o efeito rapidamente. Ao fazer isso, a potência atrativa é basicamente determinada pelo efeito inicial, mas a impressão geral do usuário é determinada principalmente pelo seu término.
 
 ![captura de tela demonstrando a taxa de flash reduzida ](images/vis-animations-image23.png)
 
@@ -368,7 +368,7 @@ As animações têm vários padrões de uso:
 
 
 
-|                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|   Uso                                                                                                               |   Descrição                                     |
 |------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Comentários de foco**<br/> para mostrar onde está o ponto de interação. <br/>                                | Indica que o ponto de interação está ativo. o foco pode ser mostrado também por meio de um efeito estático.<br/> vocabulário do Windows: Exibir efeito de foco (retângulo delimitador, realce, ampliação) com um efeito de fade in/fade out para suavidade. <br/> ![captura de tela de uma das seis tampas do álbum realçadas ](images/vis-animations-image24.png)<br/> No player de mídia digital do Zune, o álbum cobre realce e adicione controles de reprodução ao focalizar.<br/>                                                                                                                                                                                                                 |
 | **Clique em comentários**<br/> para mostrar que um objeto clicável é responsivo e recebeu um clique. <br/>    | Indica que um objeto foi clicado.<br/> vocabulário do Windows: plano de fundo do objeto flash no evento clique para baixo. para mostrar contato de toque, use um efeito de ondulação. <br/> ![foto do dedo na tela sensível ao toque mostrando as copiadas ](images/vis-animations-image25.png)<br/> O Touch exibe uma animação ondulada para que o usuário saiba que a interação foi reconhecida.<br/>                                                                                                                                                                                                                                                                                                         |
@@ -386,18 +386,18 @@ As transições têm vários padrões de uso:
 
 
 
-|                                                                                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|      Uso                                                                                                                                                                                                      |    Descrição                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Objeto aumentar/reduzir/aparecer**<br/> para alterar o tamanho ou o estado de um objeto sem problemas. <br/>                                                                                                         | Alterações de objeto entre os Estados, possivelmente ao mover. a transição mantém os usuários orientados durante as alterações.<br/> vocabulário do Windows: Morph, altere o tamanho, os slides de objeto para dentro ou para fora. <br/> ![captura de tela de três tamanhos de gadgets meteorológicos ](images/vis-animations-image31.png)<br/> Neste exemplo, o gadget meteorológico é metamorfose de seu estado conciso para exibir sua caixa de diálogo opções.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | **Mostrar/ocultar/alterar conteúdo**<br/> para mostrar, ocultar ou alterar o conteúdo sem problemas, normalmente para divulgação progressiva. <br/>                                                                       | As reformulações do interior da janela para exibir conteúdo mais, menor ou diferente. a transição mantém os usuários orientados durante as alterações.<br/> vocabulário do Windows: painel de slides para dentro ou para fora. janelas de submenu fade in e out. um conteúdo diferente desaparece ou se acumula. <br/> ![captura de tela de três tamanhos de calculadora ](images/vis-animations-image32.png)<br/> A calculadora do Windows tem uma transição suave entre modos de exibição.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| **Controle ou custo mostrar/ocultar**<br/> para mostrar ou ocultar de forma suave os controles ou suas capacidades na movimentação do mouse ou do rato a fim de simplificar a aparência normal do Visual. <br/>                | Exibe controles quando os usuários estão passando o ponteiro sobre uma área de comando ou exibem capacidades quando os usuários estão focalizando um controle. passar o mouse sobre essas áreas indica que o usuário pretende interagir. capacidades poderá ocultar se o ponteiro se tornar estático. <br/> ![captura de tela de controles esmaecidas antes de passar o mouse ](images/vis-animations-image33.png)<br/> Neste exemplo, os controles do Windows Media Player esmaecem ao focalizar quando estiver no modo de tela inteira.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| **Transições de cena**<br/> fazer uma transição de cena tranqüila e perfeita para evitar atenção. <br/>                                                                                   | Alterações de cena abrupta podem ser dissonante, especialmente para áreas de tela grandes, portanto, use transições de cena para criar suavidade e continuidade e para fornecer contexto. as transições de cena são projetadas para serem de chave natural e baixa, para evitar a atenção ao processo de transição em si.<br/> vocabulário do Windows: fade in/out; esmaecimento cruzado; deslizando para/esquerda, para fora/direita, para cima, para baixo; envios por push e capas. <br/> ![captura de tela de uma foto esmaecida em outra ](images/vis-animations-image34.png)<br/> Neste exemplo, o papel de parede da área de trabalho do Windows se cruzou suavemente entre imagens para fazer com que a transição fique tranqüila e controlada.<br/>                                                                                                                                                                                                                                                                                                                               |
-| **Transições especiais de cena**<br/> chamar a atenção para uma alteração de cena para torná-la especial ou refocar a atenção do usuário. <br/>                                                               | Embora a maioria das transições de cena não deva chamar atenção para o processo de transição, algumas foram projetadas para interromper o fluxo e chamar a atenção para enfatizar que algo diferente está prestes a acontecer. para chamar a atenção, as transições especiais de cena são projetadas para não serem naturais e têm alto impacto visual. <br/> ![captura de tela de atenção – slide de transição de captura ](images/vis-animations-image35.png)<br/> Neste exemplo, o PowerPoint usa a atenção – obter transições para desenhar o público na alteração.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| **Manipulações diretas**<br/> para mostrar o efeito de manipulações diretas (como mover, rolar/panorâmica, girar e aplicar zoom). <br/>                                                                   | A transição mostra o efeito da manipulação em tempo real. o efeito deve parecer suave, contínuo e consistente com o mundo real. a movimentação e a rotação podem não ser contínuas em alguns lugares para indicar restrições ou escolhas preferenciais prováveis. o zoom torna o conteúdo maior ou menor, possivelmente alterando o nível de detalhes de acordo. <br/> ![captura de tela de três tamanhos de lupa ](images/vis-animations-image36.png)<br/> Neste exemplo, a lupa amplia suavemente os níveis.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| **Manipulações diretas incorretas**<br/> para indicar que uma manipulação direta (como mover, rolar/panorâmica) foi tentada, mas não pôde ser feita. <br/>                                           | A transição mostra a tentativa de manipulação, mas reverte para o estado original. Geralmente, o efeito parece que a manipulação não pode ser executada devido a alguma restrição física do mundo real. essas animações são usadas em vez de mensagens de erro baseadas em texto, o que pode atrapalhar a sensação do mundo real da manipulação.<br/> vocabulário do Windows: elástico <br/> ![Figura de comunicação visual de animação ](images/vis-animations-image4.png)<br/> Neste exemplo, o documento salta para mostrar que o usuário atingiu o final.<br/>                                                                                                                                                                                                                                                                                                                                                                                                               |
-| **Classificar, filtrar, reordenar transições**<br/> para indicar que a apresentação ou o conteúdo de uma coleção de itens foi alterado. <br/>                                                            | A transição mostra (ou para alterações complexas, sugere) o efeito da alteração. <br/> ![captura de tela de câmeras de linhas com três removidas ](images/vis-animations-image37.png)<br/> ![captura de tela semelhante com câmeras diferentes removidas ](images/vis-animations-image38.png)<br/> ![captura de tela semelhante com outras câmeras removidas ](images/vis-animations-image39.png)<br/> Neste exemplo, a pesquisa visual do Bing usa uma transição de filtro.<br/> ![captura de tela da capa do álbum alterando sua aparência ](images/vis-animations-image40.png)<br/> Neste exemplo, o Windows Media Center usa uma transição de reordenação como uma experiência especial enquanto uma música está sendo reproduzida.<br/>                                                                                                                                                                                                                                                                                   |
-| **Transições de desempenho**<br/> para fazer com que uma ação pareça mais rápida. <br/>                                                                                                              | Embora qualquer transição tenha o potencial de fazer com que uma ação pareça mais rápida, a principal finalidade dessas transições é melhorar a percepção do desempenho e da capacidade de resposta. uma boa técnica é mostrar a tarefa que está sendo executada em etapas deliberadas. por outro lado, atrasar a ação, renderizar os resultados de maneira aleatória ou usar um indicador de atividade se sentirá lento.<br/> vocabulário do Windows: executar ação em estágios, com transições suaves entre os estágios. <br/> ![captura de tela da lista de atalhos adicionando destinos ](images/vis-animations-image41.png)<br/> Neste exemplo, uma lista de atalhos da barra de tarefas exibe imediatamente os itens padrão e, em seguida, os slides para exibir os destinos quando a lista estiver pronta. Fazer isso disfarça o tempo necessário para criar a lista. Por outro lado, atrasar a exibição inicial sentiria sem resposta, e exibir uma lista incompleta ou comentários de progresso sentiria muito mais lento.<br/> |
-| **Experiências especiais**<br/> para envolver e fascinamr os usuários durante [experiências especiais](glossary.md) e raras que são importantes para seu programa e ter a atenção total do usuário. <br/>    | Embora qualquer transição tenha o potencial de ser uma experiência especial, essas transições são mais bem reservadas para experiências pouco frequentes que são realmente especiais para seu programa. as transições personalizadas são usadas para dar uma ideia especial. a identidade visual e a personalidade são geralmente elementos de design importantes. ao contrário de outros padrões, experiências especiais podem exigir atenção, ser pesadas e exigem que os usuários aguardem um momento. Consequentemente, essas transições são desgastas rapidamente se estiverem sobreutilizadas porque a experiência não é mais especial. <br/> ![captura de tela da alteração do logotipo do Windows para nova tela ](images/vis-animations-image42.png)<br/> Neste exemplo, o Windows Media Center exibe uma animação durante o carregamento para envolver os usuários imediatamente.<br/>                                                                                                                                                                                                                                      |
+| **Controle ou custo mostrar/ocultar**<br/> para mostrar ou ocultar de forma suave os controles ou suas capacidades na movimentação do mouse ou do rato a fim de simplificar a aparência normal do Visual. <br/>                | Exibe controles quando os usuários estão passando o ponteiro sobre uma área de comando ou exibem capacidades quando os usuários estão focalizando um controle. passar o mouse sobre essas áreas indica que o usuário pretende interagir. as acessível podem ocultar se o ponteiro se tornar estacionário. <br/> ![captura de tela de controles esbotados antes de passar o mouse ](images/vis-animations-image33.png)<br/> Neste exemplo, os controles Windows Media Player esmaecem ao passar o mouse quando estão no modo de tela inteira.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Transições de cena**<br/> para fazer uma transição de cena suave e perfeita para evitar atenção. <br/>                                                                                   | As alterações de cena abruptas podem ser um jarring, especialmente para áreas de tela grande, portanto, use transições de cena para criar suavidade e continuidade e fornecer contexto. as transições de cena são projetadas para serem naturais e com pouca chave, a fim de evitar chamar a atenção para o processo de transição em si.<br/> vocabulário do Windows: esmaecer dentro/fora; cross fade; deslizando para dentro/para a esquerda, para fora/para a direita, para cima, para baixo; pushes e covers. <br/> ![captura de tela de uma foto esbotando em outra ](images/vis-animations-image34.png)<br/> Neste exemplo, o papel de parede da área de trabalho do Windows esmaece entre imagens para fazer com que a transição se sinta suave e controlada.<br/>                                                                                                                                                                                                                                                                                                                               |
+| **Transições de cena especiais**<br/> para chamar a atenção para uma alteração de cena para torná-la especial ou refocar a atenção do usuário. <br/>                                                               | Embora a maioria das transições de cena não deva chamar a atenção para o processo de transição, algumas são projetadas para quebrar o fluxo e chamar a atenção para enfatizar que algo diferente está prestes a acontecer. para chamar a atenção, as transições de cena especiais são projetadas para serem incomuns e ter alto impacto visual. <br/> ![captura de tela do slide de transição que chama a atenção ](images/vis-animations-image35.png)<br/> Neste exemplo, o PowerPoint usa transições de atenção para desenhar o público-alvo para a alteração.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Manipulações diretas**<br/> para mostrar o efeito de manipulações diretas (como mover, rolar/panorcar, girar e ampliar). <br/>                                                                   | A transição mostra o efeito da manipulação em tempo real. O efeito deve ser suave, contínuo e consistente com o mundo real. mover e girar pode não ser contínuo em alguns locais para indicar restrições ou opções preferenciais prováveis. O zoom torna o conteúdo maior ou menor, possivelmente alterando o nível de detalhes de acordo. <br/> ![captura de tela de três tamanhos de lupa ](images/vis-animations-image36.png)<br/> Neste exemplo, a Lupa amplia suavemente entre níveis.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Manipulações diretas incorretas**<br/> para indicar que uma manipulação direta (como movimentação, rolagem/panoragem) foi tentada, mas não pôde ser feita. <br/>                                           | A transição mostra a manipulação que está sendo tentada, mas reverte de volta para o estado original. geralmente, o efeito parece que a manipulação não pode ser executada devido a alguma restrição física do mundo real. essas animações são usadas em vez de mensagens de erro baseadas em texto, o que interromperia a sensação do mundo real da manipulação.<br/> vocabulário do Windows: ressalto <br/> ![figura de animação se comunicando visualmente ](images/vis-animations-image4.png)<br/> Neste exemplo, o documento é ressalto para mostrar que o usuário atingiu o final.<br/>                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Classificar, filtrar, reordenar transições**<br/> para indicar que a apresentação ou o conteúdo de uma coleção de itens foi alterado. <br/>                                                            | A transição mostra (ou para alterações complexas, sugere) o efeito da alteração. <br/> ![captura de tela de câmeras de linhas com três removidos ](images/vis-animations-image37.png)<br/> ![captura de tela semelhante com câmeras diferentes removidas ](images/vis-animations-image38.png)<br/> ![captura de tela semelhante com outras câmeras removidas ](images/vis-animations-image39.png)<br/> neste exemplo, a pesquisa visual do Bing usa uma transição de filtro.<br/> ![captura de tela da capa do álbum alterando sua aparência ](images/vis-animations-image40.png)<br/> Neste exemplo, Windows Media Center uma transição de reordenar como uma experiência especial enquanto uma música está tocando.<br/>                                                                                                                                                                                                                                                                                   |
+| **Transições de desempenho**<br/> para fazer com que uma ação pareça acontecer mais rapidamente. <br/>                                                                                                              | Embora qualquer transição tenha o potencial de fazer com que uma ação pareça acontecer mais rapidamente, a principal finalidade dessas transições é melhorar a percepção de desempenho e capacidade de resposta. uma boa técnica é mostrar a tarefa que está sendo executada em etapas deliberadas. Por outro lado, atrasar a ação, renderizar os resultados de maneira hafafatória ou usar um indicador de atividade será lento.<br/> vocabulário do Windows: execute a ação em estágios, com transições suaves entre os estágios. <br/> ![captura de tela da lista de saltos adicionando destinos ](images/vis-animations-image41.png)<br/> Neste exemplo, uma barra de Lista de Atalhos exibe imediatamente os itens padrão e, em seguida, desliza para exibir os destinos quando a lista estiver pronta. Fazer isso revela o tempo necessário para criar a lista. Por outro lado, atrasar a exibição inicial pareceria sem resposta e exibir uma lista incompleta ou comentários de progresso seria muito mais lento.<br/> |
+| **Experiências especiais**<br/> para envolver e atrair os usuários [](glossary.md) durante experiências especiais e pouco frequentes que são importantes para seu programa e que tenham a atenção total do usuário. <br/>    | Embora qualquer transição tenha o potencial de ser uma experiência especial, essas transições são mais bem reservadas para experiências pouco frequentes que são realmente especiais para seu programa. as transições personalizadas são usadas para dar uma sensação especial. identidade visual e personalidade geralmente são elementos de design importantes. ao contrário de outros padrões, as experiências especiais podem exigir atenção, ser pesadas e exigir que os usuários aguardem um momento. consequentemente, essas transições se desessam rapidamente se superutilizadas porque a experiência não é mais especial. <br/> ![captura de tela do logotipo do Windows mudando para nova tela ](images/vis-animations-image42.png)<br/> Neste exemplo, o Windows Media Center exibe uma animação durante o carregamento para envolver imediatamente os usuários.<br/>                                                                                                                                                                                                                                      |
 
 
 
@@ -405,40 +405,40 @@ As transições têm vários padrões de uso:
 
 ## <a name="guidelines"></a>Diretrizes
 
-### <a name="effective-communication"></a>Comunicação eficaz
+### <a name="effective-communication"></a>Comunicação efetiva
 
--   **Defina e use um vocabulário de animação** para garantir que suas animações e transições tenham um significado consistente e use-as de forma consistente em todo o programa. A maioria dos vocabulários deve incluir entradas para aspecto e aparência do objeto e desaparecimento, navegação, interação básica (passando o mouse, selecionando, clicando), manipulação e interação de objetos (movendo, soltando, redimensionamento, rolagem, panorâmica, zoom, rotação, filtragem) e atraindo a atenção. O significado consistente é crucial para a comunicação efetiva.
--   **Sempre que for prático, use o vocabulário de animação do Windows.** Embora seu programa possa ter um público diferente e necessidades diferentes, muitas vezes os benefícios da consistência e da familiaridade superam os benefícios de serem diferentes. Se o vocabulário do programa precisar ser diferente, use os mesmos tipos básicos de animação que o Windows, mas dê a eles a personalidade certa para seu programa.
--   **Não atribua significados específicos a animações genéricas e transições em um vocabulário de animação.** Transições genéricas como efeitos especiais e fades, como dessoluções, não têm significado específico (além de aparecer ou desaparecerem), para que possam ser usadas livremente.
+-   **Defina e use um vocabulário de** animação para garantir que suas animações e transições tenham um significado consistente e use-o de forma consistente em todo o programa. A maioria dos vocabulários deve incluir entradas para aparência de cena e objeto, navegação, interação básica (passar o mouse, selecionar, clicar), manipulação de objetos e interação (mover, soltar, ressizing, rolar, panorâmico, ampliar, girar, filtrar) e chamar a atenção. O significado consistente é crucial para a comunicação eficaz.
+-   **Sempre que for prático, use o vocabulário de animação do Windows.** Embora seu programa possa ter um público-alvo diferente e necessidades diferentes, geralmente os benefícios da consistência e da familiaridade superam os benefícios de serem diferentes. Se o vocabulário do programa deve ser diferente, use os mesmos tipos de animação básicos que o Windows, mas dê a eles a personalidade certa para seu programa.
+-   **Não atribua significados específicos a animações genéricas e transições em um vocabulário de animação.** Transições genéricas, como esmaeceções e efeitos especiais, como sempre, não têm nenhum significado específico (além de aparecer ou desaparecer), para que possam ser usadas livremente.
 
     **Incorreto:**
 
-    ![captura de tela de uma caixa de diálogo esmaecida em outra ](images/vis-animations-image43.png)
+    ![captura de tela de uma caixa de diálogo esbotando em outra ](images/vis-animations-image43.png)
 
-    Neste exemplo, um esmaecimento cruzado é usado incorretamente para navegar para o próximo item. Como os esmaecimentos cruzados não têm nenhum significado específico, essa transição não fornece contexto.
+    Neste exemplo, um esmaeçando cruzado é usado incorretamente para navegar até o próximo item. Como esmaeces cruzados não têm nenhum significado específico, essa transição não fornece contexto.
 
--   **Torne as entradas de vocabulário claramente distintas.** As ações relacionadas podem ter efeitos semelhantes (por exemplo, ampliar e reduzir deve ter transições inversas), mas as ações não relacionadas devem ter efeitos claramente distintos (por exemplo, aplicar zoom nunca deve ser confundido com a rotação).
--   **Mantenha os efeitos do mundo real realistas e consistentes.** Se você usar animações e transições realísticas, mantenha a experiência consistente com o mundo real. Os usuários nunca devem ficar surpresos, confusos ou enganar pelos resultados. E, para fins de consistência, não misture metáforas.
--   **Atribua animações inversas de ações inversas.** Fazer isso atende às expectativas dos usuários e simplifica o vocabulário. Por exemplo, se um painel aparecer deslizando em, remova-o, deslizando não com algum outro efeito.
--   **Torne as animações abrangente.** Os usuários devem ser capazes de entender rapidamente a finalidade de uma animação. É possível tornar uma animação muito pequena, muito breve (menos de 50 milissegundos) ou tão sutil que os usuários não podem compreender sua finalidade. Nesses casos, Reprojete para tornar o significado claro ou remover.
+-   **Tornar as entradas de vocabulário claramente distintas.** Ações relacionadas podem ter efeitos semelhantes (por exemplo, ampliar e reduzir deve ter transições inversas), mas ações não relacionadas devem ter efeitos claramente distintos (por exemplo, o zoom nunca deve ser confundido com a rotação).
+-   **Mantenha os efeitos reais realistas e consistentes.** Se você usar animações e transições realistas, mantenha a experiência consistente com o mundo real. Os usuários nunca devem se confundir, confundir ou confundir com os resultados. E, para consistência, não misture as metáforas.
+-   **Dê animações inversas de ações inversas.** Isso atende às expectativas do usuário e simplifica o vocabulário. Por exemplo, se um painel aparecer deslizando, remova-o deslizando e não com algum outro efeito.
+-   **Tornar animações compreensíveis.** Os usuários devem ser capazes de entender rapidamente a finalidade de uma animação. É possível tornar uma animação muito pequena, muito breve (menos de 50 milissegundos) ou tão sutil que os usuários não conseguem compreender sua finalidade. Nesses casos, reprojete para deixar o significado claro ou remova.
 
     **Incorreto:**
 
     ![captura de tela da animação na caixa de diálogo de exclusão ](images/vis-animations-image44.png)
 
-    Neste exemplo, o efeito é tão pequeno e sutil que poucos usuários podem compreender sua finalidade. Melhor reprojetar ou remover.
+    Neste exemplo, o efeito é tão pequeno e sutil que poucos usuários podem compreender sua finalidade. É melhor reprojetar ou remover.
 
 ### <a name="patterns"></a>Padrões
 
-**Comentários de foco**
+**Comentários sobre o foco**
 
--   **Para aparecer responsivo, busque a animação de reprodução em 50 milissegundos de entrar ou sair do estado de foco.**
--   **Para aparecer rapidamente, torne a duração das animações de foco menos de 50 milissegundos.**
--   **Use um fade in/fade out do efeito de foco.** Isso torna os efeitos de foco claramente diferentes dos comentários de clique e seleção.
+-   **Para parecer responsivo, busque reproduzir animação em 50 milissegundos de entrada ou saída do estado de foco.**
+-   **Para parecer rápido, faça com que a duração das animações de foco seja inferior a 50 milissegundos.**
+-   **Use um esmaeçando dentro/esmaecer do efeito de foco.** Isso torna os efeitos de foco claramente distintos dos comentários de clique e seleção.
 
 **Clique em comentários**
 
--   **Para aparecer responsivo, busque a animação de reprodução dentro de 50 milissegundos de evento de clique para baixo.** Eventos de clique para cima não precisam de clique em comentários.
+-   **Para parecer responsivo, busque reproduzir animação em até 50 milissegundos do evento de clique para baixo.** Eventos de clique para cima não precisam de clique em comentários.
 -   **Para aparecer rapidamente, faça a duração das animações de clique com menos de 50 milissegundos.**
 -   **Use um piscar de fundo ou efeito de intermitência.** Fazer isso torna os efeitos de clique claramente distintos dos comentários de foco e seleção. Como clicar em requer o passar o mouse, faça com que o clique de comentários uma adição suave aos comentários em foco.
 
@@ -541,85 +541,85 @@ As transições têm vários padrões de uso:
 
 **Classificar, filtrar ou reordenar transições**
 
--   **Para alterações simples, mostre a transição inteira.** Os usuários poderão seguir facilmente a transição inteira. As alterações simples envolvem quatro itens ou menos.
--   **Para alterações complexas, enfatize o fim do movimento à medida que ele fica mais lento e deixe o preenchimento dos olhos no restante.** Isso faz com que o movimento se sinta muito mais responsivo e ordenado.
+-   **Para alterações simples, mostre a transição inteira.** Os usuários poderão seguir facilmente a transição inteira. Alterações simples envolvem quatro itens ou menos.
+-   **Para alterações complexas, enfatiza o final do movimento conforme ele fica mais lento e deixe o olho preencher o restante.** Fazer isso faz com que o movimento se sinta muito mais responsivo e pedido.
 
 **Transições de desempenho**
 
--   **Considere a execução de transições lentas em dois ou três estágios para que sejam exibidas mais rapidamente e imediatamente interativas.** Use a seguinte ordem de composição quando apropriado:
+-   **Considere executar transições lentas em dois ou três estágios para torná-las mais rápidas e interativas imediatamente.** Use a seguinte ordem de composição quando apropriado:
     -   Quadro externo
-    -   Tela de fundo
+    -   Segundo plano
     -   Conteúdo inicial (usando uma representação temporária, se necessário)
     -   Controles primários (para que os usuários possam interagir imediatamente)
-    -   Controles secundários e quaisquer elementos restantes da interface do usuário
-    -   O conteúdo final (se uma representação temporária foi usada) usa transições como fades e slides para fazer com que a composição pareça suave, ordenada e refinada.
+    -   Controles secundários e quaisquer elementos de interface do usuário restantes
+    -   Conteúdo final (se uma representação temporária tiver sido usada) Use transições como esmaece e desliza para fazer com que a composição pareça suave, ordem e refinada.
 
-![captura de tela de mapa com foto e grade satélite ](images/vis-animations-image50.png)
+![captura de tela do mapa com foto e grade satélite ](images/vis-animations-image50.png)
 
-Ao rolar no modo de exibição "olho de pássaro", o Bing Maps exibe uma tela de fundo de grade temporária. Isso permite que os usuários continuem a rolar imediatamente, bem antes que o conteúdo final seja renderizado.
+Ao rolar na exibição "Olho do pássaro", os mapas do Bing exibem uma tela de fundo de grade temporária. Isso permite que os usuários continuem a rolar imediatamente, bem antes que o conteúdo final seja renderizado.
 
 **Animações de experiência especial**
 
--   **Reconsidere as telas de abertura animadas (bem como telas de abertura estáticas).** Muitas vezes, as telas de abertura apenas desenham o quanto tempo um programa leva para ser carregado e eles esgotam suas boas-vindas rapidamente. Embora as telas de abertura sejam aceitáveis se forem exibidas somente quando a interação do usuário não for possível, sempre que for prática, uma alternativa melhor é criar seu programa para que os usuários possam interagir com ele imediatamente, mesmo que ainda esteja carregando.
--   **Forneça um comando ignorar introdução se uma tela inicial animada levar mais de três segundos.** Clicar em qualquer lugar na tela inicial também deve descartá-la. Como alternativa, use uma versão curta da animação após um período inicial.
+-   **Releição de telas insotivas animadas (bem como telas invasões estáticas).** Geralmente, as telas insalvas apenas chamam a atenção para quanto tempo um programa leva para carregar e desempatam suas boas-vindas rapidamente. Embora as telas invasões sejam aceitáveis se elas só são exibidas quando a interação do usuário não é possível, sempre que uma alternativa melhor é criar seu programa para que os usuários possam interagir com ele imediatamente, mesmo enquanto ele ainda estiver carregando.
+-   **Forneça um comando Ignorar Introdução se uma tela inicial animada levar mais de três segundos.** Clicar em qualquer lugar na tela inicial também deve descartá-lo. Como alternativa, use uma versão curta da animação após um período inicial.
 
 ### <a name="performance"></a>Desempenho
 
--   **Não faça os usuários aguardarem as animações e as transições do programa.** Use breves animações e transições (menos de 200 milissegundos) sempre que for prático. Use animações mais rápidas (100 milissegundos) para operações mais frequentes. Crie animações mais longas (mais de um segundo geralmente os comentários de progresso, a ilustração e os padrões de experiência especiais) para que os usuários possam continuar a trabalhar enquanto estiverem em execução.
--   **Projete animações de execução longa para deixar claro para os usuários que eles podem interagir enquanto a animação está em execução.** Os usuários não tentarão continuar a trabalhar se as pistas visuais sugerirem que não podem.
+-   **Não faça com que os usuários aguardem as animações e transições do programa.** Use animações e transições breves (menos de 200 milissegundos) sempre que for prático. Use animações mais rápidas (100 milissegundos) para operações mais frequentes. Projete animações mais longas (mais de um segundo geralmente os comentários de progresso, a ilustração e os padrões de experiência especiais) para que os usuários possam continuar a trabalhar enquanto estão em execução.
+-   **Projete animações de execução longa para deixar claro aos usuários que eles podem interagir enquanto a animação está em execução.** Os usuários não tentarão continuar a trabalhar se as pistas visuais sugerirem que não podem.
 
     ![captura de tela de uma barra de progresso em uma barra de status ](images/vis-animations-image51.png)
 
-    Neste exemplo do Windows Internet Explorer, a barra de progresso de chave baixa na barra de status sugere que os usuários não precisam aguardar a conclusão antes que possam interagir.
+    Neste exemplo do Windows Internet Explorer, a barra de progresso de baixa chave na barra de status sugere que os usuários não precisam aguardar a conclusão antes que possam interagir.
 
--   **Use animações leves para tarefas de uso intensivo de CPU.** Isso oferece poder de processamento completo para a tarefa. Além disso, os usuários não perceberão que a animação leve é o motivo pelo qual a tarefa tem uso intensivo de CPU.
--   **Não exibir um indicador de atividade durante uma animação ou transição.** Isso destrói o efeito. Crie animações e transições para que elas sejam capazes de iniciar imediatamente.
--   **Projete animações para degradar normalmente sempre que houver recursos do sistema insuficientes.** As animações podem diminuir com a existência de variações que exigem menos recursos (como comprimentos menores ou taxas de quadros inferiores) ou até mesmo não sendo executadas. Independentemente dos recursos disponíveis, verifique se as animações têm alta qualidade e se parecem com animações em vez de bugs de software.
+-   **Use animações leves para tarefas com uso intensivo de CPU.** Isso fornece potência total de processamento para a tarefa. Além disso, os usuários não perceberão que a animação leve é o motivo pelo qual a tarefa faz uso intensivo de CPU.
+-   **Não exibir um indicador de atividade durante uma animação ou transição.** Fazer isso destrói o efeito. Projete animações e transições para que elas sejam capazes de começar imediatamente.
+-   **Projete animações para degradar normalmente sempre que houver recursos insuficientes do sistema.** As animações podem ser degradadas com variações que exigem menos recursos (como comprimentos mais curtos ou taxas de quadros menores) ou até mesmo não em execução. Independentemente dos recursos disponíveis, certifique-se de que as animações tenham alta qualidade e se pareçam com animações em vez de bugs de software.
 
     **Incorreto:**
 
-    ![captura de tela do quadro de programa esmaecida na área de trabalho ](images/vis-animations-image52.png)
+    ![captura de tela do quadro de programa esbotado na área de trabalho ](images/vis-animations-image52.png)
 
-    Neste exemplo, a transição de restauração de janela é usada mesmo que não haja recursos suficientes do sistema para reproduzi-lo bem. Consequentemente, o quadro congelado parece ser um bug. Se os recursos não estiverem disponíveis, é melhor exibir apenas a janela sem uma transição.
+    Neste exemplo, a transição de restauração de janela é usada mesmo que não haja recursos de sistema suficientes para reproduzi-la bem. Consequentemente, o quadro congelado parece ser um bug. Se os recursos não estão disponíveis, é melhor apenas exibir a janela sem uma transição.
 
-### <a name="animation-characteristics"></a>Características da animação
+### <a name="animation-characteristics"></a>Características de animação
 
 Animações e transições bem projetadas geralmente têm estas características:
 
--   **Breve duração.** A maioria das animações deve estar entre 100 e 300 milissegundos, preferivelmente 1/6 segundo (167 milissegundos) ou 1/4 segundo (250 milissegundos). (Experiências especiais e comentários de progresso podem ser mais longos.) Use tempos de animação mais rápidos para operações mais frequentes. Geralmente, as animações mais longas levam mais tempo para serem concluídas, levam mais tempo para entender e se sentem lentas.
--   **Resposta.** As animações devem começar dentro de 50 milissegundos do evento de inicialização ou da ação do usuário. Os horários de início mais longos parecem não responder.
--   **Aceleração/desaceleração.** Para parecer natural, a maioria dos efeitos de animação precisa acelerar ao iniciar e desacelerar ao parar. Para parecer responsivo, Crie animações para começar rapidamente. Para parecer controlado, Crie animações para que as mídias sejam feitas no final. Embora isso se aplique a efeitos de movimento, ele também se aplica a qualquer efeito que sugira movimento, como zooms e até mesmo fades.
+-   **Breve duração.** A maioria das animações deve estar entre 100 e 300 milissegundos, preferencialmente 1/6 segundo (167 milissegundos) ou 1/4 segundo (250 milissegundos). (Experiências especiais e comentários de progresso podem ser mais longos.) Use tempos de animação mais rápidos para operações mais frequentes. Em geral, animações mais longas levam mais tempo para ser concluídas, levam mais tempo para entender e se sentir lentas.
+-   **Resposta.** As animações devem começar dentro de 50 milissegundos do evento de inicialização ou da ação do usuário. Tempos de início mais longos não são responsivos.
+-   **Aceleração/desaceleração.** Para parecer natural, a maioria dos efeitos de animação precisa ser acelerada ao iniciar e desacelerar ao parar. Para parecer responsivo, projete animações para ter inícios rápidos. Para parecer controlado, projete animações para ter aterrissagem suaves no final. Embora isso se aplique a efeitos de movimento, ele também se aplica a qualquer efeito que sugira movimento, como zooms e até mesmo esmaeça.
 
-    ![Figura de um gráfico que mostra a velocidade reduzida ao longo do tempo ](images/vis-animations-image53.png)
+    ![figura de um grafo mostrando a velocidade reduzida ao longo do tempo ](images/vis-animations-image53.png)
 
-    A maioria das animações deve ter inícios rápidos e inflexíveis para que haja uma sensação responsiva, embora controlada.
+    A maioria das animações deve ter inícios rápidos e terminações suaves para ter uma sensação responsiva, mas controlada.
 
--   **Motion.** Animações que detratam o movimento em particular precisam acelerar e desacelerar, portanto, não use o movimento linear, a menos que a duração da animação seja muito curta. Os movimentos devem levar o caminho breve do início ao fim, sem sobreissor. O caminho de movimento completo nem sempre é necessário. Quando apropriado, enfatize o fim do movimento à medida que ele fica mais lento, e deixe o preenchimento dos olhos no restante. Isso faz com que o movimento se sinta muito mais responsivo e ordenado. Ao animar o movimento de vários objetos simultaneamente, dê a eles caminhos um pouco diferentes com intervalos ligeiramente diferentes para se sentirem mais naturais.
--   **Taxa de quadros.** A maioria das animações deve usar uma taxa de quadros de 20 quadros por segundo. Se a animação for para uma experiência especial ou estiver relacionada à finalidade principal do programa, considere usar uma taxa mais alta de 24 30 quadros por segundo para melhorar a suavidade e o realm.
--   **Escalonáve.** Crie animações para funcionar bem em todo o seu intervalo de uso pretendido. Por exemplo, as transições de página devem ser projetadas para funcionar para todos os tamanhos de página.
--   **Personalidade.** Crie animações para se sentir natural, subdued e eficiente em vez de artificial, estranho ou lento.
+-   **Movimento.** Animações que reagem ao movimento em particular precisam ser aceleradas e desaceleradas, portanto, não use o movimento linear, a menos que a duração da animação seja muito curta. Os movimentos devem seguir o caminho de shorts do início ao fim, sem sobrecarr. O caminho de movimento completo nem sempre é necessário. Quando apropriado, enfatizar o final do movimento conforme ele fica mais lento e deixar o olho preencher o restante. Fazer isso faz com que o movimento se sinta muito mais responsivo e pedido. Ao animar o movimento de vários objetos simultaneamente, dê a eles caminhos ligeiramente diferentes com tempos ligeiramente diferentes para se sentir mais natural.
+-   **Taxa de quadros.** A maioria das animações deve usar uma taxa de quadros de 20 quadros por segundo. Se a animação for para uma experiência especial ou estiver relacionada à finalidade principal do programa, considere usar uma taxa mais alta de 24 30 quadros por segundo para melhorar a suavidade e realismo.
+-   **Escala.** Projete animações para funcionar bem em toda a gama de uso pretendido. Por exemplo, as transições de página devem ser projetadas para funcionar para todos os tamanhos de página.
+-   **Personalidade.** Projete animações para se sentir natural, desalocarada e eficiente em vez de artificial, elegante ou lenta.
 
 ### <a name="animated-text"></a>Texto animado
 
--   Embora você possa exibir texto usando uma transição, **não anime continuamente o texto.** O texto animado geralmente é confuso e mais difícil de ler do que o texto estático. **Exceção**
-    -   Você pode animar o texto em situações em que ele é tradicionalmente animado e fornecer uma alternativa acessível.
-    -   Você poderá animar texto se a finalidade do texto for essencialmente decorativa.
+-   Embora você possa exibir texto usando uma transição, **não anima continuamente o texto.** O texto animado geralmente é uma distração e é mais difícil de ler do que o texto estático. **Exceções:**
+    -   Você pode animar o texto em situações em que ele é animado tradicionalmente e fornece uma alternativa acessível.
+    -   Você poderá animar o texto se a finalidade do texto for principalmente decorativa.
 
-![captura de tela da interface Zune criada de forma criativa ](images/vis-animations-image13.png)
+![captura de tela da interface zune projetada de forma criadora ](images/vis-animations-image13.png)
 
-Neste exemplo, o Zune anima o texto, mas sua finalidade é basicamente decorativo. Não há problema se os usuários não lerem atentamente o texto.
+Neste exemplo, Zune anima o texto, mas sua finalidade é principalmente decorativa. Não haverá um problema se os usuários não lerem o texto com cuidado.
 
 ### <a name="reducing-power-consumption"></a>Reduzindo o consumo de energia
 
--   **Projete suas animações para reduzir o consumo de energia.** Quando projetado corretamente, as animações não devem aumentar significativamente o consumo de energia. Para reduzir o consumo de energia:
-    -   **Parar animação quando a exibição estiver desativada.** A exibição pode estar desligada com a finalidade de economizar energia.
-    -   **Não use animações de longa execução que não são iniciadas pelo usuário.** As animações que usam temporizadores periódicos de alta resolução reduzem a eficiência do gerenciamento de energia do processador. Além disso, certifique-se de desabilitar todos os temporizadores periódicos de alta resolução quando as animações forem concluídas.
-    -   **Suspende todas as animações quando o sistema se torna ocioso.** O período de inatividade do usuário para se tornar ocioso é determinado pelas opções de energia no painel de controle.
+-   **Projete suas animações para reduzir o consumo de energia.** Quando projetadas corretamente, as animações não devem aumentar significativamente o consumo de energia. Para reduzir o consumo de energia:
+    -   **Pare a animação quando a exibição estiver desligada.** A exibição pode estar desligada para economizar energia.
+    -   **Não use animações de execução longa que não são iniciadas pelo usuário.** Animações que usam temporizadores periódicos de alta resolução reduzem a eficiência do gerenciamento de energia do processador. Além disso, desabilite todos os temporizadores periódicos de alta resolução quando as animações são concluídas.
+    -   **Suspenda todas as animações quando o sistema ficar ocioso.** O período de inatividade do usuário para ficar ocioso é determinado Opções de Energia em Painel de Controle.
 
 ### <a name="accessibility"></a>Acessibilidade
 
--   **Não use a animação como a única maneira de transmitir informações essenciais.** As animações devem comunicar informações que sejam úteis, mas não críticas, porque elas não estão acessíveis aos usuários com deficiências visuais.
--   **Verifique se as informações equivalentes estão disponíveis por outros meios,** como:
+-   **Não use animação como a única maneira de transmitir informações essenciais.** As animações devem comunicar informações úteis, mas não críticas, pois não podem ser acessadas por usuários com deficiências visuais.
+-   **Certifique-se de que informações equivalentes estão disponíveis por outros meios,** como:
 
     -   **Por inspeção.** Os usuários podem determinar informações equivalentes examinando a tela ou os objetos envolvidos na animação.
     -   **Por uma simples interação.** Os usuários podem determinar informações equivalentes passando o mouse, clicando ou clicando duas vezes.

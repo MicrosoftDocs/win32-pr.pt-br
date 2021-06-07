@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 00257783c0c8a7919251004a4b1996ab4d994c3c
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: b5bff1682cdf55b44092a176abd6dc7e935220a7
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105765602"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444837"
 ---
 # <a name="columnbreak-element"></a>Elemento ColumnBreak
 
@@ -177,12 +177,8 @@ O exemplo a seguir demonstra a marcação básica para um elemento **ColumnBreak
 
 ## <a name="element-information"></a>Informações do elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo com suporte<br/> | Windows 7 |
-| Pode estar vazio                        | Sim       |
+* **Sistema mínimo com suporte**: Windows 7
+* **Pode estar vazio**: Sim
 
 
 

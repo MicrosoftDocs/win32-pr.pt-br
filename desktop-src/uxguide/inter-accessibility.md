@@ -4,12 +4,12 @@ description: A criação de software para acessibilidade significa garantir que 
 ms.assetid: df6947ec-6a1d-4645-ae3e-863839c32588
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 559d4c18e59c63a428aca1086e57f2ba4e62ae6f
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: e6ff3cdaa9a1a1b2a13025da14c9aed150ee3928
+ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104562495"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111524460"
 ---
 # <a name="accessibility-design-basics"></a>Acessibilidade (noções básicas de Design)
 
@@ -36,9 +36,8 @@ A tabela a seguir descreve as deficiências e os deficiências de usuários comu
 
 
 
-|                               |                                                                                                                                                                                                         |                                                                                                                                                                                       |
+| Deficiência    | Descrição   | Soluções  |
 |-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Deficiência**<br/>     | **Descrição**<br/>                                                                                                                                                                              | **Soluções**<br/>                                                                                                                                                              |
 | Visual<br/>             | Varia de leve (afetando 17% dos usuários) a graves (afetando 9% dos usuários).<br/>                                                                                                   | Ampliação, cores e contraste personalizáveis; Utilitários de braille; leitores de tela.<br/>                                                                                       |
 | Audição<br/>            | Varia de leve (afetando 18% dos usuários) a graves (afetando 2% dos usuários).<br/>                                                                                                   | Redundância de informações: som usado apenas como suplemento para a comunicação de texto ou Visual.<br/>                                                                                     |
 | Destreza<br/>          | Varia de leve (afetando 19 por cento dos usuários) a graves (afetando 5% dos usuários). Esse desemparelhamento geralmente envolve dificuldade para executar determinadas habilidades motoras com o teclado ou o mouse.<br/> | Redundância de método de entrada: recursos de programa acessados por mouse ou equivalentes de teclado.<br/>                                                                                       |
@@ -126,58 +125,58 @@ Três práticas fundamentais ajudarão você com o design acessível: permita um
 
 **Fornecendo interface do usuário flexível**
 
-O design acessível é, pelo menos, em parte, sobre a concessão de opções aos usuários. Não é uma matriz frustrante, espantosa de opções, mas um número limitado de opções que antecipam de forma inteligente as necessidades dos usuários. "Não gosta de navegar por meio do mouse? Aqui, você pode fazer as mesmas coisas usando apenas o teclado. Não gosta de teclados físicos? Aqui está um virtual que você pode usar na tela. "
+O design acessível é, pelo menos, em parte, sobre a concessão de opções aos usuários. Não é uma matriz frustrante, espantosa de opções, mas um número limitado de opções que antecipam de forma inteligente as necessidades dos usuários. "Não gosta de navegar por meio do mouse? Aqui, você pode fazer as mesmas coisas usando apenas o teclado. Não gosta de teclados físicos? Aqui está um virtual que você pode usar na tela."
 
 Por exemplo, forneça flexibilidade:
 
--   Fornecendo equivalentes selecionáveis pelo usuário para elementos que não são de texto (por exemplo, texto ALT para gráficos e legendas para áudio).
+-   Fornecendo equivalentes selecionáveis pelo usuário para elementos que não são de texto (por exemplo, texto alt para elementos gráficos e legendas para áudio).
 
-    ![captura de tela do botão de entrada](images/inter-accessibility-image6.png)
+    ![captura de tela do botão de login](images/inter-accessibility-image6.png)
 
-    ![captura de tela de texto ALT para botão de entrada](images/inter-accessibility-image7.png)
+    ![captura de tela do texto alt para o botão de entrada](images/inter-accessibility-image7.png)
 
-    Os usuários que optaram por não renderizar os elementos gráficos devem ver o texto alt em vez disso, descrevendo o que o controle faz e como interagir com ele.
+    Os usuários que optaram por não renderizar gráficos devem ver texto alt, descrevendo o que o controle faz e como interagir com ele.
 
--   Fornecendo alternativas à cor (por exemplo, diferenciação de ícone ou o uso de sons).
+-   Fornecendo alternativas à cor (por exemplo, diferenciação de ícone ou uso de sons).
 
     ![captura de tela de ícones em tons de cinza (escala de cinza) ](images/inter-accessibility-image8.png)
 
-    Neste exemplo, os ícones padrão são prontamente distinguiveis com base em seus designs.
+    Neste exemplo, os ícones padrão são prontamente distinguíveis com base em seus designs.
 
 -   Garantir o acesso ao teclado (por exemplo, uma parada de tabulação para cada controle interativo) para que os usuários possam realizar as mesmas coisas em seu programa com o mouse ou o teclado.
--   Garantir que seu programa ofereça boas opções de contraste de cores para os usuários. O Windows fornece uma opção de alto contraste, mas isso é realmente projetado para ser uma solução para um grave deficiência visual. Outras opções de contraste atendem melhor aos usuários com deficiência leve, como visão baixa e cegueira para cores.
--   Garantir que os usuários tenham uma maneira de ajustar o tamanho do texto na interface do usuário do programa (por exemplo, por meio de um controle deslizante ou de uma caixa suspensa para o tamanho da fonte). Se possível, dê suporte ao modo DPI (pontos por polegada).
--   Garantir que seu programa seja multimodal, o que significa que, se o modo principal do programa estiver inacessível para alguns, esses usuários terão uma forma de contornar o problema. Por exemplo, quando a animação é exibida, as informações devem ser displayáveis em pelo menos um modo de apresentação não animado na opção do usuário.
+-   Garantir que seu programa ofereça boas opções de contraste de cores para os usuários. O Windows fornece uma opção de alto contraste, mas isso é realmente projetado para ser uma solução para deficiência visual grave. Outras opções de contraste melhor atendem aos usuários com deficiências deficiências, como visão baixa e falta de cor.
+-   Garantir que os usuários tenham uma maneira de ajustar o tamanho do texto na interface do usuário do programa (por exemplo, por meio de um controle deslizante ou caixa de lista de lista para o tamanho da fonte). Se possível, suporte ao modo dpi (pontos altos por polegada).
+-   Garantir que seu programa seja multimodal, o que significa que, se o modo primário do programa estiver inacessível para alguns, esses usuários terão uma maneira de resolver o problema. Por exemplo, quando a animação é exibida, as informações devem ser exibidas em pelo menos um modo de apresentação não animado na opção do usuário.
 
-As interfaces multimodal e a navegação flexível essencialmente oferecem ao usuário a arquitetura de redundância de informações. As redundâncias às vezes têm connotações negativas; no texto da interface do usuário, por exemplo, aconselhamos a remoção da redundância para simplificar a experiência de leitura. Mas, no contexto de acessibilidade, a redundância denota mecanismos e experiências positivas e com falhas.
+Interfaces multimodal e navegação flexível oferecem essencialmente ao usuário a arquitetura de redundância de informações. Às vezes, a redundância tem conotações negativas; no texto da interface do usuário, por exemplo, recomendamos remover a redundância para simplificar a experiência de leitura. Mas, no contexto de acessibilidade, a redundância indica mecanismos e experiências positivos e seguros.
 
-**Respeitando os usuários**
+**Respeitando seus usuários**
 
-Como um princípio geral, a concepção é vital para a criação de programas acessíveis. Mesmo como um exercício intelectual, imagine o que deve ser semelhante a encontrar seu programa como um usuário que está desabilitado. Reserve um tempo para testar as telas da interface do usuário no modo de alto contraste e em várias resoluções, para garantir que a experiência seja uma boa para os usuários com deficiências visuais. Teste a acessibilidade do teclado marcando a caixa de seleção **sublinhar atalhos de teclado e chaves de acesso** no item do painel de controle de facilidade de acesso (para que as chaves de acesso estejam sempre visíveis). Você pode até mesmo além de testes rigorosos contratando desenvolvedores e designers que têm uma aptitude natural para Empathizing com outras pessoas começarem.
+O respeito como um princípio geral e orientador é essencial para a criação de programas acessíveis. Mesmo como um exercício intelectual, imagine como deve ser encontrar seu programa como um usuário desabilitado. Aproveite o tempo para testar telas de interface do usuário no modo de alto contraste e em várias resoluções, para garantir que a experiência seja uma boa para usuários com deficiências visuais. Teste a acessibilidade do teclado selecionando a caixa de seleção Atalhos de teclado sublinhados e teclas de acesso no item Central de Facilidade de Acesso Painel de Controle (para que as **teclas** de acesso sempre sejam visíveis). Você pode até mesmo ir além de testes rigorosos contratando desenvolvedores e designers que têm uma capacidade natural para empatia com outras pessoas para começar.
 
-Você também deve demonstrar respeito ao:
+Você também deve demonstrar o respeito por:
 
--   Usando configurações de todo o sistema (por exemplo, cor do sistema) em vez de configurações de logoff para seu programa específico. Respeite não apenas os parâmetros que os usuários selecionaram especificamente para interagir com seus programas, mas também recursos de acessibilidade incorporados ao sistema operacional que o usuário deseja em vigor, independentemente do programa que estiverem usando. Para obter mais informações, consulte [sobre os recursos de acessibilidade do Windows](/previous-versions//ms695605(v=vs.85)).
--   Preferir controles comuns a controles personalizados, pois os controles comuns já implementaram as APIs de acessibilidade do Windows.
--   Documentar todas as opções e recursos de acessibilidade (por exemplo, todos os atalhos de teclado). Os usuários com deficiências são altamente motivados a descobrir recursos de acessibilidade e, muitas vezes, esperam que informações abrangentes sejam coletadas na ajuda.
--   Criando documentação acessível em formatos acessíveis. Portanto, a documentação em si deve aderir às mesmas regras de acessibilidade que a interface do usuário principal, incluindo a capacidade de aumentar o tamanho da fonte, o uso de texto ALT para gráficos e a arquitetura de informações redundantes (por exemplo, usando codificação de cores somente como um suplemento para texto).
+-   Usando configurações de todo o sistema (por exemplo, Cor do Sistema) em vez de definir as configurações de hardwiring para seu programa específico. Respeita não apenas os parâmetros que os usuários selecionaram especificamente para interagir com seus programas, mas também recursos de acessibilidade integrados ao sistema operacional que o usuário deseja em vigor, independentemente do programa que está usando. Para obter mais informações, consulte [Sobre os recursos de acessibilidade do Windows.](/previous-versions//ms695605(v=vs.85))
+-   Preferir controles comuns a controles personalizados, porque os controles comuns já implementaram as APIs de acessibilidade do Windows.
+-   Documentando todas as opções e recursos de acessibilidade (por exemplo, todos os atalhos de teclado). Os usuários com deficiências são altamente incentivados a descobrir recursos de acessibilidade e geralmente esperam que informações abrangentes sejam coletadas na Ajuda.
+-   Criando documentação acessível em formatos acessíveis. Portanto, a própria documentação deve seguir as mesmas regras de acessibilidade que a interface do usuário primária, incluindo a capacidade de ampliar o tamanho da fonte, o uso de texto alt para gráficos e a arquitetura de informações redundantes (por exemplo, usando a codificação de cores apenas como um suplemento para texto).
 
-Em produtos de software, o respeito aos usuários pode se manifestar em usabilidade e pesquisa de mercado, em serviços de suporte do efficacious e documentação e, obviamente, em decisões de design. Por exemplo, pensando novamente em termos de design para usuários avançados: você está colocando esse novo recurso de ponta no porque deseja, ou porque você sabe que seus usuários avançados foram solicitados a fazê-lo? O último caso indica que o processo de tomada de decisão de design é bem informado pelo valor de respeito.
+Em produtos de software, o respeito aos usuários pode se manifestar na usabilidade e na pesquisa de mercado, em documentação e serviços de suporte inequisidores e, obviamente, em decisões de design. Por exemplo, pensando novamente em termos de design para usuários avançados: você está colocando esse novo recurso de ponta porque você o deseja ou porque sabe que os usuários avançados estão solicitando isso? O último caso indica que seu processo de tomada de decisão de design é bem informado pelo valor de respeito.
 
 **Fornecendo acesso programático**
 
-Fornecer acesso programático à interface do usuário é essencial para que as tecnologias assistenciais (como leitores de tela, dispositivos de entrada alternativos e programas de reconhecimento de fala) interpretem a tela corretamente para seus usuários. Ao criar um "mapa" de cada tela da interface do usuário em seu programa, você o disponibiliza para os usuários de tecnologias assistenciais.
+Fornecer acesso programático à interface do usuário é essencial para que tecnologias adaptativas (como leitores de tela, dispositivos de entrada alternativos e programas de reconhecimento de fala) interpretem a tela corretamente para seus usuários. Ao criar um "mapa" de cada tela de interface do usuário em seu programa, você o disponibiliza aos usuários de tecnologias adaptativas.
 
-Faça isso de forma bem:
+Faça isso bem:
 
--   Habilitando o acesso programático a todos os elementos e texto da interface do usuário (por exemplo, usando a interface COM Acessibilidade Ativa, [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)).
--   Colocar nomes (ou títulos) e descrições em objetos, quadros e páginas da interface do usuário (por exemplo, usando a propriedade nome do [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) ).
--   Garantir eventos programáticos é disparado por todas as atividades da interface do usuário (por exemplo, eventos de foco para todas as atividades de interface do usuário envolvendo o movimento de
+-   Habilitando o acesso programático a todos os elementos e textos da interface do usuário (por exemplo, usando a interface COM Acessibilidade Ativa, [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)).
+-   Colocar nomes (ou títulos) e descrições em objetos, quadros e páginas da interface do usuário (por exemplo, usando a propriedade [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) Name).
+-   Garantir que eventos programáticos sejam disparados por todas as atividades da interface do usuário (por exemplo, eventos de foco para todas as atividades de interface do usuário que envolvem a movimentação de foco).
 
 **Se você fizer apenas quatro coisas...**
 
-1.  Garanta que cada usuário possa aproveitar todo o potencial do seu programa.
-2.  Considere a acessibilidade como uma oportunidade para a solução criativa de problemas e outro meio de aumentar a satisfação geral do usuário.
+1.  Verifique se cada usuário pode aproveitar todo o potencial do seu programa.
+2.  Pense na acessibilidade como uma oportunidade para solução de problemas criativos e outro meio de aumentar a satisfação geral do usuário.
 3.  Respeitar as configurações do sistema.
 4.  Use controles comuns sempre que possível.
 
@@ -185,69 +184,69 @@ Faça isso de forma bem:
 
 ### <a name="general"></a>Geral
 
--   **Não interrompa nem desabilite os recursos ativados do sistema operacional ou outros produtos identificados como recursos de acessibilidade.** Você pode identificar esses recursos consultando a documentação do sistema operacional ou produto em questão.
--   **Não force os usuários a interagir com seu programa como a janela superior na tela.** Se uma função ou uma janela for necessária continuamente para que os usuários executem uma tarefa, essa janela sempre deverá permanecer visível, se o usuário escolher, independentemente de sua posição em relação a outras janelas. Por exemplo, se o usuário tiver um teclado móvel na tela que esteja na parte superior de todas as outras janelas para que fique visível o tempo todo, o programa nunca deverá obscurecer o posicionamento obrigatório na parte superior da [ordem Z](glossary.md).
--   **Use cores do sistema, fontes e controles comuns sempre que possível.** Ao fazer isso, você reduz significativamente o número de problemas de acessibilidade que os usuários encontram.
+-   **Não interromper ou desabilitar recursos ativados do sistema operacional ou outros produtos identificados como recursos de acessibilidade.** Você pode identificar esses recursos referindo-se à documentação do sistema operacional ou produto em questão.
+-   **Não force os usuários a interagir com seu programa como a janela superior na tela.** Se uma função ou uma janela for necessária continuamente para que os usuários executem uma tarefa, essa janela sempre deverá permanecer visível, se o usuário escolher, independentemente de sua posição em relação a outras janelas. Por exemplo, se o usuário tiver um teclado móvel na tela que está sobre todas as outras janelas para que ele seja visível em todos os momentos, seu programa nunca deverá obscurecer por posicionamento obrigatório na parte superior da ordem [Z.](glossary.md)
+-   **Use cores do sistema, fontes e controles comuns sempre que possível.** Ao fazer isso, você reduz significativamente o número de problemas de acessibilidade encontrados pelos usuários.
 
 ### <a name="addressing-particular-impairments"></a>Endereçamento de deficiências específicas
 
-**Visualizar**
+**Visual**
 
--   **Nunca confie apenas na cor para transmitir significado.** Use a cor apenas como um meio de rereforçar o significado fornecido por texto, design, local ou som.
+-   **Nunca confie apenas na cor para transmitir significado.** Use a cor apenas como um meio de reforçar o significado fornecido pelo texto, design, localização ou som.
 
-    ![captura de tela do ícone e da dica de ferramenta do Communicator vermelho ](images/inter-accessibility-image9.png)
+    ![captura de tela do ícone de comunicador vermelho e dica de ferramenta ](images/inter-accessibility-image9.png)
 
-    O principal método de comunicação neste exemplo é o texto de dica de ferramenta conciso. O uso de ajuda de cores na comunicação do significado, mas é secundário.
+    O principal método de comunicação neste exemplo é o texto conciso da dica de ferramenta. O uso de cores ajuda a comunicar o significado, mas é secundário.
 
--   **Use Infotips de texto alternativo (Alt) para descrever os gráficos.**
--   **Não use texto em elementos gráficos.** Os usuários com deficiências visuais podem ter gráficos desativados (por exemplo, em um navegador da Web) ou simplesmente não podem ver ou procurar texto colocado em gráficos.
--   **Verifique se as caixas de diálogo e janelas têm nomes significativos,** para que um usuário que esteja ouvindo em vez de ver a tela (por exemplo, usando um leitor de tela) obtenha informações contextuais apropriadas.
--   **Respeite as configurações do usuário para exibição Visual** , sempre obtendo tipos de fonte, tamanhos e cores, tamanhos de elemento de exibição do Windows e definições de configuração do sistema das APIs Theme e GetSystemMetrics.
--   **Mantenha o texto conciso em balão** para facilitar a leitura e minimizar a interrupção nos leitores de tela.
+-   **Use infotips de texto alternativos (alt) para descrever gráficos.**
+-   **Não use texto em gráficos.** Os usuários com deficiências visuais podem ter gráficos desligados (por exemplo, em um navegador da Web) ou simplesmente não podem ver ou procurar texto colocado em gráficos.
+-   **Verifique se as caixas de diálogo** e as janelas têm nomes significativos, para que um usuário que está ouvindo em vez de ver a tela (por exemplo, usando um leitor de tela) obtém informações contextuais apropriadas.
+-   Respeitar as configurações do usuário para exibição **visual** sempre obtendo faces de tipo de fonte, tamanhos e cores, tamanhos de elemento de exibição do Windows e definições de configuração do sistema das APIs Theme e GetSystemMetrics.
+-   **Mantenha o texto de balão conciso** para que seja mais fácil de ler e minimize a interrupção dos leitores de tela.
 
-    ![captura de tela de balão indicando limites de código PIN ](images/inter-accessibility-image10.png)
+    ![captura de tela do balão indicando limites de código de pino ](images/inter-accessibility-image10.png)
 
-    Embora os balões possam usar corpo de texto adicional, se necessário, este exemplo mostra que, às vezes, o título de texto sozinho atinge o mesmo objetivo de uma maneira mais econômica e acessível.
+    Embora os balão possam usar texto de corpo adicional, se necessário, este exemplo mostra que, às vezes, o texto do título sozinho atinge a mesma meta de maneira mais econômica e acessível.
 
 **Audição**
 
--   **Nunca confie apenas no som para transmitir significado.** Use o som apenas como um meio de rereforçar o significado fornecido pelo texto, design, local ou cor.
--   **Permitir que os usuários controlem o volume de saída de áudio.** Use o mixer de volume do Windows para essa finalidade. Para obter mais informações, consulte [som](vis-sound.md).
--   **Direcione o som do seu programa para ocorrer em um intervalo entre 500 Hz e 3000 Hz** ou ser facilmente ajustável pelo usuário nesse intervalo. Os sons nesse intervalo têm maior probabilidade de serem detectáveis por pessoas com deficiência auditiva.
+-   **Nunca confie em som sozinho para transmitir significado.** Use o som apenas como um meio de reforçar o significado fornecido pelo texto, design, localização ou cor.
+-   **Permitir que os usuários controlem o volume de saída de áudio.** Use o Mixer de Volume do Windows para essa finalidade. Para obter mais informações, consulte [Som](vis-sound.md).
+-   Direcionar o som do programa para ocorrer em um intervalo entre **500 Hz e 3000 Hz** ou ser facilmente ajustável pelo usuário nesse intervalo. Sons nesse intervalo têm maior probabilidade de serem detectáveis por pessoas com deficiência auditiva.
 
 **Destreza**
 
--   **Torne os valores de tempo limite da interface do usuário relativos a GetDoubleClickTime () em vez de usar horários absolutos.** Isso ajusta os tempos limite para a velocidade do usuário.
--   **Atribua chaves de acesso a todos os itens de menu** para que os usuários que preferem trabalhar com o teclado tenham a mesma capacidade de navegar pelo seu programa como usuários que trabalham com o mouse.
--   **Não faça um clique duplo e arraste a única maneira de executar uma ação.** Eles podem ser movimentações difíceis para alguns usuários.
--   **Não remova as barras de menu do seu programa.** As barras de menu são mais fáceis do que as barras de ferramentas para que os usuários do teclado acessem. Se você não quiser que a barra de menus fique visível por padrão, oculte-a.
--   **Torne a ajuda acessível do teclado fornecendo paradas de tabulação para botões e links de ajuda.**
--   **Para melhorar a conscientização das atribuições de chave de acesso em seu programa, você pode exibi-las em todos os momentos.** No painel de controle, acesse a central de facilidade de acesso e clique em **facilitar o uso do teclado**; em seguida, marque a caixa de seleção **sublinhar atalhos de teclado e chaves de acesso** .
+-   **Faça valores de tempoout da interface do usuário em relação a GetDoubleClickTime() em vez de usar tempos absolutos.** Isso ajusta os tempos limite à velocidade do usuário.
+-   **Atribua chaves de acesso** a todos os itens de menu para que os usuários que preferem trabalhar com o teclado tenham a mesma capacidade de navegar pelo programa que os usuários que trabalham com o mouse.
+-   **Não faça clique duas vezes e arraste a única maneira de executar uma ação.** Esses podem ser movimentos difíceis para alguns usuários.
+-   **Não remova barras de menu do programa.** As barras de menu são mais fáceis do que as barras de ferramentas para os usuários de teclado acessarem. Se você não quiser que a barra de menus seja visível por padrão, o hide-lo.
+-   **Tornar a Ajuda acessível por meio do teclado fornecendo paradas de tabulação para botões e links de Ajuda.**
+-   **Para melhorar o reconhecimento das atribuições de chave de acesso em seu programa, você pode exibi-las o tempo todo.** No Painel de Controle, vá para o Central de Facilidade de Acesso e clique em Tornar **o teclado mais fácil de usar**; em seguida, **marque a caixa de seleção Atalhos de teclado sublinhados e teclas de** acesso.
 
 **Cognitiva**
 
 -   **Use a divulgação progressiva** para ocultar a complexidade.
 
-    ![captura de tela de botões de divisão com triângulos inferiores ](images/inter-accessibility-image11.png)
+    ![captura de tela de botões divididos com triângulos para baixo ](images/inter-accessibility-image11.png)
 
     Nesses exemplos, as opções disponíveis no botão de comando ficam ocultas por padrão e os usuários podem optar por exibir as opções aproveitando os controles de divulgação progressiva.
 
 -   **Use ícones, barras de ferramentas e outros auxílios visuais** para reduzir a carga cognitiva de leitura de texto.
--   Quando possível, **forneça a funcionalidade de preenchimento automático em caixas de texto e listas suspensas editáveis** para que os usuários não precisem digitar o nome inteiro de comandos, nomes de arquivos ou opções semelhantes de um conjunto limitado de opções. Isso reduz a carga cognitiva para todos os usuários e reduz a quantidade de digitação para usuários para os quais a grafia ou digitação é difícil, lenta ou problemática.
--   **Demonstre conceitos difíceis na ajuda, incluindo tutoriais e animações.** Observe que as animações podem ser difíceis para os usuários com deficiência de captura e, portanto, devem ser usadas somente quando necessário.
+-   Quando **possível,** forneça a funcionalidade de conclusão automática em caixas de texto e listas de listas listadas editáveis, para que os usuários não tenham que digitar o nome inteiro de comandos, nomes de arquivo ou opções semelhantes de um conjunto limitado de opções. Isso reduz a carga cognitiva para todos os usuários e reduz a quantidade de digitação para usuários para os quais a ortografia ou a digitação é difícil, lenta ou complicada.
+-   **Demonstre conceitos difíceis na Ajuda incluindo tutoriais e animações.** Observe que as animações podem ser difíceis para usuários com deficiências e, portanto, devem ser usadas somente quando necessário.
 
-**Tomada**
+**Apreensão**
 
--   **Não use texto piscando ou piscando, objetos ou outros elementos que tenham uma frequência flash ou de intermitência no intervalo entre 2-55 Hz.**
--   **Limitar o uso de animações.** Alguns usuários são particularmente sensíveis ao movimento da tela, especialmente no periferia de seus campos visuais. Se você usar a animação para chamar a atenção para algo, verifique se a atenção é merecida e digno de interrupção do usuário.
+-   **Não use texto piscando ou piscando, objetos ou outros elementos com uma frequência de flash ou piscar no intervalo entre 2 e 55 Hz.**
+-   **Limite o uso de animações.** Alguns usuários são particularmente sensíveis à movimentação da tela, especialmente na periférico do campo visual. Se você usar a animação para chamar a atenção para algo, certifique-se de que a atenção seja ressupida e não seja capaz de interromper o usuário.
 
-**Fala ou linguagem**
+**Fala ou idioma**
 
--   **Organize e escreva texto claro, conciso e facilmente compreendido.** Os testes de usabilidade mostram que a desdobramento das informações de chave no final de uma frase melhora a compreensão. Para obter mais diretrizes, consulte [estilo e Tom](text-style-tone.md).
+-   **Organize e escreva texto claro, conciso e facilmente compreendido.** Os testes de usabilidade mostram que o desenrolamento das principais informações no final de uma frase melhora a compreensão. Para obter mais diretrizes, consulte [Estilo e tom.](text-style-tone.md)
 
 **Incorreto:**
 
-É três o próximo dígito?
+Três são o próximo dígito?
 
 Clique em OK para começar.
 
@@ -260,89 +259,88 @@ Para começar, clique em OK.
 ### <a name="access-keys"></a>Chaves de acesso
 
 -   **Prefira caracteres com larguras largas,** como w, m e letras maiúsculas.
--   **Prefira uma consoante distinta ou uma vogal,** como "x" em "Exit".
--   **Evite usar caracteres que tornem o sublinhado difícil de ver,** como (do mais problemático ao menos problemático):
-    -   Caracteres que são apenas um pixel de largura, como i e l.
+-   **Prefira uma consoante distinta ou uma voga,** como "x" em "Exit".
+-   Evite usar caracteres que dificultam a viagem do **sublinhado,** como (da mais problemática para a menos problemática):
+    -   Caracteres que têm apenas um pixel de largura, como i e l.
     -   Caracteres com descendentes, como g, j, p, q e y.
     -   Caracteres ao lado de uma letra com um descendente.
 
-### <a name="menu-access-keys"></a>Teclas de acesso do menu
+### <a name="menu-access-keys"></a>Teclas de acesso de menu
 
--   **Atribuir chaves de acesso a todos os itens de menu.** Sem exceções.
+-   **Atribua chaves de acesso a todos os itens de menu.** Nenhuma exceção.
 -   **Para itens de menu dinâmico (como arquivos usados recentemente), atribua chaves de acesso numericamente.**
 
     ![captura de tela do menu aberto com arquivos usados recentemente ](images/inter-accessibility-image12.png)
 
-    Neste exemplo, o programa de pintura no Windows atribui chaves de acesso numérico a arquivos usados recentemente.
+    Neste exemplo, o programa Paint no Windows atribui chaves de acesso numéricas a arquivos usados recentemente.
 
--   **Atribua chaves de acesso exclusivas dentro de um nível de menu.** Você pode reutilizar as chaves de acesso em diferentes níveis de menu.
--   **Torne as chaves de acesso fáceis de localizar:**
-    -   Para os itens de menu usados com mais frequência, escolha caracteres no início da primeira ou segunda palavra do rótulo, preferivelmente o primeiro caractere.
-    -   Para itens de menu usados com menos frequência, escolha letras que sejam uma consoante distinta ou uma vogal no rótulo.
+-   **Atribua chaves de acesso exclusivas em um nível de menu.** Você pode reutilizar chaves de acesso em diferentes níveis de menu.
+-   **Tornar as chaves de acesso fáceis de encontrar:**
+    -   Para os itens de menu usados com mais frequência, escolha caracteres no início da primeira ou segunda palavra do rótulo, preferencialmente o primeiro caractere.
+    -   Para itens de menu usados com menos frequência, escolha letras que sejam uma consoantes distintas ou uma voga no rótulo.
 
 ### <a name="dialog-box-access-keys"></a>Chaves de acesso da caixa de diálogo
 
--   **Sempre que possível, atribua chaves de acesso exclusivas a todos os controles interativos ou seus rótulos.** [Caixas de texto somente leitura](ctrl-text-boxes.md) são controles interativos (porque os usuários podem rolar e copiar texto), para que se beneficiem das chaves de acesso. **Não atribua chaves de acesso para:**
-    -   **Botões OK, cancelar e fechar.** Enter e ESC são usados para suas chaves de acesso. No entanto, sempre atribua uma chave de acesso a um controle que significa OK ou cancelar, mas tem um rótulo diferente.
+-   **Sempre que possível, atribua chaves de acesso exclusivas a todos os controles interativos ou seus rótulos.** [Caixas de texto somente leitura são](ctrl-text-boxes.md) controles interativos (porque os usuários podem rolar e copiar texto), portanto, eles se beneficiam das chaves de acesso. **Não atribua chaves de acesso a:**
+    -   **Botões OK, Cancelar e Fechar.** Enter e Esc são usados para suas chaves de acesso. No entanto, sempre atribua uma chave de acesso a um controle que significa OK ou Cancelar, mas tem um rótulo diferente.
 
         ![captura de tela de controles com chaves de acesso atribuídas ](images/inter-accessibility-image13.png)
 
-        Neste exemplo, o botão de confirmação positivo tem uma chave de acesso atribuída.
+        Neste exemplo, o botão de confirmação positiva tem uma chave de acesso atribuída.
 
--   **Rótulos de grupo.** Normalmente, os controles individuais dentro de um grupo recebem chaves de acesso e, portanto, o rótulo do grupo não precisa de um. No entanto, atribua uma chave de acesso ao rótulo do grupo e não aos controles individuais se houver uma falta de chaves de acesso.
--   **Botões de ajuda genéricos,** que são acessados com F1.
--   **Rótulos de link.** Geralmente, há muitos links para atribuir chaves de acesso exclusivas e os sublinhados de link ocultam os sublinhados da chave de acesso. Faça com que os usuários acessem links com a chave de guia em vez disso.
--   **Nomes de guias.** As guias são alternadas usando Ctrl + Tab e Ctrl + Shift + Tab.
--   **Procurar botões rotulados como "...".** Essas chaves de acesso não podem ser atribuídas exclusivamente.
--   **Controles sem rótulo,** como controles de rotação, botões de comando gráficos e controles de divulgação progressivos sem rótulo.
--   **Texto estático não rotulado ou rótulos para controles que não são interativos,** como barras de progresso.
--   **Atribua as chaves de acesso do botão confirmar primeiro para garantir que elas tenham as atribuições de chave padrão.** Se não houver uma atribuição de chave padrão, use a primeira letra da primeira palavra. Por exemplo, a tecla de acesso para botões Sim e não confirmar sempre deve ser "Y" e "N", independentemente dos outros controles na caixa de diálogo.
--   **Para botões de confirmação negativos (diferente de cancelar) com frase como "não", atribua a chave de acesso ao "n" em "não".** Se não for fraseada como "não", use a atribuição de chave de acesso padrão ou atribua a primeira letra da primeira palavra. Ao fazer isso, tudo não é e não tem uma chave de acesso consistente.
--   **Para facilitar a localização das chaves de acesso, atribua as chaves de acesso a um caractere que aparece no início do rótulo,** idealmente o primeiro caractere, mesmo se houver uma palavra-chave que aparece posteriormente no rótulo.
+-   **Rótulos de grupo.** Normalmente, os controles individuais em um grupo são atribuídos a chaves de acesso, portanto, o rótulo do grupo não precisa de uma. No entanto, atribua uma chave de acesso ao rótulo do grupo e não aos controles individuais se houver uma falta de chaves de acesso.
+-   **Botões de Ajuda Genérica,** que são acessados com F1.
+-   **Rótulos de link.** Geralmente, há muitos links para atribuir chaves de acesso exclusivas e sublinhados de link ocultam os sublinhados da chave de acesso. Fazer com que os usuários acessem links com a tecla Tab.
+-   **Nomes de tabulação.** As guias são ciclodas usando Ctrl+Tab e Ctrl+Shift+Tab.
+-   **Procure os botões rotulados como "...".** Elas não podem ser atribuídas exclusivamente a chaves de acesso.
+-   **Controles sem rótulo, como controles** de rotação, botões de comando gráfico e controles de divulgação progressiva sem rótulo.
+-   **Texto estático sem rótulo ou rótulos para controles que não são interativos,** como barras de progresso.
+-   **Atribua primeiro as chaves de acesso do botão de confirmação para garantir que elas tenham as atribuições de chave padrão.** Se não houver uma atribuição de chave padrão, use a primeira letra da primeira palavra. Por exemplo, a chave de acesso para os botões Sim e Não de confirmação sempre deve ser "Y" e "N", independentemente dos outros controles na caixa de diálogo.
+-   **Para botões de confirmação negativos (diferente de Cancelar) formulados como "Não", atribua a chave de acesso ao "n" em "Não fazer".** Se não for formulado como "Não", use a atribuição de chave de acesso padrão ou atribua a primeira letra da primeira palavra. Ao fazer isso, todos os Don'ts e No têm uma chave de acesso consistente.
+-   Para tornar as chaves de acesso fáceis de encontrar, atribua as chaves de acesso a um caractere que aparece no início do **rótulo,** idealmente o primeiro caractere, mesmo que haja uma palavra-chave que apareça posteriormente no rótulo.
 
-Para obter mais diretrizes e exemplos, consulte [teclado](inter-keyboard.md).
+Para obter mais diretrizes e exemplos, consulte [Teclado](inter-keyboard.md).
 
-## <a name="text"></a>Texto
+## <a name="text"></a>Text
 
--   **Use dois-pontos no final dos rótulos de controle externo.** Algumas tecnologias assistenciais procuram dois-pontos para identificar Rótulos de controle.
--   **Posicione os rótulos consistentemente em relação aos elementos que estão rotulados.** Isso ajuda a tecnologia assistencial a associar corretamente os rótulos aos seus controles correspondentes e ajuda os usuários da tela a saber onde procurar um rótulo ou controle.
+-   **Use dois-pontos no final dos rótulos de controle externo.** Algumas tecnologias adaptativas procurarão dois-pontos para identificar rótulos de controle.
+-   **Posiciona rótulos de forma consistente em relação aos elementos que eles estão rotulando.** Isso ajuda a tecnologia adaptativa a associar corretamente os rótulos a seus controles correspondentes e ajuda os usuários de ampliadores de tela a saber onde procurar um rótulo ou controle.
 
-    ![captura de tela de rótulos colocados de forma consistente ](images/inter-accessibility-image14.png)
+    ![captura de tela de rótulos colocados consistentemente ](images/inter-accessibility-image14.png)
 
-    Neste exemplo, os rótulos para cada uma das listas suspensas são colocados de forma consistente e usam dois-pontos.
+    Neste exemplo, os rótulos de cada uma das listas listadas são colocados de forma consistente e usam dois-pontos.
 
--   **Limite o texto alt a no máximo 150 caracteres.** Descreva a ação para ativar o controle (por exemplo, clique, clique com o botão direito do mouse e assim por diante) e, em seguida, descreva a função do controle.
+-   **Limite o texto alt a um máximo de 150 caracteres.** Descreva a ação para ativar o controle (por exemplo, clique, clique com o botão direito do mouse e assim por diante) e descreva a função do controle.
 
     **Aceitável:**
 
-    Button.
+    Botão.
 
-    Hills azul.
+    Blue blue blue.
 
     **Melhor:**
 
     Clique para entrar em sua conta.
 
-    Foto de Hills distantes mostrando como as cores ficam sobre a distância.
+    Foto de um arco distante mostrando como as cores esmaecem ao longo da distância.
 
--   **Não use texto para desenhar linhas, caixas ou outros símbolos gráficos.** Os caracteres usados dessa maneira podem confundir os usuários de leitores de tela. Por exemplo, uma caixa desenhada com a letra "X" em torno de uma área de texto é lida pelo software de leitor de tela como "x x x x x x" na primeira linha, seguida por "X" e o conteúdo e "X".
+-   **Não use texto para desenhar linhas, caixas ou outros símbolos gráficos.** Os caracteres usados dessa maneira podem confundir os usuários de leitores de tela. Por exemplo, uma caixa desenhada com a letra "X" em torno de uma área de texto é lida pelo software de leitor de tela como "X X X X X X X" na primeira linha, seguida por "X" e o conteúdo e "X".
 
 ## <a name="documentation"></a>Documentação
 
 -   Documente todas as opções e recursos de acessibilidade (por exemplo, todos os atalhos de teclado).
--   Crie documentação acessível em formatos acessíveis. Portanto, a documentação em si deve aderir às mesmas regras de acessibilidade que a interface do usuário principal.
--   Consulte chaves de acesso, não teclas de atalho (que têm um significado e uso diferentes), chaves mnemônicos ou aceleradores.
+-   Crie documentação acessível em formatos acessíveis. Portanto, a própria documentação deve seguir as mesmas regras de acessibilidade que a interface do usuário primária.
+-   Consulte chaves de acesso, não teclas de atalho (que têm um significado e uso diferentes), teclas mnemônicas ou aceleradores.
 -   Em geral, consulte uma pessoa com um tipo de deficiência, não uma pessoa desabilitada. Considere a pessoa primeiro, não o rótulo.
 
 
 
-|                                                               |                                                                                  |
+| Usar esses termos           | Em vez de                                                        |
 |---------------------------------------------------------------|----------------------------------------------------------------------------------|
-| **Use estes termos**<br/>                                | **Em vez de**<br/>                                                        |
-| Tem destreza limitada, tem deficiências motoras<br/>     | Inviável, imperfeito<br/>                                                        |
-| Sem deficiências<br/>                               | Normal, apto para, íntegro<br/>                                          |
-| Uma mão, pessoas que digitam com uma mão<br/>          | Mão única <br/>                                                        |
-| Pessoas com deficiências<br/>                           | As pessoas desabilitadas, desativadas, pessoas com handicaps, handicapped<br/> |
+| Tem limitação de agilidade, tem deficiências de movimento<br/>     | Comcodado, ao mesmo tempo<br/>                                                        |
+| Sem deficiências<br/>                               | Normal, apto, ntente<br/>                                          |
+| Com uma mão, pessoas que digitam com uma mão<br/>          | De mão única <br/>                                                        |
+| Pessoas com deficiências<br/>                           | As pessoas desabilitadas, desabilitadas, as pessoas com deficiências, as pessoas com deficiência<br/> |
 | Deficiências cognitivas, deficiências de desenvolvimento<br/> |                                                                                  |
 
 

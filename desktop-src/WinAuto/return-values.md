@@ -1,35 +1,35 @@
 ---
 title: Valores de retorno (recursos de acessibilidade do Windows)
-description: Este tópico descreve os valores de retorno mais comuns e outros valores de retorno que podem ser exibidos com menos frequência.
+description: Este tópico descreve os valores de retorno mais comuns e outros valores de retorno que você pode ver com menos frequência.
 ms.assetid: e6deca92-42da-41ab-bfdb-75cbce3022bb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cae2ccaf8bc74b1802be7569bc9e783cde4e11f9
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: cd0f073c401682eb78d9fdf9270709a84ed77ae2
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104454498"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443987"
 ---
 # <a name="return-values-windows-accessibility-features"></a>Valores de retorno (recursos de acessibilidade do Windows)
 
-Este tópico descreve os valores de retorno mais comuns e outros valores de retorno que podem ser exibidos com menos frequência.
+Este tópico descreve os valores de retorno mais comuns e outros valores de retorno que você pode ver com menos frequência.
 
 ## <a name="common-return-values"></a>Valores de retorno comuns
 
-Os métodos [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) retornam um dos seguintes valores, definidos em Winerror. h ou outro código de erro de Component Object Model padrão (com):
+Os [**métodos IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) retornam um dos seguintes valores, definidos em winerror.h ou outro código de erro COM (Component Object Model padrão:
 
 
 
-|                         |                                                                                                                                                                                                                                                                                                                                                                                           |
+|   Valor                      |   Descrição                                                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | S \_ OK                   | O método foi bem-sucedido.                                                                                                                                                                                                                                                                                                                                                                     |
-| \_falso                | O método foi bem-sucedido na parte. Isso acontece quando o método é executado com sucesso, mas as informações solicitadas não estão disponíveis. Por exemplo, Microsoft Acessibilidade Ativa retornará S \_ false se você chamar [**IAccessible:: accHitTest**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acchittest) para recuperar um objeto filho em um determinado ponto e o ponto especificado não estiver dentro do objeto ou do filho do objeto. |
-| DISP \_ E \_ MEMBERNOTFOUND | O objeto não oferece suporte à propriedade ou ação solicitada. Por exemplo, um botão de ação retorna esse valor se você solicitar sua [propriedade Value](value-property.md), porque ela não tem uma propriedade Value.                                                                                                                                                                           |
-| E \_ NOTIMPL              | O método não está implementado. Esse valor ocorre quando um cliente chama um método que ainda não tem suporte nesse sistema operacional.                                                                                                                                                                                                                                                         |
-| E \_ INVALIDARG           | Um ou mais argumentos não eram válidos. Esse erro ocorre quando o chamador tenta identificar um objeto filho usando um identificador que o servidor não reconhece. Esse erro também ocorre quando um cliente tenta identificar um objeto filho dentro de um objeto que não tem filhos.                                                                                                      |
+| S \_ FALSE                | O método foi bem-sucedido em parte. Isso acontece quando o método é bem-sucedido, mas as informações solicitadas não estão disponíveis. Por exemplo, Microsoft Active Accessibility retornará S FALSE se você chamar \_ [**IAccessible::accHitTest**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acchittest) para recuperar um objeto filho em um determinado ponto e o ponto especificado não estiver dentro do objeto ou do filho do objeto. |
+| DISP \_ E \_ MEMBERNOTFOUND | O objeto não dá suporte à propriedade ou ação solicitada. Por exemplo, um botão de push retornará esse valor se você solicitar sua [propriedade Value](value-property.md), porque ele não tem uma propriedade Value.                                                                                                                                                                           |
+| E \_ NOTIMPL              | O método não é implementado. Esse valor ocorre quando um cliente chama um método que ainda não tem suporte nesse sistema operacional.                                                                                                                                                                                                                                                         |
+| E \_ INVALIDARG           | Um ou mais argumentos não eram válidos. Esse erro ocorre quando o chamador tenta identificar um objeto filho usando um identificador que o servidor não reconhece. Esse erro também resulta quando um cliente tenta identificar um objeto filho dentro de um objeto que não tem filhos.                                                                                                      |
 | E \_ OUTOFMEMORY          | O método não pôde alocar memória necessária para concluir uma operação crucial para seu sucesso.                                                                                                                                                                                                                                                                                        |
-| E \_ falha                 | Ocorreu um erro desconhecido ou genérico.                                                                                                                                                                                                                                                                                                                                                     |
+| E \_ FAIL                 | Ocorreu um erro desconhecido ou genérico.                                                                                                                                                                                                                                                                                                                                                     |
 
 
 
@@ -37,14 +37,14 @@ Os métodos [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 
 ## <a name="additional-return-values"></a>Valores de retorno adicionais
 
-Os seguintes são valores de retorno que os métodos [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) podem retornar. Esses valores de retorno não são tão comuns quanto os anteriores, mas você deve estar ciente deles.
+A seguir estão os valores de retorno [**que os métodos IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) podem retornar. Esses valores de retorno não são tão comuns quanto os anteriores, mas você deve estar ciente deles.
 
 
 
-|                        |                                                                                      |
+|    Valor                    |    Descrição                                                                                  |
 |------------------------|--------------------------------------------------------------------------------------|
 | E \_ ACCESSDENIED        | Isso é retornado quando você chama get \_ accValue para obter o valor de um controle de senha. |
-| obter \_ E \_ exceção     |                                                                                      |
+| EXCEÇÃO \_ DISP E \_     |                                                                                      |
 | CO \_ E \_ OBJNOTCONNECTED |                                                                                      |
 
 

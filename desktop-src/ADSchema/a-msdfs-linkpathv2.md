@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 892cee6a5e6f423a0ed750858e19e1accccbe45f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4659dbf00c6a53c77a23e98836ea1af4eeb4c38a
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087105"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111386855"
 ---
 # <a name="ms-dfs-link-path-v2-attribute"></a>atributo ms-DFS-link-Path-v2
 
-Caminho de link DFS relativo ao compartilhamento de destino de raiz DFS (ou seja, sem os componentes de nome de namespace de servidor/domínio e DFS). Use barras (/) em vez de barras invertidas ( \) para que as pesquisas LDAP possam ser feitas sem a necessidade de usar escapes.
+Caminho de link DFS relativo ao compartilhamento de destino de raiz DFS (ou seja, sem os componentes de nome de namespace de servidor/domínio e DFS). Use barras (/) em vez de barras invertidas ( \\ ), para que as pesquisas LDAP possam ser feitas sem a necessidade de usar escapes.
 
 
 
@@ -36,7 +36,7 @@ Caminho de link DFS relativo ao compartilhamento de destino de raiz DFS (ou seja
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2039                     |
 | System-ID-GUID    | 86b021f6-10ab-40a2-a252-1dc0cc3be6a9        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

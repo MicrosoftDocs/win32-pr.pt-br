@@ -1,19 +1,19 @@
 ---
-description: Define um grupo que contém um conjunto de conteúdo agrupado em uma nota do diário.
+description: Define um grupo que contém um conjunto de conteúdo agrupado em uma nota de Diário.
 ms.assetid: e2561be1-03ce-41f7-9ad4-197d75411c48
-title: Grupo de grupos de conteúdo
+title: Grupo ContentGroup
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fbbc13a3dee796646b6d61ac9ba0bde50880f12
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02e4291da1912c43674871c06fb803e1936f7178
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011382"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432608"
 ---
-# <a name="contentgroup-group"></a>Grupo de grupos de conteúdo
+# <a name="contentgroup-group"></a>Grupo ContentGroup
 
-Define um grupo que contém um conjunto de conteúdo agrupado em uma nota do diário.
+Define um grupo que contém um conjunto de conteúdo agrupado em uma nota de Diário.
 
 ## <a name="definition"></a>Definição
 
@@ -40,13 +40,13 @@ Define um grupo que contém um conjunto de conteúdo agrupado em uma nota do di�
 
 [**InkWord**](inkword-element.md)
 
-[**Senha**](drawing-element.md)
+[**Desenho**](drawing-element.md)
 
-[**Texto**](text-element.md)
+[**Text**](text-element.md)
 
 [**Imagem**](docimage-element.md)
 
-[**Sinalizador**](flag-element.md)
+[**Bandeira**](flag-element.md)
 
 ## <a name="attributes"></a>Atributos
 
@@ -54,10 +54,10 @@ Define um grupo que contém um conjunto de conteúdo agrupado em uma nota do di�
 
 | Atributo  | Type                      | Obrigatório | Descrição                                                                                        | PossibleValues                       |
 |------------|---------------------------|----------|----------------------------------------------------------------------------------------------------|--------------------------------------|
-| **Mantida**   | **xs:integer**            | Obrigatório | A distância da origem até o ponto mais à esquerda na caixa delimitadora para o elemento.<br/> | Qualquer inteiro.<br/>              |
-| **Top**    | **xs:integer**            | Obrigatório | A distância da origem até o ponto superior na caixa delimitadora para o elemento.<br/>  | Qualquer inteiro.<br/>              |
-| **Largura**  | **xs:nonNegativeInteger** | Obrigatório | A largura da caixa delimitadora para o elemento.<br/>                                          | Qualquer inteiro não negativo.<br/> |
-| **Altura** | **xs:nonNegativeInteger** | Obrigatório | A altura da caixa delimitadora para o elemento.<br/>                                         | Qualquer inteiro não negativo.<br/> |
+| **Left**   | **xs:integer**            | Obrigatório | A distância da origem até o ponto mais à esquerda na caixa delimitante do elemento.<br/> | Qualquer inteiro.<br/>              |
+| **Top**    | **xs:integer**            | Obrigatório | A distância da origem até o ponto mais alto na caixa delimitada do elemento.<br/>  | Qualquer inteiro.<br/>              |
+| **Largura**  | **xs:nonNegativeInteger** | Obrigatório | A largura da caixa delimitada para o elemento.<br/>                                          | Qualquer inteiro não negativo.<br/> |
+| **Altura** | **xs:nonNegativeInteger** | Obrigatório | A altura da caixa delimitada para o elemento.<br/>                                         | Qualquer inteiro não negativo.<br/> |
 
 
 
@@ -67,10 +67,10 @@ Define um grupo que contém um conjunto de conteúdo agrupado em uma nota do di�
 
 
 
-|             |                                            |
+|  Elemento     | Valor                                                     |
 |-------------|--------------------------------------------|
-| Namespace   | urn: esquemas-Microsoft-com: Tablet: RichInk |
-| Nome do esquema | Leitor de diário                             |
+| Namespace   | urn:schemas-microsoft-com:tabletpc:richink |
+| Nome do esquema | Leitor de Diário                             |
 
 
 

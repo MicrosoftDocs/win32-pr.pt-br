@@ -1,19 +1,19 @@
 ---
-description: Contém informações de título sobre a nota do diário.
+description: Contém informações de título sobre a nota Do diário.
 ms.assetid: efeed3a6-de5e-4698-9dc3-d0acb3d13dee
 title: Elemento Title
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2362e286482b329c50788b8eae4b4a30cbd1a125
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef687f809aae5c3722cdad84ee63d79c7bfcfb21
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105781133"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432218"
 ---
 # <a name="title-element"></a>Elemento Title
 
-Contém informações de título sobre a nota do diário.
+Contém informações de título sobre a nota Do diário.
 
 ## <a name="definition"></a>Definição
 
@@ -23,7 +23,7 @@ Contém informações de título sobre a nota do diário.
 
 ## <a name="parent-elements"></a>Elementos pai
 
-[**Telas**](stationery-element.md)
+[**Papelaria**](stationery-element.md)
 
 ## <a name="child-elements"></a>Elementos filho
 
@@ -55,7 +55,7 @@ Contém informações de título sobre a nota do diário.
 <td><strong>Estilo</strong></td>
 <td><strong>xs:string</strong></td>
 <td>Obrigatório</td>
-<td>Especifica o tipo de borda ao redor do título da nota.</td>
+<td>Especifica o tipo de borda em torno do título da nota.</td>
 <td><ul>
 <li>Nenhum</li>
 <li>SolidSquare</li>
@@ -66,7 +66,7 @@ Contém informações de título sobre a nota do diário.
 </ul></td>
 </tr>
 <tr class="even">
-<td><strong>Datastyle</strong></td>
+<td><strong>DateStyle</strong></td>
 <td><strong>xs:string</strong></td>
 <td>Obrigatório</td>
 <td>Define se o título inclui uma data ou não.</td>
@@ -77,10 +77,10 @@ Contém informações de título sobre a nota do diário.
 </tr>
 <tr class="odd">
 <td><strong>Cor</strong></td>
-<td><a href="colortype-simple-type.md"><strong>SimpleType de ColorType</strong></a></td>
+<td><a href="colortype-simple-type.md"><strong>ColorType simpleType</strong></a></td>
 <td>Opcional</td>
 <td>Especifica a cor do plano de fundo.</td>
-<td>Confira <a href="colortype-simple-type.md"><strong>simpleType de ColorType</strong></a>.</td>
+<td>Consulte <a href="colortype-simple-type.md"><strong>ColorType simpleType</strong></a>.</td>
 </tr>
 </tbody>
 </table>
@@ -93,11 +93,11 @@ Contém informações de título sobre a nota do diário.
 
 
 
-|              |                                                         |
+| Elemento      | Valor                                                   |
 |--------------|---------------------------------------------------------|
-| Tipo de elemento | ComplexType de [**títulotype**](titletype-complex-type.md) |
-| Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk              |
-| Nome do esquema  | Leitor de diário                                          |
+| Tipo de elemento | [**ComplexType TitleType**](titletype-complex-type.md) |
+| Namespace    | urn:schemas-microsoft-com:tabletpc:richink              |
+| Nome do esquema  | Leitor de Diário                                          |
 
 
 

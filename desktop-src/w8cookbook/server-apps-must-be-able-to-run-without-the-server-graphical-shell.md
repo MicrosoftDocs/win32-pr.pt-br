@@ -4,12 +4,12 @@ description: Os aplicativos do servidor devem ser capazes de executar sem o shel
 ms.assetid: 8F531497-B64D-4E79-AD7A-790EFDC6ADFE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7666ae07a28d798a36d249bf37ab2d7719b9fba0
-ms.sourcegitcommit: 46376be61d3fa308f9b1a06d7e2fa122a39755af
+ms.openlocfilehash: ae2a3002fc2395faba3e07d90a2322c770fe3ee9
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "104366855"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443217"
 ---
 # <a name="server-apps-must-be-able-to-run-without-the-server-graphical-shell"></a>Os aplicativos do servidor devem ser capazes de executar sem o shell gráfico do servidor
 
@@ -17,7 +17,7 @@ ms.locfileid: "104366855"
 
 **Servidores** – Windows Server 2012 
 
-## <a name="description"></a>Description
+## <a name="description"></a>Descrição
 
 O shell gráfico do servidor, o recurso que inclui o Windows Explorer e o Internet Explorer, é instalado por padrão nas instalações "servidor com uma GUI" do Windows Server 2012. O recurso de shell gráfico do servidor pode ser desinstalado para reduzir o potencial de manutenção e de serviço, limitando assim o número de reinicializações que o servidor pode incorrer e, ao mesmo tempo, permitindo que as ferramentas de gerenciamento sejam executadas localmente no servidor.
 
@@ -62,7 +62,7 @@ HKEY \_ local \_ Machine \\ software \\ Microsoft \\ Windows NT \\ CurrentVersio
 
 
 
-|                  | Server Core | Interface Mínima do Servidor | Shell gráfico do servidor |
+|   &nbsp;         | Server Core | Interface Mínima do Servidor | Shell gráfico do servidor |
 |------------------|-------------|--------------------------|------------------------|
 | ServerCore = 1     | X           | X                        | X                      |
 | Servidor-GuiMgmt = 1 |             | X                        | X                      |
@@ -70,7 +70,7 @@ HKEY \_ local \_ Machine \\ software \\ Microsoft \\ Windows NT \\ CurrentVersio
 
 
 
- 
+ 
 
 Um "X" na tabela acima significa que a chave do registro estará presente quando o recurso correspondente for instalado.
 
@@ -86,6 +86,6 @@ Se você não puder interromper completamente o uso dessas APIs e binários, cer
 
 -   [Documentos do Server Core existentes no MSDN](/previous-versions/windows/desktop/legacy/ms723891(v=vs.85))
 
- 
+ 
 
- 
+ 

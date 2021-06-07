@@ -4,12 +4,12 @@ description: Não há suporte para a chamada de ImmSetConversionStatus () ou Imm
 ms.assetid: C6F3C8E7-E07A-40C6-A257-037766C670E7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4b0846b56b1d6c2367c46e4adf82dac011c49fc
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7c8ca572b1ea88ca988ecba66231a87cb6ae6db2
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641198"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443138"
 ---
 # <a name="calling-immsetconversionstatus-or-immgetconversionstatus-from-windows-store-apps-is-not-supported"></a>Não há suporte para a chamada de ImmSetConversionStatus () ou ImmGetConversionStatus () de aplicativos da Windows Store
 
@@ -29,14 +29,14 @@ Na inicialização do aplicativo, o modo IME é definido com os seguintes padrõ
 
 
 
-|          | Painel de entrada de software | Teclado de hardware |
+| &nbsp;   | Painel de entrada de software | Teclado de hardware |
 |----------|----------------------|-------------------|
 | KOR, JPN | Ativado                   | Desativado               |
 | CHS, CHT | Ativado                   | Ativado                |
 
 
 
- 
+ 
 
 ## <a name="solution"></a>Solução
 
@@ -50,6 +50,6 @@ O modo IME para um escopo de entrada especificado é determinado por cada IME. O
 -   [ImmSetConversionStatus](/windows/win32/api/immdev/nf-immdev-immsetconversionstatus)
 -   [ImmGetConversionStatus](/previous-versions/aa912903(v=msdn.10))
 
- 
+ 
 
- 
+ 

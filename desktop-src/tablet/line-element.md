@@ -1,7 +1,7 @@
 ---
-description: Contém uma linha em um parágrafo.
+description: Contém uma linha dentro de um Parágrafo.
 ms.assetid: a88a2bf7-034f-4141-9f1c-f1123bab4a67
-title: Elemento line (Windows. UI. XAML. Shapes. h)
+title: Elemento Line (Windows.ui.xaml.shapes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - windows.ui.xaml.shapes.h
-ms.openlocfilehash: db36c2d31960b04023229b5b3bad2bcba99d7ab6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 91663ba7462db6b8d3ec5a4ed1c91bfe2b66e5a2
+ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105764306"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111432398"
 ---
-# <a name="line-element"></a>Elemento de linha
+# <a name="line-element"></a>Elemento Line
 
-Contém uma linha em um [**parágrafo**](paragraph-element.md).
+Contém uma linha dentro de um [**Parágrafo**](paragraph-element.md).
 
 ## <a name="definition"></a>Definição
 
@@ -46,11 +46,11 @@ Nenhum.
 
 
 
-|              |                                                       |
+|  Elemento     | Valor                                                     |
 |--------------|-------------------------------------------------------|
-| Tipo de elemento | ComplexType [**Linetype**](linetype-complex-type.md) |
-| Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk            |
-| Nome do esquema  | Leitor de diário                                        |
+| Tipo de elemento | [**ComplexType LineType**](linetype-complex-type.md) |
+| Namespace    | urn:schemas-microsoft-com:tabletpc:richink            |
+| Nome do esquema  | Leitor de Diário                                        |
 
 
 
@@ -62,7 +62,7 @@ Nenhum.
 
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Windows. UI. XAML. Shapes. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Windows.ui.xaml.shapes.h</dt> </dl> |
 
 
 

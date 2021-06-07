@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f20ae9e347303288868eeb16758736047fecc1b
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 2f5d22b572eb9ad2f2e46b029ec242b48d5cd684
+ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917270"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111386875"
 ---
 # <a name="ncalrpc-attribute"></a>atributo Ncalrpc
 
@@ -34,7 +34,7 @@ endpoint("ncalrpc:[port-name]")
 *nome da porta* 
 </dt> <dd>
 
-Uma cadeia de caracteres que especifica a porta de comunicação (um aplicativo, um serviço ou uma instância de um serviço) que um cliente usa para fazer chamadas entre processos em um servidor. A cadeia de caracteres pode conter até 53 caracteres e não deve conter nenhuma barra invertida ( \) caracteres. O nome do computador não deve ser usado com a palavra-chave **Ncalrpc** .
+Uma cadeia de caracteres que especifica a porta de comunicação (um aplicativo, um serviço ou uma instância de um serviço) que um cliente usa para fazer chamadas entre processos em um servidor. A cadeia de caracteres pode conter até 53 caracteres e não deve conter nenhum caractere de barra invertida ( \\ ). O nome do computador não deve ser usado com a palavra-chave **Ncalrpc** .
 
 </dd> </dl>
 
@@ -102,6 +102,6 @@ interface iface
 [Associação de cadeia de caracteres](/windows/desktop/Rpc/string-binding)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

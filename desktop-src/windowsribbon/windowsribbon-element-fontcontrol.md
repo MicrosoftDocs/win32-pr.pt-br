@@ -1,9 +1,9 @@
 ---
 title: Elemento FontControl
-description: Representa um controle de fonte, que é um contêiner especializado de controles individuais dedicados à manipulação de fontes.
+description: Representa um Controle de Fonte, que é um contêiner especializado de controles individuais dedicados à manipulação de fontes.
 ms.assetid: 98eddab5-28cb-4b9d-a788-ee28dd6055b1
 keywords:
-- Faixa de FontControl do elemento do Windows
+- Faixa de Opções do Windows do elemento FontControl
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fa080b58e3a9d53fa044e7dbbb6598d5b7be7c49
-ms.sourcegitcommit: 2387bc0339a1764564c1509e72ed5f2e8ae60b36
+ms.openlocfilehash: 42c9d900c2af4f7f8ba26f5ac8dbbdc0d055668d
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "104365812"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111443397"
 ---
 # <a name="fontcontrol-element"></a>Elemento FontControl
 
-Representa um [controle de fonte](windowsribbon-controls-fontcontrol.md), que é um contêiner especializado de controles individuais dedicados à manipulação de fontes.
+Representa um [Controle de Fonte](windowsribbon-controls-fontcontrol.md), que é um contêiner especializado de controles individuais dedicados à manipulação de fontes.
 
 ## <a name="usage"></a>Uso
 
@@ -62,65 +62,65 @@ Representa um [controle de fonte](windowsribbon-controls-fontcontrol.md), que é
 <tbody>
 <tr class="odd">
 <td><strong>CommandName</strong><br/></td>
-<td>xs: positiveInteger ou xs: String<br/></td>
+<td>xs:positiveInteger ou xs:string<br/></td>
 <td>Não<br/></td>
-<td>Associa o elemento a um <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs: positiveInteger ou xs: String)<br/> </dt> <dd> Uma cadeia de caracteres, um valor inteiro entre 2 e 59999, inclusive, ou um valor hexadecimal entre 0x2 e 0xea5f, inclusive. <br/> O valor deve ser exclusivo no documento XML da faixa de faixas. <br/> Comprimento máximo: 100 caracteres. <br/> </dd> </dl></td>
+<td>Associa o elemento a um <a href="windowsribbon-element-command.md"><strong>Comando</strong></a>.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger ou xs:string)<br/> </dt> <dd> Uma cadeia de caracteres, um valor inteiro entre 2 e 59999, inclusive ou um valor hexadecimal entre 0x2 e 0xea5f, inclusive. <br/> O valor deve ser exclusivo dentro do documento XML da Faixa de Opções. <br/> Comprimento máximo: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>FontType</strong><br/></td>
 <td>xs:string<br/></td>
 <td>Não<br/></td>
 <td>Restrito a um dos seguintes valores: <br/> <br/>
-<dt><span></span><span></span><strong></strong> (FontOnly)<br/> </dt> <dd> Padrão. <br/> <img src="images/markup/screenshot-fonttype-fontonly.png" alt="Screen shot of the FontControl element with the FontOnly attribute set to true." /><br/> Definir o atributo <em>FontType</em> como <code>FontOnly</code> habilita a seguinte funcionalidade:<br/>
+<dt><span></span><span></span><strong></strong> (FontOnly)<br/> </dt> <dd> Padrão. <br/> <img src="images/markup/screenshot-fonttype-fontonly.png" alt="Screen shot of the FontControl element with the FontOnly attribute set to true." /><br/> Definir o <em>atributo FontType</em> como <code>FontOnly</code> habilita a seguinte funcionalidade:<br/>
 <ul>
-<li>Caixa de combinação <strong>da família de fontes</strong> .</li>
-<li>Caixa de combinação de <strong>tamanho da fonte</strong> .</li>
-<li><p>Botões de alternância em <strong>negrito</strong>, <strong>itálico</strong>, <strong>sublinhado</strong>e <strong>tachado</strong> .</p>
+<li><strong>Caixa de combinação</strong> da família de fontes.</li>
+<li><strong>Caixa de combinação</strong> Tamanho da Fonte.</li>
+<li><p><strong>Botões</strong>de alternância Negrito, <strong>Itálico,</strong> <strong>Sublinhado</strong>e <strong>Tachado.</strong></p>
 <blockquote>
 [!Note]<br />
-Os botões de alternância <strong>tachado</strong> e <strong>sublinhado</strong> são exibidos por padrão, mas podem ser ocultados definindo os atributos <em>IsStrikethroughButtonVisible</em> e <em>IsUnderlineButtonVisible</em> como <code>false</code> .
+Os botões <strong></strong> <strong>de</strong> alternância Tachado e Sublinhado são exibidos por padrão, mas podem ser ocultos definindo os atributos <em>IsStrikethroughButtonVisible</em> e <em>IsUnderlineButtonVisible</em> como <code>false</code> .
 </blockquote>
 <p><br/></p></li>
 </ul>
-</dd> <dt><span></span><span></span><strong></strong> (FontWithColor)<br/> </dt> <dd> <img src="images/markup/screenshot-fonttype-fontwithcolor.png" alt="Screen shot of the FontControl element with the FontWithColor attribute set to true." /><br/> Definir o atributo <em>FontType</em> como <code>FontWithColor</code> habilita a seguinte funcionalidade:<br/>
+</dd> <dt><span></span><span></span><strong></strong> (FontWithColor)<br/> </dt> <dd> <img src="images/markup/screenshot-fonttype-fontwithcolor.png" alt="Screen shot of the FontControl element with the FontWithColor attribute set to true." /><br/> Definir o <em>atributo FontType</em> como <code>FontWithColor</code> habilita a seguinte funcionalidade:<br/>
 <ul>
-<li>Caixa de combinação <strong>da família de fontes</strong> .</li>
-<li>Caixa de combinação de <strong>tamanho da fonte</strong> .</li>
-<li><strong>Aumentar a fonte</strong> e <strong>reduzir</strong> os botões de tamanho da fonte de fonte e diminuir.</li>
-<li><p>Botões de alternância em <strong>negrito</strong>, <strong>itálico</strong>, <strong>sublinhado</strong>e <strong>tachado</strong> .</p>
+<li><strong>Caixa de combinação</strong> da família de fontes.</li>
+<li><strong>Caixa de combinação</strong> tamanho da fonte.</li>
+<li><strong>Aumentar a fonte</strong> e <strong>reduzir o incremento</strong> de tamanho da fonte e os botões de decremento.</li>
+<li><p><strong>Botões</strong>de alternância Negrito, <strong>Itálico,</strong> <strong>Sublinhado</strong>e <strong>Tachado.</strong></p>
 <blockquote>
 [!Note]<br />
-Os botões de alternância <strong>tachado</strong> e <strong>sublinhado</strong> são exibidos por padrão, mas podem ser ocultados definindo os atributos <em>IsStrikethroughButtonVisible</em> e <em>IsUnderlineButtonVisible</em> como <code>false</code> .
+Os botões <strong></strong> <strong>de</strong> alternância Tachado e Sublinhado são exibidos por padrão, mas podem ser ocultos definindo os atributos <em>IsStrikethroughButtonVisible</em> e <em>IsUnderlineButtonVisible</em> como <code>false</code> .
 </blockquote>
 <p><br/></p></li>
-<li>Seletor de cores de <strong>cor do texto</strong> .</li>
-<li><p>Seletor de cor de <strong>cor de realce de texto</strong> .</p>
+<li><strong>Selador de cor</strong> de texto.</li>
+<li><p><strong>Selador de cor de realçada</strong> de texto.</p>
 <blockquote>
 [!Note]<br />
-Esse controle é oculto por padrão, mas pode ser exibido definindo o atributo <em>IsHighlightButtonVisible</em> como <code>true</code> .
+Esse controle está oculto por padrão, mas pode ser exibido definindo o atributo <em>IsHighlightButtonVisible</em> como <code>true</code> .
 </blockquote>
 <p><br/></p></li>
 </ul>
-</dd> <dt><span></span><span></span><strong></strong> (RichFont)<br/> </dt> <dd> <img src="images/markup/screenshot-fonttype-richfont.png" alt="Screen shot of the FontControl element with the RichFont attribute set to true." /><br/> Definir o atributo <em>FontType</em> como <code>RichFont</code> habilita a seguinte funcionalidade:<br/>
+</dd> <dt><span></span><span></span><strong></strong> (RichFont)<br/> </dt> <dd> <img src="images/markup/screenshot-fonttype-richfont.png" alt="Screen shot of the FontControl element with the RichFont attribute set to true." /><br/> Definir o <em>atributo FontType</em> como <code>RichFont</code> habilita a seguinte funcionalidade:<br/>
 <ul>
-<li>Caixa de combinação <strong>da família de fontes</strong> .</li>
-<li>Caixa de combinação de <strong>tamanho da fonte</strong> .</li>
-<li><strong>Aumentar a fonte</strong> e <strong>reduzir</strong> os botões de tamanho da fonte de fonte e diminuir.</li>
-<li><p>Botões de alternância em <strong>negrito</strong>, <strong>itálico</strong>, <strong>sublinhado</strong>e <strong>tachado</strong> .</p>
+<li><strong>Caixa de combinação</strong> da família de fontes.</li>
+<li><strong>Caixa de combinação</strong> tamanho da fonte.</li>
+<li><strong>Aumentar a fonte</strong> e <strong>reduzir o incremento</strong> de tamanho da fonte e os botões de decremento.</li>
+<li><p><strong>Botões</strong>de alternância Negrito, <strong>Itálico,</strong> <strong>Sublinhado</strong>e <strong>Tachado.</strong></p>
 <blockquote>
 [!Note]<br />
-Os botões de alternância <strong>tachado</strong> e <strong>sublinhado</strong> são exibidos por padrão e não podem ser ocultados definindo os atributos <em>IsStrikethroughButtonVisible</em> e <em>IsUnderlineButtonVisible</em> como <code>false</code> .
+Os botões <strong></strong> <strong>de</strong> alternância Tachado e Sublinhado são exibidos por padrão e não podem ser ocultos definindo os atributos <em>IsStrikethroughButtonVisible</em> e <em>IsUnderlineButtonVisible</em> como <code>false</code> .
 </blockquote>
 <p><br/></p></li>
-<li>Seletor de cores de <strong>cor do texto</strong> .</li>
-<li><p>Seletor de cor de <strong>cor de realce de texto</strong> .</p>
+<li><strong>Selador de cor</strong> de texto.</li>
+<li><p><strong>Selador de cor de realçada</strong> de texto.</p>
 <blockquote>
 [!Note]<br />
-Esse controle é exibido por padrão e não pode ser ocultado com a definição do atributo <em>IsHighlightButtonVisible</em> como <code>false</code> .
+Esse controle é exibido por padrão e não pode ser ocultado definindo o atributo <em>IsHighlightButtonVisible</em> como <code>false</code> .
 </blockquote>
 <p><br/></p></li>
-<li>Botões de alternância <strong>subscrito</strong> e <strong>sobrescrito</strong> .</li>
+<li><strong>Botões de alternância</strong> <strong>de subscrito</strong> e Superscrito.</li>
 </ul>
 </dd> </dl></td>
 </tr>
@@ -128,53 +128,53 @@ Esse controle é exibido por padrão e não pode ser ocultado com a definição 
 <td><strong>IsGrowShrinkButtonGroupVisible</strong><br/></td>
 <td>Boolean<br/></td>
 <td>Não<br/></td>
-<td><strong>Windows 8 e mais recente</strong><br/> Restrito a um dos seguintes valores: <br/>
+<td><strong>Windows 8 e mais novos</strong><br/> Restrito a um dos seguintes valores: <br/>
 <blockquote>
 [!Note]<br />
-Os botões aumentar/reduzir nunca são exibidos no <a href="windowsribbon-element-minitoolbar.md"><strong>Minibarra</strong></a>.
+Os botões Aumentar/Reduzir nunca são exibidos na <a href="windowsribbon-element-minitoolbar.md"><strong>MiniToolbar</strong></a>.
 </blockquote>
 <br/> <br/>
-<dt><span></span><span></span><strong></strong> true<br/> </dt> <dd> Padrão quando o valor de <em>FontType</em> é igual a <code>FontWithColor</code> ou <code>RichFont</code> .<br/> </dd> <dt><span></span><span></span><strong></strong> for<br/> </dt> <dd> Padrão quando o valor de <em>FontType</em> é igual a <code>FontOnly</code> .<br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Padrão quando o valor de <em>FontType</em> é igual <code>FontWithColor</code> ou <code>RichFont</code> .<br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Padrão quando o valor de <em>FontType</em> é igual a <code>FontOnly</code> .<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>IsHighlightButtonVisible</strong><br/></td>
 <td>Boolean<br/></td>
 <td>Não<br/></td>
-<td>Restrito a um dos valores a seguir (0 e 1 não são válidos): <br/>
+<td>Restrito a um dos seguintes valores (0 e 1 não são válidos): <br/>
 <blockquote>
 [!Note]<br />
-O realce de cores está disponível somente de um <strong>FontControl</strong> quando o valor do atributo <em>FontType</em> é igual a <code>FontWithColor</code> ou <code>RichFont</code> .
+O realçamento de cores só está disponível em <strong>um FontControl</strong> quando o valor do atributo <em>FontType</em> é igual <code>FontWithColor</code> a ou <code>RichFont</code> .
 </blockquote>
 <br/> <br/>
-<dt><span></span><span></span><strong></strong> true<br/> </dt> <dd> Padrão quando o valor de <em>FontType</em> é igual a <code>FontWithColor</code> ou <code>RichFont</code> .<br/> Válido somente quando o valor de <em>FontType</em> é igual a <code>FontWithColor</code> ou <code>RichFont</code> .<br/> </dd> <dt><span></span><span></span><strong></strong> for<br/> </dt> <dd> Padrão quando o valor de <em>FontType</em> é igual a <code>FontOnly</code> .<br/> Válido somente quando o valor de <em>FontType</em> é igual a <code>FontOnly</code> ou <code>FontWithColor</code> .<br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Padrão quando o valor de <em>FontType</em> é igual <code>FontWithColor</code> ou <code>RichFont</code> .<br/> Válido somente quando o valor de <em>FontType</em> for <code>FontWithColor</code> igual a ou <code>RichFont</code> .<br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Padrão quando o valor de <em>FontType</em> é igual a <code>FontOnly</code> .<br/> Válido somente quando o valor de <em>FontType</em> for <code>FontOnly</code> igual a ou <code>FontWithColor</code> .<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>IsStrikethroughButtonVisible</strong><br/></td>
 <td>Boolean<br/></td>
 <td>Não<br/></td>
-<td>Restrito a um dos valores a seguir (0 e 1 não são válidos): <br/> <br/>
-<dt><span></span><span></span><strong></strong> true<br/> </dt> <dd> Padrão. <br/> </dd> <dt><span></span><span></span><strong></strong> for<br/> </dt> <dd> Válido somente quando o valor de <em>FontType</em> é igual a <code>FontOnly</code> ou <code>FontWithColor</code> . <br/> </dd> </dl></td>
+<td>Restrito a um dos seguintes valores (0 e 1 não são válidos): <br/> <br/>
+<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Padrão. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Válido somente quando o valor de <em>FontType</em> for <code>FontOnly</code> igual a ou <code>FontWithColor</code> . <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>IsUnderlineButtonVisible</strong><br/></td>
 <td>Boolean<br/></td>
 <td>Não<br/></td>
-<td>Restrito a um dos valores a seguir (0 e 1 não são válidos): <br/> <br/>
-<dt><span></span><span></span><strong></strong> true<br/> </dt> <dd> Padrão. <br/> </dd> <dt><span></span><span></span><strong></strong> for<br/> </dt> <dd> Válido somente quando o valor de <em>FontType</em> é igual a <code>FontOnly</code> ou <code>FontWithColor</code> . <br/> </dd> </dl></td>
+<td>Restrito a um dos seguintes valores (0 e 1 não são válidos): <br/> <br/>
+<dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd> Padrão. <br/> </dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Válido somente quando o valor de <em>FontType</em> for <code>FontOnly</code> igual a ou <code>FontWithColor</code> . <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>MaximumFontSize</strong><br/></td>
 <td>xs:positiveInteger<br/></td>
 <td>Não<br/></td>
 <td>O tamanho máximo de ponto a ser exibido.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs: positiveInteger)<br/> </dt> <dd> Um valor inteiro entre 1 e 9999, inclusive.<br/> O padrão é <strong>9999</strong>.<br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger)<br/> </dt> <dd> Um valor inteiro entre 1 e 9999, inclusive.<br/> O padrão é <strong>9999</strong>.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>MinimumFontSize</strong><br/></td>
 <td>xs:positiveInteger<br/></td>
 <td>Não<br/></td>
 <td>O tamanho mínimo do ponto a ser exibido.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs: positiveInteger)<br/> </dt> <dd> Um valor inteiro entre 1 e 9999, inclusive.<br/> O padrão é <strong>1</strong>.<br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger)<br/> </dt> <dd> Um valor inteiro entre 1 e 9999, inclusive.<br/> O padrão é <strong>1</strong>.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>ShowTrueTypeOnly</strong><br/></td>
@@ -216,7 +216,7 @@ Não há elementos filho.
 | Elemento                                                               |
 |-----------------------------------------------------------------------|
 | [**Controlador de controle**](windowsribbon-element-controlgroup.md)<br/> |
-| [**Group**](windowsribbon-element-group.md)<br/>               |
+| [**Grupo**](windowsribbon-element-group.md)<br/>               |
 | [**Grupo Backstage**](windowsribbon-element-menugroup.md)<br/>       |
 
 
@@ -317,12 +317,8 @@ Esta seção de código mostra as declarações de controle **FontControl** em q
 
 ## <a name="element-information"></a>Informações do elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo com suporte<br/> | Windows 7 |
-| Pode estar vazio                        | Sim       |
+* **Sistema mínimo com suporte**: Windows 7
+* **Pode estar vazio**: Sim
 
 
 

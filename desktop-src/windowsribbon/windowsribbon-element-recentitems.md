@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 17269342521a5da5db8d7a852a985c29ed7e2e98
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: a433e2f04eae8607b0c14c5494c734ad0f0dd83a
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "104007055"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444107"
 ---
 # <a name="recentitems-element"></a>Elemento RecentItems
 
@@ -131,13 +131,8 @@ O exemplo a seguir mostra a declaração de controles **RecentItems** associada.
 
 ## <a name="element-information"></a>Informações do elemento
 
-
-
-|                                     |           |
-|-------------------------------------|-----------|
-| Sistema mínimo com suporte<br/> | Windows 7 |
-| Pode estar vazio                        | Sim       |
-
+* **Sistema mínimo com suporte**: Windows 7
+* **Pode estar vazio**: Sim
 
 
 ## <a name="see-also"></a>Confira também

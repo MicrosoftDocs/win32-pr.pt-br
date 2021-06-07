@@ -4,12 +4,12 @@ description: Layout é o dimensionamento, o espaçamento e o posicionamento do c
 ms.assetid: 39cd896f-d3cc-4768-a20c-a7f598da7136
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: f6b33375cbb679cc7c7efdeb12e5cd30be6280c5
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 8577843f3e54744cabe970e3b9132df1d9fb45df
+ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104172433"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111444877"
 ---
 # <a name="layout"></a>Layout
 
@@ -224,82 +224,82 @@ O texto se torna difícil de ler à medida que o comprimento da linha aumenta. P
 
 ![captura de tela da caixa de mensagem larga com texto longo ](images/vis-layout-image13.png)
 
-Neste exemplo, o comprimento de texto longo torna a leitura difícil.
+Neste exemplo, o comprimento longo do texto dificulta a leitura.
 
-Por fim, as janelas redimensionáveis também precisam usar o espaço de tela com eficiência quando tornam-se menores, tornando o conteúdo redimensionável menor e removendo o espaço dos elementos da interface do usuário que podem funcionar com eficiência sem ele. Em algum momento, a janela ou seus elementos da interface do usuário se tornam muito pequenos para serem utilizáveis e, portanto, devem receber um tamanho mínimo ou alguns elementos devem ser removidos completamente.
+Por fim, as janelas reizáveis também precisam usar o espaço de tela efetivamente quando reduzidos, tornando o conteúdo reizável menor e removendo o espaço dos elementos da interface do usuário que podem funcionar efetivamente sem ele. Em algum momento, a janela ou seus elementos de interface do usuário se tornam muito pequenos para serem usáveis, portanto, eles devem ser atribuídos a um tamanho mínimo ou alguns elementos devem ser completamente removidos.
 
-![captura de tela de janela com faixa de uma de altura e invasiva ](images/vis-layout-image14.png)
+![captura de tela da janela com faixa de opções alta e intrusiva ](images/vis-layout-image14.png)
 
-![captura de tela da janela sem faixa de uma ](images/vis-layout-image15.png)
+![captura de tela da janela sem faixa de opções ](images/vis-layout-image15.png)
 
 Neste exemplo, o painel tem um tamanho mínimo.
 
-Alguns programas se beneficiam do uso de uma apresentação completamente diferente para tornar o conteúdo utilizável em tamanhos menores.
+Alguns programas se beneficiam de usar uma apresentação completamente diferente para tornar o conteúdo acessível em tamanhos menores.
 
-![captura de tela dos botões do Media Player centralizado ](images/vis-layout-image16.png)
+![captura de tela dos botões centralizados do player de mídia ](images/vis-layout-image16.png)
 
 Neste exemplo, o Windows Media Player altera seu formato quando a janela se torna muito pequena para o formato padrão.
 
 ### <a name="focus"></a>Foco
 
-Um layout tem o foco quando há um local óbvio a ser examinado primeiro. O foco é importante para mostrar aos usuários onde começar a verificar sua janela ou página. Sem o foco claro, o olho do usuário fará o aimlessly. O ponto focal deve ser algo importante que os usuários precisam encontrar e entender rapidamente e devem ter a maior ênfase Visual. O canto superior esquerdo é o ponto focal natural para a maioria das janelas.
+Um layout tem foco quando há um lugar óbvio para procurar primeiro. O foco é importante para mostrar aos usuários onde começar a verificação da janela ou da página. Sem foco claro, o olhar do usuário ficará sem objetivo. O ponto focal deve ser algo importante que os usuários precisam encontrar e entender rapidamente e devem ter a maior ênfase visual. O canto superior esquerdo é o ponto focal natural para a maioria das janelas.
 
-Deve haver apenas um ponto focal. Assim como na vida real, os olhos podem se concentrar apenas em uma coisa de cada vez, os usuários não podem se concentrar em vários locais simultaneamente.
+Deve haver apenas um ponto focal. Assim como na vida real, o olhar pode se concentrar em apenas uma coisa por vez, os usuários não podem se concentrar em vários locais simultaneamente.
 
 Para tornar um elemento de interface do usuário o ponto focal, você pode dar ênfase visual a ele:
 
--   Colocando-o na parte superior esquerda ou no centro superior da superfície.
--   Usando controles interativos que são importantes e prontamente abrangentes.
--   Usando texto proeminente, como uma instrução principal.
--   Dando à seleção padrão de controles e ao foco de entrada inicial.
--   Colocando os controles em um plano de fundo colorido diferente.
+-   Colocá-lo na parte superior esquerda ou superior central da superfície.
+-   Usar controles interativos que são importantes e prontamente compreensíveis.
+-   Usando texto em destaque, como uma instrução principal.
+-   Dando aos controles a seleção padrão e o foco de entrada inicial.
+-   Colocar os controles em um plano de fundo colorido diferente.
 
-Considere o Windows Search. O ponto focal do Windows Search deve ser a caixa de pesquisa porque é o ponto de partida para a tarefa. No entanto, ele está localizado no canto superior direito para ser consistente com o posicionamento da caixa de pesquisa padrão. A caixa de pesquisa tem o foco de entrada, mas, considerando seu local no caminho de verificação, essa pista sozinha não é suficiente.
+Considere Windows Search. O ponto focal para Windows Search deve ser a caixa Pesquisar porque é o ponto de partida para a tarefa. No entanto, ele está localizado no canto superior direito para ser consistente com o posicionamento da caixa de pesquisa padrão. A caixa Pesquisa tem o foco de entrada, mas, considerando sua localização no caminho de verificação, essa dica por si só não é suficiente.
 
-Para resolver esse problema, há uma instrução proeminente na parte superior central da janela para direcionar os usuários para o local certo.
+Para resolver esse problema, há instruções proeminentes na parte superior central da janela para direcionar os usuários para o local certo.
 
 **Aceitável:**
 
-![captura de tela da caixa de diálogo Pesquisar com texto útil ](images/vis-layout-image17.png)
+![captura de tela da caixa de diálogo de pesquisa com texto útil ](images/vis-layout-image17.png)
 
-Neste exemplo, uma instrução proeminente na parte superior central da janela direciona os usuários para a caixa de pesquisa.
+Neste exemplo, uma instrução proeminente na parte superior central da janela direciona os usuários para a caixa De pesquisa.
 
 Sem as instruções, a janela não teria um ponto focal óbvio.
 
 **Incorreto:**
 
-![captura de tela da caixa de diálogo Pesquisar sem texto ](images/vis-layout-image18.png)
+![captura de tela da caixa de diálogo de pesquisa sem texto ](images/vis-layout-image18.png)
 
-Este exemplo não tem nenhum ponto focal claro. Os usuários não sabem onde procurar.
+Este exemplo não tem nenhum ponto focal óbvio. Os usuários não sabem onde procurar.
 
-Se você fornecer ênfase visual ao elemento da interface do usuário, certifique-se de que a atenção seja garantida. No exemplo de pesquisa do Windows anterior incorreto, o botão tudo realçado está no canto superior esquerdo e tem a ênfase mais visual, mas não é o ponto focal pretendido. Os usuários podem ficar presos olhando esse botão tentando descobrir o que fazer com ele.
+Se você der ênfase visual a um elemento de interface do usuário, certifique-se de que a atenção seja assegurada. No exemplo de Windows Search incorreto anterior, o botão Todos realçada está no canto superior esquerdo e tem mais ênfase visual, mas não é o ponto focal pretendido. Os usuários podem ficar presos ao olhar para esse botão tentando descobrir o que fazer com ele.
 
 **Incorreto:**
 
-![captura de tela do botão tudo realçado ](images/vis-layout-image19.png)
+![captura de tela do botão tudo realçada ](images/vis-layout-image19.png)
 
-Sem a instrução proeminente como o ponto focal, o botão realçado All é um ponto focal não intencional.
+Sem a instrução proeminente como o ponto focal, o botão Todos realçada é um ponto focal não intencional.
 
-### <a name="flow"></a>Fluxo
+### <a name="flow"></a>Flow
 
-Um layout tem fluxo quando os usuários são guiados suavemente e naturalmente por um caminho claro por meio de sua superfície, Localizando elementos da interface do usuário na ordem apropriada para seu uso. Depois que os usuários identificam o ponto focal, eles precisam determinar como concluir a tarefa. O posicionamento dos elementos da interface do usuário transmite sua relação e deve espelhar as etapas para executar a tarefa. Normalmente, isso significa que as etapas da tarefa devem fluir naturalmente em uma ordem da esquerda para a direita, de cima para baixo (em culturas ocidentais).
+Um layout tem fluxo quando os usuários são guiados suavemente e naturalmente por um caminho claro em sua superfície, encontrando elementos da interface do usuário na ordem apropriada para seu uso. Depois que os usuários identificam o ponto focal, eles precisam determinar como concluir a tarefa. O posicionamento dos elementos da interface do usuário transmite sua relação e deve espelhar as etapas para executar a tarefa. Normalmente, isso significa que as etapas da tarefa devem fluir naturalmente em uma ordem da esquerda para a direita, de cima para baixo (em culturas ocidental).
 
 Você sabe que um layout tem um bom fluxo quando:
 
 -   O posicionamento dos elementos da interface do usuário espelha as etapas que os usuários precisam para executar a tarefa.
 -   Os elementos da interface do usuário que iniciam uma tarefa estão no canto superior esquerdo ou no centro superior.
 -   Os elementos da interface do usuário que concluem uma tarefa estão no canto inferior direito.
--   Os elementos relacionados da interface do usuário estão juntos; elementos não relacionados são separados.
+-   Os elementos de interface do usuário relacionados estão juntos; elementos não relacionados são separados.
 -   As etapas necessárias estão no fluxo principal.
--   As etapas opcionais estão fora do fluxo principal, possivelmente realçadas com o uso de um plano de fundo adequado ou divulgação progressiva.
+-   As etapas opcionais estão fora do fluxo principal, possivelmente desalocados usando uma divulgação progressiva ou em segundo plano adequada.
 -   Os elementos usados com frequência aparecem antes dos elementos usados com pouca frequência no caminho de verificação.
 -   Os usuários sempre sabem o que fazer em seguida. Não há saltos ou quebras inesperados no fluxo de tarefas.
 
 **Incorreto:**
 
-![captura de tela do layout de caixa de diálogo confuso ](images/vis-layout-image20.png)
+![captura de tela do layout da caixa de diálogo confusa ](images/vis-layout-image20.png)
 
-Neste exemplo, os usuários não sabem o que fazer em seguida. Há saltos inesperados e quebras no fluxo de tarefas.
+Neste exemplo, os usuários não sabem o que fazer em seguida. Há saltos e quebras inesperados no fluxo de tarefas.
 
 **Correto:**
 
@@ -309,47 +309,47 @@ Neste exemplo, a apresentação dos elementos da interface do usuário espelha a
 
 ### <a name="grouping"></a>Agrupamento
 
-Um layout tem agrupamento quando elementos da interface do usuário relacionados logicamente têm uma relação visual clara. Os grupos são importantes porque é mais fácil para os usuários entenderem e se concentrarem em um grupo de itens relacionados do que os itens individualmente. Os grupos fazem com que um layout pareça mais simples e fácil de analisar.
+Um layout tem um agrupamento quando elementos de interface do usuário logicamente relacionados têm uma relação visual clara. Os grupos são importantes porque é mais fácil para os usuários entenderem e se concentrarem em um grupo de itens relacionados do que os itens individualmente. Os grupos fazem com que um layout pareça mais simples e fácil de analisar.
 
-Você pode mostrar o agrupamento das seguintes maneiras (em maior pesado):
+Você pode mostrar o agrupamento das seguintes maneiras (aumentando o peso):
 
--   **Layout.** Você pode agrupar controles relacionados ao lado um do outro e colocar o espaçamento adicional entre controles não relacionados.
+-   **Layout.** Você pode agrupar controles relacionados um ao outro e colocar espaçamento extra entre controles não relacionados.
 
-    ![Figura de quatro ícones mostrando quatro grupos de tarefas ](images/vis-layout-image22.png)
+    ![figura de quatro ícones mostrando quatro grupos de tarefas ](images/vis-layout-image22.png)
 
-    Neste exemplo, layout sozinho é usado para mostrar relações de controle.
+    Neste exemplo, somente o layout é usado para mostrar relações de controle.
 
--   **Separadores.** Um separador é uma linha horizontal ou vertical que unifica um grupo de controles. Os separadores fornecem uma aparência mais simples e limpa. No entanto, ao contrário das caixas de grupo, elas funcionam melhor quando abrangem toda a superfície.
+-   **Separadores.** Um separador é uma linha horizontal ou vertical que unifica um grupo de controles. Separadores fornecem uma aparência mais simples e mais limpa. No entanto, ao contrário das caixas de grupo, elas funcionam melhor quando abrangem toda a superfície.
 
     ![captura de tela de três ícones e três separadores ](images/vis-layout-image23.png)
 
-    Neste exemplo, os separadores rotulados são usados para mostrar relações de controle.
+    Neste exemplo, separadores rotulados são usados para mostrar relações de controle.
 
 -   **Agregadores.** Um agregador é um gráfico que cria uma relação visual entre controles fortemente relacionados.
 
     ![captura de tela de controles dentro de uma linha elíptica ](images/vis-layout-image24.png)
 
-    Neste exemplo, um agregador de limite é usado para enfatizar a relação entre os controles e fazer com que eles se sintam como um único controle em vez de oito.
+    Neste exemplo, um agregador de limites é usado para enfatizar a relação entre os controles e fazer com que eles se sintam como um único controle em vez de oito.
 
--   **Caixas de grupo.** Uma caixa de grupo é um quadro retangular rotulado que circunda um conjunto de controles relacionados.
+-   **Caixas de grupo.** Uma caixa de grupo é um quadro retangular rotulado que envolve um conjunto de controles relacionados.
 
-    ![captura de tela de caixas de seleção em uma borda Retangular ](images/vis-layout-image25.png)
+    ![captura de tela de caixas de seleção em uma borda retangular ](images/vis-layout-image25.png)
 
-    Neste exemplo, uma caixa de grupo circunda e rotula um conjunto de controles relacionados.
+    Neste exemplo, uma caixa de grupo envolve e rotula um conjunto de controles relacionados.
 
--   **Plano.** Você pode usar planos de fundo para enfatizar ou realçar diferentes tipos de conteúdo.
+-   **Fundos.** Você pode usar contextos para enfatizar ou des enfatizar diferentes tipos de conteúdo.
 
     ![captura de tela do lado esquerdo do painel de controle ](images/vis-layout-image26.png)
 
-    Neste exemplo, o painel de tarefas painel de controle é usado para agrupar tarefas relacionadas e itens do painel de controle.
+    Neste exemplo, o painel de tarefas do painel de controle é usado para agrupar tarefas relacionadas e itens do painel de controle.
 
-    Para evitar a desordem Visual, o agrupamento de peso mais leve que faz o trabalho bem é a melhor opção. Para obter mais informações, consulte [caixas de grupo](ctrl-group-boxes.md), [guias](ctrl-tabs.md), [separadores e planos de fundo](vis-graphic.md).
+    Para evitar a confusão visual, o grupo de peso mais leve que faz o trabalho bem é a melhor opção. Para obter mais informações, consulte [Caixas de](ctrl-group-boxes.md)grupo , [guias,](ctrl-tabs.md) [separadores e plano de fundo.](vis-graphic.md)
 
-Independentemente do estilo de agrupamento, você pode usar recuo para mostrar a relação dos controles dentro de um grupo. Os controles que são pares entre si devem ser alinhados à esquerda e os controles dependentes são recuados 12 DLUs ou 18 pixels relativos.
+Independentemente do estilo de agrupamento, você pode usar o recuo para mostrar a relação dos controles dentro de um grupo. Os controles que são pares entre si devem ser alinhados à esquerda e os controles dependentes são recuados 12 DLUs ou 18 pixels relativos.
 
 ![captura de tela de três níveis de controles recuados ](images/vis-layout-image27.png)
 
-Os controles dependentes são recuados 12 DLUS ou 18 pixels relativos, que por design é a distância entre as caixas de seleção e os botões de opção de seus rótulos.
+Os controles dependentes são recuados 12 DLUS ou 18 pixels relativos, que, por design, é a distância entre caixas de seleção e botões de rádio de seus rótulos.
 
 Você sabe que um layout tem um bom agrupamento quando:
 
@@ -491,62 +491,62 @@ Melhor usado quando:
 -   É provável que os usuários leiam os rótulos e controles de uma maneira da esquerda para a direita, de cima para baixo.
 -   Não é provável que os usuários verifiquem os controles verticalmente.
 -   O texto de controle varia de comprimento e provavelmente seria truncado se outro estilo fosse usado.
--   Os controles são somente leitura, como caixas de texto somente leitura. Para outros controles, esse alinhamento parecerá impreciso. No entanto, os controles podem se tornar editáveis ao clicar em.
+-   Os controles são somente leitura, como caixas de texto somente leitura. Para outros controles, esse alinhamento terá uma aparência mais simples. No entanto, os controles podem se tornar editáveis ao clicar.
 -   Há muitas colunas, mas poucos controles em uma coluna.
 
 **Rótulos justificados à direita à esquerda dos controles**
 
-Esse estilo é o mais fácil de ler horizontalmente para associar os rótulos aos seus controles, mas é difícil digitalizar os rótulos verticalmente e não funciona bem quando os rótulos com rótulos recuados e controles diferem muito no comprimento.
+Esse estilo é o mais fácil de ler horizontalmente para associar os rótulos a seus controles, mas é difícil verificar os rótulos verticalmente e não funciona bem quando labelsList com rótulos recuados e controles diferem muito em comprimento.
 
 ![lista com rótulos e controles recuados ](images/vis-layout-image36.png)
 
-Esse estilo permite uma verificação vertical fácil dos controles, mas torna difícil digitalizar os rótulos verticalmente.
+Esse estilo permite uma verificação vertical fácil dos controles, mas dificulta a verificação vertical dos rótulos.
 
 Melhor usado quando:
 
--   É provável que os usuários leiam os rótulos e controles de uma maneira da esquerda para a direita, de cima para baixo.
--   Os usuários provavelmente não serão examinados verticalmente para localizar rótulos específicos, possivelmente porque:
-    -   Há poucos controles.
+-   É provável que os usuários leiam os rótulos e os controles de uma maneira da esquerda para a direita, de cima para baixo.
+-   Os usuários provavelmente não verificarão verticalmente para encontrar rótulos específicos, possivelmente porque:
+    -   Há alguns controles.
     -   Os rótulos são bem conhecidos.
-    -   Os controles são basicamente auto-explicativos e raramente estão em branco (possivelmente com valores padrão para evitar controles em branco).
+    -   Os controles são principalmente autoexplicativos e raramente ficam em branco (possivelmente tendo valores padrão para evitar controles em branco).
 -   Há espaço horizontal suficiente para acomodar os rótulos.
--   Os rótulos não variam significativamente em comprimento.
--   Houver muitas colunas. Visualmente, os rótulos e os controles aparecem como uma única coluna.
+-   Os rótulos não variam significativamente de comprimento.
+-   Houver muitas colunas. Visualmente, os rótulos e controles aparecem como uma única coluna.
 
 No entanto, antes de adotar qualquer um desses estilos, considere mais dois fatores:
 
 -   Prefira um estilo que você possa usar consistentemente em seu programa.
--   Os rótulos justificados à esquerda acima dos controles à esquerda dos controles são os estilos mais comuns, portanto, eles devem receber preferência.
+-   Rótulos justificados à esquerda ou acima dos controles à esquerda dos controles são os estilos mais comuns, portanto, eles devem receber preferência.
 
 ### <a name="balance"></a>Saldo
 
-Uma janela ou página tem saldo quando seu conteúdo é distribuído uniformemente em sua superfície. Se a superfície fisicamente tivesse o mesmo peso que ela tem visualmente, um layout equilibrado não se interdicaria a um lado.
+Uma janela ou página tem saldo quando seu conteúdo aparece distribuído uniformemente em sua superfície. Se a superfície tivesse fisicamente a mesma ponderação que tem visualmente, um layout balanceado não seria gorjeta para um lado.
 
-O problema de saldo mais comum é ter muito conteúdo no lado esquerdo de uma janela ou página. Você pode criar um equilíbrio das seguintes maneiras:
+O problema de saldo mais comum é ter muito conteúdo no lado esquerdo de uma janela ou página. Você pode criar saldo das seguintes maneiras:
 
 -   Usando margens maiores no lado esquerdo do que a direita.
--   Colocando elementos da interface do usuário usados para concluir uma tarefa à direita.
--   Colocando elementos da interface do usuário usados em toda a tarefa no centro.
--   Aumentando os controles redimensionáveis ou de várias linhas.
--   Usando o alinhamento centralizado estrategicamente.
+-   Colocar elementos de interface do usuário usados para concluir uma tarefa à direita.
+-   Colocar elementos de interface do usuário usados em toda a tarefa no centro.
+-   Alongamento de controles resizáveis ou de várias linhas.
+-   Usando o alinhamento do centro estrategicamente.
 
 ![captura de tela da impressora à esquerda e texto à direita ](images/vis-layout-image37.png)
 
-Esse layout de página de assistente bem equilibrado mostra uma margem esquerda maior do que o direito de melhorar o saldo.
+Esse layout de página do assistente bem balanceado mostra uma margem esquerda maior do que a direita para melhorar o equilíbrio.
 
-Se essas técnicas não alcançarem o saldo, considere reduzir a largura da janela ou da página para corresponder melhor ao conteúdo.
+Se essas técnicas não atingirem o equilíbrio, considere reduzir a largura da janela ou da página para corresponder melhor ao conteúdo.
 
-Para superfícies redimensionáveis, não Centralize o conteúdo apenas para obter o saldo. Em vez disso, mantenha uma origem fixa superior à esquerda, defina uma área de superfície máxima e equilibre o conteúdo dentro do espaço usado.
+Para superfícies reizáveis, não center o conteúdo apenas para alcançar o equilíbrio. Em vez disso, mantenha uma origem superior esquerda fixa, defina uma área de superfície máxima e balancee o conteúdo dentro do espaço usado.
 
 ### <a name="grids"></a>Grades
 
-Uma grade é um sistema de alinhamento subjacente invisível. As grades podem ser simétricas, mas as grades assimétricas também funcionam tão bem. Quando usado por uma única janela ou página, as grades ajudam a organizar o conteúdo em uma superfície. Quando reutilizados, as grades criam layout consistente entre superfícies.
+Uma grade é um sistema de alinhamento subjacente invisível. As grades podem ser simétricas, mas as grades assimétricas também funcionam. Quando usadas por uma única janela ou página, as grades ajudam a organizar o conteúdo em uma superfície. Quando reutilizadas, as grades criam layout consistente entre superfícies.
 
-O número de linhas de grade afeta a percepção da complexidade visual. Um layout com menos linhas de grade aparece mais simples do que um layout com mais linhas de grade.
+O número de linhas de grade afeta a percepção da complexidade visual. Um layout com menos linhas de grade parece mais simples do que um layout com mais linhas de grade.
 
 **Visualmente complexo:**
 
-![captura de tela de caixa de diálogo desorganizada ](images/vis-layout-image38.png)
+![captura de tela da caixa de diálogo desorganada ](images/vis-layout-image38.png)
 
 **Visualmente simples:**
 
@@ -556,156 +556,155 @@ Linhas de grade desnecessárias criam complexidade visual.
 
 Você sabe que um layout está usando grades com eficiência quando:
 
--   Janelas ou páginas com conteúdo ou função semelhante têm layout semelhante.
+-   As janelas ou páginas com conteúdo ou função semelhantes têm layout semelhante.
 -   Elementos de design repetidos aparecem em locais semelhantes entre janelas e páginas.
--   Não há nenhuma linha de grade de alinhamento vertical e horizontal desnecessária.
+-   Não há linhas de grade de alinhamento vertical e horizontal desnecessárias.
 
-### <a name="visual-simplicity"></a>Simplicidade Visual
+### <a name="visual-simplicity"></a>Simplicidade visual
 
-A simplicidade Visual é a percepção de que um layout não é mais complicado do que precisa ser.
+A simplicidade visual é a percepção de que um layout não é mais complicado do que precisa ser.
 
-Você sabe que um layout tem simplicidade visual quando:
+Você sabe que um layout tem simplicidade visual quando ele:
 
--   Elimina as camadas desnecessárias do Chrome do Windows.
+-   Elimina camadas desnecessárias de chrome da janela.
 -   Apresenta o conteúdo usando, no máximo, sete grupos facilmente identificáveis.
 -   Usa o agrupamento leve, como layout e separadores em vez de caixas de grupo.
--   Usa controles leves, como links em vez de botões de comando para comandos secundários e listas suspensas em vez de listas para escolhas.
+-   Usa controles leves, como links em vez de botões de comando para comandos secundários, e listas listadas em vez de listas para opções.
 -   Reduz o número de linhas de grade de alinhamento vertical e horizontal.
 -   Reduz o número de tamanhos de controle, por exemplo, usando apenas uma ou duas larguras de botão de comando em uma superfície.
 -   Usa a divulgação progressiva para ocultar elementos da interface do usuário até que eles sejam necessários.
--   Usa espaço suficiente para que a janela ou a página não se sinta cramped.
--   Dimensiona as janelas e os controles adequadamente para eliminar a rolagem desnecessária.
--   Usa uma única fonte com um número pequeno de tamanhos e cores de texto.
+-   Usa espaço suficiente para que a janela ou a página não se sinta fechada.
+-   Tamanhos de janelas e controles adequadamente para eliminar a rolagem desnecessária.
+-   Usa uma única fonte com um pequeno número de tamanhos e cores de texto.
 
 Como regra geral, se um elemento de layout puder ser eliminado sem prejudicar a eficácia da interface do usuário, provavelmente deverá ser.
 
 ## <a name="guidelines"></a>Diretrizes
 
-### <a name="screen-resolution-and-dpi"></a>Resolução de tela e DPI
+### <a name="screen-resolution-and-dpi"></a>Resolução de tela e dpi
 
--   **Suporte à resolução mínima efetiva do Windows de 800x600 pixels.** Para as interfaces de trabalho críticas que devem funcionar no modo de segurança, dê suporte a uma resolução efetiva de 640x480 pixels. Certifique-se de considerar o espaço usado pela barra de tarefas reservando 48 [pixels relativos](glossary.md) verticais para o Windows exibido com a barra de tarefas.
--   **Otimize layouts de janela redimensionáveis para uma resolução efetiva de 1024x768 pixels.** Redimensione automaticamente essas janelas para resoluções de tela mais baixa de uma maneira que ainda está funcional.
--   **Certifique-se de testar suas janelas em 96 pontos por polegada (DPI) (em 800x600 pixels), 120 DPI (a 1024x768 pixels) e 144 DPI (em 1200x900 pixels).** Verifique se há problemas de layout, como recorte de controles, texto e janelas, e alargamento de ícones e bitmaps.
--   **Para programas com cenários de uso móvel e de toque, otimize para 120 dpi.** As telas de alto dpi atualmente são predominantes em PCs móveis e de toque.
+-   **Suporte à resolução mínima efetiva do Windows de 800 x 600 pixels.** Para UIs críticas que devem funcionar no modo de segurança, suporte a uma resolução efetiva de 640 x 480 pixels. Certifique-se de levar em conta o espaço usado pela barra de tarefas reservando 48 [pixels relativos verticais para janelas exibidas](glossary.md) com a barra de tarefas.
+-   **Otimize layouts de janela reizáveis para uma resolução efetiva de 1024 x 768 pixels.** Reorganize automaticamente essas janelas para resoluções de tela inferior de uma maneira que ainda seja funcional.
+-   **Teste suas janelas em 96 pontos por polegada (dpi) (a 800 x 600 pixels), 120 dpi (em 1024 x 768 pixels) e 144 dpi (a 1200 x 900 pixels).** Verifique se há problemas de layout, como recorte de controles, texto e janelas e alongamento de ícones e bitmaps.
+-   **Para programas com cenários de uso móvel e de toque, otimize para 120 dpi.** Atualmente, as telas de alto dpi são predominantes em PCs móveis e de toque.
 
 ### <a name="window-size"></a>Tamanho da janela
 
 -   **Escolha um tamanho de janela padrão apropriado para seu conteúdo.** Não tenha medo de usar tamanhos de janela iniciais maiores se você puder usar o espaço com eficiência.
--   **Use uma altura balanceada para a taxa de proporção da largura.** Uma taxa de proporção entre 3:5 e 5:3 é preferida, embora uma taxa de proporção de 1:3 possa ser usada para caixas de diálogo de mensagem (como erros e avisos).
--   **Use janelas redimensionáveis sempre que for prático para evitar barras de rolagem e dados truncados.** O Windows com conteúdo dinâmico, documentos, imagens, listas e árvores beneficiam-se mais do que as janelas redimensionáveis.
+-   **Use uma altura equilibrada para a taxa de proporção de largura.** Uma taxa de proporção entre 3:5 e 5:3 é preferencial, embora uma taxa de proporção de 1:3 possa ser usada para caixas de diálogo de mensagem (como erros e avisos).
+-   **Use janelas reizáveis sempre que for prático para evitar barras de rolagem e dados truncados.** As Janelas com conteúdo dinâmico, documentos, imagens, listas e árvores se beneficiam mais de janelas reizáveis.
 -   **Para documentos de texto, considere um comprimento máximo de linha de 80 caracteres** para facilitar a leitura do texto. (Os caracteres incluem letras, pontuação e espaços.)
 -   Janelas de tamanho fixo:
-    -   **O Windows de tamanho fixo deve ser totalmente visível e dimensionado para se ajustar na área de trabalho.**
--   Janelas redimensionáveis:
-    -   **Janelas redimensionáveis podem ser otimizadas para resoluções mais altas, mas são dimensionadas conforme necessário no momento da exibição para a resolução de tela real.**
-    -   **Tamanhos de janelas progressivamente maiores devem mostrar progressivamente mais informações.** Certifique-se de que pelo menos uma parte da janela ou controle tenha conteúdo redimensionável.
-    -   **Mantenha a origem superior esquerda do conteúdo fixo, pois a janela é redimensionada.** Não mova a origem para balancear o conteúdo conforme o tamanho da janela é alterado.
-    -   **Defina um tamanho de conteúdo máximo se o conteúdo puder ser muito extenso demais.** Se o conteúdo se tornar difícil, não redimensione a área de conteúdo além de sua largura máxima ou altere a origem do conteúdo à medida que a janela for mais redimensionada. Em vez disso, mantenha uma largura máxima e uma origem da parte superior esquerda fixa.
-    -   **Defina um tamanho mínimo de janela se houver um tamanho abaixo do qual o conteúdo não seja mais utilizável.** Para controles redimensionáveis, defina tamanhos mínimos de elemento redimensionáveis para seus menores tamanhos funcionais, como larguras de coluna funcionais mínimas em exibições de lista. Elementos de interface do usuário opcionais devem ser completamente removidos.
-    -   **Considere alterar a apresentação para tornar o conteúdo utilizável em tamanhos menores.**
+    -   **As janelas de tamanho fixo devem ser totalmente visíveis e dimensionada para se ajustarem à área de trabalho.**
+-   Janelas reizáveis:
+    -   **As janelas reizáveis podem ser otimizadas para resoluções mais altas, mas dimensionados conforme necessário no tempo de exibição para a resolução real da tela.**
+    -   **Tamanhos de janela progressivamente maiores devem mostrar progressivamente mais informações.** Certifique-se de que pelo menos uma parte da janela ou controle tenha conteúdo resizável.
+    -   **Mantenha a origem superior esquerda do conteúdo fixo à medida que a janela é ressada.** Não mova a origem para balancear o conteúdo conforme o tamanho da janela muda.
+    -   **Deverão ser definidos um tamanho máximo de conteúdo se o conteúdo puder ser muito estendido.** Se o conteúdo se tornar desorganizado, não reestrua a área de conteúdo além de sua largura máxima ou altere a origem do conteúdo à medida que a janela for re tamanho maior. Em vez disso, mantenha uma largura máxima e uma origem superior esquerda fixa.
+    -   **Definir um tamanho mínimo da janela se houver um tamanho abaixo do qual o conteúdo não é mais acessível.** Para controles reizáveis, de definir tamanhos mínimos de elementos reizáveis para seus menores tamanhos funcionais, como larguras mínimas de coluna funcional em exibições de lista. Os elementos opcionais da interface do usuário devem ser completamente removidos.
+    -   **Considere alterar a apresentação para tornar o conteúdo acessível em tamanhos menores.**
 
-        ![captura de tela dos controles do Media Player ](images/vis-layout-image16.png)
+        ![captura de tela dos controles do player de mídia ](images/vis-layout-image16.png)
 
         Neste exemplo, o Windows Media Player altera seu formato quando a janela se torna muito pequena para o formato padrão.
 
 ### <a name="control-size"></a>Tamanho do controle
 
--   **Torne todos os controles interativos pelo menos com 16 pixels relativos.** Fazer isso funciona bem para todos os dispositivos de entrada, incluindo tecnologia Windows Tablet e Touch.
--   **Controles de tamanho para evitar dados truncados.** Não truncar os dados que devem ser lidos para executar uma tarefa. Colunas de exibição de lista de tamanho para evitar dados truncados.
--   **Controles de tamanho para eliminar a rolagem desnecessária.** Tornar os controles ligeiramente maiores se isso eliminar uma barra de rolagem. Deve haver poucas barras de rolagem verticais e nenhuma barra de rolagem horizontal desnecessária.
+-   **Faça com que todos os controles interativos pelo menos relativos 16 x 16 pixels.** Isso funciona bem para todos os dispositivos de entrada, incluindo Windows Tablet e Touch Technology.
+-   **Controles de tamanho para evitar dados truncados.** Não truncar dados que devem ser lidos para executar uma tarefa. Colunas de exibição de lista de tamanho para evitar dados truncados.
+-   **Controles de tamanho para eliminar a rolagem desnecessária.** Tornar os controles um pouco maiores se isso eliminar uma barra de rolagem. Deve haver algumas barras de rolagem verticais e nenhuma barra de rolagem horizontal desnecessária.
 
     ![captura de tela da lista dimensionada para evitar uma barra de rolagem ](images/vis-layout-image40.png)
 
-    Neste exemplo, a lista suspensa é dimensionada para eliminar a barra de rolagem.
+    Neste exemplo, a listada é dimensionada para eliminar a barra de rolagem.
 
--   **Reduza o número de tamanhos de controle em uma superfície.** Prefira usar os [tamanhos de controle recomendados padrão](#recommended-sizing-and-spacing) e, quando necessário, usar alguns controles maiores ou menores consistentemente. Tente usar uma única largura para caixas de listagem e exibições de árvore, e não mais do que três larguras para botões de comando e listas suspensas. No entanto, as larguras da caixa de texto e da caixa de combinação devem sugerir o comprimento de sua entrada mais longa ou esperada.
+-   **Reduza o número de tamanhos de controle em uma superfície.** Prefira usar os [tamanhos de controle recomendados](#recommended-sizing-and-spacing) padrão e, quando necessário, use alguns controles maiores ou menores de tamanho consistente. Tente usar uma única largura para caixas de listagem e exibições de árvore e não mais de três larguras para botões de comando e listas listadas. No entanto, as larguras da caixa de texto e da caixa de combinação devem sugerir o comprimento de sua entrada mais longa ou esperada.
 
     ![captura de tela da caixa de diálogo com listas e botões ](images/vis-layout-image41.png)
 
-    Neste exemplo, um tamanho de caixa de listagem e de botão de comando é usado de forma consistente.
+    Neste exemplo, uma caixa de listagem e o tamanho do botão de comando são usados consistentemente.
 
--   **Para controles que são dimensionados com base em seu texto, inclua mais 30% (até 200 por cento para texto mais curto) para qualquer texto que será localizado.** Essa diretriz pressupõe que o layout é projetado usando texto em inglês. Observe também que essa diretriz se refere a texto localizado, não a números.
--   **Estenda controles de texto estáticos, caixas de seleção e botões de opção para a largura máxima que caberá no layout.** Isso evita o truncamento da localização e do texto de comprimento variável.
+-   **Para controles dimensionado com base em seu texto, inclua 30% adicionais (até 200% para texto mais curto) para qualquer texto que será localizado.** Essa diretriz pressu que o layout foi projetado usando texto em inglês. Observe também que essa diretriz se refere ao texto localizado, não a números.
+-   **Estenda controles de texto estáticos, caixas de seleção e botões de rádio para a largura máxima que caberá no layout.** Isso evita o truncamento do texto de comprimento variável e da localização.
 
     **Incorreto:**
 
-    ![captura de tela de controle de progresso e texto parcial ](images/vis-layout-image42.png)
+    ![captura de tela do controle de progresso e texto parcial ](images/vis-layout-image42.png)
 
-    Neste exemplo, o texto de controle está desnecessariamente truncado.
+    Neste exemplo, o texto de controle é truncado desnecessariamente.
 
 ### <a name="control-spacing"></a>Espaçamento de controle
 
--   **Se os controles não estiverem tocando, tenha pelo menos 3 DLUs (5 pixels relativos) de espaço entre eles.** Caso contrário, os usuários poderão clicar no espaço inativo entre os controles. Como clicar em espaço inativo não tem nenhum resultado ou comentário visual, geralmente os usuários não têm certeza do que deu errado.
+-   **Se os controles não estão tocando, têm pelo menos 3 DLUs (5 pixels relativos) de espaço entre eles.** Caso contrário, os usuários poderão clicar no espaço inativo entre os controles. Como clicar em espaço inativo não tem nenhum resultado ou comentários visuais, os usuários geralmente não têm certeza do que deu errado.
 
 ### <a name="placement"></a>Posicionamento
 
--   **Organize os elementos da interface do usuário em uma superfície para fluir naturalmente em uma ordem da esquerda para a direita, de cima para baixo (em culturas ocidentais).** O posicionamento dos elementos da interface do usuário transmite sua relação e deve espelhar as etapas para executar a tarefa.
--   **Coloque os elementos da interface do usuário que iniciam uma tarefa no canto superior esquerdo ou no centro superior.** Forneça ao elemento da interface do usuário que os usuários devem examinar primeiro a melhor ênfase Visual.
+-   **Organize os elementos da interface do usuário em uma superfície para fluir naturalmente em uma ordem da esquerda para a direita, de cima para baixo (em culturas ocidental).** O posicionamento dos elementos da interface do usuário transmite sua relação e deve espelhar as etapas para executar a tarefa.
+-   **Coloque os elementos da interface do usuário que iniciam uma tarefa no canto superior esquerdo ou no centro superior.** Dê ao elemento de interface do usuário que os usuários devem primeiro ver a maior ênfase visual.
 -   **Coloque os elementos da interface do usuário que concluem uma tarefa no canto inferior direito.**
 -   **Coloque elementos de interface do usuário relacionados juntos e separe elementos não relacionados.**
 -   **Coloque as etapas necessárias no fluxo principal.**
--   **Coloque as etapas opcionais fora do fluxo principal,** possivelmente realçadas, usando um plano de fundo adequado ou uma divulgação progressiva.
--   **Coloque elementos usados com frequência antes de elementos usados com pouca frequência** no caminho de verificação.
+-   **Coloque etapas opcionais fora do fluxo principal,** possivelmente desalocado usando uma divulgação progressiva ou em segundo plano adequada.
+-   **Coloque elementos usados com frequência antes de** elementos usados com pouca frequência no caminho de verificação.
 
 ### <a name="focus"></a>Foco
 
--   **Escolha um único elemento de interface do usuário que os usuários precisam examinar primeiro para ser o ponto focal.** O ponto focal deve ser algo importante que os usuários precisam encontrar e entender rapidamente.
+-   **Escolha um único elemento de interface do usuário que os usuários precisam primeiro para ser o ponto focal.** O ponto focal deve ser algo importante que os usuários precisam encontrar e entender rapidamente.
 -   **Coloque o ponto focal no canto superior esquerdo ou no centro superior.**
--   **Dê ao ponto focal a maior ênfase Visual,** como texto proeminente, seleção padrão ou foco de entrada inicial.
+-   **Dê ao ponto focal a maior ênfase visual, como** texto proeminente, seleção padrão ou foco de entrada inicial.
 
 ### <a name="alignment"></a>Alinhamento
 
--   Normalmente, use o alinhamento à esquerda.
--   Use o alinhamento à direita para dados numéricos, especialmente colunas de dados numéricos.
--   Use o alinhamento à direita para botões de confirmação, bem como controles alinhados com a borda direita da janela.
--   Use o alinhamento do centro quando o alinhamento esquerdo ou direito for inadequado ou parecer desbalanceado.
--   Ao alinhar verticalmente controles com texto, alinhe as linhas de base de texto para dar um fluxo de leitura horizontal suave.
--   Para alinhamento de rótulo, consulte a seção [alinhamento de rótulo](#label-alignment) em conceitos de design.
+-   Normalmente, use o alinhamento esquerdo.
+-   Use o alinhamento correto para dados numéricos, especialmente colunas de dados numéricos.
+-   Use o alinhamento à direita para botões de commit, bem como controles alinhados com a borda da janela direita.
+-   Use o alinhamento central quando o alinhamento à esquerda ou à direita for inadequado ou aparecer desbalanceado.
+-   Ao alinhar controles verticalmente com texto, alinhe as linhas de base de texto para dar um fluxo de leitura horizontal suave.
+-   Para alinhamento de rótulo, consulte a seção [Alinhamento de](#label-alignment) rótulo em Conceitos de design.
 
 ### <a name="accessibility"></a>Acessibilidade
 
--   **Não use o layout como o único meio para transmitir informações importantes sobre uma interface do usuário.** Os usuários que têm deficiências visuais podem não ser capazes de interpretar esta apresentação. Por exemplo, verifique se os rótulos de controles comunicam sua relação com outros itens.
--   **Não incorpore controles subordinados dentro de rótulos de controle para criar uma frase ou frase.** Essas associações são baseadas puramente no layout e não são bem tratadas por navegação por teclado ou tecnologias assistenciais de acessibilidade. Além disso, essa técnica não é localizável porque a estrutura da frase varia de acordo com a linguagem.
+-   **Não use o layout como o único meio de transmitir informações importantes sobre uma interface do usuário.** Os usuários que têm deficiências visuais podem não conseguir interpretar essa apresentação. Por exemplo, certifique-se de que os rótulos de controle comuniquem sua relação com outros itens.
+-   **Não inserir controles subordinados dentro de rótulos de controle para criar uma frase ou frase.** Essas associações se baseiam apenas no layout e não são bem tratadas por tecnologias adaptativas de acessibilidade ou navegação por teclado. Além disso, essa técnica não é localizável porque a estrutura de frase varia de acordo com o idioma.
 
     **Incorreto:**
 
-    ![captura de tela de uma caixa de texto no meio de uma sentença ](images/vis-layout-image43.png)
+    ![captura de tela de uma caixa de texto no meio de uma frase ](images/vis-layout-image43.png)
 
     Neste exemplo, a caixa de texto é colocada incorretamente dentro do rótulo da caixa de seleção.
 
     **Correto:**
 
-    ![captura de tela de uma caixa de texto no final de uma sentença ](images/vis-layout-image44.png)
+    ![captura de tela de uma caixa de texto no final de uma frase ](images/vis-layout-image44.png)
 
     Aqui, a caixa de texto é colocada após o rótulo da caixa de seleção.
 
--   **Torne o agrupamento acessível.** Os grupos definidos por painéis de janela, caixas de grupo, separadores, rótulos de texto e agregadores são tratados automaticamente por auxílios de acessibilidade. No entanto, os grupos definidos somente por posicionamento e planos de fundo não são e devem ser definidos programaticamente para acessibilidade.
+-   **Tornar o agrupamento acessível.** Grupos definidos por painéis de janela, caixas de grupo, separadores, rótulos de texto e agregadores são manipulados automaticamente por auxiliares de acessibilidade. No entanto, os grupos definidos apenas por posicionamento e segundo plano não são e devem ser definidos programaticamente para acessibilidade.
 
-Para obter mais diretrizes, consulte [acessibilidade](inter-accessibility.md).
+Para obter mais diretrizes, consulte [Acessibilidade.](inter-accessibility.md)
 
-## <a name="recommended-sizing-and-spacing"></a>Dimensionamento e espaçamento recomendados
+## <a name="recommended-sizing-and-spacing"></a>Espaçamento e o espaçamento recomendados
 
-**Dimensionamento de controle**
+**Controle de ressarção**
 
-A tabela a seguir lista os tamanhos recomendados (largura x altura ou altura se um único número) para elementos comuns da interface do usuário (para 9 pt. Segoe UI a 96 DPI). As larguras com base no item mais longo em inglês adicionam 30 por cento para localização (até 200 por cento para texto mais curto) para qualquer texto (mas não números) que serão localizados.
+A tabela a seguir lista os tamanhos recomendados (largura x altura ou altura se um único número) para elementos comuns da interface do usuário (para 9 pts. Segoe UI em 96 dpi). As larguras com base no item mais longo em inglês adicionam 30% para localização (até 200% para texto mais curto) para qualquer texto (mas não números) que será localizado.
 
 
 
-|                                                                                                 |                            |                                                                                                   |                                                                                                            |
+| Exemplo | Control | Unidades de caixa de diálogo | Pixels relativos |
 |-------------------------------------------------------------------------------------------------|----------------------------|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-|                                                                                                 | **Controle**<br/>     | **Unidades de diálogo**<br/>                                                                       | **Pixels relativos**<br/>                                                                             |
 | ![captura de tela de caixas de seleção e seus rótulos ](images/vis-layout-image45.png)<br/>       | Caixas de seleção<br/>     | 10<br/>                                                                                     | 17<br/>                                                                                              |
 | ![captura de tela da caixa de combinação ](images/vis-layout-image46.png)<br/>                          | Caixas de combinação<br/>     | largura do item mais longo + 30% x 14<br/>                                                       | largura do item mais longo + 30% x 23<br/>                                                                |
 | ![captura de tela de um botão de comando ](images/vis-layout-image47.png)<br/>                   | Botões de comando<br/> | 50 x 14<br/>                                                                                | 75 x 23<br/>                                                                                         |
 | ![captura de tela de um dos dois links de comando selecionados ](images/vis-layout-image48.png)<br/>  | Links de comando<br/>   | 25 (uma linha) ou 35 (duas linhas)<br/>                                                        | 41 (uma linha) ou 58 (duas linhas)<br/>                                                                 |
-| ![captura de tela de uma lista suspensa ](images/vis-layout-image49.png)<br/>                   | Listas suspensas<br/> | largura dos dados válidos mais longos + 30% x 14<br/>                                                 | largura do item mais longo + 30% x 23<br/>                                                                |
+| ![captura de tela de uma lista lista listada ](images/vis-layout-image49.png)<br/>                   | Listas suspensas<br/> | largura dos dados válidos mais longos + 30% x 14<br/>                                                 | largura do item mais longo + 30% x 23<br/>                                                                |
 | ![captura de tela de uma caixa de listagem ](images/vis-layout-image50.png)<br/>                         | Caixas de listagem<br/>      | largura do item mais longo + 30% x um número integral de itens (mínimo de 3 itens)<br/>            |                                                                                                            |
 | ![captura de tela de uma lista de arquivos de imagem ](images/vis-layout-image51.png)<br/>            | Modos de exibição de lista<br/>      | larguras de colunas que evitam dados truncados x um número integral de itens<br/>                 |                                                                                                            |
 | ![captura de tela de uma barra de progresso ](images/vis-layout-image52.png)<br/>                     | Barras de progresso<br/>   | 107 ou 237 x 8<br/>                                                                         | 160 ou 355 x 15<br/>                                                                                 |
-| ![captura de tela de botões de opção ](images/vis-layout-image53.png)<br/>                      | Botões de opção<br/>   | 10<br/>                                                                                     | 17<br/>                                                                                              |
+| ![captura de tela de botões de rádio ](images/vis-layout-image53.png)<br/>                      | Botões de opção<br/>   | 10<br/>                                                                                     | 17<br/>                                                                                              |
 | ![captura de tela do controle deslizante ](images/vis-layout-image54.png)<br/>                     | Controles deslizantes<br/>         | 15<br/>                                                                                     | 24<br/>                                                                                              |
-| ![captura de tela de texto: ' selecionar fuso horário ' ](images/vis-layout-image55.png)<br/>           | Texto (estático)<br/>   | 8<br/>                                                                                      | 13<br/>                                                                                              |
-| ![captura de tela da caixa de texto vazia ](images/vis-layout-image56.png)<br/>                     | Caixas de texto<br/>      | largura da entrada mais longa ou esperada + 30% x 14 (uma linha) + 10 para cada linha adicional<br/> | largura de dados válidos mais longos + 30% x 23 pixels relativos (uma linha) + 16 para cada linha adicional<br/> |
+| ![captura de tela do texto: 'selecionar fuso horário' ](images/vis-layout-image55.png)<br/>           | Texto (estático)<br/>   | 8<br/>                                                                                      | 13<br/>                                                                                              |
+| ![captura de tela da caixa de texto vazia ](images/vis-layout-image56.png)<br/>                     | Caixas de texto<br/>      | largura da entrada mais longa ou esperada + 30% x 14 (uma linha) + 10 para cada linha adicional<br/> | largura dos dados válidos mais longos + 30% x 23 pixels relativos (uma linha) + 16 para cada linha adicional<br/> |
 | ![captura de tela de pastas aninhadas no Windows Explorer ](images/vis-layout-image57.png)<br/> | Modos de exibição de árvore<br/>      | largura do item mais longo + 30% x um número integral de itens (mínimo de 5 itens)<br/>            |                                                                                                            |
 
 
@@ -714,25 +713,24 @@ A tabela a seguir lista os tamanhos recomendados (largura x altura ou altura se 
 
 **Espaçamento**
 
-A tabela a seguir lista o espaçamento recomendado entre os elementos comuns da interface do usuário (para o 9 pt. Segoe UI a 96 DPI).
+A tabela a seguir lista o espaçamento recomendado entre elementos comuns da interface do usuário (para 9 pts. Segoe UI em 96 dpi).
 
 
 
-|                                                                                                   |                                                                                                       |                                                                                           |                                                                                           |
+|   &nbsp; | Elemento | Unidades de caixa de diálogo | Pixels relativos |
 |---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-|                                                                                                   | **Element**<br/>                                                                                | **Unidades de diálogo**<br/>                                                               | **Pixels relativos**<br/>                                                            |
 | ![Imagem mostrando o espaçamento nas margens da caixa de diálogo ](images/vis_layout_image58.jpeg)<br/>        | Margens da caixa de diálogo<br/>                                                                         | 7 em todos os lados<br/>                                                                 | 11 em todos os lados<br/>                                                                |
 | ![Imagem mostrando o espaçamento entre rótulos e controles ](images/vis_layout_image59.jpeg)<br/>  | Entre rótulos de texto e seus controles associados (por exemplo, caixas de texto e caixas de listagem)<br/> | 3<br/>                                                                              | 5<br/>                                                                              |
 | ![Imagem mostrando o espaçamento entre controles relacionados ](images/vis_layout_image60.jpeg)<br/>     | Entre controles relacionados<br/>                                                                   | 4<br/>                                                                              | 7<br/>                                                                              |
 | ![Imagem mostrando o espaçamento entre controles não relacionados ](images/vis_layout_image61.jpeg)<br/>   | Entre controles não relacionados<br/>                                                                 | 7<br/>                                                                              | 11<br/>                                                                             |
-| ![Imagem mostrando o espaçamento do primeiro controle em um grupo ](images/vis_layout_image62.jpeg)<br/>  | Primeiro controle em uma caixa de grupo<br/>                                                               | 11 abaixo da parte superior da caixa de grupo; alinhar verticalmente ao título da caixa de grupo<br/> | 16 para baixo na parte superior da caixa de grupo; alinhar verticalmente ao título da caixa de grupo<br/> |
-| ![Aa511279. Between – related (en-US, MSDN. 10). jpg](images/vis_layout_image60.jpeg)<br/>         | Entre controles em uma caixa de grupo<br/>                                                            | 4<br/>                                                                              | 7<br/>                                                                              |
-| ![Imagem mostrando o espaçamento entre os botões ](images/vis_layout_image63.jpeg)<br/>              | Entre os botões organizados horizontal ou verticalmente<br/>                                        | 4<br/>                                                                              | 7<br/>                                                                              |
+| ![Imagem mostrando o espaçamento do primeiro controle em um grupo ](images/vis_layout_image62.jpeg)<br/>  | Primeiro controle em uma caixa de grupo<br/>                                                               | 11 para baixo na parte superior da caixa de grupo; alinhar verticalmente ao título da caixa de grupo<br/> | 16 para baixo na parte superior da caixa de grupo; alinhar verticalmente ao título da caixa de grupo<br/> |
+| ![Aa511279.between-related(en-us,MSDN.10).jpg](images/vis_layout_image60.jpeg)<br/>         | Entre controles em uma caixa de grupo<br/>                                                            | 4<br/>                                                                              | 7<br/>                                                                              |
+| ![Imagem mostrando o espaçamento entre botões ](images/vis_layout_image63.jpeg)<br/>              | Entre botões organizados horizontal ou verticalmente<br/>                                        | 4<br/>                                                                              | 7<br/>                                                                              |
 | ![Imagem mostrando o espaçamento do último controle em um grupo ](images/vis_layout_image64.jpeg)<br/>   | Último controle em uma caixa de grupo<br/>                                                                | 7 acima da parte inferior da caixa de grupo<br/>                                            | 11 acima da parte inferior da caixa de grupo<br/>                                           |
-| ![Imagem mostrando o espaçamento da borda esquerda da caixa de grupo ](images/vis_layout_image65.jpeg)<br/>  | Na borda esquerda de uma caixa de grupo<br/>                                                          | 6<br/>                                                                              | 9<br/>                                                                              |
-| ![Imagem mostrando o espaçamento do rótulo de texto ao lado do controle ](images/vis_layout_image66.jpeg)<br/> | Rótulo de texto ao lado de um controle<br/>                                                                | 3 abaixo da parte superior do controle<br/>                                             | 5 a partir da parte superior do controle<br/>                                             |
+| ![Imagem mostrando o espaçamento da borda esquerda da caixa de grupo ](images/vis_layout_image65.jpeg)<br/>  | Da borda esquerda de uma caixa de grupo<br/>                                                          | 6<br/>                                                                              | 9<br/>                                                                              |
+| ![Imagem mostrando o espaçamento do rótulo de texto ao lado do controle ](images/vis_layout_image66.jpeg)<br/> | Rótulo de texto ao lado de um controle<br/>                                                                | 3 para baixo na parte superior do controle<br/>                                             | 5 abaixo da parte superior do controle<br/>                                             |
 | ![Imagem mostrando o espaçamento entre parágrafos de texto ](images/vis_layout_image67.jpeg)<br/>   | Entre parágrafos de texto<br/>                                                                 | 7<br/>                                                                              | 11<br/>                                                                             |
-|                                                                                                   | Menor espaço entre controles interativos<br/>                                                | 3 ou nenhum espaço<br/>                                                                  | 5 ou sem espaço<br/>                                                                  |
+|                                                                                                   | Menor espaço entre controles interativos<br/>                                                | 3 ou nenhum espaço<br/>                                                                  | 5 ou nenhum espaço<br/>                                                                  |
 |                                                                                                   | Menor espaço entre um controle não interativo e qualquer outro controle<br/>                     | 2<br/>                                                                              | 3<br/>                                                                              |
 
 
