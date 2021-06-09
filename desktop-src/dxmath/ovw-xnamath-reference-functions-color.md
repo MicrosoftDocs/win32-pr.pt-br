@@ -4,12 +4,12 @@ ms.assetid: 857e2aed-d082-d990-1c67-e22ce3d07310
 title: Funções de cor da biblioteca DirectXMath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f0b31e02e2efe14c39864a455df9f22f98fea03
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7d3cc7870012da5aa016bb1a353e8eacc85eda8
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661528"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111827642"
 ---
 # <a name="directxmath-library-color-functions"></a>Funções de cor da biblioteca DirectXMath
 
@@ -42,11 +42,13 @@ Lista as funções de cor fornecidas pelo DirectXMath.
 | [**XMColorRGBToXYZ**](/windows/win32/api/directxmath/nf-directxmath-xmcolorrgbtoxyz)<br/>                 | Converte valores de cor RGB em valores de cor XYZ.<br/>                                                                                     |
 | [**XMColorRGBToYUV**](/windows/win32/api/directxmath/nf-directxmath-xmcolorrgbtoyuv)<br/>                 | Converte valores de cor RGB em valores de cores YUV.<br/>                                                                                     |
 | [**\_HD XMColorRGBToYUV**](/windows/win32/api/directxmath/nf-directxmath-xmcolorrgbtoyuv_hd)<br/>          | Converte valores de cor RGB em valores de cor de HD YUV.<br/>                                                                                  |
+| [**XMColorRGBToYUV \_ UHD**](/windows/win32/api/directxmath/nf-directxmath-xmcolorrgbtoyuv_uhd)<br/>        | Converte valores de cor RGB em valores de cores UHD YUV.<br/>                                                                                  |
 | [**XMColorSRGBToXYZ**](/windows/win32/api/directxmath/nf-directxmath-xmcolorsrgbtoxyz)<br/>               | Converte valores de cor SRGB em valores de cor XYZ.<br/>                                                                                    |
 | [**XMColorXYZToRGB**](/windows/win32/api/directxmath/nf-directxmath-xmcolorxyztorgb)<br/>                 | Converte valores de cor da XYZ em valores de cor RGB.<br/>                                                                                     |
 | [**XMColorXYZToSRGB**](/windows/win32/api/directxmath/nf-directxmath-xmcolorxyztosrgb)<br/>               | Converte valores de cor da XYZ em valores de cor SRGB.<br/>                                                                                    |
 | [**XMColorYUVToRGB**](/windows/win32/api/directxmath/nf-directxmath-xmcoloryuvtorgb)<br/>                 | Converte valores de cor YUV em valores de cor RGB.<br/>                                                                                     |
 | [**\_HD XMColorYUVToRGB**](/windows/win32/api/directxmath/nf-directxmath-xmcoloryuvtorgb_hd)<br/>          | Converte valores de cores YUV em valores de cor de HD RGB.<br/>                                                                                  |
+| [**XMColorYUVToRGB \_ UHD**](/windows/win32/api/directxmath/nf-directxmath-xmcoloryuvtorgb_uhd)<br/>        | Converte valores de cores YUV em valores de cor de UHD RGB.<br/>                                                                                  |
 
 
 

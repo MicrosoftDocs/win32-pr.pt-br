@@ -18,9 +18,9 @@
     - name: Depurando com símbolos
       href: debugging-with-symbols.md
     - name: 10 perguntas frequentes sobre o Direct3D
-      href: direct3d10-frequently-asked-questions.md
+      href: direct3d10-frequently-asked-questions.yml
     - name: Perguntas frequentes sobre o DirectX
-      href: directx-9-frequently-asked-questions.md
+      href: directx-9-frequently-asked-questions.yml
     - name: Instalação do DirectX para desenvolvedores de jogos
       href: directx-setup-for-game-developers.md
     - name: Desabilitando as teclas de atalho em jogos

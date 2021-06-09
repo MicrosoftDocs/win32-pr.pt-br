@@ -13,22 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6feeaa586abe30fa8a36c28d0298dc408cdfb099
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 5c92a6375f0724a1910fc0f09b47e1593614f9f1
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104293166"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111826075"
 ---
 # <a name="packoffset"></a>packoffset
 
 Palavra-chave de empacotamento constante de sombreador opcional, que usa a seguinte sintaxe:
 
-
-
-|                                                 |
-|-------------------------------------------------|
-| : packoffset ( \[ subcomponente de c \] \[ . componente \] ) |
+: packoffset ( \[ subcomponente de c \] \[ . componente \] )
 
 
 

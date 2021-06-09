@@ -9,22 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e710b8a6c7dd2983c6d0c635d16356f95d0b4fe7
-ms.sourcegitcommit: 0d6365d4e852b09a9100d9cfb9a5334922ebf478
+ms.openlocfilehash: 01087ab36bdbe90ff73643899229c7ec6ccfbdbe
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "104368987"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111826791"
 ---
 # <a name="samplebias-directx-hlsl-texture-object"></a>SampleBias (objeto de textura DirectX HLSL)
 
 Amostra uma textura, depois de aplicar a tendência de entrada ao nível de mipmap.
 
-
-
-|                                                                                                  |
-|--------------------------------------------------------------------------------------------------|
-| &lt;Tipo de modelo &gt; Object. SampleBias (amostras de \_ estado S, local de flutuação, inclinação flutuante \[ , deslocamento int \] ); |
+&lt;Tipo de modelo &gt; Object. SampleBias (amostras de \_ estado S, local de flutuação, inclinação flutuante \[ , deslocamento int \] );
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 15E8FF6F-AD8C-436F-B3C0-5062B1F86E32
 title: Propriedade CODECAPI_AVLowLatencyMode (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f159045f6b40d531495338b1598c214926a59612
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5be7e23a29e9dd5f88f7a96e6c32fd42b68a7204
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105781162"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111826900"
 ---
 # <a name="codecapi_avlowlatencymode-property"></a>\_Propriedade CODECAPI AVLowLatencyMode
 
@@ -35,6 +35,9 @@ O modo de baixa latência é útil para comunicações em tempo real ou captura 
 
 Espera-se que o codificador não adicione nenhum atraso de exemplo devido à reordenação do quadro no processo de codificação, e um exemplo de entrada deve produzir um exemplo de saída. B fatias/quadros podem estar presentes desde que não introduzam nenhuma reordenação de quadro no codificador.
 
+> [!WARNING] 
+> Na implementação atual, o decodificador Media Foundation H. 264 usa o tipo **VT_UI4** para essa propriedade. Todas as outras implementações, incluindo o codificador H. 264, usam o tipo **VT_BOOL**.
+
 ## <a name="requirements"></a>Requisitos
 
 
@@ -43,7 +46,7 @@ Espera-se que o codificador não adicione nenhum atraso de exemplo devido à reo
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                     |
 | Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 
 

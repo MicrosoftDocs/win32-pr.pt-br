@@ -5,12 +5,12 @@ ms.assetid: 565B28C1-DBD1-42B6-87F9-70743E4A2E4A
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed993618e021656dbc9377882e2961f7f0d62263
-ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
+ms.openlocfilehash: 87209dfc324b950a74d2b31e5f1a1f6326792b9f
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110335640"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111826432"
 ---
 # <a name="creating-a-root-signature"></a>Como criar uma assinatura raiz
 
@@ -37,7 +37,7 @@ Se você quiser aproveitar as otimizações de driver para descritores de assina
 
 A enum [**D3D12 \_ DESCRIPTOR \_ RANGE \_ TYPE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_descriptor_range_type) define os tipos de descritores que podem ser referenciados como parte de uma definição de layout de tabela de descritor.
 
-É um intervalo para que, por exemplo, se parte de uma tabela de descritor tenha 100 SRVs, esse intervalo possa ser declarado em uma entrada em vez de 100. Portanto, uma definição de tabela de descritor é uma coleção de intervalos.
+É um intervalo para que, por exemplo, se parte de uma tabela de descritor tiver 100 SRVs, esse intervalo poderá ser declarado em uma entrada em vez de 100. Portanto, uma definição de tabela de descritor é uma coleção de intervalos.
 
 ``` syntax
 typedef enum D3D12_DESCRIPTOR_RANGE_TYPE
@@ -49,41 +49,41 @@ typedef enum D3D12_DESCRIPTOR_RANGE_TYPE
 } D3D12_DESCRIPTOR_RANGE_TYPE;
 ```
 
-## <a name="descriptor-range"></a>Intervalo de descritores
+## <a name="descriptor-range"></a>Intervalo do descritor
 
-A estrutura do [**\_ \_ intervalo do descritor D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_range) define um intervalo de descripdores de um determinado tipo (como SRVs) em uma tabela de descritores.
+A [**estrutura D3D12 \_ DESCRIPTOR \_ RANGE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_range) define um intervalo de descritores de um determinado tipo (como SRVs) dentro de uma tabela de descritor.
 
-A `D3D12_DESCRIPTOR_RANGE_OFFSET_APPEND` macro normalmente pode ser usada para o `OffsetInDescriptorsFromTableStart` parâmetro do [**\_ \_ intervalo do descritor D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_range). Isso significa acrescentar o intervalo do descritor que está sendo definido após o anterior na tabela de descritores. Se o aplicativo quiser descritores de alias ou por algum motivo desejar ignorar os slots, ele poderá ser definido `OffsetInDescriptorsFromTableStart` para qualquer deslocamento desejado. A definição de intervalos sobrepostos de tipos diferentes é inválida.
+A `D3D12_DESCRIPTOR_RANGE_OFFSET_APPEND` macro normalmente pode ser usada para o parâmetro de `OffsetInDescriptorsFromTableStart` [**D3D12 \_ DESCRIPTOR \_ RANGE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_descriptor_range). Isso significa anexar o intervalo de descritor que está sendo definido após o anterior na tabela do descritor. Se o aplicativo quiser alias de descritores ou por algum motivo desejar ignorar slots, ele poderá definir como qualquer `OffsetInDescriptorsFromTableStart` deslocamento desejado. Definir intervalos sobrepostos de tipos diferentes é inválido.
 
-O conjunto de registros de sombreador especificado pela combinação de `RangeType` , `NumDescriptors` , `BaseShaderRegister` e `RegisterSpace` não pode entrar em conflito ou se sobrepor em quaisquer declarações em uma assinatura raiz que tenha [**\_ \_ visibilidade de sombreador D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) comum (consulte a seção de visibilidade do sombreador abaixo).
+O conjunto de registros de sombreador especificado pela combinação de , , e não pode entrar em conflito ou se sobrepor a qualquer declaração em uma assinatura raiz que tenha VISIBILIDADE DO SOMBREADOR `RangeType` `NumDescriptors` `BaseShaderRegister` `RegisterSpace` [**D3D12 \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) comum (consulte a seção visibilidade do sombreador abaixo).
 
-## <a name="descriptor-table-layout"></a>Layout da tabela de descritores
+## <a name="descriptor-table-layout"></a>Layout da tabela do descritor
 
-A estrutura da [**\_ \_ \_ tabela do descritor raiz D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor_table) declara o layout de uma tabela de descritores como uma coleção de intervalos de descritores que aparecem um após o outro em um heap de descritor. Os exemplos não são permitidos na mesma tabela de descritores que CBV/UAV/SRVs.
+A [**estrutura D3D12 \_ ROOT \_ DESCRIPTOR \_ TABLE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor_table) declara o layout de uma tabela de descritor como uma coleção de intervalos de descritores que aparecem um após o outro em um heap de descritor. Os exemplos não são permitidos na mesma tabela de descritor que CBV/UAV/SRVs.
 
-Essa estrutura é usada quando o tipo de slot de assinatura raiz é definido como `D3D12_ROOT_PARAMETER_TYPE_DESCRIPTOR_TABLE` .
+Esse struct é usado quando o tipo de slot de assinatura raiz é definido como `D3D12_ROOT_PARAMETER_TYPE_DESCRIPTOR_TABLE` .
 
-Para definir uma tabela de descritor de gráficos (CBV, SRV, UAV, Sample), use [**ID3D12GraphicsCommandList:: SetGraphicsRootDescriptorTable**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setgraphicsrootdescriptortable).
+Para definir uma tabela de descritor de gráficos (CBV, SRV, UAV, Sampler), use [**ID3D12GraphicsCommandList::SetGraphicsRootDescriptorTable**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setgraphicsrootdescriptortable).
 
-Para definir uma tabela de descritor de computação, use [**ID3D12GraphicsCommandList:: SetComputeRootDescriptorTable**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setcomputerootdescriptortable).
+Para definir uma tabela de descritor de computação, use [**ID3D12GraphicsCommandList::SetComputeRootDescriptorTable**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setcomputerootdescriptortable).
 
 ## <a name="root-constants"></a>Constantes raiz
 
-A estrutura de [**\_ \_ constantes raiz D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_constants) declara constantes embutidas na assinatura raiz que aparecem em sombreadores como um buffer constante.
+A [**estrutura \_ \_ CONSTANTS RAIZ D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_constants) declara constantes em linha na assinatura raiz que aparecem em sombreadores como um buffer constante.
 
-Essa estrutura é usada quando o tipo de slot de assinatura raiz é definido como `D3D12_ROOT_PARAMETER_TYPE_32BIT_CONSTANTS` .
+Esse struct é usado quando o tipo de slot de assinatura raiz é definido como `D3D12_ROOT_PARAMETER_TYPE_32BIT_CONSTANTS` .
 
 ## <a name="root-descriptor"></a>Descritor raiz
 
-A estrutura do [**\_ \_ descritor raiz D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor) declara os descritores (que aparecem em sombreadores) embutidos na assinatura raiz.
+A [**estrutura D3D12 \_ ROOT \_ DESCRIPTOR**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor) declara descritores (que aparecem em sombreadores) em linha na assinatura raiz.
 
-Essa estrutura é usada quando o tipo de slot de assinatura raiz é definido como `D3D12_ROOT_PARAMETER_TYPE_CBV` , `D3D12_ROOT_PARAMETER_TYPE_SRV` ou `D3D12_ROOT_PARAMETER_TYPE_UAV` .
+Esse struct é usado quando o tipo de slot de assinatura raiz é definido como `D3D12_ROOT_PARAMETER_TYPE_CBV` ou `D3D12_ROOT_PARAMETER_TYPE_SRV` `D3D12_ROOT_PARAMETER_TYPE_UAV` .
 
 ## <a name="shader-visibility"></a>Visibilidade do sombreador
 
-O membro de [**D3D12 \_ de \_ visibilidade do sombreador**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) definido no parâmetro de visibilidade do sombreador do [**\_ \_ parâmetro raiz D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter) determina quais sombreadores veem o conteúdo de um determinado slot de assinatura raiz. A computação sempre usa \_ tudo (já que há apenas um estágio ativo). Os gráficos podem escolher, mas se usar \_ todos, todos os estágios do sombreador verão o que estiver associado ao slot de assinatura raiz.
+O membro de [**D3D12 \_ SHADER \_ VISIBILITY**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility) enum definido no parâmetro de visibilidade do sombreador [**de D3D12 \_ ROOT \_ PARAMETER**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter) determina quais sombreadores veem o conteúdo de um determinado slot de assinatura raiz. A computação sempre \_ usa ALL (já que há apenas um estágio ativo). Os gráficos podem escolher, mas se usar ALL, todos os estágios do sombreador verão o que \_ está vinculado no slot de assinatura raiz.
 
-Um uso da visibilidade do sombreador é ajudar com os sombreadores que são criados esperando associações diferentes por estágio do sombreador usando um namespace sobreposto. Por exemplo, um sombreador de vértice pode declarar:
+Um uso da visibilidade do sombreador é ajudar com sombreadores que são destinados à espera de diferentes vinculações por estágio do sombreador usando um namespace sobreposto. Por exemplo, um sombreador de vértice pode declarar:
 
 ```hlsl
 Texture2D foo : register(t0);
@@ -95,31 +95,31 @@ e o sombreador de pixel também pode declarar:
 Texture2D bar : register(t0);
 ```
 
-Se o aplicativo fizer uma associação de assinatura raiz para a visibilidade T0 \_ , ambos os sombreadores verão a mesma textura. Se o sombreador definir realmente deseja que cada sombreador Veja texturas diferentes, ele poderá definir 2 slots de assinatura raiz com \_ vértice de visibilidade e \_ pixel. Não importa qual a visibilidade está em um slot de assinatura raiz, ela sempre tem o mesmo custo (custo somente dependendo do tipo de Slottype) em relação a um tamanho de assinatura de raiz máximo fixo.
+Se o aplicativo fizer uma associação de assinatura raiz para t0 VISIBILITY \_ ALL, ambos os sombreadores verão a mesma textura. Se o sombreador definir realmente deseja que cada sombreador veja texturas diferentes, ele pode definir dois slots de assinatura raiz com VISIBILITY \_ VERTEX e \_ PIXEL. Independentemente de qual é a visibilidade em um slot de assinatura raiz, ela sempre tem o mesmo custo (custo apenas dependendo de qual é o SlotType) para um tamanho de assinatura raiz máximo fixo.
 
-Em hardware D3D11 de baixo nível, \_ a visibilidade do sombreador também é levada em conta usada ao validar os tamanhos das tabelas de descritores em um layout raiz, já que alguns hardwares D3D11 podem dar suporte apenas a uma quantidade máxima de associações por etapa. Essas restrições só são impostas durante a execução em hardware de camada baixa e não limitam um hardware mais moderno.
+No hardware D3D11 de baixo nível, a VISIBILIDADE DO SOMBREADOR também é levada em conta usada ao validar os tamanhos de tabelas de descritor em um layout raiz, já que algum hardware D3D11 só pode dar suporte a uma quantidade máxima de vinculações por \_ estágio. Essas restrições só são impostas ao executar em hardware de camada baixa e não limitam hardware mais moderno.
 
-Se uma assinatura de raiz tiver várias tabelas de descritores definidas que se sobrepõem em namespace (o registro de associações para o sombreador) e qualquer uma delas especificar \_ tudo para visibilidade, o layout será inválido (a criação falhará).
+Se uma assinatura raiz tiver várias tabelas de descritor definidas que se sobrepõem entre si no namespace (as vinculações de registro ao sombreador) e qualquer uma delas especificar ALL para visibilidade, o layout será inválido (a criação \_ falhará).
 
 ## <a name="root-signature-definition"></a>Definição de assinatura raiz
 
-A [**estrutura \_ \_ \_ desc de assinatura raiz D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_signature_desc) pode conter tabelas de descritores e constantes embutidas, cada tipo de slot definido pela estrutura de [**\_ \_ parâmetro raiz D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter) e o tipo de [**\_ parâmetro de raiz \_ \_ D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_parameter_type)de enumeração.
+A estrutura [**D3D12 \_ ROOT \_ SIGNATURE \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_signature_desc) pode conter tabelas de descritor e constantes em linha, cada tipo de slot definido pela estrutura [**D3D12 \_ ROOT \_ PARAMETER**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter) e a enum [**D3D12 \_ ROOT PARAMETER \_ \_ TYPE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_parameter_type).
 
-Para iniciar um slot de assinatura raiz, consulte os **métodos \* \* \* SetComputeRoot** e **SetGraphicsRoot \* \* \*** de [**ID3D12GraphicsCommandList**](/windows/desktop/api/d3d12/nn-d3d12-id3d12graphicscommandlist).
+Para iniciar um slot de assinatura raiz, consulte os métodos **SetComputeRoot \* \* \*** e **\* \* \* SetGraphicsRoot** [**de ID3D12GraphicsCommandList**](/windows/desktop/api/d3d12/nn-d3d12-id3d12graphicscommandlist).
 
-Os exemplos estáticos são descritos na assinatura raiz usando a estrutura de [**\_ \_ amostra estática D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc) .
+Exemplos estáticos são descritos na assinatura raiz usando a [**estrutura D3D12 \_ STATIC \_ SAMPLER.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_static_sampler_desc)
 
-Um número de sinalizadores limita o acesso de determinados sombreadores à assinatura raiz, consulte [**\_ \_ \_ sinalizadores de assinatura raiz D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags).
+Vários sinalizadores limitam o acesso de determinados sombreadores à assinatura raiz, consulte SINALIZADORES DE ASSINATURA [**\_ \_ \_ RAIZ D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags).
 
-## <a name="root-signature-data-structure-serialization--deserialization"></a>Serialização/desserialização da estrutura de dados da assinatura raiz
+## <a name="root-signature-data-structure-serialization--deserialization"></a>Serialização/deserialização da estrutura de dados de assinatura raiz
 
-Os métodos descritos nesta seção são exportados por D3D12Core.dll e fornecem métodos para serialização e desserialização de uma estrutura de dados de assinatura raiz.
+Os métodos descritos nesta seção são exportados por D3D12Core.dll e fornecem métodos para serializar e desseerializar uma estrutura de dados de assinatura raiz.
 
-O formulário serializado é o que é passado para a API ao criar uma assinatura raiz. Se um sombreador tiver sido criado com uma assinatura de raiz nele (quando esse recurso for adicionado), o sombreador compilado conterá uma assinatura de raiz serializada já.
+O formulário serializado é o que é passado para a API ao criar uma assinatura raiz. Se um sombreador tiver sido autor com uma assinatura raiz (quando essa funcionalidade for adicionada), o sombreador compilado já conterá uma assinatura raiz serializada.
 
-Se um aplicativo gerar um procedimento de uma estrutura de dados [**\_ \_ \_ desc de assinatura raiz D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_signature_desc) , ele deverá tornar o formulário serializado usando [**D3D12SerializeRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-d3d12serializerootsignature). A saída de que pode ser passada em [**ID3D12Device:: CreateRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createrootsignature).
+Se um aplicativo gerar uma estrutura de dados [**D3D12 \_ \_ ROOT SIGNATURE \_ DESC,**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_signature_desc) ele deverá criar o formulário serializado usando [**D3D12SerializeRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-d3d12serializerootsignature). A saída de que pode ser passada para [**ID3D12Device::CreateRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createrootsignature).
 
-Se um aplicativo já tiver uma assinatura raiz serializada ou tiver um sombreador compilado que contenha uma assinatura raiz e desejar descobrir programaticamente a definição de layout (conhecida como "reflexão"), [**D3D12CreateRootSignatureDeserializer**](/windows/desktop/api/d3d12/nf-d3d12-d3d12createrootsignaturedeserializer) poderá ser chamado. Isso gera uma interface [**ID3D12RootSignatureDeserializer**](/windows/desktop/api/d3d12/nn-d3d12-id3d12rootsignaturedeserializer) , que contém um método para retornar a estrutura de dados [**\_ \_ \_ desc de assinatura raiz D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_signature_desc) desserializada. A interface possui o tempo de vida da estrutura de dados desserializada.
+Se um aplicativo já tiver uma assinatura raiz serializada ou tiver um sombreador compilado que contém uma assinatura raiz e quiser descobrir programaticamente a definição de layout (conhecida como "reflexão"), [**D3D12CreateRootSignatureDeserializer**](/windows/desktop/api/d3d12/nf-d3d12-d3d12createrootsignaturedeserializer) poderá ser chamado. Isso gera uma interface [**ID3D12RootSignatureDeserializer,**](/windows/desktop/api/d3d12/nn-d3d12-id3d12rootsignaturedeserializer) que contém um método para retornar a estrutura de dados DESC de ASSINATURA RAIZ [**\_ \_ D3D12 \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_signature_desc) desseializada. A interface possui o tempo de vida da estrutura de dados desserializada.
 
 ## <a name="root-signature-creation-api"></a>API de Criação de Assinatura Raiz
 
@@ -142,7 +142,7 @@ O exemplo a seguir mostra como criar uma assinatura raiz com o seguinte formato:
 | \[0\]                  | Constantes raiz: { b2 }                         | (1 CBV)                                      |
 | \[1\]                  | Tabela do descritor: { t2-t7, u0-u3 }             | (6 SRVs + 4 UAVs)                            |
 | \[2\]                  | CBV raiz: { b0 }                               | (1 CBV, dados estáticos)                         |
-| \[3\]                  | Tabela de descritores: {S0-S1}                    | (2 amostras)                                 |
+| \[3\]                  | Tabela do descritor: { s0-s1 }                    | (2 exemplos)                                 |
 | \[4\]                  | Tabela de descritores: {T8}           | (não limitado \# de SRVs, descritores voláteis) |
 | \[5\]                  | Tabela de descritores: {(T0, space1) – não associado} | (não limitado \# de SRVs, descritores voláteis) |
 | \[6\]                  | Tabela de descritores: {B1}                       | (1 CBV, dados estáticos)                         |
@@ -205,7 +205,7 @@ CreatePipelineStatesAhreadOfTime(pRootSignature); // The root signature is passe
 ...
 
 ID3D12DescriptorHeap* pHeaps[2] = {pCommonHeap, pSamplerHeap};
-pGraphicsCommandList->SetDescriptorHeaps(pHeaps,2);
+pGraphicsCommandList->SetDescriptorHeaps(2,pHeaps);
 pGraphicsCommandList->SetGraphicsRootSignature(pRootSignature);
 pGraphicsCommandList->SetGraphicsRootDescriptorTable(
                         6,heapOffsetForMoreData,DescRange[5].NumDescriptors);

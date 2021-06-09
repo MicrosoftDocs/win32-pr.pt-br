@@ -4,14 +4,17 @@ ms.assetid: 0ec19e8c-2a14-4392-93de-7ab832784085
 title: Usando o UVAtlas (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b335dd6ea94a3db0c0760b0d07a0b8df3fe4c7c
-ms.sourcegitcommit: 37f276b5d887a3aad04b1ba86e390dea9d87e591
+ms.openlocfilehash: d8faeaa0a416f6f062c81c4101ff47d5222ca75d
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "104172391"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111826324"
 ---
 # <a name="using-uvatlas-direct3d-9"></a>Usando o UVAtlas (Direct3D 9)
+
+> [!NOTE]
+> O UVAtlas foi originalmente enviado na biblioteca D3DX9 utilitário preterida agora. A versão mais recente está disponível na [ferramenta de Command-Line (uvatlas.exe) de UV do Atlas](https://github.com/Microsoft/UVAtlas).
 
 Muitas técnicas de renderização e geração de conteúdo exigem um mapa exclusivo e não sobreposto de um sinal 2D (como uma textura) em uma malha. Essas técnicas incluem:
 
@@ -174,7 +177,7 @@ Os gráficos empacotados são separados por uma largura de medianiz especificada
 
 Além de ser chamado de artista antes da pintura de textura, essas funções podem ser integradas em um pipeline de arte automatizado. Por exemplo, uma chamada UVAtlas pode ser emitida automaticamente depois que um ativo é atualizado, antes de executar uma simulação de PRT ou uma passagem de mapeamento normal. Isso evita que seja necessário reparar manualmente o mapeamento UV de um objeto se a topologia da malha tiver sido modificada.
 
-Confira a [ferramenta UV Command-Line do Atlas (uvatlas.exe)](https://msdn.microsoft.com/library/Ee419017(v=VS.85).aspx) , por exemplo, o uso das funções UVAtlas.
+Confira a [ferramenta UV Command-Line do Atlas (uvatlas.exe)](https://github.com/Microsoft/UVAtlas) , por exemplo, o uso das funções UVAtlas.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

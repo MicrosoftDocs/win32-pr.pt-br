@@ -1,74 +1,77 @@
 ---
-title: Ferramentas de acessibilidade – inspecionar
-description: Inspecione (Inspect.exe) é uma ferramenta baseada no Windows que permite que você selecione qualquer elemento de interface do usuário e exiba os dados de acessibilidade do elemento.
+title: Ferramentas de acessibilidade – Inspecionar
+description: Inspecionar (Inspect.exe) é uma ferramenta baseada no Windows que permite selecionar qualquer elemento de interface do usuário e exibir os dados de acessibilidade do elemento.
 ms.assetid: 38edacbc-cf24-4818-b029-561b21e3704c
 keywords:
 - Ferramenta inspecionar
 - Acessibilidade
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1770c6c4db812ea7d2880c50fcc72cd0edc15022
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: dcef8efa9efc0241d0f813da01623a1c02e6d226
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "104365653"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111827632"
 ---
-# <a name="accessibility-tools---inspect"></a>Ferramentas de acessibilidade – inspecionar
+# <a name="accessibility-tools---inspect"></a>Ferramentas de acessibilidade – Inspecionar
 
-**Inspecione** (Inspect.exe) é uma ferramenta baseada no Windows que permite que você selecione qualquer elemento de interface do usuário e exiba os dados de acessibilidade do elemento. Você pode exibir propriedades de automação da interface do usuário da Microsoft e padrões de controle, bem como propriedades do Microsoft Acessibilidade Ativa. **Inspecionar** também permite testar a estrutura de navegação dos elementos de automação na árvore de automação da interface do usuário e os objetos acessíveis na hierarquia do Microsoft acessibilidade ativa.
+> [!Important]
+> **Inspecionar** é uma ferramenta herdado. Em vez disso, [é recomendável usar o Accessibility Insights.](https://accessibilityinsights.io/)
 
-O **inspecionar** é instalado com o SDK (Software Development Kit) do Windows. (Ele também está disponível em versões anteriores do SDK do Windows.) Ele está localizado na \\ pasta bin \\ < *version* > \\ < > do caminho de instalação do SDK (Inspect.exe).
-
-> [!NOTE]
-> **Inspecionar** é uma ferramenta herdada. Em vez disso, recomendamos o uso de [informações de acessibilidade](https://accessibilityinsights.io/) .
+**Inspecionar** (Inspect.exe) é uma ferramenta baseada no Windows que permite selecionar qualquer elemento de interface do usuário e exibir os dados de acessibilidade do elemento. Você pode exibir propriedades Automação da Interface do Usuário Microsoft e padrões de controle, bem como Microsoft Active Accessibility propriedades. **Inspecionar** também permite que você teste a estrutura de navegação dos elementos de automação na árvore Automação da Interface do Usuário e os objetos acessíveis na hierarquia Microsoft Active Accessibility dados.
 
 ## <a name="requirements"></a>Requisitos
 
-A **inspeção** pode ser usada para examinar dados de acessibilidade em sistemas que não têm a automação da interface do usuário, mas só pode examinar as propriedades do Microsoft acessibilidade ativa. Para examinar a automação da interface do usuário, a automação da interface do usuário deve estar presente no sistema. Para obter mais informações, consulte a seção "requisitos" da [automação da interface do usuário](entry-uiauto-win32.md).
+Para examinar Automação da Interface do Usuário, Automação da Interface do Usuário deve estar presente no sistema. Para obter mais informações, consulte a seção "Requisitos" [do Automação da Interface do Usuário](entry-uiauto-win32.md).
 
-O **inspecionar** é instalado como parte do conjunto geral de ferramentas no SDK do Windows, ele não é distribuído como um download separado. O SDK do Windows inclui todas as ferramentas relacionadas à acessibilidade documentadas nesta seção. [Obtenha o SDK do Windows.](https://developer.microsoft.com/) (Há também um arquivo de download do SDK vinculado dessa página, se você precisar de uma versão anterior.)
+**Inspecionar** é instalado como parte do conjunto geral de ferramentas no SDK (Software Development Kit do Windows (SDK do Windows)), ele não é distribuído como um download separado. O SDK do Windows inclui todas as ferramentas relacionadas à acessibilidade documentadas nesta seção.
 
-Para executar o **inspecionar**, localize Inspect.exe \\ na \\ < pasta bin *version* > \\ < > e execute-o (normalmente, você não precisa executar como administrador).
+[Baixe o SDK do Windows](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk/).
+
+> [!NOTE]
+> Para versões mais antigas do SDK do Windows, consulte o [arquivo SDK do Windows emulador e](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/).
+
+**Inspect.exe** está localizado na pasta bin version platform> do caminho de instalação do \\ \\ <  > \\ <  SDK (normalmente, você não precisa executar como administrador).
 
 ## <a name="the-inspect-window"></a>A janela Inspecionar
 
-A janela **inspecionar** tem várias partes principais:
+A **janela Inspecionar** tem várias partes principais:
 
-- Barra de título. Exibe o identificador de janela de **inspeção** (HWND).
-- Barra de menus. Fornece acesso para **inspecionar** a funcionalidade.
-- Barra. Fornece acesso para **inspecionar** a funcionalidade.
+- Barra de título. Exibe o **HWND (inspecione** o HWND).
+- Barra de menus. Fornece acesso à **funcionalidade Inspecionar.**
+- Toolbar. Fornece acesso à **funcionalidade Inspecionar.**
 - Exibição de árvore. Apresenta a estrutura hierárquica dos elementos da interface do usuário como um controle de exibição de árvore que você pode usar para navegar entre os elementos.
 - Exibição de dados. Exibe todas as propriedades de acessibilidade expostas para o elemento de interface do usuário selecionado.
 
 Os comandos disponíveis na barra de menus também estão disponíveis na barra de ferramentas. A imagem a seguir mostra a ferramenta **Inspect** consultando as propriedades de Automação da Interface do Usuário no elemento do menu **Edit** no Bloco de Notas.
 
-![captura de tela mostrando a interface do usuário para a ferramenta inspecionar](images/inspect.png)
+![captura de tela mostrando a interface do usuário para a ferramenta de inspeção](images/inspect.png)
 
-## <a name="using-inspect"></a>Usando inspecionar
+## <a name="using-inspect"></a>Usando Inspecionar
 
-Quando você começa a **inspeção**, a exibição de **árvore** mostra o local do elemento de interface do usuário selecionado no momento na hierarquia do elemento e a exibição de **dados** mostra as informações de Propriedade do elemento da interface do usuário selecionado. Você pode navegar pela interface do usuário para exibir informações de acessibilidade sobre cada elemento na interface do usuário. Por padrão, **Inspecione** rastreia o foco do teclado ou do mouse. Conforme as alterações de foco, a exibição de **dados** é atualizada com as informações de Propriedade do elemento com foco.
+Quando você inicia  **Inspecionar**, o Exibição de árvore mostra o local do  elemento de interface do usuário selecionado no momento na hierarquia de elementos e a exibição Dados mostra as informações de propriedade para o elemento de interface do usuário selecionado. Você pode navegar na interface do usuário para exibir informações de acessibilidade sobre cada elemento na interface do usuário. Por padrão, **Inspecionar rastreia** o foco do teclado ou do mouse. Conforme o foco muda, **a Exibição** de dados é atualizada com as informações de propriedade do elemento com foco.
 
-Para navegar entre os elementos da interface do usuário, você pode usar qualquer um dos seguintes:
+Para navegar entre elementos da interface do usuário, você pode usar qualquer um dos seguintes:
 
 - O mouse
 - O teclado
-- O controle de exibição de árvore no modo de exibição de **árvore**
-- As opções de navegação no menu de **navegação**
+- O controle de exibição de árvore no **Exibição de** árvore
+- As opções de navegação no menu **De navegação**
 - As opções de navegação na barra de ferramentas
 
-As três últimas opções permitem que você navegue pela hierarquia de árvore da interface do usuário. A estrutura dessa árvore pode diferir ligeiramente entre a automação da interface do usuário e os modos de Acessibilidade Ativa da Microsoft.
+As três últimas opções permitem que você navegue pela hierarquia de árvore da interface do usuário. A estrutura dessa árvore pode diferir ligeiramente entre Automação da Interface do Usuário e Microsoft Active Accessibility de dados.
 
 ## <a name="verifying-accessibility-property-information"></a>Verificando informações de propriedade de acessibilidade
 
-A exibição de **dados** mostra as informações de Propriedade do elemento de interface do usuário selecionado no momento. Você pode configurar a **inspeção** para mostrar informações sobre todas as propriedades de acessibilidade ou um subconjunto dessas propriedades. Você também pode especificar outras opções de exibição, como se a **inspeção** deve permanecer sobre outras interfaces do usuário ou se a **inspeção** deve realçar um retângulo delimitador em volta do elemento selecionado. Depois de configurar o **inspecionar** para funcionar da maneira desejada, você pode começar a navegar entre elementos da interface do usuário e exibir informações de propriedade. **Inspecione** salva as definições de configuração quando ele fecha e as usa para inicializar a próxima sessão de **inspeção** .
+A **exibição** Dados mostra as informações de propriedade do elemento de interface do usuário selecionado no momento. Você pode configurar **Inspecionar** para mostrar informações sobre todas as propriedades de acessibilidade ou um subconjunto dessas propriedades. Você também pode especificar outras opções de exibição, como se **Inspecionar**  deve permanecer sobre outras interfaces do usuário ou se Inspecionar deve realçar um retângulo delimitativo em torno do elemento selecionado. Depois de configurar **Inspecionar** para funcionar da maneira que você deseja, você pode começar a navegar entre elementos da interface do usuário e exibir informações de propriedade. **Inspecionar** salva as definições de configuração quando ela fecha e as usa para inicializar sua próxima **sessão de** Inspeção.
 
 ### <a name="configure-property-settings"></a>Definir configurações de propriedade
 
-1. No menu **Opções** , selecione **configurações...** ou selecione a **caixa de diálogo Mostrar configurações** na barra de ferramentas.
-2. Na lista **Exibir na janela principal** , selecione as propriedades que você deseja exibir na exibição de **dados** de **inspecionar**.
-3. Na lista de **dicas de ferramenta exibir em informações** , selecione as propriedades que você deseja exibir em uma dica de ferramenta.
-4. Para exibir as propriedades que o elemento de interface do usuário pode não dar suporte, marque a caixa **Exibir Propriedades sem suporte** .
+1. No menu **Opções,** selecione **Configurações...** ou mostrar caixa **de diálogo Configurações** na barra de ferramentas.
+2. Na lista **Exibir na Janela Principal,** selecione as propriedades que você deseja exibir na **exibição Dados** de **Inspecionar**.
+3. Na lista **Exibir na Dica de Ferramenta de** Informações, selecione as propriedades que você deseja exibir em uma dica de ferramenta.
+4. Para exibir as propriedades às quais o elemento de interface do usuário pode não dar suporte, marque a caixa Exibir **propriedades sem** suporte.
 5. Clique em **OK**.
 
 ### <a name="to-configure-viewing-options"></a>Para configurar opções de exibição
@@ -77,21 +80,21 @@ A exibição de **dados** mostra as informações de Propriedade do elemento de 
 
 | Quando essa opção é selecionada | **Inspecionar** faz isso                                                                                                                                                                                                              |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sempre no início                | Aparece na parte superior de qualquer outra janela na tela.                                                                                                                                                                                  |
-| Modo MSAA                    | Exibe informações sobre a propriedade do Microsoft Acessibilidade Ativa.                                                                                                                                                                      |
-| Modo de automação da interface do usuário           | Exibe informações de propriedade de automação da interface do usuário.                                                                                                                                                                                       |
-| Exibição somente do Windows visível    | Disponível somente no modo MSAA.                                                                                                                                                                                                       |
-| Exibição bruta                     | Apresenta a [exibição bruta](uiauto-treeoverview.md) da árvore de automação da interface do usuário ou árvore MSAA no modo de exibição de **árvore** .                                                                                                             |
-| Exibição de controle                 | Apresenta a [exibição de controle](uiauto-treeoverview.md) da árvore de automação da interface do usuário no modo de exibição de **árvore** . Disponível somente no modo de automação da interface do usuário.                                                                            |
-| Exibição de conteúdo                 | Apresenta a [exibição de conteúdo](uiauto-treeoverview.md) da árvore de automação da interface do usuário no modo de exibição de **árvore** . Disponível somente no modo de automação da interface do usuário.                                                                            |
-| Barra de ferramentas de foco ativa         | Ativa botões da barra de ferramentas ao focalizar o mouse, em vez de exigir um clique do mouse.                                                                                                                                                      |
-| Aviso sonoro sobre erro                | Emite avisos sonoros quando um erro é detectado durante uma operação de automação de interface do usuário ou MSAA.                                                                                                                                                          |
-| \_Sinalizador SPI SCREENREADER       | Assume que um leitor de tela está presente. Esse sinalizador indica que um aplicativo deve fornecer informações textualmente em vez de graficamente. Você não deve assumir que esse sinalizador está definido simplesmente porque um leitor de tela está presente.         |
-| Mostrar retângulo de realce     | Realça um retângulo em volta do elemento com foco.                                                                                                                                                                              |
-| Mostrar realce do cursor         | Realça o cursor. Disponível somente no modo MSAA.                                                                                                                                                                                 |
+| Always on Top                | Aparece na parte superior de qualquer outra janela na tela.                                                                                                                                                                                  |
+| Modo MSAA                    | Exibe Microsoft Active Accessibility de propriedade.                                                                                                                                                                      |
+| Automação da Interface do Usuário de Automação da Interface do Usuário           | Exibe Automação da Interface do Usuário de propriedade.                                                                                                                                                                                       |
+| Exibição somente visível do Windows    | Disponível somente no modo MSAA.                                                                                                                                                                                                       |
+| Exibição Bruta                     | Apresenta a [exibição bruta](uiauto-treeoverview.md) da árvore Automação da Interface do Usuário ou árvore MSAA na **exibição árvore.**                                                                                                             |
+| Exibição de controle                 | Apresenta a [exibição de](uiauto-treeoverview.md) controle da árvore Automação da Interface do Usuário na **exibição árvore.** Disponível somente Automação da Interface do Usuário modo.                                                                            |
+| Exibição de conteúdo                 | Apresenta a [exibição de](uiauto-treeoverview.md) conteúdo da Automação da Interface do Usuário no **exibição de** árvore. Disponível somente Automação da Interface do Usuário modo.                                                                            |
+| Barra de Ferramentas de Foco Ativo         | Ativa os botões da barra de ferramentas ao passar o mouse, em vez de exigir um clique do mouse.                                                                                                                                                      |
+| Aviso de erro                | Emitirá um aviso quando um erro for detectado durante uma operação Automação da Interface do Usuário ou MSAA.                                                                                                                                                          |
+| Sinalizador SPI \_ SCREENREADER       | Supõe que um leitor de tela está presente. Esse sinalizador indica que um aplicativo deve fornecer informações textuticamente em vez de graficamente. Você não deve supor que esse sinalizador está definido simplesmente porque um leitor de tela está presente.         |
+| Mostrar retângulo de realçada     | Realça um retângulo ao redor do elemento com foco.                                                                                                                                                                              |
+| Mostrar Realçando a adoção         | Realça o a careta. Disponível somente no modo MSAA.                                                                                                                                                                                 |
 | Mostrar dica de ferramenta de informações     | Mostra informações de propriedade em uma dica de ferramenta.                                                                                                                                                                                           |
-| Monitorar foco                  | Segue o foco do teclado. Quando selecionado, um gancho de evento de foco assíncrono é instalado e move o cursor para a parte superior esquerda do elemento com o foco. Isso faz com que a **inspeção** atualize suas propriedades em aproximadamente um segundo. |
-| Cursor de inspeção                  | Segue o cursor. Disponível somente no modo MSAA.                                                                                                                                                                                    |
+| Observar o foco                  | Segue o foco do teclado. Quando selecionado, um gancho de evento de foco assíncrono é instalado e move o aro para a parte superior esquerda do elemento com o foco. Isso faz **com que a Inspeção** atualize suas propriedades em cerca de um segundo. |
+| Observar a adoção                  | Segue o caret. Disponível somente no modo MSAA.                                                                                                                                                                                    |
 | Cursor de inspeção                 | Segue o cursor.                                                                                                                                                                                                                |
 | Assista a dicas de ferramenta               | Segue as dicas de ferramenta.                                                                                                                                                                                                              |
 | Mostrar árvore                    | Exibe o modo de exibição de **árvore** .                                                                                                                                                                                                        |
@@ -137,7 +140,7 @@ O menu **ação** contém os itens de **atualização** e **foco** , juntamente 
 
 
 
- 
+ 
 
 ## <a name="keyboard-shortcuts"></a>Atalhos do teclado
 

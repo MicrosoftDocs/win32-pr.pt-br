@@ -13,24 +13,23 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4d047f7961868de020ac50ffce22b6ce02d078a5
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 90d31aa6a11ce8e2bdd75ff1171705cc9b3de437
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996913"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111826610"
 ---
 # <a name="sv_insidetessfactor"></a>\_INSIDETESSFACTOR VA
 
 Define o valor de mosaico dentro de uma superfície de patch.
 
-## <a name="type"></a>Digite
+## <a name="type"></a>Tipo
 
 
 
-|            |                |
+|  Tipo          | Topologia de entrada               |
 |------------|----------------|
-| Digite       | Topologia de entrada |
 | float \[ 2\] | patch quádruplo     |
 | FLOAT      | Tri patch      |
 | unused     | isoline        |
@@ -51,7 +50,7 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domain | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        | x    | x      |          |       |         |
 

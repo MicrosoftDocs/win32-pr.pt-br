@@ -11,18 +11,18 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: b9c2581f8d6c039b5c35be3b6f4ae755e14813dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd5d1e9360a311d1431d851c0c2697644afcc16c
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105807895"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111826442"
 ---
 # <a name="xmu565-constructors"></a>Construtores XMU565
 
 Construtores expostos por `XMU565` .
 
-Constrói instâncias da estrutura [**XMU565**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmu565) .
+Constrói instâncias da [**estrutura XMU565.**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmu565)
 
 > [!Note]  
 > Os construtores listados aqui só estão disponíveis em C++.
@@ -47,7 +47,7 @@ Constrói instâncias da estrutura [**XMU565**](/windows/win32/api/directxpacked
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu565-xmu565(uint16_t)"><strong>XMU565 (uint16_t)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância de <code>XMU565</code> de uma <code>uint16_t</code> variável que contém dados de componente em um formato empacotado. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu565"><strong>XMU565</strong></a> de uma <code>uint16_t</code> variável que contém dados de componente em um formato empacotado. <br/>
+<td style="text-align: left;">Inicializa uma nova instância de de uma <code>XMU565</code> <code>uint16_t</code> variável que contém dados de componente em um formato empacotado. <br/> Esse construtor inicializa uma nova instância do <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu565"><strong>XMU565</strong></a> de uma variável que contém dados de componente <code>uint16_t</code> em um formato empacotado. <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.
@@ -55,8 +55,8 @@ Esse construtor só está disponível em C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu565-xmu565(constfloat)"><strong>XMU565 (const float *)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância de <code>XMU565</code> de uma matriz de três elementos <code>float</code> . <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu565"><strong>XMU565</strong></a> de uma matriz de três elementos <code>float</code> . <br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu565-xmu565(constfloat)"><strong>XMU565 (const float*)</strong></a></td>
+<td style="text-align: left;">Inicializa uma nova instância de de <code>XMU565</code> uma matriz de três <code>float</code> elementos. <br/> Esse construtor inicializa uma nova instância do <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu565"><strong>XMU565</strong></a> de uma matriz de três <code>float</code> elementos. <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.
@@ -64,8 +64,8 @@ Esse construtor só está disponível em C++.
 <br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu565-xmu565(constuint8_t)"><strong>XMU565 (const int8_t *)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância de <code>XMU565</code> de uma matriz de três elementos <code>int8_t</code> . <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu565"><strong>XMU565</strong></a> de uma matriz de três elementos <code>int8_t</code> . <br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu565-xmu565(constuint8_t)"><strong>XMU565 (const uint8_t*)</strong></a></td>
+<td style="text-align: left;">Inicializa uma nova instância de de <code>XMU565</code> uma matriz de três <code>uint8_t</code> elementos. <br/> Esse construtor inicializa uma nova instância do <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu565"><strong>XMU565</strong></a> de uma matriz de três <code>uint8_t</code> elementos. <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.
@@ -73,8 +73,8 @@ Esse construtor só está disponível em C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu565-xmu565(float_float_float)"><strong>XMU565 (float, float, float)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância do de <code>XMU565</code> três <code>float</code> argumentos. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu565"><strong>XMU565</strong></a> a partir de três <code>float</code> argumentos. <br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu565-xmu565(float_float_float)"><strong>XMU565 (float, float,float)</strong></a></td>
+<td style="text-align: left;">Inicializa uma nova instância de de <code>XMU565</code> três <code>float</code> argumentos. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu565"><strong>XMU565</strong></a> de três <code>float</code> argumentos. <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.
@@ -82,8 +82,8 @@ Esse construtor só está disponível em C++.
 <br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu565-xmu565(float_float_float)"><strong>XMU565 (int8_t, int8_t, int8_t)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância do de <code>XMU565</code> três <code>int8_t</code> argumentos. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu565"><strong>XMU565</strong></a> a partir de três <code>int8_t</code> argumentos. <br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmu565-xmu565(float_float_float)"><strong>XMU565 (uint8_t,uint8_t,uint8_t)</strong></a></td>
+<td style="text-align: left;">Inicializa uma nova instância de de <code>XMU565</code> três <code>uint8_t</code> argumentos. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmu565"><strong>XMU565</strong></a> de três <code>uint8_t</code> argumentos. <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.

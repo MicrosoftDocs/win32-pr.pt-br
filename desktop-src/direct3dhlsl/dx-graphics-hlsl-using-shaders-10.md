@@ -9,22 +9,21 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0e19275532ce8fd034813d8574f6bdc04d72f966
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c0d6212851e4603aac4db7ec85dd20714dc87774
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294075"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111826284"
 ---
 # <a name="using-shaders-in-direct3d-10"></a>Usando sombreadores no Direct3D 10
 
 O pipeline tem três estágios de sombreador e cada um é programado com um sombreador HLSL. Todos os sombreadores do Direct3D 10 são escritos em HLSL, direcionando o modelo de sombreador 4.
 
 
+Diferenças entre o Direct3D 9 e o Direct3D 10:
 
-|                                                                                                                                                                                                                                                                                                                                                |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Diferenças entre o Direct3D 9 e o Direct3D 10:<br/> Ao contrário dos modelos de sombreador do Direct3D 9 que poderiam ser criados em uma linguagem de assembly intermediária, os sombreadores do modelo do sombreador 4,0 são criados apenas no HLSL. A compilação offline de sombreadores em um código de bytes de consumo de dispositivo ainda tem suporte e é recomendada para a maioria dos cenários.<br/> |
+- Ao contrário dos modelos de sombreador do Direct3D 9 que poderiam ser criados em uma linguagem de assembly intermediária, os sombreadores do modelo do sombreador 4,0 são criados apenas no HLSL. A compilação offline de sombreadores em um código de bytes de consumo de dispositivo ainda tem suporte e é recomendada para a maioria dos cenários.
 
 
 
@@ -125,7 +124,7 @@ A chamada para VSSetShader usa o ponteiro para o sombreador de vértice criado n
 
 Repita esse mesmo conjunto de etapas para criar qualquer sombreador de pixel ou vértice ou até mesmo um sombreador de geometria que produz o sombreador de pixel.
 
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
 
 [Compilar um sombreador](dx-graphics-hlsl-part1.md)
 

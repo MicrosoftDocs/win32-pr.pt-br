@@ -9,22 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 236c453f3636452cbba8ed6000b2416e5187898d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 959304d36da2b95bdf6289fba1b8c75d6ecfa314
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104172668"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111825733"
 ---
 # <a name="samplegrad-directx-hlsl-texture-object"></a>SampleGrad (objeto de textura DirectX HLSL)
 
 Amostra uma textura usando um gradiente para influenciar a maneira como o local de exemplo é calculado.
 
-
-
-|                                                                                                            |
-|------------------------------------------------------------------------------------------------------------|
-| &lt;Tipo &gt; de modelo Object. SampleGrad (amostras de \_ estado S, local float, float campo DDX, float ddy \[ , int offset \] ); |
+&lt;Tipo &gt; de modelo Object. SampleGrad (amostras de \_ estado S, local float, float campo DDX, float ddy \[ , int offset \] );
 
 
 

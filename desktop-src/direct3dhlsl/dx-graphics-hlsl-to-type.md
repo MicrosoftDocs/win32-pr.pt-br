@@ -12,23 +12,21 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b075ddc1f659923efd03d9fe9d21ee3238e656e9
-ms.sourcegitcommit: 6515eef99ca0d1bbe3e27d4575e9986f5255f277
+ms.openlocfilehash: 4d1881ba4a88e97e978e2646c92d276bb9763ffd
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "104172899"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111825766"
 ---
 # <a name="texture-object"></a>Objeto de textura
 
 No Direct3D 10, você especifica os exemplos e as texturas de forma independente; a amostragem de textura é implementada usando um objeto de textura de modelo. Este objeto de textura de modelo tem um formato específico, retorna um tipo específico e implementa vários métodos.
 
+Diferenças entre o Direct3D9 e o Direct3D10:
 
-
-
-|                                                                                                                                                                                                                                                                                                                   |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Diferenças entre o Direct3D9 e o Direct3D10: no Direct3D 9, os exemplos são associados a texturas específicas; no Direct3D 10, as texturas e os exemplos são objetos independentes. Cada objeto modelo-Texture implementa métodos de amostragem de textura que usam a textura e a amostra como parâmetros de entrada.<br/> |
+- No Direct3D 9, os exemplos são associados a texturas específicas.
+- No Direct3D 10, as texturas e os exemplos são objetos independentes. Cada objeto modelo-Texture implementa métodos de amostragem de textura que usam a textura e a amostra como parâmetros de entrada.
 
 
 
@@ -79,7 +77,7 @@ Os objetos com várias amostras (Texture2DMS e Texture2DMSArray) exigem que o ta
 <thead>
 <tr class="header">
 <th>Tipo de Object1</th>
-<th>Description</th>
+<th>Descrição</th>
 </tr>
 </thead>
 <tbody>
@@ -117,7 +115,7 @@ Os objetos com várias amostras (Texture2DMS e Texture2DMSArray) exigem que o ta
 </tr>
 <tr class="odd">
 <td>Tipo de Object2</td>
-<td>Description</td>
+<td>Descrição</td>
 </tr>
 <tr class="even">
 <td>Texture2DMS</td>
@@ -175,7 +173,7 @@ Cada objeto de textura implementa determinados métodos; Aqui está a tabela que
 
 
 
-| Método de textura                                                                     | Description                                                                                                       | vs \_ 4 \_ 0 | vs \_ 4 \_ 1  | PS \_ 4 \_ 0 | PS \_ 4 \_ 1  | GS \_ 4 \_ 0 | GS \_ 4 \_ 1  |
+| Método de textura                                                                     | Descrição                                                                                                       | vs \_ 4 \_ 0 | vs \_ 4 \_ 1  | PS \_ 4 \_ 0 | PS \_ 4 \_ 1  | GS \_ 4 \_ 0 | GS \_ 4 \_ 1  |
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|----------|-----------|----------|-----------|----------|-----------|
 | [CalculateLevelOfDetail](dx-graphics-hlsl-to-calculate-lod.md)                    | Calcule o LOD, retorne um resultado de clamped.                                                                       |          |           |          | x         |          |           |
 | [CalculateLevelOfDetailUnclamped](dx-graphics-hlsl-to-calculate-lod-unclamped.md) | Calcule o LOD, retorne um resultado de unclamped.                                                                    |          |           |          | x         |          |           |
@@ -202,7 +200,7 @@ O tipo de retorno de um método de objeto de textura é FLOAT4, a menos que espe
 
 
 
-| Tipo                       | Description                                                                                                                                                             |
+| Tipo                       | Descrição                                                                                                                                                             |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | FLOAT                      | 32-bit float (consulte [regras de ponto flutuante](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-float-rules) para diferenças de IEEE float)                            |
 | INT                        | Inteiro com sinal de 32 bits                                                                                                                                                   |

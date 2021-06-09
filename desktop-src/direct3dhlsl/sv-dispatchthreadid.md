@@ -13,24 +13,23 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e9653d98ebbfef6dd25bb137af3358a14d177f3e
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 8e2713aaa50206660f7672688a43e644873b1c13
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996513"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111827055"
 ---
 # <a name="sv_dispatchthreadid"></a>\_DISPATCHTHREADID VA
 
 Índices para os quais thread e grupo de threads combinados um sombreador de computação está sendo executado. \_DISPATCHTHREADID VA é a soma de VA \_ GroupId \* numthreads e GroupThreadID. Varia em todo o intervalo especificado em [**Dispatch**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-dispatch) e [numthreads](sm5-attributes-numthreads.md). Por exemplo, se a expedição (2, 2, 2) for chamada em um sombreador de computação com numthreads (3, 3, 3) \_ , DISPATCHTHREADID VA terá um intervalo de 0.. 5 para cada dimensão.
 
-## <a name="type"></a>Digite
+## <a name="type"></a>Tipo
 
 
 
-|       |
+| Tipo      |
 |-------|
-| Digite  |
 | uint3 |
 
 
@@ -49,7 +48,7 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domain | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          |       | x       |
 
