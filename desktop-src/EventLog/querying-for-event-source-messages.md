@@ -4,16 +4,16 @@ ms.assetid: e03d2ab5-50ea-4916-9774-850506714538
 title: Consultando informações de evento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6cd577703e38b6f13ed40d82fad6955a7d636f0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fcd20521060ecceb5dcec1fbd37cbdac4f34c5b7
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091455"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111826304"
 ---
-# <a name="querying-for-event-information"></a><span data-ttu-id="41a26-103">Consultando informações de evento</span><span class="sxs-lookup"><span data-stu-id="41a26-103">Querying for Event Information</span></span>
+# <a name="querying-for-event-information"></a><span data-ttu-id="c7151-103">Consultando informações de evento</span><span class="sxs-lookup"><span data-stu-id="c7151-103">Querying for Event Information</span></span>
 
-<span data-ttu-id="41a26-104">O exemplo a seguir mostra como abrir um log de eventos, ler eventos do log, imprimir informações sobre os eventos e, em seguida, fechar o log de eventos.</span><span class="sxs-lookup"><span data-stu-id="41a26-104">The following example shows how to open an event log, read events from the log, print information about the events, and then close the event log.</span></span> <span data-ttu-id="41a26-105">Este exemplo filtra os eventos gravados pelo exemplo em [relatando um evento](reporting-an-event.md).</span><span class="sxs-lookup"><span data-stu-id="41a26-105">This example filters for the events written by the example in [Reporting an Event](reporting-an-event.md).</span></span>
+<span data-ttu-id="c7151-104">O exemplo a seguir mostra como abrir um log de eventos, ler eventos do log, imprimir informações sobre os eventos e fechar o log de eventos.</span><span class="sxs-lookup"><span data-stu-id="c7151-104">The following example shows how to open an event log, read events from the log, print information about the events, and then close the event log.</span></span> <span data-ttu-id="c7151-105">Este exemplo filtra os eventos gravados pelo exemplo em [Relatando um Evento](reporting-an-event.md).</span><span class="sxs-lookup"><span data-stu-id="c7151-105">This example filters for the events written by the example in [Reporting an Event](reporting-an-event.md).</span></span>
 
 
 ```C++
@@ -326,7 +326,9 @@ DWORD ApplyParameterStringsToMessage(CONST LPCWSTR pMessage, LPWSTR & pFinalMess
     // Determine the number of parameter insertion strings in pMessage.
     while (pTempMessage = wcschr(pTempMessage, L'%'))
     {
-        dwParameterCount++;
+        if (isdigit(*(pTempMessage + 1))) {
+            dwParameterCount++;
+        }
         pTempMessage++;
     }
 
@@ -405,6 +407,9 @@ DWORD ApplyParameterStringsToMessage(CONST LPCWSTR pMessage, LPWSTR & pFinalMess
             pEndingAddresses[i] = pTempMessage;
 
             i++;
+        }
+        else {
+            pTempMessage++;
         }
     }
 

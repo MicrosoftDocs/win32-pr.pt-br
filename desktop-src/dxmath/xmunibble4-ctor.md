@@ -11,25 +11,25 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: bb035f58a2430cfa6cdc3e7f3967492aaf1d8352
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2a4a7f561dc0bf114a5824b1f8fe6d9547c327d5
+ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811982"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111826124"
 ---
-# <a name="xmunibble4-constructors"></a><span data-ttu-id="d5f55-103">Construtores XMUNIBBLE4</span><span class="sxs-lookup"><span data-stu-id="d5f55-103">XMUNIBBLE4 constructors</span></span>
+# <a name="xmunibble4-constructors"></a><span data-ttu-id="78fef-103">Construtores XMUNIBBLE4</span><span class="sxs-lookup"><span data-stu-id="78fef-103">XMUNIBBLE4 constructors</span></span>
 
-<span data-ttu-id="d5f55-104">Construtores expostos por `XMUNIBBLE4` .</span><span class="sxs-lookup"><span data-stu-id="d5f55-104">Constructors exposed by `XMUNIBBLE4`.</span></span>
+<span data-ttu-id="78fef-104">Construtores expostos por `XMUNIBBLE4` .</span><span class="sxs-lookup"><span data-stu-id="78fef-104">Constructors exposed by `XMUNIBBLE4`.</span></span>
 
-<span data-ttu-id="d5f55-105">Constrói instâncias da estrutura [**XMUNIBBLE4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmunibble4) .</span><span class="sxs-lookup"><span data-stu-id="d5f55-105">Constructs instances of the [**XMUNIBBLE4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmunibble4) structure.</span></span>
+<span data-ttu-id="78fef-105">Constrói instâncias da estrutura [**XMUNIBBLE4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmunibble4) .</span><span class="sxs-lookup"><span data-stu-id="78fef-105">Constructs instances of the [**XMUNIBBLE4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmunibble4) structure.</span></span>
 
 > [!Note]  
-> <span data-ttu-id="d5f55-106">Os construtores listados aqui só estão disponíveis em C++.</span><span class="sxs-lookup"><span data-stu-id="d5f55-106">The constructors listed here are only available under C++.</span></span>
+> <span data-ttu-id="78fef-106">Os construtores listados aqui só estão disponíveis em C++.</span><span class="sxs-lookup"><span data-stu-id="78fef-106">The constructors listed here are only available under C++.</span></span>
 
  
 
-### <a name="overload-list"></a><span data-ttu-id="d5f55-107">Lista de sobrecargas</span><span class="sxs-lookup"><span data-stu-id="d5f55-107">Overload list</span></span>
+### <a name="overload-list"></a><span data-ttu-id="78fef-107">Lista de sobrecargas</span><span class="sxs-lookup"><span data-stu-id="78fef-107">Overload list</span></span>
 
 
 
@@ -40,62 +40,62 @@ ms.locfileid: "105811982"
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;"><span data-ttu-id="d5f55-108">Construtor</span><span class="sxs-lookup"><span data-stu-id="d5f55-108">Constructor</span></span></th>
-<th style="text-align: left;"><span data-ttu-id="d5f55-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="d5f55-109">Description</span></span></th>
+<th style="text-align: left;"><span data-ttu-id="78fef-108">Construtor</span><span class="sxs-lookup"><span data-stu-id="78fef-108">Constructor</span></span></th>
+<th style="text-align: left;"><span data-ttu-id="78fef-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="78fef-109">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><span data-ttu-id="d5f55-110"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(constfloat)"><strong>XMUNIBBLE4 ()</strong></a></span><span class="sxs-lookup"><span data-stu-id="d5f55-110"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(constfloat)"><strong>XMUNIBBLE4 ()</strong></a></span></span></td>
-<td style="text-align: left;"><span data-ttu-id="d5f55-111">Construtor padrão para <code>XMUNIBBLE4</code></span><span class="sxs-lookup"><span data-stu-id="d5f55-111">Default constructor for <code>XMUNIBBLE4</code></span></span><br/> <span data-ttu-id="d5f55-112">Construtor padrão para <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"> <strong>XMUNIBBLE4</strong></a></span><span class="sxs-lookup"><span data-stu-id="d5f55-112">Default constructor for <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a></span></span><br/>
+<td style="text-align: left;"><span data-ttu-id="78fef-110"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(constfloat)"><strong>XMUNIBBLE4 ()</strong></a></span><span class="sxs-lookup"><span data-stu-id="78fef-110"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(constfloat)"><strong>XMUNIBBLE4 ()</strong></a></span></span></td>
+<td style="text-align: left;"><span data-ttu-id="78fef-111">Construtor padrão para <code>XMUNIBBLE4</code></span><span class="sxs-lookup"><span data-stu-id="78fef-111">Default constructor for <code>XMUNIBBLE4</code></span></span><br/> <span data-ttu-id="78fef-112">Construtor padrão para <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"> <strong>XMUNIBBLE4</strong></a></span><span class="sxs-lookup"><span data-stu-id="78fef-112">Default constructor for <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a></span></span><br/>
 <blockquote>
 [!Note]<br />
-<span data-ttu-id="d5f55-113">Isso só está disponível para desenvolvimento baseado em C++.</span><span class="sxs-lookup"><span data-stu-id="d5f55-113">This is only available for C++ based development.</span></span>
+<span data-ttu-id="78fef-113">Isso só está disponível para desenvolvimento baseado em C++.</span><span class="sxs-lookup"><span data-stu-id="78fef-113">This is only available for C++ based development.</span></span>
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span data-ttu-id="d5f55-114"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(uint16_t)"><strong>XMUNIBBLE4 (uint16_t)</strong></a></span><span class="sxs-lookup"><span data-stu-id="d5f55-114"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(uint16_t)"><strong>XMUNIBBLE4 (uint16_t)</strong></a></span></span></td>
-<td style="text-align: left;"><span data-ttu-id="d5f55-115">Inicializa uma nova instância de <code>XMUNIBBLE</code> de uma <code>uint16_t</code> variável que contém dados de componente em um formato empacotado.</span><span class="sxs-lookup"><span data-stu-id="d5f55-115">Initializes a new instance of <code>XMUNIBBLE</code> from a <code>uint16_t</code> variable containing component data in a packed format.</span></span> <br/> <span data-ttu-id="d5f55-116">Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> de uma <code>uint16_t</code> variável que contém dados de componente em um formato empacotado.</span><span class="sxs-lookup"><span data-stu-id="d5f55-116">This constructor initializes a new instance of <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> from a <code>uint16_t</code> variable containing component data in a packed format.</span></span> <br/>
+<td style="text-align: left;"><span data-ttu-id="78fef-114"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(uint16_t)"><strong>XMUNIBBLE4 (uint16_t)</strong></a></span><span class="sxs-lookup"><span data-stu-id="78fef-114"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(uint16_t)"><strong>XMUNIBBLE4 (uint16_t)</strong></a></span></span></td>
+<td style="text-align: left;"><span data-ttu-id="78fef-115">Inicializa uma nova instância de <code>XMUNIBBLE</code> de uma <code>uint16_t</code> variável que contém dados de componente em um formato empacotado.</span><span class="sxs-lookup"><span data-stu-id="78fef-115">Initializes a new instance of <code>XMUNIBBLE</code> from a <code>uint16_t</code> variable containing component data in a packed format.</span></span> <br/> <span data-ttu-id="78fef-116">Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> de uma <code>uint16_t</code> variável que contém dados de componente em um formato empacotado.</span><span class="sxs-lookup"><span data-stu-id="78fef-116">This constructor initializes a new instance of <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> from a <code>uint16_t</code> variable containing component data in a packed format.</span></span> <br/>
 <blockquote>
 [!Note]<br />
-<span data-ttu-id="d5f55-117">Esse construtor só está disponível em C++.</span><span class="sxs-lookup"><span data-stu-id="d5f55-117">This constructor is only available under C++.</span></span>
+<span data-ttu-id="78fef-117">Esse construtor só está disponível em C++.</span><span class="sxs-lookup"><span data-stu-id="78fef-117">This constructor is only available under C++.</span></span>
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span data-ttu-id="d5f55-118"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(constfloat)"><strong>XMUNIBBLE4 (const float \*)</strong></a></span><span class="sxs-lookup"><span data-stu-id="d5f55-118"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(constfloat)"><strong>XMUNIBBLE4 (const float\*)</strong></a></span></span></td>
-<td style="text-align: left;"><span data-ttu-id="d5f55-119">Inicializa uma nova instância de <code>XMUNIBBLE4</code> de um argumento de matriz de quatro elementos <code>float</code> .</span><span class="sxs-lookup"><span data-stu-id="d5f55-119">Initializes a new instance of <code>XMUNIBBLE4</code> from a four element <code>float</code> array argument.</span></span> <br/> <span data-ttu-id="d5f55-120">Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> de um de um argumento de matriz de quatro elementos <code>float</code> .</span><span class="sxs-lookup"><span data-stu-id="d5f55-120">This constructor initializes a new instance of <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> from a from a four element <code>float</code> array argument.</span></span> <br/>
+<td style="text-align: left;"><span data-ttu-id="78fef-118"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(constfloat)"><strong>XMUNIBBLE4 (const float \*)</strong></a></span><span class="sxs-lookup"><span data-stu-id="78fef-118"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(constfloat)"><strong>XMUNIBBLE4 (const float\*)</strong></a></span></span></td>
+<td style="text-align: left;"><span data-ttu-id="78fef-119">Inicializa uma nova instância de <code>XMUNIBBLE4</code> de um argumento de matriz de quatro elementos <code>float</code> .</span><span class="sxs-lookup"><span data-stu-id="78fef-119">Initializes a new instance of <code>XMUNIBBLE4</code> from a four element <code>float</code> array argument.</span></span> <br/> <span data-ttu-id="78fef-120">Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> de um de um argumento de matriz de quatro elementos <code>float</code> .</span><span class="sxs-lookup"><span data-stu-id="78fef-120">This constructor initializes a new instance of <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> from a from a four element <code>float</code> array argument.</span></span> <br/>
 <blockquote>
 [!Note]<br />
-<span data-ttu-id="d5f55-121">Esse construtor só está disponível em C++.</span><span class="sxs-lookup"><span data-stu-id="d5f55-121">This constructor is only available under C++.</span></span>
+<span data-ttu-id="78fef-121">Esse construtor só está disponível em C++.</span><span class="sxs-lookup"><span data-stu-id="78fef-121">This constructor is only available under C++.</span></span>
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span data-ttu-id="d5f55-122"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(constuint8_t)"><strong>XMUNIBBLE4 (const int8_t \*)</strong></a></span><span class="sxs-lookup"><span data-stu-id="d5f55-122"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(constuint8_t)"><strong>XMUNIBBLE4 (const int8_t\*)</strong></a></span></span></td>
-<td style="text-align: left;"><span data-ttu-id="d5f55-123">Inicializa uma nova instância de <code>XMUNIBBLE4</code> de um argumento de matriz de quatro elementos <code>int8_t</code> .</span><span class="sxs-lookup"><span data-stu-id="d5f55-123">Initializes a new instance of <code>XMUNIBBLE4</code> from a four element <code>int8_t</code> array argument.</span></span> <br/> <span data-ttu-id="d5f55-124">Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> de um de um argumento de matriz de quatro elementos <code>int8_t</code> .</span><span class="sxs-lookup"><span data-stu-id="d5f55-124">This constructor initializes a new instance of <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> from a from a four element <code>int8_t</code> array argument.</span></span> <br/>
+<td style="text-align: left;"><span data-ttu-id="78fef-122"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(constuint8_t)"><strong>XMUNIBBLE4 (const uint8_t \*)</strong></a></span><span class="sxs-lookup"><span data-stu-id="78fef-122"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(constuint8_t)"><strong>XMUNIBBLE4 (const uint8_t\*)</strong></a></span></span></td>
+<td style="text-align: left;"><span data-ttu-id="78fef-123">Inicializa uma nova instância de <code>XMUNIBBLE4</code> de um argumento de matriz de quatro elementos <code>uint8_t</code> .</span><span class="sxs-lookup"><span data-stu-id="78fef-123">Initializes a new instance of <code>XMUNIBBLE4</code> from a four element <code>uint8_t</code> array argument.</span></span> <br/> <span data-ttu-id="78fef-124">Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> de um de um argumento de matriz de quatro elementos <code>uint8_t</code> .</span><span class="sxs-lookup"><span data-stu-id="78fef-124">This constructor initializes a new instance of <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> from a from a four element <code>uint8_t</code> array argument.</span></span> <br/>
 <blockquote>
 [!Note]<br />
-<span data-ttu-id="d5f55-125">Esse construtor só está disponível em C++.</span><span class="sxs-lookup"><span data-stu-id="d5f55-125">This constructor is only available under C++.</span></span>
+<span data-ttu-id="78fef-125">Esse construtor só está disponível em C++.</span><span class="sxs-lookup"><span data-stu-id="78fef-125">This constructor is only available under C++.</span></span>
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><span data-ttu-id="d5f55-126"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(float_float_float_float)"><strong>XMUNIBBLE4 (float, float, float, float)</strong></a></span><span class="sxs-lookup"><span data-stu-id="d5f55-126"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(float_float_float_float)"><strong>XMUNIBBLE4 (float,float,float,float)</strong></a></span></span></td>
-<td style="text-align: left;"><span data-ttu-id="d5f55-127">Inicializa uma nova instância do de <code>XMUNIBBLE4</code> quatro <code>float</code> argumentos.</span><span class="sxs-lookup"><span data-stu-id="d5f55-127">Initializes a new instance of <code>XMUNIBBLE4</code> from four <code>float</code> arguments.</span></span> <br/> <span data-ttu-id="d5f55-128">Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> de quatro <code>float</code> argumentos.</span><span class="sxs-lookup"><span data-stu-id="d5f55-128">This constructor initializes a new instance of <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> from four <code>float</code> arguments.</span></span> <br/>
+<td style="text-align: left;"><span data-ttu-id="78fef-126"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(float_float_float_float)"><strong>XMUNIBBLE4 (float, float, float, float)</strong></a></span><span class="sxs-lookup"><span data-stu-id="78fef-126"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(float_float_float_float)"><strong>XMUNIBBLE4 (float,float,float,float)</strong></a></span></span></td>
+<td style="text-align: left;"><span data-ttu-id="78fef-127">Inicializa uma nova instância do de <code>XMUNIBBLE4</code> quatro <code>float</code> argumentos.</span><span class="sxs-lookup"><span data-stu-id="78fef-127">Initializes a new instance of <code>XMUNIBBLE4</code> from four <code>float</code> arguments.</span></span> <br/> <span data-ttu-id="78fef-128">Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> de quatro <code>float</code> argumentos.</span><span class="sxs-lookup"><span data-stu-id="78fef-128">This constructor initializes a new instance of <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> from four <code>float</code> arguments.</span></span> <br/>
 <blockquote>
 [!Note]<br />
-<span data-ttu-id="d5f55-129">Esse construtor só está disponível em C++.</span><span class="sxs-lookup"><span data-stu-id="d5f55-129">This constructor is only available under C++.</span></span>
+<span data-ttu-id="78fef-129">Esse construtor só está disponível em C++.</span><span class="sxs-lookup"><span data-stu-id="78fef-129">This constructor is only available under C++.</span></span>
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span data-ttu-id="d5f55-130"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(float_float_float_float)"><strong>XMUNIBBLE4 (int8_t, int8_t, int8_t int8_t)</strong></a></span><span class="sxs-lookup"><span data-stu-id="d5f55-130"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(float_float_float_float)"><strong>XMUNIBBLE4 (int8_t,int8_t,int8_t,int8_t)</strong></a></span></span></td>
-<td style="text-align: left;"><span data-ttu-id="d5f55-131">Inicializa uma nova instância do de <code>XMUNIBBLE4</code> quatro <code>int8_t</code> argumentos.</span><span class="sxs-lookup"><span data-stu-id="d5f55-131">Initializes a new instance of <code>XMUNIBBLE4</code> from four <code>int8_t</code> arguments.</span></span> <br/> <span data-ttu-id="d5f55-132">Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> de quatro <code>int8_t</code> argumentos.</span><span class="sxs-lookup"><span data-stu-id="d5f55-132">This constructor initializes a new instance of <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> from four <code>int8_t</code> arguments.</span></span> <br/>
+<td style="text-align: left;"><span data-ttu-id="78fef-130"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(float_float_float_float)"><strong>XMUNIBBLE4 (uint8_t, uint8_t, uint8_t uint8_t)</strong></a></span><span class="sxs-lookup"><span data-stu-id="78fef-130"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmunibble4-xmunibble4(float_float_float_float)"><strong>XMUNIBBLE4 (uint8_t,uint8_t,uint8_t,uint8_t)</strong></a></span></span></td>
+<td style="text-align: left;"><span data-ttu-id="78fef-131">Inicializa uma nova instância do de <code>XMUNIBBLE4</code> quatro <code>uint8_t</code> argumentos.</span><span class="sxs-lookup"><span data-stu-id="78fef-131">Initializes a new instance of <code>XMUNIBBLE4</code> from four <code>uint8_t</code> arguments.</span></span> <br/> <span data-ttu-id="78fef-132">Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> de quatro <code>uint8_t</code> argumentos.</span><span class="sxs-lookup"><span data-stu-id="78fef-132">This constructor initializes a new instance of <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmunibble4"><strong>XMUNIBBLE4</strong></a> from four <code>uint8_t</code> arguments.</span></span> <br/>
 <blockquote>
 [!Note]<br />
-<span data-ttu-id="d5f55-133">Esse construtor só está disponível em C++.</span><span class="sxs-lookup"><span data-stu-id="d5f55-133">This constructor is only available under C++.</span></span>
+<span data-ttu-id="78fef-133">Esse construtor só está disponível em C++.</span><span class="sxs-lookup"><span data-stu-id="78fef-133">This constructor is only available under C++.</span></span>
 </blockquote>
 <br/></td>
 </tr>
@@ -104,17 +104,17 @@ ms.locfileid: "105811982"
 
 
 
-## <a name="see-also"></a><span data-ttu-id="d5f55-134">Confira também</span><span class="sxs-lookup"><span data-stu-id="d5f55-134">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="78fef-134">Confira também</span><span class="sxs-lookup"><span data-stu-id="78fef-134">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="d5f55-135">Extensões XMUNIBBLE4</span><span class="sxs-lookup"><span data-stu-id="d5f55-135">XMUNIBBLE4 Extensions</span></span>](ovw-xmunibble4-extensions.md)
+[<span data-ttu-id="78fef-135">Extensões XMUNIBBLE4</span><span class="sxs-lookup"><span data-stu-id="78fef-135">XMUNIBBLE4 Extensions</span></span>](ovw-xmunibble4-extensions.md)
 </dt> <dt>
 
-<span data-ttu-id="d5f55-136">**Referência**</span><span class="sxs-lookup"><span data-stu-id="d5f55-136">**Reference**</span></span>
+<span data-ttu-id="78fef-136">**Referência**</span><span class="sxs-lookup"><span data-stu-id="78fef-136">**Reference**</span></span>
 </dt> <dt>
 
-[<span data-ttu-id="d5f55-137">**XMUNIBBLE4**</span><span class="sxs-lookup"><span data-stu-id="d5f55-137">**XMUNIBBLE4**</span></span>](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmunibble4)
+[<span data-ttu-id="78fef-137">**XMUNIBBLE4**</span><span class="sxs-lookup"><span data-stu-id="78fef-137">**XMUNIBBLE4**</span></span>](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmunibble4)
 </dt> </dl>
 
  
