@@ -1,15 +1,15 @@
 ---
-description: Indica a latitude do ponto de destino.
+description: Saiba como a propriedade System. GPS. DestLatitude indica a latitude do ponto de destino.
 ms.assetid: 63d8a3a3-76ec-4121-b48b-eb5034117d04
 title: System. GPS. DestLatitude
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d9ec2fd384d02405cdf517b8631e88dc72c0b8c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cbed51e89926b8bb505457bd9fd7bf7bd3b69ff2
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105748946"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111988961"
 ---
 # <a name="systemgpsdestlatitude"></a>System. GPS. DestLatitude
 

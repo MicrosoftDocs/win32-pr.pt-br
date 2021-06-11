@@ -1,15 +1,15 @@
 ---
 title: Propriedade Left (objeto characters)
-description: Propriedade Left
+description: Saiba mais sobre a propriedade de objeto caracteres à esquerda. O Microsoft Agent foi preterido a partir do Windows 7.
 ms.assetid: f496f075-6430-4806-a237-1c7b626d355e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a318e659405883c56f296a9371eba7e9423662b1
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 2e2f860e6827a9c96c42014456e43b791ab70ed4
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105756790"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111988932"
 ---
 # <a name="left-property-characters-object"></a>Propriedade Left (objeto characters)
 

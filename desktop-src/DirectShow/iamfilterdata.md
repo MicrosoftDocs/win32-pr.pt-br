@@ -1,5 +1,5 @@
 ---
-description: Observe que essa interface foi preterida.
+description: Saiba mais sobre a interface IAMFilterData, que converte informações de filtro em dados binários empacotados. Essa interface foi substituída.
 ms.assetid: d9800850-b0ee-44f7-bcb4-f2bac8d17693
 title: Interface IAMFilterData (Fil \_ Data. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - fil_data.h
-ms.openlocfilehash: 1ab5ea8e9c90c043c33cca4d9f8138dd7d9937ad
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1e43e0f16ddfdee596f0dc6bd736ed86fc6fa37d
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759125"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989431"
 ---
 # <a name="iamfilterdata-interface"></a>Interface IAMFilterData
 

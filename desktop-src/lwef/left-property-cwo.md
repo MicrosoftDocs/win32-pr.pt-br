@@ -1,15 +1,15 @@
 ---
 title: Propriedade Left (objeto CommandsWindow)
-description: Propriedade Left
+description: Saiba mais sobre a propriedade de objeto Left CommandsWindow. O Microsoft Agent foi preterido a partir do Windows 7.
 ms.assetid: 03786379-42c2-4f54-99cc-1dc120c45858
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0db50ebeb2d714d85d8c42a813aad61f2cd1acda
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 9fdcbb8cb39b2c07120ecab2b4da5da99d55b78f
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105810663"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989041"
 ---
 # <a name="left-property-commandswindow-object"></a>Propriedade Left (objeto CommandsWindow)
 
@@ -17,23 +17,23 @@ ms.locfileid: "105810663"
 
 <dl> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Ndescrição**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descrição**
 </dt> <dd>
 
-Retorna um valor inteiro especificando a borda esquerda, em pixels, da janela de comandos de voz.
+Retorna um valor inteiro que especifica a borda esquerda, em pixels, da janela Comandos de Voz.
 
 </dd> <dt>
 
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-*Agent * * *. CommandsWindow. Left**
+*agent***. CommandsWindow.Left**
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O servidor exibe a janela de comandos de voz com base na posição e no tamanho definidos pelo usuário.
+O servidor exibe a Janela Comandos de Voz com base na posição e no tamanho definidos pelo usuário.
 
  
 

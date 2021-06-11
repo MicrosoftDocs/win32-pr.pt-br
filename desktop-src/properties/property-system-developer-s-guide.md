@@ -1,15 +1,15 @@
 ---
-description: No Windows Vista e posterior, os metadados se tornaram centrais como um método de organizar itens, como arquivos, email ou contatos.
+description: Saiba mais sobre cenários de desenvolvimento para propriedades personalizadas e manipuladores de propriedades no sistema de propriedades do Windows.
 ms.assetid: 3281736b-f9ea-4699-a128-3bce6810126e
 title: Guia do desenvolvedor do sistema de propriedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6746c24d24a6926d20078c00f6780c72fb7c8e0c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46a26044d0d457d4ba24b8c9a18555885c12a571
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759011"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111988921"
 ---
 # <a name="property-system-developers-guide"></a>Guia do desenvolvedor do sistema de propriedades
 

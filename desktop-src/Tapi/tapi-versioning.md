@@ -1,15 +1,15 @@
 ---
-description: Com o tempo, versões diferentes de TAPI, aplicativos e provedores de serviços podem ser produzidos.
+description: Saiba mais sobre o controle de versão da TAPI. Com o tempo, versões diferentes de TAPI, aplicativos e provedores de serviços podem ser produzidos.
 ms.assetid: 35fea8f9-307e-4429-b4ec-ffb5c62c2610
 title: Controle de versão da TAPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8565eb6282fd124c4f43e56d121ba7c053143683
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 853cf9d5f3744e11936f121986edc4e6e027d251
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297006"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989291"
 ---
 # <a name="tapi-versioning"></a>Controle de versão da TAPI
 
@@ -44,8 +44,8 @@ Há várias versões da TAPI. Embora a maioria dessas versões envolvam alteraç
 | Versão da TAPI        | Distribuição                                                   |
 |---------------------|----------------------------------------------------------------|
 | 1,0 – 1,2           | Versões beta que não devem mais ser usadas.              |
-| [1.4](tapi-1-4.md) | Incluído no Windows 95.                                        |
-| [1.5](tapi-1-5.md) | Incluído no Windows CE 1,0.                                    |
+| [1,4](tapi-1-4.md) | Incluído no Windows 95.                                        |
+| [1,5](tapi-1-5.md) | Incluído no Windows CE 1,0.                                    |
 | [2.0](tapi-2-0.md) | Incluído no Windows NT 4,0 com SP3.                           |
 | [2.1](tapi-2-1.md) | Incluído no Windows NT 4,0 com SP4 e Windows 98.            |
 | [2.2](tapi-2-2.md) | Incluído no Windows Server 2003, Windows XP e Windows 2000. |

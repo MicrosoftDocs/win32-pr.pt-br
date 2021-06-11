@@ -1,5 +1,5 @@
 ---
-description: Observe que essa interface foi preterida.
+description: 'Saiba mais sobre o método IAMFilterData:: CreateFilterData, que cria dados de registro binários para um filtro. Essa interface foi substituída.'
 ms.assetid: ab6972ef-7c28-4cd1-b007-eb70f9aeb2cb
 title: 'Método IAMFilterData:: CreateFilterData (Fil \_ Data. h)'
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Quartz.dll
-ms.openlocfilehash: 4c83f19de8e709f9890b23957f730fbbac12dd7d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0a0126266fc33dca030abad65ccf9f0d35f6e195
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105766309"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989451"
 ---
 # <a name="iamfilterdatacreatefilterdata-method"></a>Método IAMFilterData:: CreateFilterData
 

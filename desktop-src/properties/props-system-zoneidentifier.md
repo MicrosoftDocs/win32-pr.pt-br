@@ -1,15 +1,15 @@
 ---
-description: Marca da zona da Web, como valor de enumeração URLZONE.
+description: Saiba mais sobre a propriedade System. ZoneIdentifier, que é a marca da zona da Web, como um valor de enumeração URLZONE.
 ms.assetid: 9d13d739-3d94-4fe2-9f63-21ed2fe5d44f
 title: System. ZoneIdentifier
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d97b2a4345cae7d73615d9ffdc183569c39bd50b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 41a0df9a0e25ebe4a5db2f96b7425daf5e9f14ba
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296245"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989481"
 ---
 # <a name="systemzoneidentifier"></a>System. ZoneIdentifier
 

@@ -1,23 +1,23 @@
 ---
-title: Propriedade Name (objeto characters)
-description: Propriedade Name
+title: Propriedade Name (objeto Characters)
+description: Saiba mais sobre a propriedade Name do objeto Characters. O Microsoft Agent foi preterido a partir do Windows 7.
 ms.assetid: vs|msagent|~\pacontrol_2bxm.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6e7b4a8872952cce0ae68445ec22a5599891674
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 7365550d5d4d4071cf4292e505f16e7047628cf1
+ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104454520"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111989321"
 ---
-# <a name="name-property-characters-object"></a>Propriedade Name (objeto characters)
+# <a name="name-property-characters-object"></a>Propriedade Name (objeto Characters)
 
 \[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Ndescrição**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descrição**
 </dt> <dd>
 
 Retorna ou define uma cadeia de caracteres que especifica o nome padrão do caractere especificado.
@@ -27,7 +27,7 @@ Retorna ou define uma cadeia de caracteres que especifica o nome padrão do cara
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-*Agente ***. Caracteres ("**_characterid_*_")._ *  \[  =  *Cadeia de caracteres* de nome\]
+*agent***. Caracteres ("**_CharacterID_*_"). Cadeia de_ *  \[  =  *caracteres de nome*\]
 
 
 
@@ -43,9 +43,9 @@ Retorna ou define uma cadeia de caracteres que especifica o nome padrão do cara
 
 ## <a name="remarks"></a>Comentários
 
-O **nome** de um caractere pode depender da configuração [**LanguageID**](languageid-property.md) do caractere. O nome de um caractere em um idioma pode ser diferente ou usar caracteres diferentes do que em outro. O **nome** padrão do caractere para um idioma específico é definido quando o caractere é compilado com o editor de caracteres do Microsoft Agent.
+O Nome de um **caractere** pode depender da configuração [**LanguageID do**](languageid-property.md) caractere. O nome de um caractere em um idioma pode ser diferente ou usar caracteres diferentes de outro. O Nome padrão do caractere **para** um idioma específico é definido quando o caractere é compilado com o Editor de Caracteres do Microsoft Agent.
 
-Evite renomear um caractere, especialmente ao usá-lo em um cenário em que outros aplicativos cliente possam usar o mesmo caractere. Além disso, o Agent usa o **nome** do caractere para criar automaticamente comandos para ocultar e mostrar o caractere.
+Evite renomear um caractere, especialmente ao usá-lo em um cenário em que outros aplicativos cliente podem usar o mesmo caractere. Além disso, o Agent usa o Nome **do** caractere para criar comandos automaticamente para ocultar e mostrar o caractere.
 
  
 
