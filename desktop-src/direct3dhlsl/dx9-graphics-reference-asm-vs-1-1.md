@@ -1,6 +1,6 @@
 ---
 title: vs_1_1
-description: Um sombreador de vértice programável é composto de um conjunto de instruções que operam em dados de vértice. Registra dados de transferência dentro e fora da ALU. Controle adicional pode ser aplicado para modificar a instrução, os resultados ou quais dados são gravados.
+description: Saiba mais sobre vs_1_1, um sombreador de vértice programável, que é composto de um conjunto de instruções que operam em dados de vértice.
 ms.assetid: 54ad41d7-aaa4-4cf4-8834-47f10cd5425c
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b956613c2a4dd882b8bb810e586de9b6b90a2f3b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 78ea10e751fd7fe902b1631376e9eb2023d31c12
+ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103823048"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112011059"
 ---
 # <a name="vs_1_1"></a>vs \_ 1 \_ 1
 
@@ -34,9 +34,9 @@ Um sombreador de vértice programável é composto de um conjunto de instruçõe
 [Sombreadores de vértice](dx9-graphics-reference-asm-vs.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

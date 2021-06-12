@@ -1,15 +1,15 @@
 ---
 title: Gerenciando registros de recursos de DNS
-description: Um registro de recurso, conhecido como RR, é a unidade de entrada de informações nos arquivos de zona DNS; RRs são os blocos de construção básicos de nome de host e informações de IP e são usados para resolver todas as consultas DNS.
+description: Saiba mais sobre como gerenciar registros de recursos. Um registro de recurso é a unidade de entrada de informações nos arquivos de zona DNS, que é usada para resolver todas as consultas DNS.
 ms.assetid: ddad5f14-5a2d-4966-87b7-b354666f9e24
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99edffa52b5137858468fd64122d2af826a896ad
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ba6c818899414cc541a1c89bfd11747051b2f5f1
+ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822820"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112011109"
 ---
 # <a name="managing-dns-resource-records"></a>Gerenciando registros de recursos de DNS
 
@@ -54,7 +54,7 @@ O provedor WMI de DNS atualmente dá suporte aos seguintes tipos de RR. Clique n
 
 
 
- 
+ 
 
 ## <a name="administration-steps"></a>Etapas de administração
 
@@ -71,9 +71,9 @@ As tarefas a seguir estão vinculadas a seus exemplos de script associados.
 -   [Excluindo um registro de recurso](dns-wmi-provider-samples-managing-dns-resource-records.md)
 -   [Modificando um registro de recurso](dns-wmi-provider-samples-managing-dns-resource-records.md)
 
- 
+ 
 
- 
+ 
 
 
 

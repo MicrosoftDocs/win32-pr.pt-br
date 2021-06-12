@@ -1,15 +1,15 @@
 ---
-description: Confira uma combinação de um ou mais sinalizadores que controlam o comportamento de criação do dispositivo.
+description: Consulte uma combinação de um ou mais sinalizadores que controlam o comportamento de criação do dispositivo na constante D3DCREATE.
 ms.assetid: 91387a2d-3927-4285-a09b-9ce247e6bfdd
 title: D3DCREATE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d89043ac49b72bccf6279ef3c9c8fa2c856c775
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: b525c24529c725b8b7c7f71c53718d56ceb50603
+ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343221"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112011279"
 ---
 # <a name="d3dcreate"></a>D3DCREATE
 
@@ -24,12 +24,12 @@ Uma combinação de um ou mais sinalizadores que controlam o comportamento de cr
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>#Definir</td>
+<td>#definir</td>
 <td>Descrição</td>
 </tr>
 <tr class="even">
 <td>D3DCREATE_ADAPTERGROUP_DEVICE</td>
-<td>O aplicativo solicita que o dispositivo conduza todas as cabeça que esse adaptador mestre possui. O sinalizador é ilegal em adaptadores não mestres. Se esse sinalizador for definido, os parâmetros de apresentação passados para <a href="/windows/desktop/api"><strong>CreateDevice</strong></a> deverão apontar para uma matriz de <a href="d3dpresent-parameters.md"><strong>D3DPRESENT_PARAMETERS</strong></a>. O número de elementos em <strong>D3DPRESENT_PARAMETERS</strong> deve ser igual ao número de adaptadores definido pelo membro NumberOfAdaptersInGroup da <a href="/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9"><strong>estrutura D3DCAPS9.</strong></a> O runtime do DirectX atribuirá cada elemento a cada cabeça na ordem numérica especificada pelo membro AdapterOrdinalInGroup <strong>de D3DCAPS9</strong>.</td>
+<td>O aplicativo solicita que o dispositivo conduza todos os cabeçotes que esse adaptador mestre possui. O sinalizador é inválido em adaptadores não mestres. Se esse sinalizador for definido, os parâmetros de apresentação passados para <a href="/windows/desktop/api"><strong>CreateDevice</strong></a> deverão apontar para uma matriz de <a href="d3dpresent-parameters.md"><strong>D3DPRESENT_PARAMETERS</strong></a>. O número de elementos em <strong>D3DPRESENT_PARAMETERS</strong> deve ser igual ao número de adaptadores definidos pelo membro NumberOfAdaptersInGroup da estrutura <a href="/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9"><strong>D3DCAPS9</strong></a> . O tempo de execução do DirectX atribuirá cada elemento a cada cabeçalho na ordem numérica especificada pelo membro AdapterOrdinalInGroup de <strong>D3DCAPS9</strong>.</td>
 </tr>
 <tr class="odd">
 <td>D3DCREATE_DISABLE_DRIVER_MANAGEMENT</td>
@@ -37,11 +37,11 @@ Uma combinação de um ou mais sinalizadores que controlam o comportamento de cr
 </tr>
 <tr class="even">
 <td>D3DCREATE_DISABLE_DRIVER_MANAGEMENT_EX</td>
-<td>Como D3DCREATE_DISABLE_DRIVER_MANAGEMENT, o Direct3D gerenciará recursos em vez do driver. Ao D3DCREATE_DISABLE_DRIVER_MANAGEMENT, D3DCREATE_DISABLE_DRIVER_MANAGEMENT_EX retornará erros para condições como memória de vídeo insuficiente.</td>
+<td>Como D3DCREATE_DISABLE_DRIVER_MANAGEMENT, o Direct3D gerenciará os recursos em vez do driver. Ao contrário de D3DCREATE_DISABLE_DRIVER_MANAGEMENT, D3DCREATE_DISABLE_DRIVER_MANAGEMENT_EX retornará erros para condições como memória de vídeo insuficiente.</td>
 </tr>
 <tr class="odd">
 <td>D3DCREATE_DISABLE_PRINTSCREEN</td>
-<td>Faz com que o runtime não registre teclas de atalho para Printscreen, Ctrl-Printscreen e Alt-Printscreen capturar o conteúdo da área de trabalho ou da janela. 
+<td>Faz com que o tempo de execução não Registre as teclas de captura para a tela, Ctrl-Printscreen e Alt-Printscreen para capturar o conteúdo da área de trabalho ou da janela. 
 <table>
 <tbody>
 <tr class="odd">
@@ -92,15 +92,15 @@ Uma combinação de um ou mais sinalizadores que controlam o comportamento de cr
 </tr>
 <tr class="even">
 <td>D3DCREATE_MIXED_VERTEXPROCESSING</td>
-<td>Especifica o processamento de vértice misto (software e hardware). Por Windows 10, versão 1607 e posterior, o uso dessa configuração não é recomendado. Consulte D3DCREATE_SOFTWARE_VERTEXPROCESSING.</td>
+<td>Especifica o processamento de vértice misto (software e hardware). Para o Windows 10, versão 1607 e posterior, não é recomendável usar essa configuração. Consulte D3DCREATE_SOFTWARE_VERTEXPROCESSING.</td>
 </tr>
 <tr class="odd">
 <td>D3DCREATE_SOFTWARE_VERTEXPROCESSING</td>
-<td>Especifica o processamento de vértice de software. Por Windows 10, versão 1607 e posterior, o uso dessa configuração não é recomendado. Use D3DCREATE_HARDWARE_VERTEXPROCESSING.
+<td>Especifica o processamento de vértice de software. Para o Windows 10, versão 1607 e posterior, não é recomendável usar essa configuração. Use D3DCREATE_HARDWARE_VERTEXPROCESSING.
 <div class="alert">
 <blockquote>
 [!Note]<br />
-A menos que o processamento de vértice de hardware não esteja disponível, o uso do processamento de vértice de software não é recomendado no Windows 10, versão 1607 (e versões posteriores), pois a eficiência do processamento de vértice de software foi significativamente reduzida, melhorando a segurança da implementação.
+A menos que o processamento de vértice de hardware não esteja disponível, o uso do processamento de vértice de software não é recomendado no Windows 10, versão 1607 (e versões posteriores) porque a eficiência do processamento de vértice de software foi significativamente reduzida e, ao mesmo tempo, melhora a segurança da implementação.
 </blockquote>
 </div>
 <div>
@@ -109,7 +109,7 @@ A menos que o processamento de vértice de hardware não esteja disponível, o u
 </tr>
 <tr class="even">
 <td>D3DCREATE_MULTITHREADED</td>
-<td>Indica que o aplicativo solicita que o Direct3D seja multithread seguro. Isso faz um thread Direct3D assumir a propriedade de sua seção <a href="/windows/desktop/Sync/critical-section-objects">crítica</a> global com mais frequência, o que pode prejudicar o desempenho. Se um aplicativo processa mensagens de janela em um thread ao fazer chamadas à API direct3D em outro, o aplicativo deve usar esse sinalizador ao criar o dispositivo. Essa janela também deve ser destruída antes de descarregar d3d9.dll.</td>
+<td>Indica que o aplicativo solicita que o Direct3D seja multithread seguro. Isso faz com que um thread Direct3D assuma a propriedade de sua <a href="/windows/desktop/Sync/critical-section-objects">seção crítica</a> global com mais frequência, o que pode prejudicar o desempenho. Se um aplicativo processar mensagens de janela em um thread ao fazer chamadas de API do Direct3D em outro, o aplicativo deverá usar esse sinalizador ao criar o dispositivo. Essa janela também deve ser destruída antes de descarregar d3d9.dll.</td>
 </tr>
 <tr class="odd">
 <td>D3DCREATE_NOWINDOWCHANGES</td>
@@ -117,7 +117,7 @@ A menos que o processamento de vértice de hardware não esteja disponível, o u
 <div class="alert">
 <blockquote>
 [!Note]<br />
-Se esse sinalizador for definido, o aplicativo deverá dar suporte total a todos os eventos de gerenciamento de foco, como eventos ALT+TAB e clique do mouse.
+Se esse sinalizador for definido, o aplicativo deverá oferecer suporte total a todos os eventos de gerenciamento de foco, como os eventos ALT + TAB e Click do mouse.
 </blockquote>
 </div>
 <div>
@@ -126,7 +126,7 @@ Se esse sinalizador for definido, o aplicativo deverá dar suporte total a todos
 </tr>
 <tr class="even">
 <td>D3DCREATE_PUREDEVICE</td>
-<td>Especifica que o Direct3D não dá suporte a chamadas Get* para qualquer coisa que possa ser armazenada em blocos de estado. Ele também informa ao Direct3D para não fornecer nenhum serviço de emulação para processamento de vértice. Isso significa que, se o dispositivo não dá suporte ao processamento de vértices, o aplicativo pode usar apenas vértices pós-transformados.</td>
+<td>Especifica que o Direct3D não oferece suporte a chamadas get * para qualquer coisa que possa ser armazenada em blocos de estado. Ele também informa ao Direct3D para não fornecer nenhum serviço de emulação para processamento de vértice. Isso significa que, se o dispositivo não oferecer suporte ao processamento de vértice, o aplicativo poderá usar apenas vértices após a transformação.</td>
 </tr>
 <tr class="odd">
 <td>D3DCREATE_SCREENSAVER</td>

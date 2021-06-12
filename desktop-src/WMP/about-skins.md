@@ -1,6 +1,6 @@
 ---
 title: Sobre as capas
-description: Sobre as capas
+description: Saiba mais sobre as capas. As capas são arquivos de arte de computador organizados por um arquivo de texto, que diz ao Windows Media Player como exibir uma capa.
 ms.assetid: 35c8c8b0-6feb-4fc5-b944-da712b521300
 keywords:
 - Windows Media Player, capas
@@ -8,12 +8,12 @@ keywords:
 - capas, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5660a4223d7803863f114944e6117d3279dcfe12
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 20bef3149aad859819b03f4ba76b721a622860de
+ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104160034"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112011189"
 ---
 # <a name="about-skins"></a>Sobre as capas
 
@@ -40,7 +40,7 @@ As seções a seguir fornecem informações gerais sobre as capas do Windows Med
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -49,9 +49,9 @@ As seções a seguir fornecem informações gerais sobre as capas do Windows Med
 [**Capas do Windows Media Player**](windows-media-player-skins.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

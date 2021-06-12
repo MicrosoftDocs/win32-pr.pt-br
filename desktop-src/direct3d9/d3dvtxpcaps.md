@@ -1,15 +1,15 @@
 ---
-description: Saiba mais sobre uma combinação de um ou mais sinalizadores que controlam o comportamento de criação do dispositivo.
+description: Saiba mais sobre uma combinação de um ou mais sinalizadores que controlam o comportamento de criação do dispositivo na constante D3DVTXPCAPS.
 ms.assetid: 2d3e548f-8559-4a36-b814-6d598bead1d0
 title: D3DVTXPCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07ad3b5eca7a264e489382d80b336f5b2c660e1a
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 6b544f3e4a69de23607366832aca110e42c61d6d
+ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110342911"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112011079"
 ---
 # <a name="d3dvtxpcaps"></a>D3DVTXPCAPS
 
@@ -17,16 +17,16 @@ Uma combinação de um ou mais sinalizadores que controlam o comportamento de cr
 
 
 
-| \#definir                                | Descrição                                                                                                                                                                                        |
+| \#Definir                                | Descrição                                                                                                                                                                                        |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| D3DVTXPCAPS \_ DIRECTIONALLIGHTS          | O dispositivo pode realizar luzes direcionais.                                                                                                                                                                  |
+| D3DVTXPCAPS \_ DIRECTIONALLIGHTS          | O dispositivo pode fazer luzes direcionais.                                                                                                                                                                  |
 | D3DVTXPCAPS \_ LOCALVIEWER                | O dispositivo pode fazer o visualizador local.                                                                                                                                                                        |
-| D3DVTXPCAPS \_ MATERIALSOURCE7            | Quando esse limite é definido, o dispositivo dá suporte aos Estados de material de cor: D3DRS \_ AMBIENTMATERIALSOURCE, D3DRS \_ DiffuseMaterialSource, D3DRS \_ EMISSIVEMATERIALSOURCE e D3DRS \_ SPECULARMATERIALSOURCE. |
-| D3DVTXPCAPS \_ \_ TEXGEN \_ NONLOCALVIEWER | O dispositivo não oferece suporte à geração de textura no modo de visualizador não local.                                                                                                                               |
-| D3DVTXPCAPS \_ POSITIONALLIGHTS           | O dispositivo pode fazer luzes posicionais (inclui ponto e spot).                                                                                                                                         |
-| D3DVTXPCAPS \_ TEXGEN                     | O dispositivo pode fazer texgen.                                                                                                                                                                              |
+| MATERIAIS D3DVTXPCAPSOURCE7 \_            | Quando esse limite é definido, o dispositivo dá suporte aos estados de material de cor: D3DRS \_ AMBIENTMATERIALSOURCE, D3DRS \_ DIFFUSEMATERIALSOURCE, D3DRS \_ EMISSIVEMATERIALSOURCE e D3DRS \_ SPECULARMATERIALSOURCE. |
+| D3DVTXPCAPS \_ NO \_ TEXGEN \_ NONLOCALVIEWER | O dispositivo não dá suporte à geração de textura no modo de visualizador não local.                                                                                                                               |
+| D3DVTXPCAPS \_ POSITIONALLIGHTS           | O dispositivo pode fazer luzes posicionais (inclui ponto e ponto).                                                                                                                                         |
+| D3DVTXPCAPS \_ TEXASGEN                     | O dispositivo pode fazer o texgen.                                                                                                                                                                              |
 | D3DVTXPCAPS \_ TEXGEN \_ SPHEREMAP          | O dispositivo dá suporte a D3DTSS \_ TCI \_ SPHEREMAP.                                                                                                                                                            |
-| \_Interpolação D3DVTXPCAPS                   | O dispositivo pode fazer interpolação de vértice.                                                                                                                                                                     |
+| D3DVTXPCAPS \_ TWEENING                   | O dispositivo pode fazer interpolação de vértice.                                                                                                                                                                     |
 
 
 

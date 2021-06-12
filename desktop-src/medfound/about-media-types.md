@@ -1,15 +1,15 @@
 ---
-description: Sobre os tipos de mídia
+description: Saiba mais sobre os tipos de mídia no Microsoft Media Foundation. Um tipo de mídia descreve o formato de um fluxo de mídia.
 ms.assetid: 169cdb00-0c1a-4530-90b7-bc89c71d1d04
 title: Sobre os tipos de mídia (Microsoft Media Foundation)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ca1ee75979c5c382e7e4ea458655efb83435a22d
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 263c2b473e378e6ae5dc75453b20d02dce61818f
+ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103930087"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112010899"
 ---
 # <a name="about-media-types-microsoft-media-foundation"></a>Sobre os tipos de mídia (Microsoft Media Foundation)
 

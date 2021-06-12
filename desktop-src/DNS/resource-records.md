@@ -1,15 +1,15 @@
 ---
 title: Registros de recursos
-description: Um registro de recurso, conhecido como RR, é a unidade de entrada de informações nos arquivos de zona DNS; RRs são os blocos de construção básicos de nome de host e informações de IP e são usados para resolver todas as consultas DNS.
+description: Saiba mais sobre os registros de recursos. Um registro de recurso é a unidade de entrada de informações nos arquivos de zona DNS, que é usada para resolver todas as consultas DNS.
 ms.assetid: c64907c2-ebd3-4550-9454-13f51a6d7ca6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05b667b95a8ede32018e1aad7de375e77a890487
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a84bd000e2d88884bbb387748eaced1d0d58a324
+ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636668"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112010669"
 ---
 # <a name="resource-records"></a>Registros de recursos
 
@@ -41,9 +41,9 @@ Os seguintes tipos de registro de recurso são comumente usados no DNS:
 
 Há muitos outros tipos de registro de recurso no DNS. Para obter mais informações, consulte [referência do provedor WMI de DNS](dns-wmi-provider-reference.md).
 
- 
+ 
 
- 
+ 
 
 
 

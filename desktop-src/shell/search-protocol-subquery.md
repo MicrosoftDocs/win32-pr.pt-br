@@ -1,5 +1,5 @@
 ---
-description: Uma subconsulta é um arquivo de pesquisa salvo ( \* . Search-MS) que você pode usar como um filtro para uma nova consulta.
+description: Saiba mais sobre o argumento de subconsulta no Shell do Windows. Uma subconsulta é um arquivo de pesquisa salvo que você pode usar como um filtro para uma nova consulta.
 title: Argumento de subconsulta (o Shell do Windows)
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 43e4a5b904d5e769eb43acad05aa5d8ce37ebde2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef0b37c0f473f2b86c85c18a99124be3b366f447
+ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104989072"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112010659"
 ---
 # <a name="subquery-argument-the-windows-shell"></a>Argumento de subconsulta (o Shell do Windows)
 

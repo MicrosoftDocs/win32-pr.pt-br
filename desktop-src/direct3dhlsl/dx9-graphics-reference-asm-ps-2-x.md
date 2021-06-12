@@ -1,6 +1,6 @@
 ---
 title: ps_2_x
-description: Um sombreador de pixel programável é composto de um conjunto de instruções que operam em dados de pixel. Registra dados de transferência dentro e fora da ALU. Controle adicional pode ser aplicado para modificar a instrução, os resultados ou quais dados são gravados.
+description: Saiba mais sobre o ps_2_x, um sombreador de pixel programável, que é composto de um conjunto de instruções que operam em dados de pixel.
 ms.assetid: 06f657a9-6521-404e-b012-7c8e972e9d5c
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 13e5daf7c3a4b41e5b27b1c20f8b1f5f8355c325
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9efedc6011cb63b6465fd2d3ced4a7807c09f4da
+ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104988689"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112010869"
 ---
 # <a name="ps_2_x"></a>PS \_ 2 \_ x
 
@@ -74,6 +74,6 @@ O número de amostragens de textura disponíveis é 16.
 [Sombreadores de pixel](dx9-graphics-reference-asm-ps.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,6 +1,6 @@
 ---
 title: vs_3_0
-description: Um sombreador de vértice programável é composto de um conjunto de instruções que operam em dados de vértice. Registra dados de transferência dentro e fora da ALU. Controle adicional pode ser aplicado para modificar a instrução, os resultados ou quais dados são gravados.
+description: Saiba mais sobre vs_3_0, um sombreador de vértice programável, que é composto de um conjunto de instruções que operam em dados de vértice.
 ms.assetid: 0f40f946-3525-4203-bfe2-1cd941d8e2ec
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 22a0e6e84aff34dcec44713dc4382e391ad05c2b
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.openlocfilehash: 310d64170280053c34766f214969f78d66560ea3
+ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "103824041"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112011069"
 ---
 # <a name="vs_3_0"></a>vs \_ 3 \_ 0
 
@@ -146,7 +146,7 @@ Se houver \_ suporte para o sombreador de vértice 3 0, as seguintes caps têm s
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -155,6 +155,6 @@ Se houver \_ suporte para o sombreador de vértice 3 0, as seguintes caps têm s
 [Sombreadores de vértice](dx9-graphics-reference-asm-vs.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
