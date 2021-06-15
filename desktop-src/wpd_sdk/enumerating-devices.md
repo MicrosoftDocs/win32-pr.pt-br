@@ -1,15 +1,15 @@
 ---
 title: Enumerando dispositivos (WPD)
-description: Enumerando dispositivos
+description: Saiba como um aplicativo enumera dispositivos usando a função EnumerateAllDevices, que obtém uma contagem de dispositivos conectados e informações específicas do dispositivo.
 ms.assetid: 28ded3cf-b0c8-4c90-ab39-efc879adb6e7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2738398de7f3bfb6aa1ea88175ff30241b4dbb0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6465b04e6f1a18a0bdb74f0ce883cf9161371fb6
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759777"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068592"
 ---
 # <a name="enumerating-devices-wpd"></a>Enumerando dispositivos (WPD)
 

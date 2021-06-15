@@ -1,19 +1,19 @@
 ---
-description: Caminho do sistema de arquivos para a representação de miniatura grande do item de mídia.
+description: A propriedade System.Media.ThumbnailLargePath contém o caminho do sistema de arquivos para a representação em miniatura grande do item de mídia.
 ms.assetid: 5a710c2d-ab79-4376-88be-26931346f116
-title: System. Media. ThumbnailLargePath
+title: System.Media.ThumbnailLargePath
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa9c761f2086c46a813307dc48c72abb7bec9d23
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: f2bd17e148e25d84b254b18f347cff2a8b288554
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104172476"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068362"
 ---
-# <a name="systemmediathumbnaillargepath"></a>System. Media. ThumbnailLargePath
+# <a name="systemmediathumbnaillargepath"></a>System.Media.ThumbnailLargePath
 
-Caminho do sistema de arquivos para a representação de miniatura grande do item de mídia.
+Caminho do sistema de arquivos para a representação em miniatura grande do item de mídia.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507
 
@@ -32,13 +32,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -47,19 +47,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -74,7 +74,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

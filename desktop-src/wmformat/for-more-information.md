@@ -1,6 +1,6 @@
 ---
 title: Para obter mais informações (Windows Media Format SDK)
-description: Para obter mais informações
+description: Use estes recursos adicionais para obter as informações adicionais mais recentes sobre o SDK do Windows Media Format.
 ms.assetid: 74933db2-3800-4d49-8720-7e677f208e49
 keywords:
 - SDK do Windows Media Format, informações adicionais
@@ -11,12 +11,12 @@ keywords:
 - DRM (gerenciamento de direitos digitais), recursos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: afd9cf32b192607119672e8a30137f0e25cab857
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: ba9a9758bdd2c7571ed6d3f7d769a3511e5d456f
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104506319"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112067882"
 ---
 # <a name="for-more-information-windows-media-format-sdk"></a>Para obter mais informações (Windows Media Format SDK)
 

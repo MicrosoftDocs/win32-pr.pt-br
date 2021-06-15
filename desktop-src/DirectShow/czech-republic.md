@@ -1,21 +1,21 @@
 ---
-description: Para obter uma explicação das tabelas a seguir, consulte tabelas e atribuições.
+description: Este artigo contém tabelas de frequência para ajuste de TV análogo internacional para a República Tcheca. Índices de frequência não são adequados para números de canal.
 ms.assetid: 6bbef2a3-7104-4b5f-8381-0a89751e572b
 title: República Tcheca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 732a8a9082484d0b8167d8c3f565afdafd0664a0
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 91e3d946fdfc42f0e418d7bba1a786d49c5d6785
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103646150"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068022"
 ---
 # <a name="czech-republic"></a>República Tcheca
 
-Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).
+Para uma explicação das tabelas a seguir, consulte [Tabelas e Atribuições](tables-and-assignments.md).
 
-Os índices de frequência nas tabelas de República Tcheca não são adequados para uso como números de canal.
+Os índices de frequência nas tabelas da República Tcheca não são adequados para uso como números de canal.
 
 -   [Windows 7 e posterior](#windows-7-and-later)
     -   [Atribuições de difusão da República Tcheca](#czech-republic-broadcast-assignments)
@@ -403,7 +403,7 @@ Os índices de frequência nas tabelas de República Tcheca não são adequados 
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste de TV análogo internacional](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

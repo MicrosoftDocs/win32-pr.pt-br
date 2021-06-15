@@ -1,15 +1,15 @@
 ---
 title: Propriedade HelpContextid (objeto Command)
-description: Propriedade HelpContextid
+description: Saiba mais sobre a propriedade HelpContextid do objeto Command. O Microsoft Agent foi preterido a partir do Windows 7.
 ms.assetid: 9e30e3f7-1d12-4aa1-af0d-5a3b30f57e83
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8ef0fcfb24aee7aed75f8eb794e81291207ea24
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 461c3c0ff5a6722dd6740c7df7e89bf2b9520053
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104085100"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068503"
 ---
 # <a name="helpcontextid-property-command-object"></a>Propriedade HelpContextid (objeto Command)
 

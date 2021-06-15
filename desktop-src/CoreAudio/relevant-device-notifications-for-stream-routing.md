@@ -1,15 +1,15 @@
 ---
-description: No Windows 7, as APIs de plataforma de alto nível que usam APIs de áudio de núcleo, como as APIs Media Foundation, DirectSound e Wave, implementam o recurso de roteamento de fluxo manipulando a alternância de fluxo de um dispositivo existente para um novo ponto de extremidade de áudio padrão.
+description: Saiba mais sobre notificações para roteamento de fluxo. As APIs implementam o roteamento de fluxo manipulando a alternância de fluxo para um novo ponto de extremidade de áudio padrão.
 ms.assetid: caf831bb-b8de-467f-bdb4-f9f8991dc7a8
 title: Notificações relevantes para roteamento de fluxo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef3d253ce2ec5d6e3bef025a33233a9d377ca44b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d1a843c1d8b5cfd740ada5049cb9428e7745072d
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089243"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068522"
 ---
 # <a name="relevant-notifications-for-stream-routing"></a>Notificações relevantes para roteamento de fluxo
 

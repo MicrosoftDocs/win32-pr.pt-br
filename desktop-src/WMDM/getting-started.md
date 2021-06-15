@@ -1,6 +1,6 @@
 ---
 title: Introdução ao WMDM
-description: Introdução
+description: Saiba mais sobre as informações básicas de que você precisa para começar a desenvolver aplicativos e provedores de serviços que usam o Windows Media Gerenciador de Dispositivos.
 ms.assetid: 0af11e8e-ddfd-4178-aca9-61bb74a2d144
 keywords:
 - Windows Media Gerenciador de Dispositivos, sobre
@@ -13,12 +13,12 @@ keywords:
 - provedores de serviço, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b18f1e3e7c31de942f050ac19c1bb6b458069862
-ms.sourcegitcommit: cba7f424a292fd7f3a8518947b9466439b455419
+ms.openlocfilehash: e70c5da5da229f915b4f8b2ef1d79d88c69ab075
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "104498956"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068272"
 ---
 # <a name="getting-started-with-wmdm"></a>Introdução ao WMDM
 
@@ -35,7 +35,7 @@ Esta seção fornece as informações básicas de que você precisa para começa
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -44,9 +44,9 @@ Esta seção fornece as informações básicas de que você precisa para começa
 [**SDK do Windows Media Gerenciador de Dispositivos 11**](windows-media-device-manager-11-sdk.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

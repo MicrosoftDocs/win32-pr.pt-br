@@ -1,15 +1,15 @@
 ---
 title: Propriedade FontSize (objeto Balloon)
-description: Propriedade FontSize
+description: Saiba mais sobre a propriedade de objeto de balão FontSize. O Microsoft Agent foi preterido a partir do Windows 7.
 ms.assetid: 36d5526a-1ae9-4ef2-94f6-0ad63ce86882
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 569c07e98fb8bf973a554e89655f71e816b4a51b
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 85e6a2c13708d3066faaf396a3a451c9be01d177
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104369148"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068213"
 ---
 # <a name="fontsize-property-balloon-object"></a>Propriedade FontSize (objeto Balloon)
 

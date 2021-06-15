@@ -1,42 +1,42 @@
 ---
-description: Para converter arquivos de mídia em formato ASF, você pode usar codificadores de mídia do Windows. Para usar esses codificadores, eles devem ser registrados com o sistema.
+description: Para converter arquivos de mídia em formato ASF, você pode usar codificadores de Mídia do Windows. Saiba mais sobre como criar um codificador usando CoCreateInstance.
 ms.assetid: 96f19dfb-a328-41db-8fa8-77f052b1a192
 title: Criando um codificador usando CoCreateInstance
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28a19a3ec13f60e7f602fa4f16854efa060dd96d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 15c4cdf7b72bbfee97031088502113d085738981
+ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105783773"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112068462"
 ---
 # <a name="creating-an-encoder-by-using-cocreateinstance"></a>Criando um codificador usando CoCreateInstance
 
-Para converter arquivos de mídia em formato ASF, você pode usar codificadores de mídia do Windows. Para usar esses codificadores, eles devem ser registrados com o sistema. Os codificadores são implementados como [transformações de Media Foundation](media-foundation-transforms.md) (MFTs) e devem expor a interface IMFTransform. Este tópico descreve como um aplicativo pode obter um ponteiro para a interface IMFTransform do codificador MFT necessário e instanciá-lo para uso.
+Para converter arquivos de mídia em formato ASF, você pode usar codificadores de Mídia do Windows. Para usar esses codificadores, eles devem ser registrados no sistema. Os codificadores são implementados como Media Foundation transformação (MFTs) e devem expor a interface IMFTransform. [](media-foundation-transforms.md) Este tópico descreve como um aplicativo pode obter um ponteiro para a interface IMFTransform necessária do codificador MFT e insinuá-lo para uso.
 
-Para obter informações sobre o registro do codificador, consulte [instanciando um MFT do codificador](instantiating-the-encoder-mft.md).
+Para obter informações sobre o registro do codificador, consulte [Instando um codificador MFT](instantiating-the-encoder-mft.md).
 
 -   [Usando a interface IMFTransform de um codificador](#creating-an-encoder-by-using-cocreateinstance)
-    -   [Exemplo de criação de codificador](#encoder-creation-example)
+    -   [Exemplo de criação do codificador](#encoder-creation-example)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="using-an-encoders-imftransform-interface"></a>Usando a interface IMFTransform de um codificador
 
-Após o registro bem-sucedido dos codificadores de mídia do Windows com o sistema, um aplicativo pode enumerar os codificadores chamando [**MFTEnum**](/windows/desktop/api/mfapi/nf-mfapi-mftenum). Para pesquisar o codificador correto, você deve especificar o seguinte:
+Após o registro bem-sucedido de codificadores de mídia do Windows com o sistema, um aplicativo pode enumerar os codificadores chamando [**MFTEnum**](/windows/desktop/api/mfapi/nf-mfapi-mftenum). Para pesquisar o codificador correto, você deve especificar o seguinte:
 
--   O GUID que representa a categoria, que é o **\_ \_ \_ codificador de áudio de categoria de MFT** ou o **\_ \_ \_ codificador de vídeo de categoria de MFT**.
+-   O GUID que representa a categoria , que é CODIFICADOR DE ÁUDIO DE CATEGORIA **MFT \_ ou \_ \_ CODIFICADOR** **DE VÍDEO DE CATEGORIA \_ \_ \_ MFT.**
 
--   O formato a ser correspondido. Isso é definido na estrutura [**de \_ \_ \_ informações do tipo de registro de MFT**](/windows/win32/api/mfobjects/ns-mfobjects-mft_register_type_info) que especifica o tipo e subtipo principais do tipo de mídia no qual o codificador gerará amostras. Essa estrutura é passada no parâmetro *pOutputType* . Para obter informações sobre os tipos com suporte, consulte [GUIDs de tipo de mídia](media-type-guids.md).
+-   O formato a ser corresponder. Isso é definido na estrutura [**MFT \_ REGISTER TYPE \_ \_ INFO**](/windows/win32/api/mfobjects/ns-mfobjects-mft_register_type_info) que especifica o tipo principal e o subtipo do tipo de mídia no qual o codificador gerará amostras. Essa estrutura é passada no *parâmetro pOutputType.* Para obter informações sobre os tipos com suporte, consulte [GUIDs de tipo de mídia.](media-type-guids.md)
 
     > [!Note]  
-    > As informações de tipo de entrada no parâmetro *pInputType* não são necessárias. Isso ocorre porque o tipo de entrada é conhecido pelo aplicativo e o codificador espera que o fluxo de entrada esteja em um formato descompactado.
+    > As informações de tipo de entrada no *parâmetro pInputType* não são necessárias. Isso acontece porque o tipo de entrada é conhecido pelo aplicativo e o codificador espera que o fluxo de entrada está em um formato descompactado.
 
      
 
-[**MFTEnum**](/windows/desktop/api/mfapi/nf-mfapi-mftenum) retorna uma matriz de ponteiros [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) para o codificador MFTs que corresponde aos critérios de pesquisa. Você pode criar uma instância de um codificador chamando a função COM **CoCreateInstance** e passando o CLSID do codificador que você deseja usar. Essa função retorna um ponteiro para a interface **IMFTransform** que representa o codificador. Para obter mais informações sobre essa chamada de função, consulte a documentação do SDK do Windows para o Component Object Model (COM).
+[**MFTEnum retorna**](/windows/desktop/api/mfapi/nf-mfapi-mftenum) uma matriz de [**ponteiros IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) para os MFTs do codificador que corresponderem aos critérios de pesquisa. Você pode insinuar um codificador chamando a função COM **CoCreateInstance** e passando o CLSID do codificador que você deseja usar. Essa função retorna um ponteiro para a interface **IMFTransform** que representa o codificador. Para obter mais informações sobre essa chamada de função, consulte SDK do Windows documentação do Component Object Model (COM).
 
-### <a name="encoder-creation-example"></a>Exemplo de criação de codificador
+### <a name="encoder-creation-example"></a>Exemplo de criação do codificador
 
 O exemplo de código a seguir mostra como criar um codificador de áudio ou vídeo.
 
@@ -92,7 +92,7 @@ HRESULT FindEncoder(
 
 <dl> <dt>
 
-[Criando uma instância de um MFT do codificador](instantiating-the-encoder-mft.md)
+[Inciando um MFT codificador](instantiating-the-encoder-mft.md)
 </dt> <dt>
 
 [Codificadores de mídia do Windows](windows-media-encoders.md)
