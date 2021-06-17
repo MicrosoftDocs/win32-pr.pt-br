@@ -1,15 +1,15 @@
 ---
-description: Antes de poder gravar eventos em uma sessão de rastreamento, você deve registrar seu provedor.
+description: Saiba como gravar eventos MOF em uma sessão de rastreamento. Comece com o registro de seu provedor, para que ele esteja pronto para gravar eventos em uma sessão de rastreamento.
 ms.assetid: 21f62b5d-0a2d-468c-af88-2fab1512f0ec
 title: Gravando eventos MOF (clássicos)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d3d041e2792540d4a05637bcffdb67e1164a95b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29d081c48567851d2fb570dd7bfa5c75e687b524
+ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968239"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112261838"
 ---
 # <a name="writing-mof-classic-events"></a>Gravando eventos MOF (clássicos)
 

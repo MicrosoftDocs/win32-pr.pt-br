@@ -1,17 +1,17 @@
 ---
-description: GUID do serviço Bluetooth.
+description: Saiba mais sobre o GUID do serviço Bluetooth. Esta página de referência descreve a propriedade System.DeviceInterface.Bluetooth.ServiceGuid.
 ms.assetid: a6df61fa-5e6d-45cb-9012-e550fb1d08d4
-title: System. DeviceInterface. Bluetooth. perguid
+title: System.DeviceInterface.Bluetooth.ServiceGuid
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e47317906b9480e91f765054b3b17375195335c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7c8a8eea07a06e615dd5f0adbbf35a8074094ffc
+ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169329"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112261948"
 ---
-# <a name="systemdeviceinterfacebluetoothserviceguid"></a>System. DeviceInterface. Bluetooth. perguid
+# <a name="systemdeviceinterfacebluetoothserviceguid"></a>System.DeviceInterface.Bluetooth.ServiceGuid
 
 GUID do serviço Bluetooth.
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,19 +48,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -75,7 +75,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

@@ -1,15 +1,15 @@
 ---
-description: Antes de poder gravar eventos em uma sessão de rastreamento, você deve registrar seu provedor.
+description: Saiba como gravar eventos baseados em manifesto em uma sessão de rastreamento. Comece com o registro de seu provedor, para que ele esteja pronto para gravar eventos em uma sessão de rastreamento.
 ms.assetid: 76e7202e-74ce-40a3-a04b-9af5117fe20e
 title: Escrevendo eventos baseados em manifesto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08a1817defe85e68860d8a628a2d3275034ce285
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc2887194d731ca93379b07c9929de239cef3cdb
+ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090836"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112261958"
 ---
 # <a name="writing-manifest-based-events"></a>Escrevendo eventos baseados em manifesto
 

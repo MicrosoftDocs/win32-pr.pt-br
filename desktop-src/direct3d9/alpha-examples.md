@@ -1,15 +1,15 @@
 ---
-description: A mesclagem alfa é usada para exibir uma imagem que tem pixels transparentes ou semi-transparente.
+description: Consulte exemplos de mistura alfa. A mesclagem alfa é usada para exibir uma imagem que tem pixels transparentes ou semi-transparente.
 ms.assetid: e08c7ceb-6e9c-4a3e-8bb6-5487e512a801
 title: Exemplos alfa (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e58319dbbdf459acfd9eccbe0574f7ccdb395e4c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 47a7918ce0257962238d929d69d240a1feeb513e
+ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370499"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112262078"
 ---
 # <a name="alpha-examples-direct3d-9"></a>Exemplos alfa (Direct3D 9)
 

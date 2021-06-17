@@ -1,15 +1,15 @@
 ---
-description: Categorias das quais o dispositivo faz parte. por exemplo, impressora, câmera, etc.
+description: A propriedade System. Devices. AEP. Category indica as categorias das quais o dispositivo faz parte, como impressora ou câmera.
 ms.assetid: 40fde8e1-7c09-4486-89d2-f86f6d48b4bf
 title: System.Devices.Aep.Category
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5bb2a8017df30dee90bfeadc428dc04ebb1fac4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0625744d735bb6884a96894c4c47e2152e66f6f7
+ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170489"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112262198"
 ---
 # <a name="systemdevicesaepcategory"></a>System.Devices.Aep.Category
 

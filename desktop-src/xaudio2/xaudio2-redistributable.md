@@ -4,76 +4,78 @@ ms.assetid: ''
 title: Guia do desenvolvedor para a versão redistribuível do XAudio 2.9
 ms.topic: article
 ms.date: 10/17/2019
-ms.openlocfilehash: 2b83f2811ada9a41591b4b556a34aa585002c83e
-ms.sourcegitcommit: b61ef7cdd575b086e96db4d4cf37b9fbeb388a47
+ms.openlocfilehash: a73ebd01d599446dc96e1e6735d8af572203a23b
+ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107583823"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112262588"
 ---
 # <a name="developer-guide-for-redistributable-version-of-xaudio-29"></a>Guia do desenvolvedor para a versão redistribuível do XAudio 2.9
 
-Uma versão do XAudio 2,9 está disponível como um [pacote NuGet](/nuget/what-is-nuget). Os desenvolvedores podem redistribuir esta versão do XAudio 2,9 com seus aplicativos. Isso permite que um aplicativo use o XAudio 2,9 em versões mais antigas do Windows que não incluem XAudio 2,9 como parte da imagem do sistema operacional. O uso desse redistribuível é preferível em relação à redistribuição de XAudio 2,7 do SDK do DirectX, já que XAudio 2,7 não foi atualizado desde 2010.
+Uma versão do XAudio 2.9 está disponível como um [pacote NuGet](/nuget/what-is-nuget). Os desenvolvedores podem redistribuir essa versão do XAudio 2.9 com seus aplicativos. Isso permite que um aplicativo use o XAudio 2.9 em versões mais antigas do Windows que não incluem o XAudio 2.9 como parte da imagem do sistema operacional. O uso desse redistribuível é preferencial em vez de redistribuir o XAudio 2.7 do SDK do DirectX, pois o XAudio 2.7 não foi atualizado desde 2010.
+
+Visite a Página de [Aterrissagem do DirectX para](https://devblogs.microsoft.com/directx/landing-page/) obter mais recursos para desenvolvedores do DirectX.
 
 ## <a name="supported-platforms"></a>Plataformas compatíveis
 
-O pacote NuGet do XAudio 2,9 (*Microsoft. XAudio2. Redist. \* . nupkg*) inclui uma versão de 32 bits e de 64 bits de uma DLL que implementa a API do XAudio 2,9. A DLL é chamada de \_9REDIST.DLL XAudio2. Essa DLL funcionará no Windows 7 SP1, Windows 8, Windows 8.1 e Windows 10.
+O pacote NuGet XAudio 2.9 (*Microsoft.XAudio2.Redist. \* . nupkg*) inclui uma versão de 32 bits e uma versão de 64 bits de uma DLL que implementa a API XAudio 2.9. A DLL é chamada de XAUDIO2 \_9REDIST.DLL. Essa DLL funcionará no Windows 7 SP1, Windows 8, Windows 8.1 e Windows 10.
 
-Quando a DLL é usada em um sistema Windows 10, ela verifica o número de versão do \_9.DLL XAudio2 que faz parte do sistema operacional e, se o sistema operacional for mais recente, ele delegará todas as chamadas à API para XAUDIO2 \_9.DLL no sistema operacional. Isso garante que os aplicativos sempre usem a versão mais recente do XAudio 2,9 que está disponível na plataforma atual.
+Quando a DLL é usada em um sistema Windows 10, ela verifica o número de versão do9.DLL XAUDIO2 que faz parte do sistema operacional e, se o sistema operacional for mais recente, ele delegará todas as chamadas à API para o9.DLL \_ XAUDIO2 no sistema \_ operacional. Isso garante que os aplicativos sempre usem a versão mais recente do XAudio 2.9 que está disponível na plataforma atual.
 
-A DLL não se destina ao Xbox One. Se usado no Xbox One, a DLL sempre delegará todas as chamadas de API para XAUDIO2 \_9.DLL no sistema operacional do Xbox One.
+A DLL não se destina a Xbox One. Se usado no Xbox One, a DLL sempre delegará todas as chamadas à API para9.DLL XAUDIO2 no \_ Xbox One operacional.
 
-A DLL não se destina a aplicativos UWP. Os aplicativos UWP devem usar o \_9.DLL XAudio2 que faz parte do sistema operacional.
+A DLL não se destina a aplicativos UWP. Os aplicativos UWP devem usar o9.DLL XAUDIO2 \_ que faz parte do sistema operacional.
 
 ## <a name="installing-the-nuget-package"></a>Instalando o pacote NuGet
 
-A maneira mais fácil de instalar o pacote NuGet é usar o [Gerenciador de pacotes NuGet](/nuget/consume-packages/install-use-packages-visual-studio) no Microsoft Visual Studio. Se você fizer isso, seu arquivo de projeto do Visual Studio será atualizado automaticamente para incluir *Microsoft. XAudio2. Redist. targets*. O arquivo *. targets* adiciona a pasta include com os arquivos de cabeçalho para o XAudio2 à sua coleção de caminhos de inclusão de projeto. O arquivo *. targets* também fará seu. DLL ou. EXE link com XAUDIO2REDIST. LIB e XAPOBASEREDIST. LIB.
+A maneira mais fácil de instalar o pacote NuGet é usar o [Gerenciador de Pacotes NuGet](/nuget/consume-packages/install-use-packages-visual-studio) Microsoft Visual Studio. Se você fizer isso, o Visual Studio de projeto será atualizado automaticamente para incluir *Microsoft.XAudio2.Redist.targets.* O *arquivo .targets* adiciona a pasta Include com os arquivos de header do XAudio2 à sua coleção de caminhos de inclusão de projeto. O *arquivo .targets* também fará com que seu .DLL ou .EXE link com XAUDIO2REDIST. LIB e XAPOBASEREDIST. Lib.
 
-A biblioteca XAPOBASEREDIST. A LIB só é necessária se você pretende impement um XAPO (objeto de processamento de XAudio) personalizado e pode removê-lo do *Microsoft. XAudio2. Redist. targets* se ele não for usado.
+A biblioteca XAPOBASEREDIST. LIB só será necessário se você pretende empalar um objeto de processamento XAudio personalizado (XAPO) e você pode removê-lo do *Microsoft.XAudio2.Redist.targets* se ele não for usado.
 
-Você também pode usar outras ferramentas para extrair o conteúdo do pacote NuGet, ou até mesmo renomear a extensão de arquivo para. zip e extrair os arquivos com qualquer ferramenta de extrator de ZIP.
+Você também pode usar outras ferramentas para extrair o conteúdo do pacote NuGet ou até mesmo renomear a extensão de arquivo para .zip e extrair os arquivos com qualquer ferramenta de extrator zip.
 
-> Também há uma ``xaudio2redist`` porta disponível para o [Gerenciador de pacotes do vc + +](https://github.com/microsoft/vcpkg).
+> Também há uma ``xaudio2redist`` porta disponível para o [vc++ Gerenciador de Pacotes](https://github.com/microsoft/vcpkg).
 
 ## <a name="compiling-your-app"></a>Compilando seu aplicativo
 
-### <a name="choosing-which-headers-to-include"></a>Escolhendo quais cabeçalhos incluir
+### <a name="choosing-which-headers-to-include"></a>Escolhendo quais headers incluir
 
-O pacote NuGet XAudio 2,9 inclui os mesmos arquivos de cabeçalho XAudio2 que estão incluídos no SDK do Windows 10. No entanto, os arquivos de cabeçalho tiveram alguns ajustes para eles para garantir que você possa usá-los, tendo como alvo explicitamente todas as [plataformas com suporte](#supported-platforms), incluindo versões mais antigas do Windows.
+O pacote NuGet XAudio 2.9 inclui os mesmos arquivos de header XAudio2 incluídos no SDK do Windows 10. No entanto, os arquivos de header tiveram alguns ajustes para garantir que você possa usá-los ao direcionar explicitamente todas as [plataformas](#supported-platforms)com suporte, incluindo versões mais antigas do Windows.
 
-Se você [instalar o pacote NuGet](#installing-the-nuget-package) usando o Gerenciador de pacotes nuget no Microsoft Visual Studio, o caminho para os arquivos de cabeçalho será colocado na frente do caminho para os arquivos de cabeçalho SDK do Windows. Isso significa que, se o código em seu projeto incluir o XAUDIO2. H, ele selecionará o cabeçalho de plataforma cruzada do pacote NuGet. Esse é normalmente o comportamento desejado.
+Se você instalar o pacote [NuGet](#installing-the-nuget-package) usando o Gerenciador de Pacotes NuGet no Microsoft Visual Studio, o caminho para os arquivos de header será colocado na frente do caminho para os arquivos de SDK do Windows de SDK do Windows. Isso significa que se o código em seu projeto incluir o XAUDIO2. O header H, ele escolherá o header de plataforma cruzada do pacote NuGet. Normalmente, esse é o comportamento desejado.
 
-Você deve ter cuidado ao adicionar o caminho para os cabeçalhos de inclusão manualmente ao projeto, pois especificá-los na ordem errada pode causar o XAudio2 específico da versão do sistema operacional [. H](/windows/win32/api/xaudio2/) a ser incluída na SDK do Windows, em vez da versão de plataforma cruzada de XAudio2. H.
+Você deve ter cuidado se adicionar o caminho aos headers de inclusão manualmente ao projeto, pois especificá-los na ordem errada pode causar o XAUDIO2 específico da versão do sistema [operacional. H](/windows/win32/api/xaudio2/) a ser incluído do SDK do Windows, em vez da versão de plataforma cruzada do XAUDIO2.H.
 
-Para tornar a inclusão de cabeçalhos menos propenso a erros, o pacote NuGet contém uma versão de cada cabeçalho com "Redist" acrescentado a ele. Por exemplo, além de XAUDIO2. H, o pacote NuGet também inclui XAUDIO2REDIST. H. Se você preferir, seu código pode incluir diretamente XAUDIO2REDIST. H para eliminar qualquer ambiguidade sobre qual arquivo de cabeçalho está sendo usado. Ao incluir-Redist. A versão H de um arquivo de cabeçalho, a ordem na qual os diretórios de arquivos de inclusão são listados no arquivo de projeto não importa.
+Para tornar a inclusão de headers menos propensa a erros, o pacote NuGet contém uma versão de cada header com "REDIST" anexado a ele. Por exemplo, além de XAUDIO2. H, o pacote NuGet também inclui XAUDIO2REDIST.H. Se preferir, seu código poderá incluir diretamente XAUDIO2REDIST. H para eliminar qualquer ambiguidade sobre qual arquivo de header está sendo usado. Ao incluir o -REDIST. A versão H de um arquivo de header, a ordem na qual os diretórios de arquivos de inclusão são listados no arquivo de projeto, não importa.
 
-Observe que, se seu aplicativo também estiver sendo compilado para o Xbox One, você deverá continuar a incluir XAUDIO2. H ao compilar para o Xbox One, como algumas APIs específicas do Xbox One são excluídas de XAUDIO2REDIST. H. Este pacote NuGet não se destina ao Xbox One.
+Observe que, se seu aplicativo também estiver sendo compilado para Xbox One, você deverá continuar a incluir o XAUDIO2. H ao compilar para Xbox One, pois algumas APIs específicas Xbox One são excluídas de XAUDIO2REDIST.H. Este pacote NuGet não se destina a Xbox One.
 
 ### <a name="loading-the-dll"></a>Carregando a DLL
 
-Recomendamos que você vincule seu aplicativo ao XAUDIO2REDIST. LIB e instale \_ o XAUDIO29REDIST.DLL na mesma pasta que o executável do seu aplicativo. Isso fará com que \_ o XAUDIO29REDIST.DLL seja carregado assim que seu executável for iniciado. No entanto, se preferir, você pode usar [**LoadLibraryEx**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para carregar o XAudio2 \_9REDIST.DLL sob demanda. Essa é uma boa solução se seu aplicativo nem sempre precisa usar as APIs XAudio2. Mas, se você fizer isso, deverá manter o XAUDIO2 \_9REDIST.DLL carregado até que o aplicativo saia, pois tentar descarregar a dll poderá causar uma falha se um thread em segundo plano ainda estiver executando o código na dll.
+Recomendamos que você vincule seu aplicativo ao XAUDIO2REDIST. LIB e instale o XAUDIO2 \_9REDIST.DLL na mesma pasta que o executável do aplicativo. Isso fará com que o9REDIST.DLL XAUDIO2 \_ seja carregado assim que o executável for lançado. No entanto, se preferir, você poderá usar [**LoadLibraryEx**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para carregar9REDIST.DLL XAUDIO2 \_ sob demanda. Essa é uma boa solução se seu aplicativo nem sempre precisa usar as APIs XAudio2. Mas se você fizer isso, deverá manter o XAUDIO29REDIST.DLL carregado até que o aplicativo saia, pois tentar descarregar a DLL poderá causar uma falha se um thread em segundo plano ainda estiver executando o código na \_ DLL.
 
-Ao contrário do XAudio 2,7 mais antigo, não é possível usar CoCreateInstance para carregar a DLL.
+Ao contrário do XAudio 2.7 mais antigo, não é possível usar CoCreateInstance para carregar a DLL.
 
-### <a name="verifying-the-dll-signature"></a>Verificando a assinatura da DLL
+### <a name="verifying-the-dll-signature"></a>Verificando a assinatura de DLL
 
-O \_ binário XAUDIO29REDIST.DLL é assinado pela Microsoft usando uma assinatura SHA-2. Qualquer código que tente validar a assinatura, por exemplo, os módulos antienganar para jogos,, portanto, precisa dar suporte ao SHA-2. Observe que o Windows 7 SP1 originalmente não dava suporte ao SHA-2 e requer uma atualização para adicionar essa funcionalidade. A atualização está disponível como [KB4474419](https://support.microsoft.com/help/4474419/sha-2-code-signing-support-update).
+O binário de9REDIST.DLL XAUDIO2 \_ é assinado pela Microsoft usando uma assinatura SHA-2. Qualquer código que tenta validar a assinatura, por exemplo, módulos anti-cheat para jogos, portanto, precisa dar suporte ao SHA-2. Observe que o Windows 7 SP1 não era originalmente suportado sha-2 e requer uma atualização para adicionar essa funcionalidade. A atualização está disponível como [KB4474419](https://support.microsoft.com/help/4474419/sha-2-code-signing-support-update).
 
 ## <a name="testing"></a>Testando
 
-### <a name="spatial-sound-in-newer-versions-of-windows-10"></a>Som espacial nas versões mais recentes do Windows 10
+### <a name="spatial-sound-in-newer-versions-of-windows-10"></a>Som espacial em versões mais recentes do Windows 10
 
-A partir da atualização do Windows 10 1903, o XAudio 2,9 usa automaticamente o [Surround Sound virtual](#spatial-sound-and-virtual-surround), se determinadas condições forem satisfeitas. É recomendável testar o jogo que gera som multicanal no Windows 10 1903 (ou mais recente) para verificar se o jogo soa como esperado.
+A partir da atualização Windows 10 1903, o XAudio 2.9 usa automaticamente o som [de surround virtual](#spatial-sound-and-virtual-surround), se determinadas condições são atendidas. É recomendável testar o jogo que gera som de vários canais no Windows 10 1903 (ou mais novo) para verificar se o jogo parece o esperado.
 
-#### <a name="enabling-spatial-sound"></a>Habilitando som espacial
+#### <a name="enabling-spatial-sound"></a>Habilitando o som espacial
 
-O usuário pode habilitar um formato de som espacial clicando com o botão direito do mouse no ícone do palestrante na bandeja do sistema do Windows. 
+O usuário pode habilitar um formato de som espacial clicando com o botão direito do mouse no ícone do locutor na bandeja do sistema Windows. 
 
-XAudio 2,9 usará apenas o formato de som espacial selecionado do usuário se o processo que está usando a API XAudio2 for reconhecido como um jogo pela barra de jogos do Windows. Durante o desenvolvimento, é possível que o processo ainda não seja reconhecido como um jogo pela barra de jogos. Para alterar isso, use o atalho do teclado Win + G para abrir a barra de jogos enquanto o jogo estiver em execução. Em seguida, clique no ícone "configurações" e marque a caixa de seleção que diz "Lembre-se de que se trata de um jogo".
+O XAudio 2.9 só usará o formato de som espacial selecionado pelo usuário se o processo que está usando a API XAudio2 for reconhecido como um jogo pelo Windows Game Bar. Durante o desenvolvimento, é possível que o processo ainda não seja reconhecido como um jogo pelo Game Bar. Para alterar isso, use o atalho do teclado Win+G para abrir o Game Bar enquanto o jogo está em execução. Em seguida, clique no ícone "Configurações" e marque a caixa de seleção que diz " Lembre-se de que este é um jogo".
 
-#### <a name="opting-out-from-spatial-sound"></a>Recusando do som espacial
+#### <a name="opting-out-from-spatial-sound"></a>Opting out from spatial sound
 
-Há uma maneira de recusar a XAudio2 de usar o codificador de som espacial especificando determinados valores para o parâmetro [**AUDIO_STREAM_CATEGORY**](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category) em [**IXAudio2:: CreateMasteringVoice**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-createmasteringvoice). 
+Há uma maneira de não fazer com que XAudio2 use o codificador de som espacial especificando determinados valores para o parâmetro [**AUDIO_STREAM_CATEGORY**](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category) em [**IXAudio2::CreateMasteringVoice.**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-createmasteringvoice) 
 
 O som espacial está habilitado para estas categorias:
 
@@ -94,24 +96,24 @@ O som espacial não será habilitado se qualquer uma das seguintes categorias fo
 
 ### <a name="error-handling"></a>Tratamento de erros
 
-É importante testar que o jogo pode lidar com uma alteração no dispositivo de áudio, por exemplo, quando os fones de ouvido estão conectados ou desconectados. Isso deve ser testado com fones de ouvido que dão suporte apenas à taxa de amostragem de 44,1 kHz. Muitos fones de ouvido USB low-end e Headsets Bluetooth só dão suporte a 44,1 kHz. A transição entre a taxa de amostragem de 48 kHz e a taxa de amostragem de 44,1 kHz pode causar um erro mesmo quando o recurso de [ponto de extremidade de áudio virtual](#virtual-audio-endpoint) é usado. O erro não ocorrerá se os fones de ouvido também suportarem 48 kHz. Observe que o recurso ponto de extremidade de áudio virtual não está disponível no Windows 7 SP1.
+É importante testar se o jogo pode lidar com uma alteração no dispositivo de áudio, por exemplo, quando os fones de ouvido estão conectados ou desconectados. Isso deve ser testado com fones de ouvido que só suportam taxa de amostragem de 44,1 kHz. Muitos fones de ouvido USB de baixo nível e headsets Bluetooth só são compatíveis com 44,1 kHz. A transição entre a taxa de amostragem de 48 kHz e a taxa de amostragem de 44,1 kHz pode causar um erro mesmo quando o recurso de ponto de extremidade de áudio [virtual](#virtual-audio-endpoint) é usado. O erro não ocorrerá se os fones de ouvido também deem suporte a 48 kHz. Observe que o recurso de ponto de extremidade de áudio virtual não está disponível no Windows 7 SP1.
 
-O código de erro retornado por XAudio 2,9 quando não é possível recuperar automaticamente de uma alteração no ponto de extremidade de áudio é o [ \_ dispositivo XAudio2 E \_ \_ invalidado](xaudio2-error-codes.md). No entanto, recomendamos que os aplicativos não codifiquem uma dependência no código de erro com um valor específico.
+O código de erro retornado pelo XAudio 2.9 quando ele não pode se recuperar automaticamente de uma alteração no ponto de extremidade de áudio é [XAUDIO2 \_ E \_ DEVICE \_ INVALIDATED](xaudio2-error-codes.md). No entanto, recomendamos que os aplicativos não codificam uma dependência no código de erro com um valor específico.
 
-Para ser notificado do erro, o aplicativo deve implementar a interface [**IXAudio2EngineCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2enginecallback) e fornecer um ponteiro para essa interface invocando o método [**IXAudio2:: RegisterForCallbacks**](xaudio2-callbacks.md) . A implementação do aplicativo do [**IXAudio2EngineCallback:: OnCriticalError**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2enginecallback-oncriticalerror) será invocada pela API do XAudio2 se ocorrer um erro durante a reprodução.
+Para ser notificado sobre o erro, o aplicativo deve implementar a interface [**IXAudio2EngineCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2enginecallback) e fornecer um ponteiro para essa interface invocando o método [**IXAudio2::RegisterForCallbacks.**](xaudio2-callbacks.md) A implementação do aplicativo [**de IXAudio2EngineCallback::OnCriticalError**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2enginecallback-oncriticalerror) será invocada pela API XAudio2 se ocorrer um erro durante a reprodução.
 
-Observe que [**IXAudio2EngineCallback:: OnCriticalError**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2enginecallback-oncriticalerror) não será necessariamente invocado se o pipeline de áudio estiver em pausa. Por exemplo, se o usuário minimizar o aplicativo ou se o aplicativo for suspenso por qualquer motivo, a reprodução de áudio poderá ser pausada. Se a alteração no dispositivo de áudio ocorrer durante esse tempo, o erro será retornado somente quando o aplicativo invocar [**IXAudio2:: StartEngine**](/windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2-startengine) e/ou invoca [**IXAudio2SourceVoice:: Start**](/windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2sourcevoice-start). Se a reprodução puder ser pausada com seu aplicativo, você deverá testar a alteração do dispositivo de áudio enquanto a reprodução estiver em pausa, para verificar se o aplicativo ainda pode se recuperar dessa situação.
+Observe que [**IXAudio2EngineCallback::OnCriticalError**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2enginecallback-oncriticalerror) não será necessariamente invocado se o pipeline de áudio estiver em pausa. Por exemplo, se o usuário minimizar o aplicativo ou o aplicativo for suspenso por qualquer motivo, a reprodução de áudio poderá ser pausada. Se a alteração no dispositivo de áudio ocorrer durante esse tempo, o erro só será retornado quando o aplicativo invocar [**IXAudio2::StartEngine**](/windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2-startengine) e/ou invocar [**IXAudio2SourceVoice::Start**](/windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2sourcevoice-start). Se a reprodução puder ser pausada com seu aplicativo, você deverá testar a alteração do dispositivo de áudio enquanto a reprodução está em pausa, para verificar se o aplicativo ainda pode se recuperar dessa situação.
 
-## <a name="xaudio-29-api-differences-compared-to-xaudio-27"></a>Diferenças de API do XAudio 2,9 em comparação com XAudio 2,7
+## <a name="xaudio-29-api-differences-compared-to-xaudio-27"></a>Diferenças de API do XAudio 2.9 em comparação com o XAudio 2.7
 
-Esta seção fornece um resumo de algumas das diferenças de API entre XAudio 2,7 e a versão redistribuível do XAudio 2,9.
+Esta seção fornece um resumo de algumas das diferenças de API entre o XAudio 2.7 e a versão redistribuível do XAudio 2.9.
 
 ### <a name="supported-formats"></a>Formatos com suporte
 
-O XAudio 2,9 dá suporte a esses formatos de entrada no PC:
+O XAudio 2.9 dá suporte a esses formatos de entrada no PC:
 
-* PCM de 16 bits linear
-* PCM de float de 32 bits linear
+* PCM linear de 16 bits
+* PCM Float linear de 32 bits
 * ADPCM de 16 bits
 * xWMA
 

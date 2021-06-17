@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Executando o compilador MOF em um arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad1605544e05f59670f9e6fd73fcd8c01862b46c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 77f62834944e995c3e7f3763c460d72f9f70aa66
+ms.sourcegitcommit: 7eadd92b1da5eb4eab7d516a5a768e7f7fc02d4c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165213"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "112230233"
 ---
 # <a name="running-the-mof-compiler-on-a-file"></a>Executando o compilador MOF em um arquivo
 
@@ -22,7 +22,7 @@ Até que você execute o compilador MOF, [**Mofcomp.exe**](mofcomp.md), um prove
 
 1.  Chame o compilador MOF na linha de comando, usando a sintaxe a seguir.
 
-    **Mofcomp** *MOFfile * * *. mof**
+    **Mofcomp** _MOFfile_**. mof**
 
     O compilador MOF dá suporte a uma variedade de opções para controlar situações de processamento especiais. Todas as opções são opcionais e qualquer combinação de opções é permitida. No entanto, não faz sentido usar alguns dos comutadores em combinação com outros. Por exemplo, para combinar as opções **-Class: UpdateOnly** e **-Class: createonly** , os resultados do compilador não executam nenhuma ação.
 

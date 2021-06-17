@@ -1,15 +1,15 @@
 ---
-description: Aparência do dispositivo LE Bluetooth.
+description: Saiba mais sobre a aparência do dispositivo LE Bluetooth. Esta página de referência descreve a propriedade System. Devices. AEP. Bluetooth. Le. Appearance. Category.
 ms.assetid: f4c65c7b-9896-4b6a-9ee7-6e4869f56b39
 title: System. Devices. AEP. Bluetooth. Le. Appearance. Category
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e812d38a119fdb1fa2e034e04dfc25cc6f7dc189
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 500688e71ece8f9e9e06b5f0aaef9e4d62dce53e
+ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828188"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112262168"
 ---
 # <a name="systemdevicesaepbluetoothleappearancecategory"></a>System. Devices. AEP. Bluetooth. Le. Appearance. Category
 

@@ -1,15 +1,15 @@
 ---
-description: GUID do serviço Bluetooth.
+description: Saiba mais sobre o GUID do serviço Bluetooth. Esta página de referência descreve a propriedade System. Devices. AepService. Bluetooth. perguid.
 ms.assetid: b623c597-3cf3-4c46-a1df-3a15425a41c6
 title: System. Devices. AepService. Bluetooth. perguid
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e167a626e6cdf03943a2c6c61b912fdea03fe1ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b1f71d58b9661bdbbb7a531d6ce5d1364f79e19a
+ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011195"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112262558"
 ---
 # <a name="systemdevicesaepservicebluetoothserviceguid"></a>System. Devices. AepService. Bluetooth. perguid
 

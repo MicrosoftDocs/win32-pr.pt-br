@@ -1,15 +1,15 @@
 ---
-description: Assim como acontece com todas as operações importantes no VSS, os backups incrementais e diferenciais exigem uma cooperação próxima entre os solicitantes e os gravadores.
+description: Saiba mais sobre a função de gravador em backups incrementais e diferenciais, que exigem uma cooperação próxima entre solicitantes e gravadores.
 ms.assetid: 3cf5dd1f-dc58-42bc-925f-fee7d34053c5
 title: Função de gravador no backup de repositórios complexos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80864256b9a19c25a2f0dce0d0c929ed19fd7269
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30e34952cc4a2184d2f9abcc43283d24f64bdcc3
+ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090430"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112262148"
 ---
 # <a name="writer-role-in-backing-up-complex-stores"></a>Função de gravador no backup de repositórios complexos
 

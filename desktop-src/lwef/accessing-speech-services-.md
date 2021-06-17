@@ -1,15 +1,15 @@
 ---
 title: Acessando serviços de fala (controle do Microsoft Agent)
-description: Acessando serviços de fala
+description: Saiba mais sobre como acessar os serviços de fala com o controle do Microsoft Agent. O Microsoft Agent foi preterido a partir do Windows 7.
 ms.assetid: c6c10f2a-a433-4a8e-a069-48e3c2032fb8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83459cfd7ee478fca7d2cf2d25c4c1d590d8ed54
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 035bde03d18b77ce43c47375f2075bba02416c39
+ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103644189"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112262708"
 ---
 # <a name="accessing-speech-services-microsoft-agent-control"></a>Acessando serviços de fala (controle do Microsoft Agent)
 

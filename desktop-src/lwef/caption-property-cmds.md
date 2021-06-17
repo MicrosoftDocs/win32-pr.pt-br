@@ -1,15 +1,15 @@
 ---
 title: Propriedade Caption (objeto de coleção de comandos)
-description: Propriedade Caption
+description: Saiba mais sobre a propriedade Caption do objeto de coleção de comandos. O Microsoft Agent foi preterido a partir do Windows 7.
 ms.assetid: 7182c21e-1ff0-4dce-9571-534b7576c082
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2010fe051568f71c4940b4bcf964f257ba9f52ca
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: b34ae7bd6da1fc6cc60f882cc231af5730a1077e
+ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104085067"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112262048"
 ---
 # <a name="caption-property-commands-collection-object"></a>Propriedade Caption (objeto de coleção de comandos)
 
