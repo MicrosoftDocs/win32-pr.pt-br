@@ -1,15 +1,15 @@
 ---
 title: Propriedade Visible (objeto Balloon)
-description: Propriedade Visible
+description: Saiba mais sobre a propriedade Visible do objeto Balloon, que retorna ou define a configuração visível para o balão de palavras do caractere especificado.
 ms.assetid: cbda7f69-889a-45a0-9549-d27eddfcec57
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba58993a3328a4c99dbe7da43b43460f6048bf57
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 93ac587fa649f2a8ccb5ea83ddc077050a8548d2
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104008669"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396321"
 ---
 # <a name="visible-property-balloon-object"></a>Propriedade Visible (objeto Balloon)
 
