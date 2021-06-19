@@ -1,15 +1,15 @@
 ---
 title: Propriedade Enabled (objeto Command)
-description: Propriedade Enabled
+description: Saiba mais sobre a propriedade de objeto Comando Habilitado. O Microsoft Agent foi preterido a partir do Windows 7.
 ms.assetid: d9dcbdf0-ba35-4ebd-b6f2-f3c8bdfc0431
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5999e396f61fbcc820bc1cec7deb0c603eb948e4
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 1dc0c65d5cfa0438fe9d61eac0c59e916731e057
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105790492"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407329"
 ---
 # <a name="enabled-property-command-object"></a>Propriedade Enabled (objeto Command)
 
@@ -17,23 +17,23 @@ ms.locfileid: "105790492"
 
 <dl> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Ndescrição**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descrição**
 </dt> <dd>
 
-Retorna ou define se o **comando** está habilitado no menu pop-up do caractere especificado.
+Retorna ou define se **o Comando** está habilitado no menu pop-up do caractere especificado.
 
 </dd> <dt>
 
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-*Agente ***. Caracteres ("**_characterid_*_"). Comandos ("_*_Name_*_")._ *  \[  =  *Booliano* habilitado\]
+*agent***. Caracteres ("**_CharacterID_*_"). Commands("_*_name_*_"). Booliana_ *  \[  =  *habilitada*\]
 
 
 
 | Parte      | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *booleano* | Uma expressão booliana que especifica se o **comando** está habilitado.<br/> <dl> <dt><span id="True"></span><span id="true"></span><span id="TRUE"></span>**True**</dt> <dd> O **comando** está habilitado.<br/> </dd> <dt><span id="False"></span><span id="false"></span><span id="FALSE"></span>**For**</dt> <dd> O **comando** está desabilitado.<br/> </dd> </dl> |
+| *booleano* | Uma expressão booliana que especifica se **o Comando** está habilitado.<br/> <dl> <dt><span id="True"></span><span id="true"></span><span id="TRUE"></span>**Verdadeiro**</dt> <dd> O **Comando** está habilitado.<br/> </dd> <dt><span id="False"></span><span id="false"></span><span id="FALSE"></span>**Falso**</dt> <dd> O **Comando** está desabilitado.<br/> </dd> </dl> |
 
 
 
@@ -43,7 +43,7 @@ Retorna ou define se o **comando** está habilitado no menu pop-up do caractere 
 
 ## <a name="remarks"></a>Comentários
 
-Se a propriedade [**Enabled**](enabled-property.md) for definida como **true**, a legenda dos objetos de [**comando**](/windows/desktop/lwef/the-command-object) aparecerá como texto normal no menu pop-up do caractere quando o aplicativo cliente for Input-active. Se a propriedade **Enabled** for **false**, a legenda aparecerá como texto indisponível (desabilitado). Um **comando** desabilitado também não está acessível para entrada de voz.
+Se a [**propriedade Habilitado**](enabled-property.md) estiver definida [](/windows/desktop/lwef/the-command-object) como **True**, a legenda dos objetos Command aparecerá como texto normal no menu pop-up do caractere quando o aplicativo cliente estiver ativo de entrada. Se a **propriedade Enabled** for **False**, a legenda aparecerá como texto indisponível (desabilitado). Um Comando **desabilitado** também não está acessível para entrada de voz.
 
  
 

@@ -1,15 +1,15 @@
 ---
-description: O separador de grupo de propriedades usado em listas de propriedades para separar arquivos de áudio de outros tipos. Não use essa propriedade para obter ou definir valores. Ele é destinado apenas como um marcador.
+description: Leia sobre a propriedade System. PROPER. Advanced. Não use essa propriedade para obter ou definir valores. Ele é destinado apenas como um marcador.
 ms.assetid: af962d0d-5f20-4cc4-b28d-986f16689f23
 title: System. Propproperty. avançado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30c6b48fbabb26cefac19adfad6c0e0bb6dfdc59
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b6ec22421cb63af7048442bd4d7a99e2a39a7ea
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171559"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112403879"
 ---
 # <a name="systempropgroupadvanced"></a>System. Propproperty. avançado
 

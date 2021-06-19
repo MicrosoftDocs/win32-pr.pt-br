@@ -1,15 +1,15 @@
 ---
-description: Log de cliente
+description: Saiba mais sobre o log do cliente para Microsoft Media Foundation. O registro em log fornece uma maneira para o servidor de mídia acompanhar a atividade dos clientes que se conectam a ele.
 ms.assetid: f91b48ae-3989-4c1d-929c-8ab28d7c8177
 title: Log de cliente (Microsoft Media Foundation)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb3cb03c8026e91acd567358e7004211b7fdde4d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d994531ff16466054ca0645a35082a4845e4aa4
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164215"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409929"
 ---
 # <a name="client-logging-microsoft-media-foundation"></a>Log de cliente (Microsoft Media Foundation)
 
@@ -63,7 +63,7 @@ A tabela a seguir descreve os campos de log e as propriedades correspondentes qu
 </tr>
 <tr class="odd">
 <td>c-hostexe</td>
-<td>Para entradas de log do Player, o programa de host (. exe) que foi executado. Por exemplo, uma página da Web em um navegador, um miniaplicativo do Microsoft Visual Basic ou um player autônomo. O cliente pode enviar essas informações para o servidor na propriedade <a href="mfnetsource-hostexe-property.md"><strong>MFNETSOURCE_HOSTEXE</strong></a> .<br/> O cliente envia essas informações ao servidor no final da conexão.<br/> Valores de exemplo:<br/>
+<td>Para entradas de log do Player, o programa de host (.exe) que foi executado. Por exemplo, uma página da Web em um navegador, um miniaplicativo do Microsoft Visual Basic ou um player autônomo. O cliente pode enviar essas informações para o servidor na propriedade <a href="mfnetsource-hostexe-property.md"><strong>MFNETSOURCE_HOSTEXE</strong></a> .<br/> O cliente envia essas informações ao servidor no final da conexão.<br/> Valores de amostra:<br/>
 <ul>
 <li>&quot;iexplore.exe&quot;</li>
 <li>&quot;myplayer.exe&quot;</li>
@@ -71,7 +71,7 @@ A tabela a seguir descreve os campos de log e as propriedades correspondentes qu
 </tr>
 <tr class="even">
 <td>c-hostexever</td>
-<td>Número de versão do programa de host (. exe). O cliente pode enviar essas informações para o servidor na propriedade <a href="mfnetsource-hostversion-property.md"><strong>MFNETSOURCE_HOSTVERSION</strong></a> .<br/> O cliente envia essas informações ao servidor no final da conexão.<br/></td>
+<td>Número de versão do .exe (programa de host). O cliente pode enviar essas informações para o servidor na propriedade <a href="mfnetsource-hostversion-property.md"><strong>MFNETSOURCE_HOSTVERSION</strong></a> .<br/> O cliente envia essas informações ao servidor no final da conexão.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -185,10 +185,10 @@ A lista a seguir descreve alguns dos identificadores de estatísticas de rede de
 | **MFNETSOURCE \_ RECVPACKETS \_ ID**           | Número de pacotes recebidos do servidor o valor não inclui pacotes TCP ou UDP.                                                                                                                                  |
 | **MFNETSOURCE \_ RECOVEREDBYECCPACKETS \_ ID** | Pacotes perdidos na rede que foram reparados e recuperados na camada do cliente. Esse valor não inclui pacotes TCP ou UDP.                                                                                          |
 | **MFNETSOURCE \_ RESENDSREQUESTED \_ ID**      | O número de solicitações feitas pelo cliente para receber novos pacotes. Esse valor não inclui pacotes TCP ou UDP.                                                                                                          |
-| **MFNETSOURCE \_ RECOVEREDPACKETS \_ ID**      | Número de pacotes recuperados porque eles foram reenviados por meio de UDP. Esse valor não inclui pacotes TCP ou UDP. Este campo contém um zero, a menos que o cliente esteja usando o reenvio de UDP.                                        |
-| **MFNETSOURCE \_ BUFFERPROGRESS \_ ID**        | A porcentagem do buffer de reprodução preenchida durante o armazenamento em buffer.                                                                                                                                                              |
-| **\_ID do protocolo MFNETSOURCE \_**              | Protocolo usado para acessar o fluxo. Isso pode ser diferente do protocolo solicitado pelo cliente.                                                                                                                             |
-| **\_ID de transporte MFNETSOURCE \_**             | Protocolo de transporte usado para entregar o fluxo. Deve ser UDP ou TCP.                                                                                                                                             |
+| **ID DE MFNETSOURCE \_ RECOVEREDPACKETS \_**      | Número de pacotes recuperados porque foram ressabiados por meio do UDP. Esse valor não inclui pacotes TCP ou UDP. Esse campo contém um zero, a menos que o cliente esteja usando o reend UDP.                                        |
+| **MFNETSOURCE \_ BUFFERPROGRESS \_ ID**        | O percentual do buffer de reprodução preenchido durante o buffer.                                                                                                                                                              |
+| **ID DO PROTOCOLO MFNETSOURCE \_ \_**              | Protocolo usado para acessar o fluxo. Isso pode ser diferente do protocolo solicitado pelo cliente.                                                                                                                             |
+| **ID DE TRANSPORTE MFNETSOURCE \_ \_**             | Protocolo de transporte usado para entregar o fluxo. Isso deve ser UDP ou TCP.                                                                                                                                             |
 
 
 
@@ -198,7 +198,7 @@ A lista a seguir descreve alguns dos identificadores de estatísticas de rede de
 
 <dl> <dt>
 
-[Recursos de origem da rede](network-source-features.md)
+[Recursos de origem de rede](network-source-features.md)
 </dt> <dt>
 
 [Rede em Media Foundation](networking-in-media-foundation.md)

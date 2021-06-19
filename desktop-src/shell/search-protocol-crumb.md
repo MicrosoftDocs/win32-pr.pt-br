@@ -1,5 +1,5 @@
 ---
-description: O argumento de trilha dá suporte a instruções de AQS (sintaxe de consulta avançada completa) e é especialmente útil como meio de controlar o escopo de uma pesquisa.
+description: Entenda como usar o argumento de trilha na interface do usuário do shell do Windows como um meio de controlar o escopo de uma pesquisa.
 title: Argumento de trilha (o Shell do Windows)
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 7d38fff38c14a6b537bde068b92e19cedf53d5d4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 543bc90647bbe1daed1a3a6d1f7bc54a4713a8ed
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968062"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112403599"
 ---
 # <a name="crumb-argument-the-windows-shell"></a>Argumento de trilha (o Shell do Windows)
 
@@ -124,7 +124,7 @@ A tabela a seguir lista os valores de CSIDl. Consulte [**ShellSpecialFolderConst
 
 
 
-| Name                        | Pesquisar Cadeia de caracteres                   | Description                                                                                                                                                                            |
+| Name                        | Pesquisar Cadeia de caracteres                   | Descrição                                                                                                                                                                            |
 |-----------------------------|---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | FERRAMENTAS ADMINISTRATIVAS        | % 20TOOLS ADMINISTRATIVO          | Diretório do sistema de arquivos que serve como um repositório para ferramentas administrativas.                                                                                                            |
 | APPDATA                     | APPDATA                         | Diretório do sistema de arquivos que serve como um repositório comum para dados específicos do aplicativo. Um caminho típico é C: \\ Documents and Settings \\ username \\ Application Data.                      |
@@ -144,7 +144,7 @@ A tabela a seguir lista os valores de CSIDl. Consulte [**ShellSpecialFolderConst
 | CONNECTIONSFOLDER           | CONNECTIONSFOLDER               | pasta que contém dados de conexão.                                                                                                                                                     |
 | PASTA DO PAINEL DE CONTROLE        | CONTROLPANELFOLDER              | Pasta virtual que contém ícones para os aplicativos do painel de controle.                                                                                                                    |
 | ARAR                     | ARAR                         | Diretório do sistema de arquivos que serve como um repositório comum para cookies da Internet. Um caminho típico é C: \\ Documents and Settings \\ nome de usuário \\ cookies.                                        |
-| PLACA                     | PLACA                         | Área de trabalho do Microsoft Windows. A pasta virtual que é a raiz do namespace.                                                                                                           |
+| DESKTOP                     | DESKTOP                         | Área de trabalho do Microsoft Windows. A pasta virtual que é a raiz do namespace.                                                                                                           |
 | FAVORITOS                   | FAVORITOS                       | Diretório do sistema de arquivos que serve como um repositório comum para os itens favoritos do usuário. Um caminho típico é C: \\ Documents and Settings \\ username \\ Favorites.                             |
 | TrueType                       | TrueType                           | Pasta virtual que contém as fontes instaladas. Um caminho típico é C: \\ Windows \\ fonts.                                                                                                       |
 | HISTÓRICO                     | HISTÓRICO                         | Diretório do sistema de arquivos que serve como um repositório comum para itens de histórico da Internet.                                                                                                   |
@@ -164,31 +164,31 @@ A tabela a seguir lista os valores de CSIDl. Consulte [**ShellSpecialFolderConst
 | PROGRAMAS                    | PROGRAMAS                        | Diretório do sistema de arquivos que contém os grupos de programas do usuário (que também são diretórios do sistema de arquivos). Um caminho típico é C: \\ Documents and Settings \\ nome de usuário \\ menu iniciar \\ programas.  |
 | PERFIL                     | PERFIL                         | Pasta de perfil do usuário.                                                                                                                                                                 |
 | ARQUIVOS DE PROGRAMAS               | PROGRAMA% 20FILES                 | Pasta arquivos de programas. Um caminho típico é C: \\ Program Files.                                                                                                                             |
-| ARQUIVOS DE PROGRAMAS COMUNS        | PROGRAMFILESCOMMON              | Pasta arquivos de programas comuns a todos os usuários.                                                                                                                                              |
-| ARQUIVOS de programas comuns x86    | PROGRAMFILESCOMMONX86           | Pasta arquivos de programas comuns a todos os usuários em computadores x86.                                                                                                                              |
-| FILESx86 do programa            | PROGRAMFILESx86                 | Pasta arquivos de programas em computadores x86.                                                                                                                                                  |
-| VERSÕES                      | VERSÕES                          | Diretório do sistema de arquivos que contém os documentos usados mais recentemente do usuário. Um caminho típico é C: \\ Documents and Settings \\ username \\ recente.                                           |
-| PASTA DA LIXEIRA          | RECYCLEBINFOLDER                | Pasta virtual que contém os objetos na lixeira do usuário.                                                                                                                       |
-| RESOURCEDIR                 | RESOURCEDIR                     | O diretório de recursos.                                                                                                                                                                |
-| Enviar                      | Enviar                          | Diretório do sistema de arquivos que contém itens de menu Enviar para. Um caminho típico é C: \\ Documents and Settings \\ nome_de_usuário \\ SendTo.                                                                |
-| MENU INICIAR                  | INICIAR% 20MENU                    | Diretório do sistema de arquivos que contém os itens do menu iniciar. Um caminho típico é C: \\ Documents and Settings \\ nome_de_usuário \\ Start Menu.                                                                 |
-| INICIALIZAÇÃO                     | INICIALIZAÇÃO                         | Diretório do sistema de arquivos que corresponde ao grupo de programas de inicialização do usuário.                                                                                                            |
-| SYSTEMx86                   | SYSTEMx86                       | Pasta do sistema em computadores x86.                                                                                                                                                         |
+| ARQUIVOS DE PROGRAMAS COMUNS        | PROGRAMFILESCOMMON              | Pasta Arquivos de Programas comum a todos os usuários.                                                                                                                                              |
+| ARQUIVOS DE PROGRAMAS COMUNS x86    | PROGRAMFILESCOMMONX86           | Pasta Arquivos de Programas comum a todos os usuários em máquinas x86.                                                                                                                              |
+| PROGRAM FILESx86            | PROGRAMFILESx86                 | Pasta Arquivos de Programas em máquinas x86.                                                                                                                                                  |
+| Recente                      | Recente                          | Diretório do sistema de arquivos que contém os documentos usados mais recentemente pelo usuário. Um caminho típico é C: \\ Nome de usuário de Documentos e \\ Configurações \\ Recente.                                           |
+| PASTA LIXEIRA          | RECYCLEBINFOLDER                | Pasta virtual que contém os objetos na conta do usuário Lixeira.                                                                                                                       |
+| RESOURCEDIR                 | RESOURCEDIR                     | O Diretório de recursos.                                                                                                                                                                |
+| Sendto                      | Sendto                          | Diretório do sistema de arquivos que contém itens de menu Enviar para. Um caminho típico é C: Documentos e \\ Configurações nome \\ de usuário \\ SendTo.                                                                |
+| MENU INICIAR                  | START%20MENU                    | Diretório do sistema de arquivos que contém menu Iniciar itens. Um caminho típico é C: Menu Iniciar nome de usuário documentos e \\ \\ \\ configurações.                                                                 |
+| Inicialização                     | Inicialização                         | Diretório do sistema de arquivos que corresponde ao grupo de programas de inicialização do usuário.                                                                                                            |
+| SYSTEMx86                   | SYSTEMx86                       | Pasta do sistema em máquinas x86.                                                                                                                                                         |
 | MODELOS                   | MODELOS                       | Diretório do sistema de arquivos que serve como um repositório comum para modelos de documento.                                                                                                       |
-| SYSTEM                      | SYSTEM                          | Pasta do sistema. Um caminho típico é C: \\ Windows \\ System.                                                                                                                                  |
+| SYSTEM                      | SYSTEM                          | Pasta do sistema. Um caminho típico é C: \\ Sistema \\ Windows.                                                                                                                                  |
 | WINDOWS                     | WINDOWS                         | Diretório do Windows ou SYSROOT.                                                                                                                                                          |
 
 
 
  
 
-### <a name="argument-information"></a>Informações do argumento
+### <a name="argument-information"></a>Informações de argumento
 
 
 
-|                          |                                         |
-|--------------------------|-----------------------------------------|
-| Sistema operacional mínimo | Windows Vista com Service Pack 1 (SP1) |
+|                              | Valor                                   |
+|------------------------------|-----------------------------------------|
+| **Sistema operacional mínimo** | Windows Vista com Service Pack 1 (SP1) |
 
 
 

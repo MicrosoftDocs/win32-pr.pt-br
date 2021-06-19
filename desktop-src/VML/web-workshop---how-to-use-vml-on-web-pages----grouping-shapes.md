@@ -1,6 +1,6 @@
 ---
 title: Agrupando formas
-description: Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+description: Este artigo descreve as formas de agrupamento no VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.
 ms.assetid: 469c9e4d-d1ae-4285-b2cb-ac833ebe59ff
 keywords:
 - Web Workshop, agrupando formas
@@ -21,12 +21,12 @@ keywords:
 - espaço de coordenadas local
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 59eed282094e2d24d2d27e338b93731eaaa1eec0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 61e0c3073f55d23c15734b5d5ddfa886e7291530
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104008066"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407699"
 ---
 # <a name="grouping-shapes"></a>Agrupando formas
 
@@ -35,7 +35,7 @@ Este tópico descreve a VML, um recurso que foi preterido a partir do Windows In
 > [!Note]  
 > A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Como você aprendeu, você pode facilmente desenhar formas individuais usando VML. Nesta seção, explicaremos os benefícios do agrupamento de formas e como agrupar formas.
 
@@ -86,6 +86,6 @@ Para obter mais informações sobre esse elemento, consulte a [especificação d
 
 Você pode usar o `<group>` elemento para agrupar muitas formas para que elas possam ser transformadas como uma unidade.
 
- 
+ 
 
- 
+ 

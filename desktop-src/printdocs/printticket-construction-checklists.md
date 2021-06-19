@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Veja como o autor de um cliente PrintTicket pode usar tipos de elementos para criar um PrintTicket que descreva as intenções de um dispositivo.
 ms.assetid: ed53d1a8-d302-4855-9858-0f37dfbbd1d3
 title: Listas de verificação de construção do PrintTicket
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e742bcd3b94c5016fda6f97e2fb5e20a2cf70f73
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: f76d47911d0060cc6d06604bfaeaa4abcebd3daa
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105763244"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405469"
 ---
 # <a name="printticket-construction-checklists"></a>Listas de verificação de construção do PrintTicket
 

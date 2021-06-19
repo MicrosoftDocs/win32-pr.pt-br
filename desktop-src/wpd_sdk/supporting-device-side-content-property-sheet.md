@@ -1,15 +1,15 @@
 ---
 title: Suporte ao conteúdo do lado do dispositivo (folha)
-description: Suporte a conteúdo Device-Side
+description: Saiba como usar a API do shell do Windows ou a API WPD para obter dados de objetos de dispositivo, que não podem ser acessados por meio do sistema de arquivos no Windows Vista.
 ms.assetid: ea11f8e6-fb53-46e4-b210-2dae33cdc056
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cd7e054e4c545acd8f34583da5cd9ef3af347643
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3aeade3745c37296b334c54af9edcc768fb8c93e
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297132"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404189"
 ---
 # <a name="supporting-device-side-content"></a>Suporte ao conteúdo do lado do dispositivo
 

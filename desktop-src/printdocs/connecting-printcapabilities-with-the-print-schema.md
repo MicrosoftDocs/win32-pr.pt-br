@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o esquema de PrintCapabilities geral, que aborda a estrutura, a finalidade e o uso dos vários tipos de elementos.
 ms.assetid: 2f6c51a3-003c-4d68-9e4d-9be5d325a477
 title: Conectando PrintCapabilities com o esquema de impressão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 17d2f5a34421dba2402bce1d6699f208fd58c799
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 661a8eb93c6f788381713c0c6620e8a09a53648f
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105779509"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409639"
 ---
 # <a name="connecting-printcapabilities-with-the-print-schema"></a>Conectando PrintCapabilities com o esquema de impressão
 

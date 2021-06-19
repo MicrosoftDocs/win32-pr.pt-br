@@ -1,58 +1,58 @@
 ---
-title: Lendo arquivos ASF no DirectShow (SDK do Windows Media Format 11)
-description: Lendo arquivos ASF no DirectShow
+title: Lendo arquivos ASF no DirectShow (SDK Windows Media Format 11)
+description: A reprodução de arquivos ASF é manipulada pelo filtro Leitor do WM ASF. Saiba mais sobre como ler arquivos ASF no DirectShow no SDK Windows Media Format 11.
 ms.assetid: eec2c91f-1762-4798-91d0-d68ec2160d6a
 keywords:
-- SDK do Windows Media Format, DirectShow
-- SDK do Windows Media Format, lendo arquivos ASF
-- SDK do Windows Media Format, filtro de leitor ASF do WM
-- SDK do Windows Media Format, interface IMediaSeeking
+- Windows Media Format SDK, DirectShow
+- Windows Media Format SDK, lendo arquivos ASF
+- Windows Media Format SDK, filtro leitor do WM ASF
+- Windows Media Format SDK, interface IMediaSeeking
 - ASF (Advanced Systems Format), DirectShow
 - ASF (formato de sistemas avançados), DirectShow
 - ASF (Advanced Systems Format), lendo arquivos
-- ASF (formato de sistemas avançados), lendo arquivos
-- ASF (Advanced Systems Format), filtro de leitor ASF do WM
-- ASF (formato de sistemas avançados), filtro de leitor ASF do WM
-- Formato de sistema avançado (ASF), interface IMediaSeeking
+- ASF (Formato de Sistemas Avançados), lendo arquivos
+- AsF (Advanced Systems Format), wm asf reader filter
+- ASF (Formato de Sistemas Avançados),Filtro de Leitor do WM ASF
+- AsF (Advanced Systems Format), interface IMediaSeeking
 - ASF (formato de sistemas avançados), interface IMediaSeeking
 - DirectShow, lendo arquivos ASF
-- Filtro de leitor ASF do DirectShow, WM
+- DirectShow, filtro leitor do WM ASF
 - DirectShow, interface IMediaSeeking
-- Filtro de leitor ASF do WM
-- IMediaSeeking
+- Filtro leitor do WM ASF
+- Imediaseeking
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1ddf7ba34444f4a3b46f4413958bd26ba4bafc8
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 4aaab64798011eb21edbe43f49438db99d0bae6b
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104294713"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404319"
 ---
-# <a name="reading-asf-files-in-directshow-windows-media-format-11-sdk"></a>Lendo arquivos ASF no DirectShow (SDK do Windows Media Format 11)
+# <a name="reading-asf-files-in-directshow-windows-media-format-11-sdk"></a>Lendo arquivos ASF no DirectShow (SDK Windows Media Format 11)
 
-A reprodução de arquivos ASF é tratada pelo filtro de [leitor ASF do WM](wm-asf-reader-filter.md) . Quando o leitor ASF do WM lê um arquivo, ele cria automaticamente um PIN de saída para cada fluxo, incluindo fluxos da Web, fluxos de comando de script e qualquer outro tipo de fluxo arbitrário. No caso de vários arquivos de taxa de bits, os Pins são criados somente para os fluxos selecionados no momento.
+A reprodução de arquivos ASF é manipulada pelo filtro [Leitor do WM ASF.](wm-asf-reader-filter.md) Quando o Leitor do WM ASF lê um arquivo, ele cria automaticamente um pino de saída para cada fluxo, incluindo fluxos da Web, fluxos de comando de script e qualquer outro tipo de fluxo arbitrário. No caso de vários arquivos de taxa de bits, os pinos são criados somente para os fluxos selecionados no momento.
 
-O leitor ASF do WM dá suporte à interface **IMediaSeeking** do DirectShow, que permite que os aplicativos executem a busca temporal dentro do arquivo. No entanto, a reprodução em velocidades diferentes de 1,0 (conforme especificado em **IMediaSeeking:: SetRate**) não é suportada.
+O Leitor do WM ASF dá suporte à interface **DirectShow IMediaSeeking,** que permite que os aplicativos executem a busca temporal dentro do arquivo. No entanto, não há suporte para a reprodução em velocidades que não 1.0 (conforme especificado em **IMediaSeeking::SetRate).**
 
-O filtro também expõe várias interfaces do Windows Media Format SDK, conforme descrito na tabela a seguir.
+O filtro também expõe várias interfaces Windows Media Format SDK, conforme descrito na tabela a seguir.
 
 
 
-| Interface                                        | Quão expostos                            | Comentários                                                                                                                                                                                    |
+| Interface                                        | Como exposto                            | Comentários                                                                                                                                                                                    |
 |--------------------------------------------------|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IWMDRMReader**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmreader)             | Por meio de **IServiceProvider** no filtro | Fornecido para aplicativos que precisam executar conteúdo protegido por DRM (Rights Management digital). Essa interface também pode ser usada para obter outras interfaces diretamente no objeto leitor. |
+| [**IWMDRMReader**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmreader)             | Por **meio de IServiceProvider** no filtro | Fornecido para aplicativos que precisam reproduzir conteúdo protegido por DRM (Rights Management Digital). Essa interface também pode ser usada para obter outras interfaces diretamente no Objeto de Leitor. |
 | [**IWMHeaderInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo)           | **QueryInterface** no filtro           | Fornecido para que os aplicativos possam ler atributos de arquivo e conteúdo, bem como informações de marcador e script e metadados.                                                                  |
-| [**IWMReaderAdvanced**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced)   | **QueryInterface** no filtro           | Parcialmente implementado no filtro para que os aplicativos possam acessar os métodos informativos no objeto do WM Reader.                                                                      |
-| [**IWMReaderAdvanced2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced2) | **QueryInterface** no filtro           | Parcialmente implementado no filtro para que os aplicativos possam acessar os métodos informativos no objeto leitor.                                                                         |
+| [**IWMReaderAdvanced**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced)   | **QueryInterface** no filtro           | Parcialmente implementado no filtro para que os aplicativos possam acessar os métodos informacionais no objeto Leitor de WM.                                                                      |
+| [**IWMReaderAdvanced2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced2) | **QueryInterface** no filtro           | Parcialmente implementado no filtro para que os aplicativos possam acessar os métodos informacionais no Objeto de Leitor.                                                                         |
 
 
 
  
 
-O filtro de [leitor ASF do WM](wm-asf-reader-filter.md) foi disponibilizado primeiro no DirectShow 8,0. A versão do filtro que acompanha o DirectShow 8,1 e 9,0 dá suporte à versão 7. *x* do Windows Media Format SDK. A versão mais recente do filtro, juntamente com os outros componentes do QASF, é fornecida com o e dá suporte ao SDK da série Windows Media Format 9 Series e às versões posteriores, e ele substitui o filtro no DirectX 9,0. Se você instalar o SDK do Windows Media Format depois de instalar o DirectX 8. *x* ou 9. *x* SDK, você substituirá a versão do DirectX do qasf.dll pela versão da série 9. Isso não deve apresentar nenhum problema, exceto possivelmente em um cenário no qual resultará em um comportamento diferente no método DirectShow **IGraphBuilder:: RenderFile** . A versão do SDK do Windows Media Format 9 Series do leitor ASF do WM é o filtro de origem padrão para as extensões de nome de arquivo. ASF,. wmv e. WMA. Isso significa que o leitor ASF do WM é criado e adicionado automaticamente ao grafo de filtro pelo Gerenciador de gráficos de filtro em métodos como **IGraphBuilder:: RenderFile** ou **IGraphBuilder:: AddSourceFilter** quando um arquivo desse tipo é especificado. No DirectX 9,0 e versões anteriores, e no Windows XP Service Pack 1 e versões anteriores, o método **RenderFile** usa o filtro de origem de mídia mais antigo do Windows. Esse comportamento foi mantido para garantir a compatibilidade com versões anteriores com aplicativos que usavam o Windows Media Player 6,4. Para obter mais informações sobre o filtro de origem de mídia do Windows herdado, consulte a documentação do SDK do DirectShow.
+O [filtro Leitor do WM ASF](wm-asf-reader-filter.md) foi disponibilizado pela primeira vez no DirectShow 8.0. A versão do filtro que acompanha o DirectShow 8.1 e 9.0 dá suporte à versão 7. *x* do SDK Windows Media Format dados. A versão mais recente do filtro, juntamente com os outros componentes qaSF, acompanha e dá suporte ao SDK do Windows Media Format Série 9 e versões posteriores, e ele é substituído pelo filtro no DirectX 9.0. Se você instalar o SDK Windows Media Format depois de instalar o DirectX 8. *x* ou 9. *X* SDK, você substituirá a versão directX do qasf.dll pela versão da série 9. Isso não deve apresentar nenhum problema, exceto possivelmente em um cenário em que resultará em um comportamento diferente no método DirectShow **IGraphBuilder::RenderFile.** A Windows Media Format do SDK da Série 9 do WM ASF Reader é o filtro de origem padrão para as extensões de nome de arquivo .asf, .wmv e .wma. Isso significa que o Leitor do WM ASF é criado e adicionado automaticamente ao grafo de filtro pelo Gerenciador de Grafo de Filtro em métodos como **IGraphBuilder::RenderFile** ou **IGraphBuilder::AddSourceFilter** quando um arquivo desse tipo é especificado. No DirectX 9.0 e anteriores e no Windows XP Service Pack 1 e anterior, o **método RenderFile** usa o Filtro de Fonte de Mídia do Windows mais antigo. Esse comportamento foi mantido para garantir a compatibilidade com aplicativos que usaram o Windows Media Player 6.4. Para obter mais informações sobre o Filtro de Fonte de Mídia do Windows herdado, consulte a Documentação do SDK do DirectShow.
 
-Para reproduzir um arquivo ASF com conteúdo baseado no Windows Media usando o leitor ASF do WM, as três etapas principais são criar uma instância do Gerenciador de gráfico de filtro, chamar **IGraphBuilder:: RenderFile** para criar o grafo e, em seguida, chamar **IMediaControl:: Run** para reproduzir o arquivo. O exemplo de código a seguir é um programa completo que reproduz um arquivo ASF usando o DirectShow. Para executar este exemplo, você deve ter o SDK do DirectX instalado e seu ambiente de compilação deve ser configurado de acordo com as instruções no tópico de documentação do SDK do DirectShow "Configurando o ambiente de compilação". Além disso, você deve especificar um arquivo em seu computador na chamada para **RenderFile**.
+Para reproduzir um arquivo ASF com conteúdo baseado em Mídia do Windows usando o Leitor do WM ASF, as três etapas principais são criar uma instância do Gerenciador de Grafo de Filtro, chamar **IGraphBuilder::RenderFile** para criar o grafo e, em seguida, **chamar IMediaControl::Run** para reproduzir o arquivo. O exemplo de código a seguir é um programa completo que reproduz um arquivo ASF usando o DirectShow. Para executar este exemplo, você deve ter o SDK do DirectX instalado e seu ambiente de build deve ser configurado de acordo com as instruções no tópico de documentação do SDK do DirectShow "Configurando o ambiente de build". Além disso, você deve especificar um arquivo em seu computador na chamada para **RenderFile**.
 
 
 ```C++
@@ -112,7 +112,7 @@ void main(void)
 
 
 
-Observe que o código do aplicativo para esse exemplo simples nunca faz referência especificamente ao leitor ASF do WM. Esse filtro é criado, conectado, executado e eventualmente liberado pelo Gerenciador de gráfico de filtro. Em muitos cenários, no entanto, talvez você queira configurar o leitor ASF do WM antes de começar a reprodução.
+Observe que o código do aplicativo para este exemplo simples nunca faz referência ao Leitor de ASF WM especificamente. Esse filtro é criado, conectado, executado e, eventualmente, liberado pelo Gerenciador de Grafo de Filtro. No entanto, em muitos cenários, talvez você queira configurar o Leitor do WM ASF antes de iniciar a reprodução.
 
  
 

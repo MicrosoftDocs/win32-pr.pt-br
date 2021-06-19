@@ -1,6 +1,6 @@
 ---
 title: Posicionando formas
-description: Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+description: Este artigo descreve as formas de posicionamento no VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.
 ms.assetid: dbd68f54-201a-48dc-a3a9-a8dd42178c11
 keywords:
 - Web Workshop, posicionando formas
@@ -36,12 +36,12 @@ keywords:
 - Inverter estilo de posição
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd8e01d0c7962467b1894f0f4c2c6cd1f6b01509
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7c96a8de891ed1bbd1b9bfee9eff52ede946247b
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007705"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407709"
 ---
 # <a name="positioning-shapes"></a>Posicionando formas
 
@@ -50,7 +50,7 @@ Este tópico descreve a VML, um recurso que foi preterido a partir do Windows In
 > [!Note]  
 > A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Você aprendeu como desenhar e colorir formas em uma página da Web usando a VML. Neste tópico, você usará a VML para posicionar com precisão elementos gráficos em uma página da Web.
 
@@ -221,7 +221,7 @@ Você pode usar o atributo **flip** Style para inverter uma forma em seu eixo x 
 
 
 
- 
+ 
 
 X e y podem ser especificados na propriedade flip.
 
@@ -239,6 +239,6 @@ Com base no que você aprendeu, você pode posicionar precisamente uma forma em 
 4.  Use **largura** e **altura** para especificar o tamanho da caixa que contém para a forma.
 5.  Use **z-index** para especificar a ordem z da forma.
 
- 
+ 
 
- 
+ 

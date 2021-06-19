@@ -1,6 +1,6 @@
 ---
 title: UnTypedClientExample
-description: Este exemplo mostra um cliente HTTP que envia mensagens de solicitação-resposta.
+description: Examine um exemplo de cliente não tipado que usa a API de serviços Web do Windows (WWSAPI). Este exemplo mostra um cliente HTTP que envia mensagens de solicitação-resposta.
 ms.assetid: ea6d8696-fd43-4d3c-bfec-3602658a08a7
 keywords:
 - UnTypedClientExample nativo – Web-Services
@@ -8,12 +8,12 @@ keywords:
 - WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a55b70b3eb5b94a6a5073483264c9e0ca4d406cf
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d66e1fcb2a26ddb0f55aa87f0aa6c4a3ace3a945
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104291961"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409729"
 ---
 # <a name="untypedclientexample"></a>UnTypedClientExample
 
@@ -418,9 +418,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

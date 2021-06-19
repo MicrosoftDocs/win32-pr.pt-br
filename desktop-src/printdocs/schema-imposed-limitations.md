@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre as limitações impostas pelo esquema de PrintCapabilities. O provedor de PrintCapabilities deve detectar inválidas de configurações e resolvê-las.
 ms.assetid: 420c5c84-abb8-495a-9b74-dc19a16034fb
 title: Limitações de Schema-Imposed
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45dc283704ea96e3303de6755a217e454b506bdc
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 0ee2911d4b90ebc194aa245f398f71575496c877
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105761164"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404919"
 ---
 # <a name="schema-imposed-limitations"></a>Limitações de Schema-Imposed
 

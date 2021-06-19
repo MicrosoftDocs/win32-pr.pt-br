@@ -1,15 +1,15 @@
 ---
-description: A API do Microsoft Web Services on Devices (WSDAPI) dá suporte à implementação de dispositivos e serviços controlados pelo cliente e aos hosts de dispositivo em conformidade com o perfil de dispositivos para serviços Web (DPWS).
+description: Aprenda a usar o Microsoft Web Services em dispositivos (WSD) API (WSDAPI) para implementar dispositivos e serviços controlados pelo cliente e hosts de dispositivo em conformidade com o DPWS.
 ms.assetid: 88de8dea-56d5-4bfc-8837-03da81b7d0f9
 title: Desenvolvimento de aplicativos WSD no Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e33976a1903c87ffb6c577cd5a451a3b772a67a6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 167cd1ad013ea387a6e33b6de449f3f84d49db13
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761600"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405779"
 ---
 # <a name="wsd-application-development-on-windows"></a>Desenvolvimento de aplicativos WSD no Windows
 

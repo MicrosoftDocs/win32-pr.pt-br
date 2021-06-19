@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento PageBlackGenerationProcessingGrayComponentReplacementLevel, que especifica a porcentagem de substituição de componentes cinza.
 ms.assetid: e33634bb-5db5-4197-889d-82caf2e74191
 title: PageBlackGenerationProcessingGrayComponentReplacementLevel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 553919bf9fab43cb1281f625eb518937b5c8b805
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 8499c8521b974d01657c171a99e86e738c82b4e5
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994523"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408479"
 ---
 # <a name="pageblackgenerationprocessinggraycomponentreplacementlevel"></a>PageBlackGenerationProcessingGrayComponentReplacementLevel
 
@@ -24,7 +24,7 @@ Especifica a porcentagem de substituição do componente cinza a ser executada.
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                    |
 | Prefixo de escopo <br/> | ?<br/>                                            |
@@ -75,7 +75,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Tipo de dados<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | string<br/>  | não definido<br/>       |
 | MaxValue<br/>     | Número inteiro<br/> | 100<br/>             |
-| MinValue<br/>     | integer<br/> | 0<br/>               |
+| MinValue<br/>     | inteiro<br/> | 0<br/>               |
 | Vários<br/>     | integer<br/> | 1<br/>               |
 | Obrigatório<br/>    | string<br/>  | PSK: condicional<br/> |
 | UnitType<br/>     | string<br/>  | {1&gt;percent&lt;1}<br/>         |

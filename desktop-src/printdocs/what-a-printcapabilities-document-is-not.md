@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre a funcionalidade e as informações que o documento de PrintCapabilities não pretende fornecer.
 ms.assetid: 87a897cd-d3aa-488a-b129-9837d3500d0d
 title: O que é um documento de PrintCapabilities não
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cd6e18082a5e551f3997dad8b9688d84ff2f824a
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 8bcd5dbedf6ee3a7e2713bd3591b182c606cfb0c
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105765223"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409889"
 ---
 # <a name="what-a-printcapabilities-document-is-not"></a>O que é um documento de PrintCapabilities não
 

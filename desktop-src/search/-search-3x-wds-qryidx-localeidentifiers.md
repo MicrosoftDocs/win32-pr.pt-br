@@ -1,15 +1,15 @@
 ---
-description: Os identificadores InputLocale e keywordlocale ajudam o mecanismo de pesquisa a usar os separadores de palavras corretos identificando o idioma das consultas inseridas pelo usuário e o idioma do das palavras-chave da sintaxe de consulta avançada.
+description: Entenda os argumentos InputLocale e keywordlocale no Windows Search, que ajuda o mecanismo de pesquisa a usar os separadores de palavras corretos.
 ms.assetid: dc610f49-5106-47f9-b29b-84949dd2c42b
 title: Argumentos de identificador de localidade (pesquisa do Windows)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cea1549a550e4bf6b8099241a6f3d2275860a983
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe4c56e9c3fb5a84938d4779c7a3ebeb849b0787
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826920"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112403749"
 ---
 # <a name="locale-identifier-arguments-windows-search"></a>Argumentos de identificador de localidade (pesquisa do Windows)
 

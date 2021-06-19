@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Um prefixo de escopo é um rótulo textual acrescentado previamente a uma palavra-chave de esquema para fornecer um escopo contextual, incluindo trabalho, documento e página.
 ms.assetid: 4bad85d7-a933-43fe-9d79-4835d92c82d6
 title: Prefixo de escopo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef74be192671124872e19e87973a266da4a09226
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: b2c027de94fda403eb58905e536d8c6256cb2d6c
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "103837692"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404899"
 ---
 # <a name="scoping-prefix"></a>Prefixo de escopo
 

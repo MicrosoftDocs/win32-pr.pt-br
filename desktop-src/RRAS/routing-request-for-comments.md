@@ -1,18 +1,18 @@
 ---
 title: Solicitação de roteamento de comentários
-description: As solicitações de comentários (RFCs) são uma série contínua de documentos que abordam as tecnologias relacionadas à Internet e à Internet.
+description: Este artigo lista solicitações de comentários (RFCs) para solicitação de roteamento. As RFCs são uma série contínua de documentos que discutem tecnologias relacionadas à Internet.
 ms.assetid: 08d020f6-87b2-487e-8232-84d080c1037b
 keywords:
 - RFCs, roteamento
 - Solicitação de comentários, roteamento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1525bad7d54443b2c67adfba04c683f58ca0648
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: 307299af9b4819d97ce6781a37ac4df0186a6378
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "104293821"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404749"
 ---
 # <a name="routing-request-for-comments"></a>Solicitação de roteamento de comentários
 
@@ -22,9 +22,9 @@ As solicitações de comentários (RFCs) são uma série contínua de documentos
 -   [RFC 2863](https://www.ietf.org/rfc/rfc2863.txt) – o grupo de interfaces MIB, Junho 2000
 -   [RFC 1354](https://www.ietf.org/rfc/rfc1354.txt) – tabela de encaminhamento de IP MIB, julho, 1992
 
- 
+ 
 
- 
+ 
 
 
 

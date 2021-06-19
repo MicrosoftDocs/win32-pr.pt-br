@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre os elementos configuráveis do usuário e definições de parâmetros que podem ser aplicáveis a um documento de PrintCapabilities.
 ms.assetid: 7f08747f-f7ff-4381-b2b9-1917e4708ee3
 title: Palavras-chave públicas de PrintCapabilities
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 81d5e7b001a8106f95c830f0af5e99ee9821af64
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 2d836ca13297f031897598bb2ecbfc6588c49753
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105753686"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407089"
 ---
 # <a name="printcapabilities-public-keywords"></a>Palavras-chave públicas de PrintCapabilities
 

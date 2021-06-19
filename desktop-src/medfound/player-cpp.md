@@ -1,19 +1,19 @@
 ---
-description: Este tópico contém código para o tutorial como reproduzir arquivos de mídia com Media Foundation.
+description: Este artigo contém código para o arquivo player.cpp para o tutorial Como reproduzir arquivos de mídia com Media Foundation.
 ms.assetid: 18715721-f1cd-40c7-a6b7-4bd911ff999d
-title: Player. cpp
+title: player.cpp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 013b7d498bb9d98e4993d13b78cc67d97043810f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5938c07b50da12c1765c34b8b89581991f977afe
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502259"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404559"
 ---
-# <a name="playercpp"></a>Player. cpp
+# <a name="playercpp"></a>player.cpp
 
-Este tópico contém código para o tutorial [como reproduzir arquivos de mídia com Media Foundation](how-to-play-unprotected-media-files.md).
+Este tópico contém código para o tutorial Como reproduzir arquivos de [mídia com Media Foundation](how-to-play-unprotected-media-files.md).
 
 
 ```C++

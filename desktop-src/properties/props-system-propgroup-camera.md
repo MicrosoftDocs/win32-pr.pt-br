@@ -1,15 +1,15 @@
 ---
-description: O separador de grupo de propriedades usado em listas de propriedades para separar arquivos de áudio de outros tipos. Não use essa propriedade para obter ou definir valores. Ele é destinado apenas como um marcador.
+description: Leia sobre a propriedade System. propus. Camera. Não use essa propriedade para obter ou definir valores. Ele é destinado apenas como um marcador.
 ms.assetid: 8354e1d1-9c8e-43d8-972f-b7c5c22bbc98
 title: System. PROPER. Camera
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f61b85d50b16715ee17189331a08d49ba07f852
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b65790c926098947403b8cf9a9af3736eee264b3
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103662081"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112403769"
 ---
 # <a name="systempropgroupcamera"></a>System. PROPER. Camera
 

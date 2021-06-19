@@ -1,5 +1,5 @@
 ---
-description: Os identificadores InputLocale e keywordlocale ajudam o mecanismo de pesquisa a usar os separadores de palavras corretos identificando o idioma das consultas inseridas pelo usuário e o idioma do das palavras-chave da sintaxe de consulta avançada.
+description: Entenda os argumentos inputlocale e keywordlocale na interface do usuário do Windows Shell, o que ajuda o mecanismo de pesquisa a usar os disjuntores de palavras corretos.
 title: Argumentos de identificador de localidade (o Shell do Windows)
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 403e0338b61a4dedba37a620000e3fd82c91f383
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 34eab39e7ed956bf68048d9ce5861c12eedbbe7a
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171549"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112403589"
 ---
 # <a name="locale-identifier-arguments-the-windows-shell"></a>Argumentos de identificador de localidade (o Shell do Windows)
 
-Os `inputlocale` `keywordlocale` identificadores e ajudam o mecanismo de pesquisa a usar os separadores de palavras corretos identificando o idioma das consultas inseridas pelo usuário e o idioma o das palavras-chave da sintaxe de consulta avançada. Esses nem sempre são os mesmos identificadores de código de linguagem (LCIDs) porque o Windows Search é oferecido em várias versões internacionais e também inclui pacotes MUI (Multilingual User interface) para mais idiomas. O `inputlocale` identifica o LCID para os usuários de idioma que inserim sua consulta de pesquisa no, enquanto o `keywordlocale` identifica o LCID que o mecanismo de pesquisa usa para palavras-chave.
+Os identificadores e ajudam o mecanismo de pesquisa a usar os disjuntores de palavras corretos identificando o idioma das consultas inseridas pelo usuário e o idioma das palavras-chave de Sintaxe de Consulta `inputlocale` `keywordlocale` Avançada. Nem sempre são os mesmos LCIDs (identificadores de código de idioma), pois o Windows Search é oferecido em várias versões internacionais e também inclui pacotes Interface de Usuário Multilíngue (MUI) para mais idiomas. O identifica o LCID para a linguagem em que os usuários insejam sua consulta de pesquisa, enquanto o identifica o LCID que o mecanismo de pesquisa usa para `inputlocale` `keywordlocale` palavras-chave.
 
 ## <a name="example"></a>Exemplo
 
@@ -29,13 +29,13 @@ search:query=matthew&inputlocale=2072&keywordlocale=1033
 
 
 
-### <a name="argument-information"></a>Informações do argumento
+### <a name="argument-information"></a>Informações de argumento
 
 
 
-|                          |                                         |
-|--------------------------|-----------------------------------------|
-| Sistema operacional mínimo | Windows Vista com Service Pack 1 (SP1) |
+|                              | Valor                                   |
+|------------------------------|-----------------------------------------|
+| **Sistema operacional mínimo** | Windows Vista com Service Pack 1 (SP1) |
 
 
 

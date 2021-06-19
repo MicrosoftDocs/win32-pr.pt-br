@@ -1,6 +1,6 @@
 ---
 title: Enumerando grupos que contêm muitos membros
-description: Os membros de um grupo são armazenados em um atributo com vários valores chamado membro.
+description: Saiba mais sobre como enumerar grupos de Azure Active Directory que contêm muitos membros usando a recuperação incremental de dados (recuperação de intervalo).
 ms.assetid: 78f81b09-2223-4b74-b8d5-7a97494c0324
 ms.tgt_platform: multiple
 keywords:
@@ -8,12 +8,12 @@ keywords:
 - grupos Active Directory, enumerando grupos com muitos membros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe2d9a5c9abc6e77ac72672379789d1028f92c3f
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: a7cab63b809fdbd2666f39a09d32f601346da00e
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104084450"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405149"
 ---
 # <a name="enumerating-groups-that-contain-many-members"></a>Enumerando grupos que contêm muitos membros
 
@@ -27,17 +27,17 @@ A versão do servidor que fornece os dados solicitados determina o número máxi
 
 | Versão do sistema operacional do servidor | Valores máximos recuperados |
 |---------------------------------|--------------------------|
-| Windows 2000                    | 1000                     |
-| Windows Server 2003             | 1500                     |
+| Windows 2000                    | 1000                     |
+| Windows Server 2003             | 1500                     |
 
 
 
- 
+ 
 
 Para obter mais informações sobre como recuperar intervalos de valores de atributo com ADSI, consulte [recuperação de intervalo de atributo](/windows/desktop/ADSI/attribute-range-retrieval).
 
 Para obter mais informações sobre como recuperar intervalos de valores de atributo com [System. DirectoryServices](/dotnet/api/system.directoryservices), consulte [enumerando Membros em um grupo grande](https://msdn.microsoft.com/library/ms180907(v=VS.80).aspx).
 
- 
+ 
 
- 
+ 

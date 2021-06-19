@@ -1,17 +1,17 @@
 ---
 title: Tipos assinados e não assinados (MIDL)
-description: Compiladores que usam padrões diferentes para tipos assinados e não assinados podem causar erros de software em seu aplicativo distribuído.
+description: Saiba mais sobre os tipos assinados e não assinados no MIDL. Os compiladores que usam tipos de padrões diferentes podem causar erros de software em seu aplicativo distribuído.
 ms.assetid: a4c2d811-6cf4-4c0b-af12-bf8247152984
 keywords:
 - tipos de dados MIDL, assinados e não assinados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e38fbe1dc27eebae7c7933db1d699600370d960
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: e2a3ed3c9f7022123f162fe0240ae190cdb4c8f8
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104369062"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407379"
 ---
 # <a name="signed-and-unsigned-types-midl"></a>Tipos assinados e não assinados (MIDL)
 

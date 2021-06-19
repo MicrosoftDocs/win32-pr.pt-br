@@ -1,19 +1,19 @@
 ---
-description: Etapa 2.
+description: Implemente a interface ISpecifyPropertyPages em seu filtro como parte da criação de uma página de propriedades de filtro para um filtro personalizado do DirectShow.
 ms.assetid: 8be83564-07ad-47cf-9538-73136f42ba79
 title: Etapa 2. Implementar ISpecifyPropertyPages
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3125230c8e28c6bd6b8593839d7175bb43d39674
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe37a22c6ba9c14f8656ac41294360569316be1a
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105758828"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112410049"
 ---
 # <a name="step-2-implement-ispecifypropertypages"></a>Etapa 2. Implementar ISpecifyPropertyPages
 
-Em seguida, implemente a interface **ISpecifyPropertyPages** em seu filtro. Essa interface tem um único método, **GetPages**, que retorna uma matriz de CLSIDs para as páginas de propriedades às quais o filtro dá suporte. Neste exemplo, o filtro tem uma única página de propriedades. Comece gerando o CLSID e declarando-o no arquivo de cabeçalho:
+Em seguida, implemente a interface **ISpecifyPropertyPages** no filtro. Essa interface tem um único método, **GetPages,** que retorna uma matriz de CLSIDs para as páginas de propriedades às quais o filtro dá suporte. Neste exemplo, o filtro tem uma única página de propriedades. Comece gerando o CLSID e declarando-o no arquivo de header:
 
 
 ```C++
@@ -24,7 +24,7 @@ DEFINE_GUID(CLSID_SaturationProp, 0xa9bd4eb, 0xded5,
 
 
 
-Agora implemente o método **GetPages** :
+Agora, implemente **o método GetPages:**
 
 
 ```C++
@@ -54,9 +54,9 @@ public:
 
 
 
-Aloque memória para a matriz usando **CoTaskMemAlloc**. O chamador liberará a memória.
+Alocar memória para a matriz usando **CoTaskMemAlloc**. O chamador liberará a memória.
 
-Em seguida: [etapa 3. Suporte a QueryInterface](step-3--support-queryinterface.md).
+Próximo: [Etapa 3. Suporte a QueryInterface.](step-3--support-queryinterface.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

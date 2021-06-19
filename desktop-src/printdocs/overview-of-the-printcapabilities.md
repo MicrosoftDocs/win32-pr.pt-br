@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: As PrintCapabilities descrevem as configurações ou os Estados disponíveis em um dispositivo, que geralmente podem ser colocados em várias configurações diferentes.
 ms.assetid: 094472fc-28ca-4d7a-a8be-cc4623d02ff2
 title: Visão geral dos PrintCapabilities
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72ac6de8276c275fab05b728054b6f9a4e50e9bd
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 0c8f61d1ee4125a9a1ac5f9ddb07cf226cd7094e
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105797567"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408519"
 ---
 # <a name="overview-of-the-printcapabilities"></a>Visão geral dos PrintCapabilities
 

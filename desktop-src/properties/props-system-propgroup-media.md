@@ -1,15 +1,15 @@
 ---
-description: O separador de grupo de propriedades usado em listas de propriedades para separar arquivos de áudio de outros tipos. Não use essa propriedade para obter ou definir valores. Ele é destinado apenas como um marcador.
+description: Leia sobre a propriedade System. prop. Media. Não use essa propriedade para obter ou definir valores. Ele é destinado apenas como um marcador.
 ms.assetid: ac3a5951-d3eb-4862-be1b-de9f12bc887b
 title: System. PropList. Media
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9cfcb84198c4aed2b18407c7948ca6e8702e73ca
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 1ba33be9057aef8e3222a4ed8d152bb2f47ed5b1
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105802059"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404499"
 ---
 # <a name="systempropgroupmedia"></a>System. PropList. Media
 

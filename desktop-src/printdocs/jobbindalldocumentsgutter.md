@@ -1,19 +1,19 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento JobBindAllDocumentsGutter, que especifica a largura da medianiz de associação.
 ms.assetid: 97a00cd6-508c-47e9-a1c1-75646ca0c721
 title: JobBindAllDocumentsGutter
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04615b85939d483f6bd2e720afa65a88d44c1caf
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: a42180ff9a00d1502d844b270fe5da7324825ca3
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998373"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409069"
 ---
 # <a name="jobbindalldocumentsgutter"></a>JobBindAllDocumentsGutter
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Especifica a largura da medianiz de associação.
 
@@ -24,10 +24,10 @@ Especifica a largura da medianiz de associação.
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|-----------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                 |
-| Prefixo de escopo <br/> | Trabalho <br/>                         |
+| Prefixo de definição de scoping <br/> | Trabalho <br/>                         |
 | Observações <br/>          | Vinculado ao elemento JobBinding<br/> |
 
 
@@ -76,10 +76,10 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Tipo de dados<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | Número inteiro<br/> | não definido<br/>       |
 | MaxValue<br/>     | Número inteiro<br/> | não definido<br/>       |
-| MinValue<br/>     | Número inteiro<br/> | não definido<br/>       |
-| Obrigatório<br/>    | String<br/>  | PSK: condicional<br/> |
+| Minvalue<br/>     | Número inteiro<br/> | não definido<br/>       |
+| Obrigatório<br/>    | String<br/>  | psk:Conditional<br/> |
 | Vários<br/>     | integer<br/> | 1<br/>               |
-| UnitType<br/>     | string<br/>  | mícrons<br/>         |
+| Unittype<br/>     | string<br/>  | Mícrons<br/>         |
 
 
 

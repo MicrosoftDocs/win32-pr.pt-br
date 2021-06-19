@@ -1,6 +1,6 @@
 ---
-title: Configuração (multimídia do Windows)
-description: Configuração
+title: Configuração (Multimídia do Windows)
+description: Saiba como um driver multimídia do Windows pode permitir que os usuários escolham definições de configuração exibindo uma caixa de diálogo de configuração.
 ms.assetid: d61d6c8b-8dba-45c2-ba99-0b2111a2d624
 keywords:
 - drivers instaláveis, configuração
@@ -8,23 +8,23 @@ keywords:
 - DRV_CONFIGURE mensagem
 - DRV_QUERYCONFIGURE mensagem
 - Mensagem DRVCONFIGINFO
-- Configurando drivers instaláveis
+- configurando drivers instaláveis
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20a248f992a857b88b723bd54c771f1af5709d97
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 7804e4d92d30d666d4d28c253a1a44572a707daa
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104008722"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112403919"
 ---
-# <a name="configuration-windows-multimedia"></a>Configuração (multimídia do Windows)
+# <a name="configuration-windows-multimedia"></a>Configuração (Multimídia do Windows)
 
-Um driver instalável pode permitir que os usuários escolham as definições de configuração para o driver e o hardware associado exibindo uma caixa de diálogo de configuração ao processar a mensagem do [**drv \_ Configure**](drv-configure.md) . O driver é responsável por criar e gerenciar a caixa de diálogo, processar qualquer entrada do usuário na caixa de diálogo e alterar a configuração do driver ou do hardware conforme solicitado pelo usuário. O driver deve fornecer um procedimento de caixa de diálogo separado para processar mensagens de janela para a caixa de diálogo e um modelo de caixa de diálogo para definir a aparência e o conteúdo da caixa de diálogo.
+Um driver instalável pode permitir que os usuários escolham definições de configuração para o driver e o hardware associado exibindo uma caixa de diálogo de configuração ao processar a mensagem [**DRV \_ CONFIGURE.**](drv-configure.md) O driver é responsável por criar e gerenciar a caixa de diálogo, processar qualquer entrada do usuário na caixa de diálogo e alterar a configuração do driver ou hardware conforme solicitado pelo usuário. O driver deve fornecer um procedimento de caixa de diálogo separado para processar mensagens de janela para a caixa de diálogo e um modelo de caixa de diálogo para definir a aparência e o conteúdo da caixa de diálogo.
 
-Antes de receber a \_ mensagem de configuração de DRV, um driver recebe a mensagem [**\_ QUERYCONFIGURE drv**](drv-queryconfigure.md) . O driver deve retornar um valor diferente de zero para a consulta para garantir o recebimento da mensagem de configuração de DRV subsequente \_ .
+Antes de receber a mensagem \_ DRV CONFIGURE, um driver recebe a [**mensagem \_ DRV QUERYCONFIGURE.**](drv-queryconfigure.md) O driver deve retornar um valor que não seja zero para a consulta para garantir o recebimento da mensagem DRV \_ CONFIGURE subsequente.
 
-Ao inicializar a caixa de diálogo de configuração, o driver normalmente recupera as informações de configuração do registro. Para ajudar a localizar essas informações, a \_ mensagem de configuração de drv normalmente inclui o endereço de uma estrutura [**DRVCONFIGINFO**](/windows/win32/api/mmiscapi/ns-mmiscapi-drvconfiginfo) que contém os nomes da chave do registro e o valor associado ao driver. Se o usuário solicitar alterações na configuração, o driver deverá atualizar as informações de configuração no registro.
+Ao inicializar a caixa de diálogo de configuração, o driver normalmente recupera informações de configuração do Registro. Para ajudar a localizar essas informações, a mensagem DRV CONFIGURE geralmente inclui o endereço de uma estrutura \_ [**DRVCONFIGINFO**](/windows/win32/api/mmiscapi/ns-mmiscapi-drvconfiginfo) que contém os nomes da chave do Registro e o valor associados ao driver. Se o usuário solicitar alterações na configuração, o driver deverá atualizar as informações de configuração no Registro.
 
  
 

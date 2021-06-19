@@ -1,15 +1,15 @@
 ---
-description: 'Esta seção contém as seguintes seções:'
+description: Encontre links para as seções interface, função, estrutura e referência de enumeração nos gráficos do Direct3D 10.
 ms.assetid: 27bd0b8a-fece-4db1-a954-ff91c2a919e6
 title: Referência de D3DX (gráficos do Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 026ea9d8ce13cc86b4d4a99b5ff90030331ed90a
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: 1d594beab253adec6ac452e19c505f92a2c16ca5
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111826985"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407539"
 ---
 # <a name="d3dx-reference-direct3d-10-graphics"></a>Referência de D3DX (gráficos do Direct3D 10)
 
