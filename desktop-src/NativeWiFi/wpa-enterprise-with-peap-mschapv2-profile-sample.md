@@ -1,23 +1,23 @@
 ---
-description: Usa o protocolo de autenticação extensível protegida com o protocolo de autenticação de handshake de desafio da Microsoft versão 2 (PEAP-MSCHAPv2) com nome de usuário/senha para autenticar na rede.
+description: Usa o protocolo de autenticação extensível protegida com o protocolo de autenticação de handshake de desafio da Microsoft versão 2, com WPA-Enterprise.
 ms.assetid: e344c360-4ab5-4a5f-a1b2-b0fa890b8666
 title: WPA-Enterprise com PEAP-MSCHAPv2 exemplo de perfil
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 787cc2e4652d3b588b49faf2f9215cd9bd1936e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 364cc7a9cc85e4c5e2ef908c0ac2a4726d6c5a96
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104461301"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395041"
 ---
-# <a name="wpa-enterprise-with-peap-mschapv2-profile-sample"></a><span data-ttu-id="e8634-103">WPA-Enterprise com PEAP-MSCHAPv2 exemplo de perfil</span><span class="sxs-lookup"><span data-stu-id="e8634-103">WPA-Enterprise with PEAP-MSCHAPv2 Profile Sample</span></span>
+# <a name="wpa-enterprise-with-peap-mschapv2-profile-sample"></a><span data-ttu-id="d1a15-103">WPA-Enterprise com PEAP-MSCHAPv2 exemplo de perfil</span><span class="sxs-lookup"><span data-stu-id="d1a15-103">WPA-Enterprise with PEAP-MSCHAPv2 Profile Sample</span></span>
 
-<span data-ttu-id="e8634-104">Este perfil de exemplo usa o protocolo de autenticação extensível protegida com o protocolo PEAP-MSCHAPv2 da Microsoft, com a senha \* UserName \* **/**  para autenticar-se na rede.</span><span class="sxs-lookup"><span data-stu-id="e8634-104">This sample profile uses Protected Extensible Authentication Protocol with Microsoft Challenge Handshake Authentication Protocol version 2 (PEAP-MSCHAPv2) with \*UserName\***/**_Password_ to authenticate to the network.</span></span> <span data-ttu-id="e8634-105">O usuário é solicitado a inserir as credenciais.</span><span class="sxs-lookup"><span data-stu-id="e8634-105">The user is prompted to enter credentials.</span></span>
+<span data-ttu-id="d1a15-104">Este perfil de exemplo usa o protocolo de autenticação extensível protegida com o protocolo PEAP-MSCHAPv2 da Microsoft, com a senha \* UserName \* **/**  para autenticar-se na rede.</span><span class="sxs-lookup"><span data-stu-id="d1a15-104">This sample profile uses Protected Extensible Authentication Protocol with Microsoft Challenge Handshake Authentication Protocol version 2 (PEAP-MSCHAPv2) with \*UserName\***/**_Password_ to authenticate to the network.</span></span> <span data-ttu-id="d1a15-105">O usuário é solicitado a inserir as credenciais.</span><span class="sxs-lookup"><span data-stu-id="d1a15-105">The user is prompted to enter credentials.</span></span>
 
-<span data-ttu-id="e8634-106">Este exemplo é configurado para usar Wi-Fi segurança de acesso protegido em execução no modo empresarial (WPA-Enterprise).</span><span class="sxs-lookup"><span data-stu-id="e8634-106">This sample is configured to use Wi-Fi Protected Access security running in Enterprise mode (WPA-Enterprise).</span></span> <span data-ttu-id="e8634-107">O tipo de segurança WPA-Enterprise usa 802.1 X para a troca de autenticação com o back-end.</span><span class="sxs-lookup"><span data-stu-id="e8634-107">The WPA-Enterprise security type uses 802.1X for the authentication exchange with the backend.</span></span> <span data-ttu-id="e8634-108">O TKIP (Temporal Key Integrity Protocol) é usado para criptografia.</span><span class="sxs-lookup"><span data-stu-id="e8634-108">Temporal Key Integrity Protocol (TKIP) is used for encryption.</span></span>
+<span data-ttu-id="d1a15-106">Este exemplo é configurado para usar Wi-Fi segurança de acesso protegido em execução no modo empresarial (WPA-Enterprise).</span><span class="sxs-lookup"><span data-stu-id="d1a15-106">This sample is configured to use Wi-Fi Protected Access security running in Enterprise mode (WPA-Enterprise).</span></span> <span data-ttu-id="d1a15-107">O tipo de segurança WPA-Enterprise usa 802.1 X para a troca de autenticação com o back-end.</span><span class="sxs-lookup"><span data-stu-id="d1a15-107">The WPA-Enterprise security type uses 802.1X for the authentication exchange with the backend.</span></span> <span data-ttu-id="d1a15-108">O TKIP (Temporal Key Integrity Protocol) é usado para criptografia.</span><span class="sxs-lookup"><span data-stu-id="d1a15-108">Temporal Key Integrity Protocol (TKIP) is used for encryption.</span></span>
 
-<span data-ttu-id="e8634-109">**Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** O [**nome**](wlan-profileschema-name-wlanprofile-element.md) filho do elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) é ignorado.</span><span class="sxs-lookup"><span data-stu-id="e8634-109">**Windows XP with SP3 and Wireless LAN API for Windows XP with SP2:** The [**name**](wlan-profileschema-name-wlanprofile-element.md) child of the [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) element is ignored.</span></span> <span data-ttu-id="e8634-110">O nome do perfil, conforme armazenado no repositório de perfis, é derivado do [**nome**](wlan-profileschema-name-ssid-element.md) filho do elemento [**SSID**](wlan-profileschema-ssid-ssidconfig-element.md) .</span><span class="sxs-lookup"><span data-stu-id="e8634-110">The name of the profile, as stored in the profile store, is derived from the [**name**](wlan-profileschema-name-ssid-element.md) child of the [**SSID**](wlan-profileschema-ssid-ssidconfig-element.md) element.</span></span>
+<span data-ttu-id="d1a15-109">**Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** O [**nome**](wlan-profileschema-name-wlanprofile-element.md) filho do elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) é ignorado.</span><span class="sxs-lookup"><span data-stu-id="d1a15-109">**Windows XP with SP3 and Wireless LAN API for Windows XP with SP2:** The [**name**](wlan-profileschema-name-wlanprofile-element.md) child of the [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) element is ignored.</span></span> <span data-ttu-id="d1a15-110">O nome do perfil, conforme armazenado no repositório de perfis, é derivado do [**nome**](wlan-profileschema-name-ssid-element.md) filho do elemento [**SSID**](wlan-profileschema-ssid-ssidconfig-element.md) .</span><span class="sxs-lookup"><span data-stu-id="d1a15-110">The name of the profile, as stored in the profile store, is derived from the [**name**](wlan-profileschema-name-ssid-element.md) child of the [**SSID**](wlan-profileschema-ssid-ssidconfig-element.md) element.</span></span>
 
 ``` syntax
 <?xml version="1.0" encoding="US-ASCII"?>
@@ -78,11 +78,11 @@ ms.locfileid: "104461301"
 </WLANProfile>
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="e8634-111">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="e8634-111">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="d1a15-111">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="d1a15-111">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="e8634-112">Exemplos de perfil sem fio</span><span class="sxs-lookup"><span data-stu-id="e8634-112">Wireless Profile Samples</span></span>](wireless-profile-samples.md)
+[<span data-ttu-id="d1a15-112">Exemplos de perfil sem fio</span><span class="sxs-lookup"><span data-stu-id="d1a15-112">Wireless Profile Samples</span></span>](wireless-profile-samples.md)
 </dt> </dl>
 
  
