@@ -1,15 +1,15 @@
 ---
-description: O Windows GDI+ expõe uma API simples que consiste em cerca de 600 funções, que são implementadas em Gdiplus.dll e declaradas em Gdiplusflat. h.
+description: O Windows GDI+ expõe uma API simples que consiste em cerca de 600 funções. Essas funções simples de API são encapsuladas pela classe AdjustableArrowCap C++.
 ms.assetid: 809d8b1e-ccdd-4156-b650-1bb7443a59fa
 title: Funções AdjustableArrowCap
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d377b319169a2a10c864db5aec402fe633beb3c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 91dd9ee90ea50c4b487ceb90e1b30f1329151533
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988929"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395071"
 ---
 # <a name="adjustablearrowcap-functions"></a>Funções AdjustableArrowCap
 
@@ -21,7 +21,7 @@ As funções de API simples a seguir são encapsuladas pela classe [**Adjustable
 
 
 
-| Função Flat                                                                                                          | Método de wrapper                                                                                                                | Description                                                                                                                                                                                                                              |
+| Função Flat                                                                                                          | Método de wrapper                                                                                                                | Descrição                                                                                                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | GpStatus WINGDIPAPI GdipCreateAdjustableArrowCap (altura REAL, largura REAL, BOOL ispreenchad, GpAdjustableArrowCap \* \* Cap) | [**AdjustableArrowCap::AdjustableArrowCap**](/windows/win32/api/gdipluslinecaps/nf-gdipluslinecaps-adjustablearrowcap-adjustablearrowcap(inreal_inreal_inbool)) | Cria uma extremidade de linha de seta ajustável com a altura e a largura especificadas. A extremidade da linha de seta pode ser preenchida ou não-preenchida. A margem interna do meio padrão é zero.                                                                              |
 | GpStatus WINGDIPAPI GdipSetAdjustableArrowCapHeight (GpAdjustableArrowCap \* Cap, real Height)                           | [**AdjustableArrowCap:: SetHeight**](/windows/desktop/api/Gdipluslinecaps/nf-gdipluslinecaps-adjustablearrowcap-setheight)                                  | O método [**AdjustableArrowCap:: SetHeight**](/windows/desktop/api/Gdipluslinecaps/nf-gdipluslinecaps-adjustablearrowcap-setheight) define a altura da Cap da seta. Essa é a distância da base da seta para seu vértice.                                 |

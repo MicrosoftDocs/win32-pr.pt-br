@@ -1,18 +1,18 @@
 ---
 title: Referência do Windows Defender
-description: O Windows Defender ajuda a proteger os computadores contra pop-ups, desempenho lento e ameaças de segurança causadas por spyware e outros softwares indesejados.
+description: Esses artigos de referência descrevem o Windows Defender, que ajuda a proteger os computadores contra pop-ups, desempenho lento e ameaças à segurança.
 ms.assetid: ed86e1bc-0625-4367-a1f7-fdb23412828f
 keywords:
 - Windows Defender
 - APIs do Windows Defender
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 756dec2f9805382a64e6173e7776135ff3a31573
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: ef04a4c7a5306473d1f505e0457fb27ba62b6ef1
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104368957"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396421"
 ---
 # <a name="windows-defender-reference"></a>Referência do Windows Defender
 

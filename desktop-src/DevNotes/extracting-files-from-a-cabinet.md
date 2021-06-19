@@ -1,15 +1,15 @@
 ---
-description: A sintaxe a seguir ilustra a criação de um gabinete.
+description: Exiba um exemplo de código que ilustra como extrair arquivos de um gabinete usando a API do gabinete. Para compilar, as funções de retorno de chamada devem ser definidas.
 ms.assetid: d9d0e14a-f68c-4b3d-b91d-a3fa824031ea
 title: Extraindo arquivos de um gabinete
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18ed62779f97c083fd39af79626d5b79baa6d305
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: aeb7089ded913a874a41c458bc99a8546f63bad6
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920270"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396611"
 ---
 # <a name="extracting-files-from-a-cabinet"></a>Extraindo arquivos de um gabinete
 

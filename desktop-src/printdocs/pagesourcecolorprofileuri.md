@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Obtenha informações sobre o parâmetro PageSourceColorProfileURI. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
 ms.assetid: 25c3c70f-20e3-4e44-9c59-bb66b4bd14d9
 title: PageSourceColorProfileURI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f515fca037e58c0794f20bc1dd1afee8a779fb49
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: d7b6acd064a6b0652720a6c0d783f10a7467fa16
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996893"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395621"
 ---
 # <a name="pagesourcecolorprofileuri"></a>PageSourceColorProfileURI
 
@@ -24,7 +24,7 @@ Especifica a origem do perfil de cor.
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|-----------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                             |
 | Prefixo de escopo <br/> | ?<br/>                                     |

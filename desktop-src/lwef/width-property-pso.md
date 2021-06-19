@@ -1,15 +1,15 @@
 ---
 title: Propriedade Width (objeto folha)
-description: Propriedade Width
+description: Saiba mais sobre a propriedade Width do objeto folha, que retorna um valor inteiro especificando a largura atual, em pixels, da janela da folha de propriedades do Microsoft Agent.
 ms.assetid: fe5d4c44-3eea-4b13-913e-09f4c97f3aaa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 552bf4b0299cbcc5d1a4f359bc5dc3a26f09a02e
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 62f0bfa7d2f77a358f9ac43d46bcc03abab80223
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104085096"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395151"
 ---
 # <a name="width-property-propertysheet-object"></a>Propriedade Width (objeto folha)
 

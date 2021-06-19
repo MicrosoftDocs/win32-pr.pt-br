@@ -1,15 +1,15 @@
 ---
 title: Propriedade Width (objeto CommandsWindow)
-description: Propriedade Width
+description: Saiba mais sobre a propriedade Width do objeto CommandsWindow, que retorna um valor inteiro especificando a largura, em pixels, da janela de comandos de voz.
 ms.assetid: vs|msagent|~\pacontrol_7ca2.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8139497019e29d839c76acf28d69b5bfc9359710
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 2c7652205593de29a315b17215068a384f0acf0c
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104369106"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395091"
 ---
 # <a name="width-property-commandswindow-object"></a>Propriedade Width (objeto CommandsWindow)
 

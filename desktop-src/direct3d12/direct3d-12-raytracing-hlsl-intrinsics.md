@@ -1,16 +1,16 @@
 ---
 title: Intrínsecos HLSL de raytracing do Direct3D 12
-description: Os seguintes sombreadores HLSL dão suporte ao pipeline do Direct3D 12 raytracing.
+description: Exiba links para artigos que descrevem funções intrínsecas de HLSL (linguagem de sombreamento de alto nível) que dão suporte ao pipeline do Direct3D 12 raytracing.
 ms.assetid: ''
 ms.localizationpriority: low
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b2e7cc7053705bd66b37d91f3ee06a6a1f249a2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 06687866354611f44f295ff4fe2cf171068e83c3
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105789395"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396471"
 ---
 # <a name="raytracing-hlsl-intrinsics"></a>Raytracing HLSL intrínsecos
 

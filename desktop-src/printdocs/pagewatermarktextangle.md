@@ -1,21 +1,21 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Obter mais informações sobre o parâmetro PageWatermarkTextAngle. Este tópico não é atual. Para obter as informações mais atuais, consulte a Especificação de Esquema de Impressão.
 ms.assetid: 157bb79c-68d2-4121-8a85-cd2f48095541
 title: PageWatermarkTextAngle
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 86c13d759232670c6957a91de12f9c35cf48aeb4
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 1dce37512314e1eaac0cbbe3b5b4b817cb2ee455
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995543"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395971"
 ---
 # <a name="pagewatermarktextangle"></a>PageWatermarkTextAngle
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica o ângulo do texto da marca d' água em relação à direção do PageImageableSizeWidth. O ângulo é medido na direção do sentido anti-horário.
+Especifica o ângulo do texto da marca-d'água em relação à direção PageImageableSizeWidth. O ângulo é medido na direção no sentido anti-horário.
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo da estrutura](#structure-content)
@@ -24,10 +24,10 @@ Especifica o ângulo do texto da marca d' água em relação à direção do Pag
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|--------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                    |
-| Prefixo de escopo <br/> | ?<br/>                            |
+| Prefixo de definição de scoping <br/> | ?<br/>                            |
 | Observações <br/>          | Vinculado ao elemento PageWatermark<br/> |
 
 
@@ -74,12 +74,12 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Propriedade                | xsi:type           | Valor                      |
 |-------------------------|--------------------|----------------------------|
 | Tipo de dados<br/>     | string<br/>  | xs:integer<br/>      |
-| DefaultValue<br/> | integer<br/> | 0<br/>               |
+| DefaultValue<br/> | inteiro<br/> | 0<br/>               |
 | MaxValue<br/>     | Número inteiro<br/> | 359<br/>             |
-| MinValue<br/>     | integer<br/> | 0<br/>               |
+| Minvalue<br/>     | inteiro<br/> | 0<br/>               |
 | Vários<br/>     | integer<br/> | 1<br/>               |
-| Obrigatório<br/>    | string<br/>  | PSK: condicional<br/> |
-| UnitType<br/>     | string<br/>  | graus<br/>         |
+| Obrigatório<br/>    | string<br/>  | psk:Conditional<br/> |
+| Unittype<br/>     | string<br/>  | graus<br/>         |
 
 
 

@@ -1,15 +1,15 @@
 ---
-description: Para consumir dados específicos do evento, o consumidor deve saber o formato dos dados do evento.
+description: Recupere dados de evento com formato MOF (MOF) ao consumir eventos. Para consumir dados específicos do evento, o consumidor deve saber o formato dos dados do evento.
 ms.assetid: 13512236-c416-43ba-bf36-b05c5c08d6c9
 title: Recuperando dados de evento usando o MOF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 455ddc08aae189b2ceab05aab365d9b9fb1a15d4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f8752d7a4dc71ddb7b5a5dbc39e93c5fe16bb652
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967415"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395011"
 ---
 # <a name="retrieving-event-data-using-mof"></a>Recuperando dados de evento usando o MOF
 

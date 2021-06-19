@@ -1,21 +1,21 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Obter informações sobre o parâmetro PageWatermarkTransparency. Este tópico não é atual. Para obter as informações mais atuais, consulte a Especificação de Esquema de Impressão.
 ms.assetid: f94c1450-9648-4aee-8f88-2a9213eba4a9
 title: PageWatermarkTransparency
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8d46a03cfb1b2129f4c89a6ea7c751e23cd565e
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 46ba405c3cd4a269edc4585ad8cba4c81f2c05e9
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996873"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394781"
 ---
 # <a name="pagewatermarktransparency"></a>PageWatermarkTransparency
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica a transparência da marca d' água. Totalmente opaco teria um valor de 0.
+Especifica a transparência para a marca-d'água. Totalmente opaco teria um valor de 0.
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo da estrutura](#structure-content)
@@ -24,10 +24,10 @@ Especifica a transparência da marca d' água. Totalmente opaco teria um valor d
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|--------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                    |
-| Prefixo de escopo <br/> | ?<br/>                            |
+| Prefixo de definição de scoping <br/> | ?<br/>                            |
 | Observações <br/>          | Vinculado ao elemento PageWatermark<br/> |
 
 
@@ -73,12 +73,12 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Propriedade                | xsi:type           | Valor                      |
 |-------------------------|--------------------|----------------------------|
 | Tipo de dados<br/>     | string<br/>  | xs:integer<br/>      |
-| DefaultValue<br/> | integer<br/> | 0<br/>               |
+| DefaultValue<br/> | inteiro<br/> | 0<br/>               |
 | MaxValue<br/>     | Número inteiro<br/> | 100<br/>             |
-| MinValue<br/>     | integer<br/> | 0<br/>               |
+| Minvalue<br/>     | inteiro<br/> | 0<br/>               |
 | Vários<br/>     | integer<br/> | 1<br/>               |
-| Obrigatório<br/>    | string<br/>  | PSK: condicional<br/> |
-| UnitType<br/>     | string<br/>  | {1&gt;percent&lt;1}<br/>         |
+| Obrigatório<br/>    | string<br/>  | psk:Conditional<br/> |
+| Unittype<br/>     | string<br/>  | {1&gt;percent&lt;1}<br/>         |
 
 
 

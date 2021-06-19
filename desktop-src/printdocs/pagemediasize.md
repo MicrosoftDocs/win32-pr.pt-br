@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento PageMediaSize configurável pelo usuário. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
 ms.assetid: 6f99f54b-c401-42ea-8715-95a2aad73042
 title: PageMediaSize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bdbaef403027190676b57455aa460198c2868424
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 907f6a76932e17b6d60a67a65c3cfa657282b60c
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995515"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395841"
 ---
 # <a name="pagemediasize"></a>PageMediaSize
 
@@ -27,18 +27,11 @@ O diagrama a seguir ilustra o uso da variável PageMediaSize (a opção ISOA4 é
 
 ## <a name="element-information"></a>Informações do elemento
 
-
-
-|                            |                    |
-|----------------------------|--------------------|
-| Nome | Valor |
+| Name                 | Valor        |
+|----------------------|--------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
 | Prefixo de escopo <br/> | ?<br/>    |
 | Observações <br/>          | Nenhum<br/>    |
-
-
-
- 
 
 ## <a name="structural-content"></a>Conteúdo estrutural
 
@@ -73,7 +66,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Nome                                | Tipo de dados          | Unidade                  | Valores com suporte                                                                                                                                                                      | Resumo                                                                                                                                                                   |
 |-------------------------------------|--------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \_OptionName\_<br/>           | string<br/>  | characters<br/> | Nome totalmente qualificado válido, conforme definido pelos [namespaces em XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | Especifica o nome da mídia. A nomenclatura deve usar a seguinte convenção: " \_ OptionNameStandard \_ " " \_ OptionNameCommonName \_ " " \_ OptionNameDescriptor \_ ".<br/> |
-| \_IdentityOptionValue\_<br/>  | string<br/>  | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/>                                                                                              |
+| \_IdentityOptionValue\_<br/>  | string<br/>  | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/>                                                                                              |
 | \_OptionNameStandard\_<br/>   | string<br/>  | characters<br/> | ' ISO ', ' JIS ', ' Japão ', ' América do, ' OtherMetric ', ' PRC ', nenhum.<br/>                                                                                                         | Indica se o tamanho da mídia está definido por um padrão específico.<br/>                                                                                               |
 | \_OptionNameCommonName\_<br/> | string<br/>  | characters<br/> | Nome totalmente qualificado válido, conforme definido pelos [namespaces em XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | Nome comum para o tamanho da mídia.<br/>                                                                                                                                |
 | \_OptionNameDescriptor\_<br/> | string<br/>  | characters<br/> | Big, envelope, extra, mais, cartão-postal, girado, planilha, ' nenhum '.<br/>                                                                                                              | Big, envelope, extra, mais, cartão-postal, girado, planilha, ' nenhum '.<br/>                                                                                                  |

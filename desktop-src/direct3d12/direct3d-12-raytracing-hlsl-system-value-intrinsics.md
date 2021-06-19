@@ -1,16 +1,16 @@
 ---
 title: Intrínsecos de valor do sistema HLSL de raytracing do Direct3D 12
-description: Os seguintes sombreadores HLSL dão suporte ao pipeline do Direct3D 12 raytracing.
+description: Exiba links para artigos que descrevem funções intrínsecas de valor do sistema HLSL (linguagem de sombreamento de alto nível) que dão suporte ao pipeline do Direct3D 12 raytracing.
 ms.assetid: ''
 ms.localizationpriority: low
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a20282e7bc0e9e4898fd361b0959cd6b6f32253
-ms.sourcegitcommit: 4e4f9e7c90d25af0774deec1d44bd49fa9b6daa9
+ms.openlocfilehash: 3e2790cf5df42f64071db3ca51a35e58ee9afcd5
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "105768219"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396431"
 ---
 # <a name="direct3d-12-raytracing-hlsl-system-value-intrinsics"></a>Intrínsecos de valor do sistema HLSL de raytracing do Direct3D 12
 

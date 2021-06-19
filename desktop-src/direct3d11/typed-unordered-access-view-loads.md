@@ -1,15 +1,15 @@
 ---
 title: Cargas de exibição de acesso não ordenado digitado
-description: A carga digitada UAV (exibição de acesso não ordenada) é a capacidade de um sombreador de ler de um UAV com um formato DXGI específico \_ .
+description: Saiba mais sobre a carga digitada de UAV (exibição de acesso não ordenado) no Direct3D 11. A carga digitada UAV é a capacidade de um sombreador ler de um UAV com um DXGI_FORMAT específico.
 ms.assetid: BA72BF21-8621-461D-8677-9DFB7D5BC6AA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0958b3563ab8001fd7b34ae62c9bcc37ad75c07a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2c6d2cbfa51c8473dc3da51c5844c63bef944b50
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294166"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396281"
 ---
 # <a name="typed-unordered-access-view-loads"></a>Cargas de exibição de acesso não ordenado digitado
 
@@ -130,6 +130,6 @@ float4 main() : SV_Target
 [Modelo do sombreador 5,1](/windows/desktop/direct3dhlsl/shader-model-5-1)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

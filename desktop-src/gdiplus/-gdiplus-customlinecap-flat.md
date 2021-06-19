@@ -1,15 +1,15 @@
 ---
-description: O Windows GDI+ expõe uma API simples que consiste em cerca de 600 funções, que são implementadas em Gdiplus.dll e declaradas em Gdiplusflat. h.
+description: O Windows GDI+ expõe uma API simples que consiste em cerca de 600 funções. Essas funções simples de API são encapsuladas pela classe CustomLineCap C++.
 ms.assetid: 3462f225-4372-4382-9831-2e960da43a30
 title: Funções CustomLineCap
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0305d5e14c651b825bd33d601c9cf0f6520696c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09853e1ead60faff7f4311b610249151d5deb929
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104505765"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395001"
 ---
 # <a name="customlinecap-functions"></a>Funções CustomLineCap
 
@@ -19,7 +19,7 @@ As funções de API simples a seguir são encapsuladas pela classe [**CustomLine
 
 
 
-| Função Flat                                                                                                                                         | Método de wrapper                                                                                                            | Description                                                                                                                                                                                                                                                                                                                                                   |
+| Função Flat                                                                                                                                         | Método de wrapper                                                                                                            | Descrição                                                                                                                                                                                                                                                                                                                                                   |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | GpStatus WINGDIPAPI GdipCreateCustomLineCap (GpPath \* FillPath, GpPath \* StrokePath, GpLineCap BASECAP, real BaseInset, GpCustomLineCap \* \* customCap) | [**CustomLineCap::CustomLineCap**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-customlinecap-customlinecap(constcustomlinecap_)) | Cria um objeto [**CustomLineCap:: CustomLineCap**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-customlinecap-customlinecap(constcustomlinecap_)) .                                                                                                                                                                                                                   |
 | GpStatus WINGDIPAPI GdipDeleteCustomLineCap (GpCustomLineCap \* customCap)                                                                              | virtual ~ CustomLineCap ()                                                                                                  | Limpa os recursos usados por um objeto [**CustomLineCap:: CustomLineCap**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-customlinecap-customlinecap(constcustomlinecap_)) .                                                                                                                                                                                               |

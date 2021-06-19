@@ -1,15 +1,15 @@
 ---
-description: O Windows GDI+ expõe uma API simples que consiste em cerca de 600 funções, que são implementadas em Gdiplus.dll e declaradas em Gdiplusflat. h.
+description: O Windows GDI+ expõe uma API simples que consiste em cerca de 600 funções. Essas funções simples de API são encapsuladas pela classe GdiplusBase C++.
 ms.assetid: b4fcc02c-1b0f-4731-8312-29894b1f722f
 title: Funções de memória
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 86e748f8a68cc6f04deba3c9676638ee48ee2e86
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6ed10574f9cc88c5b7ca8a2b0ed09924fe8c5192
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967759"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395821"
 ---
 # <a name="memory-functions"></a>Funções de memória
 

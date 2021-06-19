@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Leia informações de referência sobre o parâmetro PageCopies. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
 ms.assetid: a15fe075-6696-4c70-b658-ae62d542bb4e
 title: PageCopies
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83b1fc822d27d104364c2414ca89cf1fdf30c7d3
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 5002850fa1df5a86b0022a941e3b2a1f7e414a44
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997663"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396681"
 ---
 # <a name="pagecopies"></a>PageCopies
 
@@ -24,7 +24,7 @@ Especifica o número de cópias de uma página.
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|-------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/> |
 | Prefixo de escopo <br/> | ?<br/>         |

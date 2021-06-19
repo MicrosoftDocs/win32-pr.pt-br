@@ -1,38 +1,38 @@
 ---
-title: Tipos de informações de IP para blocos de informações de roteador
-description: Os tipos de informações a seguir são listados em Ipinfoid. h.
+title: Tipos de informações de IP para blocos de informações do roteador
+description: Saiba mais sobre os tipos de informações de IP listados em Ipinfoid.h. Use esses tipos de informações com as funções de Header de Informações ao executar o transporte de IP.
 ms.assetid: 911c61d4-e500-48c6-8861-39dbc09ab4e7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac918380fa5e828a763d9aec7a134bdfaf0dfa6d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a49abdb139eaa94440e380ce710280d744bd6ac5
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005637"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395111"
 ---
-# <a name="ip-information-types-for-router-information-blocks"></a>Tipos de informações de IP para blocos de informações de roteador
+# <a name="ip-information-types-for-router-information-blocks"></a>Tipos de informações de IP para blocos de informações do roteador
 
-Os tipos de informações a seguir são listados em Ipinfoid. h. Use esses tipos de informações com as funções de cabeçalho de informações ao executar o transporte de IP:
+Os tipos de informações a seguir são listados em Ipinfoid.h. Use esses tipos de informações com as funções de Header de Informações ao executar o transporte de IP:
 
--   \_informações de \_ filtro de discagem por demanda \_ de IP \_
--   \_informações de \_ habilitação do filtro IP \_
--   IP \_ nas \_ informações de filtro \_
--   \_informações de \_ filtro de saída de IP \_
--   \_informações globais de IP \_
--   \_informações de IFFILTER de IP \_
--   \_informações de \_ status da interface IP \_
--   informações do IP \_ IPINIP \_ cfg \_
--   \_informações de \_ pulsação de mcast IP \_
--   \_informações de \_ limite de mcast IP \_
--   \_informações de \_ limite de mcast de IP \_
--   informações de prioridade de IP \_ Prot \_ \_
--   \_informações de rota IP \_
--   \_informações do \_ disco do roteador IP \_
+-   INFORMAÇÕES DE \_ FILTRO \_ DE DISCAGEM DE DEMANDA DE \_ \_ IP
+-   INFORMAÇÕES DE \_ \_ HABILITAR FILTRO \_ DE IP
+-   IP \_ EM INFORMAÇÕES DE \_ \_ FILTRO
+-   INFORMAÇÕES DE FILTRO DE IP \_ \_ \_ OUT
+-   INFORMAÇÕES \_ \_ GLOBAIS DE IP
+-   INFORMAÇÕES \_ DE IP IFFILTER \_
+-   INFORMAÇÕES DE \_ \_ STATUS DA INTERFACE \_ IP
+-   INFORMAÇÕES \_ DE CFG DO IP \_ IPINIP \_
+-   IP \_ MCAST \_ HEARBEAT \_ INFO
+-   INFORMAÇÕES DE LIMITE DO IP \_ MCAST \_ \_
+-   INFORMAÇÕES \_ DE LIMITE DE IP MCAST \_ \_
+-   INFORMAÇÕES \_ DE PRIORIDADE DO IP PROT \_ \_
+-   INFORMAÇÕES DE \_ ROTA \_ DE IP
+-   INFORMAÇÕES DE \_ DISCO \_ DO ROTEADOR \_ IP
 
- 
+ 
 
- 
+ 
 
 
 

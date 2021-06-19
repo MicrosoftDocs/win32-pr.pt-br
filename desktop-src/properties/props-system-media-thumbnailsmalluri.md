@@ -1,19 +1,19 @@
 ---
-description: URI da representação de miniatura grande do item de mídia.
+description: Entenda a propriedade System. Media. ThumbnailSmallUri, que representa o URI da pequena representação em miniatura do item de mídia.
 ms.assetid: 063ab14e-1cb1-4938-99b2-ebc4d53adaae
 title: System. Media. ThumbnailSmallUri
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6464929e28193bc848795900e0dada8846665e84
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: dfd621ff87596f4f0333d22625e5c10d78aad428
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104172474"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396631"
 ---
 # <a name="systemmediathumbnailsmalluri"></a>System. Media. ThumbnailSmallUri
 
-URI da representação de miniatura grande do item de mídia.
+URI da pequena representação de miniatura do item de mídia.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507
 

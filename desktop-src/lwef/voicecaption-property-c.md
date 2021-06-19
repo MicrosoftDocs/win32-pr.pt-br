@@ -1,15 +1,15 @@
 ---
 title: Propriedade VoiceCaption (objeto Command)
-description: Propriedade VoiceCaption
+description: Saiba mais sobre a Propriedade VoiceCaption do objeto Command, que define ou retorna o texto exibido para o objeto Command na janela Comandos de Voz.
 ms.assetid: 97a3015c-6c39-42d5-b6bd-7563bd444b38
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1077c8d65a52bc8f0cfa329fdceb740e30e6784
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: d700b5d29b4c493be7382d45de55f44e6d02646c
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105812371"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396161"
 ---
 # <a name="voicecaption-property-command-object"></a>Propriedade VoiceCaption (objeto Command)
 
@@ -17,23 +17,23 @@ ms.locfileid: "105812371"
 
 <dl> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Ndescrição**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descrição**
 </dt> <dd>
 
-Define ou retorna o texto exibido para o objeto de [**comando**](/windows/desktop/lwef/the-command-object) na janela comandos de voz.
+Define ou retorna o texto exibido para o [**objeto Command**](/windows/desktop/lwef/the-command-object) na Janela Comandos de Voz.
 
 </dd> <dt>
 
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-*Caracteres Agent. ***("**_characterid_*_"). Comandos ("_*_Name_*_")._ *  \[  =  *Cadeia de caracteres* VoiceCaption\]
+*agent.***Characters("**_CharacterID_*_"). Commands("_*_Name_*_"). Cadeia de caracteres_ *  \[  =  *VoiceCaption*\]
 
 
 
 | Parte     | Descrição                                               |
 |----------|-----------------------------------------------------------|
-| *cadeia de caracteres* | Uma expressão de cadeia de caracteres que é avaliada como o texto exibido. |
+| *cadeia de caracteres* | Uma expressão de cadeia de caracteres que é avaliada para o texto exibido. |
 
 
 
@@ -43,7 +43,7 @@ Define ou retorna o texto exibido para o objeto de [**comando**](/windows/deskto
 
 ## <a name="remarks"></a>Comentários
 
-Se você definir um objeto de [**comando**](/windows/desktop/lwef/the-command-object) em uma coleção de [**comandos**](https://www.bing.com/search?q=**Commands**) e definir sua propriedade de [**voz**](voice-property.md) , normalmente também definirá sua propriedade [**VoiceCaption**](voicecaption-property.md) . Esse texto será exibido na janela de comandos de voz quando o aplicativo cliente for de entrada-ativo e o caractere estiver visível. Se essa propriedade não for definida, a configuração da propriedade [**Caption**](caption-property.md) determinará o texto exibido. Quando nem a propriedade **VoiceCaption** nem **Caption** é definida, o comando não aparece na janela de comandos de voz.
+Se você definir um [**objeto Command**](/windows/desktop/lwef/the-command-object) em uma coleção [**Commands**](https://www.bing.com/search?q=**Commands**) e definir sua propriedade [**Voice,**](voice-property.md) normalmente também definirá sua [**propriedade VoiceCaption.**](voicecaption-property.md) Esse texto será exibido na Janela Comandos de Voz quando o aplicativo cliente estiver ativo de entrada e o caractere estiver visível. Se essa propriedade não estiver definida, a configuração da propriedade [**Legenda**](caption-property.md) determinará o texto exibido. Quando a **propriedade VoiceCaption** nem **Caption** não é definida, o comando não aparece na janela Comandos de Voz.
 
 ### <a name="see-also"></a>Consulte Também
 

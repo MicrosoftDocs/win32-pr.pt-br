@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o parâmetro PageSourceColorProfileEmbedded. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
 ms.assetid: 38411802-2b2e-441c-b3a6-334d87b11b5d
 title: PageSourceColorProfileEmbedded
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91e97e768561fd13d5033b12f69a9bc481448e0e
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 0633fa061601c1d575f174ab5572582efdf9a89e
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107999113"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395631"
 ---
 # <a name="pagesourcecolorprofileembedded"></a>PageSourceColorProfileEmbedded
 
@@ -24,7 +24,7 @@ Especifica o perfil de cor de origem inserido.
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|-----------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                             |
 | Prefixo de escopo <br/> | ?<br/>                                     |

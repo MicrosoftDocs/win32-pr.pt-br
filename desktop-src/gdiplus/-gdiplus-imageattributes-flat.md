@@ -1,15 +1,15 @@
 ---
-description: O Windows GDI+ expõe uma API simples que consiste em cerca de 600 funções, que são implementadas em Gdiplus.dll e declaradas em Gdiplusflat. h.
+description: O Windows GDI+ expõe uma API simples que consiste em cerca de 600 funções. Essas funções de API simples são encapsuladas pela classe ImageAttributes C++.
 ms.assetid: 2564ecc6-4050-4f45-9ff6-4ee3f7b04707
 title: Funções ImageAttributes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cca901ffb3c8a3e1d50901156f8bc891caa6eea7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7bf284c4babaa6f5c530ed140be12c7cc5e68835
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967768"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395251"
 ---
 # <a name="imageattributes-functions"></a>Funções ImageAttributes
 

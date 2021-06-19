@@ -1,23 +1,23 @@
 ---
-description: Usa o protocolo de autenticação extensível protegida com o protocolo de autenticação de handshake de desafio da Microsoft versão 2 (PEAP-MSCHAPv2) com nome de usuário/senha para autenticar na rede.
+description: Usa o Protocolo de Autenticação Extensível Protegido com o Protocolo de Autenticação de Handshake do Microsoft Challenge versão 2, com WPA2-Enterprise.
 ms.assetid: fcbc74a6-1990-45a0-af2e-1c343a84497a
-title: WPA2-Enterprise com PEAP-MSCHAPv2 exemplo de perfil
+title: WPA2-Enterprise exemplo de PEAP-MSCHAPv2 perfil
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43363be10a6d7d77d445e188b1c3084f71ce3b10
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd05ac34992244eedae08f9c76becd5b2c95564e
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757763"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394801"
 ---
-# <a name="wpa2-enterprise-with-peap-mschapv2-profile-sample"></a>WPA2-Enterprise com PEAP-MSCHAPv2 exemplo de perfil
+# <a name="wpa2-enterprise-with-peap-mschapv2-profile-sample"></a>WPA2-Enterprise exemplo de PEAP-MSCHAPv2 perfil
 
-Este perfil de exemplo usa o protocolo de autenticação extensível protegida com o protocolo PEAP-MSCHAPv2 da Microsoft, com a senha * UserName * **/**  para autenticar-se na rede. O usuário é solicitado a inserir as credenciais.
+Este perfil de exemplo usa o Protocolo de Autenticação Extensível Protegido com o Protocolo de Autenticação de Handshake de Desafio da Microsoft versão 2 (PEAP-MSCHAPv2) com a senha *UserName* para autenticar na **/**  rede. O usuário é solicitado a inserir credenciais.
 
-Este exemplo é configurado para usar a segurança do Wi-Fi Protected Access 2 em execução no modo empresarial (WPA2-Enterprise). O tipo de segurança WPA2-Enterprise usa 802.1 X para a troca de autenticação com o back-end. O tipo de codificação criptografia AES (AES) é usado para criptografia.
+Este exemplo está configurado para usar Wi-Fi segurança do Acesso Protegido 2 em execução no modo Enterprise (WPA2-Enterprise). O WPA2-Enterprise de segurança usa 802.1X para a troca de autenticação com o back-end. O tipo de criptografia criptografia AES (AES) é usado para criptografia.
 
-**Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** O [**nome**](wlan-profileschema-name-wlanprofile-element.md) filho do elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) é ignorado. O nome do perfil, conforme armazenado no repositório de perfis, é derivado do [**nome**](wlan-profileschema-name-ssid-element.md) filho do elemento [**SSID**](wlan-profileschema-ssid-ssidconfig-element.md) .
+**Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** O [**nome**](wlan-profileschema-name-wlanprofile-element.md) filho do [**elemento WLANProfile**](wlan-profileschema-wlanprofile-element.md) é ignorado. O nome do perfil, conforme armazenado no armazenamento de perfil, é derivado do nome [**filho**](wlan-profileschema-name-ssid-element.md) do [**elemento SSID.**](wlan-profileschema-ssid-ssidconfig-element.md)
 
 ``` syntax
 <?xml version="1.0" encoding="US-ASCII"?>

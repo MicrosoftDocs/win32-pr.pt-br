@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Obtenha informações sobre o parâmetro PageMediaSizePSOrientation. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
 ms.assetid: b091c250-66f2-47cc-a012-1526c0ed02c9
 title: PageMediaSizePSOrientation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d16a9a2e59ebffb41ad7c9a9c16eaf41497ade62
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: adb1b3aff1099199a98d6c8be899824dd1a1f17c
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997553"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395721"
 ---
 # <a name="pagemediasizepsorientation"></a>PageMediaSizePSOrientation
 
@@ -24,7 +24,7 @@ Especifica a orientação relativa à direção da orientação do feed (referê
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|-------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                     |
 | Prefixo de escopo <br/> | ?<br/>                                             |
@@ -74,9 +74,9 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Propriedade                | xsi:type           | Valor                        |
 |-------------------------|--------------------|------------------------------|
 | Tipo de dados<br/>     | string<br/>  | xs:integer<br/>        |
-| DefaultValue<br/> | integer<br/> | 0<br/>                 |
+| DefaultValue<br/> | inteiro<br/> | 0<br/>                 |
 | MaxValue<br/>     | Número inteiro<br/> | 3<br/>                 |
-| MinValue<br/>     | integer<br/> | 0<br/>                 |
+| MinValue<br/>     | inteiro<br/> | 0<br/>                 |
 | Obrigatório<br/>    | string<br/>  | PSK: condicional<br/>   |
 | Vários<br/>     | integer<br/> | 1<br/>                 |
 | UnitType<br/>     | string<br/>  | PageMediaSizeEnum<br/> |

@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Leia sobre os elementos ParameterRef na estrutura de esquema de impressão. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
 ms.assetid: 78df6acf-eb4e-46c1-bf1d-c0a99cf49bff
 title: Elementos ParameterRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30c0e145e99b1ee705d63449cf693c6fc87f6463
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 2935317bc4107e2071911ab1df826426b2bcec17
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104011972"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396521"
 ---
 # <a name="parameterref-elements"></a>Elementos ParameterRef
 

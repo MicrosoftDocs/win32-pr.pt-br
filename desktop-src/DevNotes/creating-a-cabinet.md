@@ -1,15 +1,15 @@
 ---
-description: A sintaxe a seguir ilustra a criação de um gabinete.
+description: Veja um exemplo de código que ilustra como criar um gabinete usando a API de Gabinete. Para compilar, as funções de retorno de chamada devem ser definidas.
 ms.assetid: a16c332d-5afc-46ad-992b-324ed5e70683
 title: Criando um gabinete
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b54df5e5373de82e7de6cc194d3e16e6917bb62
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7d1d746a61f09237d08ade349ea33b4ec8146913
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104163948"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396601"
 ---
 # <a name="creating-a-cabinet"></a>Criando um gabinete
 
@@ -249,7 +249,7 @@ LPCSTR FCIErrorToString(FCIERROR err)
 
 <dl> <dt>
 
-[**FCICreate**](/windows/desktop/api/Fci/nf-fci-fcicreate)
+[**FCICriar**](/windows/desktop/api/Fci/nf-fci-fcicreate)
 </dt> <dt>
 
 [**FCIAddFile**](/windows/desktop/api/Fci/nf-fci-fciaddfile)
@@ -264,7 +264,7 @@ LPCSTR FCIErrorToString(FCIERROR err)
 [**FCIDestroy**](/windows/desktop/api/Fci/nf-fci-fcidestroy)
 </dt> <dt>
 
-[Macros da API do gabinete](cabinet-api-macros.md)
+[Macros de API de Gabinete](cabinet-api-macros.md)
 </dt> </dl>
 
  

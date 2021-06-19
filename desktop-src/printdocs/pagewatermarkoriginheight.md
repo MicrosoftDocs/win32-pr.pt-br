@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Obtenha informações sobre o parâmetro PageWatermarkOriginHeight. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
 ms.assetid: ef429727-d881-408b-95ce-2acce667654a
 title: PageWatermarkOriginHeight
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90736f8cac9c919f9d640ffc01311024ef79bc3a
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: d59e9336088d44cef1941df03319519ae69af1c3
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994483"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395981"
 ---
 # <a name="pagewatermarkoriginheight"></a>PageWatermarkOriginHeight
 
@@ -24,7 +24,7 @@ Especifica a origem de uma marca d' água em relação à origem do PageImageabl
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|--------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                    |
 | Prefixo de escopo <br/> | ?<br/>                            |
@@ -76,7 +76,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Tipo de dados<br/>     | string<br/>  | xs:integer<br/>                                                   |
 | DefaultValue<br/> | Número inteiro<br/> | não definido<br/>                                                    |
 | MaxValue<br/>     | Número inteiro<br/> | Menor ou igual ao valor de PageImageableSize-ExtentHeight<br/> |
-| MinValue<br/>     | integer<br/> | 0<br/>                                                            |
+| MinValue<br/>     | inteiro<br/> | 0<br/>                                                            |
 | Vários<br/>     | integer<br/> | 1<br/>                                                            |
 | Obrigatório<br/>    | string<br/>  | PSK: condicional<br/>                                              |
 | UnitType<br/>     | string<br/>  | mícrons<br/>                                                      |

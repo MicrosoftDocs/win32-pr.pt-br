@@ -1,23 +1,23 @@
 ---
-description: Usa uma chave pré-compartilhada para autenticação de rede.
+description: Usa uma chave pré-compartilhada para autenticação de rede. Este perfil de exemplo usa Wi-Fi segurança de Acesso Protegido em execução no modo Pessoal (WPA-Personal).
 ms.assetid: f04de28b-a98d-40cd-91c8-e446cf669555
-title: Exemplo de perfil de WPA-Personal
+title: exemplo WPA-Personal perfil do WPA-Personal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45d4a69fffcb0432e420121ed76c76889eb8bb16
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 334076d4b0cf10372ed845265a1fff652f0879b9
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760228"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395021"
 ---
-# <a name="wpa-personal-profile-sample"></a>Exemplo de perfil de WPA-Personal
+# <a name="wpa-personal-profile-sample"></a>exemplo WPA-Personal perfil do WPA-Personal
 
-Este perfil de exemplo usa uma chave pré-compartilhada para autenticação de rede. A chave é compartilhada com o cliente e o ponto de acesso. Este perfil de exemplo está configurado para usar Wi-Fi segurança de acesso protegido em execução no modo pessoal (WPA-Personal). O TKIP (Temporal Key Integrity Protocol) é usado para criptografia.
+Este perfil de exemplo usa uma chave pré-compartilhada para autenticação de rede. A chave é compartilhada com o cliente e o ponto de acesso. Este perfil de exemplo está configurado para usar Wi-Fi segurança de Acesso Protegido em execução no modo Pessoal (WPA-Personal). O protocolo TKIP é usado para criptografia.
 
-**Windows 7 e Windows Server 2008 R2 com o serviço de LAN sem fio instalado:** As alterações são implementadas no Windows 7 e no Windows Server 2008 R2 com o serviço de LAN sem fio instalado para otimizar o desempenho da rede sem fio. A configuração padrão para [**AutoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) quando este elemento não está definido em um perfil de LAN sem fio foi alterado. A configuração padrão é alterada para "false" no Windows 7 e no Windows Server 2008 R2 com o serviço de LAN sem fio instalado. A configuração padrão era "true" no Windows Server 2008 e no Windows Vista. Veja a descrição do elemento de esquema [**AutoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) para obter mais informações.
+**Windows 7 e Windows Server 2008 R2 com o Serviço lan sem fio instalado:** As alterações são implementadas no Windows 7 e no Windows Server 2008 R2 com o Serviço de LAN Sem Fio instalado para otimizar o desempenho da rede sem fio. A configuração padrão para [**autoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) quando esse elemento não está definido em um perfil de LAN sem fio foi alterada. A configuração padrão é alterada para "false" no Windows 7 e no Windows Server 2008 R2 com o Serviço lan sem fio instalado. A configuração padrão era "true" no Windows Server 2008 e no Windows Vista. Consulte a descrição [**do elemento de esquema autoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) para obter mais informações.
 
-**Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** O [**nome**](wlan-profileschema-name-wlanprofile-element.md) filho do elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) é ignorado. O nome do perfil, conforme armazenado no repositório de perfis, é derivado do [**nome**](wlan-profileschema-name-ssid-element.md) filho do elemento [**SSID**](wlan-profileschema-ssid-ssidconfig-element.md) .
+**Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** O [**nome**](wlan-profileschema-name-wlanprofile-element.md) filho do [**elemento WLANProfile**](wlan-profileschema-wlanprofile-element.md) é ignorado. O nome do perfil, conforme armazenado no armazenamento de perfil, é derivado do nome [**filho**](wlan-profileschema-name-ssid-element.md) do [**elemento SSID.**](wlan-profileschema-ssid-ssidconfig-element.md)
 
 ``` syntax
 <?xml version="1.0" encoding="US-ASCII"?>
@@ -43,9 +43,9 @@ Este perfil de exemplo usa uma chave pré-compartilhada para autenticação de r
 </WLANProfile>
 ```
 
-A chave compartilhada foi omitida deste perfil de exemplo. Se você tentar usar este perfil de exemplo para se conectar a uma rede, será solicitado que você insira uma chave compartilhada. Você pode evitar esse prompt adicionando um elemento filho [**sharedKey**](wlan-profileschema-sharedkey-security-element.md) ao elemento [**Security**](wlan-profileschema-security-msm-element.md) imediatamente após o elemento [**authEncryption**](wlan-profileschema-authencryption-security-element.md) .
+A chave compartilhada foi omitida deste perfil de exemplo. Se você tentar usar esse perfil de exemplo para se conectar a uma rede, será solicitado que você insira uma chave compartilhada. Você pode evitar esse prompt adicionando um [**elemento filho sharedKey**](wlan-profileschema-sharedkey-security-element.md) ao elemento [**de**](wlan-profileschema-security-msm-element.md) segurança imediatamente após o [**elemento authEncryption.**](wlan-profileschema-authencryption-security-element.md)
 
-O trecho a seguir mostra um elemento [**sharedKey**](wlan-profileschema-sharedkey-security-element.md) que contém uma chave não criptografada. Você deve substituir o comentário `<!-- insert key here -->` pela chave não criptografada real antes de usar esse trecho de código em um perfil.
+O snippet a seguir mostra um [**elemento sharedKey**](wlan-profileschema-sharedkey-security-element.md) que contém uma chave não criptografada. Você deve substituir o comentário `<!-- insert key here -->` pela chave não criptografada real antes de usar esse snippet em um perfil.
 
 ``` syntax
 <sharedKey>

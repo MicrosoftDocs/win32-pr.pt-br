@@ -1,16 +1,16 @@
 ---
 title: Carregamentos de UAV (exibição de acesso não ordenado) digitados
-description: A carga digitada UAV (exibição de acesso não ordenada) é a capacidade de um sombreador de ler de um UAV com um formato DXGI específico \_ .
+description: Saiba mais sobre a carga digitada de UAV (exibição de acesso não ordenado) no Direct3D 12. A carga digitada UAV é a capacidade de um sombreador ler de um UAV com um DXGI_FORMAT específico.
 ms.assetid: 6106D15E-EAF6-4583-B4F2-7CC7EE30DE15
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4adfd7511590a43b7f87507c5a1e0a2a87c925b0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 96128354132a58e0b8648fba2b4e1e6babb95535
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104548242"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394761"
 ---
 # <a name="typed-unordered-access-view-uav-loads"></a>Carregamentos de UAV (exibição de acesso não ordenado) digitados
 
@@ -138,15 +138,15 @@ RWBuffer<unorm float> uav;
 [Associação de recursos](resource-binding.md)
 </dt> <dt>
 
-[Associação de recursos em HLSL](resource-binding-in-hlsl.md)
+[Associação de recursos no HLSL](resource-binding-in-hlsl.md)
 </dt> <dt>
 
 [Modelo do sombreador 5,1](/windows/desktop/direct3dhlsl/shader-model-5-1)
 </dt> <dt>
 
-[Especificando assinaturas raiz em HLSL](specifying-root-signatures-in-hlsl.md)
+[Como especificar assinaturas raiz no HLSL](specifying-root-signatures-in-hlsl.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

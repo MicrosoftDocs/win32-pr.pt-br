@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Obtenha informações sobre o parâmetro PageMediaSizePSWidth. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
 ms.assetid: a1a684ce-5615-4ff7-a7aa-5c9f786f84ed
 title: PageMediaSizePSWidth
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f4399b75f047c2705983c893075995800396120
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: dfe678107d2a183ee0f0bf6ce290dfe230fa8cc2
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997543"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395641"
 ---
 # <a name="pagemediasizepswidth"></a>PageMediaSizePSWidth
 
@@ -24,7 +24,7 @@ Especifica a largura da página perpendicular à direção da orientação do fe
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|-------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                     |
 | Prefixo de escopo <br/> | ?<br/>                                             |

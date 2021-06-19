@@ -1,15 +1,15 @@
 ---
 title: Propriedade Visible (objeto Commands)
-description: Propriedade Visible
+description: Saiba mais sobre a Propriedade Visível do objeto Commands, que determina se a legenda da coleção Commands aparece no menu pop-up do caractere.
 ms.assetid: 0178a789-141b-4d4c-ba7c-05c7995f13bc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7eaba059a375c23569195ddaea82e6d03cb943ec
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: a6ea780ed5f19dbe732b18de741f9d7ee376df67
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104369156"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396251"
 ---
 # <a name="visible-property-commands-object"></a>Propriedade Visible (objeto Commands)
 
@@ -17,23 +17,23 @@ ms.locfileid: "104369156"
 
 <dl> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Ndescrição**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descrição**
 </dt> <dd>
 
-Retorna ou define um valor que determina se a legenda da coleção de [**comandos**](/windows/desktop/lwef/the-commands-collection-object) é exibida no menu pop-up do caractere.
+Retorna ou define um valor que determina se a legenda da coleção [**Commands**](/windows/desktop/lwef/the-commands-collection-object) aparece no menu pop-up do caractere.
 
 </dd> <dt>
 
 <span id="Syntax_"></span><span id="syntax_"></span><span id="SYNTAX_"></span>**Sintaxe** 
 </dt> <dd>
 
-*Agente ***. Caracteres (**"* characterid *" * *). Comandos.* *  \[  =  *booliano* visível\]
+*agent***. Characters(**"* CharacterID *"**). Commands.Visible* *  \[  =  *boolean*\]
 
 
 
 | Parte      | Descrição                                                                                                                                                                                                                             |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *booleano* | Uma expressão booliana que especifica se o objeto de [**comandos**](/windows/desktop/lwef/the-commands-collection-object) aparece no menu pop-up do caractere. <br/> **Verdadeiro** A legenda é exibida.<br/> **Falso** A legenda não aparece.<br/> |
+| *booleano* | Uma expressão booliana que especifica se o [**objeto Commands**](/windows/desktop/lwef/the-commands-collection-object) aparece no menu pop-up do caractere. <br/> **True** A legenda é exibida.<br/> **False** A legenda não é exibida.<br/> |
 
 
 
@@ -43,7 +43,7 @@ Retorna ou define um valor que determina se a legenda da coleção de [**comando
 
 ## <a name="remarks"></a>Comentários
 
-Para que a legenda apareça no menu pop-up do caractere quando seu aplicativo não for o cliente de entrada-ativo, essa propriedade deverá ser definida como **true** e a propriedade [**Caption**](caption-property.md) definida para a coleção de comandos. Além disso, essa propriedade deve ser definida como **true** para que os comandos em sua coleção sejam exibidos no menu pop-up quando seu aplicativo for Input-active.
+Para que a legenda apareça no menu pop-up do caractere quando seu aplicativo não for o cliente de entrada ativa, essa propriedade deverá ser definida como **True** e a propriedade [**Legenda**](caption-property.md) definida para sua coleção comandos. Além disso, essa propriedade deve ser definida como **True** para que os comandos em sua coleção apareçam no menu pop-up quando seu aplicativo estiver ativo de entrada.
 
  
 

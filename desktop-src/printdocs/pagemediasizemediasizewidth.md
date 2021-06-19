@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Obtenha informações sobre o parâmetro PageMediaSizeMediaSizeWidth. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
 ms.assetid: 22e4a6e9-4d18-4fff-873c-27ba59a79222
 title: PageMediaSizeMediaSizeWidth
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50df088fd25a69ee566e1406d3f1b833aa6131f5
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 1b3f84e36f689d4b3c5ca060020327d78b12f7d6
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997563"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112395831"
 ---
 # <a name="pagemediasizemediasizewidth"></a>PageMediaSizeMediaSizeWidth
 
@@ -24,7 +24,7 @@ Especifica a direção da dimensão MediaSizeWidth para a opção MediaSize pers
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|-----------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                   |
 | Prefixo de escopo <br/> | ?<br/>                                           |

@@ -1,15 +1,15 @@
 ---
-description: O Windows GDI+ expõe uma API simples que consiste em cerca de 600 funções, que são implementadas em Gdiplus.dll e declaradas em Gdiplusflat. h.
+description: O Windows GDI+ expõe uma API simples que consiste em cerca de 600 funções. Essas funções de API simples são encapsuladas pela classe Font C++.
 ms.assetid: fcc37af2-cd90-42e6-9b7f-20b123f8ab1f
 title: Funções de fonte
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8d0257e876002464cd89b3e70fbf4ec7b0a91a2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3b850403959bff84bf4ecd7b40a4992fa6147fce
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988874"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394961"
 ---
 # <a name="font-functions"></a>Funções de fonte
 

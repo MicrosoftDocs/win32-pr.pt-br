@@ -1,5 +1,5 @@
 ---
-description: 'Este tópico é organizado da seguinte maneira:'
+description: Entenda as práticas recomendadas para manipuladores de menu de atalho e vários verbos ao implementar um formato de arquivo personalizado no Shell do Windows.
 title: Práticas recomendadas para manipuladores de menu de atalho e vários verbos
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: f8b47807c4647aec274e64dbcd137833d13e23cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 14ec2e8915aa1df47ca21c6436ec963be3f590f5
+ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968066"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396441"
 ---
 # <a name="best-practices-for-shortcut-menu-handlers-and-multiple-verbs"></a>Práticas recomendadas para manipuladores de menu de atalho e vários verbos
 
@@ -44,8 +44,8 @@ A lista a seguir representa as práticas recomendadas para implementações de v
 -   Evite o uso de **rundll32.exe** como o host para o verbo.
 -   Ao implementar [**IContextMenu:: QueryContextMenu**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-icontextmenu-querycontextmenu) , certifique-se de retornar o número de verbos que foram adicionados ao menu por meio do valor **HRESULT** usando a macro ResultFromShort.
 -   Se você se registrar em uma das seguintes entradas de chave do registro, tenha cuidado e certifique-se de registrar seu manipulador no tipo mais específico para reduzir as consequências possivelmente indesejadas:
-    -   **HKEY \_ CLASSES \_ \\ raiz \** _
-    -   _ *HKEY \_ classes \_ root \\ AllFileSystemObjects**
+    -   **\_raiz de classes hKey \_\\\***
+    -   **\_AllFileSystemObjects de \_ raiz de classes hKey \\**
     -   **\_ \_ Pasta raiz de classes hKey \\**
     -   **\_ \_ Diretório raiz de classes hKey \\**
 -   Defina a chave **MayChangeDefaultMenu** somente se você antecipar que talvez precise alterar o verbo padrão no menu de atalho. Se o manipulador não alterar o verbo padrão, você não deverá definir essa chave porque isso faz com que o sistema carregue sua DLL desnecessariamente.
@@ -72,7 +72,7 @@ Os verbos do estilo do jogador devem ser otimistas e ignorar silenciosamente os 
 [Escolhendo um verbo estático ou dinâmico para o menu de atalho](shortcut-choose-method.md)
 </dt> <dt>
 
-[Criando manipuladores de menu de atalho](context-menu-handlers.md)
+[Como Criar Manipuladores do Menu de Atalho](context-menu-handlers.md)
 </dt> <dt>
 
 [Personalizando um menu de atalho usando verbos dinâmicos](shortcut-menu-using-dynamic-verbs.md)
