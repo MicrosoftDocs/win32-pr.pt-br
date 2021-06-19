@@ -1,19 +1,19 @@
 ---
-description: Este tópico contém código para o tutorial como reproduzir arquivos de mídia com Media Foundation.
+description: Este artigo contém código para o arquivo player.cpp para o tutorial Como reproduzir arquivos de mídia com Media Foundation.
 ms.assetid: 18715721-f1cd-40c7-a6b7-4bd911ff999d
-title: Player. cpp
+title: player.cpp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 013b7d498bb9d98e4993d13b78cc67d97043810f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5938c07b50da12c1765c34b8b89581991f977afe
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502259"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404559"
 ---
-# <a name="playercpp"></a><span data-ttu-id="819a2-103">Player. cpp</span><span class="sxs-lookup"><span data-stu-id="819a2-103">player.cpp</span></span>
+# <a name="playercpp"></a><span data-ttu-id="cd125-103">player.cpp</span><span class="sxs-lookup"><span data-stu-id="cd125-103">player.cpp</span></span>
 
-<span data-ttu-id="819a2-104">Este tópico contém código para o tutorial [como reproduzir arquivos de mídia com Media Foundation](how-to-play-unprotected-media-files.md).</span><span class="sxs-lookup"><span data-stu-id="819a2-104">This topic contains code for the tutorial [How to Play Media Files with Media Foundation](how-to-play-unprotected-media-files.md).</span></span>
+<span data-ttu-id="cd125-104">Este tópico contém código para o tutorial Como reproduzir arquivos de [mídia com Media Foundation](how-to-play-unprotected-media-files.md).</span><span class="sxs-lookup"><span data-stu-id="cd125-104">This topic contains code for the tutorial [How to Play Media Files with Media Foundation](how-to-play-unprotected-media-files.md).</span></span>
 
 
 ```C++
@@ -946,14 +946,14 @@ done:
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="819a2-105">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="819a2-105">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="cd125-105">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="cd125-105">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="819a2-106">Exemplo de reprodução de sessão de mídia</span><span class="sxs-lookup"><span data-stu-id="819a2-106">Media Session Playback Example</span></span>](media-session-playback-example.md)
+[<span data-ttu-id="cd125-106">Exemplo de reprodução de sessão de mídia</span><span class="sxs-lookup"><span data-stu-id="cd125-106">Media Session Playback Example</span></span>](media-session-playback-example.md)
 </dt> <dt>
 
-[<span data-ttu-id="819a2-107">Reprodução de áudio/vídeo</span><span class="sxs-lookup"><span data-stu-id="819a2-107">Audio/Video Playback</span></span>](audio-video-playback.md)
+[<span data-ttu-id="cd125-107">Reprodução de áudio/vídeo</span><span class="sxs-lookup"><span data-stu-id="cd125-107">Audio/Video Playback</span></span>](audio-video-playback.md)
 </dt> </dl>
 
  

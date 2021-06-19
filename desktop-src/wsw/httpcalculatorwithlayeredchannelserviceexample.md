@@ -1,6 +1,6 @@
 ---
 title: HttpCalculatorWithLayeredChannelServiceExample
-description: Este exemplo mostra como usar o host de serviço para hospedar um serviço de calculadora com uma implementação de canal e ouvinte personalizado que é a camada sobre HTTP.
+description: Examine um exemplo de C++ de API de serviços Web do Windows (WWSAPI) de uma calculadora de HTTP com serviço de canal em camadas.
 ms.assetid: c5bc37bc-f242-4eda-abc4-510793d301d8
 keywords:
 - HttpCalculatorWithLayeredChannelServiceExample nativo – Web-Services
@@ -8,26 +8,26 @@ keywords:
 - WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 933e39cc687ecd057f112119ff9b47be9123deff
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 277703f703051bfff77efbc01b14d25bd427a1f5
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364135"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404139"
 ---
-# <a name="httpcalculatorwithlayeredchannelserviceexample"></a><span data-ttu-id="f92e8-106">HttpCalculatorWithLayeredChannelServiceExample</span><span class="sxs-lookup"><span data-stu-id="f92e8-106">HttpCalculatorWithLayeredChannelServiceExample</span></span>
+# <a name="httpcalculatorwithlayeredchannelserviceexample"></a><span data-ttu-id="c5eb1-106">HttpCalculatorWithLayeredChannelServiceExample</span><span class="sxs-lookup"><span data-stu-id="c5eb1-106">HttpCalculatorWithLayeredChannelServiceExample</span></span>
 
-<span data-ttu-id="f92e8-107">Este exemplo mostra como usar o host de serviço para hospedar um serviço de calculadora com uma implementação de canal e ouvinte personalizado que é a camada sobre HTTP.</span><span class="sxs-lookup"><span data-stu-id="f92e8-107">This example shows how to use service host for hosting a calculator service with a custom channel and listener implementation that layer on top of HTTP.</span></span>
+<span data-ttu-id="c5eb1-107">Este exemplo mostra como usar o host de serviço para hospedar um serviço de calculadora com uma implementação de canal e ouvinte personalizado que é a camada sobre HTTP.</span><span class="sxs-lookup"><span data-stu-id="c5eb1-107">This example shows how to use service host for hosting a calculator service with a custom channel and listener implementation that layer on top of HTTP.</span></span>
 
--   [<span data-ttu-id="f92e8-108">HttpCalculatorWithLayeredChannelService. cpp</span><span class="sxs-lookup"><span data-stu-id="f92e8-108">HttpCalculatorWithLayeredChannelService.cpp</span></span>](#httpcalculatorwithlayeredchannelservicecpp)
--   [<span data-ttu-id="f92e8-109">LayeredChannel. h</span><span class="sxs-lookup"><span data-stu-id="f92e8-109">LayeredChannel.h</span></span>](#layeredchannelh)
--   [<span data-ttu-id="f92e8-110">LayeredChannel. cpp</span><span class="sxs-lookup"><span data-stu-id="f92e8-110">LayeredChannel.cpp</span></span>](#layeredchannelcpp)
--   [<span data-ttu-id="f92e8-111">LayeredListener. h</span><span class="sxs-lookup"><span data-stu-id="f92e8-111">LayeredListener.h</span></span>](#layeredlistenerh)
--   [<span data-ttu-id="f92e8-112">LayeredListener. cpp</span><span class="sxs-lookup"><span data-stu-id="f92e8-112">LayeredListener.cpp</span></span>](#layeredlistenercpp)
--   [<span data-ttu-id="f92e8-113">CalculatorService. WSDL</span><span class="sxs-lookup"><span data-stu-id="f92e8-113">CalculatorService.wsdl</span></span>](#calculatorservicewsdl)
--   [<span data-ttu-id="f92e8-114">Makefile</span><span class="sxs-lookup"><span data-stu-id="f92e8-114">Makefile</span></span>](#makefile)
+-   [<span data-ttu-id="c5eb1-108">HttpCalculatorWithLayeredChannelService. cpp</span><span class="sxs-lookup"><span data-stu-id="c5eb1-108">HttpCalculatorWithLayeredChannelService.cpp</span></span>](#httpcalculatorwithlayeredchannelservicecpp)
+-   [<span data-ttu-id="c5eb1-109">LayeredChannel. h</span><span class="sxs-lookup"><span data-stu-id="c5eb1-109">LayeredChannel.h</span></span>](#layeredchannelh)
+-   [<span data-ttu-id="c5eb1-110">LayeredChannel. cpp</span><span class="sxs-lookup"><span data-stu-id="c5eb1-110">LayeredChannel.cpp</span></span>](#layeredchannelcpp)
+-   [<span data-ttu-id="c5eb1-111">LayeredListener. h</span><span class="sxs-lookup"><span data-stu-id="c5eb1-111">LayeredListener.h</span></span>](#layeredlistenerh)
+-   [<span data-ttu-id="c5eb1-112">LayeredListener. cpp</span><span class="sxs-lookup"><span data-stu-id="c5eb1-112">LayeredListener.cpp</span></span>](#layeredlistenercpp)
+-   [<span data-ttu-id="c5eb1-113">CalculatorService. WSDL</span><span class="sxs-lookup"><span data-stu-id="c5eb1-113">CalculatorService.wsdl</span></span>](#calculatorservicewsdl)
+-   [<span data-ttu-id="c5eb1-114">Makefile</span><span class="sxs-lookup"><span data-stu-id="c5eb1-114">Makefile</span></span>](#makefile)
 
-## <a name="httpcalculatorwithlayeredchannelservicecpp"></a><span data-ttu-id="f92e8-115">HttpCalculatorWithLayeredChannelService. cpp</span><span class="sxs-lookup"><span data-stu-id="f92e8-115">HttpCalculatorWithLayeredChannelService.cpp</span></span>
+## <a name="httpcalculatorwithlayeredchannelservicecpp"></a><span data-ttu-id="c5eb1-115">HttpCalculatorWithLayeredChannelService. cpp</span><span class="sxs-lookup"><span data-stu-id="c5eb1-115">HttpCalculatorWithLayeredChannelService.cpp</span></span>
 
 
 ```C++
@@ -389,7 +389,7 @@ Exit:
 
 
 
-## <a name="layeredchannelh"></a><span data-ttu-id="f92e8-116">LayeredChannel. h</span><span class="sxs-lookup"><span data-stu-id="f92e8-116">LayeredChannel.h</span></span>
+## <a name="layeredchannelh"></a><span data-ttu-id="c5eb1-116">LayeredChannel. h</span><span class="sxs-lookup"><span data-stu-id="c5eb1-116">LayeredChannel.h</span></span>
 
 
 ```C++
@@ -422,7 +422,7 @@ extern WS_CUSTOM_CHANNEL_CALLBACKS layeredChannelCallbacks;
 
 
 
-## <a name="layeredchannelcpp"></a><span data-ttu-id="f92e8-117">LayeredChannel. cpp</span><span class="sxs-lookup"><span data-stu-id="f92e8-117">LayeredChannel.cpp</span></span>
+## <a name="layeredchannelcpp"></a><span data-ttu-id="c5eb1-117">LayeredChannel. cpp</span><span class="sxs-lookup"><span data-stu-id="c5eb1-117">LayeredChannel.cpp</span></span>
 
 
 ```C++
@@ -678,7 +678,7 @@ WS_CUSTOM_CHANNEL_CALLBACKS layeredChannelCallbacks =
 
 
 
-## <a name="layeredlistenerh"></a><span data-ttu-id="f92e8-118">LayeredListener. h</span><span class="sxs-lookup"><span data-stu-id="f92e8-118">LayeredListener.h</span></span>
+## <a name="layeredlistenerh"></a><span data-ttu-id="c5eb1-118">LayeredListener. h</span><span class="sxs-lookup"><span data-stu-id="c5eb1-118">LayeredListener.h</span></span>
 
 
 ```C++
@@ -710,7 +710,7 @@ extern WS_CUSTOM_LISTENER_CALLBACKS layeredListenerCallbacks;
 
 
 
-## <a name="layeredlistenercpp"></a><span data-ttu-id="f92e8-119">LayeredListener. cpp</span><span class="sxs-lookup"><span data-stu-id="f92e8-119">LayeredListener.cpp</span></span>
+## <a name="layeredlistenercpp"></a><span data-ttu-id="c5eb1-119">LayeredListener. cpp</span><span class="sxs-lookup"><span data-stu-id="c5eb1-119">LayeredListener.cpp</span></span>
 
 
 ```C++
@@ -948,7 +948,7 @@ WS_CUSTOM_LISTENER_CALLBACKS layeredListenerCallbacks =
 
 
 
-## <a name="calculatorservicewsdl"></a><span data-ttu-id="f92e8-120">CalculatorService. WSDL</span><span class="sxs-lookup"><span data-stu-id="f92e8-120">CalculatorService.wsdl</span></span>
+## <a name="calculatorservicewsdl"></a><span data-ttu-id="c5eb1-120">CalculatorService. WSDL</span><span class="sxs-lookup"><span data-stu-id="c5eb1-120">CalculatorService.wsdl</span></span>
 
 ``` syntax
 <wsdl:definitions 
@@ -1045,7 +1045,7 @@ WS_CUSTOM_LISTENER_CALLBACKS layeredListenerCallbacks =
 </wsdl:definitions>
 ```
 
-## <a name="makefile"></a><span data-ttu-id="f92e8-121">Makefile</span><span class="sxs-lookup"><span data-stu-id="f92e8-121">Makefile</span></span>
+## <a name="makefile"></a><span data-ttu-id="c5eb1-121">Makefile</span><span class="sxs-lookup"><span data-stu-id="c5eb1-121">Makefile</span></span>
 
 ``` syntax
 !include <Win32.Mak>
@@ -1080,9 +1080,9 @@ clean:
 
 ```
 
- 
+ 
 
- 
+ 
 
 
 
