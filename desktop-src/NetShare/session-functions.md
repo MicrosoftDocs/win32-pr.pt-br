@@ -1,15 +1,15 @@
 ---
-description: As funções de sessão de gerenciamento de rede controlam as sessões de rede estabelecidas entre estações de trabalho e servidores. As funções exigem que o serviço do servidor seja iniciado no servidor.
+description: Entenda as funções de sessão no gerenciamento de compartilhamento de rede. Essas funções controlam as sessões de rede estabelecidas entre estações de trabalho e servidores.
 ms.assetid: 931455e3-1301-4a68-93c3-2674b3d4c491
 title: Funções de sessão (gerenciamento de compartilhamento de rede)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c672abd7c976cb9f83fa4f387dd40d175879dee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1cdde451eb2942171569b24c36aae5d5742208e5
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105770138"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409719"
 ---
 # <a name="session-functions-network-share-management"></a>Funções de sessão (gerenciamento de compartilhamento de rede)
 

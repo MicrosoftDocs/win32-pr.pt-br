@@ -1,6 +1,6 @@
 ---
-description: O namespace do Shell organiza o sistema de arquivos e outros objetos gerenciados pelo shell em uma única hierarquia estruturada em árvore. Conceitualmente, é uma versão maior e mais inclusiva do sistema de arquivos.
-title: Conceitos comuns do Explorer
+description: Entenda os conceitos comuns quando você deseja estender Windows Explorer, que é uma das muitas opções de extensibilidade na interface do usuário do Windows Shell.
+title: Conceitos do Common Explorer
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: 78136c36-bd3c-4114-8b69-fef4e307566d
@@ -9,64 +9,64 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: d5ea7d154ef0455576d91f99eb53dccd93c25339
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: db9b46bf944992a16b6a1b8a9bcad581ec7d661b
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104567220"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404929"
 ---
-# <a name="common-explorer-concepts"></a>Conceitos comuns do Explorer
+# <a name="common-explorer-concepts"></a>Conceitos do Common Explorer
 
-O *namespace* do Shell organiza o sistema de arquivos e outros objetos gerenciados pelo shell em uma única hierarquia estruturada em árvore. Conceitualmente, é uma versão maior e mais inclusiva do sistema de arquivos.
+O *namespace do* Shell organiza o sistema de arquivos e outros objetos gerenciados pelo Shell em uma única hierarquia estruturada por árvore. Conceitualmente, é uma versão maior e mais inclusiva do sistema de arquivos.
 
 -   [Introdução](#introduction)
 -   [Identificando objetos de namespace](#identifying-namespace-objects)
-    -   [IDs de item](#item-ids)
-    -   [Listas de IDs de itens](#item-id-lists)
-    -   [PIDLs](#pidls)
+    -   [Item IDs](#item-ids)
+    -   [Listas de IDs de Item](#item-id-lists)
+    -   [Pidls](#pidls)
     -   [Alocando PIDLs](#allocating-pidls)
 
 ## <a name="introduction"></a>Introdução
 
-Uma das principais responsabilidades do Shell é gerenciar e fornecer acesso à ampla variedade de objetos que compõem o sistema. Os mais numerosos e familiares desses objetos são as pastas e os arquivos que residem nas unidades de disco do computador. No entanto, o Shell gerencia um número de objetos não-arquivo, ou também de objeto *virtual* . Alguns exemplos incluem:
+Uma das principais responsabilidades do Shell é gerenciar e fornecer acesso à ampla variedade de objetos que compõe o sistema. Os mais diversos e familiares desses objetos são as pastas e arquivos que residem em unidades de disco do computador. No entanto, o Shell também gerencia vários sistemas não arquivos ou *objetos* virtuais. Alguns exemplos incluem:
 
 -   Impressoras de rede
 -   Outros computadores em rede
--   Aplicativos do painel de controle
--   A lixeira
+-   Painel de Controle aplicativos
+-   O Lixeira
 
-Alguns objetos virtuais não envolvem o armazenamento físico. O objeto Printer, por exemplo, contém uma coleção de links para impressoras em rede. Outros objetos virtuais, como a lixeira, podem conter dados armazenados em uma unidade de disco, mas precisam ser tratados de forma diferente dos arquivos normais. Por exemplo, um objeto virtual pode ser usado para representar dados armazenados em um banco de dado. Em termos do namespace, os vários itens no banco de dados podem aparecer no Windows Explorer como objetos separados, mesmo que estejam todos armazenados em um único arquivo de disco.
+Alguns objetos virtuais não envolvem armazenamento físico. O objeto de impressora, por exemplo, contém uma coleção de links para impressoras em rede. Outros objetos virtuais, como o Lixeira, podem conter dados armazenados em uma unidade de disco, mas precisam ser tratados de maneira diferente dos arquivos normais. Por exemplo, um objeto virtual pode ser usado para representar dados armazenados em um banco de dados. Em termos de namespace, os vários itens no banco de dados podem aparecer no Windows Explorer como objetos separados, mesmo que todos eles sejam armazenados em um único arquivo de disco.
 
-Os objetos virtuais podem até estar localizados em computadores remotos. Por exemplo, para facilitar o roaming, os arquivos de documento de um usuário podem ser armazenados em um servidor. Para conceder aos usuários acesso a seus arquivos de vários computadores desktop, a pasta meus documentos no computador desktop que eles estão usando no momento apontará para o servidor, não para o disco rígido do PC desktop. Seu caminho incluirá uma unidade de rede mapeada ou um nome de caminho UNC.
+Objetos virtuais podem até mesmo estar localizados em computadores remotos. Por exemplo, para facilitar o roaming, os arquivos de documento de um usuário podem ser armazenados em um servidor. Para dar aos usuários acesso aos arquivos de vários computadores desktop, a pasta Meus Documentos no computador desktop que eles estão usando no momento apontará para o servidor, não para o disco rígido do computador desktop. Seu caminho incluirá uma unidade de rede mapeada ou um nome de caminho UNC.
 
-Assim como o sistema de arquivos, o namespace inclui dois tipos básicos de objeto: pastas e arquivos. Os objetos de pasta são os *nós* da árvore; Eles são contêineres para objetos de arquivo e outras pastas. Os objetos de arquivo são as *folhas* da árvore; Eles são arquivos de disco normais ou objetos virtuais, como links de impressora. As pastas que não fazem parte do sistema de arquivos são, às vezes, chamadas de *pastas virtuais*.
+Assim como o sistema de arquivos, o namespace inclui dois tipos básicos de objeto: pastas e arquivos. Objetos de pasta são *os nós* da árvore; eles são contêineres para objetos de arquivo e outras pastas. Objetos de arquivo são *as folhas* da árvore; eles são arquivos de disco normais ou objetos virtuais, como links de impressora. As pastas que não fazem parte do sistema de arquivos às vezes são *conhecidas* como pastas virtuais .
 
-Como as pastas do sistema de arquivos, a coleção de pastas virtuais geralmente varia de sistema para sistema. Há três classes de pastas virtuais:
+Assim como as pastas do sistema de arquivos, a coleção de pastas virtuais geralmente varia de sistema para sistema. Há três classes de pastas virtuais:
 
--   Pastas virtuais padrão, como a lixeira, que são encontradas em todos os sistemas.
--   Pastas virtuais opcionais que têm nomes e funcionalidades padrão, mas podem não estar presentes em todos os sistemas.
--   Pastas não padrão que são instaladas pelo usuário.
+-   Pastas virtuais padrão, como o Lixeira, que são encontradas em todos os sistemas.
+-   Pastas virtuais opcionais que têm nomes padrão e funcionalidade, mas podem não estar presentes em todos os sistemas.
+-   Pastas não padrão instaladas pelo usuário.
 
-Ao contrário das pastas do sistema de arquivos, os usuários não podem criar novas pastas virtuais por conta própria. Eles só podem instalar aqueles criados por desenvolvedores que não sejam da Microsoft. O número de pastas virtuais, portanto, normalmente é muito menor do que o número de pastas do sistema de arquivos. Para obter uma discussão sobre como implementar pastas virtuais, consulte [extensões de namespace](nse-works.md).
+Ao contrário das pastas do sistema de arquivos, os usuários não podem criar novas pastas virtuais por conta própria. Eles só podem instalar aqueles criados por desenvolvedores que não são da Microsoft. O número de pastas virtuais normalmente é muito menor do que o número de pastas do sistema de arquivos. Para ver uma discussão sobre como implementar pastas virtuais, consulte [Extensões de namespace](nse-works.md).
 
-Você pode ver uma representação visual de como o namespace é estruturado na barra do Explorer do Windows Explorer. Por exemplo, a captura de tela a seguir do Windows Explorer mostra um namespace relativamente simples.
+Você pode ver uma representação visual de como o namespace é estruturado na Barra do Explorer do Windows Explorer. Por exemplo, a captura de tela a seguir Windows Explorer um namespace relativamente simples.
 
-![captura de tela mostrando uma exibição do namespace do Shell](images/prog1.png)
+![captura de tela mostrando uma exibição do namespace do shell](images/prog1.png)
 
-A raiz final da hierarquia de namespace é a área de trabalho. Imediatamente abaixo da raiz há várias pastas virtuais, como Meu Computador e a lixeira.
+A raiz final da hierarquia de namespace é a área de trabalho. Imediatamente abaixo da raiz estão várias pastas virtuais, como Meu Computador e Lixeira.
 
-Os sistemas de arquivos das várias unidades de disco podem ser vistos como subconjuntos da hierarquia de namespace maior. As raízes desses sistemas de arquivos são subpastas da pasta Meu Computador. O Meu Computador também inclui as raízes de todas as unidades de rede mapeadas. Outros nós na árvore, como meus documentos, são pastas virtuais.
+Os sistemas de arquivos das várias unidades de disco podem ser vistos como subconjunto da hierarquia de namespace maior. As raízes desses sistemas de arquivos são subpastas da pasta Meu Computador dados. Meu Computador também inclui as raízes de todas as unidades de rede mapeadas. Outros nós na árvore, como Meus Documentos, são pastas virtuais.
 
 ## <a name="identifying-namespace-objects"></a>Identificando objetos de namespace
 
-Antes de usar um objeto de namespace, você deve primeiro ter uma maneira de identificá-lo. Um objeto no sistema de arquivos pode ter um nome como MyFile.htm. Como pode haver outros arquivos com esse nome em outro lugar no sistema, a identificação exclusiva de um arquivo ou pasta requer um caminho totalmente qualificado, como "C: \\ mydocs \\MyFile.htm". Esse caminho é basicamente uma lista ordenada de todas as pastas em um caminho da raiz do sistema de arquivos, C: \\ , terminando com o arquivo.
+Antes de usar um objeto de namespace, você deve primeiro ter uma maneira de identificá-lo. Um objeto no sistema de arquivos pode ter um nome como MyFile.htm. Como pode haver outros arquivos com esse nome em outro lugar no sistema, identificar exclusivamente um arquivo ou pasta requer um caminho totalmente qualificado, como "C: \\ MyDocs \\MyFile.htm". Esse caminho é basicamente uma lista ordenada de todas as pastas em um caminho da raiz do sistema de arquivos, C: \\ , terminando com o arquivo .
 
-No contexto do namespace, os caminhos ainda são bastante úteis para identificar objetos localizados na parte do sistema de arquivos do namespace. No entanto, eles não podem ser usados para objetos virtuais. Em vez disso, o Shell fornece um meio alternativo de identificação que pode ser usado com qualquer objeto de namespace.
+No contexto do namespace, os caminhos ainda são muito úteis para identificar objetos localizados na parte do sistema de arquivos do namespace. No entanto, eles não podem ser usados para objetos virtuais. Em vez disso, o Shell fornece um meio alternativo de identificação que pode ser usado com qualquer objeto de namespace.
 
-### <a name="item-ids"></a>IDs de item
+### <a name="item-ids"></a>Item IDs
 
-Dentro de uma pasta, cada objeto tem uma *ID de item*, que é o equivalente funcional de um nome de arquivo ou pasta. A ID do item é, na verdade, uma estrutura [**SHITEMID**](/windows/desktop/api/Shtypes/ns-shtypes-shitemid) :
+Em uma pasta, cada objeto tem uma *ID de item*, que é o equivalente funcional de um nome de arquivo ou pasta. A ID do item é, na [**verdade, uma estrutura DEMID:**](/windows/desktop/api/Shtypes/ns-shtypes-shitemid)
 
 
 ```
@@ -78,29 +78,29 @@ typedef struct _SHITEMID {
 
 
 
-O membro **abID** é o identificador do objeto. O comprimento de **abID** não é definido, e seu valor é determinado pela pasta que contém o objeto. Como não há nenhuma definição padrão para como os valores de **abID** são atribuídos por pastas, eles só são significativos para o objeto de pasta associado. Os aplicativos devem simplesmente tratá-los como um token que identifica um objeto em uma determinada pasta. Como o comprimento de **abID** varia, o membro **CB** mantém o tamanho da estrutura [**SHITEMID**](/windows/desktop/api/Shtypes/ns-shtypes-shitemid) , em bytes.
+O **membro abID** é o identificador do objeto. O comprimento de **abID** não está definido e seu valor é determinado pela pasta que contém o objeto . Como não há nenhuma definição padrão de como os **valores abID** são atribuídos por pastas, eles são significativos apenas para o objeto de pasta associado. Os aplicativos devem simplesmente tratá-los como um token que identifica um objeto em uma pasta específica. Como o comprimento de **abID** varia, o **membro cb** mantém o tamanho da estrutura [**DEMID,**](/windows/desktop/api/Shtypes/ns-shtypes-shitemid) em bytes.
 
-Como as IDs de item não são úteis para fins de exibição, a pasta que contém o objeto normalmente atribui a ele um nome de exibição. Esse é o nome usado pelo Windows Explorer quando ele exibe o conteúdo de uma pasta. Para obter mais informações sobre como os nomes de exibição são tratados, consulte [obtendo informações de uma pasta](folder-info.md).
+Como as IDs de item não são úteis para fins de exibição, a pasta que contém o objeto normalmente atribui a ele um nome de exibição. Esse é o nome usado pelo Windows Explorer quando exibe o conteúdo de uma pasta. Para obter mais informações sobre como os nomes de exibição são tratados, consulte [Obter informações de uma pasta](folder-info.md).
 
-### <a name="item-id-lists"></a>Listas de IDs de itens
+### <a name="item-id-lists"></a>Listas de IDs de Item
 
-A ID do item raramente é usada por si só. Normalmente, ele faz parte de uma lista de ID de item, que tem a mesma finalidade que um caminho do sistema de arquivos. No entanto, em vez da cadeia de caracteres usada para caminhos, uma lista de IDs de itens é uma estrutura de [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) . Essa estrutura é uma sequência ordenada de uma ou mais IDs de item, terminadas por um **nulo** de dois bytes. Cada ID de item na lista de ID de item corresponde a um objeto de namespace. Sua ordem define um caminho no namespace, muito parecido com um caminho do sistema de arquivos.
+A ID do item raramente é usada por si só. Normalmente, ele faz parte de uma lista de IDs de item, que serve para a mesma finalidade que um caminho do sistema de arquivos. No entanto, em vez da cadeia de caracteres usada para caminhos, uma lista de IDs de item é uma [**estrutura ITEMIDLIST.**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) Essa estrutura é uma sequência ordenada de uma ou mais IDs de item, terminadas por um NULL de dois **byte.** Cada ID de item na lista de IDs de item corresponde a um objeto de namespace. Sua ordem define um caminho no namespace, assim como um caminho do sistema de arquivos.
 
-A ilustração a seguir mostra uma representação esquemático da estrutura [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) que corresponde a C: \\ mydocs \\MyFile.htm. O nome de exibição de cada ID de item é mostrado acima dele. As larguras variadas dos membros **abID** são arbitrárias; eles ilustram o fato de que o tamanho desse membro pode variar.
+A ilustração a seguir mostra uma representação esquematizada da [**estrutura ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) que corresponde a C: \\ MyDocs \\MyFile.htm. O nome de exibição de cada ID de item é mostrado acima dela. As larguras variáveis dos membros **abID** são arbitrárias; eles ilustram o fato de que o tamanho desse membro pode variar.
 
-![uma ilustração esquemático de um PIDL](images/shell2.png)
+![uma ilustração ilustrativa de um pidl](images/shell2.png)
 
-### <a name="pidls"></a>PIDLs
+### <a name="pidls"></a>Pidls
 
-Para a API do Shell, os objetos de namespace geralmente são identificados por um ponteiro para sua estrutura [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) ou ponteiro para uma lista de identificador de item (PIDL). Para sua conveniência, o termo PIDL geralmente se referirá nesta documentação à estrutura em si, e não ao ponteiro para ela.
+Para a API do Shell, os objetos de namespace geralmente são identificados por um ponteiro para sua estrutura [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) ou ponteiro para uma PIDL (lista de identificadores de item). Para sua conveniência, o termo PIDL geralmente se referirá nesta documentação à própria estrutura em vez do ponteiro para ele.
 
-O PIDL mostrado na ilustração anterior é conhecido como um PIDL *completo*, ou *absoluto*. Um PIDL completo inicia na área de trabalho e contém as IDs de item de todas as pastas intermediárias no caminho. Ele termina com a ID do item do objeto seguido de um **nulo** de dois bytes de terminação. Um PIDL completo é semelhante a um caminho totalmente qualificado e identifica exclusivamente o objeto no namespace do Shell.
+O PIDL mostrado na ilustração anterior é conhecido como um PIDL *completo* *ou* absoluto. Um PIDL completo começa na área de trabalho e contém as IDs de item de todas as pastas intermediárias no caminho. Ele termina com a ID de item do objeto seguida por um NULL de dois byte **de terminação.** Um PIDL completo é semelhante a um caminho totalmente qualificado e identifica exclusivamente o objeto no namespace shell.
 
-As PIDLs completas são usadas com pouca frequência. Muitas funções e métodos esperam um *PIDL relativo*. A raiz de um PIDL relativo é uma pasta, não a área de trabalho. Assim como acontece com caminhos relativos, a série de IDs de item que compõem a estrutura definem um caminho no namespace entre dois objetos. Embora eles não identifiquem exclusivamente o objeto, eles geralmente são menores do que um PIDL completo e suficiente para muitas finalidades.
+As PIDLs completas são usadas com pouca pouca segurança. Muitas funções e métodos esperam um *PIDL relativo.* A raiz de um PIDL relativo é uma pasta, não a área de trabalho. Assim como com caminhos relativos, a série de IDs de item que compõe a estrutura define um caminho no namespace entre dois objetos. Embora eles não identifiquem exclusivamente o objeto, geralmente são menores que um PIDL completo e suficientes para muitas finalidades.
 
-A PIDLs relativa mais comumente usada, a *PIDLs de nível único*, são relativas à pasta pai do objeto. Eles contêm apenas a ID de item do objeto e um **nulo** de terminação. Os PIDLs de vários níveis também são usados para muitas finalidades. Eles contêm duas ou mais IDs de item e normalmente definem um caminho de uma pasta pai para um objeto por meio de uma série de uma ou mais subpastas. Observe que um PIDL de nível único ainda pode ser um PIDL totalmente qualificado. Em particular, os objetos de área de trabalho são filhos da área de trabalho, portanto, seus PIDLs totalmente qualificados contêm apenas uma ID de item.
+As PIDLs relativas mais usadas, *PIDLs* de nível único, são relativas à pasta pai do objeto. Eles contêm apenas a ID do item do objeto e um **NULL de terminação.** As PIDLs de vários níveis também são usadas para muitas finalidades. Eles contêm duas ou mais IDs de item e normalmente definem um caminho de uma pasta pai para um objeto por meio de uma série de uma ou mais subpastas. Observe que um PIDL de nível único ainda pode ser um PIDL totalmente qualificado. Em particular, os objetos da área de trabalho são filhos da área de trabalho, portanto, suas PIDLs totalmente qualificadas contêm apenas uma ID de item.
 
-Conforme discutido na [obtenção da ID de uma pasta](folder-id.md), a API do Shell fornece várias maneiras de recuperar o PIDL de um objeto. Depois de tê-lo, você costuma apenas usá-lo para identificar o objeto ao chamar outras funções e métodos da API do Shell. Nesse contexto, o conteúdo interno de um PIDL é opaco e irrelevante. Para os fins desta discussão, imagine PIDLs como tokens que representam objetos de namespace específicos e concentre-se em como usá-los para tarefas comuns.
+Conforme discutido em [Obter a ID](folder-id.md)de uma pasta, a API do Shell fornece várias maneiras de recuperar o PIDL de um objeto. Depois de tê-lo, você costuma apenas usá-lo para identificar o objeto ao chamar outras funções e métodos da API do Shell. Nesse contexto, o conteúdo interno de um PIDL é opaco e irrelevante. Para os fins desta discussão, imagine PIDLs como tokens que representam objetos de namespace específicos e concentre-se em como usá-los para tarefas comuns.
 
 ### <a name="allocating-pidls"></a>Alocando PIDLs
 

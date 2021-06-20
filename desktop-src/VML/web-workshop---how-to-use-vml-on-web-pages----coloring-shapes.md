@@ -1,6 +1,6 @@
 ---
 title: Formas de cores
-description: Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+description: Este artigo descreve as formas de coloração em VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.
 ms.assetid: f528f0c7-1351-4bca-b309-67511431b711
 keywords:
 - Web Workshop, formas de cores
@@ -20,12 +20,12 @@ keywords:
 - Tercetos RGB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1257c5f5b0cf8021658820f09de6e87099f0a52b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c203debd01d4234ae58900a023944511f9fc73c1
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007851"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407739"
 ---
 # <a name="coloring-shapes"></a>Formas de cores
 
@@ -34,7 +34,7 @@ Este tópico descreve a VML, um recurso que foi preterido a partir do Windows In
 > [!Note]  
 > A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Como mencionamos nas seções anteriores, você pode usar "vermelho" para representar uma cor em vermelho, "azul" para representar uma cor em azul e assim por diante. Neste tópico, Ilustraremos como desenhar formas de qualquer cor desejada.
 
@@ -92,6 +92,6 @@ Na VML, você pode representar uma cor em um dos seguintes formatos:
 2.  FillColor = "RGB (0, 0255)"
 3.  FillColor = " \# 0000FF"
 
- 
+ 
 
- 
+ 

@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: A finalidade do PrintTicket é definir uma única configuração específica que é aplicada ao objeto de trabalho que está sendo processado.
 ms.assetid: 8a7dd185-0324-44a0-8405-59a2fdc1efcb
 title: Finalidade do PrintTicket
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a191f341504a92fbb5f4cd00abd2a4357bbecf21
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: c5d0166e150beedf354e4fb2c99a84e94c519fd5
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105761917"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405329"
 ---
 # <a name="purpose-of-the-printticket"></a>Finalidade do PrintTicket
 

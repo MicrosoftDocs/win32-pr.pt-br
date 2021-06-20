@@ -1,15 +1,15 @@
 ---
 title: Como garantir que seu aplicativo seja exibido corretamente em monitores de alto DPI (DirectWrite)
-description: Descreve como criar uma janela que o exibe corretamente em monitores de alto DPI.
+description: Descreve como garantir que seu aplicativo crie uma janela que é exibida corretamente em monitores de alto DPI.
 ms.assetid: d174a337-c98e-46c7-86d2-c208900882d1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 317eb3379963cec600ab9bac7deb3778f0874e59
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 71166d312fe666644c683fe2ece7dd3ced59f765
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294254"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406419"
 ---
 # <a name="how-to-ensure-that-your-application-displays-properly-on-high-dpi-displays"></a>Como garantir que seu aplicativo seja exibido corretamente em monitores de alto DPI
 
@@ -135,6 +135,6 @@ Quando um aplicativo se declara para ser compatível com DPI, é uma instrução
 [Direct2D e alto DPI](../direct2d/direct2d-and-high-dpi.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

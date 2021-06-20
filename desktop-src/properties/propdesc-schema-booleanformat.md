@@ -1,23 +1,23 @@
 ---
-description: 'Especifica como IPropertyDescription:: FormatForDisplay deve formatar o valor da propriedade como uma cadeia de caracteres. Isso é aplicável somente se <displayInfo displayType=&\#0034;String&\#0034;> .'
+description: Especifica como IPropertyDescription::FormatForDisplay deve formatar o valor da propriedade booleanFormat como uma cadeia de caracteres.
 ms.assetid: f6384910-4411-4ac2-884d-3476c1b6ff96
 title: booleanFormat
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d91332f0cc062e7ee4a83e3584776ecf09c5c4b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 528458d9c31d54ef43eca8325b1daeef4eee1195
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103921814"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405959"
 ---
 # <a name="booleanformat"></a>booleanFormat
 
-Especifica como [**IPropertyDescription:: FormatForDisplay**](/windows/win32/api/propsys/nf-propsys-ipropertydescription-formatfordisplay) deve formatar o valor da propriedade como uma cadeia de caracteres. Isso é aplicável somente se <displayInfo displayType="String"> . Deve haver apenas um elemento [booleanFormat]() para cada elemento [DisplayInfo](./propdesc-schema-displayinfo.md) .
+Especifica como [**IPropertyDescription::FormatForDisplay**](/windows/win32/api/propsys/nf-propsys-ipropertydescription-formatfordisplay) deve formatar o valor da propriedade como uma cadeia de caracteres. Isso será aplicável somente se <displayInfo displayType="String"> . Deve haver apenas um elemento [booleanFormat]() para cada [elemento displayInfo.](./propdesc-schema-displayinfo.md)
 
-Se houver vários elementos, o último será usado. Se nenhum elemento [booleanFormat]() for fornecido, as configurações de atributo padrão serão aplicadas à descrição da propriedade.
+Se houver vários elementos, o último será usado. Se nenhum [elemento booleanFormat]() for fornecido, as configurações de atributo padrão serão aplicadas à descrição da propriedade.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```
@@ -68,8 +68,8 @@ Se houver vários elementos, o último será usado. Se nenhum elemento [booleanF
 </thead>
 <tbody>
 <tr class="odd">
-<td>formato de</td>
-<td>Público. Opcional. O padrão é &quot; YesNo &quot; . Os seguintes valores são válidos: 
+<td>formatAs</td>
+<td>Público. Opcional. O padrão é &quot; &quot; YesNo. Os seguintes valores são válidos: 
 <table>
 <thead>
 <tr class="header">
@@ -79,16 +79,16 @@ Se houver vários elementos, o último será usado. Se nenhum elemento [booleanF
 </thead>
 <tbody>
 <tr class="odd">
-<td>YesNo</td>
-<td>Padrão. Formata o valor como &quot; Sim &quot; ou &quot; não &quot; . Requer que o tipo de propriedade seja booliano.</td>
+<td>Yesno</td>
+<td>Padrão. Formatar o valor como &quot; Sim &quot; ou &quot; &quot; Não. Requer que o tipo de propriedade seja booliana.</td>
 </tr>
 <tr class="even">
-<td>OnOff</td>
-<td>Formata o valor como &quot; on &quot; ou &quot; off &quot; . Requer que o tipo de propriedade seja booliano.</td>
+<td>Onoff</td>
+<td>Formatar o valor como &quot; On &quot; ou &quot; &quot; Off. Requer que o tipo de propriedade seja booliana.</td>
 </tr>
 <tr class="odd">
 <td>TrueFalse</td>
-<td>Formata o valor como &quot; true &quot; ou &quot; false &quot; . Requer que o tipo de propriedade seja booliano.</td>
+<td>Formatar o valor como &quot; True &quot; ou &quot; &quot; False. Requer que o tipo de propriedade seja booliana.</td>
 </tr>
 </tbody>
 </table>

@@ -1,6 +1,6 @@
 ---
 title: Interfaces necessárias (SDK do Windows Media Player)
-description: Interfaces necessárias
+description: Saiba mais sobre as interfaces necessárias que o Windows Media Player implementa no DirectShow ou Media Foundation.
 ms.assetid: 202d5769-edff-46df-bc05-bbb630a8f3f4
 keywords:
 - Plug-ins do Windows Media Player, interfaces
@@ -10,12 +10,12 @@ keywords:
 - interfaces, plug-ins do DSP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e9c6923af513f2d241955b508f0872f85a4b020
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 3d27a0c0ed56db5f35c8cde8203fcf99a81a9260
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103824116"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406089"
 ---
 # <a name="required-interfaces-windows-media-player-sdk"></a>Interfaces necessárias (SDK do Windows Media Player)
 

@@ -1,15 +1,15 @@
 ---
-description: Etapa 5.
+description: Use este exemplo para entender como o codificador RLE pode implementar o método como parte da gravação de um filtro de transformação.
 ms.assetid: b7d878ab-523f-4b52-b98d-c9d4fa18ce8a
 title: Etapa 5. Transformar a imagem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 609acb626d00dbceea8b6f5bca6af012d8158b57
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ac9d32e48ba438f8bde2d8d4d9aca3b827ebc0c
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170968"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406779"
 ---
 # <a name="step-5-transform-the-image"></a>Etapa 5. Transformar a imagem
 

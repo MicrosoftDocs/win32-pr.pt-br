@@ -1,15 +1,15 @@
 ---
 title: Propriedade Enabled (objeto Balloon)
-description: Propriedade Enabled
+description: Saiba mais sobre a propriedade de objeto balão habilitada. O Microsoft Agent foi preterido a partir do Windows 7.
 ms.assetid: 4d73acda-6fcc-4912-a466-570849aeb807
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07179390b183e98a5eaccb2dfdb4405525d7d26e
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 602d39a9bef7713a92707d8a43050f04a3577b6d
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105781163"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407299"
 ---
 # <a name="enabled-property-balloon-object"></a>Propriedade Enabled (objeto Balloon)
 

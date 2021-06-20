@@ -1,15 +1,15 @@
 ---
 title: Espaço de configuração do dispositivo
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: O espaço de configuração de um dispositivo é o conjunto de todos os valores possíveis que podem ser atribuídos a todos os atributos do dispositivo.
 ms.assetid: 598299c3-159f-4cad-b6a5-d282cd5bb4a1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 120e12b6480675dba6e735390f4820a8782edc5c
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: e4871da3695e81168d43504456c357b0cf566b7f
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105761241"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409479"
 ---
 # <a name="device-configuration-space-and-device-configurations"></a>Espaço de configuração do dispositivo e configurações do dispositivo
 

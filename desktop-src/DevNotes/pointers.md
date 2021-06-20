@@ -1,15 +1,15 @@
 ---
-description: Ponteiros
+description: Use esses recursos para saber mais sobre ponteiros, como DecodePointer, DecodeRemotePointer e EncodePointer.
 ms.assetid: C7A3753E-072D-41B6-A445-FA7F270A7D44
 title: Ponteiros (notas do desenvolvedor)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4fa8ec20867e37cdab354d352ffc2bf673d6a60
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: aff7c8d3257830defd6e6c307f050f081b9158ca
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104088945"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408319"
 ---
 # <a name="pointers-developer-notes"></a>Ponteiros (notas do desenvolvedor)
 

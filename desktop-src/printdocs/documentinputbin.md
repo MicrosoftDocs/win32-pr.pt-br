@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento DocumentInputBin, que descreve o compartimento de entrada instalado em um dispositivo ou a lista completa de compartimentos com suporte para um dispositivo.
 ms.assetid: 334503d7-c044-41f7-b6aa-892b002b7a4e
 title: DocumentInputBin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57890492ed5f0b575e6d462351282dd199f34f45
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 452e2f94b3e75a2b0555610db26d69e2a2f7548b
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997763"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409299"
 ---
 # <a name="documentinputbin"></a>DocumentInputBin
 
@@ -27,7 +27,7 @@ Descreve o compartimento de entrada instalado em um dispositivo ou a lista compl
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Recurso<br/>                                                                                                             |
 | Prefixo de escopo <br/> | Documento<br/>                                                                                                            |
@@ -93,16 +93,16 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Nome                                   | Tipo de dados          | Unidade                  | Valores com suporte                                                                                                                                                                      | Resumo                                                                             |
 |----------------------------------------|--------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | \_OptionName\_<br/>              | string<br/>  | characters<br/> | Nome totalmente qualificado válido, conforme definido pelos [namespaces em XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | O nome da opção.<br/>                                                  |
-| \_IdentityOptionValue\_<br/>     | string<br/>  | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/>        |
-| \_EnvelopeOptionValue\_<br/>     | string<br/>  | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/>        |
-| \_BinTypeValue\_<br/>            | string<br/>  | N/D<br/>        | ContinuousFeed, SheetFeed.<br/>                                                                                                                                                 | Especifica o tipo do compartimento.<br/>                                           |
-| \_FeedTypeValue\_<br/>           | string<br/>  | N/D<br/>        | Automático, manual.<br/>                                                                                                                                                         | Especifica o mecanismo de feed do compartimento.<br/>                                 |
+| \_IdentityOptionValue\_<br/>     | string<br/>  | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/>        |
+| \_EnvelopeOptionValue\_<br/>     | string<br/>  | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/>        |
+| \_BinTypeValue\_<br/>            | string<br/>  | n/d<br/>        | ContinuousFeed, SheetFeed.<br/>                                                                                                                                                 | Especifica o tipo do compartimento.<br/>                                           |
+| \_FeedTypeValue\_<br/>           | string<br/>  | n/d<br/>        | Automático, manual.<br/>                                                                                                                                                         | Especifica o mecanismo de feed do compartimento.<br/>                                 |
 | \_MediaCapacityValue\_<br/>      | Número inteiro<br/> | folhas<br/>     | Restrição de inteiro máximo permitida pelo dispositivo.<br/>                                                                                                                              | Especifica se o compartimento é uma bandeja de alta capacidade (qualitativa).<br/>          |
-| \_MediaSizeAutoSenseValue\_<br/> | string<br/>  | N/D<br/>        | Com suporte, nenhum.<br/>                                                                                                                                                           | Especifica o recurso de detecção automática de tamanho de mídia do dispositivo.<br/>            |
-| \_MediaTypeAutoSenseValue\_<br/> | string<br/>  | N/D<br/>        | Com suporte, nenhum.<br/>                                                                                                                                                           | Especifica a capacidade de mídia no número de páginas (nível completo) do compartimento.<br/> |
-| \_MediaPathValue\_<br/>          | string<br/>  | N/D<br/>        | Direto, Serpentine.<br/>                                                                                                                                                      | Especifica as características do caminho de mídia.<br/>                         |
-| \_FeedFaceValue\_<br/>           | string<br/>  | N/D<br/>        | Virado, FaceDown<br/>                                                                                                                                                           | Especifica se a mídia a ser impressa ou face para baixo.<br/>           |
-| \_FeedDirectionValue\_<br/>      | string<br/>  | N/D<br/>        | LongEdgeFirst, ShortEdgeFirst<br/>                                                                                                                                              | Especifica se a mídia é alimentada pela borda longa ou pela borda curta primeiro.<br/>      |
+| \_MediaSizeAutoSenseValue\_<br/> | string<br/>  | n/d<br/>        | Com suporte, nenhum.<br/>                                                                                                                                                           | Especifica o recurso de detecção automática de tamanho de mídia do dispositivo.<br/>            |
+| \_MediaTypeAutoSenseValue\_<br/> | string<br/>  | n/d<br/>        | Com suporte, nenhum.<br/>                                                                                                                                                           | Especifica a capacidade de mídia no número de páginas (nível completo) do compartimento.<br/> |
+| \_MediaPathValue\_<br/>          | string<br/>  | n/d<br/>        | Direto, Serpentine.<br/>                                                                                                                                                      | Especifica as características do caminho de mídia.<br/>                         |
+| \_FeedFaceValue\_<br/>           | string<br/>  | n/d<br/>        | Virado, FaceDown<br/>                                                                                                                                                           | Especifica se a mídia a ser impressa ou face para baixo.<br/>           |
+| \_FeedDirectionValue\_<br/>      | string<br/>  | n/d<br/>        | LongEdgeFirst, ShortEdgeFirst<br/>                                                                                                                                              | Especifica se a mídia é alimentada pela borda longa ou pela borda curta primeiro.<br/>      |
 
 
 

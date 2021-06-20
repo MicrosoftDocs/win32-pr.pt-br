@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Este artigo fornece um início rápido para implementar PrintTicket e PrintCapabilities para seu aplicativo ou driver de dispositivo.
 ms.assetid: 2c1d912e-464e-48d2-ba4f-c0b9a811b25e
 title: Guia de início rápido
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8f3933cb59e270dd8ef2eff8d295d33ab1f9203
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 6060de551d3fb663e148cf80f661c4d517a51b93
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104298004"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405309"
 ---
 # <a name="quick-starter-guide"></a>Guia de início rápido
 

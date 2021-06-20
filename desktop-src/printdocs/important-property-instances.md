@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Para que um cliente Construa um PrintTicket, o documento PrintCapabilities deve fornecer propriedades de instâncias de recurso e instâncias de opção no recurso.
 ms.assetid: 8169b74f-13e0-4f6b-81e2-1824d932ee50
 title: Instâncias de propriedade importantes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ad3f58c099913b129ee7be0337ecab3343a5e5e
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 4691b73b1206ee092c171b213a3815925b7f53c6
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105791085"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409119"
 ---
 # <a name="important-property-instances"></a>Instâncias de propriedade importantes
 
@@ -35,7 +35,7 @@ Os elementos de opção podem conter a propriedade a seguir.
 
 | Propriedade                   | Valores                           | Finalidade                                                                                                                                                                                                                                                                                                                                                                 |
 |----------------------------|----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| IdentityOption <br/> | True<br/> Falso<br/> | A seleção da propriedade IdentityOption é interpretada para significar "desabilitar este recurso". Um recurso que contém uma Propriedade SelectionType cujo valor é PickMany também deve conter uma opção que tem uma propriedade IdentityOption. O código da interface do usuário (ou cliente construindo um PrintTicket) deve anular a seleção de qualquer outra opção se a propriedade IdentityOption estiver selecionada.<br/> |
+| IdentityOption <br/> | Verdadeiro<br/> Falso<br/> | A seleção da propriedade IdentityOption é interpretada para significar "desabilitar este recurso". Um recurso que contém uma Propriedade SelectionType cujo valor é PickMany também deve conter uma opção que tem uma propriedade IdentityOption. O código da interface do usuário (ou cliente construindo um PrintTicket) deve anular a seleção de qualquer outra opção se a propriedade IdentityOption estiver selecionada.<br/> |
 
 
 

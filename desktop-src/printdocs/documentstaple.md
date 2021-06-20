@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento JobStapleAllDocuments, que descreve as características de grampeamento da saída.
 ms.assetid: 53e38979-2065-4304-a0ed-0434c8d2efc8
 title: DocumentStaple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 338a72baecc62d22ac63ef50d8ce8967c7fd534a
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: bc2cda02c452ebb053c71811fb2642cea7371b2f
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997033"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409129"
 ---
 # <a name="documentstaple"></a>DocumentStaple
 
@@ -25,7 +25,7 @@ Descreve as características de grampeamento da saída. Cada documento é grampe
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|--------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Recurso<br/>                                                             |
 | Prefixo de escopo <br/> | Documento<br/>                                                            |
@@ -68,7 +68,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Nome                               | Tipo de dados          | Unidade                       | Valores com suporte                                                                                                                                                                      | Resumo                                                                                                                                                     |
 |------------------------------------|--------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \_OptionName\_<br/>          | string<br/>  | characters<br/>      | Nome totalmente qualificado válido, conforme definido pelos [namespaces em XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | O nome da opção.<br/>                                                                                                                          |
-| \_IdentityOptionValue\_<br/> | string<br/>  | N/D<br/>             | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/>                                                                                |
+| \_IdentityOptionValue\_<br/> | string<br/>  | n/d<br/>             | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/>                                                                                |
 | \_Ângulovalue\_<br/>          | Número inteiro<br/> | graus<br/>         | Maior que 0.<br/>                                                                                                                                                            | Especifica o ângulo do grampo, em relação à direção X do PageImageableSize. O ângulo do grampo é medido em uma direção no sentido anti-horário.<br/> |
 | \_SheetCapacityValue\_<br/>  | Número inteiro<br/> | folhas de mídia<br/> | Maior que 0.<br/>                                                                                                                                                            | Especifica o número de planilhas com suporte da opção de grampeamento para o MediaType selecionado no momento.<br/>                                                |
 

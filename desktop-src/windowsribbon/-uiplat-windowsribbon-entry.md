@@ -1,6 +1,6 @@
 ---
 title: Estrutura da faixa de dasgem do Windows
-description: O Windows Ribbon Framework é um sistema de apresentação de comando avançado que fornece uma alternativa moderna para os menus, barras de ferramentas e painéis de tarefas em camadas de aplicativos tradicionais do Windows.
+description: Leia uma introdução ao Windows Ribbon Framework, que é uma alternativa moderna para os menus, barras de ferramentas e painéis de tarefas em camadas de aplicativos tradicionais do Windows.
 ms.assetid: c6108c38-17ef-4d8a-ab32-171bc496d44c
 keywords:
 - Faixa de-se do Windows
@@ -25,12 +25,12 @@ keywords:
 - Faixa de, segurança
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6906401573cb244ddc4386faf8c283d7938a0ac5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 211e1e1cf39a547ad0edbc0c180c62e2f40e15fa
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918296"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406359"
 ---
 # <a name="windows-ribbon-framework"></a>Estrutura da faixa de dasgem do Windows
 

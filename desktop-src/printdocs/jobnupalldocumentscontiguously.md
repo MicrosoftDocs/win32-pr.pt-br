@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento JobNUpAllDocumentsContiguously, que descreve a saída de várias páginas lógicas para uma única folha física.
 ms.assetid: e73e1736-9be5-4831-8277-23a62658b7b5
 title: JobNUpAllDocumentsContiguously
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35f90620ac99bf97e85acb22c723a938c31605bd
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 9106259c80a7efb89cc4481780bfb55af4f07e23
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998083"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408859"
 ---
 # <a name="jobnupalldocumentscontiguously"></a>JobNUpAllDocumentsContiguously
 
@@ -29,7 +29,7 @@ O diagrama a seguir ilustra um exemplo com o documento 1 contendo 3 páginas e o
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Recurso<br/>                                                                                                                             |
 | Prefixo de escopo <br/> | Trabalho<br/>                                                                                                                                 |
@@ -73,7 +73,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Nome                                           | Tipo de dados          | Unidade                     | Valores com suporte                                                                                                                                                                      | Resumo                                                                                                                              |
 |------------------------------------------------|--------------------|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | \_OptionName\_<br/>                      | string<br/>  | characters<br/>    | Nome totalmente qualificado válido, conforme definido pelos [namespaces em XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | O nome da opção.<br/>                                                                                                   |
-| \_IdentityOptionValue\_<br/>             | string<br/>  | N/D<br/>           | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/>                                                         |
+| \_IdentityOptionValue\_<br/>             | string<br/>  | n/d<br/>           | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/>                                                         |
 | \_PagesPerSheetValue\_<br/>              | Número inteiro<br/> | Páginas lógicas<br/> | Todos os inteiros (maiores que zero).<br/>                                                                                                                                          | Especifica o número de páginas lógicas por folha física. O conjunto com suporte pode ser qualquer conjunto de inteiros, por exemplo, {1,2,4,6,8,9,16}.<br/> |
 | \_PresentationDirectionOptionName\_<br/> | string<br/>  | characters<br/>    | Nome totalmente qualificado válido, conforme definido pelos [namespaces em XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | O nome da opção.<br/>                                                                                                   |
 

@@ -1,15 +1,15 @@
 ---
-description: Procurando em arquivos ASF
+description: Saiba como o leitor ASF do WM pode executar uma busca temporal muito precisa no conteúdo baseado no Windows Media que tem um índice temporal no DirectShow.
 ms.assetid: da0d687b-f571-4623-9705-e697ba8bc04e
 title: Procurando em arquivos ASF (DirectShow)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e957fbdf7ed7df1a9cb38b14e39d384b15ab25b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 92ffc570536463b86a88e1f26be338bd748c790c
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500359"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405579"
 ---
 # <a name="seeking-in-asf-files-directshow"></a>Procurando em arquivos ASF (DirectShow)
 

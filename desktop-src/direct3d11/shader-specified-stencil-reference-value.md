@@ -1,15 +1,15 @@
 ---
 title: Sombreador especificado valor de referência de estêncil (gráficos do Direct3D 11)
-description: A habilitação de sombreadores de pixel para produzir o valor de referência do estêncil, em vez de usar o especificado pela API, permite um controle muito refinado sobre as operações de estêncil.
+description: Saiba mais sobre o valor de referência de estêncil nos gráficos do Direct3D 11. A habilitação de sombreadores de pixel para usar o valor de referência de estêncil permite um controle fino sobre as operações de estêncil.
 ms.assetid: 6E336623-9746-4872-ADC1-C5489F53D7AE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65a089ec8ab56a1cf00021f97bb40cf86fe42f04
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: c0e8a34d53bc7f30dc2a91fafabb561dff7a1e96
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104294685"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408099"
 ---
 # <a name="shader-specified-stencil-reference-value-direct3d-11-graphics"></a>Sombreador especificado valor de referência de estêncil (gráficos do Direct3D 11)
 

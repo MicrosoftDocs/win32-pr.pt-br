@@ -1,15 +1,15 @@
 ---
 title: Unidades VML
-description: Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+description: Este artigo descreve as unidades da VML. A VML é um recurso que foi preterido a partir do Windows Internet Explorer 9.
 ms.assetid: f95e65ad-d92a-460f-baeb-30fd8a35f84e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e59ff91fb134edeba7e653be30141b3f72c6b65
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 184d577052412bde4a97148b51cab12a87b3672e
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641334"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406939"
 ---
 # <a name="vml-units"></a>Unidades VML
 
@@ -18,7 +18,7 @@ Este tópico descreve a VML, um recurso que foi preterido a partir do Windows In
 > [!Note]  
 > A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 As seguintes unidades CSS são usadas pelo VML.
 
@@ -66,7 +66,7 @@ Paicas (1 paica = 12 pontos).
 
 
 
- 
+ 
 
 As medidas e as posições nas propriedades da folha de estilos em cascata (CSS) são feitas usando unidades de comprimento. O Internet Explorer dá suporte a dois tipos de unidades de comprimento: relativo e absoluto.
 
@@ -94,7 +94,7 @@ FD
 
 Graus fracionários.
 
-none
+nenhum
 
 Degrees
 
@@ -108,8 +108,8 @@ Radians
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

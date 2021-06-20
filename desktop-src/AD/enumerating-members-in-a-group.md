@@ -1,18 +1,18 @@
 ---
 title: Enumerando Membros em um grupo
-description: Os membros de um grupo são armazenados em um atributo com vários valores chamado membro.
+description: Saiba mais sobre como enumerar Membros em um grupo de Azure Active Directory. Os membros de um grupo são armazenados em um atributo com vários valores chamado membro.
 ms.assetid: 28cafdbe-e599-4b1d-a384-264f41d81c79
 ms.tgt_platform: multiple
 keywords:
 - Enumerando Membros em um grupo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc2d051999bf8efeadb0c5a8899b31f813b8bf42
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 916b988cd26ee4df59eaf27cc5ffd690bca1458a
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104084449"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407419"
 ---
 # <a name="enumerating-members-in-a-group"></a>Enumerando Membros em um grupo
 
@@ -20,6 +20,6 @@ Os membros de um grupo são armazenados em um atributo com vários valores chama
 
 Se a associação de grupo prevista for 1000 ou mais membros, use a variação para recuperar os usuários um intervalo por vez. Para obter mais informações sobre como usar variando para enumerar Membros, consulte [enumerando grupos que contêm muitos membros](enumerating-groups-that-contain-many-members.md).
 
- 
+ 
 
- 
+ 

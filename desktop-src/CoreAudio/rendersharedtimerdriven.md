@@ -1,15 +1,15 @@
 ---
-description: Este aplicativo de exemplo usa as APIs de áudio principais para renderizar dados de áudio para um dispositivo de saída especificado pelo usuário.
+description: Este aplicativo de exemplo, que demonstra o buffer controlado por temporizador, usa as APIs de áudio principais para processar dados de áudio para um dispositivo de saída especificado pelo usuário.
 ms.assetid: eae7d896-77ef-4340-bd77-1f3333166987
 title: RenderSharedTimerDriven
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de4ce441a12d65b8bebb843c7b9a168443b34592
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 89d2814f359668f8724d3deb65a7c2a9eeff5b06
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646409"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112410089"
 ---
 # <a name="rendersharedtimerdriven"></a>RenderSharedTimerDriven
 
@@ -50,7 +50,7 @@ Este exemplo está disponível nos locais a seguir.
 
 
 
-| Local    | Caminho/URL                                                                                                 |
+| Location    | Caminho/URL                                                                                                 |
 |-------------|----------------------------------------------------------------------------------------------------------|
 | SDK do Windows | \\Arquivos de programas \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ amostras \\ áudio multimídia \\ \\ RenderSharedTimerDriven \\ ... |
 
