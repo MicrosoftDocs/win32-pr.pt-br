@@ -1,29 +1,29 @@
 ---
 title: HttpClientExample
-description: Este exemplo mostra um cliente HTTP que envia mensagens de solicitação-resposta.
+description: Revise um exemplo de cliente HTTP que usa a API de Serviços Web do Windows (WWSAPI). Este exemplo mostra um cliente HTTP que envia mensagens de solicitação-resposta.
 ms.assetid: e32a35f7-df01-4d6d-966c-6cf079b1b3a7
 keywords:
-- HttpClientExample nativo – Web-Services
+- HttpClientExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f96858d2b818172ffd24c50053fa4ceed692a730
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 180a1a0b40b2f4614ddd21caff7dc4595b8aac97
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363784"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404129"
 ---
-# <a name="httpclientexample"></a><span data-ttu-id="f9b22-106">HttpClientExample</span><span class="sxs-lookup"><span data-stu-id="f9b22-106">HttpClientExample</span></span>
+# <a name="httpclientexample"></a><span data-ttu-id="153e0-107">HttpClientExample</span><span class="sxs-lookup"><span data-stu-id="153e0-107">HttpClientExample</span></span>
 
-<span data-ttu-id="f9b22-107">Este exemplo mostra um cliente HTTP que envia mensagens de solicitação-resposta.</span><span class="sxs-lookup"><span data-stu-id="f9b22-107">This example shows a HTTP client that sends request-reply messages.</span></span>
+<span data-ttu-id="153e0-108">Este exemplo mostra um cliente HTTP que envia mensagens de solicitação-resposta.</span><span class="sxs-lookup"><span data-stu-id="153e0-108">This example shows a HTTP client that sends request-reply messages.</span></span>
 
--   [<span data-ttu-id="f9b22-108">HttpClient. cpp</span><span class="sxs-lookup"><span data-stu-id="f9b22-108">HttpClient.cpp</span></span>](#httpclientcpp)
--   [<span data-ttu-id="f9b22-109">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="f9b22-109">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
--   [<span data-ttu-id="f9b22-110">Makefile</span><span class="sxs-lookup"><span data-stu-id="f9b22-110">Makefile</span></span>](#makefile)
+-   [<span data-ttu-id="153e0-109">HttpClient.cpp</span><span class="sxs-lookup"><span data-stu-id="153e0-109">HttpClient.cpp</span></span>](#httpclientcpp)
+-   [<span data-ttu-id="153e0-110">PurchaseOrder.wsdl</span><span class="sxs-lookup"><span data-stu-id="153e0-110">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
+-   [<span data-ttu-id="153e0-111">Makefile</span><span class="sxs-lookup"><span data-stu-id="153e0-111">Makefile</span></span>](#makefile)
 
-## <a name="httpclientcpp"></a><span data-ttu-id="f9b22-111">HttpClient. cpp</span><span class="sxs-lookup"><span data-stu-id="f9b22-111">HttpClient.cpp</span></span>
+## <a name="httpclientcpp"></a><span data-ttu-id="153e0-112">HttpClient.cpp</span><span class="sxs-lookup"><span data-stu-id="153e0-112">HttpClient.cpp</span></span>
 
 
 ```C++
@@ -436,7 +436,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a><span data-ttu-id="f9b22-112">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="f9b22-112">PurchaseOrder.wsdl</span></span>
+## <a name="purchaseorderwsdl"></a><span data-ttu-id="153e0-113">PurchaseOrder.wsdl</span><span class="sxs-lookup"><span data-stu-id="153e0-113">PurchaseOrder.wsdl</span></span>
 
 ``` syntax
 <wsdl:definitions 
@@ -547,7 +547,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="makefile"></a><span data-ttu-id="f9b22-113">Makefile</span><span class="sxs-lookup"><span data-stu-id="f9b22-113">Makefile</span></span>
+## <a name="makefile"></a><span data-ttu-id="153e0-114">Makefile</span><span class="sxs-lookup"><span data-stu-id="153e0-114">Makefile</span></span>
 
 ``` syntax
 #------------------------------------------------------------
@@ -580,9 +580,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

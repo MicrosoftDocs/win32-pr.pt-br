@@ -1,6 +1,6 @@
 ---
 title: Modificar o usuário não pode alterar a senha (provedor WinNT)
-description: A capacidade de um usuário alterar sua própria senha é uma permissão que pode ser concedida ou negada.
+description: Saiba como negar a um usuário a permissão para alterar uma senha para o provedor WinNT. A capacidade de um usuário alterar sua própria senha pode ser concedida ou negada.
 ms.assetid: 071a817b-087e-49ee-af1a-6f190493cac0
 ms.tgt_platform: multiple
 keywords:
@@ -9,20 +9,20 @@ keywords:
 - ADSI do provedor WinNT, exemplos de gerenciamento de usuário, o usuário não pode alterar a senha, modificando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e14e9bac51bae2edf4b9f6f571f20c75563a4d03
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 33510fa36285fa49a413b84d91e29f8d5a367622
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103634869"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408089"
 ---
-# <a name="modifying-user-cannot-change-password-winnt-provider"></a><span data-ttu-id="79213-106">Modificar o usuário não pode alterar a senha (provedor WinNT)</span><span class="sxs-lookup"><span data-stu-id="79213-106">Modifying User Cannot Change Password (WinNT Provider)</span></span>
+# <a name="modifying-user-cannot-change-password-winnt-provider"></a><span data-ttu-id="4cbcd-107">Modificar o usuário não pode alterar a senha (provedor WinNT)</span><span class="sxs-lookup"><span data-stu-id="4cbcd-107">Modifying User Cannot Change Password (WinNT Provider)</span></span>
 
-<span data-ttu-id="79213-107">A capacidade de um usuário alterar sua própria senha é uma permissão que pode ser concedida ou negada.</span><span class="sxs-lookup"><span data-stu-id="79213-107">The ability of a user to change their own password is a permission that can be granted or denied.</span></span> <span data-ttu-id="79213-108">Para negar essa permissão, adicione o sinalizador da **UF do ADS \_ passwd não \_ \_ \_ alterar** para a propriedade **UserFlags** do objeto de usuário.</span><span class="sxs-lookup"><span data-stu-id="79213-108">To deny this permission, add the **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag to the **userFlags** property of the user object.</span></span> <span data-ttu-id="79213-109">Para conceder essa permissão, remova o sinalizador da **UF do ADS \_ passwd não \_ \_ \_ alterar** , da propriedade **UserFlags** do objeto de usuário.</span><span class="sxs-lookup"><span data-stu-id="79213-109">To grant this permission, remove the **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag from the **userFlags** property of the user object.</span></span>
+<span data-ttu-id="4cbcd-108">A capacidade de um usuário alterar sua própria senha é uma permissão que pode ser concedida ou negada.</span><span class="sxs-lookup"><span data-stu-id="4cbcd-108">The ability of a user to change their own password is a permission that can be granted or denied.</span></span> <span data-ttu-id="4cbcd-109">Para negar essa permissão, adicione o sinalizador da **UF do ADS \_ passwd não \_ \_ \_ alterar** para a propriedade **UserFlags** do objeto de usuário.</span><span class="sxs-lookup"><span data-stu-id="4cbcd-109">To deny this permission, add the **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag to the **userFlags** property of the user object.</span></span> <span data-ttu-id="4cbcd-110">Para conceder essa permissão, remova o sinalizador da **UF do ADS \_ passwd não \_ \_ \_ alterar** , da propriedade **UserFlags** do objeto de usuário.</span><span class="sxs-lookup"><span data-stu-id="4cbcd-110">To grant this permission, remove the **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag from the **userFlags** property of the user object.</span></span>
 
-## <a name="example-code"></a><span data-ttu-id="79213-110">Código de exemplo</span><span class="sxs-lookup"><span data-stu-id="79213-110">Example Code</span></span>
+## <a name="example-code"></a><span data-ttu-id="4cbcd-111">Código de exemplo</span><span class="sxs-lookup"><span data-stu-id="4cbcd-111">Example Code</span></span>
 
-<span data-ttu-id="79213-111">O exemplo de código a seguir mostra como alterar o sinalizador da **UF do ADS \_ passwd não \_ \_ \_ alterar** , da propriedade **UserFlags** de um objeto de usuário.</span><span class="sxs-lookup"><span data-stu-id="79213-111">The following code example shows how to change the **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag of the **userFlags** property of a user object.</span></span>
+<span data-ttu-id="4cbcd-112">O exemplo de código a seguir mostra como alterar o sinalizador da **UF do ADS \_ passwd não \_ \_ \_ alterar** , da propriedade **UserFlags** de um objeto de usuário.</span><span class="sxs-lookup"><span data-stu-id="4cbcd-112">The following code example shows how to change the **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag of the **userFlags** property of a user object.</span></span>
 
 
 ```VB
@@ -62,7 +62,7 @@ End Sub
 
 
 
-<span data-ttu-id="79213-112">O exemplo de código a seguir mostra como alterar o sinalizador da **UF do ADS \_ passwd não \_ \_ \_ alterar** , da propriedade **UserFlags** de um objeto de usuário.</span><span class="sxs-lookup"><span data-stu-id="79213-112">The following code example shows how to change the **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag of the **userFlags** property of a user object.</span></span>
+<span data-ttu-id="4cbcd-113">O exemplo de código a seguir mostra como alterar o sinalizador da **UF do ADS \_ passwd não \_ \_ \_ alterar** , da propriedade **UserFlags** de um objeto de usuário.</span><span class="sxs-lookup"><span data-stu-id="4cbcd-113">The following code example shows how to change the **ADS\_UF\_PASSWD\_CANT\_CHANGE** flag of the **userFlags** property of a user object.</span></span>
 
 
 ```C++
@@ -130,9 +130,9 @@ HRESULT SetUserCannotChangePassword(LPCWSTR pwszDomain,
 
 
 
- 
+ 
 
- 
+ 
 
 
 

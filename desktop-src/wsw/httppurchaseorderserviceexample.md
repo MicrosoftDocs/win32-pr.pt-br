@@ -1,6 +1,6 @@
 ---
 title: HttpPurchaseOrderServiceExample
-description: Este exemplo mostra como usar o host de serviço para hospedar um serviço PurchaseOrder por HTTP.
+description: Examine um exemplo de C++ do Windows Web Services API (WWSAPI) de como usar o host de serviço para hospedar um serviço de ordem de compra via HTTP.
 ms.assetid: 03da84b6-082f-41cd-810d-b593a55fa563
 keywords:
 - HttpPurchaseOrderServiceExample nativo – Web-Services
@@ -8,22 +8,22 @@ keywords:
 - WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc892963c3bf6e7372c13a67e37bbd592d172ac4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cb30e875129c1f1ddde09ccce4afd4cfe009e7d9
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822792"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404109"
 ---
-# <a name="httppurchaseorderserviceexample"></a><span data-ttu-id="cafa2-106">HttpPurchaseOrderServiceExample</span><span class="sxs-lookup"><span data-stu-id="cafa2-106">HttpPurchaseOrderServiceExample</span></span>
+# <a name="httppurchaseorderserviceexample"></a><span data-ttu-id="9466d-106">HttpPurchaseOrderServiceExample</span><span class="sxs-lookup"><span data-stu-id="9466d-106">HttpPurchaseOrderServiceExample</span></span>
 
-<span data-ttu-id="cafa2-107">Este exemplo mostra como usar o host de serviço para hospedar um serviço PurchaseOrder por HTTP.</span><span class="sxs-lookup"><span data-stu-id="cafa2-107">This example shows how to use service host for hosting a PurchaseOrder service over HTTP.</span></span>
+<span data-ttu-id="9466d-107">Este exemplo mostra como usar o host de serviço para hospedar um serviço PurchaseOrder por HTTP.</span><span class="sxs-lookup"><span data-stu-id="9466d-107">This example shows how to use service host for hosting a PurchaseOrder service over HTTP.</span></span>
 
--   [<span data-ttu-id="cafa2-108">HttpPurchaseOrderService. cpp</span><span class="sxs-lookup"><span data-stu-id="cafa2-108">HttpPurchaseOrderService.cpp</span></span>](#httppurchaseorderservicecpp)
--   [<span data-ttu-id="cafa2-109">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="cafa2-109">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
--   [<span data-ttu-id="cafa2-110">Makefile</span><span class="sxs-lookup"><span data-stu-id="cafa2-110">Makefile</span></span>](#makefile)
+-   [<span data-ttu-id="9466d-108">HttpPurchaseOrderService. cpp</span><span class="sxs-lookup"><span data-stu-id="9466d-108">HttpPurchaseOrderService.cpp</span></span>](#httppurchaseorderservicecpp)
+-   [<span data-ttu-id="9466d-109">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="9466d-109">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
+-   [<span data-ttu-id="9466d-110">Makefile</span><span class="sxs-lookup"><span data-stu-id="9466d-110">Makefile</span></span>](#makefile)
 
-## <a name="httppurchaseorderservicecpp"></a><span data-ttu-id="cafa2-111">HttpPurchaseOrderService. cpp</span><span class="sxs-lookup"><span data-stu-id="cafa2-111">HttpPurchaseOrderService.cpp</span></span>
+## <a name="httppurchaseorderservicecpp"></a><span data-ttu-id="9466d-111">HttpPurchaseOrderService. cpp</span><span class="sxs-lookup"><span data-stu-id="9466d-111">HttpPurchaseOrderService.cpp</span></span>
 
 
 ```C++
@@ -373,7 +373,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a><span data-ttu-id="cafa2-112">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="cafa2-112">PurchaseOrder.wsdl</span></span>
+## <a name="purchaseorderwsdl"></a><span data-ttu-id="9466d-112">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="9466d-112">PurchaseOrder.wsdl</span></span>
 
 ``` syntax
 <wsdl:definitions 
@@ -484,7 +484,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="makefile"></a><span data-ttu-id="cafa2-113">Makefile</span><span class="sxs-lookup"><span data-stu-id="cafa2-113">Makefile</span></span>
+## <a name="makefile"></a><span data-ttu-id="9466d-113">Makefile</span><span class="sxs-lookup"><span data-stu-id="9466d-113">Makefile</span></span>
 
 ``` syntax
 !include <Win32.Mak>
@@ -512,9 +512,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 
