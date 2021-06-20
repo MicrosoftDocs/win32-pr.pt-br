@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento JobDigitalSignatureProcessing, que descreve a configuração do processamento de assinatura digital para todo o trabalho.
 ms.assetid: 0592f7a4-cace-41b0-91e3-2811f72aeb3e
 title: JobDigitalSignatureProcessing
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aad9dbe0ba82d219a28602178efa2e102ccf167b
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: f9491a921d9d733dd0de0a4e5133d5c6690b2b4a
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998283"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408939"
 ---
 # <a name="jobdigitalsignatureprocessing"></a>JobDigitalSignatureProcessing
 
@@ -24,7 +24,7 @@ Descreve a configuração do processamento de assinatura digital para todo o tra
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
 | Prefixo de escopo <br/> | Trabalho<br/>     |
@@ -59,7 +59,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Nome                               | Tipo de dados         | Unidade                   | Valores com suporte                                                                                                                                                                      | Resumo                                                                      |
 |------------------------------------|-------------------|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | \_OptionName\_<br/>          | string<br/> | characters <br/> | Nome totalmente qualificado válido, conforme definido pelos [namespaces em XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | O nome da opção<br/>                                            |
-| \_IdentityOptionValue\_<br/> | string<br/> | N/D<br/>         | Verdadeiro, Falso<br/>                                                                                                                                                                | Define uma opção que, quando selecionada, desabilita esse recurso.<br/> |
+| \_IdentityOptionValue\_<br/> | string<br/> | n/d<br/>         | Verdadeiro, Falso<br/>                                                                                                                                                                | Define uma opção que, quando selecionada, desabilita esse recurso.<br/> |
 
 
 

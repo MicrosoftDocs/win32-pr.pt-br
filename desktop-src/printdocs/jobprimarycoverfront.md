@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento JobPrimaryCoverFront, que descreve a folha de rosto frontal. Todo o trabalho terá uma única planilha primária.
 ms.assetid: 270b16f6-677c-430a-aa69-1b5c6dfd3ba4
 title: JobPrimaryCoverFront
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e9d7130d69d081f7f999dc0bb352ccde3404d6c
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 3c60aef4a70404ce6777b9bfe2848fddffa4e89d
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107993963"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408669"
 ---
 # <a name="jobprimarycoverfront"></a>JobPrimaryCoverFront
 
@@ -25,7 +25,7 @@ Descreve a folha de rosto frontal (começando). Todo o trabalho terá uma única
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Recurso<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Prefixo de escopo <br/> | Trabalho<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -65,8 +65,8 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 
 | Nome                               | Tipo de dados         | Unidade           | Valores com suporte                                                                                                                                                                      | Resumo                                                                      |
 |------------------------------------|-------------------|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/> | N/D<br/> | Nome totalmente qualificado válido, conforme definido pelos [namespaces em XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | O nome da opção.<br/>                                           |
-| \_IdentityOptionValue\_<br/> | string<br/> | N/D<br/> | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/> |
+| \_OptionName\_<br/>          | string<br/> | n/d<br/> | Nome totalmente qualificado válido, conforme definido pelos [namespaces em XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | O nome da opção.<br/>                                           |
+| \_IdentityOptionValue\_<br/> | string<br/> | n/d<br/> | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/> |
 
 
 

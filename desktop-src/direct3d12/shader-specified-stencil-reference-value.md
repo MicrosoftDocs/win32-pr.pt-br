@@ -1,16 +1,16 @@
 ---
 title: Sombreador especificado valor de referência de estêncil (gráficos do Direct3D 12)
-description: A habilitação de sombreadores de pixel para produzir o valor de referência do estêncil, em vez de usar o especificado pela API, permite um controle muito refinado sobre as operações de estêncil.
+description: Saiba mais sobre o valor de referência de estêncil nos gráficos do Direct3D 12. A habilitação de sombreadores de pixel para usar o valor de referência de estêncil permite um controle fino sobre as operações de estêncil.
 ms.assetid: F58B1930-F12E-4FA4-A15C-A3C2B8705033
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f6a8b7697cc06594b3e2ffc717cbded9e6832129
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 0fee212d7c2573402ad38bc19040e5c60a89c090
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104548267"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408309"
 ---
 # <a name="shader-specified-stencil-reference-value-direct3d-12-graphics"></a>Sombreador especificado valor de referência de estêncil (gráficos do Direct3D 12)
 
@@ -40,13 +40,13 @@ uint main2(float4 c : COORD) : SV_StencilRef
 [Renderização](rendering.md)
 </dt> <dt>
 
-[Associação de recursos em HLSL](resource-binding-in-hlsl.md)
+[Associação de recursos no HLSL](resource-binding-in-hlsl.md)
 </dt> <dt>
 
 [Modelo do sombreador 5,1](/windows/desktop/direct3dhlsl/shader-model-5-1)
 </dt> <dt>
 
-[Especificando assinaturas raiz em HLSL](specifying-root-signatures-in-hlsl.md)
+[Como especificar assinaturas raiz no HLSL](specifying-root-signatures-in-hlsl.md)
 </dt> </dl>
 
  

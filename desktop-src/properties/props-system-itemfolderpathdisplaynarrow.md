@@ -1,15 +1,15 @@
 ---
-description: O caminho de exibição amigável para o usuário da pasta pai de um item.
+description: Leia sobre a propriedade System. ItemFolderPathDisplayNarrow, que representa o caminho de exibição amigável para o usuário da pasta pai de um item.
 ms.assetid: f60b7465-bca4-4c7b-9caf-9cda1bf6eeeb
 title: System. ItemFolderPathDisplayNarrow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 898927c23aae95b5037919c908a3ae86e020e1fb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dbee8a45eb6ea557e99c854464c7dc09ec5613d2
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011093"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112403909"
 ---
 # <a name="systemitemfolderpathdisplaynarrow"></a>System. ItemFolderPathDisplayNarrow
 

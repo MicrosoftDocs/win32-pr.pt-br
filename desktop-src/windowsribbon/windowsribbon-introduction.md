@@ -1,6 +1,6 @@
 ---
 title: Apresentando o Windows Ribbon Framework
-description: O Windows Ribbon Framework é um sistema de apresentação de comando avançado que fornece uma alternativa moderna para os menus, barras de ferramentas e painéis de tarefas em camadas de aplicativos tradicionais do Windows.
+description: Exiba a página de aterrissagem do Windows Ribbon Framework, que é uma alternativa para os menus, barras de ferramentas e painéis de tarefas em camadas de aplicativos tradicionais do Windows.
 ms.assetid: bc19d5eb-e3a4-4022-8051-512cb3a3e065
 keywords:
 - Faixa de Ribbon do Windows, estrutura
@@ -19,12 +19,12 @@ keywords:
 - Faixa de, segurança
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f5ac5c3acccf1c48a54f93b1752729067e63e4c6
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: db15165b91708a85e5ae6237b66a15bf733e80a7
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104562028"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404389"
 ---
 # <a name="introducing-the-windows-ribbon-framework"></a>Apresentando o Windows Ribbon Framework
 
@@ -130,11 +130,11 @@ As APIs da faixa de visão fornecem as conexões necessárias entre uma exibiç�
     |--------------------------------------------------------------------|----------------------------------------------------------|
     | [Coleção](windowsribbon-reference-properties-collection.md)    | Define propriedades para controles baseados em coleção da faixa de bits. |
     | [Seletor de cor](windowsribbon-reference-properties-colorpicker.md) | Define propriedades para controles do seletor de cor da faixa de seleção.     |
-    | [Fonte](windowsribbon-reference-properties-fontcontrol.md)         | Define as propriedades para a faixa de FontControl.           |
-    | [Global](windowsribbon-reference-properties-framework.md)         | Define propriedades globais para a estrutura da faixa de faixas.      |
-    | [Recurso](windowsribbon-reference-properties-resource.md)        | Define as propriedades do recurso da faixa de faixas.                      |
-    | [Faixa de opções](windowsribbon-reference-properties-ribbon.md)            | Define as propriedades da exibição da faixa de visão.                          |
-    | [State](windowsribbon-reference-properties-state.md)              | Define propriedades para o estado ou o contexto do controle da faixa de faixas.  |
+    | [Fonte](windowsribbon-reference-properties-fontcontrol.md)         | Define propriedades para o FontControl da Faixa de Opções.           |
+    | [Global](windowsribbon-reference-properties-framework.md)         | Define propriedades globais para a estrutura ribbon.      |
+    | [Recurso](windowsribbon-reference-properties-resource.md)        | Define as propriedades do recurso da Faixa de Opções.                      |
+    | [Faixa de opções](windowsribbon-reference-properties-ribbon.md)            | Define as propriedades de Exibição da Faixa de Opções.                          |
+    | [State](windowsribbon-reference-properties-state.md)              | Define propriedades para o estado ou o contexto do controle faixa de opções.  |
 
     
 
@@ -142,35 +142,35 @@ As APIs da faixa de visão fornecem as conexões necessárias entre uma exibiç�
 
 ### <a name="security-and-privacy"></a>Segurança e privacidade
 
-A DLL do Framework da faixa de bits (uiribbon.dll) é executada em processo e tem os mesmos privilégios que o aplicativo host. A faixa de faixas aceita apenas o que o aplicativo host fornece como entrada ou entrada do usuário de controles rigidamente restritos, como a caixa de combinação Spinner e editável.
+A DLL da estrutura de faixa uiribbon.dll faixa de opções é executado em processo e tem os mesmos privilégios que o aplicativo host. A Faixa de Opções aceita apenas o que o aplicativo host fornece como entrada ou entrada do usuário de controles firmemente restritos, como o girador e a caixa de combinação editável.
 
-Além disso, a estrutura não armazena permanentemente nenhuma informação, exceto o que é fornecido pelo aplicativo host ou coletado (como autorizado pelo usuário final) por meio do programa de experiência do cliente do Windows opcional.
+Além disso, a estrutura não armazena permanentemente nenhuma informação, exceto o que é fornecido pelo aplicativo host ou coletado (conforme autorizado pelo usuário final) por meio do Programa de Experiência do Usuário do Windows de aceitação.
 
 ### <a name="accessibility-and-localization"></a>Acessibilidade e localização
 
-Para fornecer uma interface do usuário altamente acessível, a estrutura da faixa de faixas implementa o Microsoft Acessibilidade Ativa. Ao preencher automaticamente as propriedades relevantes do Microsoft Acessibilidade Ativa com informações válidas e úteis, a estrutura reduz significativamente a carga dos desenvolvedores para fornecer uma experiência inclusiva para todos os usuários.
+Para fornecer uma interface do usuário altamente acessível, a estrutura ribbon implementa Microsoft Active Accessibility. Ao preencher automaticamente as propriedades Microsoft Active Accessibility relevantes com informações válidas e úteis, a estrutura reduz significativamente a carga dos desenvolvedores para fornecer uma experiência inclusiva para todos os usuários.
 
-Para obter mais informações sobre acessibilidade na estrutura da faixa de faixas, consulte [trabalhando com acessibilidade ativa na interface de usuário Fluent do 2007 Office](/previous-versions/office/developer/office-2007/bb404170(v=office.12)).
+Para obter mais informações sobre acessibilidade na estrutura ribbon, consulte Trabalhando com [Acessibilidade Ativa no 2007 Office Fluent Interface do Usuário](/previous-versions/office/developer/office-2007/bb404170(v=office.12)).
 
-Além disso, a estrutura da faixa de faixas é um recurso do Windows e, como tal, é localizada para todos os idiomas aos quais o Windows dá suporte. Os desenvolvedores, no entanto, são responsáveis por localizar seus próprios recursos de aplicativo específicos.
+Além disso, a estrutura ribbon é um recurso do Windows e, como tal, é localizada para todos os idiomas compatíveis com o Windows. No entanto, os desenvolvedores são responsáveis por localizar seus próprios recursos de aplicativo específicos.
 
 ## <a name="conclusion"></a>Conclusão
 
-A faixa de faixas é uma forma nova e atraente de apresentação de comandos que os desenvolvedores, arquitetos e designers de aplicativos devem considerar ao projetar e criar novos aplicativos ou atualizar os existentes.
+A Faixa de Opções é uma forma nova e envolvente de apresentação de comando que os desenvolvedores de aplicativos, arquitetos e designers devem considerar ao projetar e criar novos aplicativos ou atualizar os existentes.
 
-O [Fórum de desenvolvimento da faixa](https://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=windowsribbondevelopment) de do Windows está disponível para discutir tópicos e fazer perguntas relacionadas ao desenvolvimento de aplicativos que implementam o Windows Ribbon Framework.
+O [Fórum de Desenvolvimento da Faixa](https://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=windowsribbondevelopment) de Opções do Windows está disponível para discutir tópicos e fazer perguntas relacionadas ao desenvolvimento de aplicativos que implementam a estrutura da Faixa de Opções do Windows.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Declarando comandos e controles com marcação de faixa de medida](windowsribbon-schema.md)
+[Declarando comandos e controles com marcação de faixa de opções](windowsribbon-schema.md)
 </dt> <dt>
 
-[Diretrizes de experiência do usuário da faixa de das](https://msdn.microsoft.com/library/cc872782.aspx)
+[Diretrizes de experiência do usuário da faixa de opções](https://msdn.microsoft.com/library/cc872782.aspx)
 </dt> <dt>
 
-[Processo de design da faixa de das](https://msdn.microsoft.com/library/cc872781.aspx)
+[Processo de design da faixa de opções](https://msdn.microsoft.com/library/cc872781.aspx)
 </dt> </dl>
 
  

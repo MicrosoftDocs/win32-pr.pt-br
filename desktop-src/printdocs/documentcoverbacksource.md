@@ -1,21 +1,21 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento DocumentCoverBackSource, que especifica a origem de uma folha de back-cover personalizada.
 ms.assetid: 43a0c881-75cc-4fbc-a0c3-b3eab9dfe4df
 title: DocumentCoverBackSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6547ac2dc2c3f91ea4d0ebeea87622c790ae7d4d
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 5be16ab26a4aa3dd7109fee7d630ed354b9b686d
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996273"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409349"
 ---
 # <a name="documentcoverbacksource"></a>DocumentCoverBackSource
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica a origem de uma folha de rosto de fundo personalizada.
+Especifica a origem de uma folha de back-cover personalizada.
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo da estrutura](#structure-content)
@@ -24,10 +24,10 @@ Especifica a origem de uma folha de rosto de fundo personalizada.
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                        |
-| Prefixo de escopo <br/> | Documento<br/>                            |
+| Prefixo de definição de scoping <br/> | Documento<br/>                            |
 | Observações <br/>          | Vinculado ao elemento DocumentCoverBack<br/> |
 
 
@@ -72,9 +72,9 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Tipo de dados<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | string<br/>  | não definido<br/>       |
 | MaxLength<br/>    | Número inteiro<br/> | não definido<br/>       |
-| MinLength<br/>    | integer<br/> | 1<br/>               |
-| Obrigatório<br/>    | string<br/>  | PSK: condicional<br/> |
-| UnitType<br/>     | string<br/>  | characters<br/>      |
+| Minlength<br/>    | integer<br/> | 1<br/>               |
+| Obrigatório<br/>    | string<br/>  | psk:Conditional<br/> |
+| Unittype<br/>     | string<br/>  | characters<br/>      |
 
 
 

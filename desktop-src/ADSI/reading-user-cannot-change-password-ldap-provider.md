@@ -1,6 +1,6 @@
 ---
 title: A leitura do usuário não pode alterar a senha (provedor LDAP)
-description: A capacidade de um usuário alterar sua senha é uma permissão que pode ser concedida ou negada.
+description: Saiba como determinar se um usuário tem permissão para alterar uma senha para o provedor LDAP. A capacidade de um usuário alterar uma senha pode ser concedida ou negada.
 ms.assetid: d0d95d20-dcdb-453a-9d15-c386217927c8
 ms.tgt_platform: multiple
 keywords:
@@ -9,12 +9,12 @@ keywords:
 - ADSI do provedor LDAP, exemplos de gerenciamento de usuário, o usuário deve alterar a senha no próximo logon, lendo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80ea818c8b01fbbac6b80037de13b25a82a07944
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: b26818ee02d3876aa209dcd4990288ea1cfe96fc
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104499149"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405929"
 ---
 # <a name="reading-user-cannot-change-password-ldap-provider"></a>A leitura do usuário não pode alterar a senha (provedor LDAP)
 
@@ -29,7 +29,7 @@ A capacidade de um usuário alterar sua senha é uma permissão que pode ser con
     > [!Note]  
     > As cadeias de caracteres "todos" e "auto-Autoridade NT \\ " são localizadas com base no idioma do primeiro controlador de domínio no domínio. Portanto, as cadeias de caracteres não devem ser usadas diretamente. Os nomes de conta devem ser obtidos em tempo de execução chamando a função [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) com o Sid para as entidades de segurança bem conhecidas "Everyone" ("s-1-1-0") e "NT Authority \\ self" ("S-1-5-10"). Os exemplos de autocódigo C++ **GetSidAccountName**, **GetSidAccountName \_ Everyone** e **GetSidAccountName \_** a seguir mostram como fazer isso.
 
-     
+     
 
 5.  Se ambas as ACEs "Everyone" e "NT AUTHORITY \\ self" tiverem o valor de **\_ \_ objeto de acesso \_ negado \_ do ADS AceType** para a propriedade [**IADsAccessControlEntry. ACETYPE**](iadsaccesscontrolentry-property-methods.md) , a permissão será negada.
 
@@ -419,7 +419,7 @@ O exemplo de código a seguir mostra como determinar se o usuário não pode alt
 > [!Note]  
 > O exemplo de código a seguir só funciona para domínios em que o idioma principal é o inglês, porque as cadeias de caracteres "todos" e "auto-Autoridade NT \\ " são localizadas com base no idioma do primeiro controlador de domínio no domínio. Não há nenhuma maneira de Visual Basic obter os nomes de conta para uma entidade de segurança conhecida sem chamar a função [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) . Se estiver usando Visual Basic, é recomendável que você use o provedor WinNT para determinar se a permissão usuário não pode alterar senha, conforme mostrado em [lendo o usuário não pode alterar a senha (provedor winnt)](reading-user-cannot-change-password-winnt-provider.md).
 
- 
+ 
 
 
 ```VB
@@ -475,6 +475,6 @@ End Function
 
 
 
- 
+ 
 
- 
+ 

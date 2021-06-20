@@ -1,15 +1,15 @@
 ---
-description: Lendo arquivos ASF no DirectShow
+description: Use os recursos deste artigo para saber mais sobre como ler arquivos de formato de sistemas avançados no DirectShow.
 ms.assetid: bd57334b-22b3-40e2-8841-e5d2df196eef
 title: Lendo arquivos ASF no DirectShow (DirectShow)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04b0d82691b5c47a510fdf4b3c006ae7b0a07e8f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 406e1455b1fa6fdc018636a7850de1c31c550eb7
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500368"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405099"
 ---
 # <a name="reading-asf-files-in-directshow-directshow"></a>Lendo arquivos ASF no DirectShow (DirectShow)
 

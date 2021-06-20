@@ -1,15 +1,15 @@
 ---
-description: O coletor de arquivos ASF é uma implementação de IMFMediaSink fornecida pelo Media Foundation que um aplicativo pode usar para arquivar dados de mídia ASF em um arquivo. Para obter informações sobre o modelo de objeto de coletor de mídia ASF e uso geral, consulte coletores de mídia ASF.
+description: Saiba mais sobre como definir propriedades no coletor de arquivos ASF, que um aplicativo pode usar para arquivar dados de mídia ASF em um arquivo.
 ms.assetid: a47caabd-23e3-4d22-b4b6-5fdb79d62ca1
 title: Definindo propriedades no coletor de arquivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30af39cf13e88f6edf2a6ab68caac27c2400955a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 64b6b000ed04c7858251f7388d3edc6a40e0b213
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296529"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407509"
 ---
 # <a name="setting-properties-in-the-file-sink"></a>Definindo propriedades no coletor de arquivos
 

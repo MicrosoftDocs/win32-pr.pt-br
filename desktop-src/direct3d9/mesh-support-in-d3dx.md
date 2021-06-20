@@ -1,15 +1,15 @@
 ---
-description: D3DX é uma biblioteca de utilitários que fornece serviços auxiliares. É uma camada acima do componente do Direct3D.
+description: Saiba mais sobre o suporte de malha no D3DX. D3DX é uma biblioteca de utilitários que fornece serviços auxiliares. É uma camada acima do componente do Direct3D.
 ms.assetid: 7892370f-0807-4ab7-b7cd-a7e1182e3f9c
 title: Suporte a malha no D3DX (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb0b2b1dd0e5d4c5a212005afe400bb559f1689a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a1600b372432d59357a7431c70ce70ce2958002c
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103919693"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408128"
 ---
 # <a name="mesh-support-in-d3dx-direct3d-9"></a>Suporte a malha no D3DX (Direct3D 9)
 
@@ -78,19 +78,19 @@ As malhas subcapadas usam Bones para influenciar um número de vértices. Os dad
 
 Os objetos de malha progressiva começam com um alto número de faces e usam simplificação para reduzir o número de faces. Uma malha progressiva que é independente de exibição é chamada de VIPM (malha progressiva independente de exibição).
 
-Outra maneira de reduzir o número de faces é cortar. Isso, na verdade, Remove vértices e rostos da malha. A remoção pode ser feita no high-end (para limitar o número máximo de rostos) ou no low end (para limitar o número mínimo de faces). No entanto, a redução melhora o desempenho do desenho. o cuidado deve ser usado para preservar a qualidade visual. O corte é demonstrado no exemplo de SDK de malha progressiva.
+Outra maneira de reduzir o número de faces é cortar. Isso, na verdade, Remove vértices e rostos da malha. A remoção pode ser feita no high-end (para limitar o número máximo de rostos) ou no low end (para limitar o número mínimo de faces). No entanto, a redução melhora o desempenho do desenho. o cuidado deve ser usado para preservar a qualidade visual. A recortação é demonstrada no Exemplo de SDK de Malha Progressiva.
 
-Para áreas de alta visibilidade, a resolução pode ser aumentada usando o nível progressivo de detalhes (PLOD). Essa é uma técnica para dividir uma única face em duas faces.
+Para áreas de alta visibilidade, a resolução pode ser aumentada usando o nível progressivo de detalhes (LTDD). Essa é uma técnica para quebrar um único rosto em duas faces.
 
 ### <a name="patch-meshes"></a>Malhas de patch
 
-Também há suporte para dois tipos especializados de malhas de patch: patches de retângulo e de triângulo. A malha de patches de retângulo é uma malha de patch cujos pontos de controle são dispostos em uma sequência de enrolamento e retangular. Os patches de retângulo e triângulo são usados para criar superfícies de ordem superior. Eles não são normalmente usados como malhas de triângulos.
+Dois tipos especializados de malhas de patch também são suportados: patches retângulo e triângulo. A malha de patch do retângulo é uma malha de patch cujos pontos de controle são colocados em uma sequência sinunta e retangular. Patches de retângulo e triângulo são usados para criar superfícies de ordem alta. Elas não são tão comumente usadas como malhas de triângulo.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[D3DX](d3dx.md)
+[D3dx](d3dx.md)
 </dt> </dl>
 
  

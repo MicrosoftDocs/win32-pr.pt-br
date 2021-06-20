@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre a sintaxe do esquema de impressão, que é expressa na sintaxe XML e é composta por um pequeno número de tipos de elementos.
 ms.assetid: d67518e3-c379-4a50-aeda-31afaa7f05dd
 title: Sintaxe do esquema de impressão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2503b3f44ff8b4bdda41f0feefe374c27d78bd41
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 4ef52dbdbdfacc2d3cc947b46558319577a75b1b
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105759823"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405289"
 ---
 # <a name="syntax-of-the-print-schema"></a>Sintaxe do esquema de impressão
 

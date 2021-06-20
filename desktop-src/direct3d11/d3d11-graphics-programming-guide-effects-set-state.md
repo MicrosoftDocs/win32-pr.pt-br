@@ -1,27 +1,27 @@
 ---
 title: Definir estado de efeito (Direct3D 11)
-description: Algumas constantes de efeito só precisam ser inicializadas.
+description: Algumas constantes de efeito só precisam ser inicializadas. Consulte o código básico para definir variáveis de efeito no Direct3D 12.
 ms.assetid: f94ba82e-fc67-4e4d-a49d-20e1163bdff7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b8df65e164c2df01f78ae9ea9ab83a547b977335
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 65c64f9e642e867e9398722d4590a4c2ce9193b4
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104498624"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407659"
 ---
 # <a name="set-effect-state-direct3d-11"></a>Definir estado de efeito (Direct3D 11)
 
-Algumas constantes de efeito só precisam ser inicializadas. Depois de inicializado, o estado de efeito é definido como o dispositivo para todo o loop de processamento. Outras variáveis precisam ser atualizadas sempre que o loop de renderização é chamado. O código básico para definir variáveis de efeito é mostrado abaixo, para cada um dos tipos de variáveis.
+Algumas constantes de efeito só precisam ser inicializadas. Depois de inicializado, o estado de efeito é definido como o dispositivo para todo o loop de renderização. Outras variáveis precisam ser atualizadas sempre que o loop de renderização é chamado. O código básico para definir variáveis de efeito é mostrado abaixo, para cada um dos tipos de variáveis.
 
 Um efeito encapsula todo o estado de renderização necessário para fazer uma passagem de renderização. Em termos da API, há três tipos de estado encapsulados em um efeito.
 
--   [Estado de constante](#constant-state)
+-   [Estado constante](#constant-state)
 -   [Estado do sombreador](#shader-state)
--   [Estado de textura](#texture-state)
+-   [Estado da textura](#texture-state)
 
-## <a name="constant-state"></a>Estado de constante
+## <a name="constant-state"></a>Estado constante
 
 Primeiro, declare variáveis em um efeito usando tipos de dados HLSL.
 
@@ -83,7 +83,7 @@ OnD3D11CreateDevice()
 
 
 
-Em terceiro lugar, use os métodos Update para definir o valor das variáveis no aplicativo nas variáveis de efeito.
+Em terceiro lugar, use os métodos de atualização para definir o valor das variáveis no aplicativo nas variáveis de efeito.
 
 
 ```
@@ -106,7 +106,7 @@ OnD3D11FrameRender()
 
 Há duas maneiras de obter o estado contido em uma variável de efeito. Dado um efeito que foi carregado na memória.
 
-Uma maneira é obter o estado de amostra de um [**ID3DX11EffectVariable**](id3dx11effectvariable.md) que foi convertido como uma interface de amostra.
+Uma maneira é obter o estado do amostrador de [**um ID3DX11EffectVariable**](id3dx11effectvariable.md) que foi lançado como uma interface de exemplo.
 
 
 ```
@@ -123,7 +123,7 @@ if( g_pEffect11 )
 
 
 
-A outra maneira é obter o estado de amostra de um [**ID3D11SamplerState**](/windows/desktop/api/D3D11/nn-d3d11-id3d11samplerstate).
+A outra maneira é obter o estado do amostrador de [**um ID3D11SamplerState**](/windows/desktop/api/D3D11/nn-d3d11-id3d11samplerstate).
 
 
 ```
@@ -147,7 +147,7 @@ if( g_pEffect11 )
 
 ## <a name="shader-state"></a>Estado do sombreador
 
-O estado do sombreador é declarado e atribuído em uma técnica de efeito, em uma passagem.
+O estado do sombreador é declarado e atribuído em uma técnica de efeito, dentro de uma passagem.
 
 
 ```
@@ -165,13 +165,13 @@ technique10 RenderSceneWithTexture1Light
 
 
 
-Isso funcionará da mesma forma que se você não estivesse usando um efeito. Há três chamadas, uma para cada tipo de sombreador (vértice, geometria e pixel). O primeiro, SetVertexShader, chama [**ID3D11DeviceContext:: VSSetShader**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-vssetshader). CompileShader é uma função de efeito especial que usa o perfil do sombreador (vs \_ 4 \_ 0) e o nome da função de sombreador de vértice (RenderVS). Em outras palavras, cada uma dessas chamadas CompileShader compila sua função de sombreador associada e retorna um ponteiro para o sombreador compilado.
+Isso funcionará da forma como funcionaria se você não estivesse usando um efeito. Há três chamadas, uma para cada tipo de sombreador (vértice, geometria e pixel). O primeiro, SetVertexShader, chama [**ID3D11DeviceContext::VSSetShader.**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-vssetshader) CompileShader é uma função de efeito especial que aceita o perfil do sombreador (vs 4 0) e o nome da função de sombreador de \_ vértice \_ (RenderVS). Em outras palavras, cada uma dessas chamadas CompileShader compila sua função de sombreador associada e retorna um ponteiro para o sombreador compilado.
 
-Observe que nem todo o estado do sombreador deve ser definido. Essa passagem não inclui nenhuma chamada SetHullShader ou SetDomainShader, o que significa que os envoltória associados no momento e os sombreadores de domínio ficarão inalterados.
+Observe que nem todo o estado do sombreador deve ser definido. Essa passagem não inclui nenhuma chamada SetHullShader ou SetDomainShader, o que significa que os sombreadores de chassi e domínio atualmente vinculados permanecerão inalterados.
 
-## <a name="texture-state"></a>Estado de textura
+## <a name="texture-state"></a>Estado da textura
 
-O estado de textura é um pouco mais complexo do que definir uma variável, porque os dados de textura não são simplesmente lidos como uma variável, ele é amostrado de uma textura. Portanto, você deve definir a variável de textura (assim como uma variável normal, exceto que ela usa um tipo de textura) e você deve definir as condições de amostragem. Aqui está um exemplo de uma declaração de variável de textura e a declaração de estado de amostragem correspondente.
+O estado de textura é um pouco mais complexo do que definir uma variável, pois os dados de textura não são simplesmente lidos como uma variável, são amostrados de uma textura. Portanto, você deve definir a variável de textura (assim como uma variável normal, exceto que ela usa um tipo de textura) e definir as condições de amostragem. Aqui está um exemplo de uma declaração de variável de textura e a declaração de estado de amostragem correspondente.
 
 
 ```
@@ -188,7 +188,7 @@ SamplerState MeshTextureSampler
 
 
 
-Aqui está um exemplo de como definir uma textura de um aplicativo. Neste exemplo, a textura é armazenada nos dados de malha, que foi carregado quando o efeito foi criado.
+Aqui está um exemplo de como definir uma textura de um aplicativo. Neste exemplo, a textura é armazenada nos dados da malha, que foram carregados quando o efeito foi criado.
 
 A primeira etapa é obter um ponteiro para a textura do efeito (da malha).
 
@@ -220,20 +220,20 @@ OnD3D11FrameRender()
 
 
 
-Da perspectiva do aplicativo, as exibições de acesso não ordenado são tratadas de forma semelhante às exibições de recursos do sombreador. No entanto, no sombreador de pixel de efeito e nas funções de sombreador de computação, os dados de exibição de acesso não ordenados são lidos de/gravados diretamente. Você não pode obter uma amostra de uma exibição de acesso não ordenada.
+Da perspectiva do aplicativo, as exibições de acesso não organizado são tratadas da mesma forma que as exibições de recurso do sombreador. No entanto, no efeito sombreador de pixel e funções de sombreador de computação, os dados de exibição de acesso não organizados são lidos/gravados diretamente. Não é possível amostrar de uma exibição de acesso não organizado.
 
-Para obter mais informações sobre como exibir recursos, consulte [recursos](overviews-direct3d-11-resources.md).
+Para obter mais informações sobre como exibir recursos, consulte [Recursos](overviews-direct3d-11-resources.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Renderizando um efeito (Direct3D 11)](d3d11-graphics-programming-guide-effects-render.md)
+[Renderizar um efeito (Direct3D 11)](d3d11-graphics-programming-guide-effects-render.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

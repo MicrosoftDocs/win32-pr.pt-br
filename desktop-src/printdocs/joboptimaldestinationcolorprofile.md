@@ -1,34 +1,34 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento JobOptimalDestinationColorProfile que especifica o perfil de cor ideal, considerando a configuração atual do dispositivo.
 ms.assetid: 70790dc2-180a-4e04-91a9-a10ee76c836b
 title: JobOptimalDestinationColorProfile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45630b2ddbe94f19905f01c508fc4d852d29566b
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 3e7ad2ea269594809b047922ea4f6c99b924e5ae
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107999244"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408839"
 ---
 # <a name="joboptimaldestinationcolorprofile"></a>JobOptimalDestinationColorProfile
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica o perfil de cor ideal, considerando a configuração atual do dispositivo.
+Especifica o perfil de cor ideal de acordo com a configuração atual do dispositivo.
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo estrutural](#structural-content)
--   [Conteúdo de linguagem XML (XML)](#extensible-markup-language-xml-content)
+-   [linguagem XML conteúdo (XML)](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Informações do elemento
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|---------------------|
 | Tipo de elemento <br/>   | Propriedade<br/> |
-| Prefixo de escopo <br/> | Trabalho<br/>      |
+| Prefixo de definição de scoping <br/> | Trabalho<br/>      |
 | Observações <br/>          | Nenhum<br/>     |
 
 
@@ -61,17 +61,17 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 
 | Nome                            | Tipo de dados         | Unidade           | Valores com suporte          | Resumo                                        |
 |---------------------------------|-------------------|----------------|---------------------------|------------------------------------------------|
-| \_Profilevalue\_<br/>     | string<br/> | N/D<br/> | RGB, ICC, CMYK<br/> | Especifica o perfil de cor.<br/>        |
-| \_Caminhovalue\_<br/>        | string<br/> | N/D<br/> | N/D<br/>            | Especifica o caminho do arquivo para o perfil.<br/> |
-| \_ProfileDataValue\_<br/> | string<br/> | N/D<br/> | N/D<br/>            | Contém conteúdo de dados de perfil.<br/>      |
+| \_ProfileValue\_<br/>     | string<br/> | n/d<br/> | RGB, ICC, CMYK<br/> | Especifica o perfil de cor.<br/>        |
+| \_PathValue\_<br/>        | string<br/> | n/d<br/> | n/d<br/>            | Especifica o caminho do arquivo para o perfil.<br/> |
+| \_ProfileDataValue\_<br/> | string<br/> | n/d<br/> | n/d<br/>            | Contém conteúdo de dados de perfil.<br/>      |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>Conteúdo de linguagem XML (XML)
+## <a name="extensible-markup-language-xml-content"></a>linguagem XML conteúdo (XML)
 
-As palavras-chave do esquema de impressão pública são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace. O conteúdo do linguagem XML público (XML) para essa palavra-chave é definido abaixo:
+As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML XML (public linguagem XML) para essa palavra-chave é definido abaixo:
 
 ``` syntax
  <psf:Property name="psk:JobOptimalDestinationColorProfile">

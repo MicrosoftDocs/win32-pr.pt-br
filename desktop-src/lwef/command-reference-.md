@@ -1,15 +1,15 @@
 ---
 title: Referência de comando (editor de caracteres do agente da Microsoft)
-description: Referência de comando
+description: Essa referência de comando descreve o editor de caracteres do agente da Microsoft. O Microsoft Agent foi preterido a partir do Windows 7.
 ms.assetid: c8d57500-ad29-4325-aec7-3f857990b28c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3394c0c7de7c76295b020a3d7e9ebba058e6062c
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: ee75070f70ffe8c8fd2075fc6ec46483dcd005fa
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103644081"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405729"
 ---
 # <a name="command-reference-microsoft-agent-character-editor"></a>Referência de comando (editor de caracteres do agente da Microsoft)
 

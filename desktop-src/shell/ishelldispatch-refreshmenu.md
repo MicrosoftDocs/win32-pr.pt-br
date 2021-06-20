@@ -1,5 +1,5 @@
 ---
-description: Atualiza o conteúdo do menu iniciar. Usado apenas com sistemas anteriores ao Windows XP.
+description: Saiba mais sobre o método IShellDispatch. RefreshMenu, que atualiza o conteúdo do menu iniciar. Usado apenas com sistemas anteriores ao Windows XP.
 ms.assetid: D36FA5A0-AF03-4627-86E0-869BF1440958
 title: Método IShellDispatch. RefreshMenu (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 98728ef48ffb9ef4383cf9ba567606758b7a015c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d9e1a3c326cfa79c7b754cc8a364e649cf2c9931
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967536"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404669"
 ---
 # <a name="ishelldispatchrefreshmenu-method"></a>Método IShellDispatch. RefreshMenu
 
@@ -45,7 +45,7 @@ IShellDispatch.RefreshMenu()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 
