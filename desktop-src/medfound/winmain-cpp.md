@@ -1,19 +1,19 @@
 ---
-description: Este tópico contém código para o tutorial como reproduzir arquivos de mídia com Media Foundation.
+description: Este artigo contém código para o arquivo winmain.cpp para o tutorial Como reproduzir arquivos de mídia com Media Foundation.
 ms.assetid: f13cba48-bfb6-4964-a9de-004cbb5c0dce
-title: WinMain. cpp
+title: winmain.cpp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce99bdc59eb29b77de0418a995b7683e9c040ccc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 31c0ec32af15d6598dbb34d29f80ec6b4ad7a48f
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103921867"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406349"
 ---
-# <a name="winmaincpp"></a><span data-ttu-id="e53e7-103">WinMain. cpp</span><span class="sxs-lookup"><span data-stu-id="e53e7-103">winmain.cpp</span></span>
+# <a name="winmaincpp"></a><span data-ttu-id="c01f1-103">winmain.cpp</span><span class="sxs-lookup"><span data-stu-id="c01f1-103">winmain.cpp</span></span>
 
-<span data-ttu-id="e53e7-104">Este tópico contém código para o tutorial [como reproduzir arquivos de mídia com Media Foundation](how-to-play-unprotected-media-files.md).</span><span class="sxs-lookup"><span data-stu-id="e53e7-104">This topic contains code for the tutorial [How to Play Media Files with Media Foundation](how-to-play-unprotected-media-files.md).</span></span>
+<span data-ttu-id="c01f1-104">Este tópico contém código para o tutorial Como reproduzir arquivos de [mídia com Media Foundation](how-to-play-unprotected-media-files.md).</span><span class="sxs-lookup"><span data-stu-id="c01f1-104">This topic contains code for the tutorial [How to Play Media Files with Media Foundation](how-to-play-unprotected-media-files.md).</span></span>
 
 
 ```C++
@@ -517,14 +517,14 @@ HRESULT AllocGetWindowText(HWND hwnd, WCHAR **pszText, DWORD *pcchLen)
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="e53e7-105">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="e53e7-105">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="c01f1-105">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="c01f1-105">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="e53e7-106">Exemplo de reprodução de sessão de mídia</span><span class="sxs-lookup"><span data-stu-id="e53e7-106">Media Session Playback Example</span></span>](media-session-playback-example.md)
+[<span data-ttu-id="c01f1-106">Exemplo de reprodução de sessão de mídia</span><span class="sxs-lookup"><span data-stu-id="c01f1-106">Media Session Playback Example</span></span>](media-session-playback-example.md)
 </dt> <dt>
 
-[<span data-ttu-id="e53e7-107">Reprodução de áudio/vídeo</span><span class="sxs-lookup"><span data-stu-id="e53e7-107">Audio/Video Playback</span></span>](audio-video-playback.md)
+[<span data-ttu-id="c01f1-107">Reprodução de áudio/vídeo</span><span class="sxs-lookup"><span data-stu-id="c01f1-107">Audio/Video Playback</span></span>](audio-video-playback.md)
 </dt> </dl>
 
  

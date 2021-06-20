@@ -1,29 +1,29 @@
 ---
 title: RequestReplyTcpServerExample
-description: Este exemplo mostra um servidor TCP que aceita um canal e recebe e responde a mensagens.
+description: Consulte um exemplo de solicitação e resposta para o servidor TCP que usa a API de Serviços Web do Windows (WWSAPI). Este exemplo aceita um canal e recebe e responde às mensagens.
 ms.assetid: da9a507b-952d-4378-a37f-c2c4407335e8
 keywords:
-- RequestReplyTcpServerExample nativo – Web-Services
+- RequestReplyTcpServerExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e6c2d33029c588823e5301198cf4562cc194782
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3dd347c5adad07140ed2b9942a1a9718bf9f5f85
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105810902"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404079"
 ---
-# <a name="requestreplytcpserverexample"></a><span data-ttu-id="2bd98-106">RequestReplyTcpServerExample</span><span class="sxs-lookup"><span data-stu-id="2bd98-106">RequestReplyTcpServerExample</span></span>
+# <a name="requestreplytcpserverexample"></a><span data-ttu-id="8350b-107">RequestReplyTcpServerExample</span><span class="sxs-lookup"><span data-stu-id="8350b-107">RequestReplyTcpServerExample</span></span>
 
-<span data-ttu-id="2bd98-107">Este exemplo mostra um servidor TCP que aceita um canal e recebe e responde a mensagens.</span><span class="sxs-lookup"><span data-stu-id="2bd98-107">This example shows a TCP server that accepts a channel and receives and replies to messages.</span></span>
+<span data-ttu-id="8350b-108">Este exemplo mostra um servidor TCP que aceita um canal e recebe e responde às mensagens.</span><span class="sxs-lookup"><span data-stu-id="8350b-108">This example shows a TCP server that accepts a channel and receives and replies to messages.</span></span>
 
--   [<span data-ttu-id="2bd98-108">RequestReplyTcpServer. cpp</span><span class="sxs-lookup"><span data-stu-id="2bd98-108">RequestReplyTcpServer.cpp</span></span>](#requestreplytcpservercpp)
--   [<span data-ttu-id="2bd98-109">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="2bd98-109">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
--   [<span data-ttu-id="2bd98-110">Makefile</span><span class="sxs-lookup"><span data-stu-id="2bd98-110">Makefile</span></span>](#makefile)
+-   [<span data-ttu-id="8350b-109">RequestReplyTcpServer.cpp</span><span class="sxs-lookup"><span data-stu-id="8350b-109">RequestReplyTcpServer.cpp</span></span>](#requestreplytcpservercpp)
+-   [<span data-ttu-id="8350b-110">PurchaseOrder.wsdl</span><span class="sxs-lookup"><span data-stu-id="8350b-110">PurchaseOrder.wsdl</span></span>](#purchaseorderwsdl)
+-   [<span data-ttu-id="8350b-111">Makefile</span><span class="sxs-lookup"><span data-stu-id="8350b-111">Makefile</span></span>](#makefile)
 
-## <a name="requestreplytcpservercpp"></a><span data-ttu-id="2bd98-111">RequestReplyTcpServer. cpp</span><span class="sxs-lookup"><span data-stu-id="2bd98-111">RequestReplyTcpServer.cpp</span></span>
+## <a name="requestreplytcpservercpp"></a><span data-ttu-id="8350b-112">RequestReplyTcpServer.cpp</span><span class="sxs-lookup"><span data-stu-id="8350b-112">RequestReplyTcpServer.cpp</span></span>
 
 
 ```C++
@@ -490,7 +490,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a><span data-ttu-id="2bd98-112">PurchaseOrder. WSDL</span><span class="sxs-lookup"><span data-stu-id="2bd98-112">PurchaseOrder.wsdl</span></span>
+## <a name="purchaseorderwsdl"></a><span data-ttu-id="8350b-113">PurchaseOrder.wsdl</span><span class="sxs-lookup"><span data-stu-id="8350b-113">PurchaseOrder.wsdl</span></span>
 
 ``` syntax
 <wsdl:definitions 
@@ -601,7 +601,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="makefile"></a><span data-ttu-id="2bd98-113">Makefile</span><span class="sxs-lookup"><span data-stu-id="2bd98-113">Makefile</span></span>
+## <a name="makefile"></a><span data-ttu-id="8350b-114">Makefile</span><span class="sxs-lookup"><span data-stu-id="8350b-114">Makefile</span></span>
 
 ``` syntax
 #------------------------------------------------------------
@@ -633,9 +633,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 
