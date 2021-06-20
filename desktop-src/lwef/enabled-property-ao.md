@@ -1,15 +1,15 @@
 ---
 title: Propriedade Enabled (objeto AudioOutput)
-description: Propriedade Enabled
+description: Saiba mais sobre a propriedade de objeto AudioOutput habilitada. O Microsoft Agent foi preterido a partir do Windows 7.
 ms.assetid: 6526f249-be13-4732-b79e-a9952489461f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5dff9153a1aa7a6bf5346d46f43f80bf48809c9
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: b807b4cadcc9a0157b4efa400dd9d0e3cb5cf21a
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104008766"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407339"
 ---
 # <a name="enabled-property-audiooutput-object"></a>Propriedade Enabled (objeto AudioOutput)
 

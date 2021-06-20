@@ -1,17 +1,17 @@
 ---
 title: Sobre a configuração do registro da DLL de administração do RAS
-description: O programa de instalação para uma DLL de administração de RAS de terceiros deve registrar a DLL com o RAS, fornecendo informações sob a chave a seguir no registro.
+description: Entenda os requisitos para registrar uma DLL de administração de serviço de acesso remoto (RAS) de terceiros com o RAS. O RAS dá suporte a várias DLLs de administração de RAS.
 ms.assetid: e83a5e37-a39d-4465-abc9-653cdd56893b
 keywords:
 - Administração de RAS RRAS, configuração do registro de DLL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cf487f792a4add9ebf61e8f866b9f0577fb468d
-ms.sourcegitcommit: cba7f424a292fd7f3a8518947b9466439b455419
+ms.openlocfilehash: 8b9a7b7c48422264a890a74b1bab36e61672f11d
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "103823474"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406659"
 ---
 # <a name="about-ras-administration-dll-registry-setup"></a>Sobre a configuração do registro da DLL de administração do RAS
 
@@ -19,10 +19,10 @@ O programa de instalação para uma DLL de administração de RAS de terceiros d
 
 ```
 HKEY_LOCAL_MACHINE
-   SOFTWARE
-      Microsoft
-         RAS
-            AdminDll
+   SOFTWARE
+      Microsoft
+         RAS
+            AdminDll
 ```
 
 Para registrar a DLL, defina os valores a seguir nessa chave.
@@ -36,16 +36,16 @@ Para registrar a DLL, defina os valores a seguir nessa chave.
 
 
 
- 
+ 
 
 Como o RAS dá suporte a várias DLLs de administração de RAS, o valor de registro **DLLPath** pode conter uma lista delimitada por ponto-e-vírgula de caminhos. Por exemplo, a entrada de registro para uma DLL de administração de RAS de uma empresa fictícia chamada proeletromagnéticon, Inc., pode ser a seguinte:
 
 ```
 HKEY_LOCAL_MACHINE
-   SOFTWARE
-      Microsoft
-         RAS
-            AdminDll
+   SOFTWARE
+      Microsoft
+         RAS
+            AdminDll
 ```
 
 *DisplayName*: **reg \_ sz** : dll de administração de Ras proeletromagnético
@@ -58,9 +58,9 @@ O programa de instalação para uma DLL de administração de RAS também deve f
 
 **Windows 2000/NT:** O RAS dá suporte a apenas uma DLL de administração de RAS, portanto, o valor de registro **DLLPath** não pode conter uma lista delimitada por ponto-e-vírgula de caminhos.
 
- 
+ 
 
- 
+ 
 
 
 

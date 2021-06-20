@@ -1,15 +1,15 @@
 ---
-description: As provisões são feitas para estender constantes e estruturas tanto de forma independente de dispositivo quanto de um modo específico de dispositivo (específico do fornecedor).
+description: Saiba mais sobre a extensibilidade constante. As provisões são feitas para estender constantes e estruturas tanto de forma independente de dispositivo quanto de uma maneira específica ao dispositivo.
 ms.assetid: 78430503-3e1f-49ab-be9c-d48bd21a840e
 title: Extensibilidade constante
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a470ccb52af1bdc92596ac42bbafb74d4821db1e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 975d2901dcc3f7e574ffdacdabbcf457821ef932
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105759973"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409969"
 ---
 # <a name="constant-extensibility"></a>Extensibilidade constante
 

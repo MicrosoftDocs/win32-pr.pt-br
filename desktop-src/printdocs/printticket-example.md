@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Este tópico não é atual. Para obter as informações mais atuais, consulte o apêndice H da especificação do esquema de impressão.
 ms.assetid: bef5db10-fac2-48d9-bc8b-8c39d377d945
 title: Exemplo de PrintTicket
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0bfa25eaa24f0a2ce345d9976cae8c1f764e085
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 91a1564099824bf99a123b875bc5745138522de3
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105771667"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404969"
 ---
 # <a name="printticket-example"></a>Exemplo de PrintTicket
 

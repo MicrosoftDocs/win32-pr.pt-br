@@ -1,15 +1,15 @@
 ---
-description: Etapa 6.
+description: Adicione suporte para COM como parte da gravação de um filtro de transformação. Esta é a etapa final deste tutorial.
 ms.assetid: 53e4f5b7-c85d-4b44-9a0c-0ad05ca872cc
 title: Etapa 6. Adicionar suporte para COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e477cc22650604bce623874c0afbba1063609e44
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 097d51fa440812311edde9ce448916c66721a507
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105810384"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406769"
 ---
 # <a name="step-6-add-support-for-com"></a>Etapa 6. Adicionar suporte para COM
 
@@ -31,7 +31,7 @@ Para expor interfaces adicionais, substitua o método [**CUnknown:: NonDelegatin
 -   Coloque a macro [**Declare \_ IUnknown**](declare-iunknown.md) na seção da declaração pública.
 -   Substitua [**NonDelegatingQueryInterface**](cunknown-nondelegatingqueryinterface.md) para verificar a IID da sua interface e retornar um ponteiro para o filtro.
 
-O código a seguir mostra estas etapas:
+O código a seguir mostra essas etapas:
 
 
 ```C++

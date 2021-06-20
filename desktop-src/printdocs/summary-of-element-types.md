@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Este artigo lista os tipos de elementos que são definidos na estrutura de esquema de impressão e que são usados para expressar as tecnologias relacionadas ao esquema de impressão.
 ms.assetid: 48b259e0-10ff-4964-a8de-a54ae3731c60
 title: Resumo dos tipos de elementos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf93024d8e5547cee3cc15b7d10e26d5308301b2
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 1e0d339a192facc84483f7625b26781af4169bda
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105765288"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405299"
 ---
 # <a name="summary-of-element-types"></a>Resumo dos tipos de elementos
 

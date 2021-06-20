@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento PrintCapabilities, que representa a raiz do documento PrintCapabilities.
 ms.assetid: f503b62f-02e1-4621-8799-a8b6ad12f489
 title: PrintCapabilities
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e10c6dd8ce98b071f1eb239762544a9b72160035
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 2158fd651849df2e4ea24c640065f1041569741a
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105762215"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407019"
 ---
 # <a name="printcapabilities"></a>PrintCapabilities
 
@@ -43,7 +43,7 @@ A tabela a seguir lista os elementos que podem ser pais deste elemento, os eleme
 
 
 
-| Category                   | Detalhes                                                                                                           |
+| Categoria                   | Detalhes                                                                                                           |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------|
 | Elementos pai<br/> | Somente raiz do documento.<br/>                                                                                    |
 | Elementos filho<br/>  | *Recurso* (zero ou mais)<br/> *ParameterDef* (zero ou mais)<br/> *Propriedade* (zero ou mais)<br/> |

@@ -1,19 +1,19 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento JobCopiesAllDocuments, que especifica o número de cópias de um trabalho.
 ms.assetid: 584a71cd-fc32-485e-a627-27be95c377a9
 title: JobCopiesAllDocuments
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e8e606095462dc3a2eee1391121bf663de3655c
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 05166715a5985c5ddee33fa6808d0fb6b150774b
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998363"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409029"
 ---
 # <a name="jobcopiesalldocuments"></a>JobCopiesAllDocuments
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Especifica o número de cópias de um trabalho.
 
@@ -24,10 +24,10 @@ Especifica o número de cópias de um trabalho.
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|-------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/> |
-| Prefixo de escopo <br/> | Trabalho<br/>          |
+| Prefixo de definição de scoping <br/> | Trabalho<br/>          |
 | Observações <br/>          | Nenhum<br/>         |
 
 
@@ -76,10 +76,10 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Tipo de dados<br/>     | string<br/>  | xs:integer<br/>        |
 | DefaultValue<br/> | integer<br/> | 1<br/>                 |
 | MaxValue<br/>     | Número inteiro<br/> | não definido<br/>         |
-| MinValue<br/>     | integer<br/> | 1<br/>                 |
-| Obrigatório<br/>    | string<br/>  | PSK: incondicional<br/> |
+| Minvalue<br/>     | integer<br/> | 1<br/>                 |
+| Obrigatório<br/>    | string<br/>  | psk:Incondicional<br/> |
 | Vários<br/>     | integer<br/> | 1<br/>                 |
-| UnitType<br/>     | string<br/>  | cópia<br/>            |
+| Unittype<br/>     | string<br/>  | Cópias<br/>            |
 
 
 

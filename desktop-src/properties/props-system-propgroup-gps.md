@@ -1,17 +1,17 @@
 ---
-description: O separador de grupo de propriedades usado em listas de propriedades para separar arquivos de áudio de outros tipos. Não use essa propriedade para obter ou definir valores. Ele é destinado apenas como um marcador.
+description: Leia sobre a propriedade System.PropGroup.GPS. Não use essa propriedade para obter ou definir valores. Ele é destinado apenas como um marcador.
 ms.assetid: bdc3d22c-d055-47f7-86ad-6e050608ad12
-title: System. Propobject. GPS
+title: System.PropGroup.GPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 508782aaf576fbba363a061283b1a837f6ffa6f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3544f433ef83d64b65f1ad33a8d732ccf80b8181
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105780442"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404549"
 ---
-# <a name="systempropgroupgps"></a>System. Propobject. GPS
+# <a name="systempropgroupgps"></a>System.PropGroup.GPS
 
 O separador de grupo de propriedades usado em listas de propriedades para separar arquivos de áudio de outros tipos. Não use essa propriedade para obter ou definir valores. Ele é destinado apenas como um marcador.
 
@@ -32,13 +32,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -47,19 +47,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -74,7 +74,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

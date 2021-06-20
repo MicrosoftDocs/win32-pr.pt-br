@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre como adicionar instâncias de propriedade. O esquema de impressão permite que as instâncias de propriedade estejam presentes em uma instância de opção.
 ms.assetid: dac287a9-77ca-44d8-8019-b05e4c61dc52
 title: Adicionando instâncias de propriedade
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08e3df1b6c271c37c080968cc775ac11eba2e3ce
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 8085fa10f824f32dc76aef0f1e5f78ca05b22b93
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104370828"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409689"
 ---
 # <a name="adding-property-instances"></a>Adicionando instâncias de propriedade
 

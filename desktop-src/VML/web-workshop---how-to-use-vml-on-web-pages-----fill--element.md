@@ -1,6 +1,6 @@
 ---
 title: Usar o elemento Fill
-description: Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+description: Este artigo descreve como usar o elemento Fill do VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.
 ms.assetid: ed36601d-2e90-412e-ac3f-58324fac300d
 keywords:
 - Web Workshop, elemento Fill
@@ -28,12 +28,12 @@ keywords:
 - formas preenchidas por imagem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf497a3120f53e24f1cff2bf7084469754bbaf7e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ecb243e4896443fd36a1b22c2ac3a0ab0bedfb2b
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104552511"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407789"
 ---
 # <a name="using-the-fill-element"></a>Usar o elemento Fill
 
@@ -42,7 +42,7 @@ Este tópico descreve a VML, um recurso que foi preterido a partir do Windows In
 > [!Note]  
 > A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Como você aprendeu, você pode usar o atributo da propriedade **FillColor** de um elemento Shape predefinido, como,,,,, `<oval>` `<line>` `<polyline>` `<curve>` `<rect>` `<roundrect>` , `<arc>` --para especificar a cor usada para preencher a forma. Neste tópico, Ilustraremos como desenhar uma forma que é preenchida com efeitos mais avançados.
 
@@ -92,7 +92,7 @@ Você pode definir o atributo de Propriedade do **método** como "linear" ou "Si
 
 **Exemplos:**
 
- 
+ 
 
 Para criar uma forma que seja preenchida com gradiente verticalmente, você pode definir o atributo de Propriedade Angle como Angle = "-90", conforme mostrado na seguinte representação de VML:
 
@@ -219,6 +219,6 @@ Você pode criar facilmente uma forma que é preenchida com uma imagem diferente
 
 Para obter mais informações sobre esse elemento, consulte a [especificação da VML](https://www.w3.org/TR/NOTE-VML#-toc416858394) .
 
- 
+ 
 
- 
+ 

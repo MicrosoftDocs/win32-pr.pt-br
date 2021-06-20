@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento JobOutputBin, que descreve a bandeja de saída instalada em um dispositivo ou a lista completa de compartimentos com suporte para um dispositivo.
 ms.assetid: 324ec426-b7c8-43af-96b9-74929358e262
 title: JobOutputBin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 973433ac7f6e051d4656777696cc3a37cedd953b
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 1243e9409f781b8babde6d6310ce7a2b083f8703
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107999213"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408849"
 ---
 # <a name="joboutputbin"></a>JobOutputBin
 
@@ -25,7 +25,7 @@ Descreve a bandeja de saída instalada em um dispositivo ou a lista completa de 
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
 | Prefixo de escopo <br/> | Trabalho<br/>     |
@@ -68,8 +68,8 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Nome                                   | Tipo de dados          | Unidade                  | Valores com suporte                                                                                                                                                                      | Resumo                                                                             |
 |----------------------------------------|--------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | \_OptionName\_<br/>              | string<br/>  | characters<br/> | Nome totalmente qualificado válido, conforme definido pelos [namespaces em XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | O nome da opção.<br/>                                                  |
-| \_IdentityOptionValue\_<br/>     | string<br/>  | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/>        |
-| \_BinTypeValue\_<br/>            | string<br/>  | N/D<br/>        | Caixa de correio, classificador, empilhador, finalizador, nenhum.<br/>                                                                                                                                  | Especifica o tipo geral do compartimento.<br/>                                   |
+| \_IdentityOptionValue\_<br/>     | string<br/>  | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/>        |
+| \_BinTypeValue\_<br/>            | string<br/>  | n/d<br/>        | Caixa de correio, classificador, empilhador, finalizador, nenhum.<br/>                                                                                                                                  | Especifica o tipo geral do compartimento.<br/>                                   |
 | \_MediaSheetCapacityValue\_<br/> | Número inteiro<br/> | folhas<br/>     | Restrição de inteiro máximo permitida pelo dispositivo.<br/>                                                                                                                              | Especifica a capacidade de mídia no número de páginas (nível completo) do compartimento.<br/> |
 
 

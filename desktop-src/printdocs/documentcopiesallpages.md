@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba como o elemento DocumentCopiesAllPages, que especifica o número de cópias de um documento.
 ms.assetid: 6319e8fc-787f-4bc8-8436-1b498b3882d2
 title: DocumentCopiesAllPages
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 723242ddd127113b573f167e6902b27fcca9665a
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 05bf82c23b764f3fe1f8257f4cdb2e7fa03374bd
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107993983"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409439"
 ---
 # <a name="documentcopiesallpages"></a>DocumentCopiesAllPages
 
@@ -24,7 +24,7 @@ Especifica o número de cópias de um documento.
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|-------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/> |
 | Prefixo de escopo <br/> | Documento<br/>     |

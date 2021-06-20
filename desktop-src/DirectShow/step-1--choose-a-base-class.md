@@ -1,15 +1,15 @@
 ---
-description: Etapa 1.
+description: Escolha uma classe base como parte da gravação de um filtro de transformação. Saiba quais classes são apropriadas para filtros de transformação.
 ms.assetid: 4b2d3add-0430-480b-ad5f-bb1aa19fef21
 title: Etapa 1. Escolher uma classe base
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4679873e78e75b350335b5294db63579fd41f36
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b1a2bbf704bb2247034bc2ba3a6f35812f46aaaa
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829068"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112406459"
 ---
 # <a name="step-1-choose-a-base-class"></a>Etapa 1. Escolher uma classe base
 

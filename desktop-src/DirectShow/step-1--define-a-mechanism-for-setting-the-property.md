@@ -1,25 +1,25 @@
 ---
-description: Etapa 1.
+description: Defina um mecanismo para definir a propriedade como parte da criação de uma página de propriedades de filtro para um filtro DirectShow personalizado.
 ms.assetid: 1912af22-11dc-4864-8c20-91675d4f45d9
 title: Etapa 1. Definir um mecanismo para definir a propriedade
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74a1845cfb3cdf5642378a2321e827e52720a83d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 191014c35e27974c52961c2c6218e3a83effcc99
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105770063"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112410069"
 ---
 # <a name="step-1-define-a-mechanism-for-setting-the-property"></a>Etapa 1. Definir um mecanismo para definir a propriedade
 
-O filtro deve dar suporte a uma maneira para a página de propriedades se comunicar com ela, para que a página de propriedades possa definir e recuperar propriedades no filtro. Os possíveis mecanismos incluem o seguinte:
+O filtro deve dar suporte a uma maneira de a página de propriedades se comunicar com ele, para que a página de propriedades possa definir e recuperar propriedades no filtro. Os mecanismos possíveis incluem o seguinte:
 
 -   Expor uma interface COM personalizada.
--   Suporte a propriedades de automação, por meio de **IDispatch**.
--   Expor a interface **IPropertyBag** e defina um conjunto de propriedades nomeadas.
+-   Suporte a propriedades de Automação, por **meio de IDispatch.**
+-   Exponha a interface **IPropertyBag** e defina um conjunto de propriedades nomeadas.
 
-Este exemplo usa uma interface COM personalizada, chamada ISaturation. Essa não é uma interface do DirectShow real; Ele é definido somente para este exemplo. Comece declarando a interface em um arquivo de cabeçalho, juntamente com o IID (identificador de interface):
+Este exemplo usa uma interface COM personalizada, chamada IS saturação. Essa não é uma interface real do DirectShow; ele é definido somente para este exemplo. Comece declarando a interface em um arquivo de header, juntamente com o IID (identificador de interface):
 
 
 ```C++
@@ -36,7 +36,7 @@ interface ISaturation : public IUnknown
 
 
 
-Você também pode definir a interface com IDL e usar o compilador MIDL para criar o arquivo de cabeçalho. Em seguida, implemente a interface personalizada no filtro. Este exemplo usa os métodos "Get" e "set" para o valor de saturação do filtro. Observe que os dois métodos protegem o \_ membro m lSaturation com uma seção crítica.
+Você também pode definir a interface com IDL e usar o compilador MIDL para criar o arquivo de header. Em seguida, implemente a interface personalizada no filtro. Este exemplo usa os métodos "Get" e "Set" para o valor de saturação do filtro. Observe que ambos os métodos protegem o membro m \_ lSaturation com uma seção crítica.
 
 
 ```C++
@@ -70,7 +70,7 @@ public:
 
 É claro que os detalhes de sua própria implementação serão diferentes do exemplo mostrado aqui.
 
-Em seguida: [etapa 2. Implemente ISpecifyPropertyPages](step-2--implement-ispecifypropertypages.md).
+Próximo: [Etapa 2. Implemente ISpecifyPropertyPages.](step-2--implement-ispecifypropertypages.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

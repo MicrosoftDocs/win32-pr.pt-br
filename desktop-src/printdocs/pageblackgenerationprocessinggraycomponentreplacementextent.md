@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: O parâmetro PageBlackGenerationProcessingGrayComponentReplacementExtent descreve a extensão além dos neutros em cores de desvio que o GCR aplica.
 ms.assetid: ba62f902-9bc9-4492-ab53-4a4ddbc23530
 title: PageBlackGenerationProcessingGrayComponentReplacementExtent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f9a790d66d1f7806a7ef86ee4a85f62225aa836
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 5b3bd5e4fdbafba97884a7aed608b23e4c26ce1c
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997703"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408499"
 ---
 # <a name="pageblackgenerationprocessinggraycomponentreplacementextent"></a>PageBlackGenerationProcessingGrayComponentReplacementExtent
 
@@ -24,7 +24,7 @@ Descreve a extensão além dos neutros (em cores de desvio) que o GCR aplica. 0%
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                    |
 | Prefixo de escopo <br/> | ?<br/>                                            |
@@ -75,7 +75,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Tipo de dados<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | string<br/>  | não definido<br/>       |
 | MaxValue<br/>     | Número inteiro<br/> | 100<br/>             |
-| MinValue<br/>     | integer<br/> | 0<br/>               |
+| MinValue<br/>     | inteiro<br/> | 0<br/>               |
 | Vários<br/>     | integer<br/> | 1<br/>               |
 | Obrigatório<br/>    | string<br/>  | PSK: condicional<br/> |
 | UnitType<br/>     | string<br/>  | {1&gt;percent&lt;1}<br/>         |

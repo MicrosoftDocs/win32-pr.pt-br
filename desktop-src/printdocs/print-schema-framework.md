@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Esses artigos fornecem informações mais detalhadas sobre o significado e o uso dos tipos de elemento de esquema de impressão.
 ms.assetid: 05c7fd07-1c32-409d-8ca5-820038af3440
 title: Estrutura de esquema de impressão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 617f747b950676f2359645684c9e672fb5c87ee3
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 570701df700954ad85fb724b9528b7e7912f3174
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104172530"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407159"
 ---
 # <a name="print-schema-framework"></a>Estrutura de esquema de impressão
 

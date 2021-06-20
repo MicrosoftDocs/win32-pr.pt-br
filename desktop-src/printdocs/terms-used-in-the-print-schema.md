@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Este artigo lista e define termos que são específicos para o esquema de impressão e tecnologias relacionadas.
 ms.assetid: ab441a37-3a4e-4dd3-85e9-a50e08618d72
 title: Termos usados no esquema de impressão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 754635b7fb59c8ce8baad29e69c606c9341c207f
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: dc28fadfe1f62a971cc28225af77686bd1e88d21
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105760969"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408389"
 ---
 # <a name="terms-used-in-the-print-schema"></a>Termos usados no esquema de impressão
 

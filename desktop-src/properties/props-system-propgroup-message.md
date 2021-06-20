@@ -1,15 +1,15 @@
 ---
-description: O separador de grupo de propriedades usado em listas de propriedades para separar arquivos de áudio de outros tipos. Não use essa propriedade para obter ou definir valores. Ele é destinado apenas como um marcador.
+description: Leia sobre a propriedade System. Propproperty. Message. Não use essa propriedade para obter ou definir valores. Ele é destinado apenas como um marcador.
 ms.assetid: bbb475f3-f5da-42f1-be8f-396c5be86417
 title: System. Propobject. Message
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d8b90527040f4ff3b702811f74efa0ed5caf763
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 603a0e85c54d736a086585d932638ec908a0f566
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105766480"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405159"
 ---
 # <a name="systempropgroupmessage"></a>System. Propobject. Message
 

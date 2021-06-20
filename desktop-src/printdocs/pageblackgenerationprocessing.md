@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento PageBlackGenerationProcessing, que especifica o comportamento de geração de preto para separações CMYK.
 ms.assetid: 4edd1fdf-9601-440d-b967-82ffa6dceeb1
 title: PageBlackGenerationProcessing
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4aba727cfa1c11850b62a883b95ab78a6dfae50
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: d21861595917b67390857b380a416e441d454081
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996253"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408509"
 ---
 # <a name="pageblackgenerationprocessing"></a>PageBlackGenerationProcessing
 
@@ -25,7 +25,7 @@ Especifica o comportamento de geração de preto para separações CMYK.
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
 | Prefixo de escopo <br/> | ?<br/>    |
@@ -61,7 +61,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Nome                               | Tipo de dados         | Unidade                  | Valores com suporte                                                                                                                                                                      | Resumo                                                                      |
 |------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | \_OptionName\_<br/>          | string<br/> | characters<br/> | Nome totalmente qualificado válido, conforme definido pelos [namespaces em XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | O nome da opção.<br/>                                           |
-| \_IdentityOptionValue\_<br/> | string<br/> | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/> |
+| \_IdentityOptionValue\_<br/> | string<br/> | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/> |
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Esquemas e documentos de PrintCapabilities
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: O esquema de PrintCapabilities é destinado a eliminar muitas das limitações das funções DevCaps do Win32.
 ms.assetid: c4727c17-3122-456c-967d-d1d6ce6a5402
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be1b8e2827e451fd8b1df477c33fe18d6203d10c
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 21347fae1c9824df4a8355f8dd26de37eeac4604
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105769644"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407069"
 ---
 # <a name="printcapabilities-schema-and-document-construction"></a>Construção de esquema e documento de PrintCapabilities
 

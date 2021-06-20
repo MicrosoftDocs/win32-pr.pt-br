@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: O esquema de impressão resolve a ambigüidade e a ambiguidade na comunicação entre os componentes do subsistema de impressão e entre o subsistema de impressão e os aplicativos.
 ms.assetid: 193dd600-7cbb-4f4e-bb7d-7f7117e9d16a
 title: Plano de fundo do esquema de impressão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93280b6c8de62c76acdd59e2e596a0f600702451
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: d46990e92c1125d33cced67f596ebcfc1db96053
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "103663844"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407149"
 ---
 # <a name="print-schema-background"></a>Plano de fundo do esquema de impressão
 

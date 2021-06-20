@@ -1,15 +1,15 @@
 ---
 title: Windows Desktop Search 2. x
-description: O uso do e do desenvolvimento para as versões 2. x do Microsoft Windows Desktop Search (WDS) é fortemente desencorajado em favor do Windows Search.
+description: Entenda o Windows Desktop Search 2. x. Para versões do Windows posteriores ao Windows XP e ao Windows Server 2003, use o Windows Search em vez disso.
 ms.assetid: 3d73f850-58b8-4a41-8863-e2914661d4b9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5131fe700b7b049371625249768b0073d009a87
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: c1ff43f827458d295e54b71b3f39c7aa471c058d
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105795461"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408119"
 ---
 # <a name="windows-desktop-search-2x"></a>Windows Desktop Search 2. x
 
@@ -43,7 +43,7 @@ Quando instalado pela primeira vez, o indexador rastreia os arquivos mais comuns
 
 ### <a name="about-the-wds-catalog"></a>Sobre o catálogo do WDS
 
-O catálogo do WDS é um índice de texto e propriedades coletados de itens em email especificado, unidades locais, recursos de rede e outros armazenamentos de dados locais. O conteúdo do catálogo se baseia em opções e regras definidas pelo WDS, aplicativos criados na plataforma do WDS, preferências do usuário e políticas de grupo. Há mais de 200 propriedades disponíveis para cada item indexado, como data de criação, tamanho e propriedades específicas de tipo ("de" para mensagens de email). Para obter uma lista dessas propriedades, consulte a [referência de esquema](-search-2x-wds-schematable.md)do WDS.
+O catálogo do WDS é um índice de texto e propriedades coletados de itens em email especificado, unidades locais, recursos de rede e outros armazenamentos de dados locais. O conteúdo do catálogo se baseia em opções e regras definidas pelo WDS, aplicativos criados na plataforma do WDS, preferências do usuário e políticas de grupo. Há mais de 200 propriedades disponíveis para cada item indexado, como data de criação, tamanho e propriedades específicas de tipo ("de" para mensagens de email). Para obter uma lista dessas propriedades, consulte a [referência de esquema](-search-2x-wds-schematable.md)do WDS.
 
 ### <a name="about-the-search-engine-and-results"></a>Sobre o mecanismo de pesquisa e os resultados
 
@@ -89,7 +89,7 @@ Os itens a seguir são necessários para usar o Windows Desktop Search:
 -   500 MB de espaço livre em disco rígido recomendado. O tamanho do índice depende da quantidade de conteúdo indexado.
 -   resolução de tela de 1024 x 768 recomendada.
 
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
 
 1.  Consultando o índice
 
@@ -106,8 +106,8 @@ Os itens a seguir são necessários para usar o Windows Desktop Search:
 
     -   [Esquema do WDS](-search-2x-wds-schematable.md)
     -   [Sintaxe de consulta avançada](-search-2x-wds-aqsreference.md)
-    -   [Tipos observados pelo WDS](-search-2x-wds-perceivedtype.md)
+    -   [Tipos percebidos pelo WDS](-search-2x-wds-perceivedtype.md)
 
- 
+ 
 
- 
+ 

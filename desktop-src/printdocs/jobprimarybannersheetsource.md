@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento JobPrimaryBannerSheetSource, que especifica a origem de uma folha de faixa personalizada primária para o trabalho.
 ms.assetid: ad33b2cd-8409-4782-8eb9-5f12aca8405b
 title: JobPrimaryBannerSheetSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 556390d58df3073263a6a6b666d98c48ceed6469
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 366266576fca98762fd7d3dcb7e491a6cc94f529
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997733"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408709"
 ---
 # <a name="jobprimarybannersheetsource"></a>JobPrimaryBannerSheetSource
 
@@ -24,7 +24,7 @@ Especifica a origem de uma folha de faixa personalizada primária para o trabalh
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|---------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                     |
 | Prefixo de escopo <br/> | Trabalho<br/>                              |

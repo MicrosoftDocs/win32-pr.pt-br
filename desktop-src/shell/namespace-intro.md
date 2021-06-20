@@ -1,15 +1,15 @@
 ---
-description: O namespace do Shell organiza o sistema de arquivos e outros objetos gerenciados pelo shell em uma única hierarquia estruturada em árvore. Conceitualmente, é uma versão maior e mais inclusiva do sistema de arquivos.
+description: Saiba mais sobre o namespace do Shell e seus objetos de fonte de dados. Esse namespace oferece opções de extensibilidade na interface do usuário do shell do Windows.
 ms.assetid: 539c4455-e1c7-45a0-b3c3-781f2b7a1617
 title: Introdução ao namespace do Shell
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28b9ccb87cc67c025f09233128780545d610f90d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6e1be0187094ffe7cf7b56b724c5990fe18321fa
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296479"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404289"
 ---
 # <a name="introduction-to-the-shell-namespace"></a>Introdução ao namespace do Shell
 
@@ -95,15 +95,15 @@ As PIDLs completas são usadas com pouca frequência. Muitas funções e método
 
 A PIDLs relativa mais comumente usada, a *PIDLs de nível único*, são relativas à pasta pai do objeto. Eles contêm apenas a ID de item do objeto e um **nulo** de terminação. Os PIDLs de vários níveis também são usados para muitas finalidades. Eles contêm duas ou mais IDs de item e normalmente definem um caminho de uma pasta pai para um objeto por meio de uma série de uma ou mais subpastas. Observe que um PIDL de nível único ainda pode ser um PIDL totalmente qualificado. Em particular, os objetos de área de trabalho são filhos da área de trabalho, portanto, seus PIDLs totalmente qualificados contêm apenas uma ID de item.
 
-Conforme discutido na [obtenção da ID de uma pasta](folder-id.md), a API do Shell fornece várias maneiras de recuperar o PIDL de um objeto. Depois de tê-lo, você costuma apenas usá-lo para identificar o objeto ao chamar outras funções e métodos da API do Shell. Nesse contexto, o conteúdo interno de um PIDL é opaco e irrelevante. Para os fins desta discussão, imagine PIDLs como tokens que representam objetos de namespace específicos e concentre-se em como usá-los para tarefas comuns.
+Conforme discutido em [Obter a ID](folder-id.md)de uma pasta, a API do Shell fornece várias maneiras de recuperar o PIDL de um objeto. Depois de usá-lo, você geralmente apenas o usa para identificar o objeto quando chama outras funções e métodos da API do Shell. Nesse contexto, o conteúdo interno de um PIDL é opaco e irrelevante. Para os fins desta discussão, pense em PIDLs como tokens que representam objetos de namespace específicos e concentre-se em como usá-los para tarefas comuns.
 
 ### <a name="allocating-pidls"></a>Alocando PIDLs
 
-Embora PIDLs tenha alguma semelhança com os caminhos, usá-los requer uma abordagem um pouco diferente. A principal diferença é em como alocar e desalocar memória para eles.
+Embora as PIDLs tenham alguma similaridade com caminhos, usá-los requer uma abordagem um pouco diferente. A principal diferença está em como alocar e desalocar memória para eles.
 
-Assim como a cadeia de caracteres usada para um caminho, a memória deve ser alocada para um PIDL. Se um aplicativo criar um PIDL, ele deverá alocar memória suficiente para a estrutura [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) . Para a maioria dos casos discutidos aqui, o Shell cria o PIDL e manipula a alocação de memória. Independentemente do que alocou o PIDL, o aplicativo geralmente é responsável por desalocar o PIDL quando ele não é mais necessário.
+Assim como a cadeia de caracteres usada para um caminho, a memória deve ser alocada para um PIDL. Se um aplicativo criar um PIDL, ele deverá alocar memória suficiente para a [**estrutura ITEMIDLIST.**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) Para a maioria dos casos discutidos aqui, o Shell cria o PIDL e lida com a alocação de memória. Independentemente do que alocou o PIDL, o aplicativo geralmente é responsável por desalocar o PIDL quando ele não é mais necessário.
 
-Use a função [**CoTaskMemAlloc**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc) para alocar o PIDL e a função [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) para desalocá-lo.
+Use a [**função CoTaskMemAlloc**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc) para alocar o PIDL e a [**função CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) para desalocar.
 
  
 

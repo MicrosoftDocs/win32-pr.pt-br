@@ -1,15 +1,15 @@
 ---
-description: Etapa 3.
+description: Implemente o suporte para negociação de tipo de mídia como parte da gravação de um filtro de transformação. O tipo de mídia descreve o formato dos dados.
 ms.assetid: b2b5dafc-d38d-4ec3-a390-55229495b4f9
 title: Etapa 3. Suporte à negociação de tipo de mídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb3ff8539d0d7de2c9b7300ddb90ad86ca471710
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 3a23784e70330f751325fc5f780463d5a3904d20
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103837634"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112410039"
 ---
 # <a name="step-3-support-media-type-negotiation"></a>Etapa 3. Suporte à negociação de tipo de mídia
 

@@ -1,6 +1,6 @@
 ---
 title: Usando formas predefinidas
-description: Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+description: Este artigo descreve como usar formas predefinidas em VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.
 ms.assetid: 9a2e8b5a-b1d0-4a73-b058-24dac1f0b655
 keywords:
 - Web Workshop, formas predefinidas
@@ -42,12 +42,12 @@ keywords:
 - Elementos de VML, arco
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c1cafacf00f6f3f9129c29c56837f3f485aa3a3
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b410cf288a3ba63e4c1d745fd962a445b0b220b8
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104499076"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112407679"
 ---
 # <a name="using-predefined-shapes"></a>Usando formas predefinidas
 
@@ -56,7 +56,7 @@ Este tópico descreve a VML, um recurso que foi preterido a partir do Windows In
 > [!Note]  
 > A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Como você aprendeu, você pode usar o `<oval>` elemento de VML para criar uma elipse simples. A VML fornece vários outros elementos predefinidos. Neste tópico, Ilustraremos como desenhar gráficos usando esses elementos.
 
@@ -64,7 +64,7 @@ Neste tópico:
 
 -   [Rect](#roundrect)
 -   [RoundRect](#roundrect)
--   [descritos](#polyline)
+-   [line](#polyline)
 -   [múltipla](#polyline)
 -   [curva](#curve)
 -   [arco](#arc)
@@ -251,6 +251,6 @@ Para obter mais informações sobre esse elemento, consulte a [especificação d
 
 Você pode usar elementos predefinidos da VML, como,,,,, `<oval>` `<line>` `<polyline>` `<curve>` `<rect>` `<roundrect>` e `<arc>` para desenhar gráficos facilmente em uma página da Web e, em seguida, personalizar esses gráficos simplesmente alterando seus atributos de propriedade.
 
- 
+ 
 
- 
+ 

@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento DocumentDuplex, que descreve as características de duplex da saída. O recurso duplex permite a impressão em ambos os lados da mídia.
 ms.assetid: dadc52e8-1733-4267-85aa-33d0ddd3dfa2
 title: DocumentDuplex
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 959bbddbfa06e47fe2bc744af3ead0a72b13af7b
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 5c2ad8521835213594f10507ab6fd4b9cca24040
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998413"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409339"
 ---
 # <a name="documentduplex"></a>DocumentDuplex
 
@@ -25,7 +25,7 @@ Descreve as características de duplex da saída. O recurso duplex permite a imp
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|---------------------|
 | Tipo de elemento <br/>   | Recurso<br/>  |
 | Prefixo de escopo <br/> | Documento<br/> |
@@ -64,8 +64,8 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Nome                               | Tipo de dados         | Unidade                  | Valores com suporte                                                                                                                                                                      | Resumo                                                                                                                                |
 |------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | \_OptionName\_<br/>          | string<br/> | characters<br/> | Nome totalmente qualificado válido, conforme definido pelos [namespaces em XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | O nome da opção.<br/>                                                                                                     |
-| \_IdentityOptionValue\_<br/> | string<br/> | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/>                                                           |
-| \_DuplexModeValue\_<br/>     | string<br/> | N/D<br/>        | Automático, manual.<br/>                                                                                                                                                         | Define o modo duplex. O duplex automático é executado pelo hardware. O Duplexing manual é executado pelo software e pelo usuário.<br/> |
+| \_IdentityOptionValue\_<br/> | string<br/> | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/>                                                           |
+| \_DuplexModeValue\_<br/>     | string<br/> | n/d<br/>        | Automático, manual.<br/>                                                                                                                                                         | Define o modo duplex. O duplex automático é executado pelo hardware. O Duplexing manual é executado pelo software e pelo usuário.<br/> |
 
 
 

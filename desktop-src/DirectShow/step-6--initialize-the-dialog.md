@@ -1,19 +1,19 @@
 ---
-description: Etapa 6.
+description: Substitua o método CBasePropertyPage::OnActivate para inicializar a caixa de diálogo como parte da criação de uma página de propriedades de filtro para um filtro DirectShow personalizado.
 ms.assetid: 8462958d-3958-453b-8034-3cfc2fb5ae2e
 title: Etapa 6. Inicializar a caixa de diálogo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 282eb03db38c543678fb2c4ef1155e1150b419bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dcbdf18e272ac548227626bc9da4f992786a4ab3
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760874"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404489"
 ---
 # <a name="step-6-initialize-the-dialog"></a>Etapa 6. Inicializar a caixa de diálogo
 
-Substitua o método [**CBasePropertyPage:: OnActivate**](cbasepropertypage-onactivate.md) para inicializar a caixa de diálogo. Neste exemplo, a página de propriedades usa um controle deslizante, portanto, a primeira etapa em **OnActivate** é inicializar a biblioteca de controle comum. Em seguida, o método inicializa o controle deslizante usando o valor atual da propriedade de saturação do filtro:
+Substitua o [**método CBasePropertyPage::OnActivate**](cbasepropertypage-onactivate.md) para inicializar a caixa de diálogo. Neste exemplo, a página de propriedades usa um controle deslizante, portanto, a primeira etapa em **OnActivate** é inicializar a biblioteca de controle comum. Em seguida, o método inicializa o controle deslizante usando o valor atual da propriedade de saturação do filtro:
 
 
 ```C++
@@ -45,7 +45,7 @@ HRESULT CGrayProp::OnActivate(void)
 
 
 
-Em seguida: [etapa 7. Processar mensagens de janela](step-7--handle-window-messages.md)
+Próximo: [Etapa 7. Manipular mensagens de janela](step-7--handle-window-messages.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

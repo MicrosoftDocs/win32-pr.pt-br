@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento PageBlackGenerationProcessingUnderColorAdditionLevel, que descreve a quantidade de tinta de desvio a ser adicionada às áreas com BlackInkLimit.
 ms.assetid: da957aca-1655-4e8d-9e7b-4da0f253293b
 title: PageBlackGenerationProcessingUnderColorAdditionLevel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e1b43d8d9ee366fc742dc3d7b1617f6297fc96e
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: e3b496fbe890f53d1da8d1054cc5a19fe6318811
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995663"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408409"
 ---
 # <a name="pageblackgenerationprocessingundercoloradditionlevel"></a>PageBlackGenerationProcessingUnderColorAdditionLevel
 
@@ -24,7 +24,7 @@ Descreve a quantidade de tinta de desvio (em proporção de componente cinza) pa
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                    |
 | Prefixo de escopo <br/> | ?<br/>                                            |
@@ -75,7 +75,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Tipo de dados<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | string<br/>  | não definido<br/>       |
 | MaxValue<br/>     | Número inteiro<br/> | 100<br/>             |
-| MinValue<br/>     | integer<br/> | 0<br/>               |
+| MinValue<br/>     | inteiro<br/> | 0<br/>               |
 | Vários<br/>     | integer<br/> | 1<br/>               |
 | Obrigatório<br/>    | string<br/>  | PSK: condicional<br/> |
 | UnitType<br/>     | string<br/>  | {1&gt;percent&lt;1}<br/>         |

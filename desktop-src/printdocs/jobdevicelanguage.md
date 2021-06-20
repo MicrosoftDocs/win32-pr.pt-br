@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento JobDeviceLanguage, que descreve os idiomas do dispositivo com suporte para enviar dados do driver para o dispositivo físico.
 ms.assetid: 3894d9fa-2bf7-447a-bac3-e72a0fdb7187
 title: JobDeviceLanguage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 66b9f85b44ae9fdc6efb66ce5b72bb68c5187790
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 3b7bf56018a2b395ec5aa182336a89d8872057e7
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998293"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112408990"
 ---
 # <a name="jobdevicelanguage"></a>JobDeviceLanguage
 
@@ -25,7 +25,7 @@ Descreve os idiomas de dispositivo com suporte para enviar dados do driver para 
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
 | Prefixo de escopo <br/> | Trabalho<br/>     |
@@ -71,10 +71,10 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Nome                                 | Tipo de dados         | Unidade                  | Valores com suporte                                                                                                                                                                      | Resumo                                                                      |
 |--------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | \_OptionName\_<br/>            | string<br/> | characters<br/> | Nome totalmente qualificado válido, conforme definido pelos [namespaces em XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | O nome da opção.<br/>                                           |
-| \_IdentityOptionValue\_<br/>   | string<br/> | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/> |
-| \_LanguageLevelValue\_<br/>    | string<br/> | N/D<br/>        | Nenhum.<br/>                                                                                                                                                                      | Especifica o nível de linguagem (por exemplo, PS nível 2).<br/>           |
-| \_LanguageEncodingValue\_<br/> | string<br/> | N/D<br/>        | Nenhum.<br/>                                                                                                                                                                      | Especifica a codificação de idioma (por exemplo, ISOLatin1).<br/>         |
-| \_LanguageVersionValue\_<br/>  | string<br/> | N/D<br/>        | Nenhum.<br/>                                                                                                                                                                      | Especifica a versão do idioma.<br/>                                   |
+| \_IdentityOptionValue\_<br/>   | string<br/> | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/> |
+| \_LanguageLevelValue\_<br/>    | string<br/> | n/d<br/>        | Nenhum.<br/>                                                                                                                                                                      | Especifica o nível de linguagem (por exemplo, PS nível 2).<br/>           |
+| \_LanguageEncodingValue\_<br/> | string<br/> | n/d<br/>        | Nenhum.<br/>                                                                                                                                                                      | Especifica a codificação de idioma (por exemplo, ISOLatin1).<br/>         |
+| \_LanguageVersionValue\_<br/>  | string<br/> | n/d<br/>        | Nenhum.<br/>                                                                                                                                                                      | Especifica a versão do idioma.<br/>                                   |
 
 
 

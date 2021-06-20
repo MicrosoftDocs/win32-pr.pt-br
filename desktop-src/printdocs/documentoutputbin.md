@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o DocumentOutputBin, que descreve a lista completa de compartimentos com suporte para o dispositivo e permite a especificação do compartimento de saída por documento.
 ms.assetid: 73840548-f68b-4af8-acb4-6f7faa2e8879
 title: DocumentOutputBin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96f6d16ca000e76b01cd2c3165054d7acc81351b
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 2afc20f15aed8d3076afb79d755c54791573b393
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997133"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409239"
 ---
 # <a name="documentoutputbin"></a>DocumentOutputBin
 
@@ -27,7 +27,7 @@ Descreve a lista completa de compartimentos com suporte para o dispositivo. Perm
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|---------------------|
 | Tipo de elemento <br/>   | Recurso<br/>  |
 | Prefixo de escopo <br/> | Documento<br/> |
@@ -70,8 +70,8 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Nome                                   | Tipo de dados          | Unidade                  | Valores com suporte                                                                                                                                                             | Resumo                                                                             |
 |----------------------------------------|--------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | \_OptionName\_<br/>              | string<br/>  | characters<br/> | Nome totalmente qualificado válido, conforme definido pelo https://www.w3.org/TR/1999/REC-xml-names-19990114/\#dt-qname . Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | O nome da opção.<br/>                                                  |
-| \_IdentityOptionValue\_<br/>     | string<br/>  | N/D<br/>        | True, False.<br/>                                                                                                                                                      | Define uma opção que, quando selecionada, desabilita esse recurso.<br/>        |
-| \_BinTypeValue\_<br/>            | string<br/>  | N/D<br/>        | Caixa de correio, classificador, empilhador, finalizador, nenhum.<br/>                                                                                                                         | Especifica o tipo geral do compartimento.<br/>                                   |
+| \_IdentityOptionValue\_<br/>     | string<br/>  | n/d<br/>        | True, False.<br/>                                                                                                                                                      | Define uma opção que, quando selecionada, desabilita esse recurso.<br/>        |
+| \_BinTypeValue\_<br/>            | string<br/>  | n/d<br/>        | Caixa de correio, classificador, empilhador, finalizador, nenhum.<br/>                                                                                                                         | Especifica o tipo geral do compartimento.<br/>                                   |
 | \_MediaSheetCapacityValue\_<br/> | Número inteiro<br/> | folhas<br/>     | Maior que 0.<br/>                                                                                                                                                   | Especifica a capacidade de mídia no número de páginas (nível completo) do compartimento.<br/> |
 
 

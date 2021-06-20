@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento Value, que associa um literal a um tipo. O tipo de dados do valor deve ser String, Integer, decimal ou QName.
 ms.assetid: 933528f6-8f34-4509-887c-c7c223c79367
 title: Valor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15a8f8c5bf9e2ec1696d6282b859fc99b7701159
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 272bee4d7a5f88899f83e439d8e1630b4026713d
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105748532"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112405979"
 ---
 # <a name="value"></a>Valor
 

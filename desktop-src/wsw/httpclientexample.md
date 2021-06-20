@@ -1,29 +1,29 @@
 ---
 title: HttpClientExample
-description: Este exemplo mostra um cliente HTTP que envia mensagens de solicitação-resposta.
+description: Revise um exemplo de cliente HTTP que usa a API de Serviços Web do Windows (WWSAPI). Este exemplo mostra um cliente HTTP que envia mensagens de solicitação-resposta.
 ms.assetid: e32a35f7-df01-4d6d-966c-6cf079b1b3a7
 keywords:
-- HttpClientExample nativo – Web-Services
+- HttpClientExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f96858d2b818172ffd24c50053fa4ceed692a730
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 180a1a0b40b2f4614ddd21caff7dc4595b8aac97
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363784"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112404129"
 ---
 # <a name="httpclientexample"></a>HttpClientExample
 
 Este exemplo mostra um cliente HTTP que envia mensagens de solicitação-resposta.
 
--   [HttpClient. cpp](#httpclientcpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [HttpClient.cpp](#httpclientcpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="httpclientcpp"></a>HttpClient. cpp
+## <a name="httpclientcpp"></a>HttpClient.cpp
 
 
 ```C++
@@ -436,7 +436,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -580,9 +580,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

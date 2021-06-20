@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento DocumentPageRanges, que descreve o intervalo de saída do documento em páginas.
 ms.assetid: 4cd1b0f8-7f7e-40cc-8d19-d44187822cd1
 title: DocumentPageRanges
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 84ded7c18fc781fd4374feb8958a98b845d95546
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 0e854736c72b3bff5ba2e4750e0b09e0b87c2c9f
+ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997173"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112409249"
 ---
 # <a name="documentpageranges"></a>DocumentPageRanges
 
@@ -32,7 +32,7 @@ O espaço em branco na cadeia de caracteres deve ser ignorado.
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|-------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/> |
 | Prefixo de escopo <br/> | Documento<br/>     |
