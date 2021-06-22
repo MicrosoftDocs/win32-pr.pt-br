@@ -1,18 +1,18 @@
 ---
-title: Carregando dados de textura por meio de buffers
+title: Como carregar dados de textura por meio de buffers
 description: Carregar dados de textura 2D ou 3D é semelhante a carregar dados 1D, exceto que os aplicativos precisam prestar mais atenção ao alinhamento de dados relacionado à densidade da linha.
 ms.assetid: 22A25A94-A45C-482D-853A-FA6860EE7E4E
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aadbd1e71b3c9895b75c973397488472b57f8eb1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f72177be1fefbf102e901d28d47413c8bcff41ab
+ms.sourcegitcommit: 39754f1af7853adff2525d0936afe9aad2066a9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104548312"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "112426960"
 ---
-# <a name="uploading-texture-data-through-buffers"></a>Carregando dados de textura por meio de buffers
+# <a name="uploading-texture-data-through-buffers"></a>Como carregar dados de textura por meio de buffers
 
 Carregar dados de textura 2D ou 3D é semelhante a carregar dados 1D, exceto que os aplicativos precisam prestar mais atenção ao alinhamento de dados relacionado à densidade da linha. Os buffers podem ser usados de forma ortogonal e simultânea de várias partes do pipeline de gráficos e são muito flexíveis.
 
@@ -134,7 +134,7 @@ Restrições de alinhamento de buffer:
 -   A cópia linear de subrecurso deve estar alinhada a 512 bytes (com a densidade de linha alinhada aos \_ bytes de alinhamento de densidade de dados de textura D3D12 \_ \_ \_ ).
 -   As leituras de dados constantes devem ser um múltiplo de 256 bytes do início do heap (ou seja, somente de endereços que são de 256 bytes alinhados).
 -   As leituras de dados de índice devem ser um múltiplo do tamanho do tipo de dados de índice (ou seja, somente de endereços que são naturalmente alinhados para os dados).
--   [**ID3D12GraphicsCommandList::D rawinstanced**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-drawinstanced) e [**ID3D12GraphicsCommandList:**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-drawindexedinstanced) os dados de rawindexedinstanced de:D devem ser de deslocamentos que são múltiplos de 4 (ou seja, somente de endereços que são alinhados em DWORD).
+-   Os dados [**ID3D12GraphicsCommandList:: ExecuteIndirect**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-executeindirect) devem ser de deslocamentos que são múltiplos de 4 (ou seja, somente de endereços que são alinhados em DWORD).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -143,6 +143,6 @@ Restrições de alinhamento de buffer:
 [Subalocação em buffers](large-buffers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
