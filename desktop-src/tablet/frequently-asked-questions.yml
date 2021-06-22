@@ -1,0 +1,112 @@
+### YamlMime:FAQ
+metadata:
+  description: Veja a seguir as perguntas frequentes sobre o desenvolvimento para os componentes da plataforma Tablet PC instalados pelo SDK do Windows Vista.
+  ms.assetid: eb349493-a2b2-4b58-bcbc-ee09953c8dc8
+  title: Perguntas frequentes (Tablet PC)
+  ms.topic: article
+  ms.date: 05/31/2018
+  ms.openlocfilehash: cac130aaa0f04a7b17fb520476d4ed450edf257d
+  ms.sourcegitcommit: 4be05a12840be3d2e7c71fe57401b2edee72e354
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 06/22/2021
+  ms.locfileid: "112451587"
+title: Perguntas frequentes sobre o desenvolvimento para a plataforma Tablet PC
+summary: Veja a seguir as perguntas frequentes sobre o desenvolvimento para os componentes da plataforma Tablet PC instalados pelo SDK do Windows Vista.
+sections:
+- name: Ignored
+  questions:
+  - question: >
+      Posso usar as APIs de tinta ou os controles em uma página da Web?
+    answer: >
+      Sim. A biblioteca gerenciada do Tablet PC dá suporte a ambientes parcialmente confiáveis, ou seja, a execução de assemblies gerenciados de páginas da Web.
+
+
+      Também há suporte para a implantação de navegador de aplicativos que usam Windows Presentation Foundation.
+  - question: >
+      É necessário um Tablet PC para desenvolver aplicativos para Tablet PC?
+    answer: >
+      Não, os componentes da plataforma Tablet PC instalados pelo SDK do Windows incluem as extensões e os utilitários necessários para desenvolver software para o Tablet PC em um computador desktop ou laptop. Você pode usar um mouse ou Tablet externo para entrada de caneta e manuscrito.
+
+
+      Os componentes da plataforma do Tablet PC instalados pelo SDK do Windows podem ser instalados no Windows XP Professional ou no Windows Server 2003, mas há menos funcionalidades disponíveis para seus aplicativos. Nessas plataformas, seu aplicativo pode coletar tinta com os objetos [**InkCollector**](inkcollector-class.md) e [**InkOverlay**](inkoverlay-class.md) e pode ser testado e depurado.
+
+
+      Além disso, os controles [InkEdit](inkedit-control-reference.md) e [InkPicture](inkpicture-control-reference.md) podem coletar tinta nesses sistemas operacionais somente se os componentes da plataforma Tablet PC tiverem sido instalados do SDK do Windows (ou uma versão mais antiga do kit de desenvolvimento do Tablet PC); Eles não coletam tinta em aplicativos que são redistribuídos para computadores não tablets sem os componentes da plataforma instalados.
+  - question: >
+      É necessário executar uma versão especial do Windows para fazer o reconhecimento de manuscrito?
+    answer: >
+      Não. Embora apenas o Windows XP Tablet PC Edition e determinadas versões do Windows Vista incluam reconhecedores de manuscrito, você pode baixar o [pacote do reconhecedor do Windows XP Tablet PC Edition 2005]( https://www.microsoft.com/downloads/details.aspx?FamilyId=080184DD-5E92-4464-B907-10762E9F918B&amp;displaylang=en) e instalá-lo no Windows XP Professional ou no windows Server 2003 apenas para fins de desenvolvimento. Você não pode redistribuir os reconhecedores com seu aplicativo.
+  - question: >
+      Qual é a diferença entre a tecnologia Windows Vista e Tablet PC?
+    answer: >
+      Os Tablet PCs executam o sistema operacional Windows Vista, apresentando toda a funcionalidade do Windows Vista, além de recursos adicionais específicos do Tablet PC. Esses recursos de tecnologia do Tablet PC permitem que os usuários executem aplicativos Windows e Windows usando uma caneta, anotando documentos e criando documentos manuscritos usando tinta digital. A tecnologia do Tablet PC está disponível na maioria das versões do Windows Vista e, se o hardware do Tablet PC estiver disponível em um computador, os recursos só funcionarão.
+
+
+      Para versões anteriores de sistemas operacionais Windows que não dão suporte nativo à tinta, você pode redistribuir e usar os controles de tinta do Tablet PC para exibir a tinta desenhada em um Tablet PC.
+  - question: >
+      Qual é a diferença entre o Windows XP Tablet PC Edition e o Windows XP Tablet PC Edition 2005?
+    answer: >
+      O Windows XP Tablet PC Edition 2005 é uma versão atualizada do Windows XP Tablet PC Edition.
+  - question: >
+      Como fazer modificar meu aplicativo para ser executado em um Tablet PC?
+    answer: >
+      Os aplicativos do Microsoft Windows executados em um computador desktop ou laptop com Windows XP com hardware comparável podem ser executados em um Tablet PC sem modificações.
+  - question: >
+      Entendo que não preciso fazer nenhuma alteração no meu aplicativo, mas é difícil usá-lo com uma caneta e fala. O que posso fazer para otimizar meu aplicativo para um Tablet PC?
+    answer: >
+      Os controles de API e de tinta dos componentes da plataforma Tablet PC podem ser usados para criar interfaces de usuário que são mais adequadas para entrada de caneta e manuscrito. Para obter mais informações sobre maneiras específicas de melhorar seu aplicativo, consulte [diretrizes de experiência do usuário do Mobile PC para desenvolvedores](/previous-versions//dd356056(v=vs.85)).
+  - question: >
+      A quais linguagens de programação o Tablet dá suporte?
+    answer: >
+      A tecnologia do Tablet PC no Windows Vista dá suporte a COM (C++) e bibliotecas gerenciadas (o pacote de linguagens do Visual Studio .NET).
+
+
+      A tecnologia Tablet PC também dá suporte a Windows Presentation Foundation (WPF).
+  - question: >
+      Tenho um código de exemplo que demonstra os recursos da plataforma Tablet?
+    answer: >
+      Sim, o código de exemplo para COM e as linguagens gerenciadas selecionadas estão incluídos nos componentes da plataforma Tablet PC instalados pelo SDK da plataforma Windows.
+
+
+      Para aplicativos de exemplo disponíveis, consulte:
+
+
+      - [Amostras de PC móvel e Tablet PC](mobile-pc-and-tablet-pc-samples.md)
+
+      - [Exemplos de tinta digital, Windows Presentation Foundation (WPF)](/previous-versions/dotnet/netframework-3.0/aa972145(v=vs.85))
+
+      - <systemdrive>: \\ Arquivos de programas \\ Microsoft SDKs \\ Windows \\ v 6.0 \\ amostras \\ Tablet
+  - question: >
+      Qual é o nível básico do hardware do Tablet que devo desenvolver?
+    answer: >
+      Em geral, você deve criar um sistema compatível com o Windows Vista, sem herdado.
+  - question: >
+      Quais diretrizes de interface do usuário você pode fornecer para aplicativos do Tablet?
+    answer: >
+      Problemas da orientação do menu suspenso para da Parallax de tela/digitalizador são descritos na seção [diretrizes de experiência do usuário do PC móvel para desenvolvedores](/previous-versions//dd356056(v=vs.85)) na PC móvel do SDK do Windows.
+  - question: >
+      Você inclui gestos de manuscrito em nível de sistema para pressionamentos de teclas mais usados? Posso criar meus próprios gestos para usar quando um aplicativo estiver em execução ou tiver foco?
+    answer: >
+      Sim, incluímos um conjunto de gestos para eventos de mouse. Além disso, você pode criar gestos para uso em seu aplicativo. Para obter mais informações sobre gestos, consulte [usando gestos](using-gestures.md).
+  - question: >
+      Como posso determinar se meu aplicativo está sendo executado em um Tablet?
+    answer: >
+      Use o GetSystemMetricsAPI do Windows e transmita o Tablet do SM \_ como o valor do índice. O SM \_ Tablet é definido em winuser. h. O valor de Tablet de SM \_ é 86.
+
+
+      Para o desenvolvimento para a Web, você deve ler a variável de ambiente de cadeia de caracteres do agente do usuário \_ \_ . Você pode acessar essa coleção Request. ServerVariables.
+
+
+      Para obter detalhes de como usar o GetSystemMetrics em Tablet PCs que executam o Windows Vista ou o Windows XP Tablet PC Edition, consulte [determinando se um PC é um Tablet PC](determining-whether-a-pc-is-a-tablet-pc.md).
+  - question: >
+      Como posso determinar se os componentes da plataforma Tablet estão disponíveis?
+    answer: "Algumas partes da plataforma do Tablet PC podem ser instaladas em versões não-Tablet dos sistemas operacionais Windows XP Professional, Windows Server 2003 e Windows 2000.\n\nA maneira apropriada de determinar se um componente da API está instalado é tentar criar uma instância de um objeto ou controle e verificar se ela existe antes de tentar usá-la.\n\nPor exemplo, para determinar se o objeto [**InkCollector**](inkcollector-class.md) está disponível, tente criá-lo usando [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).\n\n```C++\nIInkCollector* pIInkCollector = NULL;\nHRESULT hr = CoCreateInstance(CLSID_InkCollector,\n NULL, CLSCTX_INPROC_SERVER, \n IID_IInkCollector,\n (void **)&pIInkCollector);\nif (SUCCEEDED(hr)) \n{ \n  /* InkCollector is usable. */ \n} else \n{\n  /* InkCollector unavailable. */\n}\n```\n"
+  - question: >
+      Como fazer executar o serviço de entrada do Tablet nas SKUs do servidor?
+    answer: >
+      O TabletInputService foi projetado para não ser executado automaticamente em SKUs de servidor quando o pacote do cliente é instalado. O Client Pack instala todos os componentes na plataforma para que qualquer um dos aplicativos cliente do Tablet possa ser executado também em um servidor. O serviço de entrada do Tablet escuta a notificação PnP em que um digitalizador externo está conectado. Para habilitar o serviço de entrada do Tablet em um servidor, use o utilitário de configuração do sistema.
+
+
+      No menu **Iniciar** , selecione **executar**. Digite "msconfig" e pressione Enter. Selecione a guia **Serviços** , localize os serviços denominados "serviço de entrada HID", marque a caixa de seleção ao lado dele e clique em **aplicar**. Feche o utilitário.
+additionalContent: "\n## <a name=\"more-faqs-and-other-resources\"></a>Mais perguntas frequentes e outros recursos\n\n- [Centro de Desenvolvimento Microsoft](https://developer.microsoft.com)\n- [Referência do Tablet PC principal](./core-reference---tablet-pc-com-library.md)"
