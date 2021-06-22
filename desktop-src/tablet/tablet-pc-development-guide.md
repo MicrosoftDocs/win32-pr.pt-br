@@ -4,12 +4,12 @@ ms.assetid: f0fc7ab9-7653-45c5-be06-a628c6c3e526
 title: Tablet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20fd2a8d76d0c1a6822b35b7613413efcbc9c5f0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d6c444a9dc2b08c75635335d5bb3b6f6330359f3
+ms.sourcegitcommit: 4be05a12840be3d2e7c71fe57401b2edee72e354
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922835"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "112449889"
 ---
 # <a name="tablet-pc"></a>Tablet
 
@@ -35,7 +35,7 @@ Esta seção contém documentação de programação, descrições de programas 
 
     Descreve a biblioteca gerenciada e a API de automação e os controles de tinta, como os controles [InkEdit](inkedit-control-reference.md) e [InkPicture](inkpicture-control-reference.md) , que você pode usar para criar aplicativos para Tablet PC e computadores que dão suporte ao Windows Touch.
 
--   [Apêndices](appendices.md)
+-   [Anexos](appendices.md)
 
     Contém seções que descrevem APIs de finalidade especial e referências relacionadas ao Tablet PC.
 
@@ -43,7 +43,7 @@ Esta seção contém documentação de programação, descrições de programas 
 
 <dl> <dt>
 
-[Perguntas frequentes](frequently-asked-questions.md)
+[Perguntas frequentes](frequently-asked-questions.yml)
 </dt> </dl>
 
  
