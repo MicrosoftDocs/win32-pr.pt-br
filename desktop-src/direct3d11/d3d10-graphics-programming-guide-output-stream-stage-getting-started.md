@@ -4,12 +4,12 @@ description: Esta seção descreve como usar um sombreador de geometria com o es
 ms.assetid: 37146486-5922-4833-850c-cc4a51de0957
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 909b3ba37e8b80201a4afc3e5bf18f016fed38a0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ae2e72d25177926c948f43996b6c57d42a7c557b
+ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104967197"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112587873"
 ---
 # <a name="getting-started-with-the-stream-output-stage"></a>Introdução com o estágio de Stream-Output
 
@@ -136,14 +136,14 @@ define a saída como um máximo de 12 vértices.</td>
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><pre><code>triangle GSPS_INPUT input[3] , inout TriangleStream<GSPS_INPUT> TriStream</code></pre></td>
+<td><pre><code>triangle GSPS_INPUT input[3] , inout TriangleStream&lt;GSPS_INPUTT&gt; TriStream</code></pre></td>
 </tr>
 </tbody>
 </table>
 
 </div>
 <p>O primeiro parâmetro é uma matriz de vértices (3, neste caso) definida por uma estrutura de GSPS_INPUT (que define os dados por vértice como uma posição, uma coordenada normal e uma textura). O primeiro parâmetro também usa a palavra-chave triângulo, o que significa que o estágio do assembler de entrada deve gerar dados de saída para o sombreador de geometria como um dos tipos primitivos de triângulo (lista de triângulo ou faixa de triângulo).</p>
-<p>O segundo parâmetro é um fluxo de triângulo definido pelo tipo TriangleStream <GSPS_INPUT> . Isso significa que o parâmetro é uma matriz de triângulos, cada um dos quais é composto de três vértices (que contêm os dados dos membros de GSPS_INPUT).</p>
+<p>O segundo parâmetro é um fluxo de triângulo definido pelo tipo TriangleStream &lt; GSPS_INPUTT &gt; . Isso significa que o parâmetro é uma matriz de triângulos, cada um dos quais é composto de três vértices (que contêm os dados dos membros de GSPS_INPUT).</p>
 <p>Use as palavras-chave triângulo e trianglestream para identificar triângulos individuais ou um fluxo de triângulos em um GS.</p></td>
 </tr>
 <tr class="odd">

@@ -1,17 +1,17 @@
 ---
 title: Interfaces DirectWrite
-description: Lista as interfaces definidas por DirectWrite.
+description: Lista as interfaces definidas pelo DirectWrite.
 ms.assetid: 7075e771-ce34-4426-8c07-13e85ff4d453
 keywords:
-- DirectWrite, interfaces
+- DirectWrite,interfaces
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0297875bfe4b5f0a0610091f7330a427ed51b822
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 8ff423289eb76a3506edb3537875a99a364be457
+ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105759002"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112588042"
 ---
 # <a name="directwrite-interfaces"></a>Interfaces DirectWrite
 
@@ -22,43 +22,43 @@ DirectWrite define as interfaces a seguir.
 | Tópico | Descrição |
 |-|-|
 | [**IDWriteAsyncResult**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwriteasyncresult) | Representa o resultado de uma operação assíncrona. Um cliente pode usar a interface para aguardar a conclusão da operação e obter o resultado.  |
-| [**IDWriteBitmapRenderTarget**](/windows/win32/api/dwrite/nn-dwrite-idwritebitmaprendertarget) | Encapsula um bitmap independente de dispositivo de 32 bits e um contexto de dispositivo, que pode ser usado para renderizar glifos. |
-| [**IDWriteBitmapRenderTarget1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritebitmaprendertarget1) | Encapsula um bitmap independente de dispositivo de 32 bits e um contexto de dispositivo, que pode ser usado para renderizar glifos. |
-| [**IDWriteBitmapRenderTarget2**](./dwrite_3/nn-dwrite_3-idwritebitmaprendertarget2.md) | Encapsula um bitmap independente de dispositivo de 32 bits e um contexto de dispositivo, que pode ser usado para renderizar glifos. |
-| [**IDWriteColorGlyphRunEnumerator**](idwritecolorglyphrunenumerator.md) | Essa interface permite que o aplicativo enumere por meio das execuções de glifos de cores. |
-| [**IDWriteColorGlyphRunEnumerator1**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritecolorglyphrunenumerator1) | Enumerador para uma coleção ordenada de execuções de glifo de cor. |
+| [**IDWriteBitmapRenderTarget**](/windows/win32/api/dwrite/nn-dwrite-idwritebitmaprendertarget) | Encapsula um bitmap independente de dispositivo de 32 bits e o contexto do dispositivo, que pode ser usado para renderizar glifos. |
+| [**IDWriteBitmapRenderTarget1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritebitmaprendertarget1) | Encapsula um bitmap independente de dispositivo de 32 bits e o contexto do dispositivo, que você pode usar para renderizar glifos. |
+| [**IDWriteBitmapRenderTarget2**](/windows/windows-app-sdk/api/win32/dwrite_3/nn-dwrite_3-idwritebitmaprendertarget2) | Encapsula um bitmap independente de dispositivo de 32 bits e o contexto do dispositivo, que pode ser usado para renderizar glifos. |
+| [**IDWriteColorGlyphRunEnumerator**](idwritecolorglyphrunenumerator.md) | Essa interface permite que o aplicativo enumere por meio das executações de glifo de cor. |
+| [**IDWriteColorGlyphRunEnumerator1**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritecolorglyphrunenumerator1) | Enumerador para uma coleção ordenada de glifo de cor é executado. |
 | [**IDWriteFactory**](/windows/win32/api/dwrite/nn-dwrite-idwritefactory) | Usado para criar todos os objetos DirectWrite subsequentes. Essa interface é a interface de fábrica raiz para todos os objetos DirectWrite. |
-| [**IDWriteFactory1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritefactory1) | A interface de fábrica raiz para todos os objetos [DirectWrite](direct-write-portal.md) . |
-| [**IDWriteFactory2**](idwritefactory2.md) | A interface de fábrica raiz para todos os objetos [DirectWrite](direct-write-portal.md) . |
-| [**IDWriteFactory3**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefactory3) | A interface de fábrica raiz para todos os objetos [DirectWrite](direct-write-portal.md) . |
+| [**IDWriteFactory1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritefactory1) | A interface de fábrica raiz para todos [os objetos DirectWrite.](direct-write-portal.md) |
+| [**IDWriteFactory2**](idwritefactory2.md) | A interface de fábrica raiz para todos [os objetos DirectWrite.](direct-write-portal.md) |
+| [**IDWriteFactory3**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefactory3) | A interface de fábrica raiz para todos [os objetos DirectWrite.](direct-write-portal.md) |
 | [**IDWriteFactory4**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefactory4) | A interface de fábrica raiz para todos os objetos DirectWrite. |
 | [**IDWriteFactory5**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefactory5) | A interface de fábrica raiz para todos os objetos DirectWrite. |
-| [**IDWriteFactory6**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefactory6) | Isso representa um objeto de fábrica do qual todos os objetos DirectWrite são criados. O **IDWriteFactory6** adiciona novos recursos para trabalhar com fontes e recursos de fontes. |
-| [**IDWriteFactory7**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefactory7) | Essa interface representa um objeto de fábrica do qual todos os objetos DirectWrite são criados. O **IDWriteFactory7** adiciona novos recursos para trabalhar com fontes do sistema. |
-| [**IDWriteFont**](/windows/win32/api/dwrite/nn-dwrite-idwritefont) | Representa uma fonte física em uma coleção de fontes. Essa interface é usada para criar rostos de fonte de fontes físicas ou para recuperar informações como métricas de face de fonte ou nomes de face de faces de fonte existentes. |
+| [**IDWriteFactory6**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefactory6) | Isso representa um objeto de fábrica do qual todos os objetos DirectWrite são criados. **IDWriteFactory6** adiciona novos recursos para trabalhar com fontes e recursos de fonte. |
+| [**IDWriteFactory7**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefactory7) | Essa interface representa um objeto de fábrica do qual todos os objetos DirectWrite são criados. **IDWriteFactory7** adiciona novos recursos para trabalhar com fontes do sistema. |
+| [**IDWriteFont**](/windows/win32/api/dwrite/nn-dwrite-idwritefont) | Representa uma fonte física em uma coleção de fontes. Essa interface é usada para criar faces de fonte de fontes físicas ou para recuperar informações como métricas de face de fonte ou nomes de rosto de rostos de fontes existentes. |
 | [**IDWriteFont1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritefont1) | Representa uma fonte física em uma coleção de fontes. |
 | [**IDWriteFont2**](idwritefont2.md) | Representa uma fonte física em uma coleção de fontes. |
 | [**IDWriteFont3**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefont3) | Representa uma fonte em uma coleção de fontes. |
-| [**IDWriteFontCollection**](/windows/win32/api/dwrite/nn-dwrite-idwritefontcollection) | Um objeto que encapsula um conjunto de fontes, como o conjunto de fontes instaladas no sistema, ou o conjunto de fontes em um diretório específico. A API de coleção de fontes pode ser usada para descobrir quais famílias de fontes e fontes estão disponíveis e para obter alguns metadados sobre as fontes. |
-| [**IDWriteFontCollection1**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontcollection1) | Um objeto que encapsula um conjunto de fontes, como o conjunto de fontes instaladas no sistema, ou o conjunto de fontes em um diretório específico. A API de coleção de fontes pode ser usada para descobrir quais famílias de fontes e fontes estão disponíveis e para obter alguns metadados sobre as fontes. |
-| [**IDWriteFontCollection2**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontcollection2) | Essa interface encapsula um conjunto de fontes, como o conjunto de fontes instaladas no sistema, ou o conjunto de fontes em um diretório específico. |
-| [**IDWriteFontCollection3**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontcollection3) | Essa interface encapsula um conjunto de fontes, como o conjunto de fontes instaladas no sistema, ou o conjunto de fontes em um diretório específico. |
-| [**IDWriteFontCollectionLoader**](/windows/win32/api/dwrite/nn-dwrite-idwritefontcollectionloader) | Usado para construir uma coleção de fontes dadas um tipo específico de chave.  |
-| [**IDWriteFontDownloadListener**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontdownloadlistener) | A interface de retorno de chamada definida pelo aplicativo que recebe notificações da fila de download de fontes (interface [**IDWriteFontDownloadQueue**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontdownloadqueue) ). Os retornos de chamada ocorrerão no thread de download e os objetos devem estar preparados para lidar com chamadas em seus métodos de outros threads a qualquer momento. |
-| [**IDWriteFontDownloadQueue**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontdownloadqueue) | Interface que enfileira as solicitações de download para fontes, caracteres, glifos e fragmentos de fontes remotos.  |
-| [**IDWriteFontFace**](/windows/win32/api/dwrite/nn-dwrite-idwritefontface) | Essa interface expõe vários dados de fonte, como métricas, nomes e contornos de glifos. Ele contém tipo de face de fonte, referências de arquivo apropriadas e dados de identificação facial. |
-| [**IDWriteFontFace1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritefontface1) | Contém o tipo de face de fonte, as referências de arquivo apropriadas e os dados de identificação facial.  |
-| [**IDWriteFontFace2**](/windows/win32/api/dwrite_2/nn-dwrite_2-idwritefontface2) | Esta interface contém tipo de face de fonte, referências de arquivo apropriadas e dados de identificação facial. Ele adiciona a capacidade de verificar se um caminho de renderização de cor é potencialmente necessário.  |
-| [**IDWriteFontFace3**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontface3) | Contém o tipo de face de fonte, as referências de arquivo apropriadas e os dados de identificação facial. |
-| [**IDWriteFontFace4**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontface4) | Contém o tipo de face de fonte, as referências de arquivo apropriadas e os dados de identificação facial. |
-| [**IDWriteFontFace5**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontface5) | Esta interface contém tipo de face de fonte, referências de arquivo apropriadas e dados de identificação facial. Ele adiciona novos recursos, como comparar duas faces de fonte, recuperar valores de eixo de fonte e recuperar o recurso de fonte subjacente. |
-| [**IDWriteFontFaceReference**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontfacereference) | Representa uma referência a uma face de fonte. Uma referência de identificação exclusiva a uma fonte, na qual você pode criar uma face de fonte para consultar métricas de fonte e usar para renderização. Uma referência de face de fonte consiste em um arquivo de fonte, índice de face de fonte e simulação de face de fonte. Os dados do arquivo podem ou não estar fisicamente presentes no computador local ainda.  |
-| [**IDWriteFontFaceReference1**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontfacereference1) | Representa uma referência a uma face de fonte. Uma referência de identificação exclusiva a uma fonte, na qual você pode criar uma face de fonte para consultar métricas de fonte e usar para renderização. |
-| [**IDWriteFontFallback**](/windows/win32/api/dwrite_2/nn-dwrite_2-idwritefontfallback) | Permite que você acesse fontes de fallback da lista de fontes. |
-| [**IDWriteFontFallbackBuilder**](idwritefontfallbackbuilder.md) | Permite que você crie mapeamentos de fallback de fonte Unicode e crie um objeto de retorno de fonte a partir desses mapeamentos. |
+| [**IDWriteFontCollection**](/windows/win32/api/dwrite/nn-dwrite-idwritefontcollection) | Um objeto que encapsula um conjunto de fontes, como o conjunto de fontes instaladas no sistema ou o conjunto de fontes em um diretório específico. A API de coleção de fontes pode ser usada para descobrir quais fontes e famílias de fontes estão disponíveis e para obter alguns metadados sobre as fontes. |
+| [**IDWriteFontCollection1**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontcollection1) | Um objeto que encapsula um conjunto de fontes, como o conjunto de fontes instaladas no sistema ou o conjunto de fontes em um diretório específico. A API de coleção de fontes pode ser usada para descobrir quais fontes e famílias de fontes estão disponíveis e para obter alguns metadados sobre as fontes. |
+| [**IDWriteFontCollection2**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontcollection2) | Essa interface encapsula um conjunto de fontes, como o conjunto de fontes instaladas no sistema ou o conjunto de fontes em um diretório específico. |
+| [**IDWriteFontCollection3**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontcollection3) | Essa interface encapsula um conjunto de fontes, como o conjunto de fontes instaladas no sistema ou o conjunto de fontes em um diretório específico. |
+| [**IDWriteFontCollectionLoader**](/windows/win32/api/dwrite/nn-dwrite-idwritefontcollectionloader) | Usado para construir uma coleção de fontes considerando um tipo específico de chave.  |
+| [**IDWriteFontDownloadListener**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontdownloadlistener) | Interface de retorno de chamada definida pelo aplicativo que recebe notificações da fila de download de fonte (interface [**IDWriteFontDownloadQueue).**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontdownloadqueue) Os retornos de chamada ocorrerão no thread de download e os objetos devem estar preparados para lidar com chamadas em seus métodos de outros threads a qualquer momento. |
+| [**IDWriteFontDownloadQueue**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontdownloadqueue) | Interface que enquera solicitações de download para fontes remotas, caracteres, glifos e fragmentos de fonte.  |
+| [**IDWriteFontFace**](/windows/win32/api/dwrite/nn-dwrite-idwritefontface) | Essa interface expõe vários dados de fonte, como métricas, nomes e contornos de glifo. Ele contém o tipo de face da fonte, as referências de arquivo apropriadas e os dados de identificação facial. |
+| [**IDWriteFontFace1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritefontface1) | Contém o tipo de face da fonte, as referências de arquivo apropriadas e os dados de identificação facial.  |
+| [**IDWriteFontFace2**](/windows/win32/api/dwrite_2/nn-dwrite_2-idwritefontface2) | Essa interface contém o tipo de face da fonte, as referências de arquivo apropriadas e os dados de identificação facial. Ele adiciona a capacidade de verificar se um caminho de renderização de cor é potencialmente necessário.  |
+| [**IDWriteFontFace3**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontface3) | Contém o tipo de face da fonte, as referências de arquivo apropriadas e os dados de identificação facial. |
+| [**IDWriteFontFace4**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontface4) | Contém o tipo de face da fonte, as referências de arquivo apropriadas e os dados de identificação facial. |
+| [**IDWriteFontFace5**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontface5) | Essa interface contém o tipo de face da fonte, as referências de arquivo apropriadas e os dados de identificação facial. Ele adiciona novos recursos, como comparar duas faces de fonte, recuperar valores de eixo de fonte e recuperar o recurso de fonte subjacente. |
+| [**IDWriteFontFaceReference**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontfacereference) | Representa uma referência a um rosto de fonte. Uma referência de identificação exclusiva a uma fonte, na qual você pode criar um rosto de fonte para consultar métricas de fonte e usar para renderização. Uma referência facial de fonte consiste em um arquivo de fonte, índice facial de fonte e simulação de face de fonte. Os dados do arquivo podem ou não estar fisicamente presentes no computador local ainda.  |
+| [**IDWriteFontFaceReference1**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontfacereference1) | Representa uma referência a um rosto de fonte. Uma referência de identificação exclusiva a uma fonte, na qual você pode criar um rosto de fonte para consultar métricas de fonte e usar para renderização. |
+| [**IDWriteFontFallback**](/windows/win32/api/dwrite_2/nn-dwrite_2-idwritefontfallback) | Permite que você acesse fontes de fallback na lista de fontes. |
+| [**IDWriteFontFallbackBuilder**](idwritefontfallbackbuilder.md) | Permite que você crie mapeamentos de fallback de fonte Unicode e crie um objeto de fallback de fonte com base nesses mapeamentos. |
 | [**IDWriteFontFamily**](/windows/win32/api/dwrite/nn-dwrite-idwritefontfamily) | Representa uma família de fontes relacionadas. |
 | [**IDWriteFontFamily1**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontfamily1) | Representa uma família de fontes relacionadas. |
-| [**IDWriteFontFamily2**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontfamily2) | Representa uma família de fontes relacionadas. O **IDWriteFontFamily2** adiciona novos recursos, incluindo a recuperação de fontes por valores de eixo de fonte. |
+| [**IDWriteFontFamily2**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontfamily2) | Representa uma família de fontes relacionadas. **IDWriteFontFamily2** adiciona novos recursos, incluindo a recuperação de fontes por valores de eixo de fonte. |
 | [**IDWriteFontFile**](/windows/win32/api/dwrite/nn-dwrite-idwritefontfile) | Representa um arquivo de fonte. Aplicativos como gerenciadores de fontes ou visualizadores de fontes podem chamar [**IDWriteFontFile:: Analyze**](/windows/win32/api/dwrite/nf-dwrite-idwritefontfile-analyze) para descobrir se um arquivo específico é um arquivo de fonte e se é um tipo de fonte com suporte no sistema de fontes. |
 | [**IDWriteFontFileEnumerator**](/windows/win32/api/dwrite/nn-dwrite-idwritefontfileenumerator) | Encapsula uma coleção de arquivos de fonte. O sistema de fontes usa essa interface para enumerar arquivos de fonte ao criar uma coleção de fontes. |
 | [**IDWriteFontFileLoader**](/windows/win32/api/dwrite/nn-dwrite-idwritefontfileloader) | Lida com o carregamento de recursos de arquivo de fonte de um tipo específico de uma chave de referência de arquivo de fonte em um objeto de fluxo de arquivo de fonte.  |

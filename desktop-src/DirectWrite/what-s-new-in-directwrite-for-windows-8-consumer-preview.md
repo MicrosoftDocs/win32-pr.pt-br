@@ -1,40 +1,40 @@
 ---
-title: O que há de novo no DirectWrite
+title: Novidades no DirectWrite
 description: Aqui estão algumas das novas adições ao DirectWrite.
 ms.assetid: 2512D222-C6EB-4C2D-80A6-7978FED56F7A
 ms.topic: article
 ms.date: 09/23/2019
-ms.openlocfilehash: 6b54a7f671ab6472ee2e412c2797d80bf7de245e
-ms.sourcegitcommit: d5f16b9d3d5d2e2080ba7b6837eb37250fa67a30
+ms.openlocfilehash: ea9e36487477f51179a77b97726b787a0f5da844
+ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "111349955"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112587885"
 ---
-# <a name="whats-new-in-directwrite"></a>O que há de novo no DirectWrite
+# <a name="whats-new-in-directwrite"></a>Novidades no DirectWrite
 
-Este tópico descreve o que há de novo no [DirectWrite](direct-write-portal.md) para várias versões do Windows 10.
+Este tópico descreve as novidades do [DirectWrite](direct-write-portal.md) para várias versões do Windows 10.
 
-## <a name="project-reunion-01-prerelease"></a>Versão de pré-lançamento do Project reunião 0,1
+## <a name="windows-app-sdk"></a>SDK do Aplicativo do Windows
 
-A [reunião do projeto](/windows/apps/project-reunion/) apresenta uma nova versão do DirectWrite, chamada DWriteCore, que é executada em versões do Windows até o Windows 8 e abre a porta para você usá-la entre plataformas. Para obter mais detalhes, consulte [visão geral do DWriteCore](dwritecore-overview.md).
+O [SDK de Aplicativos do Windows](/windows/apps/windows-app-sdk/) apresenta uma nova versão do DirectWrite, chamada DWriteCore. Para obter mais detalhes, consulte [Visão geral do DWriteCore.](dwritecore-overview.md)
 
 ## <a name="windows-10-may-2019-update"></a>Atualização de maio de 2019 para Windows 10
 
-Nenhum recurso ou API foi adicionado nem atualizado para o Windows 10, versão 1903 (10,0; Build 18362) &mdash; também conhecido como Windows 10 pode 2019 atualização.
+Nenhum recursos ou APIs foram adicionados nem atualizados para Windows 10 versão 1903 (10.0; Build 18362) &mdash; também conhecido como Atualização de maio de 2019 para o Windows 10.
 
 ## <a name="windows-10-october-2018-update"></a>Atualização de outubro de 2018 para o Windows 10
 
-Os seguintes recursos e APIs foram adicionados ou atualizados para o Windows 10, versão 1809 (10,0; Build 17763) &mdash; também conhecido como atualização do Windows 10 de outubro de 2018.
+Os seguintes recursos e APIs foram adicionados ou atualizados para Windows 10, versão 1809 (10.0; Build 17763) &mdash; também conhecido como Atualização de outubro de 2018 para o Windows 10.
 
 ### <a name="new"></a>Novo
 
-- Enumeração de [**DWRITE_FONT_SOURCE_TYPE**](/windows/win32/api/dwrite_3/ne-dwrite_3-dwrite_font_source_type)
+- [**DWRITE_FONT_SOURCE_TYPE**](/windows/win32/api/dwrite_3/ne-dwrite_3-dwrite_font_source_type) enumeração
 - Interface [**IDWriteFontSet3**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontset3) e seus métodos
 
 ## <a name="windows-10-april-2018-update"></a>Atualização de abril de 2018 do Windows 10
 
-Os seguintes recursos e APIs foram adicionados ou atualizados para o Windows 10, versão 1803 (10,0; Build 17134) &mdash; também conhecido como atualização do Windows 10 de abril de 2018.
+Os seguintes recursos e APIs foram adicionados ou atualizados para Windows 10 versão 1803 (10.0; Build 17134) &mdash; também conhecido como Atualização de abril de 2018 para o Windows 10.
 
 ### <a name="new"></a>Novo
 
@@ -44,14 +44,14 @@ Os seguintes recursos e APIs foram adicionados ou atualizados para o Windows 10,
 
 ## <a name="windows-10-fall-creators-update"></a>Windows 10 Fall Creators Update
 
-Os seguintes recursos e APIs foram adicionados ou atualizados para o Windows 10, versão 1709 (10,0; Build 16299) &mdash; também conhecido como atualização dos criadores de outono do Windows 10.
+Os seguintes recursos e APIs foram adicionados ou atualizados para Windows 10 versão 1709 (10.0; Build 16299) &mdash; também conhecido como Windows 10 Fall Creators Update.
 
 ### <a name="new"></a>Novo
 
-- Enumeração de [**DWRITE_AUTOMATIC_FONT_AXES**](/windows/win32/api/dwrite_3/ne-dwrite_3-dwrite_automatic_font_axes)
-- Enumeração de [**DWRITE_FONT_AXIS_ATTRIBUTES**](/windows/win32/api/dwrite_3/ne-dwrite_3-dwrite_font_axis_attributes)
-- Enumeração de [**DWRITE_FONT_AXIS_TAG**](/windows/win32/api/dwrite_3/ne-dwrite_3-dwrite_font_axis_tag)
-- Enumeração de [**DWRITE_FONT_FAMILY_MODEL**](/windows/win32/api/dwrite_3/ne-dwrite_3-dwrite_font_family_model)
+- [**DWRITE_AUTOMATIC_FONT_AXES**](/windows/win32/api/dwrite_3/ne-dwrite_3-dwrite_automatic_font_axes) enumeração
+- [**DWRITE_FONT_AXIS_ATTRIBUTES**](/windows/win32/api/dwrite_3/ne-dwrite_3-dwrite_font_axis_attributes) enumeração
+- [**DWRITE_FONT_AXIS_TAG**](/windows/win32/api/dwrite_3/ne-dwrite_3-dwrite_font_axis_tag) enumeração
+- [**DWRITE_FONT_FAMILY_MODEL**](/windows/win32/api/dwrite_3/ne-dwrite_3-dwrite_font_family_model) enumeração
 - Interface [**IDWriteFactory6**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefactory6) e seus métodos
 - Interface [**IDWriteFontCollection2**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontcollection2) e seus métodos
 - Interface [**IDWriteFontFace5**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritefontface5) e seus métodos
@@ -65,72 +65,72 @@ Os seguintes recursos e APIs foram adicionados ou atualizados para o Windows 10,
 - Interface [**IDWriteTextFormat3**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritetextformat3) e seus métodos
 - Interface [**IDWriteTextLayout4**](/windows/win32/api/dwrite_3/nn-dwrite_3-idwritetextlayout4) e seus métodos
 - [**DWRITE_MAKE_FONT_AXIS_TAG**](/windows/win32/api/dwrite_3/nf-dwrite_3-dwrite_make_font_axis_tag) macro
-- Estrutura de [**DWRITE_FONT_AXIS_RANGE**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_font_axis_range)
-- Estrutura de [**DWRITE_FONT_AXIS_VALUE**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_font_axis_value)
+- [**DWRITE_FONT_AXIS_RANGE**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_font_axis_range) estrutura
+- [**DWRITE_FONT_AXIS_VALUE**](/windows/win32/api/dwrite_3/ns-dwrite_3-dwrite_font_axis_value) estrutura
 
-### <a name="moved"></a>Sido
+### <a name="moved"></a>Movido
 
-A enumeração de [**DWRITE_GLYPH_IMAGE_FORMATS**](/windows/win32/api/dcommon/ne-dcommon-dwrite_glyph_image_formats) movida de `dwrite_3.h` para `dcommon.h` .
+A [**DWRITE_GLYPH_IMAGE_FORMATS**](/windows/win32/api/dcommon/ne-dcommon-dwrite_glyph_image_formats) de dados foi movida de `dwrite_3.h` para `dcommon.h` .
 
 ## <a name="windows-10-creators-update"></a>Atualização do Windows 10 para Criadores
 
-Os seguintes recursos e APIs foram adicionados ou atualizados para o Windows 10, versão 1703 (10,0; Build 15063) &mdash; também conhecido como atualização do Windows 10 para criadores.
+Os seguintes recursos e APIs foram adicionados ou atualizados para Windows 10 versão 1703 (10.0; Build 15063) &mdash; também conhecido como Atualização do Windows 10 para Criadores.
 
-### <a name="expanded-api-support-for-cloud-fonts-and-custom-font-sets"></a>Suporte expandido à API para fontes de nuvem e conjuntos de fontes personalizadas
+### <a name="expanded-api-support-for-cloud-fonts-and-custom-font-sets"></a>Suporte expandido à API para fontes de nuvem e conjuntos de fontes personalizados
 
-As APIs incluídas no Windows 10 permitem que os aplicativos acessem facilmente fontes de um serviço de fontes do Windows. Na atualização do Windows 10 para criadores, as APIs para fontes remotas são estendidas para permitir o acesso fácil a fontes de outras fontes na Web que podem ser acessadas usando HTTP ou HTTPS. 
+Windows 10 APIs incluídas que permitem que os aplicativos acessem facilmente fontes de um serviço de fonte do Windows. No Atualização do Windows 10 para Criadores, as APIs para fontes remotas são estendidas para permitir o acesso fácil a fontes de outras fontes na Web que podem ser acessadas usando HTTP ou HTTPS. 
 
-As novas APIs de fonte remota podem ser usadas com serviços Web públicos ou privados. Além disso, eles podem ser usados para acessar arquivos de fontes brutos, OpenType (. ttf,. otf.,. TTC,. OTC) ou fontes empacotadas nos formatos de contêiner [WOFF](https://www.w3.org/TR/WOFF/) ou [WOFF2](https://www.w3.org/TR/WOFF2/) . As novas APIs são usadas em conjunto com as APIs existentes para enfileirar solicitações para baixar dados de fonte remoto e para manipular o processo de download real.
+As novas APIs de fonte remota podem ser usadas com serviços Web públicos ou privados. Além disso, eles podem ser usados para acessar arquivos de fonte openType brutos (.ttf, .otf., .ttc, .otc) ou fontes empacotadas em formatos de contêiner [WOFF](https://www.w3.org/TR/WOFF/) ou [WOFF2.](https://www.w3.org/TR/WOFF2/) As novas APIs são usadas em conjunto com as APIs existentes para fazer fila de solicitações para baixar dados de fonte remota e para lidar com o processo de download real.
 
-Outras novas APIs facilitam para os aplicativos trabalhar com fontes personalizadas armazenadas no sistema de arquivos local ou que são carregadas em um buffer de memória.
+Outras novas APIs facilitam o trabalho dos aplicativos com fontes personalizadas armazenadas no sistema de arquivos local ou carregadas em um buffer de memória.
 
-Para obter mais informações sobre novas APIs para trabalhar com fontes remotas, conjuntos de fontes personalizadas ou formatos de contêiner WOFF/WOFF2, consulte o seguinte tópico:
+Para obter mais informações sobre novas APIs para trabalhar com fontes remotas, conjuntos de fontes personalizados ou formatos de contêiner WOFF/WOFF2, consulte o tópico a seguir:
 
 [Conjuntos de fontes personalizados](custom-font-sets-win10.md)
 
-Consulte também os links para tópicos de referência de API fornecidos nesse tópico.  O uso de APIs novas e existentes para trabalhar com fontes personalizadas também é ilustrado no [exemplo de conjuntos de fontes personalizadas DirectWrite](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/DirectWriteCustomFontSets/). Este exemplo ilustra a implementação de código para vários cenários diferentes, incluindo fontes locais em disco, fontes remotas na Web, dados de fonte na memória e fontes nos formatos WOFF ou WOFF2 empacotados.
+Consulte também os links para tópicos de referência de API fornecidos nesse tópico.  O uso de APIs novas e existentes para trabalhar com fontes personalizadas também é ilustrado no exemplo conjuntos de fontes personalizados [directWrite](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/DirectWriteCustomFontSets/). Este exemplo ilustra a implementação de código para vários cenários diferentes, incluindo fontes locais em disco, fontes remotas na Web, dados de fonte na memória e fontes em formatos WOFF ou WOFF2 empacotados.
 
-### <a name="initial-support-for-opentype-font-variations"></a>Suporte inicial para variações de fontes OpenType
+### <a name="initial-support-for-opentype-font-variations"></a>Suporte inicial para variações de fonte OpenType
 
-A versão 1,8 da especificação de formato de fonte OpenType introduziu uma nova extensão empolgante para o formato conhecido como variações de fontes OpenType. O DirectWrite foi atualizado na atualização do Windows 10 para criadores para dar suporte a instâncias nomeadas de fontes de variáveis. Para obter mais informações, consulte o tópico a seguir:
+A versão 1.8 da especificação de formato de fonte OpenType introduziu uma nova extensão interessante para o formato conhecido como Variações de Fonte OpenType. DirectWrite foi atualizado no Atualização do Windows 10 para Criadores para dar suporte a instâncias nomeadas de fontes variáveis. Para obter mais informações, consulte o tópico a seguir:
 
 [Fontes variáveis OpenType](opentype-variable-fonts.md)
 
 ## <a name="windows-10-anniversary-update"></a>Atualização de Aniversário do Windows 10
 
-Os seguintes recursos e APIs foram adicionados ou atualizados para o Windows 10, versão 1607 (10,0; Build 14393) &mdash; também conhecido como atualização de aniversário do Windows 10.
+Os seguintes recursos e APIs foram adicionados ou atualizados para Windows 10 versão 1607 (10.0; Build 14393) &mdash; também conhecido como Atualização de Aniversário do Windows 10.
 
 ### <a name="improved-support-for-color-fonts"></a>Suporte aprimorado para fontes coloridas
 
-A partir da atualização de aniversário do Windows 10, o DirectWrite fornece suporte interno para uma variedade maior de formatos de fonte de cor, permitindo que os desenvolvedores usem mais tipos de fontes em seus aplicativos com DirectWrite do que nunca. Isso inclui suporte para:
+A partir do Atualização de Aniversário do Windows 10, o DirectWrite fornece suporte integrado para uma variedade maior de formatos de fonte de cores, permitindo que os desenvolvedores usem mais tipos de fontes em seus aplicativos da plataforma DirectWrite do que nunca. Isso inclui suporte para:
 
--   A tabela OpenType ' COLR ', que habilita o conteúdo de vetor compacto em fontes. (Com suporte desde Windows 8.1.)
--   A tabela OpenType ' SVG ', que habilita o conteúdo SVG em fontes.
--   A tabela OpenType ' CBDT ', que permite o conteúdo de bitmap em cores em fontes.
--   A tabela OpenType ' sbix ', que permite o conteúdo de bitmap em cores em fontes.
+-   A tabela 'COLR' OpenType, que habilita o conteúdo de vetor compacto em fontes. (Com suporte desde Windows 8.1.)
+-   A tabela 'SVG ' OpenType, que habilita o conteúdo SVG em fontes.
+-   A tabela OpenType 'CBDT', que habilita o conteúdo de bitmap de cor em fontes.
+-   A tabela OpenType 'sbix', que habilita o conteúdo de bitmap de cor em fontes.
 
-[Direct2D](../direct2d/direct2d-portal.md), que usa DirectWrite para a renderização de texto, oferece suporte a esses formatos de fonte de cor automaticamente quando o sinalizador de fontes de texto de desenho de d2d1 habilitação de [**\_ \_ \_ \_ \_ cor \_**](/windows/win32/api/d2d1/ne-d2d1-d2d1_draw_text_options) é habilitado. Para mais informações, consulte os seguintes tópicos:
+[O Direct2D](../direct2d/direct2d-portal.md), que usa DirectWrite para renderização de texto, dá suporte a esses formatos de fonte de cor automaticamente quando o sinalizador [**D2D1 \_ DRAW TEXT OPTIONS ENABLE COLOR \_ \_ \_ \_ \_ FONT**](/windows/win32/api/d2d1/ne-d2d1-d2d1_draw_text_options) está habilitado. Para mais informações, consulte os seguintes tópicos:
 
 -   [Fontes de cores](color-fonts.md)
--   [Exemplo de glifo de cor de DirectWrite](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/DWriteColorGlyph)
+-   [Exemplo de glifo de cor DirectWrite](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/DWriteColorGlyph)
 
 ### <a name="support-for-adobe-typekit-and-other-font-service-clients"></a>Suporte para Adobe Typekit e outros clientes de serviço de fonte
 
-Alguns serviços de fontes, como o Adobe Typekit, têm utilitários do lado do cliente que permitem a um usuário carregar fontes do serviço e usá-las em diferentes aplicativos em seu computador Windows. Normalmente, esses utilitários funcionam fazendo chamadas de tempo de execução para o GDI para carregar fontes adicionais, em vez de instalar permanentemente as fontes no sistema. Por causa desse design, em versões anteriores do Windows, as fontes seriam utilizáveis em aplicativos baseados em GDI, mas não em aplicativos DirectWrite. A partir da atualização de aniversário do Windows 10, as fontes que são carregadas por tais utilitários também estarão disponíveis em DirectWrite, bem como em GDI.
+Alguns serviços de fonte, como Adobe Typekit, têm utilitários do lado do cliente que permitem que um usuário carregue fontes do serviço e as use em aplicativos diferentes em seu computador Windows. Esses utilitários normalmente funcionam fazendo chamadas em tempo de executar para gDI para carregar fontes adicionais, em vez de instalar fontes permanentemente no sistema. Devido a esse design, em versões anteriores do Windows, as fontes seriam usadas em aplicativos baseados em GDI, mas não em aplicativos DirectWrite. A partir do Atualização de Aniversário do Windows 10, as fontes carregadas por esses utilitários também estarão disponíveis no DirectWrite, bem como no GDI.
 
-As fontes carregadas por um utilitário de serviço de fonte são visíveis na coleção de fontes do sistema obtida chamando o método [**IDWriteFactory:: GetSystemFontCollection**](/windows/win32/api/dwrite/nf-dwrite-idwritefactory-getsystemfontcollection) . Como os serviços de fonte geralmente seguem um modelo de licenciamento por usuário, as fontes carregadas por esses utilitários são gerenciadas por usuário. Como resultado, os aplicativos DirectWrite existentes podem utilizar fontes que os usuários finais obtiveram usando tais serviços, sem nenhuma alteração de código necessária no aplicativo, fornecendo uma experiência mais direta aos usuários.
+As fontes carregadas por um utilitário de serviço de fonte são visíveis na coleção de fontes do sistema obtida chamando o método [**IDWriteFactory::GetSystemFontCollection.**](/windows/win32/api/dwrite/nf-dwrite-idwritefactory-getsystemfontcollection) Como os serviços de fonte normalmente seguem um modelo de licenciamento por usuário, as fontes carregadas por esses utilitários são gerenciadas por usuário. Como resultado, os aplicativos DirectWrite existentes podem utilizar fontes que os usuários finais obtiveram usando esses serviços, sem nenhuma alteração de código necessária no aplicativo, fornecendo uma experiência mais perfeita para os usuários.
 
-### <a name="support-for-opentype-collections-using-cff-outlines"></a>Suporte para coleções OpenType usando contornos CFF
+### <a name="support-for-opentype-collections-using-cff-outlines"></a>Suporte para coleções OpenType usando contornos de CFF
 
-Os formatos de fonte OpenType e TrueType têm suporte longo para a capacidade de várias fontes serem empacotadas juntas em um único arquivo de fonte, conhecido como "coleção de fontes". A especificação OpenType sempre permitiu que as fontes utilizassem formatos TrueType ou CFF para dados de estrutura de tópicos de glifo. Até recentemente, no entanto, a especificação só é permitida para coleções nas quais os contornos de glifos usam o formato TrueType. A versão 1,7 do OpenType agora permite que as coleções usem formatos TrueType ou CFF para dados de estrutura de tópicos de glifo. A partir da atualização de aniversário do Windows 10, o DirectWrite dará suporte a coleções OpenType usando dados de estrutura de tópicos do CFF.
+Os formatos de fonte OpenType e TrueType há muito tempo suportam a capacidade de várias fontes serem empacotadas em um único arquivo de fonte, conhecido como "coleção de fontes". A especificação OpenType sempre permitiu que fontes usem formatos TrueType ou CFF para dados de contorno de glifo. No entanto, até recentemente, a especificação só permitia coleções nas quais os contornos de glifo usam o formato TrueType. O OpenType versão 1.7 agora permite que as coleções usem formatos TrueType ou CFF para dados de contorno de glifo. A partir do Atualização de Aniversário do Windows 10, o DirectWrite dará suporte a coleções OpenType usando dados de contorno CFF.
 
 ## <a name="windows-10"></a>Windows 10
 
-### <a name="windows-font-service-integration"></a>Integração do serviço de fontes do Windows
+### <a name="windows-font-service-integration"></a>Integração do serviço de fonte do Windows
 
-A partir do Windows 10, as fontes incluídas com o Windows estão disponíveis em um serviço online e podem ser acessadas por meio do DirectWrite em qualquer dispositivo Windows 10. Isso se aplica a todas as edições do Windows 10, incluindo Windows 10 Mobile, Xbox e HoloLens, bem como o cliente de desktop. Isso permite que os aplicativos exibam conteúdo usando qualquer fonte do Windows, mesmo que a fonte não esteja instalada atualmente no dispositivo.
+A partir Windows 10, as fontes incluídas no Windows estão disponíveis em um serviço online e podem ser acessadas por meio do DirectWrite em qualquer Windows 10 dispositivo. Isso se aplica a todas as Windows 10, incluindo Windows 10 Mobile, Xbox e HoloLens, bem como o cliente da área de trabalho. Isso permite que os aplicativos exibem conteúdo usando qualquer fonte do Windows, mesmo se a fonte não estiver instalada no dispositivo no momento.
 
-O suporte para os mecanismos de serviço de fonte DirectWrite foi implementado na estrutura XAML, o que significa que todos os aplicativos que usam XAML não exigem nenhuma alteração de código para aproveitar o serviço de fonte. O [exemplo de código de fontes baixáveis (XAML)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/XamlCloudFontIntegration) demonstra isso. Aplicativos que chamam APIs DirectWrite diretamente precisarão usar novas APIs para usar os mecanismos de serviço de fonte. Para mais informações, consulte os seguintes tópicos:
+O suporte para os mecanismos de serviço de fonte DirectWrite foi implementado na estrutura XAML, o que significa que todos os aplicativos que usam XAML não exigem nenhuma alteração de código para aproveitar o serviço de fonte. O [exemplo de código XAML (fontes baixáveis)](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/XamlCloudFontIntegration) demonstra isso. Os aplicativos que chamam as APIs directWrite precisarão usar novas APIs para usar os mecanismos de serviço de fonte. Para mais informações, consulte os seguintes tópicos:
 
 -   [**Método IDWriteFactory3::GetSystemFontCollection**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritefactory3-getsystemfontcollection)
 -   Interface [**IDWriteTextLayout3**](idwritetextlayout3.md)

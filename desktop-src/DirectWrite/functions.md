@@ -6,12 +6,12 @@ keywords:
 - DirectWrite, funções
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e3c773ade980e5359899c038fd13ba4a5cb69a2
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 367017bd696477dbac99cee609ab4fdbbe522e26
+ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105770425"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112587893"
 ---
 # <a name="directwrite-functions"></a>Funções DirectWrite
 
@@ -24,10 +24,4 @@ DirectWrite fornece a função a seguir. Todas as outras operações são execut
 | Tópico                                                         | Descrição                                                                                                             |
 |---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | [**DWriteCreateFactory**](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory)<br/> | Cria um objeto de fábrica DirectWrite que é usado para a criação subsequente de objetos DirectWrite individuais.<br/> |
-
-
-
- 
-
- 
-
+| [**DWriteCoreCreateFactory (DWriteCore)**](/windows/windows-app-sdk/api/win32/dwrite_core/nf-dwrite_core-dwritecorecreatefactory)<br/> | Cria um objeto de fábrica DirectWrite que é usado para a criação subsequente de objetos DWriteCore individuais.<br/> |

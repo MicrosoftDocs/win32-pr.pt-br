@@ -8,12 +8,12 @@ req.target-min-winverclnt: Windows Vista [desktop apps only]
 req.target-min-winversvr: Windows Server 2008 [desktop apps only]
 api_location:
 - mstcpip.h
-ms.openlocfilehash: cea9a2d31654d1263f285ee9967b24700fe25138
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: f6076440f117ed287ad544c308e574454f33e2b7
+ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "105772742"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112587795"
 ---
 # <a name="sio_tcp_info-control-code"></a>SIO_TCP_INFO código de controle
 
@@ -67,7 +67,7 @@ Use **as \_ \_ informações de TCP do sio** para esta operação.
 ### <a name="lpvinbuffer"></a>lpvInBuffer
 
 Um ponteiro para o buffer de entrada.
-Esse parâmetro contém um ponteiro para um **DWORD** que especifica a versão do código de controle de **\_ \_ informações TCP sio** que você está usando. Especifique 0 para usar [TCP_INFO_v0](/windows/win32/api/mstcpip/ns-mstcpip-tcp_info_v0). Especifique 1 para usar [TCP_INFO_v1](/windows/win32/api/mstcpip/ns-mstcpip-tcp_info_v1), que povides mais campos.
+Esse parâmetro contém um ponteiro para um **DWORD** que especifica a versão do código de controle de **\_ \_ informações TCP sio** que você está usando. Especifique 0 para usar [TCP_INFO_v0](/windows/win32/api/mstcpip/ns-mstcpip-tcp_info_v0). Especifique 1 para usar [TCP_INFO_v1](/windows/win32/api/mstcpip/ns-mstcpip-tcp_info_v1), que fornece mais campos.
 
 ### <a name="cbinbuffer"></a>cbInBuffer
 
@@ -127,7 +127,7 @@ Um ponteiro para o código de erro.
 
 **Observação**  Esse parâmetro se aplica somente à função **WSPIoctl** .
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a operação for concluída com êxito, a função [**WSAIoctl**](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl) ou **WSPIoctl** retornará zero.
 

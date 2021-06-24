@@ -4,12 +4,12 @@ description: Os aplicativos atuais devem dar suporte à renderização de texto 
 ms.assetid: 62a8d723-ae1c-4cbc-a9da-3177e80d4a3a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b1e2ff44083a56a7202847fc07ad9daaa67b7ba
-ms.sourcegitcommit: dd4a3716477b1363be58ecc0d439029f81467104
+ms.openlocfilehash: 4c6bdc75845c2387a4fa4335fa462d0b97ec5669
+ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "104454579"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112587947"
 ---
 # <a name="directwrite-dwrite"></a>DirectWrite (DWrite)
 
@@ -28,7 +28,7 @@ Os aplicativos atuais devem dar suporte à renderização de texto de alta quali
 A API dá suporte à medição, ao desenho e ao teste de impacto de texto de vários formatos. O DirectWrite lida com o texto em todos os idiomas com suporte para aplicativos globais e localizados, criando a infraestrutura de linguagem principal encontrada no Windows 7. O DirectWrite também oferece uma API de renderização de glifos de nível inferior para desenvolvedores que queiram executar seu próprio processamento Unicode em glifo.
 
 > [!NOTE]
-> A [reunião do projeto](/windows/apps/project-reunion/) apresenta uma nova versão do DirectWrite &mdash; chamada DWriteCore &mdash; , que é executada em versões do Windows até o Windows 8, e abre a porta para você usá-la entre plataformas. Para obter mais detalhes, consulte [visão geral do DWriteCore](dwritecore-overview.md).
+> O [SDK de aplicativos do Windows](/windows/apps/windows-app-sdk/) introduz uma nova versão do DirectWrite &mdash; chamada DWriteCore &mdash; , que é executada em versões do Windows até o Windows 8, e abre a porta para você usá-la entre plataformas. Para obter mais detalhes, consulte [visão geral do DWriteCore](dwritecore-overview.md).
 
 ## <a name="run-time-requirements"></a>Requisitos de tempo de execução
 
