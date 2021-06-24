@@ -6,28 +6,22 @@ keywords:
 - DirectWrite, funções
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e3c773ade980e5359899c038fd13ba4a5cb69a2
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 367017bd696477dbac99cee609ab4fdbbe522e26
+ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105770425"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112587893"
 ---
-# <a name="directwrite-functions"></a><span data-ttu-id="84703-105">Funções DirectWrite</span><span class="sxs-lookup"><span data-stu-id="84703-105">DirectWrite functions</span></span>
+# <a name="directwrite-functions"></a><span data-ttu-id="f0882-105">Funções DirectWrite</span><span class="sxs-lookup"><span data-stu-id="f0882-105">DirectWrite functions</span></span>
 
-<span data-ttu-id="84703-106">DirectWrite fornece a função a seguir.</span><span class="sxs-lookup"><span data-stu-id="84703-106">DirectWrite provides the following function.</span></span> <span data-ttu-id="84703-107">Todas as outras operações são executadas usando objetos de interface DirectWrite que são criados pelo objeto [**IDWriteFactory**](/windows/win32/api/dwrite/nn-dwrite-idwritefactory) que é criado com a função abaixo.</span><span class="sxs-lookup"><span data-stu-id="84703-107">All other operations are performed by using DirectWrite interface objects that are created by the [**IDWriteFactory**](/windows/win32/api/dwrite/nn-dwrite-idwritefactory) object that is created with the function below.</span></span>
+<span data-ttu-id="f0882-106">DirectWrite fornece a função a seguir.</span><span class="sxs-lookup"><span data-stu-id="f0882-106">DirectWrite provides the following function.</span></span> <span data-ttu-id="f0882-107">Todas as outras operações são executadas usando objetos de interface DirectWrite que são criados pelo objeto [**IDWriteFactory**](/windows/win32/api/dwrite/nn-dwrite-idwritefactory) que é criado com a função abaixo.</span><span class="sxs-lookup"><span data-stu-id="f0882-107">All other operations are performed by using DirectWrite interface objects that are created by the [**IDWriteFactory**](/windows/win32/api/dwrite/nn-dwrite-idwritefactory) object that is created with the function below.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="84703-108">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="84703-108">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="f0882-108">Nesta seção</span><span class="sxs-lookup"><span data-stu-id="f0882-108">In this section</span></span>
 
 
 
-| <span data-ttu-id="84703-109">Tópico</span><span class="sxs-lookup"><span data-stu-id="84703-109">Topic</span></span>                                                         | <span data-ttu-id="84703-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="84703-110">Description</span></span>                                                                                                             |
+| <span data-ttu-id="f0882-109">Tópico</span><span class="sxs-lookup"><span data-stu-id="f0882-109">Topic</span></span>                                                         | <span data-ttu-id="f0882-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="f0882-110">Description</span></span>                                                                                                             |
 |---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [<span data-ttu-id="84703-111">**DWriteCreateFactory**</span><span class="sxs-lookup"><span data-stu-id="84703-111">**DWriteCreateFactory**</span></span>](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory)<br/> | <span data-ttu-id="84703-112">Cria um objeto de fábrica DirectWrite que é usado para a criação subsequente de objetos DirectWrite individuais.</span><span class="sxs-lookup"><span data-stu-id="84703-112">Creates a DirectWrite factory object that is used for subsequent creation of individual DirectWrite objects.</span></span><br/> |
-
-
-
- 
-
- 
-
+| [<span data-ttu-id="f0882-111">**DWriteCreateFactory**</span><span class="sxs-lookup"><span data-stu-id="f0882-111">**DWriteCreateFactory**</span></span>](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory)<br/> | <span data-ttu-id="f0882-112">Cria um objeto de fábrica DirectWrite que é usado para a criação subsequente de objetos DirectWrite individuais.</span><span class="sxs-lookup"><span data-stu-id="f0882-112">Creates a DirectWrite factory object that is used for subsequent creation of individual DirectWrite objects.</span></span><br/> |
+| [<span data-ttu-id="f0882-113">**DWriteCoreCreateFactory (DWriteCore)**</span><span class="sxs-lookup"><span data-stu-id="f0882-113">**DWriteCoreCreateFactory (DWriteCore)**</span></span>](/windows/windows-app-sdk/api/win32/dwrite_core/nf-dwrite_core-dwritecorecreatefactory)<br/> | <span data-ttu-id="f0882-114">Cria um objeto de fábrica DirectWrite que é usado para a criação subsequente de objetos DWriteCore individuais.</span><span class="sxs-lookup"><span data-stu-id="f0882-114">Creates a DirectWrite factory object that is used for subsequent creation of individual DWriteCore objects.</span></span><br/> |
