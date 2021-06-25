@@ -1,83 +1,83 @@
 ---
 title: Palavras-chave dinâmicas do firewall
-description: Você usa as APIs de palavras-chave dinâmicas do firewall para gerenciar endereços de palavras-chave dinâmicas no Windows Defender firewall.
+description: Use as APIs de palavras-chave dinâmicas do firewall para gerenciar endereços de palavra-chave dinâmicos Microsoft Defender Firewall.
 keywords:
 - Palavras-chave dinâmicas do firewall
 ms.topic: article
 ms.date: 05/17/2021
 ms.localizationpriority: low
-ms.openlocfilehash: e60526d8a7889af3173913774790bdd209121040
-ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
+ms.openlocfilehash: 15e35f26b72ed8d685e8302f6222836507e5c6a3
+ms.sourcegitcommit: ae8c320a757558262167a4f4e385235b8d89035c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 06/24/2021
-ms.locfileid: "112681129"
+ms.locfileid: "112765530"
 ---
 # <a name="firewall-dynamic-keywords"></a>Palavras-chave dinâmicas do firewall
 
-Você usa as APIs de palavras-chave dinâmicas do firewall para gerenciar *endereços de palavras-chave dinâmicas* no [Windows Defender firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Um endereço de palavra-chave dinâmica é usado para criar um conjunto de endereços IP aos quais uma ou mais regras de firewall podem se referir. Os endereços de palavras-chave dinâmicas dão suporte a IPv4 e IPv6.
+Use as APIs de palavras-chave dinâmicas do firewall para gerenciar endereços *de palavra-chave* dinâmicos [no Microsoft Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Um endereço de palavra-chave dinâmico é usado para criar um conjunto de endereços IP aos quais uma ou mais regras de firewall podem se referir. Endereços de palavra-chave dinâmicos são suportados por IPv4 e IPv6.
 
 > [!NOTE]
-> Para o conteúdo de referência de API para as APIs apresentadas neste tópico, consulte [referência de palavras-chave dinâmicas do firewall](firewall-dynamic-keywords-reference.md).
+> Para conteúdo de referência de API para as APIs introduzidas neste tópico, consulte [Referência de palavras-chave dinâmicas do firewall](firewall-dynamic-keywords-reference.md).
 
-## <a name="operations-on-dynamic-keyword-addresses"></a>Operações em endereços de palavras-chave dinâmicas
+## <a name="operations-on-dynamic-keyword-addresses"></a>Operações em endereços de palavra-chave dinâmicos
 
-Com as APIs de palavras-chave dinâmicas do firewall, você pode executar as seguintes operações.
+Com as APIs de palavras-chave dinâmicas do Firewall, você pode executar as operações a seguir.
 
-* Adicionar endereços de palavras-chave dinâmicas
-* Excluir endereços de palavras-chave dinâmicas
-* Enumerar endereços de palavras-chave dinâmicas por ID, ou por tipo
-* Atualizar endereços de palavra-chave dinâmica
-* Assinar e tratar notificações de alteração de endereço de palavra-chave dinâmica
+* Adicionar endereços de palavra-chave dinâmicos
+* Excluir endereços de palavra-chave dinâmicos
+* Enumerar endereços de palavra-chave dinâmicos por ID ou por tipo
+* Atualizar endereços de palavra-chave dinâmicos
+* Assinar e manipular notificações de alteração de endereço de palavra-chave dinâmica
 
 Há exemplos de código para todas essas operações posteriormente neste tópico.
 
-Depois de adicionar um endereço de palavra-chave dinâmica, ele persiste entre as reinicializações. Você deve excluir um endereço de palavra-chave dinâmica quando terminar com o objeto.
+Depois de adicionar um endereço de palavra-chave dinâmico, ele persiste entre reinicializações. Você deve excluir um endereço de palavra-chave dinâmico depois de terminar com o objeto .
 
-Há duas classes de endereços de palavra-chave dinâmicas, conforme descrito nas próximas duas seções.
+Há duas classes de endereços de palavra-chave dinâmicos, conforme descrito nas próximas duas seções.
 
-## <a name="autoresolve-dynamic-keyword-addresses"></a>Resolver automaticamente endereços de palavras-chave dinâmicas
+## <a name="autoresolve-dynamic-keyword-addresses"></a>Endereços de palavra-chave dinâmicos autoResolve
 
-O primeiro tipo é *autoresolver*, onde o campo de *palavra-chave* representa um nome que possa ser resolvido e os endereços IP não são definidos na criação.
+O primeiro tipo é *AutoResolve,* em que o campo de palavra-chave representa um nome resolvível e os endereços IP não são definidos após a criação. 
 
-Esses objetos devem ter seus endereços IP resolvidos automaticamente. Ou seja, não por meio de um administrador no momento da criação do objeto; Nem pelo sistema operacional (SO) propriamente dito. Um componente fora do serviço de firewall deve fazer a resolução de endereço IP para esses objetos e atualizá-los adequadamente. A implementação desse componente está fora do escopo deste conteúdo.
+Esses objetos destinam-se a ter seus endereços IP resolvidos automaticamente. Ou seja, não por meio de um administrador no momento da criação do objeto; nem por meio do sistema operacional em si. Um componente fora do serviço de firewall deve fazer a resolução de endereço IP para esses objetos e atualizá-los adequadamente. A implementação desse componente está fora do escopo desse conteúdo.
 
-Um endereço de palavra-chave dinâmica é indicado como sendo *resolvido automaticamente* definindo o sinalizador **FW_DYNAMIC_KEYWORD_ADDRESS_FLAGS_AUTO_RESOLVE** no objeto ao chamar a função [**FWAddDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwadddynamickeywordaddress0) . O campo de *palavra-chave* deve ser usado para representar o valor &mdash; que está sendo resolvido, ou seja, um FQDN (nome de domínio totalmente qualificado) ou nome de host. Inicialmente, o campo de *endereços* deve ser nulo para esses objetos. Esses objetos não terão seus endereços IP persistidos nos ciclos de inicialização e você deverá reavaliar/repopular seus endereços durante o próximo ciclo de inicialização.
-
-> [!NOTE]
-> Autoresolver os objetos de endereço de palavra-chave dinâmica dispara notificações em [**FWAddDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwadddynamickeywordaddress0) e [**FWDeleteDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwdeletedynamickeywordaddress0), mas não [**FWUpdateDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwupdatedynamickeywordaddress0).
-
-## <a name="non-autoresolve-dynamic-keyword-addresses"></a>Endereços de palavras-chave dinâmicas não autoresolvidos
-
-O segundo tipo é *não AutoResolve*, onde o campo de *palavra-chave* é qualquer cadeia de caracteres e os endereços são definidos no momento da criação.
-
-Esses objetos são usados para armazenar um conjunto de endereços IP, sub-redes ou intervalos. O campo de *palavra-chave* aqui é usado para conveniência de gerenciamento e pode ser definido como qualquer cadeia de caracteres. O campo de *endereços* não deve ser nulo na criação. Os endereços para esses objetos são persistidos entre as reinicializações.
+Um endereço de palavra-chave dinâmico é indicado como *AutoResolve* definindo o sinalizador **FW_DYNAMIC_KEYWORD_ADDRESS_FLAGS_AUTO_RESOLVE** no objeto ao chamar a [**função FWAddDynamicKeywordAddress0.**](/windows/win32/api/netfw/nc-netfw-pfn_fwadddynamickeywordaddress0) O *campo* de palavra-chave deve ser usado para representar o valor que está sendo resolvido, ou seja, um &mdash; FQDN (nome de domínio totalmente qualificado) ou nome de host. O *campo* de endereços deve inicialmente ser NULL para esses objetos. Esses objetos não terão seus endereços IP persistentes entre os ciclos de inicialização e você deverá reavalidar/preencher seus endereços durante o próximo ciclo de inicialização.
 
 > [!NOTE]
-> Objetos de endereço de palavra-chave dinâmica não autoresolvem notificações em [**FWAddDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwadddynamickeywordaddress0), [**FWDeleteDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwdeletedynamickeywordaddress0)e também [**FWUpdateDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwupdatedynamickeywordaddress0).
+> Objetos de endereço de palavra-chave dinâmica AutoResolve disparam notificações [**em FWAddDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwadddynamickeywordaddress0) e [**FWDeleteDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwdeletedynamickeywordaddress0), mas não [**FWUpdateDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwupdatedynamickeywordaddress0).
 
-## <a name="more-about-dynamic-keyword-addresses"></a>Mais sobre endereços de palavras-chave dinâmicas 
+## <a name="non-autoresolve-dynamic-keyword-addresses"></a>Endereços de palavra-chave dinâmicos não AutoResolve
 
-Todos os endereços de palavra-chave dinâmicas devem ter um identificador [**GUID**](/windows/win32/api/guiddef/ns-guiddef-guid) exclusivo para representá-los.
+O segundo tipo é *não AutoResolve,* em que o campo de palavra-chave é qualquer cadeia de caracteres e os endereços são definidos no momento da criação. 
 
-A API [**FwpmDynamicKeywordSubscribe0**](/windows/win32/api/fwpmu/nf-fwpmu-fwpmdynamickeywordsubscribe0) fornece notificações para um cliente quando os endereços de palavras-chave dinâmicas são alterados. Não há nenhuma carga entregue ao cliente que descreve exatamente o que mudou no sistema. Se você precisar saber quais objetos foram alterados, deverá consultar o estado atual dos objetos no sistema usando as APIs [**FWEnumDynamicKeywordAddressById0**](/windows/win32/api/netfw/nc-netfw-pfn_fwenumdynamickeywordaddressbyid0) ou [**FWEnumDynamicKeywordAddressesByType0**](/windows/win32/api/netfw/nc-netfw-pfn_fwenumdynamickeywordaddressesbytype0) . Você pode usar os vários sinalizadores para solicitar notificações apenas para um subconjunto de objetos. Se você não usar nenhum sinalizador, as notificações de alteração serão entregues para todos os objetos.
+Esses objetos são usados para armazenar um conjunto de endereços IP, sub-redes ou intervalos. O *campo de* palavra-chave aqui é usado para conveniência de gerenciamento e pode ser definido como qualquer cadeia de caracteres. O *campo de* endereços deve ser não NULL após a criação. Os endereços para esses objetos são persistentes entre reinicializações.
 
-Uma regra de firewall pode usar endereços de palavras-chave dinâmicas em vez de definir explicitamente endereços IP para sua condição de endereço remoto. Uma regra de firewall pode usar endereços de palavras-chave dinâmicos e intervalos de endereços remotos definidos estaticamente. Um único objeto de endereço de palavra-chave dinâmica pode ser usado novamente em várias regras de firewall. Se uma regra de firewall não tiver nenhum endereço remoto configurado (ou seja, configurado apenas com objetos de autoresolver que ainda não foram resolvidos), a regra não será imposta. Além disso, se uma regra usar vários endereços de palavras-chave dinâmicas, a regra será imposta para todos os endereços que estão atualmente resolvidos, mesmo se houver outros objetos que ainda não foram resolvidos. Quando um endereço de palavra-chave dinâmica é atualizado, todos os objetos de regra associados também terão seus endereços remotos atualizados.
+> [!NOTE]
+> Objetos de endereço de palavra-chave dinâmico não AutoResolve disparam notificações [**em FWAddDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwadddynamickeywordaddress0), [**FWDeleteDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwdeletedynamickeywordaddress0)e [**também FWUpdateDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwupdatedynamickeywordaddress0).
 
-O so (sistema operacional) em si não impõe nenhuma dependência entre uma regra e um endereço de palavra-chave dinâmico. Isso significa que qualquer objeto pode ser criado primeiro &mdash; a regra pode fazer referência a IDs de endereço de palavra-chave dinâmica que ainda não existem (nesse caso, a regra não será imposta). Além disso, você pode excluir um endereço de palavra-chave dinâmico mesmo se ele estiver em uso por uma regra de firewall. Este tópico descreve como um administrador pode configurar regras para usar o endereço de palavra-chave dinâmica.
+## <a name="more-about-dynamic-keyword-addresses"></a>Mais sobre endereços de palavra-chave dinâmicos 
+
+Todos os endereços de palavra-chave dinâmicos devem ter um [**identificador GUID**](/windows/win32/api/guiddef/ns-guiddef-guid) exclusivo para representá-los.
+
+A API [**FwpmDynamicKeywordSubscribe0**](/windows/win32/api/fwpmu/nf-fwpmu-fwpmdynamickeywordsubscribe0) fornece notificações a um cliente quando os endereços de palavra-chave dinâmicos mudam. Não há nenhum payload entregue ao cliente que descreve exatamente o que mudou no sistema. Se você precisar saber quais objetos foram alterados, consulte o estado atual dos objetos no sistema usando as APIs [**FWEnumDynamicKeywordAddressById0**](/windows/win32/api/netfw/nc-netfw-pfn_fwenumdynamickeywordaddressbyid0) ou [**FWEnumDynamicKeywordAddressesByType0.**](/windows/win32/api/netfw/nc-netfw-pfn_fwenumdynamickeywordaddressesbytype0) Você pode usar os vários sinalizadores para solicitar notificações apenas para um subconjunto de objetos. Se você não usar sinalizadores, as notificações de alteração serão entregues para todos os objetos.
+
+Uma regra de firewall pode usar endereços de palavra-chave dinâmicos em vez de definir explicitamente endereços IP para sua condição de endereço remoto. Uma regra de firewall pode usar endereços de palavra-chave dinâmicos e intervalos de endereços remotos definidos estaticamente. Um único objeto de endereço de palavra-chave dinâmica pode ser rea usado em várias regras de firewall. Se uma regra de firewall não tiver endereços remotos configurados (ou seja, configurados apenas com objetos AutoResolve que ainda não foram resolvidos), a regra não será imposta. Além disso, se uma regra usar vários endereços de palavra-chave dinâmicos, a regra será imposta para todos os endereços que estão resolvidos no momento, mesmo se houver outros objetos que ainda não foram resolvidos. Quando um endereço de palavra-chave dinâmico for atualizado, todos os objetos de regra associados também terão seus endereços remotos atualizados.
+
+O sistema operacional em si não impõe nenhuma dependência entre uma regra e um endereço de palavra-chave dinâmico. Isso significa que qualquer objeto pode ser criado primeiro, a regra pode referenciar IDs de endereço de palavra-chave dinâmicas que ainda não existem (nesse caso, a regra não &mdash; será imposta). Além disso, você pode excluir um endereço de palavra-chave dinâmico mesmo que ele seja usado por uma regra de firewall. Este tópico descreve como um administrador pode configurar regras para usar o endereço de palavra-chave dinâmico.
 
 ## <a name="code-examples"></a>Exemplos de código
 
-Para testar cada um desses exemplos de código, primeiro inicie o Visual Studio e crie um novo projeto com base no modelo de projeto de **aplicativo de console** . Você pode simplesmente substituir o conteúdo de `main.cpp` pela listagem de código.
+Para experimentar cada um desses exemplos de código, primeiro Visual Studio e criar um novo projeto com base no modelo de projeto **aplicativo** de console. Você pode simplesmente substituir o conteúdo de `main.cpp` pela listagem de código.
 
-A maioria dos exemplos de código usa as [bibliotecas de implementação do Windows (colocará)](https://github.com/Microsoft/wil). Uma maneira conveniente de instalar o colocará é acessar o Visual Studio, clicar em **projeto** \> **gerenciar pacotes NuGet...** \> **procurar**, digitar ou colar **Microsoft. Windows. ImplementationLibrary** na caixa de pesquisa, selecionar o item nos resultados da pesquisa e, em seguida, clicar em **instalar** para instalar o pacote para esse projeto.
+A maioria dos exemplos de código usa o [WIL (Bibliotecas de Implementação do Windows).](https://github.com/Microsoft/wil) Uma maneira conveniente de instalar o WIL é  acessar o Visual Studio, clicar em Projeto Gerenciar Pacotes NuGet... Procurar , digitar ou colar \>  \>  **Microsoft.Windows.ImplementationLibrary**  na caixa de pesquisa, selecionar o item nos resultados da pesquisa e, em seguida, clicar em Instalar para instalar o pacote para esse projeto.
 
 > [!NOTE]
-> Os tipos de ponteiro para as funções gratuitas NetFw são publicados por meio `NetFw.h` de, mas uma biblioteca de vínculo estático não é publicada. Use o [](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw) / padrão de[GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) LoadLibraryExW para chamar essas funções, conforme mostrado nesses exemplos de código.
+> Os tipos de ponteiro para as funções gratuitas do NetFw são publicados por meio de , mas uma biblioteca `NetFw.h` de link estático não é publicada. Use o padrão GetProcAddress [LoadLibraryExW](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexw)para chamar essas funções, conforme / [](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) mostrado nesses exemplos de código.
 
-### <a name="add-a-dynamic-keyword-address"></a>Adicionar um endereço de palavra-chave dinâmica
+### <a name="add-a-dynamic-keyword-address"></a>Adicionar um endereço de palavra-chave dinâmico
 
-Este exemplo mostra como usar a função [**FWAddDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwadddynamickeywordaddress0) .
+Este exemplo mostra como usar a [**função FWAddDynamicKeywordAddress0.**](/windows/win32/api/netfw/nc-netfw-pfn_fwadddynamickeywordaddress0)
 
 ```cpp
 // main.cpp in a Console App project.
@@ -166,9 +166,9 @@ int main()
 }
 ```
 
-### <a name="delete-a-dynamic-keyword-address"></a>Excluir um endereço de palavra-chave dinâmica
+### <a name="delete-a-dynamic-keyword-address"></a>Excluir um endereço de palavra-chave dinâmico
 
-Este exemplo mostra como usar a função [**FWDeleteDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwdeletedynamickeywordaddress0) .
+Este exemplo mostra como usar a [**função FWDeleteDynamicKeywordAddress0.**](/windows/win32/api/netfw/nc-netfw-pfn_fwdeletedynamickeywordaddress0)
 
 ```cpp
 // main.cpp in a Console App project.
@@ -243,9 +243,9 @@ int main()
 }
 ```
 
-### <a name="enumerate-and-free-dynamic-keyword-addresses-by-id"></a>Enumerar e liberar endereços de palavra-chave dinâmicas por ID
+### <a name="enumerate-and-free-dynamic-keyword-addresses-by-id"></a>Enumerar e liberar endereços de palavra-chave dinâmicos por ID
 
-Este exemplo mostra como usar as funções [**FWEnumDynamicKeywordAddressById0**](/windows/win32/api/netfw/nc-netfw-pfn_fwenumdynamickeywordaddressbyid0) e [**FWFreeDynamicKeywordAddressData0**](/windows/win32/api/netfw/nc-netfw-pfn_fwfreedynamickeywordaddressdata0) .
+Este exemplo mostra como usar as funções [**FWEnumDynamicKeywordAddressById0**](/windows/win32/api/netfw/nc-netfw-pfn_fwenumdynamickeywordaddressbyid0) e [**FWFreeDynamicKeywordAddressData0.**](/windows/win32/api/netfw/nc-netfw-pfn_fwfreedynamickeywordaddressdata0)
 
 ```cpp
 // main.cpp in a Console App project.
@@ -328,9 +328,9 @@ int main()
 }
 ```
 
-### <a name="enumerate-and-free-dynamic-keyword-addresses-by-type"></a>Enumerar e liberar endereços de palavra-chave dinâmica por tipo
+### <a name="enumerate-and-free-dynamic-keyword-addresses-by-type"></a>Enumerar e liberar endereços de palavra-chave dinâmicos por tipo
 
-Este exemplo mostra como usar as funções [**FWEnumDynamicKeywordAddressesByType0**](/windows/win32/api/netfw/nc-netfw-pfn_fwenumdynamickeywordaddressesbytype0) e [**FWFreeDynamicKeywordAddressData0**](/windows/win32/api/netfw/nc-netfw-pfn_fwfreedynamickeywordaddressdata0) .
+Este exemplo mostra como usar as funções [**FWEnumDynamicKeywordAddressesByType0**](/windows/win32/api/netfw/nc-netfw-pfn_fwenumdynamickeywordaddressesbytype0) e [**FWFreeDynamicKeywordAddressData0.**](/windows/win32/api/netfw/nc-netfw-pfn_fwfreedynamickeywordaddressdata0)
 
 ```cpp
 // main.cpp in a Console App project.
@@ -403,9 +403,9 @@ int main()
 }
 ```
 
-### <a name="update-dynamic-keyword-addresses"></a>Atualizar endereços de palavra-chave dinâmica
+### <a name="update-dynamic-keyword-addresses"></a>Atualizar endereços de palavra-chave dinâmicos
 
-Este exemplo mostra como usar a função [**FWUpdateDynamicKeywordAddress0**](/windows/win32/api/netfw/nc-netfw-pfn_fwupdatedynamickeywordaddress0) .
+Este exemplo mostra como usar a [**função FWUpdateDynamicKeywordAddress0.**](/windows/win32/api/netfw/nc-netfw-pfn_fwupdatedynamickeywordaddress0)
 
 ```cpp
 // main.cpp in a Console App project.
@@ -462,9 +462,9 @@ int main()
 }
 ```
 
-### <a name="subscribe-to-and-handle-dynamic-keyword-address-change-notifications"></a>Assinar e tratar notificações de alteração de endereço de palavra-chave dinâmica
+### <a name="subscribe-to-and-handle-dynamic-keyword-address-change-notifications"></a>Assinar e manipular notificações de alteração de endereço de palavra-chave dinâmica
 
-Este exemplo mostra como usar as funções [**FwpmDynamicKeywordSubscribe0**](/windows/win32/api/fwpmu/nf-fwpmu-fwpmdynamickeywordsubscribe0) e [**FwpmDynamicKeywordUnsubscribe0**](/windows/win32/api/fwpmu/nf-fwpmu-fwpmdynamickeywordunsubscribe0) e o retorno de chamada [**FWPM_DYNAMIC_KEYWORD_CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_dynamic_keyword_callback0) .
+Este exemplo mostra como usar as funções [**FwpmDynamicKeywordSubscribe0**](/windows/win32/api/fwpmu/nf-fwpmu-fwpmdynamickeywordsubscribe0) e [**FwpmDynamicKeywordUnsubscribe0**](/windows/win32/api/fwpmu/nf-fwpmu-fwpmdynamickeywordunsubscribe0) e o [**retorno FWPM_DYNAMIC_KEYWORD_CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_dynamic_keyword_callback0) retorno de chamada.
 
 ```cppwinrt
 // main.cpp in a Console App project.
