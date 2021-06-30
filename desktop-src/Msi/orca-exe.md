@@ -4,12 +4,12 @@ ms.assetid: 4dddc262-1271-4e00-a986-53380b957b17
 title: Orca.exe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3f17874e08fcdbfdbab38c480219579897b9896
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4647b137650bfba521dba3976ea7a1ae66451ce
+ms.sourcegitcommit: 967ba3a2a618e6088cb607164a2a924530278645
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010434"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113102155"
 ---
 # <a name="orcaexe"></a>Orca.exe
 
@@ -17,9 +17,9 @@ Orca.exe é um editor de tabela de banco de dados para criar e editar Windows In
 
 Essa ferramenta só está disponível nos [componentes SDK do Windows para desenvolvedores de Windows Installer](platform-sdk-components-for-windows-installer-developers.md). Ele é fornecido como um arquivo de Orca.msi. Depois de instalar os componentes de SDK do Windows para os desenvolvedores de Windows Installer, clique duas vezes em Orca.msi para instalar o arquivo de Orca.exe.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
-**Orca***\[<options>\]\[<source file>\]*
+**Orca***\[\<options>\]\[\<source file>\]*
 
 ## <a name="command-line-options"></a>Opções de linha de comando
 

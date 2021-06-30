@@ -4,12 +4,12 @@ ms.assetid: df5a79f4-abbf-4b83-afc3-cbd14b166067
 title: Configurando e iniciando uma sessão do agente de log
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b17e7e818193aa4fa316d17a0e4392e41b55dfa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6560aece87506b1d064981ee5f49a56bbf0da19e
+ms.sourcegitcommit: 967ba3a2a618e6088cb607164a2a924530278645
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968251"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113102035"
 ---
 # <a name="configuring-and-starting-an-autologger-session"></a>Configurando e iniciando uma sessão do agente de log
 
@@ -83,7 +83,7 @@ A tabela a seguir descreve os valores que você pode definir para cada sessão d
 <tr class="header">
 <th>Valor</th>
 <th>Tipo</th>
-<th>Description</th>
+<th>Descrição</th>
 </tr>
 </thead>
 <tbody>
@@ -116,12 +116,12 @@ Para obter uma descrição de cada tipo de relógio, consulte o membro <strong>C
 <tr class="odd">
 <td><strong>FileName</strong></td>
 <td><strong>REG_SZ</strong></td>
-<td>O caminho totalmente qualificado do arquivo de log. O caminho para esse arquivo deve existir. O arquivo de log é um arquivo de log sequencial. O caminho é limitado a 1024 caracteres.<br/> Se <strong>filename</strong> não for especificado, os eventos serão gravados em%SystemRoot%\System32\LogFiles\WMI\ <sessionname> . etl. <br/></td>
+<td>O caminho totalmente qualificado do arquivo de log. O caminho para esse arquivo deve existir. O arquivo de log é um arquivo de log sequencial. O caminho é limitado a 1024 caracteres.<br/> Se <strong>filename</strong> não for especificado, os eventos serão gravados em%SystemRoot%\System32\LogFiles\WMI \& lt; SessionName &gt; . etl. <br/></td>
 </tr>
 <tr class="even">
 <td><strong>FileMax</strong></td>
 <td><strong>REG_DWORD</strong></td>
-<td>O número máximo de instâncias do arquivo de log que o ETW cria. Se o arquivo de log especificado em <strong>filename</strong> existir, o ETW acrescentará o valor <strong>filecounterer</strong> ao nome do arquivo. Por exemplo, se o nome do arquivo de log padrão for usado, o formulário será%SystemRoot%\System32\LogFiles\WMI\ <sessionname> . etl. NNNN. <br/> Na primeira vez que o computador é iniciado, o nome do arquivo é <sessionname> . etl. 0001, a segunda vez que o nome do arquivo é <sessionname> . etl. 0002 e assim por diante. Se <strong>FileMax</strong> for 3, na quarta reinicialização do computador, o ETW redefinirá o contador como 1 e substituirá <sessionname> . etl. 0001, se existir.<br/> O número máximo de instâncias do arquivo de log com suporte é 16.<br/> Não use esse recurso com o modo de arquivo de log <a href="logging-mode-constants.md">EVENT_TRACE_FILE_MODE_NEWFILE</a> .<br/></td>
+<td>O número máximo de instâncias do arquivo de log que o ETW cria. Se o arquivo de log especificado em <strong>filename</strong> existir, o ETW acrescentará o valor <strong>filecounterer</strong> ao nome do arquivo. Por exemplo, se o nome do arquivo de log padrão for usado, o formulário será%SystemRoot%\System32\LogFiles\WMI \& lt; SessionName &gt; . etl. NNNN. <br/> Na primeira vez que o computador é iniciado, o nome do arquivo é &lt; SessionName &gt; . etl. 0001, a segunda vez que o nome do arquivo é &lt; SessionName &gt; . etl. 0002 e assim por diante. Se <strong>FileMax</strong> for 3, na quarta reinicialização do computador, o ETW redefinirá o contador como 1 e substituirá &lt; SessionName &gt; . etl. 0001, se existir.<br/> O número máximo de instâncias do arquivo de log com suporte é 16.<br/> Não use esse recurso com o modo de arquivo de log <a href="logging-mode-constants.md">EVENT_TRACE_FILE_MODE_NEWFILE</a> .<br/></td>
 </tr>
 <tr class="odd">
 <td><strong>FlushTimer</strong></td>
@@ -139,7 +139,7 @@ Para obter uma descrição de cada tipo de relógio, consulte o membro <strong>C
 <td>Especifique um ou mais modos de log. Para obter os valores possíveis, consulte <a href="logging-mode-constants.md">constantes do modo de log</a>. O padrão é <strong>EVENT_TRACE_FILE_MODE_SEQUENTIAL</strong>. Em vez de gravar em um arquivo de log, você pode especificar <strong>EVENT_TRACE_BUFFERING_MODE</strong> ou <strong>EVENT_TRACE_REAL_TIME_MODE</strong>.<br/> A especificação de <strong>EVENT_TRACE_BUFFERING_MODE</strong> evita o custo de liberação do conteúdo da sessão para o disco quando o sistema de arquivos fica disponível. <br/> Observe que o uso de <strong>EVENT_TRACE_BUFFERING_MODE</strong> fará com que o sistema ignore o valor <strong>MaximumBuffers</strong> , pois o tamanho do buffer é, em vez disso, o produto de <strong>MinimumBuffers</strong> e <strong>BufferSize</strong>.<br/> As sessões do autologger não dão suporte ao modo de log de <strong>EVENT_TRACE_FILE_MODE_NEWFILE</strong> .<br/> Se <strong>EVENT_TRACE_FILE_MODE_APPEND</strong> for especificado, <strong>BufferSize</strong> deverá ser fornecido explicitamente e deverá ser o mesmo no agente de log e no arquivo que está sendo anexado.<br/></td>
 </tr>
 <tr class="even">
-<td><strong>Cedido</strong></td>
+<td><strong>MaxFileSize</strong></td>
 <td><strong>REG_DWORD</strong></td>
 <td>O tamanho máximo do arquivo de log, em megabytes. A sessão é fechada quando o tamanho máximo é atingido, a menos que você esteja no modo de arquivo de log circular. Para especificar sem limite, defina valor como 0. O padrão é 100 MB, se não estiver definido. O comportamento que ocorre quando o tamanho máximo do arquivo é atingido depende do valor de <strong>LOGFILEMODE</strong>.<br/></td>
 </tr>
@@ -184,7 +184,7 @@ A tabela a seguir descreve os valores que você pode definir para cada provedor 
 <tr class="header">
 <th>Valor</th>
 <th>Tipo</th>
-<th>Description</th>
+<th>Descrição</th>
 </tr>
 </thead>
 <tbody>
