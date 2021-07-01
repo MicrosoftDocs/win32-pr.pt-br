@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa8c015ba5e08302f7567fe8f474bedca74d3064
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d2a79a5a4ab6b0422705fe737ba3da4a6fd4f923
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008973"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119691"
 ---
 # <a name="mm_mim_data-message"></a>Mensagem de dados do \_ mim mm \_
 
@@ -52,7 +52,7 @@ Mensagem MIDI recebida. A mensagem é empacotada em um valor de doubleword da se
 
 
 
-| Requisito | Valor |
+| Requisito | Valor | Descrição |
 |-----------|-----------------|-----------------------------------------------------|
 | Palavra alta | Byte de ordem superior | Não usado.                                           |
 |           | Byte de ordem inferior  | Contém um segundo byte de dados MIDI (quando necessário).  |

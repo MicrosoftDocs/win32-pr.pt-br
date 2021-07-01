@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b67835a67c957a250fe1ae6d391f5ebd56d5301b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3079c537ddca056ca690537c27edd95826de1189
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009341"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120021"
 ---
 # <a name="mm_mim_moredata-message"></a>MM \_ mensagem do mim \_ MOREDATA
 
@@ -52,7 +52,7 @@ Especifica a mensagem MIDI que foi recebida. A mensagem é empacotada em um valo
 
 
 
-| Requisito | Valor |
+| Requisito | Valor | Descrição |
 |-----------|-----------------|-----------------------------------------------------|
 | Palavra alta | Byte de ordem superior | Não usado.                                           |
 |           | Byte de ordem inferior  | Contém um segundo byte de dados MIDI (quando necessário).  |

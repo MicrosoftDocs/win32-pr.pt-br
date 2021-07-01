@@ -4,12 +4,12 @@ ms.assetid: eb20f5e9-25f5-4f27-8ea5-83f6819425ed
 title: Tipos de sistemas de coordenadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05908196662918eb93f4fa6e2b356a6989ed5a58
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: e259f43d4fc0d6a74021f3a6125f85652f51ac95
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104571277"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120621"
 ---
 # <a name="types-of-coordinate-systems"></a>Tipos de sistemas de coordenadas
 
@@ -27,7 +27,7 @@ As coordenadas dos pontos de extremidade da sua linha nos três espaços de coor
 
 
 
-|        |                         |
+| Space       |  Coordenadas do ponto de extremidade                       |
 |--------|-------------------------|
 | World (Mundo)  | (0, 0) a (160, 80)     |
 | ?   | (100, 50) a (260, 130) |
@@ -74,7 +74,7 @@ Se presumirmos que o dispositivo de vídeo tenha 96 pontos por polegada na dire�
 
 
 
-|        |                     |
+| Space       | Coordenadas do ponto de extremidade                    |
 |--------|---------------------|
 | World (Mundo)  | (0, 0) a (2, 1)    |
 | ?   | (0, 0) a (2, 1)    |
@@ -103,7 +103,7 @@ Se presumirmos que o dispositivo de vídeo tenha 96 pontos por polegada na dire�
 
 
 
-|        |                         |
+| Space       | Coordenadas do ponto de extremidade                        |
 |--------|-------------------------|
 | World (Mundo)  | (0, 0) a (2, 1)        |
 | ?   | (2, 0.5) a (4, 1.5)    |

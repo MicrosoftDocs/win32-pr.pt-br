@@ -1,9 +1,9 @@
 ---
 title: Instrução if
-description: Executar condicionalmente uma série de instruções, com base na avaliação da expressão condicional.
+description: Execute condicionalmente uma série de instruções, com base na avaliação da expressão condicional.
 ms.assetid: ed4e347b-b5ee-40bc-a3f8-36e83ccf45b8
 keywords:
-- Instrução If HLSL
+- Instrução if HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8e8a3c20e73b9783d39b4f4cbdb7c0be5b75fcda
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: df4a1f049526422f39c3529395481548943c7e84
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "104007046"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118951"
 ---
 # <a name="if-statement"></a>Instrução if
 
-Executar condicionalmente uma série de instruções, com base na avaliação da expressão condicional.
+Execute condicionalmente uma série de instruções, com base na avaliação da expressão condicional.
 
-
-
-|                                                               |
-|---------------------------------------------------------------|
-| \[*Atributo* \] If ( *condicional* ) { *bloco de instruções*;} |
+\[*Atributo* \] if ( *Conditional* ) { *Statement Block*; }
 
 
 
@@ -38,7 +34,7 @@ Executar condicionalmente uma série de instruções, com base na avaliação da
 
 <dl> <dt>
 
-<span id="Attribute"></span><span id="attribute"></span><span id="ATTRIBUTE"></span>*Attribute*
+<span id="Attribute"></span><span id="attribute"></span><span id="ATTRIBUTE"></span>*Atributo*
 </dt> <dd>
 
 Um parâmetro opcional que controla como a instrução é compilada.
@@ -59,16 +55,16 @@ Um parâmetro opcional que controla como a instrução é compilada.
 <tbody>
 <tr class="odd">
 <td>branch</td>
-<td>Avalie apenas um lado da instrução If dependendo da condição fornecida.
+<td>Avalie apenas um lado da instrução if dependendo da condição determinada.
 <blockquote>
 [!Note]<br />
-Quando você usa o modelo de <a href="dx-graphics-hlsl-sm2.md">sombreador 2. x</a> ou o <a href="dx-graphics-hlsl-sm3.md">modelo de sombreador 3,0</a>, cada vez que usa a ramificação dinâmica, você consome recursos. Portanto, se você usar a ramificação dinâmica de forma excessiva ao direcionar esses perfis, poderá receber erros de compilação.
+Quando você usa o Modelo de Sombreador <a href="dx-graphics-hlsl-sm2.md">2.x</a> ou o Modelo de Sombreador <a href="dx-graphics-hlsl-sm3.md">3.0</a>, sempre que usa a ramificação dinâmica, você consome recursos. Portanto, se você usar a ramificação dinâmica excessivamente ao direcionar esses perfis, poderá receber erros de compilação.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
 <td>mesclar</td>
-<td>Avalie ambos os lados da instrução If e escolha entre os dois valores resultantes.</td>
+<td>Avalie os dois lados da instrução if e escolha entre os dois valores resultantes.</td>
 </tr>
 </tbody>
 </table>
@@ -79,10 +75,10 @@ Quando você usa o modelo de <a href="dx-graphics-hlsl-sm2.md">sombreador 2. x</
 
 </dd> <dt>
 
-<span id="Conditional"></span><span id="conditional"></span><span id="CONDITIONAL"></span>*Condiciona*
+<span id="Conditional"></span><span id="conditional"></span><span id="CONDITIONAL"></span>*Condicional*
 </dt> <dd>
 
-Uma [expressão](dx-graphics-hlsl-expressions.md)condicional. A expressão é avaliada e, se for true, o bloco de instrução será executado.
+Uma expressão [condicional](dx-graphics-hlsl-expressions.md). A expressão é avaliada e, se true, o bloco de instrução é executado.
 
 </dd> <dt>
 
@@ -95,7 +91,7 @@ Uma ou mais [instruções HLSL](dx-graphics-hlsl-statement-blocks.md).
 
 ## <a name="remarks"></a>Comentários
 
-Quando o compilador usa o método Branch para compilar uma instrução If, ele gerará um código que avaliará apenas um lado da instrução If dependendo da condição fornecida. Por exemplo, na instrução If:
+Quando o compilador usa o método branch para compilar uma instrução if, ele gerará um código que avaliará apenas um lado da instrução if, dependendo da condição determinada. Por exemplo, na instrução if:
 
 
 ```
@@ -107,9 +103,9 @@ Quando o compilador usa o método Branch para compilar uma instrução If, ele g
 
 
 
-A instrução **If** tem um bloco de else implícito, que é equivalente a x = x. Como dissemos ao compilador para usar o método Branch com o atributo Branch anterior, o código compilado avaliará x e executará apenas o lado que deve ser executado; se x for zero, ele executará o lado **mais** e, se for diferente de zero, ele executará o lado de **seguida** .
+A **instrução if** tem um bloco else implícito, que é equivalente a x = x. Como dissemos ao compilador para usar o método branch com o atributo de branch anterior, o código compilado avaliará x e executará apenas o lado que deve ser executado; se x for zero, ele executará o **outro** lado e, se for diferente de zero, executará o **lado em** seguida.
 
-Por outro lado, se o atributo de **achatamento** for usado, o código compilado avaliará ambos os lados da instrução **If** e escolherá entre os dois valores resultantes usando o valor original de x. Aqui está um exemplo de uso do atributo achatar:
+Por outro lado, se o atributo de nivelamento for usado, o código compilado avaliará os dois lados da instrução **if** e escolherá entre os dois valores resultantes usando o valor original de x.  Aqui está um exemplo de uso do atributo flatten:
 
 
 ```
@@ -121,9 +117,9 @@ Por outro lado, se o atributo de **achatamento** for usado, o código compilado 
 
 
 
-Há certos casos em que usar os atributos Branch ou achatamento pode gerar um erro de compilação. O atributo Branch poderá falhar se qualquer lado da instrução If contiver uma função de gradiente, como [**tex2D**](dx-graphics-hlsl-tex2d.md). O atributo achata pode falhar se qualquer lado da instrução If contiver uma instrução Stream Append ou qualquer outra instrução que tenha efeitos colaterais.
+Há certos casos em que o uso do branch ou atributos de nivelar pode gerar um erro de compilação. O atributo branch poderá falhar se qualquer lado da instrução if contiver uma função de gradiente, como [**o tex2D.**](dx-graphics-hlsl-tex2d.md) O atributo de nivelar poderá falhar se qualquer lado da instrução if contiver uma instrução de anexação de fluxo ou qualquer outra instrução que tenha efeitos colaterais.
 
-Uma instrução **If** também pode usar um bloco opcional ELSE. Se a expressão **If** for true, o código no bloco de instrução associado à instrução If será processado. Caso contrário, o bloco de instrução associado ao bloco opcional else será processado.
+Uma **instrução if** também pode usar um bloco else opcional. Se a **expressão if** for true, o código no bloco de instrução associado à instrução if será processado. Caso contrário, o bloco de instrução associado ao bloco opcional else será processado.
 
 ## <a name="see-also"></a>Confira também
 

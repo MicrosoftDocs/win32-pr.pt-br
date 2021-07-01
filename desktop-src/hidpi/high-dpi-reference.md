@@ -4,12 +4,12 @@ description: Referência de DPI alto
 ms.assetid: 07A2D45E-721C-4DA8-82A5-38B2FB94BC6D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c10bcf5c5297b0adcfceef6853f2292c3fc8b98
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a9c6a9302541683dbf97c06194285f9e8cfcf3c0
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087794"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118411"
 ---
 # <a name="high-dpi-reference"></a>Referência de DPI alto
 
@@ -17,9 +17,8 @@ ms.locfileid: "108087794"
 
 
 
-|                                                                                          |                                                                                                                                                                   |
+| Tópico                                                                                         |Descrição                                                                                                                                                                   |
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Tópico**                                                                                | **Descrição**                                                                                                                                                   |
 | [**AdjustWindowRectExForDpi**](/windows/desktop/api/Winuser/nf-winuser-adjustwindowrectexfordpi)                             | Uma variante de [AdjustWindowRectEx](/windows/desktop/api/winuser/nf-winuser-adjustwindowrectex) que retorna valores dimensionados para um dpi específico.       |
 | [**AreDpiAwarenessContextsEqual**](/windows/desktop/api/Winuser/nf-winuser-aredpiawarenesscontextsequal)                     | Determina se dois valores de [**\_ \_ contexto de reconhecimento de DPI**](dpi-awareness-context.md) são equivalentes.                                                            |
 | [**EnableNonClientDpiScaling**](/windows/desktop/api/Winuser/nf-winuser-enablenonclientdpiscaling)                           | Habilita o dimensionamento automático da área não cliente da janela de nível superior especificada.                                                                               |
@@ -57,9 +56,8 @@ ms.locfileid: "108087794"
 
 
 
-|                                                                            |                                                                                        |
+| Tópico                                                                           |Descrição                                                                                        |
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| **Tópico**                                                                  | **Descrição**                                                                        |
 | [**reconhecimento de DPI \_**](/windows/desktop/api/windef/ne-windef-dpi_awareness)                                    | Representa os modos de virtualização de coordenadas de DPI.                                        |
 | [**\_contexto de reconhecimento de DPI \_**](dpi-awareness-context.md)                   | Um token que representa um modo de virtualização de DPI e comportamentos associados.           |
 | [**\_comportamentos de \_ alteração de dpi de controle de diálogo \_ \_**](/windows/desktop/api/winuser/ne-winuser-dialog_control_dpi_change_behaviors) | Descreve as substituições de comportamento de dimensionamento de DPI por monitor para janelas filhas em caixas de diálogo. |
@@ -76,9 +74,8 @@ ms.locfileid: "108087794"
 
 
 
-|                                                                    |                                                                                                                                         |
+| Tópico                                                                   | Descrição                                                                                                                                        |
 |--------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| **Tópico**                                                          | **Descrição**                                                                                                                         |
 | [**DPICHANGED do WM \_**](wm-dpichanged.md)                            | Notifica uma janela de nível superior que seu DPI mudou.                                                                                   |
 | [**BEFOREPARENT do WM \_ DPICHANGED \_**](wm-dpichanged-beforeparent.md) | Notifica uma janela filho que a DPI associada à sua janela recipiente foi alterada. Entregue antes que a janela pai seja notificada. |
 | [**AFTERPARENT do WM \_ DPICHANGED \_**](wm-dpichanged-afterparent.md)   | Notifica uma janela filho que a DPI associada à sua janela recipiente foi alterada. Entregue depois que a janela pai é notificada.  |

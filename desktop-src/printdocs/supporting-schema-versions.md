@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba como dar suporte a diferentes versões da estrutura de esquema de impressão. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
 ms.assetid: fc89dd2d-9a5d-400b-aee9-a1e4cf7d83da
 title: Suporte a versões de esquema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d674449d581aca2ddfc80da2312b31eb6c930a6f
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 7eac627d3dd711bc952d881efd393720af128e7f
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105749728"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120591"
 ---
 # <a name="supporting-schema-versions"></a>Suporte a versões de esquema
 

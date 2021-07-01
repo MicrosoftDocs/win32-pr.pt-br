@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento PageScaling. Este elemento descreve as características de dimensionamento da saída.
 ms.assetid: cf35bb37-bf67-4e86-bfef-9838606982a5
 title: PageScaling
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e32beceead1c0dc867a2bb7b24d476ef05bf8820
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 795332f38da331a9f16b614154bf0a9270e613de
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997493"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119031"
 ---
 # <a name="pagescaling"></a>PageScaling
 
@@ -19,7 +19,7 @@ Descreve as características de dimensionamento da saída. Determinadas opções
 
 
 
-|                          |                                                                                                                                                                                                                                                       |
+| Característica de dimensionamento                         | Descrição                                                                                                                                                                                                                                                      |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tamanho da mídia do aplicativo   | As dimensões da mídia definida pelo layout do aplicativo. O tamanho da mídia do aplicativo pode ou não corresponder a um PageMediaSize com suporte do consumidor.<br/>                                                                          |
 | Tamanho do conteúdo do aplicativo | As dimensões da mídia definida pelo layout do aplicativo. O tamanho da mídia do aplicativo pode ou não corresponder a um PageMediaSize com suporte do consumidor.<br/>                                                                          |
@@ -116,7 +116,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Nome                               | Tipo de dados         | Unidade                  | Valores com suporte                                                                                                                                                                      | Resumo                                                                      |
 |------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | \_OptionName\_<br/>          | string<br/> | characters<br/> | Nome totalmente qualificado válido, conforme definido pelos [namespaces em XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | O nome da opção.<br/>                                           |
-| \_IdentityOptionValue\_<br/> | string<br/> | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/> |
+| \_IdentityOptionValue\_<br/> | string<br/> | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/> |
 
 
 

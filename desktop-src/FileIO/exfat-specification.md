@@ -1,44 +1,44 @@
 ---
 description: Especificação do sistema de arquivos exFat.
-title: especificação do sistema de arquivos exFAT
+title: Especificação do sistema de arquivos exFAT
 ms.topic: article
 ms.date: 08/27/2019
-ms.openlocfilehash: c23a1f0c7aa9f0ad4752ce83cb734e753094c2cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94b5bcdc69201573bc92290c148a7d3ce8304868
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105812422"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119011"
 ---
-# <a name="exfat-file-system-specification"></a>especificação do sistema de arquivos exFAT
+# <a name="exfat-file-system-specification"></a>Especificação do sistema de arquivos exFAT
 
 ## <a name="1-introduction"></a>1 Introdução
 
-O sistema de arquivos exFAT é o sucessor do FAT32 na família FAT de sistemas de arquivos. Essa especificação descreve o sistema de arquivos exFAT e fornece todas as informações necessárias para implementar o sistema de arquivos exFAT.
+O sistema de arquivos exFAT é o sucesso do FAT32 na família FAT de sistemas de arquivos. Essa especificação descreve o sistema de arquivos exFAT e fornece todas as informações necessárias para implementar o sistema de arquivos exFAT.
 
-### <a name="11-design-goals"></a>Metas de design de 1,1
+### <a name="11-design-goals"></a>1.1 Metas de design
 
-O sistema de arquivos exFAT tem três objetivos de design central (consulte a lista abaixo).
+O sistema de arquivos exFAT tem três metas de design centrais (veja a lista abaixo).
 
 1. *Mantenha a simplicidade dos sistemas de arquivos baseados em FAT.*
 
-   > Dois dos pontos fortes dos sistemas de arquivos baseados em FAT são sua simplicidade relativa e facilidade de implementação. No espírito de seus predecessores, os implementadores devem encontrar exFAT relativamente simples e fácil de implementar.
+   > Dois dos pontos fortes dos sistemas de arquivos baseados em FAT são sua simplicidade relativa e facilidade de implementação. No final de seus antecessores, os implementadores devem achar o exFAT relativamente simples e fácil de implementar.
 
-2. *Habilitar arquivos muito grandes e dispositivos de armazenamento.*
+2. *Habilitar arquivos e dispositivos de armazenamento muito grandes.*
 
-   > O sistema de arquivos exFAT usa 64 bits para descrever o tamanho do arquivo, permitindo, assim, aplicativos que dependem de arquivos muito grandes. O sistema de arquivos exFAT também permite clusters tão grandes quanto 32 MB, habilitando efetivamente dispositivos de armazenamento muito grandes.
+   > O sistema de arquivos exFAT usa 64 bits para descrever o tamanho do arquivo, permitindo assim aplicativos que dependem de arquivos muito grandes. O sistema de arquivos exFAT também permite clusters tão grandes quanto 32 MB, habilitando efetivamente dispositivos de armazenamento muito grandes.
 
-3. *Incorpore a extensibilidade para futuras inovações.*
+3. *Incorporar extensibilidade para inovação futura.*
 
-   > O sistema de arquivos exFAT incorpora a extensibilidade em seu design, permitindo que o sistema de arquivos acompanhe as inovações no armazenamento e nas alterações de uso.
+   > O sistema de arquivos exFAT incorpora extensibilidade em seu design, permitindo que o sistema de arquivos acompanhe as inovações no armazenamento e as alterações no uso.
 
-### <a name="12-specific-terminology"></a>Terminologia específica de 1,2
+### <a name="12-specific-terminology"></a>1.2 Terminologia específica
 
-No contexto dessa especificação, determinados termos (consulte a [tabela 1](#table-1-definition-of-terms-which-carry-very-specific-meaning)) trazem significado específico para o design e a implementação do sistema de arquivos exFAT.
+No contexto dessa especificação, determinados termos (consulte Tabela [1](#table-1-definition-of-terms-which-carry-very-specific-meaning)) têm significado específico para o design e a implementação do sistema de arquivos exFAT.
 
 <div id="table-1-definition-of-terms-which-carry-very-specific-meaning" />
 
-**Tabela 1 definição de termos que trazem significado muito específico**
+**Tabela 1 Definição de termos que têm um significado muito específico**
 
 <table>
 <thead>
@@ -49,99 +49,99 @@ No contexto dessa especificação, determinados termos (consulte a [tabela 1](#t
 </thead>
 <tbody>
 <tr class="odd">
-<td>Podemos</td>
-<td>Essa especificação usa o termo "deve" para descrever um comportamento que é obrigatório.</td>
+<td>Deve</td>
+<td>Essa especificação usa o termo "deve" para descrever um comportamento obrigatório.</td>
 </tr>
 <tr class="even">
-<td>Caso</td>
-<td>Essa especificação usa o termo "deve" descrever um comportamento que é altamente recomendável, mas que não é obrigatório.</td>
+<td>Deve</td>
+<td>Essa especificação usa o termo "deve" para descrever um comportamento que ele recomenda fortemente, mas não torna obrigatório.</td>
 </tr>
 <tr class="odd">
 <td>Mai</td>
-<td>Essa especificação usa o termo "maio" para descrever um comportamento que é opcional.</td>
+<td>Essa especificação usa o termo "pode" para descrever um comportamento opcional.</td>
 </tr>
 <tr class="even">
 <td>Obrigatório</td>
-<td>Este termo descreve um campo ou estrutura que uma implementação deve modificar e deve interpretar conforme descrito nesta especificação.</td>
+<td>Esse termo descreve um campo ou estrutura que uma implementação deve modificar e interpretar como essa especificação descreve.</td>
 </tr>
 <tr class="odd">
 <td>Opcional</td>
-<td>Este termo descreve um campo ou uma estrutura que uma implementação pode ou não dar suporte. Se uma implementação oferecer suporte a um determinado campo ou estrutura opcional, ela deverá ser modificada e deverá interpretar o campo ou a estrutura conforme descrito nesta especificação.</td>
+<td>Este termo descreve um campo ou estrutura que uma implementação pode ou não dar suporte. Se uma implementação dá suporte a um determinado campo ou estrutura opcional, ela deve modificar e interpretar o campo ou a estrutura, conforme descrito por essa especificação.</td>
 </tr>
 <tr class="even">
 <td>Indefinido</td>
-<td>Este termo descreve o conteúdo do campo ou da estrutura, que uma implementação pode modificar conforme necessário (ou seja, desmarcar para zero ao definir campos ou estruturas ao redor) e não deve interpretar para manter qualquer significado específico.</td>
+<td>Este termo descreve o conteúdo de campo ou estrutura que uma implementação pode modificar conforme necessário (ou seja, limpar para zero ao definir estruturas ou campos ao redor) e não deve interpretar para conter nenhum significado específico.</td>
 </tr>
 <tr class="odd">
 <td>Reservado</td>
-<td><p>Este termo descreve o conteúdo de campo ou estrutura que implementações:</p>
+<td><p>Este termo descreve o conteúdo de campo ou estrutura que implementa:</p>
 <ol type="1">
-<li><p>Deve ser inicializado para zero e não deve ser usado para qualquer finalidade</p></li>
-<li><p>Não deve interpretar, exceto ao computar somas de verificação</p></li>
-<li><p>Deve preservar entre operações que modificam campos ou estruturas em torno</p></li>
+<li><p>Deve inicializar como zero e não deve usar para nenhuma finalidade</p></li>
+<li><p>Não deve interpretar, exceto ao computar as verificações</p></li>
+<li><p>Deve preservar entre operações que modificam estruturas ou campos ao redor</p></li>
 </ol></td>
 </tr>
 </tbody>
 </table>
 
-### <a name="13-full-text-of-common-acronyms"></a>1,3 texto completo de acrônimos comuns
+### <a name="13-full-text-of-common-acronyms"></a>1.3 Texto completo de acrônimos comuns
 
-Essa especificação usa acrônimos em uso comum no setor de computadores pessoais (consulte a [tabela 2](#table-2-full-text-of-common-acronyms)).
+Essa especificação usa acrônimos em uso comum no setor de computadores pessoais (consulte [Tabela 2](#table-2-full-text-of-common-acronyms)).
 
 <div id="table-2-full-text-of-common-acronyms" />
 
-**Tabela 2 texto completo de acrônimos comuns**
+**Tabela 2 Texto completo de acrônimos comuns**
 
 | **Acrônimo** | **Texto Completo**                                      |
 |-------------|----------------------------------------------------|
-| ASCII       | ASCII |
-| BIOS        | Sistema básico de saída de entrada                          |
-| CPU         | Unidade de processamento central                            |
-| exFAT       | Tabela de alocação de arquivo extensível                   |
+| ASCII       | American Standard Code for Information Interchange |
+| BIOS        | Sistema de saída de entrada básico                          |
+| CPU         | Unidade de Processamento Central                            |
+| exFAT       | Tabela de alocação de arquivos extensível                   |
 | FAT         | Tabela de alocação de arquivo                              |
-| FAT12       | Tabela de alocação de arquivos, índices de cluster de 12 bits      |
-| FAT16       | Tabela de alocação de arquivos, índices de cluster de 16 bits      |
-| FAT32       | Tabela de alocação de arquivos, índices de cluster de 32 bits      |
+| FAT12       | Tabela de Alocação de Arquivos, índices de cluster de 12 bits      |
+| FAT16       | Tabela de Alocação de Arquivos, índices de cluster de 16 bits      |
+| FAT32       | Tabela de Alocação de Arquivos, índices de cluster de 32 bits      |
 | GPT         | Tabela de partição GUID                               |
-| GUID        | Identificador global exclusivo (consulte a [seção 10,1](#101-globally-unique-identifiers-guids))      |
-| INT         | Atividades                                          |
+| GUID        | Identificador global exclusivo (consulte [a Seção 10.1](#101-globally-unique-identifiers-guids))      |
+| INT         | Interromper                                          |
 | ativa a         | MBR (Registro Mestre de Inicialização)                                 |
-| texFAT      | ExFAT de transações seguras                             |
-| UTC         | Tempo universal coordenado                         |
+| Texfat      | ExFAT seguro para transações                             |
+| UTC         | Tempo Universal Coordenado UTC                         |
 
-### <a name="14-default-field-and-structure-qualifiers"></a>1,4 qualificadores de campo e estrutura padrão
+### <a name="14-default-field-and-structure-qualifiers"></a>1.4 Qualificadores padrão de campo e estrutura
 
-Os campos e as estruturas nesta especificação têm os seguintes qualificadores (consulte a lista abaixo), a menos que a especificação Note o contrário.
+Os campos e estruturas nesta especificação têm os qualificadores a seguir (veja a lista abaixo), a menos que a especificação adoeça o contrário.
 
-1. Não são assinados
+1. Não assinados
 
-2. Use a notação decimal para descrever valores, onde não observados de outra forma; Essa especificação usa a letra de postagem "h" para denotar números hexadecimais e inclui GUIDs entre chaves
+2. Use a notação decimal para descrever valores, em que não foi notado de outra forma; essa especificação usa a letra pós-correção "h" para denotar números hexadecimais e inclui GUIDs entre chaves
 
 3. Estão no formato little-endian
 
-4. Não requer um caractere de terminação nulo para cadeias de caracteres
+4. Não exigir um caractere de terminação nula para cadeias de caracteres
 
 ### <a name="15-windows-ce-and-texfat"></a>1,5 Windows CE e TexFAT
 
-TexFAT é uma extensão do exFAT que adiciona semânticas operacionais seguras para transações sobre o sistema de arquivos base. TexFAT é usado pelo Windows CE.
-O TexFAT requer o uso dos dois bitmaps de alocação e FATs para uso em transações. Ele também define várias estruturas adicionais, incluindo descritores de preenchimento e descritores de segurança.
+O TexFAT é uma extensão para exFAT que adiciona semântica operacional segura de transação sobre o sistema de arquivos base. O TexFAT é usado por Windows CE.
+O TexFAT requer o uso dos dois FATs e bitmaps de alocação para uso em transações. Ele também define várias estruturas adicionais, incluindo descritores de preenchimento e descritores de segurança.
 
-## <a name="2-volume-structure"></a>2 estrutura de volume
+## <a name="2-volume-structure"></a>2 Estrutura de Volume
 
-Um volume é o conjunto de todas as estruturas do sistema de arquivos e o espaço de dados necessários para armazenar e recuperar dados do usuário. Todos os volumes de exFAT contêm quatro regiões (consulte a [tabela 3](#table-3-volume-structure)).
+Um volume é o conjunto de todas as estruturas do sistema de arquivos e o espaço de dados necessário para armazenar e recuperar dados do usuário. Todos os volumes exFAT contêm quatro regiões (consulte [a Tabela 3](#table-3-volume-structure)).
 
 <div id="table-3-volume-structure" />
 
-**Tabela 3 estrutura do volume**
+**Estrutura de volume da Tabela 3**
 
 <table>
 <thead>
 <tr class="header">
 <th><strong>Nome da sub-região</strong></th>
 <th><p><strong>Deslocamento</strong></p>
-<p><strong>sector</strong></p></th>
+<p><strong>(setor)</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
-<p><strong>procurar</strong></p></th>
+<p><strong>(setores)</strong></p></th>
 <th><strong>Comentários</strong></th>
 </tr>
 </thead>
@@ -156,31 +156,31 @@ Um volume é o conjunto de todas as estruturas do sistema de arquivos e o espaç
 <td>Setor de inicialização principal</td>
 <td>0</td>
 <td>1</td>
-<td>Esta sub-região é obrigatória e a <a href="#31-main-and-backup-boot-sector-sub-regions">seção 3,1</a> define seu conteúdo.</td>
+<td>Essa sub-região é obrigatória e <a href="#31-main-and-backup-boot-sector-sub-regions">a Seção 3.1</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
-<td>Principais setores de inicialização estendidos</td>
+<td>Principais setores de inicialização estendida</td>
 <td>1</td>
 <td>8</td>
-<td>Esta sub-região é obrigatória e a <a href="#32-main-and-backup-extended-boot-sectors-sub-regions">seção 3,2</a>) define seu conteúdo.</td>
+<td>Essa sub-região é obrigatória e <a href="#32-main-and-backup-extended-boot-sectors-sub-regions">a Seção 3.2</a>) define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>Parâmetros principais do OEM</td>
 <td>9</td>
 <td>1</td>
-<td>Esta sub-região é obrigatória e a <a href="#33-main-and-backup-oem-parameters-sub-regions">seção 3,3</a> define seu conteúdo.</td>
+<td>Essa sub-região é obrigatória e <a href="#33-main-and-backup-oem-parameters-sub-regions">a Seção 3.3</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
-<td>Principal reservado</td>
+<td>Principal Reservado</td>
 <td>10</td>
 <td>1</td>
-<td>Esta sub-região é obrigatória e seu conteúdo é reservado.</td>
+<td>Essa sub-região é obrigatória e seu conteúdo é reservado.</td>
 </tr>
 <tr class="even">
-<td>Soma de verificação da inicialização principal</td>
+<td>Verificação de inicialização principal</td>
 <td>11</td>
 <td>1</td>
-<td>Esta sub-região é obrigatória e a <a href="#34-main-and-backup-boot-checksum-sub-regions">seção 3,4</a> define seu conteúdo.</td>
+<td>Essa sub-região é obrigatória e <a href="#34-main-and-backup-boot-checksum-sub-regions">a Seção 3.4</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td><strong>Região de inicialização de backup</strong></td>
@@ -192,58 +192,58 @@ Um volume é o conjunto de todas as estruturas do sistema de arquivos e o espaç
 <td>Setor de inicialização de backup</td>
 <td>12</td>
 <td>1</td>
-<td>Esta sub-região é obrigatória e a <a href="#31-main-and-backup-boot-sector-sub-regions">seção 3,1</a> define seu conteúdo.</td>
+<td>Essa sub-região é obrigatória e <a href="#31-main-and-backup-boot-sector-sub-regions">a Seção 3.1</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
-<td>Fazer backup de setores de inicialização estendidos</td>
+<td>Setores de inicialização estendida de backup</td>
 <td>13</td>
 <td>8</td>
-<td>Esta sub-região é obrigatória e a <a href="#32-main-and-backup-extended-boot-sectors-sub-regions">seção 3,2</a> define seu conteúdo.</td>
+<td>Essa sub-região é obrigatória e <a href="#32-main-and-backup-extended-boot-sectors-sub-regions">a Seção 3.2</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
-<td>Parâmetros OEM de backup</td>
+<td>Fazer backup de parâmetros OEM</td>
 <td>21</td>
 <td>1</td>
-<td>Esta sub-região é obrigatória e a <a href="#33-main-and-backup-oem-parameters-sub-regions">seção 3,3</a> define seu conteúdo.</td>
+<td>Essa sub-região é obrigatória e <a href="#33-main-and-backup-oem-parameters-sub-regions">a Seção 3.3</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
-<td>Backup reservado</td>
+<td>Backup Reservado</td>
 <td>22</td>
 <td>1</td>
-<td>Esta sub-região é obrigatória e seu conteúdo é reservado.</td>
+<td>Essa sub-região é obrigatória e seu conteúdo é reservado.</td>
 </tr>
 <tr class="even">
-<td>Soma de verificação de inicialização de backup</td>
+<td>Verificação de inicialização de backup</td>
 <td>23</td>
 <td>1</td>
-<td>Esta sub-região é obrigatória e a <a href="#34-main-and-backup-boot-checksum-sub-regions">seção 3,4</a> define seu conteúdo.</td>
+<td>Essa sub-região é obrigatória e <a href="#34-main-and-backup-boot-checksum-sub-regions">a Seção 3.4</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
-<td><strong>Região FAT</strong></td>
+<td><strong>Região fat</strong></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="even">
-<td>Alinhamento de FAT</td>
+<td>Alinhamento fat</td>
 <td>24</td>
 <td>FatOffset – 24</td>
-<td><p>Essa sub-região é obrigatória e seu conteúdo, se houver, é indefinido.</p>
-<p>Observação: os setores de inicialização principal e de backup contêm o campo FatOffset.</p></td>
+<td><p>Essa sub-região é obrigatória e seu conteúdo, se algum, é indefinido.</p>
+<p>Observação: os setores principal e de inicialização de backup contêm o campo FatOffset.</p></td>
 </tr>
 <tr class="odd">
 <td>Primeira FAT</td>
 <td>FatOffset</td>
 <td>FatLength</td>
-<td><p>Esta sub-região é obrigatória e a <a href="#41-first-and-second-fat-sub-regions">seção 4,1</a> define seu conteúdo.</p>
-<p>Observação: os setores de inicialização principal e de backup contêm os campos FatOffset e FatLength.</p></td>
+<td><p>Essa sub-região é obrigatória e <a href="#41-first-and-second-fat-sub-regions">a Seção 4.1</a> define seu conteúdo.</p>
+<p>Observação: os Setores de Inicialização principal e de backup contêm os campos FatOffset e FatLength.</p></td>
 </tr>
 <tr class="even">
 <td>Segundo FAT</td>
 <td>FatOffset + FatLength</td>
 <td>FatLength * (NumberOfFats – 1)</td>
-<td><p>Esta sub-região é obrigatória e a <a href="#41-first-and-second-fat-sub-regions">seção 4,1</a> define seu conteúdo, se houver.</p>
-<p>Observação: os setores de inicialização principal e de backup contêm os campos FatOffset, FatLength e NumberOfFats. O campo NumberOfFats pode conter apenas os valores 1 e 2.</p></td>
+<td><p>Essa sub-região é obrigatória e <a href="#41-first-and-second-fat-sub-regions">a Seção 4.1</a> define seu conteúdo, se for o caso.</p>
+<p>Observação: os Setores de Inicialização principal e de backup contêm os campos FatOffset, FatLength e NumberOfFats. O campo NumberOfFats só pode conter os valores 1 e 2.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>Região de dados</strong></td>
@@ -252,63 +252,63 @@ Um volume é o conjunto de todas as estruturas do sistema de arquivos e o espaç
 <td></td>
 </tr>
 <tr class="even">
-<td>Alinhamento de heap de cluster</td>
+<td>Alinhamento do heap de cluster</td>
 <td>FatOffset + FatLength * NumberOfFats</td>
 <td>ClusterHeapOffset – (FatOffset + FatLength * NumberOfFats)</td>
-<td><p>Essa sub-região é obrigatória e seu conteúdo, se houver, é indefinido.</p>
+<td><p>Essa sub-região é obrigatória e seu conteúdo, se algum, é indefinido.</p>
 <p>Observação: os setores de inicialização principal e de backup contêm os campos FatOffset, FatLength, NumberOfFats e ClusterHeapOffset. Os valores válidos do campo NumberOfFats são 1 e 2.</p></td>
 </tr>
 <tr class="odd">
-<td>Heap de cluster</td>
+<td>Cluster Heap</td>
 <td>ClusterHeapOffset</td>
-<td>ClusterCount * 2<sup>SectorsPerClusterShift</sup></td>
-<td><p>Esta sub-região é obrigatória e a <a href="#51-cluster-heap-sub-region">seção 5,1</a> define seu conteúdo.</p>
-<p>Observação: os setores de inicialização principal e de backup contêm os campos ClusterHeapOffset, ClusterCount e SectorsPerClusterShift.</p></td>
+<td>ClusterCount * 2<sup>SetoresPerClusterShift</sup></td>
+<td><p>Essa sub-região é obrigatória e <a href="#51-cluster-heap-sub-region">a Seção 5.1</a> define seu conteúdo.</p>
+<p>Observação: os Setores de Inicialização principal e de backup contêm os campos ClusterHeapOffset, ClusterCount e SectorsPerClusterShift.</p></td>
 </tr>
 <tr class="even">
 <td>Espaço em excesso</td>
-<td>ClusterHeapOffset + ClusterCount * 2<sup>SectorsPerClusterShift</sup></td>
-<td>VolumeLength – (ClusterHeapOffset + ClusterCount * 2<sup>SectorsPerClusterShift</sup>)</td>
-<td><p>Essa sub-região é obrigatória e seu conteúdo, se houver, é indefinido.</p>
-<p>Observação: os setores de inicialização principal e de backup contêm os campos ClusterHeapOffset, ClusterCount, SectorsPerClusterShift e VolumeLength.</p></td>
+<td>ClusterHeapOffset + ClusterCount * 2<sup>SetoresPerClusterShift</sup></td>
+<td>VolumeLength – (ClusterHeapOffset + ClusterCount * 2<sup>SetoresPerClusterShift</sup>)</td>
+<td><p>Essa sub-região é obrigatória e seu conteúdo, se algum, é indefinido.</p>
+<p>Observação: os Setores de Inicialização principal e de backup contêm os campos ClusterHeapOffset, ClusterCount, SectorsPerClusterShift e VolumeLength.</p></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="3-main-and-backup-boot-regions"></a>3 principais e regiões de inicialização de backup
+## <a name="3-main-and-backup-boot-regions"></a>3 Regiões de inicialização principal e de backup
 
-A região de inicialização principal fornece todas as instruções necessárias de inicialização-Strapping, informações de identificação e parâmetros do sistema de arquivos para permitir que uma implementação execute o seguinte:
+A região inicialização principal fornece todas as instruções necessárias de inicialização, identificando informações e parâmetros do sistema de arquivos para permitir que uma implementação execute o seguinte:
 
-1. Inicialize um sistema de computador a partir de um volume exFAT.
+1. Inicializar um sistema de computador de um volume exFAT.
 
 2. Identifique o sistema de arquivos no volume como exFAT.
 
 3. Descubra o local das estruturas do sistema de arquivos exFAT.
 
-A região de inicialização de backup é um backup da região de inicialização principal. Ele ajuda a recuperação do volume exFAT no caso de a região de inicialização principal estar em um estado inconsistente. Exceto em circunstâncias pouco frequentes, como a atualização de instruções boot-Strapping, as implementações não devem modificar o conteúdo da região de inicialização do backup.
+A região inicialização de backup é um backup da região inicialização principal. Ele auxilia na recuperação do volume exFAT no caso da região inicialização principal estar em um estado inconsistente. Exceto em circunstâncias pouco frequentes, como atualizar instruções de depuração de inicialização, as implementações não devem modificar o conteúdo da região de Inicialização de Backup.
 
-### <a name="31-main-and-backup-boot-sector-sub-regions"></a>3,1 sub-regiões de setor de inicialização de backup e principal
+### <a name="31-main-and-backup-boot-sector-sub-regions"></a>3.1 Sub-regiões do setor de inicialização principal e de backup
 
-O setor de inicialização principal contém código para boot-Strapping de um volume exFAT e parâmetros fundamentais do exFAT que descrevem a estrutura do volume (consulte a [tabela 4](#table-4-main-and-backup-boot-sector-structure)). BIOS, MBR ou outros agentes de Strapping de inicialização podem inspecionar esse setor e podem carregar e executar quaisquer instruções de inicialização Strapping contidas nele.
+O Setor de Inicialização Principal contém código para a desapropriação de inicialização de um volume exFAT e parâmetros exFAT fundamentais que descrevem a estrutura do volume (consulte [a Tabela 4](#table-4-main-and-backup-boot-sector-structure)). BIOS, MBR ou outros agentes de desinformação de inicialização podem inspecionar esse setor e podem carregar e executar as instruções de desinformação de inicialização contidas nele.
 
-O setor de inicialização de backup é um backup do setor de inicialização principal e tem a mesma estrutura (consulte a [tabela 4](#table-4-main-and-backup-boot-sector-structure)). O setor de inicialização de backup pode auxiliar as operações de recuperação; no entanto, as implementações devem tratar o conteúdo dos campos VolumeFlags e PercentInUse como obsoletos.
+O Setor de Inicialização de Backup é um backup do Setor de Inicialização Principal e tem a mesma estrutura (consulte [Tabela 4](#table-4-main-and-backup-boot-sector-structure)). O Setor de Inicialização de Backup pode auxiliar nas operações de recuperação; No entanto, as implementações devem tratar o conteúdo dos campos VolumeFlags e PercentInUse como desalocar.
 
-Antes de usar o conteúdo do setor de inicialização principal ou de backup, as implementações devem verificar seu conteúdo Validando sua respectiva soma de verificação de inicialização e garantindo que todos os seus campos estejam dentro de seu intervalo de valores válido.
+Antes de usar o conteúdo do Setor principal ou de inicialização de backup, as implementações deverão verificar seu conteúdo validando sua respectiva Verificação de Inicialização e garantindo que todos os seus campos estão dentro de seu intervalo de valor válido.
 
-Embora a operação de formatação inicial inicialize o conteúdo dos setores de inicialização principal e de backup, as implementações podem atualizar esses setores (e também atualizar sua respectiva soma de verificação de inicialização) conforme necessário. No entanto, as implementações podem atualizar os campos VolumeFlags ou PercentInUse sem Atualizar sua respectiva soma de verificação de inicialização (a soma de verificação especificamente exclui esses dois campos).
+Embora a operação de formato inicialize o conteúdo dos Setores principal e de inicialização de backup, as implementações podem atualizar esses setores (e também atualizar a respectiva Verificação de Inicialização), conforme necessário. No entanto, as implementações podem atualizar os campos VolumeFlags ou PercentInUse sem atualizar sua respectiva Soma de Verificação de Inicialização (a soma de verificação exclui especificamente esses dois campos).
 
 <div id="table-4-main-and-backup-boot-sector-structure" />
 
-**Tabela 4 estrutura principal e de backup do setor de inicialização**
+**Tabela 4 Principal e Estrutura do Setor de Inicialização de Backup**
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
-<p><strong>bytes</strong></p></th>
+<p><strong>(bytes)</strong></p></th>
 <th><strong>Comentários</strong></th>
 </tr>
 </thead>
@@ -317,109 +317,109 @@ Embora a operação de formatação inicial inicialize o conteúdo dos setores d
 <td>JumpBoot</td>
 <td>0</td>
 <td>3</td>
-<td>Esse campo é obrigatório e a <a href="#311-jumpboot-field">seção 3.1.1</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#311-jumpboot-field">a Seção 3.1.1</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>FileSystemName</td>
 <td>3</td>
 <td>8</td>
-<td>Esse campo é obrigatório e a <a href="#312-filesystemname-field">seção 3.1.2</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#312-filesystemname-field">a Seção 3.1.2</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>MustBeZero</td>
 <td>11</td>
 <td>53</td>
-<td>Esse campo é obrigatório e a <a href="#313-mustbezero-field">seção 3.1.3</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#313-mustbezero-field">a Seção 3.1.3</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>PartitionOffset</td>
 <td>64</td>
 <td>8</td>
-<td>Esse campo é obrigatório e a <a href="#314-partitionoffset-field">seção 3.1.4</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#314-partitionoffset-field">a Seção 3.1.4</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>VolumeLength</td>
 <td>72</td>
 <td>8</td>
-<td>Esse campo é obrigatório e a <a href="#315-volumelength-field">seção 3.1.5</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#315-volumelength-field">e a Seção 3.1.5</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>FatOffset</td>
 <td>80</td>
 <td>4</td>
-<td>Esse campo é obrigatório e a <a href="#316-fatoffset-field">seção 3.1.6</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#316-fatoffset-field">e a Seção 3.1.6</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>FatLength</td>
 <td>84</td>
 <td>4</td>
-<td>Esse campo é obrigatório e a <a href="#317-fatlength-field">seção 3.1.7</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#317-fatlength-field">e a Seção 3.1.7</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>ClusterHeapOffset</td>
 <td>88</td>
 <td>4</td>
-<td>Esse campo é obrigatório e a <a href="#318-clusterheapoffset-field">seção 3.1.8</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#318-clusterheapoffset-field">e a Seção 3.1.8</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>ClusterCount</td>
 <td>92</td>
 <td>4</td>
-<td>Esse campo é obrigatório e a <a href="#319-clustercount-field">seção 3.1.9</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#319-clustercount-field">a Seção 3.1.9</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>FirstClusterOfRootDirectory</td>
 <td>96</td>
 <td>4</td>
-<td>Esse campo é obrigatório e a <a href="#3110-firstclusterofrootdirectory-field">seção 3.1.10</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#3110-firstclusterofrootdirectory-field">e a Seção 3.1.10</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>VolumeSerialNumber</td>
 <td>100</td>
 <td>4</td>
-<td>Esse campo é obrigatório e a <a href="#3111-volumeserialnumber-field">seção 3.1.11</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#3111-volumeserialnumber-field">e a Seção 3.1.11</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>FileSystemRevision</td>
 <td>104</td>
 <td>2</td>
-<td>Esse campo é obrigatório e a <a href="#3112-filesystemrevision-field">seção 3.1.12</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#3112-filesystemrevision-field">e a Seção 3.1.12</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>VolumeFlags</td>
 <td>106</td>
 <td>2</td>
-<td>Esse campo é obrigatório e a <a href="#3113-volumeflags-field">seção 3.1.13</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#3113-volumeflags-field">e a Seção 3.1.13</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>BytesPerSectorShift</td>
 <td>108</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#3114-bytespersectorshift-field">seção 3.1.14</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#3114-bytespersectorshift-field">e a Seção 3.1.14</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>SectorsPerClusterShift</td>
 <td>109</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#3115-sectorsperclustershift-field">seção 3.1.15</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#3115-sectorsperclustershift-field">e a Seção 3.1.15</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>NumberOfFats</td>
 <td>110</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#3116-numberoffats-field">seção 3.1.16</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#3116-numberoffats-field">e a Seção 3.1.16</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>DriveSelect</td>
 <td>111</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#3117-driveselect-field">seção 3.1.17</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#3117-driveselect-field">a Seção 3.1.17</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>PercentInUse</td>
 <td>112</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#3118-percentinuse-field">seção 3.1.18</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#3118-percentinuse-field">a Seção 3.1.18</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>Reservado</td>
@@ -428,158 +428,158 @@ Embora a operação de formatação inicial inicialize o conteúdo dos setores d
 <td>Esse campo é obrigatório e seu conteúdo é reservado.</td>
 </tr>
 <tr class="even">
-<td>Inicialização</td>
+<td>BootCode</td>
 <td>120</td>
 <td>390</td>
-<td>Esse campo é obrigatório e a <a href="#3119-bootcode-field">seção 3.1.19</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#3119-bootcode-field">e a Seção 3.1.19</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>BootSignature</td>
 <td>510</td>
 <td>2</td>
-<td>Esse campo é obrigatório e a <a href="#3120-bootsignature-field">seção 3.1.20</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#3120-bootsignature-field">a Seção 3.1.20</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
-<td>ExcessSpace</td>
+<td>Espaço em Excesso</td>
 <td>512</td>
 <td>2<sup>BytesPerSectorShift</sup> – 512</td>
-<td><p>Esse campo é obrigatório e seu conteúdo, se houver, é indefinido.</p>
-<p>Observação: os setores de inicialização principal e de backup contêm o campo BytesPerSectorShift.</p></td>
+<td><p>Esse campo é obrigatório e seu conteúdo, se algum, é indefinido.</p>
+<p>Observação: os Setores de Inicialização principal e de backup contêm o campo BytesPerSectorShift.</p></td>
 </tr>
 </tbody>
 </table>
 
-#### <a name="311-jumpboot-field"></a>Campo 3.1.1 JumpBoot
+#### <a name="311-jumpboot-field"></a>3.1.1 JumpBoot Field
 
-O campo JumpBoot deve conter a instrução de salto para CPUs comuns em computadores pessoais, que, quando executado, "salta" a CPU para executar as instruções boot-Strapping no campo inicialização de inicialização.
+O campo JumpBoot deve conter a instrução jump para CPUs comuns em computadores pessoais, que, quando executados, "salta" a CPU para executar as instruções de inicialização no campo BootCode.
 
-O valor válido para esse campo é (em ordem de byte de ordem inferior para byte de ordem superior) EBh 76h 90h.
+O valor válido para esse campo é (na ordem de byte de ordem baixa para byte de ordem alta) EBh 76h 90h.
 
-#### <a name="312-filesystemname-field"></a>Campo 3.1.2 FileSystemName
+#### <a name="312-filesystemname-field"></a>3.1.2 Campo FileSystemName
 
 O campo FileSystemName deve conter o nome do sistema de arquivos no volume.
 
-O valor válido para esse campo é, em caracteres ASCII, "EXFAT", que inclui três espaços em branco à direita.
+O valor válido para esse campo é, em caracteres ASCII, "EXFAT", que inclui três espaços em branco à parte final.
 
-#### <a name="313-mustbezero-field"></a>Campo 3.1.3 MustBeZero
+#### <a name="313-mustbezero-field"></a>3.1.3 Campo MustBeZero
 
-O campo MustBeZero deve corresponder diretamente com o intervalo de bytes que o bloco de parâmetro do BIOS empacotado consome nos volumes FAT12/16/32.
+O campo MustBeZero deve corresponder diretamente ao intervalo de bytes que o bloco de parâmetro BIOS empacotado consome em volumes FAT12/16/32.
 
-O valor válido para esse campo é 0, o que ajuda a impedir que as implementações do FAT12/16/32 sejam montadas erroneamente em um volume exFAT.
+O valor válido para esse campo é 0, o que ajuda a impedir que implementações FAT12/16/32 montagem de um volume exFAT por engano.
 
-#### <a name="314-partitionoffset-field"></a>Campo 3.1.4 PartitionOffset
+#### <a name="314-partitionoffset-field"></a>3.1.4 Campo PartitionOffset
 
-O campo PartitionOffset deve descrever o deslocamento de setor relativo à mídia da partição que hospeda o volume exFAT determinado. Esse campo ajuda o boot-Strapping do volume usando INT estendido em computadores pessoais.
+O campo PartitionOffset deve descrever o deslocamento de setor relativo à mídia da partição que hospeda o volume exFAT determinado. Esse campo auxilia na eliminação de problemas de inicialização do volume usando o INT estendido 13h em computadores pessoais.
 
-Todos os valores possíveis para esse campo são válidos; no entanto, o valor 0 indica que as implementações devem ignorar esse campo.
+Todos os valores possíveis para esse campo são válidos; no entanto, o valor 0 indica que as implementações deverão ignorar esse campo.
 
-#### <a name="315-volumelength-field"></a>Campo 3.1.5 VolumeLength
+#### <a name="315-volumelength-field"></a>3.1.5 Campo VolumeLength
 
-O campo VolumeLength deve descrever o tamanho do volume exFAT fornecido nos setores.
-
-O intervalo válido de valores para esse campo deve ser:
-
-- Pelo menos 2<sup>20</sup>/2<sup>BytesPerSectorShift</sup>, o que garante que o menor volume seja menor que 1 MB
-
-- No máximo 2<sup>64</sup>-1, o maior valor que este campo pode descrever
-
-No entanto, se o tamanho da sub-região de espaços em excesso for 0, o valor desse campo será ClusterHeapOffset + (2<sup>32</sup>-11) \* 2<sup>SectorsPerClusterShift</sup>.
-
-#### <a name="316-fatoffset-field"></a>Campo 3.1.6 FatOffset
-
-O campo FatOffset deve descrever o deslocamento do setor relativo ao volume da primeira FAT. Esse campo permite que as implementações alinhem a primeira FAT às características da mídia de armazenamento subjacente.
+O campo VolumeLength deve descrever o tamanho do volume exFAT determinado em setores.
 
 O intervalo válido de valores para esse campo deve ser:
 
-- Pelo menos 24, que contas para os setores as regiões de inicialização principal e de inicialização de backup consomem
+- Pelo menos 2<sup>20/2</sup><sup>BytesPerSectorShift,</sup>o que garante que o menor volume não seja menor que 1 MB
 
-- No máximo ClusterHeapOffset-(FatLength \* NumberOfFats), que conta os setores que o heap de cluster consome
+- No máximo 2<sup>64</sup>a 1, o maior valor que esse campo pode descrever
 
-#### <a name="317-fatlength-field"></a>Campo 3.1.7 FatLength
+No entanto, se o tamanho da sub-região Espaço em Excesso for 0, o valor desse campo será ClusterHeapOffset + (2<sup>32</sup>- 11) \* 2<sup>SectorsPerClusterShift</sup>.
+
+#### <a name="316-fatoffset-field"></a>3.1.6 Campo FatOffset
+
+O campo FatOffset deve descrever o deslocamento de setor relativo ao volume da Primeira FAT. Esse campo permite que as implementações alinhem o Primeiro FAT às características da mídia de armazenamento subjacente.
+
+O intervalo válido de valores para esse campo deve ser:
+
+- Pelo menos 24, que é responsável pelos setores que as regiões inicialização principal e inicialização de backup consomem
+
+- No máximo ClusterHeapOffset – (FatLength NumberOfFats), que é responsável pelos setores que \* o Heap de Cluster consome
+
+#### <a name="317-fatlength-field"></a>3.1.7 Campo FatLength
 
 O campo FatLength deve descrever o comprimento, em setores, de cada tabela FAT (o volume pode conter até dois FATs).
 
 O intervalo válido de valores para esse campo deve ser:
 
-- Pelo menos (ClusterCount + 2) \* 2<sup>2</sup>/2<sup>BytesPerSectorShift</sup>arredondado para o número inteiro mais próximo, o que garante que cada Fat tenha espaço suficiente para descrever todos os clusters no heap de cluster
+- Pelo menos (ClusterCount + 2) \* <sup>2 2/2</sup><sup>BytesPerSectorShift</sup>arredondado para cima até o inteiro mais próximo, o que garante que cada FAT tenha espaço suficiente para descrever todos os clusters no Heap de Cluster
 
-- No máximo (ClusterHeapOffset-FatOffset)/NumberOfFats arredondados para baixo até o número inteiro mais próximo, que garante que o FATs exista antes do heap de cluster
+- No máximo (ClusterHeapOffset – FatOffset) / NumberOfFats arredondado para baixo até o inteiro mais próximo, o que garante que as FATs existam antes do Heap de Cluster
 
-Esse campo pode conter um valor excedente de seu limite inferior (conforme descrito acima) para habilitar a segunda FAT, se presente, também para ser alinhado às características da mídia de armazenamento subjacente. O conteúdo do espaço que excede o que o próprio FAT exige, se houver, é indefinido.
+Esse campo pode conter um valor além de seu limite inferior (conforme descrito acima) para permitir que a Segunda FAT, se presente, também seja alinhada às características da mídia de armazenamento subjacente. O conteúdo do espaço que excede o que o FAT em si exige, se algum, é indefinido.
 
-#### <a name="318-clusterheapoffset-field"></a>Campo 3.1.8 ClusterHeapOffset
+#### <a name="318-clusterheapoffset-field"></a>3.1.8 Campo ClusterHeapOffset
 
-O campo ClusterHeapOffset deve descrever o deslocamento do setor relativo ao volume do heap de cluster. Esse campo permite que as implementações alinhem o heap de cluster às características da mídia de armazenamento subjacente.
+O campo ClusterHeapOffset deve descrever o deslocamento de setor relativo ao volume do Heap de Cluster. Esse campo permite que as implementações alinhem o Heap de Cluster às características da mídia de armazenamento subjacente.
 
 O intervalo válido de valores para esse campo deve ser:
 
-- Pelo menos FatOffset + FatLength \* NumberOfFats, para considerar os setores, todas as regiões anteriores consomem
+- Pelo menos FatOffset + FatLength NumberOfFats, para levar em conta os setores que \* todas as regiões anteriores consomem
 
-- No máximo 2<sup>32</sup>-1 ou VolumeLength-(ClusterCount \* 2<sup>SectorsPerClusterShift</sup>), qualquer cálculo é menor
+- No máximo 2<sup>32</sup>- 1 ou VolumeLength - (ClusterCount \* 2<sup>SectorsPerClusterShift</sup>), o cálculo que for menor
 
-#### <a name="319-clustercount-field"></a>Campo 3.1.9 ClusterCount
+#### <a name="319-clustercount-field"></a>3.1.9 Campo ClusterCount
 
-O campo ClusterCount deve descrever o número de clusters que o heap de cluster contém.
+O campo ClusterCount deve descrever o número de clusters que o Heap de Cluster contém.
 
 O valor válido para esse campo deve ser o menor dos seguintes:
 
-- (VolumeLength-ClusterHeapOffset)/2<sup>SectorsPerClusterShift</sup>arredondado para baixo até o número inteiro mais próximo, que é exatamente o número de clusters que podem se ajustar entre o início do heap de cluster e o final do volume
+- (VolumeLength – ClusterHeapOffset) /2<sup>SectorsPerClusterShift</sup>arredondado para baixo até o inteiro mais próximo, que é exatamente o número de clusters que podem se ajustar entre o início do Heap de Cluster e o final do volume
 
-- 2<sup>32</sup>-11, que é o número máximo de clusters que um Fat pode descrever
+- 2<sup>32</sup>a 11, que é o número máximo de clusters que uma FAT pode descrever
 
-O valor do campo ClusterCount determina o tamanho mínimo de um FAT. Para evitar FATs extremamente grandes, as implementações podem controlar o número de clusters no heap de cluster aumentando o tamanho do cluster (por meio do campo SectorsPerClusterShift). Essa especificação recomenda não mais do que 2 clusters<sup>24</sup>-2 no heap de cluster. No entanto, as implementações devem ser capazes de lidar com volumes com até 2 clusters<sup>32</sup>-11 no heap de cluster.
+O valor do campo ClusterCount determina o tamanho mínimo de uma FAT. Para evitar faTs extremamente grandes, as implementações podem controlar o número de clusters no Heap de Cluster aumentando o tamanho do cluster (por meio do campo SectorsPerClusterShift). Essa especificação não recomenda mais de 2<sup>clusters 24</sup>a 2 no Heap de Cluster. No entanto, as implementações devem ser capazes de lidar com volumes com até 2<sup>clusters de 32</sup>a 11 no Heap de Cluster.
 
-#### <a name="3110-firstclusterofrootdirectory-field"></a>Campo 3.1.10 FirstClusterOfRootDirectory
+#### <a name="3110-firstclusterofrootdirectory-field"></a>3.1.10 Campo FirstClusterOfRootDirectory
 
-O campo FirstClusterOfRootDirectory deve conter o índice de cluster do primeiro cluster do diretório raiz. As implementações devem fazer todos os esforços para colocar o primeiro cluster do diretório raiz no primeiro cluster não-insatisfatório após os clusters que o bitmap de alocação e a tabela de uso ativo consomem.
+O campo FirstClusterOfRootDirectory deve conter o índice de cluster do primeiro cluster do diretório raiz. As implementações devem fazer todos os esforços para colocar o primeiro cluster do diretório raiz no primeiro cluster não ruim após os clusters que o Bitmap de Alocação e a Tabela de Caso Up consomem.
 
 O intervalo válido de valores para esse campo deve ser:
 
-- Pelo menos 2, o índice do primeiro cluster no heap de cluster
+- Pelo menos 2, o índice do primeiro cluster no Heap de Cluster
 
-- No máximo ClusterCount + 1, o índice do último cluster no heap de cluster
+- No máximo ClusterCount + 1, o índice do último cluster no Heap de Cluster
 
-#### <a name="3111-volumeserialnumber-field"></a>Campo 3.1.11 VolumeSerialNumber
+#### <a name="3111-volumeserialnumber-field"></a>3.1.11 Campo VolumeSerialNumber
 
-O campo VolumeSerialNumber deve conter um número de série exclusivo. Isso ajuda as implementações a distinguir entre diferentes volumes do exFAT.
-As implementações devem gerar o número de série, combinando a data e a hora da formatação do volume exFAT. O mecanismo para combinar a data e a hora para formar um número de série é específico da implementação.
+O campo VolumeSerialNumber deve conter um número de série exclusivo. Isso ajuda as implementações a distinguir entre diferentes volumes exFAT.
+As implementações devem gerar o número de série combinando a data e a hora da formatação do volume exFAT. O mecanismo para combinar data e hora para formar um número de série é específico da implementação.
 
 Todos os valores possíveis para esse campo são válidos.
 
-#### <a name="3112-filesystemrevision-field"></a>Campo 3.1.12 FileSystemRevision
+#### <a name="3112-filesystemrevision-field"></a>3.1.12 Campo FileSystemRevision
 
-O campo FileSystemRevision deve descrever os números de revisão principal e secundária das estruturas exFAT no volume especificado.
+O campo FileSystemRevision deve descrever os números de revisão principais e secundários das estruturas exFAT no volume determinado.
 
-O byte de ordem superior é o número de revisão principal e o byte de ordem inferior é o número de revisão menor. Por exemplo, se o byte de ordem superior contiver o valor 01h e se o byte de ordem inferior contiver o valor 05h, o campo FileSystemRevision descreverá o número de revisão 1, 5.
-Da mesma forma, se o byte de ordem superior contiver o valor 0Ah e se o byte de ordem inferior contiver o valor 0Fh, o campo FileSystemRevision descreverá o número de revisão 10,15.
+O byte de ordem alta é o número de revisão principal e o byte de ordem baixa é o número de revisão secundária. Por exemplo, se o byte de ordem alta contiver o valor 01h e se o byte de ordem baixa contiver o valor 05h, o campo FileSystemRevision descreverá o número de revisão 1,05.
+Da mesma forma, se o byte de ordem alta contiver o valor 0Ah e se o byte de ordem baixa contiver o valor 0Fh, o campo FileSystemRevision descreverá o número de revisão 10,15.
 
 O intervalo válido de valores para esse campo deve ser:
 
-- Pelo menos 0 para o byte de ordem inferior e 1 para o byte de ordem superior
+- Pelo menos 0 para o byte de ordem baixa e 1 para o byte de ordem alta
 
-- No máximo 99 para o byte de ordem inferior e 99 para o byte de ordem superior
+- No máximo 99 para o byte de ordem baixa e 99 para o byte de ordem alta
 
-O número de revisão do exFAT que essa especificação descreve é 1, 0.
-As implementações dessa especificação devem montar qualquer volume exFAT com o número de revisão principal 1 e não deve montar nenhum volume exFAT com qualquer outro número de revisão principal. As implementações devem respeitar o número de revisão secundária e não devem executar operações ou criar nenhuma estrutura de sistema de arquivos não descrita na especificação correspondente do número de revisão secundária.
+O número de revisão de exFAT que essa especificação descreve é 1,00.
+Implementações dessa especificação devem montar qualquer volume exFAT com o número de revisão principal 1 e não devem montar nenhum volume exFAT com qualquer outro número de revisão principal. As implementações devem cumprir o número de revisão secundária e não devem executar operações ou criar estruturas do sistema de arquivos não descritas na especificação correspondente do número de revisão secundária determinado.
 
-#### <a name="3113-volumeflags-field"></a>Campo 3.1.13 VolumeFlags
+#### <a name="3113-volumeflags-field"></a>3.1.13 Campo VolumeFlags
 
-O campo VolumeFlags deve conter sinalizadores que indicam o status de várias estruturas do sistema de arquivos no volume exFAT (consulte a [tabela 5](#table-5-volumeflags-field-structure)).
+O campo VolumeFlags deve conter sinalizadores que indicam o status de várias estruturas do sistema de arquivos no volume exFAT (consulte [a Tabela 5](#table-5-volumeflags-field-structure)).
 
-As implementações não devem incluir esse campo ao calcular sua respectiva soma de verificação de inicialização principal ou de região de inicialização de backup. Ao fazer referência ao setor de inicialização de backup, as implementações devem tratar esse campo como obsoleto.
+As implementações não devem incluir esse campo ao computar sua respectiva inicialização principal ou uma verificação de região de inicialização de backup. Ao fazer referência ao Setor de Inicialização de Backup, as implementações deverão tratar esse campo como desaloqueado.
 
 <div id="table-5-volumeflags-field-structure" />
 
-**Tabela 5 VolumeFlags estrutura de campo**
+**Estrutura do campo VolumeFlags da Tabela 5**
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
-<p><strong>parte</strong></p></th>
+<p><strong>(bit)</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
-<p><strong>bits</strong></p></th>
+<p><strong>(bits)</strong></p></th>
 <th><strong>Comentários</strong></th>
 </tr>
 </thead>
@@ -588,25 +588,25 @@ As implementações não devem incluir esse campo ao calcular sua respectiva som
 <td>ActiveFat</td>
 <td>0</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#31131-activefat-field">seção 3.1.13.1</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#31131-activefat-field">e a Seção 3.1.13.1</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>VolumeDirty</td>
 <td>1</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#31132-volumedirty-field">seção 3.1.13.2</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#31132-volumedirty-field">e a Seção 3.1.13.2</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>MediaFailure</td>
 <td>2</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#31133-mediafailure-field">seção 3.1.13.3</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#31133-mediafailure-field">e a Seção 3.1.13.3</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>ClearToZero</td>
 <td>3</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#31134-cleartozero-field">seção 3.1.13.4</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#31134-cleartozero-field">e a Seção 3.1.13.4</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>Reservado</td>
@@ -617,35 +617,35 @@ As implementações não devem incluir esse campo ao calcular sua respectiva som
 </tbody>
 </table>
 
-##### <a name="31131-activefat-field"></a>Campo 3.1.13.1 ActiveFat
+##### <a name="31131-activefat-field"></a>Campo ActiveFat 3.1.13.1
 
-O campo ActiveFat deve descrever qual FAT e bitmap de alocação estão ativos (e as implementações devem usar), da seguinte maneira:
+O campo ActiveFat deve descrever qual FAT e Bitmap de Alocação estão ativos (e as implementações devem usar), da seguinte forma:
 
-- 0, o que significa que o primeiro bitmap de FAT e de primeira alocação está ativo
+- 0, o que significa que o primeiro fat e o bitmap de primeira alocação estão ativos
 
-- 1, que significa que o segundo bitmap de FAT e segunda de alocação estão ativos e só é possível quando o campo NumberOfFats contém o valor 2
+- 1, o que significa que o segundo fat e o segundo bitmap de alocação estão ativos e só é possível quando o campo NumberOfFats contém o valor 2
 
-As implementações devem considerar o FAT inativo e o bitmap de alocação como obsoleto. Somente as implementações com reconhecimento de TexFAT devem mudar o FAT ativo e os bitmaps de alocação (consulte a [seção 7,1](#71-allocation-bitmap-directory-entry)).
+As implementações devem considerar o FAT inativo e o Bitmap de Alocação como desleis. Somente as implementações com conhecimento de TexFAT devem alternar os bitmaps fat e alocação ativos (consulte [a Seção 7.1](#71-allocation-bitmap-directory-entry)).
 
-##### <a name="31132-volumedirty-field"></a>Campo 3.1.13.2 VolumeDirty
+##### <a name="31132-volumedirty-field"></a>3.1.13.2 Campo VolumeDirty
 
-O campo VolumeDirty deve descrever se o volume está sujo ou não, da seguinte maneira:
+O campo VolumeDirty deve descrever se o volume está sujo ou não, da seguinte forma:
 
 - 0, o que significa que o volume provavelmente está em um estado consistente
 
 - 1, o que significa que o volume provavelmente está em um estado inconsistente
 
-As implementações devem definir o valor desse campo como 1 ao encontrar inconsistências de metadados do sistema de arquivos que não são resolvidos. Se, ao montar um volume, o valor desse campo for 1, somente as implementações que resolvem inconsistências de metadados do sistema de arquivos podem limpar o valor desse campo para 0. Essas implementações só devem limpar o valor desse campo como 0 depois de garantir que o sistema de arquivos esteja em um estado consistente.
+As implementações devem definir o valor desse campo como 1 ao encontrar inconsistências de metadados do sistema de arquivos que elas não resolvem. Se, ao montar um volume, o valor desse campo for 1, somente implementações que resolvem inconsistências de metadados do sistema de arquivos poderão limpar o valor desse campo como 0. Essas implementações só deverão limpar o valor desse campo para 0 depois de garantir que o sistema de arquivos está em um estado consistente.
 
-Se, após a montagem de um volume, o valor desse campo for 0, as implementações deverão definir esse campo como 1 antes de atualizar os metadados do sistema de arquivos e desmarcar esse campo para 0 posteriormente, semelhante à ordem de gravação recomendada descrita na [seção 8,1](#81-recommended-write-ordering).
+Se, ao montar um volume, o valor desse campo for 0, as implementações deverão definir esse campo como 1 antes de atualizar os metadados do sistema de arquivos e limpar esse campo como 0 posteriormente, semelhante à ordenação de gravação recomendada descrita na Seção [8.1](#81-recommended-write-ordering).
 
-##### <a name="31133-mediafailure-field"></a>Campo 3.1.13.3 MediaFailure
+##### <a name="31133-mediafailure-field"></a>3.1.13.3 Campo MediaFailure
 
-O campo MediaFailure deve descrever se uma implementação descobriu falhas de mídia ou não, da seguinte maneira:
+O campo MediaFailure deve descrever se uma implementação descobriu falhas de mídia ou não, da seguinte forma:
 
-- 0, o que significa que a mídia de hospedagem não relatou falhas ou falhas conhecidas já estão registradas na FAT como clusters "ruins"
+- 0, o que significa que a mídia de hospedagem não relatou falhas ou nenhuma falha conhecida já está registrada no FAT como clusters "ruins"
 
-- 1, o que significa que a mídia de hospedagem relatou falhas (ou seja, tem operações de leitura ou gravação com falha)
+- 1, o que significa que a mídia de hospedagem relatou falhas (ou seja, operações de leitura ou gravação com falha)
 
 Uma implementação deve definir esse campo como 1 quando:
 
@@ -743,7 +743,7 @@ Enquanto a operação de formatação inicial inicializará o conteúdo dos seto
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
 <p><strong>minuciosa</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
@@ -800,7 +800,7 @@ As implementações podem atualizar os parâmetros de OEM principal e de backup 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
 <p><strong>minuciosa</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
@@ -861,7 +861,7 @@ O modelo de parâmetros genéricos fornece a definição de base de uma estrutur
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
 <p><strong>minuciosa</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
@@ -904,7 +904,7 @@ O suporte para a estrutura de parâmetros nulos é obrigatório.
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
 <p><strong>minuciosa</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
@@ -947,7 +947,7 @@ O suporte para a estrutura de parâmetros flash é opcional.
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
 <p><strong>minuciosa</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
@@ -1105,7 +1105,7 @@ Uma cadeia de cluster é uma série de clusters que fornece espaço para gravar 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
 <p><strong>minuciosa</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
@@ -1205,21 +1205,21 @@ Em um volume exFAT, um bitmap de alocação (consulte a [seção 7.1.5](#715-all
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
-<p><strong>sector</strong></p></th>
+<p><strong>(setor)</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
-<p><strong>procurar</strong></p></th>
+<p><strong>(setores)</strong></p></th>
 <th><strong>Comentários</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Cluster [2]</td>
+<td>Cluster[2]</td>
 <td>ClusterHeapOffset</td>
-<td>2<sup>SectorsPerClusterShift</sup></td>
-<td><p>Esse campo é obrigatório e a <a href="#511-cluster2--clusterclustercount1-fields">seção 5.1.1</a> define seu conteúdo.</p>
-<p>Observação: os setores de inicialização principal e de backup contêm os campos ClusterHeapOffset e SectorsPerClusterShift.</p></td>
+<td>2<sup>SetoresPerClusterShift</sup></td>
+<td><p>Esse campo é obrigatório e <a href="#511-cluster2--clusterclustercount1-fields">a Seção 5.1.1</a> define seu conteúdo.</p>
+<p>Observação: os Setores de Inicialização principal e de backup contêm os campos ClusterHeapOffset e SectorsPerClusterShift.</p></td>
 </tr>
 <tr class="even">
 <td><p>.</p>
@@ -1236,50 +1236,50 @@ Em um volume exFAT, um bitmap de alocação (consulte a [seção 7.1.5](#715-all
 <p>.</p></td>
 </tr>
 <tr class="odd">
-<td>Cluster [ClusterCount + 1]</td>
+<td>Cluster[ClusterCount+1]</td>
 <td>ClusterHeapOffset + (ClusterCount – 1) * 2<sup>SectorsPerClusterShift</sup></td>
-<td>2<sup>SectorsPerClusterShift</sup></td>
-<td><p>Esse campo é obrigatório e a <a href="#511-cluster2--clusterclustercount1-fields">seção 5.1.1</a> define seu conteúdo.</p>
-<p>Observação: os setores de inicialização principal e de backup contêm os campos ClusterCount, ClusterHeapOffset e SectorsPerClusterShift.</p></td>
+<td>2<sup>SetoresPerClusterShift</sup></td>
+<td><p>Esse campo é obrigatório e <a href="#511-cluster2--clusterclustercount1-fields">a Seção 5.1.1</a> define seu conteúdo.</p>
+<p>Observação: os Setores de Inicialização principal e de backup contêm os campos ClusterCount, ClusterHeapOffset e SectorsPerClusterShift.</p></td>
 </tr>
 </tbody>
 </table>
 
-#### <a name="511-cluster2--clusterclustercount1-fields"></a>Cluster de 5.1.1 \[ 2 \] ... Campos do cluster \[ ClusterCount + 1 \]
+#### <a name="511-cluster2--clusterclustercount1-fields"></a>5.1.1 Cluster \[ \] 2... Cluster \[ ClusterCount+1 \] Campos
 
-Cada campo de cluster nessa matriz é uma série de setores contíguos, cujo tamanho é definido pelo campo SectorsPerClusterShift.
+Cada campo cluster nessa matriz é uma série de setores contíguos, cujo tamanho é definido pelo campo SectorsPerClusterShift.
 
-## <a name="6-directory-structure"></a>6 estrutura de diretório
+## <a name="6-directory-structure"></a>Estrutura de 6 diretórios
 
-O sistema de arquivos exFAT usa uma abordagem de árvore de diretório para gerenciar as estruturas do sistema de arquivos e os arquivos existentes no heap de cluster. Os diretórios têm uma relação um-para-muitos entre pai e filho na árvore de diretórios.
+O sistema de arquivos exFAT usa uma abordagem de árvore de diretório para gerenciar as estruturas e arquivos do sistema de arquivos que existem no Heap de Cluster. Os diretórios têm uma relação um-para-muitos entre pai e filho na árvore de diretórios.
 
-O diretório ao qual o campo FirstClusterOfRootDirectory se refere é a raiz da árvore de diretórios. Todos os outros diretórios descendem do diretório raiz de maneira isolada.
+O diretório ao qual o campo FirstClusterOfRootDirectory se refere é a raiz da árvore de diretórios. Todos os outros diretórios são descendentes do diretório raiz de maneira vinculada.
 
-Cada diretório consiste em uma série de entradas de diretório (consulte a [tabela 13](#table-13-directory-structure)).
+Cada diretório consiste em uma série de entradas de diretório (consulte [Tabela 13](#table-13-directory-structure)).
 
-Uma ou mais entradas de diretório são combinadas em um conjunto de entrada de diretório que descreve algo de interesse, como uma estrutura de sistema de arquivos, subdiretório ou arquivo.
+Uma ou mais entradas de diretório são combinadas em um conjunto de entradas de diretório que descreve algo de interesse, como uma estrutura do sistema de arquivos, subdados ou arquivo.
 
 <div id="table-13-directory-structure" />
 
-**Tabela 13 estrutura de diretórios**
+**Estrutura de diretório da Tabela 13**
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><strong>Comentários</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>DirectoryEntry [0]</td>
+<td>DirectoryEntry[0]</td>
 <td>0</td>
 <td>32</td>
-<td>Esse campo é obrigatório e a <a href="#61-directoryentry0--directoryentryn--1">seção 6,1</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#61-directoryentry0--directoryentryn--1">a Seção 6.1</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td><p>.</p>
@@ -1296,44 +1296,44 @@ Uma ou mais entradas de diretório são combinadas em um conjunto de entrada de 
 <p>.</p></td>
 </tr>
 <tr class="odd">
-<td>DirectoryEntry [N – 1]</td>
+<td>DirectoryEntry[N-1]</td>
 <td>(N – 1) * 32</td>
 <td>32</td>
-<td><p>Esse campo é obrigatório e a <a href="#61-directoryentry0--directoryentryn--1">seção 6,1</a> define seu conteúdo.</p>
-<p>N, o número de campos DirectoryEntry, é o tamanho, em bytes, da cadeia de clusters que contém o diretório fornecido, dividido pelo tamanho de um campo DirectoryEntry, 32 bytes.</p></td>
+<td><p>Esse campo é obrigatório e <a href="#61-directoryentry0--directoryentryn--1">a Seção 6.1</a> define seu conteúdo.</p>
+<p>N, o número de campos DirectoryEntry, é o tamanho, em bytes, da cadeia de clusters que contém o diretório determinado, dividido pelo tamanho de um campo DirectoryEntry, 32 bytes.</p></td>
 </tr>
 </tbody>
 </table>
 
-### <a name="61-directoryentry0--directoryentryn--1"></a>6,1 DirectoryEntry \[ 0 \] ... DirectoryEntry \[ N--1\]
+### <a name="61-directoryentry0--directoryentryn--1"></a>6.1 DirectoryEntry \[ 0 \] ... DirectoryEntry \[ N--1\]
 
-Cada campo DirectoryEntry nessa matriz deriva do modelo DirectoryEntry genérico (consulte a [seção 6,2](#62-generic-directoryentry-template)).
+Cada campo DirectoryEntry nessa matriz deriva do modelo DirectoryEntry Genérico (consulte [a Seção 6.2](#62-generic-directoryentry-template)).
 
-### <a name="62-generic-directoryentry-template"></a>Modelo de DirectoryEntry genérico 6,2
+### <a name="62-generic-directoryentry-template"></a>6.2 Modelo directoryentry genérico
 
-O modelo DirectoryEntry genérico fornece a definição de base para entradas de diretório (consulte a [tabela 14](#table-14-generic-directoryentry-template)). Todas as estruturas de entrada de diretório derivam deste modelo e somente as estruturas de entrada de diretório definidas pela Microsoft são válidas (o exFAT não tem provisões para estruturas de entrada de diretório definidas pelo fabricante, exceto conforme definido na [seção 7,8](#78-vendor-extension-directory-entry) e na [seção 7,9](#79-vendor-allocation-directory-entry)). A capacidade de interpretar o modelo DirectoryEntry genérico é obrigatória.
+O modelo Generic DirectoryEntry fornece a definição base para entradas de diretório (consulte [Tabela 14](#table-14-generic-directoryentry-template)). Todas as estruturas de entrada de diretório derivam desse modelo e somente as estruturas de entrada de diretório definidas pela Microsoft são válidas (o exFAT não tem provisionamentos para estruturas de entrada de diretório definidas pelo fabricante, exceto conforme definido nas Seções [7.8](#78-vendor-extension-directory-entry) e [7.9](#79-vendor-allocation-directory-entry)). A capacidade de interpretar o modelo DirectoryEntry Genérico é obrigatória.
 
 <div id="table-14-generic-directoryentry-template" />
 
-**Tabela 14 modelo de DirectoryEntry genérico**
+**Tabela 14 Modelo directoryentry genérico**
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><strong>Comentários</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>EntryType</td>
+<td>Entrytype</td>
 <td>0</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#621-entrytype-field">seção 6.2.1</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#621-entrytype-field">e a Seção 6.2.1</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>CustomDefined</td>
@@ -1345,13 +1345,13 @@ O modelo DirectoryEntry genérico fornece a definição de base para entradas de
 <td>FirstCluster</td>
 <td>20</td>
 <td>4</td>
-<td>Esse campo é obrigatório e a <a href="#622-firstcluster-field">seção 6.2.2</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#622-firstcluster-field">a Seção 6.2.2</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
-<td>DataLength</td>
+<td>Datalength</td>
 <td>24</td>
 <td>8</td>
-<td>Esse campo é obrigatório e a <a href="#623-datalength-field">seção 6.2.3</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#623-datalength-field">a Seção 6.2.3</a> define seu conteúdo.</td>
 </tr>
 </tbody>
 </table>
@@ -1360,48 +1360,48 @@ O modelo DirectoryEntry genérico fornece a definição de base para entradas de
 
 O campo EntryType tem três modos de uso que o valor do campo define (consulte a lista abaixo).
 
-- 17h, que é um marcador de fim de diretório e as seguintes condições se aplicam:
+- 00h, que é um marcador de fim de diretório e as seguintes condições se aplicam:
 
-  - Todos os outros campos no DirectoryEntry especificado são realmente reservados
+  - Todos os outros campos no DirectoryEntry determinado são realmente reservados
 
-  - Todas as entradas de diretório subsequentes no diretório especificado também são marcadores de fim de diretório
+  - Todas as entradas de diretório subsequentes no diretório determinado também são marcadores de fim de diretório
 
-  - Os marcadores de fim de diretório são válidos apenas fora dos conjuntos de entrada de diretório
+  - Marcadores de fim de diretório são válidos apenas fora dos conjuntos de entrada de diretório
 
-  - As implementações podem substituir os marcadores de fim de diretório conforme necessário
+  - As implementações podem substituir marcadores de fim de diretório conforme necessário
 
-- Entre 01h e 7Fh, inclusive, que é um marcador de entrada de diretório não usado e as seguintes condições se aplicam:
+- Entre 01h e 7Fh, inclusive, que é um marcador de entrada de diretório não usuário e as seguintes condições se aplicam:
 
-  - Todos os outros campos no DirectoryEntry especificado são realmente indefinidos
+  - Todos os outros campos no DirectoryEntry determinado são, na verdade, indefinido
 
-  - As entradas de diretório não utilizadas só são válidas fora dos conjuntos de entrada de diretório
+  - Entradas de diretório nãousadas só são válidas fora dos conjuntos de entrada de diretório
 
-  - As implementações podem substituir as entradas de diretório não usadas conforme necessário
+  - As implementações podem substituir entradas de diretório nãousadas conforme necessário
 
-  - Esse intervalo de valores corresponde ao campo InUse (consulte a [seção 6.2.1.4](#6214-inuse-field)) que contém o valor 0
+  - Esse intervalo de valores corresponde ao campo InUse (consulte a Seção [6.2.1.4](#6214-inuse-field)) que contém o valor 0
 
 - Entre 81h e FFh, inclusive, que é uma entrada de diretório regular e as seguintes condições se aplicam:
 
-  - O conteúdo do campo EntryType (consulte a [tabela 15](#table-15-generic-entrytype-field-structure)) determina o layout do restante da estrutura DirectoryEntry
+  - O conteúdo do campo EntryType (consulte [Tabela 15](#table-15-generic-entrytype-field-structure)) determina o layout do restante da estrutura DirectoryEntry
 
-  - Esse intervalo de valores, e somente esse intervalo de valores, são válidos dentro de um conjunto de entradas de diretório
+  - Esse intervalo de valores e apenas esse intervalo de valores são válidos dentro de um conjunto de entradas de diretório
 
-  - Esse intervalo de valores corresponde diretamente ao campo InUse (consulte a [seção 6.2.1.4](#6214-inuse-field)) que contém o valor 1
+  - Esse intervalo de valores corresponde diretamente ao campo InUse (consulte a Seção [6.2.1.4](#6214-inuse-field)) que contém o valor 1
 
-Para evitar modificações no campo InUse (consulte a [seção 6.2.1.4](#6214-inuse-field)), erroneamente resultando em um marcador de fim de diretório, o valor 80h é inválido.
+Para evitar modificações no campo InUse (consulte a Seção [6.2.1.4](#6214-inuse-field)) resultando erroneamente em um marcador de fim de diretório, o valor 80h é inválido.
 
 <div id="table-15-generic-entrytype-field-structure" />
 
-**Tabela 15 estrutura de campo de EntryType genérica**
+**Estrutura de campo EntryType Genérico da Tabela 15**
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
-<p><strong>parte</strong></p></th>
+<p><strong>(bit)</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
-<p><strong>bits</strong></p></th>
+<p><strong>(bits)</strong></p></th>
 <th><strong>Comentários</strong></th>
 </tr>
 </thead>
@@ -1410,68 +1410,68 @@ Para evitar modificações no campo InUse (consulte a [seção 6.2.1.4](#6214-in
 <td>TypeCode</td>
 <td>0</td>
 <td>5</td>
-<td>Esse campo é obrigatório e a <a href="#6211-typecode-field">seção 6.2.1.1</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#6211-typecode-field">a Seção 6.2.1.1</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>TypeImportance</td>
 <td>5</td>
 <td>1</td>
-<td>Este campo é obrigatório e a <a href="#6212-typeimportance-field">seção</a> de seção 6.2.1.2 define seu conteúdo.</td>
+<td>Esse campo é obrigatório e a <a href="#6212-typeimportance-field">Seção 6.2.1.2</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>TypeCategory</td>
 <td>6</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#6213-typecategory-field">seção 6.2.1.3</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#6213-typecategory-field">a Seção 6.2.1.3</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>InUse</td>
 <td>7</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#6214-inuse-field">seção 6.2.1.4</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#6214-inuse-field">a Seção 6.2.1.4</a> define seu conteúdo.</td>
 </tr>
 </tbody>
 </table>
 
-##### <a name="6211-typecode-field"></a>Campo 6.2.1.1 TypeCode
+##### <a name="6211-typecode-field"></a>Campo TypeCode 6.2.1.1
 
-O campo TypeCode descreve parcialmente o tipo específico da entrada de diretório fornecida. Esse campo, além dos campos TypeImportance e TypeCategory (consulte a [seção 6.2.1.2](#6212-typeimportance-field) e a [seção 6.2.1.3](#6213-typecategory-field), respectivamente) identifica exclusivamente o tipo da entrada de diretório fornecida.
+O campo TypeCode descreve parcialmente o tipo específico da entrada de diretório determinada. Esse campo, além dos campos TypeImportance e TypeCategory (consulte Seção [6.2.1.2](#6212-typeimportance-field) e [Seção 6.2.1.3](#6213-typecategory-field), respectivamente) identificam exclusivamente o tipo da entrada de diretório determinada.
 
-Todos os valores possíveis desse campo são válidos, a menos que os campos TypeImportance e TypeCategory contenham o valor 0; Nesse caso, o valor 0 é inválido para esse campo.
+Todos os valores possíveis desse campo são válidos, a menos que os campos TypeImportance e TypeCategory contenham o valor 0; nesse caso, o valor 0 é inválido para esse campo.
 
-##### <a name="6212-typeimportance-field"></a>Campo 6.2.1.2 TypeImportance
+##### <a name="6212-typeimportance-field"></a>Campo TypeImportance 6.2.1.2
 
-O campo TypeImportance deve descrever a importância da entrada de diretório fornecida.
-
-Os valores válidos para esse campo devem ser:
-
-- 0, o que significa que a entrada de diretório fornecida é crítica (consulte a [seção 6.3.1.2.1](#63121-critical-primary-directory-entries) e a [seção 6.4.1.2.1](#64121-critical-secondary-directory-entries) para entradas críticas de diretório primário e crítico crítico, respectivamente)
-
-- 1, o que significa que a entrada de diretório fornecida é benigna (consulte a [seção 6.3.1.2.2](#63122-benign-primary-directory-entries) e a [seção 6.4.1.2.2](#64122-benign-secondary-directory-entries) para entradas de diretório primário e benignos benignos, respectivamente)
-
-##### <a name="6213-typecategory-field"></a>Campo 6.2.1.3 TypeCategory
-
-O campo TypeCategory deve descrever a categoria da entrada de diretório fornecida.
+O campo TypeImportance deve descrever a importância da entrada de diretório determinada.
 
 Os valores válidos para esse campo devem ser:
 
-- 0, o que significa que a entrada de diretório fornecida é primária (consulte a [seção 6,3](#63-generic-primary-directoryentry-template))
+- 0, o que significa que a entrada de diretório determinada é crítica (consulte a Seção [6.3.1.2.1](#63121-critical-primary-directory-entries) e a [Seção 6.4.1.2.1](#64121-critical-secondary-directory-entries) para entradas de diretórios secundários críticos e críticos, respectivamente)
 
-- 1, o que significa que a entrada de diretório fornecida é secundária (consulte a [seção 6,4](#64-generic-secondary-directoryentry-template))
+- 1, o que significa que a entrada de diretório determinada é benigna (consulte a Seção [6.3.1.2.2 e](#63122-benign-primary-directory-entries) Seção [6.4.1.2.2](#64122-benign-secondary-directory-entries) para entradas de diretório secundário benigno e primário benigno, respectivamente)
 
-##### <a name="6214-inuse-field"></a>Campo 6.2.1.4 InUse
+##### <a name="6213-typecategory-field"></a>Campo TypeCategory 6.2.1.3
 
-O campo InUse deve descrever se a entrada de diretório fornecida está em uso ou não.
+O campo TypeCategory deve descrever a categoria da entrada de diretório determinada.
 
 Os valores válidos para esse campo devem ser:
 
-- 0, o que significa que a entrada de diretório fornecida não está em uso; Isso significa que a estrutura fornecida realmente é uma entrada de diretório não usada
+- 0, o que significa que a entrada de diretório determinada é primária (consulte [a Seção 6.3](#63-generic-primary-directoryentry-template))
 
-- 1, o que significa que a entrada de diretório fornecida está em uso; Isso significa que a estrutura fornecida é uma entrada de diretório regular
+- 1, o que significa que a entrada de diretório determinada é secundária (consulte [a Seção 6.4](#64-generic-secondary-directoryentry-template))
 
-#### <a name="622-firstcluster-field"></a>Campo 6.2.2 FirstCluster
+##### <a name="6214-inuse-field"></a>6.2.1.4 Campo de inutilização
 
-O campo FirstCluster deve conter o índice do primeiro cluster de uma alocação no heap de cluster associado à entrada de diretório fornecida.
+O campo InUse deve descrever se a entrada de diretório determinada está em uso ou não.
+
+Os valores válidos para esse campo devem ser:
+
+- 0, o que significa que a entrada de diretório determinada não está em uso; isso significa que a estrutura determinada, na verdade, é uma entrada de diretório nãoutilizada
+
+- 1, o que significa que a entrada de diretório determinada está em uso; isso significa que a estrutura determinada é uma entrada de diretório regular
+
+#### <a name="622-firstcluster-field"></a>6.2.2 FirstCluster Field
+
+O campo FirstCluster deve conter o índice do primeiro cluster de uma alocação no Heap de Cluster associado à entrada de diretório determinada.
 
 O intervalo válido de valores para esse campo deve ser:
 
@@ -1479,144 +1479,144 @@ O intervalo válido de valores para esse campo deve ser:
 
 - Entre 2 e ClusterCount + 1, que é o intervalo de índices de cluster válidos
 
-Estruturas que derivam desse modelo podem redefinir os campos FirstCluster e DATALENGTH, se uma alocação de cluster não for compatível com a estrutura derivada.
+Estruturas que derivam desse modelo poderão redefinir os campos FirstCluster e DataLength, se uma alocação de cluster não for compatível com a estrutura derivada.
 
-#### <a name="623-datalength-field"></a>Campo de comprimento de 6.2.3
+#### <a name="623-datalength-field"></a>6.2.3 Campo DataLength
 
-O campo data Length descreve o tamanho, em bytes, dos dados que a alocação de cluster associada contém.
+O campo DataLength descreve o tamanho, em bytes, dos dados que a alocação de cluster associada contém.
 
-O intervalo válido de valor para esse campo é:
+O intervalo válido de valor para este campo é:
 
-- Pelo menos 0; Se o campo FirstCluster contiver o valor 0, o único valor válido desse campo será 0
+- Pelo menos 0; se o campo FirstCluster contiver o valor 0, o único valor válido desse campo será 0
 
 - No máximo ClusterCount \* 2<sup>SectorsPerClusterShift</sup> \* 2<sup>BytesPerSectorShift</sup>
 
-Estruturas que derivam desse modelo podem redefinir os campos FirstCluster e DATALENGTH, se uma alocação de cluster não for possível para a estrutura derivada.
+Estruturas que derivam desse modelo poderão redefinir os campos FirstCluster e DataLength, se uma alocação de cluster não for possível para a estrutura derivada.
 
-### <a name="63-generic-primary-directoryentry-template"></a>Modelo DirectoryEntry primário genérico 6,3
+### <a name="63-generic-primary-directoryentry-template"></a>6.3 Modelo de Directory Primário Genérico
 
-A primeira entrada de diretório em um conjunto de entradas de diretório deve ser uma entrada de diretório primário. Todas as entradas de diretório subsequentes, se houver, no conjunto de entradas de diretório deverão ser entradas de diretório secundárias (consulte a [seção 6,4](#64-generic-secondary-directoryentry-template)).
+A primeira entrada de diretório em um conjunto de entrada de diretório deve ser uma entrada de diretório primário. Todas as entradas de diretório subsequentes, se alguma, no conjunto de entradas de diretório deverão ser entradas de diretório secundário (consulte [a Seção 6.4](#64-generic-secondary-directoryentry-template)).
 
-A capacidade de interpretar o modelo DirectoryEntry primário genérico é obrigatória.
+A capacidade de interpretar o modelo Directory Primário GenéricoEntrada é obrigatória.
 
-Todas as estruturas de entrada de diretório primário derivam do modelo DirectoryEntry primário genérico (consulte a [tabela 16](#table-16-generic-primary-directoryentry-template)), que deriva do modelo DirectoryEntry genérico (consulte a [seção 6,2](#62-generic-directoryentry-template)).
+Todas as estruturas de entrada de diretório primário derivam do modelo Directory Primário GenéricoEntrada (consulte Tabela [16](#table-16-generic-primary-directoryentry-template)), que deriva do modelo DirectoryEntry Genérico (consulte a [Seção 6.2](#62-generic-directoryentry-template)).
 
 <div id="table-16-generic-primary-directoryentry-template" />
 
-**Tabela 16 modelo de DirectoryEntry primário genérico**
+**Tabela 16 Modelo de Diretório Primário Genérico**
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><strong>Comentários</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>EntryType</td>
+<td>Entrytype</td>
 <td>0</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#631-entrytype-field">seção 6.3.1</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#631-entrytype-field">a Seção 6.3.1</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>SecondaryCount</td>
 <td>1</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#632-secondarycount-field">seção 6.3.2</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#632-secondarycount-field">e a Seção 6.3.2</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>SetChecksum</td>
 <td>2</td>
 <td>2</td>
-<td>Esse campo é obrigatório e a <a href="#633-setchecksum-field">seção 6.3.3</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#633-setchecksum-field">e a Seção 6.3.3</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>GeneralPrimaryFlags</td>
 <td>4</td>
 <td>2</td>
-<td>Esse campo é obrigatório e a <a href="#634-generalprimaryflags-field">seção 6.3.4</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#634-generalprimaryflags-field">a Seção 6.3.4</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>CustomDefined</td>
 <td>6</td>
 <td>14</td>
-<td>Este campo é obrigatório e as estruturas que derivam desse modelo definem seu conteúdo.</td>
+<td>Esse campo é obrigatório e as estruturas que derivam desse modelo definem seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>FirstCluster</td>
 <td>20</td>
 <td>4</td>
-<td>Esse campo é obrigatório e a <a href="#635-firstcluster-field">seção 6.3.5</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#635-firstcluster-field">e a Seção 6.3.5</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
-<td>DataLength</td>
+<td>Datalength</td>
 <td>24</td>
 <td>8</td>
-<td>Esse campo é obrigatório e a <a href="#636-datalength-field">seção 6.3.6</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#636-datalength-field">a Seção 6.3.6</a> define seu conteúdo.</td>
 </tr>
 </tbody>
 </table>
 
 #### <a name="631-entrytype-field"></a>Campo EntryType 6.3.1
 
-O campo EntryType deve estar de acordo com a definição fornecida no modelo DirectoryEntry genérico (consulte a [seção 6.2.1](#621-entrytype-field)).
+O campo EntryType deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Genérico (consulte [a Seção 6.2.1](#621-entrytype-field)).
 
-##### <a name="6311-typecode-field"></a>Campo 6.3.1.1 TypeCode
+##### <a name="6311-typecode-field"></a>Campo TypeCode 6.3.1.1
 
-O campo TypeCode deve estar de acordo com a definição fornecida no modelo DirectoryEntry genérico (consulte a [seção 6.2.1.1](#6211-typecode-field)).
+O campo TypeCode deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Genérico (consulte [a Seção 6.2.1.1](#6211-typecode-field)).
 
-##### <a name="6312-typeimportance-field"></a>Campo 6.3.1.2 TypeImportance
+##### <a name="6312-typeimportance-field"></a>Campo TypeImportance 6.3.1.2
 
-O campo TypeImportance deve estar em conformidade com a definição fornecida no modelo DirectoryEntry genérico (consulte a [seção 6.2.1.2](#6212-typeimportance-field)).
+O campo TypeImportance deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Genérico (consulte a [Seção 6.2.1.2](#6212-typeimportance-field)).
 
-###### <a name="63121-critical-primary-directory-entries"></a>6.3.1.2.1 entradas de diretório primário crítico
+###### <a name="63121-critical-primary-directory-entries"></a>6.3.1.2.1 Entradas críticas do diretório primário
 
-As entradas do diretório primário crítico contêm informações que são críticas para o gerenciamento adequado de um volume exFAT. Somente o diretório raiz contém entradas de diretório primário crítico (as entradas de diretório de arquivo são uma exceção, consulte a [seção 7,4](#74-file-directory-entry)).
+Entradas de diretório primário críticas contêm informações que são essenciais para o gerenciamento adequado de um volume exFAT. Somente o diretório raiz contém entradas críticas de diretório primário (entradas de diretório de arquivo são uma exceção, consulte [a Seção 7.4](#74-file-directory-entry)).
 
-A definição das entradas do diretório primário crítico se correlaciona com o número de revisão exFAT principal. As implementações devem dar suporte a todas as entradas críticas do diretório primário e registrar somente as estruturas de entrada do diretório primário crítico que essa especificação define.
+A definição de entradas de diretório primário críticas se correlaciona com o número de revisão exFAT principal. As implementações devem dar suporte a todas as entradas de diretório primário críticas e devem registrar apenas as estruturas de entrada de diretório primário críticas definidas por essa especificação.
 
-###### <a name="63122-benign-primary-directory-entries"></a>6.3.1.2.2 entradas de diretório primário benignos
+###### <a name="63122-benign-primary-directory-entries"></a>6.3.1.2.2 Entradas benignas do diretório primário
 
-As entradas de diretório primário benignos contêm informações adicionais que podem ser úteis para gerenciar um volume exFAT. Qualquer diretório pode conter entradas de diretório primário benignos.
+Entradas de diretório primário benignas contêm informações adicionais que podem ser úteis para gerenciar um volume exFAT. Qualquer diretório pode conter entradas de diretório primário benignas.
 
-A definição de entradas de diretório primário benignos se correlaciona com o número de revisão exFAT secundária. O suporte para qualquer entrada de diretório primário benigno nesta especificação ou em qualquer especificação subsequente, define é opcional. Uma entrada de diretório primário benigno não reconhecida processa a entrada de diretório inteira definida como não reconhecida (além da definição dos modelos de entrada de diretório aplicáveis).
+A definição de entradas de diretório primário benigna correlaciona-se ao número de revisão exFAT secundário. O suporte para qualquer entrada de diretório primário benigno que essa especificação ou qualquer especificação subsequente definir é opcional. Uma entrada de diretório primário benigno não reconhecedo renderiza todo o conjunto de entradas de diretório como não reconheceu (além da definição dos modelos de entrada de diretório aplicáveis).
 
-##### <a name="6313-typecategory-field"></a>Campo 6.3.1.3 TypeCategory
+##### <a name="6313-typecategory-field"></a>Campo TypeCategory 6.3.1.3
 
-O campo TypeCategory deve estar em conformidade com a definição fornecida no modelo DirectoryEntry genérico (consulte a [seção 6.2.1.3](#6213-typecategory-field)).
+O campo TypeCategory deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Genérico (consulte a [Seção 6.2.1.3](#6213-typecategory-field)).
 
-Para este modelo, o valor válido para esse campo deve ser 0.
+Para esse modelo, o valor válido para esse campo deve ser 0.
 
-##### <a name="6314-inuse-field"></a>Campo 6.3.1.4 InUse
+##### <a name="6314-inuse-field"></a>6.3.1.4 Campo de inutilização
 
-O campo InUse deve estar de acordo com a definição fornecida no modelo DirectoryEntry genérico (consulte a [seção 6.2.1.4](#6214-inuse-field)).
+O campo InUse deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Genérico (consulte [a Seção 6.2.1.4](#6214-inuse-field)).
 
-#### <a name="632-secondarycount-field"></a>Campo 6.3.2 SecondaryCount
+#### <a name="632-secondarycount-field"></a>Campo SecondaryCount 6.3.2
 
-O campo SecondaryCount deve descrever o número de entradas de diretório secundários que seguem imediatamente a entrada de diretório primário fornecida. Essas entradas de diretório secundárias, juntamente com a entrada de diretório primário fornecida, compõem o conjunto de entradas de diretório.
+O campo SecondaryCount deve descrever o número de entradas de diretório secundário que seguem imediatamente a entrada de diretório primário determinada. Essas entradas de diretório secundário, juntamente com a entrada de diretório primário determinada, compõem o conjunto de entradas de diretório.
 
 O intervalo válido de valores para esse campo deve ser:
 
-- Pelo menos 0, o que significa que essa entrada de diretório primário é a única entrada no conjunto de entradas de diretório
+- Pelo menos 0, o que significa que essa entrada de diretório primário é a única entrada no conjunto de entrada de diretório
 
-- No máximo 255, o que significa que as próximas entradas de diretório 255 e essa entrada de diretório primário compõem a entrada de diretório definida
+- No máximo 255, o que significa que as próximas 255 entradas de diretório e essa entrada de diretório primário compõem o conjunto de entrada de diretório
 
-As estruturas de entrada de diretório primário crítico que derivam desse modelo podem redefinir os campos SecondaryCount e setverification.
+Estruturas de entrada de diretório primário críticas que derivam desse modelo podem redefinir os campos SecondaryCount e SetChecksum.
 
-#### <a name="633-setchecksum-field"></a>Campo 6.3.3 SetChecksum
+#### <a name="633-setchecksum-field"></a>6.3.3 Campo SetChecksum
 
-O campo setverificative deve conter a soma de verificação de todas as entradas de diretório no conjunto de entradas de diretório fornecido. No entanto, a soma de verificação exclui esse campo (veja a [Figura 2](#figure-2-entrysetchecksum-computation)). As implementações devem verificar se o conteúdo deste campo é válido antes de usar qualquer outra entrada de diretório no conjunto de entradas de diretório especificado.
+O campo SetChecksum deve conter a verificação de todas as entradas de diretório no conjunto de entrada de diretório determinado. No entanto, a verificação exclui esse campo (consulte [a Figura 2](#figure-2-entrysetchecksum-computation)). As implementações deverão verificar se o conteúdo desse campo é válido antes de usar qualquer outra entrada de diretório no conjunto de entrada de diretório determinado.
 
-As estruturas de entrada de diretório primário crítico que derivam desse modelo podem redefinir os campos SecondaryCount e setverification.
+Estruturas de entrada de diretório primário críticas que derivam desse modelo podem redefinir os campos SecondaryCount e SetChecksum.
 
 <div id="figure-2-entrysetchecksum-computation" />
 
-**Figura 2 computação EntrySetChecksum**
+**Figura 2 EntrySetChecksum Computation**
 
 ```C
 UInt16 EntrySetChecksum
@@ -1641,24 +1641,24 @@ UInt16 EntrySetChecksum
 }
 ```
 
-#### <a name="634-generalprimaryflags-field"></a>Campo 6.3.4 GeneralPrimaryFlags
+#### <a name="634-generalprimaryflags-field"></a>6.3.4 Campo GeneralPrimaryFlags
 
-O campo GeneralPrimaryFlags contém sinalizadores (consulte a [tabela 17](#table-17-generic-generalprimaryflags-field-structure)).
+O campo GeneralPrimaryFlags contém sinalizadores (consulte [Tabela 17](#table-17-generic-generalprimaryflags-field-structure)).
 
-As estruturas de entrada de diretório primário crítico que derivam deste modelo podem redefinir esse campo.
+Estruturas de entrada de diretório primário críticas que derivam desse modelo podem redefinir esse campo.
 
 <div id="table-17-generic-generalprimaryflags-field-structure" />
 
-**Tabela 17 estrutura de campo GeneralPrimaryFlags genérica**
+**Estrutura de campo GeneralPrimaryFlags genérica da Tabela 17**
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
-<p><strong>parte</strong></p></th>
+<p><strong>(bit)</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
-<p><strong>bits</strong></p></th>
+<p><strong>(bits)</strong></p></th>
 <th><strong>Comentários</strong></th>
 </tr>
 </thead>
@@ -1667,13 +1667,13 @@ As estruturas de entrada de diretório primário crítico que derivam deste mode
 <td>AllocationPossible</td>
 <td>0</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#6341-allocationpossible-field">seção 6.3.4.1</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#6341-allocationpossible-field">a Seção 6.3.4.1</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>NoFatChain</td>
 <td>1</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#6342-nofatchain-field">seção 6.3.4.2</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#6342-nofatchain-field">a Seção 6.3.4.2</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>CustomDefined</td>
@@ -1684,153 +1684,153 @@ As estruturas de entrada de diretório primário crítico que derivam deste mode
 </tbody>
 </table>
 
-##### <a name="6341-allocationpossible-field"></a>Campo 6.3.4.1 AllocationPossible
+##### <a name="6341-allocationpossible-field"></a>6.3.4.1 Campo AllocationPossible
 
-O campo AllocationPossible deve descrever se uma alocação no heap de cluster é possível para a entrada de diretório fornecida.
-
-Os valores válidos para esse campo devem ser:
-
-- 0, o que significa que uma alocação associada de clusters não é possível e os campos FirstCluster e DATALENGTH são realmente indefinidos (estruturas que derivam desse modelo podem redefinir esses campos)
-
-- 1, o que significa que uma alocação associada de clusters é possível e os campos FirstCluster e DATALENGTH são definidos como
-
-##### <a name="6342-nofatchain-field"></a>Campo 6.3.4.2 NoFatChain
-
-O campo NoFatChain deve indicar se o FAT ativo descreve a cadeia de cluster de alocação especificada.
+O campo AllocationPossible deve descrever se uma alocação no Heap de Cluster é possível ou não para a entrada de diretório determinada.
 
 Os valores válidos para esse campo devem ser:
 
-- 0, o que significa que as entradas FAT correspondentes para a cadeia de cluster da alocação são válidas e as implementações devem interpretá-las; Se o campo AllocationPossible contiver o valor 0 ou se o campo AllocationPossible contiver o valor 1 e o campo FirstCluster contiver o valor 0, esse valor válido do campo será 0
+- 0, o que significa que uma alocação associada de clusters não é possível e os campos FirstCluster e DataLength são realmente indefinido (estruturas que derivam desse modelo podem redefinir esses campos)
 
-- 1, o que significa que a alocação associada é uma série contígua de clusters; as entradas FAT correspondentes para os clusters são inválidas e as implementações não devem interpretá-las; as implementações podem usar a seguinte equação para calcular o tamanho da alocação associada: DATALENGTH/(2<sup>SectorsPerClusterShift</sup> \* 2<sup>BytesPerSectorShift</sup>) arredondado para o número inteiro mais próximo
+- 1, o que significa que uma alocação associada de clusters é possível e os campos FirstCluster e DataLength são definidos
 
-Se as estruturas de entrada de diretório primário crítico que derivarem deste modelo redefinirem o campo GeneralPrimaryFlags, as entradas FAT correspondentes para qualquer cadeia de cluster de alocação associada serão válidas.
+##### <a name="6342-nofatchain-field"></a>Campo NoFatChain 6.3.4.2
 
-#### <a name="635-firstcluster-field"></a>Campo 6.3.5 FirstCluster
+O campo NoFatChain deve indicar se o FAT ativo descreve ou não a cadeia de cluster da alocação determinada.
 
-O campo FirstCluster deve estar em conformidade com a definição fornecida no modelo DirectoryEntry genérico (consulte a [seção 6.2.2](#622-firstcluster-field)).
+Os valores válidos para esse campo devem ser:
+
+- 0, o que significa que as entradas FAT correspondentes para a cadeia de clusters da alocação são válidas e as implementações deverão interpretá-las; se o campo AllocationPossible contiver o valor 0 ou se o campo AllocationPossible contiver o valor 1 e o campo FirstCluster contiver o valor 0, o único valor válido desse campo será 0
+
+- 1, o que significa que a alocação associada é uma série contígua de clusters; as entradas FAT correspondentes para os clusters são inválidas e as implementações não devem interpretá-las; as implementações podem usar a equação a seguir para calcular o tamanho da alocação associada: DataLength / (2<sup>SectorsPerClusterShift</sup> \* 2<sup>BytesPerSectorShift</sup>) arredondado para cima até o inteiro mais próximo
+
+Se as estruturas de entrada de diretório primário críticas que derivam desse modelo redefinirem o campo GeneralPrimaryFlags, as entradas FAT correspondentes para a cadeia de cluster de qualquer alocação associada serão válidas.
+
+#### <a name="635-firstcluster-field"></a>6.3.5 Campo FirstCluster
+
+O campo FirstCluster deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Genérico (consulte [a Seção 6.2.2](#622-firstcluster-field)).
 
 Se o bit NoFatChain for 1, FirstCluster deverá apontar para um cluster válido no heap de cluster.
 
-As estruturas de entrada de diretório primário crítico que derivam desse modelo podem redefinir os campos FirstCluster e DATALENGTH. Outras estruturas que derivam desse modelo podem redefinir os campos FirstCluster e DATALENGTH somente se o campo AllocationPossible contiver o valor 0.
+Estruturas de entrada de diretório primário críticas que derivam desse modelo podem redefinir os campos FirstCluster e DataLength. Outras estruturas que derivam desse modelo poderão redefinir os campos FirstCluster e DataLength somente se o campo AllocationPossible contiver o valor 0.
 
-#### <a name="636-datalength-field"></a>Campo de comprimento de 6.3.6
+#### <a name="636-datalength-field"></a>6.3.6 Campo DataLength
 
-O campo DATALENGTH deve estar de acordo com a definição fornecida no modelo DirectoryEntry genérico (consulte a [seção 6.2.3](#623-datalength-field)).
+O campo DataLength deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Genérico (consulte [a Seção 6.2.3](#623-datalength-field)).
 
-Se o bit NoFatChain for 1, DATALENGTH não deverá ser zero. Se o campo FirstCluster for zero, DATALENGTH também deverá ser zero.
+Se o bit NoFatChain for 1, DataLength não deverá ser zero. Se o campo FirstCluster for zero, DataLength também deverá ser zero.
 
-As estruturas de entrada de diretório primário crítico que derivam desse modelo podem redefinir os campos FirstCluster e DATALENGTH. Outras estruturas que derivam desse modelo podem redefinir os campos FirstCluster e DATALENGTH somente se o campo AllocationPossible contiver o valor 0.
+Estruturas de entrada de diretório primário críticas que derivam desse modelo podem redefinir os campos FirstCluster e DataLength. Outras estruturas que derivam desse modelo poderão redefinir os campos FirstCluster e DataLength somente se o campo AllocationPossible contiver o valor 0.
 
-### <a name="64-generic-secondary-directoryentry-template"></a>Modelo de DirectoryEntry secundário genérico 6,4
+### <a name="64-generic-secondary-directoryentry-template"></a>6.4 Modelo directory secundário genérico
 
-A finalidade central das entradas de diretório secundárias é fornecer informações adicionais sobre um conjunto de entrada de diretório. A capacidade de interpretar o modelo DirectoryEntry secundário genérico é obrigatória.
+A finalidade central das entradas de diretório secundário é fornecer informações adicionais sobre um conjunto de entradas de diretório. A capacidade de interpretar o modelo Directory Secundário GenéricoEntrada é obrigatória.
 
-A definição das entradas do diretório secundário crítico e benigno se correlaciona com o número de revisão exFAT secundária. O suporte para qualquer entrada de diretório secundário crítico ou benigno nesta especificação, ou especificações subsequentes, define é opcional.
+A definição de entradas de diretório secundário críticas e benignas correlaciona-se ao número de revisão exFAT secundário. O suporte para qualquer entrada de diretório secundário crítico ou benigno que essa especificação ou especificações subsequentes definirem é opcional.
 
-Todas as estruturas de entrada de diretório secundárias derivam do modelo DirectoryEntry secundário genérico (consulte a [tabela 18](#table-18-generic-secondary-directoryentry-template)), que deriva do modelo DirectoryEntry genérico (consulte a [seção 6,2](#62-generic-directoryentry-template)).
+Todas as estruturas de entrada de diretório secundário derivam do modelo DirectoryEntry Secundário Genérico (consulte Tabela [18](#table-18-generic-secondary-directoryentry-template)), que deriva do modelo DirectoryEntry Genérico (consulte a [Seção 6.2](#62-generic-directoryentry-template)).
 
 <div id="table-18-generic-secondary-directoryentry-template" />
 
-**Tabela 18 modelo de DirectoryEntry secundário genérico**
+**Tabela 18 Modelo directory secundário genérico**
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><strong>Comentários</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>EntryType</td>
+<td>Entrytype</td>
 <td>0</td>
 <td>1</td>
-<td>Este campo é obrigatório e a <a href="#641-entrytype-field">seção</a> de seção 6.4.1 define seu conteúdo.</td>
+<td>Esse campo é obrigatório e a <a href="#641-entrytype-field">Seção 6.4.1</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>GeneralSecondaryFlags</td>
 <td>1</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#642-generalsecondaryflags-field">seção 6.4.2</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#642-generalsecondaryflags-field">a Seção 6.4.2</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>CustomDefined</td>
 <td>2</td>
 <td>18</td>
-<td>Este campo é obrigatório e as estruturas que derivam desse modelo definem seu conteúdo.</td>
+<td>Esse campo é obrigatório e as estruturas que derivam desse modelo definem seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>FirstCluster</td>
 <td>20</td>
 <td>4</td>
-<td>Esse campo é obrigatório e a <a href="#643-firstcluster-field">seção 6.4.3</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#643-firstcluster-field">a Seção 6.4.3</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
-<td>DataLength</td>
+<td>Datalength</td>
 <td>24</td>
 <td>8</td>
-<td>Esse campo é obrigatório e a <a href="#644-datalength-field">seção 6.4.4</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#644-datalength-field">a Seção 6.4.4</a> define seu conteúdo.</td>
 </tr>
 </tbody>
 </table>
 
 #### <a name="641-entrytype-field"></a>Campo EntryType 6.4.1
 
-O campo EntryType deve estar de acordo com a definição fornecida no modelo DirectoryEntry genérico (consulte a [seção 6.2.1](#621-entrytype-field))
+O campo EntryType deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Genérico (consulte [a Seção 6.2.1](#621-entrytype-field))
 
-##### <a name="6411-typecode-field"></a>Campo 6.4.1.1 TypeCode
+##### <a name="6411-typecode-field"></a>Campo TypeCode 6.4.1.1
 
-O campo TypeCode deve estar de acordo com a definição fornecida no modelo DirectoryEntry genérico (consulte a [seção 6.2.1.1](#6211-typecode-field)).
+O campo TypeCode deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Genérico (consulte [a Seção 6.2.1.1](#6211-typecode-field)).
 
-##### <a name="6412-typeimportance-field"></a>Campo 6.4.1.2 TypeImportance
+##### <a name="6412-typeimportance-field"></a>Campo TypeImportance 6.4.1.2
 
-O campo TypeImportance deve estar em conformidade com a definição fornecida no modelo DirectoryEntry genérico (consulte a [seção 6.2.1.2](#6212-typeimportance-field)).
+O campo TypeImportance deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Genérico (consulte a [Seção 6.2.1.2](#6212-typeimportance-field)).
 
-###### <a name="64121-critical-secondary-directory-entries"></a>Entradas do diretório secundário 6.4.1.2.1 crítico
+###### <a name="64121-critical-secondary-directory-entries"></a>6.4.1.2.1 Entradas críticas do diretório secundário
 
-As entradas de diretório secundários essenciais contêm informações que são críticas para o gerenciamento adequado de seu conjunto de entradas de diretório recipiente.
-Embora o suporte para qualquer entrada de diretório secundário crítico específico seja opcional, uma entrada de diretório crítico não reconhecida processa toda a entrada de diretório definida como não reconhecida (além da definição dos modelos de entrada de diretório aplicáveis).
+Entradas críticas de diretório secundário contêm informações que são críticas para o gerenciamento adequado de seu conjunto de entrada de diretório que o contém.
+Embora o suporte para qualquer entrada de diretório secundário crítico específica seja opcional, uma entrada de diretório crítico não marcada renderiza todo o conjunto de entradas de diretório como não reconheceu (além da definição dos modelos de entrada de diretório aplicáveis).
 
-No entanto, se um conjunto de entradas de diretório contiver pelo menos uma entrada de diretório secundário essencial que uma implementação não reconhece, a implementação deverá, no máximo, interpretar os modelos das entradas de diretório na entrada de diretório definida e não os dados que qualquer alocação associada a qualquer entrada de diretório no conjunto de entradas de diretório contiver (as entradas de diretório de arquivo são uma exceção, [7,4](#74-file-directory-entry)consulte a
+No entanto, se um conjunto de entradas de diretório contiver pelo menos uma entrada de diretório secundário crítica que uma implementação não reconheça, a implementação deverá, no máximo, interpretar os modelos das entradas de diretório no conjunto de entradas de diretório e não os dados que qualquer alocação associada a qualquer entrada de diretório no conjunto de entradas de diretório contiver (entradas de diretório de arquivo são uma exceção, consulte a Seção [7.4](#74-file-directory-entry)).
 
-###### <a name="64122-benign-secondary-directory-entries"></a>Entradas de diretório secundário 6.4.1.2.2 benignos
+###### <a name="64122-benign-secondary-directory-entries"></a>6.4.1.2.2 Entradas benignas do diretório secundário
 
-As entradas de diretório secundário benignos contêm informações adicionais que podem ser úteis para gerenciar seu conjunto de entradas de diretório recipiente. O suporte para qualquer entrada de diretório secundário benigno específico é opcional.
-As entradas de diretório secundário benignos não reconhecidas não processam a entrada de diretório inteira definida como não reconhecida.
+Entradas de diretório secundário benignas contêm informações adicionais que podem ser úteis para gerenciar seu conjunto de entrada de diretório que o contém. O suporte para qualquer entrada de diretório secundário benigno específica é opcional.
+Entradas de diretório secundário benignas não reconhecedas não renderiza todo o conjunto de entrada de diretório como não marcado.
 
-As implementações podem ignorar qualquer entrada secundária benigna que não reconheça.
+As implementações podem ignorar qualquer entrada secundária benigna que ela não reconheça.
 
-##### <a name="6413-typecategory-field"></a>Campo 6.4.1.3 TypeCategory
+##### <a name="6413-typecategory-field"></a>Campo TypeCategory 6.4.1.3
 
-O campo TypeCategory deve estar em conformidade com a definição fornecida no modelo DirectoryEntry genérico (consulte a [seção 6.2.1.3](#6213-typecategory-field)).
+O campo TypeCategory deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Genérico (consulte a [Seção 6.2.1.3](#6213-typecategory-field)).
 
-Para este modelo, o valor válido para esse campo é 1.
+Para esse modelo, o valor válido para esse campo é 1.
 
-##### <a name="6414-inuse-field"></a>Campo 6.4.1.4 InUse
+##### <a name="6414-inuse-field"></a>6.4.1.4 Campo de inutilização
 
-O campo InUse deve estar de acordo com a definição fornecida no modelo DirectoryEntry genérico (consulte a [seção 6.2.1.4](#6214-inuse-field)).
+O campo InUse deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Genérico (consulte [a Seção 6.2.1.4](#6214-inuse-field)).
 
-#### <a name="642-generalsecondaryflags-field"></a>Campo 6.4.2 GeneralSecondaryFlags
+#### <a name="642-generalsecondaryflags-field"></a>6.4.2 Campo GeneralSecondaryFlags
 
-O campo GeneralSecondaryFlags contém sinalizadores (consulte a [tabela 19](#table-19-generic-generalsecondaryflags-field-structure)).
+O campo GeneralSecondaryFlags contém sinalizadores (consulte [Tabela 19](#table-19-generic-generalsecondaryflags-field-structure)).
 
 <div id="table-19-generic-generalsecondaryflags-field-structure" />
 
-**Tabela 19 estrutura de campo GeneralSecondaryFlags genérica**
+**Estrutura de campo GeneralSecondaryFlags genérica da Tabela 19**
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
-<p><strong>parte</strong></p></th>
+<p><strong>(bit)</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
-<p><strong>bits</strong></p></th>
+<p><strong>(bits)</strong></p></th>
 <th><strong>Comentários</strong></th>
 </tr>
 </thead>
@@ -1839,13 +1839,13 @@ O campo GeneralSecondaryFlags contém sinalizadores (consulte a [tabela 19](#tab
 <td>AllocationPossible</td>
 <td>0</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#6421-allocationpossible-field">seção 6.4.2.1</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#6421-allocationpossible-field">e a Seção 6.4.2.1</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>NoFatChain</td>
 <td>1</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#6422-nofatchain-field">seção 6.4.2.2</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#6422-nofatchain-field">e a Seção 6.4.2.2</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>CustomDefined</td>
@@ -1856,94 +1856,94 @@ O campo GeneralSecondaryFlags contém sinalizadores (consulte a [tabela 19](#tab
 </tbody>
 </table>
 
-##### <a name="6421-allocationpossible-field"></a>Campo 6.4.2.1 AllocationPossible
+##### <a name="6421-allocationpossible-field"></a>6.4.2.1 Campo AllocationPossible
 
-O campo AllocationPossible deve ter a mesma definição do mesmo campo nomeado no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.4.1](#6341-allocationpossible-field)).
+O campo AllocationPossible deve ter a mesma definição que o mesmo campo nomeado no modelo DirectoryEntry Primário Genérico (consulte a [Seção 6.3.4.1](#6341-allocationpossible-field)).
 
-##### <a name="6422-nofatchain-field"></a>Campo 6.4.2.2 NoFatChain
+##### <a name="6422-nofatchain-field"></a>Campo NoFatChain 6.4.2.2
 
-O campo NoFatChain deve ter a mesma definição do mesmo campo nomeado no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.4.2](#6342-nofatchain-field)).
+O campo NoFatChain deve ter a mesma definição que o campo de mesmo nome no modelo DirectoryEntry Primário Genérico (consulte a [Seção 6.3.4.2](#6342-nofatchain-field)).
 
-#### <a name="643-firstcluster-field"></a>Campo 6.4.3 FirstCluster
+#### <a name="643-firstcluster-field"></a>6.4.3 Campo FirstCluster
 
-O campo FirstCluster deve estar em conformidade com a definição fornecida no modelo DirectoryEntry genérico (consulte a [seção 6.2.2](#622-firstcluster-field)).
+O campo FirstCluster deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Genérico (consulte [a Seção 6.2.2](#622-firstcluster-field)).
 
 Se o bit NoFatChain for 1, FirstCluster deverá apontar para um cluster válido no heap de cluster.
 
-#### <a name="644-datalength-field"></a>Campo de comprimento de 6.4.4
+#### <a name="644-datalength-field"></a>6.4.4 Campo DataLength
 
-O campo DATALENGTH deve estar de acordo com a definição fornecida no modelo DirectoryEntry genérico (consulte a [seção 6.2.3](#623-datalength-field)).
+O campo DataLength deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Genérico (consulte [a Seção 6.2.3](#623-datalength-field)).
 
-Se o bit NoFatChain for 1, DATALENGTH não deverá ser zero. Se o campo FirstCluster for zero, DATALENGTH também deverá ser zero.
+Se o bit NoFatChain for 1, DataLength não deverá ser zero. Se o campo FirstCluster for zero, DataLength também deverá ser zero.
 
-## <a name="7-directory-entry-definitions"></a>7 definições de entrada de diretório
+## <a name="7-directory-entry-definitions"></a>7 Definições de entrada de diretório
 
-A revisão 1, 0 do sistema de arquivos exFAT define as seguintes entradas de diretório:
+A revisão 1.00 do sistema de arquivos exFAT define as seguintes entradas de diretório:
 
 - Primário crítico
 
-  - Bitmap de alocação ([seção 7,1](#71-allocation-bitmap-directory-entry))
+  - Bitmap de alocação ([Seção 7.1](#71-allocation-bitmap-directory-entry))
 
-  - Tabela de maiúsculas e minúsculas ([seção 7,2](#72-up-case-table-directory-entry))
+  - Tabela de caso up-case ([Seção 7.2](#72-up-case-table-directory-entry))
 
-  - Rótulo do volume ([seção 7,3](#73-volume-label-directory-entry))
+  - Rótulo do volume ([Seção 7.3](#73-volume-label-directory-entry))
 
-  - Arquivo ([seção 7,4](#74-file-directory-entry))
+  - Arquivo ([Seção 7.4](#74-file-directory-entry))
 
 - Primário benigno
 
-  - GUID do volume ([seção 7,5](#75-volume-guid-directory-entry))
+  - GUID do volume ([Seção 7.5](#75-volume-guid-directory-entry))
 
-  - Preenchimento de TexFAT ([seção 7,10](#710-texfat-padding-directory-entry))
+  - Preenchimento de TexFAT ([Seção 7.10](#710-texfat-padding-directory-entry))
 
 <!-- -->
 
 - Secundário crítico
 
-  - Extensão de fluxo ([seção 7,6](#76-stream-extension-directory-entry))
+  - Extensão de fluxo ([Seção 7.6](#76-stream-extension-directory-entry))
 
-  - Nome do arquivo ([seção 7,7](#77-file-name-directory-entry))
+  - Nome do arquivo ([Seção 7.7](#77-file-name-directory-entry))
 
 - Secundário benigno
 
-  - Extensão do fornecedor ([seção 7,8](#78-vendor-extension-directory-entry))
+  - Extensão de fornecedor ([Seção 7.8](#78-vendor-extension-directory-entry))
 
-  - Alocação de fornecedor ([seção 7,9](#79-vendor-allocation-directory-entry))
+  - Alocação de fornecedor ([Seção 7.9](#79-vendor-allocation-directory-entry))
 
-### <a name="71-allocation-bitmap-directory-entry"></a>7,1 entrada de diretório de bitmap de alocação
+### <a name="71-allocation-bitmap-directory-entry"></a>7.1 Entrada de diretório bitmap de alocação
 
-No sistema de arquivos exFAT, uma FAT não descreve o estado de alocação dos clusters; em vez disso, um bitmap de alocação faz. Os bitmaps de alocação existem no heap de cluster (consulte a [seção 7.1.5](#715-allocation-bitmap)) e têm entradas de diretório primário crítico correspondentes no diretório raiz (consulte a [tabela 20](#table-20-allocation-bitmap-directoryentry-structure)).
+No sistema de arquivos exFAT, uma FAT não descreve o estado de alocação de clusters; em vez disso, um Bitmap de Alocação faz. Bitmaps de alocação existem no Heap de Cluster (consulte a Seção [7.1.5](#715-allocation-bitmap)) e têm entradas de diretório primário críticas correspondentes no diretório raiz (consulte [a Tabela 20](#table-20-allocation-bitmap-directoryentry-structure)).
 
-O campo NumberOfFats determina o número de entradas de diretório de bitmap de alocação válidas no diretório raiz. Se o campo NumberOfFats contiver o valor 1, o único número válido de entradas de diretório de bitmap de alocação será 1. Além disso, a entrada do diretório de bitmap de uma alocação só será válida se ela descrever o primeiro bitmap de alocação (consulte a [seção 7.1.2.1](#7121-bitmapidentifier-field)). Se o campo NumberOfFats contiver o valor 2, o único número válido de entradas de diretório de bitmap de alocação será 2.
-Além disso, as duas entradas de diretório de bitmap de alocação só serão válidas se uma descreve o primeiro bitmap de alocação e a outra descreve o segundo bitmap de alocação.
+O campo NumberOfFats determina o número de entradas de diretório bitmap de alocação válidas no diretório raiz. Se o campo NumberOfFats contiver o valor 1, o único número válido de entradas de diretório bitmap de alocação será 1. Além disso, a única entrada de diretório bitmap de alocação só será válida se descrever o Bitmap de Primeira Alocação (consulte a [Seção 7.1.2.1](#7121-bitmapidentifier-field)). Se o campo NumberOfFats contiver o valor 2, o único número válido de entradas de diretório de Bitmap de Alocação será 2.
+Além disso, as duas entradas de diretório bitmap de alocação só serão válidas se uma descrever o Bitmap de Primeira Alocação e a outra descrever o Segundo Bitmap de Alocação.
 
 <div id="table-20-allocation-bitmap-directoryentry-structure" />
 
-**Tabela 20 bitmap de alocação da estrutura DirectoryEntry**
+**Tabela 20 Alocação Diretório bitmap Estrutura de entrada**
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><strong>Comentários</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>EntryType</td>
+<td>Entrytype</td>
 <td>0</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#711-entrytype-field">seção 7.1.1</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#711-entrytype-field">a Seção 7.1.1</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>BitmapFlags</td>
 <td>1</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#712-bitmapflags-field">seção 7.1.2</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#712-bitmapflags-field">a Seção 7.1.2</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>Reservado</td>
@@ -1955,57 +1955,57 @@ Além disso, as duas entradas de diretório de bitmap de alocação só serão v
 <td>FirstCluster</td>
 <td>20</td>
 <td>4</td>
-<td>Esse campo é obrigatório e a <a href="#713-firstcluster-field">seção 7.1.3</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#713-firstcluster-field">a Seção 7.1.3</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
-<td>DataLength</td>
+<td>Datalength</td>
 <td>24</td>
 <td>8</td>
-<td>Esse campo é obrigatório e a <a href="#714-datalength-field">seção 7.1.4</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#714-datalength-field">a Seção 7.1.4</a> define seu conteúdo.</td>
 </tr>
 </tbody>
 </table>
 
 #### <a name="711-entrytype-field"></a>Campo EntryType 7.1.1
 
-O campo EntryType deve estar de acordo com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.1](#631-entrytype-field)).
+O campo EntryType deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Primário Genérico (consulte [a Seção 6.3.1](#631-entrytype-field)).
 
-##### <a name="7111-typecode-field"></a>Campo 7.1.1.1 TypeCode
+##### <a name="7111-typecode-field"></a>Campo TypeCode 7.1.1.1
 
-O campo TypeCode deve estar de acordo com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.1.1](#6311-typecode-field)).
+O campo TypeCode deve estar em conformidade com a definição fornecida no modelo Directory Primário GenéricoEntry (consulte [a Seção 6.3.1.1](#6311-typecode-field)).
 
-Para uma entrada de diretório de bitmap de alocação, o valor válido para esse campo é 1.
+Para uma entrada de diretório bitmap de alocação, o valor válido para esse campo é 1.
 
-##### <a name="7112-typeimportance-field"></a>Campo 7.1.1.2 TypeImportance
+##### <a name="7112-typeimportance-field"></a>Campo TypeImportance 7.1.1.2
 
-O campo TypeImportance deve estar em conformidade com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.1.2](#6312-typeimportance-field)).
+O campo TypeImportance deve estar em conformidade com a definição fornecida no modelo Directory Primário GenéricoEntry (consulte a [Seção 6.3.1.2](#6312-typeimportance-field)).
 
-Para uma entrada de diretório de bitmap de alocação, o valor válido para esse campo é 0.
+Para uma entrada de diretório bitmap de alocação, o valor válido para esse campo é 0.
 
-##### <a name="7113-typecategory-field"></a>Campo 7.1.1.3 TypeCategory
+##### <a name="7113-typecategory-field"></a>Campo TypeCategory 7.1.1.3
 
-O campo TypeCategory deve estar em conformidade com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.1.3](#6313-typecategory-field)).
+O campo TypeCategory deve estar em conformidade com a definição fornecida no modelo Directory Primário GenéricoEntry (consulte a [Seção 6.3.1.3](#6313-typecategory-field)).
 
-##### <a name="7114-inuse-field"></a>Campo 7.1.1.4 InUse
+##### <a name="7114-inuse-field"></a>7.1.1.4 Campo de inutilização
 
-O campo InUse deve estar de acordo com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.1.4](#6314-inuse-field)).
+O campo InUse deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Genérico (consulte a [Seção 6.3.1.4](#6314-inuse-field)).
 
-#### <a name="712-bitmapflags-field"></a>Campo 7.1.2 BitmapFlags
+#### <a name="712-bitmapflags-field"></a>7.1.2 Campo BitmapFlags
 
-O campo BitmapFlags contém sinalizadores (consulte a [tabela 21](#table-21-bitmapflags-field-structure)).
+O campo BitmapFlags contém sinalizadores (consulte [Tabela 21](#table-21-bitmapflags-field-structure)).
 
 <div id="table-21-bitmapflags-field-structure" />
 
-**Tabela 21 BitmapFlags estrutura de campo**
+**Estrutura do campo BitmapFlags da Tabela 21**
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
-<p><strong>parte</strong></p></th>
+<p><strong>(bit)</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
-<p><strong>bits</strong></p></th>
+<p><strong>(bits)</strong></p></th>
 <th><strong>Comentários</strong></th>
 </tr>
 </thead>
@@ -2014,7 +2014,7 @@ O campo BitmapFlags contém sinalizadores (consulte a [tabela 21](#table-21-bitm
 <td>BitmapIdentifier</td>
 <td>0</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#7121-bitmapidentifier-field">seção 7.1.2.1</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#7121-bitmapidentifier-field">a Seção 7.1.2.1</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>Reservado</td>
@@ -2025,54 +2025,54 @@ O campo BitmapFlags contém sinalizadores (consulte a [tabela 21](#table-21-bitm
 </tbody>
 </table>
 
-##### <a name="7121-bitmapidentifier-field"></a>Campo 7.1.2.1 BitmapIdentifier
+##### <a name="7121-bitmapidentifier-field"></a>7.1.2.1 Campo BitmapIdentifier
 
-O campo BitmapIdentifier deve indicar qual bitmap de alocação a entrada de diretório fornecida descreve. As implementações deverão usar o primeiro bitmap de alocação em conjunto com a primeira FAT e deverão usar o segundo bitmap de alocação em conjunto com a segunda FAT. O campo ActiveFat descreve qual FAT e bitmap de alocação estão ativos.
+O campo BitmapIdentifier deve indicar qual Bitmap de Alocação a entrada de diretório determinada descreve. As implementações devem usar o Bitmap de Primeira Alocação em conjunto com a Primeira FAT e devem usar o Segundo Bitmap de Alocação em conjunto com o segundo FAT. O campo ActiveFat descreve qual FAT e Bitmap de Alocação estão ativos.
 
 Os valores válidos para esse campo devem ser:
 
-- 0, o que significa que a entrada de diretório fornecida descreve o primeiro bitmap de alocação
+- 0, o que significa que a entrada de diretório determinada descreve o bitmap de primeira alocação
 
-- 1, que significa que a entrada de diretório fornecida descreve o segundo bitmap de alocação e só é possível quando NumberOfFats contém o valor 2
+- 1, o que significa que a entrada de diretório determinada descreve o Segundo Bitmap de Alocação e só é possível quando NumberOfFats contém o valor 2
 
-#### <a name="713-firstcluster-field"></a>7.1.3 campo FirstCluster
+#### <a name="713-firstcluster-field"></a>7.1.3 Campo FirstCluster
 
-O campo FirstCluster deve estar em conformidade com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.5](#635-firstcluster-field)).
+O campo FirstCluster deve estar em conformidade com a definição fornecida no modelo Directory Primário GenéricoEntry (consulte [a Seção 6.3.5](#635-firstcluster-field)).
 
-Esse campo contém o índice do primeiro cluster da cadeia de cluster, como descreve a FAT, que hospeda o bitmap de alocação.
+Esse campo contém o índice do primeiro cluster da cadeia de clusters, como descreve o FAT, que hospeda o Bitmap de Alocação.
 
-#### <a name="714-datalength-field"></a>Campo de comprimento de 7.1.4
+#### <a name="714-datalength-field"></a>7.1.4 Campo DataLength
 
-O campo datacluster deve estar de acordo com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.6](#636-datalength-field)).
+O campo DataCluster deve estar em conformidade com a definição fornecida no modelo Directory Primário GenéricoEntry (consulte [a Seção 6.3.6](#636-datalength-field)).
 
-#### <a name="715-allocation-bitmap"></a>Bitmap de alocação 7.1.5
+#### <a name="715-allocation-bitmap"></a>7.1.5 Bitmap de alocação
 
-Um bitmap de alocação registra o estado de alocação dos clusters no heap de cluster. Cada bit em um bitmap de alocação indica se o cluster correspondente está disponível para alocação ou não.
+Um Bitmap de Alocação registra o estado de alocação dos clusters no Heap de Cluster. Cada bit em um Bitmap de Alocação indica se seu cluster correspondente está disponível para alocação ou não.
 
-Um bitmap de alocação representa clusters do índice mais baixo para o mais alto (consulte a [tabela 22](#table-22-allocation-bitmap-structure)). Por motivos históricos, o primeiro cluster tem o índice 2.
-Observação: o primeiro bit no bitmap é o bit de ordem mais baixo do primeiro byte.
+Um Bitmap de Alocação representa clusters do índice mais baixo para o mais alto (consulte [a Tabela 22](#table-22-allocation-bitmap-structure)). Por motivos históricos, o primeiro cluster tem o índice 2.
+Observação: o primeiro bit no bitmap é o bit de ordem mais baixa do primeiro byte.
 
 <div id="table-22-allocation-bitmap-structure" />
 
-**Tabela 22 estrutura de bitmap de alocação**
+**Estrutura de bitmap de alocação da Tabela 22**
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
-<p><strong>parte</strong></p></th>
+<p><strong>(bit)</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
-<p><strong>bits</strong></p></th>
+<p><strong>(bits)</strong></p></th>
 <th><strong>Comentários</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>BitmapEntry [2]</td>
+<td>BitmapEntry[2]</td>
 <td>0</td>
 <td>1</td>
-<td>Este campo é obrigatório e a <a href="#7151-bitmapentry2--bitmapentryclustercount1-fields">seção</a> de seção 7.1.5.1 define seu conteúdo.</td>
+<td>Esse campo é obrigatório e a <a href="#7151-bitmapentry2--bitmapentryclustercount1-fields">Seção 7.1.5.1</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td><p>.</p>
@@ -2089,59 +2089,59 @@ Observação: o primeiro bit no bitmap é o bit de ordem mais baixo do primeiro 
 <p>.</p></td>
 </tr>
 <tr class="odd">
-<td>BitmapEntry [ClusterCount + 1]</td>
-<td>ClusterCount-1</td>
+<td>BitmapEntry[ClusterCount+1]</td>
+<td>ClusterCount – 1</td>
 <td>1</td>
-<td><p>Esse campo é obrigatório e a <a href="#7151-bitmapentry2--bitmapentryclustercount1-fields">seção 7.1.5.1</a> define seu conteúdo.</p>
-<p>Observação: os setores de inicialização principal e de backup contêm o campo ClusterCount.</p></td>
+<td><p>Esse campo é obrigatório e <a href="#7151-bitmapentry2--bitmapentryclustercount1-fields">a Seção 7.1.5.1</a> define seu conteúdo.</p>
+<p>Observação: os Setores de Inicialização principal e de backup contêm o campo ClusterCount.</p></td>
 </tr>
 <tr class="even">
 <td>Reservado</td>
 <td>ClusterCount</td>
-<td>(DATALENGTH * 8) – ClusterCount</td>
-<td><p>Esse campo é obrigatório e seu conteúdo, se houver, é reservado.</p>
-<p>Observação: os setores de inicialização principal e de backup contêm o campo ClusterCount.</p></td>
+<td>(DataLength * 8) – ClusterCount</td>
+<td><p>Esse campo é obrigatório e seu conteúdo, se algum, é reservado.</p>
+<p>Observação: os Setores de Inicialização principal e de backup contêm o campo ClusterCount.</p></td>
 </tr>
 </tbody>
 </table>
 
-##### <a name="7151-bitmapentry2--bitmapentryclustercount1-fields"></a>7.1.5.1 BitmapEntry \[ 2 \] ... BitmapEntry \[ ClusterCount + 1 \] campos
+##### <a name="7151-bitmapentry2--bitmapentryclustercount1-fields"></a>7.1.5.1 BitmapEntry \[ \] 2... Campos BitmapEntry \[ ClusterCount+1 \]
 
-Cada campo BitmapEntry nessa matriz representa um cluster no heap de cluster. BitmapEntry \[ 2 \] representa o primeiro cluster no heap de cluster e BitmapEntry \[ ClusterCount + 1 \] representa o último cluster no heap de cluster.
+Cada campo BitmapEntry nessa matriz representa um cluster no Heap de Cluster. O BitmapEntry 2 representa o primeiro cluster no Heap de Cluster e \[ \] o Cluster BitmapEntryCount+1 representa o último \[ cluster no Heap de \] Cluster.
 
 Os valores válidos para esses campos devem ser:
 
 - 0, que descreve o cluster correspondente como disponível para alocação
 
-- 1, que descreve o cluster correspondente como não disponível para alocação (uma alocação de cluster já pode consumir o cluster correspondente ou o FAT ativo pode descrever o cluster correspondente como inadequado)
+- 1, que descreve o cluster correspondente como não disponível para alocação (uma alocação de cluster já pode consumir o cluster correspondente ou o FAT ativo pode descrever o cluster correspondente como ruim)
 
-### <a name="72-up-case-table-directory-entry"></a>7,2 entrada do diretório da tabela de maiúsculas e minúsculas
+### <a name="72-up-case-table-directory-entry"></a>7.2 Entrada de diretório de tabela de caso up-case
 
-A tabela de maiúsculas e minúsculas define a conversão de letras minúsculas em caracteres maiúsculos. Isso é importante devido à entrada do diretório de nome de arquivo (consulte a seção 7,7) usando caracteres Unicode e o sistema de arquivos exFAT que não diferencia maiúsculas de minúsculas e a preservação de maiúsculas e minúsculas. A tabela de maiúsculas e minúsculas existe no heap de cluster (consulte a [seção 7.2.5](#725-up-case-table)) e tem uma entrada de diretório primário crítico correspondente no diretório raiz (consulte a [tabela 23](#table-23-up-case-table-directoryentry-structure)). O número válido de entradas do diretório da tabela de maiúsculas e minúsculas é 1.
+A Tabela de Maiúsculas e Maiúsculas define a conversão de caracteres de letras maiúsculas em letras maiúsculas. Isso é importante devido à entrada do diretório Nome do Arquivo (consulte a Seção 7.7) usando caracteres Unicode e o sistema de arquivos exFAT não importando maiúsculas de minúsculas e preservando maiúsculas de minúsculas. A Tabela de Caso Up existe no Heap de Cluster (consulte a Seção [7.2.5](#725-up-case-table)) e tem uma entrada de diretório primário crítica correspondente no diretório raiz (consulte Tabela [23](#table-23-up-case-table-directoryentry-structure)). O número válido de entradas de diretório tabela de caso up-case é 1.
 
-Devido à relação entre a tabela de caso e os nomes de arquivo, as implementações não devem modificar a tabela de maiúsculas e minúsculas, exceto como resultado de operações de formato.
+Devido à relação entre os nomes de tabela de caso up-case e de arquivo, as implementações não devem modificar a Tabela de Caso Up, exceto como resultado de operações de formato.
 
 <div id="table-23-up-case-table-directoryentry-structure" />
 
-**Tabela 23 estrutura de tabela de maiúsculas e minúsculas**
+**Tabela 23 Diretório de tabela de caso up-case Estrutura de entrada**
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><strong>Comentários</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>EntryType</td>
+<td>Entrytype</td>
 <td>0</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#721-entrytype-field">seção 7.2.1</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#721-entrytype-field">a Seção 7.2.1</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>Reserved1</td>
@@ -2153,7 +2153,7 @@ Devido à relação entre a tabela de caso e os nomes de arquivo, as implementa�
 <td>TableChecksum</td>
 <td>4</td>
 <td>4</td>
-<td>Esse campo é obrigatório e a <a href="#722-tablechecksum-field">seção 7.2.2</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#722-tablechecksum-field">a Seção 7.2.2</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>Reserved2</td>
@@ -2165,50 +2165,50 @@ Devido à relação entre a tabela de caso e os nomes de arquivo, as implementa�
 <td>FirstCluster</td>
 <td>20</td>
 <td>4</td>
-<td>Esse campo é obrigatório e a <a href="#723-firstcluster-field">seção 7.2.3</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#723-firstcluster-field">a Seção 7.2.3</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
-<td>DataLength</td>
+<td>Datalength</td>
 <td>24</td>
 <td>8</td>
-<td>Esse campo é obrigatório e a <a href="#724-datalength-field">seção 7.2.4</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#724-datalength-field">a Seção 7.2.4</a> define seu conteúdo.</td>
 </tr>
 </tbody>
 </table>
 
 #### <a name="721-entrytype-field"></a>Campo EntryType 7.2.1
 
-O campo EntryType deve estar de acordo com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.1](#631-entrytype-field)).
+O campo EntryType deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Primário Genérico (consulte [a Seção 6.3.1](#631-entrytype-field)).
 
-##### <a name="7211-typecode-field"></a>Campo 7.2.1.1 TypeCode
+##### <a name="7211-typecode-field"></a>Campo TypeCode 7.2.1.1
 
-O campo TypeCode deve estar de acordo com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.1.1](#6311-typecode-field)).
+O campo TypeCode deve estar em conformidade com a definição fornecida no modelo Directory Primário GenéricoEntry (consulte [a Seção 6.3.1.1](#6311-typecode-field)).
 
-Para a entrada do diretório da tabela de maiúsculas e minúsculas, o valor válido para esse campo é
+Para a entrada do diretório Up-case Table, o valor válido para esse campo é
 2.
 
-##### <a name="7212-typeimportance-field"></a>Campo 7.2.1.2 TypeImportance
+##### <a name="7212-typeimportance-field"></a>Campo TypeImportance 7.2.1.2
 
-O campo TypeImportance deve estar em conformidade com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.1.2](#6312-typeimportance-field)).
+O campo TypeImportance deve estar em conformidade com a definição fornecida no modelo Directory Primário GenéricoEntry (consulte a [Seção 6.3.1.2](#6312-typeimportance-field)).
 
-Para a entrada do diretório da tabela de maiúsculas e minúsculas, o valor válido para esse campo é
+Para a entrada do diretório Up-case Table, o valor válido para esse campo é
 0.
 
-##### <a name="7213-typecategory-field"></a>Campo 7.2.1.3 TypeCategory
+##### <a name="7213-typecategory-field"></a>Campo TypeCategory 7.2.1.3
 
-O campo TypeCategory deve estar em conformidade com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.1.3](#6313-typecategory-field)).
+O campo TypeCategory deve estar em conformidade com a definição fornecida no modelo Directory Primário GenéricoEntry (consulte a [Seção 6.3.1.3](#6313-typecategory-field)).
 
-##### <a name="7214-inuse-field"></a>Campo 7.2.1.4 InUse
+##### <a name="7214-inuse-field"></a>7.2.1.4 Campo de inutilização
 
-O campo InUse deve estar de acordo com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.1.4](#6314-inuse-field)).
+O campo InUse deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Genérico (consulte a [Seção 6.3.1.4](#6314-inuse-field)).
 
-#### <a name="722-tablechecksum-field"></a>Campo 7.2.2 TableChecksum
+#### <a name="722-tablechecksum-field"></a>7.2.2 Campo TableChecksum
 
-O campo TableChecksum contém a soma de verificação da tabela de maiúsculas e minúsculas (que os campos FirstCluster e DATALENGTH descrevem). As implementações devem verificar se o conteúdo deste campo é válido antes de usar a tabela de maiúsculas e minúsculas.
+O campo TableChecksum contém a verificação da Tabela de Caso Up (que os campos FirstCluster e DataLength descrevem). As implementações deverão verificar se o conteúdo desse campo é válido antes de usar a Tabela de Caso Up.
 
 <div id="figure-3-tablechecksum-computation" />
 
-**Figura 3 computação TableChecksum**
+**Figura 3 TableChecksum Computation**
 
 ```C
 UInt32 TableChecksum
@@ -2229,32 +2229,31 @@ UInt32 TableChecksum
 }
 ```
 
-#### <a name="723-firstcluster-field"></a>Campo 7.2.3 FirstCluster
+#### <a name="723-firstcluster-field"></a>7.2.3 Campo FirstCluster
 
-O campo FirstCluster deve estar em conformidade com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.5](#635-firstcluster-field)).
+O campo FirstCluster deve estar em conformidade com a definição fornecida no modelo Directory Primário GenéricoEntry (consulte [a Seção 6.3.5](#635-firstcluster-field)).
 
-Esse campo contém o índice do primeiro cluster da cadeia de cluster, como descreve a FAT, que hospeda a tabela de casos de funcionamento.
+Esse campo contém o índice do primeiro cluster da cadeia de clusters, como descreve o FAT, que hospeda a Tabela de Caso Up.
 
-#### <a name="724-datalength-field"></a>Campo de comprimento de 7.2.4
+#### <a name="724-datalength-field"></a>7.2.4 Campo DataLength
 
-O campo datacluster deve estar de acordo com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.6](#636-datalength-field)).
+O campo DataCluster deve estar em conformidade com a definição fornecida no modelo Directory Primário GenéricoEntry (consulte [a Seção 6.3.6](#636-datalength-field)).
 
-#### <a name="725-up-case-table"></a>Tabela de casos de 7.2.5
+#### <a name="725-up-case-table"></a>7.2.5 Tabela de caso up-case
 
-Uma tabela de maiúsculas e minúsculas é uma série de mapeamentos de caracteres Unicode. Um mapeamento de caracteres consiste em um campo de 2 bytes, com o índice do campo na tabela de maiúsculas e minúsculas que representa o caractere Unicode a ser atualizado e o campo de 2 bytes que representa o caractere Unicode com maiúsculas e minúsculas.
+Uma tabela de caso up é uma série de mapeamentos de caracteres Unicode. Um mapeamento de caracteres consiste em um campo de 2 byte, com o índice do campo na tabela de caso para cima que representa o caractere Unicode a ser em caso up-case e o campo de 2 byte que representa o caractere Unicode em caso acima.
 
-Os primeiros 128 caracteres Unicode têm mapeamentos obrigatórios (consulte a [tabela 24](#table-24-mandatory-first-128-up-case-table-entries)).
-Uma tabela de maiúsculas e minúsculas que tem qualquer outro mapeamento de caractere para qualquer um dos primeiros 128 caracteres Unicode é inválida.
+Os primeiros 128 caracteres Unicode têm mapeamentos obrigatórios (consulte [Tabela 24](#table-24-mandatory-first-128-up-case-table-entries)).
+Uma tabela de caso up que tem qualquer outro mapeamento de caracteres para qualquer um dos primeiros 128 caracteres Unicode é inválida.
 
-As implementações que dão suporte apenas a caracteres do intervalo de mapeamento obrigatório podem ignorar os mapeamentos do restante da tabela de maiúsculas e minúsculas. Essas implementações só devem usar caracteres do intervalo de mapeamento obrigatório ao criar ou renomear arquivos (por meio da entrada do diretório de nome de arquivo, consulte a [seção 7,7](#77-file-name-directory-entry)). Quando houver nomes de arquivo existentes em maiúsculas, essas implementações não deverão ter caracteres do intervalo de mapeamento não obrigatório, mas as deixarão intactas no nome de arquivo resultante (isto é um backup parcial). Ao comparar nomes de arquivo, essas implementações devem tratar nomes de arquivo que diferem do nome em comparação somente por caracteres Unicode do intervalo de mapeamento não obrigatório como equivalente. Embora esses nomes de arquivo sejam apenas potencialmente equivalentes, essas implementações não podem garantir que o nome de arquivo completamente completo não colide com o nome em comparação.
+Implementações que só suportam caracteres do intervalo de mapeamento obrigatório podem ignorar os mapeamentos do restante da tabela de caso acima. Essas implementações só devem usar caracteres do intervalo de mapeamento obrigatório ao criar ou renomear arquivos (por meio da entrada do diretório Nome do Arquivo, consulte [a Seção 7.7](#77-file-name-directory-entry)). Quando há nomes de arquivo existentes com uso de caixa de dados, essas implementações não devem ter caracteres de caso up-case do intervalo de mapeamento não obrigatório, mas devem deixá-los intactos no nome de arquivo com caso acima resultante (esse é um uso parcial de caixa de caracteres). Ao comparar nomes de arquivo, essas implementações devem tratar nomes de arquivo que diferem do nome em comparação apenas por caracteres Unicode do intervalo de mapeamento não obrigatório como equivalente. Embora esses nomes de arquivo sejam potencialmente equivalentes, essas implementações não podem garantir que o nome de arquivo totalmente em caso de caso não colida com o nome em comparação.
 
 <div id="table-24-mandatory-first-128-up-case-table-entries" />
 
-**Tabela 24 primeiras entradas da tabela de casos de mais 128 obrigatórios**
+**Tabela 24 As primeiras 128 entradas da tabela de caso up-case obrigatórias**
 
-| **Índice de tabela** | **Entradas de tabela** |           |           |           |           |           |           |           |
+| Índice de tabela | + 0 | + 1 | + 2 | + 3 | + 4 | + 5 | + 6 | + 7 |
 |-----------------|-------------------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-|                 | **+ 0**           | **+ 1**   | **+ 2**   | **+ 3**   | **+ 4**   | **+ 5**   | **+ 6**   | **+ 7**   |
 | **0000h**       | 0000h             | 0001h     | 0002h     | 0003h     | 0004h     | 0005h     | 0006h     | 0007h     |
 | **0008h**       | 0008h             | 0009h     | 000Ah     | 000Bh     | 000Ch     | 000Dh     | 000Eh     | 000Fh     |
 | **0010h**       | 0010h             | 0011h     | 0012h     | 0013h     | 0014h     | 0015h     | 0016h     | 0017h     |
@@ -2272,18 +2271,18 @@ As implementações que dão suporte apenas a caracteres do intervalo de mapeame
 | **0070h**       | **0050h**         | **0051h** | **0052h** | **0053h** | **0054h** | **0055h** | **0056h** | **0057h** |
 | **0078h**       | **0058h**         | **0059h** | **005Ah** | 007Bh     | 007Ch     | 007Dh     | 007Eh     | 007Fh     |
 
-**(Observação: entradas com mapeamentos de maiúsculas e minúsculas sem identidade estão em negrito)**
+**(Observação: as entradas com mapeamentos de caso up-case que não são de identidade estão em negrito)**
 
-Ao Formatar um volume, as implementações podem gerar uma tabela de maiúsculas e minúsculas em um formato compactado usando a compactação de mapeamento de identidade, já que uma grande parte do espaço de caracteres Unicode não tem nenhum conceito de case (o que significa que os caracteres "minúsculos" e "maiúsculas" são equivalentes).
-As implementações compactam uma tabela de maiúsculas e minúsculas, representando uma série de mapeamentos de identidade com o valor FFFFh seguido com o número de mapeamentos de identidade.
+Após a formatação de um volume, as implementações podem gerar uma tabela em maiúsculas em um formato compactado usando a compactação de mapeamento de identidade, já que uma grande parte do espaço de caracteres Unicode não tem nenhum conceito de maiúsculas e vírgulas (o que significa que os caracteres "letras maiúsculas" e "letras maiúsculas" são equivalentes).
+As implementações compactam uma tabela em caso up representando uma série de mapeamentos de identidade com o valor FFFFh seguido pelo número de mapeamentos de identidade.
 
-Por exemplo, uma implementação pode representar os primeiros mapeamentos de caractere 100 (64h) com as oito entradas a seguir de uma tabela compactada em maiúsculas:
+Por exemplo, uma implementação pode representar os primeiros mapeamentos de 100 (64h) de caracteres com as oito entradas a seguir de uma tabela compactada de caso:
 
 > FFFFh, 0061h, 0041h, 0042h, 0043h
 
-As duas primeiras entradas indicam os primeiros 97 (61h) caracteres (de 0000h para 0060h) têm mapeamentos de identidade. Os caracteres subsequentes, 0061h a 0063h, são mapeados para os caracteres 0041h por meio de 0043h, respectivamente.
+As duas primeiras entradas indicam que os primeiros 97 (61h) caracteres (de 0000h a 0060h) têm mapeamentos de identidade. Os caracteres subsequentes, 0061h a 0063h, mapeiam para os caracteres 0041h a 0043h, respectivamente.
 
-A capacidade de fornecer uma tabela de casos compactados na formatação de um volume é opcional. No entanto, a capacidade de interpretar uma tabela de maiúsculas e minúsculas descompactada e compactada é obrigatória. O valor do campo TableChecksum sempre está em conformidade com a forma como a tabela de maiúsculas e minúsculas existe no volume, que pode estar no formato compactado ou descompactado.
+A capacidade de fornecer uma tabela compactada em caso de ocorrência ao formatar um volume é opcional. No entanto, a capacidade de interpretar uma tabela de caso compactada e compactada é obrigatória. O valor do campo TableChecksum sempre está em conformidade com a forma como a tabela de maiúsculas e minúsculas existe no volume, que pode estar no formato compactado ou descompactado.
 
 ##### <a name="7251-recommended-up-case-table"></a>Tabela de casos de 7.2.5.1 recomendado
 
@@ -2295,9 +2294,8 @@ Se uma implementação definir sua própria tabela de casos ativos, compactada o
 
 **Tabela 25 tabela de maiúsculas e minúsculas recomendada no formato compactado**
 
-| **Deslocamento bruto** | **Entradas de tabela compactadas** |         |         |         |         |         |         |         |
+| Deslocamento bruto | + 0 |  + 1       |  + 2       |  + 3       |  + 4       | + 5        |  + 6       | + 7        |
 |----------------|------------------------------|---------|---------|---------|---------|---------|---------|---------|
-|                | **+ 0**                      | **+ 1** | **+ 2** | **+ 3** | **+ 4** | **+ 5** | **+ 6** | **+ 7** |
 | **0000h**      | 0000h                        | 0001h   | 0002h   | 0003h   | 0004h   | 0005h   | 0006h   | 0007h   |
 | **0008h**      | 0008h                        | 0009h   | 000Ah   | 000Bh   | 000Ch   | 000Dh   | 000Eh   | 000Fh   |
 | **0010h**      | 0010h                        | 0011h   | 0012h   | 0013h   | 0014h   | 0015h   | 0016h   | 0017h   |
@@ -2385,7 +2383,7 @@ Se uma implementação definir sua própria tabela de casos ativos, compactada o
 | **02A0h**      | 02A0h                        | 02A1h   | 02A2h   | 02A3h   | 02A4h   | 02A5h   | 02A6h   | 02A7h   |
 | **02A8h**      | 02A8h                        | 02A9h   | 02AAh   | 02ABh   | 02ACh   | 02ADh   | 02AEh   | 02AFh   |
 | **02B0h**      | 02B0h                        | 02B1h   | 02B2h   | 02B3h   | 02B4h   | 02B5h   | 02B6h   | 02B7h   |
-| **02B8h**      | 02B8h                        | 02B9h   | 02BAh   | 02BBh   | 02BCh   | 02BDh   | 02BEh   | 02BFh   |
+| **02B8h**      | 02B8h                        | 02B9h   | 02BAh   | 02Bh   | 02BCh   | 02BDh   | 02BEh   | 02BFh   |
 | **02C0h**      | 02C0h                        | 02C1h   | 02C2h   | 02C3h   | 02C4h   | 02C5h   | 02C6h   | 02C7h   |
 | **02C8h**      | 02C8h                        | 02C9h   | 02CAh   | 02CBh   | 02CCh   | 02CDh   | 02CEh   | 02CFh   |
 | **02D0h**      | 02D0h                        | 02D1h   | 02D2h   | 02D3h   | 02D4h   | 02D5h   | 02D6h   | 02D7h   |
@@ -2568,7 +2566,7 @@ Se uma implementação definir sua própria tabela de casos ativos, compactada o
 | **0858h**      | 204Ch                        | 204Dh   | 204Eh   | 204Fh   | 2050h   | 2051h   | 2052h   | 2053h   |
 | **0860h**      | 2054h                        | 2055h   | 2056h   | 2057h   | 2058h   | 2059h   | 205Ah   | 205Bh   |
 | **0868h**      | 205Ch                        | 205Dh   | 205Eh   | 205Fh   | 2060h   | 2061h   | 2062h   | 2063h   |
-| **0870h**      | 2004.                        | 2065h   | 2006.   | 2067h   | 2068h   | 2069h   | 206Ah   | 206Bh   |
+| **0870h**      | 2064h                        | 2065h   | 2066h   | 2067h   | 2068h   | 2069h   | 206Ah   | 206Bh   |
 | **0878h**      | 206Ch                        | 206Dh   | 206Eh   | 206Fh   | 2070h   | 2071h   | 2072h   | 2073h   |
 | **0880h**      | 2074h                        | 2075h   | 2076h   | 2077h   | 2078h   | 2079h   | 207Ah   | 207Bh   |
 | **0888h**      | 207Ch                        | 207Dh   | 207Eh   | 207Fh   | 2080h   | 2081h   | 2082h   | 2083h   |
@@ -2596,16 +2594,16 @@ Se uma implementação definir sua própria tabela de casos ativos, compactada o
 | **0938h**      | 212Ch                        | 212Dh   | 212Eh   | 212Fh   | 2130h   | 2131h   | 2132h   | 2133h   |
 | **0940h**      | 2134h                        | 2135h   | 2136h   | 2137h   | 2138h   | 2139h   | 213Ah   | 213Bh   |
 | **0948h**      | 213Ch                        | 213Dh   | 213Eh   | 213Fh   | 2140h   | 2141h   | 2142h   | 2143h   |
-| **0950h**      | 2144h                        | 2145h   | 2146h   | 2147h   | 2148h   | 2149h   | 214Ah   | 214Bh   |
+| **0950h**      | 2144h                        | 2145h   | 2146h   | 2147h   | 2148h   | 2149h   | 214H   | 214Bh   |
 | **0958h**      | 214Ch                        | 214Dh   | 2132h   | 214Fh   | 2150h   | 2151h   | 2152h   | 2153h   |
-| **0960h**      | 2154h                        | 2155h   | 2156h   | 2157h   | 2158h   | 2159h   | 215Ah   | 215Bh   |
+| **0960h**      | 2154h                        | 2155h   | 2156h   | 2157h   | 2158h   | 2159h   | 215H   | 215Bh   |
 | **0968h**      | 215Ch                        | 215Dh   | 215Eh   | 215Fh   | 2160h   | 2161h   | 2162h   | 2163h   |
-| **0970h**      | 2164h                        | 2165h   | 2166h   | 2167h   | 2168h   | 2169h   | 216Ah   | 216Bh   |
+| **0970h**      | 2164h                        | 2165h   | 2166h   | 2167h   | 2168h   | 2169h   | 216H   | 216Bh   |
 | **0978h**      | 216Ch                        | 216Dh   | 216Eh   | 216Fh   | 2160h   | 2161h   | 2162h   | 2163h   |
-| **0980h**      | 2164h                        | 2165h   | 2166h   | 2167h   | 2168h   | 2169h   | 216Ah   | 216Bh   |
+| **0980h**      | 2164h                        | 2165h   | 2166h   | 2167h   | 2168h   | 2169h   | 216H   | 216Bh   |
 | **0988h**      | 216Ch                        | 216Dh   | 216Eh   | 216Fh   | 2180h   | 2181h   | 2182h   | 2183h   |
 | **0990h**      | 2183h                        | FFFFh   | 034Bh   | 24B6h   | 24B7h   | 24B8h   | 24B9h   | 24BAh   |
-| **0998h**      | 24BBh                        | 24BCh   | 24BDh   | 24BEh   | 24BFh   | 24C0h   | 24C1h   | 24C2h   |
+| **0998h**      | 24Bh                        | 24BCh   | 24BDh   | 24BEh   | 24BFh   | 24C0h   | 24C1h   | 24C2h   |
 | **09A0h**      | 24C3h                        | 24C4h   | 24C5h   | 24C6h   | 24C7h   | 24C8h   | 24C9h   | 24CAh   |
 | **09A8h**      | 24CBh                        | 24CCh   | 24CDh   | 24CEh   | 24CFh   | FFFFh   | 0746h   | 2C00h   |
 | **09B0h**      | 2C01h                        | 2C02h   | 2C03h   | 2C04h   | 2C05h   | 2C06h   | 2C07h   | 2C08h   |
@@ -2637,7 +2635,7 @@ Se uma implementação definir sua própria tabela de casos ativos, compactada o
 | **0A80h**      | 10A1h                        | 10A2h   | 10A3h   | 10A4h   | 10A5h   | 10A6h   | 10A7h   | 10A8h   |
 | **0A88h**      | 10A9h                        | 10AAh   | 10ABh   | 10ACh   | 10ADh   | 10AEh   | 10AFh   | 10B0h   |
 | **0A90h**      | 10B1h                        | 10B2h   | 10B3h   | 10B4h   | 10B5h   | 10B6h   | 10B7h   | 10B8h   |
-| **0A98h**      | 10B9h                        | 10BAh   | 10BBh   | 10BCh   | 10BDh   | 10BEh   | 10BFh   | 10C0h   |
+| **0A98h**      | 10B9h                        | 10BAh   | 10Bh   | 10BCh   | 10BDh   | 10BEh   | 10BFh   | 10C0h   |
 | **0AA0h**      | 10C1h                        | 10C2h   | 10C3h   | 10C4h   | 10C5h   | FFFFh   | D21Bh   | FF21h   |
 | **0AA8h**      | FF22h                        | FF23h   | FF24h   | FF25h   | FF26h   | FF27h   | FF28h   | FF29h   |
 | **0AB0h**      | FF2Ah                        | FF2Bh   | FF2Ch   | FF2Dh   | FF2Eh   | FF2Fh   | FF30h   | FF31h   |
@@ -2664,43 +2662,43 @@ Se uma implementação definir sua própria tabela de casos ativos, compactada o
 | **0B58h**      | FFF2h                        | FFF3h   | FFF4h   | FFF5h   | FFF6h   | FFF7h   | FFF8h   | FFF9h   |
 | **0B60h**      | FFFAh                        | FFFBh   | FFFCh   | FFFDh   | FFFEh   | FFFFh   |         |         |
 
-### <a name="73-volume-label-directory-entry"></a>7,3 entrada de diretório de rótulo de volume
+### <a name="73-volume-label-directory-entry"></a>7.3 Entrada de diretório de rótulo de volume
 
-O rótulo do volume é uma cadeia de caracteres Unicode que permite que os usuários finais diferenciem seus volumes de armazenamento. No sistema de arquivos exFAT, o rótulo do volume existe como uma entrada de diretório primário crítico no diretório raiz (consulte a [tabela 26](#table-26-volume-label-directoryentry-structure)). O número válido de entradas de diretório de rótulo de volume varia de 0 a 1.
+O Rótulo do Volume é uma cadeia de caracteres Unicode que permite que os usuários finais diferenciem seus volumes de armazenamento. No sistema de arquivos exFAT, o Rótulo do Volume existe como uma entrada de diretório primário crítica no diretório raiz (consulte [Tabela 26](#table-26-volume-label-directoryentry-structure)). O número válido de entradas de diretório de Rótulo de Volume varia de 0 a 1.
 
 <div id="table-26-volume-label-directoryentry-structure" />
 
-**Tabela 26 estrutura de rótulo de volume DirectoryEntry**
+**Tabela 26 Diretório de Rótulo de VolumeE estrutura de entrada**
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><strong>Comentários</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>EntryType</td>
+<td>Entrytype</td>
 <td>0</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#731-entrytype-field">seção 7.3.1</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#731-entrytype-field">a Seção 7.3.1</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>CharacterCount</td>
 <td>1</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#732-charactercount-field">seção 7.3.2</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#732-charactercount-field">a Seção 7.3.2</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>VolumeLabel</td>
 <td>2</td>
 <td>22</td>
-<td>Esse campo é obrigatório e a <a href="#733-volumelabel-field">seção 7.3.3</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#733-volumelabel-field">a Seção 7.3.3</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>Reservado</td>
@@ -2713,87 +2711,87 @@ O rótulo do volume é uma cadeia de caracteres Unicode que permite que os usuá
 
 #### <a name="731-entrytype-field"></a>Campo EntryType 7.3.1
 
-O campo EntryType deve estar de acordo com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.1](#631-entrytype-field)).
+O campo EntryType deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Primário Genérico (consulte [a Seção 6.3.1](#631-entrytype-field)).
 
-##### <a name="7311-typecode-field"></a>Campo 7.3.1.1 TypeCode
+##### <a name="7311-typecode-field"></a>Campo TypeCode 7.3.1.1
 
-O campo TypeCode deve estar de acordo com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.1.1](#6311-typecode-field)).
+O campo TypeCode deve estar em conformidade com a definição fornecida no modelo Directory Primário GenéricoEntry (consulte [a Seção 6.3.1.1](#6311-typecode-field)).
 
-Para a entrada de diretório de rótulo de volume, o valor válido para esse campo é
+Para a entrada do diretório Rótulo do Volume, o valor válido para esse campo é
 3.
 
-##### <a name="7312-typeimportance-field"></a>Campo 7.3.1.2 TypeImportance
+##### <a name="7312-typeimportance-field"></a>Campo TypeImportance 7.3.1.2
 
-O campo TypeImportance deve estar em conformidade com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.1.2](#6312-typeimportance-field)).
+O campo TypeImportance deve estar em conformidade com a definição fornecida no modelo Directory Primário GenéricoEntry (consulte a [Seção 6.3.1.2](#6312-typeimportance-field)).
 
-Para a entrada de diretório de rótulo de volume, o valor válido para esse campo é
+Para a entrada do diretório Rótulo do Volume, o valor válido para esse campo é
 0.
 
-##### <a name="7313-typecategory-field"></a>Campo 7.3.1.3 TypeCategory
+##### <a name="7313-typecategory-field"></a>Campo TypeCategory 7.3.1.3
 
-O campo TypeCategory deve estar em conformidade com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.1.3](#6313-typecategory-field)).
+O campo TypeCategory deve estar em conformidade com a definição fornecida no modelo Directory Primário GenéricoEntry (consulte a [Seção 6.3.1.3](#6313-typecategory-field)).
 
-##### <a name="7314-inuse-field"></a>Campo 7.3.1.4 InUse
+##### <a name="7314-inuse-field"></a>7.3.1.4 Campo de inutilização
 
-O campo InUse deve estar de acordo com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.1.4](#6314-inuse-field)).
+O campo InUse deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Genérico (consulte a [Seção 6.3.1.4](#6314-inuse-field)).
 
-#### <a name="732-charactercount-field"></a>Campo 7.3.2 CharacterCount
+#### <a name="732-charactercount-field"></a>Campo CharacterCount 7.3.2
 
 O campo CharacterCount deve conter o comprimento da cadeia de caracteres Unicode que o campo VolumeLabel contém.
 
 O intervalo válido de valores para esse campo deve ser:
 
-- Pelo menos 0, o que significa que a cadeia de caracteres Unicode tem 0 caracteres de comprimento (que é o equivalente a nenhum rótulo de volume)
+- Pelo menos 0, o que significa que a cadeia de caracteres Unicode tem 0 caracteres (que é o equivalente a nenhum rótulo de volume)
 
-- No máximo 11, o que significa que a cadeia de caracteres Unicode tem 11 caracteres de comprimento
+- No máximo 11, o que significa que a cadeia de caracteres Unicode tem 11 caracteres
 
-#### <a name="733-volumelabel-field"></a>Campo 7.3.3 VolumeLabel
+#### <a name="733-volumelabel-field"></a>7.3.3 Campo VolumeLabel
 
-O campo VolumeLabel deve conter uma cadeia de caracteres Unicode, que é o nome amigável do volume. O campo VolumeLabel tem o mesmo conjunto de caracteres inválidos que o campo FileName da entrada de diretório de nome de arquivo (consulte a [seção 7.7.3](#773-filename-field)).
+O campo VolumeLabel deve conter uma cadeia de caracteres Unicode, que é o nome amigável do volume. O campo VolumeLabel tem o mesmo conjunto de caracteres inválidos que o campo FileName da entrada do diretório Nome do Arquivo (consulte [a Seção 7.7.3](#773-filename-field)).
 
-### <a name="74-file-directory-entry"></a>7,4 entrada do diretório de arquivos
+### <a name="74-file-directory-entry"></a>7.4 Entrada do Diretório de Arquivos
 
-As entradas de diretório de arquivo descrevem arquivos e diretórios. Elas são entradas de diretório primários críticas e qualquer diretório pode conter zero ou mais entradas de diretório de arquivo (consulte a [tabela 27](#table-27-file-directoryentry)). Para que uma entrada de diretório de arquivo seja válida, exatamente uma entrada de diretório de extensão de fluxo e pelo menos uma entrada de diretório de nome de arquivo deve seguir imediatamente a entrada de diretório de arquivo (consulte a [seção 7,6](#76-stream-extension-directory-entry) e a [seção 7,7](#77-file-name-directory-entry), respectivamente).
+As entradas do diretório de arquivos descrevem arquivos e diretórios. Elas são entradas de diretório primário críticas e qualquer diretório pode conter zero ou mais entradas de diretório de arquivo (consulte [Tabela 27](#table-27-file-directoryentry)). Para que uma entrada de diretório de arquivo seja válida, exatamente uma entrada de diretório da Extensão de Fluxo e pelo menos uma entrada de diretório Nome de Arquivo devem seguir imediatamente a entrada Diretório de arquivos (consulte a Seção [7.6](#76-stream-extension-directory-entry) e a [Seção 7.7,](#77-file-name-directory-entry)respectivamente).
 
 <div id="table-27-file-directoryentry" />
 
-**Tabela 27 arquivo DirectoryEntry**
+**Tabela 27 File DirectoryEntry**
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><strong>Comentários</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>EntryType</td>
+<td>Entrytype</td>
 <td>0</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#741-entrytype-field">seção 7.4.1</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório <a href="#741-entrytype-field">e a Seção 7.4.1</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>SecondaryCount</td>
 <td>1</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#742-secondarycount-field">seção 7.4.2</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#742-secondarycount-field">a Seção 7.4.2</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>SetChecksum</td>
 <td>2</td>
 <td>2</td>
-<td>Esse campo é obrigatório e a <a href="#743-setchecksum-field">seção 7.4.3</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#743-setchecksum-field">a Seção 7.4.3</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
-<td>FileAttributes</td>
+<td>Fileattributes</td>
 <td>4</td>
 <td>2</td>
-<td>Esse campo é obrigatório e a <a href="#744-fileattributes-field">seção 7.4.4</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#744-fileattributes-field">a Seção 7.4.4</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>Reserved1</td>
@@ -2802,42 +2800,42 @@ As entradas de diretório de arquivo descrevem arquivos e diretórios. Elas são
 <td>Esse campo é obrigatório e seu conteúdo é reservado.</td>
 </tr>
 <tr class="even">
-<td>Createtimestamp</td>
+<td>CreateTimestamp</td>
 <td>8</td>
 <td>4</td>
-<td>Esse campo é obrigatório e a <a href="#745-createtimestamp-create10msincrement-and-createutcoffset-fields"> seção 7.4.5 </
+<td>Esse campo é obrigatório e <a href="#745-createtimestamp-create10msincrement-and-createutcoffset-fields"> a Seção 7.4.5 </
 a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>LastModifiedTimestamp</td>
 <td>12</td>
 <td>4</td>
-<td>Esse campo é obrigatório e a <a href="#746-lastmodifiedtimestamp-lastmodified10msincrement-and-lastmodifiedutcoffset-fields">seção 7.4.6</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#746-lastmodifiedtimestamp-lastmodified10msincrement-and-lastmodifiedutcoffset-fields">a Seção 7.4.6</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>LastAccessedTimestamp</td>
 <td>16</td>
 <td>4</td>
-<td>Esse campo é obrigatório e a <a href="#747-lastaccessedtimestamp-and-lastaccessedutcoffset-fields">seção 7.4.7</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#747-lastaccessedtimestamp-and-lastaccessedutcoffset-fields">a Seção 7.4.7</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>Create10msIncrement</td>
 <td>20</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#745-createtimestamp-create10msincrement-and-createutcoffset-fields"> seção 7.4.5 </
+<td>Esse campo é obrigatório e <a href="#745-createtimestamp-create10msincrement-and-createutcoffset-fields"> a Seção 7.4.5 </
 a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>LastModified10msIncrement</td>
 <td>21</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#746-lastmodifiedtimestamp-lastmodified10msincrement-and-lastmodifiedutcoffset-fields">seção 7.4.6</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#746-lastmodifiedtimestamp-lastmodified10msincrement-and-lastmodifiedutcoffset-fields">a Seção 7.4.6</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>CreateUtcOffset</td>
 <td>22</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#745-createtimestamp-create10msincrement-and-createutcoffset-fields"> seção 7.4.5 </
+<td>Esse campo é obrigatório e <a href="#745-createtimestamp-create10msincrement-and-createutcoffset-fields"> a Seção 7.4.5 </
 a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
@@ -2904,7 +2902,7 @@ O campo FileAttributes contém sinalizadores (consulte a [tabela 28](#table-28-f
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
 <p><strong>parte</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
@@ -2998,7 +2996,7 @@ Os campos de carimbo de hora descrevem a data e a hora locais, até uma resoluç
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
 <p><strong>parte</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
@@ -3123,7 +3121,7 @@ Os campos UtcOffset (consulte a [tabela 30](#table-30-utcoffset-field-structure)
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
 <p><strong>parte</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
@@ -3229,73 +3227,73 @@ Como a tabela acima indica, todos os valores possíveis para esse campo são vá
 
 1. A data e hora locais são, na verdade, iguais às do UTC; nesse caso, o valor do campo OffsetValid deve ser 1
 
-2. A data e hora locais não são conhecidas; nesse caso, o valor do campo OffsetValid deve ser 1 e as implementações devem considerar o UTC como data e hora locais
+2. Data e hora locais não são conhecidas; nesse caso, o valor do campo OffsetValid deve ser 1 e as implementações devem considerar UTC como data e hora locais
 
-3. O UTC não é conhecido; nesse caso, o valor do campo OffsetValid deve ser 0
+3. UTC não é conhecido, nesse caso, o valor do campo OffsetValid deve ser 0
 
-Se o deslocamento de data e hora local do UTC não for um múltiplo de 15 minutos, as implementações deverão gravar 17h no campo OffsetFromUtc e deverão considerar o UTC como data e hora locais.
+Se o deslocamento de data e hora local de UTC não for um múltiplo de intervalos de 15 minutos, as implementações deverão registrar 00h no campo OffsetFromUtc e considerar o UTC como data e hora locais.
 
-##### <a name="74102-offsetvalid-field"></a>Campo 7.4.10.2 OffsetValid
+##### <a name="74102-offsetvalid-field"></a>Campo OffsetValid 7.4.10.2
 
-O campo OffsetValid deve descrever se o conteúdo do campo OffsetFromUtc é válido ou não, da seguinte maneira:
+O campo OffsetValid deve descrever se o conteúdo do campo OffsetFromUtc é válido ou não, da seguinte forma:
 
 - 0, o que significa que o conteúdo do campo OffsetFromUtc é inválido
-    > e deve ser 17h
+    > e devem ser 00h
 
 - 1, o que significa que o conteúdo do campo OffsetFromUtc é válido
 
-As implementações só devem definir esse campo como o valor 0 quando o UTC não estiver disponível para computar o valor do campo OffsetFromUtc. Se esse campo contiver o valor 0, as implementações deverão tratar os campos TIMESTAMP e 10msIncrement como tendo o mesmo deslocamento UTC que a data e hora locais atuais.
+As implementações só devem definir esse campo como o valor 0 quando UTC não estiver disponível para calcular o valor do campo OffsetFromUtc. Se esse campo contiver o valor 0, as implementações deverão tratar os campos Timestamp e 10msIncrement como tendo o mesmo deslocamento UTC que a data e hora locais atuais.
 
-### <a name="75-volume-guid-directory-entry"></a>7,5 entrada de diretório GUID de volume
+### <a name="75-volume-guid-directory-entry"></a>7.5 Entrada do diretório GUID do volume
 
-A entrada de diretório GUID de volume contém um GUID que permite implementações para distinguir volumes de modo exclusivo e programaticamente.
-O GUID do volume existe como uma entrada de diretório primário benigno no diretório raiz (consulte a [tabela 32](#table-32-volume-guid-directoryentry)). O número válido de entradas de diretório GUID de volume varia de 0 a 1.
+A entrada do diretório GUID do volume contém um GUID que permite que as implementações diferenciem volumes de forma exclusiva e programática.
+O GUID do Volume existe como uma entrada de diretório primário benigno no diretório raiz (consulte [Tabela 32](#table-32-volume-guid-directoryentry)). O número válido de entradas de diretório GUID de volume varia de 0 a 1.
 
 <div id="table-32-volume-guid-directoryentry" />
 
-**Tabela 32 volume GUID DirectoryEntry**
+**Tabela 32 Volume GUID DirectoryEntry**
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><strong>Comentários</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>EntryType</td>
+<td>Entrytype</td>
 <td>0</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#751-entrytype-field">seção 7.5.1</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#751-entrytype-field">a Seção 7.5.1</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>SecondaryCount</td>
 <td>1</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#752-secondarycount-field">seção 7.5.2</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#752-secondarycount-field">a Seção 7.5.2</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>SetChecksum</td>
 <td>2</td>
 <td>2</td>
-<td>Esse campo é obrigatório e a <a href="#753-setchecksum-field">seção 7.5.3</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#753-setchecksum-field">a Seção 7.5.3</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>GeneralPrimaryFlags</td>
 <td>4</td>
 <td>2</td>
-<td>Esse campo é obrigatório e a <a href="#754-generalprimaryflags-field">seção 7.5.4</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#754-generalprimaryflags-field">a Seção 7.5.4</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>VolumeGuid</td>
 <td>6</td>
 <td>16</td>
-<td>Esse campo é obrigatório e a <a href="#755-volumeguid-field">seção 7.5.5</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#755-volumeguid-field">a Seção 7.5.5</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>Reservado</td>
@@ -3306,96 +3304,96 @@ O GUID do volume existe como uma entrada de diretório primário benigno no dire
 </tbody>
 </table>
 
-#### <a name="751-entrytype-field"></a>Campo de EntryType 7.5.1
+#### <a name="751-entrytype-field"></a>Campo EntryType 7.5.1
 
-O campo EntryType deve estar de acordo com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.1](#631-entrytype-field)).
+O campo EntryType deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Primário Genérico (consulte [a Seção 6.3.1](#631-entrytype-field)).
 
-##### <a name="7511-typecode-field"></a>Campo 7.5.1.1 TypeCode
+##### <a name="7511-typecode-field"></a>Campo TypeCode 7.5.1.1
 
-O campo TypeCode deve estar de acordo com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.1.1](#6311-typecode-field)).
+O campo TypeCode deve estar em conformidade com a definição fornecida no modelo Directory Primário GenéricoEntry (consulte [a Seção 6.3.1.1](#6311-typecode-field)).
 
-Para a entrada de diretório GUID de volume, o valor válido para esse campo é
+Para a entrada do diretório GUID do volume, o valor válido para esse campo é
 0.
 
-##### <a name="7512-typeimportance-field"></a>Campo 7.5.1.2 TypeImportance
+##### <a name="7512-typeimportance-field"></a>Campo TypeImportance 7.5.1.2
 
-O campo TypeImportance deve estar em conformidade com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.1.2](#6312-typeimportance-field)).
+O campo TypeImportance deve estar em conformidade com a definição fornecida no modelo Directory Primário GenéricoEntry (consulte a [Seção 6.3.1.2](#6312-typeimportance-field)).
 
-Para a entrada de diretório GUID de volume, o valor válido para esse campo é
+Para a entrada do diretório GUID do volume, o valor válido para esse campo é
 1.
 
-##### <a name="7513-typecategory-field"></a>Campo 7.5.1.3 TypeCategory
+##### <a name="7513-typecategory-field"></a>Campo TypeCategory 7.5.1.3
 
-O campo TypeCategory deve estar em conformidade com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.1.3](#6313-typecategory-field)).
+O campo TypeCategory deve estar em conformidade com a definição fornecida no modelo Directory Primário GenéricoEntry (consulte a [Seção 6.3.1.3](#6313-typecategory-field)).
 
-##### <a name="7514-inuse-field"></a>Campo 7.5.1.4 InUse
+##### <a name="7514-inuse-field"></a>7.5.1.4 Campo de inutilização
 
-O campo InUse deve estar de acordo com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.1.4](#6314-inuse-field)).
+O campo InUse deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Genérico (consulte a [Seção 6.3.1.4](#6314-inuse-field)).
 
-#### <a name="752-secondarycount-field"></a>Campo 7.5.2 SecondaryCount
+#### <a name="752-secondarycount-field"></a>7.5.2 Campo SecondaryCount
 
-O campo SecondaryCount deve estar em conformidade com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.2](#632-secondarycount-field)).
+O campo SecondaryCount deve estar em conformidade com a definição fornecida no modelo Directory Primário GenéricoEntry (consulte [a Seção 6.3.2](#632-secondarycount-field)).
 
-Para a entrada de diretório GUID de volume, o valor válido para esse campo é
+Para a entrada do diretório GUID do volume, o valor válido para esse campo é
 0.
 
-#### <a name="753-setchecksum-field"></a>Campo 7.5.3 SetChecksum
+#### <a name="753-setchecksum-field"></a>7.5.3 Campo SetChecksum
 
-O campo SetChecksum deve estar de acordo com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.3](#633-setchecksum-field)).
+O campo SetChecksum deve estar em conformidade com a definição fornecida no modelo Directory Primário GenéricoEntry (consulte [a Seção 6.3.3](#633-setchecksum-field)).
 
-#### <a name="754-generalprimaryflags-field"></a>Campo 7.5.4 GeneralPrimaryFlags
+#### <a name="754-generalprimaryflags-field"></a>7.5.4 Campo GeneralPrimaryFlags
 
-O campo GeneralPrimaryFlags deve estar em conformidade com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.4](#634-generalprimaryflags-field)) e define o conteúdo do campo CustomDefined a ser reservado.
+O campo GeneralPrimaryFlags deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Genérico (consulte a Seção [6.3.4)](#634-generalprimaryflags-field)e define o conteúdo do campo CustomDefined a ser reservado.
 
-##### <a name="7541-allocationpossible-field"></a>Campo 7.5.4.1 AllocationPossible
+##### <a name="7541-allocationpossible-field"></a>7.5.4.1 Campo AllocationPossible
 
-O campo AllocationPossible deve estar em conformidade com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.4.1](#6341-allocationpossible-field)).
+O campo AllocationPossible deve estar em conformidade com a definição fornecida no modelo Directory Primário GenéricoEntry (consulte a [Seção 6.3.4.1](#6341-allocationpossible-field)).
 
-Para a entrada de diretório GUID de volume, o valor válido para esse campo é
+Para a entrada do diretório GUID do volume, o valor válido para esse campo é
 0.
 
-##### <a name="7542-nofatchain-field"></a>Campo 7.5.4.2 NoFatChain
+##### <a name="7542-nofatchain-field"></a>7.5.4.2 Campo NoFatChain
 
-O campo NoFatChain deve estar em conformidade com a definição fornecida no modelo DirectoryEntry primário genérico (consulte a [seção 6.3.4.2](#6342-nofatchain-field)).
+O campo NoFatChain deve estar em conformidade com a definição fornecida no modelo Directory Primário GenéricoEntry (consulte a [Seção 6.3.4.2](#6342-nofatchain-field)).
 
-#### <a name="755-volumeguid-field"></a>Campo 7.5.5 VolumeGuid
+#### <a name="755-volumeguid-field"></a>7.5.5 Campo VolumeGuid
 
-O campo VolumeGuid deve conter um GUID que identifica exclusivamente o volume especificado.
+O campo VolumeGuid deve conter um GUID que identifica exclusivamente o volume determinado.
 
-Todos os valores possíveis para esse campo são válidos, exceto o GUID NULL, que é {00000000-0000-0000-0000-000000000000} .
+Todos os valores possíveis para esse campo são válidos, exceto o GUID nulo, que é {00000000-0000-0000-0000-000000000000} .
 
-### <a name="76-stream-extension-directory-entry"></a>Entrada de diretório de extensão de fluxo 7,6
+### <a name="76-stream-extension-directory-entry"></a>7.6 Entrada do diretório de extensão de fluxo
 
-A entrada de diretório de extensão de fluxo é uma entrada de diretório secundário essencial em conjuntos de entrada de diretório de arquivo (consulte a [tabela 33](#table-33-stream-extension-directoryentry)). O número válido de entradas de diretório de extensão de fluxo em um conjunto de entrada de diretório de arquivos é 1.
-Além disso, essa entrada de diretório será válida somente se imediatamente seguir a entrada do diretório de arquivos.
+A entrada do diretório Extensão de Fluxo é uma entrada de diretório secundário crítica em Conjuntos de entradas de diretório de arquivos (consulte [Tabela 33](#table-33-stream-extension-directoryentry)). O número válido de entradas de diretório da Extensão de Fluxo em um conjunto de entradas do diretório Arquivo é 1.
+Além disso, essa entrada de diretório só será válida se seguir imediatamente a entrada Diretório de arquivos.
 
 <div id="table-33-stream-extension-directoryentry" />
 
-**Tabela 33 extensão de fluxo DirectoryEntry**
+**Tabela 33 Diretório de Extensão de FluxoEntry**
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><strong>Comentários</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>EntryType</td>
+<td>Entrytype</td>
 <td>0</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#761-entrytype-field">seção 7.6.1</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#761-entrytype-field">a Seção 7.6.1</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>GeneralSecondaryFlags</td>
 <td>1</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#762-generalsecondaryflags-field">seção 7.6.2</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#762-generalsecondaryflags-field">a Seção 7.6.2</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>Reserved1</td>
@@ -3407,7 +3405,7 @@ Além disso, essa entrada de diretório será válida somente se imediatamente s
 <td>NameLength</td>
 <td>3</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#763-namelength-field">seção 7.6.3</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#763-namelength-field">a Seção 7.6.3</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>NameHash</td>
@@ -3561,7 +3559,7 @@ Todos os filhos de uma determinada entrada de diretório devem ter conjuntos de 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
 <p><strong>minuciosa</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
@@ -3599,46 +3597,46 @@ O campo EntryType deve estar de acordo com a definição fornecida no modelo Dir
 
 O campo TypeCode deve estar de acordo com a definição fornecida no modelo DirectoryEntry secundário genérico (consulte a [seção 6.4.1.1](#6411-typecode-field)).
 
-Para a entrada de diretório de extensão de fluxo, o valor válido para esse campo é 1.
+Para a entrada do diretório Extensão de Fluxo, o valor válido para esse campo é 1.
 
-##### <a name="7712-typeimportance-field"></a>Campo 7.7.1.2 TypeImportance
+##### <a name="7712-typeimportance-field"></a>Campo TypeImportance 7.7.1.2
 
-O campo TypeImportance deve estar em conformidade com a definição fornecida no modelo DirectoryEntry secundário genérico (consulte a [seção 6.4.1.2](#6412-typeimportance-field)).
+O campo TypeImportance deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Secundário Genérico (consulte a [Seção 6.4.1.2](#6412-typeimportance-field)).
 
-Para a entrada de diretório de extensão de fluxo, o valor válido para esse campo é 0.
+Para a entrada do diretório Extensão de Fluxo, o valor válido para esse campo é 0.
 
-##### <a name="7713-typecategory-field"></a>Campo 7.7.1.3 TypeCategory
+##### <a name="7713-typecategory-field"></a>Campo TypeCategory 7.7.1.3
 
-O campo TypeCategory deve estar em conformidade com a definição fornecida no modelo DirectoryEntry secundário genérico (consulte a [seção 6.4.1.3](#6413-typecategory-field)).
+O campo TypeCategory deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Secundário Genérico (consulte a [Seção 6.4.1.3](#6413-typecategory-field)).
 
-##### <a name="7714-inuse-field"></a>Campo 7.7.1.4 InUse
+##### <a name="7714-inuse-field"></a>7.7.1.4 Campo de inutilização
 
-O campo InUse deve estar de acordo com a definição fornecida no modelo DirectoryEntry secundário genérico (consulte a [seção 6.4.1.4](#6414-inuse-field)).
+O campo InUse deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Secundário Genérico (consulte a [Seção 6.4.1.4](#6414-inuse-field)).
 
-#### <a name="772-generalsecondaryflags-field"></a>Campo 7.7.2 GeneralSecondaryFlags
+#### <a name="772-generalsecondaryflags-field"></a>7.7.2 Campo GeneralSecondaryFlags
 
-O campo GeneralSecondaryFlags deve estar em conformidade com a definição fornecida no modelo DirectoryEntry secundário genérico (consulte a [seção 6.4.2](#642-generalsecondaryflags-field)) e define o conteúdo do campo CustomDefined a ser reservado.
+O campo GeneralSecondaryFlags deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Genérico (consulte a Seção [6.4.2](#642-generalsecondaryflags-field)) e define o conteúdo do campo CustomDefined a ser reservado.
 
-##### <a name="7721-allocationpossible-field"></a>Campo 7.7.2.1 AllocationPossible
+##### <a name="7721-allocationpossible-field"></a>7.7.2.1 Campo AllocationPossible
 
-O campo AllocationPossible deve estar em conformidade com a definição fornecida no modelo DirectoryEntry secundário genérico (consulte a [seção 6.4.2.1](#6421-allocationpossible-field)).
+O campo AllocationPossible deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Secundário Genérico (consulte a [Seção 6.4.2.1](#6421-allocationpossible-field)).
 
-Para a entrada de diretório de extensão de fluxo, o valor válido para esse campo é 0.
+Para a entrada do diretório Extensão de Fluxo, o valor válido para esse campo é 0.
 
-##### <a name="7722-nofatchain-field"></a>Campo 7.7.2.2 NoFatChain
+##### <a name="7722-nofatchain-field"></a>7.7.2.2 Campo NoFatChain
 
-O campo NoFatChain deve estar em conformidade com a definição fornecida no modelo DirectoryEntry secundário genérico (consulte a [seção 6.4.2.2](#6422-nofatchain-field)).
+O campo NoFatChain deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Secundário Genérico (consulte a [Seção 6.4.2.2](#6422-nofatchain-field)).
 
-#### <a name="773-filename-field"></a>Campo de nome de arquivo 7.7.3
+#### <a name="773-filename-field"></a>Campo FileName 7.7.3
 
-O campo FileName deve conter uma cadeia de caracteres Unicode, que é uma parte do nome do arquivo. No nome do arquivo da ordem, as entradas de diretório existem em um conjunto de entrada de diretório de arquivos, os campos de nome concatenam para formar o nome de arquivo para o conjunto de entradas do diretório de arquivos. Dado o comprimento do campo FileName, 15 caracteres e o número máximo de entradas de diretório de nome de arquivo, 17, o comprimento máximo do nome de arquivo concatenado final é
+O campo FileName deve conter uma cadeia de caracteres Unicode, que é uma parte do nome do arquivo. Na ordem em que as entradas do diretório Nome do Arquivo existem em um conjunto de entradas do diretório Arquivo, os campos FileName concatenam para formar o nome do arquivo para o conjunto de entradas do diretório Arquivo. Considerando o comprimento do campo FileName, 15 caracteres e o número máximo de entradas de diretório nome de arquivo, 17, o comprimento máximo do nome de arquivo final concatenado é
 255.
 
-O nome do arquivo concatenado tem o mesmo conjunto de caracteres ilegais que outros sistemas de arquivos baseados em FAT (consulte a [tabela 35](#table-35-invalid-filename-characters)). As implementações devem definir os caracteres não utilizados dos campos FileName para o valor 0000h.
+O nome do arquivo concatenado tem o mesmo conjunto de caracteres ilícitos que outros sistemas de arquivos baseados em FAT (consulte [a Tabela 35](#table-35-invalid-filename-characters)). As implementações devem definir os caracteres nãoutilados dos campos FileName com o valor 0000h.
 
 <div id="table-35-invalid-filename-characters" />
 
-**Tabela 35 caracteres de nome de arquivo inválido**
+**Tabela 35 Caracteres de FileName inválidos**
 
 | **Código de caractere** | **Descrição** | **Código de caractere** | **Descrição**   | **Código de caractere** | **Descrição** |
 |--------------------|-----------------|--------------------|-------------------|--------------------|-----------------|
@@ -3655,54 +3653,54 @@ O nome do arquivo concatenado tem o mesmo conjunto de caracteres ilegais que out
 | 001Eh              | Código de controle    | 001Fh              | Código de controle      | 0022h              | Aspas  |
 | 002Ah              | Asterisk        | 002Fh              | Barra     | 003Ah              | Dois pontos           |
 | 003Ch              | Sinal de menor que  | 003Eh              | Sinal de maior que | 003Fh              | Ponto de interrogação   |
-| 005Ch              | Barra invertida      | 007Ch              | Barra vertical      |                    |                 |
+| 005Ch              | Barra ind.      | 007Ch              | Barra vertical      |                    |                 |
 
-Os nomes de arquivo "." e ".." têm o significado especial de "este diretório" e "diretório recipiente", respectivamente. As implementações não devem registrar nenhum desses nomes de arquivo reservados no campo FileName.
-No entanto, as implementações podem gerar esses dois nomes de arquivo em listagens de diretório para se referir ao diretório que está sendo listado e ao diretório recipiente.
+Os nomes de arquivo "." e ".." têm o significado especial de "this directory" e "containing directory", respectivamente. As implementações não devem registrar nenhum desses nomes de arquivo reservados no campo FileName.
+No entanto, as implementações podem gerar esses dois nomes de arquivo em listagem de diretório para fazer referência ao diretório que está sendo listado e ao diretório que o contém.
 
-As implementações podem querer restringir os nomes de arquivos e diretórios apenas ao conjunto de caracteres ASCII. Nesse caso, eles devem limitar o uso de caracteres para o intervalo de caracteres válidos nas primeiras entradas Unicode 128. Eles ainda devem armazenar nomes de arquivos e diretórios em Unicode no volume e traduzir de/para ASCII/Unicode ao fazer a interface com o usuário.
+As implementações podem querer restringir nomes de arquivo e diretório apenas ao conjunto de caracteres ASCII. Nesse caso, eles devem limitar o uso de caracteres ao intervalo de caracteres válidos nas primeiras 128 entradas Unicode. Eles ainda devem armazenar nomes de arquivo e diretório em Unicode no volume e converter para/de ASCII/Unicode ao intercalar com o usuário.
 
-### <a name="78-vendor-extension-directory-entry"></a>Entrada de diretório de extensão de fornecedor 7,8
+### <a name="78-vendor-extension-directory-entry"></a>7.8 Entrada de diretório de extensão de fornecedor
 
-A entrada de diretório de extensão de fornecedor é uma entrada de diretório secundário benigno em conjuntos de entrada de diretório de arquivo (consulte a [tabela 36](#table-36-vendor-extension-directoryentry)). Um conjunto de entrada de diretório de arquivo pode conter qualquer número de entradas de diretório de extensão de fornecedor, até o limite de entradas de diretório secundária, menos o número de outras entradas de diretório secundário. Além disso, as entradas de diretório de extensão de fornecedor serão válidas somente se não precederem as entradas de diretório de extensão de fluxo e de nome de arquivo necessárias.
+A entrada do diretório Extensão de Fornecedor é uma entrada de diretório secundário benigna em Conjuntos de entradas de diretório de arquivos (consulte [Tabela 36](#table-36-vendor-extension-directoryentry)). Um conjunto de entradas do diretório Arquivo pode conter qualquer número de entradas de diretório de Extensão de Fornecedor, até o limite de entradas de diretório secundário, menos o número de outras entradas de diretório secundário. Além disso, as entradas de diretório da Extensão de Fornecedor serão válidas somente se não precederem as entradas de diretório extensão de fluxo e nome de arquivo necessárias.
 
-As entradas de diretório de extensão do fornecedor permitem que os fornecedores tenham entradas de diretório exclusivas e específicas do fornecedor em conjuntos de entrada de diretório de arquivos individuais por meio do campo VendorGuid (consulte a [tabela 36](#table-36-vendor-extension-directoryentry)). As entradas de diretório exclusivas efetivamente permitem que os fornecedores estendam o sistema de arquivos exFAT. Os fornecedores podem definir o conteúdo do campo VendorDefined (consulte a [tabela 36](#table-36-vendor-extension-directoryentry)). As implementações do fornecedor podem manter o conteúdo do campo VendorDefined e podem fornecer funcionalidade específica do fornecedor.
+Entradas de diretório de extensão de fornecedor permitem que os fornecedores tenham entradas de diretório exclusivas específicas do fornecedor em conjuntos de entrada de diretório de arquivo individuais por meio do campo VendorGuid (consulte [a Tabela 36](#table-36-vendor-extension-directoryentry)). Entradas de diretório exclusivas permitem efetivamente que os fornecedores estendam o sistema de arquivos exFAT. Os fornecedores podem definir o conteúdo do campo VendorDefined (consulte [a Tabela 36](#table-36-vendor-extension-directoryentry)). As implementações de fornecedor podem manter o conteúdo do campo VendorDefined e podem fornecer funcionalidade específica do fornecedor.
 
-As implementações que não reconhecem o GUID de uma entrada de diretório de extensão de fornecedor devem tratar a entrada de diretório da mesma forma que qualquer outra entrada de diretório secundário benigno não reconhecida (consulte a [seção 8,2](#82-implications-of-unrecognized-directory-entries)).
+Implementações que não reconhecem o GUID de uma entrada de diretório de Extensão de Fornecedor devem tratar a entrada de diretório da mesma forma que qualquer outra entrada de diretório secundário benigno não reconhecido (consulte a Seção [8.2](#82-implications-of-unrecognized-directory-entries)).
 
 <div id="table-36-vendor-extension-directoryentry" />
 
-**Tabela 36 extensão de fornecedor DirectoryEntry**
+**Diretório de extensão do fornecedor da Tabela 36Entrada**
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><strong>Comentários</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>EntryType</td>
+<td>Entrytype</td>
 <td>0</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#781-entrytype-field">seção 7.8.1</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#781-entrytype-field">a Seção 7.8.1</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>GeneralSecondaryFlags</td>
 <td>1</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#782-generalsecondaryflags-field">seção 7.8.2</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#782-generalsecondaryflags-field">a Seção 7.8.2</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>VendorGuid</td>
 <td>2</td>
 <td>16</td>
-<td>Esse campo é obrigatório e a <a href="#783-vendorguid-field">seção 7.8.3</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#783-vendorguid-field">a Seção 7.8.3</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>VendorDefined</td>
@@ -3715,91 +3713,91 @@ As implementações que não reconhecem o GUID de uma entrada de diretório de e
 
 #### <a name="781-entrytype-field"></a>Campo EntryType 7.8.1
 
-O campo EntryType deve estar de acordo com a definição fornecida no modelo DirectoryEntry secundário genérico (consulte a [seção 6.4.1](#641-entrytype-field)).
+O campo EntryType deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Secundário Genérico (consulte [a Seção 6.4.1](#641-entrytype-field)).
 
-##### <a name="7811-typecode-field"></a>Campo 7.8.1.1 TypeCode
+##### <a name="7811-typecode-field"></a>Campo TypeCode 7.8.1.1
 
-O campo TypeCode deve estar de acordo com a definição fornecida no modelo DirectoryEntry secundário genérico (consulte a [seção 6.4.1.1](#6411-typecode-field)).
+O campo TypeCode deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Secundário Genérico (consulte a [Seção 6.4.1.1](#6411-typecode-field)).
 
-Para a entrada de diretório de extensão do fornecedor, o valor válido para esse campo é 0.
+Para a entrada do diretório Extensão de Fornecedor, o valor válido para esse campo é 0.
 
-##### <a name="7812-typeimportance-field"></a>Campo 7.8.1.2 TypeImportance
+##### <a name="7812-typeimportance-field"></a>Campo TypeImportance 7.8.1.2
 
-O campo TypeImportance deve estar em conformidade com a definição fornecida no modelo DirectoryEntry secundário genérico (consulte a [seção 6.4.1.2](#6412-typeimportance-field)).
+O campo TypeImportance deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Secundário Genérico (consulte a [Seção 6.4.1.2](#6412-typeimportance-field)).
 
-Para a entrada de diretório de extensão do fornecedor, o valor válido para esse campo é 1.
+Para a entrada do diretório Extensão de Fornecedor, o valor válido para esse campo é 1.
 
-##### <a name="7813-typecategory-field"></a>Campo 7.8.1.3 TypeCategory
+##### <a name="7813-typecategory-field"></a>Campo TypeCategory 7.8.1.3
 
-O campo TypeCategory deve estar em conformidade com a definição fornecida no modelo DirectoryEntry secundário genérico (consulte a [seção 6.4.1.3](#6413-typecategory-field)).
+O campo TypeCategory deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Secundário Genérico (consulte a [Seção 6.4.1.3](#6413-typecategory-field)).
 
-##### <a name="7814-inuse-field"></a>Campo 7.8.1.4 InUse
+##### <a name="7814-inuse-field"></a>7.8.1.4 Campo de inutilização
 
-O campo InUse deve estar de acordo com a definição fornecida no modelo DirectoryEntry secundário genérico (consulte a [seção 6.4.1.4](#6414-inuse-field)).
+O campo InUse deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Secundário Genérico (consulte a [Seção 6.4.1.4](#6414-inuse-field)).
 
-#### <a name="782-generalsecondaryflags-field"></a>Campo 7.8.2 GeneralSecondaryFlags
+#### <a name="782-generalsecondaryflags-field"></a>7.8.2 Campo GeneralSecondaryFlags
 
-O campo GeneralSecondaryFlags deve estar em conformidade com a definição fornecida no modelo DirectoryEntry secundário genérico (consulte a [seção 6.4.2](#642-generalsecondaryflags-field)) e define o conteúdo do campo CustomDefined a ser reservado.
+O campo GeneralSecondaryFlags deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Genérico (consulte a Seção [6.4.2](#642-generalsecondaryflags-field)) e define o conteúdo do campo CustomDefined a ser reservado.
 
-##### <a name="7821-allocationpossible-field"></a>Campo 7.8.2.1 AllocationPossible
+##### <a name="7821-allocationpossible-field"></a>7.8.2.1 Campo AllocationPossible
 
-O campo AllocationPossible deve estar em conformidade com a definição fornecida no modelo DirectoryEntry secundário genérico (consulte a [seção 6.4.2.1](#6421-allocationpossible-field)).
+O campo AllocationPossible deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Secundário Genérico (consulte a [Seção 6.4.2.1](#6421-allocationpossible-field)).
 
-Para a entrada de diretório de extensão do fornecedor, o valor válido para esse campo é 0.
+Para a entrada do diretório Extensão de Fornecedor, o valor válido para esse campo é 0.
 
-##### <a name="7822-nofatchain-field"></a>Campo 7.8.2.2 NoFatChain
+##### <a name="7822-nofatchain-field"></a>7.8.2.2 Campo NoFatChain
 
-O campo NoFatChain deve estar em conformidade com a definição fornecida no modelo DirectoryEntry secundário genérico (consulte a [seção 6.4.2.2](#6422-nofatchain-field)).
+O campo NoFatChain deve estar em conformidade com a definição fornecida no modelo DirectoryEntry Secundário Genérico (consulte a [Seção 6.4.2.2](#6422-nofatchain-field)).
 
-#### <a name="783-vendorguid-field"></a>Campo 7.8.3 VendorGuid
+#### <a name="783-vendorguid-field"></a>7.8.3 Campo VendorGuid
 
-O campo VendorGuid deve conter um GUID que identifica exclusivamente a extensão de fornecedor fornecida.
+O campo VendorGuid deve conter um GUID que identifica exclusivamente a extensão de fornecedor determinada.
 
-Todos os valores possíveis para esse campo são válidos, exceto o GUID NULL, que é {00000000-0000-0000-0000-000000000000} . No entanto, os fornecedores devem usar uma ferramenta de geração de GUID, como GuidGen.exe, para selecionar um GUID ao definir suas extensões.
+Todos os valores possíveis para esse campo são válidos, exceto o GUID nulo, que é {00000000-0000-0000-0000-000000000000} . No entanto, os fornecedores devem usar uma ferramenta de geração de GUID, como GuidGen.exe, para selecionar um GUID ao definir suas extensões.
 
-O valor deste campo determina a estrutura específica do fornecedor do campo VendorDefined.
+O valor desse campo determina a estrutura específica do fornecedor do campo VendorDefined.
 
-### <a name="79-vendor-allocation-directory-entry"></a>Entrada do diretório de alocação do fornecedor 7,9
+### <a name="79-vendor-allocation-directory-entry"></a>7.9 Entrada de diretório de alocação de fornecedor
 
-A entrada do diretório de alocação do fornecedor é uma entrada de diretório secundário benigno em conjuntos de entrada de diretório de arquivo (consulte a [tabela 37](#table-37-vendor-allocation-directoryentry)). Um conjunto de entrada de diretório de arquivo pode conter qualquer número de entradas de diretório de alocação de fornecedor, até o limite de entradas de diretório secundária, menos o número de outras entradas de diretório secundário. Além disso, as entradas do diretório de alocação do fornecedor serão válidas somente se não precederem a extensão de fluxo necessária e as entradas do diretório de nome de arquivo.
+A entrada do diretório Alocação de Fornecedor é uma entrada de diretório secundário benigna em Conjuntos de entradas de diretório de arquivos (consulte [Tabela 37](#table-37-vendor-allocation-directoryentry)). Um conjunto de entradas do diretório Arquivo pode conter qualquer número de entradas de diretório alocação de fornecedor, até o limite de entradas de diretório secundário, menos o número de outras entradas de diretório secundário. Além disso, as entradas de diretório alocação de fornecedor serão válidas somente se não precedem as entradas de diretório Extensão de Fluxo e Nome de Arquivo necessárias.
 
-As entradas de diretório de alocação do fornecedor permitem que os fornecedores tenham entradas de diretório exclusivas e específicas do fornecedor em conjuntos de entrada de diretório de arquivos individuais por meio do campo VendorGuid (consulte a [tabela 37](#table-37-vendor-allocation-directoryentry)). As entradas de diretório exclusivas efetivamente permitem que os fornecedores estendam o sistema de arquivos exFAT. Os fornecedores podem definir o conteúdo dos clusters associados, se existirem. As implementações do fornecedor podem manter o conteúdo dos clusters associados, se houver, e podem fornecer funcionalidade específica do fornecedor.
+Entradas de diretório de alocação de fornecedor permitem que os fornecedores tenham entradas de diretório exclusivas específicas do fornecedor em conjuntos de entrada de diretório de arquivo individuais por meio do campo VendorGuid (consulte [Tabela 37](#table-37-vendor-allocation-directoryentry)). Entradas de diretório exclusivas permitem efetivamente que os fornecedores estendam o sistema de arquivos exFAT. Os fornecedores podem definir o conteúdo dos clusters associados, se existirem. As implementações de fornecedor podem manter o conteúdo dos clusters associados, se algum, e podem fornecer funcionalidade específica do fornecedor.
 
-As implementações que não reconhecem o GUID de uma entrada de diretório de alocação de fornecedor devem tratar a entrada de diretório da mesma forma que qualquer outra entrada de diretório secundário benigno não reconhecida (consulte a [seção 8,2](#82-implications-of-unrecognized-directory-entries)).
+Implementações que não reconhecem o GUID de uma entrada de diretório alocação de fornecedor devem tratar a entrada de diretório da mesma forma que qualquer outra entrada de diretório secundário benigno não reconhecido (consulte a Seção [8.2](#82-implications-of-unrecognized-directory-entries)).
 
 <div id="table-37-vendor-allocation-directoryentry" />
 
-**Tabela 37 alocação de fornecedor DirectoryEntry**
+**Tabela 37 Diretório de Alocação de FornecedorEntry**
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><strong>Comentários</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>EntryType</td>
+<td>Entrytype</td>
 <td>0</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#791-entrytype-field">seção 7.9.1</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#791-entrytype-field">a Seção 7.9.1</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>GeneralSecondaryFlags</td>
 <td>1</td>
 <td>1</td>
-<td>Esse campo é obrigatório e a <a href="#792-generalsecondaryflags-field">seção 7.9.2</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#792-generalsecondaryflags-field">a Seção 7.9.2</a> define seu conteúdo.</td>
 </tr>
 <tr class="odd">
 <td>VendorGuid</td>
 <td>2</td>
 <td>16</td>
-<td>Esse campo é obrigatório e a <a href="#793-vendorguid-field">seção 7.9.3</a> define seu conteúdo.</td>
+<td>Esse campo é obrigatório e <a href="#793-vendorguid-field">a Seção 7.9.3</a> define seu conteúdo.</td>
 </tr>
 <tr class="even">
 <td>VendorDefined</td>
@@ -3958,30 +3956,30 @@ O limite de tamanho de heap de cluster superior é uma função simples do núme
 
 ### <a name="94-volume-size-limits"></a>9,4 limites de tamanho do volume
 
-O campo VolumeLength define os limites de tamanho de volume inferior e superior (limite inferior: **2 <sup>20</sup>/2 setores <sup>BytesPerSectorShift</sup>**, que são avaliados como 1mb; **limite superior: 2 <sup>64</sup>-1 setores**, que, considerando o maior tamanho de setor possível, é avaliado como aproximadamente 64ZB). No entanto, essa especificação recomenda não mais do que 2 clusters<sup>24</sup>-2 no heap de cluster (consulte a [seção 3.1.9](#319-clustercount-field)). Portanto, o limite superior recomendado de um volume é: ClusterHeapOffset + (2<sup>24</sup>-2) \* 2<sup>SectorsPerClusterShift</sup>. Considerando o maior tamanho de cluster possível, 32MB e supondo que ClusterHeapOffset é 96MB (espaço suficiente para as regiões de inicialização principal e de backup e apenas a primeira FAT), o limite superior recomendado de um volume é avaliado como aproximadamente 512TB.
+O campo VolumeLength define os limites de tamanho de volume inferior e superior (limite inferior: **2 <sup>20</sup>/2 setores <sup>BytesPerSectorShift</sup>**, que são avaliados como 1mb; **limite superior: 2 <sup>64</sup>-1 setores**, que, considerando o maior tamanho de setor possível, é avaliado como aproximadamente 64ZB). No entanto, essa especificação recomenda não mais do que 2 clusters<sup>24</sup>-2 no heap de cluster (consulte a [seção 3.1.9](#319-clustercount-field)). Portanto, o limite superior recomendado de um volume é: ClusterHeapOffset + (2<sup>24</sup>-2) \* 2<sup>SectorsPerClusterShift</sup>. Considerando o maior tamanho de cluster possível, 32 MB, e supondo que ClusterHeapOffset seja de 96 MB (espaço suficiente para as regiões Principal e Inicialização de Backup e apenas a Primeira FAT), o limite superior recomendado de um volume é avaliada como aproximadamente 512 TB.
 
-### <a name="95-directory-size-limits"></a>9,5 limites de tamanho de diretório
+### <a name="95-directory-size-limits"></a>9.5 Limites de tamanho do diretório
 
-O campo DATALENGTH da entrada de diretório de extensão de fluxo define os limites de tamanho inferior e superior do diretório (**limite inferior: 0 bytes; limite superior: 256MB**). Isso significa que um diretório pode hospedar até 8.388.608 entradas de diretório (cada entrada de diretório consome 32 bytes). Devido ao menor conjunto de entradas de diretório de arquivos possível, três entrada de diretório, um diretório pode hospedar até 2.796.202 arquivos.
+O campo DataLength da entrada do diretório extensão de fluxo define os limites de tamanho de diretório inferior e superior ( limite **inferior: 0 bytes; limite superior: 256 MB**). Isso significa que um diretório pode hospedar até 8.388.608 entradas de diretório (cada entrada de diretório consome 32 bytes). Considerando o menor conjunto de entrada do diretório arquivo possível, três entradas de diretório, um diretório pode hospedar até 2.796.202 arquivos.
 
-## <a name="10-appendix"></a>10 apêndice
+## <a name="10-appendix"></a>Apêndice 10
 
-### <a name="101-globally-unique-identifiers-guids"></a>10,1 identificadores globais exclusivos (GUIDs)
+### <a name="101-globally-unique-identifiers-guids"></a>10.1 GUIDs (Identificadores Globalmente Exclusivos)
 
-Um GUID é a implementação da Microsoft de um identificador universalmente exclusivo. Um GUID é um valor de 128 bits que consiste em um grupo de 8 dígitos hexadecimais, seguido por três grupos de quatro dígitos hexadecimais cada e seguido por um grupo de 12 dígitos hexadecimais, por exemplo {6B29FC40-CA47-1067-B31D-00DD010662DA}, (consulte a [tabela 38](#table-38-guid-structure)).
+Um GUID é a implementação da Microsoft de um identificador universal exclusivo. Um GUID é um valor de 128 bits que consiste em um grupo de oito dígitos hexadecimais, seguido por três grupos de quatro dígitos hexadecimais cada e seguido por um grupo de 12 dígitos hexadecimais, por exemplo {6B29FC40-CA47-1067-B31D-00DD010662DA}, (consulte [a Tabela 38](#table-38-guid-structure)).
 
 <div id="table-38-guid-structure" />
 
-**Estrutura de GUID da tabela 38**
+**Estrutura GUID da Tabela 38**
 
 <table>
 <thead>
 <tr class="header">
-<th><strong>Nome do campo</strong></th>
+<th><strong>Nome do Campo</strong></th>
 <th><p><strong>Deslocamento</strong></p>
-<p><strong>minuciosa</strong></p></th>
+<p><strong>(byte)</strong></p></th>
 <th><p><strong>Tamanho</strong></p>
-<p><strong>bytes</strong></p></th>
+<p><strong>(bytes)</strong></p></th>
 <th><strong>Comentários</strong></th>
 </tr>
 </thead>
@@ -4005,49 +4003,49 @@ Um GUID é a implementação da Microsoft de um identificador universalmente exc
 <td>Esse campo é obrigatório e contém os dois bytes do terceiro grupo do GUID (1067h do exemplo).</td>
 </tr>
 <tr class="even">
-<td>Data4 [0]</td>
+<td>Data4[0]</td>
 <td>8</td>
 <td>1</td>
 <td>Esse campo é obrigatório e contém o byte mais significativo do quarto grupo do GUID (B3h do exemplo).</td>
 </tr>
 <tr class="odd">
-<td>Data4 [1]</td>
+<td>Data4[1]</td>
 <td>9</td>
 <td>1</td>
 <td>Esse campo é obrigatório e contém o byte menos significativo do quarto grupo do GUID (1Dh do exemplo).</td>
 </tr>
 <tr class="even">
-<td>Data4 [2]</td>
+<td>Data4[2]</td>
 <td>10</td>
 <td>1</td>
-<td>Esse campo é obrigatório e contém o primeiro byte do quinto grupo do GUID (17h do exemplo).</td>
+<td>Esse campo é obrigatório e contém o primeiro byte do quinto grupo do GUID (00h do exemplo).</td>
 </tr>
 <tr class="odd">
-<td>Data4 [3]</td>
+<td>Data4[3]</td>
 <td>11</td>
 <td>1</td>
 <td>Esse campo é obrigatório e contém o segundo byte do quinto grupo do GUID (DDh do exemplo).</td>
 </tr>
 <tr class="even">
-<td>Data4 [4]</td>
+<td>Data4[4]</td>
 <td>12</td>
 <td>1</td>
 <td>Esse campo é obrigatório e contém o terceiro byte do quinto grupo do GUID (01h do exemplo).</td>
 </tr>
 <tr class="odd">
-<td>Data4 [5]</td>
+<td>Data4[5]</td>
 <td>13</td>
 <td>1</td>
 <td>Esse campo é obrigatório e contém o quarto byte do quinto grupo do GUID (06h do exemplo).</td>
 </tr>
 <tr class="even">
-<td>Data4 [6]</td>
+<td>Data4[6]</td>
 <td>14</td>
 <td>1</td>
-<td>Esse campo é obrigatório e contém o quinto byte do quinto grupo do GUID (62H do exemplo).</td>
+<td>Esse campo é obrigatório e contém o quinto byte do quinto grupo do GUID (62h do exemplo).</td>
 </tr>
 <tr class="odd">
-<td>Data4 [7]</td>
+<td>Data4[7]</td>
 <td>15</td>
 <td>1</td>
 <td>Esse campo é obrigatório e contém o sexto byte do quinto grupo do GUID (DAh do exemplo).</td>
@@ -4055,17 +4053,17 @@ Um GUID é a implementação da Microsoft de um identificador universalmente exc
 </tbody>
 </table>
 
-### <a name="102-partition-tables"></a>10,2 tabelas de partição
+### <a name="102-partition-tables"></a>10.2 Tabelas de partição
 
-Para garantir a interoperabilidade dos volumes exFAT em um amplo conjunto de cenários de uso, as implementações devem usar o tipo de partição 07h para armazenamento particionado MBR e GUID de partição {EBD0A0A2-B9E5-4433-87C0-68B6B72699C7} para armazenamento particionado GPT.
+Para garantir a interoperabilidade de volumes exFAT em um amplo conjunto de cenários de uso, as implementações devem usar o tipo de partição 07h para o armazenamento particionado MBR e o GUID de partição {EBD0A0A2-B9E5-4433-87C0-68B6B72699C7} para armazenamento particionado por GPT.
 
-## <a name="11-documentation-change-history"></a>11 histórico de alterações da documentação
+## <a name="11-documentation-change-history"></a>11 Histórico de alterações de documentação
 
-A tabela 39 descreve o histórico de versões do, correções de, adições a, remoções e esclarecimentos deste documento.
+A Tabela 39 descreve o histórico de versões de, correções para, adições, remoções e esclarecimentos deste documento.
 
 <div id="table-39-documentation-change-history" />
 
-**Tabela 39 histórico de alterações de documentação**
+**Histórico de alterações da documentação da Tabela 39**
 
 <table>
 <thead>
@@ -4077,47 +4075,47 @@ A tabela 39 descreve o histórico de versões do, correções de, adições a, r
 <tbody>
 <tr class="odd">
 <td>08 de janeiro de 2008</td>
-<td><p>Primeira versão da especificação básica, que inclui:</p>
+<td><p>Primeira versão da Especificação Básica, que inclui:</p>
 <blockquote>
-<p>Seção 1, introdução</p>
+<p>Seção 1, Introdução</p>
 <p>Seção 2,<br />
-Estrutura do volume</p>
-<p>Seção 3, principais e regiões de inicialização de backup</p>
-<p>Seção 4, região da tabela de alocação de arquivos</p>
-<p>Seção 5, região de dados</p>
-<p>Seção 6, estrutura de diretório</p>
-<p>Seção 7, definições de entrada de diretório</p>
-<p>Seção 8, notas de implementação</p>
-<p>Seção 9, limites do sistema de arquivos</p>
-<p>Seção 10, apêndice</p>
+Estrutura de volume</p>
+<p>Seção 3, Regiões de inicialização principal e de backup</p>
+<p>Seção 4, Região da Tabela de Alocação de Arquivos</p>
+<p>Seção 5, Região de Dados</p>
+<p>Seção 6, Estrutura de Diretórios</p>
+<p>Seção 7, Definições de entrada de diretório</p>
+<p>Seção 8, Notas de Implementação</p>
+<p>Seção 9, Limites do Sistema de Arquivos</p>
+<p>Seção 10, Apêndice</p>
 </blockquote></td>
 </tr>
 <tr class="even">
-<td>08-Jun-2008</td>
-<td><p>Segunda versão da especificação básica, que inclui as seguintes alterações:</p>
+<td>08 de junho de 2008</td>
+<td><p>Segunda versão da Especificação Básica, que inclui as seguintes alterações:</p>
 <blockquote>
-<p>Adição da seção 11,<br />
-Histórico de alterações da documentação</p>
-<p>Adição da extensão do fornecedor e das entradas do diretório de alocação do fornecedor nas seções 7,8 e 7,9</p>
-<p>Adição da tabela recomendada de casos ativos nas seções 7.2.5 e 7.2.5.1</p>
-<p>Adição dos campos UtcOffset na seção 7,4 e adição do acrônimo UTC na seção 1,3</p>
-<p>Correção do tamanho do campo CustomDefined na tabela 19</p>
-<p>Correção do intervalo válido de valores de NameLength na seção 7.6.3</p>
-<p>Correção e esclarecimento dos campos TIMESTAMP e 10msIncrement na seção 7,4</p>
-<p>Esclarecimento da estrutura de parâmetros nulos na seção 3,3</p>
-<p>Esclarecimento do significado dos valores do campo NoFatChain na seção 6.3.4.2</p>
-<p>Esclarecimento do significado dos valores do campo DATALENGTH na seção 6.2.3</p>
-<p>Esclarecimento do campo VolumeDirty na seção 3.1.13.2 e a ordem de gravação recomendada na seção 8,1</p>
-<p>Esclarecimento do campo MediaFailure na seção 3.1.13.3</p>
+<p>Adição da Seção 11,<br />
+Histórico de alterações de documentação</p>
+<p>Adição das entradas de diretório de alocação de fornecedor e extensão de fornecedor nas seções 7.8 e 7.9</p>
+<p>Adição da tabela de caso up-case recomendada nas Seções 7.2.5 e 7.2.5.1</p>
+<p>Adição dos campos UtcOffset na Seção 7.4 e adição do acrônimo UTC na Seção 1.3</p>
+<p>Correção do tamanho do campo CustomDefined na Tabela 19</p>
+<p>Correção do intervalo válido de valores NameLength na Seção 7.6.3</p>
+<p>Correção e esclarecimento dos campos Timestamp e 10msIncrement na Seção 7.4</p>
+<p>Esclarecimento da estrutura de parâmetros nulos na Seção 3.3</p>
+<p>Esclarecimento do significado dos valores do campo NoFatChain na Seção 6.3.4.2</p>
+<p>Esclarecimento do significado dos valores do campo DataLength na Seção 6.2.3</p>
+<p>Esclarecimento do campo VolumeDirty na Seção 3.1.13.2 e a ordenação de gravação recomendada na Seção 8.1</p>
+<p>Esclarecimento do campo MediaFailure na Seção 3.1.13.3</p>
 </blockquote></td>
 </tr>
 <tr class="odd">
-<td>01-out-2008</td>
-<td><p>A terceira versão da especificação básica, que inclui as seguintes alterações:</p>
+<td>01 de outubro de 2008</td>
+<td><p>Terceira versão da Especificação Básica, que inclui as seguintes alterações:</p>
 <blockquote>
-<p>A adição das explicações deve ser e pode ser para o campo</p>
-<p>Adição da definição de UTC na tabela 2, seção 1,3</p>
-<p>Seções modificadas 1,5, para garantir o alinhamento com o documento de especificação TexFAT.</p>
+<p>Adição de SHALL, SHOULD e MAY a explicações de campo</p>
+<p>Adição de definição UTC na Tabela 2 Seção 1.3</p>
+<p>Seções modificadas 1.5, para garantir o alinhamento com o documento de especificação do TexFAT.</p>
 <p>Esclareceu a restrição de que somente a Microsoft pode definir o layout das entradas de diretório na seção 6,2</p>
 <p>Foi adicionado esclarecimento de que o campo FirstCluster deverá ser zero se o DATALENGTH for zero e NoFatChain estiver definido para a seção 6.3.5 e a seção 6.4.3</p>
 <p>Requisitos esclarecidos para entradas de diretório de arquivo válidas na seção 7,4</p>

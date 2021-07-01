@@ -1,21 +1,21 @@
 ---
 title: Ponteiros (RPC)
-description: Saiba mais sobre um ponteiro comum RPC, que é definido como tudo além de ponteiros de interface e ponteiros de contagem de bytes.
+description: Saiba mais sobre um ponteiro comum RPC, que é definido como tudo que não seja ponteiros de interface e ponteiros de contagem de byte.
 ms.assetid: 9756E637-BCBB-48F1-B962-25AF2C917921
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06e41a0b6208745b543a9efe2fe22ab090046778
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: ade676610a310e230eb6fa89dd666996bb82040f
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406589"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119701"
 ---
 # <a name="pointers-rpc"></a>Ponteiros (RPC)
 
 ## <a name="common-pointers"></a>Ponteiros comuns
 
-Um ponteiro comum é definido como tudo que não seja ponteiros de interface e ponteiros de contagem de bytes.
+Um ponteiro comum é definido como tudo que não seja ponteiros de interface e ponteiros de contagem de byte.
 
 Há dois layouts possíveis para a descrição:
 
@@ -31,68 +31,68 @@ pointer_type<1> pointer_attributes<1>
 offset_to_complex_description<2>
 ```
 
-O primeiro formato será usado se o ponteiro for um ponteiro para um tipo simples ou um ponteiro de cadeia de caracteres não-dimensionado. O segundo formato é usado para ponteiros para todos os outros tipos. Atributos de ponteiro indicam qual layout de descrição é com o \_ sinalizador de ponteiro simples do FC \_ .
+O primeiro formato será usado se o ponteiro for um ponteiro para um tipo simples ou um ponteiro de cadeia de caracteres nãoized. O segundo formato é usado para ponteiros para todos os outros tipos. Atributos de ponteiro indicam qual layout de descrição ele é com o sinalizador FC \_ SIMPLE \_ POINTER.
 
-\_o tipo de ponteiro<1> é um dos seguintes.
+o \_ tipo de<1> é um dos seguintes.
 
 
 
-| Formatar caractere | Descrição                              |
+| Caractere de formato | Descrição                              |
 |------------------|------------------------------------------|
 | FC \_ RP           | Um ponteiro de referência.                     |
-| FC \_ para cima           | Um ponteiro exclusivo.                        |
-| \_FP FC           | Um ponteiro completo.                          |
-| \_op FC           | Um ponteiro exclusivo em uma interface de objeto. |
+| FC \_ UP           | Um ponteiro exclusivo.                        |
+| FC \_ FP           | Um ponteiro completo.                          |
+| FC \_ OP           | Um ponteiro exclusivo em uma interface de objeto. |
 
 
 
  
 
-O motivo para distinguir o FC \_ op é semântico: em interfaces de objeto, um \[ ponteiro de entrada \] deve ser liberado antes de desempacotar um novo objeto e atribuir um novo valor de ponteiro.
+O motivo para distinguir o FC OP é semântico: em interfaces de objeto, um ponteiro in,out deve ser liberado antes de desmarcar um novo objeto e atribuir um novo valor \_ \[ de \] ponteiro.
 
-Os \_ atributos de ponteiro<1> podem ter qualquer um dos sinalizadores mostrados na tabela a seguir.
+Atributos \_ de ponteiro<1> podem ter qualquer um dos sinalizadores mostrados na tabela a seguir.
 
 
 
-| Sinalizador | Descrição              |                                                                                                                                                                                                                                       |
+| Atributo | Sinalizador              | Descrição                                                                                                                                                                                                                                      |
 |------|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 01   | \_alocar \_ todos os nós de FC \_ | O ponteiro é uma parte de um esquema de alocação alocar (todos os \_ nós).                                                                                                                                                                   |
-| 02   | FC \_ não \_ livre           | Um ponteiro de alocação (não \_ livre).                                                                                                                                                                                                      |
-| 04   | FC \_ alocado \_ na \_ pilha   | Um ponteiro cujo Referent é alocado na pilha do stub.                                                                                                                                                                            |
-| 08   | \_ponteiro simples do FC \_      | Um ponteiro para um tipo simples ou cadeia de caracteres de conformidade não dimensionável. Esse sinalizador sendo definido indica o layout da descrição do ponteiro como o layout do ponteiro simples descrito acima, caso contrário, o formato do descritor com o deslocamento será indicado. |
-| 10   | ponteiro de FC \_ \_ DEREF       | Um ponteiro que deve ser desreferenciado antes de manipular o Referent do ponteiro.                                                                                                                                                           |
+| 01   | FC \_ ALLOCATE \_ ALL \_ NODES | O ponteiro faz parte de um esquema de alocação \_ (todos os nós).                                                                                                                                                                   |
+| 02   | FC \_ DONT \_ FREE           | Um ponteiro allocate(don't \_ free).                                                                                                                                                                                                      |
+| 04   | FC \_ ALLOCED \_ ON \_ STACK   | Um ponteiro cujo referent é alocado na pilha do stub.                                                                                                                                                                            |
+| 08   | FC \_ SIMPLE \_ POINTER      | Um ponteiro para um tipo simples ou uma cadeia de caracteres não compatível. Esse sinalizador que está sendo definido indica o layout da descrição do ponteiro como o layout de ponteiro simples descrito acima, caso contrário, o formato do descritor com o deslocamento é indicado. |
+| 10   | FC \_ POINTER \_ DEREF       | Um ponteiro que deve ser desreferenciado antes de manipular o referenciamento do ponteiro.                                                                                                                                                           |
 
 
 
  
 
-Ponteiros com tamanho \_ é (), o número máximo de \_ is (), length \_ é (), Last \_ is () e/ou First \_ is () aplicado a eles têm descrições de cadeia de caracteres de formato idênticas a um ponteiro para uma matriz do tipo apropriado (por exemplo, uma matriz compatível se o tamanho for \_ () for aplicado, uma matriz de variação em conformidade se o tamanho \_ for () e o comprimento \_ for aplicado
+Os ponteiros que têm tamanho \_ is(), max \_ \_ is(), length is(), last \_ is() e/ou first \_ is() aplicados a \_ \_ eles têm \_ descrições de cadeia de caracteres de formato idênticas a um ponteiro para uma matriz do tipo apropriado (por exemplo, uma matriz compatível se size is() for aplicado, uma matriz variável compatível se size is() e length for aplicado).
 
 ## <a name="interface-pointers"></a>Ponteiros de interface
 
 Uma cadeia de caracteres de formato de ponteiro de interface de objeto tem um dos dois formatos, dependendo se o IID correspondente é conhecido pelo compilador.
 
-Um ponteiro de interface com uma IID de constante tem a seguinte descrição:
+Um ponteiro de interface com uma IID constante tem a seguinte descrição:
 
 ``` syntax
 FC_IP FC_CONSTANT_IID 
 iid<16>
 ```
 
-O IID<de 16> parte é o IID real para o ponteiro da interface. O IID é gravado na cadeia de caracteres de formato em um formato idêntico à estrutura de dados GUID: longo, curto, curto, Char \[ 8 \] .
+O iid<16> parte é o IID real para o ponteiro de interface. A iid é escrita na cadeia de caracteres de formato em um formato idêntico à estrutura de dados guid: long, short, short, char \[ 8 \] .
 
-A descrição de um ponteiro de interface com IID \_ é () aplicada a ele é:
+A descrição de um ponteiro de interface com iid \_ is() aplicada a ele é:
 
 ``` syntax
 FC_IP FC_PAD 
 iid_description<> 
 ```
 
-A descrição de IID \_<> é um descritor de correlação e tem 4 ou 6 bytes, dependendo se [**/robust**](/windows/desktop/Midl/-robust) é usado. O valor calculado pela função **NdrComputeConformance** é o ponteiro de IID.
+A descrição iid<> é um descritor de correlação e tem 4 ou \_ 6 bytes, dependendo se [**/robust**](/windows/desktop/Midl/-robust) é usado. O valor calculado pela função **NdrComputeConformance** é o ponteiro IID.
 
-## <a name="byte-count-pointers"></a>Ponteiros de contagem de bytes
+## <a name="byte-count-pointers"></a>Ponteiros de contagem de byte
 
-Os ponteiros de contagem de bytes estão relacionados a um atributo de otimização especial chamado \[ **\_ contagem de bytes** \] . Os seguintes formatos são usados:
+Os ponteiros de contagem de byte estão relacionados a um atributo de otimização especial chamado \[ **contagem de \_ byte** \] . Os seguintes formatos são usados:
 
 ``` syntax
 FC_BYTE_COUNT_POINTER 
@@ -100,7 +100,7 @@ simple_type<1>
 byte_count_description<> 
 ```
 
-e
+–e –
 
 ``` syntax
 FC_BYTE_COUNT_POINTER 
@@ -109,9 +109,9 @@ byte_count_description<>
 pointee_description<>
 ```
 
-A descrição de contagem de bytes \_ \_<> é um descritor de correlação e tem 4 ou 6 bytes, dependendo se [**/robust**](/windows/desktop/Midl/-robust) é usado.
+A descrição da contagem de<> é um descritor de correlação e tem 4 ou \_ \_ 6 bytes, dependendo se [**/robust**](/windows/desktop/Midl/-robust) é usado.
 
-A descrição do ponto \_<> é uma descrição do tipo de ponto.
+A descrição \_ do<> é uma descrição do tipo de pointee.
 
  
 

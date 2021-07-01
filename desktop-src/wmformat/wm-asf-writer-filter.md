@@ -1,6 +1,6 @@
 ---
 title: Filtro do Wm ASF Writer (Windows Media Format SDK 11)
-description: Saiba mais sobre o filtro Wm ASF Writer.
+description: Saiba mais sobre o filtro Wm ASF Writer para o SDK Windows Media Format 11. Revise as informações de filtro e consulte os tópicos relacionados.
 ms.assetid: a902c92e-836d-492c-b2d2-89c216125774
 keywords:
 - Windows Media Format SDK, Wm ASF Writer
@@ -11,12 +11,12 @@ keywords:
 - ASF (Formato de Sistemas Avançados), Wm ASF Writer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0fbd6e36a8178f6ebd1943cdaac214597e0ba4e
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 24ee013b55455c3100ee23e076b767d70fb3ffda
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444697"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119661"
 ---
 # <a name="wm-asf-writer-filter-windows-media-format-11-sdk"></a>Filtro do Wm ASF Writer (Windows Media Format SDK 11)
 
@@ -33,8 +33,8 @@ A tabela a seguir contém informações sobre o filtro Wm ASF Writer, como as in
 | Interfaces de filtro      | **IAMFilterMiscFlags,** **IBaseFilter,** **IConfigAsfWriter,** **IFileSinkFilter2**, IMediaSeeking, IPersistStream, IServiceProvider, ISpecifyPropertyPages, **IWMIndexer2**, **IWMHeaderInfo**, **IWMWriterAdvanced2** |
 | Tipos de mídia de pino de entrada  | Dependendo do perfil. Normalmente, tipos descompactados, como Áudio MEDIATYPE ou Vídeo MEDIATYPE, embora os tipos compactados possam ser aceitos se corresponderem \_ \_ ao perfil                                                   |
 | Interfaces de pino de entrada   | **IPin,** **IMemInputPin,** **IAMStreamConfig,** **IServiceProvider,** **IAMWMBufferPass,** **IWMStreamConfig2** (por **meio de IServiceProvider**)                                                                         |
-| Tipos de mídia de pino de saída | Não aplicável                                                                                                                                                                                                          |
-| Interfaces de pino de saída  | Não aplicável                                                                                                                                                                                                          |
+| Tipos de mídia de pino de saída | Não se aplica                                                                                                                                                                                                          |
+| Interfaces de pino de saída  | Não se aplica                                                                                                                                                                                                          |
 | Filtrar CLSID           | CLSID \_ WMAsfWriter                                                                                                                                                                                                      |
 | CLSID da página de propriedades    | CLSID \_ WMAsfWriterProperties                                                                                                                                                                                            |
 | Executável             | Qasf.dll                                                                                                                                                                                                                |

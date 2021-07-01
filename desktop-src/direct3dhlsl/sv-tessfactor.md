@@ -13,24 +13,23 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 808365fbcba4a1180c1838b94a6c098aa4c6f9ac
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 308034fe607283ef9f1213cca1cabb4a7229765e
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107999053"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118891"
 ---
 # <a name="sv_tessfactor"></a>\_TESSFACTOR VA
 
 Define o valor do mosaico em cada borda de um patch.
 
-## <a name="type"></a>Digite
+## <a name="type"></a>Tipo
 
 
 
-|            |                |
+|  Tipo          |  Topologia de entrada              |
 |------------|----------------|
-| Digite       | Topologia de entrada |
 | float \[ 4\] | patch quádruplo     |
 | float \[ 3\] | Tri patch      |
 | float \[ 2\] | isoline        |
@@ -61,7 +60,7 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domain | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        | x    | x      |          |       |         |
 

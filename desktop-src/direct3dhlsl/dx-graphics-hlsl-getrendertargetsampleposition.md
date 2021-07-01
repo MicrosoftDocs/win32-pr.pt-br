@@ -1,6 +1,6 @@
 ---
 title: GetRenderTargetSamplePosition
-description: Obtém a posição de amostragem (x, y) para um determinado índice de exemplo.
+description: Obtém a posição de amostragem (x,y) para um determinado índice de exemplo.
 ms.assetid: 07f14d1c-4fe5-4838-acce-d664cdc641e6
 keywords:
 - GetRenderTargetSamplePosition HLSL
@@ -13,22 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3b0cd944b175522ab7d722ae791f3548c6633b71
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: c31bc829f8990517ddbea8be7c25eead413ab666
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103638327"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120571"
 ---
 # <a name="getrendertargetsampleposition"></a>GetRenderTargetSamplePosition
 
-Obtém a posição de amostragem (x, y) para um determinado índice de exemplo.
+Obtém a posição de amostragem (x,y) para um determinado índice de exemplo.
 
-
-
-|                                                                                  |
-|----------------------------------------------------------------------------------|
-| float<2> GetRenderTargetSamplePosition (em int<1> índice<br/>); |
+float<2> GetRenderTargetSamplePosition( int<1> Index<br/>);
 
 
 
@@ -40,7 +36,7 @@ Obtém a posição de amostragem (x, y) para um determinado índice de exemplo.
 
 | Item                                                                                       | Descrição                                  |
 |--------------------------------------------------------------------------------------------|----------------------------------------------|
-| <span id="Index"></span><span id="index"></span><span id="INDEX"></span>*Index*<br/> | \[em \] um índice de exemplo com base em zero.<br/> |
+| <span id="Index"></span><span id="index"></span><span id="INDEX"></span>*Índice*<br/> | \[em \] Um índice de exemplo baseado em zero.<br/> |
 
 
 
@@ -48,21 +44,21 @@ Obtém a posição de amostragem (x, y) para um determinado índice de exemplo.
 
 ## <a name="return-value"></a>Valor Retornado
 
-A posição (x, y) do exemplo fornecido.
+A posição (x,y) do exemplo determinado.
 
 ## <a name="remarks"></a>Comentários
 
 Use essa função e [**GetRenderTargetSampleCount**](dx-graphics-hlsl-getrendertargetsamplecount.md) para descobrir o número e a posição dos locais de amostragem para um destino de renderização.
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                                        | Com suporte |
 |---------------------------------------------------------------------|-----------|
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md) e modelos de sombreador mais altos | sim       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md) e modelos de sombreador superior | yes       |
 | [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)           | não        |
 | [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md)           | não        |
 | [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)           | não        |

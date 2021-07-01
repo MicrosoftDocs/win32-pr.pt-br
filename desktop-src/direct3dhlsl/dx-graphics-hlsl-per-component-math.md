@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 5ff30cd19b7821c9a059251e105f6acfa9cf961e
-ms.sourcegitcommit: fa5c081bf792b119a7bb92182cde1f85ca75967b
+ms.openlocfilehash: 2c8c9eeea1072c53915588ac0099998e76c0452a
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "104968758"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119591"
 ---
 # <a name="per-component-math-operations"></a>Per-Component operações matemáticas
 
-Com o HLSL, você pode programar sombreadores em um nível de algoritmo. Para entender a linguagem, você precisará saber como declarar variáveis e funções, usar funções intrínsecas, definir tipos de dados personalizados e usar a semântica para conectar argumentos de sombreador a outros sombreadores e ao pipeline.
+Com o HLSL, você pode programar sombreadores em um nível de algoritmo. Para entender a linguagem, você precisará saber como declarar variáveis e funções, usar funções intrínsecas, definir tipos de dados personalizados e usar semântica para conectar argumentos de sombreador a outros sombreadores e ao pipeline.
 
-Depois de aprender a criar sombreadores no HLSL, você precisará aprender sobre chamadas de API para poder: compilar um sombreador para determinado hardware, inicializar constantes de sombreador e inicializar outro Estado de pipeline, se necessário.
+Depois de aprender a criar sombreadores no HLSL, você precisará saber mais sobre chamadas à API para poder compilar um sombreador para um hardware específico, inicializar constantes de sombreador e inicializar outro estado de pipeline, se necessário.
 
 -   [O tipo de vetor](#the-vector-type)
 -   [O tipo de matriz](#the-matrix-type)
@@ -45,7 +45,7 @@ double4 dVector;   // vector containing 4 doubles
 
 O inteiro imediatamente após o tipo de dados é o número de componentes no vetor.
 
-Inicializadores também podem ser incluídos nas declarações.
+Os inicializadores também podem ser incluídos nas declarações.
 
 
 ```
@@ -71,12 +71,12 @@ vector <double, 4> dVector = { 0.2, 0.3, 0.4, 0.5 };
 
 O tipo de vetor usa colchetes angulares para especificar o tipo e o número de componentes.
 
-Os vetores contêm até quatro componentes, cada um deles pode ser acessado usando um dos dois conjuntos de nomes:
+Os vetores contêm até quatro componentes, cada um deles pode ser acessado usando um dos dois conjuntos de nomen básicos:
 
--   O conjunto de posições: x, y, z, w
+-   O conjunto de posições: x,y, z, w
 -   O conjunto de cores: r, g, b, a
 
-Essas instruções retornam o valor no terceiro componente.
+Essas duas instruções retornam o valor no terceiro componente.
 
 
 ```
@@ -89,7 +89,7 @@ pos.b    // value is 2
 
 
 
-Os conjuntos de nomenclatura podem usar um ou mais componentes, mas não podem ser misturados.
+Os conjuntos de nomes podem usar um ou mais componentes, mas não podem ser mistos.
 
 
 ```
@@ -105,7 +105,7 @@ temp = pos.xg  // NOT VALID because the position and color sets were used.
 
 
 
-A especificação de um ou mais componentes de vetor ao ler os componentes é chamada de swizzling. Por exemplo:
+Especificar um ou mais componentes de vetor ao ler componentes é chamado de girar. Por exemplo:
 
 
 ```
@@ -121,7 +121,7 @@ f_2D = pos.yy;
 
 
 
-O mascaramento controla quantos componentes são gravados.
+Mascaramento controla quantos componentes são gravados.
 
 
 ```
@@ -138,7 +138,7 @@ f_4D.wzyx = pos;
 
 
 
-As atribuições não podem ser gravadas no mesmo componente mais de uma vez. Portanto, o lado esquerdo desta instrução é inválido:
+As atribuições não podem ser escritas no mesmo componente mais de uma vez. Portanto, o lado esquerdo dessa instrução é inválido:
 
 
 ```
@@ -147,7 +147,7 @@ f_4D.xx = pos.xy;   // cannot write to the same destination components
 
 
 
-Além disso, os espaços de nome de componente não podem ser misturados. Esta é uma gravação de componente inválida:
+Além disso, os espaços de nome do componente não podem ser mistos. Esta é uma gravação de componente inválida:
 
 
 ```
@@ -156,7 +156,7 @@ f_4D.xg = pos.rgrg;    // invalid write: cannot mix component name spaces
 
 
 
-Acessar um vetor como um escalar acessará o primeiro componente do vetor. As duas instruções a seguir são equivalentes.
+Acessar um vetor como escalar acessará o primeiro componente do vetor. As duas instruções a seguir são equivalentes.
 
 
 ```
@@ -168,7 +168,7 @@ f_4D.a = pos.r * 5.0f;
 
 ## <a name="the-matrix-type"></a>O tipo de matriz
 
-Uma matriz é uma estrutura de dados que contém linhas e colunas de dados. Os dados podem ser qualquer um dos tipos de dados escalares, no entanto, cada elemento de uma matriz é do mesmo tipo de dados. O número de linhas e colunas é especificado com a cadeia de caracteres de linha por coluna que é anexada ao tipo de dados.
+Uma matriz é uma estrutura de dados que contém linhas e colunas de dados. Os dados podem ser qualquer um dos tipos de dados escalares, no entanto, cada elemento de uma matriz é o mesmo tipo de dados. O número de linhas e colunas é especificado com a cadeia de caracteres linha por coluna que é anexada ao tipo de dados.
 
 
 ```
@@ -188,7 +188,7 @@ double4x4 dMatrix;   // double matrix with 4 rows, 4 columns
 
 O número máximo de linhas ou colunas é 4; o número mínimo é 1.
 
-Uma matriz pode ser inicializada quando ela é declarada:
+Uma matriz pode ser inicializada quando é declarada:
 
 
 ```
@@ -221,20 +221,20 @@ matrix <float, 2, 3> fFloatMatrix;
 
 
 
-Uma matriz contém valores organizados em linhas e colunas, que podem ser acessadas usando o operador de estrutura "." seguido por um dos dois conjuntos de nomes:
+Uma matriz contém valores organizados em linhas e colunas, que podem ser acessados usando o operador de estrutura "." seguido por um dos dois conjuntos de nomenis:
 
--   A posição da coluna de linha com base em zero:
-    -   \_M00, \_ M01, \_ M02, \_ M03
-    -   \_M10, \_ M11, \_ M12, \_ M13
-    -   \_M20, \_ M21, \_ M22, \_ M23
-    -   \_M30, \_ M31, \_ M32, \_ M33
--   A posição da coluna de linha baseada em um:
+-   A posição da coluna de linha baseada em zero:
+    -   \_m00, \_ m01, \_ m02, \_ m03
+    -   \_m10, \_ m11, \_ m12, \_ m13
+    -   \_m20, \_ m21, \_ m22, \_ m23
+    -   \_m30, \_ m31, \_ m32, \_ m33
+-   A posição da coluna de linha de base única:
     -   \_11, \_ 12, \_ 13, \_ 14
     -   \_21, \_ 22, \_ 23, \_ 24
     -   \_31, \_ 32, \_ 33, \_ 34
     -   \_41, \_ 42, \_ 43, \_ 44
 
-Cada conjunto de nomenclatura começa com um sublinhado seguido pelo número da linha e o número da coluna. A convenção baseada em zero também inclui a letra "m" antes do número da linha e da coluna. Aqui está um exemplo que usa os dois conjuntos de nomes para acessar uma matriz:
+Cada conjunto de nomenis começa com um sublinhado seguido pelo número da linha e o número da coluna. A convenção baseada em zero também inclui a letra "m" antes do número da linha e da coluna. Veja um exemplo que usa os dois conjuntos de nomes para acessar uma matriz:
 
 
 ```
@@ -253,7 +253,7 @@ f_1D = matrix._22;  // read the value in row 2, column 2: 2.1
 
 
 
-Assim como os vetores, os conjuntos de nomes podem usar um ou mais componentes de um conjunto de nomes.
+Assim como os vetores, os conjuntos de nomes podem usar um ou mais componentes de um ou mais conjuntos de nomes.
 
 
 ```
@@ -271,14 +271,14 @@ temp = fMatrix._22_11   // valid
 
 
 
-Uma matriz também pode ser acessada usando a notação de acesso de matriz, que é um conjunto de índices baseado em zero. Cada índice está dentro de colchetes. Uma matriz 4x4 é acessada com os seguintes índices:
+Uma matriz também pode ser acessada usando a notação de acesso à matriz, que é um conjunto de índices baseado em zero. Cada índice está dentro de colchetes. Uma matriz 4x4 é acessada com os seguintes índices:
 
 -   \[0 \] \[ 0 \] , \[ 0 \] \[ 1 \] , \[ 0 \] \[ 2 \] , \[ 0 \] \[ 3\]
 -   \[1 \] \[ 0 \] , \[ 1 \] \[ 1 \] , \[ 1 \] \[ 2 \] , \[ 1 \] \[ 3\]
 -   \[2 \] \[ 0 \] , \[ 2 \] \[ 1 \] , \[ 2 \] \[ 2 \] , \[ 2 \] \[ 3\]
 -   \[3 \] \[ 0 \] , \[ 3 \] \[ 1 \] , \[ 3 \] \[ 2 \] , \[ 3 \] \[ 3\]
 
-Aqui está um exemplo de acesso a uma matriz:
+Aqui está um exemplo de como acessar uma matriz:
 
 
 ```
@@ -293,7 +293,7 @@ temp = fMatrix[0][1] // single component read
 
 
 
-Observe que o operador de estrutura "." não é usado para acessar uma matriz. A notação de acesso à matriz não pode usar swizzling para ler mais de um componente.
+Observe que o operador de estrutura "." não é usado para acessar uma matriz. A notação de acesso à matriz não pode usar o swizzling para ler mais de um componente.
 
 
 ```
@@ -314,7 +314,7 @@ temp = fMatrix[0] // read the first row
 
 
 
-Assim como acontece com os vetores, a leitura de mais de um componente de matriz é chamada de swizzling. Mais de um componente pode ser atribuído, pressupondo que apenas um espaço de nome seja usado. Estas são todas as atribuições válidas:
+Assim como com vetores, ler mais de um componente de matriz é chamado de swizzling. Mais de um componente pode ser atribuído, supondo que apenas um espaço de nome seja usado. Todas essas são atribuições válidas:
 
 
 ```
@@ -331,7 +331,7 @@ tempMatrix._11_22_33 = worldMatrix._24_23_22;
 
 
 
-O mascaramento controla quantos componentes são gravados.
+Mascaramento controla quantos componentes são gravados.
 
 
 ```
@@ -345,7 +345,7 @@ tempMatrix._m23_m00 = worldMatrix._m00_m11;
 
 
 
-As atribuições não podem ser gravadas no mesmo componente mais de uma vez. Portanto, o lado esquerdo desta instrução é inválido:
+As atribuições não podem ser escritas no mesmo componente mais de uma vez. Portanto, o lado esquerdo dessa instrução é inválido:
 
 
 ```
@@ -355,7 +355,7 @@ tempMatrix._m00_m00 = worldMatrix._m00_m11;
 
 
 
-Além disso, os espaços de nome de componente não podem ser misturados. Esta é uma gravação de componente inválida:
+Além disso, os espaços de nome do componente não podem ser mistos. Esta é uma gravação de componente inválida:
 
 
 ```
@@ -367,20 +367,39 @@ tempMatrix._11_m23 = worldMatrix._11_22;
 
 ### <a name="matrix-ordering"></a>Ordenação de matriz
 
-Ordem de embalagem de matriz para parâmetros uniformes é definido como coluna-principal por padrão. Isso significa que cada coluna da matriz é armazenada em um único registro constante. Por outro lado, uma matriz de linha principal empacota cada linha da matriz em um único registro constante. A embalagem de matriz pode ser alterada com a diretiva de **\# \_ matriz pragmapack** ou com a **linha \_ principal** ou a palavra-chave **\_ Major da coluna** .
+A ordem de empacotamento de matriz para parâmetros uniformes é definida como column-major por padrão. Isso significa que cada coluna da matriz é armazenada em um único registro constante. Por outro lado, uma matriz de linha principal empacota cada linha da matriz em um único registro constante. O empacotamento de matriz pode ser alterado com a diretiva de matriz **\# \_ pragmapack** ou com a palavra-chave **\_ principal** da linha ou **da \_ coluna** principal.
 
-Os dados em uma matriz são carregados em registros de constante de sombreador antes de um sombreador ser executado. Há duas opções de como os dados da matriz são lidos: na ordem principal da linha ou na ordem principal da coluna. Coluna-a ordem principal significa que cada coluna de matriz será armazenada em um único registro de constante e a ordem de principal de linha significa que cada linha da matriz será armazenada em um único registro constante. Essa é uma consideração importante para quantos registros constantes são usados para uma matriz.
+Os dados em uma matriz são carregados em registros constantes do sombreador antes que um sombreador seja executado. Há duas opções para como os dados de matriz são lidos: em ordem de linha-principal ou em ordem de coluna principal. Ordem principal da coluna significa que cada coluna de matriz será armazenada em um único registro constante e a ordem de linha principal significa que cada linha da matriz será armazenada em um único registro constante. Essa é uma consideração importante para quantos registros constantes são usados para uma matriz.
 
-Uma matriz de linha principal é disposta da seguinte maneira:
+Uma matriz de linha principal é colocada da seguinte forma:
 
+:::row:::
+    :::column:::
+        11<br/>
+        21<br/>
+        31<br/>
+        41<br/>
+    :::column-end:::
+    :::column:::
+        12<br/>
+        22<br/>
+        32<br/>
+        42<br/>
+    :::column-end:::
+    :::column:::
+        13<br/>
+        23<br/>
+        33<br/>
+        43<br/>
+    :::column-end:::
+    :::column:::
+        14<br/>
+        24<br/>
+        34<br/>
+        44<br/>
+    :::column-end:::
+:::row-end:::
 
-
-|     |     |     |     |
-|-----|-----|-----|-----|
-| 11  | 12  | 13  | 14  |
-| 21  | 22  | 23  | 24  |
-| 31  | 32  | 33  | 34  |
-| 41  | 42  | 43  | 44  |
 
 
 
@@ -389,13 +408,33 @@ Uma matriz de linha principal é disposta da seguinte maneira:
 Uma matriz de coluna principal é disposta da seguinte maneira:
 
 
+:::row:::
+    :::column:::
+        11<br/>
+        12<br/>
+        13<br/>
+        14<br/>
+    :::column-end:::
+    :::column:::
+        21<br/>
+        22<br/>
+        23<br/>
+        24<br/>
+    :::column-end:::
+    :::column:::
+        31<br/>
+        32<br/>
+        33<br/>
+        34<br/>
+    :::column-end:::
+    :::column:::
+        14<br/>
+        24<br/>
+        34<br/>
+        44<br/>
+    :::column-end:::
+:::row-end:::
 
-|     |     |     |     |
-|-----|-----|-----|-----|
-| 11  | 21  | 31  | 41  |
-| 12  | 22  | 32  | 42  |
-| 13  | 23  | 33  | 43  |
-| 14  | 24  | 34  | 44  |
 
 
 

@@ -4,12 +4,12 @@ description: IAgentCharacter GetMoveCause
 ms.assetid: 36cdd3bc-65b6-469f-9344-93403c1d24e0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 612fcbfd4470d17e2365373458a8ded899a8180a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: be943cf3b25b789838215f0209b16e67d5b50659
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364504"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119672"
 ---
 # <a name="iagentcharactergetmovecause"></a>IAgentCharacter::GetMoveCause
 
@@ -34,13 +34,13 @@ Endereço de uma variável que recebe a causa da última movimentação do carac
 
 
 
-|                                                                |                                                                                      |
+| Valor                                                               | Descrição                                                                                     |
 |----------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| **const NeverMoved curto não assinado** **= 0;**<br/>        | O caractere não foi movido.                                                        |
-| **const não assinada curto-** **movida = 1;**<br/>         | O usuário arrastou o caractere.                                                          |
-| **const ProgramMoved curto não assinado** **= 2;**<br/>      | Seu aplicativo moveu o caractere.                                                |
-| **const OtherProgramMoved curto não assinado** **= 3;**<br/> | Outro aplicativo moveu o caractere.                                             |
-| **const SystemMoved curto sem sinal** **= 4**<br/>        | O servidor moveu o caractere para mantê-lo na tela após uma alteração de resolução de tela. |
+| **const unsigned short** **NeverMoved = 0;**<br/>        | O caractere não foi movido.                                                        |
+| **const unsigned short** **UserMoved = 1;**<br/>         | O usuário arrastou o caractere.                                                          |
+| **const unsigned short** **ProgramMoved = 2;**<br/>      | Seu aplicativo moveu o caractere.                                                |
+| **const unsigned short** **OtherProgramMoved = 3;**<br/> | Outro aplicativo moveu o caractere.                                             |
+| **const unsigned short** **SystemMoved = 4**<br/>        | O servidor moveu o caractere para mantê-lo na tela após uma alteração na resolução da tela. |
 
 
 
@@ -50,7 +50,7 @@ Endereço de uma variável que recebe a causa da última movimentação do carac
 
 ## <a name="see-also"></a>Consulte Também
 
-[**IAgentNotifySink:: mover**](iagentnotifysink--move.md)
+[**IAgentNotifySink::Move**](iagentnotifysink--move.md)
 
 
  

@@ -1,6 +1,6 @@
 ---
 title: Filtro de Leitor do WM ASF (Windows Media Format SDK 11)
-description: Saiba mais sobre o filtro leitor do WM ASF.
+description: Saiba mais sobre o filtro leitor do WM ASF para o SDK Windows Media Format 11. Revise as informações de filtro e consulte os tópicos relacionados.
 ms.assetid: 3d5ca88a-86bd-4d84-b4f4-782564ced58d
 keywords:
 - Windows Media Format SDK, Leitor do WM ASF
@@ -11,12 +11,12 @@ keywords:
 - ASF (formato de sistemas avançados), leitor do WM ASF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 421ab634a0d68837b22961b37005c5670d73e5fa
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 26bde36b1b2cfa7644d6e75d8d1ff96260b2e457
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444277"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119641"
 ---
 # <a name="wm-asf-reader-filter-windows-media-format-11-sdk"></a>Filtro de Leitor do WM ASF (Windows Media Format SDK 11)
 
@@ -34,8 +34,8 @@ A tabela a seguir contém informações sobre o filtro leitor do WM ASF, como as
 |  Informações de filtro                      |  Tipos                                                                                                                                                                                                                                             |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Interfaces de filtro      | **IBaseFilter,** **IFileSourceFilter,** **IServiceProvider,** **IWMHeaderInfo,** **IWMReaderAdvanced** (parcialmente implementado. Consulte Comentários.), **IWMReaderAdvanced2** (parcialmente implementado), **IWMDRMReader** (por **meio de IServiceProvider**) |
-| Tipos de mídia de pino de entrada  | Não aplicável                                                                                                                                                                                                                                |
-| Interfaces de pino de entrada   | Não aplicável                                                                                                                                                                                                                                |
+| Tipos de mídia de pino de entrada  | Não se aplica                                                                                                                                                                                                                                |
+| Interfaces de pino de entrada   | Não se aplica                                                                                                                                                                                                                                |
 | Tipos de mídia de pino de saída | MEDIATYPE \_ Video, MEDIATYPE \_ Audio, MEDIATYPE \_ ScriptCommand, MEDIATYPE \_ FileTransfer                                                                                                                                                         |
 | Tipo de formato            | **VIDEOINFOHEADER2** se o conteúdo estiver [*entrelaçado;*](wmformat-glossary.md)caso contrário, **VIDEOINFOHEADER**                                                                                                                    |
 | Interfaces de pino de saída  | **IMediaSeeking,** **IAMWMBufferPass,** **IServiceProvider,** **IWMStreamConfig2** (por **meio de IServiceProvider**)                                                                                                                             |

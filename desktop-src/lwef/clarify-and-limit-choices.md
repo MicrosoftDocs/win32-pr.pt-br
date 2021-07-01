@@ -4,12 +4,12 @@ description: Esclarecer e limitar opções
 ms.assetid: 4ec3ca01-231b-4a45-aae1-fba5b2ba0033
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a43ed5f95c2e516f304ffa28bcca1d9fd67a9169
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 953001d706089244d6366c8dab0cdb580a2d72ca
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105798549"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118471"
 ---
 # <a name="clarify-and-limit-choices"></a>Esclarecer e limitar opções
 
@@ -39,7 +39,7 @@ Você também pode usar os prompts de diretiva para evitar a entrada aberta. Os 
 
 
 
-|                                            |                                                     |
+| Prompt                                           | Avaliação                                                    |
 |--------------------------------------------|-----------------------------------------------------|
 | O que você quer?                          | Muito geral, uma solicitação aberta                  |
 | Escolha um estilo ou ingrediente de pizza.        | Bom, se as escolhas estiverem visíveis, mas ainda gerais     |
@@ -47,22 +47,15 @@ Você também pode usar os prompts de diretiva para evitar a entrada aberta. Os 
 
 
 
- 
+ 
 
 Isso orienta o usuário na emissão de um comando válido. Ao sugerir as palavras ou a frase, é mais provável que você extrairá as palavras esperadas no retorno. Para evitar a repetição não natural, altere as palavras ou diminua o original da apresentação subsequente à medida que o usuário se tornar mais experiente com o estilo de entrada. Os prompts de diretiva também podem ser usados em situações em que o usuário não pode emitir um comando dentro de um tempo prescrito ou não fornecer um comando esperado. Os prompts de diretiva podem ser fornecidos usando a saída de fala, suas interfaces de aplicativo ou ambos. A chave está ajudando o usuário a saber as opções apropriadas.
 
 O texto influencia o sucesso de um prompt. Por exemplo, o prompt "gostaria de pedir sua pizza?" pode gerar uma resposta "Sim" ou "não", mas também pode gerar uma solicitação de pedido. Defina os prompts como não ambíguos ou estejam preparados para aceitar uma grande variedade de respostas possíveis. Além disso, observe a tendência de que as pessoas imitam palavras e construções que ouvem. Isso geralmente pode ser usado para ajudar a evocar uma resposta apropriada, como no exemplo a seguir:
 
+**Usuário:** Mostre-me todas as mensagens do Paul.
 
-
-|            |                                 |
-|------------|---------------------------------|
-| Usuário:      | Mostre-me todas as mensagens do Paul. |
-| Espaço |                                 |
-
-
-
- 
+**Espaço**
 
 Isso tem mais probabilidade de extrair o nome completo de uma das partes com o prefixo possível de "I mean" ou "Eu queria".
 
@@ -70,24 +63,19 @@ Como os caracteres do Microsoft Agent operam na interface visual do Microsoft Wi
 
 Você também pode usar outros modos de interação para sugerir sutilmente aos usuários a gramática de fala apropriada, conforme mostrado no exemplo a seguir:
 
+**Usuário:** (clica na opção de pizza estilo havaiano com o mouse)
 
+**Caractere:** Pizza estilo havaiano.
 
-|            |                                                     |
-|------------|-----------------------------------------------------|
-| Usuário:      | (Clica na opção de pizza estilo havaiano com o mouse) |
-| Espaço | Pizza estilo havaiano.                               |
-| Usuário:      | (Clica em opção de queijo extra com o mouse)         |
-| Espaço | Adicione "queijo extra".                                 |
+**Usuário:** (clica em opção de queijo extra com o mouse)
 
-
-
- 
+**Caractere:** Adicione "queijo extra".
 
 Outro fator importante na entrada de fala bem-sucedida é advertência o usuário quando o mecanismo está pronto para entrada, porque muitos mecanismos de fala permitem apenas um único expressão de cada vez. O Microsoft Agent oferece suporte para isso de duas maneiras. Primeiro, se a placa de som der suporte a MIDI, o Microsoft Agent gerará um breve Tom a ser sinalizado quando o canal de entrada de fala estiver disponível. Em segundo lugar, a janela da dica de escuta exibe um prompt de texto apropriado quando o caractere (mecanismo de fala) está ouvindo a entrada. Além disso, essa dica exibe o que o mecanismo ouviu.
 
- 
+ 
 
- 
+ 
 
 
 

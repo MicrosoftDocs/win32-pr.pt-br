@@ -1,21 +1,21 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o parâmetro PageBlackGenerationProcessingBlackInkLimit. Este tópico não é atual. Para obter as informações mais atuais, consulte a Especificação de Esquema de Impressão.
 ms.assetid: 96b48917-1fbc-467f-b2b4-1a9673f1ee99
 title: PageBlackGenerationProcessingBlackInkLimit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3052d8cec8fd46c2f7607e6366aa6868cccbdbda
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 7c753554b240a5fef0012a81c533b6efe938075e
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996183"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118421"
 ---
 # <a name="pageblackgenerationprocessingblackinklimit"></a>PageBlackGenerationProcessingBlackInkLimit
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-O conteúdo do aplicativo rotulado com a cor nomeada especificada deve aparecer em todas as separações de cores.
+O conteúdo do aplicativo rotulado com a cor nomeada especificada DEVE aparecer em todas as separações de cores.
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo da estrutura](#structure-content)
@@ -27,7 +27,7 @@ O conteúdo do aplicativo rotulado com a cor nomeada especificada deve aparecer 
 | Nome | Valor |
 |----------------------------|------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                    |
-| Prefixo de escopo <br/> | ?<br/>                                            |
+| Prefixo de definição de scoping <br/> | ?<br/>                                            |
 | Observações <br/>          | Vinculado ao elemento PageBlackGenerationProcessing<br/> |
 
 
@@ -75,10 +75,10 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Tipo de dados<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | string<br/>  | não definido<br/>       |
 | MaxValue<br/>     | Número inteiro<br/> | 100<br/>             |
-| MinValue<br/>     | integer<br/> | 0<br/>               |
+| Minvalue<br/>     | inteiro<br/> | 0<br/>               |
 | Vários<br/>     | integer<br/> | 1<br/>               |
-| Obrigatório<br/>    | string<br/>  | PSK: condicional<br/> |
-| UnitType<br/>     | string<br/>  | {1&gt;percent&lt;1}<br/>         |
+| Obrigatório<br/>    | string<br/>  | psk:Conditional<br/> |
+| Unittype<br/>     | string<br/>  | {1&gt;percent&lt;1}<br/>         |
 
 
 

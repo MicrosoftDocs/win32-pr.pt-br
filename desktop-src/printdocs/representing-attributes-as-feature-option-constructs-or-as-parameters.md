@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Representa atributos como construções de recurso/opção ou como parâmetros. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
 ms.assetid: 055e502d-631f-49d2-8577-65396373d478
 title: Representando atributos como construções de recurso/opção ou como parâmetros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d2c24843a175337f40a84dcdacc41e1a2ab1e15e
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: c93f4de56709ed310a7f0aa259b1dbfd3377ed42
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104011970"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120051"
 ---
 # <a name="representing-attributes-as-featureoption-constructs-or-as-parameters"></a>Representando atributos como construções de recurso/opção ou como parâmetros
 

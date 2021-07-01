@@ -4,12 +4,12 @@ description: Este artigo explica como você pode implementar um controle de edi�
 ms.assetid: 760ed960-08a3-e967-282e-7fbdbaeb7a4d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1519f07a4e105ae822bd13fd7acd8b29e5ad8a0
-ms.sourcegitcommit: 6515eef99ca0d1bbe3e27d4575e9986f5255f277
+ms.openlocfilehash: a119c5933aae14e2d3e45085dafa241a4dcb11e1
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "103930522"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118671"
 ---
 # <a name="using-an-input-method-editor-in-a-game"></a>Usando um editor de método de entrada em um jogo
 
@@ -97,8 +97,8 @@ Um IME precisa obter a cadeia de caracteres de leitura, ocultar a janela de leit
 
 |                    | Obtendo cadeia de caracteres de leitura                                                | Ocultando janela de leitura                       | Orientação da janela de leitura                              |
 |--------------------|-----------------------------------------------------------------------|---------------------------------------------|------------------------------------------------------------|
-| Antes da versão 6,0 | a. Lendo o acesso à janela dados privados do IME diretamente. Consulte "4 estrutura" | Interceptar mensagens privadas do IME. Consulte "3 mensagens" | Examine as informações do registro. Consulte "5 informações do registro" |
-| Após a versão 6,0  | [Getreadingstring](#getreadingstring)                                 | [ShowReadingWindow](#showreadingwindow)     | [Getreadingstring](#getreadingstring)                      |
+| **Antes da versão 6.0** | a. Ler dados privados do IME de acesso à janela diretamente. Consulte "4 Estrutura" | Intercepte mensagens privadas do IME. Consulte "3 mensagens" | Examine as informações do Registro. Consulte "5 informações do Registro" |
+| **Após a versão 6.0**  | [GetReadingString](#getreadingstring)                                 | [ShowReadingWindow](#showreadingwindow)     | [GetReadingString](#getreadingstring)                      |
 
 
 
@@ -106,9 +106,9 @@ Um IME precisa obter a cadeia de caracteres de leitura, ocultar a janela de leit
 
 ## <a name="messages"></a>Mensagens
 
-As mensagens a seguir não precisam ser processadas para o IME mais recente que implementa [ShowReadingWindow](#showreadingwindow)().
+As mensagens a seguir não devem ser processadas para o IME mais novo que implementa [ShowReadingWindow](#showreadingwindow)().
 
-As mensagens a seguir são interceptadas pelo manipulador de mensagens do aplicativo (ou seja, elas não são passadas para DefWindowProc) para impedir que a janela de leitura seja exibida.
+As mensagens a seguir são presas pelo manipulador de mensagens do aplicativo (ou seja, elas não são passadas para DefWindowProc) para impedir que a janela de leitura seja aparecendo.
 
 ``` syntax
 Msg == WM_IME_NOTIFY
@@ -119,22 +119,22 @@ lParam == 16, 17, 26, 27, 28 (CHT IME version 5.0, 5.1, 5.2 / CHS IME 5.3)
 
 ## <a name="examples"></a>Exemplos
 
-Os exemplos a seguir ilustram como obter informações de cadeia de caracteres de leitura do IME mais antigo que não tem getreadingstring (). O código gera as seguintes saídas:
+Os exemplos a seguir ilustram como obter informações de cadeia de caracteres de leitura do IME mais antigo que não tem GetReadingString(). O código gera as seguintes saídas:
 
 
 
-|              |                                                                                       |
+| Saída              | Descrição                                                                                      |
 |--------------|---------------------------------------------------------------------------------------|
-| DwLen DWORD  | Comprimento da cadeia de caracteres de leitura                                                          |
-| Dwerr DWORD  | Índice do caractere de erro                                                                   |
-| WSTR de LPWSTR  | Ponteiro para a cadeia de caracteres de leitura                                                         |
-| BOOLIANo Unicode | Se for true, a cadeia de caracteres de leitura estará no formato Unicode. Caso contrário, ele estará em formato multibyte. |
+| DWORD dwlen  | Comprimento da cadeia de caracteres de leitura.                                                          |
+| DWORD dwerr  | Índice do caractere de erro.                                                                   |
+| LPWSTR wstr  | Ponteiro para a cadeia de caracteres de leitura.                                                         |
+| Unicode BOOL | Se true, a cadeia de caracteres de leitura está no formato Unicode. Caso contrário, ele está no formato multibyte. |
 
 
 
  
 
-### <a name="cht-ime-version-42-43-and-44"></a>IME do CHT versão 4,2, 4,3 e 4,4
+### <a name="cht-ime-version-42-43-and-44"></a>CHT IME versão 4.2, 4.3 e 4.4
 
 ``` syntax
 LPINPUTCONTEXT lpIMC = _ImmLockIMC(himc);
@@ -146,7 +146,7 @@ wstr = (WCHAR *)(p + 56);
 unicode = TRUE;
 ```
 
-### <a name="cht-ime-version-50"></a>IME do CHT versão 5,0
+### <a name="cht-ime-version-50"></a>CHT IME versão 5.0
 
 ``` syntax
 LPINPUTCONTEXT lpIMC = _ImmLockIMC(himc);
@@ -160,7 +160,7 @@ wstr = (WCHAR *)(p + 1*4 + (16*2+2*4) + 5*4);
 unicode = FALSE;
 ```
 
-### <a name="cht-ime-version-51-52-and-chs-ime-version-53"></a>Chinês do CHT versão 5,1, 5,2 e CHS IME versão 5,3
+### <a name="cht-ime-version-51-52-and-chs-ime-version-53"></a>CHT IME versão 5.1, 5.2 e CHS IME versão 5.3
 
 ``` syntax
 LPINPUTCONTEXT lpIMC = _ImmLockIMC(himc);
@@ -174,7 +174,7 @@ wstr  = (WCHAR *) (p + 1*4 + (16*2+2*4) + 5*4);
 unicode = TRUE;
 ```
 
-### <a name="chs-ime-version-41"></a>O IME CHS versão 4,1
+### <a name="chs-ime-version-41"></a>CHS IME versão 4.1
 
 ``` syntax
 // GetImeId(1) returns VS_FIXEDFILEINFO:: dwProductVersionLS of IME file
@@ -189,7 +189,7 @@ wstr = (WCHAR *)(p + 6*4 + 16*2*1);
 unicode = TRUE;
 ```
 
-### <a name="chs-ime-version-42"></a>O IME CHS versão 4,2
+### <a name="chs-ime-version-42"></a>CHS IME versão 4.2
 
 ``` syntax
 int nTcharSize = IsNT() ? sizeof(WCHAR) : sizeof(char);
@@ -206,25 +206,25 @@ unicode = IsNT() ? TRUE : FALSE;
 
 Um aplicativo de tela inteira deve lidar corretamente com as seguintes mensagens relacionadas ao IME:
 
-### <a name="wm_inputlangchange"></a>INPUTLANGCHANGE do WM \_
+### <a name="wm_inputlangchange"></a>WM \_ INPUTLANGCHANGE
 
-O IMM envia uma \_ mensagem de INPUTLANGCHANGE do WM para a janela ativa de um aplicativo após a localidade de entrada ter sido alterada pelo usuário com uma combinação de teclas (geralmente Alt + Shift) ou com o indicador de localidade de entrada na barra de tarefas ou no idioma. A barra de idiomas é um controle na tela com o qual o usuário pode configurar um serviço de texto. (Consulte [como mostrar a barra de idiomas](/windows/desktop/TSF/how-to-set-up-tsf).) A captura de tela a seguir mostra uma lista de seleção de idioma que é exibida quando o usuário clica no indicador de localidade.
+O IMM envia uma mensagem WM INPUTLANGCHANGE para a janela ativa de um aplicativo depois que a localidade de entrada é alterada pelo usuário com uma combinação de chaves (geralmente ALT+SHIFT) ou com o indicador de localidade de entrada na barra de tarefas ou na barra de \_ idiomas. A barra de idiomas é um controle na tela com o qual o usuário pode configurar um serviço de texto. (Consulte [Como mostrar a barra de idiomas](/windows/desktop/TSF/how-to-set-up-tsf).) A captura de tela a seguir mostra uma lista de seleção de idioma que é exibida quando o usuário clica no indicador de localidade.
 
-![lista de seleção de idioma exibida quando o usuário clica no indicador de localidade](images/ime-langselection.png)
+![lista de seleção de idioma que é exibida quando o usuário clica no indicador de localidade](images/ime-langselection.png)
 
-Quando o IMM envia uma mensagem de INPUTLANGCHANGE do WM \_ , o CDXUTIMEEditBox deve executar várias tarefas importantes:
+Quando o IMM envia uma mensagem WM \_ INPUTLANGCHANGE, CDXUTIMEEditBox deve executar várias tarefas importantes:
 
-1.  O método GetKeyboardLayout é chamado para retornar o identificador de localidade de entrada (ID) para o thread do aplicativo. A classe CDXUTIMEEditBox salva essa ID em sua variável de membro estática s \_ hklCurrent para uso posterior. É importante que o aplicativo conheça a localidade de entrada atual, porque o IME para cada idioma tem seu próprio comportamento distinto. O desenvolvedor pode precisar fornecer código diferente para diferentes localidades de entrada.
-2.  CDXUTIMEEditBox Inicializa uma cadeia de caracteres para exibição no indicador de idioma da caixa de edição. Esse indicador pode exibir o idioma de entrada ativo quando o aplicativo está sendo executado no modo de tela inteira e nem a barra de tarefas nem a barra de idiomas é visível.
-3.  O método ImmGetConversionStatus é chamado para indicar se a localidade de entrada está no modo de conversão nativo ou não nativo. O modo de conversão nativo permite que o usuário insira texto na linguagem escolhida. O modo de conversão não nativo faz com que o teclado atue como um teclado padrão em inglês. É importante dar ao usuário uma indicação visual sobre o tipo de modo de conversão em que o IME está, para que o usuário possa saber facilmente quais caracteres devem ser esperados ao atingir uma chave. CDXUTIMEEditBox fornece essa indicação visual com uma cor de indicador de idioma. Quando a localidade de entrada usa um IME com o modo de conversão nativo, a classe CDXUTIMEEditBox desenha o texto do indicador com a cor definida pelo \_ parâmetro m IndicatorImeColor. Quando o IME está no modo de conversão não nativa ou nenhum IME é usado, a classe desenha o texto do indicador com a cor definida pelo \_ parâmetro m IndicatorEngColor.
-4.  CDXUTIMEEditBox verifica a localidade de entrada e define a variável de membro estático s \_ bInsertOnType como true para coreano e false para todas as outras linguagens. Esse sinalizador é necessário devido aos diferentes comportamentos de IMEs do coreano e de todos os outros IMEs. Ao inserir caracteres em idiomas diferentes de coreano, o texto inserido pelo usuário é exibido na janela de composição e o usuário pode alterar livremente o conteúdo da cadeia de caracteres de composição. O usuário pressiona a tecla ENTER quando estiver satisfeito com a cadeia de caracteres de composição e a cadeia de caracteres de composição será enviada ao aplicativo como uma série de mensagens do WM \_ Char. No caso de IMEs do coreano, no entanto, quando um usuário pressiona uma tecla para inserir texto, um caractere é enviado imediatamente para o aplicativo. Quando o usuário pressiona subseqüentemente mais chaves para modificar esse caractere inicial, o caractere na caixa de edição é alterado para refletir a entrada adicional do usuário. Essencialmente, o usuário está compondo caracteres na caixa de edição. Esses dois comportamentos são diferentes o suficiente para que o CDXUTIMEEditBox precise codificar cada um especificamente.
-5.  O método de membro estático SetupImeApi é chamado para recuperar endereços de duas funções do módulo IME: getreadingstring e ShowReadingWindow. Se essas funções existirem, ShowReadingWindow será chamado para ocultar a janela de leitura padrão para este IME. Como o aplicativo renderiza a janela de leitura em si, ele notifica o IME para desabilitar o desenho da janela de leitura padrão para que ela não interfira na renderização de tela inteira.
+1.  O método GetKeyboardLayout é chamado para retornar o ID (identificador de localidade) de entrada para o thread do aplicativo. A classe CDXUTIMEEditBox salva essa ID em sua variável de membro estático s \_ hklCurrent para uso posterior. É importante que o aplicativo conheça a localidade de entrada atual, pois o IME para cada idioma tem seu próprio comportamento distinto. O desenvolvedor pode precisar fornecer código diferente para diferentes localidades de entrada.
+2.  CDXUTIMEEditBox inicializa uma cadeia de caracteres a ser exibida no indicador de idioma da caixa de edição. Esse indicador pode exibir o idioma de entrada ativo quando o aplicativo está em execução no modo de tela inteira e nem a barra de tarefas nem a barra de idiomas estão visíveis.
+3.  O método ImmGetConversionStatus é chamado para indicar se a localidade de entrada está no modo de conversão nativo ou não nativo. O modo de conversão nativa permite que o usuário insira texto no idioma escolhido. O modo de conversão não nativo faz com que o teclado atue como um teclado padrão em inglês. É importante dar ao usuário uma indicação visual sobre em qual tipo de modo de conversão o IME está, para que o usuário possa saber facilmente quais caracteres esperar ao atingir uma chave. CDXUTIMEEditBox fornece essa indicação visual com uma cor de indicador de idioma. Quando a localidade de entrada usa um IME com o modo de conversão nativo, a classe CDXUTIMEEditBox desenha o texto indicador com a cor definida pelo parâmetro m \_ IndicatorImeColor. Quando o IME está no modo de conversão não nativo ou nenhum IME é usado, a classe desenha o texto indicador com a cor definida pelo parâmetro m \_ IndicatorEngColor.
+4.  CDXUTIMEEditBox verifica a localidade de entrada e define a variável de membro estático bInsertOnType como TRUE para coreano e FALSE para todos \_ os outros idiomas. Esse sinalizador é necessário devido aos diferentes comportamentos dos IMEs coreanos e de todos os outros IMEs. Ao inserir caracteres em idiomas diferentes do coreano, o texto inserido pelo usuário é exibido na janela de composição e o usuário pode alterar livremente o conteúdo da cadeia de caracteres de composição. O usuário pressiona a tecla ENTER quando estiver satisfeito com a cadeia de caracteres de composição e a cadeia de caracteres de composição é enviada ao aplicativo como uma série de mensagens WM \_ CHAR. No entanto, em IMEs coreanos, quando um usuário pressiona uma tecla para inserir texto, um caractere é enviado imediatamente para o aplicativo. Quando o usuário pressiona posteriormente mais teclas para modificar esse caractere inicial, o caractere na caixa de edição muda para refletir a entrada adicional do usuário. Essencialmente, o usuário está compondo caracteres na caixa de edição. Esses dois comportamentos são diferentes o suficiente para que CDXUTIMEEditBox deve codificar para cada um deles especificamente.
+5.  O método de membro estático SetupImeApi é chamado para recuperar endereços de duas funções do módulo IME: GetReadingString e ShowReadingWindow. Se essas funções existirem, ShowReadingWindow será chamado para ocultar a janela de leitura padrão para esse IME. Como o aplicativo renderiza a janela de leitura em si, ele notifica o IME para desabilitar o desenho da janela de leitura padrão para que ele não interfira na renderização de tela inteira.
 
-O IMM envia uma \_ \_ mensagem SetContext do WM IME quando uma janela do aplicativo é ativada. O parâmetro lParam desta mensagem contém um sinalizador que indica para o IME quais janelas devem ser desenhadas e quais não devem. Como o aplicativo está lidando com todo o desenho, ele não precisa do IME para desenhar nenhuma das janelas do IME. Portanto, o manipulador de mensagens do aplicativo simplesmente define lParam como 0 e retorna.
+O IMM envia uma mensagem \_ SETCONTEXT do WM IME \_ quando uma janela do aplicativo é ativada. O parâmetro lParam dessa mensagem contém um sinalizador que indica ao IME quais janelas devem ser desenhadas e quais não devem. Como o aplicativo está tratando todo o desenho, ele não precisa do IME para desenhar nenhuma das janelas do IME. Portanto, o manipulador de mensagens do aplicativo simplesmente define lParam como 0 e retorna.
 
-Para que os aplicativos ofereçam suporte ao IME, o processamento especial é necessário para a mensagem relacionada ao IME do WM \_ IME \_ SetContext. Como o Windows normalmente envia essa mensagem para o aplicativo antes de chamar o método PanoramaInitialize (), o panorama não tem a oportunidade de processar a interface do usuário para mostrar as janelas de lista de candidatos.
+Para que os aplicativos deem suporte ao IME, o processamento especial é necessário para a mensagem relacionada ao IME SETCONTEXT relacionada ao \_ \_ IME. Como o Windows normalmente envia essa mensagem para o aplicativo antes de chamar o método PanoramaInitialize(), o Panorama não tem a oportunidade de processar a interface do usuário para mostrar janelas de lista de candidatos.
 
-O trecho de código a seguir especifica a aplicativos do Windows para não exibir nenhuma interface do usuário associada à janela lista de candidatos, permitindo que o panorama manipule especificamente essa interface do usuário.
+O snippet de código a seguir especifica que os aplicativos do Windows não exibem nenhuma interface do usuário associada à janela de lista de candidatos, permitindo que o Panorama manipular especificamente essa interface do usuário.
 
 ``` syntax
 case WM_IME_SETCONTEXT:
@@ -235,25 +235,25 @@ case WM_IME_SETCONTEXT:
     return lRet;
 ```
 
-### <a name="wm_ime_startcomposition"></a>\_STARTCOMPOSITION IME do WM \_
+### <a name="wm_ime_startcomposition"></a>WM \_ IME \_ STARTCOMPOSITION
 
-O IMM envia uma \_ \_ mensagem STARTCOMPOSITION do WM IME para o aplicativo quando uma composição do IME está prestes a começar como resultado de pressionamentos de teclas pelo usuário. Se o IME usar a janela de composição, ele exibirá a cadeia de caracteres de composição atual em uma janela de composição. O CDXUTIMEEditBox lida com essa mensagem executando duas tarefas:
+O IMM envia uma mensagem STARTCOMPOSITION do WM IME para o aplicativo quando uma composição do IME está prestes a começar como resultado de trocas de \_ \_ teclas pelo usuário. Se o IME usar a janela de composição, ele exibirá a cadeia de caracteres de composição atual em uma janela de composição. CDXUTIMEEditBox lida com essa mensagem executando duas tarefas:
 
-1.  CDXUTIMEEditBox limpa o buffer da cadeia de caracteres de composição e o buffer do atributo. Esses buffers são membros estáticos de CDXUTIMEEditBox.
-2.  CDXUTIMEEditBox define a \_ variável de membro estático s bHideCaret como true. Esse membro, definido na classe CDXUTEditBox base, controla se o cursor na caixa de edição deve ser desenhado quando a caixa de edição é renderizada. A janela composição funciona de forma semelhante a uma caixa de edição com texto e cursor. Para evitar confusão quando a janela de composição estiver visível, a caixa de edição ocultará o cursor para que apenas um cursor fique visível por vez.
+1.  CDXUTIMEEditBox limpa o buffer de cadeia de caracteres de composição e o buffer de atributo. Esses buffers são membros estáticos de CDXUTIMEEditBox.
+2.  CDXUTIMEEditBox define a variável de membro estático \_ bHideCaret como TRUE. Esse membro, definido na classe CDXUTEditBox base, controla se o cursor na caixa de edição deve ser desenhado quando a caixa de edição é renderizada. A janela de composição funciona de forma semelhante a uma caixa de edição com texto e cursor. Para evitar confusão quando a janela de composição estiver visível, a caixa de edição oculta seu cursor para que apenas um cursor seja visível por vez.
 
-### <a name="wm_ime_composition"></a>\_composição do IME do WM \_
+### <a name="wm_ime_composition"></a>WM \_ IME \_ COMPOSITION
 
-O IMM envia uma \_ mensagem de \_ composição IME do WM para o aplicativo quando o usuário insere um pressionamento de tecla para alterar a cadeia de caracteres de composição. O valor de lParam indica que tipo de informações o aplicativo pode recuperar do IMM (Input Method Manager). O aplicativo deve recuperar as informações disponíveis chamando [**ImmGetCompositionString**](/windows/desktop/api/imm/nf-imm-immgetcompositionstringa) e, em seguida, deve salvar as informações em seu buffer privado para que possa renderizar os elementos do IME posteriormente.
+O IMM envia uma mensagem WM IME COMPOSITION para o aplicativo quando o usuário entra em um teclas para alterar a cadeia \_ \_ de caracteres de composição. O valor de lParam indica que tipo de informações o aplicativo pode recuperar do IMM (Gerenciador de Métodos de Entrada). O aplicativo deve recuperar as informações disponíveis chamando [**ImmGetCompositionString**](/windows/desktop/api/imm/nf-imm-immgetcompositionstringa) e, em seguida, deve salvar as informações em seu buffer privado para que possa renderizar os elementos IME posteriormente.
 
-O CDXUTIMEEditBox verifica e recupera os seguintes dados de cadeia de caracteres de composição:
+CDXUTIMEEditBox verifica e recupera os seguintes dados de cadeia de caracteres de composição:
 
 
 
-| [**WM \_ Valor \_**](/windows/desktop/Intl/wm-ime-composition) do sinalizador lParam de composição do IME | Dados                           | Descrição                                                                                                                                                                                                                                                                                                                                                          |
+| [**WM \_ Valor do sinalizador IME \_ COMPOSITION**](/windows/desktop/Intl/wm-ime-composition) lParam | Dados                           | Descrição                                                                                                                                                                                                                                                                                                                                                          |
 |-----------------------------------------------------------------------|--------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| GCS \_ COMPATTR                                                         | Atributo de composição          | Esse atributo contém informações como o status de cada caractere na cadeia de caracteres de composição (por exemplo, convertido ou não convertido). Essas informações são necessárias porque o CDXUTIMEEditBox colore a cadeia de caracteres de composição de forma diferente com base em seus atributos.                                                                                   |
-| GCS \_ COMPCLAUSE                                                       | Informações da cláusula de composição | Essas informações de cláusula são usadas quando o IME do japonês está ativo. Quando uma cadeia de caracteres de composição em Japonês é convertida, os caracteres podem ser agrupados como uma cláusula que é convertida em uma única entidade. Quando o usuário move o cursor, CDXUTIMEEditBox usa essas informações para realçar a cláusula inteira, em vez de apenas um único caractere dentro da cláusula. |
+| GCS \_ COMPATTR                                                         | Atributo composition          | Esse atributo contém informações como o status de cada caractere na cadeia de caracteres de composição (por exemplo, convertido ou não convertido). Essas informações são necessárias porque CDXUTIMEEditBox colore os caracteres da cadeia de caracteres de composição de forma diferente com base em seus atributos.                                                                                   |
+| GCS \_ COMPCLAUSE                                                       | Informações da cláusula Composition | Essas informações de cláusula são usadas quando o IME japonês está ativo. Quando uma cadeia de caracteres de composição japonesa é convertida, os caracteres podem ser agrupados como uma cláusula que é convertida em uma única entidade. Quando o usuário move o cursor, CDXUTIMEEditBox usa essas informações para realçar a cláusula inteira, em vez de apenas um único caractere dentro da cláusula. |
 | GCS \_ COMPSTR                                                          | Cadeia de caracteres de composição             | Essa cadeia de caracteres é a cadeia de caracteres atualizada que está sendo composta pelo usuário. Essa também é a cadeia de caracteres exibida na janela de composição.                                                                                                                                                                                                                                        |
 | GCS \_ CURSORPOS                                                        | Posição do cursor de composição    | A janela composição implementa um cursor, semelhante ao cursor em uma caixa de edição. O aplicativo pode recuperar a posição do cursor ao processar a \_ mensagem de composição do IME do WM \_ para desenhar o cursor corretamente.                                                                                                                                            |
 | GCS \_ RESULTSTR                                                        | Cadeia de caracteres de resultado                  | A cadeia de caracteres de resultado está disponível quando o usuário está prestes a concluir o processo de composição. Essa cadeia de caracteres deve ser recuperada e os caracteres devem ser enviados para a caixa de edição.                                                                                                                                                                                        |
@@ -398,7 +398,7 @@ Se nenhuma das condições for atendida, a janela de leitura será vertical.
 | Windows ME                 | 5.0             |
 | Office XP                  | 5.1             |
 | Windows XP                 | 5.2             |
-| Downloadble Web autônomos | 6.0             |
+| Downloadble Web autônomos | 6,0             |
 
 
 

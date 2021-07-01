@@ -4,12 +4,12 @@ description: IAgentNotifySink DragStart
 ms.assetid: b3905b99-69e4-4046-aab9-2322618935aa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 031e78319beb0f62ddb0ea340fca0cd7ed88c0a2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f33ae89f9e24c6c7b0ec69fba1a98b3a64a18620
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292208"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120820"
 ---
 # <a name="iagentnotifysinkdragstart"></a>IAgentNotifySink::D ragStart
 
@@ -44,7 +44,7 @@ Um parâmetro que indica o botão do mouse e o estado de chave do modificador. O
 
 
 
-|        |                  |
+| Valor  | Descrição      |
 |--------|------------------|
 | 0x0001 | Botão esquerdo      |
 | 0x0010 | Botão do meio    |
@@ -55,7 +55,7 @@ Um parâmetro que indica o botão do mouse e o estado de chave do modificador. O
 
 
 
- 
+ 
 
 </dd> <dt>
 
@@ -73,9 +73,9 @@ A coordenada y do ponteiro do mouse em pixels, em relação à origem da tela (s
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

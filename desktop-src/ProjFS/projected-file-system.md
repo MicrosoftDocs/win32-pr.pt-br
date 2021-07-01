@@ -1,36 +1,36 @@
 ---
-title: Sistema de arquivos projetado pelo Windows
-description: Visão geral do sistema de arquivos projetado do Windows (ProjFS)
+title: Sistema de Arquivos Projetados do Windows
+description: Visão geral do Sistema de Arquivos Projetado do Windows (ProjFS)
 ms.assetid: <GUID-GOES-HERE>
 ms.date: 09/14/2018
 ms.topic: article
-ms.openlocfilehash: 8391ec63f23c9ebae5b47e4cac862f6ab3079ceb
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 68f121162efdf75fb9226b41f9b3a1121bef6480
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103823808"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120581"
 ---
-# <a name="windows-projected-file-system-projfs"></a>Sistema de arquivos projetado do Windows (ProjFS)
+# <a name="windows-projected-file-system-projfs"></a>ProjFS (Sistema de Arquivos Projetado do Windows)
 
-O sistema de arquivos projetado do Windows (ProjFS) permite que um aplicativo de modo de usuário chamado "provedor" faça o projeto de dados hierárquicos de um armazenamento de dados de backup no sistema de arquivos, fazendo com que ele apareça como arquivos e diretórios no sistema de arquivos. Por exemplo, um provedor simples pode projetar o registro do Windows no sistema de arquivos, fazendo com que as chaves e os valores do registro apareçam como arquivos e diretórios, respectivamente. Um exemplo de um provedor mais complexo é o [VFS para git](https://github.com/Microsoft/VFSForGit), que é usado para virtualizar repositórios git muito grande.
+O ProjFS (Sistema de Arquivos Projetado do Windows) permite que um aplicativo de modo de usuário chamado "provedor" projete dados hierárquicos de um armazenamento de dados de suporte no sistema de arquivos, fazendo com que eles apareçam como arquivos e diretórios no sistema de arquivos. Por exemplo, um provedor simples pode projetar o Registro do Windows no sistema de arquivos, fazendo com que as chaves e os valores do Registro apareçam como arquivos e diretórios, respectivamente. Um exemplo de um provedor mais complexo é [o VFS para Git,](https://github.com/Microsoft/VFSForGit)que é usado para virtualizar repositórios git muito grandes.
 
 > [!NOTE]
-> O ProjFS foi projetado para uso com armazenamentos de dados de backup de alta velocidade. Uma de suas metas de design é fazer com que os dados projetados apareçam como se estivessem presentes localmente, ocultando o fato de que os dados podem ser remotos. Como tal, o ProjFS não fornece: mecanismos para relatar o progresso da recuperação de dados; indicação do estado online versus offline de um arquivo; nem outros recursos que podem ser desejáveis ao trabalhar com armazenamentos de dados de backup lentos. Para esses cenários, considere usar a [API de arquivos de nuvem](../cfapi/cloud-files-api-portal.md).
+> O ProjFS foi projetado para uso com armazenamentos de dados de backing de alta velocidade. Uma de suas metas de design é fazer com que os dados projetados pareçam estar localmente presentes, ocultando o fato de que os dados podem ser remotos. Assim, o ProjFS não fornece: mecanismos para relatar o progresso do recall de dados; indicação do estado online versus offline de um arquivo; nem outros recursos que podem ser desejáveis ao trabalhar com armazenamentos de dados de back-back lentos. Para esses cenários, considere usar a [API de Arquivos de Nuvem](../cfapi/cloud-files-api-portal.md).
 
 ## <a name="in-this-section"></a>Nesta seção
 
 | Tópico                                                                                                       | Descrição |
 |-------------------------------------------------------------------------------------------------------------|-------------|
-| [Guia de programação do sistema de arquivos projetado pelo Windows](projfs-programming-guide.md)                              | Informações conceituais sobre como implementar um aplicativo de provedor ProjFS.
-| [Referência da API do sistema de arquivos projetadas do Windows](projfs-reference.md)                                          | Informações de referência para a interface de programação ProjFS.
-| [Glossário do sistema de arquivos projetado do Windows](projfs-glossary.md)                                                | Termos especiais usados em ProjFS.
+| [Guia de Programação do Sistema de Arquivos Projetado do Windows](projfs-programming-guide.md)                              | Informações conceituais sobre como implementar um aplicativo de provedor ProjFS.
+| [Referência da API do Sistema de Arquivos Projetado do Windows](projfs-reference.md)                                          | Informações de referência para a interface de programação ProjFS.
+| [Glossário do Sistema de Arquivos Projetado do Windows](projfs-glossary.md)                                                | Termos especiais usados no ProjFS.
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-|                                                                                                              |                                                                                   |
+| Tópico                                                                                                             | Descrição                                                                                  |
 |--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [Exemplo de RegFS](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/ProjectedFileSystem) | Um provedor de ProjFS de exemplo que projeta o registro do Windows no sistema de arquivos. |
+| [Exemplo de RegFS](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/ProjectedFileSystem) | Um provedor ProjFS de exemplo que projeta o Registro do Windows no sistema de arquivos. |
 <!--
 | [ProjFS.Managed API](https://github.com/Microsoft/URL_TBD)                                                   | A .NET wrapper for the ProjFS API.                                                |
 -->

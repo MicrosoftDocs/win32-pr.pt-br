@@ -4,12 +4,12 @@ ms.assetid: bee755c4-0585-40fb-aa4d-4e964f5144a3
 title: DSP do reamostrador de áudio (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fb173fa4f8d964bec1102c4cfeefa4bf83f1ffe
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 8dbf5e640ffd128a5b9249514284ecef16c5f57e
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105763155"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119409"
 ---
 # <a name="audio-resampler-dsp"></a>DSP de reamostragem de áudio
 
@@ -85,8 +85,8 @@ A tabela a seguir mostra os coeficientes padrão para mapeamento de 6 canais (Ma
 
 |     | L     | R     | C     | LFE   | BL    | BR    |
 |-----|-------|-------|-------|-------|-------|-------|
-| L   | 0.314 | 0     | 0,222 | 0, 31 | 0,268 | 0,164 |
-| R   | 0     | 0.314 | 0,222 | 0, 31 | 0,164 | 0,268 |
+| **L**   | 0.314 | 0     | 0,222 | 0, 31 | 0,268 | 0,164 |
+| **R**   | 0     | 0.314 | 0,222 | 0, 31 | 0,164 | 0,268 |
 
 
 
@@ -98,8 +98,8 @@ A tabela a seguir mostra os coeficientes padrão para mapeamento de 6 canais (Ma
 
 |     | L     | R     | C     | LFE   | SL    | SR    |
 |-----|-------|-------|-------|-------|-------|-------|
-| L   | 0,320 | 0     | 0,226 | 0, 32 | 0,292 | 0,130 |
-| R   | 0     | 0,320 | 0,226 | 0, 32 | 0,130 | 0,292 |
+| **L**   | 0,320 | 0     | 0,226 | 0, 32 | 0,292 | 0,130 |
+| **R**   | 0     | 0,320 | 0,226 | 0, 32 | 0,130 | 0,292 |
 
 
 
@@ -111,72 +111,72 @@ A tabela a seguir mostra os coeficientes padrão para mapear os canais 6 (Mask 0
 
 |     | L     | R     | C     | LFE   | BL (SL) | BR (SR) |
 |-----|-------|-------|-------|-------|--------|--------|
-| C   | 0,192 | 0,192 | 0,192 | 0, 38 | 0,192  | 0,192  |
+| **C**   | 0,192 | 0.192 | 0.192 | 0.038 | 0.192  | 0.192  |
 
 
 
  
 
-A tabela a seguir mostra os coeficientes padrão para mapeamento de 8 canais (Mask 0x63F) para 2 canais.
+A tabela a seguir mostra os coeficientes padrão para mapear 8 canais (máscara 0x63F) para dois canais.
 
 
 
-|     | L     | R     | C     | LFE   | BL    | BR    | SL    | SR    |
+|     | L     | R     | C     | Lfe   | BL    | BR    | SL    | SR    |
 |-----|-------|-------|-------|-------|-------|-------|-------|-------|
-| L   | 0,222 | 0     | 0,157 | 0, 22 | 0,189 | 0,116 | 0,203 | 0, 90 |
-| R   | 0     | 0,222 | 0,157 | 0, 22 | 0,116 | 0,189 | 0, 90 | 0,203 |
+| **L**   | 0,222 | 0     | 0.157 | 0.022 | 0,189 | 0.116 | 0.203 | 0.090 |
+| **R**   | 0     | 0,222 | 0.157 | 0.022 | 0.116 | 0,189 | 0.090 | 0.203 |
 
 
 
  
 
-A tabela a seguir mostra os coeficientes padrão para mapeamento de 8 canais (Mask 0x63F) para 1 canal.
+A tabela a seguir mostra os coeficientes padrão para mapear 8 canais (máscara 0x63F) para 1 canal.
 
 
 
-|     | L     | R     | C     | LFE   | BL    | BR    | SL    | SR    |
+|     | L     | R     | C     | Lfe   | BL    | BR    | SL    | SR    |
 |-----|-------|-------|-------|-------|-------|-------|-------|-------|
-| C   | 0,139 | 0,139 | 0,139 | 0, 28 | 0,139 | 0,139 | 0,139 | 0,139 |
+| **C**   | 0.139 | 0.139 | 0.139 | 0.028 | 0.139 | 0.139 | 0.139 | 0.139 |
 
 
 
  
 
-A tabela a seguir mostra os coeficientes padrão para mapeamento de 8 canais (Mask 0x63F) para 6 canais (Mask 0x3F).
+A tabela a seguir mostra os coeficientes padrão para mapear 8 canais (máscara 0x63F) para seis canais (máscara 0x3F).
 
 
 
-|     | L     | R     | C     | LFE   | BL    | BR    | SL    | SR    |
+|     | L     | R     | C     | Lfe   | BL    | BR    | SL    | SR    |
 |-----|-------|-------|-------|-------|-------|-------|-------|-------|
-| L   | 0,518 | 0     | 0     | 0     | 0     | 0     | 0,189 | 0     |
-| R   | 0     | 0,518 | 0     | 0     | 0     | 0     | 0     | 0,189 |
-| C   | 0     | 0     | 0,518 | 0     | 0     | 0     | 0     | 0     |
-| LFE | 0     | 0     | 0     | 0,518 | 0     | 0     | 0     | 0     |
-| BL  | 0     | 0     | 0     | 0     | 0,518 | 0     | 0,482 | 0     |
-| BR  | 0     | 0     | 0     | 0     | 0     | 0,518 | 0     | 0,482 |
+| **L**   | 0.518 | 0     | 0     | 0     | 0     | 0     | 0,189 | 0     |
+| **R**   | 0     | 0.518 | 0     | 0     | 0     | 0     | 0     | 0,189 |
+| **C**   | 0     | 0     | 0.518 | 0     | 0     | 0     | 0     | 0     |
+| **Lfe** | 0     | 0     | 0     | 0.518 | 0     | 0     | 0     | 0     |
+| **BL**  | 0     | 0     | 0     | 0     | 0.518 | 0     | 0.482 | 0     |
+| **BR**  | 0     | 0     | 0     | 0     | 0     | 0.518 | 0     | 0.482 |
 
 
 
  
 
-A tabela a seguir mostra os coeficientes padrão para mapeamento de 8 canais (Mask 0x63F) para 6 canais (Mask 0x60F).
+A tabela a seguir mostra os coeficientes padrão para mapear 8 canais (máscara 0x63F) para seis canais (máscara 0x60F).
 
 
 
-|     | L     | R     | C     | LFE   | BL    | BR    | SL    | SR    |
+|     | L     | R     | C     | Lfe   | BL    | BR    | SL    | SR    |
 |-----|-------|-------|-------|-------|-------|-------|-------|-------|
-| L   | 0,447 | 0     | 0     | 0     | 0     | 0     | 0     | 0     |
-| R   | 0     | 0,447 | 0     | 0     | 0     | 0     | 0     | 0     |
-| C   | 0     | 0     | 0,447 | 0     | 0     | 0     | 0     | 0     |
-| LFE | 0     | 0     | 0     | 0,447 | 0     | 0     | 0     | 0     |
-| SL  | 0     | 0     | 0     | 0     | 0,429 | 0,124 | 0,447 | 0     |
-| SR  | 0     | 0     | 0     | 0     | 0,124 | 0,429 | 0     | 0,447 |
+| **L**   | 0.447 | 0     | 0     | 0     | 0     | 0     | 0     | 0     |
+| **R**   | 0     | 0.447 | 0     | 0     | 0     | 0     | 0     | 0     |
+| **C**   | 0     | 0     | 0.447 | 0     | 0     | 0     | 0     | 0     |
+| **Lfe** | 0     | 0     | 0     | 0.447 | 0     | 0     | 0     | 0     |
+| **SL**  | 0     | 0     | 0     | 0     | 0.429 | 0.124 | 0.447 | 0     |
+| **SR**  | 0     | 0     | 0     | 0     | 0.124 | 0.429 | 0     | 0.447 |
 
 
 
  
 
-Para entender como interpretar as tabelas de coeficientes, considere a primeira tabela, que mapeia 6 canais para 2. A primeira linha da tabela (0,314, 0, 0,222, 0, 31, 0,268, 0,164) é um vetor de pesos que especifica o grau de contribuição de cada canal de entrada para o canal esquerdo da saída. A segunda linha da tabela (0, 0,314, 0,222, 0, 31, 0,164, 0,268) é um vetor de pesos que especifica o grau de contribuição de cada canal de entrada para o canal correto da saída.
+Para entender como interpretar as tabelas de coeficientes, considere a primeira tabela, que mapeia 6 canais para 2. A primeira linha da tabela (0,314, 0, 0,222, 0,031, 0,268, 0,164) é um vetor de pesos que especifica o quanto cada canal de entrada contribui para o canal esquerdo da saída. A segunda linha da tabela (0, 0,314, 0,222, 0,031, 0,164, 0,268) é um vetor de pesos que especifica o quanto cada canal de entrada contribui para o canal direito da saída.
 
 As fórmulas a seguir mostram como os canais de saída são calculados.
 
@@ -186,13 +186,13 @@ R_out = R*0.314 + C*0.222 + LFE*0.031 + BL*0.164 + BR*0.268
 ```
 
 > [!Note]  
-> Se você usar o DSP reamostrador de áudio para aumentar o número de canais, os canais adicionados serão atribuídos aos valores 0.
+> Se você usar o DSP do Audio Resampler para aumentar o número de canais, os canais adicionados receberão valores de 0.
 
  
 
 ## <a name="output-quality"></a>Qualidade de saída
 
-Você pode especificar a qualidade de saída do DSP do reamostrador de áudio chamando [**IWMResamplerProps:: SetHalfFilterLength**](/windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-iwmresamplerprops-sethalffilterlength) ou definindo a propriedade [**MFPKEY \_ WMRESAMP \_ FILTERQUALITY**](mfpkey-wmresamp-filterquality.md) . Se você não especificar a qualidade de saída, o DSP do reamostrador de áudio usará um valor de qualidade padrão de 30.
+Você pode especificar a qualidade de saída do DSP do Audio Resampler chamando [**IWMResamplerProps::SetHalfFilterLength**](/windows/desktop/api/wmcodecdsp/nf-wmcodecdsp-iwmresamplerprops-sethalffilterlength) ou definindo a propriedade [**MFPKEY \_ WMRESAMP \_ FILTERQUALITY.**](mfpkey-wmresamp-filterquality.md) Se você não especificar a qualidade da saída, o DSP do Audio Resampler usará um valor de qualidade padrão de 30.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -200,13 +200,13 @@ Você pode especificar a qualidade de saída do DSP do reamostrador de áudio ch
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl>    |
+| Cliente mínimo com suporte<br/> | Somente \[ aplicativos da área de trabalho do Windows Vista\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Somente aplicativos da área de trabalho do Windows Server 2008 \[\]<br/>                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl>    |
 | DLL<br/>                      | <dl> <dt>Resampledmo.dll</dt> </dl> |
 
 
 
 ## <a name="see-also"></a>Confira também
 
-[Processadores de sinais digitais](windowsmediadigitalsignalprocessors.md)
+[Processadores de sinal digital](windowsmediadigitalsignalprocessors.md)

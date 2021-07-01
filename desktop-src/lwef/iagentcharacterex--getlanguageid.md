@@ -4,12 +4,12 @@ description: IAgentCharacterEx getlanguageid
 ms.assetid: 4e4e5342-edf9-480b-a9c3-e2626fd89e76
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9679538f93d779acc6272dccada824585c4449f5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3d847bf392709b2433b045a357a703173e2de454
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005875"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120642"
 ---
 # <a name="iagentcharacterexgetlanguageid"></a>IAgentCharacterEx:: getlanguageid
 
@@ -38,7 +38,7 @@ Um inteiro longo que especifica a ID de idioma para o caractere. A ID de idioma 
 
 
 
-|                       |        |                       |        |
+| Idioma              | ID     | Idioma              | ID     |
 |-----------------------|--------|-----------------------|--------|
 | Árabe (Arábia)        | 0x0401 | Italiano               | 0x0410 |
 | Basco                | 0x042d | Japonês              | 0x0411 |
@@ -55,11 +55,11 @@ Um inteiro longo que especifica a ID de idioma para o caractere. A ID de idioma 
 | Alemão                | 0x0407 | Sueco               | 0x041D |
 | Grego                 | 0x0408 | Tailandês                  | 0x041E |
 | Hebraico                | 0x040D | Turco               | 0x041F |
-| Húngaro             | 0x040E |                       |        |
+| Húngaro             | 0x040E |                       |        |
 
 
 
- 
+ 
 
 Se você não definir essa ID de idioma para o caractere, a ID de idioma do caractere será a ID do idioma atual do sistema.
 
@@ -70,16 +70,16 @@ Essa propriedade aplica-se somente ao uso do caractere do aplicativo cliente; a 
 > [!Note]  
 > Se a ID do idioma for definida como um idioma que dá suporte a texto bidirecional (como árabe ou Hebraico), mas o sistema que executa o aplicativo não tiver suporte bidirecional instalado, o texto aparecerá no balão do Word em ordem lógica, em vez de exibição.
 
- 
+ 
 
 ## <a name="see-also"></a>Consulte Também
 
 [**IAgentCharacterEx: Setlanguageid**](iagentcharacterex--setlanguageid.md), [**IAgentCharacterEx:: GetSRModeID**](iagentcharacterex--getsrmodeid.md), [**IAgentCharacterEx:: GetTTSModeID**](iagentcharacterex--getttsmodeid.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

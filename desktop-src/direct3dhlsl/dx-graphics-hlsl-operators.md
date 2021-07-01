@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 69fc29f366fa781483edb5fd4653674b387fd156
-ms.sourcegitcommit: 37fb32f6150b6ca1db6c52d68a553ec2c8c0879a
+ms.openlocfilehash: d7a44fe02983038658247fedaec7122f09306548
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "104453871"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119601"
 ---
 # <a name="operators"></a>Operadores
 
@@ -22,9 +22,8 @@ As expressões são sequências de [variáveis](dx-graphics-hlsl-variable-syntax
 
 
 
-|                                                                                 |                                                                    |
+| Nome do operador                                                                                | Operadores                                                                   |
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| Nome do operador                                                                   | Operadores                                                          |
 | [Operadores aditivos e multiplicativas](#additive-and-multiplicative-operators) | +, -, \*, /, %                                                     |
 | [Operador de matriz](#array-operator)                                               | \[i\]                                                              |
 | [Operadores de atribuição](#assignment-operators)                                   | =, +=, -=, \*=, /=, %=                                             |
@@ -40,7 +39,7 @@ As expressões são sequências de [variáveis](dx-graphics-hlsl-variable-syntax
 
 
 
- 
+ 
 
 Muitos dos operadores são por componente, o que significa que a operação é executada de forma independente para cada componente de cada variável. Por exemplo, uma única variável de componente tem uma operação executada. Por outro lado, uma variável de quatro componentes tem quatro operações executadas, uma para cada componente.
 
@@ -259,17 +258,16 @@ O HLSL dá suporte aos operadores bit a seguir, que seguem a mesma precedência 
 > [!Note]  
 > Os operadores de bit a bit exigem o [modelo de sombreador 4 \_ 0](dx-graphics-hlsl-sm4.md) com hardware Direct3D 10 e superior.
 
- 
+ 
 
 
 
-|           |                   |
+| Operador          |  Função                 |
 |-----------|-------------------|
-| Operador  | Função          |
 | ~         | Não lógico       |
 | <<  | Deslocamento à esquerda        |
 | >>  | Deslocamento à direita       |
-| &         | And lógico       |
+| &         | AND lógico       |
 | \|        | Ou lógico        |
 | ^         | XOR lógico       |
 | <<= | Deslocamento à esquerda igual  |
@@ -280,7 +278,7 @@ O HLSL dá suporte aos operadores bit a seguir, que seguem a mesma precedência 
 
 
 
- 
+ 
 
 Os operadores bit a bit são definidos para operar somente em tipos de dados int e uint. A tentativa de usar operadores bit-a-ponto nos tipos de dados float ou struct resultará em um erro.
 
@@ -306,11 +304,11 @@ Para expressões que usam operadores boolianos, o tamanho e o tipo de componente
 
 ## <a name="cast-operator"></a>Operador cast
 
-Uma expressão precedida por um nome de tipo entre parênteses é uma conversão de tipo explícita. Uma conversão de tipo converte a expressão original para o tipo de dados da conversão. Em geral, os tipos de dados simples podem ser convertidos para os tipos de dados mais complexos (com uma conversão de promoção), mas apenas alguns tipos de dados complexos podem ser convertidos em tipos de dados simples (com uma conversão de rebaixamento).
+Uma expressão precedida por um nome de tipo entre parênteses é uma conversão de tipo explícita. Uma conversão de tipo converte a expressão original para o tipo de dados da conversão. Em geral, os tipos de dados simples podem ser lançados para os tipos de dados mais complexos (com uma cast de promoção), mas apenas alguns tipos de dados complexos podem ser lançados em tipos de dados simples (com uma cast de rebaixamento).
 
-Somente a conversão de tipo de lado direito é legal. Por exemplo, expressões como `(int)myFloat = myInt;` são ilegais. Use `myFloat = (float)myInt;` em vez disso.
+Somente a seleção de tipo do lado direito é legal. Por exemplo, expressões como são `(int)myFloat = myInt;` ilícitas. Use `myFloat = (float)myInt;` em vez disso.
 
-O compilador também executa a conversão implícita de tipo. Por exemplo, as duas expressões a seguir são equivalentes:
+O compilador também executa conversão de tipo implícita. Por exemplo, as duas expressões a seguir são equivalentes:
 
 
 ```
@@ -324,7 +322,7 @@ int2 b = int2(1,2) + int2(2,2);
 
 O operador de vírgula (,) separa uma ou mais expressões que devem ser avaliadas na ordem. O valor da última expressão na sequência é usado como o valor da sequência.
 
-Aqui está um caso vale a pena chamar atenção para. Se o tipo de Construtor for acidentalmente deixado do lado direito do sinal de igual, o lado direito agora conterá quatro expressões, separadas por três vírgulas.
+Aqui está um caso para o qual vale a pena chamar a atenção. Se o tipo de construtor for acidentalmente deixado do lado direito do sinal de igual, o lado direito agora conterá quatro expressões, separadas por três vírgulas.
 
 
 ```
@@ -337,7 +335,7 @@ float4 x = (0,0,0,1);
 
 
 
-O operador de vírgulas avalia uma expressão da esquerda para a direita. Isso reduz o lado direito para:
+O operador vírgula avalia uma expressão da esquerda para a direita. Isso reduz o lado direito para:
 
 
 ```
@@ -346,7 +344,7 @@ float4 x = 1;
 
 
 
-O HLSL usa a promoção escalar nesse caso, portanto, o resultado é como se isso tivesse sido escrito da seguinte maneira:
+O HLSL usa promoção escalar nesse caso, portanto, o resultado é como se isso tivesse sido escrito da seguinte forma:
 
 
 ```
@@ -355,13 +353,13 @@ float4 x = float4(1,1,1,1);
 
 
 
-Nessa instância, deixar o tipo FLOAT4 do lado direito provavelmente é um erro informando que o compilador não consegue detectar porque esta é uma instrução válida.
+Nesse caso, deixar o tipo float4 do lado direito provavelmente é um erro que o compilador não consegue detectar porque essa é uma instrução válida.
 
 ## <a name="comparison-operators"></a>Operadores de comparação
 
-Os operadores de comparação são: <, >, = =,! =, <=, >=.
+Os operadores de comparação são: <, >, ==, !=, <=, >=.
 
-Compare valores que sejam maiores que (ou menores que) qualquer valor escalar:
+Compare valores que são maiores que (ou menores que) qualquer valor escalar:
 
 
 ```
@@ -379,7 +377,7 @@ if( dot(lightDirection, normalVector) < 0 )
 
 
 
-Ou compare valores iguais a (ou não iguais a) qualquer valor escalar:
+Ou compare valores iguais a (ou não igual a) qualquer valor escalar:
 
 
 ```
@@ -392,7 +390,7 @@ if(color.a != 0)
 
 
 
-Ou combine e compare valores que sejam maiores ou iguais a (ou menores ou iguais a) qualquer valor escalar:
+Ou combine e compare valores maiores ou iguais a (ou menor ou igual a) qualquer valor escalar:
 
 
 ```
@@ -412,9 +410,9 @@ if( currentValue <= someInitialCondition )
 
 Cada uma dessas comparações pode ser feita com qualquer tipo de dados escalar.
 
-Para usar operadores de comparação com tipos de vetor e matriz, use a função [**All**](dx-graphics-hlsl-all.md) ou [**qualquer**](dx-graphics-hlsl-any.md) intrínseca.
+Para usar operadores de comparação com tipos de vetor e matriz, use a função intrínseca [**all**](dx-graphics-hlsl-all.md) ou any. [](dx-graphics-hlsl-any.md)
 
-Essa operação falha porque a instrução If requer um bool único, mas recebe um bool4:
+Essa operação falha porque a instrução if requer um único bool, mas recebe um bool4:
 
 
 ```
@@ -423,7 +421,7 @@ if (A4 < B4)
 
 
 
-Essas operações têm sucesso:
+Essas operações são bem-sucedidas:
 
 
 ```
@@ -433,9 +431,9 @@ if ( all(A4 < B4) )
 
 
 
-## <a name="prefix-or-postfix-operators"></a>Operadores de prefixo ou sufixo
+## <a name="prefix-or-postfix-operators"></a>Operadores de prefixo ou pós-sufixo
 
-Os operadores de prefixo e sufixo são: + +,--. Os operadores de prefixo alteram o conteúdo da variável antes que a expressão seja avaliada. Os operadores de sufixo alteram o conteúdo da variável depois que a expressão é avaliada.
+Os operadores de prefixo e pós-sufixo são: ++, --. Os operadores de prefixo alteram o conteúdo da variável antes que a expressão seja avaliada. Operadores de pós-correção alteram o conteúdo da variável depois que a expressão é avaliada.
 
 Nesse caso, um loop usa o conteúdo de i para controlar a contagem de loops.
 
@@ -451,7 +449,7 @@ for (int i = 0; i<4; )
 
 
 
-Como o operador de incremento de sufixo (+ +) é usado, arrayOfFloats \[ i \] é multiplicado por 2 antes de ser incrementado. Isso pode ser ligeiramente reorganizado para usar o operador de incremento de prefixo. Esse é mais difícil de ler, embora ambos os exemplos sejam equivalentes.
+Como o operador de incremento de pós-sufixo (++) é usado, arrayOfFloats i é multiplicado por \[ \] 2 antes de eu ser incrementado. Isso pode ser ligeiramente reorganizar para usar o operador de incremento de prefixo. Esse é mais difícil de ler, embora ambos os exemplos sejam equivalentes.
 
 
 ```
@@ -465,13 +463,13 @@ for (int i = 0; i<4; )
 
 
 
-Como o operador de prefixo (+ +) é usado, arrayOfFloats \[ i + 1-1 \] é multiplicado por 2 depois de incrementado.
+Como o operador de prefixo (++) é usado, arrayOfFloats i+1 - 1 é multiplicado por 2 depois \[ que i é \] incrementado.
 
-O prefixo decremento e o operador decremento de sufixo (--) são aplicados na mesma sequência que o operador de incremento. A diferença é que decrementa subtrai 1 em vez de adicionar 1.
+O operador de decremento de decremento de prefixo e pós-sufixo (--) é aplicado na mesma sequência que o operador de incremento. A diferença é que o decremento subtrai 1 em vez de adicionar 1.
 
-## <a name="structure-operator"></a>Operador de estrutura
+## <a name="structure-operator"></a>Operador structure
 
-O operador de seleção de membro de estrutura (.) é um ponto. Dada esta estrutura:
+O operador de seleção de membro da estrutura (.) é um ponto. Dada esta estrutura:
 
 
 ```
@@ -511,7 +509,7 @@ pos.z = pos.x      // z = 2.0f
 
 ## <a name="unary-operators"></a>Operadores unários
 
-Os operadores unários são:!,-, +
+Os operadores unários são: !, -, +
 
 Operadores unários operam em um único operando.
 
@@ -528,11 +526,11 @@ int j = +i2;       // j = +2
 
 ## <a name="operator-precedence"></a>Precedência de operador
 
-Quando uma expressão contém mais de um operador, a precedência de operador determina a ordem de avaliação. A precedência de operador para HLSL segue a mesma precedência de C.
+Quando uma expressão contém mais de um operador, a precedência do operador determina a ordem de avaliação. A precedência do operador para HLSL segue a mesma precedência que C.
 
 ## <a name="remarks"></a>Comentários
 
-Chaves ( {,} ) iniciam e terminam um bloco de instruções. Quando um bloco de instrução usa uma única instrução, as chaves são opcionais.
+Chaves ( ) iniciam e {,} terminam um bloco de instrução. Quando um bloco de instrução usa uma única instrução, as chaves são opcionais.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -541,9 +539,9 @@ Chaves ( {,} ) iniciam e terminam um bloco de instruções. Quando um bloco de i
 [Instruções (DirectX HLSL)](dx-graphics-hlsl-statements.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

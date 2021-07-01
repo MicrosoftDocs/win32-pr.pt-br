@@ -1,55 +1,55 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento Property em documentos e impressão. Este tópico não é atual. Para obter as informações mais atuais, consulte a Especificação de Esquema de Impressão.
 ms.assetid: 14631336-adfc-4edf-81ef-63e426d41c87
 title: Propriedade (documentos e impressão)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9fb4a057b2cf7795262b595c59f9da0343fdf12
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 4e43b52c054972ee0ee2b8a535021581c05e7d96
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104298022"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120291"
 ---
 # <a name="property-documents-and-printing"></a>Propriedade (documentos e impressão)
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Um elemento de propriedade declara um dispositivo, formatação de trabalho ou outra propriedade relevante cujo nome é fornecido por seu atributo de nome. Um elemento Value é usado para atribuir um valor à propriedade.
+Um elemento Property declara um dispositivo, formatação de trabalho ou outra propriedade relevante cujo nome é dado por seu atributo de nome. Um elemento Value é usado para atribuir um valor à Propriedade.
 
-Uma propriedade pode ser complexa, possivelmente contendo várias subpropriedades. As subpropriedades também são representadas por elementos de propriedade.
+Uma propriedade pode ser complexa, possivelmente contendo várias subpropriedades. As subpropriedades também são representadas por elementos Property.
 
-## <a name="element-tag"></a>Marca do elemento
+## <a name="element-tag"></a>Marca de elemento
 
 <Property>
 
 ## <a name="xml-attributes"></a>Atributos XML
 
-A tabela a seguir lista os atributos XML que podem ser relativos a esse elemento.
+A tabela a seguir lista os atributos XML que podem pertencer a esse elemento.
 
 
 
 | Atributo XML   | Detalhes                                                                                                                    |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------|
-| name<br/> | Mantém o atributo Name da propriedade, que é uma propriedade padrão ou uma propriedade definida de forma privada. <br/> |
+| name<br/> | Contém o atributo name da Propriedade, que é uma propriedade padrão ou uma propriedade definida de forma privada. <br/> |
 
 
 
  
 
-Para obter mais informações, consulte a seção [atributos XML](xml-attributes.md) .
+Para obter mais informações, consulte a [seção Atributos XML.](xml-attributes.md)
 
 ## <a name="element-information"></a>Informações do elemento
 
-A tabela a seguir lista os elementos que podem ser pais deste elemento, os elementos que podem ser filhos desse elemento e quaisquer restrições no próprio elemento.
+A tabela a seguir lista os elementos que podem ser pais desse elemento, os elementos que podem ser filhos desse elemento e quaisquer restrições sobre o próprio elemento.
 
 
 
-| Category                   | Detalhes                                                                                                                                                                                                                                                                                                                      |
+| Categoria                   | Detalhes                                                                                                                                                                                                                                                                                                                      |
 |----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Elementos pai<br/> | PrintCapabilities <br/> Recurso<br/> PrintTicket<br/> Opção<br/> ParameterDef<br/> Propriedade<br/> ScoredProperty<br/>                                                                                                                                                              |
-| Elementos filho<br/>  | O sistema não atribui nenhum significado à ordenação dos elementos. Se os clientes optarem por ascribe algum significado na ordenação dos elementos, eles estarão livres para fazer isso. <br/> *Valor* da *Propriedade* (um ou mais) (zero ou mais)<br/> ou <br/> *Valor* da *Propriedade* (zero ou mais) (um ou mais)<br/> |
-| Este elemento<br/>    | Nenhum dado de caractere é permitido.<br/> Elementos de valor filho duplicados que são irmãos são permitidos.<br/>                                                                                                                                                                                                        |
+| Elementos pai<br/> | PrintCapabilities <br/> Recurso<br/> PrintTicket<br/> Opção<br/> ParameterDef<br/> Propriedade<br/> Scoredproperty<br/>                                                                                                                                                              |
+| Elementos filho<br/>  | O sistema não atribui significância à ordenação dos elementos. Se os clientes optarem por atribuir algum significado na ordenação dos elementos, eles poderão fazer isso. <br/> *Propriedade* (um ou mais) *Valor* (zero ou mais)<br/> ou <br/> *Propriedade* (zero ou mais) *Valor* (um ou mais)<br/> |
+| Esse elemento<br/>    | Nenhum dado de caractere é permitido.<br/> Elementos de Valor filho duplicados que são irmãos são permitidos.<br/>                                                                                                                                                                                                        |
 
 
 
@@ -57,15 +57,15 @@ A tabela a seguir lista os elementos que podem ser pais deste elemento, os eleme
 
 ## <a name="configuration-dependencies"></a>Dependências de configuração
 
-Uma propriedade pode ter dependências de configuração, exceto quando aparece dentro de um elemento ParameterDef.
+Uma Propriedade pode ter dependências de configuração, exceto quando aparece dentro de um elemento ParameterDef.
 
 ## <a name="element-usage"></a>Uso do elemento
 
-Além de aparecer nos elementos de recurso e opção, os elementos de propriedade podem aparecer no nível raiz das respectivas tecnologias subjacentes. O esquema de impressão define um conjunto de elementos de propriedade que pode ser usado para descrever um dispositivo de maneira portátil. No entanto, se essas propriedades não forem suficientes para suas necessidades como um provedor de PrintCapabilities (normalmente, como o dispositivo com suporte tem aspectos de romance não previstos pelo esquema de impressão), você poderá introduzir seus próprios elementos de propriedade privada. Você pode aprimorar ou elaborar as informações fornecidas por uma propriedade pública adicionando uma ou mais subpropriedades privadas como o conteúdo do elemento da propriedade pública.
+Além de aparecerem nos elementos Recurso e Opção, os elementos Property podem aparecer no nível raiz das respectivas tecnologias subjacentes. O Esquema de Impressão define um conjunto de elementos Property que podem ser usados para descrever um dispositivo de maneira portátil. No entanto, se essas propriedades não são suficientes para suas necessidades como um provedor PrintCapabilities (normalmente porque o dispositivo com suporte tem novos aspectos não previstos pelo Esquema de Impressão), você pode introduzir seus próprios elementos de Propriedade privada. Você pode aprimorar ou elaborar as informações fornecidas por uma propriedade pública adicionando uma ou mais subpropriedades privadas como conteúdo do elemento da Propriedade pública.
 
-Elementos de propriedade são definidos usando uma marca de elemento XML, <Property> . Cada propriedade recebe um nome por meio de seu atributo de nome. O nome deve ser um QName de XML e deve estar de acordo com a Convenção de namespace. Para obter detalhes, consulte [atributos XML](xml-attributes.md). O atributo de nome de propriedade e seu local dentro da hierarquia de elementos de propriedade pai (se for um subpropriedade) identificam exclusivamente a propriedade dentro do documento de PrintCapabilities ou PrintTicket.
+Os elementos de propriedade são definidos usando uma marca de elemento XML, <Property> . Cada Propriedade recebe um nome por meio de seu atributo de nome. O nome deve ser um QName XML e deve estar em conformidade com a Convenção de Namespace. Para obter detalhes, consulte [Atributos XML](xml-attributes.md). O atributo Nome da propriedade e sua localização dentro da hierarquia de elementos property pai (se for uma subpropriedade) identificam exclusivamente a Propriedade no documento PrintCapabilities ou PrintTicket.
 
-Uma propriedade pode conter um ou mais elementos de valor, ou um ou mais elementos de propriedade filho (chamados de subpropriedades) ou uma combinação de ambos. As subpropriedades são úteis quando a própria propriedade é composta por vários componentes. Por exemplo, uma propriedade "ConsumableColor" pode ter os componentes "C", "M" e "Y".
+Uma Propriedade pode conter um ou mais elementos Value ou um ou mais elementos de Propriedade filho (chamados de subpropriedades) ou uma combinação de ambos. As subpropriedades são úteis quando a propriedade em si é composta por vários componentes. Por exemplo, uma propriedade "ConsumableColor" pode ter componentes "C", "M" e "Y".
 
 ## <a name="example"></a>Exemplo
 

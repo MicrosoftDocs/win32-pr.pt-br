@@ -1,15 +1,15 @@
 ---
-description: Windows Server 2008 R2.
+description: Saiba mais sobre as novas modificações para o gerenciamento de compartilhamento de rede no Windows Server 2008 R2 e no Windows 7.
 ms.assetid: 85b98a7e-7897-4bf2-b56f-37785261b9da
 title: O que há de novo no gerenciamento de compartilhamento de rede no Windows Server 2008 R2 e no Windows 7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea8de1751e267002c1f11499a51bc7cf1e33943f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 10fec60eea0898674ddcf0ccee88b87c7dfbcf44
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170826"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118741"
 ---
 # <a name="whats-new-in-network-share-management-in-windows-server-2008-r2-and-windows-7"></a>O que há de novo no gerenciamento de compartilhamento de rede no Windows Server 2008 R2 e no Windows 7
 

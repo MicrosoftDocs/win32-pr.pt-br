@@ -9,22 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 16b31bbd1e2f72ce6b31a0c079f7ec5739aba87a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: aafd6407d556a6d0b4269c38192107edbc7cb1fa
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104988669"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120191"
 ---
 # <a name="restartstrip-directx-hlsl-stream-output-object"></a>RestartStrip (objeto Stream-Output DirectX HLSL)
 
 Encerra a faixa primitiva atual e inicia uma nova faixa. Se a faixa atual não tiver vértices suficientes emitidos para preencher a topologia primitiva, o primitivo incompleto no final será Descartado.
 
-
-
-|                 |
-|-----------------|
-| RestartStrip(); |
+RestartStrip();
 
 
 
@@ -65,7 +61,7 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 | Modelo de Sombreador                                              | Com suporte |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sim       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | yes       |
 | [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | não        |
 | [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | não        |
 | [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | não        |

@@ -4,12 +4,12 @@ description: API de mestre de imagem
 ms.assetid: 4902d3fb-3195-4909-ab64-28f8a77ba14c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 641d9357496eb82a7e30f25a711928b16eeee2bb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c7fabf41d1c82420709b39bb5db03c2ac3e851d2
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117574"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119671"
 ---
 # <a name="image-mastering-api"></a>API de mestre de imagem
 
@@ -53,7 +53,7 @@ Mais informações sobre o IMAPi e outros assuntos relacionados podem ser encont
 
 
 
-|                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                    |
+| Tópico                                                                                                 | Descrição                                                                                                                                                                                                                                                                                                                                                                   |
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Blog de armazenamento óptico da Microsoft](/archive/blogs/opticalstorage/)                | Realça os tópicos que se concentram na implementação da API de mestre de imagem em cenários de desenvolvimento do mundo real.                                                                                                                                                                                                                                                 |
 | [Fórum de discussão sobre plataforma ótica](https://social.msdn.microsoft.com/forums/windowsopticalplatform/threads/)              | Discuta CDROM.SYS, IMAPIv2 e problemas do sistema de arquivos dinâmicos. Este fórum se concentra em tópicos de nível de sistema e destina-se a desenvolvedores de aplicativos em vez de endusers.                                                                                                                                                                                                 |

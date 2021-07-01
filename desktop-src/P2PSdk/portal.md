@@ -4,12 +4,12 @@ ms.assetid: a85fe46c-ce5f-4978-aa37-a3666560426b
 title: Ponto a ponto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a62469eee79fbc501da911a60d8e21e3c6e94452
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ed371f203d34166f1d84462a363326adc32100ae
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094554"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118601"
 ---
 # <a name="peer-to-peer"></a>Ponto a ponto
 
@@ -57,7 +57,7 @@ A infraestrutura par tem suporte no Windows Vista, no Windows XP com Service Pac
 
 Mais informações sobre tecnologias ponto a ponto podem ser encontradas nos seguintes locais:
 
-|                                                                                                           |                                                                                                                |
+| Tópico                                                                                                          | Descrição                                                                                                               |
 |-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | [Recursos de rede de mesmo nível do Windows](https://www.microsoft.com/p2p)                       | Acesse White papers, amostras e apresentações publicados detalhando a tecnologia de rede de mesmo nível.<br/> |
 | [Blog de rede de pares da Microsoft](/archive/blogs/p2p/)                          | Leia as entradas de blog mais recentes da equipe de rede de pares da Microsoft.<br/>                                 |

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fe3cd51c81617632d240dd06df5c8f61b103bf91
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c0206f7030d3b3a05570e74273d9510bb9c2592c
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007574"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119571"
 ---
 # <a name="sampler-type"></a>Tipo de amostra
 
@@ -91,11 +91,9 @@ Direct3D 10 e posterior somente. Tamanho opcional da matriz; um inteiro positivo
 
 \[no \] tipo de amostra, que é um dos seguintes: *amostra*, *sampler1D*, *sampler2D*, *sampler3D*, *samplerCUBE*, *\_ estado de amostra*, *samplestate*.
 
+Diferenças entre o Direct3D 9 e o Direct3D 10 e posterior:
 
-
-|                                                                                                                                                                       |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Diferenças entre o Direct3D 9 e o Direct3D 10 e posterior:<br/> O Direct3D 10 e posterior dá suporte a um tipo de amostra adicional: *SamplerComparisonState*.<br/> |
+- O Direct3D 10 e posterior dá suporte a um tipo de amostra adicional: *SamplerComparisonState*.
 
 
 

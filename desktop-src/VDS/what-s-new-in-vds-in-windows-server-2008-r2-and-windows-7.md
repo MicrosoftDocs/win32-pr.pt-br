@@ -1,15 +1,15 @@
 ---
-description: Windows Server 2008 R2.
+description: Saiba mais sobre as novas alterações do VDS (serviço de disco virtual) no Windows Server 2008 R2 e no Windows 7.
 ms.assetid: 4ab37529-8d56-47a3-ad3d-0197cabd4f87
 title: Novidades no VDS no Windows Server 2008 R2 e no Windows 7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4ab0054697457dd67028df2b888b1ea68784427
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9050b157e9ce3c78550fdcffbd688988b7eacf90
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759340"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119651"
 ---
 # <a name="whats-new-in-vds-in-windows-server-2008-r2-and-windows-7"></a>Novidades no VDS no Windows Server 2008 R2 e no Windows 7
 

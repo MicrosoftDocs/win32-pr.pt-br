@@ -1,46 +1,46 @@
 ---
-title: Log W3C
-description: O log estendido do W3C é o tipo de log do lado do servidor que pode ser habilitado na sessão do servidor ou no grupo de URLs.
+title: Registro em log do W3C
+description: O registro em log estendido do W3C é o tipo de log do lado do servidor que pode ser habilitado na sessão do servidor ou no grupo de URL.
 ms.assetid: a08b8f9e-2247-43c6-b253-81f72001d8d2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b253daebae22a2b99e152451cff360c7b633ca64
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: eb53ccf3b6bf5383a0a4da62538b6fa516c500f8
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103640482"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119941"
 ---
-# <a name="w3c-logging"></a>Log W3C
+# <a name="w3c-logging"></a>Registro em log do W3C
 
-O log estendido do W3C é o tipo de log do lado do servidor que pode ser habilitado na sessão do servidor ou no grupo de URLs. Quando o log W3C está habilitado em um grupo de URLs, o log é executado somente em solicitações que são roteadas para o grupo de URLs. Um arquivo de log separado é criado para cada grupo de URLs configurado para habilitar o log W3C.
+O registro em log estendido do W3C é o tipo de log do lado do servidor que pode ser habilitado na sessão do servidor ou no grupo de URL. Quando o registro em log do W3C está habilitado em um grupo de URL, o registro em log é executado somente em solicitações roteados para o Grupo de URL. Um arquivo de log separado é criado para cada grupo de URL configurado para habilitar o registro em log do W3C.
 
-Quando o log W3C está habilitado na sessão do servidor, ele funciona como uma forma centralizada de registro em log para todos os grupos de URLs na sessão do servidor. Um único arquivo de log é mantido para todos os grupos de URLs na sessão do servidor.
+Quando o registro em log do W3C está habilitado na sessão do servidor, ele funciona como forma centralizada de registro em log para todos os grupos de URL na sessão do servidor. Um único arquivo de log é mantido para todos os grupos de URL na sessão do servidor.
 
-A tabela a seguir lista os campos que podem ser registrados pela API do servidor HTTP. A tabela contém um subconjunto das constantes de [**\_ \_ campo de log http**](http-log-field--constants.md) . Alguns dos campos listados abaixo são gerados automaticamente pela API do servidor HTTP internamente e, portanto, não estão contidos na estrutura de [**\_ \_ \_ dados campos de log http**](/windows/desktop/api/Http/ns-http-http_log_fields_data) . A coluna "aparece como" contém o texto que aparece no arquivo de log. Os dados na tabela estão na ordem de ocorrência no registro do arquivo de log.
+A tabela a seguir lista os campos que podem ser registrados pela API do Servidor HTTP. A tabela contém um subconjunto das constantes [**\_ HTTP LOG \_ FIELD.**](http-log-field--constants.md) Alguns dos campos listados abaixo são gerados automaticamente pela API do Servidor HTTP internamente e, portanto, não estão contidos na estrutura DE DADOS [**\_ CAMPOS \_ \_ DE LOG HTTP.**](/windows/desktop/api/Http/ns-http-http_log_fields_data) A coluna "Aparece como" contém o texto que aparece no arquivo de log. Os dados na tabela estão na ordem de ocorrência no registro de arquivo de log.
 
-Os campos que não estão marcados como "API do servidor HTTP gerado" devem ser passados dentro da estrutura de [**\_ dados de \_ campos \_ de log http**](/windows/desktop/api/Http/ns-http-http_log_fields_data) por aplicativo. O aplicativo pode gerar esses campos a partir da estrutura de [**\_ solicitação HTTP**](/previous-versions/windows/desktop/legacy/aa364545(v=vs.85)) passada para ele.
+Os campos que não estão marcados como "API do Servidor HTTP gerada" devem ser passados dentro da estrutura DE DADOS [**\_ CAMPOS \_ \_ DE LOG HTTP**](/windows/desktop/api/Http/ns-http-http_log_fields_data) por aplicativo. O aplicativo pode gerar esses campos da estrutura [**\_ SOLICITAÇÃO HTTP**](/previous-versions/windows/desktop/legacy/aa364545(v=vs.85)) passada para ele.
 
 
 
-| Campo                            | Aparece como      | Descrição                                                                                                                                | \_Membro de \_ dados de campos de log http \_ | Constantes de campos de \_ log http \_      |
+| Campo                            | Aparece como      | Descrição                                                                                                                                | Membro DE \_ \_ DADOS DE CAMPOS DE LOG HTTP \_ | Constantes \_ HTTP LOG \_ FIELDS      |
 |----------------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|----------------------------------|
-| Data                             | data            | A data em que a atividade ocorreu.                                                                                                   | API do servidor HTTP gerada.     | \_data do \_ campo de log http \_           |
-| Hora                             | time            | A hora, em UTC (tempo Universal Coordenado), na qual a atividade ocorreu.                                                             | API do servidor HTTP gerada.     | \_tempo do \_ campo de log http \_           |
-| Nome do serviço e número da instância | s-sitename      | O nome do serviço de Internet e o número da instância que estava em execução no cliente.                                                              | ServiceName                    | \_nome do \_ site do campo de log http \_ \_     |
-| Nome do Servidor                      | s-computername  | O nome do servidor no qual a entrada do arquivo de log foi gerada.                                                                          | ServerName                     | \_nome do \_ computador do campo de log http \_ \_ |
-| Endereço IP do servidor                | s-IP            | O endereço IP do servidor no qual a entrada do arquivo de log foi gerada.                                                                    | ServerIp                       | \_ \_ \_ IP do servidor de campo de log http \_     |
-| Método                           | método cs       | O verbo solicitado, por exemplo, um método GET.                                                                                             | Método                         | \_método de \_ campo de log http \_         |
-| Tronco URI                         | CS-URI-haste     | O destino do verbo, por exemplo, Default.htm.                                                                                          | UriStem                        | \_ \_ tronco URI do campo de log http \_ \_      |
-| Consulta de URI                        | CS-URI-Query    | A consulta, se houver, que o cliente estava tentando executar. Um URI (Resource Identifier Universal) consulta é necessário apenas para páginas dinâmico. | UriQuery                       | \_consulta de \_ URI de campo de log http \_ \_     |
-| Porta do servidor                      | porta s          | O número da porta do servidor que está configurado para o serviço.                                                                                 | ServerPort                     | \_ \_ \_ porta do servidor de campo de log http \_   |
-| Nome do Usuário                        | cs-username     | O nome do usuário autenticado que acessou o servidor. Os usuários anônimos são indicados por um hífen.                                    | UserName                       | \_nome de \_ usuário do campo de log http \_ \_     |
-| Endereço IP do Cliente                | c-ip            | Endereço IP do cliente que fez a solicitação.                                                                                        | ClientIp                       | \_IP do \_ cliente do campo de log http \_ \_     |
-| Versão do protocolo                 | CS-versão      | A versão do protocolo HTTP que o cliente usou.                                                                                            | API do servidor HTTP gerada.     | \_versão do \_ campo de log http \_        |
-| Agente do usuário                       | CS (agente do usuário)  | O tipo de navegador que o cliente usou.                                                                                                     | UserAgent                      | \_agente do \_ usuário do campo de log http \_ \_    |
-| Cookie                           | CS (cookie)      | O conteúdo do cookie enviado ou recebido, se houver.                                                                                        | Cookie                         | \_cookie de \_ campo de log http \_         |
-| Referenciador                         | CS (referenciador)    | O site que o usuário visitou pela última vez. Esse site fornece um link para o site atual.                                                        | Referenciador                       | \_ \_ referenciador de campo de log http \_       |
-| Host                             | CS-host         | O nome do cabeçalho de host, se houver.                                                                                                              | Host                           | \_host de \_ campo de log http \_           |
+| Data                             | data            | A data em que a atividade ocorreu.                                                                                                   | API do Servidor HTTP gerada.     | DATA DO \_ CAMPO DE LOG \_ \_ HTTP           |
+| Hora                             | time            | A hora, em UTC (tempo universal coordenado), em que a atividade ocorreu.                                                             | API do Servidor HTTP gerada.     | HORA DO \_ CAMPO DE LOG \_ \_ HTTP           |
+| Nome do Serviço e Número da Instância | s-sitename      | O nome do serviço de Internet e o número da instância que estava em execução no cliente.                                                              | ServiceName                    | NOME \_ DO SITE DO CAMPO \_ \_ DE LOG \_ HTTP     |
+| Nome do Servidor                      | s-computername  | O nome do servidor no qual a entrada do arquivo de log foi gerada.                                                                          | ServerName                     | NOME \_ DO COMPUTADOR DO CAMPO \_ \_ DE LOG \_ HTTP |
+| Endereço IP do servidor                | s-ip            | O endereço IP do servidor no qual a entrada do arquivo de log foi gerada.                                                                    | ServerIp                       | IP \_ DO SERVIDOR DE CAMPO DE LOG \_ \_ \_ HTTP     |
+| Método                           | cs-method       | O verbo solicitado, por exemplo, um método GET.                                                                                             | Método                         | MÉTODO DE \_ CAMPO DE LOG \_ \_ HTTP         |
+| Tronco de URI                         | cs-uri-stem     | O destino do verbo, por exemplo, Default.htm.                                                                                          | UriStem                        | STEM \_ DO \_ URI DO CAMPO \_ DE LOG \_ HTTP      |
+| Consulta de URI                        | cs-uri-query    | A consulta, se alguma, que o cliente estava tentando executar. Um URI (Resource Identifier Universal) consulta é necessário apenas para páginas dinâmico. | UriQuery                       | CONSULTA \_ DE \_ URI DO \_ CAMPO \_ DE LOG HTTP     |
+| Porta do servidor                      | s-port          | O número da porta do servidor configurado para o serviço.                                                                                 | ServerPort                     | PORTA \_ DO SERVIDOR DE CAMPO \_ \_ DE LOG \_ HTTP   |
+| Nome do Usuário                        | cs-username     | O nome do usuário autenticado que acessou o servidor. Os usuários anônimos são indicados por um hífen.                                    | UserName                       | NOME \_ DE USUÁRIO DO CAMPO \_ \_ DE LOG \_ HTTP     |
+| Endereço IP do Cliente                | c-ip            | Endereço IP do cliente que fez a solicitação.                                                                                        | ClientIp                       | IP \_ DO CLIENTE DO CAMPO DE LOG \_ \_ \_ HTTP     |
+| Versão do protocolo                 | cs-version      | A versão do protocolo HTTP que o cliente usou.                                                                                            | API do Servidor HTTP gerada.     | VERSÃO \_ DO CAMPO DE LOG \_ \_ HTTP        |
+| Agente do usuário                       | cs(User-Agent)  | O tipo de navegador que o cliente usou.                                                                                                     | UserAgent                      | AGENTE DE \_ USUÁRIO DO CAMPO DE LOG \_ \_ \_ HTTP    |
+| Cookie                           | cs(Cookie)      | O conteúdo do cookie enviado ou recebido, se for o caso.                                                                                        | Cookie                         | COOKIE DE \_ CAMPO DE LOG \_ \_ HTTP         |
+| Referenciador                         | cs(Referrer)    | O site que o usuário visitou pela última vez. Esse site fornece um link para o site atual.                                                        | Referenciador                       | REFERÊNCIA \_ DE CAMPO DE LOG \_ \_ HTTP       |
+| Host                             | cs-host         | O nome do cabeçalho de host, se houver.                                                                                                              | Host                           | \_host de \_ campo de log http \_           |
 | Status HTTP                      | sc-status       | O código de status HTTP.                                                                                                                      | ProtocolStatus                 | \_status do \_ campo de log http \_         |
 | Substatus do protocolo               | SC-substatus    | O código de erro de substatus.                                                                                                                  | SubStatus                      | substatus de \_ campo de log http \_ \_ \_    |
 | Status do Win32                     | SC-Win32-status | O código de status do Windows.                                                                                                                   | Win32Status                    | \_Status do \_ Win32 do campo de log http \_ \_  |
@@ -51,11 +51,11 @@ Os campos que não estão marcados como "API do servidor HTTP gerado" devem ser 
 
 
 
- 
+ 
 
 O arquivo de log é um formato baseado em texto ASCII personalizável. Os prefixos de campo no arquivo são definidos da seguinte maneira:
 
-|     |                           |
+| Prefixo    | Descrição                          |
 |-----|---------------------------|
 | s   | Ações do servidor.           |
 | c   | Ações do cliente.           |
@@ -64,7 +64,7 @@ O arquivo de log é um formato baseado em texto ASCII personalizável. Os prefix
 
 
 
- 
+ 
 
 No entanto, o aplicativo pode selecionar um ou mais campos do arquivo de log estendido do W3C, nem todos os campos conterão informações. Para campos que são selecionados, mas para os quais não há informações, um hífen (-) aparece como um espaço reservado. Se um campo contiver um caractere não imprimível, a API do servidor HTTP o substituirá por um sinal de adição (+) para preservar o formato do arquivo de log. Isso normalmente ocorre com ataques de vírus, quando, por exemplo, um usuário mal-intencionado envia retornos de carro e feeds de linha que, se não forem substituídos pelo sinal de adição (+), quebraria o formato do arquivo de log. Os campos são separados por espaços.
 
@@ -82,6 +82,6 @@ Os arquivos de log são criados quando a primeira solicitação chega no grupo d
 
 O campo time-taked é inicializado quando a API do servidor HTTP recebe o primeiro byte, antes de a solicitação ser analisada. O carimbo de data/hora decorrido é interrompido quando ocorre a última conclusão de envio. O tempo decorrido não reflete o tempo na rede. A primeira solicitação para o site mostra um tempo um pouco mais longo do que outras solicitações semelhantes, pois a API do servidor HTTP abre o arquivo de log com a primeira solicitação.
 
- 
+ 
 
- 
+ 

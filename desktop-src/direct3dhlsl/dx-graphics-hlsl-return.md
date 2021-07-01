@@ -1,9 +1,9 @@
 ---
 title: Instrução Return
-description: Uma instrução return sinaliza o final de uma função.
+description: Uma instrução de retorno sinaliza o fim de uma função.
 ms.assetid: e6c097af-ba0b-4abc-8099-69882ced1e18
 keywords:
-- Instrução de retorno HLSL
+- return Statement HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,28 +13,24 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 525abf6d815d2073ee39a6bc6a5a81120cf652ee
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 876c69f3ecfcf1ee1c8391ccc503b2316056b37a
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104967061"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119581"
 ---
 # <a name="return-statement"></a>Instrução Return
 
-Uma instrução return sinaliza o final de uma função.
+Uma instrução de retorno sinaliza o fim de uma função.
+
+valor \[ de retorno \] ;
 
 
 
-|                   |
-|-------------------|
-| valor de retorno \[ \] ; |
+ 
 
-
-
- 
-
-A instrução de retorno mais simples retorna o controle da função para o programa de chamada; Ele não retorna nenhum valor.
+A instrução return mais simples retorna o controle da função para o programa de chamada; ele não retorna nenhum valor.
 
 
 ```
@@ -46,7 +42,7 @@ void main()
 
 
 
-No entanto, uma instrução return pode retornar um ou mais valores. Este exemplo retorna um valor literal:
+No entanto, uma instrução de retorno pode retornar um ou mais valores. Este exemplo retorna um valor literal:
 
 
 ```
@@ -67,7 +63,7 @@ return  light.enabled = true ;
 
 
 
-Este exemplo retorna um vetor de quatro componentes que é construído a partir de uma variável local e um literal.
+Este exemplo retorna um vetor de quatro componentes que é construído de uma variável local e um literal.
 
 
 ```
@@ -76,7 +72,7 @@ return  float4(color.rgb, 1) ;
 
 
 
-Este exemplo retorna um vetor de quatro componentes que é construído a partir do resultado retornado por uma função intrínseca, junto com valores literais.
+Este exemplo retorna um vetor de quatro componentes que é construído a partir do resultado retornado de uma função intrínseca, junto com valores literais.
 
 
 ```
@@ -116,9 +112,9 @@ VS_OUTPUT VertexShader_Tutorial_1(float4 inPos : POSITION )
 [Funções (DirectX HLSL)](dx-graphics-hlsl-functions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

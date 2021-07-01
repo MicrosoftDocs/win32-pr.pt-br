@@ -4,12 +4,12 @@ ms.assetid: 0d355ad1-d674-432e-809a-9fb27ac5f610
 title: Microsoft Media Foundation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db8f14a671550e75343311e0cddf488690496af4
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 4341a0aea1d51c7260e0fa532eb48b80699e053a
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103837600"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119151"
 ---
 # <a name="microsoft-media-foundation"></a>Microsoft Media Foundation
 
@@ -21,7 +21,7 @@ Esta documentação contém as seguintes seções:
 
 
 
-|                                                                                      |                                                                                                                                                        |
+| Tópico                                                                                     | Descrição                                                                                                                                                       |
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [O que há de novo para Media Foundation](whats-new-for-media-foundation.md)                | Descreve o que mudou na versão mais recente do Media Foundation.                                                                                  |
 | [Sobre o Media Foundation](about-the-media-foundation-sdk.md)                         | Lista os cabeçalhos e as bibliotecas de que você precisará e descreve as ferramentas e exemplos de código que são fornecidos para facilitar o desenvolvimento de Media Foundation. |

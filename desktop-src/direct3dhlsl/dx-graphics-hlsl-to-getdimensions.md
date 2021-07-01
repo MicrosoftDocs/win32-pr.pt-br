@@ -9,22 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0ad4be68049c92955c5ddb06a0c5eccfe2c26b77
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: bb6ef3c35af60ea776622718099acdedb5188ba8
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103823442"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119832"
 ---
 # <a name="getdimensions-directx-hlsl-texture-object"></a>GetDimensions (objeto de textura DirectX HLSL)
 
 Obtém informações de tamanho da textura. O bloco de sintaxe mostra todos os parâmetros que são possíveis na declaração do método. A tabela na seção de comentários mostra quais parâmetros são implementados para cada tipo de objeto de textura.
 
-
-
-|                                                                                                                                                  |
-|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| void Object. GetDimensions (UINT MipLevel, largura de typeX, altura de typeX, elementos typeX, profundidade de typeX, typeX NumberOfLevels, typeX NumberOfSamples); |
+void Object. GetDimensions (UINT MipLevel, largura de typeX, altura de typeX, elementos typeX, profundidade de typeX, typeX NumberOfLevels, typeX NumberOfSamples);
 
 
 
@@ -94,19 +90,19 @@ Esta tabela lista todas as versões diferentes do método; as versões são dife
 | Texture2DMS         | Largura UINT, altura UINT, amostras UINT                                          |
 | Texture2DMS         | Largura float, altura float, amostras float                                       |
 | Texture2DMSArray    | Largura UINT, altura UINT, elementos UINT, amostras UINT                           |
-| Texture2DMSArray    | Largura float, altura float, elementos float, amostras float                       |
+| Texture2DMSArray    | Float Width, float Height, float Elements, float Samples                       |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
-| vs \_ 4 \_ 0 | vs \_ 4 \_ 1  | PS \_ 4 \_ 0 | PS \_ 4 \_ 1  | GS \_ 4 \_ 0 | GS \_ 4 \_ 1  |
+| vs \_ 4 \_ 0 | vs \_ 4 \_ 1  | ps \_ 4 \_ 0 | ps \_ 4 \_ 1  | gs \_ 4 \_ 0 | gs \_ 4 \_ 1  |
 |----------|-----------|----------|-----------|----------|-----------|
 | x        | x         | x        | x         | x        | x         |
 
@@ -114,15 +110,15 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
  
 
-1.  Retorna dimensões para o maior nível de mipmap (inicial).
-2.  O TextureCubeArray está disponível no modelo de sombreador 4,1 ou superior.
-3.  O modelo do sombreador 4,1 está disponível no Direct3D 10,1 ou superior.
+1.  Retorna dimensões para o maior (zero) nível mipmap.
+2.  TextureCubeArray está disponível no Modelo de Sombreador 4.1 ou superior.
+3.  O Modelo de Sombreador 4.1 está disponível no Direct3D 10.1 ou superior.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Textura-objeto](dx-graphics-hlsl-to-type.md)
+[Objeto de textura](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  

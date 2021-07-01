@@ -14,22 +14,19 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c65049acce4265dd2abdf849119aad5902db9e6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4af131ca3a126cd6f1fd54160418bfbe70cc9cce
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103663963"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119071"
 ---
 # <a name="switch-statement"></a>Instrução Switch
 
 Transfere o controle para um bloco de instruções diferente dentro do corpo do comutador, dependendo do valor de um seletor.
 
 
-
-|                                                                                                                                                                                                                                 |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \[*Atributo* \] switch ( *seletor* ) {caso 0: { *StatementBlock*;}   interrupção   caso 1: { *StatementBlock*;}   interrupção   caso n: { *StatementBlock*;}   interrupção   padrão: { *StatementBlock*;}   interrupção |
+\[*Atributo* \] switch ( *seletor* ) {caso 0: { *StatementBlock*;}   interrupção   caso 1: { *StatementBlock*;}   interrupção   caso n: { *StatementBlock*;}   interrupção   padrão: { *StatementBlock*;}   interrupção
 
 
 

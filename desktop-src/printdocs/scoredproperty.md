@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Encontre informações sobre o elemento ScoredProperty. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
 ms.assetid: 0552d301-5105-490f-962b-135c8c2e936b
 title: ScoredProperty
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1605d173e0ab311841a6fcc37a46a0ba3b59b005
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: cb93fbdaeb6101cbd1ff75d6c0b3a829afe0d317
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105794001"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119111"
 ---
 # <a name="scoredproperty"></a>ScoredProperty
 
