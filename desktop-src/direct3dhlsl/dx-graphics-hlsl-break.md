@@ -13,41 +13,37 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5832d992a6992696b45981460f856b029bc870a4
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 56f90da8a6ec6d52b87ed53f8fca726d969e336b
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104498873"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129693"
 ---
-# <a name="break-statement"></a><span data-ttu-id="f73f7-104">Instrução Break</span><span class="sxs-lookup"><span data-stu-id="f73f7-104">break Statement</span></span>
+# <a name="break-statement"></a><span data-ttu-id="ce113-104">Instrução Break</span><span class="sxs-lookup"><span data-stu-id="ce113-104">break Statement</span></span>
 
-<span data-ttu-id="f73f7-105">Saia do loop ao redor ([do](dx-graphics-hlsl-do.md), [para](dx-graphics-hlsl-for.md), [while](dx-graphics-hlsl-while.md)).</span><span class="sxs-lookup"><span data-stu-id="f73f7-105">Exit the surrounding loop ([do](dx-graphics-hlsl-do.md), [for](dx-graphics-hlsl-for.md), [while](dx-graphics-hlsl-while.md)).</span></span>
+<span data-ttu-id="ce113-105">Saia do loop ao redor ([do](dx-graphics-hlsl-do.md), [para](dx-graphics-hlsl-for.md), [while](dx-graphics-hlsl-while.md)).</span><span class="sxs-lookup"><span data-stu-id="ce113-105">Exit the surrounding loop ([do](dx-graphics-hlsl-do.md), [for](dx-graphics-hlsl-for.md), [while](dx-graphics-hlsl-while.md)).</span></span>
 
-
-
-|        |
-|--------|
-| <span data-ttu-id="f73f7-106">interrupção</span><span class="sxs-lookup"><span data-stu-id="f73f7-106">break;</span></span> |
+<span data-ttu-id="ce113-106">interrupção</span><span class="sxs-lookup"><span data-stu-id="ce113-106">break;</span></span>
 
 
 
- 
+ 
 
-## <a name="parameters"></a><span data-ttu-id="f73f7-107">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="f73f7-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="ce113-107">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="ce113-107">Parameters</span></span>
 
-<span data-ttu-id="f73f7-108">Nenhum</span><span class="sxs-lookup"><span data-stu-id="f73f7-108">None</span></span>
+<span data-ttu-id="ce113-108">Nenhum</span><span class="sxs-lookup"><span data-stu-id="ce113-108">None</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="f73f7-109">Confira também</span><span class="sxs-lookup"><span data-stu-id="f73f7-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ce113-109">Confira também</span><span class="sxs-lookup"><span data-stu-id="ce113-109">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="f73f7-110">Controle de fluxo</span><span class="sxs-lookup"><span data-stu-id="f73f7-110">Flow Control</span></span>](dx-graphics-hlsl-flow-control.md)
+[<span data-ttu-id="ce113-110">Controle de fluxo</span><span class="sxs-lookup"><span data-stu-id="ce113-110">Flow Control</span></span>](dx-graphics-hlsl-flow-control.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,41 +13,37 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 50a2f2f067d3fe6f853c594d9dfff686c311595e
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: c5d9295441e3c672632d64e032b0988b41360b53
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104988543"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129945"
 ---
-# <a name="continue-statement"></a><span data-ttu-id="a48d4-104">Instrução continue</span><span class="sxs-lookup"><span data-stu-id="a48d4-104">continue Statement</span></span>
+# <a name="continue-statement"></a><span data-ttu-id="e59a7-104">Instrução continue</span><span class="sxs-lookup"><span data-stu-id="e59a7-104">continue Statement</span></span>
 
-<span data-ttu-id="a48d4-105">Pare de executar o loop atual[(do](dx-graphics-hlsl-do.md), [para](dx-graphics-hlsl-for.md), [while](dx-graphics-hlsl-while.md)), atualize as condições de loop e comece a executar na parte superior do loop.</span><span class="sxs-lookup"><span data-stu-id="a48d4-105">Stop executing the current loop ([do](dx-graphics-hlsl-do.md), [for](dx-graphics-hlsl-for.md), [while](dx-graphics-hlsl-while.md)), update the loop conditions, and begin executing from the top of the loop.</span></span>
+<span data-ttu-id="e59a7-105">Pare de executar o loop atual[(do](dx-graphics-hlsl-do.md), [para](dx-graphics-hlsl-for.md), [while](dx-graphics-hlsl-while.md)), atualize as condições de loop e comece a executar na parte superior do loop.</span><span class="sxs-lookup"><span data-stu-id="e59a7-105">Stop executing the current loop ([do](dx-graphics-hlsl-do.md), [for](dx-graphics-hlsl-for.md), [while](dx-graphics-hlsl-while.md)), update the loop conditions, and begin executing from the top of the loop.</span></span>
 
-
-
-|           |
-|-----------|
-| <span data-ttu-id="a48d4-106">continua</span><span class="sxs-lookup"><span data-stu-id="a48d4-106">continue;</span></span> |
+<span data-ttu-id="e59a7-106">continua</span><span class="sxs-lookup"><span data-stu-id="e59a7-106">continue;</span></span>
 
 
 
- 
+ 
 
-## <a name="parameters"></a><span data-ttu-id="a48d4-107">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="a48d4-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="e59a7-107">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="e59a7-107">Parameters</span></span>
 
-<span data-ttu-id="a48d4-108">Nenhum</span><span class="sxs-lookup"><span data-stu-id="a48d4-108">None</span></span>
+<span data-ttu-id="e59a7-108">Nenhum</span><span class="sxs-lookup"><span data-stu-id="e59a7-108">None</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="a48d4-109">Confira também</span><span class="sxs-lookup"><span data-stu-id="a48d4-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e59a7-109">Confira também</span><span class="sxs-lookup"><span data-stu-id="e59a7-109">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="a48d4-110">Controle de fluxo</span><span class="sxs-lookup"><span data-stu-id="a48d4-110">Flow Control</span></span>](dx-graphics-hlsl-flow-control.md)
+[<span data-ttu-id="e59a7-110">Controle de fluxo</span><span class="sxs-lookup"><span data-stu-id="e59a7-110">Flow Control</span></span>](dx-graphics-hlsl-flow-control.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
