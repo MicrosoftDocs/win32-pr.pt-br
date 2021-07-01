@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fe3cd51c81617632d240dd06df5c8f61b103bf91
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c0206f7030d3b3a05570e74273d9510bb9c2592c
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007574"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119571"
 ---
-# <a name="sampler-type"></a><span data-ttu-id="27ff2-104">Tipo de amostra</span><span class="sxs-lookup"><span data-stu-id="27ff2-104">Sampler Type</span></span>
+# <a name="sampler-type"></a><span data-ttu-id="c206e-104">Tipo de amostra</span><span class="sxs-lookup"><span data-stu-id="c206e-104">Sampler Type</span></span>
 
-<span data-ttu-id="27ff2-105">Use a sintaxe a seguir para declarar o estado de amostra, bem como o estado de comparação de amostra.</span><span class="sxs-lookup"><span data-stu-id="27ff2-105">Use the following syntax to declare sampler state as well as sampler-comparison state.</span></span>
+<span data-ttu-id="c206e-105">Use a sintaxe a seguir para declarar o estado de amostra, bem como o estado de comparação de amostra.</span><span class="sxs-lookup"><span data-stu-id="c206e-105">Use the following syntax to declare sampler state as well as sampler-comparison state.</span></span>
 
 
 
@@ -32,22 +32,22 @@ ms.locfileid: "104007574"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="27ff2-106">Diferenças entre o Direct3D 9 e o Direct3D 10 e posterior:</span><span class="sxs-lookup"><span data-stu-id="27ff2-106">Differences between Direct3D 9 and Direct3D 10 and later:</span></span><br/> <span data-ttu-id="27ff2-107">Aqui está a sintaxe de uma amostra no Direct3D 9.</span><span class="sxs-lookup"><span data-stu-id="27ff2-107">Here is the syntax for a sampler in Direct3D 9.</span></span><br/> 
+<td><span data-ttu-id="c206e-106">Diferenças entre o Direct3D 9 e o Direct3D 10 e posterior:</span><span class="sxs-lookup"><span data-stu-id="c206e-106">Differences between Direct3D 9 and Direct3D 10 and later:</span></span><br/> <span data-ttu-id="c206e-107">Aqui está a sintaxe de uma amostra no Direct3D 9.</span><span class="sxs-lookup"><span data-stu-id="c206e-107">Here is the syntax for a sampler in Direct3D 9.</span></span><br/> 
 <table>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="27ff2-108"><em>nome</em>do classificador  =  <em>SampleType</em>{Texture = <<em>texture_variable</em> > ;   [<em>state_name = state_value;</em>]   ... };</span><span class="sxs-lookup"><span data-stu-id="27ff2-108">sampler <em>Name</em> = <em>SamplerType</em>{   Texture = <<em>texture_variable</em>>;   [<em>state_name = state_value;</em>]   ... };</span></span></td>
+<td><span data-ttu-id="c206e-108"><em>nome</em>do classificador  =  <em>SampleType</em>{Texture = <<em>texture_variable</em> > ;   [<em>state_name = state_value;</em>]   ... };</span><span class="sxs-lookup"><span data-stu-id="c206e-108">sampler <em>Name</em> = <em>SamplerType</em>{   Texture = <<em>texture_variable</em>>;   [<em>state_name = state_value;</em>]   ... };</span></span></td>
 </tr>
 </tbody>
 </table>
 
 <p> </p>
-<p><span data-ttu-id="27ff2-109">A sintaxe de uma amostra no Direct3D 10 e posterior é ligeiramente alterada para dar suporte a objetos de textura e matrizes de amostra.</span><span class="sxs-lookup"><span data-stu-id="27ff2-109">The syntax for a sampler in Direct3D 10 and later is changed slightly to support texture objects and sampler arrays.</span></span></p>
+<p><span data-ttu-id="c206e-109">A sintaxe de uma amostra no Direct3D 10 e posterior é ligeiramente alterada para dar suporte a objetos de textura e matrizes de amostra.</span><span class="sxs-lookup"><span data-stu-id="c206e-109">The syntax for a sampler in Direct3D 10 and later is changed slightly to support texture objects and sampler arrays.</span></span></p>
 
 <table>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="27ff2-110"><em>Nome do classificador [índice]</em>{[<em>state_name = state_value;</em>]   ... };</span><span class="sxs-lookup"><span data-stu-id="27ff2-110"><em>SamplerType Name[Index]</em>{   [<em>state_name = state_value;</em>]   ... };</span></span></td>
+<td><span data-ttu-id="c206e-110"><em>Nome do classificador [índice]</em>{[<em>state_name = state_value;</em>]   ... };</span><span class="sxs-lookup"><span data-stu-id="c206e-110"><em>SamplerType Name[Index]</em>{   [<em>state_name = state_value;</em>]   ... };</span></span></td>
 </tr>
 </tbody>
 </table>
@@ -61,41 +61,39 @@ ms.locfileid: "104007574"
 
  
 
-## <a name="parameters"></a><span data-ttu-id="27ff2-111">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="27ff2-111">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="c206e-111">Parâmetros</span><span class="sxs-lookup"><span data-stu-id="c206e-111">Parameters</span></span>
 
 <dl> <dt>
 
-<span data-ttu-id="27ff2-112"><span id="sampler"></span><span id="SAMPLER"></span>cores</span><span class="sxs-lookup"><span data-stu-id="27ff2-112"><span id="sampler"></span><span id="SAMPLER"></span>sampler</span></span>
+<span data-ttu-id="c206e-112"><span id="sampler"></span><span id="SAMPLER"></span>cores</span><span class="sxs-lookup"><span data-stu-id="c206e-112"><span id="sampler"></span><span id="SAMPLER"></span>sampler</span></span>
 </dt> <dd>
 
-<span data-ttu-id="27ff2-113">Somente Direct3D 9.</span><span class="sxs-lookup"><span data-stu-id="27ff2-113">Direct3D 9 only.</span></span> <span data-ttu-id="27ff2-114">Palavra-chave required.</span><span class="sxs-lookup"><span data-stu-id="27ff2-114">Required keyword.</span></span>
+<span data-ttu-id="c206e-113">Somente Direct3D 9.</span><span class="sxs-lookup"><span data-stu-id="c206e-113">Direct3D 9 only.</span></span> <span data-ttu-id="c206e-114">Palavra-chave required.</span><span class="sxs-lookup"><span data-stu-id="c206e-114">Required keyword.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="27ff2-115"><span id="Name"></span><span id="name"></span><span id="NAME"></span>*Nomes*</span><span class="sxs-lookup"><span data-stu-id="27ff2-115"><span id="Name"></span><span id="name"></span><span id="NAME"></span>*Name*</span></span>
+<span data-ttu-id="c206e-115"><span id="Name"></span><span id="name"></span><span id="NAME"></span>*Nomes*</span><span class="sxs-lookup"><span data-stu-id="c206e-115"><span id="Name"></span><span id="name"></span><span id="NAME"></span>*Name*</span></span>
 </dt> <dd>
 
-<span data-ttu-id="27ff2-116">Cadeia de caracteres ASCII que identifica exclusivamente o nome da variável de amostra.</span><span class="sxs-lookup"><span data-stu-id="27ff2-116">ASCII string that uniquely identifies the sampler variable name.</span></span>
+<span data-ttu-id="c206e-116">Cadeia de caracteres ASCII que identifica exclusivamente o nome da variável de amostra.</span><span class="sxs-lookup"><span data-stu-id="c206e-116">ASCII string that uniquely identifies the sampler variable name.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="27ff2-117"><span id="_Index_"></span><span id="_index_"></span><span id="_INDEX_"></span>*\[Index\]*</span><span class="sxs-lookup"><span data-stu-id="27ff2-117"><span id="_Index_"></span><span id="_index_"></span><span id="_INDEX_"></span>*\[Index\]*</span></span>
+<span data-ttu-id="c206e-117"><span id="_Index_"></span><span id="_index_"></span><span id="_INDEX_"></span>*\[Index\]*</span><span class="sxs-lookup"><span data-stu-id="c206e-117"><span id="_Index_"></span><span id="_index_"></span><span id="_INDEX_"></span>*\[Index\]*</span></span>
 </dt> <dd>
 
-<span data-ttu-id="27ff2-118">Direct3D 10 e posterior somente.</span><span class="sxs-lookup"><span data-stu-id="27ff2-118">Direct3D 10 and later only.</span></span> <span data-ttu-id="27ff2-119">Tamanho opcional da matriz; um inteiro positivo maior ou igual a 1.</span><span class="sxs-lookup"><span data-stu-id="27ff2-119">Optional array size; a positive integer greater than or equal to 1.</span></span>
+<span data-ttu-id="c206e-118">Direct3D 10 e posterior somente.</span><span class="sxs-lookup"><span data-stu-id="c206e-118">Direct3D 10 and later only.</span></span> <span data-ttu-id="c206e-119">Tamanho opcional da matriz; um inteiro positivo maior ou igual a 1.</span><span class="sxs-lookup"><span data-stu-id="c206e-119">Optional array size; a positive integer greater than or equal to 1.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="27ff2-120"><span id="SamplerType"></span><span id="samplertype"></span><span id="SAMPLERTYPE"></span>*SampleType*</span><span class="sxs-lookup"><span data-stu-id="27ff2-120"><span id="SamplerType"></span><span id="samplertype"></span><span id="SAMPLERTYPE"></span>*SamplerType*</span></span>
+<span data-ttu-id="c206e-120"><span id="SamplerType"></span><span id="samplertype"></span><span id="SAMPLERTYPE"></span>*SampleType*</span><span class="sxs-lookup"><span data-stu-id="c206e-120"><span id="SamplerType"></span><span id="samplertype"></span><span id="SAMPLERTYPE"></span>*SamplerType*</span></span>
 </dt> <dd>
 
-<span data-ttu-id="27ff2-121">\[no \] tipo de amostra, que é um dos seguintes: *amostra*, *sampler1D*, *sampler2D*, *sampler3D*, *samplerCUBE*, *\_ estado de amostra*, *samplestate*.</span><span class="sxs-lookup"><span data-stu-id="27ff2-121">\[in\] The sampler type, which is one of the following: *sampler*, *sampler1D*, *sampler2D*, *sampler3D*, *samplerCUBE*, *sampler\_state*, *SamplerState*.</span></span>
+<span data-ttu-id="c206e-121">\[no \] tipo de amostra, que é um dos seguintes: *amostra*, *sampler1D*, *sampler2D*, *sampler3D*, *samplerCUBE*, *\_ estado de amostra*, *samplestate*.</span><span class="sxs-lookup"><span data-stu-id="c206e-121">\[in\] The sampler type, which is one of the following: *sampler*, *sampler1D*, *sampler2D*, *sampler3D*, *samplerCUBE*, *sampler\_state*, *SamplerState*.</span></span>
 
+<span data-ttu-id="c206e-122">Diferenças entre o Direct3D 9 e o Direct3D 10 e posterior:</span><span class="sxs-lookup"><span data-stu-id="c206e-122">Differences between Direct3D 9 and Direct3D 10 and later:</span></span>
 
-
-|                                                                                                                                                                       |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="27ff2-122">Diferenças entre o Direct3D 9 e o Direct3D 10 e posterior:</span><span class="sxs-lookup"><span data-stu-id="27ff2-122">Differences between Direct3D 9 and Direct3D 10 and later:</span></span><br/> <span data-ttu-id="27ff2-123">O Direct3D 10 e posterior dá suporte a um tipo de amostra adicional: *SamplerComparisonState*.</span><span class="sxs-lookup"><span data-stu-id="27ff2-123">Direct3D 10 and later supports one additional sampler type: *SamplerComparisonState*.</span></span><br/> |
+- <span data-ttu-id="c206e-123">O Direct3D 10 e posterior dá suporte a um tipo de amostra adicional: *SamplerComparisonState*.</span><span class="sxs-lookup"><span data-stu-id="c206e-123">Direct3D 10 and later supports one additional sampler type: *SamplerComparisonState*.</span></span>
 
 
 
@@ -103,17 +101,17 @@ ms.locfileid: "104007574"
 
 </dd> <dt>
 
-<span data-ttu-id="27ff2-124"><span id="Texture____texture_variable__"></span><span id="texture____texture_variable__"></span><span id="TEXTURE____TEXTURE_VARIABLE__"></span>*Texture* = <*\_ variável de textura*>;</span><span class="sxs-lookup"><span data-stu-id="27ff2-124"><span id="Texture____texture_variable__"></span><span id="texture____texture_variable__"></span><span id="TEXTURE____TEXTURE_VARIABLE__"></span>*Texture* = <*texture\_variable*>;</span></span>
+<span data-ttu-id="c206e-124"><span id="Texture____texture_variable__"></span><span id="texture____texture_variable__"></span><span id="TEXTURE____TEXTURE_VARIABLE__"></span>*Texture* = <*\_ variável de textura*>;</span><span class="sxs-lookup"><span data-stu-id="c206e-124"><span id="Texture____texture_variable__"></span><span id="texture____texture_variable__"></span><span id="TEXTURE____TEXTURE_VARIABLE__"></span>*Texture* = <*texture\_variable*>;</span></span>
 </dt> <dd>
 
-<span data-ttu-id="27ff2-125">Somente Direct3D 9.</span><span class="sxs-lookup"><span data-stu-id="27ff2-125">Direct3D 9 only.</span></span> <span data-ttu-id="27ff2-126">Uma variável de textura.</span><span class="sxs-lookup"><span data-stu-id="27ff2-126">A texture variable.</span></span> <span data-ttu-id="27ff2-127">A palavra-chave *Texture* é necessária no lado esquerdo; o nome da variável pertence ao lado direito da expressão dentro dos colchetes angulares.</span><span class="sxs-lookup"><span data-stu-id="27ff2-127">The *Texture* keyword is required on the left-hand side; the variable name belongs on the right-hand side of the expression within the angle brackets.</span></span>
+<span data-ttu-id="c206e-125">Somente Direct3D 9.</span><span class="sxs-lookup"><span data-stu-id="c206e-125">Direct3D 9 only.</span></span> <span data-ttu-id="c206e-126">Uma variável de textura.</span><span class="sxs-lookup"><span data-stu-id="c206e-126">A texture variable.</span></span> <span data-ttu-id="c206e-127">A palavra-chave *Texture* é necessária no lado esquerdo; o nome da variável pertence ao lado direito da expressão dentro dos colchetes angulares.</span><span class="sxs-lookup"><span data-stu-id="c206e-127">The *Texture* keyword is required on the left-hand side; the variable name belongs on the right-hand side of the expression within the angle brackets.</span></span>
 
 </dd> <dt>
 
-<span data-ttu-id="27ff2-128"><span id="state_name___state_value"></span><span id="STATE_NAME___STATE_VALUE"></span>*nome do estado \_ = \_ valor do estado*</span><span class="sxs-lookup"><span data-stu-id="27ff2-128"><span id="state_name___state_value"></span><span id="STATE_NAME___STATE_VALUE"></span>*state\_name = state\_value*</span></span>
+<span data-ttu-id="c206e-128"><span id="state_name___state_value"></span><span id="STATE_NAME___STATE_VALUE"></span>*nome do estado \_ = \_ valor do estado*</span><span class="sxs-lookup"><span data-stu-id="c206e-128"><span id="state_name___state_value"></span><span id="STATE_NAME___STATE_VALUE"></span>*state\_name = state\_value*</span></span>
 </dt> <dd>
 
-<span data-ttu-id="27ff2-129">\[na \] (s) atribuição (ões) de estado opcional.</span><span class="sxs-lookup"><span data-stu-id="27ff2-129">\[in\] Optional state assignment(s).</span></span> <span data-ttu-id="27ff2-130">O lado esquerdo de uma atribuição é um nome de estado, o lado direito é o valor de estado.</span><span class="sxs-lookup"><span data-stu-id="27ff2-130">The left hand side of an assignment is a state name, the right hand side is the state value.</span></span> <span data-ttu-id="27ff2-131">Todas as atribuições de estado devem aparecer dentro de um bloco de instruções (entre chaves).</span><span class="sxs-lookup"><span data-stu-id="27ff2-131">All state assignments must appear within a statement block (in curly brackets).</span></span> <span data-ttu-id="27ff2-132">Cada instrução é separada com um ponto e vírgula.</span><span class="sxs-lookup"><span data-stu-id="27ff2-132">Each statement is separated with a semicolon.</span></span> <span data-ttu-id="27ff2-133">A tabela a seguir lista os possíveis nomes de estado.</span><span class="sxs-lookup"><span data-stu-id="27ff2-133">The following table lists the possible state names.</span></span>
+<span data-ttu-id="c206e-129">\[na \] (s) atribuição (ões) de estado opcional.</span><span class="sxs-lookup"><span data-stu-id="c206e-129">\[in\] Optional state assignment(s).</span></span> <span data-ttu-id="c206e-130">O lado esquerdo de uma atribuição é um nome de estado, o lado direito é o valor de estado.</span><span class="sxs-lookup"><span data-stu-id="c206e-130">The left hand side of an assignment is a state name, the right hand side is the state value.</span></span> <span data-ttu-id="c206e-131">Todas as atribuições de estado devem aparecer dentro de um bloco de instruções (entre chaves).</span><span class="sxs-lookup"><span data-stu-id="c206e-131">All state assignments must appear within a statement block (in curly brackets).</span></span> <span data-ttu-id="c206e-132">Cada instrução é separada com um ponto e vírgula.</span><span class="sxs-lookup"><span data-stu-id="c206e-132">Each statement is separated with a semicolon.</span></span> <span data-ttu-id="c206e-133">A tabela a seguir lista os possíveis nomes de estado.</span><span class="sxs-lookup"><span data-stu-id="c206e-133">The following table lists the possible state names.</span></span>
 
 
 ```
@@ -134,18 +132,18 @@ ComparisonFunc
 
 
 
-<span data-ttu-id="27ff2-134">O lado direito de cada expressão é o valor atribuído a cada Estado.</span><span class="sxs-lookup"><span data-stu-id="27ff2-134">The right side of each expression is the value assigned to each state.</span></span> <span data-ttu-id="27ff2-135">Consulte a [**estrutura \_ \_ desc de amostra D3D11**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_sampler_desc) para obter os valores de estado possíveis para o Direct3D 11.</span><span class="sxs-lookup"><span data-stu-id="27ff2-135">See the [**D3D11\_SAMPLER\_DESC**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_sampler_desc) structure for the possible state values for Direct3D 11.</span></span> <span data-ttu-id="27ff2-136">Há uma relação de 1 a 1 entre os nomes de estado e os membros da estrutura.</span><span class="sxs-lookup"><span data-stu-id="27ff2-136">There is a 1 to 1 relationship between the state names and the members of the structure.</span></span> <span data-ttu-id="27ff2-137">Veja o exemplo a seguir.</span><span class="sxs-lookup"><span data-stu-id="27ff2-137">See the following example.</span></span>
+<span data-ttu-id="c206e-134">O lado direito de cada expressão é o valor atribuído a cada Estado.</span><span class="sxs-lookup"><span data-stu-id="c206e-134">The right side of each expression is the value assigned to each state.</span></span> <span data-ttu-id="c206e-135">Consulte a [**estrutura \_ \_ desc de amostra D3D11**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_sampler_desc) para obter os valores de estado possíveis para o Direct3D 11.</span><span class="sxs-lookup"><span data-stu-id="c206e-135">See the [**D3D11\_SAMPLER\_DESC**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_sampler_desc) structure for the possible state values for Direct3D 11.</span></span> <span data-ttu-id="c206e-136">Há uma relação de 1 a 1 entre os nomes de estado e os membros da estrutura.</span><span class="sxs-lookup"><span data-stu-id="c206e-136">There is a 1 to 1 relationship between the state names and the members of the structure.</span></span> <span data-ttu-id="c206e-137">Veja o exemplo a seguir.</span><span class="sxs-lookup"><span data-stu-id="c206e-137">See the following example.</span></span>
 
 </dd> </dl>
 
-## <a name="remarks"></a><span data-ttu-id="27ff2-138">Comentários</span><span class="sxs-lookup"><span data-stu-id="27ff2-138">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c206e-138">Comentários</span><span class="sxs-lookup"><span data-stu-id="c206e-138">Remarks</span></span>
 
-<span data-ttu-id="27ff2-139">Quando você implementa um efeito, o estado de amostra é um dos vários tipos de estado que talvez você precise configurar no pipeline para renderização.</span><span class="sxs-lookup"><span data-stu-id="27ff2-139">When you implement an effect, sampler state is one of several types of state that you might need to set up in the pipeline for rendering.</span></span> <span data-ttu-id="27ff2-140">Para obter uma lista de todos os Estados possíveis que podem ser definidos em um efeito, consulte:</span><span class="sxs-lookup"><span data-stu-id="27ff2-140">For a list of all the possible states that you can set in an effect, see:</span></span>
+<span data-ttu-id="c206e-139">Quando você implementa um efeito, o estado de amostra é um dos vários tipos de estado que talvez você precise configurar no pipeline para renderização.</span><span class="sxs-lookup"><span data-stu-id="c206e-139">When you implement an effect, sampler state is one of several types of state that you might need to set up in the pipeline for rendering.</span></span> <span data-ttu-id="c206e-140">Para obter uma lista de todos os Estados possíveis que podem ser definidos em um efeito, consulte:</span><span class="sxs-lookup"><span data-stu-id="c206e-140">For a list of all the possible states that you can set in an effect, see:</span></span>
 
--   <span data-ttu-id="27ff2-141">O Direct3D 10 usa [grupos de Estados](/windows/desktop/direct3d10/d3d10-effect-states).</span><span class="sxs-lookup"><span data-stu-id="27ff2-141">Direct3D 10 uses [state groups](/windows/desktop/direct3d10/d3d10-effect-states).</span></span>
--   <span data-ttu-id="27ff2-142">O Direct3D 9 usa [Estados](/windows/desktop/direct3d9/effect-states)individuais.</span><span class="sxs-lookup"><span data-stu-id="27ff2-142">Direct3D 9 uses individual [states](/windows/desktop/direct3d9/effect-states).</span></span>
+-   <span data-ttu-id="c206e-141">O Direct3D 10 usa [grupos de Estados](/windows/desktop/direct3d10/d3d10-effect-states).</span><span class="sxs-lookup"><span data-stu-id="c206e-141">Direct3D 10 uses [state groups](/windows/desktop/direct3d10/d3d10-effect-states).</span></span>
+-   <span data-ttu-id="c206e-142">O Direct3D 9 usa [Estados](/windows/desktop/direct3d9/effect-states)individuais.</span><span class="sxs-lookup"><span data-stu-id="c206e-142">Direct3D 9 uses individual [states](/windows/desktop/direct3d9/effect-states).</span></span>
 
-## <a name="example"></a><span data-ttu-id="27ff2-143">Exemplo</span><span class="sxs-lookup"><span data-stu-id="27ff2-143">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c206e-143">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c206e-143">Example</span></span>
 
 
 
@@ -155,7 +153,7 @@ ComparisonFunc
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="27ff2-144">Diferenças entre o Direct3D 9 e o Direct3D 10:</span><span class="sxs-lookup"><span data-stu-id="27ff2-144">Differences between Direct3D 9 and Direct3D 10:</span></span><br/> <span data-ttu-id="27ff2-145">Aqui está um exemplo parcial de uma amostra do Direct3D 9 do <a href="https://msdn.microsoft.com/library/Ee416223(v=VS.85).aspx">exemplo BasicHLSL</a>.</span><span class="sxs-lookup"><span data-stu-id="27ff2-145">Here is a partial example of a Direct3D 9 sampler from <a href="https://msdn.microsoft.com/library/Ee416223(v=VS.85).aspx">BasicHLSL Sample</a>.</span></span><br/> <span data-codelanguage=""></span>
+<td><span data-ttu-id="c206e-144">Diferenças entre o Direct3D 9 e o Direct3D 10:</span><span class="sxs-lookup"><span data-stu-id="c206e-144">Differences between Direct3D 9 and Direct3D 10:</span></span><br/> <span data-ttu-id="c206e-145">Aqui está um exemplo parcial de uma amostra do Direct3D 9 do <a href="https://msdn.microsoft.com/library/Ee416223(v=VS.85).aspx">exemplo BasicHLSL</a>.</span><span class="sxs-lookup"><span data-stu-id="c206e-145">Here is a partial example of a Direct3D 9 sampler from <a href="https://msdn.microsoft.com/library/Ee416223(v=VS.85).aspx">BasicHLSL Sample</a>.</span></span><br/> <span data-codelanguage=""></span>
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -174,7 +172,7 @@ sampler_state
 </tbody>
 </table>
 
-<p><span data-ttu-id="27ff2-146">Aqui está um exemplo parcial de uma amostra do Direct3D 10 do <a href="https://msdn.microsoft.com/library/Ee416395(v=VS.85).aspx">exemplo BasicHLSL10</a>.</span><span class="sxs-lookup"><span data-stu-id="27ff2-146">Here is a partial example of a Direct3D 10 sampler from <a href="https://msdn.microsoft.com/library/Ee416395(v=VS.85).aspx">BasicHLSL10 Sample</a>.</span></span></p>
+<p><span data-ttu-id="c206e-146">Aqui está um exemplo parcial de uma amostra do Direct3D 10 do <a href="https://msdn.microsoft.com/library/Ee416395(v=VS.85).aspx">exemplo BasicHLSL10</a>.</span><span class="sxs-lookup"><span data-stu-id="c206e-146">Here is a partial example of a Direct3D 10 sampler from <a href="https://msdn.microsoft.com/library/Ee416395(v=VS.85).aspx">BasicHLSL10 Sample</a>.</span></span></p>
 <div class="code">
 <span data-codelanguage=""></span>
 <table>
@@ -202,7 +200,7 @@ sampler_state
 
  
 
-<span data-ttu-id="27ff2-147">Aqui está um exemplo parcial de declaração do estado de comparação de amostra e chamada de uma amostra de comparação no Direct3D 10.</span><span class="sxs-lookup"><span data-stu-id="27ff2-147">Here is a partial example of declaring sampler-comparison state, and calling a comparison sampler in Direct3D 10.</span></span>
+<span data-ttu-id="c206e-147">Aqui está um exemplo parcial de declaração do estado de comparação de amostra e chamada de uma amostra de comparação no Direct3D 10.</span><span class="sxs-lookup"><span data-stu-id="c206e-147">Here is a partial example of declaring sampler-comparison state, and calling a comparison sampler in Direct3D 10.</span></span>
 
 
 ```
@@ -224,11 +222,11 @@ float fShadow = g_ShadowMap.SampleCmpLevelZero( ShadowSampler, vModProjUV.xy, vM
 
 
 
-## <a name="see-also"></a><span data-ttu-id="27ff2-148">Confira também</span><span class="sxs-lookup"><span data-stu-id="27ff2-148">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c206e-148">Confira também</span><span class="sxs-lookup"><span data-stu-id="c206e-148">See also</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="27ff2-149">Tipos de dados (DirectX HLSL)</span><span class="sxs-lookup"><span data-stu-id="27ff2-149">Data Types (DirectX HLSL)</span></span>](dx-graphics-hlsl-data-types.md)
+[<span data-ttu-id="c206e-149">Tipos de dados (DirectX HLSL)</span><span class="sxs-lookup"><span data-stu-id="c206e-149">Data Types (DirectX HLSL)</span></span>](dx-graphics-hlsl-data-types.md)
 </dt> </dl>
 
  
