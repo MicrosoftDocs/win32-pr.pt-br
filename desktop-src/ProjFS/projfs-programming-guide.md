@@ -4,12 +4,12 @@ description: Informações conceituais sobre como implementar um aplicativo de p
 ms.assetid: <GUID-GOES-HERE>
 ms.date: 01/17/2020
 ms.topic: article
-ms.openlocfilehash: a6b2d186ac3e674c3fa68e17ecd523b2c94f2401
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 86c6f49eaf9da578226031eaf84abff7ebb059c0
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007865"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120561"
 ---
 # <a name="projected-file-system-projfs-programming-guide"></a>Guia de programação do sistema de arquivos projetado (ProjFS)
 
@@ -32,7 +32,7 @@ O sistema de arquivos projetado do Windows (ProjFS) permite que um aplicativo de
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-|                                                                                                              |                                                                                   |
+| Tópico                                                                                                             | Descrição                                                                                  |
 |--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 | [Exemplo de RegFS](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/ProjectedFileSystem) | Um provedor de ProjFS de exemplo que projeta o registro do Windows no sistema de arquivos. |
 <!--

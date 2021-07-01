@@ -1,6 +1,6 @@
 ---
-title: CalculateLevelOfDetail (objeto de textura DirectX HLSL)
-description: Calcula o nível de detalhe.
+title: CalculateLevelOfDetail (objeto de textura directX HLSL)
+description: Calcula o nível de detalhes.
 ms.assetid: 7c7c3754-45a9-49c6-8420-aac22f776b15
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,22 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c59b8da97ff1cbe0bd88d6a49120a0a040cf3c30
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.openlocfilehash: 9e307527f93c153f0f78ce58b4d70ead4f7c1bc4
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "104967228"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120551"
 ---
-# <a name="calculatelevelofdetail-directx-hlsl-texture-object"></a>CalculateLevelOfDetail (objeto de textura DirectX HLSL)
+# <a name="calculatelevelofdetail-directx-hlsl-texture-object"></a>CalculateLevelOfDetail (objeto de textura directX HLSL)
 
-Calcula o nível de detalhe.
+Calcula o nível de detalhes.
 
-
-
-|                                                                 |
-|-----------------------------------------------------------------|
-| Ret. CalculateLevelOfDetail ( \_ estado de amostra S, float x); |
+ret Object.CalculateLevelOfDetail( sampler \_ state S, float x );
 
 
 
@@ -48,19 +44,19 @@ Calcula o nível de detalhe.
 <tbody>
 <tr class="odd">
 <td><span id="Object"></span><span id="object"></span><span id="OBJECT"></span><em>Objeto</em><br/></td>
-<td>Qualquer tipo <a href="dx-graphics-hlsl-to-type.md">de objeto de textura</a> (exceto Texture2DMS e Texture2DMSArray).<br/></td>
+<td>Qualquer <a href="dx-graphics-hlsl-to-type.md">tipo de objeto de</a> textura (exceto Texture2DMS e Texture2DMSArray).<br/></td>
 </tr>
 <tr class="even">
-<td><span id="S"></span><span id="s"></span><em>&</em><br/></td>
-<td>no Um <a href="/windows/desktop/direct3d10/d3d10-effect-sampler-syntax">estado de amostra</a>. Este é um objeto declarado em um arquivo de efeito que contém atribuições de estado.<br/></td>
+<td><span id="S"></span><span id="s"></span><em>S</em><br/></td>
+<td>[in] Um <a href="/windows/desktop/direct3d10/d3d10-effect-sampler-syntax">estado sampler</a>. Esse é um objeto declarado em um arquivo de efeito que contém atribuições de estado.<br/></td>
 </tr>
 <tr class="odd">
-<td><span id="x"></span><span id="X"></span><em>w.x.y.</em><br/></td>
-<td>no O valor ou valores de interpolação linear, que é um número de ponto flutuante entre 0,0 e 1,0, inclusive. O número de componentes depende do tipo de objeto de textura. <br/> 
+<td><span id="x"></span><span id="X"></span><em>X</em><br/></td>
+<td>[in] O valor ou valores de interpolação linear, que é um número de ponto flutuante entre 0,0 e 1,0, inclusive. O número de componentes depende do tipo de objeto de textura. <br/> 
 <table>
 <thead>
 <tr class="header">
-<th>Tipo de Texture-Object</th>
+<th>Texture-Object tipo</th>
 <th>Tipo de parâmetro</th>
 </tr>
 </thead>
@@ -93,13 +89,13 @@ Calcula o nível de detalhe.
 
 Retorna o LOD calculado, um único valor de ponto flutuante.
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
-| vs \_ 4 \_ 0 | vs \_ 4 \_ 1  | PS \_ 4 \_ 0 | PS \_ 4 \_ 1  | GS \_ 4 \_ 0 | GS \_ 4 \_ 1  |
+| vs \_ 4 \_ 0 | vs \_ 4 \_ 1  | ps \_ 4 \_ 0 | ps \_ 4 \_ 1  | gs \_ 4 \_ 0 | gs \_ 4 \_ 1  |
 |----------|-----------|----------|-----------|----------|-----------|
 |          |           |          | x         |          |           |
 
@@ -107,14 +103,14 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
  
 
-1.  O TextureCubeArray está disponível no modelo de sombreador 4,1 ou superior.
-2.  O modelo do sombreador 4,1 está disponível no Direct3D 10,1 ou superior.
+1.  TextureCubeArray está disponível no Modelo de Sombreador 4.1 ou superior.
+2.  O Modelo de Sombreador 4.1 está disponível no Direct3D 10.1 ou superior.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Textura-objeto](dx-graphics-hlsl-to-type.md)
+[Objeto de textura](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  

@@ -1,17 +1,17 @@
 ---
 title: WinINet versus WinHTTP
-description: Com algumas exceções, o WinINet é um superconjunto do WinHTTP. Ao selecionar entre os dois, você deve usar o WinINet, a menos que você planeje executar dentro de um processo de serviço ou de serviço que exija a representação e o isolamento da sessão.
+description: Saiba como escolher entre o WinInet e o WinHTTP. Leia uma comparação dos recursos e examine os tópicos relacionados.
 ms.assetid: 77386b54-2c86-4a30-8c4c-88d5f15313d7
 keywords:
 - WinINet versus WinHTTP
 ms.topic: article
 ms.date: 02/22/2019
-ms.openlocfilehash: c4d161992c2202505e8c84c660ca1edc92cc7993
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8ced80dd048559fee483e8cf121918eed75fc462
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105793270"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118791"
 ---
 # <a name="wininet-vs-winhttp"></a>WinINet versus WinHTTP
 

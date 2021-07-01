@@ -13,26 +13,22 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 50a2f2f067d3fe6f853c594d9dfff686c311595e
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: c5d9295441e3c672632d64e032b0988b41360b53
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104988543"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129945"
 ---
 # <a name="continue-statement"></a>Instrução continue
 
 Pare de executar o loop atual[(do](dx-graphics-hlsl-do.md), [para](dx-graphics-hlsl-for.md), [while](dx-graphics-hlsl-while.md)), atualize as condições de loop e comece a executar na parte superior do loop.
 
-
-
-|           |
-|-----------|
-| continua |
+continua
 
 
 
- 
+ 
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -45,9 +41,9 @@ Nenhum
 [Controle de fluxo](dx-graphics-hlsl-flow-control.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

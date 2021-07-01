@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d2346e1ca2302f80c796558b4aa2bbdce016d494
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: b77f1050beaee2b269d12e69704018e3c5abee6e
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104498954"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129844"
 ---
 # <a name="grammar"></a>Gramática
 
 As instruções HLSL são construídas usando as regras a seguir para gramática.
 
--   [Espaço em branco](#whitespace)
+-   [Diferente](#whitespace)
 -   [Números de ponto flutuante](#floating-point-numbers)
 -   [Números inteiros](#integer-numbers)
 -   [Characters](#characters)
@@ -33,19 +33,11 @@ As instruções HLSL são construídas usando as regras a seguir para gramática
 
 Os caracteres a seguir são reconhecidos como espaços em branco.
 
-
-
-|                            |
-|----------------------------|
-| SPACE                      |
-| TAB                        |
-| MERCADO                        |
-| Comentários de estilo C (/ \* \* /) |
-| Comentários de estilo C++ (//)    |
-
-
-
- 
+- SPACE
+- TAB
+- MERCADO
+- Comentários de estilo C (/ \* \* /)
+- Comentários de estilo C++ (//)
 
 ## <a name="floating-point-numbers"></a>Números de ponto flutuante
 
@@ -122,9 +114,9 @@ Os caracteres são representados em HLSL da seguinte maneira:
 
 
 
-|                                           |                                                                 |
+| Caractere                                          | Descrição                                                                |
 |-------------------------------------------|-----------------------------------------------------------------|
-| &                                       | espaço                                                     |
+| 'c'                                       | espaço                                                     |
 | ' \\ a ' ' \\ b ' ' \\ f ' ' \\ b ' ' \\ r ' ' \\ t ' ' \\ v ' | ignora                                                       |
 | '\\\#\#\#'                                | (escape octal, cada \# um é um dígito octal)                       |
 | ' \\ x \# '                                   | (escape Hex, \# é número hexadecimal, qualquer número de dígitos)            |
@@ -132,7 +124,7 @@ Os caracteres são representados em HLSL da seguinte maneira:
 
 
 
- 
+ 
 
 Não há suporte para escapes em expressões de pré-processador.
 
@@ -172,9 +164,9 @@ Também qualquer outro caractere único que não corresponde a outra regra.
 [Apêndice (DirectX HLSL)](dx-graphics-hlsl-appendix.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

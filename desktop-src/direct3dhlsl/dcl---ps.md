@@ -9,28 +9,24 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ad61ea8d733ed01fcd2e57ba06c38e0b3efac682
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 4f2ba81650611351970ff4068edaa75d27d34fc4
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104365259"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113130095"
 ---
 # <a name="dcl---sm2-sm3---ps-asm"></a>DCL-(SM2, SM3-PS ASM)
 
 Declare um registro de entrada de sombreador de pixel.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
+
+\[ \_ máscara de \] dest PP \[ . Mask\]
 
 
 
-|                           |
-|---------------------------|
-| \[ \_ máscara de \] dest PP \[ . Mask\] |
-
-
-
- 
+ 
 
 Em que:
 
@@ -48,7 +44,7 @@ Em que:
 
 
 
- 
+ 
 
 Todas as instruções de DCL devem aparecer antes da primeira instrução executável.
 
@@ -59,9 +55,9 @@ Todas as instruções de DCL devem aparecer antes da primeira instrução execut
 [Instruções do sombreador de pixel](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

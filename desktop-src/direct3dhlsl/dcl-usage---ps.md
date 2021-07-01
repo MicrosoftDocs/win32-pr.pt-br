@@ -1,5 +1,5 @@
 ---
-title: dcl_semantics (SM3-PS ASM)
+title: dcl_semantics (sm3 – ps asm)
 description: Declare a associação entre a saída do sombreador de vértice e a entrada do sombreador de pixel.
 ms.assetid: 4f4dc6fe-0efa-4d84-aefd-583e90ab9a61
 ms.topic: reference
@@ -9,24 +9,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 178b31a386a7ae4aa266ac33ddbb1ee5c842f2d1
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 2c506d2ad23003f93bbaea409cacc60b18c86534
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997163"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129703"
 ---
-# <a name="dcl_semantics-sm3---ps-asm"></a>semântica de DCL \_ (SM3-PS ASM)
+# <a name="dcl_semantics-sm3---ps-asm"></a>\_semântica dcl (sm3 – ps asm)
 
 Declare a associação entre a saída do sombreador de vértice e a entrada do sombreador de pixel.
 
 ## <a name="syntax"></a>Sintaxe
 
-
-
-|                                                   |
-|---------------------------------------------------|
-| \_máscara de hora de Verão da semântica DCL \[ \_ centróide \] \[ . Write \_\] |
+dcl \_ semantics \[ \_ centroid \] dst \[ .write \_ mask\]
 
 
 
@@ -34,24 +30,24 @@ Declare a associação entre a saída do sombreador de vértice e a entrada do s
 
 Em que:
 
--   \_semântica: identifica o uso de dados pretendido e pode ser qualquer um dos valores em [**D3DDECLUSAGE**](/windows/desktop/direct3d9/d3ddeclusage) (sem o \_ prefixo D3DDECLUSAGE). Além disso, um índice inteiro pode ser anexado à semântica para distinguir parâmetros que usam semântica semelhante.
--   \[\_[Centróide](dx9-graphics-reference-asm-ps-instructions-modifiers-ps-2-0.md) \] é um modificador de instrução opcional. Há suporte para as instruções de \_ uso do DCL que declaram os registros de entrada e as instruções de pesquisa de textura. O centróide é acrescentado sem espaço.
--   DST: registro de destino. Consulte [registros do PS \_ 3 \_ 0](dx9-graphics-reference-asm-ps-registers-ps-3-0.md).
--   \_máscara de gravação: o mesmo registro de saída pode ser declarado várias vezes, cada vez com uma máscara de gravação exclusiva (de modo que uma semântica diferente pode ser aplicada a componentes individuais). No entanto, a mesma semântica não pode ser usada várias vezes em uma declaração. Isso significa que os vetores devem ter quatro componentes ou menos, e não podem passar pelos limites de registro de quatro componentes (registros de saída individuais). Quando a \_ semântica psize é usada, ela deve ter uma máscara de gravação completa porque é considerada uma escalar. Quando a \_ semântica de posição é usada, ela deve ter uma máscara de gravação completa porque todos os quatro componentes precisam ser escritos.
+-   \_semantics: identifica o uso de dados pretendido e pode ser qualquer um dos valores em [**D3DDECLUSAGE**](/windows/desktop/direct3d9/d3ddeclusage) (sem o prefixo D3DDECLUSAGE). \_ Além disso, um índice inteiro pode ser anexado à semântica para distinguir parâmetros que usam semântica semelhante.
+-   \[\_[Centroid](dx9-graphics-reference-asm-ps-instructions-modifiers-ps-2-0.md) \] é um modificador de instrução opcional. Há suporte para ele nas instruções de uso de dcl que declaram os registros de entrada e as instruções de \_ lookup de textura. O centroide é anexado sem espaço.
+-   dst: registro de destino. Consulte [ps \_ 3 \_ 0 Registers](dx9-graphics-reference-asm-ps-registers-ps-3-0.md).
+-   máscara de gravação: o mesmo registro de saída pode ser declarado várias vezes, cada vez com uma máscara de gravação exclusiva (para que uma semântica diferente possa ser \_ aplicada a componentes individuais). No entanto, a mesma semântica não pode ser usada várias vezes em uma declaração. Isso significa que os vetores devem ser quatro componentes ou menos e não podem passar pelos limites de registro de quatro componentes (registros de saída individuais). Quando a \_ semântica de psize é usada, ela deve ter uma máscara de gravação completa porque é considerada escalar. Quando a \_ semântica de posição é usada, ela deve ter máscara de gravação completa porque todos os quatro componentes devem ser gravados.
 
 ## <a name="remarks"></a>Comentários
 
 
 
-| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| uso de DCL \_            |      |      |      |      |      |      |       | x    | x     |
+| uso \_ de dcl            |      |      |      |      |      |      |       | x    | x     |
 
 
 
  
 
-Todas as \_ instruções de uso de DCL devem aparecer antes da primeira instrução executável.
+Todas as instruções de uso de dcl \_ devem aparecer antes da primeira instrução executável.
 
 ## <a name="declaration-examples"></a>Exemplos de declaração
 

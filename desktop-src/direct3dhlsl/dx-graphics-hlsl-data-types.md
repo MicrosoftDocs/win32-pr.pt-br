@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 8cee02e38180b903b235c32ebc2c7ca486777b20
-ms.sourcegitcommit: 316ce582d9b972634a0521e0380e054e9cbb5bae
+ms.openlocfilehash: c4cb8f6fd15db857daa3005c99381d437a5289f6
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "104989120"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129643"
 ---
 # <a name="data-types-hlsl"></a>Tipos de dados (HLSL)
 
@@ -22,10 +22,9 @@ O HLSL dá suporte a muitos tipos diferentes de dados intrínsecos. Esta tabela 
 
 
 
-|                                                                                                                         |                                            |
+| Usar este tipo intrínseco                                                                                                                         | Para definir essa variável de sombreador                                            |
 |-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| Usar este tipo intrínseco                                                                                                 | Para definir essa variável de sombreador             |
-| [Único](dx-graphics-hlsl-scalar.md)                                                                                   | Escalar de um componente                       |
+| [Escalar](dx-graphics-hlsl-scalar.md)                                                                                   | Escalar de um componente                       |
 | [Vetor](dx-graphics-hlsl-vector.md), [matriz](dx-graphics-hlsl-matrix.md)                                            | Vetor ou matriz de vários componentes        |
 | [Amostra](dx-graphics-hlsl-sampler.md), [textura](dx-graphics-hlsl-texture.md) ou [buffer](dx-graphics-hlsl-buffer.md)   | Objeto de amostra, textura ou buffer         |
 | [Struct](dx-graphics-hlsl-struct.md), [definido pelo usuário](dx-graphics-hlsl-user-defined.md)                                | Estrutura personalizada ou typedef                |

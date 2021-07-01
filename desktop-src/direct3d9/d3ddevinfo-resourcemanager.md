@@ -1,26 +1,26 @@
 ---
 description: Estatísticas de uso de recursos.
 ms.assetid: e43de550-2025-4210-a420-e41d14620704
-title: Estrutura de D3DDEVINFO_ResourceManager (D3D9Types. h)
+title: D3DDEVINFO_RESOURCEMANAGER (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
 - APIRef
 - kbSyntax
 api_name:
-- D3DDEVINFO_ResourceManager
+- D3DDEVINFO_RESOURCEMANAGER
 api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: bf4e84fa247ca5b2603547efef73ea6b9cbe0aee
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b0a9fc461564280e4e36dde6bf73e68a78cf1609
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103663978"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129975"
 ---
-# <a name="d3ddevinfo_resourcemanager-structure"></a>\_Estrutura de RESOURCEMANAGER D3DDEVINFO
+# <a name="d3ddevinfo_resourcemanager-structure"></a>Estrutura D3DDEVINFO \_ RESOURCEMANAGER
 
 Estatísticas de uso de recursos.
 
@@ -28,9 +28,10 @@ Estatísticas de uso de recursos.
 
 
 ```C++
-typedef struct D3DDEVINFO_ResourceManager {
+typedef struct _D3DDEVINFO_RESOURCEMANAGER {
   D3DRESOURCESTATS stats[D3DRTYPECOUNT];
-} D3DDEVINFO_ResourceManager, *LPD3DDEVINFO_ResourceManager;
+} D3DDEVINFO_RESOURCEMANAGER, *LPD3DDEVINFO_RESOURCEMANAGER;
+
 ```
 
 
@@ -46,7 +47,7 @@ Tipo: **[ **D3DRESOURCESTATS**](d3dresourcestats.md)**
 
 </dd> <dd>
 
-Matriz de elementos de estatísticas de recursos. Consulte [**D3DRESOURCESTATS**](d3dresourcestats.md).
+Matriz de elementos de estatísticas de recurso. Consulte [**D3DRESOURCESTATS**](d3dresourcestats.md).
 
 </dd> </dl>
 
@@ -60,7 +61,7 @@ D3DRTYPECOUNT refere-se ao número de enumerações em [**D3DRESOURCETYPE**](./d
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
@@ -68,7 +69,7 @@ D3DRTYPECOUNT refere-se ao número de enumerações em [**D3DRESOURCETYPE**](./d
 
 <dl> <dt>
 
-[Estruturas do Direct3D](dx9-graphics-reference-d3d-structures.md)
+[Estruturas Direct3D](dx9-graphics-reference-d3d-structures.md)
 </dt> </dl>
 
  

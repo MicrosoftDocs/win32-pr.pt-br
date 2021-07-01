@@ -4,12 +4,12 @@ ms.assetid: 2febea35-3fea-4a2d-baaf-7a4f935fc81f
 title: Lendo e gravando metadados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2f599c1134efc8768d0b6ed59deaae8adf9f6f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e4ea0a8f389f31870b31a0b15480815bdd7cf1f
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647103"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118291"
 ---
 # <a name="reading-and-writing-metadata"></a>Lendo e gravando metadados
 
@@ -70,7 +70,7 @@ Um objeto [**PropertyItem**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging
 
 
 
-|            |                                                                                                                                                                                                                                                                                                        |
+|            | Descrição                                                                                                                                                                                                                                                                                                       |
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **id**     | Uma marca que identifica o item de metadados. Os valores que podem ser atribuídos à **ID** (PropertyTagImageTitle, PropertyTagEquipMake, PropertyTagExifExposureTime e like) são definidos em Gdiplusimaging. h.                                                                                           |
 | **length** | O comprimento, em bytes, da matriz de valores apontada pelo membro de dados de **valor** . Observe que, se o membro de dados de **tipo** for definido como PropertyTagTypeASCII, o membro de dados de comprimento será o **comprimento** de uma cadeia de caracteres terminada em nulo, incluindo o terminador nulo.                        |

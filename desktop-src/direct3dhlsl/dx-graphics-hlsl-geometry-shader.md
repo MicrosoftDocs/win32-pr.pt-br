@@ -1,6 +1,6 @@
 ---
-title: Objeto Geometry-Shader
-description: Um objeto Geometry-Shader processa primitivos inteiros. Use a sintaxe a seguir para declarar um objeto Geometry-Shader.
+title: Geometry-Shader objeto
+description: Um objeto de sombreador de geometria processa primitivos inteiros. Use a sintaxe a seguir para declarar um objeto de sombreador de geometria.
 ms.assetid: d5c1c22b-6fa6-40a8-900f-6d74f74468c1
 keywords:
 - maxvertexcount (DirectX HLSL)
@@ -11,22 +11,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: dadb0e8bb3ddda16305ac701b34523668bd9c1a5
-ms.sourcegitcommit: 477b1efe7d9c2f91d5f2ac588a20edf348b1c734
+ms.openlocfilehash: e06bbc184a4b5f82d5edaaf7fdbfbd55f1906f12
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "103638986"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120611"
 ---
-# <a name="geometry-shader-object"></a>Objeto Geometry-Shader
+# <a name="geometry-shader-object"></a>Geometry-Shader objeto
 
-Um objeto Geometry-Shader processa primitivos inteiros. Use a sintaxe a seguir para declarar um objeto Geometry-Shader.
+Um objeto de sombreador de geometria processa primitivos inteiros. Use a sintaxe a seguir para declarar um objeto de sombreador de geometria.
 
-
-
-|                                                                                                                                        |
-|----------------------------------------------------------------------------------------------------------------------------------------|
-| \[maxvertexcount (*NumVerts*) \] void *shadername* ( *Primitivatype nome do tipo de dados \[ \] NumElements*, inout *StreamOutputObject* ); |
+\[maxvertexcount(*NumVerts*) \] void *ShaderName* ( *PrimitiveType DataType Name \[ NumElements, \]* inout *StreamOutputObject* );
 
 
 
@@ -36,55 +32,55 @@ Um objeto Geometry-Shader processa primitivos inteiros. Use a sintaxe a seguir p
 
 <dl> <dt>
 
-<span id="_maxvertexcount_NumVerts__"></span><span id="_maxvertexcount_numverts__"></span><span id="_MAXVERTEXCOUNT_NUMVERTS__"></span>\[maxvertexcount (*NumVerts*)\]
+<span id="_maxvertexcount_NumVerts__"></span><span id="_maxvertexcount_numverts__"></span><span id="_MAXVERTEXCOUNT_NUMVERTS__"></span>\[maxvertexcount(*NumVerts*)\]
 </dt> <dd>
 
-\[em \] declaração para o número máximo de vértices a serem criados.
+\[em \] Declaração para o número máximo de vértices a criar.
 
--   \[maxvertexcount () \] -palavra-chave necessária; colchetes e parênteses são caracteres necessários para a sintaxe correta.
--   *NumVerts* -um número inteiro que representa o número de vértices.
+-   \[maxvertexcount() \] – palavra-chave necessária; colchetes e parênteses são caracteres necessários para a sintaxe correta.
+-   *NumVerts* – um número inteiro que representa o número de vértices.
 
 </dd> <dt>
 
-<span id="ShaderName"></span><span id="shadername"></span><span id="SHADERNAME"></span>*Shadername*
+<span id="ShaderName"></span><span id="shadername"></span><span id="SHADERNAME"></span>*ShaderName*
 </dt> <dd>
 
-\[em \] uma cadeia de caracteres ASCII que contém um nome exclusivo para a função Geometry-Shader.
+\[em \] uma cadeia de caracteres ASCII que contém um nome exclusivo para a função geometry-shader.
 
 </dd> <dt>
 
-<span id="PrimitiveType_DataType_Name___NumElements__"></span><span id="primitivetype_datatype_name___numelements__"></span><span id="PRIMITIVETYPE_DATATYPE_NAME___NUMELEMENTS__"></span>*Nome do tipo de dados primitivotype \[ NumElements \]*
+<span id="PrimitiveType_DataType_Name___NumElements__"></span><span id="primitivetype_datatype_name___numelements__"></span><span id="PRIMITIVETYPE_DATATYPE_NAME___NUMELEMENTS__"></span>*NumElements de nome primitiveType DataType \[\]*
 </dt> <dd>
 
-Tipo *primitivo* -Primitive, que determina a ordem dos dados primitivos.
+*PrimitiveType* – tipo primitivo, que determina a ordem dos dados primitivos.
 
 
 
-| Tipo primitivo | Description                                                   |
+| Tipo primitivo | Descrição                                                   |
 |----------------|---------------------------------------------------------------|
-| *empresas*        | Lista de pontos                                                    |
-| *descritos*         | Lista de linhas ou faixa de linha                                       |
-| *ângulo*     | Lista de triângulos ou a faixa de triângulo                               |
-| *lineadj*      | Lista de linhas com adjacência ou faixa de linha com adjacência         |
-| *triangleadj*  | Lista de triângulos com uma faixa de adjacência ou triângulo com adjacência |
+| *Ponto*        | Lista de pontos                                                    |
+| *Linha*         | Lista de linhas ou faixa de linhas                                       |
+| *Triângulo*     | Lista de triângulos ou faixa de triângulo                               |
+| *lineadj*      | Lista de linhas com adjacency ou faixa de linha com adjacency         |
+| *triangleadj*  | Lista de triângulos com adjacency ou faixa de triângulo com adjacency |
 
 
 
  
 
-*Tipo de dados*  -  \[ em \] um tipo de dados de entrada, pode ser qualquer [tipo de dados HLSL](dx-graphics-hlsl-data-types.md).
+*DataType*  -  \[ em \] Um tipo de dados de entrada; pode ser qualquer tipo de dados [HLSL](dx-graphics-hlsl-data-types.md).
 
-*Nome-nome* do argumento; Esta é uma cadeia de caracteres ASCII.
+*Nome* – Nome do argumento; esta é uma cadeia de caracteres ASCII.
 
-*NumElements* -tamanho da matriz da entrada, que depende do *primitivatype* , conforme mostrado na tabela a seguir.
+*NumElements* – tamanho da matriz da entrada, que depende *do PrimitiveType,* conforme mostrado na tabela a seguir.
 
 | Tipo primitivo | NumElements                                                                                                  |
 |----------------|--------------------------------------------------------------------------------------------------------------|
-| *empresas*        | \[1\]<br/> Você opera em apenas um ponto por vez.<br/>                                         |
-| *descritos*         | \[2\]<br/> Uma linha requer dois vértices.<br/>                                                    |
-| *ângulo*     | \[3\]<br/> Um triângulo requer três vértices.<br/>                                              |
-| *lineadj*      | \[4\]<br/> Um lineadj tem duas extremidades; Portanto, ele requer quatro vértices.<br/>                    |
-| *triangleadj*  | \[6\]<br/> Uma triangleadj bordas mais três triângulos; Portanto, ele requer seis vértices.<br/> |
+| *Ponto*        | \[1\]<br/> Você opera em apenas um ponto por vez.<br/>                                         |
+| *Linha*         | \[2\]<br/> Uma linha requer dois vértices.<br/>                                                    |
+| *Triângulo*     | \[3\]<br/> Um triângulo requer três vértices.<br/>                                              |
+| *lineadj*      | \[4\]<br/> Um lineadj tem duas extremidades; portanto, ele requer quatro vértices.<br/>                    |
+| *triangleadj*  | \[6\]<br/> Um triânguloadj faz a bordas de mais três triângulos; portanto, ele requer seis vértices.<br/> |
 
 
 
@@ -95,7 +91,7 @@ Tipo *primitivo* -Primitive, que determina a ordem dos dados primitivos.
 <span id="StreamOutputObject"></span><span id="streamoutputobject"></span><span id="STREAMOUTPUTOBJECT"></span>*StreamOutputObject*
 </dt> <dd>
 
-A declaração do [objeto Stream-output](dx-graphics-hlsl-so-type.md).
+A declaração do [objeto stream-output](dx-graphics-hlsl-so-type.md).
 
 </dd> </dl>
 
@@ -107,15 +103,15 @@ Nenhum
 
 O diagrama a seguir mostra os vários tipos primitivos para um objeto de sombreador de geometria.
 
-![Ilustração dos vários tipos primitivos para um objeto de sombreador Geometry](images/d3d11-gsinputs1.png)
+![ilustração dos vários tipos primitivos para um objeto de sombreador de geometria](images/d3d11-gsinputs1.png)
 
 O diagrama a seguir mostra invocações de sombreador de geometria.
 
-![ilustração de invocações do sombreador de geometria](images/d3d11-gsinputs2.png)
+![ilustração de invocações de sombreador de geometria](images/d3d11-gsinputs2.png)
 
 ## <a name="examples"></a>Exemplos
 
-Este exemplo é do exercício 1 do [Workshop 4,0 do sombreador do Direct3D 10](https://msdn.microsoft.com/library/Ee416554(v=VS.85).aspx).
+Este exemplo é do exercício 1 do Workshop do Modelo de Sombreador [4.0 do Direct3D 10.](https://msdn.microsoft.com/library/Ee416554(v=VS.85).aspx)
 
 
 ```
@@ -139,15 +135,15 @@ void GSScene( triangleadj GSSceneIn input[6], inout TriangleStream<PSSceneIn> Ou
 
 
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Esse objeto tem suporte nos seguintes modelos de sombreador.
+Esse objeto tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                                        | Com suporte |
 |---------------------------------------------------------------------|-----------|
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md) e modelos de sombreador mais altos | sim       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md) e modelos de sombreador superior | yes       |
 
 
 

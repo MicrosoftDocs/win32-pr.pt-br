@@ -1,15 +1,15 @@
 ---
 title: Documento como um instantâneo das propriedades
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Examine o documento PrintCapabilities como um instantâneo das propriedades. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
 ms.assetid: 476c98e6-face-42cf-874d-cfa7a54b0666
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d73fc190ed8c259e64fdd60cc291c6ae5b58f80
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: b399c82211c268a72ad2b67082c144c64e46a879
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104370832"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118641"
 ---
 # <a name="printcapabilities-document-as-a-snapshot-of-properties"></a>Documento de PrintCapabilities como um instantâneo das propriedades
 

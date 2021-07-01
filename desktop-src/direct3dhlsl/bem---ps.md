@@ -1,6 +1,6 @@
 ---
-title: Bem-PS
-description: Aplicar um ambiente de relevo falso – transformação de mapa.
+title: bem - ps
+description: Aplicar uma transformação de mapa de ambiente de aumento falso.
 ms.assetid: b41009d4-a2bb-4397-ad23-c95ef2620a66
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,31 +9,31 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7c591555e2cbd2c6eaebf6e392bb94d6ec50e748
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 1adae07e3e2ebbca085981ca03a3b6449e2ffd9d
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104365253"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129925"
 ---
-# <a name="bem---ps"></a>Bem-PS
+# <a name="bem---ps"></a>bem - ps
 
-Aplicar um ambiente de relevo falso – transformação de mapa.
+Aplicar uma transformação de mapa de ambiente de aumento falso.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 
-| Bem DST. RG, src0, src1 |
+| bem dst.rg, src0, src1 |
 |------------------------|
 
 
 
- 
+ 
 
 onde
 
--   DST. RG DST é o registro de destino. A máscara de gravação do componente vermelho e verde deve ser usada.
+-   dst.rg dst é o registro de destino. A máscara de gravação do componente vermelho e verde deve ser usada.
 -   src0 é um registro de origem.
 -   src1 é um registro de origem.
 
@@ -41,13 +41,13 @@ onde
 
 
 
-| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | bem                   |      |      |      | x    |      |      |       |      |       |
 
 
 
- 
+ 
 
 Essa instrução executa o cálculo a seguir.
 
@@ -65,24 +65,24 @@ dest.g = src0.g + D3DTSS_BUMPENVMAT01(stage n) * src1.r
 
 Regras para usar bem:
 
-1.  Bem deve aparecer na primeira fase de um sombreador (ou seja, antes de um marcador de fase).
-2.  Bem consome dois slots de instrução aritméticos.
-3.  Somente um uso desta instrução é permitido por sombreador.
-4.  Writemask de destino deve ser. RG/.XY.
-5.  Esta instrução não pode ser emitida em conjunto.
-6.  Além da restrição que a máscara de gravação de destino é. RG, os modificadores nos modificadores de origem src0, src1 e instrução são irrestrito.
+1.  bem deve aparecer na primeira fase de um sombreador (ou seja, antes de um marcador de fase).
+2.  bem consome dois slots de instrução aritmética.
+3.  Somente um uso dessa instrução é permitido por sombreador.
+4.  A máscara de gravação de destino deve ser .rg /.xy.
+5.  Essa instrução não pode ser co-emitida.
+6.  Além da restrição de que a máscara de gravação de destino seja .rg, os modificadores em src0 de origem, src1 e modificadores de instrução não são restritos.
 
 ## <a name="instruction-information"></a>Informações de instrução
 
 
 
-|                          |            |
+| Requisito                         | Valor           |
 |--------------------------|------------|
 | Sistema operacional mínimo | Windows 98 |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -91,9 +91,9 @@ Regras para usar bem:
 [Instruções do sombreador de pixel](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

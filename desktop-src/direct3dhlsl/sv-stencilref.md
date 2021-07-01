@@ -1,6 +1,6 @@
 ---
 title: SV_StencilRef
-description: '\_STENCILREF VA representa o valor de referência do estêncil do sombreador de pixel atual.'
+description: SV \_ StencilRef representa o valor de referência de estêncil do sombreador de pixel atual.
 ms.assetid: 0E27BF04-9DA0-4D6D-BD50-07553F80590E
 keywords:
 - SV_StencilRef HLSL
@@ -12,24 +12,23 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 565a554508277ab9ce49b377b5a7e121db45b20c
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: e2900b2a821a03db4bc749a01c85b909901c39b2
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996493"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113118931"
 ---
-# <a name="sv_stencilref"></a>\_STENCILREF VA
+# <a name="sv_stencilref"></a>SV \_ StencilRef
 
-\_STENCILREF VA representa o valor de referência do estêncil do sombreador de pixel atual.
+SV \_ StencilRef representa o valor de referência de estêncil do sombreador de pixel atual.
 
-## <a name="type"></a>Digite
+## <a name="type"></a>Tipo
 
 
 
-|      |
+| Tipo     |
 |------|
-| Digite |
 | uint |
 
 
@@ -38,10 +37,10 @@ ms.locfileid: "107996493"
 
 ## <a name="remarks"></a>Comentários
 
-A especificação do valor de referência do sombreador no sombreador de pixel está disponível no D3D 11.3 e no D3D12. Consulte:
+Especificar o valor de referência do sombreador no sombreador de pixel está disponível em D3D11.3 e D3D12. Consulte:
 
--   [Sombreador de D3D 11.3 especificado valor de referência de estêncil](/windows/desktop/direct3d11/shader-specified-stencil-reference-value)
--   [O D3D12 Shader especificou o valor de referência de estêncil](/windows/desktop/direct3d12/shader-specified-stencil-reference-value)
+-   [Valor de referência de estêncil especificado pelo sombreador D3D11.3](/windows/desktop/direct3d11/shader-specified-stencil-reference-value)
+-   [Valor de referência de estêncil especificado pelo sombreador D3D12](/windows/desktop/direct3d12/shader-specified-stencil-reference-value)
 
 ## <a name="see-also"></a>Confira também
 
@@ -50,7 +49,7 @@ A especificação do valor de referência do sombreador no sombreador de pixel e
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> <dt>
 
-[Valores de sistema do modelo do sombreador 5,1](shader-model-5-1-system-values.md)
+[Valores do sistema do Modelo de Sombreador 5.1](shader-model-5-1-system-values.md)
 </dt> </dl>
 
  

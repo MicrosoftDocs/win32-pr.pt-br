@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e27ebe7d908c473890ac5b851eac3e0bc840c859
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 66c1f763c4771a8406acd2f3401445d1a29cde79
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822421"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129713"
 ---
 # <a name="common-shader-core"></a>Núcleo de Common-Shader
 
@@ -31,10 +31,10 @@ No sombreador modelo 4, todos os estágios de sombreador implementam a mesma fun
 -   **Buffers de constantes**: os buffers de constantes são otimizados para variáveis de constante de sombreador. Até 16 buffers de constante podem ser associados a um estágio de sombreador simultaneamente. Elas foram projetadas para atualização mais frequente da CPU; Portanto, têm restrições de tamanho, de layout e de acesso adicionais.
 
 
+Diferenças entre o Direct3D 9 e o Direct3D 10:
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Diferenças entre o Direct3D 9 e o Direct3D 10:<br/> No Direct3D 9, cada unidade do sombreador tinha um único arquivo de registro constante pequeno para armazenar todas as variáveis de sombreador constantes. Acomodar todos os sombreadores com esse espaço de constante limitado exigiu reciclagem frequente de constantes pela CPU.<br/> No Direct3D 10, as constantes são armazenadas em buffers imutáveis na memória e são gerenciadas como qualquer outro recurso. Não há nenhum limite para o número de buffers constantes que um aplicativo pode criar. Ao organizar constantes em buffers por frequência de atualização e uso, a quantidade de largura de banda necessária para atualizar constantes para acomodar todos os sombreadores pode ser significativamente reduzida.<br/> |
+- No Direct3D 9, cada unidade do sombreador tinha um único arquivo de registro constante pequeno para armazenar todas as variáveis de sombreador constantes. Acomodar todos os sombreadores com esse espaço de constante limitado exigiu reciclagem frequente de constantes pela CPU.
+- No Direct3D 10, as constantes são armazenadas em buffers imutáveis na memória e são gerenciadas como qualquer outro recurso. Não há nenhum limite para o número de buffers constantes que um aplicativo pode criar. Ao organizar constantes em buffers por frequência de atualização e uso, a quantidade de largura de banda necessária para atualizar constantes para acomodar todos os sombreadores pode ser significativamente reduzida.
 
 
 
@@ -67,7 +67,7 @@ O sombreador comum do é compatível com os seguintes operadores bits:
 | ~         | Não lógico       |
 | <<  | Deslocamento à esquerda        |
 | >>  | Deslocamento à direita       |
-| &         | And lógico       |
+| &         | AND lógico       |
 | \|        | Ou lógico        |
 | ^         | XOR lógico       |
 | <<= | Deslocamento à esquerda igual  |

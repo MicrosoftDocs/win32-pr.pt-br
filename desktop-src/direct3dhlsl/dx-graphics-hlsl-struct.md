@@ -13,22 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 416c14c18fa1d0b76f4d13b609b895b0c64c2594
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 89435e9c8757d2e732bc6237b02a508d3af4b4db
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104988539"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119091"
 ---
 # <a name="struct-type"></a>Tipo de struct
 
 Use a sintaxe a seguir para declarar uma estrutura usando HLSL.
 
-
-
-|                                                                                           |
-|-------------------------------------------------------------------------------------------|
-| *nome* do struct { \[ *InterpolationModifier* \] *Type* \[ *R* x *C* \] *MemberName*;     ... }; |
+*nome* do struct { \[ *InterpolationModifier* \] *Type* \[ *R* x *C* \] *MemberName*;     ... };
 
 
 
@@ -78,7 +74,7 @@ As saídas de sombreador de vértice que são usadas para entradas de sombreador
 
 
 
-| Modificador de interpolação | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Modificador de interpolação | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **linear**             | Interpolação entre entradas de sombreador; **linear** é o valor padrão se nenhum modificador de interpolação for especificado.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | **centróide**           | Interpolação entre exemplos que estão em algum lugar dentro da área coberta do pixel (isso pode exigir extrapolação de pontos de extremidade de um centro de pixel). A amostragem de centróide pode melhorar a suavização se um pixel for parcialmente coberto (mesmo que o pixel Center não esteja coberto). O modificador de **centróide** deve ser combinado com o modificador **linear** ou **noperspective** .                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |

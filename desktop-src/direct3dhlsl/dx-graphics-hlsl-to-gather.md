@@ -9,22 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f333c204b77d6e0c64119e16f31e170fec1d0f6c
-ms.sourcegitcommit: 07ba02719c9779e082b108ae74f9699fb0236c34
+ms.openlocfilehash: 4659ba19e9fa950a659969f2491533858f4658fb
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108644098"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113120541"
 ---
 # <a name="gather-directx-hlsl-texture-object"></a>Coletar (objeto de textura DirectX HLSL)
 
 Obtém as quatro amostras (somente componente vermelho) que seriam usadas para interpolação bilinear ao fazer amostragem de uma textura.
 
-
-
-|                                                                                                    |
-|----------------------------------------------------------------------------------------------------|
-| &lt;Modelo &gt; do tipo 4 objeto. coletar ( \_ estado de amostra S, float2 \| 3 \| 4 local \[ , deslocamento de Int2 \] ); |
+&lt;Modelo &gt; do tipo 4 objeto. coletar ( \_ estado de amostra S, float2 \| 3 \| 4 local \[ , deslocamento de Int2 \] );
 
 
 
@@ -114,7 +110,7 @@ Obtém as quatro amostras (somente componente vermelho) que seriam usadas para i
 
  
 
-## <a name="return-value"></a>Valor retornado
+## <a name="return-value"></a>Valor Retornado
 
 Um vetor de quatro componentes, com quatro componentes de dados vermelhos, cujo tipo é o mesmo que o tipo de modelo da textura.
 

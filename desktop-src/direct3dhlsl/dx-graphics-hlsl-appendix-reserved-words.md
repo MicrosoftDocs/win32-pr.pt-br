@@ -1,6 +1,6 @@
 ---
 title: Palavras reservadas
-description: As palavras a seguir são reservadas para uso pelo idioma HLSL. Não use-os para nomear variáveis ou funções em seu código HLSL.
+description: As palavras a seguir são reservadas para uso pela linguagem HLSL. Não os use para nomear variáveis ou funções em seu código HLSL.
 ms.assetid: acffd9e0-fa59-4690-954c-309084699425
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,45 +9,39 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: dcc8afe8b62f684f0630ba3ef2b8a1375b2e84d3
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: dccc9aac1f06fff72f7dd5bd07ced73ac942ffe7
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104006920"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129653"
 ---
 # <a name="reserved-words"></a>Palavras reservadas
 
-As palavras a seguir são reservadas para uso pelo idioma HLSL. Não use-os para nomear variáveis ou funções em seu código HLSL.
+As palavras a seguir são reservadas para uso pela linguagem HLSL. Não os use para nomear variáveis ou funções em seu código HLSL.
 
-
-
-|                                     |
-|-------------------------------------|
-| auto                                |
-| caso, catch                         |
-| conversão Char, Class, const \_            |
-| padrão, excluir, \_ conversão dinâmica      |
-| enum                                |
-| explicit                            |
-| friend                              |
-| goto                                |
-| long                                |
-| mutable                             |
-| novo                                 |
-| operador                            |
-| privado, protegido, público          |
-| reinterpretar \_ conversão                   |
-| conversão estática curta, assinada, sizeof \_ |
-| modelo, isso, throw               |
-| tentar, TypeName                       |
-| União, não assinado                     |
-| using                               |
-| virtual                             |
-
-
-
- 
+:::column:::
+    auto
+    case, catch
+    char, class, const\_cast
+    default, delete, dynamic\_cast
+    enum
+    explicit
+    friend
+    goto
+    long
+    mutable
+    new
+    operator
+    private, protected, public
+    reinterpret\_cast
+    short, signed, sizeof, static\_cast
+    template, this, throw
+    try, typename
+    union, unsigned
+    using
+    virtual
+:::column-end:::
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -56,9 +50,9 @@ As palavras a seguir são reservadas para uso pelo idioma HLSL. Não use-os para
 [Apêndice (DirectX HLSL)](dx-graphics-hlsl-appendix.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

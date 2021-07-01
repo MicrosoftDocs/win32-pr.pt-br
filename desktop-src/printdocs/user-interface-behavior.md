@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Examine uma discussão sobre o comportamento da interface do usuário em relação aos recursos e opções de documentos e impressão.
 ms.assetid: dc19a568-3673-4061-b19a-50d5df0485d0
 title: Comportamento da interface do usuário
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0d475472330c8e3ba2ceb06d0cbde9f3a7fb0be
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: e81d007c653ed3f019892e944d9fa4203dc6de11
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105763188"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119431"
 ---
 # <a name="user-interface-behavior"></a>Comportamento da interface do usuário
 

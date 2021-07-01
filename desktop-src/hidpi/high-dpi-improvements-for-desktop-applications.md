@@ -4,12 +4,12 @@ description: Mixed-Mode o dimensionamento de DPI e APIs com reconhecimento de DP
 ms.assetid: 44AC0B29-3283-4801-90F5-3E78CCD87B9F
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2244ea79d489ae1e20260f72336c15bc64b97de0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d6f5b16e4c438cfe1f0d04e61524899e213b25ea
+ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090094"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113119721"
 ---
 # <a name="mixed-mode-dpi-scaling-and-dpi-aware-apis"></a>Mixed-Mode o dimensionamento de DPI e APIs com reconhecimento de DPI
 
@@ -59,9 +59,8 @@ Observe que as áreas que não são do cliente de uma janela filho, como barras 
 -   Várias APIs usadas com frequência, como [**GetSystemMetrics**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) , não têm nenhum contexto de um HWND e, portanto, não têm como deduzindo o reconhecimento de DPI apropriado para seus valores de retorno. Chamar essas APIs de um thread que está sendo executado em um modo de reconhecimento de DPI ou contexto diferente pode retornar valores que não são dimensionados para o contexto do thread de chamada. * * * * [GetSystemMetricForDpi * *](/windows/desktop/api/Winuser/nf-winuser-getsystemmetricsfordpi)* *, * * * * [SystemParametersInfoForDpi * *](/windows/desktop/api/Winuser/nf-winuser-systemparametersinfofordpi)* *, e * * * * [AdjustWindowRectExForDpi * * * *](/windows/desktop/api/Winuser/nf-winuser-adjustwindowrectexfordpi) executará a mesma funcionalidade que suas contrapartes sem reconhecimento de DPI, mas pegará um dpi como um argumento e inferirá o reconhecimento de DPI do contexto do thread atual.
 -   **GetSystemMetricForDpi** e **SystemParametersInfoForDpi** retornarão valores de métrica do sistema com escala de dpi e valores de parâmetro do sistema de acordo com esta equação:
 
-    |                                                                 |
-    |-----------------------------------------------------------------|
-    | GetSystemMetrics (...) @ dpi = = GetSystemMetricsForDpi (..., DPI) |
+    
+    GetSystemMetrics (...) @ dpi = = GetSystemMetricsForDpi (..., DPI)
 
     
 

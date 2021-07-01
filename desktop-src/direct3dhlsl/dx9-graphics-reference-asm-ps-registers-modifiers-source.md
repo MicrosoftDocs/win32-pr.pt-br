@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 12cfee533a71408a445d97a63bbd8b76b281236b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a9dd4476dd7a1a885edb2e62a29b5127f5ff0a14
+ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292843"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113129673"
 ---
 # <a name="pixel-shader-source-register-modifiers"></a>Modificadores de registro de origem do sombreador de pixel
 
@@ -26,20 +26,19 @@ Esta tabela identifica as versões que oferecem suporte a cada modificador:
 
 
 
-| Modificadores de registro de origem                                                                                    | Syntax         | Versão |      |      |      |     |     |
-|--------------------------------------------------------------------------------------------------------------|----------------|---------|------|------|------|-----|-----|
-|                                                                                                              |                | 1\_1    | 1\_2 | 1 \_ 3 | 1\_4 |     |     |
-| [Bias](dx9-graphics-reference-asm-ps-registers-modifiers-bias.md)                                           | registrar \_ diferença | X       | X    | X    | X    |     |     |
-| [minúsculo](dx9-graphics-reference-asm-ps-registers-modifiers-invert.md)                                       | 1-registrar   | X       | X    | X    | X    |     |     |
-| [negate](dx9-graphics-reference-asm-ps-registers-modifiers-negate.md)                                       | \- Registr    | X       | X    | X    | X    |     |     |
-| [escala por 2](dx9-graphics-reference-asm-ps-registers-modifiers-scale-x2.md)                                 | registrar \_ X2   |         |      |      | X    |     |     |
-| [dimensionamento assinado](dx9-graphics-reference-asm-ps-registers-modifiers-signed-scale.md)                         | registrar \_ BX2  | X       | X    | X    | X    |     |     |
-| [modificadores texld e texcrd](dx9-graphics-reference-asm-ps-registers-modifiers-ps-1-4.md)                   | registrar \_ d\*  | X       | X    | X    | X    |     |     |
-| [swizzling de registro de origem](dx9-graphics-reference-asm-ps-registers-modifiers-source-register-swizzling.md) | registrar. xyzw  | X       | X    | X    | X    |     |     |
+| Modificadores de registro de origem                                                                                    | Sintaxe         | Versão 1 \_ 1 | Versão 1 \_ 2     | Versão 1 \_ 3     | Versão 1 \_ 4     |
+|--------------------------------------------------------------------------------------------------------------|----------------|---------|------|------|------|
+| [Bias](dx9-graphics-reference-asm-ps-registers-modifiers-bias.md)                                           | registrar \_ diferença | X       | X    | X    | X    |
+| [minúsculo](dx9-graphics-reference-asm-ps-registers-modifiers-invert.md)                                       | 1-registrar   | X       | X    | X    | X    |
+| [negate](dx9-graphics-reference-asm-ps-registers-modifiers-negate.md)                                       | \- Registr    | X       | X    | X    | X    |
+| [escala por 2](dx9-graphics-reference-asm-ps-registers-modifiers-scale-x2.md)                                 | registrar \_ X2   |         |      |      | X    |
+| [dimensionamento assinado](dx9-graphics-reference-asm-ps-registers-modifiers-signed-scale.md)                         | registrar \_ BX2  | X       | X    | X    | X    |
+| [modificadores texld e texcrd](dx9-graphics-reference-asm-ps-registers-modifiers-ps-1-4.md)                   | registrar \_ d\*  | X       | X    | X    | X    |
+| [swizzling de registro de origem](dx9-graphics-reference-asm-ps-registers-modifiers-source-register-swizzling.md) | registrar. xyzw  | X       | X    | X    | X    |
 
 
 
- 
+ 
 
 Modificadores de registro de origem só podem ser usados em instruções aritméticas. Eles não podem ser usados em instruções de endereço de textura. A exceção a isso é o modificador de [escala por 2](dx9-graphics-reference-asm-ps-registers-modifiers-scale-x2.md) . Para a versão 1 \_ 1, a escala assinada pode ser usada no argumento de origem de qualquer \* instrução texm. Para a versão 1 \_ 2 ou 1 \_ 3, a escala assinada pode ser usada no argumento de origem de qualquer instrução de endereço de textura.
 
@@ -60,13 +59,13 @@ Negar o conteúdo do registro de origem.
 
 
 
-| Modificador de componente | Description     |
+| Modificador de componente | Descrição     |
 |--------------------|-----------------|
 | \- d               | Negação de origem |
 
 
 
- 
+ 
 
 O modificador de negação não pode ser usado no segundo registro de origem dessas instruções: [M3X2-PS](m3x2---ps.md), [m3x3-PS](m3x3---ps.md), [M3x4-PS](m3x4---ps.md), [m4x3-PS](m4x3---ps.md)e [m4x4-PS](m4x4---ps.md).
 
@@ -78,7 +77,7 @@ O modificador de negação não pode ser usado no segundo registro de origem des
 
 
 
- 
+ 
 
 ### <a name="absolute-value"></a>Valor absoluto
 
@@ -92,7 +91,7 @@ Pegue o valor absoluto do registro.
 
 
 
- 
+ 
 
 Se qualquer sombreador da versão 3 ler um ou mais registros de flutuação constante (c \# ), um dos seguintes deve ser verdadeiro.
 
@@ -106,9 +105,9 @@ Se qualquer sombreador da versão 3 ler um ou mais registros de flutuação cons
 [Modificadores de registro do sombreador de pixel](dx9-graphics-reference-asm-ps-registers-modifiers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
