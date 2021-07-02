@@ -4,12 +4,12 @@ ms.assetid: dcb56d5d-ed0d-49bb-95bf-940a49c033f1
 title: Funções WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf5f9db8fcde5589a86556111bec6df3b2b18c76
-ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
+ms.openlocfilehash: 41e45289230c1cc22a7f8799dfbbe1dafddccf38
+ms.sourcegitcommit: 8e3d8594fa073a9c43eb5dcc7babea03ea30f10f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112587750"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113174970"
 ---
 # <a name="winhttp-functions"></a>Funções WinHTTP
 
@@ -21,6 +21,13 @@ O WinHTTP fornece as seguintes funções:
 </dt> <dd>
 
 Adiciona um ou mais cabeçalhos de solicitação HTTP ao alça de solicitação HTTP.
+
+</dd> <dt>
+
+[**WinHttpAddRequestHeadersEx**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpaddrequestheadersex)
+</dt> <dd>
+
+Adiciona um ou mais cabeçalhos de solicitação HTTP a um handle de solicitação HTTP, permitindo que você use cadeias de caracteres de nome/valor separadas.
 
 </dd> <dt>
 
@@ -164,6 +171,13 @@ Recupera informações de cabeçalho associadas a uma solicitação HTTP.
 
 </dd> <dt>
 
+[**WinHttpQueryHeadersEx**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryheadersex)
+</dt> <dd>
+
+Recupera informações de cabeçalho associadas a uma solicitação HTTP; oferece uma maneira de recuperar cadeias de caracteres de valor e nome de header analisados.
+
+</dd> <dt>
+
 [**WinHttpQueryOption**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpqueryoption)
 </dt> <dd>
 
@@ -172,6 +186,13 @@ Consulta uma opção de Internet no alça especificado.
 </dd> <dt>
 
 [**WinHttpReadData**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreaddata)
+</dt> <dd>
+
+Lê dados de um handle aberto pela [**função WinHttpOpenRequest.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest)
+
+</dd> <dt>
+
+[**WinHttpReadDataEx**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpreaddataex)
 </dt> <dd>
 
 Lê dados de um handle aberto pela [**função WinHttpOpenRequest.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopenrequest)
@@ -297,6 +318,4 @@ Envia um quadro próximo a uma conexão WebSocket.
 
 </dd> </dl>
 
- 
 
- 
