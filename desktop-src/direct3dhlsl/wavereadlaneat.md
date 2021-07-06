@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e40940f2df6685a3096da6886ad3bcb6d9ca99af
-ms.sourcegitcommit: 4423a9d48f1c90d2ec2eca68e9cae30df1787f25
+ms.openlocfilehash: 573730053a93a110381637ef8e62dc08a4aa1535
+ms.sourcegitcommit: 1897c2a39b4ac4ca4b1e4aec394cef2ce2619c03
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "104365800"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "113316478"
 ---
 # <a name="wavereadlaneat-function"></a>Função WaveReadLaneAt
 
@@ -28,8 +28,8 @@ Retorna o valor da expressão para o índice de raia fornecido dentro da onda es
 
 ``` syntax
 <type> WaveReadLaneAt(
-   <type> expr,
-   uint laneIndex
+   <type> expr,
+   uint laneIndex
 );
 ```
 
@@ -51,40 +51,17 @@ O índice da pista para a qual o resultado de *expr* será retornado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor resultante é o resultado de *expr*. Será uniforme se *laneIndex* for uniforme.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função é efetivamente uma difusão do valor na pista laneIndex'th.
+Essa função é efetivamente uma difusão do valor na pista do *laneIndex*' th.
 
-Essa função tem suporte do modelo de sombreador 6,0, nos seguintes tipos de sombreadores:
+Essa função tem suporte do modelo de sombreador 6,0 em todos os estágios de sombreador.
 
+## <a name="see-also"></a>Consulte também
 
-
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
-|--------|------|--------|----------|-------|---------|
-|        |      |        |          | x     | x       |
-
-
-
- 
-
-## <a name="see-also"></a>Confira também
-
-<dl> <dt>
-
-[Visão geral do modelo do sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
-</dt> <dt>
-
-[Modelo do sombreador 6](shader-model-6-0.md)
-</dt> </dl>
-
- 
-
- 
-
-
-
-
+* [Visão geral do modelo do sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+* [Modelo do sombreador 6](shader-model-6-0.md)
