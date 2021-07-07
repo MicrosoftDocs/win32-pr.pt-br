@@ -4,19 +4,19 @@ ms.assetid: 271EC68B-5E58-4C1C-B631-DED6A694E98F
 title: Melhores práticas para o design de páginas da Web de autenticação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6360e313b49a69c16aebf532911bcdf562f9a4a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dfdd6ab5dc067c23cfb29d21d2ff4780cee0ef1c
+ms.sourcegitcommit: 6377cd944d1f09f2dfe5727170ca8b330c8235bf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296522"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "113353669"
 ---
 # <a name="best-practices-for-designing-authentication-web-pages"></a>Melhores práticas para o design de páginas da Web de autenticação
 
 Este tópico descreve as práticas recomendadas para a criação de páginas da Web que usam o agente de autenticação da Web para fazer logon.
 
 -   [Uso de metamarcações](#use-of-metatags)
--   [Uso do estilo de CSS do Windows 8](#use-of-windows-8-css-styling)
+-   [uso de Windows 8 estilo CSS](#use-of-windows-8-css-styling)
 -   [Uso de cores e temas](#use-of-color-and-themes)
 -   [Alinhamento](#alignment)
 -   [Projetando para ajuste](#designing-for-snap)
@@ -37,13 +37,13 @@ Usando metamarcações, o provedor "contoso social" pode especificar o título, 
 
 
 
-Isso permite que o Windows integre a presença do provedor de uma maneira proeminente no cabeçalho da interface do usuário, conforme realçado pela caixa vermelha na captura de tela a seguir. ![página de logon mostrando o cabeçalho da Contoso na interface do usuário](images/wab-figure17.png)
+isso permite que Windows integre a presença do provedor de uma maneira proeminente no cabeçalho da interface do usuário, conforme realçado pela caixa vermelha na captura de tela a seguir. ![página de logon mostrando o cabeçalho da Contoso na interface do usuário](images/wab-figure17.png)
 
-## <a name="use-of-windows-8-css-styling"></a>Uso do estilo de CSS do Windows 8
+## <a name="use-of-windows-8-css-styling"></a>uso de Windows 8 estilo CSS
 
-A folha de estilos UI-Light. css fornecida é a folha de estilos do Windows 8 usada pelos aplicativos da Windows Store. Ele define o estilo do aplicativo da Windows Store para controles de tipografia e padrão, como botões, caixas de texto, hiperlinks e caixas de seleção para garantir que eles sejam amigáveis para toque. Ao criar e adaptar páginas de autorização da Web para o Windows 8, incentivamos você a usar essa folha de estilo como está e atualizá-la conforme necessário, desde que sua página da Web ainda siga as práticas recomendadas da mesma maneira.
+a folha de estilos ui-light. css fornecida é a Windows 8 folha de estilos usada pelos aplicativos da loja Windows. ele define Windows o estilo de aplicativo da loja para controles de tipografia e padrão, como botões, caixas de texto, hiperlinks e caixas de seleção para garantir que eles sejam amigáveis para toque. ao criar e personalizar páginas de autorização da web para Windows 8, incentivamos você a usar essa folha de estilo como está e a atualizar, conforme necessário, desde que sua página da web ainda siga as práticas recomendadas da mesma maneira.
 
-Por exemplo, se você tiver uma folha de estilos especial para o que os hiperlinks devem parecer na sua página da Web, é bom ter a sorte de ter certeza de que o estilo que você fornece é amigável de toque da mesma forma que os hiperlinks padrão do Windows 8. Isso é essencial para a base de consumidores usando o Windows 8 em seus dispositivos de toque.
+por exemplo, se você tiver uma folha de estilos especial para o que os hiperlinks devem parecer na sua página da web, é bom ser elaborado para garantir que o estilo que você fornece seja amigável de toque da mesma forma que os hiperlinks padrão do Windows 8. isso é essencial para a base de consumidores usando Windows 8 em seus dispositivos de toque.
 
 ## <a name="use-of-color-and-themes"></a>Uso de cores e temas
 
@@ -57,7 +57,7 @@ Este exemplo demonstra um uso muito elaborado de cores de algumas maneiras difer
 
 A página da Web não tem nenhum preenchimento à esquerda ou à direita para permitir o alinhamento tipográfico com o título no cabeçalho à esquerda e o ícone no cabeçalho à direita.
 
-Você também observará que os botões estão sempre alinhados na parte inferior direita na página da Web (e alinhados à direita com o ícone no cabeçalho). Essa é a melhor prática, pois os usuários do Windows 8 estarão acostumados com fluxos de caixa de diálogo semelhantes com botões no canto inferior direito.
+Você também observará que os botões estão sempre alinhados na parte inferior direita na página da Web (e alinhados à direita com o ícone no cabeçalho). essa é uma prática recomendada, pois Windows 8 usuários estarão acostumados com fluxos de caixa de diálogo semelhantes com botões no canto inferior direito.
 
 ## <a name="designing-for-snap"></a>Projetando para ajuste
 
@@ -77,12 +77,12 @@ No arquivo de exemplo UI-webauth. CSS, você pode ver o uso de consultas de míd
 
 
 
-No Windows 8, a largura do estado de ajuste é de 320 pixels. A página de autenticação da Web ocupa 260 pixels na interface do usuário acima. Estamos usando um valor de largura máxima com margem suficiente, portanto, o código de consulta de mídia do provedor não está associado à largura exata do estado de ajuste.
+em Windows 8, a largura do estado de ajuste é de 320 pixels. A página de autenticação da Web ocupa 260 pixels na interface do usuário acima. Estamos usando um valor de largura máxima com margem suficiente, portanto, o código de consulta de mídia do provedor não está associado à largura exata do estado de ajuste.
 
 Ao personalizar seu aplicativo para o modo de exibição de ajuste, é importante que o usuário não perca nenhum contexto que tenha nas outras exibições da experiência de autenticação da Web (exibições completa, de preenchimento ou de botão), mas é importante reestruturar o layout e a hierarquia dos elementos na página para que as informações necessárias para manter o contexto sejam visíveis e interativas. Nós chamamos alguns exemplos de como a amostra destaca a página da Web para o estado de ajuste.
 
 -   Por exemplo, para a página de logon no estado de ajuste, a propriedade Width do campo de texto de entrada (conforme especificado em UI-Light. css) foi substituída e definida como um valor numérico menor, de modo que o campo de texto não seja cortado horizontalmente.
--   Como outro exemplo, no estado de ajuste, o tamanho da fonte dos cabeçalhos H1 e H2 é reduzido para 20 pt e 11 pt de 42 pt e 20 pt, respectivamente. Isso é feito de acordo com a rampa de tipo do Windows 8 e otimiza o texto para ser mais compacto no visor alterado.
+-   Como outro exemplo, no estado de ajuste, o tamanho da fonte dos cabeçalhos H1 e H2 é reduzido para 20 pt e 11 pt de 42 pt e 20 pt, respectivamente. isso é feito de acordo com a rampa de tipo de Windows 8 e otimiza o texto para ser mais compacto no visor alterado.
 -   Como outro exemplo, observe que os tamanhos dos ícones na página permissões são menores (compare com a página de exibição completa acima). Novamente, isso é feito para manter o contexto, ao mesmo tempo que troca ativos de design para aqueles mais ideais para o visor alterado.
 
 ## <a name="designing-for-a-fast-and-fluid-login-experience"></a>Projetando para uma experiência de logon rápida e fluida
@@ -103,7 +103,7 @@ Os artigos a seguir fornecem diretrizes para escrever código C++ seguro.
 [Considerações para o desenvolvimento de páginas da Web](considerations-for-the-web-page-development.md)
 </dt> <dt>
 
-[Perguntas frequentes sobre o agente de autenticação da Web](faq-for-web-authentication-broker.md)
+[Perguntas frequentes sobre o agente de autenticação da Web](faq-for-web-authentication-broker.yml)
 </dt> <dt>
 
 [Aplicativo de exemplo do SDK do agente de autenticação da Web](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/WebAuthenticationBroker)

@@ -4,12 +4,12 @@ ms.assetid: 52761cb2-4433-4824-ba19-fe597de2faf0
 title: Referência de controle InkEdit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b53edfdc6a72a7792c60a6c7c7bf0e38ffc5e0c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fbbe2aad6b7d8b536f2ede35fd93bd19840e69fc
+ms.sourcegitcommit: f8f06d7ad2ff6599e90b0493b355e0c1811d898f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011687"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "113369308"
 ---
 # <a name="inkedit-control-reference"></a>Referência de controle InkEdit
 
@@ -61,7 +61,7 @@ A criação do controle InkEdit por trás de um controle transparente (como uma 
 | Evento                                                  | Descrição                                                                                                                                                                                 |
 |--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Alteração**](inkedit-change.md)                       | Ocorre quando o conteúdo do controle ou um valor de propriedade é alterado.<br/>                                                                                                              |
-| [**Clicar**](inkedit-click.md)                         | Ocorre quando um usuário clica no controle.<br/>                                                                                                                                              |
+| [**Selecione**](inkedit-click.md)                         | Ocorre quando um usuário clica no controle.<br/>                                                                                                                                              |
 | [**DblClick**](inkedit-dblclick.md)                   | Ocorre quando um usuário clica duas vezes no controle.<br/>                                                                                                                                       |
 | [**Gesto**](inkedit-gesture.md)                     | Ocorre quando um gesto de aplicativo é reconhecido.<br/>                                                                                                                                |
 | [**KeyDown**](inkedit-keydown.md)                     | Ocorre quando o usuário pressiona uma tecla enquanto o controle InkEdit tem foco.<br/>                                                                                                          |
@@ -137,11 +137,11 @@ A criação do controle InkEdit por trás de um controle transparente (como uma 
 | [**DrawingAttributes**](/windows/desktop/api/inked/nf-inked-iinkedit-get_drawingattributes)   | Obtém ou define os atributos de desenho para tinta que ainda deve ser desenhada no controle InkEdit.<br/>                                                                                |
 | [**habilitado**](/windows/desktop/api/inked/nf-inked-iinkedit-get_enabled)                       | Obtém ou define um valor que determina se o controle InkEdit pode responder a eventos gerados pelo usuário.<br/>                                                                     |
 | [**Facto**](/windows/desktop/api/inked/nf-inked-iinkedit-get_factoid)                       | Obtém ou define a constante de [factor](factoid-constants.md) que um objeto [**IInkRecognizer**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognizer) usa para restringir sua pesquisa para o resultado de reconhecimento.<br/> |
-| [**Fonte**](/windows/desktop/api/inked/nf-inked-iinkedit-get_font)                             | Obtém ou define a fonte do texto que o controle InkEdit exibe.<br/>                                                                                                       |
+| [**La**](/windows/desktop/api/inked/nf-inked-iinkedit-get_font)                             | Obtém ou define a fonte do texto que o controle InkEdit exibe.<br/>                                                                                                       |
 | [**hWnd**](/windows/desktop/api/inked/nf-inked-iinkedit-get_hwnd)                             | Obtém o identificador de janela ao qual o controle [**InkDisp**](inkdisp-class.md) está associado.<br/>                                                                                     |
 | [**InkInsertMode**](/windows/desktop/api/inked/nf-inked-iinkedit-get_inkinsertmode)           | Obtém ou define um valor que especifica como a tinta é inserida no controle InkEdit, seja como texto ou como tinta.<br/>                                                                |
 | [**InkMode**](/windows/desktop/api/inked/nf-inked-iinkedit-get_inkmode)                       | Obtém ou define um valor que especifica se a coleta de tinta está desabilitada, se a tinta é coletada ou se a tinta e os gestos são coletados.<br/>                                               |
-| [**Bloqueado**](/windows/desktop/api/inked/nf-inked-iinkedit-get_locked)                         | Obtém ou define um valor que especifica se o controle InkEdit é somente leitura ou não.<br/>                                                                                       |
+| [**Locked**](/windows/desktop/api/inked/nf-inked-iinkedit-get_locked)                         | Obtém ou define um valor que especifica se o controle InkEdit é somente leitura ou não.<br/>                                                                                       |
 | [**Determinado**](/windows/desktop/api/inked/nf-inked-iinkedit-get_maxlength)                   | Obtém ou define um valor que indica se um controle InkEdit pode conter um número máximo de caracteres e, em caso afirmativo, especifica o número máximo de caracteres.<br/>                 |
 | [**MouseIcon**](/windows/desktop/api/inked/nf-inked-iinkedit-get_mouseicon)                   | Obtém ou define o ícone de mouse personalizado atual.<br/>                                                                                                                                |
 | [**MousePointer**](/windows/desktop/api/inked/nf-inked-iinkedit-get_mousepointer)             | Obtém ou define um valor que indica o tipo de ponteiro do mouse que aparece quando o mouse está sobre uma parte específica do controle InkEdit.<br/>                                |
@@ -161,45 +161,25 @@ A criação do controle InkEdit por trás de um controle transparente (como uma 
 | [**SelLength**](/windows/desktop/api/inked/nf-inked-iinkedit-get_sellength)                   | Obtém ou define o número de caracteres selecionados no controle InkEdit (somente tempo de execução).<br/>                                                                            |
 | [**SelRTF**](/windows/desktop/api/inked/nf-inked-iinkedit-get_selrtf)                         | Obtém ou define o texto formatado no formato RTF (Rich Text Format) selecionado no controle InkEdit (somente tempo de execução).<br/>                                                          |
 | [**InícioDaSeleção**](/windows/desktop/api/inked/nf-inked-iinkedit-get_selstart)                     | Obtém ou define o ponto inicial do texto selecionado na caixa de texto (somente tempo de execução).<br/>                                                                              |
-| [**SelText**](/windows/desktop/api/inked/nf-inked-iinkedit-get_seltext)                       | Obtém ou define o texto selecionado dentro do controle InkEdit (somente tempo de execução).<br/>                                                                                                 |
-| [**SelUnderline**](/windows/desktop/api/inked/nf-inked-iinkedit-get_selunderline)             | Obtém ou define um valor que especifica se o estilo da fonte do texto selecionado no momento no controle InkEdit é sublinhado (somente tempo de execução).<br/>                            |
-| [**Status**](/windows/desktop/api/inked/nf-inked-iinkedit-get_status)                         | Obtém um valor que especifica se o controle InkEdit está ocioso, coletando tinta ou reconhecendo a tinta (somente tempo de execução).<br/>                                                       |
+| [**SelText**](/windows/desktop/api/inked/nf-inked-iinkedit-get_seltext)                       | Obtém ou define o texto selecionado dentro do controle InkEdit (somente em tempo de executar).<br/>                                                                                                 |
+| [**SelUnderline**](/windows/desktop/api/inked/nf-inked-iinkedit-get_selunderline)             | Obtém ou define um valor que especifica se o estilo da fonte do texto selecionado no momento no controle InkEdit está sublinhado (somente em tempo de execução).<br/>                            |
+| [**Status**](/windows/desktop/api/inked/nf-inked-iinkedit-get_status)                         | Obtém um valor que especifica se o controle InkEdit está ocioso, coletando tinta ou reconhecendo tinta (somente tempo de run).<br/>                                                       |
 | [**Texto**](/windows/desktop/api/inked/nf-inked-iinkedit-get_text)                             | Obtém ou define o texto atual na caixa de texto.<br/>                                                                                                                             |
 | [**TextRTF**](/windows/desktop/api/inked/nf-inked-iinkedit-get_textrtf)                       | Obtém ou define o texto do controle InkEdit, incluindo todos os códigos RTF.<br/>                                                                                                     |
 | [**UseMouseForInput**](/windows/desktop/api/inked/nf-inked-iinkedit-get_usemouseforinput)     | Obtém ou define um valor que indica se o mouse pode ser usado como um dispositivo de entrada.<br/>                                                                                      |
 
-
-
- 
-
-
-
 | Estrutura                                                                    | Descrição                                                                                  |
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| [**\_STROKEINFO IEC**](/windows/desktop/api/inked/ns-inked-iec_strokeinfo)                       | Contém informações sobre um evento de [**traço**](inkedit-stroke.md) (somente Win32).<br/> |
-| [**\_GESTUREINFO IEC**](/windows/desktop/api/inked/ns-inked-iec_gestureinfo)                     | Contém informações sobre um gesto específico (somente Win32).<br/>                       |
-| [**\_RECOGNITIONRESULTINFO IEC**](/windows/desktop/api/inked/ns-inked-iec_recognitionresultinfo) | Contém informações sobre um resultado de reconhecimento (somente Win32).<br/>                     |
+| [**IEC \_ STROKEINFO**](/windows/desktop/api/inked/ns-inked-iec_strokeinfo)                       | Contém informações sobre um [**evento Stroke**](inkedit-stroke.md) (somente Win32).<br/> |
+| [**IEC \_ GESTUREINFO**](/windows/desktop/api/inked/ns-inked-iec_gestureinfo)                     | Contém informações sobre um gesto específico (somente Win32).<br/>                       |
+| [**IEC \_ RECOGNITIONRESULTINFO**](/windows/desktop/api/inked/ns-inked-iec_recognitionresultinfo) | Contém informações sobre um resultado de reconhecimento (somente Win32).<br/>                     |
 
+## <a name="com-implementation"></a>Implementação com
 
-
- 
-
-## <a name="com-implementation"></a>Implementação COM
-
-Esse objeto implementa a interface com do **IInkEdit** .
+Esse objeto implementa a interface [COM IInkEdit.](/windows/win32/api/inked/nn-inked-iinkedit)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-<dl> <dt>
-
-[**Classe InkOverlay**](inkoverlay-class.md)
-</dt> <dt>
-
-[Referência de controle InkPicture](inkpicture-control-reference.md)
-</dt> <dt>
-
-[**Classe InkRecognizerContext**](inkrecognizercontext-class.md)
-</dt> </dl>
-
- 
-
+- [**Classe InkOverlay,**](inkoverlay-class.md) 
+- [Referência de controle InkPicture](inkpicture-control-reference.md)
+- [**Classe InkRecognizerContext**](inkrecognizercontext-class.md)
