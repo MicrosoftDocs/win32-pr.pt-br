@@ -1,19 +1,19 @@
 ---
-description: Este artigo explica como inicializar manipuladores de propriedade para trabalhar com o sistema de propriedades do Windows.
+description: Este artigo explica como inicializar manipuladores de propriedades para trabalhar com o Windows de propriedades.
 ms.assetid: 3b54dd65-b7db-4e6a-bc3d-1008fdabcfa9
 title: Inicializando manipuladores de propriedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7d7626f92b3d81a6764e635c10302747f82a383
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 4482af2a029a91049d421ee49eb0f439c5fd8d0e
+ms.sourcegitcommit: ecd0ba4732f5264aab9baa2839c11f7fea36318f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406989"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "113481901"
 ---
 # <a name="initializing-property-handlers"></a>Inicializando manipuladores de propriedades
 
-Este tópico explica como criar e registrar manipuladores de propriedade para trabalhar com o sistema de propriedades do Windows.
+Este tópico explica como criar e registrar manipuladores de propriedades para trabalhar com o Windows de propriedades.
 
 Este tópico é organizado da seguinte forma:
 
@@ -40,7 +40,7 @@ Este tópico discute um formato de arquivo baseado em XML de exemplo que descrev
 
 Manipuladores de propriedades são objetos COM que criam a [**abstração IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) para um formato de arquivo específico. Eles leem (analisaram) e escrevem esse formato de arquivo de maneira que esteja em conformidade com sua especificação. Alguns manipuladores de propriedades fazem seu trabalho com base em APIs que abstraem o acesso a um formato de arquivo específico. Antes de desenvolver um manipulador de propriedades para o formato de arquivo, você precisa entender como o formato de arquivo armazena propriedades e como essas propriedades (nomes e valores) são mapeadas para a abstração do armazenamento de propriedades.
 
-Ao planejar sua implementação, lembre-se de que os manipuladores de propriedades são componentes de baixo nível carregados no contexto de processos como Windows Explorer, o indexador Windows Search e aplicativos de terceiros que usam o modelo de programação de item shell. Como resultado, manipuladores de propriedade não podem ser implementados em código gerenciado e devem ser implementados em C++. Se o manipulador usar qualquer APIs ou serviços para fazer seu trabalho, você deverá garantir que esses serviços possam funcionar corretamente nos ambientes em que o manipulador de propriedades é carregado.
+Ao planejar sua implementação, lembre-se de que os manipuladores de propriedades são componentes de baixo nível carregados no contexto de processos como o Gerenciador do Windows, o indexador Windows Search e aplicativos de terceiros que usam o modelo de programação de item shell. Como resultado, manipuladores de propriedade não podem ser implementados em código gerenciado e devem ser implementados em C++. Se o manipulador usar qualquer APIs ou serviços para fazer seu trabalho, você deverá garantir que esses serviços possam funcionar corretamente nos ambientes em que o manipulador de propriedades é carregado.
 
 > [!Note]  
 > Manipuladores de propriedades sempre estão associados a tipos de arquivo específicos; portanto, se o formato de arquivo contiver propriedades que exigem um manipulador de propriedades personalizado, você sempre deverá registrar uma extensão de nome de arquivo exclusiva para cada formato de arquivo.
@@ -70,7 +70,7 @@ No entanto, é muito melhor implementar [**IInitializeWithStream**](/windows/win
 Para examinar a implementação de um manipulador de propriedades em detalhes, examine o exemplo de código a seguir, que é uma implementação de [**IInitializeWithStream::Initialize**](/windows/win32/api/propsys/nf-propsys-iinitializewithstream-initialize). O manipulador é inicializado carregando um documento de receita baseado em XML por meio de um ponteiro para a instância [**IStream associada desse**](/windows/win32/api/objidl/nn-objidl-istream) documento. A **\_ variável spDocEle** usada perto do final do exemplo de código é definida anteriormente no exemplo como um MSXML2::IXMLDOMElementPtr.
 
 > [!Note]  
-> Os exemplos de código a seguir e todos os exemplos de código subsequentes são retirados do exemplo de manipulador de receita incluído no SDK (Software Development Kit do Windows (SDK do Windows)). .
+> Os exemplos de código a seguir e todos os exemplos de código subsequentes são retirados do exemplo de manipulador de receita incluído no SDK (Software Development Kit) do Windows. .
 
  
 
@@ -134,7 +134,7 @@ Depois que o documento em si for carregado, as propriedades a serem exibidas no 
 
 
 
-Se o fluxo for somente leitura, mas o parâmetro *grfMode* contiver o sinalizador STGM READWRITE, a inicialização deverá falhar e retornar \_ STG \_ E \_ ACCESSDENIED. Sem essa verificação, Windows Explorer os valores de propriedade como que podem ser escritos, mesmo que não sejam, levando a uma experiência confusa do usuário final.
+Se o fluxo for somente leitura, mas o parâmetro *grfMode* contiver o sinalizador STGM READWRITE, a inicialização deverá falhar e retornar \_ STG \_ E \_ ACCESSDENIED. Sem essa verificação, Windows Explorer mostra os valores de propriedade como que podem ser escritos, mesmo que não sejam, levando a uma experiência confusa do usuário final.
 
 O manipulador de propriedades é inicializado apenas uma vez em seu tempo de vida. Se uma segunda inicialização for solicitada, o manipulador deverá retornar `HRESULT_FROM_WIN32(ERROR_ALREADY_INITIALIZED)` .
 
@@ -447,23 +447,23 @@ Em seguida, [**a função CryptBinaryToString**](/windows/win32/api/wincrypt/nf-
 
 A **função DeserializePropVariantFromString,** também encontrada em Util.cpp, inverte a operação, desseralizando valores do arquivo XML.
 
-Para obter informações sobre o suporte para metadados abertos, consulte "Tipos de arquivo que suportam metadados abertos" em [Tipos de arquivo](../shell/fa-file-types.md).
+Para obter informações sobre o suporte para metadados abertos, consulte "tipos de arquivo que dão suporte a metadados abertos" em [tipos de arquivo](../shell/fa-file-types.md).
 
-## <a name="full-text-contents"></a>Full-Text conteúdo
+## <a name="full-text-contents"></a>Conteúdo do Full-Text
 
-Os manipuladores de propriedades também podem facilitar uma pesquisa de texto completo do conteúdo do arquivo e são uma maneira fácil de fornecer essa funcionalidade se o formato de arquivo não for muito complicado. Há uma maneira alternativa e mais eficiente de fornecer o texto completo do arquivo por meio da implementação da interface [**IFilter.**](/windows/win32/api/filter/nn-filter-ifilter)
+Os manipuladores de propriedade também podem facilitar uma pesquisa de texto completo do conteúdo do arquivo, e eles são uma maneira fácil de fornecer essa funcionalidade se o formato de arquivo não for excessivamente complicado. Há uma maneira alternativa e mais eficiente de fornecer o texto completo do arquivo por meio da implementação da interface [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) .
 
-A tabela a seguir resume os benefícios de cada abordagem usando [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) ou [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
+A tabela a seguir resume os benefícios de cada abordagem usando o [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) ou o [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
 
 
 
-| Funcionalidade                                   | Ifilter                      | Ipropertystore |
+| Funcionalidade                                   | Visio                      | IPropertyStore |
 |----------------------------------------------|------------------------------|----------------|
-| Permite fazer write-back em arquivos?                  | Não                           | Sim            |
+| Permite write-back em arquivos?                  | Não                           | Sim            |
 | Fornece uma combinação de conteúdo e propriedades?      | Sim                          | Sim            |
-| Multilingue?                                | Sim                          | Não             |
-| MIME/Embedded?                               | Sim                          | Não             |
-| Limites de texto?                             | Frase, parágrafo, capítulo | Nenhum           |
+| Multilíngüe?                                | Sim                          | Não             |
+| MIME/inserido?                               | Sim                          | Não             |
+| Limites de texto?                             | Sentença, parágrafo, capítulo | Nenhum           |
 | Implementação com suporte para SPS/SQL Server? | Sim                          | Não             |
 | Implementação                               | Complex                      | Simples         |
 
@@ -471,7 +471,7 @@ A tabela a seguir resume os benefícios de cada abordagem usando [**IFilter**](/
 
  
 
-No exemplo de manipulador de receita, o formato de arquivo de receita não tem requisitos complexos, portanto, somente [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) foi implementado para suporte a texto completo. A pesquisa de texto completo é implementada para os nós XML nomeados na matriz a seguir.
+No exemplo de manipulador de receitas, o formato de arquivo de receita não tem requisitos complexos, portanto, somente [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) foi implementado para suporte de texto completo. A pesquisa de texto completo é implementada para os nós XML nomeados na matriz a seguir.
 
 
 ```
@@ -485,7 +485,7 @@ const PWSTR c_rgszContentXPath[] = {
 
 
 
-O sistema de propriedades contém a propriedade (Conteúdo da Pesquisa PKEY), que foi criada para fornecer `System.Search.Contents` conteúdo de texto completo ao \_ \_ indexador. O valor dessa propriedade nunca é exibido diretamente na interface do usuário; O texto de todos os nós XML nomeados na matriz acima são concatenados em uma única cadeia de caracteres. Essa cadeia de caracteres é fornecida ao indexador como o conteúdo de texto completo do arquivo de receita por meio de uma chamada para [**IPropertyStoreCache::SetValueAndState,**](/windows/win32/api/propsys/nf-propsys-ipropertystorecache-setvalueandstate) conforme ilustrado no exemplo de código a seguir.
+O sistema de propriedades contém a `System.Search.Contents` \_ Propriedade (conteúdo de pesquisa PKEY \_ ), que foi criada para fornecer conteúdo de texto completo ao indexador. O valor dessa propriedade nunca é exibido diretamente na interface do usuário; o texto de todos os nós XML nomeados na matriz acima é concatenado em uma única cadeia de caracteres. Essa cadeia de caracteres é fornecida ao indexador como o conteúdo de texto completo do arquivo de receita por meio de uma chamada para [**IPropertyStoreCache:: SetValueAndState**](/windows/win32/api/propsys/nf-propsys-ipropertystorecache-setvalueandstate) , conforme ilustrado no exemplo de código a seguir.
 
 
 ```
@@ -532,19 +532,19 @@ HRESULT CRecipePropertyStore::_LoadSearchContent()
 
 ## <a name="providing-values-for-properties"></a>Fornecendo valores para propriedades
 
-Quando usados para ler valores, os manipuladores de propriedades geralmente são invocados por um dos seguintes motivos:
+Quando usado para ler valores, os manipuladores de propriedades geralmente são invocados por um dos seguintes motivos:
 
 -   Para enumerar todos os valores de propriedade.
 -   Para obter o valor de uma propriedade específica.
 
-Para enumeração, um manipulador de propriedades é solicitado a enumerar suas propriedades durante a indexação ou quando a caixa de diálogo propriedades solicita que as propriedades são exibidas no **grupo** Outros. A indexação continua constantemente como uma operação em segundo plano. Sempre que um arquivo muda, o indexador é notificado e re indexa o arquivo solicitando que o manipulador de propriedades enumere suas propriedades. Portanto, é essencial que os manipuladores de propriedade sejam implementados com eficiência e retornem valores de propriedade o mais rápido possível. Enumere todas as propriedades para as quais você tem valores, assim como faria para qualquer coleção, mas não enumere propriedades que envolvem cálculos de memória intensiva ou solicitações de rede que podem torná-los lentos de recuperação.
+Para enumeração, um manipulador de propriedades é solicitado a enumerar suas propriedades durante a indexação ou quando a caixa de diálogo Propriedades solicita que as propriedades sejam exibidas no **outro** grupo. A indexação passa constantemente como uma operação em segundo plano. Sempre que um arquivo é alterado, o indexador é notificado e ele indexa novamente o arquivo solicitando que o manipulador de propriedades enumere suas propriedades. Portanto, é essencial que os manipuladores de propriedade sejam implementados com eficiência e retornam valores de propriedade o mais rápido possível. Enumere todas as propriedades para as quais você tem valores, assim como faria para qualquer coleção, mas não enumere propriedades que envolvem cálculos de uso intensivo de memória ou solicitações de rede que poderiam torná-los lentos para serem recuperados.
 
-Ao escrever um manipulador de propriedades, você geralmente precisa considerar os dois conjuntos de propriedades a seguir.
+Ao escrever um manipulador de propriedades, normalmente você precisa considerar os dois conjuntos de propriedades a seguir.
 
--   Propriedades primárias: propriedades às qual o tipo de arquivo dá suporte na nações. Por exemplo, um manipulador de propriedades de foto para metadados de ARQUIVO de Imagem Exchangeable (EXIF) dá suporte nativo a `System.Photo.FNumber` .
--   Propriedades estendidas: propriedades às qual o tipo de arquivo dá suporte como parte dos metadados abertos.
+-   Propriedades primárias: Propriedades às quais o tipo de arquivo dá suporte nativamente. Por exemplo, um manipulador de propriedade de foto para metadados de EXIF (arquivo de imagem intercambiável) dá suporte nativo `System.Photo.FNumber` .
+-   Propriedades estendidas: Propriedades às quais o tipo de arquivo dá suporte como parte dos metadados abertos.
 
-Como o exemplo usa o cache na memória, implementar métodos [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) é apenas uma questão de delegar para esse cache, conforme ilustrado no exemplo de código a seguir.
+Como o exemplo usa o cache na memória, a implementação de métodos [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) é apenas uma questão de delegar a esse cache, conforme ilustrado no exemplo de código a seguir.
 
 
 ```
@@ -560,16 +560,16 @@ IFACEMETHODIMP GetValue(REFPROPERTYKEY key, __out PROPVARIANT *pPropVar)
 
 
 
-Se você optar por não delegar ao cache na memória, deverá implementar seus métodos para fornecer> o seguinte comportamento esperado:
+Se você optar por não delegar ao cache na memória, deverá implementar seus métodos para fornecer> seguinte comportamento esperado:
 
--   [**IPropertyStore::GetCount:**](/previous-versions/windows/desktop/legacy/bb761472(v=vs.85))se não houver nenhuma propriedade, esse método retornará **S \_ OK.**
--   [**IPropertyStore::GetAt:**](/previous-versions/windows/desktop/legacy/bb761471(v=vs.85))se *iProp* for maior ou igual a *cProps,* esse método retornará E INVALIDARG e a estrutura apontada pelo parâmetro pkey será preenchida com \_ zeros. 
--   [**IPropertyStore::GetCount**](/previous-versions/windows/desktop/legacy/bb761472(v=vs.85)) e [**IPropertyStore::GetAt**](/previous-versions/windows/desktop/legacy/bb761471(v=vs.85)) refletem o estado atual do manipulador de propriedades. Se uma [**PROPERTYKEY**](/windows/win32/api/wtypes/ns-wtypes-propertykey) for adicionada ou removida do arquivo por meio de [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)), esses dois métodos deverão refletir essa alteração na próxima vez que eles são chamados.
--   [**IPropertyStore::GetValue:**](/previous-versions/windows/desktop/legacy/bb761473(v=vs.85))se for solicitado que esse método receba um valor que não existe, ele retornará **S \_ OK** com o valor relatado como VT \_ EMPTY.
+-   [**IPropertyStore:: GetCount**](/previous-versions/windows/desktop/legacy/bb761472(v=vs.85)): se não houver propriedades, esse método retornará **S \_ OK**.
+-   [**IPropertyStore:: GetAt**](/previous-versions/windows/desktop/legacy/bb761471(v=vs.85)): se *iProp* for maior ou igual a *CProps*, esse método retornará e \_ INVALIDARG e a estrutura apontada pelo parâmetro *PKEY* será preenchida com zeros.
+-   [**IPropertyStore:: GetCount**](/previous-versions/windows/desktop/legacy/bb761472(v=vs.85)) e [**IPropertyStore:: GetAt**](/previous-versions/windows/desktop/legacy/bb761471(v=vs.85)) refletem o estado atual do manipulador de propriedades. Se um [**PROPERTYKEY**](/windows/win32/api/wtypes/ns-wtypes-propertykey) é adicionado ou removido do arquivo por meio de [**IPropertyStore:: SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)), esses dois métodos devem refletir que mudam na próxima vez que forem chamados.
+-   [**IPropertyStore:: GetValue**](/previous-versions/windows/desktop/legacy/bb761473(v=vs.85)): se esse método for solicitado para um valor que não existe, ele retornará **S \_ OK** com o valor relatado como VT \_ vazio.
 
-## <a name="writing-back-values"></a>Reescrevê-lo
+## <a name="writing-back-values"></a>Gravando valores de volta
 
-Quando o manipulador de propriedades grava o valor de uma propriedade usando [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)), ele não grava o valor no arquivo até que [**IPropertyStore::Commit**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85)) seja chamado. O cache na memória pode ser útil na implementação desse esquema. No código de exemplo, a implementação **de IPropertyStore::SetValue** simplesmente define o novo valor no cache na memória e define o estado dessa propriedade como PSC \_ DIRTY.
+Quando o manipulador de propriedades grava o valor de uma propriedade usando [**IPropertyStore:: SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)), ele não grava o valor no arquivo até que [**IPropertyStore:: Commit**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85)) seja chamado. O cache na memória pode ser útil para implementar esse esquema. No código de exemplo, a implementação **IPropertyStore:: SetValue** simplesmente define o novo valor no cache na memória e define o estado dessa propriedade como PSC \_ sujo.
 
 
 ```
@@ -594,17 +594,17 @@ HRESULT CRecipePropertyStore::SetValue(REFPROPERTYKEY key, const PROPVARIANT *pP
 
 
 
-Em qualquer [**implementação de IPropertyStore,**](/windows/win32/api/propsys/nn-propsys-ipropertystore) o seguinte comportamento é esperado de [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)):
+Em qualquer implementação de [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) , o seguinte comportamento é esperado de [**IPropertyStore:: SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)):
 
 -   Se a propriedade já existir, o valor da propriedade será definido.
--   Se a propriedade não existir, a nova propriedade será adicionada e seu valor será definido.
--   Se o valor da propriedade não puder ser persistido com a mesma precisão que determinada (por exemplo, truncamento devido a limitações de tamanho no formato de arquivo), o valor será definido o mais longe possível e INPLACE \_ S \_ TRUNCATED será retornado.
--   Se a propriedade não for suportada pelo manipulador de propriedades, `HRESULT_FROM_WIN32(ERROR_NOT_SUPPORTED)` será retornado.
--   Se houver outro motivo para que o valor da propriedade não possa ser definido, como o arquivo que está sendo bloqueado ou a falta de direitos para edição por meio de ACLs (listas de controle de acesso), STG \_ E \_ ACCESSDENIED será retornado.
+-   Se a propriedade não existir, a nova propriedade será adicionada e seu valor definido.
+-   Se o valor da propriedade não puder ser persistido com a mesma precisão fornecida (por exemplo, truncamento devido a limitações de tamanho no formato de arquivo), o valor será definido o máximo possível e os S inplaces \_ \_ serão retornados.
+-   Se a propriedade não for suportada pelo manipulador de propriedade, `HRESULT_FROM_WIN32(ERROR_NOT_SUPPORTED)` será retornado.
+-   Se houver outro motivo pelo qual o valor da propriedade não pode ser definido, como o arquivo que está sendo bloqueado ou falta de direitos para editar através de ACLs (listas de controle de acesso), STG \_ E \_ ACCESSDENIED será retornado.
 
-Uma das principais vantagens de usar fluxos, como o exemplo, é a confiabilidade. Os manipuladores de propriedades sempre devem considerar que não podem deixar um arquivo em um estado inconsistente no caso de uma falha catastrófica. Obviamente, a corrupção dos arquivos de um usuário deve ser evitada e a melhor maneira de fazer isso é com um mecanismo de "cópia na gravação". Se o manipulador de propriedades usar um fluxo para acessar um arquivo, você obterá esse comportamento automaticamente; o sistema grava todas as alterações no fluxo, substituindo o arquivo pela nova cópia somente durante a operação de confirmação.
+Uma grande vantagem de usar fluxos, como o exemplo, é a confiabilidade. Os manipuladores de propriedades sempre devem considerar que não podem deixar um arquivo em um estado inconsistente no caso de uma falha catastrófica. É óbvio que a corrupção dos arquivos de um usuário deve ser evitada e a melhor maneira de fazer isso é com um mecanismo de "cópia na gravação". Se o seu manipulador de propriedades usar um fluxo para acessar um arquivo, você obterá esse comportamento automaticamente; o sistema grava todas as alterações no fluxo, substituindo o arquivo pela nova cópia somente durante a operação de confirmação.
 
-Para substituir esse comportamento e controlar o processo de salvar arquivos manualmente, você pode cancelar o comportamento de salvar seguro definindo o valor ManualSafeSave na entrada do registro do manipulador, conforme ilustrado aqui.
+Para substituir esse comportamento e controlar o processo de salvamento de arquivos manualmente, você pode recusar o comportamento de salvamento seguro definindo o valor ManualSafeSave na entrada do registro do manipulador, conforme ilustrado aqui.
 
 ```
 HKEY_CLASSES_ROOT
@@ -613,22 +613,22 @@ HKEY_CLASSES_ROOT
          ManualSafeSave = 1
 ```
 
-Quando um manipulador especifica o valor ManualSafeSave, o fluxo com o qual ele é inicializado não é um fluxo transacionado (STGM \_ TRANSACTED). O próprio manipulador deve implementar a função safe save para garantir que o arquivo não seja corrompido se a operação de salvar for interrompida. Se o manipulador implementar a gravação in-locar, ele gravará no fluxo que é dado. Se o manipulador não dá suporte a esse recurso, ele deve recuperar um fluxo com o qual gravar a cópia atualizada do arquivo usando [**IDestinationStreamFactory::GetDestinationStream**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-idestinationstreamfactory-getdestinationstream). Depois que o manipulador terminar de escrever, ele deverá chamar [**IPropertyStore::Commit**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85)) no fluxo original para concluir a operação e substituir o conteúdo do fluxo original pela nova cópia do arquivo.
+Quando um manipulador Especifica o valor de ManualSafeSave, o fluxo com o qual ele é inicializado não é um fluxo transacionado (STGM \_ transacionado). O próprio manipulador deve implementar a função de salvamento seguro para garantir que o arquivo não seja corrompido se a operação de salvamento for interrompida. Se o manipulador implementar a gravação in-loco, ele gravará no fluxo que ele recebeu. Se o manipulador não oferecer suporte a esse recurso, ele deverá recuperar um fluxo com o qual gravar a cópia atualizada do arquivo usando [**IDestinationStreamFactory:: GetDestinationStream**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-idestinationstreamfactory-getdestinationstream). Depois que o manipulador terminar a gravação, ele deverá chamar [**IPropertyStore:: Commit**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85)) no fluxo original para concluir a operação e substituir o conteúdo do fluxo original pela nova cópia do arquivo.
 
-ManualSafeSave também será a situação padrão se você não inicializar o manipulador com um fluxo. Sem um fluxo original para receber o conteúdo do fluxo temporário, você deve usar [**ReplaceFile**](/windows/win32/api/winbase/nf-winbase-replacefilea) para executar uma substituição atômica do arquivo de origem.
+ManualSafeSave também será a situação padrão se você não inicializar o manipulador com um fluxo. Sem um fluxo original para receber o conteúdo do fluxo temporário, você deve usar o [**ReplaceFile**](/windows/win32/api/winbase/nf-winbase-replacefilea) para executar uma substituição atômica do arquivo de origem.
 
-Formatos de arquivo grandes que serão usados de uma maneira que produza arquivos maiores que 1 MB devem implementar suporte para a escrita de propriedade in-locar; caso contrário, o comportamento de desempenho não atenderá às expectativas dos clientes do sistema de propriedades. Nesse cenário, o tempo necessário para gravar propriedades não deve ser afetado pelo tamanho do arquivo.
+Formatos de arquivo grandes que serão usados de forma que produza arquivos maiores que 1 MB devem implementar o suporte para a gravação de propriedades in-loco; caso contrário, o comportamento de desempenho não atende às expectativas dos clientes do sistema de propriedades. Nesse cenário, o tempo necessário para gravar propriedades não deve ser afetado pelo tamanho do arquivo.
 
-Para arquivos muito grandes, por exemplo, um arquivo de vídeo de 1 GB ou mais, uma solução diferente é necessária. Se não houver espaço suficiente no arquivo para executar a escrita in-locar, o manipulador poderá falhar na atualização da propriedade se a quantidade de espaço reservado para a escrita da propriedade in-locar tiver sido esgotada. Essa falha ocorre para evitar um baixo desempenho resultante de 2 GB de E/S (1 para leitura, 1 para gravação). Devido a essa possível falha, esses formatos de arquivo devem reservar espaço suficiente para a escrita de propriedade in-place.
+Para arquivos muito grandes, por exemplo, um arquivo de vídeo de 1 GB ou mais, uma solução diferente é necessária. Se não houver espaço suficiente no arquivo para executar a gravação in-loco, o manipulador poderá falhar na atualização da propriedade se a quantidade de espaço reservado para gravação de propriedades in-loco tiver sido esgotada. Essa falha ocorre para evitar o mau desempenho resultante de 2 GB de e/s (1 para ler, 1 para gravar). Devido a essa falha em potencial, esses formatos de arquivo devem reservar espaço suficiente para a gravação de propriedades in-loco.
 
-Se o arquivo tiver espaço suficiente em seu header para gravar metadados e se a gravação desses metadados não causar o crescimento ou redução do arquivo, poderá ser seguro gravar in-locar. Recomendamos 64 KB como ponto de partida. Escrever in-locar é equivalente ao manipulador solicitando ManualSafeSave e chamando [**IStream::Commit**](/windows/win32/api/objidl/nf-objidl-istream-commit) na implementação de [**IPropertyStore::Commit**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85))e tem um desempenho muito melhor do que a cópia na gravação. Se o tamanho do arquivo for alterado devido a alterações no valor da propriedade, a escrita in-locar não deverá ser tentada devido ao potencial de um arquivo corrompido no caso de uma terminação anormal.
+Se o arquivo tiver espaço suficiente em seu cabeçalho para gravar metadados e se a gravação desses metadados não fizer com que o arquivo aumente ou diminua, talvez seja seguro gravar no local. Recomendamos 64 KB como ponto de partida. Gravar no local é equivalente ao manipulador solicitando ManualSafeSave e chamando [**IStream:: Commit**](/windows/win32/api/objidl/nf-objidl-istream-commit) na implementação de [**IPropertyStore:: Commit**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85))e tem um desempenho muito melhor do que a cópia em gravação. Se o tamanho do arquivo for alterado devido a alterações no valor da propriedade, a gravação in-loco não deve ser tentada devido ao potencial de um arquivo corrompido no caso de um encerramento anormal.
 
 > [!Note]  
-> Por motivos de desempenho, recomendamos que a opção ManualSafeSave seja usada com manipuladores de propriedades que trabalham com arquivos de 100 KB ou maiores.
+> Por motivos de desempenho, recomendamos que a opção ManualSafeSave seja usada com manipuladores de propriedade que trabalham com arquivos que são 100 KB ou maiores.
 
  
 
-Conforme ilustrado na implementação de exemplo a seguir [**de IPropertyStore::Commit**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85)), o manipulador para ManualSafeSave é registrado para ilustrar a opção de salvação segura manual. O **\_ método SaveCacheToDom** grava os valores de propriedade armazenados no cache na memória no objeto XMLdocument.
+Conforme ilustrado na implementação de exemplo a seguir de [**IPropertyStore:: Commit**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85)), o manipulador para ManualSafeSave é registrado para ilustrar a opção de salvamento seguro manual. O método **\_ SaveCacheToDom** grava os valores de propriedade armazenados no cache na memória para o objeto XMLdocument.
 
 
 ```
@@ -652,7 +652,7 @@ HRESULT CRecipePropertyStore::Commit()
 
 
 
-Em seguida, pergunte se o pecificado dá suporte [**a IDestinationStreamFactory.**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-idestinationstreamfactory)
+Em seguida, pergunte se o pecificada dá suporte a [**IDestinationStreamFactory**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-idestinationstreamfactory).
 
 
 ```
@@ -670,7 +670,7 @@ Em seguida, pergunte se o pecificado dá suporte [**a IDestinationStreamFactory.
 
 
 
-Em seguida, commit do fluxo original, que grava os dados de volta no arquivo original de maneira segura.
+Em seguida, confirme o fluxo original, que grava os dados de volta no arquivo original de maneira segura.
 
 
 ```
@@ -694,7 +694,7 @@ Em seguida, commit do fluxo original, que grava os dados de volta no arquivo ori
 
 
 
-Em seguida, examine **\_ a implementação saveCacheToDom.**
+Em seguida, examine a implementação de **\_ SaveCacheToDom** .
 
 
 ```
@@ -707,7 +707,7 @@ HRESULT CRecipePropertyStore::_SaveCacheToDom()
 
 
 
-Em seguida, obter o número de propriedades armazenadas no cache na memória.
+Em seguida, obtenha o número de propriedades armazenadas no cache na memória.
 
 
 ```
@@ -717,7 +717,7 @@ HRESULT hr = _pCache->GetCount(&cProps);
 
 
 
-Agora itere pelas propriedades para determinar se o valor de uma propriedade foi alterado desde que ela foi carregada na memória.
+Agora, itere pelas propriedades para determinar se o valor de uma propriedade foi alterado desde que foi carregado na memória.
 
 
 ```
@@ -729,7 +729,7 @@ Agora itere pelas propriedades para determinar se o valor de uma propriedade foi
 
 
 
-O [**método IPropertyStoreCache::GetState**](/windows/win32/api/propsys/nf-propsys-ipropertystorecache-getstate) obtém o estado da propriedade no cache. O sinalizador DIRTY do PSC, que foi definido na implementação \_ [**IPropertyStore::SetValue,**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)) marca uma propriedade como alterada.
+O método [**IPropertyStoreCache:: GetState**](/windows/win32/api/propsys/nf-propsys-ipropertystorecache-getstate) Obtém o estado da propriedade no cache. O \_ sinalizador incorreto do PSC, que foi definido na implementação [**IPropertyStore:: SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)) , marca uma propriedade como alterada.
 
 
 ```
@@ -747,7 +747,7 @@ O [**método IPropertyStoreCache::GetState**](/windows/win32/api/propsys/nf-prop
 
 
 
-Mapeie a propriedade para o nó XML conforme especificado na matriz **\_ eg rgPropertyMap.**
+Mapeie a propriedade para o nó XML, conforme especificado na matriz de **exemplo \_ rgPropertyMap** .
 
 
 ```
@@ -767,7 +767,7 @@ if (SUCCEEDED(hr))
 
 
 
-Se uma propriedade não estiver no mapa, será uma nova propriedade que foi definida por Windows Explorer. Como há suporte para metadados abertos, salve a nova propriedade na **seção ExtendedProperties** do XML.
+se uma propriedade não estiver no mapa, ela será uma nova propriedade que foi definida pelo Windows Explorer. Como há suporte para metadados abertos, salve a nova propriedade na seção **ExtendedProperties** do XML.
 
 
 ```
@@ -791,7 +791,7 @@ Se uma propriedade não estiver no mapa, será uma nova propriedade que foi defi
 
 ## <a name="implementing-ipropertystorecapabilities"></a>Implementando IPropertyStoreCapabilities
 
-[**IPropertyStoreCapabilities**](/windows/win32/api/propsys/nn-propsys-ipropertystorecapabilities) informa à interface do usuário do Shell se uma propriedade específica pode ser editada na interface do usuário do Shell. É importante observar que isso está relacionado apenas à capacidade de editar a propriedade na interface do usuário, não se você pode chamar [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)) com êxito na propriedade . Uma propriedade que solicita um valor de retorno de S FALSE de \_ [**IPropertyStoreCapabilities::IsPropertyWritable**](/windows/win32/api/propsys/nf-propsys-ipropertystorecapabilities-ispropertywritable) ainda pode ser capaz de ser definida por meio de um aplicativo.
+[**IPropertyStoreCapabilities**](/windows/win32/api/propsys/nn-propsys-ipropertystorecapabilities) informa a interface do usuário do Shell se uma determinada propriedade pode ser editada na interface do usuário do Shell. É importante observar que isso se refere apenas à capacidade de editar a propriedade na interface do usuário, não se você pode chamar [**IPropertyStore:: SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)) com êxito na propriedade. Uma propriedade que provokes um valor de retorno de S \_ false de [**IPropertyStoreCapabilities:: IsPropertyWritable**](/windows/win32/api/propsys/nf-propsys-ipropertystorecapabilities-ispropertywritable) ainda pode ser capaz de ser definida por meio de um aplicativo.
 
 
 ```
@@ -803,21 +803,21 @@ interface IPropertyStoreCapabilities : IUnknown
 
 
 
-[**IsPropertyWritable retorna**](/windows/win32/api/propsys/nf-propsys-ipropertystorecapabilities-ispropertywritable) **S \_ OK** para indicar que os usuários finais devem ter permissão para editar a propriedade diretamente; S \_ FALSE indica que eles não devem. S \_ FALSE pode significar que os aplicativos são responsáveis por escrever a propriedade, não os usuários. O Shell desabilita a edição de controles conforme apropriado com base nos resultados de chamadas para esse método. Presume-se que um manipulador que não implementa [**IPropertyStoreCapabilities**](/windows/win32/api/propsys/nn-propsys-ipropertystorecapabilities) dá suporte a metadados abertos por meio de suporte para a escrita de qualquer propriedade.
+[**IsPropertyWritable**](/windows/win32/api/propsys/nf-propsys-ipropertystorecapabilities-ispropertywritable) retorna **S \_ OK** para indicar que os usuários finais devem ter permissão para editar a propriedade diretamente; S \_ false indica que eles não deveriam. \_O falso pode significar que os aplicativos são responsáveis por gravar a propriedade, não pelos usuários. O Shell desabilita os controles de edição conforme apropriado, com base nos resultados de chamadas para esse método. Um manipulador que não implementa [**IPropertyStoreCapabilities**](/windows/win32/api/propsys/nn-propsys-ipropertystorecapabilities) é considerado para dar suporte a metadados abertos por meio do suporte para a gravação de qualquer propriedade.
 
-Se você estiver criando um manipulador que lida apenas com propriedades somente leitura, deverá implementar o método **Initialize** ([**IInitializeWithStream,**](/windows/win32/api/propsys/nn-propsys-iinitializewithstream) [**IInitializeWithItem**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinitializewithitem)ou [**IInitializeWithFile**](/windows/win32/api/propsys/nn-propsys-iinitializewithfile)) para que ele retorne STG E ACCESSDENIED quando chamado com o sinalizador \_ \_ STGM \_ READWRITE.
+Se você estiver criando um manipulador que manipula somente as propriedades somente leitura, deverá implementar o método **Initialize** ([**IInitializeWithStream**](/windows/win32/api/propsys/nn-propsys-iinitializewithstream), [**IInitializeWithItem**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinitializewithitem)ou [**IINITIALIZEWITHFILE**](/windows/win32/api/propsys/nn-propsys-iinitializewithfile)) para que ele retorne STG \_ E \_ ACCESSDENIED quando chamado com o sinalizador de STGM \_ ReadWrite.
 
-Algumas propriedades têm seu [atributo isInnate](./propdesc-schema-typeinfo.md) definido como **true.** As propriedades inatas têm as seguintes características:
+Algumas propriedades têm seu atributo [isInnate](./propdesc-schema-typeinfo.md) definido como **true**. As propriedades inato têm as seguintes características:
 
--   A propriedade geralmente é calculada de alguma forma. Por exemplo, `System.Image.BitDepth` é calculado da própria imagem.
--   Alterar a propriedade não faria sentido sem alterar o arquivo. Por exemplo, alterar `System.Image.Dimensions` não resize a imagem, portanto, não faz sentido permitir que o usuário a altere.
--   Em alguns casos, essas propriedades são fornecidas automaticamente pelo sistema. Os exemplos incluem , que é fornecido pelo sistema de arquivos e , que é baseado em com quem o usuário `System.DateModified` `System.SharedWith` está compartilhando o arquivo.
+-   A propriedade geralmente é calculada de alguma forma. Por exemplo, `System.Image.BitDepth` é calculado a partir da própria imagem.
+-   A alteração da propriedade não faz sentido sem alterar o arquivo. Por exemplo, `System.Image.Dimensions` a alteração não redimensionaria a imagem, portanto, não faz sentido permitir que o usuário a altere.
+-   Em alguns casos, essas propriedades são fornecidas automaticamente pelo sistema. Os exemplos incluem `System.DateModified` , que é fornecido pelo sistema de arquivos, e `System.SharedWith` , que se baseia em quem o usuário está compartilhando o arquivo.
 
-Devido a essas características, as propriedades marcadas como *IsInnate* são fornecidas ao usuário na interface do usuário do Shell apenas como propriedades somente leitura. Se uma propriedade for marcada como *IsInnate*, o sistema de propriedades não armazenará essa propriedade no manipulador de propriedades. Portanto, os manipuladores de propriedades não precisam de código especial para levar em conta essas propriedades em suas implementações. Se o valor do *atributo IsInnate* não for declarado explicitamente para uma propriedade específica, o valor padrão será **false.**
+Devido a essas características, as propriedades marcadas como *IsInnate* são fornecidas ao usuário na interface de usuário do Shell somente como propriedades somente leitura. Se uma propriedade estiver marcada como *IsInnate*, o sistema de propriedades não armazenará essa propriedade no manipulador de propriedades. Portanto, os manipuladores de propriedade não precisam de código especial para considerar essas propriedades em suas implementações. Se o valor do atributo *IsInnate* não for explicitamente declarado para uma determinada propriedade, o valor padrão será **false**.
 
 ## <a name="registering-and-distributing-property-handlers"></a>Registrando e distribuindo manipuladores de propriedade
 
-Com o manipulador de propriedades implementado, ele deve ser registrado e sua extensão de nome de arquivo associada ao manipulador. Para obter mais informações, [consulte Registrando e distribuindo manipuladores de propriedade](./prophand-reg-dist.md).
+Com o manipulador de propriedade implementado, ele deve ser registrado e sua extensão de nome de arquivo associada ao manipulador. Para obter mais informações, consulte [registrando e distribuindo manipuladores de propriedade](./prophand-reg-dist.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -826,7 +826,7 @@ Com o manipulador de propriedades implementado, ele deve ser registrado e sua ex
 [Noções básicas sobre manipuladores de propriedade](./building-property-handlers-properties.md)
 </dt> <dt>
 
-[Usando nomes de tipo](./building-property-handlers-user-friendly-kind-names.md)
+[Usando nomes de tipos](./building-property-handlers-user-friendly-kind-names.md)
 </dt> <dt>
 
 [Usando listas de propriedades](./building-property-handlers-property-lists.md)
@@ -835,7 +835,7 @@ Com o manipulador de propriedades implementado, ele deve ser registrado e sua ex
 [Registrando e distribuindo manipuladores de propriedade](./prophand-reg-dist.md)
 </dt> <dt>
 
-[Práticas recomendadas e perguntas frequentes do manipulador de propriedades](./prophand-bestprac-faq.md)
+[Práticas recomendadas e perguntas frequentes do manipulador de propriedades](./prophand-bestprac-faq.yml)
 </dt> </dl>
 
  

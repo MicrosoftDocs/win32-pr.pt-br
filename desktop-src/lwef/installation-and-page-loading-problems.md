@@ -4,18 +4,18 @@ description: Problemas de instalação e carregamento de página
 ms.assetid: 1611c3f1-0411-4631-a64c-e7637fc7edd9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c9775e6a9afa957867d5279b9faaf506e32757f
-ms.sourcegitcommit: c2a1c4314550ea9bd202d28adfcc7bfe6180932f
+ms.openlocfilehash: 3139a9224f88f49a31b1f71a981d1b49b3e42127
+ms.sourcegitcommit: ecd0ba4732f5264aab9baa2839c11f7fea36318f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "105788089"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "113481941"
 ---
 # <a name="installation-and-page-loading-problems"></a>Problemas de instalação e carregamento de página
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
-### <a name="when-i-attempt-to-install-microsoft-agent-on-microsoft-windows-nt-i-get-a-message-indicating-that-i-need-to-be-an-administrator"></a>Quando tento instalar o Microsoft Agent no Microsoft Windows NT, recebo uma mensagem indicando que preciso ser um administrador.
+### <a name="when-i-attempt-to-install-microsoft-agent-on-microsoft-windows-nt-i-get-a-message-indicating-that-i-need-to-be-an-administrator"></a>quando tento instalar o microsoft Agent no microsoft Windows NT, recebo uma mensagem indicando que preciso ser um administrador.
 
 Como o Microsoft Agent grava arquivos no diretório do sistema quando ele é instalado, você deve ter privilégios de administrador (não de usuário) para instalar o.
 
@@ -27,16 +27,16 @@ A instalação do Microsoft Agent requer a instalação correta do Regsvr32.exe,
 
 Uma das condições a seguir pode fazer com que a mensagem seja exibida:
 
--   As opções de segurança do Microsoft Internet Explorer devem ser definidas para habilitar os controles e plug-ins do ActiveX. Verifique a página de segurança do navegador. No Microsoft Internet Explorer, abra o menu Exibir, escolha opções, clique na guia Segurança e verifique se a caixa de seleção Habilitar controles ActiveX e Plug-Ins está marcada.
--   Você está executando em um sistema Windows 9x ou Windows NT de inicialização dupla e instalou o Microsoft Agent em um sistema operacional, mas está tentando acessar a página do outro sistema operacional. Embora os sistemas operacionais possam compartilhar diretórios e arquivos, as informações de registro usadas pelo Microsoft Agent não são compartilhadas, portanto, você deve instalar o Microsoft Agent no sistema operacional usado para acessar as páginas da Web com o caractere em script.
+-   as opções de segurança do Microsoft Internet Explorer devem ser definidas para habilitar ActiveX controles e plug-ins. Verifique a página de segurança do navegador. no Microsoft Internet Explorer, abra o menu exibir, escolha opções, clique na guia segurança e verifique se a caixa de seleção habilitar ActiveX controles e Plug-Ins está marcada.
+-   você está executando em um sistema Windows 9x ou Windows NT de inicialização dupla e instalou o Microsoft Agent em um sistema operacional, mas está tentando acessar a página do outro sistema operacional. Embora os sistemas operacionais possam compartilhar diretórios e arquivos, as informações de registro usadas pelo Microsoft Agent não são compartilhadas, portanto, você deve instalar o Microsoft Agent no sistema operacional usado para acessar as páginas da Web com o caractere em script.
 
 ### <a name="when-i-attempt-to-load-a-page-scripted-for-microsoft-agent-nothing-happens"></a>Quando tento carregar uma página com script para o Microsoft Agent, nada acontece.
 
 Isso pode ocorrer se uma das seguintes condições existir:
 
--   Verifique as opções de segurança do navegador. Seu navegador deve ser definido para habilitar o carregamento de scripts ActiveX e a reprodução de controles ActiveX.
+-   Verifique as opções de segurança do navegador. seu navegador deve ser definido para habilitar o carregamento de ActiveX scripts e a reprodução de controles de ActiveX.
 -   Se estiver acessando páginas com script com o Microsoft Agent e usando o Microsoft Internet Explorer, você deverá ter a versão 3, 2 ou posterior (Baixe a versão mais recente do Internet Explorer em [https://www.microsoft.com/windows/ie/](https://www.microsoft.com/windows/internet-explorer/default.aspx) <https://www.microsoft.com/windows/ie/> ). No Microsoft Internet Explorer, abra o menu Exibir, escolha opções, clique na guia Segurança e marque todas as caixas de seleção de conteúdo ativo.
--   Um miniaplicativo Java na página também pode causar esse erro. Para executar o Microsoft Agent na mesma página que um miniaplicativo Java requer a versão 2,0 da máquina virtual (VM) da Microsoft. Para obter mais informações, consulte as [perguntas frequentes sobre programação/script](programming-scripting-faq.md).
+-   Um miniaplicativo Java na página também pode causar esse erro. Para executar o Microsoft Agent na mesma página que um miniaplicativo Java requer a versão 2,0 da máquina virtual (VM) da Microsoft. Para obter mais informações, consulte as [perguntas frequentes sobre programação/script](programming-scripting-faq.yml).
 
 ### <a name="when-i-attempt-to-load-a-page-scripted-for-microsoft-agent-i-get-the-message-unable-to-initialize-microsoft-agent"></a>Quando tento carregar uma página com script para o Microsoft Agent, recebo a mensagem "não é possível inicializar o Microsoft Agent".
 
@@ -48,11 +48,11 @@ Isso pode ser exibido se você tentar instalar o Microsoft Agent no Microsoft In
 
 ### <a name="when-i-attempt-to-load-a-page-scripted-for-microsoft-agent-using-netscape-navigator-or-other-internet-browsers-i-get-errors"></a>Quando tento carregar uma página com script para o Microsoft Agent usando o Netscape Navigator (ou outros navegadores da Internet), recebo erros.
 
-O Microsoft Agent é implementado usando interfaces ActiveX. Você pode usá-lo somente com um navegador (como o Microsoft Internet Explorer) que dá suporte à inserção de objetos ActiveX por meio de script em uma página e somente em sistemas que executam o Microsoft Windows 95, Windows 98 e Windows NT 4,0 (ou posterior). Se você não estiver usando o Microsoft Internet Explorer ( [https://www.microsoft.com/windows/ie/](https://www.microsoft.com/windows/internet-explorer/default.aspx) ), consulte o fornecedor do seu navegador para obter mais informações sobre o suporte do ActiveX.
+o Microsoft Agent é implementado usando interfaces ActiveX. você pode usá-lo somente com um navegador (como o Microsoft Internet Explorer) que dá suporte à inserção de objetos de ActiveX por meio de script em uma página e somente em sistemas que executam o Microsoft Windows 95, Windows 98 e Windows NT 4,0 (ou posterior). se você não estiver usando o Microsoft Internet Explorer ( [https://www.microsoft.com/windows/ie/](https://www.microsoft.com/windows/internet-explorer/default.aspx) ), consulte o fornecedor do seu navegador para obter mais informações sobre suporte ActiveX.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,0 +1,141 @@
+### YamlMime:FAQ
+metadata:
+  description: Este artigo inclui práticas recomendadas e perguntas frequentes sobre como criar e registrar manipuladores de propriedade para trabalhar com o Windows de propriedades.
+  ms.assetid: E583A00B-F615-41c8-AECF-061F1396DB9A
+  title: Práticas recomendadas e perguntas frequentes do manipulador de propriedades
+  ms.topic: article
+  ms.date: 05/31/2018
+  ms.openlocfilehash: 6e1b7d22516b1573562b25f2889b6d1ba703483c
+  ms.sourcegitcommit: ecd0ba4732f5264aab9baa2839c11f7fea36318f
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 07/07/2021
+  ms.locfileid: "113483643"
+title: Práticas recomendadas e perguntas frequentes do manipulador de propriedades
+summary: >
+  Este tópico explica como criar e registrar manipuladores de propriedades para trabalhar com o Windows de propriedades.
+
+
+  Este tópico é organizado da seguinte forma:
+
+
+  -   [Práticas recomendadas](#best-practices)
+      -   [Substituindo propriedades do sistema de arquivos](#overriding-file-system-properties)
+      -   [Armazenar propriedades em formatos de arquivo baseados em XML](#storing-properties-in-xml-based-file-formats)
+      -   [Propriedades computadas](#computed-properties)
+  -   [Perguntas frequentes](#frequently-asked-questions)
+
+  -   [Tópicos relacionados](#related-topics)
+sections:
+- name: Práticas Recomendadas
+  questions:
+  - question: >
+      Substituindo propriedades do sistema de arquivos
+    answer: >
+      Algumas propriedades para arquivos são fornecidas pela fonte de dados do sistema de arquivos, como:
+
+
+      -   PKEY \_ FileName
+
+      -   Extensão \_ PKEY
+
+      -   PKEY \_ ModifiedTime
+
+
+      Em geral, os manipuladores de propriedade não podem fornecer valores para essas propriedades. No entanto, em alguns casos, essas propriedades podem ser substituídos com base nas informações de registro fornecidas pelo manipulador de propriedades. Manipuladores de propriedades populam CLSID RAIZ DE CLASSES **\_ \_** \\ **HKEY** \\ *{handler clsid}* \\ **OverrideFileSystemProperties** com os nomes das propriedades que eles querem substituir. Isso é limitado a um conjunto fixo de propriedades mostrado na lista a seguir da qual o sistema tem conhecimento.
+
+
+      Há suporte para a substituição para os seguintes valores de propriedade:
+
+
+      -   [System.Kind](./props-system-kind.md)
+
+      -   [System.FileName](./props-system-filename.md)
+
+      -   [System.IsPinnedToNameSpaceTree](./props-system-ispinnedtonamespacetree.md)
+
+      -   [System.ItemNameDisplay](./props-system-itemnamedisplay.md)
+
+      -   [System.SFGAOFlags](./props-system-sfgaoflags.md)
+
+      -   [System.ItemPathDisplay](./props-system-itempathdisplay.md)
+
+      -   [System.ItemPathDisplayNarrow](./props-system-itempathdisplaynarrow.md)
+
+      -   [System.ItemFolderNameDisplay](./props-system-itemfoldernamedisplay.md)
+
+      -   [System.ItemFolderPathDisplay](./props-system-itemfolderpathdisplay.md)
+
+      -   [System.ItemFolderPathDisplayNarrow](./props-system-itemfolderpathdisplaynarrow.md)
+
+
+      Para ver uma lista completa de todas as propriedades do Shell, consulte [Propriedades do Shell.](./props.md)
+
+
+      > [!IMPORTANT]
+
+      > Os valores de propriedade substituídos são usados somente quando os arquivos são indexados. Portanto, a navegação de arquivos da fonte de dados do sistema de arquivos não revela os valores substituídos.
+
+       
+  - question: >
+      Armazenar propriedades em formatos de arquivo baseados em XML
+    answer: >
+      Há duas opções básicas disponíveis para armazenar propriedades em formatos de arquivo baseados em XML:
+
+
+      -   Armazene cada propriedade usando elementos XML e atributos de acordo com o esquema XML do documento. Essa abordagem é mais "XML amigável".
+
+      -   Serialize todo o armazenamento de propriedades em um BLOB (objeto binário grande) de memória, converta o BLOB em uma cadeia de caracteres codificada em base64 e armazene essa cadeia de caracteres no XML. Essa é a mais simples das duas abordagens e pode ser usada para fornecer trivialmente suporte para metadados abertos.
+
+
+      Alguns manipuladores podem combinar essas abordagens, armazenar alguns valores importantes no formato XML padrão e armazenar o restante em um BLOB, por exemplo.
+  - question: >
+      Propriedades computadas
+    answer: >
+      Algumas propriedades são derivadas de atributos específicos de um arquivo. Por exemplo, a [propriedade System.Image.Dimensions](./props-system-image-dimensions.md) é determinada pelas dimensões reais da imagem em um arquivo de imagem. Como esses valores de propriedade não podem ser alterados pelo manipulador de propriedades, eles são, portanto, `isInnate="true"` marcados na descrição da propriedade. Outras propriedades são computadas de uma parte de uma propriedade específica ou agregando os valores de várias propriedades. Como as atualizações dessas propriedades "computadas" criariam ambiguidade sobre como os valores de "origem" devem ser alterados, as propriedades computadas devem ser marcadas na descrição da propriedade ou relatadas como somente `isInnate="true"` leitura. A última opção está disponível instruindo o manipulador a retornar S FALSE de \_ [**IPropertyStoreCapabilities::IsPropertyWritable.**](/windows/win32/api/propsys/nf-propsys-ipropertystorecapabilities-ispropertywritable)
+- name: Perguntas frequentes
+  questions:
+  - question: >
+      Por que meu manipulador de propriedades não está sendo carregado pelo indexador Windows Search?
+    answer: >
+      O Windows Search é executado como um serviço do sistema e não pode carregar DLLs armazenadas no diretório de perfil do usuário. Se você estiver criando e depurando usando Microsoft Visual Studio, ele colocará a DLL em seu perfil de usuário (e, portanto, ela não será carregada pelo indexador). Para resolver isso, copie sua DLL fora da pasta de perfil (por exemplo, em C: Arquivos de Programas **\\ \\ YourAppName)** e registre-a lá.
+
+
+      Para obter diretrizes mais [específicas](../search/-search-3x-wds-extidx-propertyhandlers.md)sobre como desenvolver manipuladores de propriedades para trabalhar com o indexador Windows Search, consulte Desenvolvendo manipuladores de propriedades para Windows Search .
+  - question: >
+      Quais propriedades devem ser descobertas por meio dos métodos de enumeração 'IPropertyStore::GetCount' e 'IPropertyStore::GetAt'?
+    answer: "Nem todos os clientes de objetos de armazenamento de propriedades usam esses métodos. Alguns clientes estão cientes das propriedades que planejam solicitar diretamente (por nome PKEY) ou recebem informações de propriedade por meio de uma lista de descrições de propriedade. Os métodos de descoberta de propriedade suppportam vários outros cenários. Se uma propriedade não precisar participar desses cenários, ela não precisará ser enumerada. Portanto, um manipulador de propriedades pode produzir um valor VAZIO não VT para propriedades que não são descobertas por meio dos métodos \\_ [**IPropertyStore::GetCount**](/previous-versions/windows/desktop/legacy/bb761472(v=vs.85)) e [**IPropertyStore::GetAt.**](/previous-versions/windows/desktop/legacy/bb761471(v=vs.85))\n\nNo entanto, as propriedades deverão ser visíveis por meio desses métodos se qualquer uma das seguintes condições for atendida:\n\n- **Se a propriedade for indexada para que ela seja pesquisável:** Isso significa que ele está incluído no armazenamento de propriedades Windows Search (denotado por no esquema de descrição da propriedade) ou disponível para pesquisas de texto `isColumn = \"true\"` completo ( `inInvertedIndex = \"true\"` ). Na ausência desses sinalizadores ou na ausência de uma descrição da propriedade, as propriedades do tipo \"cadeia de caracteres\" serão adicionadas automaticamente ao índice invertido para habilitar a pesquisa. Como a lista de propriedades conhecidas (aquelas com descrições de propriedade instaladas) no sistema de propriedades é muito grande (mais de 800 propriedades), seria impraticável perguntar a cada manipulador de propriedades para cada propriedade registrada no sistema de propriedades. Em vez disso, o processo de indexação enumera as propriedades relevantes do manipulador de propriedades para cada item que ele indexa e usa os valores das propriedades enumeradas para criar o índice de texto completo.\n- **Se a propriedade deve ser copiada quando o conjunto de propriedades do item é duplicado:** Para implementar uma função \"copiar um conjunto de propriedades\", o item de origem torna as propriedades que devem ser copiadas visíveis por meio dos métodos [**IPropertyStore::GetCount**](/previous-versions/windows/desktop/legacy/bb761472(v=vs.85)) e [**IPropertyStore::GetAt.**](/previous-versions/windows/desktop/legacy/bb761471(v=vs.85)) As propriedades que não precisam ser copiadas ou não fazem sentido ser copiadas não devem ser incluídas.\n- **Se o valor da propriedade não estiver vazio (VT \\_ EMPTY): os** valores de propriedade vazios não serão úteis para clientes. Quando os clientes tentam retornar valores de propriedade vazios, um valor de VT \\_ EMPTY é retornado. Portanto, as propriedades com valores vazios não devem ser enumeradas.\n-   **Se a propriedade deve ser removida ao invocar a função \"remover propriedades\":** Esse recurso existe para proteger a privacidade; ele descobre todos os valores do manipulador de propriedades por meio da enumeração e remove cada um selecionado para remoção pelo usuário.\n> [!Note]  \n> Enumerar propriedades não comunica o conjunto de propriedades que um manipulador de propriedades específico dá suporte se o manipulador dá suporte a um esquema fixo (e não a metadados abertos). Em vez disso, esses manipuladores devem documentar o conjunto de propriedades que eles suportam.\n\n \n"
+  - question: >
+      Como fazer quais formatos de arquivo são suportados por metadados abertos?
+    answer: >
+      Para obter informações sobre o suporte para metadados abertos, consulte "Tipos de arquivo que suportam metadados abertos" em [Tipos de arquivo](../shell/fa-file-types.md).
+  - question: >
+      Os VT_NULL podem ser armazenados usando um manipulador de propriedades?
+    answer: >
+      Não. Os valores NULL da VT serão convertidos em VT EMPTY em chamadas para \_ \_ [**IPropertyStore::GetValue**](/previous-versions/windows/desktop/legacy/bb761473(v=vs.85)) e [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)).
+  - question: >
+      Quais formatos de cadeia de caracteres de data são suportados pela função 'PropVariantChangeType'?
+    answer: >
+      Em geral, as propriedades que representam valores de data/hora devem ser representadas usando o \_ FILETIME da VT. No entanto, muitas fontes de dados fornecem essas informações no formato de cadeia de caracteres. A API [**auxiliar PropVariantChangeType**](/windows/win32/api/propvarutil/nf-propvarutil-propvariantchangetype) dá suporte à coerção de alguns formatos de data de cadeia de caracteres em [**valores FILETIME,**](/windows/win32/api/minwinbase/ns-minwinbase-filetime) conforme mostrado na tabela a seguir.
+
+
+
+
+      | Formato                  | Windows Vista, Windows XP e Microsoft Windows Desktop Search (WDS) | Windows 7 | Observações                                                                                                                                                                                                 |
+
+      |-------------------------|-----------------------------------------------------------------------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+      | aaaa/mm/dd:hh:mm:ss.uuu | Sim                                                                   | Sim       | UTC; y=year, m=month, d=date, h=hours (relógio de 24 horas), m=minutes, s=seconds, u=microssegundos                                                                                                           |
+
+      | aaaa-mm-ddThh:mm:ssZ    | Não                                                                    | Sim       | **Especificação de formato ISO8601** UTC (anotado pelo indicador de fuso horário 'Z'); y=year, m=month, d=date, h=hours (relógio de 24 horas), m=minutes, s=seconds; 'T' é umlimidor para a parte de tempo.<br/> |
+  - question: >
+      É possível criar um manipulador de propriedades somente leitura?
+    answer: >
+      Sim. Algumas implementações de manipulador de propriedades não suportam a escrita de valores de propriedade. Esses manipuladores de propriedade devem retornar STGM E ACCESSDENIED em chamadas para \_ \_ **IInitializeXXX::Initialize** que passam STGM READWRITE ou em qualquer chamada para \_ [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)).
+
+
+      Todos os manipuladores de propriedade abertos no modo STGM READ devem retornar \_ STGM E ACCESSDENIED em chamadas \_ para \_ [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)).
+  - question: >
+      Um manipulador de propriedades pode tratar uma propriedade como somente leitura, mesmo que o esquema indique que a propriedade é gravável?
+    answer: "Sim. No sistema de esquema, as propriedades são anotadas como somente leitura (incluindo aquelas com `isInnate = \"true\"` ) ou leitura/gravação. Os manipuladores de propriedade que não dão suporte à gravação de uma determinada propriedade que o esquema diz devem ser graváveis devem implementar [**IPropertyStoreCapabilities**](/windows/win32/api/propsys/nn-propsys-ipropertystorecapabilities) e retornar S \\_ false em chamadas para [**IPropertyStoreCapabilities:: IsPropertyWritable**](/windows/win32/api/propsys/nf-propsys-ipropertystorecapabilities-ispropertywritable) para essa propriedade. Isso indica que no contexto desse manipulador e esse arquivo, a propriedade não é gravável.\n\n> [!Note]  \n> A ação inversa não é possível. Não é possível habilitar um manipulador de propriedades para gravar uma propriedade marcada como somente leitura no esquema\n"
+additionalContent: "\n## <a name=\"related-topics\"></a>Tópicos relacionados\n\n[Noções básicas sobre manipuladores de propriedade](./building-property-handlers-properties.md)\n\n[Usando nomes de tipos](./building-property-handlers-user-friendly-kind-names.md)\n\n[Usando listas de propriedades](./building-property-handlers-property-lists.md)\n\n[Inicializando manipuladores de propriedade](./building-property-handlers-property-handlers.md)\n\n[Registrando e distribuindo manipuladores de propriedade](./prophand-reg-dist.md)"

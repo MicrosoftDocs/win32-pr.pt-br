@@ -1,19 +1,19 @@
 ---
-description: Este artigo explica como registrar e distribuir manipuladores de propriedade para trabalhar com o sistema de propriedades do Windows.
+description: Este artigo explica como registrar e distribuir manipuladores de propriedades para trabalhar com o Windows de propriedades.
 ms.assetid: E6E81E04-9CC1-4df5-9A87-DE0CBD177356
 title: Registrando e distribuindo manipuladores de propriedade
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cffd6169ecbf371e49e27c555f468cdc03e2c3fc
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: ce53f0805c4db5efe38e77ba4e7d1ab5b331c83f
+ms.sourcegitcommit: ecd0ba4732f5264aab9baa2839c11f7fea36318f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408339"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "113481921"
 ---
 # <a name="registering-and-distributing-property-handlers"></a>Registrando e distribuindo manipuladores de propriedade
 
-Este tópico explica como criar e registrar manipuladores de propriedade para trabalhar com o sistema de propriedades do Windows.
+Este tópico explica como criar e registrar manipuladores de propriedades para trabalhar com o Windows de propriedades.
 
 Este tópico é organizado da seguinte forma:
 
@@ -56,7 +56,7 @@ Manipuladores de propriedade para um tipo de arquivo específico são normalment
 Manipuladores de propriedade são invocados para cada arquivo em um computador específico. Normalmente, eles são chamados nas seguintes circunstâncias:
 
 -   Durante a indexação do arquivo. Isso é feito fora do processo, em um processo isolado com direitos restritos.
--   Quando os arquivos são acessados Windows Explorer com a finalidade de ler e escrever valores de propriedade. Isso é feito em processo.
+-   Quando os arquivos são acessados no Windows Explorer com a finalidade de ler e escrever valores de propriedade. Isso é feito em processo.
 
 ### <a name="guidelines-for-performance-and-reliability"></a>Diretrizes para desempenho e confiabilidade
 
@@ -70,7 +70,7 @@ Tenha em mente as diretrizes a seguir conforme você está desenvolvendo e testa
 
 -   **Escrita de propriedade in-in-place**
 
-    Se possível, ao lidar com arquivos médios ou grandes (várias centenas de KB ou maiores), o formato de arquivo deve ser organizado para que a leitura ou a escrita de valores de propriedade não exigem a leitura de todo o arquivo do disco. Mesmo que o arquivo precise ser procurado, ele não deve ser lido na memória em sua totalidade porque isso sobrecarra o conjunto de trabalho do Windows Explorer ou do indexador Windows Search conforme eles tentam acessar ou indexar esses arquivos. Para obter mais informações, consulte [Inicializando manipuladores de propriedade](./building-property-handlers-property-handlers.md).
+    Se possível, ao lidar com arquivos médios ou grandes (várias centenas de KB ou maiores), o formato de arquivo deve ser organizado para que a leitura ou a escrita de valores de propriedade não exigem a leitura de todo o arquivo do disco. Mesmo que o arquivo precise ser procurado, ele não deve ser lido na memória em sua totalidade porque isso sobrecarra o conjunto de trabalho do Windows Explorer ou do indexador Windows Search enquanto eles tentam acessar ou indexar esses arquivos. Para obter mais informações, consulte [Inicializando manipuladores de propriedade](./building-property-handlers-property-handlers.md).
 
     Uma técnica útil para fazer isso é colocar o título do arquivo com espaço extra para que, na próxima vez que um valor da propriedade precisar ser gravado, o valor possa ser gravado no local sem a necessidade de reescrever todo o arquivo. Isso requer a funcionalidade ManualSafeSave. Essa abordagem envolve algum risco extra de que a operação de gravação de arquivo possa ser interrompida enquanto a gravação está em andamento (devido a uma falha do sistema ou perda de energia), mas como os tamanhos de propriedade geralmente são pequenos, a probabilidade dessa interrupção é semelhantemente pequena e os ganhos de desempenho que podem ser obtidos por meio da gravação de propriedade in-loco são considerados significativos o suficiente para justificar esse risco adicional. Mesmo assim, você deve ter cuidado para testar extensivamente sua implementação para garantir que seus arquivos não sejam corrompidos caso uma falha surja no decorrer de uma operação de gravação.
 
@@ -82,7 +82,7 @@ Tenha em mente as diretrizes a seguir conforme você está desenvolvendo e testa
 
 -   **Concurrency do manipulador de propriedades**
 
-    Os manipuladores de propriedades e a interface [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) são projetados para acesso serial em vez de simultâneo. Windows Explorer, o indexador Windows Search e todas as outras invocações de manipulador de propriedade da base de código do Windows garantem esse uso. Não deve haver motivo para terceiros usarem um manipulador de propriedades simultaneamente, mas esse comportamento não pode ser garantido. Além disso, embora se espera que o padrão de chamada seja serial, as chamadas podem vir em threads diferentes (por exemplo, quando o objeto está sendo chamado remotamente por meio de COM RPC, como ocorre no indexador). Portanto, as implementações do manipulador de propriedades devem dar suporte a serem chamadas em threads diferentes e, idealmente, não devem sofrer efeitos colaterais quando chamadas simultaneamente. Como o padrão de chamada pretendido é serial, uma implementação trivial usando uma seção crítica deve ser suficiente para atender a esses requisitos na maioria dos casos. É aceitável evitar o bloqueio em chamadas simultâneas usando a [**função TryEnterCriticalSection**](/windows/win32/api/synchapi/nf-synchapi-tryentercriticalsection) para detectar e falhar chamadas simultâneas.
+    Os manipuladores de propriedades e a interface [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) são projetados para acesso serial em vez de simultâneo. Windows Explorer, o indexador Windows Search e todas as outras invocações do manipulador de propriedades da base Windows código garantem esse uso. Não deve haver motivo para terceiros usarem um manipulador de propriedades simultaneamente, mas esse comportamento não pode ser garantido. Além disso, embora se espera que o padrão de chamada seja serial, as chamadas podem vir em threads diferentes (por exemplo, quando o objeto está sendo chamado remotamente por meio de COM RPC, como ocorre no indexador). Portanto, as implementações do manipulador de propriedades devem dar suporte a serem chamadas em threads diferentes e, idealmente, não devem sofrer efeitos colaterais quando chamadas simultaneamente. Como o padrão de chamada pretendido é serial, uma implementação trivial usando uma seção crítica deve ser suficiente para atender a esses requisitos na maioria dos casos. É aceitável evitar o bloqueio em chamadas simultâneas usando a [**função TryEnterCriticalSection**](/windows/win32/api/synchapi/nf-synchapi-tryentercriticalsection) para detectar e falhar chamadas simultâneas.
 
 -   **Concurreência de arquivo**
 
@@ -125,7 +125,7 @@ Tenha em mente as diretrizes a seguir conforme você está desenvolvendo e testa
 [Inicializando manipuladores de propriedades](./building-property-handlers-property-handlers.md)
 </dt> <dt>
 
-[Práticas recomendadas e perguntas frequentes do manipulador de propriedades](./prophand-bestprac-faq.md)
+[Práticas recomendadas e perguntas frequentes do manipulador de propriedades](./prophand-bestprac-faq.yml)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-title: Executando e sincronizando listas de comandos
+title: Como executar e sincronizar listas de comandos
 description: No Microsoft Direct3D 12, o modo imediato de versões anteriores não está mais presente.
 ms.assetid: D5013102-2302-4D66-8F59-079C03BA65FD
 keywords:
@@ -9,14 +9,14 @@ keywords:
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ef910463ba3a771ac142d41309ae590884e3bc9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 90d5362d0f093c7c1034e03d396ad28c40d4d600
+ms.sourcegitcommit: 170bc12e9724d00cecbb96d57c7226c51e135dee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104548324"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "113489175"
 ---
-# <a name="executing-and-synchronizing-command-lists"></a>Executando e sincronizando listas de comandos
+# <a name="executing-and-synchronizing-command-lists"></a>Como executar e sincronizar listas de comandos
 
 No Microsoft Direct3D 12, o modo imediato de versões anteriores não está mais presente. Em vez disso, os aplicativos criam listas de comandos e pacotes e, em seguida, registram conjuntos de comandos de GPU. As filas de comando são usadas para enviar listas de comandos a serem executadas. Esse modelo permite que os desenvolvedores tenham mais controle sobre o uso eficiente da GPU (unidade de processamento gráfico) e da CPU.
 
@@ -72,8 +72,9 @@ O tempo de execução validará a lista de comandos enviados e descartará a cha
 
 Há algumas regras impostas pelo tempo de execução que restringem o acesso de recursos de várias filas de comandos. Essas regras são as seguintes:
 
-<dl> 1. Um recurso não pode ser gravado a partir de várias filas de comandos simultaneamente. Quando um recurso é transferido para um estado gravável em uma fila, ele é considerado exclusivamente de propriedade da fila e deve fazer a transição para um estado de leitura ou comum (consulte os <a href="/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_states">**\_ \_ Estados do recurso D3D12**</a>) antes que ele possa ser acessado por outra fila.  </dl>
-<dl> 2. Quando em um estado de leitura, um recurso pode ser lido de várias filas de comando simultaneamente, incluindo entre processos, com base em seu estado de leitura. </dl>
+1. Um recurso não pode ser gravado a partir de várias filas de comandos simultaneamente. Quando um recurso é transferido para um estado gravável em uma fila, ele é considerado exclusivamente de propriedade da fila e deve fazer a transição para um estado de leitura ou comum (consulte [**D3D12_RESOURCE_STATES**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_states)) antes que ele possa ser acessado por outra fila.
+
+2. Quando em um estado de leitura, um recurso pode ser lido de várias filas de comando simultaneamente, incluindo entre processos, com base em seu estado de leitura.
 
 Para obter mais informações sobre as restrições de acesso de recursos e o uso de barreiras de recursos para sincronizar o acesso aos recursos, consulte [usando barreiras de recursos para sincronizar Estados de recursos](using-resource-barriers-to-synchronize-resource-states-in-direct3d-12.md).
 

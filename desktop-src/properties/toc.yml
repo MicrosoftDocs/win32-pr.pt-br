@@ -1,4 +1,4 @@
-- name: Sistema de propriedades do Windows
+- name: Windows Sistema de propriedades
   href: windows-properties-system.md
   items:
     - name: Visão geral do sistema de propriedades
@@ -9,23 +9,23 @@
         - name: Criando propriedades personalizadas
           href: building-property-handlers-property-schemas.md
           items:
-            - name: Compreendendo o esquema de descrição da propriedade
+            - name: Noções básicas sobre o esquema de descrição da propriedade
               href: propdesc-schema-entry.md
         - name: Implementando manipuladores de propriedade
           href: building-property-handlers.md
           items:
             - name: Noções básicas sobre manipuladores de propriedade
               href: building-property-handlers-properties.md
-            - name: Usando nomes de tipos
+            - name: Usando nomes de tipo
               href: building-property-handlers-user-friendly-kind-names.md
             - name: Usando listas de propriedades
               href: building-property-handlers-property-lists.md
-            - name: Inicializando manipuladores de propriedade
+            - name: Inicializando manipuladores de propriedades
               href: building-property-handlers-property-handlers.md
             - name: Registrando e distribuindo manipuladores de propriedade
               href: prophand-reg-dist.md
             - name: Práticas recomendadas e perguntas frequentes do manipulador de propriedades
-              href: prophand-bestprac-faq.md
+              href: prophand-bestprac-faq.yml
     - name: Referência do sistema de propriedades
       href: property-system-reference.md
       items:
@@ -35,580 +35,580 @@
             - name: Áudio
               href: audio-bumper.md
               items:
-                - name: System. Audio. ChannelCount
+                - name: System.Audio.ChannelCount
                   href: props-system-audio-channelcount.md
-                - name: System. Audio. compactação
+                - name: System.Audio.Compression
                   href: props-system-audio-compression.md
-                - name: System. Audio. EncodingBitrate
+                - name: System.Audio.EncodingBitrate
                   href: props-system-audio-encodingbitrate.md
-                - name: System. Audio. Format
+                - name: System.Audio.Format
                   href: props-system-audio-format.md
-                - name: System. Audio. IsVariableBitRate
+                - name: System.Audio.IsVariableBitRate
                   href: props-system-audio-isvariablebitrate.md
-                - name: System. Audio. Picovalue
+                - name: System.Audio.PeakValue
                   href: props-system-audio-peakvalue.md
-                - name: System. Audio. Sampleize
+                - name: System.Audio.SampleRate
                   href: props-system-audio-samplerate.md
-                - name: System. Audio. Sampleize
+                - name: System.Audio.SampleSize
                   href: props-system-audio-samplesize.md
-                - name: System. Audio. StreamName
+                - name: System.Audio.StreamName
                   href: props-system-audio-streamname.md
-                - name: System. Audio. StreamNumber
+                - name: System.Audio.StreamNumber
                   href: props-system-audio-streamnumber.md
             - name: Calendário
               href: calendar-bumper.md
               items:
-                - name: System. calendário. Duration
+                - name: System.Calendar.Duration
                   href: props-system-calendar-duration.md
-                - name: System. calendário. IsOnline
+                - name: System.Calendar.IsOnline
                   href: props-system-calendar-isonline.md
-                - name: System. Calendar. IsRecurring
+                - name: System.Calendar.IsRecurring
                   href: props-system-calendar-isrecurring.md
-                - name: System. calendário. Location
+                - name: System.Calendar.Location
                   href: props-system-calendar-location.md
-                - name: System. Calendar. OptionalAttendeeAddresses
+                - name: System.Calendar.OptionalAttendeeAddresses
                   href: props-system-calendar-optionalattendeeaddresses.md
-                - name: System. Calendar. OptionalAttendeeNames
+                - name: System.Calendar.OptionalAttendeeNames
                   href: props-system-calendar-optionalattendeenames.md
-                - name: System. Calendar. OrganizerAddress
+                - name: System.Calendar.OrganizerAddress
                   href: props-system-calendar-organizeraddress.md
-                - name: System. Calendar. OrganizerName
+                - name: System.Calendar.OrganizerName
                   href: props-system-calendar-organizername.md
-                - name: System. Calendar. ReminderTime
+                - name: System.Calendar.ReminderTime
                   href: props-system-calendar-remindertime.md
-                - name: System. Calendar. RequiredAttendeeAddresses
+                - name: System.Calendar.RequiredAttendeeAddresses
                   href: props-system-calendar-requiredattendeeaddresses.md
-                - name: System. Calendar. RequiredAttendeeNames
+                - name: System.Calendar.RequiredAttendeeNames
                   href: props-system-calendar-requiredattendeenames.md
-                - name: System. Calendar. Resources
+                - name: System.Calendar.Resources
                   href: props-system-calendar-resources.md
-                - name: System. Calendar. ResponseStatus
+                - name: System.Calendar.ResponseStatus
                   href: props-system-calendar-responsestatus.md
-                - name: System. Calendar. extimeas
+                - name: System.Calendar.ShowTimeAs
                   href: props-system-calendar-showtimeas.md
-                - name: System. Calendar. ShowTimeAsText
+                - name: System.Calendar.ShowTimeAsText
                   href: props-system-calendar-showtimeastext.md
             - name: Comunicação
               href: communication-bumper.md
               items:
-                - name: System. Communication. AccountName
+                - name: System.Communication.AccountName
                   href: props-system-communication-accountname.md
-                - name: System. Communication. DateItemExpires
+                - name: System.Communication.DateItemExpires
                   href: props-system-communication-dateitemexpires.md
-                - name: Sistema. comunicação. direção
+                - name: System.Communication.Direction
                   href: props-system-communication-direction.md
-                - name: System. Communication. FollowupIconIndex
+                - name: System.Communication.FollowupIconIndex
                   href: props-system-communication-followupiconindex.md
-                - name: System. Communication. HeaderItem
+                - name: System.Communication.HeaderItem
                   href: props-system-communication-headeritem.md
-                - name: System. Communication. PolicyTag
+                - name: System.Communication.PolicyTag
                   href: props-system-communication-policytag.md
-                - name: System. Communication. SecurityFlags
+                - name: System.Communication.SecurityFlags
                   href: props-system-communication-securityflags.md
-                - name: Sistema. Communication. sufixo
+                - name: System.Communication.Suffix
                   href: props-system-communication-suffix.md
-                - name: System. Communication. TaskStatus
+                - name: System.Communication.TaskStatus
                   href: props-system-communication-taskstatus.md
-                - name: System. Communication. TaskStatusText
+                - name: System.Communication.TaskStatusText
                   href: props-system-communication-taskstatustext.md
             - name: Computador
               href: computer-bumper.md
               items:
-                - name: System. Computer. DecoratedFreeSpace
+                - name: System.Computer.DecoratedFreeSpace
                   href: props-system-computer-decoratedfreespace.md
             - name: Contact
               href: contact-bumper.md
               items:
-                - name: System. Contact. AccountPictureDynamicVideo
+                - name: System.Contact.AccountPictureDynamicVideo
                   href: props-system-contact-accountpicturedynamicvideo.md
-                - name: System. Contact. AccountPictureLarge
+                - name: System.Contact.AccountPictureLarge
                   href: props-system-contact-accountpicturelarge.md
-                - name: System. Contact. AccountPictureSmall
+                - name: System.Contact.AccountPictureSmall
                   href: props-system-contact-accountpicturesmall.md
-                - name: System. Contact. aniversário
+                - name: System.Contact.Anniversary
                   href: props-system-contact-anniversary.md
-                - name: System. Contact. AssistantName
+                - name: System.Contact.AssistantName
                   href: props-system-contact-assistantname.md
-                - name: System. Contact. AssistantTelephone
+                - name: System.Contact.AssistantTelephone
                   href: props-system-contact-assistanttelephone.md
-                - name: Sistema. contato. aniversário
+                - name: System.Contact.Ario
                   href: props-system-contact-birthday.md
-                - name: System. Contact. BusinessAddress
+                - name: System.Contact.BusinessAddress
                   href: props-system-contact-businessaddress.md
-                - name: System. Contact. BusinessAddress1Country
+                - name: System.Contact.BusinessAddress1Country
                   href: props-system-contact-businessaddress1country.md
-                - name: System. Contact. BusinessAddress1Locality
+                - name: System.Contact.BusinessAddress1Locality
                   href: props-system-contact-businessaddress1locality.md
-                - name: System. Contact. BusinessAddress1PostalCode
+                - name: System.Contact.BusinessAddress1PostalCode
                   href: props-system-contact-businessaddress1postalcode.md
-                - name: System. Contact. BusinessAddress1Region
+                - name: System.Contact.BusinessAddress1Region
                   href: props-system-contact-businessaddress1region.md
-                - name: System. Contact. BusinessAddress1Street
+                - name: System.Contact.BusinessAddress1Dress1Dress
                   href: props-system-contact-businessaddress1street.md
-                - name: System. Contact. BusinessAddress2Country
+                - name: System.Contact.BusinessAddress2Country
                   href: props-system-contact-businessaddress2country.md
-                - name: System. Contact. BusinessAddress2Locality
+                - name: System.Contact.BusinessAddress2Locality
                   href: props-system-contact-businessaddress2locality.md
-                - name: System. Contact. BusinessAddress2PostalCode
+                - name: System.Contact.BusinessAddress2PostalCode
                   href: props-system-contact-businessaddress2postalcode.md
-                - name: System. Contact. BusinessAddress2Region
+                - name: System.Contact.BusinessAddress2Region
                   href: props-system-contact-businessaddress2region.md
-                - name: System. Contact. BusinessAddress2Street
+                - name: System.Contact.BusinessAddress2Dress2Dress
                   href: props-system-contact-businessaddress2street.md
-                - name: System. Contact. BusinessAddress3Country
+                - name: System.Contact.BusinessAddress3Country
                   href: props-system-contact-businessaddress3country.md
-                - name: System. Contact. BusinessAddress3Locality
+                - name: System.Contact.BusinessAddress3Locality
                   href: props-system-contact-businessaddress3locality.md
-                - name: System. Contact. BusinessAddress3PostalCode
+                - name: System.Contact.BusinessAddress3PostalCode
                   href: props-system-contact-businessaddress3postalcode.md
-                - name: System. Contact. BusinessAddress3Region
+                - name: System.Contact.BusinessAddress3Region
                   href: props-system-contact-businessaddress3region.md
-                - name: System. Contact. BusinessAddress3Street
+                - name: System.Contact.BusinessAddress3Dress
                   href: props-system-contact-businessaddress3street.md
-                - name: System. Contact. BusinessAddressCity
+                - name: System.Contact.BusinessAddressCity
                   href: props-system-contact-businessaddresscity.md
-                - name: System. Contact. BusinessAddressCountry
+                - name: System.Contact.BusinessAddressCountry
                   href: props-system-contact-businessaddresscountry.md
-                - name: System. Contact. BusinessAddressPostalCode
+                - name: System.Contact.BusinessAddressPostalCode
                   href: props-system-contact-businessaddresspostalcode.md
-                - name: System. Contact. BusinessAddressPostOfficeBox
+                - name: System.Contact.BusinessAddressPostOfficeBox
                   href: props-system-contact-businessaddresspostofficebox.md
-                - name: System. Contact. BusinessAddressState
+                - name: System.Contact.BusinessAddressState
                   href: props-system-contact-businessaddressstate.md
-                - name: System. Contact. BusinessAddressStreet
+                - name: System.Contact.BusinessAddressDressDress
                   href: props-system-contact-businessaddressstreet.md
-                - name: System. Contact. BusinessEmailAddresses
+                - name: System.Contact.BusinessEmailAddresses
                   href: props-system-contact-businessemailaddresses.md
-                - name: System. Contact. BusinessFaxNumber
+                - name: System.Contact.BusinessFaxNumber
                   href: props-system-contact-businessfaxnumber.md
-                - name: System. Contact. BusinessHomePage
+                - name: System.Contact.BusinessHomePage
                   href: props-system-contact-businesshomepage.md
-                - name: System. Contact. BusinessTelephone
+                - name: System.Contact.BusinessTelephone
                   href: props-system-contact-businesstelephone.md
-                - name: System. Contact. CallbackTelephone
+                - name: System.Contact.CallbackTelephone
                   href: props-system-contact-callbacktelephone.md
-                - name: System. Contact. CarTelephone
+                - name: System.Contact.CarTelephone
                   href: props-system-contact-cartelephone.md
-                - name: Sistema. Contact. filhos
+                - name: System.Contact.Children
                   href: props-system-contact-children.md
-                - name: System. Contact. CompanyMainTelephone
+                - name: System.Contact.CompanyMainTelephone
                   href: props-system-contact-companymaintelephone.md
-                - name: System. Contact. ConnectedServiceDisplayName
+                - name: System.Contact.ConnectedServiceDisplayName
                   href: props-system-contact-connectedservicedisplayname.md
-                - name: System. Contact. ConnectedServiceIdentities
+                - name: System.Contact.ConnectedServiceIdentities
                   href: props-system-contact-connectedserviceidentities.md
-                - name: System. Contact. ConnectedServiceName
+                - name: System.Contact.ConnectedServiceName
                   href: props-system-contact-connectedservicename.md
-                - name: System. Contact. ConnectedServiceSupportedActions
+                - name: System.Contact.ConnectedServiceSupportedActions
                   href: props-system-contact-connectedservicesupportedactions.md
-                - name: System. Contact. datasuppliers
+                - name: System.Contact.DataSuppliers
                   href: props-system-contact-datasuppliers.md
-                - name: Sistema. contato. Department
+                - name: System.Contact.Department
                   href: props-system-contact-department.md
-                - name: System. Contact. DisplayBusinessPhoneNumbers
+                - name: System.Contact.DisplayBusinessPhoneNumbers
                   href: props-system-contact-displaybusinessphonenumbers.md
-                - name: System. Contact. DisplayHomePhoneNumbers
+                - name: System.Contact.DisplayHomePhoneNumbers
                   href: props-system-contact-displayhomephonenumbers.md
-                - name: System. Contact. DisplayMobilePhoneNumbers
+                - name: System.Contact.DisplayMobilePhoneNumbers
                   href: props-system-contact-displaymobilephonenumbers.md
-                - name: System. Contact. DisplayOtherPhoneNumbers
+                - name: System.Contact.DisplayOtherPhoneNumbers
                   href: props-system-contact-displayotherphonenumbers.md
-                - name: System. Contact. EmailAddress
+                - name: System.Contact.EmailAddress
                   href: props-system-contact-emailaddress.md
-                - name: System. Contact. EmailAddress2
+                - name: System.Contact.EmailAddress2
                   href: props-system-contact-emailaddress2.md
-                - name: System. Contact. EmailAddress3
+                - name: System.Contact.EmailAddress3
                   href: props-system-contact-emailaddress3.md
-                - name: System. Contact. EmailAddresss
+                - name: System.Contact.EmailAddresses
                   href: props-system-contact-emailaddresses.md
-                - name: System. contato. EmailName
+                - name: System.Contact.EmailName
                   href: props-system-contact-emailname.md
-                - name: System. Contact. FileAsName
+                - name: System.Contact.FileAsName
                   href: props-system-contact-fileasname.md
-                - name: System. Contact. FirstName
+                - name: System.Contact.FirstName
                   href: props-system-contact-firstname.md
-                - name: System. Contact. FullName
+                - name: System.Contact.FullName
                   href: props-system-contact-fullname.md
-                - name: System. Contact. sexo
+                - name: System.Contact.Gender
                   href: props-system-contact-gender.md
-                - name: System. Contact. Gênerovalue
+                - name: System.Contact.GenderValue
                   href: props-system-contact-gendervalue.md
-                - name: System. Contact. Hobbies
+                - name: System.Contact.Ltds
                   href: props-system-contact-hobbies.md
-                - name: System. Contact. HomeAddress
+                - name: System.Contact.HomeAddress
                   href: props-system-contact-homeaddress.md
-                - name: System. Contact. HomeAddress1Country
+                - name: System.Contact.HomeAddress1Country
                   href: props-system-contact-homeaddress1country.md
-                - name: System. Contact. HomeAddress1Locality
+                - name: System.Contact.HomeAddress1Locality
                   href: props-system-contact-homeaddress1locality.md
-                - name: System. Contact. HomeAddress1PostalCode
+                - name: System.Contact.HomeAddress1PostalCode
                   href: props-system-contact-homeaddress1postalcode.md
-                - name: System. Contact. HomeAddress1Region
+                - name: System.Contact.HomeAddress1Region
                   href: props-system-contact-homeaddress1region.md
-                - name: System. Contact. HomeAddress1Street
+                - name: System.Contact.HomeAddress1Dress
                   href: props-system-contact-homeaddress1street.md
-                - name: System. Contact. HomeAddress2Country
+                - name: System.Contact.HomeAddress2Country
                   href: props-system-contact-homeaddress2country.md
-                - name: System. Contact. HomeAddress2Locality
+                - name: System.Contact.HomeAddress2Locality
                   href: props-system-contact-homeaddress2locality.md
-                - name: System. Contact. HomeAddress2PostalCode
+                - name: System.Contact.HomeAddress2PostalCode
                   href: props-system-contact-homeaddress2postalcode.md
-                - name: System. Contact. HomeAddress2Region
+                - name: System.Contact.HomeAddress2Region
                   href: props-system-contact-homeaddress2region.md
-                - name: System. Contact. HomeAddress2Street
+                - name: System.Contact.HomeAddress2Dress2Dress
                   href: props-system-contact-homeaddress2street.md
-                - name: System. Contact. HomeAddress3Country
+                - name: System.Contact.HomeAddress3Country
                   href: props-system-contact-homeaddress3country.md
-                - name: System. Contact. HomeAddress3Locality
+                - name: System.Contact.HomeAddress3Locality
                   href: props-system-contact-homeaddress3locality.md
-                - name: System. Contact. HomeAddress3PostalCode
+                - name: System.Contact.HomeAddress3PostalCode
                   href: props-system-contact-homeaddress3postalcode.md
-                - name: System. Contact. HomeAddress3Region
+                - name: System.Contact.HomeAddress3Region
                   href: props-system-contact-homeaddress3region.md
-                - name: System. Contact. HomeAddress3Street
+                - name: System.Contact.HomeAddress3Dress
                   href: props-system-contact-homeaddress3street.md
-                - name: System. Contact. HomeAddressCity
+                - name: System.Contact.HomeAddressCity
                   href: props-system-contact-homeaddresscity.md
-                - name: System. Contact. HomeAddressCountry
+                - name: System.Contact.HomeAddressCountry
                   href: props-system-contact-homeaddresscountry.md
-                - name: System. Contact. HomeAddressPostalCode
+                - name: System.Contact.HomeAddressPostalCode
                   href: props-system-contact-homeaddresspostalcode.md
-                - name: System. Contact. HomeAddressPostOfficeBox
+                - name: System.Contact.HomeAddressPostOfficeBox
                   href: props-system-contact-homeaddresspostofficebox.md
-                - name: System. Contact. HomeAddressState
+                - name: System.Contact.HomeAddressState
                   href: props-system-contact-homeaddressstate.md
-                - name: System. Contact. HomeAddressStreet
+                - name: System.Contact.HomeAddressDress
                   href: props-system-contact-homeaddressstreet.md
-                - name: System. Contact. HomeEmailAddresses
+                - name: System.Contact.HomeEmailAddresses
                   href: props-system-contact-homeemailaddresses.md
-                - name: System. Contact. HomeFaxNumber
+                - name: System.Contact.HomeFaxNumber
                   href: props-system-contact-homefaxnumber.md
-                - name: System. Contact. HomeTelephone
+                - name: System.Contact.HomeTelephone
                   href: props-system-contact-hometelephone.md
-                - name: System. Contact. outaddress
+                - name: System.Contact.IMAddress
                   href: props-system-contact-imaddress.md
                 - name: System.Contact.Initials
                   href: props-system-contact-initials.md
-                - name: System. Contact. JA. CompanyNamePhonetic
+                - name: System.Contact.JA.CompanyNamePhonetic
                   href: props-system-contact-ja-companynamephonetic.md
-                - name: System. Contact. JA. FirstNamePhonetic
+                - name: System.Contact.JA.FirstNamePhonetic
                   href: props-system-contact-ja-firstnamephonetic.md
-                - name: System. Contact. JA. LastNamePhonetic
+                - name: System.Contact.JA.LastNamePhonetic
                   href: props-system-contact-ja-lastnamephonetic.md
-                - name: System. Contact. JobInfo1CompanyAddress
+                - name: System.Contact.JobInfo1CompanyAddress
                   href: props-system-contact-jobinfo1companyaddress.md
-                - name: System. Contact. JobInfo1CompanyName
+                - name: System.Contact.JobInfo1CompanyName
                   href: props-system-contact-jobinfo1companyname.md
-                - name: System. Contact. JobInfo1Department
+                - name: System.Contact.JobInfo1Department
                   href: props-system-contact-jobinfo1department.md
-                - name: System. Contact. JobInfo1Manager
+                - name: System.Contact.JobInfo1Manager
                   href: props-system-contact-jobinfo1manager.md
-                - name: System. Contact. JobInfo1OfficeLocation
+                - name: System.Contact.JobInfo1OfficeLocation
                   href: props-system-contact-jobinfo1officelocation.md
-                - name: System. Contact. JobInfo1Title
+                - name: System.Contact.JobInfo1Title
                   href: props-system-contact-jobinfo1title.md
-                - name: System. Contact. JobInfo1YomiCompanyName
+                - name: System.Contact.JobInfo1YomiCompanyName
                   href: props-system-contact-jobinfo1yomicompanyname.md
-                - name: System. Contact. JobInfo2CompanyAddress
+                - name: System.Contact.JobInfo2CompanyAddress
                   href: props-system-contact-jobinfo2companyaddress.md
-                - name: System. Contact. JobInfo2CompanyName
+                - name: System.Contact.JobInfo2CompanyName
                   href: props-system-contact-jobinfo2companyname.md
-                - name: System. Contact. JobInfo2Department
+                - name: System.Contact.JobInfo2Department
                   href: props-system-contact-jobinfo2department.md
-                - name: System. Contact. JobInfo2Manager
+                - name: System.Contact.JobInfo2Manager
                   href: props-system-contact-jobinfo2manager.md
-                - name: System. Contact. JobInfo2OfficeLocation
+                - name: System.Contact.JobInfo2OfficeLocation
                   href: props-system-contact-jobinfo2officelocation.md
-                - name: System. Contact. JobInfo2Title
+                - name: System.Contact.JobInfo2Title
                   href: props-system-contact-jobinfo2title.md
-                - name: System. Contact. JobInfo2YomiCompanyName
+                - name: System.Contact.JobInfo2YomiCompanyName
                   href: props-system-contact-jobinfo2yomicompanyname.md
-                - name: System. Contact. JobInfo3CompanyAddress
+                - name: System.Contact.JobInfo3CompanyAddress
                   href: props-system-contact-jobinfo3companyaddress.md
-                - name: System. Contact. JobInfo3CompanyName
+                - name: System.Contact.JobInfo3CompanyName
                   href: props-system-contact-jobinfo3companyname.md
-                - name: System. Contact. JobInfo3Department
+                - name: System.Contact.JobInfo3Department
                   href: props-system-contact-jobinfo3department.md
-                - name: System. Contact. JobInfo3Manager
+                - name: System.Contact.JobInfo3Manager
                   href: props-system-contact-jobinfo3manager.md
-                - name: System. Contact. JobInfo3OfficeLocation
+                - name: System.Contact.JobInfo3OfficeLocation
                   href: props-system-contact-jobinfo3officelocation.md
-                - name: System. Contact. JobInfo3Title
+                - name: System.Contact.JobInfo3Title
                   href: props-system-contact-jobinfo3title.md
-                - name: System. Contact. JobInfo3YomiCompanyName
+                - name: System.Contact.JobInfo3YomiCompanyName
                   href: props-system-contact-jobinfo3yomicompanyname.md
-                - name: System. Contact. JobTitle
+                - name: System.Contact.JobTitle
                   href: props-system-contact-jobtitle.md
-                - name: Sistema. contato. rótulo
+                - name: System.Contact.Label
                   href: props-system-contact-label.md
-                - name: System. Contact. LastName
+                - name: System.Contact.LastName
                   href: props-system-contact-lastname.md
-                - name: System. Contact. MailingAddress
+                - name: System.Contact.MailingAddress
                   href: props-system-contact-mailingaddress.md
-                - name: Sistema. contato. MiddleName
+                - name: System.Contact.MiddleName
                   href: props-system-contact-middlename.md
-                - name: System. Contact. MobileTelephone
+                - name: System.Contact.MobileTelephone
                   href: props-system-contact-mobiletelephone.md
-                - name: System. Contact. Alcunha
+                - name: System.Contact.NickName
                   href: props-system-contact-nickname.md
-                - name: System. Contact. OfficeLocation
+                - name: System.Contact.OfficeLocation
                   href: props-system-contact-officelocation.md
-                - name: System. Contact. OtherAddress
+                - name: System.Contact.OtherAddress
                   href: props-system-contact-otheraddress.md
-                - name: System. Contact. OtherAddress1Country
+                - name: System.Contact.OtherAddress1Country
                   href: props-system-contact-otheraddress1country.md
-                - name: System. Contact. OtherAddress1Locality
+                - name: System.Contact.OtherAddress1Locality
                   href: props-system-contact-otheraddress1locality.md
-                - name: System. Contact. OtherAddress1PostalCode
+                - name: System.Contact.OtherAddress1PostalCode
                   href: props-system-contact-otheraddress1postalcode.md
-                - name: System. Contact. OtherAddress1Region
+                - name: System.Contact.OtherAddress1Region
                   href: props-system-contact-otheraddress1region.md
-                - name: System. Contact. OtherAddress1Street
+                - name: System.Contact.OtherAddress1Dress1Dress
                   href: props-system-contact-otheraddress1street.md
-                - name: System. Contact. OtherAddress2Country
+                - name: System.Contact.OtherAddress2Country
                   href: props-system-contact-otheraddress2country.md
-                - name: System. Contact. OtherAddress2Locality
+                - name: System.Contact.OtherAddress2Locality
                   href: props-system-contact-otheraddress2locality.md
-                - name: System. Contact. OtherAddress2PostalCode
+                - name: System.Contact.OtherAddress2PostalCode
                   href: props-system-contact-otheraddress2postalcode.md
-                - name: System. Contact. OtherAddress2Region
+                - name: System.Contact.OtherAddress2Region
                   href: props-system-contact-otheraddress2region.md
-                - name: System. Contact. OtherAddress2Street
+                - name: System.Contact.OtherAddress2Dress2Dress
                   href: props-system-contact-otheraddress2street.md
-                - name: System. Contact. OtherAddress3Country
+                - name: System.Contact.OtherAddress3Country
                   href: props-system-contact-otheraddress3country.md
-                - name: System. Contact. OtherAddress3Locality
+                - name: System.Contact.OtherAddress3Locality
                   href: props-system-contact-otheraddress3locality.md
-                - name: System. Contact. OtherAddress3PostalCode
+                - name: System.Contact.OtherAddress3PostalCode
                   href: props-system-contact-otheraddress3postalcode.md
-                - name: System. Contact. OtherAddress3Region
+                - name: System.Contact.OtherAddress3Region
                   href: props-system-contact-otheraddress3region.md
-                - name: System. Contact. OtherAddress3Street
+                - name: System.Contact.OtherAddress3Dress
                   href: props-system-contact-otheraddress3street.md
-                - name: System. Contact. OtherAddressCity
+                - name: System.Contact.OtherAddressCity
                   href: props-system-contact-otheraddresscity.md
-                - name: System. Contact. OtherAddressCountry
+                - name: System.Contact.OtherAddressCountry
                   href: props-system-contact-otheraddresscountry.md
-                - name: System. Contact. OtherAddressPostalCode
+                - name: System.Contact.OtherAddressPostalCode
                   href: props-system-contact-otheraddresspostalcode.md
-                - name: System. Contact. OtherAddressPostOfficeBox
+                - name: System.Contact.OtherAddressPostOfficeBox
                   href: props-system-contact-otheraddresspostofficebox.md
-                - name: System. Contact. OtherAddressState
+                - name: System.Contact.OtherAddressState
                   href: props-system-contact-otheraddressstate.md
-                - name: System. Contact. OtherAddressStreet
+                - name: System.Contact.OtherAddressDressDress
                   href: props-system-contact-otheraddressstreet.md
-                - name: System. Contact. OtherEmailAddresses
+                - name: System.Contact.OtherEmailAddresses
                   href: props-system-contact-otheremailaddresses.md
-                - name: System. Contact. PagerTelephone
+                - name: System.Contact.PagerTelephone
                   href: props-system-contact-pagertelephone.md
-                - name: System. Contact. PersonalTitle
+                - name: System.Contact.PersonalTitle
                   href: props-system-contact-personaltitle.md
-                - name: System. Contact. PhoneNumbersCanonical
+                - name: System.Contact.PhoneNumbersCanonical
                   href: props-system-contact-phonenumberscanonical.md
-                - name: System. contato. Prefix
+                - name: System.Contact.Prefix
                   href: props-system-contact-prefix.md
-                - name: System. Contact. PrimaryAddressCity
+                - name: System.Contact.PrimaryAddressCity
                   href: props-system-contact-primaryaddresscity.md
-                - name: System. Contact. PrimaryAddressCountry
+                - name: System.Contact.PrimaryAddressCountry
                   href: props-system-contact-primaryaddresscountry.md
-                - name: System. Contact. PrimaryAddressPostalCode
+                - name: System.Contact.PrimaryAddressPostalCode
                   href: props-system-contact-primaryaddresspostalcode.md
-                - name: System. Contact. PrimaryAddressPostOfficeBox
+                - name: System.Contact.PrimaryAddressPostOfficeBox
                   href: props-system-contact-primaryaddresspostofficebox.md
-                - name: System. Contact. PrimaryAddressState
+                - name: System.Contact.PrimaryAddressState
                   href: props-system-contact-primaryaddressstate.md
-                - name: System. Contact. PrimaryAddressStreet
+                - name: System.Contact.PrimaryAddressDress
                   href: props-system-contact-primaryaddressstreet.md
-                - name: System. Contact. PrimaryEmailAddress
+                - name: System.Contact.PrimaryEmailAddress
                   href: props-system-contact-primaryemailaddress.md
-                - name: System. Contact. PrimaryTelephone
+                - name: System.Contact.PrimaryTelephone
                   href: props-system-contact-primarytelephone.md
-                - name: System. Contact. profissão
+                - name: System.Contact.Profession
                   href: props-system-contact-profession.md
-                - name: System. Contact. Cônjugename
+                - name: System.Contact.Name
                   href: props-system-contact-spousename.md
-                - name: Sistema. Contact. sufixo
+                - name: System.Contact.Suffix
                   href: props-system-contact-suffix.md
-                - name: System. Contact. TelexNumber
+                - name: System.Contact.TelexNumber
                   href: props-system-contact-telexnumber.md
-                - name: System. Contact. TTYTDDTelephone
+                - name: System.Contact.TTYTDDTelephone
                   href: props-system-contact-ttytddtelephone.md
-                - name: Página System. Contact. Web
+                - name: System.Contact.WebPage
                   href: props-system-contact-webpage.md
-                - name: System. contato. webpágina2
+                - name: System.Contact.Webpage2
                   href: props-system-contact-webpage2.md
-                - name: System. Contact. Webpage3
+                - name: System.Contact.Webpage3
                   href: props-system-contact-webpage3.md
             - name: Core
               href: core-bumper.md
               items:
-                - name: System. Acquisitionid
+                - name: System.AcquisitionID
                   href: props-system-acquisitionid.md
-                - name: System. ApplicationDefinedProperties
+                - name: System.ApplicationDefinedProperties
                   href: props-system-applicationdefinedproperties.md
-                - name: System. ApplicationName
+                - name: System.ApplicationName
                   href: props-system-applicationname.md
-                - name: System. AppZoneIdentifier
+                - name: System.AppZoneIdentifier
                   href: props-system-appzoneidentifier.md
                 - name: System.Author
                   href: props-system-author.md
-                - name: System. CachedFileUpdaterContentIdForConflictResolution
+                - name: System.CachedFileUpdaterContentIdForConflictResolution
                   href: props-system-cachedfileupdatercontentidforconflictresolution.md
-                - name: System. CachedFileUpdaterContentIdForStream
+                - name: System.CachedFileUpdaterContentIdForStream
                   href: props-system-cachedfileupdatercontentidforstream.md
-                - name: Sistema. capacidade
+                - name: System.Capacity
                   href: props-system-capacity.md
-                - name: System. Category
+                - name: System.Category
                   href: props-system-category.md
-                - name: Sistema. Comment
+                - name: System.Comment
                   href: props-system-comment.md
-                - name: System. Company
+                - name: System.Company
                   href: props-system-company.md
-                - name: System. ComputerName
+                - name: System.ComputerName
                   href: props-system-computername.md
-                - name: System. ContainedItems
+                - name: System.ContainedItems
                   href: props-system-containeditems.md
-                - name: System. ContentStatus
+                - name: System.ContentStatus
                   href: props-system-contentstatus.md
-                - name: System. ContentType
+                - name: System.ContentType
                   href: props-system-contenttype.md
-                - name: System. Copyright
+                - name: System.Copyright
                   href: props-system-copyright.md
-                - name: System. CreatorAppId
+                - name: System.CreatorAppId
                   href: props-system-creatorappid.md
-                - name: System. CreatorOpenWithUIOptions
+                - name: System.CreatorOpenWithUIOptions
                   href: props-system-creatoropenwithuioptions.md
-                - name: System. DataObjectFormat
+                - name: System.DataObjectFormat
                   href: props-system-dataobjectformat.md
-                - name: System. DateAccessed
+                - name: System.DateAccessed
                   href: props-system-dateaccessed.md
-                - name: System. DateAcquired
+                - name: System.DateAcquired
                   href: props-system-dateacquired.md
-                - name: System. DateArchived
+                - name: System.DateArchived
                   href: props-system-datearchived.md
-                - name: System. DateCompleted
+                - name: System.DateCompleted
                   href: props-system-datecompleted.md
-                - name: System. DateCreated
+                - name: System.DateCreated
                   href: props-system-datecreated.md
-                - name: System. DateImported
+                - name: System.DateImported
                   href: props-system-dateimported.md
-                - name: System. DateModified
+                - name: System.DateModified
                   href: props-system-datemodified.md
-                - name: System. DefaultSaveLocationDisplay
+                - name: System.DefaultSaveLocationDisplay
                   href: props-system-defaultsavelocationdisplay.md
-                - name: System. DueDate
+                - name: System.DueDate
                   href: props-system-duedate.md
-                - name: System. EndDate
+                - name: System.EndDate
                   href: props-system-enddate.md
-                - name: System. Expandproperties
+                - name: System.ExpandoProperties
                   href: props-system-expandoproperties.md
-                - name: System. FileAllocationSize
+                - name: System.FileAllocationSize
                   href: props-system-fileallocationsize.md
-                - name: System. FileAttributes
+                - name: System.FileAttributes
                   href: props-system-fileattributes.md
-                - name: Contagem de System.
+                - name: System.FileCount
                   href: props-system-filecount.md
-                - name: Descrição do sistema.
+                - name: System.FileDescription
                   href: props-system-filedescription.md
-                - name: System. FileExtension
+                - name: System.FileExtension
                   href: props-system-fileextension.md
-                - name: System. FileFRN
+                - name: System.FileFRN
                   href: props-system-filefrn.md
-                - name: System. FileName
+                - name: System.FileName
                   href: props-system-filename.md
-                - name: System. FileOfflineAvailabilityStatus
+                - name: System.FileOfflineAvailabilityStatus
                   href: props-system-fileofflineavailabilitystatus.md
-                - name: System. fileowner
+                - name: System.FileOwner
                   href: props-system-fileowner.md
-                - name: System. FilePlaceholderStatus
+                - name: System.FilePlaceholderStatus
                   href: props-system-fileplaceholderstatus.md
-                - name: Versão do sistema.
+                - name: System.FileVersion
                   href: props-system-fileversion.md
-                - name: System. FindData
+                - name: System.FindData
                   href: props-system-finddata.md
-                - name: System. FlagColor
+                - name: System.FlagColor
                   href: props-system-flagcolor.md
-                - name: System. FlagColorText
+                - name: System.FlagColorText
                   href: props-system-flagcolortext.md
-                - name: System. FlagStatus
+                - name: System.FlagStatus
                   href: props-system-flagstatus.md
-                - name: System. FlagStatusText
+                - name: System.FlagStatusText
                   href: props-system-flagstatustext.md
-                - name: System. FolderKind
+                - name: System.FolderKind
                   href: props-system-folderkind.md
-                - name: System. FolderNameDisplay
+                - name: System.FolderNameDisplay
                   href: props-system-foldernamedisplay.md
-                - name: System. FreeSpace
+                - name: System.FreeSpace
                   href: props-system-freespace.md
-                - name: Sistema. FullText
+                - name: System.FullText
                   href: props-system-fulltext.md
-                - name: System. HighKeywords
+                - name: System.HighKeywords
                   href: props-system-highkeywords.md
-                - name: System. ImageParsingName
+                - name: System.ImageParsingName
                   href: props-system-imageparsingname.md
-                - name: System. importância
+                - name: System.Importance
                   href: props-system-importance.md
-                - name: System. ImportanceText
+                - name: System.ImportanceText
                   href: props-system-importancetext.md
-                - name: Sistema. isanexáment
+                - name: System.IsAttachment
                   href: props-system-isattachment.md
-                - name: System. IsDefaultNonOwnerSaveLocation
+                - name: System.IsDefaultNonOwnerSaveLocation
                   href: props-system-isdefaultnonownersavelocation.md
-                - name: System. IsDefaultSaveLocation
+                - name: System.IsDefaultSaveLocation
                   href: props-system-isdefaultsavelocation.md
-                - name: System. IsDeleted
+                - name: System.IsDeleted
                   href: props-system-isdeleted.md
-                - name: Sistema. IsEncrypted
+                - name: System.IsEncrypted
                   href: props-system-isencrypted.md
-                - name: Sistema. issinalizado
+                - name: System.IsFlagged
                   href: props-system-isflagged.md
-                - name: System. IsFlaggedComplete
+                - name: System.IsFlaggedComplete
                   href: props-system-isflaggedcomplete.md
-                - name: Sistema. incompleto
+                - name: System.IsIncomplete
                   href: props-system-isincomplete.md
-                - name: System. IsLocationSupported
+                - name: System.IsLocationSupported
                   href: props-system-islocationsupported.md
-                - name: System. IsPinnedToNameSpaceTree
+                - name: System.IsPinnedToNameSpaceTree
                   href: props-system-ispinnedtonamespacetree.md
-                - name: Sistema. IsRead
+                - name: System.IsRead
                   href: props-system-isread.md
-                - name: System. IsSearchOnlyItem
+                - name: System.IsSearchOnlyItem
                   href: props-system-issearchonlyitem.md
-                - name: System. IsSendToTarget
+                - name: System.IsSendToTarget
                   href: props-system-issendtotarget.md
-                - name: Sistema. IsShared
+                - name: System.IsShared
                   href: props-system-isshared.md
-                - name: System. os autores
+                - name: System.ItemAuthors
                   href: props-system-itemauthors.md
-                - name: System. myclasstype
+                - name: System.ItemClassType
                   href: props-system-itemclasstype.md
-                - name: System. @ Date
+                - name: System.ItemDate
                   href: props-system-itemdate.md
-                - name: System. ItemFolderNameDisplay
+                - name: System.ItemFolderNameDisplay
                   href: props-system-itemfoldernamedisplay.md
-                - name: System. ItemFolderPathDisplay
+                - name: System.ItemFolderPathDisplay
                   href: props-system-itemfolderpathdisplay.md
-                - name: System. ItemFolderPathDisplayNarrow
+                - name: System.ItemFolderPathDisplayNarrow
                   href: props-system-itemfolderpathdisplaynarrow.md
-                - name: System. ItemName
+                - name: System.ItemName
                   href: props-system-itemname.md
                 - name: System.ItemNameDisplay
                   href: props-system-itemnamedisplay.md
-                - name: System. ItemNameDisplayWithoutExtension
+                - name: System.ItemNameDisplayWithoutExtension
                   href: props-system-itemnamedisplaywithoutextension.md
-                - name: System. ItemNamePrefix
+                - name: System.ItemNamePrefix
                   href: props-system-itemnameprefix.md
-                - name: System. ItemNameSortOverride
+                - name: System.ItemNameSortOverride
                   href: props-system-itemnamesortoverride.md
-                - name: System. os participantes
+                - name: System.ItemParticipants
                   href: props-system-itemparticipants.md
-                - name: System. ItemPathDisplay
+                - name: System.ItemPathDisplay
                   href: props-system-itempathdisplay.md
-                - name: System. ItemPathDisplayNarrow
+                - name: System.ItemPathDisplayNarrow
                   href: props-system-itempathdisplaynarrow.md
-                - name: System. ItemSubType
+                - name: System.ItemSubType
                   href: props-system-itemsubtype.md
-                - name: System. ItemType
+                - name: System.ItemType
                   href: props-system-itemtype.md
                 - name: System. ItemTypeText
                   href: props-system-itemtypetext.md
@@ -664,7 +664,7 @@
                   href: props-system-priority.md
                 - name: System. PriorityText
                   href: props-system-prioritytext.md
-                - name: System. Project
+                - name: Sistema. Project
                   href: props-system-project.md
                 - name: System. ProviderItemID
                   href: props-system-provideritemid.md
@@ -763,7 +763,7 @@
                   href: props-system-deviceinterface-bluetooth-flags.md
                 - name: System. DeviceInterface. Bluetooth. LastConnectedTime
                   href: props-system-deviceinterface-bluetooth-lastconnectedtime.md
-                - name: System. DeviceInterface. Bluetooth. fabricante
+                - name: System. DeviceInterface. Bluetooth. Manufacturer
                   href: props-system-deviceinterface-bluetooth-manufacturer.md
                 - name: System. DeviceInterface. Bluetooth. ModelNumber
                   href: props-system-deviceinterface-bluetooth-modelnumber.md
@@ -771,9 +771,9 @@
                   href: props-system-deviceinterface-bluetooth-productid.md
                 - name: System. DeviceInterface. Bluetooth. ProductVersion
                   href: props-system-deviceinterface-bluetooth-productversion.md
-                - name: System. DeviceInterface. Bluetooth. perguid
+                - name: System. DeviceInterface. Bluetooth. Próprio GUID
                   href: props-system-deviceinterface-bluetooth-serviceguid.md
-                - name: System. DeviceInterface. Bluetooth. VendorID
+                - name: System. DeviceInterface. Bluetooth. VendorId
                   href: props-system-deviceinterface-bluetooth-vendorid.md
                 - name: System. DeviceInterface. Bluetooth. VendorIdSource
                   href: props-system-deviceinterface-bluetooth-vendoridsource.md
@@ -825,7 +825,7 @@
                   href: props-system-devices-aep-bluetooth-cod-major.md
                 - name: System. Devices. AepService. Bluetooth. CacheMode
                   href: props-system-devices-aepservice-bluetooth-cachemode.md
-                - name: System. Devices. AepService. Bluetooth. perguid
+                - name: System. Devices. AepService. Bluetooth. Próprio GUID
                   href: props-system-devices-aepservice-bluetooth-serviceguid.md
                 - name: System. Devices. AepService. Bluetooth. TargetDevice
                   href: props-system-devices-aepservice-bluetooth-targetdevice.md
@@ -839,7 +839,7 @@
                   href: props-system-devices-aep-bluetooth-cod-services-information.md
                 - name: System. Devices. AEP. Bluetooth. Cod. Services. LimitedDiscovery
                   href: props-system-devices-aep-bluetooth-cod-services-limiteddiscovery.md
-                - name: System. Devices. AEP. Bluetooth. Cod. Services. Networking
+                - name: System. Devices. AEP. Bluetooth. Cod. Services. networking
                   href: props-system-devices-aep-bluetooth-cod-services-networking.md
                 - name: System. Devices. AEP. Bluetooth. Cod. Services. ObjectXfer
                   href: props-system-devices-aep-bluetooth-cod-services-objectxfer.md
@@ -855,7 +855,7 @@
                   href: props-system-devices-aep-bluetooth-le-appearance.md
                 - name: System. Devices. AEP. Bluetooth. Le. Appearance. Category
                   href: props-system-devices-aep-bluetooth-le-appearance-category.md
-                - name: System. Devices. AEP. Bluetooth. Le. Appearance. Subcategory
+                - name: System. Devices. AEP. Bluetooth. Le. aparência. subcategoria
                   href: props-system-devices-aep-bluetooth-le-appearance-subcategory.md
                 - name: System. Devices. AEP. Bluetooth. Le. isconnectável
                   href: props-system-devices-aep-bluetooth-le-isconnectable.md
@@ -1011,33 +1011,33 @@
                   href: props-system-devices-devobjecttype.md
                 - name: System. Devices. DialProtocol. InstalledApplications
                   href: props-system-devices-dialprotocol-installedapplications.md
-                - name: System. Devices. DiscoveryMethod
+                - name: System.Devices.DiscoveryMethod
                   href: props-system-devices-discoverymethod.md
-                - name: System. Devices. dnssd. Domain
+                - name: System.Devices.Dnssd.Domain
                   href: props-system-devices-dnssd-domain.md
-                - name: System. Devices. dnssd. FullName
+                - name: System.Devices.Dnssd.FullName
                   href: props-system-devices-dnssd-fullname.md
-                - name: System. Devices. dnssd. HostName
+                - name: System.Devices.Dnssd.HostName
                   href: props-system-devices-dnssd-hostname.md
-                - name: System. Devices. dnssd. InstanceName
+                - name: System.Devices.Dnssd.InstanceName
                   href: props-system-devices-dnssd-instancename.md
-                - name: System. Devices. dnssd. NetworkAdapterId
+                - name: System.Devices.Dnssd.NetworkAdapterId
                   href: props-system-devices-dnssd-networkadapterid.md
-                - name: System. Devices. dnssd. PortNumber
+                - name: System.Devices.Dnssd.PortNumber
                   href: props-system-devices-dnssd-portnumber.md
-                - name: System. Devices. dnssd. Priority
+                - name: System.Devices.Dnssd.Priority
                   href: props-system-devices-dnssd-priority.md
-                - name: System. Devices. dnssd. ServiceName
+                - name: System.Devices.Dnssd.ServiceName
                   href: props-system-devices-dnssd-servicename.md
-                - name: System. Devices. dnssd. Textattributes
+                - name: System.Devices.Dnssd.TextAttributes
                   href: props-system-devices-dnssd-textattributes.md
-                - name: System. Devices. dnssd. TTL
+                - name: System.Devices.Dnssd.Ttl
                   href: props-system-devices-dnssd-ttl.md
-                - name: System. Devices. dnssd. Weight
+                - name: System.Devices.Dnssd.Weight
                   href: props-system-devices-dnssd-weight.md
-                - name: System. Devices. FriendlyName
+                - name: System.Devices.FriendlyName
                   href: props-system-devices-friendlyname.md
-                - name: System. Devices. FunctionPaths
+                - name: System.Devices.FunctionPaths
                   href: props-system-devices-functionpaths.md
                 - name: System.Devices.GlyphIcon
                   href: props-system-devices-glyphicon.md
@@ -1045,169 +1045,169 @@
                   href: props-system-devices-hardwareids.md
                 - name: System.Devices.Icon
                   href: props-system-devices-icon.md
-                - name: System. Devices. InLocalMachineContainer
+                - name: System.Devices.InLocalMachineContainer
                   href: props-system-devices-inlocalmachinecontainer.md
                 - name: System.Devices.InterfaceClassGuid
                   href: props-system-devices-interfaceclassguid.md
                 - name: System.Devices.InterfaceEnabled
                   href: props-system-devices-interfaceenabled.md
-                - name: System. Devices. InterfacePaths
+                - name: System.Devices.InterfacePaths
                   href: props-system-devices-interfacepaths.md
-                - name: System. Devices. IpAddress
+                - name: System.Devices.IpAddress
                   href: props-system-devices-ipaddress.md
                 - name: System.Devices.IsDefault
                   href: props-system-devices-isdefault.md
-                - name: System. Devices. IsNetworkConnected
+                - name: System.Devices.IsNetworkConnected
                   href: props-system-devices-isnetworkconnected.md
-                - name: System. Devices. IsShared
+                - name: System.Devices.IsShared
                   href: props-system-devices-isshared.md
-                - name: System. Devices. IsSoftwareInstalling
+                - name: System.Devices.IsSoftwareInstalling
                   href: props-system-devices-issoftwareinstalling.md
-                - name: System. Devices. LaunchDeviceStageFromExplorer
+                - name: System.Devices.LaunchDeviceStageFromExplorer
                   href: props-system-devices-launchdevicestagefromexplorer.md
                 - name: System.Devices.LocalMachine
                   href: props-system-devices-localmachine.md
-                - name: System. Devices. LocationPaths
+                - name: System.Devices.LocationPaths
                   href: props-system-devices-locationpaths.md
                 - name: System.Devices.Manufacturer
                   href: props-system-devices-manufacturer.md
-                - name: System. Devices. MetadataPath
+                - name: System.Devices.MetadataPath
                   href: props-system-devices-metadatapath.md
                 - name: System.Devices.MicrophoneArray.Geometry
                   href: props-system-devices-microphonearray-geometry.md
-                - name: System. Devices. MissedCalls
+                - name: System.Devices.MissedCalls
                   href: props-system-devices-missedcalls.md
-                - name: System. Devices. ModelId
+                - name: System.Devices.ModelId
                   href: props-system-devices-modelid.md
                 - name: System.Devices.ModelName
                   href: props-system-devices-modelname.md
-                - name: System. Devices. ModelNumber
+                - name: System.Devices.ModelNumber
                   href: props-system-devices-modelnumber.md
-                - name: System. Devices. NetworkedTooltip
+                - name: System.Devices.NetworkedTooltip
                   href: props-system-devices-networkedtooltip.md
-                - name: System. Devices. NetworkName
+                - name: System.Devices.NetworkName
                   href: props-system-devices-networkname.md
-                - name: System. Devices. NetworkType
+                - name: System.Devices.NetworkType
                   href: props-system-devices-networktype.md
-                - name: System. Devices. NewPictures
+                - name: System.Devices.NewPictures
                   href: props-system-devices-newpictures.md
-                - name: System. Devices. Notification
+                - name: System.Devices.Notification
                   href: props-system-devices-notification.md
-                - name: System. Devices. Notifications. LowBattery
+                - name: System.Devices.Notifications.LowBattery
                   href: props-system-devices-notifications-lowbattery.md
-                - name: System. Devices. Notifications. MissedCall
+                - name: System.Devices.Notifications.MissedCall
                   href: props-system-devices-notifications-missedcall.md
-                - name: System. Devices. Notifications. NewMessage
+                - name: System.Devices.Notifications.NewMessage
                   href: props-system-devices-notifications-newmessage.md
-                - name: System. Devices. Notifications. NewVoicemail
+                - name: System.Devices.Notifications.NewVoicemail
                   href: props-system-devices-notifications-newvoicemail.md
-                - name: System. Devices. Notifications. StorageFull
+                - name: System.Devices.Notifications.StorageFull
                   href: props-system-devices-notifications-storagefull.md
-                - name: System. Devices. Notifications. StorageFullLinkText
+                - name: System.Devices.Notifications.StorageFullLinkText
                   href: props-system-devices-notifications-storagefulllinktext.md
-                - name: System. Devices. NotificationStore
+                - name: System.Devices.NotificationStore
                   href: props-system-devices-notificationstore.md
-                - name: System. Devices. NotWorkingProperly
+                - name: System.Devices.NotWorkingProperly
                   href: props-system-devices-notworkingproperly.md
                 - name: System.Devices.Paired
                   href: props-system-devices-paired.md
                 - name: System.Devices.Parent
                   href: props-system-devices-parent.md
-                - name: System. Devices. PhysicalDeviceLocation
+                - name: System.Devices.PhysicalDeviceLocation
                   href: props-system-devices-physicaldevicelocation.md
-                - name: System. Devices. PlaybackPositionPercent
+                - name: System.Devices.PlaybackPositionPercent
                   href: props-system-devices-playbackpositionpercent.md
-                - name: System. Devices. Reproduçãostate
+                - name: System.Devices.PlaybackState
                   href: props-system-devices-playbackstate.md
-                - name: System. Devices. PlaybackTitle
+                - name: System.Devices.PlaybackTitle
                   href: props-system-devices-playbacktitle.md
                 - name: System.Devices.Present
                   href: props-system-devices-present.md
-                - name: System. Devices. PresentationUrl
+                - name: System.Devices.PresentationUrl
                   href: props-system-devices-presentationurl.md
-                - name: System. Devices. PrimaryCategory
+                - name: System.Devices.PrimaryCategory
                   href: props-system-devices-primarycategory.md
-                - name: System. Devices. RemainingDuration
+                - name: System.Devices.RemainingDuration
                   href: props-system-devices-remainingduration.md
-                - name: System. Devices. RestrictedInterface
+                - name: System.Devices.RestrictedInterface
                   href: props-system-devices-restrictedinterface.md
-                - name: System. Devices. roaming
+                - name: System.Devices.Roaming
                   href: props-system-devices-roaming.md
-                - name: System. Devices. SafeRemovalRequired
+                - name: System.Devices.SafeRemovalRequired
                   href: props-system-devices-saferemovalrequired.md
-                - name: System. Devices. endereço
+                - name: System.Devices.ServiceAddress
                   href: props-system-devices-serviceaddress.md
-                - name: System. Devices. ServiceId
+                - name: System.Devices.ServiceId
                   href: props-system-devices-serviceid.md
-                - name: System. Devices. SharedTooltip
+                - name: System.Devices.SharedTooltip
                   href: props-system-devices-sharedtooltip.md
-                - name: System. Devices. SignalStrength
+                - name: System.Devices.SignalStrength
                   href: props-system-devices-signalstrength.md
-                - name: System. Devices. Smarts. ReaderKind
+                - name: System.Devices.SmartCards.ReaderKind
                   href: props-system-devices-smartcards-readerkind.md
-                - name: System. Devices. status
+                - name: System.Devices.Status
                   href: props-system-devices-status.md
-                - name: System. Devices. Status1
+                - name: System.Devices.Status1
                   href: props-system-devices-status1.md
-                - name: System. Devices. Status2
+                - name: System.Devices.Status2
                   href: props-system-devices-status2.md
-                - name: System. Devices. StorageCapacity
+                - name: System.Devices.StorageCapacity
                   href: props-system-devices-storagecapacity.md
-                - name: System. Devices. StorageFreeSpace
+                - name: System.Devices.StorageFreeSpace
                   href: props-system-devices-storagefreespace.md
-                - name: System. Devices. StorageFreeSpacePercent
+                - name: System.Devices.StorageFreeSpacePercent
                   href: props-system-devices-storagefreespacepercent.md
-                - name: System. Devices. TextMessages
+                - name: System.Devices.TextMessages
                   href: props-system-devices-textmessages.md
-                - name: System. Devices. correio de voz
+                - name: System.Devices.Internet
                   href: props-system-devices-voicemail.md
-                - name: System. Devices. WiaDeviceType
+                - name: System.Devices.WiaDeviceType
                   href: props-system-devices-wiadevicetype.md
-                - name: System. Devices. WiFi. InterfaceGuid
+                - name: System.Devices.WiFi.InterfaceGuid
                   href: props-system-devices-wifi-interfaceguid.md
-                - name: System. Devices. WiFiDirect. DeviceAddress
+                - name: System.Devices.WiFiDirect.DeviceAddress
                   href: props-system-devices-wifidirect-deviceaddress.md
-                - name: System. Devices. WiFiDirect. GroupId
+                - name: System.Devices.WiFiDirect.GroupId
                   href: props-system-devices-wifidirect-groupid.md
-                - name: System. Devices. WiFiDirect. InformationElements
+                - name: System.Devices.WiFiDirect.InformationElements
                   href: props-system-devices-wifidirect-informationelements.md
-                - name: System. Devices. WiFiDirect. InterfaceAddress
+                - name: System.Devices.WiFiDirect.InterfaceAddress
                   href: props-system-devices-wifidirect-interfaceaddress.md
-                - name: System. Devices. WiFiDirect. InterfaceGuid
+                - name: System.Devices.WiFiDirect.InterfaceGuid
                   href: props-system-devices-wifidirect-interfaceguid.md
-                - name: System. Devices. WiFiDirect. IsConnected
+                - name: System.Devices.WiFiDirect.IsConnected
                   href: props-system-devices-wifidirect-isconnected.md
-                - name: System. Devices. WiFiDirect. IsLegacyDevice
+                - name: System.Devices.WiFiDirect.IsLegacyDevice
                   href: props-system-devices-wifidirect-islegacydevice.md
-                - name: System. Devices. WiFiDirect. IsMiracastLcpSupported
+                - name: System.Devices.WiFiDirect.IsMiracastLcpSupported
                   href: props-system-devices-wifidirect-ismiracastlcpsupported.md
-                - name: System. Devices. WiFiDirect. IsVisible
+                - name: System.Devices.WiFiDirect.IsVisible
                   href: props-system-devices-wifidirect-isvisible.md
-                - name: System. Devices. WiFiDirect. MiracastVersion
+                - name: System.Devices.WiFiDirect.MiracastVersion
                   href: props-system-devices-wifidirect-miracastversion.md
-                - name: System. Devices. WiFiDirect. Services
+                - name: System.Devices.WiFiDirect.Services
                   href: props-system-devices-wifidirect-services.md
-                - name: System. Devices. WiFiDirect. SupportedChannelList
+                - name: System.Devices.WiFiDirect.SupportedChannelList
                   href: props-system-devices-wifidirect-supportedchannellist.md
-                - name: System. Devices. WiFiDirectServices. Advertisementfileid
+                - name: System.Devices.WiFiDirectServices.AdvertisementId
                   href: props-system-devices-wifidirectservices-advertisementid.md
-                - name: System. Devices. WiFiDirectServices. RequestServiceInformation
+                - name: System.Devices.WiFiDirectServices.RequestServiceInformation
                   href: props-system-devices-wifidirectservices-requestserviceinformation.md
-                - name: System. Devices. WiFiDirectServices. fileaddress
+                - name: System.Devices.WiFiDirectServices.ServiceAddress
                   href: props-system-devices-wifidirectservices-serviceaddress.md
-                - name: System. Devices. WiFiDirectServices. ServiceConfigMethods
+                - name: System.Devices.WiFiDirectServices.ServiceConfigMethods
                   href: props-system-devices-wifidirectservices-serviceconfigmethods.md
-                - name: System. Devices. WiFiDirectServices. ininformation
+                - name: System.Devices.WiFiDirectServices.ServiceInformation
                   href: props-system-devices-wifidirectservices-serviceinformation.md
-                - name: System. Devices. WiFiDirectServices. ServiceName
+                - name: System.Devices.WiFiDirectServices.ServiceName
                   href: props-system-devices-wifidirectservices-servicename.md
-                - name: System. Devices. WinPhone8CameraFlags
+                - name: System.Devices.WinPhone8CameraFlags
                   href: props-system-devices-winphone8cameraflags.md
-                - name: System. Devices. WWAN. InterfaceGuid
+                - name: System.Devices.Wwan.InterfaceGuid
                   href: props-system-devices-wwan-interfaceguid.md
-                - name: System. Storage. portátil
+                - name: Sistema. Armazenamento. Portátil
                   href: props-system-storage-portable.md
-                - name: System. Storage. RemovableMedia
+                - name: Sistema. Armazenamento. RemovableMedia
                   href: props-system-storage-removablemedia.md
                 - name: System.Storage.SystemCritical
                   href: props-system-storage-systemcritical.md
@@ -1661,7 +1661,7 @@
                   href: props-system-music-artistsortoverride.md
                 - name: System. Music. BeatsPerMinute
                   href: props-system-music-beatsperminute.md
-                - name: Sistema. Music. Composer
+                - name: System. Music. Composer
                   href: props-system-music-composer.md
                 - name: System. Music. ComposerSortOverride
                   href: props-system-music-composersortoverride.md
@@ -1825,211 +1825,211 @@
                   href: props-system-photo-maxaperturenumerator.md
                 - name: System. Photo. MeteringMode
                   href: props-system-photo-meteringmode.md
-                - name: System. Photo. MeteringModeText
+                - name: System.Photo.MeteringModeText
                   href: props-system-photo-meteringmodetext.md
-                - name: System. Photo. Orientation
+                - name: System.Photo.Orientation
                   href: props-system-photo-orientation.md
-                - name: System. Photo. OrientationText
+                - name: System.Photo.OrientationText
                   href: props-system-photo-orientationtext.md
-                - name: System. Photo. Peoplenames
+                - name: System.Photo.PeopleNames
                   href: props-system-photo-peoplenames.md
-                - name: System. Photo. PhotometricInterpretation
+                - name: System.Photo.PhotometricInterpretation
                   href: props-system-photo-photometricinterpretation.md
-                - name: System. Photo. PhotometricInterpretationText
+                - name: System.Photo.PhotometricInterpretationText
                   href: props-system-photo-photometricinterpretationtext.md
-                - name: System. Photo. programmode
+                - name: System.Photo.ProgramMode
                   href: props-system-photo-programmode.md
-                - name: System. Photo. ProgramModeText
+                - name: System.Photo.ProgramModeText
                   href: props-system-photo-programmodetext.md
-                - name: System. Photo. RelatedSoundFile
+                - name: System.Photo.RelatedSoundFile
                   href: props-system-photo-relatedsoundfile.md
-                - name: System. Photo. saturação
+                - name: System.Photo.S saturação
                   href: props-system-photo-saturation.md
-                - name: System. Photo. SaturationText
+                - name: System.Photo.SaturationText
                   href: props-system-photo-saturationtext.md
-                - name: System. Photo. nitidez
+                - name: System.Photo.Sharpness
                   href: props-system-photo-sharpness.md
-                - name: System. Photo. SharpnessText
+                - name: System.Photo.SharpnessText
                   href: props-system-photo-sharpnesstext.md
-                - name: System. Photo. ShutterSpeed
+                - name: System.Photo.ShutterSpeed
                   href: props-system-photo-shutterspeed.md
-                - name: System. Photo. ShutterSpeedDenominator
+                - name: System.Photo.ShutterSpeedDenominator
                   href: props-system-photo-shutterspeeddenominator.md
-                - name: System. Photo. ShutterSpeedNumerator
+                - name: System.Photo.ShutterSpeedNumerator
                   href: props-system-photo-shutterspeednumerator.md
-                - name: System. Photo. SubjectDistance
+                - name: System.Photo.SubjectDistance
                   href: props-system-photo-subjectdistance.md
-                - name: System. Photo. SubjectDistanceDenominator
+                - name: System.Photo.SubjectDistanceDenominator
                   href: props-system-photo-subjectdistancedenominator.md
-                - name: System. Photo. SubjectDistanceNumerator
+                - name: System.Photo.SubjectDistanceNumerator
                   href: props-system-photo-subjectdistancenumerator.md
-                - name: System. Photo. TagViewAggregate
+                - name: System.Photo.TagViewAggregate
                   href: props-system-photo-tagviewaggregate.md
-                - name: System. Photo. TranscodedForSync
+                - name: System.Photo.TranscodedForSync
                   href: props-system-photo-transcodedforsync.md
-                - name: System. Photo. WhiteBalance
+                - name: System.Photo.WhiteBalance
                   href: props-system-photo-whitebalance.md
-                - name: System. Photo. WhiteBalanceText
+                - name: System.Photo.WhiteBalanceText
                   href: props-system-photo-whitebalancetext.md
-            - name: Propr
+            - name: PropGroup
               href: propgroup-bumper.md
               items:
-                - name: System. Propproperty. avançado
+                - name: System.PropGroup.Advanced
                   href: props-system-propgroup-advanced.md
-                - name: System. Propment. Audio
+                - name: System.PropGroup.Audio
                   href: props-system-propgroup-audio.md
-                - name: System. Propobject. Calendar
+                - name: System.PropGroup.Calendar
                   href: props-system-propgroup-calendar.md
-                - name: System. PROPER. Camera
+                - name: System.PropGroup.Camera
                   href: props-system-propgroup-camera.md
-                - name: System. Propobject. Contact
+                - name: System.PropGroup.Contact
                   href: props-system-propgroup-contact.md
-                - name: System. prop. Content
+                - name: System.PropGroup.Content
                   href: props-system-propgroup-content.md
-                - name: . Descrição de System. prop
+                - name: System.PropGroup.Description
                   href: props-system-propgroup-description.md
-                - name: System. prop. FileSystem
+                - name: System.PropGroup.FileSystem
                   href: props-system-propgroup-filesystem.md
-                - name: System. prop. geral
+                - name: System.PropGroup.General
                   href: props-system-propgroup-general.md
-                - name: System. Propobject. GPS
+                - name: System.PropGroup.GPS
                   href: props-system-propgroup-gps.md
-                - name: System. propy. Image
+                - name: System.PropGroup.Image
                   href: props-system-propgroup-image.md
-                - name: System. PropList. Media
+                - name: System.PropGroup.Media
                   href: props-system-propgroup-media.md
-                - name: System. Propproperty. MediaAdvanced
+                - name: System.PropGroup.MediaAdvanced
                   href: props-system-propgroup-mediaadvanced.md
-                - name: System. Propobject. Message
+                - name: System.PropGroup.Message
                   href: props-system-propgroup-message.md
-                - name: System. propy. Music
+                - name: System.PropGroup.Music
                   href: props-system-propgroup-music.md
-                - name: System. Propproperty. Origin
+                - name: System.PropGroup.Origin
                   href: props-system-propgroup-origin.md
-                - name: System. Propment. fotoadvanced
+                - name: System.PropGroup.PhotoAdvanced
                   href: props-system-propgroup-photoadvanced.md
-                - name: System. Propproperty. RecordedTV
+                - name: System.PropGroup.RecordedTV
                   href: props-system-propgroup-recordedtv.md
-                - name: System. PROPER. Video
+                - name: System.PropGroup.Video
                   href: props-system-propgroup-video.md
             - name: PropList
               href: proplist-bumper.md
               items:
-                - name: System. InfoTipText
+                - name: System.InfoTipText
                   href: props-system-infotiptext.md
-                - name: System. PropList. ConflictPrompt
+                - name: System.PropList.ConflictPrompt
                   href: props-system-proplist-conflictprompt.md
-                - name: System. PropList. ContentViewModeForBrowse
+                - name: System.PropList.ContentViewModeForBrowse
                   href: props-system-proplist-contentviewmodeforbrowse.md
-                - name: System. PropList. ContentViewModeForSearch
+                - name: System.PropList.ContentViewModeForSearch
                   href: props-system-proplist-contentviewmodeforsearch.md
-                - name: System. PropList. ExtendedTileInfo
+                - name: System.PropList.ExtendedTileInfo
                   href: props-system-proplist-extendedtileinfo.md
-                - name: System. PropList. FileOperationPrompt
+                - name: System.PropList.FileOperationPrompt
                   href: props-system-proplist-fileoperationprompt.md
-                - name: System. PropList. FullDetails
+                - name: System.PropList.FullDetails
                   href: props-system-proplist-fulldetails.md
-                - name: System. PropList. InfoTip
+                - name: System.PropList.InfoTip
                   href: props-system-proplist-infotip.md
-                - name: Sistema. PropList. não Personal
+                - name: System.PropList.NonPersonal
                   href: props-system-proplist-nonpersonal.md
-                - name: System. PropList. PreviewDetails
+                - name: System.PropList.PreviewDetails
                   href: props-system-proplist-previewdetails.md
-                - name: System. PropList. PreviewTitle
+                - name: System.PropList.PreviewTitle
                   href: props-system-proplist-previewtitle.md
-                - name: System. PropList. QuickTip
+                - name: System.PropList.QuickTip
                   href: props-system-proplist-quicktip.md
-                - name: System. PropList. TileInfo
+                - name: System.PropList.TileInfo
                   href: props-system-proplist-tileinfo.md
-                - name: System. PropList. XPDetailsPanel
+                - name: System.PropList.XPDetailsPanel
                   href: props-system-proplist-xpdetailspanel.md
             - name: RecordedTV
               href: recordedtv-bumper.md
               items:
-                - name: System. RecordedTV. ChannelNumber
+                - name: System.RecordedTV.ChannelNumber
                   href: props-system-recordedtv-channelnumber.md
-                - name: System. RecordedTV. créditos
+                - name: System.RecordedTV.Credits
                   href: props-system-recordedtv-credits.md
-                - name: System. RecordedTV. DateContentExpires
+                - name: System.RecordedTV.DateContentExpires
                   href: props-system-recordedtv-datecontentexpires.md
-                - name: System. RecordedTV. Episódioname
+                - name: System.RecordedTV.EpisodeName
                   href: props-system-recordedtv-episodename.md
-                - name: System. RecordedTV. IsATSCContent
+                - name: System.RecordedTV.IsATSCContent
                   href: props-system-recordedtv-isatsccontent.md
-                - name: System. RecordedTV. IsClosedCaptioningAvailable
+                - name: System.RecordedTV.IsClosedCaptioningAvailable
                   href: props-system-recordedtv-isclosedcaptioningavailable.md
-                - name: System. RecordedTV. IsDTVContent
+                - name: System.RecordedTV.IsDTVContent
                   href: props-system-recordedtv-isdtvcontent.md
-                - name: System. RecordedTV. IsHDContent
+                - name: System.RecordedTV.IsHDContent
                   href: props-system-recordedtv-ishdcontent.md
-                - name: System. RecordedTV. IsRepeatBroadcast
+                - name: System.RecordedTV.IsRepeatBroadcast
                   href: props-system-recordedtv-isrepeatbroadcast.md
-                - name: System. RecordedTV. IsSAP
+                - name: System.RecordedTV.IsSAP
                   href: props-system-recordedtv-issap.md
-                - name: System. RecordedTV. NetworkAffiliation
+                - name: System.RecordedTV.NetworkAffiliation
                   href: props-system-recordedtv-networkaffiliation.md
-                - name: System. RecordedTV. OriginalBroadcastDate
+                - name: System.RecordedTV.OriginalBroadcastDate
                   href: props-system-recordedtv-originalbroadcastdate.md
-                - name: System. RecordedTV. ProgramDescription
+                - name: System.RecordedTV.ProgramDescription
                   href: props-system-recordedtv-programdescription.md
-                - name: System. RecordedTV. Recordtime
+                - name: System.RecordedTV.RecordingTime
                   href: props-system-recordedtv-recordingtime.md
-                - name: System. RecordedTV. StationCallSign
+                - name: System.RecordedTV.StationCallSign
                   href: props-system-recordedtv-stationcallsign.md
-                - name: System. RecordedTV. Stationname
+                - name: System.RecordedTV.StationName
                   href: props-system-recordedtv-stationname.md
             - name: Segurança
               href: security-buffer.md
               items:
-                - name: System. Security. AllowedEnterpriseDataProtectionIdentities
+                - name: System.Security.AllowedEnterpriseDataProtectionIdentities
                   href: props-system-security-allowedenterprisedataprotectionidentities.md
-                - name: System. Security. EncryptionOwners
+                - name: System.Security.EncryptionOwners
                   href: props-system-security-encryptionowners.md
-                - name: System. Security. EncryptionOwnersDisplay
+                - name: System.Security.EncryptionOwnersDisplay
                   href: props-system-security-encryptionownersdisplay.md
             - name: Pesquisar
               href: search-bumper.md
               items:
-                - name: System. Search. autosummary
+                - name: System.Search.AutoSummary
                   href: props-system-search-autosummary.md
-                - name: System. Search. ContainerHash
+                - name: System.Search.ContainerHash
                   href: props-system-search-containerhash.md
-                - name: System. Search. Contents
+                - name: System.Search.Contents
                   href: props-system-search-contents.md
-                - name: System. Search. EntryID
+                - name: System.Search.EntryID
                   href: props-system-search-entryid.md
-                - name: System. Search. ExtendedProperties
+                - name: System.Search.ExtendedProperties
                   href: props-system-search-extendedproperties.md
-                - name: System. Search. Gathertime
+                - name: System.Search.GatherTime
                   href: props-system-search-gathertime.md
-                - name: System. Search. contagem
+                - name: System.Search.HitCount
                   href: props-system-search-hitcount.md
-                - name: System. Search. IsClosedDirectory
+                - name: System.Search.IsClosedDirectory
                   href: props-system-search-iscloseddirectory.md
-                - name: System. Search. IsFullyContained
+                - name: System.Search.IsFullyContained
                   href: props-system-search-isfullycontained.md
-                - name: System. Search. QueryFocusedSummary
+                - name: System.Search.QueryFocusedSummary
                   href: props-system-search-queryfocusedsummary.md
-                - name: System. Search. QueryFocusedSummaryWithFallback
+                - name: System.Search.QueryFocusedSummaryWithFallback
                   href: props-system-search-queryfocusedsummarywithfallback.md
-                - name: System. Search. QueryPropertyHits
+                - name: System.Search.QueryPropertyHits
                   href: props-system-search-querypropertyhits.md
-                - name: Sistema. Search. Rank
+                - name: System.Search.Rank
                   href: props-system-search-rank.md
                 - name: System.Search.Store
                   href: props-system-search-store.md
-                - name: System. Search. UrlToIndex
+                - name: System.Search.UrlToIndex
                   href: props-system-search-urltoindex.md
-                - name: System. Search. UrlToIndexWithModificationTime
+                - name: System.Search.UrlToIndexWithModificationTime
                   href: props-system-search-urltoindexwithmodificationtime.md
             - name: Shell
               href: shell-bumper.md
               items:
-                - name: System. Descriçãoid
+                - name: System.DescriptionID
                   href: props-system-descriptionid.md
-                - name: System. InternalName
+                - name: System.InternalName
                   href: props-system-internalname.md
-                - name: System. LibraryLocationsCount
+                - name: System.LibraryLocationsCount
                   href: props-system-librarylocationscount.md
                 - name: System. link. TargetSFGAOFlagsStrings
                   href: props-system-link-targetsfgaoflagsstrings.md
@@ -2247,19 +2247,19 @@
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescription-coercetocanonicalvalue
                 - name: FormatForDisplay
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescription-formatfordisplay
-                - name: Getaggregationtype
+                - name: GetAggregationType
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescription-getaggregationtype
-                - name: Getcanôniconame
+                - name: GetCanonicalName
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescription-getcanonicalname
                 - name: GetColumnState
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescription-getcolumnstate
-                - name: Getconditiontype
+                - name: GetConditionType
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescription-getconditiontype
                 - name: GetDefaultColumnWidth
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescription-getdefaultcolumnwidth
-                - name: GetDisplayName
+                - name: Getdisplayname
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescription-getdisplayname
-                - name: Getdisplaytype
+                - name: GetDisplayType
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescription-getdisplaytype
                 - name: GetEditInvitation
                   href: /windows/desktop/api/propsys/nf-propsys-ipropertydescription-geteditinvitation
@@ -2269,7 +2269,7 @@
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescription-getgroupingrange
                 - name: GetPropertyKey
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescription-getpropertykey
-                - name: Getpropertytype
+                - name: GetPropertyType
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescription-getpropertytype
                 - name: GetRelativeDescription
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescription-getrelativedescription
@@ -2300,23 +2300,23 @@
             - name: IPropertyDescriptionList
               href: /windows/desktop/api/Propsys/nn-propsys-ipropertydescriptionlist
               items:
-                - name: GetAt
+                - name: Getat
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescriptionlist-getat
                 - name: GetCount
                   href: /windows/desktop/api/propsys/nf-propsys-ipropertydescriptionlist-getcount
             - name: IPropertyDescriptionRelatedPropertyInfo
               href: /windows/desktop/api/Propsys/nn-propsys-ipropertydescriptionrelatedpropertyinfo
               items:
-                - name: Getrelatedproperty
+                - name: GetRelatedProperty
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescriptionrelatedpropertyinfo-getrelatedproperty
             - name: IPropertyDescriptionSearchInfo
               href: /windows/desktop/api/Propsys/nn-propsys-ipropertydescriptionsearchinfo
               items:
                 - name: GetColumnIndexType
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescriptionsearchinfo-getcolumnindextype
-                - name: Getmaxsize
+                - name: GetMaxSize
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescriptionsearchinfo-getmaxsize
-                - name: Getprojestring
+                - name: GetProjectionString
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescriptionsearchinfo-getprojectionstring
                 - name: GetSearchInfoFlags
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertydescriptionsearchinfo-getsearchinfoflags
@@ -2325,7 +2325,7 @@
               items:
                 - name: GetDisplayText
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertyenumtype-getdisplaytext
-                - name: Getenumtype
+                - name: GetEnumType
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertyenumtype-getenumtype
                 - name: GetRangeMinValue
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertyenumtype-getrangeminvalue
@@ -2343,18 +2343,18 @@
               items:
                 - name: FindMatchingIndex
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertyenumtypelist-findmatchingindex
-                - name: GetAt
+                - name: Getat
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertyenumtypelist-getat
                 - name: GetConditionAt
                   href: /windows/desktop/api/propsys/nf-propsys-ipropertyenumtypelist-getconditionat
                 - name: GetCount
                   href: /windows/desktop/api/Propsys/nf-propsys-ipropertyenumtypelist-getcount
-            - name: IPropertyStore
+            - name: Ipropertystore
               href: /windows/desktop/api/propsys/nn-propsys-ipropertystore
               items:
                 - name: Commit
                   href: /previous-versions/windows/desktop/legacy/bb761470(v=vs.85)
-                - name: GetAt
+                - name: Getat
                   href: /previous-versions/windows/desktop/legacy/bb761471(v=vs.85)
                 - name: GetCount
                   href: /previous-versions/windows/desktop/legacy/bb761472(v=vs.85)
@@ -2409,11 +2409,11 @@
               items:
                 - name: FormatForDisplay
                   href: /windows/desktop/api/Shobjidl_core/nf-shobjidl_core-ipropertyui-formatfordisplay
-                - name: Getcanôniconame
+                - name: GetCanonicalName
                   href: /previous-versions/windows/desktop/legacy/dd758076(v=vs.85)
                 - name: GetDefaultWidth
                   href: /windows/desktop/api/Shobjidl_core/nf-shobjidl_core-ipropertyui-getdefaultwidth
-                - name: GetDisplayName
+                - name: Getdisplayname
                   href: /windows/desktop/api/Shobjidl_core/nf-shobjidl_core-ipropertyui-getdisplayname
                 - name: GetFlags
                   href: /windows/desktop/api/Shobjidl_core/nf-shobjidl_core-ipropertyui-getflags
@@ -2426,7 +2426,7 @@
         - name: Funções
           href: functions.md
           items:
-            - name: Funções de recipiente de propriedades
+            - name: Funções do pacote de propriedades
               href: property-bag-functions.md
               items:
                 - name: PSPropertyBag_Delete
@@ -2624,7 +2624,7 @@
                   href: /windows/desktop/api/Propvarutil/nf-propvarutil-ispropvariantvector
                 - name: IsVariantArray
                   href: /windows/desktop/api/Propvarutil/nf-propvarutil-isvariantarray
-                - name: Isvariastring
+                - name: IsVariantString
                   href: /windows/desktop/api/Propvarutil/nf-propvarutil-isvariantstring
                 - name: IsVarTypeFloat
                   href: /windows/desktop/api/Propvarutil/nf-propvarutil-isvartypefloat
