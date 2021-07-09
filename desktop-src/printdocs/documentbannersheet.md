@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Leia sobre o elemento DocumentBannerSheet configurável pelo usuário. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
 ms.assetid: c10da176-946a-4439-8ad7-037013b39e41
 title: DocumentBannerSheet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7ef61001e45178989d6f89e17d8cc38b82c1354
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 80ce05ffae190835e4a8b4082c634b34e26103ab
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996303"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113548764"
 ---
 # <a name="documentbannersheet"></a>DocumentBannerSheet
 
@@ -64,7 +64,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Nome                               | Tipo de dados         | Unidade                   | Valores com suporte                                                                                                                                                                      | Resumo                                                                      |
 |------------------------------------|-------------------|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | \_OptionName\_<br/>          | string<br/> | characters <br/> | Nome totalmente qualificado válido, conforme definido pelos [namespaces em XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | O nome da opção<br/>                                            |
-| \_IdentityOptionValue\_<br/> | string<br/> | N/D<br/>         | Verdadeiro, Falso<br/>                                                                                                                                                                | Define uma opção que, quando selecionada, desabilita esse recurso.<br/> |
+| \_IdentityOptionValue\_<br/> | string<br/> | n/d<br/>         | Verdadeiro, Falso<br/>                                                                                                                                                                | Define uma opção que, quando selecionada, desabilita esse recurso.<br/> |
 
 
 

@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre as definições de opção no esquema de PrintCapabilities. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
 ms.assetid: e81068db-ab8e-420c-a0be-93bc92f3df6f
 title: Definições de opção
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 10016b295cc2da7ede4e6a4f8944f279a25f6f9b
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: fdc7dddb4840de8bc91c7f9ab127fd31319e5399
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104172569"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549364"
 ---
 # <a name="option-definitions"></a>Definições de opção
 

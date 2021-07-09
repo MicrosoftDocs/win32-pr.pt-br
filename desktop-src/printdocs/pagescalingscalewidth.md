@@ -1,21 +1,21 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Obter informações sobre o parâmetro PageScalingScaleWidth. Este tópico não é atual. Para obter as informações mais atuais, consulte a Especificação de Esquema de Impressão.
 ms.assetid: 0de776f3-ae09-49f4-a829-b3c0e2ab5bbc
 title: PageScalingScaleWidth
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4ef53d9fe2906ae04cd1e7e3ea1513a631bc162
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 75b6180395eb656ee40d8558f7208fec2ad2fce8
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997453"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113548794"
 ---
 # <a name="pagescalingscalewidth"></a>PageScalingScaleWidth
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica o fator de dimensionamento na direção do ImageableSizeWidth para o dimensionamento personalizado.
+Especifica o fator de dimensionamento na direção ImageableSizeWidth para dimensionamento personalizado.
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo da estrutura](#structure-content)
@@ -27,8 +27,8 @@ Especifica o fator de dimensionamento na direção do ImageableSizeWidth para o 
 | Nome | Valor |
 |----------------------------|---------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                 |
-| Prefixo de escopo <br/> | ?<br/>                                         |
-| Observações <br/>          | Vinculado ao elemento PageScaling, opção personalizada<br/> |
+| Prefixo de definição de scoping <br/> | Página<br/>                                         |
+| Observações <br/>          | Vinculado ao elemento PageScaling, opção Personalizada<br/> |
 
 
 
@@ -76,10 +76,10 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Tipo de dados<br/>     | String<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | Integer<br/> | não definido<br/>       |
 | MaxValue<br/>     | Integer<br/> | não definido<br/>       |
-| MinValue<br/>     | Integer<br/> | 1<br/>               |
-| Obrigatório<br/>    | String<br/>  | PSK: condicional<br/> |
+| Minvalue<br/>     | Integer<br/> | 1<br/>               |
+| Obrigatório<br/>    | String<br/>  | psk:Conditional<br/> |
 | Vários<br/>     | Integer<br/> | 1<br/>               |
-| UnitType<br/>     | String<br/>  | mícrons<br/>         |
+| Unittype<br/>     | String<br/>  | Mícrons<br/>         |
 
 
 

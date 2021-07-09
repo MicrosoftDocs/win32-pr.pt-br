@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Obtenha informações sobre o elemento Option. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
 ms.assetid: feda78d9-58e7-4668-8a25-40e5fd8ad456
 title: Opção
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 379834d12cd01847c95783d727be5dcdc6c575bf
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 6ac4318e6a79a3d4daa77f15901d032c66134bdd
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105780414"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549374"
 ---
 # <a name="option"></a>Opção
 
@@ -44,7 +44,7 @@ A tabela a seguir lista os elementos que podem ser pais deste elemento, os eleme
 
 
 
-| Category                   | Detalhes                                                                                                                                                                                                                                                                                          |
+| Categoria                   | Detalhes                                                                                                                                                                                                                                                                                          |
 |----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Elementos pai<br/> | Recurso <br/>                                                                                                                                                                                                                                                                              |
 | Elementos filho<br/>  | *Propriedade* (zero ou mais)<br/> *ScoredProperty* (zero ou mais opções com o atributo XML ' name '; uma ou mais opções for que não utilizam o atributo XML ' name ' \* )<br/> \* somente as opções públicas definidas no esquema de impressão não podem ter nenhum atributo ' name ', como DocumentNUp)<br/> |
@@ -60,7 +60,7 @@ Um elemento de definição de opção não pode ter nenhuma dependência de conf
 
 ## <a name="element-usage"></a>Uso do elemento
 
-A finalidade do elemento Option é caracterizar um dos Estados que um atributo de configuração de dispositivo, representado por um elemento Feature, possa assumir. Cada definição de elemento de opção contém um ou mais elementos ScoredProperty que descrevem uma característica intrínseca ou essencial dessa opção. Para facilitar a portabilidade e a preservação da intenção, o esquema de impressão define muitos elementos de recursos comuns e uma variedade de elementos de opção para cada recurso. Portanto, é importante usar elementos de opção de impressão definidos pelo esquema, se possível, antes de criar suas próprias definições de opção. Entender o processo de definição de elementos de opção fornece informações úteis sobre o modo como os documentos e PrintCapabilities de impressão são usados nas arquiteturas do Microsoft .NET Framework versão 3,0 e do Windows Vista.
+A finalidade do elemento Option é caracterizar um dos Estados que um atributo de configuração de dispositivo, representado por um elemento Feature, possa assumir. Cada definição de elemento de opção contém um ou mais elementos ScoredProperty que descrevem uma característica intrínseca ou essencial dessa opção. Para facilitar a portabilidade e a preservação da intenção, o esquema de impressão define muitos elementos de recursos comuns e uma variedade de elementos de opção para cada recurso. Portanto, é importante usar elementos de opção de impressão definidos pelo esquema, se possível, antes de criar suas próprias definições de opção. entender o processo de definição de elementos de opção fornece informações úteis sobre o modo como os documentos e printcapabilities de impressão são usados no Microsoft .NET Framework versão 3,0 e na arquitetura de impressões do Windows Vista.
 
 ## <a name="example"></a>Exemplo
 

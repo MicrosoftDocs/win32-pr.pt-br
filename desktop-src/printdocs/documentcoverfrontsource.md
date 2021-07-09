@@ -1,21 +1,21 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Obter informações sobre o parâmetro DocumentCoverFrontSource. Este tópico não é atual. Para obter as informações mais atuais, consulte a Especificação de Esquema de Impressão.
 ms.assetid: ec41d0c8-ea77-44ac-a02b-6a48237b324f
 title: DocumentCoverFrontSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15b558a044716c5c13ae012665193f958f8ce6aa
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: afeb6ecb089eb271e0b8fff136e73a20194f0c8f
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997893"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113548754"
 ---
 # <a name="documentcoverfrontsource"></a>DocumentCoverFrontSource
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica a origem de uma folha de capa personalizada.
+Especifica a origem de uma folha de front-cover personalizada.
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo da estrutura](#structure-content)
@@ -27,7 +27,7 @@ Especifica a origem de uma folha de capa personalizada.
 | Nome | Valor |
 |----------------------------|-------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                         |
-| Prefixo de escopo <br/> | Documento<br/>                             |
+| Prefixo de definição de scoping <br/> | Documento<br/>                             |
 | Observações <br/>          | Vinculado ao elemento DocumentCoverFront<br/> |
 
 
@@ -72,9 +72,9 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Tipo de dados<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | string<br/>  | não definido<br/>       |
 | MaxLength<br/>    | Número inteiro<br/> | não definido<br/>       |
-| MinLength<br/>    | integer<br/> | 1<br/>               |
-| Obrigatório<br/>    | string<br/>  | PSK: condicional<br/> |
-| UnitType<br/>     | string<br/>  | characters<br/>      |
+| Minlength<br/>    | integer<br/> | 1<br/>               |
+| Obrigatório<br/>    | string<br/>  | psk:Conditional<br/> |
+| Unittype<br/>     | string<br/>  | characters<br/>      |
 
 
 

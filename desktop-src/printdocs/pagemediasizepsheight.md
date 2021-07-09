@@ -1,21 +1,21 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Obter informações sobre o parâmetro PageMediaSizePSHeight. Este tópico não é atual. Para obter as informações mais atuais, consulte a Especificação de Esquema de Impressão.
 ms.assetid: 857caf51-ccf6-415c-aab3-1fed50fa7b34
 title: PageMediaSizePSHeight
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96c6ddd593d95ae740a5e03d37e3d79c73e1638b
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 2b1e7a30935c27fadb5d6ebb8dfb8f377e05a5e3
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107993693"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549084"
 ---
 # <a name="pagemediasizepsheight"></a>PageMediaSizePSHeight
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica a altura da página, paralela à direção da orientação do feed (referência da [especificação de formato de arquivo de descrição de impressora PostScript](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)).
+Especifica a altura da página, paralela à direção da orientação do feed (Referência PostScript [Especificação](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)de Formato de Arquivo de Descrição da Impressora ).
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo da estrutura](#structure-content)
@@ -27,7 +27,7 @@ Especifica a altura da página, paralela à direção da orientação do feed (r
 | Nome | Valor |
 |----------------------------|-------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                     |
-| Prefixo de escopo <br/> | ?<br/>                                             |
+| Prefixo de definição de scoping <br/> | Página<br/>                                             |
 | Observações <br/>          | Vinculado ao elemento PageMediaSize, opção CustomPS<br/> |
 
 
@@ -76,10 +76,10 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Tipo de dados<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | Número inteiro<br/> | não definido<br/>       |
 | MaxValue<br/>     | Número inteiro<br/> | não definido<br/>       |
-| MinValue<br/>     | Número inteiro<br/> | não definido<br/>       |
-| Obrigatório<br/>    | string<br/>  | PSK: condicional<br/> |
+| Minvalue<br/>     | Número inteiro<br/> | não definido<br/>       |
+| Obrigatório<br/>    | string<br/>  | psk:Conditional<br/> |
 | Vários<br/>     | integer<br/> | 1<br/>               |
-| UnitType<br/>     | string<br/>  | mícrons<br/>         |
+| Unittype<br/>     | string<br/>  | Mícrons<br/>         |
 
 
 
@@ -89,7 +89,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 
 <dl> <dt>
 
-[Especificação de formato de arquivo de descrição de impressora PostScript](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)
+[PostScript Especificação de formato de arquivo de descrição da impressora](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)
 </dt> <dt>
 
 [Especificação de esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)

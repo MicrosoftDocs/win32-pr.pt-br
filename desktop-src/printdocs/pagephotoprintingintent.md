@@ -1,19 +1,19 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Revise o elemento pagePhotoPrintingIntent configurável pelo usuário. Este tópico não é atual. Para obter as informações mais atuais, consulte a Especificação de Esquema de Impressão.
 ms.assetid: f9a00828-52df-449e-914b-4c6cd7c29f3a
 title: PagePhotoPrintingIntent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01d56a0b46c73bb3afdcefe96dc2131c861d5419
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 2d1cf9ae587062efc68b953f5931b55147940b1b
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997973"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113548974"
 ---
 # <a name="pagephotoprintingintent"></a>PagePhotoPrintingIntent
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Indica uma intenção de alto nível para o driver para população de configurações de impressão de fotos. Essas configurações lidam com a qualidade de saída esperada que um usuário pode especificar ao imprimir fotos.
 
@@ -30,7 +30,7 @@ Indica uma intenção de alto nível para o driver para população de configura
 | Nome | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
-| Prefixo de escopo <br/> | ?<br/>    |
+| Prefixo de definição de scoping <br/> | Página<br/>    |
 | Observações <br/>          | Nenhum<br/>    |
 
 
@@ -62,16 +62,16 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 
 | Nome                               | Tipo de dados         | Unidade                  | Valores com suporte                                                                                                                                                                      | Resumo                                                                      |
 |------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/> | characters<br/> | Nome totalmente qualificado válido, conforme definido pelos [namespaces em XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | O nome da opção<br/>                                            |
-| \_IdentityOptionValue\_<br/> | string<br/> | N/D<br/>        | Verdadeiro, Falso<br/>                                                                                                                                                                | Define uma opção que, quando selecionada, desabilita esse recurso.<br/> |
+| \_Optionname\_<br/>          | string<br/> | characters<br/> | Nome totalmente qualificado válido, conforme definido [por Namespaces em XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | O nome da opção<br/>                                            |
+| \_IdentityOptionValue\_<br/> | string<br/> | n/d<br/>        | Verdadeiro, Falso<br/>                                                                                                                                                                | Define uma Opção que, quando selecionada, desabilitará esse recurso.<br/> |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>Conteúdo de linguagem XML (XML)
+## <a name="extensible-markup-language-xml-content"></a>linguagem XML conteúdo (XML)
 
-As palavras-chave do esquema de impressão pública são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace. O conteúdo do linguagem XML público (XML) para essa palavra-chave é definido abaixo:
+As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML XML (public linguagem XML) para essa palavra-chave é definido abaixo:
 
 ``` syntax
 <psf:Feature name="psk:PagePhotoPrintingIntent">

@@ -1,21 +1,21 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Obter informações sobre o parâmetro JobPrimaryCoverFrontSource. Este tópico não é atual. Para obter as informações mais atuais, consulte a Especificação de Esquema de Impressão.
 ms.assetid: f27c5e65-87b0-47a4-a5dc-27b52082f097
 title: JobPrimaryCoverFrontSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18f45b4125ce7d899597631abf4e01211724bee8
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 6e4698d826e59e513d5eb171381cd1b18ea4a751
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107993952"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549394"
 ---
 # <a name="jobprimarycoverfrontsource"></a>JobPrimaryCoverFrontSource
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica a origem de uma folha primária de capa de front-end personalizada para o trabalho.
+Especifica a origem de uma folha primária de front-cover personalizada para o trabalho.
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo da estrutura](#structure-content)
@@ -27,7 +27,7 @@ Especifica a origem de uma folha primária de capa de front-end personalizada pa
 | Nome | Valor |
 |----------------------------|--------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                    |
-| Prefixo de escopo <br/> | Trabalho<br/>                             |
+| Prefixo de definição de scoping <br/> | Trabalho<br/>                             |
 | Observações <br/>          | Vinculado ao elemento JobCoverFront<br/> |
 
 
@@ -72,9 +72,9 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Tipo de dados<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | string<br/>  | não definido<br/>       |
 | MaxLength<br/>    | Número inteiro<br/> | não definido<br/>       |
-| MinLength<br/>    | integer<br/> | 1<br/>               |
-| Obrigatório<br/>    | string<br/>  | PSK: condicional<br/> |
-| UnitType<br/>     | string<br/>  | characters<br/>      |
+| Minlength<br/>    | integer<br/> | 1<br/>               |
+| Obrigatório<br/>    | string<br/>  | psk:Conditional<br/> |
+| Unittype<br/>     | string<br/>  | characters<br/>      |
 
 
 

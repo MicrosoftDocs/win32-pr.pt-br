@@ -1,21 +1,21 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Leia sobre o parâmetro PageBlendColorSpaceICCProfileURI. Este tópico não é atual. Para obter as informações mais atuais, consulte a Especificação de Esquema de Impressão.
 ms.assetid: 05924c7d-e074-4835-b42c-53c77dc1bbb5
 title: PageBlendColorSpaceICCProfileURI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cbf1233e172a81053baee0abe1e21d79064045a
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 50db89757737ff5aa6a1358af418ee33809b960e
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997693"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549314"
 ---
 # <a name="pageblendcolorspaceiccprofileuri"></a>PageBlendColorSpaceICCProfileURI
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica uma referência de URI relativa a um perfil ICC que define o espaço de cores que deve ser usado para mesclagem. O <Uri> é um nome de parte absoluto \_ relativo à raiz do pacote.
+Especifica uma referência de URI relativa a um perfil ICC que define o espaço de cores que DEVE ser usado para mesclagem. O <Uri> é um nome de parte absoluto em relação à raiz do \_ pacote.
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo da estrutura](#structure-content)
@@ -27,7 +27,7 @@ Especifica uma referência de URI relativa a um perfil ICC que define o espaço 
 | Nome | Valor |
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                                                                                                |
-| Prefixo de escopo <br/> | ?<br/>                                                                                                                        |
+| Prefixo de definição de scoping <br/> | Página<br/>                                                                                                                        |
 | Observações <br/>          | Isso se aplica somente a documentos XPS e não deve ser usado em PrintTickets arbitrários. Vinculado ao elemento PageBlendColorSpace.<br/> |
 
 
@@ -72,9 +72,9 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Tipo de dados<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | string<br/>  | não definido<br/>       |
 | MaxLength<br/>    | Número inteiro<br/> | não definido<br/>       |
-| MinLength<br/>    | integer<br/> | 1<br/>               |
-| Obrigatório<br/>    | string<br/>  | PSK: condicional<br/> |
-| UnitType<br/>     | string<br/>  | characters<br/>      |
+| Minlength<br/>    | integer<br/> | 1<br/>               |
+| Obrigatório<br/>    | string<br/>  | psk:Conditional<br/> |
+| Unittype<br/>     | string<br/>  | characters<br/>      |
 
 
 

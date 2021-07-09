@@ -1,15 +1,15 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Leia sobre os recursos e as opções em um documento de PrintCapabilities. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
 ms.assetid: 8084fa15-85e5-4c8d-b585-8c349482a6eb
 title: Recursos e opções
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 866cead02021b8d933ca03483e77de832d8d094a
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 7ae6d0918b6237885c2c7240efb0dc0f982b882f
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105782759"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549404"
 ---
 # <a name="features-and-options"></a>Recursos e opções
 

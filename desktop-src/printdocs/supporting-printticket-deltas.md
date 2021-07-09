@@ -1,35 +1,35 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre como dar suporte a deltas printTicket. Este tópico não é atual. Para obter as informações mais atuais, consulte a Especificação de Esquema de Impressão.
 ms.assetid: 80fdc8f1-4fda-4102-9b27-16d9acb4d077
-title: Suporte a deltas do PrintTicket
+title: Suporte a deltas PrintTicket
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 730c8d32d881dd30a6ab57b88d8fc1dfa87eee7a
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: b7f72f82875d0207ed232f4db897c78295ce2ee0
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105765784"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113548774"
 ---
-# <a name="supporting-printticket-deltas"></a>Suporte a deltas do PrintTicket
+# <a name="supporting-printticket-deltas"></a>Suporte a deltas PrintTicket
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-A interface do provedor PrintTicket tem métodos que podem ser usados para fazer alterações incrementais em um PrintTicket existente. As alterações incrementais do PrintTicket podem ser especificadas em um PrintTicket parcial conhecido como um Delta PrintTicket. Um PrintTicket revisado é criado pela mesclagem de um Delta PrintTicket com um PrintTicket existente. Consulte o documento da interface do provedor do PrintTicket em breve para obter mais informações sobre métodos envolvendo deltas PrintTicket.
+A Interface do Provedor PrintTicket tem métodos que podem ser usados para fazer alterações incrementais em um PrintTicket existente. As alterações incrementais de PrintTicket podem ser especificadas em um PrintTicket parcial que é conhecido como um delta printTicket. Um PrintTicket revisado é criado mesclando um delta printTicket com um PrintTicket existente. Consulte o próximo documento da Interface do Provedor PrintTicket para obter mais informações sobre métodos que envolvem deltas printTicket.
 
-Quando um Delta PrintTicket é processado, as etapas a seguir devem ser executadas.
+Quando um delta printTicket é processado, as etapas a seguir devem ser executadas.
 
-1.  Identifique as instâncias de recurso ou ParameterInit que são comuns ao PrintTicket existente (o PrintTicket de destino) e ao Delta do PrintTicket.
+1.  Identifique instâncias de Recurso ou ParameterInit que são comuns ao PrintTicket existente (o PrintTicket de destino) e ao delta printTicket.
 
-    -   Para cada recurso comum ao PrintTicket de destino e ao Delta do PrintTicket, substitua o recurso no PrintTicket de destino pelo recurso correspondente no Delta do PrintTicket.
+    -   Para cada Recurso comum ao PrintTicket de destino e ao delta PrintTicket, substitua o Recurso no PrintTicket de destino pelo Recurso correspondente no delta printTicket.
 
-    -   Para cada ParameterInit comum ao PrintTicket de destino e ao Delta do PrintTicket, substitua o ParameterInit no PrintTicket de destino pelo ParameterInit correspondente no Delta do PrintTicket.
+    -   Para cada ParameterInit comum ao PrintTicket de destino e ao delta PrintTicket, substitua ParameterInit no PrintTicket de destino pelo ParameterInit correspondente no delta printTicket.
 
-2.  Copie todas as instâncias restantes do recurso e do ParameterInit no Delta do PrintTicket para o PrintTicket de destino.
+2.  Copie todas as instâncias restantes de Recurso e ParameterInit no delta PrintTicket para o PrintTicket de destino.
 
-3.  Se o algoritmo de resolução de conflitos permitir que as prioridades sejam especificadas no próprio PrintTicket, você poderá optar por elevar as prioridades do recurso e das instâncias ParameterInit nomeadas no Delta do PrintTicket.
+3.  Se o algoritmo de resolução de conflitos permitir que as prioridades sejam especificadas no próprio PrintTicket, você poderá optar por elevar as prioridades das instâncias Feature e ParameterInit nomeadas no delta printTicket.
 
-4.  Execute a validação de PrintTicket conforme descrito na [lista de verificação de validação do PrintTicket](printticket-validation-checklist.md).
+4.  Execute a validação printTicket, conforme descrito em [PrintTicket Validation Checklist](printticket-validation-checklist.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

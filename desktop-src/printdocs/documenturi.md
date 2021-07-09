@@ -1,25 +1,25 @@
 ---
-description: Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Obter informações sobre a propriedade DocumentURI. Este tópico não é atual. Para obter as informações mais atuais, consulte a Especificação de Esquema de Impressão.
 ms.assetid: 7926ae9b-e195-4391-9006-1eb4cf386f88
 title: DocumentURI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0d339b1b469f276492f7989b0ed7951ca1edad8
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 2cb4d1572417ac85e14c25c238be1d49611ba858
+ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997063"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113548804"
 ---
 # <a name="documenturi"></a>DocumentURI
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Especifica um URI (Uniform Resource Identifier) para o documento.
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo estrutural](#structural-content)
--   [Conteúdo de linguagem XML (XML)](#extensible-markup-language-xml-content)
+-   [linguagem XML conteúdo (XML)](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Informações do elemento
 
@@ -28,7 +28,7 @@ Especifica um URI (Uniform Resource Identifier) para o documento.
 | Nome | Valor |
 |----------------------------|---------------------|
 | Tipo de elemento <br/>   | Propriedade<br/> |
-| Prefixo de escopo <br/> | Documento<br/> |
+| Prefixo de definição de scoping <br/> | Documento<br/> |
 | Observações <br/>          | Nenhum<br/>     |
 
 
@@ -59,7 +59,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>Conteúdo de linguagem XML (XML)
+## <a name="extensible-markup-language-xml-content"></a>linguagem XML conteúdo (XML)
 
 ``` syntax
 <psf:Property name="psk:DocumentURI">
