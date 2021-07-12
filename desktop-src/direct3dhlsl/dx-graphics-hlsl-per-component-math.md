@@ -9,28 +9,28 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2c8c9eeea1072c53915588ac0099998e76c0452a
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 5cd065e415aafffa59dd6c31d2b9aa4f4505021d
+ms.sourcegitcommit: 7c7a05f65d2cf1ba2dadf05f63ae91a048083946
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119591"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113589583"
 ---
-# <a name="per-component-math-operations"></a><span data-ttu-id="6ee7e-103">Per-Component operações matemáticas</span><span class="sxs-lookup"><span data-stu-id="6ee7e-103">Per-Component Math Operations</span></span>
+# <a name="per-component-math-operations"></a><span data-ttu-id="88694-103">Per-Component operações matemáticas</span><span class="sxs-lookup"><span data-stu-id="88694-103">Per-Component Math Operations</span></span>
 
-<span data-ttu-id="6ee7e-104">Com o HLSL, você pode programar sombreadores em um nível de algoritmo.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-104">With HLSL, you can program shaders at an algorithm level.</span></span> <span data-ttu-id="6ee7e-105">Para entender a linguagem, você precisará saber como declarar variáveis e funções, usar funções intrínsecas, definir tipos de dados personalizados e usar semântica para conectar argumentos de sombreador a outros sombreadores e ao pipeline.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-105">To understand the language, you will need to know how to declare variables and functions, use intrinsic functions, define custom data types and use semantics to connect shader arguments to other shaders and to the pipeline.</span></span>
+<span data-ttu-id="88694-104">Com o HLSL, você pode programar sombreadores em um nível de algoritmo.</span><span class="sxs-lookup"><span data-stu-id="88694-104">With HLSL, you can program shaders at an algorithm level.</span></span> <span data-ttu-id="88694-105">Para entender a linguagem, você precisará saber como declarar variáveis e funções, usar funções intrínsecas, definir tipos de dados personalizados e usar semântica para conectar argumentos de sombreador a outros sombreadores e ao pipeline.</span><span class="sxs-lookup"><span data-stu-id="88694-105">To understand the language, you will need to know how to declare variables and functions, use intrinsic functions, define custom data types and use semantics to connect shader arguments to other shaders and to the pipeline.</span></span>
 
-<span data-ttu-id="6ee7e-106">Depois de aprender a criar sombreadores no HLSL, você precisará saber mais sobre chamadas à API para poder compilar um sombreador para um hardware específico, inicializar constantes de sombreador e inicializar outro estado de pipeline, se necessário.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-106">Once you learn how to author shaders in HLSL, you will need to learn about API calls so that you can: compile a shader for particular hardware, initialize shader constants, and initialize other pipeline state if necessary.</span></span>
+<span data-ttu-id="88694-106">Depois de aprender a criar sombreadores no HLSL, você precisará saber mais sobre chamadas à API para poder compilar um sombreador para um hardware específico, inicializar constantes de sombreador e inicializar outro estado de pipeline, se necessário.</span><span class="sxs-lookup"><span data-stu-id="88694-106">Once you learn how to author shaders in HLSL, you will need to learn about API calls so that you can: compile a shader for particular hardware, initialize shader constants, and initialize other pipeline state if necessary.</span></span>
 
--   [<span data-ttu-id="6ee7e-107">O tipo de vetor</span><span class="sxs-lookup"><span data-stu-id="6ee7e-107">The Vector Type</span></span>](#the-vector-type)
--   [<span data-ttu-id="6ee7e-108">O tipo de matriz</span><span class="sxs-lookup"><span data-stu-id="6ee7e-108">The Matrix Type</span></span>](#the-matrix-type)
-    -   [<span data-ttu-id="6ee7e-109">Ordenação de matriz</span><span class="sxs-lookup"><span data-stu-id="6ee7e-109">Matrix Ordering</span></span>](#matrix-ordering)
--   [<span data-ttu-id="6ee7e-110">Exemplos</span><span class="sxs-lookup"><span data-stu-id="6ee7e-110">Examples</span></span>](#examples)
--   [<span data-ttu-id="6ee7e-111">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="6ee7e-111">Related topics</span></span>](#related-topics)
+-   [<span data-ttu-id="88694-107">O tipo de vetor</span><span class="sxs-lookup"><span data-stu-id="88694-107">The Vector Type</span></span>](#the-vector-type)
+-   [<span data-ttu-id="88694-108">O tipo de matriz</span><span class="sxs-lookup"><span data-stu-id="88694-108">The Matrix Type</span></span>](#the-matrix-type)
+    -   [<span data-ttu-id="88694-109">Ordenação de matriz</span><span class="sxs-lookup"><span data-stu-id="88694-109">Matrix Ordering</span></span>](#matrix-ordering)
+-   [<span data-ttu-id="88694-110">Exemplos</span><span class="sxs-lookup"><span data-stu-id="88694-110">Examples</span></span>](#examples)
+-   [<span data-ttu-id="88694-111">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="88694-111">Related topics</span></span>](#related-topics)
 
-## <a name="the-vector-type"></a><span data-ttu-id="6ee7e-112">O tipo de vetor</span><span class="sxs-lookup"><span data-stu-id="6ee7e-112">The Vector Type</span></span>
+## <a name="the-vector-type"></a><span data-ttu-id="88694-112">O tipo de vetor</span><span class="sxs-lookup"><span data-stu-id="88694-112">The Vector Type</span></span>
 
-<span data-ttu-id="6ee7e-113">Um vetor é uma estrutura de dados que contém entre um e quatro componentes.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-113">A vector is a data structure that contains between one and four components.</span></span>
+<span data-ttu-id="88694-113">Um vetor é uma estrutura de dados que contém entre um e quatro componentes.</span><span class="sxs-lookup"><span data-stu-id="88694-113">A vector is a data structure that contains between one and four components.</span></span>
 
 
 ```
@@ -43,9 +43,9 @@ double4 dVector;   // vector containing 4 doubles
 
 
 
-<span data-ttu-id="6ee7e-114">O inteiro imediatamente após o tipo de dados é o número de componentes no vetor.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-114">The integer immediately following the data type is the number of components on the vector.</span></span>
+<span data-ttu-id="88694-114">O inteiro imediatamente após o tipo de dados é o número de componentes no vetor.</span><span class="sxs-lookup"><span data-stu-id="88694-114">The integer immediately following the data type is the number of components on the vector.</span></span>
 
-<span data-ttu-id="6ee7e-115">Os inicializadores também podem ser incluídos nas declarações.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-115">Initializers can also be included in the declarations.</span></span>
+<span data-ttu-id="88694-115">Os inicializadores também podem ser incluídos nas declarações.</span><span class="sxs-lookup"><span data-stu-id="88694-115">Initializers can also be included in the declarations.</span></span>
 
 
 ```
@@ -57,7 +57,7 @@ double4 dVector = { 0.2, 0.3, 0.4, 0.5 };
 
 
 
-<span data-ttu-id="6ee7e-116">Como alternativa, o tipo de vetor pode ser usado para fazer as mesmas declarações:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-116">Alternatively, the vector type can be used to make the same declarations:</span></span>
+<span data-ttu-id="88694-116">Como alternativa, o tipo de vetor pode ser usado para fazer as mesmas declarações:</span><span class="sxs-lookup"><span data-stu-id="88694-116">Alternatively, the vector type can be used to make the same declarations:</span></span>
 
 
 ```
@@ -69,14 +69,14 @@ vector <double, 4> dVector = { 0.2, 0.3, 0.4, 0.5 };
 
 
 
-<span data-ttu-id="6ee7e-117">O tipo de vetor usa colchetes angulares para especificar o tipo e o número de componentes.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-117">The vector type uses angle brackets to specify the type and number of components.</span></span>
+<span data-ttu-id="88694-117">O tipo de vetor usa colchetes angulares para especificar o tipo e o número de componentes.</span><span class="sxs-lookup"><span data-stu-id="88694-117">The vector type uses angle brackets to specify the type and number of components.</span></span>
 
-<span data-ttu-id="6ee7e-118">Os vetores contêm até quatro componentes, cada um deles pode ser acessado usando um dos dois conjuntos de nomen básicos:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-118">Vectors contain up to four components, each of which can be accessed using one of two naming sets:</span></span>
+<span data-ttu-id="88694-118">Os vetores contêm até quatro componentes, cada um deles pode ser acessado usando um dos dois conjuntos de nomen básicos:</span><span class="sxs-lookup"><span data-stu-id="88694-118">Vectors contain up to four components, each of which can be accessed using one of two naming sets:</span></span>
 
--   <span data-ttu-id="6ee7e-119">O conjunto de posições: x,y, z, w</span><span class="sxs-lookup"><span data-stu-id="6ee7e-119">The position set: x,y,z,w</span></span>
--   <span data-ttu-id="6ee7e-120">O conjunto de cores: r, g, b, a</span><span class="sxs-lookup"><span data-stu-id="6ee7e-120">The color set: r,g,b,a</span></span>
+-   <span data-ttu-id="88694-119">O conjunto de posições: x,y, z, w</span><span class="sxs-lookup"><span data-stu-id="88694-119">The position set: x,y,z,w</span></span>
+-   <span data-ttu-id="88694-120">O conjunto de cores: r, g, b, a</span><span class="sxs-lookup"><span data-stu-id="88694-120">The color set: r,g,b,a</span></span>
 
-<span data-ttu-id="6ee7e-121">Essas duas instruções retornam o valor no terceiro componente.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-121">These statements both return the value in the third component.</span></span>
+<span data-ttu-id="88694-121">Essas duas instruções retornam o valor no terceiro componente.</span><span class="sxs-lookup"><span data-stu-id="88694-121">These statements both return the value in the third component.</span></span>
 
 
 ```
@@ -89,7 +89,7 @@ pos.b    // value is 2
 
 
 
-<span data-ttu-id="6ee7e-122">Os conjuntos de nomes podem usar um ou mais componentes, mas não podem ser mistos.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-122">Naming sets can use one or more components, but they cannot be mixed.</span></span>
+<span data-ttu-id="88694-122">Os conjuntos de nomes podem usar um ou mais componentes, mas não podem ser mistos.</span><span class="sxs-lookup"><span data-stu-id="88694-122">Naming sets can use one or more components, but they cannot be mixed.</span></span>
 
 
 ```
@@ -105,7 +105,7 @@ temp = pos.xg  // NOT VALID because the position and color sets were used.
 
 
 
-<span data-ttu-id="6ee7e-123">Especificar um ou mais componentes de vetor ao ler componentes é chamado de girar.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-123">Specifying one or more vector components when reading components is called swizzling.</span></span> <span data-ttu-id="6ee7e-124">Por exemplo:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-124">For example:</span></span>
+<span data-ttu-id="88694-123">Especificar um ou mais componentes de vetor ao ler componentes é chamado de girar.</span><span class="sxs-lookup"><span data-stu-id="88694-123">Specifying one or more vector components when reading components is called swizzling.</span></span> <span data-ttu-id="88694-124">Por exemplo:</span><span class="sxs-lookup"><span data-stu-id="88694-124">For example:</span></span>
 
 
 ```
@@ -121,7 +121,7 @@ f_2D = pos.yy;
 
 
 
-<span data-ttu-id="6ee7e-125">Mascaramento controla quantos componentes são gravados.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-125">Masking controls how many components are written.</span></span>
+<span data-ttu-id="88694-125">Mascaramento controla quantos componentes são gravados.</span><span class="sxs-lookup"><span data-stu-id="88694-125">Masking controls how many components are written.</span></span>
 
 
 ```
@@ -138,7 +138,7 @@ f_4D.wzyx = pos;
 
 
 
-<span data-ttu-id="6ee7e-126">As atribuições não podem ser escritas no mesmo componente mais de uma vez.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-126">Assignments cannot be written to the same component more than once.</span></span> <span data-ttu-id="6ee7e-127">Portanto, o lado esquerdo dessa instrução é inválido:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-127">So the left side of this statement is invalid:</span></span>
+<span data-ttu-id="88694-126">As atribuições não podem ser escritas no mesmo componente mais de uma vez.</span><span class="sxs-lookup"><span data-stu-id="88694-126">Assignments cannot be written to the same component more than once.</span></span> <span data-ttu-id="88694-127">Portanto, o lado esquerdo dessa instrução é inválido:</span><span class="sxs-lookup"><span data-stu-id="88694-127">So the left side of this statement is invalid:</span></span>
 
 
 ```
@@ -147,7 +147,7 @@ f_4D.xx = pos.xy;   // cannot write to the same destination components
 
 
 
-<span data-ttu-id="6ee7e-128">Além disso, os espaços de nome do componente não podem ser mistos.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-128">Also, the component name spaces cannot be mixed.</span></span> <span data-ttu-id="6ee7e-129">Esta é uma gravação de componente inválida:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-129">This is an invalid component write:</span></span>
+<span data-ttu-id="88694-128">Além disso, os espaços de nome do componente não podem ser mistos.</span><span class="sxs-lookup"><span data-stu-id="88694-128">Also, the component name spaces cannot be mixed.</span></span> <span data-ttu-id="88694-129">Esta é uma gravação de componente inválida:</span><span class="sxs-lookup"><span data-stu-id="88694-129">This is an invalid component write:</span></span>
 
 
 ```
@@ -156,7 +156,7 @@ f_4D.xg = pos.rgrg;    // invalid write: cannot mix component name spaces
 
 
 
-<span data-ttu-id="6ee7e-130">Acessar um vetor como escalar acessará o primeiro componente do vetor.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-130">Accessing a vector as a scalar will access the first component of the vector.</span></span> <span data-ttu-id="6ee7e-131">As duas instruções a seguir são equivalentes.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-131">The following two statements are equivalent.</span></span>
+<span data-ttu-id="88694-130">Acessar um vetor como escalar acessará o primeiro componente do vetor.</span><span class="sxs-lookup"><span data-stu-id="88694-130">Accessing a vector as a scalar will access the first component of the vector.</span></span> <span data-ttu-id="88694-131">As duas instruções a seguir são equivalentes.</span><span class="sxs-lookup"><span data-stu-id="88694-131">The following two statements are equivalent.</span></span>
 
 
 ```
@@ -166,9 +166,9 @@ f_4D.a = pos.r * 5.0f;
 
 
 
-## <a name="the-matrix-type"></a><span data-ttu-id="6ee7e-132">O tipo de matriz</span><span class="sxs-lookup"><span data-stu-id="6ee7e-132">The Matrix Type</span></span>
+## <a name="the-matrix-type"></a><span data-ttu-id="88694-132">O tipo de matriz</span><span class="sxs-lookup"><span data-stu-id="88694-132">The Matrix Type</span></span>
 
-<span data-ttu-id="6ee7e-133">Uma matriz é uma estrutura de dados que contém linhas e colunas de dados.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-133">A matrix is a data structure that contains rows and columns of data.</span></span> <span data-ttu-id="6ee7e-134">Os dados podem ser qualquer um dos tipos de dados escalares, no entanto, cada elemento de uma matriz é o mesmo tipo de dados.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-134">The data can be any of the scalar data types, however, every element of a matrix is the same data type.</span></span> <span data-ttu-id="6ee7e-135">O número de linhas e colunas é especificado com a cadeia de caracteres linha por coluna que é anexada ao tipo de dados.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-135">The number of rows and columns is specified with the row-by-column string that is appended to the data type.</span></span>
+<span data-ttu-id="88694-133">Uma matriz é uma estrutura de dados que contém linhas e colunas de dados.</span><span class="sxs-lookup"><span data-stu-id="88694-133">A matrix is a data structure that contains rows and columns of data.</span></span> <span data-ttu-id="88694-134">Os dados podem ser qualquer um dos tipos de dados escalares, no entanto, cada elemento de uma matriz é o mesmo tipo de dados.</span><span class="sxs-lookup"><span data-stu-id="88694-134">The data can be any of the scalar data types, however, every element of a matrix is the same data type.</span></span> <span data-ttu-id="88694-135">O número de linhas e colunas é especificado com a cadeia de caracteres linha por coluna que é anexada ao tipo de dados.</span><span class="sxs-lookup"><span data-stu-id="88694-135">The number of rows and columns is specified with the row-by-column string that is appended to the data type.</span></span>
 
 
 ```
@@ -186,9 +186,9 @@ double4x4 dMatrix;   // double matrix with 4 rows, 4 columns
 
 
 
-<span data-ttu-id="6ee7e-136">O número máximo de linhas ou colunas é 4; o número mínimo é 1.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-136">The maximum number of rows or columns is 4; the minimum number is 1.</span></span>
+<span data-ttu-id="88694-136">O número máximo de linhas ou colunas é 4; o número mínimo é 1.</span><span class="sxs-lookup"><span data-stu-id="88694-136">The maximum number of rows or columns is 4; the minimum number is 1.</span></span>
 
-<span data-ttu-id="6ee7e-137">Uma matriz pode ser inicializada quando é declarada:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-137">A matrix can be initialized when it is declared:</span></span>
+<span data-ttu-id="88694-137">Uma matriz pode ser inicializada quando é declarada:</span><span class="sxs-lookup"><span data-stu-id="88694-137">A matrix can be initialized when it is declared:</span></span>
 
 
 ```
@@ -199,7 +199,7 @@ float2x2 fMatrix = { 0.0f, 0.1, // row 1
 
 
 
-<span data-ttu-id="6ee7e-138">Ou, o tipo de matriz pode ser usado para fazer as mesmas declarações:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-138">Or, the matrix type can be used to make the same declarations:</span></span>
+<span data-ttu-id="88694-138">Ou, o tipo de matriz pode ser usado para fazer as mesmas declarações:</span><span class="sxs-lookup"><span data-stu-id="88694-138">Or, the matrix type can be used to make the same declarations:</span></span>
 
 
 ```
@@ -210,9 +210,9 @@ matrix <float, 2, 2> fMatrix = { 0.0f, 0.1, // row 1
 
 
 
-<span data-ttu-id="6ee7e-139">O tipo de matriz usa os colchetes angulares para especificar o tipo, o número de linhas e o número de colunas.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-139">The matrix type uses the angle brackets to specify the type, the number of rows, and the number of columns.</span></span> <span data-ttu-id="6ee7e-140">Este exemplo cria uma matriz de ponto flutuante, com duas linhas e duas colunas.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-140">This example creates a floating-point matrix, with two rows and two columns.</span></span> <span data-ttu-id="6ee7e-141">Qualquer um dos tipos de dados escalares pode ser usado.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-141">Any of the scalar data types can be used.</span></span>
+<span data-ttu-id="88694-139">O tipo de matriz usa os colchetes angulares para especificar o tipo, o número de linhas e o número de colunas.</span><span class="sxs-lookup"><span data-stu-id="88694-139">The matrix type uses the angle brackets to specify the type, the number of rows, and the number of columns.</span></span> <span data-ttu-id="88694-140">Este exemplo cria uma matriz de ponto flutuante, com duas linhas e duas colunas.</span><span class="sxs-lookup"><span data-stu-id="88694-140">This example creates a floating-point matrix, with two rows and two columns.</span></span> <span data-ttu-id="88694-141">Qualquer um dos tipos de dados escalares pode ser usado.</span><span class="sxs-lookup"><span data-stu-id="88694-141">Any of the scalar data types can be used.</span></span>
 
-<span data-ttu-id="6ee7e-142">Essa declaração define uma matriz de valores float (números de ponto flutuante de 32 bits) com duas linhas e três colunas:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-142">This declaration defines a matrix of float values (32-bit floating-point numbers) with two rows and three columns:</span></span>
+<span data-ttu-id="88694-142">Essa declaração define uma matriz de valores float (números de ponto flutuante de 32 bits) com duas linhas e três colunas:</span><span class="sxs-lookup"><span data-stu-id="88694-142">This declaration defines a matrix of float values (32-bit floating-point numbers) with two rows and three columns:</span></span>
 
 
 ```
@@ -221,20 +221,20 @@ matrix <float, 2, 3> fFloatMatrix;
 
 
 
-<span data-ttu-id="6ee7e-143">Uma matriz contém valores organizados em linhas e colunas, que podem ser acessados usando o operador de estrutura "." seguido por um dos dois conjuntos de nomenis:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-143">A matrix contains values organized in rows and columns, which can be accessed using the structure operator "." followed by one of two naming sets:</span></span>
+<span data-ttu-id="88694-143">Uma matriz contém valores organizados em linhas e colunas, que podem ser acessados usando o operador de estrutura "." seguido por um dos dois conjuntos de nomenis:</span><span class="sxs-lookup"><span data-stu-id="88694-143">A matrix contains values organized in rows and columns, which can be accessed using the structure operator "." followed by one of two naming sets:</span></span>
 
--   <span data-ttu-id="6ee7e-144">A posição da coluna de linha baseada em zero:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-144">The zero-based row-column position:</span></span>
-    -   <span data-ttu-id="6ee7e-145">\_m00, \_ m01, \_ m02, \_ m03</span><span class="sxs-lookup"><span data-stu-id="6ee7e-145">\_m00, \_m01, \_m02, \_m03</span></span>
-    -   <span data-ttu-id="6ee7e-146">\_m10, \_ m11, \_ m12, \_ m13</span><span class="sxs-lookup"><span data-stu-id="6ee7e-146">\_m10, \_m11, \_m12, \_m13</span></span>
-    -   <span data-ttu-id="6ee7e-147">\_m20, \_ m21, \_ m22, \_ m23</span><span class="sxs-lookup"><span data-stu-id="6ee7e-147">\_m20, \_m21, \_m22, \_m23</span></span>
-    -   <span data-ttu-id="6ee7e-148">\_m30, \_ m31, \_ m32, \_ m33</span><span class="sxs-lookup"><span data-stu-id="6ee7e-148">\_m30, \_m31, \_m32, \_m33</span></span>
--   <span data-ttu-id="6ee7e-149">A posição da coluna de linha de base única:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-149">The one-based row-column position:</span></span>
-    -   <span data-ttu-id="6ee7e-150">\_11, \_ 12, \_ 13, \_ 14</span><span class="sxs-lookup"><span data-stu-id="6ee7e-150">\_11, \_12, \_13, \_14</span></span>
-    -   <span data-ttu-id="6ee7e-151">\_21, \_ 22, \_ 23, \_ 24</span><span class="sxs-lookup"><span data-stu-id="6ee7e-151">\_21, \_22, \_23, \_24</span></span>
-    -   <span data-ttu-id="6ee7e-152">\_31, \_ 32, \_ 33, \_ 34</span><span class="sxs-lookup"><span data-stu-id="6ee7e-152">\_31, \_32, \_33, \_34</span></span>
-    -   <span data-ttu-id="6ee7e-153">\_41, \_ 42, \_ 43, \_ 44</span><span class="sxs-lookup"><span data-stu-id="6ee7e-153">\_41, \_42, \_43, \_44</span></span>
+-   <span data-ttu-id="88694-144">A posição da coluna de linha baseada em zero:</span><span class="sxs-lookup"><span data-stu-id="88694-144">The zero-based row-column position:</span></span>
+    -   <span data-ttu-id="88694-145">\_m00, \_ m01, \_ m02, \_ m03</span><span class="sxs-lookup"><span data-stu-id="88694-145">\_m00, \_m01, \_m02, \_m03</span></span>
+    -   <span data-ttu-id="88694-146">\_m10, \_ m11, \_ m12, \_ m13</span><span class="sxs-lookup"><span data-stu-id="88694-146">\_m10, \_m11, \_m12, \_m13</span></span>
+    -   <span data-ttu-id="88694-147">\_m20, \_ m21, \_ m22, \_ m23</span><span class="sxs-lookup"><span data-stu-id="88694-147">\_m20, \_m21, \_m22, \_m23</span></span>
+    -   <span data-ttu-id="88694-148">\_m30, \_ m31, \_ m32, \_ m33</span><span class="sxs-lookup"><span data-stu-id="88694-148">\_m30, \_m31, \_m32, \_m33</span></span>
+-   <span data-ttu-id="88694-149">A posição da coluna de linha de base única:</span><span class="sxs-lookup"><span data-stu-id="88694-149">The one-based row-column position:</span></span>
+    -   <span data-ttu-id="88694-150">\_11, \_ 12, \_ 13, \_ 14</span><span class="sxs-lookup"><span data-stu-id="88694-150">\_11, \_12, \_13, \_14</span></span>
+    -   <span data-ttu-id="88694-151">\_21, \_ 22, \_ 23, \_ 24</span><span class="sxs-lookup"><span data-stu-id="88694-151">\_21, \_22, \_23, \_24</span></span>
+    -   <span data-ttu-id="88694-152">\_31, \_ 32, \_ 33, \_ 34</span><span class="sxs-lookup"><span data-stu-id="88694-152">\_31, \_32, \_33, \_34</span></span>
+    -   <span data-ttu-id="88694-153">\_41, \_ 42, \_ 43, \_ 44</span><span class="sxs-lookup"><span data-stu-id="88694-153">\_41, \_42, \_43, \_44</span></span>
 
-<span data-ttu-id="6ee7e-154">Cada conjunto de nomenis começa com um sublinhado seguido pelo número da linha e o número da coluna.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-154">Each naming set starts with an underscore followed by the row number and the column number.</span></span> <span data-ttu-id="6ee7e-155">A convenção baseada em zero também inclui a letra "m" antes do número da linha e da coluna.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-155">The zero-based convention also includes the letter "m" before the row and column number.</span></span> <span data-ttu-id="6ee7e-156">Veja um exemplo que usa os dois conjuntos de nomes para acessar uma matriz:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-156">Here's an example that uses the two naming sets to access a matrix:</span></span>
+<span data-ttu-id="88694-154">Cada conjunto de nomenis começa com um sublinhado seguido pelo número da linha e o número da coluna.</span><span class="sxs-lookup"><span data-stu-id="88694-154">Each naming set starts with an underscore followed by the row number and the column number.</span></span> <span data-ttu-id="88694-155">A convenção baseada em zero também inclui a letra "m" antes do número da linha e da coluna.</span><span class="sxs-lookup"><span data-stu-id="88694-155">The zero-based convention also includes the letter "m" before the row and column number.</span></span> <span data-ttu-id="88694-156">Veja um exemplo que usa os dois conjuntos de nomes para acessar uma matriz:</span><span class="sxs-lookup"><span data-stu-id="88694-156">Here's an example that uses the two naming sets to access a matrix:</span></span>
 
 
 ```
@@ -253,7 +253,7 @@ f_1D = matrix._22;  // read the value in row 2, column 2: 2.1
 
 
 
-<span data-ttu-id="6ee7e-157">Assim como os vetores, os conjuntos de nomes podem usar um ou mais componentes de um ou mais conjuntos de nomes.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-157">Just like vectors, naming sets can use one or more components from either naming set.</span></span>
+<span data-ttu-id="88694-157">Assim como os vetores, os conjuntos de nomes podem usar um ou mais componentes de um ou mais conjuntos de nomes.</span><span class="sxs-lookup"><span data-stu-id="88694-157">Just like vectors, naming sets can use one or more components from either naming set.</span></span>
 
 
 ```
@@ -271,14 +271,14 @@ temp = fMatrix._22_11   // valid
 
 
 
-<span data-ttu-id="6ee7e-158">Uma matriz também pode ser acessada usando a notação de acesso à matriz, que é um conjunto de índices baseado em zero.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-158">A matrix can also be accessed using array access notation, which is a zero-based set of indices.</span></span> <span data-ttu-id="6ee7e-159">Cada índice está dentro de colchetes.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-159">Each index is inside of square brackets.</span></span> <span data-ttu-id="6ee7e-160">Uma matriz 4x4 é acessada com os seguintes índices:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-160">A 4x4 matrix is accessed with the following indices:</span></span>
+<span data-ttu-id="88694-158">Uma matriz também pode ser acessada usando a notação de acesso à matriz, que é um conjunto de índices baseado em zero.</span><span class="sxs-lookup"><span data-stu-id="88694-158">A matrix can also be accessed using array access notation, which is a zero-based set of indices.</span></span> <span data-ttu-id="88694-159">Cada índice está dentro de colchetes.</span><span class="sxs-lookup"><span data-stu-id="88694-159">Each index is inside of square brackets.</span></span> <span data-ttu-id="88694-160">Uma matriz 4x4 é acessada com os seguintes índices:</span><span class="sxs-lookup"><span data-stu-id="88694-160">A 4x4 matrix is accessed with the following indices:</span></span>
 
--   <span data-ttu-id="6ee7e-161">\[0 \] \[ 0 \] , \[ 0 \] \[ 1 \] , \[ 0 \] \[ 2 \] , \[ 0 \] \[ 3\]</span><span class="sxs-lookup"><span data-stu-id="6ee7e-161">\[0\]\[0\], \[0\]\[1\], \[0\]\[2\], \[0\]\[3\]</span></span>
--   <span data-ttu-id="6ee7e-162">\[1 \] \[ 0 \] , \[ 1 \] \[ 1 \] , \[ 1 \] \[ 2 \] , \[ 1 \] \[ 3\]</span><span class="sxs-lookup"><span data-stu-id="6ee7e-162">\[1\]\[0\], \[1\]\[1\], \[1\]\[2\], \[1\]\[3\]</span></span>
--   <span data-ttu-id="6ee7e-163">\[2 \] \[ 0 \] , \[ 2 \] \[ 1 \] , \[ 2 \] \[ 2 \] , \[ 2 \] \[ 3\]</span><span class="sxs-lookup"><span data-stu-id="6ee7e-163">\[2\]\[0\], \[2\]\[1\], \[2\]\[2\], \[2\]\[3\]</span></span>
--   <span data-ttu-id="6ee7e-164">\[3 \] \[ 0 \] , \[ 3 \] \[ 1 \] , \[ 3 \] \[ 2 \] , \[ 3 \] \[ 3\]</span><span class="sxs-lookup"><span data-stu-id="6ee7e-164">\[3\]\[0\], \[3\]\[1\], \[3\]\[2\], \[3\]\[3\]</span></span>
+-   <span data-ttu-id="88694-161">\[0 \] \[ 0 \] , \[ 0 \] \[ 1 \] , \[ 0 \] \[ 2 \] , \[ 0 \] \[ 3\]</span><span class="sxs-lookup"><span data-stu-id="88694-161">\[0\]\[0\], \[0\]\[1\], \[0\]\[2\], \[0\]\[3\]</span></span>
+-   <span data-ttu-id="88694-162">\[1 \] \[ 0 \] , \[ 1 \] \[ 1 \] , \[ 1 \] \[ 2 \] , \[ 1 \] \[ 3\]</span><span class="sxs-lookup"><span data-stu-id="88694-162">\[1\]\[0\], \[1\]\[1\], \[1\]\[2\], \[1\]\[3\]</span></span>
+-   <span data-ttu-id="88694-163">\[2 \] \[ 0 \] , \[ 2 \] \[ 1 \] , \[ 2 \] \[ 2 \] , \[ 2 \] \[ 3\]</span><span class="sxs-lookup"><span data-stu-id="88694-163">\[2\]\[0\], \[2\]\[1\], \[2\]\[2\], \[2\]\[3\]</span></span>
+-   <span data-ttu-id="88694-164">\[3 \] \[ 0 \] , \[ 3 \] \[ 1 \] , \[ 3 \] \[ 2 \] , \[ 3 \] \[ 3\]</span><span class="sxs-lookup"><span data-stu-id="88694-164">\[3\]\[0\], \[3\]\[1\], \[3\]\[2\], \[3\]\[3\]</span></span>
 
-<span data-ttu-id="6ee7e-165">Aqui está um exemplo de como acessar uma matriz:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-165">Here is an example of accessing a matrix:</span></span>
+<span data-ttu-id="88694-165">Aqui está um exemplo de como acessar uma matriz:</span><span class="sxs-lookup"><span data-stu-id="88694-165">Here is an example of accessing a matrix:</span></span>
 
 
 ```
@@ -293,7 +293,7 @@ temp = fMatrix[0][1] // single component read
 
 
 
-<span data-ttu-id="6ee7e-166">Observe que o operador de estrutura "." não é usado para acessar uma matriz.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-166">Notice that the structure operator "." is not used to access an array.</span></span> <span data-ttu-id="6ee7e-167">A notação de acesso à matriz não pode usar o swizzling para ler mais de um componente.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-167">Array access notation cannot use swizzling to read more than one component.</span></span>
+<span data-ttu-id="88694-166">Observe que o operador de estrutura "." não é usado para acessar uma matriz.</span><span class="sxs-lookup"><span data-stu-id="88694-166">Notice that the structure operator "." is not used to access an array.</span></span> <span data-ttu-id="88694-167">A notação de acesso à matriz não pode usar o swizzling para ler mais de um componente.</span><span class="sxs-lookup"><span data-stu-id="88694-167">Array access notation cannot use swizzling to read more than one component.</span></span>
 
 
 ```
@@ -303,7 +303,7 @@ temp = fMatrix[0][0]_[0][1] // invalid, cannot read two components
 
 
 
-<span data-ttu-id="6ee7e-168">No entanto, o acesso à matriz pode ler um vetor de vários componentes.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-168">However, array accessing can read a multi-component vector.</span></span>
+<span data-ttu-id="88694-168">No entanto, o acesso à matriz pode ler um vetor de vários componentes.</span><span class="sxs-lookup"><span data-stu-id="88694-168">However, array accessing can read a multi-component vector.</span></span>
 
 
 ```
@@ -314,7 +314,7 @@ temp = fMatrix[0] // read the first row
 
 
 
-<span data-ttu-id="6ee7e-169">Assim como com vetores, ler mais de um componente de matriz é chamado de swizzling.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-169">As with vectors, reading more than one matrix component is called swizzling.</span></span> <span data-ttu-id="6ee7e-170">Mais de um componente pode ser atribuído, supondo que apenas um espaço de nome seja usado.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-170">More than one component can be assigned, assuming only one name space is used.</span></span> <span data-ttu-id="6ee7e-171">Todas essas são atribuições válidas:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-171">These are all valid assignments:</span></span>
+<span data-ttu-id="88694-169">Assim como com vetores, ler mais de um componente de matriz é chamado de swizzling.</span><span class="sxs-lookup"><span data-stu-id="88694-169">As with vectors, reading more than one matrix component is called swizzling.</span></span> <span data-ttu-id="88694-170">Mais de um componente pode ser atribuído, supondo que apenas um espaço de nome seja usado.</span><span class="sxs-lookup"><span data-stu-id="88694-170">More than one component can be assigned, assuming only one name space is used.</span></span> <span data-ttu-id="88694-171">Todas essas são atribuições válidas:</span><span class="sxs-lookup"><span data-stu-id="88694-171">These are all valid assignments:</span></span>
 
 
 ```
@@ -331,7 +331,7 @@ tempMatrix._11_22_33 = worldMatrix._24_23_22;
 
 
 
-<span data-ttu-id="6ee7e-172">Mascaramento controla quantos componentes são gravados.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-172">Masking controls how many components are written.</span></span>
+<span data-ttu-id="88694-172">Mascaramento controla quantos componentes são gravados.</span><span class="sxs-lookup"><span data-stu-id="88694-172">Masking controls how many components are written.</span></span>
 
 
 ```
@@ -345,7 +345,7 @@ tempMatrix._m23_m00 = worldMatrix._m00_m11;
 
 
 
-<span data-ttu-id="6ee7e-173">As atribuições não podem ser escritas no mesmo componente mais de uma vez.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-173">Assignments cannot be written to the same component more than once.</span></span> <span data-ttu-id="6ee7e-174">Portanto, o lado esquerdo dessa instrução é inválido:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-174">So the left side of this statement is invalid:</span></span>
+<span data-ttu-id="88694-173">As atribuições não podem ser escritas no mesmo componente mais de uma vez.</span><span class="sxs-lookup"><span data-stu-id="88694-173">Assignments cannot be written to the same component more than once.</span></span> <span data-ttu-id="88694-174">Portanto, o lado esquerdo dessa instrução é inválido:</span><span class="sxs-lookup"><span data-stu-id="88694-174">So the left side of this statement is invalid:</span></span>
 
 
 ```
@@ -355,7 +355,7 @@ tempMatrix._m00_m00 = worldMatrix._m00_m11;
 
 
 
-<span data-ttu-id="6ee7e-175">Além disso, os espaços de nome do componente não podem ser mistos.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-175">Also, the component name spaces cannot be mixed.</span></span> <span data-ttu-id="6ee7e-176">Esta é uma gravação de componente inválida:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-176">This is an invalid component write:</span></span>
+<span data-ttu-id="88694-175">Além disso, os espaços de nome do componente não podem ser mistos.</span><span class="sxs-lookup"><span data-stu-id="88694-175">Also, the component name spaces cannot be mixed.</span></span> <span data-ttu-id="88694-176">Esta é uma gravação de componente inválida:</span><span class="sxs-lookup"><span data-stu-id="88694-176">This is an invalid component write:</span></span>
 
 
 ```
@@ -365,38 +365,38 @@ tempMatrix._11_m23 = worldMatrix._11_22;
 
 
 
-### <a name="matrix-ordering"></a><span data-ttu-id="6ee7e-177">Ordenação de matriz</span><span class="sxs-lookup"><span data-stu-id="6ee7e-177">Matrix Ordering</span></span>
+### <a name="matrix-ordering"></a><span data-ttu-id="88694-177">Ordenação de matriz</span><span class="sxs-lookup"><span data-stu-id="88694-177">Matrix Ordering</span></span>
 
-<span data-ttu-id="6ee7e-178">A ordem de empacotamento de matriz para parâmetros uniformes é definida como column-major por padrão.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-178">Matrix packing order for uniform parameters is set to column-major by default.</span></span> <span data-ttu-id="6ee7e-179">Isso significa que cada coluna da matriz é armazenada em um único registro constante.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-179">This means each column of the matrix is stored in a single constant register.</span></span> <span data-ttu-id="6ee7e-180">Por outro lado, uma matriz de linha principal empacota cada linha da matriz em um único registro constante.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-180">On the other hand, a row-major matrix packs each row of the matrix in a single constant register.</span></span> <span data-ttu-id="6ee7e-181">O empacotamento de matriz pode ser alterado com a diretiva de matriz **\# \_ pragmapack** ou com a palavra-chave **\_ principal** da linha ou **da \_ coluna** principal.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-181">Matrix packing can be changed with the **\#pragmapack\_matrix** directive, or with the **row\_major** or the **column\_major** keyword.</span></span>
+<span data-ttu-id="88694-178">A ordem de empacotamento de matriz para parâmetros uniformes é definida como column-major por padrão.</span><span class="sxs-lookup"><span data-stu-id="88694-178">Matrix packing order for uniform parameters is set to column-major by default.</span></span> <span data-ttu-id="88694-179">Isso significa que cada coluna da matriz é armazenada em um único registro constante.</span><span class="sxs-lookup"><span data-stu-id="88694-179">This means each column of the matrix is stored in a single constant register.</span></span> <span data-ttu-id="88694-180">Por outro lado, uma matriz de linha principal empacota cada linha da matriz em um único registro constante.</span><span class="sxs-lookup"><span data-stu-id="88694-180">On the other hand, a row-major matrix packs each row of the matrix in a single constant register.</span></span> <span data-ttu-id="88694-181">O empacotamento de matriz pode ser alterado com a diretiva de matriz **\# \_ pragmapack** ou com a palavra-chave **\_ principal** da linha ou **da \_ coluna** principal.</span><span class="sxs-lookup"><span data-stu-id="88694-181">Matrix packing can be changed with the **\#pragmapack\_matrix** directive, or with the **row\_major** or the **column\_major** keyword.</span></span>
 
-<span data-ttu-id="6ee7e-182">Os dados em uma matriz são carregados em registros constantes do sombreador antes que um sombreador seja executado.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-182">The data in a matrix is loaded into shader constant registers before a shader runs.</span></span> <span data-ttu-id="6ee7e-183">Há duas opções para como os dados de matriz são lidos: em ordem de linha-principal ou em ordem de coluna principal.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-183">There are two choices for how the matrix data is read: in row-major order or in column-major order.</span></span> <span data-ttu-id="6ee7e-184">Ordem principal da coluna significa que cada coluna de matriz será armazenada em um único registro constante e a ordem de linha principal significa que cada linha da matriz será armazenada em um único registro constante.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-184">Column-major order means that each matrix column will be stored in a single constant register, and row-major order means that each row of the matrix will be stored in a single constant register.</span></span> <span data-ttu-id="6ee7e-185">Essa é uma consideração importante para quantos registros constantes são usados para uma matriz.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-185">This is an important consideration for how many constant registers are used for a matrix.</span></span>
+<span data-ttu-id="88694-182">Os dados em uma matriz são carregados em registros constantes do sombreador antes que um sombreador seja executado.</span><span class="sxs-lookup"><span data-stu-id="88694-182">The data in a matrix is loaded into shader constant registers before a shader runs.</span></span> <span data-ttu-id="88694-183">Há duas opções para como os dados de matriz são lidos: em ordem de linha-principal ou em ordem de coluna principal.</span><span class="sxs-lookup"><span data-stu-id="88694-183">There are two choices for how the matrix data is read: in row-major order or in column-major order.</span></span> <span data-ttu-id="88694-184">Ordem principal da coluna significa que cada coluna de matriz será armazenada em um único registro constante e a ordem de linha principal significa que cada linha da matriz será armazenada em um único registro constante.</span><span class="sxs-lookup"><span data-stu-id="88694-184">Column-major order means that each matrix column will be stored in a single constant register, and row-major order means that each row of the matrix will be stored in a single constant register.</span></span> <span data-ttu-id="88694-185">Essa é uma consideração importante para quantos registros constantes são usados para uma matriz.</span><span class="sxs-lookup"><span data-stu-id="88694-185">This is an important consideration for how many constant registers are used for a matrix.</span></span>
 
-<span data-ttu-id="6ee7e-186">Uma matriz de linha principal é colocada da seguinte forma:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-186">A row-major matrix is laid out like the following:</span></span>
+<span data-ttu-id="88694-186">Uma matriz de linha principal é colocada da seguinte forma:</span><span class="sxs-lookup"><span data-stu-id="88694-186">A row-major matrix is laid out like the following:</span></span>
 
 :::row:::
     :::column:::
-        <span data-ttu-id="6ee7e-187">11</span><span class="sxs-lookup"><span data-stu-id="6ee7e-187">11</span></span><br/>
-        <span data-ttu-id="6ee7e-188">21</span><span class="sxs-lookup"><span data-stu-id="6ee7e-188">21</span></span><br/>
-        <span data-ttu-id="6ee7e-189">31</span><span class="sxs-lookup"><span data-stu-id="6ee7e-189">31</span></span><br/>
-        <span data-ttu-id="6ee7e-190">41</span><span class="sxs-lookup"><span data-stu-id="6ee7e-190">41</span></span><br/>
+        <span data-ttu-id="88694-187">11</span><span class="sxs-lookup"><span data-stu-id="88694-187">11</span></span><br/>
+        <span data-ttu-id="88694-188">21</span><span class="sxs-lookup"><span data-stu-id="88694-188">21</span></span><br/>
+        <span data-ttu-id="88694-189">31</span><span class="sxs-lookup"><span data-stu-id="88694-189">31</span></span><br/>
+        <span data-ttu-id="88694-190">41</span><span class="sxs-lookup"><span data-stu-id="88694-190">41</span></span><br/>
     :::column-end:::
     :::column:::
-        <span data-ttu-id="6ee7e-191">12</span><span class="sxs-lookup"><span data-stu-id="6ee7e-191">12</span></span><br/>
-        <span data-ttu-id="6ee7e-192">22</span><span class="sxs-lookup"><span data-stu-id="6ee7e-192">22</span></span><br/>
-        <span data-ttu-id="6ee7e-193">32</span><span class="sxs-lookup"><span data-stu-id="6ee7e-193">32</span></span><br/>
-        <span data-ttu-id="6ee7e-194">42</span><span class="sxs-lookup"><span data-stu-id="6ee7e-194">42</span></span><br/>
+        <span data-ttu-id="88694-191">12</span><span class="sxs-lookup"><span data-stu-id="88694-191">12</span></span><br/>
+        <span data-ttu-id="88694-192">22</span><span class="sxs-lookup"><span data-stu-id="88694-192">22</span></span><br/>
+        <span data-ttu-id="88694-193">32</span><span class="sxs-lookup"><span data-stu-id="88694-193">32</span></span><br/>
+        <span data-ttu-id="88694-194">42</span><span class="sxs-lookup"><span data-stu-id="88694-194">42</span></span><br/>
     :::column-end:::
     :::column:::
-        <span data-ttu-id="6ee7e-195">13</span><span class="sxs-lookup"><span data-stu-id="6ee7e-195">13</span></span><br/>
-        <span data-ttu-id="6ee7e-196">23</span><span class="sxs-lookup"><span data-stu-id="6ee7e-196">23</span></span><br/>
-        <span data-ttu-id="6ee7e-197">33</span><span class="sxs-lookup"><span data-stu-id="6ee7e-197">33</span></span><br/>
-        <span data-ttu-id="6ee7e-198">43</span><span class="sxs-lookup"><span data-stu-id="6ee7e-198">43</span></span><br/>
+        <span data-ttu-id="88694-195">13</span><span class="sxs-lookup"><span data-stu-id="88694-195">13</span></span><br/>
+        <span data-ttu-id="88694-196">23</span><span class="sxs-lookup"><span data-stu-id="88694-196">23</span></span><br/>
+        <span data-ttu-id="88694-197">33</span><span class="sxs-lookup"><span data-stu-id="88694-197">33</span></span><br/>
+        <span data-ttu-id="88694-198">43</span><span class="sxs-lookup"><span data-stu-id="88694-198">43</span></span><br/>
     :::column-end:::
     :::column:::
-        <span data-ttu-id="6ee7e-199">14</span><span class="sxs-lookup"><span data-stu-id="6ee7e-199">14</span></span><br/>
-        <span data-ttu-id="6ee7e-200">24</span><span class="sxs-lookup"><span data-stu-id="6ee7e-200">24</span></span><br/>
-        <span data-ttu-id="6ee7e-201">34</span><span class="sxs-lookup"><span data-stu-id="6ee7e-201">34</span></span><br/>
-        <span data-ttu-id="6ee7e-202">44</span><span class="sxs-lookup"><span data-stu-id="6ee7e-202">44</span></span><br/>
+        <span data-ttu-id="88694-199">14</span><span class="sxs-lookup"><span data-stu-id="88694-199">14</span></span><br/>
+        <span data-ttu-id="88694-200">24</span><span class="sxs-lookup"><span data-stu-id="88694-200">24</span></span><br/>
+        <span data-ttu-id="88694-201">34</span><span class="sxs-lookup"><span data-stu-id="88694-201">34</span></span><br/>
+        <span data-ttu-id="88694-202">44</span><span class="sxs-lookup"><span data-stu-id="88694-202">44</span></span><br/>
     :::column-end:::
 :::row-end:::
 
@@ -405,33 +405,33 @@ tempMatrix._11_m23 = worldMatrix._11_22;
 
  
 
-<span data-ttu-id="6ee7e-203">Uma matriz de coluna principal é disposta da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-203">A column-major matrix is laid out like the following:</span></span>
+<span data-ttu-id="88694-203">Uma matriz de coluna principal é disposta da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="88694-203">A column-major matrix is laid out like the following:</span></span>
 
 
 :::row:::
     :::column:::
-        <span data-ttu-id="6ee7e-204">11</span><span class="sxs-lookup"><span data-stu-id="6ee7e-204">11</span></span><br/>
-        <span data-ttu-id="6ee7e-205">12</span><span class="sxs-lookup"><span data-stu-id="6ee7e-205">12</span></span><br/>
-        <span data-ttu-id="6ee7e-206">13</span><span class="sxs-lookup"><span data-stu-id="6ee7e-206">13</span></span><br/>
-        <span data-ttu-id="6ee7e-207">14</span><span class="sxs-lookup"><span data-stu-id="6ee7e-207">14</span></span><br/>
+        <span data-ttu-id="88694-204">11</span><span class="sxs-lookup"><span data-stu-id="88694-204">11</span></span><br/>
+        <span data-ttu-id="88694-205">12</span><span class="sxs-lookup"><span data-stu-id="88694-205">12</span></span><br/>
+        <span data-ttu-id="88694-206">13</span><span class="sxs-lookup"><span data-stu-id="88694-206">13</span></span><br/>
+        <span data-ttu-id="88694-207">14</span><span class="sxs-lookup"><span data-stu-id="88694-207">14</span></span><br/>
     :::column-end:::
     :::column:::
-        <span data-ttu-id="6ee7e-208">21</span><span class="sxs-lookup"><span data-stu-id="6ee7e-208">21</span></span><br/>
-        <span data-ttu-id="6ee7e-209">22</span><span class="sxs-lookup"><span data-stu-id="6ee7e-209">22</span></span><br/>
-        <span data-ttu-id="6ee7e-210">23</span><span class="sxs-lookup"><span data-stu-id="6ee7e-210">23</span></span><br/>
-        <span data-ttu-id="6ee7e-211">24</span><span class="sxs-lookup"><span data-stu-id="6ee7e-211">24</span></span><br/>
+        <span data-ttu-id="88694-208">21</span><span class="sxs-lookup"><span data-stu-id="88694-208">21</span></span><br/>
+        <span data-ttu-id="88694-209">22</span><span class="sxs-lookup"><span data-stu-id="88694-209">22</span></span><br/>
+        <span data-ttu-id="88694-210">23</span><span class="sxs-lookup"><span data-stu-id="88694-210">23</span></span><br/>
+        <span data-ttu-id="88694-211">24</span><span class="sxs-lookup"><span data-stu-id="88694-211">24</span></span><br/>
     :::column-end:::
     :::column:::
-        <span data-ttu-id="6ee7e-212">31</span><span class="sxs-lookup"><span data-stu-id="6ee7e-212">31</span></span><br/>
-        <span data-ttu-id="6ee7e-213">32</span><span class="sxs-lookup"><span data-stu-id="6ee7e-213">32</span></span><br/>
-        <span data-ttu-id="6ee7e-214">33</span><span class="sxs-lookup"><span data-stu-id="6ee7e-214">33</span></span><br/>
-        <span data-ttu-id="6ee7e-215">34</span><span class="sxs-lookup"><span data-stu-id="6ee7e-215">34</span></span><br/>
+        <span data-ttu-id="88694-212">31</span><span class="sxs-lookup"><span data-stu-id="88694-212">31</span></span><br/>
+        <span data-ttu-id="88694-213">32</span><span class="sxs-lookup"><span data-stu-id="88694-213">32</span></span><br/>
+        <span data-ttu-id="88694-214">33</span><span class="sxs-lookup"><span data-stu-id="88694-214">33</span></span><br/>
+        <span data-ttu-id="88694-215">34</span><span class="sxs-lookup"><span data-stu-id="88694-215">34</span></span><br/>
     :::column-end:::
     :::column:::
-        <span data-ttu-id="6ee7e-216">14</span><span class="sxs-lookup"><span data-stu-id="6ee7e-216">14</span></span><br/>
-        <span data-ttu-id="6ee7e-217">24</span><span class="sxs-lookup"><span data-stu-id="6ee7e-217">24</span></span><br/>
-        <span data-ttu-id="6ee7e-218">34</span><span class="sxs-lookup"><span data-stu-id="6ee7e-218">34</span></span><br/>
-        <span data-ttu-id="6ee7e-219">44</span><span class="sxs-lookup"><span data-stu-id="6ee7e-219">44</span></span><br/>
+        <span data-ttu-id="88694-216">41</span><span class="sxs-lookup"><span data-stu-id="88694-216">41</span></span><br/>
+        <span data-ttu-id="88694-217">42</span><span class="sxs-lookup"><span data-stu-id="88694-217">42</span></span><br/>
+        <span data-ttu-id="88694-218">43</span><span class="sxs-lookup"><span data-stu-id="88694-218">43</span></span><br/>
+        <span data-ttu-id="88694-219">44</span><span class="sxs-lookup"><span data-stu-id="88694-219">44</span></span><br/>
     :::column-end:::
 :::row-end:::
 
@@ -440,13 +440,13 @@ tempMatrix._11_m23 = worldMatrix._11_22;
 
  
 
-<span data-ttu-id="6ee7e-220">Classificação de matriz de linha principal e coluna-principal determine a ordem em que os componentes de matriz são lidos de entradas de sombreador.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-220">Row-major and column-major matrix ordering determine the order the matrix components are read from shader inputs.</span></span> <span data-ttu-id="6ee7e-221">Depois que os dados são gravados em registros constantes, a ordem de matriz não tem nenhum efeito sobre como os dados são usados ou acessados no código do sombreador.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-221">Once the data is written into constant registers, matrix order has no effect on how the data is used or accessed from within shader code.</span></span> <span data-ttu-id="6ee7e-222">Além disso, as matrizes declaradas em um corpo de sombreador não são incluídas em registros constantes.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-222">Also, matrices declared in a shader body do not get packed into constant registers.</span></span> <span data-ttu-id="6ee7e-223">A ordem de embalagem de linha principal e coluna-principal não tem influência sobre a ordem de embalagem dos construtores (que sempre segue a ordenação da linha principal).</span><span class="sxs-lookup"><span data-stu-id="6ee7e-223">Row-major and column-major packing order has no influence on the packing order of constructors (which always follows row-major ordering).</span></span>
+<span data-ttu-id="88694-220">Classificação de matriz de linha principal e coluna-principal determine a ordem em que os componentes de matriz são lidos de entradas de sombreador.</span><span class="sxs-lookup"><span data-stu-id="88694-220">Row-major and column-major matrix ordering determine the order the matrix components are read from shader inputs.</span></span> <span data-ttu-id="88694-221">Depois que os dados são gravados em registros constantes, a ordem de matriz não tem nenhum efeito sobre como os dados são usados ou acessados no código do sombreador.</span><span class="sxs-lookup"><span data-stu-id="88694-221">Once the data is written into constant registers, matrix order has no effect on how the data is used or accessed from within shader code.</span></span> <span data-ttu-id="88694-222">Além disso, as matrizes declaradas em um corpo de sombreador não são incluídas em registros constantes.</span><span class="sxs-lookup"><span data-stu-id="88694-222">Also, matrices declared in a shader body do not get packed into constant registers.</span></span> <span data-ttu-id="88694-223">A ordem de embalagem de linha principal e coluna-principal não tem influência sobre a ordem de embalagem dos construtores (que sempre segue a ordenação da linha principal).</span><span class="sxs-lookup"><span data-stu-id="88694-223">Row-major and column-major packing order has no influence on the packing order of constructors (which always follows row-major ordering).</span></span>
 
-<span data-ttu-id="6ee7e-224">A ordem dos dados em uma matriz pode ser declarada no momento da compilação ou o compilador solicitará os dados em tempo de execução para o uso mais eficiente.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-224">The order of the data in a matrix can be declared at compile time or the compiler will order the data at runtime for the most efficient use.</span></span>
+<span data-ttu-id="88694-224">A ordem dos dados em uma matriz pode ser declarada no momento da compilação ou o compilador solicitará os dados em tempo de execução para o uso mais eficiente.</span><span class="sxs-lookup"><span data-stu-id="88694-224">The order of the data in a matrix can be declared at compile time or the compiler will order the data at runtime for the most efficient use.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="6ee7e-225">Exemplos</span><span class="sxs-lookup"><span data-stu-id="6ee7e-225">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="88694-225">Exemplos</span><span class="sxs-lookup"><span data-stu-id="88694-225">Examples</span></span>
 
-<span data-ttu-id="6ee7e-226">O HLSL usa dois tipos especiais, um tipo de vetor e um tipo de matriz para facilitar a programação de gráficos 2D e 3D.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-226">HLSL uses two special types, a vector type and a matrix type to make programming 2D and 3D graphics easier.</span></span> <span data-ttu-id="6ee7e-227">Cada um desses tipos contém mais de um componente; um vetor contém até quatro componentes, e uma matriz contém até 16 componentes.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-227">Each of these types contain more than one component; a vector contains up to four components, and a matrix contains up to 16 components.</span></span> <span data-ttu-id="6ee7e-228">Quando vetores e matrizes são usados em equações HLSLs padrão, a matemática realizada é projetada para funcionar por componente.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-228">When vectors and matrices are used in standard HLSL equations, the math performed is designed to work per-component.</span></span> <span data-ttu-id="6ee7e-229">Por exemplo, HLSL implementa essa multiplicação:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-229">For instance, HLSL implements this multiply:</span></span>
+<span data-ttu-id="88694-226">O HLSL usa dois tipos especiais, um tipo de vetor e um tipo de matriz para facilitar a programação de gráficos 2D e 3D.</span><span class="sxs-lookup"><span data-stu-id="88694-226">HLSL uses two special types, a vector type and a matrix type to make programming 2D and 3D graphics easier.</span></span> <span data-ttu-id="88694-227">Cada um desses tipos contém mais de um componente; um vetor contém até quatro componentes, e uma matriz contém até 16 componentes.</span><span class="sxs-lookup"><span data-stu-id="88694-227">Each of these types contain more than one component; a vector contains up to four components, and a matrix contains up to 16 components.</span></span> <span data-ttu-id="88694-228">Quando vetores e matrizes são usados em equações HLSLs padrão, a matemática realizada é projetada para funcionar por componente.</span><span class="sxs-lookup"><span data-stu-id="88694-228">When vectors and matrices are used in standard HLSL equations, the math performed is designed to work per-component.</span></span> <span data-ttu-id="88694-229">Por exemplo, HLSL implementa essa multiplicação:</span><span class="sxs-lookup"><span data-stu-id="88694-229">For instance, HLSL implements this multiply:</span></span>
 
 
 ```
@@ -455,7 +455,7 @@ float4 v = a*b;
 
 
 
-<span data-ttu-id="6ee7e-230">como uma multiplicação de quatro componentes.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-230">as a four-component multiply.</span></span> <span data-ttu-id="6ee7e-231">O resultado é quatro escalares:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-231">The result is four scalars:</span></span>
+<span data-ttu-id="88694-230">como uma multiplicação de quatro componentes.</span><span class="sxs-lookup"><span data-stu-id="88694-230">as a four-component multiply.</span></span> <span data-ttu-id="88694-231">O resultado é quatro escalares:</span><span class="sxs-lookup"><span data-stu-id="88694-231">The result is four scalars:</span></span>
 
 
 ```
@@ -469,9 +469,9 @@ v.w = a.w*b.w;
 
 
 
-<span data-ttu-id="6ee7e-232">São quatro multiplicações em que cada resultado é armazenado em um componente separado do v.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-232">This is four multiplications where each result is stored in a separate component of v.</span></span> <span data-ttu-id="6ee7e-233">Isso é chamado de multiplicação de quatro componentes.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-233">This is called a four-component multiply.</span></span> <span data-ttu-id="6ee7e-234">O HLSL usa a matemática do componente, o que torna os sombreadores de escrita muito eficientes.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-234">HLSL uses component math which makes writing shaders very efficient.</span></span>
+<span data-ttu-id="88694-232">São quatro multiplicações em que cada resultado é armazenado em um componente separado do v.</span><span class="sxs-lookup"><span data-stu-id="88694-232">This is four multiplications where each result is stored in a separate component of v.</span></span> <span data-ttu-id="88694-233">Isso é chamado de multiplicação de quatro componentes.</span><span class="sxs-lookup"><span data-stu-id="88694-233">This is called a four-component multiply.</span></span> <span data-ttu-id="88694-234">O HLSL usa a matemática do componente, o que torna os sombreadores de escrita muito eficientes.</span><span class="sxs-lookup"><span data-stu-id="88694-234">HLSL uses component math which makes writing shaders very efficient.</span></span>
 
-<span data-ttu-id="6ee7e-235">Isso é muito diferente de uma multiplicação, que normalmente é implementada como um produto de ponto que gera um único escalar:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-235">This is very different from a multiply which is typically implemented as a dot product which generates a single scalar:</span></span>
+<span data-ttu-id="88694-235">Isso é muito diferente de uma multiplicação, que normalmente é implementada como um produto de ponto que gera um único escalar:</span><span class="sxs-lookup"><span data-stu-id="88694-235">This is very different from a multiply which is typically implemented as a dot product which generates a single scalar:</span></span>
 
 
 ```
@@ -480,7 +480,7 @@ v = a.x*b.x + a.y*b.y + a.z*b.z + a.w*b.w;
 
 
 
-<span data-ttu-id="6ee7e-236">Uma matriz também usa operações por componente em HLSL:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-236">A matrix also uses per-component operations in HLSL:</span></span>
+<span data-ttu-id="88694-236">Uma matriz também usa operações por componente em HLSL:</span><span class="sxs-lookup"><span data-stu-id="88694-236">A matrix also uses per-component operations in HLSL:</span></span>
 
 
 ```
@@ -491,7 +491,7 @@ float3x3 mat3 = mat1*mat2;
 
 
 
-<span data-ttu-id="6ee7e-237">O resultado é uma multiplicação por componente das duas matrizes (em oposição a uma multiplicação padrão de matriz 3x3).</span><span class="sxs-lookup"><span data-stu-id="6ee7e-237">The result is a per-component multiply of the two matrices (as opposed to a standard 3x3 matrix multiply).</span></span> <span data-ttu-id="6ee7e-238">Uma multiplicação por matriz de componente produz esse primeiro termo:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-238">A per component matrix multiply yields this first term:</span></span>
+<span data-ttu-id="88694-237">O resultado é uma multiplicação por componente das duas matrizes (em oposição a uma multiplicação padrão de matriz 3x3).</span><span class="sxs-lookup"><span data-stu-id="88694-237">The result is a per-component multiply of the two matrices (as opposed to a standard 3x3 matrix multiply).</span></span> <span data-ttu-id="88694-238">Uma multiplicação por matriz de componente produz esse primeiro termo:</span><span class="sxs-lookup"><span data-stu-id="88694-238">A per component matrix multiply yields this first term:</span></span>
 
 
 ```
@@ -500,7 +500,7 @@ mat3.m00 = mat1.m00 * mat2._m00;
 
 
 
-<span data-ttu-id="6ee7e-239">Isso é diferente de uma multiplicação de matriz 3x3 que produziria esse primeiro termo:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-239">This is different from a 3x3 matrix multiply which would yield this first term:</span></span>
+<span data-ttu-id="88694-239">Isso é diferente de uma multiplicação de matriz 3x3 que produziria esse primeiro termo:</span><span class="sxs-lookup"><span data-stu-id="88694-239">This is different from a 3x3 matrix multiply which would yield this first term:</span></span>
 
 
 ```
@@ -513,7 +513,7 @@ mat.m00 = mat1._m00 * mat2._m00 +
 
 
 
-<span data-ttu-id="6ee7e-240">Versões sobrecarregadas da função intrínseca de multiplicação tratam casos em que um operando é um vetor e o outro operando é uma matriz.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-240">Overloaded versions of the multiply intrinsic function handle cases where one operand is a vector and the other operand is a matrix.</span></span> <span data-ttu-id="6ee7e-241">Como: \* vetor de vetor, \* matriz de vetor, \* vetor de matriz e \* matriz de matriz.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-241">Such as: vector \* vector, vector \* matrix, matrix \* vector, and matrix \* matrix.</span></span> <span data-ttu-id="6ee7e-242">Por exemplo:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-242">For instance:</span></span>
+<span data-ttu-id="88694-240">Versões sobrecarregadas da função intrínseca de multiplicação tratam casos em que um operando é um vetor e o outro operando é uma matriz.</span><span class="sxs-lookup"><span data-stu-id="88694-240">Overloaded versions of the multiply intrinsic function handle cases where one operand is a vector and the other operand is a matrix.</span></span> <span data-ttu-id="88694-241">Como: \* vetor de vetor, \* matriz de vetor, \* vetor de matriz e \* matriz de matriz.</span><span class="sxs-lookup"><span data-stu-id="88694-241">Such as: vector \* vector, vector \* matrix, matrix \* vector, and matrix \* matrix.</span></span> <span data-ttu-id="88694-242">Por exemplo:</span><span class="sxs-lookup"><span data-stu-id="88694-242">For instance:</span></span>
 
 
 ```
@@ -531,7 +531,7 @@ float4 main(float4 pos : SV_POSITION) : SV_POSITION
 
 
 
-<span data-ttu-id="6ee7e-243">produz o mesmo resultado que:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-243">produces the same result as:</span></span>
+<span data-ttu-id="88694-243">produz o mesmo resultado que:</span><span class="sxs-lookup"><span data-stu-id="88694-243">produces the same result as:</span></span>
 
 
 ```
@@ -549,9 +549,9 @@ float4 main(float4 pos : SV_POSITION) : SV_POSITION
 
 
 
-<span data-ttu-id="6ee7e-244">Este exemplo converte o vetor de pos em um vetor de coluna usando a conversão (float1x4).</span><span class="sxs-lookup"><span data-stu-id="6ee7e-244">This example casts the pos vector to a column vector using the (float1x4) cast.</span></span> <span data-ttu-id="6ee7e-245">A alteração de um vetor por meio da conversão ou troca da ordem dos argumentos fornecidos para multiplicar é equivalente a transposição da matriz.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-245">Changing a vector by casting, or swapping the order of the arguments supplied to multiply is equivalent to transposing the matrix.</span></span>
+<span data-ttu-id="88694-244">Este exemplo converte o vetor de pos em um vetor de coluna usando a conversão (float1x4).</span><span class="sxs-lookup"><span data-stu-id="88694-244">This example casts the pos vector to a column vector using the (float1x4) cast.</span></span> <span data-ttu-id="88694-245">A alteração de um vetor por meio da conversão ou troca da ordem dos argumentos fornecidos para multiplicar é equivalente a transposição da matriz.</span><span class="sxs-lookup"><span data-stu-id="88694-245">Changing a vector by casting, or swapping the order of the arguments supplied to multiply is equivalent to transposing the matrix.</span></span>
 
-<span data-ttu-id="6ee7e-246">Conversão de conversão automática faz com que as funções de multiplicação e de ponto intrínsecos retornem os mesmos resultados usados aqui:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-246">Automatic cast conversion causes the multiply and dot intrinsic functions to return the same results as used here:</span></span>
+<span data-ttu-id="88694-246">Conversão de conversão automática faz com que as funções de multiplicação e de ponto intrínsecos retornem os mesmos resultados usados aqui:</span><span class="sxs-lookup"><span data-stu-id="88694-246">Automatic cast conversion causes the multiply and dot intrinsic functions to return the same results as used here:</span></span>
 
 
 ```
@@ -563,7 +563,7 @@ float4 main(float4 pos : SV_POSITION) : SV_POSITION
 
 
 
-<span data-ttu-id="6ee7e-247">Esse resultado da multiplicação é um \* 4x = 1x1 vector.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-247">This result of the multiply is a 1x4 \* 4x1 = 1x1 vector.</span></span> <span data-ttu-id="6ee7e-248">Isso é equivalente a um produto de ponto:</span><span class="sxs-lookup"><span data-stu-id="6ee7e-248">This is equivalent to a dot product:</span></span>
+<span data-ttu-id="88694-247">Esse resultado da multiplicação é um \* 4x = 1x1 vector.</span><span class="sxs-lookup"><span data-stu-id="88694-247">This result of the multiply is a 1x4 \* 4x1 = 1x1 vector.</span></span> <span data-ttu-id="88694-248">Isso é equivalente a um produto de ponto:</span><span class="sxs-lookup"><span data-stu-id="88694-248">This is equivalent to a dot product:</span></span>
 
 
 ```
@@ -575,13 +575,13 @@ float4 main(float4 pos : SV_POSITION) : SV_POSITION
 
 
 
-<span data-ttu-id="6ee7e-249">que retorna um único valor escalar.</span><span class="sxs-lookup"><span data-stu-id="6ee7e-249">which returns a single scalar value.</span></span>
+<span data-ttu-id="88694-249">que retorna um único valor escalar.</span><span class="sxs-lookup"><span data-stu-id="88694-249">which returns a single scalar value.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="6ee7e-250">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="6ee7e-250">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="88694-250">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="88694-250">Related topics</span></span>
 
 <dl> <dt>
 
-[<span data-ttu-id="6ee7e-251">Tipos de dados (DirectX HLSL)</span><span class="sxs-lookup"><span data-stu-id="6ee7e-251">Data Types (DirectX HLSL)</span></span>](dx-graphics-hlsl-data-types.md)
+[<span data-ttu-id="88694-251">Tipos de dados (DirectX HLSL)</span><span class="sxs-lookup"><span data-stu-id="88694-251">Data Types (DirectX HLSL)</span></span>](dx-graphics-hlsl-data-types.md)
 </dt> </dl>
 
  
