@@ -1,15 +1,15 @@
 ---
-description: Discute métodos de abrir um item do painel de controle para o Windows Vista e sistemas posteriores, além de abranger comandos herdados do painel de controle.
+description: discute métodos de abrir um item do painel de controle para os sistemas Windows Vista e posterior, além de abranger comandos herdados do painel de controle.
 ms.assetid: c17167ab-e9a0-4290-955c-484d038b82af
 title: Executando itens do painel de controle
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eaaac4b782273e0b4444fb2b5b6d3cab0b3599ad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 08cb6ae2fa08231d3876e1a5a636e404f519f4a6
+ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104989046"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113581754"
 ---
 # <a name="executing-control-panel-items"></a>Executando itens do painel de controle
 
@@ -41,7 +41,7 @@ WinExec("c:\windows\system32\control.exe MyCpl.cpl", SW_NORMAL);
 
 
 
-Quando um item do painel de controle é aberto por meio de uma linha de comando, você pode instruí-lo a abrir para uma determinada guia no item. Devido à adição e remoção de determinadas guias em alguns itens do painel de controle do Windows Vista, a numeração das guias pode ter mudado do Windows XP. Por exemplo, os exemplos a seguir iniciam a quarta guia no item do sistema no Windows XP e a terceira guia do Windows Vista.
+Quando um item do painel de controle é aberto por meio de uma linha de comando, você pode instruí-lo a abrir para uma determinada guia no item. devido à adição e remoção de determinadas guias em alguns Windows itens do painel de controle do Vista, a numeração das guias pode ter sido alterada do no Windows XP. por exemplo, a etapa a seguir inicia a quarta guia no item do sistema no Windows XP e a terceira guia no Windows Vista.
 
 
 ```
@@ -52,18 +52,18 @@ control.exe sysdm.cpl,,3
 
 Este tópico aborda o seguinte:
 
--   [Nomes canônicos do Windows Vista](#windows-vista-canonical-names)
--   [Novos comandos para o Windows Vista](#new-commands-for-windows-vista)
+-   [Windows Nomes canônicos do vista](#windows-vista-canonical-names)
+-   [novos comandos para o Windows Vista](#new-commands-for-windows-vista)
 -   [Comandos do painel de controle herdado](#legacy-control-panel-commands)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="windows-vista-canonical-names"></a>Nomes canônicos do Windows Vista
+## <a name="windows-vista-canonical-names"></a>Windows Nomes canônicos do vista
 
-No Windows Vista e posterior, o método preferencial de iniciar um item do painel de controle a partir de uma linha de comando é usar o nome canônico do item do painel de controle. Um nome canônico é uma cadeia de caracteres não localizada que o item do painel de controle declara no registro. O valor de usar um nome canônico é que ele abstrai o nome do módulo do item do painel de controle. Um item pode ser implementado em uma. dll e, posteriormente, ser reimplementado como um. exe ou alterar o nome do módulo. Desde que o nome canônico permaneça o mesmo, então qualquer programa que o abre usando esse nome canônico não precisa ser atualizado.
+no Windows Vista e posterior, o método preferencial de iniciar um item do painel de controle a partir de uma linha de comando é usar o nome canônico do item do painel de controle. Um nome canônico é uma cadeia de caracteres não localizada que o item do painel de controle declara no registro. O valor de usar um nome canônico é que ele abstrai o nome do módulo do item do painel de controle. Um item pode ser implementado em um .dll e, posteriormente, ser reimplementado como um .exe ou alterar o nome do módulo. Desde que o nome canônico permaneça o mesmo, então qualquer programa que o abre usando esse nome canônico não precisa ser atualizado.
 
 Por convenção, o nome canônico é formado como "Corporationname. ControlPanelItemName".
 
-O exemplo a seguir mostra como um aplicativo pode iniciar o item do painel de controle **Windows Update** com [**WinExec**](/windows/win32/api/winbase/nf-winbase-winexec).
+o exemplo a seguir mostra como um aplicativo pode iniciar o item do painel de controle **Windows Update** com [**WinExec**](/windows/win32/api/winbase/nf-winbase-winexec).
 
 
 ```
@@ -80,15 +80,15 @@ Um aplicativo também pode implementar o método [**IOpenControlPanel:: Open**](
 
 Para obter uma lista completa de nomes canônicos de itens do painel de controle, consulte [nomes canônicos de itens do painel de controle](controlpanel-canonical-names.md).
 
-## <a name="new-commands-for-windows-vista"></a>Novos comandos para o Windows Vista
+## <a name="new-commands-for-windows-vista"></a>novos comandos para o Windows Vista
 
-No Windows Vista, algumas opções que foram acessadas por um módulo. cpl no Windows XP agora são implementadas como arquivos. exe. Isso fornece segurança adicional, permitindo que os usuários padrão sejam solicitados a fornecer credenciais de administrador ao tentar iniciar os arquivos. As opções que não exigem segurança extra são acessadas pelas mesmas linhas de comando que foram usadas no Windows XP. Veja a seguir uma lista de comandos usados no Windows Vista para acessar guias específicas de itens do painel de controle:
+no Windows Vista, algumas opções que foram acessadas por um módulo .cpl no Windows XP agora são implementadas como arquivos .exe. Isso fornece segurança adicional, permitindo que os usuários padrão sejam solicitados a fornecer credenciais de administrador ao tentar iniciar os arquivos. as opções que não exigem segurança extra são acessadas pelas mesmas linhas de comando que foram usadas no Windows XP. veja a seguir uma lista de comandos usados no Windows Vista para acessar guias específicas de itens do painel de controle:
 
 ### <a name="personalization"></a>Personalização
 
 -   Tamanho da fonte e DPI:% WINDIR% \\ system32 \\DpiScaling.exe
--   Resolução de tela:% WINDIR% \\ system32 \\control.exe desk.cpl, configurações,@Settings
--   Configurações de exibição:% WINDIR% \\ system32 \\control.exe desk.cpl, configurações,@Settings
+-   resolução de tela:% windir% \\ system32 \\control.exe desk.cpl, Configurações,@Settings
+-   configurações de exibição:% windir% \\ system32 \\control.exe desk.cpl, Configurações,@Settings
 -   Temas:% WINDIR% \\ system32 \\control.exe desk.cpl, temas,@Themes
 -   Proteção de tela:% WINDIR% \\ system32 \\control.exe desk.cpl, proteção de tela,@screensaver
 -   Vários monitores:% WINDIR% \\ system32 \\control.exe desk.cpl, monitor,@Monitor
@@ -111,7 +111,7 @@ No Windows Vista, algumas opções que foram acessadas por um módulo. cpl no Wi
 ### <a name="programs-and-features"></a>Programas e Recursos
 
 -   Adicionar ou remover programas:% WINDIR% \\ system32 \\control.exe/name Microsoft. ProgramsAndFeatures
--   Recursos do Windows:% WINDIR% \\ system32 \\OptionalFeatures.exe
+-   recursos de Windows:% windir% \\ system32 \\OptionalFeatures.exe
 
 ### <a name="regional-and-language-options"></a>Opções regionais e de idioma
 
@@ -131,11 +131,11 @@ No Windows Vista, algumas opções que foram acessadas por um módulo. cpl no Wi
 -   Editar configurações do plano atual:% WINDIR% \\ system32 \\control.exe/name Microsoft. poweroptions/pagePlanSettings
 -   Configurações do sistema:% WINDIR% \\ system32 \\control.exe/name Microsoft. poweroptions/pageGlobalSettings
 -   Criar um plano de energia:% WINDIR% \\ system32 \\control.exe/name Microsoft. poweroptions/pageCreateNewPlan
--   Não há nenhum comando canônico para a página de configurações avançadas, ele é acessado da maneira mais antiga:% WINDIR% \\ system32 \\control.exe powercfg.cpl,, 3
+-   não há nenhum comando canônico para a página de Configurações avançada, ele é acessado da maneira mais antiga:% windir% \\ system32 \\control.exe powercfg.cpl,, 3
 
 ## <a name="legacy-control-panel-commands"></a>Comandos do painel de controle herdado
 
-Quando você usa a função [**WinExec**](/windows/win32/api/winbase/nf-winbase-winexec) , o sistema pode reconhecer comandos especiais do painel de controle. Esses comandos são preessados no Windows Vista.
+Quando você usa a função [**WinExec**](/windows/win32/api/winbase/nf-winbase-winexec) , o sistema pode reconhecer comandos especiais do painel de controle. esses comandos são predata Windows Vista.
 
 
 
@@ -189,20 +189,20 @@ As edições inicial e básica não oferecem suporte a esse comando.
 
  
 
-Para sistemas Windows 2000 e posteriores:
+para os sistemas Windows 2000 e posteriores:
 
 
 
-|                            |                                                          |
+| Comando                    | Descrição                                              |
 |----------------------------|----------------------------------------------------------|
 | control.exe pastas        | Inicia a janela de **Opções de pasta** .                  |
 | control.exe NetWare        | Inicia a janela do **Novell NetWare** (se instalado).   |
-| control.exe telefonia      | Inicia a janela **Opções de telefone e modem** .         |
+| control.exe telefonia      | inicia a janela de **opções de Telefone e Modem** .         |
 | control.exe AdminTools     | Exibe a pasta **Ferramentas administrativas** .            |
 | control.exe schedtasks     | Exibe a pasta **tarefas agendadas** .                 |
-| control.exe netconnections | Exibe a pasta **conexões de rede** .             |
-| control.exe infravermelho       | Inicia a janela do **Monitor de infravermelho** (se instalado). |
-| Senhas de Usercontrol.exe  | Inicia a janela **contas de usuário** .                   |
+| control.exe netconnections | Exibe a pasta **Conexões de** Rede.             |
+| control.exe inomeado       | Inicia a **janela Monitor ComEdido** (se instalada). |
+| control.exe userpasswords  | Inicia a janela **Contas de** Usuário.                   |
 
 
 
@@ -212,31 +212,31 @@ Para sistemas Windows 2000 e posteriores:
 
 <dl> <dt>
 
-[Itens do painel de controle](control-panel-applications.md)
+[Painel de Controle itens](control-panel-applications.md)
 </dt> <dt>
 
 [Diretrizes da Experiência do Usuário](user-experience-guidelines.md)
 </dt> <dt>
 
-[Registrando itens do painel de controle](registering-control-panel-items.md)
+[Registrando Painel de Controle itens](registering-control-panel-items.md)
 </dt> <dt>
 
 [Usando CPLApplet](using-cplapplet.md)
 </dt> <dt>
 
-[Processamento de mensagens do painel de controle](message-processing.md)
+[Painel de Controle processamento de mensagens](message-processing.md)
 </dt> <dt>
 
-[Estendendo itens do painel de controle do sistema](extending-system-control-panel-items.md)
+[Estendendo itens Painel de Controle sistema](extending-system-control-panel-items.md)
 </dt> <dt>
 
-[Atribuindo categorias do painel de controle](assigning-control-panel-categories.md)
+[Atribuindo Painel de Controle categorias](assigning-control-panel-categories.md)
 </dt> <dt>
 
-[Criando links de tarefas pesquisáveis para um item do painel de controle](creating-searchable-task-links.md)
+[Criando links de tarefa pesquisáveis para um Painel de Controle item](creating-searchable-task-links.md)
 </dt> <dt>
 
-[Acessando o painel de controle no modo de segurança no Windows Vista](accessing-the-cp-in-safe-mode-under-vista.md)
+[Acessando o Painel de Controle no modo Cofre em Windows Vista](accessing-the-cp-in-safe-mode-under-vista.md)
 </dt> </dl>
 
  

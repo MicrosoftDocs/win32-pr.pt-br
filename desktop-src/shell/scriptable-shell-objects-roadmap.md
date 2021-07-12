@@ -1,5 +1,5 @@
 ---
-description: O Shell do Windows fornece um conjunto poderoso de objetos de automação que permitem que você programe o shell com o Microsoft Visual Basic e linguagens de script, como o Microsoft JScript (compatível com a especificação de linguagem ECMA 262) e o Microsoft Visual Basic Scripting Edition (VBScript). Você pode usar esses objetos para acessar muitos dos recursos e caixas de diálogo do Shell. Por exemplo, você pode acessar o sistema de arquivos, iniciar programas e alterar as configurações do sistema.
+description: o Shell de Windows fornece um conjunto poderoso de objetos de automação que permitem que você programe o Shell com o microsoft Visual Basic e linguagens de script, como o microsoft JScript (compatível com a especificação de linguagem ECMA 262) e o microsoft Visual Basic scripting Edition (VBScript). Você pode usar esses objetos para acessar muitos dos recursos e caixas de diálogo do Shell. Por exemplo, você pode acessar o sistema de arquivos, iniciar programas e alterar as configurações do sistema.
 title: Objetos shell programáveis
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 4c39e7e58a9715598056fb74aa154ed8a850f523
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8685b44d00d3f48e8de2a567218ef08c1cb5070
+ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968129"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113581774"
 ---
 # <a name="scriptable-shell-objects"></a>Objetos shell programáveis
 
-O Shell do Windows fornece um conjunto poderoso de objetos de automação que permitem que você programe o shell com o Microsoft Visual Basic e linguagens de script, como o Microsoft JScript (compatível com a especificação de linguagem ECMA 262) e o Microsoft Visual Basic Scripting Edition (VBScript). Você pode usar esses objetos para acessar muitos dos recursos e caixas de diálogo do Shell. Por exemplo, você pode acessar o sistema de arquivos, iniciar programas e alterar as configurações do sistema.
+o Shell de Windows fornece um conjunto poderoso de objetos de automação que permitem que você programe o Shell com o microsoft Visual Basic e linguagens de script, como o microsoft JScript (compatível com a especificação de linguagem ECMA 262) e o microsoft Visual Basic scripting Edition (VBScript). Você pode usar esses objetos para acessar muitos dos recursos e caixas de diálogo do Shell. Por exemplo, você pode acessar o sistema de arquivos, iniciar programas e alterar as configurações do sistema.
 
 Esta seção apresenta os objetos shell programáveis.
 
@@ -32,7 +32,7 @@ Esta seção apresenta os objetos shell programáveis.
 
 ## <a name="shell-versions"></a>Versões do Shell
 
-Muitos dos objetos shell foram disponibilizados na [versão 4,71](versions.md) do Shell. Outras estão disponíveis na versão 5, 0 e posterior. A versão 5, 0 tornou-se disponível com o Windows 2000. A tabela a seguir lista cada objeto Shell na versão do Shell em que o objeto ficou disponível.
+Muitos dos objetos shell foram disponibilizados na [versão 4,71](versions.md) do Shell. Outras estão disponíveis na versão 5, 0 e posterior. a versão 5, 0 tornou-se disponível com o Windows 2000. A tabela a seguir lista cada objeto Shell na versão do Shell em que o objeto ficou disponível.
 
 
 
@@ -56,14 +56,14 @@ Muitos dos objetos shell foram disponibilizados na [versão 4,71](versions.md) d
 
 ## <a name="instantiating-shell-objects"></a>Instanciando objetos do Shell
 
-Para instanciar os objetos do Shell em aplicativos Visual Basic com associação inicial, adicione referências às seguintes bibliotecas em seu projeto:
+para instanciar os objetos do Shell em aplicativos Visual Basic com associação inicial, adicione referências às seguintes bibliotecas em seu projeto:
 
 -   Microsoft Internet Controls (SHDocVw)
 -   Microsoft Shell Controls and Automation (shell32)
 
 ### <a name="late-binding"></a>Associação tardia
 
-Você também pode criar uma instância de muitos dos objetos do shell com associação tardia. Essa abordagem funciona em Visual Basic aplicativos e no script. O exemplo a seguir mostra como criar uma instância do objeto [**shell**](shell.md) no JScript.
+Você também pode criar uma instância de muitos dos objetos do shell com associação tardia. essa abordagem funciona em Visual Basic aplicativos e no script. O exemplo a seguir mostra como criar uma instância do objeto [**shell**](shell.md) no JScript.
 
 
 ```
@@ -127,7 +127,7 @@ O ProgID de cada um dos objetos do Shell é mostrado na tabela a seguir.
 | [**ShellFolderViewOC**](shellfolderviewoc-object.md)   | Não é possível associar tardiamente                                                                        |
 | [**ShellLinkObject**](shelllinkobject-object.md)       | Shell. NameSpace ("..."). Self. GetLink ou Shell. NameSpace ("..."). Itens (). GetLink           |
 | [**ShellUIHelper**](shelluihelper.md)                  | Não é possível associar tardiamente                                                                        |
-| [**ShellWindows**](shellwindows.md)                    | Shell. \_Janelas de shell ou ShellWindows. \_ NewEnum                                          |
+| [**ShellWindows**](shellwindows.md)                    | Shell. Shell \_ Windows ou ShellWindows. \_ NewEnum                                          |
 | [**WebViewFolderContents**](../lwef/webviewfoldercontents.md) | Não é possível associar tardiamente                                                                        |
 
 
@@ -152,8 +152,8 @@ A tabela a seguir lista cada objeto Shell e seu respectivo ClassID.
 
 
 
-|                                                         |                                      |
-|---------------------------------------------------------|--------------------------------------|
+| Objeto Shell                                           | CLASSID                              |
+|--------------------------------------------------------|--------------------------------------|
 | [**DIDiskQuotaUser**](didiskquotauser-object.md)       | 7988B571-EC89-11cf-9C00-00AA00A14F56 |
 | [**DiskQuotaControl**](diskquotacontrol-object.md)     | 7988B571-EC89-11cf-9C00-00AA00A14F56 |
 | [**Pasta**](folder.md)                                | BBCBDE60-C3FF-11CE-8350-444553540000 |
@@ -263,7 +263,7 @@ Os usuários talvez estejam mais familiarizados com os comandos que acessam no m
 
 ### <a name="security"></a>Segurança
 
-Como um aplicativo, um HTA é executado em um modelo de segurança diferente de uma página da Web. Para interagir com uma página da Web que implementa a funcionalidade dos objetos do Shell, os usuários devem habilitar a opção **inicializar e gerar script de controles ActiveX não marcados como seguros** para a zona de segurança na qual estão exibindo a página.
+Como um aplicativo, um HTA é executado em um modelo de segurança diferente de uma página da Web. para interagir com uma página da web que implementa a funcionalidade dos objetos do Shell, os usuários devem habilitar os **controles de ActiveX de inicialização e script não marcados como seguros** para a zona de segurança na qual estão exibindo a página.
 
 ## <a name="folder-objects"></a>Objetos de pasta
 
@@ -277,7 +277,7 @@ O objeto [**FolderItem**](folderitem.md) representa um item em uma pasta do Shel
 
 O objeto [**FolderItems**](folderitems.md) representa uma coleção de itens em uma pasta do Shell. Seus métodos e propriedades permitem que você recupere informações sobre a coleção.
 
-O exemplo a seguir Visual Basic mostra a relação entre vários objetos de pasta e como eles podem ser usados juntos. Quando o usuário clica no botão de comando chamado **cmdGetPath**, o programa exibe uma caixa de diálogo que permite ao usuário selecionar uma pasta de **meu computador**, em que ssfDRIVES é o valor de enumeração [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) para **meu computador**. Quando o usuário escolhe uma pasta, o caminho da pasta é exibido na caixa de texto chamada **txtPath**.
+o exemplo a seguir Visual Basic mostra a relação entre vários objetos de pasta e como eles podem ser usados juntos. Quando o usuário clica no botão de comando chamado **cmdGetPath**, o programa exibe uma caixa de diálogo que permite ao usuário selecionar uma pasta de **meu computador**, em que ssfDRIVES é o valor de enumeração [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) para **meu computador**. Quando o usuário escolhe uma pasta, o caminho da pasta é exibido na caixa de texto chamada **txtPath**.
 
 
 ```
@@ -319,7 +319,7 @@ No VBScript, essa função é ligeiramente diferente porque os valores de enumer
 
 
 
-No exemplo de JScript a seguir, que é uma tradução direta do exemplo anterior do VBScript, observe como os parênteses vazios ' () ' são usados para invocar os [**itens**](folder-items.md) e os métodos de [**Item**](folderitems-item.md) .
+no exemplo a seguir JScript, que é uma tradução direta do exemplo anterior do VBScript, observe como os parênteses vazios ' () ' são usados para invocar os [**itens**](folder-items.md) e os métodos de [**Item**](folderitems-item.md) .
 
 
 ```

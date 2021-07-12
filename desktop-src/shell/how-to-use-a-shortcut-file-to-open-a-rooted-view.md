@@ -3,12 +3,12 @@ description: Você pode iniciar uma exibição com raiz de um ponto de junção 
 title: Como abrir uma exibição com raiz de um ponto de junção por meio de um arquivo de atalho
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6eb83a6628b0dcffdf7d3bad66a25fc671c1feea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 52096f0dbbcebadb60e2612f0304ed497199b2ed
+ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169424"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113581604"
 ---
 # <a name="how-to-open-a-rooted-view-of-a-junction-point-through-a-shortcut-file"></a>Como abrir uma exibição com raiz de um ponto de junção por meio de um arquivo de atalho
 
@@ -41,7 +41,7 @@ Defina a linha de destino do arquivo de atalho para Explorer.exe com um sinaliza
 
     
 
-    |                   |                                        |
+    | Pasta do sistema     | Identificador de classe                       |
     |-------------------|----------------------------------------|
     | Meu Computador       | {20D04FE0-3AEA-1069-A2D8-08002B30309D} |
     | Meus locais de rede | {208D2C60-3AEA-1069-A2D7-08002B30309D} |

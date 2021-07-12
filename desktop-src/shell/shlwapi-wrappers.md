@@ -1,5 +1,5 @@
 ---
-description: As tabelas neste documento listam invólucros de Shlwapi.dll que fornecem funcionalidade Unicode limitada ao Windows 95, Windows 98 e Windows Millennium Edition (Windows me).
+description: As tabelas neste documento listam funções de wrapper do Shlwapi.dll que fornecem funcionalidade Unicode limitada para Windows 95, Windows 98 e Windows Millennium Edition (Windows Me).
 title: Funções de wrapper SHLWAPI
 ms.topic: reference
 ms.date: 05/31/2018
@@ -83,31 +83,31 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 6d928228873b893228c7fddc22fc1ca29ca511cd
-ms.sourcegitcommit: b01ad017c152c6756f3638623fe335877644d414
+ms.openlocfilehash: 7c166e005c9bcc9efe68fee926c9fa9c2a4f4e7e
+ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "111549748"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113581764"
 ---
 # <a name="shlwapi-wrapper-functions"></a>Funções de wrapper SHLWAPI
 
-\[Essas funções estão disponíveis por meio do Windows XP Service Pack 2 (SP2) e do Windows Server 2003. Eles podem ser alterados ou indisponíveis nas versões subsequentes do Windows.\]
+\[Essas funções estão disponíveis por meio Windows XP SERVICE Pack 2 (SP2) e Windows Server 2003. Eles podem ser alterados ou não disponíveis nas versões subsequentes do Windows.\]
 
-As tabelas neste documento listam invólucros de Shlwapi.dll que fornecem funcionalidade Unicode limitada ao Windows 95, Windows 98 e Windows Millennium Edition (Windows me).
+As tabelas neste documento listam funções de wrapper do Shlwapi.dll que fornecem funcionalidade Unicode limitada para Windows 95, Windows 98 e Windows Millennium Edition (Windows Me).
 
-O Windows 95, o Windows 98 e o Windows Millennium Edition (Windows me) são mencionados aqui como "plataformas ANSI nativas". Em plataformas ANSI nativas, essas funções de invólucro convertem os parâmetros de cadeia de caracteres de entrada Unicode para ANSI e chamam as versões ANSI das funções na coluna **encaminhar para** . Por exemplo, **AppendMenuWrapW** chama **AppendMenuA**, que é a versão ANSI do [**AppendMenu**](/windows/win32/api/winuser/nf-winuser-appendmenua). As outras funções seguem o mesmo padrão. Todas as cadeias de caracteres retornadas pela função ANSI são convertidas em Unicode e retornadas para o aplicativo de chamada. Além das exceções indicadas na coluna **comentários** , a função wrapper tem a mesma sintaxe e fornece a mesma funcionalidade que a função na coluna **encaminhar para** . Você deve consultar essa página de referência para obter informações detalhadas de uso.
+Windows 95, Windows 98 e Windows Edition daNium (Windows Me) são chamados aqui de "plataformas ANSI nativas". Em plataformas ANSI nativas, essas funções wrapper convertem os parâmetros de cadeia de caracteres de entrada Unicode em ANSI e chamam versões ANSI de funções na coluna **Forwards To.** Por exemplo, **AppendMenuWrapW** chama **AppendMenuA**, que é a versão ANSI [**de AppendMenu**](/windows/win32/api/winuser/nf-winuser-appendmenua). As outras funções seguem o mesmo padrão. Todas as cadeias de caracteres retornadas pela função ANSI são convertidas em Unicode e retornadas ao aplicativo de chamada. Além das exceções notadas  na coluna Comentários, a função wrapper tem a mesma sintaxe e fornece a mesma funcionalidade que a função na coluna **Forwards To.** Você deve consultar essa página de referência para obter informações de uso detalhadas.
 
-**Aviso de segurança:** Várias cadeias de caracteres Unicode podem ser convertidas para a mesma cadeia ANSI. Colisões inesperadas após a conversão podem resultar em um comportamento inesperado. Por exemplo, se **CreateEventWrapW** for usado para criar dois eventos nomeados de forma diferente, cujos nomes correspondem após a conversão de Unicode para ANSI, a segunda chamada retornará um identificador para o mesmo evento que a primeira chamada, mesmo que as cadeias de caracteres Unicode originais fossem diferentes.
+**Aviso de segurança:** Várias cadeias de caracteres Unicode podem ser convertida na mesma cadeia de caracteres ANSI. Colisões inesperadas após a conversão podem resultar em comportamento inesperado. Por exemplo, se **CreateEventWrapW** for usado para criar dois eventos de nome diferente cujos nomes corresponderem após a conversão de Unicode para ANSI, a segunda chamada retornará um identificador para o mesmo evento que a primeira chamada, mesmo que as cadeias de caracteres Unicode originais fossem diferentes.
 
-Os sistemas operacionais Microsoft Windows NT, Windows 2000, Windows XP, Windows Server 2003 e posteriores são mencionados aqui como "plataformas Unicode nativas". Para a maior parte, em plataformas Unicode nativas, essas funções de wrapper simplesmente encaminham parâmetros de cadeia de caracteres de entrada para a versão Unicode da função na coluna **encaminhar para** . Por exemplo, **AppendMenuWrapW** encaminha para **AppendMenuW**, que é a versão Unicode do [**AppendMenu**](/windows/win32/api/winuser/nf-winuser-appendmenua). As outras funções seguem o mesmo padrão. Todas as cadeias de caracteres retornadas pela função Unicode são retornadas para o aplicativo de chamada. Além das exceções indicadas na coluna **comentários** , a função wrapper tem a mesma sintaxe e fornece a mesma funcionalidade que a função na coluna **encaminhar para** . Você deve consultar essa página de referência para obter informações detalhadas de uso.
+O Microsoft Windows NT, Windows 2000, Windows XP, Windows Server 2003 e sistemas operacionais posteriores são chamados aqui de "plataformas Unicode nativas". Na maior parte do tempo, em plataformas Unicode nativas, essas funções wrapper simplesmente encaminham parâmetros de cadeia de caracteres de entrada para a versão Unicode da função na coluna **Forwards To.** Por exemplo, **AppendMenuWrapW** encaminha para **AppendMenuW,** que é a versão Unicode [**de AppendMenu.**](/windows/win32/api/winuser/nf-winuser-appendmenua) As outras funções seguem o mesmo padrão. Todas as cadeias de caracteres retornadas pela função Unicode são retornadas ao aplicativo de chamada. Além das exceções notadas  na coluna Comentários, a função wrapper tem a mesma sintaxe e fornece a mesma funcionalidade que a função na coluna **Forwards To.** Você deve consultar essa página de referência para obter informações de uso detalhadas.
 
-**Aviso de segurança:** Os problemas de segurança indicados para as funções na coluna **encaminhar para** também se aplicam às funções de wrapper correspondentes. Para obter detalhes, consulte a documentação de referência para a função na coluna **encaminhamentos para** .
+**Aviso de segurança:** Os problemas de segurança notados para as funções na coluna **Encaminha** para também se aplicam às funções de wrapper correspondentes. Para obter detalhes, consulte a documentação de referência para a função na **coluna Encaminha para.**
 
-As funções de wrapper nesta tabela estão todas contidas em Shlwapi.dll. Para chamá-los, você deve usar o ordinal listado na tabela.
+As funções de wrapper nesta tabela estão contidas em Shlwapi.dll. Para chamá-los, você deve usar o ordinal listado na tabela.
 
 > [!Note]  
-> Essas funções de wrapper estão disponíveis no Windows XP, mas não fornecem nenhuma funcionalidade de wrapper no Windows XP Service Pack 2 (SP2) e posterior. Eles também não fornecem a funcionalidade de wrapper no Windows Server 2003. Em vez disso, você deve usar as funções listadas na coluna **encaminhar para** .
+> Essas funções wrapper estão disponíveis no Windows XP, mas não fornecem nenhuma funcionalidade de wrapper no Windows XP Service Pack 2 (SP2) e posterior. Eles também não fornecem funcionalidade de wrapper no Windows Server 2003. Você deve usar as funções listadas na coluna **Encaminha para** em vez disso.
 
  
 
@@ -115,19 +115,19 @@ As funções de wrapper nesta tabela estão todas contidas em Shlwapi.dll. Para 
 
 | Função                  | Ordinal | Encaminha para                                             | DLL      | Comentários                                                                                                                             |
 |---------------------------|---------|---------------------------------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------|
-| AppendMenuWrapW           | 36      | [**AppendMenu**](/windows/win32/api/winuser/nf-winuser-appendmenua)                     | USER32   | [(a)](#shlwapi-wrapper-functions), [(f)](#dragqueryfile), [(menu)](#menu)                                                           |
-| CallWindowProcWrapW       | 37      | [**CallWindowProc**](/windows/win32/api/winuser/nf-winuser-callwindowproca)             | USER32   | [Encontrei](#shlwapi-wrapper-functions)                                                                                                   |
-| CharLowerWrapW            | 38      | [**CharLower**](/windows/win32/api/winuser/nf-winuser-charlowera)                       | KERNEL32 | [Oriental](#shlwapi-wrapper-functions)                                                                                                   |
-| CharUpperBufWrapW         | 44      | [**CharUpperBuff**](/windows/win32/api/winuser/nf-winuser-charupperbuffa)               | KERNEL32 | [Oriental](#shlwapi-wrapper-functions)                                                                                                   |
-| CharUpperWrapW            | 43      | [**CharUpper**](/windows/win32/api/winuser/nf-winuser-charuppera)                       | KERNEL32 | [Oriental](#shlwapi-wrapper-functions)                                                                                                   |
-| CompareStringWrapW        | 45      | [**CompareString**](/windows/win32/api/stringapiset/nf-stringapiset-comparestringw)                 | KERNEL32 | [CompareString](#comparestring)                                                                                                   |
+| AppendMenuWrapW           | 36      | [**Appendmenu**](/windows/win32/api/winuser/nf-winuser-appendmenua)                     | USER32   | [(a)](#shlwapi-wrapper-functions), [(f)](#dragqueryfile), [(Menu)](#menu)                                                           |
+| CallWindowProcWrapW       | 37      | [**CallWindowProc**](/windows/win32/api/winuser/nf-winuser-callwindowproca)             | USER32   | [(i)](#shlwapi-wrapper-functions)                                                                                                   |
+| CharLowerWrapW            | 38      | [**CharLower**](/windows/win32/api/winuser/nf-winuser-charlowera)                       | KERNEL32 | [(e)](#shlwapi-wrapper-functions)                                                                                                   |
+| CharUpperBufWrapW         | 44      | [**CharUpperBuff**](/windows/win32/api/winuser/nf-winuser-charupperbuffa)               | KERNEL32 | [(e)](#shlwapi-wrapper-functions)                                                                                                   |
+| CharUpperWrapW            | 43      | [**CharUpper**](/windows/win32/api/winuser/nf-winuser-charuppera)                       | KERNEL32 | [(e)](#shlwapi-wrapper-functions)                                                                                                   |
+| CompareStringWrapW        | 45      | [**CompareString**](/windows/win32/api/stringapiset/nf-stringapiset-comparestringw)                 | KERNEL32 | [(CompareString)](#comparestring)                                                                                                   |
 | CopyFileWrapW             | 112     | [**CopyFile**](/windows/win32/api/winbase/nf-winbase-copyfile)                             | KERNEL32 | [(a)](#shlwapi-wrapper-functions), [(c)](#shlwapi-wrapper-functions)                                                                |
-| CreateEventWrapW          | 51      | [**CreateEvent**](/windows/win32/api/synchapi/nf-synchapi-createeventa)                     | KERNEL32 | [um](#shlwapi-wrapper-functions)                                                                                                   |
+| CreateEventWrapW          | 51      | [**Createevent**](/windows/win32/api/synchapi/nf-synchapi-createeventa)                     | KERNEL32 | [(a)](#shlwapi-wrapper-functions)                                                                                                   |
 | CreateFileWrapW           | 52      | [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea)                         | KERNEL32 | [(a)](#shlwapi-wrapper-functions), [(c)](#shlwapi-wrapper-functions)                                                                |
-| CreateWindowExWrapW       | 55      | [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa)             | USER32   | [um](#shlwapi-wrapper-functions)                                                                                                   |
-| DefWindowProcWrapW        | 56      | [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)               | USER32   | [Encontrei](#shlwapi-wrapper-functions)                                                                                                   |
+| CreateWindowExWrapW       | 55      | [**Createwindowex**](/windows/win32/api/winuser/nf-winuser-createwindowexa)             | USER32   | [(a)](#shlwapi-wrapper-functions)                                                                                                   |
+| DefWindowProcWrapW        | 56      | [**Defwindowproc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)               | USER32   | [(i)](#shlwapi-wrapper-functions)                                                                                                   |
 | DeleteFileWrapW           | 57      | [**DeleteFile**](/windows/win32/api/fileapi/nf-fileapi-deletefilea)                         | KERNEL32 | [(a)](#shlwapi-wrapper-functions), [(c)](#shlwapi-wrapper-functions)                                                                |
-| DialogBoxParamWrapW       | 59      | [**DialogBoxParam**](/windows/win32/api/winuser/nf-winuser-dialogboxparama)             | USER32   | [(f)](#dragqueryfile), [(i)](#shlwapi-wrapper-functions), [(DialogBoxParam)](#dialogboxparam)                                       |
+| DialogBoxParamWrapW       | 59      | [**Dialogboxparam**](/windows/win32/api/winuser/nf-winuser-dialogboxparama)             | USER32   | [(f)](#dragqueryfile), [(i)](#shlwapi-wrapper-functions), [(DialogBoxParam)](#dialogboxparam)                                       |
 | DispatchMessageWrapW      | 60      | [**Dispatchmessage**](/windows/win32/api/winuser/nf-winuser-dispatchmessage)           | USER32   | [(i)](#shlwapi-wrapper-functions)                                                                                                   |
 | DragQueryFileWrapW        | 318     | [**DragQueryFile**](/windows/win32/api/Shellapi/nf-shellapi-dragqueryfilea)                  | SHELL32  | [(b)](#dialogboxparam), [(c)](#shlwapi-wrapper-functions), [(g)](#compareexchange), [(DragQueryFile)](#dragqueryfile)               |
 | DrawTextExWrapW           | 301     | [**DrawTextEx**](/windows/win32/api/winuser/nf-winuser-drawtextexa)                        | USER32   | [(a)](#shlwapi-wrapper-functions), [(d)](#shlwapi-wrapper-functions)                                                                |
@@ -148,26 +148,26 @@ As funções de wrapper nesta tabela estão todas contidas em Shlwapi.dll. Para 
 | GetSystemDirectoryWrapW   | 81      | [**Getsystemdirectory**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemdirectorya)       | KERNEL32 | [(c)](#shlwapi-wrapper-functions), [(g)](#compareexchange)                                                                          |
 | GetTimeFormatWrapW        | 310     | [**Gettimeformat**](/windows/win32/api/datetimeapi/nf-datetimeapi-gettimeformata)                 | KERNEL32 | [(a)](#shlwapi-wrapper-functions), [(g)](#compareexchange), [(DateTime)](#datetime)                                                 |
 | GetWindowLongWrapW        | 94      | [**Getwindowlong**](/windows/win32/api/winuser/nf-winuser-getwindowlonga)               | USER32   | [(WindowLong)](#windowlong)                                                                                                         |
-| GetWindowsDirectoryWrapW  | 97      | [**Getwindowsdirectory**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getwindowsdirectorya)     | KERNEL32 | [(c)](#shlwapi-wrapper-functions), [(g)](#compareexchange)                                                                          |
-| GetWindowTextLengthWrapW  | 96      | [**GetWindowTextLength**](/windows/win32/api/winuser/nf-winuser-getwindowtextlengtha)   | USER32   | [(j)](#j)                                                                                                                           |
-| GetWindowTextWrapW        | 95      | [**Getwindowtext**](/windows/win32/api/winuser/nf-winuser-getwindowtexta)               | USER32   | [(f)](#dragqueryfile), [(g)](#compareexchange)                                                                                      |
-| InsertMenuItemWrapW       | 98      | [**InsertMenuItem**](/windows/win32/api/winuser/nf-winuser-insertmenuitema)             | USER32   | [(a)](#shlwapi-wrapper-functions), [(f)](#dragqueryfile), [(Menu)](#menu), [(MenuItemInfo)](#menuiteminfo)                          |
-| IsCharAlphaWrapW          | 25      | [**IsCharAlpha**](/windows/win32/api/winuser/nf-winuser-ischaralphaa)                   | USER32   | [(e)](#shlwapi-wrapper-functions)                                                                                                   |
-| IsCharAlphaNumericWrapW   | 28      | [**IsCharAlphaNumeric**](/windows/win32/api/winuser/nf-winuser-ischaralphanumerica)     | KERNEL32 | [(e)](#shlwapi-wrapper-functions)                                                                                                   |
-| IsCharUpperWrapW          | 26      | [**IsCharUpper**](/windows/win32/api/winuser/nf-winuser-ischaruppera)                   | USER32   | [(e)](#shlwapi-wrapper-functions)                                                                                                   |
+| GetWindowsDirectoryWrapW  | 97      | [**GetWindowsDirectory**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getwindowsdirectorya)     | KERNEL32 | [(c)](#shlwapi-wrapper-functions), [(g)](#compareexchange)                                                                          |
+| GetWindowTextLengthWrapW  | 96      | [**GetWindowTextLength**](/windows/win32/api/winuser/nf-winuser-getwindowtextlengtha)   | USER32   | [j](#j)                                                                                                                           |
+| GetWindowTextWrapW        | 95      | [**GetWindowText**](/windows/win32/api/winuser/nf-winuser-getwindowtexta)               | USER32   | [(f)](#dragqueryfile), [(g)](#compareexchange)                                                                                      |
+| InsertMenuItemWrapW       | 98      | [**InsertMenuItem**](/windows/win32/api/winuser/nf-winuser-insertmenuitema)             | USER32   | [(a)](#shlwapi-wrapper-functions), [(f)](#dragqueryfile), [(menu)](#menu), [(MenuItemInfo)](#menuiteminfo)                          |
+| IsCharAlphaWrapW          | 25      | [**IsCharAlpha**](/windows/win32/api/winuser/nf-winuser-ischaralphaa)                   | USER32   | [Oriental](#shlwapi-wrapper-functions)                                                                                                   |
+| IsCharAlphaNumericWrapW   | 28      | [**IsCharAlphaNumeric**](/windows/win32/api/winuser/nf-winuser-ischaralphanumerica)     | KERNEL32 | [Oriental](#shlwapi-wrapper-functions)                                                                                                   |
+| IsCharUpperWrapW          | 26      | [**IsCharUpper**](/windows/win32/api/winuser/nf-winuser-ischaruppera)                   | USER32   | [Oriental](#shlwapi-wrapper-functions)                                                                                                   |
 | LoadLibraryWrapW          | 105     | [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya)                     | KERNEL32 | [(a)](#shlwapi-wrapper-functions), [(c)](#shlwapi-wrapper-functions)                                                                |
-| LoadStringWrapW           | 107     | [**Loadstring**](/windows/win32/api/winuser/nf-winuser-loadstringa)                     | KERNEL32 | [(e)](#shlwapi-wrapper-functions)                                                                                                   |
-| MessageBoxWrapW           | 340     | [**Messagebox**](/windows/win32/api/winuser/nf-winuser-messagebox)                     | USER32   | [(a)](#shlwapi-wrapper-functions)                                                                                                   |
+| LoadStringWrapW           | 107     | [**Cadeia de caracteres LoadString**](/windows/win32/api/winuser/nf-winuser-loadstringa)                     | KERNEL32 | [Oriental](#shlwapi-wrapper-functions)                                                                                                   |
+| MessageBoxWrapW           | 340     | [**MessageBox**](/windows/win32/api/winuser/nf-winuser-messagebox)                     | USER32   | [um](#shlwapi-wrapper-functions)                                                                                                   |
 | MoveFileWrapW             | 113     | [**MoveFile**](/windows/win32/api/winbase/nf-winbase-movefile)                             | KERNEL32 | [(a)](#shlwapi-wrapper-functions), [(c)](#shlwapi-wrapper-functions)                                                                |
-| OutputDebugStringWrapW    | 115     | [**Outputdebugstring**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringa)         | KERNEL32 | [(a)](#shlwapi-wrapper-functions)                                                                                                   |
-| PeekMessageWrapW          | 116     | [**PeekMessage**](/windows/win32/api/winuser/nf-winuser-peekmessagea)                   | USER32   | [(PeekMessage e PostMessage)](#peekmessage-and-postmessage)                                                                       |
-| PostMessageWrapW          | 117     | [**PostMessage**](/windows/win32/api/winuser/nf-winuser-postmessagea)                   | USER32   | [(PeekMessage e PostMessage)](#peekmessage-and-postmessage)                                                                       |
-| RegCreateKeyExWrapW       | 120     | [**Regcreatekeyex**](/windows/win32/api/winreg/nf-winreg-regcreatekeyexa)               | ADVAPI32 | [(a)](#shlwapi-wrapper-functions)                                                                                                   |
-| RegisterClassWrapW        | 131     | [**Registerclass**](/windows/win32/api/winuser/nf-winuser-registerclassa)               | USER32   | [(a)](#shlwapi-wrapper-functions), [(RegisterClass)](#registerclass)                                                                |
-| RegOpenKeyExWrapW         | 125     | [**Regopenkeyex**](/windows/win32/api/winreg/nf-winreg-regopenkeyexa)                   | ADVAPI32 | [(a)](#shlwapi-wrapper-functions)                                                                                                   |
-| RegQueryValueExWrapW      | 128     | [**Regqueryvalueex**](/windows/win32/api/winreg/nf-winreg-regqueryvalueexa)             | ADVAPI32 | [(a)](#shlwapi-wrapper-functions), [(g)](#compareexchange), [(ValueEx)](#regqueryvalueexw), [(RegQueryValueExW)](#regqueryvalueexw) |
+| OutputDebugStringWrapW    | 115     | [**OutputDebugString**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringa)         | KERNEL32 | [um](#shlwapi-wrapper-functions)                                                                                                   |
+| PeekMessageWrapW          | 116     | [**PeekMessage**](/windows/win32/api/winuser/nf-winuser-peekmessagea)                   | USER32   | [(PeekMessage e a mensagem)](#peekmessage-and-postmessage)                                                                       |
+| PostMessageWrapW          | 117     | [**PostMessage**](/windows/win32/api/winuser/nf-winuser-postmessagea)                   | USER32   | [(PeekMessage e a mensagem)](#peekmessage-and-postmessage)                                                                       |
+| RegCreateKeyExWrapW       | 120     | [**RegCreateKeyEx**](/windows/win32/api/winreg/nf-winreg-regcreatekeyexa)               | ADVAPI32 | [um](#shlwapi-wrapper-functions)                                                                                                   |
+| RegisterClassWrapW        | 131     | [**RegisterClass**](/windows/win32/api/winuser/nf-winuser-registerclassa)               | USER32   | [(a)](#shlwapi-wrapper-functions), [(registerClass)](#registerclass)                                                                |
+| RegOpenKeyExWrapW         | 125     | [**Falha em RegOpenKeyEx**](/windows/win32/api/winreg/nf-winreg-regopenkeyexa)                   | ADVAPI32 | [um](#shlwapi-wrapper-functions)                                                                                                   |
+| RegQueryValueExWrapW      | 128     | [**RegQueryValueEx**](/windows/win32/api/winreg/nf-winreg-regqueryvalueexa)             | ADVAPI32 | [(a)](#shlwapi-wrapper-functions), [(g)](#compareexchange), [(ValueEx)](#regqueryvalueexw), [(RegQueryValueExW)](#regqueryvalueexw) |
 | RegQueryValueWrapW        | 127     | [**RegQueryValue**](/windows/win32/api/winreg/nf-winreg-regqueryvaluea)                 | ADVAPI32 | [(a)](#shlwapi-wrapper-functions), [(g)](#compareexchange)                                                                          |
-| RegSetValueExWrapW        | 130     | [**Regsetvalueex**](/windows/win32/api/winreg/nf-winreg-regsetvalueexa)                 | ADVAPI32 | [(a)](#shlwapi-wrapper-functions), [(ValueEx)](#regqueryvalueexw)                                                                   |
+| RegSetValueExWrapW        | 130     | [**RegSetValueEx**](/windows/win32/api/winreg/nf-winreg-regsetvalueexa)                 | ADVAPI32 | [(a)](#shlwapi-wrapper-functions), [(ValueEx)](#regqueryvalueexw)                                                                   |
 | SendMessageWrapW          | 136     | [**SendMessage**](/windows/win32/api/winuser/nf-winuser-sendmessage)                   | USER32   | [SendMessage](#sendmessage)                                                                                                       |
 | SetDlgItemTextWrapW       | 138     | [**SetDlgItemText**](/windows/win32/api/winuser/nf-winuser-setdlgitemtexta)             | USER32   | [um](#shlwapi-wrapper-functions)                                                                                                   |
 | SetWindowLongWrapW        | 141     | [**SetWindowLong**](/windows/win32/api/winuser/nf-winuser-setwindowlonga)               | USER32   | [(WindowLong)](#windowlong)                                                                                                         |
@@ -212,41 +212,41 @@ O Microsoft Layer for Unicode (MSLU) verifica erros durante a conversão de Unic
 
 ### <a name="b"></a>b
 
-Essas funções usam um link com atraso carregado para a função apropriada. Isso significa que a DLL que contém a função na coluna "encaminhar para" não é carregada pelo Shlwapi.dll até que uma função nessa DLL seja chamada. O vinculador Microsoft Visual C++ dá suporte a essa funcionalidade mais geralmente por meio da opção/DELAYLOAD.
+Essas funções usam um link com atraso carregado para a função apropriada. Isso significa que a DLL que contém a função na coluna "Encaminha para" não é carregada pelo Shlwapi.dll até que uma função nessa DLL seja chamada. O Microsoft Visual C++ linker do Microsoft Visual C++ dá suporte a essa funcionalidade de maneira mais geral por meio da opção /DELAYLOAD.
 
-### <a name="c"></a>&
+### <a name="c"></a>(c)
 
-Essa função manipula nomes de File. Conforme observado em [(a)](#shlwapi-wrapper-functions), as funções convertem todas as cadeias de caracteres por meio da página de código do CP \_ ACP. Eles não verificam se as funções de e/s de arquivo foram definidas para o modo ANSI. Se as funções de e/s de arquivo estiverem no modo OEM, as cadeias de caracteres serão convertidas de e para o conjunto de caractere errado. Um aplicativo pode definir as funções de e/s de arquivo para o modo OEM explicitamente chamando a função [**SetFileApisToOEM**](/windows/win32/api/fileapi/nf-fileapi-setfileapistooem) .
+Essa função manipula nomes de arquivo. Conforme anotou em [(a)](#shlwapi-wrapper-functions), as funções convertem todas as cadeias de caracteres por meio da página de código \_ CP ACP. Eles não verificam se as funções de E/S de arquivo foram definidas para o modo ANSI. Se as funções de E/S do arquivo estão no modo OEM, as cadeias de caracteres serão convertidas de e para o conjunto de caracteres errado. Um aplicativo pode definir as funções de E/S de arquivo para o modo OEM explicitamente chamando a [**função SetFileApisToOEM.**](/windows/win32/api/fileapi/nf-fileapi-setfileapistooem)
 
-* * Aviso de segurança: * * o uso dessas funções de wrapper para nomes de arquivos pode comprometer a segurança do seu aplicativo. Como nenhuma verificação padrão é executada e os melhores caracteres de ajuste são empregados, os caracteres de nome de arquivo podem ser convertidos de maneiras inesperadas. Isso pode resultar em ataques de falsificação do sistema de arquivos. Além disso, a perda de dados silenciosa pode ocorrer durante a conversão de Unicode para ANSI.
+**Aviso de segurança: ** O uso dessas funções de wrapper para nomes de arquivo pode comprometer a segurança do aplicativo. Como nenhuma verificação padrão é executada e os caracteres de melhor ajuste são empregados, os caracteres de nome de arquivo podem ser convertidos de maneiras inesperadas. Isso pode resultar em ataques de spoofing do sistema de arquivos. Além disso, a perda silenciosa de dados pode ocorrer durante a conversão de Unicode para ANSI.
 
 O MSLU não tem essas limitações.
 
-### <a name="d"></a>3D
+### <a name="d"></a>(d)
 
-Se a cadeia de caracteres que está sendo desenhada exigir um conjunto de caracteres que não esteja disponível na fonte selecionada no contexto do dispositivo, essas funções de wrapper usarão o recurso de [vinculação de fontes](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767872(v=vs.85)) da biblioteca [MLang](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767865(v=vs.85)) para renderizar cada caractere em uma fonte apropriada. Ao contrário da maioria das outras funções de wrapper, elas são funcionais no Microsoft Windows NT 4,0, além das plataformas ANSI nativas.
+Se a cadeia de caracteres que está sendo desenhada exigir um conjunto de caracteres que [](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767872(v=vs.85)) não está disponível na fonte selecionada no contexto do dispositivo, essas funções wrapper usarão o recurso Vinculação de Fonte da [biblioteca MLang](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767865(v=vs.85)) para renderizar cada caractere em uma fonte apropriada. Ao contrário da maioria das outras funções de wrapper, elas são funcionais no Microsoft Windows NT 4.0, além de plataformas ANSI nativas.
 
-### <a name="e"></a>Oriental
+### <a name="e"></a>(e)
 
-As implementações Unicode completas dessas funções estão disponíveis em plataformas ANSI nativas. Essas funções não chamam a função ANSI relacionada.
+Implementações Unicode completas dessas funções estão disponíveis em plataformas ANSI nativas. Essas funções não chamam a função ANSI relacionada.
 
-### <a name="f"></a>fixo
+### <a name="f"></a>(f)
 
-Se o idioma da interface do usuário padrão usa um conjunto de caracteres diferente do idioma da interface de usuário padrão do sistema, o sistema tenta reescrever modelos de caixa de diálogo e controles de subclasse e converter itens de menu para o desenho proprietário, para que as cadeias de caracteres no idioma da interface do usuário padrão continuem a ser exibidas corretamente. Os únicos controles suportados pelas regras de reescrita de modelo de caixa de diálogo são controles estáticos, botões, caixas de listagem e caixas de combinação. Esses controles são subclasse de forma que a função **SendMessageWrapW** possa obter a cadeia de caracteres Unicode original sem ser traduzida por meio do conjunto de caracteres ANSI. Ao contrário da maioria das outras funções de wrapper, elas são funcionais no Microsoft Windows NT 4,0, bem como em plataformas ANSI nativas. Consulte os comentários na documentação da função [**MLLoadLibrary**](./callbacks.md) para obter mais informações sobre como o idioma da interface do usuário padrão do sistema e o idioma da interface de usuário padrão são determinados.
+Se a linguagem de interface do usuário padrão do usuário usar um conjunto de caracteres diferente do idioma da interface do usuário padrão do sistema, o sistema tentará reescrever modelos de caixa de diálogo e controles de subclasse e converter itens de menu em desenho de proprietário, de modo que as cadeias de caracteres na linguagem de interface do usuário padrão do usuário continuem a ser exibidas corretamente. Os únicos controles com suporte nas regras de regravação de modelo de caixa de diálogo são controles estáticos, de botão, de caixa de listagem e de caixa de combinação. Esses controles são subclasses de forma que a função **SendMessageWrapW** possa obter a cadeia de caracteres Unicode original sem ser convertida por meio do conjunto de caracteres ANSI. Ao contrário da maioria das outras funções de wrapper, elas são funcionais no Microsoft Windows NT 4.0, bem como em plataformas ANSI nativas. Consulte os comentários na documentação da função [**MLLoadLibrary**](./callbacks.md) para mais discussão sobre como a linguagem de interface do usuário padrão do usuário e o idioma da interface do usuário padrão do sistema são determinados.
 
-### <a name="g"></a>m
+### <a name="g"></a>(g)
 
-Se a conversão de cadeia de caracteres for necessária, todas as cadeias serão convertidas por meio da \_ página de código CP ACP.
+Se a conversão de cadeia de caracteres for necessária, todas as cadeias de caracteres serão convertidas por meio da página de \_ código CP ACP.
 
-Ao converter de ANSI em Unicode para saída, se a cadeia de caracteres retornada não couber no buffer que foi fornecido, as funções de wrapper truncarão a cadeia de caracteres. Essas funções que retornam o número de caracteres copiados para o buffer ou o número de caracteres necessários para evitar o truncamento não retornam o número de caracteres Unicode copiados para o buffer fornecido pelo ou exigidos pelo chamador da função de wrapper. Eles retornam o número de caracteres ANSI copiados para o buffer ou exigidos pela função ANSI subjacente. O MSLU não tem essas limitações.
+Ao converter de ANSI para Unicode para saída, se a cadeia de caracteres retornada não se ajustar ao buffer fornecido, as funções wrapper truncarão a cadeia de caracteres. As funções que retornam o número de caracteres copiados para o buffer ou o número de caracteres necessários para evitar o truncamento não retornam o número de caracteres Unicode copiados para o buffer fornecido pelo ou necessários do chamador da função wrapper. Eles retornam o número de caracteres ANSI copiados para o buffer ou exigidos pela função ANSI subjacente. O MSLU não tem essas limitações.
 
-### <a name="h"></a>t
+### <a name="h"></a>(h)
 
-Em sistemas anteriores ao Windows XP, essas funções implementam um pool de threads e uma fila de temporizador simplificados. No Windows XP e posterior, essas funções usam o pool de threads do sistema e a fila de timer do sistema. Para as funções de fila de timer, o parâmetro *hQueue* deve ser definido como **NULL** para indicar que a operação será executada na fila de temporizador padrão.
+Em sistemas anteriores ao Windows XP, essas funções implementam um pool de threads simplificado e uma fila de temporizador. No Windows XP e posterior, essas funções usam o pool de threads do sistema e a fila do temporizador do sistema. Para as funções de fila de temporizador, o parâmetro *hQueue* deve ser definido como **NULL** para indicar que a operação deve ser executada na fila de temporizador padrão.
 
-### <a name="i"></a>Encontrei
+### <a name="i"></a>(i)
 
-Em plataformas Unicode, essas funções convertem a mensagem de Unicode para ANSI se a janela de destino for ANSI. Essas funções não executam a conversão de mensagens em plataformas ANSI nativas. Portanto, chamar aplicativos que chamam essa função deve garantir que a mensagem esteja no formato Unicode em plataformas Unicode e no formato ANSI em plataformas ANSI. Por exemplo, na chamada de função a seguir, o *wParam* deve ser um ponto de código Unicode se o programa estiver sendo executado em uma plataforma Unicode e deverá ser um caractere ANSI se o programa estiver sendo executado em uma plataforma ANSI.
+Em plataformas Unicode, essas funções convertem a mensagem de Unicode para ANSI se a janela de destino for ANSI. Essas funções não executam a tradução de mensagens em plataformas ANSI nativas. Portanto, chamar aplicativos que chamam essa função deve garantir que a mensagem está no formato Unicode em plataformas Unicode e no formato ANSI em plataformas ANSI. Por exemplo, na chamada de função a seguir, o *wParam* deverá ser um ponto de código Unicode se o programa estiver em execução em uma plataforma Unicode e deverá ser um caractere ANSI se o programa estiver em execução em uma plataforma ANSI.
 
 ``` syntax
 CallWindowProcWrapW(prevWndProc, hwnd, WM_CHAR, wParam, lParam);
@@ -254,39 +254,39 @@ CallWindowProcWrapW(prevWndProc, hwnd, WM_CHAR, wParam, lParam);
 
 O MSLU rastreia o conjunto de caracteres do procedimento de janela de destino e converte a mensagem conforme necessário.
 
-### <a name="j"></a>j
+### <a name="j"></a>(j)
 
 Em plataformas ANSI, essas funções retornam o comprimento da cadeia de caracteres ANSI subjacente, não o comprimento da cadeia de caracteres Unicode traduzida. O MSLU não tem essas limitações.
 
-### <a name="compareexchange"></a>CompareExchange
+### <a name="compareexchange"></a>(CompareExchange)
 
-A sintaxe de **SHInterlockedCompareExchange** é um pouco diferente da do [**InterlockedCompareExchangePointer**](/windows/win32/api/winnt/nf-winnt-interlockedcompareexchangepointer), mas funciona de forma idêntica.
+A sintaxe para **SHInterlockedCompareExchange** é um pouco diferente da [**de InterlockedCompareExchangePointer**](/windows/win32/api/winnt/nf-winnt-interlockedcompareexchangepointer), mas funciona de forma idêntica.
 
 ``` syntax
 void* SHInterlockedCompareExchange(void **ppDest, void *pExch, void *pComp);
 ```
 
-### <a name="comparestring"></a>CompareString
+### <a name="comparestring"></a>(CompareString)
 
-Lembre-se de que em plataformas ANSI nativas, ambas as cadeias de caracteres são convertidas em ANSI e comparadas como cadeias Se as cadeias de caracteres Unicode contiverem personagens que não podem ser representados em ANSI, os resultados poderão ser inesperados. Por exemplo, se a página de código ANSI padrão não der suporte a caracteres CJK, as cadeias L " \\ x66F0" e l " \\ x6708" compararão como iguais em plataformas ANSI nativas porque ambas mapeiam para a cadeia de caracteres ANSI "?".
+Lembre-se de que, em plataformas ANSI nativas, ambas as cadeias de caracteres são convertidas em ANSI e comparadas como cadeias de caracteres ANSI. Se as cadeias de caracteres Unicode contêm caracteres que não podem ser representados em ANSI, os resultados podem ser inesperados. Por exemplo, se a página de código ANSI padrão não dá suporte a caracteres CJK, as cadeias de caracteres L" \\ x66F0" e L" x6708" serão comparadas como iguais em plataformas ANSI nativas porque ambas são mapeada para a cadeia de \\ caracteres ANSI "?".
 
-### <a name="datetime"></a>Horário
+### <a name="datetime"></a>(DateTime)
 
-No Shlwapi.dll versão 5,0, que é fornecida com o Windows 2000, a página de código do identificador de localidade que você passa como o primeiro parâmetro de **GetDateFormatWrapW** e **GetTimeFormatWrapW** deve corresponder à página de código ANSI atual. Caso contrário, a cadeia de caracteres retornada pode ser convertida incorretamente. Essa limitação não se aplica a Shlwapi.dll versões 5,5 ou superiores. Isso significa que o Windows XP e os sistemas posteriores não estão sujeitos a essa limitação. O MSLU não tem essa limitação.
+Na Shlwapi.dll versão 5.0, que foi enviada com o Windows 2000, a página de código do identificador de localidade que você passa como o primeiro parâmetro **de GetDateFormatWrapW** e **GetTimeFormatWrapW** deve corresponder à página de código ANSI atual. Caso contrário, a cadeia de caracteres retornada poderá ser convertida incorretamente. Essa limitação não se aplica Shlwapi.dll versões 5.5 ou superior. Isso significa que Windows XP e sistemas posteriores não estão sujeitos a essa limitação. O MSLU não tem essa limitação.
 
 ### <a name="dialogboxparam"></a>(DialogBoxParam)
 
-O parâmetro *lpTemplateName* da função **DialogBoxParamWrapW** não pode ser uma cadeia de caracteres. Ele deve ser um ordinal criado pela macro [**MAKEINTRESOURCE**](/windows/win32/api/winuser/nf-winuser-makeintresourcea) . O procedimento de caixa de diálogo especificado pelo parâmetro *lpDialogFunc* recebe mensagens ANSI em plataformas ANSI nativas e mensagens Unicode em plataformas Unicode nativas. O procedimento da caixa de diálogo deve estar preparado para lidar com ambos os casos. O MSLU não tem essas limitações.
+O *parâmetro lpTemplateName* para a **função DialogBoxParamWrapW** não pode ser uma cadeia de caracteres. Ele deve ser um ordinal criado pela [**macro MAKEINTRESOURCE.**](/windows/win32/api/winuser/nf-winuser-makeintresourcea) O procedimento de caixa de diálogo especificado pelo parâmetro *lpDialogFunc* recebe mensagens ANSI em plataformas ANSI nativas e mensagens Unicode em plataformas Unicode nativas. O procedimento de caixa de diálogo deve ser preparado para lidar com ambos os casos. O MSLU não tem essas limitações.
 
-### <a name="exttextout"></a>ExtTextOut
+### <a name="exttextout"></a>(ExtTextOut)
 
-As plataformas ANSI nativas implementam a função [**ExtTextOutW**](/windows/win32/api/wingdi/nf-wingdi-exttextouta) , bem como as plataformas Unicode nativas. A finalidade de **ExtTextOutWrapW** é executar a vinculação de fontes, conforme descrito em um comentário separado.
+As plataformas ANSI nativas implementam [**a função ExtTextOutW,**](/windows/win32/api/wingdi/nf-wingdi-exttextouta) bem como plataformas Unicode nativas. A finalidade de **ExtTextOutWrapW** é executar a vinculação de fonte, conforme descrito em um comentário separado.
 
 ### <a name="dragqueryfile"></a>(DragQueryFile)
 
-A função **DragQueryFileWrapW** não permite que você consulte o comprimento de um arquivo na alça de descarte passando **NULL** como o parâmetro *lpszFile* . O MSLU não tem essas limitações.
+A **função DragQueryFileWrapW** não permite que você consulte o comprimento de um arquivo no controle de soltar passando **NULL** como o *parâmetro lpszFile.* O MSLU não tem essas limitações.
 
-### <a name="formatmessage"></a>FormatMessage
+### <a name="formatmessage"></a>(FormatMessage)
 
 Em plataformas ANSI nativas, os formatos na cadeia de caracteres não são convertidos de Unicode para ANSI. Por exemplo, o exemplo de código a seguir está em erro.
 
@@ -305,31 +305,31 @@ FormatMessageWrapW(FORMAT_MESSAGE_FROM_STRING,
 
 
 
-Este exemplo de código usa "! s!" . Em plataformas ANSI nativas, essa cadeia de caracteres é passada para a versão ANSI da função [**FormatMessage**](/windows/win32/api/winbase/nf-winbase-formatmessage) . Consequentemente, uma cadeia de caracteres ANSI é esperada em vez de uma cadeia de caracteres Unicode. Da mesma forma, o formato "%2" implica um argumento de cadeia de caracteres. Quando passado para a função de **FormatMessage** ANSI, ele é interpretado como uma cadeia de caracteres ANSI em vez de uma cadeia de caracteres Unicode. A cadeia de caracteres de formato correta é L "%1! ws! %2! WS! ". Isso imprime cadeias de caracteres corretamente em plataformas ANSI e Unicode.
+Este exemplo de código usa "!s!" . Em plataformas ANSI nativas, essa cadeia de caracteres é passada para a versão ANSI da [**função FormatMessage.**](/windows/win32/api/winbase/nf-winbase-formatmessage) Consequentemente, uma cadeia de caracteres ANSI é esperada em vez de uma cadeia de caracteres Unicode. Da mesma forma, o formato "%2" implica um argumento de cadeia de caracteres. Quando ele é passado para a função **FormatMessage** ANSI, ele é interpretado como uma cadeia de caracteres ANSI em vez de uma cadeia de caracteres Unicode. A cadeia de caracteres de formato correta é L"%1!ws! %2!ws!". Isso imprime cadeias de caracteres corretamente nas plataformas ANSI e Unicode.
 
-A função não dá suporte a "%0" Cadeia de caracteres de formato especial.
+A função não dá suporte ao "%0" cadeia de caracteres de formato especial.
 
 O MSLU não tem essas limitações.
 
 ### <a name="getclassinfo"></a>(GetClassInfo)
 
-Em plataformas ANSI nativas, os membros **lpszMenuName** e **LpszClassName** da estrutura [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) não são convertidos em Unicode e são sempre definidos como **NULL**. Além disso, o procedimento de janela retornado no membro **lpfnWndProc** da estrutura **WNDCLASS** não é convertido em Unicode e se refere a um procedimento de janela ANSI. O MSLU não tem essas limitações.
+Em plataformas ANSI nativas, os membros **lpszMenuName** e **lpszClassName** da estrutura [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) não são convertidos em Unicode e são sempre definidos como **NULL.** Além disso, o procedimento de janela retornado no membro **lpfnWndProc** da estrutura **WNDCLASS** não é convertido em Unicode e refere-se a um procedimento de janela ANSI. O MSLU não tem essas limitações.
 
-### <a name="menu"></a>AdicionarMenu
+### <a name="menu"></a>(Menu)
 
-No Shlwapi.dll versão 5,0, que acompanha o Windows 2000, as cadeias de caracteres do item de menu que contiverem caractere de tabulação ( \\ t) podem não ser exibidas corretamente. Essa limitação não se aplica a Shlwapi.dll versões 5,5 ou superiores. Isso significa que o Windows XP e os sistemas posteriores não estão sujeitos a essa limitação. O MSLU não tem essa limitação.
+Na Shlwapi.dll versão 5.0, que foi enviada com o Windows 2000, as cadeias de caracteres de item de menu que contêm caracteres de tabulação ( t) podem não ser exibidas \\ corretamente. Essa limitação não se aplica Shlwapi.dll versões 5.5 ou superior. Isso significa que Windows XP e sistemas posteriores não estão sujeitos a essa limitação. O MSLU não tem essa limitação.
 
-### <a name="menuiteminfo"></a>MenuItemInfo
+### <a name="menuiteminfo"></a>(MenuItemInfo)
 
-Essa função dá suporte apenas à versão do Microsoft Windows NT 4,0 da estrutura [**MENUITEMINFOW**](/windows/win32/api/winuser/ns-winuser-menuiteminfoa) . Essa estrutura não tem um membro **hbmpItem** . Além disso, a função não oferece suporte ao \_ sinalizador de bitmap MIIM. O MSLU não tem essas limitações.
+Essa função dá suporte apenas ao Microsoft Windows NT versão 4.0 da [**estrutura MENUITEMINFOW.**](/windows/win32/api/winuser/ns-winuser-menuiteminfoa) Essa estrutura não tem um **membro hbmpItem.** Além disso, a função não dá suporte ao sinalizador \_ BITMAP MIIM. O MSLU não tem essas limitações.
 
-### <a name="openfilename"></a>Da OPENFILENAME
+### <a name="openfilename"></a>(OpenFileName)
 
-O membro **cbSize** da estrutura [**OPENFILENAMEW**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) deve ser definido como sizeof (da OPENFILENAME \_ NT4W).
+O **membro cbSize** da estrutura [**OPENFILENAMEW**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) deve ser definido como sizeof(OPENFILENAME \_ NT4W).
 
-O membro **lpstrCustomFilter** da estrutura [**OPENFILENAMEW**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) deve ser definido como **nulo**.
+O **membro lpstrCustomFilter** da estrutura [**OPENFILENAMEW**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) deve ser definido como **NULL.**
 
-Os valores dos membros **nMaxFile** e **NMaxFileTitle** da estrutura [**OPENFILENAMEW**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) não devem exceder o \_ caminho máximo.
+Os valores dos **membros nMaxFile e** **nMaxFileTitle** da estrutura [**OPENFILENAMEW**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) não devem exceder MAX \_ PATH.
 
 Se o membro **lpfnHook** da estrutura [**OPENFILENAMEW**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) não for **nulo**, ele deverá se referir a um procedimento de gancho ANSI em plataformas ANSI nativas e um procedimento de gancho Unicode em plataformas Unicode nativas.
 
@@ -363,7 +363,7 @@ Os parâmetros devem ser definidos da seguinte maneira:
 
     
 
-    | Nome              | Valor      | Significado                          |
+    | Name              | Valor      | Significado                          |
     |-------------------|------------|----------------------------------|
     | \_EXECUTEIO TPS    | 0x00000001 | O mesmo que WT \_ EXECUTEINIOTHREAD.   |
     | \_LONGEXECTIME TPS | 0x00000008 | O mesmo que WT \_ EXECUTELONGFUNCTION. |
@@ -395,7 +395,7 @@ O MSLU não tem essas limitações.
 
 
 
-|                      |                                                                                                           |
+| Mensagem              | Descrição                                                                                               |
 |----------------------|-----------------------------------------------------------------------------------------------------------|
 | AddString CB \_        | (b) (f) (c)                                                                                               |
 | localização da CB \_       | (b) (f) (c)                                                                                               |
@@ -431,17 +431,17 @@ O MSLU não tem essas limitações.
 -   (a) a cadeia de caracteres ANSI que está sendo medida ou recuperada deve atender à seguinte condição: o comprimento da versão Unicode correspondente da cadeia de caracteres não pode exceder o comprimento da versão ANSI da cadeia de caracteres. Se essa condição não for atendida, o comprimento retornado será curto. Se não houver memória suficiente para determinar o comprimento da cadeia de caracteres Unicode, a função retornará zero, não o LB \_ Err ou CB \_ Err, como pode ser esperado.
 -   (b) se a conversão de cadeia de caracteres for necessária, todas as cadeias serão convertidas por meio da página de código do CP \_ ACP.
 
-    Essa função emprega caracteres de melhor ajuste e não executa a verificação padrão ao converter de Unicode em ANSI. Além disso, se a cadeia de caracteres não puder ser convertida de Unicode para ANSI, a função passará uma cadeia de caracteres nula para a função ANSI subjacente. Isso pode ocorrer, por exemplo, quando não há memória suficiente. A passagem de uma cadeia de caracteres nula pode fazer com que algumas funções falhem com um erro de parâmetro inválido, mas outras funções aceitam a cadeia de caracteres nula e a tratam como o parâmetro pretendido. Por exemplo, se ocorrer um erro quando o wrapper do WM \_ SetText tentar converter o título da janela para ANSI, a janela terá uma legenda vazia. A função não o notifica quando ocorrerem esses problemas. O MSLU não tem essas limitações.
+    Essa função emprega caracteres de melhor ajuste e não executa a verificação padrão ao converter de Unicode para ANSI. Além disso, se a cadeia de caracteres não puder ser convertida de Unicode para ANSI, a função passará uma cadeia de caracteres nula para a função ANSI subjacente. Isso pode ocorrer, por exemplo, quando não há memória suficiente. Passar uma cadeia de caracteres nula pode fazer com que algumas funções falhem com um erro de parâmetro inválido, mas outras funções aceitam a cadeia de caracteres nula e a tratam como o parâmetro pretendido. Por exemplo, se ocorrer um erro quando o wrapper WM SETTEXT tentar converter o título da janela em ANSI, a janela terá uma \_ legenda vazia. A função não notifica você quando esses problemas ocorrem. O MSLU não tem essas limitações.
 
--   (c) o identificador de janela especificado deve ser o identificador para um controle [ComboBox](../controls/combo-boxes.md) ou [ComboBoxEx](../controls/comboboxex-controls.md) . Se o identificador for para um controle ComboBox que tem o desenho proprietário e não foi criado com o estilo de [caixa de listagem](../controls/list-box-styles.md) , a tradução dessa mensagem falhará e poderá até falhar.
--   (d) o identificador de janela especificado deve ser o identificador para um controle ListBox. Se a ListBox for de desenho proprietário e não tiver sido criada com o estilo de [estilos da caixa de listagem](../controls/list-box-styles.md) , a tradução dessa mensagem falhará e poderá até falhar.
--   (e) se a conversão de cadeia de caracteres for necessária, todas as cadeias serão convertidas por meio da página de código do CP \_ ACP.
+-   (c) O alça de janela especificado deve ser o alça para um [controle ComboBox](../controls/combo-boxes.md) ou [ComboBoxEx.](../controls/comboboxex-controls.md) Se o handle for para um controle de caixa de combinação que é de desenho de proprietário e não foi criado com o estilo [Estilos](../controls/list-box-styles.md) de Caixa de Listagem, a conversão dessa mensagem falhará e poderá até mesmo falhar.
+-   (d) O alça de janela especificado deve ser o alça para um controle de caixa de listagem. Se a caixa de listagem for de desenho de proprietário e não tiver sido criada com o estilo [Estilos](../controls/list-box-styles.md) de Caixa de Listagem, a conversão dessa mensagem falhará e poderá até mesmo falhar.
+-   (e) Se a conversão de cadeia de caracteres for necessária, todas as cadeias de caracteres serão convertidas por meio da página de \_ código CP ACP.
 
-    Ao converter de ANSI em Unicode para saída, as funções de wrapper truncarão a cadeia de caracteres retornada se ela não couber no buffer fornecido. O valor de retorno para funções que retornam o número de caracteres copiados para o buffer ou o número de caracteres necessários para evitar truncamento refere-se ao número de caracteres ANSI copiados para o buffer ou exigidos pela função ANSI subjacente, não o número de caracteres Unicode copiados para o buffer fornecido pelo ou exigidos pelo aplicativo de chamada que chamou a função de wrapper. O MSLU não tem essa limitação. Para obter mais detalhes, consulte [Microsoft Layer for Unicode em sistemas Windows 95/98/me](/previous-versions/ms812865(v=msdn.10)).
+    Ao converter de ANSI para Unicode para saída, as funções wrapper truncarão a cadeia de caracteres retornada se ela não se ajustar ao buffer fornecido. O valor de retorno para funções que retornam o número de caracteres copiados para o buffer ou o número de caracteres necessários para evitar o truncamento refere-se ao número de caracteres ANSI copiados para o buffer ou exigidos pela função ANSI subjacente, não ao número de caracteres Unicode copiados para o buffer fornecido pelo ou exigidos do aplicativo de chamada que chamou a função wrapper. O MSLU não tem essa limitação. Para obter mais detalhes, [consulte Camada da Microsoft para Unicode Windows 95/98/me Systems](/previous-versions/ms812865(v=msdn.10)).
 
 ### <a name="settimerqueuetimer"></a>(SetTimerQueueTimer)
 
-A função **SHSetTimerQueueTimer** é ligeiramente diferente da função [**CreateTimerQueueTimer**](/windows/win32/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueuetimer) correspondente. A sintaxe dela é a seguinte:
+A **função SHSetTimerQueueTimer** é ligeiramente diferente da função [**CreateTimerQueueTimer**](/windows/win32/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueuetimer) correspondente. A sintaxe dela é a seguinte:
 
 ``` syntax
 HANDLE SHSetTimerQueueTimer(HANDLE hQueue,
@@ -453,42 +453,42 @@ HANDLE SHSetTimerQueueTimer(HANDLE hQueue,
                         DWORD dwFlags);
 ```
 
-Os parâmetros devem ser definidos da seguinte maneira:
+Os parâmetros devem ser definidos da seguinte forma:
 
--   O parâmetro *hQueue* deve ser definido como **NULL**, especificando a fila de temporizador padrão.
--   Os parâmetros *pfnCallback*, *pContext*, *dwDueTime* e *dwPeriod* têm os mesmos significados que os parâmetros de *retorno de chamada*, *parâmetro*, *DueTime* e *período* , respectivamente, de [**CreateTimerQueueTimer**](/windows/win32/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueuetimer).
--   O parâmetro *lpszLibrary* não é usado e deve ser definido como **NULL**.
--   O parâmetro *flags* dá suporte a apenas um subconjunto dos valores com suporte pelo [**CreateTimerQueueTimer**](/windows/win32/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueuetimer).
+-   O *parâmetro hQueue* deve ser definido como **NULL,** especificando a fila de temporizador padrão.
+-   Os parâmetros *pfnCallback*, *pContext*, *dwDueTime* e *dwPeriod* têm os mesmos significados que os parâmetros *Callback*, *Parameter*, *DueTime* e *Period,* respectivamente, de [**CreateTimerQueueTimer**](/windows/win32/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueuetimer).
+-   O *parâmetro lpszLibrary* não está sendo usada e deve ser definido como **NULL.**
+-   O *parâmetro Flags* dá suporte apenas a um subconjunto dos valores compatíveis com [**CreateTimerQueueTimer**](/windows/win32/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-createtimerqueuetimer).
 
     
 
-    | Nome              | Valor      | Significado                         |
+    | Name              | Valor      | Significado                         |
     |-------------------|------------|---------------------------------|
-    | \_EXECUTEIO TPS    | 0x00000001 | O mesmo que WT \_ EXECUTEINIOTHREAD   |
-    | \_LONGEXECTIME TPS | 0x00000008 | O mesmo que WT \_ EXECUTELONGFUNCTION |
+    | TPS \_ EXECUTEIO    | 0x00000001 | Mesmo que WT \_ EXECUTEINIOTHREAD   |
+    | TPS \_ LONGEXECTIME | 0x00000008 | O mesmo que WT \_ EXECUTELONGFUNCTION |
 
     
 
      
 
     > [!Note]  
-    > O sinalizador LONGEXECTIME de TPS não \_ tem o mesmo valor numérico que o sinalizador WT \_ EXECUTELONGFUNCTION. Ao usar **SHSetTimerQueueTimer**, o parâmetro *dwFlags* deve ser uma combinação de valores de TPS \_ \* , não valores de WT \_ \* .
+    > O sinalizador TPS \_ LONGEXECTIME não tem o mesmo valor numérico que o sinalizador WT \_ EXECUTELONGFUNCTION. Ao usar **SHSetTimerQueueTimer**, o parâmetro *dwFlags* deve ser uma combinação de valores TPS, não \_ \* valores \_ \* WT.
 
      
 
-**SHSetTimerQueueTimer** retorna o identificador do temporizador criado em caso de êxito e **NULL** caso contrário.
+**SHSetTimerQueueTimer** retorna o handle do temporizador criado em caso de êxito e **NULL** caso contrário.
 
-### <a name="shellexecuteex"></a>ShellExecuteEx
+### <a name="shellexecuteex"></a>(ShellExecuteEx)
 
-O membro **lpFile** da estrutura [**SHELLEXECUTEINFO**](/windows/win32/api/Shellapi/ns-shellapi-shellexecuteinfoa) passado nesse parâmetro somente da função pode não exceder os \_ caracteres do comprimento máximo da URL da Internet \_ \_ . Se o \_ sinalizador ver máscara \_ CLASSNAME for omitido, o membro **lpClass** deverá ser inicializado como **NULL**.
+O **membro lpFile** da estrutura [**SHELLEXECUTEINFO**](/windows/win32/api/Shellapi/ns-shellapi-shellexecuteinfoa) passada no único parâmetro dessa função pode não exceder os caracteres DE COMPRIMENTO DA URL DA INTERNET \_ \_ \_ MAX. Se o sinalizador SEE \_ MASK \_ CLASSNAME for omitido, o **membro lpClass** deverá ser inicializado como **NULL.**
 
 ### <a name="valueex"></a>(ValueEx)
 
-Somente os seguintes tipos de dados de registro têm suporte: REG \_ sz, Reg \_ expande \_ sz, REG \_ Binary e Reg \_ DWORD. Ao contrário dessas funções de wrapper, o MSLU também dá suporte ao REG \_ multi \_ Expand \_ sz.
+Há suporte apenas para os seguintes tipos de dados do Registro: REG \_ SZ, REG \_ EXPAND \_ SZ, REG \_ BINARY e REG \_ DWORD. Ao contrário dessas funções de wrapper, o MSLU também dá suporte a REG \_ MULTI \_ EXPAND \_ SZ.
 
 ### <a name="windowlong"></a>(WindowLong)
 
-Em plataformas ANSI nativas, a função não executa nenhuma tradução em nenhum dos longos de janela. Por exemplo, se você passar GWLP \_ WndProc, a função retornará o procedimento de janela ANSI, não uma conversão. O MSLU não tem essas limitações.
+Em plataformas ANSI nativas, a função não executa nenhuma tradução em nenhum dos longos períodos de janela. Por exemplo, se você passar GWLP WNDPROC, a função retornará o procedimento de janela \_ ANSI, não um thunk. O MSLU não tem essas limitações.
 
  
 

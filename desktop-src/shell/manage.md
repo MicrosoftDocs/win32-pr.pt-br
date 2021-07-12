@@ -4,12 +4,12 @@ ms.assetid: d9ffda6f-adc0-44a3-b410-e23bf5f4f165
 title: Gerenciando o sistema de arquivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 404b456ce1f26c128e6c3fc3bc9971672378a0d4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee0f3b47e17e691c540a9775f3b8588b311b9878
+ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296135"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113581614"
 ---
 # <a name="managing-the-file-system"></a>Gerenciando o sistema de arquivos
 
@@ -17,7 +17,7 @@ O Shell fornece várias maneiras de gerenciar sistemas de arquivos. O Shell forn
 
 -   Documentos HTML podem ser *conectados* a arquivos relacionados, como arquivos gráficos ou folhas de estilo. Quando o documento é movido ou copiado, os arquivos conectados também são movidos automaticamente ou copiados.
 -   Para sistemas que estão disponíveis para mais de um usuário, os arquivos podem ser gerenciados por usuário. Os usuários têm acesso fácil aos seus arquivos de dados, mas não aos arquivos que pertencem a outros usuários.
--   Se os arquivos de documento forem adicionados ou modificados, eles poderão ser adicionados à lista de documentos recentes do Shell. Quando o usuário clica no comando **documentos** no menu Iniciar, uma lista de links para os documentos é exibida.
+-   Se os arquivos de documento forem adicionados ou modificados, eles poderão ser adicionados à lista de documentos recentes do Shell. quando o usuário clica no comando **documentos** na menu Iniciar, uma lista de links para os documentos é exibida.
 
 Este documento discute como essas tecnologias de gerenciamento de arquivos funcionam. Em seguida, descreve como usar o Shell para mover, copiar, renomear e excluir arquivos e como gerenciar objetos na lixeira.
 
@@ -31,7 +31,7 @@ Este documento discute como essas tecnologias de gerenciamento de arquivos funci
 
 ## <a name="per-user-file-management"></a>Gerenciamento de arquivos Per-User
 
-O Shell do Windows 2000 permite que os arquivos sejam associados a um usuário específico para que os arquivos permaneçam ocultos de outros usuários. Em termos do sistema de arquivos, os arquivos são armazenados na pasta de perfil do usuário, normalmente C: \\ Documents and Settings \\ *nome de usuário* \\ em sistemas Windows 2000. Esse recurso permite que muitos indivíduos usem o mesmo computador, mantendo a privacidade de seus arquivos de outros usuários. Diferentes usuários podem ter programas diferentes disponíveis. Ele também fornece uma maneira simples para os administradores e aplicativos armazenarem coisas como arquivos de inicialização (. ini) ou de link (. lnk). Assim, os aplicativos podem preservar um estado diferente para cada usuário e recuperar facilmente esse estado em particular quando necessário. Também há uma pasta de perfil para armazenar informações comuns a todos os usuários.
+o Windows Shell 2000 permite que os arquivos sejam associados a um usuário específico para que os arquivos permaneçam ocultos de outros usuários. em termos do sistema de arquivos, os arquivos são armazenados na pasta de perfil do usuário, normalmente C: \\ documents e Configurações \\ *nome de usuário* \\ em sistemas Windows 2000. Esse recurso permite que muitos indivíduos usem o mesmo computador, mantendo a privacidade de seus arquivos de outros usuários. Diferentes usuários podem ter programas diferentes disponíveis. Ele também fornece uma maneira simples para os administradores e aplicativos armazenarem coisas como arquivos de inicialização (.ini) ou link (. lnk). Assim, os aplicativos podem preservar um estado diferente para cada usuário e recuperar facilmente esse estado em particular quando necessário. Também há uma pasta de perfil para armazenar informações comuns a todos os usuários.
 
 Como é inconveniente determinar qual usuário está conectado e onde seus arquivos estão localizados, as pastas padrão por usuário são pastas especiais e são identificadas por uma [**CSIDL**](csidl.md). Por exemplo, a CSIDl para a pasta arquivos de programas por usuário são os programas CSIDl \_ . Se seu aplicativo chamar [**SHGetFolderLocation**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderlocation) ou [**SHGetFolderPath**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderpatha) com um dos CSIDLs por usuário, a função retornará o ponteiro para uma PIDL (lista de identificadores de item) ou caminho apropriado para o usuário conectado no momento. Se seu aplicativo precisar recuperar o caminho ou PIDL da pasta de perfil, seu CSIDl será o **\_ perfil CSIDL**.
 
@@ -39,7 +39,7 @@ Como é inconveniente determinar qual usuário está conectado e onde seus arqui
 
 Um dos ícones padrão encontrados na área de trabalho é **meus documentos**. Quando você abre essa pasta, ela contém os arquivos de documento atuais do usuário. A instância de área de trabalho de meus documentos é uma pasta virtual — um alias para o local do sistema de arquivos usado para armazenar fisicamente os documentos do usuário — localizado imediatamente abaixo da área de trabalho na hierarquia de namespace.
 
-A finalidade das pastas meus documentos e minhas imagens é fornecer uma maneira direta e segura para que os usuários acessem seus arquivos de documento e imagem em um sistema que possa ter vários usuários. Cada usuário recebe pastas separadas do sistema de arquivos para seus arquivos. Por exemplo, o local da pasta documentos de um usuário no sistema de arquivos normalmente é algo como C: \\ Documents and Settings \\ *nome_de_usuário* \\ My Documents. Não há necessidade de que os usuários saibam nada sobre o local físico de suas pastas do sistema de arquivos. Eles simplesmente acessam seus arquivos por meio do ícone meus documentos.
+A finalidade das pastas meus documentos e minhas imagens é fornecer uma maneira direta e segura para que os usuários acessem seus arquivos de documento e imagem em um sistema que possa ter vários usuários. Cada usuário recebe pastas separadas do sistema de arquivos para seus arquivos. por exemplo, o local da pasta documentos de um usuário no sistema de arquivos normalmente é algo como C: \\ documents e Configurações \\ *nome de usuário* \\ My documents. Não há necessidade de que os usuários saibam nada sobre o local físico de suas pastas do sistema de arquivos. Eles simplesmente acessam seus arquivos por meio do ícone meus documentos.
 
 > [!Note]  
 > Meus documentos permite que um usuário acesse seus próprios arquivos, mas não aqueles de qualquer outro usuário. Se vários indivíduos usarem o mesmo computador, um administrador poderá bloquear os usuários fora da parte do sistema de arquivos onde os arquivos reais estão armazenados. Portanto, os usuários poderão trabalhar em seus próprios documentos por meio da pasta meus documentos, mas não em documentos que pertençam a outros usuários.
@@ -66,22 +66,96 @@ Se seu aplicativo precisar de acesso à pasta do sistema de arquivos real que co
 
 ## <a name="connected-files"></a>Arquivos conectados
 
-Documentos HTML geralmente têm vários arquivos gráficos associados, um arquivo de folha de estilos, vários arquivos do Microsoft JScript (compatíveis com a especificação de linguagem ECMA 262) e assim por diante. Ao mover ou copiar o documento HTML primário, normalmente, você também deseja mover ou copiar seus arquivos associados para evitar a interrupção dos links. Infelizmente, não houve uma maneira fácil até agora determinar quais arquivos estão relacionados a qualquer documento HTML específico, a não ser pela análise de seu conteúdo. Para aliviar esse problema, o Windows 2000 fornece uma maneira simples de *conectar* um documento HTML primário ao seu grupo de arquivos associados. Se a conexão de arquivo estiver habilitada, quando o documento for movido ou copiado, todos os seus arquivos conectados irão para ele.
+documentos HTML geralmente têm um número de arquivos gráficos associados, um arquivo de folha de estilos, vários arquivos do Microsoft JScript (compatíveis com a especificação de linguagem ECMA 262) e assim por diante. Ao mover ou copiar o documento HTML primário, normalmente, você também deseja mover ou copiar seus arquivos associados para evitar a interrupção dos links. Infelizmente, não houve uma maneira fácil até agora determinar quais arquivos estão relacionados a qualquer documento HTML específico, a não ser pela análise de seu conteúdo. para aliviar esse problema, Windows 2000 fornece uma maneira simples de *conectar* um documento HTML primário ao seu grupo de arquivos associados. Se a conexão de arquivo estiver habilitada, quando o documento for movido ou copiado, todos os seus arquivos conectados irão para ele.
 
-Para criar um grupo de arquivos conectados, o documento primário deve ter uma extensão de nome de arquivo. htm ou. html. Crie uma subpasta da pasta pai do documento primário. O nome da subpasta deve ser o nome do documento primário, menos a extensão. htm ou. html, seguida de uma das extensões listadas abaixo. As extensões usadas com mais frequência são ". Files" ou " \_ Files". Por exemplo, se o documento primário for denominado MyDoc.htm, nomear a subpasta " \_ arquivos MyDoc" definirá a subpasta como o contêiner para os arquivos conectados do documento. Se o documento primário for movido ou copiado, a subpasta e seus arquivos também serão movidos ou copiados.
+Para criar um grupo de arquivos conectados, o documento primário deve ter uma extensão de nome de arquivo .htm ou .html. Crie uma subpasta da pasta pai do documento primário. O nome da subpasta deve ser o nome do documento primário, menos a .htm ou .html extensão, seguido de uma das extensões listadas abaixo. As extensões usadas com mais frequência são ". Files" ou " \_ Files". Por exemplo, se o documento primário for denominado MyDoc.htm, nomear a subpasta " \_ arquivos MyDoc" definirá a subpasta como o contêiner para os arquivos conectados do documento. Se o documento primário for movido ou copiado, a subpasta e seus arquivos também serão movidos ou copiados.
 
 Para alguns idiomas, é possível usar um equivalente localizado de " \_ arquivos" para criar uma subpasta para arquivos conectados. A tabela a seguir lista as cadeias de caracteres válidas que podem ser acrescentadas a um nome de documento para criar uma subpasta arquivos conectados. Observe que algumas dessas cadeias de caracteres têm '-' como seu primeiro caractere em vez de ' \_ ' ou '. '.
 
 
 
-|              |               |                 |               |
-|--------------|---------------|-----------------|---------------|
-| " \_ archivos" | " \_ arquivos"  | " \_ befique"   | " \_ bylos"     |
-| "-Dateien"   | " \_ datoteke"  | " \_ dosyalar"    | " \_ elemei"    |
-| " \_ failid"   | " \_ falha"     | " \_ fajlovi"     | " \_ ficheiros" |
-| " \_ fichiers" | "-Filer"      | ". Files"        | " \_ arquivos"     |
-| " \_ arquivo"     | " \_ fitxers"   | " \_ fitxategiak" | " \_ pliki"     |
-| " \_ soubory"  | " \_ tiedostot" |                 |               |
+:::row:::
+   :::column span="":::
+      " \_ archivos"
+   :::column-end:::
+   :::column span="":::
+      " \_ arquivos"
+   :::column-end:::
+   :::column span="":::
+      " \_ befique"
+   :::column-end:::
+   :::column span="":::
+      " \_ bylos"
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      "-Dateien"
+   :::column-end:::
+   :::column span="":::
+      " \_ datoteke"
+   :::column-end:::
+   :::column span="":::
+      " \_ dosyalar"
+   :::column-end:::
+   :::column span="":::
+      " \_ elemei"
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      " \_ failid"
+   :::column-end:::
+   :::column span="":::
+      " \_ falha"
+   :::column-end:::
+   :::column span="":::
+      " \_ fajlovi"
+   :::column-end:::
+   :::column span="":::
+      " \_ ficheiros"
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      " \_ fichiers"
+   :::column-end:::
+   :::column span="":::
+      "-Filer"
+   :::column-end:::
+   :::column span="":::
+      ". Files"
+   :::column-end:::
+   :::column span="":::
+      " \_ arquivos"
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      " \_ arquivo"
+   :::column-end:::
+   :::column span="":::
+      " \_ fitxers"
+   :::column-end:::
+   :::column span="":::
+      " \_ fitxategiak"
+   :::column-end:::
+   :::column span="":::
+      " \_ pliki"
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      " \_ soubory"
+   :::column-end:::
+   :::column span="":::
+      " \_ tiedostot"
+   :::column-end:::
+   :::column span="":::
+   :::column-end:::
+   :::column span="":::
+   :::column-end:::
+:::row-end:::
 
 
 
@@ -237,9 +311,9 @@ Depois que a enumeração for concluída, o aplicativo atribuirá valores a uma 
 
 ## <a name="adding-files-to-the-shells-list-of-recent-documents"></a>Adicionando arquivos à lista de documentos recentes do Shell
 
-O Shell mantém uma lista de documentos recentemente adicionados ou modificados para cada usuário. O usuário pode exibir uma lista de links para esses arquivos clicando em documentos no menu iniciar. Assim como acontece com meus documentos, cada usuário tem um diretório do sistema de arquivos para manter os links reais. Para recuperar o PIDL do diretório recente do usuário atual, seu aplicativo pode chamar [**SHGetFolderLocation**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderlocation) com CSIDL \_ recente ou chamar [**SHGetFolderPath**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderpatha) para recuperar seu caminho.
+O Shell mantém uma lista de documentos recentemente adicionados ou modificados para cada usuário. o usuário pode exibir uma lista de links para esses arquivos clicando em documentos na menu Iniciar. Assim como acontece com meus documentos, cada usuário tem um diretório do sistema de arquivos para manter os links reais. Para recuperar o PIDL do diretório recente do usuário atual, seu aplicativo pode chamar [**SHGetFolderLocation**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderlocation) com CSIDL \_ recente ou chamar [**SHGetFolderPath**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderpatha) para recuperar seu caminho.
 
-Seu aplicativo pode enumerar o conteúdo da pasta recente usando as técnicas discutidas anteriormente neste documento. No entanto, um aplicativo não deve modificar o conteúdo da pasta como se fosse uma pasta normal do sistema de arquivos. Se isso ocorrer, a lista de documentos recentes do shell não será atualizada corretamente e as alterações não serão refletidas no menu iniciar. Em vez disso, para adicionar um link de documento à pasta recente de um usuário, seu aplicativo pode chamar [**SHAddToRecentDocs**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shaddtorecentdocs). O Shell adicionará um link à pasta do sistema de arquivos apropriada, bem como atualizando sua lista de documentos recentes e o menu iniciar. Você também pode usar essa função para limpar a pasta.
+Seu aplicativo pode enumerar o conteúdo da pasta recente usando as técnicas discutidas anteriormente neste documento. No entanto, um aplicativo não deve modificar o conteúdo da pasta como se fosse uma pasta normal do sistema de arquivos. se isso ocorrer, a lista de documentos recentes do Shell não será atualizada corretamente e as alterações não serão refletidas na menu Iniciar. Em vez disso, para adicionar um link de documento à pasta recente de um usuário, seu aplicativo pode chamar [**SHAddToRecentDocs**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shaddtorecentdocs). o Shell adicionará um link à pasta do sistema de arquivos apropriada, bem como atualizando sua lista de documentos recentes e o menu Iniciar. Você também pode usar essa função para limpar a pasta.
 
  
 

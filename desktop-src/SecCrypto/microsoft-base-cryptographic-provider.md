@@ -4,12 +4,12 @@ ms.assetid: c36025c5-a407-4a05-8780-23f8107730df
 title: Provedor criptográfico base da Microsoft
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dfc48060305337dd878dedcadca8cfed52bd2f34
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d53bd4b2f7faf140e57d25b54d3161b47dcaf740
+ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105796374"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113581884"
 ---
 # <a name="microsoft-base-cryptographic-provider"></a>Provedor criptográfico base da Microsoft
 
@@ -19,10 +19,10 @@ O algoritmo de chave pública RSA é usado para todas as operações de chave p�
 
 Para manter a compatibilidade com versões anteriores, a nova versão do provedor retém a designação da versão 1,0 do nome em Wincrypt. h. No entanto, a versão 2,0 deste provedor está sendo fornecida no momento. Para determinar a versão real do provedor em uso, chame [**CryptGetProvParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetprovparam) com o argumento *DwParam* definido como **PP \_ version**. Se 0x0200 for retornado em *pbData*, você terá a versão 2,0.
 
-|                |                     |
-|----------------|---------------------|
-| Tipo de provedor: | **PROV \_ RSA \_ completo** |
-| Nome do provedor: | **Prov de MS \_ Def \_**   |
+|                   | Valor            |
+|-------------------|------------------|
+| **Tipo de provedor** | PROV \_ RSA \_ completo  |
+| **Nome do provedor** | Prov de MS \_ Def \_    |
 
 
 

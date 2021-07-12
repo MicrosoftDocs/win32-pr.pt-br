@@ -4,12 +4,12 @@ ms.assetid: 87d0c865-8b29-439c-81aa-a40dc0034e3b
 title: Provedor criptográfico aprimorado da Microsoft
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cadaa0b6325dc7d855aa0b7eeb8d7ff5f114cfd6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9cf3b3b421e3151811da033e7536f334e3883487
+ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920981"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113581824"
 ---
 # <a name="microsoft-enhanced-cryptographic-provider"></a>Provedor criptográfico aprimorado da Microsoft
 
@@ -17,10 +17,10 @@ O provedor criptográfico aprimorado da Microsoft, chamado provedor avançado, d
 
 Para manter a compatibilidade com versões anteriores do provedor, o nome do provedor, conforme definido no arquivo de cabeçalho Wincrypt. h, retém a designação da versão 1,0. No entanto, a versão 2,0 deste provedor está sendo fornecida no momento. Para determinar a versão do provedor em uso, chame [**CryptGetProvParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetprovparam) com o argumento *DwParam* definido como **PP \_ version**. A versão 2,0 estará em uso se 0x0200 for retornado.
 
-|                |                        |
-|----------------|------------------------|
-| Tipo de provedor: | **PROV \_ RSA \_ completo**    |
-| Nome do provedor: | **\_Prov aprimorado da MS \_** |
+|                   | Valor               |
+|-------------------|---------------------|
+| **Tipo de provedor** | PROV \_ RSA \_ completo     |
+| **Nome do provedor** | \_Prov aprimorado da MS \_  |
 
 
 
