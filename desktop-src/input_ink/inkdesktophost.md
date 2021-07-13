@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - InkPresenterDesktop.idl
-ms.openlocfilehash: d5dac80a4ee09bb4b78a4d61ca0efa74e99babb9
-ms.sourcegitcommit: 5b98bf8c68922f8f03c14f793fbe17504900559c
+ms.openlocfilehash: 74eebdbdfdbe3a4018d63b1f2161687152ebb5cc
+ms.sourcegitcommit: 1f917afc149b5cc449a4a25a87de311e4842734b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "105764326"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113689219"
 ---
 # <a name="inkdesktophost-class"></a>Classe InkDesktopHost
 
@@ -50,14 +50,14 @@ Chame [<strong>CoCreateInstance</strong>](/windows/win32/api/combaseapi/nf-comba
 CoCreateInstance(__uuidof(InkDesktopHost), 
   nullptr, 
   CLSCTX_INPROC_SERVER, 
-  IID_PPV_ARGS(&amp;_spInkHost));
+  IID_PPV_ARGS(&_spInkHost));
 ```
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito | Valor |
 |---|---|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/> |
 | parâmetro<br/>                   | <dl> <dt>InkPresenterDesktop. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>InkPresenterDesktop. idl</dt> </dl> |
