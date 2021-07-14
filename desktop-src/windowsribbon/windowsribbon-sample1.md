@@ -1,38 +1,37 @@
 ---
 title: Exemplo de SimpleRibbon
-description: Este exemplo de código demonstra como implementar um aplicativo simples de faixa de medida do Windows.
+description: Este exemplo de código demonstra como implementar um aplicativo de faixa de opções Windows simples.
 ms.assetid: 9196ae63-ca9e-43ae-8b4c-a30f1ef700f0
 ms.topic: article
-ms.date: 05/31/2018
-ms.openlocfilehash: e5055d47db2d947778699d55bbae96649b9b45ef
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.date: 07/13/2021
+ms.openlocfilehash: b2a7ab939239bd3c0017dfeeeab1487bcb1dce26
+ms.sourcegitcommit: 63c93e0ad0b48d60b11008767196718feb475cb0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455775"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113691655"
 ---
 # <a name="simpleribbon-sample"></a>Exemplo de SimpleRibbon
 
-Este exemplo de código demonstra como implementar um aplicativo simples de faixa de medida do Windows.
+Este exemplo de código demonstra como implementar um aplicativo de faixa de opções Windows simples.
 
--   [Usage](#usage)
-    -   [Compilando o exemplo](#building-the-sample)
-    -   [Executando o exemplo](#running-the-sample)
--   [Suporte](#support)
--   [Requisitos mínimos](#minimum-requirements)
+- [Usage](#usage)
+  - [Compilando o exemplo](#building-the-sample)
+  - [Executando o exemplo](#running-the-sample)
+- [Suporte](#support)
+- [Requisitos mínimos](#minimum-requirements)
 
 ## <a name="usage"></a>Uso
 
-O exemplo de SimpleRibbon pode ser baixado como um projeto de Microsoft Visual Studio autônomo do [centro de download da Microsoft](https://www.microsoft.com/DOWNLOADS/en/default.aspx) ou instalado como parte do [SDK (Software Development Kit) do Windows](https://msdn.microsoft.com/windows/bb980924.aspx).
+Os exemplos da estrutura Windows Ribbon podem ser baixados como projetos Microsoft Visual Studio autônomos do Centro de Download da [Microsoft](https://www.microsoft.com/download/details.aspx?id=9620) ou instalados como parte do [SDK (Software Development Kit)](https://developer.microsoft.com/windows/downloads/sdk-archive/)do Windows.
 
--   Centro de download da Microsoft: [exemplos de faixa](https://www.microsoft.com/downloads/details.aspx?familyid=141e13e8-b10b-4356-aaa5-609b2981574a&displaylang=en) de medida do Windows
--   SDK (Software Development Kit) do Windows (caminho de instalação padrão):% ProgramFiles% \\ Microsoft SDKs \\ Windows \\ \[ número de versão \] \\ amostras \\ WinUI \\ WindowsRibbon \\ SimpleRibbon
+- Windows Software Development Kit (SDK) (caminho de instalação padrão): %ProgramFiles% SDKs da Microsoft Windows número de versão \\ \\ \\ \[ \] \\ Exemplos \\ winui \\ WindowsRibbon \\ SimpleRibbon
 
 ### <a name="building-the-sample"></a>Compilando o exemplo
 
-Baixe o exemplo no seu disco rígido.
+Baixe o exemplo.
 
-Instale o SDK do Windows para o Windows 7 e abra sua janela de comando de ambiente de compilação. No menu Iniciar, aponte para Todos os Programas, Microsoft Windows SDK e clique em CMD Shell.
+Instale o Windows SDK do Windows 7 e abra sua janela de comando do ambiente de build. No menu Iniciar, aponte para Todos os Programas, Microsoft Windows SDK e clique em CMD Shell.
 
 Para compilar o exemplo da janela de comando do ambiente de compilação, vá para o diretório fonte do exemplo. No prompt de comando, digite MSBUILD.
 
@@ -40,13 +39,13 @@ Para compilar o exemplo no Microsoft Visual Studio, carregue a solução or arqu
 
 ### <a name="running-the-sample"></a>Executando o exemplo
 
-Para executar o exemplo na janela de comando compilar ambiente, execute os arquivos. exe na pasta de \\ depuração bin ou \\ solte contida na pasta de origem de exemplo.
+Para executar o exemplo na janela de comando do ambiente de build, execute os arquivos .exe na pasta Bin Debug ou Bin Release contida na \\ \\ pasta de origem de exemplo.
 
 Para executar o exemplo compilado com a depuração no Visual Studio, pressione F5.
 
 ## <a name="support"></a>Suporte
 
-O [Fórum de desenvolvimento da faixa](https://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=windowsribbondevelopment) de Dasgem do Windows está disponível para discutir tópicos e fazer perguntas relacionadas ao desenvolvimento de aplicativos da faixa de de uma Windows.
+O [Fórum Windows de Desenvolvimento](https://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=windowsribbondevelopment) da Faixa de Opções está disponível para discutir tópicos e fazer perguntas relacionadas ao desenvolvimento de Windows faixa de opções.
 
 ## <a name="minimum-requirements"></a>Requisitos mínimos
 
@@ -54,18 +53,18 @@ O [Fórum de desenvolvimento da faixa](https://social.msdn.microsoft.com/Forums/
 
 | Requisito | Valor |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 7<br/> Windows Vista com Service Pack 2 (SP2) e [atualização de plataforma para Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx)<br/>         |
-| Servidor mínimo com suporte | Windows Server 2008 R2<br/> Windows Server 2008 com SP2 e [atualização de plataforma para Windows Server 2008](https://msdn.microsoft.com/library/dd378748.aspx)<br/> |
+| Cliente mínimo com suporte | Windows 7<br/> Windows Vista com Service Pack 2 (SP2) e [Atualização de plataforma para Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx)<br/>         |
+| Servidor mínimo com suporte | Windows Server 2008 R2<br/> Windows Server 2008 com SP2 e [Atualização de Plataforma para Windows Server 2008](https://msdn.microsoft.com/library/dd378748.aspx)<br/> |
 | SDK do Windows              | 7.0                                                                                                                                                                      |
 | Visual Studio            | 2008                                                                                                                                                                     |
-| Cabeçalhos e arquivos IDL     | uiribbon. h, uiribbon. idl                                                                                                                                                 |
+| Arquivos de IDL e de header     | uiribbon.h, uiribbon.idl                                                                                                                                                 |
 
 
 
  
 
 > [!Note]  
-> A [atualização de plataforma para o Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx) e [a atualização de plataforma para Windows Server 2008](https://msdn.microsoft.com/library/dd378748.aspx) são conjuntos de bibliotecas de tempo de execução que permitem aos desenvolvedores direcionar aplicativos de faixa de opções do Windows para o Windows Vista e o Windows Server 2008. As atualizações de plataforma estarão disponíveis para todos os clientes do Windows Vista e do Windows Server 2008 por meio do Windows Update. Aplicativos de terceiros que exigem [atualização de plataforma para Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx) ou [atualização de plataforma para Windows Server 2008](https://msdn.microsoft.com/library/dd378748.aspx) podem ter Windows Update detectar se a atualização necessária está instalada; Se não estiver, Windows Update será baixado e instalado em segundo plano.
+> A Atualização de Plataforma para [Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx) e Atualização de Plataforma para o Windows [Server 2008](https://msdn.microsoft.com/library/dd378748.aspx) são conjuntos de bibliotecas em tempo de run time que permitem aos desenvolvedores direcionar aplicativos da Faixa de Opções do Windows para o Windows Vista e o Windows Server 2008. As atualizações da plataforma estarão disponíveis para todos os clientes Windows Vista e Windows Server 2008 por meio Windows Update. Aplicativos de terceiros que exigem a Atualização de Plataforma para [Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx) ou Atualização de Plataforma para o Windows [Server 2008](https://msdn.microsoft.com/library/dd378748.aspx) podem fazer com que Windows Atualização detecte se o atualizado necessário está instalado; se não estiver, Windows Update baixará e o instalará em segundo plano.
 
  
 
