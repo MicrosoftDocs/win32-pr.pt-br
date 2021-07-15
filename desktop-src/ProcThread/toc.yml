@@ -1,7 +1,7 @@
 - name: Processos e threads
   href: processes-and-threads.md
   items:
-    - name: Novidades em processos e threads
+    - name: O que há de novo em processos e threads
       href: what-s-new-in-processes-and-threads.md
     - name: Sobre Processos e Threads
       href: about-processes-and-threads.md
@@ -13,7 +13,7 @@
               href: advantages-of-multitasking.md
             - name: Quando usar multitarefa
               href: when-to-use-multitasking.md
-            - name: Considerações sobre multitarefa
+            - name: Considerações sobre multitarefas
               href: multitasking-considerations.md
         - name: Agendamento
           href: scheduling.md
@@ -30,18 +30,18 @@
               href: multiple-processors.md
             - name: Suporte ao NUMA
               href: numa-support.md
-            - name: Serviço de Ordenação de Threads
+            - name: Serviço de ordenação de threads
               href: thread-ordering-service.md
-            - name: Serviço de Agendador de Classes Multimídia
+            - name: Serviço do Agendador de classes de multimídia
               href: multimedia-class-scheduler-service.md
               items:
-                - name: API Real-Time fila de trabalho
+                - name: API de fila de trabalho Real-Time
                   href: platform-work-queue-api.md
                   items:
                     - name: IRtwqAsyncCallback
                       href: /windows/desktop/api/rtworkq/nn-rtworkq-irtwqasynccallback
                       items:
-                        - name: Método GetParameters
+                        - name: Método Parameters
                           href: /windows/desktop/api/rtworkq/nf-rtworkq-irtwqasynccallback-getparameters
                         - name: Método Invoke
                           href: /windows/desktop/api/rtworkq/nf-rtworkq-irtwqasynccallback-invoke
@@ -139,14 +139,16 @@
                       href: /windows/desktop/api/RTWorkQ/nf-rtworkq-rtwqunregisterplatformfrommmcss
             - name: Grupos de processadores
               href: processor-groups.md
+            - name: Qualidade de Serviço
+              href: quality-of-service.md
         - name: Vários threads
           href: multiple-threads.md
           items:
             - name: Tamanho da pilha de threads
               href: thread-stack-size.md
-            - name: Identificadores e identificadores de thread
+            - name: Manipuladores e identificadores de thread
               href: thread-handles-and-identifiers.md
-            - name: Suspender a execução do thread
+            - name: Suspendendo a execução do thread
               href: suspending-thread-execution.md
             - name: Sincronizando a execução de vários threads
               href: synchronizing-execution-of-multiple-threads.md
@@ -154,37 +156,37 @@
               href: multiple-threads-and-gdi-objects.md
             - name: Armazenamento local de thread
               href: thread-local-storage.md
-            - name: Criando o Windows em threads
+            - name: criando Windows em threads
               href: creating-windows-in-threads.md
-            - name: Encerrando um thread
+            - name: Finalizando um thread
               href: terminating-a-thread.md
             - name: Segurança de thread e direitos de acesso
               href: thread-security-and-access-rights.md
         - name: Processos filho
           href: child-processes.md
           items:
-            - name: Definindo propriedades da janela usando STARTUPINFO
+            - name: Definindo propriedades de janela usando STARTUPINFO
               href: setting-window-properties-using-startupinfo.md
-            - name: Identificadores e identificadores de processo
+            - name: Manipuladores de processo e identificadores
               href: process-handles-and-identifiers.md
             - name: Enumeração de processo
               href: process-enumeration.md
-            - name: Obtendo informações de processo adicionais
+            - name: Obtendo informações adicionais sobre o processo
               href: obtaining-additional-process-information.md
             - name: Herança
               href: inheritance.md
             - name: Variáveis de ambiente
               href: environment-variables.md
-            - name: Encerrando um processo
+            - name: Finalizando um processo
               href: terminating-a-process.md
             - name: Conjunto de trabalho do processo
               href: process-working-set.md
-            - name: Processar direitos de acesso e segurança
+            - name: Direitos de acesso e segurança do processo
               href: process-security-and-access-rights.md
         - name: Pools de threads
           href: thread-pools.md
           items:
-            - name: API do Pool de Threads
+            - name: API do pool de threads
               href: thread-pool-api.md
             - name: Pooling de thread
               href: thread-pooling.md
@@ -193,13 +195,13 @@
           items:
             - name: Trabalhos aninhados
               href: nested-jobs.md
-            - name: Segurança e direitos de acesso do objeto de trabalho
+            - name: Segurança do objeto de trabalho e direitos de acesso
               href: job-object-security-and-access-rights.md
         - name: Conjuntos de CPU
           href: cpu-sets.md
         - name: Fibras
           href: fibers.md
-        - name: User-Mode agendamento
+        - name: Agendamento de User-Mode
           href: user-mode-scheduling.md
     - name: Usando processos e threads
       href: using-processes-and-threads.md
@@ -413,7 +415,7 @@
               href: /windows/desktop/api//rrascfg/nf-rrascfg-ieapproviderconfig-initialize
             - name: Getenvironmentvariable
               href: /windows/desktop/api/WinBase/nf-winbase-getenvironmentvariable
-            - name: Getexitcodeprocess
+            - name: GetExitCodeProcess
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess
             - name: GetExitCodeThread
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodethread
@@ -683,17 +685,17 @@
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-terminateprocess
             - name: TerminateThread
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-terminatethread
-            - name: Threadproc
+            - name: ThreadProc
               href: /previous-versions/windows/desktop/legacy/ms686736(v=vs.85)
-            - name: Timercallback
+            - name: TimerCallback
               href: /previous-versions/windows/desktop/legacy/ms686790(v=vs.85)
-            - name: Tlsalloc
+            - name: TlsAlloc
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc
-            - name: Tlsfree
+            - name: TlsFree
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsfree
-            - name: Tlsgetvalue
+            - name: TlsGetValue
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue
-            - name: Tlssetvalue
+            - name: TlsSetValue
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlssetvalue
             - name: TpInitializeCallbackEnviron
               href: /windows/desktop/api/winnt/nf-winnt-tpinitializecallbackenviron
@@ -727,9 +729,9 @@
               href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-updateprocthreadattribute
             - name: UserHandleGrantAccess
               href: /windows/desktop/api/Winuser/nf-winuser-userhandlegrantaccess
-            - name: Waitcallback
+            - name: WaitCallback
               href: /previous-versions/windows/desktop/legacy/ms687017(v=vs.85)
-            - name: Waitforinputidle
+            - name: WaitForInputIdle
               href: /windows/desktop/api/Winuser/nf-winuser-waitforinputidle
             - name: WaitForThreadpoolIoCallbacks
               href: /windows/desktop/api/threadpoolapiset/nf-threadpoolapiset-waitforthreadpooliocallbacks
@@ -739,7 +741,7 @@
               href: /windows/desktop/api/threadpoolapiset/nf-threadpoolapiset-waitforthreadpoolwaitcallbacks
             - name: WaitForThreadpoolWorkCallbacks
               href: /windows/desktop/api/threadpoolapiset/nf-threadpoolapiset-waitforthreadpoolworkcallbacks
-            - name: Winexec
+            - name: WinExec
               href: /windows/desktop/api/WinBase/nf-winbase-winexec
             - name: WorkCallback
               href: /previous-versions/windows/desktop/legacy/ms687396(v=vs.85)
