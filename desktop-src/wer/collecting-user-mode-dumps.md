@@ -1,21 +1,21 @@
 ---
 title: Coletando despejos de User-Mode
-description: A partir do Windows Server 2008 e do Windows Vista com Service Pack 1 (SP1), o Relatório de Erros do Windows (WER) pode ser configurado para que os despejos completos do modo de usuário sejam coletados e armazenados localmente após a falha de um aplicativo de modo de usuário.
+description: a partir do Windows Server 2008 e Windows Vista com Service Pack 1 (SP1), Relatório de Erros do Windows (WER) podem ser configurados para que os despejos completos do modo de usuário sejam coletados e armazenados localmente após a falha de um aplicativo de modo de usuário.
 ms.assetid: 8dad892b-04df-4aeb-b6c4-82f7676d382a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b7b1e7850e84d9fa6c8d10953d23640b41b1bc6
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 6e6291d3ad8dfeb641582a93f6789ca7844594ad
+ms.sourcegitcommit: 892997f4126d44df413286074e08a9c6065313ec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103823673"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114300181"
 ---
 # <a name="collecting-user-mode-dumps"></a>Coletando despejos de User-Mode
 
-A partir do Windows Server 2008 e do Windows Vista com Service Pack 1 (SP1), o Relatório de Erros do Windows (WER) pode ser configurado para que os despejos completos do modo de usuário sejam coletados e armazenados localmente após a falha de um aplicativo de modo de usuário. Os aplicativos que fazem seu próprio relatório de falhas personalizado, incluindo aplicativos .NET, não têm suporte nesse recurso.
+a partir do Windows Server 2008 e Windows Vista com Service Pack 1 (SP1), Relatório de Erros do Windows (WER) podem ser configurados para que os despejos completos do modo de usuário sejam coletados e armazenados localmente após a falha de um aplicativo de modo de usuário. Os aplicativos que fazem seu próprio relatório de falhas personalizado, incluindo aplicativos .NET, não têm suporte nesse recurso.
 
-Esse recurso não está habilitado por padrão. Habilitar o recurso requer privilégios de administrador. Para habilitar e configurar o recurso, use os seguintes valores de registro em **HKEY \_ local \_ Machine \\ software \\ Microsoft \\ Windows \\ relatório de erros do Windows \\ LocalDumps** Key.
+Esse recurso não está habilitado por padrão. Habilitar o recurso requer privilégios de administrador. para habilitar e configurar o recurso, use os seguintes valores de registro em **HKEY \_ LOCAL \_ MACHINE \\ SOFTWARE \\ Microsoft \\ Windows \\ Relatório de Erros do Windows chave \\ LocalDumps** .
 
 <table>
 <colgroup>
@@ -60,7 +60,7 @@ Esse recurso não está habilitado por padrão. Habilitar o recurso requer privi
 <td><strong>CustomDumpFlags</strong></td>
 <td>As opções de despejo personalizado a serem usadas. Esse valor é usado somente quando <strong>dumptype</strong> é definido como 0.<br/> As opções são uma combinação de bits de bit de <a href="/windows/desktop/api/minidumpapiset/ne-minidumpapiset-minidump_type"><strong>MINIDUMP_TYPE</strong></a> valores de enumeração.<br/></td>
 <td>REG_DWORD</td>
-<td><code>MiniDumpWithDataSegs | MiniDumpWithUnloadedModules | MiniDumpWithProcessThreadData.</code></td>
+ <td><code>0x00000121</code> (<code>MiniDumpWithDataSegs | MiniDumpWithUnloadedModules | MiniDumpWithProcessThreadData == 0x00000001 | 0x00000020 | 0x00000100)</code></td>
 </tr>
 </tbody>
 </table>
@@ -68,7 +68,7 @@ Esse recurso não está habilitado por padrão. Habilitar o recurso requer privi
 >[!NOTE]
 > Um despejo de memória não é coletado quando você define a [depuração automática para falhas do **aplicativo**](../debug/configuring-automatic-debugging.md#configuring-automatic-debugging-for-application-crashes). 
 
-Esses valores de registro representam as configurações globais. Você também pode fornecer configurações por aplicativo que substituem as configurações globais. Para criar uma configuração por aplicativo, crie uma nova chave para seu aplicativo em **HKEY \_ local \_ Machine \\ software \\ Microsoft \\ Windows \\ relatório de erros do Windows \\ LocalDumps** (por exemplo, **HKEY \_ local \_ Machine \\ software \\ Microsoft \\ Windows \\ relatório de erros do Windows \\ LocalDumps \\MyApplication.exe**). Adicione as configurações de despejo na chave de **MyApplication.exe** . Se o aplicativo falhar, o WER lerá primeiro as configurações globais e substituirá as configurações pelas configurações específicas do aplicativo.
+Esses valores de registro representam as configurações globais. Você também pode fornecer configurações por aplicativo que substituem as configurações globais. para criar uma configuração por aplicativo, crie uma nova chave para seu aplicativo em **hkey \_ local \_ machine \\ software \\ microsoft \\ Windows \\ Relatório de Erros do Windows \\ LocalDumps** (por exemplo, **hkey \_ local \_ machine \\ software \\ microsoft \\ Windows \\ Relatório de Erros do Windows \\ LocalDumps \\MyApplication.exe**). Adicione as configurações de despejo na chave de **MyApplication.exe** . Se o aplicativo falhar, o WER lerá primeiro as configurações globais e substituirá as configurações pelas configurações específicas do aplicativo.
 
 Depois que um aplicativo falha e antes do encerramento, o sistema verificará as configurações do registro para determinar se um despejo local deve ser coletado. Após a conclusão da coleta de despejo, o aplicativo terá permissão para ser encerrado normalmente. Se o aplicativo der suporte à recuperação, o despejo local será coletado antes que o retorno de chamada de recuperação seja chamado.
 
