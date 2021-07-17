@@ -1,33 +1,33 @@
 ---
-description: Recupere dados de evento com formato MOF (MOF) ao consumir eventos. Para consumir dados específicos do evento, o consumidor deve saber o formato dos dados do evento.
+description: Recuperar dados de evento com Managed Object Format (MOF) durante o consumo de eventos. Para consumir dados específicos do evento, o consumidor deve saber o formato dos dados do evento.
 ms.assetid: 13512236-c416-43ba-bf36-b05c5c08d6c9
-title: Recuperando dados de evento usando o MOF
+title: Recuperando dados de evento usando MOF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8752d7a4dc71ddb7b5a5dbc39e93c5fe16bb652
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 2f6086c878a0e98c0451d1ba2f1e11e2cd0e9016
+ms.sourcegitcommit: b3839bea8d55c981d53cb8802d666bf49093b428
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395011"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114373135"
 ---
-# <a name="retrieving-event-data-using-mof"></a>Recuperando dados de evento usando o MOF
+# <a name="retrieving-event-data-using-mof"></a>Recuperando dados de evento usando MOF
 
-Para consumir dados específicos do evento, o consumidor deve saber o formato dos dados do evento. Se o provedor usava o MOF para publicar o formato dos dados do evento, você poderá usar a classe MOF para analisar os dados do evento. Todos os eventos de kernel usam o MOF para publicar o formato dos dados do evento. Para obter informações sobre como publicar eventos, consulte [publicando seu esquema de evento](publishing-your-event-schema.md).
+Para consumir dados específicos do evento, o consumidor deve saber o formato dos dados do evento. Se o provedor usou MOF para publicar o formato dos dados do evento, você pode usar a classe MOF para analisar os dados do evento. Todos os eventos de kernel usam MOF para publicar o formato dos dados do evento. Para obter informações sobre como publicar eventos, [consulte Publicando seu esquema de evento](publishing-your-event-schema.md).
 
-A análise dos dados de evento requer o uso da API da WMI (infraestrutura de gerenciamento do Windows). O namespace do ETW em que os provedores publicam sua classe MOF é o \\ WMI raiz. O namespace do ETW contém três tipos de classes MOF: a classe MOF do provedor, a classe MOF do evento e a classe do tipo de evento MOF. A classe MOF de evento agrupa logicamente uma ou mais classes MOF de tipo de evento. A classe MOF de tipo de evento define os dados de evento reais.
+A análise dos dados do evento requer o uso da API Windows WMI (Infraestrutura de Gerenciamento de Dados). O namespace ETW em que os provedores publicam sua classe MOF é \\ o wmi raiz. O namespace ETW contém três tipos de classes MOF: a classe MOF do provedor, a classe MOF de evento e a classe MOF do tipo de evento. A classe MOF de evento grupos logicamente uma ou mais classes MOF de tipo de evento. A classe MOF do tipo de evento define os dados reais do evento.
 
-Uma classe MOF de evento contém um qualificador de classe **GUID** cujo valor deve corresponder ao valor no membro **header. GUID** da estrutura de [**\_ rastreamento de eventos**](/windows/win32/api/evntrace/ns-evntrace-event_trace) . Para garantir que você tenha a versão correta da classe, compare também o qualificador de classe **EventVersion** ao membro **header. class. Version** da estrutura de **\_ rastreamento de eventos** .
+Uma classe MOF de evento contém um **qualificador** de classe Guid cujo valor deve corresponder ao valor no membro **Header.Guid** da estrutura [**EVENT \_ TRACE.**](/windows/win32/api/evntrace/ns-evntrace-event_trace) Para garantir que você tenha a versão correta da classe, compare também o qualificador de classe **EventVersion** com o membro **Header.Class.Version** da estrutura **EVENT \_ TRACE.**
 
-Depois de encontrar a classe de evento correta, enumere suas classes de tipo de evento filho para localizar a classe que contém o formato dos dados do evento. A classe de tipo de evento correta contém um qualificador de classe **EventType** cujo valor corresponde ao valor no membro **header. classe. Type** da estrutura de [**\_ rastreamento de eventos**](/windows/win32/api/evntrace/ns-evntrace-event_trace) .
+Depois de encontrar a classe de evento correta, enumere suas classes de tipo de evento filho para encontrar a classe que contém o formato dos dados do evento. A classe de tipo de evento correta contém um qualificador **de classe EventType** cujo valor corresponde ao valor no membro **Header.Class.Type** da estrutura [**EVENT \_ TRACE.**](/windows/win32/api/evntrace/ns-evntrace-event_trace)
 
-Em seguida, você pode usar a API do WMI para enumerar as propriedades da classe MOF. Use os qualificadores e o tipo de dados de cada propriedade para determinar o tamanho do elemento de dados nos dados de evento a serem lidos e como formatá-lo. Para obter uma lista de qualificadores MOF aos quais o ETW dá suporte, consulte [qualificadores MOF de rastreamento de eventos](event-tracing-mof-qualifiers.md).
+Em seguida, você pode usar a API WMI para enumerar as propriedades da classe MOF. Use os qualificadores e o tipo de dados de cada propriedade para determinar o tamanho do elemento de dados nos dados do evento a ser lido e como formatá-lo. Para ver uma lista de qualificadores MOF compatíveis com o ETW, consulte [Qualificadores MOF de](event-tracing-mof-qualifiers.md)Rastreamento de Eventos .
 
-Como o ETW não força um alinhamento entre valores de dados de evento, typecasting ou atribuindo o valor diretamente de um buffer pode causar uma falha de alinhamento; Você não deve criar uma estrutura da classe MOF e tentar usá-la para consumir dados de evento. Por exemplo, se você tiver um caractere seguido por ULONGLONG, o ULONGLONG não será alinhado a um limite de 8 bytes, portanto, uma atribuição causaria uma exceção de alinhamento. (Em computadores de 64 bits, isso ocorre com mais frequência.) Por esse motivo, você deve usar CopyMemory para copiar os dados do buffer para uma variável local. Além disso, se o evento for revisado posteriormente, o consumidor poderá não funcionar se você tentar usar uma estrutura.
+Como o ETW não força um alinhamento entre valores de dados de evento, a digitação ou a atribuição do valor diretamente de um buffer pode causar uma falha de alinhamento; você não deve criar uma estrutura da classe MOF e tentar usá-la para consumir dados de evento. Por exemplo, se você tiver um caractere seguido por ULONGLONG, o ULONG não será alinhado a um limite de 8 byte, portanto, uma atribuição causará uma exceção de alinhamento. (Em computadores de 64 bits, isso acontece com mais frequência.) Por esse motivo, você deve usar CopyMemory para copiar os dados do buffer para uma variável local. Além disso, se o evento for revisado posteriormente, o consumidor poderá não funcionar se você tentar usar uma estrutura.
 
-A partir do Windows Vista, você é incentivado a usar as funções auxiliares de dados de rastreamento (TDH) para consumir eventos que foram publicados usando classes MOF. Para obter detalhes, consulte [recuperando dados de evento usando TDH](retrieving-event-data-using-tdh.md).
+Começando com Windows Vista, você é incentivado a usar as funções de TDH (auxiliar de dados de rastreamento) para consumir eventos que foram publicados usando classes MOF. Para obter detalhes, [consulte Recuperando dados de evento usando TDH](retrieving-event-data-using-tdh.md).
 
-O exemplo a seguir mostra como consumir eventos que são definidos por uma classe MOF.
+O exemplo a seguir mostra como consumir eventos definidos por uma classe MOF.
 
 
 ```C++
@@ -600,7 +600,7 @@ BOOL GetPropertyList(IWbemClassObject* pClass, PROPERTY_LIST** ppProperties, DWO
 
     // Retrieve the property names.
 
-    hr = pClass->GetNames(NULL, WBEM_FLAG_LOCAL_ONLY, NULL, &pNames);
+    hr = pClass->GetNames(NULL, WBEM_FLAG_NONSYSTEM_ONLY, NULL, &pNames);
     if (pNames)
     {
         *pPropertyCount = pNames->rgsabound->cElements;
@@ -654,6 +654,10 @@ BOOL GetPropertyList(IWbemClassObject* pClass, PROPERTY_LIST** ppProperties, DWO
                 j = var.intVal - 1;
                 VariantClear(&var);
                 *(*ppPropertyIndex+j) = i;
+            }
+            else if (WBEM_E_NOT_FOUND == hr)
+            {
+                continue; // Ignore property without WmiDataId
             }
             else
             {

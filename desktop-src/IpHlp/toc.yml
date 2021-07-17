@@ -1,9 +1,9 @@
 - name: Auxiliar de IP
   href: ip-helper-start-page.md
   items:
-    - name: Novidades no Auxiliar de IP
+    - name: O que há de novo no auxiliar de IP
       href: what-s-new-in-ip-helper.md
-    - name: Sobre o Auxiliar de IP
+    - name: Sobre o auxiliar de IP
       href: about-ip-helper.md
       items:
         - name: Recuperando informações sobre a configuração de rede
@@ -16,7 +16,7 @@
           href: managing-ip-addresses.md
         - name: Usando o protocolo de resolução de endereço
           href: using-the-address-resolution-protocol.md
-        - name: Recuperando informações sobre o protocolo da Internet e o protocolo de mensagem de controle da Internet
+        - name: Recuperando informações sobre o protocolo de Internet e o protocolo de mensagem de controle da Internet
           href: retrieving-information-on-the-internet-protocol-and-the-internet-control-message-protocol.md
         - name: Gerenciando o roteamento
           href: managing-routing.md
@@ -24,23 +24,23 @@
           href: receiving-notification-of-network-events.md
         - name: Recuperando informações sobre o protocolo de controle de transmissão e o protocolo de datagrama do usuário
           href: retrieving-information-about-the-transmission-control-protocol-and-the-user-datagram-protocol.md
-    - name: Usando o Auxiliar de IP
+    - name: Usando o auxiliar de IP
       href: using-ip-helper.md
       items:
-        - name: Ponto de Partida com o Auxiliar de IP
+        - name: Introdução com auxiliar de IP
           href: getting-started-with-ip-helper.md
           items:
             - name: Criando um aplicativo auxiliar de IP básico
               href: creating-a-basic-ip-helper-application.md
             - name: Recuperando informações usando GetNetworkParams
               href: retrieving-information-using-getnetworkparams.md
-            - name: Gerenciando adaptadores de rede usando GetAdaptersInfo
+            - name: Gerenciando adaptadores de rede usando o GetAdaptersInfo
               href: managing-network-adapters-using-getadaptersinfo.md
-            - name: Gerenciando interfaces usando GetInterfaceInfo
+            - name: Gerenciando interfaces usando o GetInterfaceInfo
               href: managing-interfaces-using-getinterfaceinfo.md
             - name: Gerenciando endereços IP usando GetIpAddrTable
               href: managing-ip-addresses-using-getipaddrtable.md
-            - name: 'Gerenciar concessões DHCP com IpReleaseAddress, IpRenewAddress'
+            - name: 'Gerenciar concessões de DHCP com IpReleaseAddress, IpRenewAddress'
               href: managing-dhcp-leases-using-ipreleaseaddress-and-iprenewaddress.md
             - name: 'Gerenciar endereços IP com AddIPAddress, DeleteIPAddress'
               href: managing-ip-addresses-using-addipaddress-and-deleteipaddress.md
@@ -65,6 +65,8 @@
         - name: Enumerações auxiliares de IP
           href: ip-helper-enumerations.md
           items:
+            - name: DNS_SERVER_PROPERTY_TYPE
+              href: /windows/win32/api/netioapi/ne-netioapi-dns_server_property_type
             - name: IF_OPER_STATUS
               href: /windows/win32/api/ifdef/ne-ifdef-if_oper_status
             - name: IP_DAD_STATE
@@ -136,7 +138,7 @@
               href: /windows/win32/api/Netioapi/nf-netioapi-convertlengthtoipv4mask
             - name: CreateAnycastIpAddressEntry
               href: /windows/win32/api/Netioapi/nf-netioapi-createanycastipaddressentry
-            - name: Createipforwardentry
+            - name: CreateIpForwardEntry
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-createipforwardentry
             - name: CreateIpForwardEntry2
               href: /windows/win32/api/Netioapi/nf-netioapi-createipforwardentry2
@@ -184,13 +186,15 @@
               href: /windows/win32/api/Netioapi/nf-netioapi-flushipnettable2
             - name: FlushIpPathTable
               href: /windows/win32/api/Netioapi/nf-netioapi-flushippathtable
+            - name: FreeInterfaceDnsSettings
+              href: /windows/win32/api/netioapi/nf-netioapi-freeinterfacednssettings
             - name: FreeMibTable
               href: /windows/win32/api/Netioapi/nf-netioapi-freemibtable
             - name: GetAdapterIndex
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-getadapterindex
             - name: GetAdapterOrderMap
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-getadapterordermap
-            - name: Getadaptersaddresses
+            - name: GetAdaptersAddresses
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-getadaptersaddresses
             - name: GetAdaptersInfo
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-getadaptersinfo
@@ -198,9 +202,9 @@
               href: /windows/win32/api/Netioapi/nf-netioapi-getanycastipaddressentry
             - name: GetAnycastIpAddressTable
               href: /windows/win32/api/Netioapi/nf-netioapi-getanycastipaddresstable
-            - name: GetFaceInterface
+            - name: GetBestInterface
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-getbestinterface
-            - name: GetFaceInterfaceEx
+            - name: GetBestInterfaceEx
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-getbestinterfaceex
             - name: GetBestRoute
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-getbestroute
@@ -234,6 +238,8 @@
               href: /windows/win32/api/Netioapi/nf-netioapi-getiftable2ex
             - name: GetInterfaceActiveTimestampCapabilities
               href: /windows/win32/api/iphlpapi/nf-iphlpapi-getinterfaceactivetimestampcapabilities
+            - name: GetInterfaceDnsSettings
+              href: /windows/win32/api/netioapi/nf-netioapi-getinterfacednssettings
             - name: GetInterfaceInfo
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-getinterfaceinfo
             - name: GetInterfaceSupportedTimestampCapabilities
@@ -298,7 +304,7 @@
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-getpertcpconnectionestats
             - name: GetRTTAndHopCount
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-getrttandhopcount
-            - name: Gettcpstatistics
+            - name: GetTcpStatistics
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-gettcpstatistics
             - name: GetTcpStatisticsEx
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-gettcpstatisticsex
@@ -420,6 +426,8 @@
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-sendarp
             - name: SetIfEntry
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-setifentry
+            - name: SetInterfaceDnsSettings
+              href: /windows/win32/api/netioapi/nf-netioapi-setinterfacednssettings
             - name: SetIpForwardEntry
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-setipforwardentry
             - name: SetIpForwardEntry2
@@ -453,7 +461,17 @@
           items:
             - name: ARP_SEND_REPLY
               href: /windows/win32/api/Ipexport/ns-ipexport-arp_send_reply
-            - name: Fixed_info
+            - name: DNS_DOH_SERVER_SETTINGS
+              href: /windows/win32/api/netioapi/ns-netioapi-dns_doh_server_settings
+            - name: DNS_INTERFACE_SETTINGS
+              href: /windows/win32/api/netioapi/ns-netioapi-dns_interface_settings
+            - name: DNS_INTERFACE_SETTINGS3
+              href: /windows/win32/api/netioapi/ns-netioapi-dns_interface_settings3
+            - name: DNS_SERVER_PROPERTY_TYPES
+              href: /windows/win32/api/netioapi/ns-netioapi-dns_server_property_types
+            - name: DNS_SERVER_PROPERTY
+              href: /windows/win32/api/netioapi/ns-netioapi-dns_server_property
+            - name: FIXED_INFO
               href: /windows/win32/api/Iptypes/ns-iptypes-fixed_info_w2ksp1
             - name: ICMP_ECHO_REPLY
               href: /windows/win32/api/Ipexport/ns-ipexport-icmp_echo_reply
@@ -463,7 +481,7 @@
               href: /windows/win32/api/Ipexport/ns-ipexport-icmp_echo_reply32
             - name: ICMPV6_ECHO_REPLY
               href: /windows/win32/api/Ipexport/ns-ipexport-icmpv6_echo_reply_lh
-            - name: End_inet
+            - name: in_addr
               href: /windows/win32/api/Inaddr/ns-inaddr-in_addr
             - name: INTERFACE_HARDWARE_TIMESTAMP_CAPABILITIES
               href: /windows/win32/api/iphlpapi/ns-iphlpapi-interface_hardware_timestamp_capabilities

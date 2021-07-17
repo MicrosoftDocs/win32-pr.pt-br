@@ -4,12 +4,12 @@ description: As funções a seguir recuperam e modificam as definições de conf
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: 5f562470-f3e8-4305-a015-3a84cd09a1eb
-ms.openlocfilehash: ae19803c25512242b613735a060c7beda8c1df70
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: ee16bb0b65545c4abbef387c5b90d42fb9d3c629
+ms.sourcegitcommit: ea0069adb72dbfa717e73f3a96c3407a49ec0dab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549501"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "114394201"
 ---
 # <a name="ip-helper-functions"></a>Funções auxiliares de IP
 
@@ -50,11 +50,12 @@ As funções a seguir recuperam e modificam as definições de configuração pa
 -   [**ConvertInterfaceLuidToNameW**](/windows/win32/api/Netioapi/nf-netioapi-convertinterfaceluidtonamew)
 -   [**ConvertInterfaceNameToLuidA**](/windows/win32/api/Netioapi/nf-netioapi-convertinterfacenametoluida)
 -   [**ConvertInterfaceNameToLuidW**](/windows/win32/api/Netioapi/nf-netioapi-convertinterfacenametoluidw)
--   [**se \_ indextoname**](/windows/win32/api/Netioapi/nf-netioapi-if_indextoname)
--   [**se \_ nametoindex**](/windows/win32/api/Netioapi/nf-netioapi-if_nametoindex)
+-   [**Se \_ indextoname**](/windows/win32/api/Netioapi/nf-netioapi-if_indextoname)
+-   [**Se \_ nametoindex**](/windows/win32/api/Netioapi/nf-netioapi-if_nametoindex)
 
 ## <a name="interface-management"></a>Gerenciamento de interface
 
+-   [**FreeInterfaceDnsSettings**](/windows/win32/api/netioapi/nf-netioapi-freeinterfacednssettings)
 -   [**GetFriendlyIfIndex**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getfriendlyifindex)
 -   [**GetIfEntry**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getifentry)
 -   [**GetIfEntry2**](/windows/win32/api/Netioapi/nf-netioapi-getifentry2)
@@ -63,6 +64,7 @@ As funções a seguir recuperam e modificam as definições de configuração pa
 -   [**GetIfTable**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getiftable)
 -   [**GetIfTable2**](/windows/win32/api/Netioapi/nf-netioapi-getiftable2)
 -   [**GetIfTable2Ex**](/windows/win32/api/Netioapi/nf-netioapi-getiftable2ex)
+-   [**GetInterfaceDnsSettings**](/windows/win32/api/netioapi/nf-netioapi-getinterfacednssettings)
 -   [**GetInterfaceInfo**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getinterfaceinfo)
 -   [**GetInvertedIfStackTable**](/windows/win32/api/Netioapi/nf-netioapi-getinvertedifstacktable)
 -   [**GetIpInterfaceEntry**](/windows/win32/api/Netioapi/nf-netioapi-getipinterfaceentry)
@@ -70,6 +72,7 @@ As funções a seguir recuperam e modificam as definições de configuração pa
 -   [**GetNumberOfInterfaces**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getnumberofinterfaces)
 -   [**InitializeIpInterfaceEntry**](/windows/win32/api/Netioapi/nf-netioapi-initializeipinterfaceentry)
 -   [**SetIfEntry**](/windows/win32/api/Iphlpapi/nf-iphlpapi-setifentry)
+-   [**SetInterfaceDnsSettings**](/windows/win32/api/netioapi/nf-netioapi-setinterfacednssettings)
 -   [**SetIpInterfaceEntry**](/windows/win32/api/Netioapi/nf-netioapi-setipinterfaceentry)
 
 ## <a name="internet-protocol-ip-and-internet-control-message-protocol-icmp"></a>Protocolo Internet (IP) e ICMP (protocolo de mensagens de controle da Internet)
@@ -80,7 +83,7 @@ As funções a seguir recuperam e modificam as definições de configuração pa
 -   [**Icmp6ParseReplies**](/windows/win32/api/Icmpapi/nf-icmpapi-icmp6parsereplies)
 -   [**Icmp6SendEcho2**](/windows/win32/api/Icmpapi/nf-icmpapi-icmp6sendecho2)
 -   [**IcmpCloseHandle**](/windows/win32/api/Icmpapi/nf-icmpapi-icmpclosehandle)
--   [**Icmpcreatefile**](/windows/win32/api/Icmpapi/nf-icmpapi-icmpcreatefile)
+-   [**IcmpCreateFile**](/windows/win32/api/Icmpapi/nf-icmpapi-icmpcreatefile)
 -   [**IcmpParseReplies**](/windows/win32/api/Icmpapi/nf-icmpapi-icmpparsereplies)
 -   [**IcmpSendEcho**](/windows/win32/api/Icmpapi/nf-icmpapi-icmpsendecho)
 -   [**IcmpSendEcho2**](/windows/win32/api/Icmpapi/nf-icmpapi-icmpsendecho2)
@@ -89,7 +92,7 @@ As funções a seguir recuperam e modificam as definições de configuração pa
 
 ## <a name="ip-address-management"></a>Gerenciamento de endereço IP
 
--   [**Addipaddress**](/windows/win32/api/Iphlpapi/nf-iphlpapi-addipaddress)
+-   [**AddIPAddress**](/windows/win32/api/Iphlpapi/nf-iphlpapi-addipaddress)
 -   [**CreateAnycastIpAddressEntry**](/windows/win32/api/Netioapi/nf-netioapi-createanycastipaddressentry)
 -   [**CreateUnicastIpAddressEntry**](/windows/win32/api/Netioapi/nf-netioapi-createunicastipaddressentry)
 -   [**DeleteIPAddress**](/windows/win32/api/Iphlpapi/nf-iphlpapi-deleteipaddress)
@@ -158,11 +161,11 @@ As funções a seguir recuperam e modificam as definições de configuração pa
 -   [**SetIpStatisticsEx**](/windows/win32/api/Iphlpapi/nf-iphlpapi-setipstatisticsex)
 -   [**UnenableRouter**](/windows/win32/api/Iphlpapi/nf-iphlpapi-unenablerouter)
 
-## <a name="ip-table-memory-management"></a>Gerenciamento de memória de tabela IP
+## <a name="ip-table-memory-management"></a>Gerenciamento de memória da tabela IP
 
 -   [**FreeMibTable**](/windows/win32/api/Netioapi/nf-netioapi-freemibtable)
 
-## <a name="ip-utility"></a>Utilitário de IP
+## <a name="ip-utility"></a>Utilitário IP
 
 -   [**ConvertIpv4MaskToLength**](/windows/win32/api/Netioapi/nf-netioapi-convertipv4masktolength)
 -   [**ConvertLengthToIpv4Mask**](/windows/win32/api/Netioapi/nf-netioapi-convertlengthtoipv4mask)
@@ -215,7 +218,7 @@ Essas funções são definidas somente no Windows Server 2003.
 -   [**NotifyTeredoPortChange**](/windows/win32/api/Netioapi/nf-netioapi-notifyteredoportchange)
 -   [**NotifyStableUnicastIpAddressTable**](/windows/win32/api/Netioapi/nf-netioapi-notifystableunicastipaddresstable)
 
-## <a name="transmission-control-protocol-tcp-and-user-datagram-protocol-udp"></a>TCP (protocolo de controle de transmissão) e UDP (protocolo de datagrama de usuário)
+## <a name="transmission-control-protocol-tcp-and-user-datagram-protocol-udp"></a>Protocolo TCP e UDP (Protocolo de Datagrama de Usuário)
 
 -   [**GetExtendedTcpTable**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getextendedtcptable)
 -   [**GetExtendedUdpTable**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getextendedudptable)
@@ -225,7 +228,7 @@ Essas funções são definidas somente no Windows Server 2003.
 -   [**GetOwnerModuleFromUdpEntry**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getownermodulefromudpentry)
 -   [**GetPerTcp6ConnectionEStats**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getpertcp6connectionestats)
 -   [**GetPerTcpConnectionEStats**](/windows/win32/api/Iphlpapi/nf-iphlpapi-getpertcpconnectionestats)
--   [**GetTcpStatistics**](/windows/win32/api/Iphlpapi/nf-iphlpapi-gettcpstatistics)
+-   [**Gettcpstatistics**](/windows/win32/api/Iphlpapi/nf-iphlpapi-gettcpstatistics)
 -   [**GetTcpStatisticsEx**](/windows/win32/api/Iphlpapi/nf-iphlpapi-gettcpstatisticsex)
 -   [**GetTcpStatisticsEx2**](/windows/win32/api/Iphlpapi/nf-iphlpapi-gettcpstatisticsex2)
 -   [**GetTcp6Table**](/windows/win32/api/Iphlpapi/nf-iphlpapi-gettcp6table)

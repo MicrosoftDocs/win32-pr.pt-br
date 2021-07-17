@@ -1,37 +1,42 @@
 ---
 title: Estruturas auxiliares de IP
-description: Página de navegação Estruturas auxiliares de IP.
+description: Página de navegação de estruturas auxiliares de IP.
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: d53c3821-00a0-4eaa-9a06-69ec7aa98d84
-ms.openlocfilehash: bf265de124133ece69c3898a6849535ca44e9cde
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: ac8a8f9a143cd661050204483d9dca9a66ce5255
+ms.sourcegitcommit: ea0069adb72dbfa717e73f3a96c3407a49ec0dab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549331"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "114394200"
 ---
 # <a name="ip-helper-structures"></a>Estruturas auxiliares de IP
 
-As estruturas e uniões a seguir são usadas com o Auxiliar de IP.
+As seguintes estruturas e uniões são usadas com o auxiliar de IP.
 
 - [**ARP_SEND_REPLY**](/windows/win32/api/Ipexport/ns-ipexport-arp_send_reply)
-- [**Fixed_info**](/windows/win32/api/Iptypes/ns-iptypes-fixed_info_w2ksp1)
+- [**DNS_DOH_SERVER_SETTINGS**](/windows/win32/api/netioapi/ns-netioapi-dns_doh_server_settings)
+- [**DNS_INTERFACE_SETTINGS**](/windows/win32/api/netioapi/ns-netioapi-dns_interface_settings)
+- [**DNS_INTERFACE_SETTINGS3**](/windows/win32/api/netioapi/ns-netioapi-dns_interface_settings3)
+- [**DNS_SERVER_PROPERTY_TYPES**](/windows/win32/api/netioapi/ns-netioapi-dns_server_property_types)
+- [**DNS_SERVER_PROPERTY**](/windows/win32/api/netioapi/ns-netioapi-dns_server_property)
+- [**FIXED_INFO**](/windows/win32/api/Iptypes/ns-iptypes-fixed_info_w2ksp1)
 - [**ICMP_ECHO_REPLY**](/windows/win32/api/Ipexport/ns-ipexport-icmp_echo_reply)
 - [**ICMP_ECHO_REPLY32**](/windows/win32/api/Ipexport/ns-ipexport-icmp_echo_reply32)
 - [**ICMP_ERROR_INFO**](/windows/win32/api/ws2ipdef/ns-ws2ipdef-icmp_error_info)
 - [**ICMPV6_ECHO_REPLY**](/windows/win32/api/Ipexport/ns-ipexport-icmpv6_echo_reply_lh)
-- [**End_inet**](/windows/win32/api/Inaddr/ns-inaddr-in_addr)
+- [**in_addr**](/windows/win32/api/Inaddr/ns-inaddr-in_addr)
 - [**INTERFACE_HARDWARE_TIMESTAMP_CAPABILITIES**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_hardware_timestamp_capabilities)
 - [**INTERFACE_HARDWARE_CROSSTIMESTAMP**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_hardware_crosstimestamp)
 - [**INTERFACE_SOFTWARE_TIMESTAMP_CAPABILITIES**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_software_timestamp_capabilities)
 - [**INTERFACE_TIMESTAMP_CAPABILITIES**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_timestamp_capabilities)
-- [**Ip_adapter_addresses**](/windows/win32/api/Iptypes/ns-iptypes-ip_adapter_addresses_lh)
+- [**IP_ADAPTER_ADDRESSES**](/windows/win32/api/Iptypes/ns-iptypes-ip_adapter_addresses_lh)
 - [**IP_ADAPTER_ANYCAST_ADDRESS**](/windows/win32/api/Iptypes/ns-iptypes-ip_adapter_anycast_address_xp)
 - [**IP_ADAPTER_DNS_SERVER_ADDRESS**](/windows/win32/api/Iptypes/ns-iptypes-ip_adapter_dns_server_address_xp)
 - [**IP_ADAPTER_DNS_SUFFIX**](/windows/win32/api/Iptypes/ns-iptypes-ip_adapter_dns_suffix)
 - [**IP_ADAPTER_GATEWAY_ADDRESS**](/windows/win32/api/Iptypes/ns-iptypes-ip_adapter_gateway_address_lh)
-- [**Ip_adapter_index_map**](/windows/win32/api/Ipexport/ns-ipexport-ip_adapter_index_map)
+- [**IP_ADAPTER_INDEX_MAP**](/windows/win32/api/Ipexport/ns-ipexport-ip_adapter_index_map)
 - [**IP_ADAPTER_INFO**](/windows/win32/api/Iptypes/ns-iptypes-ip_adapter_info)
 - [**IP_ADAPTER_MULTICAST_ADDRESS**](/windows/win32/api/Iptypes/ns-iptypes-ip_adapter_multicast_address_xp)
 - [**IP_ADAPTER_ORDER_MAP**](/windows/win32/api/Ipexport/ns-ipexport-ip_adapter_order_map)
