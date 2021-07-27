@@ -3,12 +3,12 @@ description: Qualidade de Serviço indica o desempenho e a eficiência de energi
 title: Qualidade de Serviço
 ms.topic: article
 ms.date: 07/09/2021
-ms.openlocfilehash: c506e810bafad41e9a5f14112c1398b0d6fb3ffc
-ms.sourcegitcommit: 2805e19a2738a408d3c5ab69a8d84ec92ca25e36
+ms.openlocfilehash: 98c8b8c4fc340eb49b13d7bdfd9b2a611a8f7244
+ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "113989784"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "114436282"
 ---
 # <a name="quality-of-service"></a>Qualidade de Serviço
 
@@ -22,12 +22,12 @@ O sistema mantém vários níveis de QoS, cada um com desempenho diferenciado e 
 
 | Nível de QoS | Descrição|Desempenho e potência | Versão |
 | --- | --- | --- | --- |
-| Alto | Aplicativos em janelas que estão em primeiro plano e em foco ou audíveis | Alto desempenho padrão |1.709 |
-| Médio | Aplicativos em janelas que podem estar visíveis para o usuário final, mas não estão em foco | Varia de acordo com a plataforma, entre Alta e Baixa | 1.709 |
-| Baixo | Aplicativos em janelas que não são visíveis ou audíveis para o usuário final | Na bateria, seleciona a frequência de CPU e agendamentos mais eficientes para núcleos eficientes | 1.709 |
-| Eco | Aplicativos que marcam explicitamente processos [com SetProcessInformation](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setprocessinformation) ou threads com [SetThreadInformation](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setprocessinformation) | Sempre seleciona a frequência de CPU e agendamentos mais eficientes para núcleos eficientes | Windows 11 |
-| Mídia | Threads explicitamente marcados pelo Serviço de [Agendador](/windows/desktop/procthread/multimedia-class-scheduler-service) de Classe Multimídia para denotar o buffer em lote multimídia | Frequência de CPU reduzida para processamento em lote eficiente | 2004 |
-| Prazo | Threads explicitamente marcados pelo Serviço de [Agendador](/windows/desktop/procthread/multimedia-class-scheduler-service) de Classe Multimídia para indicar que os threads de áudio exigem desempenho para atender aos prazos | Alto desempenho para atender aos prazos de mídia | 2004 |
+| Alto | Aplicativos em janelas que estão em primeiro plano e em foco ou audíveis e marcam explicitamente processos com [SetProcessInformation](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setprocessinformation) ou threads com [SetThreadInformation](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadinformation) | Alto desempenho padrão. |1.709 |
+| Médio | Aplicativos em janelas que podem estar visíveis para o usuário final, mas não estão em foco. | Varia de acordo com a plataforma, entre Alta e Baixa. | 1.709 |
+| Baixo | Aplicativos em janelas que não são visíveis ou audíveis para o usuário final. | Na bateria, seleciona a frequência de CPU e agendamentos mais eficientes para o núcleo eficiente. | 1.709 |
+| Eco | Aplicativos que marcam explicitamente processos [com SetProcessInformation](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setprocessinformation) ou threads com [SetThreadInformation](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadinformation). | Sempre seleciona a frequência de CPU e agendamentos mais eficientes para núcleos eficientes. | Windows 11 |
+| Mídia | Threads explicitamente marcados pelo Serviço de [Agendador](/windows/desktop/procthread/multimedia-class-scheduler-service) de Classe Multimídia para denotar o buffer em lotes multimídia. | Frequência de CPU reduzida para processamento em lote eficiente. | 2004 |
+| Prazo | Threads explicitamente marcados pelo Serviço de [Agendador](/windows/desktop/procthread/multimedia-class-scheduler-service) de Classes Multimídia para indicar que os threads de áudio exigem desempenho para atender aos prazos. | Alto desempenho para atender aos prazos de mídia. | 2004 |
 
 ## <a name="quality-of-service-classification"></a>Classificação de qualidade de serviço
 

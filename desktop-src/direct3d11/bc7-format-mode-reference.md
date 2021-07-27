@@ -4,12 +4,12 @@ description: Esta documentação contém uma lista de 8 modos de bloqueio e aloc
 ms.assetid: B1CEB729-6694-49BF-ACB9-FD1EFAB0B0D1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 719a223e6ac057b949d5e1222582058f637ec526
-ms.sourcegitcommit: 62e758931c610782807c7c9fad284921a6c56232
+ms.openlocfilehash: f9756582d7d5ac52d4c16b2f4734decebbd66ae8
+ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "104365420"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "114436101"
 ---
 # <a name="bc7-format-mode-reference"></a>Referência do modo de formato BC7
 
@@ -142,7 +142,7 @@ No BC7, você pode codificar o componente alfa de uma das seguintes maneiras:
     -   RAB \| G: canal de cores "verde" separado
     -   RGA \| B: canal de cores "azul" separado
 
-    O decodificador reordena a ordem de canal para RGBA após a decodificação, portanto, o formato de bloco interno é invisível para o desenvolvedor. Tons de preto com cor separada e componentes alfa também têm dois conjuntos de dados de índice: um para o conjunto em vetor de canais e outro para o canal escalar. (No caso do modo 4, esses índices têm larguras diferentes de \[ 2 ou 3 bits \] . O modo 4 também contém um seletor de 1 bit que especifica se o vetor ou o canal escalar usa os índices de 3 bits.)
+    O decodificador reordena a ordem de canal para RGBA após a decodificação, portanto, o formato de bloco interno é invisível para o desenvolvedor. Blocos com cores separadas e componentes alfa também têm dois conjuntos de dados de índice: um para o conjunto vetorado de canais e outro para o canal escalar. (No caso do Modo 4, esses índices têm larguras diferentes \[ de 2 ou 3 \] bits. O modo 4 também contém um seletor de 1 bit que especifica se o vetor ou o canal escalar usa os índices de 3 bits.)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -151,9 +151,9 @@ No BC7, você pode codificar o componente alfa de uma das seguintes maneiras:
 [Formato BC7](bc7-format.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

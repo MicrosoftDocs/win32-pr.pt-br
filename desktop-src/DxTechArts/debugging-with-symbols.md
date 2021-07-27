@@ -4,12 +4,12 @@ description: Este artigo fornece uma visão geral de alto nível de como usar me
 ms.assetid: 7ce0c9c7-485c-8d72-0353-27fd2e369a7c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff63e2404a07a2f0ab5adcb156d83dc989b42fd4
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: fd9935c490204736995e17e3c8013ce56f57624b
+ms.sourcegitcommit: 4c71a269e3a114c72dd9eb31ccb4948a32beaa5b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104499095"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114662256"
 ---
 # <a name="debugging-with-symbols"></a>Depurando com símbolos
 
@@ -18,7 +18,7 @@ Este artigo fornece uma visão geral de alto nível de como usar melhor os símb
 -   [Símbolos](#debugging-with-symbols)
 -   [Usando símbolos para depuração](#using-symbols-for-debugging)
 -   [Obtendo os símbolos necessários](#getting-the-symbols-you-need)
-    -   [Verificar se um determinado arquivo DLL ou. exe e PDB na mesma pasta correspondem](#check-if-a-given-dll-or-exe-file-and-pdb-in-the-same-folder-match)
+    -   [Verificar se uma determinada DLL ou arquivo .exe e PDB na mesma pasta correspondem](#check-if-a-given-dll-or-exe-file-and-pdb-in-the-same-folder-match)
     -   [Verificar se todos os arquivos dll e executáveis em um conjunto de pastas têm PDBs correspondentes](#check-if-all-the-dlls-and-executable-files-in-a-set-of-folders-have-matching-pdbs)
     -   [Como o Symchk funciona](#how-symchk-works)
 -   [Servidores de símbolos](#symbol-servers)
@@ -30,7 +30,7 @@ Este artigo fornece uma visão geral de alto nível de como usar melhor os símb
 
 ## <a name="symbols"></a>Símbolos
 
-Vários tipos diferentes de símbolos estão disponíveis para depuração. Eles incluem símbolos CodeView, COFF, DBG, SYM, PDB e até mesmo símbolos de exportação que são gerados de uma tabela de exportação de arquivos binários. Este white paper aborda apenas VS.NET e símbolos de formato PDB, pois eles são o formato preferencial mais recente. Eles são gerados por padrão para projetos que são compilados usando o Visual Studio.
+Vários tipos diferentes de símbolos estão disponíveis para depuração. Eles incluem símbolos CodeView, COFF, DBG, SYM, PDB e até mesmo símbolos de exportação que são gerados de uma tabela de exportação de arquivos binários. Este white paper aborda apenas VS.NET e símbolos de formato PDB, pois eles são o formato preferencial mais recente. Eles são gerados por padrão para projetos que são compilados usando Visual Studio.
 
 A geração de arquivos PDB para executáveis de versão não afeta nenhuma otimização ou altera significativamente o tamanho dos arquivos gerados. Normalmente, a única diferença é o caminho e o nome de arquivo do arquivo PDB é inserido no executável. Por esse motivo, você sempre deve produzir arquivos PDB, mesmo que não queira enviá-los com o executável.
 
@@ -70,7 +70,7 @@ kernel32.dll!@BaseThreadInitThunk@12() + 0x12 bytes
 ntdll.dll!__RtlUserThreadStart@8() + 0x27 bytes
 ```
 
-Em muitos casos, é possível continuar a depuração sem símbolos, pois o problema está em um local que tem símbolos precisos e você não precisa examinar as funções mais adiante na pilha de chamadas. Mesmo que uma biblioteca que esteja em sua pilha de chamadas não tenha PDBs disponíveis, desde que elas tenham sido compiladas com ponteiros de quadro, o depurador deverá ser capaz de adivinhar corretamente nas funções pai. A partir do Windows XP Service Pack 2, todos os arquivos executáveis e DLL do Windows são compilados com o FPO desabilitado, pois torna a depuração mais precisa. Desabilitar o FPO também permite que os profileres de amostragem orientem a pilha durante o tempo de execução, com impacto mínimo no desempenho. Em versões do Windows anteriores ao Windows XP SP2, todos os binários do sistema operacional exigem arquivos de símbolo correspondentes que contenham informações FPO para permitir depuração e criação de perfil precisas.
+Em muitos casos, é possível continuar a depuração sem símbolos, pois o problema está em um local que tem símbolos precisos e você não precisa examinar as funções mais adiante na pilha de chamadas. Mesmo que uma biblioteca que esteja em sua pilha de chamadas não tenha PDBs disponíveis, desde que elas tenham sido compiladas com ponteiros de quadro, o depurador deverá ser capaz de adivinhar corretamente nas funções pai. a partir do Windows XP Service Pack 2, todos os Windows DLL e arquivos executáveis são compilados com o FPO desabilitado, pois torna a depuração mais precisa. Desabilitar o FPO também permite que os profileres de amostragem orientem a pilha durante o tempo de execução, com impacto mínimo no desempenho. nas versões do Windows antes Windows XP SP2, todos os binários do sistema operacional exigem arquivos de símbolo correspondentes que contenham informações FPO, para permitir depuração e criação de perfil precisas.
 
 Se você depurar executáveis nativos de 64 bits, não precisará de arquivos de símbolo para produzir rastreamentos de pilha válidos, pois os compiladores e sistemas operacionais x64 são projetados para não exigir. No entanto, você ainda precisa de arquivos de símbolo para recuperar os nomes de função, parâmetros de chamada e variáveis locais.
 
@@ -80,7 +80,7 @@ Para depurar com confiança os minidespejos gerados em um computador diferente o
 
 ## <a name="getting-the-symbols-you-need"></a>Obtendo os símbolos necessários
 
-O Visual Studio e outros depuradores da Microsoft, como o WinDbg, normalmente são configurados para funcionar apenas se você estiver criando um aplicativo e Depurando-o em seu próprio computador. Se você precisar dar ao seu executável para outra pessoa, se você tiver várias versões de uma DLL ou um arquivo. exe em seu computador, ou se quiser depurar com precisão um aplicativo que usa o Windows ou outras bibliotecas, como o DirectX, você precisa entender como os depuradores localizam e carregam símbolos. O depurador usa o caminho de pesquisa de símbolo especificado pelo usuário — que é encontrado em opções \\ Depurando \\ símbolos no Visual Studio — ou na \_ \_ variável de \_ ambiente caminho de símbolo NT. Normalmente, o depurador procura PDBs correspondentes nos seguintes locais:
+Visual Studio e outros depuradores da Microsoft, como o WinDbg, normalmente são configurados para funcionar apenas se você estiver criando um aplicativo e depurando-o em seu próprio computador. se você precisar dar ao seu executável para outra pessoa, se você tiver várias versões de uma DLL ou um arquivo de .exe em seu computador, ou se quiser depurar com precisão um aplicativo que usa Windows ou outras bibliotecas, como o DirectX, você precisa entender como os depuradores localizam e carregam símbolos. o depurador usa o caminho de pesquisa de símbolo especificado pelo usuário — que é encontrado em opções \\ depurando \\ símbolos no Visual Studio — ou na \_ \_ variável de \_ ambiente path de símbolo NT. Normalmente, o depurador procura PDBs correspondentes nos seguintes locais:
 
 -   No local especificado dentro da DLL ou do arquivo executável.
 
@@ -95,16 +95,16 @@ Para ter certeza de que você tem todos os PDBs necessários para a depuração 
 
 Uma ferramenta útil instalada com esse pacote é symchk.exe. Ele pode ajudar a identificar símbolos ausentes ou incorretos. Essa ferramenta tem um grande número de opções de linha de comando potenciais. Aqui estão dois dos mais úteis e comumente usados.
 
-### <a name="check-if-a-given-dll-or-exe-file-and-pdb-in-the-same-folder-match"></a>Verificar se um determinado arquivo DLL ou. exe e PDB na mesma pasta correspondem
+### <a name="check-if-a-given-dll-or-exe-file-and-pdb-in-the-same-folder-match"></a>Verificar se uma determinada DLL ou arquivo .exe e PDB na mesma pasta correspondem
 
 ``` syntax
-"c:\Program Files\Debugging Tools for Windows\symchk" testing.dll /s
+"c:\Program Files\Debugging Tools for Windows\symchk" testing.dll /s .
 
 SYMCHK: FAILED files = 0
 SYMCHK: PASSED + IGNORED files = 1
 ```
 
-A opção **/s** diz ao **Symchk** para procurar símbolos somente na pasta atual e não examinar nenhum servidor de símbolos.
+O **/s.** a opção diz ao **Symchk** para procurar símbolos somente na pasta atual e não examinar nenhum servidor de símbolos.
 
 ### <a name="check-if-all-the-dlls-and-executable-files-in-a-set-of-folders-have-matching-pdbs"></a>Verificar se todos os arquivos dll e executáveis em um conjunto de pastas têm PDBs correspondentes
 
@@ -112,11 +112,11 @@ A opção **/s** diz ao **Symchk** para procurar símbolos somente na pasta atua
 "c:\Program Files\Debugging Tools for Windows\symchk" *.* /r
 ```
 
-A opção **/r** define **Symchk** para percorrer recursivamente as pastas, para verificar se todos os arquivos executáveis têm PDBs correspondentes. Sem a opção **/s** , **Symchk** usa o \_ caminho do símbolo NT atual \_ \_ para procurar por símbolos em qualquer servidor privado ou local ou nos servidores de símbolo da Microsoft. A ferramenta **Symchk** pesquisa apenas os símbolos para arquivos executáveis (. exe,. dll e semelhantes). Você não pode usar curingas para procurar por símbolos para arquivos não executáveis.
+A opção **/r** define **Symchk** para percorrer recursivamente as pastas, para verificar se todos os arquivos executáveis têm PDBs correspondentes. Sem a opção **/s** , **Symchk** usa o \_ caminho do símbolo NT atual \_ \_ para procurar por símbolos em qualquer servidor privado ou local ou nos servidores de símbolo da Microsoft. A ferramenta **Symchk** pesquisa apenas os símbolos para arquivos executáveis (.exe, .dll e similares). Você não pode usar curingas para procurar por símbolos para arquivos não executáveis.
 
 ### <a name="how-symchk-works"></a>Como o Symchk funciona
 
-Quando o vinculador gera arquivos. dll, executáveis e PDB, ele armazena GUIDs idênticos em cada arquivo. O GUID é usado pelas ferramentas para determinar se um determinado arquivo PDB corresponde a uma DLL ou a um arquivo executável. Se você alterar uma DLL ou um arquivo executável — usando um editor de recursos ou uma codificação de proteção de cópia ou alterando suas informações de versão, o GUID será atualizado e o depurador não poderá carregar o arquivo PDB. Por esse motivo, é muito importante evitar manipular a DLL ou o arquivo executável depois que ele é criado pelo vinculador.
+Quando o vinculador gera arquivos .dll, executáveis e PDB, ele armazena GUIDs idênticos em cada arquivo. O GUID é usado pelas ferramentas para determinar se um determinado arquivo PDB corresponde a uma DLL ou a um arquivo executável. Se você alterar uma DLL ou um arquivo executável — usando um editor de recursos ou uma codificação de proteção de cópia ou alterando suas informações de versão, o GUID será atualizado e o depurador não poderá carregar o arquivo PDB. Por esse motivo, é muito importante evitar manipular a DLL ou o arquivo executável depois que ele é criado pelo vinculador.
 
 Você também pode usar o utilitário DUMPBIN que vem com VS.NET para mostrar os caminhos de símbolo que são pesquisados e ver se são encontrados arquivos de símbolo que correspondam a um determinado DLL ou arquivo executável. Por exemplo:
 
@@ -134,7 +134,7 @@ A Microsoft publica todos os arquivos PDB de todos os sistemas operacionais e ou
 
 Você pode configurar seu computador para usar o servidor de símbolos da Microsoft, que fornece acesso a todos os arquivos de símbolos da Microsoft. Você também pode configurar um servidor de símbolos privado para sua empresa, equipe ou rede, que pode ser usado para armazenar várias versões mais antigas de um projeto no qual você está trabalhando ou para fornecer um cache local para os símbolos que você usa do servidor de símbolos da Microsoft.
 
-Para usar um servidor de símbolos, especifique o caminho de pesquisa em uma variável de ambiente chamada \_ NT \_ Symbol \_ Path. Os depuradores e as ferramentas modernas, como o WinDbg, o NTSD ou o Visual Studio, usam automaticamente esse caminho para procurar por símbolos.
+Para usar um servidor de símbolos, especifique o caminho de pesquisa em uma variável de ambiente chamada \_ NT \_ Symbol \_ Path. os depuradores e as ferramentas modernas, como WinDbg, NTSD ou Visual Studio, usam automaticamente este caminho para procurar por símbolos.
 
 Quando um depurador procura por símbolos, ele primeiro pesquisa localmente. Em seguida, ele examina os servidores de símbolo. Quando ele encontra um símbolo correspondente, ele transfere o arquivo de símbolo para o cache local. Os símbolos de um arquivo executável ou DLL típico variam de 1 a 100 MB de tamanho. Portanto, se você estiver depurando um processo que inclui muitas DLLs, pode levar algum tempo para resolver todos os símbolos e transferi-los para um cache local.
 
@@ -144,10 +144,10 @@ O servidor de símbolos da Microsoft permite que você obtenha todos os símbolo
 
 Você pode acessar o servidor de símbolos de uma das seguintes maneiras:
 
--   Insira o endereço do servidor diretamente. No Visual Studio, no menu **ferramentas** , escolha **Opções**, escolha **depuração** e, em seguida, escolha **símbolos**.
+-   Insira o endereço do servidor diretamente. no Visual Studio, no menu **ferramentas** , escolha **opções**, escolha **depuração** e, em seguida, escolha **símbolos**.
 -   Use a variável de \_ ambiente \_ caminho do símbolo NT \_ . Este método é recomendável.
 
-    Isso é usado por todas as ferramentas de depuração. Ele também é usado pelo Visual Studio e é lido e decodificado quando o Visual Studio é aberto. Portanto, se você alterá-lo, precisará reiniciar o Visual Studio.
+    Isso é usado por todas as ferramentas de depuração. ele também é usado pelo Visual Studio e é lido e decodificado quando Visual Studio é aberto. Portanto, se você alterá-lo, precisará reiniciar Visual Studio.
 
     Essa variável de ambiente permite que você especifique vários servidores de símbolo — por exemplo, um servidor de símbolos privado interno. Ele também permite que você especifique um diretório de cache local para armazenar PDBs para todos os símbolos que você procura dos servidores de símbolos, tanto internamente quanto pela Internet.
 
@@ -167,7 +167,7 @@ Para usar apenas o servidor de símbolos da Microsoft junto com um cache local d
 srv*c:\symbols*https://msdl.microsoft.com/download/symbols
 ```
 
-Você pode encontrar outras opções para o \_ \_ caminho do símbolo NT \_ no arquivo de ajuda que é instalado com o pacote Microsoft Debugging Tools for Windows.
+você pode encontrar outras opções para o \_ \_ caminho do símbolo NT \_ no arquivo de ajuda que é instalado com as ferramentas de depuração da Microsoft para Windows pacote.
 
 Os executáveis sem símbolos podem aumentar o tempo necessário para iniciar um depurador se você usar um servidor de símbolos. Isso ocorre porque o depurador consulta o servidor de símbolos sempre que tenta carregar o executável. Por esse motivo, é melhor solicitar sempre símbolos para todos os componentes.
 
@@ -177,13 +177,13 @@ Para evitar mesmo esse pequeno atraso, você pode executar o depurador uma vez p
 
 ## <a name="getting-symbols-manually"></a>Obtendo símbolos manualmente
 
-Se você tiver configurado o depurador corretamente, ele carregará automaticamente todos os símbolos que ele exigir do seu cache local ou de um servidor de símbolos. Se você quiser obter os símbolos para apenas um único executável, ou para uma pasta de executáveis, você pode usar **Symchk**. Por exemplo, se você quiser baixar os símbolos para o arquivo de \_30.dll d3dx9 na pasta de sistema do Windows para o diretório atual, poderá usar o seguinte comando:
+Se você tiver configurado o depurador corretamente, ele carregará automaticamente todos os símbolos que ele exigir do seu cache local ou de um servidor de símbolos. Se você quiser obter os símbolos para apenas um único executável, ou para uma pasta de executáveis, você pode usar **Symchk**. por exemplo, se você quiser baixar os símbolos para o arquivo de \_30.dll d3dx9 na pasta do sistema Windows no diretório atual, poderá usar o seguinte comando:
 
 ``` syntax
 "c:\Program Files\Debugging Tools for Windows\symchk" c:\Windows\System32\d3dx9_30.dll /oc \.
 ```
 
-A ferramenta **Symchk** tem muitos outros usos. Para obter detalhes, consulte **Symchk/?** ou procure na documentação das ferramentas de depuração da Microsoft para Windows.
+A ferramenta **Symchk** tem muitos outros usos. para obter detalhes, consulte **symchk/?** ou procure na documentação das ferramentas de depuração da Microsoft para Windows.
 
 ## <a name="setting-up-a-symbol-server"></a>Configurando um servidor de símbolos
 
@@ -191,9 +191,9 @@ A configuração de um servidor de símbolos é muito simples. Isso é útil pel
 
 -   Para economizar largura de banda ou para acelerar a resolução de símbolos para sua empresa, equipe ou produto. Um servidor de símbolos interno em um compartilhamento de arquivos local em sua rede armazena em cache todas as referências a servidores de símbolos externos, como o servidor de símbolos da Microsoft. Um servidor de símbolos local ou interno pode ser acessado rapidamente por muitas pessoas ao mesmo tempo. Portanto, ele economiza largura de banda e a latência que as solicitações de símbolo duplicadas podem criar.
 -   Para armazenar símbolos para compilações antigas, versões ou versões externas do seu aplicativo. Ao armazenar os símbolos para essas compilações em um servidor de símbolos que você pode acessar facilmente, você pode depurar falhas e problemas nessas compilações em qualquer computador que tenha um depurador e uma conexão com o servidor de símbolo local. Isso é particularmente útil se você depurar minidespejos que são gerados por executáveis que você não criou, ou seja, compilações que foram geradas por outro programador ou por um computador de compilação. Se os símbolos para essas compilações forem armazenados no seu servidor de símbolos, você terá uma depuração confiável e precisa.
--   Para manter os símbolos atualizados. Quando os componentes são atualizados, como OS componentes do sistema operacional que são modificados por Windows Update ou pelo SDK do DirectX, você ainda pode depurar usando todos os símbolos mais recentes.
+-   Para manter os símbolos atualizados. quando os componentes são atualizados, como os componentes do sistema operacional que são modificados por Windows Update ou pelo SDK do DirectX, você ainda pode depurar usando todos os símbolos mais recentes.
 
-Configurar um servidor de símbolos em sua própria rede local é tão simples quanto criar um compartilhamento de arquivos em um servidor e dar aos usuários permissões completas para acessar o compartilhamento, para criar arquivos e pastas. Esse compartilhamento deve ser criado em um sistema operacional de servidor, como o Windows Server 2003, para que o número de pessoas que podem acessar o compartilhamento simultaneamente não seja limitado.
+Configurar um servidor de símbolos em sua própria rede local é tão simples quanto criar um compartilhamento de arquivos em um servidor e dar aos usuários permissões completas para acessar o compartilhamento, para criar arquivos e pastas. esse compartilhamento deve ser criado em um sistema operacional de servidor, como Windows server 2003, para que o número de pessoas que podem acessar o compartilhamento simultaneamente não seja limitado.
 
 Por exemplo, se você configurar um compartilhamento de arquivos em \\ \\ \\ símbolos mainserver, os membros de sua equipe definirão o \_ caminho do símbolo do NT \_ \_ como o seguinte:
 
@@ -207,7 +207,7 @@ Normalmente, isso é tudo que está envolvido na configuração e no uso do seu 
 
 ## <a name="adding-symbols-to-a-symbol-server"></a>Adicionando símbolos a um servidor de símbolos
 
-Para adicionar, excluir ou editar arquivos em um compartilhamento de servidor de símbolos, use a ferramenta symstore.exe. Essa ferramenta faz parte do pacote das ferramentas de depuração para Windows da Microsoft. A documentação completa sobre servidores de símbolos, a ferramenta SymStore e os símbolos de indexação está incluída no pacote ferramentas de depuração para Windows.
+Para adicionar, excluir ou editar arquivos em um compartilhamento de servidor de símbolos, use a ferramenta symstore.exe. essa ferramenta faz parte do pacote de ferramentas de depuração da Microsoft para Windows. a documentação completa sobre servidores de símbolo, a ferramenta symstore e os símbolos de indexação está incluída nas ferramentas de depuração para Windows pacote.
 
 Talvez você queira adicionar símbolos diretamente ao seu próprio servidor de símbolos, como parte de um processo de compilação, ou disponibilizar os símbolos para toda a equipe para bibliotecas ou ferramentas de terceiros. O processo de adicionar um símbolo a um compartilhamento de arquivos de servidor de símbolos é chamado de indexação de símbolos. Há duas maneiras comuns de indexar símbolos. Um arquivo de símbolo pode ser copiado para o servidor de símbolos. Ou, um ponteiro para o local do símbolo pode ser copiado para o servidor de símbolos. Se você tiver uma pasta de arquivo morto que contém suas compilações antigas, talvez queira indexar ponteiros para os arquivos PDB que já estão no compartilhamento, em vez de duplicar os símbolos. Como os símbolos podem ser, às vezes, dezenas de megabytes de tamanho, é uma boa ideia planejar com antecedência quanto espaço você pode precisar para arquivar todas as compilações do seu projeto durante o desenvolvimento. Se você indexar apenas ponteiros para símbolos, poderá ter problemas se remover compilações antigas ou alterar o nome de um compartilhamento de arquivos.
 
@@ -226,8 +226,8 @@ O parâmetro **/t "Comment"** é usado para adicionar uma descrição à transa�
 -   Configure \_ \_ \_ o caminho do símbolo do NT para apontar para um cache local, para um servidor de símbolos privado e para o servidor de símbolos da Microsoft.
 -   Se um depurador não puder carregar símbolos para um componente que você está Depurando, entre em contato com o proprietário do componente para solicitar símbolos — pelo menos um PDB removido.
 -   Configure um sistema de compilação automatizado para indexar símbolos no seu servidor de símbolos privado para cada compilação produzida. Certifique-se de que as compilações distribuídas sejam as compilações geradas por esse processo. Isso garante que os símbolos estejam sempre disponíveis para problemas de depuração.
--   Configure um servidor de símbolos para permitir que os depuradores acessem o código-fonte de um módulo específico diretamente de um sistema de controle do código-fonte com base em uma fonte Visual segura ou Perforce. Se as informações e os símbolos do arquivo de origem de uma versão lançada de um jogo forem indexados, os desenvolvedores que têm acesso ao servidor de símbolos podem ter depuração de nível de origem completa de problemas relatados, sem manter os ambientes de compilação ou versões antigas dos arquivos de origem em seus computadores de desenvolvimento. Para configurar o servidor de símbolos para permitir a indexação de informações do arquivo de origem, consulte a documentação do servidor de origem.
+-   configure um servidor de símbolos para permitir que os depuradores acessem o código-fonte de um módulo específico diretamente de uma fonte Visual Cofre ou sistema de controle do código-fonte baseado em perforce. Se as informações do arquivo de origem e os símbolos de uma versão lançada de um jogo são indexados, os desenvolvedores que têm acesso ao servidor de símbolos podem ter depuração de nível de origem completo de problemas relatados, sem manter ambientes de build ou versões antigas de arquivos de origem em seus computadores de desenvolvimento. Para configurar o servidor de símbolos para permitir a indexação de informações de arquivo de origem, consulte a documentação do servidor de origem.
 
- 
+ 
 
- 
+ 

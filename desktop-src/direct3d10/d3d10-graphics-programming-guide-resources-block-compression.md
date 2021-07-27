@@ -4,12 +4,12 @@ ms.assetid: add98d8f-6846-4dd6-b0e2-a4b6e89cbcc5
 title: Compactação de bloco (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fcfb4bc91256415ab23686b7333df7d21df335d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f7c3a74fba0b4c7c2adade210a9a54952b5d1269
+ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104561266"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "114436542"
 ---
 # <a name="block-compression-direct3d-10"></a>Compactação de bloco (Direct3D 10)
 
@@ -51,9 +51,9 @@ Os dados não compactados são dispostos na memória sequencialmente e exigem 16
 
 ### <a name="storing-compressed-data"></a>Armazenando dados compactados
 
-Agora que você já viu quanta memória uma imagem descompactada utiliza, dê uma olhada na quantidade de memória poupada por uma imagem compactada. O formato de compactação [BC1](#bc1) armazena 2 cores (1 byte cada) e 16 índices de 3 bits (48 bits, ou 6 bytes) que são usados para interpolar as cores originais na textura, conforme mostrado na ilustração a seguir.
+Agora que você já viu quanta memória uma imagem descompactada utiliza, dê uma olhada na quantidade de memória poupada por uma imagem compactada. O formato de compactação [BC4](#bc4) armazena 2 cores (1 byte cada) e índices de 16 3 bits (48 bits ou 6 bytes) que são usados para interpolar as cores originais na textura, conforme mostrado na ilustração a seguir.
 
-![ilustração do formato de compactação BC1](images/d3d10-block-compress-3.png)
+![ilustração do formato de compactação BC4](images/d3d10-block-compress-3.png)
 
 O espaço total obrigatório para armazenar os dados compactados é de 8 bytes, que é uma economia de memória de 50% em relação ao exemplo não compactado. A economia é ainda maior quando mais de um componente de cor é usado.
 
@@ -123,7 +123,7 @@ O algoritmo funciona em blocos de texels de 4 × 4. Em vez de armazenar 16 cores
 
 ![diagrama do layout da compactação BC1](images/d3d10-compression-bc1.png)
 
-Os índices de cor (a–p) são usados para procurar as cores originais em uma tabela de cores. A tabela de cores contém 4 cores. As duas primeiras cores — cor \_ 0 e cor \_ 1 — são as cores mínimas e máximas. As outras duas cores, cor \_ 2 e cor \_ 3, são cores intermediárias calculadas com interpolação linear.
+Os índices de cor (a–p) são usados para procurar as cores originais em uma tabela de cores. A tabela de cores contém 4 cores. As duas primeiras cores, \_ cor 0 e \_ cor 1, são as cores mínima e máxima. As outras duas cores, cor 2 e cor 3, são cores \_ \_ intermediárias calculadas com interpolação linear.
 
 
 ```
@@ -147,7 +147,7 @@ color_3 = 11
 
 Por fim, todas as cores nos blocos a–p são comparadas com as quatro cores na tabela de cores e o índice para a cor mais próxima é armazenado nos blocos de 2 bits.
 
-Esse algoritmo se compromete a dados que também contêm alfa de 1 bit. A única diferença é que a cor \_ 3 é definida como 0 (que representa uma cor transparente) e \_ a cor 2 é uma mistura linear de cor \_ 0 e cor \_ 1.
+Esse algoritmo se compromete a dados que também contêm alfa de 1 bit. A única diferença é que a cor 3 está definida como 0 (que representa uma cor transparente) e a cor 2 é uma combinação linear de cor 0 e \_ \_ cor \_ \_ 1.
 
 
 ```
@@ -167,7 +167,7 @@ color_3 = 0;
 <tr class="odd">
 <td>Diferenças entre o Direct3D 9 e o Direct3D 10:<br/> Esse formato existe tanto no Direct3D 9 quanto no 10.<br/>
 <ul>
-<li>No Direct3D 9, o formato BC1 é chamado de D3DFMT_DXT1.</li>
+<li>No Direct3D 9, o formato BC1 é chamado D3DFMT_DXT1.</li>
 <li>No Direct3D 10, o formato BC1 é representado por DXGI_FORMAT_BC1_UNORM ou DXGI_FORMAT_BC1_UNORM_SRGB.</li>
 </ul></td>
 </tr>
@@ -180,11 +180,11 @@ color_3 = 0;
 
 ### <a name="bc2"></a>BC2
 
-Use o formato BC2 (um \_ formato dxgi \_ BC2 sem \_ tipo, \_ formato DXGI \_ BC2 \_ UNORM ou dxgi \_ BC2 \_ UNORM \_ sRGB) para armazenar dados que contêm dados de cor e alfa com coerência baixa (use [BC3](#bc3) para dados alfa altamente coerentes). O formato BC2 armazena dados RGB como uma cor 5:6:5 (5 bits de vermelho, 6 bits de verde, 5 bits de azul) e alfa como um valor de 4 bits separado. Pressupondo uma textura de 4 × 4 usando o formato de dados maior possível, essa técnica de compactação reduz a memória necessária de 64 bytes (16 cores × 4 componentes/cor × 1 byte/componente) para 16 bytes de memória.
+Use o formato BC2 (DXGI \_ FORMAT \_ BC2 \_ TYPELESS, DXGI \_ FORMAT \_ BC2 UNORM ou \_ DXGI \_ BC2 \_ UNORM SRGB) \_ [](#bc3) para armazenar dados que contenham dados alfa e cor com baixa coerência (use BC3 para dados alfa altamente coerentes). O formato BC2 armazena dados RGB como uma cor 5:6:5 (5 bits de vermelho, 6 bits de verde, 5 bits de azul) e alfa como um valor de 4 bits separado. Pressupondo uma textura de 4 × 4 usando o formato de dados maior possível, essa técnica de compactação reduz a memória necessária de 64 bytes (16 cores × 4 componentes/cor × 1 byte/componente) para 16 bytes de memória.
 
 O formato BC2 armazena cores com o mesmo número de bits e dados de layout como o formato [BC1](#bc1), no entanto, o BC2 requer 64-bits adicionais de memória para armazenar os dados alfa, conforme mostrado no diagrama a seguir.
 
-![diagrama do layout da compactação BC2](images/d3d10-compression-bc2.png)
+![diagrama do layout para compactação bc2](images/d3d10-compression-bc2.png)
 
 <table>
 <colgroup>
@@ -194,7 +194,7 @@ O formato BC2 armazena cores com o mesmo número de bits e dados de layout como 
 <tr class="odd">
 <td>Diferenças entre o Direct3D 9 e o Direct3D 10:<br/> Esse formato existe tanto no Direct3D 9 quanto no 10.<br/>
 <ul>
-<li>No Direct3D 9, o formato BC2 é chamado de D3DFMT_DXT2 e D3DFMT_DXT3.</li>
+<li>No Direct3D 9, o formato BC2 é chamado D3DFMT_DXT2 e D3DFMT_DXT3.</li>
 <li>No Direct3D 10, o formato BC2 é representado por DXGI_FORMAT_BC2_UNORM ou DXGI_FORMAT_BC2_UNORM_SRGB.</li>
 </ul></td>
 </tr>
@@ -207,17 +207,17 @@ O formato BC2 armazena cores com o mesmo número de bits e dados de layout como 
 
 ### <a name="bc3"></a>BC3
 
-Use o formato BC3 (um \_ formato dxgi \_ BC3 sem \_ tipo, \_ formato DXGI \_ BC3 \_ UNORM ou dxgi \_ BC3 \_ UNORM \_ sRGB) para armazenar dados de cores altamente coerentes (use [BC2](#bc2) com dados alfa menos coerentes). O formato BC3 armazena dados de cor usando cor 5:6:5 (5 bits de vermelho, 6 bits de verde, 5 bits de azul) e dados alfa usando um byte. Pressupondo uma textura de 4 × 4 usando o formato de dados maior possível, essa técnica de compactação reduz a memória necessária de 64 bytes (16 cores × 4 componentes/cor × 1 byte/componente) para 16 bytes de memória.
+Use o formato BC3 (DXGI \_ FORMAT \_ BC3 \_ TYPELESS, DXGI \_ FORMAT \_ BC3 UNORM ou \_ DXGI \_ BC3 \_ UNORM SRGB) \_ [](#bc2) para armazenar dados de cor altamente coerentes (use BC2 com dados alfa menos coerentes). O formato BC3 armazena dados de cor usando cor 5:6:5 (5 bits de vermelho, 6 bits de verde, 5 bits de azul) e dados alfa usando um byte. Pressupondo uma textura de 4 × 4 usando o formato de dados maior possível, essa técnica de compactação reduz a memória necessária de 64 bytes (16 cores × 4 componentes/cor × 1 byte/componente) para 16 bytes de memória.
 
 O formato BC3 armazena cores com o mesmo número de bits e layout de dados que o formato [BC1](#bc1), no entanto, o BC3 requer 64 bits adicionais de memória para armazenar os dados alfa. O formato BC3 manipula o alfa armazenando dois valores de referência e interpolando entre eles (da mesma forma como o BC1 armazena cor RGB).
 
-O algoritmo funciona em blocos de texels de 4 × 4. Em vez de armazenar 16 valores Alfa, o algoritmo armazena 2 Alfas de referência (alfa \_ 0 e alfa \_ 1) e índices de cores de 16 3 bits (alfa a até p), conforme mostrado no diagrama a seguir.
+O algoritmo funciona em blocos de texels de 4 × 4. Em vez de armazenar 16 valores alfa, o algoritmo armazena dois alfas de referência (alfa 0 e \_ alfa 1) e 16 índices de cor de 3 bits (alfa a a p), conforme mostrado no diagrama \_ a seguir.
 
-![diagrama do layout da compactação BC3](images/d3d10-compression-bc3.png)
+![diagrama do layout para compactação bc3](images/d3d10-compression-bc3.png)
 
-O formato BC3 usa os índices de alfa (a–p) para procurar as cores originais em uma tabela de pesquisa que contém 8 valores. Os dois primeiros valores — Alfa \_ 0 e alfa \_ 1 — são os valores mínimo e máximo; os outros seis valores intermediários são calculados usando interpolação linear.
+O formato BC3 usa os índices de alfa (a–p) para procurar as cores originais em uma tabela de pesquisa que contém 8 valores. Os dois primeiros valores – alfa 0 e alfa 1 – são os valores mínimo e máximo; os outros seis valores intermediários são calculados usando \_ \_ interpolação linear.
 
-O algoritmo determina o número de valores alfa interpolados examinando os dois valores alfa de referência. Se alfa \_ 0 for maior que alfa \_ 1, BC3 interpolará 6 valores Alfa; caso contrário, ele interpolará 4. Quando o BC3 interpola apenas 4 valores alfa, ele define dois valores alfa adicionais (0 para totalmente transparente e 255 para totalmente opaco). O BC3 compacta os valores alfabéticos na área de texel de 4 × 4, armazenando o código de bit correspondente aos valores alfa interpolados que melhor correspondem ao alfa original para um determinado texel.
+O algoritmo determina o número de valores alfa interpolados examinando os dois valores alfa de referência. Se alfa \_ 0 for maior que alfa \_ 1, BC3 interpola 6 valores alfa; caso contrário, interpola 4. Quando o BC3 interpola apenas 4 valores alfa, ele define dois valores alfa adicionais (0 para totalmente transparente e 255 para totalmente opaco). O BC3 compacta os valores alfabéticos na área de texel de 4 × 4, armazenando o código de bit correspondente aos valores alfa interpolados que melhor correspondem ao alfa original para um determinado texel.
 
 
 ```
@@ -255,7 +255,7 @@ else
 <tr class="odd">
 <td>Diferenças entre o Direct3D 9 e o Direct3D 10:<br/>
 <ul>
-<li>No Direct3D 9, o formato BC3 é chamado de D3DFMT_DXT4 e D3DFMT_DXT5.</li>
+<li>No Direct3D 9, o formato BC3 é chamado D3DFMT_DXT4 e D3DFMT_DXT5.</li>
 <li>No Direct3D 10, o formato BC3 é representado por DXGI_FORMAT_BC3_UNORM ou DXGI_FORMAT_BC3_UNORM_SRGB.</li>
 </ul></td>
 </tr>
@@ -268,15 +268,15 @@ else
 
 ### <a name="bc4"></a>BC4
 
-Use o formato BC4 para armazenar dados de cor de um componente usando 8 bits para cada cor. Como resultado da maior precisão (em comparação com [BC1](#bc1)), o BC4 é ideal para armazenar dados de ponto flutuante no intervalo de \[ 0 a 1 \] usando o formato dxgi \_ \_ BC4 \_ UNORM e \[ -1 a + 1 \] usando o formato dxgi \_ BC4 SNORM \_ \_ Format. Pressupondo uma textura de 4 × 4 usando o formato de dados maior possível, essa técnica de compactação reduz a memória necessária de 16 bytes (16 cores × 1 componentes/cor × 1 byte/componente) para 8 bytes.
+Use o formato BC4 para armazenar dados de cor de um componente usando 8 bits para cada cor. Como resultado da maior precisão (em comparação com [BC1), BC4](#bc1)é ideal para armazenar dados de ponto flutuante no intervalo de 0 a 1 usando o formato \[ \] DXGI FORMATO BC4 UNORM e -1 para +1 usando o formato \_ \_ \_ \[ \] \_ \_ SNORM BC4 formato \_ DXGI. Pressupondo uma textura de 4 × 4 usando o formato de dados maior possível, essa técnica de compactação reduz a memória necessária de 16 bytes (16 cores × 1 componentes/cor × 1 byte/componente) para 8 bytes.
 
-O algoritmo funciona em blocos de texels de 4 × 4. Em vez de armazenar 16 cores, o algoritmo armazena 2 cores de referência (vermelho \_ 0 e vermelho \_ 1) e índices de cores de 16 3 bits (vermelho a por meio do Red p), conforme mostrado no diagrama a seguir.
+O algoritmo funciona em blocos de texels de 4 × 4. Em vez de armazenar 16 cores, o algoritmo armazena duas cores de referência (vermelho 0 e vermelho 1) e índices de cor de \_ 16 3 bits (vermelho a a p vermelho), conforme mostrado no diagrama \_ a seguir.
 
-![diagrama do layout da compactação BC4](images/d3d10-compression-bc4.png)
+![diagrama do layout para compactação bc4](images/d3d10-compression-bc4.png)
 
-O algoritmo usa os índices de 3 bits para procurar as cores em uma tabela de cores que contém 8 cores. As duas primeiras cores — vermelho \_ 0 e vermelho \_ 1 — são as cores mínimas e máximas. O algoritmo calcula as cores restantes usando interpolação linear.
+O algoritmo usa os índices de 3 bits para procurar as cores em uma tabela de cores que contém 8 cores. As duas primeiras cores, \_ vermelho 0 e \_ vermelho 1, são as cores mínima e máxima. O algoritmo calcula as cores restantes usando interpolação linear.
 
-O algoritmo determina o número de valores de cor interpolados examinando os dois valores de referência. Se o vermelho \_ 0 for maior que o vermelho \_ 1, BC4 interpolará 6 valores de cor; caso contrário, ele interpolará 4. Quando o BC4 interpola apenas 4 valores de cor, ele define dois valores de cor adicional (0.0f para totalmente transparente e 1.0f para totalmente opaco). O BC4 compacta os valores alfabéticos na área de texel de 4 × 4, armazenando o código de bit correspondente aos valores alfa interpolados que melhor correspondem ao alfa original para um determinado texel.
+O algoritmo determina o número de valores de cor interpolados examinando os dois valores de referência. Se vermelho \_ 0 for maior que \_ vermelho 1, BC4 interpola 6 valores de cor; caso contrário, interpola 4. Quando o BC4 interpola apenas 4 valores de cor, ele define dois valores de cor adicional (0.0f para totalmente transparente e 1.0f para totalmente opaco). O BC4 compacta os valores alfabéticos na área de texel de 4 × 4, armazenando o código de bit correspondente aos valores alfa interpolados que melhor correspondem ao alfa original para um determinado texel.
 
 -   [BC4 \_ UNORM](/windows)
 -   [BC4 \_ SNORM](/windows)
@@ -317,7 +317,7 @@ As cores de referência recebem índices de 3 bits (000 – 111, uma vez que há
 
 ### <a name="bc4_snorm"></a>BC4 \_ SNORM
 
-O \_ formato dxgi \_ BC4 \_ SNORM é exatamente o mesmo, exceto que os dados são codificados no intervalo de SNORM e quando quatro valores de cor são interpolados. A interpolação dos dados de componente único é feita como no exemplo de código a seguir.
+O FORMATO DXGI BC4 SNORM é exatamente o mesmo, exceto que os dados são codificados no intervalo SNORM e quando 4 valores de cor são \_ \_ \_ interpolados. A interpolação dos dados de componente único é feita como no exemplo de código a seguir.
 
 
 ```
@@ -351,15 +351,15 @@ As cores de referência recebem índices de 3 bits (000 – 111, uma vez que há
 
 ### <a name="bc5"></a>BC5
 
-Use o formato BC5 para armazenar dados de cor de dois componentes usando 8 bits para cada cor. Como resultado da maior precisão (em comparação com [BC1](#bc1)), o BC5 é ideal para armazenar dados de ponto flutuante no intervalo de \[ 0 a 1 \] usando o formato dxgi \_ \_ BC5 \_ UNORM e \[ -1 a + 1 \] usando o formato dxgi \_ BC5 SNORM \_ \_ Format. Pressupondo uma textura de 4 × 4 usando o formato de dados maior possível, essa técnica de compactação reduz a memória necessária de 32 bytes (16 cores × 2 componentes/cor × 1 byte/componente) para 16 bytes.
+Use o formato BC5 para armazenar dados de cor de dois componentes usando 8 bits para cada cor. Como resultado da maior precisão (em comparação com [BC1),](#bc1)BC5 é ideal para armazenar dados de ponto flutuante no intervalo de 0 a 1 usando o formato \[ \] UNORM FORMATO DXGI BC5 e -1 para +1 usando o formato \_ \_ \_ \[ \] \_ \_ SNORM BC5 formato \_ DXGI. Pressupondo uma textura de 4 × 4 usando o formato de dados maior possível, essa técnica de compactação reduz a memória necessária de 32 bytes (16 cores × 2 componentes/cor × 1 byte/componente) para 16 bytes.
 
-O algoritmo funciona em blocos de texels de 4 × 4. Em vez de armazenar 16 cores para ambos os componentes, o algoritmo armazena 2 cores de referência para cada componente (vermelho \_ 0, vermelho \_ 1, verde \_ 0 e verde \_ 1) e índices de cores de 16 3 bits para cada componente (vermelho a por meio de p vermelho e verde a até verde p), conforme mostrado no diagrama a seguir.
+O algoritmo funciona em blocos de texels de 4 × 4. Em vez de armazenar 16 cores para ambos os componentes, o algoritmo armazena duas cores de referência para cada componente (vermelho \_ 0, vermelho 1, verde 0 e verde 1) e índices de cor de \_ \_ 16 3 bits para cada componente (vermelho a até p vermelho e verde a até p verde), conforme mostrado no diagrama \_ a seguir.
 
-![diagrama do layout da compactação Bc5](images/d3d10-compression-bc5.png)
+![diagrama do layout para compactação bc5](images/d3d10-compression-bc5.png)
 
-O algoritmo usa os índices de 3 bits para procurar as cores em uma tabela de cores que contém 8 cores. As duas primeiras cores — vermelho \_ 0 e vermelho \_ 1 (ou verde \_ 0 e verde \_ 1) — são as cores mínimas e máximas. O algoritmo calcula as cores restantes usando interpolação linear.
+O algoritmo usa os índices de 3 bits para procurar as cores em uma tabela de cores que contém 8 cores. As duas primeiras cores– vermelho 0 e vermelho 1 (ou verde 0 e verde \_ 1) – são as cores \_ \_ mínima e \_ máxima. O algoritmo calcula as cores restantes usando interpolação linear.
 
-O algoritmo determina o número de valores de cor interpolados examinando os dois valores de referência. Se o vermelho \_ 0 for maior que o vermelho \_ 1, BC5 interpolará 6 valores de cor; caso contrário, ele interpolará 4. Quando o BC5 interpola apenas 4 valores de cor, ele define os dois valores de cor restantes em 0.0f e 1.0f.
+O algoritmo determina o número de valores de cor interpolados examinando os dois valores de referência. Se vermelho \_ 0 for maior que \_ vermelho 1, BC5 interpola 6 valores de cor; caso contrário, interpola 4. Quando o BC5 interpola apenas 4 valores de cor, ele define os dois valores de cor restantes em 0.0f e 1.0f.
 
 -   [BC5 \_ UNORM](/windows)
 -   [BC5 \_ SNORM](/windows)
@@ -400,7 +400,7 @@ As cores de referência recebem índices de 3 bits (000 – 111, uma vez que há
 
 ### <a name="bc5_snorm"></a>BC5 \_ SNORM
 
-O \_ formato dxgi \_ BC5 \_ SNORM é exatamente o mesmo, exceto que os dados são codificados no intervalo de SNORM e quando 4 valores de dados são interpolados, os dois valores adicionais são-1,0 f e 1,0 f. A interpolação dos dados de componente único é feita como no exemplo de código a seguir. Os cálculos para os componentes verdes são semelhantes.
+O FORMATO DXGI BC5 SNORM é exatamente o mesmo, exceto que os dados são codificados no intervalo SNORM e quando 4 valores de dados são interpolados, os dois valores adicionais são \_ \_ \_ -1,0f e 1,0f. A interpolação dos dados de componente único é feita como no exemplo de código a seguir. Os cálculos para os componentes verdes são semelhantes.
 
 
 ```
@@ -432,11 +432,11 @@ else
 
 As cores de referência recebem índices de 3 bits (000 – 111, uma vez que há 8 valores), que serão salvos em blocos na cor vermelha a até a cor vermelha p durante a compactação.
 
-## <a name="format-conversion-using-direct3d-101"></a>Conversão de formato usando o Direct3D 10,1
+## <a name="format-conversion-using-direct3d-101"></a>Conversão de formato usando o Direct3D 10.1
 
-O Direct3D 10,1 permite cópias entre texturas de tipo preestruturadas e texturas compactadas de bloco das mesmas larguras de bits. As funções que podem fazer isso são [**CopyResource**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copyresource) e [**CopySubresourceRegion**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copysubresourceregion).
+O Direct3D 10.1 permite cópias entre texturas pré-estruturadas e texturas compactadas em bloco das mesmas larguras de bits. As funções que podem fazer isso são [**CopyResource**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copyresource) e [**CopySubresourceRegion.**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copysubresourceregion)
 
-A partir do Direct3D 10,1, você pode usar [**CopyResource**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copyresource) e [**CopySubresourceRegion**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copysubresourceregion) para copiar entre alguns tipos de formato. Esse tipo de operação de cópia executa um tipo de conversão de formato que reinterpreta os dados de recursos como um tipo de formato diferente. Considere este exemplo que mostra a diferença entre a reinterpretação de dados com o comportamento de um tipo mais comum de conversão:
+A partir do Direct3D 10.1, você pode usar [**CopyResource**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copyresource) e [**CopySubresourceRegion**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-copysubresourceregion) para copiar entre alguns tipos de formato. Esse tipo de operação de cópia executa um tipo de conversão de formato que reinterpreta os dados de recursos como um tipo de formato diferente. Considere este exemplo que mostra a diferença entre a reinterpretação de dados com o comportamento de um tipo mais comum de conversão:
 
 
 ```
@@ -446,7 +446,7 @@ A partir do Direct3D 10,1, você pode usar [**CopyResource**](/windows/desktop/a
 
 
 
-Para reinterpretar ' f ' como o tipo de ' u ', use [memcpy](/cpp/c-runtime-library/reference/memcpy-wmemcpy):
+Para reinterpretar 'f' como o tipo de 'u', use [memcpy](/cpp/c-runtime-library/reference/memcpy-wmemcpy):
 
 
 ```

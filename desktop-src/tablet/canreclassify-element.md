@@ -1,19 +1,19 @@
 ---
-description: Quando true, indica que a tinta pode ser analisada novamente. Esse elemento será false se o usuário tiver definido explicitamente o tipo de tinta usando converter manuscrito em texto ou alterar forma para recursos do diário.
+description: Quando true, indica que a tinta pode ser re analisada. Esse elemento será false se o usuário tiver definido explicitamente o tipo da tinta usando os recursos Converter Manuscrito em Texto ou Alterar Forma para de Diário.
 ms.assetid: d1b9bd7f-e420-4290-a542-f1216b6ef203
 title: Elemento CanReClassify
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c8c2898ce789e8c967c74ca26d2ab46d968c22d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8f243b4237e0dd9195a2a254a06cd86dceb31b63
+ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646550"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "114436471"
 ---
 # <a name="canreclassify-element"></a>Elemento CanReClassify
 
-Quando **true**, indica que a tinta pode ser analisada novamente. Esse elemento será **false** se o usuário tiver definido explicitamente o tipo de tinta usando converter manuscrito em texto ou alterar forma para recursos do diário.
+Quando **true**, indica que a tinta pode ser re analisada. Esse elemento será **false** se o usuário tiver definido explicitamente o tipo da tinta usando os recursos Converter Manuscrito em Texto ou Alterar Forma para de Diário.
 
 ## <a name="definition"></a>Definição
 
@@ -23,7 +23,7 @@ Quando **true**, indica que a tinta pode ser analisada novamente. Esse elemento 
 
 ## <a name="parent-elements"></a>Elementos pai
 
-[**Senha**](drawing-element.md)
+[**Desenho**](drawing-element.md)
 
 ## <a name="child-elements"></a>Elementos filho
 
@@ -37,11 +37,11 @@ Nenhum.
 
 
 
-|              |                                            |
-|--------------|--------------------------------------------|
-| Tipo de elemento | **xs:boolean**                             |
-| Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk |
-| Nome do esquema  | Leitor de diário                             |
+|                  | Valor                                      |
+|------------------|--------------------------------------------|
+| **Tipo de elemento** | xs:boolean                                 |
+| **Namespace**    | urn:schemas-microsoft-com:tabletpc:richink |
+| **Nome do esquema**  | Leitor de Diário                             |
 
 
 

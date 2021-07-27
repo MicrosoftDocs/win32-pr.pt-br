@@ -1,5 +1,5 @@
 ---
-description: O Windows Vista apresenta novos cenários de armazenamento e um novo namespace de perfil de usuário.
+description: Windows O Vista apresenta novos cenários de armazenamento e um novo namespace de perfil de usuário.
 title: Pastas conhecidas
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 7527b7242c68f0d6c78cd0fae427626c182302f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3b5fbdaf0086f88fc4eed42ce47749a99ab07b40
+ms.sourcegitcommit: 8bfe4f468ee5de7bbe096e5db81e427db53d977c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968073"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114680309"
 ---
 # <a name="known-folders"></a>Pastas conhecidas
 
-O Windows Vista apresenta novos cenários de armazenamento e um novo namespace de perfil de usuário. Para resolver esses novos fatores, o sistema mais antigo de se referir a pastas padrão por um valor de [**CSIDL**](csidl.md) foi substituído. A partir do Windows Vista, essas pastas são referenciadas por um novo conjunto de valores GUID chamado IDs de pasta conhecidas.
+Windows O Vista apresenta novos cenários de armazenamento e um novo namespace de perfil de usuário. Para resolver esses novos fatores, o sistema mais antigo de se referir a pastas padrão por um valor de [**CSIDL**](csidl.md) foi substituído. a partir do Windows Vista, essas pastas são referenciadas por um novo conjunto de valores GUID chamado IDs de pasta conhecida.
 
 O sistema de pastas conhecido fornece estas vantagens:
 
@@ -56,15 +56,11 @@ As páginas de referência a seguir explicam as APIs de pastas conhecidas do COM
 -   [**IKnownFolder**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iknownfolder)
 -   [**IKnownFolderManager**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iknownfoldermanager)
 
-Um exemplo de C++ que demonstra as APIs de pasta conhecidas está incluído no SDK (Software Development Kit) do Windows. Depois de instalar o SDK do Windows em seu computador, o exemplo poderá ser encontrado em% ProgramFiles% \\ Microsoft SDKs \\ Windows \\ v 6.0 \\ Samples \\ WinUI \\ shell \\ AppPlatform \\ KnownFolders.
+um exemplo de C++ que demonstra as APIs de pasta conhecidas está incluído no SDK (Software Development Kit) do Windows. depois de instalar o SDK do Windows em seu computador, o exemplo poderá ser encontrado em% programfiles% \\ Microsoft SDKs \\ Windows \\ v 6.0 \\ samples \\ WinUI \\ Shell \\ AppPlatform \\ KnownFolders.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Exemplo de pastas conhecidas](/previous-versions/windows/desktop/legacy/dd940364(v=vs.85))
+[Exemplo de pastas conhecidas](/windows/win32/shell/samples-knownfolders)
 </dt> </dl>
-
- 
-
- 

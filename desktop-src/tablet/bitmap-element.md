@@ -4,12 +4,12 @@ ms.assetid: 27578a45-e6b4-4e87-9541-0e83bc67dfc5
 title: Elemento Bitmap
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd99c9f372c0141c2898abd61eba3ae952ffa4fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 40fd0e133604a29746357a0ff7b2dd17180f73c4
+ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105812120"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "114436481"
 ---
 # <a name="bitmap-element"></a>Elemento Bitmap
 
@@ -37,11 +37,11 @@ Nenhum.
 
 
 
-|              |                                            |
-|--------------|--------------------------------------------|
-| Tipo de elemento | **xs:base64Binary**                        |
-| Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk |
-| Nome do esquema  | Leitor de diário                             |
+|                  | Valor                                      |
+|------------------|--------------------------------------------|
+| **Tipo de elemento** | xs:base64Binary                            |
+| **Namespace**    | urn: esquemas-Microsoft-com: Tablet: RichInk |
+| **Nome do esquema**  | Leitor de diário                             |
 
 
 

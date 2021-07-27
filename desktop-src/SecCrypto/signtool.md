@@ -4,21 +4,21 @@ description: SignTool é uma ferramenta de linha de comando que assina arquivos 
 ms.assetid: aa59cb35-5fba-4ce8-97ea-fc767c83f88e
 ms.topic: article
 ms.date: 10/12/2020
-ms.openlocfilehash: 884d4c132a2877a51cef7610dd32e8ef6b9c4bc3
-ms.sourcegitcommit: 25e1fa2b3641ae13b79e0afdf9cb7a168d99e009
+ms.openlocfilehash: f738eddb6e47da12297bffd13a816398ba2c46c9
+ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "104366875"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "114436441"
 ---
 # <a name="signtool"></a>SignTool
 
-SignTool é uma ferramenta de linha de comando que assina arquivos digitalmente, verifica as assinaturas em arquivos e arquivos de carimbos de data/hora. Para obter informações sobre por que a assinatura de arquivos é importante, consulte [introdução à assinatura de código](cryptography-tools.md). A ferramenta é instalada na \\ pasta bin do caminho de instalação do SDK (Software Development Kit) do Microsoft Windows.
+SignTool é uma ferramenta de linha de comando que assina arquivos digitalmente, verifica as assinaturas em arquivos e arquivos de carimbos de data/hora. Para obter informações sobre por que a assinatura de arquivos é importante, consulte [introdução à assinatura de código](cryptography-tools.md). a ferramenta é instalada na \\ pasta Bin do caminho de instalação do Software Development Kit (SDK) do Microsoft Windows (exemplo: C:\Program files (x86) \ Windows Kits\10\bin\10.0.19041.0\x64\signtool.exe).
 
-O SignTool está disponível como parte do SDK do Windows, do qual você pode baixar <https://developer.microsoft.com/windows/downloads/windows-10-sdk/> .
+o SignTool está disponível como parte do SDK do Windows, do qual você pode baixar <https://developer.microsoft.com/windows/downloads/windows-10-sdk/> .
 
 > [!Note]  
-> O Windows 10 SDK, Windows 10 HLK, Windows 10 WDK e Windows 10 ADK **builds 20236 e posteriores** agora exigirão a especificação do algoritmo Digest. O comando de sinal de SignTool requer que a `file digest algorithm` opção/FD e/TD `timestamp digest algorithm` seja especificada durante a assinatura e o carimbo de data/hora, respectivamente. Um aviso (código de erro 0, inicialmente) será gerado se/FD não for especificado durante a assinatura e se/TD não for especificado durante o carimbo de data/hora. Em versões posteriores de SignTool, o aviso se tornará um erro. SHA256 é recomendado e considerado mais seguro do que o SHA1 pelo setor.  
+> o SDK Windows 10, Windows 10 HLK, Windows 10 WDK e Windows 10 o ADK **builds 20236 e posteriores** agora exigirão a especificação do algoritmo digest. O comando de sinal de SignTool requer que a `file digest algorithm` opção/FD e/TD `timestamp digest algorithm` seja especificada durante a assinatura e o carimbo de data/hora, respectivamente. Um aviso (código de erro 0, inicialmente) será gerado se/FD não for especificado durante a assinatura e se/TD não for especificado durante o carimbo de data/hora. Em versões posteriores de SignTool, o aviso se tornará um erro. SHA256 é recomendado e considerado mais seguro do que o SHA1 pelo setor.  
 
 
 ## <a name="syntax"></a>Sintaxe  
@@ -53,7 +53,7 @@ Os comandos a seguir têm suporte de SignTool.
 |**/v**|Exibe saída detalhada, independentemente de o comando ser executado com êxito ou falhar, além de exibir mensagens de aviso.|  
 |**/debug**|Exibe informações de depuração.|  
 
- 
+ 
 ## <a name="catdb-command-options"></a>Opções de comando CatDB  
 
  A tabela a seguir lista as opções que podem ser usadas com o comando `Catdb`.
@@ -81,31 +81,31 @@ Os comandos a seguir têm suporte de SignTool.
 |`/c`  *CertTemplateName*|Especifica o Nome do Modelo de Certificado (uma extensão da Microsoft) para o certificado de assinatura.|  
 |`/csp`  *CSPName*|Especifica o provedor de serviços de criptografia (CSP) que contém o contêiner de chave privada.|  
 |`/d`  *Crescente*|Especifica uma descrição do conteúdo assinado.|  
-|`/dg`  *Caminho*|Gera o resumo a ser assinado e os arquivos PKCS7 não assinados. Os arquivos Digest e PKCS7 de saída serão: *Path\FileName.Dig* e *Path\FileName.p7u*. Para gerar um arquivo XML adicional, consulte <strong>/DXML</strong>.|  
-|`/di`  *Caminho*|Cria a assinatura ingerindo o resumo assinado para o arquivo PKCS7 não assinado. O resumo assinado de entrada e os arquivos PKCS7 não assinados devem ser: *Path\FileName.dig.Signed* e *Path\FileName.p7u*.|  
+|`/dg`  *Multi-Path*|Gera o resumo a ser assinado e os arquivos PKCS7 não assinados. Os arquivos Digest e PKCS7 de saída serão: *Path\FileName.Dig* e *Path\FileName.p7u*. Para gerar um arquivo XML adicional, consulte <strong>/DXML</strong>.|  
+|`/di`  *Multi-Path*|Cria a assinatura ingerindo o resumo assinado para o arquivo PKCS7 não assinado. O resumo assinado de entrada e os arquivos PKCS7 não assinados devem ser: *Path\FileName.dig.Signed* e *Path\FileName.p7u*.|  
 |`/dlib`  *DLL*|Especifica a DLL que implementa a <code>AuthenticodeDigestSign</code> função com a qual assinar o resumo. Essa opção é equivalente a usar <strong>SignTool</strong> separadamente com os comutadores <strong>/DG</strong>, <strong>/DS</strong>e <strong>/di</strong> , exceto que essa opção invoca todas as três como uma operação atômica.|  
-|`/dmdf`  *Nome do arquivo*|Quando usado com a opção <strong>/DG</strong> , passa o conteúdo do arquivo para a <code>AuthenticodeDigestSign</code> função sem modificação.|  
+|`/dmdf`  *Nome de arquivo*|Quando usado com a opção <strong>/DG</strong> , passa o conteúdo do arquivo para a <code>AuthenticodeDigestSign</code> função sem modificação.|  
 |`/ds`  |Assina apenas o resumo. O arquivo de entrada deve ser o resumo gerado pela opção <strong>/DG</strong> . O arquivo de saída será: *File. Signed*.|  
 |`/du`  *URL*|Especifica uma URL (Uniform Resource Locator) para obter a descrição expandida do conteúdo assinado.|  
 |`/dxml`  |Quando usado com a opção <strong>/DG</strong> , o produz um arquivo XML. O arquivo de saída será: *Path\FileName.dig.xml*.|  
 |`/f`  *SignCertFile*|Especifica o certificado de assinatura em um arquivo. Se o arquivo estiver no formato PFX (Personal Information Exchange) e protegido por senha, use a opção `/p` para especificar a senha. Se o arquivo não contiver chaves privadas, use as opções `/csp` e `/kc` para especificar o CSP e o nome do contêiner de chave privada.|  
-|`/fd`*alg*|Especifica o algoritmo de resumo do arquivo a ser usado na criação de assinaturas de arquivo. </br> **Observação:** Um aviso será gerado se A opção <strong>/FD</strong> não for fornecida durante a assinatura. O alg padrão é SHA1, mas SHA256 é recomendado.|
-|`/fd`  *certHash*|A especificação da cadeia de caracteres certHash usará como padrão o algoritmo usado no certificado de autenticação. </br> **Observação:** Somente disponível no Windows 10 kit compilações 20236 e posteriores.|  
+|`/fd`*alg*|Especifica o algoritmo de resumo do arquivo a ser usado na criação de assinaturas de arquivo. </br> **Observação:** Um aviso será gerado se <strong>a opção /fd</strong> não for fornecida durante a assinatura. A alg padrão é SHA1, mas SHA256 é recomendado.|
+|`/fd`  *certHash*|Especificar a cadeia de caracteres certHash será padrão para o algoritmo usado no certificado de assinatura. </br> **Observação:** Disponível apenas no Windows 10 kit de builds 20236 e superior.|  
 |`/i`  *IssuerName*|Especifica o nome do emissor de certificado de assinatura. Esse valor pode ser uma subcadeia de caracteres do nome do emissor inteiro.|  
 |`/kc`  *PrivKeyContainerName*|Especifica o nome do contêiner de chave privada.|  
 |`/n`  *SubjectName*|Especifica o nome do assunto do certificado de assinatura. Esse valor pode ser uma subcadeia de caracteres do nome da entidade inteiro.|  
 |`/nph`|Se compatível, suprime hashes de página para arquivos executáveis. O padrão é determinado pela variável de ambiente SIGNTOOL_PAGE_HASHES e pela versão de wintrust.dll. Essa opção é ignorada para arquivos não PE.|  
 |`/p`  *Senha*|Especifica a senha a ser usada durante a abertura de um arquivo PFX. (Use a opção `/f` para especificar um arquivo PFX).|  
-|`/p7` *Caminho*|Especifica se um arquivo PKCS (Public Key Cryptography Standards) #7 é produzido para cada arquivo de conteúdo especificado. Arquivos de #7 PKCS são nomeados *path* \\ *filename*. P7.|  
+|`/p7` *Caminho*|Especifica se um arquivo PKCS (Public Key Cryptography Standards) #7 é produzido para cada arquivo de conteúdo especificado. Arquivos PKCS #7 são nomeados *nome* \\ *de arquivo de caminho*.p7.|  
 |`/p7ce` *Valor*|Especifica opções para o conteúdo de PKCS #7 assinado. Defina *Value* como “Embedded” para inserir o conteúdo assinado no arquivo PKCS #7 ou como “DetachedSignedData” para produzir a parte de dados assinada de um arquivo PKCS #7 desanexado. Se a opção `/p7ce` não for usada, o conteúdo assinado será inserido por padrão.|  
 |`/p7co` *\<OID>*|Especifica o OID (identificador de objeto) que identifica o conteúdo assinado de PKCS #7.|  
 |`/ph`|Se compatível, gera hashes de página para arquivos executáveis.|  
 |`/r`  *RootSubjectName*|Especifica o nome do assunto do certificado raiz em que o certificado de assinatura deve ser encadeado. Esse valor pode ser uma subcadeia de caracteres do nome de entidade inteiro do certificado raiz.|  
-|`/s`  *StoreName*|Especifica o armazenamento a ser aberto durante a pesquisa pelo certificado. Se essa opção não for especificada, o armazenamento `My` será aberto.|  
-|`/sha1`  *Tralha*|Especifica o hash SHA1 do certificado de assinatura. O hash SHA1 costuma ser especificado quando vários certificados atendem aos critérios especificados pelas opções restantes.|  
+|`/s`  *Storename*|Especifica o armazenamento a ser aberto durante a pesquisa pelo certificado. Se essa opção não for especificada, o armazenamento `My` será aberto.|  
+|`/sha1`  *Hash*|Especifica o hash SHA1 do certificado de assinatura. O hash SHA1 costuma ser especificado quando vários certificados atendem aos critérios especificados pelas opções restantes.|  
 |`/sm`|Especifica se um armazenamento do computador, em vez de um armazenamento de usuário, é usado.|  
 |`/t`  *URL*|Especifica a URL do servidor de carimbo de data/hora. Se essa opção (ou `/tr`) não estiver presente, o arquivo assinado não receberá carimbo de data/hora. Um aviso será gerado se o carimbo de data/hora falhar. Essa opção não pode ser usada com a opção `/tr`.|  
-|`/td`  *ALG*|Usado com a opção `/tr` para solicitar um algoritmo de resumo usado pelo servidor do carimbo de data/hora RFC 3161. </br> **Observação:** Um aviso será gerado se A opção <strong>/td</strong> não for fornecida durante o carimbo de data/hora. O alg padrão é SHA1, mas SHA256 é recomendado. <br/> A opção <strong>/td</strong> deve ser declarada após a opção <strong>/TR</strong> , não antes de. Se a opção <strong>/td</strong> for declarada antes da opção <strong>/TR</strong> , o carimbo de data/hora retornado será de um algoritmo SHA1 em vez do algoritmo SHA256 pretendido. |
+|`/td`  *Alg*|Usado com a opção `/tr` para solicitar um algoritmo de resumo usado pelo servidor do carimbo de data/hora RFC 3161. </br> **Observação:** Um aviso será gerado se <strong>a opção /td</strong> não for fornecida durante o data/hora. A alg padrão é SHA1, mas SHA256 é recomendado. <br/> A <strong>opção /td</strong> deve ser declarada após a opção <strong>/tr,</strong> não antes. Se a <strong>opção /td</strong> for declarada antes da opção <strong>/tr,</strong> o timestamp retornado será de um algoritmo SHA1 em vez do algoritmo SHA256 pretendido. |
 |`/tr`  *URL*|Especifica a URL do servidor do carimbo de data/hora RFC 3161. Se essa opção (ou `/t`) não estiver presente, o arquivo assinado não receberá carimbo de data/hora. Um aviso será gerado se o carimbo de data/hora falhar. Essa opção não pode ser usada com a opção `/t`.|  
 |`/u`  *Uso*|Especifica o EKU (uso avançado de chave) que deve estar presente no certificado de assinatura. O valor de uso pode ser especificado por OID ou por cadeia de caracteres. O uso padrão é "Assinatura de Código" (1.3.6.1.5.5.7.3.3).|  
 |`/uw`|Especifica o uso da "Verificação do Componente do Sistema Windows" (1.3.6.1.4.1.311.10.3.6).|  
@@ -121,8 +121,8 @@ Os comandos a seguir têm suporte de SignTool.
 |----|----|  
 |`/p7`|Arquivos PKCS #7 do carimbo de data/hora.|  
 |`/t`  *URL*|Especifica a URL do servidor de carimbo de data/hora. O arquivo com carimbo de data/hora assinado anteriormente. A opção `/t` ou `/tr` é obrigatória.|  
-|`/td`  *ALG*|Usado com a opção `/tr` para solicitar um algoritmo de resumo usado pelo servidor do carimbo de data/hora RFC 3161. </br> **Observação:** Um aviso será gerado se A opção <strong>/td</strong> não for fornecida durante o carimbo de data/hora. O alg padrão é SHA1, mas SHA256 é recomendado. <br/> A opção <strong>/td</strong> deve ser declarada após a opção <strong>/TR</strong> , não antes de. Se a opção <strong>/td</strong> for declarada antes da opção <strong>/TR</strong> , o carimbo de data/hora retornado será de um algoritmo SHA1 em vez do algoritmo SHA256 pretendido. |
-|`/tp`*índice* do|Marca com o carimbo de data/hora a assinatura em *index*.|  
+|`/td`  *Alg*|Usado com a opção `/tr` para solicitar um algoritmo de resumo usado pelo servidor do carimbo de data/hora RFC 3161. </br> **Observação:** Um aviso será gerado se <strong>a opção /td</strong> não for fornecida durante o data/hora. A alg padrão é SHA1, mas SHA256 é recomendado. <br/> A <strong>opção /td</strong> deve ser declarada após a opção <strong>/tr,</strong> não antes. Se a <strong>opção /td</strong> for declarada antes da opção <strong>/tr,</strong> o timestamp retornado será de um algoritmo SHA1 em vez do algoritmo SHA256 pretendido. |
+|`/tp`*índice*|Marca com o carimbo de data/hora a assinatura em *index*.|  
 |`/tr`  *URL*|Especifica a URL do servidor do carimbo de data/hora RFC 3161. O arquivo com carimbo de data/hora assinado anteriormente. A opção `/tr` ou `/t` é obrigatória.|  
 
 
@@ -130,29 +130,29 @@ Os comandos a seguir têm suporte de SignTool.
 
 |Opção Verificar|Descrição|
 |----|----|
-| **/a** | Especifica que todos os métodos podem ser usados na verificação do arquivo. Primeiro, os bancos de dados do catálogo são pesquisados para determinar se o arquivo está assinado em um catálogo. Se o arquivo não estiver assinado em nenhum catálogo, o SignTool tentará verificar a assinatura incorporada do arquivo. Essa opção é recomendada durante a verificação de arquivos que podem estar ou não assinados em um catálogo. Exemplos de arquivos que podem ou não ser assinados incluem arquivos ou drivers do Windows. |
+| **/a** | Especifica que todos os métodos podem ser usados na verificação do arquivo. Primeiro, os bancos de dados do catálogo são pesquisados para determinar se o arquivo está assinado em um catálogo. Se o arquivo não estiver assinado em nenhum catálogo, o SignTool tentará verificar a assinatura inserida do arquivo. Essa opção é recomendada durante a verificação de arquivos que podem estar ou não assinados em um catálogo. Exemplos de arquivos que podem ou não ser assinados incluem arquivos Windows ou drivers. |
 | **/ad** | Encontra o catálogo usando o banco de dados do catálogo padrão. |
-| **/All** | Verifica todas as assinaturas em um arquivo com várias assinaturas. |
+| **/all** | Verifica todas as assinaturas em um arquivo com várias assinaturas. |
 | **/as** | Encontra o catálogo usando o banco de dados do catálogo do componente de sistema (driver). |
-| **/AG** *CatDBGUID* | Localiza o catálogo no banco de dados de catálogo identificado pelo **GUID**. |
+| **/ag** *CatDBGUID* | Localiza o catálogo no banco de dados de catálogo identificado pelo **GUID**. |
 | **/c** *CatFile* | Especifica o arquivo de catálogo por nome. |
-| **/d** | Imprima a descrição e a URL de descrição.<br/> **Windows Vista e versões anteriores:** Não há suporte para esse sinalizador.<br/> |
-|  *índice* /DS | Verifica a assinatura em uma determinada posição. |
+| **/d** | Imprima a URL de descrição e descrição.<br/> **Windows Vista e anteriores:** Não há suporte para esse sinalizador.<br/> |
+| **Índice /ds**  | Verifica a assinatura em uma determinada posição. |
 | **/hash**{**SHA1** \| **SHA256**} | Especifica um algoritmo de hash opcional a ser usado durante a procura de um arquivo em um catálogo. |
-| **/kp** | Executa a verificação usando a política de assinatura de driver de modo kernel x64. |
-| **/ms** | Usa várias semânticas de verificação. Esse é o comportamento padrão de uma chamada [**WinVerifyTrust**](/windows/desktop/api/Wintrust/nf-wintrust-winverifytrust) . |
-| **/O** *versão* | Verifica o arquivo pela versão do sistema operacional. O parâmetro version está no formato:<br/> *PlatformID ***:*** VerMajor ***.*** VerMinor ***.*** BuildNumber*<br/> O uso da opção */o* é recomendado. Se */o* não for especificado, SignTool poderá retornar resultados inesperados. Por exemplo, se você não incluir a opção */o* , os catálogos do sistema que forem validados corretamente em um sistema operacional mais antigo poderão não ser validados corretamente em um sistema operacional mais recente. |
-| **/p7** | Verifique \# os arquivos PKCS 7. Nenhuma política existente é usada para \# validação PKCS 7. A assinatura é verificada e uma cadeia é compilada para o certificado de assinatura. |
-| **/pa** | Especifica que a política de verificação de autenticação padrão é usada. Se a opção **/PA** não for especificada, SignTool usará a política de verificação de driver do Windows. Esta opção não pode ser usada com as opções **CatDB** . |
-| **/PG** *PolicyGUID* | Especifica uma política de verificação por **GUID**. O **GUID** corresponde ao ActionID da política de verificação. Esta opção não pode ser usada com as opções **CatDB** . |
-| **/pH** | Imprimir e verificar valores de hash de página.<br/> **Windows Vista e versões anteriores:** Não há suporte para esse sinalizador.<br/>  |
-| **/R** *RootSubjectName* | Especifica o nome do assunto do certificado raiz em que o certificado de assinatura deve ser encadeado. Esse valor pode ser uma subcadeia de caracteres do nome da entidade inteiro do certificado raiz. |
-| **/tw** | Especifica que um aviso será gerado se a assinatura não tiver um carimbo de data/hora.|
+| **/kp** | Executa a verificação usando a política de assinatura de driver no modo kernel x64. |
+| **/ms** | Usa várias semânticas de verificação. Esse é o comportamento padrão de uma [**chamada WinVerifyTrust.**](/windows/desktop/api/Wintrust/nf-wintrust-winverifytrust) |
+| **/o** *Versão* | Verifica o arquivo pela versão do sistema operacional. O parâmetro version é do formato:<br/> *PlatformID***:**_VerMajor._* *_VerMinor_*_._ * _BuildNumber_<br/> O uso da opção */o* é recomendado. Se */o* não for especificado, SignTool poderá retornar resultados inesperados. Por exemplo, se você não incluir a opção */o,* os catálogos do sistema validados corretamente em um sistema operacional mais antigo poderão não ser validados corretamente em um sistema operacional mais recente. |
+| **/p7** | Verifique os arquivos PKCS \# 7. Nenhuma política existente é usada para validação do PKCS \# 7. A assinatura é verificada e uma cadeia é compilada para o certificado de assinatura. |
+| **/pa** | Especifica que a Política de Verificação de Autenticação Padrão é usada. Se a **opção /pa** não for especificada, a SignTool usará a política Windows verificação de driver. Essa opção não pode ser usada com as **opções catdb.** |
+| **/pg** *PolicyGUID* | Especifica uma política de verificação por **GUID.** O **GUID** corresponde à ActionID da política de verificação. Essa opção não pode ser usada com as **opções catdb.** |
+| **/ph** | Imprima e verifique os valores de hash da página.<br/> **Windows Vista e anteriores:** Não há suporte para esse sinalizador.<br/>  |
+| **/r** *RootSubjectName* | Especifica o nome do assunto do certificado raiz em que o certificado de assinatura deve ser encadeado. Esse valor pode ser uma subcadeia de caracteres do nome da entidade inteiro do certificado raiz. |
+| **/tw** | Especifica que um aviso será gerado se a assinatura não tiver carimbo de data/hora.|
 
 
-O comando SignTool **Verify** determina se o certificado de autenticação foi emitido por uma autoridade confiável, se o certificado de autenticação foi revogado e, opcionalmente, se o certificado de autenticação é válido para uma política específica.  
+O comando signTool **verify** determina se o certificado de assinatura foi emitido por uma autoridade confiável, se o certificado de assinatura foi revogado e, opcionalmente, se o certificado de assinatura é válido para uma política específica.  
 
-O comando SignTool **Verify** produzirá o status da assinatura **inserida** , a menos que uma opção seja especificada para pesquisar um catálogo (/a,/AD,/as,/AG,/c).
+O comando SignTool **verify** vai dar o status de assinatura inserido, a menos que uma opção seja especificada para pesquisar um catálogo (/a, /ad, /as, /ag, /c). 
 
 
 ## <a name="return-value"></a>Retornar valor  
@@ -210,7 +210,7 @@ Signtool sign /f MyCert.pfx /d: "MyControl" /du http://www.example.com/MyControl
 signtool timestamp /t http://timestamp.digicert.com MyFile.exe
 ```  
 
-O tempo de comando a seguir carimba um arquivo usando um servidor de carimbo de data/hora RFC 3161.  
+O comando a seguir marca o carimbo de data/hora de um arquivo usando um servidor de carimbo de data/hora RFC 3161.  
   
 ```console  
 signtool timestamp /tr http://timestamp.digicert.com /td SHA256 MyFile.exe

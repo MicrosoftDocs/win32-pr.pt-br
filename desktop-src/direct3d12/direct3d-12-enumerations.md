@@ -5,12 +5,12 @@ ms.assetid: 76E76C85-128E-4F0E-9711-C72C4CF6C835
 ms.localizationpriority: low
 ms.topic: article
 ms.date: 09/19/2019
-ms.openlocfilehash: 7f34266e4afdec14e97caa81f393733f1c1ec684
-ms.sourcegitcommit: 89f99926f946dc6c5ea600fb7c41f6b19ceac516
+ms.openlocfilehash: 31cac62c8dfa6b1126d8ff2a7c134490c0c58038
+ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "105771612"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "114436221"
 ---
 # <a name="core-enumerations"></a>Enumerações de núcleo
 
@@ -71,6 +71,7 @@ As enumerações a seguir são declaradas em d3d12. h.
 | [**D3D12_LOGIC_OP**](/windows/win32/api/d3d12/ne-d3d12-d3d12_logic_op). Especifica operações lógicas a serem configuradas para um destino de renderização. |
 | [**D3D12_MEASUREMENTS_ACTION**](/windows/win32/api/d3d12/ne-d3d12-d3d12_measurements_action). Define constantes que especificam o que deve ser feito com os resultados da instrumentação de carga de trabalho anterior. |
 | [**D3D12_MEMORY_POOL**](/windows/win32/api/d3d12/ne-d3d12-d3d12_memory_pool). Especifica o pool de memória para o heap. |
+| [**D3D12_MESH_SHADER_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_mesh_shader_tier). Define constantes que especificam o suporte ao sombreador de malha e amplificação. |
 | [**D3D12_META_COMMAND_PARAMETER_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_meta_command_parameter_flags). Define constantes que especificam os sinalizadores para um parâmetro para um meta comando. Os valores podem ser unificados ou juntos. |
 | [**D3D12_META_COMMAND_PARAMETER_STAGE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_meta_command_parameter_stage). Define constantes que especificam o estágio de um parâmetro para um comando meta. |
 | [**D3D12_META_COMMAND_PARAMETER_TYPE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_meta_command_parameter_type). Define constantes que especificam o tipo de dados de um parâmetro para um meta comando. |
@@ -112,25 +113,27 @@ As enumerações a seguir são declaradas em d3d12. h.
 | [**D3D12_ROOT_PARAMETER_TYPE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_root_parameter_type). Especifica o tipo de slot de assinatura raiz.  |
 | [**D3D12_ROOT_SIGNATURE_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_root_signature_flags). Especifica as opções para o layout de assinatura raiz.  |
 | [**D3D12_RTV_DIMENSION**](/windows/win32/api/d3d12/ne-d3d12-d3d12_rtv_dimension). Identifica o tipo de recurso a ser exibido como um destino de renderização. |
-| [**D3D12_SHADER_CACHE_SUPPORT_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_shader_cache_support_flags). Descreve o nível de suporte para o cache de sombreador no driver de gráficos atual. |
-| [**D3D12_SHADER_COMPONENT_MAPPING**](/windows/win32/api/d3d12/ne-d3d12-d3d12_shader_component_mapping). Especifica como a memória é roteada por um modo de exibição de recurso de sombreador (SRV).  |
-| [**D3D12_SHADER_MIN_PRECISION_SUPPORT**](/windows/win32/api/d3d12/ne-d3d12-d3d12_shader_min_precision_support). Descreve as opções de suporte de precisão mínima para sombreadores no driver de gráficos atual.  |
+| [**D3D12_SAMPLER_FEEDBACK_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_sampler_feedback_tier). Define constantes que especificam o suporte aos comentários do sampler. |
+| [**D3D12_SHADER_CACHE_SUPPORT_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_shader_cache_support_flags). Descreve o nível de suporte para cache de sombreador no driver gráfico atual. |
+| [**D3D12_SHADER_COMPONENT_MAPPING**](/windows/win32/api/d3d12/ne-d3d12-d3d12_shader_component_mapping). Especifica como a memória é roteada por uma SRV (exibição de recurso de sombreador).  |
+| [**D3D12_SHADER_MIN_PRECISION_SUPPORT**](/windows/win32/api/d3d12/ne-d3d12-d3d12_shader_min_precision_support). Descreve as opções de suporte de precisão mínima para sombreadores no driver gráfico atual.  |
 | [**D3D12_SHADER_VISIBILITY**](/windows/win32/api/d3d12/ne-d3d12-d3d12_shader_visibility). Especifica os sombreadores que podem acessar o conteúdo de um determinado slot de assinatura raiz. |
 | [**D3D12_SHARED_RESOURCE_COMPATIBILITY_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_shared_resource_compatibility_tier). Define constantes que especificam uma camada de suporte de compartilhamento entre APIs. |
 | [**D3D12_SRV_DIMENSION**](/windows/win32/api/d3d12/ne-d3d12-d3d12_srv_dimension). Identifica o tipo de recurso que será exibido como um recurso de sombreador. |
-| [**D3D12_STATIC_BORDER_COLOR**](/windows/win32/api/d3d12/ne-d3d12-d3d12_static_border_color). Especifica a cor de borda de uma amostra estática.  |
+| [**D3D12_STATIC_BORDER_COLOR**](/windows/win32/api/d3d12/ne-d3d12-d3d12_static_border_color). Especifica a cor da borda de um exemplo estático.  |
 | [**D3D12_STENCIL_OP**](/windows/win32/api/d3d12/ne-d3d12-d3d12_stencil_op). Identifica as operações de estêncil que podem ser executadas durante o teste de estêncil de profundidade. |
 | [**D3D12_TEXTURE_ADDRESS_MODE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_texture_address_mode). Identifica uma técnica para resolver coordenadas de textura que estão fora dos limites de uma textura.  |
 | [**D3D12_TEXTURE_COPY_TYPE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_texture_copy_type). Especifica que tipo de cópia de textura deve ocorrer. |
 | [**D3D12_TEXTURE_LAYOUT**](/windows/win32/api/d3d12/ne-d3d12-d3d12_texture_layout). Especifica opções de layout de textura.  |
-| [**D3D12_TILE_COPY_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_tile_copy_flags). Especifica como copiar um bloco.  |
-| [**D3D12_TILE_MAPPING_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_tile_mapping_flags). Especifica como executar uma operação de mapeamento de bloco.  |
-| [**D3D12_TILE_RANGE_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_tile_range_flags). Especifica um intervalo de mapeamentos de bloco.  |
-| [**D3D12_TILED_RESOURCES_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_tiled_resources_tier). Identifica o nível de camada no qual há suporte para os recursos de ladrilhos.  |
-| [**D3D12_UAV_DIMENSION**](/windows/win32/api/d3d12/ne-d3d12-d3d12_uav_dimension). Identifica opções de exibição de acesso não ordenadas. |
-| [**D3D12_VIEW_INSTANCING_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_view_instancing_flags). Especifica as opções para exibir a instanciação. |
-| [**D3D12_VIEW_INSTANCING_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_view_instancing_tier). Indica o nível de camada no qual a instanciação de exibição tem suporte. |
-| [**D3D12_WRITEBUFFERIMMEDIATE_MODE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_writebufferimmediate_mode). Especifica o modo usado por uma operação **WriteBufferImmediate** . |
+| [**D3D12_TILE_COPY_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_tile_copy_flags). Especifica como copiar umile.  |
+| [**D3D12_TILE_MAPPING_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_tile_mapping_flags). Especifica como executar uma operação de mapeamento deile.  |
+| [**D3D12_TILE_RANGE_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_tile_range_flags). Especifica um intervalo de mapeamentos deile.  |
+| [**D3D12_TILED_RESOURCES_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_tiled_resources_tier). Identifica o nível de camada no qual há suporte para recursos lado a lado.  |
+| [**D3D12_UAV_DIMENSION**](/windows/win32/api/d3d12/ne-d3d12-d3d12_uav_dimension). Identifica opções de exibição de acesso não organizado. |
+| [**D3D12_VIEW_INSTANCING_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_view_instancing_flags). Especifica opções para a instanciamento de exibição. |
+| [**D3D12_VIEW_INSTANCING_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_view_instancing_tier). Indica o nível de camada no qual há suporte para a instanciamento de exibição. |
+| [**D3D12_WAVE_MMA_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_wave_mma_tier). Define constantes que especificam um nível de suporte para operações waveMMA (wave_matrix). |
+| [**D3D12_WRITEBUFFERIMMEDIATE_MODE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_writebufferimmediate_mode). Especifica o modo usado por uma **operação WriteBufferImmediate.** |
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

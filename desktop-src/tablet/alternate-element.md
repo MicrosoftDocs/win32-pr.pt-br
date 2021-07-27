@@ -1,19 +1,19 @@
 ---
-description: Contém uma alternativa de reconhecimento para um InkWord. As alternativas são ordenadas pela confiança do reconhecedor na alternativa, com o mais alto primeiro.
+description: Contém uma alternativa de reconhecimento para um InkWord. As alternativas são ordenadas pela confiança do reconhecedor no alternativo, com o mais alto primeiro.
 ms.assetid: 6ec78ac9-c10c-4227-bead-5ddfc48ce27e
-title: Elemento alternativo (WinGDI. h)
+title: Elemento alternate (Wingdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 71eb1bc0bf74462cadecb480ceb87a0b610be876
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 55dfb629aadea988a6aeec1cba1020c8ab47c994
+ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751041"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "114436601"
 ---
 # <a name="alternate-element"></a>Elemento alternativo
 
-Contém uma alternativa de reconhecimento para um [**InkWord**](inkword-element.md). As alternativas são ordenadas pela confiança do reconhecedor na alternativa, com o mais alto primeiro.
+Contém uma alternativa de reconhecimento para um [**InkWord.**](inkword-element.md) As alternativas são ordenadas pela confiança do reconhecedor no alternativo, com o mais alto primeiro.
 
 ## <a name="definition"></a>Definição
 
@@ -23,7 +23,7 @@ Contém uma alternativa de reconhecimento para um [**InkWord**](inkword-element.
 
 ## <a name="parent-elements"></a>Elementos pai
 
-[**Alternativolist**](alternatelist-element.md)
+[**AlternateList**](alternatelist-element.md)
 
 ## <a name="child-elements"></a>Elementos filho
 
@@ -37,11 +37,11 @@ Nenhum.
 
 
 
-|              |                                            |
-|--------------|--------------------------------------------|
-| Tipo de elemento | **xs:string**                              |
-| Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk |
-| Nome do esquema  | Leitor de diário                             |
+|                  | Valor                                      |
+|------------------|--------------------------------------------|
+| **Tipo de elemento** | xs:string                                  |
+| **Namespace**    | urn:schemas-microsoft-com:tabletpc:richink |
+| **Nome do esquema**  | Leitor de Diário                             |
 
 
 
@@ -53,7 +53,7 @@ Nenhum.
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>WinGDI. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wingdi.h</dt> </dl> |
 
 
 

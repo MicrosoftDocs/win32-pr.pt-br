@@ -4,12 +4,12 @@ ms.assetid: 48527c4e-50fb-4800-ac87-1646234783ba
 title: Elemento background
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e58a836c7cfd13130779c1cd6b017105bcaa6321
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46388d56c04fc24ecd578788eecf9926ef01a301
+ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105787626"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "114436581"
 ---
 # <a name="background-element"></a>Elemento background
 
@@ -79,11 +79,11 @@ Contém o plano de fundo de um elemento [**JournalDocument**](journaldocument-el
 
 
 
-|              |                                                                   |
-|--------------|-------------------------------------------------------------------|
-| Tipo de elemento | ComplexType [**em segundo plano**](backgroundtype-complex-type.md) |
-| Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk                        |
-| Nome do esquema  | Leitor de diário                                                    |
+|                  | Valor                                                             |
+|------------------|-------------------------------------------------------------------|
+| **Tipo de elemento** | ComplexType [**em segundo plano**](backgroundtype-complex-type.md) |
+| **Namespace**    | urn: esquemas-Microsoft-com: Tablet: RichInk                        |
+| **Nome do esquema**  | Leitor de diário                                                    |
 
 
 
