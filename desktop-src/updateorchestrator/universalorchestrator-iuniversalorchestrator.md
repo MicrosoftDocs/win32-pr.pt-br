@@ -1,29 +1,29 @@
 ---
 title: Interface IUniversalOrchestrator
-description: Uma interface COM que fornece métodos para permitir que um cliente se comunique com o Orchestrator universal.
+description: Uma interface COM que fornece métodos para permitir que um cliente se comunique com o Universal Orchestrator.
 ms.date: 01/14/2021
-ms.topic: interface
-ms.openlocfilehash: 6fa5dfd9f7853159645fbe3b543c228450f4e1c4
-ms.sourcegitcommit: 9c8ddec1e955f181beecad0478c1fb79013b5e9d
+ms.topic: reference
+ms.openlocfilehash: 5dbbaafb38ab9d790d32beca9b014f933d5d53d5
+ms.sourcegitcommit: 3cea99a2ed9579a94236fa7924abd6149db51a58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "105790668"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "114991843"
 ---
 # <a name="iuniversalorchestrator-interface"></a>Interface IUniversalOrchestrator
 
 > [!NOTE] 
-> Essa API pertence à API do Orchestrator universal.
+> Essa API pertence à API universal do Orchestrator.
 
-**IUniversalOrchestrator** é uma interface com que fornece os métodos a seguir para permitir que um cliente se comunique com o Orchestrator universal.
+**IUniversalOrchestrator** é uma interface COM que fornece os métodos a seguir para permitir que um cliente se comunique com o Universal Orchestrator.
 
 ## <a name="methods"></a>Métodos
 
 |Método | Descrição |
 |---|---|
-|[:: Agendar](universalorchestrator-schedulework.md) | Registra o trabalho pendente com o Orchestrator universal. |
-|[::WorkCompleted](universalorchestrator-workcompleted.md) | Informa ao orquestrador universal que todo o trabalho foi concluído. |
-|[::HasMoratoriumPassed](universalorchestrator-hasmoratoriumpassed.md) | Consulta o Orchestrator universal para determinar se ele está funcionando imediatamente após a nova experiência de dispositivo pronto para uso. |
+|[::ScheduleWork](universalorchestrator-schedulework.md) | Registra o trabalho pendente com o Orquestrador Universal. |
+|[::WorkCompleted](universalorchestrator-workcompleted.md) | Informa ao Orquestrador Universal que todo o trabalho foi concluído. |
+|[::HasMor ltdapassed](universalorchestrator-hasmoratoriumpassed.md) | Consulta o Universal Orchestrator para determinar se ele está operando imediatamente após a nova experiência pronta para uso do dispositivo. |
 
 
 ## <a name="requirements"></a>Requisitos

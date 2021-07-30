@@ -1,14 +1,14 @@
 ---
 title: IUniversalOrchestrator::HasMoratoriumPassed
 description: Consulta o Orchestrator universal para determinar se o período pós-OOBE foi superado.
-ms.topic: method
+ms.topic: reference
 ms.date: 01/14/2021
-ms.openlocfilehash: 2ed354d365b795a0c959396e6b26d6bc73baad97
-ms.sourcegitcommit: 9c8ddec1e955f181beecad0478c1fb79013b5e9d
+ms.openlocfilehash: 3ccbf673b8fe22fabe7001112e04e87bd45eeaa4
+ms.sourcegitcommit: 3cea99a2ed9579a94236fa7924abd6149db51a58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "105780763"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "114991793"
 ---
 # <a name="iuniversalorchestratorhasmoratoriumpassed-method"></a>Método IUniversalOrchestrator:: HasMoratoriumPassed
 
@@ -35,7 +35,7 @@ Uma cadeia de caracteres exclusiva que identifica todas as chamadas desse client
 
 Parâmetro de saída que armazena o resultado da consulta.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 Se esse método tiver sucesso, ele retornará **S_OK**.  Caso contrário, ele retorna um código de erro **HRESULT** .
 
 ## <a name="requirements"></a>Requisitos
