@@ -4,16 +4,16 @@ description: O IMAPi fornece aos desenvolvedores de aplicativos a capacidade de 
 ms.assetid: 691fdc3a-e762-4d6d-9980-e2d9227100a5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2581672fac78d23a0d2f4e2bc36ee4227adbca1d
-ms.sourcegitcommit: af9983bab40fe0b042f177ce7ca79f2eb0f9d0e8
+ms.openlocfilehash: 68d816d293a3474f46dc3a48577a46615672103099dc2aa561d393953f29ccf2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "104557041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118249399"
 ---
 # <a name="imapi-multisession-layout"></a>Layout de várias sessões do IMAPi
 
-O IMAPi fornece aos desenvolvedores de aplicativos a capacidade de criar imagens do sistema de arquivos ISO 9660 e UDF e gravá-las em CD, DVD e Blu-Ray™ mídia óptica. Com o Windows 7, o IMAPi fornece suporte adicional para a gravação de várias sessões em DVD e Blu-Ray™ mídia regravável.
+O IMAPi fornece aos desenvolvedores de aplicativos a capacidade de criar imagens do sistema de arquivos ISO 9660 e UDF e gravá-las em CD, DVD e Blu-Ray™ mídia óptica. com o Windows 7, o imapi fornece suporte adicional para a gravação de várias sessões em DVD e Blu-Ray™ mídia regravável.
 
 A documentação a seguir detalha o layout do disco que o IMAPi utiliza para implementar várias sessões. Essas informações devem ser usadas para garantir a interoperabilidade entre o IMAPi e outros softwares de gravação, além de permitir que os desenvolvedores desse software criem imagens de disco de várias sessões compatíveis com o IMAPi.
 
@@ -65,7 +65,7 @@ Ao adicionar uma nova sessão lógica a um disco regravável, o IMAPi primeiro d
 
 -   **Tipo de partição UDF**
 
-    O IMAPi usa o tipo de partição UDF **somente leitura** em sua implementação de várias sessões na mídia regravável. Os desenvolvedores de software de gravação de terceiros devem usar o tipo de partição UDF **somente leitura** para obter compatibilidade com a gravação mestra do Windows via IMAPI. Se outro tipo de partição UDF, como **regravável** , for usado, o IMAPI não poderá fornecer suporte à masterização.
+    O IMAPi usa o tipo de partição UDF **somente leitura** em sua implementação de várias sessões na mídia regravável. os desenvolvedores de software de gravação de terceiros devem usar o tipo de partição UDF **somente leitura** para obter compatibilidade com Windows a gravação com o controle de mestre via imapi. Se outro tipo de partição UDF, como **regravável** , for usado, o IMAPI não poderá fornecer suporte à masterização.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

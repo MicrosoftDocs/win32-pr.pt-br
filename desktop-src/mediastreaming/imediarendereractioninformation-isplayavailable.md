@@ -1,11 +1,11 @@
 ---
-title: Método IMediaRendererActionInformation IsPlayAvailable
-description: Recupera um valor que indica se o DMR está atualmente aceitando o que aceita os métodos PlayAsync e PlayAtSpeedAsync.
+title: Método IsPlayAvailable de IMediaRendererActionInformation
+description: Recupera um valor que indica se a DMR está aceitando os métodos PlayAsync e PlayAtSpeedAsync no momento.
 ms.assetid: 969C55FA-872D-4063-B85C-573C8DA5593C
 keywords:
-- API de streaming de mídia do método IsPlayAvailable
-- API de streaming de mídia do método IsPlayAvailable, interface IMediaRendererActionInformation
-- API de streaming de mídia da interface IMediaRendererActionInformation, método IsPlayAvailable
+- API de Streaming de Mídia do método IsPlayAvailable
+- API de Streaming de Mídia do método IsPlayAvailable, interface IMediaRendererActionInformation
+- API de Streaming de Mídia da interface IMediaRendererActionInformation , método IsPlayAvailable
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 87fa3a2005772a4d948bafe32d2a0e10cc5a6914
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 912e5478ef1d9bd7114d198a9671d38ba7b721c9dbd82d2a8080b5a7876e76cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104365955"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118235841"
 ---
-# <a name="imediarendereractioninformationisplayavailable-method"></a>Método IMediaRendererActionInformation:: IsPlayAvailable
+# <a name="imediarendereractioninformationisplayavailable-method"></a>Método IMediaRendererActionInformation::IsPlayAvailable
 
-Recupera um valor que indica se o DMR está atualmente aceitando o que aceita os métodos [**PlayAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playasync) e [**PlayAtSpeedAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playatspeedasync) .
+Recupera um valor que indica se a DMR está aceitando os métodos [**PlayAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playasync) e [**PlayAtSpeedAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playatspeedasync) no momento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,16 +41,16 @@ HRESULT IsPlayAvailable(
 
 <dl> <dt>
 
-*valor* \[ do fora\]
+*value* \[ out\]
 </dt> <dd>
 
-Um valor booliano que é **verdadeiro** se o DMR estiver atualmente aceitando o que aceita os métodos [**PlayAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playasync) e [**PlayAtSpeedAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playatspeedasync) e **false** se não for.
+Um valor boolário que será **True** se a DMR estiver aceitando atualmente os métodos [**PlayAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playasync) e [**PlayAtSpeedAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-playatspeedasync) e **False** se não estiver.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Retornar valor
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -62,7 +62,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
  
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 

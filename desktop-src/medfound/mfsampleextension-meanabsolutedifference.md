@@ -1,17 +1,17 @@
 ---
 description: Esse atributo retorna a diferença absoluta média (MAD) em todos os blocos de macro no plano Y.
 ms.assetid: 7F0358F1-794A-4E75-8D97-3B91955E19EE
-title: Atributo MFSampleExtension_MeanAbsoluteDifference (Mfapi. h)
+title: MFSampleExtension_MeanAbsoluteDifference atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f4b7187b295071b8e27b68d9b5804aab6b2ddef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7908c8ea69d5d2b074fa8d2ac6b44ca0b3f40ba5b2ca72cd358350c2e749b62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118240633"
 ---
-# <a name="mfsampleextension_meanabsolutedifference-attribute"></a>\_Atributo MFSampleExtension MeanAbsoluteDifference
+# <a name="mfsampleextension_meanabsolutedifference-attribute"></a>Atributo MFSampleExtension \_ MeanAbsoluteDifference
 
 Esse atributo retorna a diferença absoluta média (MAD) em todos os blocos de macro no plano Y.
 
@@ -29,17 +29,17 @@ O aplicativo pode solicitar o codificador para definir esse atributo em exemplos
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos Windows 8.1 aplicativos de \[ área de trabalho \| UWP\]<br/>                                |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2012 R2 \|\]<br/>                     |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8.1 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                                |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 Aplicativos UWP de aplicativos da área \[ de trabalho \| R2\]<br/>                     |
+| parâmetro<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

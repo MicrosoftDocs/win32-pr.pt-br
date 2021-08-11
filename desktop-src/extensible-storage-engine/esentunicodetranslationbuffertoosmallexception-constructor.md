@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: eed0d5773c5e45cc99611386b851985623e3359c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6252fa84dd8b04e317ec2d0dbab91df2f28986418a855a87d177e7d75d62337c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118257033"
 ---
 # <a name="esentunicodetranslationbuffertoosmallexception-constructor"></a>Construtor EsentUnicodeTranslationBufferTooSmallException
 
 Inicializa uma nova instância da classe EsentUnicodeTranslationBufferTooSmallException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentUnicodeTranslationBufferTooSmallException()
 
 [Classe EsentUnicodeTranslationBufferTooSmallException](./esentunicodetranslationbuffertoosmallexception-class.md)
 
-[Membros do EsentUnicodeTranslationBufferTooSmallException](./esentunicodetranslationbuffertoosmallexception-members.md)
+[Membros EsentUnicodeTranslationBufferTooSmallException](./esentunicodetranslationbuffertoosmallexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

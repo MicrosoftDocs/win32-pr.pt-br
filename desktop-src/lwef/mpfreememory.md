@@ -3,7 +3,7 @@ title: Função MpFreeMemory (MpClient. h)
 description: Libera memória para o Gerenciador de proteção contra malware.
 ms.assetid: D0B43AE5-756F-4E86-B8A5-8268A41901BC
 keywords:
-- Recursos do ambiente Windows herdado da função MpFreeMemory
+- recursos de ambiente de Windows herdado da função MpFreeMemory
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a15a2845b034a3aa739b1ba2f33a023b742b4b22
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 806795cee45fcfe95473c0961106da074c1157b65ac5c19f5d4813c84865616a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118247421"
 ---
 # <a name="mpfreememory-function"></a>Função MpFreeMemory
 
@@ -59,7 +59,7 @@ Para facilitar o gerenciamento de memória para clientes, o Malware Protection M
 
 
 
-| Nome                            | Descrição                                                                      |
+| Name                            | Descrição                                                                      |
 |---------------------------------|----------------------------------------------------------------------------------|
 | \_informações \_ gratuitas do MPRESOURCE          | Libera uma [**\_ informação MPRESOURCE**](mpresource-info.md)alocada.                  |
 | \_informações \_ gratuitas do MPTHREAT            | Libera uma [**\_ informação MPTHREAT**](mpthreat-info.md)alocada.                      |
@@ -75,14 +75,14 @@ Para facilitar o gerenciamento de memória para clientes, o Malware Protection M
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                    |
 | parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>MpClient.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 

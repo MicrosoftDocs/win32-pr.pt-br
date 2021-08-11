@@ -4,12 +4,12 @@ ms.assetid: DACB355B-17B9-4968-8920-5233603FD796
 title: Propriedade MFPKEY_MediaProtectionContainerGuid (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 433ef4723eb91527ad621a50bada79da76e39631
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 86dcfd4bb3a99041b15022dde4833d4a4f7fb866998283028fb82d5e650acc8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105811557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118242563"
 ---
 # <a name="mfpkey_mediaprotectioncontainerguid-property"></a>\_Propriedade MFPKEY MediaProtectionContainerGuid
 
@@ -39,13 +39,13 @@ CLSID do VT \_
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos Windows 8.1 aplicativos de \[ área de trabalho \| UWP\]<br/>                                |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2012 R2 \|\]<br/>                     |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Aplicativos de aplicativos UWP da área de trabalho R2 \|\]<br/>                     |
 | parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: E672F53D-2083-430B-90D2-A1DA482EF9E1
 title: Atributo MFSampleExtension_Encryption_SubSampleMappingSplit (Mfapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c90fb6ae22417f059bfa3268382877363178940
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 19f10f845b337ab92774f36b46940fe9d5203ca3a672f573e33fbcea26e96e16
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105795458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118240789"
 ---
 # <a name="mfsampleextension_encryption_subsamplemappingsplit-attribute"></a>Atributo MFSampleExtension de \_ criptografia \_ SubSampleMappingSplit
 
@@ -46,13 +46,13 @@ m_spSample->SetBlob( MFSampleExtension_Encryption_SubSampleMappingSplit,
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos Windows 8.1 aplicativos de \[ área de trabalho \| UWP\]<br/>                                |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2012 R2 \|\]<br/>                     |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Aplicativos de aplicativos UWP da área de trabalho R2 \|\]<br/>                     |
 | parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 

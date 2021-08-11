@@ -4,12 +4,12 @@ ms.assetid: DEA2B19A-CF15-4BF4-84C3-9A6417C942E2
 title: Visão geral da arquitetura de Media Foundation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0944eae1a74c1a5ba3dda8d94b69088128237f1
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: de953d05c55c96d1affa2213e1a7f11143a71aa319b4671c159f085e65268d05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104553206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118239623"
 ---
 # <a name="overview-of-the-media-foundation-architecture"></a>Visão geral da arquitetura de Media Foundation
 
@@ -49,7 +49,7 @@ A [sessão de mídia](media-session.md) controla o fluxo de dados por meio do pi
 O [leitor de origem](source-reader.md) e o [gravador do coletor](sink-writer.md) fornecem uma maneira alternativa de usar os componentes básicos do Media Foundation (fontes de mídia, transformações e coletores de mídia). O leitor de origem hospeda uma fonte de mídia e zero ou mais decodificadores, enquanto o gravador de coletor hospeda um coletor de mídia e zero ou mais codificadores. Você pode usar o leitor de origem para obter dados compactados ou descompactados de uma fonte de mídia e usar o gravador de coletor para codificar dados e enviar os dados para um coletor de mídia.
 
 > [!Note]  
-> O leitor de fonte e o gravador de coletor estão disponíveis no Windows 7.
+> o leitor de fonte e o gravador de coletor estão disponíveis no Windows 7.
 
  
 

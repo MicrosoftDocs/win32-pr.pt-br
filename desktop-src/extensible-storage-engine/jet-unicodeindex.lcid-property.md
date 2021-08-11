@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_UNICODEINDEX. LCID'
-title: Propriedade JET_UNICODEINDEX. LCID
+description: 'Saiba mais sobre: JET_UNICODEINDEX.lcid'
+title: JET_UNICODEINDEX.lcid
 TOCTitle: 'lcid property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_UNICODEINDEX.lcid
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_unicodeindex.lcid(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2edbe2e8819d8b4a3a7299d285a39e8f7e3e05c2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c67097724d8afb9028ba4a4593999671a4deff5ac1ffc22d99e7a5469462e2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105807796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118251700"
 ---
-# <a name="jet_unicodeindexlcid-property"></a>Propriedade JET_UNICODEINDEX. LCID
+# <a name="jet_unicodeindexlcid-property"></a>JET_UNICODEINDEX.lcid
 
 Obtém ou define o LCID a ser usado ao normalizar dados Unicode.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public int lcid { get; set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_UNICODEINDEX](./jet-unicodeindex-class.md)
+[JET_UNICODEINDEX classe](./jet-unicodeindex-class.md)
 
-[Membros do JET_UNICODEINDEX](./jet-unicodeindex-members.md)
+[JET_UNICODEINDEX membros](./jet-unicodeindex-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

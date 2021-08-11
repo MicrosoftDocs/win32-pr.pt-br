@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b4366c8fdac3d94ef65006adb0fd3e869832cdf6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7da58236104e5fe1a9644f83592896c238e8a5387ea507c9aa68d62d220b2721
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118253932"
 ---
 # <a name="jet_objtyp"></a>JET_OBJTYP
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_objtyp"></a>JET_OBJTYP
 
-O **JET_OBJTYP** grupo de constantes representa o tipo de um objeto de banco de dados. Atualmente, há suporte apenas para tabelas.
+O **JET_OBJTYP** de constantes representa o tipo de um objeto de banco de dados. Atualmente, há suporte apenas para tabelas.
 
 <table>
 <colgroup>
@@ -67,15 +67,15 @@ O **JET_OBJTYP** grupo de constantes representa o tipo de um objeto de banco de 
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
+<td><p>Declarado em Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

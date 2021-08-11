@@ -1,39 +1,39 @@
 ---
 description: Armazena o ponteiro IUnknown da classe que implementa a interface IMFSSLCertificateManager.
 ms.assetid: 13e05bda-96c2-4095-a266-74185760f33a
-title: Propriedade MFNETSOURCE_SSLCERTIFICATE_MANAGER (Mfidl. h)
+title: MFNETSOURCE_SSLCERTIFICATE_MANAGER propriedade (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf6e21962e3d521e8c5781d59b2e0fe6fed04aa4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d6f853ae3fe44a9c4508386df4096e4adac36f3cec8a8cf199eb91cb87e1fe2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105787699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118243290"
 ---
-# <a name="mfnetsource_sslcertificate_manager-property"></a>\_Propriedade MFNETSOURCE SSLCERTIFICATE \_ Manager
+# <a name="mfnetsource_sslcertificate_manager-property"></a>Propriedade MFNETSOURCE \_ SSLCERTIFICATE \_ MANAGER
 
-Armazena o ponteiro **IUnknown** da classe que implementa a interface [**IMFSSLCertificateManager**](/windows/desktop/api/mfidl/nn-mfidl-imfsslcertificatemanager) . A implementação do cliente fornece métodos para obter o certificado SSL do cliente quando ele é solicitado pelo servidor.
+Armazena o **ponteiro IUnknown** da classe que implementa a interface [**IMFSSLCertificateManager.**](/windows/desktop/api/mfidl/nn-mfidl-imfsslcertificatemanager) A implementação do cliente fornece métodos para obter o certificado SSL do cliente quando ele é solicitado pelo servidor.
 
 
 
 Tipo de dados
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Membro PROPVARIANT
 
 **Ponteiro IUnknown**
 
-VT \_ desconhecido
+VT \_ UNKNOWN
 
-**punkVal**
+**quevalVal**
 
 
 
 ## <a name="remarks"></a>Comentários
 
-A constante **MFNETSOURCE \_ SSLCERTIFICATE \_ Manager** define o GUID da chave de propriedade. O identificador de propriedade (PID) é zero. Para definir essa propriedade na fonte de rede, passe um ponteiro **IPropertyStore** para o resolvedor de origem. Para obter mais informações, consulte [Configurando uma origem de mídia](configuring-a-media-source.md).
+A **constante MFNETSOURCE \_ SSLCERTIFICATE \_ MANAGER** define o GUID para a chave de propriedade. O PID (identificador de propriedade) é zero. Para definir essa propriedade na origem da rede, passe um ponteiro **IPropertyStore** para o resolvedor de origem. Para obter mais informações, consulte [Configurando uma fonte de mídia](configuring-a-media-source.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,17 +41,17 @@ A constante **MFNETSOURCE \_ SSLCERTIFICATE \_ Manager** define o GUID da chave 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                            |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                            |
+| parâmetro<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> <dt>
 
 [Rede em Media Foundation](networking-in-media-foundation.md)

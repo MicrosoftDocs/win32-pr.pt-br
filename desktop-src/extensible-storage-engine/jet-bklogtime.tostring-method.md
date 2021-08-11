@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b9f1b0f95a2919c3f71f8ba30a500aa8af676005
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: faec2088b6df73e896c2aca54c58af580b611558b4f4a37684af375ee8307673
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118255264"
 ---
 # <a name="jet_bklogtimetostring-method"></a>JET_BKLOGTIME. Método ToString
 
 Gere uma representação de cadeia de caracteres da estrutura.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,15 +56,15 @@ public override string ToString()
 
 #### <a name="return-value"></a>Retornar valor
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 A estrutura como uma cadeia de caracteres.  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_BKLOGTIME](./jet-bklogtime-structure2.md)
+[JET_BKLOGTIME estrutura](./jet-bklogtime-structure2.md)
 
-[Membros do JET_BKLOGTIME](./jet-bklogtime-members.md)
+[JET_BKLOGTIME membros](./jet-bklogtime-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

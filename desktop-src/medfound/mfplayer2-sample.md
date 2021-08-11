@@ -1,33 +1,33 @@
 ---
-description: Importante preterido.
+description: Preterido importante.
 ms.assetid: bb71e792-d09c-4338-9cf4-4854e14042f9
 title: Exemplo de MFPlayer2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1904dcc6e64024dacb76e9109f2e785ec8d5a96
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7ead2df415af1584f34661a0c1d18751350d59bd1a94ac48f41d3bf9dca2070f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118241723"
 ---
 # <a name="mfplayer2-sample"></a>Exemplo de MFPlayer2
 
 > [!IMPORTANT]
-> Preterido. Essa API pode ser removida de versões futuras do Windows. Os aplicativos devem usar a [sessão de mídia](media-session.md) para reprodução.
+> Preterido. Essa API pode ser removida de versões futuras do Windows. Os aplicativos devem usar a [Sessão de Mídia](media-session.md) para reprodução.
 
  
 
-Demonstra alguns dos recursos de reprodução que são omitidos do exemplo [SimplePlay](simpleplay-sample.md) , como:
+Demonstra alguns dos recursos de reprodução que são omitidos do exemplo [simpleplay,](simpleplay-sample.md) como:
 
--   Atingir
--   Controle de taxa (avanço rápido e retrocesso)
--   Controles de áudio e áudio
+-   Procurando
+-   Controle de taxa (avançar e retroceder)
+-   Volume de áudio e controles de mudo
 -   Zoom de vídeo
 
 A imagem a seguir mostra os controles usados para esses recursos.
 
-![captura de tela do exemplo de mfplayer ](images/mfplayer2.png)
+![captura de tela do exemplo mfplayer ](images/mfplayer2.png)
 
 ## <a name="apis-demonstrated"></a>APIs demonstradas
 
@@ -56,7 +56,7 @@ Este exemplo demonstra as APIs a seguir.
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-Este exemplo está disponível no [repositório GitHub de exemplos clássicos do Windows](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/MFPlayer2).
+Este exemplo está disponível no repositório [Windows github de exemplos clássicos.](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/MFPlayer2)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

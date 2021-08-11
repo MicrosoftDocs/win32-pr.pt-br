@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7d93ec4936b137a18d13bf82eb318cf1000c7f74
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c3ee915c42c0c3536f49a1ebb506ad80045cc8ba4a17d75bd09a3317c2acaa3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118254966"
 ---
 # <a name="jet_columncreatecbdefault-property"></a>Propriedade JET_COLUMNCREATE. cbDefault
 
@@ -40,7 +40,7 @@ Obtém ou define o tamanho do valor padrão.
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` vb
 'Declaration

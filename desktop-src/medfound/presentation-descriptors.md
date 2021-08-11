@@ -4,18 +4,18 @@ ms.assetid: 714c8bda-5ce1-47e2-ba73-9304e26b3129
 title: Descritores de apresentação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 44f1581e35fe6d875c691efdd5ef5736c1aa5215
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 963faeebbb180b504cc11202645a9432bbb3a94e988495b9ddcf96e550b05519
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105759582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118238827"
 ---
 # <a name="presentation-descriptors"></a>Descritores de apresentação
 
 Uma *apresentação* é um conjunto de fluxos de mídia relacionados que compartilham um tempo de apresentação comum. Por exemplo, uma apresentação pode consistir em fluxos de áudio e vídeo de um filme. Um *descritor de apresentação* é um objeto que contém a descrição de uma apresentação específica. Os descritores de apresentação são usados para configurar as fontes de mídia e alguns coletores de mídia.
 
-Cada descritor de apresentação contém uma lista de um ou mais *descripdores de fluxo*. Elas descrevem os fluxos na apresentação. Os fluxos podem ser selecionados ou desmarcados. Somente os fluxos selecionados produzem dados. Os fluxos desmarcados não estão ativos e não produzem nenhum dado. Cada descritor de fluxo tem um *manipulador de tipo de mídia*, que é usado para alterar o tipo de mídia do fluxo ou obter o tipo de mídia atual do fluxo. (Para obter mais informações sobre tipos de mídia, consulte [tipos de mídia](media-types.md).)
+Cada descritor de apresentação contém uma lista de um ou mais *descripdores de fluxo*. Elas descrevem os fluxos na apresentação. Fluxos pode ser selecionado ou desmarcado. Somente os fluxos selecionados produzem dados. Os fluxos desmarcados não estão ativos e não produzem nenhum dado. Cada descritor de fluxo tem um *manipulador de tipo de mídia*, que é usado para alterar o tipo de mídia do fluxo ou obter o tipo de mídia atual do fluxo. (Para obter mais informações sobre tipos de mídia, consulte [tipos de mídia](media-types.md).)
 
 A tabela a seguir mostra as interfaces primárias que cada um desses objetos expõe.
 
@@ -37,7 +37,7 @@ Cada fonte de mídia fornece um descritor de apresentação que descreve a confi
 
 Você pode modificar o descritor de apresentação da origem para selecionar um conjunto diferente de fluxos. Não modifique o descritor de apresentação a menos que a origem da mídia seja interrompida. As alterações são aplicadas quando você chama [**IMFMediaSource:: Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-start) para iniciar a origem.
 
-Para obter o número de fluxos, chame [**IMFPresentationDescriptor:: GetStreamDescriptorCount**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-getstreamdescriptorcount). Para obter o descritor de fluxo para um fluxo, chame [**IMFPresentationDescriptor:: GetStreamDescriptorByIndex**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-getstreamdescriptorbyindex) e passe o índice do fluxo. Os fluxos são indexados de zero. O método **GetStreamDescriptorByIndex** retorna um ponteiro [**IMFStreamDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfstreamdescriptor) . Ele também retorna um sinalizador booliano que indica se o fluxo está selecionado. Se o fluxo for selecionado, a origem da mídia produzirá dados para esse fluxo. Caso contrário, a origem não produzirá nenhum dado para esse fluxo. Para selecionar um fluxo, chame [**IMFPresentationDescriptor:: SelectStream**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-selectstream) com o índice do fluxo. Para anular a seleção de um fluxo, chame [**IMFPresentationDescriptor::D eselectstream**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-deselectstream).
+Para obter o número de fluxos, chame [**IMFPresentationDescriptor:: GetStreamDescriptorCount**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-getstreamdescriptorcount). Para obter o descritor de fluxo para um fluxo, chame [**IMFPresentationDescriptor:: GetStreamDescriptorByIndex**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-getstreamdescriptorbyindex) e passe o índice do fluxo. Fluxos são indexados de zero. O método **GetStreamDescriptorByIndex** retorna um ponteiro [**IMFStreamDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfstreamdescriptor) . Ele também retorna um sinalizador booliano que indica se o fluxo está selecionado. Se o fluxo for selecionado, a origem da mídia produzirá dados para esse fluxo. Caso contrário, a origem não produzirá nenhum dado para esse fluxo. Para selecionar um fluxo, chame [**IMFPresentationDescriptor:: SelectStream**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-selectstream) com o índice do fluxo. Para anular a seleção de um fluxo, chame [**IMFPresentationDescriptor::D eselectstream**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-deselectstream).
 
 O código a seguir mostra como obter o descritor de apresentação de uma origem de mídia e enumerar os fluxos.
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7f5e71f9a443e12ea56cb8ca23daea148da92aa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 667b2974015edd8b8d3ac0505f4eb4d6c64d1da5b82737ec7d9bb89cc3e8776e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118248000"
 ---
 # <a name="wm_appcommand-message"></a>Mensagem do WM \_ APPCOMMAND
 
@@ -89,7 +89,7 @@ O comando do aplicativo é *cmd*, que pode ser um dos valores a seguir.
 | <span id="APPCOMMAND_LAUNCH_MEDIA_SELECT"></span><span id="appcommand_launch_media_select"></span><dl> <dt>**APPCOMMAND \_ Mídia de inicialização \_ \_ Select**</dt> <dt>16</dt> </dl>                                             | Vá para o modo de seleção de mídia.<br/>                                                                                                                                                                                                                                                        |
 | <span id="APPCOMMAND_MEDIA_CHANNEL_DOWN"></span><span id="appcommand_media_channel_down"></span><dl> <dt>**APPCOMMAND \_ Canal de mídia \_ \_ inoperante**</dt> <dt>52</dt> </dl>                                                | Reduza o valor do canal, por exemplo, para um sintonizador de TV ou rádio. <br/>                                                                                                                                                                                                             |
 | <span id="APPCOMMAND_MEDIA_CHANNEL_UP"></span><span id="appcommand_media_channel_up"></span><dl> <dt>**APPCOMMAND \_ \_Canal \_ de mídia para cima**</dt> <dt>51</dt> </dl>                                                      | Incrementar o valor do canal, por exemplo, para uma TV ou sintonizador de rádio. <br/>                                                                                                                                                                                                             |
-| <span id="APPCOMMAND_MEDIA_FAST_FORWARD"></span><span id="appcommand_media_fast_forward"></span><dl> <dt>**APPCOMMAND \_ \_ \_ Avanço de mídia rápido**</dt> <dt>49</dt> </dl>                                                | Aumente a velocidade da reprodução do fluxo. Isso pode ser implementado de várias maneiras, por exemplo, usando uma velocidade fixa ou alternando uma série de velocidades crescentes. <br/>                                                                                                               |
+| <span id="APPCOMMAND_MEDIA_FAST_FORWARD"></span><span id="appcommand_media_fast_forward"></span><dl> <dt>**APPCOMMAND \_ mídia \_ FAST \_ encaminhar**</dt> <dt>49</dt> </dl>                                                | Aumente a velocidade da reprodução do fluxo. Isso pode ser implementado de várias maneiras, por exemplo, usando uma velocidade fixa ou alternando uma série de velocidades crescentes. <br/>                                                                                                               |
 | <span id="APPCOMMAND_MEDIA_NEXTTRACK"></span><span id="appcommand_media_nexttrack"></span><dl> <dt>**APPCOMMAND \_ \_NEXTTRACK de mídia**</dt> <dt>11</dt> </dl>                                                          | Vá para a próxima faixa.<br/>                                                                                                                                                                                                                                                               |
 | <span id="APPCOMMAND_MEDIA_PAUSE"></span><span id="appcommand_media_pause"></span><dl> <dt>**APPCOMMAND \_ \_Pausa de mídia**</dt> <dt>47</dt> </dl>                                                                      | Temporariamente. Se já estiver em pausa, não execute nenhuma ação adicional. Este é um comando de pausa direta que não tem estado. Se houver botões de reprodução e pausa discretos, os aplicativos devem tomar medidas nesse comando, bem como em **\_ pausa de \_ reprodução \_ de mídia APPCOMMAND**. <br/>                               |
 | <span id="APPCOMMAND_MEDIA_PLAY"></span><span id="appcommand_media_play"></span><dl> <dt>**APPCOMMAND \_ \_Reprodução de mídia**</dt> <dt>46</dt> </dl>                                                                         | Comece a jogar na posição atual. Se já estiver em pausa, ele será retomado. Este é um comando de reprodução direta que não tem estado. Se houver botões de **reprodução** e **pausa** discretos, os aplicativos devem tomar medidas nesse comando, bem como em **\_ pausa de \_ reprodução \_ de mídia APPCOMMAND**.<br/> |
@@ -103,32 +103,32 @@ O comando do aplicativo é *cmd*, que pode ser um dos valores a seguir.
 | <span id="APPCOMMAND_MICROPHONE_VOLUME_MUTE"></span><span id="appcommand_microphone_volume_mute"></span><dl> <dt>**APPCOMMAND \_ \_ \_ Mudo de volume do microfone**</dt> <dt>24</dt> </dl>                                    | Ativar mudo do microfone.<br/>                                                                                                                                                                                                                                                            |
 | <span id="APPCOMMAND_MICROPHONE_VOLUME_UP"></span><span id="appcommand_microphone_volume_up"></span><dl> <dt>**APPCOMMAND \_ \_Volume do \_ microfone**</dt> <dt>26</dt> </dl>                                          | Aumentar o volume do microfone.<br/>                                                                                                                                                                                                                                                     |
 | <span id="APPCOMMAND_NEW"></span><span id="appcommand_new"></span><dl> <dt>**APPCOMMAND \_ NOVO**</dt> <dt>29</dt> </dl>                                                                                               | Crie uma nova janela.<br/>                                                                                                                                                                                                                                                            |
-| <span id="APPCOMMAND_OPEN"></span><span id="appcommand_open"></span><dl> <dt>**APPCOMMAND \_ ABRIR**</dt> <dt>30</dt> </dl>                                                                                            | Abra uma janela.<br/>                                                                                                                                                                                                                                                                  |
-| <span id="APPCOMMAND_PASTE"></span><span id="appcommand_paste"></span><dl> <dt>**APPCOMMAND \_ COLAR**</dt> <dt>38</dt> </dl>                                                                                         | Colar<br/>                                                                                                                                                                                                                                                                           |
-| <span id="APPCOMMAND_PRINT"></span><span id="appcommand_print"></span><dl> <dt>**APPCOMMAND \_ IMPRIMIR**</dt> <dt>33</dt> </dl>                                                                                         | Imprimir documento atual.<br/>                                                                                                                                                                                                                                                         |
-| <span id="APPCOMMAND_REDO"></span><span id="appcommand_redo"></span><dl> <dt>**APPCOMMAND \_ Refazer**</dt> <dt>35</dt> </dl>                                                                                            | Refazer a última ação.<br/>                                                                                                                                                                                                                                                               |
-| <span id="APPCOMMAND_REPLY_TO_MAIL"></span><span id="appcommand_reply_to_mail"></span><dl> <dt>**APPCOMMAND \_ RESPONDER \_ ao \_ email**</dt> <dt>39</dt> </dl>                                                               | Responder a uma mensagem de email.<br/>                                                                                                                                                                                                                                                        |
-| <span id="APPCOMMAND_SAVE"></span><span id="appcommand_save"></span><dl> <dt>**APPCOMMAND \_ Economize**</dt> <dt>32</dt> </dl>                                                                                            | Salvar documento atual.<br/>                                                                                                                                                                                                                                                          |
-| <span id="APPCOMMAND_SEND_MAIL"></span><span id="appcommand_send_mail"></span><dl> <dt>**APPCOMMAND \_ Enviar \_ email**</dt> <dt>41</dt> </dl>                                                                            | Envie uma mensagem de email.<br/>                                                                                                                                                                                                                                                            |
-| <span id="APPCOMMAND_SPELL_CHECK"></span><span id="appcommand_spell_check"></span><dl> <dt>**APPCOMMAND \_ \_Verificação ortográfica**</dt> <dt>42</dt> </dl>                                                                      | Inicie uma verificação ortográfica.<br/>                                                                                                                                                                                                                                                         |
-| <span id="APPCOMMAND_TREBLE_DOWN"></span><span id="appcommand_treble_down"></span><dl> <dt>**APPCOMMAND \_ AGUDO \_**</dt> <dt>22</dt> </dl>                                                                      | Diminuir os agudos.<br/>                                                                                                                                                                                                                                                            |
-| <span id="APPCOMMAND_TREBLE_UP"></span><span id="appcommand_treble_up"></span><dl> <dt>**APPCOMMAND \_ AGUDOs \_ de**</dt> <dt>23</dt> </dl>                                                                            | Aumente os agudos.<br/>                                                                                                                                                                                                                                                            |
-| <span id="APPCOMMAND_UNDO"></span><span id="appcommand_undo"></span><dl> <dt>**APPCOMMAND \_ DESFAZER**</dt> <dt>34</dt> </dl>                                                                                            | Desfazer a última ação.<br/>                                                                                                                                                                                                                                                               |
-| <span id="APPCOMMAND_VOLUME_DOWN"></span><span id="appcommand_volume_down"></span><dl> <dt>**APPCOMMAND \_ VOLUME \_ baixo**</dt> <dt>9</dt> </dl>                                                                       | Reduza o volume.<br/>                                                                                                                                                                                                                                                               |
-| <span id="APPCOMMAND_VOLUME_MUTE"></span><span id="appcommand_volume_mute"></span><dl> <dt>**APPCOMMAND \_ VOLUME \_ mudo**</dt> <dt>8</dt> </dl>                                                                       | Ativar mudo do volume.<br/>                                                                                                                                                                                                                                                                |
-| <span id="APPCOMMAND_VOLUME_UP"></span><span id="appcommand_volume_up"></span><dl> <dt>**APPCOMMAND \_ VOLUME \_ up**</dt> <dt>10</dt> </dl>                                                                            | Aumentar o volume.<br/>                                                                                                                                                                                                                                                               |
+| <span id="APPCOMMAND_OPEN"></span><span id="appcommand_open"></span><dl> <dt>**APPCOMMAND \_ OPEN**</dt> <dt>30</dt> </dl>                                                                                            | Abra uma janela.<br/>                                                                                                                                                                                                                                                                  |
+| <span id="APPCOMMAND_PASTE"></span><span id="appcommand_paste"></span><dl> <dt>**APPCOMMAND \_ PASTE**</dt> <dt>38</dt> </dl>                                                                                         | Colar<br/>                                                                                                                                                                                                                                                                           |
+| <span id="APPCOMMAND_PRINT"></span><span id="appcommand_print"></span><dl> <dt>**APPCOMMAND \_ PRINT**</dt> <dt>33</dt> </dl>                                                                                         | Imprimir documento atual.<br/>                                                                                                                                                                                                                                                         |
+| <span id="APPCOMMAND_REDO"></span><span id="appcommand_redo"></span><dl> <dt>**APPCOMMAND \_ REDO**</dt> <dt>35</dt> </dl>                                                                                            | Refazer a última ação.<br/>                                                                                                                                                                                                                                                               |
+| <span id="APPCOMMAND_REPLY_TO_MAIL"></span><span id="appcommand_reply_to_mail"></span><dl> <dt>**APPCOMMAND \_ RESPONDER \_ AO \_ EMAIL**</dt> <dt>39</dt> </dl>                                                               | Responder a uma mensagem de email.<br/>                                                                                                                                                                                                                                                        |
+| <span id="APPCOMMAND_SAVE"></span><span id="appcommand_save"></span><dl> <dt>**APPCOMMAND \_ SALVAR**</dt> <dt>32</dt> </dl>                                                                                            | Salve o documento atual.<br/>                                                                                                                                                                                                                                                          |
+| <span id="APPCOMMAND_SEND_MAIL"></span><span id="appcommand_send_mail"></span><dl> <dt>**APPCOMMAND \_ ENVIAR \_ EMAIL**</dt> <dt>41</dt> </dl>                                                                            | Envie uma mensagem de email.<br/>                                                                                                                                                                                                                                                            |
+| <span id="APPCOMMAND_SPELL_CHECK"></span><span id="appcommand_spell_check"></span><dl> <dt>**APPCOMMAND \_ VERIFICAÇÃO \_ ORT SPELL**</dt> <dt>42</dt> </dl>                                                                      | Inicie uma verificação ort ort em .<br/>                                                                                                                                                                                                                                                         |
+| <span id="APPCOMMAND_TREBLE_DOWN"></span><span id="appcommand_treble_down"></span><dl> <dt>**APPCOMMAND \_ TREBLE \_ DOWN**</dt> <dt>22</dt> </dl>                                                                      | Diminua o treble.<br/>                                                                                                                                                                                                                                                            |
+| <span id="APPCOMMAND_TREBLE_UP"></span><span id="appcommand_treble_up"></span><dl> <dt>**APPCOMMAND \_ TREBLE \_ UP**</dt> <dt>23</dt> </dl>                                                                            | Aumente o treble.<br/>                                                                                                                                                                                                                                                            |
+| <span id="APPCOMMAND_UNDO"></span><span id="appcommand_undo"></span><dl> <dt>**APPCOMMAND \_ UNDO**</dt> <dt>34</dt> </dl>                                                                                            | Desfazer a última ação.<br/>                                                                                                                                                                                                                                                               |
+| <span id="APPCOMMAND_VOLUME_DOWN"></span><span id="appcommand_volume_down"></span><dl> <dt>**APPCOMMAND \_ VOLUME \_ PARA BAIXO**</dt> <dt>9</dt> </dl>                                                                       | Reduza o volume.<br/>                                                                                                                                                                                                                                                               |
+| <span id="APPCOMMAND_VOLUME_MUTE"></span><span id="appcommand_volume_mute"></span><dl> <dt>**APPCOMMAND \_ VOLUME \_ MUTE**</dt> <dt>8</dt> </dl>                                                                       | Mute the volume.<br/>                                                                                                                                                                                                                                                                |
+| <span id="APPCOMMAND_VOLUME_UP"></span><span id="appcommand_volume_up"></span><dl> <dt>**APPCOMMAND \_ VOLUME \_ ACIMA**</dt> <dt>DE 10</dt> </dl>                                                                            | Aumente o volume.<br/>                                                                                                                                                                                                                                                               |
 
 
 
  
 
-O componente *udevice* indica o dispositivo de entrada que gerou o evento de entrada e pode ser um dos valores a seguir.
+O *componente uDevice* indica o dispositivo de entrada que gerou o evento de entrada e pode ser um dos valores a seguir.
 
 
 
 | Valor                                                                                                                                                                                                                                 | Significado                                                                                                  |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| <span id="FAPPCOMMAND_KEY"></span><span id="fappcommand_key"></span><dl> <dt>**FAPPCOMMAND \_ CHAVE**</dt> <dt>0</dt> </dl>            | O usuário pressionou uma chave.<br/>                                                                           |
+| <span id="FAPPCOMMAND_KEY"></span><span id="fappcommand_key"></span><dl> <dt>**FAPPCOMMAND \_ CHAVE**</dt> <dt>0</dt> </dl>            | O usuário pressionou uma tecla.<br/>                                                                           |
 | <span id="FAPPCOMMAND_MOUSE"></span><span id="fappcommand_mouse"></span><dl> <dt>**FAPPCOMMAND \_ MOUSE**</dt> <dt>0x8000</dt> </dl> | O usuário clicou em um botão do mouse.<br/>                                                                  |
 | <span id="FAPPCOMMAND_OEM"></span><span id="fappcommand_oem"></span><dl> <dt>**FAPPCOMMAND \_ OEM**</dt> <dt>0x1000</dt> </dl>       | Uma fonte de hardware não identificada gerou o evento. Pode ser um mouse ou um evento de teclado.<br/> |
 
@@ -136,19 +136,19 @@ O componente *udevice* indica o dispositivo de entrada que gerou o evento de ent
 
  
 
-O componente *dwKeys* indica se várias chaves virtuais estão inativas e pode ser um ou mais dos valores a seguir.
+O *componente dwKeys* indica se várias chaves virtuais estão inotivas e podem ser um ou mais dos valores a seguir.
 
 
 
 | Valor                                                                                                                                                                                                               | Significado                                     |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| <span id="MK_CONTROL"></span><span id="mk_control"></span><dl> <dt>**MK \_**</dt> <dt>0X0008</dt> de controle </dl>    | A tecla CTRL está inoperante.<br/>            |
-| <span id="MK_LBUTTON"></span><span id="mk_lbutton"></span><dl> <dt>**MK \_ LBUTTON**</dt> <dt>0x0001</dt> </dl>    | O botão esquerdo do mouse está inativo.<br/>   |
-| <span id="MK_MBUTTON"></span><span id="mk_mbutton"></span><dl> <dt>**MK \_ MBUTTON**</dt> <dt>0x0010</dt> </dl>    | O botão do meio do mouse está inativo.<br/> |
-| <span id="MK_RBUTTON"></span><span id="mk_rbutton"></span><dl> <dt>**MK \_ RBUTTON**</dt> <dt>0x0002</dt> </dl>    | O botão direito do mouse está inativo.<br/>  |
-| <span id="MK_SHIFT"></span><span id="mk_shift"></span><dl> <dt>**MK \_ SHIFT**</dt> <dt>0x0004</dt> </dl>          | A tecla SHIFT está inoperante.<br/>           |
-| <span id="MK_XBUTTON1"></span><span id="mk_xbutton1"></span><dl> <dt>**MK \_ XBUTTON1**</dt> <dt>0x0020</dt> </dl> | O primeiro botão X está inoperante.<br/>      |
-| <span id="MK_XBUTTON2"></span><span id="mk_xbutton2"></span><dl> <dt>**MK \_ XBUTTON2**</dt> <dt>0x0040</dt> </dl> | O segundo botão X está inoperante.<br/>     |
+| <span id="MK_CONTROL"></span><span id="mk_control"></span><dl> <dt>**MK \_ CONTROLE**</dt> <dt>0x0008</dt> </dl>    | A tecla CTRL está inocizada.<br/>            |
+| <span id="MK_LBUTTON"></span><span id="mk_lbutton"></span><dl> <dt>**MK \_ LBUTTON**</dt> <dt>0x0001</dt> </dl>    | O botão esquerdo do mouse está ino mouse.<br/>   |
+| <span id="MK_MBUTTON"></span><span id="mk_mbutton"></span><dl> <dt>**MK \_ MBUTTON**</dt> <dt>0x0010</dt> </dl>    | O botão do meio do mouse está ino mouse.<br/> |
+| <span id="MK_RBUTTON"></span><span id="mk_rbutton"></span><dl> <dt>**MK \_ RBUTTON**</dt> <dt>0x0002</dt> </dl>    | O botão direito do mouse está ino mouse.<br/>  |
+| <span id="MK_SHIFT"></span><span id="mk_shift"></span><dl> <dt>**MK \_ SHIFT**</dt> <dt>0x0004</dt> </dl>          | A tecla SHIFT está inobada.<br/>           |
+| <span id="MK_XBUTTON1"></span><span id="mk_xbutton1"></span><dl> <dt>**MK \_ XBUTTON1**</dt> <dt>0x0020</dt> </dl> | O primeiro botão X está ino mouse.<br/>      |
+| <span id="MK_XBUTTON2"></span><span id="mk_xbutton2"></span><dl> <dt>**MK \_ XBUTTON2**</dt> <dt>0x0040</dt> </dl> | O segundo botão X está ino mouse.<br/>     |
 
 
 
@@ -158,17 +158,17 @@ O componente *dwKeys* indica se várias chaves virtuais estão inativas e pode s
 
 ## <a name="return-value"></a>Retornar valor
 
-Se um aplicativo processar essa mensagem, ele deverá retornar **true**. Para obter mais informações sobre como processar o valor de retorno, consulte a seção comentários.
+Se um aplicativo processa essa mensagem, ele deve retornar **TRUE.** Para obter mais informações sobre como processar o valor de retorno, consulte a seção Comentários.
 
 ## <a name="remarks"></a>Comentários
 
-O [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) gera a mensagem do **WM \_ APPCOMMAND** ao processar a mensagem do WM [**\_ XBUTTONUP**](wm-xbuttonup.md) ou do [**WM \_ NCXBUTTONUP**](wm-ncxbuttonup.md) ou quando o usuário digita uma chave de comando do aplicativo.
+[**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) gera a mensagem **WM \_ APPCOMMAND** quando processa a mensagem [**WM \_ XBUTTONUP**](wm-xbuttonup.md) ou [**WM \_ NCXBUTTONUP**](wm-ncxbuttonup.md) ou quando o usuário digita uma chave de comando do aplicativo.
 
-Se uma janela filho não processar essa mensagem e, em vez disso, chamar [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca), o **DefWindowProc** enviará a mensagem à sua janela pai. Se uma janela de nível superior não processar essa mensagem e, em vez disso, chamar **DefWindowProc**, **DefWindowProc** chamará um gancho de shell com o código de gancho igual a **HSHELL \_ APPCOMMAND**.
+Se uma janela filho não processar essa mensagem e, em vez disso, chamar [**DefWindowProc,**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) **DefWindowProc** enviará a mensagem para sua janela pai. Se uma janela de nível superior não processar essa mensagem e, em vez disso, chamar **DefWindowProc,** **DefWindowProc** chamará um gancho de shell com o código de gancho igual a **HSHELL \_ APPCOMMAND**.
 
-Para obter as coordenadas do cursor se a mensagem tiver sido gerada por um clique do mouse, o aplicativo poderá chamar [**GetMessagePos**](/windows/desktop/api/winuser/nf-winuser-getmessagepos). Um aplicativo pode testar se a mensagem foi gerada pelo mouse verificando se *lParam* contém o **\_ mouse FAPPCOMMAND**.
+Para obter as coordenadas do cursor se a mensagem tiver sido gerada por um clique do mouse, o aplicativo poderá [**chamar GetMessagePos**](/windows/desktop/api/winuser/nf-winuser-getmessagepos). Um aplicativo pode testar se a mensagem foi gerada pelo mouse verificando se *lParam* contém **FAPPCOMMAND \_ MOUSE**.
 
-Ao contrário de outras mensagens do Windows, um aplicativo deve retornar **true** desta mensagem se a processar. Isso permitirá que o software que simula essa mensagem em sistemas Windows anteriores ao Windows 2000 determine se o procedimento de janela processou a mensagem ou chamou [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) para processá-la.
+Ao contrário de outras mensagens do Windows, um aplicativo deverá retornar **TRUE** dessa mensagem se processá-la. Isso permitirá que o software que simula essa mensagem em sistemas Windows anteriores ao Windows 2000 determine se o procedimento de janela processou a mensagem ou chamou [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) para processá-la.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -178,39 +178,39 @@ Ao contrário de outras mensagens do Windows, um aplicativo deve retornar **true
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 
 **Referência**
 </dt> <dt>
 
-[**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
+[**Defwindowproc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
 </dt> <dt>
 
-[**OBTER \_ \_ lParam APPCOMMAND**](/windows/win32/api/winuser/nf-winuser-get_appcommand_lparam)
+[**OBTER \_ APPCOMMAND \_ LPARAM**](/windows/win32/api/winuser/nf-winuser-get_appcommand_lparam)
 </dt> <dt>
 
-[**OBTER \_ lParam do dispositivo \_**](/windows/win32/api/winuser/nf-winuser-get_device_lparam)
+[**OBTER \_ \_ LPARAM DO DISPOSITIVO**](/windows/win32/api/winuser/nf-winuser-get_device_lparam)
 </dt> <dt>
 
-[**OBTER \_ \_ lParam KeyState**](/windows/win32/api/winuser/nf-winuser-get_keystate_lparam)
+[**GET \_ KEYSTATE \_ LPARAM**](/windows/win32/api/winuser/nf-winuser-get_keystate_lparam)
 </dt> <dt>
 
 [**ShellProc**](/previous-versions/windows/desktop/legacy/ms644991(v=vs.85))
 </dt> <dt>
 
-[**XBUTTONUP do WM \_**](wm-xbuttonup.md)
+[**WM \_ XBUTTONUP**](wm-xbuttonup.md)
 </dt> <dt>
 
-[**NCXBUTTONUP do WM \_**](wm-ncxbuttonup.md)
+[**WM \_ NCXBUTTONUP**](wm-ncxbuttonup.md)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Entrada do mouse](mouse-input.md)

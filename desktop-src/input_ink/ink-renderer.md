@@ -1,21 +1,21 @@
 ---
-description: As APIs do processador de tinta permitem a renderização de traços de tinta no contexto do dispositivo Direct2D designado de um aplicativo universal do Windows, em vez do controle InkCanvas padrão.
+description: as APIs do processador de tinta permitem a renderização de traços de tinta no contexto do dispositivo Direct2D designado de um aplicativo Universal Windows, em vez do controle InkCanvas padrão.
 ms.assetid: 8E532066-19EB-4FA6-823D-21823591742F
 title: Processador de tinta
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: f9e1e654859dd8d777855bc2bffaf953feb8ba8c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7d7ba9325f6aeccca706fab206aee0835243341376108d9355fac9e54ff9998d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105792888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118249134"
 ---
 # <a name="ink-renderer"></a>Processador de tinta
 
-As APIs do processador de tinta permitem a renderização de traços de tinta no contexto do dispositivo Direct2D designado de um aplicativo universal do Windows, em vez do controle [**InkCanvas**](/uwp/api/Windows.UI.Xaml.Controls.InkCanvas) padrão.
+as APIs do processador de tinta permitem a renderização de traços de tinta no contexto do dispositivo Direct2D designado de um aplicativo Universal Windows, em vez do controle [**InkCanvas**](/uwp/api/Windows.UI.Xaml.Controls.InkCanvas) padrão.
 
-O processador de tinta foi projetado para ser usado por desenvolvedores de aplicativos universais do Windows interessados em Personalizar como os traços de tinta são processados "seco" e de qualidade idêntica ao controle [**InkCanvas**](/uwp/api/Windows.UI.Xaml.Controls.InkCanvas) .
+o processador de tinta foi projetado para ser usado por desenvolvedores de aplicativos universais Windows interessados em personalizar como os traços de tinta são processados "seco" e de qualidade idêntica ao controle [**InkCanvas**](/uwp/api/Windows.UI.Xaml.Controls.InkCanvas) .
 
 ## <a name="in-this-section"></a>Nesta seção
 

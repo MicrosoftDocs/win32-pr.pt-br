@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: de95a752416ba5d32642dd157d222c1e0a6c4ed9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0bd9a9e9d290a23ef6f95f72106f14f7b271c7be7154677622ead1edfb9541b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104461099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118254425"
 ---
 # <a name="jet_enumcolumnvalue-constructor"></a>Construtor de JET_ENUMCOLUMNVALUE
 

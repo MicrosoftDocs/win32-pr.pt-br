@@ -4,18 +4,18 @@ ms.assetid: 170a2bac-843f-451b-b2fa-6710bf828710
 title: Métodos de FontFamily
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd303aa47014ead184450c5ba799a0ccb42dfcb2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0744cb4dad0b5620bf5762aafd90ca0d644f7e54ef22e690a05424c56e03edee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118249527"
 ---
 # <a name="fontfamily-methods"></a>Métodos de FontFamily
 
 Este tópico lista os métodos da classe [**FontFamily**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-fontfamily) . Para obter uma listagem de classe completa, consulte **FontFamilyClass**.
 
--   [**8i**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-fontfamily-clone)
+-   [**Clone**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-fontfamily-clone)
 -   [**GenericMonospace**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-fontfamily-genericmonospace)
 -   [**GenericSansSerif**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-fontfamily-genericsansserif)
 -   [**GenericSerif**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-fontfamily-genericserif)

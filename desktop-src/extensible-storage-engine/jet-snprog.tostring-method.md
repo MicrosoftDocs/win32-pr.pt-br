@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 84151ccbf89fd7d8031ac96947e0ca5809c1c533
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 416f5ddaaf91e9a1c18a9acab51a18932a70c6e500ff304fd8392f69a10d5650
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118252600"
 ---
 # <a name="jet_snprogtostring-method"></a>JET_SNPROG. Método ToString
 
 Gere uma representação de cadeia de caracteres da instância.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,15 +56,15 @@ public override string ToString()
 
 #### <a name="return-value"></a>Retornar valor
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 A estrutura como uma cadeia de caracteres.  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_SNPROG](./jet-snprog-class.md)
+[JET_SNPROG classe](./jet-snprog-class.md)
 
-[Membros do JET_SNPROG](./jet-snprog-members.md)
+[JET_SNPROG membros](./jet-snprog-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

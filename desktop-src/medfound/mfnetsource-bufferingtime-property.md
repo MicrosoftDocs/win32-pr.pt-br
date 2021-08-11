@@ -1,31 +1,31 @@
 ---
-description: Número de segundos de dados que a fonte de rede armazena em buffer na inicialização.
+description: Número de segundos de dados armazenados em buffer pela fonte de rede na inicialização.
 ms.assetid: 186b55fc-d1b1-4187-a748-efaee114eca9
-title: Propriedade MFNETSOURCE_BUFFERINGTIME (Mfidl. h)
+title: MFNETSOURCE_BUFFERINGTIME propriedade (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 21c165e58ebd5f2aec0f1ca7ce38281f8c94896d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b6de79344913d77a30dc05dcad4e4f8dd3608e0d35009b1d8e5254e08790993
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118243803"
 ---
-# <a name="mfnetsource_bufferingtime-property"></a>\_Propriedade MFNETSOURCE BUFFERINGTIME
+# <a name="mfnetsource_bufferingtime-property"></a>Propriedade BUFFERINGTIME MFNETSOURCE \_
 
-Número de segundos de dados que a fonte de rede armazena em buffer na inicialização.
+Número de segundos de dados armazenados em buffer pela fonte de rede na inicialização.
 
 
 
 Tipo de dados
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Membro PROPVARIANT
 
-**DWORD** (armazenado como **longo**)
+**DWORD** (armazenado como **LONG**)
 
-\_I4 VT
+VT \_ I4
 
 **lVal**
 
@@ -33,9 +33,9 @@ Membro PROPVARIANT
 
 ## <a name="remarks"></a>Comentários
 
-A constante **MFNETSOURCE \_ BUFFERINGTIME** define o GUID para essa chave de propriedade. O identificador de propriedade (PID) é zero.
+A constante **MFNETSOURCE \_ BUFFERINGTIME** define o GUID para essa chave de propriedade. O PID (identificador de propriedade) é zero.
 
-Os aplicativos podem usar essa propriedade para configurar a origem da rede. Para definir a propriedade, passe um ponteiro **IPropertyStore** para o resolvedor de origem. Para obter mais informações, consulte [Configurando uma origem de mídia](configuring-a-media-source.md).
+Os aplicativos podem usar essa propriedade para configurar a origem da rede. Para definir a propriedade , passe um ponteiro **IPropertyStore** para o resolvedor de origem. Para obter mais informações, consulte [Configurando uma fonte de mídia](configuring-a-media-source.md).
 
 O valor padrão dessa propriedade é 5 segundos.
 
@@ -45,20 +45,20 @@ O valor padrão dessa propriedade é 5 segundos.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                               |
+| parâmetro<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> <dt>
 
-[Recursos de origem da rede](network-source-features.md)
+[Recursos de origem de rede](network-source-features.md)
 </dt> <dt>
 
 [Rede em Media Foundation](networking-in-media-foundation.md)

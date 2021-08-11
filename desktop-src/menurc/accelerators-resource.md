@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2aeb09ca52438f7b2f4903e5403eeb722e5d7d7
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 0e7ba2d19bbab6346f7a62afe56269f762cd94f7ef1730654fb6ac1abf317e4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104499032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118235735"
 ---
 # <a name="accelerators-resource"></a>Recurso de ACELERAdores
 
@@ -53,7 +53,7 @@ Zero ou mais das instruções a seguir.
 
 
 
- 
+ 
 
 </dd> <dt>
 
@@ -64,7 +64,7 @@ Tecla a ser usada como um acelerador. Pode ser qualquer um dos tipos de caracter
 
 
 
-| Tipo                    | Descrição                                                                                                                                                                                                                                  |
+| Type                    | Descrição                                                                                                                                                                                                                                  |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | "*Char*"                | Um único caractere entre aspas duplas ("). O caractere pode ser precedido por um acento circunflexo (^), o que significa que o caractere é um caractere de controle.                                                                                  |
 | *Caractere*             | Um valor inteiro que representa um caractere. O parâmetro de *tipo* deve ser **ASCII**.                                                                                                                                                           |
@@ -72,7 +72,7 @@ Tecla a ser usada como um acelerador. Pode ser qualquer um dos tipos de caracter
 
 
 
- 
+ 
 
 </dd> <dt>
 
@@ -99,14 +99,14 @@ opções que definem o acelerador. Esse parâmetro pode ser um ou mais dos valor
 
 | Opção                             | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Inverter**                       | Especifica que nenhum item de menu de nível superior é realçado quando o acelerador é usado. Isso é útil ao definir aceleradores para ações como rolagem que não correspondem a um item de menu. Se **Invert** for omitido, um item de menu de nível superior será realçado (se possível) quando o acelerador for usado. Este atributo é obsoleto e mantido somente para compatibilidade com versões anteriores com arquivos de recursos projetados para o Windows de 16 bits. |
-| **ALT**                            | Faz com que o acelerador seja ativado somente se a tecla ALT estiver inativa. Aplica-se somente a chaves virtuais.                                                                                                                                                                                                                                                                                                                                            |
+| **Inverter**                       | Especifica que nenhum item de menu de nível superior é realçado quando o acelerador é usado. Isso é útil ao definir aceleradores para ações como rolagem que não correspondem a um item de menu. Se **Invert** for omitido, um item de menu de nível superior será realçado (se possível) quando o acelerador for usado. Este atributo é obsoleto e mantido somente para compatibilidade com versões anteriores com arquivos de recursos projetados para Windows de 16 bits. |
+| **PRESSIONANDO**                            | Faz com que o acelerador seja ativado somente se a tecla ALT estiver inativa. Aplica-se somente a chaves virtuais.                                                                                                                                                                                                                                                                                                                                            |
 | **ALTERNÂNCIA**                          | Faz com que o acelerador seja ativado somente se a tecla SHIFT estiver inativa. Aplica-se somente a chaves virtuais                                                                                                                                                                                                                                                                                                                                           |
 | [**CONTROLO**](control-control.md) | Define o caractere como um caractere de controle (o acelerador só será ativado se a tecla de controle estiver inoperante). Isso tem o mesmo efeito que usar um acento circunflexo (^) antes do caractere de acelerador no parâmetro de *evento* . Aplica-se somente a chaves virtuais                                                                                                                                                                                           |
 
 
 
- 
+ 
 
 </dd> </dl>
 
@@ -140,7 +140,7 @@ O exemplo a seguir demonstra o uso de teclas de aceleração.
 }
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 
@@ -171,6 +171,6 @@ O exemplo a seguir demonstra o uso de teclas de aceleração.
 [**Versão**](version-statement.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

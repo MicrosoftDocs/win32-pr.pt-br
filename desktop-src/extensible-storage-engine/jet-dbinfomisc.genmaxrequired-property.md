@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e06c730318a824774365aab0f5c999e97cd22f3d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46d51809bb57f7fbdedf4c89ac1241e9f69fa1dd58236553d7c48874c349c4a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118254939"
 ---
 # <a name="jet_dbinfomiscgenmaxrequired-property"></a>Propriedade JET_DBINFOMISC. genMaxRequired
 
@@ -40,7 +40,7 @@ Obtém a geração de log máxima necessária para repetir os logs.
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` vb
 'Declaration

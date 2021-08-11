@@ -1,27 +1,27 @@
 ---
-description: Especifica quantas vezes o DSP de captura de voz executa a supressão de eco acústico (AES) no sinal restante.
+description: Especifica quantas vezes o DSP de Captura de Voz executa a supressão de eco acústico (AES) no sinal residual.
 ms.assetid: 409b40f8-38eb-49f7-be30-348ab5cdd33a
-title: Propriedade MFPKEY_WMAAECMA_FEATR_AES (Wmcodecdsp. h)
+title: MFPKEY_WMAAECMA_FEATR_AES propriedade (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b5da7505a259a51ca8456f3caffa153790649320
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e842bc3064b431437d8bbdfab06c0081ecdb49a8c38288ba4adb78648363c71a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105752173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118242033"
 ---
-# <a name="mfpkey_wmaaecma_featr_aes-property"></a>\_ \_ \_ Propriedade AES do MFPKEY WMAAECMA
+# <a name="mfpkey_wmaaecma_featr_aes-property"></a>Propriedade \_ AES MFPKEY WMAAECMACALR \_ \_
 
-Especifica quantas vezes o DSP de captura de voz executa a supressão de eco acústico (AES) no sinal restante.
+Especifica quantas vezes o DSP de Captura de Voz executa a supressão de eco acústico (AES) no sinal residual.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Disponível somente usando [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de Dados
 
-\_I4 VT
+VT \_ I4
 
 ## <a name="default-value"></a>Valor padrão
 
@@ -29,13 +29,13 @@ Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-pro
 
 ## <a name="applies-to"></a>Aplica-se A
 
--   [DSP de captura de voz](voicecapturedmo.md)
+-   [DSP de Captura de Voz](voicecapturedmo.md)
 
 ## <a name="remarks"></a>Comentários
 
-O DSP de captura de voz pode executar o AES no sinal residual após o cancelamento do eco. Essa propriedade pode ter o valor 0, 1 ou 2. O valor padrão é 0. Antes de definir essa propriedade, você deve definir a propriedade [ \_ modo de \_ recurso \_ MFPKEY WMAAECMA](mfpkey-wmaaecma-feature-modeproperty.md) como Variant \_ true.
+O DSP de Captura de Voz pode executar AES no sinal residual após o cancelamento de eco. Essa propriedade pode ter o valor 0, 1 ou 2. O valor padrão é 0. Antes de definir essa propriedade, você deve definir a [propriedade MFPKEY \_ WMAAECMA \_ FEATURE \_ MODE](mfpkey-wmaaecma-feature-modeproperty.md) como VARIANT \_ TRUE.
 
-O DSP usa essa propriedade somente quando o processamento de AEC está habilitado.
+O DSP usa essa propriedade somente quando o processamento do AEC está habilitado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,20 +43,20 @@ O DSP usa essa propriedade somente quando o processamento de AEC está habilitad
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> <dt>
 
-[DSP de captura de voz](voicecapturedmo.md)
+[DSP de Captura de Voz](voicecapturedmo.md)
 </dt> </dl>
 
  

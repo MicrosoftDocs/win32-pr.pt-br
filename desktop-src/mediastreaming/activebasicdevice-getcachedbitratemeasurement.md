@@ -1,11 +1,11 @@
 ---
-title: Método ActiveBasicDevice GetCachedBitrateMeasurement (PlayToDevice. h)
+title: Método ActiveBasicDevice GetCachedBitrateMeasurement (PlayToDevice.h)
 description: Obtém a taxa de bits armazenada em cache.
 ms.assetid: 78C3C5D7-C46B-413D-BC18-C3861E5FDAA5
 keywords:
-- API de streaming de mídia do método GetCachedBitrateMeasurement
-- API de streaming de mídia do método GetCachedBitrateMeasurement, interface ActiveBasicDevice
-- API de streaming de mídia da interface ActiveBasicDevice, método GetCachedBitrateMeasurement
+- API de Streaming de Mídia do método GetCachedBitrateMeasurement
+- Método GetCachedBitrateMeasurement API de Streaming de Mídia, interface ActiveBasicDevice
+- API de Streaming de Mídia da interface ActiveBasicDevice, método GetCachedBitrateMeasurement
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d15b38ba2730d2023b09c2fa0352ade1f1532724
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 031d77595298651be11c793f8fd96471808ab1aef3f5a2b6398be9c1ff10de02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118236861"
 ---
-# <a name="activebasicdevicegetcachedbitratemeasurement-method"></a>Método ActiveBasicDevice:: GetCachedBitrateMeasurement
+# <a name="activebasicdevicegetcachedbitratemeasurement-method"></a>Método ActiveBasicDevice::GetCachedBitrateMeasurement
 
 Obtém a taxa de bits armazenada em cache.
 
@@ -43,23 +43,23 @@ HRESULT GetCachedBitrateMeasurement(
 
 <dl> <dt>
 
-*physicalNetworkInterface* \[ no\]
+*physicalNetworkInterface* \[ Em\]
 </dt> <dd>
 
-Especifica a interface de rede física.
+Especifica o interface de rede física.
 
 </dd> <dt>
 
 *taxa de bits* \[ out, retval\]
 </dt> <dd>
 
-Recebe o valor de taxa de bits.
+Recebe o valor da taxa de bits.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Retornar valor
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,15 +67,15 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>PlayToDevice. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>PlayToDevice. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8.1 somente aplicativos da área de trabalho\]<br/>                                                |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 Somente \[ aplicativos da área de trabalho R2\]<br/>                                     |
+| parâmetro<br/>                   | <dl> <dt>PlayToDevice.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>PlayToDevice.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Playtodevice.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 

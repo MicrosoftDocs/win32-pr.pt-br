@@ -1,11 +1,11 @@
 ---
-title: Método ActiveBasicDevice GetEffectiveBandwidth (PlayToDevice. h)
-description: Obtém a largura de banda efetiva atual do dispositivo.
+title: Método ActiveBasicDevice GetEffectiveBandwidth (PlayToDevice.h)
+description: Obtém a largura de banda efetiva atual para o dispositivo.
 ms.assetid: 88CE03AB-6F87-4E43-B673-2C693D351F10
 keywords:
-- API de streaming de mídia do método GetEffectiveBandwidth
-- API de streaming de mídia do método GetEffectiveBandwidth, interface ActiveBasicDevice
-- API de streaming de mídia da interface ActiveBasicDevice, método GetEffectiveBandwidth
+- API de Streaming de Mídia do método GetEffectiveBandwidth
+- Método GetEffectiveBandwidth API de Streaming de Mídia, interface ActiveBasicDevice
+- API de Streaming de Mídia da interface ActiveBasicDevice, método GetEffectiveBandwidth
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05a97e9f1dc77040d4f55bc8997e553e0cdc5239
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7ac51318997e80c043e36dc87b052a5e21bf9933f93e34f2e5071fb20d4bb75b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118236778"
 ---
-# <a name="activebasicdevicegeteffectivebandwidth-method"></a>Método ActiveBasicDevice:: GetEffectiveBandwidth
+# <a name="activebasicdevicegeteffectivebandwidth-method"></a>Método ActiveBasicDevice::GetEffectiveBandwidth
 
-Obtém a largura de banda efetiva atual do dispositivo.
+Obtém a largura de banda efetiva atual para o dispositivo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,7 +43,7 @@ HRESULT GetEffectiveBandwidth(
 
 <dl> <dt>
 
-*transmitSpeed* \[ no, retval\]
+*transmitSpeed* \[ in, retval\]
 </dt> <dd>
 
 Especifica se a velocidade de transmissão é recuperada ou se a velocidade de recebimento é recuperada.
@@ -52,7 +52,7 @@ Especifica se a velocidade de transmissão é recuperada ou se a velocidade de r
 
 </dd> <dt>
 
-*currentSpeed* \[ fora\]
+*currentSpeed* \[ out\]
 </dt> <dd>
 
 Recebe a largura de banda efetiva atual.
@@ -61,7 +61,7 @@ Recebe a largura de banda efetiva atual.
 
 ## <a name="return-value"></a>Retornar valor
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -69,15 +69,15 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>PlayToDevice. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>PlayToDevice. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8.1 somente aplicativos da área de trabalho\]<br/>                                                |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 Somente \[ aplicativos da área de trabalho R2\]<br/>                                     |
+| parâmetro<br/>                   | <dl> <dt>PlayToDevice.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>PlayToDevice.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Playtodevice.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 

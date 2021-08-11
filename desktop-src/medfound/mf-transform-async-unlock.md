@@ -4,12 +4,12 @@ ms.assetid: e12ab57e-ebc2-46af-afdf-d78d4db16fcf
 title: Atributo MF_TRANSFORM_ASYNC_UNLOCK (Mftransform. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e7876b3f1fca80e881414399d40e69112a64d8c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 82a0a8f328095c3a5c567171fa6a625a77e5623d126dfb2be9f34fef556984be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502105"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118244172"
 ---
 # <a name="mf_transform_async_unlock-attribute"></a>\_Atributo de \_ desbloqueio assíncrono de transformação MF \_
 
@@ -63,13 +63,13 @@ HRESULT UnlockAsyncMFT(IMFTransform *pMFT)
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2008 R2 \|\]<br/>                           |
+| Cliente mínimo com suporte<br/> | \[aplicativos UWP para aplicativos de área de trabalho Windows 7 \|\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos de aplicativos de área de trabalho do servidor 2008 R2 \[ \| UWP\]<br/>                           |
 | parâmetro<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: Instanceparameters. LogBuffers'
-title: Propriedade instanceparameters. LogBuffers
+description: 'Saiba mais sobre: propriedade InstanceParameters.LogBuffers'
+title: Propriedade InstanceParameters.LogBuffers
 TOCTitle: 'LogBuffers property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.LogBuffers
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.logbuffers(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7f58e43ea38792549d384328dc0fd6c5d31616e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 60fbf06d13a8252051830c9a91dd348c2a7295a63212b587bfac9905b3b5903a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105768205"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118255957"
 ---
-# <a name="instanceparameterslogbuffers-property"></a>Propriedade instanceparameters. LogBuffers
+# <a name="instanceparameterslogbuffers-property"></a>Propriedade InstanceParameters.LogBuffers
 
-Obtém ou define a quantidade de memória usada para armazenar em cache os registros de log antes que eles sejam gravados no arquivo de log de transações. A unidade para esse parâmetro é o tamanho do setor do volume que contém os arquivos de log de transações. O tamanho do setor quase sempre é de 512 bytes, portanto, é seguro assumir esse tamanho para a unidade. Esse parâmetro tem um impacto no desempenho. Quando o mecanismo de banco de dados está sob carga de atualização pesada, esse buffer pode se tornar completo com muita rapidez. Um tamanho de cache maior para o arquivo de log de transações é essencial para um bom desempenho de atualização sob uma condição de alta carga. O padrão é conhecido como muito pequeno para esse caso. Não defina esse parâmetro como um número de buffers que seja maior (em bytes) que metade do tamanho de um arquivo de log de transações.
+Obtém ou define a quantidade de memória usada para armazenar em cache os registros de log antes que eles sejam gravados no arquivo de log de transações. A unidade para esse parâmetro é o tamanho do setor do volume que contém os arquivos de log de transações. O tamanho do setor é quase sempre 512 bytes, portanto, é seguro supor esse tamanho para a unidade. Esse parâmetro tem um impacto sobre o desempenho. Quando o mecanismo de banco de dados está sob carga de atualização pesada, esse buffer pode ficar cheio muito rapidamente. Um tamanho de cache maior para o arquivo de log de transações é essencial para um bom desempenho de atualização em uma condição de carga tão alta. O padrão é conhecido como muito pequeno para esse caso. Não de definir esse parâmetro como um número de buffers maior (em bytes) do que a metade do tamanho de um arquivo de log de transações.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -62,14 +62,14 @@ public int LogBuffers { get; set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe instanceparameters](./instanceparameters-class.md)
+[Classe InstanceParameters](./instanceparameters-class.md)
 
-[Membros de instanceparameters](./instanceparameters-members.md)
+[Membros instanceParameters](./instanceparameters-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

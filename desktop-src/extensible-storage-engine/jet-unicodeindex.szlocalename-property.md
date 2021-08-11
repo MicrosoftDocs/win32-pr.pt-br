@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_UNICODEINDEX. szLocaleName'
-title: Propriedade JET_UNICODEINDEX. szLocaleName
+description: 'Saiba mais sobre: JET_UNICODEINDEX.szLocaleName'
+title: JET_UNICODEINDEX.szLocaleName
 TOCTitle: 'szLocaleName property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_UNICODEINDEX.szLocaleName
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_unicodeindex.szlocalename(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bd986b9df7956709d5a756dd066d612ddb4624c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f324e3ac54ed7faa3b69b23248b9fa0e1959ed4b83d60adff20a3061bad6cbda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118251620"
 ---
-# <a name="jet_unicodeindexszlocalename-property"></a>Propriedade JET_UNICODEINDEX. szLocaleName
+# <a name="jet_unicodeindexszlocalename-property"></a>JET_UNICODEINDEX.szLocaleName
 
-Obtém ou define o Localename a ser usado ao normalizar dados Unicode.
+Obtém ou define o LocaleName a ser usado ao normalizar dados Unicode.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public string szLocaleName { get; set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_UNICODEINDEX](./jet-unicodeindex-class.md)
+[JET_UNICODEINDEX classe](./jet-unicodeindex-class.md)
 
-[Membros do JET_UNICODEINDEX](./jet-unicodeindex-members.md)
+[JET_UNICODEINDEX membros](./jet-unicodeindex-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,31 +1,31 @@
 ---
-description: Este tópico descreve como usar o leitor de origem no modo assíncrono.
+description: Este tópico descreve como usar o Leitor de Origem no modo assíncrono.
 ms.assetid: 9D3C2780-D7DB-4151-8474-9A19EC94F6BE
 title: Usando o leitor de origem no modo assíncrono
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 357d0405cb3e594d059b7c93e793250e0be88562
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 514331f9d1635cbe83222ccf413b1dbb5a7d350b4656e23ed27ccede5c0be6f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118237501"
 ---
 # <a name="using-the-source-reader-in-asynchronous-mode"></a>Usando o leitor de origem no modo assíncrono
 
-Este tópico descreve como usar o [leitor de origem](source-reader.md) no modo assíncrono. No modo assíncrono, o aplicativo fornece uma interface de retorno de chamada, que é usada para notificar o aplicativo de que os dados estão disponíveis.
+Este tópico descreve como usar o Leitor de [Origem](source-reader.md) no modo assíncrono. No modo assíncrono, o aplicativo fornece uma interface de retorno de chamada, que é usada para notificar o aplicativo de que os dados estão disponíveis.
 
-Este tópico pressupõe que você já tenha lido o tópico [usando o leitor de origem para processar dados de mídia](processing-media-data-with-the-source-reader.md).
+Este tópico pressu que você já tenha lido o tópico Usando o Leitor de [Origem para processar dados de mídia.](processing-media-data-with-the-source-reader.md)
 
 ## <a name="using-asynchronous-mode"></a>Usando o modo assíncrono
 
-O leitor de origem opera no modo síncrono ou no modo assíncrono. O exemplo de código mostrado na seção anterior pressupõe que o leitor de origem está usando o modo síncrono, que é o padrão. No modo síncrono, o método [**IMFSourceReader:: ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) é bloqueado enquanto a origem da mídia produz o próximo exemplo. Uma fonte de mídia normalmente adquire dados de alguma fonte externa (como um arquivo local ou uma conexão de rede), para que o método possa bloquear o thread de chamada para um período de tempo perceptível.
+O Leitor de Origem opera no modo síncrono ou no modo assíncrono. O exemplo de código mostrado na seção anterior presume que o Leitor de Origem está usando o modo síncrono, que é o padrão. No modo síncrono, o método [**IMFSourceReader::ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) bloqueia enquanto a fonte de mídia produz o próximo exemplo. Uma fonte de mídia normalmente adquire dados de alguma fonte externa (como um arquivo local ou uma conexão de rede), para que o método possa bloquear o thread de chamada por um período perceptível.
 
-No modo assíncrono, o [**ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) retorna imediatamente e o trabalho é executado em outro thread. Depois que a operação for concluída, o leitor de origem chamará o aplicativo por meio da interface de retorno de chamada [**IMFSourceReaderCallback**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereadercallback) . Para usar o modo assíncrono, você deve fornecer um ponteiro de retorno de chamada ao criar pela primeira vez o leitor de origem, da seguinte maneira:
+No modo assíncrono, [**ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) retorna imediatamente e o trabalho é executado em outro thread. Depois que a operação for concluída, o Leitor de Origem chamará o aplicativo por meio da interface de retorno de chamada [**IMFSourceReaderCallback.**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereadercallback) Para usar o modo assíncrono, você deve fornecer um ponteiro de retorno de chamada ao criar pela primeira vez o Leitor de Origem, da seguinte forma:
 
-1.  Crie um repositório de atributos chamando a função [**MFCreateAttributes**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes) .
-2.  Defina o atributo de [ \_ retorno de \_ \_ \_ chamada assíncrono do leitor de origem MF](mf-source-reader-async-callback.md) no repositório de atributos. O valor do atributo é um ponteiro para seu objeto de retorno de chamada.
-3.  Ao criar o leitor de origem, passe o repositório de atributos para a função de criação no parâmetro *pAttributes* . Todas as funções para criar o leitor de origem têm esse parâmetro.
+1.  Crie um armazenamento de atributos chamando a [**função MFCreateAttributes.**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes)
+2.  De definir o atributo DE RETORNO DE [ \_ CHAMADA \_ \_ ASSÍNCRONO DO \_ LEITOR](mf-source-reader-async-callback.md) DE ORIGEM do MF no armazenamento de atributos. O valor do atributo é um ponteiro para o objeto de retorno de chamada.
+3.  Ao criar o Leitor de Origem, passe o armazenamento de atributos para a função de criação no *parâmetro pAttributes.* Todas as funções para criar o Leitor de Origem têm esse parâmetro.
 
 O exemplo a seguir mostra estas etapas.
 
@@ -61,9 +61,9 @@ done:
 
 
 
-Depois de criar o leitor de origem, você não pode alternar os modos entre síncrono e assíncrono.
+Depois de criar o Leitor de Origem, não é possível alternar os modos entre síncronos e assíncronos.
 
-Para obter dados no modo assíncrono, chame o método [**ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) , mas defina os últimos quatro parâmetros como **NULL**, conforme mostrado no exemplo a seguir.
+Para obter dados no modo assíncrono, chame o método [**ReadSample,**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) mas de definir os últimos quatro parâmetros como **NULL,** conforme mostrado no exemplo a seguir.
 
 
 ```C++
@@ -74,10 +74,10 @@ Para obter dados no modo assíncrono, chame o método [**ReadSample**](/windows/
 
 
 
-Quando o método [**ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) é concluído de forma assíncrona, o leitor de origem chama o método [**IMFSourceReaderCallback:: OnReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onreadsample) . Esse método tem cinco parâmetros:
+Quando o [**método ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) for concluído de forma assíncrona, o Leitor de Origem chamará o método [**IMFSourceReaderCallback::OnReadSample.**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onreadsample) Esse método tem cinco parâmetros:
 
--   *hrStatus*: contém um valor **HRESULT** . Esse é o mesmo valor que [**ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) retornaria no modo síncrono. Se *hrStatus* contiver um código de erro, você poderá ignorar os parâmetros restantes.
--   *dwStreamIndex*, *dwStreamFlags*, llTimestamp e *pSample*: esses três parâmetros são equivalentes aos últimos três parâmetros em [**ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample). Eles contêm o número de fluxo, os sinalizadores de status e o ponteiro [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) , respectivamente.
+-   *hrStatus*: contém um **valor HRESULT.** Esse é o mesmo valor que [**ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) retornaria no modo síncrono. Se *hrStatus contiver* um código de erro, você poderá ignorar os parâmetros restantes.
+-   *dwStreamIndex*, *dwStreamFlags,* llTimestamp e *pSample:* esses três parâmetros são equivalentes aos três últimos parâmetros [**em ReadSample.**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) Eles contêm o número de fluxo, os sinalizadores de status [**e o ponteiro IMFSample,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) respectivamente.
 
 
 ```C++
@@ -89,18 +89,18 @@ Quando o método [**ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrit
 
 Além disso, a interface de retorno de chamada define dois outros métodos:
 
--   [**OnEvent**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onevent). Notifica o aplicativo quando determinados eventos ocorrem na origem de mídia, como buffer ou eventos de conexão de rede.
--   Por [**descarregamento**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onflush). Chamado quando o método [**flush**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-flush) é concluído.
+-   [**OnEvent**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onevent). Notifica o aplicativo quando determinados eventos ocorrem na fonte de mídia, como eventos de conexão de rede ou buffer.
+-   [**OnFlush.**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onflush) Chamado quando o [**método Flush**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-flush) é concluído.
 
 ## <a name="implementing-the-callback-interface"></a>Implementando a interface de retorno de chamada
 
-A interface de retorno de chamada deve ser thread-safe, pois [**OnReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onreadsample) e os outros métodos de retorno de chamada são chamados de threads de trabalho.
+A interface de retorno de chamada deve ser thread-safe, porque [**OnReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onreadsample) e os outros métodos de retorno de chamada são chamados de threads de trabalho.
 
-Há várias abordagens diferentes que você pode tomar ao implementar o retorno de chamada. Por exemplo, você pode fazer todo o trabalho dentro do retorno de chamada, ou pode usar o retorno de chamada para notificar o aplicativo (por exemplo, sinalizando um identificador de evento) e, em seguida, trabalhar no thread do aplicativo.
+Há várias abordagens diferentes que você pode usar ao implementar o retorno de chamada. Por exemplo, você pode fazer todo o trabalho dentro do retorno de chamada ou pode usar o retorno de chamada para notificar o aplicativo (por exemplo, sinalizando um handle de evento) e, em seguida, fazer o trabalho do thread do aplicativo.
 
-O método [**OnReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onreadsample) será chamado uma vez para cada chamada que você fizer para o método [**IMFSourceReader:: ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) . Para obter o próximo exemplo, chame **ReadSample** novamente. Se ocorrer um erro, **OnReadSample** será chamado com um código de erro para o parâmetro *hrStatus* .
+O [**método OnReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onreadsample) será chamado uma vez para cada chamada que você fizer ao método [**IMFSourceReader::ReadSample.**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) Para obter o próximo exemplo, chame **ReadSample** novamente. Se ocorrer um erro, **OnReadSample** será chamado com um código de erro para o *parâmetro hrStatus.*
 
-O exemplo a seguir mostra uma implementação mínima da interface de retorno de chamada. Primeiro, aqui está a declaração de uma classe que implementa a interface.
+O exemplo a seguir mostra uma implementação mínima da interface de retorno de chamada. Primeiro, aqui está a declaração de uma classe que implementa a interface .
 
 
 ```C++
@@ -196,9 +196,9 @@ private:
 
 
 
-Neste exemplo, não estamos [**interessados nos métodos**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onevent) [**ondescarrega e onflush**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onflush) , então eles simplesmente retornam **S \_ OK**. A classe usa um identificador de evento para sinalizar o aplicativo; Esse identificador é fornecido por meio do construtor.
+Neste exemplo, não estamos interessados nos métodos [**OnEvent**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onevent) e [**OnFlush,**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onflush) portanto, eles simplesmente retornam **S \_ OK.** A classe usa um alça de evento para sinalizar o aplicativo; esse handle é fornecido por meio do construtor.
 
-Neste exemplo mínimo, o método [**OnReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onreadsample) apenas imprime o carimbo de data/hora na janela do console. Em seguida, ele armazena o código de status e o sinalizador de fim de fluxo e sinaliza o identificador de evento:
+Neste exemplo mínimo, o método [**OnReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereadercallback-onreadsample) apenas imprime o carimbo de data/hora na janela do console. Em seguida, ele armazena o código de status e o sinalizador de fim de fluxo e sinaliza o alça de evento:
 
 
 ```C++
@@ -313,7 +313,7 @@ done:
 
 <dl> <dt>
 
-[Leitor de origem](source-reader.md)
+[Leitor de Origem](source-reader.md)
 </dt> </dl>
 
  

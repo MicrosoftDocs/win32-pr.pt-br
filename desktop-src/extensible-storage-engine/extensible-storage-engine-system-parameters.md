@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: parâmetros do sistema do mecanismo de armazenamento extensível'
-title: Parâmetros do sistema do mecanismo de armazenamento extensível
+description: 'saiba mais sobre: parâmetros do sistema do mecanismo de Armazenamento extensível'
+title: parâmetros do sistema do mecanismo de Armazenamento extensível
 TOCTitle: Extensible Storage Engine System Parameters
 ms:assetid: f95c2e87-b25e-4be5-8c17-8486ba37dad4
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294139(v=EXCHG.10)
@@ -15,19 +15,19 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 43473f1bf5f599ba8efd06bd31345485acc07061
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 531e599c66279312f80216f1eb09fc612636821227e76f3572645ab6b4ee5137
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118256443"
 ---
-# <a name="extensible-storage-engine-system-parameters"></a>Parâmetros do sistema do mecanismo de armazenamento extensível
+# <a name="extensible-storage-engine-system-parameters"></a>parâmetros do sistema do mecanismo de Armazenamento extensível
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
-## <a name="extensible-storage-engine-system-parameters"></a>Parâmetros do sistema do mecanismo de armazenamento extensível
+## <a name="extensible-storage-engine-system-parameters"></a>parâmetros do sistema do mecanismo de Armazenamento extensível
 
 As constantes a seguir são usadas como valores para o parâmetro *paramid* das funções [JetGetSystemParameter](./jetgetsystemparameter-function.md) e [JetSetSystemParameter](./jetsetsystemparameter-function.md) .
 
@@ -51,7 +51,7 @@ As constantes a seguir são usadas como valores para o parâmetro *paramid* das 
 
   - [Parâmetros meta](./meta-parameters.md)
 
-  - [Parâmetros do recurso](./resource-parameters.md)
+  - [Parâmetros de recurso](./resource-parameters.md)
 
   - [Parâmetros de banco de dados temporários](./temporary-database-parameters.md)
 
@@ -113,7 +113,7 @@ Descrição do parâmetro do sistema JET_paramX.
 </tr>
 <tr class="odd">
 <td><p>Disponibilidade:</p></td>
-<td><p>Versões do Windows que dão suporte ao parâmetro.</p></td>
+<td><p>versões de Windows que dão suporte ao parâmetro.</p></td>
 </tr>
 </tbody>
 </table>

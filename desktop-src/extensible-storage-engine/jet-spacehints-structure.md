@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: estrutura de JET_SPACEHINTS'
-title: Estrutura de JET_SPACEHINTS
+description: 'Saiba mais sobre: estrutura JET_SPACEHINTS dados'
+title: estrutura JET_SPACEHINTS de dados
 TOCTitle: JET_SPACEHINTS Structure
 ms:assetid: 23328993-93c9-4a23-892b-e6a9f434d1d6
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269205(v=EXCHG.10)
@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cf786d1f47b5eaae3f9540c8635853020f9b0521
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f829e78ff54e77011346ae1bfd39f909411cbee12c18d19781f8fe5d62865097
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105762191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118252251"
 ---
-# <a name="jet_spacehints-structure"></a>Estrutura de JET_SPACEHINTS
+# <a name="jet_spacehints-structure"></a>estrutura JET_SPACEHINTS de dados
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
-## <a name="jet_spacehints-structure"></a>Estrutura de JET_SPACEHINTS
+## <a name="jet_spacehints-structure"></a>estrutura JET_SPACEHINTS de dados
 
-A estrutura de **JET_SPACEHINTS** contém informações sobre padrões de alocação de espaço quando uma árvore b cresce por meio de divisões de Append ou Hotpoint. As divisões de acréscimo acontecem quando os registros são adicionados ao final de uma árvore b e as divisões de Hotpoint acontecem quando vários registros são adicionados ao mesmo ponto de inserção virtual (por exemplo, adicionar ' Maria ', ' Mark ', ' Martin' ', ' Mary ' ao meio de uma árvore b que é classificada alfabeticamente).
+A **JET_SPACEHINTS** contém informações sobre padrões de alocação de espaço quando uma árvore B cresce por meio de divisão de ponto de hotpoint ou de anexação. As divisãos de acréscimo ocorrem quando os registros são adicionados ao final de uma árvore b e as divisãos de ponto de hotpoint ocorrem quando vários registros são adicionados ao mesmo ponto de inserção virtual (por exemplo, adicionando 'Dice', 'Mark', 'Martin', 'Mary' ao meio de uma árvore B que é classificação alfabética).
 
-**Windows 7:** A estrutura de **JET_SPACEHINTS** é introduzida no Windows 7.
+**Windows 7:** A **estrutura JET_SPACEHINTS** é introduzida no Windows 7.
 
 ```cpp
     typedef struct tagJET_SPACEHINTS {
@@ -48,13 +48,13 @@ A estrutura de **JET_SPACEHINTS** contém informações sobre padrões de aloca�
 
 ### <a name="members"></a>Membros
 
-**cbStruct**
+**Cbstruct**
 
-O tamanho, em bytes, dessa estrutura. Defina este membro como sizeof (JET_SPACEHINTS).
+O tamanho, em bytes, dessa estrutura. De definir esse membro como sizeof( JET_SPACEHINTS ).
 
 **ulInitialDensity**
 
-O layout de densidade em (acréscimo).
+A densidade no layout (anexar).
 
 **cbInitial**
 
@@ -62,7 +62,7 @@ O tamanho inicial (em bytes) do objeto que está sendo criado. Deve ser um múlt
 
 **grbit**
 
-Um grupo de bits que contém as opções a serem usadas para esta estrutura, que incluem zero ou mais das ações a seguir.
+Um grupo de bits que contém as opções a serem usadas para essa estrutura, que incluem zero ou mais dos seguintes.
 
 <table>
 <colgroup>
@@ -79,17 +79,17 @@ Um grupo de bits que contém as opções a serem usadas para esta estrutura, que
 <tr class="odd">
 <td><p>JET_bitSpaceHintsUtilizeParentSpace<br />
 0x00000001</p></td>
-<td><p>Altera a política de alocação interna para obter espaço heirarchically do pai imediato de uma árvore b.</p></td>
+<td><p>Altera a política de alocação interna para obter espaço de forma significativa do pai imediato de uma árvore b.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_bitCreateHintAppendSequential<br />
 0x00000002</p></td>
-<td><p>Permite que o comportamento da divisão de acréscimo cresça de acordo com a dinâmica de crescimento da tabela (definida por cbMinExtent, ulGrowth, cbMaxExtent).</p></td>
+<td><p>Permite que o comportamento de divisão de anexação cresça de acordo com a dinâmica de crescimento da tabela (definida por cbMinExtent, ulGrowth, cbMaxExtent).</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_bitCreateHintHotpointSequential<br />
 0x00000004</p></td>
-<td><p>Permite que o comportamento de divisão de Hotpoint cresça de acordo com a dinâmica de crescimento da tabela (definida por cbMinExtent, ulGrowth, cbMaxExtent).</p></td>
+<td><p>Permite que o comportamento de divisão de ponto de acesso cresça de acordo com a dinâmica de crescimento da tabela (definida por cbMinExtent, ulGrowth, cbMaxExtent).</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_bitRetrieveHintTableScanForward<br />
@@ -99,7 +99,7 @@ Um grupo de bits que contém as opções a serem usadas para esta estrutura, que
 <tr class="odd">
 <td><p>JET_bitRetrieveHintTableScanBackward<br />
 0x00000020</p></td>
-<td><p>Se definido, o cliente indica que a verificação sequencial retroativa é o padrão de uso predominante desta tabela.</p></td>
+<td><p>Se definido, o cliente indica que a verificação sequencial para trás é o padrão de uso predominante desta tabela.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_bitDeleteHintTableSequential<br />
@@ -114,29 +114,29 @@ Um grupo de bits que contém as opções a serem usadas para esta estrutura, que
 
 densidade para mulMaintDensity
 
-Densidade a ser mantida em. Se as dicas de espaço especificarem JET_bitRetrieveHintTableScanForward ou JET_bitRetrieveHintTableScanBackward, a desfragmentação da tabela será disparada quando o espaço usado na tabela cair abaixo desse limite. A desfragmentação de tabela pode ser desabilitada definindo esse membro como zero. Definir esse membro como 100 fará com que a desfragmentação da tabela seja executada assim que uma página for liberada.
+Densidade a ser mantida em. Se as dicas de espaço especificarem JET_bitRetrieveHintTableScanForward ou JET_bitRetrieveHintTableScanBackward, a desfragmentação de tabela será disparada quando o espaço usado na tabela ficar abaixo desse limite. A desfragmentação de tabela pode ser desabilitada definindo esse membro como zero. Definir esse membro como 100 fará com que a desfragmentação de tabela seja executado assim que uma página for liberada.
 
 **ulGrowth**
 
-O percentual de crescimento do último crescimento ou tamanho inicial, arredondado para o tamanho de alocação mais próximo do JET nativo.
+O percentual de crescimento do último crescimento ou tamanho inicial, arredondado para o tamanho de alocação do JET nativo mais próximo.
 
 **cbMinExtent muito pequeno**
 
-Isso substitui ulGrowth se for muito pequeno.
+Isso substituirá ulGrowth se for muito pequeno.
 
 **cbMaxExtent**
 
-O valor máximo para crescimento em bytes. Este ulGrowth de Caps.
+O valor máximo para o crescimento em bytes. Isso se trata de ulGrowth.
 
-### <a name="when-a-b-tree-grows-through-append-or-hotpoint-splits-as-opposed-to-random-record-insertions-the-amount-of-space-the-table-will-grow-by-is-calculated-as-follows"></a>Quando uma árvore b cresce através de divisões de Append ou Hotpoint (em oposição às inserções de registros aleatórios), a quantidade de espaço que a tabela aumentará é calculada da seguinte maneira:
+### <a name="when-a-b-tree-grows-through-append-or-hotpoint-splits-as-opposed-to-random-record-insertions-the-amount-of-space-the-table-will-grow-by-is-calculated-as-follows"></a>Quando uma árvore b cresce por meio de divisão de ponto de hotpoint ou de anexação (em vez de inserções de registro aleatórias), a quantidade de espaço que a tabela aumentará é calculada da seguinte forma:
 
-1.  Na criação, fornecemos o cbInitial da árvore b, sempre.
+1.  Na criação, damos à árvore b cbInitial, sempre.
 
-2.  Durante a primeira alocação de uma determinada área, alocaremos: cbInitial \* ulGrowth/100 (arredondado para o tamanho da página do banco de dados) ou cbMinExtent se for maior.
+2.  Durante a primeira alocação de uma determinada área, alocamos: cbInitial ulGrowth/100 (arredondado para o tamanho da página do BD) ou \* cbMinExtent se maior.
 
-3.  Durante a próxima alocação, cbLastAlloc \* ulGrowth/100 (arredondado para o tamanho da página do DB) ou cbMinExtent se for maior.
+3.  Durante a próxima alocação, cbLastAlloc ulGrowth /100 (arredondado para o tamanho da página do \* BD) ou cbMinExtent se maior.
 
-4.  Em alguma alocação (que pode ser a primeira alocação), o tamanho calculado excederá cbMaxExtent e esse será o tamanho de crescimento depois disso.
+4.  Em alguma alocação (que pode ser a primeira alocação), o tamanho calculado excederá cbMaxExtent e esse será o tamanho do crescimento posteriormente.
 
 ### <a name="requirements"></a>Requisitos
 
@@ -148,15 +148,15 @@ O valor máximo para crescimento em bytes. Este ulGrowth de Caps.
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
+<td><p>Declarado em Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

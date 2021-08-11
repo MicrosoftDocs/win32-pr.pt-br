@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 0389ddf4ff5e7efd86fef09d428e1756eb72f161
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 80203a222c2cdf1c36df47f8d95a4792a6723e9478d52c634b1a13d01d5dd436
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118253222"
 ---
 # <a name="jet_signatureequals-method"></a>JET_SIGNATURE. Método Equals
 
@@ -32,19 +32,19 @@ Incluir membros herdados
 <thead>
 <tr class="header">
 <th> </th>
-<th>Nome</th>
+<th>Name</th>
 <th>Descrição</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="hh557517(v=exchg.10).md">Equals (Object)</a></td>
-<td>Retorna um valor que indica se essa instância é igual a outra instância. (Substitui <a href="/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType. Equals (Object)</a>.)</td>
+<td><a href="hh557517(v=exchg.10).md">Equals(Object)</a></td>
+<td>Retorna um valor que indica se essa instância é igual a outra instância. (Substitui <a href="/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType.Equals(Object)</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="hh564920(v=exchg.10).md">Equals (JET_SIGNATURE)</a></td>
+<td><a href="hh564920(v=exchg.10).md">Equals(JET_SIGNATURE)</a></td>
 <td>Retorna um valor que indica se essa instância é igual a outra instância.</td>
 </tr>
 </tbody>
@@ -57,8 +57,8 @@ Parte superior
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_SIGNATURE](./jet-signature-structure2.md)
+[JET_SIGNATURE estrutura](./jet-signature-structure2.md)
 
-[Membros do JET_SIGNATURE](./jet-signature-members.md)
+[JET_SIGNATURE membros](./jet-signature-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

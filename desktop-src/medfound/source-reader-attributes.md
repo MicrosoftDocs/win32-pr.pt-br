@@ -4,12 +4,12 @@ ms.assetid: 312a588a-848b-4563-893a-fac49a4ca465
 title: Atributos do leitor de origem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f425710139b2aebf23ff13a2593ba6931c78fe2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2a7bd9c5b3c5a71fb1b91515400fb0cf3670bd3b73b6635c811dcc79bd05e74f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118238324"
 ---
 # <a name="source-reader-attributes"></a>Atributos do leitor de origem
 

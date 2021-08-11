@@ -4,12 +4,12 @@ ms.assetid: d0d93151-5b0d-44a7-8497-f11b3e23a031
 title: Propriedade MFPKEY_COLORCONV_MODE (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8c3f2d6256c4d7a9410264fb18703eea251e9c6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9f86ed10873c1587aefba342392afa7f84f8c635788339d64deca18b76629255
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118242885"
 ---
 # <a name="mfpkey_colorconv_mode-property"></a>\_Propriedade do \_ modo MFPKEY COLORCONV
 
@@ -54,13 +54,13 @@ Se essa propriedade não for definida, o DSP usará o tipo de mídia de entrada 
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
 | parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 

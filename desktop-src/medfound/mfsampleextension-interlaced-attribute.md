@@ -1,29 +1,29 @@
 ---
 description: Indica se um quadro de vídeo é entrelaçado ou progressivo.
 ms.assetid: 3cb80e75-e803-493b-a22d-e485e77b5177
-title: Atributo MFSampleExtension_Interlaced (Mfapi. h)
+title: MFSampleExtension_Interlaced atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43a273b548192ac52da8604eb36fde5ec0e9fcf2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 36d928d42fc2399536d5beee4f4af87cbacaa82171048ad191a4e9fc7ef3e939
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105780708"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118240643"
 ---
-# <a name="mfsampleextension_interlaced-attribute"></a>\_Atributo entrelaçado MFSampleExtension
+# <a name="mfsampleextension_interlaced-attribute"></a>Atributo entrelaçado MFSampleExtension \_
 
-Indica se um quadro de vídeo é entrelaçado ou progressivo. Se for **true**, o quadro será entrelaçado. Se for **false**, o quadro será progressivo. Se não estiver definido, o tipo de mídia descreverá o entrelaçamento. Esse atributo se aplica a exemplos de mídia.
+Indica se um quadro de vídeo é entrelaçado ou progressivo. Se **TRUE**, o quadro será entrelaçado. Se **FALSE**, o quadro será progressivo. Se não estiver definido, o tipo de mídia descreverá o entrelaçamento. Esse atributo se aplica a exemplos de mídia.
 
 ## <a name="data-type"></a>Tipo de dados
 
-**Bool** armazenado como **UINT32**
+**BOOL** armazenado como **UINT32**
 
 ## <a name="getset"></a>Obter/definir
 
-Para obter esse atributo, chame [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obter esse atributo, chame [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para definir esse atributo, chame [**IMFAttributes:: setuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para definir esse atributo, chame [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="applies-to"></a>Aplica-se a
 
@@ -31,13 +31,13 @@ Para definir esse atributo, chame [**IMFAttributes:: setuint32**](/windows/deskt
 
 ## <a name="remarks"></a>Comentários
 
-Para conteúdo de vídeo que contém quadros progressivos e entrelaçados mistos, defina o tipo de mídia como entrelaçado e use esse atributo em cada quadro para indicar se o quadro é progressivo ou entrelaçado.
+Para conteúdo de vídeo que contém quadros progressivos e entrelaçados mistos, de definido o tipo de mídia como entrelaçado e use esse atributo em cada quadro para indicar se o quadro é progressivo ou entrelaçado.
 
-Para conteúdo de vídeo totalmente entrelaçado, defina o tipo de mídia como entrelaçado e omita esse atributo ou defina-o como **verdadeiro** em cada exemplo.
+Para o conteúdo de vídeo totalmente entrelaçado, de definir o tipo de mídia como entrelaçado e omitir esse atributo ou defini-lo como **TRUE** em cada exemplo.
 
-Para conteúdo de vídeo totalmente progressivo, defina o tipo de mídia como progressivo e omita esse atributo ou defina-o como **false** em cada exemplo.
+Para conteúdo de vídeo totalmente progressivo, de definido o tipo de mídia como progressivo e omiti-lo ou defini-lo como **FALSE** em cada exemplo.
 
-A constante de GUID para esse atributo é exportada de mfuuid. lib.
+A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,23 +45,23 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos \| UWP do Windows Vista desktop\]<br/>                              |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2008 \[ Desktop aplicativos \| UWP\]<br/>                        |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Aplicativos \| UWP de aplicativos da área de trabalho do Vista\]<br/>                              |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos \[ UWP de aplicativos da área de trabalho do Server 2008 \|\]<br/>                        |
+| parâmetro<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: setuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
@@ -70,7 +70,7 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 [Atributos de exemplo](sample-attributes.md)
 </dt> <dt>
 
-[Amostras de mídia](media-samples.md)
+[Exemplos de mídia](media-samples.md)
 </dt> <dt>
 
 [Entrelaçamento de vídeo](video-interlacing.md)

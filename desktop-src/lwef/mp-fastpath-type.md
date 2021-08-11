@@ -3,8 +3,8 @@ title: Enumeração de MP_FASTPATH_TYPE (MpClient. h)
 description: Tipo de FastPath.
 ms.assetid: BD72228F-DCC0-435E-A408-BD7FB02E55E1
 keywords:
-- Recursos do ambiente Windows herdado de enumeração de MP_FASTPATH_TYPE
-- PMP_FASTPATH_TYPE recursos de ambiente herdados do ponteiro de enumeração do Windows
+- recursos do ambiente de Windows herdado de enumeração de MP_FASTPATH_TYPE
+- Windows recursos de ambiente herdados do ponteiro de enumeração PMP_FASTPATH_TYPE
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e89db79c54b166a833369ff52e47473463e0a2b9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d7bd9a8ce26f930a35c9c4fa547234b0d55b0b588b60881cf8aae31621e9a83a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118247441"
 ---
 # <a name="mp_fastpath_type-enumeration"></a>\_Enumeração de \_ tipo MP FASTPATH
 
 Tipo de FastPath.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -70,8 +70,8 @@ Notificação de desabilitação de assinatura.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
 
 

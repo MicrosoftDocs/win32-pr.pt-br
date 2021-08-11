@@ -1,17 +1,17 @@
 ---
 description: Uma maneira de criar um arquivo ASF é copiar fluxos ASF de um arquivo existente.
 ms.assetid: 158fe3a1-42e6-461d-b56b-5419cd961fca
-title: 'Tutorial: copiando fluxos ASF usando objetos WMContainer'
+title: 'Tutorial: copiando Fluxos ASF usando objetos WMContainer'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 44bac13626a8c80f474eeb029db4eb1351273910
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2149358d216e044f3392b882a997ef4aa455ae799b6ece450bca11f0f22a6781
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105790498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118237870"
 ---
-# <a name="tutorial-copying-asf-streams-by-using-wmcontainer-objects"></a>Tutorial: copiando fluxos ASF usando objetos WMContainer
+# <a name="tutorial-copying-asf-streams-by-using-wmcontainer-objects"></a>Tutorial: copiando Fluxos ASF usando objetos WMContainer
 
 Uma maneira de criar um arquivo ASF é copiar fluxos ASF de um arquivo existente. Para fazer isso, você pode recuperar os dados de mídia do arquivo de origem e gravar no arquivo de saída. Se o arquivo de origem for um arquivo ASF, você poderá copiar amostras de fluxo sem descompactá-los e recompactá-los.
 
@@ -21,7 +21,7 @@ Este tutorial contém as seguintes etapas:
 
 -   [Pré-requisitos](#prerequisites)
 -   [Terminologia](#terminology)
--   [1. configurar o projeto](#1-set-up-the-project)
+-   [1. configurar o Project](#1-set-up-the-project)
 -   [2. declarar funções auxiliares](#2-declare-helper-functions)
 -   [3. abrir o arquivo ASF de entrada](#3-open-the-input-asf-file)
 -   [4. inicializar objetos para o arquivo de entrada](#4-initialize-objects-for-the-input-file)
@@ -53,7 +53,7 @@ Este tutorial usa os seguintes termos:
 -   Pacote de dados: a amostra de mídia, expõe a interface [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) , gerada pelo multiplexador representa um pacote de dados ASF que será gravado no fluxo de bytes de dados.
 -   Fluxo de bytes de saída: objeto de fluxo de bytes, expõe a interface [**IMFByteStream**](/windows/desktop/api/mfobjects/nn-mfobjects-imfbytestream) , que contém o conteúdo do arquivo de saída.
 
-## <a name="1-set-up-the-project"></a>1. configurar o projeto
+## <a name="1-set-up-the-project"></a>1. configurar o Project
 
 Inclua os seguintes cabeçalhos no arquivo de origem:
 

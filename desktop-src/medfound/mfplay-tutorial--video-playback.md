@@ -4,12 +4,12 @@ ms.assetid: f72a7c1f-b059-474c-96f2-8fad3b1f7035
 title: 'Tutorial do MFPlay: reprodução de vídeo'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30bbadae22e72799c64a42d09b6eed904b56a60d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fb5b98de6cc845d121928fb18a33db055154f717e8fe583bcd1ad6ef8da32deb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661830"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118242003"
 ---
 # <a name="mfplay-tutorial-video-playback"></a>Tutorial do MFPlay: reprodução de vídeo
 
@@ -34,7 +34,7 @@ Para obter uma discussão mais detalhada sobre a API do MFPlay, consulte [introd
 
 ## <a name="requirements"></a>Requisitos
 
-O MFPlay requer o Windows 7.
+MFPlay requer Windows 7.
 
 ## <a name="header-and-library-files"></a>Arquivos de cabeçalho e biblioteca
 
@@ -228,7 +228,7 @@ HRESULT PlayMediaFile(HWND hwnd, PCWSTR pszURL)
 
 
 
-A `OnFileOpen` função exibe a caixa de diálogo arquivo comum, que permite ao usuário selecionar um arquivo para reprodução. A interface **IFileOpenDialog** é usada para exibir a caixa de diálogo arquivo comum. Essa interface faz parte das APIs do shell do Windows; Ele foi introduzido no Windows Vista como uma substituição para a função **GetOpenFileName** mais antiga. Depois que o usuário seleciona um arquivo, `OnFileOpen` chama `PlayMediaFile` para iniciar a reprodução.
+A `OnFileOpen` função exibe a caixa de diálogo arquivo comum, que permite ao usuário selecionar um arquivo para reprodução. A interface **IFileOpenDialog** é usada para exibir a caixa de diálogo arquivo comum. essa interface faz parte das APIs do Shell de Windows; ele foi introduzido no Windows Vista como uma substituição para a função **getopenfilename** mais antiga. Depois que o usuário seleciona um arquivo, `OnFileOpen` chama `PlayMediaFile` para iniciar a reprodução.
 
 
 ```C++
