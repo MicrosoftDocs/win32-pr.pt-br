@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d74ef2db993d2a3daf10f69687b8f3525ef80a87
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a2835b4e0ff878b4c747f8c34b983beb3d66c550008a82ecadb2e5a23667abc8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118181727"
 ---
 # <a name="wm_adsprop_notify_pagehwnd-message"></a>\_Mensagem do \_ PAGEHWND de notificação do WM ADSPROP \_
 
@@ -82,7 +82,7 @@ Uma extensão de folha de propriedades Active Directory normalmente chama a fun�
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

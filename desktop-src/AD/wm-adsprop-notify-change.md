@@ -1,10 +1,10 @@
 ---
-title: Mensagem de WM_ADSPROP_NOTIFY_CHANGE (Adsprop. h)
-description: A mensagem de alteração de notificação do WM \_ ADSPROP \_ \_ é usada internamente pelo objeto de notificação.
+title: WM_ADSPROP_NOTIFY_CHANGE mensagem (Adsprop.h)
+description: A mensagem WM \_ ADSPROP \_ NOTIFY CHANGE é \_ usada internamente pelo objeto de notificação.
 ms.assetid: 3dc36176-eebc-4b7d-9ee9-19d2f8c543b6
 ms.tgt_platform: multiple
 keywords:
-- Mensagem de WM_ADSPROP_NOTIFY_CHANGE Active Directory
+- WM_ADSPROP_NOTIFY_CHANGE mensagem do Active Directory
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e4ff416a6e0e39c3fe5e405adf90533d8e35388
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aafeec55047c63dd43b96a7ddf1a9d40dbb9e33de9fdc804aa2cc1f80b4d4d41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118181998"
 ---
-# <a name="wm_adsprop_notify_change-message"></a>\_Mensagem de \_ alteração de notificação do WM ADSPROP \_
+# <a name="wm_adsprop_notify_change-message"></a>Mensagem WM \_ ADSPROP \_ NOTIFY \_ CHANGE
 
-A mensagem de **\_ alteração de \_ notificação \_ do WM ADSPROP** é usada internamente pelo objeto de notificação.
+A **mensagem WM \_ ADSPROP NOTIFY \_ \_ CHANGE** é usada internamente pelo objeto de notificação.
 
 
 ```C++
@@ -41,7 +41,7 @@ WM_ADSPROP_NOTIFY_CHANGE
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
 Não usado.
@@ -64,7 +64,7 @@ Não usado.
 
 ## <a name="return-value"></a>Retornar valor
 
-Esta mensagem não tem nenhum valor de retorno.
+Essa mensagem não tem nenhum valor de retorno.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,15 +74,15 @@ Esta mensagem não tem nenhum valor de retorno.
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                       |
-| parâmetro<br/>                   | <dl> <dt>Adsprop. h</dt> </dl> |
+| parâmetro<br/>                   | <dl> <dt>Adsprop.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
-[Mensagens em Active Directory Domain Services](messages-in-active-directory-domain-services.md)
+[Mensagens no Active Directory Domain Services](messages-in-active-directory-domain-services.md)
 </dt> </dl>
 
  

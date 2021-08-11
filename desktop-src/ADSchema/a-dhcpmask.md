@@ -1,11 +1,11 @@
 ---
-title: atributo DHCP-Mask
-description: O atributo DHCP-Mask não está sendo usado no momento.
+title: Atributo dhcp-Mask
+description: O atributo dhcp-Mask não é usado no momento.
 ms.assetid: 68c8ac57-6ba0-4048-8cf7-788d57cff117
 ms.tgt_platform: multiple
 keywords:
-- atributo DHCP-Mask esquema do AD
-- Esquema de AD do atributo dhcpMask
+- Esquema do AD do atributo dhcp-Mask
+- Esquema do AD do atributo dhcpMask
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3baf2cc07a9f6d48a4e521d30b5553cfcebbad58
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8bf0d88a044dffc21a691289c1678f4c0a5ea5828515f64f2ccecdb9cbad7609
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105753828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118177736"
 ---
-# <a name="dhcp-mask-attribute"></a>atributo DHCP-Mask
+# <a name="dhcp-mask-attribute"></a>Atributo dhcp-Mask
 
-O atributo **DHCP-Mask** não está sendo usado no momento.
+O **atributo dhcp-Mask** não é usado no momento.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | Máscara de DHCP                            |
-| LDAP-Display-Name | dhcpMask                             |
+| CN                | dhcp-Mask                            |
+| Ldap-Display-Name | dhcpMask                             |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.706               |
-| System-ID-GUID    | 963d2747-48be-11d1-a9c3-0000f80367c1 |
-| Syntax            | [**Cadeia de caracteres (IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | 963d2747-48be-11d1-a9c3-0000f80367c1 |
+| Sintaxe            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -58,10 +58,10 @@ O atributo **DHCP-Mask** não está sendo usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | Falso                                        |
+| Tem valor único       | Falso                                        |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -79,10 +79,10 @@ O atributo **DHCP-Mask** não está sendo usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | Falso                                        |
+| Tem valor único       | Falso                                        |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -100,10 +100,10 @@ O atributo **DHCP-Mask** não está sendo usado no momento.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | Falso                                        |
+| Tem valor único       | Falso                                        |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |

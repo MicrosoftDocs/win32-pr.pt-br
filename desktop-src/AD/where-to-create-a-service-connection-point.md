@@ -11,12 +11,12 @@ keywords:
 - AD de ponto de conexão de serviço
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf122ebabcfd8085ebad46314ffd1c09f827e783
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b585c11333b8e307a7f6771bd89ccf5ad82038fb22f10fca7eb114c1101a063a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104004889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118182075"
 ---
 # <a name="where-to-create-a-service-connection-point"></a>Onde criar um ponto de conexão de serviço
 
@@ -55,11 +55,11 @@ O diagrama mostra a hierarquia de domínio padrão incluída com Active Director
 Os objetos específicos do serviço não devem ser criados nas seguintes áreas:
 
 -   Os serviços não devem publicar objetos diretamente nos contêineres usuários ou computadores de uma partição de domínio, nem devem criar novos contêineres nesses contêineres. No entanto, os serviços podem publicar objetos como objetos filho de um objeto de computador, independentemente de o objeto de computador estar ou não armazenado no contêiner computadores.
--   Os serviços que usam o RnR (registro e resolução do Windows Sockets) ou as APIs do serviço de nome RPC (RpcNs) para se anunciar, criam os objetos apropriados nos contêineres Winsockservices e RpcServices no contêiner do sistema de uma partição de domínio. Não crie objetos explicitamente nesses contêineres. Fazer isso não causa danos diretos, mas pode ser confuso para os administradores.
+-   os serviços que Windows usam o RnR (registro e resolução de soquetes) ou as APIs de serviço de nome RPC (RpcNs) para se anunciar, criam os objetos apropriados nos contêineres winsockservices e RpcServices no contêiner do sistema de uma partição de domínio. Não crie objetos explicitamente nesses contêineres. Fazer isso não causa danos diretos, mas pode ser confuso para os administradores.
 
- 
+ 
 
- 
+ 
 
 
 

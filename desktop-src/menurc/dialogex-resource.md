@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fbd55bfb06b678742aa5e356c9e62b14229aa8d3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4e999d4f42477451fef25bd59fb95606624cc4fd60d340231b3ee95558834d25
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104172798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118235305"
 ---
 # <a name="dialogex-resource"></a>Recurso DIALOGEX
 
@@ -180,14 +180,14 @@ staticClass controlText, id
 <span id="controlText"></span><span id="controltext"></span><span id="CONTROLTEXT"></span>*controlText*
 </dt> <dd>
 
-Texto da janela para o controle. Para obter mais informações, consulte [parâmetros de controle comuns](common-control-parameters.md).
+Texto da janela para o controle. Para obter mais informações, consulte [Parâmetros de controle comuns](common-control-parameters.md).
 
 </dd> <dt>
 
-<span id="id"></span><span id="ID"></span>*sessão*
+<span id="id"></span><span id="ID"></span>*Id*
 </dt> <dd>
 
-Identificador do controle. Para obter mais informações, consulte [parâmetros de controle comuns](common-control-parameters.md).
+Identificador do controle. Para obter mais informações, consulte [Parâmetros de controle comuns](common-control-parameters.md).
 
 </dd> </dl>
 
@@ -202,21 +202,21 @@ buttonClass controlText, id
 <span id="buttonClass"></span><span id="buttonclass"></span><span id="BUTTONCLASS"></span>*buttonClass*
 </dt> <dd>
 
-**AUTO3STATE**, **autocaixa de seleção**, **AUTORADIOBUTTON**, **CheckBox**, **PUSHBOX**, botão de **pressão**, **RadioButton**, **STATE3** ou **UserButton**.
+**AUTO3STATE**, **AUTOCHECKBOX,** **AUTORDIOBUTTON**, **CHECKBOX**, **PUSHBOX**, **PUSHBUTTON,** **RADIOBUTTON,** **STATE3** ou **USERBUTTON**.
 
 </dd> <dt>
 
-<span id="controlText"></span><span id="controltext"></span><span id="CONTROLTEXT"></span>*controlText*
+<span id="controlText"></span><span id="controltext"></span><span id="CONTROLTEXT"></span>*Controltext*
 </dt> <dd>
 
-Texto da janela para o controle. Para obter mais informações, consulte [parâmetros de controle comuns](common-control-parameters.md).
+Texto da janela para o controle . Para obter mais informações, consulte [Parâmetros de controle comuns](common-control-parameters.md).
 
 </dd> <dt>
 
-<span id="id"></span><span id="ID"></span>*sessão*
+<span id="id"></span><span id="ID"></span>*Id*
 </dt> <dd>
 
-Identificador do controle. Para obter mais informações, consulte [parâmetros de controle comuns](common-control-parameters.md).
+Identificador do controle. Para obter mais informações, consulte [Parâmetros de controle comuns](common-control-parameters.md).
 
 </dd> </dl>
 
@@ -231,61 +231,61 @@ editClass id
 <span id="editClass"></span><span id="editclass"></span><span id="EDITCLASS"></span>*editClass*
 </dt> <dd>
 
-**EDITTEXT**, **BEDIT**, **HEDIT** ou **IEDIT**.
+**EDITTEXT,** **BEDIT,** **HEDIT** ou **IEDIT.**
 
 </dd> <dt>
 
-<span id="id"></span><span id="ID"></span>*sessão*
+<span id="id"></span><span id="ID"></span>*Id*
 </dt> <dd>
 
-Identificador do controle. Para obter mais informações, consulte [parâmetros de controle comuns](common-control-parameters.md).
+Identificador do controle. Para obter mais informações, consulte [Parâmetros de controle comuns](common-control-parameters.md).
 
 </dd> </dl>
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 
 [Usando caixas de diálogo](../dlgbox/using-dialog-boxes.md)
 </dt> <dt>
 
-[**ACELERADORES**](accelerators-resource.md)
+[**Aceleradores**](accelerators-resource.md)
 </dt> <dt>
 
-[**CARACTERÍSTICAS**](characteristics-statement.md)
+[**Características**](characteristics-statement.md)
 </dt> <dt>
 
-[**CONTROL**](control-control.md)
+[**Controle**](control-control.md)
 </dt> <dt>
 
-[**CreateDialog**](/windows/win32/api/winuser/nf-winuser-createdialoga)
+[**Createdialog**](/windows/win32/api/winuser/nf-winuser-createdialoga)
 </dt> <dt>
 
-[**CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa)
+[**Createwindow**](/windows/win32/api/winuser/nf-winuser-createwindowa)
 </dt> <dt>
 
-[**Caixa**](/windows/win32/api/winuser/nf-winuser-dialogboxa)
+[**Dialogbox**](/windows/win32/api/winuser/nf-winuser-dialogboxa)
 </dt> <dt>
 
-[**GetDialogBaseUnits**](/windows/win32/api/winuser/nf-winuser-getdialogbaseunits)
+[**Getdialogbaseunits**](/windows/win32/api/winuser/nf-winuser-getdialogbaseunits)
 </dt> <dt>
 
-[**LANGUAGE**](language-statement.md)
+[**Língua**](language-statement.md)
 </dt> <dt>
 
-[**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta)
+[**Logfont**](/windows/win32/api/wingdi/ns-wingdi-logfonta)
 </dt> <dt>
 
-[ADICIONARMENU](menu-resource.md)
+[Menu](menu-resource.md)
 </dt> <dt>
 
-[**RCDATA**](rcdata-resource.md)
+[**Rcdata**](rcdata-resource.md)
 </dt> <dt>
 
-[**STRINGTABLE**](stringtable-resource.md)
+[**Stringtable**](stringtable-resource.md)
 </dt> <dt>
 
-[**VERSION**](version-statement.md)
+[**Versão**](version-statement.md)
 </dt> </dl>
 
  

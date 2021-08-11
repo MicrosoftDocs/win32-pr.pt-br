@@ -1,7 +1,7 @@
 ---
-description: A \_ estrutura informações da impressora \_ 1 especifica informações gerais sobre a impressora.
+description: A estrutura PRINTER \_ INFO \_ 1 especifica informações gerais da impressora.
 ms.assetid: 0b0e2d0e-2625-4cab-a8f9-536185479443
-title: Estrutura de PRINTER_INFO_1 (winspool. h)
+title: PRINTER_INFO_1 (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: cbeff42a9125331c45ffd8bbbee5758fd864648c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ab70662371ef4ebe80b1d10f7f61700c97e979959c337bb5e81b3bc688e8c36b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105814570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118234203"
 ---
-# <a name="printer_info_1-structure"></a>Estrutura de informações da impressora \_ \_ 1
+# <a name="printer_info_1-structure"></a>Estrutura INFORMAÇÕES \_ \_ DA IMPRESSORA 1
 
-A **estrutura \_ informações \_ da impressora 1** especifica informações gerais sobre a impressora.
+A **estrutura PRINTER INFO \_ \_ 1** especifica informações gerais da impressora.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -53,16 +53,16 @@ Especifica informações sobre os dados retornados. A seguir estão os valores p
 
 | Valor                    | Significado                                                                                                                                                                                                                                                   |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_expansão de enumeração de impressora \_    | Um provedor de impressão pode definir esse sinalizador como uma dica para um aplicativo de chamada para enumerar esse objeto posteriormente se a expansão padrão estiver habilitada. Por exemplo, quando os domínios são enumerados, um provedor de impressão pode indicar o domínio do usuário definindo esse sinalizador. |
-| \_contêiner de enumeração de impressora \_ | Se esse sinalizador for definido, o objeto de impressora poderá conter objetos enumeráveis. Por exemplo, o objeto pode ser um servidor de impressão que contém impressoras.                                                                                                             |
-| \_ICON1 de enumeração de impressora \_     | Indica que, quando apropriado, um aplicativo deve exibir um ícone que identifica o objeto como um nome de rede de nível superior, como a rede do Microsoft Windows.                                                                                           |
-| \_ICON2 de enumeração de impressora \_     | Indica que, quando apropriado, um aplicativo deve exibir um ícone que identifica o objeto como um domínio de rede.                                                                                                                                  |
-| \_ICON3 de enumeração de impressora \_     | Indica que, quando apropriado, um aplicativo deve exibir um ícone que identifica o objeto como um servidor de impressão.                                                                                                                                    |
-| \_ICON4 de enumeração de impressora \_     | Reservado.                                                                                                                                                                                                                                                 |
-| \_ICON5 de enumeração de impressora \_     | Reservado.                                                                                                                                                                                                                                                 |
-| \_ICON6 de enumeração de impressora \_     | Reservado.                                                                                                                                                                                                                                                 |
-| \_ICON7 de enumeração de impressora \_     | Reservado.                                                                                                                                                                                                                                                 |
-| \_ICON8 de enumeração de impressora \_     | Indica que, quando apropriado, um aplicativo deve exibir um ícone que identifica o objeto como uma impressora.                                                                                                                                         |
+| PRINTER \_ ENUM \_ EXPAND    | Um provedor de impressão pode definir esse sinalizador como uma dica para um aplicativo de chamada para enumerar esse objeto ainda mais se a expansão padrão estiver habilitada. Por exemplo, quando os domínios são enumerados, um provedor de impressão pode indicar o domínio do usuário definindo esse sinalizador. |
+| CONTÊINER \_ ENUM DA \_ IMPRESSORA | Se esse sinalizador for definido, o objeto de impressora poderá conter objetos enumeráveis. Por exemplo, o objeto pode ser um servidor de impressão que contém impressoras.                                                                                                             |
+| ÍCONE \_ DE ENUM \_ DA IMPRESSORA1     | Indica que, quando apropriado, um aplicativo deve exibir um ícone que identifica o objeto como um nome de rede de nível superior, como Microsoft Windows Network.                                                                                           |
+| ÍCONE \_ DE ENUM \_ DA IMPRESSORA2     | Indica que, quando apropriado, um aplicativo deve exibir um ícone que identifica o objeto como um domínio de rede.                                                                                                                                  |
+| ÍCONE \_ DE ENUM \_ DA IMPRESSORA3     | Indica que, quando apropriado, um aplicativo deve exibir um ícone que identifica o objeto como um servidor de impressão.                                                                                                                                    |
+| ÍCONE \_ DE ENUM \_ DA IMPRESSORA4     | Reservado.                                                                                                                                                                                                                                                 |
+| ÍCONE \_ DE ENUM \_ DA IMPRESSORA5     | Reservado.                                                                                                                                                                                                                                                 |
+| ÍCONE \_ DE ENUM \_ DA IMPRESSORA6     | Reservado.                                                                                                                                                                                                                                                 |
+| ÍCONE \_ DE ENUM \_ DA IMPRESSORA7     | Reservado.                                                                                                                                                                                                                                                 |
+| ÍCONE \_ DE ENUM \_ DA IMPRESSORA8     | Indica que, quando apropriado, um aplicativo deve exibir um ícone que identifica o objeto como uma impressora.                                                                                                                                         |
 
 
 
@@ -77,7 +77,7 @@ Ponteiro para uma cadeia de caracteres terminada em nulo que descreve o conteúd
 
 </dd> <dt>
 
-**pName**
+**Pname**
 </dt> <dd>
 
 Ponteiro para uma cadeia de caracteres terminada em nulo que nomeia o conteúdo da estrutura.
@@ -99,34 +99,34 @@ Ponteiro para uma cadeia de caracteres terminada em nulo que contém dados adici
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Nomes Unicode e ANSI<br/>   | **\_ Informações de impressora \_ \_ 1W** (Unicode) e **\_ informações de impressora \_ \_ 1a** (ANSI)<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Nomes Unicode e ANSI<br/>   | **\_ INFORMAÇÕES \_ DA IMPRESSORA \_ 1W** (Unicode) e INFORMAÇÕES DA IMPRESSORA **\_ \_ \_ 1A** (ANSI)<br/>                           |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 
 [Impressão](printdocs-printing.md)
 </dt> <dt>
 
-[Estruturas de API do spooler de impressão](printing-and-print-spooler-structures.md)
+[Imprimir estruturas de API do Spooler](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
-[**Getprinter**](getprinter.md)
+[**GetPrinter**](getprinter.md)
 </dt> <dt>
 
 [**EnumPrinters**](enumprinters.md)
 </dt> <dt>
 
-[**Informações da impressora \_ \_ 2**](printer-info-2.md)
+[**INFORMAÇÕES \_ DA IMPRESSORA \_ 2**](printer-info-2.md)
 </dt> <dt>
 
-[**Informações da impressora \_ \_ 3**](printer-info-3.md)
+[**INFORMAÇÕES \_ DA IMPRESSORA \_ 3**](printer-info-3.md)
 </dt> <dt>
 
-[**Informações da impressora \_ \_ 4**](printer-info-4.md)
+[**INFORMAÇÕES \_ DA IMPRESSORA \_ 4**](printer-info-4.md)
 </dt> </dl>
 
  

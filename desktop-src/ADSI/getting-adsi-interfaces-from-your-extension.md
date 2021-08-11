@@ -8,12 +8,12 @@ keywords:
 - ADSI ADSI, código de exemplo C/C++, obtendo interfaces ADSI de sua extensão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a1eeff55f2e382ce2816f59ee53dbd78033b79c
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 41df2498bd0c25996cfd0941f823e414289c0a9fbe006df846960c6f455e4301
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105755489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118179726"
 ---
 # <a name="getting-adsi-interfaces-from-your-extension"></a>Obtendo interfaces ADSI de sua extensão
 
@@ -44,6 +44,6 @@ if ( SUCCEEDED(hr) )
 
 Você deve liberar a interface imediatamente após usá-la. Se a extensão tiver uma referência aberta ao agregador, você terá criado uma referência circular e o agregador não poderá liberar a extensão. Portanto, o agregador não pode ser liberado e o resultado é vazamentos de memória em seu aplicativo.
 
- 
+ 
 
- 
+ 

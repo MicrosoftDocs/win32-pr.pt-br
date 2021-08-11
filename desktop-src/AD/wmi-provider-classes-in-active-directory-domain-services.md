@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a0ddc4a9d08dbad060c45359875704916aeb7db5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4a5d9f4728060556f992f410c93f73036b280aea51c9e7339e1bfc343b3923a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104084016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118181681"
 ---
 # <a name="wmi-provider-classes-in-active-directory-domain-services"></a>Classes de provedor WMI no Active Directory Domain Services
 
@@ -29,9 +29,9 @@ Active Directory Domain Services ter as seguintes classes para uso com script WM
 
 O próprio provedor é representado pela classe [**ReplicationProvider1**](replicationprovider1.md) , que é instância com o nome "ReplProv1".
 
- 
+ 
 
- 
+ 
 
 
 

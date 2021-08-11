@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 90351a660cfbeafbcd468edb1e6eca8c589b5d72
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5975bf54205289a61cf50b992fe827cdd76510292ee21167785a06688c7326a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118178424"
 ---
 # <a name="acs-non-reserved-token-size-attribute"></a>ACS-não reservado-atributo de tamanho de token
 
@@ -36,7 +36,7 @@ O atributo **ACS-non-reserved-token-size** é somente para uso interno. Com base
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1319              |
 | System-ID-GUID    | a916d7c9-3b90-11d2-90cc-00c04fd91ab1 |
-| Syntax            | [**Intervalo**](s-interval.md)       |
+| Sintaxe            | [**Intervalo**](s-interval.md)       |
 
 
 

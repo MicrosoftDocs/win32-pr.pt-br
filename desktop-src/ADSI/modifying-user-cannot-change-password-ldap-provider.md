@@ -9,12 +9,12 @@ keywords:
 - ADSI do provedor LDAP, exemplos de gerenciamento de usuário, o usuário deve alterar a senha no próximo logon, modificando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e1628b113c2f15278bc72e41aa79e4be03a98f2
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: ec664f9a79e0de4ff0b75ae31abd8dc1532cd17c0d3d35a934e094da45eb3383
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103641843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118179014"
 ---
 # <a name="modifying-user-cannot-change-password-ldap-provider"></a>Modificar o usuário não pode alterar a senha (provedor LDAP)
 
@@ -32,7 +32,7 @@ O procedimento a seguir descreve como modificar ou adicionar ACEs para essa perm
     > [!Note]  
     > As cadeias de caracteres "todos" e "auto-Autoridade NT \\ " são localizadas com base no idioma do primeiro controlador de domínio no domínio. Por isso, as cadeias de caracteres não devem ser usadas diretamente. Os nomes de conta devem ser obtidos em tempo de execução chamando a função [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) com o Sid para "Everyone" ("s-1-1-0") e "NT Authority \\ self" ("S-1-5-10") entidades de segurança bem conhecidas. As funções de exemplo **GetSidAccountName**, **GetSidAccountName \_ Everyone** e **GetSidAccountName \_ Self** C++ mostradas em [lendo usuário não podem alterar a senha (provedor LDAP)](reading-user-cannot-change-password-ldap-provider.md) demonstre como fazer isso.
 
-     
+     
 
 5.  Modifique a propriedade [**IADsAccessControlEntry. AceType**](iadsaccesscontrolentry-property-methods.md) das ACEs que foram encontradas para o **\_ objeto ADS AceType \_ acesso \_ negado \_** se o usuário não puder alterar sua senha ou se o **ADS \_ AceType acessar o \_ \_ \_ objeto permitido** se o usuário puder alterar sua senha.
 6.  Se a ACE "Everyone" não for encontrada, crie um novo objeto [**IADsAccessControlEntry**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry) que contenha os valores de propriedade mostrados na tabela abaixo e adicione a nova entrada à ACL com o método [**IADsAccessControlList. AddAce**](/windows/desktop/api/Iads/nf-iads-iadsaccesscontrollist-addace) .
@@ -57,7 +57,7 @@ A tabela a seguir lista os valores de Propriedade do objeto [**IADsAccessControl
 
 
 
- 
+ 
 
 ## <a name="example-code"></a>Código de exemplo
 
@@ -66,7 +66,7 @@ O exemplo de código a seguir mostra como obter uma interface para alterar uma D
 > [!Note]  
 > Para usar o código documentado neste exemplo, será necessário ser um administrador. Se você não for um administrador, precisará adicionar mais código que usará uma interface que permitirá que um usuário altere a maneira como o cache do lado do cliente é liberado de volta para o serviço de Domínio do Active Directory.
 
- 
+ 
 
 
 ```C++
@@ -420,9 +420,9 @@ HRESULT SetUserCannotChangePassword(LPCWSTR pwszUserDN,
 O exemplo de código a seguir mostra como modificar o usuário não pode alterar a permissão de senha usando o provedor LDAP.
 
 > [!Note]  
-> O exemplo a seguir só funcionará em domínios em que o idioma principal é o inglês, pois as cadeias de caracteres "todos" e "auto Autoridade NT \\ " são localizadas com base no idioma do primeiro controlador de domínio no domínio. Não há nenhuma maneira de Visual Basic obter os nomes de conta para uma entidade de segurança conhecida sem chamar a função [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) . Se estiver usando Visual Basic, é recomendável que você use o provedor WinNT para modificar a permissão o usuário não pode alterar a senha, conforme mostrado em [modificando o usuário não pode alterar a senha (provedor winnt)](modifying-user-cannot-change-password-winnt-provider.md).
+> O exemplo a seguir só funcionará em domínios em que o idioma principal é o inglês, pois as cadeias de caracteres "todos" e "auto Autoridade NT \\ " são localizadas com base no idioma do primeiro controlador de domínio no domínio. não há nenhuma maneira de Visual Basic obter os nomes de conta para uma entidade de segurança conhecida sem chamar a função [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) . se estiver usando Visual Basic, é recomendável que você use o provedor WinNT para modificar a permissão o usuário não pode alterar a senha, conforme mostrado em [modificando o usuário não pode alterar a senha (provedor WinNT)](modifying-user-cannot-change-password-winnt-provider.md).
 
- 
+ 
 
 
 ```VB
@@ -507,6 +507,6 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 

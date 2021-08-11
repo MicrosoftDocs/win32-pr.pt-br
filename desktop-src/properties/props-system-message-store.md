@@ -4,12 +4,12 @@ ms.assetid: f2f1a669-3337-4c11-a289-a96d8f8e54eb
 title: System.Message.Store
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b08d2103c2f1e2d81b2ccf42e4766d67e5626395
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 912d9d386d3365bc198295946d36d65a0ae8e417952fb5b1a9d2b7cd0e8101d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105778453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118230665"
 ---
 # <a name="systemmessagestore"></a>System.Message.Store
 

@@ -17,12 +17,12 @@ api_location:
 - Winspool.drv
 - Ext-MS-Win-Printer-WinSpool-l1-1-2.dll
 - Ext-MS-Win-Printer-WinSpool-L1-1-3.dll
-ms.openlocfilehash: 36af84fe665d68fd7996a0b81fbbf291314cc69e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7b28c61030271b9de2e946fd59cddf5253a80cd4faec40ee66ceb2ae6cefdce3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828205"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118233945"
 ---
 # <a name="setprinterdata-function"></a>Função SetPrinterData
 
@@ -113,7 +113,7 @@ Se *hPrinter* for um identificador para um *servidor de impressão, o* especifiq
 | **aviso de SPLREG \_ \_ habilitado**                                           |                                                                                                                                                                                                                                 |
 | **SPLREG \_ o \_ diretório de spool padrão \_**                               |                                                                                                                                                                                                                                 |
 | **\_log de eventos do SPLREG \_**                                              |                                                                                                                                                                                                                                 |
-| **\_ \_ pop-up do SPLREG net**                                              | Sem suporte no Windows Server 2003 e posterior<br/>                                                                                                                                                                       |
+| **\_ \_ pop-up do SPLREG net**                                              | sem suporte no Windows Server 2003 e posterior<br/>                                                                                                                                                                       |
 | **\_padrão de \_ prioridade de thread de porta SPLREG \_ \_**                         |                                                                                                                                                                                                                                 |
 | **\_prioridade de \_ thread de porta SPLREG \_**                                  |                                                                                                                                                                                                                                 |
 | **\_grupos de \_ isolamento do driver de impressão SPLREG \_ \_**                        | Windows 7 e posterior<br/>                                                                                                                                                                                                  |
@@ -122,7 +122,7 @@ Se *hPrinter* for um identificador para um *servidor de impressão, o* especifiq
 | **\_ \_ \_ \_ tempo limite de ociosidade do isolamento do driver de impressão SPLREG \_**                 | Windows 7 e posterior<br/>                                                                                                                                                                                                  |
 | **\_política de \_ execução de isolamento do driver de impressão SPLREG \_ \_ \_**             | Windows 7 e posterior<br/>                                                                                                                                                                                                  |
 | **\_política de \_ substituição de isolamento do driver de impressão SPLREG \_ \_ \_**              | Windows 7 e posterior<br/>                                                                                                                                                                                                  |
-| **\_ \_ pop-up de repetição do SPLREG**                                            | Após o retorno bem-sucedido, o *pData* conterá 1 se o servidor estiver definido para repetir janelas pop-up para todos os trabalhos ou 0 se o servidor não tentar novamente janelas pop-up para todos os trabalhos.<br/> Sem suporte no Windows Server 2003 e posterior<br/> |
+| **\_ \_ pop-up de repetição do SPLREG**                                            | Após o retorno bem-sucedido, o *pData* conterá 1 se o servidor estiver definido para repetir janelas pop-up para todos os trabalhos ou 0 se o servidor não tentar novamente janelas pop-up para todos os trabalhos.<br/> sem suporte no Windows Server 2003 e posterior<br/> |
 | **\_prioridade de thread do Agendador SPLREG \_ \_**                             |                                                                                                                                                                                                                                 |
 | **\_padrão de prioridade de thread do Agendador SPLREG \_ \_ \_**                    |                                                                                                                                                                                                                                 |
 | **SPLREG \_ WEBSHAREMGMT**                                            | Windows Server 2003 e posterior<br/>                                                                                                                                                                                        |
@@ -161,7 +161,7 @@ Chame a função [**RegSetValueEx**](/windows/win32/api/winreg/nf-winreg-regsetv
 
  
 
-No Windows 7 e versões posteriores do Windows, os trabalhos de impressão enviados a um servidor de impressão são renderizados no cliente por padrão. A renderização do lado do cliente de trabalhos de impressão pode ser configurada para cada impressora definindo os valores a *seguir em valores* de valor.
+no Windows 7 e versões posteriores do Windows, os trabalhos de impressão enviados a um servidor de impressão são renderizados no cliente por padrão. A renderização do lado do cliente de trabalhos de impressão pode ser configurada para cada impressora definindo os valores a *seguir em valores* de valor.
 
 
 
@@ -189,7 +189,7 @@ No Windows 7 e versões posteriores do Windows, os trabalhos de impressão envia
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 

@@ -4,26 +4,26 @@ description: Este tópico inclui um exemplo de código usado para obter um descr
 ms.assetid: 989abd3f-9043-4c3f-a99a-63fa95daf203
 ms.tgt_platform: multiple
 keywords:
-- Active Directory exemplos Active Directory, usando IDirectoryObject para obter um descritor de segurança
+- Exemplos do Active Directory do Active Directory, usando IDirectoryObject para obter um descritor de segurança
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 562438d37d6bfadadfee95d13f80cb4c4728e0f2
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: bd7b2bd256fb9601cc61ff41465763ccc30c39bc68ff79760019dad1f8d510bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103640372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118182510"
 ---
 # <a name="using-idirectoryobject-to-get-a-security-descriptor"></a>Usando IDirectoryObject para obter um descritor de segurança
 
 Este tópico inclui um exemplo de código usado para obter um descritor de segurança.
 
-O seguinte exemplo de código C++:
+O exemplo de código C++ a seguir:
 
 -   Cria um buffer.
 -   Usa a interface [**IDirectoryObject**](/windows/desktop/api/iads/nn-iads-idirectoryobject) para obter o descritor de segurança do objeto especificado.
 -   Copia o descritor de segurança para o buffer.
--   Retorna um ponteiro para uma estrutura de [**\_ descritor de segurança**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) que contém os dados do descritor de segurança.
+-   Retorna um ponteiro para uma estrutura [**\_ SECURITY DESCRIPTOR**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) que contém os dados do descritor de segurança.
 
 
 ```C++
@@ -85,6 +85,6 @@ HRESULT GetSDFromIDirectoryObject(
 
 
 
- 
+ 
 
- 
+ 

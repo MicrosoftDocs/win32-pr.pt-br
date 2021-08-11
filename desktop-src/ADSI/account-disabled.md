@@ -1,23 +1,23 @@
 ---
-title: Conta desabilitada (provedor LDAP)
-description: Para desabilitar uma conta de usuário, defina a propriedade AccountDisabled como TRUE na interface IADsUser. Isso é semelhante ao provedor WinNT. Os exemplos de código a seguir mostram como desabilitar uma conta de usuário.
+title: Conta desabilitada (Provedor LDAP)
+description: Para desabilitar uma conta de usuário, de definir a propriedade AccountDisabled como TRUE na interface IADsUser. Isso é semelhante ao provedor WinNT. Os exemplos de código a seguir mostram como desabilitar uma conta de usuário.
 ms.assetid: 7911baa4-4178-47a9-80eb-11dc608a0ea3
 ms.tgt_platform: multiple
 keywords:
-- Conta desabilitada pelo ADSI, provedor LDAP
-- ADSI do provedor LDAP, exemplos de gerenciamento de usuário, conta desabilitada
+- ADSI desabilitado da conta, provedor LDAP
+- ADSI do provedor LDAP, exemplos de gerenciamento de usuários, Conta Desabilitada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e61fb65a06f4e2afb1b43595b955c577b2a6090
-ms.sourcegitcommit: 6515eef99ca0d1bbe3e27d4575e9986f5255f277
+ms.openlocfilehash: cf753da0770e19504d496be20ba350f79bd4788a797eb5241e68261df844b626
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "105755905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118181440"
 ---
-# <a name="account-disabled-ldap-provider"></a>Conta desabilitada (provedor LDAP)
+# <a name="account-disabled-ldap-provider"></a>Conta desabilitada (Provedor LDAP)
 
-Para desabilitar uma conta de usuário, defina a propriedade AccountDisabled como **true** na interface [**IADsUser**](/windows/desktop/api/Iads/nn-iads-iadsuser) . Isso é semelhante ao provedor WinNT. Os exemplos de código a seguir mostram como desabilitar uma conta de usuário.
+Para desabilitar uma conta de usuário, de definir a propriedade AccountDisabled **como TRUE** na interface [**IADsUser.**](/windows/desktop/api/Iads/nn-iads-iadsuser) Isso é semelhante ao provedor WinNT. Os exemplos de código a seguir mostram como desabilitar uma conta de usuário.
 
 ## <a name="example-1"></a>Exemplo 1
 

@@ -1,25 +1,25 @@
 ---
-description: Saiba mais sobre o elemento JobStapleAllDocuments, que descreve as características de grampeamento da saída.
+description: Saiba mais sobre o elemento JobStapleAllDocuments, que descreve as características de preparação da saída.
 ms.assetid: 53e38979-2065-4304-a0ed-0434c8d2efc8
 title: DocumentStaple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc2cda02c452ebb053c71811fb2642cea7371b2f
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: d448ae54ccb4368e5ea0d30f8feaca9cb5bafb54c4ae6a89c7f901cb9372284a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118235023"
 ---
 # <a name="documentstaple"></a>DocumentStaple
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descreve as características de grampeamento da saída. Cada documento é grampeado separadamente. As palavras-chave JobStapleAllDocuments e DocumentStaple são mutuamente exclusivas. Cabe ao driver determinar o tratamento de restrições entre essas palavras-chave.
+Descreve as características de preparação da saída. Cada documento é marcado separadamente. As palavras-chave JobStapleAllDocuments e DocumentStaple são mutuamente exclusivas. O driver deve determinar o tratamento de restrição entre essas palavras-chave.
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo estrutural](#structural-content)
--   [Conteúdo de linguagem XML (XML)](#extensible-markup-language-xml-content)
+-   [linguagem XML conteúdo (XML)](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Informações do elemento
 
@@ -28,8 +28,8 @@ Descreve as características de grampeamento da saída. Cada documento é grampe
 | Name | Valor |
 |----------------------------|--------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Recurso<br/>                                                             |
-| Prefixo de escopo <br/> | Documento<br/>                                                            |
-| Observações <br/>          | Superior, inferior, esquerda e direita são relativos ao PageImageableSize.<br/> |
+| Prefixo de definição de scoping <br/> | Documento<br/>                                                            |
+| Observações <br/>          | Top, Bottom, Left e Right são relativos ao PageImageableSize.<br/> |
 
 
 
@@ -67,18 +67,18 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 
 | Nome                               | Tipo de dados          | Unidade                       | Valores com suporte                                                                                                                                                                      | Resumo                                                                                                                                                     |
 |------------------------------------|--------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/>  | characters<br/>      | Nome totalmente qualificado válido, conforme definido pelos [namespaces em XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | O nome da opção.<br/>                                                                                                                          |
-| \_IdentityOptionValue\_<br/> | string<br/>  | n/d<br/>             | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/>                                                                                |
-| \_Ângulovalue\_<br/>          | Número inteiro<br/> | graus<br/>         | Maior que 0.<br/>                                                                                                                                                            | Especifica o ângulo do grampo, em relação à direção X do PageImageableSize. O ângulo do grampo é medido em uma direção no sentido anti-horário.<br/> |
-| \_SheetCapacityValue\_<br/>  | Número inteiro<br/> | folhas de mídia<br/> | Maior que 0.<br/>                                                                                                                                                            | Especifica o número de planilhas com suporte da opção de grampeamento para o MediaType selecionado no momento.<br/>                                                |
+| \_Optionname\_<br/>          | string<br/>  | characters<br/>      | Nome totalmente qualificado válido, conforme definido [por Namespaces em XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | O nome da opção.<br/>                                                                                                                          |
+| \_IdentityOptionValue\_<br/> | string<br/>  | n/d<br/>             | True, False.<br/>                                                                                                                                                               | Define uma Opção que, quando selecionada, desabilitará esse recurso.<br/>                                                                                |
+| \_AngleValue\_<br/>          | Número inteiro<br/> | graus<br/>         | Maior que 0.<br/>                                                                                                                                                            | Especifica o ângulo de sinalização, relativo à direção X do PageImageableSize. O ângulo de inclinação é medido em uma direção no sentido anti-horário.<br/> |
+| \_SheetCapacityValue\_<br/>  | Número inteiro<br/> | folhas de mídia<br/> | Maior que 0.<br/>                                                                                                                                                            | Especifica o número de planilhas com suporte pela opção de preparação para o MediaType selecionado no momento.<br/>                                                |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>Conteúdo de linguagem XML (XML)
+## <a name="extensible-markup-language-xml-content"></a>linguagem XML conteúdo (XML)
 
-As palavras-chave do esquema de impressão pública são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace. O conteúdo do linguagem XML público (XML) para essa palavra-chave é definido abaixo:
+As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML XML (public linguagem XML) para essa palavra-chave é definido abaixo:
 
 ``` syntax
 <psf:Feature name="psk:DocumentStaple">

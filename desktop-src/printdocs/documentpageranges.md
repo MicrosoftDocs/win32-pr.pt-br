@@ -4,24 +4,24 @@ ms.assetid: 4cd1b0f8-7f7e-40cc-8d19-d44187822cd1
 title: DocumentPageRanges
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e854736c72b3bff5ba2e4750e0b09e0b87c2c9f
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 8c9a1941b36970628ddcb5c94cad42bd7f520f0b48e00ff5e1263079818757a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118235113"
 ---
 # <a name="documentpageranges"></a>DocumentPageRanges
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descreve o intervalo de saída do documento em páginas. O valor do parâmetro deve estar de acordo com a seguinte estrutura:
+Descreve o intervalo de saída do documento em páginas. O valor do parâmetro deve estar em conformidade com a seguinte estrutura:
 
 -   PageRangeText: "*PageRange*" ou "*PageRange*,*PageRange*"
 
 -   PageRange: "*PageNumber*" ou "*PageNumber* - *PageNumber*"
 
--   PageNumber: 1 a N, em que N é o número de páginas no documento. Se *pagenumber* > N, *PageNumber* = N.
+-   PageNumber: 1 a N, em que N é o número de páginas no documento. Se *PageNumber* > N, *pageNumber* = N.
 
 O espaço em branco na cadeia de caracteres deve ser ignorado.
 
@@ -35,7 +35,7 @@ O espaço em branco na cadeia de caracteres deve ser ignorado.
 | Name | Valor |
 |----------------------------|-------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/> |
-| Prefixo de escopo <br/> | Documento<br/>     |
+| Prefixo de definição de scoping <br/> | Documento<br/>     |
 | Observações <br/>          | Nenhum<br/>         |
 
 
@@ -81,9 +81,9 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Tipo de dados<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | string<br/>  | não definido<br/>       |
 | MaxLength<br/>    | Número inteiro<br/> | não definido<br/>       |
-| MinLength<br/>    | integer<br/> | 1<br/>               |
-| Obrigatório<br/>    | string<br/>  | PSK: condicional<br/> |
-| UnitType<br/>     | string<br/>  | characters<br/>      |
+| Minlength<br/>    | integer<br/> | 1<br/>               |
+| Obrigatório<br/>    | string<br/>  | psk:Conditional<br/> |
+| Unittype<br/>     | string<br/>  | characters<br/>      |
 
 
 

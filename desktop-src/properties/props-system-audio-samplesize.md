@@ -4,12 +4,12 @@ ms.assetid: abbfd194-e800-46c3-b961-1cf3f5d59c82
 title: System. Audio. Sampleize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36f1428de5052936684a97c93d4b275181e2fd8f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be9568e1e60d568be9f2ffde0ddd77ed3db3f80318dcc4071a0facfeb9cffef5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105813237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118232624"
 ---
 # <a name="systemaudiosamplesize"></a>System. Audio. Sampleize
 

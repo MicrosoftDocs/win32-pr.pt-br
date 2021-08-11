@@ -1,7 +1,7 @@
 ---
-description: A \_ estrutura informações do driver \_ 3 contém informações de driver de impressora.
+description: A estrutura DRIVER \_ INFO \_ 3 contém informações de driver de impressora.
 ms.assetid: ccf87319-0bcf-4f71-8de3-0190459d2b0e
-title: Estrutura de DRIVER_INFO_3 (winspool. h)
+title: DRIVER_INFO_3 (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 64509977a85bc33cb13dac4e6ba2817502c06cc9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8187b90ee9cc423051b8b57d942fa026cca6f8c3d3bbfabd7721ed204484cb71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105791432"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118234908"
 ---
-# <a name="driver_info_3-structure"></a>Estrutura de informações do DRIVER \_ \_ 3
+# <a name="driver_info_3-structure"></a>Estrutura INFORMAÇÕES \_ \_ DO DRIVER 3
 
-A **estrutura \_ informações \_ do Driver 3** contém informações de driver de impressora.
+A **estrutura DRIVER INFO \_ \_ 3** contém informações de driver de impressora.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -53,11 +53,11 @@ typedef struct _DRIVER_INFO_3 {
 **cVersion**
 </dt> <dd>
 
-A versão do sistema operacional para a qual o driver foi gravado. Os valores com suporte são 3 e 4, que representam os drivers v3 e v4, respectivamente.
+A versão do sistema operacional para a qual o driver foi gravado. Os valores com suporte são 3 e 4, que representam os drivers V3 e V4, respectivamente.
 
 </dd> <dt>
 
-**pName**
+**Pname**
 </dt> <dd>
 
 Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nome do driver (por exemplo, "QMS 810").
@@ -67,7 +67,7 @@ Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nom
 **pEnvironment**
 </dt> <dd>
 
-Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o ambiente para o qual o driver foi escrito (por exemplo, Windows x86, Windows IA64 e Windows x64).
+Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o ambiente para o qual o driver foi gravado (por exemplo, Windows x86, Windows IA64 e Windows x64).
 
 </dd> <dt>
 
@@ -81,7 +81,7 @@ Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica um no
 **pDataFile**
 </dt> <dd>
 
-Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica um nome de arquivo ou um caminho completo e um nome de arquivo para o arquivo que contém os dados do driver (por exemplo, "C: \\ drivers \\ Qms810. PPD").
+Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica um nome de arquivo ou um caminho completo e um nome de arquivo para o arquivo que contém dados de driver (por exemplo, "C: \\ DRIVERS \\ Qms810.ppd").
 
 </dd> <dt>
 
@@ -102,14 +102,14 @@ Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica um no
 **pDependentFiles**
 </dt> <dd>
 
-Um ponteiro para um buffer MultiSZ que contém uma sequência de cadeias de caracteres terminadas em nulo. Cada cadeia de caracteres terminada em nulo no buffer contém o nome de um arquivo do qual o driver depende. A sequência de cadeias de caracteres é terminada por uma cadeia de caracteres vazia e de comprimento zero. Se **pDependentFiles** não for **nulo** e não contiver nenhum nome de arquivo, ele apontará para um buffer que contém duas cadeias de caracteres vazias.
+Um ponteiro para um buffer MultiSZ que contém uma sequência de cadeias de caracteres terminadas em nulo. Cada cadeia de caracteres terminada em nulo no buffer contém o nome de um arquivo de que o driver depende. A sequência de cadeias de caracteres é encerrada por uma cadeia de caracteres vazia de comprimento zero. Se **pDependentFiles** não for **NULL** e não contiver nenhum nome de arquivo, ele apontará para um buffer que contém duas cadeias de caracteres vazias.
 
 </dd> <dt>
 
 **pMonitorName**
 </dt> <dd>
 
-Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica um monitor de idioma (por exemplo, "Monitor de PJL"). Esse membro pode ser **nulo** e deve ser especificado somente para impressoras com capacidade de comunicação bidirecional.
+Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica um monitor de linguagem (por exemplo, "Monitor PJL"). Esse membro pode ser **NULL** e deve ser especificado somente para impressoras com capacidade de comunicação bidirecional.
 
 </dd> <dt>
 
@@ -128,19 +128,19 @@ Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o tip
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Nomes Unicode e ANSI<br/>   | Informações de **\_ Driver \_ \_ 3W** (Unicode) e **\_ info de driver \_ \_ 3a** (ANSI)<br/>                             |
+| Cabeçalho<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Nomes Unicode e ANSI<br/>   | **\_ INFORMAÇÕES \_ DO DRIVER \_ 3W** (Unicode) e **\_ INFORMAÇÕES DO DRIVER \_ \_ 3A** (ANSI)<br/>                             |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 
 [Impressão](printdocs-printing.md)
 </dt> <dt>
 
-[Estruturas de API do spooler de impressão](printing-and-print-spooler-structures.md)
+[Imprimir estruturas de API do Spooler](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**AddPrinterDriver**](addprinterdriver.md)

@@ -16,12 +16,12 @@ api_location:
 - Ext-MS-Win-Printer-WinSpool-l1-1-2.dll
 - WinSpool.Drv
 - Ext-MS-Win-Printer-WinSpool-L1-1-3.dll
-ms.openlocfilehash: 8d3e2bc110e5ee9412bb1edb89779f896edb015a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4bad07cd965d3a0c1ed16b508af025cfcadcf3fb8a5cf465f8e1fb2541bc7552
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105763542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118234746"
 ---
 # <a name="enddocprinter-function"></a>Função EndDocPrinter
 
@@ -89,7 +89,7 @@ Quando uma página em um arquivo em spool excede aproximadamente 350 MB, ela pod
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 

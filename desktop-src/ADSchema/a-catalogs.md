@@ -1,11 +1,11 @@
 ---
-title: Atributo de catálogos
+title: Atributo Catalogs
 description: A lista de catálogos que indexam o armazenamento em um determinado computador.
 ms.assetid: 7c532223-9d2d-4b86-ba35-7855ccc84664
 ms.tgt_platform: multiple
 keywords:
-- Atributo do AD de atributos de catálogos
-- atributo do AD de atributos de catálogos
+- Atributo catálogos Esquema do AD
+- atributo catalogs Esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d28e89674489445472286aec0362de1471cee831
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7c784dfc86c3b402afb55af79ee83956372c8ee8840c6b8acc2dae301a75036c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118177880"
 ---
-# <a name="catalogs-attribute"></a>Atributo de catálogos
+# <a name="catalogs-attribute"></a>Atributo Catalogs
 
 A lista de catálogos que indexam o armazenamento em um determinado computador.
 
@@ -30,13 +30,13 @@ A lista de catálogos que indexam o armazenamento em um determinado computador.
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Catálogos                                    |
-| LDAP-Display-Name | catalogs                                    |
+| Ldap-Display-Name | catalogs                                    |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.675                      |
-| System-ID-GUID    | 7bfdcb81-4807-11d1-a9c3-0000f80367c1        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 7bfdcb81-4807-11d1-a9c3-0000f80367c1        |
+| Sintaxe            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,10 +58,10 @@ A lista de catálogos que indexam o armazenamento em um determinado computador.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | Falso                                     |
+| Tem valor único       | Falso                                     |
 | É indexado             | Falso                                     |
-| No catálogo global      | Falso                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
+| No Catálogo Global      | Falso                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -79,10 +79,10 @@ A lista de catálogos que indexam o armazenamento em um determinado computador.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | Falso                                     |
+| Tem valor único       | Falso                                     |
 | É indexado             | Falso                                     |
-| No catálogo global      | Falso                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
+| No Catálogo Global      | Falso                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -100,10 +100,10 @@ A lista de catálogos que indexam o armazenamento em um determinado computador.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | Falso                                     |
+| Tem valor único       | Falso                                     |
 | É indexado             | Falso                                     |
-| No catálogo global      | Falso                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
+| No Catálogo Global      | Falso                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -121,10 +121,10 @@ A lista de catálogos que indexam o armazenamento em um determinado computador.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | Falso                                     |
+| Tem valor único       | Falso                                     |
 | É indexado             | Falso                                     |
-| No catálogo global      | Falso                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
+| No Catálogo Global      | Falso                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -142,10 +142,10 @@ A lista de catálogos que indexam o armazenamento em um determinado computador.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | Falso                                     |
+| Tem valor único       | Falso                                     |
 | É indexado             | Falso                                     |
-| No catálogo global      | Falso                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
+| No Catálogo Global      | Falso                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -163,10 +163,10 @@ A lista de catálogos que indexam o armazenamento em um determinado computador.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | Falso                                     |
+| Tem valor único       | Falso                                     |
 | É indexado             | Falso                                     |
-| No catálogo global      | Falso                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
+| No Catálogo Global      | Falso                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |

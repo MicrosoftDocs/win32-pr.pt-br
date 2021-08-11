@@ -4,12 +4,12 @@ ms.assetid: cd71978d-09d9-43f1-ab1b-4b213e3a193b
 title: Mídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72d436db24aba399b49cc6c905091900d8c08c23
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: cdfac0eafc04def953e669facff17bd1df1594623a7d32c4e4c4318fabf2a7dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118233171"
 ---
 # <a name="media"></a>Mídia
 

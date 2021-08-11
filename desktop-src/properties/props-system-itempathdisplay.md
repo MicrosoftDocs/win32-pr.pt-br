@@ -1,17 +1,17 @@
 ---
-description: Leia sobre a propriedade System. ItemPathDisplay, que representa o caminho de exibição amigável para o item.
+description: Leia sobre a propriedade System.ItemPathDisplay, que representa o caminho de exibição amigável para o item.
 ms.assetid: 27e4490b-7914-4b38-9799-e9d5dc407f13
-title: System. ItemPathDisplay
+title: System.ItemPathDisplay
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ddad0edbc1a77a3de1fab7956d8ce6e6f906f06
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 88a58d48740c6f7a2f9db0e496a951105c176ca7eba3dd205c2971188af7fd55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112403899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118231659"
 ---
-# <a name="systemitempathdisplay"></a>System. ItemPathDisplay
+# <a name="systemitempathdisplay"></a>System.ItemPathDisplay
 
 O caminho de exibição amigável para o item.
 
@@ -33,11 +33,11 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
-Se o item for um arquivo ou uma pasta, essa propriedade incluirá a extensão em todos os casos e será localizada se um nome localizado estiver disponível. Para outros itens, esse é o equivalente amigável, supondo que o item exista no armazenamento hierárquico.
+Se o item for um arquivo ou pasta, essa propriedade incluirá a extensão em todos os casos e será localizada se um nome localizado estiver disponível. Para outros itens, esse é o equivalente amigável, supondo que o item exista no armazenamento hierárquico.
 
-Ao contrário de [System. ItemUrl](./props-system-itemurl.md), esse valor de propriedade não inclui o esquema de URL. Para analisar um caminho de item, use System. ItemUrl ou [System. ParsingPath](./props-system-parsingpath.md). Para referenciar itens de namespace do shell usando APIs do Shell, use System. ParsingPath.
+Ao [contrário de System.ItemUrl,](./props-system-itemurl.md)esse valor da propriedade não inclui o esquema de URL. Para analisar um caminho de item, use System.ItemUrl ou [System.ParsingPath.](./props-system-parsingpath.md) Para referenciar itens de namespace do Shell usando APIs do Shell, use System.ParsingPath.
 
 Valores de exemplo:
 
@@ -45,11 +45,11 @@ Valores de exemplo:
 
 | Caminho                                   | ItemPathDisplay                        |
 |----------------------------------------|----------------------------------------|
-| c: \\ barra de mydir \\ \\hello.txt              | c: \\ barra de mydir \\ \\hello.txt              |
-| \\\\mydir de compartilhamento de servidor \\ \\ \\goodnews.doc | \\\\mydir de compartilhamento de servidor \\ \\ \\goodnews.doc |
-| \\\\\\numbers.xls de compartilhamento do servidor \\         | \\\\\\numbers.xls de compartilhamento do servidor \\         |
+| c: \\ mydir \\ bar \\hello.txt              | c: \\ mydir \\ bar \\hello.txt              |
+| \\\\server \\ share \\ mydir \\goodnews.doc | \\\\server \\ share \\ mydir \\goodnews.doc |
+| \\\\server \\ share \\numbers.xls         | \\\\server \\ share \\numbers.xls         |
 | c: \\ mydir \\ MyFolder                    | c: \\ mydir \\ MyFolder                    |
-| /Mailbox conta/caixa de entrada/' re: Olá! '    | /Mailbox conta/caixa de entrada/' re: Olá! '    |
+| /Mailbox Account/Inbox/'Re: Hello!'    | /Mailbox Account/Inbox/'Re: Hello!'    |
 
 
 
@@ -59,7 +59,7 @@ Valores de exemplo:
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -68,19 +68,19 @@ Valores de exemplo:
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -95,7 +95,7 @@ Valores de exemplo:
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 97d4e3814662cc8acf1a987cb92a1b9579cc43a4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a32f79b8e85243ae3d69b3b024171301fe60810c4f4e530985691f1ddd39200d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105752982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118178035"
 ---
 # <a name="admin-property-pages-attribute"></a>Atributo admin-Property-Pages
 
@@ -36,7 +36,7 @@ O número do pedido e o GUID das páginas de propriedades de um objeto a ser exi
 | Frequência de atualização  | Sempre que uma página de propriedades é adicionada ou removida.  |
 | Attribute-Id      | 1.2.840.113556.1.4.562                         |
 | System-ID-GUID    | 52458038-ca6a-11D0-afff-0000f80367c1           |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)    |
+| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)    |
 
 
 
@@ -121,10 +121,10 @@ O número do pedido e o GUID das páginas de propriedades de um objeto a ser exi
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | Falso                                                      |
+| Tem valor único       | Falso                                                      |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -142,10 +142,10 @@ O número do pedido e o GUID das páginas de propriedades de um objeto a ser exi
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | Falso                                                      |
+| Tem valor único       | Falso                                                      |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -163,10 +163,10 @@ O número do pedido e o GUID das páginas de propriedades de um objeto a ser exi
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | Falso                                                      |
+| Tem valor único       | Falso                                                      |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |

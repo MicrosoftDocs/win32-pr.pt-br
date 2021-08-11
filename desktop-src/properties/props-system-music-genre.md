@@ -1,17 +1,17 @@
 ---
-description: System. Music. Gênero
+description: System.Music.Genre
 ms.assetid: c1adbc13-5069-4760-901c-d5ca47913695
-title: System. Music. Gênero
+title: System.Music.Genre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb29e6242dcdc97fe3b814a6fa571551f77e4765
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1d056cda4cbd3a7de6d639eb96076ca90dfd8afa60ad15e0f7d1de34ee9ff6bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118230540"
 ---
-# <a name="systemmusicgenre"></a>System. Music. Gênero
+# <a name="systemmusicgenre"></a>System.Music.Genre
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,15 +30,15 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
-Observe que alguns formatos de arquivo, como um arquivo. mp3, só dão suporte a um único gênero. Outros, como arquivos. WMA, dão suporte a vários gêneros. Se você especificar vários gêneros para um formato de arquivo de gênero único, somente o primeiro gênero na lista será reconhecido.
+Observe que alguns formatos de arquivo, como um arquivo .mp3, só suportam um único gênero. Outros, como arquivos .wma, são suportados por vários gêneros. Se você especificar vários gêneros para um formato de arquivo de gênero único, somente o primeiro gênero na lista será reconhecido.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -47,19 +47,19 @@ Observe que alguns formatos de arquivo, como um arquivo. mp3, só dão suporte a
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -74,7 +74,7 @@ Observe que alguns formatos de arquivo, como um arquivo. mp3, só dão suporte a
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

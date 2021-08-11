@@ -8,16 +8,16 @@ keywords:
 - ADSI ADSI, usando a opção de ligação rápida para operações de gravação/modificação em lote
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 322cf3c8b5f40dc43304f95d08ff53a7c5c14217
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 46f27cbbe9ea76089ca1fd460f76c56d10e60664ae39ad28945440c6006acb9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104499153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118179895"
 ---
 # <a name="fast-binding-option-for-batch-writemodify-operations"></a>Opção de ligação rápida para operações de gravação/modificação em lote
 
-Quando um objeto de serviço de diretório é associado a, a ADSI cria um objeto COM que representa o objeto de diretório especificado. Ao associar, a ADSI normalmente recuperará o atributo **objectClass** para que a ADSI possa expor as interfaces com apropriadas para essa classe de objeto. Por exemplo, um objeto de usuário exporia a interface [**IADsUser**](/windows/desktop/api/Iads/nn-iads-iadsuser) além das interfaces de base ADSI com suporte para todos os objetos. Para uma única operação, isso não deve afetar o desempenho. No entanto, se forem executadas operações em lote que exigem centenas ou milhares de associações em uma conexão lenta e essas operações estiverem gravando dados no serviço de diretório, poderá ser desejável trocar o suporte completo a objetos para uma ligação mais rápida. Isso é conhecido como uma ligação rápida e é realizado especificando o sinalizador do **ADS \_ Fast \_ BIND** quando [**ADsOpenObject**](/windows/desktop/api/Adshlp/nf-adshlp-adsopenobject) ou [**IADsOpenDSObject:: OpenDSObject**](/windows/desktop/api/Iads/nf-iads-iadsopendsobject-opendsobject) é chamado.
+Quando um objeto de serviço de diretório é associado a, a ADSI cria um objeto COM que representa o objeto de diretório especificado. Ao associar, a ADSI normalmente recuperará o atributo **objectClass** para que a ADSI possa expor as interfaces com apropriadas para essa classe de objeto. Por exemplo, um objeto de usuário exporia a interface [**IADsUser**](/windows/desktop/api/Iads/nn-iads-iadsuser) além das interfaces de base ADSI com suporte para todos os objetos. Para uma única operação, isso não deve afetar o desempenho. No entanto, se forem executadas operações em lote que exigem centenas ou milhares de associações em uma conexão lenta e essas operações estiverem gravando dados no serviço de diretório, poderá ser desejável trocar o suporte completo a objetos para uma ligação mais rápida. isso é conhecido como uma ligação rápida e é realizado especificando o sinalizador de **\_ \_ associação de FAST de anúncios** quando [**ADsOpenObject**](/windows/desktop/api/Adshlp/nf-adshlp-adsopenobject) ou [**IADsOpenDSObject:: OpenDSObject**](/windows/desktop/api/Iads/nf-iads-iadsopendsobject-opendsobject) é chamado.
 
 A ligação rápida tem as seguintes restrições:
 
@@ -37,6 +37,6 @@ A ligação rápida tem as seguintes restrições:
 -   A existência do objeto que está sendo associado não é verificada durante a operação de associação, portanto, as chamadas de método subsequentes falharão se o objeto não existir. Por isso, a ligação rápida só deve ser usada para objetos que são conhecidos como existentes, por exemplo, diretamente após a execução de uma consulta que retornava os nomes distintos dos objetos aos quais está sendo associado.
 -   Extensões ADSI são expostas para objetos da classe **Top**. Portanto, somente as extensões para as interfaces ADSI base listadas acima são expostas.
 
- 
+ 
 
- 
+ 

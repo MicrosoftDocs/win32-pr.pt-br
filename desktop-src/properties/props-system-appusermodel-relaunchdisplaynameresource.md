@@ -4,19 +4,19 @@ ms.assetid: a149838b-83b6-44ce-b705-e2804efb3d31
 title: System. AppUserModel. RelaunchDisplayNameResource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d79c22d0ccecb8bac86fe5ca3636ed10ed2ca50b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 22b0af752fb345dd5dd5f1b091a22255e856031affaca266ff6307045f148cd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118233018"
 ---
 # <a name="systemappusermodelrelaunchdisplaynameresource"></a>System. AppUserModel. RelaunchDisplayNameResource
 
 Especifica o nome de exibição usado para o atalho criado na barra de tarefas quando o usuário opta por fixar um aplicativo na barra de tarefas ou iniciar uma nova instância na lista de atalhos de seu botão. O valor dessa propriedade deve ser um dos seguintes:
 
--   Uma cadeia de caracteres de recurso indireto, como "@% systemdir% \\ system32 \\shell32.dll,-19263". Observe que o caractere ' @ ' é necessário para distinguir uma cadeia de caracteres indireta de uma cadeia de caracteres de texto sem formatação (descrita no próximo parágrafo com marcadores). Essa cadeia de caracteres indireta consiste em um arquivo binário e uma ID de recurso da cadeia de caracteres contida nesse binário. É altamente recomendável que você use esse formulário de cadeia de caracteres indireta, o que garante que o nome de exibição seja alterado adequadamente quando o idioma do sistema for alterado por meio da MUI (Multilingual User interface). O caractere '-' antes da ID do recurso é necessário.
--   Uma cadeia de caracteres de texto sem formatação que não aponta para um recurso. Isso só deve ser usado quando o nome de exibição é dinamicamente calculado ou obtido de uma fonte de dados que não oferece suporte a MUI. Por exemplo, a cadeia de caracteres pode ser o nome de um dispositivo, como "Microsoft Zune", em casos em que o aplicativo aparece quando o dispositivo é anexado ao computador.
+-   Uma cadeia de caracteres de recurso indireto, como "@% systemdir% \\ system32 \\shell32.dll,-19263". Observe que o caractere ' @ ' é necessário para distinguir uma cadeia de caracteres indireta de uma cadeia de caracteres de texto sem formatação (descrita no próximo parágrafo com marcadores). Essa cadeia de caracteres indireta consiste em um arquivo binário e uma ID de recurso da cadeia de caracteres contida nesse binário. é altamente recomendável que você use esse formulário de cadeia de caracteres indireta, o que garante que o nome de exibição seja alterado adequadamente quando o idioma do sistema for alterado por meio do Interface de Usuário Multilíngue (MUI). O caractere '-' antes da ID do recurso é necessário.
+-   Uma cadeia de caracteres de texto sem formatação que não aponta para um recurso. Isso só deve ser usado quando o nome de exibição é dinamicamente calculado ou obtido de uma fonte de dados que não oferece suporte a MUI. por exemplo, a cadeia de caracteres pode ser o nome de um dispositivo, como "Microsoft Zune", em casos em que o aplicativo aparece quando o dispositivo é anexado ao computador.
 
 > [!Note]  
 > [System. AppUserModel. RelaunchCommand](./props-system-appusermodel-relaunchcommand.md) e [System. AppUserModel. RelaunchDisplayNameResource]() devem sempre ser definidos juntos. Se uma dessas propriedades não for definida, nenhuma será usada.

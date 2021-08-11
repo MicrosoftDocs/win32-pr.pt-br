@@ -1,10 +1,10 @@
 ---
 title: WM_DSA_SHEET_CLOSE_NOTIFY mensagem
-description: Postado no snap-in do Active Directory MMC quando uma folha de propriedades secundária é destruída.
+description: Postado no snap-in do MMC do Active Directory quando uma folha de propriedades secundária é destruída.
 ms.assetid: 74271550-e1f7-4576-a04f-52d5b7c619cb
 ms.tgt_platform: multiple
 keywords:
-- Mensagem de WM_DSA_SHEET_CLOSE_NOTIFY Active Directory
+- WM_DSA_SHEET_CLOSE_NOTIFY mensagem do Active Directory
 topic_type:
 - apiref
 api_name:
@@ -13,19 +13,19 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 36f03cdb6224ae5f55bc995897d766ce61e67693
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f840790de51ce712b33fc9a9611934e8be9a76a35a0fc01a4ce0abe4ba040d2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105769119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118181659"
 ---
-# <a name="wm_dsa_sheet_close_notify-message"></a>\_Mensagem de \_ notificação de fechamento da folha do DSA do \_ WM \_
+# <a name="wm_dsa_sheet_close_notify-message"></a>Mensagem WM \_ DSA \_ SHEET \_ CLOSE \_ NOTIFY
 
-A mensagem de **\_ notificação de \_ \_ fechamento \_ da folha DSA do WM** é postada no snap-in do Active Directory MMC quando uma folha de propriedades secundária é destruída.
+A **mensagem WM \_ DSA \_ SHEET CLOSE \_ \_ NOTIFY** é postada no snap-in do MMC do Active Directory quando uma folha de propriedades secundária é destruída.
 
 > [!Note]  
-> Esse valor de mensagem não está definido em um arquivo de cabeçalho publicado. Para usar esse valor de mensagem, você mesmo deve defini-lo no formato exato mostrado.
+> Esse valor da mensagem não está definido em um arquivo de header publicado. Para usar esse valor de mensagem, você deve defini-lo por conta própria no formato exato mostrado.
 
  
 
@@ -50,17 +50,17 @@ LRESULT SendMessage( (HWND)   hwnd,
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
-O identificador de janela da janela de snap-in que processará essa mensagem. Esse identificador é obtido do membro **hwndHidden** da estrutura [**PROPSHEETCFG**](propsheetcfg.md) .
+O alça de janela da janela de snap-in que processará essa mensagem. Esse handle é obtido do membro **hwndHidden** da [**estrutura PROPSHEETCFG.**](propsheetcfg.md)
 
 </dd> <dt>
 
 *wParam* 
 </dt> <dd>
 
-Contém um valor de 32 bits definido pelo aplicativo. Isso é obtido do membro **wParamSheetClose** da estrutura [**PROPSHEETCFG**](propsheetcfg.md) .
+Contém um valor de 32 bits definido pelo aplicativo. Isso é obtido do **membro wParamSheetClose** da [**estrutura PROPSHEETCFG.**](propsheetcfg.md)
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Não usado.
 
 ## <a name="return-value"></a>Retornar valor
 
-O valor retornado para esta mensagem não é usado.
+O valor de retorno para essa mensagem não é usado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,7 +86,7 @@ O valor retornado para esta mensagem não é usado.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

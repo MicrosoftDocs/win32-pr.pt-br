@@ -11,7 +11,7 @@
               href: getting-started-with-scripting-for-adsi.md
             - name: Introdução com ASP para ADSI
               href: getting-started-with-asp-for-adsi.md
-            - name: 'Configurando Visual Basic 6,0 para o desenvolvimento de ADSI'
+            - name: 'configurando Visual Basic 6,0 para o desenvolvimento de ADSI'
               href: setting-up-visual-basic-for-adsi-development.md
             - name: 'Configurando Visual C++ 6,0 para o desenvolvimento de ADSI'
               href: setting-up-c---for-adsi-development.md
@@ -47,7 +47,7 @@
                   href: joining-heterogeneous-data.md
                 - name: Criando e executando uma exibição
                   href: creating-and-executing-a-view.md
-                - name: Criando uma junção heterogênea entre SQL Server e Active Directory
+                - name: criando uma junção heterogênea entre SQL Server e Active Directory
                   href: creating-a-heterogeneous-join-between-sql-server-and-active-directory.md
             - name: Tópicos avançados
               href: advanced-topics.md
@@ -58,7 +58,7 @@
                   href: delegating-organizational-units.md
                 - name: Estendendo ADSI
                   href: extending-adsi.md
-                - name: Mapeando código de Visual Basic ADSI para código C++
+                - name: mapeando código de Visual Basic ADSI para código C++
                   href: mapping-adsi-visual-basic-code-to-c-code.md
         - name: Script de interfaces de serviço Active Directory
           href: adsi-scripting-tutorial.md
@@ -75,7 +75,7 @@
       items:
         - name: Vários serviços de diretório
           href: multiple-directory-services.md
-        - name: Quem usará Active Directory interfaces de serviço?
+        - name: Who Usará Active Directory interfaces de serviço?
           href: who-will-use-active-directory-service-interfaces.md
         - name: Serviços de diretório hoje
           href: directory-services-today.md
@@ -131,9 +131,9 @@
                       href: binding-with-adsopenobject-and-iadsopendsobject-opendsobject.md
                     - name: Associação com criptografia
                       href: binding-with-encryption.md
-                - name: Usando um objeto de dados ActiveX para ligar a provedores ADSI
+                - name: usando um objeto de dados ActiveX para associar a provedores ADSI
                   href: using-an-activex-data-object-to-bind-to-adsi-providers.md
-            - name: Cache de conexão
+            - name: Caching de conexão
               href: connection-caching.md
             - name: Associação a objetos filho
               href: binding-to-child-objects.md
@@ -225,55 +225,55 @@
                       href: objectcategory-vs--objectclass.md
                     - name: Indicações
                       href: referrals.md
-                    - name: Montando cadeias de consulta
+                    - name: Assembling Query Strings
                       href: assembling-query-strings.md
-                    - name: Recuperando conjuntos de resultados grandes
+                    - name: Recuperando grandes conjuntos de resultados
                       href: retrieving-large-results-sets.md
-                    - name: Pesquisar somente atributos
+                    - name: Somente atributos de pesquisa
                       href: search-attributes-only.md
-                    - name: Limite de tamanho de pesquisa
+                    - name: Limite de Tamanho da Pesquisa
                       href: search-size-limit.md
                     - name: Limite de tempo de pesquisa
                       href: search-time-limit.md
-                    - name: Tempo limite de pesquisa
+                    - name: Tempo de tempo de pesquisa
                       href: search-time-out.md
                     - name: Pesquisas assíncronas
                       href: asynchronous-searches.md
                     - name: Recuperação de intervalo de atributos
                       href: attribute-range-retrieval.md
                       items:
-                        - name: 'Usando IADs:: GetInfoEx para recuperação de intervalo'
+                        - name: 'Usando IADs::GetInfoEx para recuperação de intervalo'
                           href: using-iads--getinfoex-for-range-retrieval.md
-                        - name: Usando ADO para recuperação de intervalo
+                        - name: Usando o ADO para recuperação de intervalo
                           href: using-ado-for-range-retrieval.md
                           items:
-                            - name: Dialeto de intervalo de LDAP do ADO
+                            - name: Dialeto de LDAP de ADO
                               href: ado-ldap-ranging-dialect.md
-                            - name: Dialeto de intervalo de SQL do ADO
+                            - name: Dialeto SQL ADO
                               href: ado-sql-ranging-dialect.md
-                            - name: Exemplo de código para usar o intervalo para recuperar membros de um grupo
+                            - name: Código de exemplo para usar variando para recuperar membros de um grupo
                               href: example-code-for-using-ranging-to-retrieve-members-of-a-group.md
                         - name: Usando IDirectorySearch e IDirectoryObject para recuperação de intervalo
                           href: using-idirectorysearch-and-idirectoryobject-for-range-retrieval.md
                           items:
-                            - name: Código de exemplo para variação com IDirectoryObject
+                            - name: Código de exemplo para variando com IDirectoryObject
                               href: example-code-for-ranging-with-idirectoryobject.md
-                            - name: Código de exemplo para variação com IDirectorySearch
+                            - name: Código de exemplo para variando com IDirectorySearch
                               href: example-code-for-ranging-with-idirectorysearch.md
-                - name: Processando um conjunto de resultados
+                - name: Processamento de um conjunto de resultados
                   href: processing-a-result-set.md
                   items:
-                    - name: Armazenando em cache o resultado (lado do cliente)
+                    - name: Caching o resultado (lado do cliente)
                       href: caching-the-result-client-side.md
                     - name: Classificação
                       href: sorting.md
-            - name: Sintaxe do filtro de pesquisa
+            - name: Sintaxe de filtro de pesquisa
               href: search-filter-syntax.md
               items:
                 - name: Dialect
                   href: dialect.md
                   items:
-                    - name: Dialeto SQL
+                    - name: SQL Dialeto
                       href: sql-dialect.md
                     - name: Dialeto LDAP
                       href: ldap-dialect.md
@@ -290,15 +290,15 @@
                           href: using-the-setsearchpreference-method.md
                         - name: Pesquisas síncronas e assíncronas com IDirectorySearch
                           href: synchronous-and-asynchronous-searches-with-idirectorysearch.md
-                        - name: Paginação com IDirectorySearch
+                        - name: Paging com IDirectorySearch
                           href: paging-with-idirectorysearch.md
-                        - name: Cache de resultados com IDirectorySearch
+                        - name: Resultado Caching com IDirectorySearch
                           href: result-caching-with-idirectorysearch.md
                         - name: Executando uma consulta de escopo de atributo
                           href: performing-an-attribute-scoped-query.md
-                        - name: Classificando os resultados da pesquisa com IDirectorySearch
+                        - name: Classificação dos resultados da pesquisa com IDirectorySearch
                           href: sorting-the-search-results-with-idirectorysearch.md
-                        - name: Caça de referência com IDirectorySearch
+                        - name: Indicação de busca com IDirectorySearch
                           href: referral-chasing-with-idirectorysearch.md
                         - name: Limite de tamanho com IDirectorySearch
                           href: size-limit-with-idirectorysearch.md
@@ -306,19 +306,19 @@
                           href: server-time-limit-with-idirectorysearch.md
                         - name: Limite de tempo do cliente com IDirectorySearch
                           href: client-time-limit-with-idirectorysearch.md
-                        - name: Retornando somente nomes de atributo com IDirectorySearch
+                        - name: Retornando apenas nomes de atributo com IDirectorySearch
                           href: returning-only-attribute-names-with-idirectorysearch.md
                           items:
-                            - name: Exemplo de código para pesquisar atributos
+                            - name: Código de exemplo para pesquisar atributos
                               href: example-code-for-searching-for-attributes.md
-                    - name: Como Pesquisar usando VLV
+                    - name: Como pesquisar usando o VLV
                       href: how-to-search-using-vlv.md
                       items:
                         - name: Código de exemplo para usar uma pesquisa VLV
                           href: example-code-for-using-a-vlv-search.md
-                    - name: Exemplo de código para usar IDirectorySearch
+                    - name: Código de exemplo para usar IDirectorySearch
                       href: example-code-for-using-idirectorysearch.md
-                - name: Pesquisando com ActiveX Data Objects (ADO)
+                - name: Pesquisando com ActiveX objetos de dados (ADO)
                   href: searching-with-activex-data-objects-ado.md
                   items:
                     - name: Modificando um objeto ADSI do ADO
@@ -326,13 +326,13 @@
                 - name: Pesquisando com OLE DB
                   href: searching-with-ole-db.md
                   items:
-                    - name: Código de exemplo para usar OLE DB para pesquisar Active Directory
+                    - name: Código de exemplo para usar OLE DB pesquisar no Active Directory
                       href: example-code-for-using-ole-db-to-search-active-directory.md
             - name: Pesquisando dados binários
               href: searching-binary-data.md
             - name: Consulta Distribuída
               href: distributed-query.md
-        - name: Modelo de segurança ADSI
+        - name: Modelo de segurança adsi
           href: adsi-security-model.md
           items:
             - name: Autenticação
@@ -340,10 +340,10 @@
               items:
                 - name: Problemas de autenticação para ADSI com ASP
                   href: authentication-issues-for-adsi-with-asp.md
-            - name: Descritores de segurança em arquivos e chaves do registro
+            - name: Descritores de segurança em arquivos e chaves do Registro
               href: security-descriptors-on-files-and-registry-keys.md
               items:
-                - name: Exemplo de código para adicionar uma ACE a um arquivo
+                - name: Código de exemplo para adicionar uma ACE a um arquivo
                   href: example-code-for-adding-an-ace-to-a-file.md
         - name: Extensões ADSI
           href: adsi-extensions.md
@@ -356,57 +356,57 @@
               href: adsi-and-extensions.md
             - name: O que um cliente vê?
               href: what-does-a-client-see.md
-            - name: Obtendo interfaces ADSI de sua extensão
+            - name: Obter interfaces ADSI de sua extensão
               href: getting-adsi-interfaces-from-your-extension.md
             - name: Bibliotecas de tipos de extensão ADSI
               href: adsi-extension-type-libraries.md
-            - name: Suporte de associação antecipada
+            - name: Suporte à associação antecipada
               href: early-binding-support.md
-            - name: Suporte à ligação tardia
+            - name: Suporte à associação tardia
               href: late-binding-support.md
               items:
-                - name: 'Associação tardia: o que está acontecendo nos bastidores?'
+                - name: 'Associação tardia: o que está acontecendo nos hood?'
                   href: late-binding--whatampaposs-happening-under-the-hood.md
-                - name: Associação tardia versus acesso de vtable no modelo de extensão ADSI
+                - name: Associação tardia versus acesso Vtable no modelo de extensão ADSI
                   href: late-binding-vs--vtable-access-in-the-adsi-extension-model.md
-            - name: Interface IADsExtension
+            - name: IADsExtension Interface
               href: iadsextension-interface.md
               items:
                 - name: Uso de IADsExtension
                   href: iadsextension-usage.md
             - name: Suporte a interfaces duplas ou de expedição
               href: supporting-dual-or-dispatch-interfaces.md
-            - name: Revisitando regras de agregação com com extensões ADSI
+            - name: Revisitando regras de agregação COM com extensões ADSI
               href: revisiting-com-aggregation-rules-with-adsi-extensions.md
-            - name: Resolução de vários componentes de agregação com suporte para a mesma interface
+            - name: Resolução de vários componentes de agregação que suportam a mesma interface
               href: resolution-of-multiple-aggregation-components-supporting-the-same-interface.md
-            - name: Resolução de conflitos de nome de função/Propriedade em automação em extensões
+            - name: Resolução de conflitos de nome de função/propriedade na automação em extensões
               href: resolution-of-functionproperty-name-conflicts-in-automation-in-extensions.md
               items:
                 - name: Exemplo para resolver conflitos de nome de função
                   href: example-for-resolving-function-name-conflicts.md
-        - name: Usando o ADSI com o Exchange
+        - name: Usando ADSI com Exchange
           href: using-adsi-with-exchange.md
-        - name: Interfaces do utilitário ADSI
+        - name: Interfaces do Utilitário ADSI
           href: adsi-utility-interfaces.md
           items:
-            - name: Interface IADsDeleteOps
+            - name: IADsDeleteOps Interface
               href: iadsdeleteops-interface.md
-            - name: Interface IADsObjectOptions
+            - name: IADsObjectOptions Interface
               href: iadsobjectoptions-interface.md
-            - name: Interface IADsPathname
+            - name: IADsPathname Interface
               href: iadspathname-interface.md
-            - name: Interface IADsNameTranslate
+            - name: IADsNameTranslate Interface
               href: iadsnametranslate-interface.md
         - name: Programando ADSI com Java/COM
           href: programming-adsi-with-javacom.md
-    - name: Implementando provedores de interfaces de serviço Active Directory
+    - name: Implementando provedores de interfaces de serviço do Active Directory
       href: implementing-adsi-providers.md
       items:
         - name: Requisitos mínimos do provedor
           href: provider-minimum-requirements.md
           items:
-            - name: Implementação de núcleo
+            - name: Implementação principal
               href: core-implementation.md
             - name: Implementação opcional
               href: optional-implementation.md
@@ -426,7 +426,7 @@
                   href: schema-extensions.md
             - name: Enumerando objetos de contêiner
               href: enumerating-container-objects.md
-            - name: Informações de registro do provedor
+            - name: Informações do Registro do Provedor
               href: provider-registry-information.md
             - name: Suporte para consultas
               href: support-for-queries.md
@@ -435,79 +435,79 @@
         - name: Componente do provedor de exemplo ADSI
           href: adsi-example-provider-component.md
           items:
-            - name: Instalando o componente de provedor de exemplo
+            - name: Instalando o componente provedor de exemplo
               href: installing-the-example-provider-component.md
             - name: Definição de diretório
               href: directory-definition.md
             - name: Gerenciamento de esquema
               href: schema-management.md
-            - name: Associação a um objeto Active Directory
+            - name: Associação a um objeto do Active Directory
               href: binding-to-an-active-directory-object.md
-            - name: Objetos do enumerador
+            - name: Objetos enumeradores
               href: enumerator-objects.md
             - name: Visão geral do código
               href: code-overview.md
             - name: Detalhes do código
               href: code-details.md
               items:
-                - name: CCLSOBJ. CPP
+                - name: CCLSOBJ. Cpp
                   href: cclsobj-cpp.md
-                - name: CDISPMGR. CPP
+                - name: CDISPMGR. Cpp
                   href: cdispmgr-cpp.md
-                - name: CENUMNS. CPP
+                - name: CENUMNS. Cpp
                   href: cenumns-cpp.md
-                - name: CENUMSCH. CPP
+                - name: CENUMSCH. Cpp
                   href: cenumsch-cpp.md
-                - name: CENUMOBJ. CPP
+                - name: CENUMOBJ. Cpp
                   href: cenumobj-cpp.md
-                - name: CENUMVAR. CPP
+                - name: CENUMVAR. Cpp
                   href: cenumvar-cpp.md
-                - name: CGENOBJ. CPP
+                - name: CGENOBJ. Cpp
                   href: cgenobj-cpp.md
-                - name: Core. CPP
+                - name: Núcleo. Cpp
                   href: core-cpp.md
-                - name: CNAMCF. CPP
+                - name: CNAMCF. Cpp
                   href: cnamcf-cpp.md
-                - name: CNAMESP. CPP
+                - name: CNAMESP. Cpp
                   href: cnamesp-cpp.md
-                - name: Common. CPP
+                - name: Comum. Cpp
                   href: common-cpp.md
-                - name: CPRPOBJ. CPP
+                - name: CPRPOBJ. Cpp
                   href: cprpobj-cpp.md
-                - name: CPROPS. CPP
+                - name: CPROPS. Cpp
                   href: cprops-cpp.md
-                - name: CPROV. CPP
+                - name: CPROV. Cpp
                   href: cprov-cpp.md
-                - name: CPROVCF. CPP
+                - name: CPROVCF. Cpp
                   href: cprovcf-cpp.md
-                - name: CSCHOBJ. CPP
+                - name: CSCHOBJ. Cpp
                   href: cschobj-cpp.md
-                - name: GETOBJ. CPP
+                - name: GETOBJ. Cpp
                   href: getobj-cpp.md
-                - name: Globals. CPP
+                - name: Globals. Cpp
                   href: globals-cpp.md
-                - name: Volume. CPP
+                - name: Guid. Cpp
                   href: guid-cpp.md
-                - name: LIBMAIN. CPP
+                - name: Libmain. Cpp
                   href: libmain-cpp.md
-                - name: Memória. CPP
+                - name: Memória. Cpp
                   href: memory-cpp.md
-                - name: Objeto. CPP
+                - name: Objeto. Cpp
                   href: object-cpp.md
-                - name: Propriedade. CPP
+                - name: Propriedade. Cpp
                   href: property-cpp.md
-                - name: Passar. CPP
+                - name: Analisar. Cpp
                   href: parse-cpp.md
-                - name: Pacotes. CPP
+                - name: Pack. Cpp
                   href: pack-cpp.md
-                - name: REGDSAPI. CPP
+                - name: REGDSAPI. Cpp
                   href: regdsapi-cpp.md
-                - name: STDFACT. CPP
+                - name: STDFACT. Cpp
                   href: stdfact-cpp.md
-    - name: Referência de interfaces de serviço Active Directory
+    - name: Referência de interfaces de serviço do Active Directory
       href: adsi-reference.md
       items:
-        - name: Tipos de dados e constantes do ADSI
+        - name: Constantes e tipos de dados ADSI
           href: adsi-data-types-and-constants.md
           items:
             - name: Tipos de modificação de atributo ADSI
@@ -516,7 +516,7 @@
               href: adsi-constants.md
             - name: Constantes de status do trabalho de impressão ADSI
               href: adsi-print-job-status-constants.md
-            - name: Tipos de dados simples de ADSI
+            - name: Tipos de dados simples ADSI
               href: adsi-simple-data-types.md
         - name: Estruturas ADSI
           href: adsi-structures.md
@@ -531,7 +531,7 @@
               href: /windows/win32/api/Iads/ns-iads-ads_caseignore_list
             - name: ADS_CLASS_DEF
               href: /windows/win32/api/Iads/ns-iads-ads_class_def
-            - name: ADS_DN_WITH_BINARY
+            - name: Ads_dn_with_binary
               href: /windows/win32/api/Iads/ns-iads-ads_dn_with_binary
             - name: ADS_DN_WITH_STRING
               href: /windows/win32/api/Iads/ns-iads-ads_dn_with_string

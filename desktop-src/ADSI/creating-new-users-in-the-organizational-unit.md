@@ -7,12 +7,12 @@ keywords:
 - Criando novos usuários na unidade organizacional ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c45f9dc91f1c36493a4ae8e1c9bb1a69268c9987
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b76d62c8d95e7d5e421fc562e38716477ff2dfb8f4097d4652710e2c50715487
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104453487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118180111"
 ---
 # <a name="creating-new-users-in-the-organizational-unit"></a>Criando novos usuários na unidade organizacional
 
@@ -56,7 +56,7 @@ usr.SetInfo
 
 
 
-Você pode estar imaginando o que acontece se Terry alterar seu nome, mudar para uma organização diferente ou deixar a empresa. Quem mantém este link de relatório direto do gerente? Para obter mais informações e a solução para esse problema, consulte [reorganização](reorganization.md). Como o esquema de Active Directory é extensível, você pode modelar seus objetos para incluir relações de estilo de relatório diretas de gerentes semelhantes.
+Você pode estar imaginando o que acontece se Terry alterar seu nome, mudar para uma organização diferente ou deixar a empresa. Who mantém este link de relatório direto do manager? Para obter mais informações e a solução para esse problema, consulte [reorganização](reorganization.md). Como o esquema de Active Directory é extensível, você pode modelar seus objetos para incluir relações de estilo de relatório diretas de gerentes semelhantes.
 
 Antes de prosseguir para a próxima tarefa, veja um exemplo de código que mostra como Joe exibirá os subordinados diretos de Terry.
 
@@ -85,9 +85,9 @@ O snap-in Active Directory usuários e computadores permite exibir relatórios d
 [Adicionando usuários a um grupo](adding-users-to-a-group.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

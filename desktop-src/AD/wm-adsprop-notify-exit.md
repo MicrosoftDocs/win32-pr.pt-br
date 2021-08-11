@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 32d74ef4b7dfa525cfb77a6d89499837cbfac8f9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6e144bb0b24112cabe1a806d4c746aac07708443665c0f457df8756be36d80b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118181960"
 ---
 # <a name="wm_adsprop_notify_exit-message"></a>\_Mensagem de \_ saída de notificação do WM ADSPROP \_
 
@@ -82,7 +82,7 @@ O objeto de notificação será excluído em resposta a esta mensagem. Quando es
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a9fa7794343929aa0f7d7d86f4fc1f1e9a8a5b2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e1f95ea52fd0b5871e28e790fdc8dcce1c247493bc0e6c9375c18a38ab0763f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105756279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118178420"
 ---
 # <a name="acs-non-reserved-min-policed-size-attribute"></a>ACS-atributo não reservado-min-Police-size
 
@@ -36,7 +36,7 @@ O atributo **ACS-non-reservado-min-Police-size** é somente para uso interno. Co
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1321              |
 | System-ID-GUID    | b6873917-3b90-11d2-90cc-00c04fd91ab1 |
-| Syntax            | [**Intervalo**](s-interval.md)       |
+| Sintaxe            | [**Intervalo**](s-interval.md)       |
 
 
 

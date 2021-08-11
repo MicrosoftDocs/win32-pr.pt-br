@@ -4,16 +4,16 @@ description: Este tópico descreve como resolver conflitos de nome de função a
 ms.assetid: 8121f037-3845-44ba-a2cd-8d7f15e0beb2
 ms.tgt_platform: multiple
 keywords:
-- ADSI ADSI, código de exemplo Visual Basic, resolvendo conflitos de nome de função
+- adsi adsi, código de exemplo Visual Basic, resolvendo conflitos de nome de função
 - resolvendo conflitos de nome de função ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 049f9ce6447bf6d6ead783db3e34f74374333f10
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 2e6ce09251ba61b31768d973e258c568694067aff0420f0512a13913bb6fce90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104294503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118179976"
 ---
 # <a name="example-for-resolving-function-name-conflicts"></a>Exemplo para resolver conflitos de nome de função
 
@@ -70,7 +70,7 @@ myInf1.Func2
 IADs1 e IADs2 têm uma função chamada Func0, mas IADs1:: Func0 é invocado diretamente usando o acesso vtable, porque os dois itens a seguir se aplicam ao cliente:
 
 -   O cliente tem um ponteiro para o objeto IADs1 de interface dupla, que tem uma função chamada Func0.
--   O Visual Basic dá suporte ao acesso Direct vtable, supondo que esse tipo de dados esteja disponível por meio da biblioteca de tipos.
+-   o Visual Basic dá suporte ao acesso direct vtable, supondo que esse tipo de dados esteja disponível por meio da biblioteca de tipos.
 
 No próximo exemplo de código, o cliente tem um ponteiro de interface dupla para IADs2 em vez de IADs1. Portanto, IADs2:: Func0 é invocado usando o acesso Direct vtable.
 
@@ -108,6 +108,6 @@ Por exemplo, o DISPID de IMyInterface1:: Y é 2 no arquivo IMyInterface1. odl ou
 
 A ADSI resolve o primeiro problema não dá suporte a várias interfaces com nomes de função ou Propriedade conflitantes. Ele resolve o segundo problema adicionando um exclusivo, que está dentro do mesmo objeto de extensão, o número de interface para os bits não utilizados do DISPID.
 
- 
+ 
 
- 
+ 

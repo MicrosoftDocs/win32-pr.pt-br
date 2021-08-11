@@ -4,12 +4,12 @@ ms.assetid: 66a3ac9a-674e-4f16-a2d8-8f5b753f876c
 title: PagePoster
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72b8bb7b57074fe058c7cc5be8dd609577ceb6c1
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 377ec97b688545a0a7a94c56322f1a030b3550f3c9f6d4692b50df4297bd8022
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113548964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118234459"
 ---
 # <a name="pageposter"></a>PagePoster
 
@@ -25,10 +25,10 @@ Descreve a saída de uma única página para várias planilhas de mídia física
 
 
 
-| Nome | Valor |
+| Name | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
-| Prefixo de definição de scoping <br/> | Página<br/>    |
+| Prefixo de definição de scoping <br/> | ?<br/>    |
 | Observações <br/>          | Nenhum<br/>    |
 
 
