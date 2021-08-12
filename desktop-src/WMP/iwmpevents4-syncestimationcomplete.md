@@ -3,9 +3,9 @@ title: Método IWMPEvents4 SyncEstimationComplete
 description: O evento SyncEstimationComplete ocorre quando uma estimativa de tamanho, iniciada anteriormente pelo IWMPSyncDevice3 estimateSyncSize, é concluída.
 ms.assetid: 2fb45a13-d82b-48b6-b9bb-46409f33a33f
 keywords:
-- Método SyncEstimationComplete Windows Media Player
-- Método SyncEstimationComplete Windows Media Player, interface IWMPEvents4
-- Interface IWMPEvents4 Windows Media Player, método SyncEstimationComplete
+- Windows Media Player do método SyncEstimationComplete
+- método SyncEstimationComplete Windows Media Player, interface IWMPEvents4
+- Windows Media Player de interface IWMPEvents4, método SyncEstimationComplete
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 209ed2f2bd0f075dbaa8d442a276c994d50ce2e5
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: b3f444cdc66874c907bb4c6412fa10384fde67145563d79153c28cb675c6fc3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103640117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118575601"
 ---
 # <a name="iwmpevents4syncestimationcomplete-method"></a>Método IWMPEvents4:: SyncEstimationComplete
 

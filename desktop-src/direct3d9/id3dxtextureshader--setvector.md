@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e917e4ff13cf7c03de264542dc1995364f1dc526
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 53fef8dfaa3a8b05fa7a6565e980c677ece679dac2824a80423b0d7eeccb9d66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118292415"
 ---
 # <a name="id3dxtextureshadersetvector-method"></a>Método ID3DXTextureShader:: setvector
 
@@ -59,7 +59,7 @@ Ponteiro para um vetor 4D. Consulte [**D3DXVECTOR4**](d3dxvector4.md).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Valor retornado
+## <a name="return-value"></a>Retornar valor
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -76,7 +76,7 @@ Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

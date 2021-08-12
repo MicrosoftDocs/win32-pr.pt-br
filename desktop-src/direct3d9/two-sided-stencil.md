@@ -1,17 +1,17 @@
 ---
 description: Os volumes de sombra são usados para desenhar sombras com o buffer de estêncil.
 ms.assetid: 8b71d871-ee66-47c4-8190-5c75419b28b2
-title: Estêncil de Two-Sided (Direct3D 9)
+title: Two-Sided estêncil (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b238c4b778b9894029764032e76b60c476a891a9
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 95bca0b960f96d1747b2b7ad51771276df2cfe1da1fa8ac9aa4d7c1ce8ea7c03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105798524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118290506"
 ---
-# <a name="two-sided-stencil-direct3d-9"></a>Estêncil de Two-Sided (Direct3D 9)
+# <a name="two-sided-stencil-direct3d-9"></a>Two-Sided estêncil (Direct3D 9)
 
 Os volumes de sombra são usados para desenhar sombras com o buffer de estêncil. O app calcula os volumes de sombra convertidos sobrepondo a geometria, calculando as bordas da silhueta e afastando-as da luz em um conjunto de volumes 3D. Em seguida, esses volumes são renderizados duas vezes no buffer de estêncil.
 
@@ -19,43 +19,43 @@ A primeira renderização desenha polígonos voltados para frente e aumenta os v
 
 Isso significa que a geometria de sombra é desenhada duas vezes por fonte de luz, exercendo assim pressão sobre a taxa de transferência de vértice da GPU. O recurso de estêncil de dois lados foi projetado para atenuar essa situação. Nesta abordagem, existem dois conjuntos de estado de estêncil (nomeados abaixo), um conjunto para os triângulos voltados para a frente e outro para os triângulos voltados para trás. Dessa forma, somente uma única passagem é desenhada por volume de sombra, por luz.
 
-As alterações de API são restritas a um novo conjunto de Estados de renderização. O novo estado de renderização D3DRS \_ dois \_ estênceis do lado \_ pode ser definido como **verdadeiro** ou **falso**. Ele é **false** por padrão, o que significa o comportamento atual (DirectX 8). Quando definido como **true** (funcionará somente se D3DSTENCILCAPS \_ TWOSIDED for definido), os seguintes Estados de renderização serão aplicados somente aos triângulos (no sentido horário) da frente.
+As alterações de API são restritas a um novo conjunto de estados de renderização. O novo estado de renderização D3DRS \_ Two \_ Sided \_ StencilMODE pode ser definido como **TRUE** ou **FALSE.** É **FALSE por** padrão, o que significa o comportamento atual (DirectX 8). Quando isso for definido como **TRUE** (funcionará somente se D3DSTENCILCAPS TWOSIDED estiver definido), os estados de renderização a seguir serão aplicados somente aos triângulos voltados para frente (no sentido \_ horário).
 
 
 
 | Estado de renderização        | Descrição                                                                              |
 |---------------------|------------------------------------------------------------------------------------------|
-| D3DRS \_ STENCILFAIL  | D3DSTENCILOP para fazer se o teste de estêncil falhar.                                                |
-| D3DRS \_ STENCILZFAIL | D3DSTENCILOP a fazer se o teste de estêncil passar e o teste de z falhar.                              |
-| D3DRS \_ STENCILPASS  | D3DSTENCILOP para fazer se os testes de estêncil e z forem aprovados.                                     |
-| D3DRS \_ STENCILFUNC  | D3DCMPFUNC FN. O teste de estêncil passa se ((ref & Mask) stencilfn (estêncil & Mask)) é true. |
+| D3DRS \_ STENCILFAIL  | D3DSTENCI LTDa para fazer se o teste de estêncil falhar.                                                |
+| D3DRS \_ STENCILZFAIL | D3DSTENCI LTDa para fazer se o teste de estêncil for aprovado e z-test falhar.                              |
+| D3DRS \_ STENCILPASS  | D3DSTENCI LTDa para fazer se os testes de estênceis e z são aprovados.                                     |
+| D3DRS \_ STENCILFUNC  | D3DCMPFUNC fn. O teste de estêncil passa se ((ref & mask) oncilfn (estêncil & máscara)) é true. |
 
 
 
  
 
-Um novo conjunto de Estados de renderização se aplica aos triângulos de volta (sentido anti-horário).
+Um novo conjunto de estados de renderização se aplica aos triângulos voltados para trás (no sentido anti-horário).
 
 
 
 | Estado de renderização             | Descrição                                                                                    |
 |--------------------------|------------------------------------------------------------------------------------------------|
-| D3DRS \_ CCW \_ STENCILFAIL  | D3DSTENCILOP para fazer se o teste de estêncil falhar.                                                      |
-| D3DRS \_ CCW \_ STENCILZFAIL | D3DSTENCILOP a fazer se o teste de estêncil passar e o teste de z falhar.                                    |
-| D3DRS \_ CCW \_ STENCILPASS  | D3DSTENCILOP para fazer se os testes de estêncil e z forem aprovados.                                           |
-| D3DRS \_ CCW \_ STENCILFUNC  | Função D3DCMPFUNC. O teste de estêncil passa se ((ref & Mask) stencilfn (estêncil & Mask)) é true. |
+| D3DRS \_ CCW \_ STENCILFAIL  | D3DSTENCI LTDa para fazer se o teste de estêncil falhar.                                                      |
+| D3DRS \_ CCW \_ STENCILZFAIL | D3DSTENCI LTDa para fazer se o teste de estêncil for aprovado e z-test falhar.                                    |
+| D3DRS \_ CCW \_ STENCILPASS  | D3DSTENCI LTDa para fazer se os testes de estênceis e z são aprovados.                                           |
+| D3DRS \_ CCW \_ STENCILFUNC  | Função D3DCMPFUNC. O teste de estêncil é aprovado se ((ref & mask) oncilfn (estêncil & máscara)) for true. |
 
 
 
  
 
-Os Estados de renderização de estêncil restantes sempre se aplicam aos triângulos no sentido horário e anti-horário.
+Os estados de renderização de estêncil restantes sempre se aplicam a triângulos no sentido horário e anti-horário.
 
-O D3DRS de \_ dois \_ lados laterais \_ é ignorado para linhas e sprites de ponto, o que significa que o comportamento não é alterado do DirectX 8. Os \_ Estados de renderização do estêncil CCW D3DRS \_ \* são ignorados.
+D3DRS \_ Two Sided StencilMODE é ignorado para linhas e sprites de ponto, o que significa que o comportamento é inalterado \_ do \_ DirectX 8. Os estados de \_ renderização STENCIL do CCW D3DRS \_ são \* ignorados.
 
-Um novo bit de extremidade indica se o dispositivo dá suporte a esse recurso. Espera-se que os drivers que não dão suporte a esse recurso ignorem esses novos Estados de renderização. Todos os outros bits de extremidade do estêncil se aplicam aos dois modos de buffer de estêncil. Como dois \_ estênceis laterais \_ implica a capacidade de desenhar com D3DCULLMODE \_ None definido, a Cap correspondente deve ser definida pelo driver se ele der suporte a esse novo modo de estêncil. O Microsoft Windows Hardware Quality Labs (WHQL) deve impor isso.
+Um novo bit de limite indica se o dispositivo dá suporte a esse recurso. Os drivers que não têm suporte para esse recurso devem ignorar esses novos estados de renderização. Todos os outros bits de limite de estêncil se aplicam a ambos os modos de buffer de estêncil. Como o esêncil com dois lados implica a capacidade de desenhar com \_ D3DCULLMODE NONE definido, o limite correspondente deverá ser definido pelo driver se ele for compatível com esse novo modo de \_ \_ estêncil. O Microsoft Windows WHQL (Hardware Quality Labs) deve impor isso.
 
-Novos Estados de renderização:
+Novos estados de renderização:
 
 
 ```

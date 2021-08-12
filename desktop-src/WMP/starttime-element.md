@@ -1,9 +1,9 @@
 ---
 title: Elemento STARTtime
-description: O elemento STARTtime define um índice de tempo do qual o Windows Media Player começará a renderizar o fluxo.
+description: o elemento starttime define um índice de tempo a partir do qual Windows Media Player começará a renderizar o fluxo.
 ms.assetid: 9b0199c8-5c95-4b4e-a943-e3bd037bf0bc
 keywords:
-- Elemento STARTtime Windows Media Player
+- Windows Media Player do elemento STARTtime
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8a882da6c07ec76a94c8e214fe1da11c71680b0c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9138b05b949098c59996c69143059de5cb5b25cafcd8da7d922de120d586b356
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118568788"
 ---
 # <a name="starttime-element"></a>Elemento STARTtime
 
-O elemento **StartTime** define um índice de tempo do qual o Windows Media Player começará a renderizar o fluxo.
+o elemento **starttime** define um índice de tempo a partir do qual Windows Media Player começará a renderizar o fluxo.
 
 ``` syntax
 <STARTTIME
@@ -34,7 +34,7 @@ O elemento **StartTime** define um índice de tempo do qual o Windows Media Play
 
 **Valor** (obrigatório)
 
-O índice de tempo (em horas, minutos, segundos e centésimos de segundo) do qual o Windows Media Player começa a reproduzir um fluxo definido no elemento associado.
+o índice de tempo (em horas, minutos, segundos e centésimos de um segundo) do qual Windows Media Player começa a reproduzir um fluxo definido no elemento associado.
 
 ## <a name="parentchild-elements"></a>Elementos pai/filho
 
@@ -51,7 +51,7 @@ O índice de tempo (em horas, minutos, segundos e centésimos de segundo) do qua
 
 ## <a name="remarks"></a>Comentários
 
-Esse elemento define um índice de tempo no conteúdo em que o Windows Media Player é para iniciar a renderização do fluxo. Esse elemento só pode ser usado com conteúdo armazenado sob demanda que foi indexado.
+esse elemento define um índice de tempo no conteúdo em que Windows Media Player é iniciar a renderização do fluxo. Esse elemento só pode ser usado com conteúdo armazenado sob demanda que foi indexado.
 
 ## <a name="examples"></a>Exemplos
 
@@ -76,10 +76,10 @@ Esse elemento define um índice de tempo no conteúdo em que o Windows Media Pla
 
 <dl> <dt>
 
-[**Referência de elementos de metarquivo do Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referência de elementos de metarquivo de mídia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Referência do metarquivo do Windows Media**](windows-media-metafile-reference.md)
+[**Windows Referência de metarquivo de mídia**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

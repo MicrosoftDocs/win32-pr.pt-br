@@ -3,12 +3,12 @@ description: Especifica um caminho de arquivo que representa um local de armazen
 title: MF_CONTENTDECRYPTIONMODULE_INPRIVATESTOREPATH (mfcontentdecryptionmodule.h)
 ms.topic: reference
 ms.date: 01/31/2020
-ms.openlocfilehash: 0d8ce394f4b7a4e952fc9d5928a80cc5500dcdd9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf03d4411ac2959a336b931bc5e45ec969772ab35c194de03cbd9c74aaca0c0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118244769"
 ---
 # <a name="mf_contentdecryptionmodule_inprivatestorepath-property"></a>\_Propriedade MF CONTENTDECRYPTIONMODULE \_ INPRIVATESTOREPATH
 
@@ -41,12 +41,12 @@ Defina essa propriedade ao criar um CDM chamando [IMFContentDecryptionModuleAcce
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Atualização de abril de 2020 do Windows 10<br/>                                     |
+| Cliente mínimo com suporte<br/> | Windows 10 Atualização de abril de 2020<br/>                                     |
 | parâmetro<br/>                   | <dl> <dt>mfcontentdecryptionmodule. h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Propriedades de Media Foundation](media-foundation-properties.md)
 - [IMFContentDecryptionModuleAccess::CreateContentDecryptionModule](/windows/win32/api/mfcontentdecryptionmodule/nf-mfcontentdecryptionmodule-imfcontentdecryptionmoduleaccess-createcontentdecryptionmodule)

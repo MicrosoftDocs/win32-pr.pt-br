@@ -1,36 +1,36 @@
 ---
-description: As exibições da taxa de atualização da variável exigem que a divisão seja habilitada, isso também é conhecido como &\# 0034; vsync-off&\# 0034; suporte.
+description: As exibições de taxa de atualização variável exigem a habilitação da operação, isso também é conhecido como &\# 0034;vsync-off&\# 0034; suporte.
 ms.assetid: C5F140DD-5BAF-404A-9253-611831C4D424
-title: Exibição da taxa de atualização da variável
+title: A taxa de atualização variável é exibida
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da6e658d84c51a6b51bc32855226194b9c22507e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 349592ce49d1008f6337b53c7f524ac7303907f75cd99205fe79bf55988b934b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104163755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118288919"
 ---
-# <a name="variable-refresh-rate-displays"></a>Exibição da taxa de atualização da variável
+# <a name="variable-refresh-rate-displays"></a>A taxa de atualização variável é exibida
 
-As exibições da taxa de atualização da variável exigem que a *divisão* seja habilitada, isso também é conhecido como suporte "vsync-off".
+As exibições de  taxa de atualização de variável exigem a habilitação da operação. Isso também é conhecido como suporte a "vsync-off".
 
--   [Exibição/vsync da taxa de atualização da variável](#variable-refresh-rate-displaysvsync-off)
+-   [A taxa de atualização variável é exibida/Vsync desligada](#variable-refresh-rate-displaysvsync-off)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="variable-refresh-rate-displaysvsync-off"></a>Exibição/vsync da taxa de atualização da variável
+## <a name="variable-refresh-rate-displaysvsync-off"></a>A taxa de atualização variável é exibida/Vsync desligada
 
-O suporte para exibições de taxa de atualização de variável é obtido definindo determinados sinalizadores ao criar e apresentar a cadeia de permuta.
+O suporte para exibições de taxa de atualização variável é obtido definindo determinados sinalizadores ao criar e apresentar a cadeia de permuta.
 
-Para usar esse recurso, os usuários do aplicativo precisam estar em sistemas Windows 10 com [KB3156421](https://support.microsoft.com/kb/3156421) ou a atualização de aniversário instalada. O recurso funciona em todas as versões do Direct3D 11 e 12 usando *o \_ \_ \_ \_ \* efeito de permuta * dxgi* entre os efeitos de permuta.
+Para usar esse recurso, os usuários do aplicativo precisam estar em sistemas Windows 10 com [o KB3156421](https://support.microsoft.com/kb/3156421) ou a Atualização de Aniversário instalada. O recurso funciona em todas as versões do Direct3D 11 e 12 usando efeitos de permuta DE FLIP **DXGI \_ SWAP \_ \_ \_ \* EFFECT.**
 
-Para adicionar suporte de vsync para seus aplicativos, você pode consultar uma amostra de execução completa para o Direct3D 12, _ *D3D12Fullscreen** (consulte [exemplos de trabalho](../direct3d12/working-samples.md)). Também há alguns pontos que não são explicitamente chamados no código de exemplo, mas você precisa prestar atenção.
+Para adicionar suporte vsync-off aos seus [aplicativos,](../direct3d12/working-samples.md)você pode consultar um exemplo de execução completo para Direct3D 12, **D3D12Fullscreen** (consulte Amostras de trabalho). Também há alguns pontos não explicitamente chamados no código de exemplo, mas você precisa prestar atenção.
 
--   [**ResizeBuffers**](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) (ou [**ResizeBuffers1**](/windows/desktop/api/DXGI1_4/nf-dxgi1_4-idxgiswapchain3-resizebuffers1)) deve ter o mesmo sinalizador de criação da cadeia de permuta (o \_ sinalizador de cadeia de permuta dxgi \_ \_ \_ permite \_ a divisão) passado para ele como [**presente**](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-present) (ou [**Present1**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1)).
--   O DXGI \_ presente \_ permitir a \_ divisão só pode ser usado com o intervalo de sincronização 0. É recomendável sempre passar esse sinalizador de divisão ao usar o intervalo de sincronização 0 se [**CheckFeatureSupport**](/windows/desktop/api/DXGI1_5/nf-dxgi1_5-idxgifactory5-checkfeaturesupport) relatar que a divisão tem suporte *e* o aplicativo estiver em um modo de janela, incluindo o modo de tela inteira sem borda. Consulte as constantes do [**dxgi \_ presente**](dxgi-present.md) para obter mais detalhes.
--   Desabilitar o vsync não necessariamente uncap sua taxa de quadros: os desenvolvedores também precisam ter certeza de que as chamadas [**presentes**](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-present) não são limitadas por outros eventos de tempo (como o `CompositionTarget::Rendering` evento em um aplicativo baseado em XAML).
+-   [**ResizeBuffers**](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-resizebuffers) (ou [**ResizeBuffers1**](/windows/desktop/api/DXGI1_4/nf-dxgi1_4-idxgiswapchain3-resizebuffers1)) deve ter o mesmo sinalizador de criação de cadeia de permuta (SINALIZADOR DE CADEIA DE PERMUTA DXGI ALLOW TEARING) passado para ele como \_ \_ \_ \_ \_ [**Present**](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-present) (ou [**Present1**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1)).
+-   DXGI \_ PRESENT \_ ALLOW \_ TEARING só pode ser usado com o intervalo de sincronização 0. É recomendável sempre passar esse sinalizador de descompasso ao usar o intervalo  de sincronização 0 se [**CheckFeatureSupport**](/windows/desktop/api/DXGI1_5/nf-dxgi1_5-idxgifactory5-checkfeaturesupport) relata que há suporte para a replicação e o aplicativo está em um modo de janela , incluindo o modo de tela inteira sem borda. Consulte as constantes [**DXGI \_ PRESENT**](dxgi-present.md) para obter mais detalhes.
+-   Desabilitar o vsync não necessariamente desacapta sua [](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-present) taxa de quadros: os desenvolvedores também precisam garantir que as chamadas presentes não sejam controladas por outros eventos de tempo (como o evento em um aplicativo baseado em `CompositionTarget::Rendering` XAML).
 
-O código abaixo recapitula algumas partes-chave que você precisa adicionar aos seus aplicativos.
+O código a seguir recapitula algumas partes principais que você precisa adicionar aos seus aplicativos.
 
 ``` syntax
 //--------------------------------------------------------------------------------------------------------
@@ -81,7 +81,7 @@ ThrowIfFailed(m_swapChain->Present(0, presentFlags));
 
 <dl> <dt>
 
-[Aprimoramentos de DXGI 1,5](dxgi-1-5-improvements.md)
+[Melhorias do DXGI 1.5](dxgi-1-5-improvements.md)
 </dt> <dt>
 
 [Guia de programação para DXGI](dx-graphics-dxgi-overviews.md)

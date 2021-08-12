@@ -3,7 +3,7 @@ title: Parâmetro MSWMExt (preterido)
 description: Parâmetro MSWMExt (preterido)
 ms.assetid: cc52da1a-26d1-4321-b421-b0d6f44635cc
 keywords:
-- Metaarquivos do Windows Media, parâmetro MSWMExt
+- Windows Metaarquivos de mídia, parâmetro MSWMExt
 - metaarquivos, parâmetro MSWMExt
 - Parâmetro MSWMExt
 ms.topic: article
@@ -13,12 +13,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 745ecfb2cf716e973aec3d574247e3e45d8f49ff
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: 2ec80530f95d4429769758488e5a2b24b0268c57255248c7685a0d00125aa130
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "104365655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118574593"
 ---
 # <a name="mswmext-parameter-deprecated"></a>Parâmetro MSWMExt (preterido)
 
@@ -54,12 +54,12 @@ Os programas cliente às vezes usam uma extensão de nome de arquivo ou um tipo 
 
 <dl> <dt>
 
-[**Versões anteriores de metaarquivos do Windows Media (preterido)**](previous-versions-of-windows-media-metafiles--deprecated.md)
+[**versões anteriores de metaarquivos de mídia do Windows (preterido)**](previous-versions-of-windows-media-metafiles--deprecated.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

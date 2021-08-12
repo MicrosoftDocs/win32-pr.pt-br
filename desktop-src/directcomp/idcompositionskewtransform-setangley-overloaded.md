@@ -1,9 +1,9 @@
 ---
-title: Métodos IDCompositionSkewTransform (DCOMP. h)
-description: Altera ou anima o valor da propriedade incline de uma transformação de inclinação 2D. A propriedade AngleY especifica o ângulo de rotação, em graus. O valor padrão é zero.
+title: Métodos IDCompositionSkewTransform SetAngleY (Dcomp.h)
+description: Altera ou anima o valor da propriedade AngleY de uma transformação de distorção 2D. A propriedade AngleY especifica o ângulo de rotação, em graus. O valor padrão é zero.
 ms.assetid: BD3D282C-5BBD-4BCE-AE15-4491A37D9149
 keywords:
-- Métodos setinclines DirectComposition
+- Métodos SetAngleY DirectComposition
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 06092db94b43f94eabd764293ca013ac179bc949
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b0e600d2e65676c1762eab282535897932f3389a8c9ed0faa38b3d4af4f5b95d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105762196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118281387"
 ---
-# <a name="idcompositionskewtransformsetangley-methods"></a>Métodos IDCompositionSkewTransform:: setangle
+# <a name="idcompositionskewtransformsetangley-methods"></a>Métodos IDCompositionSkewTransform::SetAngleY
 
-Altera ou anima o valor da propriedade incline de uma transformação de inclinação 2D. A propriedade AngleY especifica o ângulo de rotação, em graus. O valor padrão é zero.
+Altera ou anima o valor da propriedade AngleY de uma transformação de distorção 2D. A propriedade AngleY especifica o ângulo de rotação, em graus. O valor padrão é zero.
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -29,8 +29,8 @@ Altera ou anima o valor da propriedade incline de uma transformação de inclina
 
 | Método                                                                                                     | Descrição                                           |
 |:-----------------------------------------------------------------------------------------------------------|:------------------------------------------------------|
-| [**Triangular (float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionskewtransform-setangley(float))                                     | Altera o valor da propriedade AngleY.<br/>  |
-| [**Setincliney (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionskewtransform-setangley(idcompositionanimation)) | Anima o valor da propriedade AngleY.<br/> |
+| [**SetAngleY(float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionskewtransform-setangley(float))                                     | Altera o valor da propriedade AngleY.<br/>  |
+| [**SetAngleY(IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionskewtransform-setangley(idcompositionanimation)) | Anima o valor da propriedade AngleY.<br/> |
 
 
 
@@ -40,10 +40,10 @@ Altera ou anima o valor da propriedade incline de uma transformação de inclina
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>DCOMP. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>DCOMP. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ aplicativos da área de trabalho\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2012 \[\]<br/>                                 |
+| parâmetro<br/>                   | <dl> <dt>Dcomp.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Dcomp.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 
 

@@ -3,9 +3,9 @@ title: Propriedade AxWindowsMediaPlayer. enableContextMenu
 description: A propriedade enableContextMenu Obtém ou define um valor que indica se o menu de contexto deve ser habilitado, que aparece quando o botão direito do mouse é clicado.
 ms.assetid: 6096cab7-c1fa-4b71-804b-e84facab2229
 keywords:
-- Propriedade enableContextMenu Windows Media Player
-- Propriedade enableContextMenu Windows Media Player, classe AxWindowsMediaPlayer
-- Classe AxWindowsMediaPlayer do Windows Media Player, Propriedade enableContextMenu
+- Windows Media Player da propriedade enableContextMenu
+- propriedade enableContextMenu Windows Media Player, classe AxWindowsMediaPlayer
+- classe AxWindowsMediaPlayer Windows Media Player, propriedade enableContextMenu
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 09c705fd45b9b994863ab4f93df1c3ae10858930
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5603762ec9823f7e9896c5c22c1dee33f2399bb02301921057f8502046bcc002
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118582335"
 ---
 # <a name="axwindowsmediaplayerenablecontextmenu-property"></a>Propriedade AxWindowsMediaPlayer. enableContextMenu
 
@@ -50,7 +50,7 @@ Um valor System. Boolean que indica se o menu de contexto deve ser habilitado. O
 
 ## <a name="remarks"></a>Comentários
 
-Durante a reprodução de tela inteira, o Windows Media Player oculta o cursor do mouse quando **enableContextMenu** é igual a false e **UIMODE** é igual a "None".
+durante a reprodução de tela inteira, Windows Media Player oculta o cursor do mouse quando **enableContextMenu** é igual a false e **uiMode** é igual a "none".
 
 ## <a name="requirements"></a>Requisitos
 

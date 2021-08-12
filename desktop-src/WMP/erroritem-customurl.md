@@ -1,9 +1,9 @@
 ---
 title: ErrorItem.customUrl
-description: A propriedade customURL recupera a URL de um site que exibe informações específicas sobre a falha de download do codec.
+description: A propriedade customURL recupera a URL de um site que exibe informações específicas sobre falha de download do codec.
 ms.assetid: 51028f45-2ce6-4e57-86bd-d7c2d8fb3af8
 keywords:
-- ErrorItem. customUrl Windows Media Player
+- ErrorItem.customUrl Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba285710009d03e231dcabf15f8b1e38c990026b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: acccf086fc9b620243667aadac50ec2f727ab6951b2770cd2c8b21d5ea41b683
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118577832"
 ---
 # <a name="erroritemcustomurl"></a>ErrorItem.customUrl
 
-A propriedade **customURL** recupera a URL de um site que exibe informações específicas sobre a falha de download do codec.
+A **propriedade customURL** recupera a URL de um site que exibe informações específicas sobre falha de download do codec.
 
 ``` syntax
 player.error.item(
@@ -34,7 +34,7 @@ player.error.item(
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esta propriedade é uma **cadeia de caracteres** somente leitura.
+Essa propriedade é uma Cadeia de Caracteres somente **leitura.**
 
 ## <a name="remarks"></a>Comentários
 
@@ -46,7 +46,7 @@ Esta propriedade é uma **cadeia de caracteres** somente leitura.
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

@@ -1,9 +1,9 @@
 ---
-title: Elemento queryset
-description: O elemento queryset contém elementos que definem quais itens de mídia serão selecionados da biblioteca.
+title: Elemento querySet
+description: O elemento querySet contém elementos que definem quais itens de mídia serão selecionados na biblioteca.
 ms.assetid: 18b5a509-a56b-4fd1-812f-60b8efd5136b
 keywords:
-- Elemento queryset Windows Media Player
+- Elemento querySet Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4971c2a7f601132640d7654a95dd288f1740a467
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cb157bb30c2e728b7840fe7021a2a4fcacc317b10eb6778b5702d7d2277c4a92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105765721"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118570609"
 ---
-# <a name="queryset-element"></a>Elemento queryset
+# <a name="queryset-element"></a>Elemento querySet
 
-O elemento **queryset** contém elementos que definem quais itens de mídia serão selecionados da biblioteca.
+O **elemento querySet** contém elementos que definem quais itens de mídia serão selecionados na biblioteca.
 
 ``` syntax
 <querySet>
@@ -40,7 +40,7 @@ Esse elemento não tem atributos.
 | Hierarquia | Elementos                                   |
 |-----------|--------------------------------------------|
 | Pai    | [smartPlaylist](smartplaylist-element.md) |
-| Filho     | [sourceFilter](sourcefilter-element.md)   |
+| Filho     | [Sourcefilter](sourcefilter-element.md)   |
 
 
 
@@ -48,7 +48,7 @@ Esse elemento não tem atributos.
 
 ## <a name="remarks"></a>Comentários
 
-O elemento **queryset** especifica quais itens de mídia devem ser selecionados da biblioteca, sem considerar o tamanho do conjunto de resultados. O elemento **Filter** , por outro lado, limita o tamanho do conjunto de resultados.
+O **elemento querySet** especifica quais itens de mídia devem ser selecionados na biblioteca, sem considerar o tamanho do conjunto de resultados. O **elemento** de filtro, por outro lado, limita o tamanho do conjunto de resultados.
 
 ## <a name="examples"></a>Exemplos
 
@@ -79,7 +79,7 @@ O elemento **queryset** especifica quais itens de mídia devem ser selecionados 
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior.<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior.<br/> |
 
 
 
@@ -87,13 +87,13 @@ O elemento **queryset** especifica quais itens de mídia devem ser selecionados 
 
 <dl> <dt>
 
-[**Elemento Argument**](argument-element.md)
+[**Elemento argument**](argument-element.md)
 </dt> <dt>
 
-[**Elemento Filter**](filter-element.md)
+[**Elemento filter**](filter-element.md)
 </dt> <dt>
 
-[**Elemento Fragment**](fragment-element.md)
+[**Elemento fragment**](fragment-element.md)
 </dt> <dt>
 
 [**Elemento smartPlaylist**](smartplaylist-element.md)
@@ -102,7 +102,7 @@ O elemento **queryset** especifica quais itens de mídia devem ser selecionados 
 [**Elemento sourceFilter**](sourcefilter-element.md)
 </dt> <dt>
 
-[**Referência de elementos da playlist do Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Referência de elementos da playlist de mídia**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

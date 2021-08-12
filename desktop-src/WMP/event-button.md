@@ -1,9 +1,9 @@
 ---
-title: evento. Button
-description: O atributo Button recupera um valor que indica quais botões do mouse estavam inativos quando o evento ocorreu.
+title: event.button
+description: O atributo de botão recupera um valor que indica quais botões do mouse estavam inoados quando o evento ocorreu.
 ms.assetid: 58fb1522-9946-4942-b4bf-4cff37f7dbaf
 keywords:
-- evento. Button Windows Media Player
+- event.button Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f218c0703bd2847cc0f3b7fb2091bbb02e7863e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dbf9b98412630c91f0b0ffea03acf5c8f9a53043b280efdabbfffb8b972a17d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118577663"
 ---
-# <a name="eventbutton"></a>evento. Button
+# <a name="eventbutton"></a>event.button
 
-O atributo **Button** recupera um valor que indica quais botões do mouse estavam inativos quando o evento ocorreu.
+O **atributo** de botão recupera um valor que indica quais botões do mouse estavam inoados quando o evento ocorreu.
 
 ``` syntax
 event.button
@@ -29,16 +29,16 @@ event.button
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **número** somente leitura (**Long**).
+Esse atributo é um Número somente **leitura** (**long).**
 
 
 
 | Valor | Descrição                      |
 |-------|----------------------------------|
-| 0     | Nenhum botão do mouse desativado.      |
-| 1     | O botão esquerdo do mouse estava inoperante.  |
-| 2     | O botão direito do mouse estava inoperante. |
-| 3     | Os dois botões do mouse estavam inativos.    |
+| 0     | Nenhum botão do mouse estava ino mouse.      |
+| 1     | O botão esquerdo do mouse estava ino mouse.  |
+| 2     | O botão direito do mouse estava ino mouse. |
+| 3     | Os dois botões do mouse estavam inoos.    |
 
 
 
@@ -50,7 +50,7 @@ Esse atributo é um **número** somente leitura (**Long**).
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 

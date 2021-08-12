@@ -1,7 +1,7 @@
 ---
-description: Função D3DXVec3BaryCentric (D3dx9math. h) – retorna um ponto em coordenadas barycentric, usando os vetores 3D especificados.
+description: Função D3DXVec3BaryCentric (D3dx9math.h) – retorna um ponto em coordenadas centradas em barras, usando os vetores 3D especificados.
 ms.assetid: ecbabc76-9936-4f31-adec-1ec807984787
-title: Função D3DXVec3BaryCentric (D3dx9math. h)
+title: Função D3DXVec3BaryCentric (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c966eeabe78deabefb2877405f649f3d162f9d73
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2e20e0f632fc25f25f5eedc76491cc7835a19e225dd0742a2a4647cdba1894e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118297852"
 ---
-# <a name="d3dxvec3barycentric-function-d3dx9mathh"></a>Função D3DXVec3BaryCentric (D3dx9math. h)
+# <a name="d3dxvec3barycentric-function-d3dx9mathh"></a>Função D3DXVec3BaryCentric (D3dx9math.h)
 
-Retorna um ponto em coordenadas barycentric, usando os vetores 3D especificados.
+Retorna um ponto em coordenadas centradas em barras, usando os vetores 3D especificados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,46 +45,46 @@ D3DXVECTOR3* D3DXVec3BaryCentric(
 
 <dl> <dt>
 
-*pout* \[ fora\]
+*pOut* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Ponteiro para a estrutura [**D3DXVECTOR3**](d3dxvector3.md) que é o resultado da operação.
+Ponteiro para a [**estrutura D3DXVECTOR3**](d3dxvector3.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*pV1* \[ no\]
+*pV1* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Ponteiro para uma estrutura de [**D3DXVECTOR3**](d3dxvector3.md) de origem.
+Ponteiro para uma estrutura [**D3DXVECTOR3 de**](d3dxvector3.md) origem.
 
 </dd> <dt>
 
-*pV2* \[ no\]
+*pV2* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Ponteiro para uma estrutura de [**D3DXVECTOR3**](d3dxvector3.md) de origem.
+Ponteiro para uma estrutura [**D3DXVECTOR3 de**](d3dxvector3.md) origem.
 
 </dd> <dt>
 
-*pV3* \[ no\]
+*pV3* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Ponteiro para uma estrutura de [**D3DXVECTOR3**](d3dxvector3.md) de origem.
+Ponteiro para uma estrutura [**D3DXVECTOR3 de**](d3dxvector3.md) origem.
 
 </dd> <dt>
 
 *f* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Fator de ponderação. Consulte Observações.
 
@@ -93,7 +93,7 @@ Fator de ponderação. Consulte Observações.
 *g* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Fator de ponderação. Consulte Observações.
 
@@ -103,26 +103,26 @@ Fator de ponderação. Consulte Observações.
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Ponteiro para uma estrutura [**D3DXVECTOR3**](d3dxvector3.md) em coordenadas barycentric.
+Ponteiro para uma [**estrutura D3DXVECTOR3**](d3dxvector3.md) em coordenadas centradas em barras.
 
 ## <a name="remarks"></a>Comentários
 
-A função **D3DXVec3BaryCentric** fornece uma maneira de entender os pontos em um triângulo, independentemente de onde o triângulo realmente está localizado. Essa função retorna o ponto resultante usando a seguinte equação: v1 + f (v2-v1) + g (v3-v1).
+A **função D3DXVec3BaryCentric** fornece uma maneira de entender os pontos dentro e ao redor de um triângulo, independentemente de onde o triângulo está realmente localizado. Essa função retorna o ponto resultante usando a seguinte equação: V1 + f(V2-V1) + g(V3-V1).
 
-Qualquer ponto no V1V2V3 do plano pode ser representado pela coordenada barycentric (f, g). O parâmetro *f* controla a quantidade de v2 que é ponderada no resultado e o parâmetro *g* controla a quantidade de v3 ponderada no resultado. Por fim, 1-f-g controla o quanto v1 é ponderado no resultado.
+Qualquer ponto no plano V1V2V3 pode ser representado pela coordenada centrada em barras (f,g). O parâmetro *f* controla quanto V2 é ponderado no resultado e o parâmetro *g* controla quanto V3 é ponderado no resultado. Por fim, 1-f-g controla quanto V1 é ponderado no resultado.
 
-Observe as seguintes relações.
+Observe as relações a seguir.
 
--   Se (f>= 0 &, & g>= 0 &, & 1-f-g>= 0), o ponto estará dentro do triângulo V1V2V3.
--   Se (f = = 0 &, & g>= 0 &, & 1-f-g>= 0), o ponto estará na linha V1V3.
--   Se (f>= 0 &, & g = = 0 &, & 1-f-g>= 0), o ponto estará na linha V1V2.
--   Se (f>= 0 &, & g>= 0 &, & 1-f-g = = 0), o ponto estará na linha V2V3.
+-   Se (f>=0 &, & g>=0 &, & 1-f-g>=0), o ponto está dentro do triângulo V1V2V3.
+-   Se (f==0 &, & g>=0 &, & 1-f-g>=0), o ponto está na linha V1V3.
+-   Se (f>=0 &, & g==0 &, & 1-f-g>=0), o ponto está na linha V1V2.
+-   Se (f>=0 &, & g>=0 &, & 1-f-g==0), o ponto está na linha V2V3.
 
-As coordenadas de barycentric são uma forma de coordenadas gerais. Nesse contexto, o uso de coordenadas barycentric representa uma alteração nos sistemas de coordenadas. O que se aplica a coordenadas cartesianas é verdadeiro para coordenadas Barycentrics.
+Coordenadas barycentric são uma forma de coordenadas gerais. Nesse contexto, o uso de coordenadas centradas em barras representa uma alteração em sistemas de coordenadas. O que é verdadeiro para coordenadas cartesianas é verdadeiro para coordenadas centradas em barras.
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro *pout* . Dessa forma, a função **D3DXVec3BaryCentric** pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no *parâmetro pOut.* Dessa forma, a **função D3DXVec3BaryCentric** pode ser usada como um parâmetro para outra função.
 
-As coordenadas barycentric definem um ponto dentro de um triângulo em termos dos vértices do triângulo. Para obter uma descrição mais detalhada das coordenadas de barycentric, consulte [Descrição de coordenadas barycentric do MathWorld](https://mathworld.wolfram.com/BarycentricCoordinates.html).
+As coordenadas barycentric definem um ponto dentro de um triângulo em termos dos vértices do triângulo. Para obter uma descrição mais detalhada das coordenadas centradas em barras, consulte Descrição de [coordenadas barycentric da Mathworld.](https://mathworld.wolfram.com/BarycentricCoordinates.html)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -130,12 +130,12 @@ As coordenadas barycentric definem um ponto dentro de um triângulo em termos do
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

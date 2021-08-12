@@ -1,9 +1,9 @@
 ---
-title: 'Função Texture2D:: GatherCmpBlue (S, float, float, Int2, Int2, Int2, Int2)'
-description: 'Para quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear, o retorna uma comparação de seu componente azul em relação a um valor de comparação. | Função Texture2D:: GatherCmpBlue (S, float, float, Int2, Int2, Int2, Int2)'
+title: Função Texture2D::GatherCmpBlue(S,float,float,int2,int2,int2,int2)
+description: Para quatro valores de texel que seriam usados em uma operação de filtragem bi-linear, retorna uma comparação de seu componente azul em relação a um valor de comparação. | Função Texture2D::GatherCmpBlue(S,float,float,int2,int2,int2,int2)
 ms.assetid: DAA41BF3-6037-404F-9B35-C5F1302367B9
 keywords:
-- HLSL da função GatherCmpBlue
+- Função GatherCmpBlue HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9d66364dd1c07d692c87a9e3a05501a56a587cb3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 26638d790223f362dc2ba5d23f5f70500fe967fd6e026aef8321875b02872dbe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104968530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118285016"
 ---
-# <a name="texture2dgathercmpbluesfloatfloatint2int2int2int2-function"></a>Função Texture2D:: GatherCmpBlue (S, float, float, Int2, Int2, Int2, Int2)
+# <a name="texture2dgathercmpbluesfloatfloatint2int2int2int2-function"></a>Função Texture2D::GatherCmpBlue(S,float,float,int2,int2,int2,int2)
 
-Para quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear, o retorna uma comparação de seu componente azul em relação a um valor de comparação.
+Para quatro valores de texel que seriam usados em uma operação de filtragem bi-linear, retorna uma comparação de seu componente azul em relação a um valor de comparação.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,61 +48,61 @@ TemplateType GatherCmpBlue(
 *S* \[ em\]
 </dt> <dd>
 
-Tipo: **samplestate**
+Tipo: **SamplerState**
 
 O índice de amostra baseado em zero.
 
 </dd> <dt>
 
-*Local* \[ do no\]
+*Localização* \[ Em\]
 </dt> <dd>
 
 Tipo: **float**
 
-As coordenadas de exemplo (u, v).
+As coordenadas de exemplo (u,v).
 
 </dd> <dt>
 
-*Comparevalue* \[ no\]
+*CompareValue* \[ Em\]
 </dt> <dd>
 
 Tipo: **float**
 
-Um valor para comparar cada valor de amostra.
+Um valor para comparar cada um com cada valor amostrado.
 
 </dd> <dt>
 
-*Offset1* \[ no\]
+*Offset1* \[ Em\]
 </dt> <dd>
 
-Tipo: **Int2**
+Tipo: **int2**
 
 O primeiro componente de deslocamento aplicado às coordenadas de textura antes da amostragem.
 
 </dd> <dt>
 
-*Offset2* \[ no\]
+*Offset2* \[ Em\]
 </dt> <dd>
 
-Tipo: **Int2**
+Tipo: **int2**
 
 O segundo componente de deslocamento aplicado às coordenadas de textura antes da amostragem.
 
 </dd> <dt>
 
-*Offset3* \[ no\]
+*Offset3* \[ Em\]
 </dt> <dd>
 
-Tipo: **Int2**
+Tipo: **int2**
 
 O terceiro componente de deslocamento aplicado às coordenadas de textura antes da amostragem.
 
 </dd> <dt>
 
-*Offset4* \[ no\]
+*Offset4* \[ Em\]
 </dt> <dd>
 
-Tipo: **Int2**
+Tipo: **int2**
 
 O quarto componente de deslocamento aplicado às coordenadas de textura antes da amostragem.
 
@@ -116,13 +116,13 @@ Um valor de quatro componentes cujo tipo é o mesmo que o tipo de modelo.
 
 ## <a name="remarks"></a>Comentários
 
-Os exemplos de textura podem ser usados para interpolação bilinear.
+As amostras de textura podem ser usadas para interpolação bilinear.
 
 Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

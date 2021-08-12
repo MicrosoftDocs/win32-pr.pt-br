@@ -1,11 +1,11 @@
 ---
-title: Evento Player. MediaCollectionMediaRemoved
-description: O evento MediaCollectionMediaRemoved ocorre quando um item de mídia é removido da biblioteca local. | Evento Player. MediaCollectionMediaRemoved
+title: Evento Player.MediaCollectionMediaRemoved
+description: O evento MediaCollectionMediaRemoved ocorre quando um item de mídia é removido da biblioteca local. | Evento Player.MediaCollectionMediaRemoved
 ms.assetid: a1df6faf-38dc-4f5f-8f8a-953c91ea026c
 keywords:
-- Evento MediaCollectionMediaRemoved do Windows Media Player
-- Evento MediaCollectionMediaRemoved Windows Media Player, classe Player
-- Classe de jogador Windows Media Player, evento MediaCollectionMediaRemoved
+- Evento MediaCollectionMediaRemoved Windows Media Player
+- Evento MediaCollectionMediaRemoved Windows Media Player , classe Player
+- Classe player Windows Media Player evento , MediaCollectionMediaRemoved
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72af5fe4c5e90effeb34745ea71e3edb457da357
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 009432040deace140dd3cf4d7d7da1246c0a38dbd9fc0da028832af137cefa83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763331"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118572846"
 ---
-# <a name="playermediacollectionmediaremoved-event"></a>Evento Player. MediaCollectionMediaRemoved
+# <a name="playermediacollectionmediaremoved-event"></a>Evento Player.MediaCollectionMediaRemoved
 
 O evento MediaCollectionMediaRemoved ocorre quando um item de mídia é removido da biblioteca local.
 
@@ -45,7 +45,7 @@ Player.MediaCollectionMediaRemoved(
 *pdispMedia* 
 </dt> <dd>
 
-O objeto de **mídia** que foi removido.
+**Objeto de** mídia que foi removido.
 
 </dd> </dl>
 
@@ -74,13 +74,13 @@ Esse evento ocorre apenas para a biblioteca local.
 
 <dl> <dt>
 
-[**Objeto mediacollection**](mediacollection-object.md)
+[**Objeto MediaCollection**](mediacollection-object.md)
 </dt> <dt>
 
-[**Objeto de jogador**](player-object.md)
+[**Objeto Player**](player-object.md)
 </dt> <dt>
 
-[**Player. mediacollection**](player-mediacollection.md)
+[**Player.mediaCollection**](player-mediacollection.md)
 </dt> </dl>
 
  

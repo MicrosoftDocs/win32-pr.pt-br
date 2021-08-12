@@ -15,17 +15,17 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ee2d9d194a03cf575eb0296163526c1c50301cf4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1b14388f26e21550319b910ac01d9ee0dde4d5890336c91e1fca76bc68cce93f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105770575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118254976"
 ---
 # <a name="jet_columncreate-structure"></a>Estrutura JET_COLUMNCREATE
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_columncreate-structure"></a>Estrutura JET_COLUMNCREATE
 
@@ -109,8 +109,8 @@ Um grupo de bits que contém as opções para essa estrutura e que incluem zero 
 <tr class="even">
 <td><p>JET_bitColumnAutoincrement</p></td>
 <td><p>A coluna é incrementada automaticamente. O número é um número cada vez maior e é garantido que seja exclusivo dentro de uma tabela. No entanto, o número pode não ser contínuo. Por exemplo, se cinco linhas forem inseridas em uma tabela, a coluna AutoIncrement poderá conter os valores {1, 2, 6, 7, 8}.</p>
-<p><strong>Windows 2000:  </strong> Esse bit só pode ser usado em colunas do tipo <strong>JET_coltypLong</strong>.</p>
-<p><strong>Windows Server 2003 e posterior:  </strong> Esse bit só pode ser usado em colunas do tipo <strong>JET_coltypLong</strong> ou <strong>JET_coltypCurrency</strong>.</p></td>
+<p><strong>Windows 2000:</strong> Esse bit só pode ser usado em colunas do tipo <strong>JET_coltypLong</strong>.</p>
+<p><strong>Windows Server 2003 e posterior:</strong> Esse bit só pode ser usado em colunas do tipo <strong>JET_coltypLong</strong> ou <strong>JET_coltypCurrency</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_bitColumnUpdatable</p></td>
@@ -209,11 +209,11 @@ O campo **Err** conterá o status da criação desta coluna. Consulte [JetAddCol
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>

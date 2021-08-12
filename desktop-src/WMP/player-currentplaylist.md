@@ -3,7 +3,7 @@ title: Player. currentPlaylist
 description: A propriedade currentPlaylist especifica ou recupera o objeto de playlist atual.
 ms.assetid: fabfb927-5f64-4fc4-8ee5-e2449082dfbc
 keywords:
-- Player. currentPlaylist Windows Media Player
+- Windows Media Player Player. currentPlaylist
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ceae33a201086d268942e47496874678ec13f459
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7139c567eab5fbb3c324916dec260d34f57429cb50bb99d199f35be8aee7a1c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105781358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118573211"
 ---
 # <a name="playercurrentplaylist"></a>Player. currentPlaylist
 
 A propriedade currentPlaylist especifica ou recupera o objeto de **playlist** atual.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 *Player* . **currentPlaylist**
 
@@ -35,13 +35,13 @@ Esta propriedade é um objeto de **lista de reprodução** de leitura/gravação
 
 ## <a name="remarks"></a>Comentários
 
-Se as *configurações*. a propriedade **AutoStart** é true, a reprodução é iniciada automaticamente sempre que você definir **currentPlaylist**.
+se o *Configurações*. a propriedade **AutoStart** é true, a reprodução é iniciada automaticamente sempre que você definir **currentPlaylist**.
 
 Essa propriedade usa um objeto playlist, que pode ser adquirido de várias maneiras, como ao chamar *PlaylistArray*. **Item** ou *playlistcollection*. **newPlaylist**. Para carregar um item da **playlist** usando um nome de arquivo, defina a propriedade URL ou use *Player*. **newPlaylist**.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir recupera a primeira lista de reprodução na biblioteca. Em seguida, ele usa **currentPlaylist** para tornar a lista de reprodução recuperada a playlist atual e, em seguida, exibir o nome da lista de reprodução atual. O objeto de **jogador** foi criado com ID = "Player".
+o exemplo a seguir JScript recupera a primeira lista de reprodução na biblioteca. Em seguida, ele usa **currentPlaylist** para tornar a lista de reprodução recuperada a playlist atual e, em seguida, exibir o nome da lista de reprodução atual. O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript
@@ -87,7 +87,7 @@ document.write("Found first playlist. Name: " + Player.currentPlaylist.name);
 [**Playlistcollection. newPlaylist**](playlistcollection-newplaylist.md)
 </dt> <dt>
 
-[**Settings. AutoStart**](settings-autostart.md)
+[**Configurações. autostart**](settings-autostart.md)
 </dt> </dl>
 
  

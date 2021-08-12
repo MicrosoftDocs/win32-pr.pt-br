@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Async.h
-ms.openlocfilehash: 1fa6a558efd56917832da3280df2aad4ac400def
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f5e7011d868b46196293f441d76d182156fb0ba1431227d6bf01212f8c809249
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104172963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118303461"
 ---
 # <a name="d3dx10createasynccompilerprocessor-function"></a>Função D3DX10CreateAsyncCompilerProcessor
 

@@ -4,16 +4,16 @@ ms.assetid: eee93457-483d-41dc-91c5-c12382d03152
 title: Propriedade MFNETSOURCE_HOSTVERSION (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f10c1a66bc2ab52455140733a6b60f25863c8f3d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d5f78a277de4fc5b0609be31f21f684357806dbb8609657a930cdc4816b1e43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104461180"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118243456"
 ---
 # <a name="mfnetsource_hostversion-property"></a>\_Propriedade MFNETSOURCE HOSTVERSION
 
-O valor do campo "c-hostexever" usado pela fonte de rede para registro em log. Os aplicativos podem definir essa propriedade como o número de versão do aplicativo host. O aplicativo host é o arquivo. exe identificado pelo campo c-hostexe.
+O valor do campo "c-hostexever" usado pela fonte de rede para registro em log. Os aplicativos podem definir essa propriedade como o número de versão do aplicativo host. O aplicativo host é o arquivo .exe identificado pelo campo c-hostexe.
 
 
 
@@ -43,13 +43,13 @@ Os aplicativos podem usar essa propriedade para configurar a origem da rede. Par
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
 | parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 

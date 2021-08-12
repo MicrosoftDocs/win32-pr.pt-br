@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: Propriedades de EsentInvalidLogDataSequenceException'
-title: Propriedades de EsentInvalidLogDataSequenceException
+description: 'Saiba mais sobre: propriedades EsentInvalidLogDataSequenceException'
+title: Propriedades EsentInvalidLogDataSequenceException
 TOCTitle: EsentInvalidLogDataSequenceException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentInvalidLogDataSequenceException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentinvalidlogdatasequenceexception_properties(v=EXCHG.10)
 ms:contentKeyID: 55101983
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 0badc09c34d21b108fc0d92d42511c9c597901a6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bffb967c69a37b5dee47cc8684fa2dda334807d9f119733a34596c8ce7e4e780
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104570120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118265810"
 ---
-# <a name="esentinvalidlogdatasequenceexception-properties"></a>Propriedades de EsentInvalidLogDataSequenceException
+# <a name="esentinvalidlogdatasequenceexception-properties"></a>Propriedades EsentInvalidLogDataSequenceException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentInvalidLogDataSequenceException](./esentinvalidlogdatasequenceexception-class.md) expõe os membros a seguir.
+O [tipo EsentInvalidLogDataSequenceException](./esentinvalidlogdatasequenceexception-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,16 +40,16 @@ O tipo [EsentInvalidLogDataSequenceException](./esentinvalidlogdatasequenceexcep
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ O tipo [EsentInvalidLogDataSequenceException](./esentinvalidlogdatasequenceexcep
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe EsentInvalidLogDataSequenceException](./esentinvalidlogdatasequenceexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

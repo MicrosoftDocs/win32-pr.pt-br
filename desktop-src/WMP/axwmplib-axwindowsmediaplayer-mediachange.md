@@ -1,9 +1,9 @@
 ---
 title: Evento MediaChange do objeto AxWindowsMediaPlayer
-description: O evento MediaChange ocorre quando um item de mídia é alterado. | Evento MediaChange do objeto AxWindowsMediaPlayer
+description: O evento MediaChange ocorre quando um item de mídia é alternado. | Evento MediaChange do objeto AxWindowsMediaPlayer
 ms.assetid: 0a2380ff-df50-4092-a952-812184822719
 keywords:
-- Evento MediaChange do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento MediaChange do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 175a7ed6ca57e3083d307cfe218d09233410053c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a0cf0d5cef7141cfa466bd6a4311d122e1cad34c05b5ce9b78ead15f4f43f75c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118582134"
 ---
 # <a name="mediachange-event-of-the-axwindowsmediaplayer-object"></a>Evento MediaChange do objeto AxWindowsMediaPlayer
 
-O evento MediaChange ocorre quando um item de mídia é alterado.
+O evento MediaChange ocorre quando um item de mídia é alternado.
 
 ``` syntax
 [C#]
@@ -41,13 +41,13 @@ Private Sub player_MediaChange(
 
 ## <a name="event-data"></a>Dados de evento
 
-O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ MediaChangeEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ MediaChangeEvent**, que contém a seguinte propriedade relacionada a este evento.
+O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ MediaChangeEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ MediaChangeEvent**, que contém a propriedade a seguir relacionada a esse evento.
 
 
 
 | Propriedade | Descrição                                                                                                    |
 |----------|----------------------------------------------------------------------------------------------------------------|
-| Item     | Item de mídia System. ObjectThe que foi alterado. Você pode convertê-lo em uma interface IWMPMedia para acessá-lo.<br/> |
+| Item     | System.ObjectO item de mídia que foi alterado. Você pode castiá-lo em uma interface IWMPMedia para acessá-la.<br/> |
 
 
 
@@ -55,7 +55,7 @@ O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa um rótulo para exibir o nome do item de mídia atual. O código atualiza o texto no rótulo com cada ocorrência do evento MediaChange. O objeto AxWMPLib. AxWindowsMediaPlayer é representado pela variável chamada Player.
+O exemplo a seguir usa um rótulo para exibir o nome do item de mídia atual. O código atualiza o texto no rótulo com cada ocorrência do Evento MediaChange. O objeto AxWMPLib.AxWindowsMediaPlayer é representado pela variável chamada player.
 
 
 ```CSharp
@@ -96,7 +96,7 @@ End Sub
 
 | Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                          |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                          |
 | Namespace<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

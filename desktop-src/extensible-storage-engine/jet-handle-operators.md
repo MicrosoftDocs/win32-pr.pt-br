@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Hh557794(v=EXCHG.10)
 ms:contentKeyID: 39512315
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 4d7abae5aca585debf7f17595bbba294340fe6ce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 62a1bfce3f2c2f0606d34c9f3d4263967ecc3738134bc08c02e73efa25657b8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104551953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118254273"
 ---
 # <a name="jet_handle-operators"></a>Operadores de JET_HANDLE
 
@@ -27,7 +27,7 @@ O tipo de [JET_HANDLE](./jet-handle-structure.md) expõe os membros a seguir.
 <thead>
 <tr class="header">
 <th> </th>
-<th>Nome</th>
+<th>Name</th>
 <th>Descrição</th>
 </tr>
 </thead>

@@ -1,6 +1,6 @@
 ---
-title: callnz bool-vs
-description: Chamar se não for zero. Executa uma chamada condicional para a instrução marcada pelo índice de rótulo. | callnz bool-vs
+title: callnz bool – vs
+description: Chame se não for zero. Executa uma chamada condicional para a instrução marcada pelo índice de rótulo. | callnz bool – vs
 ms.assetid: 9be030b9-fa21-459f-bd6c-f34ad6f177fc
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f3932f4c5d50445b3220a0460a5c434a1ff8aae4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8a6d5a7646670d182b0b685ab742fb5b2094a89a717a31019165054bcbc4816b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104989258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118287254"
 ---
-# <a name="callnz-bool---vs"></a>callnz bool-vs
+# <a name="callnz-bool---vs"></a>callnz bool – vs
 
-Chamar se não for zero. Executa uma chamada condicional para a instrução marcada pelo índice de rótulo.
+Chame se não for zero. Executa uma chamada condicional para a instrução marcada pelo índice de rótulo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 
-| callnz l \# , \[ ! \] b\# |
+| callnz l \# , \[ ! \] B\# |
 |----------------------|
 
 
@@ -33,17 +33,17 @@ Chamar se não for zero. Executa uma chamada condicional para a instrução marc
 
 em que:
 
--   Onde l \# é um [rótulo-vs](label---vs.md) marcando o início da sub-rotina a ser chamada.
--   \[!\] é o modificador booliano NOT opcional.
--   b \# identifica um [registro booliano constante](dx9-graphics-reference-asm-vs-registers-constant-boolean.md).
+-   em que l \# é um rótulo – [vs](label---vs.md) marcando o início da sub-rotina a ser chamada.
+-   \[!\] é o modificador NOT booliana opcional.
+-   b \# identifica um Registro [Booliana Constante](dx9-graphics-reference-asm-vs-registers-constant-boolean.md).
 
 ## <a name="remarks"></a>Comentários
 
 
 
-| Versões do sombreador de vértice | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versões do sombreador de vértice | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
-| bool callnz            |      | x    | x    | x     | x    | x     |
+| callnz bool            |      | x    | x    | x     | x    | x     |
 
 
 

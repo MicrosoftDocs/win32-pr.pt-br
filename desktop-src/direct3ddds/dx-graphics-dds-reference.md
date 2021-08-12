@@ -4,12 +4,12 @@ description: A documentação de referência do DDS contém os elementos da API 
 ms.assetid: 71914e64-7de9-4c97-8341-68e4d2c68927
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 636e4e7cddf1bb31146a895ae1ac52dc4a625317
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: 6450b4d1e44fc87235061d159888875731c93ff62f6bc5f3dabf460d04dafda3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "104084334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118289773"
 ---
 # <a name="reference-for-dds"></a>Referência para DDS
 

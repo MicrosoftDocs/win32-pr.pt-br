@@ -1,6 +1,6 @@
 ---
 title: Introdução aos assistentes de publicação
-description: O Windows XP apresenta o assistente de publicação na Web e o assistente de pedido de impressão online.
+description: Windows O XP apresenta o assistente de publicação na Web e o assistente de pedido de impressão online.
 ms.assetid: da3adc24-5b37-48b5-b055-d5bfa572defd
 keywords:
 - assistentes de publicação, sobre
@@ -10,16 +10,16 @@ keywords:
 - assistentes de publicação, assistente para ordenação de impressão online
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b4e6d3c515edae23d0e74f550e000bdfdfacf03
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 70d576d04579847d2e65bbc59399d11689259f8e64823a3c3068cafad912ff8a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104453985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118246657"
 ---
 # <a name="publishing-wizards-introduction"></a>Introdução aos assistentes de publicação
 
-O Windows XP apresenta o assistente de publicação na Web e o assistente de pedido de impressão online. Com base na mesma estrutura, esses assistentes fornecem ao usuário um mecanismo simples para publicar conteúdo em um site ou para ordenar impressões feitas por meio de arquivos de imagem digital. A vantagem desses assistentes reside em sua capacidade de hospedar conteúdo HTML de provedores diferentes em suas páginas de assistente para que a aparência, o procedimento e as opções de usuário disponíveis sejam totalmente controlados pelo provedor e possam ser alterados por eles a qualquer momento sem afetar o assistente do cliente que está hospedando-os. Embora esses assistentes existentes tenham sido criados com a geração de imagens digital firmemente em mente, a estrutura e os conceitos podem ser usados para muitas outras finalidades, como um serviço de impressão de documentos ou como um método de compartilhamento de imagens com amigos e familiares.
+Windows O XP apresenta o assistente de publicação na Web e o assistente de pedido de impressão online. Com base na mesma estrutura, esses assistentes fornecem ao usuário um mecanismo simples para publicar conteúdo em um site ou para ordenar impressões feitas por meio de arquivos de imagem digital. A vantagem desses assistentes reside em sua capacidade de hospedar conteúdo HTML de provedores diferentes em suas páginas de assistente para que a aparência, o procedimento e as opções de usuário disponíveis sejam totalmente controlados pelo provedor e possam ser alterados por eles a qualquer momento sem afetar o assistente do cliente que está hospedando-os. Embora esses assistentes existentes tenham sido criados com a geração de imagens digital firmemente em mente, a estrutura e os conceitos podem ser usados para muitas outras finalidades, como um serviço de impressão de documentos ou como um método de compartilhamento de imagens com amigos e familiares.
 
 -   [Como funciona?](#how-does-it-work)
 -   [Documentação do assistente de publicação](#publishing-wizard-documentation)
@@ -52,6 +52,6 @@ O assistente de publicação na Web e o assistente de pedido de impressão onlin
 -   [Usando o manifesto de transferência](pubwiz-manifest.md)
 -   [Transferir esquema de manifesto](/windows/desktop/shell/interfaces)
 
- 
+ 
 
- 
+ 

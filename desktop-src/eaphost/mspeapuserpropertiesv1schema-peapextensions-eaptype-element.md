@@ -1,6 +1,6 @@
 ---
-title: Elemento PeapExtensions (EapType) (Propriedades do usuário)
-description: Saiba mais sobre o elemento PeapExtensions (EapType). Esse elemento permite aprimoramentos futuros no esquema. | Elemento PeapExtensions (EapType) (Propriedades do usuário)
+title: Elemento PeapExtensions (EapType) (propriedades do usuário)
+description: Saiba mais sobre o elemento PeapExtensions (EapType). Esse elemento permite aprimoramentos futuros para o esquema. | Elemento PeapExtensions (EapType) (propriedades do usuário)
 ms.assetid: f04d1361-c88e-4415-9a81-d1195b14de05
 keywords:
 - Elemento PeapExtensions EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b264bbb37d25053dadd66c7656811792432cf603
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0880c9c37015b5695598cf6b219cfe9a4857e91080dba46285170885b0317e69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104298095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118272804"
 ---
-# <a name="peapextensions-eaptype-element-user-properties"></a>Elemento PeapExtensions (EapType) (Propriedades do usuário)
+# <a name="peapextensions-eaptype-element-user-properties"></a>Elemento PeapExtensions (EapType) (propriedades do usuário)
 
-O elemento **PeapExtensions (EapType)** permite aprimoramentos futuros no esquema.
+O **elemento PeapExtensions (EapType)** permite aprimoramentos futuros no esquema.
 
 ``` syntax
 <xs:element name="PeapExtensions"
@@ -31,11 +31,11 @@ O elemento **PeapExtensions (EapType)** permite aprimoramentos futuros no esquem
  />
 ```
 
-O elemento **PeapExtensions** é definido pelo elemento [**EapType**](mspeapuserpropertiesv1schema-eaptype-element.md) .
+O **elemento PeapExtensions** é definido pelo [**elemento EapType.**](mspeapuserpropertiesv1schema-eaptype-element.md)
 
 ## <a name="remarks"></a>Comentários
 
-O elemento **PeapExtensions (EapType)** é opcional.
+O **elemento PeapExtensions (EapType)** é opcional.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,8 +43,8 @@ O elemento **PeapExtensions (EapType)** é opcional.
 
 | Função | Versão mínima do sistema operacional com suporte |
 |------|------------------------------|
-| Cliente<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

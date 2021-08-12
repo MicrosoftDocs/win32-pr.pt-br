@@ -4,18 +4,18 @@ description: Define constantes que especificam o agrupamento de segmentos de mem
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: ce94d5f806879ea84f64c88d3a62b074a5c5415b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2474f8084035ddb67f7081ea45cd1d1743c053415a7bbade68ecff3d4527636c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105816043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118279618"
 ---
 # <a name="dxcoresegmentgroup-enum"></a>DXCoreSegmentGroup enum
 
 Define constantes que especificam o agrupamento de segmentos de memória de um adaptador.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```cpp
 enum class DXCoreSegmentGroup : uint32_t
@@ -35,6 +35,6 @@ Especifica um agrupamento de segmentos que é considerado local para o adaptador
 
 Especifica um agrupamento de segmentos que é considerado não local para o adaptador e pode ter um desempenho mais lento do que o grupo de segmentos local.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Referência de DXCore](../dxcore-reference.md), [usando DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)

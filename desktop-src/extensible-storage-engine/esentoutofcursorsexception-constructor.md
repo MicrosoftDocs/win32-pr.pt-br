@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 047f1acd0944a283ad8a1333c593eb906daa81b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cb1b0f307bb13d205ed01d489281d784a3c2869db7e837e00b3f02ed3e56b0b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118262295"
 ---
 # <a name="esentoutofcursorsexception-constructor"></a>Construtor EsentOutOfCursorsException
 
 Inicializa uma nova instância da classe EsentOutOfCursorsException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentOutOfCursorsException()
 
 [Classe EsentOutOfCursorsException](./esentoutofcursorsexception-class.md)
 
-[Membros do EsentOutOfCursorsException](./esentoutofcursorsexception-members.md)
+[Membros EsentOutOfCursorsException](./esentoutofcursorsexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

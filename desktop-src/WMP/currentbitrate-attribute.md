@@ -3,7 +3,7 @@ title: Atributo CurrentBitrate
 description: O atributo CurrentBitrate é a taxa de bits atual do item, em bits por segundo.
 ms.assetid: 785b362e-ef3b-4a09-adb0-3ab6cdadb4da
 keywords:
-- Atributo CurrentBitrate Windows Media Player
+- Windows Media Player de atributo CurrentBitrate
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 567c2e6b43679204f0e2d0f249c1b16dff4071a9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c3e614e241093a5b81a8b636410f0581aac277fc45925b55d741e4d3c9277d29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118579895"
 ---
 # <a name="currentbitrate-attribute"></a>Atributo CurrentBitrate
 
@@ -32,7 +32,7 @@ O atributo **CurrentBitrate** é a taxa de bits atual do item, em bits por segun
 
 Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
 
-A constante do Windows Media Format SDK para esse atributo é g \_ wszWMCurrentBitrate.
+a constante do SDK do formato de mídia Windows para esse atributo é g \_ wszWMCurrentBitrate.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -40,7 +40,7 @@ A constante do Windows Media Format SDK para esse atributo é g \_ wszWMCurrentB
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------|
-| Versão<br/> | Somente Windows Media Player 9 Series<br/> |
+| Versão<br/> | somente Windows Media Player 9 Series<br/> |
 
 
 

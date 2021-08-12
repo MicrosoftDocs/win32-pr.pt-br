@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9c3ab61908c510cf0720f141829b5493727771bb
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: de0d7e9f49db66e2505ac18394dd5b9da72ed3f67b1cf6da84885d68c54d1c74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104499156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118274079"
 ---
 # <a name="eaptlsconnectionpropertiesv1-schema-complex-types"></a>Tipos complexos de esquema eaptlsconnectionpropertiesv1
 
-O esquema [eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-schema.md) define os tipos complexos a seguir.
+O [esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-schema.md) define os seguintes tipos complexos.
 
 -   [**CertSelection**](eaptlsconnectionpropertiesv1schema-certselection-complextype.md)
 -   [**CredentialsSourceParameters**](eaptlsconnectionpropertiesv1schema-credentialssourceparameters-complextype.md)
@@ -37,9 +37,9 @@ O esquema [eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-sche
 [Esquema eaptlsconnectionpropertiesv2](eaptlsconnectionpropertiesv2schema-schema.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

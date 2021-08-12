@@ -3,9 +3,9 @@ title: Método Player. newPlaylist
 description: O método newPlaylist cria um novo objeto de lista de reprodução.
 ms.assetid: a566006e-8647-4c51-ab77-762728f25a30
 keywords:
-- método newPlaylist Windows Media Player
+- Windows Media Player do método newPlaylist
 - método newPlaylist Windows Media Player, classe Player
-- Classe de jogador Windows Media Player, método newPlaylist
+- classe de jogador Windows Media Player, método newPlaylist
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa65ae4b453fe919116a33c5ee86b14ba353f681
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 380d1f2751487f5c648b154852be625a5c93103851541dea7e2488ba75080ca0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118572826"
 ---
 # <a name="playernewplaylist-method"></a>Método Player. newPlaylist
 
@@ -53,7 +53,7 @@ retVal = Player.newPlaylist(
 *URL* \[ do no\]
 </dt> <dd>
 
-**Cadeia de caracteres** que contém a URL da lista de reprodução do metarquivo do Windows Media com a qual criar o objeto de **playlist** .
+**cadeia de caracteres** que contém a URL da lista de reprodução do metarquivo de mídia do Windows para criar o objeto de **playlist** .
 
 </dd> </dl>
 
@@ -93,7 +93,7 @@ Como a biblioteca permite várias listas de reprodução com o mesmo nome, talve
 [**Playlistcollection. newPlaylist**](playlistcollection-newplaylist.md)
 </dt> <dt>
 
-[**Metaarquivos do Windows Media**](windows-media-metafiles.md)
+[**Windows Metaarquivos de mídia**](windows-media-metafiles.md)
 </dt> </dl>
 
  

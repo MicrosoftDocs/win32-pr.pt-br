@@ -1,30 +1,30 @@
 ---
-title: Uma lista de reprodução avançada
-description: Uma lista de reprodução avançada
+title: Uma playlist avançada
+description: Uma playlist avançada
 ms.assetid: 3f27562f-bc3b-4b7f-a83b-78317d3ad612
 keywords:
-- Listas de reprodução do metarquivo do Windows Media, exemplos de playlist
-- listas de reprodução, exemplos de playlist
-- listas de reprodução de metarquivo, exemplos de playlist
-- Playlists do metarquivo do Windows Media, listas de reprodução de exemplo
-- listas de reprodução, exemplos de listas de reprodução
-- listas de reprodução de metarquivo, listas de reprodução de exemplo
-- Playlists do metarquivo do Windows Media, listas de reprodução de exemplo
-- listas de reprodução, listas de reprodução de exemplo
-- listas de reprodução de metarquivo, listas de reprodução de exemplo
-- Playlists do metarquivo do Windows Media, exemplo de código
-- listas de reprodução, exemplo de código
-- listas de reprodução de metarquivo, exemplo de código
-- Playlists do metarquivo do Windows Media, exemplo de playlist avançada
-- listas de reprodução, exemplo de playlist avançada
-- playlists de metarquivo, exemplo de playlist avançada
-- Exemplos do Windows Media Player, playlist
-- Windows Media Player, listas de reprodução de exemplo
-- Windows Media Player, listas de reprodução de exemplo
-- Windows Media Player, exemplo de playlist avançada
+- Windows Playlists de metadados de mídia, exemplos de playlist
+- playlists, exemplos de playlist
+- playlists de metadados, exemplos de playlist
+- Windows Playlists de metadados de mídia, playlists de exemplo
+- playlists, playlists de exemplo
+- playlists de metadados, playlists de exemplo
+- Windows Playlists de metadados de mídia, playlists de exemplo
+- playlists, playlists de exemplo
+- playlists de metadados, playlists de exemplo
+- Windows Playlists de metadados de mídia, exemplo de código
+- playlists, exemplo de código
+- playlists de metadados, exemplo de código
+- Windows Playlists de metadados de mídia, exemplo de playlist avançada
+- playlists, exemplo de playlist avançada
+- playlists de metadados, exemplo de playlist avançada
+- Windows Media Player,exemplos de playlist
+- Windows Media Player, exemplos de playlists
+- Windows Media Player, playlists de exemplo
+- Windows Media Player exemplo de playlist avançada
 - exemplos de playlist
-- exemplos de playlist
-- listas de reprodução de exemplo
+- exemplos de playlists
+- playlists de exemplo
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -32,16 +32,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f52251fedb13d41be5c94706bee4460c3f13c1e9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6573d5bef05c8af943368a12d03677526a9783915d6915b6cc5f1516bc9942f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118583253"
 ---
-# <a name="an-advanced-playlist"></a>Uma lista de reprodução avançada
+# <a name="an-advanced-playlist"></a>Uma playlist avançada
 
-O exemplo de playlist a seguir mostra como usar um conjunto mais completo de elementos de playlist. Ao escrever seu próprio código, você precisará alterar todas as URLs e nomes de arquivos para nomes de arquivos válidos que sejam acessíveis ao seu Windows Media Player.
+O exemplo de playlist a seguir mostra como usar um conjunto mais completo de elementos de playlist. Ao escrever seu próprio código, você precisará alterar todas as URLs e nomes de arquivo para nomes de arquivo válidos acessíveis ao seu Windows Media Player.
 
 Código de exemplo
 
@@ -88,44 +88,44 @@ Código de exemplo
 
 
 
-A tabela a seguir descreve a lista de reprodução avançada anterior.
+A tabela a seguir descreve a playlist avançada anterior.
 
 
 
 | Linha                                                                                            | Descrição                                                                                                                                                                                                                                                                                                                             |
 |-------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `<ASX version = "3.0">`                                                                     | O elemento [ASX](asx-element.md) identifica o cliente do (Windows Media Player) que esta é uma lista de reprodução do metarquivo do Windows Media. O atributo **version** especifica o número de versão dos elementos de metarquivo.                                                                                                                    |
-| `<TITLE>Advanced Playlist Demo</TITLE>`                                               | O elemento [title](title-element--metafile.md) identifica o título da lista de reprodução como um todo. O Windows Media Player exibe esses metadados como o título de exibição.                                                                                                                                                                        |
-| `<ABSTRACT>More Information at this Web Site< /ABSTRACT>`                             | O elemento [abstract](abstract-element.md) fornece a dica de ferramenta para o título show.                                                                                                                                                                                                                                                   |
-| `<MOREINFO HREF ="https://www.microsoft.com/windows/windowsmedia" />`                        | O elemento [moreinfo](moreinfo-element.md) vincula o título de mostrar a uma URL. Pausar o ponteiro do mouse sobre o título mostrar acessa a dica de ferramenta, se definido. Selecionar o título mostrar irá abrir a URL designada.                                                                                                                |
-| `<BANNER HREF = "..\\samples\\home.gif">`                                                   | O elemento [banner](banner-element.md) cria uma faixa de anúncio no Windows Media Player. O atributo **href** especifica o gráfico de faixa (que deve ter de 194 pixels de largura por 32 pixels de altura).                                                                                                                                  |
-| `<ABSTRACT>MSN website</ABSTRACT>`                                                    | O elemento [abstract](abstract-element.md) fornece a dica de ferramenta para a **faixa**.                                                                                                                                                                                                                                                   |
-| `<MOREINFO HREF = "https://www.msn.com" </ABSTRACT>`                                      | O elemento [moreinfo](moreinfo-element.md) vincula o gráfico de **faixa** a uma URL. Manter o ponteiro do mouse sobre a **faixa** acessa uma dica de ferramenta, se definido. A seleção da **faixa** abrirá a URL designada.                                                                                                                |
-| <PARAM name = "track" value="1"/>                                                         | O elemento [param](param-element.md) define um parâmetro personalizado. O atributo **Name** define o nome do parâmetro personalizado como "Track". O atributo **Value** define o valor de "Track" como "1".                                                                                                                          |
-| `</BANNER>`                                                                                 | Fecha o elemento de **faixa**                                                                                                                                                                                                                                                                                                           |
-| `<ENTRY ClientSkip="no">`                                                                   | Inicia o bloco do elemento de [entrada](entry-element.md) . Esse elemento define um clipe em uma lista de reprodução especificando um link no elemento **ref** . Definir **ClientSkip** como "não" significa que o usuário não pode avançar ou ir para o próximo clipe                                                                                             |
-| `<BANNER HREF = "..\\samples\\contact.gif">`                                                | Cria uma faixa de anúncio. O **href** é o gráfico de faixa (194x32 pixels).                                                                                                                                                                                                                                                      |
-| `<ABSTRACT>Visit Our website< /ABSTRACT>`                                             | Fornece a dica de ferramenta para a faixa.                                                                                                                                                                                                                                                                                                    |
-| `<MOREINFO HREF = "https://www.msn.com" />`                                                  | Fornece um link para a URL da faixa. A seleção da faixa se conecta à URL.                                                                                                                                                                                                                                                    |
-| `</BANNER>`                                                                                 | Fecha o elemento de **faixa**                                                                                                                                                                                                                                                                                                           |
-| `<MOREINFO HREF = "https://www.msn.com" />`                                                  | Fornece um link para a URL do texto do **título** do clipe.                                                                                                                                                                                                                                                                                 |
-| `<!--This is the ToolTip text for the Title text -->`                                       | Um comentário. Os [comentários](comments.md) só estarão visíveis quando o código for exibido.                                                                                                                                                                                                                                                        |
-| `<Abstract>Visit the YourImage website</abstract>`                                    | Fornece a dica de ferramenta para o texto do **título** do clipe.                                                                                                                                                                                                                                                                                       |
-| `<TITLE>The first entry in an advanced playlist</TITLE>`                              | Identifica o título do clipe. É o **título** do clipe porque ele está aninhado dentro de um elemento de **entrada** . O Windows Media Player exibe esses metadados como o título do clipe.                                                                                                                                                             |
-| `<AUTHOR>YourImage</AUTHOR>`                                                          | Identifica o autor do clipe de mídia. Esses metadados são exibidos como o **autor** do clipe pelo Windows Media Player.                                                                                                                                                                                                                     |
-| `<COPYRIGHT>(c)2000 YourImage</COPYRIGHT>`                                            | O elemento de [direitos autorais](copyright-element.md) especifica os direitos autorais associados ao clipe de mídia. O Windows Media Player exibe esses metadados como o clipe COPYRIGHT.                                                                                                                                                              |
-| `<!-- This is a comment. Change the following path to point to your Windows Media file -->` | Um comentário, no mesmo formato que comentários **XML** .                                                                                                                                                                                                                                                                                      |
-| `<REF HREF = "..\\media\\laure.wma" />`                                                     | URL para o conteúdo de mídia. O elemento [ref](ref-element.md) identifica a linha como um ponteiro para conteúdo de mídia. O atributo **href** é a URL para o arquivo. Observe o uso do fechamento do tipo XML do elemento "/>" em vez de " &lt; /ref &gt; ". Como esse elemento não tem elementos filho, ele se fecha.<br/> |
-| `</ENTRY>`                                                                                  | Especifica o final do primeiro elemento de **entrada** .                                                                                                                                                                                                                                                                                |
-| `<ENTRY>`                                                                                   | Inicia o segundo elemento de **entrada** .                                                                                                                                                                                                                                                                                                    |
+| `<ASX version = "3.0">`                                                                     | O [elemento ASX](asx-element.md) identifica para o cliente (Windows Media Player) que esta é uma playlist Windows metadados de mídia. O **atributo** version especifica o número de versão dos elementos de metadados.                                                                                                                    |
+| `<TITLE>Advanced Playlist Demo</TITLE>`                                               | O [elemento TITLE](title-element--metafile.md) identifica o título da playlist como um todo. Windows Media Player exibe os metadados como o título show.                                                                                                                                                                        |
+| `<ABSTRACT>More Information at this Web Site< /ABSTRACT>`                             | O [elemento ABSTRACT](abstract-element.md) fornece a Dica de Ferramenta para o título show.                                                                                                                                                                                                                                                   |
+| `<MOREINFO HREF ="https://www.microsoft.com/windows/windowsmedia" />`                        | O [elemento MOREINFO](moreinfo-element.md) vincula o título show a uma URL. Pausar o ponteiro do mouse sobre o título show acessa a Dica de Ferramenta, se definido. Selecionar o título mostrar abrirá a URL designada.                                                                                                                |
+| `<BANNER HREF = "..\\samples\\home.gif">`                                                   | O [elemento BANNER](banner-element.md) cria uma faixa de anúncio Windows Media Player. O **atributo HREF** especifica o gráfico de faixa (que deve ter 194 pixels de largura por 32 pixels de altura).                                                                                                                                  |
+| `<ABSTRACT>MSN website</ABSTRACT>`                                                    | O [elemento ABSTRACT](abstract-element.md) fornece a Dica de Ferramenta para o **BANNER.**                                                                                                                                                                                                                                                   |
+| `<MOREINFO HREF = "https://www.msn.com" </ABSTRACT>`                                      | O [elemento MOREINFO](moreinfo-element.md) vincula o **gráfico BANNER** a uma URL. Manter o ponteiro do mouse sobre **o BANNER** acessa uma Dica de Ferramenta, se definido. Selecionar a **FAIXA** abrirá a URL designada.                                                                                                                |
+| <PARAM name = "track" value="1"/>                                                         | O [elemento PARAM](param-element.md) define um parâmetro personalizado. O **atributo** name define o nome do parâmetro personalizado como "track". O **atributo** value define o valor de "track" como "1".                                                                                                                          |
+| `</BANNER>`                                                                                 | Fecha o **elemento BANNER**                                                                                                                                                                                                                                                                                                           |
+| `<ENTRY ClientSkip="no">`                                                                   | Inicia o bloco [de elemento ENTRY.](entry-element.md) Esse elemento define um clipe em uma playlist especificando um link no **elemento REF.** Definir **ClientSkip** como "não" significa que o usuário não pode avançar ou ir para o próximo clipe                                                                                             |
+| `<BANNER HREF = "..\\samples\\contact.gif">`                                                | Cria uma faixa de anúncio. O **HREF** é o gráfico de faixa (194 x 32 pixels).                                                                                                                                                                                                                                                      |
+| `<ABSTRACT>Visit Our website< /ABSTRACT>`                                             | Fornece a Dica de Ferramenta para a faixa.                                                                                                                                                                                                                                                                                                    |
+| `<MOREINFO HREF = "https://www.msn.com" />`                                                  | Fornece um link para a URL da faixa. Selecionar a faixa conecta-se à URL.                                                                                                                                                                                                                                                    |
+| `</BANNER>`                                                                                 | Fecha o **elemento BANNER**                                                                                                                                                                                                                                                                                                           |
+| `<MOREINFO HREF = "https://www.msn.com" />`                                                  | Fornece um link para a URL para o texto título **do** clipe.                                                                                                                                                                                                                                                                                 |
+| `<!--This is the ToolTip text for the Title text -->`                                       | Um comentário. [Os](comments.md) comentários só ficam visíveis quando o código é exibido.                                                                                                                                                                                                                                                        |
+| `<Abstract>Visit the YourImage website</abstract>`                                    | Fornece a Dica de Ferramenta para o texto **título do** clipe.                                                                                                                                                                                                                                                                                       |
+| `<TITLE>The first entry in an advanced playlist</TITLE>`                              | Identifica o título do clipe. É o **título** do clipe porque ele está aninhado dentro de um **elemento ENTRY.** Windows Media Player exibe os metadados como o título do clipe.                                                                                                                                                             |
+| `<AUTHOR>YourImage</AUTHOR>`                                                          | Identifica o autor do clipe de mídia. Os metadados são exibidos como o clipe **AUTHOR** por Windows Media Player.                                                                                                                                                                                                                     |
+| `<COPYRIGHT>(c)2000 YourImage</COPYRIGHT>`                                            | O [elemento COPYRIGHT](copyright-element.md) especifica os direitos autorais associados ao clipe de mídia. Windows Media Player exibe os metadados como o clipe COPYRIGHT.                                                                                                                                                              |
+| `<!-- This is a comment. Change the following path to point to your Windows Media file -->` | Um comentário, no mesmo formato que comentários **XML.**                                                                                                                                                                                                                                                                                      |
+| `<REF HREF = "..\\media\\laure.wma" />`                                                     | URL para o conteúdo da mídia. O [elemento REF](ref-element.md) identifica a linha como um ponteiro para o conteúdo da mídia. O **atributo HREF** é a URL para o arquivo. Observe o uso do fechamento como XML do elemento , "/>" em vez de " &lt; /REF &gt; ". Como esse elemento não tem elementos filho, ele se fecha.<br/> |
+| `</ENTRY>`                                                                                  | Especifica o final do do primeiro **elemento ENTRY.**                                                                                                                                                                                                                                                                                |
+| `<ENTRY>`                                                                                   | Inicia o segundo **elemento ENTRY.**                                                                                                                                                                                                                                                                                                    |
 | `<TITLE>The second Entry in the advanced playlist</TITLE>`                            | Identifica o título do segundo clipe.                                                                                                                                                                                                                                                                                                |
 | `<AUTHOR>Microsoft Corporation</AUTHOR>`                                              | Identifica o autor do segundo clipe de mídia.                                                                                                                                                                                                                                                                                         |
 | `<!--This is the ToolTip text for the Title/Author/Copyright text -->`                      | Um comentário. Ele só ficará visível quando o código for exibido.                                                                                                                                                                                                                                                                             |
-| `<ABSTRACT>This is where you can include your tool tips</ABSTRACT>`                   | Este é o texto de dica de ferramenta para o texto do **título** do clipe.                                                                                                                                                                                                                                                                            |
+| `<ABSTRACT>This is where you can include your tool tips</ABSTRACT>`                   | Este é o texto da Dica de Ferramenta para **o texto TITLE** do clipe.                                                                                                                                                                                                                                                                            |
 | `<!-- This is a comment. Change the following path to point to your Windows Media file -->` | Um comentário. Ele só ficará visível quando o código for exibido.                                                                                                                                                                                                                                                                             |
-| `<REF HREF = ..\\media\\mellow.wma" />`                                                     | Identifica a linha como um ponteiro para conteúdo de mídia. O atributo **href** é a URL para o arquivo.                                                                                                                                                                                                                                       |
-| `</ENTRY>`                                                                                  | Especifica o final do segundo elemento de **entrada** .                                                                                                                                                                                                                                                                                      |
-| `</ASX>`                                                                                    | Especifica o fim da lista de reprodução.                                                                                                                                                                                                                                                                                                      |
+| `<REF HREF = ..\\media\\mellow.wma" />`                                                     | Identifica a linha como um ponteiro para o conteúdo da mídia. O **atributo HREF** é a URL para o arquivo.                                                                                                                                                                                                                                       |
+| `</ENTRY>`                                                                                  | Especifica o final do segundo **elemento ENTRY.**                                                                                                                                                                                                                                                                                      |
+| `</ASX>`                                                                                    | Especifica o final da playlist.                                                                                                                                                                                                                                                                                                      |
 
 
 
@@ -135,19 +135,19 @@ A tabela a seguir descreve a lista de reprodução avançada anterior.
 
 <dl> <dt>
 
-[**Criando listas de reprodução de metarquivo**](creating-metafile-playlists.md)
+[**Criando playlists de metadados**](creating-metafile-playlists.md)
 </dt> <dt>
 
-[**Exemplos de playlist**](example-playlists.md)
+[**Playlists de exemplo**](example-playlists.md)
 </dt> <dt>
 
-[**Playlists de metarquivo**](metafile-playlists.md)
+[**Playlists de metadados**](metafile-playlists.md)
 </dt> <dt>
 
-[**Referência de elementos de metarquivo do Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referência de elementos de metadados de mídia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Guia de metarquivo do Windows Media**](windows-media-metafile-guide.md)
+[**Windows Guia de metadados de mídia**](windows-media-metafile-guide.md)
 </dt> </dl>
 
  

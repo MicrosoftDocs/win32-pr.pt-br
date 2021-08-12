@@ -3,8 +3,8 @@ title: Interface IWMPPlaylistCollection (VB e C) (WMP. h)
 description: Fornece métodos para manipular interfaces IWMPPlaylist e IWMPPlaylistArray em uma coleção.
 ms.assetid: 19a4e0d7-cb3f-42ec-9acb-7ac0c5837662
 keywords:
-- IWMPPlaylistCollection (VB e C) interface do Windows Media Player
-- IWMPPlaylistCollection (VB e C) interface do Windows Media Player, descrito
+- Windows Media Player de interface IWMPPlaylistCollection (VB e C)
+- Windows Media Player de interface IWMPPlaylistCollection (VB e C), descrita
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ccc97f9e98838fedc3bd5441d6bfda2da5319dd6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3ae130b9134d9ad6e19fa062946a591cdf7749b428201750fda8ff55252c3212
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118575212"
 ---
 # <a name="iwmpplaylistcollection-vb-and-c-interface"></a>Interface IWMPPlaylistCollection (VB e C#)
 
@@ -79,7 +79,7 @@ Obtenha uma interface **IWMPPlaylistCollection** usando a propriedade a seguir.
 
 <dl> <dt>
 
-[**Interfaces para Visual Basic .NET e C #**](interfaces-for-visual-basic--net-and-c.md)
+[**Interfaces para Visual Basic .net e C #**](interfaces-for-visual-basic--net-and-c.md)
 </dt> <dt>
 
 [**Interface IWMPPlaylist (VB e C#)**](iwmpplaylist--vb-and-c.md)

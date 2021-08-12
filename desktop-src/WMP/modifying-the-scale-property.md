@@ -3,25 +3,25 @@ title: Modificando a propriedade Scale
 description: Modificando a propriedade Scale
 ms.assetid: 32ebaa54-ed13-4b10-8876-bf8e188d7317
 keywords:
-- Plug-ins do Windows Media Player, propriedades de exemplo de eco
+- Windows Media Player plug-ins, propriedades de exemplo de eco
 - plug-ins, propriedades de exemplo de eco
 - plug-ins de processamento de sinal digital, propriedades de exemplo de eco
-- Plug-ins do DSP, propriedades de exemplo de eco
-- Exemplo de plug-in do DSP de eco, Propriedade Scale
+- Plug-ins DSP, propriedades de exemplo de eco
+- Exemplo de plug-in do DSP de eco, propriedade de escala
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cd91e2315db9d0d1e14d2aec55f79a8b05c442ac
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b10073e01213469dcb6a85ddffd378421fddb6ae8f2fd432b9822c3a5046fdd5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105763909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118574613"
 ---
 # <a name="modifying-the-scale-property"></a>Modificando a propriedade Scale
 
-A implementação do assistente padrão expõe a propriedade Scale. Você pode alterar a implementação existente para expor a propriedade tempo de atraso em vez disso.
+A implementação padrão do assistente expõe a propriedade de escala. Você pode alterar a implementação existente para expor a propriedade de tempo de atraso.
 
-Primeiro, use o exemplo a seguir para alterar os protótipos de função para obter \_ escala e colocar \_ escala em Echo. h. Altere o nome dos métodos e os tipos de dados para os parâmetros:
+Primeiro, use o exemplo a seguir para alterar os protótipos de função para obter \_ escala e colocar a escala em \_ Echo.h. Altere o nome dos métodos e os tipos de dados para os parâmetros:
 
 
 ```C++
@@ -33,7 +33,7 @@ STDMETHOD(put_delay)(DWORD newVal);
 
 
 
-Em seguida, altere as implementações dos \_ métodos obter escala e colocar \_ escala em Echo. cpp. Faça com que o código corresponda aos seguintes exemplos:
+Em seguida, altere as implementações da escala get e coloque os métodos \_ \_ de escala em Echo.cpp. Faça o código corresponder aos seguintes exemplos:
 
 
 ```C++
@@ -64,7 +64,7 @@ STDMETHODIMP CEcho::put_delay(DWORD newVal)
 
 O código de exemplo anterior altera os nomes de método e os tipos de dados de parâmetro. O nome da variável de membro deve ter sido alterado anteriormente. Lembre-se de alterar os comentários que introduzem cada método também.
 
-Agora, altere a definição da interface. O código a seguir substitui o código na declaração de interface IEcho em Echo. idl:
+Agora, altere a definição da interface. O código a seguir substitui o código na declaração da interface IEcho em Echo.idl:
 
 
 ```C++
@@ -82,9 +82,9 @@ HRESULT put_delay([in] DWORD newVal);
 [**Propriedades de exemplo de eco**](echo-sample-properties.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

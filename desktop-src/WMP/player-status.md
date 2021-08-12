@@ -1,9 +1,9 @@
 ---
 title: Player. status
-description: A propriedade status recupera um valor que indica o status do Windows Media Player.
+description: A propriedade status recupera um valor que indica o status de Windows Media Player.
 ms.assetid: 781c44d0-15cf-4be2-9e83-76706ce1cb85
 keywords:
-- Player. status Windows Media Player
+- Windows Media Player Player. status
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d54c71e6ab8ece61fb97960bd2956393b1ae584
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a03ef010bfcb5ee936183724331e97fac5d6f5912d87c5281a55106519c104e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105814020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118572045"
 ---
 # <a name="playerstatus"></a>Player. status
 
-A propriedade **status** recupera um valor que indica o status do Windows Media Player.
+A propriedade **status** recupera um valor que indica o status de Windows Media Player.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 *Player* . **status** do
 

@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 85c7df5649ea430518ee7e848645680336a37b86
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 9691ff65709c451efc5de92099a6ec37d333a476d2997b365ba6b1df73546fbd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104008373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118274770"
 ---
 # <a name="eapmethod-eaphostconfig-element"></a>Elemento EapMethod (EapHostConfig)
 
-O elemento **EapMethod (EapHostConfig)** identifica o método que está sendo referenciado.
+O **elemento EapMethod (EapHostConfig)** identifica o método que está sendo referenciado.
 
 ``` syntax
 <xs:element name="EapMethod"
@@ -31,7 +31,7 @@ O elemento **EapMethod (EapHostConfig)** identifica o método que está sendo re
  />
 ```
 
-O elemento **EapMethod** é definido pelo elemento [**EapHostConfig**](eaphostconfigschema-eaphostconfig-element.md) .
+O **elemento EapMethod** é definido pelo [**elemento EapHostConfig.**](eaphostconfigschema-eaphostconfig-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,8 +39,8 @@ O elemento **EapMethod** é definido pelo elemento [**EapHostConfig**](eaphostco
 
 | Função | Versão mínima do SO |
 |------|--------------------|
-| Cliente<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>              |
-| Servidor<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>              |
+| Servidor<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

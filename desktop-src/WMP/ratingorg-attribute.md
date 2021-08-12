@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28f51c06fec5e360793d5314f5fa9904c8d03850
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cbeb5e83b0c572fe09cad987e63712a57fd9bde1e059e5d3aeacf1e41f4316a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118570489"
 ---
 # <a name="ratingorg-attribute"></a>Atributo RatingOrg
 
-O atributo **RatingOrg** é o nome do provedor do valor de classificação.
+O **atributo RatingOrg** é o nome do provedor do valor de classificação.
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -31,7 +31,7 @@ O atributo **RatingOrg** é o nome do provedor do valor de classificação.
 
 Esse atributo é armazenado somente no cache da biblioteca.
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,7 +39,7 @@ Para determinar se você pode alterar o valor desse atributo, use o método [Med
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 

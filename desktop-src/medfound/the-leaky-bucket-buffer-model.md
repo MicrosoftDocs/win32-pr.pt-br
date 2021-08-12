@@ -4,12 +4,12 @@ ms.assetid: 2f7f80d6-3abb-462f-a571-b223a1d59da6
 title: O modelo de buffer de buckets vazados (Microsoft Media Foundation)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f5a99932fb121808f6a49323360c47c09d0acbb
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 848a0088a0e2b155deb6945e4a6532edb2677dc484341e50172f1bb1eb8187d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "105761582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118238043"
 ---
 # <a name="the-leaky-bucket-buffer-model-microsoft-media-foundation"></a>O modelo de buffer de buckets vazados (Microsoft Media Foundation)
 
@@ -21,7 +21,7 @@ Este tópico descreve o modelo de "Bucket de vazamentos" de buffers para codific
 
 -   [O Bucket de vazamentos](#the-leaky-bucket)
 -   [O Bucket em uso](#the-bucket-in-use)
--   [Definindo valores de Bucket vazado para fluxos ASF](#setting-leaky-bucket-values-for-asf-streams)
+-   [definindo valores de Bucket vazado para Fluxos ASF](#setting-leaky-bucket-values-for-asf-streams)
 -   [Valores de buckets vazados no Multiplexador de ASF](#leaky-bucket-values-in-the-asf-multiplexer)
 -   [Atualizando valores de buckets vazados no coletor de mídia ASF](#updating-leaky-bucket-values-in-the-asf-media-sink)
 -   [Tópicos relacionados](#related-topics)
@@ -52,7 +52,7 @@ Os dados de carga ASF podem inserir o Bucket de vazamento em horários irregular
 
 Para o streaming sem problemas na rede, fluxos compactados dentro do conteúdo de mídia devem manter uma taxa de bits constante durante a duração da reprodução. O modelo de Bucket vazado do ASF garante que os dados de mídia sejam enviados pela rede a uma taxa de bits constante. Os parâmetros do Bucket de vazamento são especificados no objeto de propriedades de fluxo estendido do [objeto de cabeçalho ASF](asf-file-structure.md). No Microsoft Media Foundation, eles são definidos como atributos no tipo de mídia que representa o fluxo.
 
-Os valores de Bucket de vazamento são definidos no coletor de arquivos ASF e no objeto multiplexador ASF subjacente e no codificador de mídia do Windows. Esses valores podem ser iguais ou diferentes. Por exemplo, considere um cenário de streaming, que exige que os exemplos de áudio sejam entregues mais tarde do que os exemplos de vídeo para que o arquivo possa ser transmitido sem latência. Para conseguir isso, o Bucket de vazamentos do fluxo de áudio no coletor de mídia pode ser definido como um valor maior do que o valor definido no codificador de áudio do Windows Media.
+os valores de bucket de vazamento são definidos no coletor de arquivos asf e no objeto multiplexador asf subjacente e no codificador de mídia Windows. Esses valores podem ser iguais ou diferentes. Por exemplo, considere um cenário de streaming, que exige que os exemplos de áudio sejam entregues mais tarde do que os exemplos de vídeo para que o arquivo possa ser transmitido sem latência. para conseguir isso, o bucket de vazamento do fluxo de áudio no coletor de mídia pode ser definido como um valor maior do que o valor definido no codificador de áudio de mídia Windows.
 
 Para definir valores de B/R no codificador, o aplicativo deve definir as propriedades [**MFPKEY \_ RAVG**](mfpkey-ravgproperty.md), [**MFPKEY \_ BAVG**](mfpkey-bavgproperty.md), [**MFPKEY \_ RMAX**](mfpkey-rmaxproperty.md)e [**MFPKEY \_ BMAX**](mfpkey-bmaxproperty.md) . Para obter informações sobre como definir propriedades no codificador, consulte [Propriedades de codificação](configuring-the-encoder.md).
 
@@ -68,7 +68,7 @@ Até agora, os exemplos só discutiam o buffer usado pelo decodificador, mas um 
 
 Considere o exemplo a seguir de um codificador e um decodificador conectado em uma rede. Você codifica um arquivo de vídeo em 30 quadros por segundo com uma taxa de bits de 6.000 bits por segundo e uma janela de buffer de 3 segundos (um tamanho total de buffer de 18.000 bits). O primeiro exemplo é codificado como um quadro-chave e ocupa 7.000 bits. O buffer do codificador agora contém 7.000 bits. Os próximos 29 quadros são todos os quadros Delta que totalizam 3.000 bits. Portanto, o primeiro segundo de conteúdo (30 quadros) colocaria a totalidade do buffer em 10.000 bits se nada estivesse vazando. Sabemos que a taxa de bits do fluxo é de 6.000 bits por segundo, portanto, depois que o primeiro segundo de conteúdo codificado é colocado no buffer do codificador, a totalidade cai para 4.000 bits. No aplicativo de decodificação, esse fluxo é entregue ao buffer do decodificador em 6.000 bits por segundo. Depois de um segundo, o buffer contém 6.000 bits. O primeiro exemplo contém 7.000 bits, portanto, o buffer do decodificador deve ser preenchido mais antes que o decodificador comece a remover amostras.
 
-## <a name="setting-leaky-bucket-values-for-asf-streams"></a>Definindo valores de Bucket vazado para fluxos ASF
+## <a name="setting-leaky-bucket-values-for-asf-streams"></a>definindo valores de Bucket vazado para Fluxos ASF
 
 Em um cenário de codificação de arquivo, um aplicativo pode definir os valores de Bucket de vazamentos ao configurar os fluxos no [perfil ASF](asf-profile.md).
 
@@ -89,9 +89,9 @@ Os valores fornecidos pelo aplicativo dependem do tipo de codificação e do tip
 
 Para modos de codificação de 2 passagens, você precisa definir ambos os atributos para especificar os valores médio e máximo.
 
-Para a codificação de VBR, o aplicativo pode consultar os valores de Bucket de vazamentos usados pelo codificador somente após a conclusão da passagem de codificação. Portanto, ao configurar o coletor de mídia, o aplicativo pode optar por não definir os atributos ou propriedades relacionados a buckets vazados. Após a codificação, o aplicativo deve consultar o codificador para as propriedades [**MFPKEY \_ RAVG**](mfpkey-ravgproperty.md), [**MFPKEY \_ BAVG**](mfpkey-bavgproperty.md), [**MFPKEY \_ RMAX**](mfpkey-rmaxproperty.md)e [**MFPKEY \_ BMAX**](mfpkey-bmaxproperty.md) e defini-las no coletor de mídia para que os valores precisos sejam refletidos no objeto header. Para obter o exemplo de código sobre como atualizar os valores para a codificação de VBR, consulte "atualizar propriedades de codificação no coletor de arquivos", no [tutorial: 1-transmitir codificação de mídia do Windows](tutorial--1-pass-windows-media-encoding.md).
+Para a codificação de VBR, o aplicativo pode consultar os valores de Bucket de vazamentos usados pelo codificador somente após a conclusão da passagem de codificação. Portanto, ao configurar o coletor de mídia, o aplicativo pode optar por não definir os atributos ou propriedades relacionados a buckets vazados. Após a codificação, o aplicativo deve consultar o codificador para as propriedades [**MFPKEY \_ RAVG**](mfpkey-ravgproperty.md), [**MFPKEY \_ BAVG**](mfpkey-bavgproperty.md), [**MFPKEY \_ RMAX**](mfpkey-rmaxproperty.md)e [**MFPKEY \_ BMAX**](mfpkey-bmaxproperty.md) e defini-las no coletor de mídia para que os valores precisos sejam refletidos no objeto header. para obter o exemplo de código sobre como atualizar os valores para a codificação de VBR, consulte "atualizar propriedades de codificação no coletor de arquivos" no [Tutorial: 1-passar Windows codificação de mídia](tutorial--1-pass-windows-media-encoding.md).
 
-Se você estiver copiando o conteúdo do Windows Media do coletor de origem para mídia sem codificação, os valores de Bucket de vazamento devem ser definidos no coletor de mídia.
+se você estiver copiando Windows conteúdo de mídia do coletor de origem para mídia sem codificação, os valores de bucket de vazamento devem ser definidos no coletor de mídia.
 
 ## <a name="leaky-bucket-values-in-the-asf-multiplexer"></a>Valores de buckets vazados no Multiplexador de ASF
 
@@ -107,7 +107,7 @@ Um aplicativo pode substituir os valores de Bucket de vazamento de nível de flu
 
 Essa propriedade deve ser definida depois que você definir o tipo de saída no codificador. Com base na taxa de bits definida no tipo de mídia, o codificador calcula o tamanho do buffer para garantir que os exemplos de mídia gerados nunca estourem o buffer. O codificador faz os ajustes necessários durante a compactação para manter a taxa de bits das amostras compactadas dentro dos limites descritos pela janela taxa de bits e buffer.
 
-Semelhante aos atributos de configuração de fluxo para buckets vazados, defina a taxa média de bits e o tamanho do buffer e a totalidade do buffer inicial em uma matriz de DWORDs. Para obter mais informações, consulte a seção "definindo valores de Bucket de vazamento para fluxos ASF" neste tópico.
+Semelhante aos atributos de configuração de fluxo para buckets vazados, defina a taxa média de bits e o tamanho do buffer e a totalidade do buffer inicial em uma matriz de DWORDs. para obter mais informações, consulte a seção "definindo valores de Bucket de vazamento para ASF Fluxos" neste tópico.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

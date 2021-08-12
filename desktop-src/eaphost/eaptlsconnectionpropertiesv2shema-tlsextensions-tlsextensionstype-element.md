@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f8d92bd5718e626f95cc7d08fbc01d5881ff9b59
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 3361f9f92fd04aa0e08c6eba76e05bcfe870c8c769a87da95e667c78e45e01b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105791508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118273515"
 ---
 # <a name="performservervalidation-element"></a>Elemento PerformServerValidation
 
-O elemento **PerformServerValidation (EapType)** indica se a validação do servidor é executada.
+O **elemento PerformServerValidation (EapType)** indica se a validação do servidor é executada.
 
 ``` syntax
 <xs:element name="PerformServerValidation"
@@ -31,11 +31,11 @@ O elemento **PerformServerValidation (EapType)** indica se a validação do serv
  />
 ```
 
-O elemento **PerformServerValidation** é definido pelo elemento [**EapType**](eaptlsconnectionpropertiesv1schema-eaptype-element.md) .
+O **elemento PerformServerValidation** é definido pelo [**elemento EapType.**](eaptlsconnectionpropertiesv1schema-eaptype-element.md)
 
 ## <a name="remarks"></a>Comentários
 
-O elemento **PerformServerValidation** é opcional.
+O **elemento PerformServerValidation** é opcional.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,8 +43,8 @@ O elemento **PerformServerValidation** é opcional.
 
 | Função | Versão mínima do SO |
 |------|--------------------|
-| Cliente<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>              |
+| Servidor<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/> |
 
 
 
@@ -73,7 +73,7 @@ O elemento **PerformServerValidation** é opcional.
 [eaptlsconnectionpropertiesv2](eaptlsconnectionpropertiesv2schema-schema.md)
 </dt> <dt>
 
-[Elementos do esquema eaptlsconnectionpropertiesv2](eaptlsconnectionpropertiesv2schema-elements.md)
+[Elementos de esquema eaptlsconnectionpropertiesv2](eaptlsconnectionpropertiesv2schema-elements.md)
 </dt> <dt>
 
 [**PerformServerValidation (EapType)**](eaptlsconnectionpropertiesv1schema-performservervalidation-peapextensionstype-element.md)

@@ -1,12 +1,12 @@
 - name: Entrada de teclado e mouse
   href: user-input.md
   items:
-    - name: Entrada de teclado
+    - name: Entrada do teclado
       href: keyboard-input.md
       items:
         - name: Sobre a entrada do teclado
           href: about-keyboard-input.md
-        - name: Usando entrada de teclado
+        - name: Usando a entrada do teclado
           href: using-keyboard-input.md
         - name: Referência de entrada do teclado
           href: keyboard-input-reference.md
@@ -18,11 +18,11 @@
                   href: /windows/win32/api/winuser/nf-winuser-activatekeyboardlayout
                 - name: BlockInput
                   href: /windows/win32/api/winuser/nf-winuser-blockinput
-                - name: EnableWindow
+                - name: Enablewindow
                   href: /windows/win32/api/winuser/nf-winuser-enablewindow
                 - name: GetActiveWindow
                   href: /windows/win32/api/winuser/nf-winuser-getactivewindow
-                - name: GetAsyncKeyState
+                - name: Getasynckeystate
                   href: /windows/win32/api/winuser/nf-winuser-getasynckeystate
                 - name: GetFocus
                   href: /windows/win32/api/winuser/nf-winuser-getfocus
@@ -36,17 +36,17 @@
                   href: /windows/win32/api/winuser/nf-winuser-getkeyboardlayoutnamea
                 - name: GetKeyboardState
                   href: /windows/win32/api/winuser/nf-winuser-getkeyboardstate
-                - name: Getkeyboardtype
+                - name: GetKeyboardType
                   href: /windows/win32/api/winuser/nf-winuser-getkeyboardtype
                 - name: GetKeyNameText
                   href: /windows/win32/api/winuser/nf-winuser-getkeynametexta
-                - name: GetKeyState
+                - name: Getkeystate
                   href: /windows/win32/api/winuser/nf-winuser-getkeystate
                 - name: GetLastInputInfo
                   href: /windows/win32/api/winuser/nf-winuser-getlastinputinfo
                 - name: IsWindowEnabled
                   href: /windows/win32/api/winuser/nf-winuser-iswindowenabled
-                - name: keybd_event
+                - name: Keybd_event
                   href: /windows/win32/api/winuser/nf-winuser-keybd_event
                 - name: LoadKeyboardLayout
                   href: /windows/win32/api/winuser/nf-winuser-loadkeyboardlayouta
@@ -56,21 +56,21 @@
                   href: /windows/win32/api/winuser/nf-winuser-mapvirtualkeyexa
                 - name: OemKeyScan
                   href: /windows/win32/api/winuser/nf-winuser-oemkeyscan
-                - name: RegisterHotKey
+                - name: Registerhotkey
                   href: /windows/win32/api/winuser/nf-winuser-registerhotkey
-                - name: SendInput
+                - name: Sendinput
                   href: /windows/win32/api/winuser/nf-winuser-sendinput
-                - name: SetActiveWindow
+                - name: Setactivewindow
                   href: /windows/win32/api/winuser/nf-winuser-setactivewindow
                 - name: SetFocus
                   href: /windows/win32/api/winuser/nf-winuser-setfocus
-                - name: Setkeyboardstate
+                - name: SetKeyboardState
                   href: /windows/win32/api/winuser/nf-winuser-setkeyboardstate
-                - name: Toascii
+                - name: ToAscii
                   href: /windows/win32/api/winuser/nf-winuser-toascii
                 - name: ToAsciiEx
                   href: /windows/win32/api/winuser/nf-winuser-toasciiex
-                - name: Tounicode
+                - name: ToUnicode
                   href: /windows/win32/api/winuser/nf-winuser-tounicode
                 - name: ToUnicodeEx
                   href: /windows/win32/api/winuser/nf-winuser-tounicodeex
@@ -87,38 +87,38 @@
               items:
                 - name: WM_GETHOTKEY
                   href: wm-gethotkey.md
-                - name: WM_SETHOTKEY
+                - name: Wm_sethotkey
                   href: wm-sethotkey.md
-            - name: Notificações de entrada de teclado
+            - name: Notificações de entrada do teclado
               href: keyboard-input-notifications.md
               items:
-                - name: WM_ACTIVATE
+                - name: Wm_activate
                   href: wm-activate.md
                 - name: WM_APPCOMMAND
                   href: wm-appcommand.md
-                - name: WM_CHAR
+                - name: Wm_char
                   href: wm-char.md
-                - name: WM_DEADCHAR
+                - name: Wm_deadchar
                   href: wm-deadchar.md
-                - name: WM_HOTKEY
+                - name: Wm_hotkey
                   href: wm-hotkey.md
-                - name: WM_KEYDOWN
+                - name: Wm_keydown
                   href: wm-keydown.md
-                - name: WM_KEYUP
+                - name: Wm_keyup
                   href: wm-keyup.md
-                - name: WM_KILLFOCUS
+                - name: Wm_killfocus
                   href: wm-killfocus.md
-                - name: WM_SETFOCUS
+                - name: Wm_setfocus
                   href: wm-setfocus.md
-                - name: WM_SYSDEADCHAR
+                - name: Wm_sysdeadchar
                   href: wm-sysdeadchar.md
-                - name: WM_SYSKEYDOWN
+                - name: Wm_syskeydown
                   href: wm-syskeydown.md
-                - name: WM_SYSKEYUP
+                - name: Wm_syskeyup
                   href: wm-syskeyup.md
                 - name: WM_UNICHAR
                   href: wm-unichar.md
-            - name: Estruturas de entrada do teclado
+            - name: Estruturas de entrada de teclado
               href: keyboard-input-structures.md
               items:
                 - name: HARDWAREINPUT
@@ -134,7 +134,7 @@
             - name: Constantes de entrada de teclado
               href: keyboard-input-constants.md
               items:
-                - name: Códigos de Virtual-Key
+                - name: códigos Virtual-Key dados
                   href: virtual-key-codes.md
     - name: Entrada do mouse
       href: mouse-input.md
@@ -161,15 +161,15 @@
                   href: /windows/win32/api/winuser/nf-winuser-getmousemovepointsex
                 - name: mouse_event
                   href: /windows/win32/api/winuser/nf-winuser-mouse_event
-                - name: ReleaseCapture
+                - name: Releasecapture
                   href: /windows/win32/api/winuser/nf-winuser-releasecapture
-                - name: SetCapture
+                - name: Setcapture
                   href: /windows/win32/api/winuser/nf-winuser-setcapture
-                - name: Setdoubleclicktime
+                - name: SetDoubleClickTime
                   href: /windows/win32/api/winuser/nf-winuser-setdoubleclicktime
                 - name: SwapMouseButton
                   href: /windows/win32/api/winuser/nf-winuser-swapmousebutton
-                - name: TrackMouseEvent
+                - name: Trackmouseevent
                   href: /windows/win32/api/winuser/nf-winuser-trackmouseevent
             - name: Macros de entrada do mouse
               href: mouse-input-macros.md
@@ -197,11 +197,11 @@
               items:
                 - name: WM_CAPTURECHANGED
                   href: wm-capturechanged.md
-                - name: WM_LBUTTONDBLCLK
+                - name: Wm_lbuttondblclk
                   href: wm-lbuttondblclk.md
                 - name: WM_LBUTTONDOWN
                   href: wm-lbuttondown.md
-                - name: WM_LBUTTONUP
+                - name: Wm_lbuttonup
                   href: wm-lbuttonup.md
                 - name: WM_MBUTTONDBLCLK
                   href: wm-mbuttondblclk.md
@@ -217,11 +217,11 @@
                   href: wm-mousehwheel.md
                 - name: WM_MOUSELEAVE
                   href: wm-mouseleave.md
-                - name: WM_MOUSEMOVE
+                - name: Wm_mousemove
                   href: wm-mousemove.md
                 - name: WM_MOUSEWHEEL
                   href: wm-mousewheel.md
-                - name: WM_NCHITTEST
+                - name: Wm_nchittest
                   href: wm-nchittest.md
                 - name: WM_NCLBUTTONDBLCLK
                   href: wm-nclbuttondblclk.md
@@ -255,7 +255,7 @@
                   href: wm-ncxbuttonup.md
                 - name: WM_RBUTTONDBLCLK
                   href: wm-rbuttondblclk.md
-                - name: WM_RBUTTONDOWN
+                - name: Wm_rbuttondown
                   href: wm-rbuttondown.md
                 - name: WM_RBUTTONUP
                   href: wm-rbuttonup.md
@@ -270,7 +270,7 @@
               items:
                 - name: MOUSEMOVEPOINT
                   href: /windows/win32/api/winuser/ns-winuser-mousemovepoint
-                - name: TRACKMOUSEEVENT
+                - name: Trackmouseevent
                   href: /windows/win32/api/winuser/ns-winuser-trackmouseevent
     - name: Entrada bruta
       href: raw-input.md
@@ -299,7 +299,7 @@
                   href: /windows/win32/api/winuser/nf-winuser-getregisteredrawinputdevices
                 - name: RegisterRawInputDevices
                   href: /windows/win32/api/winuser/nf-winuser-registerrawinputdevices
-            - name: Macros de entrada brutas
+            - name: Macros de Entrada Bruta
               href: raw-input-macros.md
               items:
                 - name: GET_RAWINPUT_CODE_WPARAM

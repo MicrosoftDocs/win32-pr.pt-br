@@ -4,12 +4,12 @@ ms.assetid: d3d22ae6-7d16-4f25-9f15-21b2163cb0f5
 title: Usando o moniker da fila
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 228964157d08aca868474167ae16590692f16ba9
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8e83d720478064f1427966de69d98ef06ac82f1da98cc50aa1ec3d3b3ac4c4d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105784528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118305153"
 ---
 # <a name="using-the-queue-moniker"></a>Usando o moniker da fila
 
@@ -96,7 +96,7 @@ A tabela a seguir lista os parâmetros de moniker da fila que afetam a fila de d
 <td>Especifica o nome completo do caminho da fila do enfileiramento de mensagens. Se não for especificado, o nome do caminho da fila do enfileiramento de mensagens associado ao aplicativo configurado será usado. Para substituir o nome de destino, o caminho pode ser especificado no seguinte formato para uma instalação de grupo de trabalho do enfileiramento de mensagens:<br/> Queue:<em>PathName</em> = <em>ComputerName</em>\Bytes privados $ \ AppName/New: MyProject. CMyClass<br/>
 <blockquote>
 [!Note]<br />
-As linguagens de programação C e Microsoft Visual C++ exigem duas barras invertidas para representar uma barra invertida em literais de cadeia de caracteres, por exemplo, folha de pagamento de Chicago \\ .
+as linguagens de programação C e Microsoft Visual C++ exigem duas barras invertidas para representar uma barra invertida em literais de cadeia de caracteres, por exemplo, folha de pagamento de chicago \\ .
 </blockquote>
 <br/></td>
 </tr>
@@ -205,28 +205,28 @@ O ouvinte de componentes na fila COM+ recebe somente de filas associadas ao apli
 <td><em>Prioridade</em><br/></td>
 <td>Especifica um nível de prioridade de mensagem, dentro dos valores de enfileiramento de mensagens permitidos.<br/> Valores aceitáveis:<br/>
 <ul>
-<li>MQ_MIN_PRIORITY, 0</li>
-<li>MQ_MAX_PRIORITY, 7</li>
-<li>MQ_DEFAULT_PRIORITY, 3</li>
+<li>MQ_MIN_PRIORITY,0</li>
+<li>MQ_MAX_PRIORITY,7</li>
+<li>MQ_DEFAULT_PRIORITY,3</li>
 <li>Número entre 0 e 7</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><em>PrivLevel</em><br/></td>
+<td><em>Privlevel</em><br/></td>
 <td>Especifica um nível de privacidade, usado para criptografar mensagens.<br/> Valores aceitáveis:<br/>
 <ul>
-<li>MQMSG_PRIV_LEVEL_NONE, NENHUM, 0</li>
-<li>MQMSG_PRIV_LEVEL_BODY, CORPO,</li>
+<li>MQMSG_PRIV_LEVEL_NONE, NONE, 0</li>
+<li>MQMSG_PRIV_LEVEL_BODY, BODY,</li>
 <li>MQMSG_PRIV_LEVEL_BODY_BASE, BODY_BASE, 1</li>
 <li>MQMSG_PRIV_LEVEL_BODY_ENHANCED, BODY_ENHANCED, 3</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><em>Rastreou</em><br/></td>
-<td>Especifica as opções de rastreamento, usadas no rastreamento do roteamento de enfileiramento de mensagens.<br/> Valores aceitáveis:<br/>
+<td><em>Rastreamento</em><br/></td>
+<td>Especifica as opções de rastreamento, usadas no rastreamento de roteamento de En en enroscar mensagens.<br/> Valores aceitáveis:<br/>
 <ul>
-<li>MQMSG_TRACE_NONE, 0</li>
-<li>MQMSG_SEND_ROUTE_TO_REPORT_QUEUE, 1</li>
+<li>MQMSG_TRACE_NONE,0</li>
+<li>MQMSG_SEND_ROUTE_TO_REPORT_QUEUE,1</li>
 </ul></td>
 </tr>
 </tbody>
@@ -236,10 +236,10 @@ O ouvinte de componentes na fila COM+ recebe somente de filas associadas ao apli
 
  
 
-O conjunto completo de funções SDK administrativas do COM+ está disponível usando objetos COM. Isso permite que qualquer programa inicie e interrompa aplicativos COM+ conforme necessário.
+O conjunto completo de funções do SDK Administrativo COM+ está disponível usando objetos COM. Isso permite que qualquer programa inicie e pare aplicativos COM+, conforme necessário.
 
 > [!Note]  
-> Quando um aplicativo COM+ é iniciado, ele é o aplicativo em execução, e não os componentes individuais dentro do aplicativo. Se um aplicativo chamar um componente não enfileirado, o aplicativo COM+ que contém o componente será iniciado. Se a caixa de seleção ouvinte estiver habilitada, o ouvinte também será iniciado e começará a processar mensagens para componentes enfileirados. Embora o serviço de componentes na fila possa ser iniciado dessa forma, se você empacotar componentes enfileirados e não enfileirados em um único aplicativo COM+, certifique-se de que você realmente deseja que os componentes na fila sejam iniciados se um componente não enfileirado for executado. Se esse não for o caso, empacote os componentes na fila em um aplicativo COM+ separado dos outros componentes.
+> Quando um aplicativo COM+ é iniciado, ele é o aplicativo que está em execução, não os componentes individuais dentro do aplicativo. Se um aplicativo chamar um componente que não está na fila, o aplicativo COM+ que contém o componente será iniciado. Se a caixa de seleção do ouvinte estiver habilitada, o ouvinte também iniciará e iniciará o processamento de mensagens para componentes na fila. Embora o serviço de componentes na fila possa ser iniciado dessa forma, se você empacotar componentes na fila e que não estão na fila em um único aplicativo COM+, certifique-se de que você realmente deseja que os componentes na fila sejam iniciados se um componente que não está na fila for executado. Se esse não for o caso, empacote os componentes na fila em um aplicativo COM+ separado dos outros componentes.
 
  
 

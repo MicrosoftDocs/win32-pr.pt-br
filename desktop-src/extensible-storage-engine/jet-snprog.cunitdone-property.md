@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_SNPROG. cunitDone'
-title: Propriedade JET_SNPROG. cunitDone
+description: 'Saiba mais sobre: JET_SNPROG.cunitDone'
+title: propriedade JET_SNPROG.cunitDone
 TOCTitle: 'cunitDone property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_SNPROG.cunitDone
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_snprog.cunitdone(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 63c4b10ba9a16b7e63e9eaa0f866b21492fe11d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 79b099b9a6211f73255abe8a758f29a9810b9ee7014641f8a8a3cff8383dafdb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118252648"
 ---
-# <a name="jet_snprogcunitdone-property"></a>Propriedade JET_SNPROG. cunitDone
+# <a name="jet_snprogcunitdone-property"></a>propriedade JET_SNPROG.cunitDone
 
-Obtém o número de unidades de trabalho que já foram concluídas durante a operação de execução demorada.
+Obtém o número de unidades de trabalho que já foram concluídas durante a operação de execução longa.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public int cunitDone { get; internal set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_SNPROG](./jet-snprog-class.md)
+[JET_SNPROG classe](./jet-snprog-class.md)
 
-[Membros do JET_SNPROG](./jet-snprog-members.md)
+[JET_SNPROG membros](./jet-snprog-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

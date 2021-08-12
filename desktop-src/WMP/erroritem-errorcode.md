@@ -3,7 +3,7 @@ title: ErrorItem. errorCode
 description: A propriedade errorCode recupera o código de erro atual.
 ms.assetid: 1495ec34-0995-40c6-bfd0-f3695784e057
 keywords:
-- ErrorItem. errorCode Windows Media Player
+- Windows Media Player ErrorItem. errorCode
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c934b83b28e510f29b84a45b48bde700968c97b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f426bbaf1092b64cdb3578cb681282c9b27d9d2e2e23a69d50f9c065353ad104
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118577700"
 ---
 # <a name="erroritemerrorcode"></a>ErrorItem. errorCode
 
@@ -37,11 +37,11 @@ Essa propriedade é um **número** somente leitura (**Long**).
 
 ## <a name="remarks"></a>Comentários
 
-Você deve definir *as configurações*. **enableErrorDialogs** como false se você optar por exibir mensagens de erro personalizadas.
+você deve definir *Configurações*. **enableErrorDialogs** como false se você optar por exibir mensagens de erro personalizadas.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa *ErrorItem*. **ErrorCode** em um manipulador de eventos para exibir o código de erro para o usuário. O objeto de **jogador** foi criado com ID = "Player".
+o exemplo a seguir JScript usa *ErrorItem*. **ErrorCode** em um manipulador de eventos para exibir o código de erro para o usuário. O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript
