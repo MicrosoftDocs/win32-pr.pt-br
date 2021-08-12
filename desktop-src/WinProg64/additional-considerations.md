@@ -3,15 +3,15 @@ title: Considerações adicionais
 description: Ao portar seu código, considere os pontos a seguir.
 ms.assetid: 2d649a09-b593-477a-9b4f-d2404784f4b0
 keywords:
-- Dicas de portamento-programação do Windows de 64 bits
+- dicas de portabilidade 64-bit Windows programação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7607685f4b4ba04b86da276c38090a48ce0fead
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 199f522bebf0d6d5552aa81d99aab12f77685dea35eb329b9e7d11d46b4f1500
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "105814028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118561531"
 ---
 # <a name="additional-considerations"></a>Considerações adicionais
 

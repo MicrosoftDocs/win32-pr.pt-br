@@ -1,5 +1,5 @@
 ---
-description: 'O método IWiaDevMgr2:: RegisterEventCallbackProgram registra um aplicativo para receber eventos de dispositivo. Ele é fornecido principalmente para compatibilidade com versões anteriores com aplicativos que não foram escritos para o WIA (Windows Image Acquisition) 2,0.'
+description: 'O método IWiaDevMgr2:: RegisterEventCallbackProgram registra um aplicativo para receber eventos de dispositivo. ele é fornecido principalmente para compatibilidade com versões anteriores com aplicativos que não foram escritos para o WIA (Windows Image Acquisition) 2,0.'
 ms.assetid: 6b427f19-719b-44ce-8e2c-3c44672345c8
 title: 'Método IWiaDevMgr2:: RegisterEventCallbackProgram (WIA. h)'
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 9b18b5833b7616493c24f0128caa7c910b685e37
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6ebc99e61bf038c8db2ea537a1f8a5933ad512d21ec05cf51f6f8b7af5ede2b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105764285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118441294"
 ---
 # <a name="iwiadevmgr2registereventcallbackprogram-method"></a>Método IWiaDevMgr2:: RegisterEventCallbackProgram
 
-O método **IWiaDevMgr2:: RegisterEventCallbackProgram** registra um aplicativo para receber eventos de dispositivo. Ele é fornecido principalmente para compatibilidade com versões anteriores com aplicativos que não foram escritos para o WIA (Windows Image Acquisition) 2,0.
+O método **IWiaDevMgr2:: RegisterEventCallbackProgram** registra um aplicativo para receber eventos de dispositivo. ele é fornecido principalmente para compatibilidade com versões anteriores com aplicativos que não foram escritos para o WIA (Windows Image Acquisition) 2,0.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -79,13 +79,13 @@ Um identificador de dispositivo. Passe **NULL** para registrar o evento em todos
 *pEventGUID* \[ no\]
 </dt> <dd>
 
-Tipo: **const GUID \** _
+Tipo: **GUID \* const**
 
 O evento para o qual o aplicativo está se registrando. Para obter uma lista de GUIDs de eventos válidos, consulte [identificadores de evento WIA](-wia-wia-event-identifiers.md).
 
 </dd> <dt>
 
-_bstrFullAppName * \[ in\]
+*bstrFullAppName* \[ no\]
 </dt> <dd>
 
 Tipo: **BSTR**
@@ -130,7 +130,7 @@ O ícone que representa o aplicativo. O ícone é exibido para o usuário quando
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -152,8 +152,8 @@ Normalmente, esse método é chamado por um programa de instalação ou um scrip
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                   |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                             |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                   |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                             |
 | parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl> |
 
 

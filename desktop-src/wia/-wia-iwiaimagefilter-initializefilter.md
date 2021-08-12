@@ -1,5 +1,5 @@
 ---
-description: Inicializa o filtro. Chamado pelo WIA (Windows Image Acquisition) 2,0 antes de cada download de imagem.
+description: Inicializa o filtro. chamado pelo WIA (Windows image Acquisition) 2,0 antes do download de cada imagem.
 ms.assetid: 0487900d-2103-4314-b18d-58ff97d6f524
 title: 'Método IWiaImageFilter:: InitializeFilter (WIA. h)'
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: a113c9493128a634ce61ccf7c0362bf7a9767f72
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 43b818c3adc9926c4ba27f11f5d489ffc0b97e4443d0427e7a12067e9062072a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105808332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118440441"
 ---
 # <a name="iwiaimagefilterinitializefilter-method"></a>Método IWiaImageFilter:: InitializeFilter
 
-Inicializa o filtro. Chamado pelo WIA (Windows Image Acquisition) 2,0 antes de cada download de imagem.
+Inicializa o filtro. chamado pelo WIA (Windows image Acquisition) 2,0 antes do download de cada imagem.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,22 +43,22 @@ HRESULT InitializeFilter(
 *pWiaItem2* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IWiaItem2**](-wia-iwiaitem2.md) \** _
+Tipo: **[ **IWiaItem2**](-wia-iwiaitem2.md)\***
 
-Especifica um ponteiro para o item [_ *IWiaItem2* *](-wia-iwiaitem2.md) que representa a imagem de visualização.
+Especifica um ponteiro para o item [**IWiaItem2**](-wia-iwiaitem2.md) que representa a imagem de visualização.
 
 </dd> <dt>
 
 *pWiaTransferCallback* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IWiaTransferCallback**](-wia-iwiatransfercallback.md) \** _
+Tipo: **[ **IWiaTransferCallback**](-wia-iwiatransfercallback.md)\***
 
-Especifica um ponteiro para a interface [_ *IWiaTransferCallback* *](-wia-iwiatransfercallback.md) do aplicativo.
+Especifica um ponteiro para a interface [**IWiaTransferCallback**](-wia-iwiatransfercallback.md) do aplicativo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -74,8 +74,8 @@ Esse método é chamado quando um aplicativo chama [**Download**](-wia-iwiatrans
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
 | parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
 

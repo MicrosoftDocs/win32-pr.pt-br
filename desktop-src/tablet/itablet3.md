@@ -1,5 +1,5 @@
 ---
-description: A interface ITablet3 permite a consulta multitoque para entrada.
+description: A interface ITablet3 habilita a consulta multitoque para entrada.
 ms.assetid: 949f2d83-7761-4d60-b8fe-5a9ac7567238
 title: Interface ITablet3
 ms.topic: reference
@@ -14,33 +14,33 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: f37d70888ccedf0fe941f0387c064aba37dc287e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b774ab5626d1eab5d8f4179b27924686fed56661fb776039a65ff40b3b64ebba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105766503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118449839"
 ---
 # <a name="itablet3-interface"></a>Interface ITablet3
 
-A interface ITablet3 permite a consulta multitoque para entrada.
+A interface ITablet3 habilita a consulta multitoque para entrada.
 
 ## <a name="members"></a>Membros
 
-A interface **ITablet3** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ITablet3** também tem estes tipos de membros:
+A interface **ITablet3** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITablet3** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-A interface **ITablet3** tem esses métodos.
+A **interface ITablet3** tem esses métodos.
 
 
 
 | Método                                                  | Descrição                                                         |
 |:--------------------------------------------------------|:--------------------------------------------------------------------|
 | [**GetMaximumCursors**](itablet3-getmaximumcursors.md) | Recupera o número máximo de entradas com suporte.<br/>        |
-| [**isMultiTouch**](itablet3-ismultitouch.md)           | Indica se o multitoque está habilitado para este objeto.<br/> |
+| [**isMultiTouch**](itablet3-ismultitouch.md)           | Indica se o multitouch está habilitado para este objeto.<br/> |
 
 
 
@@ -73,8 +73,8 @@ interface ITablet3 : IUnknown
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
 

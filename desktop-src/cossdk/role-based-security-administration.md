@@ -4,12 +4,12 @@ ms.assetid: 7247758e-f486-4ce2-afca-f0d10fffe626
 title: Administração de segurança do Role-Based
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 714cede74e105a68b0a5fed2371858054add954e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c72ed2f1fdd5eb0b650b991b776364bf982c774b3ffcaff1358ea2c3ed1ee4d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118547068"
 ---
 # <a name="role-based-security-administration"></a>Administração de segurança do Role-Based
 
@@ -24,7 +24,7 @@ A segurança baseada em função é um serviço automático fornecido pelo COM+ 
 -   Você pode aproveitar a segurança baseada em função para fazer auditoria detalhada, pois você pode obter informações de segurança do chamador para uma cadeia inteira de chamadas upstream.
 
 > [!Note]  
-> Os usuários na função Administrador do aplicativo do sistema devem ser membros do grupo Administradores local. Além disso, a partir do Windows Server 2003, o recurso de autenticação para o aplicativo de sistema COM+ inclui o valor EOAC \_ Disable \_ AAA. Esse valor, que desabilita as ativações de Activate-as-Activator (AAA), é usado na chamada [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) ao iniciar o aplicativo do sistema. Definir o recurso de autenticação como EOAC \_ Disable \_ AAA permite que um aplicativo executado em uma conta com privilégios (como LocalSystem) ajude a impedir que sua identidade seja usada para iniciar componentes não confiáveis.
+> Os usuários na função Administrador do aplicativo do sistema devem ser membros do grupo Administradores local. além disso, a partir do Windows Server 2003, o recurso de autenticação para o aplicativo de sistema COM+ inclui o valor EOAC \_ DISABLE \_ AAA. Esse valor, que desabilita as ativações de Activate-as-Activator (AAA), é usado na chamada [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) ao iniciar o aplicativo do sistema. Definir o recurso de autenticação como EOAC \_ Disable \_ AAA permite que um aplicativo executado em uma conta com privilégios (como LocalSystem) ajude a impedir que sua identidade seja usada para iniciar componentes não confiáveis.
 
  
 

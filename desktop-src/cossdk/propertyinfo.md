@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: bd9fdd2262d4499efd6a86fbc5b99bae786016f3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cf5c354711ec9ca34af1809707a7a869d39a3026ca5cb7ca11d2245c02be049b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118547559"
 ---
 # <a name="propertyinfo-collection"></a>Coleção PropertyInfo
 
@@ -42,14 +42,14 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 -   [Nome](#name)
 
-### <a name="name"></a>Nome
+### <a name="name"></a>Name
 
 
 
 | Entrada | Valor |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | O nome da propriedade. Essa propriedade é retornada quando o método de propriedade de [**chave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) ou [**nome**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto desta coleção. |
-| Access         | ReadOnly                                                                                                                                                                                         |
+| Acesso         | ReadOnly                                                                                                                                                                                         |
 | Type           | String                                                                                                                                                                                           |
 | Padrão        | Nenhum                                                                                                                                                                                             |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                     |

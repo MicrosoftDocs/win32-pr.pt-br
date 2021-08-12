@@ -4,12 +4,12 @@ description: . | Funções da área de transferência
 ms.assetid: 54addf54-921d-4246-b21e-ae993f8bcb02
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 96a6a0304c55e4c97f2243599909decd997758e9
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 34a43bef4016f66c95565b4d5e1bd6fc934e14930a6733ffbf16447807582460
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104172767"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118545537"
 ---
 # <a name="clipboard-functions"></a>Funções da área de transferência
 
@@ -17,11 +17,11 @@ ms.locfileid: "104172767"
 
 -   [**AddClipboardFormatListener**](/windows/desktop/api/Winuser/nf-winuser-addclipboardformatlistener)
 -   [**ChangeClipboardChain**](/windows/desktop/api/Winuser/nf-winuser-changeclipboardchain)
--   [**CloseClipboard**](/windows/desktop/api/Winuser/nf-winuser-closeclipboard)
+-   [**Closeclipboard**](/windows/desktop/api/Winuser/nf-winuser-closeclipboard)
 -   [**CountClipboardFormats**](/windows/desktop/api/Winuser/nf-winuser-countclipboardformats)
--   [**EmptyClipboard**](/windows/desktop/api/Winuser/nf-winuser-emptyclipboard)
--   [**EnumClipboardFormats**](/windows/desktop/api/Winuser/nf-winuser-enumclipboardformats)
--   [**GetClipboardData**](/windows/desktop/api/Winuser/nf-winuser-getclipboarddata)
+-   [**Emptyclipboard**](/windows/desktop/api/Winuser/nf-winuser-emptyclipboard)
+-   [**Enumclipboardformats**](/windows/desktop/api/Winuser/nf-winuser-enumclipboardformats)
+-   [**Getclipboarddata**](/windows/desktop/api/Winuser/nf-winuser-getclipboarddata)
 -   [**GetClipboardFormatName**](/windows/desktop/api/Winuser/nf-winuser-getclipboardformatnamea)
 -   [**GetClipboardOwner**](/windows/desktop/api/Winuser/nf-winuser-getclipboardowner)
 -   [**GetClipboardSequenceNumber**](/windows/desktop/api/Winuser/nf-winuser-getclipboardsequencenumber)
@@ -30,11 +30,11 @@ ms.locfileid: "104172767"
 -   [**GetPriorityClipboardFormat**](/windows/desktop/api/Winuser/nf-winuser-getpriorityclipboardformat)
 -   [**GetUpdatedClipboardFormats**](/windows/desktop/api/Winuser/nf-winuser-getupdatedclipboardformats)
 -   [**IsClipboardFormatAvailable**](/windows/desktop/api/Winuser/nf-winuser-isclipboardformatavailable)
--   [**OpenClipboard**](/windows/desktop/api/Winuser/nf-winuser-openclipboard)
--   [**RegisterClipboardFormat**](/windows/desktop/api/Winuser/nf-winuser-registerclipboardformata)
+-   [**Openclipboard**](/windows/desktop/api/Winuser/nf-winuser-openclipboard)
+-   [**Registerclipboardformat**](/windows/desktop/api/Winuser/nf-winuser-registerclipboardformata)
 -   [**RemoveClipboardFormatListener**](/windows/desktop/api/Winuser/nf-winuser-removeclipboardformatlistener)
--   [**SetClipboardData**](/windows/desktop/api/Winuser/nf-winuser-setclipboarddata)
--   [**SetClipboardViewer**](/windows/desktop/api/Winuser/nf-winuser-setclipboardviewer)
+-   [**Setclipboarddata**](/windows/desktop/api/Winuser/nf-winuser-setclipboarddata)
+-   [**Setclipboardviewer**](/windows/desktop/api/Winuser/nf-winuser-setclipboardviewer)
 
  
 

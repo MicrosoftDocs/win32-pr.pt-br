@@ -4,19 +4,19 @@ ms.assetid: 07f68734-a382-4fe5-86af-90805f61c68d
 title: Conceitos de instrumentação COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d86b5dbb7bb3f6db14d82220d88c58dbc0a8255
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 160a546c07ea4204f1f4da3ba4c56c76a6eed6b52a8d397d470d0bc34b76adc8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105765146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118549502"
 ---
 # <a name="com-instrumentation-concepts"></a>Conceitos de instrumentação COM+
 
-O serviço de instrumentação COM+ permite que você crie seus próprios programas de log e gerenciamento de eventos COM+ quando desejar exibir várias métricas de desempenho para seus componentes COM+. A instrumentação COM+ também pode ser usada para configurar eventos definidos pelo usuário e para converter eventos COM+ em formato Visual Studio Analyzer (VSA) quando você estiver atualizando pacotes MTS que estão recebendo eventos MTS.
+O serviço de instrumentação COM+ permite que você crie seus próprios programas de log e gerenciamento de eventos COM+ quando desejar exibir várias métricas de desempenho para seus componentes COM+. a instrumentação COM+ também pode ser usada para configurar eventos definidos pelo usuário e para converter eventos COM+ em formato Visual Studio Analyzer (VSA) quando você estiver atualizando pacotes mts que estão recebendo eventos mts.
 
 > [!Note]  
-> A partir do Windows Server 2003, somente os administradores têm privilégios de acesso de leitura aos logs de rastreamento para eventos do sistema.
+> a partir do Windows Server 2003, somente os administradores têm privilégios de acesso de leitura aos logs de rastreamento para eventos do sistema.
 
  
 

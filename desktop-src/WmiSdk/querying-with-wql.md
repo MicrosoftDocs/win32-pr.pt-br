@@ -1,5 +1,5 @@
 ---
-description: O linguagem WQL (WQL) é um subconjunto de linguagem SQL padrão de American National Standards Institute (ANSI SQL) com pequenas alterações semânticas para dar suporte ao WMI.
+description: o linguagem WQL (WQL) é um subconjunto de linguagem SQL padrão de American National Standards Institute (ANSI SQL) com pequenas alterações semânticas para dar suporte ao WMI.
 ms.assetid: 7e04ba37-c0e0-4304-b162-8b911f233f38
 ms.tgt_platform: multiple
 title: Consultando com WQL
@@ -10,18 +10,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 8e2d3f68f4d7384781110958070b33b67a78405f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 737ae9505a0f775c26c5049eeb2f8500c9e3222d78181e18326ff53d39dfde01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105783792"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118554827"
 ---
 # <a name="querying-with-wql"></a>Consultando com WQL
 
-O linguagem WQL (WQL) é um subconjunto de linguagem SQL padrão de American National Standards Institute (ANSI SQL) com pequenas alterações semânticas para dar suporte ao WMI.
+o linguagem WQL (WQL) é um subconjunto de linguagem SQL padrão de American National Standards Institute (ANSI SQL) com pequenas alterações semânticas para dar suporte ao WMI.
 
-Para obter uma lista completa de palavras-chave WQL com suporte, consulte [WQL (SQL para WMI)](wql-sql-for-wmi.md). Usar palavras-chave SQL para nomes de objeto ou propriedade pode restringir a análise de uma consulta. As seguintes palavras-chave SQL são restritas: **NULL**, **true** e **false**.
+para obter uma lista completa de palavras-chave wql com suporte, consulte [WQL (SQL para WMI)](wql-sql-for-wmi.md). usar SQL palavras-chave para nomes de objeto ou propriedade pode restringir a análise de uma consulta. as palavras-chave a seguir SQL são restritas: **NULL**, **TRUE** e **FALSE**.
 
 > [!Note]  
 > Há limites para o número de palavras-chave AND e OR que podem ser usadas em consultas WQL. Grandes números de palavras-chave WQL usadas em uma consulta complexa podem fazer com que o WMI retorne o código de erro de **\_ \_ \_ violação E de cota de WBEM** como um valor **HRESULT** . O limite de palavras-chave WQL depende da complexidade da consulta.
@@ -30,7 +30,7 @@ Para obter uma lista completa de palavras-chave WQL com suporte, consulte [WQL (
 
 As consultas podem usar a cláusula **Where** para extensão e personalização, embora não seja necessário. A cláusula **Where** é composta de uma propriedade ou palavra-chave, um operador e uma constante. Todas as cláusulas **Where** devem especificar um dos operadores predefinidos que são incluídos na WQL. Para obter mais informações sobre a sintaxe, consulte a [cláusula WHERE](where-clause.md). Para obter mais informações sobre operadores WQL válidos, consulte [operadores WQL](wql-operators.md).
 
-Assim como acontece com outras cadeias de caracteres de consulta SQL, você pode escapar suas consultas.
+assim como ocorre com outras SQL cadeias de caracteres de consulta, você pode escapar suas consultas.
 
 > [!Note]  
 > O WQL não dá suporte a consultas ou associações de namespace cruzado. Você não pode consultar todas as instâncias de uma classe especificada que reside em todos os namespaces no computador de destino.

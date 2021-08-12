@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 90e32669d8b542202f6166052c072f224bb2954a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2f49455e3e6fb68b2884cda380c304d7655b70d49ff338bcfb7c36904b449019
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105763438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118452161"
 ---
 # <a name="_ianalysisevents-interface"></a>\_Interface IAnalysisEvents
 
@@ -33,7 +33,7 @@ A interface **\_ IAnalysisEvents** tem esses eventos.
 
 | Evento                                                               | Descrição                                                                                                                                                                                    |
 |:--------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Actividade**](-ianalysisevents-activity.md)                       | Ocorre durante chamadas para o método de método [**IInkAnalyzer:: Analyze**](iinkanalyzer-analyze.md) ou [**IInkAnalyzer:: BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md) .<br/> |
+| [**Atividade**](-ianalysisevents-activity.md)                       | Ocorre durante chamadas para o método de método [**IInkAnalyzer:: Analyze**](iinkanalyzer-analyze.md) ou [**IInkAnalyzer:: BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md) .<br/> |
 | [**IntermediateResults**](-ianalysisevents-intermediateresults.md) | Ocorre quando o estágio de análise intermediária atual é concluído.<br/>                                                                                                                    |
 | [**ReadyToReconcile**](-ianalysisevents-readytoreconcile.md)       | Ocorre quando o [**IInkAnalyzer**](iinkanalyzer.md) está pronto para reconciliar seus resultados de análise em segundo plano com seu estado atual.<br/>                                                  |
 | [**Resultados**](-ianalysisevents-results.md)                         | Ocorre quando o estágio de análise final é concluído.<br/>                                                                                                                                   |
@@ -49,7 +49,7 @@ A interface **\_ IAnalysisEvents** tem esses eventos.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                     |
 
 

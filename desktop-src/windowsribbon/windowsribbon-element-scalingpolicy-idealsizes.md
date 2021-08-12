@@ -3,7 +3,7 @@ title: Propriedade ScalingPolicy. IdealSizes
 description: Representa um contêiner de especificações de escala para o modelo de SizeDefinition preferencial, com base no tamanho da faixa de medida.
 ms.assetid: a4aa2642-160d-4d81-9df9-29277911aa5a
 keywords:
-- Faixa de ScalingPolicy de propriedades do Windows. IdealSizes
+- propriedade ScalingPolicy. IdealSizes Windows Ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7bf62cd0388b523f444c4a9cca226b58187212b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 500f6193411ed72b8858506816d9af4f82b1219680fa0537bf54b3daa7735211
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105793204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118439521"
 ---
 # <a name="scalingpolicyidealsizes-property"></a>Propriedade ScalingPolicy. IdealSizes
 
@@ -41,7 +41,7 @@ Não há atributos.
 
 | Elemento                                                 | Descrição                                        |
 |---------------------------------------------------------|----------------------------------------------------|
-| [**Escalonáve**](windowsribbon-element-scale.md)<br/> | Pode ocorrer uma ou mais vezes<br/> <br/> |
+| [**Escala**](windowsribbon-element-scale.md)<br/> | Pode ocorrer uma ou mais vezes<br/> <br/> |
 
 
 
@@ -141,12 +141,12 @@ O manifesto [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md) neste ex
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

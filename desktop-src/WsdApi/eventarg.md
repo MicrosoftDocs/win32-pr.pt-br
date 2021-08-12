@@ -1,19 +1,19 @@
 ---
-description: Especifica se argumentos de evento relacionados estão incluídos nas funções geradas.
+description: Especifica se os argumentos de evento relacionados estão incluídos nas funções geradas.
 ms.assetid: 60be4680-c434-4fdb-8449-c040969d2f59
-title: elemento eventArg
+title: Elemento eventArg
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 820c4223e8e4a880343faf2e9df686d9746b1b29
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 5a25909010f812779a5e6d91530a56faff067e1abcd8c041680f2918ba6ad4a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118552413"
 ---
-# <a name="eventarg-element"></a>elemento eventArg
+# <a name="eventarg-element"></a>Elemento eventArg
 
-Especifica se argumentos de evento relacionados estão incluídos nas funções geradas.
+Especifica se os argumentos de evento relacionados estão incluídos nas funções geradas.
 
 ## <a name="usage"></a>Uso
 
@@ -36,7 +36,7 @@ Não há elementos filho.
 | Elemento                                                               | Descrição                                                                                     |
 |-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | [**idlFunctionDeclarations**](idlfunctiondeclarations.md)<br/> | Gera declarações IDL para funções de proxy para operações de tipo de porta.<br/> <br/> |
-| [**stubDefinitions**](stubdefinitions.md)<br/>                 | Gera implementações para funções de stub para operações de tipo de porta.<br/> <br/>   |
+| [**stubDefinitions**](stubdefinitions.md)<br/>                 | Gera implementações para funções stub para operações de tipo de porta.<br/> <br/>   |
 
 
 
@@ -48,7 +48,7 @@ Os valores possíveis são 1 (argumentos de evento incluídos) e 0 (padrão, arg
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

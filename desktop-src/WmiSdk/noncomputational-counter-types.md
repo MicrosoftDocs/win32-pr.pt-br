@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Tipos de contadores não computacionais
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87ba2757f08dcb2256236117daf2ef3343004425
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a05da34058ceeb99ab60d8cc3d4f72cb3eec85194e48bb707a929eb2f68aa7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118555156"
 ---
 # <a name="noncomputational-counter-types"></a>Tipos de contadores não computacionais
 
@@ -18,7 +18,7 @@ Os tipos de contador não computacional não têm uma fórmula associada. O valo
 
 A propriedade **FilesToBeIndexed** na classe [**Win32 \_ PerfRawData \_ ContentIndex \_ IndexingService**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data) é um exemplo do tipo de contador **contador de desempenho \_ \_ RAWCOUNT** . Ele contém uma contagem de arquivos que não foram indexados.
 
-Os tipos de contador são designados pela constante definida em WINPERF. h localizada no SDK (Software Development Kit) do Microsoft Windows. A tabela a seguir lista os tipos de contadores não computacionais que são fornecidos.
+os tipos de contador são designados pela constante definida em Winperf. h localizada no SDK (Software Development Kit) do Microsoft Windows. A tabela a seguir lista os tipos de contadores não computacionais que são fornecidos.
 
 
 

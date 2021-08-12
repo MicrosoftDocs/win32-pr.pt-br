@@ -1,9 +1,9 @@
 ---
-title: Transação de XTYP_ADVSTART (ddeml. h)
-description: Um cliente usa a \_ transação XTYP ADVSTART para estabelecer um loop de aviso com um servidor.
+title: XTYP_ADVSTART transações (Ddeml.h)
+description: Um cliente usa a transação XTYP \_ ADVSTART para estabelecer um loop de consultoria com um servidor.
 ms.assetid: 8911e722-5656-4ca6-8b0a-6bdf8281611a
 keywords:
-- Troca de dados de transação XTYP_ADVSTART
+- XTYP_ADVSTART dados de transação Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 852351ad902a0552ee012d6c1e5c4d61501e6e58
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fb18bda3dce4db465045991e26cdc2d97ddd87ddc69c494ffaf103c566955da1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118544755"
 ---
-# <a name="xtyp_advstart-transaction"></a>\_Transação XTYP ADVSTART
+# <a name="xtyp_advstart-transaction"></a>Transação DE ADVSTART do XTYP \_
 
-Um cliente usa a transação **XTYP \_ ADVSTART** para estabelecer um loop de aviso com um servidor. Uma função de retorno de chamada de servidor troca dinâmica de dados (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recebe essa transação quando um cliente especifica **XTYP \_ ADVSTART** como o parâmetro *wType* da função [**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction) .
+Um cliente usa a **transação XTYP \_ ADVSTART** para estabelecer um loop de consultoria com um servidor. Uma função de retorno de chamada do servidor Dados Dinâmicos Exchange (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recebe essa transação quando um cliente especifica **XTYP \_ ADVSTART** como o *parâmetro wType* da função [**DdeClientTransaction.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction)
 
 
 ```C++
@@ -37,7 +37,7 @@ Um cliente usa a transação **XTYP \_ ADVSTART** para estabelecer um loop de av
 
 <dl> <dt>
 
-*uType* 
+*Utype* 
 </dt> <dd>
 
 O tipo de transação.
@@ -54,21 +54,21 @@ O formato de dados solicitado pelo cliente.
 *hconv* 
 </dt> <dd>
 
-Um identificador para a conversa.
+Um alça para a conversa.
 
 </dd> <dt>
 
 *hsz1* 
 </dt> <dd>
 
-Um identificador para o nome do tópico.
+Um handle para o nome do tópico.
 
 </dd> <dt>
 
 *hsz2* 
 </dt> <dd>
 
-Um identificador para o nome do item.
+Um alça para o nome do item.
 
 </dd> <dt>
 
@@ -93,15 +93,15 @@ Não usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Uma função de retorno de chamada de servidor deve retornar **true** para permitir um loop de aviso no nome do tópico e no par do nome do item especificados, ou **false** para negar o loop de aviso. Se a função de retorno de chamada retornar **true**, todas as chamadas subsequentes para a função [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) pelo servidor no mesmo nome de tópico e par de nome de item fazem com que o sistema envie transações [**XTYP \_ ADVREQ**](xtyp-advreq.md) para o servidor.
+Uma função de retorno de chamada do servidor deve retornar **TRUE** para permitir um loop de consultoria no nome do tópico e no par de nomes de item especificados ou **FALSE** para negar o loop de consultoria. Se a função de retorno de chamada retornar **TRUE**, quaisquer chamadas subsequentes para a função [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) pelo servidor no mesmo nome de tópico e par de nomes de item faz com que o sistema envie transações [**\_ ADVREQ XTYP**](xtyp-advreq.md) para o servidor.
 
 ## <a name="remarks"></a>Comentários
 
-Se um cliente solicitar um loop de aviso em um nome de tópico, nome de item e formato de dados para um loop de aviso que já esteja estabelecido, a troca dinâmica de dados biblioteca de gerenciamento (DDEML) não criará um loop de aviso duplicado, mas, em vez disso, alterará os sinalizadores de loop de aviso (**XTYPF \_ ACKREQ** e **XTYPF \_ NODATA**) para corresponder à solicitação mais recente.
+Se um cliente solicitar um loop de consultoria em um nome de tópico, nome do item e formato de dados para um loop de consultoria já estabelecido, a DDEML (Biblioteca de Gerenciamento do Dados Dinâmicos Exchange) não criará um loop de consultoria duplicado, mas, em vez disso, alterará os sinalizadores de loop de consultoria **\_ (XTYPF ACKREQ** e **XTYPF \_ NODATA)** para corresponder à solicitação mais recente.
 
-Essa transação será filtrada se o aplicativo de servidor tiver especificado o sinalizador **CBF de \_ \_ aviso de falha** na função [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) .
+Essa transação será filtrada se o aplicativo de servidor especificar o sinalizador **CBF \_ FAIL \_ ADVISES** na [**função DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,7 +111,7 @@ Essa transação será filtrada se o aplicativo de servidor tiver especificado o
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                             |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                   |
-| Cabeçalho<br/>                   | <dl> <dt>Ddeml. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Ddeml.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -131,10 +131,10 @@ Essa transação será filtrada se o aplicativo de servidor tiver especificado o
 [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[troca dinâmica de dados biblioteca de gerenciamento](dynamic-data-exchange-management-library.md)
+[biblioteca Dados Dinâmicos Exchange gerenciamento do Dados Dinâmicos Exchange](dynamic-data-exchange-management-library.md)
 </dt> </dl>
 
  

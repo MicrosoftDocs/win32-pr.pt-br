@@ -3,16 +3,16 @@ title: O nível de recurso do Direct3D 12 Core 1.0
 description: O nível de recurso Core 1,0 é um subconjunto do conjunto de recursos completo do Direct3D 12.
 ms.topic: article
 ms.date: 11/05/2019
-ms.openlocfilehash: 42d13b71c516e55ecce378cf9cb415c45e520ba9
-ms.sourcegitcommit: bba068130240d16de8a3f3468b7cd72b2cd760f6
+ms.openlocfilehash: 93eab39509074114bf2032cfb1cdea3e4e767dae9786241a34f970ca5cd51703
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "105773925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118530716"
 ---
 # <a name="the-direct3d-12-core-10-feature-level"></a>O nível de recurso do Direct3D 12 Core 1.0
 
-O nível de recurso Core 1,0 é um subconjunto do conjunto de recursos completo do Direct3D 12. O nível de recurso do Core 1,0 pode ser exposto por uma categoria de dispositivos conhecida como *dispositivos somente de computação*. O modelo de driver geral para dispositivos somente de computação é o MCDM (modelo de driver de computação da Microsoft). MCDM é um par reduzido para baixo do WDDM (modelo de driver de dispositivo) do Windows, que tem um escopo maior.
+O nível de recurso Core 1,0 é um subconjunto do conjunto de recursos completo do Direct3D 12. O nível de recurso do Core 1,0 pode ser exposto por uma categoria de dispositivos conhecida como *dispositivos somente de computação*. O modelo de driver geral para dispositivos somente de computação é o MCDM (modelo de driver de computação da Microsoft). MCDM é um par reduzido da Windows o WDDM (modelo de Driver de dispositivo), que tem um escopo maior.
 
 Um dispositivo que dá suporte *apenas* aos recursos dentro de um nível de recurso principal é conhecido como um *dispositivo principal*.
 

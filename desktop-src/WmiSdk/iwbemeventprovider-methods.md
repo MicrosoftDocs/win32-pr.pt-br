@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Métodos IWbemEventProvider
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bc6ea9bc6ade4b95b0e23c7d67d9421f9098d08
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c07d768d6da83fb9e678a076a92d8ed90811f4c9f5ebb889b48a06673295396a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105764499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118555985"
 ---
 # <a name="iwbemeventprovider-methods"></a>Métodos IWbemEventProvider
 

@@ -8,12 +8,12 @@ keywords:
 - transferir BITS de trabalho, propriedade, conta de usuário
 ms.topic: article
 ms.date: 10/04/2018
-ms.openlocfilehash: 7f841e3bf92004b62f3bbb576f71a45ac6b4a6bc
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 54e346590cac90b8d896a9a45c86aee5ae241d7d299bb055cf9ff55db88b8668
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118679878"
 ---
 # <a name="users-and-network-connections"></a>Usuários e conexões de rede
 
@@ -28,15 +28,15 @@ Para que o BITS detecte que um usuário está conectado, o usuário deve usar um
 -   Faça logon na tela de boas-vindas.
 -   Faça logon em um cliente de [serviço de terminal](../termserv/terminal-services-portal.md) .
 -   Use a [troca rápida de usuário](../shell/fast-user-switching.md).
--   A partir do Windows 10, versão 1607, faça logon de outro dispositivo usando o PowerShell remoto. Consulte [para gerenciar sessões remotas do PowerShell](using-windows-powershell-to-create-bits-transfer-jobs.md) para obter detalhes.
+-   a partir do Windows 10, versão 1607, faça logon de outro dispositivo usando o Powershell remoto. Consulte [para gerenciar sessões remotas do PowerShell](using-windows-powershell-to-create-bits-transfer-jobs.md) para obter detalhes.
 
 Executar um aplicativo como outro usuário (usando o comando **runas** ) não é um logon interativo; O BITS não executará trabalhos associados ao usuário especificado.
 
 As contas do sistema LocalSystem, LocalService e NetworkService estão sempre conectadas; Portanto, os trabalhos enviados por um serviço usando essas contas sempre são executados. Para obter informações e limitações sobre o uso de contas de serviço, consulte [contas de serviço e bits](service-accounts-and-bits.md).
 
-Os proprietários de trabalho podem fornecer um token auxiliar a ser usado em situações em que vários tokens são necessários para concluir uma transferência, como para autenticação com um host remoto. Consulte [tokens auxiliares para trabalhos de transferência de bits](helper-tokens-for-bits-transfer-jobs.md) para obter detalhes. Nas versões anteriores do Windows, o proprietário do trabalho efetivamente tinha que ter privilégios de administrador para iniciar um trabalho que usava um token auxiliar. No Windows 10, versão 1607, agora é possível que um proprietário do trabalho do BITS defina tokens auxiliares sem ser um administrador, desde que o token auxiliar não tenha recursos de administrador. Isso reduz a superfície de vulnerabilidade de download em segundo plano ou de ferramentas de atualização, permitindo sua execução com a conta NetworkService com menos privilégios, em vez de uma conta com privilégios administrativos.
+Os proprietários de trabalho podem fornecer um token auxiliar a ser usado em situações em que vários tokens são necessários para concluir uma transferência, como para autenticação com um host remoto. Consulte [tokens auxiliares para trabalhos de transferência de bits](helper-tokens-for-bits-transfer-jobs.md) para obter detalhes. em versões anteriores do Windows, o proprietário do trabalho efetivamente tinha que ter privilégios de administrador para iniciar um trabalho que usava um token auxiliar. no Windows 10, a versão 1607, agora é possível que um proprietário do trabalho do BITS defina tokens auxiliares sem ser um administrador, desde que o token auxiliar não tenha recursos de administrador. Isso reduz a superfície de vulnerabilidade de download em segundo plano ou de ferramentas de atualização, permitindo sua execução com a conta NetworkService com menos privilégios, em vez de uma conta com privilégios administrativos.
 
 Os usuários com um [token restrito](../secauthz/restricted-tokens.md) (um token que contém SIDs de restrição) não podem criar ou modificar trabalhos.
- 
+ 
 
- 
+ 

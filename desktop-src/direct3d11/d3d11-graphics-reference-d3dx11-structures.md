@@ -1,5 +1,5 @@
 ---
-title: Estruturas D3DX (gráficos do Direct3D 11)
+title: Estruturas D3DX (elementos gráficos direct3D 11)
 description: Esta seção contém informações sobre as estruturas D3DX 11.
 ms.assetid: a983813a-a31f-4eeb-b17a-654b7cfe5a55
 keywords:
@@ -7,19 +7,19 @@ keywords:
 - estruturas, D3DX 11
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 175458e3007433158fed29783197bda73dbef1f7
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: ae0437eb4d760465f46781bdbb4b153bdf176f246b8f36dfdc8e92e0a92320b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104988728"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118537708"
 ---
-# <a name="d3dx-structures-direct3d-11-graphics"></a>Estruturas D3DX (gráficos do Direct3D 11)
+# <a name="d3dx-structures-direct3d-11-graphics"></a>Estruturas D3DX (elementos gráficos direct3D 11)
 
 Esta seção contém informações sobre as estruturas D3DX 11.
 
 > [!Note]  
-> A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+> A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para Windows 8 e não tem suporte para aplicativos da Windows Store.
 
  
 
@@ -44,7 +44,7 @@ Esta seção contém informações sobre as estruturas D3DX 11.
 <td><a href="d3dx11-image-info.md"><strong>D3DX11_IMAGE_INFO</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para Windows 8 e não tem suporte para aplicativos da Windows Store.
 </blockquote>
 <br/> Opcionalmente, forneça informações para APIs do carregador de textura para controlar como as texturas são carregadas. Um valor de D3DX11_DEFAULT para qualquer um desses parâmetros fará com que o D3DX use automaticamente o valor do arquivo de origem.<br/></td>
 </tr>
@@ -52,7 +52,7 @@ A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para
 <td><a href="d3dx11-image-load-info.md"><strong>D3DX11_IMAGE_LOAD_INFO</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para Windows 8 e não tem suporte para aplicativos da Windows Store.
 </blockquote>
 <br/> Opcionalmente, forneça informações para APIs do carregador de textura para controlar como as texturas são carregadas. Um valor de D3DX11_DEFAULT para qualquer um desses parâmetros fará com que o D3DX use automaticamente o valor do arquivo de origem.<br/></td>
 </tr>
@@ -60,7 +60,7 @@ A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para
 <td><a href="d3dx11-texture-load-info.md"><strong>D3DX11_TEXTURE_LOAD_INFO</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para Windows 8 e não tem suporte para aplicativos da Windows Store.
 </blockquote>
 <br/> Descreve os parâmetros usados para carregar uma textura de outra textura.<br/></td>
 </tr>

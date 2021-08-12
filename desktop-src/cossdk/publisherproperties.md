@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: bdab3e8143ea3d35d07adb5caa73639fcb568cd1
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4e5876e01a557e9a585423a9e438e773366ca9eaa73e9e67fdaeae8a957b90c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118547150"
 ---
 # <a name="publisherproperties-collection"></a>Coleção publisherproperties
 
@@ -55,7 +55,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Entrada | Valor |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | O nome da propriedade. Espaços extras no início e no final da cadeia de caracteres são removidos. Essa propriedade é retornada quando o método de propriedade de [**chave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) ou [**nome**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto desta coleção. |
-| Access         | WriteOnce                                                                                                                                                                                                                                                              |
+| Acesso         | WriteOnce                                                                                                                                                                                                                                                              |
 | Type           | String                                                                                                                                                                                                                                                                 |
 | Padrão        | "Nova propriedade"                                                                                                                                                                                                                                                         |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                           |
@@ -71,8 +71,8 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Entrada | Valor |
 |----------------|---------------------------|
 | Descrição    | Um valor para a propriedade. |
-| Access         | ReadWrite                 |
-| Tipo           | Variante                   |
+| Acesso         | ReadWrite                 |
+| Digite           | Variante                   |
 | Padrão        | N/D                       |
 | Sistema mínimo | Windows 2000              |
 

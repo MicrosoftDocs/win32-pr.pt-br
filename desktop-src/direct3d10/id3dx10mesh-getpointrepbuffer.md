@@ -1,7 +1,7 @@
 ---
-description: Obtenha o buffer do representante do ponto da malha.
+description: Obter o buffer de representante de ponto da malha.
 ms.assetid: 4be7bee5-15ea-496f-83c2-a3a9bafd97c6
-title: 'Método ID3DX10Mesh:: GetPointRepBuffer (D3DX10. h)'
+title: Método ID3DX10Mesh::GetPointRepBuffer (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 131094792f35b21fd230b66bda6a43fb104b65ee
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4e3c23f4ac4e77d97d290075ba6970062af9ea3a44c608d02e98c05e8f248b07
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104091971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118540232"
 ---
-# <a name="id3dx10meshgetpointrepbuffer-method"></a>Método ID3DX10Mesh:: GetPointRepBuffer
+# <a name="id3dx10meshgetpointrepbuffer-method"></a>Método ID3DX10Mesh::GetPointRepBuffer
 
-Obtenha o buffer do representante do ponto da malha.
+Obter o buffer de representante de ponto da malha.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,20 +40,20 @@ HRESULT GetPointRepBuffer(
 
 <dl> <dt>
 
-*ppPointReps* \[ fora\]
+*ppPointReps* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10MeshBuffer**](id3dx10meshbuffer.md)\*\***
 
-Ponteiro para um buffer de malha que contém os dados do representante de ponto da malha. Consulte [**ID3DX10MeshBuffer**](id3dx10meshbuffer.md).
+Ponteiro para um buffer de malha que contém os dados do representante de ponto da malha. Consulte [**ID3DX10MeshBuffer.**](id3dx10meshbuffer.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-O valor de retorno é um dos valores listados nos [códigos de retorno do Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+O valor de retorno é um dos valores listados em Códigos de Retorno [do Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ O valor de retorno é um dos valores listados nos [códigos de retorno do Direct
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ O valor de retorno é um dos valores listados nos [códigos de retorno do Direct
 [ID3DX10Mesh](id3dx10mesh.md)
 </dt> <dt>
 
-[Interfaces D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

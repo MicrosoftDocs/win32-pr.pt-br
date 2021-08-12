@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM LogicalDiskBasedOnPartition associa um disco lógico à partição de disco na qual ele reside.
+description: A classe LogicalDiskBasedOnPartition cim associa um disco lógico à partição de disco \_ na qual ele reside.
 ms.assetid: 264b62ed-2af2-42dc-9cd2-41b26cc85ca4
 ms.tgt_platform: multiple
-title: Classe CIM_LogicalDiskBasedOnPartition
+title: CIM_LogicalDiskBasedOnPartition classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,21 +18,21 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 67aac7ae8d295bd6d98e06e0ebb8135d3330f52f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 27e0805d4fa3a4a59d59423b30b3644e78ccc6138509b2b0f71cdecb435ffc7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118679868"
 ---
-# <a name="cim_logicaldiskbasedonpartition-class"></a>\_Classe CIM LogicalDiskBasedOnPartition
+# <a name="cim_logicaldiskbasedonpartition-class"></a>Classe CIM \_ LogicalDiskBasedOnPartition
 
-A classe **CIM \_ LogicalDiskBasedOnPartition** associa um disco lógico à partição de disco na qual ele reside.
+A **classe \_ LogicalDiskBasedOnPartition cim** associa um disco lógico à partição de disco na qual ele reside.
 
-Por exemplo, a unidade C de um computador pode estar localizada em uma partição na mídia física local, o que determina que um disco lógico não pode abranger mais de uma partição. No entanto, quando um disco lógico pode abranger mais de uma partição, o disco lógico é baseado na configuração RAID (por exemplo, um espelho ou conjunto de distribuição). Nesse caso, o disco lógico é baseado no volume de armazenamento. Para evitar o uso incorreto da Associação **\_ LogicalDiskBasedOnPartition do CIM** , o qualificador **Max (1)** foi colocado na referência **Antecedent** para a partição de disco.
+Por exemplo, a unidade C de um computador pode estar localizada em uma partição na mídia física local, o que determina que um disco lógico não pode abranger mais de uma partição. Quando um disco lógico pode abranger mais de uma partição, no entanto, o disco lógico é baseado na configuração raid (por exemplo, um espelho ou conjunto de faixas). Nesse caso, o disco lógico é baseado no volume de armazenamento. Para evitar o uso da associação **\_ LogicalDiskBasedOnPartition** cim incorretamente, o qualificador **Max(1)** foi colocado na referência **antecedente** à partição de disco.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) modelo CIM DMTF são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -53,69 +53,69 @@ class CIM_LogicalDiskBasedOnPartition : CIM_BasedOn
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ LogicalDiskBasedOnPartition** tem estes tipos de membros:
+A **classe \_ CIM LogicalDiskBasedOnPartition** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ LogicalDiskBasedOnPartition** tem essas propriedades.
+A **classe \_ LogicalDiskBasedOnPartition cim** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ DiskPartition**
+Tipo de dados: **Cim \_ DiskPartition**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecessor"), [**Máx.**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Um [**\_ DiskPartition CIM**](cim-diskpartition.md) que descreve a partição de disco.
+Um [**\_ DiskPartition cim**](cim-diskpartition.md) que descreve a partição de disco.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ LogicalDisk CIM**
+Tipo de dados: **Cim \_ LogicalDisk**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente")
 </dt> </dl>
 
-Um [**\_ LogicalDisk CIM**](cim-logicaldisk.md) que descreve o disco lógico que é criado na partição.
+Um [**\_ LogicalDisk cim**](cim-logicaldisk.md) que descreve o disco lógico criado na partição.
 
 </dd> <dt>
 
 **EndingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica o fim da extensão de alto nível no armazenamento de nível inferior. Essa propriedade é útil ao mapear extensões não contíguas em um agrupamento de nível superior.
+Indica o final da extensão de alto nível no armazenamento de nível inferior. Essa propriedade é útil ao mapear as extensão não contíguas para um grupo de nível superior.
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
-Essa propriedade é herdada [**da \_ base do CIM**](cim-basedon.md).
+Essa propriedade é herdada de [**CIM \_ BasedOn.**](cim-basedon.md)
 
 </dd> <dt>
 
 **StartingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -123,19 +123,19 @@ Tipo de acesso: Somente leitura
 
 Indica o início da extensão de alto nível no armazenamento de nível inferior.
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
-Essa propriedade é herdada [**da \_ base do CIM**](cim-basedon.md).
+Essa propriedade é herdada de [**CIM \_ BasedOn.**](cim-basedon.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe **CIM \_ LogicalDiskBasedOnPartition** é derivada da [**\_ base do CIM**](cim-basedon.md).
+A **classe \_ CIM LogicalDiskBasedOnPartition** é derivada de [**CIM \_ BasedOn**](cim-basedon.md).
 
-O WMI não implementa essa classe. Para classes derivadas do **CIM \_ LogicalDiskBasedOnPartition**, consulte [classes Win32](win32-provider.md).
+O WMI não implementa essa classe. Para classes derivadas de **\_ LOGICALDiskBasedOnPartition** cim , consulte [Classes Win32](win32-provider.md).
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -145,17 +145,17 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
-[**\_Baseado em CIM**](cim-basedon.md)
+[**CIM \_ BasedOn**](cim-basedon.md)
 </dt> </dl>
 
  

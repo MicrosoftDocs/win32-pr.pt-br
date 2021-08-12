@@ -4,12 +4,12 @@ description: Uma anotação é uma informação definida pelo usuário, declarad
 ms.assetid: a81198d2-c4d7-47b5-b3b8-2de11a9ee9a3
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b9583dafd3e1fb314ae6ac9e53d609bebc74a030
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1109695f6239708e8f241b796b888b8d494acd7ab806b98c08352dbe3aeaee3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118538560"
 ---
 # <a name="annotation-syntax-direct3d-11"></a>Sintaxe de anotação (Direct3D 11)
 
@@ -45,7 +45,7 @@ Você pode adicionar mais de uma anotação dentro dos colchetes angulares, cada
 
 ## <a name="example"></a>Exemplo
 
-Aqui estão alguns exemplos.
+Veja alguns exemplos.
 
 
 ```

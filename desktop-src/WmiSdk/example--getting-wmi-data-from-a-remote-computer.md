@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: 'Exemplo: obtendo dados WMI de um computador remoto'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c3375bd25073defa92358f697ee4165ddb57793
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 722247d9b58c9fc27c5fac63a97f86d0c155faa92e41fc68506c5d280d0b040a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118556619"
 ---
 # <a name="example-getting-wmi-data-from-a-remote-computer"></a>Exemplo: obtendo dados WMI de um computador remoto
 
@@ -37,7 +37,7 @@ O procedimento a seguir mostra como executar o aplicativo WMI. As etapas de 1 a 
 
     Para obter mais informações, consulte [criando uma conexão com um namespace do WMI](creating-a-connection-to-a-wmi-namespace.md).
 
-4.  Obtenha um ponteiro para [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para o \\ \\ \\ namespace raiz cimv2 em um computador remoto chamando [**IWbemLocator:: ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver). Ao se conectar a um computador remoto, você precisa saber o nome do computador, o domínio, o nome de usuário e a senha do computador remoto ao qual você está se conectando. Esses atributos são todos passados para o método **IWbemLocator:: ConnectServer** . Além disso, verifique se o nome de usuário no computador que está tentando se conectar ao computador remoto tem os privilégios de acesso corretos no computador remoto. Para obter mais informações, consulte [conectando por meio do firewall do Windows](/windows/desktop/WmiSdk/connecting-to-wmi-remotely-starting-with-vista). Para se conectar ao computador local, consulte [exemplo: obtendo dados do WMI do computador local](example--getting-wmi-data-from-the-local-computer.md) e [criando uma conexão com um namespace do WMI](creating-a-connection-to-a-wmi-namespace.md).
+4.  Obtenha um ponteiro para [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para o \\ \\ \\ namespace raiz cimv2 em um computador remoto chamando [**IWbemLocator:: ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver). Ao se conectar a um computador remoto, você precisa saber o nome do computador, o domínio, o nome de usuário e a senha do computador remoto ao qual você está se conectando. Esses atributos são todos passados para o método **IWbemLocator:: ConnectServer** . Além disso, verifique se o nome de usuário no computador que está tentando se conectar ao computador remoto tem os privilégios de acesso corretos no computador remoto. para obter mais informações, consulte [conectando por meio do Firewall Windows](/windows/desktop/WmiSdk/connecting-to-wmi-remotely-starting-with-vista). Para se conectar ao computador local, consulte [exemplo: obtendo dados do WMI do computador local](example--getting-wmi-data-from-the-local-computer.md) e [criando uma conexão com um namespace do WMI](creating-a-connection-to-a-wmi-namespace.md).
 
     Ao manipular nomes de usuário e senhas, é recomendável que o usuário seja solicitado a fornecer as informações, use as informações e, em seguida, exclua as informações, para que haja menos chance de que as informações sejam interceptadas por um usuário não autorizado. A etapa 4 no código de exemplo abaixo usa [**CredUIPromptForCredentials**](/windows/desktop/api/wincred/nf-wincred-creduipromptforcredentialsa) para obter o nome de usuário e a senha e, em seguida, usa [**SecureZeroMemory**](/previous-versions/windows/desktop/legacy/aa366877(v=vs.85)) para se livrar das informações depois que ela é usada em [**IWbemLocator:: ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver). Para obter mais informações, consulte [manipulando senhas](/windows/desktop/SecBP/handling-passwords) e [solicitando credenciais ao usuário](/windows/desktop/SecBP/asking-the-user-for-credentials) no msdn.
 

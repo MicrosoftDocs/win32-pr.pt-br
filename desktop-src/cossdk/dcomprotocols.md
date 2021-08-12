@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 705940dae0f7ebe885db4c295714df538c56c705
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f387c9ba1d46b99c44a3d6616df95f7b6f9cece959a943b63ed12ce6fe8af900
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104456998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118548015"
 ---
 # <a name="dcomprotocols-collection"></a>Coleção DCOMProtocols
 
@@ -49,14 +49,14 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 -   [Ordem](#order)
 -   [ProtocolCode](#protocolcode)
 
-### <a name="name"></a>Nome
+### <a name="name"></a>Name
 
 
 
 | Entrada | Valor |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | O nome do protocolo. Essa propriedade é retornada quando o método de propriedade [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto desta coleção. |
-| Access         | ReadWrite                                                                                                                                                   |
+| Acesso         | ReadWrite                                                                                                                                                   |
 | Type           | String                                                                                                                                                      |
 | Padrão        | "Novo protocolo"                                                                                                                                              |
 | Sistema mínimo | Windows 2000                                                                                                                                                |
@@ -72,8 +72,8 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Entrada | Valor |
 |----------------|-----------------------------------------|
 | Descrição    | A ordem na qual tentar o protocolo. |
-| Access         | ReadWrite                               |
-| Tipo           | Longo (0-65000)                          |
+| Acesso         | ReadWrite                               |
+| Digite           | Longo (0-65000)                          |
 | Padrão        | 0                                       |
 | Sistema mínimo | Windows 2000                            |
 
@@ -88,7 +88,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | O código que especifica a sequência de protocolo RPC. Os códigos de protocolo com suporte incluem o seguinte: ncacn \_ IP \_ TCP, ncacn \_ http, ncacn \_ SPX. Essa propriedade é retornada quando o método de propriedade de [**chave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) é chamado em um objeto desta coleção. |
-| Access         | WriteOnce                                                                                                                                                                                                                                                                   |
+| Acesso         | WriteOnce                                                                                                                                                                                                                                                                   |
 | Type           | String                                                                                                                                                                                                                                                                      |
 | Padrão        | ""                                                                                                                                                                                                                                                                          |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                                |

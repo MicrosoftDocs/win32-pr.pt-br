@@ -1,8 +1,8 @@
 ---
-description: Usado para registrar provedores de eventos com Instrumentação de Gerenciamento do Windows (WMI).
+description: Usado para registrar provedores de eventos com Windows WMI (Instrumentação de Gerenciamento de Dados).
 ms.assetid: d87f61a8-5549-4f33-ba67-31b5d72b5282
 ms.tgt_platform: multiple
-title: Classe __EventProviderRegistration
+title: __EventProviderRegistration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: caaad1b4ab03cfc1b43e4239b9144d3ceeade82f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ce973f05aec0a1c859598c558ef8c2cc637a8faec22fd1d7f2ad2aaf383bd201
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105811495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118557940"
 ---
 # <a name="__eventproviderregistration-class"></a>\_\_Classe EventProviderRegistration
 
-A classe de sistema **\_ \_ EventProviderRegistration** é usada para registrar provedores de eventos com instrumentação de gerenciamento do Windows (WMI).
+A **\_ \_ classe de sistema EventProviderRegistration** é usada para registrar provedores de eventos com o WMI (Instrumentação de Gerenciamento de Windows).
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
@@ -41,45 +41,45 @@ class __EventProviderRegistration : __ProviderRegistration
 
 ## <a name="members"></a>Membros
 
-A classe **\_ \_ EventProviderRegistration** tem estes tipos de membros:
+A **\_ \_ classe EventProviderRegistration** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **\_ \_ EventProviderRegistration** tem essas propriedades.
+A **\_ \_ classe EventProviderRegistration** tem essas propriedades.
 
 <dl> <dt>
 
 **EventQueryList**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Uma ou mais consultas WQL (linguagem de consulta Instrumentação de Gerenciamento do Windows) que descrevem os eventos aos quais o provedor de eventos dá suporte.
+Uma ou mais Windows WQL (Linguagem de Consulta de Instrumentação de Gerenciamento) que descrevem os eventos aos qual o provedor de eventos dá suporte.
 
 </dd> <dt>
 
-**operador**
+**Provedor**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **\_ \_ provedor**
+Tipo de dados: **\_ \_ Provedor**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Caminho do objeto para o provedor de eventos. Essa propriedade é herdada de [**\_ \_ ProviderRegistration**](--providerregistration.md).
+Caminho do objeto para o provedor de eventos. Essa propriedade é herdada [**\_ \_ de ProviderRegistration.**](--providerregistration.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Somente os administradores podem registrar ou excluir um provedor de eventos criando uma instância do [**\_ \_ Win32Provider**](--win32provider.md) e do [**\_ \_ EventProviderRegistration**](--eventconsumerproviderregistration.md). A classe **\_ \_ EventProviderRegistration** é derivada de [**\_ \_ ProviderRegistration**](--providerregistration.md).
+Somente os administradores podem registrar ou excluir um provedor de eventos criando uma instância de [**\_ \_ Win32Provider**](--win32provider.md) [**\_ \_ e EventProviderRegistration**](--eventconsumerproviderregistration.md). A **\_ \_ classe EventProviderRegistration** é derivada de [**\_ \_ ProviderRegistration**](--providerregistration.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -89,7 +89,7 @@ Somente os administradores podem registrar ou excluir um provedor de eventos cri
 |-------------------------------------|--------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>       |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/> |
-| Namespace<br/>                | Todos os namespaces do WMI<br/>  |
+| Namespace<br/>                | Todos os namespaces WMI<br/>  |
 
 
 

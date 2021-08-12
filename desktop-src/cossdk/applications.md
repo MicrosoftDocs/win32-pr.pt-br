@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 54f286ae393e67d9732e21bc40cbb0f9c46d8c63
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 23ce8d7dc343e9cbca9aab642aee99424c5fffdde8ef0f15a52d2959bf492095
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118549415"
 ---
 # <a name="applications-collection"></a>Coleção de aplicativos
 
@@ -112,8 +112,8 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Indica se o aplicativo pode usar 3 GB de memória em seu processo. Se isso não estiver habilitado, o aplicativo poderá usar apenas 2 GB de memória. |
-| Access         | ReadWrite                                                                                                                                     |
-| Tipo           | Bool                                                                                                                                          |
+| Acesso         | ReadWrite                                                                                                                                     |
+| Digite           | Bool                                                                                                                                          |
 | Padrão        | Falso                                                                                                                                         |
 | Sistema mínimo | Windows 2000                                                                                                                                  |
 
@@ -128,8 +128,8 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Indica se as verificações de acesso são executadas apenas no nível do processo ou no nível do processo e do componente. É recomendável que você use as constantes na enumeração e não os valores numéricos. |
-| Access         | ReadWrite                                                                                                                                                                                                       |
-| Tipo           | Valores longos possíveis: COMAdminAccessChecksApplicationLevel (0) COMAdminAccessChecksApplicationComponentLevel (1)                                                                                                |
+| Acesso         | ReadWrite                                                                                                                                                                                                       |
+| Digite           | Valores long possible: COMAdminAccessChecksApplicationLevel (0) COMAdminAccessChecksApplicationComponentLevel (1)                                                                                                |
 | Padrão        | COMAdminAccessChecksApplicationComponentLevel (1)                                                                                                                                                               |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                    |
 
@@ -143,9 +143,9 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | A ativação local indica que os objetos dentro do aplicativo são executados dentro de um processo de servidor local dedicado (aplicativo de servidor). A ativação em processo indica que os objetos são executados no processo do criador (aplicativo de biblioteca). |
-| Access         | ReadWrite                                                                                                                                                                                                                           |
-| Tipo           | Valores longos possíveis: COMAdminActivationInproc (0) COMAdminActivationLocal (1)                                                                                                                                                        |
+| Descrição    | A ativação local indica que os objetos dentro do aplicativo são executados em um processo de servidor local dedicado (aplicativo de servidor). A ativação em processo indica que os objetos são executados no processo do criador (aplicativo de biblioteca). |
+| Acesso         | ReadWrite                                                                                                                                                                                                                           |
+| Digite           | Valores long possible:COMAdminActivationInproc (0)COMAdminActivationLocal (1)                                                                                                                                                        |
 | Padrão        | COMAdminActivationLocal (1)                                                                                                                                                                                                         |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                        |
 
@@ -159,9 +159,9 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|----------------------------------------------------------------------------------------------------|
-| Descrição    | Indica se as verificações de acesso são executadas para o aplicativo quando os clientes fazem chamadas para ele. |
-| Access         | ReadWrite                                                                                          |
-| Tipo           | Bool                                                                                               |
+| Descrição    | Indica se as verificações de acesso são executadas para o aplicativo quando os clientes fazem chamadas nele. |
+| Acesso         | ReadWrite                                                                                          |
+| Digite           | Bool                                                                                               |
 | Padrão        | True                                                                                               |
 | Sistema mínimo | Windows 2000                                                                                       |
 
@@ -169,14 +169,14 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
  
 
-### <a name="applicationdirectory"></a>ApplicationDirectory
+### <a name="applicationdirectory"></a>Applicationdirectory
 
 
 
 | Entrada | Valor |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | O caminho completo para o aplicativo. Essas informações são necessárias quando você configura assemblies do SxS (lado a lado). Os assemblies SxS (lado a lado permitem que os aplicativos ASP especifiquem qual versão de uma DLL de sistema com suporte do SxS usar, como MSVCRT, MSXML, COMCTL, GDIPLUS e assim por diante. Por exemplo, se o aplicativo ASP depender da versão 2,0 do MSVCRT, você poderá garantir que seu aplicativo ainda use o MSVCRT versão 2,0 mesmo depois que os Service Packs forem aplicados ao servidor. Qualquer nova versão do MSVCRT ainda está instalada no computador, mas a versão 2,0 permanece e é usada pelo seu aplicativo. As DLLs com suporte a SxS são armazenadas em% WINDIR% \\ WinSxS. |
-| Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Descrição    | O caminho completo para o aplicativo. Essas informações são necessárias quando você configura assemblies lado a lado (SxS). Assemblies SxS (lado a lado) permitem que aplicativos ASP especifiquem qual versão de uma DLL do sistema com suporte para SxS usar, como MSVCRT, MSXML, COMCTL, GDIPLUS e assim por diante. Por exemplo, se o aplicativo ASP se basear na versão 2.0 do MSVCRT, você poderá garantir que seu aplicativo ainda use o MSVCRT versão 2.0 mesmo depois que os service packs são aplicados ao servidor. Qualquer nova versão do MSVCRT ainda está instalada no computador, mas a versão 2.0 permanece e é usada pelo seu aplicativo. As DLLs com suporte para SxS são armazenadas em %WINDIR% \\ WinSxS. |
+| Acesso         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Type           | String                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Padrão        | ""                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Sistema mínimo | Windows XP                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -186,11 +186,11 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
  
 
 > [!Note]  
-> Somente uma versão de uma DLL do sistema pode ser usada em qualquer pool de aplicativos, embora esse recurso seja configurável no nível do aplicativo. Por exemplo, se o aplicativo App1 usar o MSVCRT, a versão 2,5 e o aplicativo App2 usarem MSVCRT, versão 2,4, App1 e App2 não deverão estar no mesmo pool de aplicativos. Se estiverem, o aplicativo que é carregado primeiro tem sua versão do MSVCRT carregada e o outro aplicativo é forçado a usá-lo até que os aplicativos sejam descarregados.
+> Apenas uma versão de uma DLL do sistema pode ser usada em qualquer pool de aplicativos, mesmo que esse recurso seja configurável no nível do aplicativo. Por exemplo, se o aplicativo App1 usar MSVCRT, a versão 2.5 e o aplicativo App2 usarem MSVCRT, versão 2.4, o App1 e o App2 não deverão estar no mesmo pool de aplicativos. Se for, o aplicativo carregado primeiro terá sua versão do MSVCRT carregada e o outro aplicativo será forçado a usá-lo até que os aplicativos sejam descarregados.
 
  
 
-Para obter mais informações, consulte "assemblies lado a lado" em [alterações nos serviços com+ no IIS 6,0](/previous-versions/iis/6.0-sdk/ms526018(v=vs.90)).
+Para obter mais informações, consulte "Assemblies lado a lado" em Alterações nos serviços [COM+ no IIS 6.0](/previous-versions/iis/6.0-sdk/ms526018(v=vs.90)).
 
 ### <a name="applicationproxy"></a>ApplicationProxy
 
@@ -199,8 +199,8 @@ Para obter mais informações, consulte "assemblies lado a lado" em [alteraçõe
 | Entrada | Valor |
 |----------------|------------------------------------------------------------|
 | Descrição    | Indica se o aplicativo é um proxy de aplicativo. |
-| Access         | ReadOnly                                                   |
-| Tipo           | Bool                                                       |
+| Acesso         | ReadOnly                                                   |
+| Digite           | Bool                                                       |
 | Padrão        | Falso                                                      |
 | Sistema mínimo | Windows 2000                                               |
 
@@ -214,8 +214,8 @@ Para obter mais informações, consulte "assemblies lado a lado" em [alteraçõe
 
 | Entrada | Valor |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Um nome de servidor remoto usado ao exportar o proxy de aplicativo. É esse nome de servidor que o proxy de aplicativo aponta quando está instalado em um computador cliente. |
-| Access         | ReadWrite                                                                                                                                                              |
+| Descrição    | Um nome de servidor remoto usado ao exportar o proxy de aplicativo. É para esse nome de servidor que o proxy de aplicativo aponta quando ele é instalado em um computador cliente. |
+| Acesso         | ReadWrite                                                                                                                                                              |
 | Type           | String                                                                                                                                                                 |
 | Padrão        | ""                                                                                                                                                                     |
 | Sistema mínimo | Windows 2000                                                                                                                                                           |
@@ -231,7 +231,7 @@ Para obter mais informações, consulte "assemblies lado a lado" em [alteraçõe
 | Entrada | Valor |
 |----------------|---------------------------------------------------|
 | Descrição    | Um GUID que representa a ID da partição do aplicativo. |
-| Access         | ReadOnly                                          |
+| Acesso         | ReadOnly                                          |
 | Type           | String                                            |
 | Padrão        | <Generated>                                 |
 | Sistema mínimo | Windows Server 2003                               |
@@ -246,9 +246,9 @@ Para obter mais informações, consulte "assemblies lado a lado" em [alteraçõe
 
 | Entrada | Valor |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Define o nível de autenticação para chamadas, com valores correspondentes às configurações de autenticação RPC (chamada de procedimento remoto). Quando COMAdminAuthenticationDefault é escolhido, a configuração na propriedade DefaultAuthenticationLevel dentro da coleção [**LocalComputer**](localcomputer.md) é usada. |
-| Access         | ReadWrite                                                                                                                                                                                                                                                                                             |
-| Tipo           | Valores longos possíveis: COMAdminAuthenticationDefault (0) COMAdminAuthenticationNone (1) COMAdminAuthenticationConnect (2) COMAdminAuthenticationCall (3) COMAdminAuthenticationPacket (4) COMAdminAuthenticationIntegrity (5) COMAdminAuthenticationPrivacy (6)                                              |
+| Descrição    | Define o nível de autenticação para chamadas, com valores correspondentes às configurações de autenticação de RPC (Chamada de Procedimento Remoto). Quando COMAdminAuthenticationDefault é escolhido, a configuração na propriedade DefaultAuthenticationLevel na coleção [**LocalComputer**](localcomputer.md) é usada. |
+| Acesso         | ReadWrite                                                                                                                                                                                                                                                                                             |
+| Digite           | Valores longos possíveis: COMAdminAuthenticationDefault (0) COMAdminAuthenticationNone (1) COMAdminAuthenticationConnect (2) COMAdminAuthenticationCall (3) COMAdminAuthenticationPacket (4) COMAdminAuthenticationIntegrity (5) COMAdminAuthenticationPrivacy (6)                                              |
 | Padrão        | COMAdminAuthenticationPacket (4)                                                                                                                                                                                                                                                                      |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                                                          |
 
@@ -268,8 +268,8 @@ Para obter mais informações, consulte "assemblies lado a lado" em [alteraçõe
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Determina qual identidade é apresentada quando as chamadas são representadas.                                                                                                                                                                      |
-| Access         | ReadWrite                                                                                                                                                                                                                               |
-| Tipo           | Valores longos possíveis: COMAdminAuthenticationCapabilitiesNone (0x0) COMAdminAuthenticationCapabilitiesSecureReference (0x2) COMAdminAuthenticationCapabilitiesStaticCloaking (0x20) COMAdminAuthenticationCapabilitiesDynamicCloaking (0x40) |
+| Acesso         | ReadWrite                                                                                                                                                                                                                               |
+| Digite           | Valores longos possíveis: COMAdminAuthenticationCapabilitiesNone (0x0) COMAdminAuthenticationCapabilitiesSecureReference (0x2) COMAdminAuthenticationCapabilitiesStaticCloaking (0x20) COMAdminAuthenticationCapabilitiesDynamicCloaking (0x40) |
 | Padrão        | COMAdminAuthenticationCapabilitiesDynamicCloaking (0x40)                                                                                                                                                                                |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                            |
 
@@ -284,8 +284,8 @@ Para obter mais informações, consulte "assemblies lado a lado" em [alteraçõe
 | Entrada | Valor |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Determina se as alterações nas configurações do aplicativo ou de seus componentes são permitidas, seja por meio de programação ou por meio da ferramenta de administração de serviços de componentes. |
-| Access         | ReadWrite                                                                                                                                                                     |
-| Tipo           | Bool                                                                                                                                                                          |
+| Acesso         | ReadWrite                                                                                                                                                                     |
+| Digite           | Bool                                                                                                                                                                          |
 | Padrão        | True                                                                                                                                                                          |
 | Sistema mínimo | Windows 2000                                                                                                                                                                  |
 
@@ -300,7 +300,7 @@ Para obter mais informações, consulte "assemblies lado a lado" em [alteraçõe
 | Entrada | Valor |
 |----------------|----------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Uma cadeia de caracteres de linha de comando para uso na depuração. O aplicativo pode ser iniciado em um depurador com a linha de comando especificada. |
-| Access         | ReadWrite                                                                                                                  |
+| Acesso         | ReadWrite                                                                                                                  |
 | Type           | String                                                                                                                     |
 | Padrão        | ""                                                                                                                         |
 | Sistema mínimo | Windows 2000                                                                                                               |
@@ -316,8 +316,8 @@ Para obter mais informações, consulte "assemblies lado a lado" em [alteraçõe
 | Entrada | Valor |
 |----------------|----------------------------------------------------------------------------------|
 | Descrição    | Especifica o número máximo de aplicativos em pool que podem ser executados simultaneamente. |
-| Access         | ReadWrite                                                                        |
-| Tipo           | Longo (1-1048576)                                                                 |
+| Acesso         | ReadWrite                                                                        |
+| Digite           | Longo (1-1048576)                                                                 |
 | Padrão        | 1                                                                                |
 | Sistema mínimo | Windows XP                                                                       |
 
@@ -332,7 +332,7 @@ Para obter mais informações, consulte "assemblies lado a lado" em [alteraçõe
 | Entrada | Valor |
 |----------------|---------------------------------------------------------------|
 | Descrição    | Cadeia de caracteres informativa para descrever quem criou o aplicativo. |
-| Access         | ReadWrite                                                     |
+| Acesso         | ReadWrite                                                     |
 | Type           | String                                                        |
 | Padrão        | ""                                                            |
 | Sistema mínimo | Windows 2000                                                  |
@@ -348,8 +348,8 @@ Para obter mais informações, consulte "assemblies lado a lado" em [alteraçõe
 | Entrada | Valor |
 |----------------|------------------------------------------------------------------|
 | Descrição    | Determina se o Gerenciador de recursos de compensação está habilitado. |
-| Access         | ReadWrite                                                        |
-| Tipo           | Bool                                                             |
+| Acesso         | ReadWrite                                                        |
+| Digite           | Bool                                                             |
 | Padrão        | Falso                                                            |
 | Sistema mínimo | Windows 2000                                                     |
 
@@ -364,7 +364,7 @@ Para obter mais informações, consulte "assemblies lado a lado" em [alteraçõe
 | Entrada | Valor |
 |----------------|----------------------------------------------------------------------------------------|
 | Descrição    | Nome e caminho do arquivo para manter o log do Gerenciador de recursos de compensação (CRM). |
-| Access         | ReadWrite                                                                              |
+| Acesso         | ReadWrite                                                                              |
 | Type           | String                                                                                 |
 | Padrão        | ""                                                                                     |
 | Sistema mínimo | Windows 2000                                                                           |
@@ -380,8 +380,8 @@ Para obter mais informações, consulte "assemblies lado a lado" em [alteraçõe
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Define se o aplicativo pode ser excluído, seja por meio de programação ou por meio da ferramenta de administração de serviços de componentes. |
-| Access         | ReadWrite                                                                                                                   |
-| Tipo           | Bool                                                                                                                        |
+| Acesso         | ReadWrite                                                                                                                   |
+| Digite           | Bool                                                                                                                        |
 | Padrão        | True                                                                                                                        |
 | Sistema mínimo | Windows 2000                                                                                                                |
 
@@ -396,7 +396,7 @@ Para obter mais informações, consulte "assemblies lado a lado" em [alteraçõe
 | Entrada | Valor |
 |----------------|----------------------------|
 | Descrição    | Descreve o aplicativo. |
-| Access         | ReadWrite                  |
+| Acesso         | ReadWrite                  |
 | Type           | String                     |
 | Padrão        | ""                         |
 | Sistema mínimo | Windows 2000               |
@@ -412,8 +412,8 @@ Para obter mais informações, consulte "assemblies lado a lado" em [alteraçõe
 | Entrada | Valor |
 |----------------|-------------------------------------------------------------------------------------------------------|
 | Descrição    | Habilita o despejo do estado de um aplicativo COM+ no momento da falha em um diretório designado. |
-| Access         | ReadWrite                                                                                             |
-| Tipo           | Bool                                                                                                  |
+| Acesso         | ReadWrite                                                                                             |
+| Digite           | Bool                                                                                                  |
 | Padrão        | Falso                                                                                                 |
 | Sistema mínimo | Windows XP                                                                                            |
 
@@ -422,7 +422,7 @@ Para obter mais informações, consulte "assemblies lado a lado" em [alteraçõe
  
 
 > [!Note]  
-> A partir do Windows Server 2003, somente os administradores têm privilégios de acesso de leitura aos arquivos de despejo COM+.
+> a partir do Windows Server 2003, somente os administradores têm privilégios de acesso de leitura aos arquivos de despejo COM+.
 
  
 
@@ -433,8 +433,8 @@ Para obter mais informações, consulte "assemblies lado a lado" em [alteraçõe
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Habilita o despejo do estado de um aplicativo COM+ quando o aplicativo causa uma exceção sem tratamento e é encerrado pelo tempo de execução do COM+. |
-| Access         | ReadWrite                                                                                                                                     |
-| Tipo           | Bool                                                                                                                                          |
+| Acesso         | ReadWrite                                                                                                                                     |
+| Digite           | Bool                                                                                                                                          |
 | Padrão        | Falso                                                                                                                                         |
 | Sistema mínimo | Windows XP                                                                                                                                    |
 
@@ -449,8 +449,8 @@ Para obter mais informações, consulte "assemblies lado a lado" em [alteraçõe
 | Entrada | Valor |
 |----------------|---------------------------------------------------------------------------------|
 | Descrição    | Habilita o despejo do estado de um aplicativo COM+ quando o aplicativo falha. |
-| Access         | ReadWrite                                                                       |
-| Tipo           | Bool                                                                            |
+| Acesso         | ReadWrite                                                                       |
+| Digite           | Bool                                                                            |
 | Padrão        | Falso                                                                           |
 | Sistema mínimo | Windows XP                                                                      |
 
@@ -465,7 +465,7 @@ Para obter mais informações, consulte "assemblies lado a lado" em [alteraçõe
 | Entrada | Valor |
 |----------------|--------------------------------------------------------------|
 | Descrição    | O caminho do diretório no qual os arquivos de despejo são salvos. |
-| Access         | ReadWrite                                                    |
+| Acesso         | ReadWrite                                                    |
 | Type           | String                                                       |
 | Padrão        | "% SystemRoot% \\ System32 \\ com \\ DMP"                           |
 | Sistema mínimo | Windows XP                                                   |
@@ -475,7 +475,7 @@ Para obter mais informações, consulte "assemblies lado a lado" em [alteraçõe
  
 
 > [!Note]  
-> A partir do Windows Server 2003, somente os administradores têm privilégios de acesso de leitura aos arquivos de despejo COM+.
+> a partir do Windows Server 2003, somente os administradores têm privilégios de acesso de leitura aos arquivos de despejo COM+.
 
  
 
@@ -486,8 +486,8 @@ Para obter mais informações, consulte "assemblies lado a lado" em [alteraçõe
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------|
 | Descrição    | Indica se os eventos estão habilitados para o aplicativo. |
-| Access         | ReadWrite                                                 |
-| Tipo           | Bool                                                      |
+| Acesso         | ReadWrite                                                 |
+| Digite           | Bool                                                      |
 | Padrão        | True                                                      |
 | Sistema mínimo | Windows 2000                                              |
 
@@ -502,7 +502,7 @@ Para obter mais informações, consulte "assemblies lado a lado" em [alteraçõe
 | Entrada | Valor |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Um GUID que representa o aplicativo. Essa propriedade é retornada quando o método de propriedade de [**chave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) é chamado em um objeto desta coleção. |
-| Access         | WriteOnce                                                                                                                                                            |
+| Acesso         | WriteOnce                                                                                                                                                            |
 | Type           | String                                                                                                                                                               |
 | Padrão        | <Generated>                                                                                                                                                    |
 | Sistema mínimo | Windows 2000                                                                                                                                                         |
@@ -518,7 +518,7 @@ Para obter mais informações, consulte "assemblies lado a lado" em [alteraçõe
 | Entrada | Valor |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Define a identidade do processo do servidor para o aplicativo. Especifique uma conta de usuário válida ou "usuário interativo" para que o aplicativo assuma a identidade do usuário conectado no momento. Você também pode especificar as cadeias de caracteres "NT Authority \\ LocalService", "NT Authority \\ NetworkService" e "NT Authority \\ System". A senha padrão para essas três contas é "" (cadeia de caracteres vazia). |
-| Access         |                                                                                                                                                                                                                                                                                                                                                                                    |
+| Acesso         |                                                                                                                                                                                                                                                                                                                                                                                    |
 | Type           |                                                                                                                                                                                                                                                                                                                                                                                    |
 | Padrão        |                                                                                                                                                                                                                                                                                                                                                                                    |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                                                                                                                                       |
@@ -538,8 +538,8 @@ A propriedade password deve ser definida ao mesmo tempo que a identidade, antes 
 | Entrada | Valor |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Define o nível de representação usado para chamadas feitas a outros aplicativos.                                                                                           |
-| Access         | ReadWrite                                                                                                                                                     |
-| Tipo           | Valores longos possíveis: COMAdminImpersonationAnonymous (1) COMAdminImpersonationIdentify (2) COMAdminImpersonationImpersonate (3) COMAdminImpersonationDelegate (4) |
+| Acesso         | ReadWrite                                                                                                                                                     |
+| Digite           | Valores longos possíveis: COMAdminImpersonationAnonymous (1) COMAdminImpersonationIdentify (2) COMAdminImpersonationImpersonate (3) COMAdminImpersonationDelegate (4) |
 | Padrão        | COMAdminImpersonationImpersonate (3)                                                                                                                          |
 | Sistema mínimo | Windows 2000                                                                                                                                                  |
 
@@ -554,8 +554,8 @@ A propriedade password deve ser definida ao mesmo tempo que a identidade, antes 
 | Entrada | Valor |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Se o aplicativo ou componente COM+ estiver desabilitado, IsEnabled será false. Se o aplicativo ou componente COM+ estiver habilitado, IsEnabled será true. |
-| Access         | ReadWrite                                                                                                                                 |
-| Tipo           | Bool                                                                                                                                      |
+| Acesso         | ReadWrite                                                                                                                                 |
+| Digite           | Bool                                                                                                                                      |
 | Padrão        | True                                                                                                                                      |
 | Sistema mínimo | Windows XP                                                                                                                                |
 
@@ -570,8 +570,8 @@ A propriedade password deve ser definida ao mesmo tempo que a identidade, antes 
 | Entrada | Valor |
 |----------------|--------------------------------------|
 | Descrição    | Identifica aplicativos de sistema COM+. |
-| Access         | ReadOnly                             |
-| Tipo           | Bool                                 |
+| Acesso         | ReadOnly                             |
+| Digite           | Bool                                 |
 | Padrão        | Falso                                |
 | Sistema mínimo | Windows 2000                         |
 
@@ -586,8 +586,8 @@ A propriedade password deve ser definida ao mesmo tempo que a identidade, antes 
 | Entrada | Valor |
 |----------------|----------------------------------------------------------------------------------|
 | Descrição    | Indica o número máximo de arquivos a serem gerados antes que a substituição ocorra. |
-| Access         | ReadWrite                                                                        |
-| Tipo           | Longo (1-200)                                                                     |
+| Acesso         | ReadWrite                                                                        |
+| Digite           | Longo (1-200)                                                                     |
 | Padrão        | 5                                                                                |
 | Sistema mínimo | Windows XP                                                                       |
 
@@ -595,14 +595,14 @@ A propriedade password deve ser definida ao mesmo tempo que a identidade, antes 
 
  
 
-### <a name="name"></a>Nome
+### <a name="name"></a>Name
 
 
 
 | Entrada | Valor |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | O nome do aplicativo. Espaços extras no início e no final da cadeia de caracteres são removidos. Essa propriedade é retornada quando o método de propriedade [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto desta coleção. |
-| Access         | ReadWrite                                                                                                                                                                                                                            |
+| Acesso         | ReadWrite                                                                                                                                                                                                                            |
 | Type           | String                                                                                                                                                                                                                               |
 | Padrão        | "Novo aplicativo"                                                                                                                                                                                                                    |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                         |
@@ -623,7 +623,7 @@ A propriedade password deve ser definida ao mesmo tempo que a identidade, antes 
 | Entrada | Valor |
 |----------------|----------------------------------------------------------------------------|
 | Descrição    | Define a senha usada pelo processo do servidor para fazer logon sob a identidade. |
-| Access         | WriteOnly                                                                  |
+| Acesso         | WriteOnly                                                                  |
 | Type           | String                                                                     |
 | Padrão        | ""                                                                         |
 | Sistema mínimo | Windows 2000                                                               |
@@ -641,8 +641,8 @@ A senha deve ser definida ao mesmo tempo que a identidade, antes de usar [**Save
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Indica em quais circunstâncias as solicitações enfileiradas para um aplicativo são autenticadas.                                                 |
-| Access         | ReadWrite                                                                                                                               |
-| Tipo           | Valores longos possíveis: COMAdminQCMessageAuthenticateSecureApps (0) COMAdminQCMessageAuthenticateOff (1) COMAdminQCMessageAuthenticateOn (2) |
+| Acesso         | ReadWrite                                                                                                                               |
+| Digite           | Valores longos possíveis: COMAdminQCMessageAuthenticateSecureApps (0) COMAdminQCMessageAuthenticateOff (1) COMAdminQCMessageAuthenticateOn (2) |
 | Padrão        | COMAdminQCMessageAuthenticateSecureApps (0)                                                                                             |
 | Sistema mínimo | Windows XP                                                                                                                              |
 
@@ -657,8 +657,8 @@ A senha deve ser definida ao mesmo tempo que a identidade, antes de usar [**Save
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Indica o número máximo de threads de ouvinte simultâneos. O intervalo válido para essa propriedade é de 0 a 1000. Para um aplicativo recém-criado, a configuração é derivada do algoritmo usado atualmente para determinar o número padrão de threads de ouvinte: 16 vezes o número de CPUs no servidor. |
-| Access         | ReadWrite                                                                                                                                                                                                                                                                                                 |
-| Tipo           | Longo (0-1000)                                                                                                                                                                                                                                                                                             |
+| Acesso         | ReadWrite                                                                                                                                                                                                                                                                                                 |
+| Digite           | Longo (0-1000)                                                                                                                                                                                                                                                                                             |
 | Padrão        | 0                                                                                                                                                                                                                                                                                                         |
 | Sistema mínimo | Windows XP                                                                                                                                                                                                                                                                                                |
 
@@ -678,8 +678,8 @@ A senha deve ser definida ao mesmo tempo que a identidade, antes de usar [**Save
 | Entrada | Valor |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Indica se o ouvinte de componentes na fila está habilitado para o aplicativo. Se habilitada, o ouvinte será iniciado quando o aplicativo for iniciado. Essa propriedade entrará em vigor somente se QueuingEnabled estiver definido como true. |
-| Access         | ReadWrite                                                                                                                                                                                                            |
-| Tipo           | Bool                                                                                                                                                                                                                 |
+| Acesso         | ReadWrite                                                                                                                                                                                                            |
+| Digite           | Bool                                                                                                                                                                                                                 |
 | Padrão        | Falso                                                                                                                                                                                                                |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                         |
 
@@ -694,8 +694,8 @@ A senha deve ser definida ao mesmo tempo que a identidade, antes de usar [**Save
 | Entrada | Valor |
 |----------------|--------------------------------------------------------------------------------------|
 | Descrição    | Indica se o serviço de componentes em fila COM+ está habilitado para o aplicativo. |
-| Access         | ReadWrite                                                                            |
-| Tipo           | Bool                                                                                 |
+| Acesso         | ReadWrite                                                                            |
+| Digite           | Bool                                                                                 |
 | Padrão        | Falso                                                                                |
 | Sistema mínimo | Windows 2000                                                                         |
 
@@ -710,8 +710,8 @@ A senha deve ser definida ao mesmo tempo que a identidade, antes de usar [**Save
 | Entrada | Valor |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Indica o número máximo de ativações de objetos configurados no aplicativo a serem aceitos antes da reciclagem do processo. O número padrão de ativações é 0. |
-| Access         | ReadWrite                                                                                                                                                            |
-| Tipo           | Longo (0-1048576)                                                                                                                                                     |
+| Acesso         | ReadWrite                                                                                                                                                            |
+| Digite           | Longo (0-1048576)                                                                                                                                                     |
 | Padrão        | 0                                                                                                                                                                    |
 | Sistema mínimo | Windows XP                                                                                                                                                           |
 
@@ -726,8 +726,8 @@ A senha deve ser definida ao mesmo tempo que a identidade, antes de usar [**Save
 | Entrada | Valor |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Indica o número máximo de chamadas para permitir que os objetos configurados no aplicativo sejam aceitos antes da reciclagem do processo. O número padrão de chamadas é 0. |
-| Access         | ReadWrite                                                                                                                                                      |
-| Tipo           | Longo (0-1048576)                                                                                                                                               |
+| Acesso         | ReadWrite                                                                                                                                                      |
+| Digite           | Longo (0-1048576)                                                                                                                                               |
 | Padrão        | 0                                                                                                                                                              |
 | Sistema mínimo | Windows XP                                                                                                                                                     |
 
@@ -742,8 +742,8 @@ A senha deve ser definida ao mesmo tempo que a identidade, antes de usar [**Save
 | Entrada | Valor |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Indica a quantidade de tempo (em minutos) para permitir que um processo reciclado seja executado antes de desligá-lo. A contagem regressiva começa imediatamente após o processo ser reciclado. O tempo limite máximo de expiração é de 1440 minutos (24 horas) e o padrão é 15 minutos. |
-| Access         | ReadWrite                                                                                                                                                                                                                                                        |
-| Tipo           | Longo (1-1440)                                                                                                                                                                                                                                                    |
+| Acesso         | ReadWrite                                                                                                                                                                                                                                                        |
+| Digite           | Longo (1-1440)                                                                                                                                                                                                                                                    |
 | Padrão        | 15                                                                                                                                                                                                                                                               |
 | Sistema mínimo | Windows XP                                                                                                                                                                                                                                                       |
 
@@ -758,8 +758,8 @@ A senha deve ser definida ao mesmo tempo que a identidade, antes de usar [**Save
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Indica o número máximo de minutos para permitir que um processo seja executado antes de reciclá-lo. O limite máximo de tempo de vida é de 30240 minutos (21 dias) e o padrão é 0 minutos. |
-| Access         | ReadWrite                                                                                                                                                                   |
-| Tipo           | Longo (0-30240)                                                                                                                                                              |
+| Acesso         | ReadWrite                                                                                                                                                                   |
+| Digite           | Longo (0-30240)                                                                                                                                                              |
 | Padrão        | 0                                                                                                                                                                           |
 | Sistema mínimo | Windows XP                                                                                                                                                                  |
 
@@ -774,8 +774,8 @@ A senha deve ser definida ao mesmo tempo que a identidade, antes de usar [**Save
 | Entrada | Valor |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Indica a quantidade máxima de uso de memória (em quilobytes) que permitia um processo antes de ser reciclado. Se o uso de memória do processo exceder o número especificado por um período de mais de um minuto, o processo será reciclado. A quantidade padrão de uso de memória é 0 KB. |
-| Access         | ReadWrite                                                                                                                                                                                                                                                              |
-| Tipo           | Longo (0-1048576)                                                                                                                                                                                                                                                       |
+| Acesso         | ReadWrite                                                                                                                                                                                                                                                              |
+| Digite           | Longo (0-1048576)                                                                                                                                                                                                                                                       |
 | Padrão        | 0                                                                                                                                                                                                                                                                      |
 | Sistema mínimo | Windows XP                                                                                                                                                                                                                                                             |
 
@@ -790,8 +790,8 @@ A senha deve ser definida ao mesmo tempo que a identidade, antes de usar [**Save
 | Entrada | Valor |
 |----------------|------------------------------------------------------|
 | Descrição    | Indica se o aplicativo pode ser replicado. |
-| Access         | ReadWrite                                            |
-| Tipo           | Bool                                                 |
+| Acesso         | ReadWrite                                            |
+| Digite           | Bool                                                 |
 | Padrão        | True                                                 |
 | Sistema mínimo | Windows XP                                           |
 
@@ -806,8 +806,8 @@ A senha deve ser definida ao mesmo tempo que a identidade, antes de usar [**Save
 | Entrada | Valor |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Permite que um processo do servidor continue se um aplicativo estiver ocioso. Se definido como true, o processo do servidor não é desligado quando deixado ocioso. Se definido como false, o processo será desligado de acordo com o valor definido pela propriedade ShutdownAfter. RunForever não está habilitado para aplicativos de biblioteca (em processo). |
-| Access         | ReadWrite                                                                                                                                                                                                                                                                                                |
-| Tipo           | Bool                                                                                                                                                                                                                                                                                                     |
+| Acesso         | ReadWrite                                                                                                                                                                                                                                                                                                |
+| Digite           | Bool                                                                                                                                                                                                                                                                                                     |
 | Padrão        | Falso                                                                                                                                                                                                                                                                                                    |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                                                             |
 
@@ -822,7 +822,7 @@ A senha deve ser definida ao mesmo tempo que a identidade, antes de usar [**Save
 | Entrada | Valor |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | O nome do serviço correspondente ao aplicativo configurado para ser executado como um aplicativo de serviço. Se esse valor for **nulo**, o aplicativo não será configurado para ser executado como um serviço. Caso contrário, as informações de configuração para o serviço podem ser encontradas usando o nome do serviço. |
-| Access         | ReadOnly                                                                                                                                                                                                                                                                         |
+| Acesso         | ReadOnly                                                                                                                                                                                                                                                                         |
 | Type           | String                                                                                                                                                                                                                                                                           |
 | Padrão        | ""                                                                                                                                                                                                                                                                               |
 | Sistema mínimo | Windows XP                                                                                                                                                                                                                                                                       |
@@ -838,8 +838,8 @@ A senha deve ser definida ao mesmo tempo que a identidade, antes de usar [**Save
 | Entrada | Valor |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Define o atraso antes de desligar um processo do servidor depois que ele se torna ocioso. Intervalos de latência de desligamento de 0 a 1440 minutos (24 horas). Se RunForever for definido como true, essa propriedade será ignorada. ShutdownAfter não está habilitado para aplicativos de biblioteca (em processo). |
-| Access         | ReadWrite                                                                                                                                                                                                                                                          |
-| Tipo           | Longo (0-1440)                                                                                                                                                                                                                                                      |
+| Acesso         | ReadWrite                                                                                                                                                                                                                                                          |
+| Digite           | Longo (0-1440)                                                                                                                                                                                                                                                      |
 | Padrão        | 3                                                                                                                                                                                                                                                                  |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                       |
 
@@ -854,8 +854,8 @@ A senha deve ser definida ao mesmo tempo que a identidade, antes de usar [**Save
 | Entrada | Valor |
 |----------------|--------------------------------------------------------------------------------------|
 | Descrição    | Indica se este aplicativo é exposto para consumo por meio do protocolo SOAP. |
-| Access         | ReadWrite                                                                            |
-| Tipo           | Bool                                                                                 |
+| Acesso         | ReadWrite                                                                            |
+| Digite           | Bool                                                                                 |
 | Padrão        | Falso                                                                                |
 | Sistema mínimo | Windows Server 2003                                                                  |
 
@@ -870,7 +870,7 @@ A senha deve ser definida ao mesmo tempo que a identidade, antes de usar [**Save
 | Entrada | Valor |
 |----------------|------------------------------------------------------------------------------|
 | Descrição    | O ponto de extremidade de URL no qual esse aplicativo é exposto por meio do protocolo SOAP. |
-| Access         | ReadWrite                                                                    |
+| Acesso         | ReadWrite                                                                    |
 | Type           | String                                                                       |
 | Padrão        | ""                                                                           |
 | Sistema mínimo | Windows Server 2003                                                          |
@@ -886,7 +886,7 @@ A senha deve ser definida ao mesmo tempo que a identidade, antes de usar [**Save
 | Entrada | Valor |
 |----------------|-------------------------------------------------------------------------------|
 | Descrição    | O endereço de email no qual esse aplicativo é exposto por meio do protocolo SOAP. |
-| Access         | ReadWrite                                                                     |
+| Acesso         | ReadWrite                                                                     |
 | Type           | String                                                                        |
 | Padrão        | ""                                                                            |
 | Sistema mínimo | Windows Server 2003                                                           |
@@ -902,7 +902,7 @@ A senha deve ser definida ao mesmo tempo que a identidade, antes de usar [**Save
 | Entrada | Valor |
 |----------------|----------------------------------------------------------------------------------------------------------------------|
 | Descrição    | O diretório raiz virtual do IIS no qual os scripts de acesso que expõem o aplicativo por meio do protocolo SOAP residem. |
-| Access         | ReadWrite                                                                                                            |
+| Acesso         | ReadWrite                                                                                                            |
 | Type           | String                                                                                                               |
 | Padrão        | ""                                                                                                                   |
 | Sistema mínimo | Windows Server 2003                                                                                                  |
@@ -918,8 +918,8 @@ A senha deve ser definida ao mesmo tempo que a identidade, antes de usar [**Save
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Determina a política de restrição de software (SRP) para o aplicativo. Se definido como true, a propriedade SRPTrustLevel para o aplicativo será usada. Se definido como false, as diretivas de restrição de software das configurações de segurança local serão usadas. As configurações de segurança local são controladas por meio do snap-in Diretiva de segurança local do console de gerenciamento Microsoft. |
-| Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                                             |
-| Tipo           | Bool                                                                                                                                                                                                                                                                                                                                                                  |
+| Acesso         | ReadWrite                                                                                                                                                                                                                                                                                                                                                             |
+| Digite           | Bool                                                                                                                                                                                                                                                                                                                                                                  |
 | Padrão        | Falso                                                                                                                                                                                                                                                                                                                                                                 |
 | Sistema mínimo | Windows XP                                                                                                                                                                                                                                                                                                                                                            |
 
@@ -934,8 +934,8 @@ A senha deve ser definida ao mesmo tempo que a identidade, antes de usar [**Save
 | Entrada | Valor |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Indica o nível de confiança da política de restrição de software (SRP) do aplicativo. Essa propriedade será usada somente se a propriedade SRPEnabled estiver definida como true. O nível de confiança do SRP refere-se ao nível de confiança que você está disposto a dar a um aplicativo. Um nível de confiança de SRP irrestrito corresponde ao valor de \_ enumeração de FULLYTRUSTED de nível mais seguro \_ , enquanto um nível de confiança SRP não permitido corresponde ao valor de enumeração mais seguro de \_ levelid não \_ permitido. A enumeração para os níveis de confiança é definida em Winsafer. h. |
-| Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Tipo           | Valores longos possíveis: nível mais seguro \_ de redistribuirid não \_ permitido (0x0) \_ FULLYTRUSTED de nível mais seguro \_ (0x40000)                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Acesso         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Digite           | Valores longos possíveis: nível mais seguro \_ de redistribuirid não \_ permitido (0x0) \_ FULLYTRUSTED de nível mais seguro \_ (0x40000)                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | Padrão        | \_FULLYTRUSTED de nívelid mais seguro \_ (0x40000)                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Sistema mínimo | Windows XP                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 

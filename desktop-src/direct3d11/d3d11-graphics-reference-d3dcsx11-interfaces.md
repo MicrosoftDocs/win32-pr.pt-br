@@ -4,12 +4,12 @@ description: Esta seção contém informações de referência sobre as interfac
 ms.assetid: A4F5E487-AA6C-4C64-90CF-88587F2E8B8B
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 812c052a0ab85eb16e51529b2a50c51dadcf99a9
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: f139b482dee20b53ef7663745579b465a1d6ec67fbd8b090e73ff139341beec1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104366937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118537718"
 ---
 # <a name="d3dcsx-11-interfaces"></a>Interfaces do D3DCSX 11
 

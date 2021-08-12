@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - ComAdmin.Idl
-ms.openlocfilehash: 19fb873e29ad235b11dfe6e7a95b2ad47a8405b2
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: bce57021774b3abc2f69a1120862912452629c3e70d9c8fd0ebcc5d39ce5203d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118548583"
 ---
 # <a name="comadmincatalogobject-class"></a>Classe COMAdminCatalogObject
 
@@ -102,7 +102,7 @@ SysFreeString(bstrItemName);
 
 
 
-Para usar essa classe do Microsoft Visual Basic, adicione uma referência à biblioteca de tipos de administrador do COM+. Um objeto COMAdminCatalogCollection pode ser criado chamando [**GetCollection**](/windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-getcollection) em um objeto [**COMAdminCatalog**](comadmincatalog.md) ou [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+para usar essa classe do Microsoft Visual Basic, adicione uma referência à biblioteca de tipos de administrador do COM+. Um objeto COMAdminCatalogCollection pode ser criado chamando [**GetCollection**](/windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-getcollection) em um objeto [**COMAdminCatalog**](comadmincatalog.md) ou [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
 
 Chame o método [**popular**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-populate) do objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) para popular a coleção com todos os seus itens. Iterar em cada um dos itens na coleção. Quando você encontrar o item de interesse, poderá modificar as propriedades do item e sair da iteração. Se você fizer alterações em qualquer item de uma coleção, deverá chamar o método [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) do objeto **COMAdminCatalogCollection** para salvar as alterações no catálogo com+.
 

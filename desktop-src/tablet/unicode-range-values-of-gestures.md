@@ -1,24 +1,24 @@
 ---
-description: 'Ao implementar seu próprio reconhecedor de gestos da Microsoft, você deve definir o nome e o valor de intervalo Unicode para qualquer gesto que seu reconhecedor reconheça. Se você decidir implementar os gestos que já têm suporte ou estiverem definidos como parte do reconhecedor de gestos da Microsoft, use os nomes definidos e valores de intervalo Unicode para esses gestos. A coleção inteira de nomes e valores de intervalo Unicode para gestos implementados e não implementados no reconhecedor de gestos da Microsoft são fornecidas no arquivo de cabeçalho Recdefs. h (instalado por padrão em C: \\ arquivos de programas \\ Microsoft Tablet PC Platform SDK \\ incluem). Os nomes dos gestos e os valores de intervalo Unicode também estão listados nas tabelas a seguir. Observe que o \_ gesto nulo do gesto é usado para indicar que um reconhecedor não reconhece a entrada como um gesto.'
+description: 'Ao implementar seu próprio reconhecedor de gestos da Microsoft, você deve definir o nome e o valor do intervalo Unicode para qualquer gesto que o reconhecedor reconheça. Se você decidir implementar os gestos que já têm suporte ou definidos como parte do reconhecedor de gestos da Microsoft, use os nomes definidos e os valores de intervalo Unicode para esses gestos. Toda a coleção de nomes e valores de intervalo Unicode para gestos implementados e não implementados no reconhecedor de gestos da Microsoft é fornecida no arquivo de header Recdefs.h (instalado por padrão em C: Arquivos de Programas Microsoft \\ \\ Tablet PC Platform SDK \\ Include). Os nomes de gesto e os valores de intervalo Unicode também são listados nas tabelas a seguir. Observação O gesto GESTURE \_ NULL é usado para indicar que um reconhecedor não reconhece a entrada como um gesto.'
 ms.assetid: 931fc69a-1f7a-492c-8158-0691cd2fe57a
 title: Valores de intervalo Unicode de gestos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b66b9b4ee511e9eeadd79e0dff2675391ceee6d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b1f96c1f59ea9e53d63999c01db73c45080f205bccf043e26463563b0f1f6af3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105797681"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118449219"
 ---
 # <a name="unicode-range-values-of-gestures"></a>Valores de intervalo Unicode de gestos
 
-Ao implementar seu próprio reconhecedor de gestos da Microsoft, você deve definir o nome e o valor de intervalo Unicode para qualquer gesto que seu reconhecedor reconheça.
+Ao implementar seu próprio reconhecedor de gestos da Microsoft, você deve definir o nome e o valor do intervalo Unicode para qualquer gesto que o reconhecedor reconheça.
 
-Se você decidir implementar os gestos que já têm suporte ou estiverem definidos como parte do reconhecedor de gestos da Microsoft, use os nomes definidos e valores de intervalo Unicode para esses gestos. A coleção inteira de nomes e valores de intervalo Unicode para gestos implementados e não implementados no reconhecedor de gestos da Microsoft são fornecidas no arquivo de cabeçalho Recdefs. h (instalado por padrão em C: \\ arquivos de programas \\ Microsoft Tablet PC Platform SDK \\ incluem). Os nomes dos gestos e os valores de intervalo Unicode também estão listados nas tabelas a seguir.
+Se você decidir implementar os gestos que já têm suporte ou definidos como parte do reconhecedor de gestos da Microsoft, use os nomes definidos e os valores de intervalo Unicode para esses gestos. Toda a coleção de nomes e valores de intervalo Unicode para gestos implementados e não implementados no reconhecedor de gestos da Microsoft é fornecida no arquivo de header Recdefs.h (instalado por padrão em C: Arquivos de Programas Microsoft \\ \\ Tablet PC Platform SDK \\ Include). Os nomes de gesto e os valores de intervalo Unicode também são listados nas tabelas a seguir.
 
 > [!Note]  
-> O gesto de gesto \_ nulo é usado para indicar que um reconhecedor não reconhece a entrada como um gesto.
+> O gesto GESTURE \_ NULL é usado para indicar que um reconhecedor não reconhece a entrada como um gesto.
 
  
 
@@ -26,111 +26,111 @@ Se você decidir implementar os gestos que já têm suporte ou estiverem definid
 
 
 
-| Nome do gesto                          | Valor de intervalo Unicode |
+| Nome do gesto                          | Valor do intervalo Unicode |
 |---------------------------------------|---------------------|
-| GESTO \_ nulo<br/>              | 0xf000<br/>   |
-| \_riscar gestos<br/>        | 0xf001<br/>   |
-| triângulo do gesto \_<br/>          | 0xf002<br/>   |
-| quadrado de gesto \_<br/>            | 0xf003<br/>   |
-| estrela do gesto \_<br/>              | 0xf004<br/>   |
-| verificação de gesto \_<br/>             | 0xf005<br/>   |
-| CURLICUE do gesto \_<br/>          | 0xf010<br/>   |
-| \_CURLICUE dupla de gesto \_<br/>  | 0xf011<br/>   |
-| círculo do gesto \_<br/>            | 0xf020<br/>   |
-| \_círculo duplo de gesto \_<br/>    | 0xf021<br/>   |
-| \_semicírculo \_ esquerdo do gesto<br/>  | 0xf028<br/>   |
-| GESTO em \_ semicírculo \_ à direita<br/> | 0xf029<br/>   |
-| \_divisa \_ para cima<br/>       | 0xf030<br/>   |
-| divisa de gesto \_ \_ para baixo<br/>     | 0xf031<br/>   |
-| \_divisa \_ esquerda do gesto<br/>     | 0xf032<br/>   |
-| \_divisa \_ direita<br/>    | 0xf033<br/>   |
-| seta do gesto para \_ \_ cima<br/>         | 0xf038<br/>   |
-| seta do gesto \_ \_ para baixo<br/>       | 0xf039<br/>   |
-| seta de gesto \_ para a \_ esquerda<br/>       | 0xf03a<br/>   |
-| \_seta para o gesto \_ à direita<br/>      | 0xf03b<br/>   |
-| GESTO \_ para cima<br/>                | 0xf058<br/>   |
-| GESTO \_ para baixo<br/>              | 0xf059<br/>   |
-| restante do gesto \_<br/>              | 0xf05a<br/>   |
-| direito de gesto \_<br/>             | 0xf05b<br/>   |
-| GESTO \_ \_ para cima<br/>          | 0xf060<br/>   |
-| GESTO \_ para baixo \_<br/>          | 0xf061<br/>   |
-| GESTO para a \_ esquerda à \_ direita<br/>       | 0xf062<br/>   |
-| GESTO \_ \_ à direita à esquerda<br/>       | 0xf063<br/>   |
-| GESTO \_ para cima para cima \_ à esquerda \_<br/>    | 0xf064<br/>   |
-| GESTO \_ para cima \_ à direita \_<br/>   | 0xf065<br/>   |
-| GESTO \_ para baixo \_ esquerdo \_ longo<br/>  | 0xf066<br/>   |
-| GESTO \_ para baixo \_ à direita \_<br/> | 0xf067<br/>   |
-| GESTO \_ para cima \_ à esquerda<br/>          | 0xf068<br/>   |
-| GESTO \_ para cima \_ à direita<br/>         | 0xf069<br/>   |
-| GESTO \_ para baixo \_ à esquerda<br/>        | 0xf06a<br/>   |
-| GESTO \_ para baixo \_ à direita<br/>       | 0xf06b<br/>   |
-| GESTO \_ esquerdo \_ para cima<br/>          | 0xf06c<br/>   |
-| GESTO \_ esquerdo \_ para baixo<br/>        | 0xf06d<br/>   |
-| GESTO \_ \_ de direita para cima<br/>         | 0xf06e<br/>   |
-| GESTO \_ direito \_ para baixo<br/>       | 0xf06f<br/>   |
-| \_exclamação do gesto<br/>       | 0xf0a4<br/>   |
-| toque do gesto \_<br/>               | 0xf0f0<br/>   |
-| \_toque duplo de gesto \_<br/>       | 0xf0f1<br/>   |
+| GESTO \_ NULO<br/>              | 0xf000<br/>   |
+| RASCUNHO \_ DE GESTO<br/>        | 0xf001<br/>   |
+| TRIÂNGULO \_ DE GESTO<br/>          | 0xf002<br/>   |
+| QUADRADO DE \_ GESTOS<br/>            | 0xf003<br/>   |
+| ESTRELA DE \_ GESTO<br/>              | 0xf004<br/>   |
+| VERIFICAÇÃO DE \_ GESTO<br/>             | 0xf005<br/>   |
+| \_CURLICUE DE GESTO<br/>          | 0xf010<br/>   |
+| \_ \_ CURLICUE DUPLA DE GESTOS<br/>  | 0xf011<br/>   |
+| CÍRCULO DE \_ GESTOS<br/>            | 0xf020<br/>   |
+| CÍRCULO \_ DUPLO \_ DE GESTOS<br/>    | 0xf021<br/>   |
+| GESTO \_ SEMICIRCLEO \_ À ESQUERDA<br/>  | 0xf028<br/>   |
+| GESTO \_ SEMICIRCLE \_ À DIREITA<br/> | 0xf029<br/>   |
+| DIVISA \_ DE GESTO PARA \_ CIMA<br/>       | 0xf030<br/>   |
+| DIVISA \_ DE GESTO PARA \_ BAIXO<br/>     | 0xf031<br/>   |
+| DIVISA \_ DE GESTO À \_ ESQUERDA<br/>     | 0xf032<br/>   |
+| DIVISA \_ DE GESTO À \_ DIREITA<br/>    | 0xf033<br/>   |
+| SETA \_ DE GESTO \_ PARA CIMA<br/>         | 0xf038<br/>   |
+| SETA \_ DE GESTO \_ PARA BAIXO<br/>       | 0xf039<br/>   |
+| SETA \_ DE GESTO PARA A \_ ESQUERDA<br/>       | 0xf03a<br/>   |
+| SETA \_ DE GESTO PARA A \_ DIREITA<br/>      | 0xf03b<br/>   |
+| GESTO \_ PARA CIMA<br/>                | 0xf058<br/>   |
+| GESTO \_ PARA BAIXO<br/>              | 0xf059<br/>   |
+| GESTO \_ À ESQUERDA<br/>              | 0xf05a<br/>   |
+| GESTO \_ À DIREITA<br/>             | 0xf05b<br/>   |
+| GESTO \_ PARA CIMA PARA \_ BAIXO<br/>          | 0xf060<br/>   |
+| GESTO \_ PARA \_ BAIXO<br/>          | 0xf061<br/>   |
+| GESTO \_ À ESQUERDA PARA A \_ DIREITA<br/>       | 0xf062<br/>   |
+| GESTO \_ À ESQUERDA \_<br/>       | 0xf063<br/>   |
+| GESTO \_ PARA CIMA À ESQUERDA POR MUITO \_ \_ TEMPO<br/>    | 0xf064<br/>   |
+| GESTO \_ PARA CIMA POR MUITO \_ \_ TEMPO<br/>   | 0xf065<br/>   |
+| GESTO \_ PARA BAIXO À ESQUERDA POR MUITO \_ \_ TEMPO<br/>  | 0xf066<br/>   |
+| GESTO \_ PARA BAIXO PARA A DIREITA \_ \_ LONGO<br/> | 0xf067<br/>   |
+| GESTO \_ PARA A \_ ESQUERDA<br/>          | 0xf068<br/>   |
+| GESTO \_ PARA A \_ DIREITA<br/>         | 0xf069<br/>   |
+| GESTO \_ PARA BAIXO À \_ ESQUERDA<br/>        | 0xf06a<br/>   |
+| GESTO \_ PARA BAIXO PARA A \_ DIREITA<br/>       | 0xf06b<br/>   |
+| GESTO \_ À \_ ESQUERDA<br/>          | 0xf06c<br/>   |
+| GESTO \_ À ESQUERDA PARA \_ BAIXO<br/>        | 0xf06d<br/>   |
+| GESTO \_ PARA \_ CIMA<br/>         | 0xf06e<br/>   |
+| GESTO \_ PARA \_ BAIXO<br/>       | 0xf06f<br/>   |
+| \_EXCLAMAÇÃO DE GESTO<br/>       | 0xf0a4<br/>   |
+| TOQUE DE \_ GESTO<br/>               | 0xf0f0<br/>   |
+| TOQUE \_ DUPLO \_ DE GESTO<br/>       | 0xf0f1<br/>   |
 
 
 
  
 
-## <a name="unimplemented-gestures"></a>Gestos não implementados
+## <a name="unimplemented-gestures"></a>Gestos não simplificados
 
 
 
-| Nome do gesto                             | Valor de intervalo Unicode |
+| Nome do gesto                             | Valor do intervalo Unicode |
 |------------------------------------------|---------------------|
-| infinito de gesto \_<br/>             | 0xf006<br/>   |
-| Cruz do gesto \_<br/>                | 0xf007<br/>   |
-| parágrafo do gesto \_<br/>            | 0xf008<br/>   |
-| seção de GESTOs \_<br/>              | 0xf009<br/>   |
-| marcador de gesto \_<br/>               | 0xf00a<br/>   |
-| \_item \_ cruzado do gesto<br/>        | 0xf00b<br/>   |
-| Rabisco do gesto \_<br/>             | 0xf00c<br/>   |
-| troca de GESTOs \_<br/>                 | 0xf00d<br/>   |
-| OPENUP do gesto \_<br/>               | 0xf00e<br/>   |
-| CLOSEUP do gesto \_<br/>              | 0xf00f<br/>   |
-| retângulo do gesto \_<br/>            | 0xf012<br/>   |
-| \_toque de círculo do gesto \_<br/>          | 0xf022<br/>   |
-| \_círculo do círculo do gesto \_<br/>       | 0xf023<br/>   |
-| \_Cruz do círculo do gesto \_<br/>        | 0xf025<br/>   |
-| linha do círculo do gesto \_ \_ \_ vertical<br/>   | 0xf026<br/>   |
-| linha de círculo do gesto \_ \_ \_ na horizontal<br/>   | 0xf027<br/>   |
-| \_seta dupla \_ \_ de gesto para cima<br/>    | 0xf03c<br/>   |
-| \_seta dupla de gesto \_ \_ para baixo<br/>  | 0xf03d<br/>   |
-| \_seta dupla \_ \_ à esquerda do gesto<br/>  | 0xf03e<br/>   |
-| \_seta dupla \_ \_ à direita do gesto<br/> | 0xf03f<br/>   |
-| seta para cima do gesto \_ \_ \_ à esquerda<br/>      | 0xf040<br/>   |
-| \_seta para \_ cima \_ direita do gesto<br/>     | 0xf041<br/>   |
-| \_seta para baixo do gesto \_ \_ à esquerda<br/>    | 0xf042<br/>   |
-| \_seta para \_ baixo \_ do gesto à direita<br/>   | 0xf043<br/>   |
-| \_seta para a esquerda do gesto \_ \_ para cima<br/>      | 0xf044<br/>   |
-| seta para a esquerda do gesto \_ \_ \_ para baixo<br/>    | 0xf045<br/>   |
-| \_seta para a direita do gesto \_ \_ para cima<br/>     | 0xf046<br/>   |
-| \_seta para a direita do gesto \_ \_ para baixo<br/>   | 0xf047<br/>   |
-| \_LEFTUP diagonal de gesto \_<br/>     | 0xf05c<br/>   |
-| \_RIGHTUP diagonal de gesto \_<br/>    | 0xf05d<br/>   |
-| \_LEFTDOWN diagonal de gesto \_<br/>   | 0xf05e<br/>   |
-| \_RIGHTDOWN diagonal de gesto \_<br/>  | 0xf05f<br/>   |
-| \_letra \_ de gesto A<br/>            | 0xf080<br/>   |
-| letra do gesto \_ \_ B<br/>            | 0xf081<br/>   |
-| letra do gesto \_ \_ C<br/>            | 0xf082<br/>   |
-| letra do gesto \_ \_ D<br/>            | 0xf083<br/>   |
-| letra do gesto \_ \_ E<br/>            | 0xf084<br/>   |
-| letra do gesto \_ \_ F<br/>            | 0xf085<br/>   |
-| letra do gesto \_ \_ G<br/>            | 0xf086<br/>   |
-| letra do gesto \_ \_ H<br/>            | 0xf087<br/>   |
-| letra do gesto \_ \_ I<br/>            | 0xf088<br/>   |
-| letra do gesto \_ \_ J<br/>            | 0xf089<br/>   |
-| letra do gesto \_ \_ K<br/>            | 0xf08a<br/>   |
-| letra do gesto \_ \_ L<br/>            | 0xf08b<br/>   |
-| letra do gesto \_ \_ M<br/>            | 0xf08c<br/>   |
-| letra do gesto \_ \_ N<br/>            | 0xf08d<br/>   |
-| letra do gesto \_ \_ O<br/>            | 0xf08e<br/>   |
-| letra do gesto \_ \_ P<br/>            | 0xf08f<br/>   |
-| letra do gesto \_ \_ Q<br/>            | 0xf090<br/>   |
+| INFINITO \_ DE GESTOS<br/>             | 0xf006<br/>   |
+| CRUZ DE \_ GESTO<br/>                | 0xf007<br/>   |
+| PARÁGRAFO DE \_ GESTO<br/>            | 0xf008<br/>   |
+| SEÇÃO \_ GESTO<br/>              | 0xf009<br/>   |
+| MARCADOR DE \_ GESTO<br/>               | 0xf00a<br/>   |
+| CRUZ \_ DE MARCADOR DE \_ GESTO<br/>        | 0xf00b<br/>   |
+| \_ALTERNÂNCIA DE GESTOS<br/>             | 0xf00c<br/>   |
+| TROCA DE \_ GESTOS<br/>                 | 0xf00d<br/>   |
+| ABERTURA \_ DE GESTO<br/>               | 0xf00e<br/>   |
+| CLOSEUP \_ DE GESTO<br/>              | 0xf00f<br/>   |
+| RETÂNGULO \_ DE GESTO<br/>            | 0xf012<br/>   |
+| TOQUE DE \_ CÍRCULO \_ DE GESTOS<br/>          | 0xf022<br/>   |
+| CÍRCULO DE \_ CÍRCULO \_ DE GESTOS<br/>       | 0xf023<br/>   |
+| CRUZ DE \_ CÍRCULO \_ DE GESTOS<br/>        | 0xf025<br/>   |
+| VERT \_ DE LINHA DE CÍRCULO DE \_ \_ GESTO<br/>   | 0xf026<br/>   |
+| GESTURE \_ CIRCLE \_ LINE \_ HORZ<br/>   | 0xf027<br/>   |
+| GESTO DE \_ \_ SETA DUPLA \_ PARA CIMA<br/>    | 0xf03c<br/>   |
+| GESTO DE \_ \_ SETA DUPLA \_ PARA BAIXO<br/>  | 0xf03d<br/>   |
+| GESTO DE \_ \_ SETA DUPLA PARA \_ A ESQUERDA<br/>  | 0xf03e<br/>   |
+| GESTO DE \_ \_ SETA DUPLA PARA \_ A DIREITA<br/> | 0xf03f<br/>   |
+| GESTO PARA \_ CIMA \_ SETA PARA \_ A ESQUERDA<br/>      | 0xf040<br/>   |
+| GESTO PARA \_ CIMA \_ SETA PARA \_ A DIREITA<br/>     | 0xf041<br/>   |
+| GESTO PARA \_ BAIXO \_ SETA PARA \_ A ESQUERDA<br/>    | 0xf042<br/>   |
+| GESTO PARA \_ BAIXO \_ SETA PARA \_ A DIREITA<br/>   | 0xf043<br/>   |
+| SETA \_ PARA A ESQUERDA DO GESTO PARA \_ \_ CIMA<br/>      | 0xf044<br/>   |
+| GESTO DE \_ \_ SETA PARA \_ BAIXO<br/>    | 0xf045<br/>   |
+| GESTO DE \_ \_ SETA PARA \_ A DIREITA PARA CIMA<br/>     | 0xf046<br/>   |
+| GESTO DE \_ \_ SETA PARA \_ A DIREITA PARA BAIXO<br/>   | 0xf047<br/>   |
+| GESTO \_ DIAGONAL \_ LEFTUP<br/>     | 0xf05c<br/>   |
+| GESTO \_ DIAGONAL PARA A \_ DIREITA<br/>    | 0xf05d<br/>   |
+| GESTO \_ DIAGONAL \_ LEFTDOWN<br/>   | 0xf05e<br/>   |
+| GESTO \_ DIAGONAL PARA A \_ DIREITA<br/>  | 0xf05f<br/>   |
+| LETRA \_ DE GESTO \_ A<br/>            | 0xf080<br/>   |
+| LETRA \_ DE GESTO \_ B<br/>            | 0xf081<br/>   |
+| LETRA \_ DE GESTO \_ C<br/>            | 0xf082<br/>   |
+| LETRA \_ DE GESTO \_ D<br/>            | 0xf083<br/>   |
+| LETRA \_ DE GESTO \_ E<br/>            | 0xf084<br/>   |
+| LETRA \_ DE GESTO \_ F<br/>            | 0xf085<br/>   |
+| LETRA \_ DE GESTO \_ G<br/>            | 0xf086<br/>   |
+| LETRA \_ DE GESTO \_ H<br/>            | 0xf087<br/>   |
+| LETRA \_ DE \_ GESTO I<br/>            | 0xf088<br/>   |
+| LETRA \_ DE GESTO \_ J<br/>            | 0xf089<br/>   |
+| LETRA \_ DE GESTO \_ K<br/>            | 0xf08a<br/>   |
+| LETRA \_ DE GESTO \_ L<br/>            | 0xf08b<br/>   |
+| LETRA \_ DE GESTO \_ M<br/>            | 0xf08c<br/>   |
+| LETRA \_ DE GESTO \_ N<br/>            | 0xf08d<br/>   |
+| LETRA \_ DE GESTO \_ O<br/>            | 0xf08e<br/>   |
+| LETRA \_ DE GESTO \_ P<br/>            | 0xf08f<br/>   |
+| LETRA \_ DE GESTO \_ Q<br/>            | 0xf090<br/>   |
 | letra do gesto \_ \_ R<br/>            | 0xf091<br/>   |
 | letra do gesto \_ \_ S<br/>            | 0xf092<br/>   |
 | letra do gesto \_ \_ T<br/>            | 0xf093<br/>   |

@@ -1,7 +1,7 @@
 ---
-description: Função D3DXMatrixOrthoOffCenterRH (D3DX10Math. h) – compila uma matriz de projeção ortográfica personalizada, de mão-de-lado.
+description: Função D3DXMatrixOrthoOffCenterRH (D3DX10Math.h) – cria uma matriz de projeção ortográfica personalizada e à direita.
 ms.assetid: 01d4d61e-de7b-4431-a168-68a50b1d6021
-title: Função D3DXMatrixOrthoOffCenterRH (D3DX10Math. h)
+title: Função D3DXMatrixOrthoOffCenterRH (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0b41038021cc34cb02961cb9894415995955404c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 79594b606124f6b3634e7b379bda0cb664cbec31b417112641d06f335a16ce04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118541237"
 ---
-# <a name="d3dxmatrixorthooffcenterrh-function-d3dx10mathh"></a>Função D3DXMatrixOrthoOffCenterRH (D3DX10Math. h)
+# <a name="d3dxmatrixorthooffcenterrh-function-d3dx10mathh"></a>Função D3DXMatrixOrthoOffCenterRH (D3DX10Math.h)
 
-Cria uma matriz de projeção ortográfica personalizada de mão-de-lado.
+Cria uma matriz de projeção ortográfica personalizada e à direita.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,19 +46,19 @@ D3DXMATRIX* D3DXMatrixOrthoOffCenterRH(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Ponteiro para o [**D3DXMATRIX**](d3d10-d3dxmatrix.md)resultante.
+Ponteiro para o [**D3DXMATRIX resultante.**](d3d10-d3dxmatrix.md)
 
 </dd> <dt>
 
 *l* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valor x mínimo do volume de exibição.
 
@@ -67,7 +67,7 @@ Valor x mínimo do volume de exibição.
 *r* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valor x máximo do volume de exibição.
 
@@ -76,7 +76,7 @@ Valor x máximo do volume de exibição.
 *b* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valor y mínimo do volume de exibição.
 
@@ -85,25 +85,25 @@ Valor y mínimo do volume de exibição.
 *t* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valor y máximo do volume de exibição.
 
 </dd> <dt>
 
-*Zn* \[ no\]
+*zn* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valor z mínimo do volume de exibição.
 
 </dd> <dt>
 
-*ZF* \[ no\]
+*zf* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valor z máximo do volume de exibição.
 
@@ -113,23 +113,23 @@ Valor z máximo do volume de exibição.
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Ponteiro para o [**D3DXMATRIX**](d3d10-d3dxmatrix.md)resultante.
+Ponteiro para o [**D3DXMATRIX resultante.**](d3d10-d3dxmatrix.md)
 
 ## <a name="remarks"></a>Comentários
 
-A função [**D3DXMatrixOrthoRH**](d3d10-d3dxmatrixorthorh.md) é um caso especial da função D3DXMatrixOrthoOffCenterRH. Para criar a mesma projeção usando D3DXMatrixOrthoOffCenterRH, use os seguintes valores:
+A [**função D3DXMatrixOrthoRH**](d3d10-d3dxmatrixorthorh.md) é um caso especial da função D3DXMatrixOrthoOffCenterRH. Para criar a mesma projeção usando D3DXMatrixOrthoOffCenterRH, use os seguintes valores:
 
-l =-w/2,
+l = -w/2,
 
 r = w/2,
 
-b =-h/2 e
+b = -h/2 e
 
 t = h/2.
 
 Todos os parâmetros da função D3DXMatrixOrthoOffCenterRH são distâncias no espaço da câmera. Os parâmetros descrevem as dimensões do volume de exibição.
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função D3DXMatrixOrthoOffCenterRH pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função D3DXMatrixOrthoOffCenterRH pode ser usada como um parâmetro para outra função.
 
 Essa função usa a fórmula a seguir para calcular a matriz retornada.
 
@@ -149,12 +149,12 @@ Essa função usa a fórmula a seguir para calcular a matriz retornada.
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

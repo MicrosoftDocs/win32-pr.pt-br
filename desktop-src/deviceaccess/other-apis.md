@@ -4,12 +4,12 @@ description: Essas interfaces não têm suporte e não devem ser usadas. Em vez 
 ms.assetid: 5B53EA50-FE0F-4FA2-BB9B-77D0D915B55D
 ms.topic: article
 ms.date: 02/11/2020
-ms.openlocfilehash: 7c93051890a67535c79bfdd111a36d03e71dcbb9
-ms.sourcegitcommit: 01a4383738056cf3de4f45f36d98ef73d4dc694d
+ms.openlocfilehash: b3cd31e8bb17edc6f36893b02643399c58b7a3ec100a06fc584841bc51615b1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "103823554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118541823"
 ---
 # <a name="other-apis"></a>Outras APIs
 

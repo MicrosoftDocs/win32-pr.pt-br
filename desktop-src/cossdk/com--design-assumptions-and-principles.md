@@ -4,12 +4,12 @@ ms.assetid: c72bbd47-0219-40ba-a7d5-2a6b725972d0
 title: Princípios e pressuposições de design de COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7dea86c404896a3d6095d39ebd6031767f6ccdd
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 28b87c5ae631cd5517b215efae3a09968649cd49ea94fe33b33d9b826082e911
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105807258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118549391"
 ---
 # <a name="com-design-assumptions-and-principles"></a>Princípios e pressuposições de design de COM+
 
@@ -21,8 +21,8 @@ O COM+ foi desenvolvido para facilitar a criação de aplicativos distribuídos.
 
 As suposições são as seguintes:
 
--   **O aplicativo COM+ dará suporte a vários usuários em vários servidores.** Em outras palavras, você está criando um aplicativo distribuído, e esses vários usuários estarão em computadores host diferentes de onde o código é executado. Os usuários acessarão o código pela Internet ou por meio de uma rede privada. A interface do usuário será apresentada por meio do navegador ou talvez um aplicativo personalizado, como um aplicativo baseado em formulário escrito com o Microsoft Visual Basic ou o MFC. Essa interface do usuário será localizada no computador cliente.
--   **O aplicativo COM+ pode se tornar escalonável e pode fornecer maior disponibilidade e confiabilidade ao implantar o aplicativo em vários computadores servidores.** Ao fazer isso, você pode balancear a carga de trabalho do aplicativo e fornecer tolerância a falhas usando o clustering do Windows.
+-   **O aplicativo COM+ dará suporte a vários usuários em vários servidores.** Em outras palavras, você está criando um aplicativo distribuído, e esses vários usuários estarão em computadores host diferentes de onde o código é executado. Os usuários acessarão o código pela Internet ou por meio de uma rede privada. a interface do usuário será apresentada por meio do navegador ou talvez um aplicativo personalizado, como um aplicativo baseado em formulário escrito com o Microsoft Visual Basic ou o MFC. Essa interface do usuário será localizada no computador cliente.
+-   **O aplicativo COM+ pode se tornar escalonável e pode fornecer maior disponibilidade e confiabilidade ao implantar o aplicativo em vários computadores servidores.** ao fazer isso, você pode balancear a carga de trabalho do aplicativo e fornecer tolerância a falhas usando o clustering de Windows.
 -   **Se as coisas forem erradas, o estado dos dados persistentes, armazenados em um banco de dado, de um aplicativo COM+ será mantido se você estiver usando transações.** O estado do aplicativo deve sobreviver a acidentes que podem ocorrer, como erros de aplicativo, falhas do sistema ou falhas de rede.
 
 ## <a name="principles"></a>Princípios
@@ -48,7 +48,7 @@ Além dessas três suposições, os princípios a seguir pervade o modelo de pro
 [Criando o aplicativo COM+ usando UML](designing-the-com--application-using-uml.md)
 </dt> <dt>
 
-[Dicas de design gerais para usar o COM+](general-design-tips-for-using-com-.md)
+[Dicas de Design geral para usar o COM+](general-design-tips-for-using-com-.md)
 </dt> <dt>
 
 [Otimizando interações com a camada de lógica de negócios do COM+](optimizing-interactions-with-the-com--business-logic-tier.md)

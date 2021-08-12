@@ -1,17 +1,17 @@
 ---
-description: Saiba mais sobre a propriedade System. Security. EncryptionOwners, que dá suporte à propriedade do arquivo para diferentes versões do Windows.
+description: Saiba mais sobre a propriedade System.Security.EncryptionOwners, que dá suporte à propriedade de arquivo para diferentes versões do Windows.
 ms.assetid: d29d70d7-8a0b-4fa5-afb7-ba115028e115
-title: System. Security. EncryptionOwners
+title: System.Security.EncryptionOwners
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d381b009943159cfc12e13750b2aeb6181401df0
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: 3ef7374fd27a8219d4bf009e9aa1f0b2bd17398ee0f4bbe93b751f7b8c0678d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112068482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118464776"
 ---
-# <a name="systemsecurityencryptionowners"></a>System. Security. EncryptionOwners
+# <a name="systemsecurityencryptionowners"></a>System.Security.EncryptionOwners
 
 Propriedade do arquivo 
 
@@ -64,13 +64,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -79,19 +79,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -106,7 +106,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

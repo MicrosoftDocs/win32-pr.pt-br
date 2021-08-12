@@ -39,12 +39,12 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 06094b24b6b8197eab89b65cd5a9a83f46b39f95
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a8f103bf5a23f6e157fc9ecca697c0d1ce7c47bd71be20458d816ca74819dc10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118558401"
 ---
 # <a name="videomodedescriptor-class"></a>Classe VideoModeDescriptor
 
@@ -525,14 +525,14 @@ Tipo padrão de vídeo.
 
 | Valor                                                                                | Significado                                                                                                        |
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>0 (0x0)</dt> </dl>   | Outro<br/>                                                                                               |
+| <dl> <dt>0 (0x0)</dt> </dl>   | Outros<br/>                                                                                               |
 | <dl> <dt>1 (0x1)</dt> </dl>   | VESA DMT. Na especificação de tempos do monitor de exibição da VESA (Video Electronics Standard Association).<br/> |
 | <dl> <dt>2 (0x2)</dt> </dl>   | VESA GTF. Do padrão de fórmula de tempo generalizado VESA.<br/>                                            |
-| <dl> <dt>3 (0x3)</dt> </dl>   | Padrão de temporizações de vídeo coordenado VESA CVT/da VESA.<br/>                                             |
+| <dl> <dt>3 (0x3)</dt> </dl>   | VESA CVT/ Do padrão de tempos de vídeo coordenados do VESA.<br/>                                             |
 | <dl> <dt>4 (0x4)</dt> </dl>   | IBM<br/>                                                                                                 |
-| <dl> <dt>5 (0x5)</dt> </dl>   | LARANJA<br/>                                                                                               |
+| <dl> <dt>5 (0x5)</dt> </dl>   | Apple<br/>                                                                                               |
 | <dl> <dt>6 (0x6)</dt> </dl>   | NTSC M<br/>                                                                                              |
-| <dl> <dt>7 (0x7)</dt> </dl>   | J NTSC<br/>                                                                                              |
+| <dl> <dt>7 (0x7)</dt> </dl>   | NTSC J<br/>                                                                                              |
 | <dl> <dt>8 (0x8)</dt> </dl>   | NTSC 433<br/>                                                                                            |
 | <dl> <dt>9 (0x9)</dt> </dl>   | PAL B<br/>                                                                                               |
 | <dl> <dt>10 (0xA)</dt> </dl>  | PAL B1<br/>                                                                                              |
@@ -541,7 +541,7 @@ Tipo padrão de vídeo.
 | <dl> <dt>13 (0xD)</dt> </dl>  | PAL I<br/>                                                                                               |
 | <dl> <dt>14 (0xE)</dt> </dl>  | PAL D<br/>                                                                                               |
 | <dl> <dt>15 (0xF)</dt> </dl>  | PAL N<br/>                                                                                               |
-| <dl> <dt>16 (0x10)</dt> </dl> | NC DE PAL<br/>                                                                                              |
+| <dl> <dt>16 (0x10)</dt> </dl> | PAL NC<br/>                                                                                              |
 | <dl> <dt>17 (0x11)</dt> </dl> | SECAM B<br/>                                                                                             |
 | <dl> <dt>18 (0x12)</dt> </dl> | SECAM D<br/>                                                                                             |
 | <dl> <dt>19 (0x13)</dt> </dl> | SECAM G<br/>                                                                                             |
@@ -568,8 +568,8 @@ Tipo padrão de vídeo.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                         |
-| Namespace<br/>                | \\WMI raiz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Namespace<br/>                | WMI \\ raiz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

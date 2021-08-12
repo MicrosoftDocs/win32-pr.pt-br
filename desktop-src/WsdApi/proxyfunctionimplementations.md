@@ -4,12 +4,12 @@ ms.assetid: 9505ee5f-fdb9-41b8-9537-0c5d29f90168
 title: elemento proxyFunctionImplementations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e9f03834ca59ede41f2f3c3dff00d7dacdd54db
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 5d64ae53d76100e5d38e1dd1a363f64a1004284b6f8a35ce5eb4e49d6d1e9a79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118552417"
 ---
 # <a name="proxyfunctionimplementations-element"></a>elemento proxyFunctionImplementations
 
@@ -69,7 +69,7 @@ Não há atributos.
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

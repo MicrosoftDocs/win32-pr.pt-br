@@ -4,12 +4,12 @@ ms.assetid: 95116ef5-af88-47e7-abf7-1ade9735e2a7
 title: Criando um buffer de vértice (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ffc831ab508f14d61b8e42861f75422ff6a04bf
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3c12cb50d7879ef73d4c760ac61a0698651cb9ed7d334c90475bd2e8ee4148db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105780666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118527670"
 ---
 # <a name="creating-a-vertex-buffer-direct3d-9"></a>Criando um buffer de vértice (Direct3D 9)
 

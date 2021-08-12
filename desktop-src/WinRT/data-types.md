@@ -9,23 +9,23 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: c1c2640977c23bac5e07474ef618daea0bfcc617
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5fc3b7badb9ef4534c9f1caf79ad20d0ffe6eaf7775c7f895f4ae39a27219037
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118561092"
 ---
 # <a name="data-types"></a>Tipos de dados
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [Windows Runtime tipos de dados base](base-data-types.md)
+-   [Windows Tipos de dados base de runtime](base-data-types.md)
 -   [**HSTRING**](hstring.md)
--   [**\_buffer HSTRING**](hstring-buffer.md)
--   [**\_retorno de \_ chamada PINSPECT HSTRING**](/windows/win32/api/winstring/nc-winstring-pinspect_hstring_callback)
--   [*retorno de chamada de \_ memória PINSPECT \_*](/windows/win32/api/roerrorapi/nc-roerrorapi-pinspect_memory_callback)
--   [**\_cookie de registro ro \_**](ro-registration-cookie.md)
+-   [**HSTRING \_ BUFFER**](hstring-buffer.md)
+-   [**RETORNO DE CHAMADA \_ PINSPECT HSTRING \_**](/windows/win32/api/winstring/nc-winstring-pinspect_hstring_callback)
+-   [*RETORNO DE CHAMADA DE MEMÓRIA PINSPECT \_ \_*](/windows/win32/api/roerrorapi/nc-roerrorapi-pinspect_memory_callback)
+-   [**COOKIE DE \_ REGISTRO RO \_**](ro-registration-cookie.md)
 
  
 

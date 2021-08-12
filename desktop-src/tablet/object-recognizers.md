@@ -4,12 +4,12 @@ ms.assetid: 53b6137d-2998-4a3b-b469-3d1204ea194b
 title: Reconhecedores de objetos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83a258c8486bcf773f5f94c4de51c501e107fac4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aabfd44a5eb126d48df70efd1c391584d12afc94e5e21c714aa0c740a7d486f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118449657"
 ---
 # <a name="object-recognizers"></a>Reconhecedores de objetos
 
@@ -18,7 +18,7 @@ Além de reconhecer o texto, os reconhecedores podem reconhecer uma classe de ob
 -   Notas musicais
 -   Formas geométricas
 -   Equações matemáticas
--   Elementos do fluxograma
+-   elementos do gráfico de Flow
 
 Normalmente, os objetos que são reconhecidos por tal reconhecedor estão em uma relação espacial bidimensional ou funcional entre si. Por exemplo, dentro das relações complexas em uma equação matemática, um reconhecedor pode retornar resultados diferentes para um limite superior em uma integral definitiva em oposição a um numerador em uma fração.
 

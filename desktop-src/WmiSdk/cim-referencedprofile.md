@@ -1,8 +1,8 @@
 ---
-description: Usado para associar uma \_ RegisteredProfile de CIM de instância a uma instância de CIM \_ RegisteredProfile de outro perfil que faz referência ao perfil dependente como um perfil relacionado.
+description: Usado para associar uma instância CIM RegisteredProfile a uma instância de CIM RegisteredProfile de outro perfil que faz referência ao perfil \_ dependente como um perfil \_ relacionado.
 ms.assetid: 631003de-477b-4447-9633-1601a7f8eadb
 ms.tgt_platform: multiple
-title: Classe CIM_ReferencedProfile
+title: CIM_ReferencedProfile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - Schema
 api_location:
 - Root\interop
-ms.openlocfilehash: 8fdc0d8dccd325ae7e13de971e09cce6faf93455
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39cfa6dac2fd827b2ce690afa5cdd7126322c2f81182db674517c75911791a0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105751139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118556805"
 ---
-# <a name="cim_referencedprofile-class"></a>\_Classe CIM ReferencedProfile
+# <a name="cim_referencedprofile-class"></a>Classe CIM \_ ReferencedProfile
 
-Usado para associar uma [**\_ RegisteredProfile de CIM**](/previous-versions//ee309375(v=vs.85)) de instância a uma instância de **CIM \_ RegisteredProfile** de outro perfil que faz referência ao perfil dependente como um perfil relacionado.
+Usado para associar uma instância [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) a uma instância de **CIM \_ RegisteredProfile** de outro perfil que faz referência ao perfil dependente como um perfil relacionado.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) modelo CIM DMTF são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -47,17 +47,17 @@ class CIM_ReferencedProfile : CIM_Dependency
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ ReferencedProfile** tem estes tipos de membros:
+A **classe CIM \_ ReferencedProfile** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ ReferencedProfile** tem essas propriedades.
+A **classe CIM \_ ReferencedProfile** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **[ **CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85))**
@@ -66,11 +66,11 @@ Tipo de dados: **[ **CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica a instância de [**\_ RegisteredProfile do CIM**](/previous-versions//ee309375(v=vs.85)) que é referenciada pelo perfil **dependente** .
+Especifica a [**instância \_ Cim RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) referenciada pelo **perfil** Dependente.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **[ **CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85))**
@@ -79,15 +79,15 @@ Tipo de dados: **[ **CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica uma instância de [**\_ RegisteredProfile CIM**](/previous-versions//ee309375(v=vs.85)) que faz referência a outros perfis.
+Especifica uma instância [**\_ cim RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) que faz referência a outros perfis.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O uso das propriedades **dependent** e **Antecedent** na associação **\_ ReferencedProfile do CIM** é definido de modo que o perfil que está sendo referenciado seja o antecedente e o perfil que faz a referência seja o dependente.
+O uso das propriedades **Dependent** e **Antecedent** na associação **CIM \_ ReferencedProfile** é definido de forma que o perfil que está sendo referenciado seja o antecessor e o perfil que faz a referência seja o dependente.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -97,8 +97,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 7<br/>                                                                   |
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2<br/>                                                      |
-| Namespace<br/>                | \\Interoperabilidade raiz<br/>                                                               |
-| MOF<br/>                      | <dl> <dt>Interop. mof</dt> </dl> |
+| Namespace<br/>                | Interop \\ raiz<br/>                                                               |
+| MOF<br/>                      | <dl> <dt>Interop.mof</dt> </dl> |
 
 
 
@@ -106,7 +106,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**\_Dependência CIM**](/windows/desktop/CIMWin32Prov/cim-dependency)
+[**Dependência cim \_**](/windows/desktop/CIMWin32Prov/cim-dependency)
 </dt> </dl>
 
  

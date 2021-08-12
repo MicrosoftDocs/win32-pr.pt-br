@@ -1,9 +1,9 @@
 ---
 title: Transação de XTYP_ADVDATA (ddeml. h)
-description: Informa ao cliente que o valor do item de dados foi alterado. A função de retorno de chamada do cliente troca dinâmica de dados (DDE), DdeCallback, recebe essa transação depois de estabelecer um loop de aviso com um servidor.
+description: Informa ao cliente que o valor do item de dados foi alterado. a função de retorno de chamada do cliente troca dinâmica de dados (DDE), DdeCallback, recebe essa transação depois de estabelecer um loop de aviso com um servidor.
 ms.assetid: c6e61785-b98c-4ffa-9d23-339e1c66cb4d
 keywords:
-- Troca de dados de transação XTYP_ADVDATA
+- XTYP_ADVDATA de dados de transação Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8359e34388d185200b5f30c4554e138cc1f6b94a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d9bf3f3b94f4454547d987ab6536929d1fe2998e7dc0394564143536f1da28d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105796286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118544861"
 ---
 # <a name="xtyp_advdata-transaction"></a>\_Transação XTYP ADVDATA
 
-Informa ao cliente que o valor do item de dados foi alterado. A função de retorno de chamada do cliente troca dinâmica de dados (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recebe essa transação depois de estabelecer um loop de aviso com um servidor.
+Informa ao cliente que o valor do item de dados foi alterado. a função de retorno de chamada do cliente troca dinâmica de dados (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recebe essa transação depois de estabelecer um loop de aviso com um servidor.
 
 
 ```C++
@@ -93,7 +93,7 @@ Não usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Uma função de retorno de chamada DDE deve retornar **\_ FACK DDE** se ele processar essa transação, o **DDE \_ FBUSY** se estiver muito ocupado para processar essa transação ou o **DDE \_ FNOTPROCESSED** se rejeitar essa transação.
 

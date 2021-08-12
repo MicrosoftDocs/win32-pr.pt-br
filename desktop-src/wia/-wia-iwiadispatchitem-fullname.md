@@ -1,7 +1,7 @@
 ---
 description: Recupera o nome completo do item como ele aparece na interface do usuário. Somente leitura.
 ms.assetid: efe8de99-fe66-4472-8ca3-f45373d03f81
-title: Propriedade Item. FullName
+title: Propriedade Item.FullName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 5d0c232788e7e57aa7f82a66921527466b4cc5bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 65eb5493370cb3a226fc3507a9af19a620f65e471e9ca7717bee4f7fa7e43428
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118440611"
 ---
-# <a name="itemfullname-property"></a>Propriedade Item. FullName
+# <a name="itemfullname-property"></a>Propriedade Item.FullName
 
 Recupera o nome completo do item como ele aparece na interface do usuário. Somente leitura.
 
@@ -45,9 +45,9 @@ Cadeia de caracteres que recebe o nome.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Wiascr.dll (versão 4,90 ou posterior)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Wiascr.dll (versão 4.90 ou posterior)</dt> </dl> |
 
 
 

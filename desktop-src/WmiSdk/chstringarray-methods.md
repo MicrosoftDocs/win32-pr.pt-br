@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Métodos CHStringArray
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bfbe2afa9948e14362d05f5f90a2e375a9cffab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b9ce94d6310aa419359cc0b0e996a0e0fe5d813141641bc3d9e57f241f6ad3b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118556806"
 ---
 # <a name="chstringarray-methods"></a>Métodos CHStringArray
 
