@@ -1,7 +1,7 @@
 ---
-description: Define a transformação de exibição Mundial da mão esquerda para um Sprite. Uma chamada para esse método é necessária antes de obter ou classificar sprites.
+description: Define a transformação de exibição mundial esquerda para um sprite. Uma chamada para esse método é necessária antes do uso de sprites de classificação ou de méd.
 ms.assetid: 70f1181d-41f9-4663-91e0-8df94bce4eed
-title: 'Método ID3DXSprite:: SetWorldViewLH (D3dx9core. h)'
+title: Método ID3DXSprite::SetWorldViewLH (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 397c3803f6d4e445f74a8b24a61e86e72e471648
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 67ee276b90629a18f93bd9a26879e8a7ad62d71ae46baf2d2c0a6bfba82a53a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118292568"
 ---
-# <a name="id3dxspritesetworldviewlh-method"></a>Método ID3DXSprite:: SetWorldViewLH
+# <a name="id3dxspritesetworldviewlh-method"></a>Método ID3DXSprite::SetWorldViewLH
 
-Define a transformação de exibição Mundial da mão esquerda para um Sprite. Uma chamada para esse método é necessária antes de obter ou classificar sprites.
+Define a transformação de exibição mundial esquerda para um sprite. Uma chamada para esse método é necessária antes do uso de sprites de classificação ou de méd.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,21 +41,21 @@ HRESULT SetWorldViewLH(
 
 <dl> <dt>
 
-*pWorld* \[ no\]
+*pWorld* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Ponteiro para um [**D3DXMATRIX**](d3dxmatrix.md) que contém uma transformação do mundo. Se for **NULL**, a matriz de identidade será usada para a transformação mundial.
+Ponteiro para um [**D3DXMATRIX que**](d3dxmatrix.md) contém uma transformação mundial. Se **NULL**, a matriz de identidade será usada para a transformação do mundo.
 
 </dd> <dt>
 
-*pView* \[ no\]
+*pView* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Ponteiro para um [**D3DXMATRIX**](d3dxmatrix.md) que contém uma transformação de exibição. Se for **NULL**, a matriz de identidade será usada para a transformação de exibição.
+Ponteiro para um [**D3DXMATRIX que**](d3dxmatrix.md) contém uma transformação de exibição. Se **NULL**, a matriz de identidade será usada para a transformação de exibição.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Ponteiro para um [**D3DXMATRIX**](d3dxmatrix.md) que contém uma transformação
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor a seguir será retornado. D3DERR \_ INVALIDCALL
+Se o método for bem-sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor a seguir será retornado. D3DERR \_ INVALIDCALL
 
 ## <a name="remarks"></a>Comentários
 
-Uma chamada para esse método (ou para [**ID3DXSprite:: SetWorldViewRH**](id3dxsprite--setworldviewrh.md)) será necessária se o sprite for renderizado com o [D3DXSprite \_ \_ mural](d3dxsprite.md), D3DXSprite \_ \_ classificar \_ profundidade \_ FRONTTOBACK ou D3DXSprite \_ \_ \_ \_ valor do sinalizador BACKTOFRONT de profundidade de classificação em [**ID3DXSprite:: Begin**](id3dxsprite--begin.md).
+Uma chamada para esse método (ou para [**ID3DXSprite::SetWorldViewRH**](id3dxsprite--setworldviewrh.md)) será necessária se o sprite for renderizado com o valor do sinalizador [BACKTOFRONT D3DXSpriteVIEW \_ \_ ,](d3dxsprite.md)D3DXSprite \_ \_ SORT DEPTH OU \_ \_ D3DXSprite \_ \_ SORT \_ DEPTH \_ BACKTOFRONT [**em ID3DXSprite::Begin.**](id3dxsprite--begin.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Uma chamada para esse método (ou para [**ID3DXSprite:: SetWorldViewRH**](id3dxs
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

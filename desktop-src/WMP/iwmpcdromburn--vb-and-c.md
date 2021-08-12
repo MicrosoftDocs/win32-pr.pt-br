@@ -3,8 +3,8 @@ title: Interface IWMPCdromBurn (VB e C) (WMP. h)
 description: Fornece propriedades e métodos para gerenciar a criação de CDs de áudio.
 ms.assetid: d98b243d-d6c2-4d85-8d5a-de49c62d0acf
 keywords:
-- IWMPCdromBurn (VB e C) interface do Windows Media Player
-- IWMPCdromBurn (VB e C) interface do Windows Media Player, descrito
+- Windows Media Player de interface IWMPCdromBurn (VB e C)
+- Windows Media Player de interface IWMPCdromBurn (VB e C), descrita
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2fe21a20194f57e4a8b52a3ba05032a07cb31f9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7731d5491e683c2a5d2e577c41dc96264c90f0d070538405d0fa3c3ea7283a0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118575954"
 ---
 # <a name="iwmpcdromburn-vb-and-c-interface"></a>Interface IWMPCdromBurn (VB e C#)
 
@@ -86,7 +86,7 @@ Obtenha uma interface **IWMPCdromBurn** convertendo a interface **IWMPCdrom** do
 
 <dl> <dt>
 
-[**Interfaces para Visual Basic .NET e C #**](interfaces-for-visual-basic--net-and-c.md)
+[**Interfaces para Visual Basic .net e C #**](interfaces-for-visual-basic--net-and-c.md)
 </dt> </dl>
 
  

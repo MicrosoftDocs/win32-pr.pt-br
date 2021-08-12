@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e1b21db330bb9111b96fb244200845cb83b3153
-ms.sourcegitcommit: 4570ac533e129ff88b23f2c2b69e0140ead3a4a4
+ms.openlocfilehash: 4edbdb9e3b7fa48476f70e550bf1255de344880df440381fcd48adefa2f68d6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105778802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118604356"
 ---
 # <a name="stopservice-method-of-the-win32_service-class-sdoiash-for-the-terminal-service"></a>Método StopService da classe de Win32_Service (Sdoias. h) para o serviço de terminal
 
@@ -43,7 +43,7 @@ uint32 StopService();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores listados na lista a seguir ou qualquer outro valor para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -182,7 +182,7 @@ O serviço tem dependências circulares quando é iniciado.
 
 </dd> <dt>
 
-**aprimora**
+**19**
 </dt> <dd>
 
 Um serviço está sendo executado com o mesmo nome.
@@ -269,10 +269,10 @@ O exemplo de [parar um serviço e seus dependentes](https://Gallery.TechNet.Micr
 [Classes do sistema operacional](/windows/desktop/CIMWin32Prov/operating-system-classes)
 </dt> <dt>
 
-[**\_TerminalService Win32**](win32-terminalservice.md)
+[**Win32 \_ TerminalService**](win32-terminalservice.md)
 </dt> <dt>
 
-[Tarefas do WMI: serviços](/windows/desktop/WmiSdk/wmi-tasks--services)
+[Tarefas WMI: Serviços](/windows/desktop/WmiSdk/wmi-tasks--services)
 </dt> <dt>
 
 [**PauseService**](/windows/desktop/CIMWin32Prov/pauseservice-method-in-class-win32-systemdriver)

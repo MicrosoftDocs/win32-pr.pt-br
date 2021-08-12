@@ -1,19 +1,19 @@
 ---
 title: IDXCoreAdapterFactory::UnregisterEventNotification
-description: Cancela o registro de uma notificação que você registrou anteriormente para o.
+description: Não registra em uma notificação que você registrou anteriormente.
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: 6bb12126769a914680ea17ac9e6060346001c795
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 64fb54226f1fad0d1d36f8f4260c9c9172b105dc6239ea5cb805c32b57a938ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118278877"
 ---
-# <a name="idxcoreadapterfactoryunregistereventnotification-method"></a>Método IDXCoreAdapterFactory:: UnregisterEventNotification
+# <a name="idxcoreadapterfactoryunregistereventnotification-method"></a>Método IDXCoreAdapterFactory::UnregisterEventNotification
 
-Cancela o registro de uma notificação que você registrou anteriormente para o. Para obter diretrizes de programação e exemplos de código, consulte [usando DXCore para enumerar adaptadores](../dxcore-enum-adapters.md).
+Não registra em uma notificação que você registrou anteriormente. Para obter diretrizes de programação e exemplos de código, consulte [Usando DXCore para enumerar adaptadores](../dxcore-enum-adapters.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,13 +28,13 @@ virtual HRESULT STDMETHODCALLTYPE UnregisterEventNotification(
 
 Tipo: **uint32_t**
 
-O valor do cookie (retornado quando você chamou [IDXCoreAdapterFactory:: RegisterEventNotification](./nf-dxcore_interface-idxcoreadapterfactory-registereventnotification.md)) que representa um registro anterior para o qual você deseja cancelar o registro.
+O valor do cookie (retornado quando você chamou [IDXCoreAdapterFactory::RegisterEventNotification](./nf-dxcore_interface-idxcoreadapterfactory-registereventnotification.md)) que representa um registro anterior para o que agora você deseja não registrar.
 
 ## <a name="returns"></a>Retornos
 
 Tipo: **[HRESULT](../../com/structure-of-com-error-codes.md)**
 
-Se a função for realizada com sucesso, ela retornará **S_OK**. Caso contrário, ele retorna um [código de erro](../../com/com-error-codes-10.md) [**HRESULT**](../../com/structure-of-com-error-codes.md) .
+Se a função for bem-sucedida, ela **retornará S_OK**. Caso contrário, retornará um [**código de erro HRESULT**](../../com/structure-of-com-error-codes.md) [.](../../com/com-error-codes-10.md)
 
 |Valor retornado|Descrição|
 |-|-|
@@ -42,13 +42,13 @@ Se a função for realizada com sucesso, ela retornará **S_OK**. Caso contrári
 
 ## <a name="remarks"></a>Comentários
 
-**UnregisterEventNotification** retorna somente após a conclusão de todos os retornos de chamada pendentes/em andamento para este registro. DXCore garante que nenhum novo retorno de chamada ocorrerá para esse registro depois que **UnregisterEventNotification** for retornado. No entanto, para evitar um deadlock, se você chamar **UnregisterEventNotification** de dentro de seu retorno de chamada, o **UnregisterEventNotification** não aguardará a conclusão do retorno de chamada ativo.
+**UnregisterEventNotification** retorna somente após a conclusão de todos os retornos de chamada pendentes/em andamento para esse registro. O DXCore garante que nenhum novo retorno de chamada ocorrerá para esse registro depois **que UnregisterEventNotification** for retornado. No entanto, para evitar um deadlock, se você chamar **UnregisterEventNotification** de dentro do retorno de chamada, **UnregisterEventNotification** não aguardará a conclusão do retorno de chamada ativo.
 
 > [!IMPORTANT]
-> Antes de destruir o objeto DXCore representado pelo argumento *dxCoreObject* passado para [IDXCoreAdapterFactory:: RegisterEventNotification](./nf-dxcore_interface-idxcoreadapterfactory-registereventnotification.md), você deve usar o valor de cookie para cancelar o registro desse objeto de notificações chamando **UnregisterEventNotification**. Se você não fizer isso, uma exceção fatal será gerada quando a situação for detectada.
+> Antes de destruir o objeto DXCore representado pelo argumento *dxCoreObject* passado para [IDXCoreAdapterFactory::RegisterEventNotification](./nf-dxcore_interface-idxcoreadapterfactory-registereventnotification.md), você deve usar o valor do cookie para não registrar esse objeto de notificações chamando **UnregisterEventNotification**. Se você não fizer isso, uma exceção fatal será criada quando a situação for detectada.
 
-Depois que você cancela o registro de um valor de cookie, esse valor é qualificado para ser retornado por um registro subsequente
+Depois que você encerra o registro de um valor de cookie, esse valor é qualificado para ser retornado por um registro subsequente
 
 ## <a name="see-also"></a>Confira também
 
-[IDXCoreAdapter](./nn-dxcore_interface-idxcoreadapter.md), [IDXCoreAdapterList](./nn-dxcore_interface-idxcoreadapterlist.md), [IDXCoreAdapterFactory:: UnregisterEventNotification](./nf-dxcore_interface-idxcoreadapterfactory-registereventnotification.md), [referência de DXCore](../dxcore-reference.md), [usando DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)
+[IDXCoreAdapter](./nn-dxcore_interface-idxcoreadapter.md), [IDXCoreAdapterList](./nn-dxcore_interface-idxcoreadapterlist.md), [IDXCoreAdapterFactory::UnregisterEventNotification](./nf-dxcore_interface-idxcoreadapterfactory-registereventnotification.md), [Referência de DXCore](../dxcore-reference.md), Usando [DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)

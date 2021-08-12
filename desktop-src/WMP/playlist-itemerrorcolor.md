@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. itemErrorColor
-description: O atributo itemErrorColor especifica ou recupera a cor de realce que indica um item de playlist que tem uma condição de erro.
+title: PLAYLIST.itemErrorColor
+description: O atributo itemErrorColor especifica ou recupera a cor de realçada que indica um item de playlist que tem uma condição de erro.
 ms.assetid: 6f2d4267-07e7-4630-b567-043c0baff1c7
 keywords:
-- PLAYLIST. itemErrorColor Windows Media Player
+- PLAYLIST.itemErrorColor Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 184819f02ef666240768eee0a890ed1e0b62b873
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1f3396392f8010e58d81cb7d8970a4fc5fd022c87bbcb152fa6911154039c564
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118571291"
 ---
-# <a name="playlistitemerrorcolor"></a>PLAYLIST. itemErrorColor
+# <a name="playlistitemerrorcolor"></a>PLAYLIST.itemErrorColor
 
-O atributo **itemErrorColor** especifica ou recupera a cor de realce que indica um item de playlist que tem uma condição de erro.
+O **atributo itemErrorColor** especifica ou recupera a cor de realçada que indica um item de playlist que tem uma condição de erro.
 
 ``` syntax
         elementID.itemErrorColor
@@ -29,7 +29,7 @@ O atributo **itemErrorColor** especifica ou recupera a cor de realce que indica 
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é uma **cadeia de caracteres** de leitura/gravação que contém qualquer valor de cor do Microsoft Internet Explorer. Ele tem um valor padrão de "Red".
+Esse atributo é uma Cadeia de **caracteres** de leitura/gravação que contém qualquer valor de Internet Explorer da Microsoft. Ele tem um valor padrão de "vermelho".
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Esse atributo é uma **cadeia de caracteres** de leitura/gravação que contém 
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 
@@ -45,7 +45,7 @@ Esse atributo é uma **cadeia de caracteres** de leitura/gravação que contém 
 
 <dl> <dt>
 
-[**Referência de cor**](color-reference.md)
+[**Referência de cores**](color-reference.md)
 </dt> <dt>
 
 [**Elemento PLAYLIST**](playlist-element.md)

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9anim.h
-ms.openlocfilehash: 6f912c44659d418d543194ba82a9d82f31e7ef08
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a4d1e19e2e6fb8e0625b20c7755b3cf3b5c68c06cbc01da1b8a22fd9893d0027
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105762515"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118299994"
 ---
 # <a name="d3dxcompression_flags-enumeration"></a>\_Enumeração de sinalizadores D3DXCOMPRESSION
 

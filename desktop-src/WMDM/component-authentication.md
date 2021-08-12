@@ -3,24 +3,24 @@ title: Autenticação de componente
 description: Autenticação de componente
 ms.assetid: f1d9d41a-409d-43b5-9506-af130047349b
 keywords:
-- Windows Media Gerenciador de Dispositivos, autenticação
+- Windows Mídia Gerenciador de Dispositivos, autenticação
 - Gerenciador de Dispositivos, autenticação
-- aplicativos de área de trabalho, autenticação
+- aplicativos da área de trabalho, autenticação
 - provedores de serviços, autenticação
-- Guia de programação, autenticação
+- guia de programação, autenticação
 - autenticação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 89bc75eff3a1a90948de90b52f890c4097993035
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bc0bf340d6864acfdf5cc35c4c8aaf522c7e87ce95adf43cfa8d9c8c8e929aed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118585959"
 ---
 # <a name="component-authentication"></a>Autenticação de componente
 
-Cada aplicativo e provedor de serviços deve ser autenticado antes que possa começar a chamar ou implementar os métodos de Gerenciador de Dispositivos de mídia do Windows.
+Cada aplicativo e provedor de serviços deve ser autenticado antes de começar a chamar ou implementar métodos Windows mídia Gerenciador de Dispositivos mídia.
 
 A autenticação é tratada de forma diferente para provedores de serviços e aplicativos. Consulte o tópico que se aplica ao seu projeto:
 
@@ -34,9 +34,9 @@ A autenticação é tratada de forma diferente para provedores de serviços e ap
 [**Usando canais autenticados seguros**](using-secure-authenticated-channels.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

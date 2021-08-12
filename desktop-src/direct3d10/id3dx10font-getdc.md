@@ -1,7 +1,7 @@
 ---
-description: Retorna um identificador para um contexto de dispositivo de vídeo (DC) que tem a fonte definida para ele.
+description: Retornar um alça para um DC (contexto de dispositivo de exibição) que tenha a fonte definida nele.
 ms.assetid: 57510b89-980d-42bb-a7ab-a292680a6004
-title: 'Método ID3DX10Font:: GetDC (D3DX10. h)'
+title: Método ID3DX10Font::GetDC (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 93ee06df61e0285e26dba1976ea5bf09b9cb5a9b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9f376c521948c0ad19040332a5b11dee35a70983839d6d4982c9e51839ee7dff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105784975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118303121"
 ---
-# <a name="id3dx10fontgetdc-method"></a>Método ID3DX10Font:: GetDC
+# <a name="id3dx10fontgetdc-method"></a>Método ID3DX10Font::GetDC
 
-Retorna um identificador para um contexto de dispositivo de vídeo (DC) que tem a fonte definida para ele.
+Retornar um alça para um DC (contexto de dispositivo de exibição) que tenha a fonte definida nele.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,7 +42,7 @@ Esse método não tem parâmetros.
 
 Tipo: **[ **HDC**](../winprog/windows-data-types.md)**
 
-Identificador para um controlador de domínio de vídeo.
+Manipular para um DC de exibição.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Identificador para um controlador de domínio de vídeo.
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -62,7 +62,7 @@ Identificador para um controlador de domínio de vídeo.
 [ID3DX10Font](id3dx10font.md)
 </dt> <dt>
 
-[Interfaces D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

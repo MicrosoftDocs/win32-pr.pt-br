@@ -1,7 +1,7 @@
 ---
 description: Divide uma malha em malhas menores que o tamanho especificado.
 ms.assetid: 55cdd82f-91fa-4805-969f-8fbe53cbde58
-title: Função D3DXSplitMesh (D3DX9Mesh. h)
+title: Função D3DXSplitMesh (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d1f01cdb4ddd009f5cdf0b7f0310a492840955f1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: aee07e79286867ce11ce394e852fdfc01c6a1e41dc75b8c979838844b4f09d2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105811722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118298248"
 ---
 # <a name="d3dxsplitmesh-function"></a>Função D3DXSplitMesh
 
@@ -48,25 +48,25 @@ void D3DXSplitMesh(
 
 <dl> <dt>
 
-*pMeshIn* \[ no\]
+*pMeshIn* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Ponteiro para uma interface [**ID3DXMesh**](id3dxmesh.md) , que representa a malha de origem.
+Ponteiro para uma [**interface ID3DXMesh,**](id3dxmesh.md) que representa a malha de origem.
 
 </dd> <dt>
 
-*pAdjacencyIn* \[ no\]
+*pAdjacencyIn* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Ponteiro para uma matriz de três DWORDs por face que especificam os três vizinhos para cada face na malha a ser simplificada.
+Ponteiro para uma matriz de três DWORDs por face que especificam os três vizinhos para cada rosto na malha a ser simplificado.
 
 </dd> <dt>
 
-*MaxSize* \[ no\]
+*MaxSize* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md)**
@@ -75,7 +75,7 @@ Número máximo de vértices na malha resultante.
 
 </dd> <dt>
 
-*Opções* \[ do no\]
+*Opções* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md)**
@@ -84,7 +84,7 @@ Sinalizadores de opção para as novas malhas.
 
 </dd> <dt>
 
-*pMeshesOut* \[ fora\]
+*pMeshesOut* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
@@ -93,51 +93,51 @@ Número de malhas retornadas.
 
 </dd> <dt>
 
-*ppMeshArrayOut* \[ fora\]
+*ppMeshArrayOut* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Buffer que contém uma matriz de interfaces [**ID3DXMesh**](id3dxmesh.md) para as novas malhas. Para uma malha de origem dividida em n malhas, *ppMeshArrayOut* é uma matriz de n **ID3DXMesh** ponteiros.
+Buffer que contém uma matriz de interfaces [**ID3DXMesh**](id3dxmesh.md) para as novas malhas. Para uma malha de origem dividida em n malhas, *ppMeshArrayOut* é uma matriz de n **ponteiros ID3DXMesh.**
 
 </dd> <dt>
 
-*ppAdjacencyArrayOut* \[ fora\]
+*ppAdjacencyArrayOut* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Buffer que contém uma matriz de matrizes de adjacência (DWORDs) para as novas malhas. Consulte [**ID3DXBuffer**](id3dxbuffer.md). Esse parâmetro é opcional.
+Buffer que contém uma matriz de DWORDs (matrizes de adjacência) para as novas malhas. Consulte [**ID3DXBuffer.**](id3dxbuffer.md) Esse parâmetro é opcional.
 
 </dd> <dt>
 
-*ppFaceRemapArrayOut* \[ fora\]
+*ppFaceRemapArrayOut* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Buffer que contém uma matriz de matrizes de remapeamento facial (DWORDs) para as novas malhas. Consulte [**ID3DXBuffer**](id3dxbuffer.md). Esse parâmetro é opcional.
+Buffer que contém uma matriz de DWORDs (matrizes de remapa facial) para as novas malhas. Consulte [**ID3DXBuffer.**](id3dxbuffer.md) Esse parâmetro é opcional.
 
 </dd> <dt>
 
-*ppVertRemapArrayOut* \[ fora\]
+*ppVertRemapArrayOut* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Buffer que contém uma matriz de matrizes de remapeamento de vértice para as novas malhas. Consulte [**ID3DXBuffer**](id3dxbuffer.md). Esse parâmetro é opcional.
+Buffer que contém uma matriz de matrizes de remapa de vértice para as novas malhas. Consulte [**ID3DXBuffer.**](id3dxbuffer.md) Esse parâmetro é opcional.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Retornar valor
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes valores: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes valores: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Comentários
 
-Um uso comum dessa função é dividir uma malha com índices de 32 bits (mais de 65535 vértices) em mais de uma malha, cada um com índices de 16 bits.
+Um uso comum dessa função é dividir uma malha com índices de 32 bits (mais de 65535 vértices) em mais de uma malha, cada uma com índices de 16 bits.
 
-As matrizes de adjacência, remapeamento de vértice e remapeamento de face são as DWORDs em que cada matriz contém n ponteiros DWORD, seguidos pelos dados DWORD referenciados pelos ponteiros. Por exemplo, para obter as informações de remapeamento facial para a face 3 na malha 2, o código a seguir pode ser usado, supondo que os dados de remapeamento facial foram retornados em uma variável chamada *ppFaceRemapArrayOut*.
+As matrizes de remapa de adjacency, remap de vértice e face são matrizes DWORDs em que cada matriz contém ponteiros n DWORD, seguidos pelos dados DWORD referenciados pelos ponteiros. Por exemplo, para obter as informações de remapeamento facial para face 3 na malha 2, o código a seguir pode ser usado, supondo que os dados de remapeamento facial foram retornados em uma variável chamada *ppFaceRemapArrayOut*.
 
 
 ```
@@ -155,8 +155,8 @@ const DWORD remap = face_remaps[2][3];
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

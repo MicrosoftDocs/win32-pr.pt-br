@@ -4,16 +4,16 @@ ms.assetid: d199a583-cbff-4421-a330-ac4caf43d87d
 title: Operadores XMUDEC4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca056d6b727bf979779d9b1685c6b8ec37950677
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c55d88946f8bd961e91de9e76e4da71e4172ba2967de9257ba9c71bd2b05d8c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105808219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118277450"
 ---
 # <a name="xmudec4-operators"></a>Operadores XMUDEC4
 
-A estrutura [**XMUDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudec4) expõe os operadores a seguir.
+A [**estrutura XMUDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudec4) expõe os operadores a seguir.
 
 > [!Note]  
 > Os operadores listados aqui só estão disponíveis em C++.
@@ -26,8 +26,8 @@ A estrutura [**XMUDEC4**](/windows/win32/api/directxpackedvector/ns-directxpacke
 
 | Métodos                                                            | Descrição                                                                                                           |
 |--------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [**operador UInt32 \_ t**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmudec4-operatoruint32_t)<br/> | Retorna uma instância do `uint32_t` que contém os componentes da `XMUDEC4` instância em um formato empacotado. <br/> |
-| [**operador =**](xmudec4-operator-eq.md)<br/>               | Atribui dados de componente de vetor à instância atual do `XMUDEC4` . <br/>                                       |
+| [**operador uint32 \_ t**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmudec4-operatoruint32_t)<br/> | Retorna uma instância de `uint32_t` que contém os componentes da instância em `XMUDEC4` um formato empacotado. <br/> |
+| [**operator =**](xmudec4-operator-eq.md)<br/>               | Atribui dados de componente vetor à instância atual do `XMUDEC4` . <br/>                                       |
 
 
 

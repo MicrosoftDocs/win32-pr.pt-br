@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 13efa3ccdd5c9ae3b5f255ae08a456187e7ed4cf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 13ef6255dc5791648116c8a8b26be38360dbc8e4916230eeeb7c87cd3590af31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118302655"
 ---
 # <a name="id3dx10meshgetfacecount-method"></a>Método ID3DX10Mesh:: GetFaceCount
 
@@ -38,7 +38,7 @@ UINT GetFaceCount();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Valor retornado
+## <a name="return-value"></a>Retornar valor
 
 Tipo: **[ **uint**](../winprog/windows-data-types.md)**
 
@@ -55,7 +55,7 @@ Retorna o número de faces na malha.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
 description: Compila um sombreador de um efeito que contém uma ou mais funções.
 ms.assetid: f34a2975-dcd5-4917-9b11-ed40583272f9
-title: Método ID3DXEffectCompiler::CompileShader (D3DX9Effect.h)
+title: 'Método ID3DXEffectCompiler:: CompileShader (D3DX9Effect. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 3e8d1d72fccd5c4ad47d21d05ee46013860a7743
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 1e42eec5cc9c5c90d1fa4e26c4ad38d611dce3ce0df933d76b1eb81d2534b8dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118295872"
 ---
-# <a name="id3dxeffectcompilercompileshader-method"></a>Método ID3DXEffectCompiler::CompileShader
+# <a name="id3dxeffectcompilercompileshader-method"></a>Método ID3DXEffectCompiler:: CompileShader
 
 Compila um sombreador de um efeito que contém uma ou mais funções.
 
@@ -45,30 +45,30 @@ HRESULT CompileShader(
 
 <dl> <dt>
 
-*hFunction* \[ Em\]
+*hFunction* \[ no\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador exclusivo para a função a ser compilada. Esse valor não deve ser **NULL.** Consulte [Handles (Direct3D 9)](handles.md).
+Identificador exclusivo para a função a ser compilada. Esse valor não deve ser **nulo**. Consulte [Handles (Direct3D 9)](handles.md).
 
 </dd> <dt>
 
-*pTarget* \[ Em\]
+*pTarget* \[ no\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Ponteiro para um perfil de sombreador que determina o conjunto de instruções do sombreador. Consulte [**D3DXGetVertexShaderProfile**](d3dxgetvertexshaderprofile.md) ou [**D3DXGetPixelShaderProfile**](d3dxgetpixelshaderprofile.md) para ver uma lista dos perfis disponíveis.
+Ponteiro para um perfil de sombreador que determina o conjunto de instruções do sombreador. Consulte [**D3DXGetVertexShaderProfile**](d3dxgetvertexshaderprofile.md) ou [**D3DXGetPixelShaderProfile**](d3dxgetpixelshaderprofile.md) para obter uma lista dos perfis disponíveis.
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Sinalizadores* \[ de no\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Compile opções identificadas por vários sinalizadores. O compilador HLSL do Direct3D 10 agora é o padrão. Consulte [Sinalizadores D3DXSHADER](d3dxshader-flags.md) para obter detalhes.
+Opções de compilação identificadas por vários sinalizadores. O compilador do Direct3D 10 HLSL agora é o padrão. Consulte [D3DXSHADER flags](d3dxshader-flags.md) para obter detalhes.
 
 </dd> <dt>
 
@@ -117,15 +117,15 @@ Os destinos podem ser especificados para sombreadores de vértice, sombreadores 
 
 | Destinos                      | Funções                                                                      |
 |-----------------------|-----------------------------------------------------------------------|
-| Destinos do sombreador de vértice | vs \_ 1 \_ 1, vs \_ 2 \_ 0, vs \_ 2 \_ sw, vs \_ 3 \_ 0                               |
-| Destinos do sombreador de pixel  | ps \_ 1 \_ 1, ps \_ 1 \_ 2, ps \_ \_ 1 3, ps \_ 1 \_ 4, ps \_ 2 \_ 0, ps \_ 2 \_ sw, ps \_ 3 \_ 0 |
-| Destinos de preenchimento de textura  | tx \_ 0, tx \_ 1                                                          |
+| Destinos do sombreador de vértice | vs \_ 1 \_ 1, vs \_ 2 \_ 0, vs \_ 2 \_ SW, vs \_ 3 \_ 0                               |
+| Destinos do sombreador de pixel  | PS \_ 1 \_ 1, PS \_ 1 \_ 2, PS \_ 1 \_ 3, PS \_ 1 \_ 4, PS \_ 2 \_ 0, PS \_ 2 \_ SW, PS \_ 3 \_ 0 |
+| Alvos de preenchimento de textura  | TX \_ 0, TX \_ 1                                                          |
 
 
 
  
 
-Esse método compila um sombreador de uma função que é escrita em uma linguagem semelhante a C. Para obter mais informações, consulte [HLSL](../direct3dhlsl/dx-graphics-hlsl.md).
+Esse método compila um sombreador de uma função que é escrita em uma linguagem do tipo C. Para obter mais informações, consulte [HLSL](../direct3dhlsl/dx-graphics-hlsl.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -133,8 +133,8 @@ Esse método compila um sombreador de uma função que é escrita em uma linguag
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
+| parâmetro<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
 
 
 

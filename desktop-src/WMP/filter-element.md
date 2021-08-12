@@ -1,9 +1,9 @@
 ---
-title: Elemento Filter
-description: O elemento Filter contém elementos que limitam o tamanho de uma lista de reprodução, a duração de uma lista de reprodução ou o número de itens de mídia em uma lista de reprodução.
+title: Elemento filter
+description: O elemento filter contém elementos que limitam o tamanho de uma playlist, a duração de uma playlist ou o número de itens de mídia em uma playlist.
 ms.assetid: 880885f6-493f-466b-b5ad-ab9b569f4cc5
 keywords:
-- Elemento Filter do Windows Media Player
+- Elemento filter Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 32d2d306faebef813996b59575220efeba99dfb6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8a059a6a2820d99541076775ac869de0767ffd739743f5b145a155efd0a25abc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105796414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118576773"
 ---
-# <a name="filter-element"></a>Elemento Filter
+# <a name="filter-element"></a>Elemento filter
 
-O elemento **Filter** contém elementos que limitam o tamanho de uma lista de reprodução, a duração de uma lista de reprodução ou o número de itens de mídia em uma lista de reprodução.
+O **elemento filter** contém elementos que limitam o tamanho de uma playlist, a duração de uma playlist ou o número de itens de mídia em uma playlist.
 
 ``` syntax
 <filter
@@ -38,23 +38,23 @@ O elemento **Filter** contém elementos que limitam o tamanho de uma lista de re
 
 <dl> <dt>
 
-<span id="type"></span><span id="TYPE"></span>**Escreva**
+<span id="type"></span><span id="TYPE"></span>**Tipo**
 </dt> <dd>
 
-O tipo de objeto de filtro. Não há valores predefinidos para este atributo.
+O tipo de objeto de filtro. Não há valores predefinidos para esse atributo.
 
 </dd> <dt>
 
-<span id="id__required______________"></span><span id="ID__REQUIRED______________"></span>**ID** (obrigatório) 
+<span id="id__required______________"></span><span id="ID__REQUIRED______________"></span>**id** (obrigatório) 
 </dt> <dd>
 
-O GUID que identifica exclusivamente um objeto de filtro. Os métodos do objeto de filtro são invocados para interpretar os elementos de **fragmento** contidos no elemento de **filtro** .
+O GUID que identifica exclusivamente um objeto de filtro. Os métodos do objeto de filtro são invocados para interpretar os **elementos de fragmento** contidos no elemento **de** filtro.
 
 
 
 | Valor                                  | Descrição                                                                                                 |
 |----------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| {BC5E21B0-504C-46F6-82BF-FB975C911AD6} | A ID do filtro "filtro de playlist automática da Microsoft--limita as listas de reprodução automática por contagem, tamanho ou duração". |
+| {BC5E21B0-504C-46F6-82BF-FB975C911AD6} | A ID do filtro "Filtro de Playlist Automática da Microsoft – Limita as listas de reprodução automáticas por contagem, tamanho ou duração". |
 
 
 
@@ -62,7 +62,7 @@ O GUID que identifica exclusivamente um objeto de filtro. Os métodos do objeto 
 
 </dd> <dt>
 
-<span id="name__required______________"></span><span id="NAME__REQUIRED______________"></span>**nome** (obrigatório) 
+<span id="name__required______________"></span><span id="NAME__REQUIRED______________"></span>**name** (obrigatório) 
 </dt> <dd>
 
 O nome do objeto de filtro.
@@ -71,7 +71,7 @@ O nome do objeto de filtro.
 
 | Valor                                                                              | Descrição                                        |
 |------------------------------------------------------------------------------------|----------------------------------------------------|
-| Filtro de playlist automática da Microsoft--limita as listas de reprodução automática por contagem, tamanho ou duração | Limita listas de reprodução automáticas por contagem, tamanho ou duração. |
+| Filtro de Playlist Automática da Microsoft – limita listas de reprodução automáticas por contagem, tamanho ou duração | Limita as listas de reprodução automáticas por contagem, tamanho ou duração. |
 
 
 
@@ -86,7 +86,7 @@ O nome do objeto de filtro.
 | Hierarquia | Elementos                                   |
 |-----------|--------------------------------------------|
 | Pai    | [smartPlaylist](smartplaylist-element.md) |
-| Filho     | [fragmento](fragment-element.md)           |
+| Filho     | [Fragmento](fragment-element.md)           |
 
 
 
@@ -94,7 +94,7 @@ O nome do objeto de filtro.
 
 ## <a name="remarks"></a>Comentários
 
-O elemento **Filter** não adiciona nenhum elemento de mídia a uma lista de reprodução; Ele simplesmente remove ou filtra o conteúdo que foi selecionado pelo elemento **sourceFilter** .
+O **elemento filter** não adiciona nenhum elemento de mídia a uma playlist; ele simplesmente remove ou filtra o conteúdo selecionado pelo **elemento sourceFilter.**
 
 ## <a name="examples"></a>Exemplos
 
@@ -118,7 +118,7 @@ O elemento **Filter** não adiciona nenhum elemento de mídia a uma lista de rep
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior.<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior.<br/> |
 
 
 
@@ -126,10 +126,10 @@ O elemento **Filter** não adiciona nenhum elemento de mídia a uma lista de rep
 
 <dl> <dt>
 
-[**Elemento Argument**](argument-element.md)
+[**Elemento argument**](argument-element.md)
 </dt> <dt>
 
-[**Elemento Fragment**](fragment-element.md)
+[**Elemento fragment**](fragment-element.md)
 </dt> <dt>
 
 [**Elemento smartPlaylist**](smartplaylist-element.md)
@@ -138,7 +138,7 @@ O elemento **Filter** não adiciona nenhum elemento de mídia a uma lista de rep
 [**Elemento sourceFilter**](sourcefilter-element.md)
 </dt> <dt>
 
-[**Referência de elementos da playlist do Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Referência de elementos da playlist de mídia**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

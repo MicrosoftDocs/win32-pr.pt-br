@@ -1,7 +1,7 @@
 ---
-description: Obter informações de tradução para um quadro-chave específico no conjunto de animações.
+description: Obter informações de tradução para um quadro-chave específico no conjunto de animação.
 ms.assetid: 757af408-8a9c-4294-9343-91f52d4cc1ab
-title: 'Método ID3DXKeyframedAnimationSet:: GetTranslationKey (D3dx9anim. h)'
+title: Método ID3DXKeyframedAnimationSet::GetTranslationKey (D3dx9 bluetooth.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f61d1caecb46477d16be4367588ab5609bfd6224
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6b09eac144382bb21114b1c9b3b878baca57fb134555e37bea00580a9f2bfba6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105772633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118294937"
 ---
-# <a name="id3dxkeyframedanimationsetgettranslationkey-method"></a>Método ID3DXKeyframedAnimationSet:: GetTranslationKey
+# <a name="id3dxkeyframedanimationsetgettranslationkey-method"></a>Método ID3DXKeyframedAnimationSet::GetTranslationKey
 
-Obter informações de tradução para um quadro-chave específico no conjunto de animações.
+Obter informações de tradução para um quadro-chave específico no conjunto de animação.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,25 +42,25 @@ HRESULT GetTranslationKey(
 
 <dl> <dt>
 
-*Animação* \[ no\]
+*Animação* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Índice de animação.
 
 </dd> <dt>
 
-*Chave* \[ no\]
+*Chave* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Quadro-chave.
 
 </dd> <dt>
 
-*pTranslationKey* \[ fora\]
+*pTranslationKey* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXKEY \_ VECTOR3**](d3dxkey-vector3.md)**
@@ -73,7 +73,7 @@ Ponteiro para as informações de rotação. Consulte [**D3DXKEY \_ VECTOR3**](d
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método falhar, o seguinte valor será retornado: D3DERR \_ INVALIDCALL.
+Se o método for bem-sucedido, o valor de retorno será S \_ OK. Se o método falhar, o seguinte valor será retornado: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método fa
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

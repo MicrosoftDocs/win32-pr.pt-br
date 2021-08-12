@@ -1,9 +1,9 @@
 ---
-title: Event. screenWidth
-description: O atributo screenWidth recupera a largura do tamanho de tela disponível em pixels.
+title: event.screenWidth
+description: O atributo screenWidth recupera a largura do tamanho da tela disponível em pixels.
 ms.assetid: 613defdd-3644-4bf1-a0aa-93431d3bb35a
 keywords:
-- Event. screenWidth Windows Media Player
+- event.screenWidth Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f7d50c6c9d99b04b2562d27b7de1e82c507f2a2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 885909243c35a26f05368245240b18a2a091100715a57081386414a427d51544
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789547"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118577017"
 ---
-# <a name="eventscreenwidth"></a>Event. screenWidth
+# <a name="eventscreenwidth"></a>event.screenWidth
 
-O atributo **screenWidth** recupera a largura do tamanho de tela disponível em pixels.
+O **atributo screenWidth** recupera a largura do tamanho da tela disponível em pixels.
 
 ``` syntax
 event.screenWidth
@@ -29,7 +29,7 @@ event.screenWidth
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **número** somente leitura (**Long**).
+Esse atributo é um Número somente **leitura** (**long).**
 
 ## <a name="remarks"></a>Comentários
 
@@ -41,7 +41,7 @@ Isso é útil para determinar a quantidade de espaço que há no monitor. Se hou
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 
@@ -52,7 +52,7 @@ Isso é útil para determinar a quantidade de espaço que há no monitor. Se hou
 [**Atributos de evento de ambiente**](ambient-event-attributes.md)
 </dt> <dt>
 
-[**Event. screenHeight**](event-screenheight.md)
+[**event.screenHeight**](event-screenheight.md)
 </dt> </dl>
 
  

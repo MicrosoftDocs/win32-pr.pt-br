@@ -4,21 +4,21 @@ description: Sobre o objeto DVD
 ms.assetid: 6c255e9e-d537-4f4f-865c-b7fb26c8e413
 keywords:
 - Windows Media Player, objeto de DVD
-- Modelo de objeto do Windows Media Player, objeto de DVD
+- modelo de objeto Windows Media Player, objeto DVD
 - modelo de objeto, objeto de DVD
-- Controle ActiveX do Windows Media Player, objeto DVD
-- Controle ActiveX, objeto DVD
-- Controle ActiveX móvel do Windows Media Player, objeto DVD
-- Windows Media Player Mobile, objeto de DVD
+- controle de ActiveX de Windows Media Player, objeto de DVD
+- controle de ActiveX, objeto de DVD
+- Windows Media Player controle de ActiveX móvel, objeto de DVD
+- Windows Media Player Celular, objeto de DVD
 - Objeto de DVD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29b9432fa90e409b40f9e1acd3e7686628bca3d1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 109587f30e7df0ff49b1cdbe5b45d818decb1a3f50ffe4a4ba9cde53d00833f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104291820"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118583758"
 ---
 # <a name="about-the-dvd-object"></a>Sobre o objeto DVD
 
@@ -42,9 +42,9 @@ mydomain = player.dvd.domain;
 [**Modelo de objeto do Player para linguagens de script**](player-object-model-for-scripting-languages.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

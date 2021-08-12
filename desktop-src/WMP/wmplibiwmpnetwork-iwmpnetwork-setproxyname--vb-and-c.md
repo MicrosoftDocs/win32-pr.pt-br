@@ -3,9 +3,9 @@ title: Método setproxyname do IWMPNetwork
 description: O método setproxyname especifica o nome do servidor proxy a ser usado. | Método setproxyname do IWMPNetwork
 ms.assetid: a3b0f53a-d81a-4e6d-9cac-7047433246ae
 keywords:
-- método setproxyname do Windows Media Player
+- método setproxyname Windows Media Player
 - método setproxyname Windows Media Player, interface IWMPNetwork
-- Interface IWMPNetwork do Windows Media Player, método setproxyname
+- interface IWMPNetwork Windows Media Player, método setproxyname
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86c9759f37dd4c0e171c09afaea4dfde0993c7f1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fe4525b3933f0929413a2719e1338083b00b9995a4ba39085f5787c6feca9931
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118568711"
 ---
 # <a name="iwmpnetworksetproxyname-method"></a>Método IWMPNetwork:: setproxyname
 
@@ -81,7 +81,7 @@ Esse método falha a menos que o aplicativo de chamada esteja em execução no c
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir usa **Setproxyname** para especificar o nome do servidor proxy do Windows Media Player para o protocolo MMS. O novo nome é recuperado de uma caixa de texto quando um botão é clicado. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
+o exemplo de código a seguir usa **setproxyname** para especificar o nome do servidor proxy de Windows Media Player para o protocolo MMS. O novo nome é recuperado de uma caixa de texto quando um botão é clicado. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
 
 
 ```CSharp

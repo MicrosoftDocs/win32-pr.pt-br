@@ -1,9 +1,9 @@
 ---
-title: Controle deslizante. dica de ferramenta
-description: O atributo toolTip especifica ou recupera o texto da dica de ferramenta para o controle deslizante.
+title: SLIDER.toolTip
+description: O atributo toolTip especifica ou recupera o texto da Dica de Ferramenta para o controle deslizante.
 ms.assetid: 797a88bf-06a4-44f0-b671-478149009db1
 keywords:
-- SLIDER. toolTip do Windows Media Player
+- Controle deslizante.toolTip Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fed6fc096461107884b665124a9aaaab017eb7f2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1ecb4e836599f0d1c11ea77c1dcbef4cb1b5333286466b46021a028a828e33cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105771563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118568798"
 ---
-# <a name="slidertooltip"></a>Controle deslizante. dica de ferramenta
+# <a name="slidertooltip"></a>SLIDER.toolTip
 
-O atributo **ToolTip** especifica ou recupera o texto da dica de ferramenta para o controle deslizante.
+O **atributo toolTip** especifica ou recupera o texto da Dica de Ferramenta para o controle deslizante.
 
 ``` syntax
         elementID.toolTip
@@ -29,11 +29,11 @@ O atributo **ToolTip** especifica ou recupera o texto da dica de ferramenta para
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Este atributo é uma **cadeia de caracteres** de leitura/gravação com um comprimento máximo de 1024 caracteres. Não tem nenhum valor padrão.
+Esse atributo é uma cadeia de **caracteres** de leitura/gravação com um comprimento máximo de 1024 caracteres. Não tem nenhum valor padrão.
 
 ## <a name="remarks"></a>Comentários
 
-Quando esse atributo é definido como "" (cadeia de caracteres vazia), nenhuma dica de ferramenta é exibida.
+Quando esse atributo é definido como "" (cadeia de caracteres vazia), nenhuma Dica de Ferramenta é exibida.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ Quando esse atributo é definido como "" (cadeia de caracteres vazia), nenhuma d
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 

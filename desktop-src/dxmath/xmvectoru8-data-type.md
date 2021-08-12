@@ -4,12 +4,12 @@ ms.assetid: ab73ac2c-f178-1bb9-910d-9eef5fc6f5df
 title: Tipo de dados XMVECTORU8 (DirectXMath. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4428cdd78206bfa17c295a9578653bb0a66f0c6b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ff3c335df3e74bc58776883b15d724c65d558bad30fc37e0e28547102260301a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782448"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118276192"
 ---
 # <a name="xmvectoru8-data-type"></a>Tipo de dados XMVECTORU8
 
@@ -46,7 +46,7 @@ data = floatingVector;
 
 ### <a name="platform-requirements"></a>Requisitos de plataforma
 
-Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. Com suporte para aplicativos de área de trabalho Win32, aplicativos da Windows Store e aplicativos Windows Phone 8.
+Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. com suporte para aplicativos de área de trabalho do Win32, aplicativos da Windows store e aplicativos Windows Phone 8.
 
 ## <a name="requirements"></a>Requisitos
 

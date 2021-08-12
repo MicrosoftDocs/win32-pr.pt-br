@@ -9,12 +9,12 @@ keywords:
 - ADSI ADSI, código de exemplo C/C++, usando IDirectoryObject para modificar atributos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8715826d0fc835f3d9ecae914fcc51603883af5d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 30fa7d75d3e0dce489f676dafb36992c95a1cba2e9856bbbaf49f14806a6c1ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104084004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118179024"
 ---
 # <a name="modifying-attributes-with-the-idirectoryobject-interface"></a>Modificando atributos com a interface IDirectoryObject
 
@@ -32,7 +32,7 @@ A especificação dos [**ADS \_ \_ atualização attr**](adsi-attribute-modifica
 > [!Note]  
 > Como [**IADs::P UT**](/windows/desktop/api/Iads/nf-iads-iads-put) e [**IADs::P utex**](/windows/desktop/api/Iads/nf-iads-iads-putex) com [**IADs:: setinfo**](/windows/desktop/api/Iads/nf-iads-iads-setinfo), as alterações de atributo são completamente confirmadas ou descartadas em Active Directory. Se uma ou mais das modificações não forem permitidas e, portanto, não puderem ser executadas, nenhuma das modificações coletiva feitas nos atributos será confirmada no diretório.
 
- 
+ 
 
 ## <a name="example"></a>Exemplo
 
@@ -92,9 +92,9 @@ if(SUCCEEDED(hr))
 
 
 
- 
+ 
 
- 
+ 
 
 
 

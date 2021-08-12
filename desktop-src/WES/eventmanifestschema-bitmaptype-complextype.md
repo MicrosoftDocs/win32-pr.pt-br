@@ -1,9 +1,9 @@
 ---
-title: Tipo complexo de BitMaptype
-description: Define uma lista de mapeamentos de nome/valor entre valores de bits e valores de cadeia de caracteres.
+title: Tipo complexo BitMapType
+description: Define uma lista de mapeamentos de nome/valor entre valores de bit e valores de cadeia de caracteres.
 ms.assetid: 65dc6a48-878c-415c-872c-41dc27691b7f
 keywords:
-- EventLog do tipo complexo de BitMaptype
+- Tipo complexo BitMapType EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ef3a48b102b9ab36ef492fcd38c4bb8b2560d5fe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c899718cd28e337bbc5d34301b7bb49446fde51f21db5b742e98dd95c5092c23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118590406"
 ---
-# <a name="bitmaptype-complex-type"></a>Tipo complexo de BitMaptype
+# <a name="bitmaptype-complex-type"></a>Tipo complexo BitMapType
 
-Define uma lista de mapeamentos de nome/valor entre valores de bits e valores de cadeia de caracteres.
+Define uma lista de mapeamentos de nome/valor entre valores de bit e valores de cadeia de caracteres.
 
 ``` syntax
 <xs:complexType name="BitMapType">
@@ -48,7 +48,7 @@ Define uma lista de mapeamentos de nome/valor entre valores de bits e valores de
 
 | Elemento                                                   | Type                                                                       | Descrição                                                            |
 |-----------------------------------------------------------|----------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [**mapeada**](eventmanifestschema-map-bitmaptype-element.md) | [**BitMapValueType**](eventmanifestschema-bitmapvaluetype-complextype.md) | Define o mapeamento entre um valor de bit e um valor de cadeia de caracteres.<br/> |
+| [**Mapa**](eventmanifestschema-map-bitmaptype-element.md) | [**BitMapValueType**](eventmanifestschema-bitmapvaluetype-complextype.md) | Define o mapeamento entre um valor de bit e um valor de cadeia de caracteres.<br/> |
 
 
 
@@ -59,7 +59,7 @@ Define uma lista de mapeamentos de nome/valor entre valores de bits e valores de
 | Nome   | Tipo                                                              | Descrição                                                                                                                                                                                                                                                                                                         |
 |--------|-------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | name   | string                                                            | O nome do bitmap.<br/>                                                                                                                                                                                                                                                                                  |
-| símbolo | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | O símbolo a ser usado para fazer referência aos mapeamentos em seu aplicativo. O [**compilador de mensagem (MC.exe)**](message-compiler--mc-exe-.md) usa o símbolo para criar uma constante para o mapa no arquivo de cabeçalho que o compilador gera. Se você não especificar um símbolo, o compilador gerará um para você.<br/> |
+| símbolo | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | O símbolo a ser usado para referenciar os mapeamentos em seu aplicativo. O [**compilador de mensagem (MC.exe)**](message-compiler--mc-exe-.md) usa o símbolo para criar uma constante para o mapa no arquivo de header que o compilador gera. Se você não especificar um símbolo, o compilador gerará um para você.<br/> |
 
 
 
@@ -69,8 +69,8 @@ Define uma lista de mapeamentos de nome/valor entre valores de bits e valores de
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

@@ -1,52 +1,52 @@
 ---
-title: Recuperando o status do RIP
-description: Recuperando o status do RIP
+title: Recuperando o status de resserção
+description: Recuperando o status de resserção
 ms.assetid: 9907bfdd-eae7-4ca2-b488-5a6ad11416f5
 keywords:
-- Windows Media Player, CD de CDs
-- Modelo de objeto do Windows Media Player, cópia de CD
-- modelo de objeto, cópia de CD
-- Controle ActiveX do Windows Media Player, cópia de CD
-- Controle ActiveX, cópia de CD
-- Controle ActiveX móvel do Windows Media Player, cópia de CD
-- Windows Media Player Mobile, CD-CDs
-- CD de CDs, recuperando o status do RIP
-- copiando CDs, recuperando o status do RIP
+- Windows Media Player, CD
+- Windows Media Player modelo de objeto, CD
+- modelo de objeto, CD
+- Windows Media Player ActiveX controle,CD
+- ActiveX controle,CD
+- Windows Media Player Controle ActiveX dispositivo móvel, CD
+- Windows Media Player Móvel, CD
+- Cd , recuperando o status do 1000001
+- CDs de 1000001, recuperando o status de 1000001
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3be1fce1a46f9cc2d8477cabcc12a3a1b5bd159d
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: a3210fa9e0db5f9260989d7bebb3650770cec7626892bc20546a6b602fb98955
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104007152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118570187"
 ---
-# <a name="retrieving-the-rip-status"></a>Recuperando o status do RIP
+# <a name="retrieving-the-rip-status"></a>Recuperando o status de resserção
 
-Você pode monitorar o progresso da operação de cópia de CDs chamando periodicamente [IWMPCdromRip:: get \_ ripProgress](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromrip-get_ripprogress). Esse método recupera um valor de progresso para toda a operação de cópia de CDs. O valor recuperado é um número que representa a porcentagem de cópia concluída, de 0 a 100.
+Você pode monitorar o progresso da operação de redução chamando periodicamente [IWMPCdromRip::getripProgress \_ ](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromrip-get_ripprogress). Esse método recupera um valor de progresso para toda a operação de responsabilidade. O valor recuperado é um número que representa o percentual de conclusão da recuperação, de 0 a 100.
 
-O valor de progresso representa a porcentagem completa de todo o processo de cópia de CDs. Para determinar o progresso de uma faixa específica, use [IWMPMedia:: getItemInfo](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmedia-getiteminfo) com "RipProgress" como o nome do atributo. Para determinar o índice da faixa que está sendo copiada no momento, chame **IWMPPlaylist:: getItemInfo** com "CurrentRipTrackIndex" como o nome do atributo.
+O valor de progresso representa o percentual concluído de todo o processo de responsabilidade. Para determinar o progresso de uma faixa específica, use [IWMPMedia::getItemInfo](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmedia-getiteminfo) com "RipProgress" como o nome do atributo. Para determinar o índice da faixa que está sendo editada no momento, chame **IWMPPlaylist::getItemInfo** com "CurrentRipTrackIndex" como o nome do atributo.
 
-Você pode monitorar o estado da operação de cópia de CDs chamando periodicamente [IWMPCdromRip:: get \_ ripState](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromrip-get_ripstate). Esse método recupera um valor de enumeração [WMPRipState](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpripstate) que indica se a operação está em andamento ou foi interrompida. Você também pode monitorar o estado da operação de cópia de CDs manipulando o evento [IWMPEvents3:: CdromRipStateChange](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents3-cdromripstatechange) . (Consulte [manipulação de eventos em C++](handling-events-in-c.md).) Tenha cuidado para comparar o ponteiro **IWMPCdromRip** (fornecido pelo evento) com o ponteiro que representa a operação de cópia, a fim de garantir que o evento foi gerado pela operação.
+Você pode monitorar o estado da operação de resserção chamando [periodicamente IWMPCdromRip::getstate \_ ](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromrip-get_ripstate). Esse método recupera um [valor de enumeração WMPRipState](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpripstate) que indica se a operação está em andamento ou interrompida. Você também pode monitorar o estado da operação de manipulação manipulando o evento [IWMPEvents3::CdromRipStateChange.](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpevents3-cdromripstatechange) (Consulte [Manipulando eventos em C++.)](handling-events-in-c.md) Tenha cuidado ao comparar o ponteiro **IWMPCdromRip** (fornecido pelo evento) com o ponteiro que representa a operação de resserção, para garantir que o evento tenha sido gerado pela operação.
 
-O código de exemplo a seguir mostra como usar essas funções para recuperar o status de uma operação de cópia de CDs.
+O código de exemplo a seguir mostra como usar essas funções para recuperar o status de uma operação de ressarção.
 
-Os seguintes controles de diálogo são definidos para o exemplo de código.
+Os controles de caixa de diálogo a seguir são definidos para o exemplo de código.
 
 
 
-| ID do controle                   | Description                                                                                                        |
+| ID do controle                   | Descrição                                                                                                        |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| \_faixa atual do IDC \_          | Texto estático que representa o índice da faixa que está sendo copiada no momento.                                         |
-| texto de progresso da IDC \_ Track \_ \_   | Texto estático que representa o progresso da faixa atualmente sendo copiada como uma porcentagem.                      |
-| \_faixa de progresso da IDC \_         | Barra de progresso com intervalo de 0 a 100 que representa o progresso da faixa que está sendo copiada no momento como uma porcentagem. |
-| \_texto de \_ progresso \_ geral da IDC | Texto estático que representa o progresso do processo total de cópia de música como uma porcentagem.                             |
-| \_progresso \_ geral da IDC       | Barra de progresso com intervalo de 0 a 100 que representa o progresso do processo total de cópia de música como uma porcentagem.        |
-| Estado do IDC \_ RIP \_              | Texto estático que exibe a operação que está sendo executada no momento ("copiando", "parado" ou "desconhecido")             |
+| IDC \_ CURRENT \_ TRACK          | Texto estático que representa o índice da faixa que está sendo desajustada no momento.                                         |
+| IDC \_ TRACK \_ PROGRESS \_ TEXT   | Texto estático que representa o progresso da faixa que está sendo ressada como um percentual.                      |
+| IDC \_ PROGRESS \_ TRACK         | Barra de progresso com intervalo de 0 a 100 que representa o progresso da faixa que está sendo torcionada atualmente como um percentual. |
+| TEXTO DE PROGRESSO \_ \_ GERAL DO IDC \_ | Texto estático que representa o progresso do processo total de ressarção como um percentual.                             |
+| PROGRESSO GERAL DO IDC \_ \_       | Barra de progresso com intervalo de 0 a 100 que representa o progresso do processo total de ressarção como um percentual.        |
+| ESTADO \_ DE IDC CID \_              | Texto estático que exibe a operação que está sendo executada no momento ("Operação", "Parado" ou "Desconhecido")             |
 
 
 
- 
+ 
 
 
 ```C++
@@ -155,21 +155,21 @@ HRESULT CMainDlg::UpdateStatus (void)
 
 <dl> <dt>
 
-[**Copiando um CD**](ripping-a-cd.md)
+[**Ressarça um CD**](ripping-a-cd.md)
 </dt> <dt>
 
 [**Recuperar a interface de extração**](retrieving-the-ripping-interface.md)
 </dt> <dt>
 
-[**Iniciando o processo de RIP**](starting-the-rip-process.md)
+[**Iniciando o processo de ressarção**](starting-the-rip-process.md)
 </dt> <dt>
 
-[**Selecionando itens para copiar**](selecting-items-for-ripping.md)
+[**Selecionando itens para Busca**](selecting-items-for-ripping.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

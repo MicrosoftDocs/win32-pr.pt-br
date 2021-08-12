@@ -1,6 +1,6 @@
 ---
-title: NEXTBUTTON
-description: Este é um botão predefinido com os valores padrão a seguir. | NEXTBUTTON
+title: Nextbutton
+description: Esse é um BUTTON predefinido com os seguintes valores padrão. | Nextbutton
 ms.assetid: 0750966c-cc4c-4792-b350-1502788cd66b
 keywords:
 - NEXTBUTTON Windows Media Player
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 92bbfef52dd5cd0d46a61b017fd90f82133a3b91
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 104763690584576c04aa7be53fd6013e6dfae8a02e5830cf4703d9cbd694e725
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105785009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118573810"
 ---
-# <a name="nextbutton"></a>NEXTBUTTON
+# <a name="nextbutton"></a>Nextbutton
 
-Este é um **botão** predefinido com os valores padrão a seguir.
+Esse é um **BUTTON predefinido** com os seguintes valores padrão.
 
 ``` syntax
 onclick="jscript:player.controls.next()"
@@ -33,7 +33,7 @@ enabled="wmpenabled:player.controls.next"
 
 ## <a name="remarks"></a>Comentários
 
-Todas as propriedades desse **botão** podem ser substituídas especificando-as explicitamente.
+Todas as propriedades desse **BUTTON** podem ser substituídos especificando-as explicitamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ Todas as propriedades desse **botão** podem ser substituídas especificando-as 
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 

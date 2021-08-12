@@ -1,24 +1,24 @@
 ---
-title: Atributo Layout-Flow de VML
-description: Atributo Layout-Flow de VML
+title: Atributo de Layout-Flow VML
+description: Atributo de Layout-Flow VML
 ms.assetid: 63b06dcb-5179-4046-9e02-4441d0d7bcd6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e437e31043afcf7fba4967076a861c9bca86477
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bde6937a3f93ff2a462cfc5950c13b7f3910573c54d82449ef705bca4afbb068
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118599350"
 ---
-# <a name="vml-layout-flow-attribute"></a>Atributo Layout-Flow de VML
+# <a name="vml-layout-flow-attribute"></a>Atributo de Layout-Flow VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Determina o fluxo do layout de texto em uma caixa de texto. Leitura/gravação. **Cadeia de caracteres**.
 
@@ -28,7 +28,7 @@ Determina o fluxo do layout de texto em uma caixa de texto. Leitura/gravação. 
 
 **Sintaxe de marca**
 
-<v: *Element* estilo = "layout-Flow: *expressão* " >
+<v: *element* style="layout-flow: *expression* ">
 
 **Comentários**
 
@@ -39,19 +39,19 @@ Os valores são:
 | Valor                  | Descrição                                 |
 |------------------------|---------------------------------------------|
 | horizontal             | O texto é exibido horizontalmente. Padrão.    |
-| vertical               | O texto é exibido verticalmente.               |
-| vertical-Ideograma   | O texto ideográficar é exibido verticalmente.   |
-| Ideograma horizontal | O texto ideográficar é exibido horizontalmente. |
+| Vertical               | O texto é exibido verticalmente.               |
+| vertical-ideographic   | O texto ideográfico é exibido verticalmente.   |
+| horizontal-ideographic | O texto ideográfico é exibido horizontalmente. |
 
 
 
- 
+ 
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
-O fluxo de texto na TextBox fluirá verticalmente.
+O fluxo de texto na caixa de texto fluirá verticalmente.
 
 
 ```HTML
@@ -66,6 +66,6 @@ O fluxo de texto na TextBox fluirá verticalmente.
 
 
 
- 
+ 
 
- 
+ 

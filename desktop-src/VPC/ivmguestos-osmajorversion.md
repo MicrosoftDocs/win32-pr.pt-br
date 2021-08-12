@@ -1,11 +1,11 @@
 ---
-title: Propriedade IVMGuestOS OSMajorVersion (VPCCOMInterfaces. h)
+title: Propriedade OSMajorVersion de IVMGuestOS (VPCCOMInterfaces.h)
 description: A versão principal do sistema operacional convidado em execução na máquina virtual.
 ms.assetid: c9be8b4e-15fe-402d-8396-30be6b065b73
 keywords:
-- Propriedade OSMajorVersion Virtual PC
-- Propriedade OSMajorVersion Virtual PC, interface IVMGuestOS
-- IVMGuestOS interface virtual PC, Propriedade OSMajorVersion
+- Propriedade OSMajorVersion Pc Virtual
+- Propriedade OSMajorVersion Pc Virtual , interface IVMGuestOS
+- INTERFACE IVMGuestOS PC Virtual, propriedade OSMajorVersion
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2f76e3105c4917141c8a5304082d55f383ee947
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dfabbf082893897066e05ef5b83a5598a91ee2d62eac5eb89c36543b26a76222
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118594032"
 ---
-# <a name="ivmguestososmajorversion-property"></a>Propriedade IVMGuestOS:: OSMajorVersion
+# <a name="ivmguestososmajorversion-property"></a>Propriedade IVMGuestOS::OSMajorVersion
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Recupera a versão principal do sistema operacional convidado em execução na máquina virtual.
 
@@ -54,10 +54,10 @@ A versão principal.
 | Nome/valor                                                                                                                                                                       | Significado                                                         |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                                          | A operação foi bem-sucedida.<br/>                        |
-| <dl> <dt>E \_ </dt> <dt>0X80004003</dt> de ponteiro </dl>                            | O parâmetro é **NULL**.<br/>                           |
-| <dl> <dt>VM \_ E a \_ VM \_ não \_ está executando</dt> <dt>0xA0040206</dt> </dl>               | A VM não está em execução.<br/>                               |
-| <dl> <dt>VM \_ \_Recurso de inclusões E \_ \_ não \_ DISP</dt> . <dt>0xA0040505</dt> </dl> | Os componentes de integração não estão instalados nesta VM.<br/> |
-| <dl> <dt>DISP \_ E \_ </dt> <dt>0x80020009</dt> de exceção </dl>                    | Ocorreu um erro inesperado.<br/>                    |
+| <dl> <dt>E \_ PONTEIRO</dt> <dt>0x80004003</dt> </dl>                            | O parâmetro é **NULL.**<br/>                           |
+| <dl> <dt>VM \_ E \_ VM \_ NÃO \_ EXECUTANDO</dt> <dt>0XA0040206</dt> </dl>               | A VM não está em execução.<br/>                               |
+| <dl> <dt>VM \_ O \_ RECURSO DE \_ ADIÇÕES E NÃO \_ \_ ESTÁ</dt> <dt>0XA0040505</dt> </dl> | Os componentes de integração não estão instalados nessa VM.<br/> |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl>                    | Ocorreu um erro inesperado.<br/>                    |
 
 
 
@@ -67,12 +67,12 @@ A versão principal.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMGuestOS é definido como 99fea0db-4880-499a-B6D8-73dff9bc91be<br/>                 |
+| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMGuestOS é definido como \_ 99fea0db-4880-499a-b6d8-73dff9bc91be<br/>                 |
 
 
 

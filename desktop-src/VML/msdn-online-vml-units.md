@@ -1,22 +1,22 @@
 ---
 title: Unidades VML
-description: Este artigo descreve as unidades da VML. A VML é um recurso que foi preterido a partir do Windows Internet Explorer 9.
+description: Este artigo descreve as unidades da VML. a VML é um recurso que foi preterido a partir do Windows Internet Explorer 9.
 ms.assetid: f95e65ad-d92a-460f-baeb-30fd8a35f84e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 184d577052412bde4a97148b51cab12a87b3672e
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: c5c510bacd2081fb5a051637b6b577fc9415662737d384d10d7c3dd73348c694
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118597377"
 ---
 # <a name="vml-units"></a>Unidades VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
 
  
 

@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentExistingLogFileIsNotContiguousException'
+description: 'Saiba mais sobre: Métodos EsentExistingLogFileIsNotContiguousException'
 title: 'Métodos EsentExistingLogFileIsNotContiguousException '
 TOCTitle: EsentExistingLogFileIsNotContiguousException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentExistingLogFileIsNotContiguousException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101656
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 06380f097bc22226437c0647d26a7dde6f9b32b6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 866269c6d0ec6c56e6aba0aac0a17b84df7afaa8ec6a39e6e7c0d64995248ed6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104565400"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118269782"
 ---
 # <a name="esentexistinglogfileisnotcontiguousexception-methods"></a>Métodos EsentExistingLogFileIsNotContiguousException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentExistingLogFileIsNotContiguousException](./esentexistinglogfileisnotcontiguousexception-class.md) expõe os membros a seguir.
+O [tipo EsentExistingLogFileIsNotContiguousException](./esentexistinglogfileisnotcontiguousexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentExistingLogFileIsNotContiguousException](./esentexistinglogfileisno
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentExistingLogFileIsNotContiguousException](./esentexistinglogfileisno
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentExistingLogFileIsNotContiguousException](./esentexistinglogfileisnotcontiguousexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

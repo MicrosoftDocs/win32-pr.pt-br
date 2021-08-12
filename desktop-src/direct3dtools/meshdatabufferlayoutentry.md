@@ -1,5 +1,5 @@
 ---
-description: Representa informações sobre uma única entrada no layout de buffer de uma malha.
+description: Representa informações sobre uma única entrada no layout do buffer de uma malha.
 MS-HAID: vspixengine.MeshDataBufferLayoutEntry
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: bce67b8316e9eb9b96e641e2a90260fab6bfdaad
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 44cc67402c69b690ba9070fa51bf8d26f316faa7d10ac991226db2c05b6d6a6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103646168"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118282265"
 ---
 # <a name="span-idvspixenginemeshdatabufferlayoutentryspanmeshdatabufferlayoutentry-structure"></a><span id="vspixengine.meshdatabufferlayoutentry"></span>Estrutura MeshDataBufferLayoutEntry
 
-Representa informações sobre uma única entrada no layout de buffer de uma malha.
+Representa informações sobre uma única entrada no layout do buffer de uma malha.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,21 +37,21 @@ Representa informações sobre uma única entrada no layout de buffer de uma mal
 
 ## <a name="members"></a>Membros
 
-**pName**  
+**Pname**  
 Uma cadeia de caracteres COM que contém o nome da entrada.
 
 **numComponents**  
-O número de componentes homogêneos (valores) que compõem essa entrada.
+O número de componentes homogêneos (valores) que comem essa entrada.
 
-**isposition**  
+**isPosition**  
 true se a entrada for uma posição; caso contrário, false.
 
 **format**  
-O formato de dados da entrada (registro). Para obter mais informações, consulte a \_ enumeração de formato de registro.
+O formato de dados da entrada (registrar). Para obter mais informações, consulte a enumeração REGISTER \_ FORMAT.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

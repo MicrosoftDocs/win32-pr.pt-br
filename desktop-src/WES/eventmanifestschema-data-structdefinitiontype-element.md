@@ -3,7 +3,7 @@ title: Elemento data (StructDefinitionType)
 description: Define um item de dados que você deseja incluir na estrutura.
 ms.assetid: 3b71afb2-412b-4992-ac30-974393aa9194
 keywords:
-- Log de elemento de dados
+- elemento data EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fd2fbffb39fe795e15a8cb06641132ee880b6867
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a9b0e0206d0b8f2e5eeec65dc8a7f7bb71a7e757d101d0941dd2500ca64a4750
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118589863"
 ---
 # <a name="data-structdefinitiontype-element"></a>Elemento data (StructDefinitionType)
 
@@ -30,7 +30,7 @@ Define um item de dados que você deseja incluir na estrutura.
  />
 ```
 
-O elemento de **dados** é definido pelo tipo complexo [**StructDefinitionType**](eventmanifestschema-structdefinitiontype-complextype.md) .
+O **elemento** de dados é definido pelo tipo complexo [**StructDefinitionType.**](eventmanifestschema-structdefinitiontype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento de **dados** é definido pelo tipo complexo [**StructDefinitionType**
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

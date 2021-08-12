@@ -4,18 +4,18 @@ description: Você pode consultar eventos de um canal ou de um arquivo de log.
 ms.assetid: 929bedbf-6dce-428e-b2c0-de9dcfe4531b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6fa69f9b1308cd7ebbc4e4510692bb25ab031ec
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 981e4a8c39daebbce641c79e7d26331b9b36845d3c71fd1902ea667ca85c5dbb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105781476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118587797"
 ---
 # <a name="querying-for-events"></a>Consultando eventos
 
-Você pode consultar eventos de um canal ou de um arquivo de log. O canal ou arquivo de log pode existir no computador local ou em um computador remoto. Para especificar os eventos que você deseja obter do canal ou arquivo de log, use uma consulta XPath ou uma consulta XML de estrutura. Para obter detalhes sobre como escrever a consulta, consulte [consumindo eventos](consuming-events.md).
+Você pode consultar eventos de um canal ou de um arquivo de log. O canal ou o arquivo de log pode existir no computador local ou em um computador remoto. Para especificar os eventos que você deseja obter do canal ou arquivo de log, use uma consulta XPath ou uma consulta XML de estrutura. Para obter detalhes sobre como escrever a consulta, consulte [Consumindo eventos](consuming-events.md).
 
-Para consultar eventos, chame a função [**EvtQuery**](/windows/desktop/api/WinEvt/nf-winevt-evtquery) . Você pode especificar a ordem na qual os eventos são retornados (o mais antigo para o mais recente (o padrão) ou mais recente para o mais antigo) e se devem tolerar expressões XPath malformadas na consulta (para obter detalhes sobre como a função ignora as expressões malformadas, consulte o sinalizador [**EvtQueryTolerateQueryErrors**](/windows/desktop/api/WinEvt/ne-winevt-evt_query_flags) ).
+Para consultar eventos, chame a [**função EvtQuery.**](/windows/desktop/api/WinEvt/nf-winevt-evtquery) Você pode especificar a ordem na qual os eventos são retornados (mais antigo para o mais recente (o padrão) ou mais recente para o mais antigo) e se deve tolerar expressões XPath malformadas na consulta (para obter detalhes sobre como a função ignora as expressões malformadas, consulte o sinalizador [**EvtQueryTolerateQueryErrors).**](/windows/desktop/api/WinEvt/ne-winevt-evt_query_flags)
 
 O exemplo a seguir mostra como consultar eventos de um canal usando uma expressão XPath.
 
@@ -125,9 +125,9 @@ cleanup:
 
 
 
-Se você estiver usando uma consulta XML estruturada e passar o sinalizador EvtQueryTolerateQueryErrors para [**EvtQuery**](/windows/desktop/api/WinEvt/nf-winevt-evtquery), a função terá êxito mesmo que uma ou mais das consultas na consulta estruturada possam ter falhado na verdade. Para determinar quais consultas na consulta estruturada tiveram êxito ou falharam, chame a função [**EvtGetQueryInfo**](/windows/desktop/api/WinEvt/nf-winevt-evtgetqueryinfo) . Se você não passar o sinalizador EvtQueryTolerateQueryErrors, a função **EvtQuery** falhará com o primeiro erro encontrado na consulta. Se a consulta falhar com o erro \_ EVT de \_ consulta inválida \_ , chame a função [**EvtGetExtendedStatus**](/windows/desktop/api/WinEvt/nf-winevt-evtgetextendedstatus) para obter uma cadeia de caracteres de mensagem que descreve o erro XPath.
+Se você estiver usando uma consulta XML estruturada e passar o sinalizador EvtQueryTolerateQueryErrors para [**EvtQuery**](/windows/desktop/api/WinEvt/nf-winevt-evtquery), a função terá êxito mesmo que uma ou mais das consultas na consulta estruturada possam ter realmente falhado. Para determinar quais consultas na consulta estruturada tiveram êxito ou falharam, chame a [**função EvtGetQueryInfo.**](/windows/desktop/api/WinEvt/nf-winevt-evtgetqueryinfo) Se você não passar o sinalizador EvtQueryTolerateQueryErrors, a **função EvtQuery** falhará com o primeiro erro encontrado na consulta. Se a consulta falhar com ERROR \_ EVT INVALID QUERY, chame a função \_ \_ [**EvtGetExtendedStatus**](/windows/desktop/api/WinEvt/nf-winevt-evtgetextendedstatus) para obter uma cadeia de caracteres de mensagem que descreve o erro XPath.
 
-O exemplo a seguir mostra como determinar o êxito ou a falha de cada consulta em uma consulta estruturada ao passar o sinalizador EvtQueryTolerateQueryErrors para [**EvtQuery**](/windows/desktop/api/WinEvt/nf-winevt-evtquery).
+O exemplo a seguir mostra como determinar o sucesso ou a falha de cada consulta em uma consulta estruturada ao passar o sinalizador EvtQueryTolerateQueryErrors para [**EvtQuery**](/windows/desktop/api/WinEvt/nf-winevt-evtquery).
 
 
 ```C++
@@ -210,7 +210,7 @@ cleanup:
 
 ## <a name="reading-events-from-the-result-set"></a>Lendo eventos do conjunto de resultados
 
-Para enumerar os eventos no conjunto de resultados, chame a função [**EvtNext**](/windows/desktop/api/WinEvt/nf-winevt-evtnext) em um loop até que a função retorne **false** e a função [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) retorne \_ um erro sem \_ mais \_ itens. Os eventos no conjunto de resultados não são estáticos; novos eventos que são gravados no canal serão incluídos no conjunto de resultados até o erro \_ nenhum \_ outro \_ item for definido. Para melhorar o desempenho, busque eventos do conjunto de resultados em lotes (levando em conta o tamanho de cada evento ao determinar o número de eventos a serem obtidos).
+Para enumerar os eventos no conjunto de resultados, chame a função [**EvtNext**](/windows/desktop/api/WinEvt/nf-winevt-evtnext) em um loop até que a função retorne **FALSE** e a [**função GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) retorne ERROR \_ NO MORE \_ \_ ITEMS. Os eventos no conjunto de resultados não são estáticos; novos eventos gravados no canal serão incluídos no conjunto de resultados até que ERROR \_ NO MORE ITEMS seja \_ \_ definido. Para melhorar o desempenho, busque eventos do conjunto de resultados em lotes (levando em conta o tamanho de cada evento ao determinar o número de eventos a buscar).
 
 O exemplo a seguir mostra como enumerar os eventos em um conjunto de resultados.
 
@@ -266,10 +266,10 @@ cleanup:
 
 
 
-Para obter detalhes sobre como renderizar os eventos obtidos do conjunto de resultados, consulte [renderizando eventos](rendering-events.md).
+Para obter detalhes sobre como renderizar os eventos que você obter do conjunto de resultados, consulte [Eventos de renderização](rendering-events.md).
 
-Se você quiser consultar eventos de onde parou, crie um indicador do último evento que você leu e use-o na próxima vez em que executar a consulta. Para obter detalhes, consulte [eventos de indicador](bookmarking-events.md).
+Se você quiser consultar eventos de onde paramos, crie um indicador do último evento que você leu e use-o na próxima vez que executar a consulta. Para obter detalhes, consulte [Eventos de indicadores](bookmarking-events.md).
 
- 
+ 
 
- 
+ 

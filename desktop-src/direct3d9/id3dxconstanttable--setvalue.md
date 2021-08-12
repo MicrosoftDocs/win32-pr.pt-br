@@ -1,7 +1,7 @@
 ---
-description: Define o conteúdo do buffer para a tabela de constantes.
+description: Define o conteúdo do buffer para a tabela constante.
 ms.assetid: 6058795c-fa32-42aa-9a36-af0b7f6eed1d
-title: 'Método ID3DXConstantTable:: SetValue (D3DX9Shader. h)'
+title: Método ID3DXConstantTable::SetValue (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e5e02c43e0d0ad84615650bc0b1c0d5fd5654e38
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 630d63e8cd70f3743940bc4b71b1312fa777e7cda868fd20f546793b816e6f5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105765227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118296076"
 ---
-# <a name="id3dxconstanttablesetvalue-method"></a>Método ID3DXConstantTable:: SetValue
+# <a name="id3dxconstanttablesetvalue-method"></a>Método ID3DXConstantTable::SetValue
 
-Define o conteúdo do buffer para a tabela de constantes.
+Define o conteúdo do buffer para a tabela constante.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,16 +43,16 @@ HRESULT SetValue(
 
 <dl> <dt>
 
-*pDevice* \[ no\]
+*pDevice* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Ponteiro para uma interface [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , representando o dispositivo associado à tabela constante.
+Ponteiro para uma interface [**IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) que representa o dispositivo associado à tabela constante.
 
 </dd> <dt>
 
-*hConstant* \[ no\]
+*hConstant* \[ Em\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
@@ -61,7 +61,7 @@ Identificador exclusivo para uma constante. Consulte [D3DXHANDLE](dx9-graphics-r
 
 </dd> <dt>
 
-*pData* \[ no\]
+*pData* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)**
@@ -70,10 +70,10 @@ Buffer que contém dados.
 
 </dd> <dt>
 
-*Bytes* \[ no\]
+*Bytes* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Tamanho do buffer, em bytes.
 
@@ -83,7 +83,7 @@ Tamanho do buffer, em bytes.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
+Se o método for bem-sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,8 +91,8 @@ Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método 
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| parâmetro<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

@@ -3,8 +3,8 @@ title: Imprimir folha de propriedades
 description: A folha de propriedades Imprimir é uma interface de usuário padrão que permite ao usuário especificar as propriedades de um trabalho de impressão específico.
 ms.assetid: b52b71cc-a583-4a21-8a53-501ab442e6f8
 keywords:
-- Interface do usuário do Windows, entrada do usuário
-- Interface do usuário do Windows, biblioteca de caixa de diálogo comum
+- Windows Interface do usuário, entrada do usuário
+- Windows Interface do usuário, biblioteca de caixa de diálogo comum
 - entrada do usuário, biblioteca de caixa de diálogo comum
 - capturando entrada do usuário, biblioteca de caixa de diálogo comum
 - Biblioteca de caixa de diálogo comum
@@ -15,16 +15,16 @@ keywords:
 - caixas de diálogo, imprimir folha de propriedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20905f76af290b3978bec828a382604147297998
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: cc54bc8065ada207702755e8fc0a1586620f660db9f3acf2a67e32b56e393143
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104008334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118280500"
 ---
 # <a name="print-property-sheet"></a>Imprimir folha de propriedades
 
-A folha de propriedades **Imprimir** é uma interface de usuário padrão que permite ao usuário especificar as propriedades de um trabalho de impressão específico. A folha de propriedades é composta por um conjunto de páginas de propriedades que varia de acordo com a impressora ou o aplicativo. Para um subconjunto de páginas de propriedades padrão do Windows, algumas impressoras podem adicionar páginas de propriedades específicas do driver e alguns aplicativos podem adicionar páginas de propriedades específicas do aplicativo.
+A folha de propriedades **Imprimir** é uma interface de usuário padrão que permite ao usuário especificar as propriedades de um trabalho de impressão específico. A folha de propriedades é composta por um conjunto de páginas de propriedades que varia de acordo com a impressora ou o aplicativo. para um subconjunto de páginas de propriedades de Windows padrão, algumas impressoras podem adicionar páginas de propriedades específicas do driver e alguns aplicativos podem adicionar páginas de propriedades específicas do aplicativo.
 
 Para criar e exibir uma folha de propriedades de **impressão** , inicialize uma estrutura [**PRINTDLGEX**](/windows/win32/api/commdlg/ns-commdlg-printdlgexa) e passe a estrutura para a função [**PRINTDLGEX**](/previous-versions/windows/desktop/legacy/ms646942(v=vs.85)) .
 
@@ -90,6 +90,6 @@ O objeto de retorno de chamada deve implementar a interface [**IPrintDialogCallb
 
 O objeto de retorno de chamada também deve implementar a interface [**IObjectWithSite**](/windows/win32/api/ocidl/nn-ocidl-iobjectwithsite) . A função [**PRINTDLGEX**](/previous-versions/windows/desktop/legacy/ms646942(v=vs.85)) chama o método para passar um ponteiro para uma interface [**IPrintDialogServices**](/windows/win32/api/commdlg/nn-commdlg-iprintdialogservices) para um aplicativo. Os métodos [**IPrintDialogCallback**](/windows/win32/api/commdlg/nn-commdlg-iprintdialogcallback) podem usar a interface **IPrintDialogServices** para recuperar informações sobre a impressora selecionada no momento. A interface **IPrintDialogServices** também é útil para aplicativos que criam páginas adicionais para seguir a página **geral** da folha de propriedades **Imprimir** . Os procedimentos da caixa de diálogo para as páginas adicionais podem chamar os métodos **IPrintDialogServices** .
 
- 
+ 
 
- 
+ 

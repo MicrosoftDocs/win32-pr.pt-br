@@ -4,21 +4,21 @@ description: Atributo de deslocamento (sombra) (VML)
 ms.assetid: bb5810cd-bd9a-4888-a0ce-8de732215c80
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a61daaf3b311a87a3e3bcf064ceffc491e1134fe
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a0683e9536e10bed141ecca56b4335d6221c5ced7e3d26220908aa388b453843
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118596901"
 ---
 # <a name="offset-attribute-shadowvml"></a>Atributo de deslocamento (sombra) (VML)
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Define até que distância a sombra ultrapassa a forma. Leitura/gravação. **VgVector2D**.
 
@@ -59,6 +59,6 @@ A forma tem uma sombra com um deslocamento de 5 pontos para baixo e 10 pontos à
 
 
 
- 
+ 
 
- 
+ 

@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. allowItemEditing
-description: O atributo allowItemEditing especifica ou recupera um valor que indica se os itens em uma lista de reprodução terão suporte para edição in-loco.
+title: PLAYLIST.allowItemEditing
+description: O atributo allowItemEditing especifica ou recupera um valor que indica se os itens em uma playlist darão suporte à edição in-loque.
 ms.assetid: fc6120d9-0424-4c42-8aa9-ba4bbbd580fe
 keywords:
-- PLAYLIST. allowItemEditing Windows Media Player
+- PLAYLIST.allowItemEditing Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8949b02a9a0be61ea3dbf2e54fa01b2bb9521e19
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 53a3f07c3212cddeb45ff4ba4c5c6c268483025e782b41d79c8cc51765aa6d00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118571486"
 ---
-# <a name="playlistallowitemediting"></a>PLAYLIST. allowItemEditing
+# <a name="playlistallowitemediting"></a>PLAYLIST.allowItemEditing
 
-O atributo **allowItemEditing** especifica ou recupera um valor que indica se os itens em uma lista de reprodução terão suporte para edição in-loco.
+O **atributo allowItemEditing** especifica ou recupera um valor que indica se os itens em uma playlist darão suporte à edição in-loque.
 
 ``` syntax
         elementID.allowItemEditing
@@ -29,14 +29,14 @@ O atributo **allowItemEditing** especifica ou recupera um valor que indica se os
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **booliano** de leitura/gravação.
+Esse atributo é um booliana **de leitura/gravação.**
 
 
 
 | Valor | Descrição                           |
 |-------|---------------------------------------|
-| true  | Padrão. A edição in-loco é permitida. |
-| false | A edição in-loco não é permitida.      |
+| true  | Padrão. A edição in-place é permitida. |
+| false | A edição in-place não é permitida.      |
 
 
 
@@ -48,7 +48,7 @@ Esse atributo é um **booliano** de leitura/gravação.
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 

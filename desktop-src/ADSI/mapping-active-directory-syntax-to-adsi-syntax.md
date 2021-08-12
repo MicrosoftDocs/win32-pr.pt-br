@@ -7,12 +7,12 @@ keywords:
 - atributos ADSI, mapeando Active Directory sintaxe para sintaxe ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e6ba332a39a5d2452925f1a8f1cc8c8ca766ca10
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d04682a1e299e14c55c520310bff697ea6664d4dabe71380f7a146fd2dfff053
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105754417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118179274"
 ---
 # <a name="mapping-active-directory-syntax-to-adsi-syntax"></a>Mapeando sintaxe de Active Directory para sintaxe ADSI
 
@@ -29,7 +29,7 @@ A tabela a seguir mapeia as sintaxes de Active Directory para suas sintaxes ADSI
 | 2.5.5.5<br/>  | Imprimir cadeia de caracteres de caso<br/>             | Cadeia de caracteres imprimível<br/>                                         |
 | 2.5.5.6<br/>  | Cadeia de caracteres numérica<br/>                | Cadeia de caracteres numérica<br/>                                           |
 | 2.5.5.7<br/>  | **Ou** Nome DNWithOctetString<br/> | Sem suporte<br/>                                            |
-| 2.5.5.8<br/>  | Booliano<br/>                       | Booliano<br/>                                                  |
+| 2.5.5.8<br/>  | Booliano<br/>                       | Boolean<br/>                                                  |
 | 2.5.5.9<br/>  | Integer<br/>                       | Integer<br/>                                                  |
 | 2.5.5.10<br/> | Cadeia de caracteres de octeto<br/>                  | Cadeia de caracteres de octeto<br/>                                             |
 | 2.5.5.11<br/> | Hora<br/>                          | Hora UTC<br/>                                                 |

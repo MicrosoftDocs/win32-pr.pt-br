@@ -1,24 +1,24 @@
 ---
-title: Atributo LightPosition de VML
-description: Atributo LightPosition de VML
+title: Atributo LightPosition do VML
+description: Atributo LightPosition do VML
 ms.assetid: 2ac3825d-319e-4761-905d-eb8127c4d4cc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c7b1e034b8755da78e4a34cf72299380ca28af4
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 69fb361064e939e9438a917d9be37360cd446424e818e14bbdb43e521f46b09b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105811403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118598478"
 ---
-# <a name="vml-lightposition-attribute"></a>Atributo LightPosition de VML
+# <a name="vml-lightposition-attribute"></a>Atributo LightPosition do VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Especifica a posição da luz primária em uma cena. Leitura/gravação. **VgVector3D**..
 
@@ -28,20 +28,20 @@ Especifica a posição da luz primária em uma cena. Leitura/gravação. **VgVec
 
 **Sintaxe de marca**
 
-<o: *Element* lightposition = " *expressão* " >
+<o: *elemento* lightposition=" *expressão* ">
 
 **Sintaxe do script**
 
-*Element* . lightposition = "*expressão*"
+*elemento* .lightposition="*expression*"
 
-*expressão* = de *elemento*. lightposition
+*expressão* = *elemento*.lightposition
 
 **Comentários**
 
-Use esse valor para mover a fonte de luz para uma extrusão. Posições diferentes aumentarão ou escurecerão cada face da extrusão. O valor padrão é 50000, 0, 10000.
+Use esse valor para mover a fonte de luz para umaion. Posições diferentes vão diminuir ou escurçar cada face daion. O valor padrão é 50000,0,10000.
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 
