@@ -1,38 +1,38 @@
 ---
-title: Programação do SQL
-description: O NPS dá suporte ao log de SQL Server.
+title: SQL Programação
+description: o NPS dá suporte ao log de SQL Server.
 ms.assetid: 55152f56-9ca4-4d0b-a0e9-223168dba83f
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7dcc3d68519e6e260613d2729cabdb1e9991540a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 33aab125b8e4d00e0be06206dbdd855b7768638a8dd2545e71448a0e1a0f4f8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104499072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118618526"
 ---
-# <a name="sql-programmability"></a>Programação do SQL
+# <a name="sql-programmability"></a>SQL Programação
 
 > [!Note]  
-> O IAS (serviço de autenticação da Internet) foi renomeado como NPS (servidor de políticas de rede) a partir do Windows Server 2008. O conteúdo deste tópico aplica-se ao IAS e ao NPS. Em todo o texto, o NPS é usado para fazer referência a todas as versões do serviço, incluindo as versões originalmente chamadas de IAS.
+> o IAS (serviço de autenticação da Internet) foi renomeado como NPS (servidor de políticas de rede) a partir do Windows Server 2008. O conteúdo deste tópico aplica-se ao IAS e ao NPS. Em todo o texto, o NPS é usado para fazer referência a todas as versões do serviço, incluindo as versões originalmente chamadas de IAS.
 
- 
+ 
 
-O NPS dá suporte ao log de SQL Server.
+o NPS dá suporte ao log de SQL Server.
 
 Por padrão, o registro em log está desabilitado para NPS. Para habilitá-lo, execute o snap-in do servidor de diretivas de rede (NPS. msc) ou o snap-in do serviço de autenticação da Internet (IAS. msc) e siga as instruções na página de contabilidade.
 
 ## <a name="sample-stored-procedure"></a>Exemplo de procedimento armazenado
 
 > [!Note]  
-> Um procedimento armazenado no banco de dados SQL Server que é chamado pelo NPS deve ser **um \_ evento de relatório** nomeado ou o log de SQL Server do NPS falhará.
+> um procedimento armazenado no banco de dados SQL Server que é chamado pelo NPS deve ser **um \_ evento de relatório** nomeado ou o log de SQL Server do NPS falhará.
 
- 
+ 
 
-O exemplo a seguir cria um banco de dados NPS dentro do ambiente de banco de dados SQL Server 2000 e processa os documentos XML enviados pelos servidores NPS configurados para fazer logon neste SQL Server.
+o exemplo a seguir cria um banco de dados NPS dentro do ambiente de banco de dados SQL Server 2000 e processa os documentos XML enviados pelos servidores NPS configurados para fazer logon neste SQL Server.
 
-Neste exemplo, as informações específicas de NAP, que estão disponíveis somente de servidores NPS em execução no Windows Server 2008 ou posterior, são armazenadas na \_ coluna Estado de quarentena da MS \_ . O evento de relatório de procedimento armazenado \_ recupera os valores dessa coluna do elemento XML **'./MS-Quarantine-State '**. Os valores permitidos para a \_ coluna Estado de quarentena da MS \_ são 0 (acesso completo), 1 (em quarentena) e 2 (experiência).
+neste exemplo, as informações específicas de NAP, que estão disponíveis somente de servidores NPS em execução no Windows Server 2008 ou posterior, são armazenadas na \_ coluna estado de quarentena da MS \_ . O evento de relatório de procedimento armazenado \_ recupera os valores dessa coluna do elemento XML **'./MS-Quarantine-State '**. Os valores permitidos para a \_ coluna Estado de quarentena da MS \_ são 0 (acesso completo), 1 (em quarentena) e 2 (experiência).
 
 ``` syntax
 IF EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N'NPSODBC')
@@ -403,6 +403,6 @@ GO
 [TechNet: principais conceitos para log de SQL Server do IAS](/previous-versions/windows/it-pro/windows-server-2003/cc778830(v=ws.10))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

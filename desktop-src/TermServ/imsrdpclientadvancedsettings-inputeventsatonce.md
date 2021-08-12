@@ -54,12 +54,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 999d00cb706e4fdd4cf0c9ed606c33de4a81e8d6
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 820b054a97246e81af1b21e46a0e5b272a95749c1aaabc77561e091d00677aaf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105760129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118608524"
 ---
 # <a name="imsrdpclientadvancedsettingsinputeventsatonce-property"></a>Propriedade IMsRdpClientAdvancedSettings:: InputEventsAtOnce
 
@@ -67,7 +67,7 @@ Não há suporte a esta propriedade.
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++

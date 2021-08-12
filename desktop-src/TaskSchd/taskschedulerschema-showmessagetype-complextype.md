@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8d65ed893bce63c95fffcf237d3a3a95ebb1550d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aeb2c0e1b3ac3e29502e7d998305674aaa283371be6a22324dde6d84c4330326
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118611238"
 ---
 # <a name="showmessagetype-complex-type"></a>Tipo complexo exmessagetype
 
@@ -49,7 +49,7 @@ Define os elementos que representam uma ação que mostra uma caixa de mensagem.
 
 | Elemento                                                            | Type           | Descrição                                                               |
 |--------------------------------------------------------------------|----------------|---------------------------------------------------------------------------|
-| [**Corpo**](taskschedulerschema-body-showmessagetype-element.md)   | não vazio | Especifica o texto a ser exibido no corpo da caixa de mensagem. <br/> |
+| [**Conteúdo**](taskschedulerschema-body-showmessagetype-element.md)   | não vazio | Especifica o texto a ser exibido no corpo da caixa de mensagem. <br/> |
 | [**Título**](taskschedulerschema-title-showmessagetype-element.md) | não vazio | Especifica o título da caixa de mensagem. <br/>                       |
 
 
@@ -60,8 +60,8 @@ Define os elementos que representam uma ação que mostra uma caixa de mensagem.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

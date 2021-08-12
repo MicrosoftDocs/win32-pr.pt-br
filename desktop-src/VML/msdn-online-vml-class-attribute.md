@@ -4,21 +4,21 @@ description: Atributo de classe VML
 ms.assetid: 4030b8b7-fcc9-4153-8004-81935a347a09
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94bdc723ba9be335afc43023ab89b88834c55474
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 87ada95b56430dacd09801a9aaa200c92abab064bbbb5732b369372de63c34de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917468"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118602174"
 ---
 # <a name="vml-class-attribute"></a>Atributo de classe VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Refere-se a uma definição de um estilo CSS. Leitura/gravação. **Cadeia de caracteres**.
 
@@ -28,21 +28,21 @@ Refere-se a uma definição de um estilo CSS. Leitura/gravação. **Cadeia de ca
 
 **Sintaxe de marca**
 
-<v: *Element* Class = " *expression* " >
+<v: *element* class=" *expressão* ">
 
 **Sintaxe do script**
 
-*Element* . ClassName = "*expressão*"
+*expressão element* .classname=""
 
-*expressão* = de *Element*. ClassName
+*expressão* = *elemento*.classname
 
 **Comentários**
 
-O atributo de **classe** é semelhante ao atributo de **classe** HTML padrão usado com folhas de estilo CSS.
+O **atributo** de classe é semelhante ao atributo de **classe** HTML padrão usado com folhas de estilos CSS.
 
-Observe que **ClassName** é usado em vez de **Class** para scripts. Observe também que para scripts, o **ClassName** só pode ser lido; a alteração do valor de **ClassName** não alterará a renderização da forma.
+Observe que **classname** é usado em vez da **classe** para scripts. Observe também que, para scripts, **o nome de classe** só pode ser lido; alterar o valor de **classname** não alterará a renderização da forma.
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Consulte também**
 
@@ -59,7 +59,7 @@ Uma classe para **largura** é criada com o estilo
 
 
 
-Em seguida, a largura é referenciada incluindo o estilo. Observe que a largura andheight não está definida no atributo **Style** , mas será definida pelo estilo.
+Em seguida, a largura é referenciada incluindo o estilo . Observe que width andheight não está definido no atributo **de estilo,** mas será definido pelo estilo.
 
 
 ```HTML
@@ -73,8 +73,8 @@ Em seguida, a largura é referenciada incluindo o estilo. Observe que a largura 
 
 
 
-Observe que a **classe** se aplica somente aos atributos do tipo CSS.
+Observe que **Class só** se aplica a atributos do tipo CSS.
 
- 
+ 
 
- 
+ 

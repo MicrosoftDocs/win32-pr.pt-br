@@ -4,12 +4,12 @@ ms.assetid: c3cebb9d-9094-493f-96d3-763a0c282dfb
 title: Provedores de serviços de segurança
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2121940337d0f4e06c53981cf30f0125180c466
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b53353dc9ed3236ccca5d9a345053870151a7b79e004c5e2ea69e39944209b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118612149"
 ---
 # <a name="security-service-providers"></a>Provedores de serviços de segurança
 
@@ -23,7 +23,7 @@ Tome cuidado ao chamar um aplicativo de dentro de um SSP. As seguintes considera
 
 -   Os retornos de chamada não devem demorar muito para serem retornados, pois eles são chamados durante a negociação da conexão. Se levar muito tempo para que uma conexão seja estabelecida, a conexão poderá ser descartada.
 -   A API de grafo de pares ajusta dinamicamente os valores de tempo limite de conexão, com base na carga real de um sistema. O menor valor de tempo limite é de 20 segundos.
--   Para evitar possíveis situações de deadlock, um aplicativo não deve acessar o banco de dados de grafo de pares de um retorno de chamada. Se um aplicativo exigir informações do banco de dados de gráfico, o aplicativo poderá armazenar em cache as informações necessárias e, em seguida, consultar o cache de dentro do retorno de chamada. O Caching também pode ajudar a diminuir o tempo de conexão.
+-   Para evitar possíveis situações de deadlock, um aplicativo não deve acessar o banco de dados de grafo de pares de um retorno de chamada. Se um aplicativo exigir informações do banco de dados de gráfico, o aplicativo poderá armazenar em cache as informações necessárias e, em seguida, consultar o cache de dentro do retorno de chamada. Caching também pode ajudar a diminuir o tempo de conexão.
 
 Ao chamar os pontos de entrada SSPI, a infraestrutura de grafo de pares requer valores específicos para parâmetros específicos de cinco (5) funções. Você não pode alterar esses valores de parâmetro fornecidos para o SSP, e o SSP pode ignorar os valores para os cinco parâmetros ou tratá-los normalmente. A lista a seguir identifica esses parâmetros específicos e os valores necessários:
 

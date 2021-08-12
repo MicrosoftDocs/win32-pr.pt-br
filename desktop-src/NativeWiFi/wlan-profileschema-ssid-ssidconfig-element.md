@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 644a4afbd10fbfff870007befda964fc9babd593
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5d58ed866e79269e604fe49ad8afe65d557f27a90d0be03904b8d27da5ac5c2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118619053"
 ---
 # <a name="ssid-ssidconfig-element"></a>Elemento SSID (SSIDConfig)
 
 O elemento SSID (SSIDConfig) contém um SSID para uma LAN sem fio.
 
-**Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** No máximo um elemento **SSID** pode aparecer em um perfil.
+**Windows xp com SP3 e API de LAN sem fio para Windows XP com SP2:** No máximo um elemento **SSID** pode aparecer em um perfil.
 
 ``` syntax
 <xs:element name="SSID"
@@ -82,8 +82,8 @@ O elemento **SSID** é definido pelo elemento [**SSIDConfig**](wlan-profileschem
 
 | Elemento                                              | Type | Descrição                                                           |
 |------------------------------------------------------|------|-----------------------------------------------------------------------|
-| [**hex**](wlan-profileschema-hex-ssid-element.md)   |      | Contém o SSID de uma LAN sem fio em formato hexadecimal.<br/> |
-| [**nomes**](wlan-profileschema-name-ssid-element.md) |      | Contém o SSID para uma LAN sem fio.<br/>                      |
+| [**pressão**](wlan-profileschema-hex-ssid-element.md)   |      | Contém o SSID de uma LAN sem fio em formato hexadecimal.<br/> |
+| [**name**](wlan-profileschema-name-ssid-element.md) |      | Contém o SSID para uma LAN sem fio.<br/>                      |
 
 
 
@@ -105,8 +105,8 @@ Para exibir perfis de exemplo que usam o elemento **SSID** , consulte [amostras 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows Vista, Windows XP com \[ aplicativos de área de trabalho do SP3\]<br/> |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                |
+| Cliente mínimo com suporte<br/> | Windows Vista, somente Windows XP com \[ aplicativos de área de trabalho do SP3\]<br/> |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                |
 | Redistribuível<br/>          | API de LAN sem fio para Windows XP com SP2<br/>                 |
 
 

@@ -1,24 +1,24 @@
 ---
-title: Atributo Title (forma) (VML)
-description: Atributo Title (forma) (VML)
+title: Atributo Title (Forma)(VML)
+description: Atributo Title (Forma)(VML)
 ms.assetid: 08680706-5274-46d4-9199-4fdbf32f884b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 075b1cf078617abd3486ba55008794e1342efa63
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 55ec2a16df6740bca64357dae039f4222de956300604198b2d199977970c526d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104454324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118596504"
 ---
-# <a name="title-attribute-shapevml"></a>Atributo Title (forma) (VML)
+# <a name="title-attribute-shapevml"></a>Atributo Title (Forma)(VML)
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Define o texto exibido quando o ponteiro do mouse se move sobre a forma. Leitura/gravação. **Cadeia de caracteres**.
 
@@ -28,23 +28,23 @@ Define o texto exibido quando o ponteiro do mouse se move sobre a forma. Leitura
 
 **Sintaxe de marca**
 
-<v: *Element* título = " *expression* " >
+<v: *element* title=" *expressão* ">
 
 **Sintaxe do script**
 
-*elemento* . title = "*expressão*"
+*element* .title="*expression*"
 
-*expressão* = de *elemento*. title
+*expressão* = *elemento*.title
 
 **Comentários**
 
-O atributo **título** é semelhante ao atributo padrão de **título** HTML. O comportamento de um título é semelhante a uma dica de ferramenta do Microsoft Windows.
+O **atributo Title** é semelhante ao atributo Html **Title** padrão. O comportamento de um título é semelhante a um Microsoft Windows ToolTip.
 
-**Atributo padrão da VML**
+**Atributo padrão VML**
 
 **Exemplo**
 
-O título da forma é "exibição da dica de ferramenta" e aparecerá quando o ponteiro do mouse se mover sobre a forma.
+O título da forma é "Exibição de Dica de Ferramenta" e será exibido quando o ponteiro do mouse se mover sobre a forma.
 
 
 ```HTML
@@ -55,8 +55,8 @@ O título da forma é "exibição da dica de ferramenta" e aparecerá quando o p
 
 
 
-[Exemplo de atributo de título](/previous-versions/bb264097(v=vs.85)). (Requer o Microsoft Internet Explorer 5 ou superior.)
+[Exemplo de atributo title](/previous-versions/bb264097(v=vs.85)). (Requer o Microsoft Internet Explorer 5 ou superior.)
 
- 
+ 
 
- 
+ 

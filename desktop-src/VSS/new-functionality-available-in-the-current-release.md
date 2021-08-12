@@ -1,19 +1,19 @@
 ---
-description: 'A versão 2003 do Windows Server do Serviço de Cópias de Sombra de Volume contém a seguinte nova funcionalidade:'
+description: 'a versão do Windows Server 2003 do Serviço de Cópias de Sombra de Volume contém a seguinte nova funcionalidade:'
 ms.assetid: 3dcfcc01-3e3c-43e9-a933-5c72f331da9a
-title: Nova funcionalidade disponível no Windows Server 2003
+title: nova funcionalidade disponível no Windows Server 2003
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5782ef6b24f208f69e50cdb992e12ba3212c47f0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4bc444a062fd2e1dae33af80feb88e1da52452064d8ed38c2db6fd5f7f3ae2e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118591387"
 ---
-# <a name="new-functionality-available-in-windows-server-2003"></a>Nova funcionalidade disponível no Windows Server 2003
+# <a name="new-functionality-available-in-windows-server-2003"></a>nova funcionalidade disponível no Windows Server 2003
 
-A versão 2003 do Windows Server do Serviço de Cópias de Sombra de Volume contém a seguinte nova funcionalidade:
+a versão do Windows Server 2003 do Serviço de Cópias de Sombra de Volume contém a seguinte nova funcionalidade:
 
 -   Suporte para a [*seleção de restauração*](vssgloss-s.md) , além de e em uma base igual à [*seleção de backup*](vssgloss-s.md) (anteriormente conhecida como seleção). Consulte [trabalhando com a seleção e caminhos lógicos](working-with-selectability-and-logical-paths.md) para obter mais informações.
 -   Introdução de um evento [*BackupShutdown*](vssgloss-b.md) que indica que um aplicativo de backup compatível com VSS (solicitante) foi desligado, se a tentativa de backup foi concluída corretamente ou não. Consulte [manipulando eventos BackupShutdown](handling-backupshutdown-events.md) para obter mais informações.
@@ -25,7 +25,7 @@ A versão 2003 do Windows Server do Serviço de Cópias de Sombra de Volume cont
 -   Suporte para restauração condicional no momento da reinicialização. Consulte VSS \_ RME \_ Restore \_ na \_ reinicialização \_ se \_ não for possível \_ substituir ([**VSE \_ RESTOREMETHOD \_ enum**](/windows/desktop/api/VsWriter/ne-vswriter-vss_restoremethod_enum)) para obter mais informações.
 -   Definição de um estado de restauração e tipo de restauração. Consulte [**\_ \_ tipo de restauração do VSS**](/windows/desktop/api/Vss/ne-vss-vss_restore_type) e estado de restauração do [VSS](vss-restore-state.md) para obter mais informações.
 -   Suporte para consultas de gravador sobre o estado da cópia de sombra. Consulte [**CVssWriter:: GetContext**](/windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-getcontext) e [**CVssWriter:: GetSnapshotDeviceName**](/windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-getsnapshotdevicename) para obter mais informações.
--   Suporte para cópias de sombra transportáveis no Windows Server 2003, Enterprise Edition e Windows Server 2003, Datacenter Edition. Para obter mais informações, consulte [importando volumes copiados de sombra transportável](importing-transportable-shadow-copied-volumes.md).
+-   suporte para cópias de sombra transportáveis no Windows server 2003, Edição Enterprise e Windows server 2003, datacenter Edition. Para obter mais informações, consulte [importando volumes copiados de sombra transportável](importing-transportable-shadow-copied-volumes.md).
 
  
 

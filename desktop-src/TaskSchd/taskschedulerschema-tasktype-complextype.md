@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0e86174920c28614f6c871e3f0bb0bc322243009
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9e2465773fb784c87fe560bdc8f6306771578cb22cf9aa26bf79b84867deb61b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118611053"
 ---
 # <a name="tasktype-complex-type"></a>Tipo complexo de taskType
 
@@ -78,7 +78,7 @@ Define os elementos filho e as informações de sequenciamento para o elemento [
 
 
 
-| Nome    | Tipo                                                              | DESCRIÇÃO                                   |
+| Nome    | Tipo                                                              | Descrição                                   |
 |---------|-------------------------------------------------------------------|-----------------------------------------------|
 | version | [**versãotype**](taskschedulerschema-versiontype-simpletype.md) | Especifica a versão da tarefa.<br/> |
 
@@ -90,8 +90,8 @@ Define os elementos filho e as informações de sequenciamento para o elemento [
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

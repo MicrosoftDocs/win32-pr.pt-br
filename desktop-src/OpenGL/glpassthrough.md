@@ -1,9 +1,9 @@
 ---
-title: função glPassThrough (GL. h)
+title: Função glPassThrough (Gl.h)
 description: A função glPassThrough coloca um marcador no buffer de comentários.
 ms.assetid: 14664ac6-eb25-46ae-86d8-7ece31df103f
 keywords:
-- função glPassThrough OpenGL
+- Função glPassThrough OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd1174dd933d46813a89c35b781d0408c3ac5476
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c5edf1b0fb2dbda1ef1e0a2c4b9ab67b8e7e6305998a8f5a6de9c461e4e148bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118615413"
 ---
-# <a name="glpassthrough-function"></a>função glPassThrough
+# <a name="glpassthrough-function"></a>Função glPassThrough
 
-A função **glPassThrough** coloca um marcador no buffer de comentários.
+A **função glPassThrough** coloca um marcador no buffer de comentários.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,7 +49,7 @@ Um valor de marcador a ser colocado no buffer de comentários. Ele é indicado c
 
 | Valor                                                                                                                                                                                   | Significado                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| <span id="GL_PASS_THROUGH_TOKEN"></span><span id="gl_pass_through_token"></span><dl> <dt>**\_token de passagem GL \_ \_**</dt> </dl> | A ordem dos comandos **glPassThrough** em relação à especificação de primitivos gráficos é mantida.<br/> |
+| <span id="GL_PASS_THROUGH_TOKEN"></span><span id="gl_pass_through_token"></span><dl> <dt>**TOKEN DE \_ \_ PASSAGEM GL \_**</dt> </dl> | A ordem dos **comandos glPassThrough** em relação à especificação de primitivos gráficos é mantida.<br/> |
 
 
 
@@ -63,27 +63,27 @@ Essa função não retorna um valor.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-O código de erro a seguir pode ser recuperado pela função [**glGetError**](glgeterror.md) .
+O código de erro a seguir pode ser recuperado pela [**função glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERAÇÃO \_ GL \_ INVÁLIDA**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd.**](glend.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Feedback é um modo de renderização OpenGL selecionado chamando [**glRenderMode**](glrendermode.md) com os \_ comentários GL. Quando OpenGL está no modo de comentários, nenhum pixel é produzido pela rasterização. Em vez disso, as informações sobre primitivas que teriam sido rasterizadas são alimentadas de volta para o aplicativo por OpenGL. Consulte [**glFeedbackBuffer**](glfeedbackbuffer.md) para obter uma descrição do buffer de comentários e os valores contidos nele.
+Feedback é um modo de renderização OpenGL selecionado chamando [**glRenderMode**](glrendermode.md) com GL \_ FEEDBACK. Quando o OpenGL está no modo de comentários, nenhum pixel é produzido pela rasterização. Em vez disso, as informações sobre primitivos que teriam sido rasterizados são alimentadas novamente para o aplicativo pelo OpenGL. Consulte [**glFeedbackBuffer para**](glfeedbackbuffer.md) ver uma descrição do buffer de comentários e os valores nele.
 
-A função **glPassThrough** insere um marcador definido pelo usuário no buffer de comentários quando ele é executado no modo de comentários. O parâmetro de *token* é retornado como se fosse um primitivo.
+A **função glPassThrough** insere um marcador definido pelo usuário no buffer de comentários quando ele é executado no modo de comentários. O parâmetro de *token* é retornado como se fosse um primitivo.
 
-A função **glPassThrough** será ignorada se OpenGL não estiver no modo de comentários.
+A **função glPassThrough** será ignorada se o OpenGL não estiver no modo de comentários.
 
 A função a seguir recupera informações relacionadas a **glPassThrough**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o \_ modo de renderização Argument GL \_
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento GL \_ RENDER \_ MODE
 
 ## <a name="requirements"></a>Requisitos
 
@@ -93,8 +93,8 @@ A função a seguir recupera informações relacionadas a **glPassThrough**:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

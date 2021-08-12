@@ -1,28 +1,28 @@
 ---
 title: Localizando cadeias de caracteres de mensagem
-description: Cada cadeia de caracteres de mensagem especificada no manifesto deve fazer referência a uma cadeia de caracteres na seção localização do manifesto.
+description: Cada cadeia de caracteres de mensagem especificada no manifesto deve referenciar uma cadeia de caracteres na seção de localização do manifesto.
 ms.assetid: aeae9ef6-6ef7-46f5-a9ab-fabe418549b2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7812aed8bf376994a2cbecfa5997737d9740ec1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b55b94ea8e8a40de1401cf3aba97488d5531a77b441361e38f1ff98219940afc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118587894"
 ---
 # <a name="localizing-message-strings"></a>Localizando cadeias de caracteres de mensagem
 
-Cada cadeia de caracteres de mensagem especificada no manifesto deve fazer referência a uma cadeia de caracteres na seção **localização** do manifesto. A seção de localização contém uma seção de tabela de cadeia de caracteres para cada localidade que você dá suporte.
+Cada cadeia de caracteres de mensagem especificada no manifesto deve referenciar uma cadeia de caracteres na **seção de localização** do manifesto. A seção localização contém uma seção de tabela de cadeia de caracteres para cada localidade que você suporta.
 
-O exemplo a seguir mostra como definir uma tabela de cadeia de caracteres. Você deve especificar os atributos de **ID** e **valor** da cadeia de caracteres. Use o valor do atributo **ID** para fazer referência à cadeia de caracteres no seu manifesto. O atributo **Value** contém a cadeia de caracteres localizada.
+O exemplo a seguir mostra como definir uma tabela de cadeia de caracteres. Você deve especificar a **ID** da cadeia de caracteres e os **atributos de** valor. Use o valor do atributo **id** para referenciar a cadeia de caracteres em seu manifesto. O **atributo value** contém a cadeia de caracteres localizada.
 
 
 ```XML
 <instrumentationManifest
     xmlns="http://schemas.microsoft.com/win/2004/08/events" 
-    xmlns:win="https://manifests.microsoft.com/win/2004/08/windows/events"
-    xmlns:xs="https://www.w3.org/2001/XMLSchema"    
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
     >
 
     <instrumentation>
@@ -53,13 +53,13 @@ O exemplo a seguir mostra como definir uma tabela de cadeia de caracteres. Você
 ```
 
 
-Em vez de adicionar cadeias de caracteres localizadas ao manifesto, você deve criar um arquivo MUI (Multilingual User interface) para cada idioma ao qual dá suporte. Use um arquivo de texto de mensagem para especificar suas cadeias de caracteres localizadas.
+Em vez de adicionar cadeias de caracteres localizadas ao manifesto, você deve criar um arquivo MUI (interface do usuário multilíngue) para cada idioma que você suporta. Use um arquivo de texto de mensagem para especificar suas cadeias de caracteres localizadas.
 
 O procedimento a seguir descreve como criar um arquivo MUI para inglês e francês.
 
 **Para criar um arquivo MUI para inglês e francês**
 
-1.  Crie um arquivo de texto de mensagem que cria as cadeias de caracteres de mensagem francesa. Para obter detalhes sobre como criar um arquivo de texto de mensagem, consulte [arquivos de texto da mensagem](/windows/desktop/EventLog/message-text-files). Os identificadores de mensagem que você especificar no arquivo de texto de mensagem devem corresponder aos identificadores de recurso que o compilador de mensagem gerou para as mesmas cadeias de caracteres no manifesto. Para determinar os identificadores de recurso usados para as cadeias de caracteres no manifesto, consulte o arquivo. h que o compilador de mensagem gerou quando você compilou o manifesto.
+1.  Crie um arquivo de texto de mensagem que cria as cadeias de caracteres de mensagem em francês. Para obter detalhes sobre como criar um arquivo de texto de mensagem, consulte [Arquivos de Texto da Mensagem](/windows/desktop/EventLog/message-text-files). Os identificadores de mensagem especificados no arquivo de texto da mensagem devem corresponder aos identificadores de recurso que o compilador de mensagem gerou para as mesmas cadeias de caracteres no manifesto. Para determinar os identificadores de recurso usados para as cadeias de caracteres no manifesto, consulte o arquivo .h que o compilador de mensagem gerou quando você compilou o manifesto.
     ```Text
     LanguageNames=(French=0x40C:MSG0040C)
 
@@ -81,7 +81,7 @@ O procedimento a seguir descreve como criar um arquivo MUI para inglês e franc�
     ```
 
 
-2.  Execute os comandos a seguir para criar a DLL de recursos que contém suas cadeias de caracteres localizadas. O arquivo messages.mc é o arquivo de texto de mensagem que você criou na etapa 1.
+2.  Execute os comandos a seguir para criar a DLL de recurso que contém suas cadeias de caracteres localizadas. O messages.mc arquivo é o arquivo de texto da mensagem que você criou na etapa 1.
     ```cmd
     mc -u -U messages.mc
 
@@ -92,8 +92,8 @@ O procedimento a seguir descreve como criar um arquivo MUI para inglês e franc�
 
     
 
-3.  Na pasta que contém seu provedor, crie uma subpasta para cada localidade com suporte. O nome da subpasta deve ser o nome do idioma para essa localidade. Por exemplo, para 0x0409, use en-US como o nome da pasta.
-4.  Crie um arquivo. rcconfig que informe à ferramenta de Muirct.exe que você deseja dividir os recursos de cadeia de caracteres de mensagem do executável e das DLLs de recurso. Veja a seguir um exemplo de arquivo. rcconfig.
+3.  Na pasta que contém seu provedor, crie uma subpasta para cada localidade à sua suporte. O nome da subpasta deve ser o nome do idioma dessa localidade. Por exemplo, por 0x0409, use en-US como o nome da pasta.
+4.  Crie um arquivo .rcconfig que informa à Muirct.exe que você deseja dividir os recursos da cadeia de caracteres de mensagem do executável e das DLLs de recurso. A seguir está um arquivo .rcconfig de exemplo.
     ```XML
     <localization>
           <resources>
@@ -109,7 +109,7 @@ O procedimento a seguir descreve como criar um arquivo MUI para inglês e franc�
     ```
   
 
-5.  Execute os comandos de Muirct.exe a seguir para dividir as cadeias de caracteres em inglês do arquivo executável do provedor.
+5.  Execute os seguintes Muirct.exe para dividir as cadeias de caracteres em inglês do arquivo executável do provedor.
     ```cmd
     muirct -q split.rcconfig -v 2 -x 0x0409 -g 0x0409 provider.exe provider.exe.ln en-US\provider.exe.mui
 
@@ -117,7 +117,7 @@ O procedimento a seguir descreve como criar um arquivo MUI para inglês e franc�
     ```
  
 
-6.  Execute os seguintes comandos de Muirct.exe para dividir as cadeias de caracteres francesas da DLL de recursos. Remova o arquivo de idioma neutro (fr-FR \\messages.dll) depois que o arquivo MUI for criado.
+6.  Execute os comandos Muirct.exe a seguir para dividir as cadeias de caracteres em francês da DLL do recurso. Remova o arquivo neutro de idioma (fr-FR \\messages.dll) depois que o arquivo MUI for criado.
     ```cmd
     muirct -q split.rcconfig -v 2 -x 0x040C -g 0x0409 messages.dll fr-FR\messages.dll fr-FR\provider.exe.mui
 
@@ -125,4 +125,4 @@ O procedimento a seguir descreve como criar um arquivo MUI para inglês e franc�
     ```
   
 
-7.  Renomeie provider.exe. ln para provider.exe.
+7.  Renomeie provider.exe.ln para provider.exe.

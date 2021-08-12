@@ -1,19 +1,19 @@
 ---
-title: Estruturas de ajuda da ferramenta
+title: Estruturas de Ajuda da Ferramenta
 description: Lista as estruturas usadas com a biblioteca de ajuda da ferramenta.
 ms.assetid: 478f2000-55d7-4c4f-ab5a-f12bab4a57c6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 778adbcb5a92984119dcb55ac62ed7592b31d58d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 93db1a8122ae765b3aa3abd309e0f56b04abb37c212cefb3a4ffb3395e1c1928
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118603726"
 ---
-# <a name="tool-help-structures"></a>Estruturas de ajuda da ferramenta
+# <a name="tool-help-structures"></a>Estruturas de Ajuda da Ferramenta
 
-As seguintes estruturas são usadas com a biblioteca de ajuda da ferramenta:
+As seguintes estruturas são usadas com a biblioteca de ajuda de ferramentas:
 
 <dl>
 
@@ -24,9 +24,9 @@ As seguintes estruturas são usadas com a biblioteca de ajuda da ferramenta:
 [**THREADENTRY32**](/windows/win32/api/tlhelp32/ns-tlhelp32-threadentry32)  
 </dl>
 
- 
+ 
 
- 
+ 
 
 
 

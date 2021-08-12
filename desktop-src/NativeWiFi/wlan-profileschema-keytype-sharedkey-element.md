@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 134f9da4100c9479255507d4686dd19d3d484dea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88c9a48d1c70cd156fa3d8f63bd3b70d69a99a1151a18c95ffd556b2503c9575
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105789631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118619279"
 ---
 # <a name="keytype-sharedkey-element"></a>Elemento KeyType (sharedKey)
 
@@ -56,8 +56,8 @@ Para exibir perfis de exemplo que usam o elemento **KeyType** , consulte exemplo
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows Vista, Windows XP com \[ aplicativos de área de trabalho do SP3\]<br/> |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                |
+| Cliente mínimo com suporte<br/> | Windows Vista, somente Windows XP com \[ aplicativos de área de trabalho do SP3\]<br/> |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                |
 | Redistribuível<br/>          | API de LAN sem fio para Windows XP com SP2<br/>                 |
 
 

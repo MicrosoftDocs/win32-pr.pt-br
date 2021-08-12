@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 96c7daa6bdc72146400973d08c9e5780092b214a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c4aa83aa04ce4a442351485c25fbc7f4c6d252f923f6777cfe807abf9ba527a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118620213"
 ---
 # <a name="bootstrap-profile-sample"></a>Exemplo de perfil Bootstrap
 
@@ -22,11 +22,11 @@ O exemplo de perfil de Bootstrap pode ser usado para autenticar em uma rede sem 
 
 Esse perfil não valida os certificados apresentados pelo servidor de serviço RADIUS (RADIUS) e não deve ser usado depois que o computador é ingressado em um domínio.
 
-Este exemplo é configurado para usar a segurança do Wi-Fi Protected Access 2 em execução no modo empresarial (WPA2-Enterprise). Outros tipos de segurança podem ser usados contanto que o método de autenticação seja PEAP-MSCHAPv2.
+este exemplo é configurado para usar a segurança do Wi-Fi Protected Access 2 em execução no modo de Enterprise (WPA2-Enterprise). Outros tipos de segurança podem ser usados contanto que o método de autenticação seja PEAP-MSCHAPv2.
 
-**Windows 7 e Windows Server 2008 R2 com o serviço de LAN sem fio instalado:** As alterações são implementadas no Windows 7 e no Windows Server 2008 R2 com o serviço de LAN sem fio instalado para otimizar o desempenho da rede sem fio. A configuração padrão para [**AutoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) quando este elemento não está definido em um perfil de LAN sem fio foi alterado. A configuração padrão é alterada para "false" no Windows 7 e no Windows Server 2008 R2 com o serviço de LAN sem fio instalado. A configuração padrão era "true" no Windows Server 2008 e no Windows Vista. Veja a descrição do elemento de esquema [**AutoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) para obter mais informações.
+**Windows 7 e Windows Server 2008 R2 com o serviço de LAN sem fio instalado:** as alterações são implementadas no Windows 7 e no Windows Server 2008 R2 com o serviço de LAN sem fio instalado para otimizar o desempenho da rede sem fio. A configuração padrão para [**AutoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) quando este elemento não está definido em um perfil de LAN sem fio foi alterado. a configuração padrão é alterada para "falso" no Windows 7 e no Windows Server 2008 R2 com o serviço de LAN sem fio instalado. a configuração padrão era "true" no Windows Server 2008 e Windows Vista. Veja a descrição do elemento de esquema [**AutoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) para obter mais informações.
 
-**Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** O [**nome**](wlan-profileschema-name-wlanprofile-element.md) filho do elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) é ignorado. O nome do perfil, conforme armazenado no repositório de perfis, é derivado do [**nome**](wlan-profileschema-name-ssid-element.md) filho do elemento [**SSID**](wlan-profileschema-ssid-ssidconfig-element.md) . Os filhos [**cacheUserData**](onexschema-cacheuserdata-onex-element.md), [**AuthMode**](onexschema-authmode-onex-element.md)e [**logon único**](onexschema-singlesignon-onex-element.md) do elemento [**Onex**](onexschema-onex-element.md) não têm suporte e devem ser removidos do perfil antes do uso.
+**Windows xp com SP3 e API de LAN sem fio para Windows XP com SP2:** O [**nome**](wlan-profileschema-name-wlanprofile-element.md) filho do elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) é ignorado. O nome do perfil, conforme armazenado no repositório de perfis, é derivado do [**nome**](wlan-profileschema-name-ssid-element.md) filho do elemento [**SSID**](wlan-profileschema-ssid-ssidconfig-element.md) . Os filhos [**cacheUserData**](onexschema-cacheuserdata-onex-element.md), [**AuthMode**](onexschema-authmode-onex-element.md)e [**logon único**](onexschema-singlesignon-onex-element.md) do elemento [**Onex**](onexschema-onex-element.md) não têm suporte e devem ser removidos do perfil antes do uso.
 
 ``` syntax
 <?xml version="1.0" encoding="US-ASCII"?>
@@ -102,7 +102,7 @@ Este exemplo é configurado para usar a segurança do Wi-Fi Protected Access 2 e
 [Exemplos de perfil sem fio](wireless-profile-samples.md)
 </dt> <dt>
 
-[Unindo um cliente sem fio do Windows Vista a um domínio](https://www.microsoft.com/technet/network/wifi/vista_bootstrap_wireless.mspx)
+[unindo um cliente sem fio Windows Vista a um domínio](https://www.microsoft.com/technet/network/wifi/vista_bootstrap_wireless.mspx)
 </dt> </dl>
 
  

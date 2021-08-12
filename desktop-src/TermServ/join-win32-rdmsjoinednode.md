@@ -1,12 +1,12 @@
 ---
-title: Método Join da classe Win32_RDMSJoinedNode
-description: Adiciona um nó a serviços de gerenciamento de Área de Trabalho Remota (RDMS).
+title: Método join da classe Win32_RDMSJoinedNode classe
+description: Adiciona um nó ao Área de Trabalho Remota Management Services (RDMS).
 ms.assetid: 7451d12a-ace2-4564-bf6d-fb0169be967f
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método de junção
-- Método Join Serviços de Área de Trabalho Remota, classe Win32_RDMSJoinedNode
-- Serviços de Área de Trabalho Remota de classe Win32_RDMSJoinedNode, método Join
+- Método join Serviços de Área de Trabalho Remota
+- Método join Serviços de Área de Trabalho Remota classe , Win32_RDMSJoinedNode de junção
+- Win32_RDMSJoinedNode classe Serviços de Área de Trabalho Remota , método Join
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 587e68758971453e8c4e307ccb37ce6cede262f7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 204d83988f9a57d9fe0edf8daa6dc580676fc7395f98edcbece49674c0041aef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118605419"
 ---
-# <a name="join-method-of-the-win32_rdmsjoinednode-class"></a>Método Join da classe Win32 \_ RDMSJoinedNode
+# <a name="join-method-of-the-win32_rdmsjoinednode-class"></a>Método join da classe Win32 \_ RDMSJoinedNode
 
-Adiciona um nó a serviços de gerenciamento de Área de Trabalho Remota (RDMS).
+Adiciona um nó ao Área de Trabalho Remota Management Services (RDMS).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,21 +44,21 @@ uint32 Join(
 
 <dl> <dt>
 
-*NodeFQDN* \[ no\]
+*NodeFQDN* \[ Em\]
 </dt> <dd>
 
 O nome de domínio totalmente qualificado do nó.
 
 </dd> <dt>
 
-*NodeId* \[ no\]
+*NodeSID* \[ Em\]
 </dt> <dd>
 
-O identificador de segurança (SID) do nó.
+O SID (identificador de segurança) do nó.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 
@@ -70,8 +70,8 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                   |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                              |
-| Namespace<br/>                | \\RDMs CIMv2 \\ raiz<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Namespace<br/>                | \\rdms CIMv2 \\ raiz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -80,7 +80,7 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 
 <dl> <dt>
 
-[**\_RDMSJoinedNode Win32**](win32-rdmsjoinednode.md)
+[**Win32 \_ RDMSJoinedNode**](win32-rdmsjoinednode.md)
 </dt> </dl>
 
  

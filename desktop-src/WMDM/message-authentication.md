@@ -3,7 +3,7 @@ title: Autenticação de mensagens
 description: Autenticação de mensagens
 ms.assetid: 6cb49f6b-e303-4840-9343-9891e75e07a4
 keywords:
-- Windows Media Gerenciador de Dispositivos, autenticação de mensagem
+- Windows Gerenciador de Dispositivos de mídia, autenticação de mensagem
 - Gerenciador de Dispositivos, autenticação de mensagem
 - aplicativos de desktop, autenticação de mensagens
 - provedores de serviços, autenticação de mensagens
@@ -13,22 +13,22 @@ keywords:
 - MAC (código de autenticação de mensagem)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 14805e2074509e918902aae9eb9e9680ca52a6d6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2921b80d42207bab608c6a8260e6756d3e9f323eab70742acc787ff731ad4b80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105763391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118584480"
 ---
 # <a name="message-authentication"></a>Autenticação de mensagens
 
-A autenticação de mensagens é um processo que permite que aplicativos e provedores de serviços verifiquem se os dados passados entre eles não foram adulterados. O Windows Media Gerenciador de Dispositivos permite que aplicativos e provedores de serviço executem a autenticação de mensagens usando MACs (códigos de autenticação de mensagens). Veja como funciona a autenticação MAC:
+A autenticação de mensagens é um processo que permite que aplicativos e provedores de serviços verifiquem se os dados passados entre eles não foram adulterados. Windows A mídia Gerenciador de Dispositivos permite que aplicativos e provedores de serviços executem a autenticação de mensagens usando os MACs (códigos de autenticação de mensagens). Veja como funciona a autenticação MAC:
 
 O remetente dos dados, geralmente o provedor de serviços, passa uma ou mais partes de dados por meio de uma função criptográfica unidirecional que produz uma única assinatura, o MAC, para todos os dados. O remetente envia, então, todos os pedaços de dados assinados com o MAC para o receptor (geralmente o aplicativo). O receptor passa os dados por meio da mesma função criptográfica para gerar um MAC e o compara com o MAC que foi enviado. Se o MAC corresponder, os dados não foram modificados.
 
 Para executar a autenticação MAC, o aplicativo ou o provedor de serviços requer uma chave de criptografia e um certificado correspondente. Para obter informações sobre onde obter esses, consulte [ferramentas para desenvolvimento](tools-for-development.md).
 
-As etapas a seguir descrevem como os dados são assinados pelo remetente e, posteriormente, verificados pelo receptor. No Windows Media Gerenciador de Dispositivos, o provedor de serviços usa a classe [CSecureChannelServer](csecurechannelserver-class.md) para gerar Macs e o aplicativo usa a classe [CSecureChannelClient](csecurechannelclient-class.md) . Ambas as classes fornecem funções idênticas com parâmetros idênticos, portanto, as etapas a seguir se aplicam a ambas as classes.
+As etapas a seguir descrevem como os dados são assinados pelo remetente e, posteriormente, verificados pelo receptor. no Gerenciador de Dispositivos de mídia Windows, o provedor de serviços usa a classe [CSecureChannelServer](csecurechannelserver-class.md) para gerar MACs e o aplicativo usa a classe [CSecureChannelClient](csecurechannelclient-class.md) . Ambas as classes fornecem funções idênticas com parâmetros idênticos, portanto, as etapas a seguir se aplicam a ambas as classes.
 
 O remetente (normalmente o provedor de serviços):
 
@@ -159,9 +159,9 @@ if (hr == S_OK)
 [**Usando canais autenticados seguros**](using-secure-authenticated-channels.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

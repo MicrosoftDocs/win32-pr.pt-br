@@ -1,12 +1,12 @@
 ---
-title: Método Change da classe Win32_Service (Mbnapi. h) (TerminalService)
-description: Modifica um TerminalService Win32 \_ .
+title: Alterar o método da Win32_Service classe (Mbnapi.h) (TerminalService)
+description: Modifica um Win32 \_ TerminalService.
 ms.assetid: 19E43A80-47C9-4C5A-8E73-723F206AA7C0
 ms.tgt_platform: multiple
 keywords:
 - Alterar o método Serviços de Área de Trabalho Remota
-- Alterar método Serviços de Área de Trabalho Remota, classe Win32_Service
-- Serviços de Área de Trabalho Remota de classe Win32_Service, alterar método
+- Alterar a Serviços de Área de Trabalho Remota , Win32_Service classe
+- Win32_Service classe Serviços de Área de Trabalho Remota , alterar método
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa34ea0c9c38cd0b11f97a0bbf651f1aebf37a46
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: c10e8c7b0a26ce2ca1e602478a64a888a1ad6b299f8ab7965303832bba7a3fc3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118604428"
 ---
-# <a name="change-method-of-the-win32_service-class-mbnapih---terminalservice"></a>Método Change da classe Win32_Service (Mbnapi. h)-TerminalService
+# <a name="change-method-of-the-win32_service-class-mbnapih---terminalservice"></a>Alterar o método da classe Win32_Service (Mbnapi.h) – TerminalService
 
-O método **Change** [WMI Class](/windows/desktop/WmiSdk/retrieving-a-class) modifica um [**\_ TerminalService Win32**](win32-terminalservice.md).
+O **método alterar** a classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) modifica um [**Win32 \_ TerminalService.**](win32-terminalservice.md)
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -55,35 +55,35 @@ uint32 Change(
 
 <dl> <dt>
 
-*DisplayName* \[ no\]
+*DisplayName* \[ Em\]
 </dt> <dd>
 
-O nome para exibição do serviço. Essa cadeia de caracteres tem um tamanho máximo de 256 caracteres. O nome é, por caso, preservado no Gerenciador de controle de serviço. As comparações *DisplayName* sempre diferenciam maiúsculas de minúsculas.
+O nome para exibição do serviço. Essa cadeia de caracteres tem um tamanho máximo de 256 caracteres. O nome é preservado em caso no gerenciador de controle de serviço. *As comparações* de DisplayName sempre não fazem maiúsculas de minúsculas.
 
-Restrições: aceita o mesmo valor que a propriedade **Name** .
+Restrições: aceita o mesmo valor que a **propriedade** Name.
 
-Exemplo, "atdisk".
+Exemplo, "Atdisk".
 
 </dd> <dt>
 
-*Nome do caminho* \[ no\]
+*PathName* \[ Em\]
 </dt> <dd>
 
-O caminho totalmente qualificado para o arquivo executável que implementa o serviço, por exemplo, " \\ systemroot \\ System32 \\ drivers \\afd.sys".
+O caminho totalmente qualificado para o arquivo executável que implementa o serviço, por exemplo, " Drivers \\ systemRoot \\ System32 \\ \\afd.sys".
 
 </dd> <dt>
 
-*ServiceType* \[ no\]
+*ServiceType* \[ Em\]
 </dt> <dd>
 
-O tipo de serviços fornecidos aos processos que os chamam.
+O tipo de serviços fornecidos para processos que os chamam.
 
 <dt>
 
 1 (0x1)
 </dt> <dd>
 
-Driver de kernel
+Kernel Driver
 
 </dd> <dt>
 
@@ -104,14 +104,14 @@ Adaptador
 8 (0x8)
 </dt> <dd>
 
-Driver do reconhecedor
+Driver do Reconhecedor
 
 </dd> <dt>
 
 16 (0x10)
 </dt> <dd>
 
-Próprio processo
+Processo próprio
 
 </dd> <dt>
 
@@ -129,10 +129,10 @@ Processo interativo
 
 </dd> </dl> </dd> <dt>
 
-*ErrorControl* \[ no\]
+*ErrorControl* \[ Em\]
 </dt> <dd>
 
-Severidade do erro se esse serviço não for iniciado durante a inicialização. O valor indica a ação tomada pelo programa de inicialização se ocorrer falha. Todos os erros são registrados pelo sistema.
+Severidade do erro se esse serviço não for inicializado durante a inicialização. O valor indica a ação tomada pelo programa de inicialização se ocorrer uma falha. Todos os erros são registrados pelo sistema.
 
 <dt>
 
@@ -146,34 +146,34 @@ Severidade do erro se esse serviço não for iniciado durante a inicialização.
 1
 </dt> <dd>
 
-**Normal.** A inicialização continua. Antes que o usuário faça logon, o usuário recebe a notificação, "pelo menos um serviço ou dispositivo falhou durante a inicialização".
+**Normal.** A inicialização continua. Antes de o usuário fazer o login, o usuário recebe a notificação " Pelo menos um serviço ou dispositivo falhou durante a inicialização".
 
 </dd> <dt>
 
 2
 </dt> <dd>
 
-**Muito.** O computador tenta reiniciar com a última configuração válida conhecida. Se o serviço falhar novamente, a inicialização continuará e a notificação será fornecida ao usuário.
+**Grave.** O computador tenta reiniciar com a última configuração boa conhecida. Se o serviço falhar novamente, a inicialização continuará e a notificação será dada ao usuário.
 
 </dd> <dt>
 
 3
 </dt> <dd>
 
-**Drasticamente.** O computador tenta reiniciar com a última configuração válida conhecida. Se o serviço falhar novamente, a inicialização será interrompida.
+**Crítico.** O computador tenta reiniciar com a última configuração boa conhecida. Se o serviço falhar novamente, a inicialização será interrompida.
 
 </dd> </dl> </dd> <dt>
 
-*StartMode* \[ no\]
+*StartMode* \[ Em\]
 </dt> <dd>
 
-Modo de início do serviço base do Windows. Para obter mais informações, consulte a seção Comentários.
+Modo de início do serviço Windows base. Para obter mais informações, consulte a seção Comentários.
 
 <dt>
 
 <span id="Boot"></span><span id="boot"></span><span id="BOOT"></span>
 
-<span id="Boot"></span><span id="boot"></span><span id="BOOT"></span>**Inicialização**
+<span id="Boot"></span><span id="boot"></span><span id="BOOT"></span>**Boot**
 
 
 </dt> <dd>
@@ -200,7 +200,7 @@ Driver de dispositivo iniciado pelo processo de inicialização do sistema opera
 
 </dt> <dd>
 
-O serviço é iniciado automaticamente pelo Gerenciador de controle de serviço durante a inicialização do sistema. Os serviços de inicialização automática iniciam antes que um usuário faça logon no computador e execute mesmo que nenhum usuário faça logon no computador.
+O serviço é iniciado automaticamente pelo gerenciador de controle de serviço durante a inicialização do sistema. Os serviços de início automático são iniciados antes de um usuário fazer o login no computador e são executados mesmo que nenhum usuário entre no computador.
 
 </dd> <dt>
 
@@ -211,61 +211,61 @@ O serviço é iniciado automaticamente pelo Gerenciador de controle de serviço 
 
 </dt> <dd>
 
-Serviço a ser iniciado pelo Gerenciador de controle de serviço quando um processo chama o método [**StartService**](win32-terminalservice-startservice.md) . Embora os serviços manuais devam ser especificamente iniciados por um usuário (ou por um script), eles continuam a ser executados mesmo que o usuário faça logoff. Os serviços manuais são geralmente chamados de serviços sob demanda.
+Serviço a ser iniciado pelo gerenciador de controle de serviço quando um processo chama o [**método StartService.**](win32-terminalservice-startservice.md) Embora os serviços manuais devem ser iniciados especificamente por um usuário (ou por um script), eles continuam a ser executados mesmo se o usuário faz logo off. Serviços manuais geralmente são chamados de serviços sob demanda.
 
 </dd> <dt>
 
 <span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span>
 
-<span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span>**Desabilitado**
+<span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span>**Desativado**
 
 
 </dt> <dd>
 
-Serviço que não pode mais ser iniciado. Para iniciar um serviço desabilitado, você deve primeiro alterar a opção de inicialização para automático ou manual.
+Serviço que não pode mais ser iniciado. Para iniciar um serviço desabilitado, você deve primeiro alterar a opção de inicialização para Automático ou Manual.
 
 </dd> </dl> </dd> <dt>
 
-*DesktopInteract* \[ no\]
+*DesktopInteract* \[ Em\]
 </dt> <dd>
 
-Se **for true**, o serviço poderá criar ou se comunicar com uma janela na área de trabalho.
+Se **True**, o serviço poderá criar ou se comunicar com uma janela na área de trabalho.
 
 </dd> <dt>
 
-*Iniciar* \[ no\]
+*StartName* \[ Em\]
 </dt> <dd>
 
-Nome da conta sob a qual o serviço é executado. Dependendo do tipo de serviço, o nome da conta pode estar na forma de nome_do_domínio \\ username ou. \\ Usu. O processo de serviço será registrado usando uma dessas duas formas quando for executado. Se a conta pertencer ao domínio interno,. \\ O nome de usuário pode ser especificado. Se **NULL** for especificado, o serviço será conectado como a conta LocalSystem. Para drivers de nível de kernel ou de sistema, *StartName* contém o nome do objeto de driver (ou seja, \\ FileSystem \\ rdr ou o \\ Driver \\ XNS) que o sistema de entrada e saída (e/s) usa para carregar o driver de dispositivo. Se **NULL** for especificado, o driver será executado com um nome de objeto padrão criado pelo sistema de e/s com base no nome do serviço, por exemplo, "DWDOM \\ admin".
+Nome da conta em que o serviço é executado. Dependendo do tipo de serviço, o nome da conta pode estar na forma de Nome de usuário domainname \\ ou . \\ Username. O processo de serviço será registrado usando um desses dois formulários quando ele for executado. Se a conta pertencer ao domínio integrado, . \\ O nome de usuário pode ser especificado. Se **NULL** for especificado, o serviço será conectado como a conta LocalSystem. Para drivers no nível do kernel ou do sistema, *StartName* contém o nome do objeto do driver (ou seja, FileSystem Rdr ou Driver Xns) que o sistema de entrada e saída \\ \\ \\ (E/S) usa para carregar o driver de \\ dispositivo. Se **NULL** for especificado, o driver será executado com um nome de objeto padrão criado pelo sistema de E/S com base no nome do serviço, por exemplo, "Administrador do DWDOM". \\
 
-Você também pode usar o formato UPN (nome principal do usuário) para especificar o **StartName**, por exemplo, *Username@DomainName* .
+Você também pode usar o formato UPN (Nome Upn) para especificar **o StartName**, por exemplo, *Username@DomainName* .
 
 </dd> <dt>
 
-*StartPassword* \[ no\]
+*StartPassword* \[ Em\]
 </dt> <dd>
 
-Senha para o nome da conta especificada pelo parâmetro *StartName* . Especifique **NULL** se você não estiver alterando a senha. Especifique uma cadeia de caracteres vazia se o serviço não tiver nenhuma senha.
+Senha para o nome da conta especificado pelo *parâmetro StartName.* **Especifique NULL** se você não estiver alterando a senha. Especifique uma cadeia de caracteres vazia se o serviço não tiver nenhuma senha.
 
 > [!Note]  
-> Ao alterar um serviço de um sistema local para uma rede, ou de uma rede para um sistema local, *StartPassword* deve ser uma cadeia de caracteres vazia ("") e não **NULL**.
+> Ao alterar um serviço de um sistema local para uma rede ou de uma rede para um sistema local, *StartPassword* deve ser uma cadeia de caracteres vazia ("") e não **NULL.**
 
  
 
 </dd> <dt>
 
-*OrderGroup* \[ no\]
+*LoadOrderGroup* \[ Em\]
 </dt> <dd>
 
-Nome do grupo ao qual ele está associado. Os grupos de ordem de carregamento estão contidos no registro do sistema e determinam a sequência na qual os serviços são carregados no sistema operacional. Se o ponteiro for **nulo** ou se apontar para uma cadeia de caracteres vazia, o serviço não pertencerá a um grupo. Para obter mais informações, consulte a seção Comentários.
+Nome do grupo ao que ele está associado. Os grupos de ordem de carregamento estão contidos no registro do sistema e determinam a sequência na qual os serviços são carregados no sistema operacional. Se o ponteiro for **NULL** ou se ele aponta para uma cadeia de caracteres vazia, o serviço não pertence a um grupo. Para obter mais informações, consulte a seção Comentários.
 
-As dependências entre grupos devem ser listadas no parâmetro *LoadOrderGroupDependencies* . Os serviços na lista de grupos de ordenação de carga são iniciados primeiro, seguidos de serviços em grupos que não estão na lista de grupos de ordenação de carga, seguidos pelos serviços que não pertencem a um grupo. O registro do sistema tem uma lista de grupos de ordenação de carga localizados em:
+As dependências entre grupos devem ser listadas no *parâmetro LoadOrderGroupDependencies.* Os serviços na lista de grupos de pedidos de carga são iniciados primeiro, seguidos por serviços em grupos que não estão na lista de grupos de pedidos de carga, seguidos por serviços que não pertencem a um grupo. O registro do sistema tem uma lista de grupos de ordenação de carga localizados em:
 
-**HKEY \_ \_** Controle do sistema de computador local \\  \\ **CurrentControlSet** \\  \\ **ServiceGroupOrder**
+**HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **ServiceGroupOrder**
 
 </dd> <dt>
 
-*LoadOrderGroupDependencies* \[ no\]
+*LoadOrderGroupDependencies* \[ Em\]
 </dt> <dd>
 
 Lista de grupos de ordenação de carga que devem iniciar antes do início desse serviço. A matriz é duplamente terminada por **nulo**. Se o ponteiro for **nulo** ou se apontar para uma cadeia de caracteres vazia, o serviço não terá dependências. Os nomes de grupo devem ser prefixados pelo **\_ \_ identificador de grupo SC** (definido no arquivo Winsvc. h) para diferenciá-los dos nomes de serviço, pois serviços e grupos de serviço compartilham o mesmo namespace. A dependência de um grupo significa que esse serviço pode ser executado se pelo menos um membro do grupo estiver em execução depois de uma tentativa de iniciar todos os membros do grupo.
@@ -279,7 +279,7 @@ Lista que contém os nomes dos serviços que devem ser iniciados antes do iníci
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores listados na lista a seguir ou qualquer outro valor para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -418,7 +418,7 @@ O serviço tem dependências circulares quando é iniciado.
 
 </dd> <dt>
 
-**aprimora**
+**19**
 </dt> <dd>
 
 Um serviço está sendo executado com o mesmo nome.
@@ -489,11 +489,11 @@ O SCM armazena a senha da conta no banco de dados de serviços. No entanto, depo
 -   . Você configura um serviço para ser executado em uma conta de usuário específica.
 -   O serviço é iniciado sob essa conta usando a senha da conta atual.
 -   Você altera a senha da conta de usuário.
--   O serviço continua a ser executado. No entanto, se o serviço for interrompido, você não poderá reiniciá-lo porque o SCM continua a usar a senha antiga e inválida. Alterar a senha em Active Directory não altera a senha armazenada no banco de dados de serviços.
+-   O serviço continua sendo executado. No entanto, se o serviço for interrompido, você não poderá reiniciá-lo porque o SCM continua a usar a senha antiga e inválida. Alterar a senha no Active Directory não altera a senha armazenada no banco de dados de serviços.
 
-Se você executar serviços em contas de usuário regulares, precisará atualizar essas senhas de serviço sempre que a senha da conta de usuário for alterada. Isso pode ser particularmente demorado se você não tiver certeza de quais serviços estão sendo executados nessa conta ou quais computadores têm serviços em execução nessa conta. Felizmente, você pode usar o WMI para verificar as contas de serviço em todos os seus computadores e, se necessário, alterar a senha da conta de serviço.
+Se você executar serviços em contas de usuário regulares, precisará atualizar essas senhas de serviço sempre que a senha da conta de usuário for muda. Isso pode ser particularmente demorado se você não tiver certeza de quais serviços estão sendo executados nessa conta ou quais computadores têm serviços em execução nessa conta. Felizmente, você pode usar o WMI para verificar as contas de serviço em todos os seus computadores e, se necessário, alterar a senha da conta de serviço.
 
-O parâmetro do [**\_ Sqlorder OrderGroup do Win32**](/windows/desktop/CIMWin32Prov/win32-loadordergroup) representa um grupo de serviços do sistema que definem dependências de execução. Os serviços devem ser iniciados na ordem especificada pelo grupo de ordem de carregamento, pois os serviços dependem uns dos outros. Esses serviços dependentes exigem a presença dos serviços antecedentes para funcionar corretamente.
+O [**parâmetro Win32 \_ LoadOrderGroup**](/windows/desktop/CIMWin32Prov/win32-loadordergroup) representa um grupo de serviços do sistema que definem dependências de execução. Os serviços devem ser iniciados na ordem especificada pelo Grupo de Ordem de Carregamento porque os serviços dependem uns dos outros. Esses serviços dependentes exigem a presença dos serviços antecessores para funcionar corretamente.
 
 Para alterar um serviço de um serviço de rede para um sistema local, os parâmetros *StartName* e *StartPassword* devem ter os seguintes valores:
 
@@ -505,7 +505,7 @@ StartPassword = "" // - empty string, not NULL
 
 
 
-Para alterar um serviço de um serviço do sistema local para uma rede, os parâmetros *StartName* e *StartPassword* devem ter os seguintes valores:
+Para alterar um serviço de um serviço de sistema local para uma rede, os parâmetros *StartName* e *StartPassword* devem ter os seguintes valores:
 
 
 ```C++
@@ -517,7 +517,7 @@ StartPassword = "" // - empty string, not NULL
 
 ## <a name="examples"></a>Exemplos
 
-O VBScript a seguir altera a conta de serviço para que os serviços sejam executados em uma conta de usuário especificada para LocalSystem.
+O VBScript a seguir altera a conta de serviço para serviços de execução em uma conta de usuário especificada para LocalSystem.
 
 
 ```VB
@@ -534,7 +534,7 @@ Next
 
 
 
-O VBScript a seguir altera a senha da conta de serviço para todos os scripts em execução em netsvc
+O VBScript a seguir altera a senha da conta de serviço para todos os scripts em execução no Netsvc
 
 
 ```VB
@@ -558,9 +558,9 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                |
-| parâmetro<br/>                   | <dl> <dt>Mbnapi. h</dt> </dl>     |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                |
+| parâmetro<br/>                   | <dl> <dt>Mbnapi.h</dt> </dl>     |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -569,16 +569,16 @@ Next
 
 <dl> <dt>
 
-[**\_Serviço Win32**](/windows/desktop/CIMWin32Prov/win32-service)
+[**Serviço \_ Win32**](/windows/desktop/CIMWin32Prov/win32-service)
 </dt> <dt>
 
 [Classes do sistema operacional](/windows/desktop/CIMWin32Prov/operating-system-classes)
 </dt> <dt>
 
-[**\_TerminalService Win32**](win32-terminalservice.md)
+[**Win32 \_ TerminalService**](win32-terminalservice.md)
 </dt> <dt>
 
-[Tarefas do WMI: serviços](/windows/desktop/WmiSdk/wmi-tasks--services)
+[Tarefas WMI: Serviços](/windows/desktop/WmiSdk/wmi-tasks--services)
 </dt> </dl>
 
  

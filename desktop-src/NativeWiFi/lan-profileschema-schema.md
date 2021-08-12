@@ -1,7 +1,7 @@
 ---
 description: Define um perfil de rede com fio (LAN).
 ms.assetid: b9b415c9-b2c6-4888-bad0-b2daeffc4387
-title: Esquema de LAN_profile
+title: LAN_profile esquema
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e888b49ad3036efb7578682d6ef8cc69a33599a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5d5cc1cf3a47ebd4bd8faf1b0b02805cbe28def7eac4a4bbe3534094e3757e5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105800108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118620088"
 ---
 # <a name="lan_profile-schema"></a>Esquema de perfil de LAN \_
 
-O esquema de perfil de LAN \_ define um perfil de rede com fio (LAN). Um perfil de LAN contém as configurações de rede para uma interface Ethernet.
+O esquema de perfil lan define um perfil de rede com fio \_ (LAN). Um perfil de LAN contém configurações de rede para uma interface Ethernet.
 
-O elemento raiz de um perfil de LAN é o elemento [**LANProfile**](lan-profileschema-lanprofile-element.md) . Cada perfil terá exatamente um elemento raiz. Todos os \_ elementos de perfil de LAN estão no namespace `https://www.microsoft.com/networking/LAN/profile/v1` .
+O elemento raiz de um perfil lan é o [**elemento LANProfile.**](lan-profileschema-lanprofile-element.md) Cada perfil terá exatamente um elemento raiz. Todos os elementos \_ de perfil lan estão no namespace `https://www.microsoft.com/networking/LAN/profile/v1` .
 
-Para exibir os perfis de LAN de exemplo, consulte [exemplos de perfil com fio](wired-profile-samples.md).
+Para exibir perfis lan de exemplo, consulte [Exemplos de perfil com fio.](wired-profile-samples.md)
 
--   [Elementos do esquema de perfil de LAN \_](lan-profileschema-elements.md)
+-   [Elementos de \_ esquema do perfil lan](lan-profileschema-elements.md)
 
  
 

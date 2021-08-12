@@ -1,12 +1,12 @@
 ---
-title: Método de inicialização IRDVTaskPlugin
+title: Método IRDVTaskPlugin Initialize
 description: Chamado para inicializar o agente de tarefa.
 ms.assetid: eef813e6-ecca-400a-a9f3-efca6bd81161
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método Initialize
-- Método Initialize Serviços de Área de Trabalho Remota, interface IRDVTaskPlugin
-- Serviços de Área de Trabalho Remota de interface IRDVTaskPlugin, método Initialize
+- Inicializar o método Serviços de Área de Trabalho Remota
+- Inicializar a interface Serviços de Área de Trabalho Remota , IRDVTaskPlugin
+- Interface IRDVTaskPlugin Serviços de Área de Trabalho Remota , método Initialize
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9530be7334e1f3fefa7f73007334e448362a95ed
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c14f4a002a0b33e403c02dba74385edd21e211fb27bcfb144c7a9ddc080a40fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118606099"
 ---
-# <a name="irdvtaskplugininitialize-method"></a>Método IRDVTaskPlugin:: Initialize
+# <a name="irdvtaskplugininitialize-method"></a>Método IRDVTaskPlugin::Initialize
 
 Chamado para inicializar o agente de tarefa.
 
@@ -42,20 +42,20 @@ HRESULT Initialize(
 
 <dl> <dt>
 
-*pNotifySink* \[ no\]
+*pNotifySink* \[ Em\]
 </dt> <dd>
 
-Tipo: **[**IRDVTaskPluginNotifySink**](irdvtaskpluginnotifysink.md) \** _
+Tipo: **[ **IRDVTaskPluginNotifySink**](irdvtaskpluginnotifysink.md)\***
 
-Um ponteiro para uma interface [_ *IRDVTaskPluginNotifySink* *](irdvtaskpluginnotifysink.md) que o agente de tarefa usa para se comunicar com o agente de gatilho. Você deve liberar essa interface quando ela não for mais necessária.
+Um ponteiro para uma interface [**IRDVTaskPluginNotifySink**](irdvtaskpluginnotifysink.md) que o agente de tarefa usa para se comunicar com o agente de gatilho. Você deve liberar essa interface quando ela não for mais necessária.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 

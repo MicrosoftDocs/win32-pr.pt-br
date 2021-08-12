@@ -1,9 +1,9 @@
 ---
-title: IWMPError. Item (VB e C)
-description: A Propriedade Item (o \_ método get item em C \) Obtém uma interface IWMPErrorItem no índice especificado na fila de erros.
+title: IWMPError.Item (VB e C )
+description: A propriedade Item (o método get Item em C\ ) obtém uma interface IWMPErrorItem no índice especificado \_ na fila de erros.
 ms.assetid: acfaaaa5-eb13-4ba0-8417-4229adc62c5d
 keywords:
-- IWMPError. Item (VB e C) Windows Media Player
+- IWMPError.Item (VB e C ) Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9217ec772512171c828dd0dad06ec8fe3704dba
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: be8d212eca9e9e54770e7e2751df345d80bbfb6bfc1b12714e811c7795990725
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118575628"
 ---
-# <a name="iwmperroritem-vb-and-c"></a>IWMPError. Item (VB e C#)
+# <a name="iwmperroritem-vb-and-c"></a>IWMPError.Item (VB e C#)
 
-A propriedade **Item** (o método **Get \_ Item** em C#) Obtém uma interface **IWMPErrorItem** no índice especificado na fila de erros.
+A **propriedade Item** (o método get **\_ Item** em C#) obtém uma interface **IWMPErrorItem** no índice especificado na fila de erros.
 
 
 ```
@@ -47,23 +47,23 @@ IWMPErrorItem get_Item (
 
 ## <a name="parameters"></a>Parâmetros
 
-*dwIndex*
+*Dwindex*
 
-Um **System. Int32** que é o índice de base zero de uma interface **IWMPErrorItem** na fila de erros.
+Um **System.Int32 que** é o índice baseado em zero de uma interface **IWMPErrorItem** na fila de erros.
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Uma interface **WMPLib. IWMPErrorItem** .
+Uma interface **WMPLib.IWMPErrorItem.**
 
 ## <a name="remarks"></a>Comentários
 
-O Windows Media Player pode gerar vários erros em resposta a uma condição de erro. Essa propriedade Obtém um erro específico na fila usando um número de índice. Os números de índice para a fila de erros começam com zero.
+Windows Media Player pode gerar vários erros em resposta a uma condição de erro. Essa propriedade obtém um erro específico na fila usando um número de índice. Os números de índice para a fila de erros começam com zero.
 
-Você deve definir **IWMPSettings. enableErrorDialogs** como **false** se optar por exibir mensagens de erro personalizadas.
+Você deverá definir **IWMPSettings.enableErrorDialogs** como **false** se optar por exibir mensagens de erro personalizadas.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa a propriedade **Item** (o método **Get \_ Item** em C#) em um manipulador de eventos de erro para recuperar e exibir informações sobre o erro mais recente na fila de erros. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
+O exemplo a seguir usa a **propriedade Item** (o método **get \_ Item** em C#) em um manipulador de eventos Error para recuperar e exibir informações sobre o erro mais recente na fila de erros. O **objeto AxWMPLib.AxWindowsMediaPlayer** é representado pela variável chamada player.
 
 
 ```CSharp
@@ -116,7 +116,7 @@ End Sub
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -132,7 +132,7 @@ End Sub
 [**Interface IWMPErrorItem (VB e C#)**](iwmperroritem--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings. enableErrorDialogs (VB e C#)**](wmplibiwmpsettings-iwmpsettings-enableerrordialogs--vb-and-c.md)
+[**IWMPSettings.enableErrorDialogs (VB e C#)**](wmplibiwmpsettings-iwmpsettings-enableerrordialogs--vb-and-c.md)
 </dt> </dl>
 
  

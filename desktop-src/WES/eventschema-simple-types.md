@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 88d9bb5253c3d902f384eb1bbe8205f8479cb6c8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fe389bfa64032558ed7e08ace68efba78630898793a644cae96d3de6b42e7afd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118588174"
 ---
 # <a name="event-schema-simple-types"></a>Tipos simples de esquema de evento
 
@@ -24,9 +24,9 @@ A seguir estão os tipos simples que o esquema de evento define.
 
 | Tipo simples                                                 | Descrição                                                               |
 |-------------------------------------------------------------|---------------------------------------------------------------------------|
-| [**GUIDtype**](eventschema-guidtype-simpletype.md)         | Define um tipo de identificador global exclusivo, no formato de registro.<br/> |
+| [**GUIDType**](eventschema-guidtype-simpletype.md)         | Define um tipo de identificador global exclusivo, no formato registro.<br/> |
 | [**HexInt32Type**](eventschema-hexint32type-simpletype.md) | Define um tipo hexadecimal de 1 byte.<br/>                             |
-| [**HexInt64Type**](eventschema-hexint64type-simpletype.md) | Define um tipo hexadecimal de 8 bytes.<br/>                            |
+| [**HexInt64Type**](eventschema-hexint64type-simpletype.md) | Define um tipo hexadecimal de 8 byte.<br/>                            |
 
 
 

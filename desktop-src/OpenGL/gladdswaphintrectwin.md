@@ -1,9 +1,9 @@
 ---
-title: função glAddSwapHintRectWIN (GL. h)
-description: A função de retorno de chamada glAddSwapHintRectWIN especifica um conjunto de retângulos que devem ser copiados pelo SwapBuffers.
+title: Função glAddSwapHintRectWIN (Gl.h)
+description: A função de retorno de chamada glAddSwapHintRectWIN especifica um conjunto de retângulos que devem ser copiados por SwapBuffers.
 ms.assetid: f242e755-8e8a-471a-9884-47efa22a3de6
 keywords:
-- função glAddSwapHintRectWIN OpenGL
+- Função glAddSwapHintRectWIN OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ae3e10c2f51ff8d7c9763ff1dad7d09d800cd60
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 75077ac2a93e3e952ae3c3daca3ea847f7b4b0efc340da0e980b1a4bec6efa64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118618046"
 ---
-# <a name="gladdswaphintrectwin-function"></a>função glAddSwapHintRectWIN
+# <a name="gladdswaphintrectwin-function"></a>Função glAddSwapHintRectWIN
 
-A função de retorno de chamada **glAddSwapHintRectWIN** especifica um conjunto de retângulos que devem ser copiados pelo [**SwapBuffers**](/windows/desktop/api/wingdi/nf-wingdi-swapbuffers).
+A função de retorno de chamada **glAddSwapHintRectWIN** especifica um conjunto de retângulos que devem ser copiados por [**SwapBuffers.**](/windows/desktop/api/wingdi/nf-wingdi-swapbuffers)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,14 +46,14 @@ void WINAPI glAddSwapHintRectWIN(
 *x* 
 </dt> <dd>
 
-A coordenada *x*(em coordenadas de janela) do canto inferior esquerdo do retângulo da região de dica.
+A *coordenada x*(em coordenadas de janela) do canto inferior esquerdo do retângulo da região de dica.
 
 </dd> <dt>
 
 *y* 
 </dt> <dd>
 
-A coordenada *y*(em coordenadas de janela) do canto inferior esquerdo do retângulo da região de dica.
+A *coordenada y*(em coordenadas de janela) do canto inferior esquerdo do retângulo da região de dica.
 
 </dd> <dt>
 
@@ -77,16 +77,16 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-A função **glAddSwapHintRectWIN** acelera a animação, reduzindo a quantidade de repintura entre quadros. Com o **glAddSwapHintRectWIN**, você especifica um conjunto de áreas retangulares que deseja copiar ao chamar [**SwapBuffers**](/windows/desktop/api/wingdi/nf-wingdi-swapbuffers). Quando você não especificar retângulos com **glAddSwapHintRectWIN** antes de chamar **SwapBuffers**, a framebuffer inteira será trocada. O uso de **glAddSwapHintRectWIN** para copiar apenas partes alteradas do buffer pode aumentar significativamente o desempenho do **SwapBuffers**, especialmente quando o **SwapBuffers** é implementado no software.
+A **função glAddSwapHintRectWIN** acelera a animação reduzindo a quantidade de reainting entre quadros. Com **glAddSwapHintRectWIN**, você especifica um conjunto de áreas retangulares que deseja copiar ao chamar [**SwapBuffers**](/windows/desktop/api/wingdi/nf-wingdi-swapbuffers). Quando você não especifica nenhum retângulo com **glAddSwapHintRectWIN** antes de chamar **SwapBuffers,** todo o framebuffer é trocado. Usar **glAddSwapHintRectWIN** para copiar apenas partes alteradas do buffer pode aumentar significativamente o desempenho de **SwapBuffers,** especialmente quando **SwapBuffers** é implementado no software.
 
-A função **glAddSwapHintRectWIN** adiciona um retângulo à região de dica. Quando o \_ \_ sinalizador de cópia de permuta PFD da estrutura de formato [**PIXELFORMATDESCRIPTOR**](/windows/win32/api/wingdi/ns-wingdi-pixelformatdescriptor) pixel é definido, **SwapBuffers** usa essa região para recortar a cópia do buffer de fundo para o buffer frontal. Você não especifica \_ \_ a cópia de permuta PFD; ela é definida pelo hardware compatível. A região de dica é desmarcada após cada chamada para **SwapBuffers**. Com algumas configurações de hardware, o **SwapBuffers** pode ignorar a região de dicas e trocar o buffer inteiro. O **SwapBuffers** é implementado pelo sistema, não pelo aplicativo.
+A **função glAddSwapHintRectWIN** adiciona um retângulo à região de dica. Quando o sinalizador PFD SWAP COPY da estrutura de formato de \_ \_ pixel [**PIXELFORMATDESCRIPTOR**](/windows/win32/api/wingdi/ns-wingdi-pixelformatdescriptor) é definido, **SwapBuffers** usa essa região para cortar a cópia do buffer de fundo para o buffer frontal. Você não especifica PFD \_ SWAP \_ COPY; ele é definido pelo hardware com capacidade. A região de dica é limpa após cada chamada para **SwapBuffers.** Com algumas configurações de hardware, **SwapBuffers** pode ignorar a região de dica e trocar todo o buffer. **SwapBuffers** é implementado pelo sistema, não pelo aplicativo.
 
-O OpenGL mantém uma região de dica separada para cada janela. Quando você chama **glAddSwapHintRectWIN** em quaisquer contextos de renderização associados a uma janela, os retângulos de dica são combinados em uma única região.
+O OpenGL mantém uma região de dica separada para cada janela. Quando você chama **glAddSwapHintRectWIN** em todos os contextos de renderização associados a uma janela, os retângulos de dica são combinados em uma única região.
 
 Chame **glAddSwapHintRectWIN** com um retângulo delimitador para cada objeto desenhado para um quadro e para cada retângulo limpo para apagar objetos de quadro anteriores.
 
 > [!Note]  
-> A função **glAddSwapHintRectWIN** é uma função de extensão que não faz parte da biblioteca OpenGL padrão, mas faz parte da \_ extensão de dica GL Win \_ swap \_ . Para verificar se a implementação do OpenGL dá suporte a **glAddSwapHintRectWIN**, chame **glGetString**( \_ extensões GL). Se retornar a \_ dica GL Win \_ swap \_ , **glAddSwapHintRectWIN** terá suporte. Para obter o endereço de uma função de extensão, chame **wglGetProcAddress**.
+> A **função glAddSwapHintRectWIN** é uma função de extensão que não faz parte da biblioteca OpenGL padrão, mas faz parte da extensão de dica de troca GL \_ \_ \_ WIN. Para verificar se sua implementação do OpenGL dá suporte **a glAddSwapHintRectWIN**, chame **glGetString**(GL \_ EXTENSIONS). Se ele retornar a \_ dica de troca GL \_ \_ WIN, **glAddSwapHintRectWIN** será suportado. Para obter o endereço de uma função de extensão, chame **wglGetProcAddress**.
 
  
 
@@ -98,7 +98,7 @@ Chame **glAddSwapHintRectWIN** com um retângulo delimitador para cada objeto de
 |-------------------------------------|---------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                      |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                            |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl> |
 
 
 

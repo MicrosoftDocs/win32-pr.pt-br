@@ -3,21 +3,21 @@ title: Conceitos básicos (DirectComposition)
 description: Este tópico fornece uma visão geral dos conceitos básicos do Microsoft DirectComposition.
 ms.assetid: F442BDCA-C913-4438-BFFA-D3F28B68EE85
 keywords:
-- Conceitos de DirectComposition
+- Conceitos do DirectComposition
 - Conceitos básicos do DirectComposition
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0550dc12cb0dcc5262701658d8e3883ee1ce8d82
-ms.sourcegitcommit: 73417d55867c804274a55abe5ca71bcba7006119
+ms.openlocfilehash: 4c2dadcea55ec18089380d7dbe17d99e5dba92b06dd15774c43cd604f28f991c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104561857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118282001"
 ---
 # <a name="basic-concepts"></a>Conceitos básicos
 
 > [!NOTE]
-> Para aplicativos no Windows 10, é recomendável usar APIs do Windows. UI. composição em vez de DirectComposition. Para obter mais informações, consulte [modernizar seu aplicativo de área de trabalho usando a camada Visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> Para aplicativos Windows 10, recomendamos o uso de APIs Windows.UI.Composition em vez de DirectComposition. Para obter mais informações, consulte [Modernizar seu aplicativo da área de trabalho usando a camada visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
 Este tópico fornece uma visão geral dos conceitos básicos do Microsoft DirectComposition. Ele contém as seções a seguir:
 
@@ -26,50 +26,50 @@ Este tópico fornece uma visão geral dos conceitos básicos do Microsoft Direct
     -   [Árvore visual](#visual-tree)
     -   [Propriedades de um objeto visual](#properties-of-a-visual-object)
 -   [Objeto de dispositivo](#device-object)
--   [Janela de destino da composição](#composition-target-window)
+-   [Janela de destino de composição](#composition-target-window)
 -   [Composição transacional](#transactional-composition)
     -   [Separação em lotes](#batching)
     -   [Sincronização](#synchronization)
-    -   [Árvores visuais de dispositivos cruzados](#cross-device-visual-trees)
+    -   [Árvores visuais entre dispositivos](#cross-device-visual-trees)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="composition"></a>Composição
 
-DirectComposition define uma *composição* como uma coleção de bitmaps que são combinados e manipulados aplicando-se várias transformações, efeitos e animações para produzir um resultado Visual em uma interface do usuário do aplicativo. DirectComposition funciona apenas com conteúdo de bitmap; Ele não oferece suporte a vetores ou texto. DirectComposition não fornece conteúdo de bitmap. Em vez disso, ele fornece interfaces nas quais os usuários podem desenhar com D2D, DXGI ou carregar seu próprio conteúdo de textura.
+DirectComposition define  uma composição como uma coleção de bitmaps que são combinados e manipulados aplicando várias transformações, efeitos e animações para produzir um resultado visual em uma interface do usuário do aplicativo. DirectComposition funciona apenas com conteúdo de bitmap; ele não dá suporte a vetores ou texto. DirectComposition não fornece conteúdo de bitmap. Em vez disso, ele fornece interfaces nas quais os usuários podem desenhar com D2D, DXGI ou carregar seu próprio conteúdo de textura.
 
-Um aplicativo DirectComposition cria dois conjuntos de objetos para compor uma cena: bitmaps que são compostos juntos e visuais que definem as relações espaciais entre os bitmaps. Para obter mais informações sobre os objetos bitmap com suporte do DirectComposition, consulte [objetos de bitmap](bitmap-surfaces.md).
+Um aplicativo DirectComposition cria dois conjuntos de objetos para compor uma cena: bitmaps compostos juntos e visuais que definem as relações espaciais entre os bitmaps. Para obter mais informações sobre os objetos de bitmap com suporte pelo DirectComposition, consulte [Objetos bitmap](bitmap-surfaces.md).
 
 ## <a name="visuals"></a>Visuais
 
-Os *visuais* (ou *objetos visuais*) são os elementos fundamentais de DirectComposition. Eles são os blocos de construção básicos que você usa para criar composições e animações na interface do usuário do aplicativo.
+*Os visuais* (ou *objetos visuais*) são os elementos fundamentais do DirectComposition. Eles são os blocos de construção básicos que você usa para criar composições e animações na interface do usuário do aplicativo.
 
-Em termos de programação, um Visual é um objeto que tem um conjunto de propriedades e expõe uma interface que você usa para definir o valor das propriedades. A propriedade de conteúdo de um visual associa um bitmap específico ao Visual, enquanto outras propriedades controlam como o DirectComposition posiciona e manipula o Visual conforme ele é renderizado na tela.
+Em termos de programação, um visual é um objeto que tem um conjunto de propriedades e expõe uma interface que você usa para definir o valor das propriedades. A propriedade Content de um visual associa um bitmap específico ao visual, enquanto outras propriedades controlam como DirectComposition posiciona e manipula o visual conforme ele é renderizado na tela.
 
-Para obter mais informações, consulte [Propriedades de um Visual](#properties-of-a-visual-object).
+Para obter mais informações, [consulte Propriedades de um Visual](#properties-of-a-visual-object).
 
 ### <a name="visual-tree"></a>Árvore visual
 
-DirectComposition cria uma composição de uma coleção hierárquica de objetos visuais chamada de *árvore visual*. O Visual na raiz de uma árvore é chamado de *Visual raiz* e pode ter um ou mais *elementos visuais filho* associados a ele. Um Visual filho pode ter um ou mais elementos visuais filho próprios. Qualquer visual que tenha elementos visuais filho associados é chamado de *Visual pai*, e todos os visuais filho que compartilham o mesmo pai são chamados de *visuais irmãos*. Um Visual específico, juntamente com todos os seus elementos visuais filho e descendentes, é chamado de *subárvore Visual*.
+DirectComposition cria uma composição de uma coleção hierárquica de objetos visuais chamada árvore *visual*. O visual na raiz de uma árvore é chamado de *visual raiz* e pode ter um ou mais visuais filho *associados* a ele. Um visual filho pode ter um ou mais visuais filho próprios. Qualquer visual que tenha visuais filho associados é chamado de *visual* pai e todos os visuais filho que compartilham o mesmo pai são chamados de *visuais irmãos.* Um visual específico, juntamente com todos os seus visuais filho e descendentes, é chamado de *subárvore visual*.
 
-O local de um Visual na árvore ajuda a determinar sua posição de tela e ordem z em relação aos outros visuais na composição. O Visual raiz é posicionado em relação ao canto superior esquerdo da área do cliente da janela de destino em que a composição é renderizada. Todos os visuais filho são posicionados em relação ao canto superior esquerdo de seus elementos visuais pai (ou o Visual especificado pela propriedade TransformParent) e sempre aparecem na frente de seu pai na ordem z.
+O local de um visual na árvore ajuda a determinar sua posição de tela e a ordem z em relação aos outros visuais na composição. O visual raiz é posicionado em relação ao canto superior esquerdo da área do cliente da janela de destino em que a composição é renderizada. Todos os visuais filho são posicionados em relação ao canto superior esquerdo do visual pai (ou o visual especificado pela propriedade TransformParent) e sempre aparecem na frente do pai na ordem z.
 
-A ilustração a seguir mostra uma composição de visuais e a estrutura da árvore visual usada para produzir a composição. O Visual 1 é o Visual raiz e também é o pai dos elementos visuais filho 2 e 3, que são elementos visuais irmãos. O Visual 3 tem dois elementos visuais filho próprios, visuais 4 e 5. Juntos, os visuais 3 a 5 compõem uma subárvore Visual.
+A ilustração a seguir mostra uma composição de visuais e a estrutura da árvore visual usada para produzir a composição. O Visual 1 é o visual raiz e também é o pai dos Visuais filho 2 e 3, que são visuais irmãos. O Visual 3 tem dois visuais filho próprios, Os Visuais 4 e 5. Juntos, os Visuais 3 a 5 comem uma subárvore visual.
 
 ![uma composição de visuais e a árvore visual correspondente](images/visuals-and-corresponding-tree.png)
 
-Um visual pai mantém uma lista ordenada de seus visuais filho. Quando visuais irmãos são posicionados de forma que se sobreponham um ao outro, DirectComposition define a ordem z dos irmãos com base na ordem em que eles aparecem na lista de filhos do Visual pai. Um irmão que aparece posteriormente na lista é colocado na frente de todos os irmãos que aparecem anteriormente na lista. A ilustração a seguir mostra a ordem z de sobreposição de elementos visuais filho.
+Um visual pai mantém uma lista ordenada de seus visuais filho. Quando os visuais irmãos são posicionados de modo que eles se sobreponham, DirectComposition define a ordem z dos irmãos com base na ordem em que aparecem na lista de filhos do visual pai. Um irmão que aparece posteriormente na lista é colocado na frente de todos os irmãos que aparecem anteriormente na lista. A ilustração a seguir mostra a ordem z dos visuais filho sobrepostos.
 
-![a ordem z de sobreposição de visuais filho](images/overlapping-child-visuals.png)
+![a ordem z dos visuais filho sobrepostos](images/overlapping-child-visuals.png)
 
 ### <a name="properties-of-a-visual-object"></a>Propriedades de um objeto visual
 
-Um objeto visual expõe um conjunto de propriedades que permitem que você defina o conteúdo do bitmap para o Visual e controle como o DirectComposition posiciona e manipula o conteúdo visual. As seções a seguir descrevem cada propriedade em detalhes.
+Um objeto visual expõe um conjunto de propriedades que permitem definir o conteúdo do bitmap para o visual e controlar como o DirectComposition posiciona e manipula o conteúdo visual. As seções a seguir descrevem cada propriedade em detalhes.
 
 -   [Propriedade de conteúdo](#content-property)
--   [Propriedade de clipe](#clip-property)
--   [Propriedade bordermode](#bordermode-property)
+-   [Propriedade Clip](#clip-property)
+-   [Propriedade BorderMode](#bordermode-property)
 -   [Propriedade BitmapInterpolationMode](#bitmapinterpolationmode-property)
--   [Propriedade compositemode](#compositemode-property)
+-   [Propriedade CompositeMode](#compositemode-property)
 -   [Propriedades OffsetX e OffsetY](#offsetx-and-offsety-properties)
 -   [Propriedade Effect](#effect-property)
 -   [Propriedade Transform](#transform-property)
@@ -77,53 +77,53 @@ Um objeto visual expõe um conjunto de propriedades que permitem que você defin
 
 ### <a name="content-property"></a>Propriedade de conteúdo
 
-A propriedade de conteúdo de um Visual especifica o conteúdo de bitmap associado ao Visual. Esse é o bitmap que o DirectComposition usa quando você inclui o Visual em uma composição.
+A propriedade Content de um visual especifica o conteúdo do bitmap associado ao visual. Esse é o bitmap que o DirectComposition usa quando você inclui o visual em uma composição.
 
-Você define a propriedade Content de um Visual chamando o método [**IDCompositionVisual:: setContent**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setcontent) .
+Você pode definir a propriedade Content de um visual chamando o [**método IDCompositionVisual::SetContent.**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setcontent)
 
-Para obter mais informações sobre os tipos de conteúdo de bitmap com suporte do DirectComposition, consulte [objetos de bitmap](bitmap-surfaces.md).
+Para obter mais informações sobre os tipos de conteúdo de bitmap com suporte pelo DirectComposition, consulte [Objetos bitmap](bitmap-surfaces.md).
 
-### <a name="clip-property"></a>Propriedade de clipe
+### <a name="clip-property"></a>Propriedade Clip
 
-A propriedade Clip de um Visual especifica uma área retangular chamada região de *recorte* (ou *retângulo de clipe*). Quando um Visual é renderizado, somente a parte do Visual que fica dentro da região de recorte é exibida, enquanto qualquer conteúdo que se estende para fora da região de recorte é recortado (ou seja, não é exibido). O DirectComposition dá suporte a regiões de recorte que têm cantos arredondados ou quadrados.
+A propriedade Clip de um visual especifica uma área retangular chamada região *de recorte* (ou retângulo *de recorte*). Quando um visual é renderizado, somente a parte do visual que está dentro da região de recorte é exibida, enquanto qualquer conteúdo que se estende para fora da região de recorte é recortado (ou seja, não exibido). O DirectComposition dá suporte a regiões de recorte que têm cantos arredondados ou quadrados.
 
-Você define a propriedade Clip de um Visual chamando o método [**IDCompositionVisual:: SetClip**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setclip(constd2d_rect_f_)) .
+Você pode definir a propriedade Clip de um visual chamando o [**método IDCompositionVisual::SetClip.**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setclip(constd2d_rect_f_))
 
-Para obter mais informações, consulte [recorte](clipping.md).
+Para obter mais informações, consulte [Recorte](clipping.md).
 
-### <a name="bordermode-property"></a>Propriedade bordermode
+### <a name="bordermode-property"></a>Propriedade BorderMode
 
-A propriedade Bordermode especifica como compor as bordas de bitmaps e clipes associados a esse visual, ou com elementos visuais na subárvore com raiz neste visual.
+A propriedade BorderMode especifica como compor as bordas de bitmaps e clipes associados a esse visual ou com visuais na subárvore com raiz neste visual.
 
-O modo de borda afeta como as bordas de um bitmap são compostas quando o bitmap é transformado de modo que as bordas não são alinhadas ao eixo com coordenadas de inteiros. Ele também afeta como o conteúdo é recortado nos cantos de um clipe que tem cantos arredondados e na borda de um clipe que é transformado de modo que as bordas não são alinhadas ao eixo com coordenadas de inteiros.
+O modo de borda afeta como as bordas de um bitmap são compostas quando o bitmap é transformado de modo que as bordas não sejam alinhadas por eixo com coordenadas de inteiro. Ele também afeta como o conteúdo é recortado nos cantos de um clipe que tem cantos arredondados e na borda de um clipe transformado de modo que as bordas não estejam alinhadas ao eixo com coordenadas de inteiro.
 
-Para obter mais informações, consulte [**IDCompositionVisual:: Setbordermode**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setbordermode).
+Para obter mais informações, [**consulte IDCompositionVisual::SetBorderMode**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setbordermode).
 
 ### <a name="bitmapinterpolationmode-property"></a>Propriedade BitmapInterpolationMode
 
-A propriedade BitmapInterpolationMode informa ao DirectComposition como compor um bitmap quando ele é transformado para que não haja uma correspondência de um para um entre pixels no bitmap e em pixels na tela.
+A propriedade BitmapInterpolationMode informa ao DirectComposition como compor um bitmap quando ele é transformado de modo que não haja correspondência um-para-um entre pixels no bitmap e pixels na tela.
 
-Você define a propriedade BitmapInterpolationMode de um Visual chamando o método [**IDCompositionVisual:: SetBitmapInterpolationMode**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setbitmapinterpolationmode) .
+Você pode definir a propriedade BitmapInterpolationMode de um visual chamando o [**método IDCompositionVisual::SetBitmapInterpolationMode.**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setbitmapinterpolationmode)
 
-### <a name="compositemode-property"></a>Propriedade compositemode
+### <a name="compositemode-property"></a>Propriedade CompositeMode
 
-A propriedade Compositemode informa ao DirectComposition como misturar o conteúdo de bitmap de um Visual com o destino de renderização. Para obter uma descrição dos modos compostos com suporte, [**consulte \_ \_ modo composto DCOMPOSITION**](/windows/desktop/api/DcompTypes/ne-dcomptypes-dcomposition_composite_mode).
+A propriedade CompositeMode informa Ao DirectComposition como combinar o conteúdo de bitmap de um visual com o destino de renderização. Para ver uma descrição dos modos compostos com suporte, consulte [**DCOMPOSITION \_ COMPOSITE \_ MODE**](/windows/desktop/api/DcompTypes/ne-dcomptypes-dcomposition_composite_mode).
 
-Você define a propriedade Compositemode de um Visual chamando o método [**IDCompositionVisual:: Setcompostomode**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setcompositemode) .
+Você pode definir a propriedade CompositeMode de um visual chamando o [**método IDCompositionVisual::SetCompositeMode.**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setcompositemode)
 
 ### <a name="offsetx-and-offsety-properties"></a>Propriedades OffsetX e OffsetY
 
-As propriedades OffsetX e OffsetY dizem ao DirectComposition onde posicionar um Visual horizontal e verticalmente. Elas definem a posição fixa bidimensional da qual todas as transformações e efeitos do Visual são calculados.
+As propriedades OffsetX e OffsetY dizem ao DirectComposition onde posicionar um visual horizontal e verticalmente. Eles definem a posição fixa bidimensional da qual todas as transformaçãos e efeitos para o visual são calculados.
 
-Para um visual raiz, as propriedades OffsetX e OffsetY definem a coordenada x e a coordenada y de um ponto em relação ao canto superior esquerdo da janela que hospeda o Visual. Para um Visual filho, as coordenadas são relativas ao canto superior esquerdo do pai ou, se a [Propriedade TransformParent](#transformparent-property) for especificada, o canto superior esquerdo do Visual especificado. Quando um Visual é renderizado, ele é posicionado de modo que o canto superior esquerdo do Visual coincida com as coordenadas especificadas.
+Para um visual raiz, as propriedades OffsetX e OffsetY definem a coordenada x e a coordenada y de um ponto em relação ao canto superior esquerdo da janela que hospeda o visual. Para um visual filho, as coordenadas são relativas ao canto superior esquerdo do pai ou, se a propriedade [TransformParent](#transformparent-property) for especificada, o canto superior esquerdo do visual especificado. Quando um visual é renderizado, ele é posicionado de forma que o canto superior esquerdo do visual coincide com as coordenadas especificadas.
 
-Você define as propriedades OffsetX e OffsetY de um Visual chamando os métodos [**IDCompositionVisual:: SetOffsetX**](/previous-versions/windows/desktop/legacy/hh449126(v=vs.85)) e [**setdeslocy**](/previous-versions/windows/desktop/legacy/hh449131(v=vs.85)) .
+Você pode definir as propriedades OffsetX e OffsetY de um visual chamando os métodos [**IDCompositionVisual::SetOffsetX**](/previous-versions/windows/desktop/legacy/hh449126(v=vs.85)) e [**SetOffsetY.**](/previous-versions/windows/desktop/legacy/hh449131(v=vs.85))
 
 ### <a name="effect-property"></a>Propriedade Effect
 
-A Propriedade Effect permite especificar um efeito, ou um grupo de efeitos, que modificará como um Visual e sua subárvore são compostos. Por exemplo, você pode especificar efeitos que controlam a opacidade de um Visual, misturar o Visual com outro bitmap de várias maneiras e aplicar transformações de perspectiva ao Visual.
+A propriedade Effect permite especificar um efeito ou um grupo de efeitos que modificará como um visual e sua subárvore são compostos. Por exemplo, você pode especificar efeitos que controlam a opacidade de um visual, combinar o visual com outro bitmap de várias maneiras e aplicar as transformação de perspectiva ao visual.
 
-Você define a Propriedade Effect de um Visual chamando o método [**IDCompositionVisual:: seteffect**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-seteffect) .
+Você pode definir a propriedade Effect de um visual chamando o [**método IDCompositionVisual::SetEffect.**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-seteffect)
 
 Para obter mais informações, veja [Efeitos](effects.md).
 
@@ -229,6 +229,6 @@ Normalmente, o thread da interface do usuário modifica apenas os visuais que el
 [Conceitos de DirectComposition](directcomposition-concepts.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 32bc213aa67e87eb8af0643a15f16b298cfb3204
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 082519cc70782150b7e3f43ffd0849a8606b2e0c9bb3d1a62b4a8843734ebd4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104172789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118273185"
 ---
 # <a name="performservervalidation-peapextensionstype-element-v2-schema"></a>Elemento PerformServerValidation (PeapExtensionsType) (esquema v2)
 
@@ -43,8 +43,8 @@ O elemento **PerformServerValidation** é opcional.
 
 | Função | Versão mínima do SO |
 |------|--------------------|
-| Cliente<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>              |
+| Servidor<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/> |
 
 
 

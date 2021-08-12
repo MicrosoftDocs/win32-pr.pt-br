@@ -1,26 +1,26 @@
 ---
-title: Atributo CoordOrigin de VML
-description: Atributo CoordOrigin de VML
+title: Atributo CoordOrigin do VML
+description: Atributo CoordOrigin do VML
 ms.assetid: 0630e670-6ebe-424e-a5e0-545597454283
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb08d35aac7e26cc15aa7699439ea9f7ab4dba94
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: cf568f2c305108a651d56a891a96890154f9493cbadd80a9c5610414c88f4f03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103823793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118601936"
 ---
-# <a name="vml-coordorigin-attribute"></a>Atributo CoordOrigin de VML
+# <a name="vml-coordorigin-attribute"></a>Atributo CoordOrigin do VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Especifica a origem da unidade de coordenadas do retângulo que vincula uma forma. Leitura/gravação. [IVgVector2D](msdn-online-vml-ivgvector2d-data-type.md).
+Especifica a origem da unidade de coordenadas do retângulo que delimita uma forma. Leitura/gravação. [IVgVector2D.](msdn-online-vml-ivgvector2d-data-type.md)
 
 **Aplica-se a**
 
@@ -28,29 +28,29 @@ Especifica a origem da unidade de coordenadas do retângulo que vincula uma form
 
 **Sintaxe de marca**
 
-<v: *Element* coordorigin = " *expressão* " >
+<v: *elemento* coordorigin=" *expressão* ">
 
 **Sintaxe do script**
 
-*Element* . coordorigin = "*expressão*"
+*element* .coordorigin="*expression*"
 
-*expressão* = de *elemento*. coordorigin
+*expressão* = *elemento*.coordorigin
 
 **Comentários**
 
-Se não for especificado, as coordenadas de origem serão (0, 0) no canto superior esquerdo da caixa delimitadora de forma.
+Se não for especificado, as coordenadas de origem serão (0,0) no canto superior esquerdo da caixa delimitada por forma.
 
-O valor x de **CoordSize** é adicionado ao valor x de **CoordOrigin** para determinar o intervalo dos valores horizontais. Por exemplo, se o valor x de **CoordOrigin** for-100 e o valor x de **CoordSize** for 200, as unidades horizontais irão variar de-100 a + 100. Se o valor x de **CoordOrigin** for 100 e o valor x de **CoordSize** for 200, as unidades horizontais irão variar de 100 a 300, tudo dentro da caixa delimitadora. O mesmo é verdadeiro para os valores y.
+O valor x de **CoordSize** é adicionado ao valor x de **CoordOrigin** para determinar o intervalo dos valores horizontais. Por exemplo, se o valor x de **CoordOrigin** for -100 e o valor x de **CoordSize** for 200, as unidades horizontais variarão de -100 a +100. Se o valor x de **CoordOrigin** for 100 e o valor x de **CoordSize** for 200, as unidades horizontais variarão de 100 a 300, tudo dentro da caixa delimitada. O mesmo é verdadeiro para os valores y.
 
 Observe que esse atributo é um vetor e que as unidades são do mesmo tipo de unidade que [CoordSize](msdn-online-vml-coordsize-attribute.md) .
 
 No script, como esse é um vetor 2D, você pode acessar os valores x e y separadamente e também pode determinar o tipo de unidades esperado.
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
-O centro da caixa delimitadora será a origem (0, 0) do caminho para a forma. Como **CoordOrigin** é "-500-500" e **CoordSize** é "1000 1000", as unidades horizontais e verticais vão variar de-500 a + 500. O canto esquerdo e superior do caminho estará no centro da caixa delimitadora definida pelos pontos esquerdo e superior, conforme definido pelo **estilo**.
+O centro da caixa delimitador será a origem (0,0) do caminho para a forma. Como **CoordOrigin** é "-500 -500" e **CoordSize** é "1000 1000", as unidades horizontais e verticais variam de -500 a +500. O canto superior e esquerdo do caminho estará no centro da caixa delimitador definida pelos pontos esquerdo e superior, conforme definido por **Style**.
 
 
 ```HTML
@@ -64,8 +64,8 @@ O centro da caixa delimitadora será a origem (0, 0) do caminho para a forma. Co
 
 
 
-[Exemplo do atributo CoordOrigin](/previous-versions/bb229664(v=vs.85)). (Requer o Microsoft Internet Explorer 5 ou superior.)
+[Exemplo de atributo CoordOrigin](/previous-versions/bb229664(v=vs.85)). (Requer o Microsoft Internet Explorer 5 ou superior.)
 
- 
+ 
 
- 
+ 

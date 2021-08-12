@@ -3,7 +3,7 @@ title: Autenticando o provedor de serviços
 description: Autenticando o provedor de serviços
 ms.assetid: e48a8a7c-0277-4f0c-bad2-5bc9d0286da8
 keywords:
-- Windows Media Gerenciador de Dispositivos, autenticação
+- Windows Gerenciador de Dispositivos de mídia, autenticação
 - Gerenciador de Dispositivos, autenticação
 - Guia de programação, autenticação
 - provedores de serviços, autenticação
@@ -11,22 +11,22 @@ keywords:
 - autenticação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 271bf5594e4adaede01bb8e3795780f8f5c5177a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 52d6931acb4644d4222659d428be10877deb164a184c95609663a915c12b95d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105760483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118586481"
 ---
 # <a name="authenticating-the-service-provider"></a>Autenticando o provedor de serviços
 
-Para ser acessível do Windows Media Gerenciador de Dispositivos, um provedor de serviços deve herdar e implementar a interface [**IComponentAuthenticate**](/windows/desktop/api/mswmdm/nn-mswmdm-icomponentauthenticate) .
+para ser acessível a partir de Windows Gerenciador de Dispositivos de mídia, um provedor de serviços deve herdar e implementar a interface [**IComponentAuthenticate**](/windows/desktop/api/mswmdm/nn-mswmdm-icomponentauthenticate) .
 
 Para se autenticar, um provedor de serviços executa as seguintes etapas:
 
 1.  Na instanciação, ele cria um novo objeto global [CSecureChannelServer](csecurechannelserver-class.md) e define os valores de certificado e chave de seu arquivo de chave.
 2.  Ele implementa os métodos [**IComponentAuthenticate:: SACAuth**](/windows/desktop/api/mswmdm/nf-mswmdm-icomponentauthenticate-sacauth) e [**IComponentAuthenticate:: SACGetProtocols**](/windows/desktop/api/mswmdm/nf-mswmdm-icomponentauthenticate-sacgetprotocols) simplesmente passando os parâmetros para seu membro CSecureChannelServer global.
-3.  Antes de manipular qualquer método implementado do Windows Media Gerenciador de Dispositivos, o provedor de serviços deve verificar a autenticação do chamador chamando CSecureChannelServer:: fIsAuthenticated e falhando se o chamador não estiver autenticado.
+3.  antes de manipular qualquer Windows de mídia implementada Gerenciador de Dispositivos métodos, o provedor de serviços deve verificar a autenticação do chamador chamando CSecureChannelServer:: fIsAuthenticated e falhando se o chamador não estiver autenticado.
 
 Essas etapas são mostradas nos exemplos de C++ a seguir.
 
@@ -137,9 +137,9 @@ STDMETHODIMP CMyServiceProvider::GetDeviceCount(DWORD * pdwCount)
 [**Criando um provedor de serviços**](creating-a-service-provider.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

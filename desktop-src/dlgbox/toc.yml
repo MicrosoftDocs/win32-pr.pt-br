@@ -1,7 +1,7 @@
 - name: Caixas de diálogo
   href: dialog-boxes.md
   items:
-    - name: Visões gerais da caixa de diálogo
+    - name: Visão geral da caixa de diálogo
       href: dialog-box-overviews.md
       items:
         - name: Sobre caixas de diálogo
@@ -16,49 +16,49 @@
         - name: Funções da caixa de diálogo
           href: dialog-box-functions.md
           items:
-            - name: CreateDialog
+            - name: Createdialog
               href: /windows/win32/api/Winuser/nf-winuser-createdialoga
-            - name: CreateDialogIndirect
+            - name: Createdialogindirect
               href: /windows/win32/api/Winuser/nf-winuser-createdialogindirecta
-            - name: CreateDialogIndirectParam
+            - name: Createdialogindirectparam
               href: /windows/win32/api/Winuser/nf-winuser-createdialogindirectparama
-            - name: CreateDialogParam
+            - name: Createdialogparam
               href: /windows/win32/api/Winuser/nf-winuser-createdialogparama
             - name: DefDlgProc
               href: /windows/win32/api/Winuser/nf-winuser-defdlgprocw
-            - name: Caixa
+            - name: Dialogbox
               href: /windows/win32/api/Winuser/nf-winuser-dialogboxa
-            - name: DialogBoxIndirect
+            - name: Dialogboxindirect
               href: /windows/win32/api/Winuser/nf-winuser-dialogboxindirecta
-            - name: DialogBoxIndirectParam
+            - name: Dialogboxindirectparam
               href: /windows/win32/api/Winuser/nf-winuser-dialogboxindirectparama
-            - name: DialogBoxParam
+            - name: Dialogboxparam
               href: /windows/win32/api/Winuser/nf-winuser-dialogboxparama
             - name: DLGPROC
               href: /windows/win32/api/winuser/nc-winuser-dlgproc
             - name: EndDialog
               href: /windows/win32/api/Winuser/nf-winuser-enddialog
-            - name: GetDialogBaseUnits
+            - name: Getdialogbaseunits
               href: /windows/win32/api/Winuser/nf-winuser-getdialogbaseunits
             - name: GetDlgCtrlID
               href: /windows/win32/api/Winuser/nf-winuser-getdlgctrlid
-            - name: GetDlgItem
+            - name: Getdlgitem
               href: /windows/win32/api/Winuser/nf-winuser-getdlgitem
             - name: GetDlgItemInt
               href: /windows/win32/api/Winuser/nf-winuser-getdlgitemint
-            - name: GetDlgItemText
+            - name: Getdlgitemtext
               href: /windows/win32/api/Winuser/nf-winuser-getdlgitemtexta
             - name: GetNextDlgGroupItem
               href: /windows/win32/api/Winuser/nf-winuser-getnextdlggroupitem
             - name: GetNextDlgTabItem
               href: /windows/win32/api/Winuser/nf-winuser-getnextdlgtabitem
-            - name: IsDialogMessage
+            - name: Isdialogmessage
               href: /windows/win32/api/Winuser/nf-winuser-isdialogmessagea
-            - name: MapDialogRect
+            - name: Mapdialogrect
               href: /windows/win32/api/Winuser/nf-winuser-mapdialogrect
             - name: MB_GetString
               href: mb-getstring.md
-            - name: MessageBox
+            - name: Messagebox
               href: /windows/win32/api/Winuser/nf-winuser-messagebox
             - name: MessageBoxEx
               href: /windows/win32/api/Winuser/nf-winuser-messageboxexa
@@ -66,11 +66,11 @@
               href: /windows/win32/api/Winuser/nf-winuser-messageboxindirecta
             - name: MSGBOXCALLBACK
               href: /windows/win32/api/winuser/nc-winuser-msgboxcallback
-            - name: SendDlgItemMessage
+            - name: Senddlgitemmessage
               href: /windows/win32/api/Winuser/nf-winuser-senddlgitemmessagea
             - name: SetDlgItemInt
               href: /windows/win32/api/Winuser/nf-winuser-setdlgitemint
-            - name: SetDlgItemText
+            - name: Setdlgitemtext
               href: /windows/win32/api/Winuser/nf-winuser-setdlgitemtexta
         - name: Mensagens da caixa de diálogo
           href: dialog-box-messages.md
@@ -90,51 +90,51 @@
               href: wm-enteridle.md
             - name: WM_GETDLGCODE
               href: wm-getdlgcode.md
-            - name: WM_INITDIALOG
+            - name: Wm_initdialog
               href: wm-initdialog.md
             - name: WM_NEXTDLGCTL
               href: wm-nextdlgctl.md
         - name: Estruturas da caixa de diálogo
           href: dialog-box-structures.md
           items:
-            - name: DLGITEMTEMPLATE
+            - name: Dlgitemtemplate
               href: /windows/win32/api/Winuser/ns-winuser-dlgitemtemplate
             - name: DLGITEMTEMPLATEEX
               href: dlgitemtemplateex.md
-            - name: DLGTEMPLATE
+            - name: Dlgtemplate
               href: /windows/win32/api/Winuser/ns-winuser-dlgtemplate
             - name: DLGTEMPLATEEX
               href: dlgtemplateex.md
             - name: MSGBOXPARAMS
               href: /windows/win32/api/Winuser/ns-winuser-msgboxparamsa
-        - name: Estilos de caixa de diálogo
+        - name: Estilos da caixa de diálogo
           href: dialog-box-styles.md
-    - name: Biblioteca de caixa de diálogo comum
+    - name: Biblioteca de caixas de diálogo comuns
       href: common-dialog-box-library.md
       items:
-        - name: Visões gerais da biblioteca de caixas de diálogo comuns
+        - name: Visão geral da biblioteca de caixas de diálogo comuns
           href: common-dialog-box-library-overviews.md
           items:
-            - name: Tipos de caixas de diálogo comuns
+            - name: Tipos comuns de caixa de diálogo
               href: dialog-box-types.md
               items:
                 - name: Caixa de diálogo Cor
                   href: color-dialog-box.md
-                - name: Caixas de diálogo Localizar e substituir
+                - name: Caixas de diálogo Encontrar e Substituir
                   href: find-and-replace-dialog-boxes.md
                 - name: Caixa de diálogo de fonte
                   href: font-dialog-box.md
-                - name: Caixas de diálogo abrir e salvar como
+                - name: Caixas de diálogo Abrir e Salvar como
                   href: open-and-save-as-dialog-boxes.md
                 - name: Caixa de diálogo Configurar Página
                   href: page-setup-dialog-box.md
                 - name: Caixa de diálogo Imprimir
                   href: print-dialog-box.md
-                - name: Imprimir folha de propriedades
+                - name: Folha de propriedades de impressão
                   href: print-property-sheet.md
-            - name: Sinalizadores de inicialização de caixa de diálogo comum
+            - name: Sinalizadores comuns de inicialização da caixa de diálogo
               href: common-dialog-box-initialization-flags.md
-            - name: Personalizando caixas de diálogo comuns
+            - name: Personalização de caixas de diálogo comuns
               href: customizing-common-dialog-boxes.md
             - name: Usando caixas de diálogo comuns
               href: using-common-dialog-boxes.md
@@ -148,41 +148,41 @@
                   href: /windows/win32/api/commdlg/nc-commdlg-lpcchookproc
                 - name: LPCFHOOKPROC
                   href: /windows/win32/api/commdlg/nc-commdlg-lpcfhookproc
-                - name: ChooseColor
+                - name: Choosecolor
                   href: /previous-versions/windows/win32/legacy/ms646912(v=vs.85)
-                - name: ChooseFont
+                - name: Choosefont
                   href: /windows/win32/api/Commdlg/ns-commdlg-choosefonta
-                - name: CommDlgExtendedError
+                - name: Commdlgextendederror
                   href: /windows/win32/api/Commdlg/nf-commdlg-commdlgextendederror
-                - name: FindText
+                - name: Findtext
                   href: /windows/win32/api/Commdlg/nf-commdlg-findtexta
                 - name: LPFRHOOKPROC
                   href: /windows/win32/api/commdlg/nc-commdlg-lpfrhookproc
-                - name: GetFileTitle
+                - name: Getfiletitle
                   href: /windows/win32/api/Commdlg/nf-commdlg-getfiletitlea
-                - name: GetOpenFileName
+                - name: Getopenfilename
                   href: /windows/win32/api/Commdlg/nf-commdlg-getopenfilenamea
-                - name: GetSaveFileName
+                - name: Getsavefilename
                   href: /windows/win32/api/Commdlg/nf-commdlg-getsavefilenamea
                 - name: LPOFNHOOKPROC
                   href: /windows/win32/api/commdlg/nc-commdlg-lpofnhookproc
                 - name: LPPAGEPAINTHOOK
                   href: /windows/win32/api/commdlg/nc-commdlg-lppagepainthook
-                - name: PageSetupDlg
+                - name: Pagesetupdlg
                   href: /previous-versions/windows/win32/legacy/ms646937(v=vs.85)
                 - name: LPPAGESETUPHOOK
                   href: /windows/win32/api/commdlg/nc-commdlg-lppagesetuphook
-                - name: PrintDlg
+                - name: Printdlg
                   href: /previous-versions/windows/win32/legacy/ms646940(v=vs.85)
-                - name: PrintDlgEx
+                - name: Printdlgex
                   href: /previous-versions/windows/win32/legacy/ms646942(v=vs.85)
                 - name: LPPRINTHOOKPROC
                   href: /windows/win32/api/commdlg/nc-commdlg-lpprinthookproc
-                - name: ReplaceText
+                - name: Replacetext
                   href: /windows/win32/api/Commdlg/nf-commdlg-replacetexta
                 - name: LPSETUPHOOKPROC
                   href: /windows/win32/api/commdlg/nc-commdlg-lpsetuphookproc
-            - name: Interfaces de caixa de diálogo comuns
+            - name: Interfaces comuns da caixa de diálogo
               href: common-dialog-box-interfaces.md
               items:
                 - name: IPrintDialogCallback
@@ -192,7 +192,7 @@
                       href: /windows/win32/api/commdlg/nf-commdlg-iprintdialogcallback-handlemessage
                     - name: InitDone
                       href: /windows/win32/api/commdlg/nf-commdlg-iprintdialogcallback-initdone
-                    - name: SelectionChange
+                    - name: Selectionchange
                       href: /windows/win32/api/commdlg/nf-commdlg-iprintdialogcallback-selectionchange
                 - name: IPrintDialogServices
                   href: /windows/win32/api/commdlg/nn-commdlg-iprintdialogservices

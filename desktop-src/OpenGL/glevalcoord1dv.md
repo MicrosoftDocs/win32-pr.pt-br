@@ -1,9 +1,9 @@
 ---
-title: função glEvalCoord1dv (GL. h)
+title: Função glEvalCoord1dv (Gl.h)
 description: A função glEvalCoord1dv avalia mapas unidimensionais habilitados.
 ms.assetid: 6f966141-d4e6-4b54-b465-3ced33b57caf
 keywords:
-- função glEvalCoord1dv OpenGL
+- Função glEvalCoord1dv OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 018c984c74ed6fa0d7224e7e0520c023e8b6bdf1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9611a43b5f17eb5c5ac3d520f13ab3fb34fc516b850c37943c1ad75478db1527
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105753158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118616233"
 ---
-# <a name="glevalcoord1dv-function"></a>função glEvalCoord1dv
+# <a name="glevalcoord1dv-function"></a>Função glEvalCoord1dv
 
-A função [**glEvalCoord1dv**](glevalcoord1d.md) avalia mapas unidimensionais habilitados.
+A [**função glEvalCoord1dv**](glevalcoord1d.md) avalia mapas unidimensionais habilitados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,7 +43,7 @@ void WINAPI glEvalCoord1dv(
 *u* 
 </dt> <dd>
 
-Um ponteiro para uma matriz que contém a coordenada de domínio *u*.
+Um ponteiro para uma matriz que contém a coordenada de *domínio u*.
 
 </dd> </dl>
 
@@ -53,51 +53,51 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-A função **glEvalCoord1dv** avalia os mapas unidimensionais habilitados no argumento *u*. Defina mapas com [**glMap1**](glmap1.md). Habilite ou desabilite-os com [**glEnable**](glenable.md) e [**glDisable**](gldisable.md).
+A **função glEvalCoord1dv** avalia os mapas unidimensionais habilitados no argumento *u*. Defina mapas [**com glMap1.**](glmap1.md) Habilita ou desabilite-os [**com glEnable**](glenable.md) e [**glDisable.**](gldisable.md)
 
-Quando uma das funções **glEvalCoord** é emitida, todos os mapas atualmente habilitados da dimensão indicada são avaliados. Em seguida, para cada mapa habilitado, é como se a função OpenGL correspondente fosse emitida com o valor calculado. Ou seja, se \_ \_ o índice GL MAP1 index ou GL \_ map2 \_ estiver habilitado, uma função [**glIndex**](glindex-functions.md) será simulada. Se GL \_ MAP1 \_ Color \_ 4 ou GL \_ map2 \_ Color \_ 4 estiver habilitado, uma função **glColor** será simulada. Se GL \_ MAP1 \_ normal ou GL \_ map2 \_ normal estiver habilitado, um vetor normal é produzido e, se qualquer uma das \_ MAP1 de \_ textura GL \_ coord \_ 1, GL \_ MAP1 \_ Texture \_ coord \_ 2, GL \_ MAP1 de textura coord \_ \_ \_ 3, GL \_ MAP1 de \_ textura \_ coord \_ 4, GL map2 de textura coord \_ \_ \_ \_ 1, GL \_ map2 \_ Texture \_ coord \_ 2, GL map2 de textura \_ \_ \_ coord \_ 3 e GL \_ map2 Texture coord \_ \_ \_ 4 estiver habilitado, uma função [**glTexCoord**](gltexcoord-functions.md) apropriada será simulada.
+Quando uma das **funções glEvalCoord** é emitida, todos os mapas habilitados no momento da dimensão indicada são avaliados. Em seguida, para cada mapa habilitado, é como se a função OpenGL correspondente fosse emitida com o valor computado. Ou seja, se GL \_ MAP1 INDEX ou GL MAP2 INDEX estiver \_ \_ \_ habilitado, uma [**função glIndex**](glindex-functions.md) será simulada. Se GL \_ MAP1 \_ COLOR \_ 4 ou GL \_ MAP2 COLOR 4 estiver \_ \_ habilitado, uma função **glcolor** será simulada. Se GL MAP1 NORMAL ou GL MAP2 NORMAL estiver habilitado, um vetor normal é produzido e, se qualquer um de \_ \_ GL \_ \_ \_ MAP1 TEXTURE \_ \_ \_ COORD 1, GL \_ MAP1 TEXTURE \_ \_ COORD \_ 2, \_ GL MAP1 \_ \_ \_ TEXTURE \_ \_ \_ \_ \_ \_ \_ COORD 3, GL MAP1 TEXTURE COORD 4, GL MAP2 TEXTURE COORD \_ 1, GL \_ MAP2 TEXTURE \_ \_ COORD \_ 2, GL \_ MAP2 TEXTURE \_ COORD 3 e GL \_ MAP2 TEXTURE COORD \_ 4 \_ \_ \_ \_ [](gltexcoord-functions.md) estiver habilitado, uma função glTexCoord apropriada será simulada.
 
-O OpenGL usa valores avaliados em vez de valores atuais para as avaliações habilitadas e valores atuais de outra forma, para as coordenadas de cor, índice de cor, normal e textura. No entanto, os valores avaliados não atualizam os valores atuais. Portanto, se as funções [**glVertex**](glvertex-functions.md) estiverem intercaladas com as funções **glEvalCoord** , as coordenadas Color, normal e Texture associadas às funções **glVertex** não serão afetadas pelos valores gerados pelas funções **glEvalCoord** , mas somente pelas funções [**glColor**](glcolor-functions.md), [**glIndex**](glindex-functions.md), [**glNormal**](glnormal-functions.md)e [**glTexCoord**](gltexcoord-functions.md) mais recentes.
+O OpenGL usa valores avaliados em vez de valores atuais para as avaliações habilitadas e os valores atuais, caso contrário, para coordenadas de cor, índice de cores, normal e textura. No entanto, os valores avaliados não atualizam os valores atuais. Portanto, se as funções [**glVertex**](glvertex-functions.md) são intercaladas com funções **glEvalCoord,** as coordenadas de cor, normal e textura associadas às funções **glVertex** não são afetadas pelos valores gerados pelas funções **glEvalCoord,** mas apenas pelas funções [**glColor,**](glcolor-functions.md) [**glIndex**](glindex-functions.md), [**glNormal**](glnormal-functions.md)e [**glTexCoord**](gltexcoord-functions.md) mais recentes.
 
-As funções a seguir recuperam informações relacionadas à função **glEvalCoord1dv** :
+As seguintes funções recuperam informações relacionadas à **função glEvalCoord1dv:**
 
-[**glIsEnabled**](glisenabled.md) com Argument GL \_ MAP1 \_ vértice \_ 3
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ MAP1 \_ VERTEX \_ 3
 
-[**glIsEnabled**](glisenabled.md) com Argument GL \_ MAP1 \_ vértice \_ 4
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ MAP1 \_ VERTEX \_ 4
 
-índice de [**glIsEnabled**](glisenabled.md) com Argument GL \_ MAP1 \_
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ MAP1 \_ INDEX
 
-[**glIsEnabled**](glisenabled.md) com Argument GL \_ MAP1 \_ cor \_ 4
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ MAP1 \_ COLOR \_ 4
 
-[**glIsEnabled**](glisenabled.md) com Argument GL \_ MAP1 \_ normal
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ MAP1 \_ NORMAL
 
-[**glIsEnabled**](glisenabled.md) com Argument GL \_ MAP1 \_ Texture \_ coord \_ 1
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ MAP1 \_ TEXTURE \_ COORD \_ 1
 
-[**glIsEnabled**](glisenabled.md) com Argument GL \_ MAP1 \_ Texture \_ coord \_ 2
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ MAP1 \_ TEXTURE \_ COORD \_ 2
 
-[**glIsEnabled**](glisenabled.md) com Argument GL \_ MAP1 \_ Texture \_ coord \_ 3
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ MAP1 \_ TEXTURE \_ COORD \_ 3
 
-[**glIsEnabled**](glisenabled.md) com Argument GL \_ MAP1 \_ Texture \_ coord \_ 4
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ MAP1 \_ TEXTURE \_ COORD \_ 4
 
-[**glIsEnabled**](glisenabled.md) com Argument GL \_ map2 \_ vértice \_ 3
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ MAP2 \_ VERTEX \_ 3
 
-[**glIsEnabled**](glisenabled.md) com Argument GL \_ map2 \_ vértice \_ 4
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ MAP2 \_ VERTEX \_ 4
 
-índice de [**glIsEnabled**](glisenabled.md) com Argument GL \_ map2 \_
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ MAP2 \_ INDEX
 
-[**glIsEnabled**](glisenabled.md) com Argument GL \_ map2 \_ cor \_ 4
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ MAP2 \_ COLOR \_ 4
 
-[**glIsEnabled**](glisenabled.md) com Argument GL \_ map2 \_ normal
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ MAP2 \_ NORMAL
 
-[**glIsEnabled**](glisenabled.md) com Argument GL \_ map2 \_ Texture \_ coord \_ 1
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ MAP2 \_ TEXTURE \_ COORD \_ 1
 
-[**glIsEnabled**](glisenabled.md) com Argument GL \_ map2 \_ Texture \_ coord \_ 2
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ MAP2 \_ TEXTURE \_ COORD \_ 2
 
-[**glIsEnabled**](glisenabled.md) com Argument GL \_ map2 \_ Texture \_ coord \_ 3
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ MAP2 \_ TEXTURE \_ COORD \_ 3
 
-[**glIsEnabled**](glisenabled.md) com Argument GL \_ map2 \_ Texture \_ coord \_ 4
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ MAP2 \_ TEXTURE \_ COORD \_ 4
 
-[**glIsEnabled**](glisenabled.md) com Argument GL \_ automático \_ normal
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ AUTO \_ NORMAL
 
 ## <a name="requirements"></a>Requisitos
 
@@ -107,8 +107,8 @@ As funções a seguir recuperam informações relacionadas à função **glEvalC
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

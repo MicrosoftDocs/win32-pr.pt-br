@@ -1,6 +1,6 @@
 ---
 title: ITEMSPLAYLIST
-description: Este é um elemento de PLAYLIST predefinido com os seguintes valores padrão. | ITEMSPLAYLIST
+description: Esse é um elemento PLAYLIST predefinido com os seguintes valores padrão. | ITEMSPLAYLIST
 ms.assetid: 0621885c-04e3-4de7-a4cc-2eb4e94de53c
 keywords:
 - ITEMSPLAYLIST Windows Media Player
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 76ac19cc914fa154c2800fab9f9b784cc3f0d809
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6b12899c8ec44034a8cca827400d814dd69925c0b4deb1b4725d10cd00d0fa57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118576094"
 ---
 # <a name="itemsplaylist"></a>ITEMSPLAYLIST
 
-Este é um elemento de **playlist** predefinido com os seguintes valores padrão.
+Esse é um elemento **PLAYLIST** predefinido com os seguintes valores padrão.
 
 ``` syntax
 backgroundColor="black"
@@ -34,7 +34,7 @@ foregroundColor="white"
 
 ## <a name="remarks"></a>Comentários
 
-Isso criará uma **lista de reprodução** simples que exibe os itens em uma lista de reprodução sem nenhum cabeçalho suspenso ou coluna visível. Todas as propriedades desta **playlist** podem ser substituídas especificando-as explicitamente.
+Isso criará uma **PLAYLIST** simples que exibe os itens em uma lista de reprodução sem a lista de opções ou os headers de coluna visíveis. Todas as propriedades dessa **PLAYLIST** podem ser substituídos especificando-as explicitamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -42,7 +42,7 @@ Isso criará uma **lista de reprodução** simples que exibe os itens em uma lis
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------|
-| Versão<br/> | Windows Media Player 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player 7.0 ou posterior<br/> |
 
 
 

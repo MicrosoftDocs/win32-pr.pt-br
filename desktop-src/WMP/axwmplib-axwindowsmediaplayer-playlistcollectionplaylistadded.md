@@ -1,9 +1,9 @@
 ---
 title: Evento PlaylistCollectionPlaylistAdded do objeto AxWindowsMediaPlayer
-description: O evento PlaylistCollectionPlaylistAdded ocorre quando uma playlist é adicionada à coleção de playlist. | Evento PlaylistCollectionPlaylistAdded do objeto AxWindowsMediaPlayer
+description: O evento PlaylistCollectionPlaylistAdded ocorre quando uma playlist é adicionada à coleção de playlists. | Evento PlaylistCollectionPlaylistAdded do objeto AxWindowsMediaPlayer
 ms.assetid: 13d3bc86-6655-4536-a58f-327eabb2b8f9
 keywords:
-- Evento PlaylistCollectionPlaylistAdded do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento PlaylistCollectionPlaylistAdded do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b019e58ae8955f6df894101956e4776c2cd71626
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4d5223d5864aa8be9019b2219ef09917a1c63cf16d87a48aef9543246d5197a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118581821"
 ---
 # <a name="playlistcollectionplaylistadded-event-of-the-axwindowsmediaplayer-object"></a>Evento PlaylistCollectionPlaylistAdded do objeto AxWindowsMediaPlayer
 
-O evento PlaylistCollectionPlaylistAdded ocorre quando uma playlist é adicionada à coleção de playlist.
+O evento PlaylistCollectionPlaylistAdded ocorre quando uma playlist é adicionada à coleção de playlists.
 
 ``` syntax
 [C#]
@@ -41,13 +41,13 @@ Private Sub player_PlaylistCollectionPlaylistAdded(
 
 ## <a name="event-data"></a>Dados de evento
 
-O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ PlaylistCollectionPlaylistAddedEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ PlaylistCollectionPlaylistAddedEvent**, que contém a seguinte propriedade relacionada a este evento.
+O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ PlaylistCollectionPlaylistAddedEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ PlaylistCollectionPlaylistAddedEvent**, que contém a propriedade a seguir relacionada a esse evento.
 
 
 
 | Propriedade             | Descrição                                                                |
 |----------------------|----------------------------------------------------------------------------|
-| **bstrPlaylistName** | System. StringSpecifies o nome da lista de reprodução que foi adicionada.<br/> |
+| **bstrPlaylistName** | System.String Especifica o nome da playlist que foi adicionada.<br/> |
 
 
 
@@ -55,7 +55,7 @@ O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 ## <a name="remarks"></a>Comentários
 
-O nome da lista de reprodução que foi adicionado pode ser usado para recuperar a playlist correspondente usando o IWMPPlaylistCollection. método **getByName** .
+O nome da playlist que foi adicionada pode ser usado para recuperar a playlist correspondente usando IWMPPlaylistCollection. **Método getByName.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ O nome da lista de reprodução que foi adicionado pode ser usado para recuperar
 
 | Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                          |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                          |
 | Namespace<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -76,7 +76,7 @@ O nome da lista de reprodução que foi adicionado pode ser usado para recuperar
 [**Objeto AxWindowsMediaPlayer (VB e C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPPlaylistCollection. getByName (VB e C#)**](wmplibiwmpplaylistcollection-iwmpplaylistcollection-getbyname--vb-and-c.md)
+[**IWMPPlaylistCollection.getByName (VB e C#)**](wmplibiwmpplaylistcollection-iwmpplaylistcollection-getbyname--vb-and-c.md)
 </dt> </dl>
 
  

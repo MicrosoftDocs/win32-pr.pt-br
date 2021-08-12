@@ -1,26 +1,26 @@
 ---
-title: Atributo BorderLeftColor de VML
-description: Atributo BorderLeftColor de VML
+title: Atributo BorderLeftColor do VML
+description: Atributo BorderLeftColor do VML
 ms.assetid: 29f4212e-96c0-4e35-8c83-aac9aa63220c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23a264f4f9c97c90f5d7ca2cda329f3d54611e18
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6c9b17091fba5218ea44c3e460ed574521c6a7effdc13e0116672878e6bd35ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118602164"
 ---
-# <a name="vml-borderleftcolor-attribute"></a>Atributo BorderLeftColor de VML
+# <a name="vml-borderleftcolor-attribute"></a>Atributo BorderLeftColor do VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Cor da borda esquerda de uma forma embutida. Leitura/gravação. **VgColor**.
+Cor da borda esquerda de uma forma em linha. Leitura/gravação. **VgColor**.
 
 **Aplica-se a**
 
@@ -28,11 +28,11 @@ Cor da borda esquerda de uma forma embutida. Leitura/gravação. **VgColor**.
 
 **Sintaxe de marca**
 
-<v: *Element* borderleftcolor = " *expressão* " >
+<v: *elemento* borderleftcolor=" *expressão* ">
 
 **Comentários**
 
-Usado pelo Microsoft Word.
+Usado por Microsoft Word.
 
 Os valores são:
 
@@ -40,16 +40,16 @@ Os valores são:
 
 | Valor | Descrição                                                                         |
 |-------|-------------------------------------------------------------------------------------|
-| Nulo  | Nenhuma cor de borda. Padrão.                                                           |
-| cor | Cor usada para a borda.                                                              |
-| Esse  | Indica que a seleção **automática** foi selecionada na interface do usuário do aplicativo. |
+| Nulo  | Nenhuma cor da borda. Padrão.                                                           |
+| cor | Cor usada para borda.                                                              |
+| Esse  | Indica que **Automático** foi selecionado na interface do usuário do aplicativo. |
 
 
 
- 
+ 
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

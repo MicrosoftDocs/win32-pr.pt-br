@@ -1,9 +1,9 @@
 ---
-title: Elemento exmessage (The Action)
+title: Elemento ShowMessage (actionGroup)
 description: Representa uma ação que mostra uma caixa de mensagem.
 ms.assetid: 33c6e437-b993-4b5e-b75a-fb3fda9b24df
 keywords:
-- Elemento exmessage Agendador de Tarefas
+- Elemento ShowMessage Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a1344aadfa5fe67e411048bac2a83330ea704c50
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 474bc44550408591616d3a8d2c6c3c69a5a0d073c90297c60b4a831627c996e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104294783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118611294"
 ---
-# <a name="showmessage-actiongroup-element"></a>Elemento exmessage (The Action)
+# <a name="showmessage-actiongroup-element"></a>Elemento ShowMessage (actionGroup)
 
 Representa uma ação que mostra uma caixa de mensagem.
 
@@ -30,7 +30,7 @@ Representa uma ação que mostra uma caixa de mensagem.
  />
 ```
 
-O elemento **exmessage** é definido pelo The [**Action**](taskschedulerschema-actiongroup-group.md) .
+O **elemento ShowMessage** é definido pelo [**actionGroup**](taskschedulerschema-actiongroup-group.md) .
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -38,7 +38,7 @@ O elemento **exmessage** é definido pelo The [**Action**](taskschedulerschema-a
 
 | Elemento                                                                    | Derivado de                                                       | Descrição                                            |
 |----------------------------------------------------------------------------|--------------------------------------------------------------------|--------------------------------------------------------|
-| [**Ações (taskType)**](taskschedulerschema-actions-tasktype-element.md) | [**ActionType**](taskschedulerschema-actionstype-complextype.md) | Contém as ações executadas pela tarefa.<br/> |
+| [**Ações (taskType)**](taskschedulerschema-actions-tasktype-element.md) | [**actionsType**](taskschedulerschema-actionstype-complextype.md) | Contém as ações executadas pela tarefa.<br/> |
 
 
 
@@ -48,22 +48,22 @@ O elemento **exmessage** é definido pelo The [**Action**](taskschedulerschema-a
 
 | Elemento                                                            | Type           | Descrição                                                               |
 |--------------------------------------------------------------------|----------------|---------------------------------------------------------------------------|
-| [**Corpo**](taskschedulerschema-body-showmessagetype-element.md)   | não vazio | Especifica o texto a ser exibido no corpo da caixa de mensagem. <br/> |
-| [**Título**](taskschedulerschema-title-showmessagetype-element.md) | não vazio | Especifica o título da caixa de mensagem. <br/>                       |
+| [**Corpo**](taskschedulerschema-body-showmessagetype-element.md)   | nonEmptyString | Especifica o texto a ser exibido no corpo da caixa de mensagem. <br/> |
+| [**Título**](taskschedulerschema-title-showmessagetype-element.md) | nonEmptyString | Especifica o título da caixa de mensagem. <br/>                       |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Para o desenvolvimento de scripts, uma ação da caixa de mensagem é especificada usando o objeto [**Exmessageaction**](showmessageaction.md) .
+Para o desenvolvimento de scripts, uma ação de caixa de mensagem é especificada usando o [**objeto ShowMessageAction.**](showmessageaction.md)
 
-Para desenvolvimento em C++, uma ação de caixa de mensagem é especificada usando a interface [**IShowMessageAction**](/windows/desktop/api/taskschd/nn-taskschd-ishowmessageaction) .
+Para desenvolvimento em C++, uma ação de caixa de mensagem é especificada usando a interface [**IShowMessageAction.**](/windows/desktop/api/taskschd/nn-taskschd-ishowmessageaction)
 
-**Windows 8 e Windows Server 2012:** Este elemento foi removido. Você pode usar o IExecAction com a função script do Windows [**MsgBox**](/previous-versions/sfw6660x(v=vs.80)) para mostrar uma mensagem na sessão do usuário.
+**Windows 8 e Windows Server 2012:** Esse elemento foi removido. Você pode usar IExecAction com a função Windows [**MsgBox**](/previous-versions/sfw6660x(v=vs.80)) de script para mostrar uma mensagem na sessão do usuário.
 
 ## <a name="examples"></a>Exemplos
 
-Para obter um exemplo completo do XML para uma tarefa que usa uma ação de caixa de mensagem, consulte [exemplo de caixa de mensagem (XML)](/previous-versions//aa381917(v=vs.85)).
+Para ver um exemplo completo do XML para uma tarefa que usa uma ação de caixa de mensagem, consulte [Exemplo de caixa de mensagem (XML)](/previous-versions//aa381917(v=vs.85)).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,10 +71,10 @@ Para obter um exemplo completo do XML para uma tarefa que usa uma ação de caix
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                 |
-| Fim do suporte do servidor<br/>    | Windows Server 2008 R2<br/>                    |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                 |
+| Fim do suporte ao servidor<br/>    | Windows Server 2008 R2<br/>                    |
 
 
 

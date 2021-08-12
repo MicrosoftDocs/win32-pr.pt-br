@@ -1,26 +1,26 @@
 ---
-title: Tipo de dados IVgVector2D de VML
-description: Tipo de dados IVgVector2D de VML
+title: Tipo de dados VML IVgVector2D
+description: Tipo de dados VML IVgVector2D
 ms.assetid: e4455d07-53f6-4d35-a70f-dbf969b32c26
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cbdbf24f93fe821de71bf13638ae30f1acc7e72b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b6fe82e50f9ff7afde762a8e1d8f769de2cb1b790231725a716cfd0add387986
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118599405"
 ---
-# <a name="vml-ivgvector2d-data-type"></a>Tipo de dados IVgVector2D de VML
+# <a name="vml-ivgvector2d-data-type"></a>Tipo de dados VML IVgVector2D
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Especifica um vetor bidimensional que consiste em dois números **duplos** .
+Especifica um vetor bidimensional que consiste em dois **números Double.**
 
 
 
@@ -38,19 +38,19 @@ Especifica um vetor bidimensional que consiste em dois números **duplos** .
 <tbody>
 <tr class="odd">
 <td>Valor</td>
-<td>Cadeia de caracteres. Representação de texto de ambos os números de vetor separados por um espaço.</td>
+<td>Cadeia de caracteres. Representação de texto de ambos os números vetoriais separados por um espaço.</td>
 </tr>
 <tr class="even">
 <td>X</td>
-<td>Clique. Componente X deste vetor.</td>
+<td>Duplo. Componente X desse vetor.</td>
 </tr>
 <tr class="odd">
-<td>S</td>
-<td>Clique. Componente Y deste vetor.</td>
+<td>Y</td>
+<td>Duplo. Componente Y desse vetor.</td>
 </tr>
 <tr class="even">
 <td>Tipo</td>
-<td>VgVectorType. Unidades esperadas para este vetor. Os valores são:
+<td>VgVectorType. Unidades esperadas para esse vetor. Os valores são:
 <ul>
 <li>Medida</li>
 <li>Comprimento</li>
@@ -66,8 +66,8 @@ Especifica um vetor bidimensional que consiste em dois números **duplos** .
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

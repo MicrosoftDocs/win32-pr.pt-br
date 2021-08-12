@@ -1,26 +1,26 @@
 ---
 title: Propriedade IMsRdpClientNonScriptable3 WarnAboutSendingCredentials
-description: Especifica ou recupera se a caixa de diálogo aviso de segurança deve incluir um aviso sobre o envio de credenciais ao servidor remoto antes de iniciar uma sessão.
+description: Especifica ou recupera se a caixa de diálogo de aviso de segurança deve incluir um aviso sobre como enviar credenciais para o servidor remoto antes de iniciar uma sessão.
 ms.assetid: b97baef5-4a51-4e5c-bd53-10cff175533c
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade WarnAboutSendingCredentials
-- Propriedade WarnAboutSendingCredentials Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable3, Propriedade WarnAboutSendingCredentials
-- Propriedade WarnAboutSendingCredentials Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable4, Propriedade WarnAboutSendingCredentials
-- Propriedade WarnAboutSendingCredentials Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable5, Propriedade WarnAboutSendingCredentials
-- Propriedade WarnAboutSendingCredentials Serviços de Área de Trabalho Remota, objeto MsRdpClient5
-- Objeto MsRdpClient5 Serviços de Área de Trabalho Remota, Propriedade WarnAboutSendingCredentials
-- Propriedade WarnAboutSendingCredentials Serviços de Área de Trabalho Remota, objeto MsRdpClient6
-- Objeto MsRdpClient6 Serviços de Área de Trabalho Remota, Propriedade WarnAboutSendingCredentials
-- Propriedade WarnAboutSendingCredentials Serviços de Área de Trabalho Remota, objeto MsRdpClient7
-- Objeto MsRdpClient7 Serviços de Área de Trabalho Remota, Propriedade WarnAboutSendingCredentials
-- Propriedade WarnAboutSendingCredentials Serviços de Área de Trabalho Remota, objeto MsRdpClient8
-- Objeto MsRdpClient8 Serviços de Área de Trabalho Remota, Propriedade WarnAboutSendingCredentials
-- Propriedade WarnAboutSendingCredentials Serviços de Área de Trabalho Remota, objeto MsRdpClient9
-- Objeto MsRdpClient9 Serviços de Área de Trabalho Remota, Propriedade WarnAboutSendingCredentials
+- Propriedade WarnAboutSendingCredentials Serviços de Área de Trabalho Remota
+- A propriedade WarnAboutSendingCredentials Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable3
+- Interface IMsRdpClientNonScriptable3 Serviços de Área de Trabalho Remota , propriedade WarnAboutSendingCredentials
+- Propriedade WarnAboutSendingCredentials Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable4
+- Interface IMsRdpClientNonScriptable4 Serviços de Área de Trabalho Remota , propriedade WarnAboutSendingCredentials
+- Propriedade WarnAboutSendingCredentials Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable5
+- Interface IMsRdpClientNonScriptable5 Serviços de Área de Trabalho Remota , propriedade WarnAboutSendingCredentials
+- Propriedade WarnAboutSendingCredentials Serviços de Área de Trabalho Remota objeto , MsRdpClient5
+- Objeto MsRdpClient5 Serviços de Área de Trabalho Remota propriedade , WarnAboutSendingCredentials
+- Propriedade WarnAboutSendingCredentials Serviços de Área de Trabalho Remota objeto , MsRdpClient6
+- Objeto MsRdpClient6 Serviços de Área de Trabalho Remota propriedade , WarnAboutSendingCredentials
+- Propriedade WarnAboutSendingCredentials Serviços de Área de Trabalho Remota objeto , MsRdpClient7
+- Objeto MsRdpClient7 Serviços de Área de Trabalho Remota propriedade , WarnAboutSendingCredentials
+- Propriedade WarnAboutSendingCredentials Serviços de Área de Trabalho Remota objeto , MsRdpClient8
+- Objeto MsRdpClient8 Serviços de Área de Trabalho Remota propriedade WarnAboutSendingCredentials
+- Propriedade WarnAboutSendingCredentials Serviços de Área de Trabalho Remota objeto , MsRdpClient9
+- Objeto MsRdpClient9 Serviços de Área de Trabalho Remota propriedade , WarnAboutSendingCredentials
 topic_type:
 - apiref
 api_name:
@@ -44,20 +44,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29d9d2fcfe158f5a0bb6812002bfcc160f1c9009
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 48924b435e09b002992e6380ef130a1e11ca4961dbb0d3514b8c551f21f1b648
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105782878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118607675"
 ---
-# <a name="imsrdpclientnonscriptable3warnaboutsendingcredentials-property"></a>Propriedade IMsRdpClientNonScriptable3:: WarnAboutSendingCredentials
+# <a name="imsrdpclientnonscriptable3warnaboutsendingcredentials-property"></a>Propriedade IMsRdpClientNonScriptable3::WarnAboutSendingCredentials
 
-Especifica ou recupera se a caixa de diálogo aviso de segurança deve incluir um aviso sobre o envio de credenciais ao servidor remoto antes de iniciar uma sessão.
+Especifica ou recupera se a caixa de diálogo de aviso de segurança deve incluir um aviso sobre como enviar credenciais para o servidor remoto antes de iniciar uma sessão.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -74,7 +74,7 @@ HRESULT get_WarnAboutSendingCredentials(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Especifica se a caixa de diálogo aviso de segurança deve incluir um aviso sobre o envio de credenciais ao servidor remoto antes de iniciar uma sessão.
+Especifica se a caixa de diálogo de aviso de segurança deve incluir um aviso sobre como enviar credenciais para o servidor remoto antes de iniciar uma sessão.
 
 ## <a name="requirements"></a>Requisitos
 

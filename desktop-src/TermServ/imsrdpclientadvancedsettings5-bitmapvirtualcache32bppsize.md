@@ -1,18 +1,18 @@
 ---
 title: Propriedade IMsRdpClientAdvancedSettings5 BitmapVirtualCache32BppSize
-description: Define ou recupera o tamanho do arquivo de cache virtual para bitmaps de 32 bits por pixel (BPP).
+description: Define ou recupera o tamanho do arquivo de cache virtual para bitmaps de 32 bits por pixel (bpp).
 ms.assetid: 7084293a-ae75-4711-a8d8-f813117333e7
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade BitmapVirtualCache32BppSize
-- Propriedade BitmapVirtualCache32BppSize Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings5, Propriedade BitmapVirtualCache32BppSize
-- Propriedade BitmapVirtualCache32BppSize Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings6, Propriedade BitmapVirtualCache32BppSize
-- Propriedade BitmapVirtualCache32BppSize Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings7, Propriedade BitmapVirtualCache32BppSize
-- Propriedade BitmapVirtualCache32BppSize Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings8, Propriedade BitmapVirtualCache32BppSize
+- Propriedade BitmapVirtualCache32BppSize Serviços de Área de Trabalho Remota
+- Propriedade BitmapVirtualCache32BppSize Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings5
+- Interface IMsRdpClientAdvancedSettings5 Serviços de Área de Trabalho Remota , propriedade BitmapVirtualCache32BppSize
+- Propriedade BitmapVirtualCache32BppSize Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings6
+- Interface IMsRdpClientAdvancedSettings6 Serviços de Área de Trabalho Remota , propriedade BitmapVirtualCache32BppSize
+- Propriedade BitmapVirtualCache32BppSize Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings7
+- Interface IMsRdpClientAdvancedSettings7 Serviços de Área de Trabalho Remota , propriedade BitmapVirtualCache32BppSize
+- Propriedade BitmapVirtualCache32BppSize Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings8
+- Interface IMsRdpClientAdvancedSettings8 Serviços de Área de Trabalho Remota , propriedade BitmapVirtualCache32BppSize
 topic_type:
 - apiref
 api_name:
@@ -34,20 +34,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d43de82b97e16fa36f83a5edde43712b2a9cbbb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cb33ee817a9410beb95e91be674de1a96cdbf78f92f5aaa7e3298447804cc1d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118608405"
 ---
-# <a name="imsrdpclientadvancedsettings5bitmapvirtualcache32bppsize-property"></a>Propriedade IMsRdpClientAdvancedSettings5:: BitmapVirtualCache32BppSize
+# <a name="imsrdpclientadvancedsettings5bitmapvirtualcache32bppsize-property"></a>Propriedade IMsRdpClientAdvancedSettings5::BitmapVirtualCache32BppSize
 
-Define ou recupera o tamanho do arquivo de cache virtual para bitmaps de 32 bits por pixel (BPP).
+Define ou recupera o tamanho do arquivo de cache virtual para bitmaps de 32 bits por pixel (bpp).
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -64,7 +64,7 @@ HRESULT get_BitmapVirtualCache32BppSize(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Define o tamanho do arquivo de cache virtual para bitmaps de 32 bpp, em megabytes (MB). O valor máximo é 48 MB.
+Define o tamanho do arquivo de cache virtual para 32 bitmaps bpp, em megabytes (MB). O valor máximo é 48 MB.
 
 ## <a name="requirements"></a>Requisitos
 

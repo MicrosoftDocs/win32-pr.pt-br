@@ -4,12 +4,12 @@ description: Determina se este objeto de adaptador DXCore e o sistema operaciona
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: b960d96515d4aee85520a6def70a8f0e9349e131
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ddee6bea5af8fb64dfa2bfc15392e92239e7326b34cbd93cbd112559a6027912
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105812420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118279227"
 ---
 # <a name="idxcoreadapterispropertysupported-method"></a>Método IDXCoreAdapter:: IsPropertySupported
 
@@ -34,7 +34,7 @@ O tipo de propriedade que você está consultando sobre o suporte para. Consulte
 
 Tipo: **bool**
 
-Retorna  `true`   se este objeto de adaptador DXCore e o sistema operacional atual (SO) dão suporte à propriedade de adaptador especificada. Caso contrário, retorna  `false` .
+Retorna `true` se este objeto de adaptador DXCore e o sistema operacional atual (SO) dão suporte à propriedade de adaptador especificada. Caso contrário, retorna `false`.
 
 ## <a name="see-also"></a>Confira também
 

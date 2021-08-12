@@ -1,5 +1,5 @@
 ---
-description: Notifica o DWM de uma atualização de entrada para uma superfície compartilhada da janela.
+description: Notifica o DWM de uma atualização de entrada para uma superfície compartilhada de janela.
 ms.assetid: 8357D977-E501-47D7-85BC-7C8954C6D166
 title: Função DwmDxUpdateWindowSharedSurface
 ms.topic: reference
@@ -13,16 +13,16 @@ api_location:
 - Dwmapi.dll
 api_name:
 - DwmDxUpdateWindowSharedSurface
-ms.openlocfilehash: 7649e96fb3a16458b518d0fc2c6dd09725a4b0ff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9eac390cd6ccf79ed3f916f4c9605b938ab9fd338df3643301d7f5e5c900c0d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118280116"
 ---
 # <a name="dwmdxupdatewindowsharedsurface-function"></a>Função DwmDxUpdateWindowSharedSurface
 
-Notifica o DWM de uma atualização de entrada para uma superfície compartilhada da janela.
+Notifica o DWM de uma atualização de entrada para uma superfície compartilhada de janela.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,11 +40,11 @@ HRESULT WINAPI DwmDxUpdateWindowSharedSurface(
 
 `hwnd`
 
-Um [**HWND**](/windows/desktop/winprog/windows-data-types) que especifica a janela que está sendo atualizada.
+Um [**HWND que**](/windows/desktop/winprog/windows-data-types) especifica a janela que está sendo atualizada.
 
 `uiUpdateId`
 
-A ID de atualização recuperada de [**DwmDxGetWindowSharedSurface**](dwmdxgetwindowsharedsurface.md).
+A ID de atualização recuperada [**de DwmDxGetWindowSharedSurface**](dwmdxgetwindowsharedsurface.md).
 
 `dwFlags`
 
@@ -56,24 +56,24 @@ Reservado.
 
 `prc`
 
-O Rect da janela que está sendo atualizada, no espaço de coordenadas da janela. Um retângulo nulo indica que nenhuma região foi atualizada.
+O rect da janela que está sendo atualizada, no espaço de coordenadas da janela. Um retângulo NULL indica que nenhuma região foi atualizada.
 
 ## <a name="return-value"></a>Retornar valor
 
-**S \_ OK** se for bem-sucedido, caso contrário, um HRESULT com falha **.**
+**S \_ OK** se for bem-sucedido, caso contrário, um **HRESULT COM FALHA.**
 
 ## <a name="remarks"></a>Comentários
 
-Essa API destina-se à implementação de um driver de gráficos ou tempo de execução. Um aplicativo pode não chamar esse método. Esta documentação só é válida para o Windows 7, e não há garantia de que essa API exista nem se comporte de maneira semelhante em outras versões do Windows. Essa função não está presente em nenhum cabeçalho ou biblioteca de vínculo estático, e está localizada no ordinal 101 em dwmapi.dll.
+Essa API destina-se à implementação de um driver gráfico ou runtime. Um aplicativo pode não chamar esse método. Esta documentação só é válida para Windows 7 e essa API não tem garantia de existir nem se comportar de maneira semelhante em outras versões do Windows. Essa função não está presente em nenhum título ou biblioteca de link estático e está localizada em ordinal 101 em dwmapi.dll.
 
-Esse método só deve ser chamado depois de [**DwmDxGetWindowSharedSurface**](dwmdxgetwindowsharedsurface.md) retornar **S \_ OK** e deve ser chamado nesse cenário, independentemente de a superfície ser atualizada ou não.
+Esse método só deve ser chamado depois que [**DwmDxGetWindowSharedSurface**](dwmdxgetwindowsharedsurface.md) retornar **S \_ OK** e deve ser chamado nesse cenário, independentemente de a superfície ser atualizada ou não.
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito | Valor |
 |-|-|
-| Cliente mínimo com suporte | \[Somente aplicativos de área de trabalho do Windows 7\] |
+| Cliente mínimo com suporte | Windows 7 \[ aplicativos da área de trabalho\] |
 | Servidor mínimo com suporte | Nenhum compatível |
-| Fim do suporte do cliente | Windows 7 |
+| Fim do suporte ao cliente | Windows 7 |
 | Cabeçalho | N/D |
 | DLL | Dwmapi.dll |

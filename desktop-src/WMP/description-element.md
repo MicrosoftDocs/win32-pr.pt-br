@@ -3,7 +3,7 @@ title: Elemento Description
 description: Observação Esta seção descreve a funcionalidade projetada para uso por lojas online. | Elemento Description
 ms.assetid: 4d9ff447-e5a4-46b1-b599-87202077abfb
 keywords:
-- Elemento de descrição Windows Media Player
+- Elemento Description Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4318a7936f4713d3ff89a2fa73731eea0cdd97db
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 78c3601abaf2a039b49318772eba1ed6e95d2aed06e2a91c72aabdadc3ffebd8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105794490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118579596"
 ---
 # <a name="description-element"></a>Elemento Description
 
@@ -27,7 +27,7 @@ ms.locfileid: "105794490"
 
  
 
-O elemento **Description** especifica uma descrição de marketing da loja online que é exibida durante a primeira experiência do usuário com uma instalação do Windows Media Player.
+O **elemento Description** especifica uma descrição de marketing da loja online que é exibida durante a primeira experiência do usuário com uma instalação de Windows Media Player.
 
 ``` syntax
 <Description>
@@ -70,13 +70,13 @@ O comprimento da descrição deve ser menor ou igual a 255 caracteres.
 
 <dl> <dt>
 
-[**Documento de informações de exemplo para uma loja online tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
+[**Documento ServiceInfo de exemplo para uma loja online do tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
 </dt> <dt>
 
-[**Documento de informações de exemplo para uma loja online tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
+[**Documento ServiceInfo de exemplo para uma loja online do tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
 </dt> <dt>
 
-[**Documento do serviceInfo**](serviceinfo-document.md)
+[**Documento ServiceInfo**](serviceinfo-document.md)
 </dt> </dl>
 
  

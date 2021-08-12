@@ -4,21 +4,21 @@ description: Atributo de aspecto da VML
 ms.assetid: 5486ed48-d28f-4bbb-b8ed-fc5a5aa12f25
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45f7cf666e9bb8d4bf3cfe0e47190a8127415ac1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 669b0f93e740e6bc4d4fb94155f6ca0ab60d5e00cebfb1604d5272d45d4dd8ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118602893"
 ---
 # <a name="vml-aspect-attribute"></a>Atributo de aspecto da VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Especifica como a taxa de proporção da imagem de preenchimento será preservada. Leitura/gravação. **Cadeia de caracteres**.
 
@@ -50,7 +50,7 @@ Os valores são:
 
 
 
- 
+ 
 
 *Atributo padrão da VML*
 
@@ -71,6 +71,6 @@ A imagem que compõe o preenchimento é maior ou igual a um tamanho de 10 pontos
 
 
 
- 
+ 
 
- 
+ 

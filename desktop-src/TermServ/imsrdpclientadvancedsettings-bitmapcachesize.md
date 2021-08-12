@@ -54,12 +54,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a38376bb0b06bd4efea36d3c4cad4e4aec0f35b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: af56056cbdd62bb041ba9ab08e83a4f09e69037a3f9bd6799fa0c0facc9da75e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118609047"
 ---
 # <a name="imsrdpclientadvancedsettingsbitmapcachesize-property"></a>Propriedade IMsRdpClientAdvancedSettings:: BitmapCacheSize
 
@@ -67,7 +67,7 @@ O tamanho, em kilobytes, do arquivo de cache de bitmap usado para bitmaps de 8 b
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
