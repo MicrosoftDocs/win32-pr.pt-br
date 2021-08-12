@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ac2f66296c08b2461440e0615b225c62405fd99a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 526955ba60d9b54d80035f3feebebbc3a32efbdd00721a171c71f187ce9584de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118654828"
 ---
 # <a name="ctransinplaceinputpinm_breadonly-member"></a>Membro de CTransInPlaceInputPin:: m \_ bReadOnly
 
 Sinalizador que especifica se o fluxo de entrada é somente leitura. O filtro upstream especifica essas informações ao chamar o método [**NotifyAllocator**](ctransinplaceinputpin-notifyallocator.md) . Por padrão, o valor é **false**.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -42,7 +42,7 @@ BOOL m_bReadOnly;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>TRANSip. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Transip. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

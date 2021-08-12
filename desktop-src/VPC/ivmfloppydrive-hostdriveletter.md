@@ -1,11 +1,11 @@
 ---
-title: Propriedade IVMFloppyDrive HostDriveLetter (VPCCOMInterfaces. h)
-description: A letra da unidade do host à qual a unidade de disquete está conectada.
+title: Propriedade IvMFloppyDrive HostDriveLetter (VPCCOMInterfaces.h)
+description: A letra da unidade de host à qual a unidade de disquete está anexada.
 ms.assetid: 16d11e06-e3bc-4a4a-850d-f7b4122e6af9
 keywords:
-- Propriedade HostDriveLetter Virtual PC
-- Propriedade HostDriveLetter Virtual PC, interface IVMFloppyDrive
-- IVMFloppyDrive interface virtual PC, Propriedade HostDriveLetter
+- Propriedade HostDriveLetter Pc Virtual
+- Propriedade HostDriveLetter Pc Virtual, interface IVMFloppyDrive
+- INTERFACE IVMFloppyDrive PC Virtual, propriedade HostDriveLetter
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4896699dd3547eb3488e2fc085b5b2c54de827b5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4eb7c7f27423af6d445621d03db393a67070469646559d99b07cbb3c03c1a6a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118595219"
 ---
-# <a name="ivmfloppydrivehostdriveletter-property"></a>Propriedade IVMFloppyDrive:: HostDriveLetter
+# <a name="ivmfloppydrivehostdriveletter-property"></a>Propriedade IVMFloppyDrive::HostDriveLetter
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
-Recupera a letra da unidade do host à qual a unidade de disquete está anexada.
+Recupera a letra da unidade de host à qual a unidade de disquete está anexada.
 
 Esta propriedade é somente para leitura.
 
@@ -54,9 +54,9 @@ A letra da unidade de disquete física.
 | Nome/valor                                                                                                                                                    | Significado                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | A operação foi bem-sucedida.<br/>                                               |
-| <dl> <dt>E \_ </dt> <dt>0X80004003</dt> de ponteiro </dl>         | O parâmetro é **NULL**.<br/>                                                  |
-| <dl> <dt>VM \_ E 0xA0040207 de \_ VM \_ desconhecido</dt> <dt></dt> </dl> | A configuração desta máquina virtual não é válida ou não foi encontrada.<br/> |
-| <dl> <dt>DISP \_ E \_ </dt> <dt>0x80020009</dt> de exceção </dl> | Ocorreu um erro inesperado.<br/>                                           |
+| <dl> <dt>E \_ PONTEIRO</dt> <dt>0x80004003</dt> </dl>         | O parâmetro é **NULL.**<br/>                                                  |
+| <dl> <dt>VM \_ E \_ VM \_ UNKNOWN</dt> <dt>0xA0040207</dt> </dl> | A configuração dessa máquina virtual não é válida ou não pode ser encontrada.<br/> |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Ocorreu um erro inesperado.<br/>                                           |
 
 
 
@@ -66,12 +66,12 @@ A letra da unidade de disquete física.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMFloppyDrive é definido como 661abee6-112a-4ed9-babf-3c874969f10e<br/>             |
+| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMFloppyDrive é definido como \_ 661abee6-112a-4ed9-ertf-3c874969f10e<br/>             |
 
 
 

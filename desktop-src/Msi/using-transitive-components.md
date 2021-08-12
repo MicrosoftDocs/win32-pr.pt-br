@@ -4,12 +4,12 @@ ms.assetid: 73677573-945f-4646-89d8-93e28f7856fe
 title: Usando componentes transitivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35982aafd486a62ce8560e507b8b6caf88e32591
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 49ad6906b3e5d29ba6c0e3f8e279f4a1df2d5578f931219b6962062efaabd375
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "103930252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118622884"
 ---
 # <a name="using-transitive-components"></a>Usando componentes transitivos
 
@@ -43,7 +43,7 @@ O bit só deve ser usado com condições baseadas em Estados de computador. Não
 > [!Note]
 > A menos que o bit transitiva na coluna atributos seja definido para um componente, o componente permanecerá habilitado uma vez instalado, mesmo que a instrução condicional na coluna condição seja avaliada como false em uma instalação de manutenção subsequente do produto.
 > 
-> Na maioria dos casos, se um aplicativo incluir componentes transitivos, Windows Installer exigirá que a origem do aplicativo repare ou atualize o aplicativo. Nesses casos, o CD-ROM de restauração do sistema enviado por um fabricante de equipamento original não funciona e uma fonte de instalação real para o aplicativo precisa ser fornecida.
+> na maioria dos casos, se um aplicativo incluir componentes transitivos, Windows Installer exigirá que a origem do aplicativo repare ou atualize o aplicativo. Nesses casos, o CD-ROM de restauração do sistema enviado por um fabricante de equipamento original não funciona e uma fonte de instalação real para o aplicativo precisa ser fornecida.
 
  
 

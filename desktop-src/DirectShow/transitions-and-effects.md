@@ -4,12 +4,12 @@ ms.assetid: 2925c315-4488-4961-a8f7-77a9ac571b70
 title: Transições e efeitos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43f30d3a404993e58b859a2cacdf0bcd4718e45b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f9142baf35b85a3887600abb2730b9ddbc3a16af625420ac3ef1378e8cd86df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105770428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118651228"
 ---
 # <a name="transitions-and-effects"></a>Transições e efeitos
 
@@ -18,15 +18,15 @@ ms.locfileid: "105770428"
 
  
 
-Esta seção descreve os efeitos e as transições fornecidos com os serviços de edição do DirectShow.
+Esta seção descreve os efeitos e as transições fornecidas com DirectShow De edição.
 
 
 
 | Transição                              | Descrição                                                                            |
 |-----------------------------------------|----------------------------------------------------------------------------------------|
-| [Compositor](compositor-transition.md) | Alonga o primeiro plano em um retângulo designado, sem alterar o plano de fundo. |
-| [Chave](key-transition.md)               | Executa a criação de chaves com base em croma, alfa, matiz ou luminância.                             |
-| [Apagamento SMPTE](smpte-wipe-transition.md) | Executa os apagamentos padrão do SMPTE.                                                     |
+| [Compositor](compositor-transition.md) | Alonga o primeiro plano em um retângulo designado, sem alterar a plano de fundo. |
+| [Chave](key-transition.md)               | Executa a chave com base em chroma, alfa, matiz ou luminância.                             |
+| [Apagando SMPTE](smpte-wipe-transition.md) | Executa os apagadores SMPTE padrão.                                                     |
 
 
 
@@ -36,8 +36,8 @@ Esta seção descreve os efeitos e as transições fornecidos com os serviços d
 
 | Efeito                                        | Descrição                           |
 |-----------------------------------------------|---------------------------------------|
-| [Setter alfa](alpha-setter-effect.md)       | Define os bits alfa em uma imagem de vídeo. |
-| [Envelope de volume](volume-envelope-effect.md) | Define o volume em um fluxo de áudio.   |
+| [Alfa Setter](alpha-setter-effect.md)       | Define os bits alfa em uma imagem de vídeo. |
+| [Volume Envelope](volume-envelope-effect.md) | Define o volume em um fluxo de áudio.   |
 
 
 
@@ -45,9 +45,9 @@ Esta seção descreve os efeitos e as transições fornecidos com os serviços d
 
 
 
-| Objeto de origem                                | Descrição                                        |
+| Objeto source                                | Descrição                                        |
 |----------------------------------------------|----------------------------------------------------|
-| [Fonte de cores do vídeo](video-color-source.md) | Cria uma imagem de vídeo contínua de uma cor sólida. |
+| [Origem da cor do vídeo](video-color-source.md) | Cria uma imagem de vídeo contínua de uma cor sólida. |
 
 
 
@@ -57,7 +57,7 @@ Esta seção descreve os efeitos e as transições fornecidos com os serviços d
 
 <dl> <dt>
 
-[Referência de C++ dos serviços de edição do DirectShow](directshow-editing-services-c---reference.md)
+[DirectShow Referência do C++ dos Serviços de Edição](directshow-editing-services-c---reference.md)
 </dt> </dl>
 
  

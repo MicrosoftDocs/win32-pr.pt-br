@@ -1,22 +1,22 @@
 ---
 title: Propriedade IMsRdpClientAdvancedSettings3 ConnectionBarShowRestoreButton
-description: Especifica se o botão de restauração deve ser exibido na barra de conexão.
+description: Especifica se o botão Restaurar deve ser exibido na barra de conexão.
 ms.assetid: a56c3c05-d253-404a-bf49-9c1d804802e0
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade ConnectionBarShowRestoreButton
-- Propriedade ConnectionBarShowRestoreButton Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings3, Propriedade ConnectionBarShowRestoreButton
-- Propriedade ConnectionBarShowRestoreButton Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings4, Propriedade ConnectionBarShowRestoreButton
-- Propriedade ConnectionBarShowRestoreButton Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings5, Propriedade ConnectionBarShowRestoreButton
-- Propriedade ConnectionBarShowRestoreButton Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings6, Propriedade ConnectionBarShowRestoreButton
-- Propriedade ConnectionBarShowRestoreButton Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings7, Propriedade ConnectionBarShowRestoreButton
-- Propriedade ConnectionBarShowRestoreButton Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings8, Propriedade ConnectionBarShowRestoreButton
+- Propriedade ConnectionBarShowRestoreButton Serviços de Área de Trabalho Remota
+- A propriedade ConnectionBarShowRestoreButton Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings3
+- Interface IMsRdpClientAdvancedSettings3 Serviços de Área de Trabalho Remota , propriedade ConnectionBarShowRestoreButton
+- A propriedade ConnectionBarShowRestoreButton Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings4
+- Interface IMsRdpClientAdvancedSettings4 Serviços de Área de Trabalho Remota , propriedade ConnectionBarShowRestoreButton
+- A propriedade ConnectionBarShowRestoreButton Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings5
+- Interface IMsRdpClientAdvancedSettings5 Serviços de Área de Trabalho Remota , propriedade ConnectionBarShowRestoreButton
+- A propriedade ConnectionBarShowRestoreButton Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings6
+- Interface IMsRdpClientAdvancedSettings6 Serviços de Área de Trabalho Remota , propriedade ConnectionBarShowRestoreButton
+- A propriedade ConnectionBarShowRestoreButton Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings7
+- Interface IMsRdpClientAdvancedSettings7 Serviços de Área de Trabalho Remota , propriedade ConnectionBarShowRestoreButton
+- A propriedade ConnectionBarShowRestoreButton Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings8
+- Interface IMsRdpClientAdvancedSettings8 Serviços de Área de Trabalho Remota , propriedade ConnectionBarShowRestoreButton
 topic_type:
 - apiref
 api_name:
@@ -44,20 +44,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ae83ecde31461eff9c553782b8bfa3ae760fb54
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 81bcdefbd7cc41a0a1771705482cc67da028bf6dd349e473c02249284dcfcfe3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118608415"
 ---
-# <a name="imsrdpclientadvancedsettings3connectionbarshowrestorebutton-property"></a>Propriedade IMsRdpClientAdvancedSettings3:: ConnectionBarShowRestoreButton
+# <a name="imsrdpclientadvancedsettings3connectionbarshowrestorebutton-property"></a>Propriedade IMsRdpClientAdvancedSettings3::ConnectionBarShowRestoreButton
 
-Especifica se o botão de **restauração** deve ser exibido na barra de conexão.
+Especifica se o botão Restaurar deve **ser** exibido na barra de conexão.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -74,7 +74,7 @@ HRESULT get_ConnectionBarShowRestoreButton(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Defina como **Variant \_ true** para exibir o botão de **restauração** e para a **variante \_ false** para desabilitar a exibição do botão **restaurar** .
+De definido **como VARIANT \_ TRUE** para exibir **o botão** Restaurar e como **VARIANT \_ FALSE** para desabilitar a exibição do **botão** Restaurar.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
@@ -82,9 +82,9 @@ Retornará **S \_ OK** se for bem-sucedido.
 
 ## <a name="remarks"></a>Comentários
 
-Esta propriedade não pode ser definida enquanto o controle está conectado.
+Essa propriedade não pode ser definida enquanto o controle está conectado.
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,7 +96,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                                   |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>           |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>           |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings3 é definido como 19cd856b-C542-4c53-ACEE-f127e3be1a59<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings3 é definido como 19cd856b-c542-4c53-acee-f127e3be1a59<br/> |
 
 
 

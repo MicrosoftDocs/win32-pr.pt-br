@@ -1,17 +1,17 @@
 ---
 description: A tabela a seguir lista os identificadores globalmente exclusivos (GUIDs) definidos para formatos de tempo de parâmetro de mídia.
 ms.assetid: 1622c5bb-94f7-4bbb-8564-d7180b37c910
-title: GUIDs de formato de hora DMO (Medparam. h)
+title: DMO GUIDs de formato de hora (Medparam. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2559c702ed7310343aea017bacec28a154ab3cb9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e55c74a0c52e9af0c4536d2a6c9c45b303e0bae57b39b679aec02f0e0769624c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118653046"
 ---
-# <a name="dmo-time-format-guids"></a>GUIDs de formato de hora DMO
+# <a name="dmo-time-format-guids"></a>DMO GUIDs de formato de hora
 
 A tabela a seguir lista os identificadores globalmente exclusivos (GUIDs) definidos para formatos de tempo de parâmetro de mídia.
 
@@ -39,7 +39,7 @@ A tabela a seguir lista os identificadores globalmente exclusivos (GUIDs) defini
 
 <dl> <dt>
 
-[**Constantes do DMO**](dmo-constants.md)
+[**DMO :**](dmo-constants.md)
 </dt> </dl>
 
  

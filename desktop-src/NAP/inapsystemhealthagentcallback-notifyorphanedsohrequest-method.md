@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 676b67b61a9375f4fd44ecc41f9e56e92a97b693
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 171191c266ae3fd59ab1ba8f55acd73eb143e9aa220fb3d2989a7ced9f716513
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118621177"
 ---
 # <a name="inapsystemhealthagentcallbacknotifyorphanedsohrequest-method"></a>Método INapSystemHealthAgentCallback:: NotifyOrphanedSoHRequest
 
@@ -54,7 +54,7 @@ Um ponteiro para a estrutura exclusiva de [**CorrelationId**](/windows/win32/api
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -92,8 +92,8 @@ Os SHAs podem receber algumas notificações falsas quando eles se ligam pela pr
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                      |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                |
 | parâmetro<br/>                   | <dl> <dt>NapSystemHealthAgent. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>NapSystemHealthAgent. idl</dt> </dl> |
 

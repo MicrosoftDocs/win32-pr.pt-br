@@ -1,27 +1,27 @@
 ---
-description: Usa EAP-TLS (segurança de nível de transporte) de protocolo de autenticação extensível com certificados para autenticar para a rede (WPA-Enterprise).
+description: Usa eAP-TLS (Segurança de Nível de Transporte do Protocolo de Autenticação Extensível) com certificados para autenticar na rede (WPA-Enterprise).
 ms.assetid: fceeae22-3761-48ab-a190-1a7b1568ed64
-title: WPA-Enterprise com exemplo de perfil TLS
+title: WPA-Enterprise exemplo de perfil TLS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d6f236429c94e9602e173c2d6c3eb1e3bc8111f
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: a9ebb9fa779c1a1d9a4e77c20d462f31fcafc9ec562e47ae106386b58c112a1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118619033"
 ---
-# <a name="wpa-enterprise-with-tls-profile-sample"></a>WPA-Enterprise com exemplo de perfil TLS
+# <a name="wpa-enterprise-with-tls-profile-sample"></a>WPA-Enterprise exemplo de perfil TLS
 
-Este perfil de exemplo usa EAP-TLS (segurança de nível de transporte) do protocolo de autenticação extensível com certificados para autenticar na rede.
+Este perfil de exemplo usa eAP-TLS (Segurança de Nível de Transporte do Protocolo de Autenticação Extensível) com certificados para autenticação na rede.
 
-Este exemplo é configurado para usar Wi-Fi segurança de acesso protegido em execução no modo empresarial (WPA-Enterprise). O tipo de segurança WPA-Enterprise usa 802.1 X para a troca de autenticação com o back-end. O TKIP (Temporal Key Integrity Protocol) é usado para criptografia.
+Este exemplo está configurado para usar Wi-Fi segurança de Acesso Protegido em execução no modo Enterprise (WPA-Enterprise). O WPA-Enterprise de segurança usa 802.1X para a troca de autenticação com o back-end. O protocolo TKIP é usado para criptografia.
 
-As credenciais EAP-TLS são obtidas do repositório de certificados. Se a autenticação com base nas credenciais no repositório de certificados falhar, o usuário receberá uma solicitação para fornecer credenciais válidas. Nenhum servidor alternativo, autoridades de certificação raiz ou nomes de usuário serão usados para autenticação se a primeira tentativa falhar.
+As credenciais EAP-TLS são obtidas do armazenamento de certificados. Se a autenticação com base nas credenciais no armazenamento de certificados falhar, o usuário será solicitado a fornecer credenciais válidas. Nenhum servidor alternativo, autoridades de certificação raiz ou nomes de usuário serão usados para autenticação se a primeira tentativa falhar.
 
-A configuração EAPHost usada neste exemplo de perfil sem fio foi derivada da amostra de [Propriedades de conexão EAP-TLS](../eaphost/eap-tls-connection-properties.md) .
+A configuração de EAPHost usada neste exemplo de perfil sem fio foi derivada do exemplo propriedades de conexão [EAP-TLS.](../eaphost/eap-tls-connection-properties.md)
 
-**Windows 7 e Windows Server 2008 R2 com o serviço de LAN sem fio instalado:** As alterações são implementadas no Windows 7 e no Windows Server 2008 R2 com o serviço de LAN sem fio instalado para otimizar o desempenho da rede sem fio. A configuração padrão para [**AutoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) quando este elemento não está definido em um perfil de LAN sem fio foi alterado. A configuração padrão é alterada para "false" no Windows 7 e no Windows Server 2008 R2 com o serviço de LAN sem fio instalado. A configuração padrão era "true" no Windows Server 2008 e no Windows Vista. Veja a descrição do elemento de esquema [**AutoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) para obter mais informações.
+**Windows 7 e Windows Server 2008 R2 com o Serviço lan sem fio instalado:** As alterações são implementadas no Windows 7 e Windows Server 2008 R2 com o Serviço de LAN Sem Fio instalado para otimizar o desempenho da rede sem fio. A configuração padrão [**para autoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) quando esse elemento não está definido em um perfil de LAN sem fio foi alterada. A configuração padrão é alterada para "false" no Windows 7 e Windows Server 2008 R2 com o Serviço lan sem fio instalado. A configuração padrão era "true" no Windows Server 2008 e Windows Vista. Consulte a descrição [**do elemento de esquema autoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) para obter mais informações.
 
 **Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para EAP-TLS.
 

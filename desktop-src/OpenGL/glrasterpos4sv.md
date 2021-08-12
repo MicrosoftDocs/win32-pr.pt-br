@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bfda6405daa6328067c6a2094b52009b7ef53e32
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 50d2c5e631dd50549a30a6a574b46198d367d846fe5b7ab5c50bfe949df17fb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103930316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118614486"
 ---
 # <a name="glrasterpos4sv-function"></a>função glRasterPos4sv
 
@@ -40,7 +40,7 @@ void WINAPI glRasterPos4sv(
 
 <dl> <dt>
 
-*l* 
+*v* 
 </dt> <dd>
 
 Um ponteiro para uma matriz de quatro elementos, especificando as coordenadas x, y, z e w para a posição de rasterização atual.

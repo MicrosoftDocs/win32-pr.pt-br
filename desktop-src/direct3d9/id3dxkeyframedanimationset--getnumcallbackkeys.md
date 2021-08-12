@@ -1,7 +1,7 @@
 ---
-description: 'Método ID3DXKeyframedAnimationSet:: GetNumCallbackKeys – Obtém o número de chaves de retorno de chamada no conjunto de animações.'
+description: Método ID3DXKeyframedAnimationSet::GetNumCallbackKeys – Obtém o número de chaves de retorno de chamada no conjunto de animação.
 ms.assetid: e1292be8-4ca2-4c01-a8bf-236346dbd16d
-title: 'Método ID3DXKeyframedAnimationSet:: GetNumCallbackKeys (D3dx9anim. h)'
+title: Método ID3DXKeyframedAnimationSet::GetNumCallbackKeys (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9f163d462728b8b1095453b2d33e99d3eeeaa1ba
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7d002b0b6a5682fef5b0927f61774978be729d0ff04414693e118036d2bc1acc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118294927"
 ---
-# <a name="id3dxkeyframedanimationsetgetnumcallbackkeys-method"></a>Método ID3DXKeyframedAnimationSet:: GetNumCallbackKeys
+# <a name="id3dxkeyframedanimationsetgetnumcallbackkeys-method"></a>Método ID3DXKeyframedAnimationSet::GetNumCallbackKeys
 
-Obtém o número de chaves de retorno de chamada no conjunto de animações.
+Obtém o número de chaves de retorno de chamada no conjunto de animação.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,11 +38,11 @@ UINT GetNumCallbackKeys();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Valor retornado
+## <a name="return-value"></a>Retornar valor
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de chaves de retorno de chamada no conjunto de animações.
+Número de chaves de retorno de chamada no conjunto de animação.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,12 +50,12 @@ Número de chaves de retorno de chamada no conjunto de animações.
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 20cf12e4-4611-4e39-9f6f-e29f15e58b36
 title: Estruturas de API de cópia de sombra de volume
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e1bb699277faa30c6a570203cd820d552cc9f1b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f95527f505430e0283b44d233605febb5695cada3f9740e850945f58e751f3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105770543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118590548"
 ---
 # <a name="volume-shadow-copy-api-structures"></a>Estruturas de API de cópia de sombra de volume
 

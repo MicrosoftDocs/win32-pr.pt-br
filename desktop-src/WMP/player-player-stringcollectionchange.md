@@ -3,9 +3,9 @@ title: Evento Player. StringCollectionChange
 description: O evento StringCollectionChange ocorre quando uma coleção de cadeia de caracteres é alterada. | Evento Player. StringCollectionChange
 ms.assetid: 465ec694-afd1-4baa-b559-3ab75874388f
 keywords:
-- Evento StringCollectionChange do Windows Media Player
-- Evento StringCollectionChange Windows Media Player, classe Player
-- Classe de jogador Windows Media Player, evento StringCollectionChange
+- Windows Media Player de eventos StringCollectionChange
+- Windows Media Player de eventos StringCollectionChange, classe Player
+- classe de jogador Windows Media Player, evento StringCollectionChange
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6a61b8e1e09e749579f323d506371138b0d9b59
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 5012cd94c14532eb94eb452c9c7aa20d50ffb8a447c2d14f56e8c6df02456849
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110424086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118572414"
 ---
 # <a name="playerstringcollectionchange-event"></a>Evento Player. StringCollectionChange
 
@@ -60,7 +60,7 @@ Número (longo) indicando o tipo de alteração ocorrida na coleção de cadeias
 
 | Número | Descrição                        |
 |--------|------------------------------------|
-| 0      | Desconhecida. (Não é um valor válido)       |
+| 0      | Desconhecido. (Não é um valor válido)       |
 | 1      | Um item foi inserido.              |
 | 2      | A coleção de cadeia de caracteres foi alterada.     |
 | 3      | Um item foi excluído.               |
@@ -77,7 +77,7 @@ Número (longo) indicando o tipo de alteração ocorrida na coleção de cadeias
 *lCollectionIndex* 
 </dt> <dd>
 
-Número (longo) que contém o índice do item de coleção de cadeias de caracteres que foi alterado.
+Número (longo) que contém o índice do item de coleção de cadeia de caracteres que foi alterado.
 
 </dd> </dl>
 
@@ -104,7 +104,7 @@ Esse evento não retorna um valor.
 
 <dl> <dt>
 
-[**Objeto Player**](player-object.md)
+[**Objeto de jogador**](player-object.md)
 </dt> <dt>
 
 [**Objeto StringCollection**](stringcollection-object.md)

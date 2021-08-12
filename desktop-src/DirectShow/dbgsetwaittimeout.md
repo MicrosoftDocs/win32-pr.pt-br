@@ -1,7 +1,7 @@
 ---
-description: Define o valor de tempo limite de depuração. Ignorado em compilações de varejo.
+description: Define o valor de tempo-máximo de depuração. Ignorado em builds de varejo.
 ms.assetid: d0f60d8b-34f2-44b2-bdd6-5e8e6f7806d8
-title: Função DbgSetWaitTimeout (Wxdebug. h)
+title: Função DbgSetWaitTimeout (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5805112b19132045e0245ef7baf29cb5c844e290
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 67a5522184b9e88cd4b8ac9f23246f96c13ffad2175d625334de32d34c750e12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118654018"
 ---
 # <a name="dbgsetwaittimeout-function"></a>Função DbgSetWaitTimeout
 
-Define o valor de tempo limite de depuração. Ignorado em compilações de varejo.
+Define o valor de tempo-máximo de depuração. Ignorado em builds de varejo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,10 +42,10 @@ void DbgSetWaitTimeout(
 
 <dl> <dt>
 
-*dwTimeout* 
+*Dwtimeout* 
 </dt> <dd>
 
-Valor de tempo limite em milissegundos ou infinito para aguardar indefinidamente.
+Valor de tempo-out em milissegundos ou INFINITE para aguardar indefinidamente.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Em compilações de depuração, as funções [**DbgWaitForMultipleObjects**](dbgwaitformultipleobjects.md) e [**DbgWaitForSingleObject**](dbgwaitforsingleobject.md) usam esse valor como o intervalo de tempo limite.
+Em builds de depuração, as funções [**DbgWaitForMultipleObjects**](dbgwaitformultipleobjects.md) e [**DbgWaitForSingleObject**](dbgwaitforsingleobject.md) usam esse valor como o intervalo de tempo-out.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Em compilações de depuração, as funções [**DbgWaitForMultipleObjects**](db
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxdebug. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxdebug.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Em compilações de depuração, as funções [**DbgWaitForMultipleObjects**](db
 
 <dl> <dt>
 
-[Aguardar funções de depuração](wait-debugging-functions.md)
+[Funções de depuração de espera](wait-debugging-functions.md)
 </dt> </dl>
 
  

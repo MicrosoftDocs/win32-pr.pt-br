@@ -12,12 +12,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 655379676bd117b89a6fe41a8d6895260e71a2bf
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 5d4915b2342e6c453134cabd431db59c62c037d6c5ec8cde139f402933bd4f53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105790473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118273695"
 ---
 # <a name="performservervalidation-eaptype"></a>PerformServerValidation (EapType)
 
@@ -43,8 +43,8 @@ O elemento **PerformServerValidation** é opcional.
 
 | Função | Versão mínima do sistema operacional com suporte |
 |------|------------------------------|
-| Cliente<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>              |
+| Servidor<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/> |
 
 
 

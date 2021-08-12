@@ -1,22 +1,22 @@
 ---
 title: Propriedade IMsRdpClientNonScriptable4 AllowCredentialSaving
-description: Especifica se a caixa de diálogo credenciais exibe uma caixa de seleção que habilita o salvamento de credenciais.
+description: Especifica se a caixa de diálogo credenciais exibe uma caixa de seleção que permite a economia de credenciais.
 ms.assetid: c5148ff0-0d7f-413d-b2a8-ff942668bee6
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade AllowCredentialSaving
-- Propriedade AllowCredentialSaving Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable4, Propriedade AllowCredentialSaving
-- Propriedade AllowCredentialSaving Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable5, Propriedade AllowCredentialSaving
-- Propriedade AllowCredentialSaving Serviços de Área de Trabalho Remota, objeto MsRdpClient6
-- Objeto MsRdpClient6 Serviços de Área de Trabalho Remota, Propriedade AllowCredentialSaving
-- Propriedade AllowCredentialSaving Serviços de Área de Trabalho Remota, objeto MsRdpClient7
-- Objeto MsRdpClient7 Serviços de Área de Trabalho Remota, Propriedade AllowCredentialSaving
-- Propriedade AllowCredentialSaving Serviços de Área de Trabalho Remota, objeto MsRdpClient8
-- Objeto MsRdpClient8 Serviços de Área de Trabalho Remota, Propriedade AllowCredentialSaving
-- Propriedade AllowCredentialSaving Serviços de Área de Trabalho Remota, objeto MsRdpClient9
-- Objeto MsRdpClient9 Serviços de Área de Trabalho Remota, Propriedade AllowCredentialSaving
+- Propriedade AllowCredentialSaving Serviços de Área de Trabalho Remota
+- A propriedade AllowCredentialSaving Serviços de Área de Trabalho Remota interface , IMsRdpClientNonScriptable4
+- Interface IMsRdpClientNonScriptable4 Serviços de Área de Trabalho Remota , propriedade AllowCredentialSaving
+- A propriedade AllowCredentialSaving Serviços de Área de Trabalho Remota interface , IMsRdpClientNonScriptable5
+- Interface IMsRdpClientNonScriptable5 Serviços de Área de Trabalho Remota , propriedade AllowCredentialSaving
+- Propriedade AllowCredentialSaving Serviços de Área de Trabalho Remota objeto , MsRdpClient6
+- Objeto MsRdpClient6 Serviços de Área de Trabalho Remota propriedade , AllowCredentialSaving
+- Propriedade AllowCredentialSaving Serviços de Área de Trabalho Remota objeto , MsRdpClient7
+- Objeto MsRdpClient7 Serviços de Área de Trabalho Remota propriedade , AllowCredentialSaving
+- Propriedade AllowCredentialSaving Serviços de Área de Trabalho Remota objeto , MsRdpClient8
+- Objeto MsRdpClient8 Serviços de Área de Trabalho Remota propriedade , AllowCredentialSaving
+- Propriedade AllowCredentialSaving Serviços de Área de Trabalho Remota objeto , MsRdpClient9
+- Objeto MsRdpClient9 Serviços de Área de Trabalho Remota propriedade , AllowCredentialSaving
 topic_type:
 - apiref
 api_name:
@@ -36,20 +36,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 240e2eb8e80209ee5c90d63f2996231cf84bb2dc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1cca6f61b8cbcc315eb93e6e9c3ab0f89684e4d29c3fcb8313af0198ee594cc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105800004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118607722"
 ---
-# <a name="imsrdpclientnonscriptable4allowcredentialsaving-property"></a>Propriedade IMsRdpClientNonScriptable4:: AllowCredentialSaving
+# <a name="imsrdpclientnonscriptable4allowcredentialsaving-property"></a>Propriedade IMsRdpClientNonScriptable4::AllowCredentialSaving
 
-Especifica se a caixa de diálogo credenciais exibe uma caixa de seleção que habilita o salvamento de credenciais.
+Especifica se a caixa de diálogo credenciais exibe uma caixa de seleção que permite a economia de credenciais.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -66,7 +66,7 @@ HRESULT get_AllowCredentialSaving(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Define se a caixa de diálogo credenciais exibe uma caixa de seleção que habilita o salvamento de credenciais.
+Define se a caixa de diálogo credenciais exibe uma caixa de seleção que habilita a economia de credenciais.
 
 ## <a name="error-codes"></a>Códigos do Erro
 

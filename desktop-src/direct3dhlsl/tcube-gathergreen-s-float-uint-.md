@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1555b72b095ce0589a8ae9b396c67d29236db82c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 79fe6a470e4b5f7f4df845636350d191f3e83a77934dcaf5d55ff8ee8877e4d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104989238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118284933"
 ---
 # <a name="texturecubegathergreensfloatuint-function"></a>Função TextureCube:: GatherGreen (S, float, uint)
 
@@ -82,7 +82,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

@@ -1,7 +1,7 @@
 ---
-description: O método Get recupera uma propriedade identificada por um GUID do conjunto de propriedades e uma ID de propriedade.
+description: O método Get recupera uma propriedade identificada por um GUID de conjunto de propriedades e uma ID de propriedade.
 ms.assetid: f39862db-0659-4533-8cee-aee2f778e085
-title: 'Método IKsPropertySet:: Get (ksproxy. h)'
+title: Método IKsPropertySet::Get (Ksproxy.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Strmiids.lib
 - Strmiids.dll
-ms.openlocfilehash: 9c4461e8c5886d84bcf3b7faa6675b749bc0c37d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: fbfd44002270209c055b5a4003d9062a6821aeffb3ce71de7977fc20d0c64e81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118652238"
 ---
-# <a name="ikspropertysetget-method"></a>Método IKsPropertySet:: Get
+# <a name="ikspropertysetget-method"></a>Método IKsPropertySet::Get
 
-O método **Get** recupera uma propriedade identificada por um GUID do conjunto de propriedades e uma ID de propriedade.
+O **método Get** recupera uma propriedade identificada por um GUID de conjunto de propriedades e uma ID de propriedade.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,66 +46,66 @@ HRESULT Get(
 
 <dl> <dt>
 
-*guidPropSet* \[ no\]
+*guidPropSet* \[ Em\]
 </dt> <dd>
 
-O GUID do conjunto de propriedades.
+O GUID do conjunto de propriedades .
 
 </dd> <dt>
 
-*dwPropId* \[ no\]
+*dwPropID* \[ Em\]
 </dt> <dd>
 
 O identificador da propriedade dentro do conjunto de propriedades.
 
 </dd> <dt>
 
-*pInstanceData* \[ no\]
+*pInstanceData* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma matriz de bytes que contém dados de instância para a propriedade.
+Um ponteiro para uma matriz de bytes que contém dados de instância para a propriedade .
 
 </dd> <dt>
 
-*cbInstanceData* \[ no\]
+*cbInstanceData* \[ Em\]
 </dt> <dd>
 
-O tamanho da matriz fornecida em *pInstanceData*, em bytes.
+O tamanho da matriz determinada em *pInstanceData*, em bytes.
 
 </dd> <dt>
 
-*pPropData* \[ fora\]
+*pPropData* \[ out\]
 </dt> <dd>
 
-Um ponteiro para uma matriz de bytes que recebe os dados de propriedade.
+Um ponteiro para uma matriz de bytes que recebe os dados da propriedade.
 
 </dd> <dt>
 
-*cbPropData* \[ no\]
+*cbPropData* \[ Em\]
 </dt> <dd>
 
-O tamanho da matriz fornecida em *pPropData*, em bytes.
+O tamanho da matriz determinada em *pPropData,* em bytes.
 
 </dd> <dt>
 
-*pcbReturned* \[ fora\]
+*pcbReturned* \[ out\]
 </dt> <dd>
 
-Recebe o número de bytes que o método copia para a matriz *pPropData* .
+Recebe o número de bytes que o método copia para a *matriz pPropData.*
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
+Retorna um **valor HRESULT.** Os possíveis valores incluem os seguintes.
 
 
 
 | Código de retorno                                                                                              | Descrição                                                                 |
 |----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                     | Êxito.<br/>                                                         |
-| <dl> <dt>**\_ \_ \_ não há suporte para o conjunto de propriedades E**</dt> </dl> | Não há suporte para o conjunto de propriedades.<br/>                               |
-| <dl> <dt>**ID de prop. de E \_ \_ \_ sem suporte**</dt> </dl>  | A ID da propriedade não tem suporte para o conjunto de propriedades especificado.<br/> |
+| <dl> <dt>**E \_ PROP SET SEM \_ \_ SUPORTE**</dt> </dl> | Não há suporte para o conjunto de propriedades.<br/>                               |
+| <dl> <dt>**E \_ \_ ID DE PROP \_ SEM SUPORTE**</dt> </dl>  | Não há suporte para a ID da propriedade para o conjunto de propriedades especificado.<br/> |
 
 
 
@@ -114,17 +114,17 @@ Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> Outra interface com esse nome existe no arquivo de cabeçalho dsound. h. As duas interfaces não são compatíveis. A interface [IKsControl](/windows-hardware/drivers/ddi/ksproxy/nn-ksproxy-ikscontrol) , documentada no DirectShow DDK, agora é a interface recomendada para passar os conjuntos de propriedades entre os drivers WDM e os componentes do modo de usuário.
+> Existe outra interface com esse nome no arquivo de header dsound.h. As duas interfaces não são compatíveis. A interface [IKsControl,](/windows-hardware/drivers/ddi/ksproxy/nn-ksproxy-ikscontrol) documentada no DDK do DirectShow, agora é a interface recomendada para passar conjuntos de propriedades entre drivers WDM e componentes de modo de usuário.
 
  
 
-Para recuperar uma propriedade, aloque um buffer que esse método irá preencher. Para determinar o tamanho de buffer necessário, especifique **NULL** para *pPropData* e zero (0) para *cbPropData*. Esse método retorna o tamanho de buffer necessário em *pcbReturned*.
+Para recuperar uma propriedade, aloce um buffer que esse método preencherá. Para determinar o tamanho do buffer necessário, **especifique NULL** para *pPropData* e zero (0) para *cbPropData.* Esse método retorna o tamanho do buffer necessário *em pcbReturned.*
 
-Você deve incluir KS. h antes de ksproxy. h.
+Você deve incluir Ks.h antes de Ksproxy.h.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir consulta um PIN para sua categoria de PIN, recuperando a propriedade de **\_ \_ categoria AMPROPERTY PIN** . (Consulte [PIN conjunto de propriedades](pin-property-set.md).)
+O exemplo a seguir consulta um pin para sua categoria de pino, recuperando a **propriedade AMPROPERTY \_ PIN \_ CATEGORY.** (Consulte [Fixar Conjunto de Propriedades](pin-property-set.md).)
 
 
 ```C++
@@ -160,8 +160,8 @@ HRESULT GetPinCategory(IPin *pPin, GUID *pPinCategory)
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>Ksproxy. h</dt> </dl>    |
-| Biblioteca<br/>                  | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Ksproxy.h</dt> </dl>    |
+| Biblioteca<br/>                  | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -172,7 +172,7 @@ HRESULT GetPinCategory(IPin *pPin, GUID *pPinCategory)
 [Códigos de erro e êxito](error-and-success-codes.md)
 </dt> <dt>
 
-[**Interface IKsPropertySet**](ikspropertyset.md)
+[**IKsPropertySet Interface**](ikspropertyset.md)
 </dt> <dt>
 
 [Conjuntos de propriedades](property-sets.md)

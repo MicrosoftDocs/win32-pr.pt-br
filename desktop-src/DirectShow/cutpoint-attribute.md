@@ -1,15 +1,15 @@
 ---
-description: O atributo cutpoint especifica quando uma transição corta de uma origem para a próxima, se a transição for renderizada como um recorte. O valor é relativo ao início da transição.
+description: O atributo de ponto de corte especifica quando uma transição é cortada de uma fonte para outra, se a transição é renderizada como um corte. O valor é relativo ao início da transição.
 ms.assetid: bdb0b8cd-025f-4b56-9cd4-f71c58ee809a
 title: Atributo cutpoint
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd516bd67577906a0a06d8da692ffbd7563ce32f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7332d3ef1b608b192b18e0d32bc99bce547058754950847e0a9767eb500a1553
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118654587"
 ---
 # <a name="cutpoint-attribute"></a>Atributo cutpoint
 
@@ -18,11 +18,11 @@ ms.locfileid: "104087631"
 
  
 
-O `cutpoint` atributo especifica quando uma transição corta de uma origem para a próxima, se a transição for renderizada como um recorte. O valor é relativo ao início da transição.
+O atributo especifica quando uma transição é cortada de uma fonte para a próxima, se a transição `cutpoint` é renderizada como um corte. O valor é relativo ao início da transição.
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Deve ser uma cadeia de caracteres com o formato *hh: mm: SS. FF* , em que *hh* = hours, *mm* = minutos, *SS* = segundos e *FF* = frações de segundos. Exemplo: 1:04:30.512. As unidades à esquerda podem ser omitidas. Por exemplo, 3:00 (três minutos) e 45 (45 segundos) são válidos.
+Deve ser uma cadeia de caracteres com o formato *hh:mm:ss.ff,* em que *hh* = horas, *mm* = minutos, *ss* = segundos e *ff* = frações de segundos. Exemplo: 1:04:30.512. As unidades à frente podem ser omitidas. Por exemplo, 3:00 (três minutos) e 45 (45 segundos) são válidos.
 
 ## <a name="applies-to"></a>Aplica-se A
 

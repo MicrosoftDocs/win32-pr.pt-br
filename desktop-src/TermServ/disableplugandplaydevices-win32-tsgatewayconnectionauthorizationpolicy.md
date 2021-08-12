@@ -4,9 +4,9 @@ description: Define a propriedade PlugAndPlayDevicesDisabled.
 ms.assetid: 0cfe9fea-da93-47fa-a9ea-868c78890a53
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método DisablePlugAndPlayDevices
-- Método DisablePlugAndPlayDevices Serviços de Área de Trabalho Remota, classe Win32_TSGatewayConnectionAuthorizationPolicy
-- Classe Win32_TSGatewayConnectionAuthorizationPolicy Serviços de Área de Trabalho Remota, método DisablePlugAndPlayDevices
+- Método DisablePlugAndPlayDevices Serviços de Área de Trabalho Remota
+- O método DisablePlugAndPlayDevices Serviços de Área de Trabalho Remota classe Win32_TSGatewayConnectionAuthorizationPolicy ,
+- Win32_TSGatewayConnectionAuthorizationPolicy classe Serviços de Área de Trabalho Remota , método DisablePlugAndPlayDevices
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc7432d69fc8cd088af5d5a44a07b90f9d697348
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 84bbd9c6f44c120d5a47e74219ed071a6e405e70ab0a46b54f707671ff5b2e6f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118609432"
 ---
-# <a name="disableplugandplaydevices-method-of-the-win32_tsgatewayconnectionauthorizationpolicy-class"></a>Método DisablePlugAndPlayDevices da classe Win32 \_ TSGatewayConnectionAuthorizationPolicy
+# <a name="disableplugandplaydevices-method-of-the-win32_tsgatewayconnectionauthorizationpolicy-class"></a>Método DisablePlugAndPlayDevices da classe \_ Win32 TSGatewayConnectionAuthorizationPolicy
 
-Define a propriedade **PlugAndPlayDevicesDisabled** . Se a propriedade **DeviceRedirectionType** tiver um valor de "2", a propriedade **PlugAndPlayDevicesDisabled** controlará o redirecionamento de dispositivos plug and Play para sessões estabelecidas por meio do servidor gateway de área de trabalho remota (gateway de área de trabalho remota).
+Define a **propriedade PlugAndPlayDevicesDisabled.** Se a propriedade **DeviceRedirectionType** tiver um valor de "2", a propriedade **PlugAndPlayDevicesDisabled** controlará o redirecionamento de dispositivos Plug and Play para sessões estabelecidas por meio do servidor do Gateway de Área de Trabalho Remota (Gateway de RD).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,22 +43,22 @@ uint32 DisablePlugAndPlayDevices(
 
 <dl> <dt>
 
-*Desabilitado* \[ no\]
+*Desabilitado* \[ Em\]
 </dt> <dd>
 
-Novo valor para a propriedade **PlugAndPlayDevicesDisabled** .
+Novo valor para a **propriedade PlugAndPlayDevicesDisabled.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se o método tiver sucesso, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para obter uma lista de códigos de erro, consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md).
+Se o método for bem-sucedido, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para ver uma lista de códigos de erro, consulte Serviços de Área de Trabalho Remota códigos de erro do provedor [WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="remarks"></a>Comentários
 
 Você deve ser um membro do grupo Administradores para chamar esse método.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format arquivos (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,8 +68,8 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TS. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -78,7 +78,7 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_TSGatewayConnectionAuthorizationPolicy Win32**](win32-tsgatewayconnectionauthorizationpolicy.md)
+[**Win32 \_ TSGatewayConnectionAuthorizationPolicy**](win32-tsgatewayconnectionauthorizationpolicy.md)
 </dt> </dl>
 
  

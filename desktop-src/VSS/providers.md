@@ -4,12 +4,12 @@ ms.assetid: 4e6b46b0-df9e-4458-b0ac-e237d7656337
 title: Provedores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bb336dbb51fcbd715ea236ecdc0c62d81daf29d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58c9e098981c6246392fef75f717b1d7676df1aa134e4faef3e436ee8b3eb537
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118591323"
 ---
 # <a name="providers"></a>Provedores
 
@@ -19,7 +19,7 @@ Em resposta a uma solicitação de um solicitante, um provedor gera eventos COM 
 
 Enquanto uma cópia de sombra está em existência, o provedor cria um ambiente onde há efetivamente duas cópias independentes de qualquer volume que tenha sido copiado por sombra: um disco em execução que está sendo usado e atualizado normalmente, a outra cópia que é fixa e estável para backup.
 
-Embora um provedor padrão seja fornecido como parte do Windows, outros fornecedores são livres para fornecer suas próprias implementações otimizadas para suas próprias ofertas de hardware e software de armazenamento.
+embora um provedor padrão seja fornecido como parte do Windows, outros fornecedores são livres para fornecer suas próprias implementações otimizadas para suas próprias ofertas de hardware e software de armazenamento.
 
 Do ponto de vista de um desenvolvedor de aplicativos de usuário final ou backup/restauração, todos os provedores terão a mesma interface (consulte [selecionando provedores](selecting-providers.md)).
 
@@ -37,7 +37,7 @@ Dependendo de como isso é feito, um provedor pode ser de um dos três tipos:
 
 ## <a name="system-provider"></a>Provedor do sistema
 
-Um provedor de cópia de sombra, o [*provedor do sistema*](vssgloss-s.md), é fornecido como parte padrão de uma instalação do sistema operacional Windows. Atualmente, o provedor do sistema é uma instância específica de um provedor de software. No entanto, isso pode ser alterado no futuro.
+um provedor de cópia de sombra, o [*provedor do sistema*](vssgloss-s.md), é fornecido como parte padrão de uma instalação de sistema operacional Windows. Atualmente, o provedor do sistema é uma instância específica de um provedor de software. No entanto, isso pode ser alterado no futuro.
 
 Para manter uma exibição "pontual" de um volume contido na cópia de sombra, o provedor do sistema usa uma técnica de copiar na gravação. Cópias dos setores em disco que foram modificados (chamadas de "diffs") desde o início da criação da cópia de sombra são armazenadas em uma área de armazenamento de cópia de sombra.
 

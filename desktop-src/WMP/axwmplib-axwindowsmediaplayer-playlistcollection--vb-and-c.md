@@ -3,9 +3,9 @@ title: Propriedade AxWindowsMediaPlayer. playlistcollection
 description: A propriedade playlistcollection Obtém uma interface IWMPPlaylistCollection.
 ms.assetid: f3c65f70-b58f-41c1-afe0-3a9d9c95561c
 keywords:
-- Propriedade playlistcollection Windows Media Player
-- Propriedade playlistcollection Windows Media Player, classe AxWindowsMediaPlayer
-- Classe AxWindowsMediaPlayer do Windows Media Player, Propriedade playlistcollection
+- Windows Media Player da propriedade playlistcollection
+- propriedade playlistcollection Windows Media Player, classe AxWindowsMediaPlayer
+- classe AxWindowsMediaPlayer Windows Media Player, propriedade playlistcollection
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 94a01ca41d194a6321e02d34280241cd5701597e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6d646bec99c61032c0347d9d21df443c890837424255ebd687c15cc9f780a1d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118581896"
 ---
 # <a name="axwindowsmediaplayerplaylistcollection-property"></a>Propriedade AxWindowsMediaPlayer. playlistcollection
 

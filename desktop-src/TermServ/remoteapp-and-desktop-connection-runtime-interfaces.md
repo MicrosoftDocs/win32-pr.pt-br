@@ -1,22 +1,22 @@
 ---
-title: Conexão de RemoteApp e Área de Trabalho interfaces de tempo de execução
-description: Dá suporte a interfaces que permitem o desenvolvimento de clientes personalizados no Conexão de RemoteApp e Área de Trabalho.
+title: interfaces Conexão de RemoteApp e Área de Trabalho Runtime
+description: Dá suporte a interfaces que permitem o desenvolvimento de clientes personalizados Conexão de RemoteApp e Área de Trabalho.
 ms.assetid: 4580df05-5e44-40d0-8765-5d9b4e1d339e
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota Serviços de Área de Trabalho Remota, Conexão de RemoteApp e Área de Trabalho referência da API de tempo de execução
+- Serviços de Área de Trabalho Remota Serviços de Área de Trabalho Remota , Conexão de RemoteApp e Área de Trabalho api de runtime
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6b7c3c2fd3841cfe797fc559ba1aa30d3479436
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 974b68a5787a2e2e7fb0ad6e0cd653d4c1c4e583eb22f4475e749b8e03889970
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104084193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118605281"
 ---
-# <a name="remoteapp-and-desktop-connection-runtime-interfaces"></a>Conexão de RemoteApp e Área de Trabalho interfaces de tempo de execução
+# <a name="remoteapp-and-desktop-connection-runtime-interfaces"></a>interfaces Conexão de RemoteApp e Área de Trabalho Runtime
 
-A API de tempo de execução Conexão de RemoteApp e Área de Trabalho dá suporte a interfaces que permitem o desenvolvimento de clientes personalizados no Conexão de RemoteApp e Área de Trabalho.
+A API Conexão de RemoteApp e Área de Trabalho Runtime do Conexão de RemoteApp e Área de Trabalho dá suporte a interfaces que permitem o desenvolvimento de clientes personalizados em Conexão de RemoteApp e Área de Trabalho.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -39,14 +39,14 @@ Expõe métodos adicionais que fornecem informações sobre uma conexão no Cone
 [**IWorkspace3**](/windows/desktop/api/workspaceruntime/nn-workspaceruntime-iworkspace3)
 </dt> <dd>
 
-Expõe métodos que fornecem informações sobre uma conexão em Conexão de RemoteApp e Área de Trabalho e adiciona a capacidade de recuperar ou definir um token de declarações.
+Expõe métodos que fornecem informações sobre uma conexão no Conexão de RemoteApp e Área de Trabalho e adiciona a capacidade de recuperar ou definir um token de declarações.
 
 </dd> <dt>
 
 [**IWorkspaceClientExt**](/windows/desktop/api/Workspaceruntimeclientext/nn-workspaceruntimeclientext-iworkspaceclientext)
 </dt> <dd>
 
-Expõe métodos que permitem ao tempo de execução desconectar um cliente personalizado no Conexão de RemoteApp e Área de Trabalho.
+Expõe métodos que permitem que o runtime desconecte um cliente personalizado no Conexão de RemoteApp e Área de Trabalho.
 
 </dd> <dt>
 
@@ -67,41 +67,41 @@ Expõe métodos que adicionam e removem referências a clientes personalizados n
 [**IWorkspaceReportMessage**](/windows/desktop/api/workspaceruntime/nn-workspaceruntime-iworkspacereportmessage)
 </dt> <dd>
 
-Expõe métodos que dão suporte ao tratamento de mensagens de erro para espaços de trabalho remotos.
+Expõe métodos que suportam tratamento de mensagens de erro para workspaces remotos.
 
 </dd> <dt>
 
 [**IWorkspaceResTypeRegistry**](/windows/desktop/api/Workspaceax/nn-workspaceax-iworkspacerestyperegistry)
 </dt> <dd>
 
-Expõe métodos que permitem que um plug-in gerencie extensões de nome de arquivo de terceiros no Conexão de RemoteApp e Área de Trabalho Runtime.
+Expõe métodos que permitem que um plug-in gerencie extensões de nome de arquivo de terceiros Conexão de RemoteApp e Área de Trabalho runtime.
 
 </dd> <dt>
 
 [**IWorkspaceScriptable**](/windows/desktop/api/workspaceruntime/nn-workspaceruntime-iworkspacescriptable)
 </dt> <dd>
 
-Expõe métodos que gerenciam credenciais de Conexão de RemoteApp e Área de Trabalho e conexões.
+Expõe métodos que gerenciam Conexão de RemoteApp e Área de Trabalho credenciais e conexões.
 
 </dd> <dt>
 
 [**IWorkspaceScriptable2**](/windows/desktop/api/workspaceruntime/nn-workspaceruntime-iworkspacescriptable2)
 </dt> <dd>
 
-Expõe métodos que gerenciam credenciais de Conexão de RemoteApp e Área de Trabalho e conexões.
+Expõe métodos que gerenciam Conexão de RemoteApp e Área de Trabalho credenciais e conexões.
 
 </dd> <dt>
 
 [**IWorkspaceScriptable3**](/windows/desktop/api/workspaceruntime/nn-workspaceruntime-iworkspacescriptable3)
 </dt> <dd>
 
-Expõe métodos que gerenciam credenciais de Conexão de RemoteApp e Área de Trabalho e conexões.
+Expõe métodos que gerenciam Conexão de RemoteApp e Área de Trabalho credenciais e conexões.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

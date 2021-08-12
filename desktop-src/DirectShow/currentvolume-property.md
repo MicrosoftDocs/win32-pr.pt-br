@@ -4,12 +4,12 @@ ms.assetid: f8d06a30-d6d5-43b9-b838-741d781f8d01
 title: Propriedade CurrentVolume
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7b91c394be620dfc3f00b8793222848131355f2
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d07f9d82facc243654bad2e16e9a028e8cf920a51f15dd92cc879b0ea1340d68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105789649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118654597"
 ---
 # <a name="currentvolume-property"></a>Propriedade CurrentVolume
 
@@ -26,11 +26,11 @@ A `CurrentVolume` propriedade recupera o número de volume para o diretório rai
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retorna um valor inteiro que representa o volume de DVD atual. Se um disco fizer parte de um conjunto de vários volumes, o valor inteiro deverá ser maior que zero.
+Retorna um valor inteiro que representa o volume de DVD atual. Se um disco faz parte de um conjunto de vários volumes, o valor inteiro deve ser maior que zero.
 
 ## <a name="remarks"></a>Comentários
 
-Esta propriedade é somente leitura sem valor padrão.
+Essa propriedade é somente leitura sem valor padrão.
 
 ## <a name="see-also"></a>Confira também
 

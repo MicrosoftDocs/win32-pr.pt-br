@@ -1,52 +1,52 @@
 ---
-title: Atributo ImageAlignShape de VML
-description: Atributo ImageAlignShape de VML
+title: Atributo ImageAlignShape do VML
+description: Atributo ImageAlignShape do VML
 ms.assetid: 45d72560-ab64-4e85-b495-88f1557a62f1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 82aaab9c4c470b41bcf9fdb96ee2c048a7d0b81d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 86090936556ba8a4f022024f292293b396d953d46962423a222b172adc2a15f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118600464"
 ---
-# <a name="vml-imagealignshape-attribute"></a>Atributo ImageAlignShape de VML
+# <a name="vml-imagealignshape-attribute"></a>Atributo ImageAlignShape do VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina o alinhamento da imagem do traço. Leitura/gravação. **VgTriState**.
+Determina o alinhamento da imagem de traço. Leitura/gravação. **VgTriState.**
 
 **Aplica-se a**
 
-[Pincel](msdn-online-vml-stroke-element.md)
+[Curso](msdn-online-vml-stroke-element.md)
 
 **Sintaxe de marca**
 
 <v:
 
-elemento *imagealignshape = "* expression *" >*
+elemento *imagealignshape="* expressão *">*
 
 **Sintaxe do script**
 
-element *. imagealignshape = "* expressão *"*
+element *.imagealignshape="* expression *"*
 
-elemento de expressão *=* *. imagealignshape*
+elemento *=* expression *.imagealignshape*
 
 **Comentários**
 
-Se **for true**, alinhar a imagem com a forma, caso contrário, alinhará a imagem com a janela. O padrão é **True**.
+Se **True**, alinhe a imagem com a forma; caso disso, alinhe a imagem com a janela. O padrão é **True**.
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
-A imagem é alinhada com a janela.
+A imagem está alinhada com a janela.
 
 
 ```HTML
@@ -60,6 +60,6 @@ A imagem é alinhada com a janela.
 
 
 
- 
+ 
 
- 
+ 

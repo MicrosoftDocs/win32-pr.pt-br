@@ -1,9 +1,9 @@
 ---
-title: função glStencilOp (GL. h)
+title: Função glStencilOp (Gl.h)
 description: A função glStencilOp define as ações de teste de estêncil.
 ms.assetid: 16809735-5624-49cf-bfa5-9908d008b234
 keywords:
-- função glStencilOp OpenGL
+- Função glStencilOp OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b23162f8606ed68dc90a0cb6debdcc903e0ccd0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: da899207456cece58216874c7540a032326e4180e9484590e2effd619eea72f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105789741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118614330"
 ---
-# <a name="glstencilop-function"></a>função glStencilOp
+# <a name="glstencilop-function"></a>Função glStencilOp
 
-A função **glStencilOp** define as ações de teste de estêncil.
+A **função glStencilOp** define as ações de teste de estêncil.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,7 +42,7 @@ void WINAPI glStencilOp(
 
 <dl> <dt>
 
-*recuperação* 
+*Falhar* 
 </dt> <dd>
 
 A ação a ser tomada quando o teste de estêncil falhar. As seis constantes simbólicas a seguir são aceitas.
@@ -51,12 +51,12 @@ A ação a ser tomada quando o teste de estêncil falhar. As seis constantes sim
 
 | Valor                                                                                                                                                | Significado                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| <span id="GL_KEEP"></span><span id="gl_keep"></span><dl> <dt>**\_Keep GL**</dt> </dl>          | Mantém o valor atual.<br/>                                                                         |
-| <span id="GL_ZERO"></span><span id="gl_zero"></span><dl> <dt>**GL \_ zero**</dt> </dl>          | Define o valor do buffer de estêncil como zero.<br/>                                                           |
-| <span id="GL_REPLACE"></span><span id="gl_replace"></span><dl> <dt>**\_substituição GL**</dt> </dl> | Define o valor do buffer de estêncil como *ref*, conforme especificado por **glStencilFunc**.<br/>                       |
-| <span id="GL_INCR"></span><span id="gl_incr"></span><dl> <dt>**\_incr GL**</dt> </dl>          | Incrementa o valor do buffer do estêncil atual. Coloca o valor não assinado máximo reapresentável.<br/> |
-| <span id="GL_DECR"></span><span id="gl_decr"></span><dl> <dt>**\_DECR GL**</dt> </dl>          | Decrementa o valor do buffer do estêncil atual. Coloca para zero.<br/>                                     |
-| <span id="GL_INVERT"></span><span id="gl_invert"></span><dl> <dt>**\_inverter GL**</dt> </dl>    | A bit invertido inverte o valor do buffer do estêncil atual.<br/>                                                |
+| <span id="GL_KEEP"></span><span id="gl_keep"></span><dl> <dt>**GL \_ KEEP**</dt> </dl>          | Mantém o valor atual.<br/>                                                                         |
+| <span id="GL_ZERO"></span><span id="gl_zero"></span><dl> <dt>**GL \_ ZERO**</dt> </dl>          | Define o valor do buffer de estêncil como zero.<br/>                                                           |
+| <span id="GL_REPLACE"></span><span id="gl_replace"></span><dl> <dt>**GL \_ REPLACE**</dt> </dl> | Define o valor do buffer de estêncil *como ref*, conforme especificado por **glStencilFunc.**<br/>                       |
+| <span id="GL_INCR"></span><span id="gl_incr"></span><dl> <dt>**GL \_ INCR**</dt> </dl>          | Incrementa o valor atual do buffer de estêncil. Fixa para o valor máximo não assinado representável.<br/> |
+| <span id="GL_DECR"></span><span id="gl_decr"></span><dl> <dt>**GL \_ DECR**</dt> </dl>          | Diminui o valor atual do buffer de estêncil. Fixa a zero.<br/>                                     |
+| <span id="GL_INVERT"></span><span id="gl_invert"></span><dl> <dt>**GL \_ INVERT**</dt> </dl>    | Inverte bit a bit o valor atual do buffer de estêncil.<br/>                                                |
 
 
 
@@ -67,14 +67,14 @@ A ação a ser tomada quando o teste de estêncil falhar. As seis constantes sim
 *zfail* 
 </dt> <dd>
 
-Ação de estêncil quando o teste de estêncil passa, mas o teste de profundidade falha. Aceita as mesmas constantes simbólicas como *falha.*
+Ação de estêncil quando o teste de estêncil é aprovado, mas o teste de profundidade falha. Aceita as mesmas constantes simbólicas que *falham.*
 
 </dd> <dt>
 
 *zpass* 
 </dt> <dd>
 
-Ação de estêncil quando o teste de estêncil e o teste de profundidade são aprovados, ou quando o teste de estêncil passa e não há um buffer de profundidade ou o teste de profundidade não está habilitado. Aceita as mesmas constantes simbólicas como *falha*.
+Ação de estêncil quando o teste de estêncil e a profundidade de teste são aprovados ou quando o teste de estêncil é aprovado e não há nenhum buffer de profundidade ou teste de profundidade não está habilitado. Aceita as mesmas constantes simbólicas que *falham.*
 
 </dd> </dl>
 
@@ -84,42 +84,42 @@ Essa função não retorna um valor.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**](glgeterror.md) .
+Os códigos de erro a seguir podem ser recuperados pela [**função glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | *Fail*, *zfail* ou *ZPass* era qualquer valor diferente dos seis valores constantes definidos.<br/>                                      |
-| <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**GL \_ INVALID \_ ENUM**</dt> </dl>      | *fail*, *zfail* ou *zpass* era qualquer valor diferente dos seis valores constantes definidos.<br/>                                      |
+| <dl> <dt>**OPERAÇÃO \_ GL \_ INVÁLIDA**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd.**](glend.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-O estêncil, como o armazenamento em buffer *z*, habilita e desabilita o desenho em uma base por pixel. Você desenha nos planos de estêncil usando primitivas de desenho OpenGL e, em seguida, renderiza a geometria e as imagens, usando os planos de estêncil para mascarar partes da tela. A criação de estêncil normalmente é usada em algoritmos de renderização de passagem multipassadas para obter efeitos especiais, como decals, estrutura de tópicos e renderização de geometria sólida construtivas.
+A cerca, como *z*-buffering, habilita e desabilita o desenho por pixel. Você desenha nos planos de estêncil usando primitivos de desenho OpenGL e, em seguida, renderiza geometria e imagens, usando os planos de estêncil para mascarar partes da tela. Normalmente, a estrutura é usada em algoritmos de renderização multipasso para obter efeitos especiais, como decalques, estrutura de estrutura de estrutura e renderização construtiva de geometria sólida.
 
-O teste de estêncil elimina condicionalmente um pixel com base no resultado de uma comparação entre o valor no buffer do estêncil e um valor de referência. O teste é habilitado com chamadas [**glEnable**](glenable.md) e [**glDisable**](gldisable.md) com teste de estêncil GL do argumento \_ \_ e controlado com [**glStencilFunc**](glstencilfunc.md).
+O teste de estêncil elimina condicionalmente um pixel com base no resultado de uma comparação entre o valor no buffer de estêncil e um valor de referência. O teste é habilitado com [**chamadas glEnable**](glenable.md) e [**glDisable**](gldisable.md) com o argumento GL \_ STENCIL TEST e controlado com \_ [**glStencilFunc**](glstencilfunc.md).
 
-A função **glStencilOp** usa três argumentos que indicam o que acontece com o valor de estêncil armazenado enquanto o estêncil está habilitado. Se o teste de estêncil falhar, nenhuma alteração será feita na cor ou nos buffers de profundidade do pixel e a *falha* especificará o que acontece com o conteúdo do buffer do estêncil.
+A **função glStencilOp** aceita três argumentos que indicam o que acontece com o valor de estêncil armazenado enquanto a cerca está habilitada. Se o teste de estêncil falhar, nenhuma alteração será feita nos  buffers de cor ou profundidade do pixel e falhará especificando o que acontece com o conteúdo do buffer de estêncil.
 
-Os valores de buffer de estêncil são tratados como inteiros não assinados. Quando incrementado e diminuído, os valores são clamped para 0 e 2 *n* 1, em que *n* é o valor retornado pela consulta de bits de \_ estêncil GL \_ .
+Os valores de buffer de estêncil são tratados como inteiros sem sinal. Quando incrementados e decrementados, os valores são fixados em 0 e 2 *n* 1, em que *n* é o valor retornado consultando GL \_ STENCIL \_ BITS.
 
-Os outros dois argumentos para **glStencilOp** especificar ações de buffer de estêncil devem ter os testes de buffer de profundidade subsequentes com êxito (*ZPass*) ou Fail (*zfail*). (Consulte [**glDepthFunc**](gldepthfunc.md).) Eles são especificados usando as mesmas seis constantes simbólicas que *falham*. Observe que *zfail* é ignorado quando não há um buffer de profundidade ou quando o buffer de profundidade não está habilitado. Nesses casos, *falha* e *ZPass* especificam a ação de estêncil quando o teste de estêncil falha e passa, respectivamente.
+Os outros dois argumentos para **glStencilOp especificam** ações de buffer de estêncil caso os testes de buffer de profundidade subsequentes deem êxito (*zpass*) ou falham (*zfail*). (Consulte [**glDepthFunc**](gldepthfunc.md).) Eles são especificados usando as mesmas seis constantes simbólicas que *falham.* Observe que *zfail* é ignorado quando não há buffer de profundidade ou quando o buffer de profundidade não está habilitado. Nesses casos, *fail e* *zpass* especificam a ação de estêncil quando o teste de estêncil falha e é aprovado, respectivamente.
 
-Inicialmente, o teste de estêncil está desabilitado. Se não houver nenhum buffer de estêncil, nenhuma modificação de estêncil poderá ocorrer e será como se os testes de estêncil sempre passarem, independentemente de qualquer chamada para **glStencilOp**.
+Inicialmente, o teste de estêncil está desabilitado. Se não houver nenhum buffer de estêncil, nenhuma modificação de estêncil poderá ocorrer e será como se os testes de estêncil sempre passem, independentemente de qualquer chamada para **glStencilOp**.
 
-As funções a seguir recuperam informações relacionadas ao **glStencilOp**:
+As funções a seguir recuperam informações **relacionadas a glStencilOp**:
 
-falha de [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o estêncil Argument GL \_ \_
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento GL \_ STENCIL \_ FAIL
 
-**glGet** com a \_ passagem de \_ profundidade de passagem do estêncil GL \_ do argumento \_
+**glGet** com o argumento GL \_ STENCIL \_ PASS DEPTH \_ \_ PASS
 
-**glGet** com falha de \_ \_ profundidade de aprovação do estêncil do \_ argumento GL \_
+**glGet** com o argumento GL \_ STENCIL \_ PASS DEPTH \_ \_ FAIL
 
-**glGet** com bits de estêncil do Argument GL \_ \_
+**glGet** com o argumento GL \_ STENCIL \_ BITS
 
-teste de estêncil [**glIsEnabled**](glisenabled.md) com Argument GL \_ \_
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ STENCIL \_ TEST
 
 ## <a name="requirements"></a>Requisitos
 
@@ -129,8 +129,8 @@ teste de estêncil [**glIsEnabled**](glisenabled.md) com Argument GL \_ \_
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

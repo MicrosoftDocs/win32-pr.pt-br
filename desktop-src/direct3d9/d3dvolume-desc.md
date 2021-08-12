@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: b736333cefcfc8a3307ff7a0cecd53cd96bc0af2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1ddf80819818bf23985c5ca81e2d26e80b51662388ec5808579c74146c152ea8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118300174"
 ---
 # <a name="d3dvolume_desc-structure"></a>\_Estrutura desc de D3DVOLUME
 

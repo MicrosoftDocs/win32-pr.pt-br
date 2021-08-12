@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 481c80b6d209e0da8d00ef06d88392504bcae8e0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5f2d0da3d05fe050f32d5a35bbbe7de558e1c4962fa84a958855b2960e343942
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118586880"
 ---
 # <a name="_bitmapinfoheader-structure"></a>\_Estrutura BITMAPINFOHEADER
 
@@ -111,7 +111,7 @@ Especifica o tipo de compactação para um bitmap de parte inferior compactado (
 | Valor         | Descrição                                                                                                                                                                                                                                                                                                        |
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | RGB de BI \_       | Um formato descompactado.                                                                                                                                                                                                                                                                                            |
-| \_BITFIELDS bi | Especifica que o bitmap não é compactado e que a tabela de cores consiste em três máscaras de cor DWORD que especificam os componentes vermelho, verde e azul, respectivamente, de cada pixel. Isso é válido quando usado com bitmaps de 16-BPP e 32-bpp. Esse valor é válido no Microsoft Windows CE versão 2,0 e posterior. |
+| \_BITFIELDS bi | Especifica que o bitmap não é compactado e que a tabela de cores consiste em três máscaras de cor DWORD que especificam os componentes vermelho, verde e azul, respectivamente, de cada pixel. Isso é válido quando usado com bitmaps de 16-BPP e 32-bpp. esse valor é válido no Microsoft Windows CE versão 2,0 e posterior. |
 
 
 

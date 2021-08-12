@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3eb5cd337108d08efee465c136adf1afb4921123
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: f39135c34c07a9a20f03c9ebc979647733884b37680ef07b9bc666b882052690
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103823438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118284170"
 ---
 # <a name="texdepth---ps"></a>texdepth-PS
 
 Calcule os valores de profundidade a serem usados no teste de comparação de buffer de profundidade para este pixel.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 
@@ -29,7 +29,7 @@ Calcule os valores de profundidade a serem usados no teste de comparação de bu
 
 
 
- 
+ 
 
 onde
 
@@ -45,7 +45,7 @@ onde
 
 
 
- 
+ 
 
 Essa instrução usa R5. r/R5. g no teste de comparação de buffer de profundidade para este pixel. Os dados nos canais azul e alfa são ignorados. Se r5. g = 0, o resultado de R5. r/R5. g = 1,0.
 
@@ -81,9 +81,9 @@ texdepth  r5         // Calculate pixel depth as r5.r / r5.g
 [Instruções do sombreador de pixel](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

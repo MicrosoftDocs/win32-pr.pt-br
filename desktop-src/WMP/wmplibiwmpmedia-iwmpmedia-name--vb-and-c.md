@@ -1,11 +1,11 @@
 ---
 title: Propriedade de nome IWMPMedia
-description: A propriedade Name Obtém ou define o nome do item de mídia.
+description: A propriedade name obtém ou define o nome do item de mídia.
 ms.assetid: d1057871-bccf-4f84-9b1d-74c41a8f7f7c
 keywords:
-- Propriedade de nome Windows Media Player
-- Propriedade Name Windows Media Player, interface IWMPMedia
-- Interface IWMPMedia Windows Media Player, Propriedade Name
+- name property Windows Media Player
+- propriedade name Windows Media Player , interface IWMPMedia
+- Interface IWMPMedia Windows Media Player , propriedade name
 topic_type:
 - apiref
 api_name:
@@ -18,20 +18,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c526fc9847b06d0f7b6f4ebadf71761fd29a9d9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 46f4e99aaa7a05530a555cb51a6b1b10d511a342143f2be2bc7e029cc813cfba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757456"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118568731"
 ---
-# <a name="iwmpmedianame-property"></a>Propriedade IWMPMedia:: Name
+# <a name="iwmpmedianame-property"></a>Propriedade IWMPMedia::name
 
-A propriedade **Name** Obtém ou define o nome do item de mídia.
+A **propriedade** name obtém ou define o nome do item de mídia.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```CSharp
@@ -50,15 +50,15 @@ Public Property name As System.String
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um **System. String** que é o nome do item de mídia.
+Um **System.String** que é o nome do item de mídia.
 
 ## <a name="remarks"></a>Comentários
 
-Antes de usar essa propriedade, você deve ter acesso de leitura à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
+Antes de usar essa propriedade, você deve ter acesso de leitura à biblioteca. Para obter mais informações, consulte [Acesso à biblioteca.](library-access.md)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **Name** para alterar o nome do item de mídia atual. Uma caixa de texto permite que o usuário insira um novo nome e o nome seja alterado em resposta ao evento de clique de um botão. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
+O exemplo a seguir **usa o nome** para alterar o nome do item de mídia atual. Uma caixa de texto permite que o usuário insira um novo nome e o nome é alterado em resposta ao evento Click de um botão. O **objeto AxWMPLib.AxWindowsMediaPlayer** é representado pela variável chamada player.
 
 
 ```CSharp
@@ -100,7 +100,7 @@ End Sub
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

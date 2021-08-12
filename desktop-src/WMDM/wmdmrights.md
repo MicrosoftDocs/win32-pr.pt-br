@@ -3,8 +3,8 @@ title: Estrutura WMDMRIGHTS
 description: A estrutura WMDMRIGHTS descreve os direitos de uso de conteúdo.
 ms.assetid: 1be9167b-0d20-4a17-a42b-9696ada2b539
 keywords:
-- Estrutura WMDMRIGHTS Windows Media Gerenciador de Dispositivos
-- Ponteiro de estrutura PWMDMRIGHTS Windows Media Gerenciador de Dispositivos
+- Estrutura WMDMRIGHTS windows Media Gerenciador de Dispositivos
+- Ponteiro de estrutura PWMDMRIGHTS windows Media Gerenciador de Dispositivos
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff8bc3bcd61efc64d32daa3179b77a9aaa518d4f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6b54713add3bef1c51d18fea3f66ac4b3e2e8ff1a066bcd83781f0f522d5a4be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118583979"
 ---
 # <a name="wmdmrights-structure"></a>Estrutura WMDMRIGHTS
 
-A estrutura **WMDMRIGHTS** descreve os direitos de uso de conteúdo.
+A **estrutura WMDMRIGHTS** descreve os direitos de uso de conteúdo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -64,17 +64,17 @@ Tamanho da estrutura, em bytes.
 **fuFlags**
 </dt> <dd>
 
-Campo de bits especificando as opções de direitos em uso para o conteúdo.
+Campo de bits que especifica as opções de direitos em uso para o conteúdo.
 
 
 
 | Valor                        | Descrição                                  |
 |------------------------------|----------------------------------------------|
-| \_PLAYBACKCOUNT de direitos do WMDM \_  | Número de vezes que o arquivo pode ser reproduzido. |
-| \_EXPIRATIONDATE de direitos do WMDM \_ | Data de validade do arquivo.                 |
-| \_FREESERIALIDS de direitos do WMDM \_  | Identificador de série livre do arquivo.          |
-| \_Grupo GroupId de direitos do WMDM \_  | Identificador do arquivo.                      |
-| \_NAMEDSERIALIDS de direitos do WMDM \_ | Identificador de série nomeado do arquivo.         |
+| WMDM \_ RIGHTS \_ PLAYBACKCOUNT  | Número de vezes que o arquivo pode ser interpretado. |
+| EXPIRAÇÃO DE \_ DIREITOS DO WMDMDATE \_ | Data de validade do arquivo.                 |
+| DIREITOS DO WMDM \_ \_ FREESERIALIDS  | Identificador serial gratuito do arquivo.          |
+| Grupo \_ GROUPID DE DIREITOS DO WMDM \_  | Identificador do arquivo.                      |
+| DIREITOS DO WMDM \_ \_ NAMEDSERIALIDS | Identificador serial nomeado do arquivo.         |
 
 
 
@@ -91,10 +91,10 @@ Campo de bits que contém os bits de direitos para o conteúdo.
 
 | Valor                                     | Descrição                                   |
 |-------------------------------------------|-----------------------------------------------|
-| os \_ direitos \_ do WMDM são executados \_ no \_ PC                | O conteúdo pode ser reproduzido em um computador pessoal. |
-| \_ \_ cópia de direitos \_ de WMDM para \_ \_ dispositivo não SDMI \_ | O conteúdo pode ser copiado para um dispositivo não SDMI.   |
-| \_copiar direitos do WMDM \_ para o \_ \_ CD                | O conteúdo pode ser copiado para um CD.                |
-| \_ \_ cópia de direitos \_ de WMDM para \_ \_ dispositivo SDMI      | O conteúdo pode ser copiado para um dispositivo SDMI.      |
+| WMDM \_ RIGHTS PLAY NO \_ \_ \_ PC                | O conteúdo pode ser interpretado em um computador pessoal. |
+| CÓPIA DE DIREITOS DO WMDM \_ \_ PARA DISPOSITIVO NÃO \_ \_ \_ \_ SDMI | O conteúdo pode ser copiado para um dispositivo não SDMI.   |
+| CÓPIA DE DIREITOS DO WMDM \_ \_ PARA \_ \_ CD                | O conteúdo pode ser copiado para um CD.                |
+| CÓPIA DE DIREITOS DO WMDM \_ \_ PARA O DISPOSITIVO \_ \_ \_ SDMI      | O conteúdo pode ser copiado para um dispositivo SDMI.      |
 
 
 
@@ -105,21 +105,21 @@ Campo de bits que contém os bits de direitos para o conteúdo.
 **dwAppSec**
 </dt> <dd>
 
-Matriz de bytes que especifica o nível mínimo de segurança do aplicativo.
+Matriz de byte que especifica o nível mínimo de segurança do aplicativo.
 
 </dd> <dt>
 
 **dwPlaybackCount**
 </dt> <dd>
 
-**DWORD** que contém o número de horas restantes que o conteúdo pode ser renderizado.
+**DWORD** que contém o número de vezes restantes que o conteúdo pode ser renderizado.
 
 </dd> <dt>
 
 **ExpirationDate**
 </dt> <dd>
 
-Estrutura [**WMDMDATETIME**](wmdmdatetime.md) que contém a data e a hora de expiração do conteúdo. Se a licença não tiver uma data de expiração, o membro **Wano** será definido como 0xFFFF e todos os outros membros de **WMDMDATETIME** serão ignorados.
+[**Estrutura WMDMDATETIME**](wmdmdatetime.md) que contém a data de validade e a hora do conteúdo. Se a licença não tiver nenhuma data de validade, o **membro wYear** será definido como 0xFFFF e todos os outros membros de **WMDMDATETIME** serão ignorados.
 
 </dd> </dl>
 
@@ -129,7 +129,7 @@ Estrutura [**WMDMDATETIME**](wmdmdatetime.md) que contém a data e a hora de exp
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>WMDM. idl</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wmdm.idl</dt> </dl> |
 
 
 
@@ -137,10 +137,10 @@ Estrutura [**WMDMDATETIME**](wmdmdatetime.md) que contém a data e a hora de exp
 
 <dl> <dt>
 
-[**IMDSPStorage:: getrights**](/windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage-getrights)
+[**IMDSPStorage::GetRights**](/windows/desktop/api/mswmdm/nf-mswmdm-imdspstorage-getrights)
 </dt> <dt>
 
-[**IWMDMStorage:: getrights**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage-getrights)
+[**IWMDMStorage::GetRights**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage-getrights)
 </dt> <dt>
 
 [**WMDMDATETIME**](wmdmdatetime.md)

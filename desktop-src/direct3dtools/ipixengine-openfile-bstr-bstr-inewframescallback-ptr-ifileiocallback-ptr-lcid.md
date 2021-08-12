@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: d18b0ff4d6d2301c6d52d2bc855d48a3db124ccb
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 35c448dc575eb5c85f7b3976e2e82f79aaa555f514ca8a433ba05fa4d1d21c61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118283032"
 ---
 # <a name="span-idvspixengineipixengine_openfile_bstr_bstr_inewframescallback_ptr_ifileiocallback_ptr_lcidspanipixengineopenfile-method"></a><span id="vspixengine.ipixengine_openfile_bstr_bstr_inewframescallback_ptr_ifileiocallback_ptr_lcid"></span>Método IPixEngine:: OpenFile
 
@@ -66,7 +66,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 <table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
-## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Consulte também
+## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Confira também
 
 [**IPixEngine**](/windows/desktop/direct3dtools/ipixengine)
 

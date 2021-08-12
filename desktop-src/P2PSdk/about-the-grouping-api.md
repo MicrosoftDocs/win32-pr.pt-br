@@ -4,12 +4,12 @@ ms.assetid: 0a575efe-968c-48ab-a446-0d910ecb5708
 title: Sobre a API de agrupamento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06e0c14e2731dd133afac32f2cd21905fa7e0c5a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c5b4cd1b2783d7605f9198e3c8171177e70b531944a8f2f707def5750dd6d985
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118612790"
 ---
 # <a name="about-the-grouping-api"></a>Sobre a API de agrupamento
 
@@ -27,7 +27,7 @@ A tabela a seguir identifica os tópicos nesta seção de API de agrupamento:
 | [Como trabalhar com grupos](how-to-work-with-groups.md)               | Descreve o fluxo de chamadas em um aplicativo de agrupamento de pares da inicialização para o desligamento.         |
 | [Como funciona a segurança de grupo](how-group-security-works.md)             | Descreve como a associação de grupo de pares e as trocas de dados são protegidas.                      |
 | [Convidando um par a um grupo](inviting-a-peer-to-a-group.md)         | Descreve o processo pelo qual os pares são convidados e adicionados a um grupo de pares.              |
-| [Como se conectar a um grupo de pares](how-to-connect-to-a-peer-group.md) | Descreve como um par se conecta e interage com um grupo de pares.                        |
+| [como Conexão a um grupo de pares](how-to-connect-to-a-peer-group.md) | Descreve como um par se conecta e interage com um grupo de pares.                        |
 | [Gerenciando registros de grupo](managing-group-records.md)                 | Descreve os registros de grupo de pares e como gerenciá-los como um membro e como um administrador. |
 
 

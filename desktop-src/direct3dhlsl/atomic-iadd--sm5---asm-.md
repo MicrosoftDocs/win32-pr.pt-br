@@ -4,12 +4,12 @@ description: Inteiro atômico adicione à memória.
 ms.assetid: 093C7FA5-41BF-4BDD-A35D-1AACE8CB9B5C
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d6a8652d4e29aae9f32a84f7a4e4d477abd54b7c
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: d582cdb4951cecc845cb868e7eee64be61b8f2d7387a0548c43e094cf308226f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104293590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118287749"
 ---
 # <a name="atomic_iadd-sm5---asm"></a>\_IAdd atômico (SM5-ASM)
 
@@ -58,7 +58,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -70,7 +70,7 @@ Como UAVs estão disponíveis em todos os estágios do sombreador para o Direct3
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -87,11 +87,11 @@ Essa instrução tem suporte nos seguintes modelos de sombreador:
 | Modelo de Sombreador                                              | Com suporte |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
-| [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | não        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | não        |
-| [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | não        |
-| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | não        |
-| [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | não        |
+| [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 

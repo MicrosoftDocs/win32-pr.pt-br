@@ -1,11 +1,11 @@
 ---
-title: Método INapComponentInfo ConvertErrorCodeToMessageId (NapCommon. h)
-description: É usado pelo sistema NAP para solicitar que o cliente de integridade Converta um código de erro HRESULT em uma ID de mensagem.
+title: Método INapComponentInfo ConvertErrorCodeToMessageId (NapCommon.h)
+description: É usado pelo sistema NAP para solicitar que o cliente de saúde converta um código de erro HRESULT em uma ID de mensagem.
 ms.assetid: 760dd039-5b9c-4227-9939-ad6ea23f5b81
 keywords:
-- Método ConvertErrorCodeToMessageId NAP
-- Método ConvertErrorCodeToMessageId NAP, interface INapComponentInfo
-- INapComponentInfo interface NAP, método ConvertErrorCodeToMessageId
+- Método NAP ConvertErrorCodeToMessageId
+- Método NAP ConvertErrorCodeToMessageId, interface INapComponentInfo
+- Interface INapComponentInfo NAP, método ConvertErrorCodeToMessageId
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7ed8eee06ed6bd553ffcce68e76e375dd706238
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8c670585674713d114f6505a0c3211d599663545f6b06a40669f7fba8b7eddf3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118621725"
 ---
-# <a name="inapcomponentinfoconverterrorcodetomessageid-method"></a>Método INapComponentInfo:: ConvertErrorCodeToMessageId
+# <a name="inapcomponentinfoconverterrorcodetomessageid-method"></a>Método INapComponentInfo::ConvertErrorCodeToMessageId
 
 > [!Note]  
-> A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
+> A plataforma de Proteção de Acesso à Rede não está disponível a partir do Windows 10
 
  
 
-O método de retorno de chamada **INapComponentInfo:: ConvertErrorCodeToMessageId** é usado pelo sistema NAP para solicitar que o cliente de integridade Converta um código de erro HRESULT em uma ID de mensagem.
+O método de retorno de chamada **INapComponentInfo::ConvertErrorCodeToMessageId** é usado pelo sistema NAP para solicitar que o cliente de saúde converta um código de erro HRESULT em uma ID de mensagem.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,23 +48,23 @@ HRESULT ConvertErrorCodeToMessageId(
 
 <dl> <dt>
 
-*ErrorCode* \[ no\]
+*errorCode* \[ Em\]
 </dt> <dd>
 
-O [**código de erro**](nap-error-constants.md) do sistema NAP que deve ser convertido em uma **MessageId**.
+O [**código de**](nap-error-constants.md) erro do sistema NAP que deve ser convertido em uma **MessageId.**
 
 </dd> <dt>
 
-*msgid* \[ fora\]
+*msgId* \[ out\]
 </dt> <dd>
 
-Um ponteiro para uma [**MessageId**](nap-datatypes.md) que contém a ID de recurso da cadeia de caracteres localizada correspondente.
+Um ponteiro para uma [**MessageId**](nap-datatypes.md) que contém a ID do recurso da cadeia de caracteres localizada correspondente.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorne um desses códigos de erro com base no resultado dessa operação.
+Retornar um desses códigos de erro com base no resultado dessa operação.
 
 
 
@@ -72,7 +72,7 @@ Retorne um desses códigos de erro com base no resultado dessa operação.
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | A operação teve êxito.<br/>                            |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Erro de permissões, acesso negado.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | O limite de recursos do sistema não pôde executar a operação.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite de recursos do sistema, não foi possível executar a operação.<br/> |
 
 
 
@@ -80,7 +80,7 @@ Retorne um desses códigos de erro com base no resultado dessa operação.
 
 ## <a name="remarks"></a>Comentários
 
-O **MessageId** retornado é usado pelo sistema NAP para recuperar uma cadeia de caracteres localizada.
+A **MessageId retornada** é usada pelo sistema NAP para recuperar uma cadeia de caracteres localizada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -88,10 +88,10 @@ O **MessageId** retornado é usado pelo sistema NAP para recuperar uma cadeia de
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>NapCommon. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                     |
+| parâmetro<br/>                   | <dl> <dt>NapCommon.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapCommon.idl</dt> </dl> |
 
 
 

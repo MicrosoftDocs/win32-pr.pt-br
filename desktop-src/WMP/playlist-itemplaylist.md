@@ -3,7 +3,7 @@ title: PLAYLIST. lista de reprodução
 description: O atributo doplaylist recupera a lista de reprodução para o item de mídia que é exibido no índice fornecido no elemento PLAYLIST.
 ms.assetid: 094bcb5d-8a59-4531-96b8-0e993ca00be6
 keywords:
-- PLAYLIST. lista de reprodução do Windows Media Player
+- Windows Media Player PLAYLIST. @ playlist
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d1d414692050e16dfd0aebe05901bcee0bc26580
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 33f2ed3173042d68ec048486189d909be60427df92e9936d4446f8d7a99ef592
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118571163"
 ---
 # <a name="playlistitemplaylist"></a>PLAYLIST. lista de reprodução
 

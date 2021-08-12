@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a2f5dd4a6948d38b86b49584db81937ce5148b4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9da95b65739922861002ab134d33f276adabd19c29d14fdea6432616b6c5edc6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105764190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118289783"
 ---
 # <a name="dds_header_dxt10-structure"></a>Estrutura de DXT10 de \_ cabeçalho DDS \_
 
@@ -66,7 +66,7 @@ Identifica o tipo de recurso. Os valores a seguir para esse membro são um subco
 
 
 
-| Tipo                                                              | Descrição                                                                                                                                                                                                                                                                                                                                                            | Valor |
+| Type                                                              | Descrição                                                                                                                                                                                                                                                                                                                                                            | Valor |
 |-------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
 | DDS \_ Dimension \_ TEXTURE1D ( \_ TEXTURE1D de dimensão de recurso d3d10 \_ \_ ) | O recurso é uma [textura 1D](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-types). O membro **dwWidth** do [**\_ cabeçalho DDS**](dds-header.md) especifica o tamanho da textura. Normalmente, você define o membro **dwHeight** do **\_ cabeçalho DDS** como 1; você também deve definir o \_ sinalizador de altura DDSD no membro **dwFlags** do **\_ cabeçalho DDS**.                      | 2     |
 | DDS \_ Dimension \_ TEXTURE2D ( \_ TEXTURE2D de dimensão de recurso d3d10 \_ \_ ) | O recurso é uma [textura 2D](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-types) com uma área especificada pelos membros **dwWidth** e **dwHeight** do [**\_ cabeçalho DDS**](dds-header.md). Você também pode usar esse tipo para identificar uma textura de mapa de cubo. Para obter mais informações sobre como identificar uma textura de mapa de cubo, consulte **miscFlag** e **Members** . | 3     |
@@ -89,7 +89,7 @@ Identifica outras opções menos comuns para recursos. O valor a seguir para ess
 
 
 
-| Tipo                             | Descrição                                                                                                  | Valor |
+| Type                             | Descrição                                                                                                  | Valor |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------|-------|
 | \_TEXTURECUBE de recursos de DDS \_ \_ | Indica que uma [textura 2D](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-types) é uma textura de mapa de cubo. | 0x4   |
 
@@ -125,7 +125,7 @@ Contém metadados adicionais (anteriormente reservado). Os três bits inferiores
 
 
 
-| Tipo                            | Descrição                                                                                                                              | Valor |
+| Type                            | Descrição                                                                                                                              | Valor |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|-------|
 | \_modo alfa do DDS \_ \_ desconhecido       | O conteúdo do canal alfa é desconhecido. Esse é o valor para arquivos herdados, que normalmente é considerado "reto" Alfa.                 | 0x0   |
 | \_modo alfa do DDS \_ \_ reto      | Todo o conteúdo do canal alfa é presumido usar alfa reto.                                                                             | 0x1   |

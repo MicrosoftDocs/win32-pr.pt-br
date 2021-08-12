@@ -1,11 +1,11 @@
 ---
-title: Método IVMFloppyDrive AttachHostDrive (VPCCOMInterfaces. h)
+title: Método IVMFloppyDrive AttachHostDrive (VPCCOMInterfaces.h)
 description: Anexa uma unidade física no host à unidade de disquete na máquina virtual.
 ms.assetid: 9be84e06-e38a-419a-be50-dddd0cc6d2dd
 keywords:
-- AttachHostDrive do método virtual PC
-- Método AttachHostDrive Virtual PC, interface IVMFloppyDrive
-- IVMFloppyDrive interface virtual PC, método AttachHostDrive
+- Computador Virtual do método AttachHostDrive
+- Computador Virtual do método AttachHostDrive, interface IVMFloppyDrive
+- COMPUTADOR Virtual da interface IVMFloppyDrive, método AttachHostDrive
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a21785e3e1e4ec77146f048ab4cce018de9d8c0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d8bfdfecc106acd216da5d39e7625f1fbbd9d76190eecc4c2d428595abc9e775
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118595720"
 ---
-# <a name="ivmfloppydriveattachhostdrive-method"></a>Método IVMFloppyDrive:: AttachHostDrive
+# <a name="ivmfloppydriveattachhostdrive-method"></a>Método IVMFloppyDrive::AttachHostDrive
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Anexa uma unidade física no host à unidade de disquete na máquina virtual.
 
@@ -44,25 +44,25 @@ HRESULT AttachHostDrive(
 
 <dl> <dt>
 
-*letra_da_unidade* \[ no\]
+*driveLetter* \[ Em\]
 </dt> <dd>
 
-A letra da unidade da unidade de disquete física no computador host deve ser conectada.
+A letra da unidade de disquete física no computador host a ser anexada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
 
 
-| Código/valor de retorno                                                                                                                                                 | Descrição                                                                                                  |
+| Valor/código de retorno                                                                                                                                                 | Descrição                                                                                                  |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0</dt> </dl>                       | A operação foi bem-sucedida.<br/>                                                                     |
-| <dl> <dt>**E \_ INVALIDARG**</dt> <dt>0x80000003</dt> </dl>      | O parâmetro *driveLetter* é **nulo**, não é uma unidade de disquete válida ou o caminho fornecido está vazio.<br/> |
-| <dl> <dt>**VM \_ E 0xA0040207 de \_ VM \_ desconhecido**</dt> <dt></dt> </dl> | A configuração desta máquina virtual não é válida ou não foi encontrada.<br/>                       |
-| <dl> <dt>**DISP \_ E \_**</dt> <dt>0x80020009</dt> de exceção </dl> | Ocorreu um erro inesperado.<br/>                                                                 |
+| <dl> <dt>**E \_ INVALIDARG**</dt> <dt>0x80000003</dt> </dl>      | O *parâmetro driveLetter* é **NULL,** não é uma unidade de disquete válida ou o caminho determinado está vazio.<br/> |
+| <dl> <dt>**VM \_ E \_ VM \_ UNKNOWN**</dt> <dt>0xA0040207</dt> </dl> | A configuração dessa máquina virtual não é válida ou não pode ser encontrada.<br/>                       |
+| <dl> <dt>**DISP \_ E \_ EXCEPTION**</dt> <dt>0x80020009</dt> </dl> | Ocorreu um erro inesperado.<br/>                                                                 |
 
 
 
@@ -74,12 +74,12 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMFloppyDrive é definido como 661abee6-112a-4ed9-babf-3c874969f10e<br/>             |
+| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMFloppyDrive é definido como \_ 661abee6-112a-4ed9-ertf-3c874969f10e<br/>             |
 
 
 

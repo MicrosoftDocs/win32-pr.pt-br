@@ -3,7 +3,7 @@ title: Tipo complexo FilterListType
 description: Define uma lista de filtros que um controlador ETW pode passar para seu provedor para limitar ainda mais os eventos que ele grava.
 ms.assetid: 27f7b150-1264-4a12-858e-b0b0dff5baa7
 keywords:
-- Log de eventos do tipo complexo FilterListType
+- Tipo complexo FilterListType EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d1071fbbb9eba6bf6ebf0d74d4caaac50e1ccce4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b66ccc002372159540895dfbe95786921266320bb4d3a4e6827085ae7822c12c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295891"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118589621"
 ---
 # <a name="filterlisttype-complex-type"></a>Tipo complexo FilterListType
 
@@ -48,7 +48,7 @@ Define uma lista de filtros que um controlador ETW pode passar para seu provedor
 
 ## <a name="remarks"></a>Comentários
 
-Um controlador ETW é um aplicativo que chama a função [**StartTrace**](/windows/desktop/ETW/starttrace) para criar uma sessão de ETW. Para obter detalhes, consulte [controlando sessões de rastreamento de eventos](/windows/desktop/ETW/controlling-event-tracing-sessions). O controlador pode usar a função [**TdhEnumerateProviderFilters**](/windows/desktop/api/tdh/nf-tdh-tdhenumerateproviderfilters) para enumerar os filtros que você definir. Em seguida, o controlador pode passar um ou mais dos filtros ao chamar a função [**EnableTraceEx2**](/windows/desktop/ETW/enabletraceex2) para habilitar seu provedor. Seu provedor recebe os filtros, juntamente com o restante dos parâmetros de habilitação, em sua função de retorno de chamada do [*EnableCallback*](/windows/desktop/api/evntprov/nc-evntprov-penablecallback) .
+Um controlador ETW é um aplicativo que chama a [**função StartTrace**](/windows/desktop/ETW/starttrace) para criar uma sessão ETW. Para obter detalhes, consulte [Controlando sessões de rastreamento de eventos](/windows/desktop/ETW/controlling-event-tracing-sessions). O controlador pode usar a [**função TdhEnumerateProviderFilters**](/windows/desktop/api/tdh/nf-tdh-tdhenumerateproviderfilters) para enumerar os filtros que você define. Em seguida, o controlador pode passar um ou mais dos filtros quando chama a [**função EnableTraceEx2**](/windows/desktop/ETW/enabletraceex2) para habilitar o provedor. Seu provedor recebe os filtros, juntamente com o restante dos parâmetros enable, em sua função de retorno de chamada [*EnableCallback.*](/windows/desktop/api/evntprov/nc-evntprov-penablecallback)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,8 +56,8 @@ Um controlador ETW é um aplicativo que chama a função [**StartTrace**](/windo
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/> |
 
 
 

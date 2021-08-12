@@ -1,7 +1,7 @@
 ---
 description: Recupera o GUID do modelo do objeto. Preterido.
 ms.assetid: bb4a4a32-a9e7-4caa-869d-24cfb310d8d1
-title: 'Método IDirectXFileData:: GetType (DXFile. h)'
+title: Método IDirectXFileData::GetType (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 463391c661b2d166a6fba773e3b01590daf0ebd7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 564d682c606d8b6bc0001f5d430d2d93f36c25210746169af4802512c330da08
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104091985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118292272"
 ---
-# <a name="idirectxfiledatagettype-method"></a>Método IDirectXFileData:: GetType
+# <a name="idirectxfiledatagettype-method"></a>Método IDirectXFileData::GetType
 
 Recupera o GUID do modelo do objeto. Preterido.
 
@@ -43,7 +43,7 @@ HRESULT GetType(
 *ppguid* \[ out, retval\]
 </dt> <dd>
 
-Tipo: **[**GUID**](guid.md) \* \* const**
+Tipo: **const [**GUID**](guid.md) \* \***
 
 Endereço de um ponteiro para receber o GUID do modelo do objeto.
 
@@ -53,7 +53,7 @@ Endereço de um ponteiro para receber o GUID do modelo do objeto.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será DXFILE \_ OK. Se o método falhar, o valor de retorno poderá ser DXFILEERR \_ BADVALUE.
+Se o método for bem-sucedido, o valor de retorno será DXFILE \_ OK. Se o método falhar, o valor de retorno poderá ser DXFILEERR \_ BADVALUE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Se o método for bem sucedido, o valor de retorno será DXFILE \_ OK. Se o méto
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 

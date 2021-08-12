@@ -1,26 +1,26 @@
 ---
-description: Testando se um driver gráfico dá suporte a COPP
+description: Testando se um driver de gráfico dá suporte ao COPP
 ms.assetid: e3e1c795-5cfa-4e4b-86aa-948dd2bf91a4
-title: Testando se um driver gráfico dá suporte a COPP
+title: Testando se um driver de gráfico dá suporte ao COPP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f98a5bfc3f577d1acb45969ec5d10503ae87b27a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 22280f880ba01a8e51acda74a2a46dff595d5569f885ce1da3a3631bacd8db06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757867"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118651826"
 ---
-# <a name="testing-whether-a-graphics-driver-supports-copp"></a>Testando se um driver gráfico dá suporte a COPP
+# <a name="testing-whether-a-graphics-driver-supports-copp"></a>Testando se um driver de gráfico dá suporte ao COPP
 
-O protocolo COPP (certificado de proteção de saída) permite que um aplicativo proteja o conteúdo de vídeo à medida que ele viaja da placa de vídeo para o dispositivo de vídeo. Se um driver de gráficos oferecer suporte a COPP, o driver terá uma cadeia de certificados, assinada pela Microsoft, Autenticando o driver. Os aplicativos de reprodução que usam COPP para impor a proteção de conteúdo devem validar a cadeia de certificados para garantir que o driver não tenha sido adulterado.
+O COPP (Certified Output Protection Protocol) permite que um aplicativo proteja o conteúdo do vídeo à medida que ele vai da placa de vídeo para o dispositivo de exibição. Se um driver de gráficos dá suporte ao COPP, o driver mantém uma cadeia de certificados, assinada pela Microsoft, autenticando o driver. Os aplicativos de reprodução que usam o COPP para impor a proteção de conteúdo devem validar a cadeia de certificados para garantir que o driver não tenha sido adulterado.
 
-No entanto, talvez você queira verificar se um driver de gráficos dá suporte a COPP, sem validar o certificado. Por exemplo, quando um provedor de mídia digital emite uma licença de DRM (gerenciamento de direitos digitais), talvez queira verificar se o usuário tem um driver de gráficos habilitado para COPP. O provedor não precisa impor COPP no momento em que emite a licença; Ele só precisa testar se o driver dá suporte a COPP.
+No entanto, talvez você queira verificar se um driver de gráficos dá suporte ao COPP, sem validar o certificado. Por exemplo, quando um provedor de mídia digital emite uma licença drm (gerenciamento de direitos digitais), talvez ele queira verificar se o usuário tem um driver gráfico habilitado para COPP. O provedor não precisa impor o COPP no momento em que emite a licença; ele só precisa testar se o driver dá suporte ao COPP.
 
-O código a seguir mostra como testar se um driver dá suporte a COPP. O aplicativo deve passar o nome de um arquivo de vídeo que será usado para testar o driver. Isso é necessário porque o filtro de processador de mixagem de vídeo no Microsoft® DirectShow® não Inicializa uma sessão COPP até que o filtro seja conectado. Essa função pode ser incluída em um aplicativo cliente para verificar se o driver é capaz de executar a COPP.
+O código a seguir mostra como testar se um driver dá suporte ao COPP. O aplicativo deve passar o nome de um arquivo de vídeo que será usado para testar o driver. Isso é necessário porque o filtro renderizado de combinação de vídeo na Microsoft® DirectShow® inicializa uma sessão COPP até que o filtro esteja conectado. Essa função pode ser incluída em um aplicativo cliente para verificar se o driver é capaz de executar o COPP.
 
 > [!Note]  
-> Se o computador do usuário tiver duas placas gráficas, essa função testará o driver para a placa gráfica primária, mas não a placa gráfica secundária.
+> Se o computador do usuário tiver duas placas gráficas, essa função testa o driver para a placa gráfica primária, mas não a placa gráfica secundária.
 
  
 
@@ -130,7 +130,7 @@ done:
 
 <dl> <dt>
 
-[Usando o protocolo de proteção de saída certificado](using-certified-output-protection-protocol--copp.md)
+[Usando o Protocolo de Proteção de Saída Certificado](using-certified-output-protection-protocol--copp.md)
 </dt> </dl>
 
  

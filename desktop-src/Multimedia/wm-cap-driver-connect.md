@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_CAP_DRIVER_CONNECT (VFW. h)
-description: A mensagem de conexão do driver do WM \_ Cap \_ \_ conecta uma janela de captura a um driver de captura. Você pode enviar essa mensagem explicitamente ou usando a macro capDriverConnect.
+title: WM_CAP_DRIVER_CONNECT mensagem (Vfw.h)
+description: A mensagem WM \_ CAP DRIVER CONNECT conecta uma janela de captura a um driver de \_ \_ captura. Você pode enviar essa mensagem explicitamente ou usando a macro capDriverConnect.
 ms.assetid: 8804bb3c-d06c-4ddc-b116-3d292205a52d
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_DRIVER_CONNECT
+- WM_CAP_DRIVER_CONNECT mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d73fdeb89968926429f7225912e3d1b3b348e287
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c8b0e54d496302488db653505321778bcd22546bd2ed9b2180aa0e15cb6969f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118622625"
 ---
-# <a name="wm_cap_driver_connect-message"></a>\_Mensagem de \_ conexão de driver do WM Cap \_
+# <a name="wm_cap_driver_connect-message"></a>Mensagem WM \_ CAP \_ DRIVER \_ CONNECT
 
-A mensagem de **\_ conexão do \_ Driver \_ do WM Cap** conecta uma janela de captura a um driver de captura. Você pode enviar essa mensagem explicitamente ou usando a macro [**capDriverConnect**](/windows/desktop/api/Vfw/nf-vfw-capdriverconnect) .
+A **mensagem WM CAP DRIVER \_ \_ \_ CONNECT** conecta uma janela de captura a um driver de captura. Você pode enviar essa mensagem explicitamente ou usando a [**macro capDriverConnect.**](/windows/desktop/api/Vfw/nf-vfw-capdriverconnect)
 
 
 ```C++
@@ -38,7 +38,7 @@ lParam = 0L;
 
 <dl> <dt>
 
-<span id="iIndex"></span><span id="iindex"></span><span id="IINDEX"></span>*iIndex*
+<span id="iIndex"></span><span id="iindex"></span><span id="IINDEX"></span>*Iindex*
 </dt> <dd>
 
 Índice do driver de captura. O índice pode variar de 0 a 9.
@@ -47,7 +47,7 @@ lParam = 0L;
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará **true** se for bem-sucedido ou **false** se o driver de captura especificado não puder ser conectado à janela de captura.
+Retornará **TRUE** se for bem-sucedido **ou FALSE** se o driver de captura especificado não puder ser conectado à janela de captura.
 
 ## <a name="remarks"></a>Comentários
 
@@ -61,7 +61,7 @@ Conectar um driver de captura a uma janela de captura desconecta automaticamente
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

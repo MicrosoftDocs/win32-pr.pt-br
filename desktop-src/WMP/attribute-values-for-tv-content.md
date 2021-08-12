@@ -3,29 +3,29 @@ title: Valores de atributo para conteúdo de TV
 description: Valores de atributo para conteúdo de TV
 ms.assetid: 70afb0fc-9eb0-4b94-a32a-f9202db94270
 keywords:
-- Windows Media Player, atributos para itens de mídia
-- Modelo de objeto do Windows Media Player, atributos para itens de mídia
+- Windows Media Player atributos para itens de mídia
+- Windows Media Player modelo de objeto, atributos para itens de mídia
 - modelo de objeto, atributos para itens de mídia
-- Windows Media Player Mobile, atributos para itens de mídia
-- Controle ActiveX do Windows Media Player, atributos para itens de mídia
-- Controle ActiveX móvel do Windows Media Player, atributos para itens de mídia
-- Controle ActiveX, atributos para itens de mídia
-- Biblioteca do Windows Media Player, atributos para itens de mídia
+- Windows Media Player Dispositivo móvel, atributos para itens de mídia
+- Windows Media Player ActiveX controle,atributos para itens de mídia
+- Windows Media Player Controle ActiveX dispositivo móvel, atributos para itens de mídia
+- ActiveX controle,atributos para itens de mídia
+- Windows Media Player biblioteca, atributos para itens de mídia
 - biblioteca, atributos para itens de mídia
 - atributos, conteúdo de TV
 - Valores de atributo de conteúdo de TV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb63e872edd80944772a320da5f2094e6d8f5757
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fa96f855d90fe0b65c4e9483dcb2ba4ae3ff7be049f1346f1038097789b2126c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104006155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118583027"
 ---
 # <a name="attribute-values-for-tv-content"></a>Valores de atributo para conteúdo de TV
 
-Ao longo deste tópico, o objeto **Player** foi definido da seguinte maneira:
+Ao longo deste tópico, o **objeto Player** foi definido da seguinte maneira:
 
 
 ```C++
@@ -36,7 +36,7 @@ using WMPLib;
 
 
 
-O Windows Media Player 10 ou posterior pode organizar o conteúdo de TV na biblioteca. O Windows Media Player trata o conteúdo de TV como uma subcategoria de conteúdo de vídeo. Para fazer com que o conteúdo de vídeo apareça nos nós de TV na biblioteca, defina o **WM/MediaClassPrimaryID** e os atributos **WM/MediaClassSecondaryID** para os valores na tabela a seguir usando a *mídia*. método **setItemInfo** :
+Windows Media Player 10 ou posterior pode organizar o conteúdo da TV na biblioteca. Windows Media Player trata o conteúdo da TV como uma subcategoria de conteúdo de vídeo. Para fazer com que o conteúdo de vídeo apareça nos nós de TV na biblioteca, de definir os atributos **WM/MediaClassPrimaryID** e **WM/MediaClassSecondaryID** para os valores na tabela a seguir usando a *mídia*. **Método setItemInfo:**
 
 
 
@@ -47,13 +47,13 @@ O Windows Media Player 10 ou posterior pode organizar o conteúdo de TV na bibli
 
 
 
- 
+ 
 
-Você também pode usar esses valores para determinar se um determinado item de mídia digital contém conteúdo de TV usando a *mídia*. **getItemInfo** ou *mídia*. métodos **getItemInfoByType** .
+Você também pode usar esses valores para determinar se um item de mídia digital específico contém conteúdo de TV usando a *mídia*. **getItemInfo ou** *mídia*. **Métodos getItemInfoByType.**
 
-Lembre-se de usar os valores de **GUID** como valores de **cadeia de caracteres** ao especificar ou recuperar esses valores.
+Lembre-se de usar **os valores guid** como valores de cadeia de caracteres ao especificar ou recuperar esses valores. 
 
-O código de exemplo C# a seguir define os atributos de classe de mídia de forma que um item de mídia seja identificado como conteúdo de TV.
+O código de exemplo C# a seguir define os atributos de classe de mídia para que um item de mídia seja identificado como conteúdo de TV.
 
 
 ```C++
@@ -71,7 +71,7 @@ media.setItemInfo("WM/MediaClassSecondaryID", "BA7F258A-62F7-47A9-B21F-4651C42A0
 
 
 
-Para obter mais informações sobre os valores possíveis para os atributos de classe de mídia, consulte as [diretrizes de uso de metadados do Windows Media](/previous-versions/ms867702(v=msdn.10)).
+Para obter mais informações sobre os valores possíveis para os atributos de classe de mídia, consulte as Diretrizes Windows uso de [metadados de mídia.](/previous-versions/ms867702(v=msdn.10))
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -86,9 +86,9 @@ Para obter mais informações sobre os valores possíveis para os atributos de c
 [**Objeto de mídia**](media-object.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

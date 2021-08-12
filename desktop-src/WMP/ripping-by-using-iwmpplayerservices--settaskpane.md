@@ -3,33 +3,33 @@ title: Extrair usando IWMPPlayerServices setTaskPane
 description: Extrair usando IWMPPlayerServices setTaskPane
 ms.assetid: 0d3efb0e-e8f5-40e3-abb5-6ad22009a4eb
 keywords:
-- Windows Media Player, CD de CDs
-- Modelo de objeto do Windows Media Player, cópia de CD
+- Windows Media Player, CD de cds
+- modelo de objeto Windows Media Player, cópia de CD
 - modelo de objeto, cópia de CD
-- Controle ActiveX do Windows Media Player, cópia de CD
-- Controle ActiveX, cópia de CD
-- Controle ActiveX móvel do Windows Media Player, cópia de CD
-- Windows Media Player Mobile, CD-CDs
+- controle de ActiveX de Windows Media Player, CD de cds
+- controle de ActiveX, CD de cds
+- Windows Media Player controle de ActiveX móvel, CD de cds
+- Windows Media Player Dispositivos móveis e de CDs
 - CD de CDs, IWMPPlayerServices setTaskPane interface
 - copiando CDs, IWMPPlayerServices setTaskPane interface
 - Interface IWMPPlayerServices setTaskPane
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bfb1a09d67f310266ae4818bc0b594fe3b74d128
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: 2abf53d29284b5da629598e6f23d6dcae78c69c60c23ba07f30445d5252845e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "104453881"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118569829"
 ---
 # <a name="ripping-by-using-iwmpplayerservicessettaskpane"></a>Copiando por meio de IWMPPlayerServices:: setTaskPane
 
 > [!Note]  
-> Esta seção documenta um recurso dos controles ActiveX do Windows Media Player 9 Series e do Windows Media Player 10. É recomendável que você use a interface **IWMPCdromRip** com versões posteriores. Consulte a [interface IWMPCdromRip](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdromrip).
+> esta seção documenta um recurso dos controles Windows Media Player 9 Series e Windows Media Player 10 ActiveX. É recomendável que você use a interface **IWMPCdromRip** com versões posteriores. Consulte a [interface IWMPCdromRip](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdromrip).
 
- 
+ 
 
-Você pode usar o controle Windows Media Player 9 Series ou posterior para copiar faixas de CD para o computador do usuário. Esse processo é chamado de *cópia de CDs*. Para fazer isso, você deve inserir o controle do Windows Media Player no modo remoto. Para obter mais informações sobre o modo remoto, consulte [comunicação remota do controle do Windows Media Player](remoting-the-windows-media-player-control.md).
+você pode usar o controle Windows Media Player 9 Series ou posterior para copiar as faixas de CD para o computador do usuário. Esse processo é chamado de *cópia de CDs*. para fazer isso, você deve inserir o controle de Windows Media Player no modo remoto. para obter mais informações sobre o modo remoto, consulte [comunicação remota do controle de Windows Media Player](remoting-the-windows-media-player-control.md).
 
 Para iniciar o processo de cópia de CDs, chame [IWMPPlayerServices:: setTaskPane](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpplayerservices-settaskpane), passando o CopyFromCD? Autocopie: o valor de *ID* para o parâmetro *bstrTaskPane* , em que *ID* é o índice da unidade de CD da qual copiar. Esse índice corresponde ao índice de um objeto de **cdrom** na interface **IWMPCdromCollection** ou ao evento **CdromMediaChange** .
 
@@ -143,7 +143,7 @@ Em seguida, manipule o evento [IWMPEvents:: MediaChange](/previous-versions/wind
 
 Para detectar qual faixa de CD está sendo copiada, compare o ponteiro **IWMPMedia** do evento com os itens de mídia na lista de reprodução de CD chamando [IWMPMedia:: get \_ isidêntico](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmedia-get_isidentical).
 
-Chame [IWMPMedia:: getItemInfo](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmedia-getiteminfo), passando a cadeia de caracteres "status" como o nome do item. **Status** é um atributo temporário definido pelo Windows Media Player em itens de mídia enquanto eles estão sendo copiados do CD; Ele não está disponível na biblioteca do.
+Chame [IWMPMedia:: getItemInfo](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmedia-getiteminfo), passando a cadeia de caracteres "status" como o nome do item. **Status** é um atributo temporário definido por Windows Media Player em itens de mídia enquanto eles estão sendo copiados do CD; Ele não está disponível na biblioteca do.
 
 O código de exemplo a seguir mostra um manipulador de eventos **MediaChange** .
 
@@ -268,9 +268,9 @@ void CMyApp::MediaChange(IDispatch * Item)
 [**Copiando usando a interface IWMPCdromRip**](ripping-by-using-the-iwmpcdromrip-interface.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

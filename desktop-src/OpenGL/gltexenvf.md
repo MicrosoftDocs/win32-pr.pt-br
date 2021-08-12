@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a1566378b6dcd2f91a2e2cd445f0ec39c0f6f6a6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b4914ae05496c0234adb0b6604f4f75eb630af525b08ccae2825e032d5f97535
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118613648"
 ---
 # <a name="gltexenvf-function"></a>função glTexEnvf
 

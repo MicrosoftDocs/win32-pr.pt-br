@@ -4,17 +4,17 @@ ms.assetid: d056b6d5-f4a4-480b-96a5-8e95dce23dfb
 title: Propriedade VolumesAvailable
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ccdcf32ba8b7bea3958ef469bc0f90f9d41ecc14
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb0ab5b07f30e49f1bbe7655a2d66d9aaa683099df64cadf94b5dfffdd3b3af0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118650933"
 ---
 # <a name="volumesavailable-property"></a>Propriedade VolumesAvailable
 
 > [!Note]  
-> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 

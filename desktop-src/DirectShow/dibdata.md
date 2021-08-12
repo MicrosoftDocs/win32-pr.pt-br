@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Winutil.h
-ms.openlocfilehash: 87590013ef905ffbdd13dd3b767435a907b08783
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b4449f45afac56b202e9b23516dc849c6364e8781be7cfbe7cfb2b630bd16921
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118653813"
 ---
 # <a name="dibdata-structure"></a>Estrutura DIBDATA
 
@@ -84,7 +84,7 @@ Endereço do bitmap.
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Winutil. h (incluir Fluxos. h)</dt> </dl> |
 
 
 

@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: d2dd6fa5fc4d442d7cc22f036c293ebfaba841b8
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: dabc12064ff43a2bb64a562d1aa3050681f46c31dd2698154beb1dafe3cfd85e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "105762241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118606911"
 ---
 # <a name="imsrdpclipboardcansynclocalclipboardtoremotesession-method"></a>Método IMsRdpClipboard:: CanSyncLocalClipboardToRemoteSession
 
@@ -39,7 +39,7 @@ HRESULT CanSyncLocalClipboardToRemoteSession(
 
 **True** se a área de transferência local puder ser sincronizada com a sessão remota; caso contrário, **false**.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornar **S \_ OK** se for bem-sucedido.
 

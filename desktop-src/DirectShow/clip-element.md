@@ -1,37 +1,37 @@
 ---
-description: O clipe epecifies uma fonte de mídia.
+description: O clipe verifica uma fonte de mídia.
 ms.assetid: 40323e64-ad5f-4646-bad7-2a4e7d0ddcf6
-title: Elemento de clipe
+title: Elemento clip
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d937f942ba7b564e65b0e37d9c11929805287da
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 1b94ffdbd3d9b49d961cdefdd64de9a212858c5da4859c3beddb77db0ab732d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908664"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118655510"
 ---
-# <a name="clip-element"></a>Elemento de clipe
+# <a name="clip-element"></a>Elemento clip
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-O `clip` epecifies uma origem de mídia.
+O `clip` eifica uma fonte de mídia.
 
 ## <a name="attributes"></a>Atributos
 
-[**CLSID**](clsid-attribute.md), [**taxa de quadros**](framerate-attribute.md), [**bloqueio**](lock-attribute.md), [**mLength**](mlength-attribute.md), [**mStart**](mstart-attribute.md), [**mstop**](mstop-attribute.md), [**mudo**](mute-attribute.md), [**src**](src-attribute.md), [**Iniciar**](start-attribute.md), [**parar**](stop-attribute.md), [**transmitir**](stream-attribute.md), [**stretchmode**](stretchmode-attribute.md), [**UserData**](userdata-attribute.md), [**userid**](userid-attribute.md), [**username**](username-attribute.md)
+[**clsid**](clsid-attribute.md), [**framerate**](framerate-attribute.md), [**lock**](lock-attribute.md), [**mlength**](mlength-attribute.md), [**mstart**](mstart-attribute.md), [**mstop**](mstop-attribute.md), [**mute**](mute-attribute.md), [**src**](src-attribute.md), [**start**](start-attribute.md), [**stop**](stop-attribute.md), [**stream**](stream-attribute.md), [**stretchmode**](stretchmode-attribute.md), [**userdata**](userdata-attribute.md), [**userid**](userid-attribute.md), [**username**](username-attribute.md)
 
-## <a name="parentchild-information"></a>Informações de pai/filho
+## <a name="parentchild-information"></a>Informações pai/filho
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |----------|----------------------------------|
-| Pai   | [**controles**](track-element.md)   |
-| Children | [**funciona**](effect-element.md) |
+| Pai   | [**Faixa**](track-element.md)   |
+| Children | [**Efeito**](effect-element.md) |
 
 
 
@@ -39,11 +39,11 @@ O `clip` epecifies uma origem de mídia.
 
 ## <a name="remarks"></a>Comentários
 
-O atributo **CLSID** especifica o CLSID de um filtro de origem a ser usado como a origem. Não especifique os atributos **src** e **CLSID** dentro do mesmo `clip` elemento.
+O **atributo clsid** especifica o CLSID de um filtro de origem a ser usado como a origem. Não especifique os **atributos src** e **clsid** dentro do mesmo `clip` elemento.
 
-Especifique pelo menos um atributo de tempo de início (**Start** ou **mStart**) e um atributo de tempo de parada (**Stop** ou **mstop**). Se um dos atributos de tempo de inicialização não for especificado, o padrão será 0 (o início da linha do tempo para **início** ou o início do clipe para **mStart**). Se um dos atributos de tempo de parada não for especificado, o DES assumirá uma taxa de reprodução normal e calculará a hora de parada não especificada adequadamente. Se ambas as horas de parada forem especificadas, a reprodução será mais rápida ou mais lenta do que o normal, se necessário.
+Especifique pelo menos um atributo de hora de início (**start** ou **mstart**) e um atributo de tempo de parada (**stop** ou **mstop**). Se um dos atributos de hora de início não for especificado, o padrão será 0 (o início da linha do tempo para iniciar ou o início do clipe para **mstart**). Se um dos atributos de tempo de parada não for especificado, o DES assumirá uma taxa de reprodução normal e calculará o tempo de parada não especificado de acordo. Se ambos os horários de parada são especificados, a reprodução é mais rápida ou mais lenta do que o normal, se necessário.
 
-No exemplo a seguir, a duração da linha do tempo é de sete segundos (**parar** menos **Iniciar**). A taxa de reprodução normal é assumida, portanto, o padrão da hora de parada da mídia é de 10 segundos (a duração mais **mStart**).
+No exemplo a seguir, a duração da linha do tempo é de sete segundos (**parar menos** **iniciar**). A taxa de reprodução normal é assumida, portanto, o tempo de parada de mídia assume como padrão 10 segundos (a duração mais **mstart**).
 
 
 ```
@@ -52,7 +52,7 @@ No exemplo a seguir, a duração da linha do tempo é de sete segundos (**parar*
 
 
 
-No próximo exemplo, a hora de início da mídia usa como padrão 0, forçando a duração da mídia a ser de 10 segundos. A duração da linha do tempo é de cinco segundos, portanto, o clipe é reproduzido com duas vezes a taxa normal.
+No próximo exemplo, a hora de início da mídia assume como padrão 0, forçando a duração da mídia a ser de 10 segundos. A duração da linha do tempo é de cinco segundos, portanto, o clipe é reproduzindo duas vezes a taxa normal.
 
 
 ```
@@ -61,7 +61,7 @@ No próximo exemplo, a hora de início da mídia usa como padrão 0, forçando a
 
 
 
-Se o atributo **src** especificar uma imagem ainda, o des tentará carregar uma série de imagens ainda para criar uma animação. Por exemplo, se o atributo **src** for IMAGE001.BMP, o des procurará IMAGE002.BMP, IMAGE003.BMP, IMAGE004.BMP e assim por diante. Supondo que eles existam, eles são exibidos em ordem numérica sequencial, na taxa especificada pelo atributo de **taxa de quadros** .
+Se o **atributo src** especificar uma imagem still, o DES tentará carregar uma série de imagens ainda para criar uma animação. Por exemplo, se o **atributo src** for IMAGE001.BMP, o DES procura IMAGE002.BMP, IMAGE003.BMP, IMAGE004.BMP e assim por diante. Supondo que existam, eles são exibidos em ordem numérica sequencial, na taxa especificada pelo atributo **framerate.**
 
 ## <a name="examples"></a>Exemplos
 

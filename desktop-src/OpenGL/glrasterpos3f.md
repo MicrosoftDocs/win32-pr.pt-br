@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 16477623730f54f19d4f7596af4cb7e4e1dd92d7
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c65c3e0377e57c13b21a36a3142030a64812e5e84d31617796c9617d50822c01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105762041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118614655"
 ---
 # <a name="glrasterpos3f-function"></a>função glRasterPos3f
 
