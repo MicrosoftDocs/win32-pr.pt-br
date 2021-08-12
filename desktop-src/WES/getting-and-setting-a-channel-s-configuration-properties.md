@@ -4,12 +4,12 @@ description: Um canal é inicialmente configurado no manifesto (consulte Definin
 ms.assetid: 4ee44dae-b390-4d98-bcef-836b53b04860
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 52b28e96e45a8b061fac2914b2ef79847cf25a6b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 82f77271e811a2f16599ac9fe94ce4c984564b2b8af559dba46a391d7759060d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118588126"
 ---
 # <a name="getting-and-setting-a-channels-configuration-properties"></a>Obter e definir as propriedades de configuração de um canal
 
@@ -422,9 +422,9 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

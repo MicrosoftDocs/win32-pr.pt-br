@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7f416eb6feb2118f17ba7c59eb9c24e2c95071e7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b35938ff32f7be1afde6e8e6089928fe9347156cf64a8c4973a5c1569af83ecd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105769235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118657097"
 ---
 # <a name="cdrawimagem_bstretch-member"></a>Membro de CDrawImage:: m \_ bStretch
 
 A `m_bStretch` variável de membro indica se a imagem de vídeo deve ser ampliada para se ajustar à janela de destino. O valor será **false** se o retângulo de origem tiver o mesmo tamanho que o retângulo de destino ou **verdadeiro** caso contrário.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -42,7 +42,7 @@ BOOL m_bStretch;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

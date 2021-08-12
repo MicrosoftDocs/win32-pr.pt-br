@@ -1,19 +1,19 @@
 ---
-description: Referência de classe base do DirectShow
+description: DirectShow Referência de classe base
 ms.assetid: 56f3685f-3df8-4358-b04e-3efc04b58008
-title: Referência de classe base do DirectShow
+title: DirectShow Referência de classe base
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b8816656f0ae87224cc95886ad32aaa1a098f177
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 950a4eff89e235194be974256492bd23701f69e5f64181a2e805cf67c1fd62f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118663043"
 ---
-# <a name="directshow-base-class-reference"></a>Referência de classe base do DirectShow
+# <a name="directshow-base-class-reference"></a>DirectShow Referência de classe base
 
-Esta seção contém entradas de referência para todas as [classes base](directshow-base-classes.md)do Microsoft DirectShow, seus membros de dados e suas funções.
+Esta seção contém entradas de referência para todas as classes base do Microsoft [DirectShow,](directshow-base-classes.md)seus membros de dados e suas funções.
 
 
 
@@ -21,51 +21,51 @@ Esta seção contém entradas de referência para todas as [classes base](direct
 |------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | [**CAggDirectDraw**](caggdirectdraw.md)                               | Preterido.                                                                                                                       |
 | [**CAggDrawSurface**](caggdrawsurface.md)                             | Preterido.                                                                                                                       |
-| [**CAMEvent**](camevent.md)                                           | Classe wrapper para eventos de redefinição manual e automática.                                                                                  |
-| [**CAMMsgEvent**](cammsgevent.md)                                     | Classe de wrapper para objetos de evento que executam o processamento de mensagens.                                                                  |
-| [**CAMSchedule**](camschedule.md)                                     | Agendador para relógios de referência.                                                                                                   |
-| [**CAMThread**](camthread.md)                                         | Classe Bass para gerenciar threads de trabalho.                                                                                           |
-| [**CAutoLock**](cautolock.md)                                         | Mantém uma seção crítica para o escopo de um bloco.                                                                                |
-| [**CAutoUsingOutputPin**](cautousingoutputpin-cautousingoutputpin.md) | Obtém e libera o acesso a um objeto [**CDynamicOutputPin**](cdynamicoutputpin.md) .                                           |
-| [**CBaseAllocator**](cbaseallocator.md)                               | Classe Bass para alocadores.                                                                                                        |
-| [**CBaseBasicVideo**](cbasebasicvideo.md)                             | Manipula o componente IDispatch da interface [**IBasicVideo**](/windows/desktop/api/Control/nn-control-ibasicvideo) .                                              |
-| [**CBaseControlVideo**](cbasecontrolvideo.md)                         | Implementa a interface IBasicVideo para uma janela de vídeo genérica.                                                                  |
-| [**CBaseControlWindow**](cbasecontrolwindow.md)                       | Implementa a interface [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) .                                                                    |
-| [**CBaseDispatch**](cbasedispatch.md)                                 | Classe base para implementar a interface IDispatch.                                                                              |
-| [**CBaseFilter**](cbasefilter.md)                                     | Classe base para filtros.                                                                                                           |
-| [**CBaseInputPin**](cbaseinputpin.md)                                 | Classe base para Pins de entrada.                                                                                                        |
-| [**CBaseList**](cbaselist.md)                                         | Classe base para listas genéricas.                                                                                                     |
-| [**CBaseMediaFilter**](cbasemediafilter.md)                           | Implementa a interface [**IMediaFilter**](/windows/desktop/api/Strmif/nn-strmif-imediafilter) .                                                                    |
-| [**CBaseObject**](cbaseobject.md)                                     | Classe base para implementar objetos do DirectShow.                                                                                   |
-| [**CBaseOutputPin**](cbaseoutputpin.md)                               | Classe base para Pins de saída.                                                                                                       |
-| [**CBasePin**](cbasepin.md)                                           | Classe base para Pins.                                                                                                              |
-| [**CBasePropertyPage**](cbasepropertypage.md)                         | Classe base para implementar páginas de propriedades.                                                                                       |
-| [**CBaseReferenceClock**](cbasereferenceclock.md)                     | Implementa um relógio de referência.                                                                                                     |
-| [**CBaseRenderer**](cbaserenderer.md)                                 | Classe base para implementar filtros de renderizador.                                                                                     |
-| [**CBaseStreamControl**](cbasestreamcontrol.md)                       | Implementa a interface [**IAMStreamControl**](/windows/desktop/api/Strmif/nn-strmif-iamstreamcontrol) .                                                            |
-| [**CBaseVideoRenderer**](cbasevideorenderer.md)                       | Classe base para renderizadores de vídeo.                                                                                                   |
-| [**CBaseVideoWindow**](cbasevideowindow.md)                           | Manipula o componente IDispatch da interface [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) .                                            |
-| [**CBaseWindow**](cbasewindow.md)                                     | Classe base para gerenciar o Windows.                                                                                                  |
-| [**CBasicAudio**](cbasicaudio.md)                                     | Manipula o componente de interface IDispatch da interface [**IBasicAudio**](/windows/desktop/api/Control/nn-control-ibasicaudio) .                                    |
-| [**CCmdQueue**](ccmdqueue.md)                                         | Classe auxiliar para implementar a interface [**IQueueCommand**](/windows/desktop/api/Control/nn-control-iqueuecommand) .                                               |
-| [**CCritSec**](ccritsec.md)                                           | Fornece um bloqueio de thread.                                                                                                           |
-| [**CDeferredCommand**](cdeferredcommand.md)                           | Implementa a interface [**IDeferredCommand**](/windows/desktop/api/Control/nn-control-ideferredcommand) .                                                            |
-| [**CDispParams**](cdispparams.md)                                     | Classe de wrapper para a estrutura DISPPARAMS.                                                                                       |
+| [**Camevent**](camevent.md)                                           | Classe wrapper para eventos de redefinição manual e automática.                                                                                  |
+| [**CAMMsgEvent**](cammsgevent.md)                                     | Classe wrapper para objetos de evento que executam o processamento de mensagens.                                                                  |
+| [**Camschedule**](camschedule.md)                                     | Agendador para relógios de referência.                                                                                                   |
+| [**Camthread**](camthread.md)                                         | Classe De baixo para gerenciar threads de trabalho.                                                                                           |
+| [**CAutoLock**](cautolock.md)                                         | Contém uma seção crítica para o escopo de um bloco.                                                                                |
+| [**CAutoUsingOutputPin**](cautousingoutputpin-cautousingoutputpin.md) | Obtém e libera o acesso a um [**objeto CDynamicOutputPin.**](cdynamicoutputpin.md)                                           |
+| [**Cbaseallocator**](cbaseallocator.md)                               | Classe de classe Demão para alocadores.                                                                                                        |
+| [**Cbasebasicvideo**](cbasebasicvideo.md)                             | Trata o componente IDispatch da interface [**IBasicVideo.**](/windows/desktop/api/Control/nn-control-ibasicvideo)                                              |
+| [**Cbasecontrolvideo**](cbasecontrolvideo.md)                         | Implementa a interface IBasicVideo para uma janela de vídeo genérica.                                                                  |
+| [**Cbasecontrolwindow**](cbasecontrolwindow.md)                       | Implementa a interface [**IVideoWindow.**](/windows/desktop/api/Control/nn-control-ivideowindow)                                                                    |
+| [**Cbasedispatch**](cbasedispatch.md)                                 | Classe base para implementar a interface IDispatch.                                                                              |
+| [**Cbasefilter**](cbasefilter.md)                                     | Classe base para filtros.                                                                                                           |
+| [**Cbaseinputpin**](cbaseinputpin.md)                                 | Classe base para pinos de entrada.                                                                                                        |
+| [**Cbaselist**](cbaselist.md)                                         | Classe base para listas genéricas.                                                                                                     |
+| [**Cbasemediafilter**](cbasemediafilter.md)                           | Implementa a interface [**IMediaFilter.**](/windows/desktop/api/Strmif/nn-strmif-imediafilter)                                                                    |
+| [**Cbaseobject**](cbaseobject.md)                                     | Classe base para implementar DirectShow objetos.                                                                                   |
+| [**Cbaseoutputpin**](cbaseoutputpin.md)                               | Classe base para pinos de saída.                                                                                                       |
+| [**Cbasepin**](cbasepin.md)                                           | Classe base para pinos.                                                                                                              |
+| [**Cbasepropertypage**](cbasepropertypage.md)                         | Classe base para implementar páginas de propriedades.                                                                                       |
+| [**Cbasereferenceclock**](cbasereferenceclock.md)                     | Implementa um relógio de referência.                                                                                                     |
+| [**Cbaserenderer**](cbaserenderer.md)                                 | Classe base para implementar filtros de renderização.                                                                                     |
+| [**Cbasestreamcontrol**](cbasestreamcontrol.md)                       | Implementa a interface [**IAMStreamControl.**](/windows/desktop/api/Strmif/nn-strmif-iamstreamcontrol)                                                            |
+| [**Cbasevideorenderer**](cbasevideorenderer.md)                       | Classe base para renderadores de vídeo.                                                                                                   |
+| [**Cbasevideowindow**](cbasevideowindow.md)                           | Trata o componente IDispatch da interface [**IVideoWindow.**](/windows/desktop/api/Control/nn-control-ivideowindow)                                            |
+| [**Cbasewindow**](cbasewindow.md)                                     | Classe base para gerenciar janelas.                                                                                                  |
+| [**Cbasicaudio**](cbasicaudio.md)                                     | Trata o componente de interface IDispatch da interface [**IBasicAudio.**](/windows/desktop/api/Control/nn-control-ibasicaudio)                                    |
+| [**CCmdQueue**](ccmdqueue.md)                                         | Classe auxiliar para implementar a interface [**IQueueCommand.**](/windows/desktop/api/Control/nn-control-iqueuecommand)                                               |
+| [**Ccritsec**](ccritsec.md)                                           | Fornece um bloqueio de thread.                                                                                                           |
+| [**CDeferredCommand**](cdeferredcommand.md)                           | Implementa a interface [**IDeferredCommand.**](/windows/desktop/api/Control/nn-control-ideferredcommand)                                                            |
+| [**CDispParams**](cdispparams.md)                                     | Classe Wrapper para a estrutura DISPPARAMS.                                                                                       |
 | [**CDrawImage**](cdrawimage.md)                                       | Classe auxiliar para desenhar em uma janela.                                                                                             |
-| [**CDynamicOutputPin**](cdynamicoutputpin.md)                         | Pino de saída que dá suporte a reconexões de dyanamic e alterações de formato.                                                               |
+| [**CDynamicOutputPin**](cdynamicoutputpin.md)                         | Pino de saída que dá suporte a reconexões dyanamic e alterações de formato.                                                               |
 | [**CEnumMediaTypes**](cenummediatypes.md)                             | Enumerador para tipos de mídia preferenciais.                                                                                             |
-| [**CEnumPins**](cenumpins.md)                                         | Enumerador para Pins.                                                                                                              |
+| [**Cenumpins**](cenumpins.md)                                         | Enumerador para pinos.                                                                                                              |
 | [**CFactoryTemplate**](cfactorytemplate.md)                           | Classe que fornece informações para uma fábrica de classes.                                                                              |
-| [**CGenericList**](cgenericlist.md)                                   | Modelo de classe que implementa uma lista específica de tipo.                                                                              |
-| [**CImageAllocator**](cimageallocator.md)                             | Alocador para seções DIB.                                                                                                       |
+| [**Cgenericlist**](cgenericlist.md)                                   | Modelo de classe que implementa uma lista específica de tipo.                                                                              |
+| [**CImageAllocator**](cimageallocator.md)                             | Alocador para seções do DIB.                                                                                                       |
 | [**CImageDisplay**](cimagedisplay.md)                                 | Classe auxiliar para gerenciar formatos de exibição de imagem.                                                                                  |
-| [**CImagePalette**](cimagepalette.md)                                 | Classe auxiliar para gerenciamento de paletas.                                                                                               |
+| [**CImagePalette**](cimagepalette.md)                                 | Classe auxiliar para gerenciar paletas.                                                                                               |
 | [**CImageSample**](cimagesample.md)                                   | Exemplo de mídia que usa seções DIB.                                                                                              |
 | [**CLoadDirectDraw**](cloaddirectdraw.md)                             | Preterido.                                                                                                                       |
-| [**CMediaControl**](cmediacontrol.md)                                 | Manipula os métodos IDispatch da interface [**IMediaControl**](/windows/desktop/api/Control/nn-control-imediacontrol) .                                            |
-| [**CMediaEvent**](cmediaevent.md)                                     | Manipula os métodos IDispatch da interface [**IMediaEvent**](/windows/desktop/api/Control/nn-control-imediaevent) .                                                |
-| [**CMediaPosition**](cmediaposition.md)                               | Manipula os métodos IDispatch da interface [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition) .                                          |
-| [**CMediaSample**](cmediasample.md)                                   | Exemplo de mídia.                                                                                                                     |
+| [**Cmediacontrol**](cmediacontrol.md)                                 | Trata os métodos IDispatch da interface [**IMediaControl.**](/windows/desktop/api/Control/nn-control-imediacontrol)                                            |
+| [**Cmediaevent**](cmediaevent.md)                                     | Trata os métodos IDispatch da interface [**IMediaEvent.**](/windows/desktop/api/Control/nn-control-imediaevent)                                                |
+| [**Cmediaposition**](cmediaposition.md)                               | Trata os métodos IDispatch da interface [**IMediaPosition.**](/windows/desktop/api/Control/nn-control-imediaposition)                                          |
+| [**Cmediasample**](cmediasample.md)                                   | Exemplo de mídia.                                                                                                                     |
 | [**CMediaType**](cmediatype.md)                                       | Classe para gerenciar tipos de mídia.                                                                                                   |
 | [**CMemAllocator**](cmemallocator.md)                                 | Alocador de memória.                                                                                                                 |
 | [**CMsg**](cmsg.md)                                                   | Classe auxiliar para gerenciar solicitações feitas a um objeto [**CMsgThread**](cmsgthread.md) .                                             |
@@ -104,7 +104,7 @@ Esta seção contém entradas de referência para todas as [classes base](direct
 
 <dl> <dt>
 
-[Classes base do DirectShow](directshow-base-classes.md)
+[DirectShow Classes base](directshow-base-classes.md)
 </dt> </dl>
 
  

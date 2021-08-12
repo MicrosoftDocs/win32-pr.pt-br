@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f433d880fd7f568a173a91c533e0d07bf97e6443
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d6ec35cc3fa831218fb7c5c4810643d58b9c9d303a9501d10969d847649c2efb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105796273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118661512"
 ---
 # <a name="cbasecontrolvideoget_destinationleft-method"></a>CBaseControlVideo. obter \_ método DestinationLeft
 
@@ -49,7 +49,7 @@ Ponteiro para a coordenada esquerda do retângulo de destino.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** que depende da implementação; pode ser um dos valores a seguir ou outros valores não listados.
 
@@ -78,7 +78,7 @@ Um aplicativo pode alterar os retângulos de origem e de destino para o vídeo p
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c966d031bb154b59cc54ae2e5d254347aa88d2a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f2a6a5dbf175408ba8421a28e9ee7b7b80876849701b849935a3a4aba9b13e8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118617052"
 ---
 # <a name="glcopytexsubimage2d-function"></a>função glCopyTexSubImage2D
 

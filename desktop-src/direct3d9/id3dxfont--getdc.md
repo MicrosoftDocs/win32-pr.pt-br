@@ -1,7 +1,7 @@
 ---
-description: Retorna um identificador para um contexto de dispositivo de exibição (DC) que tem o conjunto de fontes.
+description: Retorna um alça para um DC (contexto de dispositivo de exibição) que tem o conjunto de fontes.
 ms.assetid: b2092d7d-9761-41de-b094-b06626bd7ba3
-title: 'Método ID3DXFont:: GetDC (D3dx9core. h)'
+title: Método ID3DXFont::GetDC (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: cce659d2436faa521e965774f06cbc4deaf46663
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3ceabce512bc48038795292347cab87ed0472b8affb163b4b8f605861ef367ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118295365"
 ---
-# <a name="id3dxfontgetdc-method"></a>Método ID3DXFont:: GetDC
+# <a name="id3dxfontgetdc-method"></a>Método ID3DXFont::GetDC
 
-Retorna um identificador para um contexto de dispositivo de exibição (DC) que tem o conjunto de fontes.
+Retorna um alça para um DC (contexto de dispositivo de exibição) que tem o conjunto de fontes.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,7 +42,7 @@ Esse método não tem parâmetros.
 
 Tipo: **[ **HDC**](../winprog/windows-data-types.md)**
 
-Identificador para um controlador de domínio de vídeo.
+Manipular para um DC de exibição.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Identificador para um controlador de domínio de vídeo.
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

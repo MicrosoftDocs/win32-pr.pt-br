@@ -15,16 +15,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06fb7c759059034874890f1dba7f7e2d1280ea8a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a9caf5accb0add3354953d09e74a0893e2392deee7720b7a2cba0136b3f4b7c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105764008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118592581"
 ---
 # <a name="ivmvirtualnetwork-interface"></a>Interface IVMVirtualNetwork
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O Virtual PC não está mais disponível para uso a partir de Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Define uma rede virtual. Os objetos **IVMVirtualNetwork** são retornados do método [**IVMVirtualPC**](ivmvirtualpc.md) [**FindVirtualNetwork**](ivmvirtualpc-findvirtualnetwork.md). Você também pode recuperar um objeto **IVMVirtualNetwork** do objeto [**IVMVirtualNetworkCollection**](ivmvirtualnetworkcollection.md) retornado da propriedade [**IVMVirtualPC:: VirtualNetworks**](ivmvirtualpc-virtualnetworks.md) .
 
@@ -45,7 +45,7 @@ A interface **IVMVirtualNetwork** tem esses métodos.
 
 | Método                                | Descrição                                                          |
 |:--------------------------------------|:---------------------------------------------------------------------|
-| [**\_ID**](ivmvirtualnetwork--id.md) | Recupera o identificador interno da rede virtual.<br/> |
+| [**\_SESSÃO**](ivmvirtualnetwork--id.md) | Recupera o identificador interno da rede virtual.<br/> |
 
 
 
@@ -74,7 +74,7 @@ A interface **IVMVirtualNetwork** tem essas propriedades.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
 | Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |

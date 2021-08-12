@@ -1,9 +1,9 @@
 ---
-title: Tipo complexo definitiontype
+title: Tipo complexo DefinitionType
 description: Define uma lista de eventos que seu provedor pode registrar.
 ms.assetid: 6d401ced-be1a-409a-8f4d-2d977a33ff8d
 keywords:
-- EventLog de tipo complexo de definitiontype
+- Tipo complexo DefinitionType EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 82fbf7ec7db6f64f1bac9776376fa8fe89659d9c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0f62ab040f57fdeb4e4208554c642e9b0bc2fb1135512d1c512f0b0ef90b69e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105800196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118589631"
 ---
-# <a name="definitiontype-complex-type"></a>Tipo complexo definitiontype
+# <a name="definitiontype-complex-type"></a>Tipo complexo DefinitionType
 
 Define uma lista de eventos que seu provedor pode registrar.
 
@@ -46,8 +46,8 @@ Define uma lista de eventos que seu provedor pode registrar.
 
 | Elemento                                                           | Type                                                                                       | Descrição                                                                                                                                                                                                                                                                             |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**circunstância**](eventmanifestschema-event-definitiontype-element.md) | [**EventDefinitionType**](eventmanifestschema-eventdefinitiontype-complextype.md)         | Define um evento que seu provedor pode registrar.<br/>                                                                                                                                                                                                                                 |
-| [**agenda**](eventmanifestschema-task-definitiontype-element.md)   | [**TaskEventDefinitionType**](eventmanifestschema-taskeventdefinitiontype-complextype.md) | Não há suporte.<br/> **Windows Server 2008 e Windows Vista:** Define um evento específico de tarefa que seu provedor pode registrar. (Começando com o compilador de mensagem que acompanha a versão do Windows 7 do SDK do Windows, não há mais suporte para eventos específicos da tarefa.)<br/> |
+| [**Evento**](eventmanifestschema-event-definitiontype-element.md) | [**EventDefinitionType**](eventmanifestschema-eventdefinitiontype-complextype.md)         | Define um evento que seu provedor pode registrar em log.<br/>                                                                                                                                                                                                                                 |
+| [**Tarefa**](eventmanifestschema-task-definitiontype-element.md)   | [**TaskEventDefinitionType**](eventmanifestschema-taskeventdefinitiontype-complextype.md) | Sem suporte.<br/> **Windows Server 2008 e Windows Vista:** Define um evento específico de tarefa que seu provedor pode registrar em log. (A partir do compilador de mensagens que acompanha a versão Windows 7 do SDK do Windows, não há mais suporte para eventos específicos da tarefa.)<br/> |
 
 
 
@@ -57,8 +57,8 @@ Define uma lista de eventos que seu provedor pode registrar.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

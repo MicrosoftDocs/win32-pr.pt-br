@@ -1,7 +1,7 @@
 ---
-description: Alterna o status literal de um parâmetro. Um parâmetro literal tem um valor que não é alterado durante o tempo de vida de um efeito.
+description: Alterna o status literal de um parâmetro. Um parâmetro literal tem um valor que não muda durante o tempo de vida de um efeito.
 ms.assetid: 09ebf666-8a50-4604-abef-aed0d92a6d49
-title: 'Método ID3DXEffectCompiler:: setliteral (D3DX9Shader. h)'
+title: Método ID3DXEffectCompiler::SetLiteral (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 5a64426381876458b601b741050a01e5f35d084c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5d28ee64c1d1e52b4005c1a81ef4690c539a09e06eb7a8378a246184cf4d2fd8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118295827"
 ---
-# <a name="id3dxeffectcompilersetliteral-method"></a>Método ID3DXEffectCompiler:: setliteral
+# <a name="id3dxeffectcompilersetliteral-method"></a>Método ID3DXEffectCompiler::SetLiteral
 
-Alterna o status literal de um parâmetro. Um parâmetro literal tem um valor que não é alterado durante o tempo de vida de um efeito.
+Alterna o status literal de um parâmetro. Um parâmetro literal tem um valor que não muda durante o tempo de vida de um efeito.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,7 +41,7 @@ HRESULT SetLiteral(
 
 <dl> <dt>
 
-*hParameter* \[ no\]
+*hParameter* \[ Em\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
@@ -50,12 +50,12 @@ Identificador exclusivo para um parâmetro. Consulte [Handles (Direct3D 9)](hand
 
 </dd> <dt>
 
-*Literal* \[ no\]
+*Literal* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Defina como **true** para tornar o parâmetro um literal e **false** se o parâmetro puder alterar o valor durante o tempo de vida do sombreador.
+De definido **como TRUE** para tornar o parâmetro um literal e **FALSE** se o parâmetro puder alterar o valor durante o tempo de vida do sombreador.
 
 </dd> </dl>
 
@@ -63,13 +63,13 @@ Defina como **true** para tornar o parâmetro um literal e **false** se o parâm
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
+Se o método for bem-sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentários
 
-Esses métodos só alteram se o parâmetro é um literal ou não. Para alterar o valor de um parâmetro, use um método como [**ID3DXBaseEffect:: setbool**](id3dxbaseeffect--setbool.md) ou [**ID3DXBaseEffect:: SetValue**](id3dxbaseeffect--setvalue.md).
+Esses métodos só mudam se o parâmetro é um literal ou não. Para alterar o valor de um parâmetro, use um método como [**ID3DXBaseEffect::SetBool**](id3dxbaseeffect--setbool.md) ou [**ID3DXBaseEffect::SetValue**](id3dxbaseeffect--setvalue.md).
 
-Essa função deve ser chamada antes de o efeito ser compilado. Aqui está um exemplo de como uma delas pode usar essa função:
+Essa função deve ser chamada antes que o efeito seja compilado. Aqui está um exemplo de como se pode usar essa função:
 
 
 ```
@@ -106,8 +106,8 @@ Essa função deve ser chamada antes de o efeito ser compilado. Aqui está um ex
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| parâmetro<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
@@ -121,7 +121,7 @@ Essa função deve ser chamada antes de o efeito ser compilado. Aqui está um ex
 [Usos e literais (Direct3D 9)](usages-and-literals.md)
 </dt> <dt>
 
-[**ID3DXEffectCompiler:: getliteral**](id3dxeffectcompiler--getliteral.md)
+[**ID3DXEffectCompiler::GetLiteral**](id3dxeffectcompiler--getliteral.md)
 </dt> </dl>
 
  

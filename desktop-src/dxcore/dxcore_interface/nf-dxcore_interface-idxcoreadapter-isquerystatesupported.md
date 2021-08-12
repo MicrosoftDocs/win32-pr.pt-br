@@ -1,19 +1,19 @@
 ---
 title: IDXCoreAdapter::IsQueryStateSupported
-description: Determina se este objeto de adaptador DXCore e o sistema operacional atual (SO) dão suporte à consulta do valor do estado do adaptador especificado.
+description: Determina se esse objeto de adaptador DXCore e o sistema operacional atual são suportados para consultar o valor do estado do adaptador especificado.
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: d154597f9b3ddbec24cff230317d881b9595bcde
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8ae77c308cb251982947d91e23eaef8f6d828c1233df442cb013bf9737e3c57d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118279217"
 ---
-# <a name="idxcoreadapterisquerystatesupported-method"></a>Método IDXCoreAdapter:: IsQueryStateSupported
+# <a name="idxcoreadapterisquerystatesupported-method"></a>Método IDXCoreAdapter::IsQueryStateSupported
 
-Determina se este objeto de adaptador DXCore e o sistema operacional atual (SO) dão suporte à consulta do valor do estado do adaptador especificado.
+Determina se esse objeto de adaptador DXCore e o sistema operacional atual são suportados para consultar o valor do estado do adaptador especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,14 +28,14 @@ virtual bool STDMETHODCALLTYPE IsQueryStateSupported(
 
 Tipo: **[DXCoreAdapterState](./ne-dxcore_interface-dxcoreadapterstate.md)**
 
-O tipo de item de estado que você está consultando sobre o suporte para. Consulte a tabela em [DXCoreAdapterState](./ne-dxcore_interface-dxcoreadapterstate.md) para obter mais informações sobre cada tipo de estado de adaptador.
+O tipo de item de estado para o qual você está consultando o suporte. Consulte a tabela em [DXCoreAdapterState](./ne-dxcore_interface-dxcoreadapterstate.md) para obter mais informações sobre cada tipo de estado do adaptador.
 
 ## <a name="returns"></a>Retornos
 
 Tipo: **bool**
 
-Retorna  `true`   se este objeto de adaptador DXCore e o sistema operacional atual (SO) dão suporte à consulta do estado do adaptador especificado. Caso contrário, retorna  `false` .
+Retorna se esse objeto de adaptador DXCore e o sistema operacional atual são suportados para consultar o `true` estado do adaptador especificado. Caso contrário, retorna `false`.
 
 ## <a name="see-also"></a>Confira também
 
-[IDXCoreAdapter](./nn-dxcore_interface-idxcoreadapter.md), [referência de DXCore](../dxcore-reference.md), [GUIDs de atributo do adaptador DXCore](../dxcore-adapter-attribute-guids.md), [usando DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)
+[IDXCoreAdapter,](./nn-dxcore_interface-idxcoreadapter.md) [Referência de DXCore,](../dxcore-reference.md)atributo de adaptador [DXCore GUIDs](../dxcore-adapter-attribute-guids.md), usando [DXCore para enumerar adaptadores](../dxcore-enum-adapters.md)

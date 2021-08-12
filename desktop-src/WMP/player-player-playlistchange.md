@@ -3,9 +3,9 @@ title: Evento Player. PlaylistChange
 description: O evento PlaylistChange ocorre quando uma lista de reprodução é alterada. | Evento Player. PlaylistChange
 ms.assetid: 09ab0560-e18d-4ee8-a649-2b2468b40c31
 keywords:
-- Evento PlaylistChange do Windows Media Player
-- Evento PlaylistChange Windows Media Player, classe Player
-- Classe de jogador Windows Media Player, evento PlaylistChange
+- Windows Media Player de eventos PlaylistChange
+- Windows Media Player de eventos PlaylistChange, classe Player
+- classe de jogador Windows Media Player, evento PlaylistChange
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83d371818e8166b536543246eeecf0090509e62b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3ff4c45449c8de2062aa53ce9bda89c8d634dd30bc1ac8c03f091e8b97e9ce60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105796192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118572799"
 ---
 # <a name="playerplaylistchange-event"></a>Evento Player. PlaylistChange
 
@@ -43,7 +43,7 @@ Player.PlaylistChange(
 
 <dl> <dt>
 
-*7.1* 
+*Playlist* 
 </dt> <dd>
 
 Objeto **playlist** que foi alterado.
@@ -57,7 +57,7 @@ Objeto **playlist** que foi alterado.
 
 
 
-| Número | Nome          |
+| Número | Name          |
 |--------|---------------|
 | 0      | Unknown       |
 | 1      | Limpar         |
@@ -85,7 +85,7 @@ Esse evento não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-O valor dos parâmetros de evento é especificado pelo Windows Media Player e pode ser acessado ou transmitido para um método em um arquivo JScript importado usando o nome de parâmetro fornecido. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
+o valor dos parâmetros de evento é especificado por Windows Media Player e pode ser acessado ou passado para um método em um arquivo de JScript importado usando o nome de parâmetro fornecido. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
 
 **Windows Media Player 10 Mobile:** Não há suporte para esse evento.
 

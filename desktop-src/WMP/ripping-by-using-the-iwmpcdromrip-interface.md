@@ -1,38 +1,38 @@
 ---
-title: Copiando usando a interface IWMPCdromRip
-description: Copiando usando a interface IWMPCdromRip
+title: Usando a interface IWMPCdromRip
+description: Usando a interface IWMPCdromRip
 ms.assetid: 7622072e-82e1-4e31-ad80-ddc3473b5841
 keywords:
-- Windows Media Player, CD de CDs
-- Modelo de objeto do Windows Media Player, cópia de CD
-- modelo de objeto, cópia de CD
-- Controle ActiveX do Windows Media Player, cópia de CD
-- Controle ActiveX, cópia de CD
-- Controle ActiveX móvel do Windows Media Player, cópia de CD
-- Windows Media Player Mobile, CD-CDs
-- CD de CDs, interface IWMPCdromRip
-- copiando CDs, interface IWMPCdromRip
+- Windows Media Player, CD
+- Windows Media Player modelo de objeto, CD
+- modelo de objeto, CD
+- Windows Media Player ActiveX controle,CD
+- ActiveX controle,CD
+- Windows Media Player Controle ActiveX dispositivo móvel, CD
+- Windows Media Player Móvel, CD
+- CD ,interface IWMPCdromRip
+- CDs de máquina, interface IWMPCdromRip
 - Interface IWMPCdromRip
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fcf2e959d10385365075bb20e1c04c2d796ad2e
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 50651629f5a11f13bb27a11927c1f08c33de7162130fd7f10f33fe4c74386692
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103823572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118569792"
 ---
-# <a name="ripping-by-using-the-iwmpcdromrip-interface"></a>Copiando usando a interface IWMPCdromRip
+# <a name="ripping-by-using-the-iwmpcdromrip-interface"></a>Usando a interface IWMPCdromRip
 
-Esta seção descreve como usar a interface [IWMPCdromRip](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdromrip) para copiar música de um CD.
+Esta seção descreve como usar a interface [IWMPCdromRip](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdromrip) para cortar música de um CD.
 
-Copiar um CD usando a interface **IWMPCdromRip** tem o mesmo efeito que copiar música usando a interface do usuário do Windows Media Player. O conteúdo copiado é adicionado automaticamente à biblioteca de acordo com as preferências do usuário. Para obter mais informações sobre cópia de CD, consulte "copiando música de CDs" na ajuda do Windows Media Player.
+A replicação de um CD usando a interface **IWMPCdromRip** tem o mesmo efeito que a música de voz ao usar a interface do Windows Media Player usuário. O conteúdo da biblioteca é adicionado automaticamente à biblioteca de acordo com as preferências do usuário. Para obter mais informações sobre a gravação de CD, consulte "Música de música de música de CDs" em Windows Media Player Ajuda.
 
 Os exemplos de código nesta seção usam classes Active Template Library (ATL), como **CComPtr**.
 
-## <a name="included-headers"></a>Cabeçalhos incluídos
+## <a name="included-headers"></a>Headers incluídos
 
-Para usar o código nesta seção, inclua os seguintes cabeçalhos:
+Para usar o código nesta seção, inclua os seguintes headers:
 
 
 ```C++
@@ -49,7 +49,7 @@ Para usar o código nesta seção, inclua os seguintes cabeçalhos:
 
 ## <a name="interface-pointers"></a>Ponteiros de interface
 
-As interfaces do Windows Media Player são armazenadas nas seguintes variáveis de membro.
+As interfaces para Windows Media Player são armazenadas nas seguintes variáveis de membro.
 
 
 ```C++
@@ -69,13 +69,13 @@ CComPtr<IWMPPlaylist>           m_spPlaylist;
 As seções a seguir descrevem como usar a interface IWMPCdromRip
 
 -   [Recuperar a interface de extração](retrieving-the-ripping-interface.md)
--   [Iniciando o processo de RIP](starting-the-rip-process.md)
--   [Recuperando o status do RIP](retrieving-the-rip-status.md)
--   [Selecionando itens para copiar](selecting-items-for-ripping.md)
+-   [Iniciando o processo de ressarção](starting-the-rip-process.md)
+-   [Recuperando o status de resserção](retrieving-the-rip-status.md)
+-   [Selecionando itens para Busca](selecting-items-for-ripping.md)
 
- 
+ 
 
- 
+ 
 
 
 

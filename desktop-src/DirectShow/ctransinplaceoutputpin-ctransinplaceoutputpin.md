@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d6b63ee3aa52bc0363bcab90275be4148659b3bb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: faf8b2cf0a4f1def8ea89ad04bd013d3867ff5a456e6c8922f72a078d860df92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118654774"
 ---
 # <a name="ctransinplaceoutputpinctransinplaceoutputpin-constructor"></a>Construtor CTransInPlaceOutputPin. CTransInPlaceOutputPin
 
@@ -83,12 +83,12 @@ O parâmetro *pname* especifica o nome do PIN, que é retornado pelo método [**
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>TRANSip. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Transip. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

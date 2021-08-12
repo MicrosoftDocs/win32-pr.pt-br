@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. addSelectedToPlaylist
-description: O método addSelectedToPlaylist adiciona o item selecionado a uma lista de reprodução.
+title: PLAYLIST.addSelectedToPlaylist
+description: O método addSelectedToPlaylist adiciona o item selecionado a uma playlist.
 ms.assetid: 02ce8553-4ffc-44c1-b260-f41d0877137f
 keywords:
-- PLAYLIST. addSelectedToPlaylist Windows Media Player
+- PLAYLIST.addSelectedToPlaylist Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5cda55f82d13db6061cb713388a618dfa8f2b5e2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b67fd824bb5055156a6ae1846ab4017b662dbeea9434ff1657d7fe76ebda640b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105784543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118571476"
 ---
-# <a name="playlistaddselectedtoplaylist"></a>PLAYLIST. addSelectedToPlaylist
+# <a name="playlistaddselectedtoplaylist"></a>PLAYLIST.addSelectedToPlaylist
 
-O método **addSelectedToPlaylist** adiciona o item selecionado a uma lista de reprodução.
+O **método addSelectedToPlaylist** adiciona o item selecionado a uma playlist.
 
 ``` syntax
         elementID.addSelectedToPlaylist(playlist)
@@ -32,10 +32,10 @@ O método **addSelectedToPlaylist** adiciona o item selecionado a uma lista de r
 
 <dl> <dt>
 
-<span id="playlist"></span><span id="PLAYLIST"></span>*7.1*
+<span id="playlist"></span><span id="PLAYLIST"></span>*Lista*
 </dt> <dd>
 
-Objeto de **playlist** que receberá o item selecionado.
+**Objeto** de playlist que receberá o item selecionado.
 
 </dd> </dl>
 
@@ -49,7 +49,7 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 

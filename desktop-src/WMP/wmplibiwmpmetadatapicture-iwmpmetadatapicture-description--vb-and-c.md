@@ -3,9 +3,9 @@ title: Propriedade de descrição de IWMPMetadataPicture
 description: A propriedade Description obtém a descrição da imagem representada pelo atributo Metadata.
 ms.assetid: a8e0cc2b-48a5-4ade-9517-dea8dbea058b
 keywords:
-- Propriedade de descrição Windows Media Player
-- Propriedade de descrição Windows Media Player, interface IWMPMetadataPicture
-- Interface IWMPMetadataPicture Windows Media Player, Propriedade Description
+- Windows Media Player de propriedade de descrição
+- propriedade de descrição Windows Media Player, interface IWMPMetadataPicture
+- Windows Media Player de interface IWMPMetadataPicture, propriedade Description
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b27b44a0646cea16970735df8f7d23f655fc4b00
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 629b66c18abcb3c75921ab252d88047a70d3dc1e3c2667ac2b1707fdbe6a58ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118568721"
 ---
 # <a name="iwmpmetadatapicturedescription-property"></a>IWMPMetadataPicture: Propriedade descrição de:D
 
 A `Description` propriedade Obtém a descrição da imagem representada pelo atributo de metadados.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```CSharp

@@ -1,7 +1,7 @@
 ---
-description: Altere quais vértices são influenciados por quais Bones.
+description: Alterar quais vértices são influenciados por qual esqueleto.
 ms.assetid: b0d71f3e-9a2d-469d-808b-2fa768cf14b0
-title: 'Método ID3DX10SkinInfo:: RemapVertices (D3DX10. h)'
+title: Método ID3DX10SkinInfo::RemapVertices (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: cc51c912794135b456542bb9a8a779601681f393
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d73b9878a43ef876174561f16678f78787b15b88f423ecfb3f1765bd82c84630
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105765319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118302472"
 ---
-# <a name="id3dx10skininforemapvertices-method"></a>Método ID3DX10SkinInfo:: RemapVertices
+# <a name="id3dx10skininforemapvertices-method"></a>Método ID3DX10SkinInfo::RemapVertices
 
-Altere quais vértices são influenciados por quais Bones.
+Alterar quais vértices são influenciados por qual esqueleto.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,21 +41,21 @@ HRESULT RemapVertices(
 
 <dl> <dt>
 
-*NewVertexCount* \[ no\]
+*NewVertexCount* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 O novo número de vértices.
 
 </dd> <dt>
 
-*pVertexRemap* \[ no\]
+*pVertexRemap* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Um ponteiro para uma matriz de índices de vértice, que descrevem o remapeamento. Por exemplo, digamos que SkinInfo contenha alguns vértices de modo que bone0 seja mapeado para V0, bone1 para v1 e bone2 para v2, e matriz com 2, 1, 0 seja especificado para pBoneRemap. Isso fará com que bone0 seja mapeado para v2, bone1 para v1 e bone2 para V0.
+Um ponteiro para uma matriz de índices de vértice, que descrevem o remapeamento. Por exemplo, digamos que SkinInfo contenha alguns vértices, de forma que seja mapeado para v0, hop1 a v1 e hop2 a v2, e a matriz com 2,1,0 seja especificada para pBoneRemap. Isso fará com que o 10 seja mapeado para v2, ltd1 a v1 e para v0.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Um ponteiro para uma matriz de índices de vértice, que descrevem o remapeament
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor de retorno poderá ser: E \_ OUTOFMEMORY ou E \_ INVALIDARG.
+Se o método for bem-sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor de retorno poderá ser: E \_ OUTOFMEMORY ou E \_ INVALIDARG.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método fa
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método fa
 [ID3DX10SkinInfo](id3dx10skininfo.md)
 </dt> <dt>
 
-[Interfaces D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

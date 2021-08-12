@@ -1,29 +1,29 @@
 ---
-title: Compilando o provedor de serviços de exemplo usando o Visual Studio
-description: Compilando o provedor de serviços de exemplo usando o Visual Studio
+title: Compilando o provedor de serviços de exemplo usando Visual Studio
+description: Compilando o provedor de serviços de exemplo usando Visual Studio
 ms.assetid: db0ecc18-d5b0-47d8-9b3f-3a9644343de8
 keywords:
-- Gerenciador de Dispositivos de mídia do Windows, amostras
-- Gerenciador de Dispositivos, exemplos
-- Windows Media Gerenciador de Dispositivos, exemplo de provedor de serviço
-- Gerenciador de Dispositivos, exemplo de provedor de serviço
+- Windows Mídia Gerenciador de Dispositivos, exemplos
+- Gerenciador de Dispositivos,exemplos
+- Windows Mídia Gerenciador de Dispositivos, exemplo de provedor de serviços
+- Gerenciador de Dispositivos, exemplo de provedor de serviços
 - provedores de serviços, exemplos
 - exemplos, provedores de serviços
-- exemplos, compilando usando o Visual Studio
+- exemplos, compilando usando Visual Studio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2abded2aa1272f2e5e14b711c0d8b0a8ec79f280
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cd220e314a6de0a9c5e4cf50ccd710a0236c3b3ec469247ef99f319b553b15c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105794537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118586014"
 ---
-# <a name="compiling-the-sample-service-provider-using-visual-studio"></a>Compilando o provedor de serviços de exemplo usando o Visual Studio
+# <a name="compiling-the-sample-service-provider-using-visual-studio"></a>Compilando o provedor de serviços de exemplo usando Visual Studio
 
-O Windows Media Format SDK não inclui um arquivo de solução do Visual Studio. No entanto, este documento inclui dois arquivos que permitem que você use o Visual Studio para criar e depurar o provedor de serviços de exemplo. Ambos os arquivos fornecidos são para o Visual Studio .NET 2003.
+O Windows SDK de Formato de Mídia não inclui um arquivo Visual Studio solução. No entanto, este documento inclui dois arquivos que permitem que você use Visual Studio para criar e depurar o provedor de serviços de exemplo. Ambos os arquivos fornecidos são para Visual Studio .NET 2003.
 
--   Salve o código a seguir como um arquivo de texto chamado mshdsp. vcproj na pasta <*caminho de instalação do SDK* > \\ WMFSDK \\ WMFSDK95 \\ WMDM \\ MDSP \\ mshdsp.
+-   Salve o código a seguir como um arquivo de texto chamado mshdsp.vcproj na pasta <caminho de instalação do *SDK* > \\ WMFSDK \\ WMFSDK95 \\ WMDM \\ \\ mdsp mshdsp.
 
 
 ```C++
@@ -300,7 +300,7 @@ O Windows Media Format SDK não inclui um arquivo de solução do Visual Studio.
 
 
 
--   Salve o código a seguir como um arquivo de texto chamado mshdsp. sln na mesma pasta em que você salvou mshdsp. vcproj.
+-   Salve o código a seguir como um arquivo de texto chamado mshdsp.sln na mesma pasta em que você salvou mshdsp.vcproj.
 
 
 ```C++
@@ -335,12 +335,12 @@ EndGlobal
 
 <dl> <dt>
 
-[**Provedor de serviços de exemplo**](sample-service-provider.md)
+[**Provedor de Serviços de Exemplo**](sample-service-provider.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

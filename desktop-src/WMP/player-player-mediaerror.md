@@ -1,11 +1,11 @@
 ---
-title: Evento Player. MediaError
-description: O evento MediaError ocorre quando o objeto de mídia tem uma condição de erro.
+title: Evento Player.MediaError
+description: O evento MediaError ocorre quando o objeto Media tem uma condição de erro.
 ms.assetid: b2e0176a-cc52-4f59-8894-440f426a1b6e
 keywords:
-- Evento MediaError do Windows Media Player
-- Evento MediaError Windows Media Player, classe Player
-- Classe de jogador Windows Media Player, evento MediaError
+- Eventos MediaError Windows Media Player
+- Evento MediaError Windows Media Player , classe Player
+- Classe player Windows Media Player evento , MediaError
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec8c22825f4aa720efa85275ce520eb81f082fd9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cb1eb94d245f0b0a91786b2b1a7b677429cc9040d8cbb1372164bf6e7ed209d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118572836"
 ---
-# <a name="playermediaerror-event"></a>Evento Player. MediaError
+# <a name="playermediaerror-event"></a>Evento Player.MediaError
 
-O evento **MediaError** ocorre quando o objeto de **mídia** tem uma condição de erro.
+O **evento MediaError** ocorre quando o **objeto Media** tem uma condição de erro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,7 +45,7 @@ Player.MediaError(
 *pMediaObject* 
 </dt> <dd>
 
-Objeto de **mídia** que tem uma condição de erro.
+**Objeto de** mídia que tem uma condição de erro.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Esse evento não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-O valor dos parâmetros de evento é especificado pelo Windows Media Player e pode ser acessado ou transmitido para um método em um arquivo JScript importado usando o nome de parâmetro fornecido. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
+O valor dos parâmetros de evento é especificado por Windows Media Player e pode ser acessado ou passado para um método em um arquivo JScript importado usando o nome do parâmetro especificado. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,7 +72,7 @@ O valor dos parâmetros de evento é especificado pelo Windows Media Player e po
 
 <dl> <dt>
 
-[**Objeto de jogador**](player-object.md)
+[**Objeto Player**](player-object.md)
 </dt> </dl>
 
  

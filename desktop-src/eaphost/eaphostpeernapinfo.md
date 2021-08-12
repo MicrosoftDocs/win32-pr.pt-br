@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3221f40dea9e84e410a1a643bbbcdc94e9039b21
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5fe91c88f633f2e42599938e45e1291c90f1ec9c08559a84f132f3af9269de39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118274531"
 ---
 # <a name="eaphostpeernapinfo-structure"></a>Estrutura EapHostPeerNapInfo
 
@@ -74,8 +74,8 @@ A estrutura **EapHostPeerNapInfo** precede a [stringCorrelationId](/windows/desk
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                   |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                      |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                   |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                      |
 | parâmetro<br/>                   | <dl> <dt>Eaphostpeerapis. h</dt> </dl> |
 
 

@@ -3,9 +3,9 @@ title: Método Controls. fastReverse
 description: O método fastReverse inicia a verificação rápida do item de mídia na direção inversa.
 ms.assetid: 4fc61739-9006-4d62-b2c1-2b8e8830f2d9
 keywords:
-- método fastReverse Windows Media Player
+- Windows Media Player do método fastReverse
 - método fastReverse Windows Media Player, classe Controls
-- Classe Controls Windows Media Player, método fastReverse
+- classe Controls Windows Media Player, método fastReverse
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73e5a63c4299bf08c25e36e2d61924f3fb171792
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3d4643525f66102cbd7b017a4a48f1068489062ec0849f197f1f55df45fc6f1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118580272"
 ---
 # <a name="controlsfastreverse-method"></a>Método Controls. fastReverse
 
@@ -46,9 +46,9 @@ Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-O método **fastReverse** examina o clipe de forma inversa em cinco vezes a velocidade normal, exibindo apenas os quadros-chave se for um arquivo de vídeo. Invocar **fastReverse** altera as *configurações*. **taxa** de propriedade para 5,0. Se a **taxa** for alterada posteriormente, ou se **Play** ou **Stop** for chamado, o Windows Media Player deixará de ser revertido rapidamente.
+O método **fastReverse** examina o clipe de forma inversa em cinco vezes a velocidade normal, exibindo apenas os quadros-chave se for um arquivo de vídeo. invocar **fastReverse** altera o *Configurações*. **taxa** de propriedade para 5,0. se a **taxa** for alterada posteriormente, ou se a **opção reproduzir** ou **parar** for chamada, Windows Media Player interromperá a inversão rápida.
 
-Se o item fizer parte de uma lista de reprodução, o **fastReverse** para no início da faixa atual. Por exemplo, se Track 3 estiver em **fastReverse**, quando o início do Track 3 for atingido, o Windows Media Player não vai para o Track 2. A contagem de execuções não é incrementada ao chamar **fastReverse**.
+Se o item fizer parte de uma lista de reprodução, o **fastReverse** para no início da faixa atual. por exemplo, se track 3 estiver em **fastReverse**, quando o início do track 3 for atingido, Windows Media Player não vai para o track 2. A contagem de execuções não é incrementada ao chamar **fastReverse**.
 
 Se você chamar **Fastforward** enquanto **fastReverse** estiver em vigor, **fastReverse** será interrompido e **Fastforward** será iniciado.
 
@@ -102,7 +102,7 @@ O exemplo a seguir cria um elemento de botão HTML que usa **fastReverse** para 
 [**Controls. Stop**](controls-stop.md)
 </dt> <dt>
 
-[**Settings. Rate**](settings-rate.md)
+[**taxa de Configurações.**](settings-rate.md)
 </dt> </dl>
 
  

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: defef9a7ca24d6875eda508989615f308a2385b4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1a5dbfb84edef1f5257cfda8cae08d27b219909f47a7d88fd29580ae12e48b3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118657959"
 ---
 # <a name="cbasewindowonreceivemessage-method"></a>Método CBaseWindow. OnReceiveMessage
 
@@ -48,7 +48,7 @@ virtual LRESULT OnReceiveMessage(
 *HWND* 
 </dt> <dd>
 
-Identificador para a janela.
+Identificador da janela.
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Segundo parâmetro de mensagem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará 0 se a mensagem tiver sido processada ou 1 se a mensagem não tiver sido processada.
 
@@ -96,7 +96,7 @@ Uma classe derivada pode substituir esse método para lidar com outras mensagens
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

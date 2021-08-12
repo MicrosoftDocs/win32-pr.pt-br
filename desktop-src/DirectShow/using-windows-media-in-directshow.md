@@ -1,43 +1,43 @@
 ---
-description: Usando o Windows Media no DirectShow
+description: Usando Windows mídia em DirectShow
 ms.assetid: 2fae0504-d1da-413a-80dd-de7818f506ef
-title: Usando o Windows Media no DirectShow
+title: Usando Windows mídia em DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e73726f0d7251f1c19beee05cfd8f335d3fdd7a
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 4fea308943d4be732c75e774d3e0c3cb09ac7c6609a8399d2e6eca4666d99e6b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104370820"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118651082"
 ---
-# <a name="using-windows-media-in-directshow"></a>Usando o Windows Media no DirectShow
+# <a name="using-windows-media-in-directshow"></a>Usando Windows mídia em DirectShow
 
-Esta seção descreve como usar o DirectShow para reproduzir e gravar arquivos ASF (Advanced Systems Format). Normalmente, os arquivos ASF contêm conteúdo de áudio e vídeo codificado usando os codecs de áudio e vídeo do Windows Media. No entanto, o ASF pode conter qualquer tipo de dados.
+Esta seção descreve como usar o DirectShow para reproduzir e gravar arquivos ASF (Advanced Systems Format). Os arquivos ASF normalmente contêm conteúdo de áudio e vídeo codificado usando os codecs Windows Media Audio and Video. No entanto, o ASF pode conter qualquer tipo de dados.
 
-Os seguintes filtros do DirectShow dão suporte à leitura e gravação de arquivos ASF:
+Os seguintes filtros DirectShow suporte à leitura e à escrita de arquivos ASF:
 
--   [Filtro de leitor ASF do WM](wm-asf-reader-filter.md). Lê arquivos ASF.
--   [Filtro de gravador ASF do WM](wm-asf-writer-filter.md). Arquivos ASF Wrties.
--   [Filtro de invólucro de DMO](dmo-wrapper-filter.md). Encapsula o codificador do Windows Media e o decodificador DMOs.
+-   [Filtro de Leitor do WM ASF](wm-asf-reader-filter.md). Lê arquivos ASF.
+-   [Filtro do Wm ASF Writer](wm-asf-writer-filter.md). Wrties arquivos ASF.
+-   [DMO filtro wrapper](dmo-wrapper-filter.md). Envolve os DMOs Windows decodificador e codificador de mídia.
 
 ### <a name="versions"></a>Versões
 
-Os filtros do gravador ASF do WM e do escritor ASF do WM são empacotados na DLL chamada qasf.dll e os filtros são coletivamente nomeados "componentes QASF". Esses filtros são wrappers para o Windows Media Format SDK. A DLL (qasf.dll) foi publicada pela primeira vez no SDK do DirectX, mas foi atualizada posteriormente no SDK do Windows Media Format. Este é o histórico de versão dos filtros QASF:
+Os filtros Wm ASF Reader e WM ASF Writer são empacotados na DLL chamada qasf.dll, e os filtros são coletivamente chamados de "componentes QASF". Esses filtros são wrappers para o SDK Windows Formato de Mídia. A DLL (qasf.dll) foi publicada pela primeira vez no SDK do DirectX, mas foi atualizada posteriormente no SDK Windows Formato de Mídia. Este é o histórico de versão dos filtros qaSF:
 
--   O DirectShow 8,1 dá suporte à versão 7,0 do Windows Media Format SDK.
--   O DirectShow 9,0 dá suporte à versão 7,1 do Windows Media Format SDK.
--   O Windows XP Service Pack 2 dá suporte ao SDK do Windows Media Format 9.
--   O Windows Vista dá suporte ao SDK do Windows Media Format 11.
--   O SDK do Windows Media Format 9 e posterior contém versões correspondentes do QASF.
+-   DirectShow 8.1 dá suporte Windows SDK de Formato de Mídia versão 7.0.
+-   DirectShow 9.0 dá suporte Windows SDK de Formato de Mídia versão 7.1.
+-   Windows O XP Service Pack 2 dá suporte Windows SDK de Formato de Mídia 9.
+-   Windows O Vista dá suporte Windows SDK de Formato de Mídia 11.
+-   Windows O SDK de Formato de Mídia 9 e posteriores contêm versões correspondentes do QASF.
 
-Para obter a versão mais recente do QASF, sempre Baixe o SDK do Windows Media Format mais recente.
+Para obter a versão mais recente do QASF, sempre baixe o SDK Windows Formato de Mídia mais recente.
 
-### <a name="legacy-windows-media-source-filter"></a>Filtro de origem de mídia do Windows herdado
+### <a name="legacy-windows-media-source-filter"></a>Filtro de fonte Windows mídia herdado
 
-No Windows XP Service Pack 1 e versões anteriores, o filtro de origem padrão para arquivos ASF (. ASF,. wmv e extensões de arquivo. WMA) é o [filtro de origem de mídia do Windows](windows-media-source-filter.md)obsoleto. Esse comportamento foi mantido para garantir a compatibilidade com versões anteriores com aplicativos que usavam o Windows Media Player 6,4. Novos aplicativos devem usar as versões mais recentes do QASF, que tornam o filtro de leitor ASF do WM o filtro padrão para a reprodução de arquivos ASF.
+No Windows XP Service Pack 1 e anterior, o filtro de origem padrão para arquivos ASF (extensões de arquivo .asf, .wmv e .wma) é o filtro de fonte de mídia obsoleto [Windows](windows-media-source-filter.md). Esse comportamento foi mantido para garantir a compatibilidade com aplicativos que usaram o Windows Media Player 6.4. Novos aplicativos devem usar as versões mais recentes do QASF, que fazem com que o Leitor do WM ASF filtre o filtro padrão para reprodução de arquivos ASF.
 
-Para obter mais informações sobre o Windows Media Suite dos kits de desenvolvimento de software, consulte a seção [áudio e vídeo](../audio-and-video.md) da biblioteca MSDN.
+Para obter mais informações sobre o Windows media de kits de desenvolvimento de software, consulte a seção [Áudio](../audio-and-video.md) e Vídeo da Biblioteca MDSN.
 
 Este artigo contém os seguintes tópicos:
 
@@ -48,7 +48,7 @@ Este artigo contém os seguintes tópicos:
 
 <dl> <dt>
 
-[Usando o DirectShow](using-directshow.md)
+[Usando DirectShow](using-directshow.md)
 </dt> </dl>
 
  

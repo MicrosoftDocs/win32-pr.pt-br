@@ -1,9 +1,9 @@
 ---
 title: Evento CurrentItemChange do objeto AxWindowsMediaPlayer
-description: O evento CurrentItemChange ocorre quando o valor de IWMPControls. currentItem é alterado.
+description: O evento CurrentItemChange ocorre quando o valor de IWMPControls.currentItem muda.
 ms.assetid: c5eeafd2-405b-4808-97d1-399a2344ca42
 keywords:
-- Evento CurrentItemChange do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento CurrentItemChange do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c33bb3e9c4c1e512e742c0e679f3c5b53a29735
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d1786fab3e312f95550103cdc6cf4f2558e25e883df9c7be2d6f850a7f8a5ce4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763377"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118582552"
 ---
 # <a name="currentitemchange-event-of-the-axwindowsmediaplayer-object"></a>Evento CurrentItemChange do objeto AxWindowsMediaPlayer
 
-O evento CurrentItemChange ocorre quando o valor de IWMPControls. **currentItem** é alterado.
+O evento CurrentItemChange ocorre quando o valor de IWMPControls. **alterações currentItem.**
 
 ``` syntax
 [C#]
@@ -41,13 +41,13 @@ Private Sub player_CurrentItemChange(
 
 ## <a name="event-data"></a>Dados de evento
 
-O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ CurrentItemChangeEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ CurrentItemChangeEvent**, que contém a seguinte propriedade relacionada a este evento.
+O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ CurrentItemChangeEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ CurrentItemChangeEvent**, que contém a propriedade a seguir relacionada a esse evento.
 
 
 
 | Propriedade   | Descrição                                                                                                   |
 |------------|---------------------------------------------------------------------------------------------------------------|
-| pdispMedia | System. ObjectThe novo item de mídia atual. Você pode convertê-lo em uma interface IWMPMedia para acessá-lo.<br/> |
+| pdispMedia | System.ObjectO novo item de mídia atual. Você pode castiá-lo em uma interface IWMPMedia para acessá-la.<br/> |
 
 
 
@@ -55,7 +55,7 @@ O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra um manipulador de eventos para o evento CurrentItemChange. O objeto AxWMPLib. AxWindowsMediaPlayer é representado pela variável chamada Player.
+O exemplo a seguir demonstra um manipulador de eventos para o evento CurrentItemChange. O objeto AxWMPLib.AxWindowsMediaPlayer é representado pela variável chamada player.
 
 
 ```CSharp
@@ -90,7 +90,7 @@ End Sub
 
 | Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                          |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                          |
 | Namespace<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -103,7 +103,7 @@ End Sub
 [**Objeto AxWindowsMediaPlayer (VB e C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. currentItem (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-currentitem--vb-and-c.md)
+[**IWMPControls.currentItem (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-currentitem--vb-and-c.md)
 </dt> <dt>
 
 [**Interface IWMPMedia (VB e C#)**](iwmpmedia--vb-and-c.md)

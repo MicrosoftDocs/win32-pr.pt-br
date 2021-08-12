@@ -1,12 +1,12 @@
 ---
-title: Método SetName da classe Win32_SessionDirectoryVMMPlugin
+title: Método SetName da classe Win32_SessionDirectoryVMMPlugin classe
 description: Define o nome do plug-in.
 ms.assetid: 8af4abca-f147-4027-91fb-4d669b58caa4
 ms.tgt_platform: multiple
 keywords:
 - Método SetName Serviços de Área de Trabalho Remota
-- Método SetName Serviços de Área de Trabalho Remota, classe Win32_SessionDirectoryVMMPlugin
-- Classe Win32_SessionDirectoryVMMPlugin Serviços de Área de Trabalho Remota, método SetName
+- Método SetName Serviços de Área de Trabalho Remota , Win32_SessionDirectoryVMMPlugin classe
+- Win32_SessionDirectoryVMMPlugin classe Serviços de Área de Trabalho Remota , método SetName
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2dc9902e8d5931f0800dc6c62d36815f4f78db73
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6960d08f39e7ce026a36d1644bebf49aec292a44d900974ebd8481379b00dcf0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118604635"
 ---
-# <a name="setname-method-of-the-win32_sessiondirectoryvmmplugin-class"></a>Método SetName da classe Win32 \_ SessionDirectoryVMMPlugin
+# <a name="setname-method-of-the-win32_sessiondirectoryvmmplugin-class"></a>Método SetName da classe \_ SessionDirectoryVMMPlugin do Win32
 
 Define o nome do plug-in.
 
@@ -43,16 +43,16 @@ uint32 SetName(
 
 <dl> <dt>
 
-*sname* \[ no\]
+*sName* \[ Em\]
 </dt> <dd>
 
 O nome do plug-in.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md) para obter uma lista desses valores.
+Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Consulte Serviços de Área de Trabalho Remota códigos de erro do provedor [WMI](terminal-services-wmi-provider-error-codes.md) para ver uma lista desses valores.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,8 +62,8 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Co
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2<br/>                                                      |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 
@@ -72,7 +72,7 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Co
 
 <dl> <dt>
 
-[**\_SessionDirectoryVMMPlugin Win32**](win32-sessiondirectoryvmmplugin.md)
+[**\_SessionDirectoryVMMPlugin do Win32**](win32-sessiondirectoryvmmplugin.md)
 </dt> </dl>
 
  

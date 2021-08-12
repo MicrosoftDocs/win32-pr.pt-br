@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2472630d69119f33653d831386af615718274d99
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c3c90587cbd0a9cc9b0abed834db68de3edac6f73d98dac3c8bb283e77f978fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118654842"
 ---
 # <a name="ctransinplaceinputpingetallocator-method"></a>Método CTransInPlaceInputPin. getalocador
 
@@ -57,7 +57,7 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tab
 
 | Código de retorno                                                                                          | Descrição                           |
 |------------------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                 | Sucesso.<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>                 | Êxito.<br/>                   |
 | <dl> <dt>**VFW \_ E \_ nenhum \_ alocador**</dt> </dl> | Nenhum alocador disponível.<br/> |
 
 
@@ -76,12 +76,12 @@ Se o pino de saída do filtro não estiver conectado, esse método criará um al
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>TRANSip. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Transip. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

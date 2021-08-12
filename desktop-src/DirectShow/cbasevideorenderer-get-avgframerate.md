@@ -1,7 +1,7 @@
 ---
-description: O \_ método Get AvgFrameRate calcula e recupera a taxa média de quadros obtida.
+description: O método \_ get AvgFrameRate calcula e recupera a taxa média de quadros obtida.
 ms.assetid: f36fc020-8c1a-491f-9f55-18265fde8bf8
-title: Método de CBaseVideoRenderer.get_AvgFrameRate (Renbase. h)
+title: CBaseVideoRenderer.get_AvgFrameRate método (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 56d8fff53f3d56676805eca9029670d51210ef2b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 79aab0677cfd5cba5f6a889519e0c12ed2236d8f82eca28b3fa7b227b941b2b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658779"
 ---
-# <a name="cbasevideorendererget_avgframerate-method"></a>CBaseVideoRenderer. obter \_ método AvgFrameRate
+# <a name="cbasevideorendererget_avgframerate-method"></a>Método CBaseVideoRenderer.get \_ AvgFrameRate
 
 O `get_AvgFrameRate` método calcula e recupera a taxa média de quadros obtida.
 
@@ -49,13 +49,13 @@ Ponteiro para o número de quadros por segundo desde o início do streaming.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** .
+Retorna um **valor HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Essa função de membro implementa o método [**IQualProp:: get \_ AvgFrameRate**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-iqualprop-get_avgframerate) .
+Essa função membro implementa o [**método IQualProp::get \_ AvgFrameRate.**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-iqualprop-get_avgframerate)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Essa função de membro implementa o método [**IQualProp:: get \_ AvgFrameRate*
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Renbase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Renbase.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

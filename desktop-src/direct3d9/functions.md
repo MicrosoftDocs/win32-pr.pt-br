@@ -1,21 +1,21 @@
 ---
-description: Uma função é o bloco de construção de um sombreador criado na linguagem de alto nível. Se você preferir escrever sombreadores em uma linguagem em estilo C em vez de em linguagem de assembly, convém escrever funções.
+description: Uma função é o bloco de construção para um sombreador criado no idioma de alto nível. Se você preferir escrever sombreadores em uma linguagem de estilo C em vez de na linguagem de assembly, será melhor escrever funções.
 ms.assetid: vs|directx_sdk|~\functions.htm
-title: Sintaxe da função de efeito (Direct3D 9)
+title: Sintaxe da função Effect (Direct3D 9)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 21e239359877813e64acea8b5f404a6ade59c992
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7b9de680f2f892e59f49e1dfd0850a128ca9ba34e2588e416059251d5058c44c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118297104"
 ---
-# <a name="effect-function-syntax-direct3d-9"></a>Sintaxe da função de efeito (Direct3D 9)
+# <a name="effect-function-syntax-direct3d-9"></a>Sintaxe da função Effect (Direct3D 9)
 
-Uma função é o bloco de construção de um sombreador criado na linguagem de alto nível. Se você preferir escrever sombreadores em uma linguagem em estilo C em vez de em linguagem de assembly, convém escrever funções.
+Uma função é o bloco de construção para um sombreador criado no idioma de alto nível. Se você preferir escrever sombreadores em uma linguagem de estilo C em vez de na linguagem de assembly, será melhor escrever funções.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```
@@ -25,20 +25,20 @@ type id ( [ parameters ] )
 
 
 
-As funções não alteram valores de parâmetro em um efeito.
+As funções não alteram os valores de parâmetro em um efeito.
 
--   tipo-qualquer [referência válida para](../direct3dhlsl/dx-graphics-hlsl-reference.md) o tipo HLSL.
--   ID-um nome exclusivo.
--   parâmetros-parâmetros de função.
--   corpo-o corpo da função.
+-   type – qualquer [Referência válida para o tipo HLSL.](../direct3dhlsl/dx-graphics-hlsl-reference.md)
+-   id – um nome exclusivo.
+-   parâmetros – parâmetros de função.
+-   corpo – o corpo da função.
 
-As funções são criadas a partir da linguagem de alto nível. Consulte [a referência para HLSL](../direct3dhlsl/dx-graphics-hlsl-reference.md).
+As funções são criadas com base na linguagem de alto nível. Consulte [Referência para HLSL.](../direct3dhlsl/dx-graphics-hlsl-reference.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Formato do efeito](dx9-graphics-reference-effects-file-format.md)
+[Formato de efeito](dx9-graphics-reference-effects-file-format.md)
 </dt> </dl>
 
  

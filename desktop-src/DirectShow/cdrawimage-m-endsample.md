@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 78268e8335d6dd8c24497a9e4d74b0caab205a99
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2877e709cb7d0d8a259dfa91e1ebe3b723771493e012bf29eef0fffe1c7eaeaa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118656979"
 ---
 # <a name="cdrawimagem_endsample-member"></a>Membro de exemplo endCDrawImage:: m \_
 
@@ -46,7 +46,7 @@ O valor só é válido dentro do método [**CDrawImage::D isplaysampletimes**](c
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

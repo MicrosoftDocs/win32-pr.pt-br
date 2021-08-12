@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7907640a9641cff3c94475318bf499415b25184
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6179c87e6566a18f2c47046007a17c6073a51e0afcdce4925b50d327adf528f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105766942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118605113"
 ---
 # <a name="setbasevhdpath-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método SetBaseVHDPath da classe Win32 \_ RDMSDeploymentSettings
 
@@ -50,7 +50,7 @@ O novo caminho de implantação do VHD.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 

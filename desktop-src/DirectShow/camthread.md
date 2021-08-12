@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e5c2bde058267ae4c530f33a96778792d5fe247b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ca7182ecc16cd873732b2d39d2659f42017f9e01c1308642af4b8cac7ff2a682
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118662104"
 ---
 # <a name="camthread-class"></a>Classe CAMThread
 
@@ -39,9 +39,9 @@ A `CAMThread` classe é uma classe abstrata para gerenciar threads de trabalho.
 | [**CAMThread**](camthread-camthread.md)                   | Método de construtor.                                                          |
 | [**~ CAMThread**](camthread--camthread.md)                | Método destruidor. VirtuaisLUNs.                                                  |
 | [**InitialThreadProc**](camthread-initialthreadproc.md)   | Chama o método ThreadProc quando o thread é criado.                      |
-| [**Criar**](camthread-create.md)                         | Cria o thread.                                                          |
+| [**Criada**](camthread-create.md)                         | Cria o thread.                                                          |
 | [**CallWorker**](camthread-callworker.md)                 | Sinaliza o thread com uma solicitação.                                           |
-| [**Fechar**](camthread-close.md)                           | Aguarda até que o thread saia e, em seguida, libera seus recursos.                   |
+| [**Inclui**](camthread-close.md)                           | Aguarda até que o thread saia e, em seguida, libera seus recursos.                   |
 | [**ThreadExists**](camthread-threadexists.md)             | Consulta se o thread existe.                                           |
 | [**GetRequest**](camthread-getrequest.md)                 | Aguarda a próxima solicitação.                                                  |
 | [**CheckRequest**](camthread-checkrequest.md)             | Verifica se há uma solicitação, sem bloqueio.                              |
@@ -127,7 +127,7 @@ A `CAMThread` classe fornece duas seções críticas como variáveis de membro p
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxutil. h (incluir fluxos. h)</dt> </dl>                                                                                    |
+| parâmetro<br/>  | <dl> <dt>Wxutil. h (incluir Fluxos. h)</dt> </dl>                                                                                    |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

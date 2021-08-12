@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: classe EsentPageNotInitializedException'
+description: 'Saiba mais sobre: Classe EsentPageNotInitializedException'
 title: Classe EsentPageNotInitializedException
 TOCTitle: EsentPageNotInitializedException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentPageNotInitializedException
@@ -24,31 +24,31 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c349560498993d0920f344ef716835afa8fb62c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a46a72b09ab440bfcfb7170281ac77f63aaeaa27a267076ea29414428af62fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297168"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118261303"
 ---
 # <a name="esentpagenotinitializedexception-class"></a>Classe EsentPageNotInitializedException
 
-Classe base para JET_err. PageNotInitialized exceções.
+Classe base para JET_err. Exceções PageNotInitialized.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. ESENT. Interop. EsentDataException](./esentdataexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentCorruptionException](./esentcorruptionexception-class.md)  
-            Microsoft. ISAM. ESENT. Interop. EsentPageNotInitializedException  
+  [System.Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentDataException](./esentdataexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentCorruptionException](./esentcorruptionexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentPageNotInitializedException  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` vb
 'Declaration
@@ -72,6 +72,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentPageNotInitializedException](./esentpagenotinitializedexception-members.md)
+[Membros EsentPageNotInitializedException](./esentpagenotinitializedexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

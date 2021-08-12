@@ -1,7 +1,7 @@
 ---
-description: O próximo método recupera a próxima posição na lista.
+description: O método Next recupera a próxima posição na lista.
 ms.assetid: ba9753b0-c82e-4772-84a7-e9982de3b8ad
-title: Método CBaseList. Next (Wxlist. h)
+title: Método CBaseList.Next (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f8a09ec91191437fbfb851ce92824b118a5440ca
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d07030c046f3fe55178707af297542f383bfd5cf75f40169b5c93cfafa1c698b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105769248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658952"
 ---
-# <a name="cbaselistnext-method"></a>Método CBaseList. Next
+# <a name="cbaselistnext-method"></a>Método CBaseList.Next
 
 O `Next` método recupera a próxima posição na lista.
 
@@ -45,17 +45,17 @@ POSITION Next(
 *pos* 
 </dt> <dd>
 
-Valor da posição.
+Valor POSITION.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o indicador de posição que segue a posição especificada pelo *PDV*.
+Retorna o indicador de posição que segue a posição especificada por *pos.*
 
 ## <a name="remarks"></a>Comentários
 
-Se *pos* for a última posição na lista, o método retornará **NULL**. Se o *PDV* for **nulo**, o método retornará a primeira posição na lista.
+Se *pos* for a última posição na lista, o método retornará **NULL.** Se *pos* for **NULL,** o método retornará a primeira posição na lista.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Se *pos* for a última posição na lista, o método retornará **NULL**. Se o *
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxlist. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxlist.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

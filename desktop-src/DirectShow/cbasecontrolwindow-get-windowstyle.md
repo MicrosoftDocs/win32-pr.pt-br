@@ -1,7 +1,7 @@
 ---
-description: O \_ método Get WindowStyle recupera os estilos de janela padrão.
+description: O método \_ get WindowStyle recupera os estilos de janela padrão.
 ms.assetid: 5c204814-5c7c-47e2-95dd-86455ed77cc7
-title: Método de CBaseControlWindow.get_WindowStyle (Ctlutil. h)
+title: CBaseControlWindow.get_WindowStyle método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 91e04efac3a67c262b4eeb85948f846dbb06086a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e9356b449adbb4ee760ec70990c4db0b6703c16e9d0970f2756bac23907b1bfb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118660255"
 ---
-# <a name="cbasecontrolwindowget_windowstyle-method"></a>CBaseControlWindow. obter \_ método WindowStyle
+# <a name="cbasecontrolwindowget_windowstyle-method"></a>Método CBaseControlWindow.get \_ WindowStyle
 
 O `get_WindowStyle` método recupera os estilos de janela padrão.
 
@@ -49,13 +49,13 @@ Ponteiro para estilos de janela.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** .
+Retorna um **valor HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Essa função de membro retorna os estilos de janela padrão, como WS \_ Child e WS \_ Visible. Ele chama a função de membro [**CBaseControlWindow::D ogetwindowstyle**](cbasecontrolwindow-dogetwindowstyle.md) .
+Essa função membro retorna os estilos de janela padrão, como WS \_ CHILD e WS \_ VISIBLE. Ele chama a função de membro [**CBaseControlWindow::D oGetWindowStyle.**](cbasecontrolwindow-dogetwindowstyle.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Essa função de membro retorna os estilos de janela padrão, como WS \_ Child e
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

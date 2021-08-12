@@ -1,7 +1,7 @@
 ---
-description: 'CBaseMediaFilter:: m_tStart tempo de referência de membro que corresponde ao tempo de fluxo 0.'
+description: Membro CBaseMediaFilter::m_tStart - Tempo de referência que corresponde ao tempo de fluxo 0.
 ms.assetid: e80d2fe0-48fb-494e-9450-b5cae2ec9c9f
-title: 'Membro CBaseMediaFilter:: m_tStart (Amfilter. h)'
+title: Membro CBaseMediaFilter::m_tStart (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: bdea1f0cdf804c870a712991a09b2a8325d3c34e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a30467af33f2e77fdb51d9feaabadb3b4669cd5e93e7570e75f4fbcf4c3e72fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658889"
 ---
-# <a name="cbasemediafilterm_tstart-member"></a>Membro de CBaseMediaFilter:: m \_ tStart
+# <a name="cbasemediafilterm_tstart-member"></a>Membro CBaseMediaFilter::m \_ tStart
 
 Tempo de referência que corresponde ao tempo de fluxo 0.
 
@@ -42,12 +42,12 @@ CRefTime m_tStart;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

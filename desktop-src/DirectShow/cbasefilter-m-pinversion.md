@@ -1,7 +1,7 @@
 ---
-description: Versão atual do conjunto de Pins neste filtro.
+description: Versão atual do conjunto de pinos nesse filtro.
 ms.assetid: c748d62a-a725-43a0-b5f4-b14ae9e6ef2c
-title: 'Membro CBaseFilter:: m_PinVersion (Amfilter. h)'
+title: Membro CBaseFilter::m_PinVersion (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 15936bc37ff4c1c02077ad65d6700cdbdf1dbe8d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: aef93f49119573d7c6fdacba3ba3796bea6fe3fafdf8b631bcf694e7b68fc433
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118659950"
 ---
-# <a name="cbasefilterm_pinversion-member"></a>Membro de CBaseFilter:: m \_ PinVersion
+# <a name="cbasefilterm_pinversion-member"></a>Membro pinVersion CBaseFilter::m \_
 
-Versão atual do conjunto de Pins neste filtro.
+Versão atual do conjunto de pinos nesse filtro.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -42,8 +42,8 @@ long m_PinVersion;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

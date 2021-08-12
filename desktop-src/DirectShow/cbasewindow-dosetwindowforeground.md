@@ -1,7 +1,7 @@
 ---
-description: O método DoSetWindowForeground traz a janela para o primeiro plano.
+description: O método DoSetWindowForeground leva a janela para o primeiro plano.
 ms.assetid: 5aace88b-14c0-41ce-95a3-0e255ca56ae6
-title: Método CBaseWindow. DoSetWindowForeground (Winutil. h)
+title: Método CBaseWindow.DoSetWindowForeground (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 16a4c8bf41c042c99624289fa26fe252dee62747
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4f0d0dd99f5e2c5e5afffb78066a9380c56f744a4ba54b64bf987df15ea58862
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658015"
 ---
-# <a name="cbasewindowdosetwindowforeground-method"></a>Método CBaseWindow. DoSetWindowForeground
+# <a name="cbasewindowdosetwindowforeground-method"></a>Método CBaseWindow.DoSetWindowForeground
 
 O `DoSetWindowForeground` método leva a janela para o primeiro plano.
 
@@ -45,11 +45,11 @@ void DoSetWindowForeground(
 *bFocus* 
 </dt> <dd>
 
-Valor booliano que especifica se o foco da janela deve ser fornecido. Se o valor for **true**, a janela ganha foco.
+Valor booliana que especifica se o foco da janela deve ser determinado. Se o valor for **TRUE,** a janela obtém o foco.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -59,8 +59,8 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

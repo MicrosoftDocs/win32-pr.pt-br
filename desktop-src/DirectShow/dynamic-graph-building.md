@@ -1,17 +1,17 @@
 ---
-description: Criação de grafo dinâmico
+description: criação de Graph dinâmico
 ms.assetid: 13fed430-979b-40f7-91ba-aff2d811bd92
-title: Criação de grafo dinâmico
+title: criação de Graph dinâmico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 710bf5f648fc91e8db6bf62d81b41327f874ddf7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f8c7296b95bc97461eb5a16ee577acb4bd267ee1a25f9be357a00fef7d4bdba5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105785352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118652786"
 ---
-# <a name="dynamic-graph-building"></a>Criação de grafo dinâmico
+# <a name="dynamic-graph-building"></a>criação de Graph dinâmico
 
 Se você precisar modificar um grafo de filtro existente, poderá parar o grafo, fazer as alterações e reiniciar o grafo. Normalmente, essa é a melhor abordagem. No entanto, em algumas circunstâncias, talvez você queira alterar um grafo enquanto ele ainda estiver em execução. Por exemplo:
 
@@ -29,7 +29,7 @@ Esses são exemplos de *criação de grafo dinâmico*, um termo que cobre qualqu
 
 <dl> <dt>
 
-[Sobre o DirectShow](about-directshow.md)
+[Sobre DirectShow](about-directshow.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Tipo complexo datadefinitiontype
-description: Define um item de dados que você deseja incluir com o evento. | Tipo complexo datadefinitiontype
+title: Tipo complexo DataDefinitionType
+description: Define um item de dados que você deseja incluir com o evento . | Tipo complexo DataDefinitionType
 ms.assetid: f4234e54-a5a8-48e4-941f-05107dcd3f88
 keywords:
-- Log de eventos de tipo complexo datadefinitiontype
+- Tipo complexo DataDefinitionType EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 19584c28a7bdf7ae01b87d1f414b9464b7b4271d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: fa492acf00740b0df9b761c40797ec05feb5b2e38b84ec0682296dd845cbe613
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105781482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118589601"
 ---
-# <a name="datadefinitiontype-complex-type"></a>Tipo complexo datadefinitiontype
+# <a name="datadefinitiontype-complex-type"></a>Tipo complexo DataDefinitionType
 
-Define um item de dados que você deseja incluir com o evento.
+Define um item de dados que você deseja incluir com o evento .
 
 ``` syntax
 <xs:complexType name="DataDefinitionType"
@@ -85,21 +85,21 @@ Define um item de dados que você deseja incluir com o evento.
 <tbody>
 <tr class="odd">
 <td>count</td>
-<td><a href="eventmanifestschema-counttype-simpletype.md"><strong>Número de contagem</strong></a></td>
+<td><a href="eventmanifestschema-counttype-simpletype.md"><strong>CountType</strong></a></td>
 <td>O número de elementos na matriz se o item de dados for uma matriz. Você pode especificar a contagem real ou o nome de outro item de dados que contém a contagem. <br/></td>
 </tr>
 <tr class="even">
-<td>intipo</td>
+<td>inType</td>
 <td><strong>QName</strong></td>
-<td>O tipo de dados para este item de dados. Para obter uma lista de tipos de dados de entrada predefinidos, consulte o tipo complexo <a href="eventmanifestschema-inputtype-complextype.md"><strong>InputType</strong></a> .<br/></td>
+<td>O tipo de dados para este item de dados. Para ver uma lista de tipos de dados de entrada predefinidos, consulte o <a href="eventmanifestschema-inputtype-complextype.md"><strong>tipo complexo InputType.</strong></a><br/></td>
 </tr>
 <tr class="odd">
 <td>comprimento</td>
-<td><a href="eventmanifestschema-lengthtype-simpletype.md"><strong>Comprimentotype</strong></a></td>
-<td>O comprimento de um item de dados de comprimento variável, como um blob binário. Para dados binários, especifique o comprimento em bytes e para dados de cadeia de caracteres, especifique o comprimento em caracteres. Você pode especificar o comprimento real ou o nome de outro item de dados que contém o comprimento.<br/> Se você usar o atributo Length para especificar uma cadeia de caracteres de comprimento fixo, será necessário preencher a cadeia de caracteres para seu comprimento fixo, permitindo o caractere de terminador nulo no final (por exemplo, se o comprimento for 5, a cadeia de caracteres &quot; ABC &quot; deverá ser preenchida como &quot; ABC &quot; . O comprimento da cadeia de caracteres deve incluir o caractere de terminador nulo.<br/></td>
+<td><a href="eventmanifestschema-lengthtype-simpletype.md"><strong>LengthType</strong></a></td>
+<td>O comprimento de um item de dados de comprimento variável, como um blob binário. Para dados binários, especifique o comprimento em bytes e, para dados de cadeia de caracteres, especifique o comprimento em caracteres. Você pode especificar o tamanho real ou o nome de outro item de dados que contém o comprimento.<br/> Se você usar o atributo length para especificar uma cadeia de caracteres de comprimento fixo, deverá padilhar a cadeia de caracteres para seu comprimento fixo, permitindo o caractere de terminador nulo no final (por exemplo, se o comprimento for 5, a cadeia de caracteres abc deverá ser &quot; &quot; padded como &quot; &quot; abc. O comprimento da cadeia de caracteres deve incluir o caractere de terminador nulo.<br/></td>
 </tr>
 <tr class="even">
-<td>mapa</td>
+<td>map</td>
 <td>string</td>
 <td>O nome do mapa de nome/valor a ser usado para mapear valores inteiros para cadeias de caracteres. O tipo de dados do item de dados deve ser de um dos seguintes tipos:<br/>
 <ul>
@@ -111,12 +111,12 @@ Define um item de dados que você deseja incluir com o evento.
 <tr class="odd">
 <td>name</td>
 <td>string</td>
-<td>O nome do item de dados. Você pode usar o nome para fazer referência a este item de dados no fragmento XML se especificar uma seção <a href="eventmanifestschema-userdata-templateitemtype-element.md"><strong>UserData</strong></a> em seu modelo. Você também pode referenciar esse nome em um atributo Length ou Count de outro item de dados se esse item de dados contiver seu comprimento ou valor de contagem.<br/> <strong>Windows Vista:</strong> Esse atributo é opcional.<br/></td>
+<td>O nome do item de dados. Você pode usar o nome para referenciar esse item de dados em seu fragmento XML se especificar uma <a href="eventmanifestschema-userdata-templateitemtype-element.md"><strong>seção UserData</strong></a> em seu modelo. Você também poderá referenciar esse nome em um atributo de comprimento ou contagem de outro item de dados se esse item de dados contiver seu comprimento ou valor de contagem.<br/> <strong>Windows Vista:</strong> Esse atributo é opcional.<br/></td>
 </tr>
 <tr class="even">
-<td>outtipo</td>
+<td>outType</td>
 <td><strong>QName</strong></td>
-<td>O tipo de dados a ser usado ao renderizar este item de dados. Para obter uma lista de tipos de dados de saída predefinidos, consulte o tipo de <a href="eventmanifestschema-outputtype-complextype.md"><strong>saída</strong></a> complexo.<br/> <strong>Windows Vista:</strong> O tipo de saída é ignorado e o serviço determina o tipo com base no tipo de entrada.<br/></td>
+<td>O tipo de dados a ser usado ao renderizar esse item de dados. Para ver uma lista de tipos de dados de saída predefinidos, consulte o <a href="eventmanifestschema-outputtype-complextype.md"><strong>tipo complexo OutputType.</strong></a><br/> <strong>Windows Vista:</strong> O tipo de saída é ignorado e o serviço determina o tipo com base no tipo de entrada.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -125,11 +125,11 @@ Define um item de dados que você deseja incluir com o evento.
 
 ## <a name="remarks"></a>Comentários
 
-Para tipos de entrada de comprimento variável, como blobs binários, você deve usar o atributo Length para especificar explicitamente o tamanho dos dados. Para cadeias de caracteres, especifique o atributo Length somente se as cadeias de caracteres tiverem um comprimento fixo.
+Para tipos de entrada de comprimento variável, como blobs binários, você deve usar o atributo length para especificar explicitamente o tamanho dos dados. Para cadeias de caracteres, especifique o atributo length somente se as cadeias de caracteres são de um comprimento fixo.
 
 ## <a name="examples"></a>Exemplos
 
-Veja a seguir alguns exemplos das definições de item de dados.
+A seguir estão alguns exemplos das definições de item de dados.
 
 
 ```XML
@@ -209,8 +209,8 @@ Veja a seguir alguns exemplos das definições de item de dados.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

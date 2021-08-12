@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 16c3d4257d89ebb8d0efb6dadcd3ac466b929c9a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0acd4bafa6033e461b69180862a8302e76f363b581d7f06b0812824f2031780b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105813038"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118612049"
 ---
 # <a name="eventtriggertype-complex-type"></a>Tipo complexo eventTriggertype
 
@@ -55,7 +55,7 @@ Define os elementos filho e as informações de sequenciamento para o elemento [
 
 | Elemento                                                                           | Type                                                                    | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Retardo**](taskschedulerschema-delay-eventtriggertype-element.md)               | duration                                                                | Especifica a quantidade de tempo entre o momento em que o evento ocorre e quando a tarefa é iniciada.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| [**Atrasar**](taskschedulerschema-delay-eventtriggertype-element.md)               | duration                                                                | Especifica a quantidade de tempo entre o momento em que o evento ocorre e quando a tarefa é iniciada.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | [**Subscription**](taskschedulerschema-subscription-eventtriggertype-element.md) | [**não vazio**](taskschedulerschema-nonemptystring-simpletype.md) | Especifica a consulta XPath que identifica o evento que dispara o gatilho.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | [**ValueQueries**](taskschedulerschema-valuequeries-eventtriggertype-element.md) | [**namedValues**](taskschedulerschema-namedvalues-complextype.md)      | Especifica uma sequência de elementos que cada um contém um nome e um valor de consulta XPath. As consultas são aplicadas a um evento retornado da assinatura de evento especificada no elemento [**Subscription**](taskschedulerschema-subscription-eventtriggertype-element.md) . O nome para o valor de consulta XPath pode ser usado como uma variável no elemento [**Body**](taskschedulerschema-body-showmessagetype-element.md) na seção de ação de " [**exmessage**](taskschedulerschema-showmessage-actiongroup-element.md) " de uma tarefa. <br/> |
 
@@ -71,8 +71,8 @@ Além do elemento filho definido aqui, o elemento [**EventTrigger**](taskschedul
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

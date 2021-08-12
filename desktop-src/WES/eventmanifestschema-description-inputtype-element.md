@@ -1,9 +1,9 @@
 ---
-title: Elemento Description (InputType)
+title: Elemento description (InputType)
 description: Uma descrição do tipo de entrada.
 ms.assetid: f7d534d6-3477-4868-ab94-d4713222acf2
 keywords:
-- elemento de descrição EventLog
+- elemento description EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 11ea044efc9e9a0ed54d31ad98614c1c4ba8fa06
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4b501de2b1232da479006f31974ed44b8c8ba5e595c14840a25d28e265f2ce6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118589611"
 ---
-# <a name="description-inputtype-element"></a>Elemento Description (InputType)
+# <a name="description-inputtype-element"></a>Elemento description (InputType)
 
 Uma descrição do tipo de entrada.
 
@@ -30,7 +30,7 @@ Uma descrição do tipo de entrada.
  />
 ```
 
-O elemento **Description** é definido pelo tipo complexo [**InputType**](eventmanifestschema-inputtype-complextype.md) .
+O **elemento description** é definido pelo tipo complexo [**InputType.**](eventmanifestschema-inputtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **Description** é definido pelo tipo complexo [**InputType**](eventm
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ O elemento **Description** é definido pelo tipo complexo [**InputType**](eventm
 **Elemento pai**
 </dt> <dt>
 
-[**InType (InputTypeListType)**](eventmanifestschema-intype-inputtypelisttype-element.md)
+[**inType (InputTypeListType)**](eventmanifestschema-intype-inputtypelisttype-element.md)
 </dt> </dl>
 
  

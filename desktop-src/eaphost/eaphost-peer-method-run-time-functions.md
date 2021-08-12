@@ -4,12 +4,12 @@ description: Saiba mais sobre as funções de tempo de execução da API do mét
 ms.assetid: fdfa595d-acf7-4489-88a8-113093567fe5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cfde4adc8d509fcd5d67f9a33bd0617d605716db
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: eb3134a2b118b4bce4511e79d8d9ef58708f6b1c2bd7a93ed820fc16ec073914
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103823984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118275019"
 ---
 # <a name="eaphost-peer-method-run-time-functions"></a>Funções de Run-Time do método par do EAPHost
 
@@ -37,7 +37,7 @@ As funções de tempo de execução da API do método peer do EAP são as seguin
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -46,9 +46,9 @@ As funções de tempo de execução da API do método peer do EAP são as seguin
 [Funções de configuração do método de emparelhamento EAPHost](eaphost-peer-method-run-time-functions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

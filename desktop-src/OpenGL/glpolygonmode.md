@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23d133243c1655432842a939b8da0f3a981fdffd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f040b3e44ee34d819752bae5deffbf1a02f0d38ab1249f2e32de67c262bd5f2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105756394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118615202"
 ---
 # <a name="glpolygonmode-function"></a>função glPolygonMode
 
