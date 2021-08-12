@@ -1,11 +1,11 @@
 ---
-title: Método Network. setProxySettings
+title: Método Network.setProxySettings
 description: O método setProxySettings especifica a configuração de proxy para um determinado protocolo.
 ms.assetid: 473501c9-27ea-47ec-bc82-691804fbfb89
 keywords:
-- método setProxySettings Windows Media Player
-- método setProxySettings Windows Media Player, classe de rede
-- Classe de rede Windows Media Player, método setProxySettings
+- Método setProxySettings Windows Media Player
+- Método setProxySettings Windows Media Player , Classe de rede
+- Classe de Windows Media Player , método setProxySettings
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b3f3da665b07f717449721c9fb43a8733cdb6c1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6501d097a4ec342c2831e4b72bf8f17edc4e4e1bec02b2b51cd7840325674b88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763205"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118573854"
 ---
-# <a name="networksetproxysettings-method"></a>Método Network. setProxySettings
+# <a name="networksetproxysettings-method"></a>Método Network.setProxySettings
 
-O método **setProxySettings** especifica a configuração de proxy para um determinado protocolo.
+O **método setProxySettings** especifica a configuração de proxy para um determinado protocolo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,14 +43,14 @@ Network.setProxySettings(
 
 <dl> <dt>
 
-*protocolo* \[ do no\]
+*protocolo* \[ Em\]
 </dt> <dd>
 
-**Cadeia de caracteres** que especifica o nome do protocolo. Para obter uma lista de protocolos com suporte, consulte [protocolos e tipos de arquivos com suporte](supported-protocols-and-file-types.md).
+**Cadeia de** caracteres que especifica o nome do protocolo. Para ver uma lista de protocolos com suporte, consulte [Protocolos com suporte e tipos de arquivo](supported-protocols-and-file-types.md).
 
 </dd> <dt>
 
-*configuração* \[ do no\]
+*configuração* \[ Em\]
 </dt> <dd>
 
 **Número** (**longo**) que contém um dos valores a seguir.
@@ -62,7 +62,7 @@ Network.setProxySettings(
 | 0     | Não use um servidor proxy.                                           |
 | 1     | Use as configurações de proxy do navegador atual (válido somente para HTTP). |
 | 2     | Use as configurações de proxy especificadas manualmente.                           |
-| 3     | Detectar automaticamente as configurações de proxy.                                      |
+| 3     | Detecte automaticamente as configurações de proxy.                                      |
 
 
 
@@ -76,13 +76,13 @@ Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método falha a menos que o aplicativo de chamada esteja em execução no computador local ou na intranet.
+Esse método falha, a menos que o aplicativo de chamada esteja em execução no computador local ou na intranet.
 
 **Windows Media Player 10 Mobile:** Não há suporte para esse método.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa JScript com um elemento HTML SELECT **para permitir que o usuário especifique a configuração de proxy do Windows Media Player para o protocolo http. O objeto de jogador** foi criado com ID = "Player".
+O exemplo a seguir usa JScript com um elemento HTML SELECT para permitir que o usuário especifique a **configuração Windows Media Player proxy para o protocolo HTTP. O objeto** Player foi criado com ID = "Player".
 
 
 ```JScript
@@ -112,7 +112,7 @@ O exemplo a seguir usa JScript com um elemento HTML SELECT **para permitir que o
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

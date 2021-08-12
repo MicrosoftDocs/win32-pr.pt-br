@@ -1,19 +1,19 @@
 ---
 description: A inclinação do lado direito do BoundingFrustum.
 ms.assetid: 0392a81b-610f-4199-b32d-40d862ba4652
-title: BoundingFrustum. RightSlope (DirectXCollision. h)
+title: BoundingFrustum.RightSlope (DirectXCollision.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c29b90a7cae1c50c2ab83a6e92cea62798c4e8d7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 68b32b37712b747c591b0f11433097ab046ad360411c2c9311457bda6e4b3595
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118278524"
 ---
 # <a name="boundingfrustumrightslope"></a>BoundingFrustum.RightSlope
 
-A inclinação do lado direito do [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum).
+A inclinação do lado direito do [**BoundingFrustum.**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)
 
 
 ```C++
@@ -27,7 +27,7 @@ public:
 
 ### <a name="platform-requirements"></a>Requisitos de plataforma
 
-Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. Com suporte para aplicativos de área de trabalho Win32, aplicativos da Windows Store e aplicativos Windows Phone 8.
+Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. Com suporte para aplicativos da área de trabalho Win32, aplicativos Windows Store e Windows Phone 8 aplicativos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,7 +35,7 @@ Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Window
 
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>DirectXCollision. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>DirectXCollision.h</dt> </dl> |
 
 
 

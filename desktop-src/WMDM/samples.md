@@ -1,9 +1,9 @@
 ---
 title: Exemplos de WMDM
-description: Saiba como compilar e executar esses exemplos no SDK do Windows Media Gerenciador de Dispositivos e como os exemplos funcionam.
+description: Saiba como compilar e executar esses exemplos no SDK do Windows Gerenciador de Dispositivos e como os exemplos funcionam.
 ms.assetid: 5e58ba53-3c3c-4492-8b87-7e50d10e655f
 keywords:
-- Windows Media Gerenciador de Dispositivos,exemplos
+- Windows Mídia Gerenciador de Dispositivos, exemplos
 - Gerenciador de Dispositivos,exemplos
 - aplicativos da área de trabalho, exemplos
 - provedores de serviços, exemplos
@@ -11,12 +11,12 @@ keywords:
 - exemplos, provedores de serviços
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf3ba0d7b91736940efe6b9f85e9f6043a721be1
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 4a513a70f7310d445be0dd159858412e3142d7cbd341e00dd63d06defb2ebd45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118584239"
 ---
 # <a name="wmdm-samples"></a>Exemplos de WMDM
 

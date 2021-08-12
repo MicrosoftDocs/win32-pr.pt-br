@@ -3,7 +3,7 @@ title: Mensagem de LB_DIR (WinUser. h)
 description: Adiciona nomes à lista exibida por uma caixa de listagem. A mensagem adiciona os nomes de diretórios e arquivos que correspondem a uma cadeia de caracteres especificada e um conjunto de atributos de arquivo. \_O diretório lb também pode adicionar letras de unidade mapeadas à caixa de listagem.
 ms.assetid: 5ec134e9-fe42-4cc0-bdea-fa5e66c218f6
 keywords:
-- Controles de LB_DIR de mensagens do Windows
+- controles de Windows de mensagem de LB_DIR
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80abddbce13adec2e66824057fc5e873def306ad
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f3add3c0ea14c637e0240ab296095bcc720aff9efb4c3e8e99a2f3de7019a711
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118671662"
 ---
 # <a name="lb_dir-message"></a>Mensagem de dir. LB \_
 
@@ -62,7 +62,7 @@ Se a cadeia de caracteres especificar um nome de arquivo ou diretório que tenha
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a mensagem tiver sucesso, o valor de retorno será o índice de base zero do sobrenome adicionado à lista.
 
@@ -76,7 +76,7 @@ Se *wParam* incluir o \_ sinalizador de diretório DDL e *lParam* especificar to
 
 A lista exibe nomes de FileName longos, se houver.
 
-Para um aplicativo ANSI, o sistema converte o texto em uma caixa de listagem para Unicode usando CP \_ ACP. Isso pode causar problemas. Por exemplo, caracteres romanos acentuados em uma caixa de listagem não-Unicode no Windows em Japonês ficarão confusos. Para corrigir isso, compile o aplicativo como Unicode ou use uma caixa de listagem desenhada pelo proprietário.
+Para um aplicativo ANSI, o sistema converte o texto em uma caixa de listagem para Unicode usando CP \_ ACP. Isso pode causar problemas. por exemplo, caracteres romanos acentuados em uma caixa de listagem não-Unicode em japonês Windows ficarão confusos. Para corrigir isso, compile o aplicativo como Unicode ou use uma caixa de listagem desenhada pelo proprietário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,9 +84,9 @@ Para um aplicativo ANSI, o sistema converte o texto em uma caixa de listagem par
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| parâmetro<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

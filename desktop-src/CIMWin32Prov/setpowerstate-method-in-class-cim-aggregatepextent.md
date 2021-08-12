@@ -1,8 +1,8 @@
 ---
-description: Método SetPowerState da classe CIM_AggregatePExtent-o método SetPowerState define o estado de energia desejado para um dispositivo lógico e quando o dispositivo deve ser colocado nesse estado.
+description: Método SetPowerState da classe CIM_AggregatePExtent - O método SetPowerState define o estado de energia desejado para um dispositivo lógico e quando o dispositivo deve ser colocado nesse estado.
 ms.assetid: 1a1a8d5e-d685-4b7e-99fb-61fa2e7bdafa
 ms.tgt_platform: multiple
-title: Método SetPowerState da classe CIM_AggregatePExtent
+title: Método SetPowerState da classe CIM_AggregatePExtent classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5ed988e5f58464479aa29d709eb628feb13f0d1c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 56d9f6c34ec1eb98d89c27eb0ebf90ad792f0237eb0b716d5ccb1d4ce2927c7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118675747"
 ---
-# <a name="setpowerstate-method-of-the-cim_aggregatepextent-class"></a>Método SetPowerState da classe CIM \_ AggregatePExtent
+# <a name="setpowerstate-method-of-the-cim_aggregatepextent-class"></a>Método SetPowerState da classe \_ AGGREGATEPExtent do CIM
 
-O método **SetPowerState** define o estado de energia desejado para um dispositivo lógico e quando o dispositivo deve ser colocado nesse estado. Em uma subclasse, o conjunto de códigos de retorno possíveis deve ser especificado usando um qualificador **ValueMap** no método. As cadeias de caracteres nas quais o conteúdo de **ValueMap** são traduzidos também devem ser especificadas na subclasse como um qualificador de matriz de **valores** . Esse método é herdado [**do \_ LogicalDevice CIM**](cim-logicaldevice.md).
+O **método SetPowerState** define o estado de energia desejado para um dispositivo lógico e quando o dispositivo deve ser colocado nesse estado. Em uma subclasse, o conjunto de códigos de retorno possíveis deve ser especificado usando um qualificador **ValueMap** no método . As cadeias de caracteres para as quais o conteúdo **valueMap** são convertidos também devem ser especificadas na subclasse como um qualificador de matriz **Valores.** Esse método é herdado [**de CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
-Para obter mais informações sobre como usar esse método com C/C++, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Para obter mais informações sobre como usar esse método com C/C++, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) modelo CIM DMTF são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -48,38 +48,38 @@ uint32 SetPowerState(
 
 <dl> <dt>
 
-*PowerState* \[ no\]
+*PowerState* \[ Em\]
 </dt> <dd>
 
-O valor de **ValueMap** que especifica o estado de energia desejado para esse dispositivo lógico.
+O **valor ValueMap** que especifica o estado de energia desejado para esse dispositivo lógico.
 
 <dt>
 
 1
 </dt> <dd>
 
-Potência total
+Energia total
 
 </dd> <dt>
 
 2
 </dt> <dd>
 
-Economia de energia – modo de baixa energia
+Economia de energia no modo de baixa energia
 
 </dd> <dt>
 
 3
 </dt> <dd>
 
-Energia-salvar em espera
+Power-save em espera
 
 </dd> <dt>
 
 4
 </dt> <dd>
 
-Salvar outra energia
+Power-save other
 
 </dd> <dt>
 
@@ -97,22 +97,22 @@ Desligar
 
 </dd> </dl> </dd> <dt>
 
-*Tempo* \[ no\]
+*Hora* \[ Em\]
 </dt> <dd>
 
-Quando o estado de energia deve ser definido, seja como um valor de data/hora regular ou como um valor de intervalo (em que o intervalo começa quando a invocação do método é recebida). Quando o parâmetro *PowerState* é igual a 5 (ciclo de energia), o parâmetro *time* indica quando o dispositivo deve ligar novamente. A desligamento é imediata.
+Quando o estado de energia deve ser definido, como um valor de data/hora regular ou como um valor de intervalo (em que o intervalo começa quando a invocação do método é recebida). Quando o *parâmetro PowerState* é igual a 5 (ciclo de energia), o parâmetro *Time* indica quando o dispositivo deve ser a energia novamente. A desligar é imediata.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retornará 0 (zero) se for bem-sucedido, 1 (um) se o *PowerState* e a solicitação de *tempo* especificados não forem suportados e outro valor se ocorrer algum outro erro.
+Retornará 0 (zero) se for bem-sucedido, 1  (um) se a solicitação *PowerState* e Hora especificadas não tiver suporte e outro valor se qualquer outro erro ocorrer.
 
 ## <a name="remarks"></a>Comentários
 
-Este método não está implementado no momento pelo WMI. Para usar esse método, você deve implementá-lo em seu próprio provedor.
+Atualmente, esse método não é implementado pelo WMI. Para usar esse método, você deve implementá-lo em seu próprio provedor.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -122,8 +122,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -132,10 +132,10 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**\_AGGREGATEPEXTENT CIM**](setpowerstate-method-in-class-cim-aggregatepextent.md)
+[**CIM \_ AggregatePExtent**](setpowerstate-method-in-class-cim-aggregatepextent.md)
 </dt> <dt>
 
-[**\_AGGREGATEPEXTENT CIM**](cim-aggregatepextent.md)
+[**CIM \_ AggregatePExtent**](cim-aggregatepextent.md)
 </dt> </dl>
 
  

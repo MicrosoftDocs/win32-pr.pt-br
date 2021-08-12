@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LVM_GETSELECTIONMARK (commctrl. h)
-description: Recupera a marca de seleção de um controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usar a \_ macro GetSelectionMark do ListView.
+title: LVM_GETSELECTIONMARK mensagem (Commctrl.h)
+description: Recupera a marca de seleção de um controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usar a \_ macro ListView GetSelectionMark.
 ms.assetid: 21daf7d7-1217-4608-93f9-c390546f1591
 keywords:
-- Controles de LVM_GETSELECTIONMARK de mensagens do Windows
+- LVM_GETSELECTIONMARK controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 076aff15ff69c4b442c74022ed5a7c02b92a8c52
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ed2675550ebc4cf456b439a2e5869068e983f46c82bf6fdde99d8b92806e6cac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105753966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118670974"
 ---
-# <a name="lvm_getselectionmark-message"></a>\_Mensagem GETSELECTIONMARK LVM
+# <a name="lvm_getselectionmark-message"></a>Mensagem LVM \_ GETSELECTIONMARK
 
-Recupera a marca de seleção de um controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usar a [**macro \_ GetSelectionMark do ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getselectionmark) .
+Recupera a marca de seleção de um controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usar a macro [**\_ ListView GetSelectionMark.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getselectionmark)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,9 +35,9 @@ Recupera a marca de seleção de um controle de exibição de lista. Você pode 
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna a marca de seleção com base em zero ou-1 se não houver nenhuma marca de seleção.
+Retorna a marca de seleção baseada em zero ou -1 se não houver nenhuma marca de seleção.
 
 ## <a name="remarks"></a>Comentários
 
@@ -49,9 +49,9 @@ A *marca de seleção* é o índice de item do qual uma seleção múltipla é i
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| parâmetro<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ A *marca de seleção* é o índice de item do qual uma seleção múltipla é i
 
 <dl> <dt>
 
-[**\_SETSELECTIONMARK LVM**](lvm-setselectionmark.md)
+[**LVM \_ SETSELECTIONMARK**](lvm-setselectionmark.md)
 </dt> </dl>
 
  

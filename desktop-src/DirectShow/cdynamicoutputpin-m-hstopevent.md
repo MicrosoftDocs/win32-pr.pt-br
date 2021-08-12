@@ -1,7 +1,7 @@
 ---
-description: Evento sinalizado quando o filtro é interrompido ou o PIN libera os dados.
+description: Evento que é sinalizado quando o filtro é interrompido ou o pino libera dados.
 ms.assetid: 01edf32e-d44d-4b55-b422-165cbe12324c
-title: 'Membro CDynamicOutputPin:: m_hStopEvent (Amfilter. h)'
+title: Membro CDynamicOutputPin::m_hStopEvent (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 742f09872afd65633ed21006aeea5f499ed7b235
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7c8d5e78a5a24ea2edd7fd04e30372da03259ba14f39f9f5c1f1148476c768f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118656431"
 ---
-# <a name="cdynamicoutputpinm_hstopevent-member"></a>Membro de CDynamicOutputPin:: m \_ hStopEvent
+# <a name="cdynamicoutputpinm_hstopevent-member"></a>Membro CDynamicOutputPin::m \_ hStopEvent
 
-Evento sinalizado quando o filtro é interrompido ou o PIN libera os dados.
+Evento que é sinalizado quando o filtro é interrompido ou o pino libera dados.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -42,8 +42,8 @@ HANDLE m_hStopEvent;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

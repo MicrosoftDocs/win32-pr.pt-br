@@ -1,7 +1,7 @@
 ---
-description: Indica que a reprodução de DVD parou como resultado de uma chamada para o método IDvdControl2::P layChaptersAutoStop.
+description: Indica que a reprodução de DVD foi interrompida como resultado de uma chamada para o método IDvdControl2::P layChaptersAutoStop.
 ms.assetid: ccafaf76-ec8c-4d67-9b29-565f3ed6593b
-title: EC_DVD_CHAPTER_AUTOSTOP (Dvdevcode. h)
+title: EC_DVD_CHAPTER_AUTOSTOP (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,22 +13,22 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 43e1414c0f9cee7e8daf37b87d5f0c3d0599a017
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a25c4ea621875403ad47ee6815b07b84572f939e4f2a6713d47aa53ba61f983e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118652670"
 ---
-# <a name="ec_dvd_chapter_autostop"></a>\_ \_ capítulo \_ autostop do DVD do EC
+# <a name="ec_dvd_chapter_autostop"></a>EC \_ DVD \_ CHAPTER \_ AUTOSTOP
 
-Indica que a reprodução de DVD parou como resultado de uma chamada para o método [**IDvdControl2::P laychaptersautostop**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-playchaptersautostop) .
+Indica que a reprodução de DVD foi interrompida como resultado de uma chamada para o [**método IDvdControl2::P layChaptersAutoStop.**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-playchaptersautostop)
 
 ## <a name="parameters"></a>Parâmetros
 
 <dl> <dt>
 
-<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
+<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*Lparam1*
 </dt> <dd>
 
 Zero.
@@ -44,7 +44,7 @@ Zero.
 
 ## <a name="remarks"></a>Comentários
 
-Esse evento é gerado no domínio do título.
+Esse evento é gerado no domínio de título.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ Esse evento é gerado no domínio do título.
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Dvdevcode. h (incluir DShow. h)</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dvdevcode.h (inclua Dshow.h)</dt> </dl> |
 
 
 
@@ -63,10 +63,10 @@ Esse evento é gerado no domínio do título.
 [Aplicativos de DVD](dvd-applications.md)
 </dt> <dt>
 
-[Códigos de notificação de eventos de DVD](dvd-notification-codes.md)
+[Códigos de notificação de evento de DVD](dvd-notification-codes.md)
 </dt> <dt>
 
-[Notificação de eventos no DirectShow](event-notification-in-directshow.md)
+[Notificação de eventos DirectShow](event-notification-in-directshow.md)
 </dt> </dl>
 
  

@@ -3,7 +3,7 @@ title: Mensagem de EM_SETCUEBANNER (commctrl. h)
 description: Define a indicação textual ou Tip, que é exibida pelo controle de edição para solicitar informações ao usuário.
 ms.assetid: 1b1ff5e7-e0b8-40c1-8b7e-7003e9ef959b
 keywords:
-- Controles de EM_SETCUEBANNER de mensagens do Windows
+- controles de Windows de mensagem de EM_SETCUEBANNER
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d740bf0a3a055f45c6d104d44349f078d3bf9ad2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b08694d7368a994c639f236f18537e13d81f57083521599c23671941c74889bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118673099"
 ---
 # <a name="em_setcuebanner-message"></a>\_Mensagem em SETCUEBANNER
 
@@ -43,7 +43,7 @@ Um ponteiro para uma cadeia de caracteres Unicode que contém o texto a ser exib
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a mensagem tiver sucesso, retornará **true**. Caso contrário, retornará **false**.
 
@@ -64,8 +64,8 @@ Não é possível definir uma faixa de indicação em um controle de edição de
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 

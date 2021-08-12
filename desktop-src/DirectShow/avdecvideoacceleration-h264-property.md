@@ -4,12 +4,12 @@ ms.assetid: 3912136d-0fc1-49b0-bc79-0785d63041e6
 title: Propriedade AVDecVideoAcceleration_H264 (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cbcedf2d038c010ee781030baf0a8289e68eab4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f84279c49e65586d07dbf1efa4c372a1b1f8770e19bd00eb827ba44b6ad43bc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118663960"
 ---
 # <a name="avdecvideoacceleration_h264-property"></a>\_Propriedade AVDecVideoAcceleration H264
 
@@ -27,7 +27,7 @@ Esta propriedade é de leitura/gravação.
 
 ## <a name="remarks"></a>Comentários
 
-Se o valor for zero, o decodificador não usará a DXVA (aceleração de vídeo do DirectX) para decodificação de vídeo H. 264. Para filtros do DirectShow, defina essa propriedade antes que o pino de saída do decodificador seja conectado.
+Se o valor for zero, o decodificador não usará a DXVA (aceleração de vídeo do DirectX) para decodificação de vídeo H. 264. para filtros de DirectShow, defina essa propriedade antes que o pino de saída do decodificador seja conectado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,8 +35,8 @@ Se o valor for zero, o decodificador não usará a DXVA (aceleração de vídeo 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
+| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                           |
 | parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 

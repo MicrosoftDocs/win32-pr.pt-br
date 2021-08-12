@@ -23,12 +23,12 @@ api_location:
 - API-Ms-Win-Core-Kernel32-Legacy-Ansi-L1-1-0.dll
 - API-MS-Win-Core-Kernel32-Legacy-L1-1-4.dll
 - API-MS-Win-Core-Kernel32-Legacy-L1-1-5.dll
-ms.openlocfilehash: 6027752a0e60f135f0cc8a1c0cdd536c59c09621
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 90945188209abdcaf16a7250e43db2af9a99ab4a3fbb55b8baabf0ea610c99e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118668678"
 ---
 # <a name="addlocalalternatecomputername-function"></a>Função AddLocalAlternateComputerName
 
@@ -50,30 +50,30 @@ DWORD AddLocalAlternateComputerName(
 
 <dl> <dt>
 
-*lpDnsFQHostname* \[ no\]
+*lpDnsFQHostname* \[ Em\]
 </dt> <dd>
 
-O nome alternativo a ser adicionado. O nome deve estar no formato **ComputerNameDnsFullyQualified** , conforme definido na enumeração [**de \_ \_ formato de nome do computador**](/windows/win32/api/sysinfoapi/ne-sysinfoapi-computer_name_format) , e a função [**DnsValidateName \_ W**](/windows/win32/api/windns/nf-windns-dnsvalidatename) deve ser capaz de validá-lo com seu formato definido como **DnsNameHostnameFull**.
+O nome alternativo a ser adicionado. O nome deve estar no formato **ComputerNameDnsFullyQualified** conforme definido na enumeração [**COMPUTER NAME \_ \_ FORMAT**](/windows/win32/api/sysinfoapi/ne-sysinfoapi-computer_name_format) e a função [**DnsValidateName \_ W**](/windows/win32/api/windns/nf-windns-dnsvalidatename) deve ser capaz de validá-lo com seu formato definido como **DnsNameHostnameFull**.
 
 </dd> <dt>
 
-*ulFlags* \[ no\]
+*ulFlags* \[ Em\]
 </dt> <dd>
 
 Esse parâmetro é reservado e deve ser definido como zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida, a função retornará **\_ êxito de erro**. Se a função falhar, ela retornará um código de erro diferente de zero. Entre os códigos de erro que ele retorna estão os seguintes:
+Se a função for bem-sucedida, a função **retornará ERROR \_ SUCCESS.** Se a função falhar, ela retornará um código de erro não zero. Entre os códigos de erro que ele retorna estão os seguintes:
 
 
 
 | Código de retorno                                                                                               | Descrição                                                                                                                                         |
 |-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_parâmetro inválido de erro \_**</dt> </dl>  | Indica que o parâmetro *lpDnsFQHostname* não aponta para um nome DNS válido ou que o parâmetro *ulFlags* não é igual a zero.<br/> |
-| <dl> <dt>**ERRO \_ de \_ memória insuficiente \_**</dt> </dl> | Não há memória suficiente para concluir a operação.<br/>                                                                                    |
+| <dl> <dt>**ERRO \_ PARÂMETRO \_ INVÁLIDO**</dt> </dl>  | Indica que o *parâmetro lpDnsFQHostname* não aponta para um nome DNS válido ou que o *parâmetro ulFlags* não é igual a zero.<br/> |
+| <dl> <dt>**ERRO \_ SEM \_ MEMÓRIA \_ SUFICIENTE**</dt> </dl> | Não há memória suficiente para concluir a operação.<br/>                                                                                    |
 
 
 
@@ -95,7 +95,7 @@ Se a função for bem-sucedida, a função retornará **\_ êxito de erro**. Se 
 
 <dl> <dt>
 
-[**\_formato do nome do computador \_**](/windows/win32/api/sysinfoapi/ne-sysinfoapi-computer_name_format)
+[**FORMATO \_ DO NOME DO \_ COMPUTADOR**](/windows/win32/api/sysinfoapi/ne-sysinfoapi-computer_name_format)
 </dt> <dt>
 
 [**DnsValidateName \_ W**](/windows/win32/api/windns/nf-windns-dnsvalidatename)

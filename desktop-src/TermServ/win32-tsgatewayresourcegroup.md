@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSGatewayResourceGroup
+title: Win32_TSGatewayResourceGroup classe
 description: Descreve um grupo de recursos, que mapeia um conjunto de recursos (nomes de computador) para uma única entidade.
 ms.assetid: 5715a2ea-9bbc-4704-835e-ba6d93a72368
 ms.tgt_platform: multiple
 keywords:
-- Classe de Win32_TSGatewayResourceGroup Serviços de Área de Trabalho Remota
-- Serviços de Área de Trabalho Remota de Win32_TSGatewayResourceGroup classe, descrita
+- Win32_TSGatewayResourceGroup classe Serviços de Área de Trabalho Remota
+- Win32_TSGatewayResourceGroup classe Serviços de Área de Trabalho Remota , descrito
 topic_type:
 - apiref
 api_name:
@@ -20,14 +20,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ffeda42abafd24526360f5e549f004cae0c3140
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 81ba4ec4545502d82a3449cee39954deb9b5b2e68bf7c657423e673c582d1c18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105810968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118603878"
 ---
-# <a name="win32_tsgatewayresourcegroup-class"></a>\_Classe Win32 TSGatewayResourceGroup
+# <a name="win32_tsgatewayresourcegroup-class"></a>Classe Win32 \_ TSGatewayResourceGroup
 
 Descreve um grupo de recursos, que mapeia um conjunto de recursos (nomes de computador) para uma única entidade.
 
@@ -46,27 +46,27 @@ class Win32_TSGatewayResourceGroup
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ TSGatewayResourceGroup** tem estes tipos de membros:
+A **classe Win32 \_ TSGatewayResourceGroup** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **Win32 \_ TSGatewayResourceGroup** tem esses métodos.
+A **classe \_ Win32 TSGatewayResourceGroup** tem esses métodos.
 
 
 
 | Método                                                                  | Descrição                                                                           |
 |:------------------------------------------------------------------------|:--------------------------------------------------------------------------------------|
-| [**Addresources**](addresources-win32-tsgatewayresourcegroup.md)       | Adiciona recursos à propriedade **Resources** para este grupo de recursos.<br/>      |
+| [**AddResources**](addresources-win32-tsgatewayresourcegroup.md)       | Adiciona recursos à propriedade **Recursos** para esse grupo de recursos.<br/>      |
 | [**Criar**](create-win32-tsgatewayresourcegroup.md)                   | Cria um grupo de recursos.<br/>                                                  |
-| [**Apagar**](delete-win32-tsgatewayresourcegroup.md)                   | Exclui este grupo de recursos.<br/>                                               |
-| [**RemoveResources**](removeresources-win32-tsgatewayresourcegroup.md) | Exclui recursos da propriedade **Resources** para este grupo de recursos.<br/> |
-| [**SetDescription**](setdescription-win32-tsgatewayresourcegroup.md)   | Define a propriedade **Description** para esse grupo de recursos.<br/>                 |
-| [**SetName**](setname-win32-tsgatewayresourcegroup.md)                 | Define a propriedade **Name** para esse grupo de recursos.<br/>                        |
-| [**Recursos**](setresources-win32-tsgatewayresourcegroup.md)       | Define a propriedade **Resources** para esse grupo de recursos.<br/>                   |
-| [**Cumulativo**](update-win32-tsgatewayresourcegroup.md)                   | Atualiza este grupo de recursos.<br/>                                               |
+| [**Excluir**](delete-win32-tsgatewayresourcegroup.md)                   | Exclui esse grupo de recursos.<br/>                                               |
+| [**RemoveResources**](removeresources-win32-tsgatewayresourcegroup.md) | Exclui recursos da propriedade **Recursos** para esse grupo de recursos.<br/> |
+| [**SetDescription**](setdescription-win32-tsgatewayresourcegroup.md)   | Define a **propriedade Description** para este grupo de recursos.<br/>                 |
+| [**SetName**](setname-win32-tsgatewayresourcegroup.md)                 | Define a **propriedade Name** para este grupo de recursos.<br/>                        |
+| [**SetResources**](setresources-win32-tsgatewayresourcegroup.md)       | Define a **propriedade Recursos** para esse grupo de recursos.<br/>                   |
+| [**Atualização**](update-win32-tsgatewayresourcegroup.md)                   | Atualiza esse grupo de recursos.<br/>                                               |
 
 
 
@@ -74,7 +74,7 @@ A classe **Win32 \_ TSGatewayResourceGroup** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ TSGatewayResourceGroup** tem essas propriedades.
+A **classe \_ Win32 TSGatewayResourceGroup** tem essas propriedades.
 
 <dl> <dt>
 
@@ -87,7 +87,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Lista separada por ponto-e-vírgula de Serviços de Área de Trabalho Remota RD RAPs (políticas de autorização de recursos) que estão associadas a esse grupo de recursos.
+Lista separada por ponto e vírgula de Serviços de Área de Trabalho Remota raps de autorização de recursos (RAPs de RD) que estão associadas a esse grupo de recursos.
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Descrição do grupo de recursos. Essa propriedade pode ser alterada com o método [**SetDescription**](setdescription-win32-tsgatewayresourcegroup.md) .
+Descrição do grupo de recursos. Essa propriedade pode ser alterada com o [**método SetDescription.**](setdescription-win32-tsgatewayresourcegroup.md)
 
 </dd> <dt>
 
@@ -116,7 +116,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Nome do grupo de recursos. Essa propriedade pode ser alterada com o método [**SetName**](setname-win32-tsgatewayresourcegroup.md) .
+Nome do grupo de recursos. Essa propriedade pode ser alterada com o [**método SetName.**](setname-win32-tsgatewayresourcegroup.md)
 
 </dd> <dt>
 
@@ -129,7 +129,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Lista de recursos separados por ponto e vírgula neste grupo de recursos. Um " \* " significa todos os recursos. Essa propriedade pode ser alterada com os métodos [**Setresources**](setresources-win32-tsgatewayresourcegroup.md), [**addresources**](addresources-win32-tsgatewayresourcegroup.md), [**RemoveResources**](removeresources-win32-tsgatewayresourcegroup.md)e [**Update**](update-win32-tsgatewayresourcegroup.md) .
+Lista de recursos separados por ponto e vírgula neste grupo de recursos. Um " \* " significa todos os recursos. Essa propriedade pode ser alterada com os métodos [**SetResources,**](setresources-win32-tsgatewayresourcegroup.md) [**AddResources,**](addresources-win32-tsgatewayresourcegroup.md) [**RemoveResources**](removeresources-win32-tsgatewayresourcegroup.md)e [**Update.**](update-win32-tsgatewayresourcegroup.md)
 
 </dd> </dl>
 
@@ -137,7 +137,7 @@ Lista de recursos separados por ponto e vírgula neste grupo de recursos. Um " \
 
 Você deve ser um membro do grupo Administradores para usar essa classe.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format arquivos (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -147,8 +147,8 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TS. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -157,22 +157,22 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_TSGatewayConnection Win32**](win32-tsgatewayconnection.md)
+[**Win32 \_ TSGatewayConnection**](win32-tsgatewayconnection.md)
 </dt> <dt>
 
-[**\_TSGatewayConnectionAuthorizationPolicy Win32**](win32-tsgatewayconnectionauthorizationpolicy.md)
+[**Win32 \_ TSGatewayConnectionAuthorizationPolicy**](win32-tsgatewayconnectionauthorizationpolicy.md)
 </dt> <dt>
 
-[**\_TSGatewayLoadBalancer Win32**](win32-tsgatewayloadbalancer.md)
+[**Win32 \_ TSGatewayLoadBalancer**](win32-tsgatewayloadbalancer.md)
 </dt> <dt>
 
-[**\_TSGatewayRADIUSServer Win32**](win32-tsgatewayradiusserver.md)
+[**Win32 \_ TSGatewayRADIUSServer**](win32-tsgatewayradiusserver.md)
 </dt> <dt>
 
-[**\_TSGatewayResourceAuthorizationPolicy Win32**](win32-tsgatewayresourceauthorizationpolicy.md)
+[**Win32 \_ TSGatewayResourceAuthorizationPolicy**](win32-tsgatewayresourceauthorizationpolicy.md)
 </dt> <dt>
 
-[**\_TSGatewayServerSettings Win32**](win32-tsgatewayserversettings.md)
+[**Win32 \_ TSGatewayServerSettings**](win32-tsgatewayserversettings.md)
 </dt> </dl>
 
  

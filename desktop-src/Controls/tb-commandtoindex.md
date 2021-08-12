@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TB_COMMANDTOINDEX (commctrl. h)
-description: Recupera o índice de base zero para o botão associado ao identificador de comando especificado.
+title: TB_COMMANDTOINDEX mensagem (Commctrl.h)
+description: Recupera o índice baseado em zero para o botão associado ao identificador de comando especificado.
 ms.assetid: vs|controls|~\controls\toolbar\messages\tb_commandtoindex.htm
 keywords:
-- Controles de TB_COMMANDTOINDEX de mensagens do Windows
+- TB_COMMANDTOINDEX controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0257f55e01db59f1d23d59583f1ef78f44b1dac1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ea21f7436745ff3b6a8d69df4c2be43e59fc82e8e4e934302cddb71c9d342e43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118670389"
 ---
-# <a name="tb_commandtoindex-message"></a>TB de \_ mensagem COMMANDTOINDEX
+# <a name="tb_commandtoindex-message"></a>Mensagem \_ COMMANDTOINDEX de TB
 
-Recupera o índice de base zero para o botão associado ao identificador de comando especificado.
+Recupera o índice baseado em zero para o botão associado ao identificador de comando especificado.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -39,9 +39,9 @@ Identificador de comando associado ao botão.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o índice de base zero para o botão ou-1 se o identificador de comando especificado for inválido.
+Retornará o índice baseado em zero para o botão ou -1 se o identificador de comando especificado for inválido.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Retorna o índice de base zero para o botão ou-1 se o identificador de comando 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| parâmetro<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

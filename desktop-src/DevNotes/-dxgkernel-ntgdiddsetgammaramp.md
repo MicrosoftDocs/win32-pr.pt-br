@@ -16,12 +16,12 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: 0c5efba67eedbd6e70f1e0682f42c1855948cecd
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 78e68a76fed6db78a2f3d247c5bec1b73f3df3b6fe204e0d09b1bc5f14a014b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104088915"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118668805"
 ---
 # <a name="ntgdiddsetgammaramp-function"></a>Função NtGdiDdSetGammaRamp
 
@@ -67,7 +67,7 @@ Ponteiro para uma matriz de estruturas **DDGAMMARAMP** .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno será **true** se a função for bem-sucedida. Caso contrário, será **nulo**.
 

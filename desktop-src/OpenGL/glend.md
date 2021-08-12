@@ -1,9 +1,9 @@
 ---
-title: função glEnd (GL. h)
-description: As funções glBegin e glend delimitam os vértices de um primitivo ou de um grupo de primitivas como primitivos. | função glEnd (GL. h)
+title: Função glEnd (Gl.h)
+description: As funções glBegin e ltda delimitam os vértices de um primitivo ou um grupo de primitivos semelhantes. | Função glEnd (Gl.h)
 ms.assetid: 040f8573-683c-4a8a-ae51-66abb0541ac4
 keywords:
-- função glEnd OpenGL
+- Função glEnd OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d9bb41395b3ed2e38a64094506e07e2a69ad1d52
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0817bec7874b9a3a58e28653ff10497eb1e3f5e5170c57dbe2c26a6b20b64460
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105750460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118616548"
 ---
-# <a name="glend-function"></a>função glEnd
+# <a name="glend-function"></a>Função glEnd
 
-As funções [**glBegin**](glbegin.md) e **glend** delimitam os vértices de um primitivo ou de um grupo de primitivas como primitivos.
+As [**funções glBegin**](glbegin.md) e **ltda** delimitam os vértices de um primitivo ou um grupo de primitivos semelhantes.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,27 +38,27 @@ void WINAPI glEnd(void);
 
 Essa função não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função não retorna um valor.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-O código de erro a seguir pode ser recuperado pela função [**glGetError**](glgeterror.md) .
+O código de erro a seguir pode ser recuperado pela [**função glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significado                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |-------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | Uma função diferente de **glVertex**, **glColor**, **glIndex**, **glNormal**, **glTexCoord**, **glEvalCoord**, **glEvalPoint**, **glMaterial**, **glEdgeFlag**, **glCallList** ou **glCallLists** foi chamada entre **glBegin** e o **glEnd** correspondente. A função **glEnd** foi chamada antes que o **glBegin** correspondente fosse chamado ou **glBegin** foi chamado dentro de uma / sequência **glEnd** glBegin. <br/> |
+| <dl> <dt>**OPERAÇÃO \_ GL \_ INVÁLIDA**</dt> </dl> | Uma função diferente de **glVertex**, **glColor**, **glIndex**, **glNormal,** **glTexCoord**, **glEvalCoord**, **glEvalPoint**, **glMaterial**, **glEdgeFlag,** **glCallList** ou **glCallLists** foi chamada entre **glBegin** e o **glEnd correspondente.** A função **glEnd** foi chamada antes de **o glBegin** correspondente ser chamado ou **glBegin** foi chamado dentro de uma **sequência glBegin** / **glEnd.** <br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-As funções [**glBegin**](glbegin.md) e **glend** delimitam os vértices que definem um primitivo ou um grupo de primitivas como primitivos. A função **glBegin** aceita um único argumento que especifica qual dos dez primitivos os vértices compõem. Colocando *n* como uma contagem de inteiros começando em um, e *n* como o número total de vértices especificado, as interpretações são as seguintes:
+As [**funções glBegin**](glbegin.md) e **greend** delimitam os vértices que definem um primitivo ou um grupo de primitivos semelhantes. A **função glBegin** aceita um único argumento que especifica qual dos dez primitivos os vértices compõem. Usando *n* como uma contagem de inteiros começando em um e *N* como o número total de vértices especificado, as interpretações são as seguinte:
 
--   Você pode usar apenas um subconjunto de funções OpenGL entre **glBegin** e **glEnd**. As funções que você pode usar são:
+-   Você pode usar apenas um subconjunto de funções OpenGL entre **glBegin** e **glEnd.** As funções que você pode usar são:
 
     -   [**glVertex**](glvertex-functions.md)
     -   [**glColor**](glcolor-functions.md)
@@ -72,22 +72,22 @@ As funções [**glBegin**](glbegin.md) e **glend** delimitam os vértices que de
 
     Você também pode usar [**glCallList**](glcalllist.md) ou [**glCallLists**](glcalllists.md) para executar listas de exibição que incluem apenas as funções anteriores. Se qualquer outra função OpenGL for chamada entre **glBegin** e **glEnd**, o sinalizador de erro será definido e a função será ignorada.
 
--   Independentemente do valor escolhido para o *modo* em **glBegin**, não há nenhum limite para o número de vértices que você pode definir entre **glBegin** e **glEnd**. Linhas, triângulos, quadrilaterals e polígonos especificados incompletamente não são desenhadas. Resultados incompletos de especificação quando um número muito pequeno de vértices são fornecidos para especificar até mesmo um único primitivo ou quando um múltiplo incorreto de vértices é especificado. O primitivo incompleto é ignorado; os primitivos completos são desenhados.
+-   Independentemente do valor escolhido para *o* modo em **glBegin,** não há limite para o número de vértices que você pode definir entre **glBegin** e **glEnd.** Linhas, triângulos, retângulos e polígonos especificados incompletamente não são desenhados. Resultados incompletos da especificação quando são fornecidos poucos vértices para especificar até mesmo um único primitivo ou quando um múltiplo incorreto de vértices é especificado. O primitivo incompleto é ignorado; os primitivos completos são desenhados.
 -   A especificação mínima de vértices para cada primitivo é: 
 
-    | Número mínimo de vértices | Tipo de primitiva |
+    | Número mínimo de vértices | Tipo de primitivo |
     |----------------------------|-------------------|
     | 1                          | point             |
     | 2                          | line              |
     | 3                          | triangle          |
-    | 4                          | diamante     |
+    | 4                          | Quadrilátero     |
     | 3                          | polygon           |
 
     
 
      
 
--   Os modos que exigem um determinado múltiplo de vértices são \_ linhas GL (2), \_ triângulos GL (3), GL \_ quádruplos (4) e GL \_ Quad \_ strip (2).
+-   Os modos que exigem um determinado múltiplo de vértices são GL \_ LINES (2), GL \_ TRIANGLES (3), GL \_ QUADS (4) e GL \_ QUAD STRIP \_ (2).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -97,8 +97,8 @@ As funções [**glBegin**](glbegin.md) e **glend** delimitam os vértices que de
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

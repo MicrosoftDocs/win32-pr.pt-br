@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LB_FINDSTRING (WinUser. h)
+title: LB_FINDSTRING mensagem (Winuser.h)
 description: Localiza a primeira cadeia de caracteres em uma caixa de listagem que começa com a cadeia de caracteres especificada.
 ms.assetid: 1b7f25a7-0892-4d12-b3e3-21180d9ddfb1
 keywords:
-- Controles de LB_FINDSTRING de mensagens do Windows
+- LB_FINDSTRING controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b528dbafbc386af05a091f24c8c28327739f5d40
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c0a4eb2abbff27c6bde6a4bb44d0faa192ca75229be657bd787aa437b243cd59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118671299"
 ---
-# <a name="lb_findstring-message"></a>\_Mensagem de localização lb
+# <a name="lb_findstring-message"></a>Mensagem \_ DE LB FINDSTRING
 
 Localiza a primeira cadeia de caracteres em uma caixa de listagem que começa com a cadeia de caracteres especificada.
 
@@ -32,26 +32,26 @@ Localiza a primeira cadeia de caracteres em uma caixa de listagem que começa co
 *wParam* 
 </dt> <dd>
 
-O índice baseado em zero do item antes do primeiro item a ser pesquisado. Quando a pesquisa atingir a parte inferior da caixa de listagem, ela continuará pesquisando da parte superior da caixa de listagem de volta para o item especificado pelo parâmetro *wParam* . Se *wParam* for-1, a caixa de listagem inteira será pesquisada desde o início.
+O índice baseado em zero do item antes do primeiro item a ser pesquisado. Quando a pesquisa atinge a parte inferior da caixa de listagem, ela continua pesquisando da parte superior da caixa de listagem de volta para o item especificado pelo *parâmetro wParam.* Se *wParam* for -1, toda a caixa de listagem será pesquisada desde o início.
 
-Windows 95/Windows 98/Windows Millennium Edition (Windows me): o parâmetro *wParam* é limitado a valores de 16 bits. Isso significa que as caixas de listagem não podem conter mais de 32.767 itens. Embora o número de itens seja restrito, o tamanho total em bytes dos itens em uma caixa de listagem é limitado apenas pela memória disponível.
+Windows 95/Windows 98/Windows Millennium Edition (Windows Me) : o parâmetro *wParam* é limitado a valores de 16 bits. Isso significa que as caixas de listagem não podem conter mais de 32.767 itens. Embora o número de itens seja restrito, o tamanho total em bytes dos itens em uma caixa de listagem é limitado apenas pela memória disponível.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para a cadeia de caracteres terminada em nulo que contém a cadeia de caracteres a ser pesquisada. A pesquisa diferencia maiúsculas de minúsculas, portanto, essa cadeia de caracteres pode conter qualquer combinação de letras maiúsculas e minúsculas.
+Um ponteiro para a cadeia de caracteres terminada em nulo que contém a cadeia de caracteres para a qual pesquisar. A pesquisa é independente de maiúsculas e minúsculas, portanto, essa cadeia de caracteres pode conter qualquer combinação de letras maiúsculas e minúsculas.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de retorno será o índice do item correspondente ou o \_ erro de lb se a pesquisa não tiver sido bem-sucedida.
+O valor de retorno é o índice do item correspondente ou LB \_ ERR se a pesquisa não foi bem-sucedida.
 
 ## <a name="remarks"></a>Comentários
 
-Se a caixa de listagem tiver o estilo desenhado pelo proprietário, mas não o estilo de [**lbs \_ HASSTRINGS**](list-box-styles.md) , a ação executada pela **\_ localização do lb** dependerá se o estilo de [**\_ classificação lbs**](list-box-styles.md) for usado. Se **a \_ classificação de lbs** for usada, o sistema enviará mensagens do [**WM \_ COMPAREITEM**](wm-compareitem.md) para o proprietário da caixa de listagem para determinar qual item corresponde à cadeia de caracteres especificada. Caso contrário, o **lb \_ FindString** tentará localizar um item que tem um valor longo (fornecido como o parâmetro *lParam* da mensagem do [**lb \_ AddString**](lb-addstring.md) ou [**lbstring \_**](lb-insertstring.md) ) que corresponde ao parâmetro *lParam* .
+Se a caixa de listagem tiver o estilo desenhado pelo proprietário, mas não o estilo [**\_ HASSTRINGS do LBS,**](list-box-styles.md) a ação tomada por **LB \_ FINDSTRING** dependerá de se o estilo [**SORT \_ do LBS**](list-box-styles.md) será usado. Se **LBS \_ SORT** for usado, o sistema enviará mensagens [**WM \_ COMPAREITEM**](wm-compareitem.md) ao proprietário da caixa de listagem para determinar qual item corresponde à cadeia de caracteres especificada. Caso contrário, **LB \_ FINDSTRING** tenta encontrar um item que tenha um valor longo (fornecido como o parâmetro *lParam* da mensagem [**LB \_ ADDSTRING**](lb-addstring.md) ou [**LB \_ INSERTSTRING)**](lb-insertstring.md) que corresponde ao parâmetro *lParam.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Se a caixa de listagem tiver o estilo desenhado pelo proprietário, mas não o e
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| parâmetro<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Se a caixa de listagem tiver o estilo desenhado pelo proprietário, mas não o e
 
 <dl> <dt>
 
-[**\_FINDSTRINGEXACT lb**](lb-findstringexact.md)
+[**LB \_ FINDSTRINGEXACT**](lb-findstringexact.md)
 </dt> </dl>
 
  

@@ -54,12 +54,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ba58a492ede5371c0f43d996f46ed7a898df7f8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0044ba51e9eb0b3987ec337536e288f1687e04d7838e61a9bbcbae2a2176c003
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105756970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118608395"
 ---
 # <a name="imsrdpclientadvancedsettingsredirectsmartcards-property"></a>Propriedade IMsRdpClientAdvancedSettings:: RedirectSmartCards
 
@@ -67,7 +67,7 @@ Especifica se o redirecionamento de cartões inteligentes é permitido.
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++

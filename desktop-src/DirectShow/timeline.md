@@ -4,12 +4,12 @@ ms.assetid: 6cc36034-224c-4126-873b-0cfeceec9781
 title: Linha do tempo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 10d1f802f12df6ca3469b8283bd4fe8b27e22412
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d85809aed689d63ccdfc0b1dee1b5b792cafc9d7d0267d27e33bd7b6c1bea6cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105787126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118651248"
 ---
 # <a name="timeline"></a>Linha do tempo
 
@@ -20,7 +20,7 @@ ms.locfileid: "105787126"
 
 O objeto Timeline gerencia todos os objetos em um projeto de edição de vídeo. Para criar esse objeto, chame **CoCreateInstance**. O identificador de classe é CLSID \_ AMTimeline.
 
-Para ler arquivos do Windows Media™, o aplicativo deve fornecer um certificado de software, também chamado de chave. Registre o aplicativo como um provedor de chaves por meio da interface **IObjectWithSite** da linha do tempo. Para obter mais informações, consulte [desbloqueando o SDK do Windows Media Format](unlocking-the-windows-media-format-sdk.md).
+para ler arquivos de™ de mídia Windows, o aplicativo deve fornecer um certificado de software, também chamado de chave. Registre o aplicativo como um provedor de chaves por meio da interface **IObjectWithSite** da linha do tempo. para obter mais informações, consulte [desbloqueando o SDK do formato de mídia Windows](unlocking-the-windows-media-format-sdk.md).
 
 O objeto Timeline expõe as seguintes interfaces:
 

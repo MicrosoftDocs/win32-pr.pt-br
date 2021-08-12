@@ -4,12 +4,12 @@ description: Macros de exibição de lista
 ms.assetid: b0fd0c7c-3902-4b8a-9f22-74b44ac3dea7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 27a3faf6106cc42944c5c0be698396ee56296d59
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c8699511b10573f1a0bb5a65d6953c8ed4b913d8816df86c3337e1aeb3d6e301
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105752804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118673248"
 ---
 # <a name="list-view-macros"></a>Macros de exibição de lista
 
@@ -111,45 +111,45 @@ ms.locfileid: "105752804"
 -   [**Defaultcolumn de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setcolumn)
 -   [**SetColumnOrderArray de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setcolumnorderarray)
 -   [**SetColumnWidth de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setcolumnwidth)
--   [**SetExtendedListViewStyle de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setextendedlistviewstyle)
--   [**SetExtendedListViewStyleEx de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setextendedlistviewstyleex)
--   [**SetGroupHeaderImageList de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setgroupheaderimagelist)
--   [**SetGroupInfo de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setgroupinfo)
--   [**SetGroupMetrics de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setgroupmetrics)
--   [**ListView \_ Setgroupstate**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setgroupstate)
--   [**SetHotCursor de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_sethotcursor)
--   [**SetHotItem de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_sethotitem)
--   [**ListView \_ Setfocalizetime**](/windows/desktop/api/Commctrl/nf-commctrl-listview_sethovertime)
--   [**SetIconSpacing de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_seticonspacing)
--   [**Exibição de imagem de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setimagelist)
--   [**SetInfoTip de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setinfotip)
--   [**SetInsertMark de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setinsertmark)
--   [**SetInsertMarkColor de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setinsertmarkcolor)
--   [**SetItem de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitem)
--   [**ListView \_ Setitemcount**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitemcount)
--   [**SetItemCountEx de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitemcountex)
--   [**SetItemIndexState de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitemindexstate)
--   [**SetItemPosition de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitemposition)
--   [**SetItemPosition32 de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitemposition32)
+-   [**ListView \_ SetExtendedListViewStyle**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setextendedlistviewstyle)
+-   [**ListView \_ SetExtendedListViewStyleEx**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setextendedlistviewstyleex)
+-   [**ListView \_ SetGroupHeaderImageList**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setgroupheaderimagelist)
+-   [**ListView \_ SetGroupInfo**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setgroupinfo)
+-   [**ListView \_ SetGroupMetrics**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setgroupmetrics)
+-   [**ListView \_ SetGroupState**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setgroupstate)
+-   [**ListView \_ SetHotCursor**](/windows/desktop/api/Commctrl/nf-commctrl-listview_sethotcursor)
+-   [**ListView \_ SetHotItem**](/windows/desktop/api/Commctrl/nf-commctrl-listview_sethotitem)
+-   [**ListView \_ SetHoverTime**](/windows/desktop/api/Commctrl/nf-commctrl-listview_sethovertime)
+-   [**ListView \_ SetIconSpacing**](/windows/desktop/api/Commctrl/nf-commctrl-listview_seticonspacing)
+-   [**ListView \_ SetImageList**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setimagelist)
+-   [**ListView \_ SetInfoTip**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setinfotip)
+-   [**ListView \_ SetInsertMark**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setinsertmark)
+-   [**ListView \_ SetInsertMarkColor**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setinsertmarkcolor)
+-   [**ListView \_ SetItem**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitem)
+-   [**ListView \_ SetItemCount**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitemcount)
+-   [**ListView \_ SetItemCountEx**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitemcountex)
+-   [**ListView \_ SetItemIndexState**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitemindexstate)
+-   [**ListView \_ SetItemPosition**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitemposition)
+-   [**ListView \_ SetItemPosition32**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitemposition32)
 -   [**ListView \_ SetItemState**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitemstate)
--   [**SetItemText de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitemtext)
--   [**SetOutlineColor de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setoutlinecolor)
--   [**SetSelectedColumn de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setselectedcolumn)
--   [**SetSelectionMark de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setselectionmark)
--   [**SetTextBkColor de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_settextbkcolor)
--   [**SetTextColor de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_settextcolor)
--   [**SetTileInfo de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_settileinfo)
--   [**SetTileViewInfo de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_settileviewinfo)
+-   [**ListView \_ SetItemText**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitemtext)
+-   [**ListView \_ SetOutlineColor**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setoutlinecolor)
+-   [**ListView \_ SetSelectedColumn**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setselectedcolumn)
+-   [**ListView \_ SetSelectionMark**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setselectionmark)
+-   [**ListView \_ SetTextBkColor**](/windows/desktop/api/Commctrl/nf-commctrl-listview_settextbkcolor)
+-   [**ListView \_ SetTextColor**](/windows/desktop/api/Commctrl/nf-commctrl-listview_settextcolor)
+-   [**ListView \_ SetTileInfo**](/windows/desktop/api/Commctrl/nf-commctrl-listview_settileinfo)
+-   [**ListView \_ SetTileViewInfo**](/windows/desktop/api/Commctrl/nf-commctrl-listview_settileviewinfo)
 -   [**ListView \_ SetToolTips**](/windows/desktop/api/Commctrl/nf-commctrl-listview_settooltips)
--   [**SetUnicodeFormat de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setunicodeformat)
--   [**Exibição do ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setview)
--   [**SetWorkAreas de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setworkareas)
--   [**SortGroups de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_sortgroups)
--   [**SortItems de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_sortitems)
--   [**SortItemsEx de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_sortitemsex)
--   [**SubItemHitTest de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_subitemhittest)
--   [**SubItemHitTestEx de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_subitemhittestex)
--   [**Atualização de ListView \_**](/windows/desktop/api/Commctrl/nf-commctrl-listview_update)
+-   [**ListView \_ SetUnicodeFormat**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setunicodeformat)
+-   [**ListView \_ SetView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setview)
+-   [**ListView \_ SetWorkAreas**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setworkareas)
+-   [**ListView \_ SortGroups**](/windows/desktop/api/Commctrl/nf-commctrl-listview_sortgroups)
+-   [**ListView \_ SortItems**](/windows/desktop/api/Commctrl/nf-commctrl-listview_sortitems)
+-   [**ListView \_ SortItemsEx**](/windows/desktop/api/Commctrl/nf-commctrl-listview_sortitemsex)
+-   [**ListView \_ SubItemHitTest**](/windows/desktop/api/Commctrl/nf-commctrl-listview_subitemhittest)
+-   [**ListView \_ SubItemHitTestEx**](/windows/desktop/api/Commctrl/nf-commctrl-listview_subitemhittestex)
+-   [**Atualização de \_ ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_update)
 
  
 

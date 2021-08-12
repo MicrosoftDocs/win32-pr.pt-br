@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 5665b385c3264ff9d36e79ad671c8f9e8377d4bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6df6edc3affa551d62473b616562257cd422fcc4a4021ea7e4ef05ba3c8af9dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118619034"
 ---
 # <a name="ssidconfig-wlanprofile-element"></a>Elemento SSIDConfig (WLANProfile)
 
@@ -90,24 +90,24 @@ O elemento SSIDConfig (WLANProfile) contém um ou mais SSIDs para LANs sem fio.
 </xs:element>
 ```
 
-O elemento **SSIDConfig** é definido pelo elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) .
+O **elemento SSIDConfig** é definido pelo [**elemento WLANProfile.**](wlan-profileschema-wlanprofile-element.md)
 
 ## <a name="child-elements"></a>Elementos filho
 
 
 
-| Elemento                                                                    | Type                                                              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Elemento                                                                    | Type                                                              | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |----------------------------------------------------------------------------|-------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**hex**](wlan-profileschema-hex-ssid-element.md)                         |                                                                   | Contém o SSID de uma LAN sem fio em formato hexadecimal.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| [**nomes**](wlan-profileschema-name-ssid-element.md)                       |                                                                   | Contém o nome (diferencia maiúsculas de minúsculas) do SSID de uma LAN sem fio.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| [**sem difusão**](wlan-profileschema-nonbroadcast-ssidconfig-element.md) | [booleano](/dotnet/api/system.boolean) | Indica se a rede transmite seu SSID.<br/> Se [**ConnectionType**](wlan-profileschema-connectiontype-wlanprofile-element.md) for definido como ESS, esse valor poderá ser **true** ou **false**. O valor padrão será **true** se esse elemento estiver ausente.<br/> Se [**ConnectionType**](wlan-profileschema-connectiontype-wlanprofile-element.md) for definido como IBSS, esse valor deverá ser **false**.<br/> **Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para este elemento.<br/> |
-| [**SSID**](wlan-profileschema-ssid-ssidconfig-element.md)                 |                                                                   | Contém um SSID para uma LAN sem fio.<br/> **Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** No máximo um elemento [**SSID**](wlan-profileschema-ssid-ssidconfig-element.md) pode aparecer em um perfil.<br/>                                                                                                                                                                                                                                                                                                        |
+| [**Hex**](wlan-profileschema-hex-ssid-element.md)                         |                                                                   | Contém o SSID de uma LAN sem fio em formato hexadecimal.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| [**name**](wlan-profileschema-name-ssid-element.md)                       |                                                                   | Contém o nome (sensível a minúsculas) do SSID de uma LAN sem fio.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [**nonBroadcast**](wlan-profileschema-nonbroadcast-ssidconfig-element.md) | [booleano](/dotnet/api/system.boolean) | Indica se a rede transmite seu SSID.<br/> Se [**connectionType**](wlan-profileschema-connectiontype-wlanprofile-element.md) for definido como ESS, esse valor poderá ser **TRUE** ou **FALSE.** O valor padrão será **TRUE** se esse elemento estiver ausente.<br/> Se [**connectionType**](wlan-profileschema-connectiontype-wlanprofile-element.md) for definido como IBSS, esse valor deverá ser **FALSE.**<br/> **Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para esse elemento.<br/> |
+| [**Ssid**](wlan-profileschema-ssid-ssidconfig-element.md)                 |                                                                   | Contém um SSID para uma LAN sem fio.<br/> **Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** No máximo um [**elemento SSID**](wlan-profileschema-ssid-ssidconfig-element.md) pode aparecer em um perfil.<br/>                                                                                                                                                                                                                                                                                                        |
 
 
 
 ## <a name="examples"></a>Exemplos
 
-Para exibir perfis de exemplo que usam o elemento **SSIDConfig** , consulte [amostras de perfil sem fio](wireless-profile-samples.md).
+Para exibir perfis de exemplo que usam o **elemento SSIDConfig,** consulte [Exemplos de perfil sem fio](wireless-profile-samples.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -115,8 +115,8 @@ Para exibir perfis de exemplo que usam o elemento **SSIDConfig** , consulte [amo
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows Vista, Windows XP com \[ aplicativos de área de trabalho do SP3\]<br/> |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                |
+| Cliente mínimo com suporte<br/> | Windows Vista, Windows XP somente com aplicativos da área de trabalho SP3 \[\]<br/> |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                |
 | Redistribuível<br/>          | API de LAN sem fio para Windows XP com SP2<br/>                 |
 
 

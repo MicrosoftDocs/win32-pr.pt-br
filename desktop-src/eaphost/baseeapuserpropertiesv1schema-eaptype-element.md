@@ -1,6 +1,6 @@
 ---
-title: Elemento EapType (Propriedades de usuário base)
-description: Saiba mais sobre o elemento EapType. Esse elemento captura a configuração específica do método dentro do elemento EAP. | Elemento EapType (Propriedades de usuário base)
+title: Elemento EapType (propriedades base do usuário)
+description: Saiba mais sobre o elemento EapType. Esse elemento captura a configuração específica do método dentro do elemento Eap. | Elemento EapType (propriedades base do usuário)
 ms.assetid: 8ce81848-5b36-441f-967d-02c666ba5c6c
 keywords:
 - Elemento EapType EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5fffa74c69b5ecbf2823cfa79ae376fed524e8ca
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7d9cb6afe13b8c0060b26edbf5add618c776518b3b03e5abdc1f9131dbbcabde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105766475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118275529"
 ---
-# <a name="eaptype-element-base-user-properties"></a>Elemento EapType (Propriedades de usuário base)
+# <a name="eaptype-element-base-user-properties"></a>Elemento EapType (propriedades base do usuário)
 
-O elemento **EapType** captura a configuração específica do método dentro do elemento EAP.
+O **elemento EapType** captura a configuração específica do método dentro do elemento Eap.
 
 ``` syntax
 <xs:element name="EapType"
@@ -33,7 +33,7 @@ O elemento **EapType** captura a configuração específica do método dentro do
 
 ## <a name="remarks"></a>Comentários
 
-O elemento **EapType** é abstrato; cada método deve definir e usar um elemento derivado nos documentos da instância.
+O **elemento EapType** é abstrato; cada método deve definir e usar um elemento derivado nos documentos de instância.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,8 +41,8 @@ O elemento **EapType** é abstrato; cada método deve definir e usar um elemento
 
 | Função | Versão mínima do sistema operacional com suporte |
 |-------------------------------------|------------------------------------------------------|
-| Cliente<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

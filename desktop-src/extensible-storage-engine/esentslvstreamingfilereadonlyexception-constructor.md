@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8b5bdd060ccd8ae3fb042ac3c6bf5c9e5dff306b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6eed9ee85c1977f84cff5b21d24b02e770f28eecadbd9479b129f355b4a6772c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105814130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118259194"
 ---
 # <a name="esentslvstreamingfilereadonlyexception-constructor"></a>Construtor EsentSLVStreamingFileReadOnlyException
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,6 +56,6 @@ public EsentSLVStreamingFileReadOnlyException()
 
 [Classe EsentSLVStreamingFileReadOnlyException](./esentslvstreamingfilereadonlyexception-class.md)
 
-[Membros do EsentSLVStreamingFileReadOnlyException](./esentslvstreamingfilereadonlyexception-members.md)
+[Membros EsentSLVStreamingFileReadOnlyException](./esentslvstreamingfilereadonlyexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -3,7 +3,7 @@ title: Mensagem de EM_SETOPTIONS (RichEdit. h)
 description: Define as opções para um controle de edição rico.
 ms.assetid: 98ef2de9-4c34-45ba-8e8a-eaf505f97f56
 keywords:
-- Controles de EM_SETOPTIONS de mensagens do Windows
+- controles de Windows de mensagem de EM_SETOPTIONS
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c43dda8268b42dc264a86600826d2a6b550e35c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a5d5c4b7fd9e92261cedaf0681523ad0a3e25a37aa2814f6c00d0d9460e94bb1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118672605"
 ---
 # <a name="em_setoptions-message"></a>\_Mensagem em SEToptionss
 
@@ -73,7 +73,7 @@ Especifica um ou mais dos valores a seguir.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem retorna as opções atuais do controle de edição.
 
@@ -83,8 +83,8 @@ Essa mensagem retorna as opções atuais do controle de edição.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 

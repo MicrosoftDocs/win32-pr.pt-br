@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 78a34b506f4db72d8b61d7c0918c93658e18a062
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f34a45a0fc527c4c27e24ad3137dfe49438f9255baf1893e1090137bfb40a3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118619531"
 ---
 # <a name="denyallibss-networkfilter-element"></a>Elemento denyAllIBSS (networkFilter)
 
-O elemento denyAllIBSS (networkFilter) especifica se o acesso a todas as redes ad hoc está bloqueado. Quando **denyAllIBSS** tem um valor de true, os computadores não podem se conectar a uma rede ad hoc; caso contrário, os computadores podem se conectar a redes ad hoc.
+O elemento denyAllIBSS (networkFilter) especifica se o acesso a todas as redes ad hoc está bloqueado. Quando **denyAllIBSS tem** um valor TRUE, os máquinas não podem se conectar a uma rede ad hoc; caso contrário, os máquinas podem se conectar a redes ad hoc.
 
-O valor padrão para esse elemento é FALSE. Se **denyAllIBSS** não for especificado em um perfil, por padrão, os computadores poderão se conectar a redes ad-hoc.
+O valor padrão para esse elemento é FALSE. Se **denyAllIBSS não** for especificado em um perfil, os máquinas padrão poderão se conectar a redes ad hoc.
 
 ``` syntax
 <xs:element name="denyAllIBSS"
@@ -31,7 +31,7 @@ O valor padrão para esse elemento é FALSE. Se **denyAllIBSS** não for especif
  />
 ```
 
-O elemento **denyAllIBSS** é definido pelo elemento [**networkFilter**](wlan-policyschema-networkfilter-wlanpolicy-element.md) .
+O **elemento denyAllIBSS** é definido pelo [**elemento networkFilter.**](wlan-policyschema-networkfilter-wlanpolicy-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,8 +39,8 @@ O elemento **denyAllIBSS** é definido pelo elemento [**networkFilter**](wlan-po
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

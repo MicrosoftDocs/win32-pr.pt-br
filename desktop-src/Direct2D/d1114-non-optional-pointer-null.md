@@ -1,9 +1,9 @@
 ---
 title: D1114 de ponteiro nulo não opcional
 ms.assetid: 62f0f247-8359-4f75-b3ce-195202d491d5
-description: 'O parâmetro do método interface:: não é opcional. Um ponteiro nulo foi passado. Isso fará com que o Direct2D falhe.'
+description: 'O parâmetro do método interface:: não é opcional. Um ponteiro nulo foi passado. isso fará com que o Direct2D falhe.'
 keywords:
-- D1114 Direct2D nula de ponteiro não opcional
+- D1114 nulo de ponteiro não opcional Direct2D
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: abf8f070e339f2dcda5f818f5ffd5386c33d0e29
-ms.sourcegitcommit: 80ee822f6ebcbcc8f60042e0d14a39ef6989c731
+ms.openlocfilehash: fa5213eabfb4b22b9a37927495f5058cbfeb0b86b0f1f8b8f3a4ba1a2a2bdbb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105751946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118666205"
 ---
 # <a name="d1114-non-optional-pointer-null"></a>D1114: ponteiro não opcional nulo
 
-O \[ *parâmetro* \] de parâmetro para o *método* *interface*:: não é opcional. Um ponteiro **nulo** foi passado. Isso fará com que o Direct2D falhe.
+O \[ *parâmetro* \] de parâmetro para o *método* *interface*:: não é opcional. Um ponteiro **nulo** foi passado. isso fará com que o Direct2D falhe.
 
 ### <a name="placeholders"></a>Espaços reservados
 

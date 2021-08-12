@@ -25,16 +25,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 0e9db31dd452161a31575b6f7184a34c35dea71e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 15110b5801555947eed434b8148aec3cc753f6eec359f32b96cd67a5b2649f31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105751799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118675008"
 ---
 # <a name="win32_quickfixengineering-class"></a>\_Classe Win32 QuickFixEngineering
 
-A  [classe WMI](../wmisdk/retrieving-a-class.md) **\_ QuickFixEngineering do Win32** representa uma pequena atualização de todo o sistema, normalmente conhecida como atualização de QFE (rápida correção de engenharia), aplicada ao sistema operacional atual. Essa classe retorna apenas as atualizações fornecidas pela CBS (serviço baseado em componente). Essas atualizações não estão listadas no registro. As atualizações fornecidas pelo Microsoft Windows Installer (MSI) ou pelo site do Windows Update ( [https://update.microsoft.com](https://update.microsoft.com/) ) não são retornadas pelo **Win32 \_ QuickFixEngineering**.
+A  [classe WMI](../wmisdk/retrieving-a-class.md) **\_ QuickFixEngineering do Win32** representa uma pequena atualização de todo o sistema, normalmente conhecida como atualização de QFE (rápida correção de engenharia), aplicada ao sistema operacional atual. Essa classe retorna apenas as atualizações fornecidas pela CBS (serviço baseado em componente). Essas atualizações não estão listadas no registro. as atualizações fornecidas pelo Microsoft Windows Installer (MSI) ou pelo site de atualização do Windows ( [https://update.microsoft.com](https://update.microsoft.com/) ) não são retornadas pelo **Win32 \_ QuickFixEngineering**.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem de MOF.
 
@@ -131,7 +131,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| software WIN32REGISTRY \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \\ \\ hotfix")
+qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| SOFTWARE Win32Registry \\ \\ Microsoft \\ \\ Windows NT \\ \\ \\ \\ Hotfix CurrentVersion")
 </dt> </dl>
 
 Comentários adicionais relacionados à atualização.
@@ -147,7 +147,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](../wmisdk/key-qualifier.md), [**maxlen**](../wmisdk/standard-qualifiers.md) (260), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \\ \\ hotfix")
+qualificadores: [**chave**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (260), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SOFTWARE \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \\ \\ Hotfix")
 </dt> </dl>
 
 Identificador exclusivo associado a uma atualização específica.
@@ -181,7 +181,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| software WIN32REGISTRY \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \\ \\ hotfix")
+qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| SOFTWARE Win32Registry \\ \\ Microsoft \\ \\ Windows NT \\ \\ \\ \\ Hotfix CurrentVersion")
 </dt> </dl>
 
 Pessoa que instalou a atualização. Se esse valor for desconhecido, a propriedade estará vazia.
@@ -197,7 +197,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| software WIN32REGISTRY \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \\ \\ hotfix")
+qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| SOFTWARE Win32Registry \\ \\ Microsoft \\ \\ Windows NT \\ \\ \\ \\ Hotfix CurrentVersion")
 </dt> </dl>
 
 Data em que a atualização foi instalada. Se esse valor for desconhecido, a propriedade estará vazia.
@@ -236,7 +236,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](../wmisdk/key-qualifier.md), [**maxlen**](../wmisdk/standard-qualifiers.md) (260), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| software \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \\ \\ hotfix")
+qualificadores: [**chave**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (260), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| SOFTWARE \\ \\ Microsoft \\ \\ Windows NT \\ \\ CurrentVersion \\ \\ Hotfix")
 </dt> </dl>
 
 Service Pack em vigor quando a atualização foi aplicada. Se nenhum service pack tiver sido aplicado, a propriedade terá o valor SP0. Se não for possível determinar qual service pack estava em vigor, essa propriedade será **nula**.
@@ -323,28 +323,28 @@ Os valores incluem o seguinte:
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sob estresse** ("sob estresse")
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-Não **recuperar** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sem contato** ("sem contato")
+**Sem contato** ("Sem contato")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Perda de comunicação** ("perda de comunicação")
+**Perda de vírgula** ("comm perdida")
 
 
 </dt> <dd></dd> </dl>
@@ -353,23 +353,23 @@ Não **recuperar** ("Recover")
 
 ## <a name="remarks"></a>Comentários
 
-A classe **Win32 \_ QuickFixEngineering** é derivada de [**CIM \_ LogicalElement**](cim-logicalelement.md).
+A **classe \_ QuickFixEngineering do Win32** é derivada de [**CIM \_ LogicalElement.**](cim-logicalelement.md)
 
 Como as atualizações são armazenadas em dois locais, uma enumeração dessa classe pode resultar em duplicatas.
 
-Um Hot Fix é um patch de sistema operacional temporário produzido pelo grupo de engenharia de correção rápida na Microsoft. Assim como os service packs, os hot fixes representam as alterações feitas em uma versão do Windows após o lançamento do sistema operacional.
+Uma correção quente é um patch temporário do sistema operacional produzido pelo grupo Correção Rápida Engenharia da Microsoft. Assim como os service packs, as correções ativas representam alterações feitas em uma versão do Windows após o lançamento do sistema operacional.
 
-Ao contrário dos Service Packs, os hot fixes não se destinam à instalação em aberto em todos os computadores. Em vez disso, eles são desenvolvidos para resolver problemas muito específicos, geralmente para configurações de computador específicas.
+Ao contrário dos service packs, as correções ativas não se destinam à instalação sem problemas em todos os computadores. Em vez disso, eles são desenvolvidos para resolver problemas muito específicos, geralmente para configurações específicas do computador.
 
-Além disso, hot fixes representam instalações independentes que não dependem de outros hotfixes liberados. Por exemplo, um Hot Fix 4 hipotético não incluiria as correções de bug e a funcionalidade incluídas em hot fixes 1, 2 e 3. Na maioria dos casos, também não haverá nenhum requisito para instalar hot fixes 1, 2 e 3 antes de instalar o Hot Fix 4. Isso faz com que a enumeração de hot fixes individuais seja uma tarefa administrativa importante: para saber a configuração exata de um computador, você precisa saber não apenas quais Service Packs foram instalados, mas também quais hot fixes individuais foram instalados.
+Além disso, as correções ativas representam instalações independentes que não dependem de outras correções ativas liberadas. Por exemplo, uma correção quente hipotética 4 não incluiria as correções de bug e a funcionalidade incluídas nas correções a quente 1, 2 e 3. Na maioria dos casos, também não seria necessário instalar as correções a quente 1, 2 e 3 antes de instalar a correção 4. Isso torna a enumeração de correções ativas individuais uma tarefa administrativa importante: para saber a configuração exata de um computador, você precisa saber não apenas quais service packs foram instalados, mas também quais hot fixes individuais foram instalados.
 
-A classe **Win32 \_ QuickFixEngineering** permite que você Enumere todos os hot fixes que foram instalados em um computador
+A **classe \_ QuickFixEngineering do Win32** permite enumerar todas as correções ativas que foram instaladas em um computador
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo do PowerShell [obter programas instalados](https://Gallery.TechNet.Microsoft.Com/Get-Installed-Programs-fae091ed) retorna uma lista completa dos programas instalados.
+O exemplo do PowerShell [Obter Programas](https://Gallery.TechNet.Microsoft.Com/Get-Installed-Programs-fae091ed) Instalados retorna uma lista completa de programas instalados.
 
-O exemplo de VBScript a seguir enumera os hot fixes instalados em um computador
+O exemplo de VBScript a seguir enumera as correções a quente instaladas em um computador
 
 
 ```VB
@@ -395,13 +395,13 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
@@ -411,7 +411,7 @@ Next
 [Classes do sistema operacional](./operating-system-classes.md)
 </dt> <dt>
 
-[Tarefas do WMI: sistemas operacionais](../wmisdk/wmi-tasks--operating-systems.md)
+[Tarefas WMI: sistemas operacionais](../wmisdk/wmi-tasks--operating-systems.md)
 </dt> </dl>
 
  

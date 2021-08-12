@@ -30,12 +30,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b871d6f00174f05ab580aad54395851fa70af877
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 411500ea5f0fc3ba0f1d4067a6befe902a81af3154c91e76c36425c289616eb8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918945"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118620835"
 ---
 # <a name="nap-error-constants"></a>Constantes de erro NAP
 
@@ -267,7 +267,7 @@ Muitas chamadas simultâneas.
 A configuração de SHV já existe.
 
 > [!Note]  
-> Com suporte no Windows 7 ou posterior.
+> com suporte no Windows 7 ou posterior.
 
  
 
@@ -285,7 +285,7 @@ A configuração de SHV já existe.
 A configuração SHV não foi encontrada.
 
 > [!Note]  
-> Com suporte no Windows 7 ou posterior.
+> com suporte no Windows 7 ou posterior.
 
  
 
@@ -303,7 +303,7 @@ A configuração SHV não foi encontrada.
 O SHV atingiu o tempo limite na solicitação.
 
 > [!Note]  
-> Com suporte no Windows 7 ou posterior.
+> com suporte no Windows 7 ou posterior.
 
  
 
@@ -316,8 +316,8 @@ O SHV atingiu o tempo limite na solicitação.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>WinError. h</dt> </dl> |
 
 

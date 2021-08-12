@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. currentPresetTitle
+title: EFFECTS.currentPresetTitle
 description: O atributo currentPresetTitle recupera o título da predefinição atual da visualização atual.
 ms.assetid: 479968a2-fb5e-4cde-b3fb-1f940ea1078c
 keywords:
-- EFFECTs. currentPresetTitle Windows Media Player
+- EFFECTS.currentPresetTitle Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a93674b4be5e6490c846827ec7b17d496a5484b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1199b29ecc2871512e1d8dde7effda19a47998bd7bc6113ffabfa51ace07d559
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811331"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118578805"
 ---
-# <a name="effectscurrentpresettitle"></a>EFFECTs. currentPresetTitle
+# <a name="effectscurrentpresettitle"></a>EFFECTS.currentPresetTitle
 
-O atributo **currentPresetTitle** recupera o título da predefinição atual da visualização atual.
+O **atributo currentPresetTitle** recupera o título da predefinição atual da visualização atual.
 
 ``` syntax
         elementID.currentPresetTitle
@@ -29,7 +29,7 @@ O atributo **currentPresetTitle** recupera o título da predefinição atual da 
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Este atributo é uma **cadeia de caracteres** somente leitura.
+Esse atributo é uma Cadeia de Caracteres somente **leitura.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Este atributo é uma **cadeia de caracteres** somente leitura.
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -45,7 +45,7 @@ Este atributo é uma **cadeia de caracteres** somente leitura.
 
 <dl> <dt>
 
-[**Elemento EFFECTs**](effects-element.md)
+[**Elemento EFFECTS**](effects-element.md)
 </dt> </dl>
 
  

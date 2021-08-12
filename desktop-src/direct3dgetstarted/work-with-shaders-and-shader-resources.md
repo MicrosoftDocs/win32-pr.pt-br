@@ -1,56 +1,56 @@
 ---
 title: Trabalhar com sombreadores e recursos de sombreador
-description: É hora de aprender a trabalhar com sombreadores e recursos de sombreador no desenvolvimento de seu jogo Microsoft DirectX para Windows 8.
+description: É hora de aprender a trabalhar com sombreadores e recursos de sombreador no desenvolvimento de seu jogo do Microsoft DirectX para Windows 8.
 ms.assetid: 25a11983-e3f6-4bd3-86f1-d660edc4cd4b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 26ac147971221b04b02f2a45af8e8d4f6855a5e3
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bbf0152ba74dcc8dd1c602b69d854634502c928a0deefe5521bcab8999954049
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118288546"
 ---
 # <a name="work-with-shaders-and-shader-resources"></a>Trabalhar com sombreadores e recursos de sombreador
 
-É hora de aprender a trabalhar com sombreadores e recursos de sombreador no desenvolvimento de seu jogo Microsoft DirectX para Windows 8. Vimos como configurar o dispositivo e os recursos gráficos e, talvez, você até mesmo começou a modificar seu pipeline. Agora, vamos examinar os sombreadores de pixel e Vertex.
+É hora de aprender a trabalhar com sombreadores e recursos de sombreador no desenvolvimento de seu jogo do Microsoft DirectX para Windows 8. Vimos como configurar o dispositivo e os recursos gráficos e talvez você até tenha começado a modificar seu pipeline. Agora, vamos ver sombreadores de pixel e vértice.
 
-Se você não estiver familiarizado com as linguagens do sombreador, uma discussão rápida está em ordem. Os sombreadores são programas pequenos e de baixo nível que são compilados e executados em estágios específicos no pipeline de gráficos. Sua especialidade é operações matemáticas de ponto flutuante muito rápidas. Os programas de sombreador mais comuns são:
+Se você não estiver familiarizado com as linguagens de sombreador, uma discussão rápida será em ordem. Sombreadores são programas pequenos e de baixo nível que são compilados e executados em estágios específicos no pipeline de gráficos. Sua especialização é operações matemáticas de ponto flutuante muito rápidas. Os programas de sombreador mais comuns são:
 
--   **Sombreador de vértice**— executado para cada vértice em uma cena. Esse sombreador opera em elementos de buffer de vértice fornecidos a ele pelo aplicativo de chamada e resulta minimamente em um vetor de posição de 4 componentes que será rasterizado em uma posição de pixel.
--   **Sombreador de pixel**— executado para cada pixel em um destino de renderização. Esse sombreador recebe coordenadas rasterizadas de estágios de sombreador anteriores (nos pipelines mais simples, esse seria o sombreador de vértice) e retorna uma cor (ou outro valor de 4 componentes) para essa posição de pixel, que é então gravada em um destino de renderização.
+-   **Sombreador de vértice**– executado para cada vértice em uma cena. Esse sombreador opera em elementos de buffer de vértice fornecidos pelo aplicativo de chamada e resulta minimamente em um vetor de posição de quatro componentes que será rasterizado em uma posição de pixel.
+-   **Sombreador de** pixel — executado para cada pixel em um destino de renderização. Esse sombreador recebe coordenadas rasterizadas de estágios de sombreador anteriores (nos pipelines mais simples, esse seria o sombreador de vértice) e retorna uma cor (ou outro valor de 4 componentes) para essa posição de pixel, que é então escrita em um destino de renderização.
 
-Este exemplo inclui um vértice muito básico e sombreadores de pixel que só desenham geometria e sombreadores mais complexos que adicionam cálculos de iluminação básica.
+Este exemplo inclui sombreadores de vértice e pixel muito básicos que desenham apenas geometria e sombreadores mais complexos que adicionam cálculos básicos de iluminação.
 
-Os programas de sombreador são escritos na linguagem de sombreamento de alto nível da Microsoft (HLSL). A sintaxe HLSL é muito parecida com C, mas sem os ponteiros. Os programas de sombreador devem ser muito compactados e eficientes. Se o sombreador for compilado em muitas instruções, ele não poderá ser executado e um erro será retornado. (Observe que o número exato de instruções permitidas faz parte do [nível de recurso do Direct3D](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro).)
+Programas de sombreador são escritos em HLSL (Microsoft High Level Shader Language). A sintaxe HLSL se parece muito com C, mas sem os ponteiros. Programas de sombreador devem ser muito compactos e eficientes. Se o sombreador for compilado com muitas instruções, ele não poderá ser executado e um erro será retornado. (Observe que o número exato de instruções permitidas faz parte do [nível de recurso direct3D](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro).)
 
-No Direct3D, os sombreadores não são compilados em tempo de execução; Eles são compilados quando o restante do programa é compilado. Quando você compila seu aplicativo com Microsoft Visual Studio 2013, os arquivos HLSL são compilados em arquivos CSO (. CSO) que seu aplicativo deve carregar e posicionar na memória GPU antes do desenho. Certifique-se de incluir esses arquivos de CSO com seu aplicativo ao empacotá-los; Eles são ativos, assim como malhas e texturas.
+No Direct3D, os sombreadores não são compilados em tempo de executar; eles são compilados quando o restante do programa é compilado. Quando você compila seu aplicativo com o Microsoft Visual Studio 2013, os arquivos HLSL são compilados em arquivos CSO (.cso) que seu aplicativo deve carregar e colocar na memória da GPU antes do desenho. Certifique-se de incluir esses arquivos CSO com seu aplicativo ao empacotá-lo; eles são ativos, assim como malhas e texturas.
 
-## <a name="understand-hlsl-semantics"></a>Entender a semântica do HLSL
+## <a name="understand-hlsl-semantics"></a>Entender a semântica HLSL
 
-É importante levar alguns instantes para discutir a semântica HLSL antes de continuar, pois elas geralmente são um ponto de confusão para novos desenvolvedores de Direct3D. A semântica HLSL são cadeias de caracteres que identificam um valor passado entre o aplicativo e um programa sombreador. Embora possam ser qualquer uma das várias cadeias de caracteres possíveis, a prática recomendada é usar uma cadeia de caracteres como `POSITION` ou `COLOR` que indique o uso. Você atribui essas semânticas ao construir um buffer constante ou layout de entrada. Você também pode adicionar um número de 0 a 7 à semântica, o que permite usar Registros separados para valores semelhantes. Por exemplo: COLOR0, COLOR1, COLOR2...
+É importante levar algum tempo para discutir a semântica HLSL antes de continuarmos, pois elas geralmente são um ponto de confusão para novos desenvolvedores do Direct3D. Semântica HLSL são cadeias de caracteres que identificam um valor passado entre o aplicativo e um programa de sombreador. Embora eles possam ser uma variedade de cadeias de caracteres possíveis, a melhor prática é usar uma cadeia de caracteres como ou que `POSITION` `COLOR` indique o uso. Atribua essas semânticas ao construir um buffer constante ou layout de entrada. Você também pode adicionar um número de 0 a 7 à semântica, o que permite usar Registros separados para valores semelhantes. Por exemplo: COLOR0, COLOR1, COLOR2...
 
-A semântica que é prefixada com "VA \_ " são semânticas de *valor do sistema* que são gravadas pelo seu programa de sombreador; o jogo em si (em execução na CPU) não pode modificá-las. Normalmente, essas semânticas contêm valores que são entradas ou saídas de outro estágio do sombreador no pipeline de gráficos ou que são gerados inteiramente pela GPU.
+Semântica prefixada com "SV" são semânticas de valor do sistema que são escritas pelo programa de sombreador; o próprio jogo (em execução na CPU) não pode \_ modificá-los.  Normalmente, essas semânticas contêm valores que são entradas ou saídas de outro estágio de sombreador no pipeline de gráficos ou que são gerados inteiramente pela GPU.
 
-Além disso, a `SV_` semântica tem comportamentos diferentes quando eles são usados para especificar a entrada ou a saída de um estágio do sombreador. Por exemplo, `SV_POSITION` (saída) contém os dados de vértice transformados durante o estágio do sombreador de vértice e `SV_POSITION` (*entrada*) contém os valores de posição de pixel que foram interpolados pela GPU durante o estágio de rasterização.
+Além disso, a semântica tem comportamentos diferentes quando são usados para especificar a entrada ou `SV_` saída de um estágio de sombreador. Por exemplo, (saída) contém os dados de vértice transformados durante o estágio do sombreador de vértice e ( entrada ) contém os valores de posição de pixel que foram interpolados pela GPU durante o estágio de `SV_POSITION` `SV_POSITION` rasterização.
 
-Aqui estão algumas semânticas HLSL comuns:
+Aqui estão algumas semânticas comuns de HLSL:
 
--   `POSITION`(*n*) para dados de buffer de vértice. `SV_POSITION` fornece uma posição de pixel para o sombreador de pixel e não pode ser escrito por seu jogo.
+-   `POSITION`(*n*) para dados de buffer de vértice. `SV_POSITION` fornece uma posição de pixel para o sombreador de pixel e não pode ser gravado pelo seu jogo.
 -   `NORMAL`(*n*) para dados normais fornecidos pelo buffer de vértice.
--   `TEXCOORD`(*n*) para dados de coordenadas UV de textura fornecidos para um sombreador.
--   `COLOR`(n) para dados de cor RGBA fornecidos para um sombreador. Observe que ele é tratado de forma idêntica para coordenar dados, incluindo a interpolação do valor durante a rasterização; a semântica simplesmente ajuda a identificar se são dados coloridos.
--   `SV_Target`\[n \] para gravação de um sombreador de pixel em uma textura de destino ou outro buffer de pixel.
+-   `TEXCOORD`(*n*) para dados de coordenada UV de textura fornecidos a um sombreador.
+-   `COLOR`(n) para dados de cor RGBA fornecidos a um sombreador. Observe que ele é tratado de forma idêntica para coordenar dados, incluindo a interpolação do valor durante a rasterização; a semântica simplesmente ajuda a identificar que são dados de cores.
+-   `SV_Target`\[n \] para escrever de um sombreador de pixel para uma textura de destino ou outro buffer de pixel.
 
-Veremos alguns exemplos de semântica HLSL à medida que examinamos o exemplo.
+Veremos alguns exemplos de semântica HLSL ao analisarmos o exemplo.
 
-## <a name="read-from-the-constant-buffers"></a>Ler dos buffers de constantes
+## <a name="read-from-the-constant-buffers"></a>Leitura dos buffers constantes
 
-Qualquer sombreador pode ler de um buffer constante se esse buffer estiver anexado a seu estágio como um recurso. Neste exemplo, somente o sombreador de vértice recebe um buffer de constante.
+Qualquer sombreador poderá ler de um buffer constante se esse buffer estiver anexado ao estágio como um recurso. Neste exemplo, somente o sombreador de vértice recebe um buffer constante.
 
-O buffer de constantes é declarado em dois locais: no código C++ e nos arquivos HLSL correspondentes que o acessarão.
+O buffer constante é declarado em dois locais: no código C++ e nos arquivos HLSL correspondentes que o acessarão.
 
-Veja como a struct do buffer de constantes é declarada no código C++.
+Veja como o struct de buffer constante é declarado no código C++.
 
 
 ```C++
@@ -63,7 +63,7 @@ typedef struct _constantBufferStruct {
 
 
 
-Ao declarar a estrutura do buffer constante em seu código C++, verifique se todos os dados estão alinhados corretamente ao longo dos limites de 16 bytes. A maneira mais fácil de fazer isso é usar tipos [DirectXMath](/windows/desktop/dxmath/directxmath-portal) , como **XMFLOAT4** ou **XMFLOAT4X4**, como visto no código de exemplo. Você também pode proteger contra buffers desalinhados declarando uma declaração estática:
+Ao declarar a estrutura para o buffer constante em seu código C++, verifique se todos os dados estão alinhados corretamente ao longo dos limites de 16 byte. A maneira mais fácil de fazer isso é usar tipos [DirectXMath,](/windows/desktop/dxmath/directxmath-portal) como **XMFLOAT4** ou **XMFLOAT4X4,** como visto no código de exemplo. Você também pode proteger contra buffers desalinhados declarando uma declaração estática:
 
 
 ```C++
@@ -73,9 +73,9 @@ static_assert((sizeof(ConstantBufferStruct) % 16) == 0, "Constant Buffer size mu
 
 
 
-Essa linha de código causará um erro no momento da compilação se **ConstantBufferStruct** não estiver alinhado em 16 bytes. Para obter mais informações sobre alinhamento e empacotamento de buffer constante, consulte [regras de empacotamento para variáveis constantes](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-packing-rules).
+Essa linha de código causará um erro no tempo de compilação se **ConstantBufferStruct** não estiver alinhado com 16 byte. Para obter mais informações sobre o alinhamento e o empacotamento de buffer constantes, consulte [Regras de empacotamento para variáveis constantes.](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-packing-rules)
 
-Agora, veja como o buffer de constantes é declarado no sombreador de vértice HLSL.
+Agora, veja como o buffer constante é declarado no sombreador de vértice HLSL.
 
 
 ```C++
@@ -89,24 +89,24 @@ cbuffer ModelViewProjectionConstantBuffer : register(b0)
 
 
 
-Todos os buffers — constante, textura, amostra ou outro — devem ter um registro definido para que a GPU possa acessá-los. Cada estágio do sombreador permite até 15 buffers constantes, e cada buffer pode conter até 4.096 variáveis constantes. A sintaxe de declaração Register-Usage é a seguinte:
+Todos os buffers – constante, textura, amostra ou outros – devem ter um registro definido para que a GPU possa acessá-los. Cada estágio do sombreador permite até 15 buffers constantes e cada buffer pode conter até 4.096 variáveis constantes. A sintaxe de declaração register-usage é a seguinte:
 
--   **b * * *\#* : um registro para um buffer constante (** CBuffer * *).
--   **t * * *\#* : um registro para um buffer de textura (** tbuffers * *).
--   **s * * \#**: um registro para uma amostra. (Um classificador define o comportamento de pesquisa para texels no recurso de textura.)
+-   **b:** _\#_ um registro para um buffer constante (**cbuffer**).
+-   **t:** _\#_ um registro para um buffer de textura (**tbuffer**).
+-   **s:** _\#_ um registro para um amostrador. (Um exemplo define o comportamento de busca para os texels no recurso de textura.)
 
-Por exemplo, o HLSL para um sombreador de pixel pode pegar uma textura e uma amostra como entrada com uma declaração como esta.
+Por exemplo, o HLSL para um sombreador de pixel pode levar uma textura e um exemplo como entrada com uma declaração como esta.
 
 ``` syntax
 Texture2D simpleTexture : register(t0);
 SamplerState simpleSampler : register(s0);
 ```
 
-Cabe a você atribuir buffers constantes aos registros — quando você configura o pipeline, anexa um buffer constante ao mesmo slot ao qual você o atribuiu no arquivo HLSL. Por exemplo, no tópico anterior, a chamada para [**VSSetConstantBuffers**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-vssetconstantbuffers) indica ' 0 ' para o primeiro parâmetro. Isso informa ao Direct3D para anexar o recurso de buffer constante para registrar 0, que corresponde à atribuição do buffer a ser **registrada (B0)** no arquivo HLSL.
+É de sua responsabilidade atribuir buffers constantes aos registros – ao configurar o pipeline, você anexa um buffer constante ao mesmo slot ao qual você o atribuiu no arquivo HLSL. Por exemplo, no tópico anterior, a chamada para [**VSSetConstantBuffers**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-vssetconstantbuffers) indica '0' para o primeiro parâmetro. Isso informa ao Direct3D para anexar o recurso de buffer constante para registrar 0, que corresponde à atribuição do buffer para **registrar(b0)** no arquivo HLSL.
 
-## <a name="read-from-the-vertex-buffers"></a>Ler dos buffers de vértice
+## <a name="read-from-the-vertex-buffers"></a>Leitura dos buffers de vértice
 
-O buffer de vértice fornece os dados de triângulo para os objetos de cena ao (s) sombreador (es) de vértice. Assim como ocorre com o buffer de constantes, a estrutura do buffer de vértice é declarada no código C++, usando regras de empacotamento semelhantes.
+O buffer de vértice fornece os dados de triângulo para os objetos de cena para os sombreador de vértice. Assim como no buffer constante, o struct do buffer de vértice é declarado no código C++, usando regras de empacotamento semelhantes.
 
 
 ```C++
@@ -119,7 +119,7 @@ typedef struct _vertexPositionColor
 
 
 
-Não há formato padrão para dados de vértice no Direct3D 11. Em vez disso, definimos nosso próprio layout de dados de vértice usando um descritor; os campos de dados são definidos usando uma matriz de estruturas [**\_ desc de \_ elemento \_ de entrada D3D11**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_input_element_desc) . Aqui, mostramos um layout de entrada simples que descreve o mesmo formato de vértice do struct anterior:
+Não há nenhum formato padrão para dados de vértice no Direct3D 11. Em vez disso, definimos nosso próprio layout de dados de vértice usando um descritor; os campos de dados são definidos usando uma matriz de [**estruturas D3D11 \_ INPUT ELEMENT \_ \_ DESC.**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_input_element_desc) Aqui, mostramos um layout de entrada simples que descreve o mesmo formato de vértice que o struct anterior:
 
 
 ```C++
@@ -143,7 +143,7 @@ hr = device->CreateInputLayout(
 
 
 
-Se você adicionar dados ao formato de vértice ao modificar o código de exemplo, certifique-se de atualizar o layout de entrada também, ou o sombreador não será capaz de interpretá-lo. Você pode modificar o layout do vértice da seguinte maneira:
+Se você adicionar dados ao formato de vértice ao modificar o código de exemplo, atualize também o layout de entrada ou o sombreador não poderá interpretá-lo. Você pode modificar o layout de vértice desta forma:
 
 
 ```C++
@@ -157,7 +157,7 @@ typedef struct _vertexPositionColorTangent
 
 
 
-Nesse caso, você modificaria a definição de layout de entrada da seguinte maneira.
+Nesse caso, você modificaria a definição de layout de entrada da seguinte forma.
 
 
 ```C++
@@ -184,9 +184,9 @@ hr = device->CreateInputLayout(
 
 
 
-Cada uma das definições de elemento de layout de entrada é prefixada com uma cadeia de caracteres, como "POSITION" ou "NORMAL", que é a semântica que discutimos anteriormente neste tópico. É como um identificador que ajuda a GPU a identificar esse elemento ao processar o vértice. Escolha nomes comuns e significativos para seus elementos de vértice.
+Cada uma das definições de elemento de layout de entrada é prefixada com uma cadeia de caracteres, como "POSITION" ou "NORMAL"— que é a semântica que discutimos anteriormente neste tópico. É como um identificador que ajuda a GPU a identificar esse elemento ao processar o vértice. Escolha nomes comuns e significativos para seus elementos de vértice.
 
-Assim como ocorre com o buffer de constantes, o sombreador de vértice tem uma definição de buffer correspondente para elementos de vértice de entrada. (É por isso que fornecemos uma referência ao recurso de sombreador de vértice ao criar o layout de entrada – o Direct3D valida o layout de dados por vértice com a estrutura de entrada do sombreador.) Observe como a semântica corresponde entre a definição de layout de entrada e essa declaração de buffer HLSL. No entanto, `COLOR` tem um "0" acrescentado a ele. Não é necessário adicionar o 0 se você tiver apenas um `COLOR` elemento declarado no layout, mas é uma prática recomendada acrescentá-lo caso você opte por adicionar mais elementos de cor no futuro.
+Assim como no buffer constante, o sombreador de vértice tem uma definição de buffer correspondente para elementos de vértice de entrada. (É por isso que fornecemos uma referência ao recurso de sombreador de vértice ao criar o layout de entrada – o Direct3D valida o layout de dados por vértice com o struct de entrada do sombreador.) Observe como a semântica é a mesma entre a definição de layout de entrada e essa declaração de buffer HLSL. No `COLOR` entanto, tem um "0" anexado a ele. Não é necessário adicionar o 0 se você tiver apenas um elemento declarado no layout, mas é uma boa prática adicioná-lo caso você opte por adicionar mais elementos de `COLOR` cor no futuro.
 
 
 ```C++
@@ -201,9 +201,9 @@ struct VS_INPUT
 
 ## <a name="pass-data-between-shaders"></a>Passar dados entre sombreadores
 
-Os sombreadores assumem tipos de entrada e retornam tipos de saída de suas funções principais na execução. Para o sombreador de vértice definido na seção anterior, o tipo de entrada era a estrutura de entrada do VS \_ e definimos um layout de entrada correspondente e um struct do C++. Uma matriz dessa estrutura é usada para criar um buffer de vértice no método **CREATECUBE** .
+Os sombreadores levam tipos de entrada e retornam tipos de saída de suas funções principais após a execução. Para o sombreador de vértice definido na seção anterior, o tipo de entrada era a estrutura INPUT do VS e definimos um layout de entrada correspondente e \_ o struct do C++. Uma matriz desse struct é usada para criar um buffer de vértice no **método CreateCube.**
 
-O sombreador de vértice retorna uma \_ estrutura de entrada PS, que deve conter minimamente a posição de vértice final de 4 componentes (FLOAT4). Esse valor de posição deve ter a semântica de valor do sistema, `SV_POSITION` , declarado para ela para que a GPU tenha os dados necessários para executar a próxima etapa de desenho. Observe que não há uma correspondência de 1:1 entre a saída do sombreador de vértice e a entrada do sombreador de pixel; o sombreador de vértice retorna uma estrutura para cada vértice que é fornecido, mas o sombreador de pixel é executado uma vez para cada pixel. Isso ocorre porque os dados por vértice passam pela primeira vez pelo estágio de rasterização. Esse estágio decide quais pixels "abrangem" a geometria que você está desenhando, computa dados interpolados por vértice para cada pixel e, em seguida, chama o sombreador de pixel uma vez para cada um desses pixels. A interpolação é o comportamento padrão ao rasterizar valores de saída e é essencial em particular para o processamento correto de dados de vetor de saída (vetores leves, Normals e tangentes por vértice, entre outros).
+O sombreador de vértice retorna uma estrutura input PS, que deve conter minimamente a posição final do vértice de 4 componentes \_ (float4). Esse valor de posição deve ter a semântica do valor do sistema, , declarada para que a GPU tenha os dados necessários para `SV_POSITION` executar a próxima etapa de desenho. Observe que não há uma correspondência 1:1 entre a saída do sombreador de vértice e a entrada do sombreador de pixel; O sombreador de vértice retorna uma estrutura para cada vértice que ele recebe, mas o sombreador de pixel é executado uma vez para cada pixel. Isso porque os dados por vértice passam primeiro pelo estágio de rasterização. Este estágio decide quais pixels "cobrem" a geometria que você está desenhando, calcula dados interpolados por vértice para cada pixel e, em seguida, chama o sombreador de pixel uma vez para cada um desses pixels. A interpolação é o comportamento padrão ao rasterizar valores de saída e é essencial, em particular, para o processamento correto de dados de vetor de saída (vetores claros, normais por vértice e tangentes e outros).
 
 
 ```C++
@@ -216,9 +216,9 @@ struct PS_INPUT
 
 
 
-## <a name="review-the-vertex-shader"></a>Examinar o sombreador de vértice
+## <a name="review-the-vertex-shader"></a>Revisar o sombreador de vértice
 
-O sombreador de vértice de exemplo é muito simples: Pegue um vértice (posição e cor), transforme a posição de coordenadas de modelo em coordenadas projetadas em perspectiva e retorne-a (juntamente com a cor) para o rasterizador. Observe que o valor de cor é interpolado à direita junto com os dados de posição, fornecendo um valor diferente para cada pixel, mesmo que o sombreador de vértice não tenha realizado nenhum cálculo no valor de cor.
+O sombreador de vértice de exemplo é muito simples: pegue um vértice (posição e cor), transforme a posição das coordenadas do modelo em coordenadas projetadas de perspectiva e retorne-a (juntamente com a cor) para o rasterizador. Observe que o valor de cor é interpolado à direita junto com os dados de posição, fornecendo um valor diferente para cada pixel, embora o sombreador de vértice não tenha realizado cálculos no valor da cor.
 
 
 ```C++
@@ -243,7 +243,7 @@ VS_OUTPUT main(VS_INPUT input) // main is the default function name
 
 
 
-Um sombreador de vértice mais complexo, como um que configura os vértices de um objeto para sombreamento Phong, pode ser mais parecido com este. Nesse caso, estamos aproveitando o fato de que os vetores e os normais são interpolados para aproximar uma superfície de aparência suave.
+Um sombreador de vértice mais complexo, como um que configura os vértices de um objeto para sombreamento Phong, pode ser mais parecido com isso. Nesse caso, estamos aproveitando o fato de que os vetores e normais são interpolados para aproximar uma superfície de aparência suave.
 
 ``` syntax
 // A constant buffer that stores the three basic column-major matrices for composing geometry.
@@ -301,9 +301,9 @@ PixelShaderInput main(VertexShaderInput input)
 }
 ```
 
-## <a name="review-the-pixel-shader"></a>Examinar o sombreador de pixel
+## <a name="review-the-pixel-shader"></a>Revisar o sombreador de pixel
 
-Este sombreador de pixel neste exemplo é bastante possivelmente a quantidade mínima absoluta de código que você pode ter em um sombreador de pixel. Ele usa os dados de cores de pixel interpolados gerados durante a rasterização e retorna-os como saída, onde serão gravados em um destino de renderização. Quão entediante!
+Esse sombreador de pixel neste exemplo é possivelmente a quantidade mínima absoluta de código que você pode ter em um sombreador de pixel. Ele pega os dados de cores de pixel interpolados gerados durante a rasterização e os retorna como saída, em que eles serão gravados em um destino de renderização. Que entediante!
 
 
 ```C++
@@ -390,7 +390,7 @@ Os sombreadores são ferramentas muito poderosas que podem ser usadas para gerar
 Espero que você esteja familiarizado com o DirectX 11at esse ponto e esteja pronto para começar a trabalhar em seu projeto. Aqui estão alguns links para ajudar a responder a outras perguntas que você pode ter sobre desenvolvimento com DirectX e C++:
 
 -   [Desenvolvendo jogos](/previous-versions/windows/apps/hh452744(v=win.10))
--   [Usar as ferramentas do Visual Studio para programação de jogos DirectX](/previous-versions/windows/apps/dn166877(v=win.10))
+-   [usar as ferramentas de Visual Studio para a programação de jogos DirectX](/previous-versions/windows/apps/dn166877(v=win.10))
 -   [Desenvolvimento de jogos DirectX e demonstrativos de exemplo](/previous-versions/windows/apps/hh465149(v=win.10))
 -   [Recursos de programação de jogos adicionais](/previous-versions/windows/apps/dn194515(v=win.10))
 
@@ -404,6 +404,6 @@ Espero que você esteja familiarizado com o DirectX 11at esse ponto e esteja pro
 [Entender o pipeline de renderização do Direct3D 11](understand-the-directx-11-2-graphics-pipeline.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

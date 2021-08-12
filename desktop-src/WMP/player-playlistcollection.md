@@ -3,7 +3,7 @@ title: Player. playlistcollection
 description: A propriedade playlistcollection recupera o objeto Playlistcollection.
 ms.assetid: c5500edd-6658-48cd-9486-70f7b9ae78e4
 keywords:
-- Player. playlistcollection Windows Media Player
+- Windows Media Player Player. playlistcollection
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7548a57a45ba30f185c9c1a205ce87069da7434a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a1576e915b2a037b4bd90a5a1d337bf3e3b854f41e8e924c933751a4b6eaa30e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105762946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118572025"
 ---
 # <a name="playerplaylistcollection"></a>Player. playlistcollection
 
 A propriedade **playlistcollection** recupera o objeto **playlistcollection** .
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 *Player* . **playlistcollection**
 
@@ -58,10 +58,10 @@ Para recuperar o valor dessa propriedade, é necessário ter acesso de leitura �
 [**Objeto playlistcollection**](playlistcollection-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações. mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentFileCloseException'
+description: 'Saiba mais sobre: Métodos EsentFileCloseException'
 title: 'Métodos EsentFileCloseException '
 TOCTitle: EsentFileCloseException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentFileCloseException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101677
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 14f904683e9c664194c46762e311ddeedbbae605
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6c09c5663a656776de40d0be5b99c9ee27dc55afb2401b6dfced4dfcf7c14ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118269212"
 ---
 # <a name="esentfilecloseexception-methods"></a>Métodos EsentFileCloseException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentFileCloseException](./esentfilecloseexception-class.md) expõe os membros a seguir.
+O [tipo EsentFileCloseException](./esentfilecloseexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentFileCloseException](./esentfilecloseexception-class.md) expõe os m
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentFileCloseException](./esentfilecloseexception-class.md) expõe os m
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentFileCloseException](./esentfilecloseexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

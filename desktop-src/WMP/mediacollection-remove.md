@@ -1,11 +1,11 @@
 ---
-title: Método mediacollection. Remove
-description: O método remove remove um item da coleção de mídia.
+title: Método MediaCollection.remove
+description: O método remove remove um item da coleção de mídias.
 ms.assetid: 7d4c03ed-01c8-4112-90b6-5de52eacb199
 keywords:
-- remover método Windows Media Player
-- Método Remove Windows Media Player, classe Mediacollection
-- Classe mediacollection Windows Media Player, remover método
+- remover o método Windows Media Player
+- classe remove method Windows Media Player , MediaCollection
+- Classe MediaCollection Windows Media Player , remover método
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6667a5b95920ac63f38d3a581e6f8e05bdf8d233
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a8dd0643741a15bf114acfef63459e67c332b06b33e6284b032979d4ad15c1d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118574603"
 ---
-# <a name="mediacollectionremove-method"></a>Método mediacollection. Remove
+# <a name="mediacollectionremove-method"></a>Método MediaCollection.remove
 
-O método **Remove** remove um item da coleção de mídia.
+O **método remove** remove um item da coleção de mídias.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,17 +43,17 @@ MediaCollection.remove(
 
 <dl> <dt>
 
-*Item* \[ de no\]
+*item* \[ Em\]
 </dt> <dd>
 
-Objeto de **mídia** a ser removido.
+**Objeto de** mídia a ser removido.
 
 </dd> <dt>
 
-*excluir* \[ no\]
+*excluir* \[ Em\]
 </dt> <dd>
 
-**Booliano** que indica se o item deve ser removido.
+**Booliana** que indica se o item deve ser removido.
 
 </dd> </dl>
 
@@ -65,11 +65,11 @@ Esse método não retorna um valor.
 
 Esse método exclui um item da biblioteca. Esse método não exclui arquivos do computador do usuário.
 
-Para usar esse método, é necessário ter acesso completo à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
+Para usar esse método, é necessário ter acesso completo à biblioteca. Para obter mais informações, consulte [Acesso à biblioteca.](library-access.md)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir, depois de solicitar o usuário, exclui permanentemente o primeiro item de mídia na coleção de mídia usando *mediacollection*. **remover**. O objeto de **jogador** foi criado com ID = "Player".
+O exemplo JScript a seguir, depois de solicitar ao usuário, exclui permanentemente o primeiro item de mídia na coleção de mídias usando *MediaCollection*. **remover**. O **objeto** Player foi criado com ID = "Player".
 
 
 ```JScript
@@ -102,7 +102,7 @@ if (answer){
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -114,16 +114,16 @@ if (answer){
 [**Objeto de mídia**](media-object.md)
 </dt> <dt>
 
-[**Objeto mediacollection**](mediacollection-object.md)
+[**Objeto MediaCollection**](mediacollection-object.md)
 </dt> <dt>
 
-[**Mediacollection. adicionar**](mediacollection-add.md)
+[**MediaCollection.add**](mediacollection-add.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 009ad522-35da-4053-a7f6-61d7d240b98c
 title: Tipos de marca
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7ab53b9c3b85263ddcdbe80e3979d576685bd73
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8308f0adb9195363825a95253f1118305a88b9adeb46e9e7ce9518a6e005d96e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104163944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118666387"
 ---
 # <a name="tag-types"></a>Tipos de marca
 
@@ -37,8 +37,8 @@ Descreve o tipo de dados do valor associado a uma marca.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

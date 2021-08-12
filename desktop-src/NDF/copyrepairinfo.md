@@ -1,9 +1,9 @@
 ---
-title: Função CopyRepairInfo (Ndattributils. h)
+title: Função CopyRepairInfo (Ndattributils.h)
 description: Cria uma cópia de uma estrutura RepairInfo.
 ms.assetid: a1147ce6-9a90-4a46-8fe4-da3353391a13
 keywords:
-- NDF da função CopyRepairInfo
+- Função CopyRepairInfo NDF
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a24d15ec5a8a69b3c8c40700273ebcb6f32bcfd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e40a054df2b16684840f22295f0c26de6029ef150a97ca8839c98d94713ab030
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118620431"
 ---
 # <a name="copyrepairinfo-function"></a>Função CopyRepairInfo
 
-A função **CopyRepairInfo** cria uma cópia de uma estrutura [**RepairInfo**](/windows/win32/api/ndattrib/ns-ndattrib-repairinfo) .
+A **função CopyRepairInfo** cria uma cópia de uma [**estrutura RepairInfo.**](/windows/win32/api/ndattrib/ns-ndattrib-repairinfo)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,29 +41,29 @@ HRESULT CopyRepairInfo(
 
 <dl> <dt>
 
-*Dest* \[ fora\]
+*Dest* \[ out\]
 </dt> <dd>
 
-Tipo: **[**RepairInfo**](/windows/win32/api/ndattrib/ns-ndattrib-repairinfo) \** _
+Tipo: **[ **RepairInfo**](/windows/win32/api/ndattrib/ns-ndattrib-repairinfo)\***
 
 A estrutura a ser atualizada.
 
 </dd> <dt>
 
-_Source * \[ in\]
+*Origem* \[ Em\]
 </dt> <dd>
 
-Tipo: **const [**RepairInfo**](/windows/win32/api/ndattrib/ns-ndattrib-repairinfo) \** _
+Tipo: **const [**RepairInfo**](/windows/win32/api/ndattrib/ns-ndattrib-repairinfo) \***
 
 A estrutura existente a ser copiada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Os valores de retorno possíveis incluem, mas não se limitam a, o seguinte.
+Os valores de retorno possíveis incluem, mas não estão limitados a, o seguinte.
 
 
 
@@ -71,7 +71,7 @@ Os valores de retorno possíveis incluem, mas não se limitam a, o seguinte.
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | A operação foi realizada com êxito.<br/>                                         |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Um ou mais parâmetros não foram fornecidos corretamente.<br/>          |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Não há memória suficiente disponível para concluir esta operação.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Não há memória suficiente disponível para concluir essa operação.<br/> |
 
 
 
@@ -83,9 +83,9 @@ Os valores de retorno possíveis incluem, mas não se limitam a, o seguinte.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>Ndattributils. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                 |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                       |
+| parâmetro<br/>                   | <dl> <dt>Ndattributils.h</dt> </dl> |
 
 
 

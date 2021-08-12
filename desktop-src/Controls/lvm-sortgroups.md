@@ -3,7 +3,7 @@ title: Mensagem de LVM_SORTGROUPS (commctrl. h)
 description: Usa uma função de comparação definida pelo aplicativo para classificar grupos por ID dentro de um controle de exibição de lista.
 ms.assetid: 553e96d6-a982-4482-8fba-ef11a74fb82e
 keywords:
-- Controles de LVM_SORTGROUPS de mensagens do Windows
+- controles de Windows de mensagem de LVM_SORTGROUPS
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c70fd0f343c9efe0215c87f430e5ed1c89a3aed
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b1ec17d46205746495cfe95a2af83690644dd8bfced26041906bdea4f809fb36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118670780"
 ---
 # <a name="lvm_sortgroups-message"></a>\_Mensagem SORTGROUPS LVM
 
@@ -35,7 +35,7 @@ Usa uma função de comparação definida pelo aplicativo para classificar grupo
 *lParam* 
 </dt> <dd>Ponteiro void para as informações definidas pelo aplicativo.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará 1 se for bem-sucedido ou 0 caso contrário.
 
@@ -52,8 +52,8 @@ Retornará 1 se for bem-sucedido ou 0 caso contrário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 

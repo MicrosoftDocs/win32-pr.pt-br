@@ -4,12 +4,12 @@ ms.assetid: 85fade43-9fcb-4100-a734-8b36d132b2c0
 title: Macros da API do gabinete
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 390fa42e0293e5d47c405e8e99986538b8f26254
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 525ec84e3e857c4819b1689cade2ed0f7267dffbd8a0e0da02251a03f8d4a36a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118668264"
 ---
 # <a name="cabinet-api-macros"></a>Macros da API do gabinete
 

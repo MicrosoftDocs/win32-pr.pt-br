@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TB_GETDISABLEDIMAGELIST (commctrl. h)
-description: Recupera a lista de imagens que um controle Toolbar usa para exibir botões inativos.
+title: TB_GETDISABLEDIMAGELIST mensagem (Commctrl.h)
+description: Recupera a lista de imagens que um controle de barra de ferramentas usa para exibir botões inativos.
 ms.assetid: 8f6782d5-488b-4906-908a-e4bf8d512e0a
 keywords:
-- Controles de TB_GETDISABLEDIMAGELIST de mensagens do Windows
+- TB_GETDISABLEDIMAGELIST controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fc847927ef14312c76e26303bec5de07b788266
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8eec9285e9a516547aece30d059f1fabd9d590e445d2124e9bccad5cb6cfc354
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118669939"
 ---
-# <a name="tb_getdisabledimagelist-message"></a>TB de \_ mensagem GETDISABLEDIMAGELIST
+# <a name="tb_getdisabledimagelist-message"></a>Mensagem \_ GETDISABLEDIMAGELIST de TB
 
-Recupera a lista de imagens que um controle Toolbar usa para exibir botões inativos.
+Recupera a lista de imagens que um controle de barra de ferramentas usa para exibir botões inativos.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,9 +35,9 @@ Recupera a lista de imagens que um controle Toolbar usa para exibir botões inat
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o identificador para a lista de imagens inativas, ou **NULL** se nenhuma lista de imagens inativas estiver definida.
+Retorna o alça para a lista de imagens inativas ou **NULL** se nenhuma lista de imagens inativas estiver definida.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Retorna o identificador para a lista de imagens inativas, ou **NULL** se nenhuma
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| parâmetro<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

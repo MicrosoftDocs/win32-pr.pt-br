@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6a93695db477ebb0c7b5652419198f8f5c6370dc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 424f7f5f6472859a06605467c427fc7b9f210a960f0920fb8593778bd757fc06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118589019"
 ---
 # <a name="eventdatatype-complex-type"></a>Tipo complexo EventDataType
 
@@ -58,7 +58,7 @@ Define os itens de dados do evento e as estruturas que contêm os dados do event
 |----------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | [**Binário**](eventschema-binary-eventdatatype-element.md)           | hexBinary                                                          | Um blob de dados binários para eventos que são gravados usando o [log de eventos](/windows/desktop/EventLog/event-logging).<br/> |
 | [**ComplexData**](eventschema-complexdata-eventdatatype-element.md) | [**ComplexDataType**](eventschema-complexdatatype-complextype.md) | Uma estrutura que é definida no modelo para o evento.<br/>                                |
-| [**Dados**](eventschema-data-eventdatatype-element.md)               | [**Tipo de dados**](eventschema-datafieldtype-complextype.md)          | Um item de dados de nível superior que é definido no modelo para o evento.<br/>                      |
+| [**Dados**](eventschema-data-eventdatatype-element.md)               | [**DataType**](eventschema-datafieldtype-complextype.md)          | Um item de dados de nível superior que é definido no modelo para o evento.<br/>                      |
 
 
 
@@ -82,8 +82,8 @@ A função [**EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) rend
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

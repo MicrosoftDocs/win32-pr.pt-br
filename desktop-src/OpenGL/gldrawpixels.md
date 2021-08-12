@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e25adc8ad28791086020a37d3a30651e169bfd07
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 26546b0c0d8c335f2f741f10d50a7042fffc304ad54be4ed779910fcb84246be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118616538"
 ---
 # <a name="gldrawpixels-function"></a>função glDrawPixels
 
@@ -138,23 +138,23 @@ O formato dos dados de pixel. As constantes simbólicas aceitáveis são as segu
 </tr>
 <tr class="odd">
 <td><span id="GL_RGB"></span><span id="gl_rgb"></span><dl> <dt><strong>GL_RGB</strong></dt> </dl></td>
-<td>Cada pixel é um grupo de três componentes nesta ordem: vermelho, verde, azul. A função <strong>glDrawPixels</strong> converte cada componente no formato de ponto flutuante interno da mesma forma que os componentes vermelho, verde e azul de um pixel RGBA. A cor tripla é convertida em um pixel RGBA com alfa definido como 1,0. Após essa conversão, o pixel é tratado da mesma forma como se tivesse sido lido como um pixel RGBA.<br/></td>
+<td>Cada pixel é um grupo de três componentes nesta ordem: vermelho, verde, azul. A função <strong>glDrawPixels</strong> converte cada componente no formato de ponto flutuante interno da mesma forma que os componentes vermelho, verde e azul de um pixel RGBA. A cor tripla é convertida em um pixel RGBA com alfa definido como 1,0. Após essa conversão, o pixel é tratado como se tivesse sido lido como um pixel RGBA.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="GL_LUMINANCE"></span><span id="gl_luminance"></span><dl> <dt><strong>GL_LUMINANCE</strong></dt> </dl></td>
-<td>Cada pixel é um único componente de luminância.<br/> A função <strong>glDrawPixels</strong> converte esse componente no formato de ponto flutuante interno da mesma forma que o componente vermelho de um pixel RGBA e, em seguida, converte-o em um pixel RGBA com vermelho, verde e azul definido como o valor de luminância convertido e alfa definido como 1,0. Após essa conversão, o pixel é tratado da mesma forma como se tivesse sido lido como um pixel RGBA.<br/></td>
+<td>Cada pixel é um único componente de luminância.<br/> A <strong>função glDrawPixels</strong> converte esse componente no formato de ponto flutuante interno da mesma forma que o componente vermelho de um pixel RGBA e, em seguida, converte-o em um pixel RGBA com vermelho, verde e azul definido como o valor de luminância convertido e alfa definido como 1.0. Após essa conversão, o pixel é tratado como se tivesse sido lido como um pixel RGBA.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="GL_LUMINANCE_ALPHA"></span><span id="gl_luminance_alpha"></span><dl> <dt><strong>GL_LUMINANCE_ALPHA</strong></dt> </dl></td>
-<td>Cada pixel é um grupo de dois componentes nesta ordem: luminância, alfa.<br/> A função <strong>glDrawPixels</strong> converte os dois componentes no formato de ponto flutuante interno da mesma maneira que o componente vermelho de um pixel RGBA e os converte em um pixel RGBA com vermelho, verde e azul definido como o valor de luminância convertido e alfa definido para o valor alfa convertido. Após essa conversão, o pixel é tratado da mesma forma como se tivesse sido lido como um pixel RGBA.<br/></td>
+<td>Cada pixel é um grupo de dois componentes nesta ordem: luminância, alfa.<br/> A <strong>função glDrawPixels</strong> converte os dois componentes no formato de ponto flutuante interno da mesma forma que o componente vermelho de um pixel RGBA e, em seguida, converte-os em um pixel RGBA com vermelho, verde e azul definidos como o valor de luminância convertido e alfa definido como o valor alfa convertido. Após essa conversão, o pixel é tratado como se tivesse sido lido como um pixel RGBA.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="GL_BGR_EXT"></span><span id="gl_bgr_ext"></span><dl> <dt><strong>GL_BGR_EXT</strong></dt> </dl></td>
-<td>Cada pixel é um grupo de três componentes nesta ordem: azul, verde e vermelho.<br/> GL_BGR_EXT fornece um formato que corresponde ao layout de memória dos bitmaps independentes de dispositivo do Windows (DIBs). Portanto, seus aplicativos podem usar os mesmos dados com chamadas de função do Windows e chamadas de função de pixel OpenGL.<br/></td>
+<td>Cada pixel é um grupo de três componentes nesta ordem: azul, verde, vermelho.<br/> GL_BGR_EXT fornece um formato que corresponde ao layout de memória Windows DIBs (bitmaps independentes de dispositivo). Portanto, seus aplicativos podem usar os mesmos dados com chamadas Windows função e chamadas de função de pixel OpenGL.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="GL_BGRA_EXT"></span><span id="gl_bgra_ext"></span><dl> <dt><strong>GL_BGRA_EXT</strong></dt> </dl></td>
-<td>Cada pixel é um grupo de quatro componentes nesta ordem: azul, verde, vermelho, alfa.<br/> GL_BGRA_EXT fornece um formato que corresponde ao layout de memória dos bitmaps independentes de dispositivo do Windows (DIBs). Portanto, seus aplicativos podem usar os mesmos dados com chamadas de função do Windows e chamadas de função de pixel OpenGL.<br/></td>
+<td>Cada pixel é um grupo de quatro componentes nessa ordem: azul, verde, vermelho, alfa.<br/> GL_BGRA_EXT fornece um formato que corresponde ao layout de memória Windows DIBs (bitmaps independentes de dispositivo). Portanto, seus aplicativos podem usar os mesmos dados com chamadas Windows função e chamadas de função de pixel OpenGL.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -174,14 +174,14 @@ O tipo de dados para *pixels*. A seguir estão as constantes simbólicas aceitas
 
 | Valor                                                                                                                                                                      | Significado                                           |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| <span id="GL_UNSIGNED_BYTE"></span><span id="gl_unsigned_byte"></span><dl> <dt>**\_byte não assinado GL \_**</dt> </dl>    | Inteiro de 8 bits sem sinal<br/>                 |
-| <span id="GL_BYTE"></span><span id="gl_byte"></span><dl> <dt>**\_byte GL**</dt> </dl>                                | Inteiro de 8 bits com sinal<br/>                   |
-| <span id="GL_BITMAP"></span><span id="gl_bitmap"></span><dl> <dt>**\_bitmap GL**</dt> </dl>                          | Bits únicos em inteiros de 8 bits não assinados<br/> |
-| <span id="GL_UNSIGNED_SHORT"></span><span id="gl_unsigned_short"></span><dl> <dt>**GL \_ não assinado \_ curto**</dt> </dl> | Inteiro de 16 bits sem sinal<br/>                |
-| <span id="GL_SHORT"></span><span id="gl_short"></span><dl> <dt>**GL \_ curto**</dt> </dl>                             | Inteiro de 16 bits com sinal<br/>                  |
-| <span id="GL_UNSIGNED_INT"></span><span id="gl_unsigned_int"></span><dl> <dt>**GL \_ não assinado \_ int**</dt> </dl>       | Inteiro de 32 bits sem sinal<br/>                |
-| <span id="GL_INT"></span><span id="gl_int"></span><dl> <dt>**RAZÃO \_ int**</dt> </dl>                                   | Inteiro de 32 bits<br/>                         |
-| <span id="GL_FLOAT"></span><span id="gl_float"></span><dl> <dt>**GL \_ float**</dt> </dl>                             | Ponto flutuante de precisão simples<br/>        |
+| <span id="GL_UNSIGNED_BYTE"></span><span id="gl_unsigned_byte"></span><dl> <dt>**GL \_ UNSIGNED \_ BYTE**</dt> </dl>    | Inteiro de 8 bits sem sinal<br/>                 |
+| <span id="GL_BYTE"></span><span id="gl_byte"></span><dl> <dt>**GL \_ BYTE**</dt> </dl>                                | Inteiro de 8 bits com sinal<br/>                   |
+| <span id="GL_BITMAP"></span><span id="gl_bitmap"></span><dl> <dt>**GL \_ BITMAP**</dt> </dl>                          | Bits individuais em inteiros de 8 bits sem sinal<br/> |
+| <span id="GL_UNSIGNED_SHORT"></span><span id="gl_unsigned_short"></span><dl> <dt>**GL \_ UNSIGNED \_ SHORT**</dt> </dl> | Inteiro de 16 bits sem sinal<br/>                |
+| <span id="GL_SHORT"></span><span id="gl_short"></span><dl> <dt>**GL \_ SHORT**</dt> </dl>                             | Inteiro de 16 bits com sinal<br/>                  |
+| <span id="GL_UNSIGNED_INT"></span><span id="gl_unsigned_int"></span><dl> <dt>**GL \_ UNSIGNED \_ INT**</dt> </dl>       | Inteiro de 32 bits sem sinal<br/>                |
+| <span id="GL_INT"></span><span id="gl_int"></span><dl> <dt>**GL \_ INT**</dt> </dl>                                   | Inteiro de 32 bits<br/>                         |
+| <span id="GL_FLOAT"></span><span id="gl_float"></span><dl> <dt>**GL \_ FLOAT**</dt> </dl>                             | Ponto flutuante de precisão simples<br/>        |
 
 
 
@@ -202,43 +202,43 @@ Essa função não retorna um valor.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**](glgeterror.md) .
+Os códigos de erro a seguir podem ser recuperados pela [**função glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significado                                                                                                                                                                                      |
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_valor inválido do GL \_**</dt> </dl>     | A *largura* ou a *altura* era negativa.<br/>                                                                                                                                          |
-| <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | O *formato* ou o *tipo* não era um valor aceito. <br/>                                                                                                                             |
-| <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | *Format* era GL \_ Red, GL \_ verde, GL \_ Blue, GL \_ alfa, GL \_ RGB, GL \_ RGBA, GL \_ BGR \_ ext, GL \_ BGRA \_ ext, GL \_ luminância ou GL de \_ luminância \_ alfa e OpenGL estava no modo de índice de cor.<br/> |
-| <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | o *tipo* era \_ o bitmap GL e o *formato* não era um índice de cores GL \_ ou o \_ \_ Index de estêncil GL \_ .<br/>                                                                                         |
-| <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | o *formato* era \_ \_ um índice de estêncil GL e não havia um buffer de estêncil.<br/>                                                                                                                  |
-| <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd**](glend.md).<br/>                                                        |
+| <dl> <dt>**VALOR INVÁLIDO DE GL \_ \_**</dt> </dl>     | A *largura ou* a *altura* era negativa.<br/>                                                                                                                                          |
+| <dl> <dt>**GL \_ INVALID \_ ENUM**</dt> </dl>      | O *formato* ou *o tipo* não era um valor aceito. <br/>                                                                                                                             |
+| <dl> <dt>**OPERAÇÃO \_ GL \_ INVÁLIDA**</dt> </dl> | *O* formato era GL \_ RED, GL \_ GREEN, \_ GL BLUE, GL \_ ALPHA, GL \_ RGB, GL \_ RGBA, GL \_ BGR \_ EXT, GL \_ BGRA \_ EXT, GL \_ LUMINANCE ou GL \_ LUMINANCE \_ ALPHA e OpenGL estava no modo de índice de cores.<br/> |
+| <dl> <dt>**GL \_ INVALID \_ ENUM**</dt> </dl>      | *O tipo* era GL \_ BITMAP *e o formato* não era GL COLOR INDEX ou \_ GL \_ \_ STENCIL \_ INDEX.<br/>                                                                                         |
+| <dl> <dt>**OPERAÇÃO \_ GL \_ INVÁLIDA**</dt> </dl> | *format* era GL \_ STENCIL \_ INDEX e não havia nenhum buffer de estêncil.<br/>                                                                                                                  |
+| <dl> <dt>**OPERAÇÃO \_ GL \_ INVÁLIDA**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd.**](glend.md)<br/>                                                        |
 
 
 ## <a name="remarks"></a>Comentários
 
-A função **glDrawPixels** lê dados de pixel da memória e grava-os em framebuffer em relação à posição de rasterização atual. Use [**glRasterPos**](glrasterpos-functions.md) para definir a posição atual da varredura e use [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento \_ GL \_ posição de varredura atual \_ para consultar a posição da rasterização.
+A **função glDrawPixels** lê dados de pixel da memória e os grava no framebuffer em relação à posição atual do raster. Use [**glRasterPos**](glrasterpos-functions.md) para definir a posição atual do raster e use [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento GL CURRENT RASTER POSITION para \_ consultar a posição de \_ \_ raster.
 
-Vários parâmetros definem a codificação dos dados de pixel na memória e controlam o processamento dos dados de pixel antes de serem colocados no framebuffer. Esses parâmetros são definidos com quatro funções: [**glPixelStore**](glpixelstore-functions.md), [**glPixelTransfer**](glpixeltransfer.md), [**glPixelMap**](glpixelmap.md)e [**glPixelZoom**](glpixelzoom.md). Este tópico descreve os efeitos sobre **glDrawPixels** de muitos, mas não todos, dos parâmetros especificados por essas quatro funções.
+Vários parâmetros definem a codificação de dados de pixel na memória e controlam o processamento dos dados de pixel antes que eles são colocados no framebuffer. Esses parâmetros são definidos com quatro funções: [**glPixelStore,**](glpixelstore-functions.md) [**glPixelTransfer,**](glpixeltransfer.md) [**glPixelMap**](glpixelmap.md)e [**glPixelZoom.**](glpixelzoom.md) Este tópico descreve os efeitos em **glDrawPixels** de muitos, mas não todos, dos parâmetros especificados por essas quatro funções.
 
-Os dados são lidos a partir de *pixels* como uma sequência de bytes assinados ou sem sinal, inteiros assinados ou sem sinal, inteiro assinado ou não assinado ou valores de ponto flutuante de precisão única, dependendo do *tipo*. Cada um desses bytes, shorts, inteiros ou valores de ponto flutuante é interpretado como um componente de cor ou profundidade, ou um índice, dependendo do *formato*. Os índices são sempre tratados individualmente. Os componentes de cor são tratados como grupos de um, dois, três ou quatro valores, novamente com base no *formato*. Os índices individuais e os grupos de componentes são chamados de pixels. Se o *tipo* for um \_ bitmap GL, os dados deverão ser bytes não assinados e o *formato* deverá ser um índice de \_ cores GL \_ ou \_ Index de estêncil GL \_ . Cada byte não assinado é tratado como pixels de 8 1 bits, com ordenação de bits determinada por GL \_ Unpack \_ LSB \_ First (consulte [**glPixelStore**](glpixelstore-functions.md)).
+Os dados são lidos de *pixels* como uma sequência de bytes assinados ou não assinados, shorts assinados ou não assinados, inteiros assinados ou sem sinal ou valores de ponto flutuante de precisão simples, dependendo do *tipo*. Cada um desses bytes, shorts, inteiros ou valores de ponto flutuante é interpretado como um componente de cor ou profundidade ou um índice, dependendo do *formato*. Os índices são sempre tratados individualmente. Os componentes de cores são tratados como grupos de um, dois, três ou quatro valores, novamente com base no *formato*. Índices individuais e grupos de componentes são chamados de pixels. Se *o* tipo for GL BITMAP, os dados deverão ser bytes não assinados e o formato deverá ser GL COLOR INDEX ou \_ GL  \_ \_ \_ STENCIL \_ INDEX. Cada byte sem assinatura é tratado como oito pixels de 1 bit, com a ordenação de bits determinada por GL \_ UNPACK \_ LSB \_ FIRST (consulte [**glPixelStore**](glpixelstore-functions.md)).
 
-A *largura* por pixels de *altura* é lida da memória, começando em *pixels* de localização. Por padrão, esses pixels são retirados de locais de memória adjacentes, exceto que depois que todos os pixels de *largura* são lidos, o ponteiro de leitura é avançado para o próximo limite de 4 bytes. A função **glPixelStore** especifica o alinhamento de linha de 4 bytes com o \_ alinhamento de descompactação do argumento GL \_ , e você pode defini-lo como 1, 2, 4 ou 8 bytes. Outros parâmetros de armazenamento de pixel especificam avanços de ponteiro de leitura diferentes, antes de o primeiro pixel ser lido e depois que todos os pixels de *largura* são lidos. A função **glPixelStore** opera em cada um dos pixels de *largura por altura* que ele lê da memória da mesma maneira, com base nos valores de vários parâmetros especificados por [**glPixelTransfer**](glpixeltransfer.md) e [**glPixelMap**](glpixelmap.md). Os detalhes dessas operações, bem como o buffer de destino no qual os pixels são desenhados, são específicos ao formato dos pixels, conforme especificado por *formato*.
+A *largura por* *pixels de* altura é lida da memória, começando em *pixels de localização.* Por padrão, esses pixels são retirados de locais de memória adjacentes, exceto que, depois que todos os *pixels* de largura são lidos, o ponteiro de leitura é avançado para o próximo limite de 4 byte. A **função glPixelStore** especifica o alinhamento de linha de 4 bytes com o argumento GL UNPACK ALIGNMENT e você pode defini-la \_ como \_ 1, 2, 4 ou 8 bytes. Outros parâmetros de armazenamento de pixels especificam diferentes avanços de ponteiro de leitura, antes que o primeiro pixel seja lido e depois que todos os *pixels* de largura são lidos. A **função glPixelStore** opera em cada um dos *pixels* de largura por altura que lê da memória da mesma maneira, com base nos valores de vários parâmetros especificados por [**glPixelTransfer**](glpixeltransfer.md) e [**glPixelMap**](glpixelmap.md). Os detalhes dessas operações, bem como o buffer de destino no qual os pixels são desenhados, são específicos para o formato dos pixels, conforme especificado pelo *formato*.
 
-A rasterização descrita até o momento pressupõe fatores de zoom de pixel de 1,0. Se você usar [**glPixelZoom**](glpixelzoom.md) para alterar os fatores de zoom *x* e *y* pixel, os pixels serão convertidos em fragmentos da seguinte maneira. Se (*XR, ano*) for a posição atual da varredura e um determinado pixel estiver na coluna *n*-th e *m* th do retângulo de pixel, os fragmentos serão gerados para os pixels cujos centros estão no retângulo com os cantos em
+A rasterização descrita até o momento pressussa fatores de zoom de pixel de 1,0. Se você usar [**glPixelZoom**](glpixelzoom.md) para alterar os *fatores* de zoom de pixel x e *y,* os pixels serão convertidos em fragmentos da seguinte forma. Se (*xr,yr*) for a posição de raster atual e um determinado pixel estiver na *nª* coluna e *na linha m* do retângulo de pixel, os fragmentos serão gerados para pixels cujos centros estão no retângulo com cantos em
 
-(*x*<sub>r</sub>  +  *aplicar zoom*? *n*, *y*<sub>r</sub>  +  *zoom*<sub>y</sub> *m*)
+(*x*<sub>r</sub>  +  *zoom*? *n*, *y*<sub>r</sub>  +  *zoom*<sub>y</sub> *m*)
 
-(*x*<sub>r</sub>  +  *aplicar zoom*? (*n* + 1), *y*<sub>r</sub>  +  *zoom*<sub>y</sub> (*m* + 1))
+(*x*<sub>r</sub>  +  *zoom*? (*n* + 1), *y*<sub>r</sub>  +  *zoom*<sub>y</sub> (*m* + 1))
 
-onde *aplicar zoom*? é o valor de GL \_ zoom \_ X e *zoom*<sub>y</sub> é o valor de GL \_ zoom \_ y.
+em que *zoom?* é o valor de GL \_ ZOOM X e \_ *zoom*<sub>y</sub> é o valor de GL \_ ZOOM \_ Y.
 
-As funções a seguir recuperam informações relacionadas ao **glDrawPixels**:
+As funções a seguir recuperam informações **relacionadas a glDrawPixels**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento \_ GL \_ posição de rasterização atual \_
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento GL \_ CURRENT \_ RASTER \_ POSITION
 
-**glGet** com Argument GL \_ \_ posição de rasterização atual \_ \_ válida
+**glGet com** o argumento GL \_ CURRENT \_ RASTER POSITION \_ \_ VALID
 
 ## <a name="requirements"></a>Requisitos
 
@@ -248,8 +248,8 @@ As funções a seguir recuperam informações relacionadas ao **glDrawPixels**:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

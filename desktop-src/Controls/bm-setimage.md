@@ -1,9 +1,9 @@
 ---
-title: Mensagem de BM_SETIMAGE (WinUser. h)
+title: BM_SETIMAGE mensagem (Winuser.h)
 description: Associa uma nova imagem (ícone ou bitmap) ao botão.
 ms.assetid: bf05e684-63d0-4583-960b-f329edafb151
 keywords:
-- Controles de BM_SETIMAGE de mensagens do Windows
+- BM_SETIMAGE controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65d083c4fb509d51eb017bb7d3d38fab07b4c006
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7b8948c73c04d3b01230a47ab91529764c9e20281e4f45803f71d82f59dedb14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118674809"
 ---
-# <a name="bm_setimage-message"></a>\_Mensagem BM SETimage
+# <a name="bm_setimage-message"></a>Mensagem \_ BM SETIMAGE
 
 Associa uma nova imagem (ícone ou bitmap) ao botão.
 
@@ -34,31 +34,31 @@ Associa uma nova imagem (ícone ou bitmap) ao botão.
 
 O tipo de imagem a ser associado ao botão. Esse parâmetro pode ser um dos seguintes valores:
 
--   BITMAP de imagem \_
--   ícone de imagem \_
+-   BITMAP \_ DE IMAGEM
+-   ÍCONE DE \_ IMAGEM
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Um identificador (**HICON** ou **HBITMAP**) para a imagem a ser associada ao botão.
+Um handle (**HICON** ou **HBITMAP**) para a imagem a ser associada ao botão.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de retorno é um identificador para a imagem associada anteriormente ao botão, se houver; caso contrário, será **nulo**.
+O valor de retorno é um handle para a imagem associada anteriormente ao botão, se for o caso; caso contrário, será **NULL.**
 
 ## <a name="remarks"></a>Comentários
 
-A aparência do texto, um ícone ou ambos em um controle de botão depende do [**\_ ícone de BS**](button-styles.md) e dos estilos de [**\_ bitmap BS**](button-styles.md) , e se a mensagem **\_ SetImage BM** é chamada. Os resultados possíveis são os seguintes:
+A aparência do texto, um ícone ou ambos em um controle de botão depende dos estilos [**BS \_ ICON**](button-styles.md) e [**\_ BS BITMAP**](button-styles.md) e se a mensagem **\_ BM SETIMAGE** é chamada. Os resultados possíveis são os seguinte:
 
 
 
-| \_Ícone de BS ou \_ bitmap BS definido? | BM \_ SetImage chamada? | Resultado              |
+| ÍCONE BS \_ ou Conjunto de \_ BITMAP BS? | BM \_ SETIMAGE chamado? | Result              |
 |-----------------------------|----------------------|---------------------|
-| Sim                         | Sim                  | Mostrar apenas o ícone.     |
+| Sim                         | Sim                  | Mostrar somente ícone.     |
 | Não                          | Sim                  | Mostrar ícone e texto. |
 | Sim                         | Não                   | Mostrar somente texto.     |
 | Não                          | Não                   | Mostrar somente texto      |
@@ -73,17 +73,17 @@ A aparência do texto, um ícone ou ambos em um controle de botão depende do [*
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| parâmetro<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
-[**BM \_ GETimage**](bm-getimage.md)
+[**BM \_ GETIMAGE**](bm-getimage.md)
 </dt> </dl>
 
  

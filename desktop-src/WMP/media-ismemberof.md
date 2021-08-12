@@ -3,9 +3,9 @@ title: Método Media. isMemberOf
 description: O método isMemberOf retorna um valor que indica se o item de mídia é um membro da playlist especificada.
 ms.assetid: e620741f-6807-4a61-ba9b-f45426d6e33e
 keywords:
-- método isMemberOf Windows Media Player
-- método isMemberOf Windows Media Player, classe de mídia
-- Classe de mídia Windows Media Player, método isMemberOf
+- Windows Media Player do método isMemberOf
+- método isMemberOf Windows Media Player, classe Media
+- classe de mídia Windows Media Player, método isMemberOf
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41555bd5910ddb3151468a458c5becbf247ea484
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ef9fc5eb55a306dad8b9d5de6d6501b615a9156c026c8e0fc12664795a23ab21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813476"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118574798"
 ---
 # <a name="mediaismemberof-method"></a>Método Media. isMemberOf
 
@@ -61,7 +61,7 @@ Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa *mídia*. **isMemberOf** para testar se o item de mídia atual é membro da playlist chamada playlist de exemplo. Se não for, o item de mídia atual será anexado à playlist de exemplo. O objeto de **jogador** foi criado com ID = "Player".
+o exemplo a seguir JScript usa *mídia*. **isMemberOf** para testar se o item de mídia atual é membro da playlist chamada playlist de exemplo. Se não for, o item de mídia atual será anexado à playlist de exemplo. O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript
@@ -105,10 +105,10 @@ if (answer == "No"){
 [**Objeto playlistcollection**](playlistcollection-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações. mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

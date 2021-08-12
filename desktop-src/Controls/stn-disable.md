@@ -3,7 +3,7 @@ title: Código de notificação STN_DISABLE (WinUser. h)
 description: O \_ código de notificação de desabilitação de STN é enviado quando um controle estático é desabilitado.
 ms.assetid: 7ff0c191-4ff3-4a11-a418-8f45e16d0318
 keywords:
-- STN_DISABLE de código de notificação controles do Windows
+- STN_DISABLE código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2763fce96b043ec6aebf5339a9f93d6fdf4a8abb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 793c4faaba723955d079891458b0d1823ca4fbd9c6053083cab5c886a1acbcb4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118670533"
 ---
 # <a name="stn_disable-notification-code"></a>STN \_ desabilitar código de notificação
 
@@ -59,9 +59,9 @@ Identificador para o controle estático.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| parâmetro<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 
