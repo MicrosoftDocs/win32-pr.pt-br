@@ -1,25 +1,25 @@
 ---
-description: Especifica se o codificador gera cabeçalhos de extensão de exibição de imagem. Essa propriedade se aplica a codificadores de vídeo MPEG.
+description: Especifica se o codificador gera os headers de extensão de exibição de imagem. Essa propriedade se aplica a codificadores de vídeo MPEG.
 ms.assetid: 01d616ff-e1e4-4cad-9145-c01181e4f8b8
-title: Propriedade AVEncMPVGenerateHeaderPicDispExt (Codecapi. h)
+title: Propriedade AVEncMPVGenerateHeaderPicDispExt (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b064082895f890d2c68174f55ed7c03107f78cac
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 2ff031a60c9e1dfd2b6ef59da0241f14386c063104974be8b85b9b1a0e620d3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104370268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119276176"
 ---
 # <a name="avencmpvgenerateheaderpicdispext-property"></a>Propriedade AVEncMPVGenerateHeaderPicDispExt
 
-Especifica se o codificador gera cabeçalhos de extensão de exibição de imagem. Essa propriedade se aplica a codificadores de vídeo MPEG.
+Especifica se o codificador gera os headers de extensão de exibição de imagem. Essa propriedade se aplica a codificadores de vídeo MPEG.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="data-type"></a>Tipo de dados
 
-**Variante \_ BOOL** (**VT \_ bool**)
+**VARIANT \_ BOOL** (**VT \_ BOOL**)
 
 ## <a name="property-guid"></a>GUID da propriedade
 
@@ -27,7 +27,7 @@ Esta propriedade é de leitura/gravação.
 
 ## <a name="remarks"></a>Comentários
 
-Se o valor for **Variant \_ true**, o codificador gerará cabeçalhos de extensão de exibição de imagem.
+Se o valor for **VARIANT \_ TRUE,** o codificador gerará os headers de extensão de exibição de imagem.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ Se o valor for **Variant \_ true**, o codificador gerará cabeçalhos de extens�
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional \[ aplicativos UWP da área de \| trabalho\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows aplicativos da área de trabalho do servidor 2000 \[ \| aplicativos UWP\]<br/>                           |
+| parâmetro<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,10 +45,10 @@ Se o valor for **Variant \_ true**, o codificador gerará cabeçalhos de extens�
 
 <dl> <dt>
 
-[Propriedades da API do codec](codec-api-properties.md)
+[Propriedades da API do Codec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interface ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI Interface**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

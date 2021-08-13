@@ -1,11 +1,11 @@
 ---
-title: Método de ejeção de IWMPCdrom
-description: O método EJECT ejeta o CD ou DVD da unidade. | Método de ejeção de IWMPCdrom
+title: Método ejeto IWMPCdrom
+description: O método ejeta o CD ou DVD da unidade. | Método ejeto IWMPCdrom
 ms.assetid: c0a69252-fd79-452c-bc61-3c3e8bcaaf48
 keywords:
-- método de ejeção do Windows Media Player
-- método de ejeção Windows Media Player, interface IWMPCdrom
-- Interface IWMPCdrom Windows Media Player, método EJECT
+- método ejetar Windows Media Player
+- método ejetar Windows Media Player interface , IWMPCdrom
+- Interface IWMPCdrom Windows Media Player , método ejetar
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b8ca2403b86b648e98861d91a21db80ddb64aac
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 00dbdf22d8eb0ba4073a1b74c25c0d610f3091477e5921dd0856fa835a9bccc1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105808228"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119246756"
 ---
-# <a name="iwmpcdromeject-method"></a>Método IWMPCdrom:: Eject
+# <a name="iwmpcdromeject-method"></a>Método IWMPCdrom::ejetar
 
-O método **EJECT** ejeta o CD ou DVD da unidade.
+O **método ejeta** o CD ou DVD da unidade.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,7 +49,7 @@ Implements IWMPCdrom.eject
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -57,11 +57,11 @@ Esse método não retorna um valor.
 
 Se a porta da unidade estiver aberta, esse método fechará a porta.
 
-Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
+Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [Acesso à biblioteca.](library-access.md)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **EJECT** para abrir a porta da unidade de CD ou DVD que tem o índice de zero em resposta ao evento de clique de um botão. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
+O exemplo a seguir **usa ejetar** para abrir a porta da unidade de CD ou DVD que tem o índice de zero em resposta ao evento Click de um botão. O **objeto AxWMPLib.AxWindowsMediaPlayer** é representado pela variável chamada player.
 
 
 ```CSharp
@@ -91,7 +91,7 @@ End Sub
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -101,16 +101,16 @@ End Sub
 
 <dl> <dt>
 
-[**AxWindowsMediaPlayer. PlayState (VB e C#)**](axwmplib-axwindowsmediaplayer-playstate--vb-and-c.md)
+[**AxWindowsMediaPlayer.playState (VB e C#)**](axwmplib-axwindowsmediaplayer-playstate--vb-and-c.md)
 </dt> <dt>
 
 [**Interface IWMPCdrom (VB e C#)**](iwmpcdrom--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. mediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.mediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. requestMediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.requestMediaAccessRights (VB e C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
 </dt> </dl>
 
  

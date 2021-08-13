@@ -4,12 +4,12 @@ ms.assetid: f85c4114-ac94-4deb-a1cf-896209079f8b
 title: Atributo EVRConfig_ForceScaling (UUIDs. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b82b7e017d414e86b8b4332fe5646e4808d4009
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd85fa67af3cea27564400b86cf6c8e32e3c15645cbb4f84cc97344fbab9ef60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119346196"
 ---
 # <a name="evrconfig_forcescaling-attribute"></a>\_Atributo EVRConfig ForceScaling
 
@@ -39,8 +39,8 @@ A constante de GUID para esse atributo é exportada de strmiids. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                            |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                            |
 | parâmetro<br/>                   | <dl> <dt>UUIDs. h</dt> </dl> |
 
 

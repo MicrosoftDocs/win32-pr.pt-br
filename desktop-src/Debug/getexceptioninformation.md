@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 243831a94a26b86df29d3a50413bfa9d6830a0e3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 425cfbe10ac2ee66f10e016489ff070b67b6fc243a472f95b4f5809724998a21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119279216"
 ---
 # <a name="getexceptioninformation-macro"></a>Macro GetExceptionInformation
 
@@ -41,7 +41,7 @@ LPEXCEPTION_POINTERS GetExceptionInformation(void);
 
 Esta macro não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Um ponteiro para uma [**exceção \_ aponta**](/windows/desktop/api/WinNT/ns-winnt-exception_pointers) para uma estrutura que contém ponteiros para as duas estruturas a seguir:
 
@@ -64,8 +64,8 @@ No caso de manipuladores aninhados, cada expressão de filtro é avaliada até q
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/> |
 
 
 
@@ -94,7 +94,7 @@ No caso de manipuladores aninhados, cada expressão de filtro é avaliada até q
 [Visão geral da manipulação de exceção estruturada](structured-exception-handling.md)
 </dt> <dt>
 
-[Habilitar o suporte do Windows para Intel AVX](../win7appqual/enable-windows-7-support-for-intel-avx.md)
+[habilitar suporte de Windows para Intel AVX](../win7appqual/enable-windows-7-support-for-intel-avx.md)
 </dt> </dl>
 
  

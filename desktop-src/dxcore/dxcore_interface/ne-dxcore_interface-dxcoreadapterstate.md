@@ -4,12 +4,12 @@ description: Define constantes que especificam tipos de Estados de adaptador DXC
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: e588b75360c141b52989aa14e88c886092af2647
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6878aaccb61fd164fcf834561fcf70f13d2609de595687b6ef6301778c87f81e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119367076"
 ---
 # <a name="dxcoreadapterstate-enum"></a>DXCoreAdapterState enum
 

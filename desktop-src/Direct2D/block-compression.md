@@ -5,24 +5,24 @@ ms.assetid: 52AF86A5-16E8-4AC8-BB67-CC2F1A3635B5
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: aeb6ba9427a04f7a251a1d59062be508e4249b41
-ms.sourcegitcommit: ee06501cc29132927ade9813e0888aaa4decc487
+ms.openlocfilehash: e8ee83911cc7be1ab6e611a735a7a5b3a7397c472b78e3192468d2e323ed0c4d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "104506313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119331729"
 ---
 # <a name="block-compression"></a>Compactação de bloco
 
-A partir do Windows 8.1, o Direct2D dá suporte a vários formatos de pixel compactados de bloco. Além disso, Windows 8.1 contém um novo codec DDS do Windows Imaging Component (WIC) para habilitar o carregamento e o armazenamento de imagens compactadas em bloco no formato de arquivo DDS. A compactação de bloco é uma técnica para reduzir a quantidade de memória gráfica consumida pelo conteúdo de bitmap. Usando a compactação de bloco, seu aplicativo pode reduzir o consumo de memória e tempos de carregamento para as mesmas imagens de resolução. Ou, seu aplicativo pode usar imagens de resolução mais ou mais altas enquanto ainda estiver consumindo a mesma superfície de memória de GPU.
+a partir do Windows 8.1, o Direct2D dá suporte a vários formatos de pixel compactados de bloco. além disso, Windows 8.1 contém um novo codec dds (Windows Imaging Component) para habilitar o carregamento e o armazenamento de imagens compactadas em bloco no formato de arquivo DDS. A compactação de bloco é uma técnica para reduzir a quantidade de memória gráfica consumida pelo conteúdo de bitmap. Usando a compactação de bloco, seu aplicativo pode reduzir o consumo de memória e tempos de carregamento para as mesmas imagens de resolução. Ou, seu aplicativo pode usar imagens de resolução mais ou mais altas enquanto ainda estiver consumindo a mesma superfície de memória de GPU.
 
-A compactação de bloco foi usada por aplicativos de Direct3D por muito tempo, e com o Windows 8.1 também está disponível para os desenvolvedores de aplicativos convencionais e Direct2D.
+a compactação de bloco foi usada por aplicativos de Direct3D por um longo tempo e, com Windows 8.1, está disponível para os desenvolvedores de aplicativos mais importantes e Direct2D também.
 
 Este tópico descreve como funciona a compactação de bloco e como usá-la em WIC e Direct2D.
 
 ## <a name="about-block-compression"></a>Sobre a compactação de bloco
 
-A [compactação de bloqueio](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression) (BC) refere-se a uma classe de técnicas de compactação para reduzir os tamanhos de textura. O Direct3D 11 dá suporte a até 7 formatos de BC diferentes, dependendo do nível de recurso. No Windows 8.1 Direct2D apresenta suporte para os formatos BC1, BC2 e BC3 que estão disponíveis em todos os níveis de recurso.
+A [compactação de bloqueio](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression) (BC) refere-se a uma classe de técnicas de compactação para reduzir os tamanhos de textura. O Direct3D 11 dá suporte a até 7 formatos de BC diferentes, dependendo do nível de recurso. no Windows 8.1 Direct2D apresenta suporte para os formatos BC1, BC2 e BC3 que estão disponíveis em todos os níveis de recurso.
 
 ### <a name="how-block-compression-works"></a>Como funciona a compactação de bloco
 
@@ -61,7 +61,7 @@ Há variações para dar suporte a dados alfa e números variados de canais de c
 
 ### <a name="directdraw-surface-dds-file-format"></a>Formato de arquivo da superfície do DirectDraw (DDS)
 
-Bloquear dados compactados normalmente são armazenados em arquivos de [superfície do DirectDraw (DDS)](/windows/desktop/direct3ddds/dx-graphics-dds-reference) . Você pode estar familiarizado com arquivos DDS se você for um desenvolvedor de Direct3D. Observe que o Direct2D dá suporte apenas a determinados recursos de DDS; para obter mais informações, consulte [requisitos de DDS](#dds-requirements).
+Bloquear dados compactados normalmente são armazenados em arquivos de [superfície do DirectDraw (DDS)](/windows/desktop/direct3ddds/dx-graphics-dds-reference) . Você pode estar familiarizado com arquivos DDS se você for um desenvolvedor de Direct3D. observe que Direct2D dá suporte apenas a determinados recursos de DDS; para obter mais informações, consulte [requisitos de DDS](#dds-requirements).
 
 ### <a name="advantages-of-block-compression"></a>Vantagens da compactação de bloco
 
@@ -77,7 +77,7 @@ Em segundo lugar, bloquear arquivos DDS compactados geralmente consome mais espa
 
 ## <a name="using-block-compression"></a>Usando compactação de bloco
 
-Esta seção explica como gerar e usar os ativos compactados em bloco em um aplicativo Direct2D.
+esta seção explica como gerar e usar o bloqueio de ativos compactados em um aplicativo Direct2D.
 
 ### <a name="overview"></a>Visão geral
 
@@ -85,7 +85,7 @@ Bloquear arquivos DDS compactados são um formato otimizado para tempo de execu�
 
 ### <a name="dds-requirements"></a>Requisitos de DDS
 
-O formato de arquivo DDS foi projetado para dar suporte a uma ampla gama de recursos usados no Direct3D. Direct2D usa apenas um subconjunto desses recursos. Portanto, ao criar imagens DDS para uso com Direct2D, você deve ter em mente as seguintes restrições:
+O formato de arquivo DDS foi projetado para dar suporte a uma ampla gama de recursos usados no Direct3D. Direct2D usa apenas um subconjunto desses recursos. portanto, ao criar imagens DDS para uso com Direct2D, você deve ter em mente as seguintes restrições:
 
 -   Somente os seguintes valores de [**\_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) são permitidos:
     -   \_Formato dxgi \_ BC1 \_ UNORM
@@ -97,13 +97,13 @@ O formato de arquivo DDS foi projetado para dar suporte a uma ampla gama de recu
 
 ### <a name="generating-block-compressed-assets"></a>Gerando ativos compactados de bloco
 
-Há uma variedade de ferramentas de criação de DDS disponíveis para criar ou converter arquivos DDS compactados de bloqueio. Observação nem todas as ferramentas dão suporte aos requisitos de uso de arquivos DDS com Direct2D, conforme detalhado na seção anterior.
+Há uma variedade de ferramentas de criação de DDS disponíveis para criar ou converter arquivos DDS compactados de bloqueio. observação nem todas as ferramentas dão suporte aos requisitos de uso de arquivos DDS com Direct2D, conforme detalhado na seção anterior.
 
-A partir do Visual Studio 2013, você pode fazer com que o Visual Studio converta ativos visuais existentes, como JPEG e PNG, no formato de bloqueio de DDS correto como uma parte automática do seu processo de compilação. Isso é feito usando a etapa de compilação personalizada da tarefa conteúdo da imagem.
+a partir do Visual Studio 2013, você pode fazer Visual Studio converter ativos visuais existentes, como JPEG e PNG, no formato de bloqueio de DDS correto como uma parte automática do seu processo de compilação. Isso é feito usando a etapa de compilação personalizada da tarefa conteúdo da imagem.
 
-Para obter informações sobre como configurar isso para seu projeto, consulte: [como exportar uma textura para uso com aplicativos Direct2D ou Javascipt](/previous-versions/visualstudio/visual-studio-2013/dn392693(v=vs.120)).
+para obter informações sobre como configurar isso para seu projeto, consulte: [como exportar uma textura para uso com aplicativos Direct2D ou Javascipt](/previous-versions/visualstudio/visual-studio-2013/dn392693(v=vs.120)).
 
-### <a name="direct2d-apis"></a>APIs do Direct2D
+### <a name="direct2d-apis"></a>Direct2D API
 
 Direct2D é atualizado no Windows 8.1 para dar suporte aos seguintes formatos de pixel:
 
@@ -111,9 +111,9 @@ Direct2D é atualizado no Windows 8.1 para dar suporte aos seguintes formatos de
 -   \_Formato dxgi \_ BC2 \_ UNORM
 -   \_Formato dxgi \_ BC3 \_ UNORM
 
-Para os formatos anteriores, você deve usar alfa-geomultiplicado. Além disso, esses formatos só são válidos para uso como origem, não como um destino. Por exemplo, isso significa que você pode criar um bitmap Direct2D usando BC1, mas não um contexto de dispositivo.
+Para os formatos anteriores, você deve usar alfa-geomultiplicado. Além disso, esses formatos só são válidos para uso como origem, não como um destino. por exemplo, isso significa que você pode criar um Direct2D bitmap usando BC1, mas não um contexto de dispositivo.
 
-Os métodos a seguir são atualizados no Windows 8.1 para oferecer suporte aos formatos de BC:
+os métodos a seguir são atualizados no Windows 8.1 para oferecer suporte aos formatos de BC:
 
 -   [**ID2D1DeviceContext:: IsDxgiFormatSupported**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-isdxgiformatsupported)
 -   [**ID2D1DeviceContext:: CreateBitmap**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmap(d2d1_size_u_constvoid_uint32_constd2d1_bitmap_properties1__id2d1bitmap1))
@@ -124,11 +124,11 @@ Os métodos a seguir são atualizados no Windows 8.1 para oferecer suporte aos f
 -   [**ID2D1Bitmap::CopyFromBitmap**](/windows/win32/api/d2d1/nf-d2d1-id2d1bitmap-copyfrombitmap)
 -   [**ID2D1Bitmap1:: getsurface**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1bitmap1-getsurface)
 
-Observe que o [**CreateBitmapFromWicBitmap**](id2d1devicecontext-createbitmapfromwicbitmap-overload.md) usa [**IWICBitmapSource**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapsource) como uma interface; no entanto, no Windows 8.1 o WIC não dá suporte à obtenção de dados compactados de bloqueio de **IWICBitmapSource**, e não há nenhum formato de pixel do WIC correspondente ao \_ formato dxgi \_ BC1 \_ UNORM, etc. Em vez disso, **CreateBitmapFromWicBitmap** determina se **IWICBITMAPSOURCE** é um DDS [**IWICBitmapFrameDecode**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapframedecode) válido e carrega diretamente os dados compactados em bloco. Você pode especificar explicitamente o formato de pixel no [**d2d1 \_ bitmap \_ PROPERTIES1**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_bitmap_properties1) struct ou permitir que Direct2D determine automaticamente o formato correto.
+Observe que o [**CreateBitmapFromWicBitmap**](id2d1devicecontext-createbitmapfromwicbitmap-overload.md) usa [**IWICBitmapSource**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapsource) como uma interface; no entanto, no Windows 8.1 o WIC não dá suporte à obtenção de dados compactados de bloqueio de **IWICBitmapSource**, e não há nenhum formato de pixel do wic correspondente ao \_ formato DXGI \_ BC1 \_ UNORM, etc. Em vez disso, **CreateBitmapFromWicBitmap** determina se **IWICBITMAPSOURCE** é um DDS [**IWICBitmapFrameDecode**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapframedecode) válido e carrega diretamente os dados compactados em bloco. você pode especificar explicitamente o formato de pixel no [**D2D1 \_ BITMAP \_ PROPERTIES1**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_bitmap_properties1) struct ou permitir que Direct2D determine automaticamente o formato correto.
 
-### <a name="windows-imaging-component-apis"></a>APIs do Windows Imaging Component
+### <a name="windows-imaging-component-apis"></a>Windows APIs do componente de geração de imagens
 
-O Windows Imaging Component (WIC) adiciona um novo codec DDS no Windows 8.1. Além disso, ele adiciona novas interfaces que dão suporte ao acesso a dados específicos de DDS, incluindo dados de pixels compactados em bloco:
+o Windows o componente de geração de imagens (WIC) adiciona um novo codec DDS no Windows 8.1. Além disso, ele adiciona novas interfaces que dão suporte ao acesso a dados específicos de DDS, incluindo dados de pixels compactados em bloco:
 
 -   [**IWICDdsDecoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicddsdecoder)
 -   [**IWICDdsEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicddsencoder)

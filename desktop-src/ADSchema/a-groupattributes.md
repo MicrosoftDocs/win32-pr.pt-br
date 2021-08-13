@@ -1,11 +1,11 @@
 ---
 title: Group-Attributes atributo
-description: O atributo Group-Attributes não é usado no momento.
+description: O Group-Attributes atributo não é usado no momento.
 ms.assetid: 7966f50c-692e-43ab-89fd-eff4f58b552f
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Group-Attributes do atributo AD
-- Esquema de AD do atributo groupattributes
+- Group-Attributes atributo AD Schema
+- Atributo groupAttributes Esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d8353efb2fba9f81333791ca46603125c811f03
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5571451dbb76ded8f12ee2ef6ec07fd434c653392bf1851410fa242adc66fcd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086681"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119323006"
 ---
 # <a name="group-attributes-attribute"></a>Group-Attributes atributo
 
-O atributo **Group-Attributes** não está sendo usado no momento.
+O **atributo Group-Attributes** não é usado no momento.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Group-Attributes                     |
-| LDAP-Display-Name | groupattributes                      |
+| Ldap-Display-Name | groupAttributes                      |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.152               |
-| System-ID-GUID    | bf96797e-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf96797e-0de6-11d0-a285-00aa003049e2 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,10 +58,10 @@ O atributo **Group-Attributes** não está sendo usado no momento.
 | ID do link                | \-                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| É de valor único       | True                                |
-| É indexado             | True                                |
-| No catálogo global      | Falso                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                        |
+| Tem valor único       | Verdadeiro                                |
+| É indexado             | Verdadeiro                                |
+| No Catálogo Global      | Falso                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000001                          |
@@ -79,10 +79,10 @@ O atributo **Group-Attributes** não está sendo usado no momento.
 | ID do link                | \-                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| É de valor único       | True                                |
-| É indexado             | True                                |
-| No catálogo global      | Falso                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                        |
+| Tem valor único       | Verdadeiro                                |
+| É indexado             | Verdadeiro                                |
+| No Catálogo Global      | Falso                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000001                          |
@@ -100,10 +100,10 @@ O atributo **Group-Attributes** não está sendo usado no momento.
 | ID do link                | \-                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| É de valor único       | True                                |
-| É indexado             | True                                |
-| No catálogo global      | Falso                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                        |
+| Tem valor único       | Verdadeiro                                |
+| É indexado             | Verdadeiro                                |
+| No Catálogo Global      | Falso                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000001                          |
@@ -121,10 +121,10 @@ O atributo **Group-Attributes** não está sendo usado no momento.
 | ID do link                | \-                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| É de valor único       | True                                |
-| É indexado             | True                                |
-| No catálogo global      | Falso                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                        |
+| Tem valor único       | Verdadeiro                                |
+| É indexado             | Verdadeiro                                |
+| No Catálogo Global      | Falso                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000001                          |
@@ -142,10 +142,10 @@ O atributo **Group-Attributes** não está sendo usado no momento.
 | ID do link                | \-                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| É de valor único       | True                                |
-| É indexado             | True                                |
-| No catálogo global      | Falso                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                        |
+| Tem valor único       | Verdadeiro                                |
+| É indexado             | Verdadeiro                                |
+| No Catálogo Global      | Falso                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000001                          |
@@ -163,10 +163,10 @@ O atributo **Group-Attributes** não está sendo usado no momento.
 | ID do link                | \-                                  |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| É de valor único       | True                                |
-| É indexado             | True                                |
-| No catálogo global      | Falso                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                        |
+| Tem valor único       | Verdadeiro                                |
+| É indexado             | Verdadeiro                                |
+| No Catálogo Global      | Falso                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000001                          |

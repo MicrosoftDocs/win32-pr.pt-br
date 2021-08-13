@@ -1,6 +1,6 @@
 ---
 title: Mastered-By atributo
-description: Link regressivo para o atributo tem-Master-NCs. O nome distinto para seus objetos de configurações NTDS.
+description: Link regressivo para o atributo tem-Master-NCs. o nome distinto para seus objetos Configurações NTDS.
 ms.assetid: bd14998c-1691-4167-83c4-3c1ec1181b7f
 ms.tgt_platform: multiple
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85cf02f78363e1e8db06bddfb2c389cc78077090
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: eb6a19ffeb7069a2fa386f5e39a765e00f6908bb17ca6290e41c202c195088db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301046"
 ---
 # <a name="mastered-by-attribute"></a>Mastered-By atributo
 
-Link regressivo para o atributo tem-Master-NCs. O nome distinto para seus objetos de configurações NTDS.
+Link regressivo para o atributo tem-Master-NCs. o nome distinto para seus objetos Configurações NTDS.
 
 
 
@@ -58,7 +58,7 @@ Link regressivo para o atributo tem-Master-NCs. O nome distinto para seus objeto
 |------------------------|---------------------------------|
 | ID do link                | 77                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -79,7 +79,7 @@ Link regressivo para o atributo tem-Master-NCs. O nome distinto para seus objeto
 |------------------------|---------------------------------|
 | ID do link                | 77                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -100,7 +100,7 @@ Link regressivo para o atributo tem-Master-NCs. O nome distinto para seus objeto
 |------------------------|---------------------------------|
 | ID do link                | 77                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -121,11 +121,11 @@ Link regressivo para o atributo tem-Master-NCs. O nome distinto para seus objeto
 |------------------------|---------------------------------|
 | ID do link                | 77                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -142,11 +142,11 @@ Link regressivo para o atributo tem-Master-NCs. O nome distinto para seus objeto
 |------------------------|---------------------------------|
 | ID do link                | 77                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -163,11 +163,11 @@ Link regressivo para o atributo tem-Master-NCs. O nome distinto para seus objeto
 |------------------------|---------------------------------|
 | ID do link                | 77                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -184,11 +184,11 @@ Link regressivo para o atributo tem-Master-NCs. O nome distinto para seus objeto
 |------------------------|---------------------------------|
 | ID do link                | 77                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

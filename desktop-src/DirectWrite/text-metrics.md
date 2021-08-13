@@ -1,19 +1,19 @@
 ---
 title: Métricas de texto
-description: Para auxiliar o layout, a seleção de fontes personalizada e outras operações com uso intensivo de métrica, a partir do Windows 8, o DirectWrite tem várias novas APIs para expressar todas as informações sobre as fontes que você pode precisar para desenvolver aplicativos de Rich Text.
+description: para auxiliar o layout, a seleção de fontes personalizada e outras operações com uso intensivo de métrica, a partir do Windows 8, DirectWrite tem várias novas APIs para expressar todas as informações sobre as fontes que você pode precisar para desenvolver aplicativos de rich text.
 ms.assetid: 9df8c675-6f4d-4de7-916e-7dc51f5f04aa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73647ae4521b23afb399a4c66c8b25cdc46ba1b5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 27e5c5eecce93eac3726195410cf5b215bd65de3d7e48248a68d6d96858f8fed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105812965"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119329236"
 ---
 # <a name="text-metrics"></a>Métricas de texto
 
-Para auxiliar o layout, a seleção de fontes personalizada e outras operações com uso intensivo de métrica, a partir do Windows 8, o [DirectWrite](direct-write-portal.md) tem várias novas APIs para expressar todas as informações sobre as fontes que você pode precisar para desenvolver aplicativos de Rich Text.
+para auxiliar o layout, a seleção de fontes personalizada e outras operações com uso intensivo de métrica, a partir do Windows 8, [DirectWrite](direct-write-portal.md) tem várias novas APIs para expressar todas as informações sobre as fontes que você pode precisar para desenvolver aplicativos de rich text.
 
 ## <a name="panose"></a>PANOSE
 
@@ -23,7 +23,7 @@ Para acessar as informações de PANOse para uma fonte, use o método [**Getpano
 
 ## <a name="additional-metrics"></a>Métricas adicionais
 
-A partir do Windows 8, a API [DirectWrite](direct-write-portal.md) também dá suporte a várias novas métricas para expressar informações úteis sobre as fontes para seu aplicativo. Essas novas métricas incluem essas informações.
+a partir do Windows 8, a API do [DirectWrite](direct-write-portal.md) também dá suporte a várias métricas novas para expressar informações úteis sobre as fontes para seu aplicativo. Essas novas métricas incluem essas informações.
 
 -   Métricas da caixa delimitadora de glifos esquerda, direita, superior e inferior.
 -   Posicionamento X e Y para elementos sobrescrito e subscrito.
@@ -34,19 +34,19 @@ Essas informações estão disponíveis por meio do novo método [**Getmetrics**
 
 ## <a name="caret-metrics"></a>Métricas de cursor
 
-Para criar aplicativos de edição de texto, você precisa acessar informações sobre como desenhar o cursor que navega pelo texto. A partir do Windows 8, o [DirectWrite](direct-write-portal.md) fornece o método [**GetCaretMetrics**](/windows/win32/api/dwrite_1/nf-dwrite_1-idwritefontface1-getcaretmetrics) nas interfaces [**IDWriteFontFace1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritefontface1) e [**IDWriteFont1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritefont1) para esse cenário. **GetCaretMetrics** retorna uma enumeração de [**\_ \_ métricas de cursor DWRITE**](/windows/win32/api/Dwrite_1/ns-dwrite_1-dwrite_caret_metrics) que contém informações sobre a inclinação e o deslocamento do cursor ao longo da linha de base.
+Para criar aplicativos de edição de texto, você precisa acessar informações sobre como desenhar o cursor que navega pelo texto. a partir do Windows 8, [DirectWrite](direct-write-portal.md) fornece o método [**GetCaretMetrics**](/windows/win32/api/dwrite_1/nf-dwrite_1-idwritefontface1-getcaretmetrics) nas interfaces [**IDWriteFontFace1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritefontface1) e [**IDWriteFont1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritefont1) para esse cenário. **GetCaretMetrics** retorna uma enumeração de [**\_ \_ métricas de cursor DWRITE**](/windows/win32/api/Dwrite_1/ns-dwrite_1-dwrite_caret_metrics) que contém informações sobre a inclinação e o deslocamento do cursor ao longo da linha de base.
 
 Essas informações serão especialmente úteis se você quiser ter a inclinação do cursor apropriadamente com texto em itálico.
 
 ## <a name="monospaced-discoverability"></a>Descoberta monoespaçada
 
-Os aplicativos que permitem que os usuários gravem o código do computador geralmente usam fontes com espaçamento uniforme no lugar de fontes mais tradicionais. Portanto, você pode ter mais controle sobre a seleção de fontes em aplicativos relacionados ao desenvolvimento, [DirectWrite](direct-write-portal.md) expressa se uma fonte tem ou não espaçamento uniforme por meio da API. O método [**IsMonospacedFont**](/windows/win32/api/dwrite_1/nf-dwrite_1-idwritefont1-ismonospacedfont) na interface [**IDWriteFontFace1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritefontface1) retorna um booliano que indica se a fonte tem ou não espaçamento uniforme.
+Os aplicativos que permitem que os usuários gravem o código do computador geralmente usam fontes com espaçamento uniforme no lugar de fontes mais tradicionais. portanto, você pode ter mais controle sobre a seleção de fontes em aplicativos relacionados ao desenvolvimento, [DirectWrite](direct-write-portal.md) expressa se uma fonte tem ou não espaçamento uniforme por meio da API. O método [**IsMonospacedFont**](/windows/win32/api/dwrite_1/nf-dwrite_1-idwritefont1-ismonospacedfont) na interface [**IDWriteFontFace1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritefontface1) retorna um booliano que indica se a fonte tem ou não espaçamento uniforme.
 
 ## <a name="font-name-matching"></a>Correspondência de nome de fonte
 
-Aplicativos de Rich Text como leitores de PDF precisam ser capazes de corresponder fontes em seu conteúdo a fontes no sistema, precisam de acesso a nomes completos de fontes em vários formatos. Portanto, você pode corresponder melhor às fontes, [DirectWrite](direct-write-portal.md) contém uma enumeração que expressa informações de nomenclatura completas sobre uma fonte em muitos formatos.
+Aplicativos de Rich Text como leitores de PDF precisam ser capazes de corresponder fontes em seu conteúdo a fontes no sistema, precisam de acesso a nomes completos de fontes em vários formatos. portanto, você pode corresponder melhor as fontes, [DirectWrite](direct-write-portal.md) contém uma enumeração que expressa informações de nomenclatura completas sobre uma fonte em muitos formatos.
 
-Use a enumeração [**de \_ ID de \_ cadeia \_ de caracteres informativa DWRITE**](/windows/win32/api/dwrite/ne-dwrite-dwrite_informational_string_id) para obter o nome completo, o nome do script e o nome da CID de PostScript de qualquer fonte no sistema. Essas informações são valiosas quando você precisa corresponder as fontes em seu aplicativo às fontes apropriadas no sistema local.
+você usa a enumeração de [**\_ ID de cadeia de \_ caracteres \_ informativa DWRITE**](/windows/win32/api/dwrite/ne-dwrite-dwrite_informational_string_id) para obter o nome completo, PostScript nome e PostScript nome CID de qualquer fonte no sistema. Essas informações são valiosas quando você precisa corresponder as fontes em seu aplicativo às fontes apropriadas no sistema local.
 
 ## <a name="glyph-advances"></a>Avanços de glifo
 
@@ -62,6 +62,6 @@ O método [**GetUnicodeRanges**](/windows/win32/api/dwrite_1/nf-dwrite_1-idwrite
 
 Use o método [**GetEudcFontCollection**](/windows/win32/api/dwrite_1/nf-dwrite_1-idwritefactory1-geteudcfontcollection) na interface [**IDWriteFactory1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritefactory1) para acessar a coleção de fontes Eudc. Esse método funciona da mesma maneira que [**GetSystemFontCollection**](/windows/win32/api/dwrite/nf-dwrite-idwritefactory-getsystemfontcollection), mas, em vez disso, retorna um ponteiro para uma coleção de fontes Eudc.
 
- 
+ 
 
- 
+ 

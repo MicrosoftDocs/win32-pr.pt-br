@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 79329d27aff74efb7d08c7cc182ddb6e21f96cba
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 5d00fcd2eda763f38d99aa2efe0263179bb226e03b665ae1ccd1b3171b1ccfd6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119276086"
 ---
 # <a name="span-idvspixengineiofflineanalysisrequest_cancelofflineanalysisasync_dwordspaniofflineanalysisrequestcancelofflineanalysisasync-method"></a><span id="vspixengine.iofflineanalysisrequest_cancelofflineanalysisasync_dword"></span>Método IOfflineAnalysisRequest:: CancelOfflineAnalysisAsync
 
@@ -42,7 +42,7 @@ HRESULT CancelOfflineAnalysisAsync(
 *cookie*   
 Um cookie que identifica exclusivamente a solicitação e pode ser usado para sinalizar para que ela seja cancelada.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 

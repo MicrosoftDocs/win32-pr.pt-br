@@ -1,6 +1,6 @@
 ---
-title: Método GetCount IEnumBackgroundCopyFiles (Deliveryoptimization. h)
-description: Recupera uma contagem do número de arquivos na enumeração.
+title: Método GetCount IEnumBackgroundCopyFiles (Deliveryoptimization.h)
+description: Recupera uma contagem do número de arquivos na enumeração .
 ms.assetid: EE27679D-3AC0-49DA-992F-8DEA10C21646
 keywords:
 - Método GetCount
@@ -17,16 +17,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 05e2672f0cda3c572024a0865b2fb534dddb6598
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f67ee932079a7c67619fe769cbe5d1b6705261655853f1adccb14bf5d12eecf2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119409906"
 ---
-# <a name="ienumbackgroundcopyfilesgetcount-method"></a>Método IEnumBackgroundCopyFiles:: GetCount
+# <a name="ienumbackgroundcopyfilesgetcount-method"></a>Método IEnumBackgroundCopyFiles::GetCount
 
-Recupera uma contagem do número de arquivos na enumeração.
+Recupera uma contagem do número de arquivos na enumeração .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,16 +43,16 @@ HRESULT GetCount(
 
 <dl> <dt>
 
-*pCount* \[ fora\]
+*pCount* \[ out\]
 </dt> <dd>
 
 Número de arquivos na enumeração.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Esse método retorna **S_OK** em caso de êxito ou um dos valores padrão com **HRESULT** em erro.
+Esse método retorna **S_OK** em caso de êxito ou um dos valores padrão do COM **HRESULT** em caso de erro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,11 +60,11 @@ Esse método retorna **S_OK** em caso de êxito ou um dos valores padrão com **
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1709\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | Windows Server, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1709 somente para \[ aplicativos da área de trabalho\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 somente \[ aplicativos da área de trabalho\]<br/>                                       |
+| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IEnumBackgroundCopyFiles é definido como CA51E165-C365-424C-8D41-24AAA4FF3C40<br/>         |
 

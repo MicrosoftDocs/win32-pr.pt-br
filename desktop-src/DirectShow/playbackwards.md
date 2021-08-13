@@ -4,17 +4,17 @@ ms.assetid: 35e1deaf-7ca0-4bf5-a0ac-5e02f5edb646
 title: PlayBackwards
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47bdd0b66138702f9c3d96bbba73fc3707a21558
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 458f952d7b3b5ccb7df609e2c1be9768d99bbd5ab545453b3c0f0d78f36e8fa9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119316086"
 ---
 # <a name="playbackwards"></a>PlayBackwards
 
 > [!Note]  
-> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 

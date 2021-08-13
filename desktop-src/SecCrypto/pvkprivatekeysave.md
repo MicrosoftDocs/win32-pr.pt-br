@@ -13,24 +13,24 @@ api_type:
 - DllExport
 api_location:
 - Mssign32.dll
-ms.openlocfilehash: ef60c3f615a704248fbcb8630322fa6b598141ef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a2eed4b907f7c22414634a4b1ef49df6ca780181109a7396de2f8aa1776b7c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118901205"
 ---
 # <a name="pvkprivatekeysave-function"></a>Função PvkPrivateKeySave
 
 > [!IMPORTANT]
-> Essa API está preterida. A Microsoft poderá remover essa API em versões futuras.
+> Essa API está preterida. A Microsoft pode remover essa API em versões futuras.
 
  
 
-A função **PvkPrivateKeySave** salva uma [*chave privada*](../secgloss/p-gly.md) e sua [*chave pública*](../secgloss/p-gly.md) correspondente em um arquivo especificado.
+A **função PvkPrivateKeySave** [](../secgloss/p-gly.md) salva uma chave privada e sua chave [*pública correspondente*](../secgloss/p-gly.md) em um arquivo especificado.
 
 > [!Note]  
-> Esta função não tem nenhum arquivo de cabeçalho ou biblioteca de importação associado. Para chamar essa função, você deve criar um arquivo de cabeçalho definido pelo usuário e usar as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a Mssign32.dll.
+> Essa função não tem nenhum arquivo de header associado ou biblioteca de importação. Para chamar essa função, você deve criar um arquivo de título definido pelo usuário e usar as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente ao Mssign32.dll.
 
  
 
@@ -54,51 +54,51 @@ BOOL WINAPI PvkPrivateKeySave(
 
 <dl> <dt>
 
-*HCRYPTPROV* \[ no\]
+*hCryptProv* \[ Em\]
 </dt> <dd>
 
-Um identificador para um CSP ( [*provedor de serviços de criptografia*](../secgloss/c-gly.md) ).
+Um handle para um [*CSP (provedor de serviços*](../secgloss/c-gly.md) criptográficos).
 
 </dd> <dt>
 
-*hFile* \[ no\]
+*hFile* \[ Em\]
 </dt> <dd>
 
-Um identificador para um arquivo criado com a permissão de leitura/gravação inicial e a permissão de somente leitura subsequente.
+Um handle para um arquivo criado com permissão inicial de leitura/gravação e permissão subsequente somente leitura.
 
 </dd> <dt>
 
-*dwKeySpec* \[ no\]
+*dwKeySpec* \[ Em\]
 </dt> <dd>
 
-Um inteiro longo para o tipo de chave. Os valores possíveis incluem **em \_ keyexchange** ou **na \_ assinatura**.
+Um inteiro longo para o tipo de chave. Os valores possíveis **\_ incluem AT KEYEXCHANGE** **ou AT \_ SIGNATURE.**
 
 </dd> <dt>
 
-*hwndOwner* \[ no\]
+*hwndOwner* \[ Em\]
 </dt> <dd>
 
-Se uma senha for necessária para criptografar a chave privada, esse parâmetro será um identificador para o pai da caixa de diálogo; caso contrário, será **nulo**.
+Se uma senha for necessária para criptografar a chave privada, esse parâmetro será um indicador para o pai da caixa de diálogo; caso contrário, será **NULL.**
 
 </dd> <dt>
 
-*pwszKeyName* \[ no\]
+*pwszKeyName* \[ Em\]
 </dt> <dd>
 
 Um ponteiro para uma cadeia de caracteres terminada em nulo para o nome da chave a ser salva.
 
 </dd> <dt>
 
-*dwFlags* \[ no\]
+*dwFlags* \[ Em\]
 </dt> <dd>
 
-Um valor **DWORD** que especifica opções adicionais para a função. Para obter mais informações, consulte o parâmetro *dwFlags* em [**CryptExportKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportkey).
+Um **valor DWORD** que especifica opções adicionais para a função. Para obter mais informações, consulte *o parâmetro dwFlags* [**em CryptExportKey.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptexportkey)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Após o êxito, essa função retornará **true**. A função **PvkPrivateKeySave** retornará **false** se falhar.
+Após o sucesso, essa função retorna **TRUE.** A **função PvkPrivateKeySave** retornará **FALSE** se falhar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -106,8 +106,8 @@ Após o êxito, essa função retornará **true**. A função **PvkPrivateKeySav
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                    |
 | DLL<br/>                      | <dl> <dt>Mssign32.dll</dt> </dl> |
 
 

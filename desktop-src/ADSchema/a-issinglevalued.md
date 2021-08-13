@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 53a1fafd047afa47b874fb0385a690e2c0d13161
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1677a5a9b412e315be8ec773f8d0b1cc54f341622d2129ca7f6f80252cc950a6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103824992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119303936"
 ---
 # <a name="is-single-valued-attribute"></a>É um atributo de valor único
 
@@ -58,8 +58,8 @@ Se **for true**, esse atributo só poderá armazenar um valor.
 |------------------------|----------------------------------------------------------|
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x80C1                                                   |
-| System-Only            | True                                                     |
-| É de valor único       | True                                                     |
+| System-Only            | Verdadeiro                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
 | No catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
@@ -79,8 +79,8 @@ Se **for true**, esse atributo só poderá armazenar um valor.
 |------------------------|----------------------------------------------------------|
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x80C1                                                   |
-| System-Only            | True                                                     |
-| É de valor único       | True                                                     |
+| System-Only            | Verdadeiro                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
 | No catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
@@ -100,8 +100,8 @@ Se **for true**, esse atributo só poderá armazenar um valor.
 |------------------------|----------------------------------------------------------|
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x80C1                                                   |
-| System-Only            | True                                                     |
-| É de valor único       | True                                                     |
+| System-Only            | Verdadeiro                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
 | No catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
@@ -109,7 +109,7 @@ Se **for true**, esse atributo só poderá armazenar um valor.
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> |
 
 
 
@@ -121,16 +121,16 @@ Se **for true**, esse atributo só poderá armazenar um valor.
 |------------------------|----------------------------------------------------------|
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x80C1                                                   |
-| System-Only            | True                                                     |
-| É de valor único       | True                                                     |
+| System-Only            | Verdadeiro                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> |
 
 
 
@@ -142,16 +142,16 @@ Se **for true**, esse atributo só poderá armazenar um valor.
 |------------------------|----------------------------------------------------------|
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x80C1                                                   |
-| System-Only            | True                                                     |
-| É de valor único       | True                                                     |
+| System-Only            | Verdadeiro                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> |
 
 
 
@@ -163,16 +163,16 @@ Se **for true**, esse atributo só poderá armazenar um valor.
 |------------------------|----------------------------------------------------------|
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x80C1                                                   |
-| System-Only            | True                                                     |
-| É de valor único       | True                                                     |
+| System-Only            | Verdadeiro                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> |
 
 
 
@@ -184,16 +184,16 @@ Se **for true**, esse atributo só poderá armazenar um valor.
 |------------------------|----------------------------------------------------------|
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x80C1                                                   |
-| System-Only            | True                                                     |
-| É de valor único       | True                                                     |
+| System-Only            | Verdadeiro                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> |
 
 
 

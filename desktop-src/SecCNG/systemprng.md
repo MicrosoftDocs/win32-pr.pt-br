@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ksecdd.sys
 - Cng.sys
-ms.openlocfilehash: d847d34ffd11e158170f55599de0ceb3acf3c697
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eae1a46b43278c836ff6ce318dfdce7302bb0e052664a7326f9043a60eec72d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105758925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118905625"
 ---
 # <a name="systemprng-function"></a>Função SystemPrng
 
@@ -62,7 +62,7 @@ O número de bytes a serem recuperados.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sempre retorna **true**.
 
@@ -72,9 +72,9 @@ Sempre retorna **true**.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista com SP1\]<br/>                                                                                                                                                                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                                                                                                           |
-| DLL<br/>                      | <dl> <dt>Ksecdd.sys no Windows Server 2008 e no Windows Vista com SP1; </dt> <dt>Cng.sys no Windows 7 e no Windows Server 2008 R2</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista com SP1\]<br/>                                                                                                                                                                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                                                                                                                                                           |
+| DLL<br/>                      | <dl> <dt>Ksecdd.sys no Windows Server 2008 e Windows Vista com SP1;</dt> <dt>Cng.sys no Windows 7 e no Windows Server 2008 R2</dt> </dl> |
 
 
 

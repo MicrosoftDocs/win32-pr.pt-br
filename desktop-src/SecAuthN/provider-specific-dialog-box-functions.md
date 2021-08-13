@@ -4,12 +4,12 @@ ms.assetid: c9a52867-0a0b-40d8-a09d-2b7bed517e13
 title: Funções da caixa de diálogo Provider-Specific
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 567c4dcb9f1fd6c2e289d678cf09b3d0d66e4207
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b4d31a38f09dd0e0806fe21f491d02b5e18fe0abb1e5a181e40f0ab6370280b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105748871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118920573"
 ---
 # <a name="provider-specific-dialog-box-functions"></a>Funções da caixa de diálogo Provider-Specific
 

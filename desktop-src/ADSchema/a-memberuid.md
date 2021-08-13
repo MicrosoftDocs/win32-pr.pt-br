@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa64c0f1117b06f819ee3bbb6beb43fbdc8b647a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 55bfd733eab00bd34ca1320177aa616682d1fe3161126bf95f23df211a1780d9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300416"
 ---
 # <a name="memberuid-attribute"></a>atributo memberUid
 
@@ -118,15 +118,15 @@ Contém os nomes de logon dos membros de um grupo.
 | ID do link                | \-                                            |
 | MAPI-Id                | \-                                            |
 | System-Only            | Falso                                         |
-| É de valor único       | Falso                                         |
+| Tem valor único       | Falso                                         |
 | É indexado             | Falso                                         |
-| No catálogo global      | Falso                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                  |
+| No Catálogo Global      | Falso                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                  |
 | Range-Lower            | \-                                            |
 | Range-Upper            | \-                                            |
 | Search-Flags           | 0x00000000                                    |
 | System-Flags           | 0x00000000                                    |
-| Classes usadas em        | [**o POSIX**](c-posixgroup.md)<br/> |
+| Classes usadas em        | [**posixGroup**](c-posixgroup.md)<br/> |
 
 
 

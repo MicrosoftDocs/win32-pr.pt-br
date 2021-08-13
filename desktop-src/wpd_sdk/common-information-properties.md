@@ -1,7 +1,7 @@
 ---
-description: Os dispositivos portáteis do Windows oferecem suporte às seguintes propriedades de informações comuns.
+description: Windows Os Dispositivos Portáteis são compatíveis com as seguintes propriedades de informações comuns.
 ms.assetid: eaae7431-d53d-42a1-9286-001c6f5b1641
-title: Propriedades de informações comuns (PortableDevice. h)
+title: Propriedades de informações comuns (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,27 +13,27 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: b773d8404997da20b4196c802ba12286679af683
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 41a8845a41714ed1a775d19e14f0996aad698aaf99de18da4eceb4df92688409
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105787642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118431099"
 ---
 # <a name="common-information-properties"></a>Propriedades de informações comuns
 
-Os dispositivos portáteis do Windows oferecem suporte às seguintes propriedades de informações comuns.
+Windows Os Dispositivos Portáteis são compatíveis com as seguintes propriedades de informações comuns.
 
 
 
 | Propriedade                                      | VarType        | Descrição                                                                                              |
 |-----------------------------------------------|----------------|----------------------------------------------------------------------------------------------------------|
-| **\_observações de \_ informações \_ comuns do WPD**           | **LPWStr do VT \_** | Para compromissos, tarefas e objetos semelhantes, essa propriedade contém todas as anotações para o objeto fornecido.     |
-| **\_assunto de \_ informações \_ comuns do WPD**         | **LPWStr do VT \_** | Um valor que especifica o campo de assunto deste objeto.                                                 |
-| **\_texto de \_ corpo de informações comuns \_ WPD \_**      | **LPWStr do VT \_** | Essa propriedade contém o texto do corpo de um objeto, em formato HTML ou de texto não criptografado.                          |
-| **\_prioridade de \_ informações \_ comuns WPD**        | **\_UI4 VT**    | Um valor que especifica a prioridade deste objeto. 0 indica a prioridade mais alta.                    |
-| **\_DateTime de \_ início de informações comuns \_ WPD \_** | **Data de VT \_**   | Um valor que especifica a data/hora em que um compromisso, uma tarefa ou um objeto semelhante está agendado para iniciar. |
-| **\_data de \_ término de informações comuns \_ WPD \_**   | **Data de VT \_**   | Um valor que especifica a data/hora em que um compromisso, uma tarefa ou um objeto semelhante está agendado para terminar.   |
+| **NOTAS DE \_ INFORMAÇÕES \_ COMUNS DO \_ WPD**           | **VT \_ LPWSTR** | Para compromissos, tarefas e objetos semelhantes, essa propriedade contém qualquer anotação para o objeto determinado.     |
+| **ASSUNTO DE \_ INFORMAÇÕES \_ COMUNS DO \_ WPD**         | **VT \_ LPWSTR** | Um valor que especifica o campo de assunto desse objeto.                                                 |
+| **TEXTO DO \_ CORPO DE INFORMAÇÕES COMUNS \_ \_ WPD \_**      | **VT \_ LPWSTR** | Essa propriedade contém o texto do corpo de um objeto, em formato HTML ou texto não criptografado.                          |
+| **PRIORIDADE DE \_ INFORMAÇÕES \_ COMUNS WPD \_**        | **VT \_ UI4**    | Um valor que especifica a prioridade desse objeto. 0 indica a prioridade mais alta.                    |
+| **WPD \_ COMMON \_ INFORMATION \_ START \_ DATETIME** | **DATA \_ DA VT**   | Um valor que especifica a data/hora em que um compromisso, tarefa ou objeto semelhante está agendado para iniciar. |
+| **WPD \_ COMMON \_ INFORMATION \_ END \_ DATETIME**   | **DATA \_ DA VT**   | Um valor que especifica a data/hora em que um compromisso, tarefa ou objeto semelhante está agendado para terminar.   |
 
 
 
@@ -45,7 +45,7 @@ Os dispositivos portáteis do Windows oferecem suporte às seguintes propriedade
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

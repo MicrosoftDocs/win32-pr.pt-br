@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 05/31/2018
-ms.openlocfilehash: c8ac54e813d622f47462b73b763534977ba0932f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8521bc5319919855f734f6b7ac75a58af1af99a58ca360e833984649eb574bbe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105772929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119351616"
 ---
 # <a name="wm_lbuttondown-message"></a>Mensagem do WM \_ LBUTTONDOWN
 
@@ -71,7 +71,7 @@ A palavra de ordem superior especifica a coordenada y do cursor. A coordenada é
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar zero.
 
@@ -101,7 +101,7 @@ LRESULT CALLBACK WndProc(_In_ HWND hWnd, _In_ UINT msg, _In_ WPARAM wParam, _In_
 }
 ```
 
-Para obter mais exemplos, consulte [exemplos clássicos do Windows](https://github.com/microsoft/Windows-classic-samples) no github.
+para obter mais exemplos, consulte [Windows exemplos clássicos](https://github.com/microsoft/Windows-classic-samples) em GitHub.
 
 ## <a name="remarks"></a>Comentários
 

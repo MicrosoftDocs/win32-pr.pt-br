@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc8f7a9eb8ec1cee8d7ebede5d0e00dbe52e8b9b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 57ec57defb8bea779b43e27e5bd63cc03c68976b7a192e1f96d0faa5393ee93e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105750975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119303895"
 ---
 # <a name="jpegphoto-attribute"></a>atributo jpegPhoto
 

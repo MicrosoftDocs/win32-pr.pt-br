@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 4367551cdf2d48a06c633329ad850c3f7c2e0976
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1e3c4ee64583710e84af0d377999c389f6fe1bfa6876bb150789a5fd118f79f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118452834"
 ---
 # <a name="sfvm_updateobject-message"></a>\_Mensagem SFVM UpdateObject
 
@@ -47,7 +47,7 @@ O endereço de uma matriz de dois PIDLs. O primeiro PIDL é o antigo PIDL. A seg
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna a ID de ListView do objeto atualizado se a atualização foi bem-sucedida; caso contrário, retornará-1.
 

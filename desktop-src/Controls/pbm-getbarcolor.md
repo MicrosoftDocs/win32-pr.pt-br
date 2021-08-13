@@ -1,9 +1,9 @@
 ---
-title: Mensagem de PBM_GETBARCOLOR (commctrl. h)
+title: PBM_GETBARCOLOR mensagem (Commctrl.h)
 description: Obtém a cor da barra de progresso.
 ms.assetid: d046f7e4-e21e-4dd9-a7be-2bf820c3c492
 keywords:
-- Controles de PBM_GETBARCOLOR de mensagens do Windows
+- PBM_GETBARCOLOR controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 35586d3483d1d487f740a1a3d991c884c814f452
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8cb42d878840ad05f0854ec7ca9cb50dc1b3be2a55b3b65ddf652d961b6d818b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119312436"
 ---
-# <a name="pbm_getbarcolor-message"></a>Mensagem do GETBARCOLOR do PBM \_
+# <a name="pbm_getbarcolor-message"></a>Mensagem PBM \_ GETBARCOLOR
 
 Obtém a cor da barra de progresso.
 
@@ -35,13 +35,13 @@ Obtém a cor da barra de progresso.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna a cor da barra de progresso.
 
 ## <a name="remarks"></a>Comentários
 
-Essa é a cor definida pela mensagem [**\_ SETBARCOLOR do PBM**](pbm-setbarcolor.md) . O valor padrão é CLR \_ padrão, que é definido em commctrl. h.
+Essa é a cor definida pela mensagem [**PBM \_ SETBARCOLOR.**](pbm-setbarcolor.md) O valor padrão é CLR \_ DEFAULT, que é definido em commctrl.h.
 
 Essa função afeta apenas o modo clássico, não qualquer estilo visual.
 
@@ -51,9 +51,9 @@ Essa função afeta apenas o modo clássico, não qualquer estilo visual.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
+| parâmetro<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

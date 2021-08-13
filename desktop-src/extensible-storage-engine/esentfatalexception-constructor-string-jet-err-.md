@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Construtor EsentFatalException (cadeia de caracteres, JET_err)'
-title: Construtor EsentFatalException (cadeia de caracteres, JET_err)
+description: 'Saiba mais sobre: Construtor EsentFatalException (String, JET_err)'
+title: Construtor EsentFatalException (String, JET_err)
 TOCTitle: EsentFatalException constructor (String, JET_err)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentFatalException.#ctor(System.String,Microsoft.Isam.Esent.Interop.JET_err)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentfatalexception.esentfatalexception(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f025b93e626c4b0f2ab6bb7729169aaff1d67707
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f258d291961add7f97fd8f67da46bc2e3e64d57eda942fbffd9aeded7f15aafc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169637"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118778504"
 ---
-# <a name="esentfatalexception-constructor-string-jet_err"></a>Construtor EsentFatalException (cadeia de caracteres, JET_err)
+# <a name="esentfatalexception-constructor-string-jet_err"></a>Construtor EsentFatalException (String, JET_err)
 
 Inicializa uma nova instância da classe EsentFatalException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -60,14 +60,14 @@ protected EsentFatalException(
 #### <a name="parameters"></a>Parâmetros
 
   - descrição  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     A descrição do erro.
 
 <!-- end list -->
 
-  - erra  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_err](./jet-err-enumeration.md)  
+  - Err  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_err](./jet-err-enumeration.md)  
     
     O código de erro da exceção.
 
@@ -77,8 +77,8 @@ protected EsentFatalException(
 
 [Classe EsentFatalException](./esentfatalexception-class.md)
 
-[Membros do EsentFatalException](./esentfatalexception-members.md)
+[Membros EsentFatalException](./esentfatalexception-members.md)
 
-[Sobrecarga de EsentFatalException](./esentfatalexception-constructor.md)
+[Sobrecarga EsentFatalException](./esentfatalexception-constructor.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

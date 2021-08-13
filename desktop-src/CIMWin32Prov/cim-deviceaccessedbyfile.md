@@ -1,8 +1,8 @@
 ---
-description: A \_ classe de associação CIM DeviceAccessedByFile especifica o dispositivo lógico acessado usando a classe de dispositivo CIM referenciada \_ .
+description: A classe de associação DeviceAccessedByFile cim especifica o dispositivo lógico acessado usando a \_ classe DeviceFile CIM \_ referenciada.
 ms.assetid: 8ba44f40-8b84-4f5c-b719-aded10877654
 ms.tgt_platform: multiple
-title: Classe CIM_DeviceAccessedByFile
+title: CIM_DeviceAccessedByFile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: cf84d2e7943dfe6da88f81ef6963190553f028e7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 24526d7743b1f4939f2240c751f7da2bfecfacfe13d2ddf3cbc7fdd73c1d260e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119321636"
 ---
-# <a name="cim_deviceaccessedbyfile-class"></a>\_Classe CIM DeviceAccessedByFile
+# <a name="cim_deviceaccessedbyfile-class"></a>Classe \_ DeviceAccessedByFile cim
 
-A classe de associação **CIM \_ DeviceAccessedByFile** especifica o dispositivo lógico acessado usando a classe de [**\_ dispositivo CIM**](cim-devicefile.md) referenciada.
+A **classe de associação \_ DeviceAccessedByFile cim** especifica o dispositivo lógico acessado usando a classe [**DeviceFile CIM \_ referenciada.**](cim-devicefile.md)
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) modelo CIM DMTF são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -47,45 +47,45 @@ class CIM_DeviceAccessedByFile : CIM_Dependency
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ DeviceAccessedByFile** tem estes tipos de membros:
+A **classe \_ DeviceAccessedByFile cim** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ DeviceAccessedByFile** tem essas propriedades.
+A **classe \_ DeviceAccessedByFile cim** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ dispositivo CIM**
+Tipo de dados: **\_ DeviceFile CIM**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecessor")
 </dt> </dl>
 
-Um [**\_ dispositivo CIM**](cim-devicefile.md) que descreve o arquivo do dispositivo.
+Um [**\_ DeviceFile CIM**](cim-devicefile.md) que descreve o arquivo de dispositivo.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ LogicalDevice CIM**
+Tipo de dados: **Cim \_ LogicalDevice**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")
+Qualificadores: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent")
 </dt> </dl>
 
-Um [**\_ LogicalDevice CIM**](cim-logicaldevice.md) que descreve o dispositivo que é acessado usando o arquivo do dispositivo.
+Um [**\_ LogicalDevice cim**](cim-logicaldevice.md) que descreve o dispositivo que é acessado usando o arquivo de dispositivo.
 
 </dd> </dl>
 
@@ -93,9 +93,9 @@ Um [**\_ LogicalDevice CIM**](cim-logicaldevice.md) que descreve o dispositivo q
 
 O WMI não implementa essa classe.
 
-A classe **CIM \_ DeviceAccessedByFile** é derivada da [**\_ dependência CIM**](cim-dependency.md).
+A **classe \_ DeviceAccessedByFile CIM** é derivada da [**\_ Dependência CIM.**](cim-dependency.md)
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**\_Dependência CIM**](cim-dependency.md)
+[**Dependência cim \_**](cim-dependency.md)
 </dt> </dl>
 
  

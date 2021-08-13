@@ -1,11 +1,11 @@
 ---
-title: Método mediacollection. getStringCollectionByQuery
-description: O método getStringCollectionByQuery recupera um objeto StringCollection que contém todas as cadeias de caracteres que correspondem às condições de consulta.
+title: Método MediaCollection.getStringCollectionByQuery
+description: O método getStringCollectionByQuery recupera um objeto StringCollection que contém todas as cadeias de caracteres que corresponderem às condições de consulta.
 ms.assetid: 17442151-7eb1-4256-ac5f-142b11645216
 keywords:
-- método getStringCollectionByQuery Windows Media Player
-- método getStringCollectionByQuery Windows Media Player, classe Mediacollection
-- Classe mediacollection Windows Media Player, método getStringCollectionByQuery
+- Método getStringCollectionByQuery Windows Media Player
+- Método getStringCollectionByQuery Windows Media Player classe , MediaCollection
+- Classe MediaCollection Windows Media Player método , getStringCollectionByQuery
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bf304d22cb207d8a2bfb046522e8704e900d508
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6d9e8f2eae2ce52a566d4db6b8298187df1d4d444432e99dda22d3cacc0ed3ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119390106"
 ---
-# <a name="mediacollectiongetstringcollectionbyquery-method"></a>Método mediacollection. getStringCollectionByQuery
+# <a name="mediacollectiongetstringcollectionbyquery-method"></a>Método MediaCollection.getStringCollectionByQuery
 
-O método **getStringCollectionByQuery** recupera um objeto **StringCollection** que contém todas as cadeias de caracteres que correspondem às condições de consulta.
+O **método getStringCollectionByQuery** recupera um objeto **StringCollection** que contém todas as cadeias de caracteres que corresponderem às condições de consulta.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,50 +46,50 @@ retVal = MediaCollection.getStringCollectionByQuery(
 
 <dl> <dt>
 
-*atributo* \[ no\]
+*atributo* \[ Em\]
 </dt> <dd>
 
-**Cadeia de caracteres** que contém o nome do atributo.
+**Cadeia de** caracteres que contém o nome do atributo.
 
 </dd> <dt>
 
-*consulta* \[ do no\]
+*consulta* \[ Em\]
 </dt> <dd>
 
-Objeto de **consulta** .
+**Objeto de** consulta.
 
 </dd> <dt>
 
-*MediaType* \[ no\]
+*mediaType* \[ Em\]
 </dt> <dd>
 
-**Cadeia de caracteres** que contém o tipo de mídia. Deve conter um dos seguintes valores: "áudio", "vídeo", "foto", "playlist" ou "outros".
+**Cadeia de** caracteres que contém o tipo de mídia. Deve conter um dos seguintes valores: "audio", "video", "photo", "playlist" ou "other".
 
 </dd> <dt>
 
-*tipo de classificação* \[ no\]
+*sortAttribute* \[ Em\]
 </dt> <dd>
 
-**Cadeia de caracteres** que contém o nome do atributo usado para classificação. Uma cadeia de caracteres vazia ("") significa que nenhuma classificação é aplicada.
+**Cadeia de** caracteres que contém o nome do atributo usado para classificação. Uma cadeia de caracteres vazia ("") significa que nenhuma classificação é aplicada.
 
 </dd> <dt>
 
-*sortAscending* \[ no\]
+*sortAscending* \[ Em\]
 </dt> <dd>
 
-**Booliano**, verdadeiro indicando que a **StringCollection** deve ser classificada em ordem crescente.
+**Boolean**, true indicando que **StringCollection** deve ser classificação em ordem crescente.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Esse método retorna um objeto **StringCollection** .
+Esse método retorna um **objeto StringCollection.**
 
 ## <a name="remarks"></a>Comentários
 
-Consultas compostas usando a **consulta** não diferenciam maiúsculas de minúsculas.
+Consultas compostas que **usam Consulta não** são sensíveis a minúsculas.
 
-Quando a consulta composta especificada pelo parâmetro de *consulta* contém uma condição criada no atributo **MediaType** , essa condição é ignorada. O valor do parâmetro *MediaType* é sempre usado. Por exemplo, se a consulta composta contiver a condição "MediaType igual a áudio" e o valor do parâmetro *MediaType* for "vídeo", a lista de reprodução resultante conterá apenas itens de vídeo.
+Quando a consulta composta especificada pelo parâmetro *de* consulta contém uma condição criada no atributo **MediaType,** essa condição é ignorada. O valor do parâmetro *mediaType* é sempre usado. Por exemplo, se a consulta composta contiver a condição "MediaType Equals audio" e o valor do parâmetro *mediaType* for "video", a playlist resultante conterá apenas itens de vídeo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -106,13 +106,13 @@ Quando a consulta composta especificada pelo parâmetro de *consulta* contém um
 
 <dl> <dt>
 
-[**Objeto mediacollection**](mediacollection-object.md)
+[**Objeto MediaCollection**](mediacollection-object.md)
 </dt> <dt>
 
 [**Atributo MediaType**](mediatype-attribute.md)
 </dt> <dt>
 
-[**Objeto de consulta**](query-object.md)
+[**Objeto Query**](query-object.md)
 </dt> </dl>
 
  

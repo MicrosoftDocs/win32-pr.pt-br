@@ -1,10 +1,10 @@
 ---
-title: atributo ipNetmaskNumber
-description: Contém a máscara de rede IP na notação decimal pontilhada, omitindo os zeros à esquerda.
+title: Atributo ipNetmaskNumber
+description: Contém o IP netmask na notação decimal pontilhada, omitindo os zeros à esquerda.
 ms.assetid: 7d61e551-fd5b-4388-8cfa-cef0f61c716a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ipNetmaskNumber
+- Esquema do AD do atributo ipNetmaskNumber
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e65d402aaae3d9466980d963a167206adb89d16
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c18d6f1593ef35fda939e6e46cda479f3c9d1dc86f81c036072cbb05a5c69dfb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105762788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322916"
 ---
-# <a name="ipnetmasknumber-attribute"></a>atributo ipNetmaskNumber
+# <a name="ipnetmasknumber-attribute"></a>Atributo ipNetmaskNumber
 
-Contém a máscara de rede IP na notação decimal pontilhada, omitindo os zeros à esquerda.
+Contém o IP netmask na notação decimal pontilhada, omitindo os zeros à esquerda.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | ipNetmaskNumber                      |
-| LDAP-Display-Name | ipNetmaskNumber                      |
+| Ldap-Display-Name | ipNetmaskNumber                      |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.21                     |
-| System-ID-GUID    | 6ff64fcd-462e-4f62-b44a-9a5347659eb9 |
-| Syntax            | [**Cadeia de caracteres (IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | 6ff64fcd-462e-4f62-b44a-9a5347659eb9 |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -55,10 +55,10 @@ Contém a máscara de rede IP na notação decimal pontilhada, omitindo os zeros
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| É de valor único       | True                                        |
+| Tem valor único       | Verdadeiro                                        |
 | É indexado             | Falso                                       |
-| No catálogo global      | Falso                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
+| No Catálogo Global      | Falso                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
@@ -76,10 +76,10 @@ Contém a máscara de rede IP na notação decimal pontilhada, omitindo os zeros
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| É de valor único       | True                                        |
+| Tem valor único       | Verdadeiro                                        |
 | É indexado             | Falso                                       |
-| No catálogo global      | Falso                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
+| No Catálogo Global      | Falso                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
@@ -97,10 +97,10 @@ Contém a máscara de rede IP na notação decimal pontilhada, omitindo os zeros
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| É de valor único       | True                                        |
+| Tem valor único       | Verdadeiro                                        |
 | É indexado             | Falso                                       |
-| No catálogo global      | Falso                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
+| No Catálogo Global      | Falso                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
@@ -118,10 +118,10 @@ Contém a máscara de rede IP na notação decimal pontilhada, omitindo os zeros
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| É de valor único       | True                                        |
+| Tem valor único       | Verdadeiro                                        |
 | É indexado             | Falso                                       |
-| No catálogo global      | Falso                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
+| No Catálogo Global      | Falso                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |

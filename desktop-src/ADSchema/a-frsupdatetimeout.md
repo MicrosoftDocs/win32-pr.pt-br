@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73730ec18942f98c07c0a4756bb8c7716e6abfd2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 711177ae5c676e2a18bd89af772827a52dd475ec3831e11df71ba25c63fbc4c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104500019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119323365"
 ---
 # <a name="frs-update-timeout-attribute"></a>FRS-atualizar-atributo de tempo limite
 
@@ -58,7 +58,7 @@ O tempo máximo, em minutos, a aguardar para concluir uma atualização antes de
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
+| É de valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
 | No catálogo global      | Falso                                                                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
@@ -79,7 +79,7 @@ O tempo máximo, em minutos, a aguardar para concluir uma atualização antes de
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
+| É de valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
 | No catálogo global      | Falso                                                                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
@@ -100,7 +100,7 @@ O tempo máximo, em minutos, a aguardar para concluir uma atualização antes de
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
+| É de valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
 | No catálogo global      | Falso                                                                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
@@ -108,7 +108,7 @@ O tempo máximo, em minutos, a aguardar para concluir uma atualização antes de
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classes usadas em        | [**NTFRS-membro**](c-ntfrsmember.md)<br/> [**NTFRS-assinante**](c-ntfrssubscriber.md)<br/> |
+| Classes usadas em        | [**NTFRS-membro**](c-ntfrsmember.md)<br/> [**Assinante NTFRS**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ O tempo máximo, em minutos, a aguardar para concluir uma atualização antes de
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
+| Tem valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
-| No catálogo global      | Falso                                                                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
+| No Catálogo Global      | Falso                                                                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classes usadas em        | [**NTFRS-membro**](c-ntfrsmember.md)<br/> [**NTFRS-assinante**](c-ntfrssubscriber.md)<br/> |
+| Classes usadas em        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**Assinante NTFRS**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ O tempo máximo, em minutos, a aguardar para concluir uma atualização antes de
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
+| Tem valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
-| No catálogo global      | Falso                                                                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
+| No Catálogo Global      | Falso                                                                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classes usadas em        | [**NTFRS-membro**](c-ntfrsmember.md)<br/> [**NTFRS-assinante**](c-ntfrssubscriber.md)<br/> |
+| Classes usadas em        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**Assinante NTFRS**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ O tempo máximo, em minutos, a aguardar para concluir uma atualização antes de
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
+| Tem valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
-| No catálogo global      | Falso                                                                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
+| No Catálogo Global      | Falso                                                                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classes usadas em        | [**NTFRS-membro**](c-ntfrsmember.md)<br/> [**NTFRS-assinante**](c-ntfrssubscriber.md)<br/> |
+| Classes usadas em        | [**Membro NTFRS**](c-ntfrsmember.md)<br/> [**Assinante NTFRS**](c-ntfrssubscriber.md)<br/> |
 
 
 

@@ -3,7 +3,7 @@ title: Mensagem de MCM_GETCURRENTVIEW (commctrl. h)
 description: Obtém a exibição atual do calendário. Você pode enviar essa mensagem explicitamente ou usando a macro calendário mensal \_ GetCurrentView.
 ms.assetid: 9c42ebf6-611e-4e50-9dcc-cf7fd63b32eb
 keywords:
-- Controles de MCM_GETCURRENTVIEW de mensagens do Windows
+- controles de Windows de mensagem de MCM_GETCURRENTVIEW
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eebbd6a2b33043294b64b8b65308520b52dbe449
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 50f7fce3c1a22ec14ec34e849bd2e3fc4634118b11613913da4e6fae0b9b7b51
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119319676"
 ---
 # <a name="mcm_getcurrentview-message"></a>\_Mensagem MCM GETCURRENTVIEW
 
@@ -43,13 +43,13 @@ Deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Exibição atual. Um dos valores a seguir.
 
 
 
-| Código de retorno                                                                                  | Descrição              |
+| Código de retorno                                                                                  | Description              |
 |----------------------------------------------------------------------------------------------|--------------------------|
 | <dl> <dt>**MCMV \_ mês**</dt> </dl>   | Exibição mensal.<br/> |
 | <dl> <dt>**MCMV \_ ano**</dt> </dl>    | Exibição anual.<br/>  |
@@ -66,8 +66,8 @@ Exibição atual. Um dos valores a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 

@@ -4,12 +4,12 @@ description: O Direct3D implementa o formato de arquivo DDS para armazenar textu
 ms.assetid: 39f9847e-3b1c-4401-a253-74c183ffcc83
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4940db5ec40e6ec0b907aa4ee7ce725cd585e961
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: c8fc1f8b9b84c2dc1f9236c79c320ae75848834ef2183db55b189f6b9d340d06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104366927"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118796716"
 ---
 # <a name="programming-guide-for-dds"></a>Guia de programação para DDS
 
@@ -161,39 +161,39 @@ for (int iArrayElement = 0; iArrayElement < header10.arraySize; iArrayElement++)
 | \_Formato dxgi \_ BC2 \_ UNORM<br/> D3DFMT \_ DXT3<br/>                                 | um DDS \_ FOURCC | "DXT3"   |
 | \_Formato dxgi \_ BC3 \_ UNORM<br/> D3DFMT \_ DXT5<br/>                                 | um DDS \_ FOURCC | "DXT5"   |
 | \*<br/> \_Formato dxgi \_ BC4 \_ UNORM<br/>                                           | um DDS \_ FOURCC | "BC4U"   |
-| \*<br/> \_Formato dxgi \_ BC4 \_ SNORM<br/>                                           | um DDS \_ FOURCC | "BC4S"   |
-| \*<br/> \_Formato dxgi \_ BC5 \_ UNORM<br/>                                           | um DDS \_ FOURCC | "ATI2"   |
-| \*<br/> \_Formato dxgi \_ BC5 \_ SNORM<br/>                                           | um DDS \_ FOURCC | "BC5S"   |
-| \_Formato dxgi \_ R8G8 \_ B8G8 \_ UNORM<br/> D3DFMT \_ R8G8 \_ B8G8<br/>                    | um DDS \_ FOURCC | "RGBG"   |
-| \_Formato dxgi \_ G8R8 \_ G8B8 \_ UNORM<br/> D3DFMT \_ G8R8 \_ G8B8<br/>                    | um DDS \_ FOURCC | "GRGB"   |
-| \*<br/> \_Formato dxgi \_ R16G16B16A16 \_ UNORM<br/> D3DFMT \_ A16B16G16R16<br/>  | um DDS \_ FOURCC | 36       |
-| \*<br/> \_Formato dxgi \_ R16G16B16A16 \_ SNORM<br/> D3DFMT \_ Q16W16V16U16<br/>  | um DDS \_ FOURCC | 110      |
-| \*<br/> \_ \_ Float R16 de formato dxgi \_<br/> D3DFMT \_ R16F<br/>                   | um DDS \_ FOURCC | 111      |
-| \*<br/> \_ \_ Float R16G16 de formato dxgi \_<br/> D3DFMT \_ G16R16F<br/>             | um DDS \_ FOURCC | 112      |
-| \*<br/> \_ \_ Float R16G16B16A16 de formato dxgi \_<br/> D3DFMT \_ A16B16G16R16F<br/> | um DDS \_ FOURCC | 113      |
-| \*<br/> \_ \_ Float R32 de formato dxgi \_<br/> D3DFMT \_ R32F<br/>                   | um DDS \_ FOURCC | 114      |
-| \*<br/> \_ \_ Float R32G32 de formato dxgi \_<br/> D3DFMT \_ G32R32F<br/>             | um DDS \_ FOURCC | 115      |
-| \*<br/> \_ \_ Float R32G32B32A32 de formato dxgi \_<br/> D3DFMT \_ A32B32G32R32F<br/> | um DDS \_ FOURCC | 116      |
-| D3DFMT \_ DXT2<br/>                                                                     | um DDS \_ FOURCC | "DXT2"   |
-| D3DFMT \_ DXT4<br/>                                                                     | um DDS \_ FOURCC | "DXT4"   |
-| D3DFMT \_ UYVY<br/>                                                                     | um DDS \_ FOURCC | UYVY   |
-| D3DFMT \_ YUY2<br/>                                                                     | um DDS \_ FOURCC | YUY2   |
-| D3DFMT \_ CxV8U8<br/>                                                                   | um DDS \_ FOURCC | 117      |
-| Qualquer formato DXGI                                                                             | um DDS \_ FOURCC | "DX10"   |
+| \*<br/> \_Formato dxgi \_ BC4 \_ SNORM<br/>                                           | DDS \_ FOURCC | "BC4S"   |
+| \*<br/> FORMATO DXGI \_ \_ BC5 \_ UNORM<br/>                                           | DDS \_ FOURCC | "ATI2"   |
+| \*<br/> FORMATO DXGI \_ \_ BC5 \_ SNORM<br/>                                           | DDS \_ FOURCC | "BC5S"   |
+| DXGI \_ FORMAT \_ R8G8 \_ B8G8 \_ UNORM<br/> D3DFMT \_ R8G8 \_ B8G8<br/>                    | DDS \_ FOURCC | "RGBG"   |
+| DXGI \_ FORMAT \_ G8R8 \_ G8B8 \_ UNORM<br/> D3DFMT \_ G8R8 \_ G8B8<br/>                    | DDS \_ FOURCC | "GRGB"   |
+| \*<br/> DXGI \_ FORMAT \_ R16G16B16A16 \_ UNORM<br/> D3DFMT \_ A16B16G16R16<br/>  | DDS \_ FOURCC | 36       |
+| \*<br/> FORMATO DXGI \_ \_ R16G16B16A16 \_ SNORM<br/> D3DFMT \_ Q16W16V16U16<br/>  | DDS \_ FOURCC | 110      |
+| \*<br/> DXGI \_ FORMAT \_ R16 \_ FLOAT<br/> D3DFMT \_ R16F<br/>                   | DDS \_ FOURCC | 111      |
+| \*<br/> DXGI \_ FORMAT \_ R16G16 \_ FLOAT<br/> D3DFMT \_ G16R16F<br/>             | DDS \_ FOURCC | 112      |
+| \*<br/> DXGI \_ FORMAT \_ R16G16B16A16 \_ FLOAT<br/> D3DFMT \_ A16B16G16R16F<br/> | DDS \_ FOURCC | 113      |
+| \*<br/> DXGI \_ FORMAT \_ R32 \_ FLOAT<br/> D3DFMT \_ R32F<br/>                   | DDS \_ FOURCC | 114      |
+| \*<br/> DXGI \_ FORMAT \_ R32G32 \_ FLOAT<br/> D3DFMT \_ G32R32F<br/>             | DDS \_ FOURCC | 115      |
+| \*<br/> DXGI \_ FORMAT \_ R32G32B32A32 \_ FLOAT<br/> D3DFMT \_ A32B32G32R32F<br/> | DDS \_ FOURCC | 116      |
+| D3DFMT \_ DXT2<br/>                                                                     | DDS \_ FOURCC | "DXT2"   |
+| D3DFMT \_ DXT4<br/>                                                                     | DDS \_ FOURCC | "DXT4"   |
+| D3DFMT \_ UYVY<br/>                                                                     | DDS \_ FOURCC | "UYVY"   |
+| D3DFMT \_ YUY2<br/>                                                                     | DDS \_ FOURCC | "YUY2"   |
+| D3DFMT \_ CxV8U8<br/>                                                                   | DDS \_ FOURCC | 117      |
+| Qualquer formato DXGI                                                                             | DDS \_ FOURCC | "DX10"   |
 
 
 
  
 
-\* = Um leitor DDS robusto deve ser capaz de lidar com esses códigos de formato herdados. No entanto, tal leitor de DDS deve preferir usar a extensão de cabeçalho "DX10" ao gravar esses códigos de formato para evitar ambigüidade.
+\* = Um leitor de DDS robusto deve ser capaz de lidar com esses códigos de formato herdados. No entanto, esse leitor de DDS deve preferir usar a extensão de header "DX10" ao escrever esses códigos de formato para evitar ambiguidade.
 
-\*\* = Devido a alguns problemas de longa duração em implementações comuns de leitores e gravadores de DDS, a maneira mais robusta de escrever dados de tipo 10:10:10:2 é usar a extensão de cabeçalho "DX10" com o código de [**\_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) "24" (ou seja, o \_ formato dxgi \_ R10G10B10A2 \_ UNORM Value). \_Os dados de A2R10G10B10 D3DFMT devem ser convertidos em dados de tipo 10:10:10:2 antes de serem gravados como um \_ formato dxgi R10G10B10A2 formato \_ \_ UNORM arquivo DDS.
+\*\* = Devido a alguns problemas de longa duração em implementações comuns de leitores e autores DDS, a maneira mais robusta de gravar dados de tipo 10:10:10:2 é usar a extensão de header "DX10" com o código [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) "24" (ou seja, o valor DXGI \_ FORMAT \_ R10G10B10A2 \_ UNORM). Os dados D3DFMT \_ A2R10G10B10 devem ser convertidos em dados de tipo 10:10:10:2 antes de serem gravados como um arquivo DDS de formato \_ \_ DXGI FORMAT R10G10B10A2 \_ UNORM.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[DDS](dx-graphics-dds.md)
+[Dds](dx-graphics-dds.md)
 </dt> </dl>
 
  

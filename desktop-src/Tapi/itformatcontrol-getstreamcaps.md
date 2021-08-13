@@ -4,16 +4,16 @@ ms.assetid: 4c375369-51d9-44ac-a8f0-c2a96fc10805
 title: 'Método ITFormatControl:: GetStreamCaps (Ipmsp. h)'
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a1ccaf825912e53eafb5112f14ed369f999959a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1f54cbd44a946c0fcd3cf297c4cacadc49369765b8c1b6505031a145768c3b17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782912"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119406106"
 ---
 # <a name="itformatcontrolgetstreamcaps-method"></a>Método ITFormatControl:: GetStreamCaps
 
-\[ Esse método não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[esse método não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
 O método **GetStreamCaps** recupera os recursos associados a um determinado índice de formato.
 
@@ -63,13 +63,13 @@ Indica se o formato associado ao índice atual está habilitado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
 
 
-| Código de retorno                                                                                   | Descrição                                                     |
+| Código de retorno                                                                                   | Description                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | O método foi bem-sucedido.<br/>                                    |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Há memória insuficiente para executar a operação.<br/> |

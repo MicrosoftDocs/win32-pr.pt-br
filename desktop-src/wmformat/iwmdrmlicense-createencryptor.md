@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8031f412129f1d02cc4ef37c6af5f49a6c0b7532
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 481e33b6a3d4ffff3805ccc14f45b06a12ad2296fdaaedf13608f3a519c6ed10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105796210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118433655"
 ---
 # <a name="iwmdrmlicensecreateencryptor-method"></a>Método IWMDRMLicense:: createencryptr
 
@@ -49,7 +49,7 @@ Recebe um ponteiro para a interface [**IWMDRMEncrypt**](iwmdrmencrypt.md) do obj
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 

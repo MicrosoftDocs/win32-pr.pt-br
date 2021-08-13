@@ -1,11 +1,11 @@
 ---
-title: GPC-funcionalidade – atributo de versão
-description: A versão do editor de Política de Grupo que criou este objeto.
+title: Atributo GPC-Functionality-Version
+description: A versão do editor Política de Grupo que criou esse objeto.
 ms.assetid: 6ea2cb35-ad62-47e1-bafe-591fe875a4c9
 ms.tgt_platform: multiple
 keywords:
-- GPC-funcionalidade – atributo de versão esquema do AD
-- Esquema de AD do atributo gPCFunctionalityVersion
+- Esquema do AD do atributo GPC-Functionality-Version
+- Esquema do AD do atributo gPCFunctionalityVersion
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27df43dfc439bfd0dd5eee1c0626d987c7d19c46
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c7038d8aba24358194225bc762fb5af4e8610fbec62c4cb624044d8f1c7d01ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105750337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119323156"
 ---
-# <a name="gpc-functionality-version-attribute"></a>GPC-funcionalidade – atributo de versão
+# <a name="gpc-functionality-version-attribute"></a>Atributo GPC-Functionality-Version
 
-A versão do editor de Política de Grupo que criou este objeto.
+A versão do editor Política de Grupo que criou esse objeto.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | GPC-funcionalidade-versão            |
-| LDAP-Display-Name | gPCFunctionalityVersion              |
+| CN                | GPC-Functionality-Version            |
+| Ldap-Display-Name | gPCFunctionalityVersion              |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.893               |
-| System-ID-GUID    | f30e3bc0-9ff0-11d1-b603-0000f80367c1 |
+| System-Id-Guid    | f30e3bc0-9ff0-11d1-b603-0000f80367c1 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ A versão do editor de Política de Grupo que criou este objeto.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> |
+| Classes usadas em        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ A versão do editor de Política de Grupo que criou este objeto.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> |
+| Classes usadas em        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ A versão do editor de Política de Grupo que criou este objeto.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> |
+| Classes usadas em        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ A versão do editor de Política de Grupo que criou este objeto.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -142,7 +142,7 @@ A versão do editor de Política de Grupo que criou este objeto.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -163,7 +163,7 @@ A versão do editor de Política de Grupo que criou este objeto.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |

@@ -4,7 +4,7 @@ description: Especifica um formato de dados registrado como um par de proprietá
 ms.assetid: a178840e-81cc-4dd3-9d80-a181fa7fa888
 keywords:
 - API de Windows Biometric Framework de estrutura de WINBIO_REGISTERED_FORMAT
-- Ponteiro de estrutura de PWINBIO_REGISTERED_FORMAT Windows Biometric Framework API
+- ponteiro de estrutura de PWINBIO_REGISTERED_FORMAT Windows Biometric Framework API
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f45293fe95627c7dfad4c9c51eb7fa74ad1738c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2fcf871f3fc5f258de22e033e8a388968ab58c1a35e19829bf3d02a97ca60c53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118909364"
 ---
 # <a name="winbio_registered_format-structure"></a>\_Estrutura de formato registrada WINBIO \_
 
@@ -58,7 +58,7 @@ Um formato atribuído pelo proprietário.
 
 ## <a name="remarks"></a>Comentários
 
-Como o Windows atualmente dá suporte apenas a leitores de impressão digital, os valores a seguir devem ser usados na estrutura de **\_ \_ formato registrada WINBIO** .
+como Windows atualmente dá suporte apenas a leitores de impressão digital, os valores a seguir devem ser usados na estrutura de **\_ \_ formato registrado WINBIO** .
 
 
 
@@ -77,8 +77,8 @@ Como o Windows atualmente dá suporte apenas a leitores de impressão digital, o
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                                    |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                                       |
 | parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h)</dt> </dl> |
 
 

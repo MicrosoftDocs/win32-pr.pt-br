@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 90dd391a32d36ea17bfbb20edd4e6394a85f38dd
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: c51d966ac3125e21838c2e3e43286dca38a6f2c961dfd65d8a7032a69cf90d06
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103930211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119217736"
 ---
 # <a name="reset-method-of-the-cim_mediaaccessdevice-class"></a>Método Reset da classe CIM \_ MediaAccessDevice
 
@@ -43,7 +43,7 @@ uint32 Reset();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará 0 (zero) se a solicitação tiver sido executada com êxito, 1 (uma) se a solicitação não tiver suporte e algum outro valor se ocorrer um erro.
 

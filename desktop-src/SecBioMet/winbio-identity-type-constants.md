@@ -1,6 +1,6 @@
 ---
-title: Constantes de WINBIO_IDENTITY_TYPE (WinBio \_ Types. h)
-description: Especifique o formato das informações de identidade contidas na \_ estrutura de identidade WINBIO.
+title: WINBIO_IDENTITY_TYPE constantes (Tipos \_ Winbio.h)
+description: Especifique o formato das informações de identidade contidas na estrutura WINBIO \_ IDENTITY.
 ms.assetid: 27A01538-9B26-4A29-8ADB-ED9C5D5808B3
 topic_type:
 - apiref
@@ -15,25 +15,25 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dad068c6838f0a3a675970b7c9359b12ea8faa2c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d2f0e51d30e45b16dd7683d746cdef7ab5f75aaf62611102dd4dcd3e7bd07c8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118910188"
 ---
-# <a name="winbio_identity_type-constants"></a>Constantes de tipo de \_ identidade WINBIO \_
+# <a name="winbio_identity_type-constants"></a>Constantes \_ WINBIO IDENTITY \_ TYPE
 
-As constantes **de \_ \_ tipo de identidade WINBIO** a seguir podem ser usadas para especificar o formato das informações de identidade contidas na estrutura de [**\_ identidade WINBIO**](winbio-identity.md) .
+As constantes **WINBIO \_ IDENTITY \_ TYPE** a seguir podem ser usadas para especificar o formato das informações de identidade contidas na estrutura [**WINBIO \_ IDENTITY.**](winbio-identity.md)
 
 
 
 | Constante                                                                                                                                                                                      | Descrição                                               |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------|
-| <span id="WINBIO_ID_TYPE_NULL"></span><span id="winbio_id_type_null"></span><dl> <dt>**\_tipo de ID WINBIO \_ \_ NULL**</dt> </dl>             | O modelo não tem nenhuma ID associada. <br/>            |
-| <span id="WINBIO_ID_TYPE_WILDCARD"></span><span id="winbio_id_type_wildcard"></span><dl> <dt>**\_tipo de ID WINBIO \_ \_ curinga**</dt> </dl> | A estrutura corresponde a todas as identidades de modelo.<br/> |
-| <span id="WINBIO_ID_TYPE_GUID"></span><span id="winbio_id_type_guid"></span><dl> <dt>**\_GUID do \_ tipo de ID de WINBIO \_**</dt> </dl>             | Um GUID identifica o modelo.<br/>                |
-| <span id="WINBIO_ID_TYPE_SID"></span><span id="winbio_id_type_sid"></span><dl> <dt>**\_SID do \_ tipo de ID de WINBIO \_**</dt> </dl>                | Um SID de conta identifica o modelo.<br/>        |
+| <span id="WINBIO_ID_TYPE_NULL"></span><span id="winbio_id_type_null"></span><dl> <dt>**TIPO \_ DE ID \_ WINBIO \_ NULL**</dt> </dl>             | O modelo não tem nenhuma ID associada. <br/>            |
+| <span id="WINBIO_ID_TYPE_WILDCARD"></span><span id="winbio_id_type_wildcard"></span><dl> <dt>**CURINGA DE \_ TIPO DE ID \_ \_ WINBIO**</dt> </dl> | A estrutura corresponde a todas as identidades de modelo.<br/> |
+| <span id="WINBIO_ID_TYPE_GUID"></span><span id="winbio_id_type_guid"></span><dl> <dt>**GUID DE \_ TIPO DE ID \_ DO WINBIO \_**</dt> </dl>             | Um GUID identifica o modelo.<br/>                |
+| <span id="WINBIO_ID_TYPE_SID"></span><span id="winbio_id_type_sid"></span><dl> <dt>**SID DE \_ TIPO DE ID \_ \_ DO WINBIO**</dt> </dl>                | Um SID de conta identifica o modelo.<br/>        |
 
 
 
@@ -43,9 +43,9 @@ As constantes **de \_ \_ tipo de identidade WINBIO** a seguir podem ser usadas p
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                       |
-| parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                                    |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                                       |
+| parâmetro<br/>                   | <dl> <dt>Winbio \_ types.h (inclua Winbio.h)</dt> </dl> |
 
 
 
@@ -56,7 +56,7 @@ As constantes **de \_ \_ tipo de identidade WINBIO** a seguir podem ser usadas p
 [Constantes de aplicativo cliente](client-application-constants.md)
 </dt> <dt>
 
-[**\_identidade WINBIO**](winbio-identity.md)
+[**IDENTIDADE \_ WINBIO**](winbio-identity.md)
 </dt> </dl>
 
  

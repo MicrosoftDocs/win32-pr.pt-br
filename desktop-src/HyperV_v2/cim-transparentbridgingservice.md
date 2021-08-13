@@ -1,7 +1,7 @@
 ---
-description: Representa o aspecto de ponte transparente de um \_ objeto CIM SwitchService.
+description: Representa o aspecto de ponte transparente de um objeto CIM \_ SwitchService.
 ms.assetid: 24f650ab-22a1-41c8-8498-c6c30e63c83c
-title: Classe CIM_TransparentBridgingService
+title: CIM_TransparentBridgingService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: ed2c21c0f00bd89b0054667274a559ef25ce9326
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8744bbac256d0cebc6d340ac83c4e8da746c03b298e2e3cd6c542310b3fc4914
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119254976"
 ---
-# <a name="cim_transparentbridgingservice-class"></a>\_Classe CIM TransparentBridgingService
+# <a name="cim_transparentbridgingservice-class"></a>Classe CIM \_ TransparentBridgingService
 
-Representa o aspecto de ponte transparente de um objeto [**CIM \_ SwitchService**](cim-switchservice.md) .
+Representa o aspecto de ponte transparente de um [**objeto CIM \_ SwitchService.**](cim-switchservice.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,42 +39,42 @@ class CIM_TransparentBridgingService : CIM_ForwardingService
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ TransparentBridgingService** tem estes tipos de membros:
+A **classe CIM \_ TransparentBridgingService** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ TransparentBridgingService** tem essas propriedades.
+A **classe CIM \_ TransparentBridgingService** tem essas propriedades.
 
 <dl> <dt>
 
-**Envelhecimento**
+**AgingTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("Seconds"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Bridge-MIB. dot1dTpAgingTime ")
+Qualificadores: [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("Segundos"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| BRIDGE-MIB.dot1dTpAgingTime")
 </dt> </dl>
 
-O período de tempo limite, em segundos, para expiração de informações de encaminhamento de forma dinâmica. O padrão 802.1 D-1990 recomenda um padrão de 300 segundos.
+O período de tempo de tempo, em segundos, para o desacordo das informações de encaminhamento aprendidas dinamicamente. O padrão 802.1D-1990 recomenda um padrão de 300 segundos.
 
 </dd> <dt>
 
-**FID**
+**Fid**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Identificador de banco de dados de filtragem usado por comutadores com reconhecimento de VLAN que têm mais de um banco de dados de filtragem.
+Filtragem do Identificador de Banco de Dados usado por comutadores com conhecimento de VLAN que têm mais de um banco de dados de filtragem.
 
 </dd> </dl>
 
@@ -86,8 +86,8 @@ Identificador de banco de dados de filtragem usado por comutadores com reconheci
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -96,7 +96,7 @@ Identificador de banco de dados de filtragem usado por comutadores com reconheci
 
 <dl> <dt>
 
-[**\_FORWARDINGSERVICE CIM**](cim-forwardingservice.md)
+[**CIM \_ ForwardingService**](cim-forwardingservice.md)
 </dt> </dl>
 
  

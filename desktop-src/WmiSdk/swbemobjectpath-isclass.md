@@ -1,8 +1,8 @@
 ---
-description: A propriedade IsClass do objeto SWbemObjectPath é um valor booliano que indica se esse caminho representa uma classe. Esta propriedade é somente para leitura.
+description: A propriedade IsClass do objeto SWbemObjectPath é um valor booliana que indica se esse caminho representa uma classe. Esta propriedade é somente para leitura.
 ms.assetid: 55d50785-6cdb-4e42-8b59-121f339494df
 ms.tgt_platform: multiple
-title: Propriedade SWbemObjectPath. IsClass (Wbemdisp. h)
+title: Propriedade SWbemObjectPath.IsClass (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 973fa72d3f41a5c2a762a6411d6e688459c8342b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c149084f9dbaec439432bc31997b9ebab06044cf5882734d418cb007b057c900
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119383106"
 ---
-# <a name="swbemobjectpathisclass-property"></a>Propriedade SWbemObjectPath. IsClass
+# <a name="swbemobjectpathisclass-property"></a>Propriedade SWbemObjectPath.IsClass
 
-A propriedade **IsClass** do objeto [**SWbemObjectPath**](swbemobjectpath.md) é um valor booliano que indica se esse caminho representa uma classe. Esta propriedade é somente para leitura.
+A **propriedade IsClass** do [**objeto SWbemObjectPath**](swbemobjectpath.md) é um valor booliana que indica se esse caminho representa uma classe. Esta propriedade é somente para leitura.
 
-Para obter uma explicação dessa sintaxe, consulte [convenções de documento para a API de script](document-conventions-for-the-scripting-api.md).
+Para uma explicação dessa sintaxe, consulte [Convenções de documento para a API de Script](document-conventions-for-the-scripting-api.md).
 
 Esta propriedade é somente para leitura.
 
@@ -50,11 +50,11 @@ SWbemObjectPath.IsClass As Boolean
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| parâmetro<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMOBJECTPATH CLSID<br/>                                                       |
-| IID<br/>                      | ISWbemObjectPath de IID \_<br/>                                                        |
+| CLSID<br/>                    | CLSID \_ SWbemObjectPath<br/>                                                       |
+| IID<br/>                      | IID \_ ISWbemObjectPath<br/>                                                        |
 
 
 

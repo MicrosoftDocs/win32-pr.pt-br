@@ -4,12 +4,12 @@ description: Use a API ID3D11DeviceContext2 ResizeTilePool para aumentar um pool
 ms.assetid: 529E874E-650B-4BFD-97F6-E66E743564A9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 86368da46f7c2219f42b5ecbc122b79fee19e72c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 00b91e3942e5da88c58c391f652a2b23a7b02513777060d78e86522b892da478
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119375806"
 ---
 # <a name="tile-pool-resizing"></a>Redimensionamento de pool de blocos
 
@@ -30,9 +30,9 @@ O ato de reduzir (e remover mapeamentos) não necessariamente gera economia de m
 [Mapeamentos estão em um pool de blocos](mappings-are-into-a-tile-pool.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

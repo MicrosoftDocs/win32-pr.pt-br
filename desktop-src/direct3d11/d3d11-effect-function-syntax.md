@@ -4,18 +4,18 @@ description: Uma função de efeito é escrita em HLSL e é declarada com a sint
 ms.assetid: 5e12ba65-98bf-4f21-be75-602687157eb1
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f569211d5f178b96cf7415478010285e7a836b58
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 945f7104d44947f37af71ce664dd99ff64362062b1d42af62af2054538bacb52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119046614"
 ---
 # <a name="effect-function-syntax-direct3d-11"></a>Sintaxe da função de efeito (Direct3D 11)
 
 Uma função de efeito é escrita em HLSL e é declarada com a sintaxe descrita nesta seção.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
  *Função* do ReturnType ( \[ *ArgumentList* \] )
 
@@ -28,7 +28,7 @@ Uma função de efeito é escrita em HLSL e é declarada com a sintaxe descrita 
 
 
 
-| Name         | Descrição                                                                                                                                                                                                                                                          |
+| Nome         | Descrição                                                                                                                                                                                                                                                          |
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipoderetorno   | Qualquer [tipo de HLSL](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax)                                                                                                                                                                                                       |
 | FunctionName | Uma cadeia de caracteres ASCII que identifica exclusivamente o nome da função de sombreador.                                                                                                                                                                                            |
@@ -37,7 +37,7 @@ Uma função de efeito é escrita em HLSL e é declarada com a sintaxe descrita 
 
 
 
- 
+ 
 
 Uma função de efeito pode ser um sombreador ou pode simplesmente ser uma função chamada por um sombreador. Uma função é identificada exclusivamente por seu nome, os tipos de seus parâmetros e a plataforma de destino; Portanto, as funções podem ser sobrecarregadas. Qualquer função HLSL válida deve se ajustar a este formato; para obter uma lista mais detalhada de sintaxe para funções HLSL, consulte [funções (DirectX HLSL)](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-functions).
 
@@ -73,6 +73,6 @@ PS_OUTPUT RenderScenePS( VS_OUTPUT In,
 [Formato do efeito](d3d11-effect-format.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

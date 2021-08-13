@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Icfgnt5.dll
-ms.openlocfilehash: c851ed7d5610d96af636afb60114a51be9c711f4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9b0d533e234986f54c6a4de668273bda08d9c810dc9f5a93acb3aaf030cea665
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105755405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119390656"
 ---
 # <a name="icfgneedinetcomponents-function"></a>Função IcfgNeedInetComponents
 
@@ -49,7 +49,7 @@ Uma combinação dos sinalizadores a seguir que especificam quais componentes de
 
 | Valor                                                                                                                                                                                                                                  | Significado                                         |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|
-| <span id="ICFG_INSTALLMAIL"></span><span id="icfg_installmail"></span><dl> <dt>**ICFG \_ INSTALLMAIL**</dt> <dt>0x00000004</dt> </dl> | O Exchange ou Internet mail é necessário?<br/> |
+| <span id="ICFG_INSTALLMAIL"></span><span id="icfg_installmail"></span><dl> <dt>**ICFG \_ INSTALLMAIL**</dt> <dt>0x00000004</dt> </dl> | o Exchange ou o Internet mail é necessário?<br/> |
 | <span id="ICFG_INSTALLRAS"></span><span id="icfg_installras"></span><dl> <dt>**ICFG \_ INSTALLRAS**</dt> <dt>0x00000002</dt> </dl>    | O RAS é necessário?<br/>                       |
 | <span id="ICFG_INSTALLTCP"></span><span id="icfg_installtcp"></span><dl> <dt>**ICFG \_ INSTALLTCP**</dt> <dt>0x00000001</dt> </dl>    | O TCP/IP é necessário?<br/>                    |
 
@@ -66,7 +66,7 @@ Se esse valor for não **nulo**, ele será **verdadeiro** no retorno se um ou ma
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Se nenhum erro ocorrer, ele retornará o código de **\_ êxito do erro** .
 

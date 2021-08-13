@@ -1,35 +1,35 @@
 ---
-description: A tabela MsiAssembly especifica Windows Installer configurações para assemblies do Microsoft .NET Framework e assemblies do Win32. Para obter mais informações, consulte instalação de assemblies no cache de assembly global e instalação de assemblies do Win32.
+description: A Tabela MsiAssembly especifica Windows do Instalador para assemblies do Microsoft .NET Framework e assemblies Win32. Para obter mais informações, consulte Instalação de assemblies no cache de assembly global e instalação de assemblies Win32.
 ms.assetid: 3a8cd206-0112-4840-8c9d-773483f5c771
 title: Tabela MsiAssembly
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b54bd6e58e2ff6d12c582309c23856a7bb825b2d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: acda246bd6baba75d0f7e8d53f515a25abb0c163c2d3ef0b1b9705c123b8e69e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119381376"
 ---
 # <a name="msiassembly-table"></a>Tabela MsiAssembly
 
-A tabela MsiAssembly especifica Windows Installer configurações para assemblies do Microsoft .NET Framework e assemblies do Win32. Para obter mais informações, consulte [instalação de assemblies no cache de assembly global](installation-of-assemblies-to-the-global-assembly-cache.md) e [instalação de assemblies do Win32](installation-of-win32-assemblies.md).
+A Tabela MsiAssembly especifica Windows do Instalador para assemblies do Microsoft .NET Framework e assemblies Win32. Para obter mais informações, [consulte Instalação de assemblies no cache de assembly global](installation-of-assemblies-to-the-global-assembly-cache.md) e instalação de [assemblies Win32](installation-of-win32-assemblies.md).
 
-No Windows XP, Windows Installer pode instalar assemblies do Win32 como [assemblies lado a lado](side-by-side-assemblies.md). Para obter mais informações, consulte a [API do assembly lado a lado](../sbscs/side-by-side-assembly-api.md).
+No Windows XP, Windows instalador pode instalar assemblies Win32 como [assemblies lado a lado.](side-by-side-assemblies.md) Para obter mais informações, consulte a API de assembly lado [a lado.](../sbscs/side-by-side-assembly-api.md)
 
 **Windows 2000:** Não há suporte para esse recurso.
 
-A tabela MsiAssembly tem as colunas a seguir.
+A Tabela MsiAssembly tem as seguintes colunas.
 
 
 
 | Coluna            | Tipo                         | Chave | Nullable |
 |-------------------|------------------------------|-----|----------|
-| Componente\_       | [Identificador](identifier.md) | S   | N        |
+| Componente\_       | [Identificador](identifier.md) | Y   | N        |
 | Recurso\_         | [Identificador](identifier.md) | N   | N        |
-| Manifesto do arquivo \_    | [Identificador](identifier.md) | N   | S        |
-| Aplicativo de arquivo \_ | [Identificador](identifier.md) | N   | S        |
-| Atributos        | [Inteiro](integer.md)       | N   | S        |
+| Manifesto do \_ arquivo    | [Identificador](identifier.md) | N   | Y        |
+| Aplicativo de \_ arquivo | [Identificador](identifier.md) | N   | Y        |
+| Atributos        | [Inteiro](integer.md)       | N   | Y        |
 
 
 
@@ -42,57 +42,57 @@ A tabela MsiAssembly tem as colunas a seguir.
 <span id="Component_"></span><span id="component_"></span><span id="COMPONENT_"></span>Componente\_
 </dt> <dd>
 
-A chave na [tabela de componentes](component-table.md) que especifica o componente de Windows Installer que contém esse assembly.
+A chave na Tabela [de Componentes](component-table.md) que especifica o componente Windows Instalador que contém esse assembly.
 
-O valor neste campo não deve ser definido como nulo. O campo caminho do componente na [tabela de componentes](component-table.md) não deve ser nulo.
+O valor nesse campo não deve ser definido como nulo. O campo KeyPath do componente na [Tabela de Componentes](component-table.md) não deve ser nulo.
 
-Para assemblies do Win32, o caminho KeyPath não pode ser o arquivo de manifesto especificado no \_ manifesto do arquivo. O manifesto pode ser o caminho Keypara um .NET Framework ou assembly de política.
+Para assemblies Win32, o componente KeyPath não pode ser o arquivo de manifesto especificado no Manifesto do \_ Arquivo. O manifesto pode ser o caminho da chave para um assembly de .NET Framework ou de política.
 
 </dd> <dt>
 
 <span id="Feature_"></span><span id="feature_"></span><span id="FEATURE_"></span>Recurso\_
 </dt> <dd>
 
-A chave na [tabela de recursos](feature-table.md).
+Chave na Tabela [de Recursos](feature-table.md).
 
-Quando o assembly deve ser instalado por uma instalação de recurso, Windows Installer instala o recurso apontado por esse campo.
+Quando o assembly deve ser instalado por uma instalação de recurso, Windows Instalador instala o recurso apontado por esse campo.
 
 </dd> <dt>
 
-<span id="File_Manifest"></span><span id="file_manifest"></span><span id="FILE_MANIFEST"></span>Manifesto do arquivo \_
+<span id="File_Manifest"></span><span id="file_manifest"></span><span id="FILE_MANIFEST"></span>Manifesto do \_ arquivo
 </dt> <dd>
 
-Uma chave externa na [tabela de arquivos](file-table.md) que especifica o arquivo que contém o manifesto para um assembly .NET Framework ou assembly Win32.
+Uma chave externa na Tabela [de Arquivos](file-table.md) que especifica o arquivo que contém o manifesto para um assembly .NET Framework ou assembly Win32.
 
-Para um assembly Win32, não especifique esse arquivo como o arquivo de caminho de chave de componente no campo KeyPath da [tabela de componentes](component-table.md).
+Para um assembly Win32, não especifique esse arquivo como o arquivo de caminho da chave do componente no campo KeyPath da [Tabela de Componentes](component-table.md).
 
 </dd> <dt>
 
-<span id="File_Application"></span><span id="file_application"></span><span id="FILE_APPLICATION"></span>Aplicativo de arquivo \_
+<span id="File_Application"></span><span id="file_application"></span><span id="FILE_APPLICATION"></span>Aplicativo de \_ arquivo
 </dt> <dd>
 
 Para instalar o assembly em um local privado, insira o arquivo de caminho de chave para o componente de assembly neste campo.
 
-Esse é o valor que aparece no campo KeyPath da tabela de [componentes](component-table.md). O instalador pode instalar o assembly na estrutura de diretório do componente especificado na [tabela de diretórios](directory-table.md). Esse campo deverá ser nulo se o assembly for instalado no cache de assembly global.
+Esse é o valor que aparece no campo KeyPath da [Tabela de Componentes](component-table.md). O Instalador pode instalar o assembly na estrutura de diretório do componente especificado na Tabela [de Diretórios](directory-table.md). Esse campo deverá ser nulo se o assembly for instalado no cache de assembly global.
 
 </dd> <dt>
 
 <span id="Attributes"></span><span id="attributes"></span><span id="ATTRIBUTES"></span>Atributos
 </dt> <dd>
 
-Insira um valor de 1 (um) para um assembly Win32. Insira um valor de 0 (zero) para um assembly .NET Framework.
+Insira um valor de 1 (um) para um assembly Win32. Insira um valor de 0 (zero) para um .NET Framework assembly.
 
-Se a coluna Attributes for nula, o instalador tratará o assembly como um assembly .NET Framework.
+Se a coluna Atributos for NULL, o Instalador tratará o assembly como um assembly .NET Framework assembly.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Se houver pelo menos uma entrada na tabela MsiAssembly, a [tabela InstallExecuteSequence](installexecutesequence-table.md) deverá conter a [ação MsiPublishAssemblies](msipublishassemblies-action.md)e a [ação MsiUnpublishAssemblies](msiunpublishassemblies-action.md).
+Se houver pelo menos uma entrada na Tabela MsiAssembly, a Tabela [InstallExecuteSequence](installexecutesequence-table.md) deverá conter a Ação [MsiPublishAssemblies](msipublishassemblies-action.md)e a [Ação MsiUnpublishAssemblies](msiunpublishassemblies-action.md).
 
-Como os assemblies não podem ser revertidos depois de serem confirmados, Windows Installer usa um processo de instalação em duas etapas. As interfaces para os assemblies são criadas durante as operações de instalação geradas pela [ação MsiPublishAssemblies](msipublishassemblies-action.md).
+Como os assemblies não podem ser retordenados depois que são confirmados, Windows Instalador usa um processo de instalação em duas etapas. As interfaces para os assemblies são criadas durante as operações de instalação geradas pela [Ação MsiPublishAssemblies](msipublishassemblies-action.md).
 
-Os assemblies não são confirmados até a execução bem-sucedida da [ação InstallFinalize](installfinalize-action.md). Isso significa que, se você criar uma ação personalizada ou um recurso que dependa do assembly, ele deverá ser sequenciado após a [ação InstallFinalize](installfinalize-action.md). Por exemplo, se você precisar iniciar um serviço que depende de um assembly no GAC (cache de assembly global), será necessário agendar o início desse serviço após a [ação InstallFinalize](installfinalize-action.md). Isso significa que você não pode usar a [tabela de UserControl](servicecontrol-table.md) para iniciar o serviço, em vez disso, você deve usar uma ação personalizada que é sequenciada após InstallFinalize.
+Os assemblies não são comprometidos até que a execução bem-sucedida da [Ação InstallFinalize seja bem-sucedida.](installfinalize-action.md) Isso significa que, se você tiver uma ação personalizada ou recurso que se baseia no assembly, ele deverá ser sequenciado após a [Ação InstallFinalize](installfinalize-action.md). Por exemplo, se você precisar iniciar um serviço que depende de um assembly no GAC (Cache de Assembly Global), deverá agendar o início desse serviço após a [Ação InstallFinalize](installfinalize-action.md). Isso significa que você não pode usar a [Tabela ServiceControl](servicecontrol-table.md) para iniciar o serviço, em vez disso, você deve usar uma ação personalizada que é sequenciada após InstallFinalize.
 
 ## <a name="validation"></a>Validação
 
