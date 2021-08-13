@@ -1,17 +1,17 @@
 ---
 description: Indica a direção do processamento de saturação aplicado pela câmera quando a foto foi tirada.
 ms.assetid: 209edf55-fd6c-416b-b175-346f5158fc2a
-title: System. Photo. saturação
+title: System.Photo.S saturação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50655b1d9344bb3c25576de9ece3ac6ef2bba95c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d00976c6145f170bffa3921beb1306cb63c14487e08b5a69ad96f76ba4fe1651
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105794562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118723612"
 ---
-# <a name="systemphotosaturation"></a>System. Photo. saturação
+# <a name="systemphotosaturation"></a>System.Photo.S saturação
 
 Indica a direção do processamento de saturação aplicado pela câmera quando a foto foi tirada.
 
@@ -78,13 +78,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -93,19 +93,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -120,7 +120,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

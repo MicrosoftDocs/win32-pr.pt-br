@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 614e42512b17a0d8a6950ac96914128b8746c685
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f5aa8ab3ba61d752cfe4d9f8ecd29bf4fcd06c3dbadde94e51ac9a05a8504b43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118452812"
 ---
 # <a name="shellfolderitemextendedproperty-method"></a>Método ShellFolderItem. Extended
 
@@ -48,9 +48,9 @@ Um valor de **cadeia de caracteres** que especifica a propriedade. Consulte a se
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **Variant \** _
+Tipo: **variante \***
 
 Quando esse método retornar, conterá o valor da propriedade, se existir para o item especificado. O valor terá uma digitação completa — por exemplo, datas são retornadas como datas, não cadeias de caracteres.
 
@@ -58,7 +58,7 @@ Esse método retornará uma cadeia de caracteres de comprimento zero se a propri
 
 ## <a name="remarks"></a>Comentários
 
-Há duas maneiras de especificar uma propriedade. A primeira é atribuir o nome conhecido da propriedade, como "autor" ou "data", a _sPropName *. No entanto, cada propriedade é um membro de um conjunto de propriedades de Component Object Model (COM) e também pode ser identificada especificando sua ID de formato (FMTID) e ID de propriedade (PID). Um [**FMTID**](../stg/structured-storage-serialized-property-set-format.md) é um GUID que identifica o conjunto de propriedades e um [**pid**](../stg/structured-storage-serialized-property-set-format.md) é um inteiro que identifica uma propriedade específica dentro do conjunto de propriedades.
+Há duas maneiras de especificar uma propriedade. A primeira é atribuir o nome conhecido da propriedade, como "autor" ou "data", ao *sPropName*. No entanto, cada propriedade é um membro de um conjunto de propriedades de Component Object Model (COM) e também pode ser identificada especificando sua ID de formato (FMTID) e ID de propriedade (PID). Um [**FMTID**](../stg/structured-storage-serialized-property-set-format.md) é um GUID que identifica o conjunto de propriedades e um [**pid**](../stg/structured-storage-serialized-property-set-format.md) é um inteiro que identifica uma propriedade específica dentro do conjunto de propriedades.
 
 Especificar uma propriedade por seus valores FMTID/PID é geralmente mais eficiente do que usar seu nome. Para usar os valores de FMTID/PID de uma propriedade com **Extendeproperty**, eles devem ser combinados em um scid. Um SCID é uma cadeia de caracteres que contém os valores FMTID/PID no formato "*FMTID * * PID*", em que FMTID é a forma de cadeia de caracteres do GUID do conjunto de propriedades. Por exemplo, o SCID da propriedade autor do conjunto de propriedades de informações de resumo é "{F29F85E0-4FF9-1068-AB91-08002B27B3D9} 4".
 
@@ -95,9 +95,9 @@ Doc_Author=fiWordDoc.ExtendedProperty(SCID_AUTHOR)
 
 
 
-Os exemplos a seguir mostram o uso apropriado desse método para JScript, VBScript e Visual Basic.
+os exemplos a seguir mostram o uso adequado desse método para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript

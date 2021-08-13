@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 47f47a937123ce252189aac57e922b10c2a015fc
-ms.sourcegitcommit: 8737f32d64e5f01c1d38aab92736e4088d6c446e
+ms.openlocfilehash: e718bccc05d871cf3d79ec23530c0c891f484f6980b460d497a878742e1b57c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106098477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118505799"
 ---
 # <a name="texld---ps_2_0-and-up"></a>texld-PS \_ 2 \_ 0 e superior
 
 Exemplo de uma textura em uma amostra específica, usando coordenadas de textura fornecidas. Essa instrução é diferente da instrução [texld-PS \_ 1 \_ 4](texld---ps-1-4.md) usada no sombreador de pixel versão 1 \_ 4.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 

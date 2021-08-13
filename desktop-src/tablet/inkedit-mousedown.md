@@ -4,12 +4,12 @@ ms.assetid: 8985fee5-7b63-46ab-b229-046e2f0ee004
 title: Evento InkEdit. MouseDown (Inked. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 78e684fe2d75e5eaaf2b0064e8c7c78cbfe281a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2a1adb35b6d431007fb4bdc259d72ddce25e3bc480a6596d2c4658cd19a3789e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118717946"
 ---
 # <a name="inkeditmousedown-event"></a>Evento InkEdit. MouseDown
 
@@ -86,7 +86,7 @@ A coordenada y atual, em pixels, do ponteiro do mouse.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse evento for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -104,7 +104,7 @@ Esse método de evento é definido na interface **\_ IInkEditEvents** . A interf
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
 | parâmetro<br/>                   | <dl> <dt>Inked. h (também requer Inked \_ i. c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkEd.dll</dt> </dl>                          |

@@ -1,9 +1,9 @@
 ---
-title: Mensagem de UDM_SETBUDDY (commctrl. h)
-description: Define a janela Buddy para um controle de cima para baixo.
+title: UDM_SETBUDDY mensagem (Commctrl.h)
+description: Define a janela do parceiro para um controle de cima para baixo.
 ms.assetid: 66e35acc-95f6-4bc5-b654-690abf2188ba
 keywords:
-- Controles de UDM_SETBUDDY de mensagens do Windows
+- UDM_SETBUDDY controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0e8bd57727d730c67fe09a52c0bedf121eac982
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f8aa23b5dff0542e7e94c7464684090d899dee5aded0fd6303d3106d5d3292e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118668898"
 ---
-# <a name="udm_setbuddy-message"></a>\_Mensagem UDM SETbuddy
+# <a name="udm_setbuddy-message"></a>Mensagem SETBUDDY do UDM \_
 
-Define a janela Buddy para um controle de cima para baixo.
+Define a janela do parceiro para um controle de cima para baixo.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,16 +32,16 @@ Define a janela Buddy para um controle de cima para baixo.
 *wParam* 
 </dt> <dd>
 
-Manipule a nova janela Buddy.
+Lidar com a nova janela do parceiro.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de retorno é o identificador para a janela do Buddy anterior.
+O valor de retorno é o alça para a janela anterior do parceiro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ O valor de retorno é o identificador para a janela do Buddy anterior.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| parâmetro<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

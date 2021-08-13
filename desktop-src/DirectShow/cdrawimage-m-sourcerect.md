@@ -1,7 +1,7 @@
 ---
-description: A \_ variável de membro m SourceRect especifica o retângulo de origem para desenho. O valor inicial é um retângulo vazio, indicando que a imagem inteira deve ser desenhada.
+description: A \_ variável membro m SourceRect especifica o retângulo de origem para desenho. O valor inicial é um retângulo vazio, indicando que toda a imagem deve ser desenhada.
 ms.assetid: 6a13823b-18e0-43fe-80d5-97357fa87fa5
-title: 'Membro CDrawImage:: m_SourceRect (Winutil. h)'
+title: Membro CDrawImage::m_SourceRect (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 484764cdc8930e4254a35a49bea96317ca9774e0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e4dde0ff739dd67c43f7fdc7c6fc642668dce1bac31be8626ca70db7bfaea9e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118656952"
 ---
-# <a name="cdrawimagem_sourcerect-member"></a>Membro de CDrawImage:: m \_ SourceRect
+# <a name="cdrawimagem_sourcerect-member"></a>Membro CDrawImage::m \_ SourceRect
 
-A variável de membro **m \_ SourceRect** especifica o retângulo de origem para desenho. O valor inicial é um retângulo vazio, indicando que a imagem inteira deve ser desenhada.
+A **\_ variável membro m SourceRect** especifica o retângulo de origem para desenho. O valor inicial é um retângulo vazio, indicando que toda a imagem deve ser desenhada.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -42,8 +42,8 @@ RECT m_SourceRect;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

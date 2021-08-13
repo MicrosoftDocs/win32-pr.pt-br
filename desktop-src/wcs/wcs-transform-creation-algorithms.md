@@ -3,8 +3,8 @@ title: Algoritmos de criação de transformação do WCS
 description: Algoritmos de criação de transformação do WCS
 ms.assetid: 526bbbfc-fb60-415d-b4f0-6a44a5d11a55
 keywords:
-- WCS (sistema de cores do Windows), criação de transformação
-- WCS (sistema de cores do Windows), criação de transformação
+- Windows Sistema de cores (WCS), criação de transformação
+- WCS (Windows sistema de cores), criação de transformação
 - gerenciamento de cores de imagem, criação de transformação
 - gerenciamento de cores, criação de transformação
 - cores, criação de transformação
@@ -14,12 +14,12 @@ keywords:
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 418596c0e57571f3e504727d4606921d36ff9461
-ms.sourcegitcommit: d39e82e232f6510f843fdb8d55d25b4e9e02e880
+ms.openlocfilehash: df199f0fa649e7ce545a7b371f1caba65686746766f5572bac8e43b47413eace
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "104563080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118445417"
 ---
 # <a name="wcs-transform-creation-algorithms"></a>Algoritmos de criação de transformação do WCS
 
@@ -47,9 +47,9 @@ ms.locfileid: "104563080"
 
 ## <a name="creation-of-transforms"></a>Criação de transformações
 
-Para explicar corretamente como as transformações de cores funcionam, é útil explicar o caminho completo de processamento por meio do ICM 2,0 e dos internos da CTE. A função ICM 2,0 [**CreateColorTransformW**](/windows/win32/api/icm/nf-icm-createcolortransformw) cria uma transformação de cor que os aplicativos podem usar para executar o gerenciamento de cores. Essa função cria um contexto de cor das entradas [**LOGCOLORSPACE**](/windows/desktop/api/Wingdi/ns-wingdi-taglogcolorspacea) e de intenção. As tentativas são mapeadas para o algoritmo de mapeamento de gamut de ICC de linha de base. Em seguida, a função chama o [**CreateMultiProfileTransform**](/windows/desktop/api/Wingdi/) da função ICM 2,0 para o processamento de cores consistente. A função **CreateColorTransform** geralmente copia dados para a estrutura de transformação otimizada interna.
+para explicar corretamente como as transformações de cores funcionam, é útil explicar o caminho completo de processamento por meio do ICM 2,0 e dos internos da CTE. a função ICM 2,0 [**CreateColorTransformW**](/windows/win32/api/icm/nf-icm-createcolortransformw) cria uma transformação de cor que os aplicativos podem usar para executar o gerenciamento de cores. Essa função cria um contexto de cor das entradas [**LOGCOLORSPACE**](/windows/desktop/api/Wingdi/ns-wingdi-taglogcolorspacea) e de intenção. As tentativas são mapeadas para o algoritmo de mapeamento de gamut de ICC de linha de base. em seguida, a função chama ICM função 2,0 [**CreateMultiProfileTransform**](/windows/desktop/api/Wingdi/) para processamento de cores consistente. A função **CreateColorTransform** geralmente copia dados para a estrutura de transformação otimizada interna.
 
-A função ICM 2,0 CreateMultiProfileTransform aceita uma matriz de perfis e uma matriz de tentativas ou um único perfil de link de dispositivo e cria uma transformação de cor que os aplicativos podem usar para executar o mapeamento de cores. Ele processa os perfis de entrada e as intenções para criar modelos de dispositivo, modelos de aparência de cores, descrições de limites de gamut e modelos de mapeamento de gamut. Veja como isso é feito:
+a função ICM 2,0 CreateMultiProfileTransform aceita uma matriz de perfis e uma matriz de tentativas ou um único perfil de link de dispositivo e cria uma transformação de cor que os aplicativos podem usar para executar o mapeamento de cores. Ele processa os perfis de entrada e as intenções para criar modelos de dispositivo, modelos de aparência de cores, descrições de limites de gamut e modelos de mapeamento de gamut. Veja como isso é feito:
 
 -   Os modelos de dispositivo são inicializados diretamente de perfis DM. Há um modelo de dispositivo criado para cada perfil na chamada para [**CreateMultiProfileTransform**](/windows/desktop/api/Wingdi/).
 -   Os modelos de aparência de cores são inicializados diretamente de perfis CAM. Há um perfil CAM para cada perfil na chamada para [**CreateMultiProfileTransform**](/windows/desktop/api/Wingdi/). No entanto, o mesmo perfil CAM pode ser especificado para mais de um perfil.
@@ -85,15 +85,15 @@ O modo deve ser um dos seguintes.
 
 ## <a name="transform-execution"></a>Execução de transformação
 
-A função [**TranslateColors**](/windows/win32/api/icm/nf-icm-translatecolors) da API do ICM 2,0 converte uma matriz de cores do espaço de [cor](c.md) de origem para o espaço de cores de destino, conforme definido por uma transformação de cor. Essa função verifica internamente uma matriz de cores em cache para permitir a correspondência imediata de cores transformadas normalmente. Essa transformação dá suporte a matrizes de bytes por canal de 8 bits e a matrizes float de 32 bits por canal. Todos os outros formatos serão convertidos antes de serem transmitidos para a nova CTE.
+a função [**TranslateColors**](/windows/win32/api/icm/nf-icm-translatecolors) da API do ICM 2,0 converte uma matriz de cores do espaço de [cor](c.md) de origem para o espaço de cores de destino, conforme definido por uma transformação de cor. Essa função verifica internamente uma matriz de cores em cache para permitir a correspondência imediata de cores transformadas normalmente. Essa transformação dá suporte a matrizes de bytes por canal de 8 bits e a matrizes float de 32 bits por canal. Todos os outros formatos serão convertidos antes de serem transmitidos para a nova CTE.
 
-A função [**TranslateBitmapBits**](/windows/win32/api/icm/nf-icm-translatebitmapbits) da API do ICM 2,0 converte as cores de um bitmap que tem um formato definido para produzir outro bitmap em um formato solicitado. Essa função verifica internamente uma matriz de cores em cache para permitir a correspondência imediata de cores transformadas normalmente. Para evitar muitos caminhos de código, suporte e complexidade de teste, apenas um número limitado de formatos de bitmap, na verdade, tem suporte no mecanismo de transformação e de interpolação. Essa função deve converter os formatos de bitmap de entrada e saída não nativos em formatos com suporte nativo para processamento. Essa transformação dá suporte apenas a bitmaps de 8 bits por byte de canal e bitmaps float de 32 bits por canal. Todos os outros formatos serão convertidos antes de serem transmitidos para a nova CTE.
+a função [**TranslateBitmapBits**](/windows/win32/api/icm/nf-icm-translatebitmapbits) da API do ICM 2,0 converte as cores de um bitmap que tem um formato definido para produzir outro bitmap em um formato solicitado. Essa função verifica internamente uma matriz de cores em cache para permitir a correspondência imediata de cores transformadas normalmente. Para evitar muitos caminhos de código, suporte e complexidade de teste, apenas um número limitado de formatos de bitmap, na verdade, tem suporte no mecanismo de transformação e de interpolação. Essa função deve converter os formatos de bitmap de entrada e saída não nativos em formatos com suporte nativo para processamento. Essa transformação dá suporte apenas a bitmaps de 8 bits por byte de canal e bitmaps float de 32 bits por canal. Todos os outros formatos serão convertidos antes de serem transmitidos para a nova CTE.
 
  
 
 ### <a name="sequential-transform-execution"></a>Execução de transformação sequencial
 
-Se o parâmetro *dwFlags* tiver o bit de transformação sequencial \_ definido quando as funções ICM [**CreateColorTransformW**](/windows/win32/api/icm/nf-icm-createcolortransformw) ou **CreateMultiProfileTransform** forem chamadas, as etapas de transformação serão executadas em sequência. Isso significa que o código percorre cada modelo de dispositivo, modelo de aparência de cor e modelo de mapeamento de gamut separadamente, conforme especificado pela chamada **CreateColorTransform** ou **CreateMultiProfileTransform** . Isso pode ser útil para depurar módulos de plug-in, mas é muito mais lento do que a execução por meio de uma transformação otimizada. A execução em modo sequencial, portanto, não é recomendada para software de produção. Além disso, pode haver pequenas diferenças nos resultados obtidos no modo sequencial e no modo otimizado. Isso ocorre devido a variações introduzidas quando as funções são concatenadas juntas.
+se o parâmetro *dwFlags* tiver o bit de transformação sequencial \_ definido quando as funções de ICM [**CreateColorTransformW**](/windows/win32/api/icm/nf-icm-createcolortransformw) ou **CreateMultiProfileTransform** forem chamadas, as etapas de transformação serão executadas em sequência. Isso significa que o código percorre cada modelo de dispositivo, modelo de aparência de cor e modelo de mapeamento de gamut separadamente, conforme especificado pela chamada **CreateColorTransform** ou **CreateMultiProfileTransform** . Isso pode ser útil para depurar módulos de plug-in, mas é muito mais lento do que a execução por meio de uma transformação otimizada. A execução em modo sequencial, portanto, não é recomendada para software de produção. Além disso, pode haver pequenas diferenças nos resultados obtidos no modo sequencial e no modo otimizado. Isso ocorre devido a variações introduzidas quando as funções são concatenadas juntas.
 
 ### <a name="creation-of-optimized-transforms"></a>Criação de transformações otimizadas
 
@@ -161,7 +161,7 @@ Todos os LUTs abertos da dimensão *k* terão o mesmo número de etapas ![ mostr
 
 SAMP *i*: ![ mostra o algoritmo SAMP i.](images/transformcreation-image043.png)
 
-Por fim, especifique *d* e *d* (*k* ) na tabela 1 a seguir. Os três modos, "prova", "normal" e "melhor" são as configurações de qualidade ICM 2,0. Nessa implementação, o modo de prova tem a menor superfície de memória e o melhor modo tem o maior volume de memória.
+Por fim, especifique *d* e *d* (*k* ) na tabela 1 a seguir. os três modos, "prova", "normal" e "melhor" são as configurações de qualidade de ICM 2,0. Nessa implementação, o modo de prova tem a menor superfície de memória e o melhor modo tem o maior volume de memória.
 
 Para implementar esse algoritmo, você deve chamar o seguinte algoritmo \# 2. Os usuários podem especificar seus próprios locais de amostragem, usando as tabelas como um guia.
 
@@ -201,45 +201,45 @@ Todos os LUTs fechados serão uniformes com o número *d* de etapas, conforme de
 
  
 
-**Tabela 1:** Tamanhos de LUT usados no algoritmo
+**Tabela 1:** Tamanhos LUT usados no algoritmo
 
-Cada LUT aberta pode ter um número diferente de etapas em cada canal de entrada, e os locais de amostragem não precisam ser igualmente espaçados. Para uma determinada camada de LUT aberta, há uma combinação Colorant associada, por exemplo, ![ mostra o c subscrito 1,..., c subscript k.](images/transformcreation-image045.gif) , em que ![ mostra o script C i.](images/transformcreation-image047.gif) s são inteiros distintos entre 1 e *n*. Eles são os índices de canal correspondentes ao colorants "ativo" neste Strata.
+Cada LUT aberto pode ter um número diferente de etapas em cada canal de entrada e os locais de amostragem não têm que ser espamados igualmente. Para uma determinada camada lut aberta, há uma combinação de coloração associada, por exemplo, Mostra o ![ subscrito C 1, ..., subscrito C k.](images/transformcreation-image045.gif) , em que ![ mostra o subscrito C i.](images/transformcreation-image047.gif) s são inteiros distintos entre 1 e *n.* Eles são os índices de canal correspondentes aos colorantes "ativos" nessa camada.
 
-ETAPA 1: filtrar a matriz de entrada de valores de dispositivo que não estão contidos neste Strata. Um valor de dispositivo ![ mostra o x subscrito 1, x subscrito 2,..., X subscript n.](images/transformcreation-image049.gif) está contido no Strata, se e somente se ![ o mostrar um conjunto de valores para um canal.](images/transformcreation-image051.gif) e todos os outros canais são 0. Se o conjunto filtrado tiver *N* entradas, Let
+ETAPA 1: filtre a matriz de valores de dispositivos que não estão contidas nessa camada. Um valor do ![ dispositivo Mostra o subscrito X 1, X subscrito 2, ..., X subscrito n.](images/transformcreation-image049.gif) está contido na camada, se e somente se ![ Mostrar um conjunto de valores para um canal.](images/transformcreation-image051.gif) e todos os outros canais são 0. Se o conjunto filtrado tiver *N* entradas, vamos
 
 ![Mostra uma equação a ser usada se o conjunto filtrado tiver N entradas.](images/transformcreation-image053.png)
 
-Para cada ![Mostra i igual a 1, 2,..., k.](images/transformcreation-image041.gif) , itere as seguintes etapas 2-5:
+Para cada ![Mostra i igual a 1, 2, ..., k.](images/transformcreation-image041.gif) , itere as seguintes etapas 2 a 5:
 
-ETAPA 2: se ![ Mostrar d subscrito provisório (k) igual a 1.](images/transformcreation-image055.gif) , SAMP *i* tem apenas 1 ponto, que deve ser 1,0. Passe para o próximo *i*. Caso contrário, continue na etapa 3.
+ETAPA 2: se ![ Mostrar d subscrito tentativa (k) igual a 1.](images/transformcreation-image055.gif) , Samp *i* tem apenas 1 ponto, que deve ser 1,0. Vá para o próximo *i.* Caso contrário, continue para a ETAPA 3.
 
-ETAPA 3: classificar os exemplos filtrados em ordem crescente no ![Mostra o script C i.](images/transformcreation-image047.gif) canal.
+ETAPA 3: Classificar os exemplos filtrados em ordem crescente no ![Mostra o subscrito C i.](images/transformcreation-image047.gif) canal.
 
-ETAPA 4: definir a grade de amostragem "provisória" usando os nós
+ETAPA 4: Definir a grade de amostragem "tentativa" usando os nós
 
-![Mostra os nós usados para definir a grade de amostragem "provisória".](images/transformcreation-image057.png)
+![Mostra os nós usados para definir a grade de amostragem "tentativa".](images/transformcreation-image057.png)
 
-onde ![Mostra j igual a 1, 2,..., d subscrito provisório (k).](images/transformcreation-image059.gif) .
+onde ![Mostra j igual a 1, 2, ..., d tentativa de subscrito (k).](images/transformcreation-image059.gif) .
 
-ETAPA 5: regularize a grade provisória para garantir que ela esteja em conformidade com monotônico estrita e também que termine com 1,0. Como a matriz já está classificada, os nós na grade provisória já são monotônico nondecreasing. No entanto, nós adjacentes podem ser idênticos. Você pode corrigir isso removendo nós idênticos, se necessário. Por fim, após esse procedimento, se o ponto de extremidade for menor que 1,0, substitua-o por 1,0.
+ETAPA 5: Regularize a grade de tentativa para garantir que ela esteja em conformidade com a monotônica estrita e também que ela termine com 1.0. Como a matriz já está classificação, os nós na grade de tentativa já são não monotônicos. No entanto, os nós adjacentes podem ser idênticos. Você pode corrigir isso removendo nós idênticos, se necessário. Por fim, após esse procedimento, se o ponto de extremidade for menor que 1,0, substitua-o por 1.0.
 
-Observe que a etapa 5 é o motivo pelo qual o LUT STRATA pode ter um número diferente de etapas em cada canal. Após a regularização, o número de etapas em um canal pode ser menor que ![Mostra o d subscrito provisório (k).](images/transformcreation-image061.gif) .
+Observe que a ETAPA 5 é o motivo pelo qual a camada LUT pode ter um número diferente de etapas em cada canal. Após a regularização, o número de etapas em um canal pode ser menor que ![Mostra d subscrito tentativo (k).](images/transformcreation-image061.gif) .
 
-## <a name="interpolation"></a>Interpola
+## <a name="interpolation"></a>Interpolação
 
-Você pode construir o estratificação do cubo de unidade abrindo LUT Strata e fechado LUT Strata. Para executar a interpolação usando essa "estrutura de LUT esparsa", siga estas etapas. Assumir um determinado valor de dispositivo de entrada ![Mostra (X subscript 1, X subscrito 2,..., X subscript n).](images/transformcreation-image049.gif) .
+Você pode construir a estrutura do cubo de unidade por meio de camadas LUT abertas e de camadas LUT fechadas. Para executar a interpolação usando essa "estrutura LUT esparsa", siga estas etapas. Suponha que um determinado valor de dispositivo de entrada ![Mostra (X subscrito 1, X subscrito 2, ..., X subscrito n).](images/transformcreation-image049.gif) .
 
-ETAPA 1: determinar o número de canais "ativos". Este é o número de canais diferentes de zero. Isso determina a dimensão de Strata *k* para pesquisar o estrato que o contém. Mais precisamente, a dimensão Strata será 3 se o número de canais ativos for ![ exibido menor ou igual a 3.](images/transformcreation-image063.gif) caso contrário, a dimensão Strata é igual ao número de canais ativos.
+ETAPA 1: Determinar o número de canais "ativos". Esse é o número de canais diferentes de zero. Isso determina a dimensão de camada *k* a ser pesquisada pela camada que o contém. Mais precisamente, a dimensão de camadas será 3 se o número de canais ativos for ![ Mostrar menor ou igual a 3.](images/transformcreation-image063.gif) , caso contrário, a dimensão de camadas será a mesma que o número de canais ativos.
 
-ETAPA 2: em ![Mostra o subscrito Sigma k.](images/transformcreation-image026.gif) , procure o estrato que o contém. Um valor de dispositivo estará contido em um estrato aberto se todos os canais correspondentes ao estrato tiverem um valor diferente de zero e todos os outros canais forem zero. Um valor de dispositivo estará contido em um estrato fechado se cada canal não representado pelo estrato for zero. Se nenhum estrato de contenção for encontrado, haverá uma condição de erro. Cancelar e relatar falha. Se um estrato que o contém for encontrado, vá para a próxima etapa.
+ETAPA 2: Dentro ![Mostra o subscrito sigma k.](images/transformcreation-image026.gif) , pesquise a camada que contém. Um valor do dispositivo será contido em uma camada aberta se todos os canais correspondentes à camada têm valor diferente de zero e todos os outros canais são zero. Um valor do dispositivo será contido em uma camada fechada se cada canal não representado pela camada for zero. Se nenhuma camada que contém for encontrada, haverá uma condição de erro. Cancelar e relatar falha. Se uma camada que contém for encontrada, vá para a próxima etapa.
 
-ETAPA 3: se o estrato que o contém está fechado, a interpolação dentro do estrato pode ser feita por qualquer algoritmo de interpolação conhecido. Nessa implementação, a escolha do algoritmo é a interpolação tetrahedral. Se o estrato que o contém estiver aberto, e o valor do dispositivo estiver estritamente dentro do estrato, ou seja,
+ETAPA 3: se a camada que contém estiver fechada, a interpolação dentro da camada poderá ser feita por qualquer algoritmo de interpolação conhecido. Nessa implementação, a escolha do algoritmo é interpolação dehedral. Se a camada que contém estiver aberta e o valor do dispositivo estiver estritamente dentro da camada, ou seja,
 
-![Mostra o subscript X que é maior ou igual a... ](images/transformcreation-image065.gif) primeiro nó no canal *i* -ésimo
+![Mostra X subscrito i maior ou igual a... ](images/transformcreation-image065.gif) primeiro nó no *i* canal
 
-onde *eu* é um índice de canal para o estrato, então, o algoritmo de interpolação padrão, como interpolação tetrahedral, funciona.
+em *que i* é um índice de canal para a camada e, em seguida, o algoritmo de interpolação padrão, como interpolação dehedral, funciona.
 
-Se ![ Mostrar um subscript i menor que... ](images/transformcreation-image067.gif) primeiro nó no canal *i* , em seguida , o valor do dispositivo entrará na "lacuna" entre os subespaços de estrato e de dimensão inferior. Esse MOI não se preocupa com um algoritmo de interpolação por si, portanto, qualquer algoritmo de interpolação pode ser usado para interpolar dentro dessa "lacuna", embora o algoritmo preferencial seja a seguinte interpolação transfinita.
+Se Mostrar X subscrito i menor que... primeiro nó no i canal para alguns i , o valor do dispositivo se enquadra na "lacuna" entre a camada e os ![ ](images/transformcreation-image067.gif) subespaços dimensionais inferiores.   Essa MOI não se preocupa com um algoritmo de interpolação em si, portanto, qualquer algoritmo de interpolação pode ser usado para interpolar dentro dessa "lacuna", embora o algoritmo preferencial seja a interpolação transfinita a seguir.
 
 A arquitetura do módulo de interpolação é ilustrada nas duas partes da Figura 1.
 
@@ -249,11 +249,11 @@ A arquitetura do módulo de interpolação é ilustrada nas duas partes da Figur
 
 **Figura 1:** Arquitetura do módulo Intepolation
 
-Conforme explicado anteriormente, esse algoritmo é capaz de obter amostragem razoavelmente densa em regiões do espaço do dispositivo que contêm uma combinação importante de colorants, ao mesmo tempo em que minimiza o tamanho total de LUTs necessário. A tabela a seguir mostra uma comparação do número de nós necessários para a implementação de LUT esparsa (usando o algoritmo \# 1 e o modo normal) e a implementação de lut uniforme correspondente.
+Conforme explicado anteriormente, esse algoritmo é capaz de obter amostragem razoavelmente densa em regiões do espaço do dispositivo que contêm combinação importante de colorantes, minimizando o tamanho total de LUTs necessários. A tabela a seguir mostra uma comparação do número de nós necessários para a implementação lut esparsa (usando o Algoritmo 1 e o modo normal) e a implementação \# de LUT uniforme correspondente.
 
 
 
-| **Número de canais de entrada** | **LUT esparsa** | **LUT uniforme** |
+| **Número de canais de entrada** | **LUT esparso** | **LUT uniforme** |
 |------------------------------|----------------|-----------------|
 | 5                            | 142498         | 1419857         |
 | 6                            | 217582         | 24137567        |
@@ -266,7 +266,7 @@ Conforme explicado anteriormente, esse algoritmo é capaz de obter amostragem ra
 
 ## <a name="interpolation-within-a-unit-cube"></a>Interpolação dentro de um cubo de unidade
 
-Uma etapa básica no caso da grade retangular é a interpolação dentro de uma célula delimitadora. Para um ponto de entrada, você pode determinar a célula de fechamento facilmente. Em uma grade retangular, o valor de saída em cada um dos vértices (pontos de canto) da célula de circunscrição é especificado. Elas também são as únicas condições de limite (BCs) que uma interpolação deve satisfazer: a interpolação deve passar por todos esses pontos. Observe que essas condições de limite estão em pontos "discretos", nesse caso, os pontos de canto 2n da célula, em que n é a dimensão do espaço de cores.
+Uma etapa básica no caso de grade retangular é a interpolação dentro de uma célula delimitada. Para um ponto de entrada, você pode determinar a célula delimitada facilmente. Em uma grade retangular, o valor de saída em cada um dos vértices (pontos de canto) da célula delimitada é especificado. Elas também são as únicas condições de limite (BCs) que um interpolante deve satisfazer: o interpolante deve passar por todos esses pontos. Observe que essas condições de limite estão em pontos "discretos", nesse caso, os 2n pontos de canto da célula, em que n é a dimensão do espaço de cores.
 
 É útil formalizar o conceito de condições de limite antes de prosseguir. Para qualquer subconjunto S do limite da célula delimitadora (o cubo de unidade em n dimensões), uma condição de limite em S é uma especificação de uma função BC: S → RM, em que m é a dimensão de saída. Em outras palavras, uma interpolação, que pode ser denotada interp: \[ 0, 1 \] n → RM, é necessária para satisfazer: interp (x) = BC (x) para todos os x em S.
 
@@ -384,7 +384,7 @@ No caso de transformações HDR, os valores mínimo e máximo para cada canal Co
 
 ### <a name="iccprofilefromwcsprofile"></a>ICCProfileFromWCSProfile
 
-Como a principal finalidade desse recurso é oferecer suporte a versões anteriores ao vista do Windows, você deve gerar perfis ICC da versão 2,2, conforme definido em ICC de especificação ICC. 1:1998-09. Em determinados casos (consulte a tabela a seguir "dispositivo de linha de base para mapeamento de classe de perfil ICC"), você pode criar uma matriz ou um perfil ICC baseado em TRC de um perfil WCS. Em outros casos, o perfil ICC consiste em LUTs. O processo a seguir descreve como criar o AToB e o BToA LUTs. É claro que os perfis ICC também têm outros campos. Alguns dos dados podem ser derivados do perfil WCS. Para outros dados, você precisará desenvolver padrões inteligentes. Os direitos autorais serão atribuídos à Microsoft; Já que é a tecnologia da Microsoft que está sendo usada para criar o LUTs.
+como a principal finalidade desse recurso é oferecer suporte a versões anteriores ao Vista do Windows, você deve gerar perfis de ICC da versão 2,2, conforme definido em icc de especificação icc. 1:1998-09. Em determinados casos (consulte a tabela a seguir "dispositivo de linha de base para mapeamento de classe de perfil ICC"), você pode criar uma matriz ou um perfil ICC baseado em TRC de um perfil WCS. Em outros casos, o perfil ICC consiste em LUTs. O processo a seguir descreve como criar o AToB e o BToA LUTs. É claro que os perfis ICC também têm outros campos. Alguns dos dados podem ser derivados do perfil WCS. Para outros dados, você precisará desenvolver padrões inteligentes. Os direitos autorais serão atribuídos à Microsoft; Já que é a tecnologia da Microsoft que está sendo usada para criar o LUTs.
 
 Esse design deve funcionar para todos os tipos de modelos de dispositivo, incluindo plug-ins. Desde que o plug-in tenha um modelo de dispositivo de linha de base associado, o tipo de dispositivo subjacente pode ser determinado.
 
@@ -426,94 +426,94 @@ Observe que, como o CAM (CIECAM02 no WCS) está envolvido no processo, a adapta�
 
 ## <a name="hdr-virtual-rgb-devices"></a>Dispositivos do HDR virtual RGB
 
-É necessário fornecer uma consideração especial ao gerar perfis para dispositivos do HDR virtual RGB; ou seja, dispositivos para os quais os valores de Colorant podem ser inferiores a 0,0 ou maiores que 1,0. Na geração do ATOB LUT, um conjunto maior de entrada 1D LUTs é criado. Os valores de Colorant são dimensionados e deslocados para o intervalo 0.. 1 usando os valores mínimo e máximo de Colorant no perfil WCS.
+É necessário fornecer uma consideração especial ao gerar perfis para dispositivos do HDR virtual RGB; ou seja, dispositivos para os quais os valores de Colorant podem ser inferiores a 0,0 ou maiores que 1,0. Na geração do ATOB LUT, um conjunto maior de entrada 1D LUTs é criado. Os valores de Colorant são dimensionados e deslocados para o intervalo 0.. 1 usando os valores de coloração mínimo e máximo no perfil WCS.
 
-Como o espaço Colorant para dispositivos HDR não é provavelmente preenchido completamente, o suporte especial é fornecido no LUT 3-D para a marca também. Para lidar com cores na região preenchida de forma grosseira, os colorants são recodificados para que a extrapolação além de 0,0 e 1,0 possa ser obtida. O intervalo usado é-1.. + 4.
+Como o espaço colorido para dispositivos HDR provavelmente não será preenchido completamente, o suporte especial também é fornecido no LUT 3D para a marca. Para manipular cores na região populada esparsamente, os colorantes são recodificados para que a extrapolação além de 0,0 e 1,0 possa ser alcançada. O intervalo usado é -1 .. +4.
 
-Devido ao redimensionamento aplicado para o LUT 3D, um conjunto de LUTs de saída 1D é criado para mapear o resultado de volta para o intervalo 0.. 1.
+Devido ao recalque aplicado para o LUT 3D, um conjunto de LUTs de saída 1D é criado para mapear o resultado de volta para o intervalo 0 .. 1.
 
-## <a name="more-than-one-pcs"></a>Mais de um PC
+## <a name="more-than-one-pcs"></a>Mais de um PCS
 
-O ICC descobriu que um dos PCS não era suficientemente flexível para atender a todos os usos pretendidos de um CMS. Na versão 4 da especificação do perfil, o ICC esclareceu que há, na verdade, duas codificações de PCS. Um é usado para as intenções de colorimétrico; outro é usado para a intenção perceptiva. (Nenhum PC é especificado para a intenção de saturação. O ICC saiu dessa parte de forma ambígua.) Os PCS colorimétricos têm uma claridade mínima e máxima especificada, mas os valores de croma e de matiz variam de aproximadamente ± 127. Esse PCS é semelhante a um prisma retangular. Como mencionado anteriormente, o volume dos PCS perceptivas se assemelha à gama de uma impressora de jato de Radio.
+O ICC descobriu que um PCS não era suficientemente flexível para atender a todos os usos pretendido de um CMS. Na versão 4 da Especificação de Perfil, o ICC esclareceu que há, na verdade, duas codificações PCS. Um é usado para as intenções colorimétricas; outro é usado para a intenção perceptual. (Nenhum PCS é especificado para a intenção saturação. O ICC deixou essa parte ambígua.) O PCS colorimétrico tem uma leveza mínima e máxima especificada, mas os valores de chroma e matiz variam para aproximadamente ± 127. Esse PCS se parece com um prisma retangular. Conforme mencionado anteriormente, o volume de PCS perceptual é semelhante à gama de uma impressora inkjet.
 
-Os dois PCSs ICC também têm duas codificações digitais diferentes. Nos PCS perceptiva, um valor de zero representa uma claridade de zero. Nos PCS colorimétricos, um valor de zero representa a claridade mínima dos PCS, que é maior que zero. Você pode resolver esse problema tendo um modelo de dispositivo diferente para cada uma das codificações de PCS.
+Os dois PCSs ICC também têm duas codificações digitais diferentes. No PCS perceptível, um valor de zero representa uma leveza de zero. No PCS colorimétrico, um valor de zero representa a luz mínima do PCS, que é maior que zero. Você pode resolver esse problema tendo um modelo de dispositivo diferente para cada uma das codificações do PCS.
 
-## <a name="gamut-mapping"></a>Mapeamento de gamut
+## <a name="gamut-mapping"></a>Mapeamento de jogos
 
-Para criar o AToB LUTs em um perfil ICC, você mapeia da gama do dispositivo para o espaço apropriado dos PCS. Para criar o BToA LUTs, você mapeia do espaço dos PCS para a gama do dispositivo. O mapeamento para o AToB LUTs é bastante semelhante ao usado em um CMS baseado em medição. Para os PCS perceptiva, mapeie a gama plausível do dispositivo para o limite de gama dos PCS perceptiva, usando recorte ou compactação para qualquer cor fora do gamut. Para as intenções de colorimétrico, talvez seja necessário recortar a claridade, mas os valores de croma e de matiz serão ajustados para a gama de PCS colorimétricos.
+Para criar os LUTs AToB em um perfil ICC, mapeie do dispositivo para o espaço do PCS apropriado. Para criar os LUTs BToA, você mapeia do espaço PCS para a gama de dispositivos. O mapeamento para LUTs AToB é bastante semelhante ao usado em um CMS baseado em medida. Para o PCS perceptual, mapeie a gama de dispositivos insustância para o limite de jogos pcs perceptível, usando recorte ou compactação para qualquer cor fora de jogo. Para as intenções colorimétricas, talvez seja preciso cortar a luz, mas os valores de chroma e matiz vão caber na gama de PCS colorimétrica.
 
-O mapeamento para o BToA LUTs é um pouco diferente. As intenções de colorimétrico ainda são fáceis; Você apenas corta os valores de PCS para a gama do dispositivo. Mas o ICC requer que todos os valores de PCS possíveis sejam mapeados para algum valor de dispositivo, não apenas aqueles dentro da gama de referência dos PCS perceptiva. Portanto, você deve garantir que o GMMs possa manipular as cores de origem que estão fora da gama de referência. Isso pode ser tratado recortando essas cores para o limite de gama do dispositivo.
+O mapeamento para os LUTs BToA é um pouco diferente. As intenções colorimétricas ainda são fáceis; você apenas reclipe os valores de PCS para a gama de dispositivos. Mas o ICC requer que todos os valores de PCS possíveis mapeiem para algum valor de dispositivo, não apenas aqueles dentro da gama de referência do PCS perceptual. Portanto, você deve certificar-se de que os GMMs possam manipular as cores de origem que estão fora da gama de referência. Isso pode ser tratado com o recorte dessas cores para o limite de jogos do dispositivo.
 
-## <a name="baseline-device-to-icc-profile-class-mapping"></a>Mapeamento de classe de dispositivo de linha de base para perfil ICC
+## <a name="baseline-device-to-icc-profile-class-mapping"></a>Mapeamento de classe de perfil do dispositivo de linha de base para o ICC
 
 
 
 | Tipo de dispositivo de linha de base              | Classe de perfil ICC       | Comentário                                                                      |
 |-----------------------------------|-------------------------|-----------------------------------------------------------------------------|
-| Dispositivo de captura RGB                | Dispositivo de entrada ("scnr")   | PCS é CIELAB. AToB0Tag é o dispositivo para computadores com a intenção colorimétrico relativa. |
-| Monitor CRT, LCD                  | Dispositivo de vídeo ("MNTR") | PCS é CIEXYZ. Consulte o seguinte para a conversão de modelo.                      |
-| Projetor RGB                     | Espaço de cores ("spac")    | PCS é CIELAB.                                                              |
-| Impressora RGB e CMYK              | Dispositivo de saída ("PRTR")  | PCS é CIELAB.                                                              |
-| Dispositivo virtual RGB (caso não HDR) | Dispositivo de vídeo ("MNTR") | PCS é CIEXYZ.                                                              |
-| Dispositivo virtual RGB (caso HDR)     | Espaço de cores ("spac")    | PCS é CIELAB.                                                              |
+| Dispositivo de captura RGB                | Dispositivo de entrada ("scnr")   | PCS é CIELAB. AToB0Tag é Dispositivo para PCS com intenção colorimétrica relativa. |
+| CRT, monitor de LCD                  | Exibir Dispositivo ("mntr") | PCS é CIEXYZ. Consulte o seguinte para conversão de modelo.                      |
+| Projetor RGB                     | Espaço de Cores ("spac")    | PCS é CIELAB.                                                              |
+| Impressora RGB e CMYK              | Dispositivo de saída ("prtr")  | PCS é CIELAB.                                                              |
+| Dispositivo Virtual RGB (caso não HDR) | Exibir Dispositivo ("mntr") | PCS é CIEXYZ.                                                              |
+| Dispositivo Virtual RGB (caso HDR)     | Espaço de Cores ("spac")    | PCS é CIELAB.                                                              |
 
 
 
  
 
-A conversão de perfis de monitor não envolve a criação de LUTs, mas, em vez disso, consiste em criar um modelo de matriz ou TRC. O modelo usado em ICC é ligeiramente diferente daquele usado na modelagem CRT ou LCD do WCS, no qual o termo "correção preta" está ausente. Especificamente:
+A conversão de perfis de monitor não envolve a criação de LUTs, mas consiste na criação de uma matriz ou modelo TRC. O modelo usado no ICC é ligeiramente diferente do usado na modelagem CRT ou LCD do WCS, já que o termo "correção preta" está ausente. Especificamente:
 
-Modelo WCS: ![Mostra um modelo W C S.](images/transformcreation-image132.png)
+Modelo do WCS: ![Mostra um modelo W C S.](images/transformcreation-image132.png)
 
-Modelo ICC: ![Mostra um modelo C C.](images/transformcreation-image134.png)
+Modelo ICC: ![Mostra um modelo de I C C.](images/transformcreation-image134.png)
 
-A conversão do modelo WCS para o modelo ICC é feita da seguinte maneira.
+A conversão do modelo do WCS para o modelo ICC é feita da seguinte forma.
 
 Definir novas curvas:
 
 ![Mostra uma matriz para definir novas curvas.](images/transformcreation-image136.png)
 
-Elas não são curvas de reprodução de Tom porque não mapeiam 1 para 1. Uma normalização vai conseguir isso. As definições finais do modelo ICC são:
+Essas não são curvas de reprodução de tom porque não mapeiam 1 para 1. Uma normalização fará isso. As definições finais do modelo ICC são:
 
-![Mostra as definições finais do modelo C C.](images/transformcreation-image138.png)
+![Mostra as definições finais do modelo de I C C.](images/transformcreation-image138.png)
 
-![Mostra a matriz final para o modelo I c C.](images/transformcreation-image140.png)
+![Mostra a matriz final para o modelo de I C C.](images/transformcreation-image140.png)
 
-Para dispositivos virtuais RGB não HDR, você também está gerando um perfil de vídeo ICC para a eficiência do espaço. Nesse caso, o ICC da matriz *M* triestímulo pode ser obtido diretamente dos primários do perfil WCS sem a conversão do modelo acima. Uma das finalidades, mas importante, é que essa matriz de triestímulo deve ser adaptada de acordo com o D50 para estar em conformidade com a especificação ICC dos PCS. Em outras palavras, as entradas em cada linha da matriz a ser codificada no perfil ICC devem ser somadas, respectivamente, a 96,42, 100 e 82,49. Na implementação atual, a adaptação de desvio é feita por CAT02, que também é a transformação de adaptação de desvio usada em CAM02.
+Para dispositivos virtuais RGB não HDR, você também está gerando um perfil ICC de exibição para eficiência de espaço. Nesse caso, a matriz de trístimulo *M ICC* pode ser obtida diretamente dos primários do perfil WCS sem a conversão do modelo acima. Uma última, mas importante, observe que essa matriz de trístimulo deve ser adaptada de forma cromática a D50 para estar em conformidade com a especificação de ICC do PCS. Em outras palavras, as entradas em cada linha da matriz a ser codificada no perfil ICC devem somar respectivamente a 96,42, 100 e 82,49. Na implementação atual, a adaptação chromatic é feita pelo CAT02, que também é a transformação de adaptação chromatic usada no CAM02.
 
 ## <a name="black-preservation-and-black-generation"></a>Preservação de preto e geração de preto
 
-A implementação da preservação de preto está ligada junto à geração do canal preto em dispositivos que dão suporte a um canal preto. Para fazer isso, as informações sobre cada cor de origem são coletadas para permitir que os modelos de dispositivos que dão suporte a um canal preto determinem a melhor maneira de definir o canal preto na saída. Embora a preservação de preto seja pertinente para transformações de cor que convertem entre um dispositivo de canal preto em outro, a geração de preto é implementada para toda a transformação que envolve um dispositivo de destino de canal preto.
+A implementação da preservação de preto está vinculada à geração do canal preto em dispositivos que suportam um canal preto. Para fazer isso, as informações sobre cada cor de origem são coletadas para permitir que modelos de dispositivo que deem suporte a um canal preto determinem a melhor maneira de definir o canal preto na saída. Embora a preservação de preto seja pertinente para as transformaçãos de cores que convertem entre um dispositivo de canal preto em outro, a geração preta é implementada para toda a transformação que envolve um dispositivo de destino de canal preto.
 
-As informações do canal preto são registradas em uma estrutura de dados chamada [**BlackInformation**](/previous-versions/windows/desktop/api/WcsPlugIn/ns-wcsplugin-_blackinformation). A estrutura **BlackInformation** contém um booliano que indica se a cor contém apenas preto Colorant e um valor numérico que indica o grau de "preto" chamado peso preto. Para dispositivos de origem que dão suporte a um canal preto, o peso preto é a porcentagem de Colorant preta na cor de origem. Para dispositivos de origem que não contêm um canal preto, o peso preto é calculado usando o outro colorants e o valor de aparência. Um valor chamado "pureza de cores" é calculado com a diferença entre o valor máximo de Colorant e o valor de Colorant mínimo dividido pelo valor máximo de Colorant. Um valor chamado "claridade relativa" é calculado com a diferença entre a claridade da cor e a claridade mínima para o dispositivo de destino dividido pela diferença entre a claridade mínima e a máxima para o dispositivo de destino. Se o dispositivo de origem for um dispositivo aditivo (monitor ou projetor), o peso preto será determinado como 1,0 menos a pureza de cor multiplicada pela claridade relativa. Por exemplo, se o dispositivo de origem for um monitor RGB, o valor máximo e o valor mínimo de R, G e B para cada cor serão computados e o peso preto será determinado pela fórmula:
+As informações de canal preto são registradas em uma estrutura de dados chamada [**BlackInformation**](/previous-versions/windows/desktop/api/WcsPlugIn/ns-wcsplugin-_blackinformation). A **estrutura BlackInformation** contém um booliana que indica se a cor contém apenas coloração preta e um valor numérico que indica o grau de "negritude" chamado peso preto. Para dispositivos de origem que suportam um canal preto, o peso preto é o percentual de coloração preta na cor de origem. Para dispositivos de origem que não contêm um canal preto, o peso preto é calculado usando os outros colorantes e o valor de aparência. Um valor chamado " puridade de cor" é calculado com a diferença entre o valor de coloração máximo e o valor de colorante mínimo dividido pelo valor máximo do colorante. Um valor chamado "leveza relativa" é calculado pela diferença entre a luz da cor e a leveza mínima para o dispositivo de destino dividido pela diferença entre a luz mínima e a máxima para o dispositivo de destino. Se o dispositivo de origem for um dispositivo aditivo (monitor ou projetor), o peso preto será determinado como o 1,0 menos a luminosidade da cor multiplicada pela luz relativa. Por exemplo, se o dispositivo de origem for um monitor RGB, o valor máximo e o valor mínimo de R, G e B para cada cor serão computados e o peso preto será determinado pela fórmula:
 
-BW = (1,0 – (Max (R, G, B) – min (R, G, B))/Max (R, G, B)) \* claridade relativa
+BW = (1.0 – (max(R,G,B) – min(R,G,B)) / max(R, G, B)) \* leveza relativa
 
-Se o dispositivo de origem oferecer suporte a coloração subtraíis, por exemplo, uma impressora CMY, os colorants individuais deverão ser "aqueles complementados" (subtraídos de 1,0) antes do uso na fórmula anterior. Portanto, para uma impressora CMY, R = 1,0 – C, G = 1,0 – M e B = 1,0 – Y.
+Se o dispositivo de origem for compatível com a coloração subtrativa, por exemplo, uma impressora CMY, os colorantes individuais deverão ser "complementos" (subtraídos de 1,0) antes do uso na fórmula anterior. Portanto, para uma impressora CMY, R = 1,0 – C, G = 1,0 – M e B = 1,0 – Y.
 
-As informações pretas para cada cor processada pela transformação de cor são determinadas durante o processo de tradução de cores. As informações somente em preto só serão determinadas se a preservação de preto for especificada. O peso preto é sempre determinado se o modelo do dispositivo de destino dá suporte a um Colorant preto. As informações pretas são passadas para o modelo de dispositivo de destino por meio do método [**ColorimetricToDeviceColorsWithBlack**](/previous-versions/windows/desktop/api/WcsPlugIn/nf-wcsplugin-idevicemodelplugin-colorimetrictodevicecolorswithblack) , que usa o lut resultante.
+As informações pretas para cada cor processada pela transformação de cor são determinadas durante o processo de conversão de cores. As informações somente pretas só são determinadas se a preservação de preto for especificada. O peso preto é sempre determinado se o modelo de dispositivo de destino é suportado por um colorido preto. As informações pretas são passadas para o modelo de dispositivo de destino por meio do [**método ColorimetricToDeviceColorsWithBlack,**](/previous-versions/windows/desktop/api/WcsPlugIn/nf-wcsplugin-idevicemodelplugin-colorimetrictodevicecolorswithblack) que usa o LUT resultante.
 
-Observe que, devido à otimização de transformação de cor, o processo acima ocorre somente durante a criação do LUT de transformação otimizado, não durante a execução do método TranslateColors.
+Observe que, devido à otimização da transformação de cor, o processo acima ocorre somente durante a criação do LUT de transformação otimizado, não durante a execução do método TranslateColors.
 
-## <a name="optimization-for-transforms-with-more-than-three-source-channels"></a>Otimização para transformações com mais de três canais de origem
+## <a name="optimization-for-transforms-with-more-than-three-source-channels"></a>Otimização para transformação com mais de três canais de origem
 
 O tamanho da transformação otimizada é determinado por vários fatores: o número de canais de cores no dispositivo de origem, o número de etapas na tabela para cada canal de cor de origem e o número de canais de cores no dispositivo de saída. A fórmula para determinar o tamanho da tabela de transformação é:
 
-Tamanho = número de etapas por fonte de canal <sub>\ dispositivo (número \ de \ canais \ no \ fonte \ dispositivo)</sub> x número de canais no dispositivo de saída
+Tamanho = Número de etapas por origem de <sub>canal\ dispositivo (Número\ de\ canais\ in\ dispositivo de origem\ )</sub> x número de canais no dispositivo de saída
 
-Como você pode ver, o tamanho da tabela aumenta exponencialmente dependendo do número de canais no dispositivo de origem. Muitos dispositivos de origem dão suporte a três canais de cores, por exemplo, vermelho, verde e azul. No entanto, se um dispositivo de origem dá suporte a quatro canais, como CMYK, o tamanho da tabela e o tempo necessário para construir a tabela crescem por um fator do número de etapas. Em um CMS baseado em medida em que as transformações são construídas imediatamente ", esse tempo pode ser bem inaceitável.
+Como você pode ver, o tamanho da tabela aumenta exponencialmente dependendo do número de canais no dispositivo de origem. Muitos dispositivos de origem são compatíveis com três canais de cores, por exemplo, Vermelho, Verde e Azul. No entanto, se um dispositivo de origem dá suporte a quatro canais, como CMYK, o tamanho da tabela e o tempo necessário para construir a tabela aumentarão em um fator do número de etapas. Em um CMS baseado em medida em que as transformação são construídas "em tempo real", esse momento pode ser inaceitável.
 
-Para reduzir o tempo necessário para construir a tabela de conversão de cores, é possível tirar proveito de dois fatos. Primeiro, embora o dispositivo de origem possa dar suporte a mais de três canais de cores, o espaço de cores independente de dispositivo intermediário (CIECAM02 ja <sub>c</sub> b <sub>C</sub> ) tem apenas três canais de cor. Segundo, a parte mais demorada do processamento não é a modelagem de dispositivo (convertendo de coordenadas de cores do dispositivo em valores de triestímulo), mas o mapeamento de gamut. Usando esses fatos, você pode construir uma tabela de conversão de cores preliminar que converte cores no espaço de cores independente do dispositivo por meio das etapas de mapeamento de gamut e, finalmente, por meio do modelo de cores do dispositivo de saída. A construção dessa tabela é da dimensão três. Em seguida, construímos a tabela de conversão de cores final da dimensão convertendo as combinações de cores de origem em um espaço intermediário independente do dispositivo e, em seguida, usando a tabela de conversão de cores preliminar, conclua a conversão para o espaço de cores do dispositivo de saída. Portanto, você reduz da computação (número de etapas na tabela de pesquisa) <sub>número \ de \</sub> cálculos de mapeamento de gama de canais para o número de etapas na tabela intermediária ₃ cálculos de mapeamento de gamut. Mesmo que você precise executar o número de etapas na (tabela de pesquisa) <sub>número de</sub> computações de canais de modelagem de dispositivo e pesquisas de tabela tridimensionais, isso ainda é muito mais rápido do que o cálculo original.
+Para reduzir o tempo necessário para construir a tabela de conversão de cores, é possível aproveitar dois fatos. Primeiro, embora o dispositivo de origem possa dar suporte a mais de três canais de cores, o espaço de cores intermediário independente do dispositivo (CIECAM02 Ja <sub>C</sub> b <sub>C</sub> ) tem apenas três canais de cores. Em segundo lugar, a parte mais demorada do processamento não é a modelagem do dispositivo (convertendo de coordenadas de cor do dispositivo em valores de trístimulo), mas o mapeamento de jogos. Usando esses fatos, você pode construir uma tabela de conversão de cores preliminar que converte cores no espaço de cores independente do dispositivo por meio das etapas de mapeamento de jogos e, por fim, por meio do modelo de cor do dispositivo de saída. A construção dessa tabela é da dimensão três. Em seguida, construiremos a tabela de conversão de cores final da dimensão quatro convertendo as combinações de cores de origem em espaço intermediário independente do dispositivo e, em seguida, usando a tabela preliminar de conversão de cores, concluiremos a conversão no espaço de cores do dispositivo de saída. Portanto, você reduz da computação (número de etapas na tabela de pesquisa) <sub>number\ of\ channels</sub> gamut mapping computations to the number of steps in the intermediate table gamut mapping computations." Embora você tenha que executar várias etapas na (tabela de lookup) <sub>number\ of\ channels</sub> computations of device modeling and three-dimensional table lookups, isso ainda é muito mais rápido do que o cálculo original.
 
-O processo anterior funcionará bem, desde que não haja necessidade de informações a serem passadas entre o modelo do dispositivo de origem e qualquer outro componente na transformação de cores. No entanto, se o dispositivo de saída e o dispositivo de origem forem compatíveis com um Colorant preto e a Colorant preta de origem for usada para determinar a saída de Colorant preta, o processo não conseguirá comunicar corretamente as informações pretas de origem. Um processo alternativo é construir uma tabela de conversão de cores preliminar que converta as cores no espaço de cores independente do dispositivo somente por meio das etapas de mapeamento de gamut. Em seguida, construa a dimensão de quatro tabelas de conversão de cor final usando as seguintes etapas: a) converta as combinações de cores de origem para o espaço independente de dispositivo intermediário, b) execute as etapas de mapeamento de gama interpolando na tabela de cores preliminar em vez de aplicar os processos de mapeamento de gamut reais e c) Use os valores resultantes das etapas de mapeamento de gamut e qualquer informação de canal preto de origem para calcular o dispositivo de saída colorants usando o modelo de dispositivo de Esse processo também pode ser usado quando há informações transferidas entre os modelos de dispositivo de origem e saída, mesmo que não haja um canal preto; por exemplo, se os dois módulos forem implementados com uma arquitetura de plug-in que permita o intercâmbio de dados entre os módulos.
+O processo anterior funcionará bem desde que não haja necessidade de passar informações entre o modelo de dispositivo de origem e qualquer outro componente na transformação de cores. No entanto, se o dispositivo de saída e o dispositivo de origem deem suporte a um colorante preto de origem e o colorante preto de origem for usado para determinar o colorante preto de saída, o processo não comunicará corretamente as informações pretas de origem. Um processo alternativo é construir uma tabela de conversão de cores preliminar que converte cores no espaço de cores independente do dispositivo apenas por meio das etapas de mapeamento de jogos. Em seguida, construa a tabela de conversão de cores final da dimensão quatro usando as seguintes etapas: a) converter as combinações de cores de origem em espaço intermediário independente do dispositivo, b) execute as etapas de mapeamento de jogos interpolando na tabela de cores preliminares em vez de aplicar os processos reais de mapeamento de gamut e c) use os valores resultantes das etapas de mapeamento de jogos e qualquer informação de canal preto de origem para calcular os colorantes do dispositivo de saída usando o modelo de dispositivo de saída. Esse processo também pode ser usado quando há informações transferidas entre os modelos de dispositivo de origem e saída, mesmo se não houver nenhum canal preto; por exemplo, se os dois módulos são implementados com uma arquitetura de plug-in que permite o intercâmbio de dados entre módulos.
 
-Os dois processos anteriores podem ser usados para melhorar efetivamente o tempo necessário para construir a tabela de transformação de cor de quatro dimensões.
+Os dois processos anteriores podem ser usados para melhorar efetivamente o tempo necessário para construir a tabela de transformação de cores quatrodimensionais.
 
 ### <a name="checkgamut"></a>CheckGamut
 
-O ICM chama CreateTransform e **CreateMultiProfileTransform** pegar uma palavra de valores de sinalizador, uma das quais é habilitar a \_ verificação de GAMUT \_ . Quando esse sinalizador é definido, CITE deve criar a transformação de forma diferente. As etapas iniciais são as mesmas: o câmeras de origem e o de destino devem ser inicializados, e os descritores de limite de gamut de origem e destino devem ser inicializados. Independentemente da intenção especificada, o CheckGamut GMM deve ser usado. O CheckGamut GMM deve ser inicializado usando os modelos de dispositivo de origem e de destino e os descritores de limite de gamut. No entanto, a transformação deve criar uma transformação truncada que inclui o modelo do dispositivo de origem, a CAM de origem, qualquer GMMs intermediária e CheckGamut GMM. Isso garante que os valores Delta J, Delta C e Delta h sejam impressos pelo CheckGamut CMM se tornarem os valores finais resultantes.
+As ICM chamadas CreateTransform e **CreateMultiProfileTransform** levam uma palavra de valores de sinalizador, um dos quais é ENABLE \_ GAMUT \_ CHECKING. Quando esse sinalizador é definido, o CITE deve criar a transformação de maneira diferente. As etapas iniciais são as mesmas: os CAMs de origem e de destino devem ser inicializados e, em seguida, os descritores de limite de gama de origem e destino devem ser inicializados. Independentemente da intenção especificada, o GMM CheckGamut deve ser usado. O GMM CheckGamut deve ser inicializado usando os modelos de dispositivo de origem e de destino e descritores de limite de gama. No entanto, a transformação deve criar uma transformação truncada que inclui o modelo de dispositivo de origem, o CAM de origem, os GMMs intermediárias e o GMM CheckGamut. Isso garante que os valores delta J, delta C e delta h saída pelo CMM CheckGamut se tornem os valores finais resultantes.
 
-O significado de CheckGamut é claro quando há apenas dois perfis de dispositivo na transformação. Quando há mais de dois perfis de dispositivo e mais de dois GMMs, o CheckGamut relata se as cores que foram transformadas por meio do primeiro modelo de dispositivo e todos os últimos GMM estão dentro da gama do dispositivo de destino.
+O significado de CheckGamut fica claro quando há apenas dois perfis de dispositivo na transformação. Quando há mais de dois perfis de dispositivo e mais de dois GMMs, CheckGamut informa se as cores que foram transformadas por meio do primeiro modelo de dispositivo e todos, menos o último GMM, se enquadram no gamut do dispositivo de destino.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

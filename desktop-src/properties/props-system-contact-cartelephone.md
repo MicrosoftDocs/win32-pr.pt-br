@@ -4,12 +4,12 @@ ms.assetid: ef7d6ac7-ef7e-463c-8408-60948802e9c5
 title: System. Contact. CarTelephone
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a307f601f795e3317fe1b21df994d85896e018e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6b6f1167eef0af978a49d92d44c7c166ea269e6ded128e7504c04c8de491fb8a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105747887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118468391"
 ---
 # <a name="systemcontactcartelephone"></a>System. Contact. CarTelephone
 

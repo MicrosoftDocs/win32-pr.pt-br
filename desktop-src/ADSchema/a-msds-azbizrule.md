@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 571ab48c9742ffb93015c433685c01cb3a9666d3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 215afa79e47a1ddf508b3d9d7a3d646c3157bafec4716eac31fae6b4b733058e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118685366"
 ---
 # <a name="ms-ds-az-biz-rule-attribute"></a>ms-DS-AZ-biz-atributo Rule
 
@@ -36,7 +36,7 @@ Texto do script que implementa a regra de negócio.
 | Frequência de atualização  | Durante a inicialização ou a alteração da política.     |
 | Attribute-Id      | 1.2.840.113556.1.4.1801                     |
 | System-ID-GUID    | 33d41ea8-c0c9-4c92-9494-f104878413fd        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
@@ -107,7 +107,7 @@ Texto do script que implementa a regra de negócio.
 | Range-Upper            | 65536                                                                                 |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Classes usadas em        | [**Group**](c-group.md)<br/> [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -128,7 +128,7 @@ Texto do script que implementa a regra de negócio.
 | Range-Upper            | 65536                                                                                 |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Classes usadas em        | [**Group**](c-group.md)<br/> [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -149,7 +149,7 @@ Texto do script que implementa a regra de negócio.
 | Range-Upper            | 65536                                                                                 |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Classes usadas em        | [**Group**](c-group.md)<br/> [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
 
 
 

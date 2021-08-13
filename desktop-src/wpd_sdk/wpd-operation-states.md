@@ -1,7 +1,7 @@
 ---
-description: A \_ operação WPD \_ declara valores de enumeração que descrevem o estado atual de uma operação em andamento.
+description: Os valores de \_ enumeração WPD OPERATION \_ STATES descrevem o estado atual de uma operação em andamento.
 ms.assetid: a002f735-e385-4c7c-b734-e70a9c6842ca
-title: Enumeração de WPD_OPERATION_STATES (PortableDevice. h)
+title: WPD_OPERATION_STATES enumeração (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 1746ab6a798c74974708ac10b9c4d137bf6c1d42
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3c2bc25fdbc040bd849d60f1e16e5d86d1916ced17eb6670ceb3bc6a75108772
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118696479"
 ---
-# <a name="wpd_operation_states-enumeration"></a>Enumeração de Estados de \_ operação WPD \_
+# <a name="wpd_operation_states-enumeration"></a>Enumeração WPD \_ OPERATION \_ STATES
 
-A **\_ operação WPD \_ declara** valores de enumeração que descrevem o estado atual de uma operação em andamento.
+Os **valores de \_ enumeração WPD OPERATION \_ STATES** descrevem o estado atual de uma operação em andamento.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -45,49 +45,49 @@ typedef enum tagWPD_OPERATION_STATES {
 
 <dl> <dt>
 
-<span id="WPD_OPERATION_STATE_UNSPECIFIED"></span><span id="wpd_operation_state_unspecified"></span>**\_estado da operação WPD \_ \_ não especificado**
+<span id="WPD_OPERATION_STATE_UNSPECIFIED"></span><span id="wpd_operation_state_unspecified"></span>**ESTADO DA \_ OPERAÇÃO \_ WPD \_ NÃO ESPECIFICADO**
 </dt> <dd>
 
 A operação atual está em um estado não especificado (não definido) e desconhecido.
 
 </dd> <dt>
 
-<span id="WPD_OPERATION_STATE_STARTED"></span><span id="wpd_operation_state_started"></span>**\_estado da operação WPD \_ \_ iniciado**
+<span id="WPD_OPERATION_STATE_STARTED"></span><span id="wpd_operation_state_started"></span>**ESTADO DE \_ OPERAÇÃO \_ WPD \_ INICIADO**
 </dt> <dd>
 
-A operação foi iniciada.
+A operação é iniciada.
 
 </dd> <dt>
 
-<span id="WPD_OPERATION_STATE_RUNNING"></span><span id="wpd_operation_state_running"></span>**\_estado da operação WPD \_ \_ em execução**
+<span id="WPD_OPERATION_STATE_RUNNING"></span><span id="wpd_operation_state_running"></span>**ESTADO DE \_ OPERAÇÃO WPD \_ EM \_ EXECUÇÃO**
 </dt> <dd>
 
 A operação está em execução.
 
 </dd> <dt>
 
-<span id="WPD_OPERATION_STATE_PAUSED"></span><span id="wpd_operation_state_paused"></span>**\_estado de operação WPD \_ \_ pausado**
+<span id="WPD_OPERATION_STATE_PAUSED"></span><span id="wpd_operation_state_paused"></span>**ESTADO DA OPERAÇÃO WPD \_ \_ \_ PAUSADO**
 </dt> <dd>
 
 A operação está em pausa.
 
 </dd> <dt>
 
-<span id="WPD_OPERATION_STATE_CANCELLED"></span><span id="wpd_operation_state_cancelled"></span>**\_estado da operação WPD \_ \_ cancelado**
+<span id="WPD_OPERATION_STATE_CANCELLED"></span><span id="wpd_operation_state_cancelled"></span>**ESTADO DE \_ OPERAÇÃO \_ WPD \_ CANCELADO**
 </dt> <dd>
 
-A operação foi cancelada.
+A operação é cancelada.
 
 </dd> <dt>
 
-<span id="WPD_OPERATION_STATE_FINISHED"></span><span id="wpd_operation_state_finished"></span>**\_estado da operação WPD \_ \_ concluído**
+<span id="WPD_OPERATION_STATE_FINISHED"></span><span id="wpd_operation_state_finished"></span>**ESTADO DA OPERAÇÃO WPD \_ \_ \_ CONCLUÍDO**
 </dt> <dd>
 
 A operação foi concluída.
 
 </dd> <dt>
 
-<span id="WPD_OPERATION_STATE_ABORTED"></span><span id="wpd_operation_state_aborted"></span>**\_estado da operação WPD \_ \_ anulado**
+<span id="WPD_OPERATION_STATE_ABORTED"></span><span id="wpd_operation_state_aborted"></span>**ESTADO DA OPERAÇÃO WPD \_ \_ \_ ANULADA**
 </dt> <dd>
 
 A operação foi anulada.
@@ -104,7 +104,7 @@ Esses valores são recebidos no retorno de chamada definido pelo aplicativo ([**
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Libera um objeto de chave, hash ou provedor.
+description: Libera uma chave, hash ou objeto de provedor.
 ms.assetid: 73fa0a08-4654-4515-bdb2-9951936b689a
-title: Função SslFreeObject (Sslprovider. h)
+title: Função SslFreeObject (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: e7d10059942080e7794da7e6b87613189dcf9844
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7415ac31147f08bec038da5af57e8a4bc0cc4d2d3f39cb3b8391f42dfcff21b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906485"
 ---
 # <a name="sslfreeobject-function"></a>Função SslFreeObject
 
-A função **SslFreeObject** libera um objeto de chave, hash ou provedor.
+A **função SslFreeObject** libera uma chave, hash ou objeto de provedor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,34 +40,34 @@ SECURITY_STATUS WINAPI SslFreeObject(
 
 <dl> <dt>
 
-*hObject* \[ no\]
+*hObject* \[ Em\]
 </dt> <dd>
 
 O identificador do objeto a ser liberado.
 
 </dd> <dt>
 
-*dwFlags* \[ no\]
+*dwFlags* \[ Em\]
 </dt> <dd>
 
 Esse parâmetro é reservado para uso futuro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for realizada com sucesso, ela retornará zero.
+Se a função for bem-sucedida, ela retornará zero.
 
-Se a função falhar, ela retornará um valor de erro diferente de zero.
+Se a função falhar, ela retornará um valor de erro diferentes de zero.
 
-Os códigos de retorno possíveis incluem, mas não se limitam a, o seguinte.
+Os possíveis códigos de retorno incluem, mas não estão limitados a, o seguinte.
 
 
 
-| Código/valor de retorno                                                                                                                                                       | Descrição                                  |
+| Valor/código de retorno                                                                                                                                                       | Descrição                                  |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**Nte \_ \_Identificador inválido**</dt> <dt>0x80090026L</dt> </dl>    | Um identificador interno não é válido.<br/>  |
-| <dl> <dt>**Status \_ do \_Identificador inválido**</dt> <dt>0xC0000008L</dt> </dl> | O identificador fornecido não é válido.<br/> |
+| <dl> <dt>**NTE \_ HANDLE \_ INVÁLIDO**</dt> <dt>0x80090026L</dt> </dl>    | Um alça interno não é válido.<br/>  |
+| <dl> <dt>**STATUS \_ HANDLE \_ INVÁLIDO**</dt> <dt>0xC0000008L</dt> </dl> | O alça fornecido não é válido.<br/> |
 
 
 
@@ -79,9 +79,9 @@ Os códigos de retorno possíveis incluem, mas não se limitam a, o seguinte.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                     |
+| parâmetro<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

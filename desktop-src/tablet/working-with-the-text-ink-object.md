@@ -4,12 +4,12 @@ ms.assetid: 0202e91c-c7a0-4e7b-a1c6-a2f58c11c0be
 title: Trabalhando com o objeto de tinta de texto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 082323f7e67e76f7ae39c6b592a86f2be0945a86
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 938d7e68795147913b64cad399f70ac6c1d2fdb06edc19e6d0c0b6c64add6422
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118449259"
 ---
 # <a name="working-with-the-text-ink-object"></a>Trabalhando com o objeto de tinta de texto
 
@@ -27,7 +27,7 @@ Um objeto de tinta de texto pode ser gerado das seguintes maneiras.
 -   Quando um aplicativo copia um objeto [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) ou [InkEdit](inkedit-control-reference.md) na área de transferência e o formato de [**Enumeração InkClipboardFormats**](/windows/desktop/api/msinkaut/ne-msinkaut-inkclipboardformats) é definido, o slot de área de transferência do objeto OLE contém um objeto OLE de tinta de texto.
 -   O painel de entrada do Tablet PC pode gerar objetos de tinta de texto.
 
-Por exemplo, seu aplicativo pode reconhecer manuscrito e adicionar o resultado de reconhecimento aos traços. Em seguida, se você copiar e colar os traços no Microsoft Word como um objeto de tinta de texto, as alternativas para essa palavra estarão disponíveis no Word 2003 e em versões posteriores.
+Por exemplo, seu aplicativo pode reconhecer manuscrito e adicionar o resultado de reconhecimento aos traços. em seguida, se você copiar e colar os traços para Microsoft Word como um objeto de tinta de texto, as alternativas para essa palavra estarão disponíveis no word 2003 e em versões posteriores.
 
 Para conter com êxito objetos de tinta de texto, um aplicativo deve implementar o suporte a contêiner OLE para objetos inseridos. Em seguida, para tornar o contêiner totalmente compatível com a tinta de texto, você deve instituir:
 

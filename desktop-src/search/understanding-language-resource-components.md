@@ -4,16 +4,16 @@ ms.assetid: 7963805e-e279-42cf-ba95-f81a7de8e68e
 title: Noções básicas sobre componentes de recursos de idioma
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e03c9294eaf6e50de024b866372093a0359fc79
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8feb10d14edbf4aba59b912ae1945d5e87ec32ef684f0b1f5530f1770ba70053
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118462378"
 ---
 # <a name="understanding-language-resource-components"></a>Noções básicas sobre componentes de recursos de idioma
 
-Os recursos de idioma consistem em separadores de palavras e lematizadores que estendem os recursos de criação e consulta de índice para novas linguagens e localidades. Os separadores de palavras são usados durante a criação e consulta de índice. Os lematizadores são usados somente para consulta. O Windows Search usa DLLs de recurso de idioma para associar a implementações [**IWordBreaker**](/windows/desktop/api/Indexsrv/nn-indexsrv-iwordbreaker) e [**IStemmer**](/windows/desktop/api/Indexsrv/nn-indexsrv-istemmer) para uma localidade de idioma específica.
+Os recursos de idioma consistem em separadores de palavras e lematizadores que estendem os recursos de criação e consulta de índice para novas linguagens e localidades. Os separadores de palavras são usados durante a criação e consulta de índice. Os lematizadores são usados somente para consulta. Windows A pesquisa usa DLLs de recurso de idioma para associar a implementações [**IWordBreaker**](/windows/desktop/api/Indexsrv/nn-indexsrv-iwordbreaker) e [**IStemmer**](/windows/desktop/api/Indexsrv/nn-indexsrv-istemmer) para uma localidade de idioma específica.
 
 Este tópico é organizado da seguinte maneira:
 
@@ -26,17 +26,17 @@ Este tópico é organizado da seguinte maneira:
 
 ## <a name="about-language-resources"></a>Sobre os recursos de idioma
 
-O Windows Search usa um filtro (uma implementação da interface [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) ) e [**ILoadFilter**](/windows/desktop/api/filtereg/nn-filtereg-iloadfilter) para acessar um documento em seu formato nativo. O componente [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) extrai o conteúdo do texto, as propriedades e a formatação do documento. O [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) identifica a localidade do documento que está filtrando. O componente de indexação invoca o separador de palavras apropriado para essa localidade. Se nenhum estiver disponível, o componente de indexação invocará o separador de palavras neutro. O separador de palavras recebe, de um [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter), um fluxo de entrada de caracteres Unicode que o separador de palavras analisa para produzir palavras e frases individuais. O separador de palavras também normaliza os formatos de data e hora. O indexador normaliza as palavras produzidas pelo separador de palavras convertendo as palavras para todas as letras maiúsculas. O indexador salva as palavras em maiúsculas no índice de texto completo, com exceção das palavras de ruído identificadas para essa localidade.
+Windows A pesquisa usa um filtro (uma implementação da interface [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) ) e [**ILoadFilter**](/windows/desktop/api/filtereg/nn-filtereg-iloadfilter) para acessar um documento em seu formato nativo. O componente [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) extrai o conteúdo do texto, as propriedades e a formatação do documento. O [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) identifica a localidade do documento que está filtrando. O componente de indexação invoca o separador de palavras apropriado para essa localidade. Se nenhum estiver disponível, o componente de indexação invocará o separador de palavras neutro. O separador de palavras recebe, de um [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter), um fluxo de entrada de caracteres Unicode que o separador de palavras analisa para produzir palavras e frases individuais. O separador de palavras também normaliza os formatos de data e hora. O indexador normaliza as palavras produzidas pelo separador de palavras convertendo as palavras para todas as letras maiúsculas. O indexador salva as palavras em maiúsculas no índice de texto completo, com exceção das palavras de ruído identificadas para essa localidade.
 
-A tabela a seguir lista as ações e os resultados correspondentes da frase "a Figura 1 ilustra a função dos recursos de idioma do Windows Search durante o processo de criação do índice."
+a tabela a seguir lista as ações e os resultados correspondentes da frase "a figura 1 ilustra a função dos recursos de idioma para Windows pesquisa durante o processo de criação de índice."
 
 
 
 | Ação                  | Texto resultante                                                                                                               |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Texto original           | A Figura 1 ilustra a função de recursos de idioma do Windows Search durante o processo de criação de índice.                    |
-| Filtragem               | A Figura 1 ilustra a função de recursos de idioma do Windows Search durante o processo de criação de índice.                    |
-| Quebra de palavras           | Figura, 1, ilustra,, função, de, idioma, recursos, para, Windows, Pesquisar, durante, o, índice, criação, processo, EOS |
+| Texto original           | a figura 1 ilustra a função de recursos de idioma para Windows pesquisa durante o processo de criação de índice.                    |
+| Filtragem               | a figura 1 ilustra a função de recursos de idioma para Windows pesquisa durante o processo de criação de índice.                    |
+| Quebra de palavras           | figura, 1, ilustra,, função, de, idioma, recursos, para, Windows, pesquisar, durante, o, índice, criação, processo, EOS |
 | Normalização           | FIGURA, 1, ILUSTRA,, FUNÇÃO, DE, IDIOMA, RECURSOS, WINDOWS, PESQUISA, DURANTE, O, ÍNDICE, CRIAÇÃO, PROCESSO           |
 | Remoção de palavras de ruído      | FIGURA, ILUSTRAÇÕES, FUNÇÃO, IDIOMA, RECURSOS, WINDOWS, PESQUISAR, DURANTE, ÍNDICE, CRIAÇÃO, PROCESSO                            |
 | Salvar no índice de texto completo | FIGURA, ILUSTRAÇÕES, FUNÇÃO, IDIOMA, RECURSOS, WINDOWS, PESQUISAR, DURANTE, ÍNDICE, CRIAÇÃO, PROCESSO                            |
@@ -72,7 +72,7 @@ A quebra de palavras é a separação do texto em tokens de texto individuais ou
 
 ## <a name="stemming"></a>Lematização
 
-O Windows Search aplica os lematizadores exclusivamente no momento da consulta para gerar formas de palavras adicionais para os termos no [FREETEXT](-search-sql-freetext.md) e nas consultas de propriedade. Os lematizadores executam a análise de morfológicas e aplicam regras gramaticais para gerar uma lista de formulários alternativos, ou formas flexionadas, para palavras. Formulários alternativos geralmente têm a mesma haste ou formulário base. Ao gerar os formulários formas flexionadas para uma palavra, o serviço de indexação retorna os resultados da consulta que são estatisticamente mais relevantes para uma consulta. Por exemplo, uma consulta de texto completo para "refinar correspondência" corresponde a documentos que contêm "nada, nada mais, nada mais, nada mais, Swam, swum" ou "reunião, encontro, atende, atende a", reunião, cumprido "e combinações desses termos.
+Windows A pesquisa aplica os lematizadores exclusivamente no momento da consulta para gerar formas de palavras adicionais para os termos nas consultas [FREETEXT](-search-sql-freetext.md) e Property. Os lematizadores executam a análise de morfológicas e aplicam regras gramaticais para gerar uma lista de formulários alternativos, ou formas flexionadas, para palavras. Formulários alternativos geralmente têm a mesma haste ou formulário base. Ao gerar os formulários formas flexionadas para uma palavra, o serviço de indexação retorna os resultados da consulta que são estatisticamente mais relevantes para uma consulta. Por exemplo, uma consulta de texto completo para "refinar correspondência" corresponde a documentos que contêm "nada, nada mais, nada mais, nada mais, Swam, swum" ou "reunião, encontro, atende, atende a", reunião, cumprido "e combinações desses termos.
 
 Alguns idiomas exigem que os termos de formas flexionadas sejam gerados no momento do índice e no tempo de consulta para inflexões padrão e variante. Nesse caso, a lematização acontece no componente de separador de palavras, com o mínimo de trabalho de lematização no lematizador real. Por exemplo, o separador de palavras em Japonês executa a lematização durante a criação do índice e consulta para habilitar uma consulta para localizar diferentes formas formas flexionadas dos termos de pesquisa.
 
@@ -82,7 +82,7 @@ Os documentos de todos os idiomas são armazenados em um único índice. Embora 
 
 ## <a name="noise-words"></a>Palavras de ruído
 
-Palavras de ruído, também conhecidas como palavras de parada, são palavras que não são indicadores significativos para o conteúdo. O serviço de indexação remove palavras de ruído dos termos de consulta e do conteúdo incluído no índice de texto completo. Um *deslocamento* é a ocorrência de uma palavra em um documento ou em uma lista de termos de consulta. O deslocamento das palavras de ruído em um documento ou consulta é registrado como em branco. A remoção de palavras de ruído melhora o desempenho da consulta, evitando o crescimento desnecessário do índice. Ele também melhora a relevância dos resultados da consulta. Você pode configurar a pesquisa do Windows para usar listas de palavras de ruído para idiomas específicos. Essas listas são usadas quando um separador de palavras é invocado para esse idioma. Por exemplo, "o" no idioma inglês ocorre com tanta frequência que tem pouco valor como uma chave exclusiva. "O" está na lista de palavras de ruído, não é gravado no índice de conteúdo e, se consultado, não retorna nenhum resultado.
+Palavras de ruído, também conhecidas como palavras de parada, são palavras que não são indicadores significativos para o conteúdo. O serviço de indexação remove palavras de ruído dos termos de consulta e do conteúdo incluído no índice de texto completo. Um *deslocamento* é a ocorrência de uma palavra em um documento ou em uma lista de termos de consulta. O deslocamento das palavras de ruído em um documento ou consulta é registrado como em branco. A remoção de palavras de ruído melhora o desempenho da consulta, evitando o crescimento desnecessário do índice. Ele também melhora a relevância dos resultados da consulta. você pode configurar Windows pesquisa para usar listas de palavras de ruído para idiomas específicos. Essas listas são usadas quando um separador de palavras é invocado para esse idioma. Por exemplo, "o" no idioma inglês ocorre com tanta frequência que tem pouco valor como uma chave exclusiva. "O" está na lista de palavras de ruído, não é gravado no índice de conteúdo e, se consultado, não retorna nenhum resultado.
 
 As palavras de ruído atuam como espaços reservados em consultas de frase. Um documento que contém o texto "Wag The Dog" é armazenado no índice com "Wag" na ocorrência 1 e "Dog" na ocorrência 3. A consulta de frase "Wag Dog" não corresponde, mas a consulta de frase "Wag a Dog" faz, porque a informação de ocorrência corresponde. A frase "Wag roxo Dog" não corresponde porque "roxo" não foi encontrado no índice na ocorrência 2. No entanto, uma consulta para "Wag The Dog" retorna documentos que contêm "Wag roxo Dog" porque não há como determinar com eficiência se o documento tinha uma palavra que não é de ruído entre "Wag" e "Dog".
 
@@ -90,16 +90,16 @@ As palavras de ruído atuam como espaços reservados em consultas de frase. Um d
 
 <dl> <dt>
 
-[Estendendo recursos de idioma](extending-language-resources-in-windows-search.md)
+[Estendendo recursos de linguagem](extending-language-resources-in-windows-search.md)
 </dt> <dt>
 
-[Implementando um separador de palavras e lematizador](implementing-a-word-breaker-and-stemmer.md)
+[Implementando um disjuntor de palavras e um stemmer](implementing-a-word-breaker-and-stemmer.md)
 </dt> <dt>
 
-[Considerações lingüísticas e Unicode](linguistic-and-unicode-considerations.md)
+[Considerações linguísticas e Unicode](linguistic-and-unicode-considerations.md)
 </dt> <dt>
 
-[Solucionando problemas de recursos de idioma e práticas recomendadas](troubleshooting-language-resources.md)
+[Solução de problemas de recursos de linguagem e práticas recomendadas](troubleshooting-language-resources.md)
 </dt> </dl>
 
  

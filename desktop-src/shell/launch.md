@@ -4,12 +4,12 @@ ms.assetid: d774c3b2-4caf-460a-ac32-0ed603491d5f
 title: Iniciando aplicativos (ShellExecute, ShellExecuteEx, SHELLEXECUTEINFO)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b3ae5640acdbf4d959b97607cc66a4fd8fe8ac24
-ms.sourcegitcommit: 89aa14b1f685f8d65d56ecbdb8bef12246c33cf9
+ms.openlocfilehash: 3b871e3560ce1cb0c38e91d6ea3baa7a9364c16e500be949b734f9b4b195a24e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "113508607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118720214"
 ---
 # <a name="launching-applications-shellexecute-shellexecuteex-shellexecuteinfo"></a>Iniciando aplicativos (ShellExecute, ShellExecuteEx, SHELLEXECUTEINFO)
 
@@ -39,7 +39,7 @@ Para descobrir quais verbos estão disponíveis para [objetos shell predefinidos
 
 **HKEY \_ Verbo \_ do** \\ shell *do nome do \_ objeto* CLASSES \\  \\  ROOT
 
-em *que \_ nome do* objeto é o nome do objeto Shell predefinido. Novamente, *a* \\ sub-chave **de comando** do verbo contém os dados que indicam o que acontece quando esse verbo é invocado.
+em *que \_ nome do* objeto é o nome do objeto Shell predefinido. Novamente, a *sub-chave* de comando do verbo contém os dados que \\  indicam o que acontece quando esse verbo é invocado.
 
 Os verbos normalmente disponíveis incluem:
 
@@ -89,7 +89,7 @@ ShellExecute(hwnd, "find", "c:\\MyPrograms", NULL, NULL, 0);
 
 ## <a name="a-simple-example-of-how-to-use-shellexecuteex"></a>Um exemplo simples de como usar ShellExecuteEx
 
-O aplicativo de console de exemplo a seguir ilustra o uso de [**ShellExecuteEx.**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) A maioria dos códigos de verificação de erro foi omitida para maior clareza.
+O aplicativo de console de exemplo a seguir ilustra o uso [**de ShellExecuteEx.**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) A maioria dos códigos de verificação de erro foi omitida para maior clareza.
 
 
 ```C++

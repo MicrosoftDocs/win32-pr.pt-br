@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 5088312a16102153ad78afffdcd9ea1275d34e0d
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 2fa79b7aa50bc734ddc1f9fb1fd54e4130c48518dd47ed429b4177b8fb867d95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104084265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118794449"
 ---
 # <a name="break_comp---ps"></a>interromper \_ comp-PS
 
 Interromper o loop atual no [ENDLOOP-PS](endloop---ps.md) ou [endrep-PS](endrep---ps.md)mais próximo, com base em uma comparação por componente.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 
@@ -29,24 +29,24 @@ Interromper o loop atual no [ENDLOOP-PS](endloop---ps.md) ou [endrep-PS](endrep-
 
 
 
- 
+ 
 
 Em que:
 
 -   \_comp é uma comparação escalar (ou única) entre os dois registros de origem. Pode ser um dos seguintes: 
 
-    | Syntax | Comparação            |
+    | Sintaxe | Comparação            |
     |--------|-----------------------|
     | \_gt   | Maior que          |
     | \_lt   | Menor que             |
     | \_GE   | Maior ou igual |
     | \_quivo   | Inferior ou igual    |
     | \_EQ   | Igual a              |
-    | \_m   | Não igual a          |
+    | \_m   | É diferente de          |
 
     
 
-     
+     
 
 -   src0 é um registro de origem. Replicate swizzle será necessário se você selecionar um único componente.
 -   src1 é um registro de origem. Replicate swizzle será necessário se você selecionar um único componente.
@@ -63,7 +63,7 @@ Essa instrução tem suporte nas versões a seguir.
 
 
 
- 
+ 
 
 Quando a comparação for verdadeira, ela será interrompida no loop atual, conforme mostrado.
 
@@ -82,9 +82,9 @@ if (!(src0 comparison src1))
 [Instruções do sombreador de pixel](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

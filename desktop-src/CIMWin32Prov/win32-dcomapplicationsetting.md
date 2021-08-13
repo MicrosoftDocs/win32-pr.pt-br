@@ -26,12 +26,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 085304c5319811ba87979124613c7d8e83fd7479
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3b52ace8ea72d78585ac0df858df1fc807fbc65ca74ace92208d2e9fc5c76861
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105755662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118417727"
 ---
 # <a name="win32_dcomapplicationsetting-class"></a>\_Classe Win32 DCOMApplicationSetting
 
@@ -137,12 +137,12 @@ Nenhum (nenhuma autenticação é executada)
 
 <span id="Connect"></span><span id="connect"></span><span id="CONNECT"></span>
 
-<span id="Connect"></span><span id="connect"></span><span id="CONNECT"></span>**Conectar** (2)
+<span id="Connect"></span><span id="connect"></span><span id="CONNECT"></span>**Conexão** (2)
 
 
 </dt> <dd>
 
-Conectar (a autenticação é executada somente quando o cliente estabelece uma relação com o aplicativo)
+Conexão (a autenticação é executada somente quando o cliente estabelece uma relação com o aplicativo)
 
 </dd> <dt>
 
@@ -317,7 +317,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ local \_ Machine \\ \\ software \\ \\ classes \\ \\ AppID \\ \\ {GUID} \[ serviceparameters \] ")
 </dt> </dl>
 
-Parâmetros de linha de comando passados para o aplicativo DCOM. Isso será válido somente se o aplicativo for escrito como um serviço baseado no Windows.
+Parâmetros de linha de comando passados para o aplicativo DCOM. isso será válido somente se o aplicativo for gravado como um serviço baseado em Windows.
 
 </dd> <dt>
 

@@ -4,12 +4,12 @@ description: Identifica a propriedade da interface do usuário \_ PKEY \_ fontpr
 ms.assetid: ab04c0b0-911f-4649-9ce8-5ecd847abf9f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f261256a36ee7a387c6c3a695d8c1182898690c2
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: d26b324a4e504c5ef98850f2bbcabd55b34525650b0ecfd3c201d45896e0c800
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444347"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118438645"
 ---
 # <a name="ui_pkey_fontproperties_foregroundcolortype"></a>Interface do usuário \_ PKEY \_ fontproperties \_ ForegroundColorType
 
@@ -40,7 +40,7 @@ A tabela a seguir descreve os valores da propriedade.
 |     Valor                           |     Descrição                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `UI_SWATCHCOLORTYPE_NOCOLOR`   | Não há suporte para o [**FontControl**](windowsribbon-element-fontcontrol.md).                                                                                                                                                                                                                                                                                                                                        |
-| `UI_SWATCHCOLORTYPE_AUTOMATIC` | O aplicativo deve consultar a métrica de sistema apropriada para o valor de cor normalmente a **cor de texto** do tema do Windows atual que é recuperada com GETSYSCOLOR (Color \_ WINDOWTEXT).                                                                                                                                                                                                                                  |
+| `UI_SWATCHCOLORTYPE_AUTOMATIC` | o aplicativo deve consultar a métrica do sistema apropriada para o valor de cor normalmente a **cor** atual do texto do tema de Windows que é recuperada com GetSysColor (color \_ WINDOWTEXT).                                                                                                                                                                                                                                  |
 | `UI_SWATCHCOLORTYPE_RGB`       | O aplicativo deve consultar a [interface do usuário \_ PKEY \_ fontproperties \_ ForegroundColor](windowsribbon-reference-properties-uipkey-fontproperties-foregroundcolor.md) para o valor de cor. O valor de cor da [interface do usuário \_ PKEY \_ fontproperties \_ ForegroundColor](windowsribbon-reference-properties-uipkey-fontproperties-foregroundcolor.md) é exibido no botão de **cor do texto** e selecionado na Galeria de cores de **texto** .<br/> |
 
 

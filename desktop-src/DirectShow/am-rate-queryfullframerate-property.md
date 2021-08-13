@@ -1,29 +1,29 @@
 ---
-description: Essa propriedade consulta o decodificador quanto à taxa máxima de quadro completo que o decodificador dá suporte. O tipo de dados para essa propriedade é uma \_ estrutura am QueryRate.
+description: Essa propriedade consulta o decodificador para a taxa máxima de quadros completos compatível com o decodificador. O tipo de dados para essa propriedade é uma estrutura \_ DE Taxa de Consulta AM.
 ms.assetid: 98808ed4-6d34-437b-9729-9cc805bc81f0
-title: Propriedade AM_RATE_QueryFullFrameRate (DVDMedia. h)
+title: AM_RATE_QueryFullFrameRate propriedade (Dvdmedia.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 70bc096e5b68737ca877a037571223d673284dab
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 899ceb938ac3fd0ea5f7f58b340f4b57fd6a722650cd3225702cbb74b1644045
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107910274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118664100"
 ---
-# <a name="am_rate_queryfullframerate-property"></a>Propriedade de QueryFullFrameRate da \_ taxa de am \_
+# <a name="am_rate_queryfullframerate-property"></a>Propriedade AM \_ RATE \_ QueryFullFrameRate
 
-Essa propriedade consulta o decodificador quanto à taxa máxima de quadro completo que o decodificador dá suporte. O tipo de dados para essa propriedade é uma estrutura **am \_ QueryRate** .
+Essa propriedade consulta o decodificador para a taxa máxima de quadros completos compatível com o decodificador. O tipo de dados para essa propriedade é uma **estrutura DE Taxa de \_ Consulta** AM.
 
-Esta propriedade é definida para a versão 1,1 deste conjunto de propriedades; consulte [**a \_ taxa de \_ UseRateVersion**](am-rate-userateversion-property.md).
+Essa propriedade é definida para a versão 1.1 deste conjunto de propriedades; consulte [**AM \_ RATE \_ UseRateVersion**](am-rate-userateversion-property.md).
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------------|---------------------------------------|
-| GUID do Conjunto de Propriedades | \_KSPROPSETID \_ TSRateChange         |
-| ID da propriedade       | Propriedade de QueryFullFrameRate da \_ taxa de am \_ |
-| Tipo de Dados         | [**AM \_ QueryRate**](/previous-versions/windows/desktop/api/Dvdmedia/ns-dvdmedia-am_queryrate) |
+| GUID do Conjunto de Propriedades | AM \_ KSPROPSETID \_ TSRateChange         |
+| ID da propriedade       | Propriedade AM \_ RATE \_ QueryFullFrameRate |
+| Tipo de Dados         | [**Taxa \_ de Consulta AM**](/previous-versions/windows/desktop/api/Dvdmedia/ns-dvdmedia-am_queryrate) |
 
 
 
@@ -31,7 +31,7 @@ Esta propriedade é definida para a versão 1,1 deste conjunto de propriedades; 
 
 ## <a name="remarks"></a>Comentários
 
-Se a taxa de reprodução exceder a taxa máxima do decodificador, o filtro de origem enviará grupos de amostras contínuas separadas por descontinuidades. Os carimbos de data/hora saltam pelo descontinuidades. O filtro de origem pode fazer isso mesmo se a taxa de reprodução estiver dentro da taxa máxima do decodificador, porque pode haver outros fatores, como e/s de disco, que limitam a taxa de reprodução completa.
+Se a taxa de reprodução exceder a taxa máxima do decodificador, o filtro de origem enviará grupos de exemplos contínuos separados por descontinuidades. Os carimbos de data/hora atravessam as descontinuidades. O filtro de origem pode fazer isso mesmo se a taxa de reprodução estiver dentro da taxa máxima do decodificador, pois pode haver outros fatores, como E/S de disco, que limitam a taxa de reprodução completa.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,7 +39,7 @@ Se a taxa de reprodução exceder a taxa máxima do decodificador, o filtro de o
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>DVDMedia. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dvdmedia.h</dt> </dl> |
 
 
 

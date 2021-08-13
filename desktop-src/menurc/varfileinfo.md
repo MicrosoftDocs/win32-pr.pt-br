@@ -1,6 +1,6 @@
 ---
 title: Estrutura VarFileInfo
-description: Representa a organização de dados em um recurso de versão de arquivo. Ele contém informações de versão não dependentes de uma combinação de linguagem de código e de idioma específico.
+description: Representa a organização de dados em um recurso de versão de arquivo. Ele contém informações de versão que não dependem de uma combinação específica de idioma e página de código.
 ms.assetid: 3b667778-fb08-4195-a88e-ac04baf45fee
 keywords:
 - Menus de estrutura VarFileInfo e outros recursos
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 26326403abef41d131bf25acf5d5d8be7728cd0f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ddae8f913e199e0a1219e5ec36012ba3a3eaf24708ca6771ec075b497107418e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105790309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118733387"
 ---
 # <a name="varfileinfo-structure"></a>Estrutura VarFileInfo
 
-Representa a organização de dados em um recurso de versão de arquivo. Ele contém informações de versão não dependentes de uma combinação de linguagem de código e de idioma específico.
+Representa a organização de dados em um recurso de versão de arquivo. Ele contém informações de versão que não dependem de uma combinação específica de idioma e página de código.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,18 +47,18 @@ typedef struct {
 **wLength**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-O comprimento, em bytes, do bloco **VarFileInfo** inteiro, incluindo todas as estruturas indicadas pelo membro **filho** .
+O comprimento, em bytes, de todo o **bloco VarFileInfo,** incluindo todas as estruturas indicadas pelo **membro** Children.
 
 </dd> <dt>
 
 **wValueLength**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
@@ -69,7 +69,7 @@ Esse membro é sempre igual a zero.
 **wType**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
@@ -84,37 +84,37 @@ Tipo: **WCHAR**
 
 </dd> <dd>
 
-A cadeia de caracteres Unicode L "VarFileInfo".
+A cadeia de caracteres Unicode L"VarFileInfo".
 
 </dd> <dt>
 
 **Preenchimento**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-Tantas palavras zero quantas forem necessárias para alinhar o membro **filho** em um limite de 32 bits.
+Quantas palavras zero necessárias para alinhar o **membro Children** em um limite de 32 bits.
 
 </dd> <dt>
 
 **Filhos**
 </dt> <dd>
 
-Tipo: **[ **var**](var-str.md)**
+Tipo: **[ **Var**](var-str.md)**
 
 </dd> <dd>
 
-Normalmente contém uma lista de idiomas aos quais o aplicativo ou DLL dá suporte.
+Normalmente, contém uma lista de idiomas compatíveis com o aplicativo ou com a DLL.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura não é uma estrutura verdadeira de linguagem C porque contém membros de comprimento variável. Essa estrutura foi criada exclusivamente para representar a organização de dados em um recurso de versão e não aparece em nenhum dos arquivos de cabeçalho fornecidos com o SDK (Software Development Kit) do Windows.
+Essa estrutura não é uma estrutura de linguagem C verdadeira porque contém membros de comprimento variável. Essa estrutura foi criada exclusivamente para representar a organização de dados em um recurso de versão e não aparece em nenhum dos arquivos de header fornecidos com o SDK (Software Development Kit) do Windows.
 
-O membro **filho** da estrutura do [**vs \_ VERSIONINFO**](vs-versioninfo.md) pode conter zero ou um **VarFileInfo** estruturas.
+O **membro Children** da estrutura VS [**\_ VERSIONINFO**](vs-versioninfo.md) pode conter zero ou uma estrutura **VarFileInfo.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -140,7 +140,7 @@ O membro **filho** da estrutura do [**vs \_ VERSIONINFO**](vs-versioninfo.md) po
 [**VS \_ VERSIONINFO**](vs-versioninfo.md)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Informações sobre versão](version-information.md)

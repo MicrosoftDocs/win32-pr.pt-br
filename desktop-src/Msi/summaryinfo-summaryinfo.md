@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 0e51773a930b8868e31a7e88848300a62b717912
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3b8635d081b44adfad3b3e869cb7fab96ee3d81107a8d962153f1caa5a14ac72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118624084"
 ---
 # <a name="summaryinfoproperty-property"></a>Propriedade SummaryInfo. Property
 
@@ -82,7 +82,7 @@ A ID de propriedade necessária de uma das propriedades de resumo.
 
 | Nome do parâmetro | Valor | Descrição                                                                              |
 |----------------|-------|------------------------------------------------------------------------------------------|
-| \_I2 VT         | 2     | inteiro de 16 bits                                                                           |
+| \_I2 VT         | 2     | Inteiro de 16 bits                                                                           |
 | \_I4 VT         | 3     | Inteiro de 32 bits                                                                           |
 | a VT \_ LPSTR      | 30    | String                                                                                   |
 | FILETIME do VT \_   | 64    | Data e hora (FILETIME, convertido em hora da variante)                                          |
@@ -98,9 +98,9 @@ A ID de propriedade necessária de uma das propriedades de resumo.
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ ISummaryInfo é definido como 000C109B-0000-0000-C000-000000000046<br/>                                                                                                                                                                         |
+| IID<br/>     | IID ISummaryInfo é definido como \_ 000C109B-0000-0000-C000-000000000046<br/>                                                                                                                                                                         |
 
 
 

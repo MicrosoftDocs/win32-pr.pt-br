@@ -1,9 +1,9 @@
 ---
-title: Mensagem de RB_DRAGMOVE (commctrl. h)
-description: Atualiza a posição de arrastar no controle rebar após uma mensagem BEGINDRAG de RB anterior \_ .
+title: RB_DRAGMOVE mensagem (Commctrl.h)
+description: Atualiza a posição de arrastar no controle de barra de rebar após uma mensagem BEGINDRAG do RB \_ anterior.
 ms.assetid: 0d2ce7fe-4172-45d9-932b-50f3e4cf2d8e
 keywords:
-- Controles de RB_DRAGMOVE de mensagens do Windows
+- RB_DRAGMOVE controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d8657d8f8f73c798f934262804dda83b359b0c0c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a511bd1ad13442489f3f6dbf3de1b897b30e54f9d503b30b9031426b0aedcef3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118409718"
 ---
-# <a name="rb_dragmove-message"></a>\_Mensagem DRAGMOVE RB
+# <a name="rb_dragmove-message"></a>Mensagem \_ RB DRAGMOVE
 
-Atualiza a posição de arrastar no controle rebar após uma mensagem [**\_ BEGINDRAG de RB**](rb-begindrag.md) anterior.
+Atualiza a posição de arrastar no controle de barra de rebar após uma mensagem [**\_ BEGINDRAG do RB**](rb-begindrag.md) anterior.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -39,13 +39,13 @@ Deve ser zero.
 *lParam* 
 </dt> <dd>
 
-Valor **DWORD** que contém as novas coordenadas do mouse. A coordenada horizontal está contida no [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) e a coordenada vertical está contida no [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)). Se você passar (DWORD)-1, o controle Rebar usará a posição do mouse na última vez em que o thread do controle chamou [**GetMessage**](/windows/desktop/api/winuser/nf-winuser-getmessage) ou [**PeekMessage**](/windows/desktop/DevNotes/-peekmessage).
+**Valor DWORD** que contém as novas coordenadas do mouse. A coordenada horizontal está contida no [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) e a coordenada vertical está contida no [**HIWORD.**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) Se você passar (DWORD)-1, o controle de barra de rebar usará a posição do mouse na última vez que o thread do controle chamado [**GetMessage**](/windows/desktop/api/winuser/nf-winuser-getmessage) ou [**PeekMessage**](/windows/desktop/DevNotes/-peekmessage).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor retornado para esta mensagem não é usado.
+O valor de retorno para essa mensagem não é usado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ O valor retornado para esta mensagem não é usado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| parâmetro<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -66,7 +66,7 @@ O valor retornado para esta mensagem não é usado.
 **Referência**
 </dt> <dt>
 
-[**ARRASTAR para a RB \_**](rb-enddrag.md)
+[**RB \_ ENDDRAG**](rb-enddrag.md)
 </dt> </dl>
 
  

@@ -3,9 +3,9 @@ title: Método IBasicDevice DiscoveredOnCurrentNetwork
 description: Recupera um valor que indica se o dispositivo está na rede atual.
 ms.assetid: E64D4E49-9790-4647-9A01-2C28C407F238
 keywords:
-- API de streaming de mídia do método DiscoveredOnCurrentNetwork
-- API de streaming de mídia do método DiscoveredOnCurrentNetwork, interface IBasicDevice
-- API de streaming de mídia da interface IBasicDevice, método DiscoveredOnCurrentNetwork
+- API de Streaming de Mídia do método DiscoveredOnCurrentNetwork
+- API de Streaming de Mídia do método DiscoveredOnCurrentNetwork, interface IBasicDevice
+- API de Streaming de Mídia da interface IBasicDevice , método DiscoveredOnCurrentNetwork
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6e79a012413b3b3d78a9c4617f01ca6cc01cf7e1
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 605962315e4eab2cdbd5beab264747d282d78ef7c6f44b3bbcbf2f249bac7548
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104364738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118473485"
 ---
-# <a name="ibasicdevicediscoveredoncurrentnetwork-method"></a>IBasicDevice: método iscoveredOnCurrentNetwork de:D
+# <a name="ibasicdevicediscoveredoncurrentnetwork-method"></a>Método IBasicDevice::D iscoveredOnCurrentNetwork
 
 Recupera um valor que indica se o dispositivo está na rede atual.
 
@@ -41,20 +41,20 @@ HRESULT DiscoveredOnCurrentNetwork(
 
 <dl> <dt>
 
-*valor* \[ do fora\]
+*value* \[ out\]
 </dt> <dd>
 
-Recebe um ponteiro para um valor booliano que é **verdadeiro** se o dispositivo estiver na rede atual.
+Recebe um ponteiro para um valor booliana que é **True** se o dispositivo estiver na rede atual.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
-| Código de retorno                                                                          | Descrição                      |
+| Código de retorno                                                                          | Description                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl> | O método foi bem-sucedido.<br/> |
 

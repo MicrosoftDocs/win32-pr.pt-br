@@ -1,6 +1,6 @@
 ---
-description: Os itens do painel de controle são DLLs ou arquivos executáveis (. exe) que permitem aos usuários configurar o ambiente do Windows. Normalmente, eles são acessados clicando em um ícone no painel de controle.
-title: Implementando itens do painel de controle
+description: Painel de Controle itens são DLLs ou arquivos executáveis (.exe) que permitem aos usuários configurar o ambiente de Windows. Normalmente, eles são acessados clicando em um ícone no Painel de Controle.
+title: Implementando Painel de Controle itens
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: 2e61cbc0-fbb5-4680-8123-f8ffdcf98210
@@ -9,31 +9,31 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 310d01f07d40cef69c6be30231bbf4780a1d8838
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fec58663459b1e71e09b98ff8b7d3899a1b41388eefb2267558d4ed83cbe9ade
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118460615"
 ---
-# <a name="implementing-control-panel-items"></a>Implementando itens do painel de controle
+# <a name="implementing-control-panel-items"></a>Implementando Painel de Controle itens
 
-Os itens do painel de controle são DLLs ou arquivos executáveis (. exe) que permitem aos usuários configurar o ambiente do Windows. Normalmente, eles são acessados clicando em um ícone no painel de controle.
+Painel de Controle itens são DLLs ou arquivos executáveis (.exe) que permitem aos usuários configurar o ambiente de Windows. Normalmente, eles são acessados clicando em um ícone no Painel de Controle.
 
-Esta seção descreve os itens do painel de controle e explica como criá-los e registrá-los para que eles apareçam adequadamente no painel de controle. Para o Windows Vista, são incluídas informações que mostram como adicionar links de tarefas que aparecem no item do painel de controle e nos resultados da pesquisa do painel de controle.
+Esta seção descreve Painel de Controle itens e explica como criar e registrá-los para que eles apareçam adequadamente no Painel de Controle. Por Windows Vista, são incluídas informações que informam como adicionar links de tarefa que aparecem no item Painel de Controle e nos resultados Painel de Controle pesquisa.
 
 -   [Diretrizes da Experiência do Usuário](user-experience-guidelines.md)
--   [Registrando itens do painel de controle](registering-control-panel-items.md)
--   [Como registrar itens do painel de controle executável](how-to-register-an-executable-control-panel-item-registration-.md)
--   [Como registrar itens do painel de controle da DLL](how-to-register-dll-control-panel-item-registration-.md)
+-   [Registrando Painel de Controle itens](registering-control-panel-items.md)
+-   [Como registrar itens executáveis Painel de Controle executáveis](how-to-register-an-executable-control-panel-item-registration-.md)
+-   [Como registrar itens de Painel de Controle DLL](how-to-register-dll-control-panel-item-registration-.md)
 -   [Usando CPLApplet](using-cplapplet.md)
--   [Processamento de mensagens do painel de controle](message-processing.md)
--   [Executando itens do painel de controle](executing-control-panel-items.md)
--   [Estendendo itens do painel de controle do sistema](extending-system-control-panel-items.md)
--   [Atribuindo categorias do painel de controle](assigning-control-panel-categories.md)
--   [Criando links de tarefas pesquisáveis para um item do painel de controle](creating-searchable-task-links.md)
--   [Acessando o painel de controle no modo de segurança](accessing-the-cp-in-safe-mode-under-vista.md)
--   [Nomes canônicos de itens do painel de controle](controlpanel-canonical-names.md)
+-   [Painel de Controle processamento de mensagens](message-processing.md)
+-   [Executando Painel de Controle itens](executing-control-panel-items.md)
+-   [Estendendo itens Painel de Controle sistema](extending-system-control-panel-items.md)
+-   [Atribuindo Painel de Controle categorias](assigning-control-panel-categories.md)
+-   [Criando links de tarefa pesquisáveis para um Painel de Controle item](creating-searchable-task-links.md)
+-   [Acessando o Painel de Controle no modo Cofre](accessing-the-cp-in-safe-mode-under-vista.md)
+-   [Nomes canônicos de Painel de Controle itens](controlpanel-canonical-names.md)
 
  
 

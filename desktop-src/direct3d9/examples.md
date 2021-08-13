@@ -1,26 +1,26 @@
 ---
-description: Seguem dois exemplos de definições de modelo binário e um exemplo de objeto de dados binários.
+description: Dois exemplos de definições de modelo binário e um exemplo de um objeto de dados binários a seguir.
 ms.assetid: vs|directx_sdk|~\examples.htm
-title: Exemplos (gráficos do Direct3D 9)
+title: Exemplos (elementos gráficos do Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d26fbb8cbe45881243e17f80fd302c0fb4640685
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 47f8b8e2a9c500042e9b8d7c7fd911ab74b2f428d1ef814aca9e5fda1be7dcab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118523093"
 ---
-# <a name="examples-direct3d-9-graphics"></a>Exemplos (gráficos do Direct3D 9)
+# <a name="examples-direct3d-9-graphics"></a>Exemplos (elementos gráficos do Direct3D 9)
 
-Seguem dois exemplos de definições de modelo binário e um exemplo de objeto de dados binários.
+Dois exemplos de definições de modelo binário e um exemplo de um objeto de dados binários a seguir.
 
 > [!Note]  
-> Os dados são armazenados no formato little-endian, que não é mostrado nesses exemplos.
+> Os dados são armazenados em formato little-endian, que não é mostrado nesses exemplos.
 
  
 
-O modelo fechado RGB é identificado pelo UUID {55b6d780-37ec-11D0-AB39-0020af71e433} e tem três membros-r, g e b-cada do tipo float.
+O modelo fechado RGB é identificado pelo UUID {55b6d780-37ec-11d0-ab39-0020af71e433} e tem três membros - r, g e b - cada um do tipo float.
 
 
 ```
@@ -34,7 +34,7 @@ TOKEN_CBRACE
 
 
 
-O modelo fechado Matrix4x4 é identificado pelo UUID {55b6d781-37ec-11D0-AB39-0020af71e433} e tem um membro-uma matriz bidimensional chamada Matrix-do tipo float.
+O modelo fechado Matrix4x4 é identificado pelo UUID {55b6d781-37ec-11d0-ab39-0020af71e433} e tem um membro – uma matriz bidimensional chamada matriz – do tipo float.
 
 
 ```
@@ -48,7 +48,7 @@ TOKEN_CBRACE
 
 
 
-O objeto de dados binários a seguir mostra uma instância do modelo RGB definido anteriormente. O objeto de exemplo é denominado Blue e seus três membros-r, g e b-têm os valores 0,0, 0,0 e 1,0, respectivamente.
+O objeto de dados binários a seguir mostra uma instância do modelo RGB definida anteriormente. O objeto de exemplo é chamado de azul e seus três membros , r, g e b , têm os valores 0,0, 0,0 e 1,0, respectivamente.
 
 
 ```

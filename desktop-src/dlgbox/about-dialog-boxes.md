@@ -16,12 +16,12 @@ keywords:
 - caixas de mensagem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45dd78713c3b87e54e8a992ea9415577c522fc9e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7855ba67a04558e0df8ffad0f63d2bd78856f84829bf029fbf811a4b89eb4b09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118786804"
 ---
 # <a name="about-dialog-boxes"></a>Sobre caixas de diálogo
 
@@ -125,7 +125,7 @@ Um desenvolvedor cria recursos de modelo usando um compilador de recurso ou um e
 > [!Note]  
 > Uma explicação de como criar recursos de modelo e adicioná-los ao arquivo executável do aplicativo está além do escopo desta visão geral. Para obter mais informações sobre como criar recursos de modelo e adicioná-los a um arquivo executável, consulte a documentação fornecida com as ferramentas de desenvolvimento de aplicativo.
 
- 
+ 
 
 Para criar uma caixa de diálogo sem usar recursos de modelo, você deve criar um modelo na memória e passá-lo para a função [**CreateDialogIndirectParam**](/windows/desktop/api/Winuser/nf-winuser-createdialogindirectparama) ou [**DialogBoxIndirectParam**](/windows/desktop/api/Winuser/nf-winuser-dialogboxindirectparama) , ou para a macro [**CreateDialogIndirect**](/windows/desktop/api/Winuser/nf-winuser-createdialogindirecta) ou [**DialogBoxIndirect**](/windows/desktop/api/Winuser/nf-winuser-dialogboxindirecta) .
 
@@ -166,76 +166,76 @@ O modelo deve especificar uma largura e uma altura da caixa de diálogo que não
 
 O modelo especifica a posição, a largura, a altura, o estilo, o identificador e a classe de janela para cada controle na caixa de diálogo. O sistema cria cada controle passando esses dados para a função [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) . Os controles são criados na ordem em que são especificados no modelo. O modelo deve especificar o número, o tipo e a ordem de controles apropriados para garantir que o usuário possa inserir a entrada necessária para concluir a tarefa associada à caixa de diálogo.
 
-Para cada controle, o modelo especifica valores de estilo que definem a aparência e a operação do controle. Cada controle é uma janela filho e, portanto, deve ter o estilo **\_ filho WS** . Para garantir que o controle esteja visível quando a caixa de diálogo for exibida, cada controle também deverá ter o estilo de **WS \_ visível** . Outros estilos de janela comumente usados **são WS \_ Border** para controles que têm bordas opcionais, **WS \_ Disabled** para controles que devem ser desabilitados quando a caixa de diálogo é inicialmente criada e **WS \_ TabStop** e **WS \_ Group** para controles que podem ser acessados usando o teclado. Os estilos de **\_ grupo** **WS \_ TabStop** e WS são usados em conjunto com a interface de teclado da caixa de diálogo descrita mais adiante neste tópico.
+Para cada controle, o modelo especifica valores de estilo que definem a aparência e a operação do controle. Cada controle é uma janela filho e, portanto, deve ter o **estilo FILHO \_ do WS.** Para garantir que o controle seja visível quando a caixa de diálogo é exibida, cada controle também deve ter o **estilo \_ VISÍVEL do WS.** Outros estilos de janela comumente usados são BORDER do **WS \_** para controles que têm bordas opcionais, **WS \_ DISABLED** para controles que devem ser desabilitados quando a caixa de diálogo é criada inicialmente e **WS \_ TABSTOP** e **WS \_ GROUP** para controles que podem ser acessados usando o teclado. Os **estilos \_ TABSTOP** e WS GROUP do **WS \_** são usados em conjunto com a interface de teclado da caixa de diálogo descrita posteriormente neste tópico.
 
-O modelo também pode especificar estilos de controle específicos para a classe de janela do controle. Por exemplo, um modelo que especifica um controle de botão deve dar um estilo de controle de botão, como **a \_ CheckBox** de **BS \_** ou BS. O sistema passa os estilos de controle para o procedimento da janela de controle por meio da mensagem do [**WM \_ Create**](/windows/desktop/winmsg/wm-create) , permitindo que o procedimento adapte a aparência e a operação do controle.
+O modelo também pode especificar estilos de controle específicos para a classe de janela do controle. Por exemplo, um modelo que especifica um controle de botão deve dar um estilo de controle de botão, como **BS \_ PUSHBUTTON** ou **BS \_ CHECKBOX**. O sistema passa os estilos de controle para o procedimento da janela de controle por meio da mensagem [**WM \_ CREATE,**](/windows/desktop/winmsg/wm-create) permitindo que o procedimento adapte a aparência e a operação do controle.
 
-O sistema converte as coordenadas de posição e as medidas de largura e altura das unidades base de diálogo em pixels, antes de passá-las para [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa). Quando o sistema cria um controle, ele especifica a caixa de diálogo como a janela pai. Isso significa que o sistema sempre interpreta as coordenadas de posição do controle como coordenadas do cliente, em relação ao canto superior esquerdo da área do cliente da caixa de diálogo.
+O sistema converte as coordenadas de posição e as medidas de largura e altura de unidades base da caixa de diálogo em pixels, antes de passá-los [**para CreateWindowEx.**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Quando o sistema cria um controle, ele especifica a caixa de diálogo como a janela pai. Isso significa que o sistema sempre interpreta as coordenadas de posição do controle como coordenadas do cliente, em relação ao canto superior esquerdo da área de cliente da caixa de diálogo.
 
-O modelo especifica a classe de janela para cada controle. Uma caixa de diálogo típica contém controles que pertencem às classes de janela de controle predefinidas, como as classes de janela de controle Button e Edit. Nesse caso, o modelo especifica as classes de janela fornecendo os valores de Atom predefinidos correspondentes para as classes. Quando uma caixa de diálogo contém um controle que pertence a uma classe de janela de controle Personalizada, o modelo fornece o nome dessa classe de janela registrada ou o valor de Atom atualmente associado ao nome.
+O modelo especifica a classe de janela para cada controle. Uma caixa de diálogo típica contém controles pertencentes às classes de janela de controle predefinidas, como o botão e editar classes de janela de controle. Nesse caso, o modelo especifica classes de janela fornecendo os valores atom predefinidos correspondentes para as classes. Quando uma caixa de diálogo contém um controle que pertence a uma classe de janela de controle personalizada, o modelo fornece o nome dessa classe de janela registrada ou o valor atom atualmente associado ao nome.
 
-Cada controle em uma caixa de diálogo deve ter um identificador exclusivo para distingui-lo de outros controles. Os controles enviam informações para o procedimento da caixa de diálogo por meio de mensagens de [**\_ comando do WM**](/windows/desktop/menurc/wm-command) , de modo que os identificadores de controle são essenciais para o procedimento determinar qual controle enviou uma mensagem especificada. A única exceção a essa regra são os identificadores de controle para controles estáticos. Os controles estáticos não exigem identificadores exclusivos porque eles não enviam mensagens de **\_ comando do WM** .
+Cada controle em uma caixa de diálogo deve ter um identificador exclusivo para diferenciá-lo de outros controles. Os controles enviam informações para o procedimento da caixa de diálogo por meio de mensagens [**WM \_ COMMAND,**](/windows/desktop/menurc/wm-command) portanto, os identificadores de controle são essenciais para que o procedimento determine qual controle enviou uma mensagem especificada. A única exceção a essa regra são identificadores de controle para controles estáticos. Os controles estáticos não exigem identificadores exclusivos porque não enviam **mensagens WM \_ COMMAND.**
 
-Para permitir que o usuário feche a caixa de diálogo, o modelo deve especificar pelo menos um botão de ação e dar a ele o identificador de controle **IDCANCEL**. Para permitir que o usuário escolha entre concluir ou cancelar a tarefa associada à caixa de diálogo, o modelo deve especificar dois botões de push, rotulados **OK** e **Cancelar**, com identificadores de controle de **IDOK** e **IDCANCEL**, respectivamente.
+Para permitir que o usuário feche a caixa de diálogo, o modelo deve especificar pelo menos um botão de push e dar a ele o identificador de controle **IDCANCEL.** Para permitir que o usuário escolha entre concluir ou cancelar a tarefa associada à caixa de diálogo, o modelo deve especificar dois botões de push, rotulados **ok** e **Cancelar**, com identificadores de controle **de IDOK** e **IDCANCEL,** respectivamente.
 
-Um modelo também especifica texto opcional e dados de criação para um controle. Normalmente, o texto fornece rótulos para controles de botão ou especifica o conteúdo inicial de um controle de texto estático. Os dados de criação são um ou mais bytes de dados que o sistema passa para o procedimento da janela de controle ao criar o controle. A criação de dados é útil para controles que exigem mais informações sobre seu conteúdo inicial ou estilo do que é especificado por outros dados. Por exemplo, um aplicativo pode usar dados de criação para definir a configuração inicial e o intervalo para um controle de barra de rolagem.
+Um modelo também especifica dados opcionais de criação e texto para um controle. O texto normalmente fornece rótulos para controles de botão ou especifica o conteúdo inicial de um controle de texto estático. Os dados de criação são um ou mais bytes de dados que o sistema passa para o procedimento da janela de controle ao criar o controle. Os dados de criação são úteis para controles que exigem mais informações sobre seu conteúdo ou estilo inicial do que o especificado por outros dados. Por exemplo, um aplicativo pode usar dados de criação para definir a configuração inicial e o intervalo para um controle de barra de rolagem.
 
-### <a name="dialog-box-window-menu"></a>Menu da janela da caixa de diálogo
+### <a name="dialog-box-window-menu"></a>Menu da Janela da Caixa de Diálogo
 
-O sistema fornece uma caixa de diálogo a um menu de janela quando o modelo especifica o estilo **WS \_ SYSMENU** . Para evitar a entrada inadequada, o sistema desabilita automaticamente todos os itens no menu, exceto **move** e **Close**. O usuário pode clicar em **mover** para mover a caixa de diálogo. Quando o usuário clica em **fechar**, o sistema envia uma mensagem de [**\_ comando do WM**](/windows/desktop/menurc/wm-command) para o procedimento da caixa de diálogo com o parâmetro *wParam* definido como **IDCANCEL**. Isso é idêntico à mensagem enviada pelo botão **Cancelar** quando o usuário clica nele. A ação recomendada para esta mensagem é fechar a caixa de diálogo e cancelar a tarefa solicitada.
+O sistema fornece uma caixa de diálogo a um menu de janela quando o modelo especifica o **estilo \_ SYSMENU do WS.** Para evitar entradas inadequadas, o sistema desabilita automaticamente todos os itens no menu, exceto **Mover** e **Fechar**. O usuário pode clicar em **Mover** para mover a caixa de diálogo. Quando o usuário clica em **Fechar**, o sistema envia uma mensagem [**WM \_ COMMAND**](/windows/desktop/menurc/wm-command) para o procedimento da caixa de diálogo com o *parâmetro wParam* definido como **IDCANCEL.** Isso é idêntico à mensagem enviada pelo **botão Cancelar** quando o usuário clica nele. A ação recomendada para essa mensagem é fechar a caixa de diálogo e cancelar a tarefa solicitada.
 
 Embora outros menus nas caixas de diálogo não sejam recomendados, um modelo de caixa de diálogo pode especificar um menu fornecendo o identificador ou o nome de um recurso de menu. Nesse caso, o sistema carrega o recurso e cria o menu para a caixa de diálogo. Os aplicativos normalmente usam identificadores de menu ou nomes em modelos ao usar os modelos para criar janelas personalizadas em vez de caixas de diálogo.
 
 ### <a name="dialog-box-fonts"></a>Fontes da caixa de diálogo
 
-O sistema usa a largura de caractere média da fonte da caixa de diálogo para calcular a posição e as dimensões da caixa de diálogo. Por padrão, o sistema desenha todo o texto em uma caixa de diálogo usando a fonte de **\_ fonte do sistema** .
+O sistema usa a largura média do caractere da fonte da caixa de diálogo para calcular a posição e as dimensões da caixa de diálogo. Por padrão, o sistema desenha todo o texto em uma caixa de diálogo usando a **fonte SYSTEM \_ FONT.**
 
-Para especificar uma fonte para uma caixa de diálogo diferente do padrão, você deve criar a caixa de diálogo usando um modelo de caixa de diálogo. Em um recurso de modelo, use a [instrução Font](../menurc/font-statement.md). Em um modelo de caixa de diálogo, defina o estilo **DS \_ SetFont** ou **DS \_ SHELLFONT** e especifique um tamanho de ponto e um nome de tipo. Mesmo que um modelo de caixa de diálogo especifique uma fonte dessa maneira, o sistema sempre usa a fonte do sistema para os menus de título e caixa de diálogo da caixa de diálogo.
+Para especificar uma fonte para uma caixa de diálogo diferente do padrão, você deve criar a caixa de diálogo usando um modelo de caixa de diálogo. Em um recurso de modelo, use a [instrução FONT](../menurc/font-statement.md). Em um modelo de caixa de diálogo, de definido o estilo **SHELLFONT ou DS \_ DS** **\_ SHELLFONT** e especifique um tamanho de ponto e um nome de face de tipo. Mesmo que um modelo de caixa de diálogo especifique uma fonte dessa maneira, o sistema sempre usa a fonte do sistema para o título da caixa de diálogo e os menus da caixa de diálogo.
 
-Quando a caixa de diálogo tem o estilo **DS \_ SetFont** ou **DS \_ SHELLFONT** , o sistema envia uma mensagem do [**WM \_ SetFont**](/windows/desktop/winmsg/wm-setfont) para o procedimento da caixa de diálogo e para cada controle à medida que cria o controle. O procedimento da caixa de diálogo é responsável por salvar o identificador de fonte passado com a mensagem de exibição de fonte do **WM \_** e selecionar o identificador no contexto do dispositivo de vídeo sempre que ele grava texto na janela. Os controles predefinidos fazem isso por padrão.
+Quando a caixa de diálogo tem o estilo **DS \_ SETFONT** ou **DS \_ SHELLFONT,** o sistema envia uma mensagem [**WM \_ SETFONT**](/windows/desktop/winmsg/wm-setfont) para o procedimento da caixa de diálogo e para cada controle conforme ele cria o controle. O procedimento da caixa de diálogo é responsável por salvar o alça de fonte passado com a mensagem **WM \_ SETFONT** e selecionar o alça no contexto do dispositivo de exibição sempre que ele grava texto na janela. Os controles predefinidos fazem isso por padrão.
 
-A fonte do sistema pode variar entre diferentes versões do Windows. Para que seu aplicativo use a fonte do sistema, não importa em qual sistema ele está sendo executado, use **DS \_ SHELLFONT** com a face de tipos MS Shell Dlg e use o [recurso DIALOGEX](../menurc/dialogex-resource.md) em vez do [recurso de caixa de diálogo](../menurc/dialog-resource.md). O sistema mapeia esse tipo de fonte de forma que a caixa de diálogo usará as fontes Tahoma. Observe que o **DS \_ SHELLFONT** não terá efeito se a face de tipos não for MS Shell Dlg.
+A fonte do sistema pode variar entre diferentes versões Windows. Para que seu aplicativo use a fonte do sistema, independentemente do sistema em que ele está sendo executado, use **DS \_ SHELLFONT** com a face de tipo MS Shell Dlg e use o Recurso [DIALOGEX](../menurc/dialogex-resource.md) em vez do Recurso [DIALOG.](../menurc/dialog-resource.md) O sistema mapeia essa face de tipo de forma que sua caixa de diálogo usará a fonte Toma. Observe que **o \_ SHELLFONT do DS** não terá nenhum efeito se a face de tipo não for Dlg do Shell do MS.
 
 ### <a name="templates-in-memory"></a>Modelos na memória
 
-Um modelo de caixa de diálogo na memória consiste em um cabeçalho que descreve a caixa de diálogo, seguida por um ou mais blocos de dados adicionais que descrevem cada um dos controles na caixa de diálogo. O modelo pode usar o formato padrão ou o formato estendido. Em um modelo padrão, o cabeçalho é uma estrutura [**DLGTEMPLATE**](/windows/desktop/api/Winuser/ns-winuser-dlgtemplate) seguida por matrizes de comprimento variável adicional. Os dados de cada controle consistem em uma estrutura [**DLGITEMTEMPLATE**](/windows/desktop/api/Winuser/ns-winuser-dlgitemtemplate) seguida por matrizes de comprimento variável adicional. Em um modelo de caixa de diálogo estendida, o cabeçalho usa o formato [**DLGTEMPLATEEX**](dlgtemplateex.md) e as definições de controle usam o formato [**DLGITEMTEMPLATEEX**](dlgitemtemplateex.md) .
+Um modelo de caixa de diálogo na memória consiste em um header que descreve a caixa de diálogo, seguido por um ou mais blocos de dados adicionais que descrevem cada um dos controles na caixa de diálogo. O modelo pode usar o formato padrão ou o formato estendido. Em um modelo padrão, o header é uma [**estrutura DLGTEMPLATE**](/windows/desktop/api/Winuser/ns-winuser-dlgtemplate) seguida por matrizes de comprimento variável adicionais. Os dados de cada controle consistem em uma [**estrutura DLGITEMTEMPLATE**](/windows/desktop/api/Winuser/ns-winuser-dlgitemtemplate) seguida por matrizes de comprimento variável adicionais. Em um modelo de caixa de diálogo estendido, o header usa o [**formato DLGTEMPLATEEX**](dlgtemplateex.md) e as definições de controle usam o [**formato DLGITEMTEMPLATEEX.**](dlgitemtemplateex.md)
 
-Para distinguir entre um modelo padrão e um modelo estendido, verifique os primeiros 16 bits de um modelo de caixa de diálogo. Em um modelo estendido, a primeira **palavra** é 0xffff; qualquer outro valor indica um modelo padrão.
+Para distinguir entre um modelo padrão e um modelo estendido, verifique os primeiros 16 bits de um modelo de caixa de diálogo. Em um modelo estendido, o primeiro **WORD** é 0xFFFF; qualquer outro valor indica um modelo padrão.
 
-Se você criar um modelo de caixa de diálogo na memória, deverá garantir que cada uma das definições de controle [**DLGITEMTEMPLATE**](/windows/desktop/api/Winuser/ns-winuser-dlgitemtemplate) ou [**DLGITEMTEMPLATEEX**](dlgitemtemplateex.md) esteja alinhada nos limites **DWORD** . Além disso, todos os dados de criação que seguem uma definição de controle devem ser alinhados em um limite **DWORD** . Todas as outras matrizes de comprimento variável em um modelo de caixa de diálogo devem ser alinhadas em limites de **palavras** .
+Se você criar um modelo de caixa de diálogo na memória, deverá garantir que cada uma das definições de controle [**DLGITEMTEMPLATE**](/windows/desktop/api/Winuser/ns-winuser-dlgitemtemplate) ou [**DLGITEMTEMPLATEEX**](dlgitemtemplateex.md) esteja alinhada em limites **DWORD.** Além disso, todos os dados de criação que seguem uma definição de controle devem ser alinhados em um **limite DWORD.** Todas as outras matrizes de comprimento variável em um modelo de caixa de diálogo devem ser alinhadas nos limites **do WORD.**
 
-### <a name="template-header"></a>Cabeçalho do modelo
+### <a name="template-header"></a>Header de modelo
 
-Nos modelos padrão e estendido para caixas de diálogo, o cabeçalho inclui as seguintes informações gerais:
+Nos modelos padrão e estendido para caixas de diálogo, o header inclui as seguintes informações gerais:
 
 -   O local e as dimensões da caixa de diálogo
--   Os estilos de janela e caixa de diálogo da caixa de diálogo
+-   Os estilos da janela e da caixa de diálogo para a caixa de diálogo
 -   O número de controles na caixa de diálogo. Esse valor determina o número de definições de controle [**DLGITEMTEMPLATE**](/windows/desktop/api/Winuser/ns-winuser-dlgitemtemplate) ou [**DLGITEMTEMPLATEEX**](dlgitemtemplateex.md) no modelo.
--   Um recurso de menu opcional para a caixa de diálogo. O modelo pode indicar que a caixa de diálogo não tem um menu ou pode especificar um valor ordinal ou uma cadeia de caracteres Unicode terminada com NULL que identifique um recurso de menu em um arquivo executável.
--   A classe de janela da caixa de diálogo. Pode ser a classe de caixa de diálogo predefinida ou um valor ordinal ou uma cadeia de caracteres Unicode terminada em nulo que identifica uma classe de janela registrada.
--   Uma cadeia de caracteres Unicode terminada em nulo que especifica o título da janela da caixa de diálogo. Se a cadeia de caracteres estiver vazia, a barra de título da caixa de diálogo ficará em branco. Se a caixa de diálogo não tiver o estilo de **\_ legenda WS** , o sistema definirá o título como a cadeia de caracteres especificada, mas não o exibirá.
--   Se a caixa de diálogo tiver o estilo de **\_ fonte de domínio** , o cabeçalho especificará o tamanho do ponto e o nome do tipo da fonte a ser usada para o texto na área do cliente e os controles da caixa de diálogo.
+-   Um recurso de menu opcional para a caixa de diálogo. O modelo pode indicar que a caixa de diálogo não tem um menu ou pode especificar um valor ordinal ou uma cadeia de caracteres Unicode terminada em nulo que identifica um recurso de menu em um arquivo executável.
+-   A classe de janela da caixa de diálogo. Pode ser a classe da caixa de diálogo predefinida ou um valor ordinal ou uma cadeia de caracteres Unicode terminada em nulo que identifica uma classe de janela registrada.
+-   Uma cadeia de caracteres Unicode terminada em nulo que especifica o título da janela da caixa de diálogo. Se a cadeia de caracteres estiver vazia, a barra de título da caixa de diálogo será em branco. Se a caixa de diálogo não tiver o estilo **\_ CAPTION do WS,** o sistema define o título para a cadeia de caracteres especificada, mas não o exibe.
+-   Se a caixa de diálogo tiver o estilo **DS \_ SETFONT,** o header especificará o tamanho do ponto e o nome da face de tipo da fonte a ser usada para o texto na área do cliente e os controles da caixa de diálogo.
 
-Em um modelo estendido, o cabeçalho [**DLGTEMPLATEEX**](dlgtemplateex.md) também especifica as seguintes informações adicionais:
+Em um modelo estendido, o [**header DLGTEMPLATEEX**](dlgtemplateex.md) também especifica as seguintes informações adicionais:
 
--   O identificador de contexto da ajuda da janela da caixa de diálogo quando o sistema envia uma mensagem de [**\_ ajuda do WM**](../shell/wm-help.md) .
--   Se a caixa de diálogo tiver o estilo **DS \_ SetFont** ou **DS \_ SHELLFONT** , o cabeçalho especificará a espessura da fonte e indicará se a fonte está em itálico.
+-   O identificador de contexto de ajuda da janela da caixa de diálogo quando o sistema envia uma mensagem [**DE \_ AJUDA do WM.**](../shell/wm-help.md)
+-   Se a caixa de diálogo tiver o estilo **DS \_ SETFONT** ou **DS \_ SHELLFONT,** o header especificará o peso da fonte e indicará se a fonte é itálico.
 
 ### <a name="control-definitions"></a>Definições de controle
 
-Seguir o cabeçalho do modelo é uma ou mais definições de controle que descrevem os controles da caixa de diálogo. Nos modelos padrão e estendido, o cabeçalho da caixa de diálogo tem um membro que indica o número de definições de controle no modelo. Em um modelo padrão, cada definição de controle consiste em uma estrutura [**DLGITEMTEMPLATE**](/windows/desktop/api/Winuser/ns-winuser-dlgitemtemplate) seguida por matrizes de comprimento variável adicional. Em um modelo estendido, as definições de controle usam o formato [**DLGITEMTEMPLATEEX**](dlgitemtemplateex.md) .
+Após o header do modelo, há uma ou mais definições de controle que descrevem os controles da caixa de diálogo. Nos modelos padrão e estendido, o header da caixa de diálogo tem um membro que indica o número de definições de controle no modelo. Em um modelo padrão, cada definição de controle consiste em uma [**estrutura DLGITEMTEMPLATE**](/windows/desktop/api/Winuser/ns-winuser-dlgitemtemplate) seguida por matrizes de comprimento variável adicionais. Em um modelo estendido, as definições de controle usam o [**formato DLGITEMTEMPLATEEX.**](dlgitemtemplateex.md)
 
 Nos modelos padrão e estendido, a definição de controle inclui as seguintes informações:
 
 -   O local e as dimensões do controle.
--   Os estilos de janela e de controle do controle.
+-   Os estilos de janela e controle para o controle.
 -   O identificador de controle.
--   A classe de janela do controle. Esse pode ser o valor ordinal de uma classe de sistema predefinida ou uma cadeia de caracteres Unicode terminada em nulo que especifica o nome de uma classe de janela registrada.
+-   A classe de janela do controle . Pode ser o valor ordinal de uma classe de sistema predefinida ou uma cadeia de caracteres Unicode terminada em nulo que especifica o nome de uma classe de janela registrada.
 -   Uma cadeia de caracteres Unicode terminada em nulo que especifica o texto inicial do controle ou um valor ordinal que identifica um recurso, como um ícone, em um arquivo executável.
--   Um bloco de comprimento variável opcional de dados de criação. Quando o sistema cria o controle, ele passa um ponteiro para esses dados no parâmetro *lParam* da mensagem de [**\_ criação do WM**](/windows/desktop/winmsg/wm-create) que ele envia para o controle.
+-   Um bloco opcional de comprimento variável de dados de criação. Quando o sistema cria o controle , ele passa um ponteiro para esses dados no parâmetro *lParam* da mensagem [**WM \_ CREATE**](/windows/desktop/winmsg/wm-create) que ele envia para o controle.
 
-Em um modelo estendido, a definição de controle também especifica um identificador de contexto de ajuda para o controle quando o sistema envia uma mensagem de [**\_ ajuda do WM**](../shell/wm-help.md) .
+Em um modelo estendido, a definição de controle também especifica um identificador de contexto de ajuda para o controle quando o sistema envia uma mensagem [**DE \_ AJUDA do WM.**](../shell/wm-help.md)
 
- 
+ 
 
- 
+ 

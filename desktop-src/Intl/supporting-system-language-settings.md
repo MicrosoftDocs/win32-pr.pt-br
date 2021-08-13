@@ -1,19 +1,19 @@
 ---
-description: A maneira preferida para o aplicativo MUI definir as preferências de idioma do aplicativo é dar suporte ao mesmo conjunto de idiomas da interface do usuário que o sistema operacional de destino.
+description: A maneira preferencial para seu aplicativo MUI definir preferências de idioma do aplicativo é dar suporte ao mesmo conjunto de linguagens de interface do usuário que o sistema operacional de destino.
 ms.assetid: 6f5f4782-6e9b-4b30-8728-2bff66c3e1b3
-title: Configurações de idioma do sistema de suporte
+title: Suporte à linguagem de Configurações
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e428a2db855ebfa4e15c8249ea85be7d24f034d6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 897da3026ee10820e2c0bc44834d276da3573e5aa0b99060b3580130c01ef9ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105779917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118389990"
 ---
-# <a name="supporting-system-language-settings"></a>Configurações de idioma do sistema de suporte
+# <a name="supporting-system-language-settings"></a>Suporte à linguagem de Configurações
 
-A maneira preferida para o aplicativo MUI definir as preferências de idioma do aplicativo é dar suporte ao mesmo conjunto de idiomas da interface do usuário que o sistema operacional de destino. O aplicativo simplesmente depende do sistema operacional para selecionar o idioma correto da interface do usuário para exibição. Um exemplo associado é fornecido em [MUI: exemplo de aplicativo de configurações do sistema](mui-system-settings-application-sample.md).
+A maneira preferencial para seu aplicativo MUI definir preferências de idioma do aplicativo é dar suporte ao mesmo conjunto de linguagens de interface do usuário que o sistema operacional de destino. O aplicativo simplesmente depende do sistema operacional para selecionar a linguagem de interface do usuário correta para exibição. Um exemplo associado é fornecido na [MUI: Exemplo de](mui-system-settings-application-sample.md)aplicativo Configurações sistema.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -22,7 +22,7 @@ A maneira preferida para o aplicativo MUI definir as preferências de idioma do 
 [Definindo preferências de idioma do aplicativo](setting-application-language-preferences.md)
 </dt> <dt>
 
-[MUI: exemplo de aplicativo de configurações do sistema](mui-system-settings-application-sample.md)
+[MUI: Exemplo de aplicativo Configurações sistema](mui-system-settings-application-sample.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Adiciona uma parte dos dados específicos do aplicativo.
 ms.assetid: 86ba37ac-8e65-4397-8ed1-37463152bebd
-title: 'Método IContextNode:: AddPropertyData (IACom. h)'
+title: Método IContextNode::AddPropertyData (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: ed318520b8ac83acbc8ed615002fababe2a4b12d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c9988217aed21ff1142f0e2083bee568ed12c31d90530ac1f3e9f5719c46446
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118719690"
 ---
-# <a name="icontextnodeaddpropertydata-method"></a>Método IContextNode:: AddPropertyData
+# <a name="icontextnodeaddpropertydata-method"></a>Método IContextNode::AddPropertyData
 
 Adiciona uma parte dos dados específicos do aplicativo.
 
@@ -41,38 +41,38 @@ HRESULT AddPropertyData(
 
 <dl> <dt>
 
-*pPropertyDataId* \[ no\]
+*pPropertyDataId* \[ Em\]
 </dt> <dd>
 
-Um GUID (identificador global exclusivo) que é usado para identificar o tipo de dados.
+Um GUID (identificador global exclusivo) usado para identificar o tipo de dados.
 
 </dd> <dt>
 
-*ulPropertyDataSize* \[ no\]
+*ulPropertyDataSize* \[ Em\]
 </dt> <dd>
 
 O tamanho dos dados em bytes.
 
 </dd> <dt>
 
-*pbPropertiesData* \[ no\]
+*pbPropertiesData* \[ Em\]
 </dt> <dd>
 
-\[em, tamanho \_ é (ulPropertyDataSize)\]
+\[in, size \_ is(ulPropertyDataSize)\]
 
-Uma matriz de inteiros sem sinal de 8 bits que contém as informações de propriedade a serem adicionadas.
+Uma matriz de inteiros sem sinal de 8 bits que contém as informações de propriedade a adicionar.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Para obter uma descrição dos valores de retorno, consulte [classes e interfaces – análise de tinta](classes-and-interfaces---ink-analysis.md).
+Para ver uma descrição dos valores de retorno, consulte [Classes e interfaces – Análise de Tinta.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Comentários
 
-Use **IContextNode:: AddPropertyData** para associar dados a um nó de contexto. Para recuperar os dados mais tarde, use [**IContextNode:: GetPropertyData**](icontextnode-getpropertydata.md).
+Use **IContextNode::AddPropertyData para** associar dados a um nó de contexto. Para recuperar os dados posteriormente, use [**IContextNode::GetPropertyData**](icontextnode-getpropertydata.md).
 
-O analisador de tinta pode excluir o nó como parte da análise de tinta, a menos que o nó de contexto seja confirmado (consulte [**IContextNode:: Confirm**](icontextnode-confirm.md)). Para obter mais informações sobre como sincronizar os dados do aplicativo com o [**IInkAnalyzer**](iinkanalyzer.md), consulte [proxy de dados com análise de tinta](data-proxy-with-ink-analysis.md).
+O analisador de tinta pode excluir o nó como parte da análise de tinta, a menos que o nó de contexto seja confirmado (consulte [**IContextNode::Confirm**](icontextnode-confirm.md)). Para obter mais informações sobre como sincronizar os dados do aplicativo com [**o IInkAnalyzer,**](iinkanalyzer.md)consulte [Proxy de dados com análise de tinta.](data-proxy-with-ink-analysis.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,9 +80,9 @@ O analisador de tinta pode excluir o nó como parte da análise de tinta, a meno
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
+| parâmetro<br/>                   | <dl> <dt>IACom.h (também requer IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

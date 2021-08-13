@@ -1,41 +1,41 @@
 ---
-description: Usado para identificar uma propriedade de armazenamento de chave.
+description: Usado para identificar uma propriedade de armazenamento de chaves.
 ms.assetid: 407f0e42-07c8-4ec6-81c6-f8bde005adb0
-title: Identificadores de propriedade de armazenamento de chave (NCrypt. h)
+title: Identificadores de Armazenamento chave (Ncrypt.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 813a15ba106989cb558eba181bc893d75c6d1bf2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 20b8fca27591837a555e4f75040ba16056c42e16ce488c0bb99f2d8f7de70bd1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105783246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118907607"
 ---
-# <a name="key-storage-property-identifiers"></a>Identificadores de propriedade de armazenamento de chave
+# <a name="key-storage-property-identifiers"></a>Identificadores de Armazenamento chave
 
-Os valores a seguir são usados para identificar uma propriedade de armazenamento de chave.
+Os valores a seguir são usados para identificar uma propriedade de armazenamento de chaves.
 
 <dl> <dt>
 
-<span id="NCRYPT_ALGORITHM_GROUP_PROPERTY"></span><span id="ncrypt_algorithm_group_property"></span>**\_Propriedade do grupo de algoritmos NCRYPT \_ \_**
+<span id="NCRYPT_ALGORITHM_GROUP_PROPERTY"></span><span id="ncrypt_algorithm_group_property"></span>**PROPRIEDADE DE GRUPO \_ DE ALGORITMOS NCRYPT \_ \_**
 </dt> <dd> <dl> <dt>
 
-L "grupo de algoritmos"
+L"Algorithm Group"
 </dt> <dt>
 
 
 
-Uma cadeia de caracteres Unicode terminada em nulo que contém o nome do grupo de algoritmos do objeto. Essa propriedade só se aplica a chaves. Os identificadores a seguir são retornados pelo provedor de armazenamento de chaves da Microsoft.
+Uma cadeia de caracteres Unicode terminada em nulo que contém o nome do grupo de algoritmos do objeto. Essa propriedade se aplica somente a chaves. Os identificadores a seguir são retornados pelo provedor de armazenamento de chaves da Microsoft.
 
 
 
 | Identificador                                     | Valor              | Descrição                                                   |
 |------------------------------------------------|--------------------|---------------------------------------------------------------|
-| **\_grupo de \_ algoritmos do RSA NCRYPT \_**<br/>   | RSA<br/>   | O grupo de algoritmos RSA.<br/>                           |
-| **\_grupo de \_ algoritmos DH NCRYPT \_**<br/>    | FEITA<br/>    | O grupo de algoritmos Diffie-Hellman.<br/>                |
-| **\_grupo de \_ algoritmos DSA NCRYPT \_**<br/>   | DSA<br/>   | O grupo de algoritmos DSA.<br/>                           |
-| **\_grupo de \_ algoritmos de ECDSA NCRYPT \_**<br/> | ECDSA<br/> | O grupo de algoritmos DSA de curva elíptica.<br/>            |
-| **\_grupo de \_ algoritmos de ECDH NCRYPT \_**<br/>  | ECDH<br/>  | O grupo de algoritmos Diffie-Hellman de curva elíptica.<br/> |
+| **NCRYPT \_ RSA \_ ALGORITHM \_ GROUP**<br/>   | "RSA"<br/>   | O grupo de algoritmos RSA.<br/>                           |
+| **NCRYPT \_ DH \_ ALGORITHM \_ GROUP**<br/>    | "DH"<br/>    | O grupo Diffie-Hellman algoritmo.<br/>                |
+| **GRUPO DE \_ ALGORITMOS NCRYPT DSA \_ \_**<br/>   | "DSA"<br/>   | O grupo de algoritmos DSA.<br/>                           |
+| **NCRYPT \_ ECDSA \_ ALGORITHM \_ GROUP**<br/> | "ECDSA"<br/> | O grupo de algoritmos DSA de curva elíptica.<br/>            |
+| **NCRYPT \_ ECDH \_ ALGORITHM \_ GROUP**<br/>  | "ECDH"<br/>  | A curva elíptica Diffie-Hellman grupo de algoritmos.<br/> |
 
 
 
@@ -44,93 +44,93 @@ Uma cadeia de caracteres Unicode terminada em nulo que contém o nome do grupo d
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_ALGORITHM_PROPERTY"></span><span id="ncrypt_algorithm_property"></span>**\_propriedade de algoritmo NCRYPT \_**
+<span id="NCRYPT_ALGORITHM_PROPERTY"></span><span id="ncrypt_algorithm_property"></span>**PROPRIEDADE DE ALGORITMO NCRYPT \_ \_**
 </dt> <dd> <dl> <dt>
 
-L "nome do algoritmo"
+L"Nome do Algoritmo"
 </dt> <dt>
 
 
 
-Uma cadeia de caracteres Unicode terminada em nulo que contém o nome do algoritmo do objeto. Pode ser um dos [**identificadores de algoritmo CNG**](cng-algorithm-identifiers.md) predefinidos ou outro identificador de algoritmo registrado. Essa propriedade só se aplica a chaves.
+Uma cadeia de caracteres Unicode terminada em nulo que contém o nome do algoritmo do objeto. Pode ser um dos Identificadores de Algoritmo [**CNG**](cng-algorithm-identifiers.md) predefinidos ou outro identificador de algoritmo registrado. Essa propriedade se aplica somente a chaves.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_ASSOCIATED_ECDH_KEY"></span><span id="ncrypt_associated_ecdh_key"></span>**\_ \_ chave ECDH associada de NCRYPT \_**
+<span id="NCRYPT_ASSOCIATED_ECDH_KEY"></span><span id="ncrypt_associated_ecdh_key"></span>**NCRYPT \_ ASSOCIATED \_ ECDH \_ KEY**
 </dt> <dd> <dl> <dt>
 
-L "SmartCardAssociatedECDHKey"
+L"SmartCardAssociatedECDHKey"
 </dt> <dt>
 
 
 
-Um valor de **LPWSTR** que indica o nome do contêiner da chave de Diffie-Hellman de curva elíptica (ECDH) a ser usada durante o logon de um determinado identificador para uma chave de ECDSA (algoritmo de assinatura digital de curva elíptica). Se não houver nenhuma chave ECDH no cartão, o KSP ( [*provedor de armazenamento de chaves*](/windows/desktop/SecGloss/k-gly) ) retornará o **nte \_ não \_ encontrado**. Essa propriedade se aplica a chaves ECDSA para logon com cartões inteligentes. A propriedade é suportada pelo provedor de armazenamento de chaves de cartão inteligente da Microsoft e não pelo provedor de armazenamento de chaves de software da Microsoft.
+Um **valor LPWSTR** que indica o nome do contêiner da chave ECDH (Curva Elíptica Diffie-Hellman) a ser usada durante o logon para um determinado handle para uma chave ECDSA (Algoritmo de Assinatura Digital de Curva Elíptica). Se não houver chaves ECDH no cartão, o KSP (provedor de [*armazenamento*](/windows/desktop/SecGloss/k-gly) de chaves) retornará **NTE \_ NOT \_ FOUND.** Essa propriedade se aplica às chaves ECDSA para logon com cartões inteligentes. A propriedade é suportada pelo provedor de armazenamento de chaves do Cartão Inteligente da Microsoft e não pelo provedor de armazenamento de chaves de Software da Microsoft.
 
 **Windows Server 2008 e Windows Vista:** Não há suporte para esse valor.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_BLOCK_LENGTH_PROPERTY"></span><span id="ncrypt_block_length_property"></span>**\_propriedade de \_ comprimento de bloco NCRYPT \_**
+<span id="NCRYPT_BLOCK_LENGTH_PROPERTY"></span><span id="ncrypt_block_length_property"></span>**PROPRIEDADE COMPRIMENTO \_ DO \_ BLOCO NCRYPT \_**
 </dt> <dd> <dl> <dt>
 
-L "comprimento do bloco"
+L"Comprimento do Bloco"
 </dt> <dt>
 
 
 
-Um **DWORD** que contém o comprimento, em bytes, do bloco de criptografia. Essa propriedade só se aplica a chaves que dão suporte à criptografia.
+Uma **DWORD** que contém o comprimento, em bytes, do bloco de criptografia. Essa propriedade se aplica somente a chaves que suportam criptografia.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_CERTIFICATE_PROPERTY"></span><span id="ncrypt_certificate_property"></span>**\_propriedade de certificado NCRYPT \_**
+<span id="NCRYPT_CERTIFICATE_PROPERTY"></span><span id="ncrypt_certificate_property"></span>**PROPRIEDADE NCRYPT \_ CERTIFICATE \_**
 </dt> <dd> <dl> <dt>
 
-L "SmartCardKeyCertificate"
+L"SmartCardKeyCertificate"
 </dt> <dt>
 
 
 
-Um [*blob*](/windows/desktop/SecGloss/b-gly) que contém um certificado X. 509 que está associado à chave.
+Um [*BLOB*](/windows/desktop/SecGloss/b-gly) que contém um certificado X.509 associado à chave.
 
-**Windows server 2008 R2, Windows 7, Windows server 2008 e Windows Vista:** Um [*blob*](/windows/desktop/SecGloss/b-gly) que contém o [*certificado*](/windows/desktop/SecGloss/c-gly)de chave do [*cartão inteligente*](/windows/desktop/SecGloss/s-gly) . Não há suporte para essa propriedade no provedor de armazenamento de chaves de software da Microsoft.
+**Windows Server 2008 R2, Windows 7, Windows Server 2008 e Windows Vista:** Um [*BLOB que*](/windows/desktop/SecGloss/b-gly) contém o [*certificado de chave de*](/windows/desktop/SecGloss/s-gly) cartão [*inteligente*](/windows/desktop/SecGloss/c-gly). Essa propriedade não é suportada pelo provedor microsoft software key Armazenamento.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_DH_PARAMETERS_PROPERTY"></span><span id="ncrypt_dh_parameters_property"></span>**Propriedade NCRYPT de \_ \_ parâmetros DH \_**
+<span id="NCRYPT_DH_PARAMETERS_PROPERTY"></span><span id="ncrypt_dh_parameters_property"></span>**PROPRIEDADE \_ NCRYPT DH \_ PARAMETERS \_**
 </dt> <dd> <dl> <dt>
 
-L "DHParameters"
+L"DHParameters"
 </dt> <dt>
 
 
 
-Especifica os parâmetros a serem usados com uma chave de Diffie-Hellman. Esse tipo de dados é um ponteiro para uma estrutura de [**\_ cabeçalho de \_ parâmetro \_ BCRYPT DH**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_dh_parameter_header) . Essa propriedade só pode ser definida e deve ser definida para a chave antes de a chave ser concluída.
+Especifica parâmetros a ser usado com uma Diffie-Hellman chave. Esse tipo de dados é um ponteiro para uma estrutura [**\_ BCRYPT DH \_ PARAMETER \_ HEADER.**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_dh_parameter_header) Essa propriedade só pode ser definida e deve ser definida para a chave antes que a chave seja concluída.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_EXPORT_POLICY_PROPERTY"></span><span id="ncrypt_export_policy_property"></span>**\_propriedade de \_ política de exportação NCRYPT \_**
+<span id="NCRYPT_EXPORT_POLICY_PROPERTY"></span><span id="ncrypt_export_policy_property"></span>**PROPRIEDADE NCRYPT \_ EXPORT \_ POLICY \_**
 </dt> <dd> <dl> <dt>
 
-L "exportar política"
+L"Exportar Política"
 </dt> <dt>
 
 
 
-Um **DWORD** que contém um conjunto de sinalizadores que especificam a política de exportação para uma chave persistente. Essa propriedade só se aplica a chaves. Isso pode conter zero ou uma combinação de um ou mais dos valores a seguir.
+Uma **DWORD** que contém um conjunto de sinalizadores que especificam a política de exportação para uma chave persistente. Essa propriedade se aplica somente a chaves. Isso pode conter zero ou uma combinação de um ou mais dos valores a seguir.
 
 
 
 | Identificador                                    | Valor      | Descrição                                                                                                                                                                                                                                                                                                      |
 |-----------------------------------------------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **NCRYPT \_ permitir \_ sinalizador de exportação \_**               | 0x00000001 | A chave privada pode ser exportada.                                                                                                                                                                                                                                                                                 |
-| **NCRYPT \_ permitir \_ \_ sinalizador de exportação de texto não criptografado \_**    | 0x00000002 | A chave privada pode ser exportada em formato de texto sem formatação.                                                                                                                                                                                                                                                               |
-| **NCRYPT \_ permitir \_ sinalizador de arquivamento \_**            | 0x00000004 | A chave privada pode ser exportada uma vez para fins de arquivamento. Esse sinalizador se aplica somente ao identificador de chave original no qual ele está definido. Essa política só pode ser aplicada ao identificador de chave original. Depois que o identificador de chave for fechado, a chave não poderá mais ser exportada para fins de arquivamento.                   |
-| **NCRYPT \_ permitir \_ \_ sinalizador de arquivamento de texto não criptografado \_** | 0x00000008 | A chave privada pode ser exportada uma vez em formato de texto sem formatação para fins de arquivamento. Esse sinalizador se aplica somente ao identificador de chave original no qual ele está definido. Essa política só pode ser aplicada ao identificador de chave original. Depois que o identificador de chave for fechado, a chave não poderá mais ser exportada para fins de arquivamento. |
+| **NCRYPT \_ ALLOW \_ EXPORT \_ FLAG**               | 0x00000001 | A chave privada pode ser exportada.                                                                                                                                                                                                                                                                                 |
+| **NCRYPT \_ ALLOW \_ PLAINTEXT \_ EXPORT \_ FLAG**    | 0x00000002 | A chave privada pode ser exportada em formato de texto não criptografado.                                                                                                                                                                                                                                                               |
+| **SINALIZADOR NCRYPT \_ \_ ALLOW \_ ARCHIVING**            | 0x00000004 | A chave privada pode ser exportada uma vez para fins de arquivamento. Esse sinalizador só se aplica ao alça de chave original no qual ele está definido. Essa política só pode ser aplicada ao alça de chave original. Depois que o alça de chave tiver sido fechado, a chave não poderá mais ser exportada para fins de arquivamento.                   |
+| **NCRYPT \_ ALLOW \_ PLAINTEXT \_ ARCHIVING \_ FLAG** | 0x00000008 | A chave privada pode ser exportada uma vez em formato de texto não criptografado para fins de arquivamento. Esse sinalizador só se aplica ao alça de chave original no qual ele está definido. Essa política só pode ser aplicada ao alça de chave original. Depois que o alça de chave tiver sido fechado, a chave não poderá mais ser exportada para fins de arquivamento. |
 
 
 
@@ -139,24 +139,24 @@ Um **DWORD** que contém um conjunto de sinalizadores que especificam a polític
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_IMPL_TYPE_PROPERTY"></span><span id="ncrypt_impl_type_property"></span>**\_Propriedade do \_ tipo NCRYPT impl \_**
+<span id="NCRYPT_IMPL_TYPE_PROPERTY"></span><span id="ncrypt_impl_type_property"></span>**PROPRIEDADE DE \_ TIPO NCRYPT IMPL \_ \_**
 </dt> <dd> <dl> <dt>
 
-L "tipo de impl"
+L"Tipo Impl"
 </dt> <dt>
 
 
 
-Um **DWORD** que contém um conjunto de sinalizadores que definem os detalhes de implementação do provedor. Essa propriedade só se aplica a provedores de armazenamento de chaves. Isso pode conter zero ou uma combinação de um ou mais dos valores a seguir.
+Um **DWORD** que contém um conjunto de sinalizadores que definem os detalhes de implementação do provedor. Essa propriedade se aplica somente a provedores de armazenamento de chaves. Isso pode conter zero ou uma combinação de um ou mais dos valores a seguir.
 
 
 
 | Identificador                            | Valor      | Descrição                                               |
 |---------------------------------------|------------|-----------------------------------------------------------|
-| **\_sinalizador de \_ hardware NCRYPT impl \_**      | 0x00000001 | O provedor é baseado em hardware.                           |
-| **\_sinalizador de \_ software NCRYPT impl \_**      | 0x00000002 | O provedor é baseado em software.                           |
-| **sinalizador de removível de NCRYPT \_ impl \_ \_**     | 0x00000008 | O provedor é removível.                                |
-| **\_sinalizador de \_ RNG de hardware NCRYPT impl \_ \_** | 0x00000010 | O provedor é um gerador de números aleatórios com base em hardware. |
+| **SINALIZADOR DE \_ HARDWARE NCRYPT IMPL \_ \_**      | 0x00000001 | O provedor é baseado em hardware.                           |
+| **SINALIZADOR DE \_ SOFTWARE NCRYPT IMPL \_ \_**      | 0x00000002 | O provedor é baseado em software.                           |
+| **SINALIZADOR \_ REMOVÍVEL NCRYPT IMPL \_ \_**     | 0x00000008 | O provedor é removível.                                |
+| **SINALIZADOR NCRYPT \_ IMPL \_ HARDWARE \_ RNG \_** | 0x00000010 | O provedor é um gerador de número aleatório baseado em hardware. |
 
 
 
@@ -165,7 +165,7 @@ Um **DWORD** que contém um conjunto de sinalizadores que definem os detalhes de
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_KEY_TYPE_PROPERTY"></span><span id="ncrypt_key_type_property"></span>**\_propriedade de \_ tipo de chave NCRYPT \_**
+<span id="NCRYPT_KEY_TYPE_PROPERTY"></span><span id="ncrypt_key_type_property"></span>**PROPRIEDADE NCRYPT \_ KEY \_ TYPE \_**
 </dt> <dd> <dl> <dt>
 
 L "tipo de chave"
@@ -412,15 +412,15 @@ L "suporte a descr de segurança"
 
 
 
-Indica se o provedor dá suporte a descritores de segurança para chaves. Essa propriedade é uma **DWORD** que contém 1 se o provedor oferece suporte a descritores de segurança para chaves. Se essa propriedade contiver qualquer outro valor, ou se a função [**NCryptGetProperty**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptgetproperty) retornar o **nte \_ sem \_ suporte**, o provedor não oferecerá suporte a descritores de segurança para chaves. Essa propriedade só se aplica a provedores.
+Indica se o provedor dá suporte a descritores de segurança para chaves. Essa propriedade é uma **DWORD** que contém 1 se o provedor oferece suporte a descritores de segurança para chaves. Se essa propriedade contiver qualquer outro valor ou se a função [**NCryptGetProperty**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptgetproperty) retornar **NTE \_ NOT \_ SUPPORTED**, o provedor não dá suporte a descritores de segurança para chaves. Essa propriedade se aplica somente a provedores.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_SMARTCARD_GUID_PROPERTY"></span><span id="ncrypt_smartcard_guid_property"></span>**\_propriedade de GUID de cartão inteligente NCRYPT \_ \_**
+<span id="NCRYPT_SMARTCARD_GUID_PROPERTY"></span><span id="ncrypt_smartcard_guid_property"></span>**PROPRIEDADE GUID \_ DE CARTÃO INTELIGENTE NCRYPT \_ \_**
 </dt> <dd> <dl> <dt>
 
-L "SmartCardGuid"
+L"SmartCardGuid"
 </dt> <dt>
 
 
@@ -430,114 +430,114 @@ Um BLOB que contém o identificador do cartão inteligente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_UI_POLICY_PROPERTY"></span><span id="ncrypt_ui_policy_property"></span>**\_propriedade de \_ política de IU NCRYPT \_**
+<span id="NCRYPT_UI_POLICY_PROPERTY"></span><span id="ncrypt_ui_policy_property"></span>**PROPRIEDADE NCRYPT \_ UI \_ \_ POLICY**
 </dt> <dd> <dl> <dt>
 
-L "diretiva de interface do usuário"
+L"UI Policy"
 </dt> <dt>
 
 
 
-Se usado com a função [**NCryptSetProperty**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptsetproperty) ou [**NCryptGetProperty**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptgetproperty) , esse é um ponteiro para uma estrutura de [**\_ \_ diretiva de interface do usuário NCRYPT**](/windows/desktop/api/Ncrypt/ns-ncrypt-ncrypt_ui_policy) que contém a diretiva de interface de usuários de chave forte para a chave. Essa propriedade só se aplica a chaves persistentes. Essa propriedade só pode ser definida quando a chave está sendo gerada. Depois que a função [**NCryptFinalizeKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptfinalizekey) tiver sido chamada para essa chave, essa propriedade se tornará somente leitura.
+Se usado com a [**função NCryptSetProperty**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptsetproperty) ou [**NCryptGetProperty,**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptgetproperty) esse é um ponteiro para uma estrutura [**NCRYPT \_ UI \_ POLICY**](/windows/desktop/api/Ncrypt/ns-ncrypt-ncrypt_ui_policy) que contém a política de interface do usuário de chave forte para a chave. Essa propriedade se aplica somente a chaves persistentes. Essa propriedade só pode ser definida quando a chave está sendo gerada. Depois que [**a função NCryptFinalizeKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptfinalizekey) tiver sido chamada para essa chave, essa propriedade se tornará somente leitura.
 
-Um provedor de armazenamento de chaves pode receber esse parâmetro por meio de uma função de retorno de chamada [**NCryptSetPropertyFn**](https://www.bing.com/search?q=**NCryptSetPropertyFn**) . O valor do parâmetro é uma \_ estrutura de blob de diretiva de interface do usuário NCRYPT \_ \_ que contém as mesmas informações. Da mesma forma, quando um aplicativo faz uma solicitação por meio de NCryptSetPropertyFn ao provedor para retornar essa propriedade, espera-se que o provedor retorne uma \_ estrutura de blob de política de interface do usuário NCRYPT \_ \_ .
+Um provedor de armazenamento de chaves pode receber esse parâmetro por meio de uma função de retorno de chamada [**NCryptSetPropertyFn.**](https://www.bing.com/search?q=**NCryptSetPropertyFn**) O valor do parâmetro é uma estrutura NCRYPT \_ UI \_ POLICY \_ BLOB que contém as mesmas informações. Da mesma forma, quando um aplicativo faz uma solicitação por meio de NCryptSetPropertyFn para o provedor retornar essa propriedade, espera-se que o provedor retorne uma estrutura NCRYPT \_ UI \_ POLICY \_ BLOB.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_UNIQUE_NAME_PROPERTY"></span><span id="ncrypt_unique_name_property"></span>**\_propriedade de \_ nome \_ exclusivo NCRYPT**
+<span id="NCRYPT_UNIQUE_NAME_PROPERTY"></span><span id="ncrypt_unique_name_property"></span>**PROPRIEDADE NCRYPT \_ UNIQUE \_ \_ NAME**
 </dt> <dd> <dl> <dt>
 
-L "nome exclusivo"
+L"Unique Name"
 </dt> <dt>
 
 
 
-Um ponteiro para uma cadeia de caracteres Unicode terminada em nulo que contém o nome exclusivo do objeto. Esse é um nome alternativo que pode ser usado ao acessar a chave. Essa propriedade é usada quando é pensado que o nome da chave originalmente passado para [**NCryptCreatePersistedKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptcreatepersistedkey) não é exclusivo o suficiente para identificar de forma confiável a chave persistente. O provedor de armazenamento de chaves da Microsoft retornará o nome do arquivo da chave como essa propriedade.
+Um ponteiro para uma cadeia de caracteres Unicode terminada em nulo que contém o nome exclusivo do objeto. Esse é um nome alternativo que pode ser usado ao acessar a chave. Essa propriedade é usada quando se pensa que o nome da chave originalmente passado para [**NCryptCreatePersistedKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptcreatepersistedkey) não é exclusivo o suficiente para identificar de forma confiável a chave persistente. O provedor de armazenamento de chaves da Microsoft retornará o nome do arquivo da chave como esta propriedade.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_USE_CONTEXT_PROPERTY"></span><span id="ncrypt_use_context_property"></span>**NCRYPT \_ \_ propriedade de contexto de uso \_**
+<span id="NCRYPT_USE_CONTEXT_PROPERTY"></span><span id="ncrypt_use_context_property"></span>**PROPRIEDADE DE CONTEXTO NCRYPT \_ \_ \_ USE**
 </dt> <dd> <dl> <dt>
 
-L "usar contexto"
+L"Usar Contexto"
 </dt> <dt>
 
 
 
-Um ponteiro para uma cadeia de caracteres Unicode terminada em nulo que descreve o contexto da operação. Essa propriedade não é persistente e pode ser definida em um provedor ou em uma chave. Uma chave não tem acesso à propriedade de **\_ propriedade de \_ contexto \_ de uso NCRYPT** do provedor porque a propriedade é específica somente para o identificador para o qual ela está definida.
+Um ponteiro para uma cadeia de caracteres Unicode terminada em nulo que descreve o contexto da operação. Essa propriedade não é persistente e pode ser definida em um provedor ou em uma chave. Uma chave não tem acesso à propriedade **NCRYPT \_ USE CONTEXT \_ \_ PROPERTY** do provedor porque a propriedade é específica apenas para o handle para o qual está definida.
 
-Um exemplo em que essa propriedade seria usada no contexto de um provedor é um provedor de armazenamento de chaves que precisa solicitar ao usuário durante uma chamada para [**NCryptOpenKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptopenkey) (por exemplo, "Insira seu cartão inteligente no leitor."). Como o identificador de chave não está disponível até que **NCryptOpenKey** seja retornado, o aplicativo deve definir essa propriedade no identificador do provedor antes de chamar **NCryptOpenKey**.
+Um exemplo em que essa propriedade seria usada no contexto de um provedor é um provedor de armazenamento de chaves que precisa solicitar ao usuário durante uma chamada para [**NCryptOpenKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptopenkey) (por exemplo, "Inserir seu cartão inteligente no leitor."). Como o alça de chave não está disponível até que **NCryptOpenKey** retorne, o aplicativo deve definir essa propriedade no handle do provedor antes de chamar **NCryptOpenKey**.
 
-Um exemplo em que essa propriedade seria usada no contexto de um identificador de chave é um provedor de armazenamento de chaves que precisa solicitar ao usuário durante uma operação usando a chave (por exemplo, "este aplicativo precisa usar essa chave para assinar um documento."). Em seguida, o provedor poderia retransmitir essas informações de contexto para o usuário em qualquer interface do usuário mostrada durante a operação.
+Um exemplo em que essa propriedade seria usada no contexto de um guidão de chave é um provedor de armazenamento de chaves que precisa solicitar ao usuário durante uma operação usando a chave (por exemplo, "Este aplicativo precisa usar essa chave para assinar um documento."). O provedor pode retransmitir essas informações de contexto para o usuário em qualquer interface do usuário mostrada durante a operação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_USE_COUNT_ENABLED_PROPERTY"></span><span id="ncrypt_use_count_enabled_property"></span>**\_propriedade de uso de \_ contagem \_ HABILITAda de NCRYPT \_**
+<span id="NCRYPT_USE_COUNT_ENABLED_PROPERTY"></span><span id="ncrypt_use_count_enabled_property"></span>**PROPRIEDADE NCRYPT \_ USE \_ COUNT \_ \_ ENABLED**
 </dt> <dd> <dl> <dt>
 
-L "contagem de uso habilitada"
+L"Enabled Use Count"
 </dt> <dt>
 
 
 
-Indica se o provedor dá suporte à contagem de uso para chaves. Essa propriedade é uma **DWORD** que contém 1 se o provedor oferece suporte à contagem de uso para chaves. Se essa propriedade contiver qualquer outro valor, ou se a função [**NCryptGetProperty**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptgetproperty) retornar o **nte \_ sem \_ suporte**, o provedor não oferecerá suporte à contagem de uso para chaves. Essa propriedade só se aplica a provedores.
+Indica se o provedor dá suporte à contagem de uso para chaves. Essa propriedade é uma **DWORD que** contém 1 se o provedor dá suporte à contagem de uso para chaves. Se essa propriedade contiver qualquer outro valor ou se a função [**NCryptGetProperty**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptgetproperty) retornar **NTE \_ NOT \_ SUPPORTED**, o provedor não dá suporte à contagem de uso para chaves. Essa propriedade se aplica somente a provedores.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_USE_COUNT_PROPERTY"></span><span id="ncrypt_use_count_property"></span>**\_propriedade de \_ contagem de uso NCRYPT \_**
+<span id="NCRYPT_USE_COUNT_PROPERTY"></span><span id="ncrypt_use_count_property"></span>**PROPRIEDADE NCRYPT \_ USE \_ \_ COUNT**
 </dt> <dd> <dl> <dt>
 
-L "contagem de uso"
+L"Use Count"
 </dt> <dt>
 
 
 
-Uma variável de [**\_ inteiro ULARGE**](https://docs.microsoft.com/windows/win32/api/winnt/ns-winnt-ularge_integer~r1) que contém o número de operações que a [*chave privada*](/windows/desktop/SecGloss/p-gly) especificada executou. Essa propriedade é opcional e pode não ter suporte de todos os provedores. Os provedores que oferecem suporte a essa propriedade nas chaves também devem oferecer suporte à propriedade de **\_ propriedade de uso \_ \_ habilitado \_ da contagem de utilização de NCRYPT** no identificador do provedor. O provedor de armazenamento de chaves da Microsoft não oferece suporte a essa propriedade. Essa propriedade só se aplica a chaves persistentes.
+Uma [**variável \_ INTEGER ULARGE**](https://docs.microsoft.com/windows/win32/api/winnt/ns-winnt-ularge_integer~r1) que contém o número de operações que a chave [*privada especificada*](/windows/desktop/SecGloss/p-gly) realizou. Essa propriedade é opcional e pode não ter suporte de todos os provedores. Os provedores que suportam essa propriedade em chaves também devem dar suporte à propriedade **NCRYPT \_ USE COUNT \_ \_ ENABLED \_ PROPERTY** no alça do provedor. O provedor de armazenamento de chaves da Microsoft não dá suporte a essa propriedade. Essa propriedade se aplica somente a chaves persistentes.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_USER_CERTSTORE_PROPERTY"></span><span id="ncrypt_user_certstore_property"></span>**\_ \_ Propriedade CERTSTORE de usuário NCRYPT \_**
+<span id="NCRYPT_USER_CERTSTORE_PROPERTY"></span><span id="ncrypt_user_certstore_property"></span>**PROPRIEDADE NCRYPT \_ USER \_ \_ CERTSTORE**
 </dt> <dd> <dl> <dt>
 
-L "SmartCardUserCertStore"
+L"SmartCardUserCertStore"
 </dt> <dt>
 
 
 
-Um **HCERTSTORE** que representa o repositório de certificados do usuário do cartão inteligente.
+Um **HCERTSTORE que** representa o repositório de certificados de usuário do cartão inteligente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_VERSION_PROPERTY"></span><span id="ncrypt_version_property"></span>**\_propriedade de versão NCRYPT \_**
+<span id="NCRYPT_VERSION_PROPERTY"></span><span id="ncrypt_version_property"></span>**PROPRIEDADE DE \_ VERSÃO NCRYPT \_**
 </dt> <dd> <dl> <dt>
 
-L "versão"
+L"Version"
 </dt> <dt>
 
 
 
-Um **DWORD** que contém a versão de software do provedor. A palavra alta contém a versão principal e a palavra inferior contém a versão secundária. Por exemplo, 0x00030033 = 3,51. Essa propriedade só se aplica a provedores.
+Um **DWORD** que contém a versão de software do provedor. A palavra alta contém a versão principal e a palavra baixa contém a versão secundária. Por exemplo, 0x00030033 = 3,51. Essa propriedade se aplica somente a provedores.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="NCRYPT_WINDOW_HANDLE_PROPERTY"></span><span id="ncrypt_window_handle_property"></span>**\_propriedade de \_ identificador de janela NCRYPT \_**
+<span id="NCRYPT_WINDOW_HANDLE_PROPERTY"></span><span id="ncrypt_window_handle_property"></span>**PROPRIEDADE NCRYPT \_ WINDOW \_ HANDLE \_**
 </dt> <dd> <dl> <dt>
 
-L "identificador HWND"
+L"HWND Handle"
 </dt> <dt>
 
 
 
-Um ponteiro para o identificador de janela (**HWND**) a ser usado como o pai de qualquer interface do usuário que é exibida.
+Um ponteiro para o **HWND**(alça de janela) a ser usado como o pai de qualquer interface do usuário exibida.
 
-Como um comportamento indesejável pode ocorrer quando uma interface do usuário é mostrada usando um identificador de janela **nulo** para o pai, é altamente recomendável que um provedor de armazenamento de chaves não exiba uma interface do usuário, a menos que essa propriedade esteja definida.
+Como um comportamento indesejável pode acontecer quando uma interface do usuário é mostrada usando um alça de janela **NULL** para o pai, é recomendável que um provedor de armazenamento de chaves não exibir uma interface do usuário, a menos que essa propriedade esteja definida.
 
 
 </dt> </dl> </dd> </dl>
@@ -548,8 +548,8 @@ Os valores a seguir são usados para definir limites de dados de propriedade.
 
 | Constante/valor                                                                                                                                                                                                                                                 | Descrição                                                              |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------|
-| <span id="NCRYPT_MAX_PROPERTY_DATA"></span><span id="ncrypt_max_property_data"></span><dl> <dt>**NCRYPT \_ 0x100000 \_ de \_ dados de propriedade Max**</dt> <dt></dt> </dl> | Especifica o tamanho máximo de um valor de propriedade, em bytes.<br/>     |
-| <span id="NCRYPT_MAX_PROPERTY_NAME"></span><span id="ncrypt_max_property_name"></span><dl> <dt>**NCRYPT \_ \_ \_ Nome de propriedade máx**</dt> . <dt>64</dt> </dl>       | Especifica o tamanho máximo de um nome de propriedade, em caracteres.<br/> |
+| <span id="NCRYPT_MAX_PROPERTY_DATA"></span><span id="ncrypt_max_property_data"></span><dl> <dt>**NCRYPT \_ DADOS \_ DE PROPRIEDADE MAX \_ 0X100000**</dt> <dt></dt> </dl> | Especifica o tamanho máximo de um valor da propriedade, em bytes.<br/>     |
+| <span id="NCRYPT_MAX_PROPERTY_NAME"></span><span id="ncrypt_max_property_name"></span><dl> <dt>**NCRYPT \_ MAX \_ PROPERTY \_ NAME**</dt> <dt>64</dt> </dl>       | Especifica o tamanho máximo de um nome de propriedade, em caracteres.<br/> |
 
 
 
@@ -559,9 +559,9 @@ Os valores a seguir são usados para definir limites de dados de propriedade.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>NCrypt. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                |
+| parâmetro<br/>                   | <dl> <dt>Ncrypt.h</dt> </dl> |
 
 
 

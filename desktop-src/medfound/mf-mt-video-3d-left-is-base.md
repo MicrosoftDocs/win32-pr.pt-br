@@ -4,12 +4,12 @@ ms.assetid: 11555BA0-D9BE-4239-A857-C9EEE86A8520
 title: Atributo MF_MT_VIDEO_3D_LEFT_IS_BASE (Mfapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d8f5ece66db7de19cd77d7e686d9665ad239c6d6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb03bc12d32b96abc52999ef6a3b21580c4ac1c59125a076b9eb1d620e0bd362
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105785323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118741588"
 ---
 # <a name="mf_mt_video_3d_left_is_base-attribute"></a>A \_ esquerda do vídeo MF MT \_ \_ 3D \_ é o \_ \_ atributo base
 
@@ -31,8 +31,8 @@ Para converter o vídeo estereoscópico em 2D, mantenha o modo de exibição de 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                  |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                        |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                  |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                        |
 | parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
 
 

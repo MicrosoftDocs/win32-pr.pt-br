@@ -4,12 +4,12 @@ description: Localiza o primeiro conjunto de bits em um número, seja de LSB ou 
 ms.assetid: E3066676-5218-470A-944A-7B221E1BF64D
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b88fa9291ce64fcc8c94510bd09bed31e7b7f96
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 8ea47c8e0674db5dc0349e5d6a8a041fa7d3623e6578eee542edeb1749577d7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104293595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118511940"
 ---
 # <a name="firstbit-sm5---asm"></a>firstbit (SM5-ASM)
 
@@ -49,7 +49,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 

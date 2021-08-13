@@ -4,16 +4,16 @@ description: Propriedade FontStrikeThru
 ms.assetid: 2d87fded-2f3e-44cd-b2a5-5f9c76ca1cf5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c9e1ac8874a11832025dd225aa4df4afa91b4d8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 26832699bfdfd74e753e44ba88f89400560d8c93cf010ed6ab35878f31bc8495
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105802126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118479254"
 ---
 # <a name="fontstrikethru-property"></a>Propriedade FontStrikeThru
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Retorna o estilo de fonte exibido atualmente na janela de balão do texto do car
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-*agente do ***. Caracteres ("*** characterid * * *"). Balloon. FontStrikeThru**
+*agente ***. Caracteres ("**_characterid_*_"). Balloon. FontStrikeThru_*
 
 
 
@@ -38,7 +38,7 @@ Retorna o estilo de fonte exibido atualmente na janela de balão do texto do car
 
 
 
- 
+ 
 
 </dd> </dl>
 
@@ -46,9 +46,9 @@ Retorna o estilo de fonte exibido atualmente na janela de balão do texto do car
 
 O valor padrão das configurações de fonte do balão de palavras de um caractere é definido no editor de caracteres do Microsoft Agent. Além disso, o usuário pode substituir as configurações de fonte para todos os caracteres na folha de propriedades do Microsoft Agent.
 
- 
+ 
 
- 
+ 
 
 
 

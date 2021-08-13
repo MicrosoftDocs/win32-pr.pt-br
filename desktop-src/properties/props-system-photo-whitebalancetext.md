@@ -4,12 +4,12 @@ ms.assetid: f046912c-04cf-46df-bec5-c0f68fd0b44a
 title: System. Photo. WhiteBalanceText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c18edbb9861f47e5cc8bde4ae3feae4b45a58d7d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0cae21f1a709587ead6a77c5c97df090c88b1163abb8c639244016d25fc8daa3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118465811"
 ---
 # <a name="systemphotowhitebalancetext"></a>System. Photo. WhiteBalanceText
 

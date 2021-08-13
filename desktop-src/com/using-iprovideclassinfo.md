@@ -4,12 +4,12 @@ description: Usando IProvideClassInfo
 ms.assetid: 16541aab-474f-4ae5-a6b6-fb2fea6d38ab
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 32a3abd61bb330a2a7d681b6d53648c5fbde8c53
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: c589e86596bf3e6719d3db8589570cfe347150c077e6bad19373693c18ee1ce0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104008437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118550570"
 ---
 # <a name="using-iprovideclassinfo"></a>Usando IProvideClassInfo
 
@@ -35,6 +35,6 @@ Nas informações de tipo, a [**origem**](/windows/desktop/Midl/source) do atrib
 [Fornecendo informações de classe](providing-class-information.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

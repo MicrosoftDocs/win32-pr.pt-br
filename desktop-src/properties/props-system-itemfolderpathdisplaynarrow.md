@@ -1,19 +1,19 @@
 ---
-description: Leia sobre a propriedade System. ItemFolderPathDisplayNarrow, que representa o caminho de exibição amigável para o usuário da pasta pai de um item.
+description: Leia sobre a propriedade System.ItemFolderPathDisplayNarrow, que representa o caminho de exibição amigável da pasta pai de um item.
 ms.assetid: f60b7465-bca4-4c7b-9caf-9cda1bf6eeeb
-title: System. ItemFolderPathDisplayNarrow
+title: System.ItemFolderPathDisplayNarrow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dbee8a45eb6ea557e99c854464c7dc09ec5613d2
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: bb87cadc4f4f132870ea51af1bba55c992c09d3eb5a90f446a3d92810b5941d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112403909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118726474"
 ---
-# <a name="systemitemfolderpathdisplaynarrow"></a>System. ItemFolderPathDisplayNarrow
+# <a name="systemitemfolderpathdisplaynarrow"></a>System.ItemFolderPathDisplayNarrow
 
-O caminho de exibição amigável para o usuário da pasta pai de um item.
+O caminho de exibição amigável da pasta pai de um item.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,15 +33,15 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
-O formato da cadeia de caracteres deve ser adaptado para que o nome da pasta venha primeiro, para otimizar uma coluna de exibição estreita. Se a pasta for uma pasta de arquivos, o valor incluirá todos os nomes localizados. Se [System. ItemFolderPathDisplay](./props-system-itemfolderpathdisplay.md) for VT \_ Empty, essa propriedade também deverá estar vazia. Caso contrário, ele deve ser derivado adequadamente pela fonte de dados de System. ItemFolderPathDisplay.
+O formato da cadeia de caracteres deve ser personalizado para que o nome da pasta seja o primeiro a ser otimizado para uma coluna de exibição estreita. Se a pasta for uma pasta de arquivo, o valor incluirá todos os nomes localizados. Se [System.ItemFolderPathDisplay](./props-system-itemfolderpathdisplay.md) for VT \_ EMPTY, essa propriedade também deverá estar vazia. Caso contrário, ele deverá ser derivado adequadamente pela fonte de dados de System.ItemFolderPathDisplay.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -50,19 +50,19 @@ O formato da cadeia de caracteres deve ser adaptado para que o nome da pasta ven
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ O formato da cadeia de caracteres deve ser adaptado para que o nome da pasta ven
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

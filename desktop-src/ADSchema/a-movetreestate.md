@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3041d54dfcdb97d7c9e1629162908fab1577b60c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c904beee7be1452e9e74470e91eaf43b3f655fdf79c767923ada6ab3fa8f01b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118686987"
 ---
 # <a name="move-tree-state-attribute"></a>Atributo de estado de árvore de movimentação
 
@@ -36,7 +36,7 @@ Este atributo contém informações de estado para uma árvore de diretório que
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1305                               |
 | System-ID-GUID    | 1f2ac2c8-3b71-11d2-90cc-00c04fd91ab1                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 

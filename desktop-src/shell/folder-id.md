@@ -4,12 +4,12 @@ ms.assetid: 54225481-a147-4d29-a642-24c9b59fc3ac
 title: Obtendo a ID de uma pasta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb2e62454bf27f2c203f59aecb325cefe6537d2a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 67d75051d52f0dfcee54b6365a8f546d2cbda2c3b5f7c0f4b6fbbc19fa1e40c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118459005"
 ---
 # <a name="getting-a-folders-id"></a>Obtendo a ID de uma pasta
 
@@ -26,7 +26,7 @@ Para obter uma abordagem mais potente que funcionará com qualquer pasta, use a 
 
 Para permitir que o usuário navegue no namespace e selecione uma pasta, seu aplicativo pode usar a interface [**IFileDialog**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifiledialog) . Chamar essa interface com o sinalizador **FOS \_ PICKFOLDERS** inicia a caixa de diálogo [abrir arquivos](../dlgbox/open-and-save-as-dialog-boxes.md) comuns no modo "escolher pastas".
 
-Para o Windows Vista e posterior, essa é a maneira recomendada para escolher pastas.
+para o Windows Vista e posterior, essa é a maneira recomendada para escolher pastas.
 
 ## <a name="the-shbrowseforfolder-dialog-box"></a>A caixa de diálogo SHBrowseForFolder
 
@@ -42,7 +42,7 @@ Um exemplo simples de como usar o [**SHBrowseForFolder**](/windows/desktop/api/s
 
 Várias pastas comumente usadas são designadas como *especiais* pelo sistema. Essas pastas têm uma finalidade bem definida e a maioria delas está presente em todos os sistemas. Mesmo que não estejam presentes inicialmente, seus nomes e locais ainda estão definidos, para que possam ser adicionados posteriormente. A coleção de pastas especiais inclui todas as pastas virtuais padrão do sistema, como impressoras, meus documentos e ambiente de rede. Ele também inclui várias pastas padrão do sistema de arquivos, como arquivos de programas e sistema.
 
-Embora as pastas sejam um componente padrão de todos os sistemas, seus nomes e locais no namespace podem variar. Por exemplo, o diretório do sistema é C: \\ WinNT \\ System32 em alguns sistemas e C: \\ Windows \\ System32 em outros. No passado, as variáveis de ambiente forneciam uma maneira de determinar o nome e o local de uma pasta especial em qualquer sistema específico. O Shell agora fornece uma maneira mais robusta e flexível de identificar pastas especiais, [**CSIDLs**](csidl.md). Geralmente, você deve usá-los em vez de variáveis de ambiente.
+Embora as pastas sejam um componente padrão de todos os sistemas, seus nomes e locais no namespace podem variar. por exemplo, o diretório do sistema é C: \\ Winnt \\ system32 em alguns sistemas e C: \\ Windows \\ System32 em outros. No passado, as variáveis de ambiente forneciam uma maneira de determinar o nome e o local de uma pasta especial em qualquer sistema específico. O Shell agora fornece uma maneira mais robusta e flexível de identificar pastas especiais, [**CSIDLs**](csidl.md). Geralmente, você deve usá-los em vez de variáveis de ambiente.
 
 O CSIDLs fornece uma maneira uniforme de identificar e localizar pastas especiais, independentemente de seu nome ou local em um sistema específico. Ao contrário das variáveis de ambiente, CSIDLs pode ser usado com pastas virtuais, bem como pastas do sistema de arquivos. Cada pasta especial tem um CSID exclusivo atribuído a ela. Por exemplo, a pasta sistema de arquivos de arquivos de programas tem um CSIDl de **\_ \_ arquivos de programa CSIDL** e a pasta virtual de ambiente de rede tem uma CSIDL de **\_ rede CSIDL**.
 

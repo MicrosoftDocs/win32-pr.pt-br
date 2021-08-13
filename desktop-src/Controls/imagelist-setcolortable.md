@@ -1,9 +1,9 @@
 ---
-title: Função ImageList_SetColorTable
+title: ImageList_SetColorTable função
 description: Define a tabela de cores para uma lista de imagens.
 ms.assetid: 1b62f468-cbc4-479b-b9f8-5553c2bd8c79
 keywords:
-- Controles do Windows da função ImageList_SetColorTable
+- ImageList_SetColorTable função Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 14be5f17d83128933a35730a79726b462436e0c4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7de1acd8f14d9993bc75ea69b910b365e29156a6386933ccb95251a916c37244
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118412234"
 ---
-# <a name="imagelist_setcolortable-function"></a>\_Função ImageList Setcolortable
+# <a name="imagelist_setcolortable-function"></a>Função ImageList \_ SetColorTable
 
 Define a tabela de cores para uma lista de imagens.
 
@@ -43,51 +43,51 @@ int ImageList_SetColorTable(
 
 <dl> <dt>
 
-*himl* \[ no\]
+*himl* \[ Em\]
 </dt> <dd>
 
 Tipo: **HIMAGELIST**
 
-Um identificador para a lista de imagens.
+Um alça para a lista de imagens.
 
 </dd> <dt>
 
-*Iniciar* \[ no\]
+*iniciar* \[ Em\]
 </dt> <dd>
 
 Tipo: **int**
 
-Um índice de tabela de cores com base em zero que especifica a primeira entrada da tabela de cores a ser definida.
+Um índice de tabela de cores baseado em zero que especifica a primeira entrada da tabela de cores a ser definida.
 
 </dd> <dt>
 
-*Len* \[ no\]
+*len* \[ Em\]
 </dt> <dd>
 
 Tipo: **int**
 
-O número de entradas da tabela de cores a serem definidas.
+O número de entradas da tabela de cores a ser definido.
 
 </dd> <dt>
 
-*prgb* \[ no\]
+*prgb* \[ Em\]
 </dt> <dd>
 
-Tipo: **[**RGBQUAD**](/windows/win32/api/wingdi/ns-wingdi-rgbquad) \** _
+Tipo: **[ **RGBQUAD**](/windows/win32/api/wingdi/ns-wingdi-rgbquad)\***
 
-Um ponteiro para uma matriz de _len * estruturas [**RGBQUAD**](/windows/win32/api/wingdi/ns-wingdi-rgbquad) que contêm novas informações de cor para a tabela de cores do DIB.
+Um ponteiro para uma matriz de *estruturas* [**len RGBQUAD**](/windows/win32/api/wingdi/ns-wingdi-rgbquad) que contêm novas informações de cor para a tabela de cores do DIB.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **int**
 
-Se a função for realizada com sucesso, ela retornará o número de entradas da tabela de cores definidas pela função. Se a função falhar, o valor de retorno será menor ou igual a zero.
+Se a função for bem-sucedida, ela retornará o número de entradas da tabela de cores definidas pela função. Se a função falhar, o valor de retorno será menor ou igual a zero.
 
 ## <a name="remarks"></a>Comentários
 
-Somente as listas de imagens criadas com o sinalizador [**ILC \_ COLOR4**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_create) ou [**ILC \_ COLOR8**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_create) têm tabelas de cores. A tabela de cores dessa lista de imagens normalmente é definida automaticamente copiando a tabela de cores da primeira imagem adicionada à lista (por exemplo, por meio da função [**ImageList \_ Add**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_add) ) se essa imagem for uma DIB. Se a primeira imagem adicionada à lista de imagens não for uma DIB, a tabela de cores da paleta de retícula será usada para listas de imagens **ILC \_ COLOR8** e a tabela de cores VGA será usada para **ILC \_ COLOR4**.
+Somente as listas de imagens criadas com o [**sinalizador ILC \_ COLOR4**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_create) ou [**ILC \_ COLOR8**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_create) têm tabelas de cores. A tabela de cores dessa lista de imagens normalmente é definida automaticamente copiando a tabela de cores da primeira imagem adicionada à lista (por exemplo, por meio da função [**ImageList \_ Add)**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_add) se essa imagem for um DIB. Se a primeira imagem adicionada à lista de imagens não for um DIB, a tabela de cores da paleta de meio-tom será usada para listas de imagens **ILC \_ COLOR8** e a tabela de cores da VGA será usada para **ILC \_ COLOR4.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,9 +95,9 @@ Somente as listas de imagens criadas com o sinalizador [**ILC \_ COLOR4**](/wind
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                  |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                            |
-| DLL<br/>                      | <dl> <dt>Comctl32.dll (versão 3,51 ou posterior)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                                  |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                            |
+| DLL<br/>                      | <dl> <dt>Comctl32.dll (versão 3.51 ou posterior)</dt> </dl> |
 
 
 

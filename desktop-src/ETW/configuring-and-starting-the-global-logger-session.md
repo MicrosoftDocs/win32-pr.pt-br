@@ -4,19 +4,19 @@ ms.assetid: 1462bbef-ef32-4053-9930-5b4a0ab46b47
 title: Configurando e iniciando a sessão global de agente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8692e1f7321acc163e48cda7e3323f3d24adc1c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 36cc15ad9fdb5150a976b9d7bccfb6315649617271c5ece2a7c676fbdb9f6f93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118395491"
 ---
 # <a name="configuring-and-starting-the-global-logger-session"></a>Configurando e iniciando a sessão global de agente
 
 A sessão de rastreamento de eventos do agente global registra eventos que ocorrem no início do processo de inicialização do sistema operacional. Aplicativos e drivers de dispositivo podem usar a sessão de agente global para capturar rastreamentos antes que o usuário faça logon. Observe que alguns drivers de dispositivo, como drivers de dispositivo de disco, não são carregados no momento em que a sessão global de agente é iniciada.
 
 > [!Note]  
-> Se você estiver criando uma sessão global de agente no Windows Vista, considere a criação de uma [sessão do agente de log autologger](configuring-and-starting-an-autologger-session.md) .
+> se você estiver criando uma sessão Global de agente no Windows Vista, considere a criação de uma [sessão do agente de log autologger](configuring-and-starting-an-autologger-session.md) em vez disso.
 
  
 
@@ -44,7 +44,7 @@ A tabela a seguir descreve os valores que você pode definir para a chave **Glob
 <tr class="header">
 <th>Valor</th>
 <th>Tipo</th>
-<th>Description</th>
+<th>Descrição</th>
 </tr>
 </thead>
 <tbody>
@@ -67,7 +67,7 @@ A tabela a seguir descreve os valores que você pode definir para a chave **Glob
 <li>2 = temporizador do sistema</li>
 <li>3 = contador de ciclo de CPU</li>
 </ul>
-Para obter uma descrição de cada tipo de relógio, consulte o membro <strong>ClientContext</strong> de <a href="wnode-header.md"><strong>WNODE_HEADER</strong></a>.<br/> O valor padrão é 1 (valor do contador de desempenho) no Windows Vista e posterior. Antes do Windows Vista, o valor padrão é 2 (temporizador do sistema).<br/></td>
+Para obter uma descrição de cada tipo de relógio, consulte o membro <strong>ClientContext</strong> de <a href="wnode-header.md"><strong>WNODE_HEADER</strong></a>.<br/> o valor padrão é 1 (valor do contador de desempenho) no Windows Vista e posterior. antes do Windows Vista, o valor padrão é 2 (temporizador do sistema).<br/></td>
 </tr>
 <tr class="even">
 <td><strong>EnableKernelFlags</strong></td>
@@ -87,7 +87,7 @@ Para obter uma descrição de cada tipo de relógio, consulte o membro <strong>C
 <tr class="odd">
 <td><strong>FileName</strong></td>
 <td><strong>REG_SZ</strong></td>
-<td>Caminho totalmente qualificado do arquivo de log. O caminho para esse arquivo deve existir. O arquivo de log é um arquivo de log sequencial. Observe que todos os provedores que gravam eventos na sessão do agente global gravam eventos nesse arquivo de log. O caminho é limitado a 1024 caracteres. Se <strong>filename</strong> não for especificado, os eventos serão gravados em%SystemRoot%\System32\LogFiles\WMI\GlobalLogger.etl. <strong>Antes do Windows Vista:</strong> O arquivo padrão é%SystemRoot%\System32\LogFiles\WMI\Trace.log.<br/> <br/></td>
+<td>Caminho totalmente qualificado do arquivo de log. O caminho para esse arquivo deve existir. O arquivo de log é um arquivo de log sequencial. Observe que todos os provedores que gravam eventos na sessão do agente global gravam eventos nesse arquivo de log. O caminho é limitado a 1024 caracteres. Se <strong>filename</strong> não for especificado, os eventos serão gravados em%SystemRoot%\System32\LogFiles\WMI\GlobalLogger.etl. <strong>antes do Windows Vista:</strong> O arquivo padrão é%SystemRoot%\System32\LogFiles\WMI\Trace.log.<br/> <br/></td>
 </tr>
 <tr class="even">
 <td><strong>FlushTimer</strong></td>
@@ -97,7 +97,7 @@ Para obter uma descrição de cada tipo de relógio, consulte o membro <strong>C
 <tr class="odd">
 <td><strong>LogFilemode</strong></td>
 <td><strong>REG_DWORD</strong></td>
-<td>Especifica as opções de sessão de log. Para valores, consulte <a href="logging-mode-constants.md">constantes do modo de log</a>. Esses valores têm suporte no Windows Vista e versões posteriores. <br/></td>
+<td>Especifica as opções de sessão de log. Para valores, consulte <a href="logging-mode-constants.md">constantes do modo de log</a>. esses valores têm suporte no Windows Vista e versões posteriores. <br/></td>
 </tr>
 <tr class="even">
 <td><strong>MaximumBuffers</strong></td>
@@ -105,7 +105,7 @@ Para obter uma descrição de cada tipo de relógio, consulte o membro <strong>C
 <td>O número máximo de buffers a serem alocados. Normalmente, esse valor é o número mínimo de buffers, mais vinte. O ETW usa o tamanho do buffer e o tamanho da memória física para calcular esse valor. Esse valor deve ser maior ou igual ao valor de <strong>MinimumBuffers</strong>.<br/></td>
 </tr>
 <tr class="odd">
-<td><strong>Cedido</strong></td>
+<td><strong>MaxFileSize</strong></td>
 <td><strong>REG_DWORD</strong></td>
 <td>O tamanho máximo, em megabytes, do arquivo de log de rastreamento de eventos. Por padrão, não há nenhum tamanho máximo de arquivo.<br/></td>
 </tr>

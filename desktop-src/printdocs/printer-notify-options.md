@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: af1aeaa1138145c5df18ea4fd5babaa1a9e60416
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 57b95717e7873f0b73b66d450849d92a2c2ed7053d6d387286cc58144c772ba8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105785964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118731128"
 ---
 # <a name="printer_notify_options-structure"></a>Estrutura de opções de \_ notificação de impressora \_
 

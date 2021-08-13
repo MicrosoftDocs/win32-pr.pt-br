@@ -1,7 +1,7 @@
 ---
-description: Obtém o número máximo de eventos aos quais o controlador de animação pode dar suporte.
+description: Obtém o número máximo de eventos que o controlador de animação pode dar suporte.
 ms.assetid: f76fe7e5-1173-403b-8af4-825476a851f1
-title: 'Método ID3DXAnimationController:: GetMaxNumEvents (D3dx9anim. h)'
+title: Método ID3DXAnimationController::GetMaxNumEvents (D3dx9 multimídia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c371255d6f66204c356d6dd7f056bc765fa76615
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fb7786d03b79a78f067fbfb1c8447336405c8a2e87bac18819178b2e158a2a62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103664042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118522787"
 ---
-# <a name="id3dxanimationcontrollergetmaxnumevents-method"></a>Método ID3DXAnimationController:: GetMaxNumEvents
+# <a name="id3dxanimationcontrollergetmaxnumevents-method"></a>Método ID3DXAnimationController::GetMaxNumEvents
 
-Obtém o número máximo de eventos aos quais o controlador de animação pode dar suporte.
+Obtém o número máximo de eventos que o controlador de animação pode dar suporte.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,9 +38,9 @@ UINT GetMaxNumEvents();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 O número máximo de eventos que o controlador pode gerenciar.
 
@@ -50,8 +50,8 @@ O número máximo de eventos que o controlador pode gerenciar.
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

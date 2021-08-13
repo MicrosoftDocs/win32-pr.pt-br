@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 10b1951d9d96f49a9df9a51604767dbce360f9e0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2ff257007180cf3da2b78c14415c8fa350b4bb395e0202f49d2d7ae056f025bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118405190"
 ---
 # <a name="pwm-api"></a>API PWM
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
 A modulação de largura de pulso (PWM) é a técnica de gerar uma onda de pulso retangular que tem uma largura de pulso que é modulada para resultar na variação do valor médio da forma de onda. Os usos mais comuns incluem a condução de motores de servo, LEDs de esmaecimento ou outras funções relacionadas. O PWM destina-se a ser usado principalmente para cenários de Internet das Coisas.
 

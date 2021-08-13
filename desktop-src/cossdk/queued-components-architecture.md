@@ -4,12 +4,12 @@ ms.assetid: fd455679-b2b3-487f-8494-9ea296ce2c89
 title: Arquitetura de componentes na fila
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a8a2f6e1012bd3c11a27a44214ee28e84d5bd404
-ms.sourcegitcommit: bf526e267d3991892733bdd229c66d5365cf244a
+ms.openlocfilehash: 93914fd82a14c73b134098a759c8d61e324b6cda65d03de23f9c3ea2fcfb53f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "104569987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117916197"
 ---
 # <a name="queued-components-architecture"></a>Arquitetura de componentes na fila
 

@@ -1,5 +1,5 @@
 ---
-description: A classe WBEMTime facilita conversões entre vários formatos de tempo de execução do Windows e ANSI C. Para obter mais informações, consulte também métodos de classe WBEMTimeSpan.
+description: a classe WBEMTime facilita conversões entre vários formatos de tempo de execução de Windows e ANSI C. Para obter mais informações, consulte também métodos de classe WBEMTimeSpan.
 ms.assetid: b633bc8c-9d02-4bcf-8528-10773fb5ae7a
 ms.tgt_platform: multiple
 title: Classe WBEMTime (WbemTime.h)
@@ -15,18 +15,18 @@ api_type:
 api_location:
 - FrameDynOS.dll
 - FrameDyn.dll
-ms.openlocfilehash: 5d2f06b06db998dc18a876e0e5534e1d86c6ae89
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 16b4e8933113386e877aec23313f74695b321f932c10f0e2730bcf5888675cc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105772506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118553240"
 ---
 # <a name="wbemtime-class"></a>Classe WBEMTime
 
 \[A classe **WBEMTime** faz parte da estrutura do provedor de WMI, que agora é considerada no estado final, e nenhum outro desenvolvimento, melhoria ou atualização estará disponível para problemas não relacionados à segurança que afetem essas bibliotecas. As [APIs de mi](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) devem ser usadas para todo o novo desenvolvimento.\]
 
-A classe **WBEMTime** facilita conversões entre vários formatos de tempo de execução do Windows e ANSI C. Para obter mais informações, consulte também [**métodos de classe WBEMTimeSpan**](/windows/desktop/api/WbemTime/nl-wbemtime-wbemtimespan).
+a classe **WBEMTime** facilita conversões entre vários formatos de tempo de execução de Windows e ANSI C. Para obter mais informações, consulte também [**métodos de classe WBEMTimeSpan**](/windows/desktop/api/WbemTime/nl-wbemtime-wbemtimespan).
 
 ## <a name="members"></a>Membros
 
@@ -43,7 +43,7 @@ A classe **WBEMTime** tem esses construtores.
 
 | Construtor                           | Descrição                                                                                                   |
 |:--------------------------------------|:--------------------------------------------------------------------------------------------------------------|
-| [**WBEMTime**](/windows/desktop/api/WbemTime/nf-wbemtime-wbemtime-wbemtime(constbstr)) | Construtor que facilita conversões entre vários formatos de tempo de execução do Windows e ANSI C.<br/> |
+| [**WBEMTime**](/windows/desktop/api/WbemTime/nf-wbemtime-wbemtime-wbemtime(constbstr)) | construtor que facilita conversões entre vários formatos de tempo de execução de Windows e ANSI C.<br/> |
 
 
 
@@ -57,7 +57,7 @@ A classe **WBEMTime** tem esses métodos.
 
 | Método                                                           | Descrição                                                                                                                            |
 |:-----------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
-| [**Formatação**](/windows/desktop/api/WbemTime/nf-wbemtime-wbemtime-clear)                                  | Define a hora no objeto **WBEMTime** como uma hora inválida.<br/>                                                                |
+| [**Limpar**](/windows/desktop/api/WbemTime/nf-wbemtime-wbemtime-clear)                                  | Define a hora no objeto **WBEMTime** como uma hora inválida.<br/>                                                                |
 | [**GetBSTR**](/windows/desktop/api/WbemTime/nf-wbemtime-wbemtime-getbstr)                              | Apresenta o tempo como um valor **BSTR** .<br/>                                                                                      |
 | [**GetDMTF**](/windows/desktop/api/WbemTime/nf-wbemtime-wbemtime-getdmtf)                              | Obtém a hora como um valor **BSTR** no formato de data e hora CIM.<br/>                                                                   |
 | [**GetDMTFNonNtfs**](/windows/desktop/api/WbemTime/nf-wbemtime-wbemtime-getdmtfnonntfs)                | Obtém uma data de DMTF baseada em um FAT ou em um [formato de data e hora](date-and-time-format.md) em que o UTC não é conhecido.<br/> |
@@ -82,7 +82,7 @@ O objeto **WBEMTime** define os seguintes operadores sobrecarregados.
 
 | Operadores sobrecarregados do WBEMTime                                                                                                                                                                                                                                                                                                                                                                                                                                        | Descrição                                                                                                                       |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| [**operador =**](/previous-versions/windows/desktop/legacy/aa394050(v=vs.85))                                                                                                                                                                                                                                                                                                                                                                                                                       | O operador de *atribuição* facilita as conversões entre vários formatos de tempo de execução do Windows e ANSI C.                           |
+| [**operador =**](/previous-versions/windows/desktop/legacy/aa394050(v=vs.85))                                                                                                                                                                                                                                                                                                                                                                                                                       | o operador de *atribuição* facilita as conversões entre vários formatos de tempo de execução de Windows e ANSI C.                           |
 | [**operador +**](/windows/desktop/api/WbemTime/nf-wbemtime-wbemtime-operator-add)                                                                                                                                                                                                                                                                                                                                                                                                                         | O operador de *adição* incrementa o tempo de um objeto por um período de tempo. O resultado é retornado em um novo objeto **WBEMTime** .              |
 | [**operador + =**](/windows/win32/api/directxmath/nf-directxmath-operator-add-assign)                                                                                                                                                                                                                                                                                                                                                                                                                  | O operador *Add-e-Assign* incrementa o tempo de um objeto por um período de tempo.                                                             |
 | [**operador**](/previous-versions/windows/desktop/legacy/aa394051(v=vs.85))                                                                                                                                                                                                                                                                                                                                                                                                                       | O operador de *subtração* decrementa a hora de um objeto por outro tempo do objeto. O resultado é retornado em um novo objeto **WBEMTime** . |

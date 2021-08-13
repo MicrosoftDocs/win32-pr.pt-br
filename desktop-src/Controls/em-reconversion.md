@@ -1,9 +1,9 @@
 ---
-title: Mensagem de EM_RECONVERSION (RichEdit. h)
-description: Invoca a caixa de diálogo de reconversão do IME (editor de método de entrada).
+title: EM_RECONVERSION mensagem (Richedit.h)
+description: Invoca a caixa de diálogo Reconversão do IME (Editor de Método de Entrada).
 ms.assetid: 1234905f-cbf2-42a3-b14a-5ade25ad9d75
 keywords:
-- Controles de EM_RECONVERSION de mensagens do Windows
+- EM_RECONVERSION controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25302515ec3cde7905d8164d8d7872431e33d581
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a0f0d567298a350a840af801ea712fce76ee81e43581d86c8df5c71d64805341
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118412752"
 ---
-# <a name="em_reconversion-message"></a>\_Mensagem em REconversão em
+# <a name="em_reconversion-message"></a>Mensagem EM \_ RECONVERSION
 
-Invoca a caixa de diálogo de reconversão do IME (editor de método de entrada).
+Invoca a caixa de diálogo Reconversão do IME (Editor de Método de Entrada).
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -43,7 +43,7 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem sempre retorna zero.
 
@@ -53,10 +53,10 @@ Essa mensagem sempre retorna zero.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| Redistribuível<br/>          | Edição avançada 3,0<br/>                                                              |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Redistribuível<br/>          | Rich Edit 3.0<br/>                                                              |
+| parâmetro<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -64,7 +64,7 @@ Essa mensagem sempre retorna zero.
 
 <dl> <dt>
 
-[**em \_ GETlangoptions**](em-getlangoptions.md)
+[**EM \_ GETLANGOPTIONS**](em-getlangoptions.md)
 </dt> </dl>
 
  

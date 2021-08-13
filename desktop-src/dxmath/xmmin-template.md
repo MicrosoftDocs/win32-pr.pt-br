@@ -4,12 +4,12 @@ ms.assetid: m:microsoft.directx_sdk.reference.xmmin(t,t)
 title: Modelo XMMin (DirectXMath. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 550fd93c9776ad8547502b50817446e64f9bdd64
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5c2d78b64a66411c31570267c66a7e75171dcf9da039871c07c8bfc31df49149
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118499851"
 ---
 # <a name="xmmin-template"></a>Modelo XMMin
 
@@ -56,7 +56,7 @@ Retorna o menor dos dois objetos de entrada.
  
 
 > [!Note]  
-> Idealmente, use std:: min em vez de `XMMin` . Para evitar conflitos com cabeçalhos do Windows com std:: min, você precisa \# definir NOMINMAX antes de incluir cabeçalhos do Windows.
+> Idealmente, use std:: min em vez de `XMMin` . para evitar conflitos com cabeçalhos de Windows com std:: min, você precisa \# definir NOMINMAX antes de incluir cabeçalhos de Windows.
 
  
 
@@ -64,7 +64,7 @@ Retorna o menor dos dois objetos de entrada.
 
 ### <a name="platform-requirements"></a>Requisitos de plataforma
 
-Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. Com suporte para aplicativos de área de trabalho Win32, aplicativos da Windows Store e aplicativos Windows Phone 8.
+Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. com suporte para aplicativos de área de trabalho do Win32, aplicativos da Windows store e aplicativos Windows Phone 8.
 
 ## <a name="requirements"></a>Requisitos
 

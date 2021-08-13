@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM PhysicalElementLocation associa um elemento físico a um \_ objeto de local CIM para fins de inventário ou substituição.
+description: A classe CIM PhysicalElementLocation associa um elemento físico a um objeto Local CIM para fins de inventário \_ \_ ou substituição.
 ms.assetid: d1698c1a-0eda-4e32-9a29-fb741b987671
 ms.tgt_platform: multiple
-title: Classe CIM_PhysicalElementLocation
+title: CIM_PhysicalElementLocation classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5e47460a3563d9b7a86aa6ee65704fcb0a422c39
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4ab75b4f7bd6e7aaff262445a33d412c587c1a9ba179f873c597a4cca3485323
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118678177"
 ---
-# <a name="cim_physicalelementlocation-class"></a>\_Classe CIM PhysicalElementLocation
+# <a name="cim_physicalelementlocation-class"></a>Classe CIM \_ PhysicalElementLocation
 
-A classe **CIM \_ PhysicalElementLocation** associa um elemento físico a um objeto de [**\_ local CIM**](cim-location.md) para fins de inventário ou substituição.
+A **classe \_ CIM PhysicalElementLocation** associa um elemento físico a um objeto [**Local CIM \_**](cim-location.md) para fins de inventário ou substituição.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) modelo CIM DMTF são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
-A sintaxe a seguir é simplificada do código formato MOF (MOF) e inclui todas as suas propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
+A sintaxe a seguir é simplificada do Managed Object Format (MOF) e inclui todas as suas propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,39 +47,39 @@ class CIM_PhysicalElementLocation
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ PhysicalElementLocation** tem estes tipos de membros:
+A **classe \_ CIM PhysicalElementLocation** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ PhysicalElementLocation** tem essas propriedades.
+A **classe \_ Cim PhysicalElementLocation** tem essas propriedades.
 
 <dl> <dt>
 
 **Element**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ físicoelement**
+Tipo de dados: **Cim \_ PhysicalElement**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Referência ao elemento físico cujo local está especificado.
+Referência ao elemento físico cujo local é especificado.
 
 </dd> <dt>
 
 **PhysicalLocation**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ local do CIM**
+Tipo de dados: **Localização cim \_**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificadores: [**Máx.**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
 Referência ao local do elemento físico.
@@ -90,7 +90,7 @@ Referência ao local do elemento físico.
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,8 +100,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

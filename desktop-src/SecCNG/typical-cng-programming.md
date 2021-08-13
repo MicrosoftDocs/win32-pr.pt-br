@@ -4,12 +4,12 @@ ms.assetid: a88a089b-4afe-4201-96f7-97f19bce18a1
 title: Programação CNG típica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1119da63ca1ea0613444b150914c06664f36c121
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d1cd45c68d7c34c3815008690b49cabfefff437222b29512abbf858cf3b370f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118905517"
 ---
 # <a name="typical-cng-programming"></a>Programação CNG típica
 
@@ -41,7 +41,7 @@ Dependendo do tipo de algoritmo usado, talvez seja necessário criar ou carregar
 
 Você pode criar chaves efêmeras com as funções [**BCryptGenerateSymmetricKey**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptgeneratesymmetrickey) e [**BCryptGenerateKeyPair**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptgeneratekeypair) . Você também pode importar chaves efêmeras de um BLOB de memória com as funções [**BCryptImportKey**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptimportkey) e [**BCryptImportKeyPair**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptimportkeypair) .
 
-Para chaves persistentes, você usa as funções de armazenamento de chaves para carregar um provedor de armazenamento de chaves e, em seguida, criar ou carregar as chaves. Você também pode usar essas funções para criar ou carregar chaves efêmeras passando **NULL** para qualquer nome de contêiner. Para obter mais informações sobre as funções de armazenamento de chaves, consulte [funções de armazenamento de chave CNG](cng-key-storage-functions.md).
+Para chaves persistentes, você usa as funções de armazenamento de chaves para carregar um provedor de armazenamento de chaves e, em seguida, criar ou carregar as chaves. Você também pode usar essas funções para criar ou carregar chaves efêmeras passando **NULL** para qualquer nome de contêiner. para obter mais informações sobre as funções de armazenamento de chaves, consulte [funções de Armazenamento de chave CNG](cng-key-storage-functions.md).
 
 ## <a name="performing-cryptographic-operations"></a>Executando operações criptográficas
 

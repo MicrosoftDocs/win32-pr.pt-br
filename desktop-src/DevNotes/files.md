@@ -4,12 +4,12 @@ ms.assetid: 0d87072a-e6c9-47af-9bcb-17ddca550282
 title: Arquivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a8e5459af901701692e8b2343db160b4ee93d2e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 64f5bc4bd4fdf0cd082248a378547de7142671799b520ebfcb19d767a7ca3254
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118404819"
 ---
 # <a name="files"></a>Arquivos
 
@@ -18,9 +18,9 @@ ms.locfileid: "104500801"
 -   [**\_lcreat**](/windows/win32/api/winbase/nf-winbase-_lcreat)
 -   [**\_llseek**](/windows/win32/api/winbase/nf-winbase-_llseek)
 -   [**\_lwrite**](/windows/win32/api/winbase/nf-winbase-_lwrite)
--   [**\_chave de \_ \_ retomada de solicitação do fsctl SRV \_**](fsctl-srv-request-resume-key.md)
--   [**COPYCHUNK de IOCTL \_**](ioctl-copychunk.md)
--   [**IOCTL \_ LMR \_ desabilitar \_ o \_ buffer local**](ioctl-lmr-disable-local-buffering.md)
+-   [**CHAVE DE RETOMADA DA \_ SOLICITAÇÃO SRV FSCTL \_ \_ \_**](fsctl-srv-request-resume-key.md)
+-   [**IOCTL \_ COPYCHUNK**](ioctl-copychunk.md)
+-   [**IOCTL \_ LMR \_ DESABILITAR \_ O BUFFER \_ LOCAL**](ioctl-lmr-disable-local-buffering.md)
 -   [Tabela de arquivos mestre](master-file-table.md)
 -   [**NtCreateFile**](/windows/desktop/api/Winternl/nf-winternl-ntcreatefile)
 -   [**NtOpenDirectoryObject**](ntopendirectoryobject.md)

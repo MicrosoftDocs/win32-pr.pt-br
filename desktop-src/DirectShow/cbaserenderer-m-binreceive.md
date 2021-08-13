@@ -1,7 +1,7 @@
 ---
-description: Sinalizador que indica se o filtro está processando uma chamada de recebimento.
+description: Sinalizador que indica se o filtro está processando uma chamada receive.
 ms.assetid: 4b0d34c4-551a-4674-bda9-be67ed22d09b
-title: 'Membro CBaseRenderer:: m_bInReceive (Renbase. h)'
+title: Membro CBaseRenderer::m_bInReceive (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c5bcc3666200630575cacfdebac769f25545a077
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1059684d2c1905a7894294248f44f9ee97521d1e27ebc3be4a58d832603c642e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403058"
 ---
-# <a name="cbaserendererm_binreceive-member"></a>Membro de CBaseRenderer:: m \_ bInReceive
+# <a name="cbaserendererm_binreceive-member"></a>Membro CBaseRenderer::m \_ bInReceive
 
-Sinalizador que indica se o filtro está processando uma chamada de **recebimento** .
+Sinalizador que indica se o filtro está processando uma **chamada receive.**
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,8 +42,8 @@ BOOL m_bInReceive;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Renbase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Renbase.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

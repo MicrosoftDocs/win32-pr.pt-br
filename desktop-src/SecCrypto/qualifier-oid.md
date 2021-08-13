@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: a86aaf7b60b98811e2d1fbef79c520448f1d47f3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 42c2f83d4fa8be31991a98b6fe4cfc6a741e2190cd12d54bfd5e968951472bcf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118901046"
 ---
 # <a name="qualifieroid-property"></a>Propriedade Qualifier. OID
 
@@ -26,7 +26,7 @@ ms.locfileid: "105758001"
 
 A propriedade **OID** recupera a ID de objeto do qualificador. Essa é a propriedade padrão.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```VB
@@ -45,7 +45,7 @@ Um objeto [**OID**](oid.md) que identifica o qualificador.
 
 | Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Redistribuível<br/> | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

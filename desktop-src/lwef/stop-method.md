@@ -1,19 +1,19 @@
 ---
-title: Método Stop (recursos de ambiente herdado do Windows)
+title: método Stop (recursos de ambiente de Windows herdados)
 description: Método Stop
 ms.assetid: 68372f72-db9c-447c-a3e4-488940c730d7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20192634c197559ca54bb8af3d8a29f37beb53e2
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 572a93db5697aaae0dcfed6b45a834323c106bba447d2d9a8e94109f788af25c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105771601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118745958"
 ---
-# <a name="stop-method-legacy-windows-environment-features"></a>Método Stop (recursos de ambiente herdado do Windows)
+# <a name="stop-method-legacy-windows-environment-features"></a>método Stop (recursos de ambiente de Windows herdados)
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 

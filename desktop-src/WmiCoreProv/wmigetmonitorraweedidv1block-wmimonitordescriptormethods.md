@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 1af1ddb86a90ea9029d5cba408745fe3dafa69dc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dacd0c44a6c0fa8270a65155583f8041616f98674d0798db8b13a72d13751653
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105765259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118558081"
 ---
 # <a name="wmigetmonitorraweedidv1block-method-of-the-wmimonitordescriptormethods-class"></a>Método WmiGetMonitorRawEEdidV1Block da classe WmiMonitorDescriptorMethods
 
@@ -60,7 +60,7 @@ Tipo de bloco de dados. A tabela a seguir lista os possíveis valores de retorno
 | <dl> <dt>0 (0x0)</dt> </dl>    | Não Inicializado<br/>   |
 | <dl> <dt>1 (0x1)</dt> </dl>    | Bloco base EDID<br/> |
 | <dl> <dt>2 (0x2)</dt> </dl>    | Mapa de bloco EDID<br/>  |
-| <dl> <dt>255 (0xFF)</dt> </dl> | Outro<br/>           |
+| <dl> <dt>255 (0xFF)</dt> </dl> | Outros<br/>           |
 
 
 
@@ -75,7 +75,7 @@ Uma matriz de 128 bytes que contém o conteúdo de bloco bruto.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna zero (0) para indicar êxito. Qualquer outro número indica um erro. Para obter mais informações sobre códigos de erro, consulte [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum).
 

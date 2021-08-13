@@ -4,12 +4,12 @@ ms.assetid: 69F9EA59-41B4-4DE5-A77D-1D0E59BFBF3A
 title: Atributo MF_SA_REQUIRED_SAMPLE_COUNT_PROGRESSIVE (Mftransform. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e48d56bf1e21a64c0a4d225a72a6386b4789ae7b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9d981535d66c0e6b50b82bc5b59d7096658a775651574cd4dbb26166b3e418a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118740047"
 ---
 # <a name="mf_sa_required_sample_count_progressive-attribute"></a>\_Exemplo de \_ \_ \_ atributo progressivo de contagem de amostra necessária \_ do MF
 
@@ -29,8 +29,8 @@ Esse valor será usado se o próximo nó downstream tiver um [**IMFVideoSampleAl
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                     |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                               |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                     |
 | parâmetro<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
 
 

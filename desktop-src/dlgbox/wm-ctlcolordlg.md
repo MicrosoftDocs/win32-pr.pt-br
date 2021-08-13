@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 833d3894a85342b0f26323ceed0f4fb3356c48ae
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a5b7ab11bbb2cfd402888f930d5bcf2afa08b7ba83f74252fb3e443fd9e9309a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118503409"
 ---
 # <a name="wm_ctlcolordlg-message"></a>Mensagem do WM \_ CTLCOLORDLG
 
@@ -50,7 +50,7 @@ Um identificador para a caixa de diálogo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar um identificador para um pincel. O sistema usa o pincel para pintar o plano de fundo da caixa de diálogo.
 
@@ -62,9 +62,9 @@ O sistema não destrói automaticamente o pincel retornado. É responsabilidade 
 
 A mensagem do **WM \_ CTLCOLORDLG** nunca é enviada entre threads. Ele é enviado somente dentro de um thread.
 
-Observe que a mensagem do **WM \_ CTLCOLORDLG** é enviada para a própria caixa de diálogo; todas as outras mensagens do **WM \_ CTLCOLOR \** _ são enviadas para o proprietário do controle.
+Observe que a mensagem do **WM \_ CTLCOLORDLG** é enviada para a própria caixa de diálogo; todas as outras mensagens do **WM \_ CTLCOLOR \*** são enviadas para o proprietário do controle.
 
-Se um procedimento da caixa de diálogo tratar essa mensagem, ele deverá converter o valor de retorno desejado em um _ *int \_ PTR** e retornar o valor diretamente. Se o procedimento da caixa de diálogo retornar **false**, a manipulação de mensagens padrão será executada. O valor de **\_ MSGRESULT DWL** definido pela função [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) é ignorado.
+Se um procedimento da caixa de diálogo tratar essa mensagem, ele deverá converter o valor de retorno desejado em um **int \_ PTR** e retornar o valor diretamente. Se o procedimento da caixa de diálogo retornar **false**, a manipulação de mensagens padrão será executada. O valor de **\_ MSGRESULT DWL** definido pela função [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) é ignorado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,7 +74,7 @@ Se um procedimento da caixa de diálogo tratar essa mensagem, ele deverá conver
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

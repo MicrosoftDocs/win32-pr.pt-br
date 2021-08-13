@@ -1,36 +1,36 @@
 ---
-description: Contém o índice de base zero de um fluxo de mídia para um evento MFPlay.
+description: Contém o índice baseado em zero de um fluxo de mídia para um evento MFPlay.
 ms.assetid: 086fcb1e-f75a-4f38-9fe1-77d30f64bc89
-title: Propriedade MFP_PKEY_StreamIndex (Mfplay. h)
+title: MFP_PKEY_StreamIndex propriedade (Mfplay.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 341368a9a2a3e4911279df4c0bc116b4c6c1bc52
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a08fe432dc18caf2bf1a7ec946236aa6560382b2f19b6b98e4b0a1369dc278a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118738490"
 ---
-# <a name="mfp_pkey_streamindex-property"></a>\_Propriedade PKEY \_ STREAMINDEX de MFP
+# <a name="mfp_pkey_streamindex-property"></a>Propriedade \_ MFP PKEY \_ StreamIndex
 
 > [!IMPORTANT]
-> Preterido. Essa API pode ser removida de versões futuras do Windows. Os aplicativos devem usar a [sessão de mídia](media-session.md) para reprodução.
+> Preterido. Essa API pode ser removida de versões futuras do Windows. Os aplicativos devem usar a [Sessão de Mídia](media-session.md) para reprodução.
 
  
 
-Contém o índice de base zero de um fluxo de mídia para um evento MFPlay.
+Contém o índice baseado em zero de um fluxo de mídia para um evento MFPlay.
 
 
 
 Tipo de dados
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Membro PROPVARIANT
 
 **ULONG**
 
-\_UI4 VT
+VT \_ UI4
 
 **ulVal**
 
@@ -42,9 +42,9 @@ Membro PROPVARIANT
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                             |
-| parâmetro<br/>                   | <dl> <dt>Mfplay. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                             |
+| parâmetro<br/>                   | <dl> <dt>Mfplay.h</dt> </dl> |
 
 
 
@@ -52,10 +52,10 @@ Membro PROPVARIANT
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> <dt>
 
-[**evento da MFP \_ MF \_**](/windows/desktop/api/mfplay/ns-mfplay-mfp_mf_event)
+[**EVENTO \_ MFP \_ MF**](/windows/desktop/api/mfplay/ns-mfplay-mfp_mf_event)
 </dt> </dl>
 
  

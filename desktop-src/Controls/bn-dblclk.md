@@ -3,7 +3,7 @@ title: Código de notificação BN_DBLCLK (WinUser. h)
 description: BN_DBLCLK código de notificação-enviado quando o usuário clica duas vezes em um botão.
 ms.assetid: 60cc033f-8b84-4aa5-b625-fdee9deb4757
 keywords:
-- BN_DBLCLK de código de notificação controles do Windows
+- BN_DBLCLK código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fdb403f37b8fee9ea36023a7cd2511bbaaa2af81
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7a80886811a5fcc91f4f0a1217754fdd1daf0cca5b39c1158235d77351008788
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118674350"
 ---
 # <a name="bn_dblclk-notification-code"></a>Código de notificação do bilhão \_ DBLCLK
 
@@ -65,9 +65,9 @@ BILHÃO \_ DBLCLK é o mesmo que o código de notificação do [bilhão \_ doubl
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| parâmetro<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

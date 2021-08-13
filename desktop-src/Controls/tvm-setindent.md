@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TVM_SETINDENT (commctrl. h)
-description: Define a largura do recuo para um controle de exibição de árvore e redesenha o controle para refletir a nova largura. Você pode enviar essa mensagem explicitamente ou usando a \_ macro SetIndent de TreeView.
+title: TVM_SETINDENT mensagem (Commctrl.h)
+description: Define a largura do recuo para um controle de exibição de árvore e redesenha o controle para refletir a nova largura. Você pode enviar essa mensagem explicitamente ou usando a macro TreeView \_ SetIndent.
 ms.assetid: 377da8fe-c8e6-479b-a283-f1811cbc3e58
 keywords:
-- Controles de TVM_SETINDENT de mensagens do Windows
+- TVM_SETINDENT controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f85263c7c4330a692dc08949870a0eaa92f2b22c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 538a89439909afe346ae8776d31a2104c7f6014664a33bdd3864bf43b0387e80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118669661"
 ---
-# <a name="tvm_setindent-message"></a>Mensagem de TVM de \_ SUBrecuo
+# <a name="tvm_setindent-message"></a>Mensagem TVM \_ SETINDENT
 
-Define a largura do recuo para um controle de exibição de árvore e redesenha o controle para refletir a nova largura. Você pode enviar essa mensagem explicitamente ou usando a macro [**\_ SetIndent de TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setindent) .
+Define a largura do recuo para um controle de exibição de árvore e redesenha o controle para refletir a nova largura. Você pode enviar essa mensagem explicitamente ou usando a [**macro TreeView \_ SetIndent.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setindent)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -39,13 +39,13 @@ Largura, em pixels, do recuo. Se esse parâmetro for menor que a largura mínima
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-O valor de recuo mínimo definido pelo sistema normalmente é de cinco pixels, mas não é fixo. Para recuperar o valor exato do recuo mínimo em um sistema específico, envie uma mensagem **TVM \_ SetIndent** com *wParam* definido como zero. Em seguida, envie uma mensagem [**TVM \_ GetIndent**](tvm-getindent.md) para recuperar o valor mínimo de recuo.
+O valor de recuo mínimo definido pelo sistema normalmente é de cinco pixels, mas não é fixo. Para recuperar o valor exato do recuo mínimo em um sistema específico, envie uma mensagem **\_ TVM SETINDENT** com *wParam definido* como zero. Em seguida, [**envie uma \_ mensagem GETINDENT do TVM**](tvm-getindent.md) para recuperar o valor mínimo de recuo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ O valor de recuo mínimo definido pelo sistema normalmente é de cinco pixels, m
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| parâmetro<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ O valor de recuo mínimo definido pelo sistema normalmente é de cinco pixels, m
 
 <dl> <dt>
 
-[**Defaultindent de TreeView \_**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setindent)
+[**TreeView \_ SetIndent**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setindent)
 </dt> </dl>
 
  

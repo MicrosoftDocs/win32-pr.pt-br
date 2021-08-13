@@ -1,7 +1,7 @@
 ---
 description: A \_ variável de membro m hPalette é um identificador para a paleta lógica que esse objeto gerencia.
 ms.assetid: 8c73adc1-0c01-4518-a0dd-17c7bff6c92b
-title: 'Membro CImagePalette:: m_hPalette (Winutil. h)'
+title: Membro CImagePalette::m_hPalette (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2009e483c636cc8f4bf68fc561efa64fd0a3e4f4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4525b0af31190a6de8bf312f297f4714591818fde1bf61e23798fe1b6e8a3cb0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118402546"
 ---
-# <a name="cimagepalettem_hpalette-member"></a>Membro de CImagePalette:: m \_ hPalette
+# <a name="cimagepalettem_hpalette-member"></a>Membro CImagePalette::m \_ hPalette
 
 A `m_hPalette` variável de membro é um identificador para a paleta lógica que esse objeto gerencia.
 
@@ -42,8 +42,8 @@ HPALETTE m_hPalette;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

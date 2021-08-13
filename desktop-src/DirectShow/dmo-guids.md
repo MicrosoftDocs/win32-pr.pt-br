@@ -1,19 +1,19 @@
 ---
-description: A tabela a seguir lista os GUIDs (identificadores globais exclusivos) definidos para as categorias do Microsoft DirectX Media Object (DMO). Essas GUIDs são definidas no arquivo de cabeçalho Dmoreg. h e exportadas pela biblioteca Dmoguids. lib.
+description: a tabela a seguir lista os guids (identificadores globais exclusivos) definidos para as categorias do Microsoft DirectX Media Object (DMO). Essas GUIDs são definidas no arquivo de cabeçalho Dmoreg. h e exportadas pela biblioteca Dmoguids. lib.
 ms.assetid: d67debd0-8ecb-41ab-bc6c-b27cba97c65a
-title: GUIDs DMO (Dmoreg. h)
+title: DMO GUIDs (Dmoreg. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c10d5bd917d6368d398362e76ffa9ea8255933ed
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 93db9f78a5c256d2a6703f01fa4195b1aa293ef7e79eeb6b4da59557b849c805
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118653104"
 ---
-# <a name="dmo-guids"></a>GUIDs de DMO
+# <a name="dmo-guids"></a>DMO GUIDs
 
-A tabela a seguir lista os GUIDs (identificadores globais exclusivos) definidos para as categorias do Microsoft DirectX Media Object (DMO). Essas GUIDs são definidas no arquivo de cabeçalho Dmoreg. h e exportadas pela biblioteca Dmoguids. lib.
+a tabela a seguir lista os guids (identificadores globais exclusivos) definidos para as categorias do Microsoft DirectX Media Object (DMO). Essas GUIDs são definidas no arquivo de cabeçalho Dmoreg. h e exportadas pela biblioteca Dmoguids. lib.
 
 Para enumerar o DMOs registrado em uma categoria, passe o GUID correspondente para a função [**DMOEnum**](/previous-versions/windows/desktop/api/Dmoreg/nf-dmoreg-dmoenum) .
 
@@ -45,7 +45,7 @@ Para enumerar o DMOs registrado em uma categoria, passe o GUID correspondente pa
 
 <dl> <dt>
 
-[Constantes do DMO](dmo-constants.md)
+[DMO :](dmo-constants.md)
 </dt> </dl>
 
  
