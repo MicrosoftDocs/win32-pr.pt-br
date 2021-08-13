@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a584caf0f7c59c77e7d3c4a058a03780043e0f87
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 902fb39a566c7c61f652d1a3796b20d550ce4bd2b61d706b955469af5762011d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105766549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118272480"
 ---
 # <a name="apijetfreebuffer-method"></a>Método API. JetFreeBuffer
 

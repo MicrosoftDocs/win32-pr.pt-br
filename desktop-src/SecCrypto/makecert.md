@@ -4,12 +4,12 @@ ms.assetid: a28e77dd-72c9-42a3-a72d-1b3eaf59d9cf
 title: MakeCert
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 461c15db364066d9edadb6a0c4d2c24dceab5cc9
-ms.sourcegitcommit: dc2f43e0f23f4a4ce239118cf9a5180f3ff0dd1d
+ms.openlocfilehash: acd9f15f942fb6dd7c4c831cb33552b6f59ec2cd6cf9cac9654386d6adc27649
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "108327140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119425736"
 ---
 # <a name="makecert"></a>MakeCert
 
@@ -18,7 +18,7 @@ ms.locfileid: "108327140"
 
  
 
-A ferramenta MakeCert cria um certificado [*X. 509*](../secgloss/x-gly.md) , assinado pela chave raiz de teste ou outra chave especificada, que associa seu nome à parte pública do par de chaves. O certificado é salvo em um arquivo, um repositório de certificados do sistema ou ambos. A ferramenta é instalada na \\ pasta bin do caminho de instalação do SDK (Software Development Kit) do Microsoft Windows.
+A ferramenta MakeCert cria um certificado [*X. 509*](../secgloss/x-gly.md) , assinado pela chave raiz de teste ou outra chave especificada, que associa seu nome à parte pública do par de chaves. O certificado é salvo em um arquivo, um repositório de certificados do sistema ou ambos. a ferramenta é instalada na \\ pasta Bin do caminho de instalação do Software Development Kit (SDK) do Microsoft Windows.
 
 A ferramenta MakeCert usa a seguinte sintaxe de comando:
 
@@ -113,7 +113,7 @@ As opções fornecidas nas tabelas a seguir podem ser usadas somente com o Inter
 <td>Especificação da chave da entidade. <em>SubjectKeySpec</em> deve ser um dos três valores possíveis:<br/>
 <ul>
 <li><strong>Assinatura</strong> (AT_SIGNATURE especificação de chave)</li>
-<li><strong>Troca</strong> (AT_KEYEXCHANGE especificação de chave)</li>
+<li><strong>Exchange</strong> (AT_KEYEXCHANGE especificação de chave)</li>
 <li>Um inteiro, como <strong>3</strong></li>
 </ul>
 Para obter mais informações, consulte a observação que segue esta tabela.<br/></td>
@@ -162,11 +162,11 @@ Para obter mais informações, consulte a observação que segue esta tabela.<br
  
 
 > [!Note]  
-> Se a opção de especificação de chave **-céu** for usada no Internet Explorer versão 4,0 ou posterior, a especificação deverá corresponder à especificação de chave indicada pelo arquivo de [*chave privada*](../secgloss/p-gly.md) ou pelo [*contêiner de chave*](../secgloss/k-gly.md)privada. Se a opção de especificação de chave não for usada, a especificação de chave indicada pelo arquivo de chave privada ou pelo contêiner de chave privada será usada. Se houver mais de uma especificação de chave no contêiner de chave, o MakeCert tentará primeiro usar a \_ especificação de chave de assinatura at. Se isso falhar, o MakeCert tentará usar AT \_ Exchange. Como a maioria dos usuários tem uma \_ chave de assinatura at ou uma \_ chave de troca de chaves, essa opção não precisa ser usada na maioria dos casos.
+> Se a opção de especificação de chave **-céu** for usada no Internet Explorer versão 4,0 ou posterior, a especificação deverá corresponder à especificação de chave indicada pelo arquivo de [*chave privada*](../secgloss/p-gly.md) ou pelo [*contêiner de chave*](../secgloss/k-gly.md)privada. Se a opção de especificação de chave não for usada, a especificação de chave indicada pelo arquivo de chave privada ou pelo contêiner de chave privada será usada. Se houver mais de uma especificação de chave no contêiner de chave, MakeCert primeiro tentará usar a especificação da chave AT \_ SIGNATURE. Se isso falhar, o MakeCert tentará usar AT \_ KEYEXCHANGE. Como a maioria dos usuários tem uma chave AT SIGNATURE ou uma \_ chave AT KEYEXCHANGE, essa opção não precisa ser \_ usada na maioria dos casos.
 
  
 
-As opções a seguir são apenas para arquivos SPC ( [*certificado do fornecedor de software*](../secgloss/s-gly.md) ) e tecnologia de chave privada.
+As opções a seguir são apenas para arquivos SPC (Certificado Publisher [*software)*](../secgloss/s-gly.md) e tecnologia de chave privada.
 
 
 
@@ -183,34 +183,34 @@ As opções a seguir são apenas para arquivos SPC ( [*certificado do fornecedor
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>-IC</strong> <strong></strong> <em>IssuerCertFile</em></td>
+<td><strong>-ic</strong> <strong></strong> <em>IssuerCertFile</em></td>
 <td>Local do certificado do emissor.</td>
 </tr>
 <tr class="even">
-<td><strong>-IK</strong> <strong></strong> <em>IssuerKey</em></td>
+<td><strong>-ik</strong> <strong></strong> <em>IssuerKey</em></td>
 <td>Local do contêiner de chave do emissor. O padrão é a chave raiz de teste.</td>
 </tr>
 <tr class="odd">
-<td><strong>-iKy</strong> <strong></strong> <em>IssuerKeySpec</em></td>
-<td>A especificação de chave do emissor, que deve ser um dos três valores possíveis:<br/>
+<td><strong>-iky</strong> <strong></strong> <em>IssuerKeySpec</em></td>
+<td>Especificação de chave do emissor, que deve ser um dos três valores possíveis:<br/>
 <ul>
-<li><strong>Assinatura</strong> (AT_SIGNATURE especificação de chave)</li>
-<li><strong>Troca</strong> (AT_KEYEXCHANGE especificação de chave)</li>
+<li><strong>Assinatura</strong> (AT_SIGNATURE de chave)</li>
+<li><strong>Exchange</strong> (AT_KEYEXCHANGE de chave)</li>
 <li>Um inteiro, como <strong>3</strong></li>
 </ul>
-Para obter mais informações, consulte a observação que segue esta tabela.<br/></td>
+Para obter mais informações, consulte a Observação que segue esta tabela.<br/></td>
 </tr>
 <tr class="even">
-<td><strong>-IP</strong> <strong></strong> <em>IssuerProviderName</em></td>
-<td>Provedor de CryptoAPI para emissor. O padrão é o provedor do usuário. Para obter informações sobre provedores de CryptoAPI, consulte a documentação do CryptoAPI 2.0.</td>
+<td><strong>-ip</strong> <strong></strong> <em>IssuerProviderName</em></td>
+<td>Provedor CryptoAPI para emissor. O padrão é o provedor do usuário. Para obter informações sobre provedores de CryptoAPI, consulte a documentação CryptoAPI 2.0 dados.</td>
 </tr>
 <tr class="odd">
-<td><strong>-IV</strong> <strong></strong> <em>IssuerKeyFile</em></td>
-<td>Arquivo de chave privada do emissor. O padrão é a raiz do teste.</td>
+<td><strong>-iv</strong> <strong></strong> <em>IssuerKeyFile</em></td>
+<td>O arquivo de chave privada do emissor. O padrão é a raiz do teste.</td>
 </tr>
 <tr class="even">
 <td><strong>-iy</strong> <strong></strong> <em>nIssuerProviderType</em></td>
-<td>Tipo de provedor de CryptoAPI para emissor. O padrão é <a href="/windows/desktop/SecGloss/p-gly"><em>PROV_RSA_FULL</em></a>. Para obter informações sobre tipos de provedor de CryptoAPI, consulte a documentação do CryptoAPI 2.0.</td>
+<td>Tipo de provedor CryptoAPI para o emissor. O padrão é <a href="/windows/desktop/SecGloss/p-gly"><em>PROV_RSA_FULL</em></a>. Para obter informações sobre tipos de provedor CryptoAPI, consulte a documentação CryptoAPI 2.0 criptografia.</td>
 </tr>
 </tbody>
 </table>
@@ -220,20 +220,20 @@ Para obter mais informações, consulte a observação que segue esta tabela.<br
  
 
 > [!Note]  
-> Se a opção de especificação de chave **-iKy** for usada no Internet Explorer 4,0 ou posterior, a especificação deverá corresponder à especificação de chave indicada pelo arquivo de [*chave privada*](../secgloss/p-gly.md) ou pelo [*contêiner de chave*](../secgloss/k-gly.md)privada. Se a opção de especificação de chave não for usada, a especificação de chave indicada pelo arquivo de chave privada ou pelo contêiner de chave privada será usada. Se houver mais de uma especificação de chave no contêiner de chave, o MakeCert tentará primeiro usar a \_ especificação de chave de assinatura at. Se isso falhar, o MakeCert tentará usar AT \_ Exchange. Como a maioria dos usuários tem uma \_ chave de assinatura at ou uma \_ chave de troca de chaves, essa opção não precisa ser usada na maioria dos casos.
+> Se a **opção -iky** key specification for usada no Internet Explorer 4.0 ou posterior, a [](../secgloss/p-gly.md) especificação deverá corresponder à especificação de chave indicada pelo arquivo de chave privada ou pelo contêiner de [*chave privada*](../secgloss/k-gly.md). Se a opção de especificação de chave não for usada, a especificação de chave indicada pelo arquivo de chave privada ou pelo contêiner de chave privada será usada. Se houver mais de uma especificação de chave no contêiner de chave, MakeCert primeiro tentará usar a especificação da chave AT \_ SIGNATURE. Se isso falhar, o MakeCert tentará usar AT \_ KEYEXCHANGE. Como a maioria dos usuários tem uma chave AT SIGNATURE ou uma \_ chave AT KEYEXCHANGE, essa opção não precisa ser \_ usada na maioria dos casos.
 
  
 
-As opções a seguir são apenas para a tecnologia de [*repositório de certificados*](../secgloss/c-gly.md) .
+As opções a seguir são apenas para [*tecnologia de armazenamento*](../secgloss/c-gly.md) de certificados.
 
 
 
-| Opção de repositório de certificados          | Descrição                                                                                                                                                                                                                                                                                                                              |
+| Opção de armazenamento de certificados          | Descrição                                                                                                                                                                                                                                                                                                                              |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **-IC** *IssuerCertFile*          | Arquivo que contém o certificado do emissor. O MakeCert pesquisará no repositório de certificados para um certificado com uma correspondência exata.                                                                                                                                                                                                        |
-| **-em** *IssuerNameString*        | Nome comum do certificado do emissor. O MakeCert pesquisará no repositório de certificados para um certificado cujo nome comum inclua *IssuerNameString*.                                                                                                                                                                                  |
-| **-ir** *IssuerCertStoreLocation* | Local do registro do repositório de certificados do emissor. *IssuerCertStoreLocation* deve ser **LocalMachine** (chave do registro hKey \_ local \_ Machine) ou **CurrentUser** (chave do registro hKey \_ Current \_ User). **CurrentUser** é o padrão.                                                                                                |
-| **-é** *IssuerCertStoreName*     | Repositório de certificados do emissor que inclui o certificado do emissor e suas informações de chave privada associadas. Se houver mais de um certificado no repositório, o usuário deverá identificá-lo exclusivamente usando a opção **-IC** ou **-in** . Se o certificado no repositório de certificados não for identificado de forma exclusiva, o MakeCert falhará. |
+| **-ic** *IssuerCertFile*          | Arquivo que contém o certificado do emissor. MakeCert pesquisa no armazenamento de certificados um certificado com uma combinação exata.                                                                                                                                                                                                        |
+| **-in** *IssuerNameString*        | Nome comum do certificado do emissor. MakeCert pesquisa no armazenamento de certificados um certificado cujo nome comum inclui *IssuerNameString*.                                                                                                                                                                                  |
+| **-ir** *IssuerCertStoreLocation* | Local do Registro do armazenamento de certificados do emissor. *IssuerCertStoreLocation* deve ser **LocalMachine** (chave do Registro HKEY LOCAL MACHINE) ou \_ \_ **CurrentUser** (chave do Registro HKEY \_ CURRENT \_ USER). **CurrentUser** é o padrão.                                                                                                |
+| **-is** *IssuerCertStoreName*     | O armazenamento de certificados do emissor que inclui o certificado do emissor e suas informações de chave privada associadas. Se houver mais de um certificado no armazenamento, o usuário deverá identificá-lo exclusivamente usando a **opção -ic** **ou -in.** Se o certificado no armazenamento de certificados não for identificado exclusivamente, o MakeCert falhará. |
 
 
 

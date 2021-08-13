@@ -1,6 +1,6 @@
 ---
 title: Estrutura de D3DX11_IMAGE_INFO (D3DX11tex. h)
-description: Observe que a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store. Opcionalmente, forneça informações para APIs do carregador de textura para controlar como as texturas são carregadas. | Estrutura de D3DX11_IMAGE_INFO (D3DX11tex. h)
+description: observe que a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows. Opcionalmente, forneça informações para APIs do carregador de textura para controlar como as texturas são carregadas. | Estrutura de D3DX11_IMAGE_INFO (D3DX11tex. h)
 ms.assetid: 981f4f1d-7609-416a-8f92-c7223d8b2773
 keywords:
 - Estrutura D3DX11_IMAGE_INFO Direct3D 11
@@ -15,17 +15,17 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 927967f8e76d0147ccc264bcbdd773191a170ae7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 64366755e9bb9398e8107d931ee5425d2fcee78fdd9d03487b9533270cc17c19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104968693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118536863"
 ---
 # <a name="d3dx11_image_info-structure"></a>Estrutura de informações de \_ imagem D3DX11 \_
 
 > [!Note]  
-> A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+> a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 
  
 

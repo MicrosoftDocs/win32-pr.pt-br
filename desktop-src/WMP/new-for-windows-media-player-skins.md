@@ -1,12 +1,12 @@
 ---
-title: Novo para as capas do Windows Media Player
-description: Novo para as capas do Windows Media Player
+title: novo para aparências de Windows Media Player
+description: novo para aparências de Windows Media Player
 ms.assetid: 72ca819a-267d-4c7a-9b1e-b28c1a7a85cc
 keywords:
 - Windows Media Player, o que há de novo
 - Windows Media Player, novos recursos
-- Capas do Windows Media Player, o que há de novo
-- Capas do Windows Media Player, novos recursos
+- Windows Media Player capas, o que há de novo
+- Windows Media Player capas, novos recursos
 - capas, o que há de novo
 - capas, novos recursos
 - novidades, capas
@@ -15,25 +15,25 @@ keywords:
 - compatibilidade, capas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 512f23c3cd4dca45ae84a2ae96a3c78c98a73268
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 17a7290c42728a8e847279fc467b6f8a619ef2ff5235eb6eee2f1fa2554a9133
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118573782"
 ---
-# <a name="new-for-windows-media-player-skins"></a>Novo para as capas do Windows Media Player
+# <a name="new-for-windows-media-player-skins"></a>novo para aparências de Windows Media Player
 
-O Windows Media Player 7,0 introduziu a tecnologia de capa. Os elementos e atributos disponíveis permaneceram inalterados para o Windows Media Player 7,1 e o Windows Media Player para Windows XP. O Windows Media Player 9 Series introduziu novos elementos e atributos que você pode usar. O Windows Media Player 10 apresenta um novo atributo.
+Windows Media Player 7,0 introduziu a tecnologia de capa. os elementos e atributos disponíveis permaneceram inalterados para Windows Media Player 7,1 e Windows Media Player para Windows XP. o Windows Media Player 9 Series introduziu novos elementos e atributos que você pode usar. o Windows Media Player 10 apresenta um novo atributo.
 
 Cada tópico na seção referência de programação de capa inclui uma seção de requisitos que lista o requisito mínimo para o elemento, o método, o manipulador de eventos ou o atributo individual. A lista a seguir também detalha os novos itens para versões específicas do Windows Media Player.
 
-## <a name="added-for-windows-media-player-for-windows-xp"></a>Adicionado ao Windows Media Player para Windows XP
+## <a name="added-for-windows-media-player-for-windows-xp"></a>adicionado para Windows Media Player para Windows XP
 
 -   [EFFECTs. effectCanGoFullScreen](effects-effectcangofullscreen.md)
 -   [EFFECTs. effectCount](effects-effectcount.md)
 
-## <a name="added-for-windows-media-player-9-series"></a>Adicionado ao Windows Media Player 9 Series
+## <a name="added-for-windows-media-player-9-series"></a>adicionado ao Windows Media Player 9 Series
 
 -   Atributo [ambiente. accDescription](ambientattributes-accdescription.md)
 -   Atributo [ambiente. accKeyboardShortcut](ambientattributes-acckeyboardshortcut.md)
@@ -107,7 +107,7 @@ Cada tópico na seção referência de programação de capa inclui uma seção 
 -   [WMPEFFECTS](wmpeffects.md) Elemento predefinido
 -   [WMPVIDEO](wmpvideo.md) Elemento predefinido
 
-## <a name="added-for-windows-media-player-10"></a>Adicionado ao Windows Media Player 10
+## <a name="added-for-windows-media-player-10"></a>adicionado para o Windows Media Player 10
 
 -   [PLAYLIST. toolbarVisible](playlist-toolbarvisible.md)
 -   [PLAYLIST. itemSelectedBackgroundColor](playlist-itemselectedbackgroundcolor.md)
@@ -115,7 +115,7 @@ Cada tópico na seção referência de programação de capa inclui uma seção 
 -   [PLAYLIST. itemSelectedColor](playlist-itemselectedcolor.md)
 -   [PLAYLIST. itemSelectedFocusLostColor](playlist-itemselectedfocuslostcolor.md)
 
-## <a name="added-for-windows-media-player-11"></a>Adicionado ao Windows Media Player 11
+## <a name="added-for-windows-media-player-11"></a>adicionado para o Windows Media Player 11
 
 -   [Ambiente de nível inferior](ambientattributes-bottom.md)
 -   [Ambienteattributes. moveSizeTo](ambientattributes-movesizeto.md)
@@ -137,9 +137,9 @@ Cada tópico na seção referência de programação de capa inclui uma seção 
 [O que era novidade no Windows Media Player 11](what-was-new-in-windows-media-player-11.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

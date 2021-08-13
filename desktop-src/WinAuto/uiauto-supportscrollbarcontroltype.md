@@ -21,12 +21,12 @@ keywords:
 - tipos de controle, barra de rolagem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2168401c313dd9139f44ba615de945802b307d64
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1a25d0398ca8e094e1dbec5e06eb725f3e9d7edbb5c193fdc3699e166b118142
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105783692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119413366"
 ---
 # <a name="scrollbar-control-type"></a>Tipo de controle ScrollBar
 
@@ -77,7 +77,7 @@ A tabela a seguir descreve um controle típico e a exibição de conteúdo da á
 
 
 
- 
+ 
 
 O controle da barra de rolagem pode ter de zero a cinco filhos. Como a subárvore tem mais de um controle de botão, o elemento deve definir um valor de [**\_ AutomationIdPropertyId de UIA**](uiauto-automation-element-propids.md) específico para cada item para torná-lo detectável para ferramentas de teste automatizadas.
 
@@ -105,7 +105,7 @@ Para obter mais informações sobre propriedades de automação da interface do 
 
 
 
- 
+ 
 
 ## <a name="required-control-patterns"></a>Padrões de controle necessários
 
@@ -114,43 +114,43 @@ A tabela a seguir lista os padrões de controle de automação da interface do u
 > [!Note]  
 > Quando uma barra de rolagem é usada como um controle apenas para a manipulação do mouse, ela não oferece suporte a padrões de controle. Se ele for usado como um controle deslizante dentro de um aplicativo, ele deverá receber o tipo de controle [Slider](uiauto-supportslidercontroltype.md) .
 
- 
+ 
 
 
 
 | Padrão de controle                                           | Suporte | Observações                                                                                                                                                                                                                          |
 |-----------------------------------------------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**IRangeValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irangevalueprovider) | Depende | O padrão de controle [RangeValue](uiauto-implementingrangevalue.md) deve ser suportado somente se o padrão de controle [Scroll](uiauto-implementingscroll.md) não tiver suporte no contêiner que tem a barra de rolagem. |
-| [**IScrollProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iscrollprovider)         | Nunca   | O padrão de controle [Scroll](uiauto-implementingscroll.md) nunca é suportado diretamente na barra de rolagem.                                                                                                                     |
+| [**IScrollProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iscrollprovider)         | Nunca   | O [padrão de](uiauto-implementingscroll.md) controle De rolagem nunca tem suporte direto na barra de rolagem.                                                                                                                     |
 
 
 
- 
+ 
 
 ## <a name="required-events"></a>Eventos necessários
 
-A tabela a seguir lista os eventos de automação da interface do usuário que são necessários para dar suporte aos controles da barra de rolagem. Para obter mais informações sobre eventos, consulte [visão geral dos eventos de automação da interface do usuário](uiauto-eventsoverview.md).
+A tabela a seguir lista os Automação da Interface do Usuário que os controles da barra de rolagem são necessários para dar suporte. Para obter mais informações sobre eventos, consulte [Visão geral Automação da Interface do Usuário eventos .](uiauto-eventsoverview.md)
 
 
 
-| Evento de automação da interface do usuário                                                                                                                   | Observações                                                                                                                      |
+| Automação da Interface do Usuário evento                                                                                                                   | Observações                                                                                                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | [**UIA \_ AutomationFocusChangedEventId**](uiauto-event-ids.md)                                      |                                                                                                                            |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade BoundingRectanglePropertyId. |                                                                                                                            |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade IsEnabledPropertyId.                 | Se o controle oferecer suporte à propriedade [**IsEnabled**](uiauto-automation-element-propids.md) , ele deverá dar suporte a esse evento.   |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade IsOffscreenPropertyId.             | Se o controle oferecer suporte à propriedade [**IsOffscreen**](uiauto-automation-element-propids.md) , ele deverá dar suporte a esse evento. |
+| [**UIA \_ Evento boundingRectanglePropertyId**](uiauto-automation-element-propids.md) alterado por propriedade. |                                                                                                                            |
+| [**UIA \_ Evento de propriedade isEnabledPropertyId**](uiauto-automation-element-propids.md) alterado.                 | Se o controle for compatível com a [**propriedade IsEnabled,**](uiauto-automation-element-propids.md) ele deverá dar suporte a esse evento.   |
+| [**UIA \_ Evento de propriedade IsOffscreenPropertyId**](uiauto-automation-element-propids.md) alterado.             | Se o controle for compatível com [**a propriedade IsOffscreen,**](uiauto-automation-element-propids.md) ele deverá dar suporte a esse evento. |
 | [**UIA \_ StructureChangedEventId**](uiauto-event-ids.md)                                                  |                                                                                                                            |
-| [**UIA \_**](uiauto-control-pattern-propids.md) Evento de alteração de propriedade RangeValueValuePropertyId.        | Se o controle der suporte ao padrão de controle [RangeValue](uiauto-implementingrangevalue.md) , ele deverá dar suporte a esse evento.   |
+| [**UIA \_ Evento de alteração de propriedade RangeValueValuePropertyId.**](uiauto-control-pattern-propids.md)        | Se o controle for compatível com o padrão de controle [RangeValue,](uiauto-implementingrangevalue.md) ele deverá dar suporte a esse evento.   |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Visão Geral dos Tipos de Controle de Automação de Interface do Usuário](uiauto-controltypesoverview.md)
@@ -159,9 +159,9 @@ A tabela a seguir lista os eventos de automação da interface do usuário que s
 [Visão geral de automação da interface do usuário](uiauto-uiautomationoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

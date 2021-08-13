@@ -3,7 +3,7 @@ title: PLAYLIST. getNextSelectedItem
 description: O método getNextSelectedItem recupera o índice do próximo item selecionado na lista de reprodução após o índice especificado.
 ms.assetid: d46d3a65-8863-4a2f-9add-0701c8283a6b
 keywords:
-- PLAYLIST. getNextSelectedItem Windows Media Player
+- Windows Media Player de PLAYLIST. getNextSelectedItem
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c5e37ad5109066a11cf28a593ed69f8c86b8b639
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 872dd31694384dfa35d7ce98c2f26756ede14539f4e788cbb6f699d17ca78a8b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105798388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119467746"
 ---
 # <a name="playlistgetnextselecteditem"></a>PLAYLIST. getNextSelectedItem
 

@@ -4,12 +4,12 @@ ms.assetid: 101b1075-3724-4508-9c9e-2f12ac6ab65d
 title: Registrando uma assinatura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a03d5710fc792cad6282683d51df21d2ede10451
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6f152834c805bd905019d2afe0e353c0a962452c32ef144cc3c3d445b59fbbed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370478"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118547106"
 ---
 # <a name="registering-a-subscription"></a>Registrando uma assinatura
 

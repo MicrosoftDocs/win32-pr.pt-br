@@ -4,12 +4,12 @@ ms.assetid: a6cc7308-a9fa-4a84-9e7c-4d0adda28db5
 title: Ferramenta BETest
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7559c304532b337214108435b740595897694f7c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd5f37e8bfc224061a8205bf0759cbba4798b0d53227e4f12d89b1e9ddf629d5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119471146"
 ---
 # <a name="betest-tool"></a>Ferramenta BETest
 
@@ -20,11 +20,11 @@ O BETest é um solicitante do VSS que testa operações avançadas de backup e r
 -   Opções de avanço
 
 > [!Note]  
-> O BETest está incluído no SDK (Software Development Kit) do Microsoft Windows para Windows Vista e posterior. O SDK 7,2 do VSS inclui uma versão de BETest que é executada somente no Windows Server 2003. Este tópico descreve a versão SDK do Windows do BETest, não a versão 2003 do Windows Server incluída no SDK do VSS 7,2. Para obter informações sobre como baixar o SDK do Windows e o SDK 7,2 do VSS, consulte [serviço de cópias de sombra de volume](volume-shadow-copy-service-portal.md).
+> o betest está incluído no SDK (Software Development Kit) do Microsoft Windows para Windows Vista e posterior. o SDK 7,2 do VSS inclui uma versão de betest que é executada somente no Windows Server 2003. este tópico descreve a versão SDK do Windows do betest, não a versão do Windows Server 2003 incluída no SDK do VSS 7,2. para obter informações sobre como baixar o SDK do Windows e o SDK 7,2 do VSS, consulte [Serviço de Cópias de Sombra de Volume](volume-shadow-copy-service-portal.md).
 
  
 
-Na instalação do SDK do Windows, a ferramenta BETest pode ser encontrada em `%Program Files(x86)%\Windows Kits\8.1\bin\x64` (para Windows de 64 bits) e `%Program Files(x86)%\Windows Kits\8.1\bin\x86` (para windows de 32 bits).
+na instalação do SDK do Windows, a ferramenta de teste pode ser encontrada em `%Program Files(x86)%\Windows Kits\8.1\bin\x64` (para a Windows de 64 bits) e `%Program Files(x86)%\Windows Kits\8.1\bin\x86` (para Windows de 32 bits).
 
 ## <a name="running-the-betest-tool"></a>Executando a ferramenta BETest
 
@@ -210,10 +210,10 @@ Gera uma saída detalhada que pode ser usada para solução de problemas.
 <span id="_X_Filename"></span><span id="_x_filename"></span><span id="_X_FILENAME"></span> *Nome do arquivo* /x
 </dt> <dd>
 
-Seleciona os componentes cujo backup será feito ou restaurado com base no conteúdo do arquivo de configuração XML especificado por *filename*. Esse arquivo deve conter apenas caracteres ANSI no intervalo de 0 a 127. O formato do arquivo XML é definido pelo esquema no arquivo de BETest.xml. Para obter um arquivo de configuração de exemplo, consulte BetestSample.xml. Ambos os arquivos estão no diretório vsstools.
+Seleciona os componentes cujo backup será feito ou restaurado com base no conteúdo do arquivo de configuração XML especificado por *filename*. Esse arquivo deve conter apenas caracteres ANSI no intervalo de 0 a 127. O formato do arquivo XML é definido pelo esquema no arquivo BETest.xml arquivo. Para um arquivo de configuração de exemplo, consulte BetestSample.xml. Ambos os arquivos estão no diretório vsstools.
 
 > [!Note]  
-> Você pode exibir o arquivo de BETest.xml no Internet Explorer. Antes de abrir esse arquivo, verifique se o arquivo XDR-Schema. xsl está no mesmo diretório que BETest.xml. O arquivo XDR-Schema. xsl contém instruções de renderização que tornam o arquivo BETest.xml mais legível.
+> Você pode exibir o arquivo BETest.xml em Internet Explorer. Antes de abrir esse arquivo, certifique-se de que o arquivo xdr-schema.xsl está no mesmo diretório que BETest.xml. O arquivo xdr-schema.xsl contém instruções de renderização que BETest.xml arquivo mais acessível.
 
  
 
@@ -223,7 +223,7 @@ Seleciona os componentes cujo backup será feito ou restaurado com base no conte
 
 ## <a name="sample-xml-configuration-file-betestsamplexml"></a>Arquivo de configuração XML de exemplo: BetestSample.xml
 
-O arquivo de configuração de exemplo a seguir, BetestSample.xml, pode ser encontrado no diretório Vsstools
+O arquivo de configuração de exemplo a BetestSample.xml, pode ser encontrado no diretório Vsstools.
 
 ``` syntax
 <BETest>
@@ -234,11 +234,11 @@ O arquivo de configuração de exemplo a seguir, BetestSample.xml, pode ser enco
 </BETest>
 ```
 
-Este exemplo de um arquivo de configuração simples seleciona um componente do qual será feito backup ou restaurado.
+Este exemplo de um arquivo de configuração simples seleciona um componente a ser feito backup ou restaurado.
 
 ## <a name="sample-xml-configuration-file-vswritersamplexml"></a>Arquivo de configuração XML de exemplo: VswriterSample.xml
 
-O arquivo de configuração de exemplo a seguir, VswriterSample.xml, pode ser encontrado no diretório Vsstools
+O arquivo de configuração de exemplo a VswriterSample.xml, pode ser encontrado no diretório Vsstools.
 
 ``` syntax
 <TestWriter   usage="USER_DATA"
@@ -256,32 +256,32 @@ O arquivo de configuração de exemplo a seguir, VswriterSample.xml, pode ser en
 </TestWriter>
 ```
 
-O elemento raiz nesse arquivo de configuração é denominado TestWriter. Todos os outros elementos são organizados sob o elemento TestWriter.
+O elemento raiz nesse arquivo de configuração é chamado TestWriter. Todos os outros elementos são organizados sob o elemento TestWriter.
 
-O primeiro atributo associado a TestWriter é o atributo Usage. Esse atributo especifica o tipo de uso relatado por meio do método [**IVssExamineWriterMetadata:: getidentity**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getidentity) . Um dos valores possíveis para esse atributo são \_ os dados do usuário.
+O primeiro atributo associado a TestWriter é o atributo de uso. Esse atributo especifica o tipo de uso relatado por [**meio do método IVssExamineWriterMetadata::GetIdentity.**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getidentity) Um dos valores possíveis para esse atributo é USER \_ DATA.
 
-O segundo atributo é o atributo deleteFiles. Esse atributo é descrito em [Configurando atributos do gravador](vss-test-writer-tool.md).
+O segundo atributo é o atributo deleteFiles. Esse atributo é descrito em [Configurando atributos de writer](vss-test-writer-tool.md).
 
-O primeiro elemento filho do elemento raiz é um elemento RestoreMethod. Esse elemento Especifica o seguinte:
+O primeiro elemento filho do elemento raiz é um elemento RestoreMethod. Esse elemento especifica o seguinte:
 
--   O método Restore (nesse caso, RESTOre \_ If \_ pode \_ ser \_ substituído)
--   Se o gravador requer eventos de restauração (neste caso, sempre)
--   Se uma reinicialização é necessária após a restauração do gravador (neste caso, não)
+-   O método de restauração (nesse caso, RESTORE \_ IF \_ CAN BE \_ \_ REPLACED)
+-   Se o autor requer eventos de restauração (nesse caso, sempre)
+-   Se uma reinicialização é necessária depois que o autor é restaurado (nesse caso, não)
 
-Esse elemento pode, opcionalmente, especificar um mapeamento de local alternativo. (Nesse caso, nenhum local alternativo é especificado.) Para obter mais informações, consulte [especificando mapeamentos alternativos de local](vss-test-writer-tool.md).
+Opcionalmente, esse elemento pode especificar um mapeamento de localização alternativa. (Nesse caso, nenhum local alternativo é especificado.) Para obter mais informações, consulte [Especificando mapeamentos de localização alternativos.](vss-test-writer-tool.md)
 
-O segundo elemento filho é um elemento de componente. Esse elemento faz com que o gravador adicione um componente a seus metadados. Um elemento de componente contém atributos para descrever o componente e os elementos filho para descrever o conteúdo do componente, como o seguinte:
+O segundo elemento filho é um elemento Component. Esse elemento faz com que o autor adicione um componente aos seus metadados. Um elemento Component contém atributos para descrever o componente e os elementos filho para descrever o conteúdo do componente, como o seguinte:
 
--   ComponentType para indicar se este é um grupo de arquivos ou um banco de dados (neste caso, um grupo de arquivos)
+-   componentType para indicar se este é um grupo de arquivos ou um banco de dados (nesse caso, um grupo de arquivos)
 -   logicalPath para o caminho lógico do componente (nesse caso, nenhum é especificado)
--   ComponentName para o nome do componente (nesse caso, "TestFiles")
--   selecionável para indicar o status de selecionável para backup
+-   componentName para o nome do componente (nesse caso, "TestFiles")
+-   selecionável para indicar o status selecionável para backup
 
-O elemento Component também tem um elemento filho chamado Componentfile para adicionar uma especificação de arquivo a esse componente. (Um elemento de componente pode ter um número arbitrário de elementos Componentfile que podem ser especificados para cada componente.) Este elemento Componentfile tem os seguintes atributos:
+O elemento Component também tem um elemento filho chamado ComponentFile para adicionar uma especificação de arquivo a esse componente. (Um elemento Component pode ter um número arbitrário de elementos ComponentFile que podem ser especificados para cada componente.) Esse elemento ComponentFile tem os seguintes atributos:
 
--   caminho = "c: \\ TestPath"
--   filespec = " \* "
--   recursivo = "não"
+-   path="c: \\ TestPath"
+-   filespec=" \* "
+-   recursive="no"
 
  
 

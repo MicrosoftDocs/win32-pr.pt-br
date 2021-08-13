@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5bf08057ec075448d9912e37c33b6087c381f97d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: decd5892d480e4f236ae9d7acdc1a25c018557166535c963eb35dc3f6f62ffa1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118675565"
 ---
 # <a name="setpriority-method-of-the-win32_process-class"></a>Método setanteriority da \_ classe Process do Win32
 
@@ -115,7 +115,7 @@ Especificado para um processo que tem a maior prioridade possível. Os threads d
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores listados na lista a seguir ou um valor diferente para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -144,7 +144,7 @@ Retorna um dos valores listados na lista a seguir ou um valor diferente para ind
 
 ## <a name="remarks"></a>Comentários
 
-Para definir a prioridade em tempo real, o chamador deve ter o **SeIncreaseBasePriorityPrivilege** (**\_ \_ \_ \_ privilégio de prioridade base do se Inc**). Sem esse privilégio, a prioridade mais alta pode ser definida como prioridade alta.
+para definir a prioridade em tempo real, o chamador deve ter o **SeIncreaseBasePriorityPrivilege** (**\_ \_ \_ \_ privilégio de prioridade BASE do ES INC**). Sem esse privilégio, a prioridade mais alta pode ser definida como prioridade alta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -164,7 +164,7 @@ A amostra [Modificar a prioridade de um processo em execução](https://Gallery.
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

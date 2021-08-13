@@ -1,21 +1,21 @@
 ---
-description: Esta seção descreve as propriedades individuais no sistema de propriedades do Windows que podem ser definidas em arquivos do Windows.
+description: Esta seção descreve as propriedades individuais dentro do Windows de propriedades que podem ser definidas em Windows arquivos.
 ms.assetid: 7532E58F-BBF2-4e36-9D81-C8E04B92CB7C
 title: Propriedades do Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18a23f1bf253f370e2307072df3c878fa6a275da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 972af6283f7f0b4200f9e9932d5e447b8481cb4c24dbbe94e55ec0f08bca9a66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118463921"
 ---
 # <a name="windows-properties"></a>Propriedades do Windows
 
-Esta seção descreve as propriedades individuais no sistema de propriedades do Windows que podem ser definidas em arquivos do Windows.
+Esta seção descreve as propriedades individuais dentro do Windows de propriedades que podem ser definidas em Windows arquivos.
 
--   [Sonoro](audio-bumper.md)
+-   [Áudio](audio-bumper.md)
 -   [Calendário](calendar-bumper.md)
 -   [Comunicação](communication-bumper.md)
 -   [Computador](computer-bumper.md)
@@ -37,14 +37,14 @@ Esta seção descreve as propriedades individuais no sistema de propriedades do 
 -   [Música](music-bumper.md)
 -   [Observação](note-bumper.md)
 -   [Foto](photo-bumper.md)
--   [Propr](propgroup-bumper.md)
+-   [PropGroup](propgroup-bumper.md)
 -   [PropList](proplist-bumper.md)
 -   [RecordedTV](recordedtv-bumper.md)
 -   [Segurança](security-buffer.md)
--   [Pesquisa](search-bumper.md)
+-   [Pesquisar](search-bumper.md)
 -   [Shell](shell-bumper.md)
 -   [Software](software-bumper.md)
--   [Complementares](supplemental-bumper.md)
+-   [Suplementar](supplemental-bumper.md)
 -   [Sincronizar](sync-bumper.md)
 -   [Tarefa](task-bumper.md)
 -   [Vídeo](video-bumper.md)
@@ -52,7 +52,7 @@ Esta seção descreve as propriedades individuais no sistema de propriedades do 
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-Para obter mais informações sobre o uso de propriedades canônicas em consultas, consulte [usando a sintaxe de consulta avançada programaticamente](../search/-search-3x-advancedquerysyntax.md).
+Para obter mais informações sobre o uso de propriedades canônicas em consultas, consulte [Using Advanced Query Syntax Programmatically](../search/-search-3x-advancedquerysyntax.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

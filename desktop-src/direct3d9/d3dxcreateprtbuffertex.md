@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e3e88073f85d281e164c002ba5180493f6217e3a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 44bddffded189ce747491a4c3d9c08195c9817cfb1a578136f9c025231760cde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105764275"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118299261"
 ---
 # <a name="d3dxcreateprtbuffertex-function"></a>Função D3DXCreatePRTBufferTex
 

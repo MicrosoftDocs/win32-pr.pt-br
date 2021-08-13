@@ -3,7 +3,7 @@ title: NM_TVSTATEIMAGECHANGING código de notificação (commctrl. h)
 description: Enviado por um controle de exibição de árvore para sua janela pai que a imagem de estado está sendo alterada. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 8e42d8b3-5e76-4d03-94b0-3e4583669095
 keywords:
-- NM_TVSTATEIMAGECHANGING de código de notificação controles do Windows
+- NM_TVSTATEIMAGECHANGING código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aebf628eb9387acd4fd10f100f2f80570d1b021b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a57da81dbcccf4dcfbb896417e15c8788bb8d3f6baba71a57a6a99f053a3ba45
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119433676"
 ---
 # <a name="nm_tvstateimagechanging-notification-code"></a>\_Código de notificação nm TVSTATEIMAGECHANGING
 
@@ -45,7 +45,7 @@ Um ponteiro para uma estrutura [**NMTVSTATEIMAGECHANGING**](/windows/win32/api/c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é ignorado pelo controle.
 
@@ -55,8 +55,8 @@ O valor de retorno é ignorado pelo controle.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 

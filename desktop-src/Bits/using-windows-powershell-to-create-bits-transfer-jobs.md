@@ -1,6 +1,6 @@
 ---
 title: Usando o Windows PowerShell para criar trabalhos de transferência do BITS
-description: Você pode usar cmdlets do PowerShell para criar trabalhos de transferência de Serviço de Transferência Inteligente em Segundo Plano (BITS) síncronos e assíncronos.
+description: Você pode usar cmdlets do PowerShell para criar trabalhos de transferência de BITS (Serviço de Transferência Inteligente em Segundo Plano) síncronos e assíncronos.
 ms.assetid: 22bcf0d5-36f0-4677-84a7-502b98cfaac2
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,29 +9,29 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: af4879d1fc8f1b25fa0b1b51816432aad3bed8bd
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e939342414d62e4e1af0551318dfec0fb9a5ca59a7e310f13de7b6b67b0440cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646401"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118679888"
 ---
 # <a name="using-windows-powershell-to-create-bits-transfer-jobs"></a>Usando o Windows PowerShell para criar trabalhos de transferência do BITS
 
-Você pode usar cmdlets do PowerShell para criar trabalhos de transferência de Serviço de Transferência Inteligente em Segundo Plano (BITS) síncronos e assíncronos.
+Você pode usar cmdlets do PowerShell para criar trabalhos de transferência de BITS (Serviço de Transferência Inteligente em Segundo Plano) síncronos e assíncronos.
 
-Todos os exemplos neste tópico usam o cmdlet [Start-BitsTransfer](/previous-versions//dd347701(v=technet.10)) . Para usar o cmdlet, certifique-se de importar o módulo primeiro. Para instalar o módulo, execute o seguinte comando: Import-Module BitsTransfer. Para obter mais informações, digite **Get-Help Start-BitsTransfer** no prompt do PowerShell.
+Todos os exemplos neste tópico usam o cmdlet [Start-BitsTransfer.](/previous-versions//dd347701(v=technet.10)) Para usar o cmdlet , certifique-se de importar o módulo primeiro. Para instalar o módulo, execute o seguinte comando: Import-Module BitsTransfer. Para obter mais informações, digite **Get-Help Start-BitsTransfer** no prompt do PowerShell.
 
 > [!IMPORTANT]
 >
-> Quando você usa cmdlets [ \* -BitsTransfer](/previous-versions//dd819413(v=technet.10)) de dentro de um processo executado em um contexto não interativo, como um serviço do Windows, talvez não seja possível adicionar arquivos aos trabalhos do bits, o que pode resultar em um estado suspenso. Para que o trabalho continue, a identidade que foi usada para criar um trabalho de transferência deve estar conectada. Por exemplo, ao criar um trabalho BITS em um script do PowerShell que foi executado como um trabalho Agendador de Tarefas, a transferência BITS nunca será concluída, a menos que a configuração de tarefa do Agendador de Tarefas "executar somente quando o usuário estiver conectado" esteja habilitada.
+> Quando você usa cmdlets [ \* -BitsTransfer](/previous-versions//dd819413(v=technet.10)) de dentro de um processo que é executado em um contexto não interativo, como um serviço Windows, talvez não seja possível adicionar arquivos a trabalhos BITS, o que pode resultar em um estado suspenso. Para que o trabalho continue, a identidade usada para criar um trabalho de transferência deve ser registrada. Por exemplo, ao criar um trabalho BITS em um script do PowerShell que foi executado como um trabalho do Agendador de Tarefas, a transferência de BITS nunca será concluída, a menos que a configuração de tarefa do Agendador de Tarefas "Executar somente quando o usuário estiver conectado" esteja habilitada.
 
  
 
 -   [Para criar um trabalho de transferência de BITS síncrono](#to-create-a-synchronous-bits-transfer-job)
 -   [Para criar um trabalho de transferência de BITS síncrono com vários arquivos](#to-create-a-synchronous-bits-transfer-job-with-multiple-files)
 -   [Para criar um trabalho de transferência de BITS síncrono e especificar credenciais para um servidor remoto](#to-create-a-synchronous-bits-transfer-job-and-specify-credentials-for-a-remote-server)
--   [Para criar um trabalho de transferência de BITS síncrono a partir de um arquivo CSV](#to-create-a-synchronous-bits-transfer-job-from-a-csv-file)
+-   [Para criar um trabalho de transferência de BITS síncrono de um arquivo CSV](#to-create-a-synchronous-bits-transfer-job-from-a-csv-file)
 -   [Para criar um trabalho de transferência de BITS assíncrono](#to-create-an-asynchronous-bits-transfer-job)
 -   [Para gerenciar sessões remotas do PowerShell](#to-manage-powershell-remote-sessions)
 -   [Tópicos relacionados](#related-topics)
@@ -51,11 +51,11 @@ Start-BitsTransfer -Source https://Server01/serverdir/testfile1.txt `
 
  
 
-No exemplo anterior, os nomes local e remoto do arquivo são especificados nos parâmetros de *origem* e *destino* , respectivamente. O prompt de comando volta a aparecer quando a transferência do arquivo é concluída ou quando ela entra em um estado de erro.
+No exemplo anterior, os nomes locais e remotos do arquivo são especificados nos parâmetros *Origem* *e* Destino, respectivamente. O prompt de comando volta a aparecer quando a transferência do arquivo é concluída ou quando ela entra em um estado de erro.
 
-O tipo de transferência padrão é download. Quando você carrega arquivos em um local HTTP, o parâmetro *transfertype* deve ser definido para upload.
+O tipo de transferência padrão é Download. Quando você carrega arquivos em um local HTTP, o *parâmetro TransferType* deve ser definido como Upload.
 
-Como a posição do parâmetro é imposta para o cmdlet [Start-BitsTransfer](/previous-versions//dd347701(v=technet.10)) , os nomes de parâmetro não precisam ser especificados para os parâmetros de origem e destino. Portanto, esse comando pode ser simplificado da seguinte maneira.
+Como a posição do parâmetro é imposta para o cmdlet [Start-BitsTransfer,](/previous-versions//dd347701(v=technet.10)) os nomes de parâmetro não precisam ser especificados para os parâmetros Source e Destination. Portanto, esse comando pode ser simplificado da seguinte maneira.
 
 
 ```PowerShell
@@ -74,10 +74,10 @@ Start-BitsTransfer -Source C:\clientsourcedir\*.txt `
 
 
 
-No exemplo anterior, o comando [Start-BitsTransfer](/previous-versions//dd347701(v=technet.10)) cria um novo trabalho de transferência de bits. Todos os arquivos são adicionados a esse trabalho e transferidos sequencialmente para o cliente.
+No exemplo anterior, o comando [Start-BitsTransfer](/previous-versions//dd347701(v=technet.10)) cria um novo trabalho de transferência de BITS. Todos os arquivos são adicionados a esse trabalho e transferidos sequencialmente para o cliente.
 
 > [!Note]  
-> O caminho de destino não pode usar caracteres curinga. O caminho de destino dá suporte a diretórios relativos, caminhos raiz ou diretórios implícitos (ou seja, o diretório atual). Os arquivos de destino não podem ser renomeados usando um caractere curinga. Além disso, as URLs HTTP e HTTPS não funcionam com curingas. Os curingas são válidos somente para caminhos UNC e diretórios locais.
+> O caminho de destino não pode usar caracteres curinga. O caminho de destino dá suporte a diretórios relativos, caminhos raiz ou diretórios implícitos (ou seja, o diretório atual). Os arquivos de destino não podem ser renomeados usando um caractere curinga. Além disso, as URLs HTTP e HTTPS não funcionam com curingas. Curingas só são válidos para caminhos UNC e diretórios locais.
 
  
 
@@ -92,9 +92,9 @@ Start-BitsTransfer -DisplayName MyJob -Credential Username\Domain `
 
 
 
-No exemplo anterior, um usuário cria um trabalho de transferência de BITS para baixar um arquivo de um servidor que requer autenticação. As credenciais do usuário são solicitadas e o parâmetro *Credential* passa um objeto Credential para o cmdlet [Start-BitsTransfer](/previous-versions//dd347701(v=technet.10)) . O usuário define um proxy explícito e o trabalho de transferência BITS usa apenas os proxies que são definidos pelo parâmetro *ProxyList* . O parâmetro *DisplayName* fornece ao trabalho de transferência de bits um nome de exibição exclusivo.
+No exemplo anterior, um usuário cria um trabalho de transferência bits para baixar um arquivo de um servidor que requer autenticação. O usuário é solicitado a solicitar credenciais e o parâmetro *Credential* passa um objeto de credencial para o cmdlet [Start-BitsTransfer.](/previous-versions//dd347701(v=technet.10)) O usuário define um proxy explícito e o trabalho de transferência bits usa apenas os proxies definidos pelo *parâmetro ProxyList.* O *parâmetro DisplayName* fornece ao trabalho de transferência bits um nome de exibição exclusivo.
 
-## <a name="to-create-a-synchronous-bits-transfer-job-from-a-csv-file"></a>Para criar um trabalho de transferência de BITS síncrono a partir de um arquivo CSV
+## <a name="to-create-a-synchronous-bits-transfer-job-from-a-csv-file"></a>Para criar um trabalho de transferência de BITS síncrono de um arquivo CSV
 
 
 ```PowerShell
@@ -108,9 +108,9 @@ Import-CSV filelist.txt | Start-BitsTransfer -TransferType Upload
 
  
 
-No exemplo anterior, um usuário cria um trabalho de transferência de BITS que carrega vários arquivos de um cliente. O cmdlet [Import-CSV](/previous-versions//dd347665(v=technet.10)) importa os locais do arquivo de origem e de destino e os canaliza para o comando [Start-BitsTransfer](/previous-versions//dd347701(v=technet.10)) . O comando [Start-BitsTransfer](/previous-versions//dd347701(v=technet.10)) cria um novo trabalho de transferência de bits para cada arquivo, adiciona os arquivos ao trabalho e os transfere sequencialmente para o servidor.
+No exemplo anterior, um usuário cria um trabalho de transferência bits que carrega vários arquivos de um cliente. O cmdlet [Import-CSV](/previous-versions//dd347665(v=technet.10)) importa os locais de arquivo de origem e de destino e os canalizou para o [comando Start-BitsTransfer.](/previous-versions//dd347701(v=technet.10)) O [comando Start-BitsTransfer](/previous-versions//dd347701(v=technet.10)) cria um novo trabalho de transferência bits para cada arquivo, adiciona os arquivos ao trabalho e, em seguida, transfere-os sequencialmente para o servidor.
 
-O conteúdo do arquivo de Filelist.txt deve estar no seguinte formato:
+O conteúdo do arquivo Filelist.txt deve estar no seguinte formato:
 
 ``` syntax
 Source, Destination
@@ -141,22 +141,22 @@ Switch($Job.JobState)
 
 
 
-No exemplo anterior, o trabalho de transferência BITS foi atribuído à variável $Job. Os arquivos são baixados em sequência. Depois que o trabalho de transferência for concluído, os arquivos estarão imediatamente disponíveis. Se $Job. JobState retornar "transferidad", o objeto $Job será enviado ao cmdlet [Complete-BitsTransfer]( /previous-versions//dd347701(v=technet.10)) .
+No exemplo anterior, o trabalho de transferência bits foi atribuído à variável $Job dados. Os arquivos são baixados sequencialmente. Depois que o trabalho de transferência for concluído, os arquivos estarão imediatamente disponíveis. Se $Job.JobState retornar "Transferido", o objeto $Job será enviado para o cmdlet [Complete-BitsTransfer.]( /previous-versions//dd347701(v=technet.10))
 
-Se $Job. JobState retornar "Error", o objeto $Job será enviado ao cmdlet [Format-List]( /previous-versions//dd347700(v=technet.10)) para listar os erros.
+Se $Job.JobState retornar "Erro", o objeto $Job será enviado para o cmdlet [Format-List]( /previous-versions//dd347700(v=technet.10)) para listar os erros.
 
 ## <a name="to-manage-powershell-remote-sessions"></a>Para gerenciar sessões remotas do PowerShell
 
-A partir do Windows 10, versão 1607, você pode executar cmdlets do PowerShell, BITSAdmin ou outros aplicativos que usam as [interfaces](bits-interfaces.md) do bits de uma linha de comando remota do PowerShell conectada a outro computador (físico ou virtual). Esse recurso não está disponível ao usar uma linha de comando [direto do PowerShell](/virtualization/hyper-v-on-windows/user_guide/vmsession) para uma máquina virtual no mesmo computador físico e não está disponível ao usar os cmdlets do WinRM.
+A partir do Windows 10, versão 1607, você pode executar cmdlets do PowerShell, BITSAdmin ou outros aplicativos que usam as [interfaces](bits-interfaces.md) BITS de uma linha de comando remota do PowerShell conectada a outro computador (físico ou virtual). Essa funcionalidade não está disponível ao usar uma linha de comando do [PowerShell Direct](/virtualization/hyper-v-on-windows/user_guide/vmsession) para uma máquina virtual na mesma máquina física e não está disponível ao usar cmdlets winRM.
 
-Um trabalho do BITS criado a partir de uma sessão remota do PowerShell é executado sob o contexto da conta de usuário da sessão e só fará o progresso quando houver pelo menos uma sessão de logon local ativa ou uma sessão remota do PowerShell associada a essa conta de usuário. Você pode usar as PSSessions persistentes do PowerShell para executar comandos remotos sem a necessidade de manter uma janela do PowerShell aberta para cada trabalho para continuar a progredir, conforme descrito em [noções básicas do PowerShell: gerenciamento remoto](https://techgenix.com/remote-management-powershell-part1/).
+Um trabalho bits criado de uma sessão remota do PowerShell é executado no contexto da conta de usuário da sessão e só fará progresso quando houver pelo menos uma sessão de logon local ativa ou sessão remota do PowerShell associada a essa conta de usuário. Você pode usar as PSSessions persistentes do PowerShell para executar comandos remotos sem a necessidade de manter uma janela do PowerShell aberta para cada trabalho continuar progredindo, conforme descrito em Noções básicas do [PowerShell:](https://techgenix.com/remote-management-powershell-part1/)Gerenciamento Remoto .
 
--   [New-PSSession](/powershell/module/microsoft.powershell.core/new-pssession?view=powershell-7&preserve-view=true) cria uma sessão do PowerShell remota persistente. Depois de criados, os objetos PSSession persistem no computador remoto até que sejam explicitamente excluídos. Todos os trabalhos do BITS iniciados em uma sessão ativa farão o andamento da transferência de dados, mesmo depois que o cliente tiver se desconectado da sessão.
--   [Disconnect-PSSession](/powershell/module/microsoft.powershell.core/disconnect-pssession?view=powershell-7&preserve-view=true) desconecta o computador cliente de uma sessão remota do PowerShell e o estado da sessão continua a ser mantido pelo computador remoto. O mais importante é que os processos da sessão remota continuarão em execução, e os trabalhos do BITS continuarão a progredir. O computador cliente pode até mesmo reinicializar e/ou desligar depois de chamar Disconnect-PSSession.
--   [Connect-PSSession](/powershell/module/microsoft.powershell.core/connect-pssession?view=powershell-7&preserve-view=true) reconecta o computador cliente a uma sessão remota do PowerShell ativa.
--   [Remove-PSSession](/powershell/module/microsoft.powershell.core/remove-pssession?view=powershell-7&preserve-view=true) destrói uma sessão remota do PowerShell.
+-   [New-PSSession cria](/powershell/module/microsoft.powershell.core/new-pssession?view=powershell-7&preserve-view=true) uma sessão persistente do PowerShell Remoto. Depois de criados, os objetos PSSession persistem no computador remoto até que explicitamente excluídos. Todos os trabalhos BITS iniciados em uma sessão ativa avançarão na transferência de dados, mesmo depois que o cliente tiver se desconectado da sessão.
+-   [Disconnect-PSSession desconecta](/powershell/module/microsoft.powershell.core/disconnect-pssession?view=powershell-7&preserve-view=true) o computador cliente de uma sessão remota do PowerShell e o estado da sessão continua sendo mantido pelo computador remoto. O mais importante é que os processos da sessão remota continuarão em execução e os trabalhos bits continuarão a avançar. O computador cliente pode até mesmo reinicializar e/ou desligar depois de chamar Disconnect-PSSession.
+-   [Conexão-PSSession](/powershell/module/microsoft.powershell.core/connect-pssession?view=powershell-7&preserve-view=true) conecta o computador cliente a uma sessão ativa do PowerShell Remoto.
+-   [Remove-PSSession remoção](/powershell/module/microsoft.powershell.core/remove-pssession?view=powershell-7&preserve-view=true) de uma sessão remota do PowerShell.
 
-O exemplo a seguir mostra como usar o PowerShell remoto para trabalhar com trabalhos de transferência de BITS assíncronos de uma maneira que permite que o trabalho continue a progredir mesmo quando você não estiver conectado ativamente à sessão remota.
+O exemplo a seguir mostra como usar o PowerShell Remote para trabalhar com trabalhos de transferência de BITS assíncronos de uma maneira que permita que o trabalho continue progredindo mesmo quando você não estiver conectado ativamente à sessão remota.
 
 
 ```PowerShell
@@ -208,7 +208,7 @@ Remove-PSSession -Name MyRemoteSession
 [Start-BitsTransfer](/previous-versions//dd347701(v=technet.10))
 </dt> <dt>
 
-[Concluir-BitsTransfer]( /previous-versions//dd347701(v=technet.10))
+[Complete-BitsTransfer]( /previous-versions//dd347701(v=technet.10))
 </dt> </dl>
 
  

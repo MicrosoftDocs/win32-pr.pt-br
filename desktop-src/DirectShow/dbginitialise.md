@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 33a62c8dad7ef6e15b9b11461303b1bced977a96
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 13aad8d0214c65c01237c8e74548c3915af9287c935b53e33c6d229b2da5b12e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754767"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118654211"
 ---
 # <a name="dbginitialise-function"></a>Função DbgInitialise
 
@@ -55,7 +55,7 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Em um executável, chame esse método antes de usar os recursos de depuração do DirectShow. Antes de o executável sair, chame a função [**DbgTerminate**](dbgterminate.md) para limpar a biblioteca de depuração.
+em um executável, chame esse método antes de usar os DirectShow depurar instalações. Antes de o executável sair, chame a função [**DbgTerminate**](dbgterminate.md) para limpar a biblioteca de depuração.
 
 Em uma DLL que vincula à biblioteca de classe base (Strmbase. lib), não é necessário chamar essa função. A função é chamada automaticamente quando a DLL é carregada.
 
@@ -65,7 +65,7 @@ Em uma DLL que vincula à biblioteca de classe base (Strmbase. lib), não é nec
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxdebug. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Wxdebug. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

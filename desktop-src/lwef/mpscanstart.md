@@ -3,7 +3,7 @@ title: Função MpScanStart (MpClient. h)
 description: Inicia uma operação de verificação.
 ms.assetid: 3AF147C8-A41F-4193-AE28-72C1FBD18BA2
 keywords:
-- Recursos do ambiente Windows herdado da função MpScanStart
+- recursos de ambiente de Windows herdado da função MpScanStart
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d343787edc85a18dc7471d19165999a7252d18a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 34d56f6814ecdd13b2db4f698e8cc122d4d15e325bda17d82d56a5796d8590fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119450236"
 ---
 # <a name="mpscanstart-function"></a>Função MpScanStart
 
@@ -79,7 +79,7 @@ Especifica várias opções para a operação de verificação.
 | <span id="MPSCAN_OPTION_PROGRESS"></span><span id="mpscan_option_progress"></span><dl> <dt>**\_progresso da opção MPSCAN \_**</dt> </dl>                   | O chamador está interessado em receber informações de progresso da verificação por meio de um retorno de chamada.<br/>                                                                                                                                                                            |
 | <span id="MPSCAN_OPTION_LOWPRIORITY"></span><span id="mpscan_option_lowpriority"></span><dl> <dt>**MPSCAN \_ opção \_ LOWPRIORITY**</dt> </dl>          | Execute a verificação com baixa prioridade. (Por padrão, a operação de verificação é executada com prioridade normal.)<br/>                                                                                                                                                     |
 | <span id="MPSCAN_OPTION_PACKEDEXES"></span><span id="mpscan_option_packedexes"></span><dl> <dt>**MPSCAN \_ opção \_ PACKEDEXES**</dt> </dl>             | Examine os executáveis empacotados para possíveis ameaças.<br/>                                                                                                                                                                                                              |
-| <span id="MPSCAN_OPTION_ARCHIVES"></span><span id="mpscan_option_archives"></span><dl> <dt>**\_arquivos mortos de opção MPSCAN \_**</dt> </dl>                   | Examinar o conteúdo do arquivo para possíveis ameaças. Arquivos com extensões como. zip,. cab ou. tar.<br/>                                                                                                                                                |
+| <span id="MPSCAN_OPTION_ARCHIVES"></span><span id="mpscan_option_archives"></span><dl> <dt>**\_arquivos mortos de opção MPSCAN \_**</dt> </dl>                   | Examinar o conteúdo do arquivo para possíveis ameaças. Arquivos com extensões como .zip, .cab ou. tar.<br/>                                                                                                                                                |
 | <span id="MPSCAN_OPTION_HEURISTICS"></span><span id="mpscan_option_heuristics"></span><dl> <dt>**\_heurística da opção MPSCAN \_**</dt> </dl>             | Habilite a verificação baseada em heurística. Isso verificará se há ameaças com o tipo de detecção definido como heurística.<br/>                                                                                                                                                        |
 | <span id="MPSCAN_OPTION_REPORTFRIENDLY"></span><span id="mpscan_option_reportfriendly"></span><dl> <dt>**MPSCAN \_ opção \_ REPORTFRIENDLY**</dt> </dl> | Relatar itens amigáveis em uma verificação de recurso. Isso se destina somente ao uso interno.<br/>                                                                                                                                                                          |
 | <span id="MPSCAN_OPTION_REPORTUNKNOWN"></span><span id="mpscan_option_reportunknown"></span><dl> <dt>**MPSCAN \_ opção \_ REPORTUNKNOWN**</dt> </dl>    | Relatar itens desconhecidos em uma verificação de recurso. Isso se destina somente ao uso interno.<br/>                                                                                                                                                                           |
@@ -138,13 +138,13 @@ O identificador de verificação retornado que identifica a verificação inicia
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
 Se a função for bem sucedido, o valor de retorno será **S \_ OK**.
 
-Se a função falhar, o valor de retorno será um código **HRESULT** com falha. O chamador pode usar a função [**MpErrorMessageFormat**](mperrormessageformat.md) para obter uma descrição genérica da mensagem de erro.
+Se a função falhar, o valor de retorno será um código **HRESULT com** falha. O chamador pode usar a [**função MpErrorMessageFormat**](mperrormessageformat.md) para obter uma descrição genérica da mensagem de erro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -152,9 +152,9 @@ Se a função falhar, o valor de retorno será um código **HRESULT** com falha.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                    |
+| parâmetro<br/>                   | <dl> <dt>MpClient.h</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>MpClient.dll</dt> </dl> |
 
 
@@ -172,16 +172,16 @@ Se a função falhar, o valor de retorno será um código **HRESULT** com falha.
 [**MpManagerOpen**](mpmanageropen.md)
 </dt> <dt>
 
-[**dados do MPCALLBACK \_**](mpcallback-data.md)
+[**DADOS \_ MPCALLBACK**](mpcallback-data.md)
 </dt> <dt>
 
-[**dados do MPSCAN \_**](mpscan-data.md)
+[**DADOS \_ DO MPSCAN**](mpscan-data.md)
 </dt> <dt>
 
-[**recursos do MPSCAN \_**](mpscan-resources.md)
+[**RECURSOS DO \_ MPSCAN**](mpscan-resources.md)
 </dt> <dt>
 
-[**tipo de MPSCAN \_**](mpscan-type.md)
+[**TIPO \_ MPSCAN**](mpscan-type.md)
 </dt> </dl>
 
  

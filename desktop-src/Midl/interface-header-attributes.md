@@ -6,12 +6,12 @@ keywords:
 - MIDL, atributos, cabeçalho de interface IDL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c3e5fc25a0e441b092749872a1b4d4735d483cae
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a26dac473c95625162e6dbb689f54833a166b1c58ae478654c52fededf3dd529
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118642982"
 ---
 # <a name="interface-header-attributes"></a>Atributos de cabeçalho de interface
 
@@ -32,13 +32,13 @@ Incorpore esses atributos no cabeçalho da interface para transmitir informaçõ
 
 
 
- 
+ 
 
 Consulte [atributos de biblioteca de tipos](type-library-attributes.md) para atributos de interface, como [**Dual**](dual.md) e [**oleautomation**](oleautomation.md), que são específicos para interfaces definidas ou referenciadas dentro de uma instrução de biblioteca.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3ba28e2c4340d01dfbbdec7a6965218dbe66d68f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 62bd2440bf18691effe7e0706163e76469e213347d853a5170c6ea1dbb10bc18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105771786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118262294"
 ---
 # <a name="esentoutofdatabasespaceexception-constructor"></a>Construtor EsentOutOfDatabaseSpaceException
 
 Inicializa uma nova instância da classe EsentOutOfDatabaseSpaceException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentOutOfDatabaseSpaceException()
 
 [Classe EsentOutOfDatabaseSpaceException](./esentoutofdatabasespaceexception-class.md)
 
-[Membros do EsentOutOfDatabaseSpaceException](./esentoutofdatabasespaceexception-members.md)
+[Membros EsentOutOfDatabaseSpaceException](./esentoutofdatabasespaceexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

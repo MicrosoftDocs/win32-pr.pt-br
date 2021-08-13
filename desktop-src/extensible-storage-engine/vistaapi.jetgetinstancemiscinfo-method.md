@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 204beee343a717d5b45d8003e123bbbe186437d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f0e8532d46556bb2d36bff822ce1e68ffe48ab633df925ae26b2ba24e9023417
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119471266"
 ---
 # <a name="vistaapijetgetinstancemiscinfo-method"></a>Método VistaApi. JetGetInstanceMiscInfo
 

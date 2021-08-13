@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 9563b1e8421dfa6724971450b117780435f6f39e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0387d3d46723aede1d0858d647a555db57b3de28e6c1fb5fbb68b6d56342fcb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789807"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118646464"
 ---
 # <a name="addresourcesettings-method-of-the-cim_virtualsystemmanagementservice-class"></a>Método AddResourceSettings da \_ classe VIRTUALSYSTEMMANAGEMENTSERVICE CIM
 
@@ -72,7 +72,7 @@ Se a operação for de longa execução, opcionalmente, um trabalho poderá ser 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 

@@ -3,35 +3,35 @@ title: Descobrindo o formato de um arquivo
 description: Descobrindo o formato de um arquivo
 ms.assetid: f1b3f811-8161-41ca-a92c-2735c0bec2e8
 keywords:
-- Windows Media Gerenciador de Dispositivos, formatos de arquivo
+- Windows Gerenciador de Dispositivos de mídia, formatos de arquivo
 - Gerenciador de Dispositivos, formatos de arquivo
 - Guia de programação, formatos de arquivo
 - aplicativos de área de trabalho, formatos de arquivo
-- Criando aplicativos de Gerenciador de Dispositivos de mídia do Windows, formatos de arquivo
+- criando Windows aplicativos de Gerenciador de Dispositivos de mídia, formatos de arquivo
 - gravando arquivos em dispositivos, formatos de arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b06c963b01e3b681fd078d8685e1c788c73352e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 83706a3026968a694d3629551d310db9021b7f8c8118f3d98621751a95af26b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118585325"
 ---
 # <a name="discovering-a-files-format"></a>Descobrindo o formato de um arquivo
 
 Antes de enviar um arquivo para o dispositivo, um aplicativo deve determinar se o dispositivo dá suporte a esse formato de arquivo.
 
-Descobrir o formato de um arquivo pode ser complexo. A maneira mais simples é criar uma lista de extensões de arquivo mapeadas para \_ valores de enumeração WMDM FORMATCODE específicos. No entanto, há alguns problemas com esse sistema: um é que um único formato pode ter várias extensões (como. jpg,. jpe e. jpeg para imagens JPEG). Além disso, a mesma extensão de arquivo pode ser usada por programas diferentes para formatos diferentes.
+Descobrir o formato de um arquivo pode ser complexo. A maneira mais simples é criar uma lista de extensões de arquivo mapeadas para \_ valores de enumeração WMDM FORMATCODE específicos. No entanto, há alguns problemas com esse sistema: um é que um único formato pode ter várias extensões (como .jpg,. jpe e. jpeg para imagens JPEG). Além disso, a mesma extensão de arquivo pode ser usada por programas diferentes para formatos diferentes.
 
-Para superar as limitações de um mapeamento estrito, é melhor que um aplicativo Verifique se o formato corresponde à extensão. O SDK do DirectShow fornece ferramentas que permitem que um aplicativo Descubra um conjunto limitado de detalhes sobre a maioria dos tipos de arquivo de mídia. O Windows Media Format SDK expõe um grande número de detalhes, mas apenas sobre arquivos ASF. Como todos os tipos de arquivo devem ter seu código de formato verificado se possível, é, portanto, melhor usar o DirectShow para descobrir ou verificar o código de formato básico e usar o SDK do Windows Media Format para descobrir quaisquer metadados adicionais desejados sobre arquivos ASF. O DirectShow também pode ser usado para descobrir metadados básicos para arquivos não ASF.
+Para superar as limitações de um mapeamento estrito, é melhor que um aplicativo Verifique se o formato corresponde à extensão. o SDK do DirectShow fornece ferramentas que permitem que um aplicativo descubra um conjunto limitado de detalhes sobre a maioria dos tipos de arquivo de mídia. o SDK do formato de mídia Windows expõe um grande número de detalhes, mas apenas sobre arquivos ASF. como todos os tipos de arquivo devem ter seu código de formato verificado se possível, é, portanto, melhor usar DirectShow para descobrir ou verificar o código de formato básico e usar o SDK do formato de mídia Windows para descobrir quaisquer metadados adicionais desejados sobre arquivos ASF. DirectShow também pode ser usado para descobrir metadados básicos para arquivos não ASF.
 
-Veja a seguir uma maneira de descobrir um formato de arquivo usando o mapeamento de extensão e o DirectShow.
+Veja a seguir uma maneira de descobrir um formato de arquivo usando mapeamento de extensão e DirectShow.
 
 Primeiro, compare a extensão de nome de arquivo com uma lista de extensões conhecidas. Certifique-se de fazer a comparação não diferencia maiúsculas de minúsculas. Se a extensão não for mapeada, defina o formato como WMDM \_ FORMATCODE \_ undefined.
 
 -   Se o código de formato não foi encontrado (ou se você deseja verificar se um arquivo é um arquivo de mídia), você pode executar as seguintes etapas:
-    1.  Crie um objeto de detector de mídia do DirectShow usando **CoCreateInstance**(CLSID \_ MediaDet) e recuperando a interface **IMediaDet** .
+    1.  crie um objeto de Detector de mídia DirectShow usando **CoCreateInstance**(CLSID \_ MediaDet) e recuperando a interface **IMediaDet** .
     2.  Abra o arquivo chamando **IMediaDet::p UT \_ filename**. Essa chamada falhará se o arquivo estiver protegido.
     3.  Obtenha o tipo de mídia do fluxo padrão chamando **IMediaDet:: get \_ StreamMediaType**, que retorna um **tipo de \_ mídia \_ am**.
     4.  Obtenha o número de fluxos chamando **IMediaDet:: get \_ OutputStreams**.
@@ -41,7 +41,7 @@ Primeiro, compare a extensão de nome de arquivo com uma lista de extensões con
 
 Você também pode tentar corresponder codecs de áudio ou vídeo dos membros **VIDEOINFOHEADER** ou **WAVEFORMATEX** recuperados de **Get \_ StreamMediaType**.
 
-A seguinte função C++ demonstra a correspondência da extensão de arquivo e o uso do DirectShow para tentar analisar arquivos desconhecidos.
+a função C++ a seguir demonstra a correspondência de extensão de arquivo e o uso de DirectShow para tentar analisar arquivos desconhecidos.
 
 
 ```C++
@@ -184,9 +184,9 @@ WMDM_FORMATCODE CWMDMController::myGetWMDM_FORMATCODE(LPCWSTR pFileName)
 [**Gravando arquivos no dispositivo**](writing-files-to-the-device.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

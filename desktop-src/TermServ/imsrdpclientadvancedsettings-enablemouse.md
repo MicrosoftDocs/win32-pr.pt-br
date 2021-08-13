@@ -1,26 +1,26 @@
 ---
-title: Propriedade IMsRdpClientAdvancedSettings EnableMouse
-description: Não há suporte a esta propriedade. | Propriedade IMsRdpClientAdvancedSettings EnableMouse
+title: Propriedade EnableMouse de IMsRdpClientAdvancedSettings
+description: Não há suporte a esta propriedade. | Propriedade EnableMouse de IMsRdpClientAdvancedSettings
 ms.assetid: 4f60fdfc-e1b9-4ac2-98e4-49331b072883
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade EnableMouse
-- Propriedade EnableMouse Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings, Propriedade EnableMouse
-- Propriedade EnableMouse Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings2
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings2, Propriedade EnableMouse
-- Propriedade EnableMouse Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings3, Propriedade EnableMouse
-- Propriedade EnableMouse Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings4, Propriedade EnableMouse
-- Propriedade EnableMouse Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings5, Propriedade EnableMouse
-- Propriedade EnableMouse Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings6, Propriedade EnableMouse
-- Propriedade EnableMouse Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings7, Propriedade EnableMouse
-- Propriedade EnableMouse Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings8, Propriedade EnableMouse
+- Propriedade EnableMouse Serviços de Área de Trabalho Remota
+- A propriedade EnableMouse Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings
+- Interface IMsRdpClientAdvancedSettings Serviços de Área de Trabalho Remota , propriedade EnableMouse
+- A propriedade EnableMouse Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings2
+- Interface IMsRdpClientAdvancedSettings2 Serviços de Área de Trabalho Remota , propriedade EnableMouse
+- A propriedade EnableMouse Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings3
+- Interface IMsRdpClientAdvancedSettings3 Serviços de Área de Trabalho Remota , propriedade EnableMouse
+- A propriedade EnableMouse Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings4
+- Interface IMsRdpClientAdvancedSettings4 Serviços de Área de Trabalho Remota , propriedade EnableMouse
+- A propriedade EnableMouse Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings5
+- Interface IMsRdpClientAdvancedSettings5 Serviços de Área de Trabalho Remota , propriedade EnableMouse
+- A propriedade EnableMouse Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings6
+- Interface IMsRdpClientAdvancedSettings6 Serviços de Área de Trabalho Remota , propriedade EnableMouse
+- A propriedade EnableMouse Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings7
+- Interface IMsRdpClientAdvancedSettings7 Serviços de Área de Trabalho Remota , propriedade EnableMouse
+- A propriedade EnableMouse Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings8
+- Interface IMsRdpClientAdvancedSettings8 Serviços de Área de Trabalho Remota , propriedade EnableMouse
 topic_type:
 - apiref
 api_name:
@@ -54,20 +54,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0495ba7b48e431efe5746f40b353b5c1ad701d6a
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: bb61f7763f92c46a80a7e0e45c5c476f4d3b64e7cbb735ba1e254641d90dae4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103930280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118608694"
 ---
-# <a name="imsrdpclientadvancedsettingsenablemouse-property"></a>Propriedade IMsRdpClientAdvancedSettings:: EnableMouse
+# <a name="imsrdpclientadvancedsettingsenablemouse-property"></a>Propriedade IMsRdpClientAdvancedSettings::EnableMouse
 
 Não há suporte a esta propriedade.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -84,15 +84,15 @@ HRESULT get_EnableMouse(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Defina esse parâmetro como 0 para desabilitar o recurso ou um valor diferente de zero para habilitar o recurso.
+De definir esse parâmetro como 0 para desabilitar o recurso ou um valor não zero para habilitar o recurso.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Retorna **S \_ false**.
+Retorna **S \_ FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,11 +102,11 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                       |
-| Fim do suporte do cliente<br/>    | Nenhum compatível<br/>                                                                       |
-| Fim do suporte do servidor<br/>    | Nenhum compatível<br/>                                                                       |
+| Fim do suporte ao cliente<br/>    | Nenhum compatível<br/>                                                                       |
+| Fim do suporte ao servidor<br/>    | Nenhum compatível<br/>                                                                       |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings é definido como 3c65b4ab-12B3-465b-acd4-b8dad3bff9e2<br/> |
+| IID<br/>                      | \_IMs IIDRdpClientAdvancedSettings é definido como 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 
@@ -135,7 +135,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 [**IMsRdpClientAdvancedSettings8**](imsrdpclientadvancedsettings8.md)
 </dt> <dt>
 
-[**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md)
+[**Imsrdpclientadvancedsettings**](imsrdpclientadvancedsettings-interface.md)
 </dt> </dl>
 
  

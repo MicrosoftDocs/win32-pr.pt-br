@@ -1,6 +1,6 @@
 ---
 title: Trust-Type atributo
-description: O tipo de confiança, por exemplo, Windows NT ou MIT.
+description: o tipo de confiança, por exemplo, Windows NT ou MIT.
 ms.assetid: ad3640cd-d634-4ec1-8be8-1fb8272e4b23
 ms.tgt_platform: multiple
 keywords:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64b8a8f59f7df976f968bb4f2915e667a06e95bb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 94e3591117bb9ae89c0845aae41450812918d3dc3c88e6e31c3f4189f46ef8c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919418"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118681600"
 ---
 # <a name="trust-type-attribute"></a>Trust-Type atributo
 
-O tipo de confiança, por exemplo, Windows NT ou MIT.
+o tipo de confiança, por exemplo, Windows NT ou MIT.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Trust-Type                           |
-| LDAP-Display-Name | TrustType                            |
+| LDAP-Display-Name | trustType                            |
 | Tamanho              | 4 bytes                              |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.     |
 | Frequência de atualização  | Quando uma nova relação de confiança é criada.         |
 | Attribute-Id      | 1.2.840.113556.1.4.136               |
 | System-ID-GUID    | bf967a60-0de6-11d0-a285-00aa003049e2 |
-| Syntax            | [**Enumeração**](s-enumeration.md) |
+| Sintaxe            | [**Enumeração**](s-enumeration.md) |
 
 
 

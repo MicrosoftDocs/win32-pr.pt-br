@@ -3,7 +3,7 @@ title: Elemento ToggleButton
 description: Representa um controle de botão de alternância.
 ms.assetid: f26a90e6-9e9a-4fde-8753-50b8b1d09f80
 keywords:
-- Faixa de das janelas do elemento ToggleButton
+- elemento ToggleButton Windows faixa de Ribbon
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 652ea7b535f41cc3dbb40f25bbe49ab4fe52f5ff
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: 2e17c4f9ea6aa557db6c1f9b98aca60b6da351936a70b783a0618217c03ba7b1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "104293726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119441586"
 ---
 # <a name="togglebutton-element"></a>Elemento ToggleButton
 

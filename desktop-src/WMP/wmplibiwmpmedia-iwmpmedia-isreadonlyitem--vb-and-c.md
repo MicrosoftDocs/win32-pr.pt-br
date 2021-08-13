@@ -3,9 +3,9 @@ title: Método IWMPMedia isReadOnlyItem
 description: O método isReadOnlyItem retorna um valor que indica se os atributos do item de mídia especificado podem ser editados.
 ms.assetid: c810c5c1-8cb9-4ac7-ac49-1ebdc86f5d7f
 keywords:
-- método isReadOnlyItem Windows Media Player
+- Windows Media Player do método isReadOnlyItem
 - método isReadOnlyItem Windows Media Player, interface IWMPMedia
-- Interface IWMPMedia Windows Media Player, método isReadOnlyItem
+- Windows Media Player de interface IWMPMedia, método isReadOnlyItem
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f21d3dfefc1222832783e62962298da8bcb02b25
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dcfd6ef631ed1a3e8159c91bd26e637fc9f22c9b3aa61594555ce1e5ede9c81f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119464986"
 ---
 # <a name="iwmpmediaisreadonlyitem-method"></a>Método IWMPMedia:: isReadOnlyItem
 
@@ -60,7 +60,7 @@ Um **System. String** que é o nome do item de mídia.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Um valor **System. Boolean** que indica se os atributos são somente leitura.
 

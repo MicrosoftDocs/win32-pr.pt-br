@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_SessionBrokerTarget
-description: Define a consulta para um destino de agente de sessão.
+title: Win32_SessionBrokerTarget classe
+description: Define a consulta para um destino do agente de sessão.
 ms.assetid: 35de25da-cb89-4836-be14-9544b1264248
 ms.tgt_platform: multiple
 keywords:
-- Classe de Win32_SessionBrokerTarget Serviços de Área de Trabalho Remota
-- Serviços de Área de Trabalho Remota de Win32_SessionBrokerTarget classe, descrita
+- Win32_SessionBrokerTarget classe Serviços de Área de Trabalho Remota
+- Win32_SessionBrokerTarget classe Serviços de Área de Trabalho Remota , descrito
 topic_type:
 - apiref
 api_name:
@@ -21,16 +21,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 16ceca0df64eeb9cd285737fee7c6ca6fa3a2e63
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5557a67e9b52841b199a3b1f1f85a31090324db7af0c0a2d21a2679d75ce3a17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118604535"
 ---
-# <a name="win32_sessionbrokertarget-class"></a>\_Classe Win32 SessionBrokerTarget
+# <a name="win32_sessionbrokertarget-class"></a>Classe SessionBrokerTarget do Win32 \_
 
-Define a consulta para um destino de agente de sessão.
+Define a consulta para um destino do agente de sessão.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.
 
@@ -50,13 +50,13 @@ class Win32_SessionBrokerTarget
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ SessionBrokerTarget** tem estes tipos de membros:
+A **classe \_ SessionBrokerTarget do Win32** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ SessionBrokerTarget** tem essas propriedades.
+A **classe \_ SessionBrokerTarget do Win32** tem essas propriedades.
 
 <dl> <dt>
 
@@ -69,11 +69,11 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O nome do ambiente. No caso de um destino de máquina virtual (VM), esse pode ser o nome do host da VM.
+O nome do ambiente. No caso de um destino de VM (máquina virtual), esse pode ser o nome do host da VM.
 
 </dd> <dt>
 
-**Farmname**
+**FarmName**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -82,11 +82,11 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O nome do farm ao qual o destino pertence.
+O nome do farm ao que o destino pertence.
 
 </dd> <dt>
 
-**Volume**
+**Guid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -98,7 +98,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-O GUID (se houver) do destino.
+O GUID (se for o caso) do destino.
 
 </dd> <dt>
 
@@ -118,7 +118,7 @@ O nome do plug-in.
 
 </dd> <dt>
 
-**TargetName**
+**Targetname**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -133,7 +133,7 @@ O nome do destino.
 
 ## <a name="examples"></a>Exemplos
 
-A cadeia de caracteres de consulta a seguir demonstra como a \_ classe SessionBrokerTarget do Win32 é usada em uma consulta.
+A cadeia de caracteres de consulta a seguir demonstra como a classe SessionBrokerTarget do Win32 \_ é usada em uma consulta.
 
 
 ```CSharp
@@ -150,8 +150,8 @@ queryString = string.Format("SELECT * FROM Win32_SessionBrokerTarget WHERE Plugi
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2<br/>                                                      |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 

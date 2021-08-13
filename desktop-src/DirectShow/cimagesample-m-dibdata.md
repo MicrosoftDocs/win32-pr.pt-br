@@ -1,7 +1,7 @@
 ---
-description: A \_ variável de membro m DibData é uma estrutura DibData que contém informações sobre um DIB (bitmap independente de dispositivo) GDI.
+description: A variável de membro m DibData é uma estrutura DIBDATA que contém informações sobre um DIB (bitmap independente de dispositivo) \_ GDI.
 ms.assetid: a7fd79c9-d041-4888-a898-11252d9d8131
-title: 'Membro CImageSample:: m_DibData (Winutil. h)'
+title: Membro CImageSample::m_DibData (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 065f124fdc248df6a9c35a877d2e72ae4a196cc9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0b590af8604884b0b89cf6792fbf43fb6df293b00f146596763c948762a6d218
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105812848"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118655576"
 ---
-# <a name="cimagesamplem_dibdata-member"></a>Membro de CImageSample:: m \_ DibData
+# <a name="cimagesamplem_dibdata-member"></a>Membro CImageSample::m \_ DibData
 
-A `m_DibData` variável de membro é uma estrutura [**DIBDATA**](dibdata.md) que contém informações sobre um bitmap independente de dispositivo (DIB) GDI.
+A `m_DibData` variável membro é uma [**estrutura DIBDATA**](dibdata.md) que contém informações sobre um DIB (bitmap independente de dispositivo) GDI.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -42,8 +42,8 @@ DIBDATA m_DibData;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

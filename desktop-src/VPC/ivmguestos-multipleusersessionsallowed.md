@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f725a626ae13caaa36acd598694fef2f3b03e697
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 68075c13cfc65b79d992b849b310bd3c88b09f7901567baf249bff15496ede05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118594069"
 ---
 # <a name="ivmguestosmultipleusersessionsallowed-property"></a>Propriedade IVMGuestOS:: MultipleUserSessionsAllowed
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O Virtual PC não está mais disponível para uso a partir de Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Determina se várias sessões de usuário simultâneas são permitidas no sistema operacional convidado.
 
@@ -66,7 +66,7 @@ HRESULT get_MultipleUserSessionsAllowed(
 
 O valor dessa propriedade não é válido, a menos que a propriedade [**TerminalServicesInitialized**](ivmguestos-terminalservicesinitialized.md) seja **Variant \_ true**.
 
-Para sistemas operacionais cliente do Windows, **MultipleUserSessionsAllowed** será **Variant \_ true** se houver suporte para troca rápida de usuário. Para sistemas operacionais Windows Server, **MultipleUserSessionsAllowed** será **VARIANT \_ true** se serviços de área de trabalho remota (anteriormente chamado de serviços de terminal) estiver instalado e habilitado.
+para sistemas operacionais cliente Windows, **MultipleUserSessionsAllowed** será **VARIANT \_ TRUE** se houver suporte para troca rápida de usuário. para sistemas operacionais de Windows Server, **MultipleUserSessionsAllowed** será **VARIANT \_ TRUE** se Serviços de Área de Trabalho Remota (anteriormente chamado de serviços de Terminal) estiver instalado e habilitado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,7 +74,7 @@ Para sistemas operacionais cliente do Windows, **MultipleUserSessionsAllowed** s
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                 |
 | Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                      |
 | INSERI<br/>                      | <dl> <dt>IVMGuestOS. idl</dt> </dl> |

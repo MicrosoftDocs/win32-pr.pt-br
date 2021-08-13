@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: bef4e4e5117680f7c18f13cc99f801c8e8b8bdfd
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 3f48771603aa5704433bf5d6999bf2c5502e344baf952b78d7e20d9471fecf9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087892"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118282744"
 ---
 # <a name="span-idvspixengineipixengine5_loadtexturefromfileasync_bstr_bstr_ipixengine5callbacks_ptr_dword_dwordspanipixengine5loadtexturefromfileasync-method"></a><span id="vspixengine.ipixengine5_loadtexturefromfileasync_bstr_bstr_ipixengine5callbacks_ptr_dword_dword"></span>Método IPixEngine5:: LoadTextureFromFileAsync
 
@@ -66,7 +66,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 <table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
-## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Consulte também
+## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Confira também
 
 [**IPixEngine5**](/windows/desktop/direct3dtools/ipixengine5)
 

@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 68004a29d01288a2e1d177b8a33df32b919e73ce
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b428699641d5a18bad8a1869f59ab1bb5402e7b667526070c3dc0575e435fc38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118666585"
 ---
 # <a name="sdbdeclareindex-function"></a>Função SdbDeclareIndex
 
@@ -44,55 +44,55 @@ BOOL WINAPI SdbDeclareIndex(
 
 <dl> <dt>
 
-*PDB* \[ no\]
+*pdb* \[ Em\]
 </dt> <dd>
 
-Um identificador para o banco de dados de Shim.
+Um alça para o banco de dados shim.
 
 </dd> <dt>
 
-*tWhich* \[ no\]
+*tWhich* \[ Em\]
 </dt> <dd>
 
-Esse parâmetro deve ser **uma \_ \_ lista de tipos de marca**.
+Esse parâmetro deve ser **TAG \_ TYPE \_ LIST.**
 
 </dd> <dt>
 
-*tKey* \[ no\]
+*tKey* \[ Em\]
 </dt> <dd>
 
-A marca que especifica o tipo a ser usado como chave. Esse parâmetro não pode ser uma **\_ \_ lista de tipos de marca**.
+A TAG que especifica o tipo a ser usado como a chave. Esse parâmetro não pode ser **TAG \_ TYPE \_ LIST.**
 
 </dd> <dt>
 
-*dwEntries* \[ no\]
+*dwEntries* \[ Em\]
 </dt> <dd>
 
-O número de entradas a serem alocadas no índice.
+O número de entradas a alocar no índice.
 
 </dd> <dt>
 
-*bUniqueKey* \[ no\]
+*bUniqueKey* \[ Em\]
 </dt> <dd>
 
-Se esse parâmetro for **true**, o índice será um índice de chave exclusiva.
+Se esse parâmetro for **TRUE,** o índice será um índice de chave exclusiva.
 
 </dd> <dt>
 
-*piiIndex* \[ fora\]
+*piiIndex* \[ out\]
 </dt> <dd>
 
-A **IndexID** resultante do índice recentemente declarado.
+O **INDEXID resultante** do índice recém-declarado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-A função retorna **true** em caso de êxito ou **false** em caso de falha.
+A função retorna **TRUE em** caso de êxito **ou FALSE** em caso de falha.
 
 ## <a name="remarks"></a>Comentários
 
-Chame essa função antes de gravar marcas no novo índice.
+Chame essa função antes de escrever marcas no novo índice.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,8 +100,8 @@ Chame essa função antes de gravar marcas no novo índice.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 
@@ -110,7 +110,7 @@ Chame essa função antes de gravar marcas no novo índice.
 
 <dl> <dt>
 
-[**INDEXid**](indexid.md)
+[**INDEXID**](indexid.md)
 </dt> <dt>
 
 [**SdbCommitIndexes**](sdbcommitindexes.md)

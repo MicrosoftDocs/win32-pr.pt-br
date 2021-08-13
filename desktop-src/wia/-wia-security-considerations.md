@@ -1,19 +1,19 @@
 ---
-description: Este documento fornece informações sobre considerações de segurança relacionadas à WIA (aquisição de imagens do Windows).
+description: este documento fornece informações sobre considerações de segurança relacionadas a WIA (Windows Image Acquisition).
 ms.assetid: 35455320-7d08-49de-938d-40dc0873917b
-title: 'Considerações de segurança: aquisição de imagem do Windows'
+title: 'considerações de segurança: aquisição de imagem de Windows'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9ab080582492a0c03eab7879624bfb49a370e6e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7bb8f78e0f45b5b63d5d8deb8ffdd35bc64ee5566ced65ded30ecc51366c0793
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105807939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118439675"
 ---
-# <a name="security-considerations-windows-image-acquisition"></a>Considerações de segurança: aquisição de imagem do Windows
+# <a name="security-considerations-windows-image-acquisition"></a>considerações de segurança: aquisição de imagem de Windows
 
-Este documento fornece informações sobre considerações de segurança relacionadas à WIA (aquisição de imagens do Windows). Este documento não fornece tudo o que você precisa saber sobre problemas de segurança. em vez disso, use-o como ponto de partida e referência para essa área de tecnologia.
+este documento fornece informações sobre considerações de segurança relacionadas a WIA (Windows Image Acquisition). Este documento não fornece tudo o que você precisa saber sobre problemas de segurança. em vez disso, use-o como ponto de partida e referência para essa área de tecnologia.
 
 -   [Usar aspas ao contrário dos nomes de caminho](#use-quotation-marks-around-path-names)
 -   [Coloque os aplicativos registrados em locais seguros](#place-registered-applications-in-secure-locations)
@@ -34,11 +34,11 @@ O WIA usa vários diretórios e chaves de registro internamente para armazenar d
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
--   [Microsoft Security](https://www.microsoft.com/security/)
--   [Home Page de segurança da biblioteca MSDN](https://msdn.microsoft.com/security/default.aspx)
+-   [Segurança da Microsoft](https://www.microsoft.com/security/)
+-   [Biblioteca MSDN Home Page de segurança](https://msdn.microsoft.com/security/default.aspx)
 -   [Recursos de instruções de segurança](https://www.microsoft.com/technet/solutionaccelerators/howto/sechow.mspx)
 -   [Recursos de segurança do TechNet](https://technet.microsoft.com/security/default.aspx)
--   [Considerações de segurança para desenvolvedores do Windows XP Embedded](/previous-versions/ms838345(v=msdn.10))
+-   [considerações de segurança para desenvolvedores do Windows XP Embedded](/previous-versions/ms838345(v=msdn.10))
 -   [Práticas recomendadas de segurança](../secbp/best-practices-for-the-security-apis.md)
 
  

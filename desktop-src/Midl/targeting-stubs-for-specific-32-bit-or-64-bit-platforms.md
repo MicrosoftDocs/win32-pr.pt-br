@@ -8,12 +8,12 @@ keywords:
 - MIDL de stubs
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 526265a60f8b2ef2f31d19d0356d4ec3a3ae8c8f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 04e0f78e47ed078bf7cd1fd78fa8730b597554a6c8ba1ed4fc5a67bc562e7d82
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118641166"
 ---
 # <a name="targeting-stubs-for-specific-32-bit-or-64-bit-platforms"></a>Direcionando stubs para plataformas específicas de 32 bits ou 64 bits
 
@@ -62,7 +62,7 @@ Se você souber que a plataforma de destino está correta para os recursos que e
 [**/Oi**](-oi.md)
 </dt> <dt>
 
-[**pipe**](pipe.md)
+[**conexão**](pipe.md)
 </dt> <dt>
 
 [**\_marshaling de transmissão**](wire-marshal.md)
@@ -74,9 +74,9 @@ Se você souber que a plataforma de destino está correta para os recursos que e
 [Empacotamento de tipos de dados OLE](marshaling-ole-data-types.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

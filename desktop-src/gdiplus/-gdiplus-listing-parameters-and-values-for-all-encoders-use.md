@@ -4,12 +4,12 @@ ms.assetid: c80ad013-0b92-461f-8714-4b6d0cb6de0d
 title: Listando parâmetros e valores para todos os codificadores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fdaf522193f1074a28fe9f5ebb8a7afc2bade0c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d4545c23522b2f129d858dab03e8e2b80941426a36758df5ab60850ca9e81974
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118248495"
 ---
 # <a name="listing-parameters-and-values-for-all-encoders"></a>Listando parâmetros e valores para todos os codificadores
 
@@ -282,7 +282,7 @@ Se você escrever um código semelhante ao exemplo anterior para investigar os v
 
 | Parâmetro de codificador JPEG | Valores permitidos                                                                                                                                                                                                 |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Transformação         | EncoderValueTransformRotate90 EncoderValueTransformRotate180<br/>  EncoderValueTransformRotate270<br/>  EncoderValueTransformFlipHorizontal<br/>  EncoderValueTransformFlipVertical<br/> |
+| Transformation         | EncoderValueTransformRotate90 EncoderValueTransformRotate180<br/>  EncoderValueTransformRotate270<br/>  EncoderValueTransformFlipHorizontal<br/>  EncoderValueTransformFlipVertical<br/> |
 | Qualidade                | 0 a 100                                                                                                                                                                                                    |
 
 

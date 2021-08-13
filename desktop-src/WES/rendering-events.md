@@ -1,21 +1,21 @@
 ---
-title: Renderizando eventos
-description: Para exibir um evento, você deve chamar a função EvtRender para renderizá-lo em um formulário que pode ser exibido.
+title: Eventos de renderização
+description: Para exibir um evento, você deve chamar a função EvtRender para renderizar em um formato exibivel.
 ms.assetid: fc763669-1fbc-4183-a4ff-577a7954d1ca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d7b1b4e2cbcab564abefb628f9c58f79ade86d8
-ms.sourcegitcommit: c2a1c4314550ea9bd202d28adfcc7bfe6180932f
+ms.openlocfilehash: 220c53d4df0d51bf9963e080c192d19a8a915ffbfe33cf113608c0cf6a8fcd39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "104365770"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118587301"
 ---
-# <a name="rendering-events"></a>Renderizando eventos
+# <a name="rendering-events"></a>Eventos de renderização
 
-Para exibir um evento, você deve chamar a função [**EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) para renderizá-lo em um formulário que pode ser exibido. Você pode renderizar o evento como uma cadeia de caracteres XML ou pode renderizar um ou mais valores do evento. Um evento também pode conter cadeias de mensagens (por exemplo, a cadeia de caracteres de mensagem do evento, a cadeia de caracteres de mensagem do canal ou a cadeia de caracteres de mensagem do provedor). Para obter uma das cadeias de caracteres de mensagem do evento, chame a função [**EvtFormatMessage**](/windows/desktop/api/WinEvt/nf-winevt-evtformatmessage) . Para obter mais detalhes sobre como obter uma cadeia de caracteres de mensagem do evento, consulte [Formatando mensagens de evento](formatting-event-messages.md).
+Para exibir um evento, você deve chamar a [**função EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) para renderizar em um formato exibivel. Você pode renderizar o evento como uma cadeia de caracteres XML ou renderizar um ou mais valores do evento. Um evento também pode conter cadeias de caracteres de mensagens (por exemplo, a cadeia de caracteres de mensagem do evento, a cadeia de caracteres de mensagem do canal ou a cadeia de caracteres de mensagem do provedor). Para obter uma das cadeias de caracteres de mensagem do evento, chame a [**função EvtFormatMessage.**](/windows/desktop/api/WinEvt/nf-winevt-evtformatmessage) Para obter mais detalhes sobre como obter uma cadeia de caracteres de mensagem do evento, consulte [Formatando mensagens de evento](formatting-event-messages.md).
 
-Para renderizar o evento como uma cadeia de caracteres XML, chame a função [**EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) . No entanto, se você quiser renderizar partes específicas do evento, primeiro você deve chamar o [**EvtCreateRenderContext**](/windows/desktop/api/WinEvt/nf-winevt-evtcreaterendercontext) para especificar as partes do evento que deseja renderizar. Você pode renderizar valores específicos do evento, os valores da seção dados do usuário ou dados do evento do evento ou os valores das propriedades relacionadas ao sistema do evento. Para obter detalhes sobre os componentes de um evento, consulte [esquema de evento](eventschema-schema.md).
+Para renderizar o evento como uma cadeia de caracteres XML, chame a [**função EvtRender.**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) No entanto, se você quiser renderizar partes específicas do evento, primeiro chame [**o EvtCreateRenderContext**](/windows/desktop/api/WinEvt/nf-winevt-evtcreaterendercontext) para especificar as partes do evento que deseja renderizar. Você pode renderizar valores específicos do evento, os valores da seção de dados de usuário ou dados de evento do evento ou os valores das propriedades relacionadas ao sistema do evento. Para obter detalhes sobre os componentes de um evento, consulte [Esquema de evento](eventschema-schema.md).
 
 O exemplo a seguir mostra como renderizar um evento como uma cadeia de caracteres XML.
 
@@ -68,7 +68,7 @@ cleanup:
 
 
 
-O exemplo a seguir mostra como renderizar os valores de propriedades da seção System do evento. Para renderizar os dados de usuário ou as propriedades de dados de evento do evento, substitua o sinalizador EvtRenderContextSystem pelo sinalizador EvtRenderContextUser ao criar o contexto de renderização.
+O exemplo a seguir mostra como renderizar os valores de propriedades da seção do sistema do evento. Para renderizar os dados do usuário ou as propriedades de dados de evento do evento, substitua o sinalizador EvtRenderContextSystem pelo sinalizador EvtRenderContextUser ao criar o contexto de renderização.
 
 
 ```C++

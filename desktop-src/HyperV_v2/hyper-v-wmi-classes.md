@@ -4,12 +4,12 @@ ms.assetid: 3373D767-EC21-4CA7-8FA0-03DB39224728
 title: Classes WMI do Hyper-V
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f47315c491b06a69307dc686c728207ead93d4c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 278aded589441ddb43cc666a51e0bc1466999b27a6fa875243063a0a9482fed6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118644988"
 ---
 # <a name="hyper-v-wmi-classes"></a>Classes WMI do Hyper-V
 
@@ -28,7 +28,7 @@ A seguir estão as classes WMI do Hyper-V.
 | [Classes de memória](memory-classes.md)<br/>                                       | As classes de memória modelam a memória para uma máquina virtual.<br/>                                                                                                                                                                                                                       |
 | [Classes de processador](processor-classes.md)<br/>                                 | As classes de processador modelam um processador para uma máquina virtual.<br/>                                                                                                                                                                                                                   |
 | [Classes de registro de perfil](profile-registration-classes.md)<br/>           | Classes WMI de virtualização relacionadas ao registro de perfil.<br/>                                                                                                                                                                                                                      |
-| [Classes de Área de Trabalho Remota](remotefx-classes.md)<br/>                             | As classes WMI de virtualização Área de Trabalho Remota são usadas para gerenciar Área de Trabalho Remota e recursos do RemoteFX e máquinas virtuais.<br/>                                                                                                                                                     |
+| [Classes de Área de Trabalho Remota](remotefx-classes.md)<br/>                             | as classes WMI de virtualização Área de Trabalho Remota são usadas para gerenciar Área de Trabalho Remota e RemoteFX recursos e máquinas virtuais.<br/>                                                                                                                                                     |
 | [Classes de gerenciamento de recursos](resource-management-classes.md)<br/>             | Classes WMI de virtualização relacionadas ao gerenciamento de recursos.<br/>                                                                                                                                                                                                                       |
 | [Classes de dispositivos seriais](serial-devices-classes.md)<br/>                       | Os dispositivos seriais em uma máquina virtual consistem em controladores seriais e portas seriais. Cada máquina virtual tem exatamente um controlador serial e cada controlador serial tem exatamente duas portas seriais.<br/>                                                                         |
 | [Classes de armazenamento](storage-classes.md)<br/>                                     | Os objetos de armazenamento são separados em três tipos: controladores, unidades e mídia.<br/>                                                                                                                                                                                              |

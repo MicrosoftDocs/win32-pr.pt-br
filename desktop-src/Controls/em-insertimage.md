@@ -3,7 +3,7 @@ title: Mensagem de EM_INSERTIMAGE (RichEdit. h)
 description: Substitui a seleção por um blob que exibe uma imagem.
 ms.assetid: 147B298B-C4A9-455B-9736-A0B09D72902B
 keywords:
-- Controles de EM_INSERTIMAGE de mensagens do Windows
+- controles de Windows de mensagem de EM_INSERTIMAGE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc9ff1e0fd355cf5dd8d43d211c44fda6417c638
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7418a8fe4b7c627d211bce7bf2591ed684d82e42089fbe9bedeb2f76a6b9d3e0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119437886"
 ---
 # <a name="em_insertimage-message"></a>\_Mensagem em INSERTIMAGE
 
@@ -50,7 +50,7 @@ Um ponteiro para uma estrutura de [**\_ \_ parâmetros de imagem RichEdit**](/wi
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK se for bem-sucedido ou um dos seguintes códigos de erro.
 
@@ -76,8 +76,8 @@ Se a seleção for um ponto de inserção, o blob de imagem será inserido no po
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 

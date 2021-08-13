@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 028803046dd34ac4a1566dd465d12bdca194e80d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c2a428329c9ebf7e6e7154bc7ae30c531bbcd9f42adabd3f10259e5780434ce7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105755684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118686052"
 ---
 # <a name="ms-dfsr-cachepolicy-attribute"></a>atributo ms-DFSR-CachePolicy
 
@@ -36,7 +36,7 @@ Opções de política de cache sob demanda.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.29           |
 | System-ID-GUID    | db7a08e7-fc76-4569-a45f-f5ecb66a88b5 |
-| Syntax            | [**Enumeração**](s-enumeration.md) |
+| Sintaxe            | [**Enumeração**](s-enumeration.md) |
 
 
 

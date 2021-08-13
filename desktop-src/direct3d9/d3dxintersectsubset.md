@@ -1,7 +1,7 @@
 ---
-description: Cruza o raio especificado com o subconjunto de malha fornecido. Isso fornece uma funcionalidade semelhante ao D3DXIntersect.
+description: Intersecção do raio especificado com o subconjunto de malha especificado. Isso fornece funcionalidade semelhante ao D3DXIntersect.
 ms.assetid: 4a757b9e-18eb-424e-9f3e-cdf917c23787
-title: Função D3DXIntersectSubset (D3DX9Mesh. h)
+title: Função D3DXIntersectSubset (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 621f45d7c2a6d8ff162f539ef62153d3ae70f6e9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 95a987730706f32654aab8f63feed61ae87c4d58d27ccccdaed9767d3303bbf8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104172997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119460376"
 ---
 # <a name="d3dxintersectsubset-function"></a>Função D3DXIntersectSubset
 
-Cruza o raio especificado com o subconjunto de malha fornecido. Isso fornece uma funcionalidade semelhante ao [**D3DXIntersect**](d3dxintersect.md).
+Intersecção do raio especificado com o subconjunto de malha especificado. Isso fornece funcionalidade semelhante ao [**D3DXIntersect.**](d3dxintersect.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -50,120 +50,120 @@ HRESULT D3DXIntersectSubset(
 
 <dl> <dt>
 
-*pMesh* \[ no\]
+*pMesh* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBASEMESH**](id3dxbasemesh.md)**
 
-Ponteiro para uma interface [**ID3DXBaseMesh**](id3dxbasemesh.md) , representando a malha a ser testada. A malha deve ser classificada como atributo.
+Ponteiro para uma [**interface ID3DXBaseMesh,**](id3dxbasemesh.md) representando a malha a ser testada. A malha deve ser classificação de atributo.
 
 </dd> <dt>
 
-*Atribid* \[ no\]
+*AttribId* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Identificador de atributo do subconjunto com o qual Interseccionar.
+Identificador de atributo do subconjunto com o que intersecção.
 
 </dd> <dt>
 
-*pRayPos* \[ no\]
+*pRayPos* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Ponteiro para uma estrutura [**D3DXVECTOR3**](d3dxvector3.md) , especificando o ponto em que o raio começa.
+Ponteiro para uma [**estrutura D3DXVECTOR3,**](d3dxvector3.md) especificando o ponto em que o raio começa.
 
 </dd> <dt>
 
-*pRayDir* \[ no\]
+*pRayDir* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Ponteiro para uma estrutura [**D3DXVECTOR3**](d3dxvector3.md) , especificando a direção do raio.
+Ponteiro para uma [**estrutura D3DXVECTOR3,**](d3dxvector3.md) especificando a direção do raio.
 
 </dd> <dt>
 
-*pHit* \[ fora\]
+*pHit* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)\***
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)\***
 
-Ponteiro para um BOOL. Se Ray Interseccionar uma face triangular na malha, esse valor será definido como **true**. Caso contrário, esse valor será definido como **false**.
+Ponteiro para um BOOL. Se o raio intersecção de um rosto triangular na malha, esse valor será definido como **TRUE.** Caso contrário, esse valor será definido como **FALSE.**
 
 </dd> <dt>
 
-*pFaceIndex* \[ fora\]
+*pFaceIndex* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Aponta para um valor de índice da face mais próxima da origem Ray, se pHit for **true**.
+Ponteiro para um valor de índice da face mais próxima da origem do raio, se pHit for **TRUE.**
 
 </dd> <dt>
 
-*pU* \[ fora\]
+*pU* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Ponteiro para uma coordenada de pressionamento de barycentric, U.
+Ponteiro para uma coordenada de acerto centrada em barras, U.
 
 </dd> <dt>
 
-*VP* \[ fora\]
+*pV* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Ponteiro para uma coordenada de pressionamento de barycentric, V.
+Ponteiro para uma coordenada de acerto centrada em barras, V.
 
 </dd> <dt>
 
-*pDist* \[ fora\]
+*pDist* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
 Ponteiro para uma distância de parâmetro de interseção de raio.
 
 </dd> <dt>
 
-*ppAllHits* \[ fora\]
+*ppAllHits* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Matriz de estruturas [**D3DXINTERSECTINFO**](d3dxintersectinfo.md) , que representa todas as ocorrências, não apenas as ocorrências mais próximas.
+Matriz de [**estruturas D3DXINTERSECTINFO,**](d3dxintersectinfo.md) representando todas as acertos, não apenas as acertos mais próximos.
 
 </dd> <dt>
 
-*pCountOfHits* \[ fora\]
+*pCountOfHits* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Número de elementos na matriz retornados de ppAllHits.
+Número de elementos na matriz retornada de ppAllHits.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser o seguinte valor: E \_ OUTOFMEMORY.
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser o seguinte valor: E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Comentários
 
-A função **D3DXIntersectSubset** fornece uma maneira de entender os pontos em um triângulo, independentemente de onde o triângulo realmente está localizado. Essa função retorna o ponto resultante usando a seguinte equação: v1 + U (v2-v1) + V (v3-v1).
+A **função D3DXIntersectSubset** fornece uma maneira de entender os pontos dentro e ao redor de um triângulo, independentemente de onde o triângulo está realmente localizado. Essa função retorna o ponto resultante usando a seguinte equação: V1 + U(V2 - V1) + V(V3 - V1).
 
-Qualquer ponto no V1V2V3 do plano pode ser representado pela coordenada barycentric (U, V). O parâmetro U controla a quantidade de v2 que é ponderada no resultado e o parâmetro V controla a quantidade de v3 ponderada no resultado. Por fim, o valor de \[ 1-(U + V) \] controla o quanto v1 é ponderado no resultado.
+Qualquer ponto no plano V1V2V3 pode ser representado pela coordenada centrada em barras (U,V). O parâmetro U controla quanto V2 é ponderado no resultado e o parâmetro V controla quanto V3 é ponderado no resultado. Por fim, o valor de 1 - (U + V) controla quanto V1 é \[ \] ponderado no resultado.
 
-As coordenadas de barycentric são uma forma de coordenadas gerais. Nesse contexto, o uso de coordenadas barycentric representa uma alteração nos sistemas de coordenadas. O que se aplica a coordenadas cartesianas é verdadeiro para coordenadas barycentrics.
+Coordenadas barycentric são uma forma de coordenadas gerais. Nesse contexto, o uso de coordenadas centradas em barras representa uma alteração em sistemas de coordenadas. O que é verdadeiro para coordenadas cartesianas é verdadeiro para coordenadas centradas em barras.
 
-As coordenadas barycentric definem um ponto dentro de um triângulo em termos dos vértices do triângulo. Para obter uma descrição mais detalhada das coordenadas de barycentric, consulte [Descrição de coordenadas barycentric do MathWorld](https://mathworld.wolfram.com/BarycentricCoordinates.html).
+As coordenadas barycentric definem um ponto dentro de um triângulo em termos dos vértices do triângulo. Para obter uma descrição mais detalhada das coordenadas centradas em barras, consulte Descrição de [coordenadas barycentric da Mathworld.](https://mathworld.wolfram.com/BarycentricCoordinates.html)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -171,8 +171,8 @@ As coordenadas barycentric definem um ponto dentro de um triângulo em termos do
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

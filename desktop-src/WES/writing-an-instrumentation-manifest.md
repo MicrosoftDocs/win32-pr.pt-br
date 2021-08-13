@@ -4,12 +4,12 @@ description: Aplicativos e DLLs usam um manifesto de instrumentação para ident
 ms.assetid: eec9d129-acde-4302-9121-634b3fad8455
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9cdad802526ad177eb5daa8846535c434fff32eb
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 82b3462d6adc264fba8ba155620a2bbb402d51d5d6fc24f7dbe879b9e2a91ec9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118587047"
 ---
 # <a name="writing-an-instrumentation-manifest"></a>Escrevendo um manifesto de instrumentação
 
@@ -19,7 +19,7 @@ Um provedor de instrumentação é qualquer aplicativo ou DLL que chama as funç
 
 A vantagem de especificar um provedor para cada DLL é que você pode habilitar e desabilitar os provedores individuais e, portanto, os eventos que eles geram. Essa vantagem se aplica somente se o provedor estiver habilitado por uma sessão de rastreamento ETW. Todos os eventos que especificam um canal de log de eventos são sempre gravados nesse canal.
 
-O manifesto deve identificar o provedor e os eventos que ele grava, mas os outros metadados, como canais, níveis e palavras-chave, são opcionais; Se você definir os metadados opcionais, dependerá de quem consumirá os eventos. Por exemplo, se os administradores ou a equipe de suporte consumirem os eventos usando uma ferramenta como a Visualizador de Eventos do Windows que lê eventos de canais de log de eventos, você deverá definir os canais nos quais os eventos são gravados. No entanto, se o provedor só for habilitado por uma sessão de rastreamento ETW, você não precisará definir canais.
+O manifesto deve identificar o provedor e os eventos que ele grava, mas os outros metadados, como canais, níveis e palavras-chave, são opcionais; Se você definir os metadados opcionais, dependerá de quem consumirá os eventos. por exemplo, se os administradores ou a equipe de suporte consumirem os eventos usando uma ferramenta como a Windows Visualizador de Eventos que lê eventos de canais de log de eventos, você deverá definir os canais nos quais os eventos são gravados. No entanto, se o provedor só for habilitado por uma sessão de rastreamento ETW, você não precisará definir canais.
 
 Embora os metadados níveis, tarefas, opcodes e palavras-chave sejam opcionais, você deve usá-los para agrupar logicamente ou segmentar os eventos. O agrupamento de eventos ajuda os consumidores a consumir apenas os eventos que são interessantes. Por exemplo, o consumidor poderia consultar todos os eventos em que o nível é "crítico" e a palavra-chave é "gravar" ou consultar todos os eventos gravados por uma tarefa específica.
 
@@ -39,9 +39,9 @@ As seções a seguir mostram como definir os componentes do manifesto:
 -   [Definindo os modelos que definem os dados específicos do evento](defining-event-data-templates.md)
 -   [Definindo os eventos que o provedor grava](defining-events.md)
 
-Embora seja possível criar um manifesto de instrumentação manualmente, você deve considerar o uso da ferramenta ECManGen.exe que está incluída na \\ pasta bin do SDK do Windows. A ferramenta de ECManGen.exe usa uma GUI que orienta você pela criação de um manifesto do zero sem precisar usar marcas XML. Ter conhecimento das informações nesta seção e na seção do [esquema EventManifest](eventmanifestschema-schema.md) ajudará ao usar a ferramenta.
+embora seja possível criar um manifesto de instrumentação manualmente, você deve considerar o uso da ferramenta ECManGen.exe que está incluída na \\ pasta Bin do SDK do Windows. A ferramenta de ECManGen.exe usa uma GUI que orienta você pela criação de um manifesto do zero sem precisar usar marcas XML. Ter conhecimento das informações nesta seção e na seção do [esquema EventManifest](eventmanifestschema-schema.md) ajudará ao usar a ferramenta.
 
-Se você usar o Visual Studio como seu editor de XML, poderá adicionar o esquema [EventManifest](eventmanifestschema-schema.md) ao projeto (consulte o menu XML) para aproveitar o IntelliSense, a validação de esquema embutido e outros recursos para tornar a criação do manifesto mais fácil e precisa.
+se você usar Visual Studio como seu editor de XML, poderá adicionar o esquema [EventManifest](eventmanifestschema-schema.md) ao projeto (consulte o menu xml) para aproveitar o Intellisense, a validação de esquema embutido e outros recursos para tornar a criação do manifesto mais fácil e precisa.
 
 Depois de gravar o manifesto, use o compilador de mensagem para validar o manifesto e gerar os arquivos de recurso e de cabeçalho que você inclui em seu provedor. Para obter mais informações, consulte [Compilando um manifesto de instrumentação](compiling-an-instrumentation-manifest.md).
 
@@ -51,8 +51,8 @@ O exemplo a seguir mostra o esqueleto de um manifesto de evento totalmente defin
 ```XML
 <instrumentationManifest
     xmlns="http://schemas.microsoft.com/win/2004/08/events" 
-    xmlns:win="https://manifests.microsoft.com/win/2004/08/windows/events"
-    xmlns:xs="https://www.w3.org/2001/XMLSchema"    
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
     >
 
     <instrumentation>
@@ -113,6 +113,6 @@ O exemplo a seguir mostra o esqueleto de um manifesto de evento totalmente defin
 
 
 
- 
+ 
 
- 
+ 

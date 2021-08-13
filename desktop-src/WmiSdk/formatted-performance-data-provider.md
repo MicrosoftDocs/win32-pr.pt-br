@@ -10,16 +10,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0db075ebdafcd31c7aa0980d191ed565873f686f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ab8e931c3d03c619af5b1e37cadd8dacdccd21534513ed3a1aa1d7b9076acfb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105760614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118556609"
 ---
 # <a name="formatted-performance-data-provider"></a>Provedor de Dados de desempenho formatado
 
-\[O Provedor de Dados de desempenho formatado, também conhecido como "provedor de contador de cooked", não está mais disponível para uso. Em vez disso, use o provedor [WMIPerfInst](wmiperfinst-provider.md) .\]
+\[o Provedor de Dados de desempenho formatado, também conhecido como "provedor de contador de Cooked", não está mais disponível para uso. Em vez disso, use o provedor [WMIPerfInst](wmiperfinst-provider.md) .\]
 
 O provedor de dados de desempenho formatado de alto desempenho fornece dados de contador de desempenho calculados ("cooked"), como a porcentagem de tempo que um disco gasta gravando dados. Esse provedor fornece dados dinâmicos para as classes WMI derivadas do [**Win32 \_ PerfFormattedData**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata). A diferença entre esse provedor e o [provedor](performance-counter-provider.md) de contador de desempenho é que o provedor de contador de desempenho fornece dados brutos e o provedor de contador de cooked fornece dados de desempenho que aparecem exatamente como no [*Monitor do sistema*](gloss-s.md). O nome da instância [**\_ \_ Win32Provider**](--win32provider.md) é "HiPerfCooker \_ v1".
 

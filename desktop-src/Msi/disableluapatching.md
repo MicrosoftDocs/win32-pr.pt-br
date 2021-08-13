@@ -4,12 +4,12 @@ ms.assetid: b122d6f4-2be6-4b9b-b8e0-ca08fe9c4f94
 title: DisableLUAPatching
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b76357211523d0a69a56ab2a047623a63f211df9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5821eb480ac09a2fc0416d7b3a54c0df5699a7096b45e56a843afe691886296f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105778724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118637773"
 ---
 # <a name="disableluapatching"></a>DisableLUAPatching
 
@@ -17,11 +17,11 @@ Se essa política do sistema por máquina for definida como "1", o instalador im
 
 Use a propriedade [**MSIDISABLELUAPATCHING**](msidisableluapatching.md) para impedir a aplicação de patches com privilégios mínimos de um aplicativo.
 
-A política DisableLUAPatching está disponível a partir do Windows Installer versão 3,0.
+a política DisableLUAPatching está disponível a partir do Windows Installer versão 3,0.
 
 ## <a name="registry-key"></a>Chave do Registro
 
-**HKEY \_ \_** Políticas de \\ **software** do computador local \\  \\ **Microsoft** \\ **Windows** \\ **Installer**
+**HKEY \_ \_** \\  \\  \\ **Microsoft** \\ **Windows** \\ **Installer** de políticas de Software de computador LOCAL
 
 ## <a name="data-type"></a>Tipo de Dados
 
@@ -31,7 +31,7 @@ A política DisableLUAPatching está disponível a partir do Windows Installer v
 
 <dl> <dt>
 
-[Sem suporte no Windows Installer 2,0 e versões anteriores](not-supported-in-windows-installer-version-2-0.md)
+[sem suporte no Windows Installer 2,0 e versões anteriores](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

@@ -3,7 +3,7 @@ title: Mensagem de MCIWNDM_CAN_RECORD (VFW. h)
 description: O MCIWNDM \_ pode \_ registrar a mensagem determina se um dispositivo MCI dá suporte à gravação. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndCanRecord.
 ms.assetid: b5a789fa-6a88-487d-a374-8f4798ee5a62
 keywords:
-- Multimídia do Windows de mensagem MCIWNDM_CAN_RECORD
+- mensagem de MCIWNDM_CAN_RECORD Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2acbc9efa3ca973c12112a599d1202ad936107a9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5df46ce0cbffe17f890e50159a13a93192e67f60e323d6ba711bee6af7ac3f79
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119429646"
 ---
 # <a name="mciwndm_can_record-message"></a>MCIWNDM \_ pode \_ registrar a mensagem
 

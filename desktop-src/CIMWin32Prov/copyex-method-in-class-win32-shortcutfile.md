@@ -1,8 +1,8 @@
 ---
-description: Copia o arquivo de atalho lógico ou o diretório especificado no caminho do objeto para o local especificado pelo parâmetro FileName. Esse método é uma versão estendida do método Copy.
+description: Copia o arquivo de atalho lógico ou diretório especificado no caminho do objeto para o local especificado pelo parâmetro FileName. Esse método é uma versão estendida do método Copy.
 ms.assetid: 06b629bb-d35e-4bc2-b0e5-c6a981b6d968
 ms.tgt_platform: multiple
-title: Método CopyEx da classe Win32_ShortcutFile
+title: Método CopyEx da classe Win32_ShortcutFile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6cbf1cbb622610a01a533195752b3532b25f8959
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6c50330f44fe481398ca9c831c349d3b99a33f735b13be7cc5843c566b8897a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105755843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118676737"
 ---
-# <a name="copyex-method-of-the-win32_shortcutfile-class"></a>Método CopyEx da \_ classe shortcutfile do Win32
+# <a name="copyex-method-of-the-win32_shortcutfile-class"></a>Método CopyEx da classe ShortcutFile win32 \_
 
-O método de [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **CopyEx** copia o arquivo de atalho lógico ou o diretório especificado no caminho do objeto para o local especificado pelo parâmetro *filename* . Esse método é uma versão estendida do método [**Copy**](copy-method-in-class-win32-directory.md) . Não haverá suporte para uma cópia se a substituição de um arquivo lógico existente for necessária.
+O método [de classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **CopyEx** copia o arquivo de atalho lógico ou diretório especificado no caminho do objeto para o local especificado pelo *parâmetro FileName.* Esse método é uma versão estendida do [**método Copy.**](copy-method-in-class-win32-directory.md) Não há suporte para uma cópia se a substituição de um arquivo lógico existente for necessária.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,7 +45,7 @@ uint32 CopyEx(
 
 <dl> <dt>
 
-*Nome do arquivo* \[ no\]
+*FileName* \[ Em\]
 </dt> <dd>
 
 Nome totalmente qualificado da cópia do arquivo (ou diretório).
@@ -54,35 +54,35 @@ Exemplo: c: \\ temp \\ newdirectory.
 
 </dd> <dt>
 
-*StopFileName* \[ fora\]
+*StopFileName* \[ out\]
 </dt> <dd>
 
-Nome do arquivo ou diretório em que o método **CopyEx** falhou. Esse parâmetro será **nulo** se o método tiver sucesso.
+Nome do arquivo ou diretório em que o **método CopyEx** falhou. Esse parâmetro será **NULL** se o método for bem-sucedido.
 
 </dd> <dt>
 
-*StartFileName* \[ em, opcional\]
+*StartFileName* \[ in, opcional\]
 </dt> <dd>
 
-Nomeia o arquivo ou diretório filho a ser usado como ponto de partida para **CopyEx**. O parâmetro *StartFileName* normalmente é o parâmetro *StopFileName* que especifica o arquivo ou diretório no qual ocorreu um erro da chamada do método anterior. Se esse parâmetro for **nulo**, a operação será executada no arquivo ou diretório especificado na chamada de ExecMethod.
+Nomeia o arquivo ou diretório filho a ser usado como um ponto de partida para **CopyEx.** O *parâmetro StartFileName* normalmente é o parâmetro *StopFileName* que especifica o arquivo ou diretório no qual ocorreu um erro da chamada de método anterior. Se esse parâmetro for **NULL,** a operação será executada no arquivo ou diretório especificado na chamada ExecMethod.
 
 </dd> <dt>
 
-*Recursivo* \[ em, opcional\]
+*Recursivo* \[ in, opcional\]
 </dt> <dd>
 
-Se **for true**, a alteração de propriedade será aplicada recursivamente aos arquivos e diretórios dentro do diretório especificado pela instância [**de \_ LogicalFile do CIM**](cim-logicalfile.md) .
+Se **true**, a alteração de propriedade será aplicada recursivamente a arquivos e diretórios dentro do diretório especificado pela [**instância de \_ LogicalFile cim.**](cim-logicalfile.md)
 
 > [!Note]  
-> Para instâncias de arquivo, o parâmetro de entrada *recursivo* é ignorado.
+> Para instâncias de arquivo, o *parâmetro de entrada recursiva* é ignorado.
 
  
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) se o arquivo foi copiado com êxito e qualquer outro número para indicar um erro.
+Retornará um valor de 0 (zero) se o arquivo tiver sido copiado com êxito e qualquer outro número para indicar um erro.
 
 <dl> <dt>
 
@@ -96,7 +96,7 @@ A solicitação foi bem-sucedida.
 **2**
 </dt> <dd>
 
-Acesso negado.
+O acesso foi negado.
 
 </dd> <dt>
 
@@ -131,7 +131,7 @@ O sistema de arquivos não é NTFS.
 **12**
 </dt> <dd>
 
-A plataforma não é o Windows.
+A plataforma não é Windows.
 
 </dd> <dt>
 
@@ -159,7 +159,7 @@ Houve uma violação de compartilhamento.
 **16**
 </dt> <dd>
 
-O arquivo de inicialização especificado não era válido.
+O arquivo inicial especificado não era válido.
 
 </dd> <dt>
 
@@ -170,7 +170,7 @@ Um privilégio necessário para a operação não é mantido.
 
 </dd> <dt>
 
-**Abril**
+**21**
 </dt> <dd>
 
 Um parâmetro especificado não é válido.
@@ -185,20 +185,20 @@ Um parâmetro especificado não é válido.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Atalho do Win32 \_**](win32-shortcutfile.md)
+[**Win32 \_ ShortcutFile**](win32-shortcutfile.md)
 </dt> </dl>
 
  

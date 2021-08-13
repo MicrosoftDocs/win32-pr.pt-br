@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7ea5ad32de18046f3d23145d82e971391c3e304c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ca35cb98f279674285610fbd06b0399e93a68d59749fe4129475ab8bd970824a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658859"
 ---
 # <a name="cbaseoutputpincheckconnect-method"></a>Método CBaseOutputPin. CheckConnect
 
@@ -57,7 +57,7 @@ Retorna um dos valores de **HRESULT** a seguir.
 
 | Código de retorno                                                                                               | Descrição                                                                 |
 |-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                      | Sucesso.<br/>                                                         |
+| <dl> <dt>**S \_ OK**</dt> </dl>                      | Êxito.<br/>                                                         |
 | <dl> <dt>**E \_ NOinterface**</dt> </dl>             | O PIN de entrada não dá suporte a [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin).<br/> |
 | <dl> <dt>**VFW \_ E \_ direção inválida \_**</dt> </dl> | As direções do PIN não são compatíveis.<br/>                               |
 
@@ -75,12 +75,12 @@ Esse método chama o método [**CBasePin:: CheckConnect**](cbasepin-checkconnect
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
+| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir Fluxos. h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

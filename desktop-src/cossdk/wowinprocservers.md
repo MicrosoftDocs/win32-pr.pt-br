@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 43fceababaf6ced44a1ba3aef020900ed1afe4df
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d85abf322d34d03c0f5e8863b5434343946b676e477e18077c82d83de78cafb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118545567"
 ---
 # <a name="wowinprocservers-collection"></a>Coleção WOWInprocServers
 
@@ -55,7 +55,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Um GUID para o componente. Essa propriedade é retornada quando o método de propriedade de [**chave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) é chamado em um objeto desta coleção. |
-| Access         | ReadOnly                                                                                                                                                  |
+| Acesso         | ReadOnly                                                                                                                                                  |
 | Type           | String                                                                                                                                                    |
 | Padrão        | N/D                                                                                                                                                       |
 | Sistema mínimo | Windows XP                                                                                                                                                |
@@ -71,7 +71,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Entrada | Valor |
 |----------------|----------------------------------|
 | Descrição    | O caminho do arquivo para o componente. |
-| Access         | ReadOnly                         |
+| Acesso         | ReadOnly                         |
 | Type           | String                           |
 | Padrão        | N/D                              |
 | Sistema mínimo | Windows XP                       |
@@ -87,7 +87,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Entrada | Valor |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Um nome que identifica o componente. Essa propriedade é retornada quando o método de propriedade [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto desta coleção. |
-| Access         | ReadOnly                                                                                                                                                            |
+| Acesso         | ReadOnly                                                                                                                                                            |
 | Type           | String                                                                                                                                                              |
 | Padrão        | N/D                                                                                                                                                                 |
 | Sistema mínimo | Windows XP                                                                                                                                                          |

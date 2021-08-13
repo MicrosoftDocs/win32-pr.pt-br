@@ -4,12 +4,12 @@ description: No modo assíncrono, um aplicativo pode executar qualquer função 
 ms.assetid: 4b8ade00-deb3-4d9f-9ceb-5ba3296c8c68
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a7e1d0cf84aa92691e1d926d771ea809d31a171
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2e494b79b28b9aaf005fc6b1790d0cf84b07ceade6606f03ce03198426ac33d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118562088"
 ---
 # <a name="asynchronous-operation"></a>Operação assíncrona
 
@@ -56,13 +56,13 @@ A tabela a seguir ilustra o que aconteceria se o site da Fourth Coffee fosse mai
 | Solicitação para Downfall café & chá concluído                       | Baixar preços do Downfall café & chá | Baixar preços do Downfall café & chá               |
 | Após o Downfall café & os preços de chá são baixados              | Enviar solicitação para Fourth Coffee              | Comparar preços                                           |
 | Comparação da versão assíncrona concluída                      | Aguardando                                    | Operação concluída                                       |
-| Solicitação da versão síncrona para a Fourth Coffee concluída  | Baixar preços do Fourth Coffee         | N/D                                                      |
-| Após o download dos preços da Fourth Coffee                      | Comparar preços                             | N/D                                                      |
-| Comparação da versão síncrona concluída                       | Operação concluída                         | N/D                                                      |
+| Solicitação da versão síncrona para a Fourth Coffee concluída  | Baixar preços do Fourth Coffee         | n/d                                                      |
+| Após o download dos preços da Fourth Coffee                      | Comparar preços                             | n/d                                                      |
+| Comparação da versão síncrona concluída                       | Operação concluída                         | n/d                                                      |
 
 
 
- 
+ 
 
 Outro exemplo seria um navegador da Web, como o Microsoft Internet Explorer. Quando o navegador baixa uma página, ele geralmente precisa baixar outros recursos, como imagens e arquivos de som. No modo assíncrono, a página e seus recursos associados podem ser solicitados simultaneamente e baixados à medida que são disponibilizados, em vez de solicitar e baixar a página e cada recurso, um de cada vez.
 
@@ -103,13 +103,13 @@ Funções que podem ser usadas de forma assíncrona
 > [!Note]  
 > As funções [**FtpCreateDirectory**](/windows/desktop/api/Wininet/nf-wininet-ftpcreatedirectorya), [**FtpRemoveDirectory**](/windows/desktop/api/Wininet/nf-wininet-ftpremovedirectorya), [**FtpSetCurrentDirectory**](/windows/desktop/api/Wininet/nf-wininet-ftpsetcurrentdirectorya), [**FtpGetCurrentDirectory**](/windows/desktop/api/Wininet/nf-wininet-ftpgetcurrentdirectorya), [**FtpDeleteFile**](/windows/desktop/api/Wininet/nf-wininet-ftpdeletefilea)e [**FtpRenameFile**](/windows/desktop/api/Wininet/nf-wininet-ftprenamefilea) usam o valor de contexto fornecido na chamada para a função [**InternetConnect**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta) .
 
- 
+ 
 
 > [!Note]  
-> O WinINet não oferece suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. Para implementações de servidor ou serviços, use [o Microsoft Windows http Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> O WinINet não oferece suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. para implementações de servidor ou serviços, use [o Microsoft Windows HTTP services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
 
- 
+ 
 
- 
+ 
 
- 
+ 

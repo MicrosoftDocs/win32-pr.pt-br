@@ -3,7 +3,7 @@ title: Evento KeyDown do objeto AxWindowsMediaPlayer
 description: O evento KeyDown ocorre quando uma tecla é pressionada. | Evento KeyDown do objeto AxWindowsMediaPlayer
 ms.assetid: e67b9628-6c53-4893-921a-9487ebfc1cd5
 keywords:
-- Evento KeyDown do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento KeyDown do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc89814063e1a43badd22e658b5f19ece7abb074
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 054736007219021dbc0a4c1c968f61e1bbdb285fa416aae5f3c92c3880fb55de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105796445"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119469716"
 ---
 # <a name="keydown-event-of-the-axwindowsmediaplayer-object"></a>Evento KeyDown do objeto AxWindowsMediaPlayer
 
@@ -76,8 +76,8 @@ Valores para as chaves principais.
 | SPACE                   | 32      |
 | BACKSPACE               | 8       |
 | Enter                   | 13      |
-| Tecla com o logotipo do Windows, esquerda  | 91      |
-| Tecla com o logotipo do Windows, direita | 92      |
+| Windows tecla de logotipo, esquerda  | 91      |
+| tecla de logotipo Windows, direita | 92      |
 | Chave do aplicativo         | 93      |
 
 

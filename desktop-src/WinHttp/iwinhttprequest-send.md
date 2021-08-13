@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: 0040ed6c09814a2b2112a91173d84430b8130a30
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47155c946d8f49655bf6336a858d2b0752c70caa80f9dd75e0f415ce18ea94c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118562936"
 ---
 # <a name="iwinhttprequestsend-method"></a>Método IWinHttpRequest:: send
 
@@ -47,7 +47,7 @@ Dados a serem enviados para o servidor.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno será **S \_ OK** em caso de êxito ou um valor de erro, caso contrário.
 
@@ -56,7 +56,7 @@ O valor de retorno será **S \_ OK** em caso de êxito ou um valor de erro, caso
 A solicitação a ser enviada foi definida em uma chamada anterior para o método [**Open**](iwinhttprequest-open.md) . O aplicativo de chamada pode fornecer dados a serem enviados ao servidor por meio do parâmetro *Body* . Se o [*verbo http*](glossary.md) da [**abertura**](iwinhttprequest-open.md) do objeto for "Get", esse método enviará a solicitação sem *corpo*, mesmo se for fornecido pelo aplicativo de chamada.
 
 > [!Note]  
-> Para o Windows XP e o Windows 2000, consulte a seção [requisitos de tempo de execução](winhttp-start-page.md) da página inicial do WinHTTP.
+> para Windows XP e Windows 2000, consulte a seção [requisitos de tempo de execução](winhttp-start-page.md) da página inicial do WinHttp.
 
  
 
@@ -191,9 +191,9 @@ WinHttpReq.Send("Post data");
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows XP, Windows 2000 Professional com \[ aplicativos de área de trabalho do SP3\]<br/>            |
-| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server com aplicativos de área de trabalho do SP3 \[ somente\]<br/>         |
-| Redistribuível<br/>          | WinHTTP 5,0 e Internet Explorer 5, 1 ou posterior no Windows XP e no Windows 2000.<br/> |
+| Cliente mínimo com suporte<br/> | Windows XP, Windows 2000 Professional somente com \[ aplicativos da área de trabalho do SP3\]<br/>            |
+| Servidor mínimo com suporte<br/> | Windows servidor 2003, Windows 2000 servidor somente com \[ aplicativos de área de trabalho do SP3\]<br/>         |
+| Redistribuível<br/>          | WinHTTP 5,0 e Internet Explorer 5, 1 ou posterior em Windows XP e Windows 2000.<br/> |
 | INSERI<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>WinHTTP. lib</dt> </dl>     |
 | DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |

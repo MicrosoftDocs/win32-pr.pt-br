@@ -1,9 +1,9 @@
 ---
-title: Media. sourceURL
+title: Media.sourceURL
 description: A propriedade sourceURL recupera a URL do item de mídia.
 ms.assetid: 98ff6ed4-ad3d-44f8-893d-f016e5217ce5
 keywords:
-- Media. sourceURL Windows Media Player
+- Media.sourceURL Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c32d594cd1c3b590001eedfd09e9a8c8eb21240
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1e2f99aeb64a73bcf36e2cbd472aedfa8f509a5073e70792e7b47343a1b37d60
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105783739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119415945"
 ---
-# <a name="mediasourceurl"></a>Media. sourceURL
+# <a name="mediasourceurl"></a>Media.sourceURL
 
-A propriedade **sourceURL** recupera a URL do item de mídia.
+A **propriedade sourceURL** recupera a URL do item de mídia.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
-*Player*. *currentMedia*. sourceURL
+*player*. *currentMedia*.sourceURL
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esta propriedade é uma **cadeia de caracteres** somente leitura.
+Essa propriedade é uma Cadeia de Caracteres somente **leitura.**
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa *mídia*. **sourceURL** para recuperar a URL do primeiro item de mídia na playlist de exemplo; a URL do item de mídia é atribuída à propriedade **URL** do objeto Player. O objeto de **jogador** foi criado com ID = "Player".
+O exemplo de JScript a seguir usa *Mídia*. **sourceURL** para recuperar a URL do primeiro item de mídia na playlist de exemplo; a URL do item de mídia é atribuída à propriedade URL do objeto **do** player. O **objeto** Player foi criado com ID = "Player".
 
 
 ```JScript
@@ -61,7 +61,7 @@ Player.controls.play();
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

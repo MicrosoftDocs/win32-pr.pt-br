@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e3409da619f337b61606baaf546cebbb438087c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c78c9dda7bff764752dc55524000ccd3695863afe69dcf45c2ed971c9c0373fd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119415907"
 ---
 # <a name="iwmpdvdisavailable-vb-and-c"></a>IWMPDVD. IsAvailable (VB e C#)
 
@@ -74,7 +74,7 @@ Um **System. Boolean** que indica se um tipo especificado de informações está
 
 ## <a name="remarks"></a>Comentários
 
-Os recursos de DVD do Windows Media Player não funcionarão em computadores que não têm um decodificador de DVD instalado. Você pode determinar se um decodificador está disponível chamando a propriedade **IsAvailable** (o método **Get \_ IsAvailable** em C#) e passando o valor de **System. String** "dvdDecoder".
+os recursos de dvd do Windows Media Player não funcionarão em computadores que não têm um decodificador de DVD instalado. Você pode determinar se um decodificador está disponível chamando a propriedade **IsAvailable** (o método **Get \_ IsAvailable** em C#) e passando o valor de **System. String** "dvdDecoder".
 
 Cada DVD é criado de maneira diferente. Os métodos disponíveis durante a reprodução e navegação em DVD dependem de como o DVD é criado.
 
