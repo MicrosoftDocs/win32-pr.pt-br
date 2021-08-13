@@ -1,21 +1,21 @@
 ---
-description: Windows Installer funções que retornam dados em um usuário fornecido – o local da memória não deve ser chamado com NULL como o valor do ponteiro.
+description: Windows As funções do instalador que retornam dados em um local de memória fornecida pelo usuário não devem ser chamadas com nulo como o valor do ponteiro.
 ms.assetid: f566c4a4-b90c-4d73-9d7f-f5b836630636
-title: Passando nulo para funções Windows Installer
+title: Passando nulo para Windows Funções do Instalador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5eb09ceb3982695792614a3c226af9ab276aa3a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc6964716479d7e64cc9aa70d7e49acc8fe78dd3343298826e011f6d72b4df1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105749788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118627659"
 ---
-# <a name="passing-null-as-the-argument-of-windows-installer-functions"></a>Passando NULL como o argumento das funções Windows Installer
+# <a name="passing-null-as-the-argument-of-windows-installer-functions"></a>Passando nulo como o argumento de Windows Funções do Instalador
 
-Windows Installer funções que retornam dados em um usuário fornecido – o local da memória não deve ser chamado com NULL como o valor do ponteiro. Essas funções retornam uma cadeia de caracteres ou retornam dados como ponteiros inteiros, mas retornam valores inconsistentes ao passar NULL como o valor para o argumento de saída.
+Windows As funções do instalador que retornam dados em um local de memória fornecida pelo usuário não devem ser chamadas com nulo como o valor do ponteiro. Essas funções retornam uma cadeia de caracteres ou retornam dados como ponteiros inteiros, mas retornam valores inconsistentes ao passar nulo como o valor para o argumento de saída.
 
-Não passe nulo como o valor do argumento de saída para qualquer uma das seguintes funções:
+Não passe Null como o valor do argumento de saída para qualquer uma das seguintes funções:
 
 [**MsiGetProperty**](/windows/desktop/api/Msiquery/nf-msiquery-msigetpropertya)
 

@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DS-Last-Known-RDN
+title: Atributo ms-DS-Last-Known-RDN
 description: Contém o RDN original de um objeto excluído.
 ms.assetid: 4d655117-673a-4c43-b8fe-c4aa45061330
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-DS-Last-Known-RDN
-- atributo msDS-LastKnownRDN do AD Schema
+- Esquema do AD do atributo ms-DS-Last-Known-RDN
+- Esquema do AD do atributo msDS-LastKnownRDN
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3034039bed42f6af4dd609658f984a4a6d891e68
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0aca5c586613cdab13ecd6899b5e0459d78830b240c1a46a65bead1105f6398e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118685015"
 ---
-# <a name="ms-ds-last-known-rdn-attribute"></a>atributo ms-DS-Last-Known-RDN
+# <a name="ms-ds-last-known-rdn-attribute"></a>Atributo ms-DS-Last-Known-RDN
 
 Contém o RDN original de um objeto excluído.
 
@@ -30,13 +30,13 @@ Contém o RDN original de um objeto excluído.
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | ms-DS-Last-Known-RDN                        |
-| LDAP-Display-Name | msDS-LastKnownRDN                           |
+| Ldap-Display-Name | msDS-LastKnownRDN                           |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2067                     |
-| System-ID-GUID    | 8ab15858-683e-466d-877f-d640e1f9a611        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 8ab15858-683e-466d-877f-d640e1f9a611        |
+| Sintaxe            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -54,10 +54,10 @@ Contém o RDN original de um objeto excluído.
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| É de valor único       | True                            |
+| Tem valor único       | True                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x00000000                      |
@@ -75,10 +75,10 @@ Contém o RDN original de um objeto excluído.
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| É de valor único       | True                            |
+| Tem valor único       | True                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x00000000                      |

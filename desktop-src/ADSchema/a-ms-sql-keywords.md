@@ -1,11 +1,11 @@
 ---
-title: Atributo MS-SQL-keywords
+title: atributo MS-SQL-keywords
 description: Não usado. O padrão é definido como chave 1, chave 2, chave 3, chave 4 e chave 5.
 ms.assetid: c6833a83-8801-4438-8402-ddfff103a62d
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-SQL-keywords
-- Esquema de AD do atributo mS-SQL-keywords
+- MS-SQL-keywords atributo AD Schema
+- mS-SQL-keywords atributo AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbbdc6390dcfe637965adeb325f20b87aa401a11
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b2fb5d4c4743cc6162fc35017f5ea4bd93ba326f75d4b2f8995b4211c041d985
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118686698"
 ---
-# <a name="ms-sql-keywords-attribute"></a>Atributo MS-SQL-keywords
+# <a name="ms-sql-keywords-attribute"></a>atributo MS-SQL-keywords
 
 Não usado. O padrão é definido como chave 1, chave 2, chave 3, chave 4 e chave 5.
 
@@ -36,7 +36,7 @@ Não usado. O padrão é definido como chave 1, chave 2, chave 3, chave 4 e chav
 | Frequência de atualização  | Na configuração do sistema.                            |
 | Attribute-Id      | 1.2.840.113556.1.4.1401                     |
 | System-ID-GUID    | 01e9a98a-ccef-11d2-9993-0000f87a57d4        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
@@ -66,7 +66,7 @@ Não usado. O padrão é definido como chave 1, chave 2, chave 3, chave 4 e chav
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                  |
-| Classes usadas em        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classes usadas em        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-sqldatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 
@@ -87,7 +87,7 @@ Não usado. O padrão é definido como chave 1, chave 2, chave 3, chave 4 e chav
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                  |
-| Classes usadas em        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classes usadas em        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-sqldatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 
@@ -108,7 +108,7 @@ Não usado. O padrão é definido como chave 1, chave 2, chave 3, chave 4 e chav
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                  |
-| Classes usadas em        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classes usadas em        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-sqldatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 
@@ -129,7 +129,7 @@ Não usado. O padrão é definido como chave 1, chave 2, chave 3, chave 4 e chav
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                  |
-| Classes usadas em        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classes usadas em        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-sqldatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 
@@ -150,7 +150,7 @@ Não usado. O padrão é definido como chave 1, chave 2, chave 3, chave 4 e chav
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                  |
-| Classes usadas em        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classes usadas em        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-sqldatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 
@@ -171,7 +171,7 @@ Não usado. O padrão é definido como chave 1, chave 2, chave 3, chave 4 e chav
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                  |
-| Classes usadas em        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classes usadas em        | [**MS-SQL-SQLServer**](c-ms-sql-sqlserver.md)<br/> [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-sqldatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 

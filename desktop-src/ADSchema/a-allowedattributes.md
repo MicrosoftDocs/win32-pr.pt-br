@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3049a6d03d17cb68062a38508baa09a4cdc91d6f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1dcac94b6614ed84366f05829ea803a23d9245fed0502cade9df43ef1bbcc48d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118688308"
 ---
 # <a name="allowed-attributes-attribute"></a>Allowed-Attributes atributo
 
@@ -36,7 +36,7 @@ Atributos que terão permissão para serem atribuídos a uma classe.
 | Frequência de atualização  | \-                                                              |
 | Attribute-Id      | 1.2.840.113556.1.4.913                                          |
 | System-ID-GUID    | 9a7ad940-ca53-11d1-bbd0-0080c76670c0                            |
-| Syntax            | [**Cadeia de caracteres (identificador de objeto)**](s-string-object-identifier.md) |
+| Sintaxe            | [**Cadeia de caracteres (identificador de objeto)**](s-string-object-identifier.md) |
 
 
 

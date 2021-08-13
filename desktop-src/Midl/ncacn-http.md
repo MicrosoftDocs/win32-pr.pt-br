@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7043aaa3a011b37a4b593a03b2d74658caab6fde
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: cb7eed41849f59e497000e9ad56ae7c3166cf2d0212986fa9ba5f5ea910ed364
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103640859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118642207"
 ---
 # <a name="ncacn_http-attribute"></a>\_atributo http ncacn
 
@@ -93,6 +93,6 @@ interface iface
 [**Associação de cadeia de caracteres**](/windows/desktop/Rpc/string-binding)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

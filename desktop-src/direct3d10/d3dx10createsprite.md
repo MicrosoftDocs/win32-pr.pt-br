@@ -1,5 +1,5 @@
 ---
-description: Crie um sprite para desenhar uma textura 2D. Observação em vez de usar essa função, recomendamos que você use Direct2D e a biblioteca DirectXTK, SpriteBatch Class.
+description: Crie um sprite para desenhar uma textura 2D. observação em vez de usar essa função, recomendamos que você use Direct2D e a biblioteca DirectXTK, SpriteBatch.
 ms.assetid: 64efb8e4-da0b-4e67-874a-e0bb0083961c
 title: Função D3DX10CreateSprite (D3DX10. h)
 ms.topic: reference
@@ -14,19 +14,19 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: cf40e303cb616f35ea5cd3526c263e3bd12ae428
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6f67a0a6e0be8a3ea71ff1eef46d72b6cf080d028e7cc32f72a52db6a209cea4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105789342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118541050"
 ---
 # <a name="d3dx10createsprite-function"></a>Função D3DX10CreateSprite
 
 Crie um sprite para desenhar uma textura 2D.
 
 > [!Note]  
-> Em vez de usar essa função, recomendamos que você use [Direct2D](../direct2d/direct2d-portal.md) e a biblioteca [DirectXTK](https://github.com/Microsoft/DirectXTK) , **SpriteBatch** Class.
+> em vez de usar essa função, recomendamos que você use [Direct2D](../direct2d/direct2d-portal.md) e a biblioteca [DirectXTK](https://github.com/Microsoft/DirectXTK) , a classe **SpriteBatch** .
 
  
 
@@ -74,7 +74,7 @@ O endereço de um ponteiro para uma interface Sprite (consulte a [**interface ID
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

@@ -1,25 +1,25 @@
 ---
 title: Usando o WER
-description: A partir do Windows Vista, o Windows fornece um relatório de falhas, sem resposta e falha de kernel, por padrão, sem a necessidade de alterações no aplicativo.
+description: a partir do Windows Vista, o Windows fornece um relatório de erros de falha, não resposta e falha de kernel por padrão, sem a necessidade de alterações no aplicativo.
 ms.assetid: c096cd89-e3a7-4959-a35f-40e6168f277e
 keywords:
-- Relatório de Erros do Windows de relatório de erros do Windows, usando
+- Windows Relatório de Erros do Windows de relatório de erros, usando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 655bed6d11757d7d4e08cd00ac47479e1246f96b
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 17dfa8bc2235f43770cd177ad3e5d9a7d1aacde36034152b88cb06af3879e8c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104365831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118442235"
 ---
 # <a name="using-wer"></a>Usando o WER
 
-A partir do Windows Vista, o Windows fornece um relatório de falhas, sem resposta e falha de kernel, por padrão, sem a necessidade de alterações no aplicativo. O relatório incluirá informações de minidespejo e despejo de heap, se necessário. Em vez disso, os aplicativos usam a API WER para enviar relatórios de problemas específicos do aplicativo à Microsoft.
+a partir do Windows Vista, o Windows fornece um relatório de erros de falha, não resposta e falha de kernel por padrão, sem a necessidade de alterações no aplicativo. O relatório incluirá informações de minidespejo e despejo de heap, se necessário. Em vez disso, os aplicativos usam a API WER para enviar relatórios de problemas específicos do aplicativo à Microsoft.
 
-Como o Windows relata automaticamente as exceções sem tratamento, o aplicativo não deve lidar com exceções fatais. Se o processo de falha ou não resposta for interativo, o WER exibirá uma interface do usuário informando o usuário do problema. Um aplicativo será considerado sem resposta se não responder a mensagens do Windows por cinco segundos enquanto o usuário estiver tentando interagir com o aplicativo.
+como Windows relata automaticamente as exceções sem tratamento, o aplicativo não deve lidar com exceções fatais. Se o processo de falha ou não resposta for interativo, o WER exibirá uma interface do usuário informando o usuário do problema. um aplicativo será considerado sem resposta se não responder a Windows mensagens por cinco segundos enquanto o usuário estiver tentando interagir com o aplicativo.
 
-## <a name="windows-error-reporting-flow-for-crashes-non-response-and-kernel-faults"></a>Fluxo de Relatório de Erros do Windows para falhas, não resposta e falhas de kernel
+## <a name="windows-error-reporting-flow-for-crashes-non-response-and-kernel-faults"></a>fluxo de Relatório de Erros do Windows para falhas, não resposta e falhas de kernel
 
 O seguinte mostra as etapas que ocorrem para uma falha de aplicativo, não resposta ou falha do kernel.
 
@@ -40,7 +40,7 @@ Os aplicativos podem usar as seguintes funções para personalizar o conteúdo d
 -   [**WerUnregisterMemoryBlock**](/windows/desktop/api/Werapi/nf-werapi-werunregistermemoryblock)
 -   [**WerGetFlags**](/windows/desktop/api/Werapi/nf-werapi-wergetflags)
 
-## <a name="windows-error-reporting-flow-for-generic-event-reporting"></a>Fluxo de Relatório de Erros do Windows para relatórios de eventos genéricos
+## <a name="windows-error-reporting-flow-for-generic-event-reporting"></a>fluxo de Relatório de Erros do Windows para relatórios de eventos genéricos
 
 As etapas a seguir mostram como os aplicativos podem obter um relatório de erros para uma condição de erro não fatal.
 
@@ -54,9 +54,9 @@ As etapas a seguir mostram como os aplicativos podem obter um relatório de erro
     6.  Chame o [**WerReportCloseHandle**](/windows/desktop/api/Werapi/nf-werapi-werreportclosehandle) para liberar recursos.
 3.  Dependendo das opções específicas usadas ao chamar as funções na etapa 2, o WER concluirá o relatório de erros. O WER garantirá que o relatório seja feito de acordo com as políticas definidas pelo usuário. Por exemplo, o WER enviará o relatório para a Microsoft, colocará o relatório em fila e mostrará as interfaces de usuário apropriadas ao usuário.
 
-## <a name="excluding-an-application-from-windows-error-reporting"></a>Excluindo um aplicativo do Relatório de Erros do Windows
+## <a name="excluding-an-application-from-windows-error-reporting"></a>excluindo um aplicativo do Relatório de Erros do Windows
 
-Para excluir seu aplicativo do relatório de erros do Windows, use a função [**WerAddExcludedApplication**](/windows/desktop/api/Werapi/nf-werapi-weraddexcludedapplication) . Para restaurar o relatório de erros para seu aplicativo, use a função [**WerRemoveExcludedApplication**](/windows/desktop/api/Werapi/nf-werapi-werremoveexcludedapplication) .
+para excluir seu aplicativo do Windows relatório de erros, use a função [**WerAddExcludedApplication**](/windows/desktop/api/Werapi/nf-werapi-weraddexcludedapplication) . Para restaurar o relatório de erros para seu aplicativo, use a função [**WerRemoveExcludedApplication**](/windows/desktop/api/Werapi/nf-werapi-werremoveexcludedapplication) .
 
 ## <a name="automatically-recovering-data-and-restarting-a-faulted-application"></a>Recuperando dados automaticamente e reiniciando um aplicativo com falha
 
@@ -66,7 +66,7 @@ Um aplicativo pode usar a recuperação e reinicialização do aplicativo para s
 
 Um aplicativo pode relatar uma falha chamando a função [**ReportFault**](/windows/desktop/api/ErrorRep/nf-errorrep-reportfault) . No entanto, você não deve usar a função **ReportFault** , a menos que tenha um requisito muito específico de que o comportamento do relatório de erros padrão do sistema operacional não possa atender.
 
-Se o relatório de erros estiver habilitado, o sistema exibirá uma caixa de diálogo para o usuário indicando que o aplicativo encontrou um problema e será fechado. Se houver um depurador configurado na chave **HKEY \_ local \_ Machine \\ software \\ Microsoft \\ Windows NT \\ CurrentVersion \\ AeDebug** , o usuário receberá a opção de iniciar o depurador. O usuário também recebe a opção de enviar um relatório à Microsoft. Se o usuário enviar o relatório, o sistema exibirá outra caixa de diálogo, agradecendo ao usuário pelo relatório e fornecendo um link para mais informações.
+Se o relatório de erros estiver habilitado, o sistema exibirá uma caixa de diálogo para o usuário indicando que o aplicativo encontrou um problema e será fechado. se houver um depurador configurado na chave **HKEY \_ LOCAL \_ MACHINE \\ SOFTWARE \\ Microsoft \\ Windows NT \\ CurrentVersion \\ AeDebug** , o usuário receberá a opção de iniciar o depurador. O usuário também recebe a opção de enviar um relatório à Microsoft. Se o usuário enviar o relatório, o sistema exibirá outra caixa de diálogo, agradecendo ao usuário pelo relatório e fornecendo um link para mais informações.
 
 O sistema de relatório de erros do dá suporte aos seguintes modos de operação.
 

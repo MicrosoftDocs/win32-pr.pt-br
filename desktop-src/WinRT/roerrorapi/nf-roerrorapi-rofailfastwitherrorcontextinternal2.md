@@ -16,12 +16,12 @@ api_location:
 api_name:
 - RoFailFastWithErrorContextInternal2
 targetos: Windows
-ms.openlocfilehash: 84584c339851ecbf8df5d6dbda2aaa575ca6487b
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.openlocfilehash: a2e8e2e357b7c4768596ca36cb48cdf1bb2cfdbd839ecc6949a607975d6000c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "105780749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118560622"
 ---
 # <a name="rofailfastwitherrorcontextinternal2-function"></a>Função RoFailFastWithErrorContextInternal2
 
@@ -55,9 +55,9 @@ O número de elementos na matriz *aStowedExceptionPointers* .
 
 Tipo: **[PSTOWED_EXCEPTION_INFORMATION_V2](../../wer/stowed-exception-information-v2.md)\[\]**
 
-Uma matriz de ponteiros para [**STOWED_EXCEPTION_INFORMATION_V2**](../../wer/stowed-exception-information-v2.md) estruturas. Cada estrutura contém informações que descrevem uma exceção dedevida. As informações nessas estruturas são enviadas para Relatório de Erros do Windows (WER) junto com as informações de exceção decorrida que foram capturadas pela plataforma.
+Uma matriz de ponteiros para [**STOWED_EXCEPTION_INFORMATION_V2**](../../wer/stowed-exception-information-v2.md) estruturas. Cada estrutura contém informações que descrevem uma exceção dedevida. as informações nessas estruturas são enviadas para Relatório de Erros do Windows (WER) junto com as informações de exceção decorrida que foram capturadas pela plataforma.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função não retorna um valor.
 

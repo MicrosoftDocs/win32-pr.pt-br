@@ -4,8 +4,8 @@ description: A descrição exibida nas telas do administrador.
 ms.assetid: 4307b85b-f285-4e72-a73f-1f179ebb991a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Admin-Description do atributo AD
-- Esquema de AD do atributo adminDescription
+- Admin-Description atributo AD Schema
+- Esquema do AD do atributo adminDescription
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 168dfacc2577c14a3c41541f5ca88f63331590dd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9d9da2c892db1ea648df7d0027a92bb5cf1f277e03489615b098628f8951b8ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118688445"
 ---
 # <a name="admin-description-attribute"></a>Admin-Description atributo
 
@@ -30,13 +30,13 @@ A descrição exibida nas telas do administrador.
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Admin-Description                           |
-| LDAP-Display-Name | adminDescription                            |
+| Ldap-Display-Name | adminDescription                            |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | Administrador de domínio                        |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.2.226                      |
-| System-ID-GUID    | bf967919-0de6-11d0-a285-00aa003049e2        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | bf967919-0de6-11d0-a285-00aa003049e2        |
+| Sintaxe            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -44,7 +44,7 @@ A descrição exibida nas telas do administrador.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,10 +59,10 @@ A descrição exibida nas telas do administrador.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x804A                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | True                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | 0                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
@@ -80,10 +80,10 @@ A descrição exibida nas telas do administrador.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x804A                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | True                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | 0                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
@@ -92,7 +92,7 @@ A descrição exibida nas telas do administrador.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,10 +101,10 @@ A descrição exibida nas telas do administrador.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x804A                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | True                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | 0                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |

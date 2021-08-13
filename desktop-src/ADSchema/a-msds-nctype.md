@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DS-NC-Type
-description: Um campo de bits que mantém informações sobre aspectos de uma réplica do NC que são relevantes para a replicação.
+title: Atributo ms-DS-NC-Type
+description: Um campo de bits que mantém informações sobre aspectos de uma réplica NC relevantes para a replicação.
 ms.assetid: 8e838e7b-b19f-4c9e-8fb9-cf9f1076af56
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-DS-NC-Type
-- atributo msDS-NcType do AD Schema
+- Esquema do AD do atributo ms-DS-NC-Type
+- Esquema do AD do atributo msDS-NcType
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd2d5a6fdb3dcf4e21192b59323b3b6630597065
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 01da3f99ae6a3bdef6bb94396da869426a86fa1e09d46098c4831d8ec4c7c8ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105811224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118684234"
 ---
-# <a name="ms-ds-nc-type-attribute"></a>atributo ms-DS-NC-Type
+# <a name="ms-ds-nc-type-attribute"></a>Atributo ms-DS-NC-Type
 
-Um campo de bits que mantém informações sobre aspectos de uma réplica do NC que são relevantes para a replicação.
+Um campo de bits que mantém informações sobre aspectos de uma réplica NC relevantes para a replicação.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Tipo ms-DS-NC                        |
-| LDAP-Display-Name | msDS-NcType                          |
+| Ldap-Display-Name | msDS-NcType                          |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2024              |
-| System-ID-GUID    | 5a2eacd7-cc2b-48cf-9d9a-b6f1a0024de9 |
-| Syntax            | [**Enumeração**](s-enumeration.md) |
+| System-Id-Guid    | 5a2eacd7-cc2b-48cf-9d9a-b6f1a0024de9 |
+| Sintaxe            | [**Enumeração**](s-enumeration.md) |
 
 
 
@@ -55,10 +55,10 @@ Um campo de bits que mantém informações sobre aspectos de uma réplica do NC 
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| É de valor único       | True                            |
+| Tem valor único       | True                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -76,10 +76,10 @@ Um campo de bits que mantém informações sobre aspectos de uma réplica do NC 
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| É de valor único       | True                            |
+| Tem valor único       | True                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -97,10 +97,10 @@ Um campo de bits que mantém informações sobre aspectos de uma réplica do NC 
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | True                            |
-| É de valor único       | True                            |
+| Tem valor único       | True                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

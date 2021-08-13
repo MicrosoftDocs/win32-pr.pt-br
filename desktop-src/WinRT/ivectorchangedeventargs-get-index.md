@@ -1,7 +1,7 @@
 ---
 description: Obtém a posição no vetor em que a alteração ocorreu.
 ms.assetid: 00756d77-aae0-45f0-8bd4-cf68af9bdc7c
-title: 'Método IVectorChangedEventArgs:: get_Index (IVectorChangedEventArgs. h)'
+title: Método IVectorChangedEventArgs::get_Index (IVectorChangedEventArgs.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - IVectorChangedEventArgs.h
-ms.openlocfilehash: 5c131567ec7fc2861ce11db9e5d7ec581f6f663a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 72df7f0d46e1e3073262c43064daf58b1fefbf43af913bb7f1b912ed22e67a7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010496"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118560642"
 ---
-# <a name="ivectorchangedeventargsget_index-method"></a>Método de índice IVectorChangedEventArgs:: get \_
+# <a name="ivectorchangedeventargsget_index-method"></a>Método IVectorChangedEventArgs::get \_ Index
 
 Obtém a posição no vetor em que a alteração ocorreu.
 
@@ -39,20 +39,20 @@ HRESULT get_Index(
 
 <dl> <dt>
 
-*valor* \[ do out, retval\]
+*value* \[ out, retval\]
 </dt> <dd>
 
-Tipo: **não assinado \** _
+Tipo: **sem \* assinatura**
 
-A posição de base zero no vetor em que a alteração ocorreu, se aplicável.
+A posição baseada em zero no vetor em que a alteração ocorreu, se aplicável.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,7 +62,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                       |
-| parâmetro<br/>                   | <dl> <dt>IVectorChangedEventArgs. h</dt> </dl> |
+| parâmetro<br/>                   | <dl> <dt>IVectorChangedEventArgs.h</dt> </dl> |
 
 
 

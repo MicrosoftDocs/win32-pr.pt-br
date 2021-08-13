@@ -1,38 +1,38 @@
 ---
-title: Usando a configuração do monitor
-description: Usando a configuração do monitor
+title: Usando a configuração do Monitor
+description: Usando a configuração do Monitor
 ms.assetid: 2a868890-cc0c-4625-a87c-cafb1ecd5210
 keywords:
-- monitorar, funções
-- configuração do monitor, funções
-- monitorar, sobre
+- monitor,functions
+- monitorar a configuração, funções
+- monitor,about
 - monitorar a configuração, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 323561f345ce51570f79c4932be3ee4a56a27b33
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 32db2ef6dfe73ab515beba99a9198c795fcd333c071fbc3e13340fe15b914dab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104006097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118640600"
 ---
-# <a name="using-monitor-configuration"></a>Usando a configuração do monitor
+# <a name="using-monitor-configuration"></a>Usando a configuração do Monitor
 
 Esta seção descreve como usar as funções de configuração do monitor.
 
--   [Usando as funções de configuração do monitor de High-Level](using-the-high-level-monitor-configuration-functions.md)
--   [Usando as funções de configuração do monitor de Low-Level](using-the-low-level-monitor-configuration-functions.md)
+-   [Usando as funções de configuração High-Level Monitor](using-the-high-level-monitor-configuration-functions.md)
+-   [Usando as funções de configuração Low-Level Monitor](using-the-low-level-monitor-configuration-functions.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Configuração do monitor](monitor-configuration.md)
+[Monitorar configuração](monitor-configuration.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

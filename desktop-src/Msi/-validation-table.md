@@ -1,36 +1,36 @@
 ---
-description: A \_ tabela de validação é uma tabela do sistema que contém os nomes de coluna e os valores de coluna para todas as tabelas no banco de dados.
+description: A tabela Validação é uma tabela do sistema que contém os nomes das colunas e os valores de coluna para todas \_ as tabelas no banco de dados.
 ms.assetid: 52b1c537-efb6-4bb8-9e7f-b4848be52a71
-title: Tabela de _Validation
+title: _Validation tabela
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 666f00ccccda11706dce6a8d7e04e0efea91b7cd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 81a42fbe2a2f8da4abceb04912eee2a12edd708ff88d979fbf45f7de8051dc80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118640441"
 ---
 # <a name="_validation-table"></a>\_Tabela de validação
 
-A \_ tabela de validação é uma tabela do sistema que contém os nomes de coluna e os valores de coluna para todas as tabelas no banco de dados. Ele é usado durante o processo de validação do banco de dados para garantir que todas as colunas sejam contadas e tenham os valores corretos. Esta tabela não é enviada com o banco de dados do instalador.
+A tabela Validação é uma tabela do sistema que contém os nomes das colunas e os valores de coluna para todas \_ as tabelas no banco de dados. Ele é usado durante o processo de validação de banco de dados para garantir que todas as colunas sejam contabiladas e tenham os valores corretos. Esta tabela não é enviada com o banco de dados do instalador.
 
-A \_ tabela de validação tem as colunas a seguir.
+A \_ tabela Validação tem as seguintes colunas.
 
 
 
 | Coluna      | Tipo                               | Chave | Nullable |
 |-------------|------------------------------------|-----|----------|
-| Tabela       | [Identificador](identifier.md)       | S   | N        |
-| Coluna      | [Identificador](identifier.md)       | S   | N        |
+| Tabela       | [Identificador](identifier.md)       | Y   | N        |
+| Coluna      | [Identificador](identifier.md)       | Y   | N        |
 | Nullable    | [Text](text.md)                   | N   | N        |
-| MinValue    | [DoubleInteger](doubleinteger.md) | N   | S        |
-| MaxValue    | [DoubleInteger](doubleinteger.md) | N   | S        |
-| KeyTable    | [Identificador](identifier.md)       | N   | S        |
-| KeyColumn   | [Inteiro](integer.md)             | N   | S        |
-| Categoria    | [Text](text.md)                   | N   | S        |
-| Definir         | [Text](text.md)                   | N   | S        |
-| Descrição | [Text](text.md)                   | N   | S        |
+| Minvalue    | [DoubleInteger](doubleinteger.md) | N   | Y        |
+| MaxValue    | [DoubleInteger](doubleinteger.md) | N   | Y        |
+| Keytable    | [Identificador](identifier.md)       | N   | Y        |
+| KeyColumn   | [Inteiro](integer.md)             | N   | Y        |
+| Categoria    | [Text](text.md)                   | N   | Y        |
+| Definir         | [Text](text.md)                   | N   | Y        |
+| Descrição | [Text](text.md)                   | N   | Y        |
 
 
 
@@ -43,21 +43,21 @@ A \_ tabela de validação tem as colunas a seguir.
 <span id="Table"></span><span id="table"></span><span id="TABLE"></span>Tabela
 </dt> <dd>
 
-Usado para identificar uma tabela específica. Essa chave e a chave de coluna formam a chave primária da \_ tabela de validação.
+Usado para identificar uma tabela específica. Essa chave e a chave Column formam a chave primária da tabela \_ Validação.
 
 </dd> <dt>
 
-<span id="Column"></span><span id="column"></span><span id="COLUMN"></span>Pilha
+<span id="Column"></span><span id="column"></span><span id="COLUMN"></span>Coluna
 </dt> <dd>
 
-Usado para identificar uma coluna específica da tabela. Essa chave e a chave de tabela formam a chave primária da \_ tabela de validação.
+Usado para identificar uma coluna específica da tabela. Essa chave e a chave Tabela formam a chave primária da tabela \_ validação.
 
 </dd> <dt>
 
-<span id="Nullable"></span><span id="nullable"></span><span id="NULLABLE"></span>Anula
+<span id="Nullable"></span><span id="nullable"></span><span id="NULLABLE"></span>Nullable
 </dt> <dd>
 
-Identifica se a coluna pode conter um valor nulo.
+Identifica se a coluna pode conter um valor Nulo.
 
 Essa coluna pode ter um dos valores a seguir.
 
@@ -65,8 +65,8 @@ Essa coluna pode ter um dos valores a seguir.
 
 | String | Significado                                   |
 |--------|-------------------------------------------|
-| S      | Sim, a coluna pode ter um valor nulo.    |
-| N      | Não, a coluna pode não ter um valor nulo. |
+| Y      | Sim, a coluna pode ter um valor Nulo.    |
+| N      | Não, a coluna pode não ter um valor Nulo. |
 
 
 
@@ -74,52 +74,52 @@ Essa coluna pode ter um dos valores a seguir.
 
 </dd> <dt>
 
-<span id="MinValue"></span><span id="minvalue"></span><span id="MINVALUE"></span>MinValue
+<span id="MinValue"></span><span id="minvalue"></span><span id="MINVALUE"></span>Minvalue
 </dt> <dd>
 
-Este campo se aplica a colunas com valor numérico. O campo contém o valor mínimo permitido. Esse pode ser o valor mínimo de um inteiro ou o valor mínimo para uma cadeia de caracteres de data ou versão.
+Esse campo se aplica a colunas com valor numérico. O campo contém o valor mínimo permitido. Esse pode ser o valor mínimo para um inteiro ou o valor mínimo para uma cadeia de caracteres de data ou versão.
 
 </dd> <dt>
 
-<span id="MaxValue"></span><span id="maxvalue"></span><span id="MAXVALUE"></span>MaxValue
+<span id="MaxValue"></span><span id="maxvalue"></span><span id="MAXVALUE"></span>Maxvalue
 </dt> <dd>
 
-Este campo se aplica a colunas com valor numérico. O campo é o valor máximo permitido. Esse pode ser o valor máximo de um inteiro ou o valor máximo para uma cadeia de caracteres de data ou versão.
+Esse campo se aplica a colunas com valor numérico. O campo é o valor máximo permitido. Esse pode ser o valor máximo para um inteiro ou o valor máximo para uma cadeia de caracteres de data ou versão.
 
 </dd> <dt>
 
-<span id="KeyTable"></span><span id="keytable"></span><span id="KEYTABLE"></span>KeyTable
+<span id="KeyTable"></span><span id="keytable"></span><span id="KEYTABLE"></span>Keytable
 </dt> <dd>
 
-Esse campo se aplica a colunas que são chaves externas. O campo identificado na coluna deve ser vinculado ao número da coluna especificado por KeyColumn na tabela chamada em keyTable. Isso pode ser uma lista de tabelas separadas por ponto e vírgula.
+Esse campo se aplica a colunas que são chaves externas. O campo identificado em Column deve vincular ao número da coluna especificado por KeyColumn na tabela chamada em KeyTable. Essa pode ser uma lista de tabelas separadas por ponto e vírgula.
 
 </dd> <dt>
 
-<span id="KeyColumn"></span><span id="keycolumn"></span><span id="KEYCOLUMN"></span>KeyColumn
+<span id="KeyColumn"></span><span id="keycolumn"></span><span id="KEYCOLUMN"></span>Keycolumn
 </dt> <dd>
 
-Esse campo se aplica a colunas de tabela que são chaves externas. O campo identificado na coluna deve ser vinculado ao número da coluna especificado por KeyColumn na tabela chamada em keyTable. O intervalo permitido do campo KeyColumn é 1-32.
+Esse campo se aplica a colunas de tabela que são chaves externas. O campo identificado em Column deve vincular ao número da coluna especificado por KeyColumn na tabela chamada em KeyTable. O intervalo permitido do campo KeyColumn é de 1 a 32.
 
 </dd> <dt>
 
-<span id="Category"></span><span id="category"></span><span id="CATEGORY"></span>Categorias
+<span id="Category"></span><span id="category"></span><span id="CATEGORY"></span>Categoria
 </dt> <dd>
 
-Esse é o tipo de dados contidos no campo de banco de dado especificado pelas colunas de tabela e coluna da \_ tabela de validação. Se for um tipo com um valor numérico, como [Integer](integer.md), [DoubleInteger](doubleinteger.md) ou [Time/Date](time-date.md), insira NULL nesse campo e especifique o intervalo do valor usando as colunas MinValue e MaxValue. Use a coluna categoria para especificar os tipos de dados não numéricos descritos em [tipos de dados de coluna](column-data-types.md).
+Esse é o tipo de dados contido pelo campo de banco de dados especificado pelas colunas Tabela e Coluna da tabela \_ Validação. Se esse for um tipo com um valor numérico, como [Integer](integer.md), [DoubleInteger](doubleinteger.md) ou [Time/Date](time-date.md), insira null nesse campo e especifique o intervalo do valor usando as colunas MinValue e MaxValue. Use a coluna Categoria para especificar os tipos de dados não numéricos descritos em [Tipos de Dados de Coluna](column-data-types.md).
 
 </dd> <dt>
 
-<span id="Set"></span><span id="set"></span><span id="SET"></span>Definição
+<span id="Set"></span><span id="set"></span><span id="SET"></span>Definir
 </dt> <dd>
 
-Esta é uma lista de valores permitidos para este campo separados por ponto e vírgula. Esse campo é geralmente usado para enumerações.
+Esta é uma lista de valores permitidos para esse campo separado por ponto e vírgula. Esse campo geralmente é usado para enumerações.
 
 </dd> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Ndescrição
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Descrição
 </dt> <dd>
 
-Uma descrição dos dados que são armazenados na coluna.
+Uma descrição dos dados armazenados na coluna.
 
 </dd> </dl>
 
@@ -134,7 +134,7 @@ Uma descrição dos dados que são armazenados na coluna.
 
 ## <a name="remarks"></a>Comentários
 
-O campo Categoria desta tabela se aplica somente a dados de cadeia de caracteres. Se o campo de coluna se referir a uma coluna com dados binários, o tipo de dados Binary deverá ser especificado no campo Categoria. Os tipos de coluna de dados inteiros ignoram o campo de categoria durante a validação.
+O campo Categoria desta tabela só se aplica a dados de cadeia de caracteres. Se o campo Coluna se referir a uma coluna com dados binários, o tipo de dados binário deverá ser especificado no campo Categoria. Dados inteiros Tipos de coluna ignoram o campo Categoria durante a validação.
 
  
 

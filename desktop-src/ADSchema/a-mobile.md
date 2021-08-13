@@ -1,11 +1,11 @@
 ---
-title: Telefone-celular-atributo primário
+title: Telefone-Mobile-Primary
 description: O número de telefone celular primário.
 ms.assetid: c35fbaf1-e3f2-45df-98bd-e47ed79373ee
 ms.tgt_platform: multiple
 keywords:
-- Telefone-celular-esquema de AD do atributo primário
-- Esquema de AD de atributo móvel
+- Telefone do AD de atributo móvel-primário
+- esquema do AD do atributo móvel
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d44a6ad48ffa8a592238eca1b0aa1d8cbc873f8f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 65002852c265c53f35abd5ff42a2fb2a74d8c0eade4c96bfc72720cdf30ba2d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118687490"
 ---
-# <a name="phone-mobile-primary-attribute"></a>Telefone-celular-atributo primário
+# <a name="phone-mobile-primary-attribute"></a>Telefone-Mobile-Primary
 
 O número de telefone celular primário.
 
@@ -29,14 +29,14 @@ O número de telefone celular primário.
 
 | Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
-| CN                | Telefone-celular-primário                                                             |
-| LDAP-Display-Name | Serviço Móvel                                                                           |
+| CN                | Telefone-Mobile-Primary                                                             |
+| Ldap-Display-Name | Serviço Móvel                                                                           |
 | Tamanho              | \-                                                                               |
 | Privilégio de atualização  | Administrador de domínio ou proprietário da conta.                                           |
 | Frequência de atualização  | Quando o registro do usuário é criado e sempre que o número de telefone precisa ser alterado. |
 | Attribute-Id      | 0.9.2342.19200300.100.1.41                                                       |
-| System-ID-GUID    | f0f8ffa3-1191-11d0-a060-00aa006c33ed                                             |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                      |
+| System-Id-Guid    | f0f8ffa3-1191-11d0-a060-00aa006c33ed                                             |
+| Sintaxe            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -58,10 +58,10 @@ O número de telefone celular primário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x3A1C                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | True                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -79,10 +79,10 @@ O número de telefone celular primário.
 | ID do link                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A1C                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                    |
-| É de valor único       | True                                                                                                                                                     |
+| Tem valor único       | True                                                                                                                                                     |
 | É indexado             | Falso                                                                                                                                                    |
-| No catálogo global      | Falso                                                                                                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                             |
+| No Catálogo Global      | Falso                                                                                                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
@@ -100,10 +100,10 @@ O número de telefone celular primário.
 | ID do link                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A1C                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                    |
-| É de valor único       | True                                                                                                                                                     |
+| Tem valor único       | True                                                                                                                                                     |
 | É indexado             | Falso                                                                                                                                                    |
-| No catálogo global      | Falso                                                                                                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                             |
+| No Catálogo Global      | Falso                                                                                                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |

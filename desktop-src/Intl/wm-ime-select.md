@@ -1,19 +1,19 @@
 ---
-description: Enviado a um aplicativo quando o sistema operacional está prestes a alterar o IME atual. Uma janela recebe essa mensagem por meio de sua função WindowProc.
+description: Enviado para um aplicativo quando o sistema operacional está prestes a alterar o IME atual. Uma janela recebe essa mensagem por meio de sua função WindowProc.
 ms.assetid: 5559b3ab-8d81-4f33-b0af-d05489371328
-title: Mensagem de WM_IME_SELECT (WinUser. h)
+title: WM_IME_SELECT mensagem (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 940858e12c616b1d6281c23633b2f0f5e9657a9b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 611ff30bac32fbd38c9aef00e459b49f9760d9702c619f7e6e7f55e6e3b10acb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105758133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118644616"
 ---
-# <a name="wm_ime_select-message"></a>\_Selecionar mensagem do IME do WM \_
+# <a name="wm_ime_select-message"></a>Mensagem SELECT \_ do WM IME \_
 
-Enviado a um aplicativo quando o sistema operacional está prestes a alterar o IME atual. Uma janela recebe essa mensagem por meio de sua função [*WindowProc*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Enviado para um aplicativo quando o sistema operacional está prestes a alterar o IME atual. Uma janela recebe essa mensagem por meio de [*sua função WindowProc.*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -31,17 +31,17 @@ LRESULT CALLBACK WindowProc(
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
-Um identificador para a janela.
+Um alça para janela.
 
 </dd> <dt>
 
 *wParam* 
 </dt> <dd>
 
-Indicador de seleção. Esse parâmetro especifica **true** se o IME indicado for selecionado. O parâmetro será definido como **false** se o IME especificado não estiver mais selecionado.
+Indicador de seleção. Esse parâmetro especifica **TRUE** se o IME indicado estiver selecionado. O parâmetro será definido como **FALSE** se o IME especificado não estiver mais selecionado.
 
 </dd> <dt>
 
@@ -52,15 +52,15 @@ Identificador de localidade de entrada associado ao IME.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Esta mensagem não tem nenhum valor de retorno.
+Essa mensagem não tem nenhum valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-Um aplicativo que criou uma janela IME deve passar essa mensagem para essa janela para que ela possa recuperar o identificador de layout do teclado para o IME selecionado recentemente.
+Um aplicativo que criou uma janela do IME deve passar essa mensagem para essa janela para que ele possa recuperar a alça de layout do teclado para o IME recém-selecionado.
 
-A função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)  processa essa mensagem passando as informações para a janela padrão do IME.
+A [**função DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)  processa essa mensagem passando as informações para a janela padrão do IME.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ A função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindow
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -78,10 +78,10 @@ A função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindow
 
 <dl> <dt>
 
-[Gerenciador de métodos de entrada](input-method-manager.md)
+[Gerenciador de Métodos de Entrada](input-method-manager.md)
 </dt> <dt>
 
-[Mensagens do Gerenciador de métodos de entrada](input-method-manager-messages.md)
+[Mensagens do Gerenciador de Métodos de Entrada](input-method-manager-messages.md)
 </dt> </dl>
 
  

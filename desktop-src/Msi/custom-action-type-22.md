@@ -1,15 +1,15 @@
 ---
-description: Os desenvolvedores de Windows Installer pacotes podem optar por usar um tipo de ação personalizada 22 quando as ações padrão são insuficientes para executar a instalação.
+description: os desenvolvedores de Windows Installer pacotes podem optar por usar um tipo de ação personalizada 22 quando as ações padrão são insuficientes para executar a instalação.
 ms.assetid: 6838f59b-e1bc-42c6-a7fe-3d32791adfac
 title: Tipo de ação personalizada 22
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a00b4772b1d2532c0291223cc5c4b6a63ead9324
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4fe14690ec1d966abfe1ead0b7856360270570f30e2aaf2e93ea81181962ec8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297775"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118637900"
 ---
 # <a name="custom-action-type-22"></a>Tipo de ação personalizada 22
 
@@ -33,7 +33,7 @@ Inclua o seguinte valor na coluna Type da [tabela CustomAction](customaction-tab
 
  
 
-Windows Installer pode usar ações personalizadas de 64 bits em sistemas operacionais de 64 bits. Uma ação personalizada de 64 bits baseada em scripts deve incluir o bit **msidbCustomActionType64BitScript** em seu tipo numérico. Para obter informações [, consulte ações personalizadas de 64 bits](64-bit-custom-actions.md). Inclua o seguinte valor na coluna Type da [tabela CustomAction](customaction-table.md) para especificar o tipo numérico básico de uma ação personalizada de 64 bits.
+Windows O instalador pode usar ações personalizadas de 64 bits em sistemas operacionais de 64 bits. Uma ação personalizada de 64 bits baseada em scripts deve incluir o bit **msidbCustomActionType64BitScript** em seu tipo numérico. Para obter informações [, consulte ações personalizadas de 64 bits](64-bit-custom-actions.md). Inclua o seguinte valor na coluna Type da [tabela CustomAction](customaction-table.md) para especificar o tipo numérico básico de uma ação personalizada de 64 bits.
 
 
 
@@ -63,11 +63,11 @@ Inclua bits de sinalizador opcionais na coluna Type da [tabela CustomAction](cus
 
 ## <a name="return-values"></a>Valores de retorno
 
-Funções opcionais escritas em script devem retornar um dos valores descritos em [valores de retorno de ações personalizadas JScript e VBScript](return-values-of-jscript-and-vbscript-custom-actions.md).
+funções opcionais escritas em script devem retornar um dos valores descritos em [valores de retorno de JScript e ações personalizadas do VBScript](return-values-of-jscript-and-vbscript-custom-actions.md).
 
 ## <a name="remarks"></a>Comentários
 
-Uma ação personalizada escrita em JScript ou VBScript requer o [**objeto de sessão**](session-object.md)de instalação. Esse é o objeto de **sessão** de tipo e o instalador o anexa ao script com o nome "Session". Como o objeto de **sessão** pode não existir durante uma reversão de instalação, uma ação personalizada adiada escrita em script deve usar um dos métodos ou propriedades do objeto de **sessão** descrito na seção [obtendo informações de contexto para ações personalizadas de execução adiada](obtaining-context-information-for-deferred-execution-custom-actions.md) para recuperar seu contexto.
+uma ação personalizada escrita em JScript ou VBScript requer o [**objeto de sessão**](session-object.md)de instalação. Esse é o objeto de **sessão** de tipo e o instalador o anexa ao script com o nome "Session". Como o objeto de **sessão** pode não existir durante uma reversão de instalação, uma ação personalizada adiada escrita em script deve usar um dos métodos ou propriedades do objeto de **sessão** descrito na seção [obtendo informações de contexto para ações personalizadas de execução adiada](obtaining-context-information-for-deferred-execution-custom-actions.md) para recuperar seu contexto.
 
 As ações personalizadas que fazem referência a um arquivo instalado como sua fonte, como o tipo de ação personalizada 22 (VBcript), devem aderir às seguintes restrições de sequenciamento:
 

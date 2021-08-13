@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea3afff67c417f8bf2786421bb991f530e753b3e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 13a675561bbed7fc4fb8ebad9846d1896a3f94ddd4ed4d7d456adc40958d8418
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103824982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118687796"
 ---
 # <a name="meetingip-attribute"></a>atributo meetingIP
 
@@ -35,7 +35,7 @@ O endereço TCP/IP da reunião.
 | Frequência de atualização  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.4.580                                                           |
 | System-ID-GUID    | 11b6cc89-48c4-11d1-a9c3-0000f80367c1                                             |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                      |
+| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -120,10 +120,10 @@ O endereço TCP/IP da reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | True                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -141,10 +141,10 @@ O endereço TCP/IP da reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | True                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -162,10 +162,10 @@ O endereço TCP/IP da reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | True                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |

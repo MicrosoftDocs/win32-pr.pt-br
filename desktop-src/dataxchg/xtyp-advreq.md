@@ -3,7 +3,7 @@ title: Transação de XTYP_ADVREQ (ddeml. h)
 description: A \_ transação XTYP ADVREQ informa ao servidor que uma transação de aviso está pendente no nome do tópico e no par do nome do item especificados e que os dados correspondentes ao nome do tópico e ao par do nome do item foram alterados.
 ms.assetid: 9bd43e61-cbd6-4d53-bab3-90e85819b16b
 keywords:
-- Troca de dados de transação XTYP_ADVREQ
+- XTYP_ADVREQ de dados de transação Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2884e838268342ab10c556c6ae3cfc8349ed5d2c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 18e751f17fb8634b0a105a36af5036f07d0212532349c267e5526d5d41f09367
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118544881"
 ---
 # <a name="xtyp_advreq-transaction"></a>\_Transação XTYP ADVREQ
 
-A transação **XTYP \_ ADVREQ** informa ao servidor que uma transação de aviso está pendente no nome do tópico e no par do nome do item especificados e que os dados correspondentes ao nome do tópico e ao par do nome do item foram alterados. O sistema envia essa transação para a função de retorno de chamada troca dinâmica de dados (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), depois que o servidor chama a função [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) .
+A transação **XTYP \_ ADVREQ** informa ao servidor que uma transação de aviso está pendente no nome do tópico e no par do nome do item especificados e que os dados correspondentes ao nome do tópico e ao par do nome do item foram alterados. o sistema envia essa transação para a função de retorno de chamada troca dinâmica de dados (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), depois que o servidor chama a função [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) .
 
 
 ```C++
@@ -98,7 +98,7 @@ Não usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O servidor deve primeiro chamar a função [**DdeCreateDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle) para criar um identificador de dados que identifica os dados alterados e, em seguida, retornar o identificador. O servidor deverá retornar **NULL** se não for possível concluir a transação.
 

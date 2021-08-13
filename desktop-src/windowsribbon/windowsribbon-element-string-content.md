@@ -1,9 +1,9 @@
 ---
-title: Propriedade String. Content
+title: Propriedade String.Content
 description: Representa o conteúdo de um recurso de cadeia de caracteres.
 ms.assetid: 86f34cdc-1311-4f52-979f-201d71bbb9e9
 keywords:
-- Faixa de das propriedades de String. Content do Windows
+- Propriedade String.Content Windows Faixa de Opções
 topic_type:
 - apiref
 api_name:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8912264e4f55568c190212227d2e305f9d676a1a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 526062956c6ab7498caac8712ba932d6e7ac1f2dd6307359183d2529e35fc8a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105763034"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118439501"
 ---
-# <a name="stringcontent-property"></a>Propriedade String. Content
+# <a name="stringcontent-property"></a>Propriedade String.Content
 
 Representa o conteúdo de um recurso de cadeia de caracteres.
 
@@ -43,7 +43,7 @@ Não há elementos filho.
 
 | Elemento                                                   |
 |-----------------------------------------------------------|
-| [**Strings**](windowsribbon-element-string.md)<br/> |
+| [**String**](windowsribbon-element-string.md)<br/> |
 
 
 
@@ -51,15 +51,15 @@ Não há elementos filho.
 
 Opcional.
 
-Pode ocorrer no máximo uma vez para cada elemento de [**cadeia de caracteres**](windowsribbon-element-string.md) .
+Pode ocorrer no máximo uma vez para cada [**elemento String.**](windowsribbon-element-string.md)
 
-Esse elemento contém um valor do tipo *xs: String*. O valor é restrito a uma cadeia de caracteres composta de qualquer sequência de caracteres, incluindo espaços em branco e caracteres de quebra de linha.
+Esse elemento contém um valor do tipo *xs:string*. O valor é restrito a uma cadeia de caracteres composta por qualquer sequência de caracteres, incluindo espaços em branco e caracteres de quebra de linha.
 
-O comprimento máximo é não associado.
+O comprimento máximo não é desaconsudido.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra a marcação para um elemento [**Command. LabelTitle**](windowsribbon-element-command-labeltitle.md) com uma declaração **String. Content** .
+O exemplo a seguir demonstra a marcação para um [**elemento Command.LabelTitle**](windowsribbon-element-command-labeltitle.md) com uma declaração **String.Content.**
 
 
 ```XML
@@ -80,8 +80,8 @@ O exemplo a seguir demonstra a marcação para um elemento [**Command. LabelTitl
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/> |
 
 
 

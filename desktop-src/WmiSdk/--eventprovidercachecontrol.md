@@ -2,7 +2,7 @@
 description: Controla quando um provedor de eventos é descarregado.
 ms.assetid: 7f11e521-d0f6-4c3c-8bfe-ceed2d106ed3
 ms.tgt_platform: multiple
-title: Classe __EventProviderCacheControl
+title: __EventProviderCacheControl classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - Schema
 api_location:
 - Root
-ms.openlocfilehash: c54ec47b1f67d96816cf24a6b6e0108ee0b1de70
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9d027fec5aea132524924655047c0f0a8aa8605d1972c6f91b2c2315c5834ad1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118557920"
 ---
 # <a name="__eventprovidercachecontrol-class"></a>\_\_Classe EventProviderCacheControl
 
-A classe de sistema **\_ \_ EventProviderCacheControl** controla quando um provedor de eventos é descarregado. Ele está localizado somente no \\ namespace raiz.
+A **\_ \_ classe de sistema EventProviderCacheControl** controla quando um provedor de eventos é descarregado. Ele está localizado apenas no \\ namespace raiz.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
@@ -40,34 +40,34 @@ class __EventProviderCacheControl : __CacheControl
 
 ## <a name="members"></a>Membros
 
-A classe **\_ \_ EventProviderCacheControl** tem estes tipos de membros:
+A **\_ \_ classe EventProviderCacheControl** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **\_ \_ EventProviderCacheControl** tem essas propriedades.
+A **\_ \_ classe EventProviderCacheControl** tem essas propriedades.
 
 <dl> <dt>
 
 **ClearAfter**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Intervalo de tempo após Instrumentação de Gerenciamento do Windows (WMI) libera um provedor de eventos. A hora está no [formato de intervalo](interval-format.md). Pode levar até duas vezes o intervalo especificado para descarregar o provedor.
+Intervalo de tempo após Windows WMI (Instrumentação de Gerenciamento) libera um provedor de eventos. A hora está no [formato de intervalo](interval-format.md). Pode levar até duas vezes o intervalo especificado para descarregar o provedor.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe **\_ \_ EventProviderCacheControl** é derivada de [**\_ \_ CacheControl**](--cachecontrol.md).
+A **\_ \_ classe EventProviderCacheControl** é derivada de [**\_ \_ CacheControl.**](--cachecontrol.md)
 
-Para obter mais informações sobre como usar essa classe, consulte [descarregando um provedor](unloading-a-provider.md).
+Para obter mais informações sobre como usar essa classe, [consulte Descarregando um provedor](unloading-a-provider.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,7 +85,7 @@ Para obter mais informações sobre como usar essa classe, consulte [descarregan
 
 <dl> <dt>
 
-[**\_\_CacheControl**](/windows/desktop/WmiSdk/--cachecontrol)
+[**\_\_Cachecontrol**](/windows/desktop/WmiSdk/--cachecontrol)
 </dt> <dt>
 
 [Classes do sistema WMI](wmi-system-classes.md)

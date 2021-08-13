@@ -4,12 +4,12 @@ ms.assetid: c75591c2-5266-4a99-8104-53815f6550e2
 title: Tabela ExternalFiles (Patchwiz.dll)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 71f0002961408be9f43685ef40cd2ccff729e48b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2573556e8e4e00cf9004b83520468724ad1c959704cf8be32769a7ee41e24ebf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118636873"
 ---
 # <a name="externalfiles-table-patchwizdll"></a>Tabela ExternalFiles (Patchwiz.dll)
 
@@ -21,14 +21,14 @@ A tabela ExternalFiles tem as colunas a seguir.
 
 | Coluna        | Tipo    | Chave | Nullable |
 |---------------|---------|-----|----------|
-| Família        | text    | S   | N        |
-| FTK           | text    | S   | N        |
-| FilePath      | text    | S   | N        |
-| SymbolPaths   | text    |     | S        |
-| IgnoreOffsets | text    |     | S        |
-| IgnoreLengths | text    |     | S        |
-| RetainOffsets | text    |     | N        |
-| Ordem         | Número inteiro |     | S        |
+| Família        | texto    | Y   | N        |
+| FTK           | texto    | Y   | N        |
+| FilePath      | texto    | Y   | N        |
+| SymbolPaths   | texto    |     | Y        |
+| IgnoreOffsets | texto    |     | Y        |
+| IgnoreLengths | texto    |     | Y        |
+| RetainOffsets | texto    |     | N        |
+| Ordem         | Número inteiro |     | Y        |
 
 
 
@@ -48,7 +48,7 @@ Chave estrangeira para a coluna família da [tabela ImageFamilies (Patchwiz.dll)
 <span id="FTK"></span><span id="ftk"></span>FTK
 </dt> <dd>
 
-Chave estrangeira na [tabela de arquivos](file-table.md) do arquivo. msi da imagem atualizada.
+Chave estrangeira na [tabela de arquivos](file-table.md) do .msi arquivo da imagem atualizada.
 
 </dd> <dt>
 

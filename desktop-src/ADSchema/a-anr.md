@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d28efc6d6871eb737f9c1953fbdb5ad5798f7fd4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 432b44c70b987cf31405a465945af9132a0a111daa5b8e5bd3377de4a49069e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456315"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118688318"
 ---
 # <a name="anr-attribute"></a>Atributo ANR
 
@@ -36,7 +36,7 @@ Atributo de resolução de nome ambíguo a ser usado ao escolher entre objetos.
 | Frequência de atualização  | Quando um atributo precisa ser adicionado ou removido da lista ANR. |
 | Attribute-Id      | 1.2.840.113556.1.4.1208                                           |
 | System-ID-GUID    | 45b01500-c419-11d1-bbc9-0080c76670c0                              |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                       |
+| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                       |
 
 
 
@@ -122,10 +122,10 @@ Atributo de resolução de nome ambíguo a ser usado ao escolher entre objetos.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| Tem valor único       | True         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -143,10 +143,10 @@ Atributo de resolução de nome ambíguo a ser usado ao escolher entre objetos.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| Tem valor único       | True         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -164,10 +164,10 @@ Atributo de resolução de nome ambíguo a ser usado ao escolher entre objetos.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| Tem valor único       | True         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -185,10 +185,10 @@ Atributo de resolução de nome ambíguo a ser usado ao escolher entre objetos.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| Tem valor único       | True         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |

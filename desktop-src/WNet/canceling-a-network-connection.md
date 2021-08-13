@@ -1,21 +1,21 @@
 ---
 title: Cancelando uma conexão de rede
-description: Para cancelar uma conexão a um recurso de rede, um aplicativo pode chamar a função WNetCancelConnection2, conforme mostrado no exemplo a seguir.
+description: Para cancelar uma conexão com um recurso de rede, um aplicativo pode chamar a função WNetCancelConnection2, conforme mostrado no exemplo a seguir.
 ms.assetid: a1c80222-4986-4c51-86a5-a1caacb4b2fe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22cc5fb9536a5d073a6c99d8b49a00e3c2771546
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: cbb5c74faa1e1f8b75d0e3b604d89615c6ad1481384a661253ee204dd3ee6081
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103823910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118566916"
 ---
 # <a name="canceling-a-network-connection"></a>Cancelando uma conexão de rede
 
-Para cancelar uma conexão a um recurso de rede, um aplicativo pode chamar a função [**WNetCancelConnection2**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnection2a) , conforme mostrado no exemplo a seguir.
+Para cancelar uma conexão com um recurso de rede, um aplicativo pode chamar a [**função WNetCancelConnection2,**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnection2a) conforme mostrado no exemplo a seguir.
 
-A chamada para **WNetCancelConnection2** especifica que uma conexão de rede não deve mais ser persistente. O exemplo chama um manipulador de erro definido pelo aplicativo para processar erros e a função [**TextOut**](/windows/desktop/api/wingdi/nf-wingdi-textouta) para impressão.
+A chamada para **WNetCancelConnection2** especifica que uma conexão de rede não deve mais ser persistente. O exemplo chama um manipulador de erros definido pelo aplicativo para processar erros e a [**função TextOut**](/windows/desktop/api/wingdi/nf-wingdi-textouta) para impressão.
 
 
 ```C++
@@ -52,10 +52,10 @@ printf("Connection closed for z: drive.\n");
 
 
 
-A função [**WNetCancelConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnectiona) tem suporte para compatibilidade com versões anteriores do Windows para Workgroups. Para novos aplicativos, use [**WNetCancelConnection2**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnection2a).
+A [**função WNetCancelConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnectiona) tem suporte para compatibilidade com versões anteriores do Windows for Workgroups. Para novos aplicativos, use [**WNetCancelConnection2**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnection2a).
 
-Para obter mais informações sobre como usar um manipulador de erro definido pelo aplicativo, consulte [recuperando erros de rede](retrieving-network-errors.md).
+Para obter mais informações sobre como usar um manipulador de erros definido pelo aplicativo, consulte [Recuperando erros de rede](retrieving-network-errors.md).
 
- 
+ 
 
- 
+ 

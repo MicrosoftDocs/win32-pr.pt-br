@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56529497eb8081f53310e26b834194cdcdc11bf5
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b63b0fce03a5e978172b5790cfeac3c9c6724244ab798fef6b0ca80508c22800
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105754407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118685106"
 ---
 # <a name="ms-ds-is-domain-for-attribute"></a>ms-DS-is-domain-para atributo
 
@@ -36,7 +36,7 @@ Link para trás para [**MS-DS-tem-Domain-NCS**](a-msds-hasdomainncs.md). Identif
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1933                 |
 | System-ID-GUID    | ff155a2a-44e5-4de0-8318-13a58988de4f    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

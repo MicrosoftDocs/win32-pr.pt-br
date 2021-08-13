@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0db7ae0a0d5a4672168329b546dd53c19697eec4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 37734d2742d1297429995f56edd4a1667b6ffa64b776b8b61a50608c05ead0d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105753831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118688649"
 ---
 # <a name="address-syntax-attribute"></a>Address-Syntax atributo
 

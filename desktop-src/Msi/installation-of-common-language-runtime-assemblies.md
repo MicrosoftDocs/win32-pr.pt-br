@@ -4,12 +4,12 @@ ms.assetid: c7d85f29-4ab9-4668-b199-f6a4afd58792
 title: Instalação de assemblies do Common Language Runtime
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b3dda7eead90f55db911d40693539cf16a35f37d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9834dc8d3afe88016c1db156e6554ecea07d7c3ebc958805291eb5b961147f88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118634194"
 ---
 # <a name="installation-of-common-language-runtime-assemblies"></a>Instalação de assemblies do Common Language Runtime
 

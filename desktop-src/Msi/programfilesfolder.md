@@ -1,19 +1,19 @@
 ---
-description: O instalador define a propriedade ProgramFilesFolder como o caminho completo da pasta arquivos de programas.
+description: O instalador define a propriedade ProgramFilesFolder como o caminho completo da pasta Arquivos de Programas.
 ms.assetid: 3ce700f1-ef35-4226-b78d-eeba97f4dbde
 title: Propriedade ProgramFilesFolder
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7decbc1828b5bc8a4316ebfe422da301f3c4ba32
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 820d4bfcc4e48e6ef346e3cfbeb10dffc63c6edd29fa85f2b57cc1ddb741e2fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118627335"
 ---
 # <a name="programfilesfolder-property"></a>Propriedade ProgramFilesFolder
 
-O instalador define a propriedade **ProgramFilesFolder** como o caminho completo da pasta arquivos de programas.
+O instalador define a **propriedade ProgramFilesFolder** como o caminho completo da pasta Arquivos de Programas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -21,7 +21,7 @@ O instalador define a propriedade **ProgramFilesFolder** como o caminho completo
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP. Consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre a Service Pack mínima do Windows exigida por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP. Consulte o [Windows instalador Run-Time para](windows-installer-portal.md) obter informações sobre o Windows service pack mínimo exigido por uma versão Windows Installer.<br/> |
 
 
 

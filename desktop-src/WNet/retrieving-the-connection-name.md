@@ -4,12 +4,12 @@ description: Para recuperar o nome do recurso de rede associado a um dispositivo
 ms.assetid: 7c02cf9a-cca3-47d8-8a4b-f2245f1db92a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ac84aec3c6aafb8a5113ea29251247a1de35aec
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 264a7352fb10139df538d5803fc94966b276fa334f2e4ef5f2c0799e1c32c4cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118566823"
 ---
 # <a name="retrieving-the-connection-name"></a>Recuperando o nome da conexão
 
@@ -60,6 +60,6 @@ switch (dwResult)
 
 Para obter mais informações sobre como usar um manipulador de erro definido pelo aplicativo, consulte [recuperando erros de rede](retrieving-network-errors.md).
 
- 
+ 
 
- 
+ 

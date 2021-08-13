@@ -1,11 +1,11 @@
 ---
-title: ms-DS-User-Encrypted-texto-Password-atributo permitido
-description: Indica se Active Directory irá armazenar a senha no formato de criptografia reversível.
+title: Atributo ms-DS-User-Encrypted-Text-Password-Allowed
+description: Indica se o Active Directory armazenará a senha no formato de criptografia reversível.
 ms.assetid: 67067cf6-60e3-4626-bf8c-a0a1264a899e
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-User-Encrypted-text-password-esquema de atributo do AD permitido
-- Esquema de AD do atributo ms-DS-UserEncryptedTextPasswordAllowed
+- Ms-DS-User-Encrypted-Text-Password-Allowed attribute AD Schema
+- ms-DS-UserEncryptedTextPasswordAllowed attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,19 +14,19 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d99ae61566ceec94336fd58951214dfc3255d2e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7e8fc10b3facce4bef7cc5ff73abe9e901f67171dc2615b79c62355ac61a7c10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118686997"
 ---
-# <a name="ms-ds-user-encrypted-text-password-allowed-attribute"></a>ms-DS-User-Encrypted-texto-Password-atributo permitido
+# <a name="ms-ds-user-encrypted-text-password-allowed-attribute"></a>Atributo ms-DS-User-Encrypted-Text-Password-Allowed
 
-Indica se Active Directory irá armazenar a senha no formato de criptografia reversível. True se a senha for armazenada no formato de criptografia reversível; caso contrário, false.
+Indica se o Active Directory armazenará a senha no formato de criptografia reversível. True se a senha for armazenada no formato de criptografia reversível; caso contrário, False.
 
 > [!Note]  
-> Esse atributo não é usado pelo [Serviços AD LDS](/previous-versions/windows/desktop/adam/active-directory-lightweight-directory-services) e é incluído apenas para fins de integridade/paridade com userAccountControl. AD LDS não armazena senhas com criptografia reversível, independentemente do valor desse atributo em qualquer objeto ou política de segurança de computador pertencente à criptografia reversível no próprio computador.
+> Esse atributo não é usado pelo [Active Directory Lightweight Directory Services](/previous-versions/windows/desktop/adam/active-directory-lightweight-directory-services) e só está incluído para a conclusão/paridade com userAccountControl. AD LDS não armazena senhas com criptografia reversível, independentemente do valor desse atributo em um determinado objeto ou na política de segurança do computador referente à criptografia reversível no próprio computador.
 
  
 
@@ -34,22 +34,22 @@ Indica se Active Directory irá armazenar a senha no formato de criptografia rev
 
 | Entrada | Valor |
 |-------------------|--------------------------------------------|
-| CN                | ms-DS-User-Encrypted-texto-senha-permitido |
-| LDAP-Display-Name | ms-DS-UserEncryptedTextPasswordAllowed     |
+| CN                | ms-DS-User-Encrypted-Text-Password-Allowed |
+| Ldap-Display-Name | ms-DS-UserEncryptedTextPasswordAllowed     |
 | Tamanho              | \-                                         |
 | Privilégio de atualização  | \-                                         |
 | Frequência de atualização  | \-                                         |
 | Attribute-Id      | 1.2.840.113556.1.4.1856                    |
-| System-ID-GUID    | 5a87c7f2-93c5-454c-a8c5-8cb09613292e       |
-| Syntax            | [**Boolean**](s-boolean.md)               |
+| System-Id-Guid    | 5a87c7f2-93c5-454c-a8c5-8cb09613292e       |
+| Sintaxe            | [**Boolean**](s-boolean.md)               |
 
 
 
 ## <a name="implementations"></a>Implementações
 
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -58,21 +58,21 @@ Indica se Active Directory irá armazenar a senha no formato de criptografia rev
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | True                                                              |
+| Tem valor único       | True                                                              |
 | É indexado             | Falso                                                             |
-| No catálogo global      | Falso                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
+| No Catálogo Global      | Falso                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classes usadas em        | [**ms-DS-Vinculed-Object**](c-msds-bindableobject.md)<br/> |
+| Classes usadas em        | [**ms-DS-Bindable-Object**](c-msds-bindableobject.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-No ADAM, esse atributo substitui o [**sinalizador \_ \_ permitido pela \_ \_ senha de \_ texto criptografado da UF do ADS**](/windows/desktop/api/iads/ne-iads-ads_user_flag_enum) do atributo [**userAccountControl**](a-useraccountcontrol.md) .
+No ADAM, esse atributo substitui o sinalizador [**ADS \_ UF \_ ENCRYPTED TEXT PASSWORD \_ \_ \_ ALLOWED**](/windows/desktop/api/iads/ne-iads-ads_user_flag_enum) do [**atributo userAccountControl.**](a-useraccountcontrol.md)
 
  
 

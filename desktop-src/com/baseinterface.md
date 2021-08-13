@@ -6,12 +6,12 @@ keywords:
 - COM valor do registro BaseInterface COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 202c64b491d362c335a1fb6526fba308904a0410
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ea2026df558dfddd27eddbadcb92f32a101d75227133f1daf99c8ee8807d2371
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103634745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118550712"
 ---
 # <a name="baseinterface"></a>BaseInterface
 
@@ -21,8 +21,8 @@ Identifica a interface da qual a interface atual é derivada.
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface
-   {IID}
-      BaseInterface = name
+   {IID}
+      BaseInterface = name
 ```
 
 ## <a name="remarks"></a>Comentários
@@ -36,9 +36,9 @@ Este é um valor de **\_ sz do reg** .
 [**Interface**](interface-key.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

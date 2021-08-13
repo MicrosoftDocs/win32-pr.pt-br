@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 94b0412ce4068d829f7aeba73632e5004a8f5b23
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 21b36d9a7d36ec54492a20602a6f2d83e0f00caea595bcabf510e9a24ab0ee5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104500076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118683436"
 ---
 # <a name="ms-ds-oidtogroup-link-bl-attribute"></a>atributo ms-DS-OIDToGroup-link-BL
 
@@ -36,7 +36,7 @@ Link para trás para [**MS-DS-OIDToGroup-link**](a-msds-oidtogrouplink.md). Iden
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2052                 |
 | System-ID-GUID    | 1a3d0d20-5844-4199-ad25-0f5039a76ada    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

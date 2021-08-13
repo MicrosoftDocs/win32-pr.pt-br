@@ -1,7 +1,7 @@
 ---
-description: O objeto Product representa uma instância exclusiva de um produto que é anunciado, instalado ou desconhecido. O objeto pode ser instanciado com a Propriedade Product como &\# 0034; WindowsInstaller. Installer. Product (ProductCode, userid, contexto) &\# 0034;.
+description: O objeto Product representa uma instância exclusiva de um produto anunciado, instalado ou desconhecido. O objeto pode ser instariado com a propriedade Product como &\# 0034; WindowsInstaller.Installer.Product(ProductCode, UserSid, Context)&\# 0034;.
 ms.assetid: 1fa89239-051a-4b3a-913a-12c7c093f35b
-title: Objeto Product
+title: Objeto product
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,29 +13,29 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: f8e9071f26da944c2c5ea206b2f70582d731ef59
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ff05a2f89244da09caa6cd3b26fc4b5d9cdbec95c0fcc3098fddf0c39dc68519
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118627669"
 ---
-# <a name="product-object"></a>Objeto Product
+# <a name="product-object"></a>Objeto product
 
-O objeto **Product** representa uma instância exclusiva de um produto que é anunciado, instalado ou desconhecido.
+O **objeto** Product representa uma instância exclusiva de um produto anunciado, instalado ou desconhecido.
 
-O objeto pode ser instanciado com a propriedade **Product** como "WindowsInstaller. Installer. Product (*ProductCode*, *userid*, *Context*)". *Userid* deve ser nulo para o contexto por máquina. O *userid* pode ser nulo para o usuário atual especificado, quando o contexto não for por computador. Os parâmetros de *ProductCode* e de *contexto* são obrigatórios.
+O objeto pode ser instalá-lo com a propriedade Product como "WindowsInstaller.Installer.Product(*ProductCode,*  *UserSid*, *Context*)". *UserSid* deve ser NULL para o contexto por computador. *UserSid* pode ser nulo para o usuário atual especificado, quando o contexto não é por computador. *Os parâmetros ProductCode* e *Context* são necessários.
 
 ## <a name="members"></a>Membros
 
-O objeto **Product** tem estes tipos de membros:
+O **objeto** Product tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-O objeto **Product** tem esses métodos.
+O **objeto** Product tem esses métodos.
 
 
 
@@ -45,8 +45,8 @@ O objeto **Product** tem esses métodos.
 | [**SourceListAddSource**](product-sourcelistaddsource.md)             | Adicione uma fonte de rede ou URL à lista de origem.<br/>                                                         |
 | [**SourceListClearAll**](product-sourcelistclearall.md)               | Limpa a lista de origem completa do tipo de fontes especificado.<br/>                                       |
 | [**SourceListClearMediaDisk**](product-sourcelistclearmediadisk.md)   | Remova um disco do conjunto de discos registrados da lista de origem.<br/>                                    |
-| [**SourceListClearSource**](product-sourcelistclearsource.md)         | Remova uma rede ou origem da URL da lista de origem.<br/>                                                    |
-| [**SourceListForceResolution**](product-sourcelistforceresolution.md) | Limpa a última fonte usada. Isso forçará uma resolução da lista de origem na próxima vez em que a origem for necessária.<br/> |
+| [**SourceListClearSource**](product-sourcelistclearsource.md)         | Remova uma fonte de rede ou URL da lista de origem.<br/>                                                    |
+| [**SourceListForceResolution**](product-sourcelistforceresolution.md) | Limpa a última fonte usada. Isso força uma resolução de lista de origem na próxima vez que a origem for necessária.<br/> |
 
 
 
@@ -54,22 +54,22 @@ O objeto **Product** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-O objeto **Product** tem essas propriedades.
+O **objeto Product** tem essas propriedades.
 
 
 
 | Propriedade                                                      | Descrição                                                                                 |
 |:--------------------------------------------------------------|:--------------------------------------------------------------------------------------------|
-| [**Componentestate**](product-componentstate.md)<br/>   | O estado de um componente especificado para esta instância de produto. <br/>                   |
-| [**Contexto**](product-context.md)<br/>                 | Contexto desta instância de produto como um valor de MSIINSTALLCONTEXT. <br/>                 |
-| [**Recurso**](product-featurestate.md)<br/>       | O estado de um recurso especificado para esta instância do produto. <br/>                     |
-| [**Instalar a**](product-installproperty.md)<br/> | O valor de uma propriedade especificada. <br/>                                              |
-| [**MediaDisks**](product-mediadisks.md)<br/>           | Enumera todos os discos de mídia para esta instância de produto.<br/>                        |
+| [**ComponentState**](product-componentstate.md)<br/>   | O estado de um componente especificado para esta instância do produto. <br/>                   |
+| [**Contexto**](product-context.md)<br/>                 | Contexto dessa instância do produto como um valor MSIINSTALLCONTEXT. <br/>                 |
+| [**FeatureState**](product-featurestate.md)<br/>       | O estado de um recurso especificado para esta instância do produto. <br/>                     |
+| [**InstallProperty**](product-installproperty.md)<br/> | O valor de uma propriedade especificada. <br/>                                              |
+| [**MediaDisks**](product-mediadisks.md)<br/>           | Enumera todos os discos de mídia para esta instância do produto.<br/>                        |
 | [**ProductCode**](product-productcode.md)<br/>         | Retorna o código do produto. <br/>                                                       |
-| [**SourceListInfo**](product-sourcelistinfo.md)<br/>   | Obter e definir as propriedades de informações de origem. Esta é uma propriedade de leitura ou gravação.<br/> |
+| [**SourceListInfo**](product-sourcelistinfo.md)<br/>   | Obter e definir as propriedades de informações de origem. Essa é uma propriedade de leitura ou gravação.<br/> |
 | [**Fontes**](product-sources.md)<br/>                 | Enumera todas as fontes para esta instância do produto.<br/>                            |
-| [**Status**](product-state.md)<br/>                     | Estado de instalação do produto.<br/>                                               |
-| [**UserSid**](product-usersid.md)<br/>                 | Retorna o SID de usuário, sob a qual conta esta instância de produto está disponível.<br/>    |
+| [**Estado**](product-state.md)<br/>                     | Estado de instalação do produto.<br/>                                               |
+| [**UserSid**](product-usersid.md)<br/>                 | Retorna o SID do usuário, sob qual conta esta instância do produto está disponível.<br/>    |
 
 
 
@@ -81,9 +81,9 @@ O objeto **Product** tem essas propriedades.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer 3,0 ou posterior no Windows Server 2003, Windows XP e Windows 2000<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador 3.0 ou posterior no Windows Server 2003, Windows XP e Windows 2000<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
-| IID<br/>     | IID \_ IProduct é definido como 000C10A0-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                          |
+| IID<br/>     | IID IProduct é definido como \_ 000C10A0-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                          |
 
 
 
@@ -91,7 +91,7 @@ O objeto **Product** tem essas propriedades.
 
 <dl> <dt>
 
-[Exemplos de script de Windows Installer](windows-installer-scripting-examples.md)
+[Windows Exemplos de script do instalador](windows-installer-scripting-examples.md)
 </dt> </dl>
 
  

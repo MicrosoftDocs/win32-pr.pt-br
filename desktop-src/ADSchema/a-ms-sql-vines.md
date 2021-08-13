@@ -1,11 +1,11 @@
 ---
-title: Atributo MS-SQL-Vines
+title: atributo MS-SQL-vines
 description: O ponto de conexão de Vines.
 ms.assetid: edb3ac70-6275-40e1-a91e-acf791c5cf23
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-SQL-Vines
-- Esquema de AD do atributo mS-SQL-Vines
+- esquema de AD do atributo MS-SQL-vines
+- esquema de AD do atributo mS-SQL-vines
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 313b47714dbd8431a7552abc5ed7962e0c0a708a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 818c5e007111f3d7c44b4e8bd530b41e81a6fa98d617dda6ab7352369bfa7b52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105755685"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118686240"
 ---
-# <a name="ms-sql-vines-attribute"></a>Atributo MS-SQL-Vines
+# <a name="ms-sql-vines-attribute"></a>atributo MS-SQL-vines
 
 O ponto de conexão de Vines.
 
@@ -29,14 +29,14 @@ O ponto de conexão de Vines.
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-SQL-Vines                                |
-| LDAP-Display-Name | mS-SQL-Vines                                |
+| CN                | MS-SQL-vines                                |
+| LDAP-Display-Name | mS-SQL-vines                                |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.            |
 | Frequência de atualização  | Na inicialização do sistema.                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1379                     |
 | System-ID-GUID    | 94c56394-ccee-11d2-9993-0000f87a57d4        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
@@ -121,10 +121,10 @@ O ponto de conexão de Vines.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | True                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -142,10 +142,10 @@ O ponto de conexão de Vines.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | True                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -163,10 +163,10 @@ O ponto de conexão de Vines.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | True                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |

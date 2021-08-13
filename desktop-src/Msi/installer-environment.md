@@ -1,7 +1,7 @@
 ---
-description: A propriedade Environment do objeto instalador é uma propriedade de leitura/gravação que é o valor da cadeia de caracteres para uma variável de ambiente do processo atual.
+description: A propriedade Environment do objeto Installer é uma propriedade de leitura/gravação que é o valor da cadeia de caracteres para uma variável de ambiente do processo atual.
 ms.assetid: f59a270f-9bd8-4d17-96e2-cb3c62a31cad
-title: Propriedade Installer. Environment
+title: Propriedade Installer.Environment
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 3983eceecd8bc709bea4a094c61c9886c73def3a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8f24237da6c140ef0d38ff17591bf214698cfa6731bd4e8d3cfcaa613b335404
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118631682"
 ---
-# <a name="installerenvironment-property"></a>Propriedade Installer. Environment
+# <a name="installerenvironment-property"></a>Propriedade Installer.Environment
 
-A propriedade **Environment** do objeto [**instalador**](installer-object.md) é uma propriedade de leitura/gravação que é o valor da cadeia de caracteres para uma variável de ambiente do processo atual.
+A **propriedade Environment** do objeto [**Installer**](installer-object.md) é uma propriedade de leitura/gravação que é o valor da cadeia de caracteres para uma variável de ambiente do processo atual.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```JScript
@@ -38,11 +38,11 @@ Installer.Environment = propVal
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O nome da variável de ambiente a ser lida ou gravada. Isso não diferencia maiúsculas de minúsculas.
+O nome da variável de ambiente a ser lida ou escrita. Isso não faz sentido para maiúsculas de minúsculas.
 
 ## <a name="remarks"></a>Comentários
 
-Definir uma variável de ambiente com a propriedade de **ambiente** afeta apenas a sessão ativa. Para fazer alterações persistentes em uma variável de ambiente, use a [tabela de ambiente](environment-table.md).
+Definir uma variável de ambiente com **a propriedade** Ambiente afeta apenas a sessão ativa. Para fazer alterações persistentes em uma variável de ambiente, use [a tabela Ambiente](environment-table.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,9 +50,9 @@ Definir uma variável de ambiente com a propriedade de **ambiente** afeta apenas
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller é definido como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | O IInstaller IID é definido como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

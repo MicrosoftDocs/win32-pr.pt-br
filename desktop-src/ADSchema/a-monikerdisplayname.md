@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52d9810fbb0ca45ffce7351bb32d3a7800b2c85e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6531c001ada864ff4f659868a5a4ef961c262d80fe8eb34bfcf7da4198c3bf9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118687069"
 ---
 # <a name="moniker-display-name-attribute"></a>Moniker-atributo Display-Name
 
@@ -36,7 +36,7 @@ O nome de exibição de um moniker.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.83                       |
 | System-ID-GUID    | bf9679c8-0de6-11d0-a285-00aa003049e2        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

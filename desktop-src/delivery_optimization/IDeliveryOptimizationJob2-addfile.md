@@ -16,12 +16,12 @@ api_type:
 ms.topic: reference
 ms.date: 01/18/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8225db8cccb1e1d3bb364ba1dc29f30526fe36b7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e6d27bca855bb9c719b485060fabf1f10b7130bd864569e74f98516ca76b8fb1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118544631"
 ---
 # <a name="ideliveryoptimizationjob2addfilewithranges-method"></a>Método IDeliveryOptimizationJob2:: AddFileWithRanges
 
@@ -86,7 +86,7 @@ O objeto IDeliveryOptimizationFile, que representa o arquivo de download.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna S_OK em caso de êxito ou um dos valores de HRESULT padrão em caso de erro.
 
@@ -94,8 +94,8 @@ Esse método retorna S_OK em caso de êxito ou um dos valores de HRESULT padrão
 
 | Requisito | Valor |
 |---------------------------|---------------------------------------------------------------------------------|
-| Cliente mínimo com suporte  | \[Somente aplicativos da área de trabalho do Windows 10, versão 1803\]                                  |
-| Servidor mínimo com suporte  | Windows Server, \[ somente aplicativos da área de trabalho da versão 1709\]                              |
+| Cliente mínimo com suporte  | Windows 10, \[ somente aplicativos da área de trabalho da versão 1803\]                                  |
+| Servidor mínimo com suporte  | Windows Servidor, versão 1709 \[ aplicativos da área de trabalho\]                              |
 | parâmetro                    | Deliveryoptimization. h                                                          |
 | INSERI                       | DeliveryOptimization. idl                                                        |
 | Biblioteca                   | Dosvc. lib                                                                       |

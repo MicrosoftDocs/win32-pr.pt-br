@@ -1,10 +1,10 @@
 ---
 title: atributo meetingApplication
-description: Esse atributo contém o nome do aplicativo que será usado para uma reunião online, como Microsoft NetMeeting, Windows Media Services ou Microsoft Exchange Conferencing.
+description: Esse atributo contém o nome do aplicativo que será usado para uma reunião online, como Microsoft NetMeeting, Windows Media Services ou Microsoft Exchange Conferência.
 ms.assetid: 6dbcafe1-dda6-41d6-893d-2c92bfe119e0
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo meetingApplication
+- esquema do AD do atributo meetingApplication
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fcc79876349ba15810a1848eba6d24752ab896ba
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9f7fd3da9f99f4aa9833e1d8a0fc845e8f0210e540819dbce71107f64ff99267
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104500008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118687995"
 ---
 # <a name="meetingapplication-attribute"></a>atributo meetingApplication
 
-Esse atributo contém o nome do aplicativo que será usado para uma reunião online, como Microsoft NetMeeting, Windows Media Services ou Microsoft Exchange Conferencing.
+Esse atributo contém o nome do aplicativo que será usado para uma reunião online, como Microsoft NetMeeting, Windows Media Services ou Microsoft Exchange Conferência.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | meetingApplication                          |
-| LDAP-Display-Name | meetingApplication                          |
+| Ldap-Display-Name | meetingApplication                          |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.573                      |
-| System-ID-GUID    | 11b6cc83-48c4-11d1-a9c3-0000f80367c1        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 11b6cc83-48c4-11d1-a9c3-0000f80367c1        |
+| Sintaxe            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -57,10 +57,10 @@ Esse atributo contém o nome do aplicativo que será usado para uma reunião onl
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | Falso                                   |
+| Tem valor único       | Falso                                   |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -78,10 +78,10 @@ Esse atributo contém o nome do aplicativo que será usado para uma reunião onl
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | Falso                                   |
+| Tem valor único       | Falso                                   |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -99,10 +99,10 @@ Esse atributo contém o nome do aplicativo que será usado para uma reunião onl
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | Falso                                   |
+| Tem valor único       | Falso                                   |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -120,10 +120,10 @@ Esse atributo contém o nome do aplicativo que será usado para uma reunião onl
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | Falso                                   |
+| Tem valor único       | Falso                                   |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -141,10 +141,10 @@ Esse atributo contém o nome do aplicativo que será usado para uma reunião onl
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | Falso                                   |
+| Tem valor único       | Falso                                   |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -162,10 +162,10 @@ Esse atributo contém o nome do aplicativo que será usado para uma reunião onl
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | Falso                                   |
+| Tem valor único       | Falso                                   |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |

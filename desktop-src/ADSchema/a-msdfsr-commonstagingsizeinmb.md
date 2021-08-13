@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b76ed9575c31d2d8666ad88d4f251340d79580e4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e85549b5ffd1f667659db2c0b48955743cf45b1a8dde33bbeea0018bde8d15e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118685980"
 ---
 # <a name="ms-dfsr-commonstagingsizeinmb-attribute"></a>atributo ms-DFSR-CommonStagingSizeInMb
 
@@ -36,7 +36,7 @@ Tamanho, em megabytes, do diretório de preparo comum.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.39           |
 | System-ID-GUID    | 135eb00e-4846-458b-8ea2-a37559afd405 |
-| Syntax            | [**Intervalo**](s-interval.md)       |
+| Sintaxe            | [**Intervalo**](s-interval.md)       |
 
 
 

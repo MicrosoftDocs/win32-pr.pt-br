@@ -1,11 +1,11 @@
 ---
-title: Atributo MS-SQL-TCPIP
+title: atributo MS-SQL-TCPIP
 description: O ponto de conexão TCP.
 ms.assetid: f61f7d54-958e-4f34-852e-222338c26de0
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-SQL-TCPIP
-- Esquema de AD do atributo mS-SQL-TCPIP
+- esquema de AD do atributo MS-SQL-TCPIP
+- esquema de AD do atributo mS-SQL-TCPIP
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 098d5e7818789774b425ad9e238f8f3b3a4d5378
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5d387ff6600618330c67549133169f4f8f321a72e0ff2d64ffec4b5dbdd9cf40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105749111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118686519"
 ---
-# <a name="ms-sql-tcpip-attribute"></a>Atributo MS-SQL-TCPIP
+# <a name="ms-sql-tcpip-attribute"></a>atributo MS-SQL-TCPIP
 
 O ponto de conexão TCP.
 
@@ -36,7 +36,7 @@ O ponto de conexão TCP.
 | Frequência de atualização  | Na inicialização do sistema.                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1377                     |
 | System-ID-GUID    | 8ac263a6-ccee-11d2-9993-0000f87a57d4        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
@@ -121,10 +121,10 @@ O ponto de conexão TCP.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | True                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -142,10 +142,10 @@ O ponto de conexão TCP.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | True                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -163,10 +163,10 @@ O ponto de conexão TCP.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | True                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |

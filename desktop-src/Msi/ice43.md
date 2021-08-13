@@ -4,18 +4,18 @@ ms.assetid: 7e58e303-e512-4707-a0bf-2095ec8ec502
 title: ICE43
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c9df4a6051557fca3e185f56ca3ad7978c2c0b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c69af661b22d851b50a74bdffb9534b1e269dde4e428440882ee2d52813a68c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104091731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118635202"
 ---
 # <a name="ice43"></a>ICE43
 
 O ICE43 valida que os atalhos que não fazem referência a um recurso como seu destino (atalhos não anunciados) estão em componentes que têm uma entrada de Registro HKCU como seu caminho de chave.
 
-## <a name="result"></a>Resultado
+## <a name="result"></a>Result
 
 ICE43 posta uma mensagem de erro se um atalho não anunciado estiver em um componente que não tem uma entrada de Registro HKCU como seu caminho de chave.
 

@@ -1,11 +1,11 @@
 ---
-title: Modificado-atributo de contagem em número-sobrenome-Prom
-description: O número de série do log de alteração do logon de rede na última promoção.
+title: Atributo Modified-Count-At-Last-Prom
+description: O número de série do Log de Alterações de Logon Líquido na última promoção.
 ms.assetid: 9f907997-ad1a-451c-960d-e5d1d462c00a
 ms.tgt_platform: multiple
 keywords:
-- Modificado – esquema de AD de atributos de conta a Last-Prom
-- Esquema de AD do atributo modifiedCountAtLastProm
+- Esquema do AD do atributo Modified-Count-At-Last-Prom
+- Esquema do AD do atributo modifiedCountAtLastProm
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc0c049158250d0e19bfa01efb04bb583bc29f17
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: be3f4760c91ea76d4f9806a88c093bf763faab4905ecfc929eec10c6c6a01a3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105771716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118687338"
 ---
-# <a name="modified-count-at-last-prom-attribute"></a>Modificado-atributo de contagem em número-sobrenome-Prom
+# <a name="modified-count-at-last-prom-attribute"></a>Atributo Modified-Count-At-Last-Prom
 
-O número de série do log de alteração do logon de rede na última promoção.
+O número de série do Log de Alterações de Logon Líquido na última promoção.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | Modified-contagem-em-última-Prom          |
-| LDAP-Display-Name | modifiedCountAtLastProm              |
+| CN                | Modified-Count-At-Last-Prom          |
+| Ldap-Display-Name | modifiedCountAtLastProm              |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.     |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.81                |
-| System-ID-GUID    | bf9679c6-0de6-11d0-a285-00aa003049e2 |
-| Syntax            | [**Intervalo**](s-interval.md)       |
+| System-Id-Guid    | bf9679c6-0de6-11d0-a285-00aa003049e2 |
+| Sintaxe            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -58,15 +58,15 @@ O número de série do log de alteração do logon de rede na última promoção
 | ID do link                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| É de valor único       | True                                                                                               |
+| Tem valor único       | True                                                                                               |
 | É indexado             | Falso                                                                                              |
-| No catálogo global      | Falso                                                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                       |
+| No Catálogo Global      | Falso                                                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classes usadas em        | [**Sam-domínio**](c-samdomain.md)<br/> [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Domínio Sam**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O número de série do log de alteração do logon de rede na última promoção
 | ID do link                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| É de valor único       | True                                                                                               |
+| Tem valor único       | True                                                                                               |
 | É indexado             | Falso                                                                                              |
-| No catálogo global      | Falso                                                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                       |
+| No Catálogo Global      | Falso                                                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classes usadas em        | [**Sam-domínio**](c-samdomain.md)<br/> [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Domínio Sam**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ O número de série do log de alteração do logon de rede na última promoção
 | ID do link                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| É de valor único       | True                                                                                               |
+| Tem valor único       | True                                                                                               |
 | É indexado             | Falso                                                                                              |
-| No catálogo global      | Falso                                                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                       |
+| No Catálogo Global      | Falso                                                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classes usadas em        | [**Sam-domínio**](c-samdomain.md)<br/> [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Domínio Sam**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ O número de série do log de alteração do logon de rede na última promoção
 | ID do link                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| É de valor único       | True                                                                                               |
+| Tem valor único       | True                                                                                               |
 | É indexado             | Falso                                                                                              |
-| No catálogo global      | Falso                                                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                       |
+| No Catálogo Global      | Falso                                                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classes usadas em        | [**Sam-domínio**](c-samdomain.md)<br/> [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Domínio Sam**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ O número de série do log de alteração do logon de rede na última promoção
 | ID do link                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| É de valor único       | True                                                                                               |
+| Tem valor único       | True                                                                                               |
 | É indexado             | Falso                                                                                              |
-| No catálogo global      | Falso                                                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                       |
+| No Catálogo Global      | Falso                                                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classes usadas em        | [**Sam-domínio**](c-samdomain.md)<br/> [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Domínio Sam**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ O número de série do log de alteração do logon de rede na última promoção
 | ID do link                | \-                                                                                                 |
 | MAPI-Id                | \-                                                                                                 |
 | System-Only            | Falso                                                                                              |
-| É de valor único       | True                                                                                               |
+| Tem valor único       | True                                                                                               |
 | É indexado             | Falso                                                                                              |
-| No catálogo global      | Falso                                                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                       |
+| No Catálogo Global      | Falso                                                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                       |
 | Range-Lower            | \-                                                                                                 |
 | Range-Upper            | \-                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                         |
 | System-Flags           | 0x00000010                                                                                         |
-| Classes usadas em        | [**Sam-domínio**](c-samdomain.md)<br/> [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Domínio Sam**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 

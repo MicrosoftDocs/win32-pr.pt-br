@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f7e50d31a7d706bc7a6b4311f6edaa3fa66dd8f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 64c0382fc2b15f77fbccc7efb42973a33df3eca5e8fe6a2810b4fa47214231e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118689182"
 ---
 # <a name="acs-total-no-of-flows-attribute"></a>ACS-atributo total-n-de-fluxos
 
@@ -36,7 +36,7 @@ O número total de fluxos que um determinado usuário pode ter.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.763               |
 | System-ID-GUID    | 7f561280-5301-11d1-a9c5-0000f80367c1 |
-| Syntax            | [**Enumeração**](s-enumeration.md) |
+| Sintaxe            | [**Enumeração**](s-enumeration.md) |
 
 
 

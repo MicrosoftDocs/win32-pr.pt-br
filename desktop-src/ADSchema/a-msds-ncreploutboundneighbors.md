@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fd37ccab1b3faef6ca2c84a52c05249a52ff38a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dc73585045701679899118f141d20575dcdf42f75c543f9a8dd1c269e4ca8dc1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118684261"
 ---
 # <a name="ms-ds-nc-repl-outbound-neighbors-attribute"></a>atributo ms-DS-NC-repl-Outbound-Neighbors
 
@@ -36,7 +36,7 @@ Parceiros de replicação para esta partição. Esse servidor envia dados de rep
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1706                     |
 | System-ID-GUID    | 855f2ef5-a1c5-4cc4-ba6d-32522848b61f        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
@@ -121,10 +121,10 @@ Parceiros de replicação para esta partição. Esse servidor envia dados de rep
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | Falso                           |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -142,10 +142,10 @@ Parceiros de replicação para esta partição. Esse servidor envia dados de rep
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | Falso                           |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -163,10 +163,10 @@ Parceiros de replicação para esta partição. Esse servidor envia dados de rep
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | Falso                           |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

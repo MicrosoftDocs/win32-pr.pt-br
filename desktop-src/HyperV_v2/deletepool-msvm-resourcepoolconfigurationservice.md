@@ -1,7 +1,7 @@
 ---
 description: Exclui um pool de recursos.
 ms.assetid: bc3111a4-9687-49ec-890e-190358230c53
-title: Método DeletePool da classe Msvm_ResourcePoolConfigurationService
+title: Método DeletePool da classe Msvm_ResourcePoolConfigurationService dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 84273daa0aa30dca8722d90d4fcec22b88325bad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 110c380973b500e8c89b399cd688a6624e7059dc14c711dd2b1e356c6fb07c1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105755111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118645723"
 ---
-# <a name="deletepool-method-of-the-msvm_resourcepoolconfigurationservice-class"></a>Método DeletePool da \_ classe ResourcePoolConfigurationService Msvm
+# <a name="deletepool-method-of-the-msvm_resourcepoolconfigurationservice-class"></a>Método DeletePool da classe Msvm \_ ResourcePoolConfigurationService
 
-Exclui um pool de recursos. Para excluir um pool de recursos com êxito, nenhuma alocação pode ser pendente ou a exclusão falhará com 32774 (em uso). Se o pool de recursos for um pool de recursos raiz, todos os recursos do host serão retornados para o sistema subjacente.
+Exclui um pool de recursos. Para excluir um pool de recursos com êxito, nenhuma alocação pode ser pendente ou a exclusão falhará com 32774 (em uso). Se o pool de recursos for um pool de recursos raiz, todos os recursos de host serão retornados de volta para o sistema subjacente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,21 +40,21 @@ uint32 DeletePool(
 
 <dl> <dt>
 
-*Pool* \[ de no\]
+*Pool* \[ Em\]
 </dt> <dd>
 
-Uma referência a uma instância da classe [**CIM \_ ResourcePool**](cim-resourcepool.md) que representa o pool a ser excluído.
+Uma referência a uma instância da classe [**\_ ResourcePool cim**](cim-resourcepool.md) que representa o pool a ser excluído.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Se a operação for executada de forma assíncrona, esse método retornará 4096, e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Se a operação for executada de forma assíncrona, esse método retornará 4096 e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob.**](/previous-versions//cc136808(v=vs.85))
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos valores a seguir.
 
@@ -63,13 +63,13 @@ Esse método retorna um dos valores a seguir.
 **Trabalho concluído sem erro** (0)
 </dt> <dt>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (4097.. 32767)
+**Método Reservado** (4097..32767)
 </dt> <dt>
 
 **Falha** (32768)
@@ -84,7 +84,7 @@ Esse método retorna um dos valores a seguir.
 **Desconhecido** (32771)
 </dt> <dt>
 
-**Tempo limite** (32772)
+**Tempoout** (32772)
 </dt> <dt>
 
 **Parâmetro inválido** (32773)
@@ -99,25 +99,25 @@ Esse método retorna um dos valores a seguir.
 **Tipo de recurso incorreto para o pool** (32776)
 </dt> <dt>
 
-**Não disponível** (32777)
+**Indisponível** (32777)
 </dt> <dt>
 
-**Memória insuficiente** (32778)
+**Memória sem** memória (32778)
 </dt> <dt>
 
-**Fornecedor reservado** (32779)
+**Fornecedor Reservado** (32779)
 </dt> <dt>
 
 **Recursos insuficientes** (32780)
 </dt> <dt>
 
-**Objeto não encontrado** (32781.. 32787)
+**Objeto não encontrado** (32781..32787)
 </dt> <dt>
 
-O **objeto existe** (32788)
+**Object Exists** (32788)
 </dt> <dt>
 
-**Específico do fornecedor** (32768.. 65535)
+**Específico do** fornecedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -126,10 +126,10 @@ O **objeto existe** (32788)
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: 12d539e44528c5e54a54209763e4cbe262cd16f7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: caa6bc1eb9586c1526a7af674040fd703ff0a75a5055ce42e13378206e82c879
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103837923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118300320"
 ---
 # <a name="d3dcolor_xyuv-macro"></a>\_Macro D3DCOLOR XYUV
 
@@ -55,7 +55,7 @@ Brilho azul da cor. Esse valor deve estar no intervalo de 0 a 255.
 
 </dd> <dt>
 
-*l* 
+*v* 
 </dt> <dd>
 
 Brilho vermelho da cor. Esse valor deve estar no intervalo de 0 a 255.

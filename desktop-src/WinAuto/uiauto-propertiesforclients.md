@@ -15,12 +15,12 @@ keywords:
 - Recuperando propriedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e199522dbefaa2f722a67b0ede57fe910b8ed63b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: fbbe524e6f82f8c7dba018b24895ade54ced3e6a4632e1caefed410753b56fab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105797597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118564367"
 ---
 # <a name="retrieving-properties-from-ui-automation-elements"></a>Recuperando propriedades de elementos de automação da interface do usuário
 
@@ -28,7 +28,7 @@ Propriedades em objetos [**IUIAutomationElement**](/windows/desktop/api/UIAutoma
 
 As propriedades de automação da interface do usuário da Microsoft são somente leitura. Para definir as propriedades de um controle, você deve usar os métodos do padrão de controle apropriado. Por exemplo, use [**IUIAutomationScrollPattern:: Scroll**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationscrollpattern-scroll) para alterar os valores de posição de uma janela de rolagem.
 
-Para melhorar o desempenho, os valores de propriedade de controles e padrões de controle podem ser armazenados em cache quando os elementos são recuperados. Para obter mais informações, consulte [Caching interface de usuário Propriedades de automação e padrões de controle](uiauto-cachingforclients.md).
+Para melhorar o desempenho, os valores de propriedade de controles e padrões de controle podem ser armazenados em cache quando os elementos são recuperados. para obter mais informações, consulte [Caching propriedades de automação da interface do usuário e padrões de controle](uiauto-cachingforclients.md).
 
 Este tópico inclui as seções a seguir.
 
@@ -87,6 +87,6 @@ A diferença entre [**IUIAutomationElement:: GetCurrentPropertyValue**](/windows
 [Identificadores de propriedade](uiauto-entry-propids.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,11 +1,11 @@
 ---
-title: ACS-Enable-RSVP-atributo de contabilidade
-description: True se a contabilidade de RSVP estiver habilitada.
+title: Atributo ACS-Enable-RSVP-Accounting
+description: True se a contabilidade do RSVP estiver habilitada.
 ms.assetid: 9899a695-e414-4e8d-8651-794efa457d67
 ms.tgt_platform: multiple
 keywords:
-- ACS-Enable-RSVP-contabilidade de atributo do AD
-- Esquema de AD do atributo aCSEnableRSVPAccounting
+- Esquema do AD do atributo ACS-Enable-RSVP-Accounting
+- aCSEnableRSVPAccounting attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 50984f9c42db04f11fd2177229c0cdef27ac1aac
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f55b08d3c575c1eee246a2a364d7096c0981f15e63c8575962be82d4c7ebfe48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105811194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118689621"
 ---
-# <a name="acs-enable-rsvp-accounting-attribute"></a>ACS-Enable-RSVP-atributo de contabilidade
+# <a name="acs-enable-rsvp-accounting-attribute"></a>Atributo ACS-Enable-RSVP-Accounting
 
-True se a contabilidade de RSVP estiver habilitada.
+True se a contabilidade do RSVP estiver habilitada.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | ACS-Enable-RSVP-Accounting           |
-| LDAP-Display-Name | aCSEnableRSVPAccounting              |
+| Ldap-Display-Name | aCSEnableRSVPAccounting              |
 | Tamanho              | 4 bytes                              |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.899               |
-| System-ID-GUID    | f072230e-aef5-11d1-bdcf-0000f80367c1 |
-| Syntax            | [**Boolean**](s-boolean.md)         |
+| System-Id-Guid    | f072230e-aef5-11d1-bdcf-0000f80367c1 |
+| Sintaxe            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -58,15 +58,15 @@ True se a contabilidade de RSVP estiver habilitada.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | True                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ True se a contabilidade de RSVP estiver habilitada.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | True                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ True se a contabilidade de RSVP estiver habilitada.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | True                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
 
 
 

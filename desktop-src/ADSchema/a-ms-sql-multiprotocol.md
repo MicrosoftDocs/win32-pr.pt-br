@@ -1,11 +1,11 @@
 ---
-title: Atributo MS-SQL-multiprotocolo
+title: atributo MS-SQL-multiprotocolo
 description: O ponto de conexão RPC.
 ms.assetid: 70cb9f80-7140-4c26-a1a4-f78a60de430f
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-SQL-multiprotocolo
-- Esquema de AD do atributo mS-SQL-multiprotocolo
+- esquema de AD de atributos de SQL de MS-multiprotocolo
+- esquema de AD de atributos de SQL de mS-multiprotocolo
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b8cdfb8e42d8e3d533090b7b0bf49dcefc5492a3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d3edc56c012b062a508c83fa18ed8c45b110d2b2d3b53ca052f357a3edabe3d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105751007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118686644"
 ---
-# <a name="ms-sql-multiprotocol-attribute"></a>Atributo MS-SQL-multiprotocolo
+# <a name="ms-sql-multiprotocol-attribute"></a>atributo MS-SQL-multiprotocolo
 
 O ponto de conexão RPC.
 
@@ -36,7 +36,7 @@ O ponto de conexão RPC.
 | Frequência de atualização  | Na inicialização do sistema.                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1375                     |
 | System-ID-GUID    | 8157fa38-ccee-11d2-9993-0000f87a57d4        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

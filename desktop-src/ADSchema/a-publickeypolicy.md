@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ce12a0536b7e112aa1fccbb2c6cb685d4bedcc6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 28b7a6ae02e960c99a540965889af1525c689a6453c09cfef399559bd96b3e24
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105755676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118681707"
 ---
 # <a name="public-key-policy-attribute"></a>Atributo de política de chave pública
 
@@ -36,7 +36,7 @@ Referência à política de chave pública para este domínio.
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.420                                |
 | System-ID-GUID    | 80a67e28-9f22-11d0-afdd-00c04fd930c9                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 
@@ -121,10 +121,10 @@ Referência à política de chave pública para este domínio.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | True                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -142,10 +142,10 @@ Referência à política de chave pública para este domínio.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | True                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -163,10 +163,10 @@ Referência à política de chave pública para este domínio.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | True                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |

@@ -1,11 +1,11 @@
 ---
-title: atributo ms-FVE-RecoveryGuid
-description: Contém o GUID associado a uma senha de recuperação de FVE (criptografia de volume completo).
+title: Atributo ms-FVE-RecoveryGuid
+description: Contém o GUID associado a uma senha de recuperação de FVE (Criptografia de Volume Completo).
 ms.assetid: a26d6ef2-6fe6-4d30-9725-19f9f5ab1132
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-FVE-RecoveryGuid
-- Esquema de AD do atributo msFVE-RecoveryGuid
+- Esquema do AD do atributo ms-FVE-RecoveryGuid
+- Esquema do AD do atributo msFVE-RecoveryGuid
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2630f3d7c729073051ae2a1bd363a8c36387e8fb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 808c3538591af9fb13553c66d75a0a7765174d647ae6c280ee22e8ff3b4a94a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105755682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118682728"
 ---
-# <a name="ms-fve-recoveryguid-attribute"></a>atributo ms-FVE-RecoveryGuid
+# <a name="ms-fve-recoveryguid-attribute"></a>Atributo ms-FVE-RecoveryGuid
 
-Contém o GUID associado a uma senha de recuperação de FVE (criptografia de volume completo).
+Contém o GUID associado a uma senha de recuperação de FVE (Criptografia de Volume Completo).
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | ms-FVE-RecoveryGuid                                   |
-| LDAP-Display-Name | msFVE-RecoveryGuid                                    |
+| Ldap-Display-Name | msFVE-RecoveryGuid                                    |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1965                               |
-| System-ID-GUID    | f76909bc-e678-47a0-b0b3-f86a0044c06d                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | f76909bc-e678-47a0-b0b3-f86a0044c06d                  |
+| Sintaxe            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,10 +55,10 @@ Contém o GUID associado a uma senha de recuperação de FVE (criptografia de vo
 | ID do link                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | Falso                                                                        |
-| É de valor único       | True                                                                         |
+| Tem valor único       | True                                                                         |
 | É indexado             | True                                                                         |
-| No catálogo global      | True                                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                 |
+| No Catálogo Global      | True                                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x0000001B                                                                   |
@@ -76,10 +76,10 @@ Contém o GUID associado a uma senha de recuperação de FVE (criptografia de vo
 | ID do link                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | Falso                                                                        |
-| É de valor único       | True                                                                         |
+| Tem valor único       | True                                                                         |
 | É indexado             | True                                                                         |
-| No catálogo global      | True                                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                 |
+| No Catálogo Global      | True                                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x0000001B                                                                   |
@@ -97,10 +97,10 @@ Contém o GUID associado a uma senha de recuperação de FVE (criptografia de vo
 | ID do link                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | Falso                                                                        |
-| É de valor único       | True                                                                         |
+| Tem valor único       | True                                                                         |
 | É indexado             | True                                                                         |
-| No catálogo global      | True                                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                 |
+| No Catálogo Global      | True                                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x0000001B                                                                   |

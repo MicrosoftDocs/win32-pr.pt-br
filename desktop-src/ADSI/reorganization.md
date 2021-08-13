@@ -1,22 +1,22 @@
 ---
 title: Reorganização
-description: A organização de vendas mudou para uma nova organização \ 8212; \ 0034; Vendas e suporte. \ 0034; Julie Bankert foi promovido para Vice-Presidente e conduzirá a nova organização.
+description: A organização de vendas foi movida para uma nova organização \ 8212; \ 0034; Vendas e suporte. \ 0034; Ela foi promovida a vice-presidente e conduzirá a nova organização.
 ms.assetid: 38b05d0b-2739-43c2-aac7-7555a5bfbc91
 ms.tgt_platform: multiple
 keywords:
 - ADSI de reorganização
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 587f3de34738814b34ad250bb00bb7b71121d65c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 368b4db1909c50242e3eda1402e46896e54785aa66739b324995b7edbdd1b007
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104004863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118690743"
 ---
 # <a name="reorganization"></a>Reorganização
 
-A organização de vendas mudou para uma nova organização: "vendas e suporte". Julie Bankert foi promovido para Vice-Presidente e conduzirá a nova organização. Joe Worden, administrador corporativo, deve mover a UO de vendas para uma nova UO, vendas e suporte.
+A organização de vendas foi movida para uma nova organização – "Vendas e suporte". Ela foi promovida a vice-presidente e conduzirá a nova organização. Joe Worden, o administrador corporativo, deve mover a UO de Vendas para uma nova UO, Vendas e Suporte.
 
 
 ```VB
@@ -27,9 +27,9 @@ Set sales = salesSupport.MoveHere("LDAP://OU=Sales,DC=Fabrikam,DC=COM", vbNullSt
 
 
 
-Com este exemplo de código, todos os objetos na unidade organizacional Sales, incluindo as unidades de suborganização, são movidos para a nova unidade organizacional.
+Com este exemplo de código, todos os objetos na unidade organizacional de vendas, incluindo as unidades sub organizacionais, são movidos para a nova unidade organizacional.
 
-Agora, Joe pode mover Julie para a unidade organizacional Sales and Support.
+Agora, Joe pode mover Julia para a unidade organizacional Vendas e Suporte.
 
 
 ```VB
@@ -40,31 +40,31 @@ usr.SetInfo
 
 
 
-Lembre-se de que o link de relatório direto de gerente entre Julie Bankert e Chris Gray é atualizado automaticamente pelo Active Directory.
+Esteja ciente de que o link de relatório direto do gerente entre Julia Gray e Chris Gray é atualizado automaticamente pelo Active Directory.
 
-**Para criar um relatório de Active Directory**
+**Para criar um relatório do Active Directory**
 
-1.  Abra Visual Basic versão 6,0 e, quando solicitado, insira o tipo de projeto, selecione **projeto de dados**.
-2.  Em **projeto de dados**, clique duas vezes em **Data Environment1**.
-3.  Na janela **ambiente de dados** , clique com o botão direito do mouse no objeto de conexão **(Connection1)** e selecione **Propriedades**.
-4.  Selecione **provedor de OLE DB para serviços de diretório da Microsoft** e clique em **Avançar**.
-5.  Selecione **usar segurança integrada do Windows NT** e clique em **OK**. Isso cria um objeto de conexão.
-6.  Clique com o botão direito do mouse na janela **ambiente de dados** novamente para selecionar **Adicionar comando**. Clique com o botão direito do mouse no objeto **Command1** e selecione **Propriedades**. A caixa de diálogo **Command1 Properties** a seguir será exibida.
+1.  Abra Visual Basic versão 6.0 e, quando solicitado para o tipo de projeto, selecione **Dados Project**.
+2.  Em **Data Project**, clique duas vezes em Ambiente de **Dados1**.
+3.  Na janela **Ambiente de Dados,** clique com o botão direito do mouse no objeto de **conexão (Connection1)** e selecione **Propriedades**.
+4.  Selecione **OLE DB provedor de serviços de diretório da Microsoft** e clique em **Próximo.**
+5.  Selecione **Usar Windows NT Segurança integrada** e clique em **OK.** Isso cria um objeto de conexão.
+6.  Clique com o botão direito do **mouse na janela Ambiente de** Dados novamente para selecionar Adicionar **Comando**. Clique com o botão direito **do mouse no objeto Command1** e selecione **Propriedades**. A caixa **de diálogo Propriedades do Command1** a seguir será exibida.
 
-    ![caixa de diálogo Propriedades do Command1](images/adadsi3.png)
+    ![caixa de diálogo propriedades command1](images/adadsi3.png)
 
-7.  Clique no botão de opção **instrução SQL** e digite o seguinte:
+7.  Clique no **botão SQL opção Instrução** e digite o seguinte:
 
-    Selecione o nome, telephoneNumber de ' LDAP://DC = Fabrikam, DC = com ' em que objectCategory = ' Person ' e objectClass = ' user '
+    SELECT Name,telephoneNumber FROM 'LDAP://DC=Fabrikam,DC=com' WHERE objectCategory='Person' AND objectClass='user'
 
-    O objeto de **comando** é criado. Adicione o objeto de **comando** ao relatório.
+    O **objeto Command** é criado. Adicione o **objeto Command** ao relatório.
 
-8.  Clique duas vezes em **Data Report1** na janela do **projeto** .
-9.  Arraste o objeto **Command1** da janela **DataEnvironment1** para a seção **detalhes** na janela **relatório de dados** .
-10. Em **Propriedades de DataReport1**, para **DataSource**, selecione **DataEnvironment1** no menu suspenso e selecione **Command1** no campo **DataMember** .
-11. Na janela do projeto, clique com o botão direito do mouse em **projeto de dados** e selecione **Propriedades do dataproject**.
-12. Na janela de diálogo **dataproject – Project Properties** , em **Startup object**, selecione **DataReport1** no menu suspenso. Clique em **OK** para salvar.
-13. Compilar. A caixa de diálogo **DataReport1** a seguir será exibida.
+8.  Clique duas vezes **em Relatório de Dados1** na **Project** janela.
+9.  Arraste o **objeto Command1** da **janela DataEnvironment1** para **a seção Detalhes** na janela **Relatório de** Dados.
+10. Em **Propriedades de DataReport1**, para **DataSource**, selecione **DataEnvironment1** no menu suspenso e selecione **Command1** no campo **DataMember.**
+11. Na janela do projeto, clique com o botão direito **do mouse** em Data Project e selecione Propriedades do **DataProject**.
+12. Na janela **de diálogo DataProject - Project Propriedades,** em Objeto de Inicialização **,** selecione **DataReport1** no menu suspenso. Clique em **OK** para salvar.
+13. Compilar. A caixa **de diálogo DataReport1 a** seguir será exibida.
 
     ![caixa de diálogo datareport1](images/adadsi4.png)
 
@@ -75,9 +75,9 @@ Lembre-se de que o link de relatório direto de gerente entre Julie Bankert e Ch
 [Unindo dados heterogêneos](joining-heterogeneous-data.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

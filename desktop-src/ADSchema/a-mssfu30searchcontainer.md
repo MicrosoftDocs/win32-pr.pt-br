@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7378af4b91a1a7153705e9d4e8280cdac02f1673
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4812f821c59cee6d538b475bef2feca032c4132d9a5c0f3f0dc4154c2c61173e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118682427"
 ---
 # <a name="mssfu-30-search-container-attribute"></a>msSFU-30-Pesquisar-atributo de contêiner
 
@@ -36,7 +36,7 @@ Contém o identificador de um objeto que especifica onde cada pesquisa será ini
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.300                 |
 | System-ID-GUID    | 27eebfa2-fbeb-4f8e-aad6-c50247994291        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 

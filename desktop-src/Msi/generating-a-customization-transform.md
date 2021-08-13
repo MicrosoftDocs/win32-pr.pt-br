@@ -4,16 +4,16 @@ ms.assetid: c016fcba-0d54-4b99-bcdd-36967b2c9da0
 title: Gerando uma transformação de personalização
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f73609b7be60dbfe236d31ed5a865e86ff6e310
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b790917100cc06da97e09fd8aabf45b580e62008d23c9fc5065e6005112d8d4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105751859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118635994"
 ---
 # <a name="generating-a-customization-transform"></a>Gerando uma transformação de personalização
 
-Você pode gerar um arquivo de transformação usando [**MsiDatabaseGenerateTransform**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasegeneratetransforma) ou o [**método GenerateTransform**](database-generatetransform.md) do [**objeto Database**](database-object.md). Um exemplo disso é fornecido no SDK do Windows Installer como o WiGenXfm.vbs do utilitário. O trecho a seguir, Gen.vbs, também ilustra o método de **transformação** e é para uso com o Windows Script Host.
+Você pode gerar um arquivo de transformação usando [**MsiDatabaseGenerateTransform**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasegeneratetransforma) ou o [**método GenerateTransform**](database-generatetransform.md) do [**objeto Database**](database-object.md). um exemplo disso é fornecido no SDK do Windows Installer como o WiGenXfm.vbs do utilitário. o trecho a seguir, Gen.vbs, também ilustra o método de **transformação** e é para uso com Windows Host de Script.
 
 
 ```VB

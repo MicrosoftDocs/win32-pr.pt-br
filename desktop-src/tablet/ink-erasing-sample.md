@@ -4,12 +4,12 @@ ms.assetid: cec912ee-1645-47e1-8988-626719549e55
 title: Exemplo de apagamento de tinta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 46040781d778f936815e57ba96b4ca516617d9a1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5b56885835a2d42c3f4c050938658cfc7cdf5a5d5463309ae2f0a6d8021c817e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501402"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118452073"
 ---
 # <a name="ink-erasing-sample"></a>Exemplo de apagamento de tinta
 
@@ -25,7 +25,7 @@ As partes mais interessantes deste exemplo se encontram no `InkErase` manipulado
 
 O manipulador de `OnPaint` eventos do formulário primeiro pinta os traços e, dependendo do modo do aplicativo, pode localizar e marcar todas as cusps ou interseções com um pequeno círculo vermelho. Um Cusp marca o ponto em que um traço muda de direção abruptamente. Uma interseção marca um ponto em que um traço faz interseção com ele mesmo ou com outro traço.
 
-O evento de [pintura](/dotnet/api/system.windows.forms.control.paint?view=netcore-3.1) ocorre sempre que um controle é redesenhado.
+o evento [Paint](/dotnet/api/system.windows.forms.control.paint?view=netcore-3.1) ocorre sempre que um controle é redesenhado.
 
 > [!Note]  
 > O exemplo força o formulário a ser redesenhado sempre que um traço é apagado ou quando o modo do aplicativo é alterado, usando o método [Refresh](/dotnet/api/system.windows.forms.control.refresh?view=netcore-3.1) do formulário.

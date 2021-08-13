@@ -17,12 +17,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 119733fbe82203a6e423fb0ef9b07d3ecff70619
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 65a9d84e3648a54668211b8b9e590c653111c93553115aba43b5353f9549bfc1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105780260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118528974"
 ---
 # <a name="id3dx12pipelineparsercallbacksblendstatecb-method"></a>Método ID3DX12PipelineParserCallbacks:: BlendStateCb
 
@@ -52,7 +52,7 @@ Detalhes do subobjeto de descrição do estado de mesclagem analisado a partir d
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Não retorna nada.
 

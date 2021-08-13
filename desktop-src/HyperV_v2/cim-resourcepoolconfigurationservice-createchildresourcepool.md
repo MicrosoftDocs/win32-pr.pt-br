@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: e4e709fd240c849581f6dcd343001a9b1dee7003
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 48a43baeefcbc56707fa6327930d9c18eaa57a2442b81fbc5f5cff17633b2148
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105755114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118648148"
 ---
 # <a name="createchildresourcepool-method-of-the-cim_resourcepoolconfigurationservice-class"></a>Método CreateChildResourcePool da \_ classe RESOURCEPOOLCONFIGURATIONSERVICE CIM
 
@@ -50,7 +50,7 @@ Um nome relevante do usuário final para o pool que está sendo criado. Se for *
 
 </dd> <dt>
 
-*Configurações* \[ do no\]
+*Configurações* \[ no\]
 </dt> <dd>
 
 Cadeia de caracteres que contém uma representação de uma instância de [**CIM \_ SettingData**](cim-settingdata.md) que é usada para especificar as configurações para o pool filho.
@@ -78,7 +78,7 @@ Referência ao trabalho (pode ser NULL se o trabalho for concluído).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 

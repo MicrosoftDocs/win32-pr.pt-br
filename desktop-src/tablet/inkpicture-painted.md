@@ -1,19 +1,19 @@
 ---
-description: Ocorre quando o controle InkPicture conclui a redesenho de si mesmo.
+description: Ocorre quando o controle InkPicture foi concluído redesenhando a si mesmo.
 ms.assetid: a8194cff-ed94-402e-8564-08d370f958b4
-title: Evento InkPicture. pintado (Msinkaut. h)
+title: Evento InkPicture.Painted (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 60188ef87d88ba7412a07300e708718bedc947fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 201027ba2626cd3a3dd8d76a8794a1a5430785e0e1602633ee9f39ac36caa023
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105772557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118451046"
 ---
-# <a name="inkpicturepainted-event"></a>Evento InkPicture. pintado
+# <a name="inkpicturepainted-event"></a>Evento InkPicture.Painted
 
-Ocorre quando o controle [InkPicture](inkpicture-control-reference.md) conclui a redesenho de si mesmo.
+Ocorre quando o [controle InkPicture](inkpicture-control-reference.md) foi concluído redesenhando a si mesmo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -31,27 +31,27 @@ void Painted(
 
 <dl> <dt>
 
-*HDC* \[ no\]
+*hDC* \[ Em\]
 </dt> <dd>
 
 O contexto do dispositivo no qual o evento ocorreu.
 
 </dd> <dt>
 
-*Rect* \[ no\]
+*Rect* \[ Em\]
 </dt> <dd>
 
-O [**InkRectangle**](inkrectangle-class.md) que foi redesenhado.
+O [**InkRectangle**](inkrectangle-class.md) que foi repintado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método de evento é definido nos dispinterfaces **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** com uma ID de \_ IOEPainted DISPID.
+Esse método de evento é definido nas dispinterfaces **\_ IInkOverlayEvents** **\_ e IInkPictureEvents** com uma ID de \_ DISPID IOEPink.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Esse método de evento é definido nos dispinterfaces **\_ IInkOverlayEvents** e
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                           |
-| parâmetro<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
+| parâmetro<br/>                   | <dl> <dt>Msinkaut.h (também requer Msinkaut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -70,7 +70,7 @@ Esse método de evento é definido nos dispinterfaces **\_ IInkOverlayEvents** e
 
 <dl> <dt>
 
-[InkPicture](inkpicture-control-reference.md)
+[Inkpicture](inkpicture-control-reference.md)
 </dt> </dl>
 
  

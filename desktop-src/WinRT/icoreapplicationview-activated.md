@@ -1,19 +1,19 @@
 ---
-description: Ocorre quando um aplicativo da Windows Store é ativado.
+description: ocorre quando um aplicativo da Windows Store é ativado.
 ms.assetid: CA0DB2D4-3417-48F5-8455-D87D0F323A1E
 title: 'Evento ICoreApplicationView:: Activated (Windows. ApplicationModel. Core. h)'
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 612f7110aa149396b18815afe664ee404c70fc52
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 93e736d0fb5403fe76d6d402c261e6b7e5336dfc096d8c39d7b3300b93ab1332
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118560990"
 ---
 # <a name="icoreapplicationviewactivated-event"></a>Evento ICoreApplicationView:: Activated
 
-Ocorre quando um aplicativo da Windows Store é ativado.
+ocorre quando um aplicativo da Windows Store é ativado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,7 +33,7 @@ void Activated(
 *manipulador* \[ no\]
 </dt> <dd></dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
