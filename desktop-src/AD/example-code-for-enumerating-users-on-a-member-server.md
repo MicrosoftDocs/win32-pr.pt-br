@@ -7,16 +7,16 @@ keywords:
 - Exemplos de Active Directory Active Directory, enumerando usuários em um servidor membro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b066e92ced26c58ef932025f4e818d87a907b30
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 03064d2030cd84ea75c1225bc6592c33e5af5a20b2fe6946987d4ca7caf7497f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103915947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118693695"
 ---
 # <a name="example-code-for-enumerating-users-on-a-member-server"></a>Código de exemplo para enumerar usuários em um servidor membro
 
-O exemplo de código a seguir Visual Basic enumera todos os usuários em um servidor membro ou Windows 2000 Professional.
+o exemplo de código a seguir Visual Basic enumera todos os usuários em um servidor membro ou Windows 2000 Professional.
 
 
 ```VB
@@ -73,7 +73,7 @@ End Sub
 
 
 
-O exemplo de código C++ a seguir enumera todos os objetos de uma classe especificada, como um usuário, e exibe os membros contidos em cada objeto em um servidor membro ou Windows 2000 Professional.
+o exemplo de código C++ a seguir enumera todos os objetos de uma classe especificada, como um usuário, e exibe os membros contidos em cada objeto em um servidor membro ou Windows 2000 Professional.
 
 
 ```C++
@@ -203,9 +203,9 @@ HRESULT ListObjectsWithWinNtProvider(
 
 
 
- 
+ 
 
- 
+ 
 
 
 

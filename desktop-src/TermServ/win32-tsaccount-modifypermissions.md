@@ -1,12 +1,12 @@
 ---
-title: Método ModifyPermissions da classe Win32_TSAccount
+title: Método ModifyPermissions da Win32_TSAccount classe
 description: Define uma permissão para a conta especificada.
 ms.assetid: cef36f7f-d327-4bb6-9bff-282036c1a5d5
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método ModifyPermissions
-- Método ModifyPermissions Serviços de Área de Trabalho Remota, classe Win32_TSAccount
-- Classe Win32_TSAccount Serviços de Área de Trabalho Remota, método ModifyPermissions
+- Método ModifyPermissions Serviços de Área de Trabalho Remota
+- O método ModifyPermissions Serviços de Área de Trabalho Remota classe Win32_TSAccount ,
+- Win32_TSAccount classe Serviços de Área de Trabalho Remota , método ModifyPermissions
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4bf6147c215475314f65bb8fa426442884bc82e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a6265290fa3604c426609f51d0518f1f6762ea02718757d86ff9ed69b10bd018
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105811904"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119421666"
 ---
-# <a name="modifypermissions-method-of-the-win32_tsaccount-class"></a>Método ModifyPermissions da classe Win32 \_ TSAccount
+# <a name="modifypermissions-method-of-the-win32_tsaccount-class"></a>Método ModifyPermissions da classe \_ Win32 TSAccount
 
 Define uma permissão para a conta especificada.
 
@@ -44,10 +44,10 @@ uint32 ModifyPermissions(
 
 <dl> <dt>
 
-*PermissionMask* \[ no\]
+*PermissionMask* \[ Em\]
 </dt> <dd>
 
-A [permissão host da sessão da área de trabalho remota](terminal-services-permissions.md) a ser definida.
+A [Host da Sessão da Área de Trabalho Remota a](terminal-services-permissions.md) ser definida.
 
 Os valores possíveis são:
 
@@ -66,18 +66,18 @@ Permissão para consultar informações sobre uma sessão.
 
 <span id="WINSTATION_SET"></span><span id="winstation_set"></span>
 
-<span id="WINSTATION_SET"></span><span id="winstation_set"></span>**WINSTATION \_ DEFINIR** (1)
+<span id="WINSTATION_SET"></span><span id="winstation_set"></span>**WINSTATION \_ SET** (1)
 
 
 </dt> <dd>
 
-Permissão para modificar os parâmetros de conexão.
+Permissão para modificar parâmetros de conexão.
 
 </dd> <dt>
 
 <span id="WINSTATION_RESET"></span><span id="winstation_reset"></span>
 
-<span id="WINSTATION_RESET"></span><span id="winstation_reset"></span>**WINSTATION \_ REDEFINIR** (6)
+<span id="WINSTATION_RESET"></span><span id="winstation_reset"></span>**WINSTATION \_ RESET** (6)
 
 
 </dt> <dd>
@@ -88,7 +88,7 @@ Permissão para redefinir ou encerrar uma sessão ou conexão.
 
 <span id="WINSTATION_VIRTUAL___STANDARD_RIGHTS_REQUIRED"></span><span id="winstation_virtual___standard_rights_required"></span>
 
-<span id="WINSTATION_VIRTUAL___STANDARD_RIGHTS_REQUIRED"></span><span id="winstation_virtual___standard_rights_required"></span>**WINSTATION \_ \| Direitos padrão \_ virtuais \_ necessários** (3)
+<span id="WINSTATION_VIRTUAL___STANDARD_RIGHTS_REQUIRED"></span><span id="winstation_virtual___standard_rights_required"></span>**WINSTATION \_ DIREITOS \| PADRÃO \_ VIRTUAIS \_ NECESSÁRIOS** (3)
 
 
 </dt> <dd>
@@ -99,7 +99,7 @@ Permissão para usar canais virtuais. Os canais virtuais fornecem acesso de um p
 
 <span id="WINSTATION_SHADOW"></span><span id="winstation_shadow"></span>
 
-<span id="WINSTATION_SHADOW"></span><span id="winstation_shadow"></span>**WINSTATION \_ SOMBRA** (4)
+<span id="WINSTATION_SHADOW"></span><span id="winstation_shadow"></span>**WINSTATION \_ SHADOW** (4)
 
 
 </dt> <dd>
@@ -143,7 +143,7 @@ Permissão para enviar uma mensagem para a sessão de outro usuário.
 
 <span id="WINSTATION_CONNECT"></span><span id="winstation_connect"></span>
 
-<span id="WINSTATION_CONNECT"></span><span id="winstation_connect"></span>**WINSTATION \_ CONECTAR** (8)
+<span id="WINSTATION_CONNECT"></span><span id="winstation_connect"></span>**WINSTATION \_ CONNECT** (8)
 
 
 </dt> <dd>
@@ -154,7 +154,7 @@ Permissão para se conectar a outra sessão.
 
 <span id="WINSTATION_DISCONNECT"></span><span id="winstation_disconnect"></span>
 
-<span id="WINSTATION_DISCONNECT"></span><span id="winstation_disconnect"></span>**WINSTATION \_ Desconectar** (9)
+<span id="WINSTATION_DISCONNECT"></span><span id="winstation_disconnect"></span>**WINSTATION \_ DISCONNECT** (9)
 
 
 </dt> <dd>
@@ -163,7 +163,7 @@ Permissão para desconectar uma sessão.
 
 </dd> </dl> </dd> <dt>
 
-*Permitir* \[ no\]
+*Permitir* \[ Em\]
 </dt> <dd>
 
 Especifica se a permissão no parâmetro *PermissionMask* é permitida ou negada.
@@ -190,17 +190,17 @@ O conjunto de permissões especificado é permitido.
 
 </dt> <dd>
 
-O conjunto de permissões especificado foi negado.
+O conjunto de permissões especificado é negado.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md) para obter uma lista desses valores.
+Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Consulte Serviços de Área de Trabalho Remota códigos de erro do provedor [WMI](terminal-services-wmi-provider-error-codes.md) para ver uma lista desses valores.
 
 ## <a name="remarks"></a>Comentários
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format arquivos (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -210,8 +210,8 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -220,7 +220,7 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_TSAccount Win32**](win32-tsaccount.md)
+[**Win32 \_ TSAccount**](win32-tsaccount.md)
 </dt> </dl>
 
  

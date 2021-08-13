@@ -3,7 +3,7 @@ title: Elemento meta
 description: O elemento meta especifica os metadados que se aplicam à lista de reprodução inteira.
 ms.assetid: 7248e1d9-ebd1-48cb-9019-89a35eac27ae
 keywords:
-- Elemento meta do Windows Media Player
+- Windows Media Player meta de elemento
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9f3c41c25a0df0895c645c34f97495712b113ffc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b2e4120b3eceea6d2a664edec9b48a46d33ad19b788bb820458a8802dccd2d9a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749555"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119415736"
 ---
 # <a name="meta-element"></a>Elemento meta
 
@@ -59,7 +59,7 @@ O elemento **meta** especifica os metadados que se aplicam à lista de reproduç
 
 ## <a name="remarks"></a>Comentários
 
-O criador de uma playlist do Windows Media pode definir o atributo Name de um elemento meta para qualquer cadeia de caracteres. A lista a seguir mostra alguns atributos de nome típicos que são encontrados nas listas de reprodução do Windows Media criadas pelo Windows Media Player e outros componentes da Microsoft.
+o criador de uma lista de reprodução de mídia Windows pode definir o atributo name de um elemento meta para qualquer cadeia de caracteres. a lista a seguir mostra alguns atributos de nome típicos que são encontrados em Windows listas de reprodução de mídia criadas pelo Windows Media Player e outros componentes da Microsoft.
 
 -   Autor
 -   Categoria
@@ -98,7 +98,7 @@ O criador de uma playlist do Windows Media pode definir o atributo Name de um el
 [**Elemento head**](head-element.md)
 </dt> <dt>
 
-[**Referência de elementos da playlist do Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Referência de elementos de playlist de mídia**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

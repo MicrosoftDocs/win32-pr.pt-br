@@ -4,12 +4,12 @@ ms.assetid: 258ea139-581f-4b94-9655-43ecf1e77f10
 title: Componentes ASF WMContainer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d7d1c1b76683cfe01dc0970ab1c077580215d2b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c4d39edd9241a856d5ef854d91bc1198cb090ddf653960b19905407c28279a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103921866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118736734"
 ---
 # <a name="wmcontainer-asf-components"></a>Componentes ASF WMContainer
 
@@ -28,7 +28,7 @@ A camada WMContainer inclui os seguintes objetos:
 Os tópicos a seguir contêm instruções passo a passo sobre como usar o WMContainer para ler ou gravar arquivos ASF.
 
 -   [Tutorial: lendo um arquivo ASF usando objetos WMContainer](tutorial--reading-an-asf-file.md)
--   [Tutorial: copiando fluxos ASF usando objetos WMContainer](tutorial--copying-asf-streams-from-one-file-to-another.md)
+-   [Tutorial: copiando Fluxos ASF usando objetos WMContainer](tutorial--copying-asf-streams-from-one-file-to-another.md)
 -   [Tutorial: gravando um arquivo WMA usando objetos WMContainer](tutorial--writing-a-wma-file-by-using-cbr-encoding.md)
 
 ## <a name="about-wm-container"></a>Sobre o contêiner do WM

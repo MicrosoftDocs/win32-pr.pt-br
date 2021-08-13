@@ -4,12 +4,12 @@ ms.assetid: 58083bc8-59cc-4503-8fae-36fcd864921a
 title: Atributo MF_SESSION_APPROX_EVENT_OCCURRENCE_TIME (Mfapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a31b1970c2c9d86384c12c50777a8cee55e3ffd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ce6cbaa7d12cebe14b015c4d568b36b081930ef4b302797dba76fc728e92cf01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105771425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118740020"
 ---
 # <a name="mf_session_approx_event_occurrence_time-attribute"></a>\_Atributo de \_ \_ tempo de ocorrência de evento aprox \_ de sessão MF \_
 
@@ -35,8 +35,8 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
 | parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
 
 

@@ -7,29 +7,29 @@ MSHAttr:
 title: IsAdditionalPdpContextProfile
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 169aa9a34a561f65eed5dfc315e7711ef6bb9bf9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a075916144971196433d1a490a9076c4d40ddb86b363d2904d1affce63a5995
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118745118"
 ---
 # <a name="span-idwwan_profile_v3element_isadditionalpdpcontextprofilespanisadditionalpdpcontextprofile"></a><span id="WWAN_profile_v3.element_IsAdditionalPdpContextProfile"></span>IsAdditionalPdpContextProfile
 
-O elemento **IsAdditionalPdpContextProfile** contém um **booliano** que será **verdadeiro** se este for um perfil adicional de "PDP (protocolo de dados de pacote)" e **false**, caso contrário. O padrão é **false**.
+O **elemento IsAdditionalPdpContextProfile** conterá  um **boolão** que será verdadeiro se este for um perfil de "contexto PDP (Protocolo de Dados de Pacote) adicional" e **false,** caso contrário. O padrão é **false**.
 
-Um perfil de "contexto PDP adicional" é um perfil que não é ativado pela porta padrão do adaptador físico e a definição desse elemento como true garante que esse perfil não seja exibido incorretamente na interface do usuário.
+Um perfil de "contexto PDP adicional" é um perfil que não é ativado pela porta padrão do adaptador físico e definir esse elemento como true garante que esse perfil não seja exibido inadequadamente na interface do usuário.
 
-Observe que, se esse elemento for definido como true, o seguinte também deverá ser verdadeiro.
+Observe que, se esse elemento estiver definido como true, o seguinte também deverá ser true.
 
--   O elemento [**IsDefault**](./schema-isdefault-mbnprofile-element.md) deve ser não especificado ou definido como **false** para que o perfil seja válido.
--   O elemento [**ConnectionMode**](./schema-connectionmode-mbnprofile-element.md) deve ser não especificado ou definido como **manual** para que o perfil seja válido.
+-   O [**elemento IsDefault**](./schema-isdefault-mbnprofile-element.md) deve ser não especificado ou definido como **false** para que o perfil seja válido.
+-   O [**elemento ConnectionMode**](./schema-connectionmode-mbnprofile-element.md) deve ser não especificado ou definido como **manual** para que o perfil seja válido.
 
 ## <a name="element-hierarchy"></a>Hierarquia de elementos
 
 **<IsAdditionalPdpContextProfile>**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` syntax
 <IsAdditionalPdpContextProfile>
@@ -51,7 +51,7 @@ Nenhum.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos pai
 
-Esse elemento mais externo (documento) pode não estar contido em outros elementos.
+Esse elemento mais externo (documento) pode não estar contido por outros elementos.
 
 ## <a name="requirements"></a>Requisitos
 

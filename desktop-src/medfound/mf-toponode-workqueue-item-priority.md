@@ -4,12 +4,12 @@ ms.assetid: B2FA1151-08D3-46F9-A38D-AC8908EFA6A2
 title: Atributo MF_TOPONODE_WORKQUEUE_ITEM_PRIORITY (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec5f7df6630e41a32eeb069c2a07b8030da79929
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1ff67e48bda6ac00baeab9418b80d366c23808713b4689a013949b364f09b6e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118739830"
 ---
 # <a name="mf_toponode_workqueue_item_priority-attribute"></a>\_Atributo de \_ prioridade do item da fila de TOPONODE MF \_ \_
 
@@ -33,8 +33,8 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                               |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                               |
 | parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 

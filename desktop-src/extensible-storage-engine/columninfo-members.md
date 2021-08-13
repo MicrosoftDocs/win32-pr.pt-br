@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.colu
 ms:contentKeyID: 55100969
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 46a709ba0c789d77b8fd7b5b16eb1876b3989467
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a638188363be85966fe76fa038297f19a1060ac24a0b2d083618c0d243f08e0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104556565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119455126"
 ---
 # <a name="columninfo-members"></a>Membros do ColumnInfo
 
@@ -51,7 +51,7 @@ O tipo [ColumnInfo](./columninfo-class.md) expõe os membros a seguir.
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="dn334137(v=exchg.10).md">DefaultValue</a></td>
+<td><a href="dn334137(v=exchg.10).md">ValorPadrão</a></td>
 <td>Obtém o valor padrão da coluna.</td>
 </tr>
 <tr class="odd">

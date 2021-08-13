@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 279a3d4d84617c4a4fa5454d1f39f6f78f0cf3fd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3ad8251650c8a7e16c6eb2fc957df5e70459239c0cd6cf1184b5209ae51b6aaa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105793273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118701122"
 ---
 # <a name="iwmdrmlicensemanagementacquirelicense-method"></a>Método IWMDRMLicenseManagement:: AcquireLicense
 
@@ -105,7 +105,7 @@ Ponteiro que recebe um ponteiro para a interface **IUnknown** de um objeto que i
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
@@ -123,7 +123,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 Esse método é executado de forma assíncrona. Ele retorna imediatamente depois de ser chamado e, em seguida, gera um evento **MEWMDRMLicenseAcquisitionCompleted** quando o processamento é concluído. Para operações de aquisição de licença não silenciosa, o valor do evento obtido chamando **IMFMediaEvent:: GetValue** é um ponteiro **IUnknown** . Você pode chamar o método **QueryInterface** da interface **IUnknown** recuperada para obter uma instância da interface [**IWMDRMNonSilentLicenseAquisition**](iwmdrmnonsilentlicenseaquisition.md) .
 
-Para obter mais informações sobre como usar os métodos assíncronos das APIs estendidas do cliente DRM do Windows Media, consulte [usando o modelo de evento Media Foundation](using-the-media-foundation-model.md).
+para obter mais informações sobre como usar os métodos assíncronos das APIs estendidas do cliente DRM de mídia Windows, consulte [usando o modelo de evento Media Foundation](using-the-media-foundation-model.md).
 
 ## <a name="requirements"></a>Requisitos
 

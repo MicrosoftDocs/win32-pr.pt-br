@@ -1,9 +1,9 @@
 ---
-title: Tipo simples prioritytype
-description: Define os valores mínimo e máximo para o elemento de prioridade (settingstype).
+title: tipo simples priorityType
+description: Define os valores mínimo e máximo para o elemento Priority (settingsType).
 ms.assetid: 44e97d78-f035-4db9-a557-f24960518628
 keywords:
-- tipo simples de prioritytype Agendador de Tarefas
+- tipo simples priorityType Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 05b3c6d04adf557242438c813dab4f10d48cdb9d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 71bdf8b87a641247ce2064ccf44ee861d79aab0593229e4cd7b38035c5c7c124
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119424426"
 ---
-# <a name="prioritytype-simple-type"></a>Tipo simples prioritytype
+# <a name="prioritytype-simple-type"></a>tipo simples priorityType
 
-Define os valores mínimo e máximo para o elemento de [**prioridade (settingstype)**](taskschedulerschema-priority-settingstype-element.md) .
+Define os valores mínimo e máximo para o [**elemento Priority (settingsType).**](taskschedulerschema-priority-settingstype-element.md)
 
 ``` syntax
 <xs:simpleType name="priorityType">
@@ -41,7 +41,7 @@ Define os valores mínimo e máximo para o elemento de [**prioridade (settingsty
 
 ## <a name="enumeration-values"></a>Valores de enumeração
 
-O tipo simples **prioritytype** define os valores a seguir.
+O **tipo simples priorityType** define os valores a seguir.
 
 
 
@@ -58,8 +58,8 @@ O tipo simples **prioritytype** define os valores a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -67,7 +67,7 @@ O tipo simples **prioritytype** define os valores a seguir.
 
 <dl> <dt>
 
-[Tipos simples de esquema de Agendador de Tarefas](task-scheduler-schema-complex-types.md)
+[Agendador de Tarefas tipos simples de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

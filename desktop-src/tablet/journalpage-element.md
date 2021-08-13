@@ -4,12 +4,12 @@ ms.assetid: 8cada667-188b-42f9-8602-34e23d512b82
 title: Elemento JournalPage
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0939194585b067525fa841d6d41674180a40adb9
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: 5062838476e6f67605101157640a490645e454b62d852b69f51dc4bb2215db99
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442796"
 ---
 # <a name="journalpage-element"></a>Elemento JournalPage
 

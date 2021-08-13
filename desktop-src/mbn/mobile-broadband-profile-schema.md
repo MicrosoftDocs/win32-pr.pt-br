@@ -4,20 +4,20 @@ ms.assetid: e55775d2-1166-4f14-9553-207c69202b69
 title: Esquema de perfil de banda larga móvel v1
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d8f02be0cf77923b6802ea1bc58944eb26108858
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6b34e8e45218666cebf320a03bb3051f0f945930387c3773e2d7bc941cd31e38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118744608"
 ---
 # <a name="mobile-broadband-profile-schema-v1"></a>Esquema de perfil de banda larga móvel v1
 
-O esquema de perfil de banda larga 7Mobile do Windows v1 está disponível no namespace `https://www.microsoft.com/networking/WWAN/profile/v1` .
+O Windows 7Pacote de Perfil de Banda Larga Móvel v1 está disponível no namespace `https://www.microsoft.com/networking/WWAN/profile/v1` .
 
--   [Elementos do esquema do perfil de banda larga móvel v1](schema-elements.md)
--   [Tipos simples de esquema de perfil de banda larga móvel v1](schema-simple-types.md)
--   [Tipos complexos do esquema de perfil de banda larga móvel v1](schema-complex-types.md)
+-   [Elementos do esquema de perfil de banda larga móvel v1](schema-elements.md)
+-   [Esquema de perfil de banda larga móvel v1 Tipos simples](schema-simple-types.md)
+-   [Esquema de perfil de banda larga móvel v1 Tipos complexos](schema-complex-types.md)
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8" ?>

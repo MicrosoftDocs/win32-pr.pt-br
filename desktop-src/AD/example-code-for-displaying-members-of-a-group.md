@@ -1,24 +1,24 @@
 ---
-title: Exemplo de código para exibir membros de um grupo
+title: Código de exemplo para exibir membros de um grupo
 description: Este tópico inclui exemplos de código que exibem membros de um grupo.
 ms.assetid: 0c066bf2-65ab-47fd-bf1e-0b3192d3b4c4
 ms.tgt_platform: multiple
 keywords:
-- Exemplos de Active Directory Active Directory, exibindo membros de um grupo
+- Exemplos do Active Directory do Active Directory, exibindo membros de um grupo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ef78c23c4a32b8a8ed36c98912f8cac24d5f375
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: c0eb492b50a42cb400413d4cb1779c95e7da9d33fe828ee72be7d3b068f37f76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104007312"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118693955"
 ---
-# <a name="example-code-for-displaying-members-of-a-group"></a>Exemplo de código para exibir membros de um grupo
+# <a name="example-code-for-displaying-members-of-a-group"></a>Código de exemplo para exibir membros de um grupo
 
 Este tópico inclui exemplos de código que exibem membros de um grupo.
 
-O exemplo de código C++ a seguir usa as classes [**IADs**](/windows/desktop/api/iads/nn-iads-iadsgroup) e [**IADsMembers**](/windows/desktop/api/iads/nn-iads-iadsmembers) para exibir os membros de um grupo.
+O exemplo de código C++ a seguir usa as [**classes IADsGroup**](/windows/desktop/api/iads/nn-iads-iadsgroup) e [**IADsMembers**](/windows/desktop/api/iads/nn-iads-iadsmembers) para exibir os membros de um grupo.
 
 
 ```C++
@@ -134,7 +134,7 @@ HRESULT PrintGroupObjectMembers(IADsGroup * pADsGroup)
 
 
 
-O exemplo de código a seguir Visual Basic usa a classe [**IADs**](/windows/desktop/api/iads/nn-iads-iads) para exibir os membros do grupo.
+O exemplo Visual Basic código a seguir usa a [**classe IADs**](/windows/desktop/api/iads/nn-iads-iads) para exibir os membros do grupo.
 
 
 ```VB
@@ -167,6 +167,6 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 

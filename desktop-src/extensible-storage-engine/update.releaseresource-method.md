@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método Update. ReleaseResource'
-title: Método Update. ReleaseResource
+description: 'Saiba mais sobre: Método Update.ReleaseResource'
+title: Método Update.ReleaseResource
 TOCTitle: 'ReleaseResource method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Update.ReleaseResource
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.update.releaseresource(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 72a17022ff91f278b6a5ac4f84fc7e2d70bb04bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a188b60aeba16aab1d5e4a07c27b42ca57e2fc4eadde5b56333900102d383db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105761196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119471426"
 ---
-# <a name="updatereleaseresource-method"></a>Método Update. ReleaseResource
+# <a name="updatereleaseresource-method"></a>Método Update.ReleaseResource
 
-Chamado quando a transação está sendo descartada enquanto ativa. Isso deve reverter a transação.
+Chamado quando a transação está sendo descartada enquanto está ativa. Isso deve reverter a transação.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,8 +56,8 @@ protected override void ReleaseResource()
 
 #### <a name="reference"></a>Referência
 
-[Atualizar classe](./update-class.md)
+[Classe update](./update-class.md)
 
-[Atualizar Membros](./update-members.md)
+[Atualizar membros](./update-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -3,7 +3,7 @@ title: Métodos ID2D1RenderTarget CreateCompatibleRenderTarget (D2d1. h)
 description: Cria um novo destino de renderização de bitmap para uso durante o desenho de fora da tela intermediário que é compatível com o destino de renderização atual.
 ms.assetid: 4a799a7c-0d2f-460f-99f9-24c6cf7c4537
 keywords:
-- Métodos CreateCompatibleRenderTarget Direct2D
+- Direct2D métodos de CreateCompatibleRenderTarget
 topic_type:
 - apiref
 api_location:
@@ -12,12 +12,12 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 0f0de8478d2ab3ee2e7142bd0e197053dc58ac2a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9015586109ff5015743874d18b604de919a9464a655383cf4d47aabb7b7acf35
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119432776"
 ---
 # <a name="id2d1rendertargetcreatecompatiblerendertarget-methods"></a>Métodos ID2D1RenderTarget:: CreateCompatibleRenderTarget
 

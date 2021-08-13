@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4d5394b6385246f296a472ce51f2727e2738845
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 22e7e7760eacc22f7ea47fa2e6fa2d9d9dab02d1499236dd02985d6f818d54f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104555580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118613296"
 ---
 # <a name="gltexgenfv-function"></a>função glTexGenfv
 
@@ -77,7 +77,7 @@ Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**
 
 
 
-| Nome                                                                                                  | Significado                                                                                                                                                |
+| Name                                                                                                  | Significado                                                                                                                                                |
 |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | *coord* ou *pname* não era um valor definido aceito ou *pname* o \_ \_ modo de geração de textura do GL \_ e *params* não era um valor definido aceito.<br/> |
 | <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd**](glend.md). <br/>                 |

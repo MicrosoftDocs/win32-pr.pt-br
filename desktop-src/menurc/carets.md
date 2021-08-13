@@ -10,12 +10,12 @@ keywords:
 - bitmaps piscando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50cb99dfc324aa039924fa26683ab0a7674706ea
-ms.sourcegitcommit: 37f276b5d887a3aad04b1ba86e390dea9d87e591
+ms.openlocfilehash: 4ed77a9d7fe315f5cef1be501c6392cce5fcfc3e79c5994f197a9fe6e254d8f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "104370804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118734847"
 ---
 # <a name="carets"></a>Interpolação
 
@@ -31,7 +31,7 @@ Os aplicativos podem criar um cursor, alterar o tempo de intermitência e exibir
 
 
 
-| Nome                                   | Descrição                                                               |
+| Name                                   | Descrição                                                               |
 |----------------------------------------|---------------------------------------------------------------------------|
 | [Sobre os Cursors](about-carets.md)       | Discute os acentos.<br/>                                              |
 | [Usando os Cursors](using-carets.md)       | Exemplos de código que mostram como executar tarefas relacionadas a Cursors.<br/> |
@@ -45,7 +45,7 @@ Os aplicativos podem criar um cursor, alterar o tempo de intermitência e exibir
 
 
 
-| Nome                                           | Descrição                                                                                                                                                                                                                                                   |
+| Name                                           | Descrição                                                                                                                                                                                                                                                   |
 |------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Não importa**](/windows/desktop/api/Winuser/nf-winuser-createcaret)             | Cria uma nova forma para o cursor do sistema e atribui a propriedade do cursor à janela especificada. A forma do cursor pode ser uma linha, um bloco ou um bitmap. <br/>                                                                                         |
 | [**DestroyCaret**](/windows/desktop/api/Winuser/nf-winuser-destroycaret)           | Destrói a forma atual do cursor, libera o cursor da janela e remove o cursor da tela. <br/>                                                                                                                                       |

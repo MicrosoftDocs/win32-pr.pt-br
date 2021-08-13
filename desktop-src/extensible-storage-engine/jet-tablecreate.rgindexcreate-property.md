@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_TABLECREATE. rgindexcreate'
-title: Propriedade JET_TABLECREATE. rgindexcreate
+description: 'Saiba mais sobre: JET_TABLECREATE.rgindexcreate property'
+title: JET_TABLECREATE.rgindexcreate propriedade
 TOCTitle: 'rgindexcreate property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_TABLECREATE.rgindexcreate
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_tablecreate.rgindexcreate(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 305db4e84c8ac08396217c8278042ab40a846952
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5fc843fca9bc807bc104cc277f1679925b947fd90a55ef88d9093a2c40c1959c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105752785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119472786"
 ---
-# <a name="jet_tablecreatergindexcreate-property"></a>Propriedade JET_TABLECREATE. rgindexcreate
+# <a name="jet_tablecreatergindexcreate-property"></a>JET_TABLECREATE.rgindexcreate propriedade
 
-Obtém ou define uma matriz de índices a serem criados, do tipo [JET_INDEXCREATE](./jet-indexcreate-class.md).
+Obtém ou define uma matriz de índices a criar, do tipo [JET_INDEXCREATE](./jet-indexcreate-class.md).
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public JET_INDEXCREATE[] rgindexcreate { get; set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Escreva \[\]  
+Tipo: \[\]  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_TABLECREATE](./jet-tablecreate-class.md)
+[JET_TABLECREATE classe](./jet-tablecreate-class.md)
 
-[Membros do JET_TABLECREATE](./jet-tablecreate-members.md)
+[JET_TABLECREATE membros](./jet-tablecreate-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

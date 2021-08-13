@@ -1,9 +1,9 @@
 ---
-title: Mensagem de EM_SETHYPHENATEINFO (RichEdit. h)
-description: Define a maneira como um controle de edição rico faz a hifenização.
+title: EM_SETHYPHENATEINFO mensagem (Richedit.h)
+description: Define a maneira como um controle de edição rico faz hifenização.
 ms.assetid: 67126cb8-ab50-49a9-b32f-2245debf2fe3
 keywords:
-- Controles de EM_SETHYPHENATEINFO de mensagens do Windows
+- EM_SETHYPHENATEINFO controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b8369d463ae03e9410347ab58a50346625e3de47
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5551aace3ab054c1c6fa322242ae06386ff19f5a44775bd6dcc6887d19c65c62
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119437556"
 ---
-# <a name="em_sethyphenateinfo-message"></a>\_Mensagem em SETHYPHENATEINFO
+# <a name="em_sethyphenateinfo-message"></a>Mensagem EM \_ DOUGYPHENATEINFO
 
-Define a maneira como um controle de edição rico faz a hifenização.
+Define a maneira como um controle de edição rico faz hifenização.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,7 +32,7 @@ Define a maneira como um controle de edição rico faz a hifenização.
 *wParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**HYPHENATEINFO**](/windows/win32/api/richedit/ns-richedit-hyphenateinfo) .
+Ponteiro para uma [**estrutura HYPHENATEINFO.**](/windows/win32/api/richedit/ns-richedit-hyphenateinfo)
 
 </dd> <dt>
 
@@ -46,7 +46,7 @@ Não usado, deve ser zero.
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> Para habilitar a hifenização, o cliente deve chamar em [**\_ settipografiaoptions**](em-settypographyoptions.md), especificando para \_ ADVANCEDTYPOGRAPHY.
+> Para habilitar a hifenização, o cliente deve chamar [**EM \_ SETTYPOGRAPHYOPTIONS**](em-settypographyoptions.md), especificando TO \_ ADVANCEDTYPOGRAPHY.
 
  
 
@@ -56,9 +56,9 @@ Não usado, deve ser zero.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP com SP1\]<br/>                                  |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos da área de trabalho SP1\]<br/>                                  |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| parâmetro<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -66,7 +66,7 @@ Não usado, deve ser zero.
 
 <dl> <dt>
 
-[**em \_ GETHYPHENATEINFO**](em-gethyphenateinfo.md)
+[**EM \_ GETHYPHENATEINFO**](em-gethyphenateinfo.md)
 </dt> </dl>
 
  

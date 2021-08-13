@@ -1,9 +1,9 @@
 ---
-title: Mensagem de RB_SETPALETTE (commctrl. h)
-description: Define a paleta atual do controle rebar.
+title: RB_SETPALETTE mensagem (Commctrl.h)
+description: Define a paleta atual do controle de barra de rebar.
 ms.assetid: 85f0726a-21fd-41b3-aa52-6a0a0c1947fa
 keywords:
-- Controles de RB_SETPALETTE de mensagens do Windows
+- RB_SETPALETTE controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7ee47985c05bcd8a857620e7fe501bddf53bdec
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 85cd2968fa5fa74915e37f40f30dd47751e2316e8d91d0f51f9d3c7145b893fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119434936"
 ---
-# <a name="rb_setpalette-message"></a>\_Mensagem de SETpalette de RB
+# <a name="rb_setpalette-message"></a>Mensagem RB \_ SETPALETTE
 
-Define a paleta atual do controle rebar.
+Define a paleta atual do controle de barra de rebar.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,17 +35,17 @@ Define a paleta atual do controle rebar.
 *lParam* 
 </dt> <dd>
 
-Um **HPALETTE** que especifica a nova paleta que será usada pelo controle rebar.
+Um **HPALETTE** que especifica a nova paleta que o controle de barra de rebar usará.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um **HPALETTE** que especifica a paleta anterior do controle rebar.
+Retorna um **HPALETTE** que especifica a paleta anterior do controle de barras.
 
 ## <a name="remarks"></a>Comentários
 
-É responsabilidade do aplicativo enviar essa mensagem para excluir o **HPALETTE** passado nesta mensagem (consulte [**DeleteId**](/windows/desktop/api/wingdi/nf-wingdi-deleteobject)). O controle rebar não excluirá um conjunto de **HPALETTE** com essa mensagem.
+É responsabilidade do aplicativo enviar essa mensagem para excluir o **HPALETTE** passado nesta mensagem (consulte [**DeleteObject**](/windows/desktop/api/wingdi/nf-wingdi-deleteobject)). O controle de barra de rebar não excluirá um **conjunto HPALETTE** com esta mensagem.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Retorna um **HPALETTE** que especifica a paleta anterior do controle rebar.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| parâmetro<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Retorna um **HPALETTE** que especifica a paleta anterior do controle rebar.
 
 <dl> <dt>
 
-[**GetPalette RB \_**](rb-getpalette.md)
+[**RB \_ GETPALETTE**](rb-getpalette.md)
 </dt> </dl>
 
  

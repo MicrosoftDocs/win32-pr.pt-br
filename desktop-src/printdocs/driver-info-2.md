@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: a88caf5aa10828b81dccefbe8118b3a57aebce97
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dcb65f066286b5f5cd2fec935fb2223c25cf87fcc64d17de274b9b182a372440
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105787616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118732854"
 ---
 # <a name="driver_info_2-structure"></a>\_Estrutura informações do driver \_ 2
 
@@ -63,7 +63,7 @@ Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nom
 **pEnvironment**
 </dt> <dd>
 
-Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o ambiente para o qual o driver foi escrito (por exemplo, Windows x86, Windows IA64 e Windows x64).
+um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o ambiente para o qual o driver foi gravado (por exemplo, Windows x86, Windows IA64 e Windows x64).
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica um no
 **pConfigFile**
 </dt> <dd>
 
-Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica um nome de arquivo ou um caminho completo e um nome de arquivo para o Configuration. dll do driver de dispositivo (por exemplo, "c: \\ drivers \\Pscrptui.dll").
+Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica um nome de arquivo ou um caminho completo e um nome de arquivo para a configuração do driver de dispositivo .dll (por exemplo, "c: \\ drivers \\Pscrptui.dll").
 
 </dd> </dl>
 

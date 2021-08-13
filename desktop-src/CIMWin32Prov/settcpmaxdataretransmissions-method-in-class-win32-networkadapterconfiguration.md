@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 59998888eb2aed170b626fb4cb61780cbe0cb6e4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 07484f07ab5c4a53da5b044f409a59c4ac37f07717875cd80f44eb625bdf2041
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119439266"
 ---
 # <a name="settcpmaxdataretransmissions-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetTcpMaxDataRetransmissions da classe Win32 \_ NetworkAdapterConfiguration
 
@@ -49,7 +49,7 @@ Número de vezes que o TCP retransmite um segmento de dados individual antes de 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (uma) para uma conclusão bem-sucedida quando uma reinicialização é necessária e um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) or [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -321,7 +321,7 @@ Parâmetro fora dos limites.
 
 91
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -379,7 +379,7 @@ Interface não configurável.
 
 </dd> <dt>
 
-**Nem todas as concessões DHCP puderam ser liberadas/renovadas**
+**Nem todas as concessões DHCP podem ser liberadas/renovadas**
 </dt> <dd>
 
 98
@@ -393,7 +393,7 @@ Nem todas as concessões DHCP podem ser liberadas ou renovadas.
 
 100
 
-DHCP não habilitado no adaptador.
+O DHCP não está habilitado no adaptador.
 
 </dd> <dt>
 
@@ -406,11 +406,11 @@ DHCP não habilitado no adaptador.
 
 ## <a name="remarks"></a>Comentários
 
-O tempo limite de retransmissão é duplicado com cada retransmissão sucessiva em uma conexão.
+O tempo de retransmissão dobra com cada retransmissão sucessiva em uma conexão.
 
 ## <a name="examples"></a>Exemplos
 
-A amostra [Modificar o máximo de retransmissões de dados TCP permitidas](https://Gallery.TechNet.Microsoft.Com/8a581692-7950-412e-bd28-74f223b27827) configura o número de vezes que o TCP tentará retransmitir um segmento de dados individual antes de abandonar o esforço.
+A amostra Modificar o máximo permitido de retransmissões de dados [TCP](https://Gallery.TechNet.Microsoft.Com/8a581692-7950-412e-bd28-74f223b27827) VBScript configura o número de vezes que o TCP tentará retransmitir um segmento de dados individual antes de abandonar o esforço.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -420,8 +420,8 @@ A amostra [Modificar o máximo de retransmissões de dados TCP permitidas](https
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista, Windows Vista<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008, Windows Server 2008<br/>                                     |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -433,13 +433,13 @@ A amostra [Modificar o máximo de retransmissões de dados TCP permitidas](https
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tarefas do WMI: rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tarefas WMI: Rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Tarefas do WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Tarefas WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Suporte a IPv6 e IPv4 no WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

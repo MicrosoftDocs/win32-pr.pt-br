@@ -4,12 +4,12 @@ ms.assetid: 1eae5962-b4e0-4947-a6d2-63713a68198c
 title: Formulário de papel examinado da análise de tinta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e94d366c77e19bd5c32d3d1e4efa286cb3b089ae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4069efd5ba8763e00e9b3170ffb0a39a4a70c4d66d07d3c8bf08bc3688f57ed0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118718642"
 ---
 # <a name="ink-analysis-scanned-paper-form"></a>Formulário de papel examinado da análise de tinta
 
@@ -17,9 +17,9 @@ Este exemplo mostra como usar a análise de tinta para criar um aplicativo de pr
 
 ## <a name="features-demonstrated"></a>Recursos demonstrados
 
-Este aplicativo de exemplo demonstra os seguintes recursos da API de análise de tinta e os controles de tinta de Windows Forms:
+este aplicativo de exemplo demonstra os seguintes recursos da API de análise de tinta e os controles de tinta de Windows Forms:
 
--   Carregando um formulário de papel digitalizado. O exemplo importa o formulário de uma imagem no formato. png.
+-   Carregando um formulário de papel digitalizado. O exemplo importa o formulário de uma imagem no formato .png.
 -   Coleta e renderização de tinta sobre o formulário digitalizado.
 -   Usando um objeto [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) para analisar manuscrito.
 -   Gerando objetos [AnalysisHintNode](/previous-versions/ms573018(v=vs.100)) para melhorar os resultados de manuscrito.
@@ -28,15 +28,15 @@ Este aplicativo de exemplo demonstra os seguintes recursos da API de análise de
 
 ## <a name="project-references"></a>Referências de Projeto
 
-O exemplo está disponível como um aplicativo Windows Forms ou Windows Presentation Foundation. A versão Windows Forms faz referência a:
+o exemplo está disponível como um aplicativo Windows Forms ou Windows Presentation Foundation. a versão Windows Forms faz referência a:
 
 -   Microsoft.Ink.dll
 -   Microsoft.Ink.Analysis.dll
 
-A versão Windows Presentation Foundation faz referência a IAWinFX.dll além das DLLs principais do Windows Presentation Foundation.
+a versão Windows Presentation Foundation faz referência a IAWinFX.dll além das dlls principais do Windows Presentation Foundation.
 
 > [!Note]  
-> A versão Windows Presentation Foundation deste exemplo (encontrada no diretório XAML) requer que as extensões de Windows Presentation Foundation para Microsoft Visual Studio 2005 estejam instaladas no sistema.
+> a versão Windows Presentation Foundation deste exemplo (encontrada no diretório XAML) requer que as extensões de Windows Presentation Foundation para Microsoft Visual Studio 2005 estejam instaladas no sistema.
 
  
 

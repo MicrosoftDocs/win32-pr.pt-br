@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: função JetCloseDatabase'
+description: 'Saiba mais sobre: Função JetCloseDatabase'
 title: Função JetCloseDatabase
 TOCTitle: JetCloseDatabase Function
 ms:assetid: e17a05dd-c30b-4e8f-8538-91a65e8052d2
@@ -18,21 +18,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9088e0ebc3b4778d6968c999afc238e49fb2f48f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 606a99610843b822635217042ee3293c53570d42d3a8c17baee0b5416d45ec54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119472436"
 ---
 # <a name="jetclosedatabase-function"></a>Função JetCloseDatabase
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetclosedatabase-function"></a>Função JetCloseDatabase
 
-A função **JetCloseDatabase** fecha um arquivo de banco de dados que foi aberto anteriormente com [JetOpenDatabase](./jetopendatabase-function.md).
+A **função JetCloseDatabase** fecha um arquivo de banco de dados que foi aberto anteriormente com [JetOpenDatabase.](./jetopendatabase-function.md)
 
 ```cpp
     JET_ERR JET_API JetCloseDatabase(
@@ -46,9 +46,9 @@ A função **JetCloseDatabase** fecha um arquivo de banco de dados que foi abert
 
 *sesid*
 
-O contexto de sessão de banco de dados que será usado para a chamada à API.
+O contexto de sessão do banco de dados que será usado para a chamada à API.
 
-*DBID*
+*Dbid*
 
 O banco de dados a ser fechado.
 
@@ -58,7 +58,7 @@ Reservado para uso futuro.
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o [JET_ERR](./jet-err.md) de dados com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros de ESE, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -78,7 +78,7 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidDatabaseId</p></td>
-<td><p>O parâmetro <em>DBID</em> não era um identificador de banco de dados válido.</p></td>
+<td><p>O <em>parâmetro dbid</em> não era um identificador de banco de dados válido.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errSuccess</p></td>
@@ -98,19 +98,19 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
+<td><p>Declarado em Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
+<td><p>Use ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>

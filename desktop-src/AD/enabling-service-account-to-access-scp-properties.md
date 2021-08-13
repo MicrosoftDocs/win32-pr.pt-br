@@ -7,12 +7,12 @@ keywords:
 - Habilitando a conta de serviço para acessar as propriedades do SCP AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b49adcd1b4747b1c13a64a5af54c6cc6a42e6afe
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 260b08d4a7255813e2811c02ebd0e597a518f153db84f35cdb978a44369e5e8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103823659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118695305"
 ---
 # <a name="enabling-service-account-to-access-scp-properties"></a>Habilitando a conta de serviço para acessar as propriedades do SCP
 
@@ -20,7 +20,7 @@ O exemplo de código a seguir define um par de ACEs (entradas de controle de ace
 
 Normalmente, um instalador de serviço definirá essas ACEs depois de criar o objeto SCP. Para obter mais informações e um exemplo de código que cria um SCP e chama essa função, consulte [como os clientes encontram e usam um ponto de conexão de serviço](how-clients-find-and-use-a-service-connection-point.md). Se o serviço for reconfigurado para ser executado em uma conta diferente, as ACEs deverão ser atualizadas. Para ser executado com êxito, este exemplo de código deve ser executado no contexto de segurança de um administrador de domínio.
 
-O primeiro parâmetro da função de exemplo especifica o nome da conta de usuário a ser concedida ao acesso. A função assume que o nome está no formato de ****\\*** nome de usuário do domínio* . Se nenhuma conta for especificada, a função assumirá que o serviço usa a conta LocalSystem. Isso significa que a função deve conceder acesso à conta de computador do servidor host no qual o serviço está em execução. Para fazer isso, o exemplo de código chama a função [**GetComputerObjectName**](/windows/desktop/api/secext/nf-secext-getcomputerobjectnamea) para obter o domínio e o nome de usuário do computador local.
+O primeiro parâmetro da função de exemplo especifica o nome da conta de usuário a ser concedida ao acesso. A função pressupõe que o nome esteja no formato * domínio * **\\** _nome de usuário_ . Se nenhuma conta for especificada, a função assumirá que o serviço usa a conta LocalSystem. Isso significa que a função deve conceder acesso à conta de computador do servidor host no qual o serviço está em execução. Para fazer isso, o exemplo de código chama a função [**GetComputerObjectName**](/windows/desktop/api/secext/nf-secext-getcomputerobjectnamea) para obter o domínio e o nome de usuário do computador local.
 
 O exemplo de código a seguir pode ser modificado para conceder ao serviço acesso completo ao objeto SCP, mas a prática recomendada é conceder apenas os direitos de acesso específicos que o serviço requer em tempo de execução. Nesse caso, a função concede acesso a duas propriedades.
 
@@ -33,7 +33,7 @@ O exemplo de código a seguir pode ser modificado para conceder ao serviço aces
 
 
 
- 
+ 
 
 Cada propriedade é identificada pelo **schemaIDGUID** da classe **attributeSchema** da propriedade. Cada propriedade no esquema tem seu próprio **schemaIDGUID** exclusivo. O exemplo de código a seguir usa cadeias de caracteres para especificar os GUIDs. As cadeias de caracteres GUID têm o seguinte formato em que cada "X" é substituído por um dígito hexadecimal: {XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}.
 
@@ -295,6 +295,6 @@ HRESULT AllowAccessToScpProperties(
 
 
 
- 
+ 
 
- 
+ 

@@ -4,12 +4,12 @@ ms.assetid: 0280d798-c76a-4de6-9b83-ce5c0fe98fdb
 title: System. PropList. FileOperationPrompt
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94a0f04d30e7ae68b191f3bb92493207443c8e75
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50efd360c54345916fec557d55382a2be29dbeddf902b68e040026f390efa3ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010932"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118722998"
 ---
 # <a name="systemproplistfileoperationprompt"></a>System. PropList. FileOperationPrompt
 

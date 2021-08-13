@@ -1,19 +1,19 @@
 ---
-description: Os reconhecedores criados para uso com o Windows Vista e o Windows XP Tablet PC Edition usam um conjunto de estruturas, sendo que cada uma delas é chamada de malha, para passar os resultados de reconhecimento para as bibliotecas da plataforma do Tablet PC.
+description: os reconhecedores criados para uso com o Windows Vista e o Windows XP Tablet PC Edition usam um conjunto de estruturas, cada uma delas chamada de malha, para passar os resultados de reconhecimento para as bibliotecas da plataforma do Tablet PC.
 ms.assetid: 628ca677-31eb-47d9-bcc6-d7777f8aaf7c
 title: Estrutura malha do reconhecedor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 46bbfe71674571ae0554509dfa8477569ef8b44d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc5610d60428bd3259672f43e45efa59c25f78b7ddc5909c363610eaf08520e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104569331"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118716006"
 ---
 # <a name="recognizer-lattice-structure"></a>Estrutura malha do reconhecedor
 
-Os reconhecedores criados para uso com o Windows Vista e o Windows XP Tablet PC Edition usam um conjunto de estruturas, sendo que cada uma delas é chamada de malha, para passar os resultados de reconhecimento para as bibliotecas da plataforma do Tablet PC. Em seguida, a plataforma do Tablet PC copia as informações nessas estruturas para o objeto [**IInkRecognitionResult**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognitionresult) , a coleção [**IInkRecognitionAlternates**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognitionalternates) e o objeto [**IInkRecognitionAlternate**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognitionalternate) .
+os reconhecedores criados para uso com o Windows Vista e o Windows XP Tablet PC Edition usam um conjunto de estruturas, cada uma delas chamada de malha, para passar os resultados de reconhecimento para as bibliotecas da plataforma do Tablet PC. Em seguida, a plataforma do Tablet PC copia as informações nessas estruturas para o objeto [**IInkRecognitionResult**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognitionresult) , a coleção [**IInkRecognitionAlternates**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognitionalternates) e o objeto [**IInkRecognitionAlternate**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognitionalternate) .
 
 Um ponteiro para o malha deve ser retornado pelo reconhecedor quando a plataforma chama a função [**GetLatticePtr**](/windows/desktop/api/recapis/nf-recapis-getlatticeptr) no identificador [HRECOCONTEXT](hrecocontext-handle.md) .
 

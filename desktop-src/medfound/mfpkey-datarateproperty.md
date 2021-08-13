@@ -1,19 +1,19 @@
 ---
-description: Propriedade MFPKEY_DATARATE-essa propriedade é obsoleta e não deve ser definida.
+description: MFPKEY_DATARATE propriedade - essa propriedade está obsoleta e não deve ser definida.
 ms.assetid: 7f48fa4c-6abd-4c2f-a334-2167660a5a7c
-title: Propriedade MFPKEY_DATARATE (Wmcodecdsp. h)
+title: MFPKEY_DATARATE propriedade (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 574c36202c740ebed4fb3889e172bf01b107f59a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3843bbc9d046c9b8d7309d0b81a7e4063f8e86deee89d156b0b9edfcd2b2bd62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118738389"
 ---
-# <a name="mfpkey_datarate-property"></a>\_Propriedade DATArate do MFPKEY
+# <a name="mfpkey_datarate-property"></a>Propriedade \_ DATARATE MFPKEY
 
-Esta propriedade é obsoleta e não deve ser definida.
+Essa propriedade está obsoleta e não deve ser definida.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -21,15 +21,15 @@ Esta propriedade é obsoleta e não deve ser definida.
 
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> </dl>
 
  

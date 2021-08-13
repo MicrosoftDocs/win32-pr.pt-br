@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 92de5a008f8a5759865b163f53bc518d9484b60f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0c7693a68c93c38a668bf637cdb428782d9bb57cfdbf1c4f048d710c9bbe5001
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119454176"
 ---
 # <a name="esentversionsupportswindows8features-property"></a>Propriedade EsentVersion. SupportsWindows8Features
 
-Obtém um valor que indica se a versão atual do ESENT oferece suporte a recursos disponíveis na versão do Windows 8 do ESENT.
+obtém um valor que indica se a versão atual do esent oferece suporte a recursos disponíveis na versão Windows 8 do esent.
 
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` vb
 'Declaration

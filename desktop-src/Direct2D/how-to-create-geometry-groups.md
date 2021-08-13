@@ -10,22 +10,22 @@ keywords:
 - Direct2D, geometrias de caminho
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ceb4a0e63a3274473153e1871a8a085bb04d5146
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5540d96b9befddaa8eb6eef7fcc61e3e6c7665a7319de1ea123c9ce94281f101
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119259246"
 ---
 # <a name="how-to-create-geometry-groups"></a>Como criar grupos de geometria
 
 Este tópico descreve como criar grupos de geometria.
 
-Para criar um grupo de geometria, chame o método [**ID2D1Factory:: creategeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-creategeometrygroup) e especifique uma matriz de geometrias e um modo de preenchimento.
+Para criar um grupo de geometrias, chame o método [**ID2D1Factory::CreateGeometryGroup**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-creategeometrygroup) e especifique uma matriz de geometrias e um modo de preenchimento.
 
-Ao combinar geometrias em um grupo de geometria, certifique-se de que as geometrias são orientadas da mesma forma. Se você não tiver certeza da orientação das geometrias, chame [**ID2D1Geometry:: outline**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-outline(constd2d1_matrix_3x2_f__float_id2d1simplifiedgeometrysink)) em cada uma delas individualmente e, em seguida, insira as geometrias resultantes no grupo Geometry.
+Ao combinar geometrias em um grupo de geometrias, verifique se as geometrias são orientadas da mesma forma. Se você não tiver certeza da orientação das geometrias, chame [**ID2D1Geometry::Outline**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-outline(constd2d1_matrix_3x2_f__float_id2d1simplifiedgeometrysink)) em cada uma delas individualmente e insira as geometrias resultantes no grupo de geometria.
 
-O exemplo de código a seguir mostra a criação de quatro círculos concêntricos: o primeiro círculo tem um raio de 25, o segundo 50, o terceiro 75 e o quarto 100. O código também mostra a instanciação de uma matriz de geometrias, bem como as duas chamadas para [**creategeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-creategeometrygroup).
+O exemplo de código a seguir mostra a criação de quatro círculos concêntricos: o primeiro círculo tem um raio de 25, o segundo 50, o terceiro 75 e o quarto 100. O código também mostra a instanência de uma matriz de geometrias, bem como as duas chamadas para [**CreateGeometryGroup**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-creategeometrygroup).
 
 
 ```C++
@@ -123,7 +123,7 @@ HRESULT DemoApp::CreateGeometryResources()
 
 ## <a name="drawing-and-filling-of-geometry-groups"></a>Desenho e preenchimento de grupos de geometria
 
-Para desenhar e preencher um grupo de geometria, use os métodos [**ID2D1RenderTarget:: FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) e [**ID2D1RenderTarget::D rawgeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry) . O exemplo de código a seguir mostra como desenhar e preencher um grupo de geometria.
+Para desenhar e preencher um grupo de geometria, use os métodos [**ID2D1RenderTarget::FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) e [**ID2D1RenderTarget::D rawGeometry.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry) O exemplo de código a seguir mostra como desenhar e preencher um grupo de geometrias.
 
 
 ```C++
@@ -204,6 +204,6 @@ O código produz a saída mostrada na ilustração a seguir.
 
 ![ilustração de dois conjuntos de quatro círculos concêntricos, um com o segundo e o quarto anéis preenchidos e outro com todos os anéis preenchidos](images/create-geometry-group.png)
 
- 
+ 
 
- 
+ 

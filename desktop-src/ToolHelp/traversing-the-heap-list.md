@@ -1,17 +1,17 @@
 ---
-title: Atravessando a lista de heaps
+title: Percorrendo a lista de heaps
 description: Exemplos que mostram como obter uma lista de heaps para o processo atual.
 ms.assetid: cfa1d2a4-fec0-4089-9351-e0a26f9ecfe3
 ms.topic: article
 ms.date: 03/23/2021
-ms.openlocfilehash: 5cc555f9a94166fa181309985d8a49c686baf06c
-ms.sourcegitcommit: 4af3e9ec3142ba499d20ed8b174c2b219c5eacd2
+ms.openlocfilehash: 868526c76ee85095f5b52cc9238e9e16015bfb3a81c9888da148f1d5ecc644aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105994496"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119419246"
 ---
-# <a name="traversing-the-heap-list"></a>Atravessando a lista de heaps
+# <a name="traversing-the-heap-list"></a>Percorrendo a lista de heaps
 
 O exemplo a seguir obtém uma lista de heaps para o processo atual. Ele tira um instantâneo dos heaps usando a função [**CreateToolhelp32Snapshot**](/windows/desktop/api/TlHelp32/nf-tlhelp32-createtoolhelp32snapshot) e, em seguida, percorre a lista usando as funções [**Heap32ListFirst**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32listfirst) e [**Heap32ListNext**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32listnext) . Para cada heap, ele usa as funções [**Heap32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32first) e [**Heap32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next) para percorrer os blocos de heap.
 

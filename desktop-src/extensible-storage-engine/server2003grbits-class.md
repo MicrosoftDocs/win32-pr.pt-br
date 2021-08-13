@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: classe Server2003Grbits'
-title: Classe Server2003Grbits (Microsoft. ISAM. ESENT. Interop. Server2003)
+description: 'Saiba mais sobre: Classe Server2003Grbits'
+title: Classe Server2003Grbits (Microsoft.Isam.Esent.Interop.Server2003)
 TOCTitle: Server2003Grbits class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Server2003.Server2003Grbits
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.server2003.server2003grbits(v=EXCHG.10)
@@ -24,24 +24,24 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: be4722a95546a52b3cf845b7e32a312b66c62fe0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09ea51356b684f28109a164670ba7271dcacfc554306167ed30b2c1413592189
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119471676"
 ---
 # <a name="server2003grbits-class"></a>Classe Server2003Grbits
 
-Grbits que foram adicionados à versão 2003 do Windows Server do ESENT.
+Grbits que foram adicionados à versão Windows Server 2003 do ESENT.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. ESENT. Interop. Server2003. Server2003Grbits  
+  Microsoft.Isam.Esent.Interop.Server2003.Server2003Grbits  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Server2003](./microsoft.isam.esent.interop.server2003-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Server2003](./microsoft.isam.esent.interop.server2003-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -64,6 +64,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do Server2003Grbits](./server2003grbits-members.md)
+[Membros de Server2003Grbits](./server2003grbits-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. Server2003](./microsoft.isam.esent.interop.server2003-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Server2003](./microsoft.isam.esent.interop.server2003-namespace.md)

@@ -23,12 +23,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 84704e59ed43466c47435f4804cb4dedc9c3a92d
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: ab336b147557722f1bec72bfe662b12599a64ee1622b31bdad6a92a05af6d92e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104366697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119483006"
 ---
 # <a name="eaphost-constants"></a>Constantes do EAPHost
 
@@ -198,8 +198,8 @@ Windows Vista com SP1 ou posterior: indica que o campo de entrada é somente lei
 
 | Função | Versão mínima do sistema operacional com suporte |
 |------|------------------------------|
-| Cliente<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/> |
-| Servidor<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/> |
+| Cliente<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/> |
+| Servidor<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/> |
 
 
 

@@ -3,7 +3,7 @@ title: MCI_SETTIMECODE comando (mmsystem. h)
 description: O \_ comando MCI SetCode habilita ou desabilita a gravação do código de paficação de um videocassete. Os dispositivos VCR reconhecem este comando.
 ms.assetid: b014fbe0-de97-4540-a5fe-b22d157361f7
 keywords:
-- Multimídia do Windows de comando MCI_SETTIMECODE
+- MCI_SETTIMECODE comando Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7df0727f4386bad46b3fde7f2d816ce951850b8d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4f75a1722b1e1e26ece0bc7f3eac705bdd290f770a659cfebe46b603859a3918
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105759365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119430456"
 ---
 # <a name="mci_settimecode-command"></a>Comando do MCI \_ SETcode
 

@@ -4,16 +4,16 @@ description: A interface IVMVirtualMachine expõe os métodos a seguir.
 ms.assetid: 7C80371E-22CC-41BC-A1E5-B550DAD5B8D9
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bc83c4403e070d2d4c144a1028451e39ed12016
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 77a8bc47de58da59813dbf20cc8af5732614ece0483fbd00f466d9c0b159ab95
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119471536"
 ---
 # <a name="ivmvirtualmachine-methods"></a>Métodos IVMVirtualMachine
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O Virtual PC não está mais disponível para uso a partir de Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 A interface [**IVMVirtualMachine**](ivmvirtualmachine.md) expõe os métodos a seguir.
 
@@ -45,6 +45,6 @@ A interface [**IVMVirtualMachine**](ivmvirtualmachine.md) expõe os métodos a s
 -   [**Método Startup2**](ivmvirtualmachine-startup2.md)
 -   [**Método de desativação**](ivmvirtualmachine-turnoff.md)
 
- 
+ 
 
- 
+ 

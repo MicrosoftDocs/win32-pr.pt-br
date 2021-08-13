@@ -3,30 +3,30 @@ title: Referência de MIDI
 description: Referência de MIDI
 ms.assetid: 6229a4a7-be42-4e2a-af9d-695c4759a4ef
 keywords:
-- Multimídia do Windows, MIDI (interface digital de instrumentos musicais)
-- multimídia, MIDI (interface digital de instrumentos musicais)
-- áudio multimídia, MIDI (interface digital de instrumentos musicais)
-- áudio, MIDI (interface digital de instrumento musical)
-- Multimídia do Windows, referência de MIDI
-- referência de multimídia, MIDI
-- áudio de multimídia, referência de MIDI
-- áudio, referência de MIDI
-- MIDI (interface digital de instrumento musical), referência
-- MIDI (interface digital de instrumentos musicais), referência
+- Windows multimídia, MIDI (Interface Digital do Instrument Instrument)
+- multimídia, MIDI (Interface Digital do Instrument Instrument)
+- audio multimídia, MIDI (Interface Digital do Instrument Instrument)
+- audio,MIDI (Instrument Digital Interface)
+- Windows multimídia, referência MIDI
+- multimídia, referência MIDI
+- áudio multimídia, referência MIDI
+- audio, referência MIDI
+- MIDI (Interface Digital do Instrument Instrument), referência
+- MIDI (Interface Digital do Instrument Instrument), referência
 - referência para MIDI, sobre
 - Referência de MIDI, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c21542867faf1e09d68dc4fc81a50d25f56b5c5e
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 8da65f193bbdc6b67d317fac7546d4f5d7826d89307d1800c565febf0c7a8b6d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104365960"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119428346"
 ---
 # <a name="midi-reference"></a>Referência de MIDI
 
-Esta seção descreve as funções, macros, mensagens e estruturas associadas à MIDI (interface digital de instrumento musical). Esses elementos são agrupados da seguinte maneira.
+Esta seção descreve as funções, macros, mensagens e estruturas associadas ao MIDI (Instrument Digital Interface Digital) do Instrument Instrument. Esses elementos são agrupados da seguinte forma.
 
 ## <a name="allocating-and-managing-buffers"></a>Alocando e gerenciando buffers
 
@@ -54,16 +54,16 @@ Esta seção descreve as funções, macros, mensagens e estruturas associadas à
 -   [**midiOutGetNumDevs**](/windows/win32/api/mmeapi/nf-mmeapi-midioutgetnumdevs)
 -   [**MIDISTRMBUFFVER**](/windows/win32/api/mmeapi/ns-mmeapi-midistrmbuffver)
 
-## <a name="error-processing"></a>Processamento de erro
+## <a name="error-processing"></a>Processamento de erros
 
 -   [**midiInGetErrorText**](/windows/win32/api/mmeapi/nf-mmeapi-midiingeterrortext)
 -   [**midiOutGetErrorText**](/windows/win32/api/mmeapi/nf-mmeapi-midioutgeterrortext)
--   [**erro do MIM \_**](mim-error.md)
--   [**\_LONGERROR mim**](mim-longerror.md)
--   [**\_erro do mim mm \_**](mm-mim-error.md)
--   [**\_LONGERROR do mim mm \_**](mm-mim-longerror.md)
+-   [**\_MIM Erro**](mim-error.md)
+-   [**\_MIM LONGERROR**](mim-longerror.md)
+-   [**ERRO \_ MIM \_ MM**](mm-mim-error.md)
+-   [**MM \_ MIM \_ LONGERROR**](mm-mim-longerror.md)
 
-## <a name="managing-midi-streams"></a>Gerenciando fluxos de MIDI
+## <a name="managing-midi-streams"></a>Gerenciando o MIDI Fluxos
 
 -   [**midiStreamClose**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamclose)
 -   [**midiStreamOpen**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamopen)
@@ -80,28 +80,28 @@ Esta seção descreve as funções, macros, mensagens e estruturas associadas à
 -   [**midiInOpen**](/windows/win32/api/mmeapi/nf-mmeapi-midiinopen)
 -   [**midiOutClose**](/windows/win32/api/mmeapi/nf-mmeapi-midioutclose)
 -   [**midiOutOpen**](/windows/win32/api/mmeapi/nf-mmeapi-midioutopen)
--   [**próximo a MIM \_**](mim-close.md)
--   [**MIM \_ aberto**](mim-open.md)
--   [**Eu \_ fechar do mim \_**](mm-mim-close.md)
--   [**MIM de MM \_ \_ aberto**](mm-mim-open.md)
--   [**\_fechamento do MOM mm \_**](mm-mom-close.md)
--   [**\_Mom mm \_ aberto**](mm-mom-open.md)
--   [**fechamento do MOM \_**](mom-close.md)
--   [**MOM \_ aberto**](mom-open.md)
+-   [**\_MIM Perto**](mim-close.md)
+-   [**\_MIM Aberto**](mim-open.md)
+-   [**MM \_ MIM \_ CLOSE**](mm-mim-close.md)
+-   [**MM \_ MIM \_ OPEN**](mm-mim-open.md)
+-   [**MM \_ MOM \_ CLOSE**](mm-mom-close.md)
+-   [**MM \_ MOM \_ OPEN**](mm-mom-open.md)
+-   [**MOM \_ CLOSE**](mom-close.md)
+-   [**MOM \_ OPEN**](mom-open.md)
 
 ## <a name="output-devices"></a>Dispositivos de saída
 
--   [Keyarray](keyarray.md)
+-   [KEYARRAY](keyarray.md)
 -   [**midiOutCacheDrumPatches**](/windows/win32/api/mmeapi/nf-mmeapi-midioutcachedrumpatches)
 -   [**midiOutCachePatches**](/windows/win32/api/mmeapi/nf-mmeapi-midioutcachepatches)
 -   [**midiOutGetVolume**](/windows/win32/api/mmeapi/nf-mmeapi-midioutgetvolume)
 -   [**midiOutSetVolume**](/windows/win32/api/mmeapi/nf-mmeapi-midioutsetvolume)
 -   [PATCHARRAY](patcharray.md)
 
-## <a name="playing-a-message-or-messages"></a>Reproduzir uma mensagem ou mensagens
+## <a name="playing-a-message-or-messages"></a>Como tocar uma mensagem ou mensagens
 
 -   [**MEVT \_ EVENTPARM**](/windows/win32/api/mmeapi/nf-mmeapi-mevt_eventparm)
--   [**\_EVENTTYPE MEVT**](/windows/win32/api/mmeapi/nf-mmeapi-mevt_eventtype)
+-   [**MEVT \_ EVENTTYPE**](/windows/win32/api/mmeapi/nf-mmeapi-mevt_eventtype)
 -   [**MIDIEVENT**](/windows/win32/api/mmeapi/ns-mmeapi-midievent)
 -   [**midiOutLongMsg**](/windows/win32/api/mmeapi/nf-mmeapi-midioutlongmsg)
 -   [**midiOutReset**](/windows/win32/api/mmeapi/nf-mmeapi-midioutreset)
@@ -110,10 +110,10 @@ Esta seção descreve as funções, macros, mensagens e estruturas associadas à
 -   [**midiStreamPause**](/windows/win32/api/mmeapi/nf-mmeapi-midistreampause)
 -   [**midiStreamRestart**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamrestart)
 -   [**midiStreamStop**](/windows/win32/api/mmeapi/nf-mmeapi-midistreamstop)
--   [**\_Mom mm \_ concluído**](mm-mom-done.md)
--   [**MM \_ Mom \_ POSITIONCB**](mm-mom-positioncb.md)
--   [**MOM \_ concluído**](mom-done.md)
--   [**POSITIONCB do MOM \_**](mom-positioncb.md)
+-   [**MM \_ MOM \_ DONE**](mm-mom-done.md)
+-   [**MM \_ MOM \_ POSITIONCB**](mm-mom-positioncb.md)
+-   [**MOM \_ DONE**](mom-done.md)
+-   [**MOM \_ POSITIONCB**](mom-positioncb.md)
 
 ## <a name="recording"></a>Gravação
 
@@ -124,12 +124,12 @@ Esta seção descreve as funções, macros, mensagens e estruturas associadas à
 -   [**midiInStop**](/windows/win32/api/mmeapi/nf-mmeapi-midiinstop)
 -   [**MIDIPROPTEMPO**](/windows/win32/api/mmeapi/ns-mmeapi-midiproptempo)
 -   [**MIDIPROPTIMEDIV**](/windows/win32/api/mmeapi/ns-mmeapi-midiproptimediv)
--   [**dados do MIM \_**](mim-data.md)
--   [**\_LONGDATA mim**](mim-longdata.md)
--   [**\_MOREDATA mim**](mim-moredata.md)
--   [**\_dados do mim mm \_**](mm-mim-data.md)
--   [**\_MOREDATA do mim mm \_**](mm-mim-moredata.md)
--   [**\_LONGDATA do mim mm \_**](mm-mim-longdata.md)
+-   [**\_MIM Dados**](mim-data.md)
+-   [**\_MIM LONGDATA**](mim-longdata.md)
+-   [**\_MIM Moredata**](mim-moredata.md)
+-   [**MM \_ MIM \_ DADOS**](mm-mim-data.md)
+-   [**MM \_ MIM \_ MOREDATA**](mm-mim-moredata.md)
+-   [**MM \_ MIM \_ LONGDATA**](mm-mim-longdata.md)
 
 ## <a name="sending-messages-to-devices"></a>Enviando mensagens para dispositivos
 
@@ -143,6 +143,6 @@ Esta seção descreve as funções, macros, mensagens e estruturas associadas à
 [MIDI (interface digital de instrumento musical)](musical-instrument-digital-interface--midi.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

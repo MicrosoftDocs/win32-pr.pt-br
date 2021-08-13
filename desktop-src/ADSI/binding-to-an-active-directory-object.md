@@ -7,16 +7,16 @@ keywords:
 - Ligando a um objeto Active Directory ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 59992dbc88c00be6306dec24523ec4e030d4a516
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: bc788ed9eb124e1da6c21848f02393d46608f00dd3a9e779788fa54429922400
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103823980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118429125"
 ---
 # <a name="binding-to-an-active-directory-object"></a>Associação a um objeto Active Directory
 
-A maneira mais comum de associar a um objeto de Active Directory é usar a função **GetObject** entre um cliente ADSI e um provedor ADSI. Essa também é a maneira mais fácil de mostrar como o componente de provedor recebe e serviços de solicitações. Tanto a função ADSI API [**ADsGetObject**](/windows/desktop/api/Adshlp/nf-adshlp-adsgetobject) quanto a função Visual Basic **GetObject** seguem as mesmas etapas para associação.
+A maneira mais comum de associar a um objeto de Active Directory é usar a função **GetObject** entre um cliente ADSI e um provedor ADSI. Essa também é a maneira mais fácil de mostrar como o componente de provedor recebe e serviços de solicitações. tanto a função ADSI API [**ADsGetObject**](/windows/desktop/api/Adshlp/nf-adshlp-adsgetobject) quanto a função Visual Basic **getobject** seguem as mesmas etapas para associação.
 
 Para este exemplo, suponha que o cliente ADSI é um aplicativo de visualizador ADSI que recebeu o ADsPath "Sample://Seattle/Redmond/Shelly" da interface do usuário (1). A figura a seguir detalha a sequência de eventos numerando as setas de fluxo.
 
@@ -44,6 +44,6 @@ Além disso, as solicitações de dados de objeto do cliente geralmente assumem 
 
 O componente de provedor de exemplo é projetado de forma que as chamadas reais para o sistema operacional sejam logicamente isoladas do componente do provedor, criando software portátil para mais de um sistema operacional (RegDSAPI. cpp).
 
- 
+ 
 
- 
+ 

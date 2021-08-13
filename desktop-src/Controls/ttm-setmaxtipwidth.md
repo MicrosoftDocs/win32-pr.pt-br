@@ -3,7 +3,7 @@ title: Mensagem de TTM_SETMAXTIPWIDTH (commctrl. h)
 description: Define a largura máxima para uma janela de dica de ferramenta.
 ms.assetid: 3cfb6011-d0c3-4a57-aead-d4ec09a057cc
 keywords:
-- Controles de TTM_SETMAXTIPWIDTH de mensagens do Windows
+- controles de Windows de mensagem de TTM_SETMAXTIPWIDTH
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55ce930b289205b5fb0d2768068b8cb28cd11aec
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7d344a3abcbe2b3bf57a71c8020d383f76ab1922b9009cd69411912d4468fa19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104163592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119433756"
 ---
 # <a name="ttm_setmaxtipwidth-message"></a>\_Mensagem TTM SETMAXTIPWIDTH
 
@@ -39,7 +39,7 @@ Largura máxima da janela de dica de ferramenta ou-1 para permitir qualquer larg
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna a largura máxima da dica de ferramenta anterior.
 
@@ -53,8 +53,8 @@ O valor de largura máximo não indica a largura real de uma janela de dica de f
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 

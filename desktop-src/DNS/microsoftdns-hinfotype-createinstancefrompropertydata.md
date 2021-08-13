@@ -1,10 +1,10 @@
 ---
-title: Método CreateInstanceFromPropertyData da classe MicrosoftDNS_HINFOType
-description: O método CreateInstanceFromPropertyData instancia um registro de recurso de informações de host (HINFO).
+title: Método CreateInstanceFromPropertyData da classe MicrosoftDNS_HINFOType dados
+description: O método CreateInstanceFromPropertyData cria uma instanância de um registro de recurso HINFO (Informações do Host).
 ms.assetid: dfc11ae8-5013-4b48-a1e9-78566dc32297
 keywords:
-- DNS do método CreateInstanceFromPropertyData
-- Método CreateInstanceFromPropertyData DNS, classe MicrosoftDNS_HINFOType
+- Método CREATEInstanceFromPropertyData DNS
+- Classe MicrosoftDNS_HINFOType DNS do método CreateInstanceFromPropertyData
 - MicrosoftDNS_HINFOType classe DNS, método CreateInstanceFromPropertyData
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba2c8386a9c66ec94436fe4ae4c886ec62ff5b96
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f6e47c2f5795b1099e1e3dfafbfa27fdfe833ae6e2fae0608be173b59dce7120
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119433046"
 ---
-# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_hinfotype-class"></a>Método CreateInstanceFromPropertyData da \_ classe HINFOType MicrosoftDNS
+# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_hinfotype-class"></a>Método CreateInstanceFromPropertyData da classe HINFOType do MicrosoftDNS \_
 
-O método **CreateInstanceFromPropertyData** instancia um registro de recurso de informações de host (HINFO).
+O **método CreateInstanceFromPropertyData** cria uma instanância de um registro de recurso HINFO (Informações do Host).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,28 +49,28 @@ void CreateInstanceFromPropertyData(
 
 <dl> <dt>
 
-*DnsServerName* \[ no\]
+*DnsServerName* \[ Em\]
 </dt> <dd>
 
-FQDN ou endereço IP do servidor DNS que contém este RR.
+FQDN ou endereço IP do Servidor DNS que contém esse RR.
 
 </dd> <dt>
 
-*ContainerName* \[ no\]
+*ContainerName* \[ Em\]
 </dt> <dd>
 
-Nome do contêiner para a zona, o cache ou a instância de RootHints que contém este RR.
+Nome do Contêiner para a instância zone, cache ou RootHints que contém esse RR.
 
 </dd> <dt>
 
-*OwnerName* \[ no\]
+*OwnerName* \[ Em\]
 </dt> <dd>
 
-Nome do proprietário do RR.
+Nome do proprietário para a RR.
 
 </dd> <dt>
 
-*RecordClass* \[ em, opcional\]
+*RecordClass* \[ in, opcional\]
 </dt> <dd>
 
 Classe do RR. O valor padrão é 1. Os valores a seguir são válidos.
@@ -79,10 +79,10 @@ Classe do RR. O valor padrão é 1. Os valores a seguir são válidos.
 
 | Valor                                                                                                | Significado                  |
 |------------------------------------------------------------------------------------------------------|--------------------------|
-| <span id="1"></span><dl> <dt>**1**</dt> </dl> | NO (Internet)<br/> |
+| <span id="1"></span><dl> <dt>**1**</dt> </dl> | IN (Internet)<br/> |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | CS (CSNET)<br/>    |
-| <span id="3"></span><dl> <dt>**3**</dt> </dl> | CH (CAOS)<br/>    |
-| <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | HS (Hesiod)<br/>   |
+| <span id="3"></span><dl> <dt>**3**</dt> </dl> | CH (CHAOS)<br/>    |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Hesiod)<br/>   |
 
 
 
@@ -90,21 +90,21 @@ Classe do RR. O valor padrão é 1. Os valores a seguir são válidos.
 
 </dd> <dt>
 
-*TTL* \[ em, opcional\]
+*TTL* \[ in, opcional\]
 </dt> <dd>
 
-Tempo, em segundos, que o RR pode ser armazenado em cache por um resolvedor de DNS.
+Tempo, em segundos, em que o RR pode ser armazenado em cache por um resolvedor de DNS.
 
 </dd> <dt>
 
-*CPU* \[ em, opcional\]
+*CPU* \[ in, opcional\]
 </dt> <dd>
 
 Tipo de CPU do proprietário do registro.
 
 </dd> <dt>
 
-*Sistema operacional* \[ em, opcional\]
+*SISTEMA OPERACIONAL* \[ in, opcional\]
 </dt> <dd>
 
 Sistema operacional do proprietário do registro.
@@ -114,11 +114,11 @@ Sistema operacional do proprietário do registro.
 *RR* \[ out, ref\]
 </dt> <dd>
 
-Referência ao novo objeto.
+Referência ao novo objeto .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -131,7 +131,7 @@ Esse método não retorna um valor.
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
 | Namespace<br/>                | \\MicrosoftDNS raiz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -142,7 +142,7 @@ Esse método não retorna um valor.
 [**MicrosoftDNS \_ HINFOType**](microsoftdns-hinfotype.md)
 </dt> <dt>
 
-[**Método Modify da classe MicrosoftDNS \_ HINFOType**](microsoftdns-hinfotype-modify.md)
+[**Método Modify da classe HINFOType Do MicrosoftDNS \_**](microsoftdns-hinfotype-modify.md)
 </dt> <dt>
 
 [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)

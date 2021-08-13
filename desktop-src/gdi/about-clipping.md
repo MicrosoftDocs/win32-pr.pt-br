@@ -4,12 +4,12 @@ ms.assetid: f0ecafcb-2fe4-482f-9333-324419740128
 title: Sobre recorte
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7aeb74973a64e7c46a0a39bda87e0647b685eefe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c4ee2747ce1af20ad458a0eefb6b5114178f5099e626d4d1ddc6bd78106727c7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119452376"
 ---
 # <a name="about-clipping"></a>Sobre recorte
 

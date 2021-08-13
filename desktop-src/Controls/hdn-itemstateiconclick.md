@@ -3,7 +3,7 @@ title: Mensagem de HDN_ITEMSTATEICONCLICK (commctrl. h)
 description: Notifica uma janela pai do controle de cabeçalho que o usuário clicou no ícone de estado de um item. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: a1969579-3a69-49ff-b06e-4b7450146a92
 keywords:
-- Controles de HDN_ITEMSTATEICONCLICK de mensagens do Windows
+- controles de Windows de mensagem de HDN_ITEMSTATEICONCLICK
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95e5e162b78c829e60494f6e8ff81af3ca97eee4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cba2e475ec3037ab00c379cf0c9ea371d5a336b80458c68e974a7122d9a2427a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119435246"
 ---
 # <a name="hdn_itemstateiconclick-message"></a>\_Mensagem HDN ITEMSTATEICONCLICK
 
@@ -45,7 +45,7 @@ Um ponteiro para uma estrutura [**NMHEADER**](/windows/win32/api/commctrl/ns-com
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -55,8 +55,8 @@ Sem valor de retorno.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 

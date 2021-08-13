@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.esentexcepti
 ms:contentKeyID: 55100677
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 4d3c2130c3f433afb22dbdf4ae54405659d58f3d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 071b868b28a84fdc0269a3c578599e84ec472e07f678dadda3df328e772630c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104558614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118496890"
 ---
 # <a name="esentexception-properties"></a>Propriedades de EsentException
 
@@ -44,7 +44,7 @@ O tipo [EsentException](./esentexception-class.md) expõe os membros a seguir.
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -64,7 +64,7 @@ O tipo [EsentException](./esentexception-class.md) expõe os membros a seguir.
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">

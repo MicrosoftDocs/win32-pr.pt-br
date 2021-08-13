@@ -4,12 +4,12 @@ ms.assetid: a58b7463-3572-4ca8-8299-93d92d2f06fb
 title: Política de metadados de foto System. Image. VerticalResolution
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02e895ef9e1181a3ec40b474940c6dfaaa3e1329
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c9962a00be34d227756d295e992174d6e80b6d058fc32af29ad9cde58a04ed07
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105784569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118710279"
 ---
 # <a name="systemimageverticalresolution-photo-metadata-policy"></a>Política de metadados de foto System. Image. VerticalResolution
 

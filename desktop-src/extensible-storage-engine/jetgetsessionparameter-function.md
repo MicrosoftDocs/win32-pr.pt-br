@@ -19,21 +19,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f0ac02142d48009d668d903b39163b425d738b55
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: effd1ea5a9489df0a85af54a79cd773cc05b2fa3d6dbe57096a61fbd4c79c25a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119472026"
 ---
 # <a name="jetgetsessionparameter-function"></a>Função JetGetSessionParameter
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 A função **JetGetSessionParameter** lê o parâmetro de sessão para a sessão especificada.
 
-A função **JetGetSessionParameter** foi introduzida no sistema operacional Windows 8.
+a função **JetGetSessionParameter** foi introduzida no sistema operacional Windows 8.
 
 ``` c++
 JET_ERR JET_API JetGetSessionParameter (
@@ -69,7 +69,7 @@ O tamanho máximo do conjunto de dados neste parâmetro de sessão.
 
 O tamanho real do conjunto de dados neste parâmetro de sessão.
 
-### <a name="return-value"></a>Retornar valor
+### <a name="return-value"></a>Valor retornado
 
 Em caso de sucesso, o buffer de saída apropriado para o parâmetro de sessão solicitado será definido como o valor desse parâmetro de sessão.
 
@@ -89,11 +89,11 @@ O parâmetro Session é usado para o tempo de vida da sessão ou até que o valo
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows 8.</p></td>
+<td><p>Requer Windows 8.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2012.</p></td>
+<td><p>Requer Windows Server 2012.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>

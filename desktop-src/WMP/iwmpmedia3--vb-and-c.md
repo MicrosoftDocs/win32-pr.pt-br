@@ -3,8 +3,8 @@ title: Interface IWMPMedia3 (VB e C) (WMP. h)
 description: Fornece métodos adicionais para acessar as propriedades de um item de mídia.
 ms.assetid: e16aa5e2-ae44-41c2-8c61-fb688c2e89e2
 keywords:
-- IWMPMedia3 (VB e C) interface do Windows Media Player
-- IWMPMedia3 (VB e C) interface do Windows Media Player, descrito
+- Windows Media Player de interface IWMPMedia3 (VB e C)
+- Windows Media Player de interface IWMPMedia3 (VB e C), descrita
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: edb5438ad4d80031d5b45c738c6b6cc9335018af
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1d536f792f0acc8003669be05448ec1f68f82830ccbadf75483bbbc6b84610ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119415908"
 ---
 # <a name="iwmpmedia3-vb-and-c-interface"></a>Interface IWMPMedia3 (VB e C#)
 
@@ -75,7 +75,7 @@ Obtenha uma interface **IWMPMedia3** convertendo o valor retornado por uma das p
 
 <dl> <dt>
 
-[**Interfaces para Visual Basic .NET e C #**](interfaces-for-visual-basic--net-and-c.md)
+[**Interfaces para Visual Basic .net e C #**](interfaces-for-visual-basic--net-and-c.md)
 </dt> <dt>
 
 [**Interface IWMPMedia (VB e C#)**](iwmpmedia--vb-and-c.md)

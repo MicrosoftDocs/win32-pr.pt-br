@@ -3,7 +3,7 @@ title: Atributo UserPlaycountAfternoon
 description: O atributo UserPlaycountAfternoon é o número de vezes que o item foi reproduzido entre 12 00 e 17 00 hora local.
 ms.assetid: d02ac67b-6962-452d-9046-491b452447b0
 keywords:
-- Atributo UserPlaycountAfternoon Windows Media Player
+- Windows Media Player de atributo UserPlaycountAfternoon
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52ce581dc5f4f9c3142c069aca62f3e970d18add
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 329feb503f59fd60a95e2da79023f93677ef2b9643c05dfb0a42b9533a29b2e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119466276"
 ---
 # <a name="userplaycountafternoon-attribute"></a>Atributo UserPlaycountAfternoon
 

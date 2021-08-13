@@ -4,12 +4,12 @@ ms.assetid: 9e271652-1673-42ea-b1f4-31ac63c397c5
 title: Retângulos (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd74538e81482061452382de3123243c3dffe7a8
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 02dda6e8a4f10128ab11ffeb8b390e79be7cc0f698ed1625ca3f2c5df995d67e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119368866"
 ---
 # <a name="rectangles-direct3d-9"></a>Retângulos (Direct3D 9)
 

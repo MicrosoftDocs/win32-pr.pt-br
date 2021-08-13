@@ -6,12 +6,12 @@ keywords:
 - efeito de transferência de tabela
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4d590e7f232ac3d4cecd434786353dfc5b8ea80
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d8c533b55fd55c983b976633b766a6d8d273631d6111de9e2e36387f711f5f14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118664995"
 ---
 # <a name="table-transfer-effect"></a>Efeito de transferência de tabela
 
@@ -33,7 +33,7 @@ A imagem aqui mostra a entrada e a saída do efeito de transferência de tabela.
 | Antes                                                         |
 |----------------------------------------------------------------|
 | ![a imagem antes do efeito.](images/default-before.jpg)     |
-| After (após)                                                          |
+| Depois                                                          |
 | ![a imagem após a transformação.](images/11-tabletransfer.png) |
 
 
@@ -102,8 +102,8 @@ Aqui está a aparência do grafo da função de transferência de tabela se a pr
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
+| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
+| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
 | parâmetro                   | d2d1effects. h                                                                      |
 | Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
 

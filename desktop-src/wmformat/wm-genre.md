@@ -1,9 +1,9 @@
 ---
-title: WM/gênero
-description: O atributo WM/gênero contém o gênero do conteúdo.
+title: WM/Gênero
+description: O atributo WM/Genre contém o gênero do conteúdo.
 ms.assetid: 50279c96-e8f2-40a3-9d5b-5827eb91b61e
 keywords:
-- Formato de mídia do Windows do WM/gênero
+- Formato de mídia do windows WM/Genre
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c56319210e34b580a358c7083b03a45ea01c076
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 049334091c4dc4be533e1438468561c97c383f5c9cc7c57c607512cbf09e99cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105780328"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118699026"
 ---
-# <a name="wmgenre"></a>WM/gênero
+# <a name="wmgenre"></a>WM/Gênero
 
-O atributo **WM/gênero** contém o gênero do conteúdo.
+O **atributo WM/Genre** contém o gênero do conteúdo.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,13 +29,13 @@ g \_ wszWMGenre
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**Cadeia de caracteres do \_ tipo WMT \_**
+**CADEIA DE CARACTERES DE \_ TIPO \_ WMT**
 
 ## <a name="remarks"></a>Comentários
 
-Esse é o atributo preferencial para especificar o gênero de conteúdo.
+Esse é o atributo preferencial para especificar o gênero do conteúdo.
 
-Se você alterar o **WM/gênero** ou o **WM/gêneroid** em um arquivo MP3, o outro atributo será alterado para coincidir.
+Se você alterar **WM/Genre ou** **WM/GenreID** em um arquivo MP3, o outro atributo será alterado para corresponder.
 
 ### <a name="example"></a>Exemplo
 
@@ -43,12 +43,12 @@ Se você alterar o **WM/gênero** ou o **WM/gêneroid** em um arquivo MP3, o out
 
 | Tipo de arquivo | Valor de exemplo |
 |-----------|---------------|
-| Áudio     | Rock        |
-| Vídeo     | Drama       |
+| Áudio     | "Rocha"        |
+| Vídeo     | "Émá"       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -57,9 +57,9 @@ Se você alterar o **WM/gênero** ou o **WM/gêneroid** em um arquivo MP3, o out
 [**Lista de Atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

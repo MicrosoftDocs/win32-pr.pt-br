@@ -4,12 +4,12 @@ ms.assetid: 7afa9694-c965-40e2-8549-e32ff48def2a
 title: Gerando novos pacotes de dados ASF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78f3432ecf34c58247a1533adb202b75f59d770c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9473037d656bd4fcc01b91a908103fcda3e364a36e8caaf42cfc0558381e5af8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118742066"
 ---
 # <a name="generating-new-asf-data-packets"></a>Gerando novos pacotes de dados ASF
 
@@ -37,7 +37,7 @@ Antes de chamar [**ProcessSample**](/windows/desktop/api/wmcontainer/nf-wmcontai
 O multiplexador pode aceitar entrada como amostras de mídia compactadas ou descompactadas por meio do [**ProcessSample**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-processsample). O multiplexador atribui horas de envio a esses exemplos, dependendo do uso de largura de banda do fluxo. Durante esse processo, o multiplexador verifica os parâmetros de Bucket vazado (taxa de bits e utilização da janela de buffer) e pode rejeitar amostras que não aderem a esses valores. O exemplo de mídia de entrada pode falhar a verificação de largura de banda por qualquer um dos seguintes motivos:
 
 -   Se o exemplo de mídia de entrada chegou atrasado porque a hora de envio da última atribuição é maior do que o carimbo de data/hora neste exemplo de mídia. [**ProcessSample**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-processsample) falhará e retornará o código de erro de **\_ \_ \_ exemplo MF e tardia** .
--   Se o carimbo de data/hora no exemplo de mídia de entrada for anterior à hora de envio atribuída (isso indica estouro de buffer). O multiplexador pode ignorar essa situação se ela estiver configurada para ajustar a taxa de bits definindo o sinalizador do **MFASF \_ multiplexador \_ AutoAjuste de \_ taxa** de bit durante a inicialização do Multiplexador. Para obter mais informações, consulte "inicialização do Multiplexador e configurações de Bucket de vazamentos" em [criando o objeto multiplexador](creating-the-multiplexer-object.md). Se esse sinalizador não estiver definido e o multiplexador encontrar saturação de largura de banda, [**ProcessSample**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-processsample) falhará e retornará o código de erro de **saturação da largura de \_ \_ banda \_ e MF** .
+-   Se o carimbo de data/hora no exemplo de mídia de entrada for anterior à hora de envio atribuída (isso indica estouro de buffer). O multiplexador pode ignorar essa situação se ela estiver configurada para ajustar a taxa de bits definindo o sinalizador do **MFASF \_ multiplexador \_ AutoAjuste de \_ taxa** de bit durante a inicialização do Multiplexador. para obter mais informações, consulte "inicialização do multiplexador e vazamento de Bucket Configurações" em [criando o objeto multiplexador](creating-the-multiplexer-object.md). Se esse sinalizador não estiver definido e o multiplexador encontrar saturação de largura de banda, [**ProcessSample**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-processsample) falhará e retornará o código de erro de **saturação da largura de \_ \_ banda \_ e MF** .
 
 Depois que o multiplexador atribui a hora de envio, o exemplo de mídia de entrada é adicionado à *janela de envio*— uma lista de amostras de mídia de entrada ordenada por horas de envio e pronta para ser processada em pacotes de dados. Durante a construção do pacote de dados, o exemplo de mídia de entrada é analisado e os dados relevantes são gravados em um pacote de dados como carga. Um pacote de dados completo pode conter dados de um ou mais exemplos de mídia de entrada.
 
@@ -120,7 +120,7 @@ HRESULT GenerateASFDataPackets(
 
 A `WriteBufferToByteStream` função é mostrada no tópico [**IMFByteStream:: Write**](/windows/desktop/api/mfobjects/nf-mfobjects-imfbytestream-write).
 
-Para ver um aplicativo completo que usa este exemplo de código, consulte [tutorial: copiando fluxos ASF de um arquivo para outro](tutorial--copying-asf-streams-from-one-file-to-another.md).
+para ver um aplicativo completo que usa este exemplo de código, consulte [Tutorial: copiando Fluxos ASF de um arquivo para outro](tutorial--copying-asf-streams-from-one-file-to-another.md).
 
 ## <a name="post-packet-generation-calls"></a>Postar chamadas de Packet-Generation
 
@@ -131,7 +131,7 @@ Depois que todas as amostras de mídia forem geradas, chame [**IMFASFMultiplexer
 Você deve garantir que [**end**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-end) seja chamado depois que todos os pacotes de dados forem recuperados. Se houver algum pacote aguardando no Multiplexador, o **fim** falhará e retornará o código de erro **MF \_ E \_ flush \_ necessário** . Nesse caso, obtenha o pacote em espera chamando [**flush**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-flush) e [**GetNextPacket**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-getnextpacket) em um loop.
 
 > [!Note]  
-> Para a codificação de VBR, depois de chamar **end**, você deve definir as estatísticas de codificação nas propriedades de codificação do objeto ContentInfo. Para obter informações sobre esse processo, consulte "Configurando o objeto ContentInfo com as configurações do codificador" em [definindo propriedades no objeto ContentInfo](setting-properties-in-the-contentinfo-object.md). A lista a seguir mostra as propriedades específicas a serem definidas:
+> Para a codificação de VBR, depois de chamar **end**, você deve definir as estatísticas de codificação nas propriedades de codificação do objeto ContentInfo. para obter informações sobre esse processo, consulte "configurando o objeto ContentInfo com o codificador Configurações" em [propriedades de configuração no objeto ContentInfo](setting-properties-in-the-contentinfo-object.md). A lista a seguir mostra as propriedades específicas a serem definidas:
 >
 > -   [**MFPKEY \_ RAVG**](mfpkey-ravgproperty.md) é a taxa de bits média do conteúdo da VBR.
 > -   [**MFPKEY \_ BAVG**](mfpkey-bavgproperty.md) é a janela de buffer para a taxa média de bits.
@@ -147,7 +147,7 @@ Você deve garantir que [**end**](/windows/desktop/api/wmcontainer/nf-wmcontaine
 [Multiplexador ASF](asf-multiplexer.md)
 </dt> <dt>
 
-[Tutorial: copiando fluxos ASF de um arquivo para outro](tutorial--copying-asf-streams-from-one-file-to-another.md)
+[Tutorial: copiando Fluxos ASF de um arquivo para outro](tutorial--copying-asf-streams-from-one-file-to-another.md)
 </dt> <dt>
 
 [Tutorial: gravando um arquivo WMA usando a codificação de CBR](tutorial--writing-a-wma-file-by-using-cbr-encoding.md)

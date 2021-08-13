@@ -4,16 +4,16 @@ description: Propriedade GlobalVoiceCommandsEnabled
 ms.assetid: d4f74019-fa33-41fc-abe7-01791ff188f0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b8f523171187c9956a7741afc0fabcc7ec794071
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f889d242afca406ba443fd3d9a19afb837fbed0390f5c0c3d2bbd2ac2ccbccb9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118751440"
 ---
 # <a name="globalvoicecommandsenabled-property"></a>Propriedade GlobalVoiceCommandsEnabled
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Retorna ou define se a voz está habilitada para os comandos globais do agente.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-*Agente. ***Caracteres ("*** characterid * * *"). Commands. GlobalVoiceCommandsEnabled**
+*caracteres Agent. ***("**_characterid_*_"). Commands. GlobalVoiceCommandsEnabled_*
 
 \[ = *Boolean*\]
 

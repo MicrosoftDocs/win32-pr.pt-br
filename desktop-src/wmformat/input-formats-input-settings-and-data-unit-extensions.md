@@ -1,11 +1,11 @@
 ---
-title: Formatos de entrada, configurações de entrada e extensões de unidade de dados
-description: Formatos de entrada, configurações de entrada e extensões de unidade de dados
+title: formatos de entrada, Configurações de entrada e extensões de unidade de dados
+description: formatos de entrada, Configurações de entrada e extensões de unidade de dados
 ms.assetid: 8e8a0ec8-cb7c-4483-86b0-142ea9f2b835
 keywords:
-- SDK do Windows Media Format, formatos de entrada e configurações
-- SDK do Windows Media Format, extensões de unidade de dados
-- SDK do Windows Media Format, sistemas de extensão de carga
+- Windows SDK do formato de mídia, formatos de entrada e configurações
+- Windows SDK do formato de mídia, extensões de unidade de dados
+- Windows SDK do formato de mídia, sistemas de extensão de carga
 - ASF (Advanced Systems Format), formatos de entrada e configurações
 - ASF (formato de sistemas avançados), formatos de entrada e configurações
 - ASF (Advanced Systems Format), extensões de unidade de dados
@@ -16,14 +16,14 @@ keywords:
 - sistemas de extensão de carga
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a3c590895fca23a3c668a19ac4e6c5437a35ddb5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 99ba5f24f0776f07d580207d769db384e97461ac89486cfc78c72822bdacc82c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916515"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118702008"
 ---
-# <a name="input-formats-input-settings-and-data-unit-extensions"></a>Formatos de entrada, configurações de entrada e extensões de unidade de dados
+# <a name="input-formats-input-settings-and-data-unit-extensions"></a>formatos de entrada, Configurações de entrada e extensões de unidade de dados
 
 O objeto gravador dá suporte a configurações de entrada, formatos de entrada e extensões de unidade de dados, todos os quais permitem controlar os recursos do gravador. Nem sempre é óbvio quais métodos usar para controlar um recurso específico.
 
@@ -55,9 +55,9 @@ As extensões de unidade de dados, também chamadas de sistemas de extensão de 
 [**Trabalhando com entradas**](working-with-inputs.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

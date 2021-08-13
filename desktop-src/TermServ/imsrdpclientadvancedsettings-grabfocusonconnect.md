@@ -54,12 +54,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e7fb04c00bd7aaaf4de1252d961206ffee0e6b9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e759dd6bbd297dcd13eb9885b228f1a8257c293c099eaba3a6a8f1cf46c2a3f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105753330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475466"
 ---
 # <a name="imsrdpclientadvancedsettingsgrabfocusonconnect-property"></a>Propriedade IMsRdpClientAdvancedSettings:: GrabFocusOnConnect
 
@@ -67,7 +67,7 @@ Especifica se o controle de cliente deve ter o foco durante a conexão. O contro
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
