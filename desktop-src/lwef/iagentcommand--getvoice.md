@@ -4,16 +4,16 @@ description: Getvoice IAgentCommand
 ms.assetid: 69f3c91b-2ccf-4bea-8034-0c3e0a5e4ec4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2365019f71447e9d9c5a560c6506ee1dae7423df
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 120e27996f06a0446f7aaab944df8638134990fffe951400d94c690f52f78cac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105782663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118750423"
 ---
 # <a name="iagentcommandgetvoice"></a>IAgentCommand:: getvoice
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT GetVoice(
@@ -41,6 +41,6 @@ Um [**comando**](/windows/desktop/lwef/the-command-object) com seu conjunto de p
 [**IAgentCommand:: setvoice**](iagentcommand--setvoice.md), [**IAgentCommands:: Adicionar**](iagentcommands--add.md), [**IAgentCommands:: Insert**](iagentcommands--insert.md)
 
 
- 
+ 
 
- 
+ 

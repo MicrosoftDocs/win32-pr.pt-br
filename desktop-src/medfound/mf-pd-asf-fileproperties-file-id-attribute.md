@@ -1,17 +1,17 @@
 ---
 description: Especifica o identificador de arquivo de um arquivo ASF (Advanced Systems Format).
 ms.assetid: 096c2e1a-7fd7-49ab-aa24-7d7c779d9e79
-title: Atributo MF_PD_ASF_FILEPROPERTIES_FILE_ID (Wmcontainer. h)
+title: MF_PD_ASF_FILEPROPERTIES_FILE_ID atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a92d20351c11df4feebd732c670cbacabf3bd67f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 131f82e15d63cca7c398894f9dd486936b20642fad4ffb2b241ec866e6dd33d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105751024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118741002"
 ---
-# <a name="mf_pd_asf_fileproperties_file_id-attribute"></a>\_Atributo de ID de arquivo MF PD \_ ASF \_ FileProperties \_ \_
+# <a name="mf_pd_asf_fileproperties_file_id-attribute"></a>Atributo MF \_ PD \_ ASF \_ FILEPROPERTIES \_ FILE \_ ID
 
 Especifica o identificador de arquivo de um arquivo ASF (Advanced Systems Format).
 
@@ -23,7 +23,7 @@ Especifica o identificador de arquivo de um arquivo ASF (Advanced Systems Format
 
 Esse atributo se aplica a descritores de apresentação para conteúdo ASF.
 
-O método [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) gera esse atributo dos metadados do ASF.
+O [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) gera esse atributo dos metadados do ASF.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,9 +31,9 @@ O método [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desk
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                     |
+| parâmetro<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 
@@ -41,13 +41,13 @@ O método [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desk
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetGuid**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid)
+[**IMFAttributes::GetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid)
 </dt> <dt>
 
-[**IMFAttributes:: SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid)
+[**IMFAttributes::SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid)
 </dt> <dt>
 
 [**IMFPresentationDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfpresentationdescriptor)
@@ -56,7 +56,7 @@ O método [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desk
 [Atributos do descritor de apresentação](presentation-descriptor-attributes.md)
 </dt> <dt>
 
-[Objeto de cabeçalho ASF](asf-file-structure.md)
+[Objeto de header ASF](asf-file-structure.md)
 </dt> <dt>
 
 [Descritores de apresentação](presentation-descriptors.md)

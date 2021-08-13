@@ -1,7 +1,7 @@
 ---
-description: Contém o objeto de pasta do item, se o item for uma pasta.
+description: Contém o objeto Pasta do item, se o item for uma pasta.
 ms.assetid: 87afd0b6-245b-4550-9f21-aa0426ba8470
-title: Propriedade FolderItem. GetFolder (shlobj. h)
+title: Propriedade FolderItem.GetFolder (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: d08c774b53d1fa0db74a7d8d282c4f88f237cfd4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ad1f136fdc59291b36bb5d609269b97e7ab7a5f9d74eccbbedf204d4c2d4e014
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118458876"
 ---
-# <a name="folderitemgetfolder-property"></a>Propriedade FolderItem. GetFolder
+# <a name="folderitemgetfolder-property"></a>Propriedade FolderItem.GetFolder
 
-Contém o objeto de [**pasta**](folder.md) do item, se o item for uma pasta.
+Contém o objeto [**Pasta do**](folder.md) item, se o item for uma pasta.
 
 Esta propriedade é somente para leitura.
 
@@ -37,13 +37,13 @@ objGetFolder = FolderItem.GetFolder
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Uma variável do tipo [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) que recebe o objeto de [**pasta**](folder.md) .
+Uma variável do [**tipo IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) que recebe o [**objeto**](folder.md) Pasta.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **GetFolder** para recuperar o objeto de [**pasta**](folder.md) para a pasta system32. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir **usa GetFolder** para recuperar [**o objeto Folder**](folder.md) para a pasta System32. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -77,7 +77,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -164,11 +164,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows somente aplicativos da \[ área de trabalho XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Shlobj. h (incluir shldisp. h)</dt> </dl>        |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shlobj.h (inclua Shldisp.h)</dt> </dl>        |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
 
 
 

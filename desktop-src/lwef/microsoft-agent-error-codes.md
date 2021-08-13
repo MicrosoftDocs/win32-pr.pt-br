@@ -4,16 +4,16 @@ description: Códigos de erro do Microsoft Agent
 ms.assetid: 39bc203a-c260-46f5-a30a-7324bae2e2cf
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70e675daa3167b72f711e2545e00c78633213ed5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 48e483c053f1cfa4d3bb57606629885470fa28f73644c9a26cb35a76a3354b84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118747836"
 ---
 # <a name="microsoft-agent-error-codes"></a>Códigos de erro do Microsoft Agent
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 O Microsoft Agent retorna as seguintes informações de erro:
 
@@ -55,7 +55,7 @@ O Microsoft Agent retorna as seguintes informações de erro:
 | -2147213044  | 0x8004210C | A operação foi interrompida pelo aplicativo.                                                                                                                                                                                                                          |
 | -2147213043  | 0x8004210D | A operação foi interrompida porque o caractere estava oculto.                                                                                                                                                                                                            |
 | -2147213042  | 0x8004210E | A marca de fala [LST](lst-tag.md) não pode ser usada com texto adicional ou uma URL.                                                                                                                                                                                            |
-| -2147212799  | 0x80042201 | O Microsoft Agent Provedor de Dados não pôde ser iniciado.                                                                                                                                                                                                                   |
+| -2147212799  | 0x80042201 | o Microsoft Agent Provedor de Dados não pôde ser iniciado.                                                                                                                                                                                                                   |
 | -2147212798  | 0x80042202 | A versão do arquivo de dados de caractere especificada não é suportada pela versão instalada do Microsoft Agent. Você precisa atualizar o caractere.<br/>                                                                                                                       |
 | -2147212797  | 0x80042203 | A versão do Microsoft Agent instalada é anterior ao arquivo de caractere especificado. Verifique se você tem a versão correta do Microsoft Agent instalada.<br/>                                                                                                     |
 | -2147212796  | 0x80042204 | O arquivo especificado não é um arquivo de caracteres do Microsoft Agent. Verifique se o nome do arquivo está correto.<br/>                                                                                                                                                                    |
@@ -77,25 +77,25 @@ O Microsoft Agent retorna as seguintes informações de erro:
 | -2147212286  | 0x80042402 | O mecanismo de conversão de texto em fala (TTS) não pode ser iniciado.                                                                                                                                                                                                                         |
 | -2147212285  | 0x80042403 | O mecanismo de conversão de texto em fala (TTS) não pode ser iniciado.                                                                                                                                                                                                                         |
 | -2147212284  | 0x80042404 | O mecanismo de conversão de texto em fala (TTS) não pode ser iniciado.                                                                                                                                                                                                                         |
-| -2147212283  | 0x80042405 | O mecanismo de conversão de texto em fala (TTS) não pode ser iniciado.                                                                                                                                                                                                                         |
-| -2147212282  | 0x80042406 | Falha no componente de sincronização do LIP do Microsoft Agent.                                                                                                                                                                                                                             |
-| -2147212281  | 0x80042407 | Falha no componente de sincronização do LIP do Microsoft Agent.                                                                                                                                                                                                                             |
-| -2147212280  | 0x80042408 | Falha no componente de sincronização do LIP do Microsoft Agent.                                                                                                                                                                                                                             |
+| -2147212283  | 0x80042405 | O mecanismo de TTS (texto em fala) não pode ser iniciado.                                                                                                                                                                                                                         |
+| -2147212282  | 0x80042406 | Falha no componente de sincronização de sincronização do Microsoft Agent.                                                                                                                                                                                                                             |
+| -2147212281  | 0x80042407 | Falha no componente de sincronização de sincronização do Microsoft Agent.                                                                                                                                                                                                                             |
+| -2147212280  | 0x80042408 | Falha no componente de sincronização de sincronização do Microsoft Agent.                                                                                                                                                                                                                             |
 | -2147212030  | 0x80042502 | Não foi possível iniciar o Microsoft Agent. Verifique se o Microsoft Agent está instalado corretamente.<br/>                                                                                                                                                                         |
 | -2147024894  | 0x80070002 | O sistema não pôde localizar o arquivo especificado.\*                                                                                                                                                                                                                               |
 | -2147024883  | 0x8007000D | Os dados são inválidos.\*                                                                                                                                                                                                                                                     |
-| -2147023436  | 0x800705B4 | Esta operação foi retornada porque o período de tempo limite expirou. \*                                                                                                                                                                                                             |
-| -2146697214  | 0x800C0002 | URL inválida. \* Verifique se a URL especificada existe e está correta.<br/>                                                                                                                                                                                      |
-| -2146697212  | 0x800C0004 | Falha de acesso ao servidor. \* Falha na tentativa de conexão com o servidor.<br/> Verifique se o servidor está em execução e disponível.<br/>                                                                                                                      |
+| -2147023436  | 0x800705B4 | Essa operação retornou porque o período de tempo expirado. \*                                                                                                                                                                                                             |
+| -2146697214  | 0x800C0002 | URL inválida. \* Verifique se a URL especificada existe e se está correta.<br/>                                                                                                                                                                                      |
+| -2146697212  | 0x800C0004 | Falha de acesso do servidor. \* Falha na tentativa de conexão com o servidor.<br/> Verifique se o servidor está em execução e disponível.<br/>                                                                                                                      |
 | -2146697210  | 0x800C0006 | Arquivo não encontrado. \* Não foi possível encontrar o arquivo na URL especificada.<br/> Verifique se a URL está correta.<br/>                                                                                                                                             |
-| -2146697205  | 0x800C000B | Tempo limite da conexão do servidor. \* A conexão com o servidor atingiu o tempo limite.<br/> Verifique se o servidor está em execução e disponível.<br/>                                                                                                                        |
+| -2146697205  | 0x800C000B | Tempo de tempo de conexão do servidor. \* A conexão com o servidor desajustou.<br/> Verifique se o servidor está em execução e disponível.<br/>                                                                                                                        |
 | -2146697202  | 0x800C000E | Falha de acesso à segurança do servidor. \* Houve um problema de segurança ao acessar o servidor.<br/>                                                                                                                                                                       |
 
 
 
  
 
-\* Erros cujas descrições incluem um asterisco são erros de sistema do Windows. Eles são fornecidos aqui porque normalmente podem ocorrer em aplicativos habilitados para agente. Para obter informações sobre outros erros não incluídos aqui, consulte a documentação do Platform SDK.
+\*Erros cujas descrições incluem um asterisco são Windows do sistema. Eles são fornecidos aqui porque podem ocorrer normalmente em aplicativos habilitados para Agente. Para obter informações sobre outros erros não incluídos aqui, consulte a documentação do SDK da plataforma.
 
  
 

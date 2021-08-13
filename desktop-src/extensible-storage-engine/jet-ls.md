@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3300fd88c0dd1e1fca55722bf58350e28f3c3b08
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 38ddb306ee6fdcbd1eb792b2c29ca367adc0f4b88cc25dfcbdde22c2638258d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105771315"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118765032"
 ---
 # <a name="jet_ls"></a>JET_LS
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_ls"></a>JET_LS
 
 O tipo de dados **JET_LS** contém um identificador de contexto para armazenamento local (ls). Esse identificador pode ser associado a um cursor ou uma tabela e pode se referir a recursos alocados dinamicamente.
 
-**Windows XP: o JET_LS** é introduzido no Windows XP.
+**Windows xp: JET_LS** é introduzido no Windows XP.
 
 ```cpp
     typedef JET_API_PTR JET_LS;
@@ -93,11 +93,11 @@ Os sinalizadores a seguir são associados ao tipo de dados JET_LS.
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista ou o Windows XP.</p></td>
+<td><p>requer o Windows Vista ou Windows XP.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008 ou o Windows Server 2003.</p></td>
+<td><p>requer o Windows server 2008 ou Windows server 2003.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>

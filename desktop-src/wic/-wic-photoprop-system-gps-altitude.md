@@ -1,23 +1,23 @@
 ---
-description: A política de metadados de foto para a propriedade System. GPS. altitude.
+description: A política de metadados de foto para a propriedade System.GPS.Altitude.
 ms.assetid: 63d59aa3-52a6-4b6f-b6ec-a1c4abcee83f
-title: Política de metadados de foto System. GPS. altitude
+title: Política de metadados de foto System.GPS.Altitude
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 003d39d135c625a01035c023b5d7dc8d890b3b1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 40a9209bfb0bbc1a4c6f95ce4a995d32d3f532c293dd2295c335eea61c22df89
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105791278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119441996"
 ---
-# <a name="systemgpsaltitude-photo-metadata-policy"></a>Política de metadados de foto System. GPS. altitude
+# <a name="systemgpsaltitude-photo-metadata-policy"></a>Política de metadados de foto System.GPS.Altitude
 
-A política de metadados de foto para a propriedade [System. GPS. altitude](../properties/props-system-gps-altitude.md) .
+A política de metadados de foto para a [propriedade System.GPS.Altitude.](../properties/props-system-gps-altitude.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-\_Altitude de GPS PKEY \_
+PKEY \_ GPS \_ Altitude
 
 ### <a name="description"></a>Descrição
 
@@ -29,29 +29,29 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-Yes
+Sim
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
 
-R8 de VT \_
+VT \_ R8
 
-### <a name="input-propvariant-type"></a>Tipo de PROPVARIANT de entrada
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT de entrada
 
-R8 de VT \_
+VT \_ R8
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
 
-Esse valor pode ser gravado escrevendo em System. GPS. altitude. Numerator e System. GPS. altitude. denominador. Ele não pode ser gravado diretamente. Os caminhos de gravação nas tabelas a seguir indicam onde o valor pode ser salvo quando é gerado, não quando ele é gravado diretamente. Quando o valor é lido, os valores de esquemas diferentes são reconciliados.
+Esse valor pode ser escrito escrevendo em System.GPS.Altitude.Numerator e System.GPS.Altitude.Denominator. Ele não pode ser gravado diretamente. Os caminhos de gravação nas tabelas a seguir indicam onde o valor pode ser salvo quando ele é gerado, não quando ele é gravado diretamente. Quando o valor é lido, os valores de esquemas diferentes são reconciliados.
 
 ### <a name="jpeg-policy"></a>Política JPEG
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /App1/IFD/GPS/{UShort = 6} |             |
+| 1     | /app1/ifd/gps/{ushort=6} |             |
 | 2     | /xmp/exif:GPSAltitude    |             |
 
 
@@ -64,7 +64,7 @@ Esse valor pode ser gravado escrevendo em System. GPS. altitude. Numerator e Sys
 
 | Ordem | Caminho                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /App1/IFD/GPS/{UShort = 6} |             |
+| 1     | /app1/ifd/gps/{ushort=6} |             |
 | 2     | /xmp/exif:GPSAltitude    |             |
 
 
@@ -77,7 +77,7 @@ Esse valor pode ser gravado escrevendo em System. GPS. altitude. Numerator e Sys
 
 | Ordem | Caminho                     |
 |-------|--------------------------|
-| 1     | /App1/IFD/GPS/{UShort = 6} |
+| 1     | /app1/ifd/gps/{ushort=6} |
 | 2     | /xmp/exif:gpsaltitude    |
 
 
@@ -86,13 +86,13 @@ Esse valor pode ser gravado escrevendo em System. GPS. altitude. Numerator e Sys
 
 ### <a name="tiff-policies"></a>Políticas TIFF
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /IFD/GPS/{UShort = 6}       |             |
+| 1     | /ifd/gps/{ushort=6}       |             |
 | 2     | /ifd/xmp/exif:GPSAltitude |             |
 
 
@@ -105,7 +105,7 @@ Esse valor pode ser gravado escrevendo em System. GPS. altitude. Numerator e Sys
 
 | Ordem | Caminho                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /IFD/GPS/{UShort = 6}       |             |
+| 1     | /ifd/gps/{ushort=6}       |             |
 | 2     | /ifd/xmp/exif:GPSAltitude |             |
 
 
@@ -118,7 +118,7 @@ Esse valor pode ser gravado escrevendo em System. GPS. altitude. Numerator e Sys
 
 | Ordem | Caminho                      |     |
 |-------|---------------------------|-----|
-| 1     | /IFD/GPS/{UShort = 6}       |     |
+| 1     | /ifd/gps/{ushort=6}       |     |
 | 2     | /ifd/xmp/exif:gpsaltitude |     |
 
 
@@ -131,7 +131,7 @@ Esse valor pode ser gravado escrevendo em System. GPS. altitude. Numerator e Sys
 
 <dl> <dt>
 
-[System. GPS. altitude](../properties/props-system-gps-altitude.md)
+[System.GPS.Altitude](../properties/props-system-gps-altitude.md)
 </dt> </dl>
 
  

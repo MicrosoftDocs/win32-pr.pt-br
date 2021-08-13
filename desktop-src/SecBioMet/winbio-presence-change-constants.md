@@ -1,6 +1,6 @@
 ---
 title: Constantes de WINBIO_PRESENCE_CHANGE (WinBio \_ Types. h)
-description: Descreve os tipos de alterações que podem ocorrer quando o Windows Biometric Framework monitora a presença de indivíduos.
+description: descreve os tipos de alterações que podem ocorrer quando o Windows Biometric Framework monitora a presença de indivíduos.
 ms.assetid: 1E0B65D8-A38F-46BA-A99A-18666729FA30
 topic_type:
 - apiref
@@ -17,16 +17,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2c864c82ddca6faec134716778dc2e795675371
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 08cce9cc74bafdba6cf8d1aa11abccdaf7315370223ff6edf47eaba167af84f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118909705"
 ---
 # <a name="winbio_presence_change-constants"></a>Constantes de alteração de \_ presença de WINBIO \_
 
-Descreve os tipos de alterações que podem ocorrer quando o Windows Biometric Framework monitora a presença de indivíduos.
+descreve os tipos de alterações que podem ocorrer quando o Windows Biometric Framework monitora a presença de indivíduos.
 
 
 
@@ -47,8 +47,8 @@ Descreve os tipos de alterações que podem ocorrer quando o Windows Biometric F
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                                                                                                     |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2016 \[ somente aplicativos da área de trabalho\]<br/>                                                                                                                     |
 | parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h para aplicativos cliente ou WinBio \_ Adapters. h para adaptadores)</dt> </dl> |
 
 

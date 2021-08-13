@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Descrevendo um caminho de objeto de classe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1cfd603ea3b6de151d297a7f4b6fc8a2a27dfda
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5afa6801d91c4236a7892d7db121dc02c73d93640b7dbc4969c86db55a8789b3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105782712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119244396"
 ---
 # <a name="describing-a-class-object-path"></a>Descrevendo um caminho de objeto de classe
 
@@ -18,9 +18,9 @@ Um caminho de objeto de classe descreve o local de uma classe dentro de um names
 
 Você pode usar os seguintes métodos para especificar um caminho de objeto:
 
--   Um caminho de objeto completo para uma classe acrescenta o nome de classe a um caminho de namespace.
+-   Um caminho de objeto completo para uma classe anexa o nome da classe a um caminho de namespace.
 
-    O exemplo a seguir mostra o local da classe do [**\_ LogicalDisk do Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) dentro do \\ \\ namespace raiz cimv2 no servidor chamado admin.
+    O exemplo a seguir mostra o local da classe [**\_ LogicalDisk win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) dentro do \\ \\ namespace raiz cimv2 no servidor chamado Admin.
 
     ``` syntax
     \\Admin\Root\CimV2:Win32_LogicalDisk
@@ -28,7 +28,7 @@ Você pode usar os seguintes métodos para especificar um caminho de objeto:
 
 -   Um caminho de objeto relativo representa uma classe que reside no namespace atual. Um caminho de objeto relativo para uma classe contém apenas o nome da classe.
 
-    O exemplo a seguir mostra o caminho relativo para a classe do disco [**\_ lógico do Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) .
+    O exemplo a seguir mostra o caminho relativo para a [**classe \_ LogicalDisk do Win32.**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)
 
     ``` syntax
     Win32_LogicalDisk
@@ -38,9 +38,9 @@ Quando você consulta um nome de classe, mas não especifica nenhuma instância,
 
 **Para recuperar uma definição de classe no VBScript**
 
--   Você pode usar a conexão de moniker com uma consulta ou [**GetObject**](https://msdn.microsoft.com/library/ebdktb00(v=VS.71).aspx). Você também pode usar [**SWbemServices. Get**](swbemservices-get.md).
+-   Você pode usar a conexão moniker com uma consulta ou [**GetObject**](https://msdn.microsoft.com/library/ebdktb00(v=VS.71).aspx). Você também pode usar [**SWbemServices.Get.**](swbemservices-get.md)
 
-    O exemplo a seguir mostra como usar [GetObject](/previous-versions//kdccchxa(v=vs.85)) para obter uma definição de classe.
+    O exemplo a seguir mostra como usar [GetObject para](/previous-versions//kdccchxa(v=vs.85)) obter uma definição de classe.
 
     ```VB
     strComputer = "."
@@ -68,9 +68,9 @@ Você pode recuperar uma definição de classe em C++ especificando apenas o nom
 
 **Para recuperar uma definição de classe em C++**
 
--   Faça uma chamada para as funções [**IWbemServices:: GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject) ou [**IWbemServices:: GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync) .
+-   Faça uma chamada para as funções [**IWbemServices::GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject) ou [**IWbemServices::GetObjectAsync.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync)
 
-    O exemplo a seguir mostra como chamar a função [**IWbemServices:: GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject) .
+    O exemplo a seguir mostra como chamar a [**função IWbemServices::GetObject.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject)
 
     ```C++
     IWbemServices* pSvcs = 0;
@@ -82,7 +82,7 @@ Você pode recuperar uma definição de classe em C++ especificando apenas o nom
 
     
 
-    O exemplo de código anterior requer que a seguinte \# instrução include seja compilada corretamente.
+    O exemplo de código anterior requer que a \# instrução include a seguir seja compilada corretamente.
 
     ```C++
     #include <wbemidl.h>

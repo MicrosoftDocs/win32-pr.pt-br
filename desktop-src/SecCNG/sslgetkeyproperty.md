@@ -1,7 +1,7 @@
 ---
-description: Recupera o valor de uma propriedade nomeada para um objeto de chave do provedor de protocolo SSL (protocolo SSL).
+description: Recupera o valor de uma propriedade nomeada para um objeto de chave protocolo SSL protocolo SSL.
 ms.assetid: 01a7e82a-3888-4f96-85a2-e07811f1895e
-title: Função SslGetKeyProperty (Sslprovider. h)
+title: Função SslGetKeyProperty (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 42952b76bfb46eeeb31b9f76b1f677e7b3b8e3e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b86f8a2e76573122bcfcf809d5301bc6bf70690467527f4dc69a5ec12419f56b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105753412"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906114"
 ---
 # <a name="sslgetkeyproperty-function"></a>Função SslGetKeyProperty
 
-A função **SslGetKeyProperty** recupera o valor de uma propriedade nomeada para um objeto de chave do provedor de protocolo SSL ( [*protocolo SSL*](/windows/desktop/SecGloss/s-gly) ).
+A **função SslGetKeyProperty** recupera o valor de uma propriedade nomeada para um objeto de chave de provedor SSL [*(protocolo*](/windows/desktop/SecGloss/s-gly) protocolo SSL).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,55 +43,55 @@ SECURITY_STATUS WINAPI SslGetKeyProperty(
 
 <dl> <dt>
 
-*HKEY* \[ no\]
+*hKey* \[ Em\]
 </dt> <dd>
 
-O identificador do provedor SSL.
+O handle do provedor SSL.
 
 </dd> <dt>
 
-*pszProperty* \[ no\]
+*pszProperty* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma cadeia de caracteres Unicode terminada em nulo que contém o nome da propriedade a ser recuperada. Pode ser um dos [**identificadores de propriedade de armazenamento de chave**](key-storage-property-identifiers.md) predefinidos ou um identificador de propriedade personalizada.
+Um ponteiro para uma cadeia de caracteres Unicode terminada em nulo que contém o nome da propriedade a ser recuperada. Esse pode ser um dos Identificadores de Propriedade Armazenamento [**Chave**](key-storage-property-identifiers.md) predefinidos ou um identificador de propriedade personalizado.
 
 </dd> <dt>
 
-*ppbOutput* \[ fora\]
+*ppbOutput* \[ out\]
 </dt> <dd>
 
-Um ponteiro para um buffer que recebe o valor da propriedade. O chamador da função deve liberar esse buffer chamando a função [**SslFreeBuffer**](sslfreebuffer.md) .
+Um ponteiro para um buffer que recebe o valor da propriedade. O chamador da função deve liberar esse buffer chamando a [**função SslFreeBuffer.**](sslfreebuffer.md)
 
 </dd> <dt>
 
-*pcbOutput* \[ fora\]
+*pcbOutput* \[ out\]
 </dt> <dd>
 
-O tamanho, em bytes, do buffer *pbOutput* .
+O tamanho, em bytes, do buffer *pbOutput.*
 
 </dd> <dt>
 
-*dwFlags* \[ no\]
+*dwFlags* \[ Em\]
 </dt> <dd>
 
 Esse parâmetro é reservado para uso futuro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for realizada com sucesso, ela retornará zero.
+Se a função for bem-sucedida, ela retornará zero.
 
-Se a função falhar, ela retornará um valor de erro diferente de zero.
+Se a função falhar, ela retornará um valor de erro diferentes de zero.
 
-Os códigos de retorno possíveis incluem, mas não se limitam a, o seguinte.
+Os possíveis códigos de retorno incluem, mas não estão limitados a, o seguinte.
 
 
 
-| Código/valor de retorno                                                                                                                                                       | Descrição                                             |
+| Valor/código de retorno                                                                                                                                                       | Descrição                                             |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| <dl> <dt>**Nte \_ \_Identificador inválido**</dt> <dt>0x80090026L</dt> </dl>    | Um dos identificadores fornecidos não é válido.<br/>    |
-| <dl> <dt>**Nte \_ \_Parâmetro inválido**</dt> <dt>0x80090027L</dt> </dl> | Um dos parâmetros fornecidos não é válido.<br/> |
+| <dl> <dt>**NTE \_ HANDLE \_ INVÁLIDO**</dt> <dt>0x80090026L</dt> </dl>    | Um dos alças fornecidos não é válido.<br/>    |
+| <dl> <dt>**NTE \_ PARÂMETRO \_ INVÁLIDO**</dt> <dt>0x80090027L</dt> </dl> | Um dos parâmetros fornecidos não é válido.<br/> |
 
 
 
@@ -103,9 +103,9 @@ Os códigos de retorno possíveis incluem, mas não se limitam a, o seguinte.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                     |
+| parâmetro<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

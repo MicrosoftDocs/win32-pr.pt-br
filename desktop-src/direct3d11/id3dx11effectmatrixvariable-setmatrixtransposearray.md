@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f70676b76658b5732c1a2ee15858f83694272b4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0ff122a5c38d4d3d0a3eee96537077b8a09695c52cefe77b39c5f9b2a804692c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119046054"
 ---
 # <a name="id3dx11effectmatrixvariablesetmatrixtransposearray-method"></a>Método ID3DX11EffectMatrixVariable:: SetMatrixTransposeArray
 
@@ -72,7 +72,7 @@ O número de matrizes na matriz a ser definido.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

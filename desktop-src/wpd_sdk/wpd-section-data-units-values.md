@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 60d6f3b26e525375f834bde151548e4d41ce53f9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 02311531d3adb2be2832708d5a5295f9514f6a6e3d20a48205d1f720592d9e61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118696244"
 ---
 # <a name="wpd_section_data_units_values-enumeration"></a>\_Enumeração de \_ valores de unidades de dados da seção WPD \_ \_
 
 A enumeração de **valores das unidades de \_ dados da seção \_ \_ \_ WPD** indica as unidades de uma seção de dados referenciada.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++

@@ -4,26 +4,26 @@ ms.assetid: c94d8584-f01b-469b-a0d6-5fb14796b93e
 title: PROV_SSL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 60c03050af4a6ee43e25abd912e30f27fef5874b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3667bbac41f265ac7508560621d471d2c66a0c67d7bd4054eca060afbf5f7e3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118901495"
 ---
 # <a name="prov_ssl"></a>PROV \_ SSL
 
-O \_ tipo de provedor de SSL Prov oferece suporte ao protocolo protocolo SSL (SSL).
+O tipo de provedor \_ PROV SSL dá suporte ao protocolo protocolo SSL (SSL).
 
 ## <a name="algorithms-supported"></a>Algoritmos com suporte
 
-Para obter descrições de cada um desses algoritmos, consulte o Glossário.
+Para ver descrições de cada um desses algoritmos, confira o glossário.
 
 
 
 | Finalidade      | Algoritmos compatíveis                                        |
 |--------------|-------------------------------------------------------------|
-| Troca de chaves | [*RSA*](../secgloss/r-gly.md) |
+| Chave Exchange | [*RSA*](../secgloss/r-gly.md) |
 | Assinatura    | RSA                                                         |
 | Criptografia   | Varia                                                      |
 | Hash      | Varia                                                      |
@@ -34,7 +34,7 @@ Para obter descrições de cada um desses algoritmos, consulte o Glossário.
 
 ## <a name="related-documentation"></a>Documentação relacionada
 
-Uma especificação que explica o protocolo SSL está disponível no Netscape Communications Corporation.
+Uma especificação que explica o protocolo SSL está disponível na Netscape Communications Corporation.
 
  
 

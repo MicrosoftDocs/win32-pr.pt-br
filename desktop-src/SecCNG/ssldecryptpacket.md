@@ -1,7 +1,7 @@
 ---
-description: Descriptografa um único pacote de protocolo SSL (Single protocolo SSL Protocol).
+description: Descriptografa um único protocolo SSL protocolo SSL.
 ms.assetid: 22a7dd2b-d023-47b9-8f76-1c17c2dd6466
-title: Função SslDecryptPacket (Sslprovider. h)
+title: Função SslDecryptPacket (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: cd568596b7e780242c0ff8d9c522a9e1758c60b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b058fbb01183ccf0582c0fa196bec71bfaffa2e8a44739c1ea5fb01a8148174
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906698"
 ---
 # <a name="ssldecryptpacket-function"></a>Função SslDecryptPacket
 
-a função **SslDecryptPacket** descriptografa um único pacote de protocolo SSL (Single [*protocolo SSL Protocol*](/windows/desktop/SecGloss/s-gly) ).
+A **função SslDecryptPacket** descriptografa um [*único*](/windows/desktop/SecGloss/s-gly) pacote SSL (protocolo protocolo SSL protocolo SSL).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,82 +47,82 @@ SECURITY_STATUS WINAPI SslDecryptPacket(
 
 <dl> <dt>
 
-*hSslProvider* \[ no\]
+*hSslProvider* \[ Em\]
 </dt> <dd>
 
-O identificador da instância do provedor de protocolo SSL.
+O handle da instância do provedor de protocolo SSL.
 
 </dd> <dt>
 
-*HKEY* \[ entrada, saída\]
+*hKey* \[ in, out\]
 </dt> <dd>
 
-O identificador para a chave que é usada para descriptografar o pacote.
+O handle para a chave usada para descriptografar o pacote.
 
 </dd> <dt>
 
-*pbInput* \[ no\]
+*pbInput* \[ Em\]
 </dt> <dd>
 
 Um ponteiro para o buffer que contém o pacote a ser descriptografado.
 
 </dd> <dt>
 
-*cbInput* \[ no\]
+*cbInput* \[ Em\]
 </dt> <dd>
 
-O comprimento, em bytes, do buffer *pbInput* .
+O comprimento, em bytes, do *buffer pbInput.*
 
 </dd> <dt>
 
-*pbOutput* \[ fora\]
+*pbOutput* \[ out\]
 </dt> <dd>
 
-Um ponteiro para um buffer que contém o pacote descriptografado.
+Um ponteiro para um buffer para conter o pacote descriptografado.
 
 </dd> <dt>
 
-*cbOutput* \[ no\]
+*cbOutput* \[ Em\]
 </dt> <dd>
 
-O comprimento, bytes, do buffer *pbOutput* .
+O comprimento, bytes, do buffer *pbOutput.*
 
 </dd> <dt>
 
-*pcbResult* \[ fora\]
+*pcbResult* \[ out\]
 </dt> <dd>
 
-O número de bytes gravados no buffer *pbOutput* .
+O número de bytes gravados no buffer *pbOutput.*
 
 </dd> <dt>
 
-*SequenceNumber* \[ no\]
+*SequenceNumber* \[ Em\]
 </dt> <dd>
 
 O número de sequência que corresponde a este pacote.
 
 </dd> <dt>
 
-*dwFlags* \[ no\]
+*dwFlags* \[ Em\]
 </dt> <dd>
 
 Esse parâmetro é reservado para uso futuro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for realizada com sucesso, ela retornará zero.
+Se a função for bem-sucedida, ela retornará zero.
 
-Se a função falhar, ela retornará um valor de erro diferente de zero.
+Se a função falhar, ela retornará um valor de erro diferentes de zero.
 
-Os códigos de retorno possíveis incluem, mas não se limitam a, o seguinte.
+Os possíveis códigos de retorno incluem, mas não estão limitados a, o seguinte.
 
 
 
-| Código/valor de retorno                                                                                                                                                    | Descrição                                          |
+| Valor/código de retorno                                                                                                                                                    | Descrição                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| <dl> <dt>**Nte \_ \_Identificador inválido**</dt> <dt>0x80090026L</dt> </dl> | Um dos identificadores fornecidos não é válido.<br/> |
+| <dl> <dt>**NTE \_ HANDLE \_ INVÁLIDO**</dt> <dt>0x80090026L</dt> </dl> | Um dos alças fornecidos não é válido.<br/> |
 
 
 
@@ -138,9 +138,9 @@ O comprimento do pacote pode ser zero, como quando uma mensagem "HelloRequest" �
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                     |
+| parâmetro<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

@@ -4,12 +4,12 @@ ms.assetid: f53cecaa-dee7-4b02-a4ac-ffbd917f73aa
 title: Usando o modo sem janela
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 393b112c6d340c3440521876da08111dd4bb0e81
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5189fb52932a328493baec9a79ccd6598a9a0659c198ee3ce3d4d157574a63c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119271246"
 ---
 # <a name="using-windowless-mode"></a>Usando o modo sem janela
 
@@ -18,7 +18,7 @@ O [filtro de processador de mixagem de vídeo 7](video-mixing-renderer-filter-7.
 Para manter a compatibilidade com versões anteriores com os aplicativos existentes, o VMR usa como padrão o modo de janela. No modo de janela, o renderizador cria sua própria janela para exibir o vídeo. Normalmente, o aplicativo define a janela de vídeo como um filho da janela do aplicativo. No entanto, a existência de uma janela de vídeo separada causa alguns problemas:
 
 -   O mais importante é que haja um potencial para deadlocks se as mensagens de janela forem enviadas entre threads.
--   O Gerenciador do grafo de filtro deve encaminhar certas mensagens da janela, como \_ o WM Paint, ao processador de vídeo. O aplicativo deve usar a implementação do Gerenciador de grafo de filtro do [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) (e não do processador de vídeo), para que o Gerenciador do grafo de filtro Mantenha o estado interno correto.
+-   o filtro Graph Manager deve encaminhar certas mensagens da janela, como \_ o WM PAINT, ao processador de vídeo. o aplicativo deve usar o filtro Graph implementação do gerenciador de [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) (e não do processador de vídeo), para que o filtro Graph gerenciador mantenha o estado interno correto.
 -   Para receber eventos de mouse ou de teclado da janela de vídeo, o aplicativo deve definir uma *drenagem de mensagem*, fazendo com que a janela de vídeo encaminhe essas mensagens para o aplicativo.
 -   Para evitar problemas de recorte, a janela de vídeo deve ter os estilos de janela corretos.
 
@@ -34,7 +34,7 @@ Para substituir o comportamento padrão do VMR, configure o VMR antes de criar o
 
 **VMR-7**
 
-1.  Crie o Gerenciador de gráfico de filtro.
+1.  crie o filtro Graph Manager.
 2.  Crie o VMR-7 e adicione-o ao grafo de filtro.
 3.  Chame [**IVMRFilterConfig:: Setrenderizamode**](/windows/desktop/api/Strmif/nf-strmif-ivmrfilterconfig-setrenderingmode) no VMR-7 com o sinalizador **VMRMode \_ sem janela** .
 4.  Consulte o VMR-7 para a interface [**IVMRWindowlessControl**](/windows/desktop/api/Strmif/nn-strmif-ivmrwindowlesscontrol) .
@@ -42,13 +42,13 @@ Para substituir o comportamento padrão do VMR, configure o VMR antes de criar o
 
 **VMR-9**
 
-1.  Crie o Gerenciador de gráfico de filtro.
+1.  crie o filtro Graph Manager.
 2.  Crie o VMR-9 e adicione-o ao grafo de filtro.
 3.  Chame [**IVMRFilterConfig9:: Setrenderizamode**](/previous-versions/windows/desktop/api/Vmr9/nf-vmr9-ivmrfilterconfig9-setrenderingmode) no VMR-9 com o sinalizador **VMR9Mode \_ sem janela** .
 4.  Consulte o VMR-9 para a interface [**IVMRWindowlessControl9**](/previous-versions/windows/desktop/api/Vmr9/nn-vmr9-ivmrwindowlesscontrol9) .
 5.  Chame [**IVMRWindowlessControl9:: SetVideoClippingWindow**](/previous-versions/windows/desktop/api/Vmr9/nf-vmr9-ivmrwindowlesscontrol9-setvideoclippingwindow) no VMR-9. Especifique um identificador para a janela em que o vídeo deve aparecer.
 
-Agora, compile o restante do grafo de filtro chamando [**IGraphBuilder:: RenderFile**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-renderfile) ou outros métodos de criação de grafo. O Gerenciador de gráfico de filtro usa automaticamente a instância do VMR que você adicionou ao grafo. (Para obter detalhes sobre por que isso acontece, consulte [conexão inteligente](intelligent-connect.md).)
+Agora, compile o restante do grafo de filtro chamando [**IGraphBuilder:: RenderFile**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-renderfile) ou outros métodos de criação de grafo. o filtro Graph Manager usa automaticamente a instância do VMR que você adicionou ao grafo. (para obter detalhes sobre por que isso acontece, consulte [Intelligent Conexão](intelligent-connect.md).)
 
 O código a seguir mostra uma função auxiliar que cria o VMR-7, adiciona-o ao grafo e define o modo sem janela.
 

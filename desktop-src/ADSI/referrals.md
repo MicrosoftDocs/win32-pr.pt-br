@@ -7,12 +7,12 @@ keywords:
 - ADSI de referências
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e79e6b2e8a737f6bb40386effd68f7f31d8d490d
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 1d5fb6ad299c2f47efa9723857b53cf7eee5350589757153eaaae869b2c37e6b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104084888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119444016"
 ---
 # <a name="referrals-adsi"></a>Referências (ADSI)
 
@@ -43,16 +43,16 @@ Active Directory oferece serviços de referência de pesquisa. Um cliente pode e
 > [!Note]  
 > No Active Directory, o catálogo global contém todos os objetos em uma determinada empresa. Pesquisar um servidor de catálogo global produz um desempenho melhor do que a busca de referências de um servidor para outro.
 
- 
+ 
 
 Na maioria dos casos, a caça de referência será transparente para o chamador. Se a referência for para um objeto em um domínio ou floresta diferente, a API LDAP subjacente tentará usar as credenciais atuais para associar ao destino da referência. Se isso for bem-sucedido, a caça de referência será transparente. Se isso não for bem-sucedido, a referência e um código de erro de referência serão retornados.
 
 Para obter mais informações sobre como usar as opções de caça de referência com uma interface de pesquisa específica, consulte:
 
 -   [Caça de referência com IDirectorySearch](referral-chasing-with-idirectorysearch.md)
--   [Pesquisando com ActiveX Data Objects](searching-with-activex-data-objects-ado.md)
+-   [pesquisando com ActiveX Data Objects](searching-with-activex-data-objects-ado.md)
 -   [Pesquisando com OLE DB](searching-with-ole-db.md)
 
- 
+ 
 
- 
+ 

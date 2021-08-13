@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3301c00ca1f0534c83828e83e97bad5bc4e8d49f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5bb9b7fc229ed5f5cb759b0f4e83a36a0c802c3fc611c13dbd8511f913a9db8c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105751110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119275047"
 ---
 # <a name="esentlanguagenotsupportedexception-constructor"></a>Construtor EsentLanguageNotSupportedException
 
 Inicializa uma nova instância da classe EsentLanguageNotSupportedException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentLanguageNotSupportedException()
 
 [Classe EsentLanguageNotSupportedException](./esentlanguagenotsupportedexception-class.md)
 
-[Membros do EsentLanguageNotSupportedException](./esentlanguagenotsupportedexception-members.md)
+[Membros EsentLanguageNotSupportedException](./esentlanguagenotsupportedexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

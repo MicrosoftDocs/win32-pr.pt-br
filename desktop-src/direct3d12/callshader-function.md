@@ -12,18 +12,18 @@ api_name:
 - CallShader
 api_type:
 - NA
-ms.openlocfilehash: 8c5cdf4e0a71430d6375fd75ca553f92ca9539b9
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e411ef61c34eafcef71f3e68f6700651e4b3073423afd40451f139f02826e504
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105812091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119280346"
 ---
 # <a name="callshader-function"></a>Função CallShader
 
 Invoca outro sombreador de dentro de um sombreador.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 Essa definição de função intrínseca é equivalente ao seguinte modelo de função:
 
 ```
@@ -46,7 +46,7 @@ Os parâmetros definidos pelo usuário a serem passados para o sombreador que po
 
 ## <a name="return-value"></a>Valor Retornado
 
-**void**
+**livre**
 
 ## <a name="remarks"></a>Comentários
 

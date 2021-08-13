@@ -4,12 +4,12 @@ ms.assetid: c17d0dda-6141-46da-8921-f83ba40158e2
 title: Propriedade MFPKEY_DECODER_DEINTERLACING (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e1380a880430988411e54de244ca613f696f4b6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 19440a6eb893590bad3c2462b88075137e73c1633955841a66102c7e6faf8d6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118738210"
 ---
 # <a name="mfpkey_decoder_deinterlacing-property"></a>\_Propriedade de DESentrelaçamento do decodificador MFPKEY \_
 
@@ -33,8 +33,8 @@ g \_ wszWMVCDecoderDeinterlacing
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
 | parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 
 

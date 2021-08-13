@@ -1,7 +1,7 @@
 ---
 description: Exporta o material de chave de acordo com o padrão RFC 5705.
 ms.assetid: 19624852-B1A6-4BB4-96AF-0457834DA294
-title: Função SslExportKeyingMaterial (Sslprovider. h)
+title: Função SslExportKeyingMaterial (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 906a7535b297f309c0c8471843ce07f43a110a3e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39aaebba64f92794e179af95a5a175e2603fccc40410989cfcd427c6a7a1a88e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663357"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906614"
 ---
 # <a name="sslexportkeyingmaterial-function"></a>Função SslExportKeyingMaterial
 
-Exporta o material de chave de acordo com o [padrão RFC 5705](https://tools.ietf.org/html/rfc5705). Essa função usa a função TLS pseudoaleatória para produzir um buffer de bytes de material de chave. Ele usa uma referência para o segredo mestre, o rótulo ASCII de desambiguação, valores aleatórios de cliente e servidor e, opcionalmente, os dados de contexto do aplicativo.
+Exporta o material de chave de acordo com o [padrão RFC 5705.](https://tools.ietf.org/html/rfc5705) Essa função usa a função pseudorandom TLS para produzir um buffer de byte de material de chave. Ele recebe uma referência ao segredo mestre, ao rótulo ASCII desambiguante, aos valores aleatórios do cliente e do servidor e, opcionalmente, aos dados de contexto do aplicativo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,89 +48,89 @@ SECURITY_STATUS WINAPI SslExportKeyingMaterial(
 
 <dl> <dt>
 
-*hSslProvider* \[ no\]
+*hSslProvider* \[ Em\]
 </dt> <dd>
 
-O identificador da instância do provedor de protocolo TLS.
+O handle da instância do provedor de protocolo TLS.
 
 </dd> <dt>
 
-*hMasterKey* \[ no\]
+*hMasterKey* \[ Em\]
 </dt> <dd>
 
-O identificador do objeto de chave mestra que será usado para criar o material de chaveamento para br exportado.
+O identificador do objeto de chave mestra que será usado para criar o material de chave para br exportado.
 
 </dd> <dt>
 
-*sLabel* \[ no\]
+*sLabel* \[ Em\]
 </dt> <dd>
 
-uma cadeia de caracteres de rótulo ASCII terminada por NUL. O Schannel removerá o caractere de terminação do NUL antes de passá-lo para a função pseudoaleatória.
+uma cadeia de caracteres de rótulo ASCII terminada em NUL. O Schannel removerá o caractere NUL de terminação antes de passá-lo para a função pseudorandom.
 
 </dd> <dt>
 
-*pbRandoms* \[ no\]
+*pbRandoms* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para um buffer que contém uma concatenação do *cliente \_ aleatório* e os *valores \_ aleatórios do servidor* da conexão TLS.
+Um ponteiro para um buffer que contém uma *\_* concatenação dos valores *aleatórios \_* do cliente e do servidor da conexão TLS.
 
 </dd> <dt>
 
-*cbRandoms* \[ no\]
+*cbRandoms* \[ Em\]
 </dt> <dd>
 
-O comprimento, em bytes, do buffer *pbRandoms* .
+O comprimento, em bytes, do *buffer pbRandoms.*
 
 </dd> <dt>
 
-*pbContextValue* \[ em, opcional\]
+*pbContextValue* \[ in, opcional\]
 </dt> <dd>
 
-Um ponteiro para um buffer que contém o contexto do aplicativo. Se *pbContextValue* for **nulo**, *cbContextValue* deverá ser zero.
+Um ponteiro para um buffer que contém o contexto do aplicativo. Se *pbContextValue* for **NULL,** *cbContextValue* deverá ser zero.
 
 </dd> <dt>
 
-*cbContextValue* \[ no\]
+*cbContextValue* \[ Em\]
 </dt> <dd>
 
-O comprimento, em bytes, do buffer *pbContextValue* .
+O comprimento, em bytes, do *buffer pbContextValue.*
 
 </dd> <dt>
 
-*pbOutput* \[ fora\]
+*pbOutput* \[ out\]
 </dt> <dd>
 
-O endereço de um buffer que recebe o material de chave exportado. O parâmetro *cbOutput* contém o tamanho desse buffer. Esse valor não pode ser **nulo**.
+O endereço de um buffer que recebe o material de chave exportado. O *parâmetro cbOutput* contém o tamanho desse buffer. Esse valor não pode ser **NULL.**
 
 </dd> <dt>
 
-*cbOutput* \[ no\]
+*cbOutput* \[ Em\]
 </dt> <dd>
 
-O comprimento, em bytes, do buffer *pbOutput* . Deve ser maior que zero.
+O comprimento, em bytes, do *buffer pbOutput.* Deve ser maior que zero.
 
 </dd> <dt>
 
-*dwFlags* \[ no\]
+*dwFlags* \[ Em\]
 </dt> <dd>
 
 Não usado. Deve ser definido como zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for realizada com sucesso, ela retornará zero.
+Se a função for bem-sucedida, ela retornará zero.
 
-Se a função falhar, ela retornará um valor de erro diferente de zero.
+Se a função falhar, ela retornará um valor de erro diferentes de zero.
 
-Os códigos de retorno possíveis incluem, mas não se limitam a, o seguinte.
+Os possíveis códigos de retorno incluem, mas não estão limitados a, o seguinte.
 
 
 
-| Código/valor de retorno                                                                                                                                                    | Descrição                                          |
+| Valor/código de retorno                                                                                                                                                    | Descrição                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| <dl> <dt>**Nte \_ \_Identificador inválido**</dt> <dt>0x80090026L</dt> </dl> | Um dos identificadores fornecidos não é válido.<br/> |
+| <dl> <dt>**NTE \_ HANDLE \_ INVÁLIDO**</dt> <dt>0x80090026L</dt> </dl> | Um dos alças fornecidos não é válido.<br/> |
 
 
 
@@ -142,9 +142,9 @@ Os códigos de retorno possíveis incluem, mas não se limitam a, o seguinte.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2016 somente aplicativos da área de trabalho\]<br/>                                     |
+| parâmetro<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

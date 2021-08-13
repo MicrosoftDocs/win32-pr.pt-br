@@ -4,12 +4,12 @@ ms.assetid: 4956c4ab-b71e-4960-b750-f3a79b87baac
 title: Função QueryContextAttributes (CredSSP) (Sspi.h)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: 191c3c8d3b2b5bd829aaf8eb45bacadbbd2bbade
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b8ff421a2173f2ce2c5521e0706b53c3f6c326038179345d139acd0a157c7d61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105814599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118920225"
 ---
 # <a name="querycontextattributes-credssp-function"></a>Função QueryContextAttributes (CredSSP)
 
@@ -57,7 +57,7 @@ O atributo do contexto a ser retornado. Esse parâmetro pode usar um dos valores
 | <span id="SECPKG_ATTR_PACKAGE_INFO"></span><span id="secpkg_attr_package_info"></span><dl> <dt>**SECPKG \_ \_ \_ Informações do pacote attr**</dt> <dt>10</dt> </dl>                                                | O parâmetro *pBuffer* contém um ponteiro para uma [**estrutura \_ PackageInfo SecPkgContext**](/windows/win32/api/sspi/ns-sspi-secpkginfoa).<br/> Retorna informações sobre o SSP em uso.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | <span id="SECPKG_ATTR_SERVER_AUTH_FLAGS"></span><span id="secpkg_attr_server_auth_flags"></span><dl> <dt>**SECPKG \_ \_Sinalizadores de \_ autenticação \_ de servidor attr**</dt> <dt>0x80000083</dt> </dl>                        | O parâmetro *pBuffer* contém um ponteiro para uma estrutura de [**\_ sinalizadores SecPkgContext**](/windows/win32/api/sspi/ns-sspi-secpkgcontext_flags) que especifica informações sobre os sinalizadores no contexto de segurança atual.<br/> Esse atributo tem suporte apenas no cliente.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | <span id="SECPKG_ATTR_SIZES"></span><span id="secpkg_attr_sizes"></span><dl> <dt>**SECPKG \_ \_Tamanhos de attr**</dt> <dt>0x0</dt> </dl>                                                                     | O parâmetro *pBuffer* contém um ponteiro para uma estrutura de [**\_ tamanhos de SecPkgContext**](/windows/win32/api/sspi/ns-sspi-secpkgcontext_sizes) .<br/> Consulta os tamanhos das estruturas usadas nas trocas de autenticação e funções por mensagem.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| <span id="SECPKG_ATTR_SUBJECT_SECURITY_ATTRIBUTES"></span><span id="secpkg_attr_subject_security_attributes"></span><dl> <dt>**SECPKG \_ \_Atributos de \_ segurança \_ da entidade attr**</dt> <dt>124</dt> </dl> | O parâmetro *pBuffer* contém um ponteiro para uma [**estrutura \_ subjectattributes do SecPkgContext**](/windows/win32/api/sspi/ns-sspi-secpkgcontext_subjectattributes) .<br/> Esse valor retorna informações sobre os atributos de segurança para a conexão.<br/> Esse valor só tem suporte no servidor CredSSP.<br/> **Windows server 2008, Windows Vista, Windows server 2003 e Windows XP:** Não há suporte para esse valor.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| <span id="SECPKG_ATTR_SUBJECT_SECURITY_ATTRIBUTES"></span><span id="secpkg_attr_subject_security_attributes"></span><dl> <dt>**SECPKG \_ \_Atributos de \_ segurança \_ da entidade attr**</dt> <dt>124</dt> </dl> | O parâmetro *pBuffer* contém um ponteiro para uma [**estrutura \_ subjectattributes do SecPkgContext**](/windows/win32/api/sspi/ns-sspi-secpkgcontext_subjectattributes) .<br/> Esse valor retorna informações sobre os atributos de segurança para a conexão.<br/> Esse valor só tem suporte no servidor CredSSP.<br/> **Windows server 2008, Windows Vista, Windows Server 2003 e Windows XP:** Não há suporte para esse valor.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
 
 
@@ -72,7 +72,7 @@ Um ponteiro para uma estrutura que recebe os atributos. O tipo de estrutura depe
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem sucedido, retornará s \_ E \_ OK.
 
@@ -101,8 +101,8 @@ Embora o chamador deva alocar a estrutura *pBuffer* em si, o SSP aloca qualquer 
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                   |
 | parâmetro<br/>                   | <dl> <dt>SSPI. h (incluir Security. h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Secur32. lib</dt> </dl>                 |
 | DLL<br/>                      | <dl> <dt>Secur32.dll</dt> </dl>                 |

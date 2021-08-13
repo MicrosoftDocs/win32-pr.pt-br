@@ -4,12 +4,12 @@ ms.assetid: 328544b3-0d5f-4d1a-9ad1-ac38402d5898
 title: Propriedade MFNETSOURCE_BROWSERWEBPAGE (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d5e8222761299cad229b692ef400f69d0968ebd4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6be6d64682f0f8d607e813927059360ff1273a33d87791fb7eab55ff10261e3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118739031"
 ---
 # <a name="mfnetsource_browserwebpage-property"></a>\_Propriedade MFNETSOURCE BROWSERWEBPAGE
 
@@ -43,8 +43,8 @@ Os aplicativos podem usar essa propriedade para configurar a origem da rede. Par
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
 | parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 

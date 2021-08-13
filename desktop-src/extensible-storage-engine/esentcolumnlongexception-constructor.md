@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: be5d05b3fe4b6b025bc2a995745b3c2f1b07c2e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ece3a4231fa9d5d1e0834e74e8e6d34da20656997551a6a848ae93d19b0aa16a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105762509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118782381"
 ---
 # <a name="esentcolumnlongexception-constructor"></a>Construtor EsentColumnLongException
 
 Inicializa uma nova instância da classe EsentColumnLongException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentColumnLongException()
 
 [Classe EsentColumnLongException](./esentcolumnlongexception-class.md)
 
-[Membros do EsentColumnLongException](./esentcolumnlongexception-members.md)
+[Membros EsentColumnLongException](./esentcolumnlongexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

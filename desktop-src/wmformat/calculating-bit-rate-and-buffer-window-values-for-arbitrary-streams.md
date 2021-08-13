@@ -1,6 +1,6 @@
 ---
-title: Calculando valores de taxa de bits e de janela de buffer para fluxos arbitrários
-description: Calculando valores de taxa de bits e de janela de buffer para fluxos arbitrários
+title: calculando valores de taxa de bits e de janela de Buffer para Fluxos arbitrários
+description: calculando valores de taxa de bits e de janela de Buffer para Fluxos arbitrários
 ms.assetid: 28ba863b-9c3e-4b0e-875d-6b696600888c
 keywords:
 - fluxos, taxas de bits
@@ -9,14 +9,14 @@ keywords:
 - fluxos, calculando taxas de bits para fluxos arbitrários
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45d704352d414b1fe5079fb068593c2d0d8b2f8c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6c86a866536bbe2565a3bc44bbe9f40743db26d948555bc6ec8a11eb60d7aa4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104004944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118434480"
 ---
-# <a name="calculating-bit-rate-and-buffer-window-values-for-arbitrary-streams"></a>Calculando valores de taxa de bits e de janela de buffer para fluxos arbitrários
+# <a name="calculating-bit-rate-and-buffer-window-values-for-arbitrary-streams"></a>calculando valores de taxa de bits e de janela de Buffer para Fluxos arbitrários
 
 Calcular a taxa de bits e a janela de buffer adequadas para um tipo de fluxo arbitrário não é uma ciência exata. Uma abordagem simples é definir a taxa de bits para corresponder ao tamanho do fluxo dividido por seu comprimento, em segundos. Por exemplo, um fluxo contendo um total de 68000 bits com duração de 20 segundos pode ter uma taxa de bits de 3400 bits por segundo (68000 bits/20 segundos = 3400 bits por segundo).
 
@@ -34,9 +34,9 @@ Para verificar a janela de buffer, multiplique a taxa de bits (bits por segundo)
 [**Configurando tipos de fluxo arbitrários**](configuring-arbitrary-stream-types.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,16 +4,16 @@ description: Caracteres
 ms.assetid: d3eac94b-7899-4695-b0e5-0276c1f5e9cb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9377a89866d5ce2feafc04c2db1e50be7fe95ce
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f39254ecf653cf1a81baf1e933fad2ffa9ee967cfa3036e1fb17f9bb3a61b3f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118752277"
 ---
 # <a name="characters"></a>Caracteres
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 A comunicação humana é fundamentalmente social. O Microsoft Agent permite que você aproveite esse aspecto de interação usando caracteres animados. Os usuários esperam que um caractere esteja em conformidade com as mesmas regras sociais, embora não necessariamente físicas, que eles usam ao interagir com outras pessoas, mesmo quando entendem que o caractere é sintético. Na medida em que você criar caracteres que atendam às suas expectativas, os usuários encontrarão seus caracteres mais verossímeis e likable. Portanto, a forma como você cria um caractere pode ter um efeito significativo em seu sucesso.
 
@@ -27,9 +27,9 @@ Além disso, decida se você planeja usar uma voz sintética (usando um mecanism
 
 Você também pode optar por usar o balão de palavras para saída e as configurações padrão para a fonte e a cor do balão. No entanto, observe que o usuário pode alterar os atributos de fonte e cor. Além disso, você não pode pressupor que o estado do balão de palavras permaneça constante porque o usuário pode desativar o balão de palavras.
 
- 
+ 
 
- 
+ 
 
 
 

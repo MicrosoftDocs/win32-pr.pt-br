@@ -4,28 +4,28 @@ ms.assetid: 6ee6eecb-3812-45c6-8b27-7dfd6fa82758
 title: Enumerando serviços
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2eca8221a9a34bf9e921bcaca00eac99f2a75d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 149384f9c4ab5cf352561d08b28a961c8074cc39c018cef6b5deb64307d107ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105810734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118697602"
 ---
 # <a name="enumerating-services"></a>Enumerando serviços
 
-O aplicativo WpdServicesApiSample inclui código que demonstra como um aplicativo pode enumerar todos os serviços de contatos encontrados em qualquer um dos dispositivos conectados no momento a um computador.
+O aplicativo WpdServicesApiSample inclui código que demonstra como um aplicativo pode enumerar todos os serviços de Contatos encontrados em qualquer um dos dispositivos conectados atualmente a um computador.
 
-Quando o usuário escolhe a opção "0" na linha de comando, o aplicativo invoca o método **EnumerateContactsServices** encontrado no módulo do perenumeration. cpp. Esse método exibe uma lista de todos os dispositivos conectados que dão suporte ao serviço de contatos.
+Quando o usuário escolhe a opção "0" na linha de comando, o aplicativo invoca o método **EnumerateContactsServices** encontrado no módulo ServiceEnumeration.cpp. Esse método exibe uma lista de todos os dispositivos conectados que são compatíveis com o serviço Contatos.
 
-Por exemplo, se o WpdServiceSampleDriver for o único dispositivo instalado, o aplicativo retornará três campos de dados: um nome amigável ("dispositivo de exemplo"), um fabricante ("grupo de dispositivos portáteis do Windows") e uma descrição ("dispositivo de serviço de contatos 2000").
+Por exemplo, se WpdServiceSampleDriver for o único dispositivo instalado, o aplicativo retornará três campos de dados: um Nome Amigável ("Dispositivo de Exemplo"), um Fabricante ("Grupo de Dispositivos Portáteis Windows") e uma Descrição ("Dispositivo de Serviço de Contatos 2000").
 
-O método **EnumerateContactsServices** realiza as seguintes tarefas:
+O **método EnumerateContactsServices** realiza as seguintes tarefas:
 
--   Cria uma interface [**IPortableDeviceManager**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicemanager) para lidar com a enumeração de dispositivos instalados.
--   Cria uma interface [**IPortableDeviceServiceManager**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemanager) para lidar com a enumeração dos serviços em cada dispositivo.
--   Itera através dos dispositivos instalados, pesquisando o serviço de contatos e exibe as informações do dispositivo para qualquer dispositivo que dê suporte a esse serviço.
+-   Cria uma [**interface IPortableDeviceManager**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicemanager) para manipular a enumeração de dispositivos instalados.
+-   Cria uma [**interface IPortableDeviceServiceManager**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemanager) para manipular a enumeração dos serviços em cada dispositivo.
+-   Itera pelos dispositivos instalados, pesquisando o serviço Contatos e exibe as informações do dispositivo para qualquer dispositivo que dá suporte a esse serviço.
 
-O código a seguir ilustra o método **EnumerateContactsServices** .
+O código a seguir ilustra o **método EnumerateContactsServices.**
 
 
 ```C++
@@ -147,10 +147,10 @@ void EumerateContactsServices(CAtlArray<PWSTR>& ContactsServicePnpIDs)
 
 <dl> <dt>
 
-[**Interface IPortableDeviceManager**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicemanager)
+[**IPortableDeviceManager Interface**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicemanager)
 </dt> <dt>
 
-[**Interface IPortableDeviceServiceManager**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemanager)
+[**IPortableDeviceServiceManager Interface**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemanager)
 </dt> <dt>
 
 [WpdServicesApiSample](wpdapisample-sample-service-application.md)

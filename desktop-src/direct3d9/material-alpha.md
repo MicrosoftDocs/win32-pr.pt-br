@@ -4,12 +4,12 @@ ms.assetid: fd477d8f-d838-4a08-a8c6-38678798e0b0
 title: Material alfa (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f07ac2c28b497167f7bd742ecd8176b82b61e8f8
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9a70ed4a3f5bcaf38f4ace079af5b2e1804af0e24340e5004898c9ed26707d40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118798973"
 ---
 # <a name="material-alpha-direct3d-9"></a>Material alfa (Direct3D 9)
 

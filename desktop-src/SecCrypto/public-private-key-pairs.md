@@ -4,12 +4,12 @@ ms.assetid: f75e5e6c-0a84-47ac-97db-5063327f7931
 title: Chaves assimétricas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73c475b1d0260bd20495d28ab542ca18c0d1cefa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 374ba5ae17610154e306f7bdafd895116e83371ea446babfa19b5c92c29a2247
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118901468"
 ---
 # <a name="asymmetric-keys"></a>Chaves assimétricas
 
@@ -27,7 +27,7 @@ Cada usuário geralmente tem dois [*pares de chaves públicas/privadas*](../secg
 
 Observe que, embora os contêineres de chave criados pela maioria dos CSPs ( [*provedores de serviços de criptografia*](../secgloss/c-gly.md) ) contenham dois pares de chaves, isso não é necessário. Alguns CSPs não armazenam nenhum [*par de chaves*](../secgloss/k-gly.md) enquanto outros CSPs armazenam mais de dois pares.
 
-Todas as chaves em CryptoAPI são armazenadas em CSPs. Os CSPs também são responsáveis por criar as chaves, destrui-las e usá-las para executar uma variedade de operações criptográficas. A exportação de chaves para fora do CSP para que elas possam ser enviadas a outros usuários é discutida em [armazenamento de chaves de criptografia e Exchange](cryptographic-key-storage-and-exchange.md).
+Todas as chaves em CryptoAPI são armazenadas em CSPs. Os CSPs também são responsáveis por criar as chaves, destrui-las e usá-las para executar uma variedade de operações criptográficas. a exportação de chaves para fora do CSP para que elas possam ser enviadas a outros usuários é discutida na [chave de criptografia Armazenamento e Exchange](cryptographic-key-storage-and-exchange.md).
 
  
 

@@ -1,6 +1,6 @@
 ---
 title: Exemplo de código para usar o intervalo para recuperar membros de um grupo
-description: O exemplo de código a seguir usa a variação com ADO (ActiveX Directory Objects) para recuperar os membros de um grupo.
+description: o exemplo de código a seguir usa a variação com o ADO (ActiveX Directory objects) para recuperar os membros de um grupo.
 ms.assetid: baebefd5-7ac6-4d36-a5a4-0796d790abee
 ms.tgt_platform: multiple
 keywords:
@@ -8,18 +8,18 @@ keywords:
 - código de exemplo C/C++ ADSI, usando variando para recuperar membros de um grupo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c596134b8c20bc777c77b65e6fe349884dda25a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 31d68920d19135387ec76003ca621472ea9266102d84930e4af84e13b886335b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103915900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118691839"
 ---
 # <a name="example-code-for-using-ranging-to-retrieve-members-of-a-group"></a>Exemplo de código para usar o intervalo para recuperar membros de um grupo
 
-O exemplo de código a seguir usa a variação com ADO (ActiveX Directory Objects) para recuperar os membros de um grupo.
+o exemplo de código a seguir usa a variação com o ADO (ActiveX Directory objects) para recuperar os membros de um grupo.
 
-O trecho de código a seguir requer uma referência à biblioteca do Microsoft ActiveX Data Objects 6,0.
+o trecho de código a seguir requer uma referência à biblioteca do Microsoft ActiveX Data Objects 6,0.
 
 
 ```VB
@@ -110,9 +110,9 @@ End Module
 
 
 
- 
+ 
 
- 
+ 
 
 
 

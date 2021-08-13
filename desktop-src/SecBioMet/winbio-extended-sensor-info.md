@@ -1,10 +1,10 @@
 ---
-title: Estrutura de WINBIO_EXTENDED_SENSOR_INFO (WinBio \_ Types. h)
-description: Contém informações sobre as capacidades e os requisitos de registro do adaptador do sensor para uma unidade biométrica.
+title: WINBIO_EXTENDED_SENSOR_INFO estrutura (Tipos \_ winbio.h)
+description: Contém informações sobre os recursos e os requisitos de registro do adaptador de sensor para uma unidade biométrica.
 ms.assetid: 37D8BC57-F68D-487A-98B0-94D62CC091C2
 keywords:
-- API de Windows Biometric Framework de estrutura de WINBIO_EXTENDED_SENSOR_INFO
-- Ponteiro de estrutura de PWINBIO_EXTENDED_SENSOR_INFO Windows Biometric Framework API
+- WINBIO_EXTENDED_SENSOR_INFO estrutura Windows API do Biometric Framework
+- PWINBIO_EXTENDED_SENSOR_INFO de estrutura Windows API do Biometric Framework
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c535ef56eeade897aac3c1d0503477da406935b1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dd8c323b4f4e3847c399e314da22048f658fb68c3b07ecf82f71ce0ed327c368
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118910414"
 ---
-# <a name="winbio_extended_sensor_info-structure"></a>\_Estrutura de \_ informações do sensor ESTENDIdo WINBIO \_
+# <a name="winbio_extended_sensor_info-structure"></a>Estrutura WINBIO \_ EXTENDED \_ SENSOR \_ INFO
 
-Contém informações sobre as capacidades e os requisitos de registro do adaptador do sensor para uma unidade biométrica.
+Contém informações sobre os recursos e os requisitos de registro do adaptador de sensor para uma unidade biométrica.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -71,14 +71,14 @@ Os recursos genéricos do componente de sensor que está conectado a uma unidade
 **Fator**
 </dt> <dd>
 
-O tipo de unidade biométrica para o qual essa estrutura contém informações sobre recursos e requisitos de registro do adaptador do sensor. Por exemplo, se o valor do membro **factor** for **WINBIO \_ tipo \_ impressão digital**, a estrutura de **\_ \_ \_ informações do sensor estendido WINBIO** se aplicará a um leitor de impressão digital e conterá as informações relevantes na estrutura **específico. FINGERPRINT** .
+O tipo de unidade biométrica para a qual essa estrutura contém informações sobre os recursos e os requisitos de registro do adaptador de sensor. Por exemplo, se o  valor do membro Factor for **WINBIO \_ TYPE \_ FINGERPRINT**, a estrutura **WINBIO \_ EXTENDED SENSOR \_ \_ INFO** se aplicará a um leitor de impressão digital e conterá as informações relevantes na estrutura **Specifc.Fingerprint.**
 
 </dd> <dt>
 
-**Específicas**
+**Específico**
 </dt> <dd>
 
-Informações sobre as capacidades e os requisitos de registro do adaptador do sensor para uma unidade biométrica relacionada a um fator biométrico específico.
+Informações sobre os recursos e os requisitos de registro do adaptador de sensor para uma unidade biométrica relacionada a um fator biométrico específico.
 
 <dl> <dt>
 
@@ -92,35 +92,35 @@ Reservado. Deve ser zero.
 **FacialFeatures**
 </dt> <dd>
 
-Informações sobre as capacidades e os requisitos de registro do adaptador do sensor para uma unidade biométrica relacionada aos recursos faciais.
+Informações sobre os recursos e os requisitos de registro do adaptador de sensor para uma unidade biométrica relacionada a recursos faciais.
 
 <dl> <dt>
 
-**Quadros**
+**FrameSize**
 </dt> <dd>
 
-O tamanho do quadro da câmera, indicado como um comprimento e uma largura em pixels pelos membros **direito** e **inferior** da estrutura [**Rect**](/previous-versions//dd162897(v=vs.85)) . O ponto (0, 0) representa o canto superior esquerdo do quadro.
+O tamanho do quadro da câmera, indicado como um  comprimento e largura em pixels pelos membros direito e **inferior** da [**estrutura RECT.**](/previous-versions//dd162897(v=vs.85)) O ponto (0, 0) representa o canto superior esquerdo do quadro.
 
 </dd> <dt>
 
 **FrameOffset**
 </dt> <dd>
 
-O deslocamento do quadro da câmera para a face da câmera de vídeo, em pixels. Um valor de (0, 0) indica que o quadro da câmera para a face e a câmera de vídeo se sobrepõem completamente.
+O deslocamento do quadro da câmera para o rosto da câmera de vídeo, em pixels. Um valor de (0, 0) indica que o quadro da câmera para o rosto e a câmera de vídeo se sobrepõem completamente.
 
 </dd> <dt>
 
 **MandatoryOrientation**
 </dt> <dd>
 
-A orientação preferida para a câmera.
+A orientação preferencial para a câmera.
 
 </dd> </dl> </dd> <dt>
 
 **Fingerprint**
 </dt> <dd>
 
-Informações sobre as capacidades e os requisitos de registro do adaptador do sensor para uma unidade biométrica relacionada a padrões de impressão digital.
+Informações sobre os recursos e os requisitos de registro do adaptador de sensor para uma unidade biométrica relacionada a padrões de impressão digital.
 
 <dl> <dt>
 
@@ -131,38 +131,38 @@ Reservado.
 
 </dd> </dl> </dd> <dt>
 
-**Íris**
+**Iris**
 </dt> <dd>
 
-Informações sobre as capacidades e os requisitos de registro do adaptador do sensor para uma unidade biométrica relacionada a padrões de íris.
+Informações sobre os recursos e os requisitos de registro do adaptador de sensor para uma unidade biométrica relacionada aos padrões de íris.
 
 <dl> <dt>
 
-**Quadros**
+**FrameSize**
 </dt> <dd>
 
-O tamanho do quadro da câmera, indicado como um comprimento e uma largura em pixels pelos membros **direito** e **inferior** da estrutura [**Rect**](/previous-versions//dd162897(v=vs.85)) . O ponto (0, 0) representa o canto superior esquerdo do quadro.
+O tamanho do quadro da câmera, indicado como um  comprimento e largura em pixels pelos membros direito e **inferior** da [**estrutura RECT.**](/previous-versions//dd162897(v=vs.85)) O ponto (0, 0) representa o canto superior esquerdo do quadro.
 
 </dd> <dt>
 
 **FrameOffset**
 </dt> <dd>
 
-O deslocamento do quadro da câmera da íris da câmera de vídeo, em pixels. Um valor de (0, 0) indica que o quadro da câmera para a íris e a câmera de vídeo se sobrepõem completamente.
+O deslocamento do quadro da câmera para a íris da câmera de vídeo, em pixels. Um valor de (0, 0) indica que o quadro da câmera para a íris e a câmera de vídeo se sobrepõem completamente.
 
 </dd> <dt>
 
 **MandatoryOrientation**
 </dt> <dd>
 
-A orientação preferida para a câmera.
+A orientação preferencial para a câmera.
 
 </dd> </dl> </dd> <dt>
 
 **Voz**
 </dt> <dd>
 
-Informações sobre as capacidades e os requisitos de registro do adaptador do sensor para uma unidade biométrica relacionada a padrões de voz.
+Informações sobre os recursos e os requisitos de registro do adaptador de sensor para uma unidade biométrica relacionada aos padrões de voz.
 
 <dl> <dt>
 
@@ -179,9 +179,9 @@ Reservado.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h para aplicativos cliente ou WinBio \_ Adapters. h para adaptadores)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                                                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2016 somente aplicativos da área de trabalho\]<br/>                                                                                                                     |
+| parâmetro<br/>                   | <dl> <dt>Winbio \_ types.h (inclua Winbio.h para aplicativos cliente ou \_ adaptadores Winbio.h para adaptadores)</dt> </dl> |
 
 
 
@@ -189,13 +189,13 @@ Reservado.
 
 <dl> <dt>
 
-[**\_Constantes de recurso WINBIO**](winbio-capability-constants.md)
+[**Constantes \_ WINBIO CAPABILITY**](winbio-capability-constants.md)
 </dt> <dt>
 
-[**\_Constantes de tipo BIOMÉTRICO WINBIO \_**](winbio-biometric-type-constants.md)
+[**Constantes \_ DE TIPO \_ BIOMÉTRICO WINBIO**](winbio-biometric-type-constants.md)
 </dt> <dt>
 
-[**Constantes de orientação de WINBIO \_**](winbio-orientation-constants.md)
+[**Constantes \_ DE ORIENTAÇÃO WINBIO**](winbio-orientation-constants.md)
 </dt> </dl>
 
  

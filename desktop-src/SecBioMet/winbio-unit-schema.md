@@ -4,7 +4,7 @@ description: Descreve os recursos de uma unidade biométrica.
 ms.assetid: b20adf18-2948-481f-9d12-8da17aa152f7
 keywords:
 - API de Windows Biometric Framework de estrutura de WINBIO_UNIT_SCHEMA
-- Ponteiro de estrutura de PWINBIO_UNIT_SCHEMA Windows Biometric Framework API
+- ponteiro de estrutura de PWINBIO_UNIT_SCHEMA Windows Biometric Framework API
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c217be1e0c6bde740c815f5a990509a6a87ef0f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ae91ae5353aa0e9c02414e90a8364d86bdc56c0cdcc4f4586656f28f92f100ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919136"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118909165"
 ---
 # <a name="winbio_unit_schema-structure"></a>Estrutura de esquema de \_ unidade WINBIO \_
 
@@ -109,7 +109,7 @@ Um bitmask dos recursos do sensor biométrico. Isso pode ser um valor de bits **
 -   \_indicador de funcionalidade de WINBIO \_
 -   \_ \_ sensor virtual de funcionalidade de WINBIO \_
     > [!Note]  
-    > A constante do **\_ \_ \_ sensor virtual de funcionalidade do WINBIO** se aplica somente ao Windows 10 e posterior.
+    > a constante do **\_ \_ \_ SENSOR VIRTUAL de funcionalidade do WINBIO** aplica-se somente ao Windows 10 e posterior.
 
      
 
@@ -163,8 +163,8 @@ Uma estrutura de [**\_ versão do WINBIO**](winbio-version.md) que contém os n�
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                                    |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                                       |
 | parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h)</dt> </dl> |
 
 

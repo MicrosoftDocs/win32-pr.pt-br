@@ -1,19 +1,19 @@
 ---
-description: Especifica uma tarefa do serviço de Agendador de classes de multimídia (MMCSS) para uma ramificação de topologia.
+description: Especifica uma tarefa MMCSS (Serviço de Agendador de Classe Multimídia) para um branch de topologia.
 ms.assetid: 8668d0f1-9d54-4c56-bb19-09498252bec4
-title: Atributo MF_TOPONODE_WORKQUEUE_MMCSS_CLASS (Mfidl. h)
+title: MF_TOPONODE_WORKQUEUE_MMCSS_CLASS atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 824c9dbdc9b12bbc8fead9ab6ae722fca1e6643a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6630cf22d3afe270b2a032304fd9de3118e73e75e28da4116418894271237a71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105766559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118739840"
 ---
-# <a name="mf_toponode_workqueue_mmcss_class-attribute"></a>\_Atributo de classe MF TOPONODE \_ fila \_ MMCSS \_
+# <a name="mf_toponode_workqueue_mmcss_class-attribute"></a>Atributo MF \_ TOPNODE \_ WORKQUEUE \_ MMCSS \_ CLASS
 
-Especifica uma tarefa do [serviço de Agendador de classes de multimídia](../procthread/multimedia-class-scheduler-service.md) (MMCSS) para uma ramificação de topologia.
+Especifica uma tarefa [MMCSS (Serviço](../procthread/multimedia-class-scheduler-service.md) de Agendador de Classe Multimídia) para um branch de topologia.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -21,11 +21,11 @@ Cadeia de caracteres largos
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo se aplica a nós de origem (**\_ nó de \_ SOURCESTREAM \_ de topologia MF**). Esse atributo é opcional.
+Esse atributo se aplica aos nós de origem **(NÓ SOURCESTREAM DA \_ \_ TOPOLOGIA \_ do MF).** Esse atributo é opcional.
 
-Esse atributo requer o atributo de [ID de fila de TOPONODE do MF \_ \_ \_ ](mf-toponode-workqueue-id-attribute.md) . Se você definir esse atributo, defina também o atributo de **\_ ID de \_ fila \_ de teleTOPONODE MF** definido no mesmo nó.
+Esse atributo requer o [atributo MF \_ TOPONODE \_ WORKQUEUE \_ ID.](mf-toponode-workqueue-id-attribute.md) Se você definir esse atributo, também definirá se o atributo ID DE **\_ \_ WORKQUEUE \_ MF TOPONODE** será definido no mesmo nó.
 
-A constante de GUID para esse atributo é exportada de mfuuid. lib.
+A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,9 +33,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                               |
+| parâmetro<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -43,13 +43,13 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring)
+[**IMFAttributes::GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring)
 </dt> <dt>
 
-[**IMFAttributes:: SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring)
+[**IMFAttributes::SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring)
 </dt> <dt>
 
 [**IMFTopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)
@@ -58,16 +58,16 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 [**IMFWorkQueueServices::BeginRegisterTopologyWorkQueuesWithMMCSS**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-beginregistertopologyworkqueueswithmmcss)
 </dt> <dt>
 
-[**\_ID da \_ fila de TOPONODE MF \_**](mf-toponode-workqueue-id-attribute.md)
+[**\_ID DE \_ WORKQUEUE DO MF TOPONODE \_**](mf-toponode-workqueue-id-attribute.md)
 </dt> <dt>
 
-[**\_TaskId TOPONODE \_ fila \_ de \_ tarefas do MMCSS**](mf-toponode-workqueue-mmcss-taskid-attribute.md)
+[**MF \_ TOPONODE \_ WORKQUEUE \_ MMCSS \_ TASKID**](mf-toponode-workqueue-mmcss-taskid-attribute.md)
 </dt> <dt>
 
 [Atributos de nó de topologia](topology-node-attributes.md)
 </dt> <dt>
 
-[Filas de trabalho](work-queues.md)
+[Filas de Trabalho](work-queues.md)
 </dt> </dl>
 
  

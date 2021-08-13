@@ -13,28 +13,28 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 1890ff127f60188deae8fdad251e44b3edb614f7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a59aa1d9f7bdc5babc29461ca90c01b6fe604482cb78ba6549e782b1e34d54b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119251996"
 ---
 # <a name="componentinfo-object"></a>Objeto ComponentInfo
 
 O objeto ComponentInfo representa detalhes adicionais sobre um componente que pode ser obtido por meio de uma chamada de MsiGetComponentPathEx.
 
-**[Windows Installer 4,5 ou anterior](not-supported-in-windows-installer-4-5.md):** Sem suporte. Esse objeto está disponível a partir do Windows Installer 5,0.
+**[Windows Instalador 4.5 ou anterior:](not-supported-in-windows-installer-4-5.md)** Sem suporte. Este objeto está disponível a partir do Windows Installer 5.0.
 
 ## <a name="members"></a>Membros
 
-O objeto **ComponentInfo** tem estes tipos de membros:
+O **objeto ComponentInfo** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-O objeto **ComponentInfo** tem essas propriedades.
+O **objeto ComponentInfo** tem essas propriedades.
 
 
 
@@ -42,7 +42,7 @@ O objeto **ComponentInfo** tem essas propriedades.
 |:----------------------------------------------------------------|:------------------------------------------------------------|
 | [**ComponentCode**](componentinfo-componentcode.md)<br/> | O código do componente em questão.<br/> |
 | [**Caminho**](componentinfo-componentcode.md)<br/>          | O caminho do componente.<br/>                       |
-| [**Status**](componentinfo-state.md)<br/>                 | O estado do componente.<br/>                      |
+| [**Estado**](componentinfo-state.md)<br/>                 | O estado do componente.<br/>                      |
 
 
 
@@ -54,9 +54,9 @@ O objeto **ComponentInfo** tem essas propriedades.
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 ou posterior.<br/>                                         |
+| Versão<br/> | Windows Instalador 5.0 ou posterior.<br/>                                         |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl> |
-| IID<br/>     | IID \_ IComponentInfo é definido como 000C1099-0000-0000-C000-000000000046<br/>  |
+| IID<br/>     | IID IComponentInfo é definido como \_ 000C1099-0000-0000-C000-000000000046<br/>  |
 
 
 
@@ -67,7 +67,7 @@ O objeto **ComponentInfo** tem essas propriedades.
 [Usando a interface de automação](using-the-automation-interface.md)
 </dt> <dt>
 
-[Exemplos de script de Windows Installer](windows-installer-scripting-examples.md)
+[Windows Exemplos de script do instalador](windows-installer-scripting-examples.md)
 </dt> </dl>
 
  

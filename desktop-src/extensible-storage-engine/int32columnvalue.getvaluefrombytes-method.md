@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c17ee9bc638a0adc2250ac0b3f2e53571ff6fdd8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 734be77c337a6f953252f08be79da09efd854241ed24871577ba70b38d217cb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118767796"
 ---
 # <a name="int32columnvaluegetvaluefrombytes-method"></a>Método Int32ColumnValue. GetValueFromBytes
 

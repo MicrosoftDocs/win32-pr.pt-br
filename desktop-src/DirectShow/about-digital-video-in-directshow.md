@@ -4,12 +4,12 @@ ms.assetid: 0570bf7c-c38d-4ada-9593-27b9be117893
 title: Sobre vídeo digital no DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a8f4ae0253754583bb89132289db87f0aad673d6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 061927618c1cb3340e0771376a7a1e232e078e043a554829f99580262ea29c58
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104560709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118664800"
 ---
 # <a name="about-digital-video-in-directshow"></a>Sobre vídeo digital no DirectShow
 
@@ -22,9 +22,9 @@ O vídeo digital (DV) pode ser capturado de uma câmera DV, armazenada em um arq
 -   Gravar dados DV em um arquivo.
 -   Renderizar o áudio e o vídeo em um fluxo de DV.
 
-O DirectShow fornece os seguintes filtros de DV:
+DirectShow fornece os seguintes filtros de DV:
 
--   [Driver MSDV](msdv-driver.md). O driver MSDV controla um dispositivo DV, como uma camcorder. O dispositivo pode ter uma subunidade de câmera e uma subunidade VTR; MSDV controla ambas as subunidades. O driver MSDV aparece para aplicativos como um filtro do DirectShow.
+-   [Driver MSDV](msdv-driver.md). O driver MSDV controla um dispositivo DV, como uma camcorder. O dispositivo pode ter uma subunidade de câmera e uma subunidade VTR; MSDV controla ambas as subunidades. o driver MSDV aparece para aplicativos como um filtro DirectShow.
 -   Filtro de [Splitter de DV](dv-splitter-filter.md) . Os quadros de DV contêm áudio e vídeo no mesmo quadro. O filtro de Splitter de DV extrai os dados de áudio e os gera como um ou dois fluxos de áudio. Ele gera os dados originais como um fluxo de vídeo DV separado.
 -   Filtro de [decodificador de vídeo DV](dv-video-decoder-filter.md) . Decodifica vídeo DV em vídeo descompactado.
 -   Filtro de [codificador de vídeo DV](dv-video-encoder-filter.md) . Codifica vídeo descompactado para vídeo codificado em DV.

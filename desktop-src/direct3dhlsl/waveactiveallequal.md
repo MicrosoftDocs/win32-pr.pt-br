@@ -1,9 +1,9 @@
 ---
 title: Função WaveActiveAllEqual
-description: Retornará true se a expressão for a mesma para cada pista ativa na onda atual (e, portanto, uniforme em toda a ti).
+description: Retornará true se a expressão for a mesma para cada faixa ativa na onda atual (e, portanto, uniforme entre ela).
 ms.assetid: E0A051A8-0ADD-4EC7-8D9A-8820CED9DA9D
 keywords:
-- HLSL da função WaveActiveAllEqual
+- Função WaveActiveAllEqual HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 34745e428fcd4453ce7274fc2a5accc6185f5b10
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: f62493a1bf08b85e95acad319bac2d022c30a53d43c28a87d0f5f603e78d300f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103642974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118786106"
 ---
 # <a name="waveactiveallequal-function"></a>Função WaveActiveAllEqual
 
-Retornará true se a expressão for a mesma para cada pista ativa na onda atual (e, portanto, uniforme em toda a ti).
+Retornará true se a expressão for a mesma para cada faixa ativa na onda atual (e, portanto, uniforme entre ela).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,13 +46,13 @@ A expressão a ser avaliada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-True se a expressão for a mesma para todas as pistas ativas na onda atual.
+True se a expressão for a mesma para cada faixa ativa na onda atual.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função tem suporte do modelo de sombreador 6,0 em todos os estágios de sombreador. 
+Essa função tem suporte do modelo de sombreador 6.0 em todos os estágios do sombreador. 
 
 
 
@@ -62,10 +62,10 @@ Essa função tem suporte do modelo de sombreador 6,0 em todos os estágios de s
 
 <dl> <dt>
 
-[Visão geral do modelo do sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Visão geral do Modelo de Sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
-[Modelo do sombreador 6](shader-model-6-0.md)
+[Modelo de sombreador 6](shader-model-6-0.md)
 </dt> </dl>
 
  

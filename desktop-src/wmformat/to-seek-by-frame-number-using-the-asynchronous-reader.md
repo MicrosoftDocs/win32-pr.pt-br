@@ -12,12 +12,12 @@ keywords:
 - fluxos de vídeo, leitores assíncronos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 169f5e1ac1e6034bc1db6f610e80af50dd3a0215
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: e218384b1a27bb3240ac74ad9af6d8298945bb57dfaf635531cb4cbb9aaa9611
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104007095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118432609"
 ---
 # <a name="to-seek-by-frame-number-using-the-asynchronous-reader"></a>Para buscar por número de quadro usando o leitor assíncrono
 
@@ -42,9 +42,9 @@ Para buscar dados em um arquivo ASF por número de quadro usando o leitor assín
 [**Trabalhando com índices**](working-with-indexes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

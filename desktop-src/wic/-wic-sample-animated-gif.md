@@ -1,16 +1,16 @@
 ---
 description: Este exemplo demonstra a decodificação de vários quadros em um arquivo GIF, a leitura de metadados apropriados para cada quadro, a composição de quadros e a renderização da animação com Direct2D.
 ms.assetid: d71c66b5-d37c-4c8a-bfd7-b97c69c3b8e9
-title: Exemplo de GIF animado por WIC
+title: Exemplo de GIF animado do WIC
 ms.topic: article
 ms.date: 03/19/2021
 ms.custom: project-verbatim
-ms.openlocfilehash: afb0c1368e2c66d40d1be4095ec56d5daeb5ab53
-ms.sourcegitcommit: af120ad5c30da2fc5eb717ca2a1c4c45878efd71
+ms.openlocfilehash: 925beb45b58bdecb7d12505a9d2067cbcb9e6fbf1867786286f18333fea986e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "105748109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118709594"
 ---
 # <a name="wic-animated-gif-sample"></a>Exemplo de GIF animado por WIC
 
@@ -23,7 +23,7 @@ Este exemplo tem os seguintes requisitos.
 | Requisito | Valor |
 |-|-|
 | Cliente mínimo com suporte | Windows 7 |
-| SDK do Windows mínimo | [SDK (Software Development Kit)](https://msdn.microsoft.com/windowsvista/bb980924.aspx) do Windows para Windows 7 |
+| SDK do Windows mínimo | [SDK (Software Development Kit) Windows](https://msdn.microsoft.com/windowsvista/bb980924.aspx) para Windows 7 |
 
 ## <a name="downloading-the-sample"></a>Baixar o exemplo
 
@@ -31,10 +31,10 @@ Este exemplo está disponível em [GIF animado por WIC](https://github.com/micro
 
 ## <a name="building-the-sample"></a>Compilando o exemplo
 
-### <a name="using-visual-studio-preferred-method"></a>Usando o Visual Studio (método preferencial)
+### <a name="using-visual-studio-preferred-method"></a>usando Visual Studio (método preferencial)
 
 1. Abra o Windows Explorer e navegue para o diretório.
-2. Clique duas vezes no ícone do arquivo. sln (solução) para abrir o arquivo no Visual Studio.
+2. Clique duas vezes no ícone do arquivo. sln (solução) para abrir o arquivo em Visual Studio.
 3. No menu **Compilar**, selecione **Compilar Solução**. O aplicativo será criado no \\ diretório de depuração ou de \\ lançamento padrão.
 
 ### <a name="using-the-command-prompt"></a>Usando o prompt de comando
@@ -50,7 +50,7 @@ Depois que o aplicativo for iniciado, carregue um arquivo de imagem usando o com
 
 ## <a name="see-also"></a>Confira também
 
-[Codec de imagem do Microsoft Windows](-wic-lh.md)
+[Codec do Microsoft Windows Imaging](-wic-lh.md)
 
 [Guia de programação](-wic-programming-guide.md)
 

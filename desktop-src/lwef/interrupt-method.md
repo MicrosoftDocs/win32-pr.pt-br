@@ -4,16 +4,16 @@ description: Método de interrupção
 ms.assetid: b8442e25-a629-47c7-acdd-1d28e74d78a2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d58050e181525cc4a4b9f35ec169e92d91ab28e7
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 05e66814963bb3de3db95d60cbc25777244626168e95ceee4bd3d8d76992dd72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104366020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118749253"
 ---
 # <a name="interrupt-method"></a>Método de interrupção
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Interrompe a animação para o caractere especificado.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-*agente do ***. Caracteres ("*** characterid * * *").* *  *Solicitação* de interrupção
+*Agente ***. Caracteres ("**_characterid_*_")._ *  *Solicitação* de interrupção
 
 
 
@@ -37,7 +37,7 @@ Interrompe a animação para o caractere especificado.
 
 
 
- 
+ 
 
 </dd> </dl>
 
@@ -88,13 +88,13 @@ Se você declarar uma referência de objeto e defini-la para esse método, ela r
 > [!Note]  
 > A **interrupção** não libera a fila do caractere; Ele interrompe a animação existente e passa para a próxima animação na fila do caractere. Para interromper e liberar a fila de um caractere, use o método [**Stop**](stop-method.md) .
 
- 
+ 
 
 ## <a name="see-also"></a>Consulte Também
 
 [**Método Stop**](stop-method.md)
 
 
- 
+ 
 
- 
+ 

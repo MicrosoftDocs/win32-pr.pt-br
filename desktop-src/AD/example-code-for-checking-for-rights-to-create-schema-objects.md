@@ -4,19 +4,19 @@ description: O exemplo de código C/C++ a seguir mostra uma função que verific
 ms.assetid: 3abc2351-a3cf-4a6c-9a13-15dd51723883
 ms.tgt_platform: multiple
 keywords:
-- Código de exemplo para a verificação de direitos para criar o AD de objetos de esquema
+- Código de exemplo para verificar se há direitos para criar o AD de objetos de esquema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bef0d4958313a189a0a50c0b4233fdb4a30aaf75
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0200253fe10f91db1c1e67fbfc727d9165ecb8430aa4e2f648de9d3a1b8c73bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104453512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118694478"
 ---
 # <a name="example-code-for-checking-for-rights-to-create-schema-objects"></a>Código de exemplo para verificar se há direitos para criar objetos de esquema
 
-O exemplo de código C/C++ a seguir mostra uma função que verifica o atributo **allowedChildClassesEffective** no contêiner de esquema (o ponteiro IADs para o contêiner de esquema é passado como um parâmetro) para as classes **attributeSchema** e **classSchema** . Ele retornará **S \_ OK** se ambas as classes estiverem listadas em **allowedChildClassesEffective**. Se ambos não forem, retornará **S \_ false**.
+O exemplo de código C/C++ a seguir mostra uma função que verifica o atributo **allowedChildClassesEffective** no contêiner de esquema (o ponteiro IADs para o contêiner de esquema é passado como um parâmetro) para as classes **attributeSchema** e **classSchema.** Ele **retornará S \_ OK** se ambas as classes estão listadas **em allowedChildClassesEffective**. Se ambos não são, ele retorna **S \_ FALSE.**
 
 
 ```C++
@@ -95,9 +95,9 @@ return hr;
 
 
 
- 
+ 
 
- 
+ 
 
 
 
