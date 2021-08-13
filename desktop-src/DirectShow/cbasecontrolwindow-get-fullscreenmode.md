@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fc77b43db2bb420e6cfe2eace44e96e1ab43b0cb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cebd74fd51551249c339100ac2dd3eda4a171cc316cca575f27f5194480978ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105787429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118660529"
 ---
 # <a name="cbasecontrolwindowget_fullscreenmode-method"></a>Método CBaseControlWindow. get \_ fullscreenmode
 
@@ -49,7 +49,7 @@ Ponteiro para o modo de tela inteira atual.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** .
 
@@ -63,7 +63,7 @@ Essa função de membro retorna E \_ NOTIMPL por padrão. Isso informa ao distri
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

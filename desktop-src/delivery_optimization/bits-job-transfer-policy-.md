@@ -1,10 +1,10 @@
 ---
-title: Enumeração de BITS_JOB_TRANSFER_POLICY (Deliveryoptimization. h)
-description: A enumeração BITS_JOB_TRANSFER_POLICY define os valores de ID correspondentes às propriedades DO.
+title: BITS_JOB_TRANSFER_POLICY enumeração (Deliveryoptimization.h)
+description: A BITS_JOB_TRANSFER_POLICY define valores de ID correspondentes às propriedades DO.
 ms.assetid: 4811ADBF-F097-4340-BFF2-52CC9556ACF6
 keywords:
-- Enumeração de BITS_JOB_TRANSFER_POLICY
-- Enumeração de BITS_JOB_TRANSFER_POLICY
+- BITS_JOB_TRANSFER_POLICY enumeração
+- BITS_JOB_TRANSFER_POLICY enumeração
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 455752375b76e574923ccdd96d1d05fc9142c16c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 022d12b78416ce4ec84cf02ae8696f17bf5c315a207ae04f28a8980f6aaac073
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118544594"
 ---
-# <a name="bits_job_transfer_policy-enumeration"></a>Enumeração de BITS_JOB_TRANSFER_POLICY
+# <a name="bits_job_transfer_policy-enumeration"></a>BITS_JOB_TRANSFER_POLICY enumeração
 
-A enumeração **BITS_JOB_TRANSFER_POLICY** define os valores de ID correspondentes às propriedades do.
+A **BITS_JOB_TRANSFER_POLICY** define valores de ID correspondentes às propriedades DO.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -56,7 +56,7 @@ Especifica que o trabalho será transferido quando a conectividade estiver dispo
 <span id="BITS_JOB_TRANSFER_POLICY_NOT_ROAMING"></span><span id="bits_job_transfer_policy_not_roaming"></span>**BITS_JOB_TRANSFER_POLICY_NOT_ROAMING**
 </dt> <dd>
 
-Especifica que o trabalho será transferido quando a conectividade estiver disponível, a menos que a conectividade esteja sujeita a sobretaxas de roaming.
+Especifica que o trabalho será transferido quando a conectividade estiver disponível, a menos que essa conectividade esteja sujeita a sobretaxas de roaming.
 
 </dd> <dt>
 
@@ -70,7 +70,7 @@ Especifica que o trabalho será transferido somente quando a conectividade estiv
 <span id="BITS_JOB_TRANSFER_POLICY_STANDARD"></span><span id="bits_job_transfer_policy_standard"></span>**BITS_JOB_TRANSFER_POLICY_STANDARD**
 </dt> <dd>
 
-Especifica que o trabalho será transferido somente quando a conectividade estiver disponível, o que não está sujeito a uma sobretaxa ou ao próximo esgotamento.
+Especifica que o trabalho será transferido somente quando a conectividade estiver disponível, o que não está sujeito a uma sobrecarga nem ao esgotamento próximo.
 
 </dd> <dt>
 
@@ -87,9 +87,9 @@ Especifica que o trabalho será transferido somente quando a conectividade estiv
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1709\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | Windows Server, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1709 somente para \[ aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 somente \[ aplicativos da área de trabalho\]<br/>                                     |
+| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl> |
 
 
 

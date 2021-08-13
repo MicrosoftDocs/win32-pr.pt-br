@@ -1,11 +1,11 @@
 ---
 title: Role-Occupant atributo
-description: O nome distinto de um objeto que atende a uma função organizacional.
+description: O nome diferenciado de um objeto que atende a uma função organizacional.
 ms.assetid: 47f5d367-d1da-4189-a73e-b6e6715bd297
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Role-Occupant do atributo AD
-- Esquema de AD do atributo roleOccupant
+- Role-Occupant atributo AD Schema
+- Esquema do AD do atributo roleOccupant
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 283dbf37ae168a7130c3c5a86a484ee19e90a5c1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 18d192f929e34961f3aaf3659aadf782b6194af6958a21c284213ad109451807
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105749101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118681679"
 ---
 # <a name="role-occupant-attribute"></a>Role-Occupant atributo
 
-O nome distinto de um objeto que atende a uma função organizacional.
+O nome diferenciado de um objeto que atende a uma função organizacional.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | Role-Occupant                           |
-| LDAP-Display-Name | roleOccupant                            |
+| Ldap-Display-Name | roleOccupant                            |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 2.5.4.33                                |
-| System-ID-GUID    | a8df7465-c5ea-11d1-bbcb-0080c76670c0    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | a8df7465-c5ea-11d1-serb-0080c76670c0    |
+| Sintaxe            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -58,10 +58,10 @@ O nome distinto de um objeto que atende a uma função organizacional.
 | ID do link                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
 | System-Only            | Falso                                                          |
-| É de valor único       | Falso                                                          |
+| Tem valor único       | Falso                                                          |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
@@ -79,10 +79,10 @@ O nome distinto de um objeto que atende a uma função organizacional.
 | ID do link                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
 | System-Only            | Falso                                                          |
-| É de valor único       | Falso                                                          |
+| Tem valor único       | Falso                                                          |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
@@ -100,10 +100,10 @@ O nome distinto de um objeto que atende a uma função organizacional.
 | ID do link                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
 | System-Only            | Falso                                                          |
-| É de valor único       | Falso                                                          |
+| Tem valor único       | Falso                                                          |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
@@ -121,10 +121,10 @@ O nome distinto de um objeto que atende a uma função organizacional.
 | ID do link                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
 | System-Only            | Falso                                                          |
-| É de valor único       | Falso                                                          |
+| Tem valor único       | Falso                                                          |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
@@ -142,10 +142,10 @@ O nome distinto de um objeto que atende a uma função organizacional.
 | ID do link                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
 | System-Only            | Falso                                                          |
-| É de valor único       | Falso                                                          |
+| Tem valor único       | Falso                                                          |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
@@ -163,10 +163,10 @@ O nome distinto de um objeto que atende a uma função organizacional.
 | ID do link                | \-                                                             |
 | MAPI-Id                | 0x8125                                                         |
 | System-Only            | Falso                                                          |
-| É de valor único       | Falso                                                          |
+| Tem valor único       | Falso                                                          |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |

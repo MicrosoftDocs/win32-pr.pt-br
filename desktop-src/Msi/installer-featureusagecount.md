@@ -1,7 +1,7 @@
 ---
 description: A propriedade FeatureUsageCount é uma propriedade somente leitura que retorna o número de vezes que o recurso foi usado.
 ms.assetid: 70171e22-d73a-4718-a360-df9d1722761b
-title: Propriedade Installer. FeatureUsageCount
+title: Propriedade Installer.FeatureUsageCount
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: fbacb6b6fd5dc4d31d7c727d719e1253969c0d43
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8f0f8444909d07655949cd35d060eb455e5a153fc2b897e757c2fdde2d1d731d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118631195"
 ---
-# <a name="installerfeatureusagecount-property"></a>Propriedade Installer. FeatureUsageCount
+# <a name="installerfeatureusagecount-property"></a>Propriedade Installer.FeatureUsageCount
 
-A propriedade **FeatureUsageCount** é uma propriedade somente leitura que retorna o número de vezes que o recurso foi usado.
+A **propriedade FeatureUsageCount** é uma propriedade somente leitura que retorna o número de vezes que o recurso foi usado.
 
 Esta propriedade é somente para leitura.
 
@@ -47,9 +47,9 @@ O uso dos métodos [**UseFeature**](installer-usefeature.md), [**ProvideComponen
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller é definido como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | O IInstaller IID é definido como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

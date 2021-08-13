@@ -1,34 +1,34 @@
 ---
-description: A ação RemoveIniValues remove as informações do arquivo. ini especificadas para remoção na tabela RemoveIniFile se o componente estiver configurado para ser instalado localmente ou executado de origem.
+description: A ação RemoveIniValues remove .ini de arquivo especificadas para remoção na tabela RemoveIniFile se o componente estiver definido para ser instalado localmente ou run-from-source.
 ms.assetid: a30793c8-4154-4990-a42a-d022e69f960a
 title: Ação RemoveIniValues
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7dfb847d911e847de00ede6eab30ac3a86615eb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 095985165bf6d9629aa0cae67a5b3f7975d817151ac4b04de40a08d5c2bab4d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118626385"
 ---
 # <a name="removeinivalues-action"></a>Ação RemoveIniValues
 
-A ação RemoveIniValues remove as informações do arquivo. ini especificadas para remoção na [tabela RemoveIniFile](removeinifile-table.md) se o componente estiver configurado para ser instalado localmente ou executado de origem. A ação RemoveIniValues remove informações do arquivo. ini que foram associadas a um componente na [tabela inifile](inifile-table.md). Essa ação também removerá informações do arquivo. ini se as informações tiverem sido gravadas pela [ação WriteIniValues](writeinivalues-action.md) e o componente estiver agendado para ser desinstalado.
+A ação RemoveIniValues remove .ini de arquivo especificadas para remoção na tabela [RemoveIniFile](removeinifile-table.md) se o componente estiver definido para ser instalado localmente ou run-from-source. A ação RemoveIniValues remove .ini informações de arquivo que foram associadas a um componente na [tabela IniFile](inifile-table.md). Essa ação também removerá .ini de arquivo se as informações foram escritas pela ação [WriteIniValues](writeinivalues-action.md) e o componente estiver agendado para ser desinstalado.
 
 ## <a name="sequence-restrictions"></a>Restrições de sequência
 
-A ação [InstallValidate](installvalidate-action.md) deve ser chamada antes da ação RemoveIniValues. Se uma ação [WriteIniValues](writeinivalues-action.md) for usada na sequência, ela deverá aparecer após RemoveIniValues.
+A [ação InstallValidate](installvalidate-action.md) deve ser chamada antes da ação RemoveIniValues. Se uma [ação WriteIniValues](writeinivalues-action.md) for usada na sequência, ela deverá aparecer após RemoveIniValues.
 
 ## <a name="actiondata-messages"></a>Mensagens ActionData
 
 
 
-| Campo | Descrição dos dados da ação    |
+| Campo | Descrição dos dados de ação    |
 |-------|-------------------------------|
-| \[1\] | Identificador do arquivo. ini.      |
-| \[2\] | Uma seção de chave de arquivo. ini.     |
-| \[3\] | Item removido do arquivo. ini.  |
-| \[4\] | Valor removido do arquivo. ini. |
+| \[1\] | Identificador do .ini arquivo.      |
+| \[2\] | Uma .ini chave de arquivo.     |
+| \[3\] | Item removido do .ini arquivo.  |
+| \[4\] | Valor removido do .ini arquivo. |
 
 
 

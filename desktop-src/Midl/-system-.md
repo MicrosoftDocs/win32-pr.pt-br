@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e09f2cf97f8edb86ad831cff35420fad9a07d76
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 31def6297a1a91f6ed28943290a66b544dc368d5a00a91932035a338af50bac5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104293231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118643774"
 ---
 # <a name="system-switch"></a>/<system> comutador
 
@@ -43,7 +43,7 @@ midl /{win32 | ia64 | amd64}
 
 </dt> <dd>
 
-Windows 2000, Windows XP, Windows Vista, Windows 7
+Windows 2000, Windows XP, Windows Vista Windows 7
 
 </dd> <dt>
 
@@ -54,7 +54,7 @@ Windows 2000, Windows XP, Windows Vista, Windows 7
 
 </dt> <dd>
 
-Um ambiente Windows de 64 bits baseado em Intel, como o Windows 2000, o Windows Server 2003, o Windows XP Professional x64 Edition, o Windows Vista ou o Windows 7.
+um ambiente de Windows de 64 bits baseado em Intel, como Windows 2000, Windows Server 2003, Windows XP Professional x64 Edition, Windows Vista ou Windows 7.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Um ambiente Windows de 64 bits baseado em Intel, como o Windows 2000, o Windows 
 
 </dt> <dd>
 
-Um ambiente do Windows de 64 bits com base em dispositivos American micro, como o Windows 2000, o Windows Server 2003, o Windows XP Professional x64 Edition, o Windows Vista ou o Windows 7.
+um ambiente de Windows de 64 bits com base no American Micro dispositivos, como Windows 2000, Windows Server 2003, Windows XP Professional x64 Edition, Windows Vista ou Windows 7.
 
 </dd> </dl> </dd> </dl>
 
@@ -87,9 +87,9 @@ O **/<system>** switch é funcionalmente o mesmo que a opção MIDL [**/env**](-
 [**/env**](-env.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

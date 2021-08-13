@@ -1,6 +1,6 @@
 ---
 title: atributo personalizado
-description: O atributo \ custom \ cria um atributo definido pelo usuário.
+description: O atributo \ custom\ cria um atributo definido pelo usuário.
 ms.assetid: 63c93eca-c9c1-4c14-9f46-aa78b01d9ff8
 keywords:
 - atributo personalizado MIDL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef7c4210091cc028d7724cb40724f22a91eb7d74
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: ace6a558da428da07a432653391e0e48b7a5545bb1a83eb40d9c950abfa9d9aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105768735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118643665"
 ---
 # <a name="custom-attribute"></a>atributo personalizado
 
-O atributo **\[ personalizado \]** cria um atributo definido pelo usuário.
+O **\[ atributo \]** personalizado cria um atributo definido pelo usuário.
 
 ``` syntax
 [custom(attribute-id, attribute-value),attribute-list] element-type element-name
@@ -31,7 +31,7 @@ O atributo **\[ personalizado \]** cria um atributo definido pelo usuário.
 
 <dl> <dt>
 
-*ID do atributo* 
+*attribute-id* 
 </dt> <dd>
 
 O GUID do atributo personalizado.
@@ -41,25 +41,25 @@ O GUID do atributo personalizado.
 *atributo-valor* 
 </dt> <dd>
 
-O valor que o atributo mantém. O valor deve ser um que possa ser colocado em um tipo VARIANT.
+O valor que o atributo contém. O valor deve ser aquele que pode ser colocado em um tipo VARIANT.
 
 </dd> <dt>
 
 *lista de atributos* 
 </dt> <dd>
 
-Outros atributos, como **\[** [**UUID**](uuid.md) **\]** e **\[** [**HelpString**](helpstring.md) **\]** , que se aplicam a esse elemento.
+Outros atributos, como **\[** [**uuid**](uuid.md) **\]** e **\[** [**helpstring,**](helpstring.md) **\]** que se aplicam a esse elemento.
 
 </dd> <dt>
 
 *tipo de elemento* 
 </dt> <dd>
 
-O tipo de elemento ao qual o atributo personalizado se aplica. Isso pode ser uma instrução de biblioteca, informações de tipo, uma variável, uma função ou um parâmetro. Você não pode usar um atributo personalizado em um membro de uma coclass.
+O tipo de elemento ao qual o atributo personalizado se aplica. Pode ser uma instrução de biblioteca, informações de tipo, uma variável, uma função ou um parâmetro. Não é possível usar um atributo personalizado em um membro de uma coclasse.
 
 </dd> <dt>
 
-*nome do elemento* 
+*element-name* 
 </dt> <dd>
 
 O nome do elemento.
@@ -68,14 +68,14 @@ O nome do elemento.
 
 ## <a name="remarks"></a>Comentários
 
-Use o atributo **\[ personalizado \]** para definir seu próprio atributo. Por exemplo, você pode criar um atributo com valor de cadeia de caracteres que forneça a ProgID para uma classe.
+Use o **\[ atributo \]** personalizado para definir seu próprio atributo. Por exemplo, você pode criar um atributo com valor de cadeia de caracteres que fornece o ProgID para uma classe.
 
 Para recuperar um valor de atributo personalizado, chame um dos seguintes:
 
 -   ITypeLib2::GetCustData(rguid, pvarVal)
 -   ITypeInfo2::GetCustData(rguid, pvarVal)
--   ITypeInfo2:: GetFuncCustData (index, rguid, pvarVal)
--   ITypeInfo2:: GetVarCustData (index, rguid, pvarVal)
+-   ITypeInfo2::GetFuncCustData(index, rguid, pvarVal)
+-   ITypeInfo2::GetVarCustData(index, rguid, pvarval)
 -   ITypeInfo2::GetParamCustData(indexFunc, indexParam, rguid, pvarVal)
 
 ## <a name="see-also"></a>Confira também
@@ -88,18 +88,18 @@ Para recuperar um valor de atributo personalizado, chame um dos seguintes:
 [**helpstring**](helpstring.md)
 </dt> <dt>
 
-[**biblioteca**](library.md)
+[**Biblioteca**](library.md)
 </dt> <dt>
 
 [Exemplo de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintaxe do arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxe de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[**personalizado**](uuid.md)
+[**Uuid**](uuid.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

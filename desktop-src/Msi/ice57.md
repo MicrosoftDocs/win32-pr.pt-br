@@ -4,12 +4,12 @@ ms.assetid: 3c82efa7-9cf3-4bcd-8ec4-b81d1d7aa0a6
 title: ICE57
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a59d609e5d7de0011666be0b5cc5e76417d8e67d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d875264ed1fbc0f7dedac863c21801e5180ae879c9c255af7cf4b36e5d402970
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118635157"
 ---
 # <a name="ice57"></a>ICE57
 
@@ -19,7 +19,7 @@ A combinação de dados por usuário e por computador no mesmo componente pode r
 
 Consulte a propriedade [**AllUsers**](allusers.md) .
 
-## <a name="result"></a>Resultado
+## <a name="result"></a>Result
 
 O ICE57 posta um erro se encontrar algum componente que contenha entradas de registro por computador e por usuário, arquivos, caminhos de chave de diretório ou atalhos não anunciados.
 

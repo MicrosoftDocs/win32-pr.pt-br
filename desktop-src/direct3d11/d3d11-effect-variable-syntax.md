@@ -4,18 +4,18 @@ description: Uma variável de efeito é declarada com a sintaxe descrita nesta s
 ms.assetid: c0cfc9dd-2df3-4f38-a0e4-2e494456b3c9
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67710642060ffea642434ba2d23a77cec2fb8bc3
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 25057f3cd2535a0b48072616c3dd59393f90a24fe044c1cdad8acea677a541ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104454081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118538389"
 ---
 # <a name="effect-variable-syntax-direct3d-11"></a>Sintaxe de variável de efeito (Direct3D 11)
 
 Uma variável de efeito é declarada com a sintaxe descrita nesta seção.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 Sintaxe básica:
 
@@ -35,7 +35,7 @@ Consulte [sintaxe de variável (DirectX HLSL)](/windows/desktop/direct3dhlsl/dx-
 
 
 
- 
+ 
 
 Uma variável de efeito que é declarada fora de todas as funções, é considerada global no escopo; variáveis declaradas em uma função são locais para essa função.
 
@@ -177,6 +177,6 @@ sampler mySS[2] : register(s3)
 [Formato do efeito](d3d11-effect-format.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

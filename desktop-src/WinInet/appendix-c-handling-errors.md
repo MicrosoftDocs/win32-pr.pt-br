@@ -1,23 +1,23 @@
 ---
-title: Tratamento de erros (Internet do Windows)
-description: A função GetLastError recupera o último código de erro para todas as funções do WinINet.
+title: Tratamento de erros (Windows Internet)
+description: A função GetLastError recupera o último código de erro para todas as funções WinINet.
 ms.assetid: ee619803-b2a3-4a99-a3e6-120e147843f7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc175c80fd8bd10b6a3807376e1a207d805aee65
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 6ef5c40a2a7b018c1da25932ecbea24259f2bcdb18eff1e424500dcda60dc208
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104163575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118562346"
 ---
-# <a name="handling-errors-windows-internet"></a>Tratamento de erros (Internet do Windows)
+# <a name="handling-errors-windows-internet"></a>Tratamento de erros (Windows Internet)
 
-A função [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) recupera o último código de erro para todas as funções do Wininet. Se o erro [**\_ \_ estendido da \_ Internet**](wininet-errors.md) for retornado, haverá uma cadeia de caracteres ou um buffer que contém uma mensagem de erro detalhada. Chame a função [**InternetGetLastResponseInfo**](/windows/desktop/api/Wininet/nf-wininet-internetgetlastresponseinfoa) para recuperar o texto de erro estendido.
+A [**função GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) recupera o último código de erro para todas as funções WinINet. Se [**ERROR INTERNET EXTENDED ERROR for \_ \_ \_ retornado,**](wininet-errors.md) haverá uma cadeia de caracteres ou buffer que contém uma mensagem de erro detalhada. Chame a [**função InternetGetLastResponseInfo**](/windows/desktop/api/Wininet/nf-wininet-internetgetlastresponseinfoa) para recuperar o texto de erro estendido.
 
-Para obter o texto de erro de um erro, chame a função [**FormatMessage**](/windows/desktop/api/winbase/nf-winbase-formatmessage) , passando um identificador **HMODULE** para Wininet.dll, que pode ser obtido usando a função [GetModuleHandle](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea) .
+Para obter o texto de erro de um erro, chame a função [**FormatMessage,**](/windows/desktop/api/winbase/nf-winbase-formatmessage) passando a ela um handle **HMODULE** para Wininet.dll, que pode ser obtido usando a [função GetModuleHandle.](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea)
 
-Veja a seguir um exemplo de uma função de tratamento de erros.
+A seguir está um exemplo de uma função de tratamento de erros.
 
 
 ```C++
@@ -186,7 +186,7 @@ void WINAPI addLastErrorToMsg( LPTSTR szMsgBuffer, DWORD dwSize )
 
 
 > [!Note]  
-> O WinINet não oferece suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. Para implementações de servidor ou serviços, use [o Microsoft Windows http Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> O WinINet não dá suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. Para implementações de servidor ou serviços, use [o WinHTTP (Microsoft Windows HTTP Services).](/windows/desktop/WinHttp/winhttp-start-page)
 
  
 

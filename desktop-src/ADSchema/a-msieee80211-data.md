@@ -1,11 +1,11 @@
 ---
-title: MS-IEEE-80211-atributo de dados
-description: Armazena uma lista de configurações de rede preferenciais em Política de Grupo para redes sem fio.
+title: Atributo ms-ieee-80211-Data
+description: Armazena uma lista de configurações de rede preferenciais no Política de Grupo para redes sem fio.
 ms.assetid: 8e5ae2c6-c048-419d-a684-e450a2445a0e
 ms.tgt_platform: multiple
 keywords:
-- MS-IEEE-80211-esquema de atributos de dados do AD
-- msieee80211-esquema de AD do atributo de dados
+- ms-ieee-80211-Data attribute AD Schema
+- msieee80211-Esquema do AD do atributo de dados
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1a53138e15a15e4fafecb998b87ef8b4df71fb2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8bfc19c1230fe7a05644c94833c54a8368548aa020573953d817f484d71509ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104499983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118682738"
 ---
-# <a name="ms-ieee-80211-data-attribute"></a>MS-IEEE-80211-atributo de dados
+# <a name="ms-ieee-80211-data-attribute"></a>Atributo ms-ieee-80211-Data
 
-Armazena uma lista de configurações de rede preferenciais em Política de Grupo para redes sem fio.
+Armazena uma lista de configurações de rede preferenciais no Política de Grupo para redes sem fio.
 
 
 
 | Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
-| CN                | MS-IEEE-80211-data                                                               |
-| LDAP-Display-Name | msieee80211-dados                                                                 |
+| CN                | ms-ieee-80211-Data                                                               |
+| Ldap-Display-Name | msieee80211-Data                                                                 |
 | Tamanho              | \-                                                                               |
 | Privilégio de atualização  | Administrador de domínio                                                             |
-| Frequência de atualização  | Cada vez que um administrador de domínio altera a diretiva de rede sem fio para um domínio ou unidade organizacional. |
+| Frequência de atualização  | Cada vez que um Administrador de Domínio altera a política de rede sem fio para um domínio ou UO. |
 | Attribute-Id      | 1.2.840.113556.1.4.1821                                                          |
-| System-ID-GUID    | 0e0d0938-2658-4580-a9f6-7a0ac7b566cb                                             |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md)                            |
+| System-Id-Guid    | 0e0d0938-2658-4580-a9f6-7a0ac7b566cb                                             |
+| Sintaxe            | [**Object(Replica-Link)**](s-object-replica-link.md)                            |
 
 
 
@@ -57,15 +57,15 @@ Armazena uma lista de configurações de rede preferenciais em Política de Grup
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| Tem valor único       | True                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classes usadas em        | [**MS-IEEE-80211-política**](c-msieee80211-policy.md)<br/> |
+| Classes usadas em        | [**ms-ieee-80211-Policy**](c-msieee80211-policy.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Armazena uma lista de configurações de rede preferenciais em Política de Grup
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| Tem valor único       | True                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classes usadas em        | [**MS-IEEE-80211-política**](c-msieee80211-policy.md)<br/> |
+| Classes usadas em        | [**ms-ieee-80211-Policy**](c-msieee80211-policy.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Armazena uma lista de configurações de rede preferenciais em Política de Grup
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| Tem valor único       | True                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classes usadas em        | [**MS-IEEE-80211-política**](c-msieee80211-policy.md)<br/> |
+| Classes usadas em        | [**ms-ieee-80211-Policy**](c-msieee80211-policy.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Armazena uma lista de configurações de rede preferenciais em Política de Grup
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| Tem valor único       | True                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classes usadas em        | [**MS-IEEE-80211-política**](c-msieee80211-policy.md)<br/> |
+| Classes usadas em        | [**ms-ieee-80211-Policy**](c-msieee80211-policy.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Armazena uma lista de configurações de rede preferenciais em Política de Grup
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| Tem valor único       | True                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classes usadas em        | [**MS-IEEE-80211-política**](c-msieee80211-policy.md)<br/> |
+| Classes usadas em        | [**ms-ieee-80211-Policy**](c-msieee80211-policy.md)<br/> |
 
 
 

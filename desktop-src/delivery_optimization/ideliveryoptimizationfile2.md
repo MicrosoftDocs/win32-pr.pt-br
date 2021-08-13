@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 01/18/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a45efd821116b24e883ec29d494a1d588559f57a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ed7409635444885b662688ce94c300aae6e62186dd76bd7278b3e7445ef50c90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118542041"
 ---
 # <a name="ideliveryoptimizationfile2-interface"></a>Interface IDeliveryOptimizationFile2
 
@@ -45,8 +45,8 @@ A interface **IDeliveryOptimizationFile2** tem esses métodos.
 
 | Requisito | Valor |
 |-------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo com suporte      | \[Somente aplicativos da área de trabalho do Windows 10, versão 1803\]                                    |
-| Servidor mínimo com suporte      | Windows Server, \[ somente aplicativos da área de trabalho da versão 1709\]                                |
+| Cliente mínimo com suporte      | Windows 10, \[ somente aplicativos da área de trabalho da versão 1803\]                                    |
+| Servidor mínimo com suporte      | Windows Servidor, versão 1709 \[ aplicativos da área de trabalho\]                                |
 | parâmetro                        | Deliveryoptimization. h                                                            |
 | INSERI                           | DeliveryOptimization. idl                                                          |
 | Biblioteca                       | Dosvc. lib                                                                         |

@@ -1,7 +1,7 @@
 ---
-description: O método CollectUserInfo do objeto do instalador invoca uma sequência do assistente de interface do usuário que coleta e armazena informações do usuário e o código do produto.
+description: O método CollectUserInfo do objeto Installer invoca uma sequência de assistente de interface do usuário que coleta e armazena informações do usuário e o código do produto.
 ms.assetid: 2faacf38-1af1-4e8a-a3f6-87733104614e
-title: Método Installer. CollectUserInfo
+title: Método Installer.CollectUserInfo
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: d7286fdbc9fab6b3db6752284bf86db05f920bd7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 255f9c5bfbd9f7ed476314e8ac1c9ed58568c083b8f6ea7704bbe5cfef15b769
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118632913"
 ---
-# <a name="installercollectuserinfo-method"></a>Método Installer. CollectUserInfo
+# <a name="installercollectuserinfo-method"></a>Método Installer.CollectUserInfo
 
-O método **CollectUserInfo** do objeto do [**instalador**](installer-object.md) invoca uma sequência do assistente de interface do usuário que coleta e armazena informações do usuário e o código do produto.
+O **método CollectUserInfo** do objeto [**Installer**](installer-object.md) invoca uma sequência de assistente de interface do usuário que coleta e armazena informações do usuário e o código do produto.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,19 +42,19 @@ Installer.CollectUserInfo(
 *Product* 
 </dt> <dd>
 
-Especifica o [**código do produto**](productcode.md) do produto.
+Especifica o [**código do produto.**](productcode.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Um aplicativo deve chamar o método **CollectUserInfo** na primeira vez em que for executado. O método **CollectUserInfo** abre o pacote de instalação do produto e invoca uma sequência de assistente de interface de usuário criada que coleta informações do usuário. Após a conclusão da sequência do assistente, as informações de usuário coletadas são registradas. A propriedade [**UILevel**](installer-uilevel.md) deve ser definida como msiUILevelFull porque essa API requer uma interface de usuário criada.
+Um aplicativo deve chamar o **método CollectUserInfo** na primeira vez que for executado. O **método CollectUserInfo** abre o pacote de instalação do produto e invoca uma sequência de assistente de interface do usuário autoral que coleta informações do usuário. Após a conclusão da sequência de assistente, as informações do usuário coletadas são registradas. A [**propriedade UILevel**](installer-uilevel.md) deve ser definida como msiUILevelFull porque essa API requer uma interface do usuário autorada.
 
-O método **CollectUserInfo** invoca a [caixa de diálogo FirstRun](firstrun-dialog.md).
+O **método CollectUserInfo** invoca a [caixa de diálogo FirstRun](firstrun-dialog.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,9 +62,9 @@ O método **CollectUserInfo** invoca a [caixa de diálogo FirstRun](firstrun-dia
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller é definido como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | O IInstaller IID é definido como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

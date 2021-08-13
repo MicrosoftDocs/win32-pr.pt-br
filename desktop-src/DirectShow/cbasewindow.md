@@ -1,7 +1,7 @@
 ---
-description: A classe CBaseWindow é uma classe base para gerenciar o Windows.
+description: A classe CBaseWindow é uma classe base para gerenciar janelas.
 ms.assetid: 212d179e-5b5e-49fb-bf0a-a12e0317c96a
-title: Classe CBaseWindow (Winutil. h)
+title: Classe CBaseWindow (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,64 +16,64 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 313f1b222f3b0096d3f5bf92c15e2097afb29848
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 60d2a3004343df7846d4bf600690bc6a1e45b46111f91828c7de31219a751308
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118657188"
 ---
 # <a name="cbasewindow-class"></a>Classe CBaseWindow
 
-A `CBaseWindow` classe é uma classe base para gerenciar o Windows. Os renderizadores de vídeo podem usar essa classe para criar janelas de vídeo. Para usar essa classe, crie uma classe derivada que herda de `CBaseWindow` . Na classe derivada:
+A `CBaseWindow` classe é uma classe base para gerenciar janelas. Os renderadores de vídeo podem usar essa classe para criar janelas de vídeo. Para usar essa classe, crie uma classe derivada que herda de `CBaseWindow` . Na classe derivada:
 
--   Implemente o método virtual puro [**CBaseWindow:: GetClassWindowStyles**](cbasewindow-getclasswindowstyles.md), que define os estilos de janela.
--   Substitua o método [**CBaseWindow:: OnReceiveMessage**](cbasewindow-onreceivemessage.md) , que lida com as mensagens de janela.
--   Implemente um destruidor que chama o método [**CBaseWindow::D onewithwindow**](cbasewindow-donewithwindow.md) .
+-   Implemente o método virtual [**puro CBaseWindow::GetClassWindowStyles,**](cbasewindow-getclasswindowstyles.md)que define os estilos de janela.
+-   Substitua o [**método CBaseWindow::OnReceiveMessage,**](cbasewindow-onreceivemessage.md) que lida com mensagens de janela.
+-   Implemente um destruidor que chama o [**método CBaseWindow::D oneWithWindow.**](cbasewindow-donewithwindow.md)
 
-Antes de usar uma instância da classe derivada, chame o método [**CBaseWindow::P reparewindow**](cbasewindow-preparewindow.md) .
+Antes de usar uma instância da classe derivada, chame o [**método CBaseWindow::P repareWindow.**](cbasewindow-preparewindow.md)
 
 
 
-| Variáveis de membro protegido                                           | Descrição                                                                    |
+| Variáveis de membro protegidas                                           | Descrição                                                                    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [**\_HINSTANCE m**](cbasewindow-m-hinstance.md)                      | Identificador para a instância do módulo.                                                 |
-| [**\_HWND m**](cbasewindow-m-hwnd.md)                                | Identificador para a janela do objeto.                                                 |
-| [**\_HDC m**](cbasewindow-m-hdc.md)                                  | Identificador para o contexto do dispositivo da janela.                                         |
-| [**\_Largura m**](cbasewindow-m-width.md)                              | Largura da área do cliente, em pixels.                                           |
-| [**altura de m \_**](cbasewindow-m-height.md)                            | Altura da área do cliente, em pixels.                                          |
-| [**\_bActivated m**](cbasewindow-m-bactivated.md)                    | Sinalizador que especifica se a janela foi ativada.                     |
-| [**\_pClassName m**](cbasewindow-m-pclassname.md)                    | Cadeia de caracteres estática que contém o nome da classe de janela.                      |
-| [**\_ClassStyles m**](cbasewindow-m-classstyles.md)                  | Estilos de classe para a janela.                                                   |
-| [**\_WindowStyles m**](cbasewindow-m-windowstyles.md)                | Estilos de janela para a janela.                                                  |
-| [**\_WindowStylesEx m**](cbasewindow-m-windowstylesex.md)            | Estilos de janela estendidos para a janela.                                         |
-| [**\_ShowStageMessage m**](cbasewindow-m-showstagemessage.md)        | Mensagem privada que traz a janela para o primeiro plano.                      |
-| [**\_ShowStageTop m**](cbasewindow-m-showstagetop.md)                | Mensagem privada que define o estilo da janela como WS \_ ex mais \_ alta.                 |
-| [**\_RealizePalette m**](cbasewindow-m-realizepalette.md)            | Mensagem privada que realiza a paleta.                                     |
-| [**\_MemoryDC m**](cbasewindow-m-memorydc.md)                        | Identificador para o contexto do dispositivo de memória.                                           |
-| [**\_hPalette m**](cbasewindow-m-hpalette.md)                        | Identificador para a paleta da janela.                                                |
-| [**\_bNoRealize m**](cbasewindow-m-bnorealize.md)                    | Sinalizador que especifica se a janela deve reconhecer sua paleta.             |
-| [**\_bBackground m**](cbasewindow-m-bbackground.md)                  | Sinalizador que especifica se a paleta deve ser uma paleta de plano de fundo.        |
-| [**\_bRealizing m**](cbasewindow-m-brealizing.md)                    | Sinalizador que especifica se uma nova paleta está sendo realizada.                   |
-| [**\_WindowLock m**](cbasewindow-m-windowlock.md)                    | Seção crítica para serializar o acesso ao objeto.                           |
-| [**\_bDoGetDC m**](cbasewindow-m-bdogetdc.md)                        | Sinalizador que especifica se o contexto do dispositivo deve ser recuperado.                    |
-| [**\_bDoPostToDestroy m**](cbasewindow-m-bdoposttodestroy.md)        | Sinalizador que especifica se a janela publica ou envia sua mensagem de destruição. |
+| [**m \_ hInstance**](cbasewindow-m-hinstance.md)                      | Lidar com a instância do módulo.                                                 |
+| [**m \_ hwnd**](cbasewindow-m-hwnd.md)                                | Identificador para a janela do objeto.                                                 |
+| [**m \_ hdc**](cbasewindow-m-hdc.md)                                  | Lidar com o contexto do dispositivo da janela.                                         |
+| [**largura \_ m**](cbasewindow-m-width.md)                              | Largura da área do cliente, em pixels.                                           |
+| [**m \_ Height**](cbasewindow-m-height.md)                            | Altura da área do cliente, em pixels.                                          |
+| [**m \_ bActivated**](cbasewindow-m-bactivated.md)                    | Sinalizador que especifica se a janela foi ativada.                     |
+| [**m \_ pClassName**](cbasewindow-m-pclassname.md)                    | Cadeia de caracteres estática que contém o nome da classe de janela.                      |
+| [**m \_ ClassStyles**](cbasewindow-m-classstyles.md)                  | Estilos de classe para a janela.                                                   |
+| [**m \_ WindowStyles**](cbasewindow-m-windowstyles.md)                | Estilos de janela para a janela.                                                  |
+| [**m \_ WindowStylesEx**](cbasewindow-m-windowstylesex.md)            | Estilos de janela estendidos para a janela.                                         |
+| [**m \_ ShowStageMessage**](cbasewindow-m-showstagemessage.md)        | Mensagem privada que leva a janela para o primeiro plano.                      |
+| [**m \_ ShowStageTop**](cbasewindow-m-showstagetop.md)                | Mensagem privada que define o estilo da janela como WS \_ EX \_ TOPMOST.                 |
+| [**m \_ RealizePalette**](cbasewindow-m-realizepalette.md)            | Mensagem privada que realiza a paleta.                                     |
+| [**m \_ MemoryDC**](cbasewindow-m-memorydc.md)                        | Lidar com o contexto do dispositivo de memória.                                           |
+| [**m \_ hPalette**](cbasewindow-m-hpalette.md)                        | Lidar com a paleta da janela.                                                |
+| [**m \_ bNoRealize**](cbasewindow-m-bnorealize.md)                    | Sinalizador que especifica se a janela deve perceber sua paleta.             |
+| [**m \_ bBackground**](cbasewindow-m-bbackground.md)                  | Sinalizador que especifica se a paleta deve ser uma paleta de plano de fundo.        |
+| [**m \_ bRealizing**](cbasewindow-m-brealizing.md)                    | Sinalizador que especifica se uma nova paleta está sendo realizada.                   |
+| [**m \_ WindowLock**](cbasewindow-m-windowlock.md)                    | Seção crítica, para serializar o acesso ao objeto .                           |
+| [**m \_ bDoGetDC**](cbasewindow-m-bdogetdc.md)                        | Sinalizador que especifica se o contexto do dispositivo deve ser recuperado.                    |
+| [**m \_ bDoPostToDestroy**](cbasewindow-m-bdoposttodestroy.md)        | Sinalizador que especifica se a janela posta ou envia sua mensagem de destruição. |
 | Métodos Protegidos                                                    | Descrição                                                                    |
-| [**OnPaletteChange**](cbasewindow-onpalettechange.md)               | Manipula as mensagens de alteração da paleta. VirtuaisLUNs.                                      |
+| [**OnPaletteChange**](cbasewindow-onpalettechange.md)               | Lida com mensagens de alteração de paleta. Virtual.                                      |
 | Métodos públicos                                                       | Descrição                                                                    |
-| [**CBaseWindow**](cbasewindow-cbasewindow.md)                       | Método de construtor.                                                            |
-| [**DoneWithWindow**](cbasewindow-donewithwindow.md)                 | Destrói a janela. VirtuaisLUNs.                                                  |
-| [**PrepareWindow**](cbasewindow-preparewindow.md)                   | Cria a janela. VirtuaisLUNs.                                                   |
-| [**InactivateWindow**](cbasewindow-inactivatewindow.md)             | Desativa a janela. VirtuaisLUNs.                                               |
-| [**ActivateWindow**](cbasewindow-activatewindow.md)                 | Dimensiona a janela de acordo com os requisitos da classe derivada. VirtuaisLUNs.  |
-| [**OnSize**](cbasewindow-onsize.md)                                 | Manipula mensagens de tamanho do WM \_ . VirtuaisLUNs.                                            |
-| [**Fechamento**](cbasewindow-onclose.md)                               | Manipula mensagens de fechamento do WM \_ . VirtuaisLUNs.                                           |
-| [**GetDefaultRect**](cbasewindow-getdefaultrect.md)                 | Recupera o tamanho padrão da área do cliente. VirtuaisLUNs.                        |
-| [**UninitialiseWindow**](cbasewindow-uninitialisewindow.md)         | Libera os recursos da janela. VirtuaisLUNs.                                      |
-| [**InitialiseWindow**](cbasewindow-initialisewindow.md)             | Inicializa a janela. VirtuaisLUNs.                                               |
-| [**CompleteConnect**](cbasewindow-completeconnect.md)               | Notifica a janela de que o pino de entrada do renderizador foi conectado.          |
-| [**Docreatewindow**](cbasewindow-docreatewindow.md)                 | Cria a janela.                                                            |
-| [**PerformanceAlignWindow**](cbasewindow-performancealignwindow.md) | Alinha a janela a um limite **DWORD** , para o desempenho máximo.            |
+| [**Cbasewindow**](cbasewindow-cbasewindow.md)                       | Método do construtor.                                                            |
+| [**DoneWithWindow**](cbasewindow-donewithwindow.md)                 | Destrói a janela. Virtual.                                                  |
+| [**PrepareWindow**](cbasewindow-preparewindow.md)                   | Cria a janela. Virtual.                                                   |
+| [**InactivateWindow**](cbasewindow-inactivatewindow.md)             | Inativa a janela. Virtual.                                               |
+| [**ActivateWindow**](cbasewindow-activatewindow.md)                 | Tamanhos da janela de acordo com os requisitos da classe derivada. Virtual.  |
+| [**Onsize**](cbasewindow-onsize.md)                                 | Lida com mensagens WM \_ SIZE. Virtual.                                            |
+| [**Onclose**](cbasewindow-onclose.md)                               | Lida com mensagens WM \_ CLOSE. Virtual.                                           |
+| [**GetDefaultRect**](cbasewindow-getdefaultrect.md)                 | Recupera o tamanho padrão da área do cliente. Virtual.                        |
+| [**UninitialiseWindow**](cbasewindow-uninitialisewindow.md)         | Libera os recursos da janela. Virtual.                                      |
+| [**InitialiseWindow**](cbasewindow-initialisewindow.md)             | Inicializa a janela. Virtual.                                               |
+| [**Completeconnect**](cbasewindow-completeconnect.md)               | Notifica a janela de que o pino de entrada do renderista foi conectado.          |
+| [**DoCreateWindow**](cbasewindow-docreatewindow.md)                 | Cria a janela.                                                            |
+| [**PerformanceAlignWindow**](cbasewindow-performancealignwindow.md) | Alinha a janela a um **limite DWORD,** para desempenho máximo.            |
 | [**DoShowWindow**](cbasewindow-doshowwindow.md)                     | Define o estado de exibição da janela.                                                  |
 | [**PaintWindow**](cbasewindow-paintwindow.md)                       | Faz com que a janela seja repintada.                                             |
 | [**DoSetWindowForeground**](cbasewindow-dosetwindowforeground.md)   | Traz a janela para o primeiro plano.                                           |
@@ -101,7 +101,7 @@ Antes de usar uma instância da classe derivada, chame o método [**CBaseWindow:
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

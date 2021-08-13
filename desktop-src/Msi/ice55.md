@@ -4,18 +4,18 @@ ms.assetid: e23e43ce-942f-4f6b-b5fd-cf366f7a7fe5
 title: ICE55
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 239093e3502a1731c3248918750c18aa1b3e1f18
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 044b9993c6c50dce32c04f98d8e000f0faae4280d244c4656d7b0cbed7b49749
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118635137"
 ---
 # <a name="ice55"></a>ICE55
 
 ICE55 valida que todos os objetos LockPermission existem e têm valores de permissão válidos.
 
-## <a name="result"></a>Resultado
+## <a name="result"></a>Result
 
 ICE55 poste um erro se um lockobject listado na [Tabela LockPermissions](lockpermissions-table.md) não existir ou se nenhum nível de privilégio for especificado na coluna permissão.
 

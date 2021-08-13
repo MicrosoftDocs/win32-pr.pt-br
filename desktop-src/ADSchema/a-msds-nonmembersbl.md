@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 88483757e5c9f87771ce8d71f21d26ea3154f975
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 87426328f9c2c5618374ebdd9c355693e6fff3303e83a44aba55eef7a333d954
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105753863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118683630"
 ---
 # <a name="ms-ds-non-members-bl-attribute"></a>atributo ms-DS-non-members-BL
 
@@ -36,7 +36,7 @@ Link para trás de um grupo não membro ou usuário para AZ grupos que se vincul
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1794                 |
 | System-ID-GUID    | 2a8c68fc-3a7a-4e87-8720-fe77c51cbe74    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

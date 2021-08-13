@@ -4,12 +4,12 @@ ms.assetid: 5bc72ee5-3065-4bfb-8dcb-8befb2a4bbd9
 title: Gerenciando adaptadores de rede usando o GetAdaptersInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 470e0ce7682a86b29df912fa4d4b1297c2263382
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2da19541572af89e9429b9deba68efd4f4670324ffd9ff824e6c123295108f92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118644626"
 ---
 # <a name="managing-network-adapters-using-getadaptersinfo"></a>Gerenciando adaptadores de rede usando o GetAdaptersInfo
 

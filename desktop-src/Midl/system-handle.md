@@ -11,12 +11,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 02/05/2021
-ms.openlocfilehash: f414654cdbd2eb07837455174f6142005f56a4b5
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 1cc89818db201f1aca84aa63c6aa49b6b7d9f80b7b6c5e211e724004606c653e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105762248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118641262"
 ---
 # <a name="system_handle-attribute"></a>atributo system_handle
 
@@ -102,8 +102,8 @@ interface MyInterface : IUnknown
 
 | &nbsp; | &nbsp; |
 |-|-|
-| Cliente mínimo com suporte | Atualização de aniversário do Windows 10 (versão 1607, Build 14393) |
-| Servidor mínimo com suporte | Windows Server 2016 (Build 14393) |
+| Cliente mínimo com suporte | Windows 10 Atualização de aniversário (versão 1607, Build 14393) |
+| Servidor mínimo com suporte | Windows Server 2016 (build 14393) |
 
 ## <a name="see-also"></a>Confira também
 

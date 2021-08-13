@@ -4,12 +4,12 @@ description: A propriedade State descreve o status de um objeto em um momento no
 ms.assetid: 6a56070f-7913-45b2-b693-3c0a8b7fa2f4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d151f09fca6c31abaaa98a19139d3e22eb28ec90
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e174e938dd6252852ded6de957a54f6f94264aa811bd5bb76094af7bbba61f48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822990"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118564414"
 ---
 # <a name="state-property"></a>Propriedade State
 
@@ -21,9 +21,9 @@ O Microsoft Acessibilidade Ativa fornece [constantes de estado de objeto](object
 
 Os gráficos que, ocasionalmente, são animados devem ter a propriedade **State** definida como [**estado do \_ sistema \_ animado**](object-state-constants.md) e a propriedade [**role**](role-property.md) definida como [**\_ \_ elemento gráfico do sistema de funções**](object-roles.md).
 
- 
+ 
 
- 
+ 
 
 
 

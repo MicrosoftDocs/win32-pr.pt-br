@@ -4,19 +4,19 @@ description: Um controle deslizante, também chamado de controle TrackBar, permi
 ms.assetid: 8df4ed1d-d63c-49d7-94f1-df2113643484
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b03c39d6638557b9dfff90740132d3e22a7e2511
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c23d92799a8a644d5e5e00c695d628cb827ba60f73cc3a0d7b7f5dc505a6c2c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104006090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118564424"
 ---
 # <a name="slider-control-msaa-ui-element-reference"></a>Controle Slider (referência de elemento de interface do usuário do MSAA)
 
 > [!Note]  
 > Este tópico descreve os objetos de **controle Slider** para fins de referência de elemento da interface do usuário do MSAA. Como criar objetos de **controle Slider** em várias estruturas de interface do usuário não é descrito aqui. Consulte a documentação de referência da API para a estrutura de interface do usuário que você está usando.
 
- 
+ 
 
 Um controle deslizante, também chamado de controle TrackBar, permite que um usuário selecione um intervalo de valores movendo um controle deslizante. Os controles de volume no sistema operacional Windows são controles deslizantes.
 
@@ -54,7 +54,7 @@ Um controle deslizante dá suporte às seguintes propriedades de [**IAccessible*
 
     
 
-    | Parte do controle deslizante                    | Nome                                |
+    | Parte do controle deslizante                    | Name                                |
     |--------------------------------|-------------------------------------|
     | Janela de controle deslizante                  | Controle de texto estático usado como um rótulo |
     | Thumb Slider                   | Propostas                          |
@@ -63,13 +63,13 @@ Um controle deslizante dá suporte às seguintes propriedades de [**IAccessible*
 
     
 
-     
+     
 
     As partes de um controle deslizante horizontal têm os seguintes nomes:
 
     
 
-    | Parte do controle deslizante                              | Nome                                |
+    | Parte do controle deslizante                              | Name                                |
     |------------------------------------------|-------------------------------------|
     | Janela de controle deslizante                            | Controle de texto estático usado como um rótulo |
     | Thumb Slider                             | Propostas                          |
@@ -78,7 +78,7 @@ Um controle deslizante dá suporte às seguintes propriedades de [**IAccessible*
 
     
 
-     
+     
 
 -   [**Get \_ accParent**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent)— a propriedade **Parent** dos botões de seta, scroll Thumb e a área sombreada em ambos os lados do Thumb é a janela Slider. A propriedade **Parent** da janela Slider é uma janela ( [**\_ \_ janela do sistema de funções**](object-roles.md) ) que envolve o controle e tem a mesma propriedade de **nome** e nome de classe de janela.
 -   [**Get \_ accRole**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accrole)— a propriedade **role** depende da parte do controle deslizante que é consultado. 
@@ -91,7 +91,7 @@ Um controle deslizante dá suporte às seguintes propriedades de [**IAccessible*
 
     
 
-     
+     
 
 -   [**Get \_ accState**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate)— os [valores](object-state-constants.md) para a propriedade **State** dependem da parte do controle deslizante que é consultado. 
 
@@ -103,7 +103,7 @@ Um controle deslizante dá suporte às seguintes propriedades de [**IAccessible*
 
     
 
-     
+     
 
 -   [**Get \_ accValue**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accvalue)— a propriedade **Value** da janela Slider indica a posição do Thumb e é uma cadeia de caracteres que contém um inteiro de "0" por meio de "100".
 
@@ -117,9 +117,9 @@ Um controle deslizante dá suporte às seguintes propriedades de [**IAccessible*
 [**Barra de rolagem**](scroll-bar.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: O método FileSize do objeto instalador usa as chamadas à API do Win32 para retornar o tamanho do arquivo especificado em path.
+description: O método FileSize do objeto Installer usa chamadas à API win32 para retornar o tamanho do arquivo especificado em Path.
 ms.assetid: d7119e5e-9315-4b20-a904-bc1104f3a4e4
-title: Método Installer. FileSize
+title: Método Installer.FileSize
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 593319b88e3942ae6caa1399adbe2e596bf6e737
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f585da776d348e7c774d4671a230881f2ec0e4ddaca8a63842d59a9b77a61972
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118630685"
 ---
-# <a name="installerfilesize-method"></a>Método Installer. FileSize
+# <a name="installerfilesize-method"></a>Método Installer.FileSize
 
-O método **filesize** do objeto [**instalador**](installer-object.md) usa as chamadas à API do Win32 para retornar o tamanho do arquivo especificado em *Path*.
+O **método FileSize** do [**objeto Installer**](installer-object.md) usa chamadas à API do Win32 para retornar o tamanho do arquivo especificado no *Caminho*.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,7 +46,7 @@ Cadeia de caracteres necessária que contém o caminho para o arquivo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -56,9 +56,9 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller é definido como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | O IInstaller IID é definido como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

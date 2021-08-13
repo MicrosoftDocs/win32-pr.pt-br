@@ -1,19 +1,19 @@
 ---
-description: Você pode fornecer todas as informações necessárias para configurar adicionar ou remover programas no painel de controle definindo os valores de determinadas propriedades do instalador no pacote de Windows Installer do seu aplicativo.
+description: você pode fornecer todas as informações necessárias para configurar adicionar ou remover programas no painel de controle definindo os valores de determinadas propriedades do instalador no pacote de Windows Installer do seu aplicativo.
 ms.assetid: 2eb00fe5-e441-4fce-9623-81a089269a2b
-title: Configurando adicionar/remover programas com Windows Installer
+title: configurando adicionar/remover programas com Windows Installer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6850163e18af94aa9cceaf6c4bb2e8059dcf2121
-ms.sourcegitcommit: 4af3e9ec3142ba499d20ed8b174c2b219c5eacd2
+ms.openlocfilehash: 99e1393eb586cfe1067840e4622fddd777a84512f55f9e82f7c9fad3b1f5688f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105994504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118638745"
 ---
-# <a name="configuring-addremove-programs-with-windows-installer"></a>Configurando adicionar/remover programas com Windows Installer
+# <a name="configuring-addremove-programs-with-windows-installer"></a>configurando adicionar/remover programas com Windows Installer
 
-Você pode fornecer todas as informações necessárias para configurar adicionar ou remover programas no painel de controle definindo os valores de determinadas propriedades do instalador no pacote de Windows Installer do seu aplicativo. Definir essas propriedades grava automaticamente os valores correspondentes no registro. Se o instalador detectar que o produto está marcado para remoção completa, as operações serão adicionadas automaticamente ao script para remover a pasta adicionar/remover programas nas informações do painel de controle do produto.
+você pode fornecer todas as informações necessárias para configurar adicionar ou remover programas no painel de controle definindo os valores de determinadas propriedades do instalador no pacote de Windows Installer do seu aplicativo. Definir essas propriedades grava automaticamente os valores correspondentes no registro. Se o instalador detectar que o produto está marcado para remoção completa, as operações serão adicionadas automaticamente ao script para remover a pasta adicionar/remover programas nas informações do painel de controle do produto.
 
 Se um aplicativo não estiver registrado, ele não estará listado em Adicionar/remover programas no painel de controle. Para obter mais informações, consulte [adicionando e removendo um aplicativo e não deixando nenhum rastreamento no registro](adding-and-removing-an-application-and-leaving-no-trace-in-the-registry.md).
 
@@ -63,7 +63,7 @@ O instalador usa as [Propriedades públicas](public-properties.md) a seguir para
 <td><a href="arpnomodify.md"><strong>ARPNOMODIFY</strong></a></td>
 <td>Impede a exibição de um botão de alteração para o produto em Adicionar ou remover programas no painel de controle.
 <blockquote>
-<b>Observação:</b> Isso afeta apenas a exibição no ARP. O Windows Installer ainda é capaz de reparar, instalar sob demanda e desinstalar aplicativos por meio de uma linha de comando ou da interface de programação.
+<b>Observação:</b> Isso afeta apenas a exibição no ARP. o Windows Installer ainda é capaz de reparar, instalar sob demanda e desinstalar aplicativos por meio de uma linha de comando ou da interface de programação.
 </blockquote>
 <br/></td>
 </tr>
@@ -71,7 +71,7 @@ O instalador usa as [Propriedades públicas](public-properties.md) a seguir para
 <td><a href="arpnoremove.md"><strong>ARPNOREMOVE</strong></a></td>
 <td>Impede a exibição de um botão remover do produto em Adicionar ou remover programas no painel de controle. O produto ainda pode ser removido selecionando o botão alterar se o pacote de instalação tiver sido criado com uma interface do usuário que fornece a remoção do produto como uma opção.
 <blockquote>
-<b>Observação:</b> Isso afeta apenas a exibição no ARP. O Windows Installer ainda é capaz de reparar, instalar sob demanda e desinstalar aplicativos por meio de uma linha de comando ou da interface de programação.
+<b>Observação:</b> Isso afeta apenas a exibição no ARP. o Windows Installer ainda é capaz de reparar, instalar sob demanda e desinstalar aplicativos por meio de uma linha de comando ou da interface de programação.
 </blockquote>
 <br/></td>
 </tr>
@@ -79,7 +79,7 @@ O instalador usa as [Propriedades públicas](public-properties.md) a seguir para
 <td><a href="arpnorepair.md"><strong>ARPNOREPAIR</strong></a></td>
 <td>Desabilita o botão reparar em Adicionar ou remover programas no painel de controle.
 <blockquote>
-<b>Observação:</b> Isso afeta apenas a exibição no ARP. O Windows Installer ainda é capaz de reparar, instalar sob demanda e desinstalar aplicativos por meio de uma linha de comando ou da interface de programação.
+<b>Observação:</b> Isso afeta apenas a exibição no ARP. o Windows Installer ainda é capaz de reparar, instalar sob demanda e desinstalar aplicativos por meio de uma linha de comando ou da interface de programação.
 </blockquote>
 <br/></td>
 </tr>
@@ -99,7 +99,7 @@ O instalador usa as [Propriedades públicas](public-properties.md) a seguir para
 <td><a href="arpsystemcomponent.md"><strong>ARPSYSTEMCOMPONENT</strong></a></td>
 <td>Impede a exibição do aplicativo na lista de programas de adicionar/remover programas no painel de controle.
 <blockquote>
-<b>Observação:</b> Isso afeta apenas a exibição no ARP. O Windows Installer ainda é capaz de reparar, instalar sob demanda e desinstalar aplicativos por meio de uma linha de comando ou da interface de programação.
+<b>Observação:</b> Isso afeta apenas a exibição no ARP. o Windows Installer ainda é capaz de reparar, instalar sob demanda e desinstalar aplicativos por meio de uma linha de comando ou da interface de programação.
 </blockquote>
 <br/></td>
 </tr>

@@ -1,9 +1,9 @@
 ---
-title: atributo de pipe
-description: O construtor de tipo de pipe torna possível transmitir um fluxo aberto de dados digitados através de uma chamada de procedimento remoto.
+title: atributo pipe
+description: O construtor de tipo de pipe possibilita transmitir um fluxo aberto de dados digitados em uma chamada de procedimento remoto.
 ms.assetid: 85b76a55-8df2-4417-9a39-3e3bf49651fc
 keywords:
-- MIDL do atributo de pipe
+- atributo pipe MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c0aaab8d399c99e02b5393ee9f5258da53aea491
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 6b8c407bef0a9e610d21e7221eb9a06560f33300f4f1f388fa699ca9dfb18531
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104293935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118641949"
 ---
-# <a name="pipe-attribute"></a>atributo de pipe
+# <a name="pipe-attribute"></a>atributo pipe
 
-O construtor de tipo de **pipe** torna possível transmitir um fluxo aberto de dados digitados através de uma chamada de procedimento remoto.
+O **construtor** de tipo de pipe possibilita transmitir um fluxo aberto de dados digitados em uma chamada de procedimento remoto.
 
 ``` syntax
 typedef pipe element-type pipe-declarator;
@@ -34,11 +34,11 @@ typedef pipe element-type pipe-declarator;
 *tipo de elemento* 
 </dt> <dd>
 
-Define o tamanho de um único elemento no buffer de transferência. O *tipo de elemento* pode ser um [tipo base](midl-base-types.md), um \_ tipo predefinido, um [**struct**](struct.md), uma [**Enumeração 32b**](v1-enum.md)ou um identificador de tipo. Várias restrições se aplicam a *\_ tipos de elementos*, conforme descrito em comentários, abaixo.
+Define o tamanho de um único elemento no buffer de transferência. O *tipo de elemento* pode ser um tipo [base,](midl-base-types.md)tipo \_ predefinido, [**struct**](struct.md), [**enum de 32b**](v1-enum.md)ou identificador de tipo. Várias restrições se aplicam *aos \_ tipos de* elemento , conforme descrito em Comentários, abaixo.
 
 </dd> <dt>
 
-*Declarador de pipe* 
+*pipe-declarator* 
 </dt> <dd>
 
 Especifica um ou mais identificadores ou ponteiros para identificadores. Separe vários declaradores com vírgulas.
@@ -47,26 +47,26 @@ Especifica um ou mais identificadores ou ponteiros para identificadores. Separe 
 
 ## <a name="remarks"></a>Comentários
 
-Você pode usar o construtor de tipo de **pipe** para transmitir dados em ambas as direções. Um **\[** [](in.md) **\]** parâmetro no pipe permite que o servidor receba o fluxo de dados do cliente durante uma chamada de procedimento remoto. Um **\[** [](out-idl.md) **\]** parâmetro out pipe permite que o servidor envie por push o fluxo de dados de volta para o cliente. Você fornece as rotinas do lado do cliente para enviar por push e efetuar pull do fluxo de dados e alocar um buffer global para os dados. As rotinas de stub do cliente e do servidor realizam marshaling e unmarshaling de dados e transmitem uma referência para o buffer de volta para o aplicativo.
+Você pode usar o construtor **de** tipo de pipe para transmitir dados em ambas as direções. Um parâmetro no pipe permite que o servidor e pull do fluxo **\[** [](in.md) **\]** de dados do cliente durante uma chamada de procedimento remoto. Um **\[** [**parâmetro de**](out-idl.md) **\]** pipe out permite que o servidor es por push o fluxo de dados de volta para o cliente. Você fornece as rotinas do lado do cliente para push e pull do fluxo de dados e para alocar um buffer global para os dados. As rotinas de stub de cliente e servidor empacotam e unmarshal dados e passam uma referência ao buffer de volta para o aplicativo.
 
-As seguintes restrições se aplicam a Pipes:
+As seguintes restrições se aplicam a pipes:
 
--   Um elemento de pipe não pode ser ou conter um ponteiro, uma matriz em conformidade ou variável, um identificador ou um identificador de contexto. Além disso, na implementação de pipes da Microsoft, um elemento de pipe não pode ser ou conter uma [**Union**](union.md), uma [**Enumeração 16B**](enum.md)ou um [**\_ \_ int3264**](--int3264.md).
--   Você não pode aplicar os **\[** atributos [**transmitir \_ como**](transmit-as.md) **\]** , **\[** [**representar \_ como**](represent-as.md) **\]** , **\[** [**\_ realizar marshaling**](wire-marshal.md) **\]** ou **\[** [**\_ Marshal do usuário**](user-marshal.md) **\]** a um tipo de pipe ou ao *tipo de elemento*.
--   Um tipo de pipe não pode ser um membro de uma estrutura ou União, o destino de um ponteiro ou o tipo base de uma matriz.
+-   Um elemento pipe não pode ser ou conter um ponteiro, uma matriz compatível ou variável, um handle ou um alça de contexto. Além disso, na implementação da Microsoft de pipes, um elemento pipe não pode ser ou conter uma união [**,**](union.md)uma [**enum de 16b**](enum.md)ou [**\_ \_ um int3264**](--int3264.md).
+-   Você não pode aplicar a **\[** [**transmissão \_ como**](transmit-as.md) **\]** , representar **\[** [**\_ como**](represent-as.md) **\]** , marshal **\[** [**\_**](wire-marshal.md) **\]** **\[** [**\_**](user-marshal.md) **\]** de transmissão ou atributos de marshal de usuário a um tipo de pipe ou ao tipo de elemento .
+-   Um tipo de pipe não pode ser membro de uma estrutura ou união, o destino de um ponteiro ou o tipo base de uma matriz.
 -   Um tipo de dados declarado como um tipo de pipe só pode ser usado como um parâmetro de uma chamada remota.
--   Você pode passar um parâmetro de pipe em ambas as direções por valor ou por referência ( **\[** ponteiro [**ref**](ref.md) **\]** ). No entanto, não é possível aplicar o **\[** [](ptr.md) **\]** atributo PTR a um pipe que é passado por referência. Você não pode especificar um parâmetro de pipe com um **\[** [](unique.md) **\]** ponteiro exclusivo ou completo, independentemente da direção.
--   Você não pode usar pipes em interfaces de **\[** [**objeto**](object.md) **\]** .
--   Você não pode aplicar o **\[** [](idempotent.md) **\]** atributo idempotente a uma rotina que tem um parâmetro de pipe.
--   Você não pode usar os atributos de serialização, **\[** [**codificar**](encode.md) **\]** e **\[** [**decodificar**](decode.md) **\]** com pipes.
--   Você não pode usar identificadores automáticos, por padrão, ou com o **\[** atributo [**\_ identificador automático**](auto-handle.md) **\]** , com pipes.
+-   Você pode passar um parâmetro de pipe em qualquer direção por valor ou por referência **\[** [**(ponteiro ref).**](ref.md) **\]** No entanto, você não pode **\[** [**aplicar o atributo ptr**](ptr.md) **\]** a um pipe que é passado por referência. Não é possível especificar um parâmetro de pipe com um ponteiro **\[** [](unique.md) **\]** exclusivo ou completo, independentemente da direção.
+-   Não é possível usar pipes em **\[** [](object.md) **\]** interfaces de objeto.
+-   Não é possível aplicar **\[** [**o atributo idempotente**](idempotent.md) **\]** a uma rotina que tenha um parâmetro de pipe.
+-   Você não pode usar os atributos de serialização, **\[** [**codificar**](encode.md) **\]** e **\[** [**decodificar**](decode.md) com **\]** pipes.
+-   Você não pode usar alças automáticas, por padrão, ou com o atributo **\[** [**de \_ alça**](auto-handle.md) **\]** automática, com pipes.
 
 > [!Note]  
-> O compilador MIDL dá suporte somente a pipes no modo [**/OIF**](-oi.md) .
+> O compilador MIDL dá suporte apenas a pipes [**no modo /Oif.**](-oi.md)
 
- 
+ 
 
-Para obter mais informações sobre como implementar rotinas com parâmetros de pipe, consulte [pipes](/windows/desktop/Rpc/pipes) no guia do programador de RPC e referência.
+Para obter mais informações sobre como implementar rotinas com parâmetros de pipe, consulte [Pipes](/windows/desktop/Rpc/pipes) no Guia e referência do programador RPC.
 
 ## <a name="examples"></a>Exemplos
 
@@ -81,31 +81,31 @@ typedef pipe SIMPLE_STRUCT SIMPLE_STRUCT_PIPE;
 
 <dl> <dt>
 
-[**\_identificador automático**](auto-handle.md)
+[**auto \_ handle**](auto-handle.md)
 </dt> <dt>
 
-[Tipos base de MIDL](midl-base-types.md)
+[Tipos base MIDL](midl-base-types.md)
 </dt> <dt>
 
-[**RET**](decode.md)
+[**Decodificar**](decode.md)
 </dt> <dt>
 
-[**codificado**](encode.md)
+[**Codificar**](encode.md)
 </dt> <dt>
 
-[**enumera**](enum.md)
+[**Enum**](enum.md)
 </dt> <dt>
 
 [**idempotente**](idempotent.md)
 </dt> <dt>
 
-[**no**](in.md)
+[**Em**](in.md)
 </dt> <dt>
 
-[**objeto**](object.md)
+[**Objeto**](object.md)
 </dt> <dt>
 
-[**fora**](out-idl.md)
+[**out**](out-idl.md)
 </dt> <dt>
 
 [**ptr**](ptr.md)
@@ -117,21 +117,21 @@ typedef pipe SIMPLE_STRUCT SIMPLE_STRUCT_PIPE;
 [**representar \_ como**](represent-as.md)
 </dt> <dt>
 
-[**struct**](struct.md)
+[**Struct**](struct.md)
 </dt> <dt>
 
 [**transmitir \_ como**](transmit-as.md)
 </dt> <dt>
 
-[**diferente**](unique.md)
+[**Único**](unique.md)
 </dt> <dt>
 
-[**Marshal do usuário \_**](user-marshal.md)
+[**marshal \_ de usuário**](user-marshal.md)
 </dt> <dt>
 
-[**\_marshaling de transmissão**](wire-marshal.md)
+[**wire \_ marshal**](wire-marshal.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

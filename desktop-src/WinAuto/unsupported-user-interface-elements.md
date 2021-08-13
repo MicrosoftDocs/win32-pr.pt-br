@@ -4,12 +4,12 @@ description: O Microsoft Acessibilidade Ativa não oferece suporte aos controles
 ms.assetid: 3c6a46e2-fa21-4d78-adab-6db331af0513
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83e005275bf0acbd5d8648242427eb8529267a63
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 66da31732758ab9256ac81dcee3ec5501bfab2d6f2811a9354d61e496ac5e8fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118563885"
 ---
 # <a name="unsupported-user-interface-elements"></a>Elementos de interface do usuário sem suporte
 
@@ -25,7 +25,7 @@ O Microsoft Acessibilidade Ativa não oferece suporte aos controles comuns lista
 
 
 
- 
+ 
 
 O Microsoft Acessibilidade Ativa não oferece suporte aos controles predefinidos e elementos de janela listados na tabela a seguir.
 
@@ -35,15 +35,15 @@ O Microsoft Acessibilidade Ativa não oferece suporte aos controles predefinidos
 |-------------------|-------------------------------------------------------------|
 | DDEMLEvent        | Windows NT: a classe para eventos DDEML                      |
 | Mensagem           | Windows 2000 e posterior: a classe para uma janela somente mensagem |
-| \#32772           | Windows NT: a classe para títulos de ícones                       |
+| \#32772           | Windows NT: a classe para títulos de ícone                       |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

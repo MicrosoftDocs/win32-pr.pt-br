@@ -1,7 +1,7 @@
 ---
 description: Recupera o corpo da entidade de resposta como uma matriz de bytes não assinados.
 ms.assetid: 557913e0-9f19-42fc-bfca-9ed248972b4b
-title: 'Propriedade IWinHttpRequest:: ResponseBody'
+title: Propriedade IWinHttpRequest::ResponseBody
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: 5a608f2744ad2880ecf7c4862b03821afcef9630
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 56eac42d41054cf7c01ff0c69ffcb82353db7182acf15765b25149560d5f7391
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105763074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118563224"
 ---
-# <a name="iwinhttprequestresponsebody-property"></a>Propriedade IWinHttpRequest:: ResponseBody
+# <a name="iwinhttprequestresponsebody-property"></a>Propriedade IWinHttpRequest::ResponseBody
 
-A propriedade **responseBody** recupera o corpo da entidade de resposta como uma matriz de bytes não assinados.
+A **propriedade ResponseBody** recupera o corpo da entidade de resposta como uma matriz de bytes não assinados.
 
 Esta propriedade é somente para leitura.
 
@@ -49,18 +49,18 @@ vtResponseBody = WinHttpRequest.ResponseBody
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um valor **Variant** que recebe o corpo da entidade de resposta como uma matriz de bytes não assinados. Essa matriz contém os dados brutos como recebidos diretamente do servidor.
+Um **valor** Variant que recebe o corpo da entidade de resposta como uma matriz de bytes não assinados. Essa matriz contém os dados brutos recebidos diretamente do servidor.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-O valor de retorno será **S \_ OK** em caso de êxito ou um valor de erro, caso contrário.
+O valor de retorno é **S \_ OK em** caso de êxito ou um valor de erro, caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade retorna os dados de resposta em uma matriz de bytes não assinados. Se a resposta não tiver um corpo de resposta, uma variante vazia será retornada. Essa propriedade só pode ser chamada depois que o método [**Send**](iwinhttprequest-send.md) for chamado.
+Essa propriedade retorna os dados de resposta em uma matriz de bytes não assinados. Se a resposta não tiver um corpo de resposta, uma variante vazia será retornada. Essa propriedade só poderá ser invocada depois que [**o método Send**](iwinhttprequest-send.md) tiver sido chamado.
 
 > [!Note]  
-> Para obter mais informações sobre a implementação do Windows XP e do Windows 2000, consulte [requisitos de tempo de execução](winhttp-start-page.md).
+> Para obter mais informações sobre a implementação Windows XP e Windows 2000, consulte [Requisitos de tempo de execução.](winhttp-start-page.md)
 
  
 
@@ -70,11 +70,11 @@ Essa propriedade retorna os dados de resposta em uma matriz de bytes não assina
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows XP, Windows 2000 Professional com \[ aplicativos de área de trabalho do SP3\]<br/>            |
-| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server com aplicativos de área de trabalho do SP3 \[ somente\]<br/>         |
-| Redistribuível<br/>          | WinHTTP 5,0 e Internet Explorer 5, 1 ou posterior no Windows XP e no Windows 2000.<br/> |
-| INSERI<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>WinHTTP. lib</dt> </dl>     |
+| Cliente mínimo com suporte<br/> | Windows XP, Windows 2000 Professional somente com aplicativos da área de trabalho SP3 \[\]<br/>            |
+| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server somente com aplicativos da área de trabalho SP3 \[\]<br/>         |
+| Redistribuível<br/>          | WinHTTP 5.0 e Internet Explorer 5.01 ou posterior no Windows XP e Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 

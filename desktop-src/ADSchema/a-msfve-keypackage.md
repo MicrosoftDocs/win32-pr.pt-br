@@ -1,11 +1,11 @@
 ---
-title: atributo ms-FVE-KeyPackage
+title: Atributo ms-FVE-KeyPackage
 description: Contém a chave de criptografia BitLocker de um volume protegida pela senha de recuperação correspondente.
 ms.assetid: 5a8964e0-e128-4ac4-9cc9-67799af8ae55
 ms.tgt_platform: multiple
 keywords:
-- ms-FVE-KeyPackage atributo AD Schema
-- msFVE-esquema de pacote de atributos do AD
+- Esquema do AD do atributo ms-FVE-KeyPackage
+- Esquema do AD do atributo msFVE-KeyPackage
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d1c9ffc5deb053ad7718a235ca5f6df79c78f51
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 370c088c3e06a520d63e42707de44bec90cfa63394de4b60ef178deecbbc8fc6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118682758"
 ---
-# <a name="ms-fve-keypackage-attribute"></a>atributo ms-FVE-KeyPackage
+# <a name="ms-fve-keypackage-attribute"></a>Atributo ms-FVE-KeyPackage
 
 Contém a chave de criptografia BitLocker de um volume protegida pela senha de recuperação correspondente.
 
@@ -30,13 +30,13 @@ Contém a chave de criptografia BitLocker de um volume protegida pela senha de r
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | ms-FVE-KeyPackage                                     |
-| LDAP-Display-Name | msFVE-KeyPackage                                      |
+| Ldap-Display-Name | msFVE-KeyPackage                                      |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1999                               |
-| System-ID-GUID    | 1fd55ea8-88a7-47dc-8129-0daa97186a54                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 1fd55ea8-88a7-47dc-8129-0daa97186a54                  |
+| Sintaxe            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,10 +55,10 @@ Contém a chave de criptografia BitLocker de um volume protegida pela senha de r
 | ID do link                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | Falso                                                                        |
-| É de valor único       | True                                                                         |
+| Tem valor único       | True                                                                         |
 | É indexado             | Falso                                                                        |
-| No catálogo global      | Falso                                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                 |
+| No Catálogo Global      | Falso                                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x00000298                                                                   |
@@ -76,10 +76,10 @@ Contém a chave de criptografia BitLocker de um volume protegida pela senha de r
 | ID do link                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | Falso                                                                        |
-| É de valor único       | True                                                                         |
+| Tem valor único       | True                                                                         |
 | É indexado             | Falso                                                                        |
-| No catálogo global      | Falso                                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                 |
+| No Catálogo Global      | Falso                                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x00000298                                                                   |
@@ -97,10 +97,10 @@ Contém a chave de criptografia BitLocker de um volume protegida pela senha de r
 | ID do link                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | Falso                                                                        |
-| É de valor único       | True                                                                         |
+| Tem valor único       | True                                                                         |
 | É indexado             | Falso                                                                        |
-| No catálogo global      | Falso                                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                 |
+| No Catálogo Global      | Falso                                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x00000298                                                                   |

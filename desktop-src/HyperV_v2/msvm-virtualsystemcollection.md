@@ -1,7 +1,7 @@
 ---
 description: Representa uma coleção de sistemas virtuais.
 ms.assetid: acf51beb-1103-43a4-8dc5-1a7f2a0482be
-title: Classe Msvm_VirtualSystemCollection
+title: Msvm_VirtualSystemCollection classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,14 +21,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: a9746356744f2743a8d6656ef4c61044223be113
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 04bb39e0c3ecb73facf09e962d2d189bd6ac59449908c0ed9e0214aa5551595e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118644813"
 ---
-# <a name="msvm_virtualsystemcollection-class"></a>\_Classe Msvm VirtualSystemCollection
+# <a name="msvm_virtualsystemcollection-class"></a>Classe Msvm \_ VirtualSystemCollection
 
 Representa uma coleção de sistemas virtuais.
 
@@ -53,13 +53,13 @@ class Msvm_VirtualSystemCollection : CIM_CollectionOfMSEs
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ VirtualSystemCollection** tem estes tipos de membros:
+A **classe \_ VirtualSystemCollection do Msvm** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ VirtualSystemCollection** tem essas propriedades.
+A **classe \_ VirtualSystemCollection do Msvm** tem essas propriedades.
 
 <dl> <dt>
 
@@ -72,7 +72,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**substituição**](/windows/desktop/WmiSdk/standard-qualifiers) ("CollectionId"), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CollectionID"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 A identificação exclusiva do objeto de coleção.
@@ -88,17 +88,17 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("ElementName")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("ElementName")
 </dt> </dl>
 
-Um nome definido pelo usuário para a coleção. Observe que isso não é garantido como exclusivo.
+Um nome definido pelo usuário para a coleção. Observe que não há garantia de que isso seja exclusivo.
 
 </dd> <dt>
 
 **FailedOverReplicationType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -139,13 +139,13 @@ Tipo de failover que foi executado para a coleção do sistema virtual.
 **LastApplyConsistencyLevel**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Nível de consistência do último Delta aplicado.
+Nível de consistência do último delta aplicado.
 
 > [!Note]  
 > Adicionado no Windows 10, versão 1703.
@@ -163,34 +163,34 @@ Nível de consistência do último Delta aplicado.
 
 <span id="Application_Consistent"></span><span id="application_consistent"></span><span id="APPLICATION_CONSISTENT"></span>
 
-<span id="Application_Consistent"></span><span id="application_consistent"></span><span id="APPLICATION_CONSISTENT"></span>**Consistente** com o aplicativo (1)
+<span id="Application_Consistent"></span><span id="application_consistent"></span><span id="APPLICATION_CONSISTENT"></span>**Consistente com o** aplicativo (1)
 
 
 </dt> <dd>
 
-O último Delta aplicado indica um ponto no tempo em que o sistema virtual estava no estado consistente do aplicativo.
+O último delta aplicado indica um ponto no tempo em que o sistema virtual estava no estado consistente do aplicativo.
 
 </dd> <dt>
 
 <span id="Crash_Consistent"></span><span id="crash_consistent"></span><span id="CRASH_CONSISTENT"></span>
 
-<span id="Crash_Consistent"></span><span id="crash_consistent"></span><span id="CRASH_CONSISTENT"></span>**Falha consistente** (2)
+<span id="Crash_Consistent"></span><span id="crash_consistent"></span><span id="CRASH_CONSISTENT"></span>**Consistente com falhas** (2)
 
 
 </dt> <dd>
 
-O último Delta aplicado indica um ponto no tempo em que o sistema virtual estava em estado consistente de falha.
+O último delta aplicado indica um ponto no tempo em que o sistema virtual estava em estado consistente com falhas.
 
 </dd> <dt>
 
 <span id="Group_Crash_Consistent"></span><span id="group_crash_consistent"></span><span id="GROUP_CRASH_CONSISTENT"></span>
 
-<span id="Group_Crash_Consistent"></span><span id="group_crash_consistent"></span><span id="GROUP_CRASH_CONSISTENT"></span>**Falha de grupo consistente** (3)
+<span id="Group_Crash_Consistent"></span><span id="group_crash_consistent"></span><span id="GROUP_CRASH_CONSISTENT"></span>**Consistente com falhas de grupo** (3)
 
 
 </dt> <dd>
 
-O último Delta aplicado indica um ponto no tempo em que o grupo estava em estado de falha consistente.
+O último delta aplicado indica um ponto no tempo em que o grupo estava em estado consistente com falhas.
 
 </dd> </dl>
 
@@ -217,13 +217,13 @@ A hora em que a última replicação é aplicada na recuperação para a coleç�
 **LastApplyVirtualMachineIds**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Matriz de IDs de máquina virtual que foram aplicadas com êxito no último ciclo de aplicação.
+Matriz de IDs de Máquina Virtual que foram aplicadas com êxito no último ciclo de aplicação.
 
 > [!Note]  
 > Adicionado no Windows 10, versão 1703.
@@ -235,7 +235,7 @@ Matriz de IDs de máquina virtual que foram aplicadas com êxito no último cicl
 **ReplicationMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -283,7 +283,7 @@ Tipo de replicação para a coleção do sistema virtual.
 **ReplicationState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -342,7 +342,7 @@ Estado de replicação para a coleção do sistema virtual.
 
 <span id="Committed"></span><span id="committed"></span><span id="COMMITTED"></span>
 
-**Confirmado** (6)
+**Committed** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -377,14 +377,14 @@ Estado de replicação para a coleção do sistema virtual.
 
 <span id="Planned_failover_initiatedRepurpose_initiatedTest_failover_initiatedPartially_enabled"></span><span id="planned_failover_initiatedrepurpose_initiatedtest_failover_initiatedpartially_enabled"></span><span id="PLANNED_FAILOVER_INITIATEDREPURPOSE_INITIATEDTEST_FAILOVER_INITIATEDPARTIALLY_ENABLED"></span>
 
-Failover **planejado InitiatedRepurpose initiatedTest failover initiatedPartially habilitado** (11)
+**Failover planejado iniciadoRepurpose initiatedTest failover initiatedPartially enabled** (11)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Partially_disabled"></span><span id="partially_disabled"></span><span id="PARTIALLY_DISABLED"></span>
 
-**Parcialmente desabilitado** (12)
+**Desabilitado parcialmente** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -425,10 +425,10 @@ Failover **planejado InitiatedRepurpose initiatedTest failover initiatedPartiall
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                             |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -437,7 +437,7 @@ Failover **planejado InitiatedRepurpose initiatedTest failover initiatedPartiall
 
 <dl> <dt>
 
-[**CIM \_ CollectionOfMSEs**](cim-collectionofmses.md)
+[**Coleção \_ CIMOfMSEs**](cim-collectionofmses.md)
 </dt> </dl>
 
  

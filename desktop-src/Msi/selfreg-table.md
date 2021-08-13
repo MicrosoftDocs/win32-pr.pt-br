@@ -4,12 +4,12 @@ ms.assetid: 7fe5c96e-16a4-49c9-9a93-616608aa55b2
 title: Tabela SelfReg
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5895b1d23369a7c121547fed841731b5d3e76ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61d00b9f18755cf3284edfd1ba9476b12ba6343c816dbafe84ac3c3676f663f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118625502"
 ---
 # <a name="selfreg-table"></a>Tabela SelfReg
 
@@ -21,8 +21,8 @@ A tabela SelfReg tem as colunas a seguir.
 
 | Coluna | Tipo                         | Chave | Nullable |
 |--------|------------------------------|-----|----------|
-| Arquivo\_ | [Identificador](identifier.md) | S   | N        |
-| Custo   | [Inteiro](integer.md)       | N   | S        |
+| Grupo\_ | [Identificador](identifier.md) | Y   | N        |
+| Cost   | [Inteiro](integer.md)       | N   | Y        |
 
 
 

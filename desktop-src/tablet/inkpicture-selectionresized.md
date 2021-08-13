@@ -1,19 +1,19 @@
 ---
-description: Evento InkPicture. SelectionResized – ocorre quando o tamanho da seleção atual é alterado, por exemplo, por meio de alterações na interface do usuário, nos procedimentos de recortar e colar ou na Propriedade Selection.
+description: Evento InkPicture.SelectionResized – ocorre quando o tamanho da seleção atual foi alterado, por exemplo, por meio de alterações na interface do usuário, procedimentos de recortar e colar ou na propriedade Seleção.
 ms.assetid: 4e7f461f-2909-40ab-98d8-b763d489eb62
-title: Evento InkPicture. SelectionResized (Msinkaut. h)
+title: Evento InkPicture.SelectionResized (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1dcad4b84cd21ee9b4d385f24033c56913765810
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7e67bc19d4d35c356e0774f0843ba62432606c1ee4f1f84095e64c4808d09bd6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118451045"
 ---
-# <a name="inkpictureselectionresized-event"></a>Evento InkPicture. SelectionResized
+# <a name="inkpictureselectionresized-event"></a>Evento InkPicture.SelectionResized
 
-Ocorre quando o tamanho da seleção atual é alterado, por exemplo, por meio de alterações na interface do usuário, nos procedimentos de recortar e colar ou na propriedade [**Selection**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_selection) .
+Ocorre quando o tamanho da seleção atual foi alterado, por exemplo, por meio de alterações na interface do usuário, procedimentos de recortar e colar ou a [**propriedade Selection.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_selection)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -30,13 +30,13 @@ void SelectionResized(
 
 <dl> <dt>
 
-*OldSelectionRect* \[ no\]
+*OldSelectionRect* \[ Em\]
 </dt> <dd>
 
-O retângulo delimitador da coleção [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) selecionada como existia antes de o evento **SelectionResized** ser acionado.
+O retângulo delimitar da coleção [InkStrkes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) selecionada como ela existia antes do **evento SelectionResized** ser disparado.
 
 > [!Note]  
-> Esse retângulo é especificado em coordenadas de espaço de tinta, o que permite cenários de desfazer.
+> Esse retângulo é especificado em coordenadas de espaço de tinta, o que permite desfazer cenários.
 
  
 
@@ -48,7 +48,7 @@ Esse evento não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método de evento é definido nas interfaces somente de expedição **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** (dispinterfaces) com uma ID de DISPID \_ IOESelectionResized.
+Esse método de evento é definido nas interfaces somente de expedição **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** (dispinterfaces) com uma ID de \_ DISPID IOESelectionResized.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,21 +56,21 @@ Esse método de evento é definido nas interfaces somente de expedição **\_ II
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                           |
-| parâmetro<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
+| parâmetro<br/>                   | <dl> <dt>Msinkaut.h (também requer Msinkaut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[InkPicture](inkpicture-control-reference.md)
+[Inkpicture](inkpicture-control-reference.md)
 </dt> <dt>
 
-[**Controle de propriedade de seleção \[ InkPicture\]**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_selection)
+[**Controle \[ InkPicture da propriedade Selection\]**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_selection)
 </dt> <dt>
 
 [**Classe InkRectangle**](inkrectangle-class.md)

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Wisptis.exe
 - Wisptis.exe.dll
-ms.openlocfilehash: f62de678085bda723bb13a721d75c349d395787a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1c7b7e1fa087dad42e7bdc3b803bd7158b8859d1d428714f6eb2c4321687a603
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105814531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118449799"
 ---
 # <a name="itabletcontextpistopmosthook-method"></a>Método ITabletContextP:: IsTopMostHook
 
@@ -38,7 +38,7 @@ HRESULT IsTopMostHook();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -59,7 +59,7 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

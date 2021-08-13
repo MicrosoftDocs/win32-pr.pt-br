@@ -1,11 +1,11 @@
 ---
-title: Método IDWriteTextLayout GetOverhangMetrics
-description: Retorna os sobretravamentos (em DIPs) do layout e todos os objetos contidos nele, incluindo os glifos de texto e objetos embutidos.
+title: Método IDWriteTextLayout GetOvermetrics
+description: Retorna os excessos (em DIPs) do layout e todos os objetos contidos nele, incluindo glifos de texto e objetos em linha.
 ms.assetid: 4b23f6c5-cacc-41e2-8934-6f95208b999a
 keywords:
-- Gravação direta do método GetOverhangMetrics
-- Método GetOverhangMetrics Direct Write, interface IDWriteTextLayout
-- IDWriteTextLayout interface de gravação direta, método GetOverhangMetrics
+- Gravação direta do método GetOvermetrics
+- Método GetOvermetrics Direct Write , interface IDWriteTextLayout
+- IDWriteTextLayout interface Direct Write , GetOvermetrics method
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d8a015998f0a673a310319f93d8f4892dd4b1c4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb3591df5dc02fdc63215ff2276202df62347ed21aef23991b4ddcadef094281
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105766922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118649741"
 ---
-# <a name="idwritetextlayoutgetoverhangmetrics-method"></a>Método IDWriteTextLayout:: GetOverhangMetrics
+# <a name="idwritetextlayoutgetoverhangmetrics-method"></a>Método IDWriteTextLayout::GetOvermetrics
 
-Retorna os sobretravamentos (em DIPs) do layout e todos os objetos contidos nele, incluindo os glifos de texto e objetos embutidos.
+Retorna os excessos (em DIPs) do layout e todos os objetos contidos nele, incluindo glifos de texto e objetos em linha.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,24 +42,24 @@ virtual HRESULT GetOverhangMetrics(
 
 <dl> <dt>
 
-*sobretravamentos* \[ fora\]
+*over over* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **DWRITE \_ de \_ métricas de folga**](/windows/win32/api/dwrite/ns-dwrite-dwrite_overhang_metrics)\***
+Tipo: **[ **DWRITE \_ OVER DIGIT \_ METRICS**](/windows/win32/api/dwrite/ns-dwrite-dwrite_overhang_metrics)\***
 
-Sobrelançações de extensões visíveis (em DIPs) fora do layout.
+Sobrefiliações de extensão visíveis (em DIPs) fora do layout.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Sublinhados e tachados não contribuem para a determinação da caixa preta, pois eles são, na verdade, desenhados pelo renderizador, que tem permissão para desenhá-los em qualquer variedade de estilos.
+Sublinhados e tachados não contribuem para a determinação da caixa preta, pois eles são realmente desenhados pelo renderador, que tem permissão para desenhá-los em qualquer variedade de estilos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,7 +67,7 @@ Sublinhados e tachados não contribuem para a determinação da caixa preta, poi
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>Dwrite. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Dwrite.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>Dwrite.dll</dt> </dl> |
 
 

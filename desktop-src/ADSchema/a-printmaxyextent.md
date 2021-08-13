@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 207d81f12303408b082e70b599652ee281ffe458
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d5d6205ba74edfca7a0043f9a2f617b9067b66dfe74c56864e7dc775cefb691a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118682174"
 ---
 # <a name="print-max-y-extent-attribute"></a>Imprimir-atributo de extensão Max-Y
 
@@ -36,7 +36,7 @@ A região de impressão vertical máxima.
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.278               |
 | System-ID-GUID    | ba305f70-47e3-11d0-a1a6-00c04fd930c9 |
-| Syntax            | [**Enumeração**](s-enumeration.md) |
+| Sintaxe            | [**Enumeração**](s-enumeration.md) |
 
 
 
@@ -121,15 +121,15 @@ A região de impressão vertical máxima.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| Tem valor único       | True                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | Falso                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Falso                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ A região de impressão vertical máxima.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| Tem valor único       | True                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | Falso                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Falso                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ A região de impressão vertical máxima.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| Tem valor único       | True                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | Falso                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Falso                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 

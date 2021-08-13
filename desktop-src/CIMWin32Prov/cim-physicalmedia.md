@@ -37,12 +37,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f8709128c189956bba4bc371e0f5bfb30d67b49f
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: f595128b69d976363605d2b3cc1ac030b5d92c54c26318d376235185387d1c23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104172508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118677548"
 ---
 # <a name="cim_physicalmedia-class"></a>\_Classe CIM PhysicalMedia
 
@@ -402,21 +402,21 @@ Tipo de mídia física. A propriedade **MediaDescription** fornece mais definiç
 
 <span id="CD_Recordable"></span><span id="cd_recordable"></span><span id="CD_RECORDABLE"></span>
 
-<span id="CD_Recordable"></span><span id="cd_recordable"></span><span id="CD_RECORDABLE"></span>**CD gravável** (19)
+<span id="CD_Recordable"></span><span id="cd_recordable"></span><span id="CD_RECORDABLE"></span>**CD Recordável** (19)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="WORM"></span><span id="worm"></span>
 
-<span id="WORM"></span><span id="worm"></span>**Worm** (20)
+<span id="WORM"></span><span id="worm"></span>**WORM** (20)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Magneto-Optical"></span><span id="magneto-optical"></span><span id="MAGNETO-OPTICAL"></span>
 
-<span id="Magneto-Optical"></span><span id="magneto-optical"></span><span id="MAGNETO-OPTICAL"></span>**Magneto-óptico** (21)
+<span id="Magneto-Optical"></span><span id="magneto-optical"></span><span id="MAGNETO-OPTICAL"></span>**York-Optical** (21)
 
 
 </dt> <dd></dd> <dt>
@@ -430,7 +430,7 @@ Tipo de mídia física. A propriedade **MediaDescription** fornece mais definiç
 
 <span id="DVD_RW"></span><span id="dvd_rw"></span>
 
-<span id="DVD_RW"></span><span id="dvd_rw"></span>**DVD + RW** (23)
+<span id="DVD_RW"></span><span id="dvd_rw"></span>**DVD+RW** (23)
 
 
 </dt> <dd></dd> <dt>
@@ -451,21 +451,21 @@ Tipo de mídia física. A propriedade **MediaDescription** fornece mais definiç
 
 <span id="DVD-Video"></span><span id="dvd-video"></span><span id="DVD-VIDEO"></span>
 
-<span id="DVD-Video"></span><span id="dvd-video"></span><span id="DVD-VIDEO"></span>**DVD-vídeo** (26)
+<span id="DVD-Video"></span><span id="dvd-video"></span><span id="DVD-VIDEO"></span>**DVD-Video** (26)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Divx"></span><span id="divx"></span><span id="DIVX"></span>
 
-<span id="Divx"></span><span id="divx"></span><span id="DIVX"></span>**DivX** (27)
+<span id="Divx"></span><span id="divx"></span><span id="DIVX"></span>**Divx** (27)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Floppy_Diskette"></span><span id="floppy_diskette"></span><span id="FLOPPY_DISKETTE"></span>
 
-<span id="Floppy_Diskette"></span><span id="floppy_diskette"></span><span id="FLOPPY_DISKETTE"></span>**Disquete/disquete** (28)
+<span id="Floppy_Diskette"></span><span id="floppy_diskette"></span><span id="FLOPPY_DISKETTE"></span>**Disquete/Diskette** (28)
 
 
 </dt> <dd>
@@ -483,7 +483,7 @@ Disquete
 
 <span id="Memory_Card"></span><span id="memory_card"></span><span id="MEMORY_CARD"></span>
 
-<span id="Memory_Card"></span><span id="memory_card"></span><span id="MEMORY_CARD"></span>**Placa de memória** (30)
+<span id="Memory_Card"></span><span id="memory_card"></span><span id="MEMORY_CARD"></span>**Cartão de memória** (30)
 
 
 </dt> <dd></dd> <dt>
@@ -497,7 +497,7 @@ Disquete
 
 <span id="Clik_Disk"></span><span id="clik_disk"></span><span id="CLIK_DISK"></span>
 
-<span id="Clik_Disk"></span><span id="clik_disk"></span><span id="CLIK_DISK"></span>**Disco clique** (32)
+<span id="Clik_Disk"></span><span id="clik_disk"></span><span id="CLIK_DISK"></span>**Disco Clik** (32)
 
 
 </dt> <dd></dd> <dt>
@@ -511,21 +511,21 @@ Disquete
 
 <span id="CD-DA"></span><span id="cd-da"></span>
 
-<span id="CD-DA"></span><span id="cd-da"></span>**CD-da** (34)
+<span id="CD-DA"></span><span id="cd-da"></span>**CD-DA** (34)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="CD_"></span><span id="cd_"></span>
 
-<span id="CD_"></span><span id="cd_"></span>**CD +** (35)
+<span id="CD_"></span><span id="cd_"></span>**CD+** (35)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DVD_Recordable"></span><span id="dvd_recordable"></span><span id="DVD_RECORDABLE"></span>
 
-<span id="DVD_Recordable"></span><span id="dvd_recordable"></span><span id="DVD_RECORDABLE"></span>**DVD gravável** (36)
+<span id="DVD_Recordable"></span><span id="dvd_recordable"></span><span id="DVD_RECORDABLE"></span>**DVD Recordável** (36)
 
 
 </dt> <dd></dd> <dt>
@@ -539,7 +539,7 @@ Disquete
 
 <span id="DVD-Audio"></span><span id="dvd-audio"></span><span id="DVD-AUDIO"></span>
 
-<span id="DVD-Audio"></span><span id="dvd-audio"></span><span id="DVD-AUDIO"></span>**DVD-áudio** (38)
+<span id="DVD-Audio"></span><span id="dvd-audio"></span><span id="DVD-AUDIO"></span>**DVD-Audio** (38)
 
 
 </dt> <dd></dd> <dt>
@@ -574,49 +574,49 @@ Disquete
 
 <span id="Magneto-Optical_Rewriteable"></span><span id="magneto-optical_rewriteable"></span><span id="MAGNETO-OPTICAL_REWRITEABLE"></span>
 
-<span id="Magneto-Optical_Rewriteable"></span><span id="magneto-optical_rewriteable"></span><span id="MAGNETO-OPTICAL_REWRITEABLE"></span>**Magneto-óptico regravável** (43)
+<span id="Magneto-Optical_Rewriteable"></span><span id="magneto-optical_rewriteable"></span><span id="MAGNETO-OPTICAL_REWRITEABLE"></span>**Que pode ser regravado** por Óptico (43)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Magneto-Optical_Write_Once"></span><span id="magneto-optical_write_once"></span><span id="MAGNETO-OPTICAL_WRITE_ONCE"></span>
 
-<span id="Magneto-Optical_Write_Once"></span><span id="magneto-optical_write_once"></span><span id="MAGNETO-OPTICAL_WRITE_ONCE"></span>**Magneto-óptico gravar uma vez** (44)
+<span id="Magneto-Optical_Write_Once"></span><span id="magneto-optical_write_once"></span><span id="MAGNETO-OPTICAL_WRITE_ONCE"></span>**Gravação de Uma Vez** (44)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Magneto-Optical_Rewriteable__LIMDOW_"></span><span id="magneto-optical_rewriteable__limdow_"></span><span id="MAGNETO-OPTICAL_REWRITEABLE__LIMDOW_"></span>
 
-<span id="Magneto-Optical_Rewriteable__LIMDOW_"></span><span id="magneto-optical_rewriteable__limdow_"></span><span id="MAGNETO-OPTICAL_REWRITEABLE__LIMDOW_"></span>**Magneto-óptico regravável (LIMDOW)** (45)
+<span id="Magneto-Optical_Rewriteable__LIMDOW_"></span><span id="magneto-optical_rewriteable__limdow_"></span><span id="MAGNETO-OPTICAL_REWRITEABLE__LIMDOW_"></span>**LIMDOW (LIMDOW) (45)**
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Phase_Change_Write_Once"></span><span id="phase_change_write_once"></span><span id="PHASE_CHANGE_WRITE_ONCE"></span>
 
-<span id="Phase_Change_Write_Once"></span><span id="phase_change_write_once"></span><span id="PHASE_CHANGE_WRITE_ONCE"></span>A **alteração de fase é gravada uma vez** (46)
+<span id="Phase_Change_Write_Once"></span><span id="phase_change_write_once"></span><span id="PHASE_CHANGE_WRITE_ONCE"></span>**Gravação de alteração de fase uma** vez (46)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Phase_Change_Rewriteable"></span><span id="phase_change_rewriteable"></span><span id="PHASE_CHANGE_REWRITEABLE"></span>
 
-<span id="Phase_Change_Rewriteable"></span><span id="phase_change_rewriteable"></span><span id="PHASE_CHANGE_REWRITEABLE"></span>**Alteração de fase regravável** (47)
+<span id="Phase_Change_Rewriteable"></span><span id="phase_change_rewriteable"></span><span id="PHASE_CHANGE_REWRITEABLE"></span>**Alteração de fase reescrita** (47)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Phase_Change_Dual_Rewriteable"></span><span id="phase_change_dual_rewriteable"></span><span id="PHASE_CHANGE_DUAL_REWRITEABLE"></span>
 
-<span id="Phase_Change_Dual_Rewriteable"></span><span id="phase_change_dual_rewriteable"></span><span id="PHASE_CHANGE_DUAL_REWRITEABLE"></span>**Alteração de fase dupla regravável** (48)
+<span id="Phase_Change_Dual_Rewriteable"></span><span id="phase_change_dual_rewriteable"></span><span id="PHASE_CHANGE_DUAL_REWRITEABLE"></span>**Alteração de fase reescrita dupla** (48)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Ablative_Write_Once"></span><span id="ablative_write_once"></span><span id="ABLATIVE_WRITE_ONCE"></span>
 
-<span id="Ablative_Write_Once"></span><span id="ablative_write_once"></span><span id="ABLATIVE_WRITE_ONCE"></span>**Ablative gravar uma vez** (49)
+<span id="Ablative_Write_Once"></span><span id="ablative_write_once"></span><span id="ABLATIVE_WRITE_ONCE"></span>**Gravação ablativa uma vez** (49)
 
 
 </dt> <dd></dd> <dt>
@@ -630,28 +630,28 @@ Disquete
 
 <span id="MiniQic"></span><span id="miniqic"></span><span id="MINIQIC"></span>
 
-<span id="MiniQic"></span><span id="miniqic"></span><span id="MINIQIC"></span>**MiniQic** (51)
+<span id="MiniQic"></span><span id="miniqic"></span><span id="MINIQIC"></span>**Miniqic** (51)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Travan"></span><span id="travan"></span><span id="TRAVAN"></span>
 
-<span id="Travan"></span><span id="travan"></span><span id="TRAVAN"></span>**Travado** (52)
+<span id="Travan"></span><span id="travan"></span><span id="TRAVAN"></span>**Travan** (52)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="8mm_Metal_Particle"></span><span id="8mm_metal_particle"></span><span id="8MM_METAL_PARTICLE"></span>
 
-<span id="8mm_Metal_Particle"></span><span id="8mm_metal_particle"></span><span id="8MM_METAL_PARTICLE"></span>**partícula de metal de 8mm** (53)
+<span id="8mm_Metal_Particle"></span><span id="8mm_metal_particle"></span><span id="8MM_METAL_PARTICLE"></span>**Partícula de metal de 8mm** (53)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="8mm_Advanced_Metal_Evaporate"></span><span id="8mm_advanced_metal_evaporate"></span><span id="8MM_ADVANCED_METAL_EVAPORATE"></span>
 
-<span id="8mm_Advanced_Metal_Evaporate"></span><span id="8mm_advanced_metal_evaporate"></span><span id="8MM_ADVANCED_METAL_EVAPORATE"></span>**evaporação avançada de metal de 8mm** (54)
+<span id="8mm_Advanced_Metal_Evaporate"></span><span id="8mm_advanced_metal_evaporate"></span><span id="8MM_ADVANCED_METAL_EVAPORATE"></span>**8mm Advanced Metal Ltdte** (54)
 
 
 </dt> <dd></dd> <dt>
@@ -665,7 +665,7 @@ Disquete
 
 <span id="LTO_Ultrium"></span><span id="lto_ultrium"></span><span id="LTO_ULTRIUM"></span>
 
-<span id="LTO_Ultrium"></span><span id="lto_ultrium"></span><span id="LTO_ULTRIUM"></span>**LTO Ultrium** (56)
+<span id="LTO_Ultrium"></span><span id="lto_ultrium"></span><span id="LTO_ULTRIUM"></span>**LTO Ultultult** (56)
 
 
 </dt> <dd></dd> <dt>
@@ -679,34 +679,34 @@ Disquete
 
 <span id="9_Track_Tape"></span><span id="9_track_tape"></span><span id="9_TRACK_TAPE"></span>
 
-<span id="9_Track_Tape"></span><span id="9_track_tape"></span><span id="9_TRACK_TAPE"></span>**9 rastrear fita** (58)
+<span id="9_Track_Tape"></span><span id="9_track_tape"></span><span id="9_TRACK_TAPE"></span>**9 Faixa de Fita** (58)
 
 
 </dt> <dd>
 
-9-controlar fita
+Fita de 9 faixas
 
 </dd> <dt>
 
 <span id="18_Track_Tape"></span><span id="18_track_tape"></span><span id="18_TRACK_TAPE"></span>
 
-<span id="18_Track_Tape"></span><span id="18_track_tape"></span><span id="18_TRACK_TAPE"></span>**18 trilhas de fita** (59)
+<span id="18_Track_Tape"></span><span id="18_track_tape"></span><span id="18_TRACK_TAPE"></span>**18 Faixa de Fita** (59)
 
 
 </dt> <dd>
 
-fita de 18 trilhas
+Fita de 18 faixas
 
 </dd> <dt>
 
 <span id="36_Track_Tape"></span><span id="36_track_tape"></span><span id="36_TRACK_TAPE"></span>
 
-<span id="36_Track_Tape"></span><span id="36_track_tape"></span><span id="36_TRACK_TAPE"></span>**36 faixa de fita** (60)
+<span id="36_Track_Tape"></span><span id="36_track_tape"></span><span id="36_TRACK_TAPE"></span>**36 Faixa de Fita** (60)
 
 
 </dt> <dd>
 
-36-rastrear fita
+Fita de 36 faixas
 
 </dd> <dt>
 
@@ -719,7 +719,7 @@ fita de 18 trilhas
 
 <span id="Magstar_MP"></span><span id="magstar_mp"></span><span id="MAGSTAR_MP"></span>
 
-<span id="Magstar_MP"></span><span id="magstar_mp"></span><span id="MAGSTAR_MP"></span>**MAGSTAR MP** (62)
+<span id="Magstar_MP"></span><span id="magstar_mp"></span><span id="MAGSTAR_MP"></span>**Magstar MP** (62)
 
 
 </dt> <dd></dd> <dt>
@@ -733,34 +733,34 @@ fita de 18 trilhas
 
 <span id="Tape_-_DST_Small"></span><span id="tape_-_dst_small"></span><span id="TAPE_-_DST_SMALL"></span>
 
-<span id="Tape_-_DST_Small"></span><span id="tape_-_dst_small"></span><span id="TAPE_-_DST_SMALL"></span>**Fita-DST pequena** (64)
+<span id="Tape_-_DST_Small"></span><span id="tape_-_dst_small"></span><span id="TAPE_-_DST_SMALL"></span>**Fita – DST Small** (64)
 
 
 </dt> <dd>
 
-DST pequena de fita
+DST de fita pequena
 
 </dd> <dt>
 
 <span id="Tape_-_DST_Medium"></span><span id="tape_-_dst_medium"></span><span id="TAPE_-_DST_MEDIUM"></span>
 
-<span id="Tape_-_DST_Medium"></span><span id="tape_-_dst_medium"></span><span id="TAPE_-_DST_MEDIUM"></span>**Fita-DST média** (65)
+<span id="Tape_-_DST_Medium"></span><span id="tape_-_dst_medium"></span><span id="TAPE_-_DST_MEDIUM"></span>**Fita – DST Médio** (65)
 
 
 </dt> <dd>
 
-DST média de fita
+Mídia DST de fita
 
 </dd> <dt>
 
 <span id="Tape_-_DST_Large"></span><span id="tape_-_dst_large"></span><span id="TAPE_-_DST_LARGE"></span>
 
-<span id="Tape_-_DST_Large"></span><span id="tape_-_dst_large"></span><span id="TAPE_-_DST_LARGE"></span>**Fita-DST grande** (66)
+<span id="Tape_-_DST_Large"></span><span id="tape_-_dst_large"></span><span id="TAPE_-_DST_LARGE"></span>**Fita – DST Grande** (66)
 
 
 </dt> <dd>
 
-DST grande em fita
+DST de fita grande
 
 </dd> </dl>
 
@@ -775,12 +775,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
 Nome pelo qual o elemento físico é geralmente conhecido.
 
-Essa propriedade é herdada do [**CIM \_ físicoelement**](cim-physicalelement.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -793,12 +793,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
+Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nome")
 </dt> </dl>
 
-Rótulo pelo qual o objeto é conhecido. Quando em uma subclasse, essa propriedade pode ser substituída como uma propriedade de chave.
+Rótulo pelo qual o objeto é conhecido. Quando subclasse, essa propriedade pode ser substituído para ser uma propriedade de chave.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -811,7 +811,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Dados adicionais, além das informações de marca do ativo, que podem ser usados para identificar um elemento físico. Um exemplo são dados de código de barras associados a um elemento, que também tem uma marca de ativo. Observe que, se apenas os dados de código de barras estiverem disponíveis e for exclusivo e puderem ser usados como uma chave de elemento, essa propriedade será nula e os dados de código de barras seriam usados como a chave de classe na propriedade de **marca** . Essa propriedade é herdada do [**CIM \_ físicoelement**](cim-physicalelement.md).
+Dados adicionais, além das informações de marca de ativo, que podem ser usados para identificar um elemento físico. Um exemplo são dados de código de barras associados a um elemento , que também tem uma marca de ativo. Observe que, se apenas os dados de código de barras estão disponíveis e são exclusivos e podem ser usados como uma chave de elemento, essa propriedade seria nula e os dados de código de barra seriam usados como a chave de classe na propriedade **Tag.** Essa propriedade é herdada de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -824,55 +824,55 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Número de peça atribuído pela organização responsável por produzir ou fabricar o elemento físico.
+Número da parte atribuído pela organização responsável por produzir ou fabricar o elemento físico.
 
-Essa propriedade é herdada do [**CIM \_ físicoelement**](cim-physicalelement.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
-**Ligado**
+**PoweredOn**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se **for true**, o elemento físico será ligado.
+Se **TRUE**, o elemento físico será ligado.
 
-Essa propriedade é herdada do [**CIM \_ físicoelement**](cim-physicalelement.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
 **Removível**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se for **true**, esse elemento será projetado para ser levado para dentro e para fora do contêiner físico no qual ele normalmente é encontrado, sem comprometer a função do empacotamento geral. Um pacote é considerado removível, mesmo que a energia precise ser desligada para executar a remoção. Se a energia puder ser ativada e o pacote for removido, o elemento será removível e poderá ser intercambiável. Por exemplo, um chip de processador não atualizável é removível.
+Se **TRUE**, esse elemento foi projetado para ser levado para dentro e para fora do contêiner físico no qual normalmente é encontrado, sem prejudicar a função do empacotamento geral. Um pacote é considerado removível mesmo se a energia deve estar desligada para executar a remoção. Se a energia puder estar e o pacote for removido, o elemento será removível e poderá ser trocado a quente. Por exemplo, um chip de processador ingradável é removível.
 
-Essa propriedade é herdada do [**CIM \_ PhysicalComponent**](cim-physicalcomponent.md).
+Essa propriedade é herdada de [**Cim \_ PhysicalComponent.**](cim-physicalcomponent.md)
 
 </dd> <dt>
 
-**Peças**
+**Substituível**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se for **true**, é possível substituir o elemento por um fisicamente diferente. Por exemplo, alguns sistemas de computador permitem que o chip do processador principal seja atualizado para uma classificação de clock mais alta. Nesse caso, diz-se que o processador é substituível. Todos os componentes removíveis são inerentemente substituíveis.
+Se **TRUE**, é possível substituir o elemento por um fisicamente diferente. Por exemplo, alguns sistemas de computador permitem que o chip do processador principal seja atualizado para uma classificação de relógio mais alta. Nesse caso, diz-se que o processador é substituível. Todos os componentes removíveis são inerentemente substituíveis.
 
 Essa propriedade é herdada do [**CIM \_ PhysicalComponent**](cim-physicalcomponent.md).
 
@@ -1091,7 +1091,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

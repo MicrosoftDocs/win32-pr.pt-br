@@ -1,9 +1,9 @@
 ---
 title: Função DDCCIGetVCPFeature
-description: Obtém o valor atual, o valor máximo e o tipo de código de um código de painel de controle virtual (VCP) para um monitor.
+description: Obtém o valor atual, o valor máximo e o tipo de código de um vcp (virtual Painel de Controle) para um monitor.
 ms.assetid: 7749d45c-a0d5-44ee-8f91-811677cbf59f
 keywords:
-- Configuração do monitor de função DDCCIGetVCPFeature
+- Configuração do monitor da função DDCCIGetVCPFeature
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5758bbd1c86b9f228b64063fdd05c04cb05bedcb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 15549d69bb446d7a7e6d5c44517bade3e9158d1a6d5f9b9ae839d6b1b547717a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118640994"
 ---
 # <a name="ddccigetvcpfeature-function"></a>Função DDCCIGetVCPFeature
 
 > [!IMPORTANT]
-> Essa função é usada pela API de configuração do monitor para acessar a funcionalidade no driver de vídeo. Os aplicativos não devem chamar essa função.
+> Essa função é usada pela API de configuração do monitor para acessar a funcionalidade no driver de exibição. Os aplicativos não devem chamar essa função.
 
  
 
-Obtém o valor atual, o valor máximo e o tipo de código de um código de painel de controle virtual (VCP) para um monitor.
+Obtém o valor atual, o valor máximo e o tipo de código de um vcp (virtual Painel de Controle) para um monitor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,28 +49,28 @@ NTSTATUS WINAPI DDCCIGetVCPFeature(
 
 <dl> <dt>
 
-*HMONITOR* \[ no\]
+*hMonitor* \[ Em\]
 </dt> <dd>
 
-Um identificador para um monitor físico.
+Um alça para um monitor físico.
 
 </dd> <dt>
 
-*dwVCPCode* \[ no\]
+*dwVCPCode* \[ Em\]
 </dt> <dd>
 
 O código VCP a ser consultado.
 
 </dd> <dt>
 
-*PVCT* \[ out, opcional\]
+*pvct* \[ out, opcional\]
 </dt> <dd>
 
-Recebe o tipo de código VCP, como um membro da enumeração de [**\_ tipo de \_ código \_ do MC VCP**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/ne-lowlevelmonitorconfigurationapi-mc_vcp_code_type) .
+Recebe o tipo de código VCP, como um membro da [**enumeração MC \_ VCP \_ CODE \_ TYPE.**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/ne-lowlevelmonitorconfigurationapi-mc_vcp_code_type)
 
 </dd> <dt>
 
-*pdwCurrentValue* \[ fora\]
+*pdwCurrentValue* \[ out\]
 </dt> <dd>
 
 Recebe o valor atual do código VCP.
@@ -84,15 +84,15 @@ Recebe o valor máximo do código VCP.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se o método for bem-sucedido, ele retornará o **status \_ êxito**. Caso contrário, ele retorna um código de erro **NTSTATUS** .
+Se o método for bem-sucedido, ele **retornará STATUS \_ SUCCESS.** Caso contrário, retornará um **código de erro NTSTATUS.**
 
 ## <a name="remarks"></a>Comentários
 
-Os aplicativos devem chamar [**GetVCPFeatureAndVCPFeatureReply**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-getvcpfeatureandvcpfeaturereply) em vez de chamar essa função.
+Os aplicativos [**devem chamar GetVCPFeatureAndVCPFeatureReply em**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-getvcpfeatureandvcpfeaturereply) vez de chamar essa função.
 
-Esta função não tem biblioteca de importação associada. Para chamar essa função, você deve usar as funções [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a Gdi32.dll.
+Essa função não tem nenhuma biblioteca de importação associada. Para chamar essa função, você deve usar as [**funções LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a Gdi32.dll.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,8 +100,8 @@ Esta função não tem biblioteca de importação associada. Para chamar essa fu
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                 |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                 |
 | DLL<br/>                      | <dl> <dt>Gdi32.dll</dt> </dl> |
 
 

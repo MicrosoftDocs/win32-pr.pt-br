@@ -1,30 +1,30 @@
 ---
-title: Sistema de rede do Windows (WNet)
-description: As funções de sistema de rede do Windows (WNet) permitem que você implemente recursos de rede em seu aplicativo sem fazer concessões para um provedor de rede específico ou implementação de rede física.
+title: Windows Rede (WNet)
+description: As Windows de rede (WNet) permitem que você implemente recursos de rede em seu aplicativo sem fazer concessões para um provedor de rede específico ou implementação de rede física.
 ms.assetid: 7668ac55-7104-4ddb-88eb-920cfe4e36fd
 keywords:
-- WNet de rede do Windows
+- Windows WNet de rede
 - WNet WNet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4d436ec5c5daec52d73a3a6f7942bcc76ef4251
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 48b177a3b873584a06429b2a9a033d316851b43df7bb3af524fe393224c6b0c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103823025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118566409"
 ---
-# <a name="windows-networking-wnet"></a>Sistema de rede do Windows (WNet)
+# <a name="windows-networking-wnet"></a>Windows Rede (WNet)
 
-As funções de sistema de rede do Windows (WNet) permitem que você implemente recursos de rede em seu aplicativo sem fazer concessões para um provedor de rede específico ou implementação de rede física. Isso ocorre porque as funções WNet são independentes de rede.
+As Windows de rede (WNet) permitem que você implemente recursos de rede em seu aplicativo sem fazer concessões para um provedor de rede específico ou implementação de rede física. Isso porque as funções WNet são independentes de rede.
 
--   [Sobre a rede do Windows](about-windows-networking.md)
--   [Usando a rede do Windows](using-windows-networking.md)
--   [Referência de rede do Windows](windows-networking-reference.md)
+-   [Sobre Windows rede](about-windows-networking.md)
+-   [Usando Windows rede](using-windows-networking.md)
+-   [Windows Referência de rede](windows-networking-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

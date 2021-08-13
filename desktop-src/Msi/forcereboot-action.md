@@ -4,12 +4,12 @@ ms.assetid: e1bcdd59-8cbc-46f7-b908-c8cbc2ea0539
 title: Ação ForceReboot
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 807bab474f1faacfbc7684797b7a0b7b74f354d9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c41af6b656222a31ab75c9df3f2fa9f94af415f94d6d0b50010c0b25c5742502
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105811848"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118636067"
 ---
 # <a name="forcereboot-action"></a>Ação ForceReboot
 
@@ -21,7 +21,7 @@ Se o instalador determinar que uma reinicialização é necessária, ele solicit
 
 Suprimir determinados prompts de reinicialização definindo a propriedade [**reboot**](reboot.md) .
 
-Se o Windows Installer encontrar a ação ForceReboot ou [ScheduleReboot](schedulereboot-action.md) durante uma [instalação de vários pacotes](multiple-package-installations.md), o instalador irá parar e reverter a instalação. Outros pacotes que pertencem à instalação de vários pacotes, que não contêm uma ação ForceReboot ou ScheduleReboot, podem ser instalados.
+se o Windows Installer encontrar a ação ForceReboot ou [ScheduleReboot](schedulereboot-action.md) durante uma [instalação de vários pacotes](multiple-package-installations.md), o instalador irá parar e reverter a instalação. Outros pacotes que pertencem à instalação de vários pacotes, que não contêm uma ação ForceReboot ou ScheduleReboot, podem ser instalados.
 
 ## <a name="sequence-restrictions"></a>Restrições de sequência
 
@@ -49,7 +49,7 @@ A ação ForceReboot sempre deve ser usada com uma instrução condicional de mo
 
 ForceReboot executa operações do sistema geradas por quaisquer ações anteriores antes de solicitar uma reinicialização ou reinicialização. Por exemplo, as operações do sistema geradas por [InstallFiles](installfiles-action.md) e [WriteRegistryValues](writeregistryvalues-action.md) são executadas antes de uma reinicialização.
 
-A ação ForceReboot grava uma chave do registro que faz com que o instalador seja iniciado após a reinicialização. O local dessa chave é **HKEY \_ local \_ Machine \\ software \\ Microsoft \\ Windows \\ CurrentVersion \\ RunOnce**.
+A ação ForceReboot grava uma chave do registro que faz com que o instalador seja iniciado após a reinicialização. o local dessa chave é **HKEY \_ LOCAL \_ MACHINE \\ SOFTWARE \\ Microsoft \\ Windows \\ CurrentVersion \\ RunOnce**.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

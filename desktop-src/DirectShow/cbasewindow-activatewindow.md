@@ -1,7 +1,7 @@
 ---
-description: O método ActivateWindow dimensiona a janela de acordo com os requisitos da classe derivada.
+description: O método ActivateWindow tamanhos da janela de acordo com os requisitos da classe derivada.
 ms.assetid: 39e23080-e4ae-46d5-bb3f-306c92bbfe14
-title: Método CBaseWindow. ActivateWindow (Winutil. h)
+title: Método CBaseWindow.ActivateWindow (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f747f108bb6c7e42e90a0ff8503ec59a83c59699
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e00c3ccc43e2583ce8664e62967a22f753148cfa271dd1995e2374c2bfa53c71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658239"
 ---
-# <a name="cbasewindowactivatewindow-method"></a>Método CBaseWindow. ActivateWindow
+# <a name="cbasewindowactivatewindow-method"></a>Método CBaseWindow.ActivateWindow
 
-O `ActivateWindow` método dimensiona a janela de acordo com os requisitos da classe derivada.
+O `ActivateWindow` método tamanho da janela de acordo com os requisitos da classe derivada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,15 +40,15 @@ virtual HRESULT ActivateWindow();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
+Retorna um dos **valores HRESULT** mostrados na tabela a seguir.
 
 
 
 | Código de retorno                                                                             | Descrição                              |
 |-----------------------------------------------------------------------------------------|------------------------------------------|
-| <dl> <dt>**\_falso**</dt> </dl> | A janela já foi ativada.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | A janela já foi ativada.<br/> |
 | <dl> <dt>**S \_ OK**</dt> </dl>    | Êxito.<br/>                      |
 
 
@@ -57,9 +57,9 @@ Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-Esses métodos chamam o método [**CBaseWindow:: GetDefaultRect**](cbasewindow-getdefaultrect.md) para determinar o tamanho da janela. A classe derivada deve substituir **GetDefaultRect** para retornar o tamanho das imagens que serão exibidas.
+Esses métodos chamam o [**método CBaseWindow::GetDefaultRect**](cbasewindow-getdefaultrect.md) para determinar o tamanho da janela. A classe derivada deve substituir **GetDefaultRect** para retornar o tamanho das imagens que serão exibidas.
 
-Se a janela já estiver ativa, chamar `ActivateWindow` move a janela para a parte superior da ordem Z, mas não redimensiona a janela. O mesmo será verdadeiro se a janela tiver um pai.
+Se a janela já estiver ativa, chamar move a janela para a parte superior da ordem Z, mas não `ActivateWindow` resize a janela. O mesmo será verdadeiro se a janela tiver um pai.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,8 +67,8 @@ Se a janela já estiver ativa, chamar `ActivateWindow` move a janela para a part
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Limpa o estado de salvamento de um instantâneo existente.
+description: Limpa o estado de salvar de um instantâneo existente.
 ms.assetid: abb0ed4a-7f89-4d32-93d2-7491d2f2aa83
-title: Método ClearSnapshotState da classe Msvm_VirtualSystemSnapshotService
+title: Método ClearSnapshotState da classe Msvm_VirtualSystemSnapshotService dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: a218b600e45d91d8c744d6b49afe97666ddb51ac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a861cf1141532c7a780f4b886fd71a0868faf432c02db57bde505fbaa72f4ac0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757150"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118645854"
 ---
-# <a name="clearsnapshotstate-method-of-the-msvm_virtualsystemsnapshotservice-class"></a>Método ClearSnapshotState da \_ classe VirtualSystemSnapshotService Msvm
+# <a name="clearsnapshotstate-method-of-the-msvm_virtualsystemsnapshotservice-class"></a>Método ClearSnapshotState da classe Msvm \_ VirtualSystemSnapshotService
 
-Limpa o estado de salvamento de um instantâneo existente.
+Limpa o estado de salvar de um instantâneo existente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,21 +40,21 @@ uint32 ClearSnapshotState(
 
 <dl> <dt>
 
-*SnapshotSettingData* \[ no\]
+*SnapshotSettingData* \[ Em\]
 </dt> <dd>
 
-Uma referência à instância [**\_ VirtualSystemSettingData do CIM**](/previous-versions//cc136954(v=vs.85)) que representa o instantâneo cujo estado deve ser apagado.
+Uma referência à [**instância do CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)) que representa o instantâneo cujo estado deve ser limpo.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Se a operação for executada de forma assíncrona, esse método retornará 4096, e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Se a operação for executada de forma assíncrona, esse método retornará 4096 e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob.**](/previous-versions//cc136808(v=vs.85))
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos valores a seguir.
 
@@ -63,7 +63,7 @@ Esse método retorna um dos valores a seguir.
 **Concluído sem erro** (0)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
 **Falha** (32768)
@@ -75,16 +75,16 @@ Esse método retorna um dos valores a seguir.
 **Sem suporte** (32770)
 </dt> <dt>
 
-O **status é desconhecido** (32771)
+**O status é desconhecido** (32771)
 </dt> <dt>
 
-**Tempo limite** (32772)
+**Tempoout** (32772)
 </dt> <dt>
 
 **Parâmetro inválido** (32773)
 </dt> <dt>
 
-O **sistema está em uso** (32774)
+**O sistema está em uso** (32774)
 </dt> <dt>
 
 **Estado inválido para esta operação** (32775)
@@ -93,10 +93,10 @@ O **sistema está em uso** (32774)
 **Tipo de dados incorreto** (32776)
 </dt> <dt>
 
-O **sistema não está disponível** (32777)
+**O sistema não está disponível** (32777)
 </dt> <dt>
 
-**Memória insuficiente** (32778)
+**Memória sem memória** (32778)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -105,10 +105,10 @@ O **sistema não está disponível** (32777)
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

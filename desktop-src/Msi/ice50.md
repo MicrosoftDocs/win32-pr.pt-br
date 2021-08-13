@@ -4,20 +4,20 @@ ms.assetid: 19288c87-fddb-46c9-8145-59e1b870a261
 title: ICE50
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de88dda0dd1cdd18a10a35c32ef612acb75c871e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b3b9dd81c84c52738ee58c023ba5727cd6d5766bf7c40db97b6459483d7f53d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118635147"
 ---
 # <a name="ice50"></a>ICE50
 
 ICE50 verifica se os ícones de atalho estão especificados para exibição correta e correspondem à extensão do arquivo de destino.
 
-## <a name="result"></a>Resultado
+## <a name="result"></a>Result
 
-ICE50 posta uma mensagem de erro se a extensão do ícone e dos arquivos de destino não coincidem. ICE50 posta um aviso se os ícones são armazenados em arquivos que não têm uma extensão. exe ou. ico.
+ICE50 posta uma mensagem de erro se a extensão do ícone e dos arquivos de destino não coincidem. ICE50 posta um aviso se os ícones são armazenados em arquivos que não têm uma extensão .exe ou. ico.
 
 ## <a name="example"></a>Exemplo
 
@@ -76,7 +76,7 @@ ICE50 relata o seguinte erro para o exemplo mostrado.
 
 
 
-| Nome      | Dados            |
+| Name      | Dados            |
 |-----------|-----------------|
 | Icon1.bat | \[Binary Data\] |
 | Icon2. dat | \[Binary Data\] |
@@ -89,7 +89,7 @@ ICE50 relata o seguinte erro para o exemplo mostrado.
 
 
 
-| Atalho  | Componente  | Destino   | ícone\_    |
+| Atalho  | Componente  | Destino   | Ícone\_    |
 |-----------|------------|----------|-----------|
 | Shortcut1 | Component1 | Feature1 | Icon1.bat |
 | Shortcut2 | Component2 | Feature1 | Icon2. dat |

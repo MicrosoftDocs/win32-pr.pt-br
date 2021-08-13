@@ -1,7 +1,7 @@
 ---
 description: A propriedade FileAttributes do objeto instalador retorna um número que representa os atributos de arquivo combinados para o caminho designado para um arquivo ou pasta.
 ms.assetid: a09ac346-4e4d-440f-bfbe-ff8fb3f69823
-title: Propriedade Installer. FileAttributes (Windows. Storage. h)
+title: propriedade Installer. fileattributes (Windows. storage. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: e9a4d2b956c7d325fabcda7d6950274249120a0e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7fe43028d856ca26b1c5e8fa21a88a3b77381670ccc044a79f10d3b922f38c21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118630909"
 ---
 # <a name="installerfileattributes-property"></a>Propriedade Installer. FileAttributes
 
@@ -67,8 +67,8 @@ Retornará – 1 se o arquivo ou a pasta não existir ou não estiver acessível
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
-| parâmetro<br/>  | <dl> <dt>Windows. Storage. h</dt> </dl>                                                                                                                                                            |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP<br/> |
+| parâmetro<br/>  | <dl> <dt>Windows. storage. h</dt> </dl>                                                                                                                                                            |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
 | IID<br/>     | IID \_ IInstaller é definido como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 

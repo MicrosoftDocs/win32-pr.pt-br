@@ -4,18 +4,18 @@ description: Os aplicativos de servidor e o sistema operacional usam o WinEvents
 ms.assetid: 43723706-a173-4ddc-b135-824a7a8e8b40
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 97864f2b1464718680d781ad843345f1e46fce13
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 87c177183fa776a6becf52d62b86fe0ae6785c5be19dd287324ba3345b586af5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105772952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118563507"
 ---
 # <a name="what-are-winevents"></a>O que são WinEvents?
 
 Os aplicativos de servidor e o sistema operacional usam o WinEvents para notificar os clientes quando uma alteração ocorre no sistema ou na interface do usuário.
 
-O suporte a WinEvent é um recurso do sistema operacional Windows que fornece:
+o suporte a WinEvent é um recurso do sistema operacional Windows que fornece:
 
 -   Uma maneira simples para os clientes se registrarem para notificações de eventos.
 -   Um mecanismo para injetar código de cliente em servidores.
@@ -36,9 +36,9 @@ Para ser notificado de eventos, os clientes registram funções de gancho de ret
 
 Quando o Microsoft Acessibilidade Ativa é notificado de um evento, ele chama qualquer função de gancho que foi registrada para esse evento, passando os parâmetros de [**NotifyWinEvent**](/windows/desktop/api/Winuser/nf-winuser-notifywinevent).
 
- 
+ 
 
- 
+ 
 
 
 

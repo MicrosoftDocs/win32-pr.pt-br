@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e7c55980b8b08865889f7567fa6bdb4dcf7bde1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: aa4def81aa39c9df5aaa336a05514ab4581aa14533917fad008fc9c49d32d13e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118682520"
 ---
 # <a name="ms-iis-ftp-root-attribute"></a>atributo ms-IIS-FTP-root
 
@@ -36,7 +36,7 @@ Esse atributo determina o compartilhamento do servidor de arquivos. Ele é usado
 | Frequência de atualização  | Essa propriedade é definida quando o administrador cria o site e define o isolamento de FTP. Ele raramente será alterado depois disso. |
 | Attribute-Id      | 1.2.840.113556.1.4.1785                                                                                                         |
 | System-ID-GUID    | 2a7827a4-1483-49a5-9d84-52e3812156b4                                                                                            |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                                                                     |
+| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                                                                     |
 
 
 

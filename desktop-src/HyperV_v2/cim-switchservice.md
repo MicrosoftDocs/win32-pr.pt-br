@@ -1,7 +1,7 @@
 ---
-description: Representa um serviço de comutador.
+description: Representa um serviço switch.
 ms.assetid: cf6319fa-7d69-4820-b0e0-775aad8b190c
-title: Classe CIM_SwitchService
+title: CIM_SwitchService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 9abe6869c5b8ac61630091315e476ae232630717
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1cae4f157073721dc7cdd87585b39e1dbdb4c73b03a4aaf82a8ffd26796cbc78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105769347"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118646778"
 ---
-# <a name="cim_switchservice-class"></a>\_Classe CIM SwitchService
+# <a name="cim_switchservice-class"></a>Classe \_ SWITCHService cim
 
-Representa um serviço de comutador.
+Representa um serviço switch.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,13 +43,13 @@ class CIM_SwitchService : CIM_ForwardingService
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ SwitchService** tem estes tipos de membros:
+A **classe \_ SWITCHService cim** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ SwitchService** tem essas propriedades.
+A **classe \_ SWITCHService cim** tem essas propriedades.
 
 <dl> <dt>
 
@@ -62,17 +62,17 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Bridge-MIB. dot1dBaseBridgeAddress "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SwitchService**.**BridgeAddressType**")
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| BRIDGE-MIB.dot1dBaseBridgeAddress"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SwitchService**.**BridgeAddressType**")
 </dt> </dl>
 
-O endereço do serviço de comutador, que é uma parte do identificador exclusivo do serviço.
+O endereço do serviço switch, que é uma parte do identificador exclusivo do serviço.
 
 </dd> <dt>
 
 **BridgeAddressType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -81,13 +81,13 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ SwitchService**.**BridgeAddress**")
 </dt> </dl>
 
-O formato de endereçamento usado para a ponte e a propriedade **BridgeAddress** .
+O formato de endereçamento usado para a ponte e a **propriedade BridgeAddress.**
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -108,21 +108,21 @@ O formato de endereçamento usado para a ponte e a propriedade **BridgeAddress**
 
 <span id="MAC"></span><span id="mac"></span>
 
-**Mac** (4)
+**MAC** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="MAC___Spanning_Tree_Priority"></span><span id="mac___spanning_tree_priority"></span><span id="MAC___SPANNING_TREE_PRIORITY"></span>
 
-**Prioridade de árvore de abrangência de Mac +** (5)
+**MAC + Prioridade de árvore de abrangção** (5)
 
 
 </dt> <dd></dd> </dl>
 
 </dd> <dt>
 
-**Bridgetype**
+**BridgeType**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **uint8**
@@ -131,10 +131,10 @@ Tipo de dados: **uint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Bridge-MIB. dot1dBaseType ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| BRIDGE-MIB.dot1dBaseType")
 </dt> </dl>
 
-O tipo de serviço de alternância a ser executado.
+O tipo de serviço de alternação a ser executar.
 
 <dt>
 
@@ -161,7 +161,7 @@ O tipo de serviço de alternância a ser executado.
 
 <span id="SRT"></span><span id="srt"></span>
 
-**Srt** (4)
+**SRT** (4)
 
 
 </dt> <dd></dd> </dl>
@@ -171,16 +171,16 @@ O tipo de serviço de alternância a ser executado.
 **NumPorts**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| Bridge-MIB. dot1dBaseNumPorts ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| BRIDGE-MIB.dot1dBaseNumPorts")
 </dt> </dl>
 
-O número de portas de comutador controladas por esse serviço de comutação.
+O número de portas de opção controladas por esse serviço de alternação.
 
 </dd> </dl>
 
@@ -192,8 +192,8 @@ O número de portas de comutador controladas por esse serviço de comutação.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -202,7 +202,7 @@ O número de portas de comutador controladas por esse serviço de comutação.
 
 <dl> <dt>
 
-[**\_FORWARDINGSERVICE CIM**](cim-forwardingservice.md)
+[**CIM \_ ForwardingService**](cim-forwardingservice.md)
 </dt> </dl>
 
  

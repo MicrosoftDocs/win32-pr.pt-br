@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: b3f09887333d8ddbf83de4bea2b2e654411883e0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4528b80b13fbf2667c33d9588dff2ce745d24f8575aa726ea67dc256fdebfd1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118626804"
 ---
 # <a name="recordlist-object"></a>Objeto recordlist
 
@@ -38,7 +38,7 @@ O objeto **recordlist** tem essas propriedades.
 
 | Propriedade                                     | Descrição                                                          |
 |:---------------------------------------------|:---------------------------------------------------------------------|
-| [**Contar**](recordlist-count.md)<br/> | Retorna o número de itens no objeto **recordlist** .<br/> |
+| [**Count**](recordlist-count.md)<br/> | Retorna o número de itens no objeto **recordlist** .<br/> |
 | [**Item**](recordlist-item.md)<br/>   | Retorna um registro em uma coleção de objetos **recordlist** .<br/>   |
 
 
@@ -51,7 +51,7 @@ O objeto **recordlist** tem essas propriedades.
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
 | IID<br/>     | IID \_ IRecordList é definido como 000C1096-0000-0000-C000-000000000046<br/>                                                                                                                                                                          |
 
@@ -61,10 +61,10 @@ O objeto **recordlist** tem essas propriedades.
 
 <dl> <dt>
 
-[**Gravável**](record-object.md)
+[**Record**](record-object.md)
 </dt> <dt>
 
-[Exemplos de script de Windows Installer](windows-installer-scripting-examples.md)
+[Windows Exemplos de script do instalador](windows-installer-scripting-examples.md)
 </dt> </dl>
 
  

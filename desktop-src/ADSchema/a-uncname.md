@@ -1,11 +1,11 @@
 ---
 title: UNC-Name atributo
-description: O nome da Convenção de nomenclatura universal para volumes e impressoras compartilhadas.
+description: O nome da convenção de nomenização universal para volumes compartilhados e impressoras.
 ms.assetid: 967fd0dc-10af-4482-bc2c-1d1dc13dee39
 ms.tgt_platform: multiple
 keywords:
-- Esquema de UNC-Name do atributo AD
-- Esquema de AD do atributo uncname
+- UNC-Name atributo AD Schema
+- Esquema do AD do atributo uNCName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e06bc54ebb035a491e2d93a1c372e2d46fc43f76
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6227aaed6ac68c04de1ce8425281674117e11dcb33f8c50db696cff0ea8d8ae8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105753639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118681591"
 ---
 # <a name="unc-name-attribute"></a>UNC-Name atributo
 
-O nome da Convenção de nomenclatura universal para volumes e impressoras compartilhadas.
+O nome da convenção de nomenização universal para volumes compartilhados e impressoras.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------------|
 | CN                | UNC-Name                                      |
-| LDAP-Display-Name | uNCName                                       |
+| Ldap-Display-Name | uNCName                                       |
 | Tamanho              | \-                                            |
 | Privilégio de atualização  | Administrador de domínio                          |
 | Frequência de atualização  | Quando novos volumes ou filas de impressão são criados. |
 | Attribute-Id      | 1.2.840.113556.1.4.137                        |
-| System-ID-GUID    | bf967a64-0de6-11d0-a285-00aa003049e2          |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)   |
+| System-Id-Guid    | bf967a64-0de6-11d0-a285-00aa003049e2          |
+| Sintaxe            | [**String(Unicode)**](s-string-unicode.md)   |
 
 
 
@@ -58,15 +58,15 @@ O nome da Convenção de nomenclatura universal para volumes e impressoras compa
 | ID do link                | \-                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                |
-| É de valor único       | True                                                                                                                                                 |
+| Tem valor único       | True                                                                                                                                                 |
 | É indexado             | True                                                                                                                                                 |
-| No catálogo global      | True                                                                                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                         |
+| No Catálogo Global      | True                                                                                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                   |
 | Search-Flags           | 0x00000001                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                           |
-| Classes usadas em        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
+| Classes usadas em        | [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O nome da Convenção de nomenclatura universal para volumes e impressoras compa
 | ID do link                | \-                                                                                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                                                                                        |
 | System-Only            | Falso                                                                                                                                                                                     |
-| É de valor único       | True                                                                                                                                                                                      |
+| Tem valor único       | True                                                                                                                                                                                      |
 | É indexado             | True                                                                                                                                                                                      |
-| No catálogo global      | True                                                                                                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                              |
+| No Catálogo Global      | True                                                                                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                              |
 | Range-Lower            | \-                                                                                                                                                                                        |
 | Range-Upper            | \-                                                                                                                                                                                        |
 | Search-Flags           | 0x00000001                                                                                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                                                                                |
-| Classes usadas em        | [**FT-DFS**](c-ftdfs.md)<br/> [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
+| Classes usadas em        | [**FT-Dfs**](c-ftdfs.md)<br/> [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ O nome da Convenção de nomenclatura universal para volumes e impressoras compa
 | ID do link                | \-                                                                                                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                                                                                                                                |
-| É de valor único       | True                                                                                                                                                                                                                                                                 |
+| Tem valor único       | True                                                                                                                                                                                                                                                                 |
 | É indexado             | True                                                                                                                                                                                                                                                                 |
-| No catálogo global      | True                                                                                                                                                                                                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                                                         |
+| No Catálogo Global      | True                                                                                                                                                                                                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                   |
 | Search-Flags           | 0x00000001                                                                                                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                           |
-| Classes usadas em        | [**FT-DFS**](c-ftdfs.md)<br/> [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**MS-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
+| Classes usadas em        | [**FT-Dfs**](c-ftdfs.md)<br/> [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**ms-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ O nome da Convenção de nomenclatura universal para volumes e impressoras compa
 | ID do link                | \-                                                                                                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                                                                                                                                |
-| É de valor único       | True                                                                                                                                                                                                                                                                 |
+| Tem valor único       | True                                                                                                                                                                                                                                                                 |
 | É indexado             | True                                                                                                                                                                                                                                                                 |
-| No catálogo global      | True                                                                                                                                                                                                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                                                         |
+| No Catálogo Global      | True                                                                                                                                                                                                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                   |
 | Search-Flags           | 0x00000001                                                                                                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                           |
-| Classes usadas em        | [**FT-DFS**](c-ftdfs.md)<br/> [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**MS-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
+| Classes usadas em        | [**FT-Dfs**](c-ftdfs.md)<br/> [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**ms-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ O nome da Convenção de nomenclatura universal para volumes e impressoras compa
 | ID do link                | \-                                                                                                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                                                                                                                                |
-| É de valor único       | True                                                                                                                                                                                                                                                                 |
+| Tem valor único       | True                                                                                                                                                                                                                                                                 |
 | É indexado             | True                                                                                                                                                                                                                                                                 |
-| No catálogo global      | True                                                                                                                                                                                                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                                                         |
+| No Catálogo Global      | True                                                                                                                                                                                                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                   |
 | Search-Flags           | 0x00000001                                                                                                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                           |
-| Classes usadas em        | [**FT-DFS**](c-ftdfs.md)<br/> [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**MS-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
+| Classes usadas em        | [**FT-Dfs**](c-ftdfs.md)<br/> [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**ms-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ O nome da Convenção de nomenclatura universal para volumes e impressoras compa
 | ID do link                | \-                                                                                                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                                                                                                                                |
-| É de valor único       | True                                                                                                                                                                                                                                                                 |
+| Tem valor único       | True                                                                                                                                                                                                                                                                 |
 | É indexado             | True                                                                                                                                                                                                                                                                 |
-| No catálogo global      | True                                                                                                                                                                                                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                                                         |
+| No Catálogo Global      | True                                                                                                                                                                                                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                   |
 | Search-Flags           | 0x00000001                                                                                                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                           |
-| Classes usadas em        | [**FT-DFS**](c-ftdfs.md)<br/> [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**MS-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
+| Classes usadas em        | [**FT-Dfs**](c-ftdfs.md)<br/> [**Index-Server-Catalog**](c-indexservercatalog.md)<br/> [**ms-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> [**Volume**](c-volume.md)<br/> |
 
 
 

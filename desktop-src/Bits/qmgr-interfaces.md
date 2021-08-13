@@ -4,12 +4,12 @@ description: Use as seguintes interfaces do Gerenciador de filas (QMGR) para bai
 ms.assetid: b5b59d4f-fa18-4225-8b6f-5d4033c61650
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 51cc571dcc5bbf182b3f715ee34bb6c3e94b5502
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a17bd3c27fad81416b916b52b055bc879b44f251113d43b6118e179b609762fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118679990"
 ---
 # <a name="qmgr-interfaces"></a>Interfaces QMGR
 

@@ -7,19 +7,19 @@ keywords:
 - MIDL MkTypLib
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a54b6103cc230e1c5e6700b0ddc93312c767f9b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 43ae20e00dab492a140f48c9de683abeac04676824bd6513ccf086889b4460e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104006159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118643620"
 ---
 # <a name="differences-between-midl-and-mktyplib"></a>Diferenças entre MIDL e MkTypLib
 
 > [!Note]  
 > A ferramenta de Mktyplib.exe está obsoleta. Em vez disso, use o compilador MIDL.
 
- 
+ 
 
 Há algumas áreas-chave em que o compilador MIDL difere de MkTypLib. A maioria dessas diferenças surge porque MIDL é orientado mais em direção C-Syntax do que MkTypLib.
 
@@ -123,9 +123,9 @@ As seguintes diferenças no comportamento não podem ser resolvidas usando a op�
 
 Para obter mais informações, consulte [**/mktyplib203**](-mktyplib203.md), [**/IID nomedearquivo**](-iid.md)e [empacotamento de tipos de dados OLE](marshaling-ole-data-types.md).
 
- 
+ 
 
- 
+ 
 
 
 

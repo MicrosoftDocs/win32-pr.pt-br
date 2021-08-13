@@ -4,18 +4,18 @@ ms.assetid: 8e155846-cc29-43f4-b1f7-9880320edbec
 title: Tipo de ícone
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a7c90de925ff34977e7ff192dffe0b8614e5734
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 28510eff674d1f25e632b1181943af70da73d9fc97a6a64ec5abd0807fe15cf9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118634949"
 ---
 # <a name="icon-type"></a>Tipo de ícone
 
 O tipo de ícone de [tipo semântico](semantic-types.md) é um dos [tipos de formato de chave](key-format-types.md). Esse tipo consiste em uma chave na [tabela de ícones](icon-table.md) fornecida pelo usuário.
 
-A ferramenta de mesclagem deve substituir um [identificador](identifier.md) de Windows Installer válido para itens desse tipo. Mergemod.dll não impõe essa restrição e cabe à ferramenta de mesclagem garantir que o usuário forneça uma chave válida para a tabela de ícones.
+a ferramenta de mesclagem deve substituir um [identificador](identifier.md) de Windows Installer válido para itens desse tipo. Mergemod.dll não impõe essa restrição e cabe à ferramenta de mesclagem garantir que o usuário forneça uma chave válida para a tabela de ícones.
 
 NULL é um valor válido para esse tipo, a menos que o msmConfigItemNonNullable tenha sido incluído no campo Attributes da [Tabela ModuleConfiguration](moduleconfiguration-table.md).
 

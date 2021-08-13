@@ -1,7 +1,7 @@
 ---
-description: O método OnPaletteChange manipula as mensagens de alteração da paleta.
+description: O método OnPaletteChange lida com mensagens de alteração de paleta.
 ms.assetid: 2abae4f1-fbd0-4a32-8772-012fa96b6d6c
-title: Método CBaseWindow. OnPaletteChange (Winutil. h)
+title: Método CBaseWindow.OnPaletteChange (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9abcb2d9f5cdc875f70f5c1db1fd2f625ce911f0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c881c519706ca0288847a7dc603cf513a99cdd76e4c83f0e53bec16df840e509
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118657949"
 ---
-# <a name="cbasewindowonpalettechange-method"></a>Método CBaseWindow. OnPaletteChange
+# <a name="cbasewindowonpalettechange-method"></a>Método CBaseWindow.OnPaletteChange
 
-O `OnPaletteChange` método manipula as mensagens de alteração da paleta.
+O `OnPaletteChange` método lida com mensagens de alteração de paleta.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,10 +43,10 @@ virtual LRESULT OnPaletteChange(
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
-Identificador para a janela.
+Identificador da janela.
 
 </dd> <dt>
 
@@ -57,13 +57,13 @@ Identificador de mensagem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará 0 se a mensagem tiver sido processada ou 1 se a mensagem não tiver sido processada.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método manipula \_ as mensagens do WM PaletteChanged e do WM \_ QUERYNEWPALETTE. Ele chama o método [**CBaseWindow::D orealisepalette**](cbasewindow-dorealisepalette.md) para obter a nova paleta.
+Esse método lida com mensagens WM \_ PALETTECHANGED e WM \_ QUERYNEWPALETTE. Ele chama o [**método CBaseWindow::D oRealisePalette**](cbasewindow-dorealisepalette.md) para realizar a nova paleta.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Esse método manipula \_ as mensagens do WM PaletteChanged e do WM \_ QUERYNEWPA
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

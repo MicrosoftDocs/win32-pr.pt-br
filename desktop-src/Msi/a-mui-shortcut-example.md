@@ -1,25 +1,25 @@
 ---
-description: Esta seção descreve como adicionar cadeias de caracteres de recursos à tabela de atalho Windows Installer para uso com MUI (Multilingual User Interfaces).
+description: esta seção descreve como adicionar cadeias de caracteres de recursos à tabela de atalho Windows Installer para uso com MUI (multilingual user Interfaces).
 ms.assetid: f521cfb8-32a8-4b62-b258-5b99cc3e0416
 title: Um exemplo de atalho do MUI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0392713c1eaedabaa989baecd79478a9b329e955
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b3b38f674a63e854fbcd4439229c5aded5b0efe6cfc17d3e475f8a52f30db949
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105752056"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118640283"
 ---
 # <a name="a-mui-shortcut-example"></a>Um exemplo de atalho do MUI
 
-Esta seção descreve como adicionar cadeias de caracteres de recursos à tabela de [atalho](shortcut-table.md) Windows Installer para uso com MUI (Multilingual User Interfaces).
+esta seção descreve como adicionar cadeias de caracteres de recursos à tabela de [atalho](shortcut-table.md) Windows Installer para uso com MUI (multilingual user Interfaces).
 
-**Windows Installer 2,0 e Windows Installer 3,0:** Sem suporte. Este exemplo requer Windows Installer 4,0.
+**Windows Installer 2,0 e Windows Installer 3,0:** Sem suporte. este exemplo requer Windows Installer 4,0.
 
-Consulte a documentação da [MUI (Multilingual User interface)](/windows/desktop/Intl/multilingual-user-interface) para obter informações sobre como desenvolver aplicativos habilitados para MUI.
+consulte a documentação do [Interface de Usuário Multilíngue (MUI)](/windows/desktop/Intl/multilingual-user-interface) para obter informações sobre como desenvolver aplicativos habilitados para MUI.
 
-Para adicionar as cadeias de caracteres de recurso usadas pelas interfaces de usuário multilíngue do Windows Vista a um pacote Windows Installer:
+para adicionar as cadeias de caracteres de recurso usadas pelas Interfaces de usuário multilíngues do Windows Vista a um pacote Windows Installer:
 
 1.  Adicione as informações de todos os arquivos de idioma e neutros ao idioma à [tabela de arquivos](file-table.md). Por exemplo, os arquivos podem consistir em um arquivo com neutralidade de idioma (msimsg.dll) e arquivos de idioma para inglês (msimsgen.dll. mui), japonês (msimsgja.dll. mui) e chinês (msimsgcs.dll. mui). Cada arquivo pode pertencer a um componente diferente. Cada arquivo pode ter um nome de arquivo longo e curto. No caso deste exemplo, as informações a seguir podem ser adicionadas à [tabela de arquivos](file-table.md).
 
@@ -67,7 +67,7 @@ Para adicionar as cadeias de caracteres de recurso usadas pelas interfaces de us
     | MsiTest       | TARGETDIR         | MsiTest:.  |
     | MUIFolder     | MsiTest           | INTERFACE        |
     | MUIFolder \_ cs | MUIFolder         | cs-CZ      |
-    | MUIFolder \_ en | MUIFolder         | en-US      |
+    | MUIFolder \_ en | MUIFolder         | pt-BR      |
     | MUIFolder \_ ja | MUIFolder         | ja-JP      |
     | DesktopFolder | TARGETDIR         | .          |
 
@@ -96,16 +96,16 @@ Para adicionar as cadeias de caracteres de recurso usadas pelas interfaces de us
 
     
 
-    | Recurso               | Pai do recurso \_       | Título                 | Atributos |
+    | Recurso               | Pai do \_ recurso       | Título                 | Atributos |
     |-----------------------|-----------------------|-----------------------|------------|
-    | FeatureParent1 \_ local |                       | FeatureParent1 \_ local | 16         |
-    | FeatureChild1 \_ local  | FeatureParent1 \_ local | FeatureParent1 \_ local | 0          |
+    | FeatureParent1 \_ Local |                       | FeatureParent1 \_ Local | 16         |
+    | FeatureChild1 \_ Local  | FeatureParent1 \_ Local | FeatureParent1 \_ Local | 0          |
 
     
 
      
 
-6.  Para cada novo atalho, adicione as informações de cadeia de caracteres do recurso aos campos DisplayResourceDLL, DisplayResourceId, DescriptionResourceDLL e DescriptionResourceId da [tabela de atalho](shortcut-table.md). Os campos DisplayResourceDLL e DescriptionResourceDLL contêm a cadeia de caracteres do recurso no formato de cadeia de caracteres [formatada](formatted.md) . A cadeia de caracteres formatada pode usar a \[ \# Convenção *FileKey* \] do formato [formatado](formatted.md) . Adicione os índices de exibição e descrição para as cadeias de caracteres de recurso nos campos DisplayResourceId e DescriptionResourceId.
+6.  Para cada novo atalho, adicione as informações de cadeia de caracteres de recurso aos campos DisplayResourceDLL, DisplayResourceId, DescriptionResourceDLL e DescriptionResourceId da tabela [atalho](shortcut-table.md). Os campos DisplayResourceDLL e DescriptionResourceDLL contêm a cadeia de caracteres de recurso no formato de cadeia de caracteres [formatada.](formatted.md) A cadeia de caracteres formatada pode usar \[ \# *a convenção filekey* \] do formato [Formatado.](formatted.md) Adicione os índices de exibição e descrição para as cadeias de caracteres de recurso nos campos DisplayResourceId e DescriptionResourceId.
 
     [Tabela de atalho](shortcut-table.md) (parcial)
 
@@ -120,7 +120,7 @@ Para adicionar as cadeias de caracteres de recurso usadas pelas interfaces de us
 
      
 
-7.  Depois de instalar o pacote, teste para garantir que a interface do usuário multilíngüe esteja funcionando conforme o esperado.
+7.  Depois de instalar o pacote, teste para garantir que o Interface de Usuário Multilíngue está funcionando conforme o esperado.
 
  
 

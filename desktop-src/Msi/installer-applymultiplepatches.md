@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: d96d96157f7b1d81617be6980804fb54a6e6659f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a2b1c469ca623b0c09ea2899de1867cc10c8d8cda9363994973d08ecc20ed7f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118633203"
 ---
 # <a name="installerapplymultiplepatches-method"></a>Método Installer. ApplyMultiplePatches
 
@@ -44,7 +44,7 @@ Installer.ApplyMultiplePatches(
 *PatchPackagesList* 
 </dt> <dd>
 
-Uma cadeia de caracteres que contém uma lista delimitada por ponto-e-vírgula dos caminhos para arquivos de patch. Por exemplo: "" c: \\ SUS \\ download de \\ cache \\ Office \\ SP1. msp; c: \\ SUS \\ baixar o \\ cache \\ Office \\ QFE1. msp; c: \\ SUS \\ Download \\ cache \\ Office \\ QFEn. msp ""
+Uma cadeia de caracteres que contém uma lista delimitada por ponto-e-vírgula dos caminhos para arquivos de patch. por exemplo: "" c: \\ sus \\ download \\ cache \\ Office \\ sp1. msp; c: \\ sus \\ download \\ cache \\ Office \\ QFE1. msp; c: \\ sus \\ download \\ cache \\ Office \\ QFEn. msp ""
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ Uma cadeia de caracteres terminada em nulo que especifica as configurações de 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -72,7 +72,7 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer 3,0 ou posterior no Windows Server 2003 ou no Windows XP.<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador 3,0 ou posterior no Windows Server 2003 ou Windows XP.<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                    |
 | IID<br/>     | IID \_ IInstaller é definido como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                                         |
 
@@ -97,7 +97,7 @@ Esse método não retorna um valor.
 [**MsiApplyMultiplePatches**](/windows/desktop/api/Msi/nf-msi-msiapplymultiplepatchesa)
 </dt> <dt>
 
-[Sem suporte no Windows Installer 2,0 e versões anteriores](not-supported-in-windows-installer-version-2-0.md)
+[sem suporte no Windows Installer 2,0 e versões anteriores](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

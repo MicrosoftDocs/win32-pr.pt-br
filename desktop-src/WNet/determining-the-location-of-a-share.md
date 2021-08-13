@@ -4,27 +4,27 @@ description: O exemplo a seguir demonstra como chamar a função WNetGetUniversa
 ms.assetid: ce57fecb-8b14-4514-a3fd-45d7ef6eee89
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c50c0d46e9ac2e520f7be15812b2f541fd3e588f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 90a881d452c6aa9eac5eea85d4ef0e9ddce83524f001294d2a6d6d6307f5ff1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118566889"
 ---
 # <a name="determining-the-location-of-a-share"></a>Determinando o local de um compartilhamento
 
-O exemplo a seguir demonstra como chamar a função [**WNetGetUniversalName**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetuniversalnamea) para determinar o local de um compartilhamento em uma unidade redirecionada.
+O exemplo a seguir demonstra como chamar a [**função WNetGetUniversalName**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetuniversalnamea) para determinar o local de um compartilhamento em uma unidade redirecionada.
 
-Primeiro, o exemplo de código chama a função **WNetGetUniversalName** , especificando o nível de informação de informações de [**\_ nome \_ Universal**](/windows/desktop/api/Winnetwk/ns-winnetwk-universal_name_infoa) para recuperar um ponteiro para uma cadeia de caracteres de nome UNC (Convenção de nomenclatura universal) para o recurso. Em seguida, o exemplo chama **WNetGetUniversalName** uma segunda vez, especificando o nível de informações de informações de [**\_ nome \_ remoto**](/windows/desktop/api/Winnetwk/ns-winnetwk-remote_name_infoa) para recuperar duas cadeias de caracteres de informações de conexão de rede adicionais. Se as chamadas forem bem-sucedidas, o exemplo imprime o local do compartilhamento.
+Primeiro, o exemplo de código chama a **função WNetGetUniversalName,** especificando o nível de informações [**DE \_ \_ INFORMAÇÕES**](/windows/desktop/api/Winnetwk/ns-winnetwk-universal_name_infoa) DE NOME UNIVERSAL para recuperar um ponteiro para uma cadeia de caracteres de nome UNC para o recurso. Em seguida, o exemplo chama **WNetGetUniversalName** uma segunda vez, especificando o nível de informações [**REMOTE NAME \_ \_ INFO**](/windows/desktop/api/Winnetwk/ns-winnetwk-remote_name_infoa) para recuperar duas cadeias de caracteres de informações de conexão de rede adicionais. Se as chamadas são bem-sucedidas, o exemplo imprime o local do compartilhamento.
 
 Para testar o exemplo de código a seguir, execute as seguintes etapas:
 
-1.  Nomeie o código de exemplo GetUni. cpp.
+1.  Nomeia o exemplo de código GetUni.cpp.
 2.  Adicione o exemplo a um aplicativo de console chamado GetUni.
-3.  Vincule as bibliotecas shell32. lib, MPR. lib e NetApi32. lib à lista de bibliotecas do compilador.
+3.  Vincule as bibliotecas Shell32.lib, Mpr.lib e NetApi32.lib à lista de compiladores de bibliotecas.
 4.  No prompt de comando, altere para o diretório GetUni.
-5.  Compile GetUni. cpp.
-6.  Execute o arquivo GetUni.exe seguido por uma letra de unidade e dois-pontos, desta forma:
+5.  Compile GetUni.cpp.
+6.  Execute o arquivo GetUni.exe seguido por uma letra da unidade e dois-pontos, desta forma:
 
     **GetUni H:\\**
 
@@ -95,6 +95,6 @@ void main( int argc, char *argv[] )
 
 
 
- 
+ 
 
- 
+ 

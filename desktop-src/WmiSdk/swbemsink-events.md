@@ -2,19 +2,19 @@
 description: O objeto SWbemSink expõe os eventos a seguir.
 ms.assetid: 73ACD3D3-41F2-4B8C-B55F-8716799FC363
 ms.tgt_platform: multiple
-title: Eventos de SWbemSink
+title: Eventos SWbemSink
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3df601a8b586b34507108f17e2c4b0afd7f6eb8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ea075c6de9e04f7b7ad40ff3a70525df4ae554332b4359ed3cfdb3b039b1f65a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105786243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118553983"
 ---
-# <a name="swbemsink-events"></a>Eventos de SWbemSink
+# <a name="swbemsink-events"></a>Eventos SWbemSink
 
-O objeto [**SWbemSink**](swbemsink.md) expõe os eventos a seguir.
+O [**objeto SWbemSink**](swbemsink.md) expõe os eventos a seguir.
 
 ## <a name="in-this-section"></a>Nesta seção
 

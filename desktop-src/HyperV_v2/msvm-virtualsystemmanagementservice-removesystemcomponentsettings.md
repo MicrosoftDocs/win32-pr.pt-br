@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 93ef7b794b901212fad72a1fcdf6223d8344b8c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf8a4c25c01af62b22108d239e344dec9d3087021c3ec4962e7a30d578c7082e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105782348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118644672"
 ---
 # <a name="removesystemcomponentsettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método RemoveSystemComponentSettings da \_ classe VirtualSystemManagementService Msvm
 
@@ -54,7 +54,7 @@ Se a operação for executada de forma assíncrona, esse método retornará 4096
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna 0 ou 4096 em um êxito; caso contrário, retornará um erro.
 
@@ -96,7 +96,7 @@ Retorna 0 ou 4096 em um êxito; caso contrário, retornará um erro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1703\]<br/>                                               |
+| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1703\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
