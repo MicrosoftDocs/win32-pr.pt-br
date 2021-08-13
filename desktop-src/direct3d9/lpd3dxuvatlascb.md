@@ -4,12 +4,12 @@ ms.assetid: a605ae27-10c9-49b4-98fe-8c788c2c0752
 title: LPD3DXUVATLASCB
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfe073b5e6a798ccb74421d42502b089d59be11f
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: d4473134d7ecf98c50d0c3a69085e7f46344d1d57ff2650c1adbc54c43dba266
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110342791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119458707"
 ---
 # <a name="lpd3dxuvatlascb"></a>LPD3DXUVATLASCB
 
@@ -29,9 +29,9 @@ typedef HRESULT (*LPD3DXUVATLASCB (
 
 ## <a name="parameters"></a>Parâmetros
 
-\[out \] fPercentDone-número de ponto flutuante entre 0 e 1,0 que representa a porcentagem de cálculos concluídos (entre 0 e 100 por cento).
+\[out fPercentDone – número de ponto flutuante entre 0 e 1,0 que representa o percentual de cálculos \] concluídos (entre 0 e 100%).
 
-\[no \] lpUserContext-pointer para um valor definido pelo usuário que é passado para a função de retorno de chamada; normalmente usado por um aplicativo para passar um ponteiro para uma estrutura de dados que fornece informações de contexto para a função de retorno de chamada.
+\[em lpUserContext – ponteiro para um valor definido pelo usuário que é passado para a função de retorno de chamada; normalmente usado por um aplicativo para passar um ponteiro para uma estrutura de dados que fornece informações de contexto para a função de retorno de \] chamada.
 
 ## <a name="return-value"></a>Valor Retornado
 
@@ -39,14 +39,14 @@ Essa função deve ser implementada para retornar S \_ OK para continuar executa
 
 ## <a name="remarks"></a>Comentários
 
-Certifique-se de especificar a Convenção de chamada de [**tipos de dados do Windows**](../winprog/windows-data-types.md) ao declarar a função de retorno de chamada. Caso contrário, podem ocorrer estouros de pilha.
+Especifique a convenção [**de chamada Windows tipos**](../winprog/windows-data-types.md) de dados ao declarar a função de retorno de chamada. Caso contrário, podem ocorrer estouros de pilha.
 
 
 
 | Requisito                         | Valor            |
 |--------------------------|-------------|
-| parâmetro                   | d3dx9mesh. h |
-| Bibliotecas de importação           | d3dx9. lib   |
+| parâmetro                   | d3dx9mesh.h |
+| Bibliotecas de importação           | d3dx9.lib   |
 | Sistema operacional mínimo | Windows 98  |
 
 

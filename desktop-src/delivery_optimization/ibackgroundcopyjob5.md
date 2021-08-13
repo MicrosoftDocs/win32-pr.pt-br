@@ -1,5 +1,5 @@
 ---
-title: Interface IBackgroundCopyJob5 (Deliveryoptimization. h)
+title: Interface IBackgroundCopyJob5 (Deliveryoptimization.h)
 description: Use essa interface para consultar ou definir vários comportamentos opcionais de um trabalho.
 ms.assetid: C4706E10-40E6-489B-9772-59D581781038
 keywords:
@@ -16,22 +16,22 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e76898f7bbfe4d4dc34aec035b842e6671091630
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 593f06f74dde7e6891417871cd16dc3730ef005fb90a0a1b6cf5377fda7ebcd0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119461966"
 ---
 # <a name="ibackgroundcopyjob5-interface"></a>Interface IBackgroundCopyJob5
 
 Use essa interface para consultar ou definir vários comportamentos opcionais de um trabalho.
 
-Para obter essa interface, chame o método **método ibackgroundcopyjob:: QueryInterface** usando `__uuidof(IBackgroundCopyJob5)` como o identificador de interface.
+Para obter essa interface, chame o **método IBackgroundCopyJob::QueryInterface** usando `__uuidof(IBackgroundCopyJob5)` como o identificador de interface.
 
 ## <a name="members"></a>Membros
 
-A interface **IBackgroundCopyJob5** herda de [**método ibackgroundcopyjob**](ibackgroundcopyjob-.md). **IBackgroundCopyJob5** também tem estes tipos de membros:
+A interface **IBackgroundCopyJob5** herda de [**IBackgroundCopyJob.**](ibackgroundcopyjob-.md) **IBackgroundCopyJob5** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -43,8 +43,8 @@ A interface **IBackgroundCopyJob5** tem esses métodos.
 
 | Método                                                 | Descrição                                                |
 |:-------------------------------------------------------|:-----------------------------------------------------------|
-| [**GetProperty**](ibackgroundcopyjob5-getproperty.md) | Um método genérico para obter as propriedades DO trabalho.<br/> |
-| [**SetProperty**](ibackgroundcopyjob5-setproperty.md) | Um método genérico para definir as propriedades DO trabalho.<br/> |
+| [**Getproperty**](ibackgroundcopyjob5-getproperty.md) | Um método genérico para obter propriedades de trabalho DO.<br/> |
+| [**Setproperty**](ibackgroundcopyjob5-setproperty.md) | Um método genérico para definir propriedades de trabalho DO.<br/> |
 
 
 
@@ -56,11 +56,11 @@ A interface **IBackgroundCopyJob5** tem esses métodos.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1709\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | Windows Server, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1709 somente para \[ aplicativos da área de trabalho\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 somente \[ aplicativos da área de trabalho\]<br/>                                       |
+| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyJob5 é definido como E847030C-BBBA-4657-AF6D-484AA42BF1FE<br/>              |
 
@@ -70,7 +70,7 @@ A interface **IBackgroundCopyJob5** tem esses métodos.
 
 <dl> <dt>
 
-[**Método ibackgroundcopyjob**](ibackgroundcopyjob-.md)
+[**IBackgroundCopyJob**](ibackgroundcopyjob-.md)
 </dt> </dl>
 
  

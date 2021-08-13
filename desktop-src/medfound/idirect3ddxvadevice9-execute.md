@@ -1,7 +1,7 @@
 ---
-description: Executa uma operação de decodificação de aceleração de vídeo DirectX (DXVA).
+description: Executa uma operação de decodificação de DXVA (Aceleração de Vídeo) do DirectX.
 ms.assetid: cb87a087-ca53-470e-ab46-f4022cfd7869
-title: 'Método IDirect3DDXVADevice9:: Execute (DXVA. h)'
+title: Método IDirect3DDXVADevice9::Execute (Dxva.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - dxva.h
-ms.openlocfilehash: d624146c32b5f7eaeb4e680cf03878e8d065ee5b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac00e5f78e4281523c006216f3173745ba26bc6429ddfdd9d74c9abbe616b89a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105772569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119465956"
 ---
-# <a name="idirect3ddxvadevice9execute-method"></a>Método IDirect3DDXVADevice9:: execute
+# <a name="idirect3ddxvadevice9execute-method"></a>Método IDirect3DDXVADevice9::Execute
 
-Executa uma operação de decodificação de aceleração de vídeo DirectX (DXVA).
+Executa uma operação de decodificação de DXVA (Aceleração de Vídeo) do DirectX.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,7 +48,7 @@ HRESULT Execute(
 *FunctionNum* 
 </dt> <dd>
 
-Um **DWORD** que contém um ou mais números de função de DXVA. Para obter detalhes, consulte a [especificação DXVA 1,0](/windows-hardware/drivers/display/directx-video-acceleration).
+Uma **DWORD** que contém um ou mais números de função DXVA. Para obter detalhes, consulte a [especificação DXVA 1.0](/windows-hardware/drivers/display/directx-video-acceleration).
 
 </dd> <dt>
 
@@ -59,7 +59,7 @@ Um ponteiro para um buffer que contém dados de entrada para a operação de dec
 
 </dd> <dt>
 
-*Incolocar* 
+*InputSize* 
 </dt> <dd>
 
 O tamanho dos dados de entrada, em bytes.
@@ -69,34 +69,34 @@ O tamanho dos dados de entrada, em bytes.
 *OutputData* 
 </dt> <dd>
 
-Ponteiro para um buffer no qual o acelerador de vídeo grava dados de saída.
+Ponteiro para um buffer em que o acelerador de vídeo grava dados de saída.
 
 </dd> <dt>
 
-*Sobrecolocações* 
+*OutputSize* 
 </dt> <dd>
 
-O tamanho do buffer *OutputData* , em bytes.
+O tamanho do buffer *OutputData,* em bytes.
 
 </dd> <dt>
 
 *NumBuffers* 
 </dt> <dd>
 
-O número de elementos na matriz *pBufferInfo* .
+O número de elementos na matriz *pBufferInfo.*
 
 </dd> <dt>
 
 *pBufferInfo* 
 </dt> <dd>
 
-Um ponteiro para uma matriz de estruturas [**DXVABufferInfo**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxvabufferinfo) .
+Um ponteiro para uma matriz de estruturas [**DXVABufferInfo.**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxvabufferinfo)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -104,9 +104,9 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                              |
-| parâmetro<br/>                   | <dl> <dt>DXVA. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                    |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                              |
+| parâmetro<br/>                   | <dl> <dt>Dxva.h</dt> </dl> |
 
 
 

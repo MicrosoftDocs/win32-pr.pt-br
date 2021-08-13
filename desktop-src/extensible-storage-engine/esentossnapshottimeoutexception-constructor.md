@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 98aac848cc4c8475a73a778adffc4bac5f9f730b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 758fd6448ebcec24019271b3e339f6a5d0b3374c63c58ba5a1c4491a19d77af8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119478546"
 ---
 # <a name="esentossnapshottimeoutexception-constructor"></a>Construtor EsentOSSnapshotTimeOutException
 
 Inicializa uma nova instância da classe EsentOSSnapshotTimeOutException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentOSSnapshotTimeOutException()
 
 [Classe EsentOSSnapshotTimeOutException](./esentossnapshottimeoutexception-class.md)
 
-[Membros do EsentOSSnapshotTimeOutException](./esentossnapshottimeoutexception-members.md)
+[Membros EsentOSSnapshotTimeOutException](./esentossnapshottimeoutexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

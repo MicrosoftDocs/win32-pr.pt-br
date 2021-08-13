@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6ebb07240fdd95d98269056eca4eefe691f52077
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5eb8ed4d3d4cbb589efc803c7afa0c14bececf90178ae7705ca9e75e392e464c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119426166"
 ---
 # <a name="startservice-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método StartService da classe Msvm \_ VirtualSystemManagementService
 
@@ -63,7 +63,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

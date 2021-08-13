@@ -3,8 +3,8 @@ title: Interface IWMPPlaylistArray (VB e C) (WMP. h)
 description: Fornece uma propriedade e um método para acessar uma coleção de interfaces IWMPPlaylist por número de índice. A interface IWMPPlaylistArray expõe a propriedade a seguir.
 ms.assetid: 8a7477ee-58c5-41b2-9259-d1976433ae02
 keywords:
-- IWMPPlaylistArray (VB e C) interface do Windows Media Player
-- IWMPPlaylistArray (VB e C) interface do Windows Media Player, descrito
+- Windows Media Player de interface IWMPPlaylistArray (VB e C)
+- Windows Media Player de interface IWMPPlaylistArray (VB e C), descrita
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c3c926545635e1e83c7ba18eac99b2e96da59f6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: de9cd5db545e75aaf03c488608e825c92645f7cfaeaf0f645cc764fc6e886ecd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119468426"
 ---
 # <a name="iwmpplaylistarray-vb-and-c-interface"></a>Interface IWMPPlaylistArray (VB e C#)
 
@@ -57,7 +57,7 @@ A interface **IWMPPlaylistArray (VB e C#)** tem essas propriedades.
 
 | Propriedade                                                                              | Tipo de acesso          | Descrição                                                   |
 |:--------------------------------------------------------------------------------------|:---------------------|:--------------------------------------------------------------|
-| [**count**](wmplibiwmpplaylistarray-iwmpplaylistarray-count--vb-and-c.md)<br/> | Somente leitura<br/> | Obtém o número de listas de reprodução na matriz de playlist<br/> |
+| [**contar**](wmplibiwmpplaylistarray-iwmpplaylistarray-count--vb-and-c.md)<br/> | Somente leitura<br/> | Obtém o número de listas de reprodução na matriz de playlist<br/> |
 
 
 
@@ -89,7 +89,7 @@ Obtenha uma interface **IWMPPlaylistArray** usando os métodos a seguir.
 
 <dl> <dt>
 
-[**Interfaces para Visual Basic .NET e C #**](interfaces-for-visual-basic--net-and-c.md)
+[**Interfaces para Visual Basic .net e C #**](interfaces-for-visual-basic--net-and-c.md)
 </dt> <dt>
 
 [**Interface IWMPPlaylist (VB e C#)**](iwmpplaylist--vb-and-c.md)

@@ -1,21 +1,21 @@
 ---
-description: As transformações inseridas são armazenadas dentro do arquivo. msi do pacote. Isso garante aos usuários que a transformação está sempre disponível quando o pacote de instalação está disponível. Como alternativa, as transformações podem ser fornecidas aos usuários como arquivos. MST autônomos.
+description: As transformação inseridas são armazenadas dentro .msi arquivo do pacote. Isso garante aos usuários que a transformação sempre estará disponível quando o pacote de instalação estiver disponível. Como alternativa, as transformação podem ser fornecidas aos usuários como arquivos .mst autônomos.
 ms.assetid: f7b265df-4b34-44ea-85ab-8dbca4797517
 title: Transformações inseridas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 301e7f188da1a46411636ef90b7e6ae327a06c22
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ae8d7afb2b28599cb9ee2f10c4bc1fb25fbb0939fe68da5e817972eb8fc94236
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011150"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118637458"
 ---
 # <a name="embedded-transforms"></a>Transformações inseridas
 
-As transformações inseridas são armazenadas dentro do arquivo. msi do pacote. Isso garante aos usuários que a transformação está sempre disponível quando o pacote de instalação está disponível. Como alternativa, as transformações podem ser fornecidas aos usuários como arquivos. MST autônomos.
+As transformação inseridas são armazenadas dentro .msi arquivo do pacote. Isso garante aos usuários que a transformação sempre estará disponível quando o pacote de instalação estiver disponível. Como alternativa, as transformação podem ser fornecidas aos usuários como arquivos .mst autônomos.
 
-Para adicionar uma transformação inserida à lista transformações, adicione dois-pontos (:) prefixo para o nome do arquivo. Como o instalador sempre pode obter a transformação do armazenamento no arquivo. msi, as transformações incorporadas não são armazenadas em cache no computador do usuário. As transformações incorporadas podem ser usadas em combinação com [transformações protegidas](secured-transforms.md) ou [transformações não seguras](unsecured-transforms.md). Para obter mais informações, consulte [aplicando transformações](applying-transforms.md).
+Para adicionar uma transformação inserida à lista de transformaçãos, adicione dois-pontos (:) prefixo para o nome do arquivo. Como o instalador sempre pode obter a transformação do armazenamento no arquivo .msi, as transformação inseridas não são armazenadas em cache no computador do usuário. As transformação inseridas podem ser usadas em combinação com as transformação [seguras](secured-transforms.md) ou [as desacuradas.](unsecured-transforms.md) Para obter mais informações, [consulte Aplicando transformações](applying-transforms.md).
 
  
 

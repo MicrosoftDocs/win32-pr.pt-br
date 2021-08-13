@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: b8fa6d6df6984569aa3fe49fc734f7699aa504d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 659ca401384f907e0bad1a86dd79e61bad55cf2612bb45713246b26711e57d9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105812296"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118711982"
 ---
 # <a name="iwicbitmapcodecinfo_getdevicemodels_proxy-function"></a>\_Função de \_ proxy IWICBitmapCodecInfo GetDeviceModels
 
@@ -46,9 +46,9 @@ HRESULT IWICBitmapCodecInfo_GetDeviceModels_Proxy(
 *Isso \_ PTR* \[\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapCodecInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapcodecinfo) \** _
+Tipo: **[ **IWICBitmapCodecInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapcodecinfo)\***
 
-Ponteiro para este objeto [_ *IWICBitmapCodecInfo* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapcodecinfo) .
+Ponteiro para este objeto [**IWICBitmapCodecInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapcodecinfo) .
 
 </dd> <dt>
 
@@ -64,24 +64,24 @@ O tamanho do buffer de modelos de dispositivo.
 *wzDeviceModels* \[ entrada, saída\]
 </dt> <dd>
 
-Tipo: **WCHAR \** _
+Tipo: **WCHAR \***
 
 Um ponteiro que recebe uma lista delimitada por vírgulas de nomes de modelo de dispositivo associados ao codec.
 
 </dd> <dt>
 
-_pcchActual * \[ in, out\]
+*pcchActual* \[ entrada, saída\]
 </dt> <dd>
 
-Tipo: **uint \** _
+Tipo: **uint \***
 
 O tamanho de buffer real necessário para recuperar todos os nomes de modelo de dispositivo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
 Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -93,8 +93,8 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, somente aplicativos do Windows Vista \[ desktop\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                                                                             |
 | DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
 
 

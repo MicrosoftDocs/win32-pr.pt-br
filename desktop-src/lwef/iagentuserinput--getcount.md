@@ -4,16 +4,16 @@ description: GetCount IAgentUserInput
 ms.assetid: 9c127387-b680-405a-9a62-ee08cc70813a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ac4b597f7367eff10154bde256698ef371c3619
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9f52c296dd152fd1e31a87e21d80f8b25d52ae880b300487cdcba746e81dfa0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118749513"
 ---
 # <a name="iagentuserinputgetcount"></a>IAgentUserInput:: GetCount
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT GetCount(
@@ -36,9 +36,9 @@ Endereço de uma variável que recebe a contagem de alternativas de [**comandos*
 
 Se a entrada de voz não foi a origem do comando, por exemplo, se o usuário selecionou o comando no menu pop-up do caractere, **GetCount** retornará 1. Se **GetCount** retornar zero (0), o mecanismo de reconhecimento de fala detectou uma entrada falada, mas determinou que não havia nenhum comando correspondente.
 
- 
+ 
 
- 
+ 
 
 
 

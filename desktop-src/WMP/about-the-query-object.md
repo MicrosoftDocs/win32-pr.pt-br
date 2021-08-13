@@ -4,27 +4,27 @@ description: Sobre o objeto de consulta
 ms.assetid: 41488036-bdcf-4fe6-8f7e-f0897157d3d9
 keywords:
 - Windows Media Player, objeto de consulta
-- Modelo de objeto do Windows Media Player, objeto de consulta
+- modelo de objeto Windows Media Player, objeto de consulta
 - modelo de objeto, objeto de consulta
-- Controle ActiveX do Windows Media Player, objeto de consulta
-- Controle ActiveX, objeto de consulta
-- Controle ActiveX móvel do Windows Media Player, objeto de consulta
-- Windows Media Player Mobile, objeto de consulta
+- controle de ActiveX de Windows Media Player, objeto de consulta
+- controle de ActiveX, objeto de consulta
+- Windows Media Player controle de ActiveX móvel, objeto de consulta
+- Windows Media Player Móvel, objeto de consulta
 - Objeto de consulta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54a26f60c38e053b91c7e56f5cbd7ccaf2ba0fe2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 13d649263f981d02e106466c6e0fcada99c316054d4bf6e0acc0faca641c75dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119470396"
 ---
 # <a name="about-the-query-object"></a>Sobre o objeto de consulta
 
 O objeto de **consulta** representa uma consulta composta. Você cria um novo objeto de **consulta** vazio chamando *mediacollection*. **CreateQuery**. Depois de criar um objeto de **consulta** , você pode chamar **addcondition** para adicionar uma condição à consulta composta. Cada chamada subsequente para **addcondition** acrescenta uma nova condição à consulta existente usando and Logic.
 
-Por exemplo, suponha que você queira criar uma consulta que representa todas as mídias digitais em que o **WM/gênero** é igual a "Jazz" e o **autor** contém "Jim". Você pode criar uma consulta composta para representar essas condições usando o seguinte código JScript:
+Por exemplo, suponha que você queira criar uma consulta que representa todas as mídias digitais em que o **WM/gênero** é igual a "Jazz" e o **autor** contém "Jim". você pode criar uma consulta composta para representar essas condições usando o seguinte código de JScript:
 
 
 ```C++
@@ -77,9 +77,9 @@ Para executar a consulta composta, chame **mediacollection. getPlaylistByQuery**
 [**Objeto de consulta**](query-object.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

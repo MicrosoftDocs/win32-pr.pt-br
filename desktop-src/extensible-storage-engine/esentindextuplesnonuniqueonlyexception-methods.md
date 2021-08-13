@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentIndexTuplesNonUniqueOnlyException'
+description: 'Saiba mais sobre: Métodos EsentIndexTuplesNonUniqueOnlyException'
 title: 'Métodos EsentIndexTuplesNonUniqueOnlyException '
 TOCTitle: EsentIndexTuplesNonUniqueOnlyException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentIndexTuplesNonUniqueOnlyException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101789
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 91abd0cbca755578d6dfc6be60adb5b0ed6b572e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 85a20d407e70013a06ac372fbae45492633b7617965f402bbca07224f7f65e43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104567221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118495169"
 ---
 # <a name="esentindextuplesnonuniqueonlyexception-methods"></a>Métodos EsentIndexTuplesNonUniqueOnlyException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentIndexTuplesNonUniqueOnlyException](./esentindextuplesnonuniqueonlyexception-class.md) expõe os membros a seguir.
+O [tipo EsentIndexTuplesNonUniqueOnlyException](./esentindextuplesnonuniqueonlyexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentIndexTuplesNonUniqueOnlyException](./esentindextuplesnonuniqueonlye
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentIndexTuplesNonUniqueOnlyException](./esentindextuplesnonuniqueonlye
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentIndexTuplesNonUniqueOnlyException](./esentindextuplesnonuniqueonlyexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

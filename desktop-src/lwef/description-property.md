@@ -1,19 +1,19 @@
 ---
-title: Propriedade Description (recursos de ambiente herdado do Windows)
+title: propriedade Description (recursos de ambiente de Windows herdados)
 description: Propriedade Description
 ms.assetid: 81ac4bc7-ef0c-4e7c-b57e-acc4ad315515
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b4fb60b20a57f56a914c7e44ced957d91bf7085
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: da7ff293af98303fa0dab97aca76ed169123ea229c1fc70c156ef2c099472157
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104008700"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118751988"
 ---
-# <a name="description-property-legacy-windows-environment-features"></a>Propriedade Description (recursos de ambiente herdado do Windows)
+# <a name="description-property-legacy-windows-environment-features"></a>propriedade Description (recursos de ambiente de Windows herdados)
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 

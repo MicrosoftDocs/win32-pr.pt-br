@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_SessionDirectoryVMMPlugin
+title: Win32_SessionDirectoryVMMPlugin classe
 description: Representa um plug-in do VMM (Virtual Machine Manager) registrado com um agente de sessão.
 ms.assetid: b5c5deb1-6c1b-4547-a24a-db3ce6654144
 ms.tgt_platform: multiple
 keywords:
-- Classe de Win32_SessionDirectoryVMMPlugin Serviços de Área de Trabalho Remota
-- Serviços de Área de Trabalho Remota de Win32_SessionDirectoryVMMPlugin classe, descrita
+- Win32_SessionDirectoryVMMPlugin classe Serviços de Área de Trabalho Remota
+- Win32_SessionDirectoryVMMPlugin classe Serviços de Área de Trabalho Remota , descrito
 topic_type:
 - apiref
 api_name:
@@ -22,14 +22,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c5fc6b899eaa264357527eb107e11ad5a40ad67
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7481022951664b49b912b854e96e2d30895b0716ee67b6eb01ce1a9f1b1561ee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119422356"
 ---
-# <a name="win32_sessiondirectoryvmmplugin-class"></a>\_Classe Win32 SessionDirectoryVMMPlugin
+# <a name="win32_sessiondirectoryvmmplugin-class"></a>Classe \_ SessionDirectoryVMMPlugin do Win32
 
 Representa um plug-in do VMM (Virtual Machine Manager) registrado com um agente de sessão.
 
@@ -52,27 +52,27 @@ class Win32_SessionDirectoryVMMPlugin
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ SessionDirectoryVMMPlugin** tem estes tipos de membros:
+A **classe \_ SessionDirectoryVMMPlugin do Win32** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **Win32 \_ SessionDirectoryVMMPlugin** tem esses métodos.
+A **classe \_ SessionDirectoryVMMPlugin do Win32** tem esses métodos.
 
 
 
 | Método                                                                             | Descrição                                                   |
 |:-----------------------------------------------------------------------------------|:--------------------------------------------------------------|
-| [**GetCurrentVMMPlugin**](getcurrentvmmplugin-win32-sessiondirectoryvmmplugin.md) | Obtém o plug-in de prioridade mais alta que está habilitado.<br/> |
+| [**GetCurrentVMMPlugin**](getcurrentvmmplugin-win32-sessiondirectoryvmmplugin.md) | Obtém o plug-in de prioridade mais alta habilitado.<br/> |
 | [**RegisterVMMPlugin**](registervmmplugin-win32-sessiondirectoryvmmplugin.md)     | Registra um novo plug-in do VMM.<br/>                       |
-| [**Sethabilitado**](setenabled-win32-sessiondirectoryvmmplugin.md)                   | Habilita ou desabilita o plug-in.<br/>                   |
+| [**Setenabled**](setenabled-win32-sessiondirectoryvmmplugin.md)                   | Habilita ou desabilita o plug-in.<br/>                   |
 | [**SetName**](setname-win32-sessiondirectoryvmmplugin.md)                         | Define o nome do plug-in.<br/>                      |
-| [**Setanteriority**](setpriority-win32-sessiondirectoryvmmplugin.md)                 | Define a prioridade do plug-in.<br/>                  |
-| [**Setfornecedor**](setprovider-win32-sessiondirectoryvmmplugin.md)                 | Define o nome do provedor do plug-in.<br/>             |
-| [**SetServiceLocation**](setservicelocation-win32-sessiondirectoryvmmplugin.md)   | Define o local do serviço do plug-in.<br/>          |
-| [**UnregisterVMMPlugin**](unregistervmmplugin-win32-sessiondirectoryvmmplugin.md) | Cancela o registro do plug-in.<br/>                           |
+| [**Setpriority**](setpriority-win32-sessiondirectoryvmmplugin.md)                 | Define a prioridade do plug-in.<br/>                  |
+| [**SetProvider**](setprovider-win32-sessiondirectoryvmmplugin.md)                 | Define o nome do provedor do plug-in.<br/>             |
+| [**SetServiceLocation**](setservicelocation-win32-sessiondirectoryvmmplugin.md)   | Define o local de serviço do plug-in.<br/>          |
+| [**UnregisterVMMPlugin**](unregistervmmplugin-win32-sessiondirectoryvmmplugin.md) | Não registrou o plug-in.<br/>                           |
 
 
 
@@ -80,14 +80,14 @@ A classe **Win32 \_ SessionDirectoryVMMPlugin** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ SessionDirectoryVMMPlugin** tem essas propriedades.
+A **classe \_ SessionDirectoryVMMPlugin do Win32** tem essas propriedades.
 
 <dl> <dt>
 
-**Enabled**
+**Habilitada**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -161,7 +161,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O local do serviço que o plug-in deve contatar.
+O local de serviço que o plug-in deve contatar.
 
 </dd> </dl>
 
@@ -173,8 +173,8 @@ O local do serviço que o plug-in deve contatar.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2<br/>                                                      |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 

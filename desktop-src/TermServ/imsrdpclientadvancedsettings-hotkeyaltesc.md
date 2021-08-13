@@ -1,26 +1,26 @@
 ---
-title: Propriedade IMsRdpClientAdvancedSettings HotKeyAltEsc
-description: Especifica o código de chave virtual a ser adicionado a ALT para determinar a substituição de tecla de atalho para ALT + ESC.
+title: Propriedade HotKeyAltEsc de IMsRdpClientAdvancedSettings
+description: Especifica o código de chave virtual a ser adicionar ao ALT para determinar a substituição de tecla de atalho para ALT+ESC.
 ms.assetid: 17cae4ca-8e97-4713-bb4e-ac9a9876c16c
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade HotKeyAltEsc
-- Propriedade HotKeyAltEsc Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings, Propriedade HotKeyAltEsc
-- Propriedade HotKeyAltEsc Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings2
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings2, Propriedade HotKeyAltEsc
-- Propriedade HotKeyAltEsc Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings3, Propriedade HotKeyAltEsc
-- Propriedade HotKeyAltEsc Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings4, Propriedade HotKeyAltEsc
-- Propriedade HotKeyAltEsc Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings5, Propriedade HotKeyAltEsc
-- Propriedade HotKeyAltEsc Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings6, Propriedade HotKeyAltEsc
-- Propriedade HotKeyAltEsc Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings7, Propriedade HotKeyAltEsc
-- Propriedade HotKeyAltEsc Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings8, Propriedade HotKeyAltEsc
+- Propriedade HotKeyAltEsc Serviços de Área de Trabalho Remota
+- A propriedade HotKeyAltEsc Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings
+- Interface IMsRdpClientAdvancedSettings Serviços de Área de Trabalho Remota , propriedade HotKeyAltEsc
+- A propriedade HotKeyAltEsc Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings2
+- Interface IMsRdpClientAdvancedSettings2 Serviços de Área de Trabalho Remota , propriedade HotKeyAltEsc
+- A propriedade HotKeyAltEsc Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings3
+- Interface IMsRdpClientAdvancedSettings3 Serviços de Área de Trabalho Remota , propriedade HotKeyAltEsc
+- A propriedade HotKeyAltEsc Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings4
+- Interface IMsRdpClientAdvancedSettings4 Serviços de Área de Trabalho Remota , propriedade HotKeyAltEsc
+- A propriedade HotKeyAltEsc Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings5
+- Interface IMsRdpClientAdvancedSettings5 Serviços de Área de Trabalho Remota , propriedade HotKeyAltEsc
+- A propriedade HotKeyAltEsc Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings6
+- Interface IMsRdpClientAdvancedSettings6 Serviços de Área de Trabalho Remota , propriedade HotKeyAltEsc
+- A propriedade HotKeyAltEsc Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings7
+- Interface IMsRdpClientAdvancedSettings7 Serviços de Área de Trabalho Remota , propriedade HotKeyAltEsc
+- A propriedade HotKeyAltEsc Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings8
+- Interface IMsRdpClientAdvancedSettings8 Serviços de Área de Trabalho Remota , propriedade HotKeyAltEsc
 topic_type:
 - apiref
 api_name:
@@ -54,22 +54,22 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b661a91a0204177525063629825c478b40b4c29e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8757a2c8ba35ad2ba3080f340126fd689704769682a72389806eb905ecbf9aae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104456007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475456"
 ---
-# <a name="imsrdpclientadvancedsettingshotkeyaltesc-property"></a>Propriedade IMsRdpClientAdvancedSettings:: HotKeyAltEsc
+# <a name="imsrdpclientadvancedsettingshotkeyaltesc-property"></a>Propriedade IMsRdpClientAdvancedSettings::HotKeyAltEsc
 
-Especifica o código de chave virtual a ser adicionado a ALT para determinar a substituição de tecla de atalho para ALT + ESC.
+Especifica o código de chave virtual a ser adicionar ao ALT para determinar a substituição de tecla de atalho para ALT+ESC.
 
-Essa propriedade é válida somente quando a propriedade [**KeyboardHookMode**](imsrdpclientsecuredsettings-keyboardhookmode.md) não está habilitada.
+Essa propriedade é válida somente quando a [**propriedade KeyboardHookMode**](imsrdpclientsecuredsettings-keyboardhookmode.md) não está habilitada.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -86,7 +86,7 @@ HRESULT get_HotKeyAltEsc(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O novo código de chave virtual. **VK \_ INSERT** é o valor padrão, com Alt + Insert como a sequência resultante.
+O novo código de chave virtual. **VK \_ INSERT** é o valor padrão, com ALT+INSERT como a sequência resultante.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
@@ -94,7 +94,7 @@ Retornará **S \_ OK** se for bem-sucedido.
 
 ## <a name="remarks"></a>Comentários
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -106,7 +106,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                                  |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings é definido como 3c65b4ab-12B3-465b-acd4-b8dad3bff9e2<br/> |
+| IID<br/>                      | \_IMs IIDRdpClientAdvancedSettings é definido como 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 
@@ -135,7 +135,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 [**IMsRdpClientAdvancedSettings8**](imsrdpclientadvancedsettings8.md)
 </dt> <dt>
 
-[**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md)
+[**Imsrdpclientadvancedsettings**](imsrdpclientadvancedsettings-interface.md)
 </dt> </dl>
 
  

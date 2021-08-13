@@ -3,7 +3,7 @@ title: Mensagem de WM_SIZECLIPBOARD (WinUser. h)
 description: Enviado para o proprietário da área de transferência por uma janela do Visualizador da área de transferência quando a área de transferência contém dados no formato de OWNERDISPLAY do CF \_ e o tamanho do cliente do Visualizador de áreas de transferência é alterado.
 ms.assetid: 95991d03-8677-4dde-b72a-082dec4834b3
 keywords:
-- Troca de dados de mensagem WM_SIZECLIPBOARD
+- WM_SIZECLIPBOARD Exchange de dados da mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 235de630b20757a571b1917a975d1425bee06cde
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 778caa6538992d927a0451518fcb28b82891773563614ba97c9d9df121fb69f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118545315"
 ---
 # <a name="wm_sizeclipboard-message"></a>Mensagem do WM \_ SIZECLIPBOARD
 
@@ -50,7 +50,7 @@ Um identificador para um objeto de memória global que contém uma estrutura [**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar zero.
 
@@ -68,7 +68,7 @@ O proprietário da área de transferência deve usar a função [**GlobalLock**]
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

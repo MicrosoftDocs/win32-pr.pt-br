@@ -1,19 +1,19 @@
 ---
-description: Ocorre após a exclusão dos objetos IInkStrokeDisp da Propriedade Ink.
+description: Ocorre depois que os objetos IInkStrkeDisp foram excluídos da propriedade Ink.
 ms.assetid: 395544e1-dc93-45d3-ac7a-d54712f3c027
-title: Evento InkPicture. StrokesDeleted (Msinkaut. h)
+title: Evento InkPicture.StrokesDeleted (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf98e51196d760f467d507c133429201883b340e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a5b2d4f0be69adf6c9c44f3eadec250d8cba3ebb8935bde5c06cd026e478da3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105772592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118717355"
 ---
-# <a name="inkpicturestrokesdeleted-event"></a>Evento InkPicture. StrokesDeleted
+# <a name="inkpicturestrokesdeleted-event"></a>Evento InkPicture.StrokesDeleted
 
-Ocorre após a exclusão dos objetos [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) da propriedade [**Ink**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_ink) .
+Ocorre depois que [**os objetos IInkStrkeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) foram excluídos da [**propriedade Ink.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_ink)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -26,9 +26,9 @@ void StrokesDeleted();
 
 ## <a name="parameters"></a>Parâmetros
 
-Este evento não tem parâmetros.
+Esse evento não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -36,7 +36,7 @@ Esse evento não retorna um valor.
 
 Não há dados de evento.
 
-Esse método de evento é definido nas interfaces somente de expedição **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** (dispinterfaces) com uma ID de DISPID \_ IOEStrokesDeleted.
+Esse método de evento é definido nas interfaces somente de expedição **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** (dispinterfaces) com uma ID de \_ DISPID IOEOpekesDeleted.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -44,9 +44,9 @@ Esse método de evento é definido nas interfaces somente de expedição **\_ II
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                           |
-| parâmetro<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
+| parâmetro<br/>                   | <dl> <dt>Msinkaut.h (também requer Msinkaut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -55,7 +55,7 @@ Esse método de evento é definido nas interfaces somente de expedição **\_ II
 
 <dl> <dt>
 
-[InkPicture](inkpicture-control-reference.md)
+[Inkpicture](inkpicture-control-reference.md)
 </dt> </dl>
 
  

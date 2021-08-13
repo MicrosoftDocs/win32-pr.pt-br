@@ -4,16 +4,16 @@ description: Acessando um mecanismo de fala em seu código
 ms.assetid: ddfe0552-a29e-4ce4-b608-c131efbe300b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7d81841f6f287d36a6ac01fa77294b1754eeb9b
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 7b9769e88437366b72fdff50dc0ab27918d1b21e4c0c317f230049a965629a03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105810706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118753115"
 ---
 # <a name="accessing-a-speech-engine-in-your-code"></a>Acessando um mecanismo de fala em seu código
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 Para usar um mecanismo de fala específico em seu código, use a API do agente para definir o mecanismo. Para mecanismos de entrada de fala, use [**SRModeID**](https://www.bing.com/search?q=**SRModeID**), ESPECIFICANDO a ID de modo para o mecanismo. No entanto, observe que o mecanismo deve ser instalado. Para determinar se o mecanismo está presente, você pode consultar **SRModeID**. O mecanismo deve corresponder à configuração [**LanguageID**](https://www.bing.com/search?q=**LanguageID**) do caractere. Por exemplo, você não pode definir **SRModeID** como uma ID de modo de mecanismo de reconhecimento de fala em alemão para um caractere cuja **LanguageID** é francês.
 
@@ -27,7 +27,7 @@ Para usar um mecanismo de fala específico em seu código, use a API do agente p
 
 
 
- 
+ 
 
 Verifique e defina os [**idiomas**](https://www.bing.com/search?q=**LanguageID**) e [**SRModeID**](https://www.bing.com/search?q=**SRModeID**) do caractere em seu código antes de tentar definir a gramática para os parâmetros de voz dos objetos de **comando** do seu aplicativo. Considere também verificar o navegador ou o idioma do sistema para que você possa ter certeza de que corresponde à configuração de seus usuários. O mecanismo poderá falhar se você tentar definir uma gramática para um idioma para o qual o mecanismo não corresponde.
 
@@ -85,13 +85,13 @@ Para consultar ou definir a ID de modo de um mecanismo, use [**TTSModeID**](http
 
 
 
- 
+ 
 
 > [!Note]  
 > Há uma diferença entre o CLSID de instalação do mecanismo de fala e sua ID de modo. Da mesma forma, um mecanismo de fala também tem uma ID de mecanismo, mas essa ID não é aplicável na API do agente.
 
- 
+ 
 
- 
+ 
 
- 
+ 

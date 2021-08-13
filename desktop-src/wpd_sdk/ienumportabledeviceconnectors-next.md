@@ -1,7 +1,7 @@
 ---
-description: Recupera o próximo um ou mais objetos IPortableDeviceConnector na sequência de enumeração.
+description: Recupera um ou mais objetos IPortableDeviceConnector na sequência de enumeração.
 ms.assetid: 5aed563a-5ecc-49c0-8a0c-622405453896
-title: 'Método IEnumPortableDeviceConnectors:: Next (Devpkey. h)'
+title: Método IEnumPortableDeviceConnectors::Next (Devpkey.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGuids.lib
 - PortableDeviceGuids.dll
-ms.openlocfilehash: 709e938c28f9bf09e34d918eea7be3029c7a11e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 868f13f220dbd5d5867e5ee2bbb54c1ef946e267d87e9ea0aa625108b945d537
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105802069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118697291"
 ---
-# <a name="ienumportabledeviceconnectorsnext-method"></a>Método IEnumPortableDeviceConnectors:: Next
+# <a name="ienumportabledeviceconnectorsnext-method"></a>Método IEnumPortableDeviceConnectors::Next
 
-O **próximo** método recupera o próximo um ou mais objetos [**IPortableDeviceConnector**](/windows/desktop/api/portabledeviceconnectapi/nn-portabledeviceconnectapi-iportabledeviceconnector) na sequência de enumeração.
+O **método Next** recupera os próximos objetos [**IPortableDeviceConnector**](/windows/desktop/api/portabledeviceconnectapi/nn-portabledeviceconnectapi-iportabledeviceconnector) na sequência de enumeração.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,37 +42,37 @@ HRESULT Next(
 
 <dl> <dt>
 
-*cRequested* \[ no\]
+*cRequested* \[ Em\]
 </dt> <dd>
 
-O número de dispositivos solicitados. Esse valor também indica o número de elementos na matriz alocada pelo chamador especificada pelo parâmetro *pConnectors* .
+O número de dispositivos solicitados. Esse valor também indica o número de elementos na matriz alocada pelo chamador especificada pelo *parâmetro pConnectors.*
 
 </dd> <dt>
 
-*pConnectors* \[ fora\]
+*pConnectors* \[ out\]
 </dt> <dd>
 
-Uma matriz de ponteiros [**IPortableDeviceConnector**](/windows/desktop/api/portabledeviceconnectapi/nn-portabledeviceconnectapi-iportabledeviceconnector) , cada um especificando um dispositivo MTP Bluetooth emparelhado. O chamador deve alocar uma matriz de ponteiros **IPortableDeviceConnector** , com o comprimento da matriz especificado pelo parâmetro *cRequested* . No retorno bem-sucedido, o chamador deve liberar a matriz e os ponteiros retornados. As interfaces **IPortableDeviceConnector** são liberadas chamando o método **IUnknown:: Release** .
+Uma matriz de [**ponteiros IPortableDeviceConnector,**](/windows/desktop/api/portabledeviceconnectapi/nn-portabledeviceconnectapi-iportabledeviceconnector) cada um especificando um dispositivo MTP Bluetooth emparelhado. O chamador deve alocar uma matriz de ponteiros **IPortableDeviceConnector,** com o comprimento da matriz especificado pelo *parâmetro cRequested.* No retorno bem-sucedido, o chamador deve liberar a matriz e os ponteiros retornados. As interfaces **IPortableDeviceConnector** são liberadas chamando o **método IUnknown::Release.**
 
 </dd> <dt>
 
-*pcFetched* \[ entrada, saída\]
+*pcFetched* \[ in, out\]
 </dt> <dd>
 
-O número de interfaces [**IPortableDeviceConnector**](/windows/desktop/api/portabledeviceconnectapi/nn-portabledeviceconnectapi-iportabledeviceconnector) que são realmente recuperadas. Se nenhuma interface **IPortableDeviceConnector** for recuperada e o valor de retorno for **S \_ false**, não haverá mais interfaces **IPortableDeviceConnector** para enumerar.
+O número de [**interfaces IPortableDeviceConnector**](/windows/desktop/api/portabledeviceconnectapi/nn-portabledeviceconnectapi-iportabledeviceconnector) que realmente são recuperadas. Se nenhuma interface **IPortableDeviceConnector** for recuperada e o valor de retorno for **S \_ FALSE,** não haverá mais interfaces **IPortableDeviceConnector** a enumerar.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
 | Código de retorno                                                                             | Descrição                                                      |
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>    | O método foi bem-sucedido.<br/>                                 |
-| <dl> <dt>**\_falso**</dt> </dl> | Não há mais dispositivos Bluetooth MTP para enumerar.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | Não há mais dispositivos MTP Bluetooth para enumerar.<br/> |
 
 
 
@@ -80,7 +80,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra o uso desse método para enumerar dispositivos MTP/Bluetooth emparelhados e para enviar uma solicitação de conexão assíncrona para cada um.
+O exemplo a seguir demonstra o uso desse método para enumerar dispositivos MTP/Bluetooth emparelhados e enviar uma solicitação de conexão assíncrona para cada um.
 
 
 ```C++
@@ -122,11 +122,11 @@ IEnumPortableDeviceConnectors* pEnum = NULL;
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                                                                                             |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                                                                                             |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                                                                              |
-| parâmetro<br/>                   | <dl> <dt>Devpkey. h; </dt> <dt>Portabledeviceconnectapi. h</dt> </dl> |
-| INSERI<br/>                      | <dl> <dt>Portabledeviceconnectapi. idl</dt> </dl>                                                                |
-| Biblioteca<br/>                  | <dl> <dt>PortableDeviceGuids. lib</dt> </dl>                                                                     |
+| parâmetro<br/>                   | <dl> <dt>Devpkey.h; </dt> <dt>Portabledeviceconnectapi.h</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Portabledeviceconnectapi.idl</dt> </dl>                                                                |
+| Biblioteca<br/>                  | <dl> <dt>PortableDeviceGuids.lib</dt> </dl>                                                                     |
 
 
 

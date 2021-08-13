@@ -1,9 +1,9 @@
 ---
 title: Elemento DropDownButton
-description: Representa um controle de botão de Drop-Down padrão.
+description: Representa um controle Drop-Down Button padrão.
 ms.assetid: 41031be2-43bc-4f75-b37a-1dcecc1635e1
 keywords:
-- Faixa de DropDownButton do elemento do Windows
+- Elemento DropDownButton Windows Faixa de Opções
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a42b8ffb6d39c1da8993972c0b25995f778bdaca
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 3275e6de398c42d29424b2a1f9b0c750989357ef21c10d5db1e1680e7adb0836
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111442957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118707264"
 ---
 # <a name="dropdownbutton-element"></a>Elemento DropDownButton
 
-Representa um controle de [botão suspenso](windowsribbon-controls-dropdownbutton.md) padrão.
+Representa um controle [de botão de lista](windowsribbon-controls-dropdownbutton.md) listada padrão.
 
 ## <a name="usage"></a>Uso
 
@@ -58,15 +58,15 @@ Representa um controle de [botão suspenso](windowsribbon-controls-dropdownbutto
 <td><strong>ApplicationModes</strong><br/></td>
 <td>xs:string<br/></td>
 <td>Não<br/></td>
-<td>Válido somente se o <a href="windowsribbon-element-menugroup.md"><strong>MyMenu</strong></a> for o elemento pai.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs: String)<br/> </dt> <dd> Uma cadeia de caracteres que contém uma lista de inteiros separados por vírgulas entre 0 e 31.<br/> O espaço em branco é válido e ignorado.<br/> Comprimento máximo: 250 caracteres. <br/> </dd> </dl></td>
+<td>Válido somente se <a href="windowsribbon-element-menugroup.md"><strong>MenuGroup</strong></a> for o elemento pai.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Uma cadeia de caracteres que contém uma lista separada por vírgulas de inteiros entre 0 e 31.<br/> O espaço em branco é válido e ignorado.<br/> Comprimento máximo: 250 caracteres. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>CommandName</strong><br/></td>
-<td>xs: positiveInteger ou xs: String<br/></td>
+<td>xs:positiveInteger ou xs:string<br/></td>
 <td>Não<br/></td>
-<td>Associa o elemento a um <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs: positiveInteger ou xs: String)<br/> </dt> <dd> Uma cadeia de caracteres, um valor inteiro entre 2 e 59999, inclusive, ou um valor hexadecimal entre 0x2 e 0xea5f, inclusive. <br/> O valor deve ser exclusivo no documento XML da faixa de faixas. <br/> Comprimento máximo: 100 caracteres. <br/> </dd> </dl></td>
+<td>Associa o elemento a um <a href="windowsribbon-element-command.md"><strong>Comando</strong></a>.<br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger ou xs:string)<br/> </dt> <dd> Uma cadeia de caracteres, um valor inteiro entre 2 e 59999, inclusive ou um valor hexadecimal entre 0x2 e 0xea5f, inclusive. <br/> O valor deve ser exclusivo dentro do documento XML da Faixa de Opções. <br/> Comprimento máximo: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -80,12 +80,12 @@ Representa um controle de [botão suspenso](windowsribbon-controls-dropdownbutto
 | Elemento                                                                             | Descrição                                        |
 |-------------------------------------------------------------------------------------|----------------------------------------------------|
 | [**Botão**](windowsribbon-element-button.md)<br/>                           | Pode ocorrer uma ou mais vezes<br/> <br/> |
-| [**Verificação**](windowsribbon-element-checkbox.md)<br/>                       | Pode ocorrer uma ou mais vezes<br/> <br/> |
+| [**Checkbox**](windowsribbon-element-checkbox.md)<br/>                       | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**ComboBox**](windowsribbon-element-combobox.md)<br/>                       | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | **DropDownButton**<br/>                                                       | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md)<br/> | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**DropDownGallery**](windowsribbon-element-dropdowngallery.md)<br/>         | Pode ocorrer uma ou mais vezes<br/> <br/> |
-| [**Grupo Backstage**](windowsribbon-element-menugroup.md)<br/>                     | Deve ocorrer pelo menos uma vez<br/> <br/>    |
+| [**Menugroup**](windowsribbon-element-menugroup.md)<br/>                     | Deve ocorrer pelo menos uma vez<br/> <br/>    |
 | [**SplitButton**](windowsribbon-element-splitbutton.md)<br/>                 | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md)<br/>   | Pode ocorrer uma ou mais vezes<br/> <br/> |
 | [**ToggleButton**](windowsribbon-element-togglebutton.md)<br/>               | Pode ocorrer uma ou mais vezes<br/> <br/> |
@@ -98,11 +98,11 @@ Representa um controle de [botão suspenso](windowsribbon-controls-dropdownbutto
 
 | Elemento                                                                           |
 |-----------------------------------------------------------------------------------|
-| [**Controlador de controle**](windowsribbon-element-controlgroup.md)<br/>             |
+| [**ControlGroup**](windowsribbon-element-controlgroup.md)<br/>             |
 | **DropDownButton**<br/>                                                     |
 | [**DropDownGallery**](windowsribbon-element-dropdowngallery.md)<br/>       |
 | [**Grupo**](windowsribbon-element-group.md)<br/>                           |
-| [**Grupo Backstage**](windowsribbon-element-menugroup.md)<br/>                   |
+| [**Menugroup**](windowsribbon-element-menugroup.md)<br/>                   |
 | [**SplitButton**](windowsribbon-element-splitbutton.md)<br/>               |
 | [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md)<br/> |
 
@@ -112,17 +112,17 @@ Representa um controle de [botão suspenso](windowsribbon-controls-dropdownbutto
 
 Opcional ou obrigatório, dependendo do elemento pai.
 
-Pode ocorrer uma ou mais vezes para cada elemento [**Control**](windowsribbon-element-controlgroup.md)Group **, DropDownButton**, [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**Group**](windowsribbon-element-group.md), [**menu**](windowsribbon-element-menugroup.md), [**SplitButton**](windowsribbon-element-splitbutton.md)ou [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) .
+Pode ocorrer uma ou mais vezes para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md), **DropDownButton**, [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup,**](windowsribbon-element-menugroup.md) [**SplitButton**](windowsribbon-element-splitbutton.md)ou [**SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
-O **DropDownButton** dá suporte a [modos de aplicativo](ribbon-applicationmodes.md) quando ele está hospedado na coluna à esquerda do menu do aplicativo.
+**DropDownButton dá** suporte [a modos de](ribbon-applicationmodes.md) aplicativo quando ele é hospedado na coluna esquerda do Menu do Aplicativo.
 
-[**DropDownGallery**](windowsribbon-element-dropdowngallery.md) e [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) não são elementos filho válidos de **DropDownButton** quando **DropDownButton** é um descendente de [**ApplicationMenu**](windowsribbon-element-applicationmenu.md).
+[**DropDownGallery**](windowsribbon-element-dropdowngallery.md) e [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) não são elementos filho válidos de **DropDownButton** quando **DropDownButton** é um descendente [**de ApplicationMenu**](windowsribbon-element-applicationmenu.md).
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra a marcação básica para o **DropDownButton**.
+O exemplo a seguir demonstra a marcação básica para **o DropDownButton.**
 
-Esta seção de código mostra as declarações de comando **DropDownButton** , com um [**grupo**](windowsribbon-element-group.md) associado que funciona como o contêiner pai para o elemento **DropDownButton** .
+Esta seção de código mostra as declarações de Comando [](windowsribbon-element-group.md) **DropDownButton,** com um Grupo associado que funciona como o contêiner pai para o **elemento DropDownButton.**
 
 
 ```XML
@@ -147,7 +147,7 @@ Esta seção de código mostra as declarações de comando **DropDownButton** , 
 
 
 
-Esta seção de código mostra as declarações de controle **DropDownButton** .
+Esta seção de código mostra as **declarações de controle DropDownButton.**
 
 
 ```XML
@@ -165,8 +165,8 @@ Esta seção de código mostra as declarações de controle **DropDownButton** .
 
 ## <a name="element-information"></a>Informações do elemento
 
-* **Sistema mínimo com suporte**: Windows 7
-* **Pode estar vazio**: não
+* **Sistema mínimo com suporte:** Windows 7
+* **Pode estar vazio:** Não
 
 
 
@@ -174,10 +174,10 @@ Esta seção de código mostra as declarações de controle **DropDownButton** .
 
 <dl> <dt>
 
-[Controle do botão suspenso](windowsribbon-controls-dropdownbutton.md)
+[Controle de botão de lista baixa](windowsribbon-controls-dropdownbutton.md)
 </dt> <dt>
 
-[**Setmodos**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes)
+[**SetModes**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes)
 </dt> </dl>
 
  

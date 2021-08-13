@@ -1,58 +1,58 @@
 ---
-title: Suporte a marcas ID3
-description: Suporte a marcas ID3
+title: Suporte à marca ID3
+description: Suporte à marca ID3
 ms.assetid: 57119b88-5901-4bea-abf6-a67fe71afd1b
 keywords:
-- SDK do Windows Media Format, atributos
-- Formato de sistema avançado (ASF), atributos
-- ASF (formato de sistemas avançados), atributos
+- Windows SDK de Formato de Mídia, atributos
+- ASF (Advanced Systems Format), attributes
+- ASF (Formato de Sistemas Avançados), atributos
 - atributos, marcas ID3
 - Marcas ID3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4f3dd91119aedf2983e654b4925231b8fd9e4b9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 28fd65ffadb952e9370af609e336c08fc07c9b96f50d09d95c78492bef2163db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118703021"
 ---
-# <a name="id3-tag-support"></a>Suporte a marcas ID3
+# <a name="id3-tag-support"></a>Suporte à marca ID3
 
 A tabela a seguir lista todos os atributos que correspondem às marcas ID3. Se você quiser usar as marcas ID3 como atributos em vez de usar os nomes de atributo padrão, adicione o prefixo "ID3/" ao nome da marca. Por exemplo, "ID3/TPE2" é equivalente a **Author**.
 
 
 
-| Atributo                      | ID3v1. x | ID3v 2.2 | ID3v 2.3/v 2.4 |
+| Atributo                      | ID3v1.x | ID3v2.2 | ID3v2.3/v2.4 |
 |--------------------------------|---------|---------|--------------|
-| **Autor**                     | Autor  | TP1     | TPE1         |
-| **Direitos autorais**                  |         | TCR     | TCOP         |
-| **CopyrightURL**               |         | WCP     | WCOP         |
+| **Author**                     | Artista  | TP1     | TPE1         |
+| **Direitos autorais**                  |         | Tcr     | TCOP         |
+| **CopyrightURL**               |         | Wcp     | WCOP         |
 | **Descrição**                | Comentário | COM     | COMM         |
-| **Duration**                   |         | TLE     | TLEN         |
-| **Tamanho**                   |         |         | TSIZ         |
+| **Duration**                   |         | Tle     | TLEN         |
+| **FileSize**                   |         |         | TSIZ         |
 | **Título**                      | Título   | TT2     | TIT2         |
 | **WM/AlbumArtist**             |         | TP2     | TPE2         |
 | **WM/AlbumSortOrder**          |         |         | TSOA         |
-| **WM/campos AlbumTitle**              | Álbuns   | TAL     | TALB         |
+| **WM/AlbumTitle**              | Álbum   | TAL     | TALB         |
 | **WM/ArtistSortOrder**         |         |         | TSOP         |
 | **WM/AudioFileURL**            |         | WAF     | WOAF         |
 | **WM/AudioSourceURL**          |         | WAS     | WOAS         |
 | **WM/AuthorURL**               |         | WAR     | WOAR         |
 | **WM/BeatsPerMinute**          |         |         | TBPM         |
-| **WM/binário**                  |         | GRAFICAMENTE     | GEOB         |
-| **WM/comentários**                |         | COM     | COMM         |
+| **WM/Binário**                  |         | Geo     | GEOB         |
+| **WM/Comments**                |         | COM     | COMM         |
 | **WM/Composer**                |         | TCM     | TCOM         |
-| **WM/condutor**               |         | TP3     | TPE3         |
+| **WM/Wm/Wm**               |         | TP3     | TPE3         |
 | **WM/ContentGroupDescription** |         | TT1     | TIT1         |
-| **WM/EncodedBy**               |         | DEZ     | TENC         |
-| **WM/EncodingSettings**        |         | TSS     | TSSE         |
-| **WM/Codificaçãotime**            |         |         | TDEN         |
-| **WM/Gêneroid**                 | Gêneroid | TCO     | TCON         |
-| **WM/InitialKey**              |         |         | TKEY         |
+| **WM/EncodedBy**               |         | Dez     | TENC         |
+| **WM/EncodingSettings**        |         | Tss     | TSSE         |
+| **WM/EncodingTime**            |         |         | TDEN         |
+| **WM/GenreID**                 | GenreID | TCO     | TCON         |
+| **WM/InitialKey**              |         |         | Tkey         |
 | **WM/ISRC**                    |         |         | TSRC         |
-| **WM/linguagem**                |         | TLA     | TLAN         |
-| **WM/letras de música \_ sincronizadas**    |         | SLT     | SYLT         |
+| **WM/Language**                |         | Tla     | TLAN         |
+| **\_WM/Synchronizado**    |         | Slt     | Sylt         |
 | **WM/MCDI**                    |         |         | MCDI         |
 | **WM/ModifiedBy**              |         |         | TPE4         |
 | **WM/humor**                    |         |         | TMOO         |
@@ -64,7 +64,7 @@ A tabela a seguir lista todos os atributos que correspondem às marcas ID3. Se v
 | **WM/PartOfSet**               |         | TPA     | TPOS         |
 | **WM/imagem**                 |         | IMG     | APIC         |
 | **WM/PlaylistDelay**           |         |         | TDLY         |
-| **WM/Publicador**               |         | TPB     | TPUB         |
+| **WM/Publisher**               |         | TPB     | TPUB         |
 | **WM/RadioStationName**        |         | TRN     | TRSN         |
 | **WM/RadioStationOwner**       |         | TRO     | TRSO         |
 | **WM/subtítulo**             |         |         | TSST         |
@@ -79,7 +79,7 @@ A tabela a seguir lista todos os atributos que correspondem às marcas ID3. Se v
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -88,9 +88,9 @@ A tabela a seguir lista todos os atributos que correspondem às marcas ID3. Se v
 [**Atributos**](attributes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

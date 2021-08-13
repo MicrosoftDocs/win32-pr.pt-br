@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Construtor de JET_ENUMCOLUMN'
-title: Construtor de JET_ENUMCOLUMN
+description: 'Saiba mais sobre: JET_ENUMCOLUMN construtor'
+title: JET_ENUMCOLUMN construtor
 TOCTitle: 'JET_ENUMCOLUMN constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_ENUMCOLUMN.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_enumcolumn.jet_enumcolumn(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ed74abf10f2b69d4fcde568e1a7392fb790e129f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c6e27f5db4a6090951e1cedefefcb90e5685e57a2575ea6f8781a00fcaddb712
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105780078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475176"
 ---
-# <a name="jet_enumcolumn-constructor"></a>Construtor de JET_ENUMCOLUMN
+# <a name="jet_enumcolumn-constructor"></a>JET_ENUMCOLUMN construtor
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,8 +54,8 @@ public JET_ENUMCOLUMN()
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_ENUMCOLUMN](./jet-enumcolumn-class.md)
+[JET_ENUMCOLUMN classe](./jet-enumcolumn-class.md)
 
-[Membros do JET_ENUMCOLUMN](./jet-enumcolumn-members.md)
+[JET_ENUMCOLUMN membros](./jet-enumcolumn-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

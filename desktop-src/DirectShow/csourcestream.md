@@ -1,7 +1,7 @@
 ---
 description: A classe CSourceStream fornece um pino de saída para a classe de filtro CSource.
 ms.assetid: 5ccfb129-93e2-4773-9398-5f59f2914ba7
-title: Classe CSourceStream (Source. h)
+title: Classe CSourceStream (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,57 +16,57 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 36b9085df8c15e765c751be8b5fcdfd4f4a02140
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0f7563cabff97626ac45a150e9a763033d9ce9261e5ae528e83d174e35d4f0d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119428776"
 ---
 # <a name="csourcestream-class"></a>Classe CSourceStream
 
-![hierarquia de classe CSourceStream](images/source02.png)
+![Hierarquia de classes csourcestream](images/source02.png)
 
-A classe **CSourceStream** fornece um pino de saída para a classe de filtro [**CSource**](csource.md) .
+A **classe CSourceStream** fornece um pino de saída para a [**classe de filtro CSource.**](csource.md)
 
-Para obter informações sobre como usar essa classe, consulte [**CSource**](csource.md). Essa classe herda a classe [**CAMThread**](camthread.md) , que fornece um thread de trabalho para streaming de dados do PIN. A classe **CSourceStream** implementa os seguintes métodos auxiliares para enviar solicitações para o thread:
+Para obter informações sobre como usar essa classe, consulte [**CSource**](csource.md). Essa classe herda a [**classe CAMThread,**](camthread.md) que fornece um thread de trabalho para transmitir dados do pino. A **classe CSourceStream** implementa os seguintes métodos auxiliares para enviar solicitações para o thread:
 
--   [**CSourceStream:: sair**](csourcestream-exit.md)
--   [**CSourceStream:: init**](csourcestream-init.md)
+-   [**CSourceStream::Exit**](csourcestream-exit.md)
+-   [**CSourceStream::Init**](csourcestream-init.md)
 -   [**CSourceStream::P ause**](csourcestream-pause.md)
--   [**CSourceStream:: Run**](csourcestream-run.md)
--   [**CSourceStream:: Stop**](csourcestream-stop.md)
+-   [**CSourceStream::Run**](csourcestream-run.md)
+-   [**CSourceStream::Stop**](csourcestream-stop.md)
 
-A primeira solicitação para o thread deve ser [**init**](csourcestream-init.md). A solicitação de [**saída**](csourcestream-exit.md) encerra o thread. Na prática, não é necessário chamar qualquer um desses métodos diretamente, porque os métodos [**CSourceStream:: active**](csourcestream-active.md) e [**CSourceStream:: Inactive**](csourcestream-inactive.md) do PIN os chamam conforme necessário.
+A primeira solicitação para o thread deve ser [**Init**](csourcestream-init.md). A [**solicitação**](csourcestream-exit.md) Exit encerra o thread. Na prática, não é necessário chamar nenhum desses métodos diretamente, porque os métodos [**CSourceStream::Active**](csourcestream-active.md) e [**CSourceStream::Inactive**](csourcestream-inactive.md) do pino os chamam conforme necessário.
 
-A classe também fornece vários métodos "Handler":
+A classe também fornece vários métodos de "manipulador":
 
 -   [**CSourceStream::OnThreadCreate**](csourcestream-onthreadcreate.md)
 -   [**CSourceStream::OnThreadDestroy**](csourcestream-onthreaddestroy.md)
 -   [**CSourceStream::OnThreadStartPlay**](csourcestream-onthreadstartplay.md)
 
-Eles não fazem nada na classe base, mas a classe derivada pode substituí-los.
+Eles não fazem nada na classe base, mas a classe derivada pode substituí-las.
 
 
 
-| Variáveis de membro protegido                                             | Descrição                                                                                                                       |
+| Variáveis de membro protegidas                                             | Descrição                                                                                                                       |
 |------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| [**\_pFilter m**](csourcestream-m-pfilter.md)                          | Ponteiro para o filtro que contém este pin.                                                                                     |
+| [**m \_ pFilter**](csourcestream-m-pfilter.md)                          | Ponteiro para o filtro que contém esse pino.                                                                                     |
 | Métodos Protegidos                                                      | Descrição                                                                                                                       |
-| [**OnThreadCreate**](csourcestream-onthreadcreate.md)                 | Chamado quando o thread de streaming é inicializado. VirtuaisLUNs.                                                                         |
-| [**OnThreadDestroy**](csourcestream-onthreaddestroy.md)               | Chamado quando o thread de streaming está prestes a sair. VirtuaisLUNs.                                                                       |
-| [**OnThreadStartPlay**](csourcestream-onthreadstartplay.md)           | Chamado no início do método [**CSourceStream::D obufferprocessingloop**](csourcestream-dobufferprocessingloop.md) . VirtuaisLUNs. |
-| [**Activo**](csourcestream-active.md)                                 | Notifica o PIN de que o filtro está ativo agora.                                                                                   |
-| [**Inativo**](csourcestream-inactive.md)                             | Notifica o PIN de que o filtro não está mais ativo.                                                                             |
-| [**GetRequest**](csourcestream-getrequest.md)                         | Aguarda a próxima solicitação de thread.                                                                                                |
+| [**OnThreadCreate**](csourcestream-onthreadcreate.md)                 | Chamado quando o thread de streaming é inicializado. Virtual.                                                                         |
+| [**OnThreadDestroy**](csourcestream-onthreaddestroy.md)               | Chamado quando o thread de streaming está prestes a sair. Virtual.                                                                       |
+| [**OnThreadStartPlay**](csourcestream-onthreadstartplay.md)           | Chamado no início do método [**CSourceStream::D oBufferProcessingLoop.**](csourcestream-dobufferprocessingloop.md) Virtual. |
+| [**Ativo**](csourcestream-active.md)                                 | Notifica o pino de que o filtro agora está ativo.                                                                                   |
+| [**Inativo**](csourcestream-inactive.md)                             | Notifica o pino de que o filtro não está mais ativo.                                                                             |
+| [**Getrequest**](csourcestream-getrequest.md)                         | Aguarda a próxima solicitação de thread.                                                                                                |
 | [**CheckRequest**](csourcestream-checkrequest.md)                     | Verifica se há uma solicitação de thread, sem bloqueio.                                                                            |
-| [**ThreadProc**](csourcestream-threadproc.md)                         | Procedimento de thread. VirtuaisLUNs.                                                                                                        |
-| [**DoBufferProcessingLoop**](csourcestream-dobufferprocessingloop.md) | Gera dados de mídia e os entrega para o pino de entrada downstream. VirtuaisLUNs.                                                        |
-| [**CheckMediaType**](csourcestream-checkmediatype.md)                 | Determina se o PIN aceita um tipo de mídia específico. VirtuaisLUNs.                                                                     |
-| [**GetMediaType**](csourcestream-getmediatype.md)                     | Recupera um tipo de mídia preferencial. VirtuaisLUNs.                                                                                        |
+| [**Threadproc**](csourcestream-threadproc.md)                         | Procedimento de thread. Virtual.                                                                                                        |
+| [**DoBufferProcessingLoop**](csourcestream-dobufferprocessingloop.md) | Gera dados de mídia e os entrega para o pin de entrada downstream. Virtual.                                                        |
+| [**Checkmediatype**](csourcestream-checkmediatype.md)                 | Determina se o pin aceita um tipo de mídia específico. Virtual.                                                                     |
+| [**Getmediatype**](csourcestream-getmediatype.md)                     | Recupera um tipo de mídia preferencial. Virtual.                                                                                        |
 | Métodos públicos                                                         | Descrição                                                                                                                       |
-| [**CSourceStream**](csourcestream-csourcestream.md)                   | Método de construtor.                                                                                                               |
-| [**~ CSourceStream**](csourcestream--csourcestream.md)                | Método destruidor. VirtuaisLUNs.                                                                                                       |
+| [**Csourcestream**](csourcestream-csourcestream.md)                   | Método do construtor.                                                                                                               |
+| [**~ CSourceStream**](csourcestream--csourcestream.md)                | Método destruidor. Virtual.                                                                                                       |
 | [**Init**](csourcestream-init.md)                                     | Inicializa o thread de streaming.                                                                                                 |
 | [**Fechar**](csourcestream-exit.md)                                     | Sinaliza o thread de streaming para sair.                                                                                             |
 | [**Executar**](csourcestream-run.md)                                       | Sinaliza o thread de streaming a ser executado.                                                                                              |
@@ -75,7 +75,7 @@ Eles não fazem nada na classe base, mas a classe derivada pode substituí-los.
 | Métodos virtuais puros                                                   | Descrição                                                                                                                       |
 | [**FillBuffer**](csourcestream-fillbuffer.md)                         | Preenche um exemplo de mídia com dados.                                                                                                   |
 | Métodos IPin                                                           | Descrição                                                                                                                       |
-| [**QueryId**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryid)                                        | Recupera um identificador para o PIN.                                                                                              |
+| [**Queryid**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryid)                                        | Recupera um identificador para o pino.                                                                                              |
 
 
 
@@ -87,8 +87,8 @@ Eles não fazem nada na classe base, mas a classe derivada pode substituí-los.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Source. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Source.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
@@ -96,7 +96,7 @@ Eles não fazem nada na classe base, mas a classe derivada pode substituí-los.
 
 <dl> <dt>
 
-[Gravando filtros de origem](writing-source-filters.md)
+[Escrevendo filtros de origem](writing-source-filters.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 3f5f00a3-1f2c-4fa2-9738-bc5fb56e2208
 title: Usando apenas o reconhecedor de gestos da Microsoft
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80504e8b32c0b9596936bb4f07d029cd4ea8ddbd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 08d7b27ae30e0bba98ee2c9db57cc0da2d6491932d0137cc5cd4d2b6f86420ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118715173"
 ---
 # <a name="using-the-microsoft-gesture-recognizer-only"></a>Usando apenas o reconhecedor de gestos da Microsoft
 

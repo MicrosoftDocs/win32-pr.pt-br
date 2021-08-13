@@ -3,7 +3,7 @@ title: Propriedade SplitButtonGallery. MenuGroups
 description: Representa um contêiner para um conjunto de itens de menu suspenso em um controle SplitButtonGallery.
 ms.assetid: e30fcf9a-488b-423a-8bc4-fccbc78f74de
 keywords:
-- Faixa de SplitButtonGallery de propriedades do Windows. MenuGroups
+- propriedade SplitButtonGallery. MenuGroups Windows Ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72176e7d7e79b076c3a7cf4d1fd847aa4f4e0561
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 931a66ffca192a1655f3eeffc405c4c02c8e298c28fe9cb9d0d8c6612e29d793
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119441708"
 ---
 # <a name="splitbuttongallerymenugroups-property"></a>Propriedade SplitButtonGallery. MenuGroups
 
@@ -98,8 +98,8 @@ Esta seção de código mostra a declaração de controle **SplitButtonGallery. 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/> |
 
 
 

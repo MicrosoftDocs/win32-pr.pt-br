@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_INSTANCE_INFO. cDatabases'
-title: Propriedade JET_INSTANCE_INFO. cDatabases
+description: 'Saiba mais sobre: JET_INSTANCE_INFO.cDatabases'
+title: JET_INSTANCE_INFO.cDatabases
 TOCTitle: 'cDatabases property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_INSTANCE_INFO.cDatabases
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_instance_info.cdatabases(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cc6d81fc4389caf57ae5375a5548a1832b0cebfe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd24092d039bc7cfc1c32a48068e1a5e3694c57dc42e7754998d06abe298cc14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105756115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118765705"
 ---
-# <a name="jet_instance_infocdatabases-property"></a>Propriedade JET_INSTANCE_INFO. cDatabases
+# <a name="jet_instance_infocdatabases-property"></a>JET_INSTANCE_INFO.cDatabases
 
-Obtém o número de bancos de dados que estão anexados à instância de Database.
+Obtém o número de bancos de dados anexados à instância do banco de dados.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public int cDatabases { get; private set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_INSTANCE_INFO](./jet-instance-info-class.md)
+[JET_INSTANCE_INFO classe](./jet-instance-info-class.md)
 
-[Membros do JET_INSTANCE_INFO](./jet-instance-info-members.md)
+[JET_INSTANCE_INFO membros](./jet-instance-info-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,8 +1,8 @@
 ---
-description: Fazer uma chamada assíncrona para um método WMI ou um método de provedor permite que um script continue a ser executado enquanto os objetos retornam a um objeto SWbemSink e são manipulados por métodos como SWbemSink. OnObjectReady.
+description: Fazer uma chamada assíncrona para um método WMI ou um método de provedor permite que um script continue em execução enquanto os objetos retornam a um objeto SWbemSink e são tratados por métodos como SWbemSink.OnObjectReady.
 ms.assetid: 61f401d9-c874-472d-8dd3-7cf9d7f20a12
 ms.tgt_platform: multiple
-title: Fazendo uma chamada assíncrona com o VBScript
+title: Fazendo uma chamada assíncrona com VBScript
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,39 +10,39 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c2b3ec0c1bd771f59a4e456cb8e57c3bb3e9e394
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee8c4737ff7513441532275e24f2cfe20f8e30fa2932e854cc566eb032c49d0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105810819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118555128"
 ---
-# <a name="making-an-asynchronous-call-with-vbscript"></a>Fazendo uma chamada assíncrona com o VBScript
+# <a name="making-an-asynchronous-call-with-vbscript"></a>Fazendo uma chamada assíncrona com VBScript
 
-Fazer uma chamada assíncrona para um [*método WMI*](gloss-w.md) ou um [*método de provedor*](gloss-p.md) permite que um script continue a ser executado enquanto os objetos retornam a um objeto [**SWbemSink**](swbemsink.md) e são manipulados por métodos como [**SWbemSink. OnObjectReady**](swbemsink-onobjectready.md). No entanto, as chamadas assíncronas não são recomendadas porque os dados podem não ser retornados no mesmo nível de segurança que a chamada é feita.
+Fazer uma chamada assíncrona para um [](gloss-p.md) método [*WMI*](gloss-w.md) ou um método de provedor permite que um script continue em execução enquanto os objetos retornam a um objeto [**SWbemSink**](swbemsink.md) e são tratados por métodos como [**SWbemSink.OnObjectReady**](swbemsink-onobjectready.md). No entanto, chamadas assíncronas não são recomendadas porque os dados podem não ser retornados no mesmo nível de segurança que a chamada é feita.
 
-Ao usar chamadas de coletor assíncronas como [**SWbemSink. OnObjectReady**](swbemsink-onobjectready.md) para obter dados retornados, você pode definir o valor do registro a seguir.
+Ao usar chamadas de sink assíncronas como [**SWbemSink.OnObjectReady**](swbemsink-onobjectready.md) para obter dados retornados, você pode definir o valor do Registro a seguir.
 
-**HKEY \_ \_Computador local** \\ **software** \\ **Microsoft** \\ **WBEM** \\ **CIMOM** \\ **UnsecAppAccessControlDefault**
+**HKEY \_ SOFTWARE \_ DO** COMPUTADOR LOCAL \\  \\ **Microsoft** \\ **WBEM** \\ **CIMOM** \\ **UnsecAppAccessControlDefault**
 
-Definir esse valor de registro garante a autenticação dos objetos de dados retornados ao coletor. Se **UnsecAppAccessControlDefault** for definido como um (1), o WMI executará a verificação de acesso do retorno de dados. Verificações de acesso Verifique se os dados vêm da fonte correta. Para obter mais informações, consulte [definindo a segurança em uma chamada assíncrona](setting-security-on-an-asynchronous-call.md).
+Definir esse valor do Registro garante a autenticação dos objetos de dados retornados ao sink. Se **UnsecAppAccessControlDefault** for definido como um (1), o WMI executará a verificação de acesso do retorno de dados. Verificações de acesso verificam se os dados vêm da origem correta. Para obter mais informações, consulte [Configurando a segurança em uma chamada assíncrona](setting-security-on-an-asynchronous-call.md).
 
-Métodos assíncronos com nomes que terminam em "Async \_ " sempre retornam imediatamente após serem chamados para que um programa possa continuar em execução. Por exemplo, [**SWbemServices.ExecQuery**](swbemservices-execquery.md) é síncrono e bloqueia a execução até que todos os objetos sejam retornados. O método [**cQueryAsyncSWbemServices.Exe**](swbemservices-execqueryasync.md) é a versão assíncrona não bloqueada. Uma maneira mais segura de fazer a chamada para **SWbemServices.Exe** o desbloqueio cQuery é fazendo a chamada [*semisynchronously*](gloss-s.md). Para obter mais informações, consulte [definindo a segurança em uma chamada assíncrona](setting-security-on-an-asynchronous-call.md) e [fazendo uma chamada de Semisynchronous com o VBScript](making-a-semisynchronous-call-with-vbscript.md).
+Métodos assíncronos com nomes que terminam em "Assíncrono" sempre retornam imediatamente após serem chamados para que um programa possa \_ continuar em execução. Por exemplo, [**SWbemServices.ExecQuery**](swbemservices-execquery.md) é síncrono e bloqueia a execução até que todos os objetos sejam retornados. O [**SWbemServices.Exemétodo cQueryAsync**](swbemservices-execqueryasync.md) é a versão assíncrona não desbloqueada. Uma maneira mais segura de fazer a chamada **paraSWbemServices.ExecQuery** não bloqueado é fazendo a chamada de forma [*semissíncrona.*](gloss-s.md) Para obter mais informações, consulte [Configurando a](setting-security-on-an-asynchronous-call.md) segurança em uma chamada assíncrona e Fazendo uma chamada [semisíncrona com o VBScript.](making-a-semisynchronous-call-with-vbscript.md)
 
-O parâmetro *iFlags* para chamadas assíncronas sempre assume como padrão zero (0). Os métodos assíncronos não fornecem uma coleção [**SWbemObjectSet**](swbemobjectset.md) para a sub-rotina Sink. Em vez disso, a sub-rotina de evento [**SWbemSink. OnObjectReady**](swbemsink-onobjectready.md) em seu script ou aplicativo recebe cada objeto conforme ele é fornecido.
+O *parâmetro iFlags* para chamadas assíncronas sempre assume como padrão zero (0). Métodos assíncronos não fornecem uma [**coleção SWbemObjectSet**](swbemobjectset.md) para a sub-rotina do sink. Em vez disso, a sub-rotina de evento [**SWbemSink.OnObjectReady**](swbemsink-onobjectready.md) em seu script ou aplicativo recebe cada objeto conforme ele é fornecido.
 
-Quando a chamada assíncrona original é concluída, ela chama o evento [**SWbemSink. OnCompleted**](swbemsink-oncompleted.md) do coletor de objetos e executa o código que você coloca ali para processar o resultado da chamada.
+Quando a chamada assíncrona original é concluída, ela chama o evento [**SWbemSink.OnCompleted**](swbemsink-oncompleted.md) do sink do objeto e executa o código que você coloca lá para processar o resultado da chamada.
 
 > [!Note]  
-> Uma página de Active Server (ASP) como um host de script não oferece suporte a uma chamada assíncrona.
+> Uma asp (página de Active Server) como um host de script não dá suporte a uma chamada assíncrona.
 
  
 
 O procedimento a seguir descreve como fazer uma chamada assíncrona usando o VBScript.
 
-**Para fazer uma chamada assíncrona usando o VBScript**
+**Para fazer uma chamada assíncrona usando VBScript**
 
-1.  Conecte-se ao WMI e obtenha um objeto [**SWbemServices**](swbemservices.md) .
+1.  Conexão para WMI e obter um [**objeto SWbemServices.**](swbemservices.md)
 
     ```VB
     Set Service = GetObject("Winmgmts:")
@@ -50,7 +50,7 @@ O procedimento a seguir descreve como fazer uma chamada assíncrona usando o VBS
 
     
 
-2.  Crie o coletor de objetos usando [CreateObject](/previous-versions//xzysf6hc(v=vs.85)) ou (somente para o Windows Script Host 2,0) a marca de objeto com um atributo de eventos definido como **true**.
+2.  Crie o sink de objeto usando [CreateObject](/previous-versions//xzysf6hc(v=vs.85)) ou (somente para Windows Host de Script 2.0) a marca OBJECT com um atributo de eventos definido como **TRUE.**
 
     ```VB
     Set sink = WScript.CreateObject("WbemScripting.SWbemSink","SINK_")
@@ -58,7 +58,7 @@ O procedimento a seguir descreve como fazer uma chamada assíncrona usando o VBS
 
     
 
-    – ou –
+    -ou-
 
     ```VB
     <OBJECT progid="WbemScripting.SWbemSink" ID="SINK" events="true"/>
@@ -66,9 +66,9 @@ O procedimento a seguir descreve como fazer uma chamada assíncrona usando o VBS
 
     
 
-3.  Crie uma sub-rotina para cada evento que um evento assíncrono pode disparar. Esses eventos são definidos como métodos em [**SWbemObject**](swbemobject.md). Por exemplo, o WMI faz um retorno de chamada para [**SWbemSink. OnObjectReady**](swbemsink-onobjectready.md) conforme cada instância retorna.
+3.  Crie uma sub-rotina para cada evento que um evento assíncrono possa disparar. Esses eventos são definidos como métodos [**em SWbemObject**](swbemobject.md). Por exemplo, o WMI faz um retorno de chamada para [**SWbemSink.OnObjectReady**](swbemsink-onobjectready.md) conforme cada instância retorna.
 
-    Quando você cria a sub-rotina, coloca o código na sub-rotina para lidar com cada evento quando ele é recebido.
+    Ao criar a sub-rotina, coloque o código na sub-rotina para manipular cada evento quando ele for recebido.
 
     ```VB
     Sub SINK_OnCompleted(
@@ -86,9 +86,9 @@ O procedimento a seguir descreve como fazer uma chamada assíncrona usando o VBS
 
     
 
-    Examine o parâmetro *iHresult* retornado pelo evento [**OnCompleted**](swbemsink-oncompleted.md) para determinar se a chamada assíncrona foi bem-sucedida ou se ocorreu um erro. Se for bem-sucedido, o valor passado no parâmetro *iHresult* será igual a zero (0). Qualquer outro valor pode indicar um erro e você deve verificar os valores no objeto de erro que é retornado no parâmetro *objErrorObject* .
+    Examine o *parâmetro iHresult* retornado pelo [**evento OnCompleted**](swbemsink-oncompleted.md) para determinar se a chamada assíncrona foi bem-sucedida ou se ocorreu um erro. Se for bem-sucedido, o valor passado no parâmetro *iHresult* será igual a zero (0). Qualquer outro valor pode indicar um erro e você deve verificar os valores no objeto de erro retornado no *parâmetro objErrorObject.*
 
-4.  Faça uma chamada assíncrona e passe o nome do seu coletor no parâmetro *objWbemSink* .
+4.  Faça uma chamada assíncrona e passe o nome do seu sink no parâmetro *objWbemSink.*
 
     ```VB
     Service.InstancesOfAsync sink, "Win32_process"
@@ -96,7 +96,7 @@ O procedimento a seguir descreve como fazer uma chamada assíncrona usando o VBS
 
     
 
-5.  Faça uma chamada que impeça que o script termine antes que todos os eventos sejam recebidos. Se o script puder ser executado com uma interface de tela, uma maneira simples de fazer isso é usar um comando do WSH (Windows Script Host) `Echo` , que é mostrado no exemplo a seguir.
+5.  Faça uma chamada que impeça que o script seja encerrado antes que todos os eventos sejam recebidos. Se o script puder ser executado com uma interface de tela, uma maneira simples de fazer isso é usar um comando WSH (Host de Script Windows), que é mostrado no exemplo a `Echo` seguir.
 
     ```VB
     WScript.Echo "Waiting for instances."
@@ -104,11 +104,11 @@ O procedimento a seguir descreve como fazer uma chamada assíncrona usando o VBS
 
     
 
-    Ao executar esse script, você poderá ver a primeira instância retornar antes da mensagem **aguardando instâncias** ou poderá vê-la após. Essa é a natureza do processamento assíncrono. Se você fechar a caixa de mensagem **aguardando instâncias em** breve, talvez não veja todas as instâncias.
+    Ao executar esse script, você poderá ver a primeira instância retornar antes da mensagem Aguardando **instâncias** ou poderá vê-la depois. Essa é a natureza do processamento assíncrono. Se você fechar a **caixa de mensagem Aguardando instâncias** muito em breve, talvez não veja todas as instâncias.
 
-6.  Se você tiver resultados de várias chamadas assíncronas diferentes retornando ao mesmo coletor, armazene todos os dados de distinção necessários no parâmetro de contexto *objWbemAsyncContext* .
+6.  Se você tiver resultados de várias chamadas assíncronas diferentes retornando para o mesmo sink, armazene todos os dados de distinção necessários no parâmetro de contexto *objWbemAsyncContext.*
 
-7.  Quando terminar com o coletor, cancele sua chamada assíncrona com o método [**Cancel**](swbemsink-cancel.md) .
+7.  Quando terminar com o sink, cancele sua chamada assíncrona com o [**método Cancel.**](swbemsink-cancel.md)
 
     ```VB
     objwbemsink.Cancel()
@@ -116,9 +116,9 @@ O procedimento a seguir descreve como fazer uma chamada assíncrona usando o VBS
 
     
 
-    O método [**Cancel**](swbemsink-cancel.md) INSTRUI o WSH a cancelar todas as chamadas assíncronas associadas a um determinado objeto de coletor. Portanto, talvez você queira usar coletores separados para operações assíncronas que devem ser independentes.
+    O [**método Cancel**](swbemsink-cancel.md) instrui o WSH a cancelar todas as chamadas assíncronas associadas a um determinado objeto de sink. Portanto, talvez você queira usar os sinks separados para operações assíncronas que devem ser independentes.
 
-8.  Libere o objeto do coletor atribuindo o objeto de coletor a `Nothing` .
+8.  Libere o objeto de sink atribuindo o objeto de sink a `Nothing` .
 
     ```VB
     set objwbemsink= Nothing
@@ -126,7 +126,7 @@ O procedimento a seguir descreve como fazer uma chamada assíncrona usando o VBS
 
     
 
-O exemplo de código a seguir mostra uma consulta assíncrona para todas as instâncias do [**\_ processo do Win32**](/windows/desktop/CIMWin32Prov/win32-process) no computador local. Para obter uma versão semisynchronous do mesmo método, consulte [chamando um método](calling-a-method.md).
+O exemplo de código a seguir mostra uma consulta assíncrona para todas as instâncias do [**Processo Win32 \_**](/windows/desktop/CIMWin32Prov/win32-process) no computador local. Para uma versão síncrona do mesmo método, consulte [Chamando um método](calling-a-method.md).
 
 
 ```VB
@@ -171,7 +171,7 @@ end sub
 [Chamando um método](calling-a-method.md)
 </dt> <dt>
 
-[Mantendo a segurança do WMI](maintaining-wmi-security.md)
+[Mantendo a segurança WMI](maintaining-wmi-security.md)
 </dt> </dl>
 
  

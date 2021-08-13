@@ -1,19 +1,19 @@
 ---
-description: Para desenhar linhas com o Windows GDI+, você precisa criar um objeto de gráfico e um objeto de caneta.
+description: para desenhar linhas com Windows GDI+ você precisa criar um objeto de gráfico e um objeto de caneta.
 ms.assetid: d91562ab-41e6-4bca-a320-74f490a4f88f
 title: Canetas, linhas e retângulos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5e9749b1c1af6ca4808e797d016267bb251e6fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb8ac54d1e98a617492aa6f5f1194767fc56a34ffcaaee71ba71753dda08f8bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119359586"
 ---
 # <a name="pens-lines-and-rectangles"></a>Canetas, linhas e retângulos
 
-Para desenhar linhas com o Windows GDI+, você precisa criar um objeto de [**gráfico**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) e um objeto de [**caneta**](/windows/win32/api/gdipluspen/nl-gdipluspen-pen) . O objeto **Graphics** fornece os métodos que realmente fazem o desenho, e o objeto **Pen** armazena os atributos da linha, como Color, Width e Style. Desenhar uma linha é simplesmente uma questão de chamar o método [DrawLine](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawline(inconstpen_inint_inint_inint_inint)) do objeto **Graphics** . O endereço do objeto **Pen** é passado como um dos argumentos para o método DrawLine. O exemplo a seguir desenha uma linha do ponto (4, 2) até o ponto (12, 6).
+para desenhar linhas com Windows GDI+ você precisa criar um objeto de [**gráfico**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) e um objeto de [**caneta**](/windows/win32/api/gdipluspen/nl-gdipluspen-pen) . O objeto **Graphics** fornece os métodos que realmente fazem o desenho, e o objeto **Pen** armazena os atributos da linha, como Color, Width e Style. Desenhar uma linha é simplesmente uma questão de chamar o método [DrawLine](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawline(inconstpen_inint_inint_inint_inint)) do objeto **Graphics** . O endereço do objeto **Pen** é passado como um dos argumentos para o método DrawLine. O exemplo a seguir desenha uma linha do ponto (4, 2) até o ponto (12, 6).
 
 
 ```
@@ -57,7 +57,7 @@ Você pode usar vários métodos do objeto [**Pen**](/windows/win32/api/gdiplusp
 
 ![ilustração de duas linhas que demonstram extremidades arredondadas e circulares, cantos arredondados e com mitra e dois estilos de seta](images/aboutgdip02-art04.png)
 
-Retângulos de desenho com GDI+ é semelhante a linhas de desenho. Para desenhar um retângulo, você precisa de um objeto [**gráfico**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) e um objeto de [**caneta**](/windows/win32/api/gdipluspen/nl-gdipluspen-pen) . O objeto **Graphics** fornece um método [DrawRectangle](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawrectangle(inconstpen_inint_inint_inint_inint)) e o objeto **Pen** armazena atributos, como largura e cor da linha. O endereço do objeto **Pen** é passado como um dos argumentos para o método DrawRectangle. O exemplo a seguir desenha um retângulo com seu canto superior esquerdo em (100, 50), uma largura de 80 e uma altura de 40.
+retângulos de desenho com GDI+ é semelhante a linhas de desenho. Para desenhar um retângulo, você precisa de um objeto [**gráfico**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) e um objeto de [**caneta**](/windows/win32/api/gdipluspen/nl-gdipluspen-pen) . O objeto **Graphics** fornece um método [DrawRectangle](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawrectangle(inconstpen_inint_inint_inint_inint)) e o objeto **Pen** armazena atributos, como largura e cor da linha. O endereço do objeto **Pen** é passado como um dos argumentos para o método DrawRectangle. O exemplo a seguir desenha um retângulo com seu canto superior esquerdo em (100, 50), uma largura de 80 e uma altura de 40.
 
 
 ```

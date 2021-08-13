@@ -1,7 +1,7 @@
 ---
-description: O método SetIPortableDeviceValuesCollectionValue adiciona um novo valor IPortableDeviceValuesCollection (tipo VT \_ desconhecido) ou substitui um existente.
+description: O método SetIPortableDeviceValuesCollectionValue adiciona um novo valor IPortableDeviceValuesCollection (tipo VT UNKNOWN) ou substitui um \_ existente.
 ms.assetid: 29bdecaa-4820-4b1d-be59-ae82f7715a53
-title: 'Método IPortableDeviceValues:: SetIPortableDeviceValuesCollectionValue (PortableDeviceTypes. h)'
+title: Método IPortableDeviceValues::SetIPortableDeviceValuesCollectionValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 3f0c545a4daceed75971b0e659f85d72eca6d98f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7f015333a8d384743d0e8ea16000252a4e60fd24ab0637b92ee3d85ddb42a1c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118697084"
 ---
-# <a name="iportabledevicevaluessetiportabledevicevaluescollectionvalue-method"></a>Método IPortableDeviceValues:: SetIPortableDeviceValuesCollectionValue
+# <a name="iportabledevicevaluessetiportabledevicevaluescollectionvalue-method"></a>Método IPortableDeviceValues::SetIPortableDeviceValuesCollectionValue
 
-O método **SetIPortableDeviceValuesCollectionValue** adiciona um novo valor **IPORTABLEDEVICEVALUESCOLLECTION** (tipo VT \_ desconhecido) ou substitui um existente.
+O **método SetIPortableDeviceValuesCollectionValue** adiciona um novo **valor IPortableDeviceValuesCollection** (tipo VT UNKNOWN) ou substitui um \_ existente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,23 +41,23 @@ HRESULT SetIPortableDeviceValuesCollectionValue(
 
 <dl> <dt>
 
-*chave* \[ no\]
+*chave* \[ Em\]
 </dt> <dd>
 
-Um **REFPROPERTYKEY** que especifica o item a ser criado ou substituído.
+Uma **REFPROPERTYKEY** que especifica o item a ser criado ou substituido.
 
 </dd> <dt>
 
-*valores* \[ no\]
+*pValue* \[ Em\]
 </dt> <dd>
 
-Ponteiro para uma interface **IPortableDeviceValuesCollection** que especifica o novo valor. O SDK copia uma referência para a interface enviada e chama **AddRef** nela.
+Ponteiro para uma **interface IPortableDeviceValuesCollection** que especifica o novo valor. O SDK copia uma referência para a interface enviada e chama **AddRef** nele.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -71,7 +71,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 ## <a name="remarks"></a>Comentários
 
-Se um valor existente tiver a mesma chave especificada pelo parâmetro de *chave* , ele substituirá o valor existente sem nenhum aviso. A memória de chave existente é liberada adequadamente.
+Se um valor existente tiver a mesma chave especificada pelo parâmetro *key,* ele substituirá o valor existente sem nenhum aviso. A memória de chave existente é liberada adequadamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Se um valor existente tiver a mesma chave especificada pelo parâmetro de *chave
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ Se um valor existente tiver a mesma chave especificada pelo parâmetro de *chave
 
 <dl> <dt>
 
-[**Interface IPortableDeviceValues**](iportabledevicevalues.md)
+[**IPortableDeviceValues Interface**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**IPortableDeviceValues::GetIPortableDeviceValuesCollectionValue**](iportabledevicevalues-getiportabledevicevaluescollectionvalue.md)

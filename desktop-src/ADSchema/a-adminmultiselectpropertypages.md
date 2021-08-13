@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e653568d4f8f6653e4c7dc939c91a7d3cd8b83c6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6ed42d2383d194ca417a381da8ef0e849b4d4b6b93665fd7d360df2829f7e0d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105769075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118688390"
 ---
 # <a name="admin-multiselect-property-pages-attribute"></a>Atributo admin-MultiSelect-Property-Pages
 
@@ -33,10 +33,10 @@ Esse é um atributo COM vários valores cujos são um número que representa a o
 | LDAP-Display-Name | adminMultiselectPropertyPages                                                                                                               |
 | Tamanho              | 40 bytes                                                                                                                                    |
 | Privilégio de atualização  | Administrador de domínio                                                                                                                        |
-| Frequência de atualização  | Isso só será atualizado se um serviço, como o Exchange ou Terminal Server estiver instalado, que implemente suas próprias páginas de propriedades de seleção múltipla. |
+| Frequência de atualização  | isso só será atualizado se um serviço, como Exchange ou Terminal Server estiver instalado, que implemente suas próprias páginas de propriedades de seleção múltipla. |
 | Attribute-Id      | 1.2.840.113556.1.4.1690                                                                                                                     |
 | System-ID-GUID    | 18f9b67d-5ac6-4b3b-97db-d0a406afb7ba                                                                                                        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                                                                                 |
+| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                                                                                 |
 
 
 
@@ -120,10 +120,10 @@ Esse é um atributo COM vários valores cujos são um número que representa a o
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | Falso                                                      |
+| Tem valor único       | Falso                                                      |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -141,10 +141,10 @@ Esse é um atributo COM vários valores cujos são um número que representa a o
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | Falso                                                      |
+| Tem valor único       | Falso                                                      |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |

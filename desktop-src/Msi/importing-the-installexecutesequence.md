@@ -4,18 +4,18 @@ ms.assetid: cdd4f02a-cfe6-4a23-9fc2-f4cb810379aa
 title: Importando o InstallExecuteSequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8e4728b0a59c92dcc0d007fc816fd298455e049
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 586557130c6aa9af197d5d28f6bd750f4de736feb6982f3b7f12ce73ccf41c83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922136"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119430766"
 ---
 # <a name="importing-the-installexecutesequence"></a>Importando o InstallExecuteSequence
 
 A [tabela InstallExecuteSequence](installexecutesequence-table.md) lista as ações que são executadas quando o instalador executa a [ação de instalação](install-action.md)de nível superior. Confira o [grupo tabelas de procedimentos de instalação](installation-procedure-tables-group.md), [usando uma tabela de sequência](using-a-sequence-table.md)e o exemplo de tabela de [sequência detalhado](sequence-table-detailed-example.md).
 
-Se na seção [importando um banco de dados em branco](importing-a-blank-database.md) usado uisample.msi do SDK do Windows Installer, as tabelas de sequência em sua cópia do MNP2000.msi já contêm as sequências de ações sugeridas descritas em [usando uma tabela de sequência](using-a-sequence-table.md). Nenhuma alteração nessas sequências é necessária para criar o pacote de instalação do bloco de notas.
+se na seção [importando um banco de dados em branco](importing-a-blank-database.md) usado uisample.msi do SDK do Windows Installer, as tabelas de sequência em sua cópia do MNP2000.msi já contêm as sequências de ações sugeridas descritas em [usando uma tabela de sequência](using-a-sequence-table.md). nenhuma alteração nessas sequências é necessária para criar o pacote de instalação Bloco de notas.
 
 Use o editor de banco de dados para abrir MNP2000.msi e insira os dados a seguir na tabela InstallExecuteSequence.
 
@@ -73,8 +73,8 @@ Use o editor de banco de dados para abrir MNP2000.msi e insira os dados a seguir
 | SelfRegModules           |               | 5600     |
 | SelfUnregModules         |               | 2200     |
 | SetODBCFolders           |               | 1100     |
-| Iniciarservices            | VersionNT     | 5900     |
-| Pararservices             | VersionNT     | 1900     |
+| StartServices            | VersionNT     | 5900     |
+| StopServices             | VersionNT     | 1900     |
 | UnpublishComponents      |               | 1.700     |
 | UnpublishFeatures        |               | 1800     |
 | UnregisterClassInfo      |               | 2700     |

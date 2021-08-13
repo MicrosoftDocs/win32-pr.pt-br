@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Windows.Foundation.idl
-ms.openlocfilehash: 639f5c39d0d9e4086009fd08bd0204f9f5f25060
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5d7e091ab250dc8b7475dbf17a1d1502cd1c4aa110106584c8c8b190c927f4aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105798276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118561171"
 ---
 # <a name="asyncactioncompletedhandler-interface"></a>Interface AsyncActionCompletedHandler
 
@@ -26,7 +26,7 @@ Representa o método que é chamado quando uma ação assíncrona é concluída.
 
 ## <a name="members"></a>Membros
 
-A interface **AsyncActionCompletedHandler** herda de [**IAsyncInfo**](/windows/win32/api/asyncinfo/nn-asyncinfo-iasyncinfo). **AsyncActionCompletedHandler** também tem estes tipos de membros:
+A interface **AsyncActionCompletedHandler** herda de [**IAsyncInfo.**](/windows/win32/api/asyncinfo/nn-asyncinfo-iasyncinfo) **AsyncActionCompletedHandler** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -38,7 +38,7 @@ A interface **AsyncActionCompletedHandler** tem esses métodos.
 
 | Método                                               | Descrição                                                                                    |
 |:-----------------------------------------------------|:-----------------------------------------------------------------------------------------------|
-| [**Chame**](asyncactioncompletedhandler-invoke.md) | Invoca o método que é chamado quando a ação assíncrona especificada é concluída.<br/> |
+| [**Invoke**](asyncactioncompletedhandler-invoke.md) | Invoca o método que é chamado quando a ação assíncrona especificada é concluída.<br/> |
 
 
 
@@ -46,7 +46,7 @@ A interface **AsyncActionCompletedHandler** tem esses métodos.
 
 ## <a name="remarks"></a>Comentários
 
-Atribua um **AsyncActionCompletedHandler** a um [**IAsyncAction**](/windows/win32/api/windows.foundation/nn-windows-foundation-iasyncaction) para receber uma notificação quando a ação assíncrona for concluída.
+Atribua **um AsyncActionCompletedHandler** a [**um IAsyncAction**](/windows/win32/api/windows.foundation/nn-windows-foundation-iasyncaction) para receber uma notificação quando a ação assíncrona for concluída.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,7 +56,7 @@ Atribua um **AsyncActionCompletedHandler** a um [**IAsyncAction**](/windows/win3
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                    |
-| parâmetro<br/>                   | <dl> <dt>Windows. Foundation. idl</dt> </dl> |
+| parâmetro<br/>                   | <dl> <dt>Windows. Foundation.idl</dt> </dl> |
 
 
 

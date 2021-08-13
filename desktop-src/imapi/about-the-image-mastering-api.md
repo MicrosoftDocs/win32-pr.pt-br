@@ -6,12 +6,12 @@ keywords:
 - API de mestre de imagem IMAPi, descrito
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3db1dc7846d2e47483abf2ca8856d593b874467f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ccb16ab8c542e7c4686c7a3f4d027169a520495a8d3fab9927f11ed974deeef6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104557447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451896"
 ---
 # <a name="about-the-image-mastering-api"></a>Sobre a API de mestre de imagem
 
@@ -36,9 +36,9 @@ Os objetos **MSDiscRecorderObj** são acessados por meio da interface [**IDiscRe
 
 Os objetos restantes, **MSDiscStashObj** e **MSBurnEngineObj**, são objetos internos ACessados pelo IMAPI. Eles são mencionados aqui apenas para esclarecer a arquitetura do IMAPi. O **MSDiscStashObj** representa (por meio da interface **IDiscStash** ) um arquivo bruto de até 800 MB de tamanho que é usado pelo **MSDiscMasterObj** para criar imagens de áudio ou discos de dados a serem gravados. O stash é passado para o **MSBurnEngineObj** (por meio da interface **IMSBurnEngine** ) quando uma gravação é solicitada do mecanismo de nível inferior. O objeto **MSBurnEngineObj** espera que o conteúdo do Stash esteja em um formato conhecido. Nesse sentido, **MSDiscMasterObj** e **MSBurnEngineObj** têm um contrato com relação ao conteúdo do Stash.
 
- 
+ 
 
- 
+ 
 
 
 

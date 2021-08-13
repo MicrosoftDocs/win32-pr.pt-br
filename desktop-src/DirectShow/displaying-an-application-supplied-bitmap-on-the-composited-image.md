@@ -1,29 +1,29 @@
 ---
-title: Exibir um bitmap fornecido pelo aplicativo na imagem compostada
-description: Exibindo um bitmap Application-Supplied na imagem compostada
+title: Exibir um bitmap fornecido pelo aplicativo na imagem composta
+description: Exibindo um Application-Supplied bitmap na imagem composta
 ms.assetid: c51329d3-e814-4ef9-aad8-a3e60f9fa2a7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06ecd8ac931d0a0bb83eafba09d8ca7dc8263f0d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 90768cc9ba9ed3a7f53336c63b0112f297e1844ba9638799e8badf28588775eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118653508"
 ---
-# <a name="display-an-app-supplied-bitmap-on-the-composited-image"></a>Exibir um bitmap fornecido pelo aplicativo na imagem compostada
+# <a name="display-an-app-supplied-bitmap-on-the-composited-image"></a>Exibir um bitmap fornecido pelo aplicativo na imagem composta
 
-Os aplicativos podem usar o modo de mistura do VMR para exibir logotipos de canal com combinação alfabética, uma interface do usuário ou anúncios de forma parcial ou completa dentro do retângulo do vídeo. Como a mesclagem é realizada no hardware pelo processador de gráficos, há um impacto mínimo sobre o desempenho de reprodução do fluxo de vídeo e não há nenhuma cintilação detectável ou artefatos de divisão. Os aplicativos podem alterar a imagem exibida com a frequência desejada. Deve-se observar que as alterações só são refletidas na tela quando o grafo de filtro do DirectShow está no estado executando.
+Os aplicativos podem usar o modo de combinação da VMR para exibir logotipos de canal alfa-blended, uma interface do usuário ou anúncios parcial ou completamente dentro do retângulo de vídeo. Como a combinação é executada em hardware pelo processador de gráficos, há um impacto mínimo no desempenho de reprodução do Fluxo de Vídeo e não há nenhuma cintilação detectável ou artefatos de desmantelhamento. Os aplicativos podem alterar a imagem exibida com a frequência que desejar. Deve-se lembrar que as alterações só são refletidas na tela quando o DirectShow de filtro está no estado de execução.
 
-O VMR usa seu componente de mixer para sobrepor o bitmap na imagem compostada. Com o VMR-7, o aplicativo deve forçar o VMR a carregar seu mixer, mesmo que haja apenas um único fluxo de vídeo. Isso não é necessário com o VMR-9, já que ele carrega seu mixer por padrão.
+A VMR usa seu componente de mixer para sobrepor o bitmap à imagem composta. Com a VMR-7, o aplicativo deve forçar a VMR a carregar seu mixer, mesmo que haja apenas um único fluxo de vídeo. Isso não é necessário com a VMR-9, pois ele carrega seu mixer por padrão.
 
-Para misturar uma imagem de bitmap estática com o fluxo de vídeo, o aplicativo cria o VMR e o adiciona ao grafo e, em seguida, chama [**IVMRFilterConfig:: SetNumberOfStreams**](/windows/desktop/api/Strmif/nf-strmif-ivmrfilterconfig-setnumberofstreams). O valor passado para essa função identifica o número de Pins de entrada que o VMR deve criar. Os aplicativos podem especificar qualquer valor entre 1 e \_ o máximo de fluxos de mixer \_ ; especificar um valor de 1 será válido se o aplicativo pretender exibir apenas um fluxo de vídeo. Embora o VMR-7 tenha um único PIN de entrada por padrão, esse método deve ser chamado para forçá-lo a carregar seu componente de mixer. (O VMR-9 carrega seu mixer e configura quatro Pins por padrão.)
+Para combinar uma imagem de bitmap estático com o fluxo de vídeo, o aplicativo cria a VMR e a adiciona ao grafo e, em seguida, chama [**IVMRFilterConfig::SetNumberOfStreams**](/windows/desktop/api/Strmif/nf-strmif-ivmrfilterconfig-setnumberofstreams). O valor passado para essa função identifica o número de pinos de entrada que a VMR deve criar. Os aplicativos podem especificar qualquer valor entre 1 e MAX MIXER STREAMS; especificar um valor de 1 é válido se o aplicativo pretende exibir apenas um único fluxo \_ \_ de vídeo. Embora a VMR-7 tenha um único pino de entrada por padrão, esse método deve ser chamado para forçá-lo a carregar seu componente de mixer. (A VMR-9 carrega seu mixer e configura quatro pinos por padrão.)
 
-Para definir o bitmap, use a interface [**IVMRMixerBitmap**](/windows/desktop/api/Strmif/nn-strmif-ivmrmixerbitmap) no VMR-7 ou na interface [**IVMRMixerBitmap9**](/previous-versions/windows/desktop/api/Vmr9/nn-vmr9-ivmrmixerbitmap9) no VMR-9.
+Para definir o bitmap, use a interface [**IVMRMixerBitmap**](/windows/desktop/api/Strmif/nn-strmif-ivmrmixerbitmap) na interface VMR-7 ou [**IVMRMixerBitmap9**](/previous-versions/windows/desktop/api/Vmr9/nn-vmr9-ivmrmixerbitmap9) na VMR-9.
 
-O bitmap pode ser especificado por um identificador para um contexto de dispositivo GDI (hDC) ou por uma interface de superfície do DirectDraw. Se o aplicativo quiser que a imagem contenha informações alfa incorporadas (também conhecidas por pixel alfa), ele deverá posicionar os dados da imagem em uma interface de superfície do DirectDraw. Isso ocorre porque atualmente não é possível inserir informações alfa por pixel com um contexto de dispositivo GDI. A superfície do DirectDraw deve ser RGB32 ou ARGB32, e, preferencialmente, ser uma superfície de memória do sistema. Não é necessário que as dimensões da superfície sejam uma potência de 2.
+O bitmap pode ser especificado por um handle para um hDC (Contexto de Dispositivo GDI) ou por uma interface do DirectDraw Surface. Se o aplicativo quiser que a imagem contenha informações alfa inseridas (também conhecidas como alfa por pixel), ele deverá colocar os dados de imagem em uma interface do DirectDraw Surface. Isso ocorre porque, no momento, não é possível colocar informações alfa por pixel com um contexto de dispositivo GDI. A superfície do DirectDraw deve ser RGB32 ou ARGB32 e, preferencialmente, ser uma superfície de memória do sistema. Não é necessário que as dimensões da superfície sejam uma potência de 2.
 
-O VMR permite que os aplicativos especifiquem o local e um valor de transparência geral para a imagem. O código a seguir mostra como transmitir dados de imagem para o VMR para mesclagem subsequente:
+A VMR permite que os aplicativos especifiquem o local e um valor de transparência geral para a imagem. O código a seguir mostra como passar dados de imagem para a VMR para mesclagem subsequente:
 
 
 ```C++
@@ -98,23 +98,23 @@ HRESULT BlendApplicationImage(
 
 
 
-Os conceitos abordados neste tópico são demonstrados no [exemplo](vmrplayer-sample.md) de aplicativo de exemplo VMRPlayer.
+Os conceitos discutidos neste tópico são demonstrados no aplicativo de exemplo [de exemplo VMRPlayer.](vmrplayer-sample.md)
 
-**Criando animações simples com a imagem de bitmap**
+**Criando animações simples com a imagem bitmap**
 
 Para criar um logotipo de bitmap animado simples, coloque todos os "quadros" de bitmap em uma única imagem, conforme mostrado na ilustração a seguir.
 
-![faixa de imagem do VMR](images/vmr-image-strip.png)
+![faixa de imagem vmr](images/vmr-image-strip.png)
 
-Quando você definir o bitmap inicialmente usando [**IVMRMixerBitmap:: SetAlphaBitmap**](/windows/desktop/api/Strmif/nf-strmif-ivmrmixerbitmap-setalphabitmap), se o bitmap estiver em um HDC, defina o campo **RSrc** da estrutura **VMRALPHABITMAP** para especificar o tamanho do bitmap inteiro dentro do HDC. Os membros **superior** e **esquerdo** da estrutura são definidos como 0 e os membros **direito** e **inferior** são a largura e a altura do bitmap. Se o bitmap estiver em uma superfície do DirectDraw, o tamanho da superfície será conhecido e, portanto, não será necessário especificar rSrc nesse método.
+Quando você definir o bitmap inicialmente usando [**IVMRMixerBitmap::SetAlphaBitmap**](/windows/desktop/api/Strmif/nf-strmif-ivmrmixerbitmap-setalphabitmap), se o bitmap estiver em um HDC, de definido o **campo rSrc** da estrutura **VMRALPHABITMAP** para especificar o tamanho de todo o bitmap dentro do HDC. Os **membros** superior **e** esquerdo da estrutura são  definidos  como 0 e os membros direito e inferior são a largura e a altura do bitmap. Se o bitmap estiver em uma superfície directDraw, o tamanho da superfície será conhecido, portanto, não há necessidade de especificar rSrc nesse método.
 
-Ao chamar [**IVMRMixerBitmap:: UpdateAlphaBitmapParameters**](/windows/desktop/api/Strmif/nf-strmif-ivmrmixerbitmap-updatealphabitmapparameters), use o membro **rsrc** para os bitmaps hDC e DirectDraw, para especificar o quadro ou retângulo específico dentro da imagem que você deseja exibir e defina o sinalizador **VMRBITMAP \_ SRCRECT** no membro **dwFlags** .
+Ao chamar [**IVMRMixerBitmap::UpdateAlphaBitmapParameters**](/windows/desktop/api/Strmif/nf-strmif-ivmrmixerbitmap-updatealphabitmapparameters), use o membro **rSrc** para bitmaps HDC e DirectDraw, para especificar o quadro ou retângulo específico dentro da imagem que você deseja exibir e definir o sinalizador **\_ SRCRECT VMRBITMAP** no membro **dwFlags.**
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Usando o modo de mixagem do VMR](using-vmr-mixing-mode.md)
+[Usando o modo de combinação de VMR](using-vmr-mixing-mode.md)
 </dt> </dl>
 
  

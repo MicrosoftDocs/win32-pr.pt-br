@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 466c344892f2c4bf4a1e979ac9c1f50cd709325a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 043138fd82f5d5423703e860c5811f3e21b8513adb7bb4238ad6d6f7fa7215cd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119439876"
 ---
 # <a name="setmtu-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetMTU da classe Win32 \_ NetworkAdapterConfiguration
 
@@ -49,7 +49,7 @@ MTU (unidade máxima de transmissão) padrão para uma interface de rede. O inte
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (uma) para uma conclusão bem-sucedida quando uma reinicialização é necessária e um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) or [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -321,7 +321,7 @@ Parâmetro fora dos limites.
 
 91
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -379,7 +379,7 @@ Interface não configurável.
 
 </dd> <dt>
 
-**Nem todas as concessões DHCP puderam ser liberadas/renovadas**
+**Nem todas as concessões DHCP podem ser liberadas/renovadas**
 </dt> <dd>
 
 98
@@ -406,13 +406,13 @@ O DHCP não está habilitado no adaptador.
 
 ## <a name="remarks"></a>Comentários
 
-O MTU é o tamanho máximo do pacote (em bytes) que um transporte transmitirá pela rede subjacente. O tamanho inclui o cabeçalho de transporte.
+A MTU é o tamanho máximo do pacote (em bytes) que um transporte transmitirá pela rede subjacente. O tamanho inclui o header de transporte.
 
-Observe que um datagrama IP pode abranger vários pacotes. Valores maiores que o padrão para a rede subjacente resultam no transporte usando a MTU padrão de rede. Valores menores que 68 resultam no transporte usando um MTU de 68.
+Observe que um datagrama IP pode abranger vários pacotes. Valores maiores que o padrão para a rede subjacente resultam no transporte usando a MTU padrão de rede. Valores menores que 68 resultam no transporte usando uma MTU de 68.
 
 ## <a name="examples"></a>Exemplos
 
-A amostra [Modificar o MTU para todos os adaptadores de rede](https://Gallery.TechNet.Microsoft.Com/49c26363-d46c-4288-9c8d-feb0a1982998) do VBScript configura a unidade de transmissão máxima para todos os adaptadores de rede instalados em um computador.
+O [exemplo Modificar a MTU para](https://Gallery.TechNet.Microsoft.Com/49c26363-d46c-4288-9c8d-feb0a1982998) todos os adaptadores de rede VBScript configura a unidade de transmissão máxima para todos os adaptadores de rede instalados em um computador.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -422,8 +422,8 @@ A amostra [Modificar o MTU para todos os adaptadores de rede](https://Gallery.Te
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -435,13 +435,13 @@ A amostra [Modificar o MTU para todos os adaptadores de rede](https://Gallery.Te
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tarefas do WMI: rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tarefas WMI: Rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Tarefas do WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Tarefas WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Suporte a IPv6 e IPv4 no WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

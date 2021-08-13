@@ -1,15 +1,15 @@
 ---
-description: As sequências de ação sugeridas para uma tabela InstalUISequence básica em um banco de dados Windows Installer.
+description: as sequências de ação sugeridas para uma tabela InstalUISequence básica em um banco de dados Windows Installer.
 ms.assetid: f1ddad1e-c075-4054-aa24-f1acdc72da96
 title: InstallUISequence sugerido
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1accfc889d51cb75b3928df60931c848b30bcad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eab5c65ed594cf86f86555de235d0ceb0530b9f3e233bfdf5c38d094ca9719a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105751626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118624328"
 ---
 # <a name="suggested-installuisequence"></a>InstallUISequence sugerido
 

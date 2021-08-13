@@ -1,19 +1,19 @@
 ---
-description: Windows Installer executa as seguintes ações durante a instalação de um aplicativo quando o pacote contém componentes isolados. Normalmente, \_ o componente compartilhado é uma DLL que é compartilhada por \_ aplicativo de componente e outros executáveis do cliente.
+description: Windows O instalador executa as seguintes ações durante a instalação de um aplicativo quando o pacote contém componentes isolados. Normalmente, \_ o componente compartilhado é uma DLL que é compartilhada por \_ aplicativo de componente e outros executáveis do cliente.
 ms.assetid: fbc5dd86-5d38-4ce8-ab38-03c84cc77e80
 title: Instalação de componentes isolados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3c1b9a7e21c212474701409e887d0afd5517774
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 82f842f626775dce436abedace96549fd55079c577885aad81492df861cd1a68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118634121"
 ---
 # <a name="installation-of-isolated-components"></a>Instalação de componentes isolados
 
-Windows Installer executa as seguintes ações durante a instalação de um aplicativo quando o pacote contém componentes isolados. Normalmente, \_ o componente compartilhado é uma DLL que é compartilhada por \_ aplicativo de componente e outros executáveis do cliente.
+Windows O instalador executa as seguintes ações durante a instalação de um aplicativo quando o pacote contém componentes isolados. Normalmente, \_ o componente compartilhado é uma DLL que é compartilhada por \_ aplicativo de componente e outros executáveis do cliente.
 
 ## <a name="installation"></a>Instalação
 

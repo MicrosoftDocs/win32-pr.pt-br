@@ -1,5 +1,5 @@
 ---
-description: Obtém as interfaces de extensão que podem vir com um driver de dispositivo de aquisição de imagem do Windows (WIA) 2,0.
+description: obtém as interfaces de extensão que podem vir com um driver de dispositivo de aquisição de Windows Image (WIA) 2,0.
 ms.assetid: 70f20f33-905c-4a88-8065-1cf876e98302
 title: 'Método IWiaItem2:: GetExtension (WIA. h)'
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 2fea4c4b9a2dd909b7ec49097ee94664b47f7e47
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c9738afe60d79b73149c9dd7dda8c3bbd1017c3b41d023b47160b624bcd7c8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119450406"
 ---
 # <a name="iwiaitem2getextension-method"></a>Método IWiaItem2:: GetExtension
 
-Obtém as interfaces de extensão que podem vir com um driver de dispositivo de aquisição de imagem do Windows (WIA) 2,0.
+obtém as interfaces de extensão que podem vir com um driver de dispositivo de aquisição de Windows Image (WIA) 2,0.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -89,7 +89,7 @@ Recebe o endereço de um ponteiro para a interface de extensão.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -156,8 +156,8 @@ CreateSegmentationFilter(
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
 | parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
 

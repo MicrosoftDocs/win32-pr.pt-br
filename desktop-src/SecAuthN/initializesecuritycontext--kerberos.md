@@ -1,21 +1,21 @@
 ---
-description: Inicia o lado do cliente, [*contexto de segurança*](../secgloss/s-gly.md) de saída de um identificador de credencial usando a [*delegação restrita*](../secgloss/s-gly.md)de Kerberos.
+description: Inicia o contexto de [](../secgloss/s-gly.md) segurança de saída do lado do cliente de um handle de credencial usando a delegação restrita de Kerberos [](../secgloss/s-gly.md).
 ms.assetid: b5c968dc-9343-44ed-acbc-a89c58c14e4a
-title: Função InitializeSecurityContext (Kerberos) (SSPI. h)
+title: Função InitializeSecurityContext (Kerberos) (Sspi.h)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: c86b5a5b00798ced6c2881a89a35830ad1fff889
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2a88fd930e58be418afa9d508adf9cda73912a8c0c5ea6731c06af5ec41a997
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119482596"
 ---
 # <a name="initializesecuritycontext-kerberos-function"></a>Função InitializeSecurityContext (Kerberos)
 
-A função **InitializeSecurityContext (Kerberos)** inicia o lado do cliente, [*contexto de segurança*](../secgloss/s-gly.md) de saída de um identificador de credencial. A função é usada para criar um [*contexto de segurança*](../secgloss/s-gly.md) entre o aplicativo cliente e um par remoto. **InitializeSecurityContext (Kerberos)** retorna um token que o cliente deve passar para o par remoto, que o par, por sua vez, envia para a implementação de segurança local por meio da chamada de [**AcceptSecurityContext (Kerberos)**](acceptsecuritycontext--kerberos.md) . O token gerado deve ser considerado opaco por todos os chamadores.
+A **função InitializeSecurityContext (Kerberos)** inicia o contexto de segurança de saída do lado do cliente [*de*](../secgloss/s-gly.md) um handle de credencial. A função é usada para criar um contexto [*de segurança*](../secgloss/s-gly.md) entre o aplicativo cliente e um par remoto. **InitializeSecurityContext (Kerberos)** retorna um token que o cliente deve passar para o par remoto, que o par, por sua vez, envia para a implementação de segurança local por meio da chamada [**AcceptSecurityContext (Kerberos).**](acceptsecuritycontext--kerberos.md) O token gerado deve ser considerado opaco por todos os chamadores.
 
-Normalmente, a função **InitializeSecurityContext (Kerberos)** é chamada em um loop até que um [*contexto de segurança*](../secgloss/s-gly.md) suficiente seja estabelecido.
+Normalmente, a **função InitializeSecurityContext (Kerberos)** é chamada em um loop até que um contexto de [*segurança suficiente*](../secgloss/s-gly.md) seja estabelecido.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,102 +43,102 @@ SECURITY_STATUS SEC_Entry InitializeSecurityContext(
 
 <dl> <dt>
 
-*phCredential* \[ em, opcional\]
+*phCredential* \[ in, opcional\]
 </dt> <dd>
 
-Um identificador para as credenciais retornadas por [**falha AcquireCredentialsHandle (Kerberos)**](acquirecredentialshandle--kerberos.md). Esse identificador é usado para criar o [*contexto de segurança*](../secgloss/s-gly.md). A função **InitializeSecurityContext (Kerberos)** requer pelo menos credenciais de saída.
+Um identificador para as credenciais retornadas [**por AcquireCredentialsHandle (Kerberos)**](acquirecredentialshandle--kerberos.md). Esse handle é usado para criar o contexto [*de segurança*](../secgloss/s-gly.md). A **função InitializeSecurityContext (Kerberos)** requer pelo menos credenciais de SAÍDA.
 
 </dd> <dt>
 
-*phContext* \[ em, opcional\]
+*phContext* \[ in, opcional\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura [CtxtHandle](sspi-handles.md) . Na primeira chamada para **InitializeSecurityContext (Kerberos)**, esse ponteiro é **nulo**. Na segunda chamada, esse parâmetro é um ponteiro para o identificador para o contexto formado parcialmente retornado no parâmetro *phNewContext* pela primeira chamada.
+Um ponteiro para uma [estrutura CtxtHandle.](sspi-handles.md) Na primeira chamada para **InitializeSecurityContext (Kerberos),** esse ponteiro é **NULL.** Na segunda chamada, esse parâmetro é um ponteiro para o alçamento para o contexto parcialmente formado retornado no parâmetro *phNewContext* pela primeira chamada.
 
 </dd> <dt>
 
-*pszTargetName* \[ no\]
+*pszTargetName* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma cadeia de caracteres terminada em nulo que indica o nome da entidade de serviço (SPN) ou o [*contexto de segurança*](../secgloss/s-gly.md) do servidor de destino.
+Um ponteiro para uma cadeia de caracteres terminada em nulo que indica o SPN (nome da entidade de serviço) ou o contexto [*de*](../secgloss/s-gly.md) segurança do servidor de destino.
 
-Use um nome de destino totalmente qualificado porque não há suporte para nomes curtos em florestas.
+Use um nome de destino totalmente qualificado porque não há suporte para nomes curtos entre florestas.
 
 </dd> <dt>
 
-*fContextReq* \[ no\]
+*fContextReq* \[ Em\]
 </dt> <dd>
 
-Sinalizadores de bits que indicam solicitações para o contexto. Nem todos os pacotes podem dar suporte a todos os requisitos. Os sinalizadores usados para esse parâmetro são prefixados com o \_ req \_ do ISC, por exemplo, delegado de req do ISC \_ \_ . Esse parâmetro pode ser um ou mais dos seguintes sinalizadores de atributos.
+Sinalizadores de bits que indicam solicitações para o contexto. Nem todos os pacotes podem dar suporte a todos os requisitos. Sinalizadores usados para esse parâmetro são prefixados com ISC \_ REQ \_ , por exemplo, ISC \_ REQ \_ DELEGATE. Esse parâmetro pode ser um ou mais dos sinalizadores de atributos a seguir.
 
 
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th>Valor</th><th>Significado</th></tr></thead><tbody><tr class="odd"><td><span id="ISC_REQ_ALLOCATE_MEMORY"></span><span id="isc_req_allocate_memory"></span><dl> <dt><strong>ISC_REQ_ALLOCATE_MEMORY</strong></dt> </dl></td><td>O [*pacote de segurança*](../secgloss/s-gly.md) aloca buffers de saída para você. Quando você terminar de usar os buffers de saída, libere-os chamando a função [<strong>FreeContextBuffer</strong>] (/Windows/Win32/API/SSPI/NF-SSPI-FreeContextBuffer).<br/></td></tr><tr class="even"><td><span id="ISC_REQ_CONFIDENTIALITY"></span><span id="isc_req_confidentiality"></span><dl> <dt><strong>ISC_REQ_CONFIDENTIALITY</strong></dt> </dl></td><td>Criptografe mensagens usando a função [<strong>EncryptMessage</strong>] (EncryptMessage--General.MD).<br/></td></tr><tr class="odd"><td><span id="ISC_REQ_CONNECTION"></span><span id="isc_req_connection"></span><dl> <dt><strong>ISC_REQ_CONNECTION</strong></dt> </dl></td><td>O [*contexto de segurança*](../secgloss/s-gly.md) não tratará mensagens de formatação. Esse valor é o padrão.<br/></td></tr><tr class="even"><td><span id="ISC_REQ_DELEGATE"></span><span id="isc_req_delegate"></span><dl> <dt><strong>ISC_REQ_DELEGATE</strong></dt> </dl></td><td>O servidor pode usar o contexto para autenticar em outros servidores como o cliente. O sinalizador de ISC_REQ_MUTUAL_AUTH deve ser definido para que esse sinalizador funcione. Válido para Kerberos. Ignore este sinalizador para [*delegação restrita*](../secgloss/c-gly.md).<br/></td></tr><tr class="odd"><td><span id="ISC_REQ_EXTENDED_ERROR"></span><span id="isc_req_extended_error"></span><dl> <dt><strong>ISC_REQ_EXTENDED_ERROR</strong></dt> </dl></td><td>Quando ocorrerem erros, a parte remota será notificada.<br/></td></tr><tr class="even"><td><span id="ISC_REQ_INTEGRITY"></span><span id="isc_req_integrity"></span><dl> <dt><strong>ISC_REQ_INTEGRITY</strong></dt> </dl></td><td>Assine mensagens e verifique as assinaturas usando as funções [<strong>EncryptMessage</strong>] (EncryptMessage--General.MD) e [<strong>MakeSignature</strong>] (MakeSignature.MD).<br/></td></tr><tr class="odd"><td><span id="ISC_REQ_MUTUAL_AUTH"></span><span id="isc_req_mutual_auth"></span><dl> <dt><strong>ISC_REQ_MUTUAL_AUTH</strong></dt> </dl></td><td>A política de autenticação mútua do serviço será satisfeita.<br/><blockquote>[!Caution]<br />
-Isso não significa necessariamente que a autenticação mútua seja executada, apenas que a política de autenticação do serviço seja satisfeita. Para garantir que a autenticação mútua seja executada, chame a função [<strong>QueryContextAttributes (Kerberos)</strong>] (QueryContextAttributes--Kerberos.MD).</blockquote><br/></td></tr><tr class="even"><td><span id="ISC_REQ_NO_INTEGRITY"></span><span id="isc_req_no_integrity"></span><dl> <dt><strong>ISC_REQ_NO_INTEGRITY</strong></dt> </dl></td><td>Se esse sinalizador for definido, o sinalizador de <strong>ISC_REQ_INTEGRITY</strong> será ignorado.<br/></td></tr><tr class="odd"><td><span id="ISC_REQ_REPLAY_DETECT"></span><span id="isc_req_replay_detect"></span><dl> <dt><strong>ISC_REQ_REPLAY_DETECT</strong></dt> </dl></td><td>Detectar as mensagens reproduzidas que foram codificadas usando as funções [<strong>EncryptMessage</strong>] (EncryptMessage--General.MD) ou [<strong>MakeSignature</strong>] (MakeSignature.MD).<br/></td></tr><tr class="even"><td><span id="ISC_REQ_SEQUENCE_DETECT"></span><span id="isc_req_sequence_detect"></span><dl> <dt><strong>ISC_REQ_SEQUENCE_DETECT</strong></dt> </dl></td><td>Detecte mensagens recebidas fora de sequência.<br/></td></tr><tr class="odd"><td><span id="ISC_REQ_STREAM"></span><span id="isc_req_stream"></span><dl> <dt><strong>ISC_REQ_STREAM</strong></dt> </dl></td><td>Suporte a uma conexão orientada a fluxo.<br/></td></tr><tr class="even"><td><span id="ISC_REQ_USE_SESSION_KEY"></span><span id="isc_req_use_session_key"></span><dl> <dt><strong>ISC_REQ_USE_SESSION_KEY</strong></dt> </dl></td><td>Uma nova [*chave de sessão*](../secgloss/s-gly.md) deve ser negociada.<br/></td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th>Valor</th><th>Significado</th></tr></thead><tbody><tr class="odd"><td><span id="ISC_REQ_ALLOCATE_MEMORY"></span><span id="isc_req_allocate_memory"></span><dl> <dt><strong>ISC_REQ_ALLOCATE_MEMORY</strong></dt> </dl></td><td>O [*pacote de segurança*](../secgloss/s-gly.md) aloca buffers de saída para você. Quando terminar de usar os buffers de saída, livre-os chamando a função [<strong>FreeContextBuffer</strong>](/windows/win32/api/sspi/nf-sspi-freecontextbuffer).<br/></td></tr><tr class="even"><td><span id="ISC_REQ_CONFIDENTIALITY"></span><span id="isc_req_confidentiality"></span><dl> <dt><strong>ISC_REQ_CONFIDENTIALITY</strong></dt> </dl></td><td>Criptografe mensagens usando a função [<strong>EncryptMessage</strong>](encryptmessage--general.md).<br/></td></tr><tr class="odd"><td><span id="ISC_REQ_CONNECTION"></span><span id="isc_req_connection"></span><dl> <dt><strong>ISC_REQ_CONNECTION</strong></dt> </dl></td><td>O [*contexto de segurança*](../secgloss/s-gly.md) não manipulará mensagens de formatação. Esse valor é o padrão.<br/></td></tr><tr class="even"><td><span id="ISC_REQ_DELEGATE"></span><span id="isc_req_delegate"></span><dl> <dt><strong>ISC_REQ_DELEGATE</strong></dt> </dl></td><td>O servidor pode usar o contexto para autenticar em outros servidores como o cliente. O sinalizador ISC_REQ_MUTUAL_AUTH deve ser definido para que esse sinalizador funcione. Válido para Kerberos. Ignore esse sinalizador para [*delegação restrita.*](../secgloss/c-gly.md)<br/></td></tr><tr class="odd"><td><span id="ISC_REQ_EXTENDED_ERROR"></span><span id="isc_req_extended_error"></span><dl> <dt><strong>ISC_REQ_EXTENDED_ERROR</strong></dt> </dl></td><td>Quando ocorrerem erros, a parte remota será notificada.<br/></td></tr><tr class="even"><td><span id="ISC_REQ_INTEGRITY"></span><span id="isc_req_integrity"></span><dl> <dt><strong>ISC_REQ_INTEGRITY</strong></dt> </dl></td><td>Assine mensagens e verifique assinaturas usando as funções [<strong>EncryptMessage</strong>](encryptmessage--general.md) e [<strong>MakeSignature</strong>](makesignature.md).<br/></td></tr><tr class="odd"><td><span id="ISC_REQ_MUTUAL_AUTH"></span><span id="isc_req_mutual_auth"></span><dl> <dt><strong>ISC_REQ_MUTUAL_AUTH</strong></dt> </dl></td><td>A política de autenticação mútua do serviço será atendida.<br/><blockquote>[!Caution]<br />
+Isso não significa necessariamente que a autenticação mútua seja executada, apenas que a política de autenticação do serviço é atendida. Para garantir que a autenticação mútua seja executada, chame a função [<strong>QueryContextAttributes (Kerberos)</strong>](querycontextattributes--kerberos.md).</blockquote><br/></td></tr><tr class="even"><td><span id="ISC_REQ_NO_INTEGRITY"></span><span id="isc_req_no_integrity"></span><dl> <dt><strong>ISC_REQ_NO_INTEGRITY</strong></dt> </dl></td><td>Se esse sinalizador for definido, o <strong>ISC_REQ_INTEGRITY</strong> será ignorado.<br/></td></tr><tr class="odd"><td><span id="ISC_REQ_REPLAY_DETECT"></span><span id="isc_req_replay_detect"></span><dl> <dt><strong>ISC_REQ_REPLAY_DETECT</strong></dt> </dl></td><td>Detecte mensagens reprodução codificadas usando as funções [<strong>EncryptMessage</strong>](encryptmessage--general.md) ou [<strong>MakeSignature</strong>](makesignature.md).<br/></td></tr><tr class="even"><td><span id="ISC_REQ_SEQUENCE_DETECT"></span><span id="isc_req_sequence_detect"></span><dl> <dt><strong>ISC_REQ_SEQUENCE_DETECT</strong></dt> </dl></td><td>Detectar mensagens recebidas fora de sequência.<br/></td></tr><tr class="odd"><td><span id="ISC_REQ_STREAM"></span><span id="isc_req_stream"></span><dl> <dt><strong>ISC_REQ_STREAM</strong></dt> </dl></td><td>Dar suporte a uma conexão orientada a fluxo.<br/></td></tr><tr class="even"><td><span id="ISC_REQ_USE_SESSION_KEY"></span><span id="isc_req_use_session_key"></span><dl> <dt><strong>ISC_REQ_USE_SESSION_KEY</strong></dt> </dl></td><td>Uma nova [*chave de sessão*](../secgloss/s-gly.md) deve ser negociada.<br/></td></tr></tbody></table>
 
 
 
  
 
-Os atributos solicitados podem não ter suporte do cliente. Para obter mais informações, consulte o parâmetro *pfContextAttr* .
+Os atributos solicitados podem não ser suportados pelo cliente. Para obter mais informações, consulte o *parâmetro pfContextAttr.*
 
-Para obter descrições adicionais dos vários atributos, consulte [requisitos de contexto](context-requirements.md).
+Para saber mais sobre os vários atributos, confira [Requisitos de contexto.](context-requirements.md)
 
 </dd> <dt>
 
-*Reserved1* \[ no\]
+*Reservado1* \[ Em\]
 </dt> <dd>
 
 Esse parâmetro é reservado e deve ser definido como zero.
 
 </dd> <dt>
 
-*TargetDataRep* \[ no\]
+*TargetDataRep* \[ Em\]
 </dt> <dd>
 
-A representação de dados, como ordenação de bytes, no destino. Esse parâmetro pode ser segurança \_ nativa \_ DREP ou segurança de \_ rede \_ DREP.
+A representação de dados, como ordenação de byte, no destino. Esse parâmetro pode ser SECURITY \_ NATIVE \_ DREP ou SECURITY \_ NETWORK \_ DREP.
 
 </dd> <dt>
 
-*pInput* \[ em, opcional\]
+*pInput* \[ in, opcional\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**SecBufferDesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) que contém ponteiros para os buffers fornecidos como entrada para o pacote. A menos que o contexto do cliente tenha sido iniciado pelo servidor, o valor desse parâmetro deve ser **nulo** na primeira chamada para a função. Nas chamadas subsequentes para a função ou quando o contexto do cliente foi iniciado pelo servidor, o valor desse parâmetro é um ponteiro para um buffer alocado com memória suficiente para conter o token retornado pelo computador remoto.
+Um ponteiro para uma [**estrutura SecBufferDesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) que contém ponteiros para os buffers fornecidos como entrada para o pacote. A menos que o contexto do cliente tenha sido iniciado pelo servidor, o valor desse parâmetro deve ser **NULL** na primeira chamada para a função. Em chamadas subsequentes para a função ou quando o contexto do cliente foi iniciado pelo servidor, o valor desse parâmetro é um ponteiro para um buffer alocado com memória suficiente para manter o token retornado pelo computador remoto.
 
 </dd> <dt>
 
-*Reserved2* \[ no\]
+*Reservado2* \[ Em\]
 </dt> <dd>
 
 Esse parâmetro é reservado e deve ser definido como zero.
 
 </dd> <dt>
 
-*phNewContext* \[ entrada, saída, opcional\]
+*phNewContext* \[ in, out, opcional\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura [CtxtHandle](sspi-handles.md) . Na primeira chamada para **InitializeSecurityContext (Kerberos)**, esse ponteiro recebe o novo identificador de contexto. Na segunda chamada, *phNewContext* pode ser o mesmo que o identificador especificado no parâmetro *phContext* .
+Um ponteiro para uma [estrutura CtxtHandle.](sspi-handles.md) Na primeira chamada para **InitializeSecurityContext (Kerberos),** esse ponteiro recebe o novo indicador de contexto. Na segunda chamada, *phNewContext* pode ser o mesmo que o handle especificado no *parâmetro phContext.*
 
 </dd> <dt>
 
-*pOutput* \[ entrada, saída, opcional\]
+*pOutput* \[ in, out, opcional\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**SecBufferDesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) que contém ponteiros para a estrutura [**SecBuffer**](/windows/win32/api/sspi/ns-sspi-secbuffer) que recebe os dados de saída. Se um buffer tiver sido digitado como s \_ ReadWrite na entrada, ele estará lá na saída. O sistema alocará um buffer para o token de segurança, se solicitado (por meio da ISC, \_ \_ aloque a \_ memória) e preencherá o endereço no descritor de buffer para o token de segurança.
+Um ponteiro para uma [**estrutura SecBufferDesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) que contém ponteiros para a estrutura [**SecBuffer**](/windows/win32/api/sspi/ns-sspi-secbuffer) que recebe os dados de saída. Se um buffer tiver sido digitado como SEC \_ READWRITE na entrada, ele estará lá na saída. O sistema alocará um buffer para o token de segurança se solicitado (por meio de ISC \_ REQ ALLOCATE MEMORY) e preencherá o endereço no descritor de buffer para o \_ \_ token de segurança.
 
 </dd> <dt>
 
-*pfContextAttr* \[ fora\]
+*pfContextAttr* \[ out\]
 </dt> <dd>
 
-Um ponteiro para uma variável para receber um conjunto de sinalizadores de bits que indicam os [*atributos*](../secgloss/a-gly.md#_security_attribute_gly) do contexto estabelecido. Para obter uma descrição dos vários atributos, consulte [requisitos de contexto](context-requirements.md).
+Um ponteiro para uma variável para receber um conjunto de sinalizadores de bits que indicam os [*atributos*](../secgloss/a-gly.md#_security_attribute_gly) do contexto estabelecido. Para ver uma descrição dos vários atributos, confira [Requisitos de contexto.](context-requirements.md)
 
-Os sinalizadores usados para esse parâmetro são prefixados com ISC \_ RET, como o delegado da ISC \_ RET \_ . Para obter uma lista de valores válidos, consulte o parâmetro *fContextReq* .
+Sinalizadores usados para esse parâmetro são prefixados com ISC \_ RET, como ISC \_ RET \_ DELEGATE. Para ver uma lista de valores válidos, consulte o *parâmetro fContextReq.*
 
-Não verifique os atributos relacionados à segurança até que a chamada de função final seja retornada com êxito. Os sinalizadores de atributo que não estão relacionados à segurança, como o \_ \_ sinalizador de memória alocada de ASC RET \_ , podem ser verificados antes do retorno final.
+Não verifique se há atributos relacionados à segurança até que a chamada de função final retorne com êxito. Sinalizadores de atributo que não estão relacionados à segurança, como o sinalizador ASC \_ RET ALLOCATED MEMORY, podem ser verificados \_ antes do retorno \_ final.
 
 > [!Note]  
-> Determinados atributos de contexto podem ser alterados durante a negociação com um par remoto.
+> Atributos de contexto específicos podem mudar durante a negociação com um par remoto.
 
  
 
@@ -147,11 +147,11 @@ Não verifique os atributos relacionados à segurança até que a chamada de fun
 *ptsExpiry* \[ out, opcional\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura de [**carimbo de data/**](timestamp.md) hora que recebe o tempo de expiração do contexto. É recomendável que o [*pacote de segurança*](../secgloss/s-gly.md) sempre retorne esse valor na hora local. Como esse parâmetro é opcional, **NULL** deve ser passado para clientes de curta duração.
+Um ponteiro para uma [**estrutura TimeStamp**](timestamp.md) que recebe a hora de expiração do contexto. Recomendamos que o [*pacote de segurança*](../secgloss/s-gly.md) sempre retorne esse valor no horário local. Como esse parâmetro é opcional, **NULL** deve ser passado para clientes de curta duração.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, a função retornará um dos códigos de êxito a seguir.
 
@@ -159,7 +159,7 @@ Se a função for bem-sucedida, a função retornará um dos códigos de êxito 
 
 | Código de retorno                                                                                                    | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**s \_ E \_ OK**</dt> </dl>                      | O [*contexto de segurança*](../secgloss/s-gly.md) foi inicializado com êxito. Não há necessidade de outra chamada de [**InitializeSecurityContext (Kerberos)**](initializesecuritycontext--kerberos.md) . Se a função retornar um token de saída, ou seja, se o \_ token SECBUFFER em *pOutput* for de comprimento diferente de zero, esse token deverá ser enviado ao servidor.<br/> |
+| <dl> <dt>**SEC \_ E \_ OK**</dt> </dl>                      | O [*contexto de segurança*](../secgloss/s-gly.md) foi inicializado com êxito. Não há necessidade de outra [**chamada InitializeSecurityContext (Kerberos).**](initializesecuritycontext--kerberos.md) Se a função retornar um token de saída, ou seja, se o \_ token SECBUFFER em *pOutput* for de comprimento diferente de zero, esse token deverá ser enviado ao servidor.<br/> |
 | <dl> <dt>**s \_ I \_ concluir \_ e \_ continuar**</dt> </dl> | O cliente deve chamar [**CompleteAuthToken**](/windows/win32/api/sspi/nf-sspi-completeauthtoken) e, em seguida, passar a saída para o servidor. Em seguida, o cliente aguarda um token retornado e o passa, em outra chamada, para [**InitializeSecurityContext (Kerberos)**](initializesecuritycontext--kerberos.md).<br/>                                                                                                                                  |
 | <dl> <dt>**s \_ \_ conclusão \_ necessária**</dt> </dl>        | O cliente deve concluir a compilação da mensagem e, em seguida, chamar a função [**CompleteAuthToken**](/windows/win32/api/sspi/nf-sspi-completeauthtoken) .<br/>                                                                                                                                                                                                                                                                                           |
 | <dl> <dt>**s \_ I \_ continuar \_ necessário**</dt> </dl>        | O cliente deve enviar o token de saída para o servidor e aguardar um token de retorno. O token retornado é passado em outra chamada para [**InitializeSecurityContext (Kerberos)**](initializesecuritycontext--kerberos.md). O token de saída pode estar vazio.<br/>                                                                                                                                                       |
@@ -241,8 +241,8 @@ Os chamadores de modo kernel têm as seguintes diferenças: o nome de destino é
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                   |
 | parâmetro<br/>                   | <dl> <dt>SSPI. h (incluir Security. h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Secur32. lib</dt> </dl>                 |
 | DLL<br/>                      | <dl> <dt>Secur32.dll</dt> </dl>                 |

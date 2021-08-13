@@ -4,12 +4,12 @@ description: Uma coleção de unidades biométricas reservadas para uso exclusiv
 ms.assetid: f0ccbafd-e7a8-4389-bd05-0b062dfc4dc0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf829290b0e412247b5e629a46e8c0efdafb4880
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 306f4e0d4e28cfb29dda694e835348721113a5c23ec51054169537282ae2c365
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104160365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119480436"
 ---
 # <a name="private-sensor-pool"></a>Pool de sensores privado
 
@@ -22,7 +22,7 @@ Um pool de sensores privado é uma coleção de unidades biométricas reservadas
 
 Pools de sensores privados devem ser usados se o aplicativo cliente:
 
--   Gerencia uma coleção de unidades biométricas dedicadas que usam um banco de dados de modelo específico do aplicativo. Por exemplo, considere um aplicativo de participação de funcionário em que os funcionários sinalizam sua chegada no trabalho passando o dedo em um leitor de impressão digital. Os funcionários não têm contas do Windows no computador que executa o aplicativo. Em vez disso, suas impressões digitais são identificadas por GUIDs gerenciados pelo aplicativo de participação.
+-   Gerencia uma coleção de unidades biométricas dedicadas que usam um banco de dados de modelo específico do aplicativo. Por exemplo, considere um aplicativo de participação de funcionário em que os funcionários sinalizam sua chegada no trabalho passando o dedo em um leitor de impressão digital. os funcionários não têm contas de Windows no computador que executa o aplicativo. Em vez disso, suas impressões digitais são identificadas por GUIDs gerenciados pelo aplicativo de participação.
 -   Coleta amostras biométricas em vez de simplesmente mapear amostras para SIDs.
 -   Coloca o hardware da unidade biométrica no modo de manutenção para atualizar o firmware.
 -   Envia comandos de controle definidos pelo fornecedor para o hardware ou software da unidade biométrica.
@@ -32,7 +32,7 @@ Pools de sensores privados devem ser usados se o aplicativo cliente:
 > [!Note]  
 > Os aplicativos podem criar pools de sensores privados somente para biometria de impressão digital. Se um aplicativo tentar criar um para qualquer outra coisa (por exemplo, face), a solicitação falhará.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -47,9 +47,9 @@ Pools de sensores privados devem ser usados se o aplicativo cliente:
 [Pool do sensor do sistema](system-sensor-pool.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

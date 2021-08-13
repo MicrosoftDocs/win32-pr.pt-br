@@ -1,53 +1,53 @@
 ---
-title: Encobrimento (COM)
-description: O encobrimento é uma funcionalidade de segurança COM que determina qual identidade o cliente projeta para o servidor durante a representação.
+title: Com (Com)
+description: A identificação é uma funcionalidade de segurança COM que determina qual identidade o cliente projeta em relação ao servidor durante a representação.
 ms.assetid: 5b97d9d6-8fa9-4da2-8351-64772227d9a2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 588651cfa37def4e174ef0f2fdba9b79b0c60ca8
-ms.sourcegitcommit: d39e82e232f6510f843fdb8d55d25b4e9e02e880
+ms.openlocfilehash: 2b5d36ec4561b0cc3290f21f4c46dc338b6df455bc694464812f2274b8c1345f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "103837538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119462940"
 ---
-# <a name="cloaking-com"></a>Encobrimento (COM)
+# <a name="cloaking-com"></a>Com (Com)
 
-O encobrimento é uma funcionalidade de segurança COM que determina qual identidade o cliente projeta para o servidor durante a representação. Quando o encobrimento é definido, o servidor intermediário mascara sua própria identidade e apresenta a identidade do cliente para o servidor que ele chama em nome do cliente. Basicamente a identidade do cliente que é vista pelo servidor é a identidade associada ao proxy. A identidade do proxy é determinada por vários fatores, um dos quais é o tipo de encobrimento definido (se houver). Não há suporte para o encobrimento do provedor de segurança Schannel.
+A identificação é uma funcionalidade de segurança COM que determina qual identidade o cliente projeta em relação ao servidor durante a representação. Quando a reação é definida, o servidor intermediário mascara sua própria identidade e apresenta a identidade do cliente para o servidor que ele chama em nome do cliente. Basicamente, a identidade do cliente vista pelo servidor é a identidade associada ao proxy. A identidade do proxy é determinada por vários fatores, um dos quais é o tipo de reação definida (se for o caso). Não há suporte para a reação de dados pelo provedor de segurança Schannel.
 
-Os tópicos a seguir fornecem mais informações sobre o encobrimento:
+Os tópicos a seguir fornecem mais informações sobre a ressarção:
 
--   [Tipos de encobrimento](#types-of-cloaking)
--   [Como o encobrimento afeta a identidade do cliente](#how-cloaking-affects-client-identity)
--   [Configurando o encobrimento](#setting-cloaking)
--   [Níveis de encobrimento e representação](#cloaking-and-impersonation-levels)
--   [Cenários de encobrimento](#cloaking-scenarios)
+-   [Tipos de ressarção](#types-of-cloaking)
+-   [Como a ressarção afeta a identidade do cliente](#how-cloaking-affects-client-identity)
+-   [Definindo a fixação](#setting-cloaking)
+-   [Níveis de redução e representação](#cloaking-and-impersonation-levels)
+-   [Cenários de ressarção](#cloaking-scenarios)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="types-of-cloaking"></a>Tipos de encobrimento
+## <a name="types-of-cloaking"></a>Tipos de ressarção
 
-Há dois tipos de encobrimento: encobrimento *estático* e encobrimento *dinâmico* :
+Há dois tipos de reação: *desastagem* estática e *reação* dinâmica:
 
--   Com o encobrimento estático \_ ( \_ encobrimento estático EOAC), o servidor vê o token de thread da primeira chamada de um cliente para o servidor. Para a primeira chamada, se a identidade de proxy tiver sido definida anteriormente durante uma chamada para [**CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket), essa identidade de proxy será usada. No entanto, se a identidade de proxy não tiver sido definida anteriormente, o token de thread será usado. Se nenhum token de thread estiver presente, o token de processo será usado. Para todas as chamadas futuras, o conjunto de identidades na primeira chamada é usado.
--   Com o encobrimento dinâmico (EOAC \_ Dynamic \_ encobrimento), em cada chamada, o token de thread atual (se houver um token de thread) é usado para determinar a identidade do cliente. Se não houver nenhum token de thread, o token de processo será usado. Isso significa que os servidores chamados em nome do cliente durante a representação veem a identidade do cliente COM que originou a chamada, que geralmente é o comportamento desejado. (É claro que, para que a representação tenha sucesso, o cliente deve ter dado a autoridade de servidor para representar definindo um nível de representação apropriado. Para obter mais informações, consulte [níveis de representação](impersonation-levels.md).) Esse tipo de encobrimento é caro.
+-   Com a desastagem estática (EOAC STATIC STATIC, o servidor vê o token de thread da primeira chamada de um \_ \_ cliente para o servidor. Para a primeira chamada, se a identidade do proxy tiver sido definida anteriormente durante uma chamada para [**CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket), essa identidade de proxy será usada. No entanto, se a identidade do proxy não tiver sido definida anteriormente, o token de thread será usado. Se nenhum token de thread estiver presente, o token de processo será usado. Para todas as chamadas futuras, a identidade definida na primeira chamada é usada.
+-   Com a desaqueciação dinâmica (EOAC DYNAMIC TAMBÉM), em cada chamada, o token de thread atual (se houver um token de thread) é usado para determinar a identidade \_ \_ do cliente. Se não houver nenhum token de thread, o token de processo será usado. Isso significa que os servidores chamados em nome do cliente durante a representação veem a identidade do cliente COM que originou a chamada, que geralmente é o comportamento desejado. (É claro que, para que a representação seja bem-sucedida, o cliente deve ter dado a autoridade de servidor para representar definindo um nível de representação apropriado. Para obter mais informações, consulte [Níveis de representação](impersonation-levels.md).) Esse tipo de reação é caro.
 
-## <a name="how-cloaking-affects-client-identity"></a>Como o encobrimento afeta a identidade do cliente
+## <a name="how-cloaking-affects-client-identity"></a>Como a ressarção afeta a identidade do cliente
 
-Quando uma chamada criptografada é feita e o servidor solicita sua identidade ao cliente, ele geralmente obtém a identidade vinculada ao proxy. (Às vezes, o serviço de autenticação executa uma conversão da identidade real, mas geralmente a identidade do proxy é a identidade que o servidor vê.) O proxy apresenta uma identidade para o servidor que depende do tipo de encobrimento definido e de outros fatores.
+Quando uma chamada criptografada é feita e o servidor solicita sua identidade ao cliente, ele geralmente obtém a identidade vinculada ao proxy. (Às vezes, o serviço de autenticação executa uma tradução da identidade real, mas geralmente a identidade do proxy é a identidade que o servidor vê.) O proxy apresenta uma identidade para o servidor que depende do tipo de desajuste definido e outros fatores.
 
-Para resumir, a identidade do cliente é uma função do conjunto de sinalizadores de encobrimento, o token do processo, a presença ou a ausência de um token de thread e se a identidade do proxy foi definida anteriormente. A tabela a seguir mostra a identidade de proxy resultante (identidade do cliente) quando esses fatores variam.
+Para resumir, a identidade do cliente é uma função do conjunto de sinalizadores de desaqueamento, o token de processo, a presença ou a ausência de um token de thread e se a identidade do proxy foi definida anteriormente. A tabela a seguir mostra a identidade de proxy resultante (identidade do cliente) quando esses fatores variam.
 
 
 
-| Sinalizadores de encobrimento                     | Presença de token de thread  | Identidade de proxy definida anteriormente | Identidade do proxy (identidade do cliente)                    |
+| Sinalizadores de reação                     | Presença de token de thread  | Identidade de proxy definida anteriormente | Identidade de proxy (identidade do cliente)                    |
 |------------------------------------|------------------------|-------------------------------|-----------------------------------------------------|
-| Encobrimento não definido<br/>        | Não se preocupe<br/>  | Não se preocupe<br/>         | Token de processo ou identidade de autenticação<br/> |
-| \_encobrimento estático EOAC \_<br/>  | Presente<br/>     | No<br/>                 | Token de thread<br/>                             |
-| \_encobrimento estático EOAC \_<br/>  | Presente<br/>     | Yes<br/>                | Identidade do proxy atual<br/>                   |
-| \_encobrimento estático EOAC \_<br/>  | Não está presente<br/> | No<br/>                 | Token de processo<br/>                            |
-| \_encobrimento estático EOAC \_<br/>  | Não está presente<br/> | Yes<br/>                | Identidade do proxy atual<br/>                   |
-| \_encobrimento dinâmico EOAC \_<br/> | Presente<br/>     | Não se preocupe<br/>         | Token de thread<br/>                             |
-| \_encobrimento dinâmico EOAC \_<br/> | Não está presente<br/> | Não se preocupe <br/>        | Token de processo<br/>                            |
+| A reação não está definida<br/>        | Não se preocupe<br/>  | Não se preocupe<br/>         | Processar token ou identidade de autenticação<br/> |
+| EOAC \_ STATIC \_ STATIC STATICING<br/>  | Presente<br/>     | Não<br/>                 | Token de thread<br/>                             |
+| EOAC \_ STATIC \_ STATIC STATICING<br/>  | Presente<br/>     | Sim<br/>                | Identidade de proxy atual<br/>                   |
+| EOAC \_ STATIC \_ STATIC STATICING<br/>  | Não está presente<br/> | Não<br/>                 | Token de processo<br/>                            |
+| EOAC \_ STATIC \_ STATIC STATICING<br/>  | Não está presente<br/> | Sim<br/>                | Identidade de proxy atual<br/>                   |
+| EOAC \_ DYNAMIC QUE ESTÁ SENDO \_ DESACOMPACIADO<br/> | Presente<br/>     | Não se preocupe<br/>         | Token de thread<br/>                             |
+| EOAC \_ DYNAMIC QUE ESTÁ SENDO \_ DESACOMPACIADO<br/> | Não está presente<br/> | Não se preocupe <br/>        | Token de processo<br/>                            |
 
 
 
@@ -57,31 +57,31 @@ O fluxograma a seguir ilustra como a identidade do proxy é determinada em situa
 
 ![Diagrama que mostra o fluxo para determinar a identidade do proxy.](images/9e8409b7-8475-4824-bdff-cf6b09c139c5.png)
 
-## <a name="setting-cloaking"></a>Configurando o encobrimento
+## <a name="setting-cloaking"></a>Definindo a fixação
 
-O encobrimento é definido como um sinalizador de recurso em uma chamada para [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity), que define o encobrimento para todo o processo. Em seguida, o recurso de encobrimento é definido até que o cliente o altere por meio de uma chamada para IClientSecurity::[**setampla**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-setblanket) (ou para [**CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket)), que define o encobrimento para o proxy.
+A fixação é definida como um sinalizador de funcionalidade em uma chamada para [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity), que define a reação de todo o processo. A funcionalidade de fixação é definida até que o cliente o mude por meio de uma chamada para IClientSecurity::[**SetBlanket**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-setblanket) (ou para [**CoSetProxyBlanket),**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket)que define a redução para o proxy.
 
-Por padrão, o encobrimento não está definido. Para defini-lo, passe \_ \_ o encobrimento estático EOAC ou \_ \_ o encobrimento dinâmico EOAC para o [](/windows/win32/api/objidl/nf-objidl-iclientsecurity-setblanket)parâmetro *pCapabilities* em [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) ou.
+Por padrão, a desaquete não está definida. Para defini-lo, passe EOAC \_ STATIC \_ STATICING ou EOAC DYNAMIC CODING para o parâmetro \_ \_ *pCapabilities* em [**CoInitializeSecurity ou**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) [**SetBlanket**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-setblanket).
 
-Quando o encobrimento estático é habilitado usando [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity), cada proxy pega um token (thread ou processo) na primeira vez que você faz uma chamada no proxy. Quando o encobrimento estático é habilitado usando [**setampla**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-setblanket), o proxy pega o token no thread naquele momento. Se nenhum token de thread estiver disponível quando **setampla** for chamado, o token de processo será usado para a identidade do proxy. Basicamente,  corrige a identidade do proxy.
+Quando a estática é habilitada usando [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity), cada proxy escolhe um token (thread ou processo) na primeira vez que você faz uma chamada no proxy. Quando a isenção estática é habilitada usando [**SetBlanket**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-setblanket), o proxy escolhe o token no thread no momento. Se nenhum token de thread estiver disponível quando **SetBlanket** for chamado, o token de processo será usado para a identidade do proxy. Basicamente, **SetBlanket** corrige a identidade do proxy.
 
-Com o encobrimento dinâmico, a identidade do proxy é determinada da mesma forma, independentemente de o encobrimento dinâmico ser definido usando [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) ou com [**setampla**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-setblanket). O token de thread atual será usado se houver um; caso contrário, o token de processo será usado.
+Com a desinformação dinâmica, a identidade do proxy é determinada da mesma maneira, independentemente de a reação dinâmica ser definida usando [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) ou com [**SetBlanket**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-setblanket). O token de thread atual será usado se houver um; caso contrário, o token de processo será usado.
 
-Se o encobrimento estiver definido para todo o processo por meio de uma chamada para [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) e você quiser fazer chamadas com o token do processo, não se represente ao fazer chamadas.
+Se a reação for definida para todo o processo por meio de uma chamada para [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) e você quiser fazer chamadas com o token de processo, não represente ao fazer chamadas.
 
-## <a name="cloaking-and-impersonation-levels"></a>Níveis de encobrimento e representação
+## <a name="cloaking-and-impersonation-levels"></a>Níveis de redução e representação
 
-Conforme mencionado anteriormente, o recurso de encobrimento determina qual identidade é apresentada a um servidor durante a representação. O encobrimento fornece uma maneira de um servidor projetar uma identidade diferente de sua própria para outro servidor que está chamando em nome do cliente. O nível de representação indica a quantidade de autoridade que o cliente atribuiu ao servidor.
+Conforme mencionado anteriormente, a funcionalidade de redução determina qual identidade é apresentada a um servidor durante a representação. A desajuste fornece uma maneira para um servidor projetar uma identidade diferente de sua própria para outro servidor que ele está chamando em nome do cliente. O nível de representação indica a autoridade que o cliente deu ao servidor.
 
-A representação sem encobrir funciona, mas pode não ser a melhor opção porque, em alguns casos, o servidor final precisa saber a identidade do chamador inicial. Isso não pode ser obtido sem o uso do encobrimento porque é difícil garantir que somente clientes autorizados possam acessar um computador remoto. Quando a representação é usada sem encobrimento, a identidade apresentada a um servidor downstream é a do processo de chamada imediata.
+A representação sem desajuste funciona, mas pode não ser a melhor opção porque, em alguns casos, o servidor final precisa saber a identidade do chamador inicial. Isso não pode ser feito sem usar a desarmagem porque é difícil garantir que somente clientes autorizados possam acessar um computador remoto. Quando a representação é usada sem desajuste, a identidade apresentada a um servidor downstream é a do processo de chamada imediata.
 
-No entanto, o encobrimento não é útil sem representação. O encobrimento faz sentido apenas quando o cliente tiver definido um nível de representação de representar ou delegar. (Com níveis inferiores de representação, o servidor não pode fazer chamadas encobertas.) Se o encobrimento for bem-sucedido, dependerá do número de limites do computador cruzado e do nível de representação, que indica a quantidade de autoridade que o servidor deve agir em nome do cliente.
+No entanto, a redução de dados não é útil sem representação. A redução faz sentido somente quando o cliente definiu um nível de representação de representação ou delegado. (Com níveis de representação inferiores, o servidor não pode fazer chamadas desproporções.) Se a desajuste é bem-sucedida depende do número de limites de computador cruzados e do nível de representação, o que indica a quantidade de autoridade que o servidor precisa agir em nome do cliente.
 
-Em algumas situações, faz sentido que o servidor defina o encobrimento quando o cliente define o nível de representação para a representação do nível de imp do RPC \_ C \_ \_ \_ . No entanto, algumas limitações estão em vigor. Se o cliente original definir o nível de representação para o nível de Requery do RPC \_ C \_ \_ \_ , o servidor intermediário (agindo como um cliente no mesmo computador) poderá se encobrir entre apenas um limite de computador. Isso ocorre porque um token de representação de nível representativo pode ser passado entre apenas um limite de computador. Depois que o limite do computador tiver sido ultrapassado, somente os recursos locais poderão ser acessados. A identidade apresentada ao servidor depende do tipo de encobrimento definido. Se nenhum encobrimento estiver definido, a identidade apresentada a um servidor será a do processo que faz a chamada imediata.
+Em algumas situações, faz sentido para o servidor definir a redução quando o cliente define o nível de representação como RPC \_ C \_ IMP LEVEL \_ \_ IMPERSONATE. No entanto, determinadas limitações estão em vigor. Se o cliente original define o nível de representação como RPC \_ C \_ IMP LEVEL \_ IMPERSONATE, o servidor intermediário (atuando como um cliente no mesmo computador) pode passar por apenas um limite de \_ computador. Isso porque um token de representação no nível de representação pode ser passado em apenas um limite de computador. Depois que o limite do computador tiver sido cruzado, somente os recursos locais poderão ser acessados. A identidade apresentada ao servidor depende do tipo de desajuste definido. Se nenhuma replicação for definida, a identidade apresentada a um servidor será a do processo que está fazendo a chamada imediata.
 
-Para encobrir os limites de vários computadores, você deve especificar um sinalizador de recurso de cobertura apropriado e uma representação de nível de delegado. Com esse tipo de representação, as credenciais locais e de rede do cliente são dadas ao servidor, portanto, o token de representação pode cruzar qualquer número de limites de computador. Novamente, a identidade apresentada ao servidor depende do tipo de encobrimento definido. Se nenhum encobrimento for definido com representação de nível delegado, a identidade apresentada a um servidor será a do processo que faz a chamada.
+Para se apropriar de vários limites de computador, você deve especificar um sinalizador de capacidade de desaprodução apropriado e representação de nível delegado. Com esse tipo de representação, as credenciais locais e de rede do cliente são fornecidas ao servidor, para que o token de representação possa cruzar qualquer número de limites do computador. Novamente, a identidade apresentada ao servidor depende do tipo de desajuste definido. Se nenhuma redução for definida com representação de nível delegado, a identidade apresentada a um servidor será a do processo que está fazendo a chamada.
 
-Por exemplo, suponha que o Process A chama B e B chame C. B tenha definido o encobrimento e um tenha definido o nível de representação como Impersonate. Se A, B e C estiverem no mesmo computador, passar o token de representação de a para B e, em seguida, para C funcionará. Mas se a e C estiverem no mesmo computador e B não estiver, passar o token funcionará entre A e B, mas não de B para C. A chamada de B para C falhará porque B não pode chamar C durante o encobrimento. No entanto, se um definir o nível de representação como delegado, o token poderá ser passado de B para C e a chamada poderá ter êxito.
+Por exemplo, suponha que o Processo A chama B e B chama C. B definiu a redução e A definiu o nível de representação para representar. Se A, B e C estiverem no mesmo computador, passar o token de representação de a para B e, em seguida, para C funcionará. Mas se a e C estiverem no mesmo computador e B não estiver, passar o token funcionará entre A e B, mas não de B para C. A chamada de B para C falhará porque B não pode chamar C durante o encobrimento. No entanto, se um definir o nível de representação como delegado, o token poderá ser passado de B para C e a chamada poderá ter êxito.
 
 ## <a name="cloaking-scenarios"></a>Cenários de encobrimento
 

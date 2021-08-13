@@ -1,11 +1,11 @@
 ---
-title: Propriedade ActiveBasicDevice IsAudioSupported (PlayToDevice. h)
+title: Propriedade ActiveBasicDevice IsAudioSupported (PlayToDevice.h)
 description: Obtém um valor que indica se o dispositivo dá suporte a áudio.
 ms.assetid: 22ABB97B-58E7-4C21-B359-C10DFC9C7194
 keywords:
-- API de streaming de mídia de propriedade IsAudioSupported
-- API de streaming de mídia de propriedade IsAudioSupported, interface ActiveBasicDevice
-- API de streaming de mídia da interface ActiveBasicDevice, Propriedade IsAudioSupported
+- API de Streaming de Mídia da propriedade IsAudioSupported
+- API de Streaming de Mídia da propriedade IsAudioSupported, interface ActiveBasicDevice
+- API de Streaming de Mídia da interface ActiveBasicDevice, propriedade IsAudioSupported
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66058da9dcdbac0ed1100b0ef21a4ed530d45a68
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 20125114b6cd134d153ad6425af5af410faf524714a2e505a37fbf57dcda21e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119462416"
 ---
-# <a name="activebasicdeviceisaudiosupported-property"></a>Propriedade ActiveBasicDevice:: IsAudioSupported
+# <a name="activebasicdeviceisaudiosupported-property"></a>Propriedade ActiveBasicDevice::IsAudioSupported
 
 Obtém um valor que indica se o dispositivo dá suporte a áudio.
 
@@ -43,9 +43,9 @@ HRESULT get_IsAudioSupported(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um ponteiro para um **booliano** que indica se o dispositivo dá suporte a áudio.
+Um ponteiro para um **booliana** que indica se o dispositivo dá suporte a áudio.
 
-**true** se o dispositivo der suporte a áudio; caso contrário, **false**.
+**true** se o dispositivo for compatível com áudio; caso contrário, **false.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,10 +53,10 @@ Um ponteiro para um **booliano** que indica se o dispositivo dá suporte a áudi
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>PlayToDevice. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>PlayToDevice. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8.1 somente aplicativos da área de trabalho\]<br/>                                                |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 Somente \[ aplicativos da área de trabalho R2\]<br/>                                     |
+| parâmetro<br/>                   | <dl> <dt>PlayToDevice.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>PlayToDevice.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Playtodevice.dll</dt> </dl> |
 
 
