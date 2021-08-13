@@ -13,16 +13,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 484fafed7e77fcd4d97c74c26acf8dfaf058dcf4
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 19b3ee6eb9f13171576cac1a0c656139cee83b7a689eadcb89a33f2807eb8b03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104007313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190749"
 ---
 # <a name="example-code-for-creating-an-external-crossref-object"></a>Exemplo de código para criar um objeto crossRef externo
 
-O exemplo de código a seguir Visual Basic mostra como criar um objeto [**crossRef**](/windows/desktop/ADSchema/c-crossref) externo.
+o exemplo de código a seguir Visual Basic mostra como criar um objeto [**crossRef**](/windows/desktop/ADSchema/c-crossref) externo.
 
 
 ```VB
@@ -75,6 +75,6 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 

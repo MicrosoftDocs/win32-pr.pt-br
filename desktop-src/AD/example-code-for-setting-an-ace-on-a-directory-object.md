@@ -7,12 +7,12 @@ keywords:
 - Exemplos de Active Directory Active Directory, definindo uma ACE em um objeto de diretório
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e16180a2e1216c749c35d68ff607e81320a1482c
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 86bf938e113a9293bf13e2bbb5a910617e41cba0ee411a15598966ea7a54628a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "105762849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190168"
 ---
 # <a name="example-code-for-setting-an-ace-on-a-directory-object"></a>Código de exemplo para definir uma ACE em um objeto de diretório
 
@@ -26,7 +26,7 @@ O exemplo de código a seguir define uma função que adiciona uma ACE (entrada 
 -   Conceda ou negue o direito de criar um tipo específico de objeto filho.
 -   Defina uma ACE que possa ser herdada por todos os objetos filho ou por objetos filho de uma classe de objeto especificada.
 
-Seguir este Visual Basic exemplo de código são vários exemplos de código que mostram como usar a função **SetRight** para definir diferentes tipos de ACEs.
+seguir este Visual Basic exemplo de código são vários exemplos de código que mostram como usar a função **setright** para definir diferentes tipos de ACEs.
 
 
 ```VB
@@ -249,7 +249,7 @@ return hr;
 
 ## <a name="grant-or-deny-access-to-the-entire-object"></a>Conceder ou negar acesso ao objeto inteiro
 
-O exemplo de código a seguir Visual Basic cria uma cadeia de vinculação para o contêiner Usuários e, em seguida, chama a função **SetRight** para definir uma ACE no contêiner Users. Este exemplo define uma ACE que concede ao objeto de confiança o direito de leitura ou gravação de qualquer propriedade em Object.
+o exemplo de código a seguir Visual Basic cria uma cadeia de vinculação para o contêiner usuários e, em seguida, chama a função **setright** para definir uma ACE no contêiner users. Este exemplo define uma ACE que concede ao objeto de confiança o direito de leitura ou gravação de qualquer propriedade em Object.
 
 
 ```VB
@@ -451,6 +451,6 @@ hr = SetRight(
 
 Para obter mais informações e o **schemaIDGUID** de um atributo ou classe predefinido, consulte a página referência de atributo ou classe na referência de [esquema de Active Directory](/windows/desktop/ADSchema/active-directory-schema) . Para obter mais informações e um exemplo de código que pode ser usado para obter um **schemaIDGUID** de forma programática, consulte [lendo objetos attributeSchema e classSchema](reading-attributeschema-and-classschema-objects.md).
 
- 
+ 
 
- 
+ 

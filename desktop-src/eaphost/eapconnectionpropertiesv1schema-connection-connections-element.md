@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5aabc29a7fe5122a7f7571750b97ebccb38158d8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6948675f7910c46cb2b5db4285ce0df795fa057f275ce29b7f4c664b14c4ce1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105764232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118498366"
 ---
 # <a name="connection-connections-element"></a>Elemento Connection (Connections)
 
@@ -47,7 +47,7 @@ O elemento **Connection** é definido pelo elemento [**Connections**](eapconnect
 
 
 
-| Elemento                                                                 | Type   | Descrição                                                                                                             |
+| Elemento                                                                 | Digite   | Description                                                                                                             |
 |-------------------------------------------------------------------------|--------|-------------------------------------------------------------------------------------------------------------------------|
 | [**EAP**](baseeapconnectionpropertiesv1schema-eap-element.md)          |        | Identifica o elemento de configuração EAP.<br/>                                                                    |
 | [**Nome**](eapconnectionpropertiesv1schema-name-connection-element.md) | string | Captura o nome da conexão que está sendo definida, auxiliando na identificação de várias conexões. <br/> |
@@ -60,8 +60,8 @@ O elemento **Connection** é definido pelo elemento [**Connections**](eapconnect
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 
@@ -72,13 +72,13 @@ O elemento **Connection** é definido pelo elemento [**Connections**](eapconnect
 **Contexto de definição do elemento no esquema**
 </dt> <dt>
 
-[**Conexões**](eapconnectionpropertiesv1schema-connections-element.md)
+[**conexões**](eapconnectionpropertiesv1schema-connections-element.md)
 </dt> <dt>
 
 **Possível elemento pai imediato na instância de esquema**
 </dt> <dt>
 
-[**Conexões**](eapconnectionpropertiesv1schema-connections-element.md)
+[**conexões**](eapconnectionpropertiesv1schema-connections-element.md)
 </dt> <dt>
 
 [EAPHost e esquema herdado](eaphost-schemas.md)

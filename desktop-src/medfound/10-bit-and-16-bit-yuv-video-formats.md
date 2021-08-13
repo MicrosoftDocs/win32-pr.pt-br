@@ -1,19 +1,19 @@
 ---
-description: Este tópico descreve os formatos YUV de 10 e 16 bits que são recomendados para capturar, processar e exibir vídeo no sistema operacional Microsoft Windows.
+description: este tópico descreve os formatos YUV de 10 e 16 bits que são recomendados para capturar, processar e exibir vídeo no sistema operacional Microsoft Windows.
 ms.assetid: fcaaaa6f-f886-4f6e-9c3c-e513ccc90d37
 title: Formatos de vídeo YUV de 10 e 16 bits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bbc357653848cd51ce6f56ebd8a1da3e5f60403
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09652929257c071bd735e1d6c7ec36e1767d904da7d2364ac3e30c61c81f342f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118065681"
 ---
 # <a name="10-bit-and-16-bit-yuv-video-formats"></a>Formatos de vídeo YUV de 10 e 16 bits
 
-Este tópico descreve os formatos YUV de 10 e 16 bits que são recomendados para capturar, processar e exibir vídeo no sistema operacional Microsoft Windows.
+este tópico descreve os formatos YUV de 10 e 16 bits que são recomendados para capturar, processar e exibir vídeo no sistema operacional Microsoft Windows.
 
 Este tópico contém as seguintes seções:
 

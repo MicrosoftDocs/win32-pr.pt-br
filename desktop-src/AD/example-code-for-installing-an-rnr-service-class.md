@@ -4,16 +4,16 @@ description: O programa a seguir instala uma classe de serviço RnR.
 ms.assetid: 85605ecf-bc82-48ac-8b36-ee43862a3bc9
 ms.tgt_platform: multiple
 keywords:
-- Registro do Windows Sockets, anúncio de resolução, código de exemplo, instalação de uma classe de serviço RnR
+- Windows Registro de soquetes, anúncio de resolução, código de exemplo, instalando uma classe de serviço RnR
 - Instalando um anúncio de classe de serviço RnR, código de exemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f1b918e22d15bca59018048de8d43969b18e8f5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 26afe0fda2fa03e9631a098963c6c3f061e8e300fa0c54664ab4c50e3a513390
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190320"
 ---
 # <a name="example-code-for-installing-an-rnr-service-class"></a>Código de exemplo para instalar uma classe de serviço RnR
 
@@ -170,9 +170,9 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

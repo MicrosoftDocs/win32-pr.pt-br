@@ -1,36 +1,36 @@
 ---
 title: Programa de aplicativo da área de trabalho do Windows
-description: Você pode obter dados de telemetria e relatórios de análise detalhados que permitem ver como os aplicativos da área de trabalho do Windows estão fazendo por meio do novo programa de aplicativos da área de trabalho do Windows.
+description: você pode obter dados de telemetria e relatórios de análise detalhados que permitem ver como seus Windows aplicativos de área de trabalho estão fazendo por meio do novo programa de aplicativo de área de trabalho do Windows.
 ms.assetid: F1ED72A5-E1CD-4924-A81B-ED6FAF5E2AA3
 ms.topic: article
 ms.date: 11/02/2018
-ms.openlocfilehash: 63fd252f7d98c6b7a401f6626f30dcdcd6751def
-ms.sourcegitcommit: 78b64f3865e64768b5319d4f010032ee68924a98
+ms.openlocfilehash: 90483194654d5656060c57e3ad7593410a08660c2b8fc71bbbe9e42f08f17c45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107314839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118105708"
 ---
 # <a name="windows-desktop-application-program"></a>Programa de aplicativo da área de trabalho do Windows
 
-Você pode obter dados de telemetria e relatórios de análise detalhados que permitem ver como os aplicativos da área de trabalho do Windows estão fazendo por meio do novo programa de aplicativos da área de trabalho do Windows.
+você pode obter dados de telemetria e relatórios de análise detalhados que permitem ver como seus Windows aplicativos de área de trabalho estão fazendo por meio do novo programa de aplicativo de área de trabalho do Windows.
 
-Não há nenhum custo para acessar esses dados, tudo o que você precisa fazer é [inscrever-se](https://login.microsoftonline.com/common/oauth2/authorize?client_id=4990cffe-04e8-4e8b-808a-1175604b879f&response_mode=form_post&response_type=code+id_token&scope=openid+profile&state=OpenIdConnect.AuthenticationProperties%3deJsPaLaK4fU55nKvN21CjU6FsdJ0aPGfhsjGAZ0HR9bE6rgwHHX4izvRt_w-0VUlIF0ClCya4cVY6Uv4qTAqDrH8LTwFpjFGWVW2BAIJmAAuxBLZGTPS_DYy0wwgvTh1orWTCMvBdlOu_kF8vwNe4mjtk9JRMvYaETyspKrJi-s5Z2K7lKIPqnlFkwSU-aoot-3NxTeQ0wu6_RJ1nf_kLFatEkVAqokDSYTKkpv7zF6gA3YYriMFoC9_f2uxuXpI-STckg&nonce=637177463062493881.YjhiOTZjYTMtOTVhZS00OGM1LWI4MDItNWE5MThjMjA1ZjZmMTAyZDRiMGQtMDJhNC00ZDJmLWFkM2QtM2FjZDJkNjcxYWQy&redirect_uri=https%3a%2f%2fpartner.microsoft.com%2faad%2fauthPostGateway&resource=797f4846-ba00-4fd7-ba43-dac1f8f63013&mkt=en-US) e aceitar o [contrato do programa de aplicativos da área de trabalho do Windows](https://go.microsoft.com/fwlink/?linkid=853677)e, em seguida, carregar um arquivo assinado usando o mesmo certificado usado para assinar os arquivos executáveis do aplicativo.
+não há encargos para acessar esses dados, tudo o que você precisa fazer é [inscrever-se](https://login.microsoftonline.com/common/oauth2/authorize?client_id=4990cffe-04e8-4e8b-808a-1175604b879f&response_mode=form_post&response_type=code+id_token&scope=openid+profile&state=OpenIdConnect.AuthenticationProperties%3deJsPaLaK4fU55nKvN21CjU6FsdJ0aPGfhsjGAZ0HR9bE6rgwHHX4izvRt_w-0VUlIF0ClCya4cVY6Uv4qTAqDrH8LTwFpjFGWVW2BAIJmAAuxBLZGTPS_DYy0wwgvTh1orWTCMvBdlOu_kF8vwNe4mjtk9JRMvYaETyspKrJi-s5Z2K7lKIPqnlFkwSU-aoot-3NxTeQ0wu6_RJ1nf_kLFatEkVAqokDSYTKkpv7zF6gA3YYriMFoC9_f2uxuXpI-STckg&nonce=637177463062493881.YjhiOTZjYTMtOTVhZS00OGM1LWI4MDItNWE5MThjMjA1ZjZmMTAyZDRiMGQtMDJhNC00ZDJmLWFkM2QtM2FjZDJkNjcxYWQy&redirect_uri=https%3a%2f%2fpartner.microsoft.com%2faad%2fauthPostGateway&resource=797f4846-ba00-4fd7-ba43-dac1f8f63013&mkt=en-US) e aceitar o [Windows contrato de programa de aplicativo de área de trabalho](https://go.microsoft.com/fwlink/?linkid=853677)e, em seguida, carregar um arquivo assinado usando o mesmo certificado usado para assinar os arquivos executáveis do aplicativo.
 
-## <a name="join-the-windows-desktop-application-program"></a>Participe do programa de aplicativos da área de trabalho do Windows
+## <a name="join-the-windows-desktop-application-program"></a>participe do programa de aplicativo de área de trabalho Windows
 
-**Se sua empresa já tiver uma conta do Partner Center**: entre na sua conta do Partner Center (usando o conta Microsoft associado ao proprietário da conta) e navegue até a página **programas** (em **configurações da conta** ou selecionando **tudo** no menu de navegação à esquerda). Em **programa de aplicativos da área de trabalho do Windows**, clique em **introdução** para ingressar no programa sem custo adicional. Se você tiver um locatário do Azure AD associado à sua conta do Partner Center, os usuários que você adicionou poderão acessar o programa de aplicativos da área de trabalho do Windows. Em breve, nós lhe permitimos que você defina um acesso mais granular para esse programa.
+**Se sua empresa já tiver uma conta do Partner Center**: entre na sua conta do Partner Center (usando o conta Microsoft associado ao proprietário da conta) e navegue até a página **programas** (em **configurações da conta** ou selecionando **tudo** no menu de navegação à esquerda). em **Windows programa de aplicativo de área de trabalho**, clique em **Introdução** para ingressar no programa sem custo adicional. se você tiver um locatário do Azure AD associado à sua conta do Partner Center, os usuários que você adicionou poderão acessar o programa de aplicativo de área de trabalho Windows. Em breve, nós lhe permitimos que você defina um acesso mais granular para esse programa.
 
 > [!Tip]  
-> Se sua empresa tiver uma conta do Partner Center, mas você não tiver acesso a ela, peça ao administrador para adicioná-lo [como um usuário](/windows/uwp/publish/add-users-groups-and-azure-ad-applications). Observe que apenas o proprietário da conta pode ingressar no programa de aplicativo da área de trabalho do Windows.
+> Se sua empresa tiver uma conta do Partner Center, mas você não tiver acesso a ela, peça ao administrador para adicioná-lo [como um usuário](/windows/uwp/publish/add-users-groups-and-azure-ad-applications). observe que apenas o proprietário da conta pode ingressar no programa de aplicativo de área de trabalho Windows.
 
  
 
-**Se sua empresa não tiver uma conta do Partner Center**: você poderá [se inscrever no programa de aplicativos da área de trabalho do Windows diretamente](https://login.microsoftonline.com/common/oauth2/authorize?client_id=4990cffe-04e8-4e8b-808a-1175604b879f&response_mode=form_post&response_type=code+id_token&scope=openid+profile&state=OpenIdConnect.AuthenticationProperties%3dWc5R_wIKVD0EbOy2UUxS0_0GQJnIAbD-eisMn7Gb4cJL18fRdelvbtj5_R0zoGlsebcnAxIvwKS5kx4Ma4mLMbU4l9ULsE9ajiZU4wtchLJXyJGsPCjCBUNV7TY1SzwXAI-LepSoXkqa8xSywVb7JZ3Xed-Lcw-kwEShFOwt0SdSdc1nNevHbPOhotOeFQcqbo0HESVYXk6pZORJ_OYimG99onp_zSTyludOvvaTd9GYKUgX9exCU5IHReP7MzJDHOgqTg&nonce=637177463071243612.NDU4MjE2ZTMtNmVkMi00YWNiLWEzZGEtMjYyNDRkODI0M2FmOTM3MmE1NzgtMzQ1OC00M2ZkLWJhMDktYzI4YTNhNzdiYTk0&redirect_uri=https%3a%2f%2fpartner.microsoft.com%2faad%2fauthPostGateway&resource=797f4846-ba00-4fd7-ba43-dac1f8f63013&mkt=en-US) sem nenhum custo. Em breve, forneceremos a opção de [associar um locatário do Azure ad à sua conta](/windows/uwp/publish/add-users-groups-and-azure-ad-applications) para que outras pessoas em sua empresa também possam entrar.
+**se sua empresa não tiver uma conta do Partner Center**: você poderá [se inscrever para o programa de aplicativo de área de trabalho Windows diretamente](https://login.microsoftonline.com/common/oauth2/authorize?client_id=4990cffe-04e8-4e8b-808a-1175604b879f&response_mode=form_post&response_type=code+id_token&scope=openid+profile&state=OpenIdConnect.AuthenticationProperties%3dWc5R_wIKVD0EbOy2UUxS0_0GQJnIAbD-eisMn7Gb4cJL18fRdelvbtj5_R0zoGlsebcnAxIvwKS5kx4Ma4mLMbU4l9ULsE9ajiZU4wtchLJXyJGsPCjCBUNV7TY1SzwXAI-LepSoXkqa8xSywVb7JZ3Xed-Lcw-kwEShFOwt0SdSdc1nNevHbPOhotOeFQcqbo0HESVYXk6pZORJ_OYimG99onp_zSTyludOvvaTd9GYKUgX9exCU5IHReP7MzJDHOgqTg&nonce=637177463071243612.NDU4MjE2ZTMtNmVkMi00YWNiLWEzZGEtMjYyNDRkODI0M2FmOTM3MmE1NzgtMzQ1OC00M2ZkLWJhMDktYzI4YTNhNzdiYTk0&redirect_uri=https%3a%2f%2fpartner.microsoft.com%2faad%2fauthPostGateway&resource=797f4846-ba00-4fd7-ba43-dac1f8f63013&mkt=en-US) , sem nenhum custo. Em breve, forneceremos a opção de [associar um locatário do Azure ad à sua conta](/windows/uwp/publish/add-users-groups-and-azure-ad-applications) para que outras pessoas em sua empresa também possam entrar.
 
 ## <a name="add-your-desktop-applications"></a>Adicionar seus aplicativos de área de trabalho
 
-Depois de ingressar no programa, você precisará adicionar seus aplicativos da área de trabalho do Windows ao seu painel para que possamos começar a mostrar seus relatórios de análise.
+depois de ingressar no programa, você precisará adicionar seus Windows aplicativos de área de trabalho ao seu painel para que possamos começar a mostrar seus relatórios de análise.
 
 Usamos a assinatura de código para estabelecer a identidade da sua empresa e recuperar a análise para aplicativos que você publica.
 
@@ -45,23 +45,23 @@ Forneceremos um arquivo e solicitaremos que você o assine com os mesmos certifi
 
 1.  No painel, selecione **adicionar aplicativos de área de trabalho**.
 2.  Na página seguinte, baixe o arquivo que pode ser assinado selecionando **baixar o arquivo** e salve o arquivo em seu computador.
-3.  Assine o arquivo que você acabou de baixar usando o mesmo certificado de assinatura de código que você usa para autenticar seus aplicativos de área de trabalho. Você pode usar SignTool.exe (disponível em Microsoft Visual Studio e como parte do [SDK do Windows](https://developer.microsoft.com/windows/downloads/windows-10-sdk)) para assinar esse arquivo. Mais detalhes sobre esse processo estão descritos abaixo.
-4.  Carregue o arquivo que você acabou de assinar, arrastando-o para o campo (ou clique para procurar seus arquivos).
+3.  Assine o arquivo que você acabou de baixar usando o mesmo certificado de assinatura de código que você usa para autenticar seus aplicativos de área de trabalho. você pode usar SignTool.exe (disponível em Microsoft Visual Studio e como parte do [SDK do Windows](https://developer.microsoft.com/windows/downloads/windows-10-sdk)) para assinar esse arquivo. Mais detalhes sobre esse processo estão descritos abaixo.
+4.  Upload o arquivo que você acabou de assinar, arrastando-o para o campo (ou clique para procurar seus arquivos).
 5.  Selecione **Enviar** para concluir o processo.
 
 ![etapas para adicionar aplicativos de área de trabalho](images/uploadcert.png)
 
 Se você usar mais de um certificado de assinatura de código, poderá repetir as etapas acima para cada um de seus certificados. Você pode baixar, assinar e carregar um arquivo para cada certificado atual que você usa para assinar seus aplicativos. No entanto, você só pode usar um certificado por arquivo baixado.
 
-Depois de concluir essas etapas, identificaremos quais aplicativos da área de trabalho do Windows são assinados com o mesmo certificado que você usou para assinar nosso arquivo. Na maioria dos casos, começaremos a mostrar os relatórios analíticos dentro de 48 horas, embora possa levar um pouco mais tempo.
+depois de concluir essas etapas, identificaremos quais Windows aplicativos de área de trabalho são assinados com o mesmo certificado que você usou para assinar o arquivo. Na maioria dos casos, começaremos a mostrar os relatórios analíticos dentro de 48 horas, embora possa levar um pouco mais tempo.
 
 ## <a name="use-signtoolexe-to-sign-the-downloaded-file"></a>Usar signtool.exe para assinar o arquivo baixado
 
-A Microsoft fornece uma ferramenta para assinar arquivos, SignTool.exe, com o Visual Studio e no [SDK do Windows](https://developer.microsoft.com/windows/downloads/windows-10-sdk). Você pode usar essa ferramenta para executar e verificar o processo de assinatura de código. Mais informações sobre o SignTool.exe estão disponíveis [aqui](/dotnet/framework/tools/signtool-exe).
+a Microsoft fornece uma ferramenta para assinar arquivos, SignTool.exe, com Visual Studio e no [SDK do Windows](https://developer.microsoft.com/windows/downloads/windows-10-sdk). Você pode usar essa ferramenta para executar e verificar o processo de assinatura de código. Mais informações sobre o SignTool.exe estão disponíveis [aqui](/dotnet/framework/tools/signtool-exe).
 
 Aqui estão duas das maneiras mais comuns de usar essa ferramenta para assinar o arquivo que pode ser assinado.
 
--   Se você tiver acesso ao certificado de assinatura de código como um arquivo de [troca de informações pessoais (pfx)](/windows-hardware/drivers/install/personal-information-exchange---pfx--files) :
+-   se você tiver acesso ao certificado de assinatura de código como um arquivo de [Exchange de informações pessoais (PFX)](/windows-hardware/drivers/install/personal-information-exchange---pfx--files) :
 
     ``` syntax
     signtool sign /f MyCert.pfx /p MyCertPassword /v SignableFile.bin
@@ -87,7 +87,7 @@ signtool verify /a SignableFile.bin
 
 Depois que os arquivos assinados tiverem sido carregados e identificarmos seus aplicativos de desktop, seu painel mostrará uma visão geral de seus aplicativos, juntamente com as principais métricas.
 
-Nossos dados de telemetria mostrarão informações de integridade, como falhas para cada aplicativo associado ao seu certificado. Seu painel mostrará uma visão geral de seus aplicativos, juntamente com as métricas-chave. Você pode selecionar qualquer aplicativo para exibir seu relatório de [integridade](#health-report), [instalar relatório](#installs-report)e [Bloquear relatório](#application-blocks-report) no painel. Você também pode [recuperar dados analíticos programaticamente usando a API de análise de Microsoft Store](#retrieve-analytic-data-using-the-microsoft-store-analytics-api).
+Nossos dados de telemetria mostrarão informações de integridade, como falhas para cada aplicativo associado ao seu certificado. Seu painel mostrará uma visão geral de seus aplicativos, juntamente com as métricas-chave. Você pode selecionar qualquer aplicativo para exibir seu relatório de [integridade](#health-report), [instalar relatório](#installs-report)e [Bloquear relatório](#application-blocks-report) no painel. você também pode [recuperar dados analíticos programaticamente usando a API de análise de Microsoft Store](#retrieve-analytic-data-using-the-microsoft-store-analytics-api).
 
 > [!Note]  
 > Se detectarmos que os metadados de um aplicativo foram atualizados para usar um novo nome, começaremos a relatar novos dados com o novo nome. Os dados históricos associados ao nome antigo serão preservados por 30 dias.
@@ -107,10 +107,10 @@ Você pode filtrar os dados de várias maneiras, permitindo:
 -   Faça uma busca detalhada em uma falha específica e baixe os rastreamentos de pilha para depurar o problema mais rapidamente
 -   Comparar uma nova versão do seu aplicativo com as versões anteriores
 -   Exibir dados de integridade em agregação ou por região, permitindo isolar problemas específicos de uma região
--   Compare o desempenho de seus aplicativos de desktop em versões do Windows ou em uma versão específica, como a versão mais recente do Windows 10
+-   Compare o desempenho de seus aplicativos de desktop em Windows versões ou em uma versão específica, como a versão mais recente do Windows 10
 -   Exibir informações de integridade para um arquivo executável específico incluído em seu aplicativo
 
-Selecione **carregar símbolos** na parte superior da tabela **falhas** para carregar um arquivo. zip que contém os arquivos de [símbolo](/windows-hardware/drivers/debugger/symbols-and-symbol-files)do aplicativo. Esses arquivos de símbolos serão indexados e usados para produzir rastreamentos de pilha mais precisos. Os tipos de arquivo de símbolo dentro de. zip devem ser. pdb,. dll ou. exe. Depois de carregar com êxito o arquivo. zip, você verá menos **! Valores desconhecidos** para novas falhas na lista de falhas do aplicativo em aproximadamente 5 dias.
+selecione **Upload símbolos** na parte superior da tabela **falhas** para carregar um arquivo de .zip que contém os [arquivos de símbolo](/windows-hardware/drivers/debugger/symbols-and-symbol-files)do aplicativo. Esses arquivos de símbolos serão indexados e usados para produzir rastreamentos de pilha mais precisos. Os tipos de arquivo de símbolo dentro do .zip devem ser. pdb, .dll ou .exe. Depois de carregar com êxito o arquivo de .zip, você verá menos **! Valores desconhecidos** para novas falhas na lista de falhas do aplicativo em aproximadamente 5 dias.
 
 ### <a name="installs-report"></a>Relatório de instalações
 
@@ -121,11 +121,11 @@ Você pode filtrar os dados de várias maneiras, permitindo:
 -   Exibir um resumo de suas instalações, classificadas por popularidade
 -   Comparar uma nova versão do seu aplicativo com as versões anteriores
 -   Exibir dados de instalação em agregação ou por região
--   Compare o desempenho de seus aplicativos de desktop em versões do Windows ou em uma versão específica, como a versão mais recente do Windows 10 ou versões mais rápidas e lentas do Windows Insider
+-   Compare o desempenho de seus aplicativos de desktop em Windows versões ou em uma versão específica, como a versão mais recente do Windows 10 ou Windows insider versões rápidas e lentas
 
 ### <a name="application-blocks-report"></a>Relatório de blocos de aplicativo
 
-O relatório **blocos de aplicativos** permite que você veja informações sobre dispositivos Windows 10 nos quais seu aplicativo está afetando as atualizações do Windows 10. Você pode ver quantos dispositivos são afetados em um determinado dia, juntamente com o número médio de dispositivos nos últimos 30 dias.
+o relatório **blocos de aplicativos** permite que você veja informações sobre Windows 10 dispositivos nos quais seu aplicativo está afetando Windows 10 atualizações. Você pode ver quantos dispositivos são afetados em um determinado dia, juntamente com o número médio de dispositivos nos últimos 30 dias.
 
 Os tipos de blocos de atualização incluídos são os seguintes: 
 
@@ -136,11 +136,11 @@ Os tipos de blocos de atualização incluídos são os seguintes:
 <tr><td>Notificação de tempo de execução</td><td>Pode não funcionar corretamente na nova versão de lançamento do sistema operacional, mas não bloqueará a atualização</td><td>O aplicativo não impedirá a atualização, mas foram detectados problemas que podem impedi-lo de funcionar corretamente na nova versão de lançamento do sistema operacional.</td><td>Nenhuma ação é necessária para que a atualização Continue, mas certifique-se de testar o aplicativo na nova versão de lançamento do sistema operacional e verifique com o desenvolvedor uma versão compatível, se necessário.</td></tr>
 </table>
 
-### <a name="retrieve-analytic-data-using-the-microsoft-store-analytics-api"></a>Recuperar dados analíticos usando a API de análise de Microsoft Store
+### <a name="retrieve-analytic-data-using-the-microsoft-store-analytics-api"></a>recuperar dados analíticos usando a API de análise de Microsoft Store
 
-A API de análise de Microsoft Store permite recuperar dados de análise programaticamente para aplicativos que você adicionou à sua conta.
+a API de análise de Microsoft Store permite recuperar dados de análise programaticamente para aplicativos que você adicionou à sua conta.
 
-Essa API oferece os seguintes métodos específicos para o programa de aplicativos da área de trabalho do Windows:
+essa API oferece os seguintes métodos específicos para o programa de aplicativo de área de trabalho Windows:
 
 -   [Instalada](/windows/uwp/monetize/get-desktop-app-installs)
 -   [Ocorrências de falha](/windows/uwp/monetize/get-desktop-application-error-reporting-data)
@@ -205,19 +205,19 @@ Manter os metadados dos seus aplicativos e arquivos atualizados ajuda a garantir
 
 ## <a name="add-and-manage-account-users"></a>Adicionar e gerenciar usuários da conta
 
-Você pode usar Azure Active Directory para adicionar e gerenciar usuários adicionais na sua conta de programa de aplicativo da área de trabalho do Windows. Você pode adicionar usuários individuais, grupos de usuários ou aplicativos do Azure AD, fornecendo a cada um uma função predefinida (gerente ou desenvolvedor).
+você pode usar Azure Active Directory para adicionar e gerenciar usuários adicionais em sua conta de programa de aplicativo de área de trabalho Windows. Você pode adicionar usuários individuais, grupos de usuários ou aplicativos do Azure AD, fornecendo a cada um uma função predefinida (gerente ou desenvolvedor).
 
-### <a name="associate-azure-active-directory-with-your-account"></a>Associar Azure Active Directory à sua conta
+### <a name="associate-azure-active-directory-with-your-account"></a>associar Azure Active Directory à sua conta
 
 Para adicionar e gerenciar usuários da conta, você deve primeiro associar sua conta ao Azure Active Directory da sua organização. Se sua organização já usa o Office 365 ou outros serviços comerciais da Microsoft, você já tem Azure AD. Caso contrário, você pode criar um novo locatário do Azure AD sem custo adicional.
 
-Consulte [associar Azure Active Directory à sua conta do Partner Center](/windows/uwp/publish/associate-azure-ad-with-dev-center) para obter mais informações. Embora o tópico se concentre no programa de desenvolvedor de aplicativos do Windows, a associação de um locatário funciona da mesma maneira para o programa de aplicativos da área de trabalho do Windows.
+consulte [associar Azure Active Directory à sua conta do Partner Center](/windows/uwp/publish/associate-azure-ad-with-dev-center) para obter mais informações. embora o tópico se concentre no programa de desenvolvedor de aplicativos Windows, a associação de um locatário funciona da mesma maneira para o programa de aplicativo de área de trabalho Windows.
 
 ### <a name="add-users-groups-and-azure-ad-applications-to-your-account"></a>Adicionar usuários, grupos e aplicativos do Azure AD à sua conta
 
 Depois de configurar a associação do Azure AD, você pode adicionar usuários acessando a seção usuários em configurações da conta. Cada usuário recebe uma função que define seu acesso à conta. Você também pode adicionar grupos de usuários e aplicativos do Azure AD para conceder a eles acesso à sua conta do Partner Center. Para obter mais informações sobre como adicionar usuários, consulte [Adicionar usuários, grupos e aplicativos do Azure ad](/windows/uwp/publish/add-users-groups-and-azure-ad-applications).
 
-Cada usuário, grupo ou aplicativo do Azure AD que você adiciona à sua conta deve ser atribuído a uma função. Esse processo é descrito em [definir funções ou permissões personalizadas para usuários da conta](/windows/uwp/publish/set-custom-permissions-for-account-users). No entanto, observe que, para o programa de aplicativos da área de trabalho do Windows, não há a capacidade de atribuir permissões personalizadas ou restringir o acesso por produto. Em vez disso, cada usuário deve receber uma das seguintes funções padrão.
+Cada usuário, grupo ou aplicativo do Azure AD que você adiciona à sua conta deve ser atribuído a uma função. Esse processo é descrito em [definir funções ou permissões personalizadas para usuários da conta](/windows/uwp/publish/set-custom-permissions-for-account-users). no entanto, observe que, para o programa de aplicativo de área de trabalho Windows, não há capacidade de atribuir permissões personalizadas ou restringir o acesso por produto. Em vez disso, cada usuário deve receber uma das seguintes funções padrão.
 
 
 

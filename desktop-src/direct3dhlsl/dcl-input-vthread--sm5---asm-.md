@@ -4,12 +4,12 @@ description: Declare as IDs de entrada do sombreador de computação.
 ms.assetid: C041863A-32B0-4588-A1A9-E416AF9B723C
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fbf6a7bb19feef95eae9cc153911407b206fde16
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 07c7eef8fe85ae39fb61d9e34b600805d38f7b92d5dbceb7dc2218b1515b6d36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103638896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118286194"
 ---
 # <a name="dcl_input-vthread-sm5---asm"></a>\_vThread de entrada DCL (SM5-ASM)
 
@@ -45,7 +45,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          |       | X       |
 
@@ -62,11 +62,11 @@ Essa instrução tem suporte nos seguintes modelos de sombreador:
 | Modelo de Sombreador                                              | Com suporte |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
-| [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | não        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | não        |
-| [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | não        |
-| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | não        |
-| [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | não        |
+| [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 

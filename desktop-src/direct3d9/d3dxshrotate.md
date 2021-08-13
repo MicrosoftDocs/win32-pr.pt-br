@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8f888186fb6d7563a5904d4e6e3f1eabe626afd1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 26505e768a0f8ad48b069cee2cc83876976e0134d8a60a2f93b17b0cb2aad323
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118298275"
 ---
 # <a name="d3dxshrotate-function-d3dx9mathh"></a>Função D3DXSHRotate (D3dx9math. h)
 
@@ -79,7 +79,7 @@ Ponteiro para de doeficientes de forma girada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Valor retornado
+## <a name="return-value"></a>Retornar valor
 
 Tipo: **[ **float**](../winprog/windows-data-types.md)\***
 
@@ -103,7 +103,7 @@ Cada coeficiente da função base Ylm é armazenado no local da memória l ² + 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

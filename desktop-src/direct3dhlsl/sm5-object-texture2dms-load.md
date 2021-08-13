@@ -1,9 +1,9 @@
 ---
-title: 'Função Texture2DMS:: Load (int, int)'
-description: 'Obtém um valor. | Função Texture2DMS:: Load (int, int)'
+title: Função Texture2DMS::Load(int,int)
+description: Obtém um valor. | Função Texture2DMS::Load(int,int)
 ms.assetid: b49b94e0-5c49-4901-b49d-3e652d4fd2d1
 keywords:
-- Carregar função DXGI
+- Função de carregamento DXGI
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7d9c86bea7d914dd5975105a00a64789864a1fbd
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0997a1bd30b4912864674015057fcafec227d90ad05b16b88fd3f05b671f155c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104968410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118285724"
 ---
-# <a name="texture2dmsloadintint-function"></a>Função Texture2DMS:: Load (int, int)
+# <a name="texture2dmsloadintint-function"></a>Função Texture2DMS::Load(int,int)
 
 Obtém um valor.
 
@@ -37,16 +37,16 @@ T Load(
 
 <dl> <dt>
 
-*coord* \[ no\]
+*coord* \[ Em\]
 </dt> <dd>
 
-Tipo: **Int2**
+Tipo: **int2**
 
 O local de entrada.
 
 </dd> <dt>
 
-*sampleindex* \[ no\]
+*sampleindex* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **int**](/windows/desktop/WinProg/windows-data-types)**
@@ -78,7 +78,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

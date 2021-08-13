@@ -4,12 +4,12 @@ description: Saiba mais sobre as propriedades de conexão. Consulte Propriedades
 ms.assetid: 95c8f5d5-75c5-48c7-b6af-e9908df56c71
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b48462748acd346b765afa0134c1d384df0e503
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 8b7c7c10bd4f5e310b9442298499e6818592755c5d80a8103fc00e63e9bd5b45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104008389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118498625"
 ---
 # <a name="connection-properties"></a>Propriedades da conexão
 
@@ -27,15 +27,15 @@ Para obter exemplos de esquema adicionais, consulte [esquema EAP](https://go.mic
 
 <dl> <dt>
 
-[Propriedades do Usuário](user-profiles.md)
+[Propriedades do usuário](user-profiles.md)
 </dt> <dt>
 
 [EAPHost e esquema herdado](eaphost-schemas.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

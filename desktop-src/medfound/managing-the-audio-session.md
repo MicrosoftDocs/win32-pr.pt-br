@@ -4,63 +4,63 @@ ms.assetid: 4cf3dd0f-4c8a-4720-9eb3-d23352f3a85e
 title: Gerenciando a sessão de áudio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e5231ca02603279675fabaaac4b96a1cd001906
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8573bd7145cc792d3178d51cead18c3a8694dde9281644b37439a377f18bec96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296180"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118062813"
 ---
 # <a name="managing-the-audio-session"></a>Gerenciando a sessão de áudio
 
-\[O MFPlay está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. \]
+\[O MFPlay está disponível para uso nos sistemas operacionais especificados na seção Requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. \]
 
 Este tópico descreve como controlar o volume de áudio ao usar o MFPlay para reprodução de áudio/vídeo.
 
-O MFPlay fornece os seguintes métodos para controlar o volume de áudio durante a reprodução.
+O MFPlay fornece os métodos a seguir para controlar o volume de áudio durante a reprodução.
 
 
 
 | Método                                                            | Descrição                                           |
 |-------------------------------------------------------------------|-------------------------------------------------------|
-| [**IMFPMediaPlayer:: setbalance**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setbalance) | Define o equilíbrio entre os canais esquerdo e direito. |
-| [**IMFPMediaPlayer:: setmudo**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setmute)       | Silencia ou desativa o áudio.                           |
-| [**IMFPMediaPlayer:: SetVolume**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setvolume)   | Define o nível de volume.                                |
+| [**IMFPMediaPlayer::SetBalance**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setbalance) | Define o equilíbrio entre os canais esquerdo e direito. |
+| [**IMFPMediaPlayer::SetMute**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setmute)       | Muda ou desmuta o áudio.                           |
+| [**IMFPMediaPlayer::SetVolume**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setvolume)   | Define o nível de volume.                                |
 
 
 
  
 
-Para entender o comportamento desses métodos, você deve saber alguma terminologia da API de sessão de áudio do Windows (WASAPI), que implementa a funcionalidade de áudio de nível baixo usada pelo MFPlay.
+Para entender o comportamento desses métodos, você deve conhecer alguma terminologia da API de Sessão de Áudio Windows (WASAPI), que implementa a funcionalidade de áudio de baixo nível usada pelo MFPlay.
 
-No WASAPI, cada fluxo de áudio pertence a exatamente uma *sessão de áudio*, que é um grupo de fluxos de áudio relacionados. Normalmente, um aplicativo mantém uma única sessão de áudio, embora os aplicativos possam criar mais de uma sessão. O SNDVOL (programa de controle de volume do sistema) exibe um controle de volume para cada sessão de áudio. Por meio do SNDVOL, um usuário pode ajustar o volume de uma sessão de áudio de fora do aplicativo. A imagem a seguir ilustra esse processo.
+No WASAPI, cada fluxo de áudio pertence a exatamente uma sessão *de* áudio , que é um grupo de fluxos de áudio relacionados. Normalmente, um aplicativo mantém uma única sessão de áudio, embora os aplicativos possam criar mais de uma sessão. O Sndvol (programa de controle de volume do sistema) exibe um controle de volume para cada sessão de áudio. Por meio do Sndvol, um usuário pode ajustar o volume de uma sessão de áudio de fora do aplicativo. A imagem a seguir ilustra esse processo.
 
-![diagrama mostrando fluxos de áudio que passam pelo controle de volume no caminho para os alto-falantes; aplicativo e ponto de SNDVOL para controle de volume](images/audio-session.gif)
+![diagrama mostrando fluxos de áudio passando pelo controle de volume no caminho para os alto-falantes; application e sndvol point to volume control](images/audio-session.gif)
 
-No MFPlay, um item de mídia pode ter um ou mais fluxos de áudio ativos (normalmente apenas um). Internamente, o MFPlay usa o [processamento de áudio de streaming](streaming-audio-renderer.md) (SAR) para renderizar os fluxos de áudio. A menos que você configure-o caso contrário, o SAR ingressará na sessão de áudio padrão do aplicativo.
+No MFPlay, um item de mídia pode ter um ou mais fluxos de áudio ativos (normalmente apenas um). Internamente, o MFPlay usa o SAR [(Streaming Audio Renderer)](streaming-audio-renderer.md) para renderizar os fluxos de áudio. A menos que você o configure de outra forma, o SAR ingressará na sessão de áudio padrão do aplicativo.
 
-Os métodos de áudio MFPlay controlam apenas os fluxos que pertencem ao item de mídia atual. Eles não afetam o volume de nenhum outro fluxo que pertença à mesma sessão de áudio. Em termos de WASAPI, os métodos MFPlay controlam os níveis de volume *por canal* , não o nível de volume mestre. A imagem a seguir ilustra esse processo.
+Os métodos de áudio MFPlay controlam apenas os fluxos que pertencem ao item de mídia atual. Eles não afetam o volume de nenhum outro fluxo que pertença à mesma sessão de áudio. Em termos de WASAPI, os métodos MFPlay controlam os níveis de *volume* por canal, não o nível de volume mestre. A imagem a seguir ilustra esse processo.
 
-![diagrama semelhante ao anterior, mas o segundo fluxo começa no item de mídia, e o aplicativo aponta para o segundo fluxo e para o controle de volume](images/audio-session02.gif)
+![diagrama semelhante ao anterior, mas o segundo fluxo começa no item de mídia e o aplicativo aponta para o segundo fluxo e para o controle de volume](images/audio-session02.gif)
 
-É importante entender algumas implicações desse recurso do MFPlay. Primeiro, um aplicativo pode ajustar o volume de reprodução sem afetar outros fluxos de áudio. Você pode usar esse recurso se MFPlay para implementar o esmaecimento cruzado de áudio, criando duas instâncias do objeto MFPlay e ajustando o volume separadamente.
+É importante entender algumas implicações desse recurso do MFPlay. Primeiro, um aplicativo pode ajustar o volume de reprodução sem afetar outros fluxos de áudio. Você pode usar esse recurso se o MFPlay implementar o esbotão cruzado de áudio, criando duas instâncias do objeto MFPlay e ajustando o volume separadamente.
 
-Se você usar métodos MFPlay para alterar o volume ou o estado de mudo, as alterações não aparecerão em SNDVOL. Por exemplo, você pode chamar [**setmudo**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setmute) para mudo do áudio, mas o SNDVOL não mostrará a sessão como mudo. Por outro lado, se SndVol for usado para ajustar o volume da sessão, as alterações não serão refletidas nos valores retornados por [**IMFPMediaPlayer:: GetVolume**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-getvolume) ou [**IMFPMediaPlayer:: getmudo**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-getmute).
+Se você usar métodos MFPlay para alterar o estado de volume ou mudo, as alterações não aparecerão no Sndvol. Por exemplo, você pode chamar [**SetMute**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setmute) para colocar o áudio em mudo, mas o Sndvol não mostrará a sessão como muted. Por outro lado, se SndVol for usado para ajustar o volume de sessão, as alterações não serão refletidas nos valores retornados por [**IMFPMediaPlayer::GetVolume**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-getvolume) ou [**IMFPMediaPlayer::GetMute**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-getmute).
 
-Para cada instância do objeto MFPlay Player, o nível de volume efetivo é igual a *fPlayerVolume* × *fSessionVolume*, em que *fPlayerVolume* é o valor retornado por [**GetVolume**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-getvolume)e *fSessionVolume* é o volume mestre da sessão.
+Para cada instância do objeto do player MFPlay, o nível de volume efetivo é igual a *fPlayerVolume* × *fSessionVolume*, em que *fPlayerVolume* é o valor retornado por [**GetVolume**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-getvolume)e *fSessionVolume* é o volume mestre da sessão.
 
 Para cenários de reprodução simples, pode ser preferível usar o WASAPI para controlar o volume de áudio para toda a sessão, em vez de usar os métodos MFPlay.
 
 ## <a name="example-code"></a>Código de exemplo
 
-O que vem a seguir é uma classe C++ que manipula as tarefas básicas no WASAPI:
+Veja a seguir uma classe C++ que lida com as tarefas básicas no WASAPI:
 
--   Controlando o volume e o estado de mudo para a sessão.
--   Obter notificações sempre que o volume ou o estado de mudo for alterado.
+-   Controlar o volume e o estado de mute da sessão.
+-   Obter notificações sempre que o volume ou o estado de mudo mudar.
 
 ### <a name="class-declaration"></a>Declaração de classe
 
-A `CAudioSessionVolume` declaração de classe implementa a interface [**IAudioSessionEvents**](/windows/win32/api/audiopolicy/nn-audiopolicy-iaudiosessionevents) , que é a interface de retorno de chamada para eventos de sessão de áudio.
+A `CAudioSessionVolume` declaração de classe implementa a interface [**IAudioSessionEvents,**](/windows/win32/api/audiopolicy/nn-audiopolicy-iaudiosessionevents) que é a interface de retorno de chamada para eventos de sessão de áudio.
 
 
 ```C++
@@ -145,16 +145,16 @@ protected:
 
 
 
-Quando o `CAudioSessionVolume` objeto recebe um evento de sessão de áudio, ele posta uma mensagem de janela privada para o aplicativo. O identificador de janela e a mensagem de janela são fornecidos como parâmetros para o `CAudioSessionVolume::CreateInstance` método estático.
+Quando o `CAudioSessionVolume` objeto recebe um evento de sessão de áudio, ele posta uma mensagem de janela privada para o aplicativo. O alça de janela e a mensagem da janela são dados como parâmetros para o método `CAudioSessionVolume::CreateInstance` estático.
 
-### <a name="getting-the-wasapi-interface-pointers"></a>Obtendo os ponteiros de interface WASAPI
+### <a name="getting-the-wasapi-interface-pointers"></a>Obter os ponteiros da interface WASAPI
 
 `CAudioSessionVolume` usa duas interfaces WASAPI principais:
 
--   O [**IAudioSessionControl**](/windows/win32/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol) gerencia a sessão de áudio.
--   [**ISimpleAudioVolume**](/windows/win32/api/audioclient/nn-audioclient-isimpleaudiovolume) controla o nível de volume e o estado de mudo da sessão.
+-   [**IAudioSessionControl gerencia**](/windows/win32/api/audiopolicy/nn-audiopolicy-iaudiosessioncontrol) a sessão de áudio.
+-   [**ISimpleAudioVolume**](/windows/win32/api/audioclient/nn-audioclient-isimpleaudiovolume) controla o nível de volume e o estado de mute da sessão.
 
-Para obter essas interfaces, você deve enumerar o ponto de extremidade de áudio usado pelo SAR. Um *ponto de extremidade de áudio* é um dispositivo de hardware que captura ou consome dados de áudio. Para reprodução de áudio, um ponto de extremidade é simplesmente um palestrante ou outra saída de áudio. Por padrão, o SAR usa o ponto de extremidade padrão para a função de dispositivo **eConsole** . Uma *função de dispositivo* é uma função atribuída para um ponto de extremidade. As funções de dispositivo são especificadas pela enumeração [**ERole**](/windows/win32/api/mmdeviceapi/ne-mmdeviceapi-erole) , documentada em [APIs de áudio de núcleo](../coreaudio/core-audio-apis-in-windows-vista.md).
+Para obter essas interfaces, você deve enumerar o ponto de extremidade de áudio usado pelo SAR. Um *ponto de extremidade de áudio* é um dispositivo de hardware que captura ou consome dados de áudio. Para reprodução de áudio, um ponto de extremidade é simplesmente um alto-falante ou outra saída de áudio. Por padrão, a SAR usa o ponto de extremidade padrão para a **função de dispositivo eConsole.** Uma *função de* dispositivo é uma função atribuída a um ponto de extremidade. As funções de dispositivo são especificadas pela enumeração [**ERole,**](/windows/win32/api/mmdeviceapi/ne-mmdeviceapi-erole) que está documentada em APIs de [áudio principais.](../coreaudio/core-audio-apis-in-windows-vista.md)
 
 O código a seguir mostra como enumerar o ponto de extremidade e obter as interfaces WASAPI.
 
@@ -235,7 +235,7 @@ done:
 
 ### <a name="controlling-the-volume"></a>Controlando o volume
 
-Os `CAudioSessionVolume` métodos que controlam o volume de áudio chamam os métodos [**ISimpleAudioVolume**](/windows/win32/api/audioclient/nn-audioclient-isimpleaudiovolume) equivalentes. Por exemplo, `CAudioSessionVolume::SetVolume` chama [**ISimpleAudioVolume:: SetMasterVolume**](/windows/win32/api/audioclient/nf-audioclient-isimpleaudiovolume-setmastervolume), conforme mostrado no código a seguir.
+Os `CAudioSessionVolume` métodos que controlam o volume de áudio chamam os métodos [**ISimpleAudioVolume**](/windows/win32/api/audioclient/nn-audioclient-isimpleaudiovolume) equivalentes. Por exemplo, `CAudioSessionVolume::SetVolume` chama [**ISimpleAudioVolume::SetMasterVolume**](/windows/win32/api/audioclient/nf-audioclient-isimpleaudiovolume-setmastervolume), conforme mostrado no código a seguir.
 
 
 ```C++
@@ -257,9 +257,9 @@ HRESULT CAudioSessionVolume::SetVolume(float flVolume)
 
 
 
-## <a name="complete-caudiosessionvolume-code"></a>Código completo do CAudioSessionVolume
+## <a name="complete-caudiosessionvolume-code"></a>Código CAudioSessionVolume completo
 
-Aqui está a listagem completa para os métodos da `CAudioSessionVolume` classe.
+Aqui está a listagem completa para os métodos da `CAudioSessionVolume` classe .
 
 
 ```C++
@@ -572,7 +572,7 @@ HRESULT CAudioSessionVolume::OnSimpleVolumeChanged(
 
 ## <a name="requirements"></a>Requisitos
 
-O MFPlay requer o Windows 7.
+O MFPlay requer Windows 7.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

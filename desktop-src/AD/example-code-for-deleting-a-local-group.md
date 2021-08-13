@@ -1,22 +1,22 @@
 ---
 title: Exemplo de código para excluir um grupo local
-description: Exemplos de código para excluir um grupo local em um servidor membro ou em um computador que executa o Windows NT Workstation ou o Windows 2000 Professional.
+description: exemplos de código para excluir um grupo local em um servidor membro ou em um computador executando Windows NT estação de trabalho ou Windows 2000 Professional.
 ms.assetid: ff4fd148-2fa2-4355-bfaa-1f093d61aa00
 ms.tgt_platform: multiple
 keywords:
 - Exemplos de Active Directory Active Directory, excluindo um grupo local
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b91588bf59ae7b276aecbaa1740b2510f652f5c8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c02f58958888f7540559cdf196f8f44f54c6c3d2ddd8039b05f82688be2e7f9b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103634954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190758"
 ---
 # <a name="example-code-for-deleting-a-local-group"></a>Exemplo de código para excluir um grupo local
 
-O exemplo de código C++ a seguir exclui um grupo local em um servidor membro ou um computador executando Windows 2000 Professional ou Windows NT Workstation.
+o exemplo de código C++ a seguir exclui um grupo local em um servidor membro ou um computador executando Windows 2000 Professional ou Windows NT estação de trabalho.
 
 
 ```C++
@@ -145,7 +145,7 @@ HRESULT DeleteADObject(LPOLESTR pwszAdsPath,
 
 
 
-O exemplo de código a seguir Visual Basic Scripting Edition exclui um grupo local em um servidor membro ou um computador que esteja executando o Windows 2000 Professional ou Windows NT Workstation.
+o exemplo de código a seguir Visual Basic scripting Edition exclui um grupo local em um servidor membro ou em um computador executando Windows 2000 Professional ou Windows NT estação de trabalho.
 
 
 ```VB
@@ -210,9 +210,9 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 
 
 
 

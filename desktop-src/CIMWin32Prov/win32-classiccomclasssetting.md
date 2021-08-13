@@ -1,8 +1,8 @@
 ---
-description: Representa as configurações de um componente de Component Object Model (COM).
+description: Representa as configurações de um componente Component Object Model (COM).
 ms.assetid: 18d9ddf2-184d-4680-8d56-f012c608ff7d
 ms.tgt_platform: multiple
-title: Classe Win32_ClassicCOMClassSetting
+title: Win32_ClassicCOMClassSetting classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -40,16 +40,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5f263a888ce9dea80444023faff57998bc3f2c1c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4aa3a60b68902bbcf7728866d24e5cedd831eac35ba629a3e2516a885a28efaf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105771698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118418237"
 ---
-# <a name="win32_classiccomclasssetting-class"></a>\_Classe Win32 ClassicCOMClassSetting
+# <a name="win32_classiccomclasssetting-class"></a>Classe Win32 \_ ClassicCOMClassSetting
 
-A [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ ClassicCOMClassSetting do Win32** representa as configurações de um componente com (Component Object Model).
+A classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **Win32 \_ ClassicCOMClassSetting** representa as configurações de um componente COMPONENT OBJECT MODEL (COM).
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
@@ -90,13 +90,13 @@ class Win32_ClassicCOMClassSetting : Win32_COMSetting
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ ClassicCOMClassSetting** tem estes tipos de membros:
+A **classe Win32 \_ ClassicCOMClassSetting** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ ClassicCOMClassSetting** tem essas propriedades.
+A **classe Win32 \_ ClassicCOMClassSetting** tem essas propriedades.
 
 <dl> <dt>
 
@@ -109,10 +109,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ local \_ Machine \\ \\ software \\ \\ classes \\ \\ CLSID \\ \\ {GUID} \[ AppID \] ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \[ AppID \] ")
 </dt> </dl>
 
-GUID (identificador global exclusivo) para o aplicativo COM usando este componente COM.
+GUID (identificador global exclusivo) para o aplicativo COM usando esse componente COM.
 
 </dd> <dt>
 
@@ -125,10 +125,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ local \_ Machine \\ \\ software \\ \\ classes \\ \\ CLSID \\ \\ {GUID} \\ \\ conversão Autoconverter em \[ padrão \] ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ AutoConvertTo Default \[ \] ")
 </dt> </dl>
 
-GUID da classe COM na qual esse componente COM será automaticamente convertido.
+GUID da classe COM na qual esse componente COM será convertido automaticamente.
 
 </dd> <dt>
 
@@ -141,10 +141,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ local \_ Machine \\ \\ software \\ \\ classes \\ \\ CLSID \\ \\ {GUID} \\ \\ autotratáas \[ padrão \] ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ AutoTreatAs Default \[ \] ")
 </dt> </dl>
 
-GUID do componente COM que emulará automaticamente as instâncias dessa classe.
+GUID para o componente COM que emulará automaticamente instâncias dessa classe.
 
 </dd> <dt>
 
@@ -157,12 +157,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrição textual do objeto atual.
+Descrição textual curta do objeto atual.
 
-Essa propriedade é herdada [**da \_ configuração de CIM**](cim-setting.md).
+Essa propriedade é herdada da [**Configuração cim \_**](cim-setting.md).
 
 </dd> <dt>
 
@@ -175,7 +175,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ local \_ Machine \\ \\ software \\ \\ classes \\ \\ CLSID \\ \\ {GUID} \[ padrão \] ")
+Qualificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY LOCAL MACHINE SOFTWARE \_ Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} Default \[ \] ")
 </dt> </dl>
 
 GUID deste componente COM.
@@ -185,20 +185,20 @@ GUID deste componente COM.
 **Controle**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ local \_ Machine \\ \\ software \\ \\ classes \\ \\ CLSID \\ \\ {GUID} \\ \\ controle")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ Control")
 </dt> </dl>
 
 O componente COM é um controle OLE.
 
 </dd> <dt>
 
-**DefaultIcon**
+**Defaulticon**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -207,10 +207,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ local \_ Machine \\ \\ software \\ \\ classes \\ \\ CLSID \\ \\ {GUID} \\ \\ DefaultIcon \[ padrão \] ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ DefaultIcon \[ DefaultIcon \] ")
 </dt> </dl>
 
-Caminho para o arquivo executável e o identificador de recurso do ícone padrão usado pela classe.
+Caminho para o arquivo executável e o identificador de recurso do ícone padrão usado pela classe .
 
 </dd> <dt>
 
@@ -225,7 +225,7 @@ Tipo de acesso: Somente leitura
 
 Descrição textual do objeto atual.
 
-Essa propriedade é herdada [**da \_ configuração de CIM**](cim-setting.md).
+Essa propriedade é herdada da [**Configuração cim \_**](cim-setting.md).
 
 </dd> <dt>
 
@@ -238,10 +238,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ local \_ Machine \\ \\ software \\ \\ classes \\ \\ CLSID \\ \\ {GUID} \\ \\ InprocHandler \[ padrão \] ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ InprocHandler Default \[ \] ")
 </dt> </dl>
 
-Caminho completo incluindo nome de arquivo ou somente nome de arquivo para um manipulador personalizado de 16 bits para o componente COM. O provedor nem sempre retorna o caminho completo.
+Caminho completo, incluindo filename ou apenas filename para um manipulador personalizado de 16 bits para o componente COM. O provedor nem sempre retorna o caminho completo.
 
 </dd> <dt>
 
@@ -254,10 +254,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ local \_ Machine \\ \\ software \\ \\ classes \\ \\ CLSID \\ \\ {GUID} \\ \\ InprocHandler32 \[ padrão \] ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ InprocHandler32 Default \[ \] ")
 </dt> </dl>
 
-Caminho completo incluindo nome de arquivo ou somente nome de arquivo para um manipulador personalizado de 32 bits para o componente COM. O provedor nem sempre retorna o caminho completo.
+Caminho completo, incluindo filename ou apenas filename para um manipulador personalizado de 32 bits para o componente COM. O provedor nem sempre retorna o caminho completo.
 
 </dd> <dt>
 
@@ -270,14 +270,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ local \_ Machine \\ \\ software \\ \\ classes \\ \\ CLSID \\ \\ {GUID} \\ \\ InprocServer \[ padrão \] ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ InprocServer Default \[ \] ")
 </dt> </dl>
 
-Caminho completo incluindo nome de arquivo ou somente nome de arquivo para uma DLL de servidor em processo de 16 bits para este componente COM. O provedor nem sempre retorna o caminho completo.
+Caminho completo, incluindo filename ou apenas filename para uma DLL de servidor em processo de 16 bits para este componente COM. O provedor nem sempre retorna o caminho completo.
 
 </dd> <dt>
 
-**InprocServer32**
+**Inprocserver32**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -286,23 +286,23 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ local \_ Machine \\ \\ software \\ \\ classes \\ \\ CLSID \\ \\ {GUID} \\ \\ InprocServer32 \[ padrão \] ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ InprocServer32 Default \[ \] ")
 </dt> </dl>
 
-Caminho completo incluindo nome de arquivo ou somente nome de arquivo para uma DLL de servidor em processo de 32 bits para este componente COM. O provedor nem sempre retorna o caminho completo.
+Caminho completo, incluindo filename ou apenas filename para uma DLL de servidor em processo de 32 bits para este componente COM. O provedor nem sempre retorna o caminho completo.
 
 </dd> <dt>
 
-**Insertable**
+**Inserível**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ local \_ Machine \\ \\ software \\ \\ classes \\ \\ CLSID \\ \\ {GUID} \\ \\ Insertable")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ Insertable")
 </dt> </dl>
 
 O componente COM pode ser inserido em aplicativos de contêiner OLE.
@@ -312,13 +312,13 @@ O componente COM pode ser inserido em aplicativos de contêiner OLE.
 **JavaClass**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ local \_ Machine \\ \\ software \\ \\ classes \\ \\ CLSID \\ \\ {GUID} \\ \\ InprocServer32 \[ JavaClass \] ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ InprocServer32 \[ JavaClass \] ")
 </dt> </dl>
 
 O componente COM é um componente Java.
@@ -334,10 +334,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ local \_ Machine \\ \\ software \\ \\ classes \\ \\ CLSID \\ \\ {GUID} \\ \\ LocalServer \[ padrão \] ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ LocalServer Default \[ \] ")
 </dt> </dl>
 
-Caminho completo incluindo nome de arquivo ou somente nome de arquivo para um aplicativo de servidor local de 16 bits. O provedor nem sempre retorna o caminho completo.
+Caminho completo, incluindo filename ou apenas filename para um aplicativo de servidor local de 16 bits. O provedor nem sempre retorna o caminho completo.
 
 </dd> <dt>
 
@@ -350,10 +350,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ local \_ Machine \\ \\ software \\ \\ classes \\ \\ CLSID \\ \\ {GUID} \\ \\ LocalServer32 \[ padrão \] ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ \\ \\ \\ CLSID \\ \\ {GUID} \\ \\ LocalServer32 Default \[ \] ")
 </dt> </dl>
 
-Caminho completo incluindo nome de arquivo ou somente nome de arquivo para um aplicativo de servidor local de 32 bits. O provedor nem sempre retorna o caminho completo.
+Caminho completo, incluindo filename ou apenas filename para um aplicativo de servidor local de 32 bits. O provedor nem sempre retorna o caminho completo.
 
 </dd> <dt>
 
@@ -484,7 +484,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKEY \_ local \_ Machine \\ \\ software \\ \\ classes \\ \\ CLSID \\ \\ {GUID} \\ \\ ToolBoxBitmap32 \[ padrão \] ")
 </dt> </dl>
 
-O nome do módulo e o identificador de recurso para um pequeno bitmap (16x16) usado para a face de uma barra de ferramentas ou botão de caixa de ferramentas. Usado quando o componente COM é um controle OLE ou ActiveX.
+O nome do módulo e o identificador de recurso para um pequeno bitmap (16x16) usado para a face de uma barra de ferramentas ou botão de caixa de ferramentas. usado quando o componente COM é um controle OLE ou ActiveX.
 
 </dd> <dt>
 

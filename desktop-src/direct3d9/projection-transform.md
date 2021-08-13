@@ -1,19 +1,19 @@
 ---
-description: Você pode considerar a transformação projeção como controle dos elementos internos da câmera; é análogo a escolher uma lente para a câmera.
+description: Você pode pensar na transformação de projeção como controlando os internos da câmera; é análogo à escolha de uma lente para a câmera.
 ms.assetid: 09e6e887-7657-4654-be19-2e83dcbc91cf
-title: Transformação de projeção (Direct3D 9)
+title: Transformação projeção (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 37b518583dd534bec9784590150233847274ca71
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ad15ee0f4d23401563a9a51b8767be3da6e47dfee9dc76d580154ef1d524d02a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104163804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118092665"
 ---
-# <a name="projection-transform-direct3d-9"></a>Transformação de projeção (Direct3D 9)
+# <a name="projection-transform-direct3d-9"></a>Transformação projeção (Direct3D 9)
 
-Você pode considerar a transformação projeção como controle dos elementos internos da câmera; é análogo a escolher uma lente para a câmera. Este é o mais complicado dos três tipos de transformação. Essa discussão sobre a transformação projeção é organizada nos tópicos a seguir.
+Você pode pensar na transformação de projeção como controlando os internos da câmera; é análogo à escolha de uma lente para a câmera. Este é o mais complicado dos três tipos de transformação. Esta discussão sobre a transformação de projeção é organizada nos tópicos a seguir.
 
 A matriz de projeção costuma ser uma projeção de perspectiva e escala. A transformação da projeção converte o tronco de exibição em uma forma cuboide. Como a parte perto do final do tronco de exibição é menor do que a extremidade oposta, isso tem o efeito de expandir objetos próximos da câmera; é assim que a perspectiva é aplicada à cena.
 
@@ -25,7 +25,7 @@ A matriz de visualização converte a câmera para a origem por meio da transla�
 
 ![ilustração da matriz de translação](images/projmat2.png)
 
-Multiplicar a matriz de conversão pela matriz de projeção (T \* P) fornece a matriz de projeção composta, conforme mostrado na ilustração a seguir.
+Multiplicar a matriz de conversão pela matriz de projeção (T P) fornece a matriz de \* projeção composta, conforme mostrado na ilustração a seguir.
 
 ![ilustração da matriz de projeção composta](images/projmat3.png)
 
@@ -49,15 +49,15 @@ Para seu app, usar os ângulos de campo de visão para definir os coeficientes d
 
 Nessas fórmulas, Zₙ representa a posição do plano de recorte próximo e o V<sub>w</sub> e variáveis Vₕ representam a largura e altura do visor no espaço da câmera.
 
-Para um aplicativo C++, essas duas dimensões correspondem diretamente aos membros Width e Height da estrutura [**D3DVIEWPORT9**](d3dviewport9.md) .
+Para um aplicativo C++, essas duas dimensões correspondem diretamente aos membros Width e Height da [**estrutura D3DVIEWPORT9.**](d3dviewport9.md)
 
 Seja qual fórmula você decidir usar, lembre-se de definir Zₙ para o maior valor possível, pois os valores de z extremamente próximos da câmera não variam muito. Isso dificulta comparações de profundidade usando buffers de z de 16 bits um pouco complicados.
 
-Assim como nas transformações do mundo e da exibição, você chama o método [**IDirect3DDevice9:: SetTransform**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settransform) para definir a transformação da projeção.
+Assim como com o mundo e as transformações de exibição, você chama o [**método IDirect3DDevice9::SetTransform**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settransform) para definir a transformação de projeção.
 
 ## <a name="setting-up-a-projection-matrix"></a>Configurando uma matriz de projeção
 
-A função de exemplo ProjectionMatrix a seguir define os planos de recorte frontal e posterior, bem como o campo horizontal e vertical dos ângulos de exibição. Os campos de exibição devem ser inferiores a pi radianos.
+A função de exemplo ProjectionMatrix a seguir define os planos de recorte frontal e voltar, bem como o campo horizontal e vertical dos ângulos de exibição. Os campos de exibição devem ser menores que radianos pi.
 
 
 ```
@@ -91,9 +91,9 @@ ProjectionMatrix(const float near_plane, // Distance to near clipping
 
 
 
-Depois de criar a matriz, defina-a com [**IDirect3DDevice9:: SetTransform**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settransform) especificando a \_ projeção D3DTS.
+Depois de criar a matriz, de defini-la [**com IDirect3DDevice9::SetTransform**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settransform) especificando PROJEÇÃO de D3DTS. \_
 
-A biblioteca do utilitário D3DX fornece as seguintes funções para ajudá-lo a configurar sua matriz de projeção.
+A biblioteca do utilitário D3DX fornece as funções a seguir para ajudá-lo a configurar sua matriz de projeção.
 
 -   [**D3DXMatrixPerspectiveLH**](d3dxmatrixperspectivelh.md)
 -   [**D3DXMatrixPerspectiveRH**](d3dxmatrixperspectiverh.md)
@@ -102,7 +102,7 @@ A biblioteca do utilitário D3DX fornece as seguintes funções para ajudá-lo a
 -   [**D3DXMatrixPerspectiveOffCenterLH**](d3dxmatrixperspectiveoffcenterlh.md)
 -   [**D3DXMatrixPerspectiveOffCenterRH**](d3dxmatrixperspectiveoffcenterrh.md)
 
-## <a name="a-w-friendly-projection-matrix"></a>Uma matriz de projeção amigável W
+## <a name="a-w-friendly-projection-matrix"></a>Uma matriz de projeção amigável do W
 
 O Direct3D pode usar o componente de w de um vértice que foi transformado pelas matrizes de mundo, exibição e projeção para realizar cálculos baseados em profundidade em buffer de profundidade ou efeitos de nevoeiro. Cálculos como esses exigem que sua matriz de projeção normalize w para equivaler ao z do espaço do mundo. Em poucas palavras, se sua matriz de projeção inclui um coeficiente (3,4) que não é 1, todos os coeficientes devem ser dimensionados pelo inverso do coeficiente (3,4) para criar uma matriz adequada. Se você não fornecer uma matriz em conformidade, efeitos de nevoeiro e buffering de profundidade não serão aplicados corretamente.
 
@@ -110,7 +110,7 @@ A ilustração a seguir mostra uma matriz de projeção incompatível e a mesma 
 
 ![ilustrações de uma matriz de projeção incompatível e uma matriz com nevoeiro relativo aos olhos](images/eyerlmx.png)
 
-Nas matrizes anteriores, todas as variáveis são consideradas diferente de zero. Para obter mais informações sobre a neblina relacionada a olhos, consulte [profundidade baseada em olho versus Z](pixel-fog.md). Para obter informações sobre o buffer de profundidade baseado em w, consulte [buffers de profundidade (Direct3D 9)](depth-buffers.md).
+Nas matrizes anteriores, todas as variáveis são consideradas diferente de zero. Para obter mais informações sobre o olho relativo ao olho, consulte [Eye-Relative vs. Profundidade baseada em Z.](pixel-fog.md) Para obter informações sobre o buffer de profundidade baseado em w, consulte Buffers de [profundidade (Direct3D 9)](depth-buffers.md).
 
 Direct3D usa matriz de projeção atual definida em seus cálculos de profundidade com base em w. Como resultado, os apps devem definir uma matriz de projeção em conformidade para receber os recursos desejados com base em w, mesmo que eles não usem Direct3D para transformações.
 

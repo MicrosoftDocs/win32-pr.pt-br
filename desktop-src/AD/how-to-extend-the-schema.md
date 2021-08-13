@@ -9,12 +9,12 @@ keywords:
 - Active Directory, usando, esquema, estendendo o esquema, como estender
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 437b23229182e6ec6f94b500feb764b4bbcf06e7
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 0bc30f7292c1c1077cc4e44a9f022a430af87bc3efe876a5c197b3fe370d3b95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103640398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118188154"
 ---
 # <a name="how-to-extend-the-schema"></a>Como estender o esquema
 
@@ -26,13 +26,13 @@ Verifique Active Directory funcionalidade antes de atualizar o esquema para ajud
 
 **Para verificar Active Directory funcionalidade antes de aplicar a extensão do esquema**
 
-1.  Faça logon em uma estação de trabalho administrativa que tenha a ferramenta de suporte do Windows Repadmin.exe instalada.
+1.  faça logon em uma estação de trabalho administrativa que tenha a ferramenta de suporte do Windows Repadmin.exe instalada.
     > [!Note]  
     > As ferramentas de suporte estão localizadas na mídia de instalação do sistema operacional na \\ pasta ferramentas de suporte.
 
-     
+     
 
-2.  Abra um prompt de comando e, em seguida, altere os diretórios para a pasta na qual as ferramentas de suporte do Windows estão instaladas.
+2.  abra um prompt de comando e, em seguida, altere os diretórios para a pasta na qual as ferramentas de suporte do Windows estão instaladas.
 3.  Em um prompt de comando, digite o seguinte e pressione ENTER:
 
     ``` syntax
@@ -48,9 +48,9 @@ Verifique Active Directory funcionalidade antes de atualizar o esquema para ajud
 1.  Determine o método de extensão. Depois de criar cuidadosamente as alterações de esquema, a próxima etapa é decidir qual método usar para estender o esquema. É possível usar um dos seguintes métodos:
     -   Manualmente, usando arquivos de importação. Consulte a documentação [usando a ferramenta Ldifde](/previous-versions/office/developer/exchange-server-2003/ms870068(v=exchg.65)).
         > [!Note]  
-        > Não use o LDIFDE para importar \* arquivos. ldf do Windows SCH. Esses arquivos são necessários para estender o esquema de Active Directory a fim de instalar controladores de domínio que executam uma versão mais recente do Windows Server do que a versão em execução no mestre de esquema atual. Quando você precisar estender o esquema para instalar um novo controlador de domínio, use Adprep.exe.
+        > não use o LDIFDE para importar Windows \* arquivos. ldf Do Sch. esses arquivos são necessários para estender o esquema de Active Directory para instalar controladores de domínio que executam uma versão mais recente do Windows Server do que a versão em execução no mestre de esquema atual. Quando você precisar estender o esquema para instalar um novo controlador de domínio, use Adprep.exe.
 
-         
+         
 
     -   Programaticamente, usando um programa de instalação. Para obter mais informações, consulte [extensão programática](programmatic-extension.md)
 2.  Habilitar alterações de esquema. Para obter mais informações, consulte [pré-requisitos para instalar uma extensão de esquema](prerequisites-for-installing-a-schema-extension.md) e [habilitar alterações de esquema no mestre de esquema](enabling-schema-changes-at-the-schema-master.md).
@@ -67,7 +67,7 @@ Verifique Active Directory funcionalidade antes de atualizar o esquema para ajud
 [Obtendo um identificador de objeto](obtaining-an-object-identifier.md)
 </dt> <dt>
 
-[As novas ferramentas de linha de comando para Active Directory no Windows Server 2003](https://support.microsoft.com/kb/298882)
+[as novas ferramentas de linha de comando para Active Directory no Windows Server 2003](https://support.microsoft.com/kb/298882)
 </dt> <dt>
 
 [Usando a ferramenta LDIFDE](/previous-versions/office/developer/exchange-server-2003/ms870068(v=exchg.65))
@@ -79,6 +79,6 @@ Verifique Active Directory funcionalidade antes de atualizar o esquema para ajud
 [Restrições na extensão do esquema](restrictions-on-schema-extension.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

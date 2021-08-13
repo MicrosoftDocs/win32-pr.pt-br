@@ -7,12 +7,12 @@ keywords:
 - Exemplos de Active Directory Active Directory, recuperando alterações usando USNChanged
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 175092699d6f0e99c20dcc4af136cfea792c3754
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 244bb2ad1133925cf44e0183c66955f523d1e55db617fd964e43f5b9e8aa6800
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104293892"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118189689"
 ---
 # <a name="example-code-to-retrieve-changes-using-usnchanged"></a>Exemplo de código para recuperar alterações usando USNChanged
 
@@ -817,6 +817,6 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 

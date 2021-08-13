@@ -4,12 +4,12 @@ ms.assetid: 428448bc-4bbf-420d-a41c-c38112bd26cc
 title: Operadores XMUSHORT4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e55dfee6b926b67a097145e992ae255b2aef2ad2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7bcd580c2e01c369d6351f5dd493d10b3d271adc8eea259dd9f2403f49ed8d1c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118500700"
 ---
 # <a name="xmushort4-operators"></a>Operadores XMUSHORT4
 

@@ -15,12 +15,12 @@ keywords:
 - interfaces, ITableProvider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9879d1589985df0257a1dd7805f474c013b93732
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fb484245ee7c2f982ca6c5624ad108a0c75a4721ba7f6cbdf7a8af8ee2d91881
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104555634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118324121"
 ---
 # <a name="table-control-pattern"></a>Padrão de controle de tabela
 
@@ -42,9 +42,9 @@ Ao implementar o padrão de controle de **tabela** , observe as seguintes diretr
 -   Um cabeçalho de coluna ou de linha pode estar contido em um objeto de tabela ou ser um objeto de cabeçalho separado que está associado a um objeto de tabela.
 -   Cabeçalhos de coluna e linha podem incluir um cabeçalho principal, bem como quaisquer cabeçalhos de suporte.
     > [!Note]  
-    > Esse conceito se torna evidente em uma planilha do Microsoft Excel em que um usuário definiu uma coluna de **nome** . Agora, esta coluna tem dois cabeçalhos, incluindo o primeiro cabeçalho de **nome** definido pelo usuário e a designação alfanumérica para aquela coluna atribuída pelo aplicativo.
+    > esse conceito se torna evidente em uma planilha Microsoft Excel em que um usuário definiu uma coluna de **nome** . Agora, esta coluna tem dois cabeçalhos, incluindo o primeiro cabeçalho de **nome** definido pelo usuário e a designação alfanumérica para aquela coluna atribuída pelo aplicativo.
 
-     
+     
 
 -   Consulte [padrão de controle de grade](uiauto-implementinggrid.md) para funcionalidade de grade relacionada.
 
@@ -70,7 +70,7 @@ As propriedades e os métodos a seguir são necessários para implementar a inte
 
 
 
- 
+ 
 
 Este padrão de controle não tem eventos associados.
 
@@ -93,9 +93,9 @@ Este padrão de controle não tem eventos associados.
 [Visão geral da árvore de automação de interface do usuário](uiauto-treeoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

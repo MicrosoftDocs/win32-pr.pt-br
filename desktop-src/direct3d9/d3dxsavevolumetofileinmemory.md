@@ -1,7 +1,7 @@
 ---
 description: Salva um volume em um buffer. O método cria um buffer ID3DXBuffer para armazenar os dados e retorna esse objeto.
 ms.assetid: 4887ff1f-7904-4764-b284-b2c8e037f806
-title: Função D3DXSaveVolumeToFileInMemory (D3dx9tex. h)
+title: Função D3DXSaveVolumeToFileInMemory (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7daaa41e0cc87ea03a0aedc5fc2f7ca96653329f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f7c7326609d6d3c006f3c97aeff18de425a27569db63378864fc34335558117e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104172985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118298399"
 ---
 # <a name="d3dxsavevolumetofileinmemory-function"></a>Função D3DXSaveVolumeToFileInMemory
 
@@ -44,7 +44,7 @@ HRESULT D3DXSaveVolumeToFileInMemory(
 
 <dl> <dt>
 
-*ppDestBuf* \[ fora\]
+*ppDestBuf* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
@@ -53,16 +53,16 @@ Endereço de um ponteiro para um buffer [**ID3DXBuffer**](id3dxbuffer.md) que ar
 
 </dd> <dt>
 
-*DestFormat* \[ no\]
+*DestFormat* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **D3DXIMAGE \_ FileFormat**](./d3dximage-fileformat.md)**
+Tipo: **[ **D3DXIMAGE \_ FILEFORMAT**](./d3dximage-fileformat.md)**
 
-[**D3DXIMAGE \_ Fileformate**](./d3dximage-fileformat.md) especificando o formato de arquivo a ser usado ao salvar. Essa função dá suporte ao salvamento em todos os formatos de **\_ FileFormat do D3DXIMAGE** , exceto no pixmap portátil (. ppm) e no adaptador gráfico Targa/Truevision (. tga).
+[**D3DXIMAGE \_ FILEFORMAT**](./d3dximage-fileformat.md) especificando o formato de arquivo a ser usado ao salvar. Essa função dá suporte à salvação em todos os formatos **D3DXIMAGE \_ FILEFORMAT,** exceto o Mapa Portátil (.ppm) e o Adaptador gráfico Targa/Truevision (.tga).
 
 </dd> <dt>
 
-*pSrcVolume* \[ no\]
+*pSrcVolume* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DVOLUME9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvolume9)**
@@ -71,21 +71,21 @@ Ponteiro para a interface [**IDirect3DVolume9**](/windows/win32/api/d3d9helper/n
 
 </dd> <dt>
 
-*pSrcPalette* \[ no\]
+*pSrcPalette* \[ Em\]
 </dt> <dd>
 
-Tipo: **const [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
+Tipo: **const [**PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
 
-Ponteiro para uma estrutura [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) que contém uma paleta de 256 cores. Este parâmetro pode ser **NULL**.
+Ponteiro para uma [**estrutura PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) que contém uma paleta de 256 cores. Este parâmetro pode ser **NULL**.
 
 </dd> <dt>
 
-*pSrcBox* \[ no\]
+*pSrcBox* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DBOX**](d3dbox.md) \***
 
-Ponteiro para uma estrutura [**D3DBOX**](d3dbox.md) . Especifica a caixa de origem. Defina esse parâmetro como **NULL** para especificar o volume inteiro.
+Ponteiro para uma [**estrutura D3DBOX.**](d3dbox.md) Especifica a caixa de origem. De definir esse parâmetro como **NULL** para especificar o volume inteiro.
 
 </dd> </dl>
 
@@ -93,7 +93,7 @@ Ponteiro para uma estrutura [**D3DBOX**](d3dbox.md) . Especifica a caixa de orig
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser o seguinte: D3DERR \_ INVALIDCALL
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser o seguinte: D3DERR \_ INVALIDCALL
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,8 +101,8 @@ Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a funçã
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9tex. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| parâmetro<br/>  | <dl> <dt>D3dx9tex.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

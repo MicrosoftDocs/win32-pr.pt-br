@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: métodos de JET_COLUMNDEF'
-title: Métodos de JET_COLUMNDEF
+description: 'Saiba mais sobre: JET_COLUMNDEF métodos'
+title: JET_COLUMNDEF métodos
 TOCTitle: JET_COLUMNDEF methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.JET_COLUMNDEF
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columndef_methods(v=EXCHG.10)
 ms:contentKeyID: 55103483
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: e6c92fab44611e4ba44db613d3a1b67a4c82752c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4a564e4bce429c70975db5de8cc0bca2c4ad96adbe8c6897b18f8614c5e00ef0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118075984"
 ---
-# <a name="jet_columndef-methods"></a>Métodos de JET_COLUMNDEF
+# <a name="jet_columndef-methods"></a>JET_COLUMNDEF métodos
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo de [JET_COLUMNDEF](./jet-columndef-class.md) expõe os membros a seguir.
+O [JET_COLUMNDEF](./jet-columndef-class.md) tipo expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -40,7 +40,7 @@ O tipo de [JET_COLUMNDEF](./jet-columndef-class.md) expõe os membros a seguir.
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335042(v=exchg.10).md">DeepClone</a></td>
-<td>Retorna uma cópia profunda do objeto.</td>
+<td>Retorna uma cópia profunda do objeto .</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -59,18 +59,18 @@ O tipo de [JET_COLUMNDEF](./jet-columndef-class.md) expõe os membros a seguir.
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335039(v=exchg.10).md">ToString</a></td>
-<td>Retorna uma <a href="/dotnet/api/system.string">cadeia de caracteres</a> que representa a <a href="dn335038(v=exchg.10).md">JET_COLUMNDEF</a>atual. (Substitui <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>.)</td>
+<td>Retorna uma <a href="/dotnet/api/system.string">Cadeia de</a> caracteres que representa o <a href="dn335038(v=exchg.10).md">valor JET_COLUMNDEF</a>. (Substitui <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>.)</td>
 </tr>
 </tbody>
 </table>
@@ -82,6 +82,6 @@ Parte superior
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_COLUMNDEF](./jet-columndef-class.md)
+[JET_COLUMNDEF classe](./jet-columndef-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

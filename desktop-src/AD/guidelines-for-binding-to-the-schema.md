@@ -8,12 +8,12 @@ keywords:
 - AD Schema, ligando para
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65bf246a4ea1ded5c7d80c52abb8ac9192182b3b
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: a1492814bbce4b359a16c10f1d92340ae06d0f3c58177cd125a0b0c861f32f76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103823655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118188680"
 ---
 # <a name="guidelines-for-binding-to-the-schema"></a>Diretrizes para associação ao esquema
 
@@ -36,6 +36,6 @@ Você deve associar diretamente ao contêiner de esquema em vez de usar o esquem
 -   Para consultar objetos **attributeSchema** e **classSchema** . Para pesquisar classes ou atributos que correspondam a um filtro especificado, associe-se ao contêiner de esquema e execute uma pesquisa de nível único.
 -   Para adicionar ou modificar atributos ou classes. O esquema abstrato é somente leitura; Você não pode usá-lo para modificar ou estender o esquema. Lembre-se de que as modificações devem ser feitas no controlador de domínio que é o mestre de esquema. Para obter mais informações, consulte [pré-requisitos para instalar uma extensão de esquema](prerequisites-for-installing-a-schema-extension.md).
 
- 
+ 
 
- 
+ 

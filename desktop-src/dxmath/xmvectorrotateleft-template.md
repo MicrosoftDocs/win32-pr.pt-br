@@ -1,15 +1,15 @@
 ---
 description: Gira o vetor à esquerda por um determinado número de elementos de 32 bits.
 ms.assetid: ba3698ed-212d-4ef0-846a-4099d0e1abec
-title: Modelo XMVectorRotateLeft (DirectXMath. h)
+title: Modelo XMVectorRotateLeft (DirectXMath.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e5b52fccebeb93803fdc33346fa4ee5e873c1d5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cbb3d2a06f775e99b275d7333816307f494c5b2a4a7cc0183eaddc4ee4cd8950
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118499399"
 ---
 # <a name="xmvectorrotateleft-template"></a>Modelo XMVectorRotateLeft
 
@@ -27,31 +27,31 @@ template<uint32_t Elements> XMVECTOR XMVectorRotateLeft(
 
 <dl> <dt>
 
-<span id="V"></span><span id="v"></span>*L*
+<span id="V"></span><span id="v"></span>*V*
 </dt> <dd>
 
-\[em \] vetor para girar para a esquerda.
+\[em \] Vetor para girar para a esquerda.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retorna o [**XMVECTOR**](xmvector-data-type.md)girado.
+Retorna o [**XMVECTOR girado.**](xmvector-data-type.md)
 
 ## <a name="remarks"></a>Comentários
 
-Essa função é uma versão de modelo do [**XMVectorRotateLeft**](/windows/win32/api/directxmath/nf-directxmath-xmvectorrotateleft) , em que o argumento *Elements* é um valor de modelo.
+Essa função é uma versão de modelo [**de XMVectorRotateLeft**](/windows/win32/api/directxmath/nf-directxmath-xmvectorrotateleft) em que o *argumento Elements* é um valor de modelo.
 
 > [!Note]  
-> O `XMVectorRotateLeft` modelo é novo para DirectXMath e não está disponível para o XNAMath 2. x.
+> O `XMVectorRotateLeft` modelo é novo para DirectXMath e não está disponível para XNAMath 2.x.
 
  
 
-**Namespace**: usar DirectX
+**Namespace**: usar o DirectX
 
 ### <a name="platform-requirements"></a>Requisitos de plataforma
 
-Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. Com suporte para aplicativos de área de trabalho Win32, aplicativos da Windows Store e aplicativos Windows Phone 8.
+Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. Com suporte para aplicativos da área de trabalho Win32, aplicativos Windows Store e Windows Phone 8 aplicativos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Window
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>DirectXMath. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>DirectXMath.h</dt> </dl> |
 
 
 
@@ -67,7 +67,7 @@ Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Window
 
 <dl> <dt>
 
-[Funções de modelo de biblioteca DirectXMath](ovw-xnamath-templates.md)
+[Funções de modelo da biblioteca DirectXMath](ovw-xnamath-templates.md)
 </dt> <dt>
 
 [**XMVectorPermute**](xmvectorpermute-template.md)

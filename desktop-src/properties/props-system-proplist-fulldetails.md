@@ -4,12 +4,12 @@ ms.assetid: 7e784599-4020-4c81-84df-2a6d0fec4aa1
 title: System. PropList. FullDetails
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ccf1e05d1c9f09003a5af8a7d16ea89114391074
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bda4399c85b1084762d0e255b12a0d15b9bfc1cf93683c6f8433db106f04a556
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170328"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118465647"
 ---
 # <a name="systemproplistfulldetails"></a>System. PropList. FullDetails
 

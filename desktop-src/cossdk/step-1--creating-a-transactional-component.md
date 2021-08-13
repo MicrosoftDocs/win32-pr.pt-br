@@ -4,12 +4,12 @@ ms.assetid: 9ab9ac2d-bf1d-419c-8f6b-e2ee80a4bf20
 title: 'Etapa 1: Criando um componente transacional'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fdc378d85e628504e8724b765362b3397826f5e5
-ms.sourcegitcommit: bf526e267d3991892733bdd229c66d5365cf244a
+ms.openlocfilehash: 87f5c87fb5c5f615ee04a3233f1a563d5ae5230e4dd18908c78e94092ff0f5c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "104297835"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118305401"
 ---
 # <a name="step-1-creating-a-transactional-component"></a>Etapa 1: Criando um componente transacional
 
@@ -49,7 +49,7 @@ O COM+ associa o serviço de transação com ativação e simultaneidade JIT (ju
 
 O componente UpdateAuthorAddress abre uma conexão com o banco de dados pubs, permitindo que o usuário modifique o nome, o endereço ou o status do contrato de um autor. Ele também chama um segundo componente, que é discutido na [etapa 2: estendendo uma transação entre vários componentes](step-2--extending-a-transaction-across-multiple-components.md).
 
-Para usar o código a seguir em um projeto do Microsoft Visual Basic, abra um novo projeto de ActiveX.dll e adicione referências à biblioteca do Microsoft ActiveX Data Objects e à biblioteca de tipos de serviços COM+.
+para usar o código a seguir em um projeto do microsoft Visual Basic, abra um novo projeto de ActiveX.dll e adicione referências à biblioteca do microsoft ActiveX Data Objects e à biblioteca de tipos de serviços COM+.
 
 > [!Note]  
 > O código de exemplo neste primer é para fins de ilustração e pode não ser o mais eficiente para preparo e produção reais.

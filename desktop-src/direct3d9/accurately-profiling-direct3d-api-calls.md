@@ -4,12 +4,12 @@ ms.assetid: f969be42-d541-4e8d-aec4-eb9508bcc7cf
 title: Criação de perfil de chamadas à API do Direct3D com precisão (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cdb6d60fcc1b3ace4112dbf7028d91e2c9c8b345
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6457e47da58a3614270f89eefa1cfa33fbf30cf26544c1013d010696a68e4602
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118097452"
 ---
 # <a name="accurately-profiling-direct3d-api-calls-direct3d-9"></a>Criação de perfil de chamadas à API do Direct3D com precisão (Direct3D 9)
 
@@ -127,21 +127,21 @@ Otimizações no tempo de execução e/ou o driver são projetados para acelerar
 -   Um driver (ou o tempo de execução) pode salvar uma alteração de estado como um estado local. Como o driver pode operar em um algoritmo "lento" (adiar o trabalho até ser absolutamente necessário), o trabalho associado a algumas alterações de estado pode ser atrasado.
 -   O tempo de execução (ou um driver) pode remover alterações de estado otimizando. Um exemplo disso pode ser remover uma alteração de estado redundante que desabilite a iluminação porque a iluminação foi desabilitada anteriormente.
 
-Não há uma maneira à prova de examinar uma sequência de renderização e concluir quais alterações de estado definirão um bit sujo e adiar o trabalho ou serão simplesmente removidas pela otimização. Mesmo que você possa identificar alterações de estado otimizadas no tempo de execução ou no driver de hoje, o tempo de execução do amanhã ou o driver provavelmente será atualizado. Você também não sabe rapidamente qual é o estado anterior, portanto, é difícil identificar alterações de estado redundantes. A única maneira de verificar o custo de uma alteração de estado é medir a sequência de renderização que inclui as alterações de estado.
+Não há uma maneira à prova de examinar uma sequência de renderização e concluir quais alterações de estado definirão um bit sujo e adiar o trabalho ou serão simplesmente removidas pela otimização. Mesmo que você possa identificar alterações de estado otimizadas no runtime ou driver de hoje, o runtime ou driver de amanhã provavelmente será atualizado. Você também não sabe prontamente qual era o estado anterior, portanto, é difícil identificar alterações de estado redundantes. A única maneira de verificar o custo de uma alteração de estado é medir a sequência de renderização que inclui as alterações de estado.
 
-Como você pode ver, as complicações causadas por ter vários processadores, comandos sendo processados por mais de um componente e otimizações incorporadas aos componentes dificultam a previsão da criação de perfil. Na próxima seção, cada um desses desafios de criação de perfil será resolvido. As sequências de renderização de Direct3D de exemplo serão mostradas, com as técnicas de medição que o acompanham. Com esse conhecimento, você poderá gerar medidas precisas e reproduzíveis em chamadas individuais.
+Como você pode ver, as complicações causadas por ter vários processadores, comandos sendo processados por mais de um componente e otimizações criadas nos componentes dificultam a previsão da criação de perfil. Na próxima seção, cada um desses desafios de criação de perfil será resolvido. Sequências de renderização direct3D de exemplo serão mostradas, com as técnicas de medição que acompanham. Com esse conhecimento, você poderá gerar medidas precisas e repetidas em chamadas individuais.
 
-## <a name="how-to-accurately-profile-a-direct3d-render-sequence"></a>Como criar um perfil com precisão de uma sequência de renderização do Direct3D
+## <a name="how-to-accurately-profile-a-direct3d-render-sequence"></a>Como fazer o perfil com precisão de uma sequência de renderização direct3D
 
-Agora que alguns dos desafios de criação de perfil foram realçados, esta seção mostrará as técnicas que o ajudarão a gerar medidas de perfil que podem ser usadas para orçamento. Medidas precisas e reproduzíveis de criação de perfil são possíveis se você entender a relação entre os componentes controlados pela CPU e como evitar otimizações de desempenho implementadas pelo tempo de execução e o driver.
+Agora que alguns dos desafios de criação de perfil foram realçados, esta seção mostrará técnicas que ajudarão você a gerar medidas de perfil que podem ser usadas para orçamento. Medidas de criação de perfil precisas e repetidas serão possíveis se você entender a relação entre os componentes controlados pela CPU e como evitar otimizações de desempenho implementadas pelo runtime e pelo driver.
 
 Para começar, você precisa ser capaz de medir com precisão o tempo de execução de uma única chamada à API.
 
-### <a name="pick-an-accurate-measurement-tool-like-queryperformancecounter"></a>Escolha uma ferramenta de medida precisa como QueryPerformanceCounter
+### <a name="pick-an-accurate-measurement-tool-like-queryperformancecounter"></a>Escolher uma ferramenta de medida precisa, como QueryPerformanceCounter
 
-O sistema operacional Microsoft Windows inclui um temporizador de alta resolução que pode ser usado para medir tempos decorridos de alta resolução. O valor atual de um desses temporizadores pode ser retornado usando [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter). Depois de invocar **QueryPerformanceCounter** para retornar valores de início e de parada, a diferença entre os dois valores pode ser convertida para o tempo real decorrido (em segundos) usando **QueryPerformanceCounter**.
+O microsoft Windows sistema operacional inclui um temporizador de alta resolução que pode ser usado para medir tempos decorridos de alta resolução. O valor atual de um temporizador desse tipo pode ser retornado [**usando QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter). Depois de invocar **QueryPerformanceCounter** para retornar valores start e stop, a diferença entre os dois valores pode ser convertida no tempo decorrido real (em segundos) usando **QueryPerformanceCounter**.
 
-As vantagens de usar o [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) são que ele está disponível no Windows e é fácil de usar. Basta colocar as chamadas com uma chamada **QueryPerformanceCounter** e salvar os valores de início e de parada. Portanto, este documento demonstrará como usar o **QueryPerformanceCounter** para gerar perfis de tempo de execução, de forma semelhante à maneira como um criador de perfil de instrumentação o mediria. Aqui está um exemplo que mostra como inserir **QueryPerformanceCounter** em seu código-fonte:
+As vantagens de [**usar QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) são que ele está disponível no Windows e é fácil de usar. Basta cercar as chamadas com **uma chamada QueryPerformanceCounter** e salvar os valores start e stop. Portanto, este documento demonstrará como usar **QueryPerformanceCounter** para o perfil de tempos de execução, semelhante à maneira como um instrumentador de perfil o mediria. Veja um exemplo que mostra como inserir **QueryPerformanceCounter** em seu código-fonte:
 
 
 ```
@@ -165,23 +165,23 @@ As vantagens de usar o [**QueryPerformanceCounter**](/windows/win32/api/profilea
 
 
 
-Exemplo 2: implementação de criação de perfil Personalizada com QPC
+Exemplo 2: Implementação de criação de perfil personalizada com QPC
 
-Start e Stop são dois inteiros grandes que manterão os valores de início e de parada retornados pelo timer de alto desempenho. Observe que QueryPerformanceCounter (&Start) é chamado logo antes de [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) e QueryPerformanceCounter (Stop &) é chamado logo após [**DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive). Depois de obter o valor de parada, QueryPerformanceFrequency é chamado para retornar freq, que é a frequência do timer de alta resolução. Neste exemplo hipotético, suponha que você obtenha os seguintes resultados para Start, stop e freq:
+start e stop são dois inteiros grandes que conterão os valores de início e parada retornados pelo temporizador de alto desempenho. Observe que QueryPerformanceCounter(&start) é chamado logo antes de [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) e QueryPerformanceCounter(&stop) ser chamado logo após [**DrawPrimitive.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) Depois de obter o valor de parada, QueryPerformanceFrequency é chamado para retornar freq, que é a frequência do temporizador de alta resolução. Neste exemplo hipotético, suponha que você receba os seguintes resultados para iniciar, parar e freq:
 
 
 
 | Variável Local | Número de tiques |
 |----------------|-----------------|
-| iniciar          | 1792998845094   |
+| start          | 1792998845094   |
 | parar           | 1792998845102   |
-| freq           | 3579545         |
+| Freq           | 3579545         |
 
 
 
  
 
-Você pode converter esses valores para o número de ciclos que é necessário para executar as chamadas à API como esta:
+Você pode converter esses valores no número de ciclos necessários para executar as chamadas à API como esta:
 
 
 ```
@@ -193,7 +193,7 @@ Você pode converter esses valores para o número de ciclos que é necessário p
 
 
 
-Em outras palavras, leva cerca de 4568 ciclos de relógio para processar [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) e [**DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) neste computador de 2 GHz. Você pode converter esses valores para o tempo real necessário para executar todas as chamadas como esta:
+Em outras palavras, são necessários cerca de 4568 ciclos de relógio para processar [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) e [**DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) nesse computador de 2 GHz. Você pode converter esses valores no tempo real necessário para executar todas as chamadas como esta:
 
 
 ```
@@ -203,47 +203,47 @@ Em outras palavras, leva cerca de 4568 ciclos de relógio para processar [**SetT
 
 
 
-O uso de QueryPerformanceCounter exige que você adicione medidas de início e parada à sequência de renderização e use QueryPerformanceFrequency para converter a diferença (número de tiques) para o número de ciclos de CPU ou para o tempo real. Identificar a técnica de medida é um bom começo para o desenvolvimento de uma implementação de criação de perfil Personalizada. Mas antes de começar a fazer medidas, você precisa saber como lidar com a placa de vídeo.
+O uso de QueryPerformanceCounter exige que você adicione medidas de início e parada à sequência de renderização e use QueryPerformanceFrequency para converter a diferença (número de tiques) no número de ciclos de CPU ou em tempo real. Identificar a técnica de medição é um bom começo para desenvolver uma implementação de criação de perfil personalizada. Mas antes de começar a fazer medidas, você precisa saber como lidar com a placa de vídeo.
 
-### <a name="focus-on-cpu-measurements"></a>Foco em medições de CPU
+### <a name="focus-on-cpu-measurements"></a>Foco nas medidas de CPU
 
-Como mencionado anteriormente, a CPU e a GPU trabalham em paralelo para processar o trabalho gerado pelas chamadas à API. Um aplicativo do mundo real requer a criação de perfil de ambos os tipos de processadores para descobrir se seu aplicativo é limitado à CPU ou à GPU. Como o desempenho da GPU é específico do fornecedor, seria muito desafiador produzir resultados neste documento que cobrem a variedade de placas de vídeo disponíveis.
+Conforme indicado anteriormente, a CPU e a GPU funcionam em paralelo para processar o trabalho gerado pelas chamadas à API. Um aplicativo do mundo real requer a criação de perfil de ambos os tipos de processadores para descobrir se seu aplicativo é limitado por CPU ou GPU. Como o desempenho da GPU é específico do fornecedor, seria muito desafiador produzir resultados neste documento que abrangem a variedade de placas de vídeo disponíveis.
 
-Em vez disso, este documento se concentrará apenas na criação de perfil do trabalho realizado pela CPU usando uma técnica personalizada para medir o tempo de execução e o driver funcionar. O trabalho da GPU será reduzido a um valor insignificante, para que os resultados da CPU sejam mais visíveis. Um benefício dessa abordagem é que essa técnica produz resultados no apêndice que você deve ser capaz de correlacionar com suas medições. Para reduzir o trabalho exigido pela placa de vídeo para um nível insignificante, basta reduzir o trabalho de renderização para o valor mínimo possível. Isso pode ser feito limitando as chamadas de Draw para renderizar um único triângulo e pode ser mais restrito para que cada triângulo contenha apenas um pixel.
+Em vez disso, este documento se concentrará apenas na criação de perfil do trabalho executado pela CPU usando uma técnica personalizada para medir o runtime e o trabalho do driver. O trabalho de GPU será reduzido para uma quantidade insignificante, para que os resultados da CPU sejam mais visíveis. Um benefício dessa abordagem é que essa técnica resulta no Apêndice que você deve ser capaz de correlacionar com suas medidas. Para reduzir o trabalho exigido pela placa de vídeo para um nível insignificante, basta reduzir o trabalho de renderização para o mínimo possível. Isso pode ser feito limitando chamadas de desenho para renderizar um único triângulo e pode ser ainda mais restrito para que cada triângulo contenha apenas um pixel.
 
-A unidade de medida usada neste documento para medir o trabalho de CPU será o número de ciclos de relógio de CPU em vez de tempo real. Os ciclos de relógio de CPU têm a vantagem de ser mais portátil (para aplicativos limitados à CPU) do que o tempo decorrido real entre computadores com velocidades de CPU diferentes. Isso pode ser facilmente convertido em tempo real, se desejado.
+A unidade de medida usada neste documento para medir o trabalho da CPU será o número de ciclos de relógio da CPU em vez da hora real. Os ciclos de relógio da CPU têm a vantagem de que ele é mais portátil (para aplicativos limitados à CPU) do que o tempo decorrido real entre máquinas com velocidades de CPU diferentes. Isso pode ser facilmente convertido em tempo real, se desejado.
 
-Este documento não aborda os tópicos relacionados ao balanceamento da carga de trabalho entre a CPU e a GPU. Lembre-se de que o objetivo deste documento é não medir o desempenho geral de um aplicativo, mas mostrar como medir com precisão o tempo que leva o Runtime e o driver para processar chamadas à API. Com essas medidas precisas, você pode assumir a tarefa de orçar a CPU para entender determinados cenários de desempenho.
+Este documento não abrange tópicos relacionados ao balanceamento da carga de trabalho entre a CPU e a GPU. Lembre-se de que o objetivo deste documento não é medir o desempenho geral de um aplicativo, mas mostrar como medir com precisão o tempo necessário para o runtime e o driver processar chamadas à API. Com essas medidas precisas, você pode assumir a tarefa de orçamento da CPU para entender determinados cenários de desempenho.
 
-### <a name="controlling-runtime-and-driver-optimizations"></a>Controlando o tempo de execução e otimizações de driver
+### <a name="controlling-runtime-and-driver-optimizations"></a>Controlando otimizações de runtime e driver
 
-Com uma técnica de medida identificada e uma estratégia para reduzir o trabalho da GPU, a próxima etapa é entender as otimizações de tempo de execução e de driver que ficam no caminho da criação de perfil.
+Com uma técnica de medição identificada e uma estratégia para reduzir o trabalho de GPU, a próxima etapa é entender o runtime e as otimizações de driver que ficam no caminho quando você está criação de perfil.
 
-O trabalho de CPU pode ser dividido em três buckets: o aplicativo funciona, o tempo de execução e o driver funcionam. Ignorar o trabalho do aplicativo, pois está sob o controle do programador. Do ponto de vista do aplicativo, o tempo de execução e o driver são como caixas pretas, pois o aplicativo não tem controle sobre o que é implementado neles. A chave é entender as técnicas de otimização que podem ser implementadas no tempo de execução e no driver. Se você não entender essas otimizações, será muito fácil saltar para a conclusão errada sobre a quantidade de trabalho que a CPU está fazendo com base nas medições de perfil. Em particular, há dois tópicos relacionados a algo chamado de buffer de comando e o que ele pode fazer para ofuscar a criação de perfil. Esses tópicos são:
+O trabalho de CPU pode ser dividido em três buckets: o trabalho do aplicativo, o trabalho de runtime e o trabalho do driver. Ignore o trabalho do aplicativo, pois isso está sob controle do programador. Do ponto de vista do aplicativo, o runtime e o driver são como caixas pretas, pois o aplicativo não tem controle sobre o que é implementado neles. A chave é entender as técnicas de otimização que podem ser implementadas no runtime e no driver. Se você não entender essas otimizações, será muito fácil chegar à conclusão errada sobre a quantidade de trabalho que a CPU está fazendo com base nas medidas de perfil. Em particular, há dois tópicos relacionados a algo chamado buffer de comando e o que ele pode fazer para ofuscar a criação de perfil. Esses tópicos são:
 
--   Otimização de tempo de execução com o buffer de comando. O buffer de comando é uma otimização de tempo de execução que reduz o impacto de uma transição de modo. Para controlar o tempo da transição de modo, consulte [controlando o buffer de comando](#controlling-the-command-buffer).
--   Negando os efeitos de tempo do buffer de comando. O tempo decorrido de uma transição de modo pode ter um grande impacto sobre as medições de criação de perfil. A estratégia para isso é [tornar a sequência de renderização grande em comparação com a transição de modo](#make-the-render-sequence-large-compared-to-the-mode-transition).
+-   Otimização de runtime com o Buffer de Comando. O buffer de comando é uma otimização de runtime que reduz o impacto de uma transição de modo. Para controlar o tempo da transição de modo, consulte [Controlando o buffer de comando](#controlling-the-command-buffer).
+-   Negando os efeitos de tempo do Buffer de Comando. O tempo decorrido de uma transição de modo pode ter um grande impacto nas medidas de criação de perfil. A estratégia para isso é tornar [a sequência de renderização grande em comparação com a transição de modo](#make-the-render-sequence-large-compared-to-the-mode-transition).
 
 ### <a name="controlling-the-command-buffer"></a>Controlando o buffer de comando
 
-Quando um aplicativo faz uma chamada à API, o tempo de execução converte a chamada à API em um formato independente de dispositivo (que chamaremos de um comando) e a armazena no buffer de comando. O buffer de comando é adicionado ao diagrama a seguir.
+Quando um aplicativo faz uma chamada à API, o runtime converte a chamada à API em um formato independente do dispositivo (que chamaremos de comando) e a armazena no buffer de comando. O buffer de comando é adicionado ao diagrama a seguir.
 
-![diagrama de componentes da CPU, incluindo um buffer de comando](images/microbenchmarkcommandbuffer2.png)
+![diagrama de componentes de CPU, incluindo um buffer de comando](images/microbenchmarkcommandbuffer2.png)
 
-Cada vez que o aplicativo faz outra chamada à API, o tempo de execução repete essa sequência e adiciona outro comando ao buffer de comando. Em algum momento, o tempo de execução esvazia o buffer (enviando os comandos para o driver). No Windows XP, esvaziar o buffer de comando causa uma transição de modo conforme o sistema operacional muda do tempo de execução (em execução no modo de usuário) para o driver (executado no modo kernel), conforme mostrado no diagrama a seguir.
+Sempre que o aplicativo faz outra chamada à API, o runtime repete essa sequência e adiciona outro comando ao buffer de comando. Em algum momento, o runtime esvazia o buffer (enviando os comandos para o driver). No Windows XP, o vazio do buffer de comando causa uma transição de modo à medida que o sistema operacional alterna do runtime (em execução no modo de usuário) para o driver (em execução no modo kernel), conforme mostrado no diagrama a seguir.
 
--   modo de usuário – o modo de processador não privilegiado que executa o código do aplicativo. Aplicativos de modo de usuário não podem obter acesso a dados do sistema, exceto por meio de serviços do sistema.
--   modo kernel – o modo de processador privilegiado no qual o código executivo baseado no Windows é executado. Um driver ou thread em execução no modo kernel tem acesso a toda a memória do sistema, acesso direto ao hardware e as instruções da CPU para executar e/s com o hardware.
+-   modo de usuário – o modo de processador sem privilégios que executa o código do aplicativo. Os aplicativos de modo de usuário não podem obter acesso aos dados do sistema, exceto por meio de serviços do sistema.
+-   modo kernel – o modo de processador privilegiado no qual Windows código executivo baseado em dados é executado. Um driver ou thread em execução no modo kernel tem acesso a toda a memória do sistema, acesso direto ao hardware e instruções de CPU para executar E/S com o hardware.
 
 ![diagrama de transições entre o modo de usuário e o modo kernel](images/microbenchmarkcommandbuffer3.png)
 
-A transição ocorre cada vez que a CPU alterna de usuário para modo kernel (e vice-versa) e o número de ciclos que ele requer é grande em comparação a uma chamada de API individual. Se o tempo de execução enviou cada chamada à API para o driver quando ele foi invocado, cada chamada à API incorreria no custo de uma transição de modo.
+A transição ocorre sempre que a CPU muda de usuário para modo kernel (e vice-versa) e o número de ciclos necessários é grande em comparação com uma chamada à API individual. Se o runtime enviasse cada chamada à API para o driver quando ele foi invocado, cada chamada à API incorreria no custo de uma transição de modo.
 
-Em vez disso, o buffer de comando é uma otimização de tempo de execução projetada para reduzir o custo efetivo da transição de modo. O buffer de comando enfileira muitos comandos de driver em preparação para uma transição de modo único. Quando o tempo de execução adiciona um comando ao buffer de comando, o controle é retornado para o aplicativo. Um criador de perfil não tem como saber que os comandos do driver provavelmente ainda não foram enviados para o driver. Como resultado, os números retornados por um criador de perfil de instrumentação fora do mercado são enganosos, uma vez que mede o trabalho de tempo de execução, mas não o driver associado funciona.
+Em vez disso, o buffer de comando é uma otimização de runtime projetada para reduzir o custo efetivo da transição de modo. O buffer de comando enfilia muitos comandos de driver em preparação para uma transição de modo único. Quando o runtime adiciona um comando ao buffer de comando, o controle é retornado ao aplicativo. Um profiler não tem como saber que os comandos do driver provavelmente ainda não foram enviados ao driver. Como resultado, os números retornados por um instrumentador de instrumentação off-the-shelf são enganosos, pois medem o trabalho de runtime, mas não o trabalho do driver associado.
 
-### <a name="profile-results-without-a-mode-transition"></a>Resultados de perfil sem uma transição de modo
+### <a name="profile-results-without-a-mode-transition"></a>Resultados do perfil sem uma transição de modo
 
-Usando a sequência de renderização do exemplo 2, aqui estão algumas medidas de tempo típicas que ilustram a magnitude de uma transição de modo. Supondo que as chamadas [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) e [**DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) não causem uma transição de modo, um criador de perfil de instrumentação fora do mercado poderia retornar resultados semelhantes a estes:
+Usando a sequência de renderização do exemplo 2, aqui estão algumas medidas de tempo típicas que ilustram a magnitude de uma transição de modo. Supondo que as chamadas [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) e [**DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) não causem uma transição de modo, um instrumentador de instrumentação pronto para uso pode retornar resultados semelhantes a estes:
 
 
 ```
@@ -253,11 +253,11 @@ Number of cycles for DrawPrimitive        : 900
 
 
 
-Cada um desses números é a quantidade de tempo que leva para o tempo de execução adicionar essas chamadas ao buffer de comando. Como não há nenhuma transição de modo, o driver ainda não fez nenhum trabalho. Os resultados do criador de perfil são precisos, mas não medem todo o trabalho que a sequência de renderização eventualmente fará com que a CPU execute.
+Cada um desses números é a quantidade de tempo que leva para o runtime adicionar essas chamadas ao buffer de comando. Como não há nenhuma transição de modo, o driver ainda não fez nenhum trabalho. Os resultados do profiler são precisos, mas não medem todo o trabalho que a sequência de renderização eventualmente fará com que a CPU execute.
 
-### <a name="profile-results-with-a-mode-transition"></a>Resultados de perfil com uma transição de modo
+### <a name="profile-results-with-a-mode-transition"></a>Resultados do perfil com uma transição de modo
 
-Agora, examine o que acontece para o mesmo exemplo quando ocorre uma transição de modo. Desta vez, suponha que [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) e [**DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) cause uma transição de modo. Mais uma vez, um criador de perfil de instrumentação fora do mercado poderia retornar resultados semelhantes a estes:
+Agora, veja o que acontece para o mesmo exemplo quando ocorre uma transição de modo. Desta vez, suponha que [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) e [**DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) causem uma transição de modo. Mais uma vez, um profiler de instrumentação fora da plataforma pode retornar resultados semelhantes a estes:
 
 
 ```
@@ -267,7 +267,7 @@ Number of cycles for DrawPrimitive        : 946,900
 
 
 
-O tempo medido para [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) é quase o mesmo, no entanto, o aumento drástico na quantidade de tempo gasto em [**DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) é devido à transição de modo. Veja o que está acontecendo:
+O tempo medido para [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) é quase o mesmo, no entanto, o aumento significativo na quantidade de tempo gasto em [**DrawPrimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) é devido à transição de modo. Veja o que está acontecendo:
 
 1.  Suponha que o buffer de comando tenha espaço para um comando antes que nossa sequência de renderização seja iniciada.
 2.  [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture) é convertido em um formato independente de dispositivo e adicionado ao buffer de comando. Nesse cenário, essa chamada preenche o buffer de comando.
@@ -351,7 +351,7 @@ Aqui estão os resultados medidos com QueryPerformanceCounter e QueryPerformance
 
 | Variável Local | Número de tiques |
 |----------------|-----------------|
-| iniciar          | 1792998845060   |
+| start          | 1792998845060   |
 | parar           | 1792998845090   |
 | freq           | 3579545         |
 
@@ -471,7 +471,7 @@ Aqui estão os resultados medidos com QueryPerformanceCounter e QueryPerformance
 
 | Variável Local | Número de TICs |
 |----------------|----------------|
-| iniciar          | 1792998845000  |
+| start          | 1792998845000  |
 | parar           | 1792998847084  |
 | freq           | 3579545        |
 
@@ -550,7 +550,7 @@ Observe que o loop contém duas chamadas, [**SetTexture**](/windows/win32/api/d3
 
 | Variável Local | Número de TICs |
 |----------------|----------------|
-| iniciar          | 1792998860000  |
+| start          | 1792998860000  |
 | parar           | 1792998870260  |
 | freq           | 3579545        |
 
@@ -649,7 +649,7 @@ Esses números são razoáveis para essa sequência de renderização:
 
 | Variável Local | Número de tiques |
 |----------------|-----------------|
-| iniciar          | 1792998845000   |
+| start          | 1792998845000   |
 | parar           | 1792998861740   |
 | freq           | 3579545         |
 
@@ -904,7 +904,7 @@ Mas tenha cuidado com otimizações que causam resultados inesperados durante a 
 
  
 
-## <a name="appendix"></a>Apêndice
+## <a name="appendix"></a>Anexo
 
 Os números nessa tabela são um intervalo de aproximações para a quantidade de tempo de execução e o trabalho de driver associados a cada uma dessas alterações de estado. As aproximaçãos se baseiam em medidas reais feitas nos drivers usando as técnicas mostradas no documento. Esses números foram gerados usando o tempo de execução do Direct3D 9 e dependem do driver.
 

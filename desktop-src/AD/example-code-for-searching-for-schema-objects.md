@@ -7,12 +7,12 @@ keywords:
 - Código de exemplo para pesquisa de objetos de esquema AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f58fda74e637430cc2d773c00cb020a848dbf9e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d28bb0a873f3a867934521607239a96611bbdc4cd4738edcd766cc0bad852311
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103915943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190256"
 ---
 # <a name="example-code-for-searching-for-schema-objects"></a>Exemplo de código para pesquisar objetos de esquema
 
@@ -373,9 +373,9 @@ HRESULT PrintIndexedAttributes(IDirectorySearch *pSchemaNC)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

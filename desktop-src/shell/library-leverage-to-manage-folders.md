@@ -4,12 +4,12 @@ ms.assetid: D5F5FE96-11D2-4fc5-A68B-6E594C09BE20
 title: Sobre bibliotecas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e577e7b5df0a1e072a07a096434af84ff8e2c26
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 14e63aef55513fb36f9a3cbfa71c1b7a79040fd7848468bd1216779cd034132d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104550124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118049319"
 ---
 # <a name="about-libraries"></a>Sobre bibliotecas
 
@@ -39,9 +39,9 @@ Esta seção descreve alguns dos benefícios das bibliotecas da perspectiva do u
 
 A adição de suporte de biblioteca ao seu programa fornece os seguintes benefícios para o usuário:
 
--   **As bibliotecas fornecem uma interface de usuário consistente no Windows 7**
+-   **as bibliotecas fornecem uma interface do usuário consistente no Windows 7**
 
-    As caixas de diálogo arquivo comum oferecem suporte a bibliotecas e fornecem a mesma experiência de usuário que o Windows Explorer no Windows 7. O suporte a bibliotecas em seu programa ajudará a fornecer uma interação mais direta para o usuário ao usar seu programa no Windows 7.
+    as caixas de diálogo arquivo comum dão suporte a bibliotecas e fornecem a mesma experiência de usuário que o Windows Explorer no Windows 7. o suporte a bibliotecas em seu programa ajudará a fornecer uma interação mais direta para o usuário ao usar seu programa no Windows 7.
 
 -   **Os usuários decidem onde armazenar o conteúdo**
 
@@ -65,11 +65,11 @@ Você pode usar bibliotecas em seu programa para fornecer uma interface do usuá
 
 -   **Os programas podem criar bibliotecas dedicadas**
 
-    Uma nova biblioteca pode ser criada quando as bibliotecas de usuários existentes não atendem às necessidades do programa — por exemplo, se um programa criar um novo tipo de conteúdo de usuário. A nova biblioteca pode ser configurada com um ícone exclusivo que representa seu conteúdo e torna a biblioteca fácil de identificar no Windows Explorer.
+    Uma nova biblioteca pode ser criada quando as bibliotecas de usuários existentes não atendem às necessidades do programa — por exemplo, se um programa criar um novo tipo de conteúdo de usuário. a nova biblioteca pode ser configurada com um ícone exclusivo que representa seu conteúdo e torna a biblioteca fácil de identificar no Windows Explorer.
 
 ## <a name="managing-folders-in-libraries"></a>Gerenciando pastas em bibliotecas
 
-Os usuários podem organizar suas bibliotecas adicionando, movendo ou removendo pastas na biblioteca. Nem todas as pastas, no entanto, dão suporte a toda a funcionalidade que uma biblioteca pode fornecer. Muitos recursos de biblioteca exigem acesso rápido às diferentes propriedades da pasta e de seu conteúdo que só estão disponíveis por meio do Windows Search. Para fornecer a funcionalidade completa da biblioteca, uma pasta deve ser capaz de ser indexada pelo Windows Search.
+Os usuários podem organizar suas bibliotecas adicionando, movendo ou removendo pastas na biblioteca. Nem todas as pastas, no entanto, dão suporte a toda a funcionalidade que uma biblioteca pode fornecer. muitos recursos de biblioteca exigem acesso rápido às diferentes propriedades da pasta e de seu conteúdo que só estão disponíveis por meio de Windows pesquisa. para fornecer a funcionalidade de biblioteca completa, uma pasta deve ser capaz de ser indexada por Windows pesquisa.
 
 Uma biblioteca não permite que um usuário adicione pastas que não fornecem funcionalidade completa de biblioteca. No entanto, a [**API da biblioteca do Shell**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllibrary) pode adicionar essas pastas. Se uma biblioteca contiver uma pasta que não oferece suporte à funcionalidade de biblioteca completa, a biblioteca funcionará em um modo de segurança e fornecerá uma funcionalidade limitada. A tabela a seguir descreve as pastas que oferecem suporte à funcionalidade de biblioteca completa e as que não fazem isso.
 
@@ -78,9 +78,9 @@ Uma biblioteca não permite que um usuário adicione pastas que não fornecem fu
 | Tipos de pasta que dão suporte à funcionalidade de biblioteca completa                                                               | Tipos de pasta que não dão suporte à funcionalidade de biblioteca completa                                  |
 |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
 | Discos rígidos NTFS e FAT32 fixos e externos.                                                                     | Unidades removíveis, como unidades flash USB ou cartões de memória Secure Digital (SD).               |
-| Compartilhamentos de arquivos que são indexados pelo Windows Search, como servidores departamentais, Windows 7 ou Windows Vista Home PCs. | Mídia removível, como mídia de CD-ROM ou DVD.                                                 |
+| compartilhamentos de arquivos que são indexados por Windows pesquisa como servidores departamentais, Windows 7 ou Windows os PCs domésticos do Vista. | Mídia removível, como mídia de CD-ROM ou DVD.                                                 |
 | Compartilhamentos de arquivos que estão disponíveis offline, como uma pasta **meus documentos** redirecionada ou um cache Client-Side.        | Compartilhamentos de rede que não estão disponíveis offline nem remotamente indexados, como unidades NAS.   |
-|                                                                                                                    | Outras fontes de dados, como o Microsoft SharePoint, o Microsoft Exchange e o Microsoft OneDrive. |
+|                                                                                                                    | outras fontes de dados, como o microsoft SharePoint, o microsoft Exchange e o Microsoft OneDrive. |
 
 
 

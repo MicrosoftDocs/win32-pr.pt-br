@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentFeatureNotAvailableException'
+description: 'Saiba mais sobre: Métodos EsentFeatureNotAvailableException'
 title: 'Métodos EsentFeatureNotAvailableException '
 TOCTitle: EsentFeatureNotAvailableException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentFeatureNotAvailableException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101665
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 20251d1a9614907e830443c3cf068e71b815e3d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a1a8caf0086c6c55e2b16e6a1d3756f5f22f4afb6bfb67e116b46b03fb444aef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104550194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118269358"
 ---
 # <a name="esentfeaturenotavailableexception-methods"></a>Métodos EsentFeatureNotAvailableException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentFeatureNotAvailableException](./esentfeaturenotavailableexception-class.md) expõe os membros a seguir.
+O [tipo EsentFeatureNotAvailableException](./esentfeaturenotavailableexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentFeatureNotAvailableException](./esentfeaturenotavailableexception-c
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentFeatureNotAvailableException](./esentfeaturenotavailableexception-c
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentFeatureNotAvailableException](./esentfeaturenotavailableexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -7,12 +7,12 @@ keywords:
 - Visão geral do código AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e99a4974ac97488fc051ea80dbde7a8a83fa329e
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: dc23f4a3a51c33f24748347a2941bc09dbda8bc3bd99d133f99d0377eb0bda90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104008368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118017717"
 ---
 # <a name="code-overview"></a>Visão geral do código
 
@@ -31,12 +31,12 @@ Os itens numerados a seguir correspondem aos elementos de bloco na figura.
 7.  Filtragem e enumeração de VARIAntes (Cenumvar. cpp, Object. cpp). Quando uma coleção de elementos VARIANT de um único tipo é gerenciada no ADSI, esse código é usado.
 8.  Globais (Globals. cpp). Palavras-chave de namespace, estruturas de mapeamento de sintaxe de formatos de dados nativos para o tipo de variante de automação ADs são todos definidos aqui.
 9.  Empacotamento/desempacotamento de dados (Pack. cpp, Property. cpp, Smpoper. cpp). A conversão de formatos de dados nativos no conjunto com suporte de tipos VARIAntes de automação ocorre quando as propriedades de um objeto são carregadas no cache de propriedades. Outras manipulações especiais de dados devem ser executadas quando as estruturas com ponteiros são copiadas, excluídas ou movidas na memória.
-10. Cache de Propriedades (cProps. cpp). As propriedades de cache são um recurso do ambiente ADSI. Os métodos [**IADs:: GetInfo**](/windows/desktop/api/Iads/nf-iads-iads-getinfo), [**IADs:: GetInfoEx**](/windows/desktop/api/Iads/nf-iads-iads-getinfoex)e [**IADs:: setinfo**](/windows/desktop/api/Iads/nf-iads-iads-setinfo) atuam no cache de propriedades.
+10. Cache de Propriedades (cProps. cpp). Caching propriedades é um recurso do ambiente ADSI. Os métodos [**IADs:: GetInfo**](/windows/desktop/api/Iads/nf-iads-iads-getinfo), [**IADs:: GetInfoEx**](/windows/desktop/api/Iads/nf-iads-iads-getinfoex)e [**IADs:: setinfo**](/windows/desktop/api/Iads/nf-iads-iads-setinfo) atuam no cache de propriedades.
 11. Gerenciamento de memória (Memory. cpp). O uso de um conjunto de funções de memória para alocar e liberar memória permite que o componente de provedor de exemplo controle o uso de memória e pare os vazamentos de memória.
 12. Objetos de esquema e gerenciamento (Cschobj. cpp, Cprpobj. cpp, Cclsobj. cpp, Cenumsch. cpp). Isso inclui rotinas para criar, gerenciar e enumerar os objetos de esquema. Isso inclui objetos de classe de esquema, objetos de propriedade e objetos de sintaxe, além de ser capaz de enumerar o objeto de contêiner de classe de esquema.
 13. Chamadas específicas do sistema operacional (RegDSAPI. cpp). Isso inclui todas as chamadas que fazem referência ao sistema operacional nativo. Entre outras funções, elas incluem a abertura de funções, o fechamento, a leitura e a modificação de objetos, bem como aqueles que acessam os dados de esquema e de propriedade. O componente de provedor de exemplo aconteceu para simular uma hierarquia de diretório usando o registro. Somente nomes de função devem ser muito interessantes para um gravador de provedor.
 14. Implementação de [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) (Cdispmgr. cpp). Esse código acessa os dados da biblioteca de tipos para permitir que os métodos de interface sejam invocados de forma compatível com a automação.
 
- 
+ 
 
- 
+ 

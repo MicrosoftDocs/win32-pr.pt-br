@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 13d10aa4dff84f06d6afb9934770fd38efbe64d9
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: d128cd0dda52a17f7eefd0e4f110601aba5e13cd64c06e80e2a8c71e6c02c508
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104008381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118498708"
 ---
 # <a name="baseeapmethodconfig-schema"></a>Esquema baseeapmethodconfig
 
@@ -29,9 +29,9 @@ O esquema baseeapmethodconfig define elementos de esquema de configuração comu
 [EAPHost e esquema herdado](eaphost-schemas.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,22 +1,22 @@
 ---
-title: Exemplo de código para definir uma ACE Right de acesso de controle
-description: O exemplo de código C/C++ a seguir adiciona uma ACE para um direito de acesso de controle à ACL de um objeto.
+title: Código de exemplo para definir um ACE direito de acesso de controle
+description: O exemplo de código C/C++ a seguir adiciona uma ACE para um direito de acesso de controle à ACL de um objeto .
 ms.assetid: 8fb5eb47-27ca-4e60-ad39-ca4392da4e7d
 ms.tgt_platform: multiple
 keywords:
-- Exemplo de código para definir um acesso de controle ACE Right
+- Código de exemplo para definir um ace AD de acesso de controle
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 626185b3e842429d648a3ff6363e868b543812b0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 67012aa852e8ff3fec6780e9d1457b49cc98dd76bc6e5fac3734c0acc8668709
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190246"
 ---
-# <a name="example-code-for-setting-a-control-access-right-ace"></a>Exemplo de código para definir uma ACE Right de acesso de controle
+# <a name="example-code-for-setting-a-control-access-right-ace"></a>Código de exemplo para definir um ACE direito de acesso de controle
 
-O exemplo de código C/C++ a seguir adiciona uma ACE para um direito de acesso de controle à ACL de um objeto.
+O exemplo de código C/C++ a seguir adiciona uma ACE para um direito de acesso de controle à ACL de um objeto .
 
 
 ```C++
@@ -221,9 +221,9 @@ HRESULT SetExtendedRight(IADs *pObject,
 
 
 
- 
+ 
 
- 
+ 
 
 
 

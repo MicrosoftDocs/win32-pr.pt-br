@@ -1,21 +1,21 @@
 ---
 title: Como girar um objeto
-description: Mostra como girar um objeto.
+description: Mostra como girar um objeto .
 ms.assetid: 468e29b6-941b-4cf8-8649-9e513326ccb2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b69cd900a78ba4d81919df91b85fd97723172eba
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: babc84c08af759d8484c8ba85db40780f68570d93a0a8b9442e93b960ecac39c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118003518"
 ---
 # <a name="how-to-rotate-an-object"></a>Como girar um objeto
 
-Este tópico descreve como girar um objeto sobre um ponto especificado. Para girar um objeto, chame o método [**Matrix3x2F:: Rotation**](/windows/win32/api/d2d1helper/nf-d2d1helper-matrix3x2f-rotation) . Esse método usa dois parâmetros, o ângulo especificado e o ponto central. O ângulo é um ângulo de rotação no sentido horário em graus, e o ponto central é o ponto sobre o qual o objeto gira. O ponto central é expresso no sistema de coordenadas do objeto que é transformado.
+Este tópico descreve como girar um objeto sobre um ponto especificado. Para girar um objeto, chame [**o método Matrix3x2F::Rotation.**](/windows/win32/api/d2d1helper/nf-d2d1helper-matrix3x2f-rotation) Esse método aceita dois parâmetros, o ângulo especificado e o ponto central. O ângulo é um ângulo de rotação no sentido horário em graus e o ponto central é o ponto sobre o qual o objeto gira. O ponto central é expresso no sistema de coordenadas do objeto que é transformado.
 
-Por exemplo, o código a seguir gira um quadrado no sentido horário 45 graus sobre o centro do quadrado.
+Por exemplo, o código a seguir gira um quadrado de 45 graus no sentido horário sobre o centro do quadrado.
 
 
 ```C++
@@ -47,11 +47,11 @@ Por exemplo, o código a seguir gira um quadrado no sentido horário 45 graus so
 
 
 
-A ilustração a seguir mostra o efeito de aplicar a transformação de rotação anterior ao quadrado. O quadrado original é um contorno pontilhado e o quadrado girado é uma estrutura de tópicos sólida.
+A ilustração a seguir mostra o efeito da aplicação da transformação de rotação anterior ao quadrado. O quadrado original é um contorno pontilhado e o quadrado girado é um contorno sólido.
 
 ![ilustração de um quadrado girado no sentido horário 45 graus sobre o centro do quadrado original](images/rotate-ovw.png)
 
-A ilustração a seguir mostra o efeito de girar pelo mesmo ângulo sobre um ponto central diferente. Observe que os objetos girados estão em posições diferentes em relação ao original. O quadrado com contorno à esquerda é o resultado da rotação sobre o centro do quadrado original, e o quadrado descrito à direita é o resultado da rotação sobre o canto superior esquerdo do quadrado original.
+A ilustração a seguir mostra o efeito de girar pelo mesmo ângulo sobre um ponto central diferente. Observe que os objetos girados estão em posições diferentes em relação ao original. O quadrado contornado à esquerda é o resultado da rotação sobre o centro do quadrado original, e o quadrado contornado à direita é o resultado da rotação sobre o canto superior esquerdo do quadrado original.
 
 ![ilustração de um quadrado girado no sentido horário 45 graus sobre um ponto central diferente](images/translate-rotationcompare.png)
 
@@ -59,12 +59,12 @@ A ilustração a seguir mostra o efeito de girar pelo mesmo ângulo sobre um pon
 
 <dl> <dt>
 
-[Referência de Direct2D](reference.md)
+[Direct2D Referência](reference.md)
 </dt> <dt>
 
-[Visão geral das transformações do Direct2D](direct2d-transforms-overview.md)
+[Direct2D Visão geral de transformaçãos](direct2d-transforms-overview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

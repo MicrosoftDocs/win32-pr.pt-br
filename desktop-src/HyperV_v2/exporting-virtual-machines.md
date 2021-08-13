@@ -1,19 +1,19 @@
 ---
-description: Os exemplos de C# e Visual Basic Scripting Edition (VBScript) a seguir demonstram a exportação de um instantâneo de uma máquina virtual.
+description: os exemplos de C# e Visual Basic scripting Edition (VBScript) a seguir demonstram a exportação de um instantâneo de uma máquina virtual.
 ms.assetid: 4DEC4962-99E1-42BB-81B1-8530BF9C4B92
 title: Exportando um instantâneo de uma máquina virtual
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bef5cb0f86c1de1b82c294760f7e2a33539218b
-ms.sourcegitcommit: 3d9eb6638763fee8b87c378657458f814182e36c
+ms.openlocfilehash: 07b8ce51f8cddeb648b5d4a5c58166eda3fcd2841a55f2eeda9e4f42e3f3e8fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105756766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118393350"
 ---
 # <a name="exporting-a-snapshot-of-a-virtual-machine"></a>Exportando um instantâneo de uma máquina virtual
 
-Os exemplos de C# e Visual Basic Scripting Edition (VBScript) a seguir demonstram a exportação de um instantâneo de uma máquina virtual. Exemplos que demonstram a exportação de uma máquina virtual podem ser encontrados no tópico [**ExportSystemDefinition**](exportsystemdefinition-msvm-virtualsystemmanagementservice.md) .
+os exemplos de C# e Visual Basic scripting Edition (VBScript) a seguir demonstram a exportação de um instantâneo de uma máquina virtual. Exemplos que demonstram a exportação de uma máquina virtual podem ser encontrados no tópico [**ExportSystemDefinition**](exportsystemdefinition-msvm-virtualsystemmanagementservice.md) .
 
 Os utilitários C# referenciados podem ser encontrados em [utilitários comuns para os exemplos de virtualização (v2)](common-utilities-for-the-virtualization-samples-v2.md).
 

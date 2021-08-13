@@ -1,15 +1,15 @@
 ---
-description: Siga as diretrizes a seguir ao criar um patch para uma atualização Windows Installer pequena.
+description: siga as diretrizes a seguir ao criar um patch para uma atualização Windows Installer pequena.
 ms.assetid: 0e57c2aa-e86a-4161-9749-c7963182a6d5
 title: Criando um patch de atualização pequena
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d948c871baed7fbc15545ed9669c9864ce954799
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b2c3dffac099358b924914b5dbd86871ba370241c42a2e3fd5caef2d8f12ff4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118379391"
 ---
 # <a name="creating-a-small-update-patch"></a>Criando um patch de atualização pequena
 

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c38df447f2eb816772713ba930204e75aa38a88c
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 53e5653d33dfd586ca5a066231f512c83684f3ea6ba53de74c0d3cb29cc4dbb9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104172426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118496735"
 ---
 # <a name="esentfatalexception-class"></a>Classe EsentFatalException
 
@@ -38,7 +38,7 @@ Classe base para exceções fatais.
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
+  [System.Exception](/dotnet/api/system.exception)  
     [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
       [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
         [Microsoft. ISAM. ESENT. Interop. EsentOperationException](./esentoperationexception-class.md)  
@@ -79,7 +79,7 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 ## <a name="derived-types"></a>Tipos derivados
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
+  [System.Exception](/dotnet/api/system.exception)  
     [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
       [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
         [Microsoft. ISAM. ESENT. Interop. EsentOperationException](./esentoperationexception-class.md)  

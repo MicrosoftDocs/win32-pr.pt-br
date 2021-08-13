@@ -4,18 +4,18 @@ ms.assetid: vs|directx_sdk|~\texture_blending.htm
 title: Mesclagem de textura (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a89a87160bb85c1f62339380d46fa4b39736609
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 688be4c80fb87d0d96f8f930ed85c9cc934fc4392151196ec0c510a4cbe482bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103646179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118291592"
 ---
 # <a name="texture-blending-direct3d-9"></a>Mesclagem de textura (Direct3D 9)
 
 O Direct3D pode mesclar até oito texturas em primitivas em uma única passagem. O uso da mesclagem de várias texturas pode aumentar profundamente a taxa de quadros de um aplicativo Direct3D. Um aplicativo emprega a mesclagem de várias texturas para aplicar texturas, sombras, iluminação especular, iluminação difusa e outros efeitos especiais em uma única passagem.
 
-Para usar a mesclagem de texturas, seu aplicativo deve verificar primeiro se o hardware do usuário tem suporte para isso. Essas informações são encontradas no membro TextureCaps da estrutura [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) . Para obter detalhes sobre como consultar o hardware do usuário para recursos de mesclagem de textura, consulte [**IDirect3DDevice9:: GetDeviceCaps**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getdevicecaps).
+Para usar a mesclagem de texturas, seu aplicativo deve verificar primeiro se o hardware do usuário tem suporte para isso. Essas informações são encontradas no membro TextureCaps da [**estrutura D3DCAPS9.**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) Para obter detalhes sobre como consultar o hardware do usuário para funcionalidades de mesclagem de textura, consulte [**IDirect3DDevice9::GetDeviceCaps**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getdevicecaps).
 
 ## <a name="texture-stages-and-the-texture-blending-cascade"></a>Estágios de textura e a cascata de mesclagem de textura
 
@@ -23,10 +23,10 @@ O Direct3D dá suporte para a mesclagem de várias texturas em uma única passag
 
 ![diagrama de um estágio de textura](images/texstg.png)
 
-Como mostra o diagrama anterior, os estágios de textura combinam dois argumentos usando um operador especificado. As operações comuns incluem modulação simples ou adição dos componentes de cor ou alfa dos argumentos, mas há suporte para dezenas de operações. Os argumentos para um estágio podem ser uma textura associada, a cor iterada ou o alfa (iterado durante o sombreamento Gouraud), cor ou alfa arbitrário ou o resultado do estágio de textura anterior. Para obter mais informações, consulte [parâmetros e operações de mesclagem de textura (Direct3D 9)](texture-blending-operations-and-arguments.md).
+Como mostra o diagrama anterior, os estágios de textura combinam dois argumentos usando um operador especificado. As operações comuns incluem modulação simples ou adição dos componentes de cor ou alfa dos argumentos, mas há suporte para dezenas de operações. Os argumentos para um estágio podem ser uma textura associada, a cor iterada ou o alfa (iterado durante o sombreamento Gouraud), cor ou alfa arbitrário ou o resultado do estágio de textura anterior. Para obter mais informações, consulte Operações e argumentos de mesclagem [de textura (Direct3D 9)](texture-blending-operations-and-arguments.md).
 
 > [!Note]  
-> O Direct3D distingue a mistura de cores da mistura alfa. Os aplicativos definem as operações e os argumentos de mesclagem de cor e alfa individualmente, e os resultados dessas configurações são independentes uns dos outros.
+> O Direct3D distingue a combinação de cores da combinação alfa. Os aplicativos definem as operações e os argumentos de mesclagem de cor e alfa individualmente, e os resultados dessas configurações são independentes uns dos outros.
 
  
 
@@ -39,7 +39,7 @@ Cada estágio em um dispositivo tem um índice baseado em zero. O Direct3D permi
 Use apenas o número de estágios de que você precisa; os estágios de mesclagem não utilizados são desabilitados por padrão. Portanto, se seu aplicativo usar apenas os dois primeiros estágios, ele só precisará definir as operações e os argumentos para os estágios de 0 e 1. O sistema mescla os dois estágios e ignora os estágios desabilitados.
 
 > [!Note]  
-> Se seu aplicativo usa um número de estágios variado para diferentes situações – como quatro estágios para alguns objetos e apenas dois para outros – você não precisa explicitamente desabilitar todos os estágios usados anteriormente. Uma opção é desabilitar a operação de cor para o primeiro estágio não utilizado. Assim, todos os estágios com um índice mais alto não serão aplicados. Outra opção é desabilitar o mapeamento de textura completamente definindo a operação de cor para o primeiro estágio de textura (estágio 0) para D3DTOP \_ Disable. Uma terceira opção é quando um estágio de textura tem D3DTSS \_ COLORARG1 igual a D3DTA \_ Texture e o ponteiro de textura para o estágio é **NULL**, esse estágio e todos os estágios depois de não serem processados.
+> Se seu aplicativo usa um número de estágios variado para diferentes situações – como quatro estágios para alguns objetos e apenas dois para outros – você não precisa explicitamente desabilitar todos os estágios usados anteriormente. Uma opção é desabilitar a operação de cor para o primeiro estágio não utilizado. Assim, todos os estágios com um índice mais alto não serão aplicados. Outra opção é desabilitar completamente o mapeamento de textura definindo a operação de cores para o primeiro estágio de textura (estágio 0) como D3DTOP \_ DISABLE. Uma terceira opção é quando um estágio de textura tem D3DTSS COLORARG1 igual a D3DTA TEXTURE e o ponteiro de textura para o estágio é NULL, esse estágio e todos os estágios depois que ele não é \_ \_ processado. 
 
  
 
@@ -48,15 +48,15 @@ Informações adicionais estão contidas nos tópicos a seguir.
 -   [Operações e argumentos de mesclagem de textura (Direct3D 9)](texture-blending-operations-and-arguments.md)
 -   [Atribuindo as texturas atuais (Direct3D 9)](assigning-the-current-textures.md)
 -   [Criando estágios de mesclagem (Direct3D 9)](creating-blending-stages.md)
--   [Mesclagem de textura alfa (Direct3D 9)](alpha-texture-blending.md)
--   [Mesclagem de textura de passagem (Direct3D 9)](multipass-texture-blending.md)
--   [Mapeamento claro com texturas (Direct3D 9)](light-mapping-with-textures.md)
+-   [Combinação de textura alfa (Direct3D 9)](alpha-texture-blending.md)
+-   [Mesclagem de textura multipasso (Direct3D 9)](multipass-texture-blending.md)
+-   [Mapeamento de luz com texturas (Direct3D 9)](light-mapping-with-textures.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Texturas do Direct3D](direct3d-textures.md)
+[Texturas Direct3D](direct3d-textures.md)
 </dt> </dl>
 
  

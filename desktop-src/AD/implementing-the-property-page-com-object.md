@@ -8,12 +8,12 @@ keywords:
 - Objeto COM da página de propriedades, implementando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55962002ca059ad6e9c137925d1ba21ba9adc513
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 2504c27bcf4703bb49a3e8620c287c30ae9017ab6e65345d003f2acb6c9b544e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103823653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118187607"
 ---
 # <a name="implementing-the-property-page-com-object"></a>Implementando o objeto COM da página de propriedades
 
@@ -25,7 +25,7 @@ Uma extensão de folha de propriedades é um objeto COM implementado como um ser
 -   [Trabalhando com o objeto de notificação](#working-with-the-notification-object)
 -   [Diversos](#miscellaneous)
 -   [Folhas de propriedades de seleção múltipla](#multiple-selection-property-sheets)
--   [Novidade no Windows Server 2003](#new-with-windows-server-2003)
+-   [novo com o Windows Server 2003](#new-with-windows-server-2003)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="implementing-ishellextinit"></a>Implementando IShellExtInit
@@ -129,7 +129,7 @@ A extensão da folha de propriedades pode obter dados além dos fornecidos pelo 
 > [!Note]  
 > Ao contrário da maioria dos métodos e funções COM, [**ADsPropGetInitInfo**](/windows/desktop/api/Adsprop/nf-adsprop-adspropgetinitinfo) não incrementa a contagem de referência para o objeto [**IDirectoryObject**](/windows/desktop/api/iads/nn-iads-idirectoryobject) . O **IDirectoryObject** não deve ser liberado a menos que a contagem de referência seja manualmente incrementada primeiro.
 
- 
+ 
 
 Quando a página de propriedades é criada pela primeira vez, a extensão deve registrar a página com o objeto de notificação chamando [**ADsPropSetHwnd**](/windows/desktop/api/Adsprop/nf-adsprop-adspropsethwnd) com o identificador de janela da página.
 
@@ -143,7 +143,7 @@ Quando o conteúdo da página de extensão é alterado, a extensão deve usar a 
 
 ## <a name="multiple-selection-property-sheets"></a>Multiple-Selection folhas de propriedades
 
-Com os sistemas operacionais Windows Server 2003 e posteriores, os snap-ins administrativos do MMC de Active Directory dão suporte a extensões de folha de propriedades para vários objetos de diretório. Essas folhas de propriedades são exibidas quando as propriedades são exibidas para mais de um item por vez. A principal diferença entre uma extensão de folha de propriedades de seleção única e uma extensão de folha de propriedades de seleção múltipla é que a estrutura [**DSOBJECTNAMES**](/windows/desktop/api/Dsclient/ns-dsclient-dsobjectnames) fornecida pelo formato [**CFSTR \_ DSOBJECTNAMES**](/previous-versions/windows/desktop/mmc/cfstr-dsobjectnames-clipboard-format) clipboard em [**IShellExtInit:: Initialize**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellextinit-initialize) conterá mais de uma estrutura de [**DSOBJECT**](/windows/desktop/api/Dsclient/ns-dsclient-dsobject) .
+com o Windows Server 2003 e sistemas operacionais posteriores, os snap-ins administrativos do MMC de Active Directory dão suporte a extensões de folha de propriedades para vários objetos de diretório. Essas folhas de propriedades são exibidas quando as propriedades são exibidas para mais de um item por vez. A principal diferença entre uma extensão de folha de propriedades de seleção única e uma extensão de folha de propriedades de seleção múltipla é que a estrutura [**DSOBJECTNAMES**](/windows/desktop/api/Dsclient/ns-dsclient-dsobjectnames) fornecida pelo formato [**CFSTR \_ DSOBJECTNAMES**](/previous-versions/windows/desktop/mmc/cfstr-dsobjectnames-clipboard-format) clipboard em [**IShellExtInit:: Initialize**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellextinit-initialize) conterá mais de uma estrutura de [**DSOBJECT**](/windows/desktop/api/Dsclient/ns-dsclient-dsobject) .
 
 Quando o objeto de notificação é criado, uma extensão de folha de propriedades de seleção múltipla deve passar um nome exclusivo que é fornecido pelo snap-in em vez de um nome criado pela extensão. Para obter o nome exclusivo, solicite o formato de área de transferência [**CFSTR \_ DS \_ MULTISELECTPROPPAGE**](cfstr-ds-multiselectproppage.md) do [**IDataObject**](/windows/win32/api/objidl/nn-objidl-idataobject) obtido de [**IShellExtInit:: Initialize**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellextinit-initialize). Esses dados são um **HGLOBAL** que contém uma cadeia de caracteres Unicode terminada em nulo que é o nome exclusivo. Esse nome exclusivo é passado para a função [**ADsPropCreateNotifyObj**](/windows/desktop/api/Adsprop/nf-adsprop-adspropcreatenotifyobj) para criar o objeto de notificação. A função de exemplo **CreateADsNotificationObject** no [código de exemplo para implementação do objeto com da folha de propriedades](example-code-for-implementation-of-the-property-sheet-com-object.md) demonstra como fazer isso corretamente, bem como ser compatível com versões anteriores do snap-in que não dão suporte a folhas de propriedades de seleção múltipla.
 
@@ -151,13 +151,13 @@ Para folhas de propriedades de seleção múltipla, o sistema só é associado a
 
 Uma extensão de folha de propriedades de seleção múltipla é registrada no atributo [**adminMultiselectPropertyPages**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages) .
 
-## <a name="new-with-windows-server-2003"></a>Novidade no Windows Server 2003
+## <a name="new-with-windows-server-2003"></a>novo com o Windows Server 2003
 
-Os recursos a seguir são novos no Windows Server 2003.
+os recursos a seguir são novos com o Windows Server 2003.
 
 Se a página de propriedades encontrar um erro, [**ADsPropSendErrorMessage**](/windows/desktop/api/Adsprop/nf-adsprop-adspropsenderrormessage) poderá ser chamado com os dados de erro apropriados. **ADsPropSendErrorMessage** armazenará todas as mensagens de erro em uma fila. Essas mensagens serão exibidas na próxima vez em que [**ADsPropShowErrorDialog**](/windows/desktop/api/Adsprop/nf-adsprop-adspropshowerrordialog) for chamado. Quando **ADsPropShowErrorDialog** retorna, as mensagens em fila são excluídas.
 
-O Windows Server 2003 apresenta a função [**ADsPropSetHwndWithTitle**](/windows/desktop/api/Adsprop/nf-adsprop-adspropsethwndwithtitle) . Essa função é semelhante a [**ADsPropSetHwnd**](/windows/desktop/api/Adsprop/nf-adsprop-adspropsethwnd), mas inclui o título da página. Isso habilita a caixa de diálogo de erro exibida pelo [**ADsPropShowErrorDialog**](/windows/desktop/api/Adsprop/nf-adsprop-adspropshowerrordialog) para fornecer dados mais úteis ao usuário. Se a extensão da folha de propriedades usar a função **ADsPropShowErrorDialog** , a extensão deverá usar **ADsPropSetHwndWithTitle** em vez de **ADsPropSetHwnd**.
+Windows O servidor 2003 apresenta a função [**ADsPropSetHwndWithTitle**](/windows/desktop/api/Adsprop/nf-adsprop-adspropsethwndwithtitle) . Essa função é semelhante a [**ADsPropSetHwnd**](/windows/desktop/api/Adsprop/nf-adsprop-adspropsethwnd), mas inclui o título da página. Isso habilita a caixa de diálogo de erro exibida pelo [**ADsPropShowErrorDialog**](/windows/desktop/api/Adsprop/nf-adsprop-adspropshowerrordialog) para fornecer dados mais úteis ao usuário. Se a extensão da folha de propriedades usar a função **ADsPropShowErrorDialog** , a extensão deverá usar **ADsPropSetHwndWithTitle** em vez de **ADsPropSetHwnd**.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -166,6 +166,6 @@ O Windows Server 2003 apresenta a função [**ADsPropSetHwndWithTitle**](/window
 [Exemplo de código para implementação do objeto COM da folha de propriedades](example-code-for-implementation-of-the-property-sheet-com-object.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

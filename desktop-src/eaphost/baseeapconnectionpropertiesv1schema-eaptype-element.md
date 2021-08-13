@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 88361931946f8a209c5b1c41bd17fcbd0e44096d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 3f2681e5682ad98ab5f4185174996920315d8c3b81dde8ba69d13ca178904ded
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103663876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118498782"
 ---
 # <a name="eaptype-element-v1-schema-connection-property"></a>Elemento EapType (Propriedade de conexão de esquema v1)
 
@@ -41,8 +41,8 @@ O elemento **EapType** é abstrato; cada método deve definir e usar um elemento
 
 | Função | Versão mínima do sistema operacional com suporte |
 |------|------------------------------|
-| Cliente<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentResourceException'
+description: 'Saiba mais sobre: Métodos EsentResourceException'
 title: 'Métodos EsentResourceException '
 TOCTitle: EsentResourceException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentResourceException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102630
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 9e87fd2b03c8b8bfef0f3b7d72e817038c8e7153
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a2fe49f466d2133a6bb0c4067159611a76b3b659530b1e80e6b0c074f6b838db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104571270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118260632"
 ---
 # <a name="esentresourceexception-methods"></a>Métodos EsentResourceException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentResourceException](./esentresourceexception-class.md) expõe os membros a seguir.
+O [tipo EsentResourceException](./esentresourceexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentResourceException](./esentresourceexception-class.md) expõe os mem
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentResourceException](./esentresourceexception-class.md) expõe os mem
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentResourceException](./esentresourceexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
