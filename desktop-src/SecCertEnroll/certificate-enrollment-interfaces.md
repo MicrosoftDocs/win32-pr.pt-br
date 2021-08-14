@@ -4,12 +4,12 @@ ms.assetid: 653bc971-8bda-4e23-a56a-dbeb36eeaf6d
 title: Interfaces de registro de certificado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6e13e8db7d2938b7facb0b055303c1bdc18392a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cb71c1240791e26781797b547b0a62aaad1612a2bce06738cecfa02c8173b215
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118902737"
 ---
 # <a name="certificate-enrollment-interfaces"></a>Interfaces de registro de certificado
 

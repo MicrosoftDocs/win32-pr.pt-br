@@ -4,12 +4,12 @@ description: Gerenciando tempos de vida de objeto por meio de contagem de refer�
 ms.assetid: 7f9da5a9-0435-431c-8f90-56e2e489c431
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7aac184baea9198721e6cdf9c0444a8c6431db08
-ms.sourcegitcommit: f0ca63c18dc52c357d3398af7be766d2bdd40be7
+ms.openlocfilehash: 292f2c75352eef5680eb9a4d8367f76f88c19138dd834b71068740bee18f2315
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "105751029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118310556"
 ---
 # <a name="managing-object-lifetimes-through-reference-counting"></a>Gerenciando tempos de vida de objeto por meio de contagem de referência
 
@@ -27,7 +27,7 @@ Assim como um aplicativo deve liberar memória alocada quando essa memória não
 
 O método de COM de determinar quando é apropriado desalocar um objeto é a contagem de referência manual. Cada objeto mantém uma contagem de referência que acompanha quantos clientes estão conectados a ele, ou seja, quantos ponteiros existem para qualquer uma de suas interfaces em qualquer cliente.
 
-Para mais informações, consulte os seguintes tópicos:
+Para obter mais informações, consulte estes tópicos:
 
 -   [Implementando a contagem de referência](implementing-reference-counting.md)
 -   [Regras para gerenciar contagens de referência](rules-for-managing-reference-counts.md)
@@ -39,9 +39,9 @@ Para mais informações, consulte os seguintes tópicos:
 [Usando e implementando IUnknown](using-and-implementing-iunknown.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

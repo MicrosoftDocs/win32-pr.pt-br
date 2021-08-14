@@ -1,18 +1,18 @@
 ---
-title: Propriedade IMsRdpClientAdvancedSettings5 RedirectClipboard
-description: Define ou recupera a configuração para o redirecionamento da área de transferência.
+title: Propriedade RedirectClipboard IMsRdpClientAdvancedSettings5
+description: Define ou recupera a configuração para redirecionamento da área de transferência.
 ms.assetid: c653f593-9912-4ade-a0a3-70d9afac2ab1
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade RedirectClipboard
-- Propriedade RedirectClipboard Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings5, Propriedade RedirectClipboard
-- Propriedade RedirectClipboard Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings6, Propriedade RedirectClipboard
-- Propriedade RedirectClipboard Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings7, Propriedade RedirectClipboard
-- Propriedade RedirectClipboard Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings8, Propriedade RedirectClipboard
+- Propriedade RedirectClipboard Serviços de Área de Trabalho Remota
+- A propriedade RedirectClipboard Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings5
+- Interface IMsRdpClientAdvancedSettings5 Serviços de Área de Trabalho Remota , propriedade RedirectClipboard
+- A propriedade RedirectClipboard Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings6
+- Interface IMsRdpClientAdvancedSettings6 Serviços de Área de Trabalho Remota , propriedade RedirectClipboard
+- A propriedade RedirectClipboard Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings7
+- Interface IMsRdpClientAdvancedSettings7 Serviços de Área de Trabalho Remota , propriedade RedirectClipboard
+- A propriedade RedirectClipboard Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings8
+- Interface IMsRdpClientAdvancedSettings8 Serviços de Área de Trabalho Remota , propriedade RedirectClipboard
 topic_type:
 - apiref
 api_name:
@@ -34,18 +34,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2aba9950b8d602ca239d66364279a5876a432d04
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5847ef4ccb5798ea74cccecbcabbb04303df93f3cd9a8a6155cd94eabbc8a824
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118352280"
 ---
-# <a name="imsrdpclientadvancedsettings5redirectclipboard-property"></a>Propriedade IMsRdpClientAdvancedSettings5:: RedirectClipboard
+# <a name="imsrdpclientadvancedsettings5redirectclipboard-property"></a>Propriedade IMsRdpClientAdvancedSettings5::RedirectClipboard
 
-Define ou recupera a configuração para o redirecionamento da área de transferência.
+Define ou recupera a configuração para redirecionamento da área de transferência.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -64,7 +64,7 @@ HRESULT get_RedirectClipboard(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Define o modo de redirecionamento da área de transferência como **verdadeiro** ou **falso**. Se definido como **true**, o modo de redirecionamento da área de transferência será habilitado.
+Define o modo de redirecionamento da área de transferência **como TRUE** ou **FALSE.** Se definido como **TRUE,** o modo de redirecionamento da área de transferência será habilitado.
 
 ## <a name="requirements"></a>Requisitos
 

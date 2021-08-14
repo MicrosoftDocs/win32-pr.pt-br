@@ -8,12 +8,12 @@ keywords:
 - descritores de segurança AD, como definir em novos objetos de diretório
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7858d08944e93165b4a1a63ef7d845ee646dc648
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: c5d2009367c4d5604d359913b0154320332cd4be58e50dc5f065c574f8ea5fdb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104453920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118188107"
 ---
 # <a name="how-security-descriptors-are-set-on-new-directory-objects"></a>Como os descritores de segurança são definidos em novos objetos de diretório
 
@@ -21,7 +21,7 @@ Ao criar um novo objeto no Active Directory Domain Services, você pode criar ex
 
 Active Directory Domain Services use as regras a seguir para definir a DACL no descritor de segurança do novo objeto:
 
--   Se você especificar explicitamente um descritor de segurança ao criar o objeto, o sistema mesclará quaisquer ACEs herdáveis do objeto pai para a DACL especificada, a menos que o bit de controle da **\_ DACL \_ protegida** seja definido nos bits de controles do descritor de segurança.
+-   se você especificar explicitamente um descritor de segurança ao criar o objeto, o sistema mesclará quaisquer ACEs herdáveis do objeto pai para a DACL especificada, a menos que o bit **\_ \_ protegido da dacl ES** seja definido nos bits de controle do descritor de segurança.
 -   Se você não especificar um descritor de segurança, o sistema criará a DACL do objeto mesclando quaisquer ACEs herdáveis do objeto pai para a DACL padrão do objeto **classSchema** para a classe do objeto.
 -   Se o esquema não tiver uma DACL padrão, a DACL do objeto será a DACL padrão do token primário ou de representação do criador.
 -   Se não houver nenhuma DACL especificada, herdada ou padrão, o sistema criará o objeto sem nenhuma DACL, o que permitirá que todos tenham acesso completo ao objeto.
@@ -39,7 +39,7 @@ O proprietário e o grupo primário no descritor de segurança do novo objeto s�
 
 
 
- 
+ 
 
 Para obter mais informações sobre herança de ACE, consulte [herança e delegação de administração](inheritance-and-delegation-of-administration.md).
 
@@ -47,6 +47,6 @@ Para obter mais informações sobre os descritores de segurança padrão no esqu
 
 Para obter mais informações sobre objetos **classSchema** , consulte [Active Directory esquema](active-directory-schema.md).
 
- 
+ 
 
- 
+ 

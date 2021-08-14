@@ -1,12 +1,12 @@
 ---
-title: Propriedade de nome de usuário ITsSbSession
-description: Recupera o nome de usuário desta sessão.
+title: Propriedade nome de usuário ITsSbSession
+description: Recupera o nome de usuário para esta sessão.
 ms.assetid: 0034e8cc-b67b-4e30-a059-47a269bab0fd
 ms.tgt_platform: multiple
 keywords:
-- Propriedade de nome de usuário Serviços de Área de Trabalho Remota
-- Propriedade UserName Serviços de Área de Trabalho Remota, interface ITsSbSession
-- Serviços de Área de Trabalho Remota de interface ITsSbSession, Propriedade UserName
+- Propriedades de nome de usuário Serviços de Área de Trabalho Remota
+- Propriedade username Serviços de Área de Trabalho Remota , interface ITsSbSession
+- Interface ITsSbSession Serviços de Área de Trabalho Remota , propriedade Username
 topic_type:
 - apiref
 api_name:
@@ -18,16 +18,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e5fb66f0639d659fcb6800680ffc3b3486ad12b8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 60d42c06d700cb95df5635f902876c242b164a6fd12415848cc11539cb30edd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105780571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118351196"
 ---
-# <a name="itssbsessionusername-property"></a>Propriedade ITsSbSession:: username
+# <a name="itssbsessionusername-property"></a>Propriedade ITsSbSession::Username
 
-Recupera o nome de usuário desta sessão.
+Recupera o nome de usuário para esta sessão.
 
 Esta propriedade é somente para leitura.
 
@@ -44,7 +44,7 @@ HRESULT get_Username(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um ponteiro para uma variável **BSTR** que recebe o nome de usuário para esta sessão.
+Um ponteiro para uma **variável BSTR** que recebe o nome de usuário para esta sessão.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Um ponteiro para uma variável **BSTR** que recebe o nome de usuário para esta 
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                            |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                       |
-| INSERI<br/>                      | <dl> <dt>Sbtsv. idl</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Sbtsv.idl</dt> </dl> |
 
 
 

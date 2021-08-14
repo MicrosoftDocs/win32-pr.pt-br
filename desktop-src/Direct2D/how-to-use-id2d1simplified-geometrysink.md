@@ -4,16 +4,16 @@ description: Mostra como recuperar dados de geometria estendendo a interface ID2
 ms.assetid: c6777b11-6d4e-409e-9c30-da1e060c9aca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ba3670eb8d0152cc1dae8fbcc164bd8a6167630
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8b9cd7e3f5e01b77c07e0082d3460b718a4363cf88288859b715369a94ca09bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118003421"
 ---
 # <a name="how-to-retrieve-geometry-data-by-extending-id2d1simplifiedgeometrysink"></a>Como recuperar dados de geometria estendendo ID2D1SimplifiedGeometrySink
 
-Embora um objeto [**ID2D1Geometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry) seja imutável, há casos em que você precisa manipular os dados de geometria em um objeto de geometria de caminho. O Direct2D permite que você faça isso fornecendo uma interface extensível chamada [**ID2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink). Para a ilustração de conceito, este tópico descreve como estender essa interface para recuperar os dados de geometria de um objeto de geometria de caminho.
+Embora um objeto [**ID2D1Geometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry) seja imutável, há casos em que você precisa manipular os dados de geometria em um objeto de geometria de caminho. Direct2D permite que você faça isso fornecendo uma interface extensível chamada [**ID2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink). Para a ilustração de conceito, este tópico descreve como estender essa interface para recuperar os dados de geometria de um objeto de geometria de caminho.
 
 **Para estender a interface ID2D1SimplifiedGeometrySink**
 
@@ -202,9 +202,9 @@ O programa cria saídas conforme mostrado na captura de tela a seguir.
 
 <dl> <dt>
 
-[Referência de Direct2D](reference.md)
+[Direct2D Referência](reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -4,12 +4,12 @@ ms.assetid: 5dd0eda3-83a6-4077-a7a3-e371c9413b0f
 title: Mensagem de WM_NCCREATE (WinUser. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e8757cbdeba49d54f6e5d842a5b40c7f7ae61cac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 84fa5638ef1b97365d202f2049fc79712d0ed3eec167825110f7c7967ce4605c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105788735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118200052"
 ---
 # <a name="wm_nccreate-message"></a>Mensagem do WM \_ NCCREATE
 
@@ -42,7 +42,7 @@ Um ponteiro para a estrutura [**CREATESTRUCT**](/windows/win32/api/winuser/ns-wi
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **LRESULT**
 
@@ -56,7 +56,7 @@ Se um aplicativo processar essa mensagem, ele deverá retornar **true** para con
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

@@ -1,12 +1,12 @@
 ---
-title: Método SetIdleTimeout da classe Win32_TSGatewayConnectionAuthorizationPolicy
+title: Método SetIdleTimeout da Win32_TSGatewayConnectionAuthorizationPolicy classe
 description: Define a propriedade IdleTimeout.
 ms.assetid: 162224dd-e4d4-483f-9ec4-b87731bc5014
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método SetIdleTimeout
-- Método SetIdleTimeout Serviços de Área de Trabalho Remota, classe Win32_TSGatewayConnectionAuthorizationPolicy
-- Classe Win32_TSGatewayConnectionAuthorizationPolicy Serviços de Área de Trabalho Remota, método SetIdleTimeout
+- Método SetIdleTimeout Serviços de Área de Trabalho Remota
+- Método SetIdleTimeout Serviços de Área de Trabalho Remota , Win32_TSGatewayConnectionAuthorizationPolicy classe
+- Win32_TSGatewayConnectionAuthorizationPolicy classe Serviços de Área de Trabalho Remota , método SetIdleTimeout
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c166311477dc9de94ca6c9614e14ac98907b406
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 483369505f08e6bb28d2933296ea7da50a4706d9762e2e105dbf34526f734af4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105754707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119988016"
 ---
-# <a name="setidletimeout-method-of-the-win32_tsgatewayconnectionauthorizationpolicy-class"></a>Método SetIdleTimeout da classe Win32 \_ TSGatewayConnectionAuthorizationPolicy
+# <a name="setidletimeout-method-of-the-win32_tsgatewayconnectionauthorizationpolicy-class"></a>Método SetIdleTimeout da classe \_ Win32 TSGatewayConnectionAuthorizationPolicy
 
-Define a propriedade **IdleTimeout** .
+Define a **propriedade IdleTimeout.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,26 +43,26 @@ uint32 SetIdleTimeout(
 
 <dl> <dt>
 
-*IdleTimeout* \[ no\]
+*IdleTimeout* \[ Em\]
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-O novo valor de tempo limite, em minutos. Um valor de 0 significa que não há nenhum tempo limite.
+O novo valor de tempo-tempo, em minutos. Um valor de 0 significa que não há nenhum tempoout.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Se o método tiver sucesso, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para obter uma lista de códigos de erro, consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md).
+Se o método for bem-sucedido, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para ver uma lista de códigos de erro, consulte Serviços de Área de Trabalho Remota códigos de erro do provedor [WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="remarks"></a>Comentários
 
 Você deve ser um membro do grupo Administradores para chamar esse método.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format arquivos (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,8 +72,8 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2<br/>                                                        |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TS. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -82,7 +82,7 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_TSGatewayConnectionAuthorizationPolicy Win32**](win32-tsgatewayconnectionauthorizationpolicy.md)
+[**Win32 \_ TSGatewayConnectionAuthorizationPolicy**](win32-tsgatewayconnectionauthorizationpolicy.md)
 </dt> </dl>
 
  

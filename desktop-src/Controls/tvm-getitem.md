@@ -3,7 +3,7 @@ title: Mensagem de TVM_GETITEM (commctrl. h)
 description: Recupera alguns ou todos os atributos de um item de exibição de árvore. Você pode enviar essa mensagem explicitamente ou usando a macro TreeView \_ GetItem.
 ms.assetid: e26ec000-967d-46de-8f71-6ebc36fefe5e
 keywords:
-- Controles de TVM_GETITEM de mensagens do Windows
+- controles de Windows de mensagem de TVM_GETITEM
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dff96f4721a3c50eda54792b2b1c003cd808bf11
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 425b0200df62b1cfcbc18556ad12513e43cebadf6e5742b36880464fad195fb8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119984886"
 ---
 # <a name="tvm_getitem-message"></a>\_Mensagem TVM GETITEM
 
@@ -41,7 +41,7 @@ Ponteiro para uma estrutura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
@@ -57,9 +57,9 @@ Se o \_ sinalizador de texto TVIF for definido no membro **Mask** da estrutura [
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **TVM \_ GETITEMW** (Unicode) e **TVM \_ getitema** (ANSI)<br/>                   |
 
 

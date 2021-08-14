@@ -1,16 +1,16 @@
 ---
 title: Propriedade IMsRdpClientAdvancedSettings6 HotKeyFocusReleaseRight
-description: Especifica o código de chave virtual a ser adicionado a CTRL + ALT para determinar a substituição de tecla de atalho para Ctrl + Alt + seta direita.
+description: Especifica o código de chave virtual a ser adicionar a Ctrl+Alt para determinar a substituição da tecla de atalho para Ctrl+Alt+Seta para a Direita.
 ms.assetid: 9AEEB712-E4C4-435E-A847-40C2B3A41C15
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade HotKeyFocusReleaseRight
-- Propriedade HotKeyFocusReleaseRight Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings6, Propriedade HotKeyFocusReleaseRight
-- Propriedade HotKeyFocusReleaseRight Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings7, Propriedade HotKeyFocusReleaseRight
-- Propriedade HotKeyFocusReleaseRight Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings8, Propriedade HotKeyFocusReleaseRight
+- Propriedade HotKeyFocusReleaseRight Serviços de Área de Trabalho Remota
+- A propriedade HotKeyFocusReleaseRight Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings6
+- Interface IMsRdpClientAdvancedSettings6 Serviços de Área de Trabalho Remota , propriedade HotKeyFocusReleaseRight
+- A propriedade HotKeyFocusReleaseRight Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings7
+- Interface IMsRdpClientAdvancedSettings7 Serviços de Área de Trabalho Remota , propriedade HotKeyFocusReleaseRight
+- Propriedade HotKeyFocusReleaseRight Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings8
+- Interface IMsRdpClientAdvancedSettings8 Serviços de Área de Trabalho Remota , propriedade HotKeyFocusReleaseRight
 topic_type:
 - apiref
 api_name:
@@ -29,20 +29,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2ce11df170b8b0a0a9a3f58a625955cecb41973
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6c508dd3007db9da47d8680b67d210d5e541351cdab7078e1ee6447b078638c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105779275"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118352270"
 ---
-# <a name="imsrdpclientadvancedsettings6hotkeyfocusreleaseright-property"></a>Propriedade IMsRdpClientAdvancedSettings6:: HotKeyFocusReleaseRight
+# <a name="imsrdpclientadvancedsettings6hotkeyfocusreleaseright-property"></a>Propriedade IMsRdpClientAdvancedSettings6::HotKeyFocusReleaseRight
 
-Especifica o código de chave virtual a ser adicionado a CTRL + ALT para determinar a substituição de tecla de atalho para Ctrl + Alt + seta direita.
+Especifica o código de chave virtual a ser adicionar a Ctrl+Alt para determinar a substituição da tecla de atalho para Ctrl+Alt+Seta para a Direita.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -63,7 +63,7 @@ O novo código de chave virtual.
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade só tem suporte nos clientes Conexão de Área de Trabalho Remota 6,1 e 7,0.
+Essa propriedade só tem suporte Conexão de Área de Trabalho Remota clientes 6.1 e 7.0.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,7 +75,7 @@ Essa propriedade só tem suporte nos clientes Conexão de Área de Trabalho Remo
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                                   |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>           |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>           |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings6 é definido como 222c4b5d-45D9-4df0-a7c6-60cf9089d285<br/> |
+| IID<br/>                      | \_IMs IIDRdpClientAdvancedSettings6 é definido como 222c4b5d-45d9-4df0-a7c6-60cf9089d285<br/> |
 
 
 

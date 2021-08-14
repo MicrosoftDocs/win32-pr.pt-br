@@ -1,6 +1,6 @@
 ---
 title: Tipo complexo settingstype
-description: Define os elementos filho e as informações de sequenciamento para o elemento Settings (taskType).
+description: define os elementos filho e as informações de sequenciamento para o elemento Configurações (taskType).
 ms.assetid: dba6b82d-aaa4-4f77-aeb1-c5a8f81aec25
 keywords:
 - tipo complexo settingstype Agendador de Tarefas
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a3c2b3128a35ee0e46c56d19badd431400d4d862
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a48a124230a27a0c23cc9c2a9fa983b6ef3088b8ec22e8ac03fc371caadf0f00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105810988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118356348"
 ---
 # <a name="settingstype-complex-type"></a>Tipo complexo settingstype
 
-Define os elementos filho e as informações de sequenciamento para o elemento [**Settings (TaskType)**](taskschedulerschema-settings-tasktype-element.md) .
+define os elementos filho e as informações de sequenciamento para o elemento [**Configurações (taskType)**](taskschedulerschema-settings-tasktype-element.md) .
 
 ``` syntax
 <xs:complexType name="settingsType">
@@ -139,7 +139,7 @@ Define os elementos filho e as informações de sequenciamento para o elemento [
 | [**DisallowStartOnRemoteAppSession**](taskschedulerschema-disallowstartonremoteappsession-settingstype-element.md) | booleano                                                                                           | Especifica que a tarefa não deve ser iniciada se a tarefa for disparada para ser executada em uma sessão do trilho (integrada localmente) de aplicativos remotos.<br/>                                                                                                                                                                     |
 | [**habilitado**](taskschedulerschema-enabled-settingstype-element.md)                                                 | booleano                                                                                           | Especifica que a tarefa está habilitada. A tarefa pode ser executada somente quando essa configuração for **verdadeira**.<br/>                                                                                                                                                                                                        |
 | [**ExecutionTimeLimit**](taskschedulerschema-executiontimelimit-settingstype-element.md)                           | duration                                                                                          | Especifica a quantidade de tempo permitido para concluir a tarefa.<br/>                                                                                                                                                                                                                                               |
-| [**Hidden**](taskschedulerschema-hidden-settingstype-element.md)                                                   | booleano                                                                                           | Especifica, por padrão, que a tarefa não estará visível na interface do usuário.<br/>                                                                                                                                                                                                                     |
+| [**Oculto**](taskschedulerschema-hidden-settingstype-element.md)                                                   | booleano                                                                                           | Especifica, por padrão, que a tarefa não estará visível na interface do usuário.<br/>                                                                                                                                                                                                                     |
 | [**IdleSettings**](taskschedulerschema-idlesettings-settingstype-element.md)                                       | [**idleSettingsType**](taskschedulerschema-idlesettingstype-complextype.md)                      | Especifica como a Agendador de Tarefas executa tarefas quando o computador está em um estado ocioso.<br/>                                                                                                                                                                                                                   |
 | [**MultipleInstancesPolicy**](taskschedulerschema-multipleinstancespolicy-settingstype-element.md)                 | [**multipleInstancesPolicyType**](taskschedulerschema-multipleinstancespolicytype-simpletype.md) | Especifica a política que define como o Agendador de Tarefas lida com várias instâncias da tarefa. <br/>                                                                                                                                                                                                     |
 | [**NetworkProfileName**](taskschedulerschema-networkprofilename-settingstype-element.md)                           | string                                                                                            | Especifica o nome de um perfil de rede. O serviço de Agendador de Tarefas verifica a disponibilidade dessa rede quando o elemento [**RunOnlyIfNetworkAvailable**](taskschedulerschema-runonlyifnetworkavailable-settingstype-element.md) é definido como **true**. O nome é usado para fins de exibição.<br/>        |
@@ -161,8 +161,8 @@ Define os elementos filho e as informações de sequenciamento para o elemento [
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

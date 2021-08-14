@@ -4,12 +4,12 @@ ms.assetid: 941298b4-d703-4b3f-8bde-0e6e158560df
 title: Comparação de valor literal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d8577e5a97dcc92131658c325f175efa1d0c3fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7c1e311c6f98c1114b63a1bf650d6e7be004e1e8e4cf5848b962a7cbf8049bfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105813231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118227171"
 ---
 # <a name="literal-value-comparison"></a>Comparação de valor literal
 
@@ -54,7 +54,7 @@ A tabela a seguir descreve os operadores de comparação com suporte.
 
  
 
-Em conjunto com o operador "=", o Windows Search linguagem SQL (SQL) dá suporte ao uso de palavras-chave BEFORE e AFTER, que especificam se a consulta deve comparar valores de coluna antes ou depois de um valor especificado, na ordem de classificação do dicionário.
+em conjunto com o operador "=", Windows Search linguagem SQL (SQL) dá suporte ao uso de palavras-chave before e after, que especificam se a consulta deve comparar valores de coluna antes ou depois de um valor especificado, na ordenação de classificação de dicionário.
 
 
 ```

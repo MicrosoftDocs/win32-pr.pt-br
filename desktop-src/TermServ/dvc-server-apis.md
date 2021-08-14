@@ -5,12 +5,12 @@ ms.assetid: 9743ce32-9262-4af3-b013-668e834e279c
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c3bc413cb6bc60f5b6a16f282fe3d4d1aa830272
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2f43ab4032e4500732e2f9ee6cfa9a2c17f8b1892e55973ba633758792f00bf0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118353969"
 ---
 # <a name="dvc-server-apis"></a>APIs de servidor DVC
 
@@ -52,6 +52,6 @@ Esta enumeração não é usada.
 
     Se o identificador de arquivo para o DVC for recuperado chamando [**WTSVirtualChannelQuery**](/windows/desktop/api/Wtsapi32/nf-wtsapi32-wtsvirtualchannelquery) com o parâmetro *WTSVirtualFileHandle*, a mesma regra será aplicada. Todas as leituras incluirão [**o \_ \_ cabeçalho PDU do canal**](/windows/win32/api/pchannel/ns-pchannel-channel_pdu_header)e o buffer de leitura deverá ter pelo menos o tamanho do **\_ \_ comprimento de PDU do canal** .
 
- 
+ 
 
- 
+ 

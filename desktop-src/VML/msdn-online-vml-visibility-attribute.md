@@ -4,21 +4,21 @@ description: Atributo de visibilidade de VML
 ms.assetid: 1a15335b-e7e9-4bf1-9c0c-8d2e4704f256
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7325d09f60da13f0c7c44e73b347fa579870fcd0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2087a8c5915b400f32f6007d58c5c20344f9abab1e2c5bc5d4c93da74ddf1182
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105763810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118346178"
 ---
 # <a name="vml-visibility-attribute"></a>Atributo de visibilidade de VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Determina se uma forma é exibida. Leitura/gravação. **Cadeia de caracteres**.
 
@@ -48,12 +48,12 @@ Os valores são:
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | visible  | A forma está visível.                                                                                                                                                                   |
 | oculto   | A forma não é visível, mas ainda faz parte do fluxo dos objetos no navegador. Eventos de mouse não são processados.                                                                  |
-| inherit  | Padrão. O estado de visibilidade é herdado do pai da forma. Microsoft Office aplicativos usam somente **Inherit** e **Hidden**; todos os outros valores são mapeados para **herdar**. |
+| inherit  | Padrão. O estado de visibilidade é herdado do pai da forma. Microsoft Office aplicativos usam somente **inherit** e **hidden**; todos os outros valores são mapeados para **herdar**. |
 | recolher | Usado para aplicativos de edição gráfica que podem recolher grupos de formas; por exemplo, contornos.                                                                                     |
 
 
 
- 
+ 
 
 *Atributo padrão da VML*
 
@@ -72,6 +72,6 @@ O código a seguir cria uma forma, mas a torna oculta. Outros objetos no documen
 
 [Exemplo de atributo Visibility](/previous-versions/bb264100(v=vs.85)). (Requer o Microsoft Internet Explorer 5 ou superior.)
 
- 
+ 
 
- 
+ 

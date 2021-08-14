@@ -4,12 +4,12 @@ ms.assetid: 796206ab-d69c-4dd5-a408-2ecb5cde243f
 title: System. vídeo. StreamNumber
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9186d17c23f3eb04c84ee746cf0a6c4b5391c9b0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 677a0e8fb35a32422e8eefec3b32fe7ce1bed391c3deb16ce6be713b13ce9046
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118227358"
 ---
 # <a name="systemvideostreamnumber"></a>System. vídeo. StreamNumber
 

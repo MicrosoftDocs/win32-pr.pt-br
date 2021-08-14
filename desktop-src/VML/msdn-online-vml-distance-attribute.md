@@ -1,26 +1,26 @@
 ---
-title: Atributo de distância da VML
-description: Atributo de distância da VML
+title: Atributo de distância VML
+description: Atributo de distância VML
 ms.assetid: 8f5d2b91-011f-4788-80ac-b6d851bea5fa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73f31145f011dd58e48a3c1642d638a175f6bb15
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e27dfe1fefafd10da8797e2b0b61f06105d2843657190d51d62f5c9b5761dd2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118346756"
 ---
-# <a name="vml-distance-attribute"></a>Atributo de distância da VML
+# <a name="vml-distance-attribute"></a>Atributo de distância VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Define a distância de posicionamento de um texto explicativo. Leitura/gravação. **Cadeia de caracteres**.
+Define a distância de soltar de um final de chamada. Leitura/gravação. **Cadeia de caracteres**.
 
 **Aplica-se a**
 
@@ -28,14 +28,14 @@ Define a distância de posicionamento de um texto explicativo. Leitura/gravaçã
 
 **Sintaxe de marca**
 
-<o: *elemento* Distance = " *expressão* " >
+<o: *element* distance=" *expressão* ">
 
 **Comentários**
 
-A distância de soltura de um texto explicativo é medida a partir da borda da forma em que a linha do ponteiro é iniciada e continua o comprimento absoluto do valor de distância.
+A distância de soltar de um texto explicativo é medida da borda da forma em que a linha do ponteiro é iniciada e continua o comprimento absoluto do valor da distância.
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

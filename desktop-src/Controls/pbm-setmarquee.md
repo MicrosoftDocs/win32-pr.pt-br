@@ -3,7 +3,7 @@ title: Mensagem de PBM_SETMARQUEE (commctrl. h)
 description: Define a barra de progresso para o modo de letreiro. Isso faz com que a barra de progresso se mova como um letreiro.
 ms.assetid: 6501bcb9-a711-470f-874f-f3484d3613b6
 keywords:
-- Controles de PBM_SETMARQUEE de mensagens do Windows
+- controles de Windows de mensagem de PBM_SETMARQUEE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9229291113f034924cf9ce8112c0e99376d37932
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f724f87faa6e989fddb17e8d6fb3b115dd04859ea426addb7d4c0b893aff407a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918792"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986136"
 ---
 # <a name="pbm_setmarquee-message"></a>\_Mensagem SETmarquee do PBM
 
@@ -39,7 +39,7 @@ Indica se o modo de letreiro deve ser ativado ou desativado.
 *lParam* 
 </dt> <dd>Tempo, em milissegundos, entre as atualizações de animação do letreiro digital. Se esse parâmetro for zero, a animação do letreiro digital será atualizada a cada 30 milissegundos.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sempre retorna **true**.
 
@@ -65,9 +65,9 @@ Envie a **mensagem \_ setmarquee do PBM** para iniciar ou parar a animação.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

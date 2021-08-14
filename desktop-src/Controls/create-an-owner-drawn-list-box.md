@@ -1,41 +1,41 @@
 ---
-title: Como criar uma caixa de listagem de Owner-Drawn
-description: Este tópico demonstra como implementar uma caixa de listagem de desenho proprietário.
+title: Como criar uma caixa Owner-Drawn listagem
+description: Este tópico demonstra como implementar uma caixa de listagem desenhada pelo proprietário.
 ms.assetid: AE6E8943-DC03-4A21-9F0A-9C70C6BD7481
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 81b48a56ca188fb2c277cc822dcb9a343205a331
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 2994c88aec9f3c11ae856136103cf3327d53a2b72c5b2e8903e187ece01bf0f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103917817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118413194"
 ---
-# <a name="how-to-create-an-owner-drawn-list-box"></a>Como criar uma caixa de listagem de Owner-Drawn
+# <a name="how-to-create-an-owner-drawn-list-box"></a>Como criar uma caixa Owner-Drawn listagem
 
-Este tópico demonstra como implementar uma caixa de listagem de desenho proprietário.
+Este tópico demonstra como implementar uma caixa de listagem desenhada pelo proprietário.
 
-O exemplo de código C++ neste tópico mostra como desenhar uma caixa de listagem que contém cinco itens desenhados pelo proprietário: quatro implementações de desenho e uma bifurcação. Cada item de lista aparece como um bitmap seguido pelo nome do objeto. Um botão solicita que o usuário selecione um item que não seja como os outros. Escolher o botão com a bifurcação selecionada exibe um "você está certo!" e fecha a caixa de diálogo. Escolher o botão com qualquer outro item de lista selecionado exibe um "tentar novamente!" .
+O exemplo de código C++ neste tópico mostra como desenhar uma caixa de listagem que contém cinco itens desenhados pelo proprietário: quatro implementações de desenho e uma bifurcação. Cada item de lista aparece como um bitmap seguido pelo nome do objeto . Um botão solicita que o usuário selecione um item que não seja como os outros. Escolher o botão com a bifurcação selecionada exibe um "Você tem razão!" mensagem e fecha a caixa de diálogo. Escolher o botão com qualquer outro item de lista selecionado exibe um "Tente novamente!" .
 
-A caixa de listagem tem os estilos de [**lbs \_ OwnerDrawFixed**](list-box-styles.md) e [**lbs \_ HASSTRINGS**](list-box-styles.md) , além dos estilos de caixa de listagem padrão.
+A caixa de listagem tem os estilos [**LBS \_ OWNERDRAWFIXED**](list-box-styles.md) e [**LBS \_ HASSTRINGS,**](list-box-styles.md) além dos estilos de caixa de listagem padrão.
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Interface do Usuário programação
 
 ## <a name="instructions"></a>Instruções
 
 
-Para inicializar uma caixa de listagem desenhada pelo proprietário, seu aplicativo deve carregar a cadeia de texto e o bitmap associado para cada item da caixa de listagem.
+Para inicializar uma caixa de listagem desenhada pelo proprietário, seu aplicativo deve carregar a cadeia de caracteres de texto e o bitmap associado para cada item da caixa de listagem.
 
-No exemplo de código C++ a seguir, o procedimento da caixa de diálogo Inicializa a caixa de listagem, **\_ listar \_ itens da IDC**, enviando a mensagem de [**\_ AddString do lb**](lb-addstring.md) para definir o texto e, em seguida, envia a mensagem [**\_ SETITEMDATA do lb**](lb-setitemdata.md) para associar um bitmap a cada item da caixa de listagem. O código também define a altura de cada item da caixa de listagem processando a mensagem do [**WM \_ MEASUREITEM**](wm-measureitem.md) e desenha o texto e o bitmap para cada item processando a mensagem do [**WM \_ DRAWITEM**](wm-drawitem.md) .
+No exemplo de código C++ a seguir, o procedimento da caixa de diálogo inicializa a caixa de **listagem, IDC \_ LIST \_ STUFF,** enviando a mensagem [**LB \_ ADDSTRING**](lb-addstring.md) para definir o texto e, em seguida, envia a mensagem [**LB \_ SETITEMDATA**](lb-setitemdata.md) para associar um bitmap a cada item da caixa de listagem. O código também define a altura de cada item da caixa de listagem processando a mensagem [**WM \_ MEASUREITEM**](wm-measureitem.md) e desenha o texto e o bitmap para cada item processando a mensagem [**WM \_ DRAWITEM.**](wm-drawitem.md)
 
 
 
@@ -271,7 +271,7 @@ INT_PTR CALLBACK DlgDrawProc(HWND hDlg, UINT message,
 [Referência de controle de caixa de listagem](bumper-list-box-list-box-control-reference.md)
 </dt> <dt>
 
-[Sobre as caixas de listagem](about-list-boxes.md)
+[Sobre caixas de listagem](about-list-boxes.md)
 </dt> <dt>
 
 [Usando caixas de listagem](using-list-boxes.md)

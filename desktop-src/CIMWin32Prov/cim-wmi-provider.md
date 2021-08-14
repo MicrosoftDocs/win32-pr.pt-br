@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Provedor WMI CIM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a3249549e0915f51b6a9a6f2386c18ba695919a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: acb9a01e0771645cf6101171ce870be593181cb61d6118e627b9bf96b61994be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118420327"
 ---
 # <a name="cim-wmi-provider"></a>Provedor WMI CIM
 
@@ -825,581 +825,581 @@ A classe [**CIM \_ HostedService**](cim-hostedservice.md) representa uma associa
 
 </dd> <dt>
 
-[**\_INFRAREDCONTROLLER CIM**](cim-infraredcontroller.md)
+[**Cim \_ EsvasadoController**](cim-infraredcontroller.md)
 </dt> <dd>
 
-A classe [**CIM \_ InfraredController**](cim-infraredcontroller.md) representa os recursos e o gerenciamento de um controlador de infravermelho.
+A [**classe \_ Cim DesaloqueadoController**](cim-infraredcontroller.md) representa as funcionalidades e o gerenciamento de um controlador com fio.
 
 </dd> <dt>
 
-[**\_INSTALLEDOS CIM**](cim-installedos.md)
+[**CIM \_ InstalledOS**](cim-installedos.md)
 </dt> <dd>
 
-A classe de associação [**CIM \_ InstalledOS**](cim-installedos.md) representa um link entre o sistema de computador e o sistema operacional instalado. Um sistema operacional é instalado quando está na extensão de armazenamento de um sistema de computador (por exemplo, copiado para uma unidade de disco ou baixado para memória).
+A [**classe de associação CIM \_ InstalledOS**](cim-installedos.md) representa um link entre o sistema de computador e o sistema operacional instalado. Um sistema operacional é instalado quando ele está na extensão de armazenamento do sistema de computador (por exemplo, copiado para uma unidade de disco ou baixado na memória).
 
 </dd> <dt>
 
-[**\_INSTALLEDSOFTWAREELEMENT CIM**](cim-installedsoftwareelement.md)
+[**CIM \_ InstalledSoftwareElement**](cim-installedsoftwareelement.md)
 </dt> <dd>
 
-A classe [**CIM \_ InstalledSoftwareElement**](cim-installedsoftwareelement.md) associa um sistema de computador a um elemento de software instalado.
+A [**classe CIM \_ InstalledSoftwareElement**](cim-installedsoftwareelement.md) associa um sistema de computador a um elemento de software instalado.
 
 </dd> <dt>
 
-[**IRQ de CIM \_**](cim-irq.md)
+[**CIM \_ IRQ**](cim-irq.md)
 </dt> <dd>
 
-A classe de [**\_ IRQ de CIM**](cim-irq.md) representa uma IRQ (linha de solicitação de interrupção) de arquitetura da Intel.
+A [**classe CIM \_ IRQ**](cim-irq.md) representa uma IRQ (linha de solicitação de interrupção) da arquitetura Intel.
 
 </dd> <dt>
 
-[**Trabalho do CIM \_**](cim-job.md)
+[**Trabalho \_ CIM**](cim-job.md)
 </dt> <dd>
 
-A classe de [**\_ trabalho CIM**](cim-job.md) representa uma unidade de trabalho para um sistema, como um trabalho de impressão. Um trabalho é diferente de um processo porque um trabalho pode ser agendado.
+A [**classe De \_ trabalho CIM**](cim-job.md) representa uma unidade de trabalho para um sistema, como um trabalho de impressão. Um trabalho é diferente de um processo porque um trabalho pode ser agendado.
 
 </dd> <dt>
 
-[**\_JOBDESTINATION CIM**](cim-jobdestination.md)
+[**JobDestination do CIM \_**](cim-jobdestination.md)
 </dt> <dd>
 
-A classe [**CIM \_ JobDestination**](cim-jobdestination.md) representa onde um trabalho é enviado para processamento. Ele pode se referir a uma fila que contém zero ou mais trabalhos, como uma fila de impressão que contém trabalhos de impressão. Os destinos de trabalho são hospedados em sistemas, de forma semelhante ao modo como os serviços são hospedados em sistemas.
+A [**classe \_ JobDestination cim**](cim-jobdestination.md) representa o local em que um trabalho é enviado para processamento. Ele pode se referir a uma fila que contém zero ou mais trabalhos, como uma fila de impressão que contém trabalhos de impressão. Destinos de trabalho são hospedados em sistemas, semelhante à maneira como os serviços são hospedados em sistemas.
 
 </dd> <dt>
 
-[**\_JOBDESTINATIONJOBS CIM**](cim-jobdestinationjobs.md)
+[**\_JobDestinationJobs do CIM**](cim-jobdestinationjobs.md)
 </dt> <dd>
 
-A associação [**CIM \_ JobDestinationJobs**](cim-jobdestinationjobs.md) descreve onde um trabalho é enviado para processamento (ou seja, para qual destino de trabalho).
+A [**associação \_ JobDestinationJobs**](cim-jobdestinationjobs.md) do CIM descreve onde um trabalho é enviado para processamento (ou seja, para qual destino do trabalho).
 
 </dd> <dt>
 
-[**\_Teclado CIM**](cim-keyboard.md)
+[**Teclado \_ CIM**](cim-keyboard.md)
 </dt> <dd>
 
-A classe de [**\_ teclado CIM**](cim-keyboard.md) representa os recursos e o gerenciamento do dispositivo lógico do teclado.
+A [**classe \_ teclado CIM**](cim-keyboard.md) representa os recursos e o gerenciamento do dispositivo lógico do teclado.
 
 </dd> <dt>
 
-[**\_LINKHASCONNECTOR CIM**](cim-linkhasconnector.md)
+[**CIM \_ LinkHasConnector**](cim-linkhasconnector.md)
 </dt> <dd>
 
-A classe [**CIM \_ LinkHasConnector**](cim-linkhasconnector.md) associa cabos e links usados como conectores físicos, que conectam os elementos físicos. Essa associação define explicitamente a relação de conectores [**para \_ PhysicalLink CIM**](cim-physicallink.md).
+A [**classe CIM \_ LinkHasConnector**](cim-linkhasconnector.md) associa cabos e links usados como conectores físicos, que conectam os elementos físicos. Essa associação define explicitamente a relação de conectores para [**CIM \_ PhysicalLink.**](cim-physicallink.md)
 
 </dd> <dt>
 
-[**\_LOCALFILESYSTEM CIM**](cim-localfilesystem.md)
+[**CIM \_ LocalFileSystem**](cim-localfilesystem.md)
 </dt> <dd>
 
-A classe [**CIM \_ LocalFileSystem**](cim-localfilesystem.md) representa o repositório de arquivos controlado por um sistema de computador por meio de meios locais (por exemplo, acesso direto ao driver de dispositivo). O armazenamento de arquivos pode ser gerenciado diretamente pelo sistema de computador, sem a necessidade de outro computador agir como um servidor de arquivos. No entanto, para um sistema de arquivos clusterizado, o sistema de arquivos é local e, portanto, é adiado para o cluster.
+A [**classe Cim \_ LocalFileSystem**](cim-localfilesystem.md) representa o armazenamento de arquivos controlado por um sistema de computador por meio de meios locais (por exemplo, acesso direto ao driver de dispositivo). O armazenamento de arquivos pode ser gerenciado diretamente pelo sistema de computador, sem a necessidade de outro computador atuar como um servidor de arquivos. No entanto, para um sistema de arquivos cluster, o sistema de arquivos é local e, portanto, é adiado para o cluster.
 
 </dd> <dt>
 
-[**Local do CIM \_**](cim-location.md)
+[**Localização do CIM \_**](cim-location.md)
 </dt> <dd>
 
-A classe de [**\_ local do CIM**](cim-location.md) representa a posição e o endereço de um elemento físico.
+A [**classe \_ Local CIM**](cim-location.md) representa a posição e o endereço de um elemento físico.
 
 </dd> <dt>
 
-[**\_LOGICALDEVICE CIM**](cim-logicaldevice.md)
+[**CIM \_ LogicalDevice**](cim-logicaldevice.md)
 </dt> <dd>
 
-A classe [**CIM \_ LogicalDevice**](cim-logicaldevice.md) representa uma entidade de hardware que pode ou não ser realizada em hardware físico.
+A [**classe \_ LogicalDevice cim**](cim-logicaldevice.md) representa uma entidade de hardware que pode ou não ser realizada em hardware físico.
 
 </dd> <dt>
 
-[**\_LOGICALDISK CIM**](cim-logicaldisk.md)
+[**CIM \_ LogicalDisk**](cim-logicaldisk.md)
 </dt> <dd>
 
-A classe de [**\_ LogicalDisk CIM**](cim-logicaldisk.md) representa um intervalo contíguo de blocos lógicos que é identificável por um sistema de arquivos por meio do campo **DeviceID** (chave) do disco. Por exemplo, em um ambiente do Windows, o campo **DeviceID** contém uma letra da unidade; em um ambiente UNIX, ele contém o caminho de acesso; e em um ambiente do NetWare, ele contém o nome do volume.
+A [**classe \_ LogicalDisk cim**](cim-logicaldisk.md) representa um intervalo contíguo de blocos lógicos que é identificável por um sistema de arquivos por meio do campo **DeviceID** (chave) do disco. Por exemplo, em um ambiente Windows, o **campo DeviceID** contém uma letra da unidade; em um UNIX, ele contém o caminho de acesso; e em um ambiente do NetWare, ele contém o nome do volume.
 
 </dd> <dt>
 
-[**\_LOGICALDISKBASEDONPARTITION CIM**](cim-logicaldiskbasedonpartition.md)
+[**CIM \_ LogicalDiskBasedOnPartition**](cim-logicaldiskbasedonpartition.md)
 </dt> <dd>
 
-A classe [**CIM \_ LogicalDiskBasedOnPartition**](cim-logicaldiskbasedonpartition.md) associa um disco lógico à partição de disco na qual ele reside.
+A [**classe \_ LogicalDiskBasedOnPartition cim**](cim-logicaldiskbasedonpartition.md) associa um disco lógico à partição de disco na qual ele reside.
 
 </dd> <dt>
 
-[**\_LOGICALDISKBASEDONVOLUMESET CIM**](cim-logicaldiskbasedonvolumeset.md)
+[**CIM \_ LogicalDiskBasedOnVolumeSet**](cim-logicaldiskbasedonvolumeset.md)
 </dt> <dd>
 
-A associação de [**\_ LogicalDiskBasedOnVolumeSet do CIM**](cim-logicaldiskbasedonvolumeset.md) relaciona discos lógicos com o volume no qual eles são encontrados. Discos lógicos podem ser baseados em um único volume (por exemplo, exposto por um Gerenciador de volume de software) ou uma partição de disco.
+A [**associação \_ LogicalDiskBasedOnVolumeSet**](cim-logicaldiskbasedonvolumeset.md) cim relaciona discos lógicos com o volume no qual eles são encontrados. Os discos lógicos podem ser baseados em um único volume (por exemplo, exposto por um gerenciador de volume de software) ou em uma partição de disco.
 
 </dd> <dt>
 
 [**CIM \_ LogicalElement**](cim-logicalelement.md)
 </dt> <dd>
 
-A classe [**CIM \_ LogicalElement**](cim-logicalelement.md) é a classe base para todos os componentes do sistema que representam componentes do sistema abstratos, como perfis, processos ou recursos do sistema, na forma de dispositivos lógicos.
+A [**classe \_ LogicalElement cim**](cim-logicalelement.md) é a classe base para todos os componentes do sistema que representam componentes abstratos do sistema, como perfis, processos ou funcionalidades do sistema, na forma de dispositivos lógicos.
 
 </dd> <dt>
 
 [**CIM \_ LogicalFile**](cim-logicalfile.md)
 </dt> <dd>
 
-A classe [**CIM \_ LogicalFile**](cim-logicalfile.md) representa uma coleção nomeada de dados, que pode ser código executável, que está localizada em um sistema de arquivos em uma extensão de armazenamento.
+A [**classe \_ LogicalFile CIM**](cim-logicalfile.md) representa uma coleção nomeada de dados, que pode ser um código executável, localizado em um sistema de arquivos em uma extensão de armazenamento.
 
 </dd> <dt>
 
-[**\_LOGICALIDENTITY CIM**](cim-logicalidentity.md)
+[**CIM \_ LogicalIdentity**](cim-logicalidentity.md)
 </dt> <dd>
 
-A classe [**CIM \_ LogicalIdentity**](cim-logicalidentity.md) é uma associação abstrata e genérica que indica que dois elementos lógicos representam diferentes aspectos da mesma entidade subjacente.
+A [**classe \_ LogicalIdentity cim**](cim-logicalidentity.md) é uma associação abstrata e genérica que indica que dois elementos lógicos representam aspectos diferentes da mesma entidade subjacente.
 
 </dd> <dt>
 
-[**\_MAGNETOOPTICALDRIVE CIM**](cim-magnetoopticaldrive.md)
+[**CIM \_ CimOpticalDrive**](cim-magnetoopticaldrive.md)
 </dt> <dd>
 
-A classe [**CIM \_ MagnetoOpticalDrive**](cim-magnetoopticaldrive.md) representa os recursos e o gerenciamento de uma unidade magneto-óptica, um subtipo do dispositivo de acesso à mídia.
+A [**classe CIM \_ LtdOpticalDrive**](cim-magnetoopticaldrive.md) representa os recursos e o gerenciamento de uma unidade de disco óptico, um subtipo do dispositivo de acesso à mídia.
 
 </dd> <dt>
 
-[**\_MANAGEDSYSTEMELEMENT CIM**](cim-managedsystemelement.md)
+[**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md)
 </dt> <dd>
 
-A classe [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md) é a classe base para a hierarquia de elementos do sistema. Qualquer componente de sistema diferencial é um candidato para inclusão nessa classe.
+A [**classe CIM \_ ManagedSystemElement**](cim-managedsystemelement.md) é a classe base para a hierarquia de elementos do sistema. Qualquer componente de sistema distinguível é um candidato para inclusão nesta classe.
 
 </dd> <dt>
 
-[**\_MANAGEMENTCONTROLLER CIM**](cim-managementcontroller.md)
+[**CIM \_ ManagementController**](cim-managementcontroller.md)
 </dt> <dd>
 
-A classe [**CIM \_ ManagementController**](cim-managementcontroller.md) está relacionada aos recursos e ao gerenciamento de um controlador de gerenciamento.
+A [**classe CIM \_ ManagementController**](cim-managementcontroller.md) está relacionada aos recursos e ao gerenciamento de um controlador de gerenciamento.
 
 </dd> <dt>
 
-[**\_MEDIAACCESSDEVICE CIM**](cim-mediaaccessdevice.md)
+[**CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md)
 </dt> <dd>
 
-A classe [**CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md) representa a capacidade de acessar uma ou mais mídias e, em seguida, usar a mídia para armazenar e recuperar dados.
+A [**classe CIM \_ MediaAccessDevice**](cim-mediaaccessdevice.md) representa a capacidade de acessar uma ou mais mídias e, em seguida, usar a mídia para armazenar e recuperar dados.
 
 </dd> <dt>
 
-[**\_MEDIAPRESENT CIM**](cim-mediapresent.md)
+[**CIM \_ MediaPresent**](cim-mediapresent.md)
 </dt> <dd>
 
-A associação [**CIM \_ MediaPresent**](cim-mediapresent.md) descreve uma relação em que uma extensão de armazenamento deve ser acessada por meio de um dispositivo de acesso à mídia.
+A [**associação CIM \_ MediaPresent**](cim-mediapresent.md) descreve uma relação em que uma extensão de armazenamento deve ser acessada por meio de um dispositivo de acesso à mídia.
 
 </dd> <dt>
 
-[**\_Memória CIM**](cim-memory.md)
+[**Memória \_ CIM**](cim-memory.md)
 </dt> <dd>
 
-A classe de [**\_ memória CIM**](cim-memory.md) representa os recursos e o gerenciamento de dispositivos lógicos relacionados à memória.
+A [**classe \_ Memória CIM**](cim-memory.md) representa os recursos e o gerenciamento de dispositivos lógicos relacionados à memória.
 
 </dd> <dt>
 
-[**\_MEMORYCAPACITY CIM**](cim-memorycapacity.md)
+[**Memória \_ CIMCapacidade**](cim-memorycapacity.md)
 </dt> <dd>
 
-A classe [**CIM \_ MemoryCapacity**](cim-memorycapacity.md) representa a memória que pode ser instalada em um elemento físico e suas configurações mínimas e máximas. Informações sobre a memória que está atualmente instalada e os requisitos mínimos e máximos de um elemento estão localizados em instâncias da classe [**CIM \_ PhysicalMemory**](cim-physicalmemory.md) .
+A [**classe Cim \_ MemoryCapacity**](cim-memorycapacity.md) representa a memória que pode ser instalada em um elemento físico e suas configurações mínimas e máximas. Informações sobre a memória atualmente instalada e os requisitos mínimos e máximos de um elemento estão localizadas em instâncias da [**classe Cim \_ PhysicalMemory.**](cim-physicalmemory.md)
 
 </dd> <dt>
 
-[**\_MEMORYCHECK CIM**](cim-memorycheck.md)
+[**CIM \_ MemoryCheck**](cim-memorycheck.md)
 </dt> <dd>
 
-A classe [**CIM \_ MemoryCheck**](cim-memorycheck.md) especifica uma condição para a quantidade mínima de memória que deve estar disponível em um sistema.
+A [**classe CIM \_ MemoryCheck**](cim-memorycheck.md) especifica uma condição para a quantidade mínima de memória que deve estar disponível em um sistema.
 
 </dd> <dt>
 
-[**\_MEMORYMAPPEDIO CIM**](cim-memorymappedio.md)
+[**CIM \_ MemoryMappedIO**](cim-memorymappedio.md)
 </dt> <dd>
 
-A classe [**CIM \_ MemoryMappedIO**](cim-memorymappedio.md) representa e/s mapeada pela memória da arquitetura do computador. Essa classe trata da memória e dos recursos de e/s de porta.
+A [**classe CIM \_ MemoryMappedIO representa**](cim-memorymappedio.md) a E/S mapeada na memória da arquitetura do computador. Essa classe trata de recursos de E/S de memória e porta.
 
 </dd> <dt>
 
-[**\_MEMORYONCARD CIM**](cim-memoryoncard.md)
+[**CIM \_ MemoryOnCard**](cim-memoryoncard.md)
 </dt> <dd>
 
-A classe [**CIM \_ MemoryOnCard**](cim-memoryoncard.md) associa a memória física localizada em placas de hospedagem, placas de adaptador e assim por diante. Essa associação define explicitamente a relação de memória para os cartões.
+A [**classe CIM \_ MemoryOnCard**](cim-memoryoncard.md) associa a memória física localizada em placas de hospedagem, cartões de adaptador e assim por diante. Essa associação define explicitamente a relação de memória com cartões.
 
 </dd> <dt>
 
-[**\_MEMORYWITHMEDIA CIM**](cim-memorywithmedia.md)
+[**Memória \_ CIMWithMedia**](cim-memorywithmedia.md)
 </dt> <dd>
 
-A classe [**CIM \_ MemoryWithMedia**](cim-memorywithmedia.md) associa a memória física a uma mídia física e a seu cartucho. A memória fornece a identificação de mídia e armazena dados específicos do usuário.
+A [**classe CIM \_ MemoryWithMedia**](cim-memorywithmedia.md) associa a memória física a uma mídia física e a seu corpo. A memória fornece identificação de mídia e armazena dados específicos do usuário.
 
 </dd> <dt>
 
-[**\_MODIFYSETTINGACTION CIM**](cim-modifysettingaction.md)
+[**CIM \_ ModifySettingAction**](cim-modifysettingaction.md)
 </dt> <dd>
 
-A classe [**CIM \_ ModifySettingAction**](cim-modifysettingaction.md) representa as informações para modificar um arquivo de configuração específico, para uma entrada específica, com um valor específico.
+A [**classe CIM \_ ModifySettingAction**](cim-modifysettingaction.md) representa as informações para modificar um arquivo de configuração específico, para uma entrada específica, com um valor específico.
 
 </dd> <dt>
 
-[**\_MONITORRESOLUTION CIM**](cim-monitorresolution.md)
+[**CIM \_ MonitorResolution**](cim-monitorresolution.md)
 </dt> <dd>
 
-A classe [**CIM \_ MonitorResolution**](cim-monitorresolution.md) representa a relação entre as resoluções horizontal e vertical e a taxa de atualização e o modo de verificação para um monitor de desktop. Os valores são especificados no objeto do controlador de vídeo.
+A [**classe CIM \_ MonitorResolution**](cim-monitorresolution.md) representa a relação entre resoluções horizontais e verticais e a taxa de atualização e o modo de verificação para um monitor da área de trabalho. Os valores são especificados no objeto do controlador de vídeo.
 
 </dd> <dt>
 
-[**\_MONITORSETTING CIM**](cim-monitorsetting.md)
+[**CIM \_ MonitorSetting**](cim-monitorsetting.md)
 </dt> <dd>
 
-A classe [**CIM \_ MonitorSetting**](cim-monitorsetting.md) associa a resolução do monitor ao monitor de área de trabalho ao qual se aplica.
+A [**classe CIM \_ MonitorSetting**](cim-monitorsetting.md) associa a resolução do monitor ao monitor da área de trabalho ao qual ele se aplica.
 
 </dd> <dt>
 
-[**Montagem de CIM \_**](cim-mount.md)
+[**Montagem cim \_**](cim-mount.md)
 </dt> <dd>
 
-A classe de [**\_ montagem CIM**](cim-mount.md) representa uma associação entre um sistema de arquivos e um diretório ao qual ele está anexado.
+A [**classe \_ Montagem CIM**](cim-mount.md) representa uma associação entre um sistema de arquivos e um diretório ao qual ele está anexado.
 
 </dd> <dt>
 
-[**\_MULTISTATESENSOR CIM**](cim-multistatesensor.md)
+[**CIM \_ MultiStateSensor**](cim-multistatesensor.md)
 </dt> <dd>
 
-A classe [**CIM \_ MultiStateSensor**](cim-multistatesensor.md) representa um conjunto de vários membros de sensores binários em que cada sensor binário relata um resultado booliano.
+A [**classe CIM \_ MultiStateSensor**](cim-multistatesensor.md) representa um conjunto de vários membros de sensores binários em que cada sensor binário relata um resultado booliana.
 
 </dd> <dt>
 
-[**\_Adaptador CIM**](cim-networkadapter.md)
+[**CIM \_ NetworkAdapter**](cim-networkadapter.md)
 </dt> <dd>
 
-A classe [**CIM \_ adaptador**](cim-networkadapter.md) é uma classe abstrata que define os conceitos gerais de hardware de rede (por exemplo, endereço permanente ou velocidade de operação). As informações são transmitidas usando a associação [**CIM \_ DeviceSAPImplementation**](cim-devicesapimplementation.md) .
+A [**classe CIM \_ NetworkAdapter**](cim-networkadapter.md) é uma classe abstrata que define conceitos gerais de hardware de rede (por exemplo, endereço permanente ou velocidade de operação). As informações são transmitidas usando a [**associação CIM \_ DeviceSAPImplementation.**](cim-devicesapimplementation.md)
 
 </dd> <dt>
 
-[**\_NFS CIM**](cim-nfs.md)
+[**CIM \_ NFS**](cim-nfs.md)
 </dt> <dd>
 
-A classe [**CIM \_ NFS**](cim-nfs.md) representa um sistema de arquivos remoto que é montado, usando o protocolo NFS (sistema de arquivos de rede), de um sistema de computador.
+A [**classe \_ CIM NFS**](cim-nfs.md) representa um sistema de arquivos remoto montado, usando o protocolo NFS (sistema de arquivos de rede), de um sistema de computador.
 
 </dd> <dt>
 
-[**\_NONVOLATILESTORAGE CIM**](cim-nonvolatilestorage.md)
+[**CIM \_ NonVolatileStorage**](cim-nonvolatilestorage.md)
 </dt> <dd>
 
-A classe [**CIM \_ NonVolatileStorage**](cim-nonvolatilestorage.md) representa os recursos e o gerenciamento do armazenamento não volátil. A memória não volátil inclui, nativamente, o armazenamento flash e ROM.
+A [**classe \_ Cim NonVolatileStorage**](cim-nonvolatilestorage.md) representa os recursos e o gerenciamento de armazenamento não volátil. A memória nãovolatile inclui o armazenamento de FLASH e ROM de forma nativa.
 
 </dd> <dt>
 
-[**\_NUMERICSENSOR CIM**](cim-numericsensor.md)
+[**CIM \_ NumericSensor**](cim-numericsensor.md)
 </dt> <dd>
 
-A classe [**CIM \_ NumericSensor**](cim-numericsensor.md) representa um sensor numérico que retorna leituras numéricas e, opcionalmente, dá suporte a configurações de limites.
+A [**classe \_ NUMERICSensor cim**](cim-numericsensor.md) representa um sensor numérico que retorna leituras numéricas e, opcionalmente, dá suporte a configurações de limites.
 
 </dd> <dt>
 
-[**Sistema \_ operacional CIM**](cim-operatingsystem.md)
+[**Sistema operacional CIM \_**](cim-operatingsystem.md)
 </dt> <dd>
 
-A classe [**CIM \_ OperatingSystem**](cim-operatingsystem.md) representa um sistema operacional de computador, que é composto por software e firmware que tornam o hardware de um sistema de computador utilizável.
+A [**classe CIM \_ OperatingSystem**](cim-operatingsystem.md) representa um sistema operacional do computador, que é feito de software e firmware que torna o hardware de um sistema de computador acessível.
 
 </dd> <dt>
 
-[**\_OPERATINGSYSTEMSOFTWAREFEATURE CIM**](cim-operatingsystemsoftwarefeature.md)
+[**CIM \_ OperatingSystemSoftwareFeature**](cim-operatingsystemsoftwarefeature.md)
 </dt> <dd>
 
-A classe [**CIM \_ OperatingSystemSoftwareFeature**](cim-operatingsystemsoftwarefeature.md) representa os recursos de software que compõem o sistema operacional.
+A [**classe CIM \_ OperatingSystemSoftwareFeature**](cim-operatingsystemsoftwarefeature.md) representa os recursos de software que comem o sistema operacional.
 
 </dd> <dt>
 
-[**\_OSPROCESS CIM**](cim-osprocess.md)
+[**CIM \_ OSProcess**](cim-osprocess.md)
 </dt> <dd>
 
-A classe [**CIM \_ OSProcess**](cim-osprocess.md) associa o sistema operacional e um ou mais processos em execução no contexto do sistema operacional.
+A [**classe CIM \_ OSProcess**](cim-osprocess.md) associa o sistema operacional e um ou mais processos em execução no contexto do sistema operacional.
 
 </dd> <dt>
 
-[**\_OSVERSIONCHECK CIM**](cim-osversioncheck.md)
+[**CIM \_ OSVersionCheck**](cim-osversioncheck.md)
 </dt> <dd>
 
-A classe [**CIM \_ OSVersionCheck**](cim-osversioncheck.md) especifica as versões do sistema operacional que podem dar suporte a um elemento de software.
+A [**classe CIM \_ OSVersionCheck**](cim-osversioncheck.md) especifica as versões do sistema operacional que podem dar suporte a um elemento de software.
 
 </dd> <dt>
 
-[**\_PACKAGEALARM CIM**](cim-packagealarm.md)
+[**CIM \_ PackageAlarm**](cim-packagealarm.md)
 </dt> <dd>
 
-A associação [**CIM \_ PackageAlarm**](/windows/desktop/SecCrypto/extendedproperties-newenum) representa a relação na qual um dispositivo de alarme é instalado como parte de um pacote. A instalação indica problemas com o ambiente do pacote — seu estado de segurança ou sua integridade geral.
+A [**associação \_ PackageAlarm cim**](/windows/desktop/SecCrypto/extendedproperties-newenum) representa a relação na qual um dispositivo de alarme é instalado como parte de um pacote. A instalação indica problemas com o ambiente do pacote– seu estado de segurança ou sua saúde geral.
 
 </dd> <dt>
 
-[**\_PACKAGECOOLING CIM**](cim-packagecooling.md)
+[**Package Cooling do CIM \_**](cim-packagecooling.md)
 </dt> <dd>
 
-A associação [**CIM \_ PackageCooling**](cim-packagecooling.md) representa a relação na qual um dispositivo de resfriamento é instalado em um pacote, como um chassi ou rack, para auxiliar na resfriamento do pacote.
+A [**associação \_ Package Cooling cim**](cim-packagecooling.md) representa a relação na qual um dispositivo de resfriamento é instalado em um pacote, como um chassi ou rack, para auxiliar no resfriamento do pacote.
 
 </dd> <dt>
 
-[**\_PACKAGEDCOMPONENT CIM**](cim-packagedcomponent.md)
+[**CIM \_ PackagedComponent**](cim-packagedcomponent.md)
 </dt> <dd>
 
-A associação [**CIM \_ PackagedComponent**](cim-packagedcomponent.md) representa uma relação explícita na qual um componente é normalmente contido por um pacote físico, como um chassi ou cartão.
+A [**associação \_ Cim PackagedComponent**](cim-packagedcomponent.md) representa uma relação explícita na qual um componente normalmente é contido por um pacote físico, como um chassi ou cartão.
 
 </dd> <dt>
 
-[**\_PACKAGEINCHASSIS CIM**](cim-packageinchassis.md)
+[**CIM \_ PackageInChassis**](cim-packageinchassis.md)
 </dt> <dd>
 
-A associação [**CIM \_ PackageInChassis**](cim-packageinchassis.md) representa a relação na qual um chassi pode conter outros pacotes, como outros chassis e cartões.
+A [**associação \_ Cim PackageInChassis**](cim-packageinchassis.md) representa a relação na qual um chassi pode conter outros pacotes, como outros chassis e cartões.
 
 </dd> <dt>
 
-[**\_PACKAGEINSLOT CIM**](cim-packageinslot.md)
+[**Pacote \_ CIMInSlot**](cim-packageinslot.md)
 </dt> <dd>
 
-A associação [**CIM \_ PackageInSlot**](cim-packageinslot.md) representa a relação entre os cartões de dispositivo e o chassi no qual eles são montados.
+A [**associação \_ Cim PackageInSlot**](cim-packageinslot.md) representa a relação entre as placas de dispositivo e o chassi no qual elas são montadas.
 
 </dd> <dt>
 
-[**\_PACKAGETEMPSENSOR CIM**](cim-packagetempsensor.md)
+[**CIM \_ PackageTempSensor**](cim-packagetempsensor.md)
 </dt> <dd>
 
-A associação [**CIM \_ PackageTempSensor**](cim-packagetempsensor.md) representa a relação na qual um sensor de temperatura é frequentemente instalado em um pacote, como um chassi ou um rack, para monitorar o ambiente do pacote.
+A [**associação \_ PackageTempSensor cim**](cim-packagetempsensor.md) representa a relação na qual um sensor de temperatura geralmente é instalado em um pacote, como um chassi ou um rack, para monitorar o ambiente do pacote.
 
 </dd> <dt>
 
-[**\_PARALLELCONTROLLER CIM**](cim-parallelcontroller.md)
+[**ParallelController do CIM \_**](cim-parallelcontroller.md)
 </dt> <dd>
 
-A associação de [**\_ ParallelController CIM**](cim-parallelcontroller.md) está relacionada aos recursos e ao gerenciamento do dispositivo lógico de porta paralela.
+A [**associação \_ ParallelController**](cim-parallelcontroller.md) cim está relacionada aos recursos e ao gerenciamento do dispositivo lógico de porta paralela.
 
 </dd> <dt>
 
-[**\_PARTICIPATESINSET CIM**](cim-participatesinset.md)
+[**CIM \_ ParticipatesInSet**](cim-participatesinset.md)
 </dt> <dd>
 
-A classe [**CIM \_ ParticipatesInSet**](cim-participatesinset.md) identifica os elementos físicos que devem ser substituídos juntos.
+A [**classe CIM \_ ParticipatesInSet**](cim-participatesinset.md) identifica elementos físicos que devem ser substituídos juntos.
 
 </dd> <dt>
 
-[**\_PCICONTROLLER CIM**](cim-pcicontroller.md)
+[**CIM \_ PCIController**](cim-pcicontroller.md)
 </dt> <dd>
 
-A classe [**CIM \_ PCIController**](cim-pcicontroller.md) representa as propriedades e o gerenciamento de um controlador PCI. As propriedades nessa classe e suas subclasses são definidas nas várias especificações de PCI publicadas pelo SIG de PCI.
+A [**classe CIM \_ PCIController**](cim-pcicontroller.md) representa as propriedades e o gerenciamento de um controlador PCI. As propriedades nessa classe e suas subclasses são definidas nas várias especificações de PCI publicadas pelo PCI SIG.
 
 </dd> <dt>
 
-[**\_PCMCIACONTROLLER CIM**](cim-pcmciacontroller.md)
+[**CIM \_ PCMCIAController**](cim-pcmciacontroller.md)
 </dt> <dd>
 
-A classe [**CIM \_ PCMCIAController**](cim-pcmciacontroller.md) representa os recursos e o gerenciamento de um controlador de PCMCIA (Associação Internacional de cartão de memória) do computador pessoal.
+A [**classe CIM \_ PCMCIAController**](cim-pcmciacontroller.md) representa os recursos e o gerenciamento de um controlador PCMCIA (Associação Internacional de Cartão de Memória de Computador Pessoal).
 
 </dd> <dt>
 
-[**\_PCVIDEOCONTROLLER CIM**](cim-pcvideocontroller.md)
+[**CIM \_ PCVideoController**](cim-pcvideocontroller.md)
 </dt> <dd>
 
-O [**\_ PCVideoController CIM**](cim-pcvideocontroller.md) representa os recursos e o gerenciamento de um controlador de vídeo de computador pessoal, um subtipo de um controlador de vídeo.
+O [**\_ PCVideoController cim**](cim-pcvideocontroller.md) representa os recursos e o gerenciamento de um controlador de vídeo de computador pessoal, um subtipo de um controlador de vídeo.
 
 </dd> <dt>
 
-[**\_PEXTENTREDUNDANCYCOMPONENT CIM**](cim-pextentredundancycomponent.md)
+[**CIM \_ PExtentRedundancyComponent**](cim-pextentredundancycomponent.md)
 </dt> <dd>
 
-A classe [**CIM \_ PExtentRedundancyComponent**](cim-pextentredundancycomponent.md) representa as extensões físicas que participam de um grupo de redundância de armazenamento.
+A [**classe CIM \_ PExtentRedundancyComponent**](cim-pextentredundancycomponent.md) representa as extensão físicas que participam de um grupo de redundância de armazenamento.
 
 </dd> <dt>
 
-[**\_PHYSICALCAPACITY CIM**](cim-physicalcapacity.md)
+[**CIM \_ PhysicalCapacity**](cim-physicalcapacity.md)
 </dt> <dd>
 
-A classe [**CIM \_ PhysicalCapacity**](cim-physicalcapacity.md) é uma classe abstrata que representa os requisitos mínimos e máximos de um elemento físico e sua capacidade de dar suporte a diferentes tipos de hardware. Por exemplo, os requisitos mínimos e máximos de memória podem ser modelados como uma subclasse de **\_ PhysicalCapacity CIM**.
+A [**classe Cim \_ PhysicalCapacity**](cim-physicalcapacity.md) é uma classe abstrata que representa os requisitos mínimos e máximos de um elemento físico e sua capacidade de dar suporte a diferentes tipos de hardware. Por exemplo, requisitos mínimos e máximos de memória podem ser modelados como uma **subclasse de Cim \_ PhysicalCapacity**.
 
 </dd> <dt>
 
-[**\_PHYSICALCOMPONENT CIM**](cim-physicalcomponent.md)
+[**CIM \_ PhysicalComponent**](cim-physicalcomponent.md)
 </dt> <dd>
 
-A classe [**CIM \_ PhysicalComponent**](cim-physicalcomponent.md) representa um componente básico ou de baixo nível em um pacote. Um elemento físico que não é um link, um conector ou um pacote é um descendente (ou membro) dessa classe.
+A [**classe \_ PhysicalComponent cim**](cim-physicalcomponent.md) representa um componente básico ou de baixo nível dentro de um pacote. Um elemento físico que não é um link, conector ou pacote é um descendente (ou membro) dessa classe.
 
 </dd> <dt>
 
-[**\_PHYSICALCONNECTOR CIM**](cim-physicalconnector.md)
+[**CIM \_ PhysicalConnector**](cim-physicalconnector.md)
 </dt> <dd>
 
-A classe [**CIM \_ PhysicalConnector**](cim-physicalconnector.md) representa qualquer elemento físico que é usado para se conectar a outros elementos. Qualquer objeto que possa se conectar e transmitir sinais ou potência entre dois ou mais elementos físicos é um descendente (ou membro) dessa classe.
+A [**classe \_ Cim PhysicalConnector**](cim-physicalconnector.md) representa qualquer elemento físico usado para se conectar a outros elementos. Qualquer objeto que possa se conectar e transmitir sinais ou energia entre dois ou mais elementos físicos é um descendente (ou membro) dessa classe.
 
 </dd> <dt>
 
-[**Físico do CIM \_**](cim-physicalelement.md)
+[**CIM \_ PhysicalElement**](cim-physicalelement.md)
 </dt> <dd>
 
-As subclasses do [**CIM \_ PhysicalElement**](cim-physicalelement.md) definem qualquer componente de um sistema que tenha uma identidade física distinta. As instâncias dessa classe podem ser definidas em termos de rótulos que podem ser fisicamente anexados ao objeto.
+As [**subclasses CIM \_ PhysicalElement**](cim-physicalelement.md) definem qualquer componente de um sistema que tenha uma identidade física distinta. Instâncias dessa classe podem ser definidas em termos de rótulos que podem ser fisicamente anexados ao objeto .
 
 </dd> <dt>
 
-[**\_PHYSICALELEMENTLOCATION CIM**](cim-physicalelementlocation.md)
+[**CIM \_ PhysicalElementLocation**](cim-physicalelementlocation.md)
 </dt> <dd>
 
-A classe [**CIM \_ PhysicalElementLocation**](cim-physicalelementlocation.md) associa um elemento físico a um objeto de [**\_ local CIM**](cim-location.md) para fins de inventário ou substituição.
+A [**classe \_ CIM PhysicalElementLocation**](cim-physicalelementlocation.md) associa um elemento físico a um objeto [**Local CIM \_**](cim-location.md) para fins de inventário ou substituição.
 
 </dd> <dt>
 
-[**\_PHYSICALEXTENT CIM**](cim-physicalextent.md)
+[**CIM \_ PhysicalExtent**](cim-physicalextent.md)
 </dt> <dd>
 
-A classe [**CIM \_ PhysicalExtent**](cim-physicalextent.md) representa uma implementação de RAID SCC. Ele define os endereços de bloco endereçáveis consecutivos em um único dispositivo de armazenamento que são tratados como uma única extensão de armazenamento na mesma classe [**CIM \_ StorageRedundancyGroup**](cim-storageredundancygroup.md) . Uma alternativa, quando a configuração automática é usada, é instanciar ou estender a classe [**CIM \_ AggregatePExtent**](cim-aggregatepextent.md) .
+A [**classe \_ Cim PhysicalExtent**](cim-physicalextent.md) representa uma implementação raid SCC. Ele define os endereços de bloco enderecáveis consecutivos em um único dispositivo de armazenamento que são tratados como uma única extensão de armazenamento na mesma [**classe CIM \_ StorageRedundancyGroup.**](cim-storageredundancygroup.md) Uma alternativa, quando a configuração automática é usada, é insinuar ou estender a [**classe \_ AGGREGATEPExtent cim.**](cim-aggregatepextent.md)
 
 </dd> <dt>
 
-[**\_PHYSICALFRAME CIM**](cim-physicalframe.md)
+[**CIM \_ PhysicalFrame**](cim-physicalframe.md)
 </dt> <dd>
 
-A classe [**CIM \_ PhysicalFrame**](cim-physicalframe.md) é uma classe pai de rack, chassi e outros compartimentos de quadro, pois são definidos em classes de extensão. Propriedades como **VisibleAlarm** e **AudibleAlarm** e dados relacionados a violações de segurança são incluídos nessa classe pai.
+A [**classe CIM \_ PhysicalFrame**](cim-physicalframe.md) é uma classe pai de rack, chassi e outros compartimentos de quadro conforme eles são definidos em classes de extensão. Propriedades como **VisibleAlarm** e **VisibleAlarm** e dados relacionados a violações de segurança são incluídos nessa classe pai.
 
 </dd> <dt>
 
-[**\_PHYSICALLINK CIM**](cim-physicallink.md)
+[**CIM \_ PhysicalLink**](cim-physicallink.md)
 </dt> <dd>
 
-A classe [**CIM \_ PhysicalLink**](cim-physicallink.md) representa o cabeamento dos elementos físicos.
+A [**classe \_ Cim PhysicalLink**](cim-physicallink.md) representa o cabeamento de elementos físicos.
 
 </dd> <dt>
 
-[**\_PHYSICALMEDIA CIM**](cim-physicalmedia.md)
+[**CIM \_ PhysicalMedia**](cim-physicalmedia.md)
 </dt> <dd>
 
-A classe [**CIM \_ PhysicalMedia**](cim-physicalmedia.md) representa tipos de mídia de documentação e armazenamento, como fitas, CD ROMs e assim por diante.
+A [**classe CIM \_ PhysicalMedia**](cim-physicalmedia.md) representa tipos de documentação e mídia de armazenamento, como fitas, ROMs de CD e assim por diante.
 
 </dd> <dt>
 
-[**\_PHYSICALMEMORY CIM**](cim-physicalmemory.md)
+[**CIM \_ PhysicalMemory**](cim-physicalmemory.md)
 </dt> <dd>
 
-A classe [**CIM \_ PhysicalMemory**](cim-physicalmemory.md) representa dispositivos de memória de nível baixo, como Simms, DIMMs, chips de memória bruta e assim por diante.
+A [**classe \_ Cim PhysicalMemory**](cim-physicalmemory.md) representa dispositivos de memória de baixo nível, comoLF, DIMMs, chips de memória brutos e assim por diante.
 
 </dd> <dt>
 
-[**\_PHYSICALPACKAGE CIM**](cim-physicalpackage.md)
+[**CIM \_ PhysicalPackage**](cim-physicalpackage.md)
 </dt> <dd>
 
-A classe [**CIM \_ PhysicalPackage**](cim-physicalpackage.md) representa os elementos físicos que contêm ou hospedam outros componentes. Os exemplos são um compartimento de rack ou uma placa de adaptador.
+A [**classe \_ Cim PhysicalPackage**](cim-physicalpackage.md) representa elementos físicos que contêm ou hospedam outros componentes. Exemplos são um compartimento de rack ou uma placa de adaptador.
 
 </dd> <dt>
 
-[**\_POINTINGDEVICE CIM**](cim-pointingdevice.md)
+[**CIM \_ PointingDevice**](cim-pointingdevice.md)
 </dt> <dd>
 
-A classe [**CIM \_ PointingDevice**](cim-pointingdevice.md) representa um dispositivo que aponta para regiões na exibição. Qualquer dispositivo que manipule um ponteiro ou aponta para regiões em uma exibição Visual é membro dessa classe. Por exemplo, um mouse, uma caneta, um touch pad ou um Tablet.
+A [**classe CIM \_ PointingDevice**](cim-pointingdevice.md) representa um dispositivo que aponta para regiões na exibição. Qualquer dispositivo que manipula um ponteiro ou aponta para regiões em uma exibição visual é um membro dessa classe. Por exemplo, um mouse, caneta, painel de toque ou tablet.
 
 </dd> <dt>
 
-[**\_POTSMODEM CIM**](cim-potsmodem.md)
+[**CIM \_ POTSModem**](cim-potsmodem.md)
 </dt> <dd>
 
-A classe [**CIM \_ POTSModem**](cim-potsmodem.md) representa um dispositivo que traduz dados binários em modulações de onda para transmissão baseada em som conectando-se à rede do sistema de telefonia antigo (POTS).
+A [**classe CIM \_ POTSModem**](cim-potsmodem.md) representa um dispositivo que converte dados binários em modulares de onda para transmissão baseada em som conectando-se à rede DOLS (Plain Old Telephone System).
 
 </dd> <dt>
 
-[**Fonte de \_ alimentação CIM**](cim-powersupply.md)
+[**CIM \_ PowerSupply**](cim-powersupply.md)
 </dt> <dd>
 
-A classe [**CIM \_ powersupply**](cim-powersupply.md) representa os recursos e o gerenciamento do dispositivo lógico da fonte de energia.
+A [**classe CIM \_ PowerSupply**](cim-powersupply.md) representa os recursos e o gerenciamento do dispositivo lógico de fonte de alimentação.
 
 </dd> <dt>
 
-[**\_Impressora CIM**](cim-printer.md)
+[**Impressora \_ CIM**](cim-printer.md)
 </dt> <dd>
 
-A classe de [**\_ impressora CIM**](cim-printer.md) representa os recursos e o gerenciamento do dispositivo lógico da impressora.
+A [**\_ classe Impressora CIM**](cim-printer.md) representa os recursos e o gerenciamento do dispositivo lógico da impressora.
 
 </dd> <dt>
 
-[**\_Processo CIM**](cim-process.md)
+[**Processo \_ CIM**](cim-process.md)
 </dt> <dd>
 
-A classe de [**\_ processo CIM**](cim-process.md) representa uma única instância de um programa em execução. Um usuário normalmente vê um processo como um aplicativo ou uma tarefa.
+A [**classe \_ Processo CIM**](cim-process.md) representa uma única instância de um programa em execução. Um usuário normalmente vê um processo como um aplicativo ou tarefa.
 
 </dd> <dt>
 
-[**\_PROCESSEXECUTABLE CIM**](cim-processexecutable.md)
+[**CIM \_ ProcessExecutable**](cim-processexecutable.md)
 </dt> <dd>
 
-A classe [**CIM \_ ProcessExecutable**](cim-processexecutable.md) representa um vínculo entre um processo e um arquivo de dados e indica que o arquivo participa da execução do processo.
+A [**classe CIM \_ ProcessExecutable**](cim-processexecutable.md) representa um vínculo entre um processo e um arquivo de dados e indica que o arquivo participa da execução do processo.
 
 </dd> <dt>
 
-[**\_Processador CIM**](cim-processor.md)
+[**Processador \_ CIM**](cim-processor.md)
 </dt> <dd>
 
-A classe de [**\_ processador CIM**](cim-processor.md) representa os recursos e o gerenciamento do dispositivo lógico do processador.
+A [**classe \_ processador CIM**](cim-processor.md) representa os recursos e o gerenciamento do dispositivo lógico do processador.
 
 </dd> <dt>
 
-[**\_PROCESSTHREAD CIM**](cim-processthread.md)
+[**Processo \_ CIMThread**](cim-processthread.md)
 </dt> <dd>
 
-A classe [**CIM \_ ProcessThread**](cim-processthread.md) representa um link entre um processo e os threads em execução no contexto do processo.
+A [**classe \_ PROCESSThread cim**](cim-processthread.md) representa um link entre um processo e os threads em execução no contexto do processo.
 
 </dd> <dt>
 
-[**\_Produto CIM**](cim-product.md)
+[**Produto \_ CIM**](cim-product.md)
 </dt> <dd>
 
-A classe de [**\_ produto CIM**](cim-product.md) é uma classe concreta que representa uma coleção de elementos físicos, recursos de software e outros produtos, adquiridos como uma unidade. A aquisição implica um contrato entre o fornecedor e o consumidor, o que pode ter implicações no licenciamento, suporte e garantia do produto.
+A [**classe \_ Produto CIM**](cim-product.md) é uma classe concreta que representa uma coleção de elementos físicos, recursos de software e, outros produtos, adquiridos como uma unidade. A aquisição implica um contrato entre o fornecedor e o consumidor, que pode ter implicações no licenciamento, no suporte e na garantia do produto.
 
 </dd> <dt>
 
-[**\_PRODUCTFRU CIM**](cim-productfru.md)
+[**CIM \_ ProductFRU**](cim-productfru.md)
 </dt> <dd>
 
-A classe [**CIM \_ ProductFRU**](cim-productfru.md) representa uma associação entre o produto e uma unidade de substituição de campo (FRU), que fornece informações sobre os componentes do produto que foram ou estão sendo substituídos.
+A [**classe Cim \_ ProductFRU**](cim-productfru.md) representa uma associação entre o produto e uma UNIDADE substituível por campo (FRU), que fornece informações sobre os componentes do produto que foram ou estão sendo substituídos.
 
 </dd> <dt>
 
-[**\_PRODUCTPARENTCHILD CIM**](cim-productparentchild.md)
+[**CIM \_ ProductParentChild**](cim-productparentchild.md)
 </dt> <dd>
 
-A associação [**CIM \_ ProductParentChild**](cim-productparentchild.md) define uma hierarquia pai-filho entre os produtos. Por exemplo, um produto pode ser agrupado com outros produtos.
+A [**associação CIM \_ ProductParentChild**](cim-productparentchild.md) define uma hierarquia pai-filho entre produtos. Por exemplo, um produto pode ser empacotado com outros produtos.
 
 </dd> <dt>
 
-[**\_PRODUCTPHYSICALELEMENTS CIM**](cim-productphysicalelements.md)
+[**CIM \_ ProductPhysicalElements**](cim-productphysicalelements.md)
 </dt> <dd>
 
-A classe [**CIM \_ ProductPhysicalElements**](cim-productphysicalelements.md) representa os elementos físicos que compõem um produto.
+A [**classe CIM \_ ProductPhysicalElements**](cim-productphysicalelements.md) representa os elementos físicos que comem um produto.
 
 </dd> <dt>
 
-[**\_PRODUCTPRODUCTDEPENDENCY CIM**](cim-productproductdependency.md)
+[**CIM \_ ProductProductDependency**](cim-productproductdependency.md)
 </dt> <dd>
 
-A classe [**CIM \_ ProductProductDependency**](cim-productproductdependency.md) representa uma associação entre dois produtos, que indica que um deve ser instalado ou ausente para que o outro funcione. Isso é conceitualmente equivalente à associação [**de \_ ServiceServiceDependency do CIM**](cim-serviceservicedependency.md) .
+A [**classe CIM \_ ProductProductDependency**](cim-productproductdependency.md) representa uma associação entre dois produtos, que indica que um deve ser instalado ou ausente para que o outro funcione. Isso é conceitualmente equivalente à associação [**CIM \_ ServiceServiceDependency.**](cim-serviceservicedependency.md)
 
 </dd> <dt>
 
-[**\_PRODUCTSOFTWAREFEATURES CIM**](cim-productsoftwarefeatures.md)
+[**CIM \_ ProductSoftwareFeatures**](cim-productsoftwarefeatures.md)
 </dt> <dd>
 
-A associação [**CIM \_ ProductSoftwareFeatures**](cim-productsoftwarefeatures.md) identifica os recursos de software para um produto específico.
+A [**associação CIM \_ ProductSoftwareFeatures**](cim-productsoftwarefeatures.md) identifica os recursos de software para um produto específico.
 
 </dd> <dt>
 
-[**\_PRODUCTSUPPORT CIM**](cim-productsupport.md)
+[**CIM \_ ProductSupport**](cim-productsupport.md)
 </dt> <dd>
 
-A classe [**CIM \_ ProductSupport**](cim-productsupport.md) representa uma associação entre produto e acesso de suporte que transmite como o suporte é obtido para o produto. Vários tipos de suporte estão disponíveis para um produto; o mesmo objeto de suporte pode fornecer assistência para vários produtos.
+A [**classe CIM \_ ProductSupport**](cim-productsupport.md) representa uma associação entre o produto e o acesso de suporte que transmite como o suporte é obtido para o produto. Vários tipos de suporte estão disponíveis para um produto; O mesmo objeto de suporte pode fornecer assistência para vários produtos.
 
 </dd> <dt>
 
-[**\_PROTECTEDSPACEEXTENT CIM**](cim-protectedspaceextent.md)
+[**CIM \_ ProtectedSpaceExtent**](cim-protectedspaceextent.md)
 </dt> <dd>
 
-A classe [**CIM \_ ProtectedSpaceExtent**](cim-protectedspaceextent.md) representa endereços de bloco lógico endereçáveis, que são tratados como uma única extensão de armazenamento, mas estão localizados em uma única extensão física.
+A [**classe CIM \_ ProtectedSpaceExtent**](cim-protectedspaceextent.md) representa endereços de bloco lógico enderecáveis, que são tratados como uma única extensão de armazenamento, mas estão localizados em uma única extensão física.
 
 </dd> <dt>
 
-[**\_PSEXTENTBASEDONPEXTENT CIM**](cim-psextentbasedonpextent.md)
+[**CIM \_ PSExtentBasedOnPExtent**](cim-psextentbasedonpextent.md)
 </dt> <dd>
 
-A classe [**CIM \_ PSExtentBasedOnPExtent**](cim-psextentbasedonpextent.md) associa extensões de espaço protegidas que se baseiam em uma extensão física.
+A [**classe CIM \_ PSExtentBasedOnPExtent**](cim-psextentbasedonpextent.md) associa as extensão de espaço protegida baseadas em uma extensão física.
 
 </dd> <dt>
 
-[**\_Rack CIM**](cim-rack.md)
+[**CIM \_ Rack**](cim-rack.md)
 </dt> <dd>
 
 A classe de [**\_ rack CIM**](cim-rack.md) representa um rack (um quadro físico ou compartimento) no qual os chassis são armazenados. Normalmente, um rack representa o compartimento; todos os componentes em funcionamento são empacotados no chassi.
@@ -1570,7 +1570,7 @@ A classe de [**\_ serviço CIM**](cim-service.md) representa um elemento lógico
 [**\_SERVICEACCESSBYSAP CIM**](cim-serviceaccessbysap.md)
 </dt> <dd>
 
-A classe de associação [**CIM \_ ServiceAccessBySAP**](cim-serviceaccessbysap.md) representa os pontos de acesso de um serviço. Por exemplo, uma impressora pode ser acessada pelos SAPs (pontos de acesso de serviço) do NetWare, do Macintosh ou do Windows, que são potencialmente hospedados em sistemas diferentes.
+A classe de associação [**CIM \_ ServiceAccessBySAP**](cim-serviceaccessbysap.md) representa os pontos de acesso de um serviço. por exemplo, uma impressora pode ser acessada pelos SAPs (pontos de acesso ao serviço) do NetWare, do Macintosh ou do Windows, que são potencialmente hospedados em sistemas diferentes.
 
 </dd> <dt>
 

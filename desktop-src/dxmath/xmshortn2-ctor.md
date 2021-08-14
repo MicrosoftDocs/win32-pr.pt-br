@@ -11,18 +11,18 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 12b6872281164ce3bb4e32640047236efda37c38
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 05f6847151abac393e73d3c4bdf7363239a4730f6397d32e32938453a9491e71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118499656"
 ---
 # <a name="xmshortn2-constructors"></a>Construtores XMSHORTN2
 
 Construtores expostos por `XMSHORTN2` .
 
-Constrói instâncias da estrutura [**XMSHORTN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2) .
+Constrói instâncias da [**estrutura XMSHORTN2.**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2)
 
 > [!Note]  
 > Os construtores listados aqui só estão disponíveis em C++.
@@ -47,7 +47,7 @@ Constrói instâncias da estrutura [**XMSHORTN2**](/windows/desktop/api/DirectXP
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshortn2-xmshortn2(constfloat)"><strong>XMSHORTN2 ()</strong></a></td>
-<td style="text-align: left;">Construtor padrão para <code>XMSHORTN2</code> . <br/> Construtor padrão para <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2"><strong>XMSHORTN2</strong></a>. <br/>
+<td style="text-align: left;">Construtor padrão para <code>XMSHORTN2</code> . <br/> Construtor padrão para <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2"><strong>XMSHORTN2.</strong></a> <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.
@@ -55,8 +55,8 @@ Esse construtor só está disponível em C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshortn2-xmshortn2(float_float)"><strong>XMSHORTN2 (float, float)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância de <code>XMSHORTN2</code> de dois argumentos normalizados <code>float</code> . <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2"><strong>XMSHORTN2</strong></a> de dois argumentos normalizados <code>float</code> . <br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshortn2-xmshortn2(float_float)"><strong>XMSHORTN2 (float,float)</strong></a></td>
+<td style="text-align: left;">Inicializa uma nova instância de de <code>XMSHORTN2</code> dois argumentos <code>float</code> normalizados. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2"><strong>XMSHORTN2</strong></a> de dois <code>float</code> argumentos normalizados. <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.
@@ -64,8 +64,8 @@ Esse construtor só está disponível em C++.
 <br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshortn2-xmshortn2(constfloat)"><strong>XMSHORTN2 (const float *)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância de <code>XMSHORTN2</code> de um argumento de matriz de dois elementos <code>float</code> . <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2"><strong>XMSHORTN2</strong></a> de um argumento de matriz de um de dois elementos <code>float</code> . <br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshortn2-xmshortn2(constfloat)"><strong>XMSHORTN2 (const float*)</strong></a></td>
+<td style="text-align: left;">Inicializa uma nova instância de de um <code>XMSHORTN2</code> argumento de matriz de dois <code>float</code> elementos. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2"><strong>XMSHORTN2</strong></a> de um de um argumento de matriz de <code>float</code> dois elementos. <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.
@@ -73,8 +73,8 @@ Esse construtor só está disponível em C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshortn2-xmshortn2(constfloat)"><strong>XMSHORTN2 (const int16_t *)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância de <code>XMSHORTN2</code> de um argumento de matriz de dois elementos <code>int16_t</code> . <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2"><strong>XMSHORTN2</strong></a> de um argumento de matriz de um de dois elementos <code>int16_t</code> . <br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshortn2-xmshortn2(constfloat)"><strong>XMSHORTN2 (const int16_t*)</strong></a></td>
+<td style="text-align: left;">Inicializa uma nova instância de de um <code>XMSHORTN2</code> argumento de matriz de dois <code>int16_t</code> elementos. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2"><strong>XMSHORTN2</strong></a> de um de um argumento de matriz de <code>int16_t</code> dois elementos. <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.
@@ -82,8 +82,8 @@ Esse construtor só está disponível em C++.
 <br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshortn2-xmshortn2(int16_t_int16_t)"><strong>XMSHORTN2 (int16_t, int16_t)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância do de <code>XMSHORTN2</code> dois <code>int16_t</code> argumentos. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2"><strong>XMSHORTN2</strong></a> de dois <code>int16_t</code> argumentos. <br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshortn2-xmshortn2(int16_t_int16_t)"><strong>XMSHORTN2 (int16_t,int16_t)</strong></a></td>
+<td style="text-align: left;">Inicializa uma nova instância de de <code>XMSHORTN2</code> dois <code>int16_t</code> argumentos. <br/> Esse construtor inicializa uma nova instância de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn2"><strong>XMSHORTN2</strong></a> de dois <code>int16_t</code> argumentos. <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.

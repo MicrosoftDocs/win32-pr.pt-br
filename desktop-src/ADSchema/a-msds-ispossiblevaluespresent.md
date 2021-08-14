@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f3acac2c36b2962ff2ae9f4c3f36375f09abe0a8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 815c6a5c90aa331390bbe5e35b97bf93e1230dcfbdddbfcfbd078fc97e935ba8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104370014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118426096"
 ---
 # <a name="ms-ds-is-possible-values-present-attribute"></a>ms-DS-is-atributo de valores possíveis-presente
 
@@ -52,8 +52,8 @@ Esse atributo identifica se ms-DS-Claim-possíveis-Values na propriedade de recu
 |------------------------|---------------------------------------------------------|
 | ID do link                | \-                                                      |
 | MAPI-Id                | \-                                                      |
-| System-Only            | True                                                    |
-| É de valor único       | True                                                    |
+| System-Only            | Verdadeiro                                                    |
+| É de valor único       | Verdadeiro                                                    |
 | É indexado             | Falso                                                   |
 | No catálogo global      | Falso                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                            |

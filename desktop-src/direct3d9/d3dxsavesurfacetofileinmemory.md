@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8e8bbdd447b7154e150b3469a4b12180252ed516
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6dd6715c05be0e6472b1c630ebdda209d48dfc571d4b3d5234b80f3700e597d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105760488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986436"
 ---
 # <a name="d3dxsavesurfacetofileinmemory-function"></a>Função D3DXSaveSurfaceToFileInMemory
 
@@ -89,7 +89,7 @@ Ponteiro para uma estrutura [**Rect**](/previous-versions//dd162897(v=vs.85)) . 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

@@ -1,9 +1,9 @@
 ---
-title: Tipo simples versiontype
+title: Tipo de versãoTipo Simples
 description: Define um padrão que especifica uma versão de uma tarefa.
 ms.assetid: e9eebbc1-5465-4af6-8b97-f1fd5827442e
 keywords:
-- tipo simples de versiontype Agendador de Tarefas
+- tipo de versãoTipo simples Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: df7010c6ecba29ad0ade80ce403018dd626d01cf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 52ad30f5ea14a447e2a08151ef2803b0577066e147e29673d373ce87eee033f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104294781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118355032"
 ---
-# <a name="versiontype-simple-type"></a>Tipo simples versiontype
+# <a name="versiontype-simple-type"></a>Tipo de versãoTipo Simples
 
 Define um padrão que especifica uma versão de uma tarefa.
 
@@ -38,11 +38,11 @@ Define um padrão que especifica uma versão de uma tarefa.
 
 ## <a name="patterns"></a>Padrões
 
-O tipo simples **versiontype** é uma **cadeia de caracteres** que é restrita pelo seguinte padrão:
+O **tipo simples versionType** é **uma** cadeia de caracteres restrita pelo seguinte padrão:
 
 -   `\d+(\.\d+){1,3}`
 
-    Um duplo seguido de um, dois ou três duplos. Por exemplo, 1,2 ou 1.2.3.
+    Um duplo seguido por um, dois ou três duplos. Por exemplo, 1.2 ou 1.2.3.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ O tipo simples **versiontype** é uma **cadeia de caracteres** que é restrita p
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

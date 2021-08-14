@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2f976e6a1cb7e3b92710c4f1db26dd4100132488
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5993cad3b66d197fd14ab9806ae1ce7ed1b29d85bf711a2ff72630e9a3642f41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118488866"
 ---
 # <a name="esenttablelockedexception-constructor"></a>Construtor EsentTableLockedException
 
 Inicializa uma nova instância da classe EsentTableLockedException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentTableLockedException()
 
 [Classe EsentTableLockedException](./esenttablelockedexception-class.md)
 
-[Membros do EsentTableLockedException](./esenttablelockedexception-members.md)
+[Membros EsentTableLockedException](./esenttablelockedexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

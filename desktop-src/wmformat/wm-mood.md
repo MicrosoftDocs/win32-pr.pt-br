@@ -1,9 +1,9 @@
 ---
-title: WM/humor
-description: O atributo WM/humor contém um nome de categoria para o humor do conteúdo.
+title: WM/Wm/Wm
+description: O atributo WM/Wm/Wm contém um nome de categoria para o clima do conteúdo.
 ms.assetid: 04a56354-e326-4c42-b124-249fa4d95ce7
 keywords:
-- Formato de mídia do Windows do WM/humor
+- Formato de mídia do Windows WM/Wm/Wm
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cea0a4380eba1304b34a24e1c24e306515614336
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 46a6cee8782a6bcec197378eb3d0d17afcebce5dde50da4c278f20b1aaf0340f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105810736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118195646"
 ---
-# <a name="wmmood"></a>WM/humor
+# <a name="wmmood"></a>WM/Wm/Wm
 
-O atributo **WM/humor** contém um nome de categoria para o humor do conteúdo.
+O **atributo WM/Wm/Wm** contém um nome de categoria para o clima do conteúdo.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,7 +29,7 @@ g \_ wszWMMood
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**Cadeia de caracteres do \_ tipo WMT \_**
+**CADEIA DE CARACTERES DE \_ TIPO \_ WMT**
 
 ## <a name="example"></a>Exemplo
 
@@ -37,11 +37,11 @@ g \_ wszWMMood
 
 | Tipo de arquivo | Valor de exemplo |
 |-----------|---------------|
-| Todos       | "Joyous"      |
+| Tudo       | "Desajoso"      |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -50,9 +50,9 @@ g \_ wszWMMood
 [**Lista de Atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 022aa20fab0739b32aa75eb5f4bc575c0a8ad853
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 299246ef890015a6d7de465ecc7c00251a52432d276a87f3d5f336b63d563737
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110342991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986986"
 ---
 # <a name="d3dtransformstatetype-enumeration"></a>Enumeração D3DTRANSFORMSTATETYPE
 
 Define constantes que descrevem valores de estado de transformação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -98,44 +98,44 @@ Identifica a matriz de transformação que está sendo definida para o estágio 
 
 </dd> <dt>
 
-<span id="D3DTS_TEXTURE5"></span><span id="d3dts_texture5"></span>**D3DTS \_ TEXTURE5**
+<span id="D3DTS_TEXTURE5"></span><span id="d3dts_texture5"></span>**TEXTURA D3DTS5 \_**
 </dt> <dd>
 
 Identifica a matriz de transformação que está sendo definida para o estágio de textura especificado.
 
 </dd> <dt>
 
-<span id="D3DTS_TEXTURE6"></span><span id="d3dts_texture6"></span>**D3DTS \_ TEXTURE6**
+<span id="D3DTS_TEXTURE6"></span><span id="d3dts_texture6"></span>**TEXTURA DE \_ D3DTS6**
 </dt> <dd>
 
 Identifica a matriz de transformação que está sendo definida para o estágio de textura especificado.
 
 </dd> <dt>
 
-<span id="D3DTS_TEXTURE7"></span><span id="d3dts_texture7"></span>**D3DTS \_ TEXTURE7**
+<span id="D3DTS_TEXTURE7"></span><span id="d3dts_texture7"></span>**TEXTURA D3DTS7 \_**
 </dt> <dd>
 
 Identifica a matriz de transformação que está sendo definida para o estágio de textura especificado.
 
 </dd> <dt>
 
-<span id="D3DTS_FORCE_DWORD"></span><span id="d3dts_force_dword"></span>**D3DTS \_ forçar \_ DWORD**
+<span id="D3DTS_FORCE_DWORD"></span><span id="d3dts_force_dword"></span>**D3DTS \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Força essa enumeração a compilar a 32 bits de tamanho. Sem esse valor, alguns compiladores permitiriam que essa enumeração fosse compilada em um tamanho diferente de 32 bits. Este valor não é usado.
+Força essa enumeração a compilar para 32 bits de tamanho. Sem esse valor, alguns compiladores permitiriam que essa enumeração fosse compilada para um tamanho diferente de 32 bits. Este valor não é usado.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Os Estados de transformação no intervalo de 256 a 511 são reservados para armazenar até 256 matrizes mundiais que podem ser indexadas usando as \_ macros D3DTS WORLDMATRIX e D3DTS \_ World.
+Os estados de transformação no intervalo de 256 a 511 são reservados para armazenar até 256 matrizes do mundo que podem ser indexadas usando as macros D3DTS \_ WORLDMATRIX e D3DTS \_ WORLD.
 
 
 
 | Macros                                                  | Descrição                                                                                                                                                                      |
 |---------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**D3DTS \_ World**](d3dts-world.md)                     | Equivalente a D3DTS \_ WORLDMATRIX (0).                                                                                                                                  |
-| [**D3DTS \_ WORLDMATRIX**](d3dts-worldmatrix.md) (índice) | Identifica a matriz de transformação a ser definida para a matriz mundial no índice. Várias matrizes mundiais são usadas apenas para mesclagem de vértice. Caso contrário, somente D3DTS \_ World será usado. |
+| [**D3DTS \_ WORLD**](d3dts-world.md)                     | Equivalente a D3DTS \_ WORLDMATRIX(0).                                                                                                                                  |
+| [**D3DTS \_ WORLDMATRIX**](d3dts-worldmatrix.md) (índice) | Identifica a matriz de transformação a ser definida para a matriz mundial no índice. Várias matrizes de mundo são usadas somente para mesclagem de vértices. Caso contrário, somente D3DTS \_ WORLD será usado. |
 
 
 
@@ -147,7 +147,7 @@ Os Estados de transformação no intervalo de 256 a 511 são reservados para arm
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
@@ -155,10 +155,10 @@ Os Estados de transformação no intervalo de 256 a 511 são reservados para arm
 
 <dl> <dt>
 
-[Enumerações do Direct3D](dx9-graphics-reference-d3d-enums.md)
+[Enumerações direct3D](dx9-graphics-reference-d3d-enums.md)
 </dt> <dt>
 
-[**IDirect3DDevice9:: GetTransform**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-gettransform)
+[**IDirect3DDevice9::GetTransform**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-gettransform)
 </dt> <dt>
 
 [**IDirect3DDevice9::MultiplyTransform**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-multiplytransform)

@@ -10,16 +10,16 @@ keywords:
 - quadros chave
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23006eef1e51d8bc63f2d55cac22e09a2052d83e
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: 80d400c0ee4ba97aa7de559b1394dbe5c9fb2a974c124924aeae0839b1b4dae0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "104453883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118196492"
 ---
 # <a name="to-force-key-frame-insertion"></a>Para forçar a inserção de Key-Frame
 
-O codec Windows Media Video 9 dá suporte à inserção forçada de quadros-chave. Ao passar um exemplo para o gravador, você pode especificar que ele deve ser codificado como um [*quadro-chave*](wmformat-glossary.md).
+o codec Windows Media Video 9 dá suporte à inserção forçada de quadros-chave. Ao passar um exemplo para o gravador, você pode especificar que ele deve ser codificado como um [*quadro-chave*](wmformat-glossary.md).
 
 Para forçar a inserção de quadro-chave para um exemplo, execute as etapas a seguir.
 
@@ -47,9 +47,9 @@ Para forçar a inserção de quadro-chave para um exemplo, execute as etapas a s
 [**Gravando arquivos ASF**](writing-asf-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

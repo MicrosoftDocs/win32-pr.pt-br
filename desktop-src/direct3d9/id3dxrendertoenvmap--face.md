@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 452933c0d85a7aad2987011796ff47eff41dc32b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1190e033f9aa83b13f327fcb8a8b530be17132bfd330c9be6b9cc6d87d5e35a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103664104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118801215"
 ---
 # <a name="id3dxrendertoenvmapface-method"></a>Método ID3DXRenderToEnvMap:: face
 
@@ -59,7 +59,7 @@ Uma combinação válida de um ou mais sinalizadores de [ \_ filtro D3DX](d3dx-f
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

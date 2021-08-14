@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: df57ea991b9177dc081443301e426560834df894
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 3035724a76aff71c2ba2b7500874365ea284f55b0bf16389b3d83c99205e606b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104988617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118515673"
 ---
 # <a name="dcl_output_siv-sm4---asm"></a>\_ \_ SIV de saída DCL (sm4-ASM)
 
@@ -57,7 +57,7 @@ Essa instrução está incluída para auxiliar na depuração de um sombreador n
 
 ## <a name="example"></a>Exemplo
 
-Aqui estão alguns exemplos.
+Veja alguns exemplos.
 
 
 ```

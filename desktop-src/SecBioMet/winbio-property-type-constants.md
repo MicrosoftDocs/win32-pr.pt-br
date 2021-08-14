@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f4a1420af18bfa4d2ba5d0457b22cd5f77e7b0c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: be7b7c17da736e117f099ec66dafc4ef2cfbba037f90a35f2522d7710cb3cef0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118909354"
 ---
 # <a name="winbio_property_type-constants"></a>Constantes do tipo de \_ Propriedade WINBIO \_
 
@@ -63,7 +63,7 @@ A propriedade se aplica a uma unidade biométrica específica.
 
 
 
-A propriedade se aplica a uma conta de usuário específica que tenha um registro biométrico. Esse valor tem suporte a partir do Windows 10.
+A propriedade se aplica a uma conta de usuário específica que tenha um registro biométrico. Esse valor tem suporte a partir de Windows 10.
 
 
 </dt> </dl> </dd> </dl>
@@ -74,8 +74,8 @@ A propriedade se aplica a uma conta de usuário específica que tenha um registr
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                                |
 | parâmetro<br/>                   | <dl> <dt>WinBio. h (incluir WinBio. h)</dt> </dl> |
 
 

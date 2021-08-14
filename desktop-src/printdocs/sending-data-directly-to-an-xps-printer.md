@@ -1,24 +1,24 @@
 ---
 description: Este tópico descreve como enviar dados de controle de impressora diretamente para impressoras que usam drivers de impressora XPSDrv.
 ms.assetid: 7e98e08a-d572-451d-befb-18fc86f0e505
-title: 'Como: enviar dados diretamente para uma impressora XPS'
+title: Como enviar dados diretamente para uma impressora XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d78a8c36d6862860862059f9bbcc8db25e171b19
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 65fba87578f9257290123b737f2d1d8c3e48f57e6a628110a20a232ddb290ea0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105808369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118470147"
 ---
-# <a name="how-to-send-data-directly-to-an-xps-printer"></a>Como: enviar dados diretamente para uma impressora XPS
+# <a name="how-to-send-data-directly-to-an-xps-printer"></a>Como enviar dados diretamente para uma impressora XPS
 
 Este tópico descreve como enviar dados de controle de impressora diretamente para impressoras que usam drivers de impressora XPSDrv.
 
 As etapas a seguir descrevem como enviar dados diretamente para uma impressora. Essas etapas também são ilustradas no exemplo de código a seguir.
 
-1.  Chame [**OpenPrinter**](openprinter.md) para obter um identificador para a impressora.
-2.  Inicialize uma estrutura [**DOCINFO**](/windows/desktop/api/wingdi/ns-wingdi-docinfoa) com os dados da impressora.
+1.  Chame [**OpenPrinter**](openprinter.md) para obter um handle para a impressora.
+2.  Inicialize uma [**estrutura DOCINFO**](/windows/desktop/api/wingdi/ns-wingdi-docinfoa) com os dados da impressora.
 3.  Chame [**StartDocPrinter**](startdocprinter.md) para indicar que o aplicativo enviará dados de documento para a impressora.
 4.  Chame [**WritePrinter**](writeprinter.md) para enviar os dados.
 5.  Chame [**EndDocPrinter**](enddocprinter.md) para indicar que todos os dados deste documento foram enviados.

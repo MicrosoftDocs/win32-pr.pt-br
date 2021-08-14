@@ -1,6 +1,6 @@
 ---
 title: Estendendo a interface do usuário para objetos de diretório
-description: Com o Microsoft Windows 2000 e posterior, os snap-ins do MMC (console de gerenciamento Microsoft), como o snap-in Active Directory usuários e computadores, para administração do Active Directory Domain Services, estão disponíveis.
+description: com o Microsoft Windows 2000 e posterior, os snap-ins do MMC (Console de gerenciamento Microsoft), como o snap-in Active Directory usuários e computadores, para administração do Active Directory Domain Services, estão disponíveis.
 ms.assetid: 758ec25d-42ab-46ba-aa58-416d7ac8fd68
 ms.tgt_platform: multiple
 keywords:
@@ -8,16 +8,16 @@ keywords:
 - AD de objetos, estendendo a interface do usuário para objetos de diretório
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b8d635132a26e80a63fddb35f779211308779f9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 459dea32a77b2ced84a9eb85956cea895cf5044138480b8568f0343eac8ff28b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103634942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118189517"
 ---
 # <a name="extending-the-user-interface-for-directory-objects"></a>Estendendo a interface do usuário para objetos de diretório
 
-Com o Microsoft Windows 2000 e posterior, os snap-ins do MMC (console de gerenciamento Microsoft), como o snap-in Active Directory usuários e computadores, para administração do Active Directory Domain Services, estão disponíveis. Além disso, o Shell do Windows 2000 inclui interfaces do usuário (UIs) para localizar objetos que residem no diretório e as propriedades de leitura e gravação. Esta seção explica como estender a interface do usuário para exibir e gerenciar Active Directory Domain Services objetos no Shell do Windows e Active Directory snap-ins administrativos. Esta seção também aborda o que é necessário para implantar as extensões de interface do usuário para os desktops dos usuários.
+com o Microsoft Windows 2000 e posterior, os snap-ins do MMC (Console de gerenciamento Microsoft), como o snap-in Active Directory usuários e computadores, para administração do Active Directory Domain Services, estão disponíveis. além disso, o shell Windows 2000 inclui interfaces do usuário (UIs) para localizar objetos que residem no diretório e lendo e gravando propriedades. esta seção explica como estender a interface do usuário para exibir e gerenciar Active Directory Domain Services objetos no shell de Windows e Active Directory snap-ins administrativos. Esta seção também aborda o que é necessário para implantar as extensões de interface do usuário para os desktops dos usuários.
 
 Especificamente, esta seção aborda o seguinte:
 
@@ -37,9 +37,9 @@ Especificamente, esta seção aborda o seguinte:
 -   [Como os aplicativos devem usar especificadores de exibição](how-applications-should-use-display-specifiers.md)
 -   [Depurando uma extensão de Active Directory](debugging-an-active-directory-extension.md)
 
- 
+ 
 
- 
+ 
 
 
 

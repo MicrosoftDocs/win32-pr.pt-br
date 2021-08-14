@@ -1,9 +1,9 @@
 ---
-title: Player. configurações
-description: A propriedade Settings recupera o objeto Settings.
+title: Player.settings
+description: A propriedade settings recupera o Configurações objeto .
 ms.assetid: 9edd7d27-893a-4a32-8aaf-5efec6c50903
 keywords:
-- Player. configurações Windows Media Player
+- Player.settings Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,24 +14,24 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d5482574069ea94052016272ff22cde2ac563f6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fb14137fba6ba460dda0d3bbdc32f0b97c442d75979e603460a645241d37e84e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118337960"
 ---
-# <a name="playersettings"></a>Player. configurações
+# <a name="playersettings"></a>Player.settings
 
-A propriedade **Settings** recupera o objeto Settings.
+A **propriedade settings** recupera o Configurações objeto .
 
 ## <a name="syntax"></a>Syntax
 
-*Player* . **configurações** do
+*player* . **configurações**
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esta propriedade é um objeto de configurações somente leitura.
+Essa propriedade é um objeto de Configurações somente leitura.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,7 +39,7 @@ Esta propriedade é um objeto de configurações somente leitura.
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -48,10 +48,10 @@ Esta propriedade é um objeto de configurações somente leitura.
 
 <dl> <dt>
 
-[**Objeto de jogador**](player-object.md)
+[**Objeto Player**](player-object.md)
 </dt> <dt>
 
-[**Objeto de configurações**](settings-object.md)
+[**Configurações Objeto**](settings-object.md)
 </dt> </dl>
 
  

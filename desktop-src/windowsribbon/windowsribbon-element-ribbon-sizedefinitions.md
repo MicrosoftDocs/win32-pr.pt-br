@@ -3,7 +3,7 @@ title: Propriedade Ribbon. SizeDefinitions
 description: Representa um contêiner para modelos de layout personalizados de controles da faixa de opção.
 ms.assetid: 1f5fcffc-7f2e-4763-b0a7-4e8f46534da8
 keywords:
-- Faixa de SizeDefinitions da propriedade Windows da faixa de propriedades
+- Windows da propriedade ribbon. SizeDefinitions
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b8ffe5a3339b0f32e493a1f7ddc33789526695e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 24f3109c7e9f709267310415b48238b24050c7531bc0f784290876ab47706d6e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118202252"
 ---
 # <a name="ribbonsizedefinitions-property"></a>Propriedade Ribbon. SizeDefinitions
 
@@ -90,8 +90,8 @@ O exemplo de código a seguir ilustra um modelo personalizado básico.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/> |
 
 
 

@@ -1,25 +1,25 @@
 ---
-title: Convenções de codificação do Windows
-description: Se você for novo na programação do Windows, ele poderá ser desconcerto quando você vir um programa do Windows pela primeira vez.
+title: Windows Convenções de codificação
+description: se você for novo na programação de Windows, ele poderá ser desconcerto quando você vir um programa de Windows pela primeira vez.
 ms.assetid: 466a66db-7681-4fce-9672-07849cd1b096
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 365a9c8509d7cb799bafdfa70c326f1074b64d93
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: b78c24f38f9f2f410c044637ca3aa59d4baa39e9b671b3485c5b85899b69c2fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105766259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118387391"
 ---
-# <a name="windows-coding-conventions"></a>Convenções de codificação do Windows
+# <a name="windows-coding-conventions"></a>Windows Convenções de codificação
 
-Se você for novo na programação do Windows, ele poderá ser desconcerto quando você vir um programa do Windows pela primeira vez. O código é preenchido com definições de tipo estranhas, como **DWORD \_ PTR** e **lpRect**, e variáveis têm nomes como *HWND* e *PWSZ* (chamado de notação húngara). Vale a pena dedicar um momento para aprender algumas das convenções de codificação do Windows.
+se você for novo na programação de Windows, ele poderá ser desconcerto quando você vir um programa de Windows pela primeira vez. O código é preenchido com definições de tipo estranhas, como **DWORD \_ PTR** e **lpRect**, e variáveis têm nomes como *HWND* e *PWSZ* (chamado de notação húngara). vale a pena dedicar um momento para aprender algumas das convenções de codificação de Windows.
 
-A grande maioria das APIs do Windows consiste em funções ou em interfaces de Component Object Model (COM). Muito poucas APIs do Windows são fornecidas como classes do C++. (Uma exceção notável é GDI+, uma das APIs de gráficos 2-D.)
+a grande maioria das APIs de Windows consiste em funções ou em interfaces de Component Object Model (COM). muito poucos Windows APIs são fornecidas como classes do C++. (uma exceção notável é GDI+, uma das APIs de gráficos 2d.)
 
 ## <a name="typedefs"></a>Typedefs
 
-Os cabeçalhos do Windows contêm muitos TYPEDEFs. Muitos deles são definidos no arquivo de cabeçalho WinDef. h. Aqui estão alguns que você encontrará com frequência.
+os cabeçalhos de Windows contêm muitos typedefs. Muitos deles são definidos no arquivo de cabeçalho WinDef. h. Aqui estão alguns que você encontrará com frequência.
 
 ### <a name="integer-types"></a>Tipos de inteiro
 
@@ -41,9 +41,9 @@ Os cabeçalhos do Windows contêm muitos TYPEDEFs. Muitos deles são definidos n
 
 
 
- 
+ 
 
-Como você pode ver, há uma certa quantidade de redundância nesses TYPEDEFs. Parte dessa sobreposição é simplesmente devido ao histórico das APIs do Windows. Os tipos listados aqui têm tamanho fixo e os tamanhos são os mesmos nos aplicativos de 32 bits e 64. Por exemplo, o tipo **DWORD** é sempre de 32 bits de largura.
+Como você pode ver, há uma certa quantidade de redundância nesses TYPEDEFs. parte dessa sobreposição é simplesmente devido ao histórico das APIs de Windows. Os tipos listados aqui têm tamanho fixo e os tamanhos são os mesmos nos aplicativos de 32 bits e 64. Por exemplo, o tipo **DWORD** é sempre de 32 bits de largura.
 
 ### <a name="boolean-type"></a>Tipo booliano
 
@@ -88,7 +88,7 @@ Lembre-se de que **bool** é um tipo inteiro e não é intercambiável com o tip
 
 ### <a name="pointer-types"></a>Tipos de ponteiro
 
-O Windows define vários tipos de dados do formato *ponteiro-para-X*. Normalmente, eles têm o prefixo *P-* ou *LP-* no nome. Por exemplo, **lpRect** é um ponteiro para um [**Rect**](/previous-versions//dd162897(v=vs.85)), onde **Rect** é uma estrutura que descreve um retângulo. As seguintes declarações de variável são equivalentes.
+Windows define muitos tipos de dados do formato *ponteiro-para-X*. Normalmente, eles têm o prefixo *P-* ou *LP-* no nome. Por exemplo, **lpRect** é um ponteiro para um [**Rect**](/previous-versions//dd162897(v=vs.85)), onde **Rect** é uma estrutura que descreve um retângulo. As seguintes declarações de variável são equivalentes.
 
 
 ```C++
@@ -99,11 +99,11 @@ PRECT  rect;  // Also the same.
 
 
 
-Historicamente, *P* significa "ponteiro" e *LP* significa "ponteiro longo". Ponteiros longos (também chamados de *ponteiros distantes*) são um remanescente do Windows de 16 bits, quando eles eram necessários para endereçar os intervalos de memória fora do segmento atual. O prefixo *LP* foi preservado para tornar mais fácil a porta de código de 16 bits para o Windows de 32 bits. Atualmente, não há distinção — um ponteiro é um ponteiro.
+Historicamente, *P* significa "ponteiro" e *LP* significa "ponteiro longo". ponteiros longos (também chamados de *ponteiros distantes*) são um remanescente de 16 bits Windows, quando eles eram necessários para endereçar os intervalos de memória fora do segmento atual. O prefixo *LP* foi preservado para tornar mais fácil a porta de código de 16 bits para o Windows de 32 bits. Atualmente, não há distinção — um ponteiro é um ponteiro.
 
 ### <a name="pointer-precision-types"></a>Tipos de precisão de ponteiro
 
-Os seguintes tipos de dados são sempre o tamanho de um ponteiro — ou seja, 32 bits de largura em aplicativos de 32 bits e 64 bits de largura em aplicativos de 64 bits. O tamanho é determinado no momento da compilação. Quando um aplicativo de 32 bits é executado em janelas de 64 bits, esses tipos de dados ainda têm 4 bytes de largura. (Um aplicativo de 64 bits não pode ser executado em janelas de 32 bits, portanto, a situação inversa não ocorre.)
+Os seguintes tipos de dados são sempre o tamanho de um ponteiro — ou seja, 32 bits de largura em aplicativos de 32 bits e 64 bits de largura em aplicativos de 64 bits. O tamanho é determinado no momento da compilação. quando um aplicativo de 32 bits é executado em Windows de 64 bits, esses tipos de dados ainda têm 4 bytes de largura. (um aplicativo de 64 bits não pode ser executado em Windows de 32 bits, portanto, a situação invertida não ocorre.)
 
 -   **PTR de DWORD \_**
 -   **INT \_ PTR**
@@ -111,7 +111,7 @@ Os seguintes tipos de dados são sempre o tamanho de um ponteiro — ou seja, 32
 -   **\_ponteiro ULONG**
 -   **PTR-UINT \_**
 
-Esses tipos são usados em situações em que um inteiro pode ser convertido em um ponteiro. Eles também são usados para definir variáveis para aritmética de ponteiro e para definir contadores de loop que iteram em todo o intervalo de bytes em buffers de memória. Em geral, eles aparecem em locais onde um valor de 32 bits existente foi expandido para 64 bits no Windows de 64 bits.
+Esses tipos são usados em situações em que um inteiro pode ser convertido em um ponteiro. Eles também são usados para definir variáveis para aritmética de ponteiro e para definir contadores de loop que iteram em todo o intervalo de bytes em buffers de memória. Em geral, eles aparecem em locais onde um valor de 32 bits existente foi expandido para 64 bits em Windows de bits 64.
 
 ## <a name="hungarian-notation"></a>Notação húngaro
 
@@ -127,6 +127,6 @@ Se você pesquisar na Web "notação húngara", encontrará muitas opiniões sob
 
 [Trabalhando com cadeias de caracteres](working-with-strings.md)
 
- 
+ 
 
- 
+ 

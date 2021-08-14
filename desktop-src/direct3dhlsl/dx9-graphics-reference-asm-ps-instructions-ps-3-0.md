@@ -1,6 +1,6 @@
 ---
-title: Instruções de ps_3_0
-description: Esta seção contém informações de referência para as instruções da versão 3 0 do sombreador de pixel \_ .
+title: ps_3_0 instruções
+description: Esta seção contém informações de referência para as instruções do sombreador de pixel versão \_ 3 0.
 ms.assetid: 36972b9b-a4e7-45b4-83f5-959e75d270de
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,52 +9,52 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d43f17ef765feb5899c7dd4537a1770155b4aa59
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e44d13bfc726830a8c3fb770b34d5563fde2684f5c8bdf3fea54dec2312af4d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103823050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982856"
 ---
-# <a name="ps_3_0-instructions"></a>\_instruções PS 3 \_ 0
+# <a name="ps_3_0-instructions"></a>Instruções ps \_ 3 \_ 0
 
-Esta seção contém informações de referência para as instruções da versão 3 0 do sombreador de pixel \_ .
+Esta seção contém informações de referência para as instruções do sombreador de pixel versão \_ 3 0.
 
-Há vários tipos de instruções de sombreador de pixel, como mostrado na tabela. As colunas à direita significam o seguinte:
+Há vários tipos de instruções de sombreador de pixel, conforme mostrado na tabela. As colunas à direita significam o seguinte:
 
--   Slots de instrução-número de Slots de instrução usados por cada instrução.
+-   Slots de instrução – número de slots de instrução usados por cada instrução.
 -   Instalação – um sombreador de pixel deve ter uma instrução de versão e deve ser a primeira instrução.
 -   Aritmética – essas instruções fornecem as operações matemáticas em um sombreador.
--   Textura-essas instruções são usadas para carregar e obter amostras de dados de textura e modificar coordenadas de textura.
--   Controle de fluxo-essas instruções fornecem controle de fluxo estático e dinâmico para a execução de instruções.
--   Novas-essas instruções são novas nesta versão.
+-   Textura – essas instruções são usadas para carregar e amostrar dados de textura e modificar as coordenadas de textura.
+-   Flow controle – essas instruções fornecem controle de fluxo estático e dinâmico para a execução de instruções.
+-   Novo – essas instruções são novas para esta versão.
 
 ## <a name="instruction-set"></a>Conjunto de instruções
 
 
 
-| Name                                                             | Descrição                                                                          | Slots de instrução | Instalação | Aritmético | Textura | Controle de fluxo | Novo |
+| Nome                                                             | Descrição                                                                          | Slots de instrução | Instalação | Aritmético | Textura | Controle de fluxo | Novo |
 |------------------------------------------------------------------|--------------------------------------------------------------------------------------|-------------------|-------|------------|---------|--------------|-----|
-| [ABS-PS](abs---ps.md)                                         | Valor absoluto                                                                       | 1                 |       | x          |         |              |     |
-| [Adicionar-PS](add---ps.md)                                         | Adicionar dois vetores                                                                      | 1                 |       | x          |         |              |     |
-| [-PS de interrupção](break---ps.md)                                     | Interromper fora de um loop... ENDLOOP ou Rep... bloco endrep                                  | 1                 |       |            |         | x            |     |
-| [interromper \_ comp-PS](break-comp---ps.md)                          | Interrupção condicional de um loop... ENDLOOP ou Rep... bloco endrep, com uma comparação | 3                 |       |            |         | x            |     |
-| [breakp-PS](break-p---ps.md)                                  | interromper fora de um loop... ENDLOOP ou Rep... bloco endrep, com base em um predicado            | 3                 |       |            |         | x            |     |
-| [Call-PS](call---ps.md)                                       | Chamar uma sub-rotina                                                                    | 2                 |       |            |         | x            |     |
-| [callnz bool-PS](callnz-bool---ps.md)                         | Chamar uma sub-rotina se um registro booliano não for zero                                  | 3                 |       |            |         | x            |     |
-| [callnz Pred-PS](callnz-pred---ps.md)                         | Chamar uma sub-rotina se um registro de predicado não for zero                                | 3                 |       |            |         | x            |     |
-| [CMP-PS](cmp---ps.md)                                         | Comparar origem com 0                                                                  | 1                 |       | x          |         |              |     |
-| [CRS-PS](crs---ps.md)                                         | Produto cruzado                                                                        | 2                 |       | x          |         |              |     |
-| [\_SampleType de DCL (SM2, SM3-PS ASM)](dcl-samplertype---ps.md) | Declarar a dimensão de textura para uma amostra                                          | 0                 | x     |            |         |              |     |
-| [semântica de DCL \_ (SM3-PS ASM)](dcl-usage---ps.md)              | Declarar registros de entrada e saída                                                   | 0                 | x     |            |         |              | x   |
-| [def-PS](def---ps.md)                                         | Definir constantes                                                                     | 0                 | x     |            |         |              |     |
-| [DEFB-PS](defb---ps.md)                                       | Definir uma constante booliana                                                            | 0                 | x     |            |         |              |     |
-| [defi-PS](defi---ps.md)                                       | Definir uma constante de inteiro                                                           | 0                 | x     |            |         |              |     |
-| [dp2add-PS](dp2add---ps.md)                                   | produto 2D dot e adicionar                                                               | 2                 |       | x          |         |              |     |
-| [DP3-PS](dp3---ps.md)                                         | produto 3D dot                                                                       | 1                 |       | x          |         |              |     |
-| [DP4-PS](dp4---ps.md)                                         | produto do ponto de 4D                                                                       | 1                 |       | x          |         |              |     |
-| [DSX-PS](dsx---ps.md)                                         | Taxa de alteração na direção de x                                                    | 2                 |       | x          |         |              |     |
-| [DSY-PS](dsy---ps.md)                                         | Taxa de alteração na direção y                                                    | 2                 |       | x          |         |              |     |
+| [abs - ps](abs---ps.md)                                         | Valor absoluto                                                                       | 1                 |       | x          |         |              |     |
+| [add - ps](add---ps.md)                                         | Adicionar dois vetores                                                                      | 1                 |       | x          |         |              |     |
+| [break - ps](break---ps.md)                                     | Sair de um loop... endloop ou rep... bloco endrep                                  | 1                 |       |            |         | x            |     |
+| [break \_ comp - ps](break-comp---ps.md)                          | Sair condicionalmente de um loop... endloop ou rep... bloco endrep, com uma comparação | 3                 |       |            |         | x            |     |
+| [breakp – ps](break-p---ps.md)                                  | sair de um loop... endloop ou rep... bloco endrep, com base em um predicado            | 3                 |       |            |         | x            |     |
+| [call - ps](call---ps.md)                                       | Chamar uma sub-rotina                                                                    | 2                 |       |            |         | x            |     |
+| [callnz bool - ps](callnz-bool---ps.md)                         | Chamar uma sub-rotina se um registro booliana não for zero                                  | 3                 |       |            |         | x            |     |
+| [callnz pred – ps](callnz-pred---ps.md)                         | Chamar uma sub-rotina se um registro de predicado não for zero                                | 3                 |       |            |         | x            |     |
+| [cmp - ps](cmp---ps.md)                                         | Comparar a origem com 0                                                                  | 1                 |       | x          |         |              |     |
+| [crs - ps](crs---ps.md)                                         | Produto cruzado                                                                        | 2                 |       | x          |         |              |     |
+| [dcl \_ samplerType (sm2, sm3 – ps asm)](dcl-samplertype---ps.md) | Declarar a dimensão de textura para um exemplo                                          | 0                 | x     |            |         |              |     |
+| [\_semântica dcl (sm3 – ps asm)](dcl-usage---ps.md)              | Declarar registros de entrada e saída                                                   | 0                 | x     |            |         |              | x   |
+| [def - ps](def---ps.md)                                         | Definir constantes                                                                     | 0                 | x     |            |         |              |     |
+| [defb – ps](defb---ps.md)                                       | Definir uma constante booliana                                                            | 0                 | x     |            |         |              |     |
+| [defi – ps](defi---ps.md)                                       | Definir uma constante de inteiro                                                           | 0                 | x     |            |         |              |     |
+| [dp2add – ps](dp2add---ps.md)                                   | Produto de ponto 2D e adicionar                                                               | 2                 |       | x          |         |              |     |
+| [dp3 – ps](dp3---ps.md)                                         | Produto de ponto 3D                                                                       | 1                 |       | x          |         |              |     |
+| [dp4 – ps](dp4---ps.md)                                         | Produto de ponto 4D                                                                       | 1                 |       | x          |         |              |     |
+| [dsx – ps](dsx---ps.md)                                         | Taxa de alteração na direção x                                                    | 2                 |       | x          |         |              |     |
+| [dsy - ps](dsy---ps.md)                                         | Taxa de alteração na direção y                                                    | 2                 |       | x          |         |              |     |
 | [else-PS](else---ps.md)                                       | Iniciar um bloco else                                                                  | 1                 |       |            |         | x            |     |
 | [endif-PS](endif---ps.md)                                     | Terminar um if... bloco else                                                               | 1                 |       |            |         | x            |     |
 | [ENDLOOP-PS](endloop---ps.md)                                 | Encerrar um loop                                                                           | 2                 |       |            |         | x            | x   |
@@ -64,7 +64,7 @@ Há vários tipos de instruções de sombreador de pixel, como mostrado na tabel
 | [se bool-PS](if-bool---ps.md)                                 | Iniciar um bloco If                                                                    | 3                 |       |            |         | x            |     |
 | [Se \_ comp-PS](if-comp---ps.md)                                | Iniciar um bloco If com uma comparação                                                  | 3                 |       |            |         | x            |     |
 | [se Pred-PS](if-pred---ps.md)                                 | Iniciar um bloco If com predicação                                                   | 3                 |       |            |         | x            |     |
-| [rótulo-PS](label---ps.md)                                     | Label                                                                                | 0                 |       |            |         | x            |     |
+| [rótulo-PS](label---ps.md)                                     | Rótulo                                                                                | 0                 |       |            |         | x            |     |
 | [log-PS](log---ps.md)                                         | ₂ de log de precisão total (x)                                                               | 1                 |       | x          |         |              |     |
 | [loop-PS](loop---ps.md)                                       | Loop                                                                                 | 3                 |       |            |         | x            | x   |
 | [LRP-PS](lrp---ps.md)                                         | Interpolação linear                                                                   | 2                 |       | x          |         |              |     |
@@ -79,9 +79,9 @@ Há vários tipos de instruções de sombreador de pixel, como mostrado na tabel
 | [MOV-PS](mov---ps.md)                                         | Mover                                                                                 | 1                 |       | x          |         |              |     |
 | [Mul-PS](mul---ps.md)                                         | Multiplicar                                                                             | 1                 |       | x          |         |              |     |
 | [Nop-PS](nop---ps.md)                                         | Nenhuma operação                                                                         | 1                 |       | x          |         |              |     |
-| [NRM-PS](nrm---ps.md)                                         | Normaliza                                                                            | 3                 |       | x          |         |              |     |
+| [NRM-PS](nrm---ps.md)                                         | Normalizar                                                                            | 3                 |       | x          |         |              |     |
 | [pow-PS](pow---ps.md)                                         | x<sup>y</sup>                                                                        | 3                 |       | x          |         |              |     |
-| [profissionais](ps---ps.md)                                                | Versão                                                                              | 0                 | x     |            |         |              |     |
+| [ps](ps---ps.md)                                                | Versão                                                                              | 0                 | x     |            |         |              |     |
 | [RCP-PS](rcp---ps.md)                                         | Recíproco                                                                           | 1                 |       | x          |         |              |     |
 | [Rep-PS](rep---ps.md)                                         | Repetir                                                                               | 3                 |       |            |         | x            |     |
 | [RET-PS](ret---ps.md)                                         | Fim de uma sub-rotina                                                                  | 1                 |       |            |         | x            |     |
@@ -98,7 +98,7 @@ Há vários tipos de instruções de sombreador de pixel, como mostrado na tabel
 
 
 
- 
+ 
 
 Observações:
 
@@ -113,9 +113,9 @@ Observações:
 [Instruções do sombreador de pixel](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

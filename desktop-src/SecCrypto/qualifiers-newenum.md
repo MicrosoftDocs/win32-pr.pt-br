@@ -1,5 +1,5 @@
 ---
-description: A \_ Propriedade NewEnum de qualificadores recupera uma interface IEnumVARIANT em um objeto que pode ser usado para enumerar a coleção. Essa propriedade é oculta em Visual Basic Scripting Edition (VBScript).
+description: A \_ Propriedade NewEnum de qualificadores recupera uma interface IEnumVARIANT em um objeto que pode ser usado para enumerar a coleção. essa propriedade é oculta no Visual Basic scripting Edition (VBScript).
 ms.assetid: e51f8ca1-ef1f-475b-8368-e8296fae0f04
 title: Propriedade Qualifiers._NewEnum
 ms.topic: reference
@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 01a4d62604dabacd2d78d5d2f6cbee0db7189196
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b4d526b959720201769cb9d0bdf1fb65d679c225f91c7ed85c6aa4cbccca6bcc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118900972"
 ---
 # <a name="qualifiers_newenum-property"></a>Qualificadores. \_ Propriedade NewEnum
 
 \[A propriedade **\_ NewEnum** está disponível para uso nos sistemas operacionais especificados na seção requisitos. Em vez disso, use a [**classe X509Extension**](/dotnet/api/system.security.cryptography.x509certificates.x509extension?view=netcore-3.1) no namespace [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) chamando o construtor que usa um OID como parâmetro e, em seguida, use o OID para políticas de certificado para processar qualificadores que fazem parte das informações de política na extensão de políticas de certificado.\]
 
-A propriedade **\_ NewEnum** recupera uma interface [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) em um objeto que pode ser usado para enumerar a coleção. Essa propriedade é oculta em Visual Basic Scripting Edition (VBScript).
+A propriedade **\_ NewEnum** recupera uma interface [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) em um objeto que pode ser usado para enumerar a coleção. essa propriedade é oculta no Visual Basic scripting Edition (VBScript).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```VB
@@ -41,7 +41,7 @@ Uma interface [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant)
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade é usada automaticamente internamente quando você usa a `For Each In` construção em Visual Basic Scripting Edition (VBScript).
+essa propriedade é usada automaticamente internamente quando você usa a `For Each In` construção no Visual Basic scripting Edition (VBScript).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,7 +49,7 @@ Essa propriedade é usada automaticamente internamente quando você usa a `For E
 
 | Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Redistribuível<br/> | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

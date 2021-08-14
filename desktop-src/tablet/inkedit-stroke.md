@@ -1,19 +1,19 @@
 ---
-description: Ocorre quando o usuário desenha um novo objeto IInkStrokeDisp em qualquer objeto IInkTablet.
+description: Ocorre quando o usuário desenha um novo objeto IInkTrikeDisp em qualquer objeto IInkTablet.
 ms.assetid: fac5104d-d0da-40b1-a4a6-00a34718d09f
-title: Evento InkEdit. Stroke (Inked. h)
+title: Evento InkEdit.Stroke (Inked.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d21abde9deb565f207a44ddd44b51681f1bfa6a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a1114f26fa17690b1651321ef15ad11d8ec4d55f11f8e7e1754d6d694fdceda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663168"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118717891"
 ---
-# <a name="inkeditstroke-event"></a>Evento InkEdit. Stroke
+# <a name="inkeditstroke-event"></a>Evento InkEdit.Stroke
 
-Ocorre quando o usuário desenha um novo objeto [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) em qualquer objeto [**IInkTablet**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet) .
+Ocorre quando o usuário desenha um novo objeto [**IInkTrikeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) em qualquer [**objeto IInkTablet.**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -32,34 +32,34 @@ HRESULT Stroke(
 
 <dl> <dt>
 
-*Cursor* \[ no\]
+*Cursor* \[ Em\]
 </dt> <dd>
 
-O objeto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) .
+O [**objeto IInkCursor.**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)
 
 </dd> <dt>
 
-*Traço* \[ no\]
+*Traço* \[ Em\]
 </dt> <dd>
 
-O objeto [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) coletado.
+O objeto [**IInkStrkeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) coletado.
 
 </dd> <dt>
 
-*Cancelar* \[ entrada, saída\]
+*Cancelar* \[ in, out\]
 </dt> <dd>
 
-**Variante \_ TRUE** para cancelar a coleção do objeto [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) ; **Variante \_ FALSE** para coletar o objeto **IInkStrokeDisp** e continuar com o **traço** mesmo.
+**VARIANT \_ TRUE** para cancelar a coleção do [**objeto IInkStrkeDisp;**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) **VARIANT \_ FALSE** para coletar o **objeto IInkStrkeDisp** e continuar com o **Traço** mesmo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse evento for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse evento for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Esse método de evento é definido na interface **\_ IInkEditEvents** . A interface **\_ IInkEditEvents** implementa a interface [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) com um identificador de \_ IeeStroke DISPID.
+Esse método de evento é definido na interface **\_ IInkEditEvents.** A interface **\_ IInkEditEvents** implementa a interface [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) com um identificador dispID \_ IeeStrke.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,9 +67,9 @@ Esse método de evento é definido na interface **\_ IInkEditEvents** . A interf
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>Inked. h (também requer Inked \_ i. c)</dt> </dl> |
+| parâmetro<br/>                   | <dl> <dt>Inked.h (também requer \_ i.c com tinta)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkEd.dll</dt> </dl>                          |
 
 
@@ -78,13 +78,13 @@ Esse método de evento é definido na interface **\_ IInkEditEvents** . A interf
 
 <dl> <dt>
 
-[InkEdit](inkedit-control-reference.md)
+[Inkedit](inkedit-control-reference.md)
 </dt> <dt>
 
-[**Interface IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)
+[**IInkCursor Interface**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)
 </dt> <dt>
 
-[**Interface IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp)
+[**Interface IInkRogkeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp)
 </dt> </dl>
 
  

@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 669c20503551b0a380372524b898559dff472f2a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ee009e3f346c7e7a179a324ec68834999acd711934ab5c64a3cae1845372dbdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104084131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118211331"
 ---
 # <a name="remote-calls-to-the-sam-rpc-protocol-are-restricted-to-only-local-administrators"></a>Chamadas remotas para o Protocolo RPC SAM são restritas somente a administradores locais
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
 O Protocolo RPC SAM está sendo restrito. Isso significa que somente os membros do grupo de Administradores local podem fazer chamadas remotas em relação a métodos nesse protocolo. Active Directory comportamento do controlador de domínio não é afetado.
 
@@ -26,9 +26,9 @@ O Protocolo RPC SAM está sendo restrito. Isso significa que somente os membros 
 
 Verifique se os usuários corretos estão definidos como administradores no PC. A ACL usada para a verificação de acesso é configurável por meio da política de grupo.
 
- 
+ 
 
- 
+ 
 
 
 

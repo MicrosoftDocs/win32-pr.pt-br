@@ -3,7 +3,7 @@ title: BUTTON. transparencyColor
 description: O atributo transparencyColor especifica ou recupera a cor transparente das imagens de um botão.
 ms.assetid: 604c5b29-50b9-4df6-9e48-488bf4fb7227
 keywords:
-- TransparencyColor Windows Media Player.
+- Windows Media Player de BUTTON. transparencyColor
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fbaf6fb70db7d2699a63eb7b4fd34009f7b8ba75
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cf97a25081e3f5c5729721bd675d9c59be1a4d52adc86acf6b9b75a0ee86dbac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105794505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118342659"
 ---
 # <a name="buttongrouptransparencycolor"></a>BUTTON. transparencyColor
 
@@ -35,7 +35,7 @@ Esse atributo é uma **cadeia de caracteres** de leitura/gravação sem padrão,
 
 | Valor                                       | Descrição                                                                                        |
 |---------------------------------------------|----------------------------------------------------------------------------------------------------|
-| Automático                                        | O pixel no local 0, 0 na imagem torna-se a cor transparente.                              |
+| Auto                                        | O pixel no local 0, 0 na imagem torna-se a cor transparente.                              |
 | qualquer valor de cor do Microsoft Internet Explorer | Um valor de cor do Internet Explorer se torna a cor transparente (por exemplo, "vermelho" ou " \# FF0000"). |
 | Nenhum                                        | Padrão. Sem transparência.                                                                          |
 

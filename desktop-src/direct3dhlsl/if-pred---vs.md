@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0a1a36bb0c6c68f5132757719bbc7e37fbc71501
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: ad9aba5c9f18b88577a456764a71cc27637d24856cdafa95d811344034d514f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104293558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118511902"
 ---
 # <a name="if-pred---vs"></a>se Pred-vs
 
@@ -29,7 +29,7 @@ Início de um If Pred-vs... [else-vs](else---vs.md)... [endif – bloco vs](endi
 
 
 
- 
+ 
 
 Em que:
 
@@ -47,7 +47,7 @@ Em que:
 
 
 
- 
+ 
 
 Essa instrução é usada para ignorar um bloco de código, com base em um canal do registro de predicado. Cada \_ bloco If Pred deve terminar com uma instrução else ou endif.
 
@@ -64,9 +64,9 @@ Um \_ bloco If Pred não pode ampliar um bloco de loop, ele deve estar completam
 [Instruções do sombreador de vértice](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

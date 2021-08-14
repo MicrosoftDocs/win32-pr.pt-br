@@ -3,8 +3,8 @@ title: Estrutura de MPSIGUPDATE_DATA (MpClient. h)
 description: Dados de notificação passados para a função de retorno de chamada de atualização de assinatura.
 ms.assetid: E999ABC2-CC72-43CC-86D9-4F29E9128E1A
 keywords:
-- Recursos do ambiente Windows herdado da estrutura de MPSIGUPDATE_DATA
-- Ponteiro de estrutura de PMPSIGUPDATE_DATA recursos de ambiente herdados do Windows
+- recursos de ambiente de Windows herdado da estrutura de MPSIGUPDATE_DATA
+- Windows recursos de ambiente herdados do ponteiro de estrutura do PMPSIGUPDATE_DATA
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 442b19da394043b6fc6b8693f51c5f150233f970
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d3c117b92882a24a825aee5c5b008e10721c40b8a93d26a9a677bb79858635c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118476248"
 ---
 # <a name="mpsigupdate_data-structure"></a>\_Estrutura de dados MPSIGUPDATE
 
@@ -148,8 +148,8 @@ Caminho de atualização.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
 
 

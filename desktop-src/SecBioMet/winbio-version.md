@@ -4,7 +4,7 @@ description: Contém o número de versão do software de um componente do proved
 ms.assetid: b9d08e10-00db-4f3f-9e27-6063aafa4151
 keywords:
 - API de Windows Biometric Framework de estrutura de WINBIO_VERSION
-- Ponteiro de estrutura de PWINBIO_VERSION Windows Biometric Framework API
+- ponteiro de estrutura de PWINBIO_VERSION Windows Biometric Framework API
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7d9cda802e89006ed49f6ec4b4e96c88602c511
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: de81dd3da7f37e473a65caaf3e4cd52c8fd2f6732dced45f43245cb4e4c5c905
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118909111"
 ---
 # <a name="winbio_version-structure"></a>Estrutura de versão do WINBIO \_
 
@@ -62,8 +62,8 @@ Um **DWORD** que contém o número de versão secundária.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                                    |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                                       |
 | parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h)</dt> </dl> |
 
 

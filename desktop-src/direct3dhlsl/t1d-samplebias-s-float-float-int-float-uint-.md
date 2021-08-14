@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: eb9443512c350ed701d7752bd529834e24d227c7
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 894f70de8757d79b5d9fe4d547e334fa15a0d45bee8db512a974072caac0a279
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104298888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118508276"
 ---
 # <a name="samplebiassamplebiassfloatfloatintfloatuint-function-for-texture1d"></a>Função SampleBias:: SampleBias (S, float, float, int, float, uint) para Texture1D
 
@@ -124,7 +124,7 @@ O status da operação. Você não pode acessar o status diretamente; em vez dis
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **\_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
