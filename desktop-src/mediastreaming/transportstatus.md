@@ -14,12 +14,12 @@ api_type:
 - IDLDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb4a9de34f358db96b468dbd3329483a8e09b6b7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e96b7d3892d0344b166665426c66313da370aed1abbdb80c17037ea6aeb44e46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105814533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118472992"
 ---
 # <a name="transportstatus-enumeration"></a>Enumeração TransportStatus
 
@@ -77,7 +77,7 @@ O status do dispositivo anterior para o status de transporte atual.
 
 | Requisito | Valor |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| INSERI<br/> | <dl> <dt>Windows. Media. streaming. idl (referência Windows. Media. streaming. idl)</dt> </dl> |
+| INSERI<br/> | <dl> <dt>Windows. Media. streaming. idl (Windows de referência. Media. streaming. idl)</dt> </dl> |
 
 
 

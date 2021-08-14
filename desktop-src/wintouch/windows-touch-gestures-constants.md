@@ -1,6 +1,6 @@
 ---
-title: Constantes de gestos do Windows Touch (WinUser. h)
-description: Esta seção lista as constantes usadas para gestos do Windows Touch.
+title: Windows Constantes de gestos de toque (WinUser. h)
+description: esta seção lista as constantes usadas para gestos de toque Windows.
 ms.assetid: C5C3C533-A781-47EF-8209-2D94A94C9097
 topic_type:
 - apiref
@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 02/18/2020
-ms.openlocfilehash: be1d8fe9354c7160643dcefb2d35938453ad5b07
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3e980619a4f0f2a0df83ebfbe2fb8e8a767ef5f988e2bb3b769bde64e714eb80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118435222"
 ---
-# <a name="windows-touch-gestures-constants"></a>Constantes de gestos do Windows Touch
+# <a name="windows-touch-gestures-constants"></a>Windows Constantes de gestos de toque
 
-Esta seção lista as constantes usadas para gestos do Windows Touch.
+esta seção lista as constantes usadas para gestos de toque Windows.
 
 <dl> <dt>
 
@@ -39,10 +39,10 @@ Define o número máximo de configurações de gesto que podem ser incluídas em
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                  |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                               |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                                  |
+| parâmetro<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 ## <a name="see-also"></a>Confira também
 
-[**GetGestureConfig**](/windows/desktop/api/winuser/nf-winuser-getgestureconfig), [**SetGestureConfig**](/windows/desktop/api/winuser/nf-winuser-setgestureconfig), [gestos de toque do Windows](multi-touch-gestures.md)
+[gestos de toque](multi-touch-gestures.md) [**GetGestureConfig**](/windows/desktop/api/winuser/nf-winuser-getgestureconfig), [**SetGestureConfig**](/windows/desktop/api/winuser/nf-winuser-setgestureconfig), Windows

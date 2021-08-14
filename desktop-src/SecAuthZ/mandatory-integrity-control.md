@@ -4,12 +4,12 @@ ms.assetid: 5923cb4c-f663-40d2-989a-07d71ac475db
 title: Controle de Integridade de Credenciais
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c184ba01da0a55309fcb27ace9b0fe156edd6425
-ms.sourcegitcommit: 4570ac533e129ff88b23f2c2b69e0140ead3a4a4
+ms.openlocfilehash: 5ac1a39cfc1d1ab819181e37c17328d6015a884f9ae1cce546643480351341b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105748955"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117781489"
 ---
 # <a name="mandatory-integrity-control"></a>Controle de Integridade de Credenciais
 
@@ -17,7 +17,7 @@ O Controle de Integridade de Credenciais (MIC) fornece um mecanismo para control
 
 O MIC usa níveis de integridade e política obrigatória para avaliar o acesso. [*Entidades de segurança*](/windows/desktop/SecGloss/s-gly) e objetos protegíveis recebem níveis de integridade que determinam seus níveis de proteção ou acesso. Por exemplo, uma entidade com um nível de baixa integridade não pode gravar em um objeto com um nível de integridade médio, mesmo se a DACL do objeto permitir acesso de gravação à entidade de segurança.
 
-O Windows define quatro níveis de integridade: baixo, médio, alto e sistema. Os usuários padrão recebem alto, os usuários com privilégios elevados recebem alta. Os processos que você inicia e os objetos criados recebem seu nível de integridade (médio ou alto) ou baixo se o nível do arquivo executável for baixo; os serviços do sistema recebem a integridade do sistema. Objetos que não têm um rótulo de integridade são tratados como médios pelo sistema operacional; Isso impede que o código de baixa integridade modifique objetos sem rótulo. Além disso, o Windows garante que os processos em execução com um nível de baixa integridade não possam obter acesso a um processo associado a um contêiner de aplicativo.
+Windows define quatro níveis de integridade: baixo, médio, alto e sistema. Os usuários padrão recebem alto, os usuários com privilégios elevados recebem alta. Os processos que você inicia e os objetos criados recebem seu nível de integridade (médio ou alto) ou baixo se o nível do arquivo executável for baixo; os serviços do sistema recebem a integridade do sistema. Objetos que não têm um rótulo de integridade são tratados como médios pelo sistema operacional; Isso impede que o código de baixa integridade modifique objetos sem rótulo. além disso, Windows garante que os processos em execução com um nível de baixa integridade não possam obter acesso a um processo associado a um contêiner de aplicativo.
 
 ## <a name="integrity-labels"></a>Rótulos de integridade
 

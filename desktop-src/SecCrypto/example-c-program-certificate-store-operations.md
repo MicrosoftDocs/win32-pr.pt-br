@@ -1,34 +1,34 @@
 ---
-description: 'Programa C de exemplo: operações de repositório de certificados'
+description: 'Exemplo de programa C: Operações de armazenamento de certificados'
 ms.assetid: cf87791c-b98c-4dd7-b346-336c4b1a88ca
-title: 'Programa C de exemplo: operações de repositório de certificados'
+title: 'Exemplo de programa C: Operações de armazenamento de certificados'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d2f20a56fd04eb79b1ebe2359e3c915d9aad60fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eba6a7634a5d3fbd6f1e4aab04c72d0c6eca0123fb037641f9625bb9900548b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105750756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117765526"
 ---
-# <a name="example-c-program-certificate-store-operations"></a>Programa C de exemplo: operações de repositório de certificados
+# <a name="example-c-program-certificate-store-operations"></a>Exemplo de programa C: Operações de armazenamento de certificados
 
-O exemplo a seguir demonstra uma série de operações de [*repositório de certificados*](../secgloss/c-gly.md) comuns, bem como as seguintes tarefas e funções de [*CryptoAPI*](../secgloss/c-gly.md) :
+O exemplo a seguir demonstra várias operações [*comuns*](../secgloss/c-gly.md) de armazenamento de certificados, bem como as seguintes tarefas e [*funções CryptoAPI:*](../secgloss/c-gly.md)
 
--   Abertura e fechamento de memória e armazenamentos do sistema usando [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore) e [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore).
--   Duplicando um armazenamento aberto usando [**CertDuplicateStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certduplicatestore).
--   A localização no armazena certificados que atendem a alguns critérios usando o [**CertFindCertificateInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore).
--   Criar um novo contexto de certificado a partir da parte codificada de um certificado existente usando [**CertCreateCertificateContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcreatecertificatecontext).
+-   Abrir e fechar repositórios de memória e sistema [**usando CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore) e [**CertCloseStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore)
+-   Duplicando um repositório aberto usando [**CertDuplicateStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certduplicatestore).
+-   Localizar em armazena certificados que atendem a alguns critérios usando [**CertFindCertificateInStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore)
+-   Criando um novo contexto de certificado da parte codificada de um certificado existente usando [**CertCreateCertificateContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-certcreatecertificatecontext).
 -   Adicionar um certificado recuperado a um repositório na memória usando [**CertAddCertificateContextToStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddcertificatecontexttostore).
--   Adicionar um link a um certificado para um armazenamento usando [**CertAddCertificateLinkToStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddcertificatelinktostore).
--   Salvando o armazenamento na memória em um arquivo no disco.
--   Abrir e fechar um repositório de certificados baseado em arquivo.
+-   Adicionar um link a um certificado a um repositório usando [**CertAddCertificateLinkToStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddcertificatelinktostore).
+-   Salvando o armazenamento na memória em um arquivo em disco.
+-   Abrir e fechar um armazenamento de certificados baseado em arquivo.
 
-Este exemplo usa a função [**MyHandleError**](myhandleerror.md). O código para essa função está incluído no exemplo. O código para essa e outras funções auxiliares também está listado em [funções uso geral](general-purpose-functions.md).
+Este exemplo usa a [**função MyHandleError**](myhandleerror.md). O código para essa função está incluído no exemplo. O código para essa e outras funções auxiliares também é listado [em Uso Geral Functions](general-purpose-functions.md).
 
-Este exemplo usa a função **CreateMyDACL** , definida no tópico [criando uma DACL](../secbp/creating-a-dacl.md) , para garantir que o arquivo aberto seja criado com uma DACL apropriada.
+Este exemplo usa a **função CreateMyDACL,** definida no tópico Criando uma [DACL,](../secbp/creating-a-dacl.md) para garantir que o arquivo aberto seja criado com uma DACL adequada.
 
-Este exemplo cria um repositório de certificados na memória. Um repositório do sistema é aberto e duplicado. Um certificado é recuperado do repositório do sistema. Um novo certificado é criado a partir da parte codificada do certificado recuperado. O certificado recuperado é adicionado ao armazenamento de memória. Um segundo certificado é recuperado do meu repositório e um link para esse certificado é adicionado ao armazenamento de memória. O certificado e o link são então recuperados do armazenamento de memória e a memória é salva em disco. Todos os armazenamentos e arquivos são fechados. Em seguida, o repositório de arquivos é reaberto e uma pesquisa é feita para o link de certificado. O sucesso deste programa depende de uma minha loja estar disponível. Esse repositório deve incluir um certificado com o assunto "inserir \_ a \_ entidade CERT \_ Nome1" e um segundo certificado com o assunto "inserir \_ \_ entidade CERT \_ nome2". Os nomes dos assuntos devem ser alterados para os nomes de entidades de certificado conhecidos como no meu repositório.
+Este exemplo cria um armazenamento de certificados na memória. Um armazenamento do sistema é aberto e duplicado. Um certificado é recuperado do armazenamento do sistema. Um novo certificado é criado a partir da parte codificada do certificado recuperado. O certificado recuperado é adicionado ao armazenamento de memória. Um segundo certificado é recuperado do Meu armazenamento e um link para esse certificado é adicionado ao armazenamento de memória. O certificado e o link são recuperados do armazenamento de memória e a memória é salva em disco. Todos os armazenamentos e arquivos são fechados. Em seguida, o armazenamento de arquivos é reaberto e uma pesquisa é feita para o link do certificado. O sucesso desse programa depende de uma Minha loja estar disponível. Esse armazenamento deve incluir um certificado com o assunto "Inserir nome da assunto do certificado1" e um segundo certificado com o assunto "Inserir nome da assunto \_ \_ do \_ \_ \_ \_ certificado2". Os nomes dos assuntos devem ser alterados para os nomes dos assuntos de certificado conhecidos por estar em Minha loja.
 
 
 ```C++

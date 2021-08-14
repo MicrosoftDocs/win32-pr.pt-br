@@ -4,12 +4,12 @@ description: MemberNotImplememented
 ms.assetid: 9852841F-7923-4C6F-A86A-941606CBFABF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d55f3ce3060b44d4a5b793c7ca90a5afad6045db
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 37d7ed71a181d76853f6cd262813f088feb0c7d9312996d4207a88cd6dcd23e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118565071"
 ---
 # <a name="membernotimplememented"></a>MemberNotImplememented
 
@@ -17,17 +17,17 @@ ms.locfileid: "104292200"
 
 O método não está implementado neste elemento específico.
 
-## <a name="type"></a>Tipo
+## <a name="type"></a>Digite
 
-Erro
+Erro do
 
 ## <a name="description"></a>Descrição
 
 Ocorreu uma falha inesperada do método.
 
- 
+ 
 
- 
+ 
 
 
 

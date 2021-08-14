@@ -3,9 +3,9 @@ title: Método Controls. Stop
 description: O método Stop interrompe a reprodução do item de mídia. | Método Controls. Stop
 ms.assetid: ace95fde-9c94-4737-88f2-94321cbc687c
 keywords:
-- método Stop Windows Media Player
-- método Stop Windows Media Player, classe Controls
-- Classe Controls do Windows Media Player, método Stop
+- Windows Media Player do método Stop
+- método stop Windows Media Player, classe Controls
+- classe Controls Windows Media Player, método stop
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e1ffc581fffbce0a341559e82c6bd196f712149
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b882f462903c2c5f75a3655cd26b927e7439043828dad41fcce7d0e64e4ce812
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105762090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118580155"
 ---
 # <a name="controlsstop-method"></a>Método Controls. Stop
 
@@ -46,7 +46,7 @@ Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método faz com que o Windows Media Player libere os recursos do sistema que está usando, como o dispositivo de áudio. O item de mídia atual, no entanto, não é liberado.
+esse método faz Windows Media Player liberar os recursos do sistema que está usando, como o dispositivo de áudio. O item de mídia atual, no entanto, não é liberado.
 
 Quando o jogador for interrompido, a faixa retrocederá até o início. Chamar **Play** começará a reprodução do clipe desde o início. Para interromper uma operação de reprodução sem alterar a posição atual, use o método **Pause** .
 

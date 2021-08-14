@@ -1,19 +1,19 @@
 ---
-description: Os autores de pacotes de instalação devem incluir a atualização de informações em seus arquivos. msi para garantir que seu pacote de instalação possa aproveitar a funcionalidade completa de atualização disponível com o Microsoft Windows Installer.
+description: os autores de pacotes de instalação devem incluir a atualização de informações em seus arquivos de .msi para garantir que seu pacote de instalação possa aproveitar a funcionalidade completa de atualização disponível com o Microsoft Windows Installer.
 ms.assetid: 88bb2709-a1bf-4140-a145-ae6bee85dde1
 title: Preparando um aplicativo para atualizações principais futuras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1e0dc9ccbee10becc39274e91d2fedeb3707028
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0c38adc97fce578b48bc721b4265696486351097771cf936efc1e667752a7a36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105748143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118377347"
 ---
 # <a name="preparing-an-application-for-future-major-upgrades"></a>Preparando um aplicativo para atualizações principais futuras
 
-Os autores de pacotes de instalação devem incluir a atualização de informações em seus arquivos. msi para garantir que seu pacote de instalação possa aproveitar a funcionalidade completa de atualização disponível com o Microsoft Windows Installer.
+os autores de pacotes de instalação devem incluir a atualização de informações em seus arquivos de .msi para garantir que seu pacote de instalação possa aproveitar a funcionalidade completa de atualização disponível com o Microsoft Windows Installer.
 
 Cada aplicativo, ou conjunto de aplicativos, deve ser atribuído a uma propriedade [**UpgradeCode**](upgradecode.md) , uma propriedade [**ProductVersion**](productversion.md) e uma propriedade [**ProductLanguage**](productlanguage.md) . A propriedade [**UpgradeCode**](upgradecode.md) indica uma família de aplicativos relacionados que consiste em versões diferentes e versões de idioma diferentes do mesmo produto. Para obter mais informações sobre como usar a propriedade [**UpgradeCode**](upgradecode.md) , consulte [usando um UpgradeCode](using-an-upgradecode.md).
 

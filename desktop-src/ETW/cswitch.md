@@ -24,12 +24,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 91004ca276140271e8d73c3fc226e83c4e03d1fc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09efeac38babb057621cb6f25d14d3a631c12242e91982ae3ab9e79570416be5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118395342"
 ---
 # <a name="cswitch-class"></a>Classe CSwitch
 
@@ -258,7 +258,7 @@ Motivo de espera para o thread anterior. O valores possíveis são os seguintes:
 | 17    | WrLpcReply        |
 | 18    | WrVirtualMemory   |
 | 19    | WrPageOut         |
-| 20    | WrRendezvous      |
+| 20    | WrRevous      |
 | 21    | WrKeyedEvent      |
 | 22    | WrTerminated      |
 | 23    | WrProcessInSwap   |
@@ -292,23 +292,23 @@ Tipo de dados: **uint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (5)
+Qualificadores: WmiDataId(5)
 </dt> </dl>
 
-O índice do estado C que foi usado pela última vez pelo processador. Um valor de 0 representa o estado ocioso mais leve com valores mais altos que representam os mais avançados.
+O índice do estado C que foi usado pela última vez pelo processador. Um valor de 0 representa o estado ocioso mais claro com valores mais altos que representam estados C mais profundos.
 
 </dd> <dt>
 
 **Reserved**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (12)
+Qualificadores: WmiDataId(12)
 </dt> </dl>
 
 Reservado.
@@ -324,7 +324,7 @@ Tipo de dados: **sint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (6)
+Qualificadores: WmiDataId(6)
 </dt> </dl>
 
 Não usado.
@@ -341,8 +341,8 @@ Esses eventos produzem um alto volume de eventos.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -350,10 +350,10 @@ Esses eventos produzem um alto volume de eventos.
 
 <dl> <dt>
 
-[**Processo**](thread.md)
+[**Thread**](thread.md)
 </dt> <dt>
 
-[**Thread \_ v2**](thread-v2.md)
+[**Thread \_ V2**](thread-v2.md)
 </dt> </dl>
 
  

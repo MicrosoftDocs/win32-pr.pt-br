@@ -4,12 +4,12 @@ description: A clonagem de um efeito cria uma segunda cópia praticamente idênt
 ms.assetid: e3870363-5ee8-4fdc-a489-cdaeef8c9c39
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68607d3cc9f00a346fcfa65c255f3caa51dea384
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 195b4e9a42e595558acc4c512f8662c11b2acde7873e123b242ee272eeea7e8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118538000"
 ---
 # <a name="cloning-an-effect"></a>Clonando um efeito
 
@@ -85,9 +85,9 @@ Durante a clonagem, o efeito clonado criará um novo ID3D11Buffer para objectdat
 [Efeitos (Direct3D 11)](d3d11-graphics-programming-guide-effects.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

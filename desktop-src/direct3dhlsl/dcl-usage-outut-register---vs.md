@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 314c9c9a9a9e62915e9224b3cf165bc54d09a516
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 9ee5f444cbf145957ad93db00160d812e75e4a624019ad9f578b5dc960e84f59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107999163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117726713"
 ---
 # <a name="dcl_usage-output-sm1-sm2-sm3---vs-asm"></a>\_saída de uso de DCL (SM1, SM2, SM3-vs ASM)
 
@@ -24,7 +24,7 @@ Os registros de saída exigem declarações que incluem semânticas. Por exemplo
 
 Dos doze registros de saída, quaisquer dez (não necessariamente o0 a O9) têm quatro componentes (xyzw), outro deve ser declarado como posição (e também deve incluir todos os quatro componentes) e, opcionalmente, mais um pode ser um tamanho de ponto escalar.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 A sintaxe para declarar registros de saída é semelhante às declarações para o registro de entrada:
 

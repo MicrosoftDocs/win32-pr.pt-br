@@ -1,11 +1,11 @@
 ---
-title: Propriedade Count de IVMFloppyDriveCollection (VPCCOMInterfaces. h)
+title: Propriedade Count IVMFloppyDriveCollection (VPCCOMInterfaces.h)
 description: Número de unidades de disquete nesta coleção.
 ms.assetid: d430e5ae-9782-4f88-a5a4-744e79545c7a
 keywords:
-- Propriedade de contagem Virtual PC
-- Propriedade Count Virtual PC, interface IVMFloppyDriveCollection
-- Virtual PC de interface IVMFloppyDriveCollection, Propriedade Count
+- Propriedade Count Pc Virtual
+- Propriedade Count Pc Virtual , interface IVMFloppyDriveCollection
+- INTERFACE IVMFloppyDriveCollection pc virtual , propriedade Count
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 21b00c13795a633c664cea2c4476d58b346f9108
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1688a157b4352c1d2d1eba12701633e61ae6097b358737b1c9593a8ff16d122c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118594832"
 ---
-# <a name="ivmfloppydrivecollectioncount-property"></a>Propriedade IVMFloppyDriveCollection:: Count
+# <a name="ivmfloppydrivecollectioncount-property"></a>Propriedade IVMFloppyDriveCollection::Count
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Recupera o número de unidades de disquete nesta coleção.
 
@@ -45,7 +45,7 @@ HRESULT get_Count(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O número de unidades de mídia de disquete.
+O número de unidades de mídia disquete.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
@@ -54,9 +54,9 @@ O número de unidades de mídia de disquete.
 | Nome/valor                                                                                                                                                    | Significado                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | A operação foi bem-sucedida.<br/>     |
-| <dl> <dt>E \_ </dt> <dt>0X80004003</dt> de ponteiro </dl>         | O parâmetro é **NULL**.<br/>        |
-| <dl> <dt>VM \_ E 0xA0040207 de \_ VM \_ desconhecido</dt> <dt></dt> </dl> | A configuração é desconhecida.<br/>     |
-| <dl> <dt>DISP \_ E \_ </dt> <dt>0x80020009</dt> de exceção </dl> | Ocorreu um erro inesperado.<br/> |
+| <dl> <dt>E \_ PONTEIRO</dt> <dt>0x80004003</dt> </dl>         | O parâmetro é **NULL.**<br/>        |
+| <dl> <dt>VM \_ E \_ VM \_ UNKNOWN</dt> <dt>0xA0040207</dt> </dl> | A configuração é desconhecida.<br/>     |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Ocorreu um erro inesperado.<br/> |
 
 
 
@@ -66,12 +66,12 @@ O número de unidades de mídia de disquete.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMFloppyDriveCollection é definido como 8ba70a25-f698-4ee5-85CE-3cc93a925516<br/>   |
+| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID \_ IVMFloppyDriveCollection é definido como 8ba70a25-f698-4ee5-85ce-3cc93a925516<br/>   |
 
 
 

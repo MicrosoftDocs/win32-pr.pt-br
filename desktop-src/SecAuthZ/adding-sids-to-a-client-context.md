@@ -4,24 +4,24 @@ ms.assetid: d49ce47b-e91a-452b-b423-07e8d282d28a
 title: Adicionando SIDs a um contexto de cliente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a601f485110ddacea0fdb54cb7dcef587a25cb9a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f07805031d299efc400c491c7fff1c43653e90b53f6c753c81a8676d4b0941b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104506086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117784918"
 ---
 # <a name="adding-sids-to-a-client-context"></a>Adicionando SIDs a um contexto de cliente
 
-Um aplicativo pode adicionar SIDs ( [*identificadores de segurança*](/windows/desktop/SecGloss/s-gly) ) a um contexto de cliente existente chamando a função [**AuthzAddSidsToContext**](/windows/desktop/api/Authz/nf-authz-authzaddsidstocontext) . A função [**AuthzAddSidsToContext**](/windows/desktop/api/Authz/nf-authz-authzaddsidstocontext) permite que um aplicativo especifique uma lista de SIDs e uma lista de SIDs de restrição para o contexto de cliente especificado.
+Um aplicativo pode adicionar SIDs [*(identificadores*](/windows/desktop/SecGloss/s-gly) de segurança) a um contexto de cliente existente chamando a [**função AuthzAddSidsToContext.**](/windows/desktop/api/Authz/nf-authz-authzaddsidstocontext) A [**função AuthzAddSidsToContext**](/windows/desktop/api/Authz/nf-authz-authzaddsidstocontext) permite que um aplicativo especifique uma lista de SIDs e uma lista de restrições de SIDs ao contexto do cliente especificado.
 
-O sistema usa a lista de SIDs de restrição quando verifica o acesso do token a um objeto protegível. Quando um processo ou thread restrito tenta acessar um objeto protegível, o sistema executa duas verificações de acesso: uma usando os SIDs habilitados do token e outra usando a lista de SIDs de restrição. O acesso será concedido somente se ambas as verificações de acesso permitirem os direitos de acesso solicitados.
+O sistema usa a lista de restrições de SIDs quando verifica o acesso do token a um objeto que pode ser proteger. Quando um processo ou thread restrito tenta acessar um objeto que pode ser proteger, o sistema executa duas verificações de acesso: uma usando os SIDs habilitados do token e outra usando a lista de restrição de SIDs. O acesso será concedido somente se ambas as verificações de acesso permitirem os direitos de acesso solicitados.
 
 As variáveis de atributo devem estar na forma de uma expressão quando usadas com operadores lógicos; caso contrário, eles serão avaliados como desconhecidos.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir adiciona um SID e um SID restrito ao contexto do cliente criado pelo exemplo na [inicialização de um contexto de cliente](initializing-a-client-context.md).
+O exemplo a seguir adiciona um SID e um SID restritivo ao contexto do cliente criado pelo exemplo em [Inicializando um contexto de cliente](initializing-a-client-context.md).
 
 
 ```C++
@@ -103,10 +103,10 @@ BOOL AddSidsToContext(AUTHZ_CLIENT_CONTEXT_HANDLE *phClientContext)
 
 <dl> <dt>
 
-[Cache de verificações de acesso](caching-access-checks.md)
+[Caching Verificações de acesso](caching-access-checks.md)
 </dt> <dt>
 
-[Verificando o acesso com a API AuthZ](checking-access-with-authz-api.md)
+[Verificando o acesso com Authz API](checking-access-with-authz-api.md)
 </dt> <dt>
 
 [Inicializando um contexto de cliente](initializing-a-client-context.md)

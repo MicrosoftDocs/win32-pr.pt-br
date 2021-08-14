@@ -4,12 +4,12 @@ ms.assetid: 9faf6d22-b80d-4020-ac74-ee40b31ae9d4
 title: Escopos de entrada e factores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bbb46e21a0524f806daa4eed789fde31e285109
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 881ebd26cbfb70cb215103b9a6face356af078e47b74a2e9140886f81f457eef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118450966"
 ---
 # <a name="input-scopes-and-factoids"></a>Escopos de entrada e factores
 
@@ -20,7 +20,7 @@ Um escopo de entrada é um conjunto definido de palavras, números, pontuação 
 
  
 
-As versões anteriores da API de tecnologia do Tablet PC usaram os factos para definir o contexto. Para fins práticos, um factor é a mesma coisa que um escopo de entrada. A versão um da plataforma do SDK do Tablet PC definiu um conjunto de valores de facto no objeto de [**factor**](factoid-constants.md) . Esses valores foram usados para definir o contexto e influenciar os resultados do reconhecimento ao usar o objeto [**RecognizerContext**](inkrecognizercontext-class.md) para reconhecimento. Para os reconhecedores do script latino a partir do Windows XP Tablet PC Edition 2005, você ainda usa a propriedade [**facto**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_factoid) do objeto **RecognizerContext** para definir o contexto, mas você deve passar um escopo de entrada, uma lista de frases ou um valor de expressão regular de manuscrito em vez de um dos valores da versão um factor. Os reconhecedores da Microsoft dos caracteres do leste asiático não dão suporte ao uso dos valores enumerados do escopo de entrada. Você deve continuar usando valores de factor para reconhecedores de caracteres do leste asiático.
+As versões anteriores da API de tecnologia do Tablet PC usaram os factos para definir o contexto. Para fins práticos, um factor é a mesma coisa que um escopo de entrada. A versão um da plataforma do SDK do Tablet PC definiu um conjunto de valores de facto no objeto de [**factor**](factoid-constants.md) . Esses valores foram usados para definir o contexto e influenciar os resultados do reconhecimento ao usar o objeto [**RecognizerContext**](inkrecognizercontext-class.md) para reconhecimento. para os reconhecedores do script latino a partir do Windows XP Tablet PC Edition 2005, você ainda usa a propriedade [**facto**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_factoid) do objeto **RecognizerContext** para definir o contexto, mas você deve passar um escopo de entrada, uma lista de frases ou um valor de expressão regular de manuscrito em vez de um dos valores da versão um factor. Os reconhecedores da Microsoft dos caracteres do leste asiático não dão suporte ao uso dos valores enumerados do escopo de entrada. Você deve continuar usando valores de factor para reconhecedores de caracteres do leste asiático.
 
 Os escopos de entrada e as chaves são restrições nas alternativas de nível de palavra; as alternativas de caracteres podem estar fora do escopo de entrada especificado mesmo quando o sinalizador de **coerção** está definido.
 

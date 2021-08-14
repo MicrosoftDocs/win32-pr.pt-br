@@ -3,7 +3,7 @@ title: Código de notificação de NM_HOVER (exibição de lista) (commctrl. h)
 description: Enviado por um controle de exibição de lista quando o mouse passa sobre um item. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 0d4a2eee-9c98-43d1-bc05-226d91c0480a
 keywords:
-- NM_HOVER de código de notificação (exibição de lista) controles do Windows
+- NM_HOVER de código de notificação (exibição de lista) Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e60606dfac73e13b0439ce861f37cb4ec941fda3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fb380e96e579e5e740678a4fa91270c510e7ca01c3596a68cdac02eedd3f1da8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118411130"
 ---
 # <a name="nm_hover-list-view-notification-code"></a>\_Código de notificação de foco de nm (exibição de lista)
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedi
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornar zero para permitir que o modo de exibição de lista processe o foco normalmente ou diferente de zero para impedir que o foco seja processado.
 
@@ -55,8 +55,8 @@ Retornar zero para permitir que o modo de exibição de lista processe o foco no
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 

@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: e61208f15772a43138e6cd7a38fd6327445bdfa5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cd16ee40bfb480b3e7eacef2bc4681e61fdb24ace1ac68985e2016ce11b7c0e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118219625"
 ---
 # <a name="taskbar-thumbnail-toolbar-sample"></a>Exemplo da barra de ferramentas em miniatura da barra de tarefas
 
@@ -23,13 +23,13 @@ Demonstra uma barra de ferramentas de miniatura, um controle de barra de ferrame
 Este tópico inclui as seções a seguir.
 
 -   [Descrição](#description)
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Baixando o exemplo](#downloading-the-sample)
 -   [Compilando o exemplo](#building-the-sample)
 -   [Executando o exemplo](#running-the-sample)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="description"></a>Description
+## <a name="description"></a>Descrição
 
 Este exemplo mostra como fornecer uma barra de ferramentas simples para uma visualização de miniaturas da barra de tarefas. A barra de ferramentas consiste em três botões. Clicar em um botão exibe uma janela para confirmar que o botão foi ativado. As seguintes APIs são demonstradas:
 
@@ -52,7 +52,7 @@ Este exemplo mostra como fornecer uma barra de ferramentas simples para uma visu
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-| Localização      | URL do caminho                                                                                             |
+| Location      | URL do caminho                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Exemplo de TaskbarThumbnailToolbar](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/TaskbarThumbnailToolbar) |
 
@@ -61,20 +61,20 @@ Este exemplo mostra como fornecer uma barra de ferramentas simples para uma visu
 Para criar o exemplo do prompt de comando:
 
 1.  Abra a janela do prompt de comando e navegue até o diretório do projeto **TaskbarThumbnailToolbar** .
-2.  Digite `msbuild ThumbnailToolbar.sln`.
+2.  Insira `msbuild ThumbnailToolbar.sln`.
 
-Para criar o exemplo usando Microsoft Visual Studio (preferencial):
+para criar o exemplo usando Microsoft Visual Studio (preferencial):
 
-1.  Abra o Windows Explorer e navegue até o diretório do projeto **TaskbarThumbnailToolbar** .
+1.  abra Windows Explorer e navegue até o diretório do projeto **TaskbarThumbnailToolbar** .
 2.  Clique duas vezes no ícone do arquivo ThumbnailToolbar. sln para abrir o projeto no Visual Studio.
-3.  No menu **Compilar** , selecione **Compilar solução**.
+3.  No menu **Compilar**, selecione **Compilar Solução**.
 
 ## <a name="running-the-sample"></a>Executando o exemplo
 
-1.  Navegue até o diretório que contém o novo arquivo executável (por exemplo, `C:\Program Files\Microsoft SDKs\Windows\v7.0\Samples\WinUI\Shell\AppShellIntegration\TaskbarThumbnailToolbar\Debug` ), usando o prompt de comando ou o Windows Explorer.
+1.  navegue até o diretório que contém o novo arquivo executável (por exemplo, `C:\Program Files\Microsoft SDKs\Windows\v7.0\Samples\WinUI\Shell\AppShellIntegration\TaskbarThumbnailToolbar\Debug` ), usando o prompt de comando ou o gerenciador de Windows.
 
     -   Se estiver usando a linha de comando, digite `ThumbnailToolbar.exe` .
-    -   Se estiver usando o Windows Explorer, clique duas vezes no ícone para ThumbnailToolbar.exe.
+    -   se estiver usando o Windows Explorer, clique duas vezes no ícone para ThumbnailToolbar.exe.
 
     Uma nova janela será aberta, com um botão da barra de tarefas associado.
 

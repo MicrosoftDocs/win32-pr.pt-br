@@ -1,9 +1,9 @@
 ---
 title: Transação de XTYP_REGISTER (ddeml. h)
-description: Uma função de retorno de chamada de troca dinâmica de dados (DDE), DdeCallback, recebe o \_ tipo de transação de registro XTYP sempre que um aplicativo de servidor de biblioteca de gerenciamento de troca dinâmica de dados (ddeml) usa a função DdeNameService para registrar um nome de serviço ou sempre que um aplicativo não ddeml que dá suporte ao tópico System é iniciado.
+description: uma função de retorno de chamada de troca dinâmica de dados (DDE), DdeCallback, recebe o \_ tipo de transação de registro XTYP sempre que um aplicativo de servidor de biblioteca de gerenciamento de troca dinâmica de dados (DDEML) usa a função DdeNameService para registrar um nome de serviço ou sempre que um aplicativo não DDEML que dá suporte ao tópico System é iniciado.
 ms.assetid: 465e9c10-1526-4e2a-8a46-5984043f5a93
 keywords:
-- Troca de dados de transação XTYP_REGISTER
+- XTYP_REGISTER de dados de transação Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd56bf4f5ac2b4eb0f714e5348174942f685c2ab
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 79c4ffdb48b7a69109659e65d816b4ab146a1f38bde976e7f8330746f564bc64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118544745"
 ---
 # <a name="xtyp_register-transaction"></a>XTYP \_ registrar transação
 
-Uma função de retorno de chamada de troca dinâmica de dados (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recebe o tipo de transação de **\_ registro XTYP** sempre que um aplicativo de servidor de biblioteca de gerenciamento de troca dinâmica de dados (ddeml) usa a função [**DdeNameService**](/windows/desktop/api/Ddeml/nf-ddeml-ddenameservice) para registrar um nome de serviço ou sempre que um aplicativo não ddeml que dá suporte ao tópico System é iniciado.
+uma função de retorno de chamada de troca dinâmica de dados (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recebe o tipo de transação de **\_ registro XTYP** sempre que um aplicativo de servidor de biblioteca de gerenciamento de troca dinâmica de dados (DDEML) usa a função [**DdeNameService**](/windows/desktop/api/Ddeml/nf-ddeml-ddenameservice) para registrar um nome de serviço ou sempre que um aplicativo não DDEML que dá suporte ao tópico System é iniciado.
 
 
 ```C++

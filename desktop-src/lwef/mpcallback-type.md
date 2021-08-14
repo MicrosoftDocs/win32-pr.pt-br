@@ -1,10 +1,10 @@
 ---
-title: Enumeração de MPCALLBACK_TYPE (MpClient. h)
-description: Tipos de retorno de chamada possíveis.
+title: MPCALLBACK_TYPE enumeração (MpClient.h)
+description: Possíveis tipos de retorno de chamada.
 ms.assetid: 8E4F50B7-0F02-434D-B91E-C9966C92CDC0
 keywords:
-- Recursos do ambiente Windows herdado de enumeração de MPCALLBACK_TYPE
-- PMPCALLBACK_TYPE recursos de ambiente herdados do ponteiro de enumeração do Windows
+- MPCALLBACK_TYPE de enumeração herdada Windows recursos de ambiente
+- PMPCALLBACK_TYPE de enumeração herdada Windows ambiente
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a3fd310f3733d36dd92ace1c7a5286bcf73a75f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 35c1d6e92acc7c789b5f6d85184ba74970e12bedcc5cd412fc378b8c8dfeb066
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117883550"
 ---
-# <a name="mpcallback_type-enumeration"></a>\_Enumeração de tipo MPCALLBACK
+# <a name="mpcallback_type-enumeration"></a>Enumeração MPCALLBACK \_ TYPE
 
-Tipos de retorno de chamada possíveis.
+Possíveis tipos de retorno de chamada.
 
 ## <a name="syntax"></a>Syntax
 
@@ -57,46 +57,46 @@ typedef enum tagMPCALLBACK_TYPE {
 
 <dl> <dt>
 
-<span id="MPCALLBACK_UNKNOWN"></span><span id="mpcallback_unknown"></span>**MPCALLBACK \_ desconhecido**
+<span id="MPCALLBACK_UNKNOWN"></span><span id="mpcallback_unknown"></span>**MPCALLBACK \_ UNKNOWN**
 </dt> <dd></dd> <dt>
 
-<span id="MPCALLBACK_STATUS"></span><span id="mpcallback_status"></span>**STATUS do MPCALLBACK \_**
+<span id="MPCALLBACK_STATUS"></span><span id="mpcallback_status"></span>**STATUS DE \_ MPCALLBACK**
 </dt> <dd></dd> <dt>
 
-<span id="MPCALLBACK_THREAT"></span><span id="mpcallback_threat"></span>**ameaça de MPCALLBACK \_**
+<span id="MPCALLBACK_THREAT"></span><span id="mpcallback_threat"></span>**AMEAÇA DE \_ MPCALLBACK**
 </dt> <dd></dd> <dt>
 
-<span id="MPCALLBACK_SCAN"></span><span id="mpcallback_scan"></span>**MPCALLBACK \_ verificação**
+<span id="MPCALLBACK_SCAN"></span><span id="mpcallback_scan"></span>**MPCALLBACK \_ SCAN**
 </dt> <dd></dd> <dt>
 
-<span id="MPCALLBACK_CLEAN"></span><span id="mpcallback_clean"></span>**MPCALLBACK \_ limpar**
+<span id="MPCALLBACK_CLEAN"></span><span id="mpcallback_clean"></span>**MPCALLBACK \_ CLEAN**
 </dt> <dd></dd> <dt>
 
-<span id="MPCALLBACK_PRECHECK"></span><span id="mpcallback_precheck"></span>**MPCALLBACK de \_ verificação**
+<span id="MPCALLBACK_PRECHECK"></span><span id="mpcallback_precheck"></span>**MPCALLBACK \_ PRECHECK**
 </dt> <dd></dd> <dt>
 
 <span id="MPCALLBACK_SIGUPDATE"></span><span id="mpcallback_sigupdate"></span>**MPCALLBACK \_ SIGUPDATE**
 </dt> <dd></dd> <dt>
 
-<span id="MPCALLBACK_SAMPLE"></span><span id="mpcallback_sample"></span>**exemplo de MPCALLBACK \_**
+<span id="MPCALLBACK_SAMPLE"></span><span id="mpcallback_sample"></span>**EXEMPLO DE \_ MPCALLBACK**
 </dt> <dd></dd> <dt>
 
-<span id="MPCALLBACK_RESERVED"></span><span id="mpcallback_reserved"></span>**MPCALLBACK \_ reservado**
+<span id="MPCALLBACK_RESERVED"></span><span id="mpcallback_reserved"></span>**MPCALLBACK \_ RESERVADO**
 </dt> <dd></dd> <dt>
 
-<span id="MPCALLBACK_CONFIGURATION_NOTIFICATION"></span><span id="mpcallback_configuration_notification"></span>**\_notificação de configuração do MPCALLBACK \_**
+<span id="MPCALLBACK_CONFIGURATION_NOTIFICATION"></span><span id="mpcallback_configuration_notification"></span>**NOTIFICAÇÃO DE \_ CONFIGURAÇÃO MPCALLBACK \_**
 </dt> <dd></dd> <dt>
 
 <span id="MPCALLBACK_FASTPATH"></span><span id="mpcallback_fastpath"></span>**MPCALLBACK \_ FASTPATH**
 </dt> <dd></dd> <dt>
 
-<span id="MPCALLBACK_PRODUCT_EXPIRATION"></span><span id="mpcallback_product_expiration"></span>**\_expiração do produto MPCALLBACK \_**
+<span id="MPCALLBACK_PRODUCT_EXPIRATION"></span><span id="mpcallback_product_expiration"></span>**EXPIRAÇÃO DO \_ PRODUTO MPCALLBACK \_**
 </dt> <dd></dd> <dt>
 
-<span id="MPCALLBACK_NIS_PRIVATE"></span><span id="mpcallback_nis_private"></span>**MPCALLBACK \_ NIS \_ particular**
+<span id="MPCALLBACK_NIS_PRIVATE"></span><span id="mpcallback_nis_private"></span>**MPCALLBACK \_ NIS \_ PRIVATE**
 </dt> <dd></dd> <dt>
 
-<span id="MPCALLBACK_HEALTH"></span><span id="mpcallback_health"></span>**integridade do MPCALLBACK \_**
+<span id="MPCALLBACK_HEALTH"></span><span id="mpcallback_health"></span>**MPCALLBACK \_ HEALTH**
 </dt> <dd></dd> <dt>
 
 <span id="MPCALLBACK_ENDOFLIFE"></span><span id="mpcallback_endoflife"></span>**MPCALLBACK \_ ENDOFLIFE**
@@ -105,7 +105,7 @@ typedef enum tagMPCALLBACK_TYPE {
 <span id="MPCALLBACK_MALWARETOAST"></span><span id="mpcallback_malwaretoast"></span>**MPCALLBACK \_ MALWARETOAST**
 </dt> <dd></dd> <dt>
 
-<span id="MPCALLBACK_MAXVALUE"></span><span id="mpcallback_maxvalue"></span>**MPCALLBACK \_ MaxValue**
+<span id="MPCALLBACK_MAXVALUE"></span><span id="mpcallback_maxvalue"></span>**MPCALLBACK \_ MAXVALUE**
 </dt> <dd></dd> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -114,9 +114,9 @@ typedef enum tagMPCALLBACK_TYPE {
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

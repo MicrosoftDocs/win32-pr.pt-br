@@ -5,28 +5,28 @@ ms.assetid: 35a3b261-d499-4154-a022-1e33a9ef7ba8
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d687bbbfadb4d1ccb789e9d5f1051ebfbb4484d7
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 5d0d22098b0a6b823aa5b7db50c20b5a5e2c80c7e540ffdb95e4e2f73c2550fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104453917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118187384"
 ---
 # <a name="installing-a-service-on-a-host-computer"></a>Instalando um serviço em um computador host
 
 O exemplo de código a seguir mostra as etapas básicas de instalação de um serviço habilitado para diretório em um computador host. Ele executa as seguintes operações:
 
-1.  Chama a função [**OpenSCManager**](/windows/desktop/api/winsvc/nf-winsvc-openscmanagera) para abrir um identificador para o SCM (Gerenciador de controle de serviço) no computador local.
-2.  Chama a função [**CreateService**](/windows/desktop/api/winsvc/nf-winsvc-createservicea) para instalar o serviço no banco de dados SCM. Essa chamada especifica a conta e a senha de logon do serviço, bem como o executável do serviço e outras informações sobre o serviço. O **CreateService** falhará se a conta de logon especificada for inválida. No entanto, o **CreateService** não verifica a validade da senha. Ele também não verifica se a conta tem o direito de logon como um serviço no computador local. Para obter mais informações, consulte [concedendo logon como serviço diretamente no computador host](granting-logon-as-service-right-on-the-host-computer.md).
-3.  Chama a sub-rotina **ScpCreate** do serviço que cria um SCP (objeto de ponto de conexão de serviço) no diretório para publicar o local dessa instância do serviço. Para obter mais informações, consulte [como os clientes encontram e usam um ponto de conexão de serviço](how-clients-find-and-use-a-service-connection-point.md). Essa rotina também armazena as informações de associação do serviço no SCP, define uma ACE no SCP para que o serviço possa acessá-lo em tempo de execução, armazena em cache o nome distinto do SCP no registro local e retorna o nome distinto do novo SCP.
-4.  Chama a sub-rotina **SpnCompose** do serviço que usa a cadeia de caracteres de classe do serviço e o nome distinto do scp para compor um SPN (nome da entidade de serviço). Para obter mais informações, consulte [redigindo os SPNs para um serviço com um SCP](composing-the-spns-for-a-service-with-an-scp.md). O SPN identifica exclusivamente essa instância do serviço.
-5.  Chama a sub-rotina **SpnRegister** do serviço que registra o SPN no objeto de conta associado à conta de logon do serviço. Para obter mais informações, consulte [registrando os SPNs para um serviço](registering-the-spns-for-a-service.md). O registro do SPN permite que os aplicativos cliente autentiquem o serviço.
+1.  Chama a [**função OpenSCManager**](/windows/desktop/api/winsvc/nf-winsvc-openscmanagera) para abrir um handle para o SCM (gerenciador de controle de serviço) no computador local.
+2.  Chama a [**função CreateService**](/windows/desktop/api/winsvc/nf-winsvc-createservicea) para instalar o serviço no banco de dados SCM. Essa chamada especifica a conta de logon e a senha do serviço, bem como o executável do serviço e outras informações sobre o serviço. **CreateService** falhará se a conta de logon especificada for inválida. No entanto, **CreateService** não verifica a validade da senha. Ele também não verifica se a conta tem o logon como um serviço no computador local. Para obter mais informações, [consulte Concedendo logon como direito de serviço no computador host.](granting-logon-as-service-right-on-the-host-computer.md)
+3.  Chama a sub-rotina **ScpCreate** do serviço que cria um objeto de ponto de conexão de serviço (SCP) no diretório para publicar o local dessa instância do serviço. Para obter mais informações, consulte [Como os clientes encontram e usam um ponto de conexão de serviço](how-clients-find-and-use-a-service-connection-point.md). Essa rotina também armazena as informações de associação do serviço no SCP, define uma ACE no SCP para que o serviço possa acessá-la em tempo de operação, armazena em cache o nome diferenciado do SCP no registro local e retorna o nome diferenciado do novo SCP.
+4.  Chama a sub-rotina **SpnCompose** do serviço que usa a cadeia de caracteres de classe do serviço e o nome diferenciado do SCP para compor um SPN (nome da entidade de serviço). Para obter mais informações, [consulte Compondo os SPNs para um serviço com um SCP](composing-the-spns-for-a-service-with-an-scp.md). O SPN identifica exclusivamente essa instância do serviço.
+5.  Chama a sub-rotina **SpnRegister** do serviço que registra o SPN no objeto de conta associado à conta de logon do serviço. Para obter mais informações, [consulte Registrando os SPNs para um serviço](registering-the-spns-for-a-service.md). O registro do SPN permite que os aplicativos cliente autententem o serviço.
 
-Este exemplo de código funciona corretamente independentemente de a conta de logon ser uma conta de usuário local ou de domínio ou a conta LocalSystem. Para uma conta de usuário de domínio, o parâmetro *szServiceAccountSAM* contém o nome de usuário de *domínio ***\\**** da conta e o parâmetro *szServiceAccountDN* contém o nome distinto do objeto de conta de usuário no diretório. Para a conta LocalSystem, *szServiceAccountSAM* e *szPassword* são **nulas** e *szServiceAccountSN* é o nome distinto do objeto de conta do computador local no diretório. Se *szServiceAccountSAM* especificar uma conta de usuário local (o formato de nome é ". \\ *Username*"), o exemplo de código ignora o registro de SPN porque a autenticação mútua não tem suporte para contas de usuário local.
+Este exemplo de código funciona corretamente, independentemente de a conta de logon ser uma conta de usuário local ou de domínio ou a conta LocalSystem. Para uma conta de usuário de domínio, o parâmetro *szServiceAccountSAM* contém o nome UserName domain* da conta e o parâmetro ***\\**  *szServiceAccountDN* contém o nome diferenciado do objeto de conta de usuário no diretório. Para a conta LocalSystem, *szServiceAccountSAM* e *szPassword* são **NULL** e *szServiceAccountSN* é o nome diferenciado do objeto de conta do computador local no diretório. Se *szServiceAccountSAM especificar* uma conta de usuário \\ local (o formato de nome é ".* UserName*"), o exemplo de código ignora o registro de SPN porque não há suporte para autenticação mútua para contas de usuário locais.
 
-Lembre-se de que a configuração de segurança padrão permite apenas que os administradores de domínio executem esse código.
+Esteja ciente de que a configuração de segurança padrão permite que somente os administradores de domínio executem esse código.
 
-Além disso, lembre-se de que esse exemplo de código, conforme escrito, deve ser executado no computador em que o serviço está sendo instalado. Consequentemente, ele geralmente está em um executável de instalação separado do seu código de instalação do serviço, se houver, que estende o esquema, estende a interface do usuário ou configura a diretiva de grupo. Essas operações instalam componentes de serviço para uma floresta inteira, enquanto esse código instala o serviço em um único computador.
+Além disso, esteja ciente de que esse exemplo de código, conforme escrito, deve ser executado no computador em que o serviço está sendo instalado. Consequentemente, ele normalmente está em um executável de instalação separado do código de instalação do serviço, se for o caso, que estende o esquema, estende a interface do usuário ou configura a política de grupo. Essas operações instalam componentes de serviço para uma floresta inteira, enquanto esse código instala o serviço em um único computador.
 
 
 ```C++
@@ -148,8 +148,8 @@ return;
 
 
 
-Para obter mais informações sobre o exemplo de código anterior, consulte [redigindo os SPNs para um serviço com um SCP](composing-the-spns-for-a-service-with-an-scp.md) e [registrando os SPNs para um serviço](registering-the-spns-for-a-service.md).
+Para obter mais informações sobre o exemplo de código anterior, consulte [Compondo](composing-the-spns-for-a-service-with-an-scp.md) os SPNs para um serviço com um SCP e Registrando os [SPNs para um serviço](registering-the-spns-for-a-service.md).
 
- 
+ 
 
- 
+ 

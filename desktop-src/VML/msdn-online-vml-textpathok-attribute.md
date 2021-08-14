@@ -1,26 +1,26 @@
 ---
-title: Atributo TextPathOK de VML
-description: Atributo TextPathOK de VML
+title: Atributo TextPathOK do VML
+description: Atributo TextPathOK do VML
 ms.assetid: 5d061258-1c4d-4391-81ce-13af90a4231c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06046a4f29c147ef109f0e4670d9965bab77a9fa
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: dd2c14d613df36c314dea75275a4d60fe8792d6dea644ef2595422e74a73dc98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103823791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118597450"
 ---
-# <a name="vml-textpathok-attribute"></a>Atributo TextPathOK de VML
+# <a name="vml-textpathok-attribute"></a>Atributo TextPathOK do VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina se um caminho de texto será exibido. Leitura/gravação. **VgTriState**.
+Determina se um caminho de texto será exibido. Leitura/gravação. **VgTriState.**
 
 **Aplica-se a**
 
@@ -28,23 +28,23 @@ Determina se um caminho de texto será exibido. Leitura/gravação. **VgTriState
 
 **Sintaxe de marca**
 
-<v: *Element* textpathok = " *expressão* " >
+<v: *elemento* textpathok=" *expressão* ">
 
 **Sintaxe do script**
 
-*elemento* . textpathok = "*expressão*"
+*elemento* . textpathok= "*expression*"
 
-*expressão* = de *elemento*. textpathok
+*expressão* = *elemento*. textpathok
 
 **Comentários**
 
-Se **for false**, o caminho não poderá ter um caminho de texto. O padrão é **False**. Você deve ter esse atributo definido como **true** para exibir o texto em um caminho.
+Se **False**, o caminho não poderá ter um caminho de texto. O padrão é **False**. Você deve ter esse atributo definido como **True** para exibir texto em um caminho.
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
-A forma tem um caminho de texto. O texto "Olá, VML" é exibido ao longo de uma curva em forma de Smiley.
+A forma tem um caminho de texto. O texto "Hello VML" é exibido ao longo de uma curva em forma de sorriso.
 
 
 ```HTML
@@ -63,6 +63,6 @@ A forma tem um caminho de texto. O texto "Olá, VML" é exibido ao longo de uma 
 
 
 
- 
+ 
 
- 
+ 

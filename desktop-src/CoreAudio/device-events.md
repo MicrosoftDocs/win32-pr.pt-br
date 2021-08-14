@@ -4,18 +4,18 @@ ms.assetid: b31500d6-a79d-4e6e-878e-6bd77055f1ad
 title: Eventos de dispositivo (APIs de áudio de núcleo)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0513fc49ee5f3cb2bfe95ca2330cb79b74720923
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b61538bd7d8d297b52a321f446bb11c3e1365e549a3c2947b55538730c1660c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105748850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118407024"
 ---
 # <a name="device-events-core-audio-apis"></a>Eventos de dispositivo (APIs de áudio de núcleo)
 
 Um evento de dispositivo notifica os clientes sobre uma alteração no status de um [dispositivo de ponto de extremidade de áudio](audio-endpoint-devices.md) no sistema. Veja a seguir exemplos de eventos de dispositivo:
 
--   O usuário habilita ou desabilita um dispositivo de ponto de extremidade de áudio de Gerenciador de Dispositivos ou do painel de controle multimídia do Windows Mmsys.cpl.
+-   o usuário habilita ou desabilita um dispositivo de ponto de extremidade de áudio de Gerenciador de Dispositivos ou do painel de controle Windows multimídia Mmsys.cpl.
 -   O usuário adiciona um adaptador de áudio ao sistema ou remove um adaptador de áudio do sistema.
 -   O usuário conecta um dispositivo de ponto de extremidade de áudio em uma tomada de áudio com detecção de presença de Jack ou remove um dispositivo de ponto de extremidade de áudio desse conector.
 -   O usuário altera a [função de dispositivo](device-roles.md) atribuída a um dispositivo.
@@ -33,7 +33,7 @@ A interface **IMMNotificationClient** é implementada por um cliente. A interfac
 
 Um cliente registrado para receber notificações de eventos de dispositivo receberá notificações de todos os tipos de eventos de dispositivo que ocorrem em todos os dispositivos de ponto de extremidade de áudio no sistema. Se um cliente estiver interessado apenas em determinados tipos de evento ou em determinados dispositivos, os métodos em sua implementação **IMMNotificationClient** deverão filtrar os eventos adequadamente.
 
-O SDK do Windows fornece exemplos que incluem várias implementações para a [**interface IMMNotificationClient**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immnotificationclient). Para obter mais informações, consulte [exemplos de SDK que usam as APIs de áudio de núcleo](sdk-samples-that-use-the-core-audio-apis.md).
+o SDK do Windows fornece exemplos que incluem várias implementações para a [**Interface IMMNotificationClient**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immnotificationclient). Para obter mais informações, consulte [exemplos de SDK que usam as APIs de áudio de núcleo](sdk-samples-that-use-the-core-audio-apis.md).
 
 O exemplo de código a seguir mostra uma implementação possível da interface **IMMNotificationClient** :
 
@@ -268,7 +268,7 @@ A classe CMMNotificationClient no exemplo de código anterior é uma implementa�
 
 Cada um desses métodos usa um parâmetro de entrada, *pwstrDeviceId*, que é um ponteiro para uma cadeia de caracteres de ID de ponto de extremidade. A cadeia de caracteres identifica o dispositivo de ponto de extremidade de áudio no qual o evento do dispositivo ocorreu.
 
-No exemplo de código anterior, \_ printName é um método particular na classe CMMNotificationClient que imprime o nome amigável do dispositivo. \_O filedevicename usa a cadeia de caracteres de ID do ponto de extremidade como um parâmetro de entrada. Ele passa a cadeia de caracteres para o método [**IMMDeviceEnumerator:: GetDevice**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdeviceenumerator-getdevice) . **GetDevice** cria um objeto de dispositivo de ponto de extremidade para representar o dispositivo e fornece a interface [**IMMDevice**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdevice) para esse objeto. Em seguida, o \_ Revicename chama o método [**IMMDevice:: OpenPropertyStore**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-openpropertystore) para recuperar a interface **IPropertyStore** para o armazenamento de propriedades do dispositivo. Por fim, o renome do \_ dispositivo chama o método **IPropertyStore:: GetItem** para obter a propriedade friendly-Name do dispositivo. Para obter mais informações sobre o **IPropertyStore**, consulte a documentação do SDK do Windows.
+No exemplo de código anterior, \_ printName é um método particular na classe CMMNotificationClient que imprime o nome amigável do dispositivo. \_O filedevicename usa a cadeia de caracteres de ID do ponto de extremidade como um parâmetro de entrada. Ele passa a cadeia de caracteres para o método [**IMMDeviceEnumerator:: GetDevice**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdeviceenumerator-getdevice) . **GetDevice** cria um objeto de dispositivo de ponto de extremidade para representar o dispositivo e fornece a interface [**IMMDevice**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdevice) para esse objeto. Em seguida, o \_ Revicename chama o método [**IMMDevice:: OpenPropertyStore**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-openpropertystore) para recuperar a interface **IPropertyStore** para o armazenamento de propriedades do dispositivo. Por fim, o renome do \_ dispositivo chama o método **IPropertyStore:: GetItem** para obter a propriedade friendly-Name do dispositivo. para obter mais informações sobre o **IPropertyStore**, consulte a documentação do SDK do Windows.
 
 Além dos eventos de dispositivo, os clientes podem se registrar para receber notificações de eventos de sessão de áudio e eventos de volume de ponto de extremidade. Para obter mais informações, consulte [**interface IAudioSessionEvents**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessionevents) e [**interface IAudioEndpointVolumeCallback**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudioendpointvolumecallback).
 

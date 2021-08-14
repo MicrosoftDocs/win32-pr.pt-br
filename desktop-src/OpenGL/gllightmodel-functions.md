@@ -13,12 +13,12 @@ keywords:
 - funções leves
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf323398a8963b2fa5f704d13ec81d6c0dbf4e16
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 956c28be88b095cb8b4f3e23cf2b1dcbdc7378e51f90530806e7f8090ad3a8c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118615492"
 ---
 # <a name="gllightmodel-functions"></a>Funções glLightModel
 
@@ -29,9 +29,9 @@ Essas funções definem os parâmetros do modelo de iluminação:
 -   [**glLightModeli**](gllightmodeli.md)
 -   [**glLightModeliv**](gllightmodeliv.md)
 
- 
+ 
 
- 
+ 
 
 
 

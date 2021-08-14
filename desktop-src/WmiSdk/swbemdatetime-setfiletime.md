@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: ca3e36a284e3700e166e86f6786218bada8f369e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 138685ba4d6b63591bf460da3cdba219685f015d54789ca60a52660845b2e41a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117739453"
 ---
 # <a name="swbemdatetimesetfiletime-method"></a>Método SWbemDateTime. SetFileTime
 
 O método **SetFileTime** do objeto [**SWbemDateTime**](swbemdatetime.md) converte uma data no formato **FILETIME** da cadeia de caracteres para o formato de [data e hora CIM](date-and-time-format.md) .
 
-O formato **FILETIME** é uma estrutura datetime de 64 bits que representa o número de unidades de 100 nanossegundos desde o início de 1º de janeiro de 1601. Instrumentação de Gerenciamento do Windows (WMI) trata os valores de **FILETIME** como representações de cadeia de caracteres de números de 64 bits sem sinal.
+O formato **FILETIME** é uma estrutura datetime de 64 bits que representa o número de unidades de 100 nanossegundos desde o início de 1º de janeiro de 1601. Windows A instrumentação de gerenciamento (WMI) trata os valores de **FILETIME** como representações de cadeia de caracteres de números de 64 bits sem sinal.
 
 Para obter a explicação da sintaxe, consulte [convenções de documento para a API de script](document-conventions-for-the-scripting-api.md).
 
@@ -61,7 +61,7 @@ Se for **true**, *strFileTime* será interpretado como uma hora local. A proprie
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -94,7 +94,7 @@ Para obter exemplos de como usar o objeto [**SWbemDateTime**](swbemdatetime.md) 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | \_SWBEMDATETIME CLSID<br/>                                                         |

@@ -1,28 +1,28 @@
 ---
-description: Uma WS-Discovery mensagem usada para anunciar a presença de um dispositivo ou serviço na rede.
+description: Uma WS-Discovery usada para anunciar a presença de um dispositivo ou serviço na rede.
 ms.assetid: a7402e02-9bdc-49ec-ba93-8a32f55b9dd8
-title: Mensagem de saudação
+title: Mensagem olá
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6504f25d360de055d7c0715266472e212540a14
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 526b51576b36f143a932a757c70d0df19ddf9cc5efad3e51c4f7802003e6565e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105787763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118552437"
 ---
-# <a name="hello-message"></a>Mensagem de saudação
+# <a name="hello-message"></a>Mensagem olá
 
-Uma mensagem de saudação é uma WS-Discovery mensagem usada para anunciar a presença de um dispositivo ou serviço na rede. As mensagens de saudação também são enviadas em outros cenários. Para obter mais informações sobre mensagens de saudação, consulte a seção 4,1 da [especificação do WS-Discovery](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
+Uma mensagem Hello é uma WS-Discovery usada para anunciar a presença de um dispositivo ou serviço na rede. As mensagens Hello também são enviadas em outros cenários. Para obter mais informações sobre mensagens Hello, consulte a seção 4.1 da [Especificação WS-Discovery](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
 
-Uma mensagem de saudação é enviada por multicast UDP para a porta 3702. Esta mensagem não é solicitada.
+Uma mensagem Hello é enviada pelo multicast UDP para a porta 3702. Essa mensagem não é solicitada.
 
 > [!Note]  
-> Este tópico mostra uma mensagem DPWS de exemplo gerada por clientes e hosts WSDAPI. O WSDAPI analisará e aceitará outras mensagens em conformidade com o DPWS que não estão em conformidade com este exemplo. Não use este exemplo para verificar a interoperabilidade do DPWS; em vez disso, use a [ferramenta de interoperabilidade básica do WSDAPI (WSDBIT)](https://msdn.microsoft.com/library/cc264250.aspx) .
+> Este tópico mostra uma mensagem DPWS de exemplo gerada por clientes e hosts WSDAPI. O WSDAPI analisará e aceitará outras mensagens compatíveis com DPWS que não estão em conformidade com este exemplo. Não use este exemplo para verificar a interoperabilidade do DPWS; use a [WSDBIT (Ferramenta de Interoperabilidade Básica) do WSDAPI.](https://msdn.microsoft.com/library/cc264250.aspx)
 
  
 
-A mensagem SOAP a seguir mostra uma mensagem de saudação de exemplo.
+A mensagem SOAP a seguir mostra uma mensagem Olá de exemplo.
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8" ?>
@@ -59,7 +59,7 @@ A mensagem SOAP a seguir mostra uma mensagem de saudação de exemplo.
 </soap:Body>
 ```
 
-Uma mensagem de saudação tem os seguintes pontos de foco.
+Uma mensagem Hello tem os seguintes pontos de foco.
 
 
 
@@ -82,27 +82,27 @@ Uma mensagem de saudação tem os seguintes pontos de foco.
 <td><pre class="syntax" data-space="preserve"><code><wsa:Action>
     https://schemas.xmlsoap.org/ws/2005/04/discovery/Hello
 </wsa:Action></code></pre></td>
-<td>A ação de saudação SOAP identifica a mensagem como uma mensagem de saudação.</td>
+<td>A ação Hello SOAP identifica a mensagem como uma mensagem Hello.</td>
 </tr>
 <tr class="even">
-<td>AppSequence</td>
+<td>Appsequence</td>
 <td><pre class="syntax" data-space="preserve"><code><wsd:AppSequence InstanceId=&quot;2&quot;
     SequenceId=&quot;urn:uuid:369a7d7b-5f87-48a4-aa9a-189edf2a8772&quot;
     MessageNumber=&quot;14&quot;>
 </wsd:AppSequence></code></pre></td>
-<td>Contém informações de sequenciamento de aplicativo, o que ajuda a manter a sequência de mensagens, mesmo que elas sejam recebidas fora de ordem. O AppSequence é validado conforme descrito em <a href="appsequence-validation-rules.md">regras de validação do AppSequence</a>.</td>
+<td>Contém informações de sequenciamento de aplicativos, o que ajuda a manter a sequência de mensagens, mesmo que elas sejam recebidas fora de ordem. O AppSequence é validado conforme descrito em Regras de validação do <a href="appsequence-validation-rules.md">AppSequence.</a></td>
 </tr>
 <tr class="odd">
 <td>Endereço</td>
 <td><pre class="syntax" data-space="preserve"><code><wsa:Address>
     urn:uuid:37f86d35-e6ac-4241-964f-1d9ae46fb366
 </wsa:Address></code></pre></td>
-<td>Contém o endereço do ponto de extremidade. Esse endereçado pode ser referenciado em uma mensagem de <a href="resolve-message.md">resolução</a> .</td>
+<td>Contém o endereço do ponto de extremidade. Esse endereçado pode ser referenciado em uma <a href="resolve-message.md">mensagem Resolver.</a></td>
 </tr>
 <tr class="even">
 <td>Tipos</td>
 <td><pre class="syntax" data-space="preserve"><code><wsd:Types>wsdp:Device</wsd:Types></code></pre></td>
-<td>Contém os tipos de WS-Discovery anunciados pelo host.</td>
+<td>Contém os WS-Discovery tipos anunciados pelo host.</td>
 </tr>
 </tbody>
 </table>
@@ -115,10 +115,10 @@ Uma mensagem de saudação tem os seguintes pontos de foco.
 
 <dl> <dt>
 
-[Descoberta e mensagens de troca de metadados](discovery-and-metadata-exchange-message-patterns.md)
+[Mensagens de descoberta e Exchange metadados](discovery-and-metadata-exchange-message-patterns.md)
 </dt> <dt>
 
-[Adeus mensagem](bye-message.md)
+[Mensagem de adeus](bye-message.md)
 </dt> </dl>
 
  

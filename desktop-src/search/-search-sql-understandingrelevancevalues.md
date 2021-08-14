@@ -1,23 +1,23 @@
 ---
-description: Em um banco de dados relacional, as linhas retornadas por uma consulta de pesquisa devem atender a todas as condições chamadas para pela consulta. Por outro lado, uma consulta do Windows Search pode retornar documentos que atendam aos critérios de pesquisa a graus variados.
+description: Em um banco de dados relacional, as linhas retornadas por uma consulta de pesquisa devem atender a todas as condições chamadas para pela consulta. por outro lado, uma consulta de pesquisa Windows pode retornar documentos que atendam aos critérios de pesquisa a graus variados.
 ms.assetid: 9f37b494-9b7a-45a6-9ee4-6d582742cbd7
 title: Noções básicas sobre valores de relevância
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a24c71ad523ad869c6ff05b81ff75367031ad38
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d2d28efba26d12e0260d76e02fc4e042e72612df34d383a0e22a34f4be9d9fdb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118226801"
 ---
 # <a name="understanding-relevance-values"></a>Noções básicas sobre valores de relevância
 
-Em um banco de dados relacional, as linhas retornadas por uma consulta de pesquisa devem atender a todas as condições chamadas para pela consulta. Por outro lado, uma consulta do Windows Search pode retornar documentos que atendam aos critérios de pesquisa a graus variados.
+Em um banco de dados relacional, as linhas retornadas por uma consulta de pesquisa devem atender a todas as condições chamadas para pela consulta. por outro lado, uma consulta de pesquisa Windows pode retornar documentos que atendam aos critérios de pesquisa a graus variados.
 
-Por exemplo, uma pesquisa pelo termo "programa" em um banco de dados relacional produz registros que contêm essa grafia específica da palavra. Se um registro contém uma ou 100 instâncias da palavra não tem impacto sobre os resultados. Por outro lado, o Windows Search retorna um valor de relevância associado aos documentos correspondentes. A relevância dos documentos com "programa" no título é maior que aqueles que contêm a palavra somente no último parágrafo. Da mesma forma, os documentos que contêm variações do termo de pesquisa, por exemplo, "programas" e "programação" também correspondem e são retornados pela consulta.
+Por exemplo, uma pesquisa pelo termo "programa" em um banco de dados relacional produz registros que contêm essa grafia específica da palavra. Se um registro contém uma ou 100 instâncias da palavra não tem impacto sobre os resultados. por outro lado, Windows pesquisa retorna um valor de relevância associado aos documentos correspondentes. A relevância dos documentos com "programa" no título é maior que aqueles que contêm a palavra somente no último parágrafo. Da mesma forma, os documentos que contêm variações do termo de pesquisa, por exemplo, "programas" e "programação" também correspondem e são retornados pela consulta.
 
-As consultas do Windows Search retornam valores de relevância de inteiros na coluna chamada "Rank".
+Windows As consultas de pesquisa retornam valores de relevância de inteiros na coluna chamada "Rank".
 
 Além disso:
 

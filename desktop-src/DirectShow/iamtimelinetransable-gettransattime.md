@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 77ca7b1c9a5517d849b38ba1ba22216583d7af87
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: db81cf9a91f34699765e89f917ec31a902ebd188dc61dd77a1b909d10b09788c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118399203"
 ---
 # <a name="iamtimelinetransablegettransattime-method"></a>Método IAMTimelineTransable:: GetTransAtTime
 
@@ -68,13 +68,13 @@ Membro do tipo enumerado de [**\_ sinalizadores de \_ pesquisa \_ do DEXTERF Tra
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos seguintes valores de **HRESULT** :
 
 
 
-| Código de retorno                                                                                  | Descrição                           |
+| Código de retorno                                                                                  | Description                           |
 |----------------------------------------------------------------------------------------------|---------------------------------------|
 | <dl> <dt>**\_falso**</dt> </dl>      | Nenhuma transição foi encontrada.<br/>   |
 | <dl> <dt>**S \_ OK**</dt> </dl>         | A transição foi encontrada.<br/>      |
@@ -95,7 +95,7 @@ Se o método retornar S \_ OK, a interface **IAMTimelineObj** que ele retornar t
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 

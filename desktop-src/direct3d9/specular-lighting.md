@@ -4,12 +4,12 @@ ms.assetid: 35da0ac3-4e68-4d37-a987-405fc15d0cbf
 title: Iluminação especular (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b16d71bd8d814e104cf8a90d1d1fe9b15ba10f3
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 84597b63ebd064fbe27ae90b673e9c91166be96f6f45b039ba29a16de9011054
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118520141"
 ---
 # <a name="specular-lighting-direct3d-9"></a>Iluminação especular (Direct3D 9)
 
@@ -31,13 +31,13 @@ A tabela a seguir identifica as variáveis, seus tipos e seus intervalos.
 
 
 
-| Parâmetro    | Valor padrão | Tipo          | Descrição                                                                                                         |
+| Parâmetro    | Valor padrão | Digite          | Descrição                                                                                                         |
 |--------------|---------------|---------------|---------------------------------------------------------------------------------------------------------------------|
 | Cₛ           | (0,0,0,0)     | D3DCOLORVALUE | Cor especular.                                                                                                     |
 | Sum          | N/D           | N/D           | Referência do componente especular cada da luz.                                                                       |
 | N            | N/D           | D3DVECTOR     | Normal de vértice.                                                                                                      |
 | H            | N/D           | D3DVECTOR     | Vetor de metade. Consulte a seção sobre o vetor de metade.                                                             |
-| <sup>P</sup> | 0.0           | FLOAT         | Potência de reflexão especular. Intervalo é 0 até + infinito                                                                  |
+| <sup>P</sup> | 0,0           | FLOAT         | Potência de reflexão especular. Intervalo é 0 até + infinito                                                                  |
 | Lₛ           | (0,0,0,0)     | D3DCOLORVALUE | Cor especular clara.                                                                                               |
 | Atten        | N/D           | FLOAT         | Valor de atenuação clara. Consulte [fator de destaque e atenuação (Direct3D 9)](attenuation-and-spotlight-factor.md). |
 | À Vista         | N/D           | FLOAT         | Fator de destaque. Consulte [fator de destaque e atenuação (Direct3D 9)](attenuation-and-spotlight-factor.md).        |
@@ -79,7 +79,7 @@ O vetor de metade (H) existe situado entre dois vetores: o vetor de um vértice 
 
 
 
-| Parâmetro       | Valor padrão | Tipo      | Descrição                                                  |
+| Parâmetro       | Valor padrão | Digite      | Descrição                                                  |
 |-----------------|---------------|-----------|--------------------------------------------------------------|
 | Cₚ              | N/D           | D3DVECTOR | Posição da câmera.                                             |
 | Vₚ              | N/D           | D3DVECTOR | Posição do vértice.                                             |

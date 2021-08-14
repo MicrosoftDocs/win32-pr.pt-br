@@ -1,9 +1,9 @@
 ---
-title: JOGADORelement
-description: Este é um BUTTONelement predefinido com os valores padrão a seguir. | JOGADORelement
+title: PLAYERELEMENT
+description: Este é um BUTTONELEMENT predefinido com os seguintes valores padrão. | PLAYERELEMENT
 ms.assetid: 7df93011-5d7a-4e2d-8c52-86274b0bf504
 keywords:
-- Player do Windows Media Player
+- PLAYERELEMENT Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1c9feb77219aea62e8905ef57148e1c6abac48bf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5e61f6a3563f211094e225345c86b999c6e0e93fc33d88adef0a1e942b2e3ff6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118571746"
 ---
-# <a name="playerelement"></a>JOGADORelement
+# <a name="playerelement"></a>PLAYERELEMENT
 
-Este é um **buttonelement** predefinido com os valores padrão a seguir.
+Este é um **BUTTONELEMENT predefinido** com os seguintes valores padrão.
 
 ``` syntax
 onclick="jscript:player.controls.play()"
@@ -33,7 +33,7 @@ enabled="wmpenabled:player.controls.play"
 
 ## <a name="remarks"></a>Comentários
 
-Todas as propriedades desse **botão** podem ser substituídas especificando-as explicitamente.
+Todas as propriedades desse **BUTTONELEMENT** podem ser substituídos especificando-as explicitamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ Todas as propriedades desse **botão** podem ser substituídas especificando-as 
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -49,7 +49,7 @@ Todas as propriedades desse **botão** podem ser substituídas especificando-as 
 
 <dl> <dt>
 
-[**Elemento BUTTONelement**](buttonelement-element.md)
+[**Elemento BUTTONELEMENT**](buttonelement-element.md)
 </dt> </dl>
 
  

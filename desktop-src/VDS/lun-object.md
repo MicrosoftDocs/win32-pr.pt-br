@@ -4,16 +4,16 @@ ms.assetid: ea22bd6d-4a7a-4674-82e9-08460914ff8e
 title: Objeto LUN
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad74fa65802adb1439360fb2fcdb423c642ef736
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d315e33b8d253e346b42b01f86a85379aadace73e517a169cc653214a9c674d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105779582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118347487"
 ---
 # <a name="lun-object"></a>Objeto LUN
 
-\[A partir do Windows 8 e do Windows Server 2012, a interface com do [serviço de disco virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de armazenamento do Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[a partir do Windows 8 e Windows Server 2012, a interface COM do [serviço de disco Virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de Armazenamento Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
 
 Um objeto de LUN (número de unidade lógica) modela uma unidade lógica de espaço de armazenamento endereçável que é criada por um provedor de hardware e na superfície de um subsistema. Cada LUN compreende pelo menos um plex de LUN, que é, por sua vez, composto de extensões de uma ou mais unidades.
 
@@ -60,7 +60,7 @@ A tabela a seguir lista as interfaces, as enumerações e as estruturas relacion
 | Interfaces que são sempre expostas por este objeto                                                 | [**IVdsLun**](/windows/desktop/api/Vds/nn-vds-ivdslun)                                                                                                                                                                                                                                                                                          |
 | Interfaces que são sempre expostas por este objeto no VDS 1,1 e 2,0 Fibre Channel somente provedores | [**IVdsLunControllerPorts**](/windows/desktop/api/Vds/nn-vds-ivdsluncontrollerports)                                                                                                                                                                                                                                                            |
 | Interfaces que são sempre expostas por este objeto somente nos provedores de iSCSI VDS 1,1 e 2,0         | [**IVdsLunIscsi**](/windows/desktop/api/Vds/nn-vds-ivdsluniscsi)                                                                                                                                                                                                                                                                                |
-| Interfaces que podem ser expostas por este objeto\*                                                   | [**IVdsMaintenance**](/windows/desktop/api/Vds/nn-vds-ivdsmaintenance), [**IVdsLunMpio**](/windows/desktop/api/Vds/nn-vds-ivdslunmpio), [**IVdsLunNaming**](/windows/desktop/api/Vds/nn-vds-ivdslunnaming)e [**IVdsLunNumber**](/windows/desktop/api/Vds/nn-vds-ivdslunnumber)**windows Server 2008, Windows Vista e Windows Server 2003:** não há suporte para a interface [**IVdsLunNumber**](/windows/desktop/api/Vds/nn-vds-ivdslunnumber) .<br/> |
+| Interfaces que podem ser expostas por este objeto\*                                                   | [**IVdsMaintenance**](/windows/desktop/api/Vds/nn-vds-ivdsmaintenance), [**IVdsLunMpio**](/windows/desktop/api/Vds/nn-vds-ivdslunmpio), [**IVdsLunNaming**](/windows/desktop/api/Vds/nn-vds-ivdslunnaming)e [**IVdsLunNumber**](/windows/desktop/api/Vds/nn-vds-ivdslunnumber)**Windows server 2008, Windows Vista e Windows Server 2003:** não há suporte para a interface [**IVdsLunNumber**](/windows/desktop/api/Vds/nn-vds-ivdslunnumber) .<br/> |
 | Enumerações associadas                                                                           | [**VDS \_ \_Sinalizador de LUN**](/windows/desktop/api/Vds/ne-vds-vds_lun_flag) e [**\_ \_ status de LUN VDS**](/windows/desktop/api/Vds/ne-vds-vds_lun_status)e [**\_ \_ tipo de LUN VDS**](/windows/desktop/api/Vds/ne-vds-vds_lun_type)                                                                                                                                                                                   |
 | Estruturas associadas                                                                             | [**VDS \_ \_Informações de LUN**](/windows/desktop/api/VdsLun/ns-vdslun-vds_lun_information), o [**VDS \_ LUN \_ prop**](/windows/desktop/api/Vds/ns-vds-vds_lun_prop)e a [**\_ \_ notificação de LUN VDS**](/windows/desktop/api/Vds/ns-vds-vds_lun_notification)                                                                                                                                                            |
 

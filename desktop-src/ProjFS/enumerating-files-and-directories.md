@@ -4,12 +4,12 @@ description: Descreve como um provedor ProjFS participa da enumeração de diret
 ms.assetid: <GUID-GOES-HERE>
 ms.date: 09/25/2018
 ms.topic: article
-ms.openlocfilehash: e0712ceb927388b090a84a89f80f0e2d3a1befbb
-ms.sourcegitcommit: 80d74c0bf4fc402865a1ad223480abe1ce4d1115
+ms.openlocfilehash: 606b379e206cdbc64726e0ea97aed34e00f5253ecbffb7f8b7d42469b0cbb5fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "103640271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117792809"
 ---
 # <a name="enumerating-files-and-directories"></a>Enumerar arquivos e diretórios
 
@@ -51,7 +51,7 @@ Para participar da enumeração de diretório, o provedor deve implementar os re
 
     > Se o repositório de backup der suporte a links simbólicos, o provedor deverá usar **[PrjFillDirEntryBuffer2](/windows/win32/api/projectedfslib/nf-projectedfslib-prjfilldirentrybuffer2)** para preencher o buffer fornecido pelo parâmetro _dirEntryBufferHandle_ do retorno de chamada.  O **PrjFillDirEntryBuffer2** dá suporte a uma entrada de buffer extra que permite que o provedor especifique que a entrada de enumeração é um link simbólico e qual é o seu destino.  Caso contrário, ele se comporta conforme descrito acima para **PrjFillDirEntryBuffer**.  O exemplo a seguir usa **PrjFillDirEntryBuffer2** para ilustrar o suporte para links simbólicos.
     >
-    > Observe que o **PrjFillDirEntryBuffer2** tem suporte a partir do Windows 10, versão 2004.  Um provedor deve investigar a existência de **PrjFillDirEntryBuffer2**, por exemplo, usando **[GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)**.
+    > observe que **PrjFillDirEntryBuffer2** tem suporte a partir de Windows 10, versão 2004.  Um provedor deve investigar a existência de **PrjFillDirEntryBuffer2**, por exemplo, usando **[GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)**.
 
     ```C++
     typedef struct MY_ENUM_ENTRY MY_ENUM_ENTRY;

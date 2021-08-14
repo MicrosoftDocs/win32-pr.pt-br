@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 06cc989a14da6f2fe84d30f7f5d7d9fc35acd3bc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1d2026b2bb8b3baeae778e66a0b226c63fa2aeec09cb0a5e790f989161ff7552
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118521202"
 ---
 # <a name="id3dxconstanttablesetmatrixtranspose-method"></a>Método ID3DXConstantTable:: SetMatrixTranspose
 
@@ -86,7 +86,7 @@ Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

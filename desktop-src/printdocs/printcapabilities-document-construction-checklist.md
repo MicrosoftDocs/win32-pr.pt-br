@@ -4,12 +4,12 @@ ms.assetid: 4b8fa1a4-6461-4722-861b-354f206b2a73
 title: Lista de verificação de construção de documentos PrintCapabilities
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee309c96cf7b2d70cb78f125e7783668fb2298da
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 3a5284a480f73151750926d975535ea799457a1ce2cd4c14f197a4fc6519b646
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117867958"
 ---
 # <a name="printcapabilities-document-construction-checklist"></a>Lista de verificação de construção de documentos PrintCapabilities
 
@@ -29,7 +29,7 @@ O [Resumo dos Tipos de Elemento](summary-of-element-types.md) aborda os vários 
 
 4.  Para parâmetros, determine se uma das instâncias parameterDef definidas nas Palavras-chave de esquema de impressão é uma combinação adequada. Em caso afirmativo, copie a instância ParameterDef das Palavras-chave de Esquema de Impressão e ajuste o Valor de cada instância de Propriedade mutável para o melhor ajuste. Se nenhuma das instâncias parameterDef nas Palavras-chave de esquema de impressão for uma combinação adequada, crie sua própria instância parameterDef. Para obter mais informações, [consulte Parâmetros no documento PrintCapabilities](parameters-in-the-printcapabilities-document.md).
 
-5.  Verifique se todas as instâncias Property e ScoredProperty exigidas pelo documento Imprimir Palavras-chave de esquema estão presentes no documento PrintCapabilities e se elas foram inicializadas corretamente.
+5.  Verifique se todas as instâncias Property e ScoredProperty exigidas pelo documento Imprimir Palavras-chave de esquema estão presentes no documento PrintCapabilities e se elas estão inicializadas corretamente.
 
 6.  Adicione instâncias de propriedade e subpropriedade adicionais conforme desejado. Você pode introduzir instâncias de Propriedade definidas de forma privada se houver aspectos do dispositivo que você precisa caracterizar que não são cobertos pelas instâncias de propriedade definidas nas Palavras-chave de esquema de impressão.
 
@@ -43,9 +43,9 @@ Observe que o conjunto de instâncias Feature, Option e ParameterDef relatadas n
 
 Para obter uma lista de instâncias de propriedade adicionais que devem ser fornecidas para definir totalmente constructos e parâmetros de Recurso/Opção, consulte [ParameterDef](parameterdef.md) e [ParameterInit](parameterinit.md). Por exemplo, cada Recurso deve especificar seu comportamento de interface do usuário, especificamente se exatamente uma ou várias instâncias option podem ser selecionadas para cada Recurso de uma vez. O documento Palavras-chave de esquema de impressão define essas instâncias de Propriedade, em que elas devem aparecer no documento PrintCapabilities e quais instâncias value definidas nas Palavras-chave de esquema de impressão estão disponíveis.
 
-O provedor PrintCapabilities é responsável por emitir o Valor apropriado para todas as instâncias de Propriedade dependentes de configuração. Por exemplo, se a taxa de impressão depender do modo de cor e da resolução usada, o provedor PrintCapabilities deverá observar as configurações de modo de cor e resolução especificadas no PrintTicket fornecido pelo cliente e deverá relatar o valor adequado para a taxa de impressão. Observe que cada instância ScoredProperty deve ter valor único; sua instância de Valor não pode ser alterável quando a configuração do dispositivo é mudada.
+O provedor PrintCapabilities é responsável por emitir o Valor apropriado para todas as instâncias de Propriedade dependentes de configuração. Por exemplo, se a taxa de impressão depender do modo de cor e da resolução usada, o provedor PrintCapabilities deverá observar as configurações de modo de cor e resolução especificadas no PrintTicket fornecido pelo cliente e deverá relatar o valor adequado para a taxa de impressão. Observe que cada instância ScoredProperty deve ter valor único; sua instância de Valor não pode mudar quando a configuração do dispositivo é mudada.
 
-Observe também que as instâncias de Propriedade definidas nas Palavras-chave de Esquema de Impressão devem aparecer no local especificado. Eles não podem aparecer em locais arbitrários dentro de um documento PrintCapabilities. Instâncias de Propriedade definidas de forma privada podem aparecer em qualquer lugar, mesmo como subpropriedades dentro de instâncias de Propriedade definidas pelo esquema.
+Observe também que as instâncias de Propriedade definidas nas Palavras-chave de Esquema de Impressão devem aparecer no local especificado. Eles não podem aparecer em locais arbitrários em um documento PrintCapabilities. Instâncias de Propriedade definidas de forma privada podem aparecer em qualquer lugar, mesmo como subpropriedades dentro de instâncias de Propriedade definidas pelo esquema.
 
 Observe que um conflito funcional entre as configurações é definido como dois elementos de Esquema de Impressão não conflitantes que têm uma função semelhante, mas são recursos diferentes. Um exemplo seria JobDuplexAllDocumentsContiguously e DocumentDuplex; ambos representam a função duplex do dispositivo, mas diferem na aplicação da função, uma aplicando-se a todo o trabalho de forma contígua e outra aos documentos. Caso dois elementos desse tipo sejam especificados, a precedência é determinada pelo produtor PrintCapabilities e pelo consumidor PrintTicket. É responsabilidade do produtor PrintCapabilities indicar corretamente as restrições entre elementos conflitantes por meio do atributo "restrito". Elementos no Esquema de Impressão público que exibem esse conflito semântico são identificados em sua definição.
 

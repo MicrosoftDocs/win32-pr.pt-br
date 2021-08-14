@@ -1,26 +1,26 @@
 ---
-title: Propriedade IMsRdpClientAdvancedSettings LoadBalanceInfo
-description: Especifica o cookie de balanceamento de carga que será colocado no pacote de solicitação de conexão X. 224 na sequência de conexão do protocolo de servidor Host da Sessão da Área de Trabalho Remota (Host da Sessão RD).
+title: Propriedade LoadBalanceInfo de IMsRdpClientAdvancedSettings
+description: Especifica o cookie de balanceamento de carga que será colocado no pacote solicitação de conexão X.224 na sequência de conexão de protocolo Host da Sessão da Área de Trabalho Remota (Host da Sessão RD) do servidor.
 ms.assetid: 25f12a2e-00a2-42a8-afd3-81efcd94da94
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade LoadBalanceInfo
-- Propriedade LoadBalanceInfo Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings, Propriedade LoadBalanceInfo
-- Propriedade LoadBalanceInfo Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings2
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings2, Propriedade LoadBalanceInfo
-- Propriedade LoadBalanceInfo Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings3, Propriedade LoadBalanceInfo
-- Propriedade LoadBalanceInfo Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings4, Propriedade LoadBalanceInfo
-- Propriedade LoadBalanceInfo Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings5, Propriedade LoadBalanceInfo
-- Propriedade LoadBalanceInfo Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings6, Propriedade LoadBalanceInfo
-- Propriedade LoadBalanceInfo Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings7, Propriedade LoadBalanceInfo
-- Propriedade LoadBalanceInfo Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings8, Propriedade LoadBalanceInfo
+- Propriedade LoadBalanceInfo Serviços de Área de Trabalho Remota
+- A propriedade LoadBalanceInfo Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings
+- Interface IMsRdpClientAdvancedSettings Serviços de Área de Trabalho Remota , propriedade LoadBalanceInfo
+- A propriedade LoadBalanceInfo Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings2
+- Interface IMsRdpClientAdvancedSettings2 Serviços de Área de Trabalho Remota , propriedade LoadBalanceInfo
+- A propriedade LoadBalanceInfo Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings3
+- Interface IMsRdpClientAdvancedSettings3 Serviços de Área de Trabalho Remota , propriedade LoadBalanceInfo
+- A propriedade LoadBalanceInfo Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings4
+- Interface IMsRdpClientAdvancedSettings4 Serviços de Área de Trabalho Remota , propriedade LoadBalanceInfo
+- A propriedade LoadBalanceInfo Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings5
+- Interface IMsRdpClientAdvancedSettings5 Serviços de Área de Trabalho Remota , propriedade LoadBalanceInfo
+- A propriedade LoadBalanceInfo Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings6
+- Interface IMsRdpClientAdvancedSettings6 Serviços de Área de Trabalho Remota , propriedade LoadBalanceInfo
+- A propriedade LoadBalanceInfo Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings7
+- Interface IMsRdpClientAdvancedSettings7 Serviços de Área de Trabalho Remota , propriedade LoadBalanceInfo
+- A propriedade LoadBalanceInfo Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings8
+- Interface IMsRdpClientAdvancedSettings8 Serviços de Área de Trabalho Remota , propriedade LoadBalanceInfo
 topic_type:
 - apiref
 api_name:
@@ -54,18 +54,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a12112eb2a18d38993e905f8d36175f1ab15f58a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: efe7ca9b9ed68f3327779177e706ee5a943c9e6580e2b789e2b96e74ee9f0b4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118353035"
 ---
-# <a name="imsrdpclientadvancedsettingsloadbalanceinfo-property"></a>Propriedade IMsRdpClientAdvancedSettings:: LoadBalanceInfo
+# <a name="imsrdpclientadvancedsettingsloadbalanceinfo-property"></a>Propriedade IMsRdpClientAdvancedSettings::LoadBalanceInfo
 
-Especifica o cookie de balanceamento de carga que será colocado no pacote de solicitação de conexão X. 224 na sequência de conexão do protocolo de servidor Host da Sessão da Área de Trabalho Remota (Host da Sessão RD).
+Especifica o cookie de balanceamento de carga que será colocado no pacote solicitação de conexão X.224 na sequência de conexão de protocolo Host da Sessão da Área de Trabalho Remota (Host da Sessão RD) do servidor.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -84,7 +84,7 @@ HRESULT get_LoadBalanceInfo(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Ponteiro para o novo cookie. Para obter mais informações, consulte a seção comentários.
+Ponteiro para o novo cookie. Para obter mais informações, consulte a seção de comentários.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
@@ -92,23 +92,23 @@ Retornará **S \_ OK** se for bem-sucedido.
 
 ## <a name="remarks"></a>Comentários
 
-As informações de balanceamento de carga são usadas pelos roteadores de balanceamento de carga para escolher o melhor servidor para o cliente ao usar farms de servidores de Host da Sessão RD. O próprio servidor Host da Sessão RD não usa essas informações e as descartará.
+As informações de balanceamento de carga são usadas pelos roteadores de balanceamento de carga para escolher o melhor servidor para o cliente ao usar farms de Host da Sessão RD servidores. O Host da Sessão RD servidor em si não usa essas informações e as descartará.
 
-O cookie usa o seguinte, diferencia maiúsculas de minúsculas, sintaxe:
+O cookie usa a seguinte sintaxe, que faz a resiência de minúsculas:
 
-**Cookie: MSTS =**_IpAddressAndPortNumber_*_\\ r \\ n_*
+**Cookie: msts=**_IpAddressAndPortNumber_*_\\ r \\ n_*
 
-Em que *IpAddressAndPortNumber* é o endereço IP e o número da porta, em ordem de bytes de rede.
+Em *que IpAddressAndPortNumber* é o endereço IP e o número da porta, em ordem de byte de rede.
 
-Por exemplo, o cookie usado para acessar o endereço IP do 172.31.249.216, número da porta 3389, é o seguinte:
+Por exemplo, o cookie usado para acessar o endereço IP de 172.31.249.216, número da porta 3389 é o seguinte:
 
-**Cookie: MSTS = 3640205228.15629.0000 \\ r \\ n**
+**Cookie: msts=3640205228.15629.0000 \\ r \\ n**
 
-Os quatro últimos zeros são opcionais e são reservados. O ponto decimal final é necessário, assim como o retorno de carro à direita e a alimentação de peso. O comprimento da cadeia de caracteres, em caracteres, deve ser um múltiplo par de 2, portanto, adicione um espaço, se necessário.
+Os quatro zeros finais são opcionais e reservados. O ponto decimal final é necessário, assim como o retorno de carro à direita e a linha de linha. O comprimento da cadeia de caracteres, em caracteres, deve ser um múltiplo de 2, portanto, adicione um espaço, se necessário.
 
-Se nenhum cookie for fornecido, o padrão será **Cookie: mstshash =**_username_*_\\ r \\ n_*.
+Se nenhum cookie for fornecido, o padrão será **Cookie: mstshash=**_UserName_*_\\ r \\ n_*.
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -120,7 +120,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                                  |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings é definido como 3c65b4ab-12B3-465b-acd4-b8dad3bff9e2<br/> |
+| IID<br/>                      | \_IMs IIDRdpClientAdvancedSettings é definido como 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 
@@ -149,7 +149,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 [**IMsRdpClientAdvancedSettings8**](imsrdpclientadvancedsettings8.md)
 </dt> <dt>
 
-[**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md)
+[**Imsrdpclientadvancedsettings**](imsrdpclientadvancedsettings-interface.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ description: Ao lidar com alterações incompatíveis, a norma de prática é a 
 ms.assetid: 5b893d79-b81d-4ede-8d49-71d85219c497
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9498e5c71c7ce9690da0969f234fbb9d094eca50
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f0a8736093e8189570026489bc1753145b941b7429b704e2c9c68783ddefef0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118930035"
 ---
 # <a name="examples-of-incompatible-changes"></a>Exemplos de alterações incompatíveis
 
@@ -27,9 +27,9 @@ Algumas alterações traiçoeiros ou incompatibilidades indesejadas entre um cli
 -   Modificando um tipo importado. O tipo pode ser proveniente de um componente diferente que não é remoto diretamente, portanto, a alteração foi considerada compatível.
 -   Usar \# ifdef em um arquivo IDL é uma má ideia para ifdef definições de tipo em um arquivo IDL — é um desastre aguardando a ocorrência. Inevitavelmente, devido à compilação ou a outros problemas, um cliente é compilado com um conjunto diferente de definições do que o servidor e acaba sendo incompatível.
 
- 
+ 
 
- 
+ 
 
 
 

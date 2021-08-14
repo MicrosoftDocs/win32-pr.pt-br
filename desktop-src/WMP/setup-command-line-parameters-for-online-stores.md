@@ -3,37 +3,37 @@ title: Parâmetros de linha de comando de instalação para lojas online
 description: Parâmetros de linha de comando de instalação para lojas online
 ms.assetid: 26224d7c-ca12-43b9-9150-3d39bccb85d3
 keywords:
-- Armazenamentos online do Windows Media Player, parâmetros de linha de comando de instalação
+- Windows Media Player lojas online, parâmetros de linha de comando de instalação
 - lojas online, parâmetros de linha de comando de instalação
 - Digite 1 lojas online, parâmetros de linha de comando de instalação
 - Digite 2 lojas online, parâmetros de linha de comando de instalação
 - parâmetros de linha de comando da instalação
-- Lojas online do Windows Media Player, parâmetros de linha de comando
+- Windows Media Player lojas online, parâmetros de linha de comando
 - lojas online, parâmetros de linha de comando
 - tipo 1 lojas online, parâmetros de linha de comando
 - tipo 2 lojas online, parâmetros de linha de comando
 - parâmetros de linha de comando
-- Armazenamentos online do Windows Media Player, parâmetros
+- Windows Media Player lojas online, parâmetros
 - lojas online, parâmetros
 - tipo 1 lojas online, parâmetros
 - tipo 2 lojas online, parâmetros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0605814d3f8ce5e3015cf67d38f213a6b6f07500
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ff77df581b2be4b2539772065e1aabef281a4c6c931ca115a4f6331063cf2414
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118569297"
 ---
 # <a name="setup-command-line-parameters-for-online-stores"></a>Parâmetros de linha de comando de instalação para lojas online
 
 > [!Note]  
 > Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online.
 
- 
+ 
 
-Ao instalar o Windows Media Player 10 ou o Windows Media Player 11 no Windows XP, você pode acrescentar parâmetros de linha de comando para especificar a primeira loja online que o usuário vê.
+ao instalar o Windows Media Player 10 ou o Windows Media Player 11 no Windows XP, você pode acrescentar parâmetros de linha de comando para especificar a primeira loja online que o usuário vê.
 
 Sintaxe
 
@@ -56,13 +56,13 @@ O caminho totalmente qualificado para um documento do serviceInfo instalado no c
 
 Userextra (opcional)
 
-Uma cadeia de caracteres de consulta que o Windows Media Player 10 acrescentará à URL do documento do serviceInfo quando recuperar o documento online.
+uma cadeia de caracteres de consulta que Windows Media Player 10 será acrescentada à URL do documento do serviceinfo quando ele recuperar o documento online.
 
 ## <a name="remarks"></a>Comentários
 
-Para obter detalhes sobre como redistribuir o software do Windows Media Player com seu aplicativo, consulte [redistribuindo o software do Windows Media Player](redistributing-windows-media-player-software.md).
+para obter detalhes sobre como redistribuir Windows Media Player software com seu aplicativo, consulte [redistribuindo Windows Media Player software](redistributing-windows-media-player-software.md).
 
-Quando o computador do usuário não está conectado à Internet, as informações contidas no documento local de informações são usadas para configurar o Windows Media Player para o serviço ativo inicial.
+quando o computador do usuário não está conectado à Internet, as informações contidas no documento local de informações são usadas para configurar Windows Media Player para o serviço ativo inicial.
 
 Os parâmetros de linha de comando diferenciam maiúsculas de minúsculas.
 
@@ -82,9 +82,9 @@ Os parâmetros de linha de comando diferenciam maiúsculas de minúsculas.
 [**Configurando a loja online inicial**](setting-the-initial-online-store.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

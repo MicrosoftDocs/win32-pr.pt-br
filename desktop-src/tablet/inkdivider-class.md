@@ -15,12 +15,12 @@ api_type:
 api_location:
 - Inkdiv.dll
 - Inkdiv.dll.dll
-ms.openlocfilehash: c0658504303968803bd2abff063694701d121390
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7dd98aaef627bac6a26340464c14c4e46c07d6a23f32c2664651503b5d79014
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105762054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118220827"
 ---
 # <a name="inkdivider-class"></a>Classe InkDivider
 
@@ -106,7 +106,7 @@ Atualmente, o **InkDivider** não dá suporte a idiomas verticais. Para o objeto
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                           |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                           |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                               |
 | parâmetro<br/>                   | <dl> <dt>Msinkaut15. h (também requer Msinkaut15 \_ i. c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Inkdiv.dll</dt> </dl>                                   |

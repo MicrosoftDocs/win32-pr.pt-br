@@ -1,9 +1,9 @@
 ---
-title: CDN_TYPECHANGE de notificação (Commdlg.h)
-description: Enviado por uma caixa de diálogo Abrir ou Salvar como no estilo Explorer quando o usuário seleciona um novo tipo de arquivo na caixa de combinação tipos de arquivo.
+title: CDN_TYPECHANGE código de notificação (Commdlg. h)
+description: Enviado por uma caixa de diálogo abrir no estilo do Explorer ou salvar como quando o usuário seleciona um novo tipo de arquivo na caixa de combinação tipos de arquivo.
 ms.assetid: fb8324db-e435-4ef2-aac5-506a6b7adb2c
 keywords:
-- CDN_TYPECHANGE caixa de diálogo de código de notificação
+- Caixas de diálogo CDN_TYPECHANGE código de notificação
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3922dd71b70ace579fa4b5f2318776779afdfa4e
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: cf55584aafd5c73ee3ec2b756b59054e8aabaaf4cf5974a09dd11d3b4f40b655
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110548861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118504184"
 ---
-# <a name="cdn_typechange-notification-code"></a>Código de \_ notificação TYPECHANGE da CDN
+# <a name="cdn_typechange-notification-code"></a>CDN \_ Código de notificação do TYPECHANGE
 
-\[Começando com o Windows Vista, as **caixas** de **diálogo** Abrir e Salvar como comuns foram superadas pela caixa de diálogo Item [Comum](../shell/common-file-dialog.md). Recomendamos que você use a API de Diálogo de Item Comum em vez dessas caixas de diálogo da Biblioteca de Caixas de Diálogo Comuns.\]
+\[a partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de Item comum](../shell/common-file-dialog.md). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
 
-Enviado por uma caixa de diálogo **Abrir** ou Salvar **como** no estilo Explorer quando o usuário seleciona um novo tipo de arquivo na caixa de combinação tipos de arquivo.
+Enviado por uma caixa de diálogo **abrir** no estilo do Explorer ou **salvar como** quando o usuário seleciona um novo tipo de arquivo na caixa de combinação tipos de arquivo.
 
-O [*procedimento de gancho OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) recebe essa mensagem na forma de uma mensagem WM [**\_ NOTIFY.**](../controls/wm-notify.md)
+Seu procedimento de gancho [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) recebe essa mensagem na forma de uma mensagem de [**\_ notificação do WM**](../controls/wm-notify.md) .
 
 
 ```C++
@@ -51,21 +51,21 @@ Este parâmetro não é usado.
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma [**estrutura OFNOTIFY.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya)
+Um ponteiro para uma estrutura [**OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) .
 
-A [**estrutura OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) contém uma estrutura [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) **cujo** membro de código indica a mensagem de notificação **\_ TYPECHANGE da CDN.**
+a estrutura [**OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) contém uma estrutura [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) cujo membro de **código** indica a mensagem de notificação **CDN \_ TYPECHANGE** .
 
-A [**estrutura OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) também contém um ponteiro para uma estrutura [**OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) cujo membro **nFilterIndex** indica o índice baseado em um do filtro de tipo de arquivo recém-selecionado.
+A estrutura [**OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) também contém um ponteiro para uma estrutura [**da OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) cujo membro **nFilterIndex** indica o índice baseado em um do filtro de tipo de arquivo selecionado recentemente.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Essa mensagem não tem nenhum valor de retorno.
+Esta mensagem não tem nenhum valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-O sistema enviará essa notificação somente se a caixa de diálogo tiver sido criada usando o **valor OFN \_ EXPLORER.**
+O sistema enviará essa notificação somente se a caixa de diálogo tiver sido criada usando o valor do **OFN \_ Explorer** .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,7 +75,7 @@ O sistema enviará essa notificação somente se a caixa de diálogo tiver sido 
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Commdlg.h (inclua Windows.h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Commdlg. h (incluir Windows. h)</dt> </dl> |
 
 
 
@@ -86,10 +86,10 @@ O sistema enviará essa notificação somente se a caixa de diálogo tiver sido 
 **Referência**
 </dt> <dt>
 
-[**Getopenfilename**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
+[**GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
 </dt> <dt>
 
-[**Getsavefilename**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
+[**GetSaveFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
 </dt> <dt>
 
 [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc)
@@ -98,10 +98,10 @@ O sistema enviará essa notificação somente se a caixa de diálogo tiver sido 
 [**OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya)
 </dt> <dt>
 
-[**Openfilename**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
+[**DA OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
 </dt> <dt>
 
-**Conceitual**
+**Conceitua**
 </dt> <dt>
 
 [Biblioteca de caixa de diálogo comum](common-dialog-box-library.md)

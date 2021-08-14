@@ -1,26 +1,26 @@
 ---
-title: Outros exemplos de pele
-description: Outros exemplos de pele
+title: Outros exemplos de capa
+description: Outros exemplos de capa
 ms.assetid: 72eaa417-d7ce-4521-9289-17f392146ec9
 keywords:
-- Criando capas, exemplos de código
-- Capas do Windows Media Player, exemplos de código
+- criando capas, exemplos de código
+- Windows Media Player capas, exemplos de código
 - capas, exemplos de código
-- Criando capas, exemplos
-- Capas do Windows Media Player, exemplos
+- criando capas, exemplos
+- Windows Media Player capas,exemplos
 - capas, exemplos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57d929ad874a9835a67346e70f26adfb3d24378b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6b4fae322506d86e69564bc5ac0ca19cc3f972c107dd960b80e6210150593403
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104291938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118338350"
 ---
-# <a name="other-skin-samples"></a>Outros exemplos de pele
+# <a name="other-skin-samples"></a>Outros exemplos de capa
 
-Para ver exemplos de capas de trabalho completas, clique no botão **Iniciar** , aponte para **programas**, **Windows Media**, Windows **Media SDK** e clique em exemplos do **SDK do Player**. Você deve primeiro instalar o SDK do Windows Media Player para usar os exemplos.
+Para ver exemplos de capas  de trabalho completas, clique no botão Iniciar, aponte para Programas **e,** em seguida, Windows **Mídia**, em seguida, **Windows SDK** de Mídia e clique em Amostras do **SDK** do Player . Primeiro, você deve instalar o SDK Windows Media Player para usar os exemplos.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -32,9 +32,9 @@ Para ver exemplos de capas de trabalho completas, clique no botão **Iniciar** ,
 [**Guia de criação de capa**](skin-creation-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

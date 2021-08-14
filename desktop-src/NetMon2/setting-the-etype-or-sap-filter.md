@@ -1,21 +1,21 @@
 ---
-description: Definir a parte ETYPE ou SAP do filtro de captura é a primeira etapa no processo de criação do filtro de captura.
+description: Definir a parte Etype ou SAP do filtro de captura é a primeira etapa no processo de criação do filtro de captura.
 ms.assetid: 0a22f74b-5bb1-43df-a70a-9f30195177ea
-title: Configurando o filtro ETYPE ou SAP
+title: Definindo o filtro Etype ou SAP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aee117e992968265be5a973f3f4017832ee6ca0c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: abac637594debf03ca9f82c79382ababc4c696d79d5351b2d0be0a3e5b4ffa8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118363161"
 ---
-# <a name="setting-the-etype-or-sap-filter"></a>Configurando o filtro ETYPE ou SAP
+# <a name="setting-the-etype-or-sap-filter"></a>Definindo o filtro Etype ou SAP
 
-Definir a parte ETYPE ou SAP do filtro de captura é a primeira etapa no processo de criação do filtro de captura.
+Definir a parte Etype ou SAP do filtro de captura é a primeira etapa no processo de criação do filtro de captura.
 
-No exemplo a seguir, o filtro de captura está definido para recuperar somente o tráfego IPX:
+No exemplo a seguir, o filtro de captura é definido para recuperar apenas o tráfego IPX:
 
 
 ```C++
@@ -34,7 +34,7 @@ rc = SetNPPEtypeSapFilter(m_hBlob,
 
 
 
-Os valores SAP e ETYPE geralmente estão disponíveis em RFCs. Os valores SAP e ETYPE podem estar em uma matriz.
+Os valores SAP e Etype geralmente estão disponíveis em RFCs. Os valores SAP e Etype podem estar em uma matriz.
 
  
 

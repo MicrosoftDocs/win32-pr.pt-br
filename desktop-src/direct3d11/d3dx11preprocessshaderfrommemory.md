@@ -1,6 +1,6 @@
 ---
 title: Função D3DX11PreprocessShaderFromMemory (D3DX11async. h)
-description: Observe que a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store. Observação em vez de usar essa função, recomendamos que você use a API D3DPreprocess. Crie um sombreador da memória sem compilá-lo.
+description: observe que a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows. Observação em vez de usar essa função, recomendamos que você use a API D3DPreprocess. Crie um sombreador da memória sem compilá-lo.
 ms.assetid: 3c646914-9334-44fe-a8a0-b84d0dc1a16e
 keywords:
 - Função D3DX11PreprocessShaderFromMemory Direct3D 11
@@ -15,17 +15,17 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 71a94633270fe0f4e462e60915de862be8693daa
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5fb626bb01f36ebc93a69c551f038ba82f07a0bd0c07f71093588f6de3cf31f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104989334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118535981"
 ---
 # <a name="d3dx11preprocessshaderfrommemory-function"></a>Função D3DX11PreprocessShaderFromMemory
 
 > [!Note]  
-> A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+> a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 
  
 
@@ -140,7 +140,7 @@ Um ponteiro para o valor de retorno. Pode ser **NULL**. Se *pPump* não for **NU
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 7185f9e5-10c6-43cc-b85b-cd077378338f
-ms.openlocfilehash: 3a993312b9e365561018459c43dab87afbd3c2b2
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 719e13e824778ec133ad761d09ccd3bd8f5846ae8cdb36c83ba4f85eca1c2408
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118224105"
 ---
 # <a name="fms_toolbarload-structure"></a>Estrutura FMS \_ TOOLBARLOAD
 
@@ -91,22 +91,22 @@ O número de botões representados pelo bitmap determinado.
 **idBitmap**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-O identificador de um recurso de bitmap no arquivo executável para a extensão DLL. O recurso de bitmap contém imagens para o número de botões especificados por **cBitmaps**. O Gerenciador de arquivos carrega o recurso de bitmap e, em seguida, o usa para exibir os botões.
+O identificador de um recurso de bitmap no arquivo executável para a DLL de extensão. O recurso bitmap contém imagens para o número de botões especificados por **cBitmaps**. O Gerenciador de Arquivos carrega o recurso de bitmap e o usa para exibir os botões.
 
 </dd> <dt>
 
-**hBitmap**
+**Hbitmap**
 </dt> <dd>
 
 Tipo: **HBITMAP**
 
 </dd> <dd>
 
-Um identificador para um bitmap que o Gerenciador de arquivos usará para obter e exibir imagens de botão se **idBitmap** for 0.
+Um handle para um bitmap que o Gerenciador de Arquivos usará para obter e exibir imagens de botão se **idBitmap** for 0.
 
 </dd> </dl>
 
@@ -118,7 +118,7 @@ Um identificador para um bitmap que o Gerenciador de arquivos usará para obter 
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                               |
-| Cabeçalho<br/>                   | <dl> <dt>Wfext. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wfext.h</dt> </dl> |
 
 
 
@@ -126,7 +126,7 @@ Um identificador para um bitmap que o Gerenciador de arquivos usará para obter 
 
 <dl> <dt>
 
-[**FMEVENT \_ TOOLBARLOAD**](fmevent-toolbarload.md)
+[**BARRA DE FERRAMENTAS \_ FMEVENTLOAD**](fmevent-toolbarload.md)
 </dt> </dl>
 
  

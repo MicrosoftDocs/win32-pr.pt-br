@@ -4,28 +4,28 @@ description: DPI alto
 ms.assetid: 476fe65c-2acd-4a7a-8a76-72d9f010b772
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc7c70e44c497f116348e7b42b260f056d593524
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f5006d5bdf1c9e90745ef8e3571e64e729dbf5dff54338280789f39c6d0027e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118203957"
 ---
 # <a name="high-dpi"></a>DPI alto
 
-À medida que as tecnologias de exibição avançam, os fabricantes aumentaram o número de pixels com suporte em suas telas. Enquanto os elementos de texto, imagens e interface do usuário parecem muito mais nítidos e legíveis em exibições de alta resolução, o sistema operacional deve escalar verticalmente para dar suporte à experiência visual; caso contrário, tudo parece menor.
+À medida que as tecnologias de exibição avançam, os fabricantes aumentaram o número de pixels com suporte em suas exibições. Embora os elementos de texto, imagens e interface do usuário pareçam muito mais precisos e mais acessíveis em exibições de alta resolução, o sistema operacional deve ser escalado para dar suporte à experiência visual; caso contrário, tudo parece menor.
 
-O Windows 7 oferece suporte a monitores de *dpi* alto. Os dados do mercado sugerem que as implantações de telas de alto *dpi* (120-144 pontos por polegada (DPI)) aumentarão no período de tempo do Windows 7. Ao executar resoluções nativas nessas telas, muitos aplicativos parecem muito pequenos, a menos que usem *DPI alto*. Alguns aplicativos (como o Windows Internet Explorer) têm recursos de dimensionamento de fontes que permitem aos usuários ampliar e reduzir, mas muitos aplicativos não têm. O recurso de *DPI alto* no Windows 7:
+Windows 7 dá suporte a *exibições de DPI* alta. Os dados de mercado sugerem que as implantações de telas de *alto DPI* (120 a 144 pontos por polegada (dpi)) aumentarão no período Windows 7. Ao executar resoluções nativas nessas telas, muitos aplicativos parecem muito pequenos, a menos que usem *Alto DPI.* Alguns aplicativos (como Windows Internet Explorer) têm recursos de dimensionamento de fontes que permitem aos usuários ampliar e reduzir, mas muitos aplicativos não têm. O *recurso DPI* alto no Windows 7:
 
--   Garante que as experiências do Windows e do aplicativo sejam ideais no hardware padrão (as configurações de *dpi* são otimizadas para corresponder aos recursos do hardware).
--   Permite que o Shell do Windows e outros aplicativos baseados no Windows pareçam bons com configurações de *dpi* diferentes.
--   Respeita as configurações de *dpi* padrão com base em especificações e recursos de hardware.
--   Permite que os usuários personalizem as configurações de *dpi* sem reinicializar.
--   Garante que a tela seja sempre definida como resolução nativa.
+-   Garante que as Windows e as experiências do aplicativo sejam ideais no hardware padrão ( as configurações *de DPI* são otimizadas para corresponder aos recursos do hardware).
+-   Permite que o shell Windows e outros Windows aplicativos baseados em Windows pareçam bons com diferentes *configurações de DPI.*
+-   Respeita as configurações *de DPI* padrão com base em especificações e funcionalidades de hardware.
+-   Permite que os usuários personalizem *as configurações de DPI* sem reinicializar.
+-   Garante que a tela sempre seja definida como resolução nativa.
 
-O recurso de dimensionamento de *dpi* do Windows dimensiona fontes e elementos da interface do usuário (como botões, ícones e campos de entrada) por uma porcentagem calculada, conforme especificado pela configuração de *dpi* . Isso é diferente do dimensionamento que ocorre quando a resolução de vídeo é reduzida. No caso do ajuste de *dpi* , o Windows fornece fontes e elementos de interface do usuário que são desenhados com mais pixels, resultando em uma experiência maior, de maior fidelidade e mais nítida do Windows. Os aplicativos do Windows de terceiros podem aproveitar as configurações de *DPI alto* e ajustar a interface do usuário de forma adequada, declarando-se com reconhecimento de *DPI alto* . Os desenvolvedores de aplicativos não devem mais supor que 96 DPI é a resolução ideal para todos os aplicativos.
+O recurso Windows dimensionamento de *DPI* dimensiona fontes e elementos de interface do usuário (como botões, ícones e campos de entrada) por um percentual calculado, conforme especificado pela configuração *de DPI.* Isso é diferente do dimensionamento que ocorre quando a resolução de exibição é baixada. No caso do dimensionamento *de DPI,* o Windows fornece fontes e elementos de interface do usuário que são desenhados com mais pixels, resultando em uma maior, maior fidelidade e mais Windows experiência. Aplicativos de Windows de terceiros podem aproveitar as configurações de *Alto DPI* e ajustar a interface do usuário de acordo, declarando-se com alto *conhecimento de DPI.* Os desenvolvedores de aplicativos não devem mais assumir que 96 dpi é a resolução ideal para todos os aplicativos.
 
-Para obter mais informações sobre *dpi alta* e sobre como escrever aplicativos com reconhecimento de *dpi alta* , consulte [DPI alto](../hidpi/high-dpi-desktop-application-development-on-windows.md).
+Para obter mais informações sobre *alto DPI* e sobre como escrever aplicativos com alto *conhecimento de DPI,* consulte [Alto DPI](../hidpi/high-dpi-desktop-application-development-on-windows.md).
 
  
 

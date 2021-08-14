@@ -7,12 +7,12 @@ keywords:
 - Função AVIFileOpen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 833219194dc984bbf7bfa3d0415f77c5eed9b43b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c7e8415e6cb3f54dc4eb6bffa11d7f70879546ff2a434fc75cbb91d283bb65c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104453604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118373255"
 ---
 # <a name="opening-an-avi-file"></a>Abrindo um arquivo AVI
 
@@ -50,9 +50,9 @@ VOID LoadAVIFile(LPCSTR szFile, HWND hwnd)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

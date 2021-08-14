@@ -5,23 +5,23 @@ ms.assetid: eb5c8606-d3f0-4c33-9035-7b7b1369cb0d
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9911397c1de3521ccb5a275405416d8b88c1fa6f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 77390a6aa67e946de6d69dd3d1bc28a76907b7ad31b497d4921c7a2d7493c328
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118361724"
 ---
 # <a name="obtaining-accounting-properties"></a>Obtendo propriedades de contabilidade
 
 > [!Note]  
-> O IAS (serviço de autenticação da Internet) foi renomeado como NPS (servidor de políticas de rede) a partir do Windows Server 2008. O conteúdo deste tópico aplica-se ao IAS e ao NPS. Em todo o texto, o NPS é usado para fazer referência a todas as versões do serviço, incluindo as versões originalmente chamadas de IAS.
+> o IAS (serviço de autenticação da Internet) foi renomeado como NPS (servidor de políticas de rede) a partir do Windows Server 2008. O conteúdo deste tópico aplica-se ao IAS e ao NPS. Em todo o texto, o NPS é usado para fazer referência a todas as versões do serviço, incluindo as versões originalmente chamadas de IAS.
 
- 
+ 
 
 O objeto de contabilidade é um dos objetos na coleção de manipuladores de solicitação. O valor de enumeração para a coleção de manipuladores de solicitação é a **propriedade \_ REQUESTHANDLERS do IAS \_ \_**. O nome do manipulador para o objeto de contabilidade é "Microsoft Accounting".
 
-O código de Visual Basic a seguir acessa as propriedades disponíveis do manipulador de objeto de contabilidade.
+o código de Visual Basic a seguir acessa as propriedades disponíveis do manipulador de objeto de contabilidade.
 
 
 ```VB
@@ -65,6 +65,6 @@ Depois que você tiver o objeto Microsoft Accounting, obtenha uma interface [**I
 [**IASPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-iasproperties)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

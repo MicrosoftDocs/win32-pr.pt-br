@@ -1,27 +1,27 @@
 ---
-description: Exibir caixas de diálogo de captura do VFW
+description: Exibir caixas de diálogo Captura do VFW
 ms.assetid: 708212ca-d148-4079-8052-3bf6696a33ab
-title: Exibir caixas de diálogo de captura do VFW
+title: Exibir caixas de diálogo Captura do VFW
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45b8b51b164630a8fa6e91b2e68ca8a9a3a875b6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 2713cc4d2eba52626c66974eed23f2c1752a1268fea78a30ca2bc9d7babc3a27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103645687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117821134"
 ---
-# <a name="display-vfw-capture-dialog-boxes"></a>Exibir caixas de diálogo de captura do VFW
+# <a name="display-vfw-capture-dialog-boxes"></a>Exibir caixas de diálogo Captura do VFW
 
-Um dispositivo de captura que ainda usa um driver de vídeo para Windows (VFW) pode dar suporte a qualquer uma das três caixas de diálogo a seguir, que são usadas para configurar o dispositivo.
+Um dispositivo de captura que ainda usa um driver VFW (Video for Windows) pode dar suporte a qualquer uma das três caixas de diálogo a seguir, que são usadas para configurar o dispositivo.
 
 
 
 | Caixa de diálogo    | Descrição                                                                                           |
 |---------------|-------------------------------------------------------------------------------------------------------|
-| Fonte de vídeo  | Usado para selecionar a entrada de vídeo e ajustar as configurações do dispositivo, como o brilho ou o contraste da imagem. |
-| Formato de vídeo  | Usado para selecionar as dimensões da imagem e a profundidade de bits.                                                    |
-| Vídeo | Usado para controlar a aparência do vídeo renderizado.                                                 |
+| Origem do vídeo  | Usado para selecionar a entrada de vídeo e ajustar as configurações do dispositivo, como brilho ou contraste da imagem. |
+| Formato de vídeo  | Usado para selecionar as dimensões de imagem e a profundidade de bits.                                                    |
+| Vídeo exibido | Usado para controlar a aparência do vídeo renderizado.                                                 |
 
 
 
@@ -29,13 +29,13 @@ Um dispositivo de captura que ainda usa um driver de vídeo para Windows (VFW) p
 
 Para mostrar uma dessas caixas de diálogo, faça o seguinte:
 
-1.  Pare o gráfico de filtro.
-2.  Consulte o filtro de captura para a interface [**IAMVfwCaptureDialogs**](/windows/desktop/api/Strmif/nn-strmif-iamvfwcapturedialogs) . Se **QueryInterface** for bem-sucedidos, isso significa que o dispositivo de captura é um dispositivo VFW.
-3.  Chame [**IAMVfwCaptureDialogs:: HasDialog**](/windows/desktop/api/Strmif/nf-strmif-iamvfwcapturedialogs-hasdialog) para verificar se o driver dá suporte à caixa de diálogo que você deseja exibir. A enumeração [**VfwCaptureDialogs**](/windows/desktop/api/strmif/ne-strmif-vfwcapturedialogs) define sinalizadores para cada uma das caixas de diálogo VFW. **HasDialog** retornará S \_ OK se a caixa de diálogo tiver suporte. \_Caso contrário, retornará s false, portanto, verifique o valor s \_ OK diretamente, em vez de usar a macro **Succeeded** .
-4.  Se a caixa de diálogo tiver suporte, chame [**IAMVfwCaptureDialogs:: ShowDialog**](/windows/desktop/api/Strmif/nf-strmif-iamvfwcapturedialogs-showdialog) para exibir a caixa de diálogo.
+1.  Pare o grafo de filtro.
+2.  Consulte o filtro de captura para a interface [**IAMVfwCaptureDialogs.**](/windows/desktop/api/Strmif/nn-strmif-iamvfwcapturedialogs) Se **QueryInterface for** bem-sucedido, isso significará que o dispositivo de captura é um dispositivo VFW.
+3.  Chame [**IAMVfwCaptureDialogs::HasDialog**](/windows/desktop/api/Strmif/nf-strmif-iamvfwcapturedialogs-hasdialog) para verificar se o driver dá suporte à caixa de diálogo que você deseja exibir. A [**enumeração VfwCaptureDialogs**](/windows/desktop/api/strmif/ne-strmif-vfwcapturedialogs) define sinalizadores para cada uma das caixas de diálogo do VFW. **HasDialog** retornará S \_ OK se a caixa de diálogo tiver suporte. Ele retorna S \_ FALSE caso contrário, verifique o valor S \_ OK diretamente, em vez de usar a **macro SUCCEEDED.**
+4.  Se a caixa de diálogo tiver suporte, chame [**IAMVfwCaptureDialogs::ShowDialog**](/windows/desktop/api/Strmif/nf-strmif-iamvfwcapturedialogs-showdialog) para exibir a caixa de diálogo.
 5.  Reinicie o grafo.
 
-O código a seguir mostra estas etapas para a caixa de diálogo fonte de vídeo:
+O código a seguir mostra estas etapas para a caixa de diálogo Origem do Vídeo:
 
 
 ```C++

@@ -1,45 +1,45 @@
 ---
-title: Propriedade pitch
-description: Propriedade pitch
+title: Propriedade Pitch
+description: Propriedade Pitch
 ms.assetid: 98b2ada3-93c6-4fa1-bf12-353eb229c30c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 998ee4bcf77878062425086d67066040f5d58421
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6e346ea0fbb7ebb819d8f00b2fc6aab1ab95e72f391bddc696da18a49f0b2a09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118475405"
 ---
-# <a name="pitch-property"></a>Propriedade pitch
+# <a name="pitch-property"></a>Propriedade Pitch
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
-<span id="Description_"></span><span id="description_"></span><span id="DESCRIPTION_"></span>**Ndescrição** 
+<span id="Description_"></span><span id="description_"></span><span id="DESCRIPTION_"></span>**Descrição** 
 </dt> <dd>
 
-Retorna um inteiro longo para a configuração de Tom de saída de fala (TTS) do caractere especificado.
+Retorna um inteiro Longo para a configuração de tom de TTS (saída de fala) do caractere especificado.
 
 </dd> <dt>
 
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-*agente do ***. Caracteres ("*** characterid * * *"). Zumbi**
+*agent***. Caracteres ("**_CharacterID_*_"). Apresentação_*
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade só se aplica a caracteres configurados para saída de TTS. Se o caractere não oferecer suporte à saída de TTS, essa propriedade retornará zero (0).
+Essa propriedade se aplica somente aos caracteres configurados para a saída do TTS. Se o caractere não dá suporte à saída TTS, essa propriedade retorna zero (0).
 
-Embora seu aplicativo não possa gravar esse valor, você pode incluir marcas **Pit** (Pitch) no texto de saída que aumentarão temporariamente o timbre de um determinado expressão. No entanto, usar a marca **Pit** para alterar a densidade não alterará a configuração da propriedade **pitch** . Para obter mais informações, consulte [marcas de saída de fala](pit-tag.md).
+Embora seu aplicativo não possa gravar  esse valor, você pode incluir marcas pit (tom) no texto de saída que aumentarão temporariamente o tom de um enunciado específico. No entanto, usar a **marca Pit** para alterar o tom não alterará a **configuração da** propriedade Pitch. Para obter mais informações, consulte [Marcas de saída de fala](pit-tag.md).
 
- 
+ 
 
- 
+ 
 
 
 

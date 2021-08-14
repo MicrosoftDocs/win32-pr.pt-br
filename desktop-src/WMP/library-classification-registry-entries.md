@@ -9,24 +9,24 @@ keywords:
 - Windows Media Player, registro
 - registro, extensões de nome de arquivo
 - registro, entradas de classificação de biblioteca
-- registro, configurações do Windows Media Player
+- registro, configurações para Windows Media Player
 - configurações do registro de extensão de nome de arquivo
 - biblioteca, entradas do registro de classificação
 - biblioteca, registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e48ea1aacdd1e4c553a7e83bfdd711ff331c0878
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 51cb263732dc8071d603c5acd62db25fc8ee887c35b28d109d961a63aba80d6e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105781425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118575126"
 ---
 # <a name="library-classification-registry-entries"></a>Entradas do registro de classificação de biblioteca
 
-Quando o Windows Media Player encontra um arquivo de mídia que tem uma extensão de nome de arquivo Personalizada, ele não sabe se o arquivo deve ser classificado como áudio, vídeo ou algum outro tipo. Por padrão, o Windows Media Player coloca esses arquivos na parte de outra mídia da biblioteca.
+quando Windows Media Player encontra um arquivo de mídia que tem uma extensão de nome de arquivo personalizada, ele não sabe se o arquivo deve ser classificado como áudio, vídeo ou algum outro tipo. por padrão, Windows Media Player coloca esses arquivos na parte de outra mídia da biblioteca.
 
-Se os arquivos de mídia digital tiverem um formato personalizado, você poderá fornecer ao Windows Media Player informações sobre onde os arquivos devem aparecer na biblioteca do Player, colocando duas entradas no registro no computador do usuário.
+se os arquivos de mídia digital tiverem um formato personalizado, você poderá fornecer Windows Media Player com informações sobre onde os arquivos devem aparecer na biblioteca do Player, colocando duas entradas no registro no computador do usuário.
 
 Uma entrada é exibida na subchave a seguir.
 
@@ -42,7 +42,7 @@ A entrada do registro tem o formato a seguir.
 
 
 
- 
+ 
 
 A outra entrada do registro é exibida na subchave a seguir que você cria.
 
@@ -60,7 +60,7 @@ A entrada do registro tem o formato a seguir.
 
 
 
- 
+ 
 
 Ambas as entradas do registro devem ter o mesmo valor. Os valores possíveis são fornecidos na tabela a seguir.
 
@@ -73,7 +73,7 @@ Ambas as entradas do registro devem ter o mesmo valor. Os valores possíveis sã
 
 
 
- 
+ 
 
 Por exemplo, as seguintes entradas de registro especificam que os arquivos que têm a extensão de nome de arquivo. xyz aparecerão na parte de música da biblioteca:
 
@@ -101,12 +101,12 @@ As entradas do registro de classificação de biblioteca têm suporte nas seguin
 
 <dl> <dt>
 
-[**Configurações do registro de extensão de nome de arquivo**](file-name-extension-registry-settings.md)
+[**Configurações de registro de extensão de nome de arquivo**](file-name-extension-registry-settings.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

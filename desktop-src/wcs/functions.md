@@ -3,8 +3,8 @@ title: Functions (WCS)
 description: Nos tópicos a seguir, as funções WCS são organizadas por categoria. Isso permite que você procure funções que têm usos relacionados em um único tópico. As páginas de referência de função são organizadas em ordem alfabética.
 ms.assetid: aba45dbd-6fc2-4788-87f0-043579fa53f9
 keywords:
-- WCS (sistema de cores do Windows), funções
-- WCS (sistema de cores do Windows), funções
+- Windows Sistema de cores (WCS), funções
+- WCS (Windows sistema de cores), funções
 - gerenciamento de cores de imagem, funções
 - gerenciamento de cores, funções
 - cores, funções
@@ -13,12 +13,12 @@ keywords:
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: faec94aa33471bf56922a865b657e558a63d8457
-ms.sourcegitcommit: 4570ac533e129ff88b23f2c2b69e0140ead3a4a4
+ms.openlocfilehash: 09508cf58d1edd87ed14aeee257a6667b5f90106e35c0de7d29a0d7304dd193a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105814615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117851942"
 ---
 # <a name="wcs-functions"></a>Funções WCS
 

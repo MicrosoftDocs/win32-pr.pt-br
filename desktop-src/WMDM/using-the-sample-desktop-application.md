@@ -3,26 +3,26 @@ title: Usando o aplicativo de desktop de exemplo
 description: Usando o aplicativo de desktop de exemplo
 ms.assetid: 5e3e5283-9e27-4f6a-93a9-84d84f2e875a
 keywords:
-- Gerenciador de Dispositivos de mídia do Windows, amostras
+- Windows Gerenciador de Dispositivos de mídia, amostras
 - Gerenciador de Dispositivos, exemplos
 - aplicativos de área de trabalho, exemplos
-- Windows Media Gerenciador de Dispositivos, exemplo de aplicativo da área de trabalho
+- Windows Gerenciador de Dispositivos de mídia, exemplo de aplicativo da área de trabalho
 - Gerenciador de Dispositivos, exemplo de aplicativo de desktop
 - exemplos, aplicativos de desktop
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd511ea5241f458d2cd926dc8fb2f3681757ff8b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 91b418458c9e6091b3e2002a30afb95abb77919d062667a9667a3aac9d4dad6e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118584162"
 ---
 # <a name="using-the-sample-desktop-application"></a>Usando o aplicativo de desktop de exemplo
 
-O aplicativo de desktop de exemplo é uma janela básica de dois painéis, um pouco semelhante ao Windows Explorer. Ele permite que você procure o conteúdo de um dispositivo, usando uma exibição de árvore exibição de pastas no painel esquerdo e arquivos no painel direito. A raiz de cada árvore de pastas é logicamente considerada um dispositivo diferente, embora alguns dispositivos possam se representar como vários objetos (um para cada armazenamento raiz). Para ler as propriedades básicas de uma pasta ou de um arquivo, clique com o botão direito do mouse no objeto e selecione **Propriedades**.
+o aplicativo de desktop de exemplo é uma janela básica de dois painéis, um pouco semelhante a Windows Explorer. Ele permite que você procure o conteúdo de um dispositivo, usando uma exibição de árvore exibição de pastas no painel esquerdo e arquivos no painel direito. A raiz de cada árvore de pastas é logicamente considerada um dispositivo diferente, embora alguns dispositivos possam se representar como vários objetos (um para cada armazenamento raiz). Para ler as propriedades básicas de uma pasta ou de um arquivo, clique com o botão direito do mouse no objeto e selecione **Propriedades**.
 
-Você pode excluir arquivos no dispositivo selecionando um arquivo no painel direito e selecionando **excluir** no menu **arquivo** . Para adicionar arquivos de mídia ao dispositivo, você pode arrastar arquivos da área de trabalho para o painel direito do programa. Observe que os arquivos devem ter um formato de mídia com suporte no dispositivo; arquivos de formatos inaceitáveis (arquivos que não são de mídia, como arquivos. txt ou formatos de mídia não suportados pelo dispositivo) não serão enviados para o dispositivo. (Observe que essa restrição é a do programa; O Windows Media Gerenciador de Dispositivos permite que você envie qualquer arquivo para um dispositivo se o dispositivo o aceitar.)
+Você pode excluir arquivos no dispositivo selecionando um arquivo no painel direito e selecionando **excluir** no menu **arquivo** . Para adicionar arquivos de mídia ao dispositivo, você pode arrastar arquivos da área de trabalho para o painel direito do programa. Observe que os arquivos devem ter um formato de mídia com suporte no dispositivo; arquivos de formatos inaceitáveis (arquivos que não são de mídia, como arquivos .txt ou formatos de mídia sem suporte no dispositivo) não serão enviados para o dispositivo. (Observe que essa restrição é a do programa; Windows Gerenciador de Dispositivos de mídia permite que você envie qualquer arquivo para um dispositivo se o dispositivo o aceitar.)
 
 Para capturar eventos de retorno de chamada enviados para a interface [**IWMDMOperation**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmoperation) , você deve marcar a opção "usar a interface de operação" no menu **Opções** .
 
@@ -39,9 +39,9 @@ Para criar um álbum (uma lista de reprodução com uma imagem associada), selec
 [**Aplicativo de desktop de exemplo**](sample-desktop-application.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
