@@ -1,20 +1,20 @@
 ---
-description: Usando o WMI, você pode acessar os dados do contador do sistema programaticamente de objetos nas bibliotecas de desempenho.
+description: Usando o WMI, você pode acessar dados do contador do sistema programaticamente de objetos nas bibliotecas de desempenho.
 ms.assetid: a0ed14e9-d2ec-43eb-8c8e-eac3c134ea1d
 ms.tgt_platform: multiple
 title: Monitorando dados de desempenho
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95cee18ba88a8aff920c2d14b5709a0fd913e2ad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ba4f3ddd5024fb27d83f08225fa65faaa2e7d02cdd28189c86fc979175861453
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105749518"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118317100"
 ---
 # <a name="monitoring-performance-data"></a>Monitorando dados de desempenho
 
-Usando o WMI, você pode acessar os dados do contador do sistema programaticamente de objetos nas bibliotecas de desempenho. Esses são os mesmos dados de desempenho que aparecem no monitor do sistema no utilitário Perfmon. Use as [classes de contador de desempenho](/windows/desktop/CIMWin32Prov/performance-counter-classes) pré-instaladas para obter dados de desempenho em scripts ou aplicativos C++.
+Usando o WMI, você pode acessar dados do contador do sistema programaticamente de objetos nas bibliotecas de desempenho. Esses são os mesmos dados de desempenho que aparecem no Monitor do Sistema no utilitário Perfmon. Use as classes de contador de [desempenho pré-instaladas](/windows/desktop/CIMWin32Prov/performance-counter-classes) para obter dados de desempenho em scripts ou aplicativos C++.
 
 As seções a seguir são discutidas neste tópico:
 
@@ -26,9 +26,9 @@ As seções a seguir são discutidas neste tópico:
 
 ## <a name="wmi-performance-classes"></a>Classes de desempenho WMI
 
-Por exemplo, o objeto "NetworkInterface", no monitor do sistema, é representado no WMI pela classe [**Win32 \_ PerfRawData \_ tcpip \_ NetworkInterface**](./retrieving-raw-and-formatted-performance-data.md) para dados brutos e a [**classe \_ \_ tcpip \_ NetworkInterface do Win32 PerfFormattedData**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data) para dados precalculados ou formatados. As classes derivadas do [**Win32 \_ PerfRawData**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) e do [**Win32 \_ PerfFormattedData**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata) devem ser usadas com um objeto de [*atualização*](gloss-r.md) . Em classes de dados brutos, seu aplicativo ou script C++ deve executar cálculos para obter a mesma saída que Perfmon.exe. As classes de dados formatadas fornecem dados pré-calculados. Para obter mais informações sobre como obter dados em aplicativos C++, consulte [acessando dados de desempenho em C++](accessing-performance-data-in-c--.md). Para scripts, consulte [acessando dados de desempenho em script](accessing-performance-data-in-script.md) e [atualizando dados do WMI em scripts](refreshing-wmi-data-in-scripts.md).
+Por exemplo, o objeto "NetworkInterface", no Monitor do Sistema, é representado no WMI pela classe [**\_ \_ Tcpip \_ NetworkInterface do Win32 PerfRawData**](./retrieving-raw-and-formatted-performance-data.md) para dados brutos e pela classe [**\_ \_ Tcpip \_ NetworkInterface do Win32 PerfFormattedData**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data) para dados pré-calculados ou formatados. As classes derivadas de [**Win32 \_ PerfRawData**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) e de [**Win32 \_ PerfFormattedData**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata) devem ser usadas com um [*objeto de atualização.*](gloss-r.md) Em classes de dados brutos, seu aplicativo ou script C++ deve executar cálculos para obter a mesma saída que Perfmon.exe. Classes de dados formatadas fornecem dados pré-calculados. Para obter mais informações sobre como obter dados em aplicativos C++, consulte [Acessando dados de desempenho no C++.](accessing-performance-data-in-c--.md) Para scripts, consulte [Acessando dados de desempenho no script e](accessing-performance-data-in-script.md) [Atualando dados WMI em scripts](refreshing-wmi-data-in-scripts.md).
 
-O exemplo de código VBScript a seguir usa o [**\_ \_ \_ processo Win32 PerfFormattedData PerfProc**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data) para obter dados de desempenho para o processo ocioso. O script exibe os mesmos dados que aparecem no perfmon para o contador% tempo do processador do objeto de processo. A chamada para [**SWbemObjectEx. Refresh \_**](swbemobjectex-refresh-.md) executa a operação de atualização. Lembre-se de que os dados devem ser atualizados, na concessão uma vez, para obter uma linha de base.
+O exemplo de código VBScript a seguir usa [**o Processo \_ \_ \_ PerfProc Do Win32 PerfFormattedData**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data) para obter dados de desempenho para o processo Ocioso. O script exibe os mesmos dados que aparecem em Perfmon para o contador % de Tempo do Processador do objeto Process. A chamada para [**SWbemObjectEx.Refresh \_**](swbemobjectex-refresh-.md) executa a operação de atualização. Esteja ciente de que os dados devem ser atualizados, uma vez em concessão, para obter uma linha de base.
 
 
 ```VB
@@ -48,21 +48,21 @@ Wend
 
 
 
-As classes de contador de desempenho também podem fornecer dados estatísticos. Para obter mais informações, consulte [obtendo dados de desempenho estatísticos](obtaining-statistical-performance-data.md).
+Classes de contador de desempenho também podem fornecer dados estatísticos. Para obter mais informações, consulte [Obtendo dados estatísticos de desempenho](obtaining-statistical-performance-data.md).
 
 ## <a name="performance-data-providers"></a>Provedores de dados de desempenho
 
-O WMI tem provedores pré-instalados que monitoram o desempenho do sistema no sistema local e remotamente. O provedor [WmiPerfClass](wmiperfclass-provider.md) cria as classes derivadas do [**Win32 \_ PerfRawData**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) e do [**Win32 \_ PerfFormattedData**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata). O provedor [WmiPerfInst](wmiperfinst-provider.md) fornece dados dinamicamente para classes não processadas e formatadas.
+O WMI tem provedores pré-instalados que monitoram o desempenho do sistema no sistema local e remotamente. O [provedor WmiPerfClass](wmiperfclass-provider.md) cria as classes derivadas de [**Win32 \_ PerfRawData**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) e [**de Win32 \_ PerfFormattedData.**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata) O [provedor WmiPerfInst](wmiperfinst-provider.md) fornece dados dinamicamente para classes brutas e formatadas.
 
 ## <a name="using-formatted-performance-data-classes"></a>Usando classes de dados de desempenho formatadas
 
-O exemplo de código VBScript a seguir obtém dados de desempenho sobre memória, partições de disco e filas de trabalho do servidor. O script determina se os valores estão dentro de um intervalo aceitável.
+O exemplo de código VBScript a seguir obtém dados de desempenho sobre memória, partições de disco e filas de trabalho do servidor. Em seguida, o script determina se os valores estão dentro de um intervalo aceitável.
 
-O script usa os seguintes objetos de provedor de WMI e objetos de script:
+O script usa os seguintes objetos de provedor WMI e objetos de script:
 
--   Classes de contador de desempenho de WMI pré-instaladas.
--   O objeto do atualizador, [**SWbemRefresher**](swbemrefresher.md).
--   Itens a serem adicionados ao contêiner do atualizador, [ **SWbemRefreshableItem**](swbemrefreshableitem.md)
+-   Classes de contador de desempenho WMI pré-instaladas.
+-   O objeto de atualização, [**SWbemRefresher.**](swbemrefresher.md)
+-   Itens a adicionar ao contêiner de atualização, [ **SWbemRefreshableItem**](swbemrefreshableitem.md)
 
 
 ```VB
@@ -127,9 +127,9 @@ Next
 
 ## <a name="using-raw-performance-data-classes"></a>Usando classes de dados de desempenho brutos
 
-O exemplo de código VBScript a seguir obtém o tempo de processador percentual atual bruto no computador local e o converte em uma porcentagem. O exemplo mostra como obter dados de desempenho brutos da propriedade **PercentProcessorTime** da classe de [**\_ \_ \_ processador Win32 PerfRawData PerfOS**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data) .
+O exemplo de código VBScript a seguir obtém o tempo de processador de porcentagem atual bruto no computador local e o converte em um percentual. O exemplo mostra como obter dados brutos de desempenho da propriedade **PercentProcessorTime** da classe [**processador PerfOS Win32 \_ PerfRawData. \_ \_**](/windows/desktop/WmiSdk/retrieving-raw-and-formatted-performance-data)
 
-Para calcular o valor da porcentagem de tempo do processador, você deve localizar a fórmula. Pesquise o valor no qualificador de **tipo** para a propriedade **PercentProcessorTime** na tabela de [**qualificador de tipo de ComType**](countertype-qualifier.md) para obter o nome da constante. Localize o nome da constante em [tipos de contadores](/previous-versions/windows/it-pro/windows-server-2003/cc785636(v=ws.10)) para obter a fórmula.
+Para calcular o valor de tempo do processador percentual, você deve localizar a fórmula. Procure o valor no qualificador **CounterType** para a propriedade **PercentProcessorTime** na tabela [**CounterType Qualifier**](countertype-qualifier.md) para obter o nome da constante. Localize o nome constante em [Tipos de Contador](/previous-versions/windows/it-pro/windows-server-2003/cc785636(v=ws.10)) para obter a fórmula.
 
 
 ```VB

@@ -1,5 +1,5 @@
 ---
-description: A maioria das constantes da propriedade de aquisição de imagem do Windows (WIA) é agrupada em um tipo de dados enumerado, WiaItemPropertyId para autores de script.
+description: a maioria das constantes da propriedade de aquisição de imagem de Windows (WIA) é agrupada em um tipo de dados enumerado, WiaItemPropertyId para autores de script.
 ms.assetid: d0fd6bd1-c646-4ed8-a6b2-43b424af8288
 title: WiaItemPropertyId
 ms.topic: article
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 6ced5d213d68fa3c4386ecf6f05783bd303bad05
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dedd11a35d52d19a4fcff4299dce688e8163ecd19d2bf9e4b49e19cb1997b293
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118207503"
 ---
 # <a name="wiaitempropertyid"></a>WiaItemPropertyId
 
-A maioria das constantes da propriedade de aquisição de imagem do Windows (WIA) é agrupada em um tipo de dados enumerado, WiaItemPropertyId para autores de script.
+a maioria das constantes da propriedade de aquisição de imagem de Windows (WIA) é agrupada em um tipo de dados enumerado, WiaItemPropertyId para autores de script.
 
 A tabela a seguir apresenta o mapeamento entre as convenções de nomenclatura usadas em script e C++. Por exemplo, no script, o prefixo "CameraDevice" mapeia para o prefixo "DPC de WIA \_ " para a constante de C++ correspondente. Em um exemplo mais específico, a propriedade "CameraDeviceFlashMode" é equivalente à constante "modo de \_ flash DPC WIA \_ \_ " C++. Consulte os tópicos constantes de propriedade correspondente para obter descrições de cada propriedade. 
 

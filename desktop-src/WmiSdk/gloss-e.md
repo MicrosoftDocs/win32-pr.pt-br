@@ -6,12 +6,12 @@ ms.tgt_platform: multiple
 title: E (WMI)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd162feb3936712b396db016de036f78aea35a09
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ffbd1ce4685ee9901dfedca2a4b3a1b948d91c8f5b56def28494eb6c4c63e726
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105793235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118319215"
 ---
 # <a name="e-wmi"></a>E (WMI)
 
@@ -64,7 +64,7 @@ Uma instrução [*linguagem WQL*](gloss-w.md) que os consumidores de eventos usa
 <span id="wmi.gloss_extension_schema"></span><span id="WMI.GLOSS_EXTENSION_SCHEMA"></span>**esquema de extensão**
 </dt> <dd>
 
-A terceira camada do [*esquema CIM*](gloss-c.md), que inclui extensões específicas da plataforma do esquema CIM, como Windows, UNIX e Exchange Server. Consulte também [*modelo comum*](gloss-c.md) e modelo de núcleo.
+a terceira camada do [*esquema cim*](gloss-c.md), que inclui extensões específicas da plataforma do esquema cim, como Windows, UNIX e Exchange Server. Consulte também [*modelo comum*](gloss-c.md) e modelo de núcleo.
 
 </dd> <dt>
 

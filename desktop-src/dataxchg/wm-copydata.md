@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_COPYDATA (WinUser. h)
-description: Um aplicativo envia a mensagem do WM \_ CopyData para passar dados para outro aplicativo.
+title: WM_COPYDATA mensagem (Winuser.h)
+description: Um aplicativo envia a mensagem WM \_ COPYDATA para passar dados para outro aplicativo.
 ms.assetid: d937a260-9fd2-4450-a762-20120f589ab1
 keywords:
-- Troca de dados de mensagem WM_COPYDATA
+- WM_COPYDATA de dados de Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8160c88b11fa109e8bbfaa06f0f6c45c9b7daed0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4eb91b2544bf0ebf0e8767a611b422de9aaaf1d73161e47c7bf27768f4acecb4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118304480"
 ---
-# <a name="wm_copydata-message"></a>Mensagem do WM \_ CopyData
+# <a name="wm_copydata-message"></a>Mensagem WM \_ COPYDATA
 
-Um aplicativo envia a mensagem do **WM \_ CopyData** para passar dados para outro aplicativo.
+Um aplicativo envia a **mensagem WM \_ COPYDATA** para passar dados para outro aplicativo.
 
 
 ```C++
@@ -39,32 +39,32 @@ Um aplicativo envia a mensagem do **WM \_ CopyData** para passar dados para outr
 *wParam* 
 </dt> <dd>
 
-Um identificador para a janela que passa os dados.
+Um alça para a janela passando os dados.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**COPYDATASTRUCT**](/windows/win32/api/winuser/ns-winuser-copydatastruct) que contém os dados a serem passados.
+Um ponteiro para uma [**estrutura COPYDATASTRUCT**](/windows/win32/api/winuser/ns-winuser-copydatastruct) que contém os dados a serem passados.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se o aplicativo de recebimento processar essa mensagem, ele deverá retornar **true**; caso contrário, ele deve retornar **false**.
+Se o aplicativo receptor processa essa mensagem, ele deve retornar **TRUE**; caso contrário, ele deverá retornar **FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-Os dados que estão sendo passados não devem conter ponteiros ou outras referências a objetos não acessíveis para o aplicativo que está recebendo os dados.
+Os dados que estão sendo passados não devem conter ponteiros ou outras referências a objetos não acessíveis ao aplicativo que está recebendo os dados.
 
 Enquanto essa mensagem está sendo enviada, os dados referenciados não devem ser alterados por outro thread do processo de envio.
 
-O aplicativo de recebimento deve considerar os dados como somente leitura. O parâmetro *lParam* é válido somente durante o processamento da mensagem. O aplicativo de recebimento não deve liberar a memória referenciada pelo *lParam*. Se o aplicativo de recebimento precisar acessar os dados após o [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) retornar, ele deverá copiar os dados em um buffer local.
+O aplicativo receptor deve considerar os dados somente leitura. O *parâmetro lParam* é válido somente durante o processamento da mensagem. O aplicativo receptor não deve liberar a memória referenciada por *lParam*. Se o aplicativo receptor tiver que acessar os dados depois que [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) retornar, ele deverá copiar os dados para um buffer local.
 
 ## <a name="examples"></a>Exemplos
 
-Para obter um exemplo, consulte [usando a cópia de dados](using-data-copy.md).
+Para ver um exemplo, consulte [Usando Cópia de Dados](using-data-copy.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,7 +74,7 @@ Para obter um exemplo, consulte [usando a cópia de dados](using-data-copy.md).
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

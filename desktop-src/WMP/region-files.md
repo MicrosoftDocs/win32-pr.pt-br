@@ -3,21 +3,21 @@ title: Arquivos de região
 description: Arquivos de região
 ms.assetid: 20952eb9-4cd1-4d7d-b5cc-f1741977745f
 keywords:
-- Capas móveis do Windows Media Player, arquivos de arte
+- Windows Media Player Capas móveis, arquivos de arte
 - capas, arquivos de arte
 - arquivos para capas, arte
 - arquivos de arte para capas, arquivos de região
-- Capas móveis do Windows Media Player, arquivos de região
+- Windows Media Player Capas móveis, arquivos de região
 - capas, arquivos de região
 - Arquivos de região em capas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48d258afeab029df7218d3616b8aecdb62c72806
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 48ce26db27ef6ad3373916337c6378886a2846f71f1d8aa0e8d5266aae23eff4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117934063"
 ---
 # <a name="region-files"></a>Arquivos de região
 
@@ -30,9 +30,9 @@ Por exemplo, você pode desenhar um círculo vermelho em um local correspondente
 Os botões de pressionamento são usados quando você deseja definir formas que não sejam retângulos. Você ainda deve definir as coordenadas para cada botão para que imagens secundárias, como push e Disabled, possam estar localizadas corretamente. Na prática, cada botão é limitado por um retângulo, e esses retângulos de limite imaginários não devem se sobrepor.
 
 > [!Note]  
-> Os arquivos de arte de região não são necessários nas capas móveis do Windows Media Player 10 porque os tipos de botão não têm suporte no Windows Media Player 10 Mobile ou posterior.
+> os arquivos de arte de região não são necessários nas capas do Windows Media Player 10 mobile porque os tipos de botão não têm suporte no Windows Media Player 10 Mobile ou posterior.
 
- 
+ 
 
 A imagem a seguir é um arquivo de região típico.
 
@@ -47,9 +47,9 @@ Esse arquivo define as partes da capa para cada botão de tipo de clique. Cada c
 [**Arquivos de arte**](art-files-mobile.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

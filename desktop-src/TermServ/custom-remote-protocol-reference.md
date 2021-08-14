@@ -8,16 +8,16 @@ keywords:
 - Protocolo RDP (RDP) Serviços de Área de Trabalho Remota, referência do provedor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 557647b05dc48d3878144f8ab225ddcd77727323
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4b90f4ae544fc502550e85336c1b3851e9aedbe7a90ebb9f1e2b2d331252d302
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118131126"
 ---
 # <a name="remote-desktop-protocol-provider-reference"></a>Referência do provedor de protocolo RDP
 
-A API do provedor de protocolo RDP pode ser usada para criar um protocolo que personaliza a interação entre o serviço Serviços de Área de Trabalho Remota e os clientes da área de trabalho. Para obter mais informações, consulte os tópicos a seguir.
+A API do provedor de protocolo RDP pode ser usada para criar um protocolo que personaliza a interação entre o serviço Serviços de Área de Trabalho Remota e os clientes da área de trabalho. Para obter mais informações, consulte estes tópicos.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -36,9 +36,9 @@ A API do provedor de protocolo RDP pode ser usada para criar um protocolo que pe
 [Protocolos de Área de Trabalho Remota personalizados](custom-remote-desktop-protocols.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

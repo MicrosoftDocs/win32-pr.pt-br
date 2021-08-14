@@ -1,19 +1,19 @@
 ---
-description: Quando um thread está se comunicando ativamente com um dispositivo WIA (aquisição de imagem do Windows) (por exemplo, transferindo dados ou gravando Propriedades do dispositivo) WIA &\# 0034; bloqueios&\# 0034; o dispositivo.
+description: quando um thread está se comunicando ativamente com um dispositivo wia (Windows Image Acquisition) (por exemplo, transferindo dados ou gravando propriedades do dispositivo) WIA &\# 0034; bloqueios&\# 0034; o dispositivo.
 ms.assetid: 59533937-284a-4732-a73b-d2e0b5a9a370
 title: Comunicando-se com um dispositivo WIA em vários threads ou aplicativos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a7a4b518093c3a0fc09534d67e22e5349d44d09
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b6f54cc8fe9a3b60d684ff9a62def2c0cf8862576034b16f58d3dd369d2b8be0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118209260"
 ---
 # <a name="communicating-with-a-wia-device-in-multiple-threads-or-applications"></a>Comunicando-se com um dispositivo WIA em vários threads ou aplicativos
 
-Quando um thread está se comunicando ativamente com um dispositivo WIA (aquisição de imagem do Windows) (por exemplo, transferindo dados ou gravando Propriedades do dispositivo), o WIA "bloqueia" o dispositivo. Quando um dispositivo está bloqueado, nenhum outro thread ou processo pode se comunicar ativamente com esse dispositivo.
+quando um thread está se comunicando ativamente com um dispositivo wia (Windows Image Acquisition) (por exemplo, transferindo dados ou gravando propriedades do dispositivo), o WIA "bloqueia" o dispositivo. Quando um dispositivo está bloqueado, nenhum outro thread ou processo pode se comunicar ativamente com esse dispositivo.
 
 O WIA não proíbe que vários threads ou processos mantenham conexões com um único dispositivo. Ou seja, um dispositivo está bloqueado somente durante a comunicação real e dois ou mais aplicativos podem ter um único dispositivo selecionado simultaneamente.
 

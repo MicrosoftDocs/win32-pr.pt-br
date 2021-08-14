@@ -4,12 +4,12 @@ ms.assetid: ff729810-bd9d-4396-a6aa-bbeb558bd3fa
 title: Referência para Direct3D 10
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b47d0c109b6c5f3afa34ea6e0f92b7358c7e004
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c449e46bb070d4b984ca7a3237377dbcffda8f4e0df40b75eada8c215b6aae78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104456982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118303696"
 ---
 # <a name="reference-for-direct3d-10"></a>Referência para Direct3D 10
 
@@ -22,7 +22,7 @@ A API do Direct3D 10 é descrita nas seções a seguir:
 
 <dl> <dt>
 
-[Gráficos do Direct3D 10](d3d10-graphics.md)
+[Elementos gráficos do Direct3D 10](d3d10-graphics.md)
 </dt> </dl>
 
  

@@ -7,18 +7,18 @@ keywords:
 - Active Directory exemplos Active Directory, usando o catálogo global para localizar usuários em uma floresta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bea13ac3dbc4455d10dbd56f78e50c0f2ea27301
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ac868537e1bbb8d4b2400f5cd32dd0d55efeb448b10b40ae88aaf5a35bfb2d8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103634945"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118189709"
 ---
 # <a name="example-code-for-using-the-global-catalog-to-find-users-in-a-forest"></a>Código de exemplo para usar o catálogo global para localizar usuários em uma floresta
 
 Este tópico inclui exemplos de código usados para pesquisar usuários em uma floresta.
 
-O exemplo de código a seguir Visual Basic mostra como usar o ADSI para pesquisar usuários em uma floresta.
+o exemplo de código a seguir Visual Basic mostra como usar o ADSI para pesquisar usuários em uma floresta.
 
 
 ```VB
@@ -233,9 +233,9 @@ HRESULT PrintAllUsersInGlobalCatalog()
 
 
 
- 
+ 
 
- 
+ 
 
 
 

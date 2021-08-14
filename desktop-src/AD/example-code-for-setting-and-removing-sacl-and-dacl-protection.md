@@ -1,24 +1,24 @@
 ---
-title: Exemplo de código para configurar e remover a proteção SACL e DACL
+title: Código de exemplo para configurar e remover a proteção SACL e DACL
 description: Este tópico inclui um exemplo de código usado para definir e remover a proteção SACL e DACL.
 ms.assetid: 1982ee9a-022a-4e5d-be9c-fab8894afa9e
 ms.tgt_platform: multiple
 keywords:
-- Exemplos de Active Directory Active Directory, Configurando e removendo a proteção de SACL
+- Exemplos do Active Directory do Active Directory, configurando e removendo a proteção SACL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28c77cb1da29aa650fe4559c3da27c6a00f59e98
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 6c3ed7c32ebdeb7408037e2e3fcff294f0750fb6a8dcd19837ee9154c65f0c66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "105754888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190148"
 ---
-# <a name="example-code-for-setting-and-removing-sacl-and-dacl-protection"></a>Exemplo de código para configurar e remover a proteção SACL e DACL
+# <a name="example-code-for-setting-and-removing-sacl-and-dacl-protection"></a>Código de exemplo para configurar e remover a proteção SACL e DACL
 
 Este tópico inclui um exemplo de código usado para definir e remover a proteção SACL e DACL.
 
-O exemplo de código C e C++ a seguir define e remove os elementos se protegidos pela **\_ DACL \_** e por **\_ SACL \_** na propriedade [**IADsSecurityDescriptor. Control**](/windows/desktop/ADSI/iadssecuritydescriptor-property-methods) de um descritor de segurança de objeto.
+O exemplo de código C e C++ a seguir define e remove os elementos **\_ ES DACL \_ PROTECTED** e **ES \_ SACL \_ PROTECTED** na [**propriedade IADsSecurityDescriptor.Control**](/windows/desktop/ADSI/iadssecuritydescriptor-property-methods) de um descritor de segurança de objeto.
 
 
 ```C++
@@ -131,6 +131,6 @@ HRESULT SetSDInheritProtect(IADs *pObject, long lControl)
 
 
 
- 
+ 
 
- 
+ 

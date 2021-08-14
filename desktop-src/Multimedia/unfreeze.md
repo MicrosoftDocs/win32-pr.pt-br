@@ -1,9 +1,9 @@
 ---
-title: descongelar comando
-description: O comando descongelar reabilita a aquisição de vídeo para o buffer de quadro após ele ter sido desabilitado pelo comando Freeze. Dispositivos digitais de vídeo, VCR e de sobreposição de vídeo reconhecem este comando.
+title: Comando unfreeze
+description: O comando unfreeze reaables video acquisition to the frame buffer after it's been disabled by the freeze command. Os dispositivos de vídeo digital, VCR e sobreposição de vídeo reconhecem esse comando.
 ms.assetid: ca90c299-2003-44cb-a879-4bc767480965
 keywords:
-- descongelar multimídia do Windows de comando
+- Unfreeze command Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 155ba6b65fb08411d8404920c8f3337d1bddbcb1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 88fe45b1346872483a4012c5f5d161dcd61020c64349fee254ae4bf337b4be8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118370806"
 ---
-# <a name="unfreeze-command"></a>descongelar comando
+# <a name="unfreeze-command"></a>Comando unfreeze
 
-O comando descongelar reabilita a aquisição de vídeo para o buffer de quadro após ele ter sido desabilitado pelo comando [Freeze](freeze.md) . Dispositivos digitais de vídeo, VCR e de sobreposição de vídeo reconhecem este comando.
+O comando unfreeze reaables video acquisition to the frame buffer after it's been disabled by the [freeze](freeze.md) command. Os dispositivos de vídeo digital, VCR e sobreposição de vídeo reconhecem esse comando.
 
-Para enviar esse comando, chame a função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) com o parâmetro *lpszCommand* definido da seguinte maneira.
+Para enviar esse comando, chame a [**função mciSendString**](/previous-versions//dd757161(v=vs.85)) com *o parâmetro lpszCommand* definido da seguinte forma.
 
 ``` syntax
 _stprintf_s(
@@ -49,29 +49,29 @@ Identificador de um dispositivo MCI. Esse identificador ou alias é atribuído q
 <span id="lpszUnfreeze"></span><span id="lpszunfreeze"></span><span id="LPSZUNFREEZE"></span>*lpszUnfreeze*
 </dt> <dd>
 
-Sinalizador para reabilitar a aquisição de vídeo para o buffer de quadros. A tabela a seguir lista os tipos de dispositivo que reconhecem o comando **descongelar** e os sinalizadores usados por cada tipo.
+Sinalizador para reablucar a aquisição de vídeo para o buffer de quadro. A tabela a seguir lista os tipos de dispositivo que reconhecem o **comando unfreeze** e os sinalizadores usados por cada tipo.
 
 
 
 | Valor        | Significado        |
 |--------------|----------------|
-| digitalvideo | no *retângulo* |
-| overlay      | no *retângulo* |
-| videocassete          | saída de entrada   |
+| digitalvideo | retângulo *em* |
+| overlay      | retângulo *em* |
+| Videocassete          | saída de entrada   |
 
 
 
  
 
-A tabela a seguir lista os sinalizadores que podem ser especificados no parâmetro **lpszUnfreeze** e seus significados.
+A tabela a seguir lista os sinalizadores que podem ser especificados no **parâmetro lpszUnfreeze** e seus significados.
 
 
 
 | Valor          | Significado                                                                                                                                                                                                                                                                                    |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| no *retângulo* | Especifica a região que terá a aquisição de vídeo reativada. O retângulo é relativo à origem do buffer de vídeo e é especificado como *X1 Y1 x2 y2*. As coordenadas *X1 Y1* especificam o canto superior esquerdo do retângulo, e as coordenadas *x2 y2* especificam a largura e a altura. |
-| input          | Descongele a imagem de entrada.                                                                                                                                                                                                                                                                  |
-| output         | Descongele a imagem de saída. Se nem "Input" nem "output" for fornecido, "output" será assumido.                                                                                                                                                                                                  |
+| retângulo *em* | Especifica a região que terá a aquisição de vídeo reaabled. O retângulo é relativo à origem do buffer de vídeo e é especificado como *X1 Y1 X2 Y2*. As coordenadas *X1 Y1* especificam o canto superior esquerdo do retângulo e as coordenadas *X2 Y2* especificam a largura e a altura. |
+| input          | Desaconselhe a imagem de entrada.                                                                                                                                                                                                                                                                  |
+| output         | Desaconselhe a imagem de saída. Se nem "entrada" nem "saída" for dado, "saída" será assumida.                                                                                                                                                                                                  |
 
 
 
@@ -82,17 +82,17 @@ A tabela a seguir lista os sinalizadores que podem ser especificados no parâmet
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Pode ser "Wait", "notificar" ou ambos. Para dispositivos de vídeo digital e VCR, o "teste" também pode ser especificado. Para obter mais informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).
+Pode ser "wait", "notify" ou ambos. Para dispositivos de vídeo digital e VCR, "teste" também pode ser especificado. Para obter mais informações sobre esses sinalizadores, consulte [Os sinalizadores de espera, notificação e teste.](the-wait-notify-and-test-flags.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro de outra forma.
+Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 ## <a name="examples"></a>Exemplos
 
-O comando a seguir destrava uma região do buffer de vídeo.
+O comando a seguir desconsincha uma região do buffer de vídeo.
 
 ``` syntax
 unfreeze vboard at 10 20 90 165
@@ -113,13 +113,13 @@ unfreeze vboard at 10 20 90 165
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Cadeias de caracteres de comando MCI](mci-command-strings.md)
 </dt> <dt>
 
-[Trave](freeze.md)
+[Congelar](freeze.md)
 </dt> </dl>
 
  

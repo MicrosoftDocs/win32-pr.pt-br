@@ -1,5 +1,5 @@
 ---
-description: Cria um enumerador de informações de propriedade para cada dispositivo disponível de aquisição de imagem do Windows (WIA) 2,0.
+description: cria um enumerador de informações de propriedade para cada dispositivo disponível 2,0 WIA (aquisição de imagem Windows).
 ms.assetid: e37b73d5-5192-46e4-bb1c-bd1ef41f1d6c
 title: 'Método IWiaDevMgr2:: EnumDeviceInfo (WIA. h)'
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: bd9e9281b625f4cec5377537d82a304045b95a3f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b646c494d9793986373d45db2d89dfde91e744196d86d28aceab35874f504d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118208718"
 ---
 # <a name="iwiadevmgr2enumdeviceinfo-method"></a>Método IWiaDevMgr2:: EnumDeviceInfo
 
-Cria um enumerador de informações de propriedade para cada dispositivo disponível de aquisição de imagem do Windows (WIA) 2,0.
+cria um enumerador de informações de propriedade para cada dispositivo disponível 2,0 WIA (aquisição de imagem Windows).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -80,7 +80,7 @@ Recebe o endereço de um ponteiro para a interface de [**\_ \_ informações de 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -98,8 +98,8 @@ Os aplicativos devem chamar o método [IUnknown:: Release](/windows/win32/api/un
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
 | parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
 

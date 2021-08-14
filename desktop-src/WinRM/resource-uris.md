@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 665c73caf5cf636ab7f0a0162f488ff073917984
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 93f13e18abd7ea452b84043dfef3d6bf6b18be6c476c0dfff9a34e42e45dbc14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104499052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118323718"
 ---
 # <a name="resource-uris"></a>URIs do Recurso
 
@@ -27,15 +27,15 @@ Um URI consiste em um prefixo e um caminho para um recurso, como é mostrado no 
 
 "http://schemas.microsoft.com/wbem/wsman/1/wmi/root/cimv2/Win32\_LogicalDisk"
 
-Essa especificação de esquema indica que o URI é baseado na versão 1 do protocolo WS-Management oficial e que o recurso é um [**\_ LogicalDisk Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) no namespace "raiz \\ cimv2" do repositório do WMI. Os prefixos de URI contêm uma especificação de esquema, como "schemas.microsoft.com/wbem/wsman/1/wmi" e um tipo específico de recurso, como o **\_ LogicalDisk do Win32**. Para obter mais informações sobre como identificar uma instância específica de uma classe WMI, consulte [gerenciamento remoto do Windows e WMI](windows-remote-management-and-wmi.md).
+Essa especificação de esquema indica que o URI é baseado na versão 1 do protocolo WS-Management oficial e que o recurso é um [**\_ LogicalDisk Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) no namespace "raiz \\ cimv2" do repositório do WMI. Os prefixos de URI contêm uma especificação de esquema, como "schemas.microsoft.com/wbem/wsman/1/wmi" e um tipo específico de recurso, como o **\_ LogicalDisk do Win32**. para obter mais informações sobre como identificar uma instância específica de uma classe WMI, consulte [Gerenciamento Remoto do Windows e WMI](windows-remote-management-and-wmi.md).
 
 Para obter mais informações, consulte [prefixos de URI](uri-prefixes.md).
 
 ## <a name="types-of-resource-uris"></a>Tipos de URIs de recurso
 
-Embora [*Instrumentação de gerenciamento do Windows (WMI)*](windows-remote-management-glossary.md) seja a principal fonte de dados de gerenciamento para sistemas operacionais baseados no Windows, também existem outras fontes de esquema de gerenciamento.
+embora [*Instrumentação de Gerenciamento do Windows (WMI)*](windows-remote-management-glossary.md) seja a principal fonte de dados de gerenciamento para sistemas operacionais baseados em Windows, outras fontes de esquema de gerenciamento também existem.
 
-A lista a seguir descreve vários tipos de URIs de recursos usados pelo Gerenciamento Remoto do Windows:
+a lista a seguir descreve vários tipos de URIs de recursos usados pelo Gerenciamento Remoto do Windows:
 
 -   URIs de WMI
 
@@ -68,7 +68,7 @@ A lista a seguir descreve vários tipos de URIs de recursos usados pelo Gerencia
 
 O [*plug-in WMI*](windows-remote-management-glossary.md) preserva o caso do URI de recurso recebido em uma solicitação. No entanto, para garantir a interoperabilidade com outras implementações do protocolo WS-Management, use o caso correto para o recurso solicitado no URI de recurso. O caso correto é a ortografia definida pelo provedor de recursos.
 
-Enquanto os URIs de recurso não exigem diferenciação de maiúsculas e minúsculas, o [*fragmento*](windows-remote-management-glossary.md) XML faz. Um fragmento especifica apenas uma propriedade, em vez de todo o conjunto de propriedades de um recurso. No caso de recursos do WMI, a sintaxe do fragmento Obtém uma propriedade de uma instância de recurso. Por exemplo, obter apenas a propriedade **version** de [**\_ OperatingSystem do Win32**](/windows/desktop/CIMWin32Prov/win32-operatingsystem) requer o uso de um fragmento. Para obter mais informações sobre fragmentos, consulte "adicionando um seletor a um objeto ResourceLocator ou IWSManResourceLocator" em [gerenciamento remoto do Windows e WMI](windows-remote-management-and-wmi.md).
+Enquanto os URIs de recurso não exigem diferenciação de maiúsculas e minúsculas, o [*fragmento*](windows-remote-management-glossary.md) XML faz. Um fragmento especifica apenas uma propriedade, em vez de todo o conjunto de propriedades de um recurso. No caso de recursos do WMI, a sintaxe do fragmento Obtém uma propriedade de uma instância de recurso. Por exemplo, obter apenas a propriedade **version** de [**\_ OperatingSystem do Win32**](/windows/desktop/CIMWin32Prov/win32-operatingsystem) requer o uso de um fragmento. para obter mais informações sobre fragmentos, consulte "adicionando um seletor a um objeto ResourceLocator ou IWSManResourceLocator" em [Gerenciamento Remoto do Windows e WMI](windows-remote-management-and-wmi.md).
 
 Seguindo os padrões de XML e [*XPath*](windows-remote-management-glossary.md) , o [*plug-in do WMI*](windows-remote-management-glossary.md) impõe a diferenciação de maiúsculas e minúsculas para fragmentos e XML que definem os parâmetros de entrada para um método. Diferenciar maiúsculas de minúsculas é necessário para dar suporte ao padrão XPath 1.0/nível 1. Para obter dados WMI por meio do WinRM, a diferenciação de maiúsculas e minúsculas significa que os nomes de classes, propriedades e métodos WMI devem corresponder ao caso do nome encontrado no repositório WMI.
 
@@ -111,7 +111,7 @@ WScript.Echo xml
 
 <dl> <dt>
 
-[Sobre Gerenciamento Remoto do Windows](about-windows-remote-management.md)
+[sobre Gerenciamento Remoto do Windows](about-windows-remote-management.md)
 </dt> <dt>
 
 [Gerenciamento de hardware remoto](remote-hardware-management.md)
@@ -120,6 +120,6 @@ WScript.Echo xml
 [**ResourceLocator**](resourcelocator.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

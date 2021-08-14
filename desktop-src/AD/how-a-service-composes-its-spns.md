@@ -7,12 +7,12 @@ keywords:
 - nome da entidade de serviço AD, como um serviço compõe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5611527cc3c240eebc195058ce39daab71aeef23
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fdd4c0ac9c871c76e9e8771a688d203898674e477426ebd788ee34fe894011a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118188640"
 ---
 # <a name="how-a-service-composes-its-spns"></a>Como um serviço compõe seus SPNs
 
@@ -30,9 +30,9 @@ A matriz de nomes retornada por [**DsGetSpn**](/windows/desktop/api/Ntdsapi/nf-n
 
 Lembre-se de que as funções [**DsGetSpn**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsgetspna), [**DsWriteAccountSpn**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dswriteaccountspna)e [**DsServerRegisterSpn**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsserverregisterspna) não verificam se os SPNs são exclusivos. Como a autenticação mútua falhará se um cliente apresentar um SPN que não é exclusivo, verifique a exclusividade antes de registrar um SPN. Para fazer isso, pesquise o catálogo global (GC) em busca de atributos de **servicePrincipalName** que correspondam ao seu SPN. Para obter mais informações sobre como pesquisar o GC, consulte [pesquisando o catálogo global](searching-global-catalog-contents.md).
 
- 
+ 
 
- 
+ 
 
 
 

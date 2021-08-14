@@ -4,12 +4,12 @@ ms.assetid: 252015f6-ea63-1a72-ce13-25a4fccdab0b
 title: Gráficos de áudio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab32d5aba411b1a93d5b67ec49c86560ca2441ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2cb1472c7eeb1811b0cd0169431cabbc81dc44a321ef492b88d873b651a5e1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105785273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118192342"
 ---
 # <a name="audio-graphs"></a>Gráficos de áudio
 
@@ -17,21 +17,21 @@ Esta seção lista os tópicos de visão geral sobre o grafo de áudio XAudio2.
 
 <dl> <dt>
 
-<span id="XAudio2_Audio_Graph"></span><span id="xaudio2_audio_graph"></span><span id="XAUDIO2_AUDIO_GRAPH"></span>[Grafo de áudio XAudio2](xaudio2-audio-graph.md)
+<span id="XAudio2_Audio_Graph"></span><span id="xaudio2_audio_graph"></span><span id="XAUDIO2_AUDIO_GRAPH"></span>[Graph de áudio XAudio2](xaudio2-audio-graph.md)
 </dt> <dd>
 
 Apresenta o grafo de áudio XAudio2.
 
 </dd> <dt>
 
-<span id="How_to__Build_a_Basic_Audio_Processing_Graph"></span><span id="how_to__build_a_basic_audio_processing_graph"></span><span id="HOW_TO__BUILD_A_BASIC_AUDIO_PROCESSING_GRAPH"></span>[Como criar um grafo básico de processamento de áudio](how-to--build-a-basic-audio-processing-graph.md)
+<span id="How_to__Build_a_Basic_Audio_Processing_Graph"></span><span id="how_to__build_a_basic_audio_processing_graph"></span><span id="HOW_TO__BUILD_A_BASIC_AUDIO_PROCESSING_GRAPH"></span>[Como criar um Graph de processamento de áudio básico](how-to--build-a-basic-audio-processing-graph.md)
 </dt> <dd>
 
 Descreve as etapas mínimas necessárias para criar um grafo de áudio.
 
 </dd> <dt>
 
-<span id="How_to__Dynamically_Add_or_Remove_Voices_From_an_Audio_Graph"></span><span id="how_to__dynamically_add_or_remove_voices_from_an_audio_graph"></span><span id="HOW_TO__DYNAMICALLY_ADD_OR_REMOVE_VOICES_FROM_AN_AUDIO_GRAPH"></span>[Como: Adicionar ou remover vozes dinamicamente de um grafo de áudio](how-to--dynamically-add-or-remove-voices-from-an-audio-graph.md)
+<span id="How_to__Dynamically_Add_or_Remove_Voices_From_an_Audio_Graph"></span><span id="how_to__dynamically_add_or_remove_voices_from_an_audio_graph"></span><span id="HOW_TO__DYNAMICALLY_ADD_OR_REMOVE_VOICES_FROM_AN_AUDIO_GRAPH"></span>[Como: Adicionar ou remover vozes dinamicamente de um Graph de áudio](how-to--dynamically-add-or-remove-voices-from-an-audio-graph.md)
 </dt> <dd>
 
 Descreve como alterar dinamicamente um gráfico de áudio.

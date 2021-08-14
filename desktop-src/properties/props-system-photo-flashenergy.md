@@ -4,12 +4,12 @@ ms.assetid: afdd1bc6-87c3-4c47-9d29-43422fd699b3
 title: System. Photo. FlashEnergy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09b4277b1cca48666f14ac2b68e31317ceda82d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 431d311725717d9da0b696b79567d12908f7c48f867bc0a105304b389e23de94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118229961"
 ---
 # <a name="systemphotoflashenergy"></a>System. Photo. FlashEnergy
 

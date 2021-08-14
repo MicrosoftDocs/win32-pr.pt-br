@@ -1,11 +1,11 @@
 ---
-title: Propriedade DisplayName IResultVerb (WdsSharedIDL. h)
+title: Propriedade IResultVerb DisplayName (WdsSharedIDL.h)
 description: Essa propriedade retorna um ponteiro para o nome de exibição localizado para o verbo.
 ms.assetid: f1f4a30e-ecfb-4091-b9cd-312e427d0eb4
 keywords:
-- Propriedade DisplayName recursos de ambiente do Windows herdados
-- Propriedade DisplayName recursos de ambiente do Windows herdados, interface IResultVerb
-- Recursos do ambiente Windows herdado da interface IResultVerb, Propriedade DisplayName
+- Propriedade DisplayName Herdado Windows Recursos de Ambiente
+- Propriedade DisplayName Herdado Windows recursos de ambiente, interface IResultVerb
+- Interface IResultVerb Recursos Windows ambiente herdado, propriedade DisplayName
 topic_type:
 - apiref
 api_name:
@@ -17,17 +17,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 721831274fc87ee65c8ee1655fdb7b38f80e1114
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 45d7f72d0d028fa6a6ecdede7f2d88e3e3dea0a37a14cc6365dc5da2d14992af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117694714"
 ---
-# <a name="iresultverbdisplayname-property"></a>IResultVerb::D Propriedade isplayname
+# <a name="iresultverbdisplayname-property"></a>Propriedade IResultVerb::D isplayName
 
 > [!NOTE]
-> O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003. Em versões posteriores, use a [API de pesquisa do Windows](../search/-search-reference-entry-page.md) em vez disso. 
+> Windows A Pesquisa de Área de Trabalho 2.x é uma tecnologia obsoleta que estava originalmente disponível como um complemento para o Windows XP e Windows Server 2003. Em versões posteriores, use a [API Windows Search.](../search/-search-reference-entry-page.md) 
 
 Essa propriedade retorna um ponteiro para o nome de exibição localizado para o verbo.
 
@@ -54,10 +54,10 @@ Essa propriedade retorna um ponteiro para o nome de exibição localizado para o
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows XP com SP2\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003 com SP1\]<br/>                             |
-| Redistribuível<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                             |
-| parâmetro<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos da área de trabalho SP2\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows Servidor 2003 somente com aplicativos da área de trabalho SP1 \[\]<br/>                             |
+| Redistribuível<br/>          | Windows Pesquisa de Área de Trabalho (WDS) 2.6.5<br/>                                             |
+| Cabeçalho<br/>                   | <dl> <dt>WdsSharedIDL.h</dt> </dl> |
 
 
 

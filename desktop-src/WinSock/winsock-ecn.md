@@ -1,24 +1,24 @@
 ---
-title: Notificação de congestionamento explícita do Winsock (ECN)
-description: Alguns aplicativos e/ou protocolos baseados no protocolo UDP (por exemplo, QUIC) buscam aproveitar o uso de pontos de código ECN (notificação de congestionamento explícito) para melhorar a latência e a tremibilidade em redes com congestionamento.
+title: Notificação de congestionamento explícito do Winsock (ECN)
+description: Alguns aplicativos e/ou protocolos baseados no protocolo UDP (por exemplo, QUIC) buscam aproveitar o uso de pontos de código de ECN (notificação de congestionamento explícito) para melhorar a latência e a tremibilidade em redes com congestionamento.
 ms.topic: article
 ms.date: 11/13/2020
-ms.openlocfilehash: 090ac9b0575cb491aa6d726e7507223156460ace
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 79b38611cd0301d0b5d301592eec02b68c02353246c67a6c94528417623834f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110559930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118322019"
 ---
-# <a name="winsock-explicit-congestion-notification-ecn"></a>Notificação de congestionamento explícita do Winsock (ECN)
+# <a name="winsock-explicit-congestion-notification-ecn"></a>Notificação de congestionamento explícito do Winsock (ECN)
 
 ## <a name="introduction"></a>Introdução
 
-Alguns aplicativos e/ou protocolos baseados no protocolo UDP (por exemplo, QUIC) buscam aproveitar o uso de pontos de código ECN (notificação de congestionamento explícito) para melhorar a latência e a tremibilidade em redes com congestionamento.
+Alguns aplicativos e/ou protocolos baseados no protocolo UDP (por exemplo, QUIC) buscam aproveitar o uso de pontos de código de ECN (notificação de congestionamento explícito) para melhorar a latência e a tremibilidade em redes com congestionamento.
 
 As APIs winsock ECN estendem a interface **getsockopt** setsockopt, bem como a interface de mensagem de controle /  &mdash; [**WSASendMsg**](/windows/win32/api/winsock2/nf-winsock2-wsasendmsg) / [**LPFN_WSARECVMSG (WSARecvMsg)**](/windows/win32/api/mswsock/nc-mswsock-lpfn_wsarecvmsg) com suporte para modificar e receber pontos de código ECN em &mdash; títulos IP. A funcionalidade fornecida permite obter e definir pontos de código ECN por pacote.
 
-Para obter mais informações sobre ECN, consulte [Adição de ECN (Notificação de Congestionamento Explícita) ao IP](https://tools.ietf.org/html/rfc3168).
+Para obter mais informações sobre eCN, consulte [Adição de ECN (Notificação de Congestionamento Explícita) ao IP](https://tools.ietf.org/html/rfc3168).
 
 Seu aplicativo não tem permissão para especificar o ponto de código DE (Congestionamento Encontrado) ao enviar datagramas. O envio retornará com o **erro WSAEINVAL.**
 
@@ -36,17 +36,17 @@ Consulte também a [**estrutura WSAMSG.**](/windows/win32/api/ws2def/ns-ws2def-w
 - **Descrição:** especifica/recebe o ponto de código ECN no campo de header IPv4 do Tipo de Serviço (TOS).
 
 - **Protocolo**: IPv6
-- **Cmsg_level**: IPPROTO_IPV6
+- **Cmsg_level:** IPPROTO_IPV6
 - **Cmsg_type:** IPV6_ECN (50 decimal)
-- **Descrição**: especifica/recebe o ECN ponto no campo de cabeçalho IPv6 da classe de tráfego.
+- **Descrição:** especifica/recebe o ponto de código ECN no campo de header IPv6 da Classe de Tráfego.
 
 ## <a name="specify-ecn-with-wsasetrecvipecn"></a>Especificar ECN com WSASetRecvIPEcn
 
-[**WSASetRecvIPEcn**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsasetrecvipecn) é uma função embutida, definida em `ws2tcpip.h` .
+[**WSASetRecvIPEcn**](/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsasetrecvipecn) é uma função em linha, definida em `ws2tcpip.h` .
 
-Chame **WSASetRecvIPEcn** para especificar se a pilha de IP deve preencher o buffer de controle com uma mensagem contendo o ECN ponto do tipo de campo de cabeçalho IPv4 de serviço (ou campo de cabeçalho IPv6 de classe de tráfego) em um datagrama recebido. Quando definido como `TRUE` , a função [**LPFN_WSARECVMSG (WSARECVMSG)**](/windows/win32/api/mswsock/nc-mswsock-lpfn_wsarecvmsg) retorna dados de controle opcionais contendo o ponto ECN do datagrama recebido. O tipo de mensagem de controle retornado será **IP_ECN** (ou **IPV6_ECN**) com o nível **IPPROTO_IP** (ou **IPPROTO_IPV6**). Os dados da mensagem de controle são retornados como um **int**. Essa opção só é válida em soquetes de datagrama (o tipo de soquete deve ser **SOCK_DGRAM**).
+Chame **WSASetRecvIPEcn** para especificar se a pilha ip deve preencher o buffer de controle com uma mensagem que contém o ponto de código ECN do campo de título Tipo de Serviço IPv4 (ou campo de título IPv6 da Classe de Tráfego) em um datagrama recebido. Quando definida como `TRUE` , a função LPFN_WSARECVMSG [**(WSARecvMsg)**](/windows/win32/api/mswsock/nc-mswsock-lpfn_wsarecvmsg) retorna dados de controle opcionais que contêm o ponto de código ECN do datagrama recebido. O tipo de mensagem de controle retornado **será IP_ECN** **(ou IPV6_ECN**) com nível **IPPROTO_IP** **(ou IPPROTO_IPV6**). Os dados da mensagem de controle são retornados como **um INT**. Essa opção é válida somente em soquetes de datagrama (o tipo de **soquete** deve ser SOCK_DGRAM ).
 
-## <a name="code-example-1mdashapplication-advertising-ecn-support"></a>Exemplo de código 1 &mdash; anúncio de aplicativo com suporte a ECN
+## <a name="code-example-1mdashapplication-advertising-ecn-support"></a>Exemplo de código 1 &mdash; aplicativo anunciando suporte a ECN
 
 ```cpp
 #define ECN_ECT_0 2
@@ -93,7 +93,7 @@ void sendEcn(SOCKET sock, PSOCKADDR_STORAGE addr, LPFN_WSASENDMSG sendmsg, PCHAR
 }
 ```
 
-## <a name="code-example-2mdashapplication-detecting-congestion"></a>Exemplo de código 2 &mdash; aplicativo de detecção de congestionamento
+## <a name="code-example-2mdashapplication-detecting-congestion"></a>Exemplo de código 2 &mdash; aplicativo detectando congestionamento
 
 ```cpp
 #define ECN_ECT_CE 3

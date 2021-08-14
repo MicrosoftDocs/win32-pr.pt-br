@@ -4,12 +4,12 @@ ms.assetid: 02434cb9-390c-4cf0-9941-b833ace55685
 title: Ferramenta de gravador de teste do VSS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61ffdbb513697a701866be5ceeb40168e8c28368
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b93f0b81bd5e27db9fdfb70ca52e6f43bbb1e853af87bc12e1d76f01d7966ef3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118344228"
 ---
 # <a name="vss-test-writer-tool"></a>Ferramenta de gravador de teste do VSS
 
@@ -18,11 +18,11 @@ O gravador de teste é um utilitário que você pode usar para testar aplicativo
 Cada instância do gravador é inicializada com um arquivo de configuração XML que descreve exatamente quais componentes serão relatados pelo gravador e como o gravador se comporta. O gravador pode ser configurado para relatar vários tipos de cenários, incluindo cenários mais complicados usando as interfaces incrementais e diferenciais. O gravador executará verificações em vários pontos durante o processo para garantir que o solicitante esteja se comportando de maneira adequada. Depois que a restauração for concluída, o gravador verificará se todos os arquivos necessários foram restaurados sem corrupção. O gravador também pode ser configurado para executar outras operações, como eventos específicos com falha.
 
 > [!Note]  
-> Essa ferramenta está incluída no SDK (Software Development Kit) do Microsoft Windows para Windows Vista e posterior. Você pode baixar o SDK do Windows do [https://msdn.microsoft.com/windowsvista](https://msdn.microsoft.com/windows/default.aspx) .
+> essa ferramenta está incluída no SDK (Software Development Kit) do Microsoft Windows para Windows Vista e posterior. você pode baixar o SDK do Windows do [https://msdn.microsoft.com/windowsvista](https://msdn.microsoft.com/windows/default.aspx) .
 
  
 
-Na instalação do SDK do Windows, a ferramenta VssSampleProvider pode ser encontrada em `%Program Files(x86)%\Windows Kits\8.1\bin\x64` (para o Windows de 64 bits) e `%Program Files(x86)%\Windows Kits\8.1\bin\x86` .
+na instalação do SDK do Windows, a ferramenta VssSampleProvider pode ser encontrada em `%Program Files(x86)%\Windows Kits\8.1\bin\x64` (para a Windows de 64 bits) e `%Program Files(x86)%\Windows Kits\8.1\bin\x86` .
 
 ## <a name="running-the-test-writer-tool"></a>Executando a ferramenta de gravador de teste
 
@@ -163,7 +163,7 @@ O elemento RestoreMethod a seguir contém um subelemento AlternateLocationMappin
 </RestoreMethod>
 ```
 
-Este exemplo especifica que o solicitante deve primeiro tentar restaurar todos os arquivos que correspondem a c: \\ files \\ \* . txt para o diretório c: \\ files. Se um desses arquivos não puder ser substituído, o solicitante deverá restaurar todos os arquivos para o diretório c: \\ altfiles. O solicitante deve salvar esse mapeamento de local alternativo usando o método [**IVssBackupComponents:: AddAlternativeLocationMapping**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addalternativelocationmapping) . Se o gravador de teste estiver configurado para verificar se os arquivos foram restaurados, ele também verificará se o solicitante chamou **AddAlternativeLocationMapping**.
+Este exemplo especifica que o solicitante deve primeiro tentar restaurar todos os arquivos que correspondem a c: \\ files \\ \*.txt para o diretório c: \\ files. Se um desses arquivos não puder ser substituído, o solicitante deverá restaurar todos os arquivos para o diretório c: \\ altfiles. O solicitante deve salvar esse mapeamento de local alternativo usando o método [**IVssBackupComponents:: AddAlternativeLocationMapping**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addalternativelocationmapping) . Se o gravador de teste estiver configurado para verificar se os arquivos foram restaurados, ele também verificará se o solicitante chamou **AddAlternativeLocationMapping**.
 
 ## <a name="specifying-files-to-be-excluded"></a>Especificando os arquivos a serem excluídos
 
@@ -179,9 +179,9 @@ Aqui está um exemplo de um subelemento excludefile que exclui todos os arquivos
 
 ## <a name="backing-up-spit-writers"></a>Fazendo backup de gravadores saliva
 
-Muitos gravadores atuam como "saliva gravadores". Um gravador saliva cria arquivos intermediários, ou "arquivos saliva", com base em um conjunto original de arquivos e coloca os arquivos saliva em um local alternativo no momento do backup. O gravador usa o método [**IVssWMFiledesc:: GetAlternateLocation**](/windows/desktop/api/VsWriter/nf-vswriter-ivsswmfiledesc-getalternatelocation) para notificar o solicitante de que ele deve fazer backup desses arquivos a partir do local alternativo. No entanto, esses arquivos ainda devem ser restaurados para o local ativo dos arquivos originais. O gravador de teste pode ser configurado para atuar como um gravador saliva para uma determinada especificação de arquivo.
+Muitos gravadores atuam como "saliva gravadores". Um gravador saliva cria arquivos intermediários, ou "arquivos saliva", com base em um conjunto original de arquivos e coloca os arquivos saliva em um local alternativo no momento do backup. O autor usa o método [**IVssWMFiledesc::GetAlternateLocation**](/windows/desktop/api/VsWriter/nf-vswriter-ivsswmfiledesc-getalternatelocation) para notificar o solicitante de que ele deve fazer o back-up desses arquivos do local alternativo. No entanto, esses arquivos ainda devem ser restaurados para o local ativo dos arquivos originais. O Test Writer pode ser configurado para atuar como um autor de técnicas para uma especificação de arquivo específica.
 
-O elemento Componentfile a seguir contém um atributo alternatePath:
+O seguinte elemento ComponentFile contém um atributo alternatePath:
 
 ``` syntax
     <ComponentFile path="c:\files"
@@ -190,13 +190,13 @@ O elemento Componentfile a seguir contém um atributo alternatePath:
                    alternatePath="c:\files\spit" />
 ```
 
-Este exemplo configura o gravador de teste para copiar todos os arquivos que correspondem a c: \\ files \\ \* . txt para o diretório c: \\ files \\ saliva imediatamente antes da criação da cópia de sombra de volume. O solicitante deve fazer backup dos arquivos do diretório c: \\ files \\ saliva Se o gravador de teste estiver configurado para excluir arquivos, ele excluirá os arquivos originais antes da criação da cópia de sombra, para que eles não apareçam no diretório c: \\ files no volume da cópia de sombra. Nesse caso, os arquivos em c: \\ files \\ saliva são excluídos após a criação da cópia de sombra, para que seja necessário fazer backup do diretório c: \\ files \\ saliva no volume da cópia de sombra.
+Este exemplo configura o Test Writer para copiar todos os arquivos correspondentes a c: arquivos.txt para o diretório c: arquivos imediatamente antes da criação da cópia de \\ \\ \* sombra de \\ \\ volume. O solicitante deve fazer o back-up dos arquivos do diretório c: \\ files \\ directory. Se o Test Writer estiver configurado para excluir arquivos, ele excluirá os arquivos originais antes que a cópia de sombra seja criada, para que eles não apareçam no diretório de arquivos c: no volume de cópia \\ de sombra. Nesse caso, os arquivos em c: arquivos são excluídos depois que a cópia de sombra é criada, portanto, eles devem ser copiados em backup do diretório de arquivos c: no volume de cópia \\ \\ de \\ \\ sombra.
 
-## <a name="reporting-component-dependencies"></a>Dependências de componente de relatório
+## <a name="reporting-component-dependencies"></a>Dependências do componente de relatório
 
-Os gravadores podem especificar uma dependência entre um componente local e um componente existente em outro gravador. Essas dependências são relatadas ao solicitante usando [**IVssWMComponent:: getdependency**](/windows/desktop/api/VsBackup/nf-vsbackup-ivsswmcomponent-getdependency). O gravador de teste pode ser configurado para relatar essas dependências adicionando um ou mais subelementos de dependência ao elemento de componente.
+Os autores podem especificar uma dependência entre um componente local e um componente que existe em outro autor. Essas dependências são relatadas ao solicitante usando [**IVssWMComponent::GetDependency**](/windows/desktop/api/VsBackup/nf-vsbackup-ivsswmcomponent-getdependency). O Test Writer pode ser configurado para relatar essas dependências adicionando um ou mais subelementos de Dependência ao elemento Component.
 
-O elemento de componente a seguir contém um subelemento de dependência:
+O seguinte elemento Component contém um subelemento Dependency:
 
 ``` syntax
     <Component componentType="filegroup"
@@ -209,48 +209,48 @@ O elemento de componente a seguir contém um subelemento de dependência:
     </Component>
 ```
 
-A dependência é especificada como atributos do elemento Dependency. WriterId é a ID de classe do gravador que contém o destino da dependência, logicalPath é o caminho lógico para o componente nesse gravador e ComponentName é o nome do componente. Nesse caso, se o solicitante estiver fazendo backup de "WriterComponent" no gravador atual, ele também deverá fazer backup do componente "ComponentPath \\ Writer2Component" no gravador de destino.
+A dependência é especificada como atributos do elemento Dependency. writerId é a ID de classe do autor que contém o destino da dependência, logicalPath é o caminho lógico para o componente nesse autor e componentName é o nome do componente. Nesse caso, se o solicitante estiver fazer o back-up de "WriterComponent" no autor atual, ele também deverá fazer o back-up do componente "ComponentPath Writer2Component" no autor de \\ destino.
 
 > [!Note]  
-> O gravador de teste não executa nenhuma verificação para garantir que as dependências sejam respeitadas.
+> O Test Writer não executa nenhuma verificação para garantir que as dependências sejam adida.
 
  
 
 ## <a name="failing-events"></a>Eventos com falha
 
-O gravador de teste pode ser configurado para falhar em qualquer um dos eventos normais que um gravador recebe. Esses eventos são os seguintes:
+O Test Writer pode ser configurado para falhar em qualquer um dos eventos normais recebidos por um autor. Esses eventos são os seguinte:
 
 
 
 | Evento                                                                                                                                    | Descrição                                                                                                                                                                                                                                                         |
 |------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="Identify"></span><span id="identify"></span><span id="IDENTIFY"></span>Identificar<br/>                                     | Recebido como uma resposta a uma chamada [**IVssBackupComponents:: GatherWriterMetadata**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-gatherwritermetadata) . A falha aqui fará com que o gravador não seja relatado.<br/>                                                                 |
-| <span id="PrepareForBackup"></span><span id="prepareforbackup"></span><span id="PREPAREFORBACKUP"></span>PrepareForBackup<br/>     | Recebido como uma resposta ao solicitante chamando [**IVssBackupComponents::P repareforbackup**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-prepareforbackup).<br/>                                                                                                                 |
-| <span id="PrepareForSnapsot"></span><span id="prepareforsnapsot"></span><span id="PREPAREFORSNAPSOT"></span>PrepareForSnapsot<br/> | Recebido quando o solicitante chama [**IVssBackupComponents::D osnapshotset**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-dosnapshotset), mas antes da cópia de sombra ser criada.<br/>                                                                                              |
-| <span id="Freeze"></span><span id="freeze"></span><span id="FREEZE"></span>Trave<br/>                                             | Recebido imediatamente após [*PrepareForSnapshot*](vssgloss-p.md), mas ainda antes da criação da cópia de sombra.<br/>                                                                                                      |
-| <span id="Thaw"></span><span id="thaw"></span><span id="THAW"></span>Congelar<br/>                                                     | Recebido após a conclusão da criação da cópia de sombra.<br/>                                                                                                                                                                                                     |
-| <span id="PostSnapshot"></span><span id="postsnapshot"></span><span id="POSTSNAPSHOT"></span>Pós-instantâneo<br/>                     | Recebido após o descongelamento ser concluído, mas antes de [**IVssBackupComponents::D osnapshotset**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-dosnapshotset) é concluído.<br/>                                                                                                                   |
-| <span id="Abort"></span><span id="abort"></span><span id="ABORT"></span>Anular<br/>                                                 | Recebido se houver muito tempo decorrido entre [*congelar*](vssgloss-f.md) e [*descongelar*](vssgloss-t.md) ou se o solicitante chamar [**IVssBackupComponents:: AbortBackup**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-abortbackup).<br/> |
-| <span id="BackupComplete"></span><span id="backupcomplete"></span><span id="BACKUPCOMPLETE"></span>BackupComplete<br/>             | Recebido quando o solicitante é encerrado. As falhas aqui nunca serão relatadas.<br/>                                                                                                                                                                                 |
-| <span id="PreRestore"></span><span id="prerestore"></span><span id="PRERESTORE"></span>Prerestore<br/>                             | Recebido quando o solicitante chama [**IVssBackupComponents::P Rerestore**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-prerestore).<br/>                                                                                                                                           |
-| <span id="PostRestore"></span><span id="postrestore"></span><span id="POSTRESTORE"></span>Restauração<br/>                         | Recebido quando o solicitante chama [**IVssBackupComponents::P ostrestore**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-postrestore).<br/>                                                                                                                                         |
+| <span id="Identify"></span><span id="identify"></span><span id="IDENTIFY"></span>Identificar<br/>                                     | Recebido como uma resposta a [**uma chamada IVssBackupComponents::GatherWriterMetadata.**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-gatherwritermetadata) A falha aqui fará com que o autor não seja relatado.<br/>                                                                 |
+| <span id="PrepareForBackup"></span><span id="prepareforbackup"></span><span id="PREPAREFORBACKUP"></span>PrepareForBackup<br/>     | Recebido como uma resposta ao solicitante chamando [**IVssBackupComponents::P repareForBackup**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-prepareforbackup).<br/>                                                                                                                 |
+| <span id="PrepareForSnapsot"></span><span id="prepareforsnapsot"></span><span id="PREPAREFORSNAPSOT"></span>PrepareForSnapsot<br/> | Recebido quando o solicitante chama [**IVssBackupComponents::D oSnapshotSet**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-dosnapshotset), mas antes que a cópia de sombra seja criada.<br/>                                                                                              |
+| <span id="Freeze"></span><span id="freeze"></span><span id="FREEZE"></span>Congelar<br/>                                             | Recebido imediatamente após [*PrepareForSnapshot*](vssgloss-p.md), mas ainda antes da criação da cópia de sombra.<br/>                                                                                                      |
+| <span id="Thaw"></span><span id="thaw"></span><span id="THAW"></span>Descongelar<br/>                                                     | Recebido após a criação da cópia de sombra ser concluída.<br/>                                                                                                                                                                                                     |
+| <span id="PostSnapshot"></span><span id="postsnapshot"></span><span id="POSTSNAPSHOT"></span>PostSnapshot<br/>                     | Recebido após a conclusão do Thaw, mas antes da conclusão [**de IVssBackupComponents::D oSnapshotSet.**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-dosnapshotset)<br/>                                                                                                                   |
+| <span id="Abort"></span><span id="abort"></span><span id="ABORT"></span>Abortar<br/>                                                 | Recebido se passar muito tempo [](vssgloss-f.md) entre [](vssgloss-t.md) Congelamento e Descongelamento ou se o solicitante chamar [**IVssBackupComponents::AbortBackup**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-abortbackup).<br/> |
+| <span id="BackupComplete"></span><span id="backupcomplete"></span><span id="BACKUPCOMPLETE"></span>BackupComplete<br/>             | Recebido quando o solicitante sai. Falhas aqui nunca serão relatadas.<br/>                                                                                                                                                                                 |
+| <span id="PreRestore"></span><span id="prerestore"></span><span id="PRERESTORE"></span>Pré-repositório<br/>                             | Recebido quando o solicitante chama [**IVssBackupComponents::P reRestore.**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-prerestore)<br/>                                                                                                                                           |
+| <span id="PostRestore"></span><span id="postrestore"></span><span id="POSTRESTORE"></span>PostRestore<br/>                         | Recebido quando o solicitante chama [**IVssBackupComponents::P ostRestore.**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-postrestore)<br/>                                                                                                                                         |
 
 
 
  
 
-Essas falhas são configuradas adicionando um ou mais subelementos FailEvent ao elemento raiz TestWriter. Há duas classes de falhas que podem ser definidas: retryável e sem nova tentativa. Erros com nova tentativa são erros que podem desaparecer se todo o processo de backup for repetido, enquanto erros sem nova tentativa não serão desaparecedos. O tipo de falha do evento é escolhido com base no atributo com nova tentativa.
+Essas falhas são configuradas adicionando um ou mais subelementos FailEvent ao elemento raiz TestWriter. Há duas classes de falhas que podem ser definidas: retryable e non-retryable. Erros que podem ser repetir são erros que podem desaparecer se todo o processo de backup for novamente, enquanto erros não retriáveis provavelmente desaparecerão. O tipo de falha para o evento é escolhido com base no atributo que pode ser tentar novamente.
 
-Aqui está um exemplo de uma falha básica sem nova tentativa:
+Aqui está um exemplo de uma falha básica não retriável:
 
 ``` syntax
     <FailEvent writerEvent="Freeze"
                retryable="no" />
 ```
 
-Este exemplo fará com que o gravador falhe durante o evento [*Freeze*](vssgloss-f.md) . [**IVssBackupComponents:: GatherWriterStatus**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-gatherwriterstatus) reportará a falha do gravador para ser VSS \_ E \_ WRITERERROR sem \_ nova tentativa.
+Este exemplo fará com que o autor falhe durante o [*evento Freeze.*](vssgloss-f.md) [**IVssBackupComponents::GatherWriterStatus**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-gatherwriterstatus) relatará a falha do autor como VSS \_ E \_ WRITERERROR \_ NONRETRYABLE.
 
-Aqui está um exemplo de um erro básico com nova tentativa:
+Aqui está um exemplo de um erro básico que pode ser tentar novamente:
 
 ``` syntax
     <FailEvent writerEvent="Freeze"
@@ -258,25 +258,25 @@ Aqui está um exemplo de um erro básico com nova tentativa:
                numFailures="2"/>
 ```
 
-Este exemplo fará com que o gravador falhe nas duas primeiras vezes que receber um evento [*Freeze*](vssgloss-f.md) . Após as duas primeiras vezes, o gravador sempre terá sucesso. A falha do gravador relatada por meio de [**GatherWriterStatus**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-gatherwriterstatus) será um código de erro com nova tentativa aleatória.
+Este exemplo fará com que o autor falhe nas duas primeiras vezes em que receber um [*evento Freeze.*](vssgloss-f.md) Após as duas primeiras vezes, o autor sempre terá êxito. A falha do autor relatada [**por meio de GatherWriterStatus**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-gatherwriterstatus) será um código de erro aleatório que pode ser tentar novamente.
 
 ## <a name="declaring-supported-backup-types"></a>Declarando tipos de backup com suporte
 
-Os gravadores comunicam quais tipos de backup têm suporte por meio da chamada de [**IVssExamineWriterMetadata:: GetBackupSchema**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getbackupschema)do solicitante. O elemento raiz TestWriter contém atributos para cada tipo de backup para indicar suporte. Esses atributos são supportsCopy, supportsDifferential, supportsIncremental e supportsLog. Para indicar o suporte para um tipo de backup específico, defina o atributo correspondente como "Sim".
+Os autores comunicam quais tipos de backup têm suporte por meio da chamada do solicitante [**IVssExamineWriterMetadata::GetBackupSchema**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getbackupschema). O elemento raiz TestWriter contém atributos para cada tipo de backup para indicar suporte. Esses atributos são supportsCopy, supportsDifferential, supportsIncremental e supportsLog. Para indicar o suporte para um tipo de backup específico, de definido o atributo correspondente como "sim".
 
-Se o solicitante definir o tipo de backup para um tipo de backup sem suporte pelo gravador, o gravador notará esse fato durante o [**PrepareForBackup**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-prepareforbackup), mas, caso contrário, funcionará corretamente.
+Se o solicitante define o tipo de backup como um tipo de backup que não é suportado pelo autor, o autor observará esse fato durante [**PrepareForBackup,**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-prepareforbackup)mas, de outra forma, funcionará corretamente.
 
 ## <a name="indicating-the-file-backup-type"></a>Indicando o tipo de backup de arquivo
 
-O método [**IVssWMFiledesc:: GetBackupTypeMask**](/windows/desktop/api/VsWriter/nf-vswriter-ivsswmfiledesc-getbackuptypemask) retorna um bitmask para o solicitante que indica como deve ser feito o backup de um arquivo. Isso indicará se um arquivo é necessário ou não é necessário durante tipos específicos de backup e também se uma cópia de sombra é necessária durante tipos específicos de backup. Os tipos de backup nesse bitmask são explicados em um comprimento maior na [função de solicitante de documento no backup de repositórios complexos](requestor-role-in-backing-up-complex-stores.md).
+O [**método IVssWMFiledesc::GetBackupTypeMask**](/windows/desktop/api/VsWriter/nf-vswriter-ivsswmfiledesc-getbackuptypemask) retorna um bitmask para o solicitante indicando como um arquivo deve ser feito backup. Isso indicará se um arquivo é necessário ou não durante tipos específicos de backup e também se uma cópia de sombra é necessária durante tipos específicos de backup. Os tipos de backup nesta máscara de bits são explicados com maior comprimento no documento Função de Solicitante em [Backup de Armazenamentos Complexos](requestor-role-in-backing-up-complex-stores.md).
 
-No gravador de teste, os elementos dessa bitmask são especificados pela definição de atributos em cada elemento Componentfile. Os atributos fullBackupRequired, diffBackupRequired, incBackupRequired e logBackupRequired especificam quando é necessário fazer backup de um arquivo. Os atributos fullSnapshotRequired, diffSnapshotRequired, incSnapshotRequired e logSnapshotRequired especificam quando é necessário fazer backup de um arquivo de uma cópia de sombra de um volume (e nunca do volume original). O padrão para todos esses valores é "Sim", indicando que um arquivo deve sempre ser copiado em backup e deve ser submetido a backup de uma cópia de sombra de um volume.
+No Test Writer, os elementos dessa máscara de bits são especificados definindo atributos em cada elemento ComponentFile. Os atributos fullBackupRequired, diffBackupRequired, incBackupRequired e logBackupRequired especificam quando um arquivo precisa ser feito backup. Os atributos fullSnapshotRequired, diffSnapshotRequired, incSnapshotRequired e logSnapshotRequired especificam quando um arquivo deve ser copiado em backup de uma cópia de sombra de um volume (e nunca do volume original). O padrão para todos esses valores é "sim", indicando que um arquivo sempre deve ser copiado em backup e deve ser feito backup de uma cópia de sombra de um volume.
 
 ## <a name="adding-partial-files"></a>Adicionando arquivos parciais
 
-Durante o processamento de [**DoSnapshotSet**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-dosnapshotset), um gravador tem a chance de adicionar arquivos parciais a cada componente. Esses arquivos parciais são relatados usando [**IVssComponent:: Getpartialfile**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getpartialfile). O gravador de teste pode ser configurado para adicionar arquivos parciais especificando subelementos parciais em um elemento de componente.
+Durante o processamento de [**DoSnapshotSet**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-dosnapshotset), um autor tem a oportunidade de adicionar arquivos parciais a cada componente. Esses arquivos parciais são [**relatados usando IVssComponent::GetPartialFile**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getpartialfile). O Test Writer pode ser configurado para adicionar arquivos parciais especificando subelementos PartialFile em um elemento Component.
 
-Aqui está um exemplo de um elemento de componente que tem dois subelementos parciais:
+Aqui está um exemplo de um elemento Component que tem dois subelementos PartialFile:
 
 ``` syntax
     <Component componentType="filegroup"
@@ -295,15 +295,15 @@ Aqui está um exemplo de um elemento de componente que tem dois subelementos par
     </Component>
 ```
 
-Somente arquivos parciais que correspondem parcialmente a um Componentfile existente (como no primeiro arquivo parcial no exemplo) ou novos arquivos parciais que estão no mesmo volume que um Componentfile existente (como no segundo arquivo parcial) devem ser especificados dessa maneira. Para esse componente, o solicitante deve fazer backup completo de todos os arquivos que correspondem a c: \\ files \\ \* . txt, exceto pelo partial.txt. O solicitante deve então fazer backup dos intervalos especificados (onde um intervalo é um deslocamento seguido por um comprimento) para os arquivos c: \\ files \\partial.txt e c: \\ files2 \\partial.txt.
+Somente arquivos parciais que corresponderem parcialmente a um ComponentFile existente (como no primeiro arquivo parcial no exemplo) ou novos arquivos parciais que estão no mesmo volume que um ComponentFile existente (como no segundo arquivo parcial) devem ser especificados dessa maneira. Para esse componente, o solicitante deve fazer todo o back-up de todos os arquivos correspondentes a c: arquivos \\ \\ \*.txt exceto para partial.txt. Em seguida, o solicitante deve fazer o back-up dos intervalos especificados (em que um intervalo é um deslocamento seguido por um comprimento) para os arquivos c: arquivospartial.txt e \\ \\ c: \\ files2 \\partial.txt.
 
-Se o gravador estiver configurado para verificar restaurações de arquivo, somente os intervalos de backup do arquivo parcial serão verificados no momento da restauração. As modificações em outras partes do arquivo vão despercebidas. Se o atributo deletePartialFiles do elemento raiz TestWriter for definido, os arquivos parciais serão excluídos do volume original imediatamente após a cópia de sombra ser criada.
+Se o writer estiver configurado para verificar restaurações de arquivo, somente os intervalos de backup do arquivo parcial serão verificados no momento da restauração. As modificações em outras partes do arquivo passarão despercebidas. Se o atributo deletePartialFiles do elemento raiz TestWriter estiver definido, os arquivos parciais serão excluídos do volume original imediatamente após a criação da cópia de sombra.
 
-## <a name="adding-differenced-files"></a>Adicionando arquivos diferenciados
+## <a name="adding-differenced-files"></a>Adicionando arquivos com diferença
 
-Durante o processamento de [**DoSnapshotSet**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-dosnapshotset), um gravador pode adicionar arquivos diferenciados a cada componente. Esses arquivos diferenciados são relatados usando [**IVssComponent:: GetDifferencedFile**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getdifferencedfile). O gravador de teste pode ser configurado para adicionar arquivos diferenciados especificando subelementos DifferencedFile em um elemento de componente.
+Durante o processamento de [**DoSnapshotSet**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-dosnapshotset), um autor pode adicionar arquivos de diferença a cada componente. Esses arquivos diferentes são relatados usando [**IVssComponent::GetDifferencedFile**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getdifferencedfile). O Test Writer pode ser configurado para adicionar arquivos diferenciados especificando subelementos DifferencedFile em um elemento Component.
 
-Aqui está um exemplo de um elemento de componente que tem dois subelementos DifferencedFile:
+Aqui está um exemplo de um elemento Component que tem dois subelementos DifferencedFile:
 
 ``` syntax
     <Component componentType="filegroup"
@@ -332,19 +332,19 @@ Aqui está um exemplo de um elemento de componente que tem dois subelementos Dif
     </Component>
 ```
 
-Diferentemente dos arquivos parciais, os arquivos diferenciados nunca devem corresponder parcialmente a uma especificação de Componentfile. A especificação de arquivo em um elemento DifferencedFile deve corresponder exatamente a um Componentfile (como no primeiro arquivo de diferença no exemplo) ou não deve corresponder a ele, mas estar em um volume referenciado em um Componentfile (como no segundo arquivo de diferença). Os valores de data e hora devem ser relativos ao fuso horário local, mas eles serão convertidos em GMT antes de serem relatados ao solicitante. No exemplo, somente os arquivos que correspondem a c: \\ files \\ \* . txt ou c: \\ files2 \\ \* . txt que foram modificados desde 1/22/2003:12:44:17 serão submetidos a backup.
+Ao contrário dos arquivos parciais, os arquivos diferentes nunca devem corresponder parcialmente a uma especificação ComponentFile. A especificação de arquivo em um elemento DifferencedFile deve corresponder exatamente a um ComponentFile (como no primeiro arquivo diferente no exemplo) ou não deve corresponder a ele, mas estar em um volume referenciado em um ComponentFile (como no segundo arquivo diferente). Os valores de data e hora devem ser relativos ao fuso horário local, mas serão convertidos em GMT antes de serem relatados ao solicitante. No exemplo, somente arquivos correspondentes a c: arquivos.txt ou c: arquivos2.txt que foram modificados desde \\ \\ \* \\ \\ \* 22/01/2003:12:44:17 serão armazenados em backup.
 
-Se o gravador de teste estiver configurado para verificar restaurações de arquivo, somente os arquivos modificados serão verificados quanto à restauração. Se o atributo deleteDifferencedFiles do elemento raiz TestWriter for definido, os arquivos diferenciados serão excluídos do volume original imediatamente após a cópia de sombra ser criada.
+Se o Test Writer estiver configurado para verificar restaurações de arquivo, somente os arquivos modificados serão verificados para restauração. Se o atributo deleteDifferencedFiles do elemento raiz TestWriter estiver definido, os arquivos diferentes serão excluídos do volume original imediatamente após a criação da cópia de sombra.
 
 ## <a name="new-targets"></a>Novos destinos
 
-Determinados gravadores permitem que o solicitante informe que um novo local foi escolhido para restaurar determinados arquivos. O gravador indica que ele dá suporte a esse modo como parte do bitmask retornado por [**IVssExamineWriterMetadata:: GetBackupSchema**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getbackupschema). Por padrão, o gravador de teste sempre dá suporte a novos destinos. Esse suporte pode ser desabilitado definindo o atributo supportsNewTarget no elemento raiz TestWriter como "no".
+Determinados autores permitem que o solicitante informe que um novo local foi escolhido para restaurar determinados arquivos. O autor indica que ele dá suporte a esse modo como parte do bitmask retornado por [**IVssExamineWriterMetadata::GetBackupSchema**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssexaminewritermetadata-getbackupschema). Por padrão, o Test Writer sempre dá suporte a novos destinos. Esse suporte pode ser desabilitado definindo o atributo supportsNewTarget no elemento raiz TestWriter como "não".
 
-Se um gravador oferecer suporte a novos destinos, o solicitante poderá informar o gravador de novos destinos chamando [**IVssBackupComponents:: AddNewTarget**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addnewtarget). O gravador verificará o novo local de destino para verificar a restauração em vez do local original.
+Se um autor dá suporte a novos destinos, o solicitante pode informar o autor de novos destinos chamando [**IVssBackupComponents::AddNewTarget**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addnewtarget). Em seguida, o autor verificará o novo local de destino para verificar a restauração em vez do local original.
 
 ## <a name="more-information"></a>Mais informações
 
-O gravador de teste dá suporte a mais opções de configuração que não são descritas aqui. O esquema completo para todos os recursos de configuração do gravador de teste é especificado no swriter.xml in `%ProgramFiles%\Microsoft SDKs\Windows\v7.0\bin\x64\vsstools` (para Windows de 64 bits) e `%ProgramFiles%\Microsoft SDKs\Windows\v7.0\bin\vsstools` (para windows de 32 bits). Esse arquivo contém um esquema XML que descreve completamente todos os elementos e atributos que compõem um arquivo de configuração. Cada elemento e cada atributo nesse arquivo é comentado com uma descrição que documenta o uso do elemento ou do atributo.
+O Test Writer dá suporte a mais opções de configuração que não são descritas aqui. o esquema completo para todos os recursos de configuração do gravador de teste é especificado em swriter.xml `%ProgramFiles%\Microsoft SDKs\Windows\v7.0\bin\x64\vsstools` (para Windows de 64 bits) e `%ProgramFiles%\Microsoft SDKs\Windows\v7.0\bin\vsstools` (para Windows de 32 bits). Esse arquivo contém um esquema XML que descreve completamente todos os elementos e atributos que compõem um arquivo de configuração. Cada elemento e cada atributo nesse arquivo é comentado com uma descrição que documenta o uso do elemento ou do atributo.
 
  
 

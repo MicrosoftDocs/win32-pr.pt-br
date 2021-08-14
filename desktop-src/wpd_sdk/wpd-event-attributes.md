@@ -1,5 +1,5 @@
 ---
-description: 'Para o Windows 7, os dispositivos portáteis do Windows oferecem suporte aos seguintes atributos para eventos de um serviço de dispositivo. Esses atributos são retornados pelo método IPortableDeviceServiceCapabilities:: geteventattributes.'
+description: 'para Windows 7, Windows dispositivos portáteis dão suporte aos seguintes atributos para eventos de um serviço de dispositivo. Esses atributos são retornados pelo método IPortableDeviceServiceCapabilities:: geteventattributes.'
 ms.assetid: 2c71c3ec-842b-44f7-b127-5750883b33ba
 title: Atributos de evento (PortableDevice. h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 68a5964a4f64899d4aa116002b1feb14ce360498
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9ee6fe335d5e3906a923dfe5c470142cdf36fb1e521c3498963e478369a9b251
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105788930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118193287"
 ---
 # <a name="event-attributes-portabledeviceh"></a>Atributos de evento (PortableDevice. h)
 
-Para o Windows 7, os dispositivos portáteis do Windows oferecem suporte aos seguintes atributos para eventos de um serviço de dispositivo. Esses atributos são retornados pelo método [**IPortableDeviceServiceCapabilities:: Geteventattributes**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-geteventattributes) .
+para Windows 7, Windows dispositivos portáteis dão suporte aos seguintes atributos para eventos de um serviço de dispositivo. Esses atributos são retornados pelo método [**IPortableDeviceServiceCapabilities:: Geteventattributes**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-geteventattributes) .
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: comando Set
-description: O comando Set estabelece configurações de controle para o dispositivo. CD de áudio, Digital-Video, MIDI Sequencer, VCR, VIDEODISC, vídeo-Overlay e Wave-Audio Devices reconhecem esse comando.
+title: comando set
+description: O comando set estabelece as configurações de controle para o dispositivo. Os dispositivos cd audio, digital-video, MIDI sequencer, VCR, videodisc, video-overlay e waveform-audio reconhecem esse comando.
 ms.assetid: 1ec4d84e-372a-4b6d-b694-f5afb41f90b2
 keywords:
-- definir o comando multimídia do Windows
+- definir comando Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,22 +12,22 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 914743db038b0cae32b53fa79b7696ddba1ad05b
-ms.sourcegitcommit: 8276af9231bdbf5a7334299f0d13fc8ff069a065
+ms.openlocfilehash: 75f407a1e360cfbd6407f7ada29192addece7f7a968a2437326dc091fe0d9522
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "105770156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118371008"
 ---
-# <a name="set-command"></a>comando Set
+# <a name="set-command"></a>comando set
 
 > [!NOTE]
-> Comunicação sem tendência a Microsoft dá suporte a um ambiente diversificado e de inclusão.  Neste documento, há referências à palavra ' escravo '. O [Guia de estilo da Microsoft para Bias-Free Communications](https://github.com/MicrosoftDocs/microsoft-style-guide/blob/master/styleguide/bias-free-communication.md) reconhece isso como uma palavra de exclusão.  Essa palavra-chave é usada, pois é atualmente a palavra usada nos comandos. Para fins de consistência, este documento contém esta palavra. Quando esta palavra for alterada nos comandos, corrigiremos este documento para estar em alinhamento.
+> Comunicação sem preconceitos A Microsoft dá suporte a um ambiente diversificado e inclusões.  Neste documento, há referências à palavra 'slave'. O Guia de Estilo da Microsoft [para Bias-Free Comunicações](https://github.com/MicrosoftDocs/microsoft-style-guide/blob/master/styleguide/bias-free-communication.md) reconhece isso como uma palavra de exclusão.  Esse texto é usado, pois é atualmente o texto usado dentro dos comandos. Para consistência, este documento contém essa palavra. Quando essa palavra for alterada nos comandos, corrigiremos este documento para estar em alinhamento.
 
 
-O comando Set estabelece configurações de controle para o dispositivo. CD de áudio, Digital-Video, MIDI Sequencer, VCR, VIDEODISC, vídeo-Overlay e Wave-Audio Devices reconhecem esse comando.
+O comando set estabelece as configurações de controle para o dispositivo. Os dispositivos cd audio, digital-video, MIDI sequencer, VCR, videodisc, video-overlay e waveform-audio reconhecem esse comando.
 
-Para enviar esse comando, chame a função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) com o parâmetro *lpszCommand* definido da seguinte maneira.
+Para enviar esse comando, chame a [**função mciSendString**](/previous-versions//dd757161(v=vs.85)) com *o parâmetro lpszCommand* definido da seguinte forma.
 
 ``` syntax
 _stprintf_s(
@@ -54,7 +54,7 @@ Identificador de um dispositivo MCI. Esse identificador ou alias é atribuído q
 <span id="lpszSetting"></span><span id="lpszsetting"></span><span id="LPSZSETTING"></span>*lpszSetting*
 </dt> <dd>
 
-Sinalizador para estabelecer as configurações de controle. A tabela a seguir lista os tipos de dispositivo que reconhecem o comando **set** e os sinalizadores usados por cada tipo.
+Sinalizador para estabelecer configurações de controle. A tabela a seguir lista os tipos de dispositivo que reconhecem **o comando set** e os sinalizadores usados por cada tipo.
 
 
 
@@ -73,175 +73,175 @@ Sinalizador para estabelecer as configurações de controle. A tabela a seguir l
 <tr class="odd">
 <td>cdaudio</td>
 <td><ul>
-<li>áudio desativado</li>
-<li>áudio tudo ativado</li>
-<li>áudio restante</li>
-<li>áudio restante em</li>
-<li>áudio à direita</li>
-<li>áudio à direita</li>
+<li>áudio desligado</li>
+<li>áudio tudo em</li>
+<li>áudio desligado</li>
+<li>áudio à esquerda em</li>
+<li>áudio imediatamente</li>
+<li>áudio à direita em</li>
 <li>porta fechada</li>
 <li>porta aberta</li>
-<li>milissegundos de formato de hora</li>
-<li>meio do formato de hora MSF</li>
-<li>tmsf de formato de hora</li>
+<li>formato de tempo milissegundos</li>
+<li>time format msf</li>
+<li>time format tmsf</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>digitalvideo</td>
 <td><ul>
-<li>áudio desativado</li>
-<li>áudio tudo ativado</li>
-<li>áudio restante</li>
-<li>áudio restante em</li>
-<li>áudio à direita</li>
-<li>áudio à direita</li>
+<li>áudio desligado</li>
+<li>áudio tudo em</li>
+<li>áudio desligado</li>
+<li>áudio à esquerda em</li>
+<li>áudio imediatamente</li>
+<li>áudio à direita em</li>
 <li>porta fechada</li>
 <li>porta aberta</li>
-<li><em>formato</em> de formato de arquivo</li>
+<li>formato de formato <em>de arquivo</em></li>
 <li>buscar exatamente em</li>
-<li>busca exata</li>
-<li><em>fator</em> de velocidade</li>
-<li><em>formato</em> de formato de arquivo ainda</li>
-<li>quadros de formato de hora</li>
-<li>milissegundos de formato de hora</li>
-<li>vídeo desativado</li>
-<li>vídeo ativado</li>
+<li>buscar exatamente off</li>
+<li>fator de <em>velocidade</em></li>
+<li>formato de formato de <em>arquivo ainda</em></li>
+<li>quadros de formato de tempo</li>
+<li>formato de tempo milissegundos</li>
+<li>vídeo desligado</li>
+<li>vídeo em</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>overlay</td>
 <td><ul>
-<li>áudio desativado</li>
-<li>áudio tudo ativado</li>
-<li>áudio restante</li>
-<li>áudio restante em</li>
-<li>áudio à direita</li>
-<li>áudio à direita</li>
+<li>áudio desligado</li>
+<li>áudio tudo em</li>
+<li>áudio desligado</li>
+<li>áudio à esquerda em</li>
+<li>áudio imediatamente</li>
+<li>áudio à direita em</li>
 <li>porta fechada</li>
 <li>porta aberta</li>
-<li>vídeo desativado</li>
-<li>vídeo ativado</li>
+<li>vídeo desligado</li>
+<li>vídeo em</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>sequenciador</td>
 <td><ul>
-<li>áudio desativado</li>
-<li>áudio tudo ativado</li>
-<li>áudio restante</li>
-<li>áudio restante em</li>
-<li>áudio à direita</li>
-<li>áudio à direita</li>
+<li>áudio desligado</li>
+<li>áudio tudo em</li>
+<li>áudio desligado</li>
+<li>áudio à esquerda em</li>
+<li>áudio imediatamente</li>
+<li>áudio à direita em</li>
 <li>porta fechada</li>
 <li>porta aberta</li>
 <li>MIDI mestre</li>
-<li>Mestre nenhum</li>
-<li>Mestre SMPTE</li>
-<li><em>tempo</em> de deslocamento</li>
-<li>mapeador de porta</li>
-<li>porta nenhum</li>
-<li><em>port_number</em> de porta</li>
-<li>arquivo subordinado</li>
-<li>MIDI escravo</li>
-<li>nenhum subordinado</li>
-<li>SMPTE-escravo</li>
+<li>mestre nenhum</li>
+<li>SMPTE mestre</li>
+<li>tempo de <em>deslocamento</em></li>
+<li>mapeado de porta</li>
+<li>porta none</li>
+<li>porta <em>port_number</em></li>
+<li>arquivo slave</li>
+<li>MIDI de slave</li>
+<li>slave none</li>
+<li>SMPTE slave</li>
 <li>tempo <em>tempo_value</em></li>
-<li>milissegundos de formato de hora</li>
-<li>formato de hora SMPTE <em>FPS</em></li>
-<li>drop de formato de hora SMPTE 30</li>
+<li>formato de tempo milissegundos</li>
+<li>formato de tempo SMPTE <em>fps</em></li>
+<li>time format SMPTE 30 drop</li>
 <li>ponteiro de música de formato de hora</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><strong>videocassete</strong></td>
+<td><strong>Videocassete</strong></td>
 <td><ul>
 <li>montar registro em</li>
-<li>montar registro</li>
-<li>áudio desativado</li>
-<li>áudio tudo ativado</li>
-<li>áudio restante</li>
-<li>áudio restante em</li>
-<li>áudio à direita</li>
-<li>áudio à direita</li>
-<li><em>hora</em> do relógio</li>
+<li>montar o registro off</li>
+<li>áudio desligado</li>
+<li>áudio tudo em</li>
+<li>áudio desligado</li>
+<li>áudio à esquerda em</li>
+<li>áudio imediatamente</li>
+<li>áudio à direita em</li>
+<li>hora do <em>relógio</em></li>
 <li>formato do contador</li>
-<li><em>valor</em> do contador</li>
+<li>valor do <em>contador</em></li>
 <li>porta fechada</li>
 <li>porta aberta</li>
 <li>contador de índice</li>
 <li>data do índice</li>
-<li>hora do índice</li>
-<li>hora do índice</li>
-<li><em>duração</em> de CodeLength</li>
-<li><em>tempo limite</em> de pausa</li>
-<li>duração do registro-</li>
+<li>tempo de índice</li>
+<li>tempo de índice</li>
+<li>duração de <em></em> codelength</li>
+<li>tempo <em>de pausa</em></li>
+<li>duração do pós-roll –</li>
 <li><em>duration</em></li>
-<li>ligar</li>
+<li>power on</li>
 <li>desligar</li>
-<li><em>duração</em> da duração da preversão</li>
+<li>duração do <em>pré-roll</em></li>
 <li>formato de registro SP</li>
 <li>formato de registro LP</li>
-<li>formato de registro EP</li>
-<li><em>fator</em> de velocidade</li>
-<li>quadros de formato de hora</li>
-<li>HMS de formato de hora</li>
-<li>milissegundos de formato de hora</li>
-<li>meio do formato de hora MSF</li>
-<li>formato de hora SMPTE <em>FPS</em></li>
-<li>drop de formato de hora SMPTE 30</li>
-<li>tmsf de formato de hora</li>
+<li>EP de formato de registro</li>
+<li>fator de <em>velocidade</em></li>
+<li>quadros de formato de tempo</li>
+<li>formato de tempo hms</li>
+<li>formato de tempo milissegundos</li>
+<li>time format msf</li>
+<li>formato de tempo SMPTE <em>fps</em></li>
+<li>time format SMPTE 30 drop</li>
+<li>time format tmsf</li>
 <li>contador de modo de tempo</li>
 <li>detecção de modo de tempo</li>
-<li>tempo de vida de modo de hora</li>
+<li>time mode timecode</li>
 <li>acompanhamento de mais</li>
-<li>menos controle</li>
-<li>redefinição de rastreamento</li>
+<li>acompanhamento de menos</li>
+<li>redefinição de acompanhamento</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>videodisc</td>
 <td><ul>
-<li>áudio desativado</li>
-<li>áudio tudo ativado</li>
-<li>áudio restante</li>
-<li>áudio restante em</li>
-<li>áudio à direita</li>
-<li>áudio à direita</li>
+<li>áudio desligado</li>
+<li>áudio tudo em</li>
+<li>áudio desligado</li>
+<li>áudio à esquerda em</li>
+<li>áudio imediatamente</li>
+<li>áudio à direita em</li>
 <li>porta fechada</li>
 <li>porta aberta</li>
-<li>quadros de formato de hora</li>
-<li>HMS de formato de hora</li>
-<li>milissegundos de formato de hora</li>
-<li>faixa de formato de hora</li>
-<li>vídeo desativado</li>
-<li>vídeo ativado</li>
+<li>quadros de formato de tempo</li>
+<li>formato de tempo hms</li>
+<li>formato de tempo milissegundos</li>
+<li>faixa de formato de tempo</li>
+<li>vídeo desligado</li>
+<li>vídeo em</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>waveaudio</td>
+<td>Waveaudio</td>
 <td><ul>
-<li><em>inteiro</em> de alinhamento</li>
+<li>inteiro <em>de alinhamento</em></li>
 <li>qualquer entrada</li>
 <li>qualquer saída</li>
-<li>áudio desativado</li>
-<li>áudio tudo ativado</li>
-<li>áudio restante</li>
-<li>áudio restante em</li>
-<li>áudio à direita</li>
-<li>áudio à direita</li>
-<li><em>bit_count</em> BitsPerSample</li>
-<li><em>byte_rate</em> bytespersec</li>
+<li>áudio desligado</li>
+<li>áudio tudo em</li>
+<li>áudio desligado</li>
+<li>áudio à esquerda em</li>
+<li>áudio imediatamente</li>
+<li>áudio à direita em</li>
+<li>bitspersample <em>bit_count</em></li>
+<li>bytespersec <em>byte_rate</em></li>
 <li>canais <em>channel_count</em></li>
 <li>porta fechada</li>
 <li>porta aberta</li>
-<li>formato PCM de marca</li>
-<li>Formatar <em>marca</em> de marca</li>
-<li><em>número inteiro</em> de entrada</li>
-<li><em>número inteiro</em> de saída</li>
-<li>samplespersec <em>inteiro</em></li>
-<li>bytes de formato de hora</li>
-<li>milissegundos de formato de hora</li>
-<li>exemplos de formato de hora</li>
+<li>format tag pcm</li>
+<li>format tag <em>tag</em></li>
+<li>inteiro <em>de entrada</em></li>
+<li>inteiro <em>de saída</em></li>
+<li>samplespersec <em>integer</em></li>
+<li>bytes de formato de tempo</li>
+<li>formato de tempo milissegundos</li>
+<li>exemplos de formato de tempo</li>
 </ul></td>
 </tr>
 </tbody>
@@ -251,7 +251,7 @@ Sinalizador para estabelecer as configurações de controle. A tabela a seguir l
 
  
 
-A tabela a seguir lista os sinalizadores que podem ser especificados no parâmetro **lpszSetting** e seus significados.
+A tabela a seguir lista os sinalizadores que podem ser especificados no **parâmetro lpszSetting** e seus significados.
 
 
 
@@ -268,36 +268,36 @@ A tabela a seguir lista os sinalizadores que podem ser especificados no parâmet
 </thead>
 <tbody>
 <tr class="odd">
-<td><em>inteiro</em> de alinhamento</td>
-<td>Define o alinhamento dos blocos de dados em relação ao início dos dados passados para o dispositivo de forma de onda-áudio. O arquivo é salvo neste formato.</td>
+<td>inteiro <em>de alinhamento</em></td>
+<td>Define o alinhamento de blocos de dados em relação ao início dos dados passados para o dispositivo waveform-audio. O arquivo é salvo nesse formato.</td>
 </tr>
 <tr class="even">
 <td>qualquer entrada</td>
-<td>Use qualquer entrada que dê suporte ao formato atual durante a gravação. Essa é a configuração padrão.</td>
+<td>Use qualquer entrada que dá suporte ao formato atual durante a gravação. Essa é a configuração padrão.</td>
 </tr>
 <tr class="odd">
 <td>qualquer saída</td>
-<td>Use qualquer saída que dê suporte ao formato atual durante a execução. Esse é o padrão.</td>
+<td>Use qualquer saída que dá suporte ao formato atual durante a reprodução. Esse é o padrão.</td>
 </tr>
 <tr class="even">
-<td>montar registro em <br/> montar registro <br/></td>
-<td>No modo de montagem, todas as faixas são registradas conforme definido pelo dispositivo. A maioria dos VCRs estão no modo de montagem por padrão.</td>
+<td>montar registro em <br/> montar o registro off <br/></td>
+<td>No modo de montagem, todas as faixas são registradas conforme definido pelo dispositivo. A maioria dos VCRs está no modo de montagem por padrão.</td>
 </tr>
 <tr class="odd">
-<td>áudio desativado <br/> áudio tudo ativado <br/></td>
-<td>Desabilita ou habilita a saída de áudio. Dispositivos de sobreposição de vídeo, o sequenciador MCISEQ e o dispositivo MCIWAVE de onda-áudio não dão suporte a esse sinalizador.</td>
+<td>áudio desligado <br/> áudio tudo em <br/></td>
+<td>Desabilita ou habilita a saída de áudio. Os dispositivos de sobreposição de vídeo, o sequenciador MCISEQ e o dispositivo de áudio de forma de onda MCIWAVE não são compatíveis com esse sinalizador.</td>
 </tr>
 <tr class="even">
-<td>áudio restante <br/> áudio restante em <br/> áudio à direita <br/> áudio à direita <br/></td>
-<td>Desabilita ou habilita a saída para o canal de áudio à esquerda ou à direita. Dispositivos de sobreposição de vídeo, o sequenciador MCISEQ e o dispositivo MCIWAVE de onda-áudio não dão suporte a esse sinalizador.</td>
+<td>áudio desligado <br/> áudio à esquerda em <br/> áudio imediatamente <br/> áudio à direita em <br/></td>
+<td>Desabilita ou habilita a saída para o canal de áudio esquerdo ou direito. Os dispositivos de sobreposição de vídeo, o sequenciador MCISEQ e o dispositivo de áudio de forma de onda MCIWAVE não são compatíveis com esse sinalizador.</td>
 </tr>
 <tr class="odd">
-<td><em>bit_count</em> BitsPerSample</td>
-<td>Define o número de bits por amostra do PCM (modulação de código de pulso) reproduzido ou registrado. O arquivo é salvo neste formato.</td>
+<td>bitspersample <em>bit_count</em></td>
+<td>Define o número de bits por amostra de PCM (Pulse Code Modulartion) tocada ou gravada. O arquivo é salvo nesse formato.</td>
 </tr>
 <tr class="even">
-<td><em>byte_rate</em> bytespersec</td>
-<td>Define o número médio de bytes por segundo reproduzidos ou registrados. O arquivo é salvo neste formato.</td>
+<td>bytespersec <em>byte_rate</em></td>
+<td>Define o número médio de bytes por segundo tocados ou gravados. O arquivo é salvo neste formato.</td>
 </tr>
 <tr class="odd">
 <td>canais <em>channel_count</em></td>
@@ -422,95 +422,95 @@ A tabela a seguir lista os sinalizadores que podem ser especificados no parâmet
 <td>Define o sequenciador MIDI para usar dados de arquivo como a origem da sincronização. Essa é a configuração padrão.</td>
 </tr>
 <tr class="odd">
-<td>MIDI escravo</td>
-<td>Define o sequenciador MIDI para usar dados MIDI de entrada para a origem de sincronização. O Sequencer reconhece os dados de sincronização com o formato MIDI. O sequenciador MCISEQ não dá suporte a esse sinalizador.</td>
+<td>slave midi</td>
+<td>Define o sequenciador MIDI para usar dados MIDI de entrada para a origem da sincronização. O sequenciador reconhece dados de sincronização com o formato MIDI. O sequenciador MCISEQ não dá suporte a esse sinalizador.</td>
 </tr>
 <tr class="even">
-<td>nenhum subordinado</td>
+<td>slave none</td>
 <td>Define o sequenciador MIDI para ignorar a sincronização</td>
 </tr>
 <tr class="odd">
-<td>SMPTE-escravo</td>
-<td>Define o sequenciador MIDI para usar dados MIDI de entrada para a origem de sincronização. O Sequencer reconhece os dados de sincronização com o formato SMPTE. O sequenciador MCISEQ não dá suporte a esse sinalizador.</td>
+<td>smpte de slave</td>
+<td>Define o sequenciador MIDI para usar dados MIDI de entrada para a origem da sincronização. O sequenciador reconhece dados de sincronização com o formato SMPTE. O sequenciador MCISEQ não dá suporte a esse sinalizador.</td>
 </tr>
 <tr class="even">
 <td>fator de velocidade</td>
-<td>Define a velocidade relativa de reprodução de áudio e vídeo do espaço de trabalho. Factor é a proporção entre a taxa de quadros nominal e a taxa de quadros desejada, em que a taxa de quadros nominal é designada como 1000. (Uma taxa de 500 é metade da velocidade normal, 2000 é duas vezes A velocidade normal e assim por diante.) Definir a velocidade como zero reproduz o vídeo o mais rápido possível sem descartar quadros e sem áudio.</td>
+<td>Define a velocidade relativa da reprodução de áudio e vídeo do workspace. Fator é a taxa entre a taxa de quadros nominal e a taxa de quadros desejada, em que a taxa de quadros nominal é designada como 1000. (Uma taxa de 500 é metade da velocidade normal, 2000 é duas vezes a velocidade normal e assim por diante.) Definir a velocidade como zero reproduz o vídeo o mais rápido possível sem soltar quadros e sem áudio.</td>
 </tr>
 <tr class="odd">
-<td><em>formato</em> de formato de arquivo ainda</td>
+<td>formato de formato de <em>arquivo ainda</em></td>
 <td>Especifica o formato de arquivo usado para comandos de captura.</td>
 </tr>
 <tr class="even">
 <td>tempo tempo_value</td>
-<td>Define o tempo da sequência de acordo com o formato de hora atual. Para um arquivo baseado em PPQN, o tempo_value é interpretado como batidas por minuto. Para um arquivo baseado em SMPTE, o tempo_value é interpretado como quadros por segundo.</td>
+<td>Define o tempo da sequência de acordo com o formato de hora atual. Para um arquivo baseado em PPQN, o tempo_value é interpretado como ritmos por minuto. Para um arquivo baseado em SMPTE, o tempo_value é interpretado como quadros por segundo.</td>
 </tr>
 <tr class="odd">
-<td>bytes de formato de hora</td>
+<td>bytes de formato de tempo</td>
 <td>Em um formato de arquivo PCM, define o formato de hora como bytes. Todas as informações de posição são especificadas como bytes após este comando.</td>
 </tr>
 <tr class="even">
-<td>quadros de formato de hora</td>
-<td>Define o formato de hora como quadros. Todos os comandos que usam valores de posição assumirão quadros. Quando o dispositivo é aberto, quadros é o modo padrão. Com suporte pelo videodiscs usando o formato CAV.</td>
+<td>quadros de formato de tempo</td>
+<td>Define o formato de hora como quadros. Todos os comandos que usam valores de posição assumirão quadros. Quando o dispositivo é aberto, os quadros são o modo padrão. Com suporte em videodiscs usando o formato PDF.</td>
 </tr>
 <tr class="odd">
-<td>HMS de formato de hora</td>
-<td>Define o formato de hora para horas, minutos e segundos. Todos os comandos que usam valores de posição assumirão HMS. HMS é o formato padrão para CLV videodiscs. Especifique um valor de HMS como hh: mm: SS, em que HH é horas, mm é minutos e SS é segundos. Você pode omitir um campo se ele e todos os campos a seguir forem zero. Por exemplo, 3, 3:0 e 3:0:0 são maneiras válidas de expressar 3 horas. <br/></td>
+<td>formato de tempo hms</td>
+<td>Define o formato de hora como horas, minutos e segundos. Todos os comandos que usam valores de posição assumirão o HMS. HMS é o formato padrão para videodiscs CLV. Especifique um valor HMS como hh:mm:ss, em que hh é horas, mm é minutos e ss é segundos. Você poderá omitir um campo se ele e todos os campos a seguir são zero. Por exemplo, 3, 3:0 e 3:0:0 são maneiras válidas de expressar 3 horas. <br/></td>
 </tr>
 <tr class="even">
-<td>milissegundos de formato de hora</td>
-<td>Define o formato de hora como milissegundos. Todos os comandos que usam valores de posição pressupõem milissegundos. Você pode abreviar milissegundos como &quot; MS &quot; . Para dispositivos do Sequencer, o arquivo de sequência define o formato padrão como PPQN ou SMPTE. Os dispositivos de sobreposição de vídeo não dão suporte a esse sinalizador.<br/></td>
+<td>formato de tempo milissegundos</td>
+<td>Define o formato de hora como milissegundos. Todos os comandos que usam valores de posição assumirão milissegundos. Você pode abreviar milissegundos como &quot; ms &quot; . Para dispositivos sequenciais, o arquivo de sequência define o formato padrão como PPQN ou SMPTE. Os dispositivos de sobreposição de vídeo não são compatíveis com esse sinalizador.<br/></td>
 </tr>
 <tr class="odd">
-<td>meio do formato de hora MSF</td>
-<td>Define o formato de hora como minutos, segundos e quadros. Todos os comandos que usam valores de posição assumirão o MSF (o formato padrão para áudio de CD). Especifique um valor do MSF como mm: SS: FF, em que mm é minutos, SS é segundos e FF são quadros. Você pode omitir um campo se ele e todos os campos a seguir forem zero. Por exemplo, 3, 3:0 e 3:0:0 são maneiras válidas de expressar 3 minutos.<br/> Os campos do MSF têm os seguintes valores máximos:<br/>
+<td>time format msf</td>
+<td>Define o formato de hora como minutos, segundos e quadros. Todos os comandos que usam valores de posição assumirão o MSF (o formato padrão para áudio de CD). Especifique um valor MSF como mm:ss:ff, em que mm é minutos, ss é segundos e ff é quadros. Você poderá omitir um campo se ele e todos os campos a seguir são zero. Por exemplo, 3, 3:0 e 3:0:0 são maneiras válidas de expressar 3 minutos.<br/> Os campos do MSF têm os seguintes valores máximos:<br/>
 <ul>
 <li>Minutos 99</li>
-<li>Segundos de 59</li>
+<li>Segundos 59</li>
 <li>Quadros 74</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>exemplos de formato de hora</td>
+<td>exemplos de formato de tempo</td>
 <td>Define o formato de hora como exemplos. Todas as informações de posição são especificadas como exemplos após este comando.</td>
 </tr>
 <tr class="odd">
-<td>formato de hora SMPTE 24<br/> formato de hora SMPTE 25<br/> formato de hora SMPTE 30<br/></td>
-<td>Define o formato de hora como uma taxa de quadros SMPTE. Para VCRs, define o formato de hora como hh: mm: SS: FF, em que os valores válidos são de 00:00:00:00 a 23:59:59: XX e XX é um valor menor do que os quadros por segundo, conforme especificado pelo número 24, 25 ou 30, conforme especificado no sinalizador. Na entrada, dois-pontos (:) são necessários para separar os componentes. As unidades menos significativas podem ser omitidas se forem 00; por exemplo, 02:00 é o mesmo que 02:00:00:00. Todos os comandos que usam valores de posição assumirão o formato SMPTE.<br/> O arquivo de sequência define o formato padrão como PPQN ou SMPTE.<br/></td>
+<td>time format smpte 24<br/> time format smpte 25<br/> time format smpte 30<br/></td>
+<td>Define o formato de hora como uma taxa de quadros SMPTE. Para VCRs, define o formato de hora como hh:mm:ss:ff, em que os valores legais são 00:00:00:00 a 23:59:59:xx e xx é um a menos que os quadros por segundo, conforme especificado pelo número 24, 25 ou 30, conforme especificado no sinalizador. Na entrada, dois-pontos (:) são necessários para separar os componentes. As unidades menos significativas poderão ser omitidas se elas são 00; por exemplo, 02:00 é o mesmo que 02:00:00:00. Todos os comandos que usam valores de posição assumirão o formato SMPTE.<br/> O arquivo de sequência define o formato padrão como PPQN ou SMPTE.<br/></td>
 </tr>
 <tr class="even">
-<td>drop de formato de hora SMPTE 30</td>
-<td>Define o formato de hora para a taxa de descarte de quadros SMPTE 30. Para VCRs, igual a SMPTE 30, exceto que determinadas posições de código de tempo são removidas do formato para que as posições de código de tempo registradas para cada quadro (na taxa de quadros NTSC de 29,97 fps) correspondam a tempo real (a 30 fps). As posições de código de tempo que são descartadas são as seguintes: duas a cada minuto, no minuto, para os nove primeiros de cada dez minutos de conteúdo registrado. Por exemplo, às 01:04:59:29, a próxima posição do código de tempo seria 01:05:00:02, e não 01:05:00:00. Todos os comandos que usam valores de posição assumirão o formato SMPTE.<br/> O arquivo de sequência define o formato padrão como PPQN ou SMPTE.<br/></td>
+<td>time format smpte 30 drop</td>
+<td>Define o formato de hora como taxa de quadros de redução de SMPTE 30. Para VCRs, o mesmo que o SMPTE 30, exceto que determinadas posições de código de data/hora são retiradas do formato para que as posições de código de hora registradas para cada quadro (na taxa de quadros NTSC de 29,97 fps) correspondam ao tempo real (a 30 fps). As posições de código de tempo que são descartados são as opções a seguir: duas a cada minuto, no minuto, para os primeiros nove de cada dez minutos de conteúdo gravado. Por exemplo, às 01:04:59:29, a próxima posição do código de hora seria 01:05:00:02, não 01:05:00:00. Todos os comandos que usam valores de posição assumirão o formato SMPTE.<br/> O arquivo de sequência define o formato padrão como PPQN ou SMPTE.<br/></td>
 </tr>
 <tr class="odd">
 <td>ponteiro de música de formato de hora</td>
-<td>Define o formato de hora para o ponteiro de música (dezesseis observações). Todos os comandos que usam valores de posição assumirão unidades de ponteiro de música. Esse sinalizador só é válido para uma sequência de tipo de divisão PPQN.</td>
+<td>Define o formato de hora como ponteiro de música (décimo sexto anotações). Todos os comandos que usam valores de posição assumirão unidades de ponteiro de música. Esse sinalizador é válido apenas para uma sequência do tipo de divisão PPQN.</td>
 </tr>
 <tr class="even">
-<td>tmsf de formato de hora</td>
-<td>Define o formato de hora para faixas, minutos, segundos e quadros. Todos os comandos que usam valores de posição assumirão TMSF. Especifique um valor de TMSF como TT: mm: SS: FF, em que TT é faixas, mm é minutos, SS é segundos e FF é quadros. Você pode omitir um campo se ele e todos os campos a seguir forem zero. Por exemplo, 3, 3:0, 3:0:0 e 3:0:0:0 são maneiras válidas de expressar o Track 3. <br/> Os campos TMSF têm os seguintes valores máximos:<br/>
+<td>time format tmsf</td>
+<td>Define o formato de hora como faixas, minutos, segundos e quadros. Todos os comandos que usam valores de posição assumirão o TMSF. Especifique um valor TMSF como tt:mm:ss:ff, em que tt é faixas, mm é minutos, ss é segundos e ff é quadros. Você poderá omitir um campo se ele e todos os campos a seguir são zero. Por exemplo, 3, 3:0, 3:0:0 e 3:0:0:0 são todas maneiras válidas de expressar a faixa 3. <br/> Os campos TMSF têm os seguintes valores máximos:<br/>
 <ul>
 <li>Faixas 99</li>
 <li>Minutos 90</li>
-<li>Segundos de 59</li>
+<li>Segundos 59</li>
 <li>Quadros 74</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>faixa de formato de hora</td>
+<td>faixa de formato de tempo</td>
 <td>Define o formato de posição como faixas. Todos os comandos que usam valores de posição assumirão faixas.</td>
 </tr>
 <tr class="even">
 <td>contador de modo de tempo</td>
-<td>Define o modo de informações de posição para usar os contadores de VCR.</td>
+<td>Define o modo de posição-informação para usar os contadores de VCR.</td>
 </tr>
 <tr class="odd">
 <td>detecção de modo de tempo</td>
-<td>Define o modo de informações de posição com base na detecção de informações de código de Code na fita. Se as informações de código de tempo forem detectadas, o tipo de hora será definido como código de tempo &quot; &quot; ; caso contrário, o tipo de hora será definido como &quot; contador &quot; . &quot;Detectar &quot; é um modo especial. Sempre que o driver é aberto, uma nova fita é inserida ou o &quot; comando de modo de tempo &quot; é emitido, o driver verifica o modo de tempo atual disponível na fita e define o &quot; tipo &quot; de hora como um código de tempo &quot; &quot; ou &quot; contador &quot; . Quando &quot; o tipo &quot; de hora é definido, o driver não o altera até que uma das condições acima ocorra novamente.<br/></td>
+<td>Define o modo de informações de posição com base na detecção de informações de código de data/hora na fita. Se as informações de código de hora são detectadas, o tipo de hora é definido como timecode ; caso contrário, o tipo &quot; de hora é definido como contador &quot; &quot; &quot; . &quot;Detectar &quot; é um modo especial. Sempre que o driver é aberto, uma nova fita é inserida ou o comando de modo de hora é emitido, o driver verifica o modo de hora atual disponível na fita e define o tipo de hora como o código de data/hora ou contador &quot; &quot; &quot; &quot; &quot; &quot; &quot; &quot; . Depois &quot; que o tipo de hora é definido, o driver não o altera até que uma das condições acima ocorra &quot; novamente.<br/></td>
 </tr>
 <tr class="even">
-<td>tempo de vida de modo de hora</td>
-<td>Define o modo de informações de posição para usar &quot; informações de código &quot; de Code na fita.</td>
+<td>time mode timecode</td>
+<td>Define o modo de informações de posição para usar informações &quot; &quot; de código de data/hora na fita.</td>
 </tr>
 <tr class="odd">
 <td>acompanhamento de mais <br/> menos controle <br/> redefinição de rastreamento <br/></td>

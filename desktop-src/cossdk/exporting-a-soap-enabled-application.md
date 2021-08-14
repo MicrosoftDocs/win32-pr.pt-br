@@ -1,31 +1,31 @@
 ---
-description: Quando você usa o COM+ para criar um serviço Web XML, esse serviço pode ser usado por qualquer cliente autorizado, incluindo aqueles que não usam COM+ ou mesmo Microsoft Windows.
+description: Quando você usa COM+ para criar um serviço Web XML, esse serviço pode ser usado por qualquer cliente autorizado, incluindo aqueles que não usam COM+ ou até mesmo o Microsoft Windows.
 ms.assetid: c40031a6-f3de-4ef4-b9aa-3f49e57da5b4
-title: Exportando um aplicativo SOAP-Enabled
+title: Exportando um aplicativo SOAP-Enabled aplicativo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d5c92029f431fc06964f233c5746c283821d11c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ce79bbc5dca59feb23ba9e976575b3b33570ecd27cf1e6a68560b02e073f48bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118307283"
 ---
-# <a name="exporting-a-soap-enabled-application"></a>Exportando um aplicativo SOAP-Enabled
+# <a name="exporting-a-soap-enabled-application"></a>Exportando um aplicativo SOAP-Enabled aplicativo
 
-Quando você usa o COM+ para criar um serviço Web XML, esse serviço pode ser usado por qualquer cliente autorizado, incluindo aqueles que não usam COM+ ou mesmo Microsoft Windows. No entanto, usar um serviço Web COM+ no modo CAO (objeto ativado pelo cliente) de um aplicativo cliente do COM+ é especialmente fácil. Basta exportar o aplicativo habilitado para SOAP no modo proxy e, em seguida, [importá](importing-a-soap-enabled-application.md) -lo para o cliente para o qual você deseja acessar o Web Service XML correspondente.
+Quando você usa COM+ para criar um serviço Web XML, esse serviço pode ser usado por qualquer cliente autorizado, incluindo aqueles que não usam COM+ ou até mesmo o Microsoft Windows. No entanto, usar um serviço Web COM+ no modo de OBJETO ativado pelo cliente (OBJECT) de um aplicativo cliente COM+ é especialmente fácil. Basta exportar o aplicativo habilitado para SOAP [](importing-a-soap-enabled-application.md) no modo proxy e importá-lo para o cliente para o qual você deseja acessar o serviço Web XML correspondente.
 
-## <a name="component-services-administrative-tool"></a>Ferramenta administrativa serviços de componentes
+## <a name="component-services-administrative-tool"></a>Ferramenta Administrativa dos Serviços de Componentes
 
 Para exportar um aplicativo habilitado para SOAP de um servidor, use as seguintes etapas:
 
-1.  Na árvore de console da ferramenta administrativa serviços de componentes, em **serviços de componentes**, abra a pasta **aplicativos com+** associada ao computador que você deseja gerenciar.
+1.  Na árvore de console da ferramenta administrativa serviços de componentes, em **Serviços** de Componentes, abra a pasta Aplicativos **COM+** associada ao computador que você deseja gerenciar.
 
-2.  Clique com o botão direito do mouse no componente que você deseja expor como um serviço Web XML e escolha **Exportar**. O **Assistente para exportação de aplicativos com+** é exibido.
+2.  Clique com o botão direito do mouse no componente que você deseja expor como um serviço Web XML e escolha **Exportar**. O **Assistente de Exportação de Aplicativos COM+** é exibido.
 
-3.  Na caixa de texto rotulada, **Insira o caminho completo e o nome do arquivo do aplicativo a ser criado**, insira o caminho completo e o nome do arquivo do MSI que conterá o aplicativo exportado ou clique em **procurar** para selecionar o caminho completo e o nome do arquivo usando uma caixa de diálogo.
+3.  Na caixa de texto rotulada Insira o caminho completo e o nome do arquivo de aplicativo a ser **criado,** insira o  caminho completo e o nome de arquivo para o arquivo MSI que conterá o aplicativo exportado ou clique em Procurar para selecionar o caminho completo e o nome do arquivo usando uma caixa de diálogo.
 
-4.  Em **exportar como**, selecione o botão de opção **proxy de aplicativo – instalar em outros computadores para habilitar o acesso a este computador** .
+4.  Em **Exportar como**, selecione o botão Proxy de Aplicativo – Instalar em outros computador para **habilitar o acesso a esse** computador.
 
 ## <a name="visual-basic"></a>Visual Basic
 
@@ -39,13 +39,13 @@ Não se aplica.
 
 <dl> <dt>
 
-[Visão geral do serviço SOAP COM+](com--soap-service-overview.md)
+[Visão geral do serviço COM+ SOAP](com--soap-service-overview.md)
 </dt> <dt>
 
-[Criando Serviços Web XML](creating-xml-web-services.md)
+[Criando serviços Web XML](creating-xml-web-services.md)
 </dt> <dt>
 
-[Importando um aplicativo SOAP-Enabled](importing-a-soap-enabled-application.md)
+[Importando um SOAP-Enabled aplicativo](importing-a-soap-enabled-application.md)
 </dt> </dl>
 
  

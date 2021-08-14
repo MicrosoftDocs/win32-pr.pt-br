@@ -1,7 +1,7 @@
 ---
-description: Função D3DXMatrixPerspectiveFovLH (D3DX10Math. h) – cria uma matriz de projeção de perspectiva do lado esquerdo com base em um campo de exibição.
+description: Função D3DXMatrixPerspectiveFovLH (D3DX10Math.h) – cria uma matriz de projeção de perspectiva à esquerda com base em um campo de exibição.
 ms.assetid: 35ee12d6-0a58-4b00-ac8f-82f82215f02e
-title: Função D3DXMatrixPerspectiveFovLH (D3DX10Math. h)
+title: Função D3DXMatrixPerspectiveFovLH (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: cea1bec170664993332b1cde1de375c416209209
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 32c3745a16061805ae165c3542e8bb7f8aba6c7e8d932cfcc169186c6d4a14e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118304470"
 ---
-# <a name="d3dxmatrixperspectivefovlh-function-d3dx10mathh"></a>Função D3DXMatrixPerspectiveFovLH (D3DX10Math. h)
+# <a name="d3dxmatrixperspectivefovlh-function-d3dx10mathh"></a>Função D3DXMatrixPerspectiveFovLH (D3DX10Math.h)
 
 Cria uma matriz de projeção de perspectiva à esquerda com base em um campo de visão.
 
@@ -44,48 +44,48 @@ D3DXMATRIX* D3DXMatrixPerspectiveFovLH(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Ponteiro para a estrutura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) que é o resultado da operação.
+Ponteiro para a [**estrutura D3DXMATRIX**](d3d10-d3dxmatrix.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*fovy* \[ no\]
+*fovy* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Campo de exibição na direção y, em radianos.
 
 </dd> <dt>
 
-*Aspecto* \[ no\]
+*Aspecto* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Taxa de proporção, definida como exibir largura de espaço dividida por altura.
+Taxa de proporção, definida como largura do espaço de exibição dividida por altura.
 
 </dd> <dt>
 
-*Zn* \[ no\]
+*zn* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valor Z do plano de exibição próximo.
 
 </dd> <dt>
 
-*ZF* \[ no\]
+*zf* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Z-valor do plano de exibição distante.
+Valor Z do plano de exibição distante.
 
 </dd> </dl>
 
@@ -93,13 +93,13 @@ Z-valor do plano de exibição distante.
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Ponteiro para uma estrutura D3DXMATRIX que é uma matriz de projeção de perspectiva do lado esquerdo.
+Ponteiro para uma estrutura D3DXMATRIX que é uma matriz de projeção de perspectiva à esquerda.
 
 ## <a name="remarks"></a>Comentários
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função D3DXMatrixPerspectiveFovLH pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função D3DXMatrixPerspectiveFovLH pode ser usada como um parâmetro para outra função.
 
-Essa função computa a matriz retornada, conforme mostrado:
+Essa função calcula a matriz retornada, conforme mostrado:
 
 
 ```
@@ -121,12 +121,12 @@ xScale = yScale / aspect ratio
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

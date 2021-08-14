@@ -1,28 +1,28 @@
 ---
-title: Localizando objetos por nome
-description: A maioria dos objetos no Active Directory Domain Services usar a propriedade CN como seu atributo de nomenclatura.
+title: Localizar objetos por nome
+description: A maioria dos objetos Active Directory Domain Services a propriedade cn como seu atributo de nomen entre eles.
 ms.assetid: c5df7403-23bc-440e-8cd6-215ab8037aed
 ms.tgt_platform: multiple
 keywords:
 - Active Directory, usando, pesquisando, por nome
-- ANÚNCIO de objeto, pesquisando por nome
-- Localizando objetos por nome
+- object AD , pesquisando por nome
+- Localizar objetos por nome
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 914faa443402a1d20698aabaf0bf4a112279a322
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 60624c62e9d28d35805af3c98f551a19f44edf9e27369cf7ded9e87621491cae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103634941"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118189176"
 ---
-# <a name="finding-objects-by-name"></a>Localizando objetos por nome
+# <a name="finding-objects-by-name"></a>Localizar objetos por nome
 
-A maioria dos objetos no Active Directory Domain Services usar a propriedade **CN** como seu atributo de nomenclatura. Alguns objetos, no entanto, usam um atributo de nomenclatura diferente de **CN**. Por exemplo, um controlador de domínio usa a propriedade **domainDns** para o atributo de nomenclatura e uma unidade organizacional usa a propriedade **OrganizationalUnit** para o atributo de nomenclatura. Para evitar a utilização de um atributo de nomenclatura diferente para diferentes tipos de objeto, a propriedade **Name** , que contém o nome distinto relativo do objeto, deve ser usada para pesquisar objetos pelo nome.
+A maioria dos objetos Active Directory Domain Services a **propriedade cn** como seu atributo de nomen entre eles. Alguns objetos, no entanto, usam um atributo de nomenu diferente de **cn**. Por exemplo, um controlador de domínio usa a propriedade **domainDNS** para o atributo de nomeação e uma unidade organizacional usa a propriedade **organizationalUnit** para o atributo de nomenv. Para evitar a precisar usar um atributo de  nomeação diferente para diferentes tipos de objeto, a propriedade name, que contém o nome diferenciado relativo do objeto, deve ser usada para pesquisar objetos por nome.
 
 ## <a name="examples"></a>Exemplos
 
-Os exemplos de código a seguir mostram diferentes cadeias de caracteres de consulta que podem ser usadas para localizar objetos por nome.
+Os exemplos de código a seguir mostram cadeias de caracteres de consulta diferentes que podem ser usadas para encontrar objetos por nome.
 
 A cadeia de caracteres de consulta a seguir localiza todos os objetos com um nome que começa com "Jeff".
 
@@ -33,7 +33,7 @@ A cadeia de caracteres de consulta a seguir localiza todos os objetos com um nom
 
 
 
-A cadeia de caracteres de consulta a seguir localiza todos os objetos de computador com um nome que começa com "concedido" ou "Corp".
+A cadeia de caracteres de consulta a seguir localiza todos os objetos de computador com um nome que começa com "leased" ou "corp".
 
 
 ```C++
@@ -42,7 +42,7 @@ A cadeia de caracteres de consulta a seguir localiza todos os objetos de computa
 
 
 
-A cadeia de caracteres de consulta a seguir localiza todos os usuários e com um nome que começa com "Karen" ou "Jeff".
+A cadeia de caracteres de consulta a seguir localiza todos os usuários e com um nome que começa com "Paulo" ou "Jeff".
 
 
 ```C++
@@ -51,9 +51,9 @@ A cadeia de caracteres de consulta a seguir localiza todos os usuários e com um
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -16,12 +16,12 @@ keywords:
 - coletores, estatísticas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c7a7f09a08788128719ea80a2a06d339f6398e6
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: 1f94bd6698ca30a645957da36cf3b81a84f9d3e7c8ce6c598be2c39f8ac766db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "104084395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118196169"
 ---
 # <a name="using-file-sinks"></a>Uso de coletores de arquivos
 
@@ -74,9 +74,9 @@ Você pode obter o tamanho do arquivo e a duração de um coletor aberto chamand
 [**Gravando arquivos ASF**](writing-asf-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

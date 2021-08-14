@@ -1,9 +1,9 @@
 ---
 title: WM/OriginalArtist
-description: O atributo WM/OriginalArtist contém o nome do artista que produziu originalmente o conteúdo.
+description: O atributo WM/OriginalArtist contém o nome do artista que originalmente produziu o conteúdo.
 ms.assetid: 92404deb-9a56-43d9-bb81-1809226eeb60
 keywords:
-- Formato de mídia do Windows do WM/OriginalArtist
+- Formato de mídia do WINDOWS WM/OriginalArtist
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ac7fe5dfff5f0c00d3e1c58e3ab439b542c281d
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: d038a7943d848fb86972c113611804fb918b68793215de1b01de9a964463ec40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104006397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118195626"
 ---
 # <a name="wmoriginalartist"></a>WM/OriginalArtist
 
-O atributo **WM/OriginalArtist** contém o nome do artista que produziu originalmente o conteúdo.
+O **atributo WM/OriginalArtist** contém o nome do artista que originalmente produziu o conteúdo.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,11 +29,11 @@ g \_ wszWMOriginalArtist
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**Cadeia de caracteres do \_ tipo WMT \_**
+**CADEIA DE CARACTERES DE \_ TIPO \_ WMT**
 
 ## <a name="remarks"></a>Comentários
 
-O artista original normalmente é usado para refazer as músicas. Para esses arquivos. Use o nome do [**autor**](author.md) da banda que originalmente registrou a música.
+O artista original normalmente é usado para a rememão de músicas. Para esses arquivos. use o [**Nome**](author.md) do autor da banda que registrou originalmente a música.
 
 ## <a name="see-also"></a>Confira também
 
@@ -42,9 +42,9 @@ O artista original normalmente é usado para refazer as músicas. Para esses arq
 [**Lista de Atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

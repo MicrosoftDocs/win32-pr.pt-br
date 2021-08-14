@@ -3,7 +3,7 @@ title: Mensagem de WM_CAP_SET_CALLBACK_CAPCONTROL (VFW. h)
 description: A \_ mensagem CAPCONTROL de retorno de chamada do WM Cap \_ \_ \_ define uma função de retorno de chamada no aplicativo, dando a ele um controle de gravação preciso. Você pode enviar essa mensagem explicitamente ou usando a macro capSetCallbackOnCapControl.
 ms.assetid: 1e93ed7b-8205-45fe-bdcf-efe3f709f728
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_SET_CALLBACK_CAPCONTROL
+- mensagem de WM_CAP_SET_CALLBACK_CAPCONTROL Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fda38bbc79461b7c5ccaf9b3a32c2c3a0f9e3e1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 70e5786ef67fe66c7ad0dac463824dcd49bfb34e4c8239ddca74ed60e3861bea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105758945"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118369514"
 ---
 # <a name="wm_cap_set_callback_capcontrol-message"></a>WM \_ Cap \_ set \_ retorno de chamada \_ CAPCONTROL Message
 

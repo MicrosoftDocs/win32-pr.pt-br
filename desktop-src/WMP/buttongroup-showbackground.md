@@ -3,7 +3,7 @@ title: BOTÃO de fundo.
 description: O atributo de exibição de fundo especifica ou recupera um valor que indica se o myButton exibe apenas os botões ou exibe o bitmap completo especificado no atributo Image.
 ms.assetid: 5c3fc873-937c-4dad-ac18-e7a37004ee1e
 keywords:
-- The. para o Windows Media Player em segundo plano
+- Windows Media Player de botão. tudo em segundo plano
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31cc87260d4b0fca74d6063c757e6c3dae0db850
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb95b707fa7e14b00e86c5a65949ff9fba3ce3db32745116fa65ca4c53ac1998
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105796440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118342669"
 ---
 # <a name="buttongroupshowbackground"></a>BOTÃO de fundo.
 

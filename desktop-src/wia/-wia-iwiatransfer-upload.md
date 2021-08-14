@@ -1,7 +1,7 @@
 ---
 description: Inicia um carregamento de dados de um único item do chamador.
 ms.assetid: 301ac5d9-b864-4c3c-bd4b-143cc4032dcb
-title: 'Método IWiaTransfer:: upload (WIA. h)'
+title: 'método IWiaTransfer:: Upload (Wia. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - Wiaguid.lib
 - Wiaguid.dll
-ms.openlocfilehash: 6aae6ca8f86d07ec052fdd59d24b0da2b96599d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 66bd542d27f29aa8fd531b6f3d8089d296efe2d963bcf967a0c1ab07e6f0db8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118208234"
 ---
-# <a name="iwiatransferupload-method"></a>Método IWiaTransfer:: upload
+# <a name="iwiatransferupload-method"></a>método IWiaTransfer:: Upload
 
 Inicia um carregamento de dados de um único item do chamador.
 
@@ -54,22 +54,22 @@ Atualmente não utilizado. Deve ser definido como zero.
 *pSource* \[ no\]
 </dt> <dd>
 
-Tipo: **[IStream](/windows/win32/api/objidl/nn-objidl-istream) \** _
+Tipo: **[IStream](/windows/win32/api/objidl/nn-objidl-istream)\***
 
 Especifica um ponteiro para os dados de [IStream](/windows/win32/api/objidl/nn-objidl-istream) .
 
 </dd> <dt>
 
-_pIWiaTransferCallback * \[ in\]
+*pIWiaTransferCallback* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IWiaTransferCallback**](-wia-iwiatransfercallback.md) \** _
+Tipo: **[ **IWiaTransferCallback**](-wia-iwiatransfercallback.md)\***
 
-Especifica um ponteiro para a interface [_ *IWiaTransferCallback* *](-wia-iwiatransfercallback.md) do chamador.
+Especifica um ponteiro para a interface [**IWiaTransferCallback**](-wia-iwiatransfercallback.md) do chamador.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -81,8 +81,8 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                   |
 | parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>       |
 | INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl>     |
 | Biblioteca<br/>                  | <dl> <dt>Wiaguid. lib</dt> </dl> |

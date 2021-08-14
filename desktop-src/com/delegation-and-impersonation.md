@@ -4,12 +4,12 @@ description: Em cenários de cliente/servidor, é comum que um servidor Chame ou
 ms.assetid: 245bff1a-31d3-49ce-847e-c37d0c96f9d1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 356708008274bdeb2aa80631bec777fbd02fd38d
-ms.sourcegitcommit: d39e82e232f6510f843fdb8d55d25b4e9e02e880
+ms.openlocfilehash: b00f878c7bc0a37e7d60c246550ff404ed4d0c31312610ab63d1863b34aa52be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "104566828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117919467"
 ---
 # <a name="delegation-and-impersonation"></a>Delegação e representação
 
@@ -26,7 +26,7 @@ Para lidar com esses problemas, o COM fornece a funcionalidade a seguir. O clien
 
 Considere o cenário ilustrado pela figura anterior, em que a e B são processos em um computador diferente de C. processar uma chamada B e B chama C. o cliente A define o nível de representação. B define o recurso de encobrimento. Se um definir um nível de representação que permita A representação, B poderá representar um ao chamar C em nome. A identidade que é apresentada para o processo C será A identidade de uma identidade ou de B, dependendo se o encobrimento foi habilitado por B. Se o encobrimento estiver habilitado, a identidade apresentada ao processo C será a de um. Se o encobrimento não estiver habilitado, a identidade de B será apresentada a C.
 
-Para mais informações, consulte os seguintes tópicos:
+Para obter mais informações, consulte estes tópicos:
 
 -   [Representação](impersonation.md)
 -   [Níveis de representação](impersonation-levels.md)

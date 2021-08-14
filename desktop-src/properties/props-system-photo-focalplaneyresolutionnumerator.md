@@ -4,12 +4,12 @@ ms.assetid: 4833546a-bc08-4428-baa5-ee53ee7e318c
 title: System. Photo. FocalPlaneYResolutionNumerator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 693f959fda54fb02739e223d2b28857b8bebb495
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 368bf16c86206b888afd94758773e5320799acb4e31e9ae9c562cde7bc5e5423
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118228978"
 ---
 # <a name="systemphotofocalplaneyresolutionnumerator"></a>System. Photo. FocalPlaneYResolutionNumerator
 

@@ -1,5 +1,5 @@
 ---
-description: Ao acessar um servidor de Instrumentação de Gerenciamento do Windows (WMI) com um script, você pode escolher entre os protocolos de autenticação do NT LAN Manager (NTLM) ou Kerberos.
+description: ao acessar um servidor de Instrumentação de Gerenciamento do Windows (WMI) com um script, você pode escolher entre os protocolos de autenticação do NT LAN Manager (NTLM) ou Kerberos.
 ms.assetid: db2dc750-bfdd-4f6c-859b-e104814f0800
 ms.tgt_platform: multiple
 title: Configurando o serviço de autenticação usando o VBScript
@@ -10,16 +10,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: bd2cf444560aac7ebce96b52d9abaa528bdcaa76
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 837a69df251b5bbb6cc8bef5ac0b882349fde74646ac6ed33149978b8f69ad7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105771647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118315383"
 ---
 # <a name="setting-the-authentication-service-using-vbscript"></a>Configurando o serviço de autenticação usando o VBScript
 
-Ao acessar um servidor de Instrumentação de Gerenciamento do Windows (WMI) com um script, você pode escolher entre os protocolos de autenticação do NT LAN Manager (NTLM) ou Kerberos. Não é necessário especificar o Kerberos, exceto ao usar a delegação. Para obter mais informações, consulte [conectando-se a um terceiro computador-delegação](connecting-to-a-3rd-computer-delegation.md).
+ao acessar um servidor de Instrumentação de Gerenciamento do Windows (WMI) com um script, você pode escolher entre os protocolos de autenticação do NT LAN Manager (NTLM) ou Kerberos. Não é necessário especificar o Kerberos, exceto ao usar a delegação. Para obter mais informações, consulte [conectando-se a um terceiro computador-delegação](connecting-to-a-3rd-computer-delegation.md).
 
 Como as versões do sistema operacional diferem em qual serviço de autenticação eles usam, é recomendável que você não especifique um valor para o campo autoridade ao se conectar a um sistema remoto. Em vez disso, permita que o sistema operacional e a versão distribuída do Component Object Model (DCOM) selecionem NTLM ou Kerberos. Se um serviço de autenticação for especificado, a sintaxe exigirá o nome principal do servidor, que é o nome do computador de destino em vez do controlador de domínio.
 

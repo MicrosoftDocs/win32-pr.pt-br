@@ -16,12 +16,12 @@ api_type:
 api_location:
 - Winspool.drv
 - Ext-MS-Win-Printer-WinSpool-L1-1-3.dll
-ms.openlocfilehash: c5175daf0a59ac4231baa1a32772863a0017c45d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7be4efb1de46a960508972b00d113c5a27ab57187c1a89475eebcde69f14d978
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103662120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117686728"
 ---
 # <a name="enumprinterdrivers-function"></a>Função EnumPrinterDrivers
 
@@ -60,7 +60,7 @@ Se *pname* for **NULL**, a função enumerará os drivers de impressora local.
 *pEnvironment* \[ no\]
 </dt> <dd>
 
-Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o ambiente (por exemplo, Windows x86, Windows IA64, Windows x64 ou Windows NT R4000). Se esse parâmetro for **nulo**, a função usará o ambiente atual do chamador/cliente (não do destino/servidor).
+um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o ambiente (por exemplo, Windows x86, Windows IA64, Windows x64 ou Windows NT R4000). Se esse parâmetro for **nulo**, a função usará o ambiente atual do chamador/cliente (não do destino/servidor).
 
 Se a cadeia de caracteres *pEnvironment* especificar "All", o **EnumPrinterDrivers** enumera drivers de impressora para todas as plataformas instaladas no servidor especificado.
 
@@ -78,8 +78,8 @@ O tipo de estrutura de informações retornado no buffer *pDriverInfo* . Pode se
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | [**Informações do DRIVER \_ \_ 1**](driver-info-1.md)<br/> |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | [**Informações do DRIVER \_ \_ 2**](driver-info-2.md)<br/> |
 | <span id="3"></span><dl> <dt>**3**</dt> </dl> | [**Informações do DRIVER \_ \_ 3**](driver-info-3.md)<br/> |
-| <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | [**Informações do DRIVER \_ \_ 4**](driver-info-4.md)<br/> |
-| <span id="5"></span><dl> <dt>**05**</dt> </dl> | [**Informações do DRIVER \_ \_ 5**](driver-info-5.md)<br/> |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | [**Informações do DRIVER \_ \_ 4**](driver-info-4.md)<br/> |
+| <span id="5"></span><dl> <dt>**5**</dt> </dl> | [**Informações do DRIVER \_ \_ 5**](driver-info-5.md)<br/> |
 | <span id="6"></span><dl> <dt>**6**</dt> </dl> | [**Informações do DRIVER \_ \_ 6**](driver-info-6.md)<br/> |
 | <span id="8"></span><dl> <dt>**8**</dt> </dl> | [**Informações do DRIVER \_ \_ 8**](driver-info-8.md)<br/> |
 
@@ -119,7 +119,7 @@ Um ponteiro para uma variável que recebe o número de estruturas retornadas no 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno será um valor diferente de zero.
 

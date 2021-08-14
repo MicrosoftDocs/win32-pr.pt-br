@@ -1,20 +1,20 @@
 ---
 title: Configuração de plug-in do serviço WinRM
-description: Um plug-in Gerenciamento Remoto do Windows (WinRM) deve ser registrado no catálogo do WinRM para permitir que a infraestrutura determine dinamicamente o conjunto de plug-ins disponíveis e os URIs de recursos aos quais eles dão suporte.
+description: um plug-in Gerenciamento Remoto do Windows (WinRM) deve ser registrado no catálogo do WinRM para permitir que a infraestrutura determine dinamicamente o conjunto de plug-ins disponíveis e os URIs de recursos aos quais eles dão suporte.
 ms.assetid: d71cd244-3f10-40e3-a756-36cdf41b9cad
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 60bf618d71e55c6afd28de918198725895088559
-ms.sourcegitcommit: 73417d55867c804274a55abe5ca71bcba7006119
+ms.openlocfilehash: 08b82b24b8631cd6a47a879a6fa0684b9b2ac9c542699396d0f0997afe14cac8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104294593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118323714"
 ---
 # <a name="winrm-service-plug-in-configuration"></a>Configuração de plug-in do serviço WinRM
 
-Um plug-in Gerenciamento Remoto do Windows (WinRM) deve ser registrado no catálogo do WinRM para permitir que a infraestrutura determine dinamicamente o conjunto de plug-ins disponíveis e os [*URIs de recursos*](windows-remote-management-glossary.md) aos quais eles dão suporte. Todos os [*URIs de recurso*](windows-remote-management-glossary.md) para plug-ins WinRM devem estar em conformidade com o formato definido no RFC 3986 ( [https://www.ietf.org/rfc/rfc3986.txt](https://www.ietf.org/rfc/rfc3986.txt) ). A configuração é feita por meio do serviço WinRM principal.
+um plug-in Gerenciamento Remoto do Windows (WinRM) deve ser registrado no catálogo do WinRM para permitir que a infraestrutura determine dinamicamente o conjunto de plug-ins disponíveis e os [*URIs de recursos*](windows-remote-management-glossary.md) aos quais eles dão suporte. Todos os [*URIs de recurso*](windows-remote-management-glossary.md) para plug-ins WinRM devem estar em conformidade com o formato definido no RFC 3986 ( [https://www.ietf.org/rfc/rfc3986.txt](https://www.ietf.org/rfc/rfc3986.txt) ). A configuração é feita por meio do serviço WinRM principal.
 
 O comando a seguir registra uma configuração de plug-in com o serviço WinRM:
 
@@ -130,7 +130,7 @@ Representa uma configuração de [*URI de recurso*](windows-remote-management-gl
 > [!Note]  
 > O atributo de **suporteoptions** pode ser definido como false. Se o **suporteoptions** for definido como false, esse atributo não será listado quando o recurso for enumerado.
 
- 
+ 
 
 </dd> <dt>
 
@@ -207,11 +207,11 @@ Há suporte para operações de Shell no [*URI de recurso*](windows-remote-manag
 <span id="PlugInConfiguration_Resources_Resource_Security"></span><span id="pluginconfiguration_resources_resource_security"></span><span id="PLUGINCONFIGURATION_RESOURCES_RESOURCE_SECURITY"></span>**PlugInConfiguration** / **Recursos** / do **Recurso** / do **Segurança** do
 </dt> <dd>
 
-Esse elemento define o descritor de segurança (por meio do atributo **SDDL** ) que deve ser aplicado para determinar o acesso a um [*URI de recurso*](windows-remote-management-glossary.md) específico (por meio do atributo **URI** ). Se **ExactMatch** não estiver presente, o elemento de **segurança** assume como padrão **false**, o que significa que o **SDDL** se aplica a todos os *URIs de recurso* que compartilham o **URI** como um prefixo. Se **ExactMatch** for definido como true, o **SDDL** se aplicará somente ao **URI** exato especificado. Se houver várias entradas de **segurança** que possam se aplicar a *URIs de recursos* específicos, a correspondência de prefixo mais longo será usada para determinar a **SDDL** apropriada. Como resultado da correspondência de prefixo mais longo, se existir uma entrada de **URI** de correspondência exata, ela será sempre escolhida como o elemento de segurança apropriado.
+Esse elemento define o descritor de segurança (por meio do atributo **SDDL** ) que deve ser aplicado para determinar o acesso a um [*URI de recurso*](windows-remote-management-glossary.md) específico (por meio do atributo **URI** ). Se **ExactMatch** não estiver presente, o elemento de **segurança** assume como padrão **false**, o que significa que o **SDDL** se aplica a todos os *URIs de recurso* que compartilham o **URI** como um prefixo. Se **ExactMatch** for definido como true, o **SDDL** se aplicará somente ao **URI** exato especificado. Se houver várias **entradas de** segurança que podem ser aplicadas a um recurso *específico URIs*, a combinação de prefixo mais longo será usada para determinar o **Sddl apropriado.** Como resultado da combinação de prefixo mais longo, se existir uma entrada **de URI** de combinação exata, ela sempre será escolhida como o elemento security apropriado.
 
 </dd> </dl>
 
-Este é o esquema de configuração de plug-in especificado como um XSD.
+A seguir está o esquema de configuração de plug-in especificado como um XSD.
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8"?>
@@ -306,9 +306,9 @@ Este é o esquema de configuração de plug-in especificado como um XSD.
 </xs:schema>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: Converte um valor de data e hora no formato CIM DATETIME no formato de \_ Data VT.
+description: Converte um valor de data e hora no formato DATETIME CIM no formato DATE da \_ VT.
 ms.assetid: e63e7acc-89d4-458a-a1ab-4d4a65cf7f8b
 ms.tgt_platform: multiple
-title: Método SWbemDateTime. GetVarDate (Wbemdisp. h)
+title: Método SWbemDateTime.GetVarDate (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,20 +16,20 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: b4d0c71e4748774eacab4b234092178179a4a774
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 506c897da130b9558b37637918674a7c6024adb787ac3d91e53e430a6edfcd1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105814429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118314751"
 ---
-# <a name="swbemdatetimegetvardate-method"></a>Método SWbemDateTime. GetVarDate
+# <a name="swbemdatetimegetvardate-method"></a>Método SWbemDateTime.GetVarDate
 
-O método **GetVarDate** do objeto [**SWbemDateTime**](swbemdatetime.md) converte um valor de data e hora no formato CIM [**DateTime**](datetime.md) no formato de **\_ Data VT** .
+O **método GetVarDate** do objeto [**SWbemDateTime**](swbemdatetime.md) converte um valor de data e hora no formato [**DATETIME**](datetime.md) CIM para o **formato DATE da VT. \_**
 
-O formato de **\_ Data VT** é um valor [**DateTime**](datetime.md) de variante de automação que Visual Basic e o uso do ActiveX.
+O **formato DATE \_ da VT** é um valor [**DATETIME**](datetime.md) variante de automação que Visual Basic e ActiveX usar.
 
-Para obter uma explicação dessa sintaxe, consulte [convenções de documento para a API de script](document-conventions-for-the-scripting-api.md).
+Para uma explicação dessa sintaxe, consulte [Convenções de documento para a API de Script](document-conventions-for-the-scripting-api.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,43 +46,43 @@ vdate = .GetVarDate( _
 
 <dl> <dt>
 
-*bIsLocal* \[ em, opcional\]
+*bIsLocal* \[ in, opcional\]
 </dt> <dd>
 
-Indica se o valor retornado é interpretado como hora local. A propriedade UTC (tempo Universal Coordenado) contém a hora local convertida para o deslocamento UTC correto. Se o valor for **false**, o valor será interpretado como UTC com um deslocamento zero (0).
+Indica se o valor retornado é interpretado como hora local. A Tempo Universal Coordenado (UTC) contém a hora local convertida no deslocamento UTC correto. Se o valor for **FALSE,** o valor será interpretado como UTC com um deslocamento de zero (0).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de data e hora no formato de **\_ Data VT** .
+O valor de data e hora no **formato DATE da VT. \_**
 
 ## <a name="remarks"></a>Comentários
 
-**VT \_** Os valores de data e **FILETIME** não podem conter campos curinga.
+**VT \_ Os valores DATE** **e FILETIME** não podem conter campos curinga.
 
-O método **GetVarDate** falhará (**wbemErrFailed**) se qualquer uma das seguintes propriedades for **falsa**:
+O **método GetVarDate** falhará (**wbemErrFailed**) se qualquer uma das seguintes propriedades for **FALSE:**
 
 -   [**YearSpecified**](swbemdatetime-yearspecified.md)
 -   [**MonthSpecified**](swbemdatetime-monthspecified.md)
 -   [**DaySpecified**](swbemdatetime-dayspecified.md)
 -   [**HoursSpecified**](swbemdatetime-hoursspecified.md)
--   [**MinutesSpecified**](swbemdatetime-minutesspecified.md)
+-   [**Minutos Especificados**](swbemdatetime-minutesspecified.md)
 -   [**SecondsSpecified**](swbemdatetime-secondsspecified.md)
--   [**MicrosecondsSpecified**](swbemdatetime-microsecondsspecified.md)
+-   [**Microssegundos Especificados**](swbemdatetime-microsecondsspecified.md)
 -   [**UTCSpecified**](swbemdatetime-utcspecified.md)
 
-Após o retorno bem-sucedido de [**SetVarDate**](swbemdatetime-setvardate.md), todas essas propriedades são definidas como **true**.
+No retorno bem-sucedido [**de SetVarDate,**](swbemdatetime-setvardate.md)todas essas propriedades são definidas como **TRUE.**
 
-Após uma chamada bem-sucedida para [**SetVarDate**](swbemdatetime-setvardate.md), o valor [**DateTime**](datetime.md) é sempre interpretado como um valor **DateTime** absoluto, em vez de um intervalo, e o [**isinterval**](swbemdatetime-isinterval.md) é definido como **false**.
+Após uma chamada bem-sucedida para [**SetVarDate**](swbemdatetime-setvardate.md), o valor [**DATETIME**](datetime.md) sempre é interpretado como um valor **DATETIME** absoluto em vez de um intervalo e [**IsInterval**](swbemdatetime-isinterval.md) é definido como **FALSE.**
 
-Se [**isinterval**](swbemdatetime-isinterval.md) for definido como **true**, uma chamada para **GetVarDate** resultará no erro **wbemErrFailed** .
+Se [**IsInterval**](swbemdatetime-isinterval.md) for definido como **TRUE,** uma chamada para **GetVarDate** resulta no **erro wbemErrFailed.**
 
-Uma perda de precisão ocorre quando você chama **GetVarDate**, pois os valores de [DateTime](datetime.md) têm uma resolução de um microssegundo (s) e os valores de **\_ data VT** têm uma resolução de 500 milissegundos.
+Alguma perda de precisão ocorre quando você chama **GetVarDate**, porque os valores [datetime](datetime.md) têm uma resolução de um microssegundo ( s) e os valores **date da VT \_** têm uma resolução de 500 milissegundos.
 
 ## <a name="examples"></a>Exemplos
 
-Para obter exemplos de como usar o objeto [**SWbemDateTime**](swbemdatetime.md) para converter valores de data e [**hora**](datetime.md) CIM para e do formato de **\_ dados** **FILETIME** ou VT, consulte [tarefas do WMI: datas e horas](wmi-tasks--dates-and-times.md). Para obter uma descrição do formato de data e hora **CIM,** consulte [formato de datas e horas](date-and-time-format.md).
+Para ver exemplos de como usar o objeto [**SWbemDateTime**](swbemdatetime.md) para converter valores CIM [**DATETIME**](datetime.md) de e para o formato **FILETIME** ou **VT \_ DATE,** consulte [Tarefas WMI:](wmi-tasks--dates-and-times.md)Datas e Horas . Para uma descrição do formato CIM **DATETIME,** consulte [Formato de data e hora.](date-and-time-format.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,11 +92,11 @@ Para obter exemplos de como usar o objeto [**SWbemDateTime**](swbemdatetime.md) 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMDATETIME CLSID<br/>                                                         |
-| IID<br/>                      | ISWbemDateTime de IID \_<br/>                                                          |
+| CLSID<br/>                    | CLSID \_ SWbemDateTime<br/>                                                         |
+| IID<br/>                      | IID \_ ISWbemDateTime<br/>                                                          |
 
 
 
@@ -104,13 +104,13 @@ Para obter exemplos de como usar o objeto [**SWbemDateTime**](swbemdatetime.md) 
 
 <dl> <dt>
 
-[**SWbemDateTime. GetFileTime**](swbemdatetime-getfiletime.md)
+[**SWbemDateTime.GetFileTime**](swbemdatetime-getfiletime.md)
 </dt> <dt>
 
 [**SWbemDateTime**](swbemdatetime.md)
 </dt> <dt>
 
-[HORÁRIO](datetime.md)
+[Datetime](datetime.md)
 </dt> </dl>
 
  

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 48f6093f32d43737b1999c3474f74569ecd3f8cd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: df10faa20094623940e9694a5612c4f49b45f3c979d7e05df3239512cb021ab2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118194025"
 ---
 # <a name="iportabledevicevaluesgetunsignedlargeintegervalue-method"></a>Método IPortableDeviceValues:: GetUnsignedLargeIntegerValue
 
@@ -55,7 +55,7 @@ Ponteiro para o valor **ULONGLONG** recuperado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 

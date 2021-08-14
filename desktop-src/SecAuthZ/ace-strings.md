@@ -1,17 +1,17 @@
 ---
 description: Explica as cadeias de caracteres usadas em uma entrada de controle de acesso.
 ms.assetid: 82c99170-784b-4724-a25b-2f2e8a2e0225
-title: Cadeias de caracteres ACE
+title: Cadeias de Caracteres ACE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ed8f9aad8696bd3d3c251170f2ff79ea493ce57
-ms.sourcegitcommit: 07ba02719c9779e082b108ae74f9699fb0236c34
+ms.openlocfilehash: f60e8f4f5d3cd94f6e871b3b4962d2d548afa003c3bd4aa37a1ae8f008ce1a6f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108644178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117785397"
 ---
-# <a name="ace-strings"></a>Cadeias de caracteres ACE
+# <a name="ace-strings"></a>Cadeias de Caracteres ACE
 
 A [linguagem de definição do descritor de segurança](security-descriptor-definition-language.md) (SDDL) usa cadeias de caracteres Ace nos componentes DACL e SACL de uma cadeia de caracteres de [*descritor de segurança*](/windows/desktop/SecGloss/s-gly) .
 
@@ -47,15 +47,15 @@ Uma cadeia de caracteres que indica o valor do membro **AceType** da estrutura d
 | "AL"            | \_alarme SDDL                             | \_tipo de \_ Ace do alarme do sistema \_                                                                                                                                           |
 | CN            | \_auditoria de objeto SDDL \_                     | \_ \_ tipo ACE do objeto Audit \_ do \_ sistema                                                                                                                                   |
 | OL            | \_alarme do objeto SDDL \_                     | \_ \_ tipo ACE do objeto Alarm \_ do \_ sistema                                                                                                                                   |
-| ML            | \_rótulo obrigatório de SDDL \_                  | \_Rótulo obrigatório do sistema \_ \_ \_ tipo ACE **do Windows Server 2003:** não disponível.                                                                                        |
-| XA            | \_acesso de retorno de chamada SDDL \_ \_ permitido         | ACESSO \_ permitido \_ retorno \_ de chamada Ace \_ tipo **Windows Server 2008, windows vista e Windows Server 2003:** não disponível.                                                |
-| XD            | \_acesso de retorno de chamada SDDL \_ \_ negado          | ACESSO \_ negado \_ chamada \_ Ace \_ tipo **Windows Server 2008, windows vista e Windows Server 2003:** não disponível.                                                 |
-| ARQUITETURA            | \_atributo de recurso SDDL \_               | \_Tipo de Ace do atributo de recurso do sistema \_ \_ \_ **Windows Server 2008 R2, windows 7, Windows Server 2008, windows vista e Windows Server 2003:** não disponível.<br/> |
-| SP3            | ID da política com \_ escopo SDDL \_ \_                | ID da política com escopo do sistema \_ \_ \_ \_ ACE \_ tipo **Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista e Windows Server 2003:** não disponível.<br/>  |
-| "XU"            | \_auditoria de retorno de chamada SDDL \_                   | \_Tipo de \_ retorno de chamada \_ de auditoria do sistema \_ **Windows Server 2008 R2, windows 7, Windows Server 2008, windows vista e Windows Server 2003:** não disponível.<br/>     |
-| ZA            | \_acesso de objeto de retorno de chamada SDDL \_ \_ \_ permitido | ACESSO \_ permitido \_ retorno de chamada \_ Ace \_ tipo **Windows Server 2008 R2, windows 7, Windows Server 2008, windows vista e Windows Server 2003:** não disponível.<br/>   |
-| TL            | \_rótulo de \_ confiança do processo SDDL \_             | Rótulo de confiança do processo do sistema \_ \_ \_ \_ \_ tipo ACE **Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista e Windows Server 2003:** não disponível. |
-| Flórida            | \_filtro de acesso SDDL \_                    | \_Tipo de \_ ACE de filtro \_ de acesso do sistema \_ **Windows Server 2016, Windows 10 versão 1607, Windows 10 versão 1511, Windows 10 versão 1507, windows Server 2012 R2, Windows 8.1, Windows Server 2012, windows 8, Windows Server 2008 R2, windows 7, Windows Server 2008, windows vista e Windows Server 2003:** não disponível. |
+| "ML"            | \_rótulo obrigatório de SDDL \_                  | \_tipo de \_ ACE de rótulo obrigatório do sistema \_ \_ **Windows Server 2003:** não disponível.                                                                                        |
+| XA            | \_acesso de retorno de chamada SDDL \_ \_ permitido         | acesso \_ permitido ao \_ tipo de chamada \_ ACE \_ **Windows server 2008, Windows Vista e Windows server 2003:** não disponível.                                                |
+| XD            | \_acesso de retorno de chamada SDDL \_ \_ negado          | acesso \_ negado \_ chamada \_ \_ tipo ACE **Windows server 2008, Windows Vista e Windows server 2003:** não disponível.                                                 |
+| ARQUITETURA            | \_atributo de recurso SDDL \_               | \_tipo de atributo de recurso do sistema \_ \_ \_ **Windows server 2008 R2, Windows 7, Windows server 2008, Windows Vista e Windows server 2003:** não disponível.<br/> |
+| SP3            | ID da política com \_ escopo SDDL \_ \_                | \_ID da política com escopo do sistema \_ \_ \_ ACE \_ tipo **Windows server 2008 R2, Windows 7, Windows server 2008, Windows Vista e Windows Server 2003:** não disponível.<br/>  |
+| "XU"            | \_auditoria de retorno de chamada SDDL \_                   | \_tipo de \_ retorno de chamada \_ de auditoria do sistema \_ **Windows server 2008 R2, Windows 7, Windows server 2008, Windows Vista e Windows Server 2003:** não disponível.<br/>     |
+| ZA            | \_acesso de objeto de retorno de chamada SDDL \_ \_ \_ permitido | acesso \_ permitido \_ retorno de chamada \_ ACE \_ tipo **Windows server 2008 R2, Windows 7, Windows server 2008, Windows Vista e Windows server 2003:** não disponível.<br/>   |
+| TL            | \_rótulo de \_ confiança do processo SDDL \_             | \_ \_ rótulo de confiança do processo do sistema \_ \_ \_ tipo ACE **Windows Server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows server 2008, Windows Vista e Windows Server 2003:** não disponível. |
+| Flórida            | \_filtro de acesso SDDL \_                    | \_ \_ \_ tipo de ACE de filtro de acesso do sistema \_ **Windows Server 2016, Windows 10 versão 1607, Windows 10 versão 1511, Windows 10 versão 1507, Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows server 2008, Windows Vista e Windows server 2003:** não disponível. |
  
 
 > [!Note]  
@@ -81,78 +81,78 @@ Uma cadeia de caracteres que indica o valor do membro **AceFlags** da estrutura 
 | “ID”             | SDDL \_ herdada          | Ace HERDAdo \_                |
 | ADMINISTRADOR             | \_êxito na auditoria de SDDL \_     | \_sinalizador de \_ ACE de acesso bem-sucedido \_ |
 | ATIVO             | \_falha de auditoria de SDDL \_     | \_sinalizador de \_ ACE de acesso com falha \_     |
-| TP             | \_filtro de confiança \_ protegida \_ SDDL | \_Sinalizador de \_ ACE de filtro protegido de confiança \_ \_ **Windows Server 2016, Windows 10 versão 1607, Windows 10 versão 1511, Windows 10 versão 1507, windows Server 2012 R2, Windows 8.1, Windows Server 2012, windows 8, Windows Server 2008 R2, windows 7, Windows Server 2008, windows vista e Windows Server 2003:** não disponível. |
-| CD             | SDDL \_ crítico           | \_Sinalizador de Ace crítico \_ **Windows Server versão 1803, windows 10 versão 1803, windows Server versão 1709, windows 10 versão 1709, windows 10 versão 1703, Windows Server 2016, windows 10 versão 1607, windows 10 versão 1511, windows 10 versão 1507, Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista e Windows Server 2003:** não disponível. |
+| TP             | \_filtro de confiança \_ protegida \_ SDDL | \_ \_ \_ \_ sinalizador de ACE de filtro protegido **de confiança Windows Server 2016, Windows 10 versão 1607, Windows 10 versão 1511, Windows 10 versão 1507, Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows server 2008, Windows Vista e Windows server 2003:** não disponível. |
+| CD             | SDDL \_ crítico           | \_sinalizador de ACE crítico \_ **Windows server versão 1803, Windows 10 versão 1803, Windows Server versão 1709, Windows 10 versão 1709, Windows 10 versão 1703, Windows Server 2016, Windows 10 versão 1607, Windows 10 versão 1511, Windows 10 versão 1507, Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows server 2008, Windows Vista e Windows Server 2003:** não disponível. |
  
 
 </dd> <dt>
 
-<span id="rights"></span><span id="RIGHTS"></span>**privilégios**
+<span id="rights"></span><span id="RIGHTS"></span>**Direitos**
 </dt> <dd>
 
-Uma cadeia de caracteres que indica os [direitos de acesso](access-rights-and-access-masks.md) controlados pela Ace. Essa cadeia de caracteres pode ser uma representação de cadeia de caracteres hexadecimal dos direitos de acesso, como "0x7800003F", ou pode ser uma concatenação das cadeias de caracteres a seguir.
+Uma cadeia de caracteres que indica os [direitos de acesso](access-rights-and-access-masks.md) controlados pela ACE. Essa cadeia de caracteres pode ser uma representação de cadeia de caracteres hexadecimal dos direitos de acesso, como "0x7800003F", ou pode ser uma concatenação das cadeias de caracteres a seguir.
 
 
 
 ### <a name="generic-access-rights"></a>Direitos de acesso genéricos
 
-| Cadeia de direitos de acesso | Constante em SDDL. h | Valor direito de acesso |
+| Cadeia de caracteres de direitos de acesso | Constante em Sddl.h | Valor correto de acesso |
 |----------------------|--------------------|--------------------|
-| 3º                 | \_ \_ todos os genéricos SDDL | \_tudo genérico       |
-| GR                 | \_leitura genérica de SDDL \_ | \_leitura genérica     |
-| GW                 | \_gravação genérica \_ SDDL | \_gravação genérica |
-| GX                 | \_execução genérica de SDDL \_ | \_execução genérica |
+| "GA"                 | SDDL \_ GENERIC \_ ALL | GENERIC \_ ALL       |
+| "GR"                 | LEITURA GENÉRICA DO SDDL \_ \_ | LEITURA \_ GENÉRICA     |
+| "GW"                 | GRAVAÇÃO GENÉRICA SDDL \_ \_ | GRAVAÇÃO \_ GENÉRICA |
+| "GX"                 | SDDL \_ GENERIC \_ EXECUTE | EXECUÇÃO \_ GENÉRICA |
 
 
 ### <a name="standard-access-rights"></a>Direitos de acesso padrão
 
-| Cadeia de direitos de acesso | Constante em SDDL. h | Valor direito de acesso |
+| Cadeia de caracteres de direitos de acesso | Constante em Sddl.h | Valor correto de acesso |
 |----------------------|--------------------|--------------------|
-| RC                 | \_controle de leitura de SDDL \_ | controle de leitura \_      |
-| SD                 | \_exclusão padrão de SDDL \_ | Delete (excluir)          |
-| WD                 | \_DAC de gravação de SDDL \_ | GRAVAR \_ DAC            |
-| OIS                 | \_proprietário da gravação SDDL \_ | proprietário da gravação \_        |
+| "RC"                 | CONTROLE DE LEITURA SDDL \_ \_ | CONTROLE \_ DE LEITURA      |
+| "SD"                 | SDDL \_ STANDARD \_ DELETE | DELETE          |
+| "WD"                 | DAC de \_ GRAVAÇÃO \_ SDDL | ESCREVER \_ DAC            |
+| "WO"                 | PROPRIETÁRIO DE GRAVAÇÃO SDDL \_ \_ | PROPRIETÁRIO \_ DA GRAVAÇÃO        |
 
-### <a name="directory-service-object-access-rights"></a>Direitos de acesso a objeto de serviço de diretório
+### <a name="directory-service-object-access-rights"></a>Direitos de acesso ao objeto de serviço de diretório
 
-| Cadeia de direitos de acesso | Constante em SDDL. h | Valor direito de acesso |
+| Cadeia de caracteres de direitos de acesso | Constante em Sddl.h | Valor correto de acesso |
 |----------------------|--------------------|--------------------|
-| RP                 | \_propriedade de leitura de SDDL \_ | ADS \_ direito \_ de \_ leitura de DS \_ de AD |
-| PROCESSADOR                 | \_propriedade de gravação SDDL \_ | publicidade \_ de \_ gravação DS do \_ ad \_ |
-| CC                 | \_criar \_ filho de SDDL | \_direito de \_ criação de DS do AD do ADS \_ \_ |
-| ORIGEM                 | \_excluir \_ filho de SDDL | \_direito de \_ exclusão de DS do AD do ADS \_ \_ |
-| LCs                 | \_lista de \_ filhos de SDDL | lista de anúncios \_ à direita \_ ACTRL \_ DS \_ |
-| CM                 | \_auto- \_ gravação de SDDL    | ANÚNCIOS \_ do lado direito do \_ ad \_ |
-| LO                  | \_objeto da lista SDDL \_ | \_objeto de \_ lista de DS direito do ADS \_ \_ |
-| DT                 | \_árvore de exclusão de SDDL \_ | \_árvore de \_ exclusão de DS do lado do ADS \_ \_ |
-| CD                  | \_acesso de controle SDDL \_ | \_acesso ao \_ controle de DS direito do ADS \_ \_ |
+| "RP"                 | PROPRIEDADE DE LEITURA \_ \_ SDDL | ADS \_ RIGHT \_ DS \_ READ \_ PROP |
+| "WP"                 | PROPRIEDADE WRITE \_ \_ SDDL | ADS \_ RIGHT \_ DS \_ WRITE \_ PROP |
+| "CC"                 | SDDL \_ CREATE \_ CHILD | ADS \_ RIGHT \_ DS \_ CREATE \_ CHILD |
+| "DC"                 | SDDL \_ DELETE \_ CHILD | ADS \_ RIGHT \_ DS \_ DELETE \_ CHILD |
+| "LC"                 | SDDL \_ LIST \_ CHILDREN | ADS \_ RIGHT \_ ACTRL \_ DS \_ LIST |
+| "SW"                 | SDDL \_ SELF \_ WRITE    | ADS \_ RIGHT \_ DS \_ SELF |
+| "LO"                  | OBJETO SDDL \_ \_ LIST | OBJETO \_ ADS RIGHT \_ DS \_ LIST \_ |
+| "DT"                 | ÁRVORE DE EXCLUSÃO DE SDDL \_ \_ | ÁRVORE \_ DE EXCLUSÃO DO ADS RIGHT \_ DS \_ \_ |
+| "CR"                  | ACESSO AO CONTROLE SDDL \_ \_ | ADS \_ RIGHT \_ DS \_ CONTROL \_ ACCESS |
 
-### <a name="file-access-rights"></a>Direitos de acesso a arquivos
+### <a name="file-access-rights"></a>Direitos de acesso ao arquivo
 
-| Cadeia de direitos de acesso | Constante em SDDL. h | Valor direito de acesso |
+| Cadeia de caracteres de direitos de acesso | Constante em Sddl.h | Valor correto de acesso |
 |----------------------|--------------------|--------------------|
-| ATIVO                 | \_arquivo SDDL \_ All    | ARQUIVAr \_ todo o \_ acesso   |
-| FR                 | \_leitura de arquivo SDDL \_   | \_leitura genérica do arquivo \_ |
-| FW                 | \_gravação de arquivo SDDL \_  | \_gravação genérica de arquivo \_ |
-| EFEITO                 | \_execução de arquivo SDDL \_ | \_execução genérica do arquivo \_ |
+| "FA"                 | ARQUIVO SDDL \_ \_ ALL    | ARQUIVO \_ TODO \_ O ACESSO   |
+| "FR"                 | LEITURA DE ARQUIVO SDDL \_ \_   | LEITURA \_ GENÉRICA DO \_ ARQUIVO |
+| "FW"                 | GRAVAÇÃO DE ARQUIVO SDDL \_ \_  | GRAVAÇÃO \_ GENÉRICA DE \_ ARQUIVO |
+| "FX"                 | ARQUIVO SDDL \_ \_ EXECUTE | FILE \_ GENERIC \_ EXECUTE |
 
 
-### <a name="registry-key-access-rights"></a>Direitos de acesso à chave do registro
+### <a name="registry-key-access-rights"></a>Direitos de acesso de chave do Registro
 
-| Cadeia de direitos de acesso | Constante em SDDL. h | Valor direito de acesso |
+| Cadeia de caracteres de direitos de acesso | Constante em Sddl.h | Valor correto de acesso |
 |----------------------|--------------------|--------------------|
-| Ka                 | \_chave SDDL \_ All     | CHAVE de \_ todo o \_ acesso   |
-| Coreia                 | \_leitura de chave SDDL \_    | leitura de chave \_          |
-| KW                 | \_gravação de chave SDDL \_   | gravação de chave \_         |
-| "KX"                 | \_execução da chave SDDL \_ | \_executar chave       |
+| "KA"                 | CHAVE SDDL \_ \_ ALL     | KEY \_ ALL \_ ACCESS   |
+| "KR"                 | LEITURA DA CHAVE SDDL \_ \_    | LEITURA \_ DE CHAVE          |
+| "KW"                 | GRAVAÇÃO DE CHAVE SDDL \_ \_   | GRAVAÇÃO \_ DE CHAVE         |
+| "KX"                 | SDDL \_ KEY \_ EXECUTE | KEY \_ EXECUTE       |
 
 ### <a name="mandatory-label-rights"></a>Direitos de rótulo obrigatórios
 
-| Cadeia de direitos de acesso | Constante em SDDL. h | Valor direito de acesso |
+| Cadeia de caracteres de direitos de acesso | Constante em SDDL. h | Valor direito de acesso |
 |----------------------|--------------------|--------------------|
-| NR                 | SDDL \_ não \_ lido \_ | \_Rótulo obrigatório \_ do sistema \_ não ler o \_ \_ **Windows Server 2008, Windows Vista e Windows Server 2003:** não disponível. |
-| NW                 | SDDL \_ sem \_ gravação \_ | \_Rótulo obrigatório \_ \_ do sistema sem \_ gravação no \_ **Windows Server 2008, Windows Vista e Windows Server 2003:** não disponível. |
-| NX                 | SDDL \_ não \_ executar \_ | \_Rótulo obrigatório do sistema \_ \_ não \_ executar \_ **Windows Server 2008, Windows Vista e Windows Server 2003:** não disponível. |
+| NR                 | SDDL \_ não \_ lido \_ | \_rótulo obrigatório \_ do \_ sistema \_ não \_ ler **Windows server 2008, Windows Vista e Windows server 2003:** não disponível. |
+| NW                 | SDDL \_ sem \_ gravação \_ | \_rótulo obrigatório \_ do \_ sistema \_ sem \_ gravação **Windows server 2008, Windows Vista e Windows server 2003:** não disponível. |
+| NX                 | SDDL \_ não \_ executar \_ | \_rótulo obrigatório \_ do \_ sistema \_ não \_ executar **Windows server 2008, Windows Vista e Windows Server 2003:** não disponível. |
 </dd> <dt>
 
 <span id="object_guid"></span><span id="OBJECT_GUID"></span>**GUID do objeto \_**
@@ -196,7 +196,7 @@ Uma representação de cadeia de caracteres de um GUID que indica o valor do mem
 
 O \# sinal "" é sinônimo de "0" em atributos de recurso. Por exemplo, D:AI (XA; OICI; FA;;; WD; (OctetStringType = = \# 1 \# 2 \# 3 \# \# )) é equivalente a e interpretado como D:ai (XA; OICI; FA;;; WD; (OctetStringType = = \# 01020300)).
 
-**Windows server 2008 R2, Windows 7, Windows server 2008, Windows Vista e Windows Server 2003:** Os atributos de recurso não estão disponíveis.
+**Windows server 2008 R2, Windows 7, Windows server 2008, Windows Vista e Windows server 2003:** Os atributos de recurso não estão disponíveis.
 
 
 
@@ -241,7 +241,7 @@ Ace Sid      : (S-1-1-0)
 
 
 
-O exemplo a seguir mostra um arquivo classificado com declarações de recurso para Windows e linguagem SQL (SQL) com PFS definido como alto impacto comercial.
+o exemplo a seguir mostra um arquivo classificado com declarações de recurso para Windows e linguagem SQL (SQL) com pfs definido como alto impacto comercial.
 
 
 ```C++

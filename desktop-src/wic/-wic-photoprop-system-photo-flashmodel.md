@@ -4,12 +4,12 @@ ms.assetid: ef322823-1b87-40ea-a5e3-e7551f14e44d
 title: Política de metadados de foto System. Photo. FlashModel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01ade3769cb0d852239af84b769b85d5b3849589
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 15c9e45e1ef759f2bee0d383cde3bcdabe8be67dc55a463ab6c9f7e6e05889a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105763123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118204877"
 ---
 # <a name="systemphotoflashmodel-photo-metadata-policy"></a>Política de metadados de foto System. Photo. FlashModel
 
@@ -25,7 +25,7 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-No
+Não
 
 ### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 
@@ -47,7 +47,7 @@ Se o arquivo estiver no formato JPEG, o manipulador usará o caminho a seguir ao
 
 | Ordem | Caminho                           | Formato de disco | Formato de Dados | Obrigatório |
 |-------|--------------------------------|-------------|-------------|----------|
-| 1     | /xmp/MicrosoftPhoto:FlashModel | Unicode     |             | Yes      |
+| 1     | /xmp/MicrosoftPhoto:FlashModel | Unicode     |             | Sim      |
 
 
 
@@ -61,7 +61,7 @@ Se o arquivo estiver no formato TIFF, o manipulador usará a ordem de precedênc
 
 | Ordem | Caminho                               | Formato de disco | Formato de Dados | Obrigatório |
 |-------|------------------------------------|-------------|-------------|----------|
-| 1     | /ifd/xmp/MicrosoftPhoto:FlashModel | Unicode     |             | Yes      |
+| 1     | /ifd/xmp/MicrosoftPhoto:FlashModel | Unicode     |             | Sim      |
 
 
 

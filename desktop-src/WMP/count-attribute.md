@@ -1,9 +1,9 @@
 ---
-title: Atributo de contagem
-description: O atributo Count é o número de itens na lista de reprodução.
+title: Atributo Count
+description: O atributo Count é o número de itens na playlist.
 ms.assetid: 33d2a7a6-ad87-4794-8008-d235b3827081
 keywords:
-- Atributo de contagem Windows Media Player
+- Atributo Count Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a361520fc74a10c2c4a726c4a5c4adfababf39c4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 08bef16b5b6678d73d58fbf341b3af3fb3a7c7a97d917fd73b39b17a3b2cf94b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105788180"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118341650"
 ---
-# <a name="count-attribute"></a>Atributo de contagem
+# <a name="count-attribute"></a>Atributo Count
 
-O atributo **Count** é o número de itens na lista de reprodução.
+O **atributo Count** é o número de itens na playlist.
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -29,7 +29,7 @@ O atributo **Count** é o número de itens na lista de reprodução.
 
 ## <a name="remarks"></a>Comentários
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 

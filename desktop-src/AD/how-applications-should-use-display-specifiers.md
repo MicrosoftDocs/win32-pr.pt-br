@@ -8,12 +8,12 @@ keywords:
 - exibir o anúncio de especificadores, como os aplicativos devem usar especificadores de exibição
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41f7045b03da282a9c64b216031e3da03a427268
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 12b2083b55a23ed3f0c1a82ba4524ba3f27445840da3d19812d26c7e05af92ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103642979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118188255"
 ---
 # <a name="how-applications-should-use-display-specifiers"></a>Como os aplicativos devem usar especificadores de exibição
 

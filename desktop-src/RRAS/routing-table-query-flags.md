@@ -6,12 +6,12 @@ keywords:
 - Sinalizadores de consulta de tabela de roteamento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b37ab647efb192e29aae421e02bef1dec065e3b2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 307dd91e9b3d248e5b2b69869ee1e7d14ae17834f7fe57d9e136da16ba3f6b0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103823073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117787444"
 ---
 # <a name="routing-table-query-flags"></a>Sinalizadores de consulta de tabela de roteamento
 
@@ -33,11 +33,11 @@ Use essas constantes para consultas de tabela de roteador.
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

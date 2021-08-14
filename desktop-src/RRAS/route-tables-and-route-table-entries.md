@@ -4,18 +4,18 @@ description: O Gerenciador de tabela de roteamento mantém tabelas de rotas dist
 ms.assetid: 3848d93d-cc54-4a08-bd36-a9700cde6ce0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f118ec1d0a6f8fe4ef301654e139f217257c3a0b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 31fea4ac965fe397d5bb7eba2b65479358a1e192f1583b1e7e73c2532dbd3a50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105758574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117788051"
 ---
 # <a name="route-tables-and-route-table-entries"></a>Tabelas de rotas e entradas da tabela de rotas
 
-**Windows Server 2003:** Essa API foi substituída pela API do [Gerenciador de tabela de roteamento versão 2](about-routing-table-manager-version-2.md) e não estará disponível além do Windows Server 2003. Novos aplicativos devem usar a API da versão 2 do Gerenciador de tabela de roteamento.
+**Windows Server 2003:** esta api foi substituída pela api do [gerenciador de tabela de roteamento versão 2](about-routing-table-manager-version-2.md) e não estará disponível além do Windows Server 2003. Novos aplicativos devem usar a API da versão 2 do Gerenciador de tabela de roteamento.
 
-O Gerenciador de tabela de roteamento mantém tabelas de rotas distintas para cada família de protocolos. Atualmente, o suporte explícito é fornecido para as famílias de protocolo Internet (IP) e Internet Packet Exchange (IPX). Independentemente da família de protocolos, cada entrada de rota contém as seguintes informações:
+O Gerenciador de tabela de roteamento mantém tabelas de rotas distintas para cada família de protocolos. atualmente, o suporte explícito é fornecido para as famílias de protocolo de roteamento IP (internet Protocol) e internet packet Exchange (IPX). Independentemente da família de protocolos, cada entrada de rota contém as seguintes informações:
 
 -   Rede de destino.
 -   Identificador do protocolo que adicionou a rota.
@@ -35,9 +35,9 @@ Os valores a seguir foram agrupados exclusivamente para identificar uma rota na 
 
 Em geral, o Gerenciador de tabela de roteamento cria entradas separadas para rotas que diferem em qualquer um desses valores de parâmetro. No entanto, uma exceção é feita para protocolos de roteamento que não mantêm mais de uma entrada para cada rede de destino. Para esses protocolos, o Gerenciador de tabela de roteamento ignora as diferenças no índice de interface ou no endereço de próximo salto. Um exemplo desse protocolo é a implementação de RRAS do OSPF (Open Shortest Path First).
 
- 
+ 
 
- 
+ 
 
 
 

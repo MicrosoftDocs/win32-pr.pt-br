@@ -3,7 +3,7 @@ title: Mensagem de WIM_OPEN (mmsystem. h)
 description: A \_ mensagem wim Open é enviada para uma função de retorno de chamada de entrada de áudio de forma de onda quando um dispositivo de entrada de forma de onda-áudio é aberto.
 ms.assetid: de18e6b2-ea28-46d9-812c-e6dac49838ee
 keywords:
-- Multimídia do Windows de mensagem WIM_OPEN
+- mensagem de WIM_OPEN Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57c1661482149c90cf3f2bd6b10620cb32f380be
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 337d86c7c1262094993bbac4973b96f1d442149b07d3a48a3e88bd384fee2997
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118369749"
 ---
 # <a name="wim_open-message"></a>\_Abrir mensagem wim
 

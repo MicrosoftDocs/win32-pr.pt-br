@@ -5,12 +5,12 @@ ms.assetid: f0100938-1702-4ef7-b20e-a0e8df224d18
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88c639b496a00f56a38a0f9f8e72b9d099e58c17
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 905dd9b5a250f9ab12397f851f79a8374c6847235acb34013972dea445f3622b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118344207"
 ---
 # <a name="adding-an-event-source-to-a-collector-initiated-subscription"></a>Adicionando uma origem do evento a uma assinatura iniciada pelo coletor
 
@@ -22,11 +22,11 @@ Depois que uma assinatura iniciada pelo coletor tiver sido criada, você poderá
 >
 > Você pode usar este exemplo de código para adicionar uma origem de evento a uma assinatura ou pode digitar o seguinte comando no prompt de comando:
 >
-> **wecutil SS** *subscriptionname*  * */ESA: * * * EventSourceAddress* **/AES/ESE**
+> **wecutil SS** *subscriptionname* **/ESA:**_EventSourceAddress_ **/AES/ESE**
 >
 > *EventSourceAddress* pode ser localhost para o computador local ou um nome de domínio totalmente qualificado para um computador remoto.
 
- 
+ 
 
 Para obter mais informações sobre como adicionar fontes de eventos a uma assinatura de origem iniciada, consulte [Configurando uma assinatura iniciada por origem](setting-up-a-source-initiated-subscription.md).
 
@@ -34,7 +34,7 @@ Este exemplo segue uma série de etapas para adicionar uma origem de evento a um
 
 **Para adicionar uma origem do evento a uma assinatura iniciada pelo coletor**
 
-1.  Abra a assinatura existente fornecendo o nome da assinatura e os direitos de acesso como parâmetros para a função [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) . Para obter mais informações sobre direitos de acesso, consulte as [**constantes do coletor de eventos do Windows**](windows-event-collector-constants.md).
+1.  Abra a assinatura existente fornecendo o nome da assinatura e os direitos de acesso como parâmetros para a função [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) . para obter mais informações sobre direitos de acesso, consulte [**Windows constantes do coletor de eventos**](windows-event-collector-constants.md).
 2.  Obtenha a matriz de fontes de eventos da assinatura chamando a função [**EcGetSubscriptionProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty) . Para obter mais informações sobre as propriedades de assinatura que podem ser recuperadas, consulte a enumeração de [**ID de propriedade da assinatura do EC \_ \_ \_**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id) .
 3.  Adicione uma nova origem de evento à matriz de origens de eventos da assinatura chamando a função [**EcInsertObjectArrayElement**](/windows/desktop/api/Evcoll/nf-evcoll-ecinsertobjectarrayelement) .
 4.  Defina as propriedades de origem do evento chamando a função [**EcSetObjectArrayProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetobjectarrayproperty) . A propriedade **EcSubscriptionEventSourceAddress** é definida como um endereço para o computador local (localhost) ou para um nome de domínio totalmente qualificado para um computador remoto. Para obter mais informações sobre as propriedades de origem do evento que podem ser definidas, consulte a enumeração da **ID de propriedade da assinatura do EC \_ \_ \_** .
@@ -304,9 +304,9 @@ DWORD GetProperty(EC_HANDLE hSubscription,
 [Criando uma assinatura do coletor de eventos](creating-an-event-collector-subscription.md)
 </dt> <dt>
 
-[Referência do coletor de eventos do Windows](windows-event-collector-reference.md)
+[Windows Referência do coletor de eventos](windows-event-collector-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

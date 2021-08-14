@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Windows.Foundation.idl
-ms.openlocfilehash: bc018912b2b4643cc4ef2f48cc76eb997a2627fb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 90e26947f0771490334ee731b25576759943c44cc47a9fda6681da9aa1f11fbb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118323430"
 ---
 # <a name="iasyncactionget_completed-method"></a>Método IAsyncAction:: get \_ Completed
 
@@ -48,7 +48,7 @@ O método que manipula a notificação de conclusão.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -62,7 +62,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                    |
-| parâmetro<br/>                   | <dl> <dt>Windows. Foundation. idl</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Windows. Foundation. idl</dt> </dl> |
 
 
 

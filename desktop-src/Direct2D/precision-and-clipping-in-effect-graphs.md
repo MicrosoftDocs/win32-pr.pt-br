@@ -1,46 +1,46 @@
 ---
 title: Recorte numérico e de precisão nos grafos de efeito
-description: Os aplicativos que processam efeitos usando Direct2D devem tomar cuidado para atingir o nível desejado de qualidade e previsibilidade em relação à precisão numérica.
+description: os aplicativos que processam efeitos usando Direct2D devem tomar cuidado para alcançar o nível desejado de qualidade e previsibilidade em relação à precisão numérica.
 ms.assetid: 6fd1d77f-e613-534f-3205-bad11fa24c30
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90628661ec8cd3f16ff6a6149aecbb7e8be3e5a9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 24f2af6fdee4561caa60ea22a0c700593f2333727e6c5a63c5346fdc78bbdb40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104008004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118160464"
 ---
 # <a name="precision-and-numerical-clipping-in-effect-graphs"></a>Recorte numérico e de precisão nos grafos de efeito
 
-Os aplicativos que processam efeitos usando Direct2D devem tomar cuidado para atingir o nível desejado de qualidade e previsibilidade em relação à precisão numérica. Este tópico descreve as práticas recomendadas e as configurações relevantes no Direct2D, que são úteis se:
+os aplicativos que processam efeitos usando Direct2D devem tomar cuidado para alcançar o nível desejado de qualidade e previsibilidade em relação à precisão numérica. este tópico descreve as práticas recomendadas e as configurações relevantes no Direct2D que são úteis se:
 
 -   O grafo de efeito depende de uma precisão ou cores numéricas altas fora do \[ intervalo 0, 1 \] e você deseja garantir que eles sempre estarão disponíveis
 -   Ou, o grafo de efeito depende da implementação de renderização para fixe as cores intermediárias para o \[ intervalo 0, 1 \] e você deseja garantir que esse fixação MSS sempre ocorra
 
-O Direct2D geralmente divide um gráfico de efeito em seções e renderiza cada seção em uma etapa separada. A saída de algumas etapas pode ser armazenada em texturas de Direct3D intermediárias que, por padrão, têm uma precisão e um intervalo numérico limitados. O Direct2D não faz nenhuma garantia sobre se ou onde essas texturas intermediárias são usadas. Esse comportamento pode variar de acordo com os recursos de GPU, bem como entre as versões do Windows.
+geralmente, Direct2D divide um gráfico de efeito em seções e renderiza cada seção em uma etapa separada. A saída de algumas etapas pode ser armazenada em texturas de Direct3D intermediárias que, por padrão, têm uma precisão e um intervalo numérico limitados. Direct2D não faz nenhuma garantia sobre se ou onde essas texturas intermediárias são usadas. esse comportamento pode variar de acordo com os recursos de GPU, bem como entre Windows versões.
 
-No Windows 10, o Direct2D usa menos texturas intermediárias devido ao uso de vinculação de sombreador. O Direct2D pode, portanto, produzir resultados diferentes com configurações padrão do que nas versões anteriores do Windows. Isso afeta principalmente cenários em que a vinculação de sombreador é possível em um grafo de efeito, e esse grafo também contém efeitos que produzem cores de saída de intervalo estendido.
+em Windows 10, Direct2D usa menos texturas intermediárias devido ao uso de vinculação de sombreador. o Direct2D pode, portanto, produzir resultados diferentes com configurações padrão do que nas versões anteriores do Windows. Isso afeta principalmente cenários em que a vinculação de sombreador é possível em um grafo de efeito, e esse grafo também contém efeitos que produzem cores de saída de intervalo estendido.
 
 ## <a name="overview-of-effect-rendering-and-intermediates"></a>Visão geral da renderização de efeito e intermediários
 
-Para renderizar um grafo de efeito, o Direct2D primeiro encontra o gráfico subjacente de "transformações", onde uma transformação é um nó de gráfico usado dentro de um efeito. Há diferentes tipos de transformações, incluindo aquelas que fornecem sombreadores de Direct3D para uso de Direct2D.
+para renderizar um grafo de efeito, Direct2D primeiro encontra o gráfico subjacente de "transformações", em que uma transformação é um nó de gráfico usado dentro de um efeito. há diferentes tipos de transformações, incluindo aquelas que fornecem sombreadores de Direct3D para Direct2D a serem usadas.
 
-Por exemplo, Direct2D pode renderizar um grafo de efeito da seguinte maneira:
+por exemplo, Direct2D pode renderizar um grafo de efeito da seguinte maneira:
 
 ![Grafo de efeito com texturas intermediárias](images/precision-and-clipping-1.png)
 
-Direct2D procura oportunidades para reduzir o número de texturas intermediárias usadas para renderizar o grafo de efeito; Essa lógica é opaca para aplicativos. Por exemplo, o grafo a seguir pode ser renderizado por Direct2D usando uma chamada do Direct3D Draw e nenhuma textura intermediária:
+Direct2D procura oportunidades para reduzir o número de texturas intermediárias usadas para renderizar o grafo de efeito; Essa lógica é opaca para aplicativos. por exemplo, o grafo a seguir pode ser renderizado por Direct2D usando uma chamada do Direct3D draw e nenhuma textura intermediária:
 
 ![Grafo de efeito sem texturas intermediárias](images/precision-and-clipping-2.png)
 
-Antes do Windows 10, Direct2D sempre usaria texturas intermediárias se vários sombreadores fossem usados dentro do mesmo grafo de efeitos. A maioria dos efeitos internos que simplesmente ajusta os valores de cor (por exemplo, brilho ou saturação) faz isso usando sombreadores de pixel.
+antes de Windows 10, Direct2D sempre usaria texturas intermediárias se vários sombreadores de pixels fossem usados no mesmo grafo de efeito. A maioria dos efeitos internos que simplesmente ajusta os valores de cor (por exemplo, brilho ou saturação) faz isso usando sombreadores de pixel.
 
-No Windows 10, o Direct2D agora pode evitar o uso de texturas intermediárias nesses casos. Ele faz isso por meio da vinculação interna de sombreadores de pixel adjacentes. Por exemplo:
+em Windows 10, Direct2D agora pode evitar o uso de texturas intermediárias nesses casos. Ele faz isso por meio da vinculação interna de sombreadores de pixel adjacentes. Por exemplo:
 
 ![Grafo de efeito do Windows 10 com vários sombreadores de pixel e nenhuma textura intermediária](images/precision-and-clipping-3.png)
 
-Observe que nem todos os sombreadores de pixel adjacentes em um grafo podem ser vinculados juntos e, portanto, apenas determinados grafos produzirão uma saída diferente no Windows 10. Para obter detalhes completos, consulte [efeitos de vinculação de sombreador](effect-shader-linking.md). As principais restrições são:
+Observe que nem todos os sombreadores de pixel adjacentes em um grafo podem ser vinculados juntos e, portanto, apenas determinados grafos produzirão uma saída diferente em Windows 10. Para obter detalhes completos, consulte [efeitos de vinculação de sombreador](effect-shader-linking.md). As principais restrições são:
 
 -   Um efeito não será vinculado com efeitos que consomem sua saída, se o primeiro efeito estiver conectado como uma entrada para vários efeitos.
 -   Um efeito não será vinculado a um conjunto de efeitos como sua entrada, se o primeiro efeito amostras de sua entrada em uma posição lógica diferente da sua saída. Por exemplo, um efeito de matriz de cor pode ser vinculado com sua entrada, mas um efeito de convolução não será.
@@ -49,7 +49,7 @@ Observe que nem todos os sombreadores de pixel adjacentes em um grafo podem ser 
 
 Muitos efeitos internos podem produzir cores fora do \[ intervalo de 0, 1 \] no espaço de cores unpremultiplied, mesmo quando suas cores de entrada estão dentro desse intervalo. Quando isso acontece, essas cores podem estar sujeitas ao recorte numérico. Observe que é importante considerar o intervalo de cores no espaço unpremultiplied, embora os efeitos internos normalmente produzam cores no espaço premultiplicado. Isso garante que as cores permaneçam dentro do intervalo, mesmo se outros efeitos subsequentemente unpremultiply-las.
 
-Alguns dos efeitos que podem emitir essas cores fora do intervalo oferecem uma propriedade "ClampOutput". Estão incluídos:
+Alguns dos efeitos que podem emitir essas cores fora do intervalo oferecem uma propriedade "ClampOutput". Elas incluem:
 
 -   [Matriz de cores](color-matrix.md)
 -   [Composto aritmético](arithmetic-composite.md)
@@ -58,12 +58,12 @@ Alguns dos efeitos que podem emitir essas cores fora do intervalo oferecem uma p
 
 Definir a propriedade ClampOutput como TRUE nesses efeitos garante que um resultado consistente será obtido, independentemente de fatores como a vinculação de sombreador. Observe que fixação MSS ocorre no espaço unpremultiplied.
 
-Outros efeitos internos também podem produzir cores de saída além de \[ 0, 1 \] intervalo no espaço unpremultiplied, mesmo quando suas cores pixels (e propriedades de "cor", se houver) estiverem dentro desse intervalo. Estão incluídos:
+Outros efeitos internos também podem produzir cores de saída além de \[ 0, 1 \] intervalo no espaço unpremultiplied, mesmo quando suas cores pixels (e propriedades de "cor", se houver) estiverem dentro desse intervalo. Elas incluem:
 
 -   [Transformando e dimensionando efeitos](built-in-effects.md) (quando a propriedade modo de interpolação é cúbica ou cúbico de alta qualidade)
 -   [Efeitos de iluminação](built-in-effects.md)
 -   [Detecção de borda](edge-detection-effect.md) (quando a propriedade sobrepor bordas for verdadeira)
--   [Exposição](exposure-effect.md)
+-   [Bem](exposure-effect.md)
 -   [Composite](composite.md) (quando a propriedade Mode é mais)
 -   [Temperatura e tonalidade](temperature-and-tint-effect.md)
 -   [Sépia](sepia-effect.md)
@@ -73,19 +73,19 @@ Outros efeitos internos também podem produzir cores de saída além de \[ 0, 1 
 
 Ao usar os efeitos listados acima que não têm uma propriedade ClampOutput, os aplicativos devem considerar a possibilidade de forçar o fixação MSS numérico. Isso pode ser feito inserindo um efeito adicional no grafo que coloca seus pixels. Um efeito de matriz de cor pode ser usado, com sua propriedade ' ClampOutput ' definida como TRUE e deixando a propriedade ' ColorMatrix ' como o valor padrão (passagem).
 
-Uma segunda opção para obter resultados consistentes é solicitar que Direct2D use texturas intermediárias que tenham maior precisão. Isso é descrito abaixo.
+uma segunda opção para obter resultados consistentes é solicitar que Direct2D usem texturas intermediárias que tenham maior precisão. Isso é descrito abaixo.
 
 ## <a name="controlling-precision-of-intermediate-textures"></a>Controlando a precisão das texturas intermediárias
 
-O Direct2D fornece algumas maneiras de controlar a precisão de um grafo. Antes de usar formatos de alta precisão no Direct2D, os aplicativos devem garantir que eles tenham suporte suficiente pela GPU. Para verificar isso, use [**ID2D1DeviceContext:: IsBufferPrecisionSupported**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-isbufferprecisionsupported).
+Direct2D fornece algumas maneiras de controlar a precisão de um grafo. antes de usar formatos de alta precisão no Direct2D, os aplicativos devem garantir que eles tenham suporte suficiente pela GPU. Para verificar isso, use [**ID2D1DeviceContext:: IsBufferPrecisionSupported**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-isbufferprecisionsupported).
 
-Os aplicativos podem criar um dispositivo Direct3D usando WARP (emulação de software) para garantir que todas as precisão de buffer tenham suporte independente do hardware de GPU real no dispositivo. Isso é recomendado em cenários como aplicar efeitos a uma foto enquanto salva em disco. Mesmo que o Direct2D dê suporte a formatos de buffer de alta precisão na GPU, o uso de WARP é recomendado nesse cenário em GPUs de nível de recurso 9. X, devido à precisão limitada da aritmética de sombreador e à amostragem em algumas GPUs móveis de baixa energia.
+Os aplicativos podem criar um dispositivo Direct3D usando WARP (emulação de software) para garantir que todas as precisão de buffer tenham suporte independente do hardware de GPU real no dispositivo. Isso é recomendado em cenários como aplicar efeitos a uma foto enquanto salva em disco. mesmo que Direct2D ofereça suporte a formatos de buffer de alta precisão na GPU, o uso de WARP é recomendado nesse cenário em gpus de nível de recurso 9. X, devido à precisão limitada da aritmética de sombreador e da amostragem em algumas gpus móveis de baixa energia.
 
-Em cada caso abaixo, a precisão solicitada é, na verdade, a precisão mínima que o Direct2D usará. Uma precisão maior poderá ser usada se os intermediários não forem necessários. Direct2D também pode compartilhar texturas intermediárias para diferentes partes do mesmo grafo ou grafos diferentes. Nesse caso, o Direct2D usa a precisão máxima solicitada para todas as operações envolvidas.
+em cada caso abaixo, a precisão solicitada é, na verdade, a precisão mínima Direct2D será usada. Uma precisão maior poderá ser usada se os intermediários não forem necessários. Direct2D também pode compartilhar texturas intermediárias para diferentes partes do mesmo grafo ou grafos diferentes. nesse caso Direct2D usa a precisão máxima solicitada para todas as operações envolvidas.
 
 ### <a name="precision-selection-from-id2d1devicecontextsetrenderingcontrols"></a>Seleção de precisão de ID2D1DeviceContext:: SetRenderingControls
 
-A maneira mais simples de controlar a precisão das texturas intermediárias Direct2D's é usar [**ID2D1DeviceContext:: SetRenderingControls**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-setrenderingcontrols(constd2d1_rendering_controls)). Isso controla a precisão de todas as texturas intermediárias, contanto que uma precisão não seja também definida manualmente em efeitos ou transformações diretamente.
+a maneira mais simples de controlar a precisão das texturas intermediárias de Direct2D é usar [**ID2D1DeviceContext:: SetRenderingControls**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-setrenderingcontrols(constd2d1_rendering_controls)). Isso controla a precisão de todas as texturas intermediárias, contanto que uma precisão não seja também definida manualmente em efeitos ou transformações diretamente.
 
 
 ```cpp
@@ -110,9 +110,9 @@ Os aplicativos também podem contar com a precisão das entradas para um grafo d
 
 As precisão de entradas para efeitos são propagadas por meio do grafo para selecionar a precisão dos intermediários downstream. Onde as diferentes ramificações do grafo de efeito se encontram, a maior precisão de qualquer entrada é usada.
 
-A precisão selecionada com base em um bitmap Direct2D é determinada de seu formato de pixel. A precisão selecionada para um [**ID2D1ImageSource**](/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1imagesource) é determinada do formato do pixel do WIC do IWICBitmapSource subjacente usado para criar o **ID2D1ImageSource**. Observe que o Direct2D não permite que fontes de imagem sejam criadas com fontes WIC usando precisão sem suporte pelo Direct2D e pela GPU.
+a precisão selecionada com base em um bitmap Direct2D é determinada em seu formato de pixel. A precisão selecionada para um [**ID2D1ImageSource**](/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1imagesource) é determinada do formato do pixel do WIC do IWICBitmapSource subjacente usado para criar o **ID2D1ImageSource**. observe que Direct2D não permite que fontes de imagem sejam criadas com fontes de WIC usando precisão sem suporte pelo Direct2D e pela GPU.
 
-É possível que Direct2D não possa atribuir um efeito a uma precisão com base em suas entradas. Isso acontece quando um efeito não tem entradas ou quando um [**ID2D1CommandList**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1commandlist) é usado, o que não tem precisão específica. Nesse caso, a precisão das texturas intermediárias é determinada do conjunto de bitmaps como o destino de renderização atual do contexto.
+é possível que Direct2D não possa atribuir um efeito a uma precisão com base em suas entradas. Isso acontece quando um efeito não tem entradas ou quando um [**ID2D1CommandList**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1commandlist) é usado, o que não tem precisão específica. Nesse caso, a precisão das texturas intermediárias é determinada do conjunto de bitmaps como o destino de renderização atual do contexto.
 
 ### <a name="precision-selection-directly-on-the-effect-and-transforms"></a>Seleção de precisão diretamente no efeito e nas transformações
 
@@ -152,6 +152,6 @@ Abaixo está a lógica recursiva completa usada para determinar a precisão mín
 
 ![Lógica de precisão mínima do buffer intermediário](images/precision-and-clipping-4.png)
 
- 
+ 
 
- 
+ 

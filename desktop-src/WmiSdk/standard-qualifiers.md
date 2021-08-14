@@ -1,5 +1,5 @@
 ---
-description: Todas as implementações em conformidade com o CIM devem lidar com um conjunto padrão de qualificadores.
+description: Todas as implementações em conformidade com CIM devem lidar com um conjunto padrão de qualificadores.
 ms.assetid: 671ea769-f68d-4788-96f5-c4f86ab3b00e
 ms.tgt_platform: multiple
 title: Qualificadores padrão
@@ -13,136 +13,136 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 710e93e53f9e414a44dc14ebafea426f5d7f9efd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 67877cfc07a247d6b5e3309270d145bc64fbb814416fa4288c6e85ff2ad2e986
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105814120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118315132"
 ---
 # <a name="standard-qualifiers"></a>Qualificadores padrão
 
-Todas as implementações em conformidade com o CIM devem lidar com um conjunto padrão de qualificadores. Qualquer objeto específico não tem todos os qualificadores listados. Normalmente, as classes de extensão fornecem qualificadores adicionais para facilitar o provisionamento de instâncias de classe e outras operações na classe.
+Todas as implementações em conformidade com CIM devem lidar com um conjunto padrão de qualificadores. Qualquer objeto específico não tem todos os qualificadores listados. Normalmente, as classes de extensão fornecem qualificadores adicionais para facilitar o provisionamento de instâncias de classe e outras operações na classe .
 
-É responsabilidade do provedor impor os qualificadores. O WMI não impõe qualificadores, mas os usa apenas para informar ao usuário sobre como a propriedade é usada.
+É responsabilidade do provedor impor os qualificadores. O WMI não impõe qualificadores, mas os usa apenas para informar o usuário sobre como a propriedade é usada.
 
 > [!Note]  
-> O WMI é compatível com a especificação CIM 2,5.
+> O WMI está em conformidade com a especificação cim 2.5.
 
  
 
 Os qualificadores têm as seguintes limitações:
 
 -   Nem todos os qualificadores padrão podem ser usados juntos.
--   Nem todos os qualificadores podem ser aplicados a todas as construções, como associação ou referência. Essas limitações são identificadas na lista aplica-se a.
+-   Nem todos os qualificadores podem ser aplicados a todos os constructos, como associação ou referência. Essas limitações são identificadas na lista Aplica-se a.
 -   Para um constructo específico, como associação ou referência, o uso dos qualificadores legais pode ser mais restrito porque alguns qualificadores são mutuamente exclusivos, o uso de um qualificador pode implicar algumas restrições no valor de outro e assim por diante. Essas regras de uso estão documentadas.
--   Os qualificadores legais são herdados por entidades como propriedades, métodos, instâncias ou subclasses somente, não por associações ou referências. Por exemplo, o qualificador **maxlen** que se aplica a propriedades não é herdado por referências.
+-   Qualificadores legais são herdados por entidades como propriedades, métodos, instâncias ou subclasses somente, não por associações ou referências. Por exemplo, o **qualificador MaxLen** que se aplica às propriedades não é herdado por referências.
 
-O a seguir lista os qualificadores padrão do WMI.
+O exemplo a seguir lista os qualificadores padrão WMI.
 
 <dt>
 
-<span id="Abstract"></span><span id="abstract"></span><span id="ABSTRACT"></span>**Resume**
+<span id="Abstract"></span><span id="abstract"></span><span id="ABSTRACT"></span>**Abstrata**
 </dt> <dd>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 
 Aplica-se a: classes, associações, indicações
 
-Indica se a classe é abstrata e serve apenas como base para novas classes. O padrão é **false**. Você não pode criar instâncias de classes abstratas. A ausência desse qualificador indica que a classe não é abstrata; Portanto, esse qualificador é necessário para todas as classes abstratas.
+Indica se a classe é abstrata e serve apenas como base para novas classes. O padrão é **FALSE.** Não é possível criar instâncias de classes abstratas. A ausência desse qualificador indica que a classe não é abstrata; portanto, esse qualificador é necessário para todas as classes abstratas.
 
 </dd> <dt>
 
-<span id="Aggregate"></span><span id="aggregate"></span><span id="AGGREGATE"></span>**Tais**
+<span id="Aggregate"></span><span id="aggregate"></span><span id="AGGREGATE"></span>**Agregado**
 </dt> <dd>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 
 Aplica-se a: referências
 
-Indica se a referência é o componente pai de uma associação de agregação. O padrão é **false**.
+Indica se a referência é o componente pai de uma associação de agregação. O padrão é **FALSE.**
 
-Uso: a **agregação e os** qualificadores de **agregação** são usados em conjunto com a   **agregação** qualifica a associação, e a **agregação** especifica a referência pai.
+Uso: **os qualificadores Agregação** e Agregação são usados juntos A **agregação** qualifica a associação e **Aggregate** especifica a referência pai. 
 
 </dd> <dt>
 
-<span id="Aggregation"></span><span id="aggregation"></span><span id="AGGREGATION"></span>**Aggregation**
+<span id="Aggregation"></span><span id="aggregation"></span><span id="AGGREGATION"></span>**Agregação**
 </dt> <dd>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 
 Aplica-se a: associações
 
-Indica se a associação é uma agregação. O padrão é **false**. Usado com **Aggregate**. Esse qualificador é necessário para todas as associações de agregação.
+Indica se a associação é uma agregação. O padrão é **FALSE.** Usado com a **agregação**. Esse qualificador é necessário para todas as associações de agregação.
 
 </dd> <dt>
 
-<span id="Alias"></span><span id="alias"></span><span id="ALIAS"></span>**Receber**
+<span id="Alias"></span><span id="alias"></span><span id="ALIAS"></span>**Alias**
 </dt> <dd>
 
 Tipo de dados: **cadeia de caracteres**
 
-Aplica-se a: Propriedades, referências, métodos
+Aplica-se a: propriedades, referências, métodos
 
-Nome alternativo para uma propriedade ou um método no esquema. O padrão é **NULL**.
+Nome alternativo para uma propriedade ou método no esquema. O padrão é **NULL.**
 
 </dd> <dt>
 
-<span id="ArrayType"></span><span id="arraytype"></span><span id="ARRAYTYPE"></span>**ArrayType**
+<span id="ArrayType"></span><span id="arraytype"></span><span id="ARRAYTYPE"></span>**Arraytype**
 </dt> <dd>
 
 Tipo de dados: **cadeia de caracteres**
 
-Aplica-se a: Propriedades, parâmetros
+Aplica-se a: propriedades, parâmetros
 
 Tipo da matriz qualificada.
 
 Os valores válidos são:
 
--   recipiente (padrão)
+-   bag (padrão)
 -   indexado
 -   ordered
 
-Uso: aplique este tipo de qualificador somente a propriedades e parâmetros que são matrizes (definidas usando a sintaxe de colchete).
+Uso: aplique esse tipo de qualificador somente a propriedades e parâmetros que são matrizes (definidos usando a sintaxe de colchete).
 
 </dd> <dt>
 
-<span id="BitMap"></span><span id="bitmap"></span><span id="BITMAP"></span>**BitMap**
+<span id="BitMap"></span><span id="bitmap"></span><span id="BITMAP"></span>**Bitmap**
 </dt> <dd>
 
-Tipo de dados: **matriz de cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de caracteres**
 
-Aplica-se a: Propriedades, métodos, parâmetros
+Aplica-se a: propriedades, métodos, parâmetros
 
-Mapa de posições de bits significativas em que cada posição significativa pode ser "ativada" ou "desativada". Cada bit "on" é mapeado para um valor correspondente na matriz **Bitvalues** . Com vários bits "on", vários valores simultâneos na matriz **Bitvalues** são indicados. O padrão é **NULL**.
+Mapa de posições de bits significativas em que cada posição significativa pode ser "on" ou "off". Cada bit "on" mapeia para um valor correspondente na **matriz BitValues.** Ao ter vários bits "on", vários valores simultâneos na matriz **BitValues** são indicados. O padrão é **NULL.**
 
-Para obter mais informações, consulte [bitmap e Bitvalues](bitmap-and-bitvalues.md).
+Para obter mais informações, consulte [BitMap e BitValues](bitmap-and-bitvalues.md).
 
 </dd> <dt>
 
-<span id="BitValues"></span><span id="bitvalues"></span><span id="BITVALUES"></span>**Bitvalues**
+<span id="BitValues"></span><span id="bitvalues"></span><span id="BITVALUES"></span>**BitValues**
 </dt> <dd>
 
-Tipo de dados: **matriz de cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de caracteres**
 
-Aplica-se a: Propriedades, métodos, parâmetros
+Aplica-se a: propriedades, métodos, parâmetros
 
-Tradução de um valor de posição de bits em uma **cadeia de caracteres** associada. O padrão é **NULL**.
+Conversão de um valor de posição de bit em uma cadeia de caracteres **associada.** O padrão é **NULL.**
 
-Para obter mais informações, consulte [bitmap e Bitvalues](bitmap-and-bitvalues.md).
+Para obter mais informações, consulte [BitMap e BitValues](bitmap-and-bitvalues.md).
 
 </dd> <dt>
 
-<span id="Constructor"></span><span id="constructor"></span><span id="CONSTRUCTOR"></span>**Qu**
+<span id="Constructor"></span><span id="constructor"></span><span id="CONSTRUCTOR"></span>**Construtor**
 </dt> <dd>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 
 Aplica-se a: métodos
 
-Indica se o método cria instâncias. Esses métodos não são restritos a atuar em uma única instância ou em uma única classe. Por exemplo, um construtor pode criar instâncias de associação, bem como instâncias da classe que define o construtor.
+Indica se o método cria instâncias. Esses métodos não são restritos a agir em uma única instância ou em uma única classe. Por exemplo, um construtor pode criar instâncias de associação, bem como instâncias da classe que define o construtor.
 
-O qualificador de **Construtor** destina-se apenas a informações e não é esperado que ele seja acionado pelo Gerenciador de objetos. O Gerenciador de objetos não precisa chamar métodos de Construtor quando um objeto é criado. Além disso, quando um construtor é chamado, o Gerenciador de objetos não precisa invocar nenhum método de Construtor definido para qualquer classe pai da classe original. O padrão é **false**.
+O **qualificador** construtor destina-se apenas a informações e não se espera que ele seja agido pelo gerenciador de objetos. O gerenciador de objetos não precisa chamar métodos de construtor quando um objeto é criado. Além disso, quando um construtor é chamado, o gerenciador de objetos não precisa invocar nenhum método de construtor definido para qualquer classe pai da classe original. O padrão é **FALSE.**
 
 </dd> <dt>
 
@@ -153,7 +153,7 @@ Tipo de dados: **cadeia de caracteres**
 
 Aplica-se a: classes
 
-Nome do método pelo qual as instâncias dessa classe são criadas. O valor é "PutInstance" ou o nome de outro método que cria as instâncias. O padrão é **NULL**.
+Nome do método pelo qual as instâncias dessa classe são criadas. O valor é "PutInstance" ou o nome de outro método que cria as instâncias. O padrão é **NULL.**
 
 Uso: esse qualificador só poderá ser usado se o qualificador **SupportsCreate** estiver presente.
 
@@ -166,31 +166,31 @@ Tipo de dados: **cadeia de caracteres**
 
 Aplica-se a: classes
 
-Nome do método pelo qual as instâncias dessa classe são excluídas. O valor é "DeleteInstance" ou o nome de outro método que exclui as instâncias. O padrão é **NULL**.
+Nome do método pelo qual as instâncias dessa classe são excluídas. O valor é "DeleteInstance" ou o nome de outro método que exclui as instâncias. O padrão é **NULL.**
 
 Uso: esse qualificador só poderá ser usado se o qualificador **SupportsDelete** estiver presente.
 
 </dd> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Ndescrição**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descrição**
 </dt> <dd>
 
 Tipo de dados: **cadeia de caracteres**
 
 Aplica-se a: qualquer
 
-Descrição de um elemento nomeado. O padrão é **NULL**.
+Descrição de um elemento nomeado. O padrão é **NULL.**
 
 </dd> <dt>
 
 <span id="Destructor"></span><span id="destructor"></span><span id="DESTRUCTOR"></span>**Destruidor**
 </dt> <dd>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 
 Aplica-se a: métodos
 
-Indica se o método exclui instâncias. Os métodos que usam o qualificador do **destruidor** excluem as instâncias às quais o destruidor é aplicado e não são restritos a atuar em uma única instância ou classe. Por exemplo, um destruidor pode excluir instâncias de associação, bem como instâncias da classe que define o destruidor.
+Indica se o método exclui instâncias. Os métodos  que usam o qualificador destruidor excluem as instâncias às quais o destruidor é aplicado e não são restritos a agir em uma única instância ou classe. Por exemplo, um destruidor pode excluir instâncias de associação, bem como instâncias da classe que define o destruidor.
 
 O qualificador do **destruidor** destina-se apenas a informações e não é esperado que ele seja acionado pelo Gerenciador de objetos. Não há nenhuma obrigação para o Gerenciador de objetos chamar um método que tenha o qualificador do **destruidor** quando uma instância é excluída. Além disso, quando um destruidor é chamado, o Gerenciador de objetos não precisa invocar nenhum método destruidor definido para qualquer classe pai da classe original. O padrão é **false**.
 
@@ -378,61 +378,61 @@ Tipo de dados: **cadeia de caracteres**
 
 Aplica-se a: referências
 
-Tipo de local de uma instância. Seu valor é <namespacetype> . O padrão é **NULL**.
+Tipo de local de uma instância. Seu valor é <namespacetype> . O padrão é **NULL.**
 
-Uso: este qualificador não pode ser usado com o qualificador não **local** .
+Uso: esse qualificador não pode ser usado com **o qualificador não** local.
 
 </dd> <dt>
 
-<span id="NullValue"></span><span id="nullvalue"></span><span id="NULLVALUE"></span>**NullValue**
+<span id="NullValue"></span><span id="nullvalue"></span><span id="NULLVALUE"></span>**Nullvalue**
 </dt> <dd>
 
 Tipo de dados: **cadeia de caracteres**
 
-Aplica-se a: Propriedades
+Aplica-se a: propriedades
 
-Valor que indica que a propriedade associada é **nula** (a propriedade não tem um valor válido ou significativo). O padrão é **NULL**.
+Valor que indica que a propriedade associada é **NULL** (a propriedade não tem um valor válido ou significativo). O padrão é **NULL.**
 
-As convenções e restrições usadas para definir valores **nulos** são as mesmas aplicáveis ao qualificador **ValueMap** . Observe que esse qualificador não pode ser substituído. Não é razoável permitir que uma subclasse retorne um valor **nulo** diferente daquele da classe pai.
+As convenções e restrições usadas para definir **valores NULL** são as mesmas aplicáveis ao qualificador **ValueMap.** Observe que esse qualificador não pode ser substituído. Não é razoável permitir que uma subclasse retorne um valor **NULL** diferente do da classe pai.
 
 </dd> <dt>
 
-<span id="Out"></span><span id="out"></span><span id="OUT"></span>**Fora**
+<span id="Out"></span><span id="out"></span><span id="OUT"></span>**Saída**
 </dt> <dd>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 
 Aplica-se a: parâmetros
 
-Indica se o parâmetro retorna valores de um método. O padrão é **false**.
+Indica se o parâmetro retorna valores de um método . O padrão é **FALSE.**
 
 </dd> <dt>
 
-<span id="Override"></span><span id="override"></span><span id="OVERRIDE"></span>**Substituição**
+<span id="Override"></span><span id="override"></span><span id="OVERRIDE"></span>**Substituir**
 </dt> <dd>
 
 Tipo de dados: **cadeia de caracteres**
 
-Aplica-se a: Propriedades, métodos, referências
+Aplica-se a: propriedades, métodos, referências
 
-Classe pai ou construção subordinada (Propriedade, método ou referência) que é substituída pela propriedade, método ou referência do mesmo nome na classe derivada. O padrão é **NULL**.
+Classe pai ou constructo subordinado (propriedade, método ou referência) que é substituído pela propriedade, método ou referência do mesmo nome na classe derivada. O padrão é **NULL.**
 
 O formato é:
 
-\[<> de *classe* . \] < *construção subordinada*>
+\[<*classe*>. \] < *constructo subordinado*>
 
-Se o nome da classe for omitido, a substituição se aplicará à construção subordinada na classe pai na hierarquia de classe.
+Se o nome da classe for omitido, a substituição se aplicará ao constructo subordinado na classe pai na hierarquia de classe.
 
-Uso: o qualificador de **substituição** pode se referir a construções com base no mesmo modelo meta apenas. Não é permitido alterar um nome ou assinatura de construção durante uma operação de substituição.
+Uso: o **qualificador Override** pode se referir a constructos baseados apenas no mesmo modelo meta. Não é permitido alterar um nome de constructo ou uma assinatura durante uma operação de substituição.
 
 </dd> <dt>
 
-<span id="OverrideValue"></span><span id="overridevalue"></span><span id="OVERRIDEVALUE"></span>**Sobreridevalue**
+<span id="OverrideValue"></span><span id="overridevalue"></span><span id="OVERRIDEVALUE"></span>**OverrideValue**
 </dt> <dd>
 
 Aplica-se a: classes
 
-Indica se o valor da propriedade em uma subclasse substitui o valor em uma classe pai. A implicação funcional é que, se você executar uma consulta em relação à classe pai e se a cláusula **Where** incluir essa propriedade, o pai deverá retornar uma instância com o valor substituído. Como resultado, o gerenciamento do Windows ajusta a cláusula **Where** da consulta enviada para a classe pai para excluir referências a essa propriedade.
+Indica se o valor da propriedade em uma subclasse substitui o valor em uma classe pai. A implicação funcional é que, se você executar uma consulta na classe pai e se a cláusula **WHERE** incluir essa propriedade, o pai deverá retornar uma instância com o valor substituído. Como resultado, Windows Management ajusta a **cláusula WHERE** da consulta enviada à classe pai para excluir referências a essa propriedade.
 
 </dd> <dt>
 
@@ -441,37 +441,37 @@ Indica se o valor da propriedade em uma subclasse substitui o valor em uma class
 
 Tipo de dados: **cadeia de caracteres**
 
-Aplica-se a: Propriedades
+Aplica-se a: propriedades
 
-Nome da chave que está sendo propagada. O padrão é **NULL**.
+Nome da chave que está sendo propagada. O padrão é **NULL.**
 
-O uso desse qualificador pressupõe a existência de apenas um qualificador fraco em uma referência que tem a classe que a contém como seu destino. A propriedade associada deve ter o mesmo valor que a propriedade nomeada pelo qualificador na classe no outro lado da Associação fraca. O formato é:
+O uso desse qualificador pressupa a existência de apenas um qualificador fraco em uma referência que tem a classe que contém como seu destino. A propriedade associada deve ter o mesmo valor que a propriedade nomeada pelo qualificador na classe do outro lado da associação fraca. O formato é:
 
-\[<> de *classe* . \] < *construção subordinada*>
+\[<*classe*>. \] < *constructo subordinado*>
 
-Uso: quando o qualificador **propagado** é usado, o qualificador de [**chave**](key-qualifier.md) deve ser especificado com um valor de **true**.
+Uso: quando o **qualificador propagado** é usado, o [**qualificador**](key-qualifier.md) key deve ser especificado com um valor **true.**
 
 </dd> <dt>
 
-<span id="Read"></span><span id="read"></span><span id="READ"></span>**Leitura**
+<span id="Read"></span><span id="read"></span><span id="READ"></span>**Ler**
 </dt> <dd>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 
-Aplica-se a: Propriedades
+Aplica-se a: propriedades
 
-Indica se a propriedade é legível. O padrão é **true**.
+Indica se a propriedade é acessível. O padrão é **TRUE.**
 
 </dd> <dt>
 
 <span id="Required"></span><span id="required"></span><span id="REQUIRED"></span>**Necessário**
 </dt> <dd>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 
-Aplica-se a: Propriedades
+Aplica-se a: propriedades
 
-Indica se um valor não nulo é necessário para a propriedade. O padrão é **false**.
+Indica se um valor não nulo é necessário para a propriedade . O padrão é **FALSE.**
 
 </dd> <dt>
 
@@ -482,9 +482,9 @@ Tipo de dados: **cadeia de caracteres**
 
 Aplica-se a: classes, associações, indicações, esquemas
 
-Número de revisão secundária do objeto de esquema. O padrão é **NULL**.
+Número de revisão secundária do objeto de esquema. O padrão é **NULL.**
 
-Uso: o qualificador de **versão** deve estar presente para fornecer o número de versão principal quando o qualificador de **revisão** é usado.
+Uso: o **qualificador** de versão deve estar presente para fornecer o número de versão principal quando o **qualificador de** revisão é usado.
 
 </dd> <dt>
 
@@ -493,89 +493,89 @@ Uso: o qualificador de **versão** deve estar presente para fornecer o número d
 
 Tipo de dados: **cadeia de caracteres**
 
-Aplica-se a: Propriedades, métodos
+Aplica-se a: propriedades, métodos
 
-Nome do esquema no qual o recurso está definido. O padrão é **NULL**.
+Nome do esquema no qual o recurso é definido. O padrão é **NULL.**
 
 </dd> <dt>
 
-<span id="Source"></span><span id="source"></span><span id="SOURCE"></span>**Original**
+<span id="Source"></span><span id="source"></span><span id="SOURCE"></span>**Fonte**
 </dt> <dd>
 
 Tipo de dados: **cadeia de caracteres**
 
 Aplica-se a: classes, associações, indicações, referências
 
-Local de uma instância. O padrão é **NULL**.
+Local de uma instância. O padrão é **NULL.**
 
-O valor do qualificador é <*namespacetype*>://<*namespacehandle*>.
+O valor do qualificador é <*namespacetype>://<* *namespacehandle*>.
 
-Uso: o qualificador de **origem** não pode ser usado com o qualificador **SourceType** .
+Uso: o **qualificador source** não pode ser usado com o qualificador **SourceType.**
 
 </dd> <dt>
 
-<span id="SourceType"></span><span id="sourcetype"></span><span id="SOURCETYPE"></span>**SourceType**
+<span id="SourceType"></span><span id="sourcetype"></span><span id="SOURCETYPE"></span>**Sourcetype**
 </dt> <dd>
 
 Tipo de dados: **cadeia de caracteres**
 
 Aplica-se a: classes, associações, indicações, referências
 
-Tipo de local de uma instância. O valor desse qualificador é <*namespacetype*>. O padrão é **NULL**.
+Tipo de local de uma instância. O valor desse qualificador é <*namespacetype>.* O padrão é **NULL.**
 
-Uso: o qualificador **SourceType** não pode ser usado com o qualificador de **origem** .
+Uso: o **qualificador SourceType** não pode ser usado com o **qualificador source.**
 
 </dd> <dt>
 
 <span id="SupportsCreate"></span><span id="supportscreate"></span><span id="SUPPORTSCREATE"></span>**SupportsCreate**
 </dt> <dd>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 
 Aplica-se a: classes
 
-Indica se a classe oferece suporte à criação de instâncias. O padrão é **false**.
+Indica se a classe dá suporte à criação de instâncias. O padrão é **FALSE.**
 
 </dd> <dt>
 
 <span id="SupportsDelete"></span><span id="supportsdelete"></span><span id="SUPPORTSDELETE"></span>**SupportsDelete**
 </dt> <dd>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 
 Aplica-se a: classes
 
-Indica se a classe oferece suporte à exclusão de instâncias. O padrão é **false**.
+Indica se a classe dá suporte à exclusão de instâncias. O padrão é **FALSE.**
 
 </dd> <dt>
 
 <span id="SupportsUpdate"></span><span id="supportsupdate"></span><span id="SUPPORTSUPDATE"></span>**SupportsUpdate**
 </dt> <dd>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 
 Aplica-se a: classes
 
-Indica se a classe oferece suporte à modificação (atualização) de instâncias. O padrão é **false**.
+Indica se a classe dá suporte à modificação (atualização) de instâncias. O padrão é **FALSE.**
 
 </dd> <dt>
 
-<span id="Terminal"></span><span id="terminal"></span><span id="TERMINAL"></span>**Componentes**
+<span id="Terminal"></span><span id="terminal"></span><span id="TERMINAL"></span>**Terminal**
 </dt> <dd>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 
 Aplica-se a: classes
 
-Indica se a classe pode ter subclasses. O padrão é **false**.
+Indica se a classe pode ter subclasses. O padrão é **FALSE.**
 
 Se uma subclasse for declarada, o compilador gerará um erro.
 
-Uso: esse qualificador não pode coexistir com o qualificador **abstrato** . Se os qualificadores **terminal** e **abstract** forem especificados, o compilador gerará um erro.
+Uso: esse qualificador não pode coexistir com **o qualificador** Abstrato. Se os **qualificadores Terminal** **e Abstrato** são especificados, o compilador gera um erro.
 
 </dd> <dt>
 
-<span id="Units"></span><span id="units"></span><span id="UNITS"></span>**Unit**
+<span id="Units"></span><span id="units"></span><span id="UNITS"></span>**Unidades**
 </dt> <dd>
 
 Tipo de dados: **cadeia de caracteres**

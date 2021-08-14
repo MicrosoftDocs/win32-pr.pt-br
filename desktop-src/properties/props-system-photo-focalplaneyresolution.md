@@ -4,12 +4,12 @@ ms.assetid: 926b6843-0d5b-46be-9608-291e609cf270
 title: System. Photo. FocalPlaneYResolution
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a190629d5e5fba80c595bc6b2dcd2bd131664ae2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e0deef9bd5ecd686dc1c1a1f05864f2ad4aca4c1a700c9bcf94f7716abfa35d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921552"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118229143"
 ---
 # <a name="systemphotofocalplaneyresolution"></a>System. Photo. FocalPlaneYResolution
 

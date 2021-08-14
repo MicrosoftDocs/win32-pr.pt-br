@@ -3,7 +3,7 @@ title: Atributo DRMIndividualizedVersion
 description: O DRMIndividualizedVersion indica a versão do DRM (gerenciamento de direitos digitais) que o arquivo de mídia digital requer.
 ms.assetid: eb31122e-9be8-4ebe-91a8-d9d4288dc772
 keywords:
-- Atributo DRMIndividualizedVersion Windows Media Player
+- Windows Media Player de atributo DRMIndividualizedVersion
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b1cb825a58c284c44a83e79285905e08efed9b6a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e001d350b47b4762c79d78e8d54c49b91976a9255bfa2c49a99945aca7c67861
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105784210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118340203"
 ---
 # <a name="drmindividualizedversion-attribute"></a>Atributo DRMIndividualizedVersion
 

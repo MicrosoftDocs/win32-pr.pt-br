@@ -12,38 +12,38 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 8e7ba3b0bd44cf2f6bb40ecf89f86dd68c21cf3c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3b6351edd58691db3a499a6c0512e76fe87167f888289b8a2d2a947fe1304cf9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118307323"
 ---
 # <a name="filesforimport-collection"></a>Coleção FilesForImport
 
 Recupera informações para aplicativos que são importados.
 
-Esta coleção dá suporte aos métodos [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Essa coleção dá suporte [**aos métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Membros
 
-A coleção **FilesForImport** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) , mas não tem membros adicionais.
+A **coleção FilesForImport** herda da interface [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) mas não tem membros adicionais.
 
 ## <a name="related-collections"></a>Coleções relacionadas
 
 Você pode navegar desta coleção para qualquer uma das seguintes coleções:
 
 -   [**ErrorInfo**](errorinfo.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 
 Você pode navegar até essa coleção das seguintes coleções:
 
--   [**Básica**](root.md)
+-   [**Raiz**](root.md)
 
 ## <a name="properties"></a>Propriedades
 
-As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) dentro da coleção:
+As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](comadmincatalogobject.md) dentro da coleção:
 
 -   [ApplicationFileName](#applicationfilename)
 -   [ApplicationName](#applicationname)
@@ -53,7 +53,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 -   [IsProxy](#isproxy)
 -   [IsService](#isservice)
 -   [PartitionDescription](#partitiondescription)
--   [PartitionID](#partitionid)
+-   [Partitionid](#partitionid)
 -   [PartitionName](#partitionname)
 
 ### <a name="applicationfilename"></a>ApplicationFileName
@@ -110,7 +110,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | O nome do arquivo DLL ou EXE que contém o aplicativo. Essa propriedade é retornada quando o método de propriedade de [**chave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) ou [**nome**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto desta coleção. |
+| Descrição    | O nome do arquivo DLL ou EXE que contém o aplicativo. Essa propriedade é retornada quando [**o método de**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) propriedade Key ou [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto dessa coleção. |
 | Access         | ReadOnly                                                                                                                                                                                                                              |
 | Type           | String                                                                                                                                                                                                                                |
 | Padrão        | ""                                                                                                                                                                                                                                    |
@@ -126,7 +126,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|--------------------------------------------------|
-| Descrição    | Indica se o aplicativo tem algum usuário. |
+| Descrição    | Indica se o aplicativo tem usuários. |
 | Access         | ReadOnly                                         |
 | Tipo           | Bool                                             |
 | Padrão        | Falso                                            |

@@ -3,15 +3,15 @@ title: Funções básicas para uso em um contexto de dispositivo
 description: As seguintes funções WCS fornecem recursos básicos de mapeamento de cores dentro de contextos de dispositivo. Eles são úteis para todos os aplicativos que precisam implementar o gerenciamento de cores com baixa sobrecarga e intervenção mínima do usuário.
 ms.assetid: 199fac5e-daba-4aa3-a631-bb1eb2270b2e
 keywords:
-- WCS (sistema de cores do Windows), funções
-- WCS (sistema de cores do Windows), funções
+- Windows Sistema de cores (WCS), funções
+- WCS (Windows sistema de cores), funções
 - gerenciamento de cores de imagem, funções
 - gerenciamento de cores, funções
 - cores, funções
 - Referência do WCS, funções
 - referência para WCS, funções
-- WCS (sistema de cores do Windows), contextos de dispositivo
-- WCS (sistema de cores do Windows), contextos de dispositivo
+- Windows Sistema de cores (WCS), contextos de dispositivo
+- WCS (Windows sistema de cores), contextos de dispositivo
 - gerenciamento de cores de imagem, contextos de dispositivo
 - gerenciamento de cores, contextos de dispositivo
 - cores, contextos de dispositivo
@@ -21,12 +21,12 @@ keywords:
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fde99ed077af108ddc20c73f86e17bedfe1d4a8c
-ms.sourcegitcommit: d39e82e232f6510f843fdb8d55d25b4e9e02e880
+ms.openlocfilehash: a934c1737a7eea8b32a9589325e73300db82334a40ee47b411922b89cb61f568
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "105808409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118210975"
 ---
 # <a name="basic-functions-for-use-within-a-device-context"></a>Funções básicas para uso em um contexto de dispositivo
 

@@ -4,12 +4,12 @@ ms.assetid: 29696a6f-cd2c-40c4-a7a6-ca32ac80beae
 title: System. Music. PartOfSet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4481f4870c3f539d4d1a1463b169d4d6e03efd1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0945f0a28231a21b34a264f86dd7b99df1d0ed8549edbe49789956f23adebe24
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118230346"
 ---
 # <a name="systemmusicpartofset"></a>System. Music. PartOfSet
 

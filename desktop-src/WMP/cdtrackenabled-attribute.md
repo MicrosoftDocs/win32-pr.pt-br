@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c81c231dbdfc432ea7aa510a19b1f85e0826c836
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8a86c94c2c1b44327cdbfb35544c3e0b5b34d25885215d78dbec0ec084d056e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118342679"
 ---
 # <a name="cdtrackenabled-attribute"></a>Atributo CDTrackEnabled
 
-O atributo **CDTrackEnabled** indica se a faixa está habilitada para reprodução.
+O **atributo CDTrackEnabled** indica se a faixa está habilitada para reprodução.
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -31,9 +31,9 @@ O atributo **CDTrackEnabled** indica se a faixa está habilitada para reproduç�
 
 Esse atributo é armazenado somente no cache da biblioteca.
 
-Ao reproduzir um CD no Windows Media Player, o usuário pode selecionar uma faixa e especificar que ela não deve ser reproduzida. Esse valor desse atributo será true se a faixa puder ser reproduzida, ou false se o usuário especificou que a faixa não deve ser reproduzida.
+Ao tocar um CD Windows Media Player, o usuário pode selecionar uma faixa e especificar que ela não deve ser tocada. Esse valor desse atributo será True se a faixa puder ser tocada ou False se o usuário tiver especificado que a faixa não deve ser tocada.
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ Para determinar se você pode alterar o valor desse atributo, use o método [Med
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 
