@@ -4,12 +4,12 @@ ms.assetid: a31f447d-b718-4f8d-b0d5-643497339557
 title: Atributo MF_PD_ASF_METADATA_V8_VBRPEAK (Wmcontainer. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62d987815fea919bb46bbe5758e48d6eb22dad8f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4bfe0784a9bd43ddb68ef2b8457205b389149a41011e46cb748cc7c6d4b7f4f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104506026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117876230"
 ---
 # <a name="mf_pd_asf_metadata_v8_vbrpeak-attribute"></a>\_Atributo MF PD \_ ASF \_ Metadata \_ V8 \_ VBRPEAK
 
@@ -26,7 +26,7 @@ Esse atributo se aplica a descritores de apresentação para conteúdo ASF.
 O método [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) gera esse atributo.
 
 > [!Note]  
-> Esse atributo aplica-se somente a arquivos criados pela versão 8 do SDK do Windows Media Format. Ele corresponde ao atributo **VBRPeak** no SDK do Windows Media Format.
+> esse atributo aplica-se somente a arquivos criados pela versão 8 do SDK do formato de mídia Windows. ele corresponde ao atributo **VBRPeak** no SDK do formato de mídia Windows.
 
  
 
@@ -36,9 +36,9 @@ O método [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desk
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
 
 
 

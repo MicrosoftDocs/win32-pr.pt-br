@@ -1,7 +1,7 @@
 ---
-description: Função D3DXMatrixPerspectiveLH (D3DX10Math. h) – compila uma matriz de projeção de perspectiva do lado esquerdo
+description: Função D3DXMatrixPerspectiveLH (D3DX10Math.h) – cria uma matriz de projeção de perspectiva à esquerda
 ms.assetid: 5fd8da67-ff12-42fa-b915-b50fa2680b32
-title: Função D3DXMatrixPerspectiveLH (D3DX10Math. h)
+title: Função D3DXMatrixPerspectiveLH (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: a0f6c976f64fe64d3ca583351ae5c7c32aa958fd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ea9b91fe926ecbab34fa65fd6c21f852501b6d515acaf8b9aaa5b8971a27c37b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118304500"
 ---
-# <a name="d3dxmatrixperspectivelh-function-d3dx10mathh"></a>Função D3DXMatrixPerspectiveLH (D3DX10Math. h)
+# <a name="d3dxmatrixperspectivelh-function-d3dx10mathh"></a>Função D3DXMatrixPerspectiveLH (D3DX10Math.h)
 
-Cria uma matriz de projeção de perspectiva do lado esquerdo
+Cria uma matriz de projeção de perspectiva à esquerda
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,48 +44,48 @@ D3DXMATRIX* D3DXMatrixPerspectiveLH(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Ponteiro para a estrutura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) que é o resultado da operação.
+Ponteiro para a [**estrutura D3DXMATRIX**](d3d10-d3dxmatrix.md) que é o resultado da operação.
 
 </dd> <dt>
 
 *w* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Largura do volume de exibição no plano de exibição próximo.
 
 </dd> <dt>
 
-*h* \[\]
+*h* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Altura do volume de exibição no plano de exibição próximo.
 
 </dd> <dt>
 
-*Zn* \[ no\]
+*zn* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valor Z do plano de exibição próximo.
 
 </dd> <dt>
 
-*ZF* \[ no\]
+*zf* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Z-valor do plano de exibição distante.
+Valor Z do plano de exibição distante.
 
 </dd> </dl>
 
@@ -93,13 +93,13 @@ Z-valor do plano de exibição distante.
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Ponteiro para uma estrutura D3DXMATRIX que é uma matriz de projeção de perspectiva do lado esquerdo.
+Ponteiro para uma estrutura D3DXMATRIX que é uma matriz de projeção de perspectiva à esquerda.
 
 ## <a name="remarks"></a>Comentários
 
 Todos os parâmetros da função D3DXMatrixPerspectiveLH são distâncias no espaço da câmera. Os parâmetros descrevem as dimensões do volume de exibição.
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função D3DXMatrixPerspectiveLH pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função D3DXMatrixPerspectiveLH pode ser usada como um parâmetro para outra função.
 
 Essa função usa a fórmula a seguir para calcular a matriz retornada.
 
@@ -119,12 +119,12 @@ Essa função usa a fórmula a seguir para calcular a matriz retornada.
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

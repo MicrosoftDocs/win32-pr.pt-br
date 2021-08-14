@@ -6,30 +6,30 @@ keywords:
 - recursos, ícones
 - ícones, criando
 - ícones, exibindo
-- ícones, compartilhando recursos
+- ícones, compartilhamento de recursos
 - criando ícones
 - exibindo ícones
-- compartilhando recursos de ícone
+- compartilhamento de recursos de ícone
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03202c250502794d5f845bcc8c2ae263d919ea62
-ms.sourcegitcommit: dc2f43e0f23f4a4ce239118cf9a5180f3ff0dd1d
+ms.openlocfilehash: 40db7a5828c80dc27780ac54e4110e37a80f44938c9475904ce32089be50d84f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "108327111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118472594"
 ---
 # <a name="using-icons"></a>Usando ícones
 
-Os tópicos a seguir descrevem como executar determinadas tarefas relacionadas aos ícones:
+Os tópicos a seguir descrevem como executar determinadas tarefas relacionadas a ícones:
 
 -   [Criando um ícone](#creating-an-icon)
 -   [Exibindo um ícone](#displaying-an-icon)
--   [Compartilhando recursos de ícone](#sharing-icon-resources)
+-   [Compartilhamento de recursos do ícone](#sharing-icon-resources)
 
 ## <a name="creating-an-icon"></a>Criando um ícone
 
-Para usar um ícone, seu aplicativo deve obter um identificador para o ícone. O exemplo a seguir mostra como criar duas alças de ícone diferentes: uma para o ícone de pergunta padrão e outra para um ícone personalizado incluído como um recurso no arquivo de definição de recurso do aplicativo.
+Para usar um ícone, seu aplicativo deve obter um handle para o ícone. O exemplo a seguir mostra como criar dois controles de ícone diferentes: um para o ícone de pergunta padrão e outro para um ícone personalizado incluído como um recurso no arquivo de definição de recursos do aplicativo.
 
 
 ```
@@ -50,7 +50,7 @@ hIcon2 = LoadIcon(hinst, MAKEINTRESOURCE(460));
 
 
 
-Um aplicativo deve implementar ícones personalizados como recursos e deve usar a função [**LoadIcon**](/windows/desktop/api/Winuser/nf-winuser-loadicona) ou [**LoadImage**](/windows/desktop/api/Winuser/nf-winuser-loadimagea) , em vez de criar os ícones em tempo de execução. Essa abordagem evita a dependência do dispositivo, simplifica a localização e permite que os aplicativos compartilhem bitmaps de ícone. No entanto, o exemplo a seguir usa [**CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon) para criar um ícone personalizado em tempo de execução, com base em bitmasks de bitmap; Ele está incluído para ilustrar como o sistema interpreta bitmasks de bitmap de ícone.
+Um aplicativo deve implementar ícones personalizados como recursos e deve usar a função [**LoadIcon**](/windows/desktop/api/Winuser/nf-winuser-loadicona) ou [**LoadImage,**](/windows/desktop/api/Winuser/nf-winuser-loadimagea) em vez de criar os ícones em tempo de execução. Essa abordagem evita a dependência do dispositivo, simplifica a localização e permite que os aplicativos compartilhem bitmaps de ícone. No entanto, o exemplo a seguir usa [**CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon) para criar um ícone personalizado em tempo de executar, com base em bitmasks de bitmap; ele está incluído para ilustrar como o sistema interpreta bitmasks de bitmap do ícone.
 
 
 ```
@@ -152,26 +152,26 @@ hIcon3 = CreateIcon(hinst,    // application instance
 
 
 
-Para criar o ícone, [**CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon) aplica a seguinte tabela da verdade aos bitmasks e e XOR.
+Para criar o ícone, [**CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon) aplica a tabela de verdade a seguir às máscaras de bits AND e XOR.
 
 
 
-| E bitmask | Bitmask XOR | Monitor        |
+| E bitmask | Máscara de bits XOR | Exibir        |
 |-------------|-------------|----------------|
 | 0           | 0           | Preto          |
 | 0           | 1           | Branca          |
 | 1           | 0           | Tela         |
-| 1           | 1           | Tela reversa |
+| 1           | 1           | Tela inversa |
 
 
 
  
 
-Antes de fechar, seu aplicativo deve usar [**DestroyIcon**](/windows/desktop/api/Winuser/nf-winuser-destroyicon) para destruir qualquer ícone criado usando [**CreateIconIndirect**](/windows/desktop/api/Winuser/nf-winuser-createiconindirect). Não é necessário destruir ícones criados por outras funções.
+Antes de fechar, seu aplicativo deve usar [**DestroyIcon**](/windows/desktop/api/Winuser/nf-winuser-destroyicon) para destruir qualquer ícone criado usando [**CreateIconIndirect.**](/windows/desktop/api/Winuser/nf-winuser-createiconindirect) Não é necessário destruir ícones criados por outras funções.
 
 ## <a name="displaying-an-icon"></a>Exibindo um ícone
 
-Seu aplicativo pode carregar e criar ícones para serem exibidos na área cliente ou no Windows filho do aplicativo. O exemplo a seguir demonstra como desenhar um ícone na área do cliente da janela cujo contexto de dispositivo (DC) é identificado pelo parâmetro *HDC* .
+Seu aplicativo pode carregar e criar ícones a exibir na área de cliente ou janelas filho do aplicativo. O exemplo a seguir demonstra como desenhar um ícone na área de cliente da janela cujo dc (contexto do dispositivo) é identificado pelo *parâmetro hdc.*
 
 
 ```
@@ -183,7 +183,7 @@ DrawIcon(hdc, 10, 20, hIcon1);
 
 
 
-O sistema exibe automaticamente os ícones de classe de uma janela. Seu aplicativo pode atribuir ícones de classe ao registrar uma classe de janela. Seu aplicativo pode substituir um ícone de classe usando a função [**SetClassLong**](/windows/desktop/api/winuser/nf-winuser-setclasslonga) . Essa função altera as configurações de janela padrão para todas as janelas de uma determinada classe. O exemplo a seguir substitui um ícone de classe pelo ícone cujo identificador de recurso é 480.
+O sistema exibe automaticamente os ícones de classe de uma janela. Seu aplicativo pode atribuir ícones de classe ao registrar uma classe de janela. Seu aplicativo pode substituir um ícone de classe usando a [**função SetClassLong.**](/windows/desktop/api/winuser/nf-winuser-setclasslonga) Essa função altera as configurações de janela padrão para todas as janelas de uma determinada classe. O exemplo a seguir substitui um ícone de classe pelo ícone cujo identificador de recurso é 480.
 
 
 ```
@@ -200,13 +200,13 @@ SetClassLongPtr(hwnd,          // window handle
 
 
 
-Para obter mais informações sobre classes de janela, consulte [classes de janela](/windows/desktop/winmsg/window-classes).
+Para obter mais informações sobre classes de janela, consulte [Classes de janela](/windows/desktop/winmsg/window-classes).
 
-## <a name="sharing-icon-resources"></a>Compartilhando recursos de ícone
+## <a name="sharing-icon-resources"></a>Compartilhamento de recursos do ícone
 
-O código a seguir usa as funções [**CreateIconFromResourceEx**](/windows/desktop/api/Winuser/nf-winuser-createiconfromresourceex), [**DrawIcon**](/windows/desktop/api/Winuser/nf-winuser-drawicon)e [**LookupIconIdFromDirectoryEx**](/windows/desktop/api/Winuser/nf-winuser-lookupiconidfromdirectoryex), e várias funções de recurso, para criar um identificador de ícone baseado nos dados de ícone de outro arquivo executável. Em seguida, ele exibe o ícone em uma janela.
+O código a seguir usa as funções [**CreateIconFromResourceEx,**](/windows/desktop/api/Winuser/nf-winuser-createiconfromresourceex) [**DrawIcon**](/windows/desktop/api/Winuser/nf-winuser-drawicon)e [**LookupIconIdFromDirectoryEx**](/windows/desktop/api/Winuser/nf-winuser-lookupiconidfromdirectoryex)e várias das funções de recurso, para criar uma alça de ícone com base nos dados de ícone de outro arquivo executável. Em seguida, ele exibe o ícone em uma janela.
 
-**Aviso de segurança:** O uso incorreto de [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) pode comprometer a segurança do seu aplicativo carregando a dll errada. Consulte a documentação de **LoadLibrary** para obter informações sobre como carregar DLLs corretamente com diferentes versões do Windows.
+**Aviso de segurança:** Usar [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) incorretamente pode comprometer a segurança do seu aplicativo carregando a DLL incorreta. Consulte a **documentação do LoadLibrary** para obter informações sobre como carregar DLLs corretamente com diferentes versões do Windows.
 
 
 ```

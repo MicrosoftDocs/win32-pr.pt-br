@@ -1,7 +1,7 @@
 ---
-description: O GUID do aplicativo do Assinante.
+description: O GUID do aplicativo do assinante.
 ms.assetid: 46c91cae-ca31-4eac-baa8-d36910917f0f
-title: 'Propriedade IEventSubscription3:: SubscriberApplicationID'
+title: Propriedade IEventSubscription3::SubscriberApplicationID
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: c2e726d97821a7a7143f4971a4918227235adb9c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 723a64b4e34c58b49f0ffa0851af836a536ff86ea23ee1b966a8ec243267950c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104163996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118306364"
 ---
-# <a name="ieventsubscription3subscriberapplicationid-property"></a>Propriedade IEventSubscription3:: SubscriberApplicationID
+# <a name="ieventsubscription3subscriberapplicationid-property"></a>Propriedade IEventSubscription3::SubscriberApplicationID
 
-O GUID do aplicativo do Assinante.
+O GUID do aplicativo do assinante.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,11 +44,11 @@ HRESULT get_SubscriberApplicationID(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Uma cadeia de caracteres que contém o GUID do aplicativo de assinante.
+Uma cadeia de caracteres que contém o GUID do aplicativo assinante.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Esse método pode retornar os valores de retorno padrão E \_ INVALIDARG, e \_ OUTOFMEMORY, e \_ inesperado, e \_ falha e S \_ OK.
+Esse método pode retornar os valores de retorno padrão E \_ INVALIDARG, E \_ OUTOFMEMORY, E \_ UNEXPECTED, E \_ FAIL e S \_ OK.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -3,26 +3,26 @@ title: Referência de atributos de playlist
 description: Referência de atributos de playlist
 ms.assetid: d163b6fd-a64f-4160-95cb-6ac1153f011b
 keywords:
-- Windows Media Player, atributos da lista de reprodução
-- Windows Media Player Mobile, atributos de lista de reprodução
-- Modelo de objeto do Windows Media Player, atributos da lista de reprodução
+- Windows Media Player, atributos de lista de reprodução
+- Windows Media Player Dispositivos móveis, playlist
+- modelo de objeto Windows Media Player, atributos de lista de reprodução
 - modelo de objeto, atributos de playlist
-- Controle ActiveX, atributos de playlist
-- Controle ActiveX do Windows Media Player, atributos da lista de reprodução
-- Controle ActiveX móvel do Windows Media Player, atributos da lista de reprodução
+- ActiveX controle, atributos de lista de reprodução
+- controle de ActiveX de Windows Media Player, atributos de lista de reprodução
+- Windows Media Player controle de ActiveX móvel, atributos de lista de reprodução
 - referência do modelo de objeto, atributos da lista de reprodução
 - atributos, listas de reprodução
 - listas de reprodução, atributos
 - listas de reprodução de metarquivo, atributos
-- Listas de reprodução do metarquivo do Windows Media, atributos
+- Windows Listas de reprodução de metarquivo de mídia, atributos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28bff94922356a18994f5750acd7e4201915360d
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 8e9d9706ed062035de3bdcde175497f0e22cd735409b6834040f3d325ef4b066
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105782408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118337166"
 ---
 # <a name="playlist-attributes-reference"></a>Referência de atributos de playlist
 

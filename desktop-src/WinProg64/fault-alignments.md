@@ -3,15 +3,15 @@ title: Falhas de alinhamento
 description: Falhas de alinhamento
 ms.assetid: 16e69aec-3aec-4684-bf37-b3e5db6e4f87
 keywords:
-- falhas de alinhamento de 64-programação do Windows de bits
+- falhas de alinhamento 64-bit Windows programação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 318a7a55010ac148354d000ece32c91a8652f821
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d813a47cb3428c57ee6235442491f26f8d126a997dd7fcfa6844d551e7958b92
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105768385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119412906"
 ---
 # <a name="alignment-faults"></a>Falhas de alinhamento
 
@@ -21,6 +21,6 @@ Se o depurador do WinDbg tiver sido instalado como o depurador do sistema, o Win
 
 Em sistemas x64 e ARM64, quaisquer falhas de alinhamento são tratadas por uma combinação de hardware e software. Para obter o melhor desempenho, todo o acesso à memória deve ser corretamente alinhado. Além disso, o [acesso a variáveis interprotegidas](/windows/desktop/Sync/interlocked-variable-access) não alinhadas deve ser evitado em ARM64, pois essas operações não são seguras Atomic.
 
- 
+ 
 
- 
+ 

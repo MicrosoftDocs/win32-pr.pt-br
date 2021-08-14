@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ad71d97bb6f35f268b070829f3c0c4decc7ef00d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 314e0fe1d2c7b048ba6b2a2daaedd923678bbd69bc49cbdb5cc7dc2e72121a61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118783408"
 ---
 # <a name="esentcannotdeletetemptableexception-constructor"></a>Construtor EsentCannotDeleteTempTableException
 
 Inicializa uma nova instância da classe EsentCannotDeleteTempTableException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentCannotDeleteTempTableException()
 
 [Classe EsentCannotDeleteTempTableException](./esentcannotdeletetemptableexception-class.md)
 
-[Membros do EsentCannotDeleteTempTableException](./esentcannotdeletetemptableexception-members.md)
+[Membros EsentCannotDeleteTempTableException](./esentcannotdeletetemptableexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

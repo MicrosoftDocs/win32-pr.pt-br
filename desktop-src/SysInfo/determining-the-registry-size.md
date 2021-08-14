@@ -1,24 +1,24 @@
 ---
-description: No Windows 2000, é comum um utilitário de instalação verificar o tamanho atual e o máximo do registro para determinar se há espaço disponível suficiente para os novos dados que serão adicionados.
+description: No Windows 2000, é comum que um utilitário de instalação verifique o tamanho atual e máximo do Registro para determinar se há espaço disponível suficiente para os novos dados que ele adicionará.
 ms.assetid: 87e7b9de-d571-41e4-817e-29023546e9bd
-title: Determinando o tamanho do registro
+title: Determinando o tamanho do Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4434b519625cf21c9e0076dc7c21d71e27c01778
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88e26fbeedf13ea66c93f7a13426819fb84df6ffa3f75c908462dcef8f8dcb54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117764497"
 ---
-# <a name="determining-the-registry-size"></a>Determinando o tamanho do registro
+# <a name="determining-the-registry-size"></a>Determinando o tamanho do Registro
 
-No Windows 2000, é comum um utilitário de instalação verificar o tamanho atual e o máximo do registro para determinar se há espaço disponível suficiente para os novos dados que serão adicionados. Este exemplo demonstra como fazer isso programaticamente usando o contador de desempenho "% de cota de registro em uso" dentro do objeto do sistema.
+No Windows 2000, é comum que um utilitário de instalação verifique o tamanho atual e máximo do Registro para determinar se há espaço disponível suficiente para os novos dados que ele adicionará. Este exemplo demonstra como fazer isso programaticamente usando o contador de desempenho "% cota do Registro em uso" dentro do objeto System.
 
-O exemplo a seguir usa o PDH (auxiliar de dados de desempenho) para obter o valor do contador; Ele deve ser vinculado a PDH. lib. A PDH é um conjunto de APIs de alto nível usado para obter dados de desempenho.
+O exemplo a seguir usa o PDH (auxiliar de dados de desempenho) para obter o valor do contador; ele deve estar vinculado a Pdh.lib. PDH é um conjunto de alto nível de APIs usadas para obter dados de desempenho.
 
 > [!Note]  
-> Não é necessário implementar esse tamanho de registro-Verifique no Windows Server 2003 ou no Windows XP porque eles não têm um limite de cota de registro.
+> Não é necessário implementar essa verificação de tamanho do Registro no Windows Server 2003 ou Windows XP porque eles não têm um limite de cota do Registro.
 
  
 

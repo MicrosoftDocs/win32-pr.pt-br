@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 85e81d3a1924a7b117a003f410aff14361baf466
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0ac9089c67f5d331a06feaa54e30f5762c97c31a17dea5b983447995abfe682a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827555"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118487966"
 ---
 # <a name="floatcolumnvalue-constructor"></a>Construtor FloatColumnValue
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,6 +56,6 @@ public FloatColumnValue()
 
 [Classe FloatColumnValue](./floatcolumnvalue-class.md)
 
-[Membros do FloatColumnValue](./floatcolumnvalue-members.md)
+[Membros FloatColumnValue](./floatcolumnvalue-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

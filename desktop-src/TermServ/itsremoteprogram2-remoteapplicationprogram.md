@@ -1,14 +1,14 @@
 ---
-title: Propriedade ITSRemoteProgram2 RemoteApplicationProgram
+title: Propriedade ItsRemoteProgram2 RemoteApplicationProgram
 description: O caminho e o nome do arquivo do programa RemoteApp.
 ms.assetid: 1e8fc9a5-6622-40e2-b434-a26ce20bd9aa
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade RemoteApplicationProgram
-- Propriedade RemoteApplicationProgram Serviços de Área de Trabalho Remota, interface ITSRemoteProgram2
-- Serviços de Área de Trabalho Remota de interface ITSRemoteProgram2, Propriedade RemoteApplicationProgram
-- Propriedade RemoteApplicationProgram Serviços de Área de Trabalho Remota, interface ITSRemoteProgram3
-- Serviços de Área de Trabalho Remota de interface ITSRemoteProgram3, Propriedade RemoteApplicationProgram
+- Propriedade RemoteApplicationProgram Serviços de Área de Trabalho Remota
+- Propriedade RemoteApplicationProgram Serviços de Área de Trabalho Remota , interface ITSRemoteProgram2
+- Interface ITSRemoteProgram2 Serviços de Área de Trabalho Remota , propriedade RemoteApplicationProgram
+- Propriedade RemoteApplicationProgram Serviços de Área de Trabalho Remota , interface ITSRemoteProgram3
+- Interface ITSRemoteProgram3 Serviços de Área de Trabalho Remota , propriedade RemoteApplicationProgram
 topic_type:
 - apiref
 api_name:
@@ -22,14 +22,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae4a69190f4b8a161af8872c9b1dfb4937449c4d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 33e6d8cdd3dd54ffefdcbeb50b8d70c7b05aebafe852815e7eaa1fb0441636c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117756680"
 ---
-# <a name="itsremoteprogram2remoteapplicationprogram-property"></a>Propriedade ITSRemoteProgram2:: RemoteApplicationProgram
+# <a name="itsremoteprogram2remoteapplicationprogram-property"></a>Propriedade ITSRemoteProgram2::RemoteApplicationProgram
 
 O caminho e o nome do arquivo do programa RemoteApp.
 

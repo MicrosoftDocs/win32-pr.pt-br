@@ -1,17 +1,17 @@
 ---
 description: Mostra como registrar-se como um provedor de raiz de sincronização e integrar um provedor de armazenamento em nuvem no nível raiz do painel de navegação.
 ms.assetid: BB177EDC-8C88-4540-B2F8-994C1C8BA91C
-title: Integrar um provedor de armazenamento em nuvem
+title: integrar um provedor de Armazenamento de nuvem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 21fdc5abfbf9881bfe23b00a924fce989aec7c95
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1e218caa292e2b85e13e00374562c172158be8bb2f062f25b47979902046282c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104550615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118458196"
 ---
-# <a name="integrate-a-cloud-storage-provider"></a>Integrar um provedor de armazenamento em nuvem
+# <a name="integrate-a-cloud-storage-provider"></a>integrar um provedor de Armazenamento de nuvem
 
 Quando você tem um provedor de armazenamento em nuvem, há algumas etapas que devem ser executadas para fornecer uma experiência consistente e preferencial para o usuário. Essas duas coisas estão se registrando como um provedor de raiz de sincronização e integrando seu aplicativo no nível raiz do painel de navegação.
 
@@ -20,23 +20,23 @@ Quando você tem um provedor de armazenamento em nuvem, há algumas etapas que d
 
  
 
-A primeira coisa é registrar-se como um provedor de raiz de sincronização. Isso permite que o Shell do Windows saiba sobre seu aplicativo e que seu aplicativo será responsável por sincronizar arquivos em sua raiz de sincronização. Isso também permitirá que outros aplicativos saibam que você está sincronizando esses arquivos para que eles possam responder adequadamente. Outros aplicativos podem usar [**StorageFile. Provider**](/uwp/api/Windows.Storage.StorageFile?view=winrt-19041) para obter o [**DisplayName**](/uwp/api/Windows.Storage.StorageProvider?view=winrt-19041) e a [**ID**](/uwp/api/Windows.Storage.StorageProvider?view=winrt-19041) do seu aplicativo.
+A primeira coisa é registrar-se como um provedor de raiz de sincronização. isso permite que o Shell de Windows saiba sobre seu aplicativo e que seu aplicativo será responsável por sincronizar arquivos em sua raiz de sincronização. Isso também permitirá que outros aplicativos saibam que você está sincronizando esses arquivos para que eles possam responder adequadamente. Outros aplicativos podem usar [**StorageFile. Provider**](/uwp/api/Windows.Storage.StorageFile?view=winrt-19041) para obter o [**DisplayName**](/uwp/api/Windows.Storage.StorageProvider?view=winrt-19041) e a [**ID**](/uwp/api/Windows.Storage.StorageProvider?view=winrt-19041) do seu aplicativo.
 
 Para se registrar como um provedor de raiz de sincronização, você precisará criar várias entradas de registro. Antes de fornecer a lista de pares chave-valor, aqui estão alguns espaços reservados que você deve substituir por seus próprios dados de aplicativo.
 
--   *\[ ID \] do provedor de armazenamento*: o nome do seu provedor de armazenamento em nuvem. Esse nome deve ser consistente, independentemente da versão do seu aplicativo. Um exemplo disso é o OneDrive.
--   *\[ Windows SID \]*: o Sid exclusivo do Windows que identifica o usuário. Se seu aplicativo der suporte a várias instalações para vários usuários em um único computador, essa parte será necessária.
+-   *\[ ID \] do provedor de armazenamento*: o nome do seu provedor de armazenamento em nuvem. Esse nome deve ser consistente, independentemente da versão do seu aplicativo. Um exemplo disso é OneDrive.
+-   *\[ sid \] de Windows*: o sid de Windows exclusivo que identifica o usuário. Se seu aplicativo der suporte a várias instalações para vários usuários em um único computador, essa parte será necessária.
 -   *\[ ID \] da conta*: o identificador do provedor de serviços para a conta atual deste usuário. Alguns provedores exigem a capacidade de fornecer várias raízes de sincronização para um usuário. Um exemplo disso é um trabalho e uma conta pessoal. A *ID da conta* permite que você tenha várias contas registradas para um usuário. Se seu provedor der suporte a várias raízes de sincronização por usuário, essa parte será necessária.
 
 Esses espaços reservados são combinados em conjunto para formar a ID raiz da sincronização. Você deve inserir um **!** caractere entre cada um dos espaços reservados ao formar a ID da raiz de sincronização. Aqui estão os pares chave-valor que precisam ser criados.
 
--   **HKLM \\ Software \\ Microsoft \\ Windows \\ CurrentVersion \\ Explorer \\ SyncRootManager \\**_\[ Storage Provider ID \]_*_!_* _\[ SID \] do Windows_*_!_* _\[ ID \] da conta_*_\\ DisplayNameResource_* : aponta para o recurso em que o Shell do Windows ou outros aplicativos podem obter um nome amigável para a raiz de sincronização.
--   **HKLM \\ Software \\ Microsoft \\ Windows \\ CurrentVersion \\ Explorer \\ SyncRootManager \\**_\[ Storage Provider ID \]_*_!_* _\[ SID \] do Windows_*_!_* _\[ ID \] da conta_*_\\ IconResource_* : aponta para o recurso em que o Shell do Windows ou outros aplicativos podem obter um ícone para a raiz de sincronização.
--   **HKLM \\ Software \\ Microsoft \\ Windows \\ CurrentVersion \\ Explorer \\ SyncRootManager \\**_\[ Storage Provider ID \]_*_!_* _\[ SID \] do Windows_*_!_* _\[ ID \] da conta_*_\\ UserSyncRoots \\_*_\[ Windows \] Sid_ : o local no disco onde a raiz de sincronização está localizada.
+-   **HKLM \\ Software \\ Microsoft \\ Windows \\ CurrentVersion \\ Explorer \\ SyncRootManager \\**_\[ storage provider ID \]_*_!_* _\[ Windows SID \]_*_!_* _\[ ID \] da conta_*_\\ DisplayNameResource_* : aponta para o recurso em que o Shell de Windows ou outros aplicativos podem obter um nome amigável para a raiz de sincronização.
+-   **HKLM \\ Software \\ Microsoft \\ Windows \\ CurrentVersion \\ Explorer \\ SyncRootManager \\**_\[ storage provider ID \]_*_!_* _\[ Windows SID \]_*_!_* _\[ ID \] da conta_*_\\ IconResource_* : aponta para o recurso em que o Shell de Windows ou outros aplicativos podem obter um ícone para a raiz de sincronização.
+-   **HKLM \\ Software \\ Microsoft \\ Windows \\ CurrentVersion \\ Explorer \\ SyncRootManager \\**_\[ storage provider ID \]_*_!_* _\[ Windows SID \]_*_!_* _\[ ID \] da conta_*_\\ UserSyncRoots \\_*_\[ Windows \] SID_ : o local no disco onde a raiz de sincronização está localizada.
 
 Além de registrar como um provedor de raiz de sincronização, você também deseja que os usuários tenham acesso fácil aos dados fornecidos. O namespace do explorador de arquivos foi projetado para fornecer um método para esse fácil acesso. Criar uma extensão de namespace para seu provedor e incorporá-la na janela Explorador de arquivos permitirá que os usuários interajam com o nível raiz de seus serviços, assim como são usados para outros itens do explorador de arquivos. Este tópico explica como estender o namespace do explorador de arquivos para que seu provedor seja exibido no nível raiz no painel de navegação.
 
-O painel de navegação da janela Explorador de arquivos é a parte da janela exibida no lado esquerdo. Na imagem abaixo, você pode ver a estrutura de namespace para esse usuário. O nível raiz no painel de navegação inclui os objetos para o **onedrive**, **este computador e a** **rede**. Seguir essas etapas adicionará sua extensão ao mesmo nível.
+O painel de navegação da janela Explorador de arquivos é a parte da janela exibida no lado esquerdo. Na imagem abaixo, você pode ver a estrutura de namespace para esse usuário. o nível raiz no painel de navegação inclui os objetos para **OneDrive**, **este computador** e a **rede**. Seguir essas etapas adicionará sua extensão ao mesmo nível.
 
 ![painel de navegação](images/navigationpane.png)
 
@@ -132,17 +132,17 @@ Defina os sinalizadores [**SFGAO**](sfgao.md) apropriados. Os sinalizadores rele
 
 **REG add HKCU \\ software \\ classes \\ CLSID \\ {0672A6D1-A6E0-40FE-AB16-F25BADC6D9E3} \\ identificação ShellFolder/v atributos/t reg \_ DWORD/d 0xF080004D/f**
 
-### <a name="step-11-register-your-extension-in-the-namespace-root"></a>Etapa 11: registrar sua extensão na raiz do namespace
+### <a name="step-11-register-your-extension-in-the-namespace-root"></a>Etapa 11: Registrar sua extensão na raiz do namespace
 
-Configure a extensão do namespace para ser um filho da pasta da área de trabalho.
+Configure a extensão de namespace para ser um filho da pasta da área de trabalho.
 
-**REG add HKCU \\ software \\ Microsoft \\ Windows \\ CurrentVersion \\ Explorer \\ Desktop \\ namespace \\ {0672A6D1-A6E0-40FE-AB16-F25BADC6D9E3}/ve/t reg \_ sz/d MyCloudStorageApp/f**
+**reg add HKCU \\ Software \\ Microsoft Windows \\ \\ CurrentVersion Explorer Desktop \\ \\ \\ NameSpace \\ {0672A6D1-A6E0-40FE-AB16-F25BADC6D9E3} /ve /t REG \_ SZ /d MyCloudStorageApp /f**
 
-### <a name="step-12-hide-your-extension-from-the-desktop"></a>Etapa 12: ocultar sua extensão da área de trabalho
+### <a name="step-12-hide-your-extension-from-the-desktop"></a>Etapa 12: Ocultar sua extensão da Área de Trabalho
 
-É importante que sua extensão apareça somente no painel de navegação do explorador de arquivos. Uma extensão de namespace não funciona como um atalho normal. Portanto, você não deve usar esse método para criar um atalho de área de trabalho.
+É importante que sua extensão apareça apenas no Painel de Navegação do Explorador de Arquivos. Uma extensão de namespace não funciona como um atalho normal. Portanto, você não deve usar esse método para criar um atalho da Área de Trabalho.
 
-**REG add HKCU \\ software \\ Microsoft \\ Windows \\ CurrentVersion \\ Explorer \\ HideDesktopIcons \\ NewStartPanel/v {0672A6D1-A6E0-40FE-AB16-F25BADC6D9E3}/t reg \_ DWORD/d 0x1/f**
+**reg add HKCU \\ Software \\ Microsoft Windows \\ \\ CurrentVersion Explorer \\ \\ HideDesktopIcons \\ NewStartPanel /v {0672A6D1-A6E0-40FE-AB16-F25BADC6D9E3} /t REG \_ DWORD /d 0x1 /f**
 
  
 

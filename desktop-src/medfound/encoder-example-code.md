@@ -1,36 +1,36 @@
 ---
-description: Este tópico mostra um exemplo de código que encapsula o codificador de áudio do Windows Media (WMA) em uma classe C++ chamada CWmaEncoder.
+description: Este tópico mostra um código de exemplo que envolve o codificador WMA (Windows Media Audio) em uma classe C++ chamada CWmaEncoder.
 ms.assetid: 59bd5b6a-86fe-4d39-ab7c-9563ac1a8e94
 title: Código de exemplo do codificador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dfa38e779a7751c22f2c463999619e77e05ef09b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9acf77224b71618068cb42e0b46e15b1063ae333cb1ed3f147ef1ee85e1b4207
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105771300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117879430"
 ---
 # <a name="encoder-example-code"></a>Código de exemplo do codificador
 
-Este tópico mostra um exemplo de código que encapsula o codificador de áudio do Windows Media (WMA) em uma classe C++ denominada `CWmaEncoder` .
+Este tópico mostra um código de exemplo que envolve o codificador WMA (Windows Media Audio) em uma classe C++ chamada `CWmaEncoder` .
 
 -   [Declaração de classe](#class-declaration)
 -   [Inicializar](#initialize)
--   [Setencodingtype](#setencodingtype)
--   [SetInputType](#setinputtype)
--   [GetOutputType](#getoutputtype)
+-   [SetEncodingType](#setencodingtype)
+-   [Setinputtype](#setinputtype)
+-   [Getoutputtype](#getoutputtype)
 -   [GetLeakyBucket1](#getleakybucket1)
 -   [ProcessInput](#processinput)
--   [ProcessOutput](#processoutput)
--   [Desperdício](#drain)
+-   [Processoutput](#processoutput)
+-   [Dreno](#drain)
 -   [Tópicos relacionados](#related-topics)
 
 Esse código é referenciado por vários tópicos:
 
--   [Tutorial: gravando um arquivo WMA usando a codificação de CBR](tutorial--writing-a-wma-file-by-using-cbr-encoding.md)
+-   [Tutorial: Escrevendo um arquivo WMA usando a codificação CBR](tutorial--writing-a-wma-file-by-using-cbr-encoding.md)
 
-Em Media Foundation, os codificadores são implementados como [transformações de Media Foundation](media-foundation-transforms.md) (MFTs) e expõem a interface [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) .
+No Media Foundation, os codificadores são [implementados como Media Foundation transformação](media-foundation-transforms.md) (MFTs) e expõem a interface [**IMFTransform.**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)
 
 ## <a name="class-declaration"></a>Declaração de classe
 
@@ -138,7 +138,7 @@ HRESULT CWmaEncoder::Initialize()
 
 
 
-## <a name="setencodingtype"></a>Setencodingtype
+## <a name="setencodingtype"></a>SetEncodingType
 
 
 ```C++
@@ -184,7 +184,7 @@ done:
 
 
 
-## <a name="setinputtype"></a>SetInputType
+## <a name="setinputtype"></a>Setinputtype
 
 
 ```C++
@@ -249,7 +249,7 @@ done:
 
 
 
-## <a name="getoutputtype"></a>GetOutputType
+## <a name="getoutputtype"></a>Getoutputtype
 
 
 ```C++
@@ -330,7 +330,7 @@ HRESULT CWmaEncoder::ProcessInput(IMFSample* pSample)
 
 
 
-## <a name="processoutput"></a>ProcessOutput
+## <a name="processoutput"></a>Processoutput
 
 
 ```C++
@@ -411,7 +411,7 @@ done:
 
 
 
-## <a name="drain"></a>Desperdício
+## <a name="drain"></a>Dreno
 
 
 ```C++
@@ -432,7 +432,7 @@ HRESULT CWmaEncoder::Drain()
 
 <dl> <dt>
 
-[Tutorial: gravando um arquivo WMA usando a codificação de CBR](tutorial--writing-a-wma-file-by-using-cbr-encoding.md)
+[Tutorial: Escrevendo um arquivo WMA usando a codificação CBR](tutorial--writing-a-wma-file-by-using-cbr-encoding.md)
 </dt> <dt>
 
 [Codificações de mídia do Windows](windows-media-codecs.md)

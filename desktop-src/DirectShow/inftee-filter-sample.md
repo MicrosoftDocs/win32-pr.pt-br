@@ -4,20 +4,20 @@ ms.assetid: ba401528-9706-41fb-99d1-2bc3ffc05f1a
 title: Exemplo de filtro InfTee
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cd0fc5a1d550e0327da0d0d3dd47c8847ffafee
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 2bd0bbbb4df30f549a8ea0ba15d33696dcb7c108cbeffa6658bbb1842291517d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105758509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118398014"
 ---
 # <a name="inftee-filter-sample"></a>Exemplo de filtro InfTee
 
-## <a name="description"></a>Descrição
+## <a name="description"></a>Description
 
-O filtro InfTee fornece um exemplo de implementação do filtro de [t de pino infinito](infinite-pin-tee-filter.md) do DirectShow. O filtro tem um PIN de entrada e um número dinâmico de Pins de saída. Todos os exemplos de mídia enviados ao filtro são entregues simultaneamente de todos os Pins de saída.
+o filtro InfTee fornece um exemplo de implementação do filtro de [t de Pin infinito](infinite-pin-tee-filter.md) DirectShow. O filtro tem um PIN de entrada e um número dinâmico de Pins de saída. Todos os exemplos de mídia enviados ao filtro são entregues simultaneamente de todos os Pins de saída.
 
-Esse filtro aparece em GraphEdit, sob o nome "exemplo de PIN infinito ilimitado", para distingui-lo do filtro de padrões de PIN infinitos padrão que é fornecido no DirectShow.
+Esse filtro aparece em GraphEdit, sob o nome "exemplo de PIN infinito ilimitado", para distingui-lo do filtro de padrões de PIN infinitos padrão fornecido no DirectShow.
 
 ## <a name="usage"></a>Uso
 
@@ -27,15 +27,15 @@ Os dados que chegam no pino de entrada não são copiados antes de serem enviado
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-Para baixar os exemplos do SDK do DirectShow, instale a versão mais recente do [SDK do Windows](https://msdn.microsoft.com/windowsvista/bb980924.aspx).
+para baixar os exemplos do SDK do DirectShow, instale a versão mais recente do [SDK do Windows](https://msdn.microsoft.com/windowsvista/bb980924.aspx).
 
-Este exemplo é instalado no seguinte caminho: exemplo de *\[ raiz \] do SDK* \\ amostras de multimídia do \\ \\ DirectShow \\ \\ InfTee.
+este exemplo é instalado no seguinte caminho: exemplos de *\[ raiz \] do SDK* \\ \\ multimídia \\ DirectShow \\ filtros \\ InfTee.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Amostras do DirectShow](directshow-samples.md)
+[DirectShow Amostras](directshow-samples.md)
 </dt> </dl>
 
  

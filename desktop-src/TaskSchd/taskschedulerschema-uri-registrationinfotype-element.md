@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: be3f5782ba5fc02bc3309abfe337c029d0341667
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1b9a2d9b8faf327f7b64be2cdd4273f2252405767004dc6e0d58b0c95b5f1910
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118355599"
 ---
 # <a name="uri-registrationinfotype-element"></a>Elemento URI (registrationInfoType)
 
@@ -31,7 +31,7 @@ Especifica o URI da tarefa. Esse elemento é usado para especificar onde a taref
  />
 ```
 
-O elemento **URI** é definido pelo tipo complexo [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) .
+O **elemento URI** é definido pelo [**tipo complexo registrationInfoType.**](taskschedulerschema-registrationinfotype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -45,9 +45,9 @@ O elemento **URI** é definido pelo tipo complexo [**registrationInfoType**](tas
 
 ## <a name="remarks"></a>Comentários
 
-Para o desenvolvimento de scripts, o URI da tarefa é especificado usando a propriedade [**RegistrationInfo. URI**](registrationinfo-uri.md) .
+Para o desenvolvimento de scripts, o URI da tarefa é especificado usando a [**propriedade RegistrationInfo.URI.**](registrationinfo-uri.md)
 
-Para desenvolvimento em C++, o URI da tarefa é especificado usando a propriedade [**IRegistrationInfo:: URI**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationinfo-get_uri) .
+Para desenvolvimento em C++, o URI da tarefa é especificado usando a [**propriedade IRegistrationInfo::URI.**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationinfo-get_uri)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,8 +55,8 @@ Para desenvolvimento em C++, o URI da tarefa é especificado usando a propriedad
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -64,7 +64,7 @@ Para desenvolvimento em C++, o URI da tarefa é especificado usando a propriedad
 
 <dl> <dt>
 
-[Elementos do esquema de Agendador de Tarefas](task-scheduler-schema-elements.md)
+[Agendador de Tarefas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

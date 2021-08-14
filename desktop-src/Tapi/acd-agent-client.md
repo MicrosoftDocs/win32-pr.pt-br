@@ -4,12 +4,12 @@ ms.assetid: 2dfd51b6-cdda-43cc-a30f-92ac41abf8d8
 title: Cliente do agente do AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70b4a315477829cca953676d6d2118f91cf23227
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec41203cd2cf37d67379c42911960950ffc106f4cdcaee87475f0de263193474
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117949278"
 ---
 # <a name="acd-agent-client"></a>Cliente do agente do AD
 

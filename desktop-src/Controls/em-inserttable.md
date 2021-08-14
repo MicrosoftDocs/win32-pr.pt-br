@@ -3,7 +3,7 @@ title: Mensagem de EM_INSERTTABLE (RichEdit. h)
 description: Insere uma ou mais linhas de tabela idênticas com células vazias.
 ms.assetid: 7F9B2F28-1035-44AA-9DF6-57BC62886A4E
 keywords:
-- Controles de EM_INSERTTABLE de mensagens do Windows
+- controles de Windows de mensagem de EM_INSERTTABLE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fea5de278df98e412f219d246164221cfea75255
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5a015ae2b9a886ddfa24591944f3f70eca8cb192af771c821df9e4a403c837d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118413054"
 ---
 # <a name="em_inserttable-message"></a>\_Mensagem em InsertTable
 
@@ -50,7 +50,7 @@ Um ponteiro para uma estrutura [**TABLECELLPARMS**](/windows/desktop/api/Richedi
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará S \_ OK se a tabela for inserida ou um código de erro, se não for.
 
@@ -66,8 +66,8 @@ Uma tabela de edição rica da Microsoft consiste em uma sequência de linhas de
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 

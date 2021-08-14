@@ -4,12 +4,12 @@ description: Exemplo de CustomAccServer
 ms.assetid: 8c3636ef-0993-4ded-a3c0-05cf2de777bb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f7f8ee7d82361177af07aa7ad53a6137c39bc38
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 71ebf1ecde2821208d788b20b5cb0fc1a00403c1607fb4604eb92845daf49d41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108088004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118325985"
 ---
 # <a name="customaccserver-sample"></a>Exemplo de CustomAccServer
 
@@ -28,13 +28,13 @@ Este exemplo mostra como implementar um Microsoft Acessibilidade Ativa Server pa
 
 ## <a name="download-information"></a>Informações de download
 
-O exemplo CustomAccServer é instalado como parte do [SDK (Software Development Kit) do Microsoft Windows](https://msdn.microsoft.com/windowsvista/bb980924.aspx) e está disponível no local a seguir.
+o exemplo CustomAccServer é instalado como parte do [SDK (Software Development Kit) do Microsoft Windows](https://msdn.microsoft.com/windowsvista/bb980924.aspx) e está disponível no local a seguir.
 
 
 
-| Local    | Caminho/URL                                                                           |
+| Localização    | Caminho/URL                                                                           |
 |-------------|------------------------------------------------------------------------------------|
-| SDK do Windows | % Arquivos de programas% \\ Microsoft SDKs \\ Windows número de \\ \[ versão \] \\ amostras \\ WinUI \\ MSAA |
+| SDK do Windows | % arquivos de programas% \\ Microsoft SDKs \\ Windows número de \\ \[ versão \] \\ amostras \\ winui \\ msaa |
 
 
 
@@ -56,23 +56,23 @@ O exemplo CustomAccServer é instalado como parte do [SDK (Software Development 
 
 ## <a name="building-the-sample"></a>Compilando o exemplo
 
-Para criar o exemplo usando o Visual Studio 2008:
+para criar o exemplo usando o Visual Studio 2008:
 
-1.  Execute a ferramenta de configuração do SDK (Software Development Kit) do Microsoft Windows fornecida com o SDK para adicionar diretórios de inclusão do SDK ao Visual Studio.
-2.  Abra o Windows Explorer e navegue até o diretório do projeto.
+1.  execute a ferramenta de configuração do sdk (Software Development Kit) do Microsoft Windows fornecida com o sdk para adicionar diretórios de inclusão do sdk ao Visual Studio.
+2.  abra Windows Explorer e navegue até o diretório do projeto.
 3.  Clique duas vezes no ícone do arquivo. sln (solução) para abrir o projeto no Visual Studio.
 4.  No menu **Compilar** , selecione **Compilar solução** para compilar a solução. O aplicativo será criado no \\ diretório de depuração ou de \\ lançamento padrão.
 
-Para criar o exemplo na linha de comando, consulte Criando exemplos no SDK do Windows notas de versão no seguinte local:% Arquivos de programas% \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ReleaseNotes.htm
+para criar o exemplo na linha de comando, consulte criando exemplos no SDK do Windows notas de versão no seguinte local:% arquivos de programas% \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ReleaseNotes.htm
 
 ## <a name="running-the-sample"></a>Executando o exemplo
 
 Para executar o exemplo:
 
-1.  Navegue até o diretório que contém o novo executável, usando o prompt de comando ou o Windows Explorer.
-2.  Digite AccServer.exe na linha de comando ou clique duas vezes no ícone de AccServer.exe para iniciá-lo no Windows Explorer.
+1.  navegue até o diretório que contém o novo executável, usando o prompt de comando ou o gerenciador de Windows.
+2.  digite AccServer.exe na linha de comando ou clique duas vezes no ícone de AccServer.exe para iniciá-lo no Windows Explorer.
 
-Para executar a partir do Visual Studio, pressione F5 ou clique em **Iniciar Depuração** no menu **depurar** .
+para executar a partir de Visual Studio, pressione F5 ou clique em **iniciar depuração** no menu **depurar** .
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

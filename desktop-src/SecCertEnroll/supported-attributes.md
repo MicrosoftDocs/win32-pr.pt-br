@@ -4,12 +4,12 @@ ms.assetid: e14fd472-1974-4ad2-b35a-3ab58ba0d707
 title: Atributos com suporte
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3bfff5785a0b891e98e6d78d59b4688e2d5c11a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e8c7945113e764d835a685251adaec9149527b2d8f2d535a5dd24f26a5623bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117774409"
 ---
 # <a name="supported-attributes"></a>Atributos com suporte
 
@@ -29,7 +29,7 @@ A interface [**IX509AttributeExtensions**](/windows/desktop/api/CertEnroll/nn-ce
 
 
 
-| Extensão              | Description                                                                                                                                                                                                                      |
+| Extensão              | Descrição                                                                                                                                                                                                                      |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Alternativos       | Contém uma ou mais formas de nome alternativo do emissor associado ao certificado.                                                                                                                                       |
 | AuthorityKeyIdentifier | Contém um identificador de chave exclusivo para diferenciar entre várias chaves de assinatura de certificado da [*autoridade de certificação*](/windows/desktop/SecGloss/c-gly) (CA). |

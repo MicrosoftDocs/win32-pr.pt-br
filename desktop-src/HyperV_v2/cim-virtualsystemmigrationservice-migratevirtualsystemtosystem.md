@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1459d80785725914cbaa5dda5b81e8d2fabad5c4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7b60e691f2f873a26a52f59def32b35005d45914f7fe379af14b5260b02a0c43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118393414"
 ---
 # <a name="migratevirtualsystemtosystem-method-of-the-cim_virtualsystemmigrationservice-class"></a>Método MigrateVirtualSystemToSystem da \_ classe VIRTUALSYSTEMMIGRATIONSERVICE CIM
 
@@ -96,13 +96,13 @@ Se a operação for de longa execução, opcionalmente, [**um \_ ConcreteJob CIM
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 
 
 
-| Código/valor de retorno                                                                                                                                                                | Descrição                                                                                                                                                                                                                                                                                                |
+| Código/valor de retorno                                                                                                                                                                | Description                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**Concluído sem erro**</dt> <dt>0</dt> </dl>                    | O sistema virtual foi migrado.<br/>                                                                                                                                                                                                                                                                    |
 | <dl> <dt>**Sem suporte**</dt> <dt>1</dt> </dl>                              | Método sem suporte pela implementação.<br/>                                                                                                                                                                                                                                                         |

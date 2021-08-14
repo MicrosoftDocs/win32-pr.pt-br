@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: aa4204f2bd41d72a6d3ef67f633f8b64a58051b4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d808d7ac2ee3b6c1cbeddc39c730fc38b7032bde86ce726af03379d71241679c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105792553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118400782"
 ---
 # <a name="iamtimelineobjgetstartstop-method"></a>Método IAMTimelineObj:: GetStartStop
 
@@ -60,7 +60,7 @@ Recebe a hora de parada, em unidades de 100 a nanossegundos.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -68,7 +68,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 Composições, grupos e faixas sempre têm uma hora de início de 0.
 
-Durante a renderização, o DES arredonda os horários de início e de parada de um objeto para o limite de quadro mais próximo. No entanto, o DES não substitui os horários do objeto. Se você alterar a taxa de quadros do grupo, os horários arredondados serão sempre calculados a partir dos horários originais. Para obter mais informações, [tempo em serviços de edição do DirectShow](time-in-directshow-editing-services.md).
+Durante a renderização, o DES arredonda os horários de início e de parada de um objeto para o limite de quadro mais próximo. No entanto, o DES não substitui os horários do objeto. Se você alterar a taxa de quadros do grupo, os horários arredondados serão sempre calculados a partir dos horários originais. para obter mais informações, procure [DirectShow serviços de edição](time-in-directshow-editing-services.md).
 
 Para determinar os horários de início e de parada no projeto renderizado, passe os valores retornados por `GetStartStop` para o método [**IAMTimelineObj:: FixTimes**](iamtimelineobj-fixtimes.md) .
 
@@ -78,7 +78,7 @@ Para determinar os horários de início e de parada no projeto renderizado, pass
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 

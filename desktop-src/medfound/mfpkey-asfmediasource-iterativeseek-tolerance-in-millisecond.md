@@ -1,31 +1,31 @@
 ---
-description: Define a tolerância, em milissegundos, que é usada quando a origem de mídia do ASF executa a busca iterativa.
+description: Define a tolerância, em milissegundos, que é usada quando a fonte de mídia ASF executa a busca iterativa.
 ms.assetid: 3ee4410f-857c-4978-a308-87decfba0e2f
-title: Propriedade MFPKEY_ASFMediaSource_IterativeSeek_Tolerance_In_MilliSecond (Mfidl. h)
+title: MFPKEY_ASFMediaSource_IterativeSeek_Tolerance_In_MilliSecond propriedade (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4190d9f87d906a701908dfc17b61633204fe8a2
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: b8cfc1ef656e1cff3da4bb33f19a3c2176729035f94a194a4ede21354f5dbc54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105810760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117874127"
 ---
-# <a name="mfpkey_asfmediasource_iterativeseek_tolerance_in_millisecond-property"></a>MFPKEY \_ ASFMediaSource \_ IterativeSeek \_ tolerância \_ na \_ propriedade de milissegundos
+# <a name="mfpkey_asfmediasource_iterativeseek_tolerance_in_millisecond-property"></a>Tolerância A MFPKEY \_ ASFMediaSource \_ IterativeSeek \_ na propriedade \_ \_ MiliSecond
 
-Define a tolerância, em milissegundos, que é usada quando a origem de mídia do ASF executa a busca iterativa.
+Define a tolerância, em milissegundos, que é usada quando a fonte de mídia ASF executa a busca iterativa.
 
 
 
 Tipo de dados
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Membro PROPVARIANT
 
 **ULONG**
 
-\_UI4 VT
+VT \_ UI4
 
 **ulVal**
 
@@ -33,11 +33,11 @@ Membro PROPVARIANT
 
 ## <a name="remarks"></a>Comentários
 
-Use essa propriedade para configurar a origem da mídia ASF. Para definir a propriedade, passe um ponteiro **IPropertyStore** para o resolvedor de origem. Para obter mais informações, consulte [Configurando uma origem de mídia](configuring-a-media-source.md).
+Use essa propriedade para configurar a fonte de mídia do ASF. Para definir a propriedade , passe um ponteiro **IPropertyStore** para o resolvedor de origem. Para obter mais informações, consulte [Configurando uma fonte de mídia](configuring-a-media-source.md).
 
-Essa propriedade só se aplica quando a busca iterativa está habilitada. Para obter mais informações, consulte [MFPKEY \_ ASFMediaSource \_ IterativeSeekIfNoIndex](mfpkey-asfmediasource-iterativeseekifnoindex.md).
+Essa propriedade se aplica somente quando a busca iterativa está habilitada. Para obter mais informações, [consulte MFPKEY \_ ASFMediaSource \_ IterativeSeekIfNoIndex](mfpkey-asfmediasource-iterativeseekifnoindex.md).
 
-O algoritmo de busca interativa é interrompido se encontrar um pacote cuja distância do tempo de busca está dentro da tolerância especificada. O valor padrão é 8000 milissegundos.
+O algoritmo de busca iterativa será interrompido se encontrar um pacote cuja distância do tempo de busca está dentro da tolerância especificada. O valor padrão é 8000 milissegundos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ O algoritmo de busca interativa é interrompido se encontrar um pacote cuja dist
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/>                                  |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2008 R2 \|\]<br/>                     |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos UWP da área \| de trabalho\]<br/>                                  |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos \[ UWP de aplicativos da área de trabalho do Server 2008 R2 \|\]<br/>                     |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ O algoritmo de busca interativa é interrompido se encontrar um pacote cuja dist
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> </dl>
 
  

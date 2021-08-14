@@ -4,16 +4,16 @@ description: IAgentCommand setvoice
 ms.assetid: bee06616-26bf-4e1e-89da-6765dd77fb02
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36bed7e86cb93824fc26c770c1d01336077fda39
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: e45af753dea18e9fda7b613e3b800ac886d949eb6494fd969cd8b7ceb488dfc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105782662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118477229"
 ---
 # <a name="iagentcommandsetvoice"></a>IAgentCommand:: setvoice
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT SetVoice(
@@ -80,13 +80,13 @@ Definir a propriedade de [**voz**](voice-property.md) para um [**comando**](/win
 > [!Note]  
 > Os recursos de gramática disponíveis podem depender do mecanismo de reconhecimento de fala. Talvez você queira verificar com o fornecedor do mecanismo para determinar quais opções de gramática têm suporte. Use [**IAgentCharacterEx:: SRModeID**](https://www.bing.com/search?q=**IAgentCharacterEx::SRModeID**) para especificar um mecanismo.
 
- 
+ 
 
 ## <a name="see-also"></a>Consulte Também
 
 [**IAgentCommand:: getvoice**](iagentcommand--getvoice.md), [**IAgentCommand:: SetCaption**](iagentcommand--setcaption.md), [**IAgentCommand:: setativated**](iagentcommand--setenabled.md), [**IAgentCommands:: Add**](iagentcommands--add.md), [**IAgentCommands:: Insert**](iagentcommands--insert.md)
 
 
- 
+ 
 
- 
+ 

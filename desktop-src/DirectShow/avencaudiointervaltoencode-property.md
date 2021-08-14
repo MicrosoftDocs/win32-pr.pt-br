@@ -4,12 +4,12 @@ ms.assetid: 2ef2241b-5ec4-4694-a0c9-7db395321471
 title: Propriedade AVEncAudioIntervalToEncode (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7847f203c73846c8c8ef0415d91cd09677f53d21
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: aeaf8b65469ba5d0df93b92fb7ef8b0b10d7fd783dfa3b481ddab2d4cf6a0548
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825960"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403982"
 ---
 # <a name="avencaudiointervaltoencode-property"></a>Propriedade AVEncAudioIntervalToEncode
 
@@ -31,8 +31,8 @@ Esta propriedade é de leitura/gravação.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
+| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                           |
 | parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 

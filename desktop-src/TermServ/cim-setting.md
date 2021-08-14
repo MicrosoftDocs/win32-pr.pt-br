@@ -1,11 +1,11 @@
 ---
-title: Classe CIM_Setting (Serviços de Área de Trabalho Remota)
+title: CIM_Setting classe (Serviços de Área de Trabalho Remota)
 description: Representa parâmetros operacionais e relacionados à configuração para um ou mais elementos do sistema gerenciado.
 ms.assetid: d0007762-5d13-421b-a73a-3392a77686a6
 ms.tgt_platform: multiple
 keywords:
-- Classe de CIM_Setting Serviços de Área de Trabalho Remota
-- Serviços de Área de Trabalho Remota de CIM_Setting classe, descrita
+- CIM_Setting classe Serviços de Área de Trabalho Remota
+- CIM_Setting classe Serviços de Área de Trabalho Remota , descrito
 topic_type:
 - apiref
 api_name:
@@ -21,14 +21,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56d3a9517df9af92f428000ed064b2bb88b348a0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d53499c383c6fcf9ae2774427afcea2ea339408ff0292a3d4ce15286a4a75298
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105759033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118131315"
 ---
-# <a name="cim_setting-class-remote-desktop-services"></a>Classe CIM_Setting (Serviços de Área de Trabalho Remota)
+# <a name="cim_setting-class-remote-desktop-services"></a>CIM_Setting classe (Serviços de Área de Trabalho Remota)
 
 Representa parâmetros operacionais e relacionados à configuração para um ou mais elementos do sistema gerenciado.
 
@@ -50,13 +50,13 @@ class CIM_Setting : CIM_ManagedSystemElement
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ configuração CIM** tem estes tipos de membros:
+A **classe \_ Configuração** cim tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ configuração CIM** tem essas propriedades.
+A **classe \_ Configuração cim** tem essas propriedades.
 
 <dl> <dt>
 
@@ -69,12 +69,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrição (cadeia de caracteres de uma linha) do objeto.
+Descrição curta (cadeia de caracteres de uma linha) do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -89,25 +89,25 @@ Tipo de acesso: Somente leitura
 
 Descrição do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Componente DMTF \| 1,5 ")
+Qualificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 A data em que o objeto foi instalado. A falta de um valor não indica que o objeto não está instalado.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -122,7 +122,7 @@ Tipo de acesso: Somente leitura
 
 O nome do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -135,12 +135,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Status atual do objeto. Vários status de operação e não operacional podem ser definidos. Os status operacionais incluem: "OK", "degradado" e "Pred falha" (um elemento, como uma unidade de disco rígido habilitado para inteligente, pode estar funcionando corretamente, mas prevendo uma falha em um futuro próximo). Os status não operacionais incluem: "erro", "Iniciando", "parando" e "serviço". O último, "Service", pode ser aplicado durante o espelhamento de espelho de um disco, recarregar uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros Estados.
+Status atual do objeto. Vários status operacionais e não operacionais podem ser definidos. Os status operacionais incluem: "OK", "Degradado" e "Pred Fail" (um elemento, como uma unidade de disco rígido habilitada para SMART, pode estar funcionando corretamente, mas prevendo uma falha em um futuro próximo). Os status nãooperacionais incluem: "Error", "Starting", "Stopping" e "Service". O último, "Serviço", pode ser aplicado durante o espelhamento de um disco, o recarregamento de uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros estados.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
@@ -210,8 +210,8 @@ Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsyst
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | \\TerminalServices da cimv2 raiz \\<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Namespace<br/>                | Raiz \\ cimv2 \\ TerminalServices<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -220,7 +220,7 @@ Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsyst
 
 <dl> <dt>
 
-[**\_MANAGEDSYSTEMELEMENT CIM**](cim-managedsystemelement.md)
+[**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md)
 </dt> </dl>
 
  

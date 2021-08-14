@@ -6,12 +6,12 @@ keywords:
 - EAP_CRED_LOGON_REQ
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2af29daa9d68e4cd2dd78f101585c2fa14d25200
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 719abbed6c16deb6d3bfd61811f3f24253181364fe89f5823ee682bafef001e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009136"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118785619"
 ---
 # <a name="eap_cred_logon_req"></a>Req. de \_ logon de credenciais EAP \_ \_
 
@@ -45,8 +45,8 @@ A **estrutura \_ \_ \_ req logon de credenciais EAP** é idêntica à estrutura 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                               |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                               |
 | parâmetro<br/>                   | <dl> <dt>Eaptypes. h</dt> </dl> |
 
 

@@ -39,12 +39,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: a00d8e3421800acab7cc4958ddc1e6a75f101958
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a73312c38857b57f3ffeec8fcaf8a9ea5847001393d0a03d4916da76ffcb8c0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118314455"
 ---
 # <a name="swbemlasterror-object"></a>Objeto SWbemLastError
 
@@ -69,7 +69,7 @@ O objeto **SWbemLastError** tem esses métodos.
 |:---------------------------------------------------------|:---------------------------------------------------------------------------------------------|
 | **ASSOCIADORES\_**                                        | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
 | **AssociatorsAsync\_**                                   | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
-| [**8i\_**](swbemlasterror-clone-.md)                 | Faz uma cópia do objeto atual.<br/>                                               |
+| [**Clone\_**](swbemlasterror-clone-.md)                 | Faz uma cópia do objeto atual.<br/>                                               |
 | [**CompareTo\_**](swbemlasterror-compareto-.md)         | Testa dois objetos para igualdade.<br/>                                                   |
 | **Excluir\_**                                             | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
 | **DeleteAsync\_**                                        | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/> |
@@ -104,7 +104,7 @@ O objeto **SWbemLastError** tem essas propriedades.
 | [**Caminho\_**](swbemlasterror-path-.md)<br/>             | Somente leitura<br/> | Contém um objeto [**SWbemObjectPath**](swbemobjectpath.md) que representa o caminho do objeto da classe ou instância atual.<br/>                    |
 | [**Propriedades\_**](swbemlasterror-properties-.md)<br/> | Somente leitura<br/> | Representa a coleção de propriedades do objeto **SWbemLastError** . Essa propriedade é um objeto [**SWbemPropertySet**](swbempropertyset.md) .<br/> |
 | **Qualificadores\_**<br/>                                   | Somente leitura<br/> | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/>                                                                  |
-| **Segurança\_**<br/>                                     | Somente leitura<br/> | Não usado. O objeto [**SWbemObject**](swbemobject.md) fornece o mesmo método.<br/>                                                                  |
+| **Segurança\_**<br/>                                     | Somente leitura<br/> | Não usado. O [**objeto SWbemObject**](swbemobject.md) fornece o mesmo método.<br/>                                                                  |
 
 
 
@@ -112,7 +112,7 @@ O objeto **SWbemLastError** tem essas propriedades.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de VBScript a seguir demonstra como inspecionar informações de erro e objeto de erro.
+O exemplo de VBScript a seguir demonstra como inspecionar informações de objeto de erro e erro.
 
 
 ```VB
@@ -172,7 +172,7 @@ End If
 
 
 
-O exemplo do Perl a seguir demonstra como inspecionar informações de erro e objeto de erro.
+O exemplo Perl a seguir demonstra como inspecionar informações de objeto de erro e erro.
 
 
 ```
@@ -246,11 +246,11 @@ else
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMLASTERROR CLSID<br/>                                                        |
-| IID<br/>                      | ISWbemLastError de IID \_<br/>                                                         |
+| CLSID<br/>                    | CLSID \_ SWbemLastError<br/>                                                        |
+| IID<br/>                      | IID \_ ISWbemLastError<br/>                                                         |
 
 
 

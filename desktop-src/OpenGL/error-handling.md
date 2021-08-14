@@ -7,12 +7,12 @@ keywords:
 - Tratamento de erro de OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2005eb38f85e6e57f814a3ec61abf8b76fa4761
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 064330859b4e6b6d2d0bb9985e9f24d968a7daa5062215c64e82f89563ae06ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105768584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118361376"
 ---
 # <a name="error-handling-opengl"></a>Tratamento de erro (OpenGL)
 

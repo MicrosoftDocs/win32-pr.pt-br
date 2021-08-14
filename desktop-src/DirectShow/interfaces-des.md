@@ -1,24 +1,24 @@
 ---
-description: Interfaces para serviços de edição do DirectShow
+description: Interfaces para serviços de edição de DirectShow
 ms.assetid: e7fdb387-83b3-4fa2-9608-2f5dc95975bf
-title: Interfaces para serviços de edição do DirectShow
+title: Interfaces para serviços de edição de DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dba286a340693407287ed370ed401ac6b039593c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 00e913ec6bf17a11a4b772d288b9404113cd6bdc70bf441ed20dcbc69a086f9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103646052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118397587"
 ---
-# <a name="interfaces-for-directshow-editing-services"></a>Interfaces para serviços de edição do DirectShow
+# <a name="interfaces-for-directshow-editing-services"></a>Interfaces para serviços de edição de DirectShow
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-Esta seção contém tópicos de referência para as interfaces de [serviços de edição do DirectShow](directshow-editing-services.md) (des).
+esta seção contém tópicos de referência para as interfaces de [serviços de edição de DirectShow](directshow-editing-services.md) (DES).
 
 
 
@@ -42,8 +42,8 @@ Esta seção contém tópicos de referência para as interfaces de [serviços de
 | [**IDxtCompositor**](idxtcompositor.md)                   | Define propriedades na transição do [compositor](compositor-transition.md) .                                                     |
 | [**IDxtJpeg**](idxtjpeg.md)                               | Define propriedades na transição de [apagamento SMPTE](smpte-wipe-transition.md) .                                                     |
 | [**IDxtKey**](idxtkey.md)                                 | Define propriedades na transição de [chave](key-transition.md) .                                                                   |
-| [**IFindCompressorCB**](ifindcompressorcb.md)             | Não há suporte.                                                                                                                 |
-| [**IGrfCache**](igrfcache.md)                             | Não há suporte.                                                                                                                 |
+| [**IFindCompressorCB**](ifindcompressorcb.md)             | Sem suporte.                                                                                                                 |
+| [**IGrfCache**](igrfcache.md)                             | Sem suporte.                                                                                                                 |
 | [**IMediaDet**](imediadet.md)                             | Recupera informações sobre um arquivo de mídia, como o número de fluxos e o tipo, a duração e a taxa de quadros de cada fluxo. |
 | [**IMediaLocator**](imedialocator.md)                     | Fornece métodos para validar nomes de arquivo.                                                                                    |
 | [**IPropertySetter**](ipropertysetter.md)                 | Define propriedades em um efeito ou transição.                                                                                    |
@@ -63,7 +63,7 @@ Esta seção contém tópicos de referência para as interfaces de [serviços de
 
 <dl> <dt>
 
-[Referência de C++ dos serviços de edição do DirectShow](directshow-editing-services-c---reference.md)
+[DirectShow Referência de serviços de edição C++](directshow-editing-services-c---reference.md)
 </dt> </dl>
 
  

@@ -4,17 +4,17 @@ description: Este tópico discute o suporte do Microsoft DirectComposition para 
 ms.assetid: a0f41cc6-e848-4831-8063-609e17d9b4c6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 991e1205422864efdec82bbd4067b9c7662aaf29
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 6c8cc34975ab8304300a1523269808775107f4ce0554432da8c3c04a01f25881
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113118651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118504759"
 ---
 # <a name="transforms-directcomposition"></a>Transforms (DirectComposition)
 
 > [!NOTE]
-> Para aplicativos Windows 10, é recomendável usar APIs Windows.UI.Composition em vez de DirectComposition. Para obter mais informações, consulte [Modernizar seu aplicativo da área de trabalho usando a camada visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> Para aplicativos Windows 10, recomendamos o uso de APIs Windows.UI.Composition em vez de DirectComposition. Para obter mais informações, consulte [Modernizar seu aplicativo da área de trabalho usando a camada visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
 Este tópico discute o suporte do Microsoft DirectComposition para transformaçãos de afinidade (linear) bidimensionais e descreve os tipos de transformação aos quais o DirectComposition dá suporte.
 
@@ -34,7 +34,7 @@ Este tópico inclui as seções a seguir:
 
 Uma transformação 2D permite alterar a posição, o tamanho ou a natureza de um visual em duas dimensões movendo o visual para outro local (tradução), tornando-o maior ou menor (dimensionamento), transformando-o (rotação) ou distorcendo sua forma (distorção).
 
-Uma transformação 2D é feita mapeando os pontos de um visual de uma posição para outra dentro do mesmo espaço de coordenadas ou de um espaço de coordenadas para outro. Esse mapeamento é descrito por uma tabela de valores chamada matriz de transformação, definida como uma coleção de três linhas com três colunas de valores de ponto flutuante, conforme mostrado na tabela a seguir.
+Uma transformação 2D é alcançada mapeando os pontos de um visual de uma posição para outra dentro do mesmo espaço de coordenadas ou de um espaço de coordenadas para outro. Esse mapeamento é descrito por uma tabela de valores chamada matriz de transformação, definida como uma coleção de três linhas com três colunas de valores de ponto flutuante, conforme mostrado na tabela a seguir.
 
 :::row:::
     :::column:::
@@ -50,7 +50,7 @@ Uma transformação 2D é feita mapeando os pontos de um visual de uma posição
     :::column:::
         0,0<br/>
         0,0<br/>
-        1,0
+        1.0
     :::column-end:::
 :::row-end:::
 

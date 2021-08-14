@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 20cbe5c03d686ae8a4b1558899362251ba219e0c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a235cc28de75eb3c2150d4f6579305352fd92664f76f813b233b566f1740e0c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117814442"
 ---
 # <a name="tcpip_v0-class"></a>\_Classe tcpip V0
 
@@ -44,12 +44,12 @@ A classe **tcpip \_ V0** não define nenhum membro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -7,12 +7,12 @@ keywords:
 - Active Directory, usando, grupos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3f8714737083a0204f32685578afa7a7ffbf1d7
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: a7ca09ebc19d26fbc5200e062d888687cc8fbda1427d1752e0b4944eec4d442a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "104007161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118186607"
 ---
 # <a name="managing-groups"></a>Gerenciando grupos
 
@@ -31,14 +31,14 @@ Esta seção inclui tópicos sobre como usar grupos no Active Directory Domain S
 -   Excluindo grupos. Um grupo é excluído na mesma forma que qualquer outro objeto em Active Directory Domain Services. Para obter mais informações sobre como excluir objetos Active Directory, consulte [criando e excluindo objetos no Active Directory Domain Services](creating-and-deleting-objects-in-active-directory-domain-services.md).
 -   Movendo grupos. Um grupo é movido na mesma forma que qualquer outro objeto de Active Directory. Para obter mais informações, consulte [movendo objetos](moving-objects.md).
 -   [Obtendo o nome de Account-Style de domínio de um grupo](getting-the-domain-account-style-name-of-a-group.md)
--   [Grupos em servidores membros e no Windows 2000 Professional](groups-on-member-servers-and-windows-2000-professional.md)
+-   [grupos em servidores membros e Windows 2000 Professional](groups-on-member-servers-and-windows-2000-professional.md)
 -   [O que os desenvolvedores de aplicativos e serviços precisam saber sobre grupos](what-application-and-service-developers-need-to-know-about-groups.md)
 
 Para obter mais informações sobre grupos no Active Directory Domain Services, consulte [noções básicas sobre grupos](https://www.microsoft.com/technet/prodtechnol/windowsserver2003/Library/ServerHelp/54af961b-28fa-461e-a32d-cf32697148ff.mspx).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,12 +4,12 @@ description: Declare ponteiros de tabela de função (interfaces). | dcl_interfa
 ms.assetid: 5A4D911E-7117-409B-8FDC-9CEC2C185C15
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e61435e06d0d5b88bb82ca91f758646d7911d3bb
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 3e739a6cb5fa41456925b80719ec35474f65d59102b9dcca0b6341fbdc86e01e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104989171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118515707"
 ---
 # <a name="dcl_interface-sm5---asm"></a>\_interface DCL (SM5-ASM)
 
@@ -73,7 +73,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 

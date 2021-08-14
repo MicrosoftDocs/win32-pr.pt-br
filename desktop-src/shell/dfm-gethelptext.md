@@ -14,12 +14,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 2428fe6696ff5949a0b25487437c8f3408b95f65
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d1035ae82a8caf4c9ada5a859663d0d20286b433a9bf527831c29157d8dd6894
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117860931"
 ---
 # <a name="dfm_gethelptext-message"></a>\_Mensagem DFM GEThelptext
 
@@ -68,9 +68,9 @@ Essa mensagem é enviada para a função de retorno de chamada ou para o objeto 
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **DFM \_ GetHelpText** (ANSI)<br/>                                              |
 
 

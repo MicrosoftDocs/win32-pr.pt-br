@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_CAP_GET_MCI_DEVICE (VFW. h)
-description: A mensagem do dispositivo do WM \_ Cap \_ Get \_ MCI \_ recupera o nome de um dispositivo MCI definido anteriormente com \_ a \_ \_ mensagem do dispositivo MCI de conjunto de Cap do WM \_ . Você pode enviar essa mensagem explicitamente ou usando a macro capGetMCIDeviceName.
+title: WM_CAP_GET_MCI_DEVICE mensagem (Vfw.h)
+description: A mensagem WM CAP GET MCI DEVICE recupera o nome de um dispositivo MCI definido anteriormente \_ com a mensagem WM CAP SET \_ \_ \_ \_ \_ \_ MCI \_ DEVICE. Você pode enviar essa mensagem explicitamente ou usando a macro capGetMCIDeviceName.
 ms.assetid: c5d7d955-ab6a-4959-b79e-9ff35a282ba2
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_GET_MCI_DEVICE
+- WM_CAP_GET_MCI_DEVICE mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0960ff9aa1366802611f444383212c4bcc45bcb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b9471177693bfbd5646d93e8487395cdf330b8281a1f43fa00d79dc690e6d718
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117800646"
 ---
-# <a name="wm_cap_get_mci_device-message"></a>\_Mensagem do \_ \_ dispositivo MCI da obtenção do WM Cap \_
+# <a name="wm_cap_get_mci_device-message"></a>Mensagem WM \_ CAP \_ GET \_ MCI \_ DEVICE
 
-A mensagem do **dispositivo do WM \_ Cap \_ Get \_ MCI \_** recupera o nome de um dispositivo MCI definido anteriormente com a mensagem do [**\_ \_ \_ \_ dispositivo MCI de conjunto de Cap do WM**](wm-cap-set-mci-device.md) . Você pode enviar essa mensagem explicitamente ou usando a macro [**capGetMCIDeviceName**](/windows/desktop/api/Vfw/nf-vfw-capgetmcidevicename) .
+A **mensagem WM CAP GET \_ \_ \_ MCI \_ DEVICE** recupera o nome de um dispositivo MCI definido anteriormente com a mensagem [**WM CAP SET \_ \_ \_ MCI \_ DEVICE.**](wm-cap-set-mci-device.md) Você pode enviar essa mensagem explicitamente ou usando a [**macro capGetMCIDeviceName.**](/windows/desktop/api/Vfw/nf-vfw-capgetmcidevicename)
 
 
 ```C++
@@ -38,14 +38,14 @@ lParam = (LPARAM) (LPVOID) (LPSTR) (szName);
 
 <dl> <dt>
 
-<span id="wSize"></span><span id="wsize"></span><span id="WSIZE"></span>*wSize*
+<span id="wSize"></span><span id="wsize"></span><span id="WSIZE"></span>*Wsize*
 </dt> <dd>
 
-Comprimento, em bytes, do buffer referenciado por **szName**.
+Comprimento, em bytes, do buffer referenciado por **szName.**
 
 </dd> <dt>
 
-<span id="szName"></span><span id="szname"></span><span id="SZNAME"></span>*szName*
+<span id="szName"></span><span id="szname"></span><span id="SZNAME"></span>*Szname*
 </dt> <dd>
 
 Ponteiro para uma cadeia de caracteres terminada em nulo que contém o nome do dispositivo MCI.
@@ -54,7 +54,7 @@ Ponteiro para uma cadeia de caracteres terminada em nulo que contém o nome do d
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará **true** se for bem-sucedido ou **false** caso contrário.
+Retornará **TRUE se** for bem-sucedido **ou FALSE** caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,7 +64,7 @@ Retornará **true** se for bem-sucedido ou **false** caso contrário.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

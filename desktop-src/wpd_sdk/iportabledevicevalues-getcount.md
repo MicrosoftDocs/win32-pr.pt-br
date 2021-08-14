@@ -1,7 +1,7 @@
 ---
-description: 'Método IPortableDeviceValues:: GetCount – o método GetCount recupera o número de itens na coleção.'
+description: Método IPortableDeviceValues::GetCount – o método GetCount recupera o número de itens na coleção.
 ms.assetid: 89266483-4211-43d2-a306-68c70f1e7026
-title: 'Método IPortableDeviceValues:: GetCount (PortableDeviceTypes. h)'
+title: Método IPortableDeviceValues::GetCount (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: b7a2f1f71f81296f56be779a4c6eea746ebd0963
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f53bd254699360de760a9ff60d385020b9c48213d19ce40d53b5b3ebc5ce56e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118194107"
 ---
-# <a name="iportabledevicevaluesgetcount-method"></a>Método IPortableDeviceValues:: GetCount
+# <a name="iportabledevicevaluesgetcount-method"></a>Método IPortableDeviceValues::GetCount
 
-O método **GetCount** recupera o número de itens na coleção.
+O **método GetCount** recupera o número de itens na coleção.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,7 +40,7 @@ HRESULT GetCount(
 
 <dl> <dt>
 
-*pcelt* \[ no\]
+*pcelt* \[ Em\]
 </dt> <dd>
 
 Ponteiro para um **DWORD** que contém o número de itens na coleção.
@@ -49,7 +49,7 @@ Ponteiro para um **DWORD** que contém o número de itens na coleção.
 
 ## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -67,16 +67,16 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**Interface IPortableDeviceValues**](iportabledevicevalues.md)
+[**IPortableDeviceValues Interface**](iportabledevicevalues.md)
 </dt> </dl>
 
  

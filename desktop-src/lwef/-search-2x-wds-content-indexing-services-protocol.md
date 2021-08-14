@@ -1,29 +1,29 @@
 ---
 title: Protocolo de serviços de indexação de conteúdo
-description: Este documento é uma especificação do Protocolo de Serviço de Indexação de Conteúdo.
+description: Este documento é uma especificação do protocolo de serviço de indexação de conteúdo.
 ms.assetid: b91c8038-5ace-441d-8523-60f849ff1458
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 14573dac5a7a6818234c086d05b52e5b81c2a1c1
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 0df48db5dd1b19983b12daeb6747dce92eedcd78674553f11af2e335f08e7de5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118481113"
 ---
 # <a name="content-indexing-services-protocol"></a>Protocolo de serviços de indexação de conteúdo
 
 > [!NOTE]
-> O Windows Desktop Search 2.x é uma tecnologia obsoleta que estava originalmente disponível como um complemento para Windows XP e Windows Server 2003. Em versões posteriores, use [Windows Search](../search/-search-3x-wds-overview.md) em vez disso.
+> Windows o Desktop Search 2. x é uma tecnologia obsoleta que estava originalmente disponível como um suplemento para o Windows XP e o Windows Server 2003. em versões posteriores, use [Windows pesquisa](../search/-search-3x-wds-overview.md) em vez disso.
 
-Especificação de protocolo, versão 0.12
+Especificação de protocolo, versão 0,12
 
 -   [1 Introdução](#1-introduction)
     -   [1.1 Glossário](#11-glossary)
     -   [1.2 Referências](#12-references)
-    -   [1.3 Visão geral do protocolo (Synopsis)](#13-protocol-overview-synopsis)
+    -   [1,3 visão geral do protocolo (Sinopse)](#13-protocol-overview-synopsis)
     -   [1.4 Relacionamento com outros protocolos](#14-relationship-to-other-protocols)
-    -   [1.5 Pré-requisitos e pré-condições](#15-prerequisites-and-preconditions)
+    -   [1,5 pré-requisitos e pré-condições](#15-prerequisites-and-preconditions)
     -   [1.6 Applicability Statement](#16-applicability-statement)
     -   [1.7 Controle de versão e negociação de capacidade](#17-versioning-and-capability-negotiation)
     -   [1.8 Campos extensíveis para fornecedor](#18-vendor-extensible-fields)
@@ -32,29 +32,29 @@ Especificação de protocolo, versão 0.12
     -   [2.1 Transporte](#21-transport)
     -   [2.2 Sintaxe da mensagem](#22-message-syntax)
 -   [3 Detalhes do protocolo](#3-protocol-details)
-    -   [3.1 Detalhes do servidor](#31-server-details)
-    -   [3.2 Detalhes do cliente](#32-client-details)
+    -   [3,1 detalhes do servidor](#31-server-details)
+    -   [3,2 detalhes do cliente](#32-client-details)
 -   [4 Exemplos de protocolo](#4-protocol-examples)
-    -   [4.1 Exemplo 1](#41-example-1)
-    -   [4.2 Exemplo 2](#42-example-2)
+    -   [4,1 exemplo 1](#41-example-1)
+    -   [4,2 exemplo 2](#42-example-2)
 -   [5 Segurança](#5-security)
     -   [5.1 Considerações de segurança para implementadores](#51-security-considerations-for-implementers)
     -   [5.2 Índice de parâmetros de segurança](#52-index-of-security-parameters)
--   [6 Índice de comportamento específico da versão](#6-index-of-version-specific-behavior)
+-   [6 índice de comportamento de versão específica](#6-index-of-version-specific-behavior)
 
-Este documento é uma especificação do Protocolo de Serviço de Indexação de Conteúdo.
+Este documento é uma especificação do protocolo de serviço de indexação de conteúdo.
 
-A documentação do WSPP (Workgroup Server Protocol Program) destina-se a ser usada em conjunto com a documentação de padrões públicos, a arte de programação de rede e os conceitos de sistemas distribuídos do grupo de trabalho do Windows e pressupo que o leitor está familiarizado com o material mencionado acima ou tem acesso imediato a ele.
+a documentação do WSPP (programa de protocolo de servidor de grupo de trabalho) destina-se ao uso em conjunto com documentação de padrões públicos, arte de programação de rede e Windows conceitos de sistemas distribuídos de grupo de trabalho e pressupõe que o leitor esteja familiarizado com o material mencionado anteriormente ou tenha acesso imediato a ele.
 
-Uma especificação de protocolo WSPP não exige o uso de ferramentas de programação da Microsoft ou ambientes de programação para que um licença desenvolva uma implementação. Os licenças que têm acesso a ambientes e ferramentas de programação da Microsoft são gratuitos para tirar proveito deles.
+Uma especificação de protocolo WSPP não requer o uso de ferramentas de programação da Microsoft ou de ambientes de programação para que um licenciado desenvolva uma implementação. Os licenciados que têm acesso a ambientes e ferramentas de programação da Microsoft são gratuitos para se beneficiar deles.
 
 ## <a name="1-introduction"></a>1 Introdução
 
 -   [1.1 Glossário](#11-glossary)
 -   [1.2 Referências](#12-references)
--   [1.3 Visão geral do protocolo (Synopsis)](#13-protocol-overview-synopsis)
+-   [1,3 visão geral do protocolo (Sinopse)](#13-protocol-overview-synopsis)
 -   [1.4 Relacionamento com outros protocolos](#14-relationship-to-other-protocols)
--   [1.5 Pré-requisitos e pré-condições](#15-prerequisites-and-preconditions)
+-   [1,5 pré-requisitos e pré-condições](#15-prerequisites-and-preconditions)
 -   [1.6 Applicability Statement](#16-applicability-statement)
 -   [1.7 Controle de versão e negociação de capacidade](#17-versioning-and-capability-negotiation)
 -   [1.8 Campos extensíveis para fornecedor](#18-vendor-extensible-fields)
@@ -63,76 +63,76 @@ Uma especificação de protocolo WSPP não exige o uso de ferramentas de program
 ### <a name="11-glossary"></a>1.1 Glossário
 
 > [!Note]  
-> Os seguintes termos são definidos na seção Glossário \[ do MS-SYS: \]
+> Os termos a seguir são definidos na seção Glossário do \[ MS-sys \] :
 >
 > -   GUID
-> -   Little Endian
+> -   Little endian
 > -   Pipe nomeado
 > -   Caminho
 
  
 
-**Associação:** uma solicitação para incluir uma coluna **específica** em um conjuntos **de linhas retornado.** A **associação** especifica uma propriedade a ser incluída nos resultados da pesquisa.
+**Binding**: uma solicitação para incluir uma **coluna** específica em um **conjunto de linhas** retornado. A **Associação** especifica uma propriedade a ser incluída nos resultados da pesquisa.
 
-**Indicador:** um marcador que identifica exclusivamente uma linha dentro de um conjunto de linhas.
+**Indicador**: um marcador que identifica exclusivamente uma linha dentro de um conjunto de linhas.
 
-**Catálogo:** a unidade de nível mais alto da organização no serviço de indexação. Ele representa um conjunto de documentos indexados nos quais as consultas podem ser executadas usando o Protocolo de Serviço de Indexação de Conteúdo.
+**Catálogo**: a unidade de nível mais alto da organização no serviço de indexação. Ele representa um conjunto de documentos indexados em relação a quais consultas podem ser executadas usando o protocolo de serviço de indexação de conteúdo.
 
-**Categoria:** um grupo hierárquico de linhas. Por exemplo, um resultado de consulta que contém colunas de autor e título pode ser categorizado com base no autor. Cada grupo de linhas que contém o mesmo valor para autor constituiria uma categoria.
+**Categoria**: um agrupamento hierárquico de linhas. Por exemplo, um resultado de consulta contendo colunas de autor e título pode ser categorizado com base no autor. Cada grupo de linhas que contém o mesmo valor para o autor constituiria uma categoria.
 
-**Capítulo** : um intervalo **de linhas dentro** de um conjunto de **linhas** .
+**Capítulo** : um intervalo de **linhas** dentro de um conjunto de **linhas** .
 
-**Coluna**: o contêiner para um único tipo de informação em uma **linha** . As colunas são mapeadas para nomes de propriedade e  especificam quais propriedades são usadas para os elementos da árvore de comandos da consulta **de** pesquisa.
+**Column**: o contêiner para um único tipo de informação em uma **linha** . As colunas são mapeadas para nomes de propriedade e especifica quais propriedades são usadas para os elementos de **árvore** de **comando** da consulta de pesquisa.
 
-**Árvore de** Comandos: uma combinação de **restrições,** **categorias** e **ordens de classificação** especificadas para a consulta de pesquisa.
+**Árvore de comandos**: uma combinação **de restrições** , **categorias** e **ordens de classificação** especificadas para a consulta de pesquisa.
 
-**Cursor**: uma entidade usada como um  mecanismo para trabalhar  com uma linha ou um pequeno bloco de linhas por vez em um conjunto de dados retornados em um conjunto de resultados. Um **cursor** é posicionado em uma única **linha dentro** do conjunto de resultados. Depois que **o cursor** é posicionado em uma linha, as operações podem ser **executadas** nessa linha **ou** em um bloco de linhas começando nessa posição.
+**Cursor**: uma entidade que é usada como um mecanismo para trabalhar com uma **linha** ou um pequeno bloco de **linhas** por vez em um conjunto de dados retornado em um conjunto de resultados. Um **cursor** é posicionado em uma única **linha** dentro do conjunto de resultados. Depois que o **cursor** é posicionado em uma linha, as operações podem ser executadas nessa **linha** ou em um bloco de **linhas** que começam nessa posição.
 
-**Identificador:** um token que pode ser usado para identificar e acessar **cursores** , **capítulos** e **indicadores** .
+**Identificador**: um token que pode ser usado para identificar e acessar **cursores** , **capítulos** e **indicadores** .
 
-**Índice:** uma estrutura persistente que contém o conteúdo de texto retirado dos arquivos por um **serviço de indexação** . Isso inclui a lista de palavras, que são armazenadas junto com o nome do arquivo que contém, o local da palavra e **a localidade** .
+**Índice**: uma estrutura persistente que contém o conteúdo de texto extraído de arquivos por um **serviço de indexação** . Isso inclui a lista de palavras, que são armazenadas junto com o nome do arquivo contido, o local do Word e a **localidade** .
 
-**Indexação:** o processo de extrair texto e propriedades de arquivos e armazenar os valores extraídos nos índices **(para** texto) e o **cache** de propriedades (para propriedades).
+**Indexação**: o processo de extração de texto e propriedades de arquivos e armazenamento dos valores extraídos nos **índices** (para texto) e o **cache de propriedades** (para propriedades).
 
-**Serviço de Indexação:** um serviço que cria **catálogos indexados** para o conteúdo e as propriedades dos sistemas de arquivos. Os aplicativos podem pesquisar nos catálogos informações dos arquivos no sistema de arquivos indexado.
+**Serviço de indexação**: um serviço que cria **catálogos** indexados para o conteúdo e as propriedades dos sistemas de arquivos. Os aplicativos podem pesquisar os catálogos em busca de informações dos arquivos no sistema de arquivos indexado.
 
-**Localidade :** um identificador, conforme especificado no \[ Apêndice A do MS-GPSI, que especifica as \] preferências relacionadas ao idioma. Essas preferências indicam como datas e horas devem ser formatadas, os itens devem ser ordenados em ordem alfabética, cadeias de caracteres devem ser comparadas e assim por diante.
+**Localidade**: um identificador, conforme especificado no \[ Apêndice a MS-GPSI \] , que especifica as preferências relacionadas ao idioma. Essas preferências indicam como as datas e horas devem ser formatadas, os itens devem ser classificados alfabeticamente, as cadeias de caracteres devem ser comparadas e assim por diante.
 
-**Consulta de linguagem natural:** uma consulta construída usando linguagem humana em vez da sintaxe de consulta.
+**Consulta de linguagem natural**: uma consulta construída usando o idioma humano em vez da sintaxe de consulta.
 
-**Palavra de** ruído: uma palavra ignorada pelo serviço  de indexação quando presente nas restrições especificadas para a consulta de pesquisa porque ela tem pouco valor discriminatório. Os exemplos em inglês incluem "a", "and" e "the".
+**Palavra de ruído**: uma palavra que é ignorada pelo serviço de indexação quando presente nas **restrições** especificadas para a consulta de pesquisa porque ela tem pouco valor de discriminador. Os exemplos em inglês incluem "a", "e" e "o".
 
-**Cache de** propriedades: um cache de propriedades de arquivo extraídas por um **serviço de indexação** .
+**Cache de propriedades**: um cache de propriedades de arquivo extraído por um **serviço de indexação** .
 
-**Indexação de** propriedade: o  processo  de criação de um índice de propriedades de tipo de valor de um documento, incluindo autor, assunto, tipo, contagem de palavras, contagem de páginas impressas e qualquer outra propriedade.
+**Indexação de propriedade**: o processo de criação de um **índice** de propriedades de **tipo de valor** de um documento, incluindo autor, assunto, tipo, contagem de palavras, contagem de páginas impressa e outras propriedades.
 
-**Restrição:** um conjunto de condições que um arquivo deve atender para ser incluído nos resultados da pesquisa retornados pelo serviço de **indexação** em resposta a uma consulta de pesquisa. Uma **restrição** restringe o foco de uma consulta de pesquisa, limitando os arquivos que o serviço de **indexação** incluirá nos resultados da pesquisa somente àqueles que corresponderem às condições.
+**Restrição**: um conjunto de condições que um arquivo deve atender para ser incluído nos resultados da pesquisa retornados pelo **serviço de indexação** em resposta a uma consulta de pesquisa. Uma **restrição** reduz o foco de uma consulta de pesquisa, limitando os arquivos que o **serviço de indexação** incluirá nos resultados da pesquisa apenas àqueles que correspondem às condições.
 
-**Linha**: a coleção de **colunas** , que contém os valores de propriedade  que descrevem um único arquivo do conjunto de arquivos que corresponderam às restrições especificadas na consulta de pesquisa enviada ao serviço **de indexação** .
+**Row**: a coleção de **colunas** , que contém os valores de propriedade que descrevem um único arquivo do conjunto de arquivos que correspondeu às **restrições** especificadas na consulta de pesquisa enviada ao **serviço de indexação** .
 
-**Conjunto de** linhas: um conjunto **de linhas retornado** nos resultados da pesquisa.
+**Conjunto de linhas**: um conjunto de **linhas** retornadas nos resultados da pesquisa.
 
-**Ordem de** Classificação: o conjunto de regras em uma consulta de pesquisa que define a ordenação de linhas no resultado da pesquisa. Cada regra consiste em uma propriedade (nome, tamanho etc.) e uma direção para a ordenação (crescente ou decrescente). Várias regras são aplicadas sequencialmente
+**Ordem de classificação**: o conjunto de regras em uma consulta de pesquisa que define a ordenação de linhas no resultado da pesquisa. Cada regra consiste em uma propriedade (nome, tamanho, etc.) e uma direção para a ordenação (crescente ou decrescente). Várias regras são aplicadas sequencialmente
 
-**Propriedade de tipo de** texto: uma propriedade que descreve o conteúdo de um documento e tem apenas texto não formatado associado ao seu nome.
+**Propriedade de tipo de texto**: uma propriedade que descreve o conteúdo de um documento e só tem texto não formatado associado ao seu nome.
 
-**Propriedade de tipo de** valor: uma propriedade que descreve um único atributo de um documento inteiro. Uma propriedade de tipo de valor tem uma ID de tipo de dados e um valor desse tipo de dados associado a seu nome.
+**Propriedade de tipo de valor**: uma propriedade que descreve um único atributo de um documento inteiro. Uma propriedade de tipo de valor tem uma ID de tipo de dados e um valor desse tipo de dados associado ao seu nome.
 
-**Raiz Virtual:** um caminho alternativo para uma pasta. Uma pasta física pode ter zero ou mais raízes virtuais. Os caminhos que começam com uma raiz virtual são chamados de caminhos virtuais. Por exemplo, /server/vanityroot pode ser uma raiz virtual de C: \\ pasta web do \\ IIS1. \\ Em seguida, o arquivo C: pasta web do IIS1default.htm teria um caminho \\ \\ virtual de \\ \\ /server/vanityroot/default.htm.
+**Raiz virtual**: um caminho alternativo para uma pasta. Uma pasta física pode ter zero ou mais raízes virtuais. Caminhos que começam com uma raiz virtual são chamados de caminhos virtuais. Por exemplo,/Server/vanityroot pode ser uma raiz virtual de C: \\ IIS \\ Web \\ Pasta1. Em seguida, o arquivo C: \\ IIS \\ web \\ Pasta1 \\default.htm teria um caminho virtual de/Server/vanityroot/default.htm.
 
-**MAY, SHOULD, MUST, SHOULD NOT, MUST NOT:** esses termos (em todos os limites) são usados conforme descrito em \[ RFC2119 \] . Todas as instruções de comportamento opcional utilizam PODE, DEVERIA OU NÃO DEVERIA.
+**Maio, deveria**, deve, não, não deve: estes termos (em todos os limites) são usados conforme descrito em \[ RFC2119 \] . Todas as instruções de comportamento opcional utilizam PODE, DEVERIA OU NÃO DEVERIA.
 
 ### <a name="12-references"></a>1.2 Referências
 
 ### <a name="121-normative-references"></a>1.2.1 Referências normativas
 
-\[IEEE754 \] Institute of Electrical and Electronics Engineers, "Standard for Binary Floating-Point Arithmetic", IEEE 754-1985, outubro de 1985, https://standards.ieee.org/standard/754-1985.html
+\[IEEE754 \] Institute of Electrical and Electronics Engineers, "padrão para Binary Floating-Point aritmético", IEEE 754-1985, outubro de 1985, https://standards.ieee.org/standard/754-1985.html
 
-\[MS-DCOM \] Microsoft Corporation, "Distributed Component Object Model Remote Protocols", junho de 2006.
+\[MS-DCOM \] Microsoft Corporation, "distribuído Component Object Model protocolos remotos", junho de 2006.
 
-\[MS-GPSI \] Microsoft Corporation, "extensão Política de Grupo de Instalação de Software", junho de 2006.
+\[MS-GPSI \] Microsoft Corporation, "extensão de política de grupo de instalação de software", junho de 2006.
 
-\[MS-SMB \] Microsoft Corporation, "Protocolo SMB (Bloco de Mensagens do Microsoft Server) e Extensões", maio de 2006.
+\[MS-SMB \] Microsoft Corporation, "protocolo e extensões do Microsoft Server Message Block (SMB)", maio de 2006.
 
 \[MS-SYS \] Microsoft Corporation, "visão geral do sistema v4", julho de 2006.
 
@@ -191,13 +191,13 @@ O envio de uma consulta de pesquisa é um processo de várias etapas iniciado pe
 5.  Depois que o cliente for concluído com a consulta de pesquisa e não exigir mais resultados adicionais, o cliente entrará em contato com o servidor para liberar a consulta.
 6.  Depois que o servidor tiver lançado a consulta, o cliente poderá enviar uma solicitação para desconectar-se do servidor. A conexão é fechada. Como alternativa, o cliente pode emitir outra consulta e repetir a sequência da etapa 2.
 
-Comportamento do Windows: esse protocolo é implementado no Windows 2000, no Windows XP, no Windows Server 2003 e no Windows Vista.
+Windows comportamento: esse protocolo é implementado em Windows 2000, Windows XP, Windows Server 2003 e Windows Vista.
 
 ### <a name="14-relationship-to-other-protocols"></a>1.4 Relacionamento com outros protocolos
 
 O CISP se baseia no protocolo SMB \[ MS-SMB \] para transporte de mensagens. Nenhum outro protocolo depende diretamente do protocolo de serviço de indexação de conteúdo.
 
-*Comportamento do Windows: normalmente, os aplicativos interagem com um wrapper de interface OLE DB \[ msdn-OLEDB \] (por exemplo, um cliente de protocolo) e não diretamente com o protocolo.*
+*Windows Comportamento: normalmente, os aplicativos interagem com um wrapper de interface OLE DB \[ msdn-OLEDB \] (por exemplo, um cliente de protocolo) e não diretamente com o protocolo.*
 
 ### <a name="15-prerequisites-and-preconditions"></a>1,5 pré-requisitos e pré-condições
 
@@ -207,7 +207,7 @@ Também pressupõe-se que o cliente e o servidor tenham uma associação de segu
 
 ### <a name="16-applicability-statement"></a>1.6 Applicability Statement
 
-O CISP é projetado para consultar e gerenciar catálogos em um servidor remoto a partir de um cliente. O CISP foi preterido no Windows Vista.
+O CISP é projetado para consultar e gerenciar catálogos em um servidor remoto a partir de um cliente. o CISP é preterido no Windows Vista.
 
 ### <a name="17-versioning-and-capability-negotiation"></a>1.7 Controle de versão e negociação de capacidade
 
@@ -219,7 +219,7 @@ Esse protocolo usa HRESULTs que são extensíveis pelo fornecedor. Os fornecedor
 
 Esse protocolo também usa valores de NTSTATUS obtidos do espaço de número NTSTATUS definido em \[ MS-sys \] . Os fornecedores devem reutilizar esses valores com o significado indicado. Escolher qualquer outro valor executará o risco de uma colisão no futuro.
 
-*Comportamento do Windows: o Windows usa apenas os valores especificados na seção 4.1.3 do \[ MS-sys \] .*
+*Windows comportamento: Windows usa apenas os valores especificados na seção 4.1.3 do \[ MS-SYS \] .*
 
 ### <a name="181-property-ids"></a>IDs da propriedade 1.8.1
 
@@ -266,53 +266,53 @@ Várias estruturas e mensagens nas seções a seguir referem-se aos identificado
 |-------------------------------|------------------------------------------------------------------------------|
 | DB \_ NULL \_ HCHAPTER 0x00000000 | Um capítulo manipula o conjunto de linhas sem capítulos, que contém todos os resultados da consulta.    |
 | DBBMK \_ primeiro 0x00000001       | Um identificador de indicador para um indicador que identifica a primeira linha no conjunto de linhas. |
-| DBBMK \_ último 0x00000002        | Um identificador de indicador para um indicador que identifica a última linha no conjunto de linhas.  |
+| DBBMK \_ ÚLTIMA 0x00000002        | Um identificador de indicador para um indicador que identifica a última linha no conjuntos de linhas.  |
 
 
 
  
 
-### <a name="221-structures"></a>estruturas 2.2.1
+### <a name="221-structures"></a>2.2.1 Estruturas
 
-Esta seção detalha as estruturas de dados que são definidas e usadas pelo CISP.
+Esta seção detalha as estruturas de dados definidas e usadas pelo CISP.
 
-Todos os inteiros de 2, 4 e 8 bytes assinados e não assinados nas seguintes estruturas devem ser transferidos em ordem de byte little-endian.
+Todos os inteiros com sinal de 2, 4 e 8 byte e sem sinal nas estruturas a seguir DEVEM ser transferidos em ordem de byte little-endian.
 
 A tabela a seguir resume as estruturas de dados definidas nesta seção.
 
 
 
-| Estrutura                    | Descrição                                                                                                            |
+| Estrutura                    | Description                                                                                                            |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| CBaseStorageVariant          | Contém o valor no qual executar uma operação de correspondência para uma propriedade especificada em uma estrutura CPropertyRestriction. |
+| CBaseStorageVariant          | Contém o valor no qual executar uma operação de match para uma propriedade especificada em uma estrutura CPropertyRestriction. |
 | SAFEARRAY, SAFEARRAY2        | Contém uma matriz multidimensional.                                                                                     |
-| SAFEARRAYBOUND               | Representa os limites de uma dimensão de uma matriz especificada em uma estrutura SAFEARRAY.                                  |
+| Safearraybound               | Representa os limites de uma dimensão de uma matriz especificada em uma estrutura SAFEARRAY.                                  |
 | CFullPropSpec                | Contém uma especificação de propriedade.                                                                                     |
 | CContentRestriction          | Contém uma cadeia de caracteres para corresponder a um valor de propriedade no cache de propriedades.                                                 |
-| CKey                         | Contém um valor de propriedade.                                                                                             |
-| CInternalPropertyRestriction | Contém um valor de propriedade para corresponder a uma operação.                                                                  |
-| CNatLanguageRestriction      | Contém uma correspondência de consulta de idioma natural para uma propriedade.                                                                |
-| CNodeRestriction             | Contém uma matriz de nós de árvore de comando especificando as restrições para uma consulta.                                       |
+| CKey                         | Contém um valor da propriedade.                                                                                             |
+| CInternalPropertyRestriction | Contém um valor da propriedade para corresponder a uma operação.                                                                  |
+| CNatLanguageRestriction      | Contém uma combinação de consulta de idioma natural para uma propriedade.                                                                |
+| CNodeRestriction             | Contém uma matriz de nós de árvore de comando que especifica as restrições para uma consulta.                                       |
 | COccRestriction              | Contém o local de uma palavra em uma frase.                                                                           |
-| CPropertyRestriction         | Contém um valor de propriedade para corresponder a uma operação.                                                                  |
+| CPropertyRestriction         | Contém um valor da propriedade para corresponder a uma operação.                                                                  |
 | CRangeRestriction            | Contém uma restrição em um intervalo de valores.                                                                           |
-| CScopeRestriction            | Contém uma restrição sobre os arquivos a serem pesquisados.                                                                    |
-| CSort                        | Identifica uma coluna a ser classificada.                                                                                           |
+| CScopeRestriction            | Contém uma restrição nos arquivos a serem pesquisados.                                                                    |
+| CSort                        | Identifica uma coluna a ser classificação.                                                                                           |
 | CSynRestriction              | Contém uma palavra ou seus sinônimos para uma frase de consulta.                                                                    |
-| CVectorRestriction           | Contém uma operação ponderada ou em um nó de árvore de comandos.                                                               |
+| CVectorRestriction           | Contém uma operação OR ponderada em um nó de árvore de comandos.                                                               |
 | CWordRestriction             | Contém uma palavra para uma frase de consulta.                                                                                    |
-| CRestriction                 | Contém um nó de uma árvore de comando de consulta.                                                                               |
-| CColumnSet                   | Indica o número de colunas a serem retornadas.                                                                             |
-| CCategorizationSet           | Contém informações sobre o agrupamento de um conjunto de resultados de consulta.                                                     |
+| CRestriction                 | Contém um nó de uma árvore de comandos de consulta.                                                                               |
+| CColumnSet                   | Indica o número de colunas a retornar.                                                                             |
+| CCategorizationSet           | Contém informações sobre o agrupamento de um conjunto de resultados da consulta.                                                     |
 | CCategorizationSpec          | Contém uma definição de categorias nas quais os resultados da consulta serão categorizados.                                      |
 | CDbColId                     | Contém uma coluna.                                                                                                     |
-| CDbProp                      | Contém uma propriedade.                                                                                                   |
-| CDbPropSet                   | Contém um conjunto de propriedades.                                                                                          |
-| CPidMapper                   | Contém uma matriz de IDs de propriedade especificando as propriedades a serem retornadas em um conjunto de linhas.                                     |
+| CDbProp                      | Contém uma propriedade .                                                                                                   |
+| Cdbpropset                   | Contém um conjunto de propriedades.                                                                                          |
+| CPidMapper                   | Contém uma matriz de IDs de propriedade especificando as propriedades a retornar em um conjunto de linhas.                                     |
 | CRowSeekAt                   | Contém o deslocamento no qual recuperar linhas em uma mensagem CPMGetRowsIn                                                |
-| CRowSeekAtRatio              | Identifica o ponto no qual iniciar a recuperação para uma mensagem CPMGetRowsIn.                                           |
+| CRowSeekAtRatio              | Identifica o ponto no qual iniciar a recuperação de uma mensagem CPMGetRowsIn.                                           |
 | CRowSeekByBookmark           | Identifica os indicadores dos quais recuperar linhas para uma mensagem CPMGetRowsIn.                                       |
-| CRowSeekNext                 | Contém o número de linhas a serem ignoradas em uma mensagem CPMGetRowsIn.                                                         |
+| CRowSeekNext                 | Contém o número de linhas a ignorar em uma mensagem CPMGetRowsIn.                                                         |
 | CRowsetProperties            | Contém as informações de configuração de uma consulta.                                                                    |
 | CSortSet                     | Contém a ordem de classificação para uma consulta.                                                                                   |
 | CTableColumn                 | Contém uma coluna para a mensagem CPMSetBindings.                                                                      |
@@ -324,7 +324,7 @@ A tabela a seguir resume as estruturas de dados definidas nesta seção.
 
 ### <a name="2211-cbasestoragevariant"></a>2.2.1.1 CBaseStorageVariant
 
-A estrutura CBaseStorageVariant contém o valor no qual executar uma operação de correspondência para uma propriedade especificada na estrutura CPropertyRestriction.
+A estrutura CBaseStorageVariant contém o valor no qual executar uma operação de match para uma propriedade especificada na estrutura CPropertyRestriction.
 
 
 
@@ -404,61 +404,61 @@ vValue (variável)
 
  
 
-**vType:** um indicador de tipo que indica o tipo de vValue. Ele DEVE ser um dos valores VARENUM especificados na tabela a seguir.
+**vType**: um indicador de tipo, que indica o tipo de vValue. DEVE ser um dos valores de VARENUM especificados na tabela a seguir.
 
 
 
 | Valor                 | Significado                                                                                                                              |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| VT \_ EMPTY (0x0000)    | vValue não está presente.                                                                                                               |
+| VT \_ vazio (0x0000)    | vValue não está presente.                                                                                                               |
 | VT \_ NULL (0x0001)     | vValue não está presente.                                                                                                               |
-| VT \_ I1 (0x0010)       | Um inteiro de um byte com sinal.                                                                                                             |
+| VT \_ i1 (0x0010)       | Um inteiro de um byte com sinal.                                                                                                             |
 | VT \_ UI1 (0x0011)      | Um inteiro de um byte sem sinal.                                                                                                           |
-| VT \_ I2 (0x0002)       | Um inteiro de dois bytes com sinal.                                                                                                             |
+| VT \_ i2 (0x0002)       | Um inteiro de dois bytes com sinal.                                                                                                             |
 | VT \_ UI2 (0x0012)      | Um inteiro de dois bytes sem sinal.                                                                                                           |
-| VT \_ BOOL (0x000B)     | Um valor booliana; um inteiro de 2 byte que contém 0x0000 (FALSE) ou 0xFFFF (TRUE).                                                        |
-| VT \_ I4 (0x0003)       | Um inteiro de quatro bytes com sinal.                                                                                                             |
+| VT \_ bool (0x000B)     | Um valor booliano; um inteiro de 2 bytes contendo 0x0000 (FALSE) ou 0xFFFF (TRUE).                                                        |
+| VT \_ i4 (0x0003)       | Um inteiro de quatro bytes com sinal.                                                                                                             |
 | VT \_ UI4 (0x0013)      | Um inteiro de quatro bytes sem sinal.                                                                                                           |
-| VT \_ R4 (0x0004)       | Um número de ponto flutuante IEEE de 32 bits, conforme definido em \[ IEEE754. \]                                                                     |
-| VT \_ INT (0x0016)      | Um inteiro de quatro bytes com sinal.                                                                                                             |
-| VT \_ UINT (0x0017)     | Um inteiro de quatro bytes sem sinal.                                                                                                           |
-| ERRO de VT \_ (0x000A)    | Um inteiro sem sinal de 4 byte que contém um HRESULT, conforme especificado em \[ MS-SYS \] .                                                         |
-| VT \_ I8 (0x0014)       | Um inteiro com sinal de 8 byte.                                                                                                            |
+| VT \_ R4 (0x0004)       | Um número de ponto flutuante de IEEE 32 bits, conforme definido em \[ IEEE754 \] .                                                                     |
+| VT \_ int (0x0016)      | Um inteiro de quatro bytes com sinal.                                                                                                             |
+| VT \_ uint (0x0017)     | Um inteiro de quatro bytes sem sinal.                                                                                                           |
+| \_Erro de VT (0x000a)    | Um inteiro sem sinal de 4 bytes contendo um HRESULT, conforme especificado em \[ MS-sys \] .                                                         |
+| VT \_ i8 (0x0014)       | Um inteiro com sinal de 8 bytes.                                                                                                            |
 | VT \_ UI8 (0x0015)      | Um inteiro de oito bytes sem sinal.                                                                                                          |
-| VT \_ R8 (0x0005)       | Um número de ponto flutuante IEEE de 64 bits conforme definido em \[ IEEE754. \]                                                                      |
-| VT \_ CY (0x0006)       | Um inteiro de complemento de dois de 8 byte (dimensionado em 10.000).                                                                               |
-| DATA DA VT \_ (0x0007)     | Um número de ponto flutuante de 64 bits que representa o número de dias desde 00:00:00 em 31 de dezembro de 1899 (Tempo Universal Coordenado).     |
-| VT \_ FILETIME (0x0040) | Um inteiro de 64 bits que representa o número de intervalos de 100 nanossegundos desde 00:00:00 em 1º de janeiro de 1601 (Tempo Universal Coordenado). |
-| DECIMAL da VT \_ (0x000E)  | Uma estrutura DECIMAL, conforme especificado na seção 2.2.1.1.1.1.                                                                             |
-| CLSID da VT \_ (0x0048)    | Um valor binário de 16 byte que contém um GUID.                                                                                            |
-| BLOB de VT \_ (0x0041)     | Uma contagem de inteiros sem sinal de 4 bytes no blob, seguida por muitos bytes de dados.                                           |
-| VT \_ BSTR (0x0008)     | Uma contagem de inteiros sem sinal de 4 bytes na cadeia de caracteres, seguida por uma cadeia de caracteres, conforme especificado abaixo em vValue.                       |
+| \_R8 de VT (0x0005)       | Um número de ponto flutuante de IEEE 64 bits, conforme definido em \[ IEEE754 \] .                                                                      |
+| VT \_ CY (0x0006)       | Um inteiro de complemento de 8 bytes (dimensionado por 10.000).                                                                               |
+| \_Data VT (0x0007)     | Um número de ponto flutuante de 64 bits que representa o número de dias desde 00:00:00 em 31 de dezembro de 1899 (tempo Universal Coordenado).     |
+| VT \_ FILETIME (0x0040) | Um inteiro de 64 bits que representa o número de intervalos de 100 nanossegundos desde 00:00:00 em 1º de janeiro de 1601 (tempo Universal Coordenado). |
+| VT \_ decimal (0x000e)  | Uma estrutura DECIMAL, conforme especificado na seção 2.2.1.1.1.1.                                                                             |
+| \_CLSID do VT (0x0048)    | Um valor binário de 16 bytes que contém um GUID.                                                                                            |
+| \_Blob VT (0x0041)     | Uma contagem de inteiros sem sinal de 4 bytes de bytes no BLOB, seguida por muitos bytes de dados.                                           |
+| VT \_ BSTR (0x0008)     | Uma contagem de inteiros sem sinal de 4 bytes de bytes na cadeia de caracteres, seguida por uma cadeia de caracteres, conforme especificado abaixo em vValue.                       |
 | VT \_ LPSTR (0x001E)    | Uma cadeia de caracteres ANSI terminada em nulo.                                                                                                       |
-| VT \_ LPWSTR (0x001F)   | Uma cadeia de caracteres UNICODE Unicode terminada \[ em \] nulo.                                                                                        |
-| VT \_ VARIANT (0x000C)  | CBaseStorageVariant. DEVE ser combinado com um modificador de tipo de VT \_ ARRAY ou VT \_ VECTOR.                                               |
+| \_0x001F (VT LPWSTR)   | Uma String Unicode Unicode terminada em nulo \[ \] .                                                                                        |
+| \_Variável VT (0x000C)  | CBaseStorageVariant. DEVE ser combinado com um modificador de tipo da \_ matriz VT ou do \_ vetor VT.                                               |
 
 
 
  
 
-A tabela a seguir especifica os modificadores de tipo para vType. Os modificadores de tipo podem ser binários ORed com vType, para alterar o significado de vValue para indicar que ele é um dos dois tipos de matriz possíveis.
+A tabela a seguir especifica os modificadores de tipo para vType. Os modificadores de tipo podem ser Binary or com vType, para alterar o significado de vValue para indicar que ele é um dos dois tipos de matriz possíveis.
 
 
 
 | Valor               | Significado                                                                                                                                                                                                                                                                                                                                                            |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| VT \_ VECTOR (0x1000) | Se o indicador de tipo for combinado com vT VECTOR usando um operador OR, vValue será uma matriz contada de valores \_ do tipo indicado. Consulte a seção 2.2.1.1.1.2 para obter detalhes. <br/> Esse modificador de tipo NÃO DEVE ser combinado com os seguintes tipos: VT \_ INT, VT \_ UINT, VT \_ DECIMAL, \_ VT BLOB, OBJETO \_ BLOB \_ VT.<br/>                                    |
-| MATRIZ VT \_ (0x2000)  | Se o indicador de tipo for combinado com VT ARRAY por um operador OR, o valor será um SAFEARRAY (conforme especificado na seção \_ 2.2.1.1.1.3) que contém valores do tipo indicado. <br/> Esse modificador de tipo NÃO DEVE ser combinado com os seguintes tipos: VT \_ I8, VT \_ UI8, VT \_ FILETIME, \_ CLSID VT, \_ BLOB VT, OBJETO \_ DE BLOB \_ VT, VT \_ LPSTR, VT \_ LPWSTR. <br/> |
+| \_Vetor VT (0x1000) | Se o indicador de tipo for combinado com o \_ vetor VT usando um operador OR, vValue será uma matriz contada de valores do tipo indicado. Consulte a seção 2.2.1.1.1.2 para obter detalhes. <br/> Este modificador de tipo não deve ser combinado com os seguintes tipos: VT \_ int, VT \_ uint, VT \_ decimal, VT \_ BLOB, VT \_ blob \_ Object.<br/>                                    |
+| \_Matriz VT (0x2000)  | Se o indicador de tipo for combinado com a \_ matriz VT por um operador OR, o valor será um SafeArray (conforme especificado na seção 2.2.1.1.1.3) que contém os valores do tipo indicado. <br/> Este modificador de tipo não deve ser combinado com os seguintes tipos: VT \_ i8, VT \_ UI8, VT \_ FILETIME, VT \_ CLSID, VT \_ BLOB, VT \_ blob \_ Object, VT \_ LPStr, VT \_ LPWSTR. <br/> |
 
 
 
  
 
-**vData1:** quando vType é VT DECIMAL, o valor desse campo é especificado como o campo Escala na \_ seção 2.2.1.1.1.1. Para todos os outros vTypes, o valor DEVE ser definido como 0x00.
+**vData1**: quando VTYPE é VT \_ decimal, o valor desse campo é especificado como o campo de escala na seção 2.2.1.1.1.1. Para todos os outros vTypes, o valor deve ser definido como 0x00.
 
-**vData2:** quando vType é VT DECIMAL, o valor desse campo é especificado como o campo Entrar na \_ seção 2.2.1.1.1.1. Para todos os outros vTypes, o valor DEVE ser definido como 0x00.
+**vData2**: quando VTYPE é VT \_ decimal, o valor desse campo é especificado como o campo de sinal na seção 2.2.1.1.1.1. Para todos os outros vTypes, o valor deve ser definido como 0x00.
 
-**vValue:** o valor da operação de match. A sintaxe DEVE ser conforme indicado no campo vType.
+**vValue**: o valor para a operação de correspondência. A sintaxe deve ser conforme indicado no campo vType.
 
 A tabela a seguir resume os tamanhos do campo vValue, dependendo do campo vType para tipos de dados de comprimento fixo. O tamanho é em bytes.
 
@@ -467,16 +467,16 @@ A tabela a seguir resume os tamanhos do campo vValue, dependendo do campo vType 
 | vType                                                   | Tamanho |
 |---------------------------------------------------------|------|
 | VT \_ I1, VT, \_ UI1                                        | 1    |
-| VT \_ I2, VT \_ UI2, VT \_ BOOL                               | 2    |
-| VT \_ I4, VT \_ UI4, VT \_ R4, VT \_ INT, VT \_ UINT, ERRO de VT \_   | 4    |
-| VT \_ I8, VT \_ UI8, VT \_ R8, VT \_ CY, VT \_ DATE, VT \_ FILETIME | 8    |
-| VT \_ DECIMAL, \_ CLSID da VT                                  | 16   |
+| VT \_ I2, VT \_ UI2, VT \_ bool                               | 2    |
+| VT \_ i4, VT \_ UI4, VT \_ R4, VT \_ int, VT \_ uint, erro de VT \_   | 4    |
+| VT \_ i8, VT \_ UI8, VT \_ R8, VT \_ Cy, \_ Data VT, VT \_ FILETIME | 8    |
+| VT \_ decimal, VT \_ CLSID                                  | 16   |
 
 
 
  
 
-Se vType for definido como \_ VT BLOB, VT BSTR ou VT LPSTR, a estrutura de vValue será \_ especificada no diagrama a \_ seguir:
+Se vType for definido como VT \_ BLOB, VT \_ BSTR ou VT \_ LPStr, a estrutura de vValue será especificada no diagrama a seguir:
 
 
 
@@ -552,17 +552,17 @@ blobData (variável, opcional)
 
  
 
-**cbSize:** inteiro de 32 bits sem sinal, indicando o tamanho do campo blobData em bytes. Se vType for definido como VT BSTR ou \_ VT LPSTR, cbSize DEVERÁ ser definido como 0x00000000 quando a cadeia de caracteres representada for uma cadeia de caracteres \_ vazia.
+**cbSize**: inteiro de 32 bits sem sinal, indicando o tamanho do campo blobData em bytes. Se vType for definido como VT \_ BSTR ou VT \_ LPStr, cbSize deverá ser definido como 0x00000000 quando a cadeia de caracteres representada for uma cadeia de caracteres vazia.
 
-**blobData:** DEVE ser de comprimento cbSize em bytes.
+**blobData**: deve ter comprimento cbSize em bytes.
 
-Para vType definido como BLOB de \_ VT, esse campo são dados de blob binário opacos.
+Para vType definido como \_ blob VT, esse campo é dados de blob binário opaco.
 
-Para vType definido como VT BSTR, esse campo é um conjunto de caracteres em um \_ conjunto de caracteres selecionado por OEM. O cliente e o servidor DEVEM ser configurados para ter conjuntos de caracteres interoperáveis (fora da banda do protocolo). Não há nenhum requisito de que ela seja terminada em nulo.
+Para vType definido como VT \_ BSTR, esse campo é um conjunto de caracteres em um conjunto de caracteres selecionado pelo OEM. O cliente e o servidor devem ser configurados para ter conjuntos de caracteres interoperáveis (fora da banda do protocolo). Não há nenhum requisito de que seja encerrado em nulo.
 
-Para vType definido como VT LPSTR, esse campo é uma cadeia de caracteres terminada em nulo em um conjunto de caracteres selecionado \_ OEM. O cliente e o servidor DEVEM ser configurados para ter conjuntos de caracteres interoperáveis (fora da banda do protocolo).
+Para vType definido como VT \_ LPStr, este campo é uma cadeia de caracteres terminada em nulo em um conjunto de caracteres selecionado pelo OEM. O cliente e o servidor devem ser configurados para ter conjuntos de caracteres interoperáveis (fora da banda do protocolo).
 
-Se vType for definido como VT \_ LPWSTR, a estrutura de vValue será especificada no diagrama a seguir:
+Se vType for definido como VT \_ LPWStr, a estrutura de vValue será especificada no diagrama a seguir:
 
 
 
@@ -632,17 +632,17 @@ Se vType for definido como VT \_ LPWSTR, a estrutura de vValue será especificad
 
 ccLen
 
-cadeia de caracteres (variável, opcional)
+Cadeia de caracteres (variável, opcional)
 
 
 
  
 
-**ccLen:** inteiro de 32 bits sem sinal, indicando o tamanho do campo de cadeia de caracteres em caracteres Unicode. DEVE ser definido como 0x00000000 para uma cadeia de caracteres vazia.
+**ccLen**: inteiro de 32 bits sem sinal, indicando o tamanho do campo de cadeia de caracteres em caracteres Unicode. DEVE ser definido como 0x00000000 para uma cadeia de caracteres vazia.
 
-**cadeia** de caracteres : cadeia de caracteres Unicode terminada em nulo.
+**cadeia** de caracteres: cadeia de caracteres Unicode terminada em nulo.
 
-### <a name="22111-cbasestoragevariant-structures"></a>2.2.1.1.1 Estruturas CBaseStorageVariant
+### <a name="22111-cbasestoragevariant-structures"></a>Estruturas 2.2.1.1.1 CBaseStorageVariant
 
 As estruturas a seguir são usadas na estrutura CBaseStorageVariant.
 
@@ -650,11 +650,11 @@ As estruturas a seguir são usadas na estrutura CBaseStorageVariant.
 
 DECIMAL é usado para representar um valor numérico exato com uma precisão fixa e uma escala fixa.
 
-Quando vType é definido como VT DECIMAL (0x0000E), os campos \_ vData1 e vData2 de CBaseStorageVariant DEVEM ser interpretados da seguinte maneira:
+Quando vType é definido como VT \_ decimal (0x0000E), os campos vData1 e vData2 de CBASESTORAGEVARIANT devem ser interpretados da seguinte maneira:
 
-**vData1:** o número de dígitos à direita do ponto decimal. DEVE estar no intervalo de 0 a 28.
+**vData1**: o número de dígitos à direita do ponto decimal. DEVE estar no intervalo de 0 a 28.
 
-**vData2:** o sinal do valor numérico. Definido como 0x00 se for positivo, 0x80 se for negativo.
+**vData2**: o sinal do valor numérico. Defina como 0x00 se positivo, 0x80 se negativo.
 
 O formato do campo vValue é:
 
@@ -912,19 +912,19 @@ vData (variável)
 
  
 
-**cDims**: inteiro de 16 bits não assinado, indicando o número de dimensões da matriz multidimensional.
+**cDims:** inteiro de 16 bits sem sinal, indicando o número de dimensões da matriz multidimensional.
 
-**fFeatures**: um tele-bit de 16 bits. Os valores representam recursos, definidos por aplicativos de camada superior e devem ser ignorados.
+**fFeatures:** um campo de bits de 16 bits. Os valores representam recursos, definidos por aplicativos de camada superior e DEVEM ser ignorados.
 
-**cbElements**: um inteiro de 32 bits sem sinal especificando o tamanho de cada elemento da matriz.
+**cbElements:** um inteiro sem sinal de 32 bits que especifica o tamanho de cada elemento da matriz.
 
-**Rgsabound**: uma matriz que contém uma estrutura SAFEARRAYBOUND, conforme especificado na seção 2.2.1.1.1.4, por dimensão em SafeArray. Essa matriz tem a dimensão mais à esquerda primeiro e a dimensão mais à direita por último.
+**Rgsabound:** uma matriz que contém uma estrutura SAFEARRAYBOUND, conforme especificado na seção 2.2.1.1.1.4, por dimensão no SAFEARRAY. Essa matriz tem a dimensão mais à esquerda primeiro e a dimensão mais à direita por último.
 
-**vData**: um vetor de itens empacotados de um tipo específico, indicado pelo VType do CBaseStorageVariant que o contém, com o bit 0x2000 limpo.
+**vData:** um vetor de itens com marshaling de um tipo específico, indicado pelo vType do CBaseStorageVariant, com o bit 0x2000 limpo.
 
-o vData é empacotado de forma semelhante ao \_ vetor VT, conforme especificado na seção 2.2.1.1.1.2, com a diferença de que o número de itens não é armazenado na frente do vetor. Em vez disso, o número de itens é calculado multiplicando-se o valor cElements por todos os limites de matrizes seguros fornecidos no campo rgsabound. Os elementos são armazenados em um vetor em ordem de dimensões, iterando começando com a dimensão mais à direita.
+O vData é marshalado da mesma forma que vT VECTOR, conforme especificado na Seção 2.2.1.1.1.2, com a diferença de que o número de itens não é armazenado na \_ frente do vetor. Em vez disso, o número de itens é calculado multiplicando o valor cElements por todos os limites de matriz seguros determinados no campo Rgsabound. Os elementos são armazenados em um vetor em ordem de dimensões, iterando começando com a dimensão mais à direita.
 
-O diagrama a seguir representa visualmente uma matriz bidimensional de exemplo. A primeira dimensão tem cElements igual a 4 (representada horizontalmente) e lLbound igual a 0, e a segunda dimensão tem cElements igual a 2 (representada verticalmente) e lLbound igual a 0.
+O diagrama a seguir representa visualmente uma matriz bidimensional de exemplo. A primeira dimensão tem cElements iguais a 4 (representados horizontalmente) e lLbound igual a 0, e a segunda dimensão tem cElements iguais a 2 (representados verticalmente) e lLbound igual a 0.
 
 :::row:::
     :::column:::
@@ -941,7 +941,7 @@ O diagrama a seguir representa visualmente uma matriz bidimensional de exemplo. 
     :::column-end:::
 :::row-end:::
 
-:: Row:::
+::row:::
     :::column:::
         0x00000007
     :::column-end:::
@@ -956,11 +956,11 @@ O diagrama a seguir representa visualmente uma matriz bidimensional de exemplo. 
     :::column-end:::
 :::row-end:::
 
-Usando o diagrama acima, vData conterá a seguinte sequência: 0x00000001, 0x00000007, 0x00000002, 0x00000011, 0x00000003, 0x00000013, 0x00000005, 0x00000017 (Iterando primeiro pela dimensão mais à direita e, em seguida, incrementando a próxima dimensão). O rgsabound anterior (que registra cElements e LBound) seria: 0x00000004, 0x00000000, 0x00000002, 0x00000000.
+Usando o diagrama acima, o vData conterá a seguinte sequência: 0x00000001, 0x00000007, 0x00000002, 0x00000011, 0x00000003, 0x00000013, 0x00000005, 0x00000017 (iterando pela dimensão mais à direita primeiro e incrementando a próxima dimensão). O Rgsabound anterior (que registra cElements e Lbound) seria: 0x00000004, 0x00000000, 0x00000002, 0x00000000.
 
 ### <a name="221114-safearraybound"></a>2.2.1.1.1.4 SAFEARRAYBOUND
 
-A estrutura SAFEARRAYBOUND representa os limites de uma dimensão de um SAFEARRAY ou SAFEARRAY2. Seu formato é:
+A estrutura SAFEARRAYBOUND representa os limites de uma dimensão de SAFEARRAY ou SAFEARRAY2. Seu formato é:
 
 
 
@@ -1036,9 +1036,9 @@ lLbound
 
  
 
-**cElements**: um inteiro sem sinal de 32 bits, especificando o número de elementos na dimensão.
+**cElements:** um inteiro sem sinal de 32 bits, especificando o número de elementos na dimensão.
 
-**lLbound**: um inteiro sem sinal de 32 bits, especificando o limite inferior da dimensão.
+**lLbound:** um inteiro sem sinal de 32 bits, especificando o limite inferior da dimensão.
 
 ### <a name="221115-safearray2"></a>2.2.1.1.1.5 SAFEARRAY2
 
@@ -1315,7 +1315,7 @@ Cc
 
 ...
 
-Padding2 (variável)
+Preenchimento2 (variável)
 
 lcid
 
@@ -1325,27 +1325,27 @@ lcid
 
  
 
-**\_ Propriedade**: uma estrutura CFullPropSpec, conforme especificado na seção 2.2.1.2. Este campo indica a propriedade na qual executar uma operação de correspondência.
+**\_ Propriedade**: uma estrutura CFullPropSpec, conforme especificado na Seção 2.2.1.2. Esse campo indica a propriedade na qual executar uma operação de match.
 
-**Padding1**: esse campo deve ter de 0 a 3 bytes de comprimento. O comprimento deste campo deve ser de modo que o seguinte campo comece em um deslocamento que seja um múltiplo de 4 bytes do início da mensagem que contém essa estrutura. Se esse campo estiver presente (ou seja, comprimento diferente de zero), o valor que ele contém será arbitrário. O conteúdo deste campo deve ser ignorado pelo destinatário.
+**Padding1:** esse campo DEVE ter de 0 a 3 bytes de comprimento. O comprimento desse campo DEVE ser tal que o campo a seguir comece em um deslocamento que é um múltiplo de 4 bytes do início da mensagem que contém essa estrutura. Se esse campo estiver presente (ou seja, comprimento não zero), o valor que ele contém será arbitrário. O conteúdo desse campo DEVE ser ignorado pelo receptor.
 
-**CC**: um inteiro de 32 bits sem sinal, especificando o número de caracteres no \_ campo pwcsPhrase.
+**Cc:** um inteiro sem sinal de 32 bits, especificando o número de caracteres no \_ campo pwcsPhrase.
 
-**\_ pwcsPhrase**: uma cadeia de caracteres Unicode não terminada em nulo que representa a palavra ou frase para corresponder à propriedade. Este campo não deve estar vazio. O campo Cc contém o comprimento da cadeia de caracteres.
+**\_ pwcsPhrase:** uma cadeia de caracteres Unicode não terminada em nulo que representa a palavra ou frase a ser corresponder à propriedade . Esse campo NÃO DEVE estar vazio. O campo Cc contém o comprimento da cadeia de caracteres.
 
-**Padding2**: esse campo deve ter de 0 a 3 bytes de comprimento. O comprimento deste campo deve ser de modo que o seguinte campo comece em um deslocamento que seja um múltiplo de 4 bytes do início da mensagem que contém essa estrutura. Se esse campo estiver presente (ou seja, comprimento diferente de zero), o valor que ele contém será arbitrário. O conteúdo deste campo deve ser ignorado pelo destinatário.
+**Preenchimento2:** esse campo DEVE ter de 0 a 3 bytes de comprimento. O comprimento desse campo DEVE ser tal que o campo a seguir comece em um deslocamento que é um múltiplo de 4 bytes do início da mensagem que contém essa estrutura. Se esse campo estiver presente (ou seja, comprimento não zero), o valor que ele contém será arbitrário. O conteúdo desse campo DEVE ser ignorado pelo receptor.
 
-**LCID**: um inteiro sem sinal de 32 bits, indicando a localidade de \_ pwcsPhrase, conforme especificado em \[ MS-GPSI \] Apêndice A.
+**Lcid:** um inteiro sem sinal de 32 bits, indicando a localidade \_ de pwcsPhrase, conforme especificado no Apêndice \[ A do MS-GPSI. \]
 
-**\_ ulGenerateMethod**: um inteiro sem sinal de 32 bits, especificando o método a ser usado ao gerar formulários alternativos de palavra
+**\_ ulGenerateMethod:** um inteiro sem sinal de 32 bits, especificando o método a ser usado ao gerar formulários de palavras alternativos
 
 
 
 | Valor                                                       | Significado                                                                                                                                                                                                                                                                                           |
 |-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| GERAR \_ método \_ exato<br/> 0x00000000<br/>    | Correspondência exata.                                                                                                                                                                                                                                                                                      |
-| GERAR \_ prefixo de método \_<br/> 0x00000001 <br/>  | Correspondência de prefixo.                                                                                                                                                                                                                                                                                     |
-| GERAR \_ método \_ INFLECT <br/> 0x00000002<br/> | Faz a correspondência de inflexões de uma palavra. Uma inflexão de uma palavra é uma variante da palavra raiz na mesma parte da fala que foi modificada de acordo com as regras linguísticas de um determinado idioma. Por exemplo, as inflexidades do verbo "nada" em inglês incluem "nada", "nada", "nada" e "Swam". |
+| GERAR \_ MÉTODO \_ EXATO<br/> 0x00000000<br/>    | Correspondência exata.                                                                                                                                                                                                                                                                                      |
+| GERAR \_ \_ PREFIXO DE MÉTODO<br/> 0x00000001 <br/>  | Prefixo match.                                                                                                                                                                                                                                                                                     |
+| GERAR \_ \_ INFLECT DE MÉTODO <br/> 0x00000002<br/> | Corresponde a inflections de uma palavra. Uma inflexão de uma palavra é uma variante da palavra raiz na mesma parte da fala que foi modificada de acordo com as regras linguísticas de um determinado idioma. Por exemplo, as inflecções do verbo "nadar" em inglês incluem "nada", "nada", "nadando" e "nadando". |
 
 
 
@@ -1353,7 +1353,7 @@ lcid
 
 ### <a name="2214-ckey"></a>2.2.1.4 CKey
 
-A estrutura CKey contém um valor de propriedade.
+A estrutura CKey contém um valor da propriedade.
 
 
 
@@ -1540,14 +1540,14 @@ nextRestriction (variável)
 | Valor                 | Significado                                                                                                           |
 |-----------------------|-------------------------------------------------------------------------------------------------------------------|
 | PrLT 0x00000000       | Uma comparação menor que.                                                                                           |
-| PRLE 0x00000001       | Uma comparação menor ou igual a.                                                                               |
+| PrLE 0x00000001       | Uma comparação menor ou igual a.                                                                               |
 | PRGT 0x00000002       | Uma comparação maior que.                                                                                        |
 | PrGE 0x00000003       | Uma comparação maior ou igual a.                                                                            |
 | PREQ 0x00000004       | Uma comparação de igualdade.                                                                                           |
-| PRNE 0x00000005       | Uma comparação não igual.                                                                                           |
+| PrNE 0x00000005       | Uma comparação não igual.                                                                                           |
 | PRRE 0x00000006       | Uma comparação de expressão regular.                                                                                  |
 | PRAllBits 0x00000007  | Um AND bit a bit que retorna o operand direito.                                                                     |
-| PRSomeBits 0x00000008 | Um AND bit a bit que retorna um valor diferente de zero.                                                                       |
+| PrSomeBits 0x00000008 | Um AND bit a bit que retorna um valor diferente de zero.                                                                       |
 | PRAll 0x00000100      | A operação deve ser executada em uma coluna de um conjuntos de linhas e só será verdadeira se a operação for verdadeira para todas as linhas. |
 | PrAny 0x00000200      | A operação deve ser executada em uma coluna de um conjuntos de linhas e será verdadeira se a operação for verdadeira para qualquer linha.       |
 
@@ -1559,7 +1559,7 @@ nextRestriction (variável)
 
 **\_ prval:** um CBaseStorageVariant que contém o valor a ser relacionado à propriedade .
 
-**restrictionPresent:** um valor de byte que indica se o campo nextRestriction está presente. DEVE ser definido como 0x00 ou 0x01. Se definido como 0x01, restrictionPresent indica que o campo nextRestriction está presente. Se definido como 0x00, restrictionPresent indica que o campo nextRestriction não está presente.
+**restrictionPresent:** um valor de byte que indica se o campo nextRestriction está presente. DEVE ser definido como 0x00 ou 0x01. Se definido como 0x01, restrictionPresent indica que o campo nextRestriction está presente. Se definido como 0x00, restrictionPresent indicará que o campo nextRestriction não está presente.
 
 **nextRestriction:** uma estrutura CRestriction, conforme especificado na seção 2.2.1.16, especificando uma restrição posterior.
 
@@ -1637,7 +1637,7 @@ A estrutura CNatLanguageRestriction contém uma combinação de consulta **de id
 
 ...
 
-\_preenchimento \_ de CC (variável)
+\_preenchimento \_ cc (variável)
 
 Cc
 
@@ -1645,7 +1645,7 @@ Cc
 
 ...
 
-\_\_LCID de preenchimento (variável)
+\_preenchimento \_ lcid (variável)
 
 Lcid
 
@@ -1653,21 +1653,21 @@ Lcid
 
  
 
-**\_ Propriedade**: uma estrutura CFullPropSpec, conforme especificado na seção 2.2.1.3. Este campo indica a propriedade na qual executar a operação de correspondência.
+**\_ Propriedade**: uma estrutura CFullPropSpec, conforme especificado na Seção 2.2.1.3. Esse campo indica a propriedade na qual executar a operação de match.
 
-**\_ preenchimento \_ CC**: esse campo deve ter de 0 a 3 bytes de comprimento. O comprimento deste campo deve ser de modo que o seguinte campo comece em um deslocamento que seja um múltiplo de 4 bytes do início da mensagem que contém essa estrutura. Se esse campo estiver presente (ou seja, comprimento diferente de zero), o valor que ele contém será arbitrário. O conteúdo deste campo deve ser ignorado pelo destinatário.
+**\_ preenchimento \_ cc:** esse campo DEVE ter de 0 a 3 bytes de comprimento. O comprimento desse campo DEVE ser tal que o campo a seguir comece em um deslocamento que é um múltiplo de 4 bytes do início da mensagem que contém essa estrutura. Se esse campo estiver presente (ou seja, comprimento não zero), o valor que ele contém será arbitrário. O conteúdo desse campo DEVE ser ignorado pelo receptor.
 
-**CC**: um inteiro de 32 bits sem sinal. O número de caracteres no \_ campo pwcsPhrase.
+**Cc:** um inteiro sem sinal de 32 bits. O número de caracteres no \_ campo pwcsPhrase.
 
-**\_ pwcsPhrase**: uma cadeia de caracteres Unicode não terminada em nulo que representa a palavra ou frase para corresponder à propriedade. Não deve ficar vazio. O campo Cc contém o comprimento da cadeia de caracteres.
+**\_ pwcsPhrase:** uma cadeia de caracteres Unicode não terminada em nulo que representa a palavra ou frase a ser corresponder à propriedade . NÃO DEVE estar vazio. O campo Cc contém o comprimento da cadeia de caracteres.
 
-**\_ \_ LCID de preenchimento**: esse campo deve ter de 0 a 3 bytes de comprimento. O comprimento deste campo deve ser de modo que o seguinte campo comece em um deslocamento que seja um múltiplo de 4 bytes do início da mensagem que contém essa estrutura. Se esse campo estiver presente (ou seja, comprimento diferente de zero), o valor que ele contém será arbitrário. O conteúdo deste campo deve ser ignorado pelo destinatário.
+**\_ \_ lcid de preenchimento:** esse campo DEVE ter de 0 a 3 bytes de comprimento. O comprimento desse campo DEVE ser tal que o campo a seguir comece em um deslocamento que é um múltiplo de 4 bytes do início da mensagem que contém essa estrutura. Se esse campo estiver presente (ou seja, comprimento não zero), o valor que ele contém será arbitrário. O conteúdo desse campo DEVE ser ignorado pelo receptor.
 
-**LCID**: um inteiro de 32 bits sem sinal indicando a localidade de \_ pwcsPhrase, conforme especificado no \[ Apêndice a do MS-GPSI \] .
+**Lcid:** um inteiro sem sinal de 32 bits que indica a localidade de pwcsPhrase, conforme especificado no Apêndice A do \_ \[ MS-GPSI. \]
 
 ### <a name="2217-cnoderestriction"></a>2.2.1.7 CNodeRestriction
 
-A estrutura CNodeRestriction contém uma matriz de nós de **árvore de comando** que especificam as restrições para a consulta.
+A estrutura CNodeRestriction contém uma matriz de nós de **árvore** de comando que especificam as restrições para a consulta.
 
 
 
@@ -1735,7 +1735,7 @@ A estrutura CNodeRestriction contém uma matriz de nós de **árvore de comando*
 
 1
 
-\_cNode
+\_Cnode
 
 \_paNode (variável)
 
@@ -1743,9 +1743,9 @@ A estrutura CNodeRestriction contém uma matriz de nós de **árvore de comando*
 
  
 
-**\_ cNode**: um inteiro sem sinal de 32 bits especificando o número de estruturas CRestriction contidas no \_ campo paNode.
+**\_ cNode:** um inteiro sem sinal de 32 bits que especifica o número de estruturas CRestriction contidas no \_ campo paNode.
 
-**\_ paNode**: uma matriz de estruturas CRestriction. As estruturas na matriz devem ser separadas por 0 a 3 bytes de preenchimento, de modo que cada estrutura comece em um deslocamento que seja um múltiplo de 4 bytes do início da mensagem que contém essa matriz. Se os bytes de preenchimento estiverem presentes, o valor que eles contêm será arbitrário. O conteúdo dos bytes de preenchimento deve ser ignorado pelo destinatário.
+**\_ paNode:** uma matriz de estruturas CRestriction. As estruturas na matriz DEVEM ser separadas por 0 a 3 bytes de preenchimento, de forma que cada estrutura comece em um deslocamento que é um múltiplo de 4 bytes do início da mensagem que contém essa matriz. Se bytes de preenchimento estão presentes, o valor que eles contêm é arbitrário. O conteúdo dos bytes de preenchimento DEVE ser ignorado pelo receptor.
 
 ### <a name="2218-coccrestriction"></a>2.2.1.8 COccRestriction
 
@@ -1913,31 +1913,31 @@ A estrutura CPropertyRestriction contém um valor da propriedade para correspond
 
  
 
-**\_ relop:** um inteiro sem sinal de 32 bits que especifica a relação a ser executar na propriedade . DEVE ser um dos valores a seguir.
+**\_ reia**: um inteiro sem sinal de 32 bits que especifica a relação a ser executar na propriedade . DEVE ser um dos valores a seguir.
 
 
 
 | Valor                 | Significado                                                                                                           |
 |-----------------------|-------------------------------------------------------------------------------------------------------------------|
 | PrLT 0x00000000       | Uma comparação menor que.                                                                                           |
-| PRLE 0x00000001       | Uma comparação menor ou igual a.                                                                               |
-| PRGT 0x00000002       | Uma comparação maior que.                                                                                        |
+| PrLE 0x00000001       | Uma comparação menor ou igual a.                                                                               |
+| PrGT 0x00000002       | Uma comparação maior que.                                                                                        |
 | PrGE 0x00000003       | Uma comparação maior ou igual a.                                                                            |
 | PREQ 0x00000004       | Uma comparação de igualdade.                                                                                           |
-| PRNE 0x00000005       | Uma comparação não igual.                                                                                           |
+| PrNE 0x00000005       | Uma comparação não igual.                                                                                           |
 | PRRE 0x00000006       | Uma comparação de expressão regular.                                                                                  |
-| PRAllBits 0x00000007  | Um operador e bit que retorna o operando à direita.                                                                     |
-| PRSomeBits 0x00000008 | Um valor bit e AND que retorna um Value diferente de zero.                                                                       |
-| PRAll 0x00000100      | A operação deve ser executada em uma coluna de um conjunto de linhas e só será verdadeira se a operação for verdadeira para todas as linhas. |
-| PRAny 0x00000200      | A operação deve ser executada em uma coluna de um conjunto de linhas e será true se a operação for verdadeira para qualquer linha.       |
+| PRAllBits 0x00000007  | Um AND bit a bit que retorna o operand direito.                                                                     |
+| PrSomeBits 0x00000008 | Um AND bit a bit que retorna um valor diferente de zero.                                                                       |
+| PRAll 0x00000100      | A operação deve ser executada em uma coluna de um conjuntos de linhas e só será verdadeira se a operação for verdadeira para todas as linhas. |
+| PrAny 0x00000200      | A operação deve ser executada em uma coluna de um conjuntos de linhas e será verdadeira se a operação for verdadeira para qualquer linha.       |
 
 
 
  
 
-**\_ Propriedade**: uma estrutura CFullPropSpec, conforme especificado na seção 2.2.1.2, indicando a propriedade na qual executar uma operação de correspondência.
+**\_ Propriedade**: uma estrutura CFullPropSpec, conforme especificado na Seção 2.2.1.2, indicando a propriedade na qual executar uma operação de match.
 
-**\_ prval**: uma estrutura CBaseStorageVariant, conforme especificado na seção 2.2.1.1, que contém o valor a ser relacionado à propriedade.
+**\_ prval:** uma estrutura CBaseStorageVariant, conforme especificado na Seção 2.2.1.1, que contém o valor a ser relacionado à propriedade .
 
 ### <a name="22110-crangerestriction"></a>2.2.1.10 CRangeRestriction
 
@@ -2009,7 +2009,7 @@ A estrutura CRangeRestriction contém uma restrição em um intervalo de valores
 
 1
 
-\_keystart (variável)
+\_keyStart (variável)
 
 \_keyEnd (variável)
 
@@ -2017,9 +2017,9 @@ A estrutura CRangeRestriction contém uma restrição em um intervalo de valores
 
  
 
-**\_ keystart**: uma estrutura CKey, conforme especificado na seção 2.2.1.4, que contém o início do intervalo.
+**\_ keyStart:** uma estrutura CKey, conforme especificado na seção 2.2.1.4, que contém o início do intervalo.
 
-**\_ keyEnd**: uma estrutura CKey que contém o final do intervalo.
+**\_ keyEnd:** uma estrutura CKey que contém o final do intervalo.
 
 ### <a name="22111-cscoperestriction"></a>2.2.1.11 CScopeRestriction
 
@@ -2099,7 +2099,7 @@ CcLowerPath
 
 \_preenchimento (variável)
 
-\_muito
+\_Comprimento
 
 \_fRecursive
 
@@ -2109,11 +2109,11 @@ CcLowerPath
 
  
 
-**CcLowerPath**: um inteiro sem sinal de 32 bits contendo o número de caracteres Unicode no \_ campo lowerPath.
+**CcLowerPath:** um inteiro sem sinal de 32 bits que contém o número de caracteres Unicode no \_ campo lowerPath.
 
-**\_ lowerPath**: uma cadeia de caracteres Unicode não terminada em nulo que representa o **caminho** para o qual a consulta deve ser restrita. O campo CcLowerPath contém o comprimento da cadeia de caracteres.
+**\_ lowerPath:** uma cadeia de caracteres Unicode não terminada em nulo que representa o caminho para o qual a consulta deve ser restrita.  O campo CcLowerPath contém o comprimento da cadeia de caracteres.
 
-**\_ preenchimento**: esse campo deve ter de 0 a 3 bytes de comprimento. O comprimento deste campo deve ser de modo que o seguinte campo comece em um deslocamento que seja um múltiplo de 4 bytes do início da mensagem que contém essa estrutura. Se esse campo estiver presente (ou seja, comprimento diferente de zero), o valor que ele contém será arbitrário. O conteúdo deste campo deve ser ignorado pelo destinatário.
+**\_ preenchimento:** esse campo DEVE ter de 0 a 3 bytes de comprimento. O comprimento desse campo DEVE ser tal que o campo a seguir comece em um deslocamento que é um múltiplo de 4 bytes do início da mensagem que contém essa estrutura. Se esse campo estiver presente (ou seja, comprimento diferente de zero), o valor que ele contém será arbitrário. O conteúdo deste campo deve ser ignorado pelo destinatário.
 
 **\_ comprimento**: um inteiro sem sinal de 32 bits contendo o comprimento de \_ LowerPath, em caracteres Unicode. DEVE ser o mesmo valor que CcLowerPath.
 
@@ -2195,7 +2195,7 @@ pidColumn
 
 dwOrd
 
-localidade
+locale
 
 
 
@@ -2296,25 +2296,25 @@ Restrição
 
 cKey
 
-\_keyarray (variável)
+\_keyArray (variável)
 
-\_ISRANGE
+\_isRange
 
 
 
  
 
-**Restrição**: uma estrutura COccRestriction que especifica o local da palavra.
+**Restrição:** uma estrutura COccRestriction que especifica o local da palavra.
 
-**cKey**: um inteiro sem sinal de 32 bits especificando o número de elementos na \_ matriz keyarray.
+**cKey:** um inteiro sem sinal de 32 bits que especifica o número de elementos na \_ matriz keyArray.
 
-**\_ keyarray**: uma matriz de estruturas CKey que especificam uma palavra e seus sinônimos.
+**\_ keyArray:** uma matriz de estruturas CKey especificando uma palavra e seus sinônimos.
 
-**\_ ISRANGE**: se definido como 0x01, as chaves são prefixos para correspondência. Se definido como 0x00, as chaves são valores exatos para corresponder. \_ISRANGE não deve ser definido para nenhum outro valor.
+**\_ isRange:** se definido como 0x01, as chaves serão prefixos para corresponder. Se definido como 0x00, as chaves serão valores exatos para corresponder. \_isRange NÃO DEVE ser definido como nenhum outro valor.
 
 ### <a name="22114-cvectorrestriction"></a>2.2.1.14 CVectorRestriction
 
-A estrutura CVectorRestriction contém uma operação ponderada ou em um nó de árvore de comandos.
+A estrutura CVectorRestriction contém uma operação OR ponderada em um nó de árvore de comandos.
 
 
 
@@ -2382,7 +2382,7 @@ A estrutura CVectorRestriction contém uma operação ponderada ou em um nó de 
 
 1
 
-\_Pres (variável)
+\_pres (variável)
 
 ...
 
@@ -2394,21 +2394,21 @@ A estrutura CVectorRestriction contém uma operação ponderada ou em um nó de 
 
  
 
-**\_ Pres**: uma árvore de comandos CNodeRestriction na qual uma classificação ou operação deve ser executada.
+**\_ pres:** uma árvore de comandos CNodeRestriction na qual uma operação OR classificada deve ser executada.
 
-**\_ preenchimento**: esse campo deve ter de 0 a 3 bytes de comprimento. O comprimento deste campo deve ser de modo que o seguinte campo comece em um deslocamento que seja um múltiplo de 4 bytes do início da mensagem que contém essa estrutura. Se esse campo estiver presente (ou seja, comprimento diferente de zero), o valor que ele contém será arbitrário. O conteúdo deste campo deve ser ignorado pelo destinatário.
+**\_ preenchimento:** esse campo DEVE ter de 0 a 3 bytes de comprimento. O comprimento desse campo DEVE ser tal que o campo a seguir comece em um deslocamento que é um múltiplo de 4 bytes do início da mensagem que contém essa estrutura. Se esse campo estiver presente (ou seja, comprimento não zero), o valor que ele contém será arbitrário. O conteúdo desse campo DEVE ser ignorado pelo receptor.
 
-**\_ ulRankMethod**: um inteiro sem sinal de 32 bits especificando um algoritmo de classificação. DEVE ser definido como um dos valores a seguir.
+**\_ ulRankMethod:** um inteiro sem sinal de 32 bits que especifica um algoritmo de classificação. DEVE ser definido como um dos valores a seguir.
 
 
 
 | Valor                            | Significado                                       |
 |----------------------------------|-----------------------------------------------|
-| Classificação de vetor \_ \_ mín. 0x00000000     | Usar Salt de algoritmo mínimo \[ \] .             |
-| Classificação de vetor \_ \_ máx. 0x00000001     | Use o Salt máximo do algoritmo \[ \] .             |
-| \_0x00000002 interno de classificação de vetor \_   | Usar a saltização do algoritmo de produto interno \[ \] .       |
-| \_0x00000003 de classificação de vetor \_    | Use a saltização do algoritmo de coeficiente de um \[ \] .    |
-| Classificação de vetor \_ \_ Jaccard 0x00000004 | Use a saltização do algoritmo de coeficiente Jaccard \[ \] . |
+| VECTOR \_ RANK \_ MIN 0x00000000     | Use o algoritmo \[ mínimo \] SALTON.             |
+| VECTOR \_ RANK \_ MAX 0x00000001     | Use o algoritmo \[ máximo \] SALTON.             |
+| VECTOR \_ RANK \_ INNER 0x00000002   | Use o algoritmo de produto \[ interno \] SALTON.       |
+| DADOS \_ DE CLASSIFICAÇÃO DE \_ VETOR 0X00000003    | Use o algoritmo de coeficiente dice \[ \] SALTON.    |
+| VECTOR \_ RANK \_ JACCARD 0x00000004 | Use o algoritmo de coeficiente Jaccard \[ \] SALTON. |
 
 
 
@@ -2502,7 +2502,7 @@ restriction
 
 **\_ key:** uma estrutura CKey especificando uma palavra.
 
-**\_ isRange:** se definido como 0x01, a chave será um prefixo para corresponder. Se definido como 0x00, a chave será um valor exato para corresponder. \_isRange NÃO DEVE ser definido como nenhum outro valor.
+**\_ isRange:** se definido como 0x01, a chave será um prefixo para corresponder. Se definido como 0x00, a chave será um valor exato a ser corresponder. \_isRange NÃO DEVE ser definido como nenhum outro valor.
 
 ### <a name="22116-crestriction"></a>2.2.1.16 CRestriction
 
@@ -2616,7 +2616,7 @@ Restrição
 
 ### <a name="22117-ccolumnset"></a>2.2.1.17 CColumnSet
 
-A estrutura CColumnSet especifica os números de coluna a serem retornados. Essa estrutura é sempre usada em referência a uma estrutura CPidMapper específica (seção 2.2.1.23).
+A estrutura CColumnSet especifica os números de coluna a serem retornados. Essa estrutura sempre é usada em referência a uma estrutura CPidMapper específica (seção 2.2.1.23).
 
 
 
@@ -2692,9 +2692,9 @@ count
 
  
 
-**Count**: um inteiro de 32 bits sem sinal especificando o número de elementos na matriz de índices.
+**count:** um inteiro sem sinal de 32 bits que especifica o número de elementos na matriz de índices.
 
-**índices**: matriz de inteiros sem sinal de 4 bytes que representam índices baseados em zero na matriz aPropSpec na estrutura CPidMapper correspondente.
+**índices**: matriz de inteiros sem sinal de 4 byte que representam índices baseados em zero na matriz aPropSpec na estrutura CPidMapper correspondente.
 
 ### <a name="22118-ccategorizationset"></a>2.2.1.18 CCategorizationSet
 
@@ -2768,19 +2768,19 @@ A estrutura CCategorizationSet contém informações sobre o agrupamento de um c
 
 count
 
-Categorias (variável)
+categorias (variável)
 
 
 
  
 
-**Count**: um inteiro sem sinal de 32 bits contendo o número de elementos na matriz Categories.
+**count:** um inteiro sem sinal de 32 bits que contém o número de elementos na matriz de categorias.
 
-**categorias**: matriz de estruturas CCategorizationSpec especificando o agrupamento da consulta.
+**categorias:** matriz de estruturas CCategorizationSpec especificando o agrupamento da consulta.
 
 ### <a name="22119-ccategorizationspec"></a>2.2.1.19 CCategorizationSpec
 
-A estrutura CCategorizationSpec contém um agrupamento para um conjunto de resultados de consulta.
+A estrutura CCategorizationSpec contém um grupo para um conjunto de resultados de consulta.
 
 
 
@@ -2856,9 +2856,9 @@ A estrutura CCategorizationSpec contém um agrupamento para um conjunto de resul
 
  
 
-**\_ csColumns:** uma estrutura CColumnSet que indica as colunas pelas quais agrupar a consulta.
+**\_ csColumns**: uma estrutura CColumnSet que indica as colunas pelas quais agrupar a consulta.
 
-**\_ ulCategType:** um inteiro sem sinal de 32 bits. DEVE ser definido como 0x00000000.
+**\_ ulCategType**: um inteiro sem sinal de 32 bits. DEVE ser definido como 0x00000000.
 
 ### <a name="22120-cdbcolid"></a>2.2.1.20 CDbColId
 
@@ -2948,30 +2948,30 @@ vString (variável)
 
  
 
-**eKind**: DEVE ser definido como um dos valores abaixo que indica o conteúdo de GUID e vValue.
+**eKind**: deve ser definido como um dos valores abaixo que indica o conteúdo de GUID e vValue.
 
 
 
 | Valor                            | Significado                                                                                                         |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| NOME DO GUID DBKIND \_ \_ 0x00000000    | vString contém um nome de propriedade.                                                                               |
-| DBKIND \_ GUID \_ PROPID 0x00000001  | ulId contém um inteiro de 4 byte que indica a ID da propriedade.                                                      |
-| DBKIND \_ PGUID \_ NAME 0x00000003   | vString contém um nome de propriedade. Esse valor DEVE ser tratado da mesma forma que DBKIND \_ GUID \_ NAME.                    |
-| DBKIND \_ PGUID \_ PROPID 0x00000004 | ulId contém um inteiro de 4 byte que indica a ID da propriedade. Esse valor DEVE ser o mesmo que DBKIND \_ GUID \_ PROPID. |
+| Nome do GUID do DBKIND \_ \_ 0x00000000    | vString contém um nome de propriedade.                                                                               |
+| \_GUID DBKIND \_ Propid 0x00000001  | ulId contém um inteiro de 4 bytes que indica a ID da propriedade.                                                      |
+| Nome do DBKIND \_ PGUID \_ 0x00000003   | vString contém um nome de propriedade. Esse valor deve ser tratado da mesma forma que o \_ nome do GUID DBKIND \_ .                    |
+| DBKIND \_ PGUID \_ Propid 0x00000004 | ulId contém um inteiro de 4 bytes que indica a ID da propriedade. Esse valor deve ser o mesmo que o DBKIND \_ GUID \_ Propid. |
 
 
 
  
 
-**GUID:** o GUID da propriedade.
+**GUID**: o GUID da propriedade.
 
-**ulId**: se eKind for DBKIND GUID PROPID ou DBKIND PGUID PROPID, esse campo conterá um inteiro sem \_ \_ \_ \_ sinal, especificando a ID da propriedade. Se eKind for DBKIND GUID NAME ou DBKIND PGUID NAME, esse campo conterá um inteiro sem sinal especificando o número de caracteres Unicode contidos no campo \_ \_ \_ \_ vString.
+**ulId**: se EKIND for DBKIND \_ GUID \_ Propid ou DBKIND \_ PGUID \_ Propid, esse campo conterá um inteiro não assinado, especificando a ID da propriedade. Se eKind for DBKIND \_ \_ nome do GUID ou DBKIND \_ PGUID \_ nome, esse campo conterá um inteiro sem sinal especificando o número de caracteres Unicode contidos no campo vString.
 
-**vString:** uma cadeia de caracteres Unicode não terminada em nulo que representa o nome da propriedade. Ele DEVE ser omitido, a menos que o campo eKind esteja definido como DBKIND \_ GUID \_ NAME ou DBKIND \_ PGUID \_ NAME.
+**vString**: uma cadeia de caracteres Unicode não terminada em nulo que representa o nome da propriedade. Ele deve ser omitido a menos que o campo eKind seja definido como DBKIND \_ nome do GUID \_ ou DBKIND \_ PGUID \_ .
 
 ### <a name="22121-cdbprop"></a>2.2.1.21 CDbProp
 
-A estrutura CDbProp contém uma propriedade .
+A estrutura CDbProp contém uma propriedade.
 
 
 
@@ -3075,7 +3075,7 @@ A tabela a seguir lista as propriedades que fazem parte do conjunto de proprieda
 |----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | NOME DO \_ CATÁLOGO DBPROP CI \_ \_ 0x00000002   | Especifica o nome do catálogo ou catálogos a ser consultado. O valor DEVE ser um VT \_ LPWSTR ou um \_ VT VECTOR \| VT \_ LPWSTR                                   |
 | DBPROP \_ CI \_ INCLUDE \_ SCOPES 0X00000003 | Especifica um ou mais caminhos a serem incluídos na consulta. O valor DEVE ser um VT \_ LPWSTR ou um \_ VT VECTOR \| VT \_ LPWSTR.                                 |
-| SINALIZADORES DE \_ ESCOPO DE CI \_ \_ DBPROP 0X00000004    | Especifica como os caminhos especificados pela propriedade DBPROP \_ CI \_ INCLUDE \_ SCOPES devem ser tratados. O valor DEVE ser uma VT \_ I4 ou uma \_ VT VECTOR \| VT \_ I4. |
+| SINALIZADORES DE \_ ESCOPO DE CI \_ \_ DBPROP 0x00000004    | Especifica como os caminhos especificados pela propriedade DBPROP \_ CI \_ INCLUDE \_ SCOPES devem ser tratados. O valor DEVE ser uma VT \_ I4 ou uma \_ VT VECTOR \| VT \_ I4. |
 | TIPO DE \_ CONSULTA DBPROP CI \_ \_ 0X00000007     | Especifica o tipo de consulta. O CDbColId DEVE ser definido como DB \_ NULLID.                                                                               |
 
 
@@ -3088,7 +3088,7 @@ A tabela a seguir lista os sinalizadores para a propriedade DBPROP \_ CI \_ SCOP
 
 | Valor                     | Significado                                                                                                                                                                                                                 |
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CONSULTA PROFUNDA \_ 0X01          | Se definido, indica que os arquivos no diretório de escopo e todos os subdireários estão incluídos nos resultados. Se estiver claro, somente os arquivos no diretório de escopo serão incluídos nos resultados. NÃO DEVE ser combinado com A CONSULTA \_ PROFUNDA. |
+| CONSULTA PROFUNDA \_ 0X01          | Se definido, indica que os arquivos no diretório de escopo e todos os subdireários são incluídos nos resultados. Se estiver claro, somente os arquivos no diretório de escopo serão incluídos nos resultados. NÃO DEVE ser combinado com A CONSULTA \_ PROFUNDA. |
 | CONSULTA DE \_ CAMINHO VIRTUAL \_ 0X02 | Se definido, indica que o escopo é um caminho virtual. Se estiver claro, indica que o escopo é um diretório físico.                                                                                                         |
 
 
@@ -3208,7 +3208,7 @@ A estrutura CDbPropSet contém um conjunto de propriedades. Observe que o primei
 
 1
 
-Guidpropertyset
+guidPropertySet
 
 ...
 
@@ -3228,29 +3228,29 @@ aProps (variável)
 
  
 
-**guidPropertySet:** um GUID que identifica o conjunto de propriedades. DEVE ser definido como o formulário binário correspondente a um dos valores a seguir (mostrado no formulário de representação de cadeia de caracteres), identificando o conjunto de propriedades das propriedades contidas no campo aProps.
+**guidPropertySet**: um GUID que identifica o conjunto de propriedades. DEVE ser definido como o formato binário correspondente a um dos valores a seguir (mostrados no formulário de representação da cadeia de caracteres), identificando o conjunto de propriedades dos campos contidos no campo aProps.
 
 
 
-| Valor/GUID                                                                              | Nome                                             |
+| Valor/GUID                                                                              | Name                                             |
 |-------------------------------------------------------------------------------------------|--------------------------------------------------|
-| DBPROPSET \_ FSCIFRMWRK \_ EXT<br/> {A9BD1526-6A80-11D0-8C9D-0020AF1D740E}<br/>   | Conjunto de propriedades da estrutura de índice de conteúdo do sistema de arquivos |
-| DBPROPSET \_ QUERYEXT<br/> {A7AC77ED-F8D7-11CE-A798-0020F8008025}<br/>          | Conjunto de propriedades da extensão de consulta                     |
-| DBPROPSET \_ CIFRMWRKCORE \_ EXT<br/> {AFAFACA5-B5D1-11D0-8C62-00C04FC2DB8D}<br/> | Conjunto de propriedades do Content Index Framework Core        |
+| DBPROPSET \_ FSCIFRMWRK \_ ext<br/> {A9BD1526-6A80-11D0-8C9D-0020AF1D740E}<br/>   | Conjunto de propriedades da estrutura de índice de conteúdo do sistema de arquivos |
+| DBPROPSET \_ QUERYEXT<br/> {A7AC77ED-F8D7-11CE-A798-0020F8008025}<br/>          | Conjunto de propriedades de extensão de consulta                     |
+| DBPROPSET \_ CIFRMWRKCORE \_ ext<br/> {AFAFACA5-B5D1-11D0-8C62-00C04FC2DB8D}<br/> | Conjunto de propriedades principais do content index Framework        |
 
 
 
  
 
-**\_ preenchimento:** esse campo DEVE ter de 0 a 3 bytes de comprimento. O comprimento desse campo DEVE ser tal que o campo a seguir comece em um deslocamento que é um múltiplo de 4 bytes do início da mensagem que contém essa estrutura. Se esse campo estiver presente (ou seja, comprimento não zero), o valor que ele contém será arbitrário. O conteúdo desse campo DEVE ser ignorado pelo receptor.
+**\_ preenchimento**: esse campo deve ter de 0 a 3 bytes de comprimento. O comprimento deste campo deve ser de modo que o seguinte campo comece em um deslocamento que seja um múltiplo de 4 bytes do início da mensagem que contém essa estrutura. Se esse campo estiver presente (ou seja, comprimento diferente de zero), o valor que ele contém será arbitrário. O conteúdo deste campo deve ser ignorado pelo destinatário.
 
-**cProperties:** um inteiro sem sinal de 32 bits que contém o número de elementos na matriz aProps.
+**cProperties**: um inteiro sem sinal de 32 bits contendo o número de elementos na matriz aProps.
 
-**aProps:** uma matriz de estruturas CDbProp, conforme especificado na seção 0, que contém propriedades. As estruturas na matriz DEVEM ser separadas por 0 a 3 bytes de preenchimento, de forma que cada estrutura comece em um deslocamento que é um múltiplo de 4 bytes do início da mensagem que contém essa matriz. Se bytes de preenchimento estão presentes, o valor que eles contêm é arbitrário. O conteúdo dos bytes de preenchimento DEVE ser ignorado pelo receptor.
+**aProps**: uma matriz de estruturas CDbProp, conforme especificado na seção 0, que contém propriedades. As estruturas na matriz devem ser separadas por 0 a 3 bytes de preenchimento, de modo que cada estrutura comece em um deslocamento que seja um múltiplo de 4 bytes do início da mensagem que contém essa matriz. Se os bytes de preenchimento estiverem presentes, o valor que eles contêm será arbitrário. O conteúdo dos bytes de preenchimento deve ser ignorado pelo destinatário.
 
 ### <a name="22123-cpidmapper"></a>2.2.1.23 CPidMapper
 
-A estrutura CPidMapper contém uma matriz de IDs de propriedade especificando as propriedades a retornar em um conjunto de linhas.
+A estrutura CPidMapper contém uma matriz de IDs de propriedade especificando as propriedades a serem retornadas em um conjunto de linhas.
 
 
 
@@ -3322,15 +3322,15 @@ count
 
 aPropSpec
 
-... (variável)
+... Ela
 
 
 
  
 
-**count:** um inteiro sem sinal de 32 bits que contém o número de elementos na matriz aPropSpec.
+**Count**: um inteiro sem sinal de 32 bits contendo o número de elementos na matriz aPropSpec.
 
-**aPropSpec**: matriz de estruturas CFullPropSpec que indica as propriedades a serem retornadas. As estruturas na matriz devem ser separadas por 0 a 3 bytes de preenchimento, de modo que cada estrutura tenha um alinhamento de 4 bytes desde o início de uma mensagem. Esses bytes de preenchimento podem ser qualquer valor arbitrário e devem ser ignorados no recebimento.
+**aPropSpec:** matriz de estruturas CFullPropSpec que indicam as propriedades a retornar. As estruturas na matriz DEVEM ser separadas por 0 a 3 bytes de preenchimento, de forma que cada estrutura tenha um alinhamento de 4 bytes do início de uma mensagem. Esses bytes de preenchimento podem ser qualquer valor arbitrário e DEVEM ser ignorados no recebimento.
 
 ### <a name="22124-crowseekat"></a>2.2.1.24 CRowSeekAt
 
@@ -3412,15 +3412,15 @@ A estrutura CRowSeekAt contém o deslocamento no qual recuperar linhas em uma me
 
  
 
-**\_ hRegion**: deve ser definido como 0x00000000 e deve ser ignorado.
+**\_ hRegion**: DEVE ser definido como 0x00000000 e DEVE ser ignorado.
 
-**\_ cskip**: um inteiro sem sinal de 32 bits contendo o número de linhas a serem ignoradas no conjunto de linhas.
+**\_ cskip:** um inteiro sem sinal de 32 bits que contém o número de linhas a ignorar no conjuntos de linhas.
 
-**\_ bmkOffset**: um valor de 32 bits que representa o identificador do **indicador** que indica a posição inicial a partir da qual ignorar o número de linhas especificado em \_ cskip, antes de iniciar a recuperação.
+**\_ bmkOffset:** um valor de 32 bits  que representa o indicador que indica a posição inicial da qual ignorar o número de linhas especificado em cskip, antes de iniciar a \_ recuperação.
 
 ### <a name="22125-crowseekatratio"></a>2.2.1.25 CRowSeekAtRatio
 
-A estrutura CRowSeekAtRatio identifica o ponto no qual iniciar a recuperação para uma mensagem CPMGetRowsIn.
+A estrutura CRowSeekAtRatio identifica o ponto no qual começar a recuperação para uma mensagem CPMGetRowsIn.
 
 
 
@@ -3500,13 +3500,13 @@ CiTblChapt
 
  
 
-**CiTblChapt**: um inteiro de 32 bits sem sinal indicando o capítulo do conjunto de linhas do qual recuperar linhas.
+**CiTblChapt:** um inteiro sem sinal de 32 bits que indica o capítulo do conjuntos de linhas do qual recuperar linhas.
 
-**\_ hRegion**: deve ser definido como 0x00000000 e deve ser ignorado.
+**\_ hRegion**: DEVE ser definido como 0x00000000 e DEVE ser ignorado.
 
-**\_ ulNumerator**: inteiro de 32 bits sem sinal que representa o numerador da proporção de linhas no capítulo no qual iniciar a recuperação.
+**\_ ulNumerator:** inteiro de 32 bits sem sinal que representa o numerador da proporção de linhas no capítulo no qual iniciar a recuperação.
 
-**\_ ulDenominator**: inteiro de 32 bits sem sinal que representa o denominador da proporção de linhas no capítulo no qual iniciar a recuperação. DEVE ser maior que zero.
+**\_ ulDenominator:** inteiro de 32 bits sem sinal que representa o denominador da proporção de linhas no capítulo no qual iniciar a recuperação. DEVE ser maior que zero.
 
 ### <a name="22126-crowseekbybookmark"></a>2.2.1.26 CRowSeekByBookmark
 
@@ -3594,21 +3594,21 @@ A estrutura CRowSeekByBookmark identifica os indicadores dos quais começar a re
 
  
 
-**\_ hRegion**: DEVE ser definido como 0x00000000 e DEVE ser ignorado.
+**\_ hRegion**: deve ser definido como 0x00000000 e deve ser ignorado.
 
-**\_ cBookmarks:** inteiro de 32 bits sem sinal que representa o número de elementos na \_ matriz aBookmarks.
+**\_ cBookmarks**: inteiro de 32 bits sem sinal representando o número de elementos na \_ matriz aBookmarks.
 
-**\_ maxRet:** inteiro de 32 bits sem sinal que representa o número de elementos na \_ matriz ascRet.
+**\_ maxRet**: inteiro de 32 bits sem sinal representando o número de elementos na \_ matriz ascRet.
 
-**\_ cValidRet:** inteiro de 32 bits sem sinal que representa o número de elementos na \_ matriz ascRet que são válidos. Elementos válidos foram definidos na matriz, enquanto elementos inválidos são indefinido.
+**\_ cValidRet**: inteiro de 32 bits sem sinal que representa o número de elementos na \_ matriz ascRet que são válidos. Elementos válidos foram definidos na matriz, enquanto elementos inválidos são indefinidos.
 
-**\_ aBookmarks:** uma matriz de alças de indicador (cada uma representada por 4 bytes), conforme obtido de uma mensagem CPMGetRowsOut.
+**\_ aBookmarks**: uma matriz de alças de indicador (cada uma representada por 4 bytes), conforme Obtida de uma mensagem CPMGetRowsOut.
 
-**\_ ascRet:** uma matriz de valores HRESULT. Quando o CRowSeekByBookMark é enviado como parte da solicitação CPMGetRowsIn, o número de entradas na matriz DEVE ser igual a \_ cBookMarks. Quando enviados pelo cliente, os valores DEVEM ser definidos como zero e o servidor DEVE ignorar o conteúdo da matriz. Quando enviados pelo servidor (como parte da mensagem CPMGetRowsOut), os valores na matriz indicam o status do resultado para cada recuperação de linha.
+**\_ ascRet**: uma matriz de valores HRESULT. Quando o CRowSeekByBookMark é enviado como parte da solicitação CPMGetRowsIn, o número de entradas na matriz deve ser igual a \_ cBookMarks. Quando enviado pelo cliente, os valores devem ser definidos como zero e o servidor deve ignorar o conteúdo da matriz. Quando enviado pelo servidor (como parte da mensagem CPMGetRowsOut), os valores na matriz indicam o status do resultado para cada recuperação de linha.
 
 ### <a name="22127-crowseeknext"></a>2.2.1.27 CRowSeekNext
 
-A estrutura CRowSeekNext contém o número de linhas a ignorar em uma mensagem CPMGetRowsIn.
+A estrutura CRowSeekNext contém o número de linhas a serem ignoradas em uma mensagem CPMGetRowsIn.
 
 
 
@@ -3686,11 +3686,11 @@ CiTblChapt
 
  
 
-**CiTblChapt:** inteiro de 32 bits sem sinal especificando o capítulo de conjuntos de linhas do qual recuperar linhas.
+**CiTblChapt**: inteiro de 32 bits sem sinal especificando o capítulo do conjunto de linhas do qual recuperar linhas.
 
-**\_ hRegion**: DEVE ser definido como 0x00000000 e DEVE ser ignorado.
+**\_ hRegion**: deve ser definido como 0x00000000 e deve ser ignorado.
 
-**\_ cskip:** inteiro de 32 bits sem sinal que representa o número de linhas a ignorar no conjuntos de linhas.
+**\_ cskip**: inteiro de 32 bits sem sinal representando o número de linhas a serem ignoradas no conjunto de linhas.
 
 ### <a name="22128-crowsetproperties"></a>2.2.1.28 CRowsetProperties
 
@@ -3887,7 +3887,7 @@ A estrutura CRowVariant contém a parte de tamanho fixo de um tipo de dados de c
 
 vType
 
-reserved1
+reservado1
 
 reserved2
 
@@ -3897,13 +3897,13 @@ Deslocamento (opcional)
 
  
 
-**vType**: um indicador de tipo, que indica o tipo de vValue. Ele deve ser um dos valores de VARENUM especificados na seção 2.2.1.1.
+**vType:** um indicador de tipo que indica o tipo de vValue. Deve ser um dos valores VARENUM especificados na seção 2.2.1.1.
 
-**reserved1**: não usado. O valor pode ser definido como qualquer valor arbitrário e deve ser ignorado no recebimento.
+**reserved1:** não usado. O valor pode ser definido como qualquer valor arbitrário e DEVE ser ignorado no recebimento.
 
-**reserved2**: não usado. O valor pode ser definido como qualquer valor arbitrário e deve ser ignorado no recebimento.
+**reserved2:** não usado. O valor pode ser definido como qualquer valor arbitrário e DEVE ser ignorado no recebimento.
 
-**Offset**: um deslocamento para dados de comprimento variável (por exemplo, uma cadeia de caracteres).  Esse deve ser um valor de 32 bits (4 bytes de comprimento) se os deslocamentos de 32 bits estiverem sendo usados (de acordo com as regras na seção 2.2.3.16) ou um valor de 64 byte (8 bytes de comprimento) se os deslocamentos de 64 bits estiverem sendo usados.
+**Offset:** um deslocamento para dados de comprimento variável (por exemplo, uma cadeia de caracteres).  Isso DEVERÁ ser um valor de 32 bits (4 bytes) se deslocamentos de 32 bits estão sendo usados (de acordo com as regras na seção 2.2.3.16) ou um valor de 64 bytes (8 bytes) se deslocamentos de 64 bits estão sendo usados.
 
 ### <a name="22130-csortset"></a>2.2.1.30 CSortSet
 
@@ -3983,9 +3983,9 @@ sortArray (variável)
 
  
 
-**Count**: um inteiro sem sinal de 32 bits especificando o número de elementos em sortArray.
+**count:** um inteiro sem sinal de 32 bits que especifica o número de elementos em sortArray.
 
-**sortArray**: uma matriz de estruturas CSort que descreve a ordem na qual os resultados da consulta são classificados. As estruturas na matriz devem ser separadas por 0 a 3 bytes de preenchimento, de modo que cada estrutura tenha um alinhamento de 4 bytes desde o início de uma mensagem. Esses bytes de preenchimento podem ser qualquer valor arbitrário e devem ser ignorados no recebimento.
+**sortArray:** uma matriz de estruturas CSort que descreve a ordem na qual classificar os resultados da consulta. As estruturas na matriz DEVEM ser separadas por 0 a 3 bytes de preenchimento, de forma que cada estrutura tenha um alinhamento de 4 bytes do início de uma mensagem. Esses bytes de preenchimento podem ser qualquer valor arbitrário e DEVEM ser ignorados no recebimento.
 
 ### <a name="22131-ctablecolumn"></a>2.2.1.31 CTableColumn
 
@@ -4059,7 +4059,7 @@ A estrutura CTableColumn contém uma coluna de uma mensagem CPMSetBindingsIn
 
 PropSpec
 
-... Ela
+... (variável)
 
 vType
 
@@ -4069,9 +4069,9 @@ ValueUsed
 
 ValueOffset (opcional)
 
-Valores (opcional)
+ValueSize (opcional)
 
-StatusUsed
+StatusUsado
 
 \_padding2 (opcional)
 
@@ -4265,9 +4265,9 @@ Veja abaixo um diagrama que mostra o formato de cabeçalho da mensagem do protoc
 
 1
 
-\_MSG
+\_msg
 
-\_Estado
+\_status
 
 \_ulChecksum
 
@@ -4312,7 +4312,7 @@ Veja abaixo um diagrama que mostra o formato de cabeçalho da mensagem do protoc
 
 \* *
 
-*Comportamento do Windows: o cliente sempre define o \_ campo status como 0x00000000.*
+*Windows Comportamento: o cliente sempre define o \_ campo status como 0x00000000.*
 
 **\_ ulChecksum**: o \_ ulChecksum deve ser calculado conforme especificado na seção 3.2.4 para as seguintes mensagens:
 
@@ -4398,7 +4398,7 @@ A mensagem CPMCiStateInOut contém informações sobre o estado do serviço de i
 
 1
 
-cbStruct
+Cbstruct
 
 cWordList
 
@@ -4412,7 +4412,7 @@ cFreshTest
 
 dwMergeProgress
 
-Imóveis
+Propriedade
 
 cFilteredDocuments
 
@@ -4432,64 +4432,64 @@ dwPropCacheSize
 
  
 
-**cbStruct**: um inteiro sem sinal de 32 bits. O tamanho em bytes desta mensagem (excluindo o cabeçalho comum). DEVE ser definido como 0x0000003C.
+**cbStruct:** um inteiro sem sinal de 32 bits. O tamanho em bytes dessa mensagem (excluindo o header comum). DEVE ser definido como 0x0000003C.
 
-**cWordList**: um inteiro de 32 bits sem sinal indicando a contagem de índices iniciais criados para documentos indexados recentemente.
+**cWordList:** um inteiro sem sinal de 32 bits que indica a contagem de índices iniciais criados para documentos indexados recentemente.
 
-**cPersistentIndex**: um inteiro de 32 bits sem sinal indicando a contagem de índices persistentes.
+**cPersistentIndex:** um inteiro sem sinal de 32 bits que indica a contagem de índices persistentes.
 
-**cQueries**: um inteiro de 32 bits sem sinal indicando um número de consultas em execução ativamente.
+**cQueries:** um inteiro sem sinal de 32 bits que indica um número de consultas ativamente em execução.
 
-**cDocuments**: um inteiro de 32 bits sem sinal indicando o número total de documentos aguardando para serem indexados.
+**cDocuments:** um inteiro sem sinal de 32 bits que indica o número total de documentos aguardando a indexação.
 
-**cFreshTest**: um inteiro sem sinal de 32 bits que indica o número de documentos exclusivos com informações em índices que não são totalmente otimizados para desempenho.
+**cFreshTest:** um inteiro sem sinal de 32 bits que indica o número de documentos exclusivos com informações em índices que não são totalmente otimizados para desempenho.
 
-**dwMergeProgress**: inteiro de 32 bits sem sinal especificando a porcentagem de conclusão da otimização total atual de índices, se a otimização estiver em andamento no momento. DEVE ser menor ou igual a 100.
+**dwMergeProgress:** inteiro sem sinal de 32 bits especificando o percentual de conclusão da otimização completa atual de índices, se a otimização estiver em andamento no momento. DEVE ser menor ou igual a 100.
 
-**imobiliária**: estado da indexação de conteúdo, conforme fornecido por uma ou mais das \_ constantes de estado de CI \_ \* , definidas na tabela a seguir.
+**eState:** estado da indexação de conteúdo, conforme determinado por uma ou mais das \_ constantes CI \_ \* STATE, definidas na tabela abaixo.
 
 
 
 | Valor                                         | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_Mesclagem de sombra de estado de CI \_ \_ 0x00000001           | O serviço de indexação está no processo de otimização de alguns dos índices para reduzir o uso de memória e melhorar o desempenho da consulta.                                                                                                                                                                                                                                                                                                                                                                |
-| \_ \_ Mesclagem mestra de estado CI \_ 0x00000002           | O serviço de indexação está no processo de Otimização total para todos os índices.                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| \_Exame de conteúdo de estado CI \_ \_ \_ necessário 0x00000004 | Alguns documentos no índice foram alterados e o serviço de indexação precisa determinar quais foram adicionados, alterados ou excluídos.                                                                                                                                                                                                                                                                                                                                                              |
-| CI \_ estado \_ recozimento \_ mesclar 0x00000008        | O serviço de indexação está no processo de otimização de índices para reduzir o uso de memória e melhorar o desempenho da consulta. Esse processo é mais abrangente do que aquele identificado pelo valor de \_ mesclagem de sombra de estado de CI \_ \_ , mas não é tão abrangente quanto o especificado pelo \_ valor de \_ mesclagem mestre de estado CI \_ . Essas otimizações são específicas da implementação, pois dependem da maneira como os dados são armazenados internamente; as otimizações não afetam o protocolo de nenhuma forma que não seja o tempo de resposta. |
-| \_Verificação de estado CI \_ 0x00000010                | O serviço de indexação está examinando um diretório ou um conjunto de diretórios para ver se algum arquivo foi adicionado, excluído ou atualizado desde a última vez em que o diretório foi indexado.                                                                                                                                                                                                                                                                                                                 |
-| O \_ estado de CI \_ recuperando 0x00000020              | O serviço está sendo iniciado a partir do último estado salvo e está no processo de recuperação.                                                                                                                                                                                                                                                                                                                                                                                                        |
-| \_0x00000080 de \_ memória insuficiente do estado de CI \_             | A maior parte da memória virtual do servidor está em uso.                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Estado de CI de \_ \_ alta \_ e/s 0x00000100                | O nível de atividade de entrada/saída (e/s) no servidor é relativamente alto.                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| \_Mesclagem mestra de estado CI em \_ \_ \_ pausa 0x00000200   | O processo de otimização completa de todos os índices que estavam em andamento foi pausado. Isso é fornecido apenas para fins informativos e não afeta CISP.                                                                                                                                                                                                                                                                                                                                  |
-| \_ \_ 0x00000400 somente leitura do estado CI \_              | A parte do serviço de indexação que obtém novos documentos para o índice foi pausada. Isso é fornecido apenas para fins informativos e não afeta CISP.                                                                                                                                                                                                                                                                                                                               |
-| Estado de CI de \_ \_ energia da bateria \_ 0x00000800          | A parte do serviço de indexação que obtém novos documentos para o índice foi pausada para conservar o tempo de vida da bateria, mas ainda responde às consultas. Isso é fornecido apenas para fins informativos e não afeta CISP.                                                                                                                                                                                                                                                                 |
-| 0x00001000 de usuário de estado de CI \_ \_ \_ ativo            | A parte do serviço de indexação que obtém novos documentos para o índice foi pausada devido à alta atividade pelo usuário (teclado ou mouse), mas ainda responde às consultas. Isso é fornecido apenas para fins informativos e não afeta CISP.                                                                                                                                                                                                                                         |
-| Estado de CI \_ \_ iniciando 0x00002000                | O serviço está iniciando. As consultas podem ser executadas, mas a verificação e a notificação ainda não foram habilitadas. Isso é fornecido apenas para fins informativos e não afeta CISP.                                                                                                                                                                                                                                                                                                                   |
-| \_Estado CI \_ lendo \_ USNs 0x00004000           | O serviço não leu o log mantido pelo sistema de arquivos para manter o controle das alterações em arquivos ou diretórios em um volume, de modo que o índice pode não estar atualizado.                                                                                                                                                                                                                                                                                                                                  |
+| MESCLAGEM \_ DE SOMBRA DE ESTADO DE CI \_ \_ 0X00000001           | O serviço de indexação está no processo de otimizar alguns dos índices para reduzir o uso de memória e melhorar o desempenho da consulta.                                                                                                                                                                                                                                                                                                                                                                |
+| CI \_ STATE MASTER MERGE \_ \_ 0X00000002           | O serviço de indexação está em processo de otimização completa para todos os índices.                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| VERIFICAÇÃO DE CONTEÚDO DE ESTADO DE CI \_ \_ NECESSÁRIA \_ \_ 0X00000004 | Alguns documentos no índice foram alterados e o serviço de indexação precisa determinar quais foram adicionados, alterados ou excluídos.                                                                                                                                                                                                                                                                                                                                                              |
+| CI \_ STATE \_ ANNEALING \_ MERGE 0X00000008        | O serviço de indexação está no processo de otimização de índices para reduzir o uso de memória e melhorar o desempenho da consulta. Esse processo é mais abrangente do que aquele identificado pelo valor CI STATE SHADOW MERGE, mas não é tão abrangente quanto especificado pelo valor \_ \_ CI STATE MASTER \_ \_ \_ \_ MERGE. Essas otimizações são específicas da implementação, pois dependem da maneira como os dados são armazenados internamente; as otimizações não afetam o protocolo de nenhuma forma diferente do tempo de resposta. |
+| VERIFICAÇÃO \_ DE ESTADO DE CI \_ 0X00000010                | O serviço de indexação está examinando um diretório ou um conjunto de diretórios para ver se algum arquivo foi adicionado, excluído ou atualizado desde a última vez em que o diretório foi indexado.                                                                                                                                                                                                                                                                                                                 |
+| CI \_ STATE \_ RECOVERING 0X00000020              | O serviço está começando do último estado salvo e está em processo de recuperação.                                                                                                                                                                                                                                                                                                                                                                                                        |
+| CI \_ STATE LOW MEMORY \_ \_ 0x00000080             | A maior parte da memória virtual do servidor está em uso.                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| CI \_ STATE \_ HIGH \_ IO 0x00000100                | O nível de atividade de E/S (entrada/saída) no servidor é relativamente alto.                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| CI \_ STATE MASTER MERGE \_ \_ \_ PAUSED 0X00000200   | O processo de otimização completa para todos os índices que estava em andamento foi pausado. Isso é dado apenas para fins informativos e não afeta o CISP.                                                                                                                                                                                                                                                                                                                                  |
+| CI \_ STATE READ ONLY \_ \_ 0X00000400              | A parte do serviço de indexação que escolhe novos documentos para indexar foi pausada. Isso é dado apenas para fins informativos e não afeta o CISP.                                                                                                                                                                                                                                                                                                                               |
+| CI \_ STATE BATTERY POWER \_ \_ 0X00000800          | A parte do serviço de indexação que escolhe novos documentos para indexar foi pausada para conservar o tempo de vida da bateria, mas ainda responde às consultas. Isso é dado apenas para fins informativos e não afeta o CISP.                                                                                                                                                                                                                                                                 |
+| CI \_ STATE USER ACTIVE \_ \_ 0X00001000            | A parte do serviço de indexação que escolhe novos documentos para indexar foi pausada devido à alta atividade do usuário (teclado ou mouse), mas ainda responde às consultas. Isso é dado apenas para fins informativos e não afeta o CISP.                                                                                                                                                                                                                                         |
+| CI \_ STATE \_ STARTING 0X00002000                | O serviço está iniciando. As consultas podem ser executados, mas a verificação e a notificação ainda não foram habilitadas. Isso é dado apenas para fins informativos e não afeta o CISP.                                                                                                                                                                                                                                                                                                                   |
+| CI \_ STATE \_ READING \_ USNS 0x00004000           | O serviço não leu o log mantido pelo sistema de arquivos para controlar as alterações em arquivos ou diretórios em um volume, portanto, o índice pode não estar atualizado.                                                                                                                                                                                                                                                                                                                                  |
 
 
 
  
 
-**cFilteredDocuments**: um inteiro de 32 bits sem sinal indicando o número de documentos indexados desde que a indexação de conteúdo foi iniciada.
+**cFilteredDocuments:** um inteiro sem sinal de 32 bits que indica o número de documentos indexados desde que a indexação de conteúdo foi iniciada.
 
-**cTotalDocuments**: um inteiro de 32 bits sem sinal indicando o número total de documentos no sistema.
+**cTotalDocuments:** um inteiro sem sinal de 32 bits que indica o número total de documentos no sistema.
 
-**cPendingScans**: um inteiro de 32 bits sem sinal indicando o número de operações pendentes de indexação de alto nível. O significado desse valor é específico do provedor, mas números maiores são esperados para indicar que mais indexação permanece.
+**cPendingScans:** um inteiro sem sinal de 32 bits que indica o número de operações pendentes de indexação de alto nível. O significado desse valor é específico do provedor, mas números maiores devem indicar que mais indexação permanece.
 
-*Comportamento do Windows*: esse valor geralmente é zero, exceto imediatamente após a indexação ter sido iniciada ou após o estouro de uma fila de notificação.
+*Windows comportamento:* esse valor geralmente é zero, exceto imediatamente após a indexação ter sido iniciada ou após um estouro de fila de notificação.
 
-**dwIndexSize**: um inteiro de 32 bits sem sinal indicando o tamanho, em megabytes, do índice (excluindo o cache de propriedades).
+**dwIndexSize:** um inteiro sem sinal de 32 bits que indica o tamanho, em megabytes, do índice (exceto o cache de propriedades).
 
-**cUniqueKeys**: um inteiro de 32 bits sem sinal indicando o número aproximado de chaves exclusivas no catálogo.
+**cUniqueKeys:** um inteiro sem sinal de 32 bits que indica o número aproximado de chaves exclusivas no catálogo.
 
-**cSecQDocuments**: um inteiro de 32 bits sem sinal indicando o número de documentos que o serviço de indexação tentará indexar devido a uma falha durante a tentativa de indexação inicial.
+**cSecQDocuments:** um inteiro sem sinal de 32 bits que indica o número de documentos que o serviço de indexação tentará indexar de novo devido a uma falha durante a tentativa de indexação inicial.
 
-**dwPropCacheSize**: um inteiro de 32 bits sem sinal indicando o tamanho, em megabytes, do cache de propriedade.
+**dwPropCacheSize:** um inteiro sem sinal de 32 bits que indica o tamanho, em megabytes, do cache de propriedades.
 
 ### <a name="2232-cpmsetcatstatein"></a>2.2.3.2 CPMSetCatStateIn
 
-A mensagem CPMSetCatStateIn define o estado de um catálogo. O formato da mensagem CPMSetCatStateIn que segue o cabeçalho é:
+A mensagem CPMSetCatStateIn define o estado de um catálogo. O formato da mensagem CPMSetCatStateIn que segue o header é:
 
 
 
@@ -4567,30 +4567,30 @@ A mensagem CPMSetCatStateIn define o estado de um catálogo. O formato da mensag
 
  
 
-**\_ partID**: DEVE ser definido como 0x00000001.
+**\_ partid**: deve ser definido como 0x00000001.
 
-**\_ dwNewState**: DEVE ser definido como um dos seguintes valores, indicando o novo estado do catálogo.
+**\_ dwNewState**: deve ser definido como um dos valores a seguir, indicando o novo estado do catálogo.
 
 
 
 | Valor                         | Significado                                                                                                                                                                 |
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CICAT \_ PARADO 0X00000001     | O catálogo é interrompido. Esse estado significa que nenhum novo arquivo deve ser indexado e nenhuma consulta de pesquisa deve ser processada.                                                     |
-| CICAT \_ READONLY 0x00000002    | O catálogo é somente leitura. Nenhum arquivo novo deve ser indexado.                                                                                                               |
-| CICAT \_ WRITABLE 0X00000004    | O catálogo pode ser escrito. Novos arquivos podem ser indexados e as consultas de pesquisa devem ser processadas.                                                                              |
-| CICAT \_ NO \_ QUERY 0X00000008   | O catálogo não está disponível para consulta.                                                                                                                              |
-| CICAT \_ GET \_ STATE 0x00000010  | O estado do catálogo não deve ser alterado, apenas recuperado.                                                                                                          |
-| CICAT \_ ALL \_ OPENED 0X00000020 | Uma verificação para ver se todos os catálogos foram iniciados. Nesse caso, o campo dwOldState enviado na resposta CPMSetCatStateOut para essa mensagem \_ será relatado como diferente de zero. |
+| CICAT \_ parou 0x00000001     | O catálogo está parado. Esse Estado significa que nenhum arquivo novo deve ser indexado e nenhuma consulta de pesquisa será processada.                                                     |
+| CICAT \_ ReadOnly 0x00000002    | O catálogo é somente leitura. Nenhum arquivo novo deve ser indexado.                                                                                                               |
+| CICAT \_ gravável 0x00000004    | O catálogo é gravável. Novos arquivos podem ser indexados e consultas de pesquisa devem ser processadas.                                                                              |
+| CICAT \_ sem \_ 0x00000008 de consulta   | O catálogo não está disponível para consulta.                                                                                                                              |
+| CICAT \_ obter \_ estado 0x00000010  | O estado do catálogo não deve ser alterado, somente recuperado.                                                                                                          |
+| CICAT \_ tudo \_ aberto 0x00000020 | Uma verificação para ver se todos os catálogos foram iniciados. Nesse caso, o \_ campo dwOldState enviado na resposta CPMSetCatStateOut a essa mensagem será relatado como diferente de zero. |
 
 
 
  
 
-**\_ CatName:** o nome do catálogo que deve ter seu estado modificado. O nome DEVE ser uma cadeia de caracteres Unicode terminada em nulo. Esse campo DEVERÁ ser omitido se \_ dwNewState estiver definido como CICAT \_ ALL \_ OPENED.
+**\_ CatName**: o nome do catálogo que deve ter seu estado modificado. O nome deve ser uma cadeia de caracteres Unicode terminada em nulo. Esse campo deve ser omitido se \_ dwNewState for definido como CICAT \_ tudo \_ aberto.
 
 ### <a name="2233-cpmsetcatstateout"></a>2.2.3.3 CPMSetCatStateOut
 
-A mensagem CPMSetCatStateOut é uma resposta a uma mensagem CPMSetCatStateIn com o estado antigo do catálogo. O formato da mensagem CPMSetCatStateOut que segue o header é:
+A mensagem CPMSetCatStateOut é uma resposta a uma mensagem CPMSetCatStateIn com o estado antigo do catálogo. O formato da mensagem CPMSetCatStateOut que segue o cabeçalho é:
 
 
 
@@ -4664,14 +4664,14 @@ A mensagem CPMSetCatStateOut é uma resposta a uma mensagem CPMSetCatStateIn com
 
  
 
-**\_ dwOldState:** um dos valores a seguir, indicando o estado antigo do catálogo.
+**\_ dwOldState**: um dos valores a seguir, indicando o estado antigo do catálogo.
 
 
 
 | Valor                       | Significado                                    |
 |-----------------------------|--------------------------------------------|
-| CICAT \_ PARADO 0X00000001   | O catálogo é interrompido.                    |
-| CICAT \_ READONLY 0x00000002  | O catálogo é somente leitura.                  |
+| CICAT \_ parou 0x00000001   | O catálogo está parado.                    |
+| CICAT \_ ReadOnly 0x00000002  | O catálogo é somente leitura.                  |
 | CICAT \_ gravável 0x00000004  | O catálogo é gravável.                   |
 | CICAT \_ sem \_ 0x00000008 de consulta | O catálogo não está disponível para consulta. |
 
@@ -4985,15 +4985,15 @@ Para obter detalhes sobre como o servidor valida o valor especificado pelo clien
 
 Se o valor for maior que 0x00000008, o cliente será considerado capaz de manipular deslocamentos de 64 bits em mensagens CPMGetRowsOut. Consulte a seção 2.2.3.16 para obter detalhes.
 
-*Comportamento do Windows: em clientes Windows, o iClientVersion é definido da seguinte maneira*:
+*comportamento de Windows: em clientes Windows, o iClientVersion é definido da seguinte maneira*:
 
 
 
 | Valor      | Significado                                                              |
 |------------|----------------------------------------------------------------------|
-| 0x00000005 | O sistema operacional do cliente é o Windows 2000.                                           |
-| 0x00000008 | O sistema operacional do cliente é o Windows XP de 32 bits ou o Windows Server 2003 de 32 bits. |
-| 0x00010008 | O sistema operacional do cliente é o Windows XP de 64 bits ou o Windows Server 2003 de 64 bits. |
+| 0x00000005 | o sistema operacional do cliente é Windows 2000.                                           |
+| 0x00000008 | o sistema operacional do cliente é de 32 bits Windows XP ou 32 bits Windows Server 2003. |
+| 0x00010008 | o sistema operacional do cliente é de 64 bits Windows XP ou 64 bits Windows Server 2003. |
 
 
 
@@ -5019,17 +5019,17 @@ Se o valor for maior que 0x00000008, o cliente será considerado capaz de manipu
 
 **PropertySet2**: uma estrutura CDbPropSet com guidPropertySet que contém DBPROPSET \_ CIFRMWRKCORE \_ ext (consulte A seção 2.2.1.22).
 
-\_**PaddingExtPropset**: esse campo deve ter de 0 a 7 bytes de comprimento. O número de bytes deve ser o número necessário para fazer o deslocamento de bytes do campo cExtPropSets do início da mensagem que contém essa estrutura ser um múltiplo de 8. O valor dos bytes pode ser qualquer valor arbitrário e DEVE ser ignorado pelo receptor.
+\_**PaddingExtPropset**: esse campo deve ter de 0 a 7 bytes de comprimento. O número de bytes deve ser o número necessário para fazer o deslocamento de bytes do campo cExtPropSets do início da mensagem que contém essa estrutura ser um múltiplo de 8. O valor dos bytes pode ser qualquer valor arbitrário e deve ser ignorado pelo destinatário.
 
-**cExtPropSet:** um inteiro sem sinal de 32 bits que indica o número de estruturas CDbPropSet após esse campo.
+**cExtPropSet**: um inteiro de 32 bits sem sinal indicando o número de estruturas CDbPropSet após este campo.
 
-**aPropertySets:** uma matriz de estruturas CDbPropSet especificando outras propriedades. O número de elementos nessa matriz DEVE ser igual a cExtPropSet.
+**aPropertySets**: uma matriz de estruturas CDbPropSet especificando outras propriedades. O número de elementos nesta matriz deve ser igual a cExtPropSet.
 
 ### <a name="2237-cpmconnectout"></a>2.2.3.7 CPMConnectOut
 
 A mensagem CPMConnectOut contém uma resposta a uma mensagem CPMConnectIn.
 
-O formato da mensagem CPMConnectOut que segue o header é:
+O formato da mensagem CPMConnectOut que segue o cabeçalho é:
 
 
 
@@ -5105,9 +5105,9 @@ O formato da mensagem CPMConnectOut que segue o header é:
 
  
 
-**\_ serverVersion:**
+**\_ serverVersion**:
 
-Um inteiro de 32 bits, indicando se o servidor pode dar suporte a deslocamentos de 64 *bits.* Consulte a seção 2.2.3.16 para obter detalhes.
+Um inteiro de 32 bits, indicando se o servidor pode dar suporte a deslocamentos de 64 bits *.* Consulte a seção 2.2.3.16 para obter detalhes.
 
 
 
@@ -5120,11 +5120,11 @@ Um inteiro de 32 bits, indicando se o servidor pode dar suporte a deslocamentos 
 
  
 
-**\_ reservado:** Reservado. O servidor PODE enviar um número arbitrário de valores arbitrários e o cliente DEVERÁ ignorar esses valores se estiver presente.
+**\_ reservado**: reservado. O servidor pode enviar um número arbitrário de valores arbitrários e o cliente deve ignorar esses valores, se houver.
 
 ### <a name="2238-cpmcreatequeryin"></a>2.2.3.8 CPMCreateQueryIn
 
-A mensagem CPMCreateQueryIn cria uma nova consulta. O formato da mensagem CPMCreateQueryIn que segue o header é:
+A mensagem CPMCreateQueryIn cria uma nova consulta. O formato da mensagem CPMCreateQueryIn que segue o cabeçalho é:
 
 
 
@@ -5196,15 +5196,15 @@ Tamanho
 
 CColumnSetPresent
 
-ColumnSet (opcional)
+Colunaset (opcional)
 
-... (variável)
+... Ela
 
 CRestrictionPresent.
 
 Restrição (opcional)
 
-... (variável)
+... Ela
 
 CSortSetPresent
 
@@ -5492,7 +5492,7 @@ A mensagem CPMGetQueryStatusOut responde a uma mensagem CPMGetQueryStatusIn com 
 
 1
 
-\_Status
+\_Estado
 
 
 
@@ -5683,7 +5683,7 @@ A mensagem CPMGetQueryStatusExOut responde a uma mensagem CPMGetQueryStatusExIn 
 
 1
 
-\_Status
+\_Estado
 
 \_cFilteredDocuments
 
@@ -5801,21 +5801,21 @@ aColumns (variável, opcional)
 
  
 
-**\_ hCursor:** um valor de 32 bits que representa o identificador da mensagem CPMCreateQueryOut que identifica a linha para a qual definir as vinculações. Esse campo DEVE estar presente quando a mensagem é enviada pelo cliente e DEVE estar ausente quando a mensagem é enviada pelo servidor.
+**\_ hCursor**: um valor de 32 bits que representa o identificador da mensagem CPMCreateQueryOut que identifica a linha para a qual definir associações. Esse campo deve estar presente quando a mensagem é enviada pelo cliente e deve estar ausente quando a mensagem é enviada pelo servidor.
 
-**\_ cbRow:** um inteiro sem sinal de 32 bits que indica o tamanho, em bytes, de uma linha. Esse campo DEVE estar presente quando a mensagem é enviada pelo cliente e DEVE estar ausente quando a mensagem é enviada pelo servidor.
+**\_ cbRow**: um inteiro de 32 bits sem sinal indicando o tamanho, em bytes, de uma linha. Esse campo deve estar presente quando a mensagem é enviada pelo cliente e deve estar ausente quando a mensagem é enviada pelo servidor.
 
-**\_ cbBindingDesc:** um inteiro sem sinal de 32 bits que indica o comprimento, em bytes, dos campos após o \_ campo fictício. Esse campo DEVE estar presente quando a mensagem é enviada pelo cliente e DEVE estar ausente quando a mensagem é enviada pelo servidor.
+**\_ cbBindingDesc**: um inteiro de 32 bits sem sinal indicando o comprimento, em bytes, dos campos que seguem o \_ campo fictício. Esse campo deve estar presente quando a mensagem é enviada pelo cliente e deve estar ausente quando a mensagem é enviada pelo servidor.
 
-**\_ fictício:** esse campo não está sendo usada e DEVE ser ignorado. Ele pode ser definido como qualquer valor arbitrário. Esse campo DEVE estar presente quando a mensagem é enviada pelo cliente e DEVE estar ausente quando a mensagem é enviada pelo servidor.
+**\_ fictícia**: Este campo não é usado e deve ser ignorado. Ele pode ser definido como qualquer valor arbitrário. Esse campo deve estar presente quando a mensagem é enviada pelo cliente e deve estar ausente quando a mensagem é enviada pelo servidor.
 
-**cColumns:** um inteiro sem sinal de 32 bits que indica o número de elementos na matriz aColumns. Esse campo DEVE estar presente quando a mensagem é enviada pelo cliente e DEVE estar ausente quando a mensagem é enviada pelo servidor.
+**cColumns**: um inteiro de 32 bits sem sinal indicando o número de elementos na matriz aColumns. Esse campo deve estar presente quando a mensagem é enviada pelo cliente e deve estar ausente quando a mensagem é enviada pelo servidor.
 
-**aColumns:** uma matriz das estruturas CTableColumn que descrevem as colunas de uma linha no conjunto de linhas. Esse campo DEVE estar presente quando a mensagem é enviada pelo cliente e DEVE estar ausente quando a mensagem é enviada pelo servidor. As estruturas na matriz DEVEM ser separadas por 0 a 3 bytes de preenchimento, de forma que cada estrutura tenha um alinhamento de 4 bytes do início de uma mensagem. Esses bytes de preenchimento podem ser qualquer valor arbitrário e DEVEM ser ignorados no recebimento.
+**aColumns**: uma matriz de estruturas CTableColumn que descreve as colunas de uma linha no conjunto de linhas. Esse campo deve estar presente quando a mensagem é enviada pelo cliente e deve estar ausente quando a mensagem é enviada pelo servidor. As estruturas na matriz devem ser separadas por 0 a 3 bytes de preenchimento, de modo que cada estrutura tenha um alinhamento de 4 bytes desde o início de uma mensagem. Esses bytes de preenchimento podem ser qualquer valor arbitrário e devem ser ignorados no recebimento.
 
 ### <a name="22315-cpmgetrowsin"></a>2.2.3.15 CPMGetRowsIn
 
-A mensagem CPMGetRowsIn solicita linhas de uma consulta. O formato da mensagem CPMGetRowsIn que segue o header é:
+A mensagem CPMGetRowsIn solicita linhas de uma consulta. O formato da mensagem CPMGetRowsIn que segue o cabeçalho é:
 
 
 
@@ -5883,7 +5883,7 @@ A mensagem CPMGetRowsIn solicita linhas de uma consulta. O formato da mensagem C
 
 1
 
-\_Hcursor
+\_hCursor
 
 \_cRowsToTransfer
 
@@ -5899,7 +5899,7 @@ A mensagem CPMGetRowsIn solicita linhas de uma consulta. O formato da mensagem C
 
 \_fBwdFetch
 
-Etype
+eType
 
 \_chapt
 
@@ -5907,27 +5907,27 @@ SeekDescription
 
 ...
 
-... (variável)
+... Ela
 
 
 
  
 
-**\_ hCursor:** um valor de 32 bits que representa o identificador da mensagem CPMCreateQueryOut que identifica a consulta para a qual recuperar linhas.
+**\_ hCursor**: um valor de 32 bits que representa o identificador da mensagem CPMCreateQueryOut que identifica a consulta para a qual recuperar linhas.
 
-**\_ cRowsToTransfer:** um inteiro sem sinal de 32 bits que indica o número máximo de linhas que o cliente deseja receber em resposta a essa mensagem.
+**\_ cRowsToTransfer**: um inteiro sem sinal de 32 bits que indica o número máximo de linhas que o cliente deseja receber em resposta a essa mensagem.
 
-**\_ cbRowWidth:** um inteiro sem sinal de 32 bits que indica o comprimento de uma linha, em bytes.
+**\_ cbRowWidth**: um inteiro de 32 bits sem sinal indicando o comprimento de uma linha, em bytes.
 
-**\_ cbSeek:** um inteiro sem sinal de 32 bits que indica o tamanho da mensagem que começa com eType.
+**\_ cbSeek**: um inteiro de 32 bits sem sinal indicando o tamanho da mensagem que começa com ETYPE.
 
-**\_ cbReserved:** um inteiro sem sinal de 32 bits que indica o tamanho, em bytes, de uma mensagem CPMGetRowsOut (sem os campos Linhas e SeekDescriptions). Esse valor nesse campo é adicionado ao valor do campo cbSeek e, em seguida, deve ser usado para calcular o deslocamento do campo Linhas na mensagem \_ CPMGetRowsOut.
+**\_ cbReserved**: um inteiro não assinado de 32 bits que indica o tamanho, em bytes, de uma mensagem CPMGetRowsOut (sem os campos Rows e SeekDescriptions). Esse valor neste campo é adicionado ao valor do \_ campo cbSeek e, em seguida, é usado para calcular o deslocamento do campo de linhas na mensagem CPMGetRowsOut.
 
-**\_ cbReadBuffer:** um inteiro sem sinal de 32 bits que DEVE ser definido como o máximo do valor \_ de cbRowWidth ou 1000 vezes o valor de cRowsToTransfer, arredondado para o múltiplo de \_ 512 byte mais próximo. O valor NÃO DEVE exceder 0x00004000.
+**\_ cbReadBuffer**: um inteiro sem sinal de 32 bits, que deve ser definido como o máximo do valor de \_ cbRowWidth ou 1000 vezes o valor de \_ cRowsToTransfer, arredondado para o múltiplo byte mais próximo de 512. O valor não deve exceder 0x00004000.
 
-**\_ ulClientBase:** um inteiro sem sinal de 32 bits que indica o valor base a ser usado para cálculos de ponteiro no buffer de linha. Se deslocamentos de 64 bits estão sendo usados, o campo reservado2 do header da mensagem é usado como os 32 bits superiores e ulClientBase como os 32 bits inferiores de um valor de \_ 64 bits. Consulte a seção 2.2.3.16 para obter detalhes.
+**\_ ulClientBase**: um inteiro de 32 bits sem sinal indicando o valor de base a ser usado para cálculos de ponteiro no buffer de linha. Se os deslocamentos de 64 bits estiverem sendo usados, o campo reserved2 do cabeçalho da mensagem será usado como o 32 superior-bits e o \_ ulClientBase como os 32 menores bits de um valor de 64 bits. Consulte a seção 2.2.3.16 para obter detalhes.
 
-**\_ fBwdFetch:** um inteiro sem sinal de 32 bits que indica a ordem na qual buscar as linhas. Se definido como 0x00000001, as linhas deverão ser buscadas na ordem inversa. Se definido como 0x00000000, as linhas deverão ser buscadas na ordem de encaminhamento. Não deve ser definido para nenhum outro valor.
+**\_ fBwdFetch**: um inteiro de 32 bits sem sinal indicando a ordem na qual buscar as linhas. Se definido como 0x00000001, as linhas serão buscadas na ordem inversa. Se definido como 0x00000000, as linhas serão buscadas na ordem de encaminhamento. Não deve ser definido para nenhum outro valor.
 
 **ETYPE**: um inteiro sem sinal de 32 bits contendo um dos valores a seguir para indicar o tipo de operação a ser executada.
 
@@ -6255,7 +6255,7 @@ A mensagem CPMRatioFinishedOut responde a uma mensagem CPMRatioFinishedIn com a 
 
 ### <a name="22319-cpmfetchvaluein"></a>2.2.3.19 CPMFetchValueIn
 
-A mensagem CPMFetchValueIn solicita um valor de propriedade muito grande para retornar em um conjuntos de linhas. Conforme especificado na seção 3.2.4.2.5, essa mensagem é enviada repetidamente para recuperar todos os bytes da propriedade, atualizando cbSoFar para cada um, até que o campo fMoreExists da mensagem \_ \_ CPMFetchValueOut seja definido como **FALSE.**
+A mensagem CPMFetchValueIn solicita um valor da propriedade que era muito grande para retornar em um conjuntos de linhas. Conforme especificado na seção 3.2.4.2.5, essa mensagem é enviada repetidamente para recuperar todos os bytes da propriedade, atualizando cbSoFar para cada um, até que o campo fMoreExists da mensagem \_ \_ CPMFetchValueOut seja definido como **FALSE.**
 
 O formato da mensagem CPMFetchValueIn que segue o header é:
 
@@ -6325,7 +6325,7 @@ O formato da mensagem CPMFetchValueIn que segue o header é:
 
 1
 
-\_Wid
+\_wid
 
 \_cbSoFar
 
@@ -6343,25 +6343,25 @@ PropSpec (variável)
 
  
 
-**\_ wid:** um inteiro sem sinal de 32 bits que contém informações sobre a ID do documento que identifica o documento para o qual uma propriedade deve ser buscada.
+**\_ wid**: um inteiro sem sinal de 32 bits contendo informações sobre a ID do documento que identifica o documento para o qual uma propriedade deve ser buscada.
 
-**\_ cbSoFar:** um inteiro sem sinal de 32 bits que contém o número de bytes transferidos anteriormente para essa propriedade. DEVE ser definido como 0x00000000 na primeira mensagem.
+**\_ cbSoFar**: um inteiro sem sinal de 32 bits contendo o número de bytes transferidos anteriormente para essa propriedade. DEVE ser definido como 0x00000000 na primeira mensagem.
 
-**\_ cbPropSpec:** um inteiro sem sinal de 32 bits que contém o tamanho do campo PropSpec, em bytes.
+**\_ cbPropSpec**: um inteiro sem sinal de 32 bits contendo o tamanho do campo PropSpec, em bytes.
 
-**\_ cbChunk:** um inteiro sem sinal de 32 bits que contém o número máximo de bytes que o remetente pode aceitar em uma mensagem CPMFetchValueOut.
+**\_ cbChunk**: um inteiro sem sinal de 32 bits contendo o número máximo de bytes que o remetente pode aceitar em uma mensagem CPMFetchValueOut.
 
-*Comportamento do Windows: esse campo é definido como 0x00004000 para todas as versões do Windows.*
+*Windows Comportamento: esse campo é definido como 0x00004000 para todas as versões do Windows.*
 
-**PropSpec:** uma estrutura CFullPropSpec especificando a propriedade a ser recuperada.
+**PropSpec**: uma estrutura CFullPropSpec que especifica a propriedade a ser recuperada.
 
-**\_ preenchimento:** esse campo DEVE ter o comprimento necessário (de 0 a 3 bytes) para pad da mensagem para um múltiplo de 4 bytes de comprimento. O valor dos bytes de preenchimento pode ser qualquer valor arbitrário. Esse campo DEVE ser ignorado pelo receptor.
+**\_ preenchimento**: esse campo deve ter o comprimento necessário (de 0 a 3 bytes) para preencher a mensagem para um múltiplo de 4 bytes de comprimento. O valor dos bytes de preenchimento pode ser qualquer valor arbitrário. Este campo deve ser ignorado pelo destinatário.
 
 ### <a name="22320-cpmfetchvalueout"></a>2.2.3.20 CPMFetchValueOut
 
-A mensagem CPMFetchValueOut responde a uma mensagem CPMFetchValueIn com um valor de propriedade de uma consulta anterior. Conforme especificado na seção 3.1.5.2.8, essa mensagem é enviada após cada mensagem CPMFetchValueIn até que todos os bytes da propriedade sejam transferidos.
+A mensagem CPMFetchValueOut responde a uma mensagem CPMFetchValueIn com um valor de propriedade de uma consulta anterior. Conforme especificado na seção 3.1.5.2.8, essa mensagem é enviada após cada mensagem de CPMFetchValueIn até que todos os bytes da propriedade sejam transferidos.
 
-O formato da mensagem CPMFetchValueOut que segue o header é:
+O formato da mensagem CPMFetchValueOut que segue o cabeçalho é:
 
 
 
@@ -6429,7 +6429,7 @@ O formato da mensagem CPMFetchValueOut que segue o header é:
 
 1
 
-\_Cbvalue
+\_cbValue
 
 \_fMoreExists
 
@@ -6443,25 +6443,25 @@ vValue (variável)
 
  
 
-**\_ cbValue:** um inteiro sem sinal de 32 bits que contém o tamanho total, em bytes em vValue.
+**\_ cbValue**: um inteiro sem sinal de 32 bits contendo o tamanho total, em bytes em vValue.
 
-**\_ fMoreExists:** um valor booliana que indica se há mensagens CPMFetchValueOut adicionais disponíveis. Se definido como 0x00000001, haverá mensagens CPMFetchValueOut adicionais. Se definido como 0x00000000, não haverá mensagens CPMFetchValueOut adicionais disponíveis.
+**\_ fMoreExists**: um valor booliano que indica se há mensagens CPMFetchValueOut adicionais disponíveis. Se definido como 0x00000001, há mensagens CPMFetchValueOut adicionais. Se definido como 0x00000000, não há nenhuma mensagem CPMFetchValueOut adicional disponível.
 
-**\_ fValueExists:** um valor booliana que indica se há um valor para a propriedade . Se definido como 0x00000001, existe um valor para a propriedade . Se definido como 0x00000000, um valor para a propriedade não existirá.
+**\_ fValueExists**: um valor booliano que indica se há um valor para a propriedade. Se definido como 0x00000001, um valor para a propriedade existirá. Se definido como 0x00000000, um valor para a propriedade não existe.
 
-**vType:** um valor da enumeração VARENUM, consulte a Seção 2.2.1.1 para obter detalhes, descrevendo o tipo da propriedade.
+**vType**: um valor da enumeração VarEnum, consulte a seção 2.2.1.1 para obter detalhes, descrevendo o tipo da propriedade.
 
-**vValue:** uma parte de uma matriz de byte que contém uma estrutura SERIALIZEDPROPERTYVALUE, conforme especificado na seção 2.2.1.32, em que o deslocamento do início da parte é o valor \_ de cbSoFar em CPMFetchValueIn. O comprimento da parte, indicado pelo campo cbValue, DEVE ser igual ao valor de \_ \_ cbChunk em CPMFetchValueIn se fMoreExists estiver definido como 0x00000001 e DEVE ser menor ou igual ao valor \_ de \_ cbChunk, caso contrário.
+**vValue**: uma parte de uma matriz de bytes que contém uma estrutura SERIALIZEDPROPERTYVALUE, conforme especificado na seção 2.2.1.32, em que o deslocamento do início da parte é o valor de \_ cbSoFar em CPMFetchValueIn. O comprimento da parte, indicado pelo \_ campo cbValue, deve ser igual ao valor de \_ CbChunk em CPMFetchValueIn se \_ fMoreExists for definido como 0x00000001 e deve ser menor ou igual ao valor de \_ cbChunk caso contrário.
 
 ### <a name="22321-cpmgetnotify"></a>2.2.3.21 CPMGetNotify
 
-A mensagem CPMGetNotify solicita que o cliente queira ser notificado sobre alterações no conjuntos de linhas.
+A mensagem CPMGetNotify solicita que o cliente seja notificado das alterações de conjunto de linhas.
 
-A mensagem NÃO DEVE incluir um corpo; somente o header da mensagem, conforme especificado na Seção 2.2.2, deve ser enviado.
+A mensagem não deve incluir um corpo; somente o cabeçalho da mensagem, conforme especificado na seção 2.2.2, deve ser enviado.
 
 ### <a name="22322-cpmsendnotifyout"></a>2.2.3.22 CPMSendNotifyOut
 
-A mensagem CPMSendNotifyOut notifica o cliente de uma alteração nos resultados de uma consulta.
+A mensagem CPMSendNotifyOut notifica o cliente sobre uma alteração nos resultados de uma consulta.
 
 Essa mensagem só é enviada quando ocorre uma alteração. O formato da mensagem CPMSendNotifyOut que segue o header é:
 
@@ -6715,15 +6715,15 @@ A mensagem CPMGetApproximatePositionOut responde a uma mensagem CPMGetApproximat
 
  
 
-**\_ numerador**: um inteiro de 32 bits sem sinal contendo o número de linha do indicador no conjunto de linhas. Se não houver linhas, esse campo deverá ser definido como 0x00000000.
+**\_ numerador**: um inteiro sem sinal de 32 bits que contém o número de linha do indicador no conjuntos de linhas. Se não houver linhas, esse campo DEVERÁ ser definido como 0x00000000.
 
-**\_ denominador**: um inteiro sem sinal de 32 bits contendo o número de linhas no conjunto de linhas.
+**\_ denominador**: um inteiro sem sinal de 32 bits que contém o número de linhas no conjuntos de linhas.
 
 ### <a name="22325-cpmcomparebmkin"></a>2.2.3.25 CPMCompareBmkIn
 
 A mensagem CPMCompareBmkIn solicita uma comparação de dois indicadores em um capítulo.
 
-O formato da mensagem CPMCompareBmkIn que segue o cabeçalho é:
+O formato da mensagem CPMCompareBmkIn que segue o header é:
 
 
 
@@ -6791,7 +6791,7 @@ O formato da mensagem CPMCompareBmkIn que segue o cabeçalho é:
 
 1
 
-\_hCursor
+\_Hcursor
 
 \_chapt
 
@@ -6803,17 +6803,17 @@ O formato da mensagem CPMCompareBmkIn que segue o cabeçalho é:
 
  
 
-\_**hCursor**: um valor de 32 bits que representa o identificador da mensagem CPMCreateQueryOut para o conjunto de linhas que contém os indicadores.
+\_**hCursor:** um valor de 32 bits que representa o handle da mensagem CPMCreateQueryOut para o conjuntos de linhas que contém os indicadores.
 
-\_**chapt**: um valor de 32 bits que representa o identificador do capítulo que contém os indicadores a serem comparados.
+\_**chapt:** um valor de 32 bits que representa o handle do capítulo que contém os indicadores a comparar.
 
-\_**bmkFirst**: um valor de 32 bits que representa o identificador para o primeiro indicador a ser comparado.
+\_**bmkFirst:** um valor de 32 bits que representa o indicador para o primeiro indicador a ser comparado.
 
-\_**bmkSecond**: um valor de 32 bits que representa o identificador para o segundo indicador a ser comparado.
+\_**bmkSecond:** um valor de 32 bits que representa o indicador para o segundo indicador a ser comparado.
 
 ### <a name="22326-cpmcomparebmkout"></a>2.2.3.26 CPMCompareBmkOut
 
-A mensagem CPMCompareBmkOut responde a uma mensagem CPMCompareBmkIn com a comparação dos dois indicadores no capítulo. O formato da mensagem CPMCompareBmkOut que segue o cabeçalho é:
+A mensagem CPMCompareBmkOut responde a uma mensagem CPMCompareBmkIn com a comparação dos dois indicadores no capítulo. O formato da mensagem CPMCompareBmkOut que segue o header é:
 
 
 
@@ -6894,10 +6894,10 @@ A mensagem CPMCompareBmkOut responde a uma mensagem CPMCompareBmkIn com a compar
 | Valor                               | Significado                                                           |
 |-------------------------------------|-------------------------------------------------------------------|
 | DBCOMPARE \_ LT 0x00000000            | O primeiro indicador é posicionado antes do segundo.               |
-| DbCOMPARE \_ EQ 0x00000001            | O primeiro indicador tem a mesma posição que o segundo.           |
+| DBCOMPARE \_ EQ 0x00000001            | O primeiro indicador tem a mesma posição que o segundo.           |
 | DBCOMPARE \_ GT 0x00000002            | O primeiro indicador é posicionado após o segundo.                |
 | DBCOMPARE \_ NE 0x00000003            | O primeiro indicador não tem a mesma posição que o segundo. |
-| DBCOMPARE \_ NOTCOMPARABLE 0X00000004 | O primeiro indicador não é comparável ao segundo.               |
+| DBCOMPARE \_ NOTCOMPARABLE 0x00000004 | O primeiro indicador não é comparável ao segundo.               |
 
 
 
@@ -7057,17 +7057,17 @@ A mensagem CPMFreeCursorIn solicita a liberação de um cursor. O formato da men
 
 1
 
-\_Hcursor
+\_hCursor
 
 
 
  
 
-**\_ hCursor:** um valor de 32 bits que representa o handle do cursor da mensagem CPMCreateQueryOut a ser liberado.
+**\_ hCursor**: um valor de 32 bits que representa o identificador do cursor a partir da mensagem CPMCreateQueryOut a ser liberada.
 
 ### <a name="22329-cpmfreecursorout"></a>2.2.3.29 CPMFreeCursorOut
 
-A mensagem CPMFreeCursorOut responde a uma mensagem CPMFreeCursorIn com os resultados da liberação de um cursor. O formato da mensagem CPMFreeCursorOut que segue o header é:
+A mensagem CPMFreeCursorOut responde a uma mensagem CPMFreeCursorIn com os resultados de liberar um cursor. O formato da mensagem CPMFreeCursorOut que segue o cabeçalho é:
 
 
 
@@ -7141,64 +7141,64 @@ A mensagem CPMFreeCursorOut responde a uma mensagem CPMFreeCursorIn com os resul
 
  
 
-**\_ cCursorsRemaining:** um inteiro sem sinal de 32 bits que indica o número de cursores ainda em uso para a consulta.
+**\_ cCursorsRemaining**: um inteiro de 32 bits sem sinal indicando o número de cursores que ainda estão em uso para a consulta.
 
 ### <a name="22330-cpmdisconnect"></a>2.2.3.30 CPMDisconnect
 
-A mensagem CPMDisconnect encerra a conexão com o servidor
+A mensagem CPMDisconnect finaliza a conexão com o servidor
 
-A mensagem NÃO DEVE incluir um corpo; somente o header da mensagem, conforme especificado na Seção 2.2.2 deve ser enviado.
+A mensagem não deve incluir um corpo; somente o cabeçalho da mensagem, conforme especificado na seção 2.2.2, deve ser enviado.
 
-### <a name="224-errors"></a>2.2.4 Erros
+### <a name="224-errors"></a>erros de 2.2.4
 
-Todas as mensagens do Protocolo do Serviço de Indexação de Conteúdo DEVEM retornar 0x00000000 êxito; caso contrário, eles retornarão um código de erro de 32 bits diferente de zero que pode ser um HRESULT ou um valor NTSTATUS (consulte a seção 1.8). Se um buffer for muito pequeno para se ajustar a um resultado, um código de status de STATUS \_ INSUFFICIENT RESOURCES (0xC0000009A) DEVERÁ ser retornado e a operação com falha deverá ser recuperada com um \_ buffer maior.
+Todas as mensagens do protocolo de serviço de indexação de conteúdo devem retornar 0x00000000 em caso de sucesso; caso contrário, eles retornam um código de erro de 32 bits diferente de zero, que pode ser um valor HRESULT ou NTSTATUS (consulte a seção 1,8). Se um buffer for muito pequeno para se ajustar a um resultado, um código de status de STATUS \_ insuficiente de \_ recursos (0XC0000009A) deverá ser retornado e a operação com falha deverá ser repetida com um buffer maior.
 
-Todos os outros valores de erro DEVEM ser tratados da mesma forma.
+Todos os outros valores de erro devem ser tratados da mesma.
 
-(Observe que, atualmente, os espaços de numeração HRESULT e NTSTATUS não se sobrepõem, exceto com valores de significado idêntico, mas mesmo se fossem conflitos no futuro, isso não causaria problemas de protocolo, desde que o valor para STATUS \_ RECURSOS \_ INSUFICIENTES permanecem exclusivos, pois todos os outros valores de erro são tratados da mesma forma.)
+(Observe que, no momento, os espaços de numeração HRESULT e NTSTATUS não se sobrepõem, exceto com valores de significado idêntico, mas mesmo que eles tenham que estar em conflito no futuro, isso não causaria nenhum problema de protocolo, contanto que o valor do STATUS \_ Recursos insuficientes \_ permanecem exclusivos, pois todos os outros valores de erro são tratados da mesma maneira.)
 
 ## <a name="3-protocol-details"></a>3 Detalhes do protocolo
 
--   [3.1 Detalhes do servidor](#31-server-details)
--   [3.2 Detalhes do cliente](#32-client-details)
+-   [3,1 detalhes do servidor](#31-server-details)
+-   [3,2 detalhes do cliente](#32-client-details)
 
-As solicitações de mensagem cisp para consultar remotamente os catálogos de serviço de indexação não exigem nenhuma sequência específica. No entanto, é aconselhável que a camada superior adera a uma sequência de mensagens significativa, quanto às mensagens recebidas fora dessa sequência ou com dados inválidos, o servidor responderá com um erro. Algumas mensagens também dependem da camada superior, fornecendo dados válidos que foram recebidos em mensagens anteriormente na sequência.
+Solicitações de mensagens CISP para consultar remotamente os catálogos de serviço de indexação não exigem nenhuma sequência específica. É recomendável que a camada mais alta obedeça a uma sequência de mensagens significativa, no entanto, para mensagens recebidas dessa sequência ou com dados inválidos, o servidor responderá com um erro. Algumas mensagens também dependem da camada superior, fornecendo dados válidos que foram recebidos nas mensagens anteriores na sequência.
 
 Uma sequência de mensagens típica para uma consulta simples de um cliente para um computador remoto é ilustrada no diagrama a seguir.
 
 ![sequência de mensagens para consulta simples](images/protocoldetails.jpg)
 
-As mensagens representadas no diagrama anterior representam um subconjunto de todas as mensagens CISP usadas para consultar um catálogo de serviços de indexação remota.
+As mensagens representadas no diagrama anterior representam um subconjunto de todas as mensagens CISP usadas para consultar um catálogo de serviço de indexação remota.
 
-### <a name="31-server-details"></a>3.1 Detalhes do servidor
+### <a name="31-server-details"></a>3,1 detalhes do servidor
 
 ### <a name="311-abstract-data-model"></a>3.1.1 Modelo de dados abstratos
 
-A seção a seguir especifica os dados e o estado mantidos pelo servidor CISP. Os dados fornecidos aqui são para facilitar a explicação de como o protocolo se comporta. Esta seção não determina que as implementações aderam a esse modelo, desde que seu comportamento externo seja consistente com o descrito neste documento.
+A seção a seguir especifica os dados e o estado mantidos pelo servidor CISP. Os dados fornecidos aqui são para facilitar a explicação de como o protocolo se comporta. Esta seção não exige que as implementações sigam esse modelo, desde que seu comportamento externo seja consistente com o descrito neste documento.
 
-Um serviço de indexação que implementa o CISP DEVE manter os seguintes elementos de dados abstratos:
+Um serviço de indexação que implementa o CISP deve manter os seguintes elementos de dados abstratos:
 
 -   A lista de clientes conectados ao servidor
 -   Informações sobre cada cliente, que inclui:
 -   -   Versão do cliente (conforme indicado na mensagem CPMConnectIn especificada na seção 2.2.3.6)
     -   Catálogo associado ao cliente (por uma mensagem CPMConnectIn)
-    -   Propriedades adicionais do cliente, conforme especificado na seção 2.2.1.21.1.
+    -   Propriedades de cliente adicionais, conforme especificado na seção 2.2.1.21.1.
     -   Consulta de pesquisa do cliente
-    -   Lista de alças de cursor para a consulta e a posição no conjunto de resultados para cada alça.
-    -   Conjunto atual de vinculações
+    -   Lista de identificadores de cursor para a consulta e a posição no conjunto de resultados para cada identificador.
+    -   Conjunto atual de associações
     -   Status atual da consulta que inclui (para cada cursor):
     -   -   Número de linhas no resultado da consulta
         -   Numerador e denominador da conclusão da consulta
-        -   Último número de linhas, relatado pela mensagem CPMRatioFinishedOut mais recente para este cursor
-        -   Se a consulta é monitorada pelo servidor quanto a alterações nos resultados da consulta e se ela é monitorada, o que mudou nos resultados da consulta desde que foi relatado pela última vez ao cliente pelo CPMSendNotifyOut
-        -   Lista de alças de capítulos, atendidas por essa consulta a um cliente.
-        -   Lista de alças de indicador para cada cursor, atendida por essa consulta a um cliente.
+        -   Último número de linhas, relatadas pela mensagem CPMRatioFinishedOut mais recente para este cursor
+        -   Se a consulta é monitorada pelo servidor para alterações nos resultados da consulta e se ela é monitorada, o que mudou nos resultados da consulta desde que ele foi relatado pela última vez no cliente por CPMSendNotifyOut
+        -   A lista de capítulos manipula, servida por essa consulta, um cliente.
+        -   Lista de identificadores de indicadores para cada cursor, servidas por essa consulta a um cliente.
 
--   O estado atual do serviço de indexação, que pode ser "não inicializado", "em execução" ou "desligando". Observe que, na maioria das vezes, o servidor está no estado "em execução". A seguir está o diagrama do computador de estado para o servidor:
+-   O estado atual do serviço de indexação, que pode ser "não inicializado", "em execução" ou "desligando". Observe que a maior parte do servidor de horário está no estado "em execução". A seguir está o diagrama de máquina de estado para o servidor:
 
-    ![diagrama do computador de estado do servidor de serviço de indexação](images/abstractdatamodel.jpg)
+    ![diagrama de máquina de estado do servidor de serviço de indexação](images/abstractdatamodel.jpg)
 
--   Informações por catálogo: número de documentos indexados, tamanho do índice, número de chaves exclusivas, etc (consulte a seção 2.2.3.1 para obter a lista completa), estado (que corresponde aos valores de dwNewState na seção 2.2.3.2).
+-   Informações por catálogo: número de documentos indexados, tamanho do índice, número de chaves exclusivas etc (consulte a seção 2.2.3.1 para obter a lista completa), estado (que corresponde aos valores de dwNewState na seção 2.2.3.2).
 -   Para cada idioma com suporte, um banco de dados de variações de palavras, conforme discutido na seção 2.2.1.3.
 
 ### <a name="312-timers"></a>3.1.2 Temporizadores
@@ -7207,23 +7207,23 @@ Nenhum temporizador de protocolo é necessário.
 
 ### <a name="313-initialization"></a>3.1.3 Inicialização
 
-Na inicialização, o servidor deve definir seu estado como "não inicializado" e começar a escutar mensagens no pipe nomeado especificado na seção 1,9. Depois de fazer qualquer outra inicialização interna, ela deve fazer a transição para o estado "em execução".
+Após a inicialização, o servidor DEVE definir seu estado como "não inicializado" e começar a escutar mensagens no pipe nomeado especificado na seção 1.9. Depois de fazer qualquer outra inicialização interna, ele DEVE fazer a transição para o estado "em execução".
 
 ### <a name="314-higher-layer-triggered-events"></a>3.1.4 Eventos disparados de camada superior
 
 Nenhum.
 
-### <a name="315-message-processing-and-sequencing-rules"></a>Processamento de mensagens 3.1.5 e regras de sequenciamento
+### <a name="315-message-processing-and-sequencing-rules"></a>3.1.5 Regras de processamento e sequenciamento de mensagens
 
-Sempre que ocorrer um erro durante o processamento de uma mensagem enviada por um cliente, o servidor deverá relatar um erro de volta ao cliente da seguinte maneira:
+Sempre que houver um erro durante o processamento de uma mensagem enviada por um cliente, o servidor DEVERÁ relatar um erro de volta ao cliente da seguinte forma:
 
--   Parar o processamento da mensagem enviada pelo cliente
--   Responda com o cabeçalho da mensagem (somente) da mensagem enviada pelo cliente, mantendo o \_ campo msg intacto.
--   Defina o \_ campo status para o valor do código de erro.
+-   Interromper o processamento da mensagem enviada pelo cliente
+-   Responda com o header da mensagem (somente) da mensagem enviada pelo cliente, mantendo o \_ campo msg intacto.
+-   De definir o \_ campo de status como o valor do código de erro.
 
-Quando uma mensagem chega, o servidor deve verificar o \_ valor do campo msg para ver se ele é um tipo conhecido (consulte a seção 2.2.2). Se o tipo não for conhecido, ele deverá relatar um \_ erro de \_ parâmetro inválido (0xC000000D) de status.
+Quando uma mensagem chega, o servidor DEVE verificar o valor do campo msg para ver se ele é um tipo \_ conhecido (consulte a seção 2.2.2). Se o tipo não for conhecido, ele DEVERÁ relatar um erro STATUS \_ INVALID \_ PARAMETER (0xC000000D).
 
-O servidor deve validar o \_ valor do campo ulChecksum se o tipo de mensagem for um dos seguintes:
+Em seguida, o servidor DEVERÁ validar o valor do campo \_ ulChecksum se o tipo de mensagem for um dos seguintes:
 
 -   CPMConnectIn (0x000000C8)
 -   CPMCreateQueryIn (0x000000CA)
@@ -7231,85 +7231,85 @@ O servidor deve validar o \_ valor do campo ulChecksum se o tipo de mensagem for
 -   CPMGetRowsIn (0x000000CC)
 -   CPMFetchValueIn (0x000000E4)
 
-Para validar o \_ valor do campo ulChecksum, o servidor deve verificar o valor especificado pelo cliente no \_ campo iClientVersion da mensagem CPMConnectIn.
+Para validar o valor do campo ulChecksum, o servidor DEVE verificar o valor especificado pelo cliente no campo \_ \_ iClientVersion na mensagem CPMConnectIn.
 
-Se o \_ campo iClientVersion não estiver definido como 0x00000008 e o \_ campo ulChecksum não estiver definido como 0x00000000, o servidor deverá relatar um \_ erro de \_ parâmetro inválido (0xC000000D) de status. O servidor não deve validar o \_ campo ulChecksum para clientes defina o \_ campo iClientVersion com um valor menor que 0x00000008.
+Se o campo iClientVersion não estiver definido como 0x00000008 e o campo ulChecksum não estiver definido como 0x00000000, o servidor DEVERÁ relatar um erro \_ \_ STATUS INVALID PARAMETER \_ \_ (0xC000000D). O servidor NÃO DEVE validar o campo ulChecksum para clientes, o campo \_ iClientVersion definido como um \_ valor menor que 0x00000008.
 
-Se o \_ valor do campo iClientVersionfield for 0x00000008 ou superior, o servidor deverá validar que o \_ campo ulChecksum foi calculado conforme especificado na seção 3.2.4. Se o \_ valor de ulChecksum for inválido, o servidor deverá relatar um \_ \_ erro de parâmetro inválido (0XC000000D) de status.
+Se o valor do campo iClientVersionfield for 0x00000008 ou superior, o servidor DEVERÁ validar se o campo ulChecksum foi calculado conforme especificado na seção \_ \_ 3.2.4. Se o \_ valor ulChecksum for inválido, o servidor DEVERÁ relatar um erro STATUS \_ INVALID PARAMETER \_ (0xC000000D).
 
-Em seguida, o servidor verifica em qual estado ele está. Se seu estado for "não inicializado", o servidor deverá relatar \_ um \_ erro CI E não \_ inicializado (0x8004180B). Se o estado for "desligando", o servidor deverá relatar \_ um \_ erro de desligamento CI E Shutdown (0x80041812).
+Em seguida, o servidor verifica em qual estado ele está. Se seu estado for "não inicializado", o servidor DEVERÁ relatar um erro CI \_ E \_ NOT \_ INITIALIZED (0x8004180B). Se o estado estiver "desligando", o servidor DEVERÁ relatar um erro DE DESLIGAMENTO \_ de CI E \_ (0x80041812).
 
-Depois que um cabeçalho for determinado como válido e o servidor estar no estado "em execução", o processamento adicional específico à mensagem deverá ser feito conforme especificado nas subseções abaixo.
+Depois que um header for determinado como válido e o servidor estar no estado "em execução", o processamento específico da mensagem deverá ser feito conforme especificado nas subseções abaixo.
 
-### <a name="3151-remote-indexing-service-catalog-management"></a>Gerenciamento de catálogo do serviço de indexação remota do 3.1.5.1
+### <a name="3151-remote-indexing-service-catalog-management"></a>3.1.5.1 Gerenciamento de Catálogo do Serviço de Indexação Remota
 
-### <a name="31511-receiving-a-cpmcistateinout-request"></a>3.1.5.1.1 recebendo uma solicitação CPMCiStateInOut
+### <a name="31511-receiving-a-cpmcistateinout-request"></a>3.1.5.1.1 Recebendo uma solicitação CPMCiStateInOut
 
-Quando o servidor recebe uma solicitação de mensagem CPMCIStateInOut do cliente, o servidor deve primeiro verificar se o cliente está em uma lista de clientes conectados. Se o cliente não estiver na lista, o servidor deverá relatar um \_ erro de \_ parâmetro inválido (0xC000000D) de status. Caso contrário, ele deve responder ao cliente com uma mensagem CPMCIStateInOut, preenchendo-o com informações sobre o catálogo associado do cliente, conforme especificado na seção 2.2.3.1.
+Quando o servidor recebe uma solicitação de mensagem CPMCIStateInOut do cliente, o servidor DEVE primeiro verificar se o cliente está em uma lista de clientes conectados. Se o cliente não estiver na lista, o servidor DEVERÁ relatar um erro STATUS \_ INVALID \_ PARAMETER (0xC000000D). Caso contrário, ele DEVERÁ responder ao cliente com uma mensagem CPMCIStateInOut, preenchendo-o com informações sobre o catálogo associado do cliente, conforme especificado na Seção 2.2.3.1.
 
-### <a name="31512-receiving-a-cpmsetcatstatein-request"></a>3.1.5.1.2 recebendo uma solicitação CPMSetCatStateIn
+### <a name="31512-receiving-a-cpmsetcatstatein-request"></a>3.1.5.1.2 Recebendo uma solicitação CPMSetCatStateIn
 
-Quando o servidor recebe uma solicitação de mensagem CPMSetCatStateIn do cliente, o servidor deve fazer o seguinte:
+Quando o servidor recebe uma solicitação de mensagem CPMSetCatStateIn do cliente, o servidor DEVE fazer o seguinte:
 
--   Verifique se o cliente tem acesso administrativo. Se o cliente não tiver acesso administrativo, o servidor deverá relatar um erro de STATUS de \_ acesso \_ negado (0xC0000022).
--   Se \_ dwNewState não for igual a CICAT \_ todos \_ abertos, altere o estado do catálogo especificado no campo CatName conforme especificado pelo \_ campo dwNewState. Consulte a seção 2.2.3.2 para obter mais detalhes. Se o servidor não localizar um catálogo com o nome especificado no campo CatName, o servidor deverá retornar um \_ erro de parâmetro inválido \_ (0xC000000D) de status.
--   Responda ao cliente com uma mensagem CPMSetCatStateOut, em que \_ DWOLDSTATE deve ser definido como o estado anterior do catálogo. Se \_ dwNewState for igual a CICAT \_ todos \_ abertos, o servidor deverá verificar o status de todos os catálogos e, se todos eles forem iniciados, ele deverá definir \_ dwOldState como 0x00000001 e, caso contrário, definirá \_ dwOldState como 0x00000000.
+-   Verifique se o cliente tem acesso administrativo. Se o cliente não tiver acesso administrativo, o servidor DEVERÁ relatar um erro STATUS \_ ACCESS \_ NEGADO (0xC0000022).
+-   Se dwNewState não for igual a CICAT ALL OPENED, altere o estado do catálogo especificado no campo CatName, conforme especificado pelo campo \_ \_ \_ \_ dwNewState. Consulte a Seção 2.2.3.2 para obter mais detalhes. Se o servidor não localizar um catálogo com o nome especificado no campo CatName, o servidor DEVERÁ retornar um erro STATUS \_ INVALID \_ PARAMETER (0xC000000D).
+-   Responda ao cliente com uma mensagem CPMSetCatStateOut, em que dwOldState DEVE ser definido como o \_ estado anterior do catálogo. Se dwNewState for igual a CICAT ALL OPENED, o servidor DEVERÁ verificar o status de todos os catálogos e, se todos eles são iniciados, deverá definir \_ \_ \_ \_ dwOldState como 0x00000001 e, caso contrário, \_ definir dwOldState como 0x00000000.
 
-### <a name="31513-receiving-a-cpmupdatedocumentsin-request"></a>3.1.5.1.3 recebendo uma solicitação CPMUpdateDocumentsIn
+### <a name="31513-receiving-a-cpmupdatedocumentsin-request"></a>3.1.5.1.3 Recebendo uma solicitação CPMUpdateDocumentsIn
 
-Quando o servidor recebe uma solicitação de mensagem CPMUpdateDocumentsIn, o servidor deve fazer o seguinte:
+Quando o servidor recebe uma solicitação de mensagem CPMUpdateDocumentsIn, o servidor DEVE fazer o seguinte:
 
--   Verifique se o cliente está em uma lista de clientes conectados (que têm um catálogo associado). Se o cliente não estiver na lista, o servidor deverá relatar um \_ erro de \_ parâmetro inválido (0xC000000D) de status.
--   Verifique se o cliente tem acesso administrativo. Se o cliente não tiver acesso administrativo ao servidor, o servidor deverá relatar um erro de STATUS de \_ acesso \_ negado (0xC0000022).
--   Inicie o processo de indexação do caminho especificado pelo cliente, fazendo uma verificação completa ou incremental, dependendo do valor do \_ campo sinalizador na mensagem CPMUpdateDocumentsIn. Se o caminho não tiver sido indexado anteriormente, ele deverá ser adicionado à coleção de locais indexados e uma verificação completa realizada. Se um valor ilegal do \_ campo flag for especificado, o servidor deverá agir como se o \_ sinalizador fosse definido como UPD \_ init e executar uma verificação completa. Esta operação deve ser executada no catálogo associado ao cliente.
--   Responda ao cliente com o cabeçalho da mensagem para o CPMUpdateDocumentsIn e defina o \_ campo status para os resultados da solicitação.
+-   Verifique se o cliente está em uma lista de clientes conectados (que têm um catálogo associado). Se o cliente não estiver na lista, o servidor DEVERÁ relatar um erro STATUS \_ INVALID \_ PARAMETER (0xC000000D).
+-   Verifique se o cliente tem acesso administrativo. Se o cliente não tiver acesso administrativo ao servidor, o servidor DEVERÁ relatar um erro STATUS \_ ACCESS \_ NEGADO (0xC0000022).
+-   Inicie o processo de indexação do caminho especificado pelo cliente, fazendo uma verificação completa ou incremental, dependendo do valor do campo de sinalizador na mensagem \_ CPMUpdateDocumentsIn. Se o caminho não foi indexado anteriormente, ele DEVE ser adicionado à coleção de locais indexados e uma verificação completa executada. Se um valor ilegal do campo de sinalizador for especificado, o servidor DEVERÁ agir como se o sinalizador tivesse sido definido como \_ \_ UPD \_ INIT e executar uma verificação completa. Essa operação DEVE ser executada no catálogo associado ao cliente.
+-   Responda ao cliente com o header da mensagem para CPMUpdateDocumentsIn e de definir o campo de status para os \_ resultados da solicitação.
 
-### <a name="31514-receiving-a-cpmforcemergein-request"></a>3.1.5.1.4 recebendo uma solicitação CPMForceMergeIn
+### <a name="31514-receiving-a-cpmforcemergein-request"></a>3.1.5.1.4 Recebendo uma solicitação CPMForceMergeIn
 
-Quando o servidor recebe uma solicitação de mensagem CPMForceMergeIn, o servidor deve fazer o seguinte:
+Quando o servidor recebe uma solicitação de mensagem CPMForceMergeIn, o servidor DEVE fazer o seguinte:
 
--   Verifique se o cliente está em uma lista de clientes conectados (que têm um catálogo associado). Se o cliente não estiver na lista, o servidor deverá relatar um \_ \_ erro de parâmetro inválido (0xC000000D) de status.
--   Verifique se o cliente tem acesso administrativo. Se o cliente não tiver acesso administrativo, o servidor deverá relatar um erro de STATUS de \_ acesso \_ negado (0xC0000022).
--   Inicie qualquer processo de manutenção necessário para melhorar o desempenho de consulta em um catálogo, associado ao cliente.
--   Responda ao cliente com um cabeçalho de mensagem para o CPMForceMergeIn e defina o \_ campo status para os resultados da solicitação.
+-   Verifique se o cliente está em uma lista de clientes conectados (que têm um catálogo associado). Se o cliente não estiver na lista, o servidor DEVERÁ relatar um erro STATUS \_ INVALID \_ PARAMETER (0xC000000D).
+-   Verifique se o cliente tem acesso administrativo. Se o cliente não tiver acesso administrativo, o servidor DEVERÁ relatar um erro STATUS \_ ACCESS \_ NEGADO (0xC0000022).
+-   Inicie qualquer processo de manutenção necessário para melhorar o desempenho da consulta em um catálogo, associado ao cliente.
+-   Responder ao cliente com um header de mensagem para o CPMForceMergeIn e definir o campo de status como \_ os resultados da solicitação.
 
-Observe que o processo de manutenção é assíncrono e pode continuar depois que o cliente recebe a mensagem de resposta. Esse processo não afeta diretamente o protocolo de nenhuma forma (além do tempo de resposta).
+Observe que o processo de manutenção é assíncrono e pode continuar depois que o cliente recebe a mensagem de resposta. Esse processo não afeta diretamente o protocolo de forma alguma (diferente do tempo de resposta).
 
-### <a name="3152-remote-indexing-service-querying"></a>Consulta do serviço de indexação remota do 3.1.5.2
+### <a name="3152-remote-indexing-service-querying"></a>3.1.5.2 Consulta do Serviço de Indexação Remota
 
-### <a name="31521-receiving-a-cpmconnectin-request"></a>3.1.5.2.1 recebendo uma solicitação CPMConnectIn
+### <a name="31521-receiving-a-cpmconnectin-request"></a>3.1.5.2.1 Recebendo uma solicitação CPMConnectIn
 
-Quando o servidor recebe uma solicitação CPMConnectIn de um cliente, o servidor deve fazer o seguinte:
+Quando o servidor recebe uma solicitação CPMConnectIn de um cliente, o servidor DEVE fazer o seguinte:
 
--   Verifique se o cliente está na lista de clientes conectados. Se esse for o caso, o servidor deverá relatar um \_ erro de \_ parâmetro inválido (0xC000000D) de status.
--   Verifica se o catálogo especificado existe e não está no estado parado. Se esse não for o caso, o servidor deverá ter um erro de CI \_ E \_ nenhum \_ catálogo (0x8004181D) de relatório.
+-   Verifique se o cliente está na lista de clientes conectados. Se esse for o caso, o servidor DEVERÁ relatar um erro STATUS \_ INVALID \_ PARAMETER (0xC000000D).
+-   Verifica se o catálogo especificado existe e não está no estado parado. Se esse não for o caso, o servidor DEVERÁ ter um erro DE RELATÓRIO CI \_ E \_ NO CATALOG \_ (0x8004181D).
 -   Adicione o cliente à lista de clientes conectados.
 -   Associe o catálogo ao cliente.
--   Armazene as informações passadas na mensagem CPMConnectIn (como nome do catálogo, versão do cliente, etc.) no estado do cliente.
+-   Armazene as informações passadas na mensagem CPMConnectIn (como nome do catálogo, versão do cliente etc.) no estado do cliente.
 -   Responda ao cliente com uma mensagem CPMConnectOut.
 
-### <a name="31522-receiving-a-cpmcreatequeryin-request"></a>3.1.5.2.2 recebendo uma solicitação CPMCreateQueryIn
+### <a name="31522-receiving-a-cpmcreatequeryin-request"></a>3.1.5.2.2 Recebendo uma solicitação CPMCreateQueryIn
 
-Quando o servidor recebe uma solicitação de mensagem CPMCreateQueryIn de um cliente, o servidor deve fazer o seguinte:
+Quando o servidor recebe uma solicitação de mensagem CPMCreateQueryIn de um cliente, o servidor DEVE fazer o seguinte:
 
--   Verifique se o cliente está na lista de clientes conectados. Se esse não for o caso, o servidor deverá relatar um \_ \_ erro de parâmetro inválido (0xC000000D) de status.
--   Verifique se o cliente já tem uma consulta associada a ele. Se esse for o caso, o servidor deverá relatar um \_ erro de \_ parâmetro inválido (0xC000000D) de status.
--   Verifique se o catálogo associado ao cliente está no estado que permite que a consulta seja processada (CICAT \_ ReadOnly ou CICAT \_ gravável). Se esse não for o caso, o servidor deverá relatar um \_ erro de \_ 0x8004160C (consulta S sem \_ consulta).
--   Analise o conjunto de restrições, as ordens de classificação e os agrupamentos especificados na consulta. Se o servidor encontrar um erro, ele deverá relatar um erro apropriado. Se essa etapa falhar por qualquer outro motivo, o servidor deverá relatar o erro encontrado. Para obter informações sobre erros de consulta de serviço de indexação, consulte \[ msdn-QUERYERR \] .
+-   Verifique se o cliente está na lista de clientes conectados. Se esse não for o caso, o servidor DEVERÁ relatar um erro STATUS \_ INVALID \_ PARAMETER (0xC000000D).
+-   Verifique se o cliente já tem uma consulta associada a ele. Se esse for o caso, o servidor DEVERÁ relatar um erro STATUS \_ INVALID \_ PARAMETER (0xC000000D).
+-   Verifique se o catálogo associado ao cliente está no estado que permite que a consulta seja processada (CICAT \_ READONLY ou CICAT \_ WRITABLE). Se esse não for o caso, o servidor DEVERÁ relatar um erro \_ QUERY S \_ NO \_ QUERY (0X8004160C).
+-   Analisar o conjunto de restrições, as ordens de classificação e os agrupamentos especificados na consulta. Se o servidor encontrar um erro, ele DEVERÁ relatar um erro apropriado. Se essa etapa falhar por qualquer outro motivo, o servidor DEVERÁ relatar o erro encontrado. Para obter informações sobre erros de consulta de serviço de indexação, consulte \[ MSDN-QUERYERR \] .
 -   Salve a consulta de pesquisa no estado do cliente.
--   Faça qualquer preparação necessária para atender linhas a um cliente e associar a consulta a identificadores de cursor apropriados (dependendo das informações passadas na mensagem CPMCreateQueryIn).
--   Adicione esses identificadores à lista de identificadores de cursor do cliente e inicialize as listas de identificadores e indicadores de capítulo.
--   Inicializar a lista de identificadores de capítulo para cada cursor nesta consulta para DB \_ NULL \_ HCHAPTER
--   Inicializar a lista de identificadores de indicadores para cada cursor nesta consulta para um conjunto de DBBMK \_ First e DBBMK \_ Last.
--   Marque a consulta como não monitorado para alterações.
--   Inicialize o número de linhas para o número de linhas calculado no momento (que pode ser 0 se a consulta não começar a ser executada ou algum número se a consulta estiver em um processo de execução) e inicialize o numerador e o denominador da conclusão da consulta.
+-   Faça as preparações necessárias para servir linhas a um cliente e associá-la a alças de cursor apropriadas (dependendo das informações passadas na mensagem CPMCreateQueryIn).
+-   Adicione esses alças à lista de alças de cursor do cliente e inicialize listas de indicadores e alças de capítulo.
+-   Inicializar a lista de alças de capítulo para cada cursor nesta consulta para DB \_ NULL \_ HCHAPTER
+-   Inicialize a lista de alças de indicador para cada cursor nesta consulta para um conjunto de DBBMK \_ FIRST e DBBMK \_ LAST.
+-   Marque a consulta como não monitorada quanto a alterações.
+-   Inicialize o número de linhas para o número calculado no momento de linhas (que pode ser 0 se a consulta não começou a ser executada ou algum número se a consulta estiver em um processo de execução) e inicialize o numerador e o denominador de conclusão da consulta.
 -   Responda ao cliente com uma mensagem CPMCreateQueryOut.
 
-### <a name="31523-receiving-a-cpmgetquerystatusin-request"></a>3.1.5.2.3 recebendo uma solicitação CPMGetQueryStatusIn
+### <a name="31523-receiving-a-cpmgetquerystatusin-request"></a>3.1.5.2.3 Recebendo uma solicitação CPMGetQueryStatusIn
 
-Quando o servidor recebe uma solicitação de mensagem CPMGetQueryStatusIn de um cliente, o servidor deve fazer o seguinte:
+Quando o servidor recebe uma solicitação de mensagem CPMGetQueryStatusIn de um cliente, o servidor DEVE fazer o seguinte:
 
--   Verifique se o cliente tem a consulta associada a ele. Se esse não for o caso, o servidor DEVERÁ relatar um erro STATUS \_ INVALID \_ PARAMETER (0xC000000D).
+-   Verifique se o cliente tem uma consulta associada a ele. Se esse não for o caso, o servidor DEVERÁ relatar um erro STATUS \_ INVALID \_ PARAMETER (0xC000000D).
 -   Verifique se o cursor handle está em uma lista de alças de cursor do cliente. Se esse não for o caso, o servidor DEVERÁ relatar um erro E \_ FAIL (0x80004005).
 -   Prepare uma mensagem CPMGetQueryStatusOut. O servidor DEVE recuperar o status atual da consulta e defini-lo no campo \_ QStatus (consulte 2.2.3.11 para obter valores possíveis). Se essa etapa falhar por qualquer motivo, o servidor DEVERÁ relatar um erro.
 -   Responda ao cliente com a mensagem CPMGetQueryStatusOut.
@@ -7342,7 +7342,7 @@ Quando o servidor recebe uma solicitação de mensagem CPMSetBindingsIn de um cl
 
 -   Verifique se o cliente tem uma consulta associada a ele. Se esse não for o caso, o servidor DEVERÁ relatar um erro STATUS \_ INVALID \_ PARAMETER (0xC000000D).
 -   Verifique se o cursor passado está na lista de alças de cursor do cliente. Se esse não for o caso, o servidor DEVERÁ relatar um erro E \_ FAIL (0x80004005).
--   Verifique se as informações de associação são válidas (ou seja, a coluna pelo menos especifica o valor, o comprimento ou o status a ser retornado; nenhuma sobreposição nas vinculações para valor, tamanho ou status; e valor, tamanho e status se ajustam ao tamanho da linha especificado) e, se não relatar um erro de BD \_ \_ E BADBINDINFO (0x80040E08).
+-   Verifique se as informações de associação são válidas (ou seja, a coluna pelo menos especifica o valor, o comprimento ou o status a ser retornado; nenhuma sobreposição nas vinculações para valor, tamanho ou status; e valor, comprimento e status se ajustam ao tamanho da linha especificado) e, se não relatar um erro de \_ \_ BD E BADBINDINFO (0x80040E08).
 -   Salve as informações de associação associadas às colunas especificadas no campo aColumns. Se essa etapa falhar por qualquer motivo, o servidor DEVERÁ relatar que um erro foi encontrado.
 -   Responda ao cliente com um header de mensagem (somente) com msg definido como \_ CPMSetBindingsIn e status definido como os resultados da \_ associação especificada.
 
@@ -7354,9 +7354,9 @@ Quando o servidor recebe uma solicitação de mensagem CPMGetRowsIn de um client
 -   Verifique se o cursor passado está na lista de alças de cursor do cliente. Se esse não for o caso, o servidor DEVERÁ relatar um erro E \_ FAIL (0x80004005).
 -   Verifique se o cliente tem um conjunto atual de vinculações. Se esse não for o caso, o servidor DEVERÁ relatar um erro E \_ FAIL (0x80004005).
 -   Prepare uma mensagem CPMGetRowsOut. O servidor DEVE posicionar o cursor nos resultados da consulta, conforme indicado pela descrição da busca. Se essa etapa falhar por qualquer motivo, o servidor DEVERÁ relatar que um erro foi encontrado.
--   Busque quantas linhas cabem em um buffer, o tamanho do qual é indicado por cbReadBuffer, mas não mais do que indicado \_ por \_ cRowsToTransfer. Ao buscar linhas, o servidor DEVE comparar o tipo de valor da propriedade de cada coluna selecionada com o tipo especificado no conjunto atual de vinculações do cliente (seção 3.1.1). Se o tipo na associação não for VT VARIANT, o servidor DEVERÁ tentar converter o valor da propriedade da coluna \_ nesse tipo. Caso contrário, se o sinalizador DBPROP USEEXTENDEDDBTYPES for definido no conjunto de propriedades \_ DBPROPSET QUERYEXT do cliente ou se o valor da propriedade da coluna não for um tipo VT VECTOR, o valor da propriedade DEVERÁ ser retornado em seu \_ \_ tipo normal. Se nenhum deles for o caso (ou seja, o servidor tiver um tipo VECTOR VT e o cliente não dá suporte a VECTOR VT), o servidor DEVERÁ tentar convertê-lo em um tipo VT ARRAY da seguinte \_ \_ \_ forma: VT \_ I8, VT \_ UI8, VT FILETIME e elementos de matriz \_ \_ CLSID VT não poderão ser convertidos e falharão; Os elementos da matriz VT LPSTR e VT LPWSTR DEVEM ser convertidos em VT BSTR; os elementos de matriz de todos os outros \_ \_ tipos DEVEM permanecer \_ inalterados. Por fim, se as colunas de linha contêm alças de capítulo ou alças de indicador, o servidor DEVE atualizar as listas correspondentes. Se essa etapa falhar por qualquer motivo, o servidor DEVERÁ relatar que um erro foi encontrado.
+-   Busque quantas linhas cabem em um buffer, o tamanho do qual é indicado por cbReadBuffer, mas não mais do que indicado \_ por \_ cRowsToTransfer. Ao buscar linhas, o servidor DEVE comparar o tipo de valor da propriedade de cada coluna selecionada com o tipo especificado no conjunto atual de vinculações do cliente (seção 3.1.1). Se o tipo na associação não for VT VARIANT, o servidor DEVERÁ tentar converter o valor da propriedade da coluna \_ nesse tipo. Caso contrário, se o sinalizador DBPROP USEEXTENDEDDBTYPES estiver definido no conjunto de propriedades \_ DBPROPSET QUERYEXT do cliente ou se o valor da propriedade da coluna não for um tipo VT VECTOR, o valor da propriedade DEVERÁ ser retornado em seu \_ \_ tipo normal. Se nenhum deles for o caso (ou seja, o servidor tiver um tipo VECTOR VT e o cliente não dá suporte a VECTOR VT), o servidor DEVERÁ tentar convertê-lo em um tipo VT ARRAY da seguinte \_ \_ \_ forma: VT \_ I8, VT \_ UI8, VT FILETIME e elementos de matriz \_ \_ CLSID VT não poderão ser convertidos e falharão; Os elementos da matriz VT LPSTR e VT LPWSTR DEVEM ser convertidos em VT BSTR; os elementos de matriz de todos os outros \_ \_ tipos DEVEM permanecer \_ inalterados. Por fim, se as colunas de linha contêm alças de capítulo ou alças de indicador, o servidor DEVE atualizar as listas correspondentes. Se essa etapa falhar por qualquer motivo, o servidor DEVERÁ relatar que um erro foi encontrado.
 -   Armazene o número real de linhas buscadas em \_ cRowsReturned.
--   Copie a descrição de busca e o campo de capítulo de CPMGetRowsIn para uma mensagem CPMGetRowsOut a ser enviada.
+-   Copie a descrição de busca e o campo capítulo de CPMGetRowsIn para uma mensagem CPMGetRowsOut a ser enviada.
 -   Armazene linhas buscadas no campo Linhas (consulte a observação sobre o byte de status abaixo e a seção 2.2.3.16 na estrutura do campo Linhas).
 -   Responda ao cliente com a mensagem CPMGetRowsOut.
 
@@ -7386,10 +7386,10 @@ Quando o servidor recebe uma solicitação de mensagem CPMFetchValueIn de um cli
 -   Prepare uma mensagem CPMFetchValueOut. Se essa etapa falhar por qualquer motivo, o servidor DEVERÁ relatar um erro.
 -   Localize o documento indicado pelo campo wid e verifique se a ID da propriedade deste documento (posteriormente conhecida como 'valor da propriedade') indicada pela estrutura PropSpec está disponível para \_ esse cliente. Se esse valor não estiver disponível, o servidor DEVERÁ definir fValueExists como 0x00000000 e, de outra \_ forma, \_ definir fValueExists como 0x00000001. Se essa etapa falhar por qualquer motivo, o servidor DEVERÁ relatar um erro.
 -   Se \_ fValueExists for igual a 0x00000001 o servidor DEVERÁ fazer o seguinte:
--   -   Serialize o valor da propriedade para uma estrutura SERIALIZEDPROPERTYVALUE e copie, começando no deslocamento \_ cbSoFar, no máximo bytes cbChunk (mas não após o final da propriedade serializada) para o campo \_ vValue. Se essa etapa falhar por qualquer motivo, o servidor DEVERÁ relatar um erro.
+-   -   Serialize o valor da propriedade para uma estrutura SERIALIZEDPROPERTYVALUE e copie, começando no deslocamento \_ cbSoFar, no \_ máximo, bytes cbChunk (mas não após o final da propriedade serializada) para o campo vValue. Se essa etapa falhar por qualquer motivo, o servidor DEVERÁ relatar um erro.
     -   De \_ definir cbValue como o número de bytes copiados na etapa anterior.
     -   De definir vType como o tipo de propriedade do valor da propriedade.
-    -   Se o comprimento da propriedade serializada for maior que cbSoFar adicionado a cbValue, de definir \_ \_ fMoreExists como 0x00000001, caso contrário, de definido como \_ 0x00000000.
+    -   Se o comprimento da propriedade serializada for maior que cbSoFar adicionado a cbValue, de definido \_ \_ fMoreExists como 0x00000001, caso contrário, de definido como \_ 0x00000000.
 
 -   Responder ao cliente com a mensagem CPMFetchValueOut
 
@@ -7521,141 +7521,141 @@ A camada mais alta normalmente solicita o envio dessa mensagem quando precisa at
 
 Para atender à solicitação de camada superior, o cliente deve fazer o seguinte:
 
--   Envie uma mensagem CPMUpdateDocumentsIn conforme especificado na seção 2.2.3.4 para o servidor.
--   Aguarde para receber a mensagem CPMUpdateDocumentsIn de volta do servidor, descartando silenciosamente todas as outras mensagens.
--   Relate o valor do \_ campo status da resposta de volta para a camada superior.
+-   Envie uma mensagem CPMUpdateDocumentsIn, conforme especificado na seção 2.2.3.4 para o servidor.
+-   Aguarde para receber a mensagem CPMUpdateDocumentsIn do servidor, descartando silenciosamente todas as outras mensagens.
+-   Reporte o valor do \_ campo de status da resposta de volta para a camada superior.
 
-### <a name="32414-sending-a-cpmforcemergein-request"></a>3.2.4.1.4 enviando uma solicitação CPMForceMergeIn
+### <a name="32414-sending-a-cpmforcemergein-request"></a>3.2.4.1.4 Enviando uma solicitação CPMForceMergeIn
 
-Normalmente, as solicitações de camada mais alta para enviar essa mensagem quando há necessidade de melhorar o desempenho da consulta ou fazem parte da manutenção agendada do serviço de indexação.
+Normalmente, a camada mais alta solicita para enviar essa mensagem quando há a necessidade de melhorar o desempenho da consulta ou faz parte da manutenção agendada do serviço de indexação.
 
-Para atender à camada mais alta, o cliente deve fazer o seguinte:
+Para atender à camada superior, o cliente DEVE fazer o seguinte:
 
 -   Envie a mensagem CPMForceMergeIn conforme especificado pela seção 2.2.3.5 para o servidor.
--   Aguarde para receber uma mensagem CPMUpdateDocumentsIn de volta do servidor, descartando silenciosamente todas as outras mensagens.
--   Relate o valor do \_ campo status da resposta de volta para a camada superior.
+-   Aguarde para receber uma mensagem CPMUpdateDocumentsIn do servidor, descartando silenciosamente todas as outras mensagens.
+-   Reporte o valor do \_ campo de status da resposta de volta para a camada superior.
 
-### <a name="3242-remote-indexing-service-catalog-query-messages"></a>Mensagens de consulta do catálogo de serviço de indexação remota do 3.2.4.2
+### <a name="3242-remote-indexing-service-catalog-query-messages"></a>3.2.4.2 Mensagens de Consulta do Catálogo do Serviço de Indexação Remota
 
-Com exceção de CPMGetRowsIn/CPMGetRowsOut, CPMFetchValueIn/CPMFetchValueOut, há uma relação um-para-um entre as mensagens CISP e as solicitações de camada superior. Para as duas exceções mencionadas acima, pode haver várias mensagens geradas pelo cliente para atender aos requisitos de tamanho ou para recuperar uma propriedade completa. Normalmente, a camada superior controla todas as informações específicas de consulta (como identificadores de cursor abertos, valores válidos para identificadores de indicador e capítulo, valores de wid para valores de propriedade adiados, etc.) e também controla se o cliente está em um estado conectado, mas isso não é imposto de nenhuma forma pelo cliente.
+Com exceção de CPMGetRowsIn/CPMGetRowsOut, CPMFetchValueIn/CPMFetchValueOut, há uma relação um-para-um entre mensagens CISP e solicitações de camada superior. Para as duas exceções mencionadas acima, pode haver várias mensagens geradas pelo cliente para atender aos requisitos de tamanho ou para recuperar uma propriedade completa. A camada superior normalmente mantém o controle de todas as informações específicas da consulta (como alças de cursor abertas, valores legais para indicadores e alças de capítulo, valores wid para valores de propriedade adiados etc.) e também rastreia se o cliente está em um estado conectado, mas isso não é imposto de forma alguma pelo cliente.
 
-Para fins ilustrativos, a parte de cliente do diagrama na seção 3 ilustra essa sequência para uma consulta de serviço de indexação simples.
+Para fins ilustrativos, a parte do cliente do diagrama na Seção 3 ilustra essa sequência para uma consulta simples do Serviço de Indexação.
 
-### <a name="32421-sending-a-cpmconnectin-request"></a>3.2.4.2.1 enviando uma solicitação CPMConnectIn
+### <a name="32421-sending-a-cpmconnectin-request"></a>3.2.4.2.1 Enviar uma solicitação CPMConnectIn
 
-Essa mensagem é normalmente a primeira solicitação da camada superior (como se o cliente não estiver conectado, o servidor falhará na maioria das mensagens com exceção de CPMSetCatStateIn). O nível mais alto fornece ao cliente de protocolo as informações necessárias para se conectar.
+Normalmente, essa mensagem é a primeira solicitação da camada superior (como se o cliente não estivesse conectado, o servidor falhará na maioria das mensagens com exceção de CPMSetCatStateIn). O nível mais alto fornece ao cliente de protocolo as informações necessárias para se conectar.
 
-Para atender à camada mais alta, o cliente deve fazer o seguinte:
+Para atender à camada superior, o cliente DEVE fazer o seguinte:
 
--   Preencha a mensagem, usando informações que o cliente de camada superior forneceu (consulte a seção 2.2.3.6) em \_ iClientVersion, MachineName, username, PropertySet1, PropertySet2 e aPropertySet.
--   Defina \_ fClientIsRemote, \_ cbBlob, \_ cbBlob2, cPropSet e cExtPropSet conforme especificado em 2.2.3.6.
--   Defina a soma de verificação no \_ campo ulChecksum.
+-   Preencha a mensagem usando informações fornecidas pelo cliente de camada superior (consulte a seção 2.2.3.6) em \_ iClientVersion, MachineName, UserName, PropertySet1, PropertySet2 e aPropertySet.
+-   Definir \_ fClientIsRemote, \_ cbBlob, \_ cbBlob2, cPropSet e cExtPropSet, conforme especificado em 2.2.3.6.
+-   Demarque a verificação no \_ campo ulChecksum.
 -   Envie a mensagem CPMConnectIn para o servidor.
--   Aguarde para receber uma mensagem CPMConnectOut de volta do servidor, descartando silenciosamente todas as outras mensagens.
--   Relate o valor do \_ campo status da resposta e, se tiver sido bem-sucedida, o \_ serverVersion de volta para a camada superior.
+-   Aguarde para receber uma mensagem CPMConnectOut do servidor, descartando silenciosamente todas as outras mensagens.
+-   Reporte o valor do campo de status da resposta e, se tiver sido bem-sucedido, \_ \_ o serverVersion de volta para a camada superior.
 
-Para fins informativos, espera-se que as camadas mais altas normalmente realizem as seguintes ações após a conexão bem-sucedida, mas elas não são impostas pelo cliente CISP:
+Para fins informativos, espera-se que camadas mais altas normalmente faça as seguintes ações após a conexão bem-sucedida, mas elas não são impostas pelo cliente CISP:
 
--   Usar mensagens de gerenciamento de catálogo de serviço de indexação remota para tarefas administrativas
--   Use uma solicitação CPMCreateQueryIn para criar uma consulta de pesquisa com a finalidade de recuperar os resultados do catálogo.
+-   Usar mensagens de gerenciamento do catálogo de serviços de indexação remota para tarefas administrativas
+-   Use uma solicitação CPMCreateQueryIn para criar uma consulta de pesquisa com a finalidade de recuperar resultados do catálogo.
 
-### <a name="32422-sending-a-cpmcreatequeryin-request"></a>3.2.4.2.2 enviando uma solicitação CPMCreateQueryIn
+### <a name="32422-sending-a-cpmcreatequeryin-request"></a>3.2.4.2.2 Enviar uma solicitação CPMCreateQueryIn
 
-A camada superior normalmente fornecerá informações para a criação da consulta quando o cliente do protocolo estiver conectado. A camada superior fornece ao cliente um conjunto de restrições, conjunto de colunas, regras de ordem de classificação e conjunto de categorização (cada um deles pode ser omitido), propriedades de conjunto de linhas e estrutura do mapeador de ID de propriedade.
+A camada superior normalmente fornecerá informações para a criação da consulta quando o cliente de protocolo estiver conectado. A camada superior fornece ao cliente um conjunto de restrições, conjunto de colunas, regras de ordem de classificação e conjunto de categorização (cada uma delas pode ser omitida), propriedades do conjunto de linhas e estrutura do mapeamento de ID de propriedade.
 
-Quando essa solicitação é recebida de uma camada superior, o cliente deve fazer o seguinte:
+Quando essa solicitação é recebida de uma camada superior, o cliente DEVE fazer o seguinte:
 
--   Prepare um CPMCreateQueryOut da seguinte maneira.
--   -   Se um conjunto de colunas estiver presente, defina CColumnsSetPreset como 0x01 e preencha o campo Columnsset.
-    -   Se houver restrições, defina CRestrictionPresent como 0x01 e preencha o campo de restrição.
-    -   Se um conjunto de classificação estiver presente, preencha o campo de classificação.
-    -   Se um conjunto de categorização estiver presente, defina CSortSetPresent como 0x01 e preencha o campo CategorizationSet.
+-   Prepare um CPMCreateQueryOut da seguinte forma.
+-   -   Se um conjunto de colunas estiver presente, de definir CColumnsSetPreset como 0x01 e preencha o campo ColumnsSet.
+    -   Se as restrições estão presentes, de definido CRestrictionPresent como 0x01 e preencha o campo Restrição.
+    -   Se um conjunto de classificação estiver presente, preencha o campo SortSet.
+    -   Se um conjunto de categorização estiver presente, de definir CSortSetPresent como 0x01 e preencha o campo CategorizationSet.
     -   Definir o restante dos campos conforme especificado em 2.2.3.8
 
--   Calcule \_ o campo ulCheckSum no cabeçalho.
+-   Calcule \_ o campo ulCheckSum no header.
 -   Envie a mensagem CPMCreateQueryIn para o servidor.
--   Aguarde para receber a mensagem CPMCreateQueryOut (consulte os detalhes na seção 3.2.5.1.1), descartando silenciosamente todas as outras mensagens.
--   Relate o valor do \_ campo status da resposta e, se tiver êxito, a matriz de identificadores de cursor e valores Boolianos informativos (conforme especificado em 2.2.3.9) de volta para a camada superior.
+-   Aguarde para receber a mensagem CPMCreateQueryOut (consulte detalhes na seção 3.2.5.1.1), descartando silenciosamente todas as outras mensagens.
+-   Reporte o valor do campo de status da resposta e, se tiver sido bem-sucedido, a matriz de alças de cursor e valores \_ boolianas informativos (conforme especificado em 2.2.3.9) de volta para a camada superior.
 
-### <a name="32423-sending-a-cpmsetbindingsin-request"></a>3.2.4.2.3 enviando uma solicitação CPMSetBindingsIn
+### <a name="32423-sending-a-cpmsetbindingsin-request"></a>3.2.4.2.3 Enviar uma solicitação CPMSetBindingsIn
 
-Normalmente, a camada superior definirá associações para cada coluna a ser retornada nas linhas quando ela já tiver um identificador de cursor válido (depois de receber CPMCreateQueryOut com êxito, consulte a seção 3.2.5.1.1). O valor mais alto é esperado para fornecer uma matriz de estruturas CTableColumn, conforme especificado na seção 2.2.4.31, para o campo aColumns e um identificador de cursor válido.
+Normalmente, a camada superior definirá as vinculações para cada coluna a ser retornada nas linhas quando ela já tiver um alça de cursor válido (depois de receber com êxito CPMCreateQueryOut, consulte a seção 3.2.5.1.1). O mais alto deve fornecer uma matriz de estruturas CTableColumn, conforme especificado na Seção 2.2.4.31, para o campo aColumns e um alça de cursor válido.
 
-Quando essa solicitação é recebida da camada superior, o cliente deve fazer o seguinte:
+Quando essa solicitação é recebida da camada superior, o cliente DEVE fazer o seguinte:
 
--   Calcule o número de estruturas CTableColumn na matriz aColumns e defina o campo cColumns com esse valor.
--   Calcule o tamanho total em bytes dos campos cColumns e aColumns e defina o \_ campo cbBindingDesc com esse valor.
--   Defina os campos especificados na mensagem CPMSetBindingsIn para os valores fornecidos pela camada de aplicativo superior. Defina o \_ campo ulChecksum para o valor calculado conforme especificado na seção 3.2.5.
+-   Calcule o número de estruturas CTableColumn na matriz aColumns e de definido o campo cColumns com esse valor.
+-   Calcule o tamanho total em bytes dos campos cColumns e aColumns e de definido o \_ campo cbBindingDesc com esse valor.
+-   Definir campos especificados na mensagem CPMSetBindingsIn para os valores fornecidos pela camada de aplicativo superior. De definir \_ o campo ulChecksum como o valor calculado conforme especificado na Seção 3.2.5.
 -   Envie a mensagem CPMSetBindignsIn concluída para o servidor.
 -   Aguarde para receber uma mensagem CPMSetBindingsIn do servidor, descartando outras mensagens.
--   Indique o status do \_ campo status da resposta para a camada superior.
+-   Indique o status do \_ campo de status da resposta para a camada superior.
 
-Para fins informativos, espera-se que as camadas mais altas normalmente solicitem que um cliente envie uma mensagem CPMGetRowsIn, mas isso não é imposto pelo protocolo de serviço de indexação de conteúdo.
+Para fins informativos, espera-se que camadas mais altas normalmente solicitem que um cliente envie uma mensagem CPMGetRowsIn, mas isso não é imposto pelo Protocolo de Serviço de Indexação de Conteúdo.
 
-### <a name="32424-sending-a-cpmgetrowsin-request"></a>3.2.4.2.4 enviando uma solicitação CPMGetRowsIn
+### <a name="32424-sending-a-cpmgetrowsin-request"></a>3.2.4.2.4 Enviar uma solicitação CPMGetRowsIn
 
-Quando a camada mais alta estiver prestes a receber informações de linhas, ele fornecerá ao cliente de protocolo com o cursor e o identificador do capítulo válidos e fornecerá a descrição de busca apropriada. Normalmente, espera-se que uma camada mais alta faça isso quando tem um cursor e/ou identificador de capítulo válido, e as associações foram definidas com a mensagem CPMSetBindingsIn. Para acessar o conjunto de linhas em um capítulo, a camada mais alta é usar o identificador de capítulo recebido do servidor em uma mensagem CPMGetRowsOut anterior.
+Quando a camada superior estiver prestes a receber informações de linhas, ela fornecerá ao cliente de protocolo cursor e alça de capítulo válidos e fornecerá a descrição de busca apropriada. Normalmente, espera-se que uma camada mais alta faça isso quando tiver um cursor válido e/ou um alça de capítulo e as vinculações tivessem sido definidas com a mensagem CPMSetBindingsIn. Para acessar o conjuntos de linhas em um capítulo, a camada superior é usar o handle de capítulo recebido do servidor em uma mensagem CPMGetRowsOut anterior.
 
-Quando essa solicitação é recebida da camada superior, o cliente deve fazer o seguinte:
+Quando essa solicitação é recebida da camada superior, o cliente DEVE fazer o seguinte:
 
--   Determine qual valor inteiro sem sinal deve ser especificado para o \_ campo cbReadBuffer. Para determinar esse valor, o cliente deve obter o valor máximo do seguinte:
--   -   1000 vezes o valor do campo c \_ RowsToTransfer.
-    -   Valor de \_ cbRowWidth, arredondado para o múltiplo de 512 bytes mais próximo.
-    -   Pegue os dois valores acima, até o limite de 16K.
+-   Determine qual valor inteiro sem sinal deve ser especificado para o \_ campo cbReadBuffer. Para determinar esse valor, o cliente DEVE pegar o valor máximo do seguinte:
+-   -   Mil vezes o valor do campo \_ RowsToTransfer c.
+    -   Valor de \_ cbRowWidth, arredondado para o múltiplo de 512 byte mais próximo.
+    -   Leve o mais alto desses dois valores, até o limite de 16 mil.
     -   Nos casos em que uma única linha é maior que 16K, o servidor não pode retornar resultados para essa consulta.
 
-Especifique uma base de cliente para dados de linha de tamanho variável no espaço de endereço de cliente no \_ campo ulClientBase.
+Especifique uma base de cliente para dados de linha de tamanho variável no espaço de endereço do cliente \_ no campo ulClientBase.
 
-*Comportamento do Windows: para um cliente de 32 bits conversando com um servidor de 32 bits ou um cliente de 64 bits conversando com um servidor de 64 bits, esse valor é definido como um endereço de memória do buffer de recebimento no processo do aplicativo. Isso permite que os ponteiros, recebidos no campo de linhas de CPMGetRowsOut, sejam ponteiros de memória corretos em um processo de aplicativo cliente. Caso contrário, ele será definido como 0x00000000.*
+*Windows Comportamento: para um cliente de 32 bits que conversa com um servidor de 32 bits ou um cliente de 64 bits falando com um servidor de 64 bits, esse valor é definido como um endereço de memória do buffer de recebimento no processo do aplicativo. Isso permite que ponteiros recebidos no campo Linhas de CPMGetRowsOut sejam ponteiros de memória corretos em um processo de aplicativo cliente. Caso contrário, ele será definido como 0x00000000.*
 
--   Calcule o tamanho da descrição de busca e defina-a no \_ campo cbSeek.
--   Defina o valor de cbReserved (que atuaria como um deslocamento para o início das linhas) para o valor de \_ cbSeek Plus 0x14.
+-   Calcule o tamanho da descrição da busca e depure-a no \_ campo cbSeek.
+-   De definir o valor de cbReserved (que atuaria como um deslocamento para Rows start) como o valor \_ de cbSeek mais 0x14.
 -   Envie uma mensagem CPMConnectIn conforme especificado em 2.2.3.15 para o servidor.
 
-### <a name="32425-sending-a-cpmfetchvaluein-request"></a>3.2.4.2.5 enviando uma solicitação CPMFetchValueIn
+### <a name="32425-sending-a-cpmfetchvaluein-request"></a>3.2.4.2.5 Enviando uma solicitação CPMFetchValueIn
 
-Se o cliente receber uma resposta CPMGetRowsOut do servidor com o campo status da coluna definido como StatusDeferred (0x01), isso significa que o valor da propriedade não foi incluído no campo linhas da mensagem CPMGetRowsOut. Nesse caso, a camada mais alta normalmente solicita que o cliente de protocolo recupere o valor por meio da mensagem CPMFetchValueIn e fornece o valor de PropSpec e \_ wid para uma propriedade adiada, que o cliente de protocolo deve usar na primeira mensagem CPMFetchValueIn.
+Se o cliente receber uma resposta CPMGetRowsOut do servidor com o campo Status da coluna definido como StatusDeferred (0x01), isso significa que o valor da propriedade não foi incluído no campo Linhas da mensagem CPMGetRowsOut. Nesse caso, a camada superior normalmente solicita que o cliente de protocolo recupere o valor por meio da mensagem CPMFetchValueIn e fornece o valor PropSpec e wid para uma propriedade adiada, que o cliente de protocolo DEVE usar na primeira mensagem \_ CPMFetchValueIn.
 
-Se esta for a primeira mensagem CPMFetchValueIn que o cliente enviou para solicitar a propriedade especificada, o cliente deverá fazer o seguinte:
+Se esta for a primeira mensagem CPMFetchValueIn que o cliente enviou para solicitar a propriedade especificada, o cliente DEVERÁ fazer o seguinte:
 
--   Defina todos os campos em uma mensagem conforme especificado na seção 2.2.3.19.
--   Defina \_ cbSoFar como 0x00000000.
--   Defina os bytes atuais recebidos como 0.
+-   De definir todos os campos em uma mensagem, conforme especificado na seção 2.2.3.19.
+-   De \_ definir cbSoFar como 0x00000000.
+-   Definir Bytes Atuais Recebidos como 0.
 -   Envie a mensagem CPMFetchValueIn para o servidor.
 
-### <a name="32426-sending-a-cpmfreecursorin-request"></a>3.2.4.2.6 enviando uma solicitação CPMFreeCursorIn
+### <a name="32426-sending-a-cpmfreecursorin-request"></a>3.2.4.2.6 Enviar uma solicitação CPMFreeCursorIn
 
-Quando o nível mais alto não estiver mais usando a consulta de pesquisa, ele poderá liberar os recursos no servidor solicitando que o cliente envie uma mensagem CPMFreeCursorIn.
+Depois que o nível mais alto não está mais usando a consulta de pesquisa, ele pode liberar os recursos no servidor solicitando que o cliente envie uma mensagem CPMFreeCursorIn.
 
-Quando essa solicitação é recebida, o cliente deve enviar uma mensagem CPMFreeCursorIn conforme especificado em 2.2.3.28 para o servidor, contendo o identificador especificado pela camada superior.
+Quando essa solicitação é recebida, o cliente DEVE enviar uma mensagem CPMFreeCursorIn, conforme especificado na 2.2.3.28 para o servidor, contendo o handle especificado pela camada superior.
 
-### <a name="32427-sending-a-cpmdisconnect-message"></a>3.2.4.2.7 enviando uma mensagem CPMDisconnect
+### <a name="32427-sending-a-cpmdisconnect-message"></a>3.2.4.2.7 Enviar uma mensagem CPMDisconnect
 
-Se a camada superior não tiver mais consultas para o serviço de indexação, para liberar mais recursos do servidor, o aplicativo poderá solicitar que o cliente envie uma mensagem CPMDisconnect ao servidor. Quando essa consulta é recebida, o cliente deve simplesmente enviar a mensagem conforme solicitado. Não há resposta a essa mensagem do servidor.
+Se a camada superior não tiver mais consultas para o serviço de indexação, para liberar mais recursos de servidor, o aplicativo poderá solicitar que o cliente envie uma mensagem CPMDisconnect ao servidor. Quando essa consulta é recebida, o cliente DEVE simplesmente enviar a mensagem conforme solicitado. Não há resposta para essa mensagem do servidor.
 
-### <a name="325-message-processing-and-sequencing-rules"></a>Processamento de mensagens 3.2.5 e regras de sequenciamento
+### <a name="325-message-processing-and-sequencing-rules"></a>3.2.5 Regras de processamento e sequenciamento de mensagens
 
-Quando o cliente recebe uma resposta de mensagem do servidor, o cliente deve usar a última mensagem enviada para determinar se a mensagem recebida do servidor é a esperada pelo cliente. Todas as mensagens com \_ o campo msg diferente da que está na última mensagem de envio devem ser ignoradas.
+Quando o cliente recebe uma resposta de mensagem do servidor, o cliente DEVE usar a Última Mensagem Enviada para determinar se a mensagem recebida do servidor é a esperada pelo cliente. Todas as mensagens \_ com o campo msg diferentes das mensagens na Última Mensagem de Envio DEVEM ser ignoradas.
 
-### <a name="3251-receiving-a-cpmcreatequeryout-response"></a>3.2.5.1 recebendo uma resposta CPMCreateQueryOut
+### <a name="3251-receiving-a-cpmcreatequeryout-response"></a>3.2.5.1 Recebendo uma resposta CPMCreateQueryOut
 
-Quando o cliente recebe uma resposta de mensagem CPMCreateQueryOut do servidor, o cliente deve retornar o \_ status e (se o status for com êxito) os valores de ponteiro de volta para uma camada superior. Todas as ações adicionais são até a camada mais alta.
+Quando o cliente recebe uma resposta de mensagem CPMCreateQueryOut do servidor, o cliente DEVE retornar o status e (se o status for bem-sucedido) manipular valores de volta para a camada \_ superior. Qualquer outra ação é até a camada superior.
 
-Como a camada mais alta reconhece a estrutura de consulta, ela sempre esperará o número correto de identificadores de cursor a serem retornados na mensagem CPMCreateOueryOut. As alças de cursor são retornadas na seguinte ordem: o primeiro identificador é para o conjunto de linhas sem capítulos, o segundo é para o primeiro conjunto de linhas com capítulo (que é o agrupamento de resultados com base na primeira categoria especificada no campo CategorizationSet da mensagem CPMCreateQueryIn).
+Como a camada superior está ciente da estrutura de consulta, ela sempre esperará que o número correto de alças de cursor seja retornado na mensagem CPMCreateOueryOut. Os alças de cursor são retornados na seguinte ordem: o primeiro handle é para o conjunto de linhas não agrupado, o segundo é para o primeiro conjunto de linhas capítulo (que é o agrupamento de resultados com base na primeira categoria especificada no campo CategorizationSet da mensagem CPMCreateQueryIn.)
 
-Para fins informativos, espera-se que camadas mais altas possam realizar as seguintes ações, mas elas não são impostas pelo cliente CISP:
+Para fins informativos, espera-se que camadas mais altas possam fazer as seguintes ações, mas elas não são impostas pelo cliente CISP:
 
--   Use CPMSetBindingsIn para definir associações para colunas individuais e executar ações subsequentes no caminho de consulta
+-   Use CPMSetBindingsIn para definir as vinculações para colunas individuais e fazer ações subsequentes no caminho da consulta
 -   Use CPMGetQueryStatusIn para verificar o progresso da execução de uma consulta.
 -   Use CPMRatioFinishedIn para solicitar o percentual de conclusão da consulta.
 
-### <a name="3252-receiving-a-cpmgetrowsout-response"></a>3.2.5.2 recebendo uma resposta CPMGetRowsOut
+### <a name="3252-receiving-a-cpmgetrowsout-response"></a>3.2.5.2 Recebendo uma resposta CPMGetRowsOut
 
-Quando o cliente recebe uma resposta de mensagem CPMGetRowsOut do servidor, o cliente deve fazer o seguinte:
+Quando o cliente recebe uma resposta de mensagem CPMGetRowsOut do servidor, o cliente DEVE fazer o seguinte:
 
--   Verifique se o \_ campo status no cabeçalho indica êxito ou falha.
--   Se o \_ valor de status for \_ buffer de status \_ muito \_ pequeno (0xC0000023), o cliente deverá verificar o estado da última mensagem enviada. Se ele não contém uma mensagem CPMGetRowsIn, a mensagem recebida DEVE ser ignorada silenciosamente. Caso contrário, o cliente DEVERÁ enviar ao servidor uma nova mensagem CPMGetRowsIn com todos os campos idênticos ao armazenado, exceto que cbReadBuffer DEVE ser aumentado em 512 (mas não maior que \_ 0x4000). Se o status for BUFFER DE STATUS MUITO PEQUENO (0xC0000023) e a Última Mensagem Enviada já tiver \_ \_ \_ \_ \_ cbReadBuffer igual 0x4000 cliente DEVERÁ relatar o erro até o nível superior.
--   Se o valor de status for qualquer outro valor de erro, o cliente DEVERÁ indicar a \_ falha até a camada superior.
+-   Verifique se o \_ campo de status no header indica êxito ou falha.
+-   Se o \_ valor de status for BUFFER DE STATUS MUITO PEQUENO \_ \_ \_ (0xC0000023), o cliente DEVERÁ verificar o estado Última Mensagem Enviada. Se ele não contém uma mensagem CPMGetRowsIn, a mensagem recebida DEVE ser ignorada silenciosamente. Caso contrário, o cliente DEVERÁ enviar ao servidor uma nova mensagem CPMGetRowsIn com todos os campos idênticos ao armazenado, exceto que cbReadBuffer DEVE ser aumentado em 512 (mas não maior que \_ 0x4000). Se o status for BUFFER DE STATUS MUITO PEQUENO (0xC0000023) e a Última Mensagem Enviada já tiver \_ \_ \_ \_ \_ cbReadBuffer igual a 0x4000 cliente DEVERÁ relatar o erro até o nível superior.
+-   Se o \_ valor de status for qualquer outro valor de erro, o cliente DEVERÁ indicar a falha até a camada superior.
 -   Se o valor de status indicar êxito, os resultados DEVERÃO ser indicados até a camada superior solicitando as informações e outras ações serão até \_ a camada superior.
 
 Para fins informativos, espera-se que camadas mais altas normalmente faça as seguintes ações, mas elas não são impostas pelo cliente do Protocolo de Serviço de Indexação de Conteúdo:
@@ -7727,7 +7727,7 @@ No exemplo a seguir, consideramos um cenário no qual o usuário JOHN no computa
     -   **UserName** é definido como JOHN.
     -   **cPropSets** é definido como 0x00000002.
     -   **O campo PropertySet1** é do tipo CDbPropSet. A estrutura CDbPropSet que inclui o campo PropertySet1 é populada da seguinte forma:
-        -   O **campo GuidPropSet** é definido como A9BD1526-6A80-11D0-8C9D-0020AF1D740E (DBPROPSET \_ FSCIFRMWRK \_ EXT).
+        -   **O campo GuidPropSet** é definido como A9BD1526-6A80-11D0-8C9D-0020AF1D740E (DBPROPSET \_ FSCIFRMWRK \_ EXT).
         -   **O campo cProperties** é definido como 0x00000004.
         -   **o campo aProps** é uma matriz de estruturas CDbProp.
 
@@ -7772,7 +7772,7 @@ No exemplo a seguir, consideramos um cenário no qual o usuário JOHN no computa
 
             Para o **elemento aProps \[ 3: \]**
 
-            -   **PropId:** 0x00000003 (ESCOPOS DE \_ INCLUSÃO DE CI DO \_ \_ DBPROP)
+            -   **PropId:** 0x00000003 (ESCOPOS DE INCLUSÃO DE CI DO \_ \_ \_ DBPROP)
             -   **DBPROPOPTIONS:** 0x0000000
             -   **DBPROPSTATUS**: 0x00000000
             -   Para o **elemento ColId:**
@@ -7804,7 +7804,7 @@ No exemplo a seguir, consideramos um cenário no qual o usuário JOHN no computa
                 -   **vType:** 0x0008 (VT \_ BSTR)
                 -   **vValue:** 0x04 /"X" (4 bytes/cadeia de caracteres Unicode terminada em nulo), que significa "X" -name de um servidor.
 
-    -   **O campo cExtPropSet** é definido como 0x00000000.
+    -   **O campo cExtPropSet** está definido como 0x00000000.
     -   **A matriz aPropertySets** não existe.
     -   Vários campos de preenchimento são preenchidos conforme necessário. A mensagem é enviada ao servidor.
 
@@ -7819,7 +7819,7 @@ No exemplo a seguir, consideramos um cenário no qual o usuário JOHN no computa
 
     O corpo da mensagem é populado da seguinte forma:
 
-    -   **\_ O campo serverVersion** é definido como 0x00000007 (Windows XP de 32 bits ou Windows Server 2003 de 32 bits).
+    -   **\_ O campo serverVersion** é definido como 0x00000007 (32 bits Windows XP ou 32 bits Windows Server 2003).
     -   **\_ Os campos** reservados são preenchidos com dados arbitrários.
 
 5.  O cliente prepara uma mensagem CPMCreateQueryIn.
@@ -7843,7 +7843,7 @@ No exemplo a seguir, consideramos um cenário no qual o usuário JOHN no computa
         -   **\_ ulType** é definido como 0x00000004 (RTContent).
         -   **\_ weight** é definido como 0x00000000.
     -   O restante do campo contém uma estrutura CContentRestriction:
-        -   **\_** A propriedade é definida como GUID B725F130-47EF-101A-A5F1-02608c9eebac/0x00000001 (para PRSPEC PROPID) /0x13 que representa o corpo \_ do documento.
+        -   **\_** A propriedade é definida como GUID B725F130-47EF-101A-A5F1-02608c9eebac/0x00000001 (para PRSPEC PROPID) /0x13 que representa o corpo do \_ documento.
         -   **\_ Cc** é definido como 0x00000009.
         -   **\_ pwcsphrase é** definido como a cadeia de caracteres "Microsoft".
         -   **\_ lcid é** definido como 0x409 (para inglês).
@@ -7855,10 +7855,10 @@ No exemplo a seguir, consideramos um cenário no qual o usuário JOHN no computa
         -   **\_ ulMaxOpenRows** é definido como 0x00000000.
         -   **\_ ulMemoryUsage** é definido como 0x00000000.
         -   \_**cMaxResults** é definido como 0x00000100 (retornam no máximo 256 linhas).
-        -   **\_ cCmdTimeOut** é definido como 0x00000000 (nunca o tempoout).
+        -   **\_ cCmdTimeOut é** definido como 0x00000000 (nunca tempoout).
     -   **O PidMapper** está definido como:
         -   **\_ count** é definido como 0x00000001.
-        -   **\_ aPropSpec** é definido como GUID B725F130-47EF-101A-A5-F1-02608C9EEBAC/0x00000001 (para PRSPEC PROPID) /0x0000000c que representa a propriedade \_ de tamanho de arquivo do Windows.
+        -   **\_ aPropSpec** é definido como GUID B725F130-47EF-101A-A5-F1-02608C9EEBAC/0x00000001 (para PRSPEC PROPID) /0x0000000c que representa Windows propriedade de tamanho de \_ arquivo.
 
 6.  O servidor o processa e responde com uma mensagem CPMCreateQueryOut.
 
@@ -7872,7 +7872,7 @@ No exemplo a seguir, consideramos um cenário no qual o usuário JOHN no computa
     O corpo da mensagem é populado da seguinte forma:
 
     -   **\_ fTrueSeqeuntial** é definido como 0x00000000, indicando que a consulta pode usar um índice.
-    -   **\_ fWorkIdUnique** está definido como 0x00000001.
+    -   **\_ fWorkIdUnique** é definido como 0x00000001.
     -   A **matriz aCursors** contém apenas um elemento, representando um alça de cursor para essa consulta. O valor depende do estado do servidor. Vamos supor que o valor retornado seja 0xAAAAAAAA.
 
 7.  O cliente emite uma mensagem de solicitação CPMSetBindingsIn para definir o formato de uma linha.
@@ -7886,12 +7886,12 @@ No exemplo a seguir, consideramos um cenário no qual o usuário JOHN no computa
 
     O corpo da mensagem é populado da seguinte forma:
 
-    -   **\_ hCursor** é definido como 0xAAAAAAAA.
+    -   **\_ hCursor é** definido como 0xAAAAAAAA.
     -   **\_ cbRow** é definido como 0x10 (grande o suficiente para ajustar colunas).
     -   **\_ cbBindingDesc** é definido como o tamanho dos campos **\_ cColumns** e **\_ aColumns combinados.**
     -   **\_ cColumns é** definido como 0x00000001.
     -   **\_ a Matriz aColumns** é definida para conter uma estrutura CTableColumn que contém:
-    -   -   **\_ PropSpec** é definido como GUID b725f130-47ef-101a-a5-f1-02608c9eebac/0x00000001 (para PRSPEC PROPID) /0x0000000c que representa a propriedade de tamanho de \_ arquivo do Windows.
+    -   -   **\_ PropSpec** é definido como GUID b725f130-47ef-101a-a5-f1-02608c9eebac/0x00000001 (para PRSPEC PROPID) /0x0000000c que representa Windows propriedade de tamanho do \_ arquivo.
         -   **\_ vType** é definido como 0x0015 (VT \_ UI8).
         -   **\_ ValueUsed é** definido como 0x01 (coluna transferida em linha).
         -   **\_ ValueOffset** é definido como 0x0002 (no início da linha).
@@ -7902,110 +7902,110 @@ No exemplo a seguir, consideramos um cenário no qual o usuário JOHN no computa
 
 8.  O servidor o processa e responde com uma mensagem CPMSetBindingsIn.
 
-    O header da mensagem é populado da seguinte forma:
+    O cabeçalho da mensagem é preenchido da seguinte maneira:
 
-    -   **\_ msg** é definido como 0x000000D0.
-    -   **\_ status** é definido como SUCCESS.
+    -   **\_ msg** está definido como 0x000000D0.
+    -   o **\_ status** é definido como êxito.
     -   **\_ ulChecksum** é definido como 0x00000000 (ou qualquer outro valor arbitrário).
     -   **\_ ulReserved2** é definido como 0x00000000 (ou qualquer outro valor arbitrário).
 
-9.  O cliente emite uma mensagem de solicitação CPMGetRowsIn. Vamos supor que o cliente está preparado para aceitar 100 linhas neste ponto e deseja-as em ordem crescente.
+9.  O cliente emite uma mensagem de solicitação CPMGetRowsIn. Vamos supor que o cliente esteja preparado para aceitar 100 linhas neste ponto e as queira em ordem crescente.
 
-    O header da mensagem é populado da seguinte forma:
+    O cabeçalho da mensagem é preenchido da seguinte maneira:
 
-    -   **\_ msg** é definido como 0x000000CC, indicando que esta é uma mensagem CPMGetRowsIn.
-    -   **\_ status** é definido como 0x00000000
-    -   **\_ ulChecksum contém** a verificação, calculada de acordo com a Seção 0.
+    -   **\_ msg** é definido como 0x000000CC, indicando que se trata de uma mensagem CPMGetRowsIn.
+    -   o **\_ status** é definido como 0x00000000
+    -   **\_ ulChecksum** contém a soma de verificação, computada de acordo com a seção 0.
     -   **\_ ulReserved2** é definido como 0x00000000.
 
-    O corpo da mensagem é populado da seguinte forma:
+    O corpo da mensagem é preenchido da seguinte maneira:
 
     -   **\_ hCursor** é definido como 0xAAAAAAAA.
     -   **\_ cRowsToTransfer** é definido como 0x00000064.
-    -   **\_ cRowWidth** é definido como 0x00000010 (de vinculações).
-    -   **\_ cbSeek** é definido como 0x14 que é o tamanho dos campos eType, chapt e \_ CRowSeekNext combinados.
-    -   **\_ cbReserved** é definido como 0x18 (0x14 mais \_ cbSeek).
-    -   **\_ cbReadBuffer** é definido como 0x800 (0x64 0x10 arredondado para o próximo \* múltiplo de 0x200).
+    -   **\_ cRowWidth** é definido como 0x00000010 (de associações).
+    -   **\_ cbSeek** é definido como 0x14, que é o tamanho dos campos ETYPE, \_ chapt e CRowSeekNext combinados.
+    -   **\_ cbReserved** é definido como 0x18 (0x14 Plus \_ cbSeek).
+    -   **\_ cbReadBuffer** é definido como 0x800 (0x64 \* 0x10 arredondado para o próximo múltiplo de 0x200).
     -   **\_ ulClientBase** é definido como 0x00000000.
-    -   **\_ fBwdfetch** é definido como 0x00000000 indicando que as linhas devem ser buscadas em ordem de avanço.
-    -   **EType** é definido como 0x0000001 indicando que o cliente deseja as próximas linhas.
-    -   **\_ chapt** é definido como 0 (não um resultado capítulo).
-    -   **SeekDescription é** definido como CRowSeekNext. A estrutura CRowSeekNext contém os seguintes valores:
+    -   **\_ fBwdfetch** é definido como 0x00000000 indicando que as linhas devem ser buscadas na ordem de encaminhamento.
+    -   **ETYPE** é definido como 0x0000001 indicando que o cliente deseja as próximas linhas.
+    -   o **\_ chapt** é definido como 0 (não é um resultado do capítulo).
+    -   **SeekDescription** é definido como CRowSeekNext. A estrutura CRowSeekNext contém os seguintes valores:
         -   **CiTblChapt** é definido como 0x00000000.
         -   **\_ hRegion** é definido como 0x00000000.
         -   **\_ cSkip** é definido como 0, indicando que o cliente não deseja ignorar linhas.
 
 10. O servidor o processa e responde com uma mensagem CPMGetRowsOut. Vamos supor que o servidor encontrou 100 documentos que contêm a palavra "Microsoft".
 
-    O header da mensagem é populado da seguinte forma:
+    O cabeçalho da mensagem é preenchido da seguinte maneira:
 
-    -   **\_ msg** é definido como 0x000000CC, indicando que esta é uma mensagem CPMGetRowsOut.
-    -   **\_ status** é definido como SUCCESS.
+    -   **\_ msg** é definido como 0x000000CC, indicando que se trata de uma mensagem CPMGetRowsOut.
+    -   o **\_ status** é definido como êxito.
     -   **\_ ulChecksum** é definido como 0x00000000.
     -   **\_ ulReserved2** é definido como 0x00000000.
 
-    O corpo da mensagem é populado da seguinte forma:
+    O corpo da mensagem é preenchido da seguinte maneira:
 
     -   **\_ CRowsReturned** é definido como 0x00000064.
-    -   **eType** é definido como 0x00000001.
-    -   **\_ chapt** é definido como 0x00000000 (não um resultado capítulo).
-    -   **SeekDescription** contém uma estrutura CRowSeekNext, populada da seguinte forma:
+    -   **ETYPE** está definido como 0x00000001.
+    -   o **\_ chapt** é definido como 0x00000000 (não um resultado de capítulo).
+    -   **SeekDescription** contém uma estrutura CRowSeekNext, populada da seguinte maneira:
         -   **CiTblChapt** é definido como 0x00000000.
         -   **\_ hRegion** é definido como 0x00000000.
         -   **\_ cSkip** é definido como 0, indicando que o cliente não deseja ignorar linhas.
-    -   **As linhas** contêm o tamanho dos 100 documentos que contêm a palavra "Microsoft". Como esses dados são de tamanho fixo, eles são simplesmente estruturados como uma lista de inteiros sem sinal de 100, 8 byte.
+    -   As **linhas** contêm o tamanho dos documentos 100 que contêm a palavra "Microsoft". Como esses são dados de tamanho fixo, eles são simplesmente estruturados como uma lista de 100, inteiros não assinados de 8 bytes.
 
 11. O cliente envia uma mensagem CPMDisconnect para encerrar a conexão.
 
-    O header da mensagem é populado da seguinte forma:
+    O cabeçalho da mensagem é preenchido da seguinte maneira:
 
-    -   **\_ msg** é definido como 0x000000C9, indicando que esta é uma mensagem CPMDisconnect.
-    -   **\_ status** é definido como 0x00000000.
+    -   **\_ msg** é definido como 0x000000C9, indicando que se trata de uma mensagem CPMDisconnect.
+    -   o **\_ status** é definido como 0x00000000.
     -   **\_ ulChecksum** é definido como 0x00000000.
 
 12. O servidor processa a mensagem e remove todo o estado do cliente.
 
-### <a name="42-example-2"></a>4.2 Exemplo 2
+### <a name="42-example-2"></a>4,2 exemplo 2
 
-No exemplo anterior, a consulta era bastante simples. Agora vamos considerar uma consulta um pouco mais complexa. Vamos supor que o usuário deseja recuperar o tamanho dos documentos que contêm as seguintes palavras: "Microsoft" e "Office". Isso é especificado alterando o campo Restrição contido na mensagem CPMCreateQueryIn enviada na etapa 5 da seguinte forma:
+No exemplo anterior, a consulta era bem simples. Agora, vamos considerar uma consulta um pouco mais complexa. Vamos supor que o usuário deseja recuperar o tamanho dos documentos que contêm as duas palavras a seguir: "Microsoft" e "Office". Isso é especificado alterando o campo de restrição contido na mensagem CPMCreateQueryIn enviada na etapa 5 da seguinte maneira:
 
-O **campo Restrição** é do tipo CRestriction e está definido como:
+O campo de **restrição** é do tipo CRestriction e é definido como:
 
 -   -   **\_ ulType** é definido como 0x00000004 (RTAnd).
-    -   **\_ weight** é definido como 0x00000000.
+    -   **\_ Weight** é definido como 0x00000000.
 
 O restante do campo contém uma estrutura CNodeRestriction:
 
 -   -   **\_ cNode** é definido como 0x00000002, indicando que há dois nós na matriz paNode.
-    -   O **\_ campo paNode** é uma matriz de duas estruturas CRestriction.
+    -   O campo **\_ paNode** é uma matriz de duas estruturas CRestriction.
 
         **\_ paNode \[ 0 \]** contém:
 
         -   -   **\_ ulType** é definido como 0x00000004 (RTContent).
-            -   **\_ weight** é definido como 0x00000000.
+            -   **\_ Weight** é definido como 0x00000000.
             -   O restante do campo contém uma estrutura CContentRestriction:
-                -   **\_** A propriedade é definida como GUID b725f130-47ef-101a-a5f1-02608c9eebac/0x00000001 (para PRSPEC \_ PROPID) /0x13.
-                -   **\_ Cc** é definido como 0x00000009.
-                -   **\_ pwcsphrase é** definido como a cadeia de caracteres "Microsoft".
-                -   **\_ lcid é** definido como 0x409 (para inglês).
-                -   **\_ ulGenerateMethod** é definido como 0x00000000 (combinação exata).
+                -   A **\_ Propriedade** é definida como GUID b725f130-47ef-101A-a5f1-02608c9eebac/0X00000001 (para PRSPEC \_ Propid)/0x13.
+                -   **\_ CC** é definido como 0x00000009.
+                -   **\_ pwcsphrase** é definido como a cadeia de caracteres "Microsoft".
+                -   **\_ LCID** é definido como 0X409 (para inglês).
+                -   **\_ ulGenerateMethod** é definido como 0x00000000 (correspondência exata).
 
         **\_ paNode \[ 1 \]** contém:
 
         -   -   **\_ ulType** é definido como 0x00000004 (RTContent).
-            -   **\_ weight** é definido como 0x00000000.
+            -   **\_ Weight** é definido como 0x00000000.
             -   O restante do campo contém uma estrutura CContentRestriction:
-                -   **\_** A propriedade é definida como GUID b725f130-47ef-101a-a5f1-02608c9eebac/0x00000001 (para PRSPEC \_ PROPID) /0x13.
-                -   **\_ Cc** é definido como 0x00000006.
-                -   **\_ pwcsphrase é** definido como a cadeia de caracteres "Office".
-                -   **\_ lcid é** definido como 0x409 (para inglês).
-                -   **\_ ulGenerateMethod** é definido como 0x00000000 (combinação exata).
+                -   A **\_ Propriedade** é definida como GUID b725f130-47ef-101A-a5f1-02608c9eebac/0X00000001 (para PRSPEC \_ Propid)/0x13.
+                -   **\_ CC** é definido como 0x00000006.
+                -   **\_ pwcsphrase** é definido como a cadeia de caracteres "Office".
+                -   **\_ LCID** é definido como 0X409 (para inglês).
+                -   **\_ ulGenerateMethod** é definido como 0x00000000 (correspondência exata).
 
 ## <a name="5-security"></a>5 Segurança
 
 ### <a name="51-security-considerations-for-implementers"></a>5.1 Considerações de segurança para implementadores
 
-As implementações de indexação que indexam o conteúdo seguro devem considerar o uso do contexto de usuário fornecido pelo SMB MS-SMB para cortar os resultados da pesquisa e retornar somente aqueles acessíveis ao \[ \] chamador.
+Implementações de indexação que indexam conteúdo seguro devem considerar o uso do contexto de usuário fornecido pelo SMB \[ MS-SMB \] para cortar os resultados da pesquisa e retornar somente aqueles acessíveis ao chamador.
 
 ### <a name="52-index-of-security-parameters"></a>5.2 Índice de parâmetros de segurança
 
@@ -8019,13 +8019,13 @@ As implementações de indexação que indexam o conteúdo seguro devem consider
 
  
 
-## <a name="6-index-of-version-specific-behavior"></a>6 Índice de comportamento específico da versão
+## <a name="6-index-of-version-specific-behavior"></a>6 índice de comportamento de versão específica
 
 
 
 | Comportamento específico da versão                                                                         | Seção   | Windows 2000 | Windows XP | Windows Server 2003 |
 |---------------------------------------------------------------------------------------------------|-----------|--------------|------------|---------------------|
-| Esse protocolo é implementado no Windows 2000, Windows XP, Windows Server 2003 e Windows Vista. | 1.3.2     | X            | X          | X                   |
+| esse protocolo é implementado em Windows 2000, Windows XP, Windows Server 2003 e Windows Vista. | 1.3.2     | X            | X          | X                   |
 | Normalmente, os aplicativos interagem com um wrapper de interface OLE DB                                  | 1.4       | X            | X          | X                   |
 | Valores de NTSTATUS                                                                                   | 1.8       | X            | X          | X                   |
 | O cliente define o \_ campo status em cada cabeçalho de mensagem.                                        | 2.2.2     | X            | X          | X                   |

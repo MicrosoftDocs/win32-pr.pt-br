@@ -1,24 +1,24 @@
 ---
-title: Exemplo de código para determinar o modo de operação
+title: Código de exemplo para determinar o modo de operação
 description: Este tópico inclui um exemplo de código que lê a propriedade ntMixedDomain de um domínio e determina o modo de operação.
 ms.assetid: 4ea1ddc5-6f48-45d3-9763-7ef0e6e704e3
 ms.tgt_platform: multiple
 keywords:
-- Exemplos de Active Directory Active Directory, determinando o modo de operação
+- Exemplos do Active Directory do Active Directory, determinando o modo de operação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a059a750cf98efc066ac510c2c8acf58a65ab8c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a2bb4a7d00a61298ad8b9b29d9208a50023a6885360d31b14933f83a3102ab1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104453506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190769"
 ---
-# <a name="example-code-for-determining-the-operation-mode"></a>Exemplo de código para determinar o modo de operação
+# <a name="example-code-for-determining-the-operation-mode"></a>Código de exemplo para determinar o modo de operação
 
 Este tópico inclui um exemplo de código que lê a propriedade **ntMixedDomain** de um domínio e determina o modo de operação.
 
-O exemplo de código C++ a seguir lê a propriedade **ntMixedDomain** de um domínio e determina o modo de operação.
+O exemplo de código C++ a seguir lê a **propriedade ntMixedDomain** de um domínio e determina o modo de operação.
 
 
 ```C++
@@ -59,7 +59,7 @@ return hr;
 
 
 
-O exemplo de código a seguir Visual Basic lê a propriedade **ntMixedDomain** de um domínio e determina o modo de operação.
+O exemplo Visual Basic código a seguir lê a propriedade **ntMixedDomain** de um domínio e determina o modo de operação.
 
 
 ```VB
@@ -142,7 +142,7 @@ End Sub
 
 
 
-O exemplo de código a seguir Visual Basic Scripting Edition lê a propriedade **ntMixedDomain** de um domínio e determina o modo de operação.
+O exemplo Visual Basic código do Scripting Edition a seguir lê a propriedade **ntMixedDomain** de um domínio e determina o modo de operação.
 
 
 ```VB
@@ -217,9 +217,9 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,34 +1,34 @@
 ---
 title: Indexação dinâmica usando HLSL 5.1
-description: O exemplo D3D12DynamicIndexing demonstra alguns dos novos recursos do HLSL disponíveis no Shader Model 5,1 – especialmente a indexação dinâmica e matrizes não associadas – para renderizar a mesma malha várias vezes, sempre processando-a com um material selecionado dinamicamente. Com a indexação dinâmica, os sombreadores agora podem ser indexados em uma matriz sem saber o valor do índice no momento da compilação. Quando combinado com matrizes não associadas, isso adiciona outro nível de indireção e flexibilidade para autores de sombreador e pipelines de arte.
+description: O exemplo D3D12DynamicIndexing demonstra alguns dos novos recursos HLSL disponíveis no Modelo de Sombreador 5.1 – particularmente indexação dinâmica e matrizes não unidas – para renderizar a mesma malha várias vezes, cada vez renderizar com um material selecionado dinamicamente. Com a indexação dinâmica, os sombreadores agora podem indexar em uma matriz sem saber o valor do índice em tempo de compilação. Quando combinadas com matrizes não associados, isso adiciona outro nível de indcisão e flexibilidade para autores de sombreador e pipelines de arte.
 ms.assetid: 9821AEDF-E83D-4034-863A-2B820D9B7455
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e41892e7deff23c8d11f8be1c38dac3fcba1de9
-ms.sourcegitcommit: 4c00910ed754d7d0a68c9a833751d714c06e3b39
+ms.openlocfilehash: bc560a71ac602f7c78d41e4805d90cb404c2210790b462fb5353b9e5b3ad48f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "104548247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118529279"
 ---
 # <a name="dynamic-indexing-using-hlsl-51"></a>Indexação dinâmica usando HLSL 5.1
 
-O exemplo **D3D12DynamicIndexing** demonstra alguns dos novos recursos do HLSL disponíveis no Shader Model 5,1 – especialmente a indexação dinâmica e matrizes não associadas – para renderizar a mesma malha várias vezes, sempre processando-a com um material selecionado dinamicamente. Com a indexação dinâmica, os sombreadores agora podem ser indexados em uma matriz sem saber o valor do índice no momento da compilação. Quando combinado com matrizes não associadas, isso adiciona outro nível de indireção e flexibilidade para autores de sombreador e pipelines de arte.
+O exemplo **D3D12DynamicIndexing** demonstra alguns dos novos recursos HLSL disponíveis no Modelo de Sombreador 5.1 – particularmente indexação dinâmica e matrizes não unidas – para renderizar a mesma malha várias vezes, cada vez renderizar com um material selecionado dinamicamente. Com a indexação dinâmica, os sombreadores agora podem indexar em uma matriz sem saber o valor do índice em tempo de compilação. Quando combinadas com matrizes não associados, isso adiciona outro nível de indcisão e flexibilidade para autores de sombreador e pipelines de arte.
 
 -   [Configurar o sombreador de pixel](#set-up-the-pixel-shader)
 -   [Configurar a assinatura raiz](#set-up-the-root-signature)
 -   [Criar as texturas](#create-the-textures)
--   [Carregar os dados de textura](#upload-the-texture-data)
+-   [Upload os dados de textura](#upload-the-texture-data)
 -   [Carregar a textura difusa](#load-the-diffuse-texture)
--   [Criar uma amostra](#create-a-sampler)
+-   [Criar um exemplo](#create-a-sampler)
 -   [Alterar dinamicamente o índice do parâmetro raiz](#dynamically-change-the-root-parameter-index)
--   [Execute o exemplo](#run-the-sample)
+-   [Executar o exemplo](#run-the-sample)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="set-up-the-pixel-shader"></a>Configurar o sombreador de pixel
 
-Vamos primeiro examinar o próprio sombreador, que neste exemplo é um sombreador de pixel.
+Primeiro, vamos dar uma olhada no sombreador em si, que para este exemplo é um sombreador de pixel.
 
 ``` syntax
 Texture2D        g_txDiffuse : register(t0);
@@ -55,9 +55,9 @@ float4 PSSceneMain(PSSceneIn input) : SV_Target
 }
 ```
 
-O recurso de matriz não vinculada é ilustrado pela `g_txMats[]` matriz, pois não especifica um tamanho de matriz. A indexação dinâmica é usada para indexar `g_txMats[]` com `matIndex` , que é definido como uma constante raiz. O sombreador não tem conhecimento do tamanho ou da matriz ou do valor do índice em tempo de compilação. Ambos os atributos são definidos na assinatura raiz do objeto de estado do pipeline usado com o sombreador.
+O recurso de matriz não unidas é ilustrado pela `g_txMats[]` matriz, pois ele não especifica um tamanho de matriz. A indexação dinâmica é usada para indexar `g_txMats[]` em com , que é definido como uma constante `matIndex` raiz. O sombreador não tem conhecimento do tamanho, da matriz ou do valor do índice em tempo de compilação. Ambos os atributos são definidos na assinatura raiz do objeto de estado do pipeline usado com o sombreador.
 
-Para aproveitar os recursos de indexação dinâmica no HLSL, é necessário que o sombreador seja compilado com o SM 5,1. Além disso, para fazer uso de matrizes não associadas, o sinalizador de **\_ \_ \_ tabelas de descritor/Enable não associado** também deve ser usado. As opções de linha de comando a seguir são usadas para compilar esse sombreador com a [ferramenta de compilador de efeito](/windows/desktop/direct3dtools/fxc) (FXC):
+Para aproveitar os recursos de indexação dinâmica no HLSL, é necessário compilar o sombreador com o SM 5.1. Além disso, para usar matrizes não unidas, o sinalizador de tabelas **de descritor /enable \_ \_ unbounded \_** também deve ser usado. As seguintes opções de linha de comando são usadas para compilar esse sombreador com a FXC [(Ferramenta do Compilador de](/windows/desktop/direct3dtools/fxc) Efeito):
 
 ``` syntax
 fxc /Zi /E"PSSceneMain" /Od /Fo"dynamic_indexing_pixel.cso" /ps"_5_1" /nologo /enable_unbounded_descriptor_tables
@@ -65,7 +65,7 @@ fxc /Zi /E"PSSceneMain" /Od /Fo"dynamic_indexing_pixel.cso" /ps"_5_1" /nologo /e
 
 ## <a name="set-up-the-root-signature"></a>Configurar a assinatura raiz
 
-Agora, vamos examinar a definição de assinatura raiz, particularmente, como definimos o tamanho da matriz não associada e vinculo uma constante raiz a `matIndex` . Para o sombreador de pixel, definimos três coisas: uma tabela de descritores para SRVs (nossa Texture2Ds), uma tabela de descritores para amostras e uma única constante raiz. A tabela de descritores de nosso SRVs contém `CityMaterialCount + 1` entradas. `CityMaterialCount` é uma constante que define o comprimento de `g_txMats[]` e + 1 é para `g_txDiffuse` . A tabela de descritores de nossos exemplos contém apenas uma entrada e só definimos o valor da constante raiz de 1 32 bits por meio de **InitAsConstants**(...). no método **loadassets** .
+Agora, vamos ver a definição de assinatura raiz, especialmente, como definimos o tamanho da matriz não vinculada e vinculamos uma constante raiz a `matIndex` . Para o sombreador de pixel, definimos três coisas: uma tabela de descritor para SRVs (nossos Texture2Ds), uma tabela de descritor para Samplers e uma única constante raiz. A tabela de descritor para nossos SRVs contém `CityMaterialCount + 1` entradas. `CityMaterialCount` é uma constante que define o comprimento de `g_txMats[]` e o + 1 é para `g_txDiffuse` . A tabela de descritor para nossos Samplers contém apenas uma entrada e definimos apenas um valor constante raiz de 32 bits por meio de **InitAsConstants**(...)., no método **LoadAssets.**
 
 ``` syntax
  // Create the root signature.
@@ -93,13 +93,13 @@ Agora, vamos examinar a definição de assinatura raiz, particularmente, como de
 
 
 
-| Fluxo de chamadas                                                             | Parâmetros                                                            |
+| Fluxo de chamada                                                             | Parâmetros                                                            |
 |-----------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [**\_Intervalo do descritor de CD3DX12 \_**](cd3dx12-descriptor-range.md)        | [**\_Tipo de intervalo do descritor D3D12 \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_descriptor_range_type) |
-| [**\_Parâmetro raiz \_ CD3DX12**](cd3dx12-root-parameter.md)            | [**\_Visibilidade do sombreador D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility)          |
-| [**Desc. de \_ assinatura raiz CD3DX12 \_ \_**](cd3dx12-root-signature-desc.md) | [**\_Sinalizadores de \_ assinatura \_ raiz D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags)   |
+| [**INTERVALO DE DESCRITORES CD3DX12 \_ \_**](cd3dx12-descriptor-range.md)        | [**TIPO DE INTERVALO \_ DE DESCRITOR D3D12 \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_descriptor_range_type) |
+| [**PARÂMETRO RAIZ CD3DX12 \_ \_**](cd3dx12-root-parameter.md)            | [**VISIBILIDADE DO SOMBREADOR D3D12 \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shader_visibility)          |
+| [**CD3DX12 \_ \_ DESC DE ASSINATURA \_ RAIZ**](cd3dx12-root-signature-desc.md) | [**SINALIZADORES DE ASSINATURA RAIZ D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_signature_flags)   |
 | [**ID3DBlob**](/previous-versions/windows/desktop/legacy/ff728743(v=vs.85))                                   |                                                                       |
-| [**D3D12SerializeRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-d3d12serializerootsignature)    | [**\_Versão da \_ assinatura \_ raiz do D3D**](/windows/desktop/api/d3d12/ne-d3d12-d3d_root_signature_version)   |
+| [**D3D12SerializeRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-d3d12serializerootsignature)    | [**VERSÃO DE ASSINATURA RAIZ D3D \_ \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d_root_signature_version)   |
 | [**CreateRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createrootsignature)       |                                                                       |
 
 
@@ -108,7 +108,7 @@ Agora, vamos examinar a definição de assinatura raiz, particularmente, como de
 
 ## <a name="create-the-textures"></a>Criar as texturas
 
-O conteúdo de `g_txMats[]` são texturas geradas por procedimentos criados em **loadassets**. Cada cidade renderizada na cena compartilha a mesma textura difusa, mas cada uma também tem sua própria textura gerada de procedimento. A matriz de texturas engloba o espectro arco-íris para visualizar facilmente a técnica de indexação.
+O conteúdo de `g_txMats[]` são texturas geradas proceduralmente criadas **em LoadAssets.** Cada cidade renderizada na cena compartilha a mesma textura difusa, mas cada uma também tem sua própria textura gerada proceduralmente. A matriz de texturas abrange o espectro de espectro para visualizar facilmente a técnica de indexação.
 
 ``` syntax
  // Create the textures and sampler.
@@ -177,7 +177,7 @@ O conteúdo de `g_txMats[]` são texturas geradas por procedimentos criados em *
 <table>
 <thead>
 <tr class="header">
-<th>Fluxo de chamadas</th>
+<th>Fluxo de chamada</th>
 <th>Parâmetros</th>
 </tr>
 </thead>
@@ -186,16 +186,16 @@ O conteúdo de `g_txMats[]` são texturas geradas por procedimentos criados em *
 <td><a href="/windows/desktop/api/d3d12/ns-d3d12-d3d12_resource_desc"><strong>D3D12_RESOURCE_DESC</strong></a></td>
 <td><dl><a href="/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format"><strong>DXGI_FORMAT</strong></a><br />
 <a href="/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_flags"><strong>D3D12_RESOURCE_FLAGS</strong></a><br />
-<a href=""></a>[<strong>D3D12_RESOURCE_DIMENSION</strong>] (/Windows/Desktop/API/d3d12/ne-d3d12-d3d12_resource_dimension)<br />
+<a href=""></a>[<strong>D3D12_RESOURCE_DIMENSION</strong>] (/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_dimension)<br />
 </dl></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createcommittedresource"><strong>CreateCommittedResource</strong></a></td>
 <td><dl><a href="cd3dx12-heap-properties.md"><strong>CD3DX12_HEAP_PROPERTIES</strong></a><br />
 <a href="/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_type"><strong>D3D12_HEAP_TYPE</strong></a><br />
-<a href=""></a>[<strong>D3D12_HEAP_FLAG</strong>] (/Windows/Desktop/API/d3d12/ne-d3d12-d3d12_heap_flags)<br />
+<a href=""></a>[<strong>D3D12_HEAP_FLAG</strong>] (/windows/desktop/api/d3d12/ne-d3d12-d3d12_heap_flags)<br />
 <a href="/windows/desktop/direct3d12/cd3dx12-resource-desc"><strong>CD3DX12_RESOURCE_DESC</strong></a><br />
-<a href=""></a>[<strong>D3D12_RESOURCE_STATES</strong>] (/Windows/Desktop/API/d3d12/ne-d3d12-d3d12_resource_states)<br />
+<a href=""></a>[<strong>D3D12_RESOURCE_STATES</strong>] (/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_states)<br />
 </dl></td>
 </tr>
 <tr class="odd">
@@ -211,9 +211,9 @@ O conteúdo de `g_txMats[]` são texturas geradas por procedimentos criados em *
 
  
 
-## <a name="upload-the-texture-data"></a>Carregar os dados de textura
+## <a name="upload-the-texture-data"></a>Upload os dados de textura
 
-Os dados de textura são carregados na GPU por meio de um heap de carregamento e SRVs são criados para cada e armazenados em um heap de descritor SRV.
+Os dados de textura são carregados para a GPU por meio de um heap de upload e SRVs são criados para cada um e armazenados em um heap de descritor SRV.
 
 ``` syntax
          // Upload texture data to the default heap resources.
@@ -252,7 +252,7 @@ Os dados de textura são carregados na GPU por meio de um heap de carregamento e
 <table>
 <thead>
 <tr class="header">
-<th>Fluxo de chamadas</th>
+<th>Fluxo de chamada</th>
 <th>Parâmetros</th>
 </tr>
 </thead>
@@ -293,7 +293,7 @@ Os dados de textura são carregados na GPU por meio de um heap de carregamento e
 
 ## <a name="load-the-diffuse-texture"></a>Carregar a textura difusa
 
-A textura difusa, g \_ `txDiffuse` , é carregada de maneira semelhante e também obtém seu próprio SRV, mas os dados de textura já estão definidos em occcity. bin.
+A textura difusa, g, é carregada de maneira semelhante e também obtém seu próprio SRV, mas os dados de textura já estão definidos \_ `txDiffuse` em occcity.bin.
 
 ``` syntax
 // Load the occcity diffuse texture with baked-in ambient lighting.
@@ -350,7 +350,7 @@ A textura difusa, g \_ `txDiffuse` , é carregada de maneira semelhante e també
 <table>
 <thead>
 <tr class="header">
-<th>Fluxo de chamadas</th>
+<th>Fluxo de chamada</th>
 <th>Parâmetros</th>
 </tr>
 </thead>
@@ -461,7 +461,7 @@ D3D12_FLOAT32_MAX (<a href="constants.md"><strong>constantes</strong></a>)<br />
 </dl></td>
 </tr>
 <tr class="even">
-<td><a href="/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createsampler"><strong>Createsampler</strong></a></td>
+<td><a href="/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createsampler"><strong>CreateSampler</strong></a></td>
 
 </tr>
 <tr class="odd">
@@ -527,7 +527,7 @@ O valor da constante raiz é definido em **FrameResource::P opulatecommandlists*
 
 | Fluxo de chamadas                                                                                          | Parâmetros |
 |----------------------------------------------------------------------------------------------------|------------|
-| [**Setpipelinestate**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setpipelinestate)                             |            |
+| [**SetPipelineState**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setpipelinestate)                             |            |
 | [**SetGraphicsRoot32BitConstant**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setgraphicsroot32bitconstant)     |            |
 | [**SetGraphicsRootDescriptorTable**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setgraphicsrootdescriptortable) |            |
 | [**DrawIndexedInstanced**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-drawindexedinstanced)                     |            |
@@ -542,7 +542,7 @@ Agora, quando renderizamos a cena, cada cidade terá um valor diferente `matInde
 
 <dl> <dt>
 
-[Instruções passo a passo de código do D3D12](d3d12-code-walk-throughs.md)
+[Guia detalhado do código D3D12](d3d12-code-walk-throughs.md)
 </dt> <dt>
 
 [Efeito-ferramenta do compilador](/windows/desktop/direct3dtools/fxc)
@@ -551,11 +551,11 @@ Agora, quando renderizamos a cena, cada cidade terá um valor diferente `matInde
 [Recursos do HLSL Shader Model 5,1 para Direct3D 12](/windows/desktop/direct3dhlsl/hlsl-shader-model-5-1-features-for-direct3d-12)
 </dt> <dt>
 
-[Associação de recursos em HLSL](resource-binding-in-hlsl.md)
+[Associação de recursos no HLSL](resource-binding-in-hlsl.md)
 </dt> <dt>
 
 [Modelo do sombreador 5,1](/windows/desktop/direct3dhlsl/shader-model-5-1)
 </dt> <dt>
 
-[Especificando assinaturas raiz em HLSL](specifying-root-signatures-in-hlsl.md)
+[Como especificar assinaturas raiz no HLSL](specifying-root-signatures-in-hlsl.md)
 </dt> </dl>

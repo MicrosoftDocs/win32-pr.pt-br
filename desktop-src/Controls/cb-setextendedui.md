@@ -1,9 +1,9 @@
 ---
-title: Mensagem de CB_SETEXTENDEDUI (WinUser. h)
-description: Um aplicativo envia uma \_ mensagem de SETEXTENDEDUI CB para selecionar a interface do usuário padrão ou a interface do usuário estendida para uma caixa de combinação que tem o \_ estilo de lista suspensa CBS ou CBS \_ DROPDOWNLIST.
+title: CB_SETEXTENDEDUI mensagem (Winuser.h)
+description: Um aplicativo envia uma mensagem CB SETEXTENDEDUI para selecionar a interface do usuário padrão ou a interface do usuário estendida para uma caixa de combinação que tem o estilo \_ CBS DROPDOWN ou \_ CBS \_ DROPDOWNLIST.
 ms.assetid: c489e484-777e-4afa-996b-1ec3eb6552ab
 keywords:
-- Controles de CB_SETEXTENDEDUI de mensagens do Windows
+- CB_SETEXTENDEDUI controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f94c31c8bc5457799d0038ecd8340c03c55aed91
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 36b77e67e555628475b9e40e78b7b0391d0b631fd77e6ff7f549700a553fa507
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118414218"
 ---
-# <a name="cb_setextendedui-message"></a>\_Mensagem de SETEXTENDEDUI CB
+# <a name="cb_setextendedui-message"></a>Mensagem CB \_ SETEXTENDEDUI
 
-Um aplicativo envia uma mensagem de **\_ SETEXTENDEDUI CB** para selecionar a interface do usuário padrão ou a interface do usuário estendida para uma caixa de combinação que tem o estilo de [**\_ lista suspensa CBS**](combo-box-styles.md) ou [**CBS \_ DROPDOWNLIST**](combo-box-styles.md) .
+Um aplicativo envia uma mensagem **CB \_ SETEXTENDEDUI** para selecionar a interface do usuário padrão ou a interface do usuário estendida para uma caixa de combinação que tem o estilo [**CBS \_ DROPDOWN**](combo-box-styles.md) ou [**CBS \_ DROPDOWNLIST.**](combo-box-styles.md)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,7 +32,7 @@ Um aplicativo envia uma mensagem de **\_ SETEXTENDEDUI CB** para selecionar a in
 *wParam* 
 </dt> <dd>
 
-Um **bool** que especifica se a caixa de combinação usa a interface do usuário estendida (**true**) ou a interface do usuário padrão (**false**).
+Um **BOOL** que especifica se a caixa de combinação usa a interface do usuário estendida (**TRUE**) ou a interface do usuário padrão (**FALSE**).
 
 </dd> <dt>
 
@@ -43,13 +43,13 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a operação for concluída com sucesso, o valor de retorno será CB \_ OK. Se ocorrer um erro, será CB \_ Err.
+Se a operação for bem-sucedida, o valor de retorno será CB \_ OK. Se ocorrer um erro, será CB \_ ERR.
 
 ## <a name="remarks"></a>Comentários
 
-Por padrão, a tecla F4 é aberta ou fecha a lista e a seta para baixo altera a seleção atual. Na interface do usuário estendida, a tecla F4 é desabilitada e a tecla de seta para baixo abre a lista suspensa. A roda do mouse, que normalmente rola pelos itens da lista, não tem efeito quando a interface do usuário estendida está definida.
+Por padrão, a tecla F4 abre ou fecha a lista e a seta para baixo altera a seleção atual. Na interface do usuário estendida, a tecla F4 está desabilitada e a tecla SETA PARA BAIXO abre a lista lista listada. A roda do mouse, que normalmente rola pelos itens na lista, não tem efeito quando a interface do usuário estendida é definida.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Por padrão, a tecla F4 é aberta ou fecha a lista e a seta para baixo altera a 
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| parâmetro<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -70,13 +70,13 @@ Por padrão, a tecla F4 é aberta ou fecha a lista e a seta para baixo altera a 
 **Referência**
 </dt> <dt>
 
-[**\_GETEXTENDEDUI CB**](cb-getextendedui.md)
+[**CB \_ GETEXTENDEDUI**](cb-getextendedui.md)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Recursos da caixa de combinação](combo-box-features.md)
+[Recursos do Combo Box](combo-box-features.md)
 </dt> </dl>
 
  

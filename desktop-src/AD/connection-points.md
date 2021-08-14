@@ -7,12 +7,12 @@ keywords:
 - pontos de conexão AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cc61c4c5b7dd74626ab1f3884ad403cfa20b843
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: f5a0b7a4c8ddbf592bba0ed39e2eb8f93faf863e6ebff7081865466b6522c98d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104007349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118022037"
 ---
 # <a name="connection-points"></a>Pontos de conexão
 
@@ -24,20 +24,20 @@ A tabela a seguir lista as subclasses imediatas da classe [**ConnectionPoint**](
 
 
 
-| Classe de objeto                                                    | Descrição                                                                                                                                                                                                                                                                                                              |
+| Classe de objeto                                                    | Description                                                                                                                                                                                                                                                                                                              |
 |-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**serviceConnectionPoint**](/windows/desktop/ADSchema/c-serviceconnectionpoint) | Objetos de ponto de conexão de serviço (SCP) para publicar dados que os aplicativos cliente usam para associar a um serviço. Para obter mais informações, consulte [publicação com pontos de conexão de serviço (SCPs)](publishing-with-service-connection-points.md).                                                                               |
 | [**rpcEntry**](/windows/desktop/ADSchema/c-rpcentry)                             | Uma classe abstrata cujas subclasses são usadas pelo NS (serviço de nomes RPC) acessado por meio das funções **RpcNs \*** na API do Win32. Para obter mais informações, consulte [publicando com o serviço de nomes RPC (RpcNs)](publishing-with-the-rpc-name-service-rpcns.md).                                                          |
-| [**serviceInstance**](/windows/desktop/ADSchema/c-serviceinstance)               | Objeto de ponto de conexão usado pelo serviço de nome de RnR (registro e resolução do Windows Sockets), acessado por meio das APIs do **WSA \*** do Windows Sockets. Para obter mais informações, consulte [publicação com RNR (registro e resolução do Windows Sockets)](publishing-with-windows-sockets-registration-and-resolution.md). |
+| [**serviceInstance**](/windows/desktop/ADSchema/c-serviceinstance)               | objeto de ponto Windows de conexão usado pelo serviço de nome RnR (registro e resolução de soquetes), acessado por meio das APIs de **cabeçalho \*** de Windows soquetes. para obter mais informações, consulte [publicing with Windows sockets Registration and resolution (RnR)](publishing-with-windows-sockets-registration-and-resolution.md). |
 | [**printQueue**](/windows/desktop/ADSchema/c-printqueue)                         | Objeto de ponto de conexão usado para publicar impressoras de rede. Para obter mais informações, consulte [**IADsPrintQueue**](/windows/desktop/api/iads/nn-iads-iadsprintqueue).                                                                                                                                                                                           |
 | [**volume**](/windows/desktop/ADSchema/c-volume)                                 | Objeto de ponto de conexão usado para publicar serviços de arquivo.                                                                                                                                                                                                                                                                   |
 
 
 
- 
+ 
 
-Lembre-se de que os serviços baseados em COM não usam objetos de ponto de conexão para se anunciar. Esses serviços são publicados no repositório de classe. O armazenamento de classe do Windows 2000 é um repositório baseado em diretório para todos os aplicativos, interfaces e APIs baseados em COM, que fornecem publicação e atribuição de aplicativos. Para obter mais informações, consulte [publicando serviços com+](publishing-com-services.md).
+Lembre-se de que os serviços baseados em COM não usam objetos de ponto de conexão para se anunciar. Esses serviços são publicados no repositório de classe. o Windows armazenamento de classe 2000 é um repositório baseado em diretório para todos os aplicativos, interfaces e APIs baseados em com, que fornecem publicação e atribuição de aplicativos. Para obter mais informações, consulte [publicando serviços com+](publishing-com-services.md).
 
- 
+ 
 
- 
+ 

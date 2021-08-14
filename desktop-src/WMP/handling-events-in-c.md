@@ -4,33 +4,33 @@ description: Manipulando eventos em C++
 ms.assetid: 5d9eb1c7-7022-4442-b67a-6a96fe5ce97f
 keywords:
 - Windows Media Player, C++
-- Modelo de objeto do Windows Media Player, C++
+- modelo de objeto Windows Media Player, C++
 - modelo de objeto, C++
-- Windows Media Player Mobile, C++
-- Controle ActiveX do Windows Media Player, C++
-- Controle ActiveX móvel do Windows Media Player, C++
-- Controle ActiveX, C++
+- Windows Media Player Móvel, C++
+- Windows Media Player ActiveX controle, C++
+- Windows Media Player controle de ActiveX móvel, C++
+- controle de ActiveX, C++
 - Incorporação de programa C++
 - incorporando, programas em C++
-- Controle ActiveX do Windows Media Player, manipulação de eventos
-- Controle ActiveX móvel do Windows Media Player, manipulação de eventos
-- Controle ActiveX, manipulação de eventos
+- controle de ActiveX de Windows Media Player, manipulação de eventos
+- Windows Media Player controle de ActiveX móvel, manipulação de eventos
+- controle de ActiveX, manipulação de eventos
 - eventos, C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16cbef547ab2604244c5c204707a08eb87a6b70a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cf5d50be4622cee9ee455710f8b9d2e4cafc63d6560e08faf5c3deaddcdaccc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104084095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117748401"
 ---
 # <a name="handling-events-in-c"></a>Manipulando eventos em C++
 
-Você pode receber eventos do Windows Media Player de duas maneiras.
+você pode receber eventos de Windows Media Player de duas maneiras.
 
 -   Por meio de **IDispatch** usando a interface **\_ WMPOCXEvents** . Essa é a interface a ser usada para a maioria dos cenários de inserção.
--   Por meio da interface **IWMPEvents** . Essa interface está disponível quando seu código está conectado ao Player de modo completo, como quando você faz a comunicação remota do controle do Windows Media Player ou de um plug-in de interface do usuário.
+-   Por meio da interface **IWMPEvents** . essa interface está disponível quando seu código está conectado ao Player de modo completo, como quando o controle de Windows Media Player de comunicação remota ou um plug-in de interface do usuário é remoto.
 
 Em cada cenário, você começa a escutar eventos usando pontos de conexão COM.
 
@@ -166,13 +166,13 @@ HRESULT CMyClass::Invoke(
 
 No código de exemplo anterior, cada caso simplesmente chama o manipulador **IWMPEvents** para o evento correspondente. Se o código só tratar **\_ WMPOCXEvents**, você poderá simplesmente chamar uma função personalizada ou manipular o evento embutido após a instrução **Case** .
 
-## <a name="receiving-events-from-windows-media-player-10-mobile"></a>Recebendo eventos do Windows Media Player 10 Mobile
+## <a name="receiving-events-from-windows-media-player-10-mobile"></a>recebendo eventos do Windows Media Player 10 Mobile
 
-O controle móvel do Windows Media Player 10 dá suporte apenas ao recebimento de determinados eventos por meio de **\_ WMPOCXEvents** e **IWMPEvents**. Para obter mais informações, consulte a documentação do **IWMPEvents**.
+o controle móvel Windows Media Player 10 dá suporte apenas ao recebimento de determinados eventos por meio de **\_ WMPOCXEvents** e **IWMPEvents**. Para obter mais informações, consulte a documentação do **IWMPEvents**.
 
 ## <a name="samples"></a>Exemplos
 
-O pacote de instalação do Windows Media Player instala um exemplo que demonstra a manipulação de eventos. Consulte o exemplo de WMPHost para obter mais informações.
+o pacote de instalação do Windows Media Player instala um exemplo que demonstra a manipulação de eventos. Consulte o exemplo de WMPHost para obter mais informações.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -181,12 +181,12 @@ O pacote de instalação do Windows Media Player instala um exemplo que demonstr
 [**Exemplos**](samples.md)
 </dt> <dt>
 
-[**Usando o controle do Windows Media Player em um programa C++**](using-the-windows-media-player-control-in-a-c---program.md)
+[**usando o controle Windows Media Player em um programa C++**](using-the-windows-media-player-control-in-a-c---program.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

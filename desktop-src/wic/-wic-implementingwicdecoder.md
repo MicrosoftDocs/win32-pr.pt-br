@@ -4,17 +4,17 @@ ms.assetid: a26a592d-42ef-4690-95b4-48a5324be75a
 title: Implementando um decodificador de WIC-Enabled
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ebd6d56258bf18e6cc914a40efa4cd3a57a92fc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e0aa2211c0b21e8f6fc921986406f7079b13c216f0bd7ada684e7748effb6c7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118205697"
 ---
 # <a name="implementing-a-wic-enabled-decoder"></a>Implementando um decodificador de WIC-Enabled
 
 
-A implementação de um decodificador do Windows Imaging Component (WIC) requer a gravação de duas classes. As interfaces nessas classes correspondem diretamente às responsabilidades do decodificador descritas na seção [decodificação](-wic-howwicworks.md) de [como o Windows Imaging Component funciona](-wic-howwicworks.md).
+a implementação de um decodificador de WIC (Windows Imaging Component) requer a gravação de duas classes. as interfaces nessas classes correspondem diretamente às responsabilidades do decodificador descritas na seção [decodificação](-wic-howwicworks.md) de [como funciona o componente de Windows Imaging](-wic-howwicworks.md).
 
 Uma das classes fornece serviços de nível de contêiner e implementa a interface [IWICBitmapDecoder](-wic-imp-iwicbitmapdecoder.md) . Se o formato de imagem der suporte a metadados em nível de contêiner, você também deverá implementar a interface [IWICMetadataBlockReader](-wic-imp-iwicmetadatablockreader.md) nessa classe. É recomendável que você dê suporte à interface [IWICBitmapCodecProgressNotification](-wic-imp-iwicbitmapcodecprogressnotification-decoder.md) no decodificador e no codificador para dar suporte a uma melhor experiência do usuário.
 
@@ -45,7 +45,7 @@ hr = m_pImagingFactory->QueryInterface(
 **Conceitua**
 </dt> <dt>
 
-[Como funciona o Windows Imaging Component](-wic-howwicworks.md)
+[como funciona o componente de Windows Imaging](-wic-howwicworks.md)
 </dt> <dt>
 
 [Interfaces do decodificador](-wic-decoderinterfaces.md)
@@ -54,7 +54,7 @@ hr = m_pImagingFactory->QueryInterface(
 [Como escrever um CODEC de WIC-Enabled](-wic-howtowriteacodec.md)
 </dt> <dt>
 
-[Visão geral do Windows Imaging Component](-wic-about-windows-imaging-codec.md)
+[Windows Visão geral do componente de geração de imagens](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
 [Visão geral dos metadados do WIC](-wic-about-metadata.md)

@@ -1,27 +1,27 @@
 ---
 description: As APIs de DLP (prevenção de perda de dados) do ponto de extremidade permitem que os aplicativos notifiquem o sistema operacional antes e depois de determinadas operações, como abrir ou salvar um arquivo.
-title: Prevenção de perda de dados do ponto de extremidade
+title: Prevenção contra perda de dados do ponto de extremidade
 ms.topic: article
 ms.date: 03/18/2021
-ms.openlocfilehash: 3b8576f9eadd0037eca56c0ba183ea1d1825679a
-ms.sourcegitcommit: 8b543a86e551cb5b4270a3cc3590ad0758fb6156
+ms.openlocfilehash: fcbe17d30addb86e37330b210d224720f9b50e525e2b8d41d07d349ea5819c2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107526086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118479427"
 ---
-# <a name="endpoint-data-loss-prevention"></a>Prevenção de perda de dados do ponto de extremidade
+# <a name="endpoint-data-loss-prevention"></a>Prevenção contra perda de dados do ponto de extremidade
 
-O Windows 10 implementa mecanismos que ajudam a evitar a perda de dados para arquivos confidenciais. As APIs de DLP (prevenção de perda de dados) do ponto de extremidade permitem que os aplicativos notifiquem o sistema operacional antes e depois de determinadas operações, como abrir ou salvar um arquivo. Essas notificações servem como "dicas" que permitem que o sistema Otimize as operações de perda de dados.
+Windows 10 implementa mecanismos que ajudam a evitar a perda de dados para arquivos confidenciais. As APIs de DLP (prevenção de perda de dados) do ponto de extremidade permitem que os aplicativos notifiquem o sistema operacional antes e depois de determinadas operações, como abrir ou salvar um arquivo. Essas notificações servem como "dicas" que permitem que o sistema Otimize as operações de perda de dados.
 
 ## <a name="location-of-the-dlp-dll"></a>Local da dll DLP
 
-Como a DLL do Endpoint DLP não é empacotada com o SDK do Windows, os aplicativos precisarão carregar a dll manualmente no tempo de execução. O caminho para o local da dll é armazenado no registro. A tabela a seguir lista as chaves e os valores do registro que armazenam essas informações. Esses caminhos são definidos como constantes na listagem de código de exemplo endpointdlp. h fornecida abaixo como uma conveniência para os desenvolvedores.
+como a dll do endpoint DLP não é empacotada com o SDK do Windows, os aplicativos precisarão carregar a dll manualmente no tempo de execução. O caminho para o local da dll é armazenado no registro. A tabela a seguir lista as chaves e os valores do registro que armazenam essas informações. Esses caminhos são definidos como constantes na listagem de código de exemplo endpointdlp. h fornecida abaixo como uma conveniência para os desenvolvedores.
 
 | Constante | Valor | Descrição   |
 |----------|-------|---------------|
 | ENDPOINTDLP_DLL_NAME | "EndpointDlp.dll" | O nome da DLL de DLP do ponto de extremidade que fornece a API |
-| ENDPOINTDLP_WINDOWS_DEFENDER_REGKEY | "SOFTWARE \\ Microsoft \\ Windows Defender" | Chave do registro do Windows Defender em HKLM, em que algumas configurações de DLP de ponto de extremidade são armazenadas |
+| ENDPOINTDLP_WINDOWS_DEFENDER_REGKEY | "SOFTWARE \\ Microsoft \\ Windows Defender" | Windows Defender chave do registro em HKLM, em que algumas configurações de DLP de ponto de extremidade são armazenadas |
 | ENDPOINTDLP_DLL_INSTALL_LOCATION_REGKEY | Valor de ENDPOINTDLP_WINDOWS_DEFENDER_REGKEY |  O caminho do registro na chave HKLM da qual o local de instalação do EndpointDlp.dll pode ser obtido |
 | ENDPOINTDLP_DLL_INSTALL_LOCATION_REGVALUE | InstallLocation | O valor do registro em ENDPOINTDLP_DLL_INSTALL_LOCATION_REGKEY no qual o local de instalação do EndpointDlp.dll está armazenado |
 | ENDPOINTDLP_DLL_WOW64_X86_INSTALL_LOCATION_SUFFIX | x86 | Em plataformas x64, concatene esse diretório para obter a versão x86 do EndpointDlp.dll |
@@ -91,13 +91,13 @@ As tabelas a seguir listam as APIs fornecidas pela DLL do Endpoint DLP.
 
 | API | Descrição |
 |-----|-------------|
-| [DlpNotifyPrePrint](endpointdlp-dlpnotifypreprint.md)                         | Fornece ao sistema informações sobre um documento antes de uma operação de impressão ser iniciada.  |
+| [DlpNotifyPrePrint](endpointdlp-dlpnotifypreprint.md)                         | Fornece ao sistema informações sobre um documento antes que uma operação de impressão seja iniciada.  |
 | [DlpNotifyPostStartPrint](endpointdlp-dlpnotifypoststartprint.md)                       | Fornece ao sistema informações sobre um documento após o início de uma operação de impressão.                                  |
 | [DlpNotifyPostPrint](endpointdlp-dlpnotifypostprint.md)                       | Fornece ao sistema informações sobre um documento após a conclusão de uma operação de impressão.                                  |
 
-## <a name="endpoint-dlp-example-header"></a>Cabeçalho de exemplo do Endpoint DLP
+## <a name="endpoint-dlp-example-header"></a>Exemplo de DLP do ponto de extremidade
 
-Como o cabeçalho de DLP do ponto de extremidade não está incluído no SDK do Windows, você deve criar o arquivo de cabeçalho por conta própria para obter assinaturas de API para usar em sua implementação. Para sua conveniência, estamos fornecendo um código de exemplo que você pode copiar e colar em seu aplicativo. Além das declarações de função, essa listagem de código também define constantes úteis, como informações de controle de versão e caminhos de chave do registro.
+Como o header DLP do ponto de extremidade não está incluído no SDK do Windows, você deve criar o arquivo de header por conta própria para obter assinaturas de API para usar em sua implementação. Para sua conveniência, estamos fornecendo um código de exemplo que você pode copiar e colar em seu aplicativo. Além das declarações de função, essa listagem de código também define constantes úteis, como informações de versão e caminhos de chave do Registro.
 
 ```cpp
 //
