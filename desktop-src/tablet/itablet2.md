@@ -14,12 +14,12 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: b402695aa278105ad57209f3ff33e66ccaf8c746
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0df1114f5808e5fd08a1a2dbe00ccfb451eaa7096c978d3f4d454e508c0a2fcd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118717345"
 ---
 # <a name="itablet2-interface"></a>Interface ITablet2
 
@@ -27,19 +27,19 @@ Estende a [**interface ITablet**](itablet.md).
 
 ## <a name="members"></a>Membros
 
-A interface **ITablet2** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ITablet2** também tem estes tipos de membros:
+A interface **ITablet2** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITablet2** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-A interface **ITablet2** tem esses métodos.
+A **interface ITablet2** tem esses métodos.
 
 
 
 | Método                                          | Descrição                                                                                              |
 |:------------------------------------------------|:---------------------------------------------------------------------------------------------------------|
-| [**GetDeviceKind**](itablet2-getdevicekind.md) | Retorna o tipo de dispositivo de hardware que o objeto do Tablet representa, como mouse, caneta ou toque.<br/> |
+| [**GetDeviceKind**](itablet2-getdevicekind.md) | Retorna o tipo de dispositivo de hardware que o objeto de tablet representa, como mouse, caneta ou toque.<br/> |
 
 
 
@@ -73,7 +73,7 @@ interface ITablet2 : IUnknown
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

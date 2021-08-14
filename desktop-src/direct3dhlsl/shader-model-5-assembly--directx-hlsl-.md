@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 64e84cc84741a524bc6592980c5c2aba82f8be74
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 8d62936d1b5dd1372e978ed1f5aa4104b44422b574bb8ee364cb7a92e11ffd7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104988562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119981506"
 ---
 # <a name="shader-model-5-assembly"></a>Assembly do Shader Model 5
 
@@ -169,7 +169,7 @@ Esta seção descreve as instruções com suporte do sombreador modelo 5.
 [ishr](ishr--sm5---asm-.md)  
 [itof](itof--sm4---asm-.md)  
 [label](label--sm4---asm-.md)  
-[2](ld--sm4---asm-.md)  
+[ld](ld--sm4---asm-.md)  
 [LD \_ bruto](ld-raw--sm5---asm-.md)  
 [LD \_ estruturada](ld-structured--sm5---asm-.md)  
 [LD \_ UAV de \_ tipos](ld-uav-typed--sm5---asm-.md)  
@@ -235,9 +235,9 @@ Esta seção descreve as instruções com suporte do sombreador modelo 5.
 [Referência do sombreador ASM](dx9-graphics-reference-asm.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

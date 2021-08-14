@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2c506d2ad23003f93bbaea409cacc60b18c86534
-ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.openlocfilehash: 91a57ec2eabbef2cd62fec8fa95fbf9d2da47a5bfcdb339bf30ed8da5b11c9ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113129703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118792925"
 ---
 # <a name="dcl_semantics-sm3---ps-asm"></a>\_semântica dcl (sm3 – ps asm)
 
@@ -31,7 +31,7 @@ dcl \_ semantics \[ \_ centroid \] dst \[ .write \_ mask\]
 Em que:
 
 -   \_semantics: identifica o uso de dados pretendido e pode ser qualquer um dos valores em [**D3DDECLUSAGE**](/windows/desktop/direct3d9/d3ddeclusage) (sem o prefixo D3DDECLUSAGE). \_ Além disso, um índice inteiro pode ser anexado à semântica para distinguir parâmetros que usam semântica semelhante.
--   \[\_[Centroid](dx9-graphics-reference-asm-ps-instructions-modifiers-ps-2-0.md) \] é um modificador de instrução opcional. Há suporte para ele nas instruções de uso de dcl que declaram os registros de entrada e as instruções de \_ lookup de textura. O centroide é anexado sem espaço.
+-   \[\_[Centroid](dx9-graphics-reference-asm-ps-instructions-modifiers-ps-2-0.md) \] é um modificador de instrução opcional. Há suporte para ele nas instruções de uso dcl que declaram os registros de entrada e as instruções de \_ lookup de textura. O centroide é anexado sem espaço.
 -   dst: registro de destino. Consulte [ps \_ 3 \_ 0 Registers](dx9-graphics-reference-asm-ps-registers-ps-3-0.md).
 -   máscara de gravação: o mesmo registro de saída pode ser declarado várias vezes, cada vez com uma máscara de gravação exclusiva (para que uma semântica diferente possa ser \_ aplicada a componentes individuais). No entanto, a mesma semântica não pode ser usada várias vezes em uma declaração. Isso significa que os vetores devem ser quatro componentes ou menos e não podem passar pelos limites de registro de quatro componentes (registros de saída individuais). Quando a \_ semântica de psize é usada, ela deve ter uma máscara de gravação completa porque é considerada escalar. Quando a \_ semântica de posição é usada, ela deve ter máscara de gravação completa porque todos os quatro componentes devem ser gravados.
 

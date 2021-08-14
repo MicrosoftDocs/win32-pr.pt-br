@@ -1,7 +1,7 @@
 ---
 description: Representa os recursos e o gerenciamento de um processador.
 ms.assetid: 70cf9776-eeda-42c2-90c4-704ecf1cdafe
-title: Classe CIM_Processor (gerenciamento do Hyper-V)
+title: CIM_Processor classe (gerenciamento do Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -26,14 +26,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 00e78834c0a3a782c5fdc48cd52a67b85aa2a241
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ad3893670927096e036a6076abed51a6026618136d4e6d5a45ca9d8e59af96de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646685"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119981226"
 ---
-# <a name="cim_processor-class-hyper-v-management"></a>Classe CIM_Processor (gerenciamento do Hyper-V)
+# <a name="cim_processor-class-hyper-v-management"></a>CIM_Processor classe (gerenciamento do Hyper-V)
 
 Representa os recursos e o gerenciamento de um processador.
 
@@ -61,26 +61,26 @@ class CIM_Processor : CIM_LogicalDevice
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ processador CIM** tem estes tipos de membros:
+A **classe \_ processador CIM** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ processador CIM** tem essas propriedades.
+A **classe \_ processador CIM** tem essas propriedades.
 
 <dl> <dt>
 
 **AddressWidth**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits"), **PUnit** ("bit")
+Qualificadores: [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bits"), **PUnit** ("bit")
 </dt> </dl>
 
 A largura do endereço do processador, em bits.
@@ -90,7 +90,7 @@ A largura do endereço do processador, em bits.
 **CPUStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -109,7 +109,7 @@ O status atual do processador.
 
 <span id="CPU_Enabled"></span><span id="cpu_enabled"></span><span id="CPU_ENABLED"></span>
 
-**CPU habilitada** (1)
+**CPU Habilitada** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -123,21 +123,21 @@ O status atual do processador.
 
 <span id="CPU_Disabled_By_BIOS__POST_Error_"></span><span id="cpu_disabled_by_bios__post_error_"></span><span id="CPU_DISABLED_BY_BIOS__POST_ERROR_"></span>
 
-**CPU desabilitada pelo BIOS (erro post)** (3)
+**CPU desabilitada por BIOS (erro POST)** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="CPU_Is_Idle"></span><span id="cpu_is_idle"></span><span id="CPU_IS_IDLE"></span>
 
-A **CPU está ociosa** (4)
+**A CPU está ociosa** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (7)
+**Outros** (7)
 
 
 </dt> <dd></dd> </dl>
@@ -147,13 +147,13 @@ A **CPU está ociosa** (4)
 **CurrentClockSpeed**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("megahertz"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Processador DMTF \| 17,6 "), **PUnit** (" Hertz \* 10 ^ 6 ")
+Qualificadores: [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("MegaHertz"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Processador DMTF \| \| 017.6"), **PUnit** ("hertz \* 10^6")
 </dt> </dl>
 
 A velocidade atual, em MHz, do processador.
@@ -163,13 +163,13 @@ A velocidade atual, em MHz, do processador.
 **DataWidth**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits"), **PUnit** ("bit")
+Qualificadores: [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bits"), **PUnit** ("bit")
 </dt> </dl>
 
 A largura dos dados do processador, em bits.
@@ -179,29 +179,29 @@ A largura dos dados do processador, em bits.
 **ExternalBusClockSpeed**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("megahertz"), **PUnit** ("Hertz \* 10 ^ 6")
+Qualificadores: [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("MegaHertz"), **PUnit** ("hertz \* 10^6")
 </dt> </dl>
 
-A velocidade, em MHz, da interface de barramento externa (também conhecida como o barramento frontal).
+A velocidade, em MHz, da interface do barramento externo (também conhecida como barramento frontal).
 
 </dd> <dt>
 
 **Família**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Processador DMTF \| 17,3 "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ processador CIM**.**OtherFamilyDescription**")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Processador DMTF \| \| 017.3"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Processador CIM \_**.**OtherFamilyDescription**")
 </dt> </dl>
 
 O tipo de família do processador.
@@ -210,7 +210,7 @@ O tipo de família do processador.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -280,49 +280,49 @@ O tipo de família do processador.
 
 <span id="Pentium_R__brand"></span><span id="pentium_r__brand"></span><span id="PENTIUM_R__BRAND"></span>
 
-**Marca Pentium (R)** (11)
+**Marca Pentium(R)** (11)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pentium_R__Pro"></span><span id="pentium_r__pro"></span><span id="PENTIUM_R__PRO"></span>
 
-**Pentium (R) pro** (12)
+**Pentium(R) Pro** (12)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pentium_R__II"></span><span id="pentium_r__ii"></span><span id="PENTIUM_R__II"></span>
 
-**Pentium (R) II** (13)
+**Pentium(R) II** (13)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pentium_R__processor_with_MMX_TM__technology"></span><span id="pentium_r__processor_with_mmx_tm__technology"></span><span id="PENTIUM_R__PROCESSOR_WITH_MMX_TM__TECHNOLOGY"></span>
 
-**Processador Pentium (R) com tecnologia MMX (TM)** (14)
+**Processador Pentium(R) com tecnologia MMX(TM)** (14)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Celeron_TM_"></span><span id="celeron_tm_"></span><span id="CELERON_TM_"></span>
 
-**Celeron (TM)** (15)
+**Celeron(TM)** (15)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pentium_R__II_Xeon_TM_"></span><span id="pentium_r__ii_xeon_tm_"></span><span id="PENTIUM_R__II_XEON_TM_"></span>
 
-**Pentium (R) II Xeon (TM)** (16)
+**Pentium(R) II Xeon(TM)** (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pentium_R__III"></span><span id="pentium_r__iii"></span><span id="PENTIUM_R__III"></span>
 
-**Pentium (R) III** (17)
+**Pentium(R) III** (17)
 
 
 </dt> <dd></dd> <dt>
@@ -336,21 +336,21 @@ O tipo de família do processador.
 
 <span id="M2_Family"></span><span id="m2_family"></span><span id="M2_FAMILY"></span>
 
-**Família m2** (19)
+**Família M2** (19)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Intel_R__Celeron_R__M_processor"></span><span id="intel_r__celeron_r__m_processor"></span><span id="INTEL_R__CELERON_R__M_PROCESSOR"></span>
 
-**Processador Intel (r) Celeron (r) M** (20)
+**Processador Intel(R) Celeron(R) M** (20)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Intel_R__Pentium_R__4_HT_processor"></span><span id="intel_r__pentium_r__4_ht_processor"></span><span id="INTEL_R__PENTIUM_R__4_HT_PROCESSOR"></span>
 
-**Processador Intel (r) Pentium (r) 4 HT** (21)
+**Processador Intel(R) Pentium(R) 4 HT** (21)
 
 
 </dt> <dd></dd> <dt>
@@ -385,14 +385,14 @@ O tipo de família do processador.
 
 <span id="AMD_Athlon_TM__Processor_Family"></span><span id="amd_athlon_tm__processor_family"></span><span id="AMD_ATHLON_TM__PROCESSOR_FAMILY"></span>
 
-**Família de processadores AMD Athlon (TM)** (28)
+**Família de processadores AMD Athlon(TM)** (28)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AMD_R__Duron_TM__Processor"></span><span id="amd_r__duron_tm__processor"></span><span id="AMD_R__DURON_TM__PROCESSOR"></span>
 
-**Processador AMD (R) Duron (TM)** (29)
+**Processador AMD(R) Duran(TM)** (29)
 
 
 </dt> <dd></dd> <dt>
@@ -406,14 +406,14 @@ O tipo de família do processador.
 
 <span id="K6-2_"></span><span id="k6-2_"></span>
 
-**K6-2 +** (31)
+**K6-2+** (31)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_PC_Family"></span><span id="power_pc_family"></span><span id="POWER_PC_FAMILY"></span>
 
-**Família Power PC** (32)
+**Família do Power PC** (32)
 
 
 </dt> <dd></dd> <dt>
@@ -434,7 +434,7 @@ O tipo de família do processador.
 
 <span id="Power_PC_603_"></span><span id="power_pc_603_"></span><span id="POWER_PC_603_"></span>
 
-**Power PC 603 +** (35)
+**Power PC 603+** (35)
 
 
 </dt> <dd></dd> <dt>
@@ -455,7 +455,7 @@ O tipo de família do processador.
 
 <span id="Power_PC_X704"></span><span id="power_pc_x704"></span><span id="POWER_PC_X704"></span>
 
-**X704 do Power PC** (38)
+**Power PC X704** (38)
 
 
 </dt> <dd></dd> <dt>
@@ -469,35 +469,35 @@ O tipo de família do processador.
 
 <span id="Intel_R__Core_TM__Duo_processor"></span><span id="intel_r__core_tm__duo_processor"></span><span id="INTEL_R__CORE_TM__DUO_PROCESSOR"></span>
 
-**Processador Intel (R) Core (TM) Duo** (40)
+**Processador Intel(R) Core(TM) Duo** (40)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Intel_R__Core_TM__Duo_mobile_processor"></span><span id="intel_r__core_tm__duo_mobile_processor"></span><span id="INTEL_R__CORE_TM__DUO_MOBILE_PROCESSOR"></span>
 
-**Processador móvel Intel (R) Core (TM) Duo** (41)
+**Processador móvel Intel(R) Core(TM) Duo** (41)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Intel_R__Core_TM__Solo_mobile_processor"></span><span id="intel_r__core_tm__solo_mobile_processor"></span><span id="INTEL_R__CORE_TM__SOLO_MOBILE_PROCESSOR"></span>
 
-**Processador móvel Intel (R) Core (TM) solo** (42)
+**Processador móvel Intel(R) Core(TM) Solo** (42)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Intel_R__Atom_TM__processor"></span><span id="intel_r__atom_tm__processor"></span><span id="INTEL_R__ATOM_TM__PROCESSOR"></span>
 
-**Processador Intel (R) Atom (TM)** (43)
+**Processador Intel(R) Atom(TM)** (43)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Alpha_Family"></span><span id="alpha_family"></span><span id="ALPHA_FAMILY"></span>
 
-**Família alfa** (48)
+**Família Alfa** (48)
 
 
 </dt> <dd></dd> <dt>
@@ -525,14 +525,14 @@ O tipo de família do processador.
 
 <span id="Alpha_21164PC"></span><span id="alpha_21164pc"></span><span id="ALPHA_21164PC"></span>
 
-**21164PC alfa** (52)
+**Alfa 21164PC** (52)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Alpha_21164a"></span><span id="alpha_21164a"></span><span id="ALPHA_21164A"></span>
 
-**21164A alfa** (53)
+**Alfa 21164a** (53)
 
 
 </dt> <dd></dd> <dt>
@@ -553,35 +553,35 @@ O tipo de família do processador.
 
 <span id="AMD_Turion_TM__II_Ultra_Dual-Core_Mobile_M_Processor_Family"></span><span id="amd_turion_tm__ii_ultra_dual-core_mobile_m_processor_family"></span><span id="AMD_TURION_TM__II_ULTRA_DUAL-CORE_MOBILE_M_PROCESSOR_FAMILY"></span>
 
-**Família de processadores AMD Turion (TM) II Ultra Dual-Core Mobile M** (56)
+**AMD Turion(TM) II Ultra Dual-Core família de processadores M Móveis** (56)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AMD_Turion_TM__II_Dual-Core_Mobile_M_Processor_Family"></span><span id="amd_turion_tm__ii_dual-core_mobile_m_processor_family"></span><span id="AMD_TURION_TM__II_DUAL-CORE_MOBILE_M_PROCESSOR_FAMILY"></span>
 
-**Família de processadores AMD Turion (TM) II Dual-Core Mobile M** (57)
+**AMD Turion(TM) II Dual-Core família de processadores M Móveis** (57)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AMD_Athlon_TM__II_Dual-Core_Mobile_M_Processor_Family"></span><span id="amd_athlon_tm__ii_dual-core_mobile_m_processor_family"></span><span id="AMD_ATHLON_TM__II_DUAL-CORE_MOBILE_M_PROCESSOR_FAMILY"></span>
 
-**Família de processadores AMD Athlon (TM) II Dual-Core Mobile M** (58)
+**AMD Athlon(TM) II Dual-Core família de processadores M Móveis** (58)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AMD_Opteron_TM__6100_Series_Processor"></span><span id="amd_opteron_tm__6100_series_processor"></span><span id="AMD_OPTERON_TM__6100_SERIES_PROCESSOR"></span>
 
-**Processador AMD Opteron (TM) 6100 Series** (59)
+**Processador AMD Opteron(TM) série 6100** (59)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AMD_Opteron_TM__4100_Series_Processor"></span><span id="amd_opteron_tm__4100_series_processor"></span><span id="AMD_OPTERON_TM__4100_SERIES_PROCESSOR"></span>
 
-**Processador AMD Opteron (TM) 4100 Series** (60)
+**Processador AMD Opteron(TM) Série 4100** (60)
 
 
 </dt> <dd></dd> <dt>

@@ -4,12 +4,12 @@ ms.assetid: 37bda1e0-5dd2-455c-9627-4e7e1b0e04d3
 title: Importação e exportação de chave
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8be59cc5f5c4b3d1a98fa30cf4e967d5469d2f1f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a4b6c26069911d771697bf06f7464aa14ab7f099e4a0e06991d2fd992efa44a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118907697"
 ---
 # <a name="key-import-and-export"></a>Importação e exportação de chave
 
@@ -21,7 +21,7 @@ Para importar ou exportar chaves simétricas (ou de sessão) nas quais a mesma c
 
 ## <a name="asymmetric-keys"></a>Chaves assimétricas
 
-Para importar pares de chaves assimétricas (ou [*públicas/privadas*](/windows/desktop/SecGloss/p-gly)) em que uma chave é usada para criptografar e a outra é usada para descriptografar alguns dados, você pode usar qualquer uma das funções [**BCryptImportKeyPair**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptimportkeypair) ou [**NCryptImportKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptimportkey) . Um provedor CNG deve codificar o par de chaves usando um tipo de [*blob de chave*](/windows/desktop/SecGloss/k-gly) com suporte. [**BCryptExportKey**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptexportkey) pode ser usado para criar o blob de chave codificado. [Estruturas CNG](cng-structures.md) descreve os principais tipos de BLOB e estruturas que o provedor de armazenamento de chaves da Microsoft suporta.
+Para importar pares de chaves assimétricas (ou [*públicas/privadas*](/windows/desktop/SecGloss/p-gly)) em que uma chave é usada para criptografar e a outra é usada para descriptografar alguns dados, você pode usar qualquer uma das funções [**BCryptImportKeyPair**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptimportkeypair) ou [**NCryptImportKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptimportkey) . Um provedor CNG deve codificar o par de chaves usando um tipo de [*blob de chave*](/windows/desktop/SecGloss/k-gly) com suporte. [**BCryptExportKey**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptexportkey) pode ser usado para criar o blob de chave codificado. [estruturas CNG](cng-structures.md) descreve os principais tipos de BLOB e estruturas que o provedor de Armazenamento de chaves da Microsoft suporta.
 
 Para [**BCryptExportKey**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptexportkey) criar um par de chaves persistente, o blob de chave de entrada deve conter uma [*chave privada*](/windows/desktop/SecGloss/p-gly). [*As chaves públicas*](/windows/desktop/SecGloss/p-gly) não são persistentes.
 

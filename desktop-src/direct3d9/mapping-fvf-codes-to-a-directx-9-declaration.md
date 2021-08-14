@@ -1,82 +1,82 @@
 ---
 description: Esta tabela mapeia códigos FVF para uma estrutura D3DVERTEXELEMENT9.
 ms.assetid: de865481-2a08-4d25-967c-8e68b7affe8d
-title: Mapeando códigos FVF para uma declaração do Direct3D 9 (Direct3D 9)
+title: Mapeando códigos FVF para uma declaração direct3D 9 (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85442cf1c92c78aa1a37f4d4a4ec3de154f5b8d3
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ff8ef4d5e8e29c4c7f6af8d82b650b4898c57d900b92b8dd45ca2368bb9eacce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103645616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118799072"
 ---
-# <a name="mapping-fvf-codes-to-a-direct3d-9-declaration-direct3d-9"></a>Mapeando códigos FVF para uma declaração do Direct3D 9 (Direct3D 9)
+# <a name="mapping-fvf-codes-to-a-direct3d-9-declaration-direct3d-9"></a>Mapeando códigos FVF para uma declaração direct3D 9 (Direct3D 9)
 
-Esta tabela mapeia códigos FVF para uma estrutura [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) .
+Esta tabela mapeia códigos FVF para uma [**estrutura D3DVERTEXELEMENT9.**](d3dvertexelement9.md)
 
 
 
-| FVF                                                   | Tipo de dados                                                           | Uso                                                                         | Índice de uso |
+| Fvf                                                   | Tipo de dados                                                           | Uso                                                                         | Índice de uso |
 |-------------------------------------------------------|---------------------------------------------------------------------|-------------------------------------------------------------------------------|-------------|
-| D3DFVF \_ XYZ                                           | D3DDECLTYPE \_ FLOAT3                                                 | \_Posição D3DDECLUSAGE                                                        | 0           |
-| D3DFVF \_ XYZRHW                                        | D3DDECLTYPE \_ FLOAT4                                                 | Posição de D3DDECLUSAGE \_                                                       | 0           |
-| D3DFVF \_ XYZW                                          | D3DDECLTYPE \_ FLOAT4                                                 | \_Posição D3DDECLUSAGE                                                        | 0           |
-| D3DFVF \_ XYZB5 e D3DFVF \_ LASTBETA \_ UBYTE4            | D3DVSDT \_ FLOAT3, D3DVSDT \_ FLOAT4, D3DVSDT \_ UBYTE4                   | D3DDECLUSAGE \_ posição, D3DDECLUSAGE \_ BLENDWEIGHT, D3DDECLUSAGE \_ BLENDINDICES | 0           |
-| D3DFVF \_ XYZB5 e D3DFVF \_ LASTBETA \_ D3DCOLOR          | D3DVSDT \_ FLOAT3, D3DVSDT \_ FLOAT4, D3DVSDT \_ D3DCOLOR                 | D3DDECLUSAGE \_ posição, D3DDECLUSAGE \_ BLENDWEIGHT, D3DDECLUSAGE \_ BLENDINDICES | 0           |
-| D3DFVF \_ XYZB5                                         | D3DDECLTYPE \_ FLOAT3, D3DDECLTYPE \_ FLOAT4, D3DDECLTYPE \_ FLOAT1       | D3DDECLUSAGE \_ posição, D3DDECLUSAGE \_ BLENDWEIGHT, D3DDECLUSAGE \_ BLENDINDICES | 0           |
-| D3DFVF \_ XYZBn (n = 1.. 4)                                | D3DDECLTYPE \_ FLOAT3, D3DDECLTYPE \_ floatn                            | D3DDECLUSAGE \_ posição, D3DDECLUSAGE \_ BLENDWEIGHT                             | 0           |
-| D3DFVF \_ XYZBn (n = 1.. 4) e D3DFVF \_ LASTBETA \_ UBYTE4   | D3DDECLTYPE \_ FLOAT3, D3DDECLTYPE \_ float (n-1), D3DDECLTYPE \_ UBYTE4   | D3DDECLUSAGE \_ posição, D3DDECLUSAGE \_ BLENDWEIGHT, D3DDECLUSAGE \_ BLENDINDICES | 0           |
-| D3DFVF \_ XYZBn (n = 1.. 4) e D3DFVF \_ LASTBETA \_ D3DCOLOR | D3DDECLTYPE \_ FLOAT3, D3DDECLTYPE \_ float (n-1), D3DDECLTYPE \_ D3DCOLOR | D3DDECLUSAGE \_ posição, D3DDECLUSAGE \_ BLENDWEIGHT, D3DDECLUSAGE \_ BLENDINDICES | 0           |
-| D3DFVF \_ normal                                        | D3DDECLTYPE \_ FLOAT3                                                 | D3DDECLUSAGE \_ normal                                                          | 0           |
+| D3DFVF \_ XYZ                                           | D3DDECLTYPE \_ FLOAT3                                                 | D3DDECLUSAGE \_ POSITION                                                        | 0           |
+| D3DFVF \_ XYZRHW                                        | D3DDECLTYPE \_ FLOAT4                                                 | D3DDECLUSAGE \_ POSITIONT                                                       | 0           |
+| D3DFVF \_ XYZW                                          | D3DDECLTYPE \_ FLOAT4                                                 | D3DDECLUSAGE \_ POSITION                                                        | 0           |
+| D3DFVF \_ XYZB5 e D3DFVF \_ LASTBETA \_ UBYTE4            | D3DVSDT \_ FLOAT3, D3DVSDT \_ FLOAT4, D3DVSDT \_ UBYTE4                   | D3DDECLUSAGE \_ POSITION, D3DDECLUSAGE \_ BLENDWEIGHT, D3DDECLUSAGE \_ BLENDINDICES | 0           |
+| D3DFVF \_ XYZB5 e D3DFVF \_ LASTBETA \_ D3DCOLOR          | D3DVSDT \_ FLOAT3, D3DVSDT \_ FLOAT4, D3DVSDT \_ D3DCOLOR                 | D3DDECLUSAGE \_ POSITION, D3DDECLUSAGE \_ BLENDWEIGHT, D3DDECLUSAGE \_ BLENDINDICES | 0           |
+| D3DFVF \_ XYZB5                                         | D3DDECLTYPE \_ FLOAT3, D3DDECLTYPE \_ FLOAT4, D3DDECLTYPE \_ FLOAT1       | D3DDECLUSAGE \_ POSITION, D3DDECLUSAGE \_ BLENDWEIGHT, D3DDECLUSAGE \_ BLENDINDICES | 0           |
+| D3DFVF \_ XYZBn (n=1..4)                                | D3DDECLTYPE \_ FLOAT3, D3DDECLTYPE \_ FLOATn                            | D3DDECLUSAGE \_ POSITION, D3DDECLUSAGE \_ BLENDWEIGHT                             | 0           |
+| D3DFVF \_ XYZBn (n=1..4) e D3DFVF \_ LASTBETA \_ UBYTE4   | D3DDECLTYPE \_ FLOAT3, D3DDECLTYPE \_ FLOAT(n-1), D3DDECLTYPE \_ UBYTE4   | D3DDECLUSAGE \_ POSITION, D3DDECLUSAGE \_ BLENDWEIGHT, D3DDECLUSAGE \_ BLENDINDICES | 0           |
+| D3DFVF \_ XYZBn (n=1..4) e D3DFVF \_ LASTBETA \_ D3DCOLOR | D3DDECLTYPE \_ FLOAT3, D3DDECLTYPE \_ FLOAT(n-1), D3DDECLTYPE \_ D3DCOLOR | D3DDECLUSAGE \_ POSITION, D3DDECLUSAGE \_ BLENDWEIGHT, D3DDECLUSAGE \_ BLENDINDICES | 0           |
+| D3DFVF \_ NORMAL                                        | D3DDECLTYPE \_ FLOAT3                                                 | D3DDECLUSAGE \_ NORMAL                                                          | 0           |
 | D3DFVF \_ PSIZE                                         | D3DDECLTYPE \_ FLOAT1                                                 | D3DDECLUSAGE \_ PSIZE                                                           | 0           |
-| D3DFVF \_ difuso                                       | D3DDECLTYPE \_ D3DCOLOR                                               | \_Cor D3DDECLUSAGE                                                           | 0           |
-| \_Especular D3DFVF                                      | D3DDECLTYPE \_ D3DCOLOR                                               | \_Cor D3DDECLUSAGE                                                           | 1           |
-| D3DFVF \_ TEXCOORDSIZEm (n)                              | D3DDECLTYPE \_ floatm                                                 | D3DDECLUSAGE \_ TEXCOORD                                                        | n           |
+| D3DFVF \_ DIFUSO                                       | D3DDECLTYPE \_ D3DCOLOR                                               | COR D3DDECLUSAGE \_                                                           | 0           |
+| D3DFVF \_ SPECULAR                                      | D3DDECLTYPE \_ D3DCOLOR                                               | COR D3DDECLUSAGE \_                                                           | 1           |
+| D3DFVF \_ TEXCOORDSIZEm(n)                              | D3DDECLTYPE \_ FLOATm                                                 | D3DDECLUSAGE \_ TEXCOORD                                                        | n           |
 
 
 
  
 
-## <a name="vertex-declarations-with-d3ddeclusage_positiont"></a>Declarações de vértice com \_ Position D3DDECLUSAGE
+## <a name="vertex-declarations-with-d3ddeclusage_positiont"></a>Declarações de vértice com D3DDECLUSAGE \_ POSITIONT
 
-A presença de um elemento Vertex com (D3DUSAGE \_ posiçãot, 0) é usada para indicar ao dispositivo que os dados de vértice que estão chegando já foram por meio do processamento de vértice (como um FVF com \_ conjunto de bits D3DFVF XYZRHW). No momento do desenho, se a declaração definida atualmente tiver um elemento com a semântica (D3DUSAGE \_ posiçãot, 0), todo o processamento do vértice será ignorado (assim como se um FVF com D3DFVF \_ XYZRHW bit tiver sido definido).
+A presença de um elemento de vértice com (D3DUSAGE POSITIONT, 0) é usada para indicar ao dispositivo que os dados de vértice que estão chegando já passaram pelo processamento de vértice (como um FVF com conjunto de bits \_ \_ XYZRHW D3DFVF). Em tempo de desenho, se a declaração atualmente definida tiver um elemento com a semântica (D3DUSAGE POSITIONT, 0), todo o processamento de vértice será ignorado (assim como se um FVF com o \_ bit XYZRHW D3DFVF tivesse \_ sido definido).
 
-Há algumas restrições em declarações de vértice com (D3DDECLUSAGE \_ posiçãot, 0):
+Há algumas restrições em declarações de vértice com (D3DDECLUSAGE \_ POSITIONT, 0):
 
 -   Somente o fluxo zero pode ser usado em tais declarações.
--   Os elementos de vértice devem ser classificados aumentando o deslocamento do fluxo.
--   O deslocamento do fluxo deve ser alinhado em DWORD.
--   O mesmo par (uso, índice de uso) deve ser listado apenas uma vez.
--   Somente o \_ método padrão D3DDECLMETHOD pode ser usado.
--   Outros elementos de vértice não podem ter a \_ semântica (D3DDECLUSAGE position, 0).
+-   Os elementos de vértice devem ser classificação aumentando o deslocamento de fluxo.
+-   O deslocamento de fluxo deve ser alinhado com DWORD.
+-   O mesmo par (Uso, Índice de Uso) deve ser listado apenas uma vez.
+-   Somente o método D3DDECLMETHOD \_ DEFAULT pode ser usado.
+-   Outros elementos de vértice não podem ter a semântica (D3DDECLUSAGE \_ POSITION, 0).
 
-Além disso, há algumas restrições sobre essa declaração relacionada à versão do driver do dispositivo. Essas restrições estão em vigor porque o Direct3D envia tais declarações diretamente para o driver sem fazer nenhuma conversão.
+Além disso, há algumas restrições sobre essa declaração relacionada à versão do driver de dispositivo. Essas restrições estão em vigor porque o Direct3D envia essas declarações diretamente para o driver sem fazer nenhuma conversão.
 
-## <a name="vertex-declarations-without-d3ddeclusage_positiont"></a>Declarações de vértice sem D3DDECLUSAGE \_ posição
+## <a name="vertex-declarations-without-d3ddeclusage_positiont"></a>Declarações de vértice sem D3DDECLUSAGE \_ POSITIONT
 
-O tempo de execução valida a criação de declarações. A seguir estão as regras gerais para quais declarações são legais.
+O runtime valida a criação de declarações. A seguir estão as regras gerais para quais declarações são legais.
 
--   Todos os elementos de vértice de um fluxo devem ser consecutivos e classificados por deslocamento.
--   O deslocamento do fluxo deve ser alinhado em DWORD.
--   O mesmo par (uso, índice de uso) deve ser listado apenas uma vez.
--   Se D3DDEVCAPS2 \_ VERTEXELEMENTSCANSHARESTREAMOFFSET for definido,
-    -   Vários elementos Vertex podem compartilhar o mesmo deslocamento em um fluxo.
+-   Todos os elementos de vértice de um fluxo devem ser consecutivos e classificar por deslocamento.
+-   O deslocamento de fluxo deve ser alinhado com DWORD.
+-   O mesmo par (Uso, Índice de Uso) deve ser listado apenas uma vez.
+-   Se D3DDEVCAPS2 \_ VERTEXELEMENTSCANSHARESTREAMOFFSET estiver definido,
+    -   Vários elementos de vértice podem compartilhar o mesmo deslocamento em um fluxo.
     -   Os elementos de vértice podem ser de tipos diferentes que podem ser de tamanhos diferentes.
-    -   Os elementos de vértice podem se sobrepor arbitrariamente. Por exemplo, um elemento pode começar em um local de um fluxo que é, ao mesmo tempo, no meio de outro elemento.
-    -   Elementos Vertex podem ter deslocamento de fluxo em qualquer ordem.
+    -   Os elementos de vértice podem se sobrepor arbitrariamente. Por exemplo, um elemento pode começar em um local de um fluxo que está, ao mesmo tempo, no meio de outro elemento.
+    -   Os elementos de vértice têm permissão para ter deslocamento de fluxo em qualquer ordem.
 -   O número de elementos de vértice não pode ser maior que 64.
--   UsageIndex deve estar no intervalo de \[ 0-15 \] .
--   A declaração, usada com a API DrawPrimitive, não deve ter elementos Vertex diferentes de D3DDECLMETHOD \_ Default, D3DDECLMETHOD \_ LOOKUPPRESAMPLED ou D3DDECLMETHOD \_ Lookup.
--   A declaração, que contém D3DDECLMETHOD \_ Lookup ou LOOKUPPRESAMPLED, deve ser usada somente com o pipeline de vértice programável.
--   Declaração, usada com a API DrawRectPatch/DrawTriPatch, não pode ter elementos Vertex com D3DDECLMETHOD \_ LOOKUPPRESAMPLED ou D3DDECLMETHOD \_ Lookup.
--   A declaração deve ter apenas um elemento com D3DDECLMETHOD \_ Lookup ou o \_ método D3DDECLMETHOD LOOKUPPRESAMPLED.
--   A declaração com D3DDECLMETHOD \_ Lookup ou D3DDECLMETHOD \_ LOOKUPPRESAMPLED não deve ter elementos diferentes de D3DDECLMETHOD \_ padrão, pois o mapeamento de deslocamento é feito somente para N-patches.
--   Elementos de vértice com D3DDECLMETHOD \_ Lookup ou D3DDECLMETHOD \_ LOOKUPPRESAMPLED só podem ser usados com a semântica (D3DDECLUSAGE \_ Sample, n) e vice-versa.
--   Se um elemento Vertex com \_ método Lookup D3DDECLMETHOD tiver um índice de fluxo e um deslocamento de um elemento Vertex já existente, esse elemento Vertex deverá ter o mesmo tipo de dados.
--   Um elemento Vertex com o \_ método de pesquisa D3DDECLMETHOD deve ter o \_ tipo de dados D3DDECLTYPE FLOAT2/3/4
--   Elementos de vértice com tipos D3DDECLMETHOD \_ CROSSUV, D3DDECLMETHOD \_ partiald e D3DDECLMETHOD \_ PARTIALV devem ter um deslocamento de um elemento Vertex com um tipo de dados compatível.
--   Um elemento Vertex com o método D3DDECLMETHOD \_ UV ou D3DDECLMETHOD \_ LOOKUPPRESAMPLED deve ter o tipo D3DDECLTYPE \_ não utilizado, o índice de fluxo zero e o deslocamento de fluxo zero.
+-   UsageIndex deve estar no intervalo \[ de 0 a 15 \] .
+-   A declaração, usada com a API DrawPrimitive, não deve ter elementos de vértice diferentes de D3DDECLMETHOD \_ DEFAULT, D3DDECLMETHOD \_ LOOKUPPRESAMPLED ou D3DDECLMETHOD \_ LOOKUP.
+-   A declaração , que contém D3DDECLMETHOD LOOKUP ou LOOKUPPRESAMPLED, deve ser usada somente com o \_ pipeline de vértice programável.
+-   A declaração, usada com a API DrawRectPatch/DrawTriPatch, não pode ter elementos de vértice com D3DDECLMETHOD \_ LOOKUPPRESAMPLED ou D3DDECLMETHOD \_ LOOKUP.
+-   A declaração deve ter apenas um elemento com o método D3DDECLMETHOD LOOKUP ou \_ D3DDECLMETHOD \_ LOOKUPPRESAMPLED.
+-   A declaração com D3DDECLMETHOD LOOKUP ou \_ D3DDECLMETHOD LOOKUPPRESAMPLED não deve ter elementos diferentes de \_ D3DDECLMETHOD DEFAULT, pois o mapeamento de deslocamento é feito somente para \_ N patches.
+-   Elementos de vértice com D3DDECLMETHOD LOOKUP ou D3DDECLMETHOD LOOKUPPRESAMPLED só podem ser usados com a semântica \_ \_ (D3DDECLUSAGE \_ SAMPLE, n) e vice-versa.
+-   Se um elemento de vértice com o método D3DDECLMETHOD LOOKUP tiver um índice de fluxo e deslocamento de um elemento de vértice já existente, esse elemento de vértice deverá ter o mesmo tipo de \_ dados.
+-   Um elemento de vértice com o método D3DDECLMETHOD LOOKUP deve ter o tipo de dados \_ D3DDECLTYPE \_ FLOAT2/3/4
+-   Elementos de vértice com os tipos D3DDECLMETHOD \_ CROSSUV, D3DDECLMETHOD PARTIALU e \_ D3DDECLMETHOD PARTIALV devem ter um deslocamento de um elemento de vértice com um tipo de dados \_ compatível.
+-   Um elemento de vértice com o método D3DDECLMETHOD UV ou \_ D3DDECLMETHOD LOOKUPPRESAMPLED deve ter o tipo \_ D3DDECLTYPE UNUSED, o índice de fluxo zero e o deslocamento de fluxo \_ zero.
 -   Declarações com métodos D3DDECLMETHOD \_ UV, D3DDECLMETHOD \_ partiald e D3DDECLMETHOD \_ PARTIALV só podem ser usadas com DrawRectPatch.
 -   O uso \_ de D3DDECLUSAGE TESSFACTOR deve ser usado somente com o tipo de dados D3DDECLTYPE \_ FLOAT1 e o índice de uso 0.
 -   Quando uma declaração é usada para mosaico (DrawRectPatch, DrawTriPatch, N-patches), o tipo de dados deve ser menor ou igual a D3DDECLTYPE \_ SHORT4.

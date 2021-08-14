@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - RTSCom.dll
-ms.openlocfilehash: 7e0b7e92d4a3da0bf8186f001bc9f9bec850bedd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ea3fd1cba6e23997cdf9896e793c5776ce84b245bea10868f7f505c54de21aa0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118715994"
 ---
 # <a name="realtimestylus-class"></a>Classe RealTimeStylus
 
@@ -30,7 +30,7 @@ Implementa a interface com do [**IRealTimeStylus**](/windows/desktop/api/RTSCom/
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                   |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                       |
 | parâmetro<br/>                   | <dl> <dt>RTSCom. h (também requer RTSCom \_ i. c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RTSCom.dll</dt> </dl>                           |

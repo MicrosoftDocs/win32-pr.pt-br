@@ -1,12 +1,12 @@
 ---
-title: Método SetEnforceChannelBinding da classe Win32_TSGatewayServerSettings
+title: Método SetEnforceChannelBinding da classe Win32_TSGatewayServerSettings dados
 description: Define a propriedade EnforceChannelBinding.
 ms.assetid: 8bd64fe7-bad5-44e6-a309-10802d9a8bd4
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método SetEnforceChannelBinding
-- Método SetEnforceChannelBinding Serviços de Área de Trabalho Remota, classe Win32_TSGatewayServerSettings
-- Classe Win32_TSGatewayServerSettings Serviços de Área de Trabalho Remota, método SetEnforceChannelBinding
+- Método SetEnforceChannelBinding Serviços de Área de Trabalho Remota
+- Método SetEnforceChannelBinding Serviços de Área de Trabalho Remota , Win32_TSGatewayServerSettings classe
+- Win32_TSGatewayServerSettings classe Serviços de Área de Trabalho Remota , método SetEnforceChannelBinding
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b236341f0fdac31f80f7e7d77aa12a4b22eb9731
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f1a2e076fb4ba439faa7cc22f30da1f815b0571ede0477b875e25176a7f0297e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119988026"
 ---
-# <a name="setenforcechannelbinding-method-of-the-win32_tsgatewayserversettings-class"></a>Método SetEnforceChannelBinding da classe Win32 \_ TSGatewayServerSettings
+# <a name="setenforcechannelbinding-method-of-the-win32_tsgatewayserversettings-class"></a>Método SetEnforceChannelBinding da classe \_ TSGatewayServerSettings do Win32
 
-Define a propriedade **EnforceChannelBinding** .
+Define a **propriedade EnforceChannelBinding.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,16 +43,16 @@ uint32 SetEnforceChannelBinding(
 
 <dl> <dt>
 
-*EnforceChannelBinding* \[ no\]
+*EnforceChannelBinding* \[ Em\]
 </dt> <dd>
 
-Especifica o novo valor da propriedade **EnforceChannelBinding** .
+Especifica o novo valor da propriedade **EnforceChannelBinding.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se o método tiver sucesso, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para obter uma lista de códigos de erro, consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md).
+Se o método for bem-sucedido, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para ver uma lista de códigos de erro, consulte Serviços de Área de Trabalho Remota códigos de erro do provedor [WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,8 +62,8 @@ Se o método tiver sucesso, ele retornará zero. Se o método não for bem-suced
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                           |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TS. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -72,7 +72,7 @@ Se o método tiver sucesso, ele retornará zero. Se o método não for bem-suced
 
 <dl> <dt>
 
-[**\_TSGatewayServerSettings Win32**](win32-tsgatewayserversettings.md)
+[**Win32 \_ TSGatewayServerSettings**](win32-tsgatewayserversettings.md)
 </dt> </dl>
 
  

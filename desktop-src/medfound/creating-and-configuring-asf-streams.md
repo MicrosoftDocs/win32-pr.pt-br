@@ -1,17 +1,17 @@
 ---
 description: Cada arquivo ASF contém um ou mais fluxos. O objeto de perfil ASF representa uma coleção de fluxos ASF. Para a codificação ASF, você deve criar e configurar os fluxos que deseja codificar.
 ms.assetid: cc89e8bc-58ff-48e2-9668-0dcd6cfd25e1
-title: Criando e configurando fluxos ASF
+title: criando e configurando Fluxos ASF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8eabce588022dd66947f34e4dcd9db61f26448b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58c780de3fa0abb5db29e3e5e5ed049b78aca7898966e8f7e8595b504804da91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118743234"
 ---
-# <a name="creating-and-configuring-asf-streams"></a>Criando e configurando fluxos ASF
+# <a name="creating-and-configuring-asf-streams"></a>criando e configurando Fluxos ASF
 
 Cada arquivo ASF contém um ou mais fluxos. O objeto de [perfil ASF](asf-profile.md) representa uma coleção de fluxos ASF. Para a codificação ASF, você deve criar e configurar os fluxos que deseja codificar.
 
@@ -47,7 +47,7 @@ Se um aplicativo criar um perfil de um descritor de apresentação válido chama
 
 ## <a name="assigning-stream-numbers"></a>Atribuindo números de fluxo
 
-Os fluxos de todos os tipos devem ser atribuídos a um número de fluxo. Os números de fluxo não precisam ser sequenciais, mas devem estar no intervalo de 1 a 127. Para atribuir números de fluxo, chame [**IMFASFStreamConfig:: SetStreamNumber**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-setstreamnumber). Para obter a chamada de número de fluxo, [**IMFASFStreamConfig:: GetStreamNumber**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-getstreamnumber).
+um número de fluxo Fluxos de todos os tipos deve ser atribuído. Os números de fluxo não precisam ser sequenciais, mas devem estar no intervalo de 1 a 127. Para atribuir números de fluxo, chame [**IMFASFStreamConfig:: SetStreamNumber**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-setstreamnumber). Para obter a chamada de número de fluxo, [**IMFASFStreamConfig:: GetStreamNumber**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-getstreamnumber).
 
 > [!Note]  
 > Um número de fluxo é diferente de um índice de fluxo, que você usa ao obter fluxos em um perfil usando [**IMFASFProfile:: GetStream**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-getstream). O índice de fluxo é um número atribuído ao fluxo pelo objeto de perfil. Os índices de fluxo variam entre 0 e um menor que o número de fluxos recuperados por [**IMFASFProfile:: GetStreamCount**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-getstreamcount). Você também pode obter um fluxo do perfil por número de fluxo chamando [**IMFASFProfile:: GetStreamByNumber**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-getstreambynumber).

@@ -1,9 +1,9 @@
 ---
 title: Função WavePrefixCountBits
-description: Retorna a soma de todas as variáveis boolianas especificadas definidas como true em todas as pistas ativas com índices menores que a raia atual.
+description: Retorna a soma de todas as variáveis boolianas especificadas definidas como true em todas as faixas ativas com índices menores que a faixa atual.
 ms.assetid: AEC9AFD7-6478-4397-B531-73990D30AA48
 keywords:
-- HLSL da função WavePrefixCountBits
+- Função WavePrefixCountBits HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 72f35df1e463ff89441938e4cae19a890821baf9
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: 048b63d24e87d97f0e0223083a91694c0471b9e38ad21afbc487c02d711d720d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104008603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118504672"
 ---
 # <a name="waveprefixcountbits-function"></a>Função WavePrefixCountBits
 
-Retorna a soma de todas as variáveis boolianas especificadas definidas como true em todas as pistas ativas com índices menores que a raia atual.
+Retorna a soma de todas as variáveis boolianas especificadas definidas como true em todas as faixas ativas com índices menores que a faixa atual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,17 +42,17 @@ uint WavePrefixCountBits(
 *bBit* 
 </dt> <dd>
 
-As variáveis Booleanas especificadas.
+As variáveis boolianas especificadas.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-A soma de todas as variáveis Booleanas especificadas definidas como true em todas as pistas ativas com índices menores que a pista atual.
+A soma de todas as variáveis boolianas especificadas definidas como true em todas as faixas ativas com índices menores que a faixa atual.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função tem suporte do modelo de sombreador 6,0 em todos os estágios de sombreador. 
+Essa função tem suporte do modelo de sombreador 6.0 em todos os estágios do sombreador. 
 
 
 
@@ -60,7 +60,7 @@ Essa função tem suporte do modelo de sombreador 6,0 em todos os estágios de s
 
 ## <a name="examples"></a>Exemplos
 
-O código a seguir descreve como implementar uma gravação compactada em um fluxo ordenado em que o número de elementos gravados por Lane é 1 ou 0.
+O código a seguir descreve como implementar uma gravação compactada em um fluxo ordenado em que o número de elementos gravados por faixa é 1 ou 0.
 
 ``` syntax
 bool bDoesThisLaneHaveAnAppendItem = <expr>;
@@ -84,10 +84,10 @@ buffer[appendOffset] = myData; // write to the offset location for this lane
 
 <dl> <dt>
 
-[Visão geral do modelo do sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Visão geral do Modelo de Sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
-[Modelo do sombreador 6](shader-model-6-0.md)
+[Modelo de sombreador 6](shader-model-6-0.md)
 </dt> </dl>
 
  

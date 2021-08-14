@@ -4,12 +4,12 @@ description: Inteiro com sinal atômico de Atomic para memória.
 ms.assetid: E15E9F25-CFC6-435F-B931-A50EA1C8621C
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 21e4cfb806bf6387752255bbd87d0a7095db3cee
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 7e8c51db8442df3c906c0de07fc47308b816681536ae18cbf80e047608dcc48d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104365271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118795148"
 ---
 # <a name="atomic_imax-sm5---asm"></a>\_IMAX atômico (SM5-ASM)
 
@@ -58,7 +58,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -70,7 +70,7 @@ Como UAVs estão disponíveis em todos os estágios do sombreador para o Direct3
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 

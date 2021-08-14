@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 47c51374b7dcd62ac208e0aa8811a8d693ce0ac6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 39adccfbd4b852b8a8caeab602d089ae52ed56bb4367e3af6c11763c39a2b7e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104988651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118509565"
 ---
 # <a name="interlockedexchange-function"></a>Função InterlockedExchange
 
@@ -28,9 +28,9 @@ Troca um valor, atomicamente.
 
 ``` syntax
 void InterlockedExchange(
-  in  UINT dest,
-  in  UINT value,
-  out UINT original_value
+  in  UINT dest,
+  in  UINT value,
+  out UINT original_value
 );
 ```
 
@@ -83,7 +83,7 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -95,6 +95,6 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

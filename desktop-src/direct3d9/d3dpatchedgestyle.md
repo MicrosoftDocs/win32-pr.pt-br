@@ -1,7 +1,7 @@
 ---
 description: Define se o modo de mosaico atual é discreto ou contínuo.
 ms.assetid: d8055a25-6a8e-4018-a993-762f6f0e0cd3
-title: Enumeração D3DPATCHEDGESTYLE (D3D9Types. h)
+title: Enumeração D3DPATCHEDGESTYLE (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: e625b7c4ff12f9859efdcc2b10b551a2223adab6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 717139a33e260aa29bc8d0e244fa49b3cb324c5249614f513faf0624ccf21841
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103837945"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119987236"
 ---
 # <a name="d3dpatchedgestyle-enumeration"></a>Enumeração D3DPATCHEDGESTYLE
 
 Define se o modo de mosaico atual é discreto ou contínuo.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -41,30 +41,30 @@ typedef enum D3DPATCHEDGESTYLE {
 
 <dl> <dt>
 
-<span id="D3DPATCHEDGE_DISCRETE"></span><span id="d3dpatchedge_discrete"></span>**D3DPATCHEDGE \_ discreto**
+<span id="D3DPATCHEDGE_DISCRETE"></span><span id="d3dpatchedge_discrete"></span>**D3DPATCHEDGE \_ DISCRETE**
 </dt> <dd>
 
-Estilo de borda discreto. No modo discreto, você pode especificar o mosaico flutuante, mas ele será truncado para inteiros.
+Estilo de borda discreto. No modo discreto, você pode especificar o mosaico float, mas ele será truncado para inteiros.
 
 </dd> <dt>
 
-<span id="D3DPATCHEDGE_CONTINUOUS"></span><span id="d3dpatchedge_continuous"></span>**D3DPATCHEDGE \_ contínuo**
+<span id="D3DPATCHEDGE_CONTINUOUS"></span><span id="d3dpatchedge_continuous"></span>**D3DPATCHEDGE \_ CONTINUOUS**
 </dt> <dd>
 
-Estilo de borda contínua. No modo contínuo, o mosaico é especificado como valores float que podem ser tranqüilamente variados para reduzir os artefatos "pop-los".
+Estilo de borda contínua. No modo contínuo, o mosaico é especificado como valores float que podem ser suavemente variados para reduzir os artefatos de "estouro".
 
 </dd> <dt>
 
-<span id="D3DPATCHEDGE_FORCE_DWORD"></span><span id="d3dpatchedge_force_dword"></span>**D3DPATCHEDGE \_ forçar \_ DWORD**
+<span id="D3DPATCHEDGE_FORCE_DWORD"></span><span id="d3dpatchedge_force_dword"></span>**D3DPATCHEDGE \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Força essa enumeração a compilar a 32 bits de tamanho. Sem esse valor, alguns compiladores permitiriam que essa enumeração fosse compilada em um tamanho diferente de 32 bits. Este valor não é usado.
+Força essa enumeração a compilar para 32 bits de tamanho. Sem esse valor, alguns compiladores permitiriam que essa enumeração fosse compilada para um tamanho diferente de 32 bits. Este valor não é usado.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Observe que o mosaico contínuo produz um padrão de mosaico completamente diferente do discreto para os mesmos valores de mosaico (isso é mais aparente no modo de wireframe). Portanto, 4,0 contínuo não é o mesmo que 4 discretos.
+Observe que o mosaico contínuo produz um padrão de mosaico completamente diferente do discreto para os mesmos valores de mosaico (isso é mais aparente no modo wireframe). Portanto, 4.0 contínuo não é o mesmo que 4 discreto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,7 +72,7 @@ Observe que o mosaico contínuo produz um padrão de mosaico completamente difer
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Observe que o mosaico contínuo produz um padrão de mosaico completamente difer
 
 <dl> <dt>
 
-[Enumerações do Direct3D](dx9-graphics-reference-d3d-enums.md)
+[Enumerações direct3D](dx9-graphics-reference-d3d-enums.md)
 </dt> </dl>
 
  

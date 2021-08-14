@@ -1,11 +1,11 @@
 ---
-title: Método Modify da classe MicrosoftDNS_HINFOType
-description: O método Modify atualiza um registro de recurso de informações de host (HINFO).
+title: Modificar o método da MicrosoftDNS_HINFOType classe
+description: O método Modify atualiza um registro de recurso de informações do host (HINFO).
 ms.assetid: 8f8148f3-804f-4f99-8e79-606cd3cea660
 keywords:
 - Modificar o método DNS
 - Modificar o método DNS, MicrosoftDNS_HINFOType classe
-- MicrosoftDNS_HINFOType classe de DNS, método Modify
+- MicrosoftDNS_HINFOType classe DNS, método Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a29a01eb94d82d080142d3496bab5f7f0b9acac8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 344177f0e0a18da22294faef24a6d1c4e61598b4b5e8a804081bdd3a592cf440
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119984636"
 ---
-# <a name="modify-method-of-the-microsoftdns_hinfotype-class"></a>Método Modify da classe MicrosoftDNS \_ HINFOType
+# <a name="modify-method-of-the-microsoftdns_hinfotype-class"></a>Modificar o método da classe HINFOType do MicrosoftDNS \_
 
-O método **Modify** atualiza um registro de recurso de informações de host (HINFO).
+O **método Modify** atualiza um registro de recurso de informações do host (HINFO).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,21 +45,21 @@ void Modify(
 
 <dl> <dt>
 
-*TTL* \[ em, opcional\]
+*TTL* \[ in, opcional\]
 </dt> <dd>
 
-Tempo, em segundos, que o RR pode ser armazenado em cache por um resolvedor de DNS.
+Tempo, em segundos, em que o RR pode ser armazenado em cache por um resolvedor de DNS.
 
 </dd> <dt>
 
-*CPU* \[ em, opcional\]
+*CPU* \[ in, opcional\]
 </dt> <dd>
 
 Tipo de CPU do proprietário do registro.
 
 </dd> <dt>
 
-*Sistema operacional* \[ em, opcional\]
+*SISTEMA OPERACIONAL* \[ in, opcional\]
 </dt> <dd>
 
 Sistema operacional do proprietário do registro.
@@ -69,17 +69,17 @@ Sistema operacional do proprietário do registro.
 *RR* \[ out, ref\]
 </dt> <dd>
 
-Referência ao novo objeto.
+Referência ao novo objeto .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Qualquer parâmetro não especificado permanece inalterado no registro modificado.
+Qualquer parâmetro não especificado é deixado inalterado no registro modificado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,7 +90,7 @@ Qualquer parâmetro não especificado permanece inalterado no registro modificad
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
 | Namespace<br/>                | \\MicrosoftDNS raiz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -101,7 +101,7 @@ Qualquer parâmetro não especificado permanece inalterado no registro modificad
 [**MicrosoftDNS \_ HINFOType**](microsoftdns-hinfotype.md)
 </dt> <dt>
 
-[**Método CreateInstanceFromPropertyData da \_ classe HINFOType MicrosoftDNS**](microsoftdns-hinfotype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData da classe HINFOType do MicrosoftDNS \_**](microsoftdns-hinfotype-createinstancefrompropertydata.md)
 </dt> <dt>
 
 [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)

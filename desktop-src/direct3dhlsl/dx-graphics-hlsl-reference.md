@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ce0bb59dd26bd8bb9723bcdff23bbc79ee810253
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 425dc1d56801bbbd6b73429d8d17024a78dffe47a045ec6b34d5cd45b752bcca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118513837"
 ---
 # <a name="reference-for-hlsl"></a>Referência para HLSL
 
@@ -39,9 +39,9 @@ A documentação de referência do HLSL especifica as características da lingua
 [Guia de programação para HLSL](dx-graphics-hlsl-pguide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

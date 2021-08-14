@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b1308fb1bc0818601a037e66b764e607c0a32532
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b5bfc5acfd6239df6369829b5ec848c41c9bcc3b212d44a9e9267aa16db42022
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105753601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118684153"
 ---
 # <a name="ms-ds-never-reveal-group-attribute"></a>atributo ms-DS-neve-Reveal-Group
 
@@ -36,7 +36,7 @@ Usado com RODCs para definir quais usuários, computadores e grupos não têm pe
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1926                 |
 | System-ID-GUID    | 15585999-fd49-4D66-b25d-eeb96aba8174    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 

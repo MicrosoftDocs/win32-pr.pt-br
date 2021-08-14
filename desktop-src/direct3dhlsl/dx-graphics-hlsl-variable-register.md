@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2b378cd97bc9779951d62873d393009c98d32823
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0102716529471b3e867e17b0e9b635274cdfc28ec603f239d66c76ffb0fdaa19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119983206"
 ---
 # <a name="register"></a>register
 
@@ -26,35 +26,35 @@ Palavra-chave opcional para atribuir uma variável de sombreador a um registro e
 
 
 
-| : Register ( *\[ \_ perfil \] do sombreador*, *tipo \# \[ subcomponente \]* ) |
+| : register ( *\[ perfil de \_ sombreador, \]* *\# \[ subcomponente tipo \]* ) |
 |----------------------------------------------------------------|
 
 
 
- 
+ 
 
 ## <a name="parameters"></a>Parâmetros
 
 <dl> <dt>
 
-<span id="register"></span><span id="REGISTER"></span>Registr
+<span id="register"></span><span id="REGISTER"></span>Registrar
 </dt> <dd>
 
-Palavra-chave required.
+Palavra-chave necessária.
 
 </dd> <dt>
 
-<span id="_shader_profile_"></span><span id="_SHADER_PROFILE_"></span>*\[perfil do sombreador \_\]*
+<span id="_shader_profile_"></span><span id="_SHADER_PROFILE_"></span>*\[perfil do \_ sombreador\]*
 </dt> <dd>
 
-[Perfil de sombreador](/windows/desktop/direct3dtools/dx-graphics-tools-fxc-syntax)opcional, que pode ser um alvo de sombreador ou simplesmente **PS** ou **vs**.
+Perfil [de sombreador opcional](/windows/desktop/direct3dtools/dx-graphics-tools-fxc-syntax), que pode ser um destino de sombreador ou simplesmente **ps** ou **vs**.
 
 </dd> <dt>
 
-<span id="Type__subcomponent_"></span><span id="type__subcomponent_"></span><span id="TYPE__SUBCOMPONENT_"></span>*Subcomponente do tipo \# \[\]*
+<span id="Type__subcomponent_"></span><span id="type__subcomponent_"></span><span id="TYPE__SUBCOMPONENT_"></span>*\# \[ Subcomponente de tipo\]*
 </dt> <dd>
 
-Tipo de registro, número e declaração de subcomponente.
+Registre o tipo, o número e a declaração do subcomponente.
 
 -   O tipo é um dos seguintes:
 
@@ -63,14 +63,14 @@ Tipo de registro, número e declaração de subcomponente.
     | Tipo | Descrição do registro       |
     |------|----------------------------|
     | b    | Buffer constante            |
-    | t    | Buffer de textura e texturização |
-    | c    | Deslocamento do buffer              |
+    | t    | Buffer de textura e textura |
+    | c    | Deslocamento de buffer              |
     | s    | Exemplo                    |
-    | u    | Modo de exibição de acesso não ordenado      |
+    | u    | Exibição de acesso não organizado      |
 
     
 
-     
+     
 
 -   *\#* é o número do registro, que é um número inteiro.
 -   O *subcomponente* é um número inteiro opcional.
@@ -81,7 +81,7 @@ Tipo de registro, número e declaração de subcomponente.
 
 Você pode adicionar uma ou mais atribuições de registro à mesma declaração de variável, separadas por espaços.
 
-Para as variáveis do Direct3D 10 no escopo global, a palavra-chave **Register** atua da mesma forma que a palavra-chave [PACKOFFSET (DirectX HLSL)](dx-graphics-hlsl-variable-packoffset.md) .
+Para variáveis direct3D 10 no escopo global, a palavra-chave **register** atua da mesma forma que a palavra-chave [packoffset (DirectX HLSL).](dx-graphics-hlsl-variable-packoffset.md)
 
 ## <a name="examples"></a>Exemplos
 
@@ -120,6 +120,6 @@ sampler myVar : register( ps, s[2] )
 [Variáveis (DirectX HLSL)](dx-graphics-hlsl-variables.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

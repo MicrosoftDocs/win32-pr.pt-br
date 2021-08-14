@@ -9,20 +9,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 73853250c581e460360f5490defc0c94e76e5be3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cb2efe504e2d09b3fae2b6d6293772bf67a3f038a5f9c43330707f541e2ba8f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105779353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118900962"
 ---
 # <a name="receiving-the-returned-certificate"></a>Recebendo o certificado retornado
 
-Quando a autoridade de certificação (CA) verificou as informações de identidade do solicitante e está satisfeita de que o solicitante é o proprietário da chave privada e que os dados sobre esse solicitante são precisos, a autoridade de certificação constrói um certificado X. 509, o assina, empacota com quaisquer outros certificados necessários (como o próprio certificado da autoridade de certificação) em uma mensagem e envia a mensagem para o solicitante. A mensagem pode ser uma \# mensagem PKCS 7 ou uma resposta CMC (os modelos v2 resultam em uma resposta CMC).
+Quando a autoridade de certificação (CA) verificou as informações de identidade do solicitante e está satisfeita de que o solicitante é o proprietário da chave privada e que os dados sobre esse solicitante são precisos, a autoridade de certificação constrói um certificado X. 509, o assina, empacota com quaisquer outros certificados necessários (como o próprio certificado da autoridade de certificação) em uma mensagem,  e envia a mensagem para o solicitante. A mensagem pode ser uma \# mensagem PKCS 7 ou uma resposta CMC (os modelos v2 resultam em uma resposta CMC).
 
 O aplicativo receptor passa a mensagem para o controle de registro de certificado. O controle de registro de certificado abre a mensagem e extrai os certificados. O usuário receberá uma solicitação com uma caixa de diálogo perguntando se o usuário aceitará certificados autoassinados no repositório "raiz". Se o usuário aceitar o certificado raiz, o restante dos certificados (exceto para o certificado do solicitante) será colocado no repositório "CA". O certificado do solicitante é colocado no repositório de certificados especificado pelo solicitante na propriedade [**Mystorename**](/windows/win32/api/xenroll/nf-xenroll-icenroll-get_mystorename) .
 
-O exemplo a seguir mostra como usar o Visual Basic Scripting Edition (VBScript) e HTML em uma página da Web para receber e armazenar os certificados retornados.
+o exemplo a seguir mostra como usar o Visual Basic scripting Edition (VBScript) e HTML em uma página da web para receber e armazenar os certificados retornados.
 
 
 ```VB

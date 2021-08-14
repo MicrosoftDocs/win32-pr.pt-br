@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bb8dc60c25cf3ec12e0ebeaa863e239c287d7c46
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: ce36a9151998a5f7b0a7785aebc1795bd29d31ff47cfdd2368978ad040f3597c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104084478"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972205"
 ---
 # <a name="imediarendereractioninformationisvolumeavailable-method"></a>Método IMediaRendererActionInformation:: IsVolumeAvailable
 
@@ -48,7 +48,7 @@ Um valor booliano que será **true** se o DMR for capaz de ajustar o nível de v
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 

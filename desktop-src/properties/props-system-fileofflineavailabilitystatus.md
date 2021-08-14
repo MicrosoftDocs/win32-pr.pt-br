@@ -1,19 +1,19 @@
 ---
-description: NULL indica o caso normal (o arquivo está disponível offline). O caso parcial é apenas para pastas em que algum conteúdo pode estar disponível offline e alguns podem não.
+description: Null indica o caso normal (o arquivo está disponível offline). O caso parcial é apenas para pastas em que algum conteúdo pode estar disponível offline e outras podem não estar.
 ms.assetid: 46b03632-702e-46df-8204-33ada85adbee
-title: System. FileOfflineAvailabilityStatus
+title: System.FileOfflineAvailabilityStatus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05ca5c3f004c89cfb7b8625f9eb939a42f7fe842
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d3aff7de27d1f901e00a73b0c9b2a4b6e3030a0c3b8911f6761c1b7979ae38d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118727444"
 ---
-# <a name="systemfileofflineavailabilitystatus"></a>System. FileOfflineAvailabilityStatus
+# <a name="systemfileofflineavailabilitystatus"></a>System.FileOfflineAvailabilityStatus
 
-NULL indica o caso normal (o arquivo está disponível offline). O caso parcial é apenas para pastas em que algum conteúdo pode estar disponível offline e alguns podem não.
+Null indica o caso normal (o arquivo está disponível offline). O caso parcial é apenas para pastas em que algum conteúdo pode estar disponível offline e outras podem não estar.
 
 ## <a name="windows-10-version-1703"></a>Windows 10, versão 1703
 
@@ -93,13 +93,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -108,19 +108,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -135,7 +135,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

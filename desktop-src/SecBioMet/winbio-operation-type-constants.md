@@ -42,16 +42,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b83f32b9f98a24d0ed4d9995bf5fcb7eaa3a2b6c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b39dd6e2656ad73623df9d6a92d514e90371bc3761563e5f24c41211680c2455
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118909945"
 ---
 # <a name="winbio_operation_type-constants"></a>Constantes do tipo de \_ operação WINBIO \_
 
-As constantes a seguir podem ser retornadas pelo Windows Biometric Framework em [**um \_ \_ resultado assíncrono WINBIO**](/windows/desktop/api/Winbio/ns-winbio-winbio_async_result) para especificar o tipo de operação assíncrona que está sendo executada.
+as constantes a seguir podem ser retornadas pelo Windows Biometric Framework em [**um \_ \_ resultado assíncrono WINBIO**](/windows/desktop/api/Winbio/ns-winbio-winbio_async_result) para especificar o tipo de operação assíncrona que está sendo executada.
 
 <dl> <dt>
 
@@ -414,7 +414,7 @@ Uma unidade biométrica foi excluída. Para obter mais informações, consulte [
 
 
 
-Reservado. Esse valor tem suporte a partir do Windows 10.
+Reservado. Esse valor tem suporte a partir de Windows 10.
 
 
 </dt> </dl> </dd> <dt>
@@ -427,7 +427,7 @@ Reservado. Esse valor tem suporte a partir do Windows 10.
 
 
 
-Reservado. Esse valor tem suporte a partir do Windows 10.
+Reservado. Esse valor tem suporte a partir de Windows 10.
 
 
 </dt> </dl> </dd> <dt>
@@ -440,7 +440,7 @@ Reservado. Esse valor tem suporte a partir do Windows 10.
 
 
 
-O mecanismo de reconhecimento facial ou de monitoramento de íris foi ativado. Para obter mais informações, consulte [**WinBioMonitorPresence**](/windows/desktop/api/winbio/nf-winbio-winbiomonitorpresence). Esse valor tem suporte a partir do Windows 10.
+O mecanismo de reconhecimento facial ou de monitoramento de íris foi ativado. Para obter mais informações, consulte [**WinBioMonitorPresence**](/windows/desktop/api/winbio/nf-winbio-winbiomonitorpresence). Esse valor tem suporte a partir de Windows 10.
 
 
 </dt> </dl> </dd> <dt>
@@ -453,7 +453,7 @@ O mecanismo de reconhecimento facial ou de monitoramento de íris foi ativado. P
 
 
 
-Um indivíduo de um grupo de indivíduos que são representados por dados no buffer de exemplo foi especificado como o indivíduo a ser registrado. Para obter mais informações, consulte [**WinBioEnrollSelect**](/windows/desktop/api/winbio/nf-winbio-winbioenrollselect). Esse valor tem suporte a partir do Windows 10.
+Um indivíduo de um grupo de indivíduos que são representados por dados no buffer de exemplo foi especificado como o indivíduo a ser registrado. Para obter mais informações, consulte [**WinBioEnrollSelect**](/windows/desktop/api/winbio/nf-winbio-winbioenrollselect). Esse valor tem suporte a partir de Windows 10.
 
 
 </dt> </dl> </dd> </dl>
@@ -464,8 +464,8 @@ Um indivíduo de um grupo de indivíduos que são representados por dados no buf
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                                                                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                                                                                     |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                                                                                               |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                                                                                     |
 | parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h para aplicativos cliente ou WinBio \_ Adapters. h para adaptadores)</dt> </dl> |
 
 

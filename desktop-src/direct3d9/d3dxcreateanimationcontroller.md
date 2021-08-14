@@ -1,7 +1,7 @@
 ---
 description: Cria um objeto de controlador de animação.
 ms.assetid: 771e5966-ac1a-43c2-8e81-b6d573343ff0
-title: Função D3DXCreateAnimationController (D3dx9anim. h)
+title: Função D3DXCreateAnimationController (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a61b2c42a1eafa2ed28ac98c753588181a0ccf7a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0edda07aa5ae443a268bd5df50a154aa2a7f2ec9ca1873dc486e8e46532ae468
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105763006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118526631"
 ---
 # <a name="d3dxcreateanimationcontroller-function"></a>Função D3DXCreateAnimationController
 
@@ -44,43 +44,43 @@ HRESULT D3DXCreateAnimationController(
 
 <dl> <dt>
 
-*MaxNumAnimationOutputs* \[ no\]
+*MaxNumAnimationOutputs* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número máximo de saídas de animação às quais o controlador pode dar suporte.
+Número máximo de saídas de animação que o controlador pode dar suporte.
 
 </dd> <dt>
 
-*MaxNumAnimationSets* \[ no\]
+*MaxNumAnimationSets* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número máximo de conjuntos de animação que podem ser misturados.
+Número máximo de conjuntos de animação que podem ser mistos.
 
 </dd> <dt>
 
-*MaxNumTracks* \[ no\]
+*MaxNumTracks* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número máximo de conjuntos de animação que podem ser misturados simultaneamente.
+Número máximo de conjuntos de animação que podem ser mistos simultaneamente.
 
 </dd> <dt>
 
-*MaxNumEvents* \[ no\]
+*MaxNumEvents* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número máximo de eventos pendentes aos quais o controlador dará suporte.
+Número máximo de eventos pendentes que o controlador dará suporte.
 
 </dd> <dt>
 
-*ppAnimController* \[ fora\]
+*ppRiamController* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXANIMATIONCONTROLLER**](id3dxanimationcontroller.md)\***
@@ -89,11 +89,11 @@ Ponteiro para o objeto do controlador de animação criado. Consulte [**ID3DXAni
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Comentários
 
@@ -105,8 +105,8 @@ Um controlador de animação controla um mixer de animação. O controlador adic
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

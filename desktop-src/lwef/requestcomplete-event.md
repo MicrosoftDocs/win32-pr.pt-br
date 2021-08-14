@@ -4,46 +4,46 @@ description: Evento RequestComplete
 ms.assetid: 543b79d1-f09d-4061-a1a8-8c8ab496bceb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 551aecdcfbeab76ab45e6211affef794ff37d876
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: bcf5202cc6aee6e8727651279fd216d5f0e5676025584c9cb66c4c6ad958da54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104454062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118746553"
 ---
 # <a name="requestcomplete-event"></a>Evento RequestComplete
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Ndescrição**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descrição**
 </dt> <dd>
 
-Ocorre quando o servidor conclui uma solicitação em fila.
+Ocorre quando o servidor conclui uma solicitação na fila.
 
 </dd> <dt>
 
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-**Sub** *Agent * * * \_ RequestComplete* *  **(solicitação ByVal** ** * *)**
+**Sub** *agente*** \_ RequestComplete* *  **(Solicitação ByVal***)** *
 
 
 
 | Parte      | Descrição                                            |
 |-----------|--------------------------------------------------------|
-| *Solicitação* | Retorna o objeto de [**solicitação**](/windows/desktop/lwef/the-request-object) . |
+| *Solicitação* | Retorna o [**objeto Request.**](/windows/desktop/lwef/the-request-object) |
 
 
 
- 
+ 
 
 </dd> </dl>
 
 ### <a name="remarks"></a>Comentários
 
-Esse evento retorna um objeto de [**solicitação**](/windows/desktop/lwef/the-request-object) . Como as solicitações são processadas de forma assíncrona, você pode usar esse evento para determinar quando o servidor conclui o processamento de uma solicitação (como um método [**Get**](get-method.md), [**Play**](play-method.md)ou [**Speak**](speak-method.md) ) para sincronizar esse evento com outras ações geradas pelo seu aplicativo. O servidor envia o evento somente para o cliente que criou a referência ao objeto de **solicitação** e somente se você definiu uma variável global para a referência de solicitação:
+Esse evento retorna um [**objeto Request.**](/windows/desktop/lwef/the-request-object) Como as solicitações são processadas de forma assíncrona, você pode usar esse evento para determinar quando o servidor conclui o processamento de uma solicitação (como um método [**Get,**](get-method.md) [**Play**](play-method.md)ou [**Speak)**](speak-method.md) para sincronizar esse evento com outras ações geradas pelo seu aplicativo. O servidor envia o evento somente para o cliente que criou a referência ao objeto **Request** e somente se você definiu uma variável global para a referência de solicitação:
 
 
 ```
@@ -73,7 +73,7 @@ Esse evento retorna um objeto de [**solicitação**](/windows/desktop/lwef/the-r
 
 
 
-Como os objetos de [**solicitação**](/windows/desktop/lwef/the-request-object) de animação não são atribuídos até que o servidor processe a solicitação, verifique se o objeto de **solicitação** existe antes de tentar avaliá-lo. Por exemplo, em Visual Basic, se você usar uma condicional para testar se uma solicitação específica foi concluída, você pode usar a palavra-chave **Nothing** :
+Como os [**objetos de**](/windows/desktop/lwef/the-request-object) solicitação de animação não são atribuídos até que o servidor processe a solicitação, certifique-se de que o objeto **Request** exista antes de tentar avaliá-lo. Por exemplo, no Visual Basic, se você usar uma condicional para testar se uma solicitação específica foi concluída, poderá usar a palavra-chave **Nothing:**
 
 
 ```
@@ -91,15 +91,15 @@ Como os objetos de [**solicitação**](/windows/desktop/lwef/the-request-object)
 
 
 > [!Note]  
-> No VBScript 1,0, esse evento é acionado mesmo se você não definir referências a um objeto de [**solicitação**](/windows/desktop/lwef/the-request-object) . Isso foi corrigido no VBScript 2,0, que pode ser baixado de <https://microsoft.com/msdownload/vbscript/scripting.asp> .
+> No VBScript 1.0, esse evento é a disparo mesmo que você não defina referências a um [**objeto Request.**](/windows/desktop/lwef/the-request-object) Isso foi corrigido no VBScript 2.0, que pode ser baixado do <https://microsoft.com/msdownload/vbscript/scripting.asp> .
 
- 
+ 
 
 ### <a name="see-also"></a>Consulte Também
 
 [**Evento RequestStart**](requeststart-event.md)
 
 
- 
+ 
 
- 
+ 

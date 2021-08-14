@@ -1,54 +1,54 @@
 ---
-title: Melhorando a experiência de panorâmica Single-Finger
-description: Se você criar um aplicativo direcionado ao Windows Touch, ele fornecerá automaticamente o suporte básico de panorâmica. No entanto, você pode usar a mensagem de gesto do WM \_ para fornecer suporte aprimorado para o movimento panorâmico com um único dedo.
+title: Melhorando a experiência Single-Finger panorâmico
+description: Se você criar um aplicativo destinado ao Windows Touch, ele fornece automaticamente suporte a panorâmico básico. No entanto, você pode usar a mensagem WM \_ GESTURE para fornecer suporte aprimorado para o panorâmico de um dedo.
 ms.assetid: eb01a6df-9969-44d1-a657-4f83fb0b67cb
 keywords:
-- Windows Touch, panorama de um único dedo
-- Windows Touch, panorâmica
-- Windows Touch, barras de rolagem
-- Windows Touch, movimentos
-- Toque do Windows, mensagens de Pan do gesto
-- Toque do Windows, comentários de limite
-- movimento panorâmico com um único dedo
-- movimento panorâmico, um único dedo
-- panorâmica, comentários de limite
-- barras de rolagem, movimento panorâmico de dedo único
-- movimentos, panorâmica de dedo único
+- Windows Toque, panorâmico de dedo único
+- Windows Toque, panorâmico
+- Windows Toque, barras de rolagem
+- Windows Toque, movimento
+- Windows Toque, mensagens de painel de gestos
+- Windows Toque, comentários de limite
+- panorâmico de dedo único
+- panning,single-finger
+- panning,comentários de limite
+- barras de rolagem, panorâmico de dedo único
+- movimento, panorâmico de dedo único
 - barras de rolagem, desabilitando
-- movimentos, desabilitando
-- gestos, mensagens de panorâmica do gesto
-- panorâmica, mensagens de panorâmica do gesto
-- Comentários de limite, movimento panorâmico de um único dedo
+- movimento, desabilitação
+- gestos, mensagens de painel de gestos
+- panning, mensagens de panorâmico de gestos
+- comentários de limite, panorâmico de dedo único
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9081903600918485f1e3241a02c01b5438c1aae
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: cf740d673e8bd2d2711238902d3de6c89d21a01fe330524b910db050011872f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118435439"
 ---
-# <a name="improving-the-single-finger-panning-experience"></a>Melhorando a experiência de panorâmica Single-Finger
+# <a name="improving-the-single-finger-panning-experience"></a>Melhorando a experiência Single-Finger panorâmico
 
-Se você criar um aplicativo direcionado ao Windows Touch, ele fornecerá automaticamente o suporte básico de panorâmica. No entanto, você pode usar a mensagem de [**\_ gesto do WM**](wm-gesture.md) para fornecer suporte aprimorado para o movimento panorâmico com um único dedo.
+Se você criar um aplicativo destinado ao Windows Touch, ele fornece automaticamente suporte a panorâmico básico. No entanto, você pode usar a [**mensagem WM \_ GESTURE**](wm-gesture.md) para fornecer suporte aprimorado para o panorâmico de um dedo.
 
 ## <a name="overview"></a>Visão geral
 
-Para melhorar a experiência de panorâmica de um único dedo, use estas etapas, conforme explicado nas seções subsequentes deste tópico:
+Para melhorar a experiência de panorâmico de dedo único, use estas etapas, conforme explicado nas seções subsequentes deste tópico:
 
--   Crie um aplicativo com barras de rolagem e com movimentos desabilitados.
--   Adicione suporte para mensagens de Pan de gesto.
--   Habilitar o retorno.
+-   Crie um aplicativo com barras de rolagem e com movimento desabilitado.
+-   Adicione suporte para mensagens de painel de gestos.
+-   Habilitar o ressalto.
 
-## <a name="create-an-application-with-scroll-bars-and-with-flicks-disabled"></a>Criar um aplicativo com barras de rolagem e com movimentos desabilitados
+## <a name="create-an-application-with-scroll-bars-and-with-flicks-disabled"></a>Criar um aplicativo com barras de rolagem e com movimento desabilitado
 
-Antes de começar, você deve criar um aplicativo com barras de rolagem. A seção [suporte herdado para panorâmica com barras de rolagem](legacy-support-for-panning-with-scrollbars.md) explica esse processo. Se você quiser começar com o conteúdo de exemplo, vá para essa seção e crie um aplicativo com barras de rolagem e, em seguida, desabilite os movimentos. Se você já tiver um aplicativo com barras de rolagem em funcionamento, desabilite os movimentos conforme descrito na seção.
+Antes de começar, você deve criar um aplicativo com barras de rolagem. A seção [Suporte herdada para panorâmico com barras de rolagem](legacy-support-for-panning-with-scrollbars.md) explica esse processo. Se você quiser começar com o conteúdo de exemplo, vá para essa seção e crie um aplicativo com barras de rolagem e desabilite os movimento. Se você já tiver um aplicativo com barras de rolagem em funcionamento, desabilite os movimento conforme descrito nesta seção.
 
-## <a name="add-custom-panning-support-for-gesture-pan-messages"></a>Adicionar suporte personalizado de panorâmica para mensagens de Pan de gesto
+## <a name="add-custom-panning-support-for-gesture-pan-messages"></a>Adicionar suporte de panorâmico personalizado para mensagens de panorâmico de gesto
 
-Para dar suporte a mensagens de Pan de gesto, você deve tratá-las no método **WndProc** . As mensagens de gesto são usadas para determinar os deltas horizontais e verticais para mensagens de Pan. Os deltas são usados para atualizar o objeto da barra de rolagem, que atualiza a interface do usuário.
+Para dar suporte a mensagens de painel de gestos, você deve lidar com elas no **método WndProc.** As mensagens de gesto são usadas para determinar deltas horizontais e verticais para mensagens de panor lado a lado. Os deltas são usados para atualizar o objeto da barra de rolagem, que atualiza a interface do usuário.
 
-Primeiro, atualize as configurações de versão do Windows no arquivo targetver. h para habilitar o Windows Touch. O código a seguir mostra as várias configurações de versão do Windows que devem substituir as em targetver. h.
+Primeiro, atualize as Windows de versão no arquivo targetver.h para habilitar Windows Touch. O código a seguir mostra as várias Windows de versão que devem substituir aquelas em targetver.h.
 
 
 ```C++
@@ -63,7 +63,7 @@ Primeiro, atualize as configurações de versão do Windows no arquivo targetver
 
 
 
-Em seguida, adicione o arquivo UXTheme. h ao seu projeto e adicione a biblioteca UxTheme. lib às dependências adicionais do seu projeto.
+Em seguida, adicione o arquivo UXTheme.h ao seu projeto e adicione a biblioteca uxtheme.lib às dependências adicionais do seu projeto.
 
 
 ```C++
@@ -72,7 +72,7 @@ Em seguida, adicione o arquivo UXTheme. h ao seu projeto e adicione a biblioteca
 
 
 
-Em seguida, adicione as variáveis a seguir à parte superior da função **WndProc** . Eles serão usados em cálculos para movimento panorâmico.
+Em seguida, adicione as seguintes variáveis à parte superior da **função WndProc.** Eles serão usados em cálculos para panorâmico.
 
 
 ```C++
@@ -87,9 +87,9 @@ GESTUREINFO gi;
 
 
 
-Em seguida, adicione o manipulador para a mensagem de [**\_ gesto do WM**](wm-gesture.md) para que as barras de rolagem sejam atualizadas com deltas com base nos gestos de panorâmica. Isso lhe dá um controle muito mais refinado de panorâmica.
+Em seguida, adicione o manipulador para a mensagem [**WM \_ GESTURE**](wm-gesture.md) para que as barras de rolagem sejam atualizadas com deltas com base em gestos de panorâmico. Isso oferece um controle muito mais fino de panorâmico.
 
-O código a seguir obtém a estrutura [**GESTUREINFO**](/windows/win32/api/winuser/ns-winuser-gestureinfo) do *lParam*, salva a última coordenada y da estrutura e determina a alteração na posição para atualizar o objeto da barra de rolagem. O código a seguir deve ser colocado em sua instrução de comutador **WndProc** .
+O código a seguir obtém a estrutura [**GESTUREINFO**](/windows/win32/api/winuser/ns-winuser-gestureinfo) do *lParam*, salva a última coordenada y da estrutura e determina a alteração na posição para atualizar o objeto da barra de rolagem. O código a seguir deve ser colocado na **instrução switch WndProc.**
 
 
 ```C++
@@ -160,11 +160,11 @@ O código a seguir obtém a estrutura [**GESTUREINFO**](/windows/win32/api/winus
 
 
 
-Agora, quando você executar o gesto de panorâmica em sua janela, verá o texto rolar com inércia. Neste ponto, talvez você queira alterar o texto para ter mais linhas, de modo que você possa explorar as grandes seções de texto de movimento panorâmico.
+Agora, ao executar o gesto de panorônomos na janela, você verá a rolagem de texto com inércia. Neste ponto, talvez você queira alterar o texto para ter mais linhas para que você possa explorar o panorâmico de grandes seções de texto.
 
-## <a name="boundary-feedback-in-wndproc"></a>Comentários de limite em WndProc
+## <a name="boundary-feedback-in-wndproc"></a>Comentários de limite no WndProc
 
-Os comentários de limite são um tipo de comentário visual dado aos usuários quando eles atingem o final de uma área de visão panorâmica. Ele é disparado pelo aplicativo quando um limite é atingido. Na implementação de exemplo anterior da mensagem [**de \_ gesto do WM**](wm-gesture.md) , a condição final `(si.nPos == si.yPos)` do caso do **\_ gesto do WM** é usada para testar se você atingiu o final de uma região de visão panorâmica. As variáveis a seguir são usadas para rastrear valores e erros de teste.
+Os comentários de limite são um tipo de comentários visuais dados aos usuários quando eles chegam ao final de uma área pannizável. Ele é disparado pelo aplicativo quando um limite é atingido. No exemplo anterior de implementação da mensagem [**WM \_ GESTURE,**](wm-gesture.md) a condição final do caso WM GESTURE é usada para testar se você atingiu o final de uma `(si.nPos == si.yPos)` região pannizável. **\_** As variáveis a seguir são usadas para rastrear valores e testar erros.
 
 
 ```C++
@@ -179,7 +179,7 @@ static long yOverpan   = 0;
 
 
 
-O caso de gesto de panorâmica é atualizado para disparar comentários de limite. O código a seguir ilustra o caso de **\_ Pan de GID** do manipulador de mensagens de [**\_ gesto do WM**](wm-gesture.md) .
+O caso do gesto de panorualizações é atualizado para disparar comentários de limite. O código a seguir ilustra o caso **DO \_ GID PAN** do manipulador de mensagens WM [**\_ GESTURE.**](wm-gesture.md)
 
 
 ```C++
@@ -218,13 +218,13 @@ O caso de gesto de panorâmica é atualizado para disparar comentários de limit
 
 
 
-Agora, a janela do aplicativo deve ter comentários de limite quando um usuário se desloca sobre a parte inferior da região da barra de rolagem.
+Agora, a janela do aplicativo deve ter comentários de limite quando um usuário passa pela parte inferior da região da barra de rolagem.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Gestos de toque do Windows](guide-multi-touch-gestures.md)
+[Windows Gestos de toque](guide-multi-touch-gestures.md)
 </dt> <dt>
 
 [**BeginPanningFeedback**](/windows/win32/api/uxtheme/nf-uxtheme-beginpanningfeedback)
@@ -236,6 +236,6 @@ Agora, a janela do aplicativo deve ter comentários de limite quando um usuário
 [**UpdatePanningFeedback**](/windows/win32/api/uxtheme/nf-uxtheme-updatepanningfeedback)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

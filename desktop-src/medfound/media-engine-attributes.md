@@ -4,12 +4,12 @@ ms.assetid: 08282D80-53F5-463F-B87F-522F72823E99
 title: Atributos do mecanismo de mídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff2c6961a9fd9851a39466d22569b62fe3de1683
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 4413932ff345c2b95f780bcbaecc81d3ddc5e39071986a5270778223b0f752a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105795471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974225"
 ---
 # <a name="media-engine-attributes"></a>Atributos do mecanismo de mídia
 

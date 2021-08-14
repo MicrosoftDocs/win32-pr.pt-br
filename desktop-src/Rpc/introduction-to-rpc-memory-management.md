@@ -4,12 +4,12 @@ description: Introdução ao gerenciamento de memória RPC (chamada de procedime
 ms.assetid: 3474d79c-93ef-4221-b9ea-9173978e2929
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94ac4b6aecb2fd78448ebe31c72587fafb8f6fde
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0a169f87bbd8a9747dd7a4983a26f1122cf575e95434ed0dd3be346bae12b9a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118928922"
 ---
 # <a name="introduction-to-rpc-memory-management"></a>Introdução ao gerenciamento de memória RPC
 
@@ -27,6 +27,6 @@ Os aplicativos RPC cliente/servidor compartilham dados em dois espaços de memó
 
 Em casos como a árvore binária representada no diagrama anterior, não é suficiente passar um ponteiro para o nó raiz para um procedimento remoto. O programa ou os stubs devem passar a árvore inteira para o espaço de endereço do servidor para que o procedimento remoto opere nele.
 
- 
+ 
 
- 
+ 

@@ -1,9 +1,9 @@
 ---
-title: Função FreeUiInfo (Ndattributils. h)
+title: Função FreeUiInfo (Ndattributils.h)
 description: Desaloca a memória alocada internamente para uma estrutura UiInfo.
 ms.assetid: 41d923fd-2fb3-406e-a5cf-f3ba475685f6
 keywords:
-- NDF da função FreeUiInfo
+- Função FreeUiInfo NDF
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a96d859faa80e3e2269981d206c96e780d05c37
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3e2008ddabdb412c117a3cfac5f2eb5ebf1e722f5f3729fb7c8b2ee0c394c454
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118939043"
 ---
 # <a name="freeuiinfo-function"></a>Função FreeUiInfo
 
-A função **FreeUiInfo** Desaloca a memória alocada internamente para uma estrutura [**UiInfo**](/windows/win32/api/ndattrib/ns-ndattrib-uiinfo) . Essa função chama [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) para desalocar memória.
+A **função FreeUiInfo** desaloca a memória alocada internamente para uma [**estrutura UiInfo.**](/windows/win32/api/ndattrib/ns-ndattrib-uiinfo) Essa função chama [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) para desalocar a memória.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,12 +40,12 @@ VOID FreeUiInfo(
 
 <dl> <dt>
 
-*pInfo* \[ no\]
+*pInfo* \[ Em\]
 </dt> <dd>
 
-Tipo: **[**UiInfo**](/windows/win32/api/ndattrib/ns-ndattrib-uiinfo) \** _
+Tipo: **[ **UiInfo**](/windows/win32/api/ndattrib/ns-ndattrib-uiinfo)\***
 
-A estrutura. A memória alocada apontada por essa estrutura será liberada.
+A estrutura . A memória alocada apontada por essa estrutura será liberada.
 
 </dd> </dl>
 
@@ -59,9 +59,9 @@ Essa função não retorna um valor.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>Ndattributils. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                 |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                       |
+| parâmetro<br/>                   | <dl> <dt>Ndattributils.h</dt> </dl> |
 
 
 
@@ -69,10 +69,10 @@ Essa função não retorna um valor.
 
 <dl> <dt>
 
-[_ *UiInfo**](/windows/win32/api/ndattrib/ns-ndattrib-uiinfo)
+[**UiInfo**](/windows/win32/api/ndattrib/ns-ndattrib-uiinfo)
 </dt> <dt>
 
-[**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)
+[**Cotaskmemfree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)
 </dt> </dl>
 
  

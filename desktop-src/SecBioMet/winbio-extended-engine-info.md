@@ -4,7 +4,7 @@ description: Contém informações sobre as capacidades e os requisitos de regis
 ms.assetid: 83586E04-24CA-4A39-836F-C80DB1508C71
 keywords:
 - API de Windows Biometric Framework de estrutura de WINBIO_EXTENDED_ENGINE_INFO
-- Ponteiro de estrutura de PWINBIO_EXTENDED_ENGINE_INFO Windows Biometric Framework API
+- ponteiro de estrutura de PWINBIO_EXTENDED_ENGINE_INFO Windows Biometric Framework API
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 829bd0423ab6add41b17f59d308aea850c5b2f42
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: df59b10400729150a13f2a8a5476c46507867777f71641a01ea0c08e064b4c40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118910512"
 ---
 # <a name="winbio_extended_engine_info-structure"></a>\_Estrutura de \_ informações do mecanismo estendido do WINBIO \_
 
@@ -88,7 +88,7 @@ O tipo de unidade biométrica para o qual essa estrutura contém informações s
 
 </dd> <dt>
 
-**Específicas**
+**Determinados**
 </dt> <dd>
 
 Informações sobre as capacidades e os requisitos de registro do adaptador do mecanismo para uma unidade biométrica relacionada a um fator biométrico específico.
@@ -189,7 +189,7 @@ O número de exemplos bons para a borda direita da impressão digital necessári
 
 </dd> </dl> </dd> </dl> </dd> <dt>
 
-**Íris**
+**Iris**
 </dt> <dd>
 
 Informações sobre as capacidades e os requisitos de registro do adaptador do mecanismo para uma unidade biométrica relacionada a padrões de íris.
@@ -243,8 +243,8 @@ Reservado. Deve ser zero.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                                                                                                     |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2016 \[ somente aplicativos da área de trabalho\]<br/>                                                                                                                     |
 | parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h para aplicativos cliente ou WinBio \_ Adapters. h para adaptadores)</dt> </dl> |
 
 

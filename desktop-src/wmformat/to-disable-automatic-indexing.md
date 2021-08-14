@@ -3,8 +3,8 @@ title: Para desabilitar a indexação automática
 description: Para desabilitar a indexação automática
 ms.assetid: 41fe18de-3a94-4001-83ce-0bb5dd086995
 keywords:
-- SDK do Windows Media Format, desabilitando a indexação automática
-- SDK do Windows Media Format, indexação automática
+- Windows SDK do formato de mídia, desabilitando a indexação automática
+- Windows SDK do formato de mídia, indexação automática
 - ASF (Advanced Systems Format), desabilitando a indexação automática
 - ASF (formato de sistemas avançados), desabilitando a indexação automática
 - ASF (Advanced Systems Format), indexação automática
@@ -13,12 +13,12 @@ keywords:
 - índices, indexação automática
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0235ddac8093d9b1c6d40fde341ee32d078b84b7
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 61f3b63d58b8f9a0fbbdff88369832b67abca7d9f11a39c56613c6e5d867d6a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103916999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118699906"
 ---
 # <a name="to-disable-automatic-indexing"></a>Para desabilitar a indexação automática
 
@@ -78,9 +78,9 @@ pMySink = NULL;
 [**Trabalhando com índices**](working-with-indexes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6e94bfa6084c67428fb89e57b9152283cc3d4a3
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 76de649a069b0cfec74fabe1a41d6cfa659b39448257a4bc966065e1bce98ea9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105797576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118434615"
 ---
 # <a name="asfleakybucketpairs"></a>ASFLeakyBucketPairs
 
-O atributo **ASFLeakyBucketPairs** é um atributo opcional que descreve os requisitos de buffer para um arquivo de taxa de bits variável.
+O **atributo ASFLeakyBucketPairs** é um atributo opcional que descreve os requisitos de buffer para um arquivo de taxa de bits variável.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,7 +29,7 @@ g \_ wszASFLeakyBucketPairs
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**WMT \_ tipo \_ binário**
+**TIPO WMT \_ \_ BINARY**
 
 ## <a name="remarks"></a>Comentários
 
@@ -43,7 +43,7 @@ struct
 };
 ```
 
-Em que *wReserved* deve ser igual a zero e *Bucket* é uma matriz de estruturas de [**\_ \_ \_ pares de buckets de vazamento do WM**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_leaky_bucket_pair) . A matriz deve conter pelo menos duas entradas, mas pode ser maior. O objeto leitor usa esse atributo para determinar a quantidade de conteúdo a ser armazenada em buffer antes da reprodução.
+Em *que wReserved* deve ser igual a zero e *bucket* é uma matriz de estruturas [**WM \_ LEAKY BUCKET \_ \_ PAIR.**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_leaky_bucket_pair) A matriz deve conter pelo menos duas entradas, mas pode ser maior. O objeto de leitor usa esse atributo para determinar a quantidade de conteúdo a ser armazenado em buffer antes da reprodução.
 
 ## <a name="see-also"></a>Confira também
 
@@ -52,9 +52,9 @@ Em que *wReserved* deve ser igual a zero e *Bucket* é uma matriz de estruturas 
 [**Lista de Atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Evento InkPicture. CursorDown – ocorre quando a dica de cursor entra em contato com a superfície do Tablet de digitalização.
+description: Evento InkPicture.CursorDown – ocorre quando a dica de cursor contata a superfície de tablet de digitalização.
 ms.assetid: 6d524400-1341-45da-86b2-098e34ed5a1c
-title: Evento InkPicture. CursorDown (Msinkaut. h)
+title: Evento InkPicture.CursorDown (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc4b6128589ba2d0b87d4369e8bb58aa66eabf23
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 48a0fd7a6c077093ae7e14ab1d905398e0b75a585cf09c2a87b0da9b843844a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967075"
 ---
-# <a name="inkpicturecursordown-event"></a>Evento InkPicture. CursorDown
+# <a name="inkpicturecursordown-event"></a>Evento InkPicture.CursorDown
 
-Ocorre quando a dica de cursor entra na superfície do Tablet de digitalização.
+Ocorre quando a dica de cursor contata a superfície de tablet de digitalização.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -31,17 +31,17 @@ void CursorDown(
 
 <dl> <dt>
 
-*Cursor* \[ no\]
+*Cursor* \[ Em\]
 </dt> <dd>
 
-O objeto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) que gerou o evento **CursorDown** .
+O [**objeto IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) que gerou o **evento CursorDown.**
 
 </dd> <dt>
 
-*Traço* \[ no\]
+*Traço* \[ Em\]
 </dt> <dd>
 
-O objeto [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) que foi iniciado quando o objeto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) fez com que o evento **CursorDown** fosse disparado.
+O [**objeto IInkStrkeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) que foi iniciado quando o objeto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) causou o disparo do evento **CursorDown.**
 
 </dd> </dl>
 
@@ -51,9 +51,9 @@ Esse evento não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esses métodos de evento são definidos nas interfaces **\_ IInkCollectorEvents**, **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** . As interfaces **\_ IInkCollectorEvents**, **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** implementam a interface [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) com um identificador de \_ ICECursorDown DISPID.
+Esses métodos de evento são definidos nas **\_ interfaces IInkCollectorEvents,** **\_ IInkOverlayEvents** e **\_ IInkPictureEvents.** As interfaces **\_ IInkCollectorEvents**, **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** implementam a interface [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) com um identificador de DISPID \_ ICECursorDown.
 
-Use esse evento com cuidado porque ele pode ter um efeito adverso no desempenho da tinta se um código excessivo for executado nos manipuladores de eventos. Para melhorar o desempenho de tinta em tempo real, oculte ou mostre o cursor do mouse nos manipuladores de eventos [**MouseDown**](inkpicture-mousedown.md) e [**MouseUp**](inkpicture-mouseup.md) .
+Use esse evento com cuidado porque ele poderá ter um efeito adverso no desempenho da tinta se muito código for executado nos manipuladores de eventos. Para melhorar o desempenho de tinta em tempo real, o oculta ou mostra o cursor do mouse nos manipuladores de eventos [**MouseDown**](inkpicture-mousedown.md) e [**MouseUp.**](inkpicture-mouseup.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,18 +61,18 @@ Use esse evento com cuidado porque ele pode ter um efeito adverso no desempenho 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                           |
-| parâmetro<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Msinkaut.h (também requer Msinkaut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[InkPicture](inkpicture-control-reference.md)
+[Inkpicture](inkpicture-control-reference.md)
 </dt> <dt>
 
 [**Evento CursorButtonUp**](inkpicture-cursorbuttonup.md)
@@ -81,10 +81,10 @@ Use esse evento com cuidado porque ele pode ter um efeito adverso no desempenho 
 [**Evento CursorButtonDown**](inkpicture-cursorbuttondown.md)
 </dt> <dt>
 
-[**Interface IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)
+[**IInkCursor Interface**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)
 </dt> <dt>
 
-[**Interface IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp)
+[**Interface IInkRogkeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp)
 </dt> </dl>
 
  

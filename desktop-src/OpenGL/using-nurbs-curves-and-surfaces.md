@@ -9,12 +9,12 @@ keywords:
 - NURBS (B-spline racional não uniforme) OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f85e9a2045c417007c34d714ae6635ebfaf1180
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7c1b366571be7a9210576e78540c77970667aca2f37ec8a092de07edb97493d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104291989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118932766"
 ---
 # <a name="using-nurbs-curves-and-surfaces"></a>Usando curvas e superfícies NURBS
 
@@ -55,9 +55,9 @@ Assim como acontece com objetos Quadric, você pode controlar como as curvas NUR
 
 Use [**gluNurbsProperty**](glunurbsproperty.md) para definir essas propriedades ou use os valores padrão. Você pode consultar um objeto NURBS sobre seu estilo de renderização com [**gluGetNurbsProperty**](glugetnurbsproperty.md).
 
- 
+ 
 
- 
+ 
 
 
 

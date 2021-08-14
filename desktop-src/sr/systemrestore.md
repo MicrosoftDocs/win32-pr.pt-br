@@ -20,12 +20,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64d2b609a7a49a9b319c15745600aa54193350e5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9ca781f960f51c8f7804d56f3b2f5531517c3f16505f40dd48d442857fa58bf5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967985"
 ---
 # <a name="systemrestore-class"></a>Classe SystemRestore
 
@@ -199,7 +199,7 @@ next
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                       |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                         |
 | Namespace<br/>                | \\Padrão raiz<br/>                                                          |
 | MOF<br/>                      | <dl> <dt>Sr. mof</dt> </dl> |

@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 998a14e1bd4898d83d049ea50bc056abaeb68544
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0b02f699ab06ef93f3eeace3ce515b0947030e4824e2cb0fa51034c3e33f51dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105765297"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119987866"
 ---
 # <a name="cd3dx12_tile_shape-structure"></a>Estrutura da forma do \_ bloco CD3DX12 \_
 

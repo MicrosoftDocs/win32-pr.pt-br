@@ -1,22 +1,22 @@
 ---
-title: Para enumerar todos os codecs de mídia do Windows instalados
-description: Para enumerar todos os codecs de mídia do Windows instalados
+title: para enumerar todos os codecs de mídia do Windows instalados
+description: para enumerar todos os codecs de mídia do Windows instalados
 ms.assetid: 651c8624-0b66-4d0e-a25f-6c4b1a94e849
 keywords:
-- fluxos, enumerando os codecs de mídia do Windows instalados
+- fluxos, enumerando os codecs de mídia instalados Windows
 - codecs, enumerações
 - fluxos, índices de codec
 - codecs, índices
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6db9a35913dde13f563ee57d54ee5e7de87d82cc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b63f58f94cf36e18fcbaa31bb9cff0dd8b5ab4717cc88e6f05657c7a2c72b429
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105780379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118699808"
 ---
-# <a name="to-enumerate-all-installed-windows-media-codecs"></a>Para enumerar todos os codecs de mídia do Windows instalados
+# <a name="to-enumerate-all-installed-windows-media-codecs"></a>para enumerar todos os codecs de mídia do Windows instalados
 
 As informações do codec interfaces usam índices de codec para identificar codecs individuais. Os codecs são indexados independentemente para áudio e vídeo. Dentro de um tipo de codec, os índices variam de 0, para um menor que o número de codecs desse tipo.
 
@@ -151,9 +151,9 @@ HRESULT GetCodecNames(IWMCodecInfo3* pCodecInfo)
 [**Obtendo informações de configuração de fluxo de codecs**](getting-stream-configuration-information-from-codecs.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

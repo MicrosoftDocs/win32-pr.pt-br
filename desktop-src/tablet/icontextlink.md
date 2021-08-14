@@ -1,7 +1,7 @@
 ---
 description: Representa uma relação entre dois objetos IContextNode.
 ms.assetid: ee81d9d7-eba9-4b11-84d0-5a6ca0df7d92
-title: Interface IContextLink (IACom. h)
+title: Interface IContextLink (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: df1e0d8717ba29532486277aced19f17adb1d79c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7dc9244fed59604a56817f15801de94b64c476762e186cc6f7c36186e8d0b26d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105772576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118719910"
 ---
 # <a name="icontextlink-interface"></a>Interface IContextLink
 
-Representa uma relação entre dois objetos [**IContextNode**](icontextnode.md) .
+Representa uma relação entre dois [**objetos IContextNode.**](icontextnode.md)
 
 ## <a name="members"></a>Membros
 
-A interface **IContextLink** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IContextLink** também tem estes tipos de membros:
+A interface **IContextLink** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IContextLink** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -38,9 +38,9 @@ A interface **IContextLink** tem esses métodos.
 
 | Método                                                                  | Descrição                                                                                                             |
 |:------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------|
-| [**GetContextLinkDirection**](icontextlink-getcontextlinkdirection.md) | Recupera o tipo de relação que esse **IContextLink** representa.<br/>                                         |
-| [**GetDestinationNode**](icontextlink-getdestinationnode.md)           | Recupera o objeto [**IContextNode**](icontextnode.md) que é o destino para este **IContextLink**.<br/> |
-| [**GetSourceNode**](icontextlink-getsourcenode.md)                     | Recupera o objeto [**IContextNode**](icontextnode.md) que é a origem para este **IContextLink**.<br/>      |
+| [**GetContextLinkDirection**](icontextlink-getcontextlinkdirection.md) | Recupera o tipo de relação que **este IContextLink** representa.<br/>                                         |
+| [**GetDestinationNode**](icontextlink-getdestinationnode.md)           | Recupera o [**objeto IContextNode**](icontextnode.md) que é o destino deste **IContextLink.**<br/> |
+| [**GetSourceNode**](icontextlink-getsourcenode.md)                     | Recupera o [**objeto IContextNode**](icontextnode.md) que é a origem deste **IContextLink.**<br/>      |
 
 
 
@@ -48,9 +48,9 @@ A interface **IContextLink** tem esses métodos.
 
 ## <a name="remarks"></a>Comentários
 
-Veja a seguir um exemplo de uma relação representada por um objeto **IContextLink** :
+Veja a seguir um exemplo de uma relação representada por um **objeto IContextLink:**
 
--   Quando um nó AnalysisHint é usado na análise de tinta, a operação de análise de tinta cria um objeto **IContextLink** do tipo AnalysisHint entre o nó de dica de análise e o nó que contém a gravação dentro da área da dica. O nó de origem é o nó de dica de análise e o nó de destino é o nó que contém a gravação.
+-   Quando um nó AnalysisHint é usado na análise de tinta, a operação de análise de tinta cria um objeto **IContextLink** do tipo AnalysisHint entre o nó de dica de análise e o nó que contém a escrita na área da dica. O nó de origem é o nó de dica de análise e o nó de destino é o nó que contém a escrita.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,9 +58,9 @@ Veja a seguir um exemplo de uma relação representada por um objeto **IContextL
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
+| parâmetro<br/>                   | <dl> <dt>IACom.h (também requer IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

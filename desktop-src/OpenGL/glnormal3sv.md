@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf639364ead2e4188e56677bb68930592c4e5d5c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2ec60f7fec008d23bf40667d897a1fc4e24ecb92ada7210ef79b3788610067d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103930483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117795239"
 ---
 # <a name="glnormal3sv-function"></a>função glNormal3sv
 
@@ -40,7 +40,7 @@ void WINAPI glNormal3sv(
 
 <dl> <dt>
 
-*l* 
+*v* 
 </dt> <dd>
 
 Um ponteiro para uma matriz de três elementos: as coordenadas x, y e z do novo normal atual.

@@ -13,72 +13,72 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 39cea5692e29ead74ba20c4a35ab8d43a1b19d42
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 11573dc84c46149073ca3a7e192ed8541d9cfd4a78494a43f6130a7999534880
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104006656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118508672"
 ---
 # <a name="texture1darray"></a>Texture1DArray
 
-Tipo de Texture1DArray ([como ele existe no modelo de sombreador 4](dx-graphics-hlsl-to-type.md)) mais variáveis de recurso. Esse objeto de textura dá suporte aos métodos a seguir, além dos métodos no sombreador modelo 4.
+Tipo Texture1DArray ([como ele existe no Modelo de Sombreador 4](dx-graphics-hlsl-to-type.md)) mais variáveis de recurso. Esse objeto de textura dá suporte aos métodos a seguir, além dos métodos no Modelo de Sombreador 4.
 
 
 
 | Método                                                                       | Descrição                                                                                |
 |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 | [**GetDimensions**](sm5-object-texture1darray-getdimensions.md)             | Obtém as dimensões do recurso.                                                              |
-| [**Carregamento**](texture1darray-load.md)                                          | Lê dados de textura.                                                                        |
-| [**seqüencia. Operador\[\]\[\]**](sm5-object-texture1darray-mipsoperatorindex.md) | Obtém uma variável de recurso somente leitura.                                                        |
+| [**Carregar**](texture1darray-load.md)                                          | Lê dados de textura.                                                                        |
+| [**Mips. Operador\[\]\[\]**](sm5-object-texture1darray-mipsoperatorindex.md) | Obtém uma variável de recurso somente leitura.                                                        |
 | [**Operador\[\]**](sm5-object-texture1darray-operatorindex.md)              | Obtém uma variável de recurso somente leitura.                                                        |
-| [**Nova**](texture1darray-sample.md)                                      | Amostra uma textura.                                                                         |
-| [**SampleBias**](texture1darray-samplebias.md)                              | Amostra uma textura, depois de aplicar o valor de tendência ao nível de mipmap.                      |
-| [**SampleCmp**](texture1darray-samplecmp.md)                                | Amostra uma textura, usando um valor de comparação para rejeitar amostras.                             |
-| [**SampleCmpLevelZero**](texture1darray-samplecmplevelzero.md)              | Amostras de uma textura (somente mipmap nível 0), usando um valor de comparação para rejeitar amostras.       |
+| [**Amostra**](texture1darray-sample.md)                                      | Amostras de uma textura.                                                                         |
+| [**SampleBias**](texture1darray-samplebias.md)                              | Amostra uma textura, depois de aplicar o valor de desvio ao nível de mipmap.                      |
+| [**SampleCmp**](texture1darray-samplecmp.md)                                | Amostra uma textura usando um valor de comparação para rejeitar amostras.                             |
+| [**SampleCmpLevelZero**](texture1darray-samplecmplevelzero.md)              | Amostra uma textura (somente mipmap nível 0), usando um valor de comparação para rejeitar amostras.       |
 | [**SampleGrad**](texture1darray-samplegrad.md)                              | Amostra uma textura usando um gradiente para influenciar a maneira como o local de exemplo é calculado. |
 | [**SampleLevel**](texture1darray-samplelevel.md)                            | Amostra uma textura no nível de mipmap especificado.                                           |
 
 
 
- 
+ 
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Esse objeto tem suporte nos seguintes modelos de sombreador.
+Esse objeto tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                                                | Com suporte |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelo](d3d11-graphics-reference-sm5.md) de sombreador 5 e modelos de sombreador mais altos | sim       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) e modelos de sombreador superior | sim       |
 
 
 
- 
+ 
 
-Este objeto tem suporte para os seguintes tipos de sombreadores:
+Esse objeto tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[Objetos do Shader Model 5](d3d11-graphics-reference-sm5-objects.md)
+[Objetos do Modelo de Sombreador 5](d3d11-graphics-reference-sm5-objects.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

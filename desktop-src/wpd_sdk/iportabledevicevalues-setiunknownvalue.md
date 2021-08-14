@@ -1,7 +1,7 @@
 ---
-description: O método setiunknownvalue adiciona um novo valor IUnknown (tipo VT \_ desconhecido) ou substitui um existente.
+description: O método SetIUnknownValue adiciona um novo valor IUnknown (tipo VT UNKNOWN) ou substitui \_ um existente.
 ms.assetid: 292adf45-439c-4aae-9b17-e4d9ed701eda
-title: 'Método IPortableDeviceValues:: setiunknownvalue (PortableDeviceTypes. h)'
+title: Método IPortableDeviceValues::SetIUnknownValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 2c3a27fe5ea89359884d70162000b5164b7c1aec
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c4a7c8a77cfef505b2a507b6281b931eea7f09c4ea1fbc79e651e7f517593799
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105784671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118697047"
 ---
-# <a name="iportabledevicevaluessetiunknownvalue-method"></a>Método IPortableDeviceValues:: setiunknownvalue
+# <a name="iportabledevicevaluessetiunknownvalue-method"></a>Método IPortableDeviceValues::SetIUnknownValue
 
-O método **Setiunknownvalue** adiciona um novo valor **IUnknown** (tipo VT \_ desconhecido) ou substitui um existente.
+O **método SetIUnknownValue** adiciona um novo **valor IUnknown** (tipo VT UNKNOWN) ou substitui \_ um existente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,23 +41,23 @@ HRESULT SetIUnknownValue(
 
 <dl> <dt>
 
-*chave* \[ no\]
+*chave* \[ Em\]
 </dt> <dd>
 
-Um **REFPROPERTYKEY** que especifica o item a ser criado ou substituído.
+Uma **REFPROPERTYKEY** que especifica o item a ser criado ou substituido.
 
 </dd> <dt>
 
-*valores* \[ no\]
+*pValue* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma interface **IUnknown** que especifica o novo valor. O SDK copia uma referência para a interface enviada e chama **AddRef** nela.
+Um ponteiro para uma interface **IUnknown** que especifica o novo valor. O SDK copia uma referência para a interface enviada e chama **AddRef** nele.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -71,7 +71,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 ## <a name="remarks"></a>Comentários
 
-Se um valor existente tiver a mesma chave especificada pelo parâmetro de *chave* , ele substituirá o valor existente sem nenhum aviso. A memória de chave existente é liberada adequadamente.
+Se um valor existente tiver a mesma chave especificada pelo parâmetro *key,* ele substituirá o valor existente sem nenhum aviso. A memória de chave existente é liberada adequadamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Se um valor existente tiver a mesma chave especificada pelo parâmetro de *chave
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -88,10 +88,10 @@ Se um valor existente tiver a mesma chave especificada pelo parâmetro de *chave
 
 <dl> <dt>
 
-[**Interface IPortableDeviceValues**](iportabledevicevalues.md)
+[**IPortableDeviceValues Interface**](iportabledevicevalues.md)
 </dt> <dt>
 
-[**IPortableDeviceValues:: getiunknownvalue**](iportabledevicevalues-getiunknownvalue.md)
+[**IPortableDeviceValues::GetIUnknownValue**](iportabledevicevalues-getiunknownvalue.md)
 </dt> </dl>
 
  

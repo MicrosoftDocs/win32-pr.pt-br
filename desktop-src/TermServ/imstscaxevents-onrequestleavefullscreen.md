@@ -1,12 +1,12 @@
 ---
-title: Método IMsTscAxEvents OnRequestLeaveFullScreen
-description: Chamado quando o cliente solicita a saída do modo de tela inteira e a propriedade IMsTscAdvancedSettings Put \_ ContainerHandledFullScreen foi definida como um valor diferente de zero.
+title: Método OnRequestLeaveFullScreen IMsTscAxEvents
+description: Chamado quando o cliente solicita para sair do modo de tela inteira e a propriedade IMsTscAdvancedSettings put ContainerHandledFullScreen foi definida como um valor diferente \_ de zero.
 ms.assetid: db6ee012-8288-4360-98b2-12858ea65baa
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método OnRequestLeaveFullScreen
-- Método OnRequestLeaveFullScreen Serviços de Área de Trabalho Remota, interface IMsTscAxEvents
-- Serviços de Área de Trabalho Remota de interface IMsTscAxEvents, método OnRequestLeaveFullScreen
+- Método OnRequestLeaveFullScreen Serviços de Área de Trabalho Remota
+- Método OnRequestLeaveFullScreen Serviços de Área de Trabalho Remota interface , IMsTscAxEvents
+- Interface IMsTscAxEvents Serviços de Área de Trabalho Remota , método OnRequestLeaveFullScreen
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e814d6153e32fdf4fa498a6630fc9ca2908510e2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 74f82cd71942f559039a175fdfff9319cae5ea35a73d4698760be4642a23c448
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757332"
 ---
-# <a name="imstscaxeventsonrequestleavefullscreen-method"></a>Método IMsTscAxEvents:: OnRequestLeaveFullScreen
+# <a name="imstscaxeventsonrequestleavefullscreen-method"></a>Método IMsTscAxEvents::OnRequestLeaveFullScreen
 
-Chamado quando o cliente solicita a saída do modo de tela inteira e a propriedade [**IMsTscAdvancedSettings::p UT \_ ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) foi definida como um valor diferente de zero.
+Chamado quando o cliente solicita para sair do modo de tela inteira e a propriedade [**IMsTscAdvancedSettings::p ut \_ ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) foi definida como um valor diferente de zero.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,15 +41,15 @@ void OnRequestLeaveFullScreen();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-No modo de tela inteira manipulado por contêiner, o contêiner deve deixar o modo de tela inteira padrão em resposta a esse evento.
+No modo de tela inteira manipulado pelo contêiner, o contêiner deve deixar o modo de tela inteira padrão em resposta a esse evento.
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -69,7 +69,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 
 <dl> <dt>
 
-[**IMsTscAxEvents**](imstscaxevents-interface.md)
+[**Imstscaxevents**](imstscaxevents-interface.md)
 </dt> </dl>
 
  

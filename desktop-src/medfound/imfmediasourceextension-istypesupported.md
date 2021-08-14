@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 4c2784dc4e97f96ae28ba56544a7f425de8ce742
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: e2292ab717914e29a7741fed997b0f8b8b16e152e2fa889dd7ecb04bbb98aaea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105785042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974335"
 ---
 # <a name="imfmediasourceextensionistypesupported-method"></a>Método IMFMediaSourceExtension:: IsTypeSupported
 
@@ -46,7 +46,7 @@ O tipo de mídia para o qual verificar o suporte.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 **true** se o tipo de mídia tiver suporte; caso contrário, **false**.
 
@@ -56,8 +56,8 @@ O tipo de mídia para o qual verificar o suporte.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                      |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ somente aplicativos da área de trabalho\]<br/>                                                 |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Somente aplicativos da área de trabalho R2\]<br/>                                      |
 | INSERI<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
 
 

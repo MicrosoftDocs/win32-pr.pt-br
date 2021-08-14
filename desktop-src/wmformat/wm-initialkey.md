@@ -3,7 +3,7 @@ title: WM/InitialKey
 description: O atributo WM/InitialKey contém a chave inicial da música no arquivo.
 ms.assetid: f298f860-95e3-4dee-8fec-771da4a3744d
 keywords:
-- Formato de mídia do Windows do WM/InitialKey
+- Formato de mídia do Windows WM/InitialKey
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e09f914700e297839781ca49dac292f88e5945e2
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 4c49396ac20637815ffa3d47d62f69b215548e04f4355763e7483afcfbaa0858
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103638713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118698962"
 ---
 # <a name="wminitialkey"></a>WM/InitialKey
 
-O atributo **WM/InitialKey** contém a chave inicial da música no arquivo.
+O **atributo WM/InitialKey** contém a chave inicial da música no arquivo.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,7 +29,7 @@ g \_ wszWMInitialKey
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**Cadeia de caracteres do \_ tipo WMT \_**
+**CADEIA DE CARACTERES DE \_ TIPO \_ WMT**
 
 ## <a name="example"></a>Exemplo
 
@@ -37,11 +37,11 @@ g \_ wszWMInitialKey
 
 | Tipo de arquivo | Valor de exemplo |
 |-----------|---------------|
-| Áudio     | "Um secundário"     |
+| Áudio     | "Menor"     |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -50,9 +50,9 @@ g \_ wszWMInitialKey
 [**Lista de Atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

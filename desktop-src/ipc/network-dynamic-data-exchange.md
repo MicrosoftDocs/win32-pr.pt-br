@@ -4,12 +4,12 @@ ms.assetid: e8bbf6b0-1e84-4047-b2ae-d83153bf0b5a
 title: troca dinâmica de dados de rede
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1c9704030126fa53d3057e2f06399e73006c45f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: af1aab259b42c0c1865cc6a4bdd9f35de411b481de4f34d6217daab660ec746e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118756058"
 ---
 # <a name="network-dynamic-data-exchange"></a>troca dinâmica de dados de rede
 

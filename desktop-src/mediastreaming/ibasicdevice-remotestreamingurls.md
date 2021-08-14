@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fdc4bd363096e7b808a51cfbddb764daabe03a55
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 90d98d908cb582c0c2885a9b24a0a525f1e719c82bdffe20e74597ca5fc262a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104364811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972325"
 ---
 # <a name="ibasicdeviceremotestreamingurls-method"></a>Método IBasicDevice:: RemoteStreamingUrls
 
@@ -48,7 +48,7 @@ Recebe uma coleção enumerável de ponteiros para URLs de streaming remota.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
