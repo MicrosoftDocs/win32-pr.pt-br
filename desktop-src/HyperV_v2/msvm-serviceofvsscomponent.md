@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5787dcdd4d8ce1aeefdc1fbafb2c156aec4d467a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a96c59a2e483080293ece2281ddb64fc9a7b43b425e5b508fe7ec209d1144dc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105770213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950535"
 ---
 # <a name="msvm_serviceofvsscomponent-class"></a>\_Classe Msvm ServiceOfVssComponent
 
@@ -89,7 +89,7 @@ Um [**\_ VssService Msvm**](msvm-vssservice.md) que representa o serviço VSS IC
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                             |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |

@@ -4,12 +4,12 @@ description: Os mapas de sombra em cascata (CSMs) são a melhor maneira de comba
 ms.assetid: d3570d0a-74e0-5b9c-6586-c933f630c4ee
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae70433f97f33c3cc28af8e282b14ea1f513cf4d
-ms.sourcegitcommit: 54db9e6a00a5c8f68e7c1a16b8c6d4943374498c
+ms.openlocfilehash: 29498dc882133215c910f3bd6caa5966aa0e141aaf4f7a68051834d33f2a3b16
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "106165529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118649570"
 ---
 # <a name="cascaded-shadow-maps"></a>Mapas de sombra em cascata
 
@@ -21,11 +21,11 @@ Os mapas de sombra em cascata (CSMs) são a melhor maneira de combater um dos er
 -   Identifica e aborda algumas das armadilhas comuns associadas à adição de filtragem ao CSMs; e
 -   mostra como mapear CSMs para Direct3D 10 por meio de hardware do Direct3D 11.
 
-O código usado neste artigo pode ser encontrado no SDK (Software Development Kit) do DirectX nos exemplos CascadedShadowMaps11 e VarianceShadows11. Este artigo se mostrará mais útil depois de implementar as técnicas abordadas no artigo técnico, [técnicas comuns para melhorar os mapas de profundidade de sombra](/windows/desktop/DxTechArts/common-techniques-to-improve-shadow-depth-maps), são implementadas.
+O código usado neste artigo pode ser encontrado no SDK (Software Development Kit) do DirectX nos exemplos CascadedShadowMaps11 e VarianceShadows11. este artigo se mostrará mais útil depois de implementar as técnicas abordadas no artigo técnico, [técnicas comuns para melhorar a profundidade de sombra Mapas](/windows/desktop/DxTechArts/common-techniques-to-improve-shadow-depth-maps), são implementadas.
 
 ## <a name="cascaded-shadow-maps-and-perspective-aliasing"></a>Mapas de sombra em cascata e alias de perspectiva
 
-O alias de perspectiva em um mapa de sombra é um dos problemas mais difíceis de superar. No artigo técnico, técnicas comuns para melhorar os mapas de profundidade de sombra, o alias de perspectiva é descrito e algumas abordagens para mitigar o problema são identificadas. Na prática, o CSMs tende a ser a melhor solução e é normalmente empregado em jogos modernos.
+O alias de perspectiva em um mapa de sombra é um dos problemas mais difíceis de superar. no artigo técnico, técnicas comuns para melhorar a profundidade de sombra Mapas, o alias de perspectiva é descrito e algumas abordagens para mitigar o problema são identificadas. Na prática, o CSMs tende a ser a melhor solução e é normalmente empregado em jogos modernos.
 
 O conceito básico de CSMs é fácil de entender. Áreas diferentes da câmera frustum exigem mapas de sombra com resoluções diferentes. Os objetos mais próximos do olho exigem uma resolução maior do que fazer com mais objetos distantes. Na verdade, quando o olho se move muito próximo da geometria, os pixels mais próximos do olho podem exigir muita resolução que até mesmo um mapa de sombra de 4096 × 4096 é insuficiente.
 
@@ -107,7 +107,7 @@ Todos os Frusta podem ser criados com o mesmo plano próximo. Isso força a sobr
 
 Como alternativa, Frusta pode ser criado com o intervalo de partição real que está sendo usado como planos próximos e distantes. Isso causa um ajuste mais rígido, mas é degenerado para se ajustar à cena no caso de Dueling Frusta. Os exemplos de CascadedShadowMaps11 chamam essa técnica se ajustam à cascata.
 
-Esses dois métodos são mostrados na Figura 6. Ajustar à cascata desperdiça menos resolução. O problema de ajustar à cascata é que a projeção ortográfica aumenta e diminui com base na orientação da exibição frustum. A técnica ajustar à cena ajusta a projeção ortográfica pelo tamanho máximo da exibição frustum removendo os artefatos que aparecem quando a câmera de exibição é movida. [Técnicas comuns para melhorar os mapas de profundidade de sombra](/windows/desktop/DxTechArts/common-techniques-to-improve-shadow-depth-maps) abordam os artefatos que aparecem quando a luz se move na seção "movendo a luz em incrementos de tamanho de Texel".
+Esses dois métodos são mostrados na Figura 6. Ajustar à cascata desperdiça menos resolução. O problema de ajustar à cascata é que a projeção ortográfica aumenta e diminui com base na orientação da exibição frustum. A técnica ajustar à cena ajusta a projeção ortográfica pelo tamanho máximo da exibição frustum removendo os artefatos que aparecem quando a câmera de exibição é movida. [técnicas comuns para melhorar a profundidade de sombra Mapas](/windows/desktop/DxTechArts/common-techniques-to-improve-shadow-depth-maps) resolve os artefatos que aparecem quando a luz se move na seção "movendo a luz em incrementos de tamanho de texel".
 
 **Figura 6. Ajustar à cena versus ajustar à cascata**
 
@@ -199,7 +199,7 @@ VSMs (discutido mais adiante neste artigo) e técnicas de filtragem, como PCF, p
 
 Mantida Uma fenda visível pode ser vista onde as cascatas se sobrepõem. Adequada Quando as cascatas são mescladas entre, nenhuma fenda ocorre.
 
-## <a name="filtering-shadow-maps"></a>Filtrando mapas de sombra
+## <a name="filtering-shadow-maps"></a>Filtrando Mapas de sombra
 
 ### <a name="pcf"></a>PCF
 
@@ -235,23 +235,23 @@ A Figura 12 realça o problema. A profundidade no espaço leve é conhecida por 
 
 ![mapa de cena e profundidade](images/scene-and-depth-map.png)
 
-A cena renderizada é mostrada à esquerda e o mapa de profundidade com um bloco Texel de exemplo é mostrado à direita. O Texel de espaço de olho é mapeado para o pixel rotulado como D no centro do bloco. Essa comparação é precisa. A profundidade correta no espaço de olho que se correlaciona com os pixels que o vizinho D é desconhecido. O mapeamento do texels vizinho de volta para o espaço de olho só será possível se considerarmos que o pixel pertence ao mesmo triângulo que D.
+A cena renderizada é mostrada à esquerda e o mapa de profundidade com um bloco de exemplo de texel é mostrado à direita. O espaço ocular mapeia para o pixel rotulado como D no centro do bloco. Essa comparação é precisa. A profundidade correta no espaço ocular correlacionada aos pixels que o vizinho D é desconhecido. Mapear os texels vizinhos de volta para o espaço ocular só será possível se presumirmos que o pixel pertence ao mesmo triângulo que D.
 
-A profundidade é conhecida pelo Texel que se correlaciona com a posição de espaço leve. A profundidade é desconhecida para o texels vizinho no mapa de profundidade.
+A profundidade é conhecida pelo texel que se correlaciona com a posição de espaço claro. A profundidade é desconhecida para os texels vizinhos no mapa de profundidade.
 
-Em um alto nível, essa técnica usa as operações HLSL **campo DDX** e **ddy** para encontrar a derivação da posição de espaço leve. Isso não é trivial porque as operações derivadas retornam o gradiente da profundidade de espaço leve em relação ao espaço da tela. Para converter isso em um gradiente da profundidade de espaço leve em relação ao espaço leve, uma matriz de conversão deve ser calculada.
+Em um alto nível, essa técnica usa as operações **ddx** e **ddy HLSL** para encontrar o derivado da posição de espaço claro. Isso não étrivial porque as operações derivadas retornam o gradiente da profundidade do espaço claro em relação ao espaço na tela. Para convertê-lo em um gradiente da profundidade do espaço claro em relação ao espaço claro, uma matriz de conversão deve ser calculada.
 
 ### <a name="explanation-with-shader-code"></a>Explicação com código de sombreador
 
-Os detalhes do restante do algoritmo são fornecidos como uma explicação do código do sombreador que executa essa operação. Esse código pode ser encontrado no exemplo CascadedShadowMaps11. A Figura 13 mostra como as coordenadas de textura de espaço leve são mapeadas para o mapa de profundidade e como as derivações em X e Y podem ser usadas para criar uma matriz de transformação.
+Os detalhes do restante do algoritmo são dados como uma explicação do código do sombreador que executa essa operação. Esse código pode ser encontrado no exemplo CascadedShadowMaps11. A Figura 13 mostra como as coordenadas de textura de espaço claro são mapeada para o mapa de profundidade e como os derivados em X e Y podem ser usados para criar uma matriz de transformação.
 
-**Figura 13. Espaço de tela para matriz de espaço leve**
+**Figura 13. Matriz de espaço na tela para espaço claro**
 
-![espaço de tela para matriz de espaço leve](images/screen-space-to-light-space-matrix.png)
+![screen-space para matriz de espaço claro](images/screen-space-to-light-space-matrix.png)
 
-Os derivativos da posição de espaço leve em X e Y são usados para criar essa matriz.
+Os derivados da posição de espaço claro em X e Y são usados para criar essa matriz.
 
-A primeira etapa é calcular o derivativo da posição de exibição clara.
+A primeira etapa é calcular o derivado da posição light-view-space.
 
 
 ```C++
@@ -261,7 +261,7 @@ A primeira etapa é calcular o derivativo da posição de exibição clara.
 
 
 
-As GPUs de classe do Direct3D 11 calculam esses derivativos executando 2 × 2 quatro pixels em paralelo e subtraindo as coordenadas de textura do vizinho em X para **campo DDX** e do vizinho em Y para **ddy**. Esses dois derivativos compõem as linhas de uma matriz 2 × 2. Em sua forma atual, essa matriz poderia ser usada para converter pixels vizinhos de espaço na tela em interrupções de espaço leve. No entanto, o inverso dessa matriz é necessário. Uma matriz que transforma os pixels vizinhos de espaço leve em inclinação de espaço na tela é necessária.
+GpUs de classe Direct3D 11 calculam esses derivados executando 2 × 2 quádruplo de pixels em paralelo e subtraindo as coordenadas de textura do vizinho em X para **ddx** e do vizinho em Y para **ddy**. Esses dois derivados comem as linhas de uma matriz 2 × 2. Em sua forma atual, essa matriz pode ser usada para converter pixels vizinhos de espaço na tela em inclinações de espaço claro. No entanto, o inverso dessa matriz é necessário. Uma matriz que transforma pixels vizinhos de espaço claro em inclinações de espaço na tela é necessária.
 
 
 ```C++
@@ -277,11 +277,11 @@ As GPUs de classe do Direct3D 11 calculam esses derivativos executando 2 × 2 qu
 
 
 
-**Figura 14. Espaço leve para a tela-espaço**
+**Figura 14. Espaço claro para o espaço na tela**
 
-![espaço leve para a tela-espaço](images/light-space-to-screen-space.png)
+![espaço claro para o espaço na tela](images/light-space-to-screen-space.png)
 
-Essa matriz é usada para transformar as duas texels acima e à direita da Texel atual. Esses vizinhos são representados como um deslocamento do Texel atual.
+Essa matriz é usada para transformar os dois texels acima e à direita do texel atual. Esses vizinhos são representados como um deslocamento do texel atual.
 
 
 ```C++
@@ -295,7 +295,7 @@ Essa matriz é usada para transformar as duas texels acima e à direita da Texel
 
 
 
-A proporção que a matriz cria é, por fim, multiplicada pelas derivações de profundidade para calcular os deslocamentos de profundidade para os pixels vizinhos.
+A taxa que a matriz cria é, finalmente, multiplicada pelos derivados de profundidade para calcular os deslocamentos de profundidade para os pixels vizinhos.
 
 
 ```C++
@@ -339,29 +339,29 @@ Esses pesos agora podem ser usados em um loop PCF para adicionar um deslocamento
 
 ## <a name="pcf-and-csms"></a>PCF e CSMs
 
-O PCF não funciona em matrizes de textura no Direct3D 10. Para usar o PCF, todas as cascata são armazenadas em um Atlas de textura grande.
+O PCF não funciona em matrizes de textura no Direct3D 10. Para usar o PCF, todas as cascatas são armazenadas em um atlas de textura grande.
 
-### <a name="derivative-based-offset"></a>Deslocamento de Derivative-Based
+### <a name="derivative-based-offset"></a>Derivative-Based deslocamento
 
-A adição dos deslocamentos baseados em derivações para CSMs apresenta alguns desafios. Isso ocorre devido a um cálculo derivado dentro do controle de fluxo divergente. O problema ocorre devido a uma maneira fundamental de operar as GPUs. As GPUs Direct3D11 operam em 2 × 2 quatro processadores de pixels. Para executar um derivativo, as GPUs geralmente subtraim a cópia do pixel atual de uma variável da cópia do pixel vizinho da mesma variável. Como isso acontece varia de GPU para GPU. As coordenadas de textura são determinadas por seleção baseada em mapa ou em cascata baseada em intervalo. Alguns pixels em um pixel Quad escolhem uma cascata diferente do restante dos pixels. Isso resulta em emendas visíveis entre mapas de sombra porque os deslocamentos com base em derivação agora estão completamente errados. A solução é executar o derivativo em coordenadas de textura de espaço de exibição clara. Essas coordenadas são as mesmas para cada cascata.
+Adicionar os deslocamentos baseados em derivativos para CSMs apresenta alguns desafios. Isso ocorre devido a um cálculo derivado no controle de fluxo divergente. O problema ocorre devido a uma maneira fundamental como as GPUs operam. As GPUs direct3D11 operam em 2 × 2 quádrupis de pixels. Para executar um derivado, as GPUs geralmente subtraem a cópia do pixel atual de uma variável da cópia do pixel vizinho dessa mesma variável. A maneira como isso acontece varia de GPU para GPU. As coordenadas de textura são determinadas pela seleção de cascata baseada em mapa ou com base em intervalo. Alguns pixels em um quad de pixels escolhem uma cascata diferente do restante dos pixels. Isso resulta em intervalos visíveis entre mapas de sombra porque os deslocamentos baseados em derivativos agora estão completamente errados. A solução é executar o derivado em coordenadas de textura do espaço de exibição de luz. Essas coordenadas são as mesmas para cada cascata.
 
-### <a name="padding-for-pcf-kernels"></a>Preenchimento de kernels PCF
+### <a name="padding-for-pcf-kernels"></a>Preenchimento para kernels PCF
 
-Índice de kernels PCF fora de uma partição em cascata se o buffer de sombra não for preenchido. A solução é preencher a borda externa da cascata por uma metade do tamanho do kernel PCF. Isso deve ser implementado no sombreador que seleciona a cascata e na matriz de projeção que deve renderizar a cascata grande o suficiente para que a borda seja preservada.
+Índice de kernels PCF fora de uma partição em cascata se o buffer de sombra não for preenchimento. A solução é padilhar a borda externa da cascata pela metade do tamanho do kernel PCF. Isso deve ser implementado no sombreador que seleciona a cascata e na matriz de projeção que deve renderizar a cascata grande o suficiente para que a borda seja preservada.
 
-## <a name="variance-shadow-maps"></a>Mapas de sombra de variação
+## <a name="variance-shadow-maps"></a>Sombra de variação Mapas
 
-VSMs (consulte [variação de mapas de sombra](https://portal.acm.org/citation.cfm?doid=1111411.1111440) por Donnelly e Lauritzen para obter mais informações) habilitar Filtragem de mapa de sombra direta. Ao usar o VSMs, toda a potência do hardware de filtragem de textura pode ser usada. Triline e anisotropic (Figura 15) a filtragem pode ser usada. Além disso, VSMs pode ser borrado diretamente por meio de convolução. VSMs têm algumas desvantagens; dois canais de dados de profundidade devem ser armazenados (profundidade e profundidade ao quadrado). Quando as sombras se sobrepõem, o sangramento claro é comum. No entanto, eles funcionam bem com resoluções mais baixas e podem ser combinados com CSMs.
+VSMs (consulte [Mapas de sombra de variância](https://portal.acm.org/citation.cfm?doid=1111411.1111440) por Meio de Mapeamento de sombra deIa e Devritzen para obter mais informações) habilitam a filtragem direta do mapa de sombra. Ao usar VSMs, todo o poder do hardware de filtragem de textura pode ser usado. A filtragem trilinear e aniso (Figura 15) pode ser usada. Além disso, os VSMs podem ser desfocados diretamente por meio da convolução. Os VSMs têm algumas desvantagens; dois canais de dados de profundidade devem ser armazenados (profundidade e profundidade ao quadrado). Quando as sombras se sobrepõem, a luz é comum. No entanto, eles funcionam bem com resoluções mais baixas e podem ser combinados com CSMs.
 
-**Figura 15. Filtragem de anisotropic**
+**Figura 15. Filtragem anisocar**
 
-![filtragem de anisotropic](images/anisotropic-filtering.png)
+![filtragem anisocar](images/anisotropic-filtering.png)
 
 ### <a name="algorithm-details"></a>Detalhes do algoritmo
 
-O VSMs funciona renderizando a profundidade e a profundidade quadrada em um mapa de sombra de dois canais. Esse mapa de sombra de dois canais pode ser desfocado e filtrado da mesma forma que uma textura normal. Em seguida, o algoritmo usa a desigualdade do Chebychev no sombreador de pixel para estimar a fração da área de pixel que passaria no teste de profundidade.
+Os VSMs funcionam renderizar a profundidade e a profundidade ao quadrado em um mapa de sombra de dois canais. Esse mapa de sombra de dois canais pode ser desfocado e filtrado como uma textura normal. Em seguida, o algoritmo usa a Desigualdade de Cheby ltda no sombreador de pixel para estimar a fração da área de pixel que passará no teste de profundidade.
 
-O sombreador de pixel busca os valores de profundidade e de profundidade quadrada.
+O sombreador de pixel busca os valores quadrados de profundidade e profundidade.
 
 
 ```C++
@@ -383,7 +383,7 @@ A comparação de profundidade é executada.
 
 
 
-Se a comparação de profundidade falhar, a porcentagem do pixel que está acesa será estimada. A variação é calculada como média de quadrados menos o quadrado-de-média.
+Se a comparação de profundidade falhar, o percentual do pixel que está acessado será estimado. A variação é calculada como média de quadrados menos o quadrado da média.
 
 
 ```C++
@@ -393,7 +393,7 @@ Se a comparação de profundidade falhar, a porcentagem do pixel que está acesa
 
 
 
-O valor fPercentLit é estimado com a desigualdade de Chebychev.
+O valor fPercentLit é estimado com a desigualdade de Cheby ltda.
 
 
 ```C++
@@ -404,15 +404,15 @@ O valor fPercentLit é estimado com a desigualdade de Chebychev.
 
 
 
-## <a name="light-bleeding"></a>Sangramento claro
+## <a name="light-bleeding"></a>Luz de luz
 
-A maior desvantagem do VSMs é o sangramento claro (Figura 16). A perda de luz ocorre quando vários contornos de sombra se occludem entre bordas. VSMs sombrear as bordas de sombras com base em diparidades de profundidade. Quando as sombras se sobrepõem, há uma diparidade de profundidade no centro de uma região que deve ser sombreada. Isso é um problema com o uso do algoritmo VSM.
+A maior desvantagem para VSMs é a lâmpada clara (Figura 16). A iluminação clara ocorre quando vários castadores de sombra ocluem uns aos outros ao longo das bordas. Os VSMs sombream as bordas das sombras com base em disparidades de profundidade. Quando as sombras se sobrepõem, existe uma disparidade de profundidade no centro de uma região que deve ser sombreada. Esse é um problema com o uso do algoritmo VSM.
 
-**Figura 16. Sangramento de VSM**
+**Figura 16. Light light do VSM**
 
-![sangramento de VSM](images/vsm-light-bleeding.png)
+![vsm light](images/vsm-light-bleeding.png)
 
-Uma solução parcial para o problema é elevar o fPercentLit a uma potência. Isso tem o efeito de retardar o desfoque, o que pode causar artefatos em que a diparidade de profundidade é pequena. Às vezes, existe um valor mágico que alivia o problema.
+Uma solução parcial para o problema é aumentar o fPercentLit para uma potência. Isso tem o efeito de atenuar o desfoque, o que pode causar artefatos em que a disparidade de profundidade é pequena. Às vezes, existe um valor mágico que alivia o problema.
 
 
 ```C++
@@ -421,23 +421,23 @@ fPercentLit = pow( p_max, MAGIC_NUMBER );
 
 
 
-Uma alternativa para elevar o percentual de aceso a uma potência é evitar configurações em que as sombras se sobrepõem. Até mesmo as configurações de sombra altamente ajustadas têm várias restrições em luz, câmera e geometria. O sangramento claro também é reduzido com o uso de texturas de resolução mais alta.
+Uma alternativa para aumentar o percentual de luz para uma potência é evitar configurações em que as sombras se sobrepõem. Até mesmo configurações de sombra altamente ajustadas têm várias restrições em luz, câmera e geometria. A luz também é menor usando texturas de resolução mais alta.
 
-Os mapas de sombra de variação em camadas (LVSMs) resolvem o problema às custas de dividir o frustum em camadas perpendiculares à luz. O número de mapas necessários seria muito grande quando CSMs também estão sendo usados.
+Os LVSMs (mapas de sombra de variância em camadas) resolvem o problema às custas da quebra do frustum em camadas que são claras. O número de mapas necessários seria muito grande quando os CSMs também estão sendo usados.
 
-Além disso, Andrew Lauritzen, coautor do artigo sobre VSMs e autor de um papel em LVSMs, abordou a combinação de mapas de sombra exponencial (ESMs) com VSMs para neutralizar a mistura de luz em um [Fórum de Beyond3D](https://forum.beyond3d.com/showthread.php?t=47427).
+Além disso, Andrew Vairitzen, coautor do artigo sobre VSMs e autor de um artigo sobre LVSMs, discute a combinação de ESMs (mapas de sombra exponenciais) com VSMs para combater a mistura de luz em um Fórum [Beyond3D.](https://forum.beyond3d.com/showthread.php?t=47427)
 
 ## <a name="vsms-with-csms"></a>VSMs com CSMs
 
-O exemplo VarianceShadow11 combina VSMs e CSMs. A combinação é razoavelmente simples. O exemplo segue as mesmas etapas do exemplo CascadedShadowMaps11. Como o PCF não é usado, as sombras são desfocadas em uma convolução separáveis de duas passagens. Não usar o PCF também permite que o exemplo use matrizes de textura em vez de um Atlas de textura. O PCF em matrizes de textura é um recurso do Direct3D 10,1.
+O exemplo VarianceShadow11 combina VSMs e CSMs. A combinação é bastante simples. O exemplo segue as mesmas etapas da amostra CascadedShadowMaps11. Como o PCF não é usado, as sombras são desfocados em uma convolução comparável de duas passões. Não usar PCF também permite que o exemplo use matrizes de textura em vez de um atlas de textura. PCF em matrizes de textura é um recurso direct3D 10.1.
 
 ### <a name="gradients-with-csms"></a>Gradientes com CSMs
 
-O uso de gradientes com CSMs pode produzir uma fenda ao longo da borda entre duas cascatas, como mostrado na figura 17. A instrução de exemplo usa derivações entre pixels para calcular informações, como o nível de mipmap, necessário para o filtro. Isso causa um problema em particular para a seleção de mipmap ou a filtragem de anisotropic. Quando os pixels em um quad usam ramificações diferentes no sombreador, os derivativos calculados pelo hardware da GPU são inválidos. Isso resulta em uma fenda denteada ao longo do mapa de sombra.
+O uso de gradientes com CSMs pode produzir uma semente ao longo da borda entre duas cascatas, conforme visto na Figura 17. A instrução de exemplo usa derivados entre pixels para calcular informações, como o nível de mipmap, necessário para o filtro. Isso causa um problema em particular para a seleção de mipmap ou filtragem anisuística. Quando os pixels em um quad têm ramificações diferentes no sombreador, os derivados calculados pelo hardware da GPU são inválidos. Isso resulta em uma semente irregular ao longo do mapa de sombra.
 
-**Figura 17. Fendas em bordas em cascata devido à filtragem de anisotropic com controle de fluxo divergente**
+**Figura 17. Asams em bordas em cascata devido à filtragem anisotária com controle de fluxo divergente**
 
-![fendas em bordas em cascata devido à filtragem de anisotropic com controle de fluxo divergente](images/seams-on-cascade-borders-due-to-anisotropic.jpg)
+![seams em bordas em cascata devido à filtragem anisotária com controle de fluxo divergente](images/seams-on-cascade-borders-due-to-anisotropic.jpg)
 
 Esse problema é resolvido com a computação dos derivativos na posição no espaço de exibição clara; a coordenada de espaço de exibição clara não é específica para a cascata selecionada. As derivações computadas podem ser dimensionadas pela parte de escala da matriz de textura de projeção para o nível de mipmap correto.
 

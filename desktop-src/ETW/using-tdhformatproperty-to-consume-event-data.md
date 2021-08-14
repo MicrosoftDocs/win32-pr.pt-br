@@ -4,16 +4,16 @@ ms.assetid: 5ebd500c-420e-4979-a03a-49b687464b0e
 title: Usando TdhFormatProperty para consumir dados de evento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea9b26e13cbd6476942bfb77e6a163ddd54e540e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 446da0757b0f55ae88d54f65762041f1e78bf896f5841e3bdac3f7309e53b5f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951225"
 ---
 # <a name="using-tdhformatproperty-to-consume-event-data"></a>Usando TdhFormatProperty para consumir dados de evento
 
-O exemplo a seguir mostra como consumir dados de evento usando a função [**TdhFormatProperty**](/windows/desktop/api/Tdh/nf-tdh-tdhformatproperty) .
+O exemplo a seguir mostra como consumir dados de evento usando a [**função TdhFormatProperty.**](/windows/desktop/api/Tdh/nf-tdh-tdhformatproperty)
 
 
 ```C++

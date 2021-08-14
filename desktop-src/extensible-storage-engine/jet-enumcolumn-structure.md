@@ -15,17 +15,17 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ca204fef4e67e6883584511b1ac424149a137b79
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6ac89a45e37631b554fc7b2dc28266c95cfae3fba54debb427abfd8db621ea3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118766084"
 ---
 # <a name="jet_enumcolumn-structure"></a>Estrutura JET_ENUMCOLUMN
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_enumcolumn-structure"></a>Estrutura JET_ENUMCOLUMN
 
@@ -144,11 +144,11 @@ Isso será retornado se "Err = = JET_wrnColumnSingleValue".
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>

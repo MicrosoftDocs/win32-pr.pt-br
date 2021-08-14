@@ -4,31 +4,31 @@
     - name: Sobre o WinHTTP
       href: about-winhttp.md
       items:
-        - name: WinHTTP vs. WinINet
+        - name: WinHTTP versus WinINet
           href: winhttp-vs-wininet.md
         - name: Versões do WinHTTP
           href: winhttp-versions.md
-        - name: Novidades no WinHTTP 5.1
+        - name: 'O que há de novo no WinHTTP 5,1'
           href: what-s-new-in-winhttp-5-1.md
-        - name: Novidades no Windows Server 2008 e Windows Vista
+        - name: o que há de novo no Windows Server 2008 e Windows Vista
           href: what-s-new-in-windows-longhorn.md
         - name: Terminologia de rede
           href: network-terminology.md
         - name: Escolhendo uma interface WinHTTP
           href: choosing-a-winhttp-interface.md
-        - name: Considerações sobre segurança do WinHTTP
+        - name: Considerações de segurança de WinHTTP
           href: winhttp-security-considerations.md
         - name: Portando aplicativos WinINet para WinHTTP
           href: porting-wininet-applications-to-winhttp.md
-    - name: Usando WinHTTP
+    - name: Usando o WinHTTP
       href: using-winhttp.md
       items:
-        - name: Usando a API C/C++ do WinHTTP
+        - name: Usando a API do WinHTTP C/C++
           href: using-the-winhttp-c-c---api.md
           items:
             - name: Visão geral das sessões do WinHTTP
               href: winhttp-sessions-overview.md
-            - name: Alças HINTERNET no WinHTTP
+            - name: HINTERNET identificadores no WinHTTP
               href: hinternet-handles-in-winhttp.md
             - name: URLs (Uniform Resource Locators) no WinHTTP
               href: uniform-resource-locators--urls--in-winhttp.md
@@ -38,29 +38,29 @@
               href: passport-authentication-in-winhttp.md
             - name: SSL no WinHTTP
               href: ssl-in-winhttp.md
-            - name: Usando WinHTTP como um assembly lado a lado
+            - name: Usando o WinHTTP como um assembly lado a lado
               href: using-winhttp-as-a-side-by-side-assembly.md
-            - name: Manipulação de cookie no WinHttp
+            - name: Tratamento de cookies no WinHttp
               href: cookie-handling-in-winhttp.md
             - name: Tratamento de erro no WinHTTP
               href: error-handling-in-winhttp.md
             - name: Suporte ao WinHTTP AutoProxy
               href: winhttp-autoproxy-support.md
               items:
-                - name: Funções WinHTTP AutoProxy
+                - name: Funções de AutoProxy do WinHTTP
                   href: winhttp-autoproxy-api.md
                 - name: Descoberta sem um arquivo de configuração automática
                   href: discovery-without-an-auto-config-file.md
                 - name: Problemas de AutoProxy no WinHTTP
                   href: autoproxy-issues-in-winhttp.md
-                - name: Definindo configurações de proxy do WinInet no WinHTTP
+                - name: Definindo as configurações de proxy do WinInet no WinHTTP
                   href: setting-wininet-proxy-configurations-in-winhttp.md
-                - name: AutoProxy Cache
+                - name: Cache de AutoProxy
                   href: autoproxy-cache.md
-                - name: Extensões IPv6 para o formato de arquivo de configuração automática do navegador
+                - name: Formato de arquivo de configuração automática de extensões IPv6 para navegador
                   href: ipv6-extensions-to-navigator-auto-config-file-format.md
                   items:
-                    - name: definições IPv6-Aware API do Auxiliar de Proxy do IPv6-Aware
+                    - name: Definições de API do auxiliar de proxy IPv6-Aware
                       href: ipv6-aware-proxy-helper-api-definitions.md
                       items:
                         - name: isResolvableEx
@@ -75,7 +75,7 @@
                           href: sortipaddresslist.md
                         - name: getClientVersion
                           href: getclientversion.md
-                    - name: IPv6-Aware funções auxiliares do WPAD herdado
+                    - name: Funções auxiliares de WPAD IPv6-Aware e Legacy
                       href: differences-between-ipv6-aware-wpad-helper-functions-and-legacy-wpad-helper-functions.md
         - name: Usando o objeto COM WinHttpRequest
           href: using-the-winhttprequest-com-object.md
@@ -84,12 +84,12 @@
               href: retrieving-data-using-script.md
             - name: Autenticação usando script
               href: authentication-using-script.md
-        - name: Usando ferramentas WinHTTP
+        - name: Usando as ferramentas do WinHTTP
           href: using-winhttp-tools.md
           items:
             - name: 'WinHttpCertCfg.exe, uma ferramenta de configuração de certificado'
               href: winhttpcertcfg-exe--a-certificate-configuration-tool.md
-            - name: Netsh.exe e ProxyCfg.exe proxy Ferramentas de Configuração
+            - name: Ferramentas de Configuração de proxy de Netsh.exe e ProxyCfg.exe
               href: proxycfg-exe--a-proxy-configuration-tool.md
             - name: 'WinHttpTraceCfg.exe, uma ferramenta de configuração de rastreamento'
               href: winhttptracecfg-exe--a-trace-configuration-tool.md
@@ -99,7 +99,7 @@
         - name: Referência da API do WinHTTP C/C++
           href: winhttp-c-c---api-reference.md
           items:
-            - name: WinHTTP Interfaces
+            - name: Interfaces WinHTTP
               href: winhttp-interfaces.md
               items:
                 - name: IWinHttpRequest
@@ -114,7 +114,7 @@
                           href: iwinhttprequest-getallresponseheaders.md
                         - name: Método GetResponseHeader
                           href: iwinhttprequest-getresponseheader.md
-                        - name: Método Open
+                        - name: Abrir método
                           href: iwinhttprequest-open.md
                         - name: Método Send
                           href: iwinhttprequest-send.md
@@ -128,14 +128,14 @@
                           href: iwinhttprequest-setproxy.md
                         - name: Método SetRequestHeader
                           href: iwinhttprequest-setrequestheader.md
-                        - name: Método SetTimeouts
+                        - name: Método settempo_limites
                           href: iwinhttprequest-settimeouts.md
                         - name: Método WaitForResponse
                           href: iwinhttprequest-waitforresponse.md
                     - name: Propriedades
                       href: properties.md
                       items:
-                        - name: Propriedade Option
+                        - name: Propriedade de opção
                           href: iwinhttprequest-option.md
                         - name: Propriedade ResponseBody
                           href: iwinhttprequest-responsebody.md
@@ -143,7 +143,7 @@
                           href: iwinhttprequest-responsestream.md
                         - name: Propriedade ResponseText
                           href: iwinhttprequest-responsetext.md
-                        - name: Propriedade Status
+                        - name: Propriedade de status
                           href: iwinhttprequest-status.md
                         - name: Propriedade StatusText
                           href: iwinhttprequest-statustext.md
@@ -158,7 +158,7 @@
                       href: iwinhttprequestevents-onresponsefinished.md
                     - name: Evento OnResponseStart
                       href: iwinhttprequestevents-onresponsestart.md
-            - name: Funções WinHTTP
+            - name: Funções de WinHTTP
               href: winhttp-functions.md
               items:
                 - name: WinHttpAddRequestHeaders

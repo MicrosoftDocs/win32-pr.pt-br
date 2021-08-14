@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c436151eeef2a08a2b1d0208b046e23dc8d1559b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f01ec292c29de72cb2df92eb7c4246392e3b12b4dc2008caf2a09ab1be5a8b1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104370012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118683921"
 ---
 # <a name="ms-ds-non-security-group-extra-classes-attribute"></a>atributo ms-DS-non-Security-Group-extra-classes
 
@@ -36,7 +36,7 @@ Os nomes comuns das classes não padrão que podem ser adicionadas a um grupo de
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1689                     |
 | System-ID-GUID    | 2de144fc-1f52-486f-bdf4-16fcc3084e54        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
@@ -65,7 +65,7 @@ Os nomes comuns das classes não padrão que podem ser adicionadas a um grupo de
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**DS-UI-Settings**](c-dsuisettings.md)<br/> |
+| Classes usadas em        | [**DS-interface do usuário-Configurações**](c-dsuisettings.md)<br/> |
 
 
 
@@ -86,7 +86,7 @@ Os nomes comuns das classes não padrão que podem ser adicionadas a um grupo de
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**DS-UI-Settings**](c-dsuisettings.md)<br/> |
+| Classes usadas em        | [**DS-interface do usuário-Configurações**](c-dsuisettings.md)<br/> |
 
 
 
@@ -107,7 +107,7 @@ Os nomes comuns das classes não padrão que podem ser adicionadas a um grupo de
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**DS-UI-Settings**](c-dsuisettings.md)<br/> |
+| Classes usadas em        | [**DS-interface do usuário-Configurações**](c-dsuisettings.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Os nomes comuns das classes não padrão que podem ser adicionadas a um grupo de
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | Falso                                               |
+| Tem valor único       | Falso                                               |
 | É indexado             | Falso                                               |
-| No catálogo global      | Falso                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
+| No Catálogo Global      | Falso                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**DS-UI-Settings**](c-dsuisettings.md)<br/> |
+| Classes usadas em        | [**DS-UI-Configurações**](c-dsuisettings.md)<br/> |
 
 
 
@@ -141,21 +141,21 @@ Os nomes comuns das classes não padrão que podem ser adicionadas a um grupo de
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | Falso                                               |
+| Tem valor único       | Falso                                               |
 | É indexado             | Falso                                               |
-| No catálogo global      | Falso                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
+| No Catálogo Global      | Falso                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**DS-UI-Settings**](c-dsuisettings.md)<br/> |
+| Classes usadas em        | [**DS-UI-Configurações**](c-dsuisettings.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-A lista a seguir identifica as classes padrão que podem ser adicionadas a um grupo por meio do snap-in Active Directory usuários e computadores.
+A lista a seguir identifica as classes padrão que podem ser adicionadas a um grupo por meio Usuários e Computadores do Active Directory snap-in.
 
 -   [**Grupo**](c-group.md)
 -   [**Usuário**](c-user.md)
@@ -167,7 +167,7 @@ A lista a seguir identifica as classes padrão que podem ser adicionadas a um gr
 
 <dl> <dt>
 
-[**ms-DS-Security-Group-extra-classes**](a-msds-security-group-extra-classes.md)
+[**ms-DS-Security-Group-Extra-Classes**](a-msds-security-group-extra-classes.md)
 </dt> </dl>
 
  

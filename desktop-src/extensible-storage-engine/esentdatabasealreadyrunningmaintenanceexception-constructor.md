@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8466c2df8ec18eb51e8292e8573d92331c2d73b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13c27f0f88c2e5e43cd651e29fdeb1faeb7ebeb1a8acd1f06d74e69cf1034119
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105788691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118781799"
 ---
 # <a name="esentdatabasealreadyrunningmaintenanceexception-constructor"></a>Construtor EsentDatabaseAlreadyRunningMaintenanceException
 
 Inicializa uma nova instância da classe EsentDatabaseAlreadyRunningMaintenanceException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentDatabaseAlreadyRunningMaintenanceException()
 
 [Classe EsentDatabaseAlreadyRunningMaintenanceException](./esentdatabasealreadyrunningmaintenanceexception-class.md)
 
-[Membros do EsentDatabaseAlreadyRunningMaintenanceException](./esentdatabasealreadyrunningmaintenanceexception-members.md)
+[Membros EsentDatabaseAlreadyRunningMaintenanceException](./esentdatabasealreadyrunningmaintenanceexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

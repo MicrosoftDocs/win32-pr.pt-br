@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - WindowsCodecsExt.dll
-ms.openlocfilehash: 451b549aa44e785e406f50ccf4eb7a8317edf6b6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 89c7476bc32546f0a9fe77a8731f239702c6a2a874dbfb830b9d4bbafbd872b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118709213"
 ---
 # <a name="wiccreatecolortransform_proxy-function"></a>\_Função de proxy WICCreateColorTransform
 
@@ -46,7 +46,7 @@ A transformação de cor criada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 

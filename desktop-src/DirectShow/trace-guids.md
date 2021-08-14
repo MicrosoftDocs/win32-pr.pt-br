@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 api_location:
 - PerfStruct.h
-ms.openlocfilehash: 4b2f2a6a678c029d01d9bf55481837d81d48557e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 89465996c57e1f1f97f2c101c8dfee99a00219f992a4e68681f76465d21bef10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951545"
 ---
 # <a name="trace-guids"></a>GUIDs de rastreamento
 
@@ -32,7 +32,7 @@ Os GUIDs a seguir são usados para rastreamento de eventos no DirectShow.
 | GUID                                                                                                                                                                   | Descrição                                                                                                                                                  |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="GUID_AUDIOBREAK"></span><span id="guid_audiobreak"></span><dl> <dt>**\_AUDIOBREAK GUID**</dt> </dl>    | Evento de quebra de áudio. Eventos desse tipo usam a estrutura [**PERFINFO do \_ DShow \_ AUDIOBREAK**](perfinfo-dshow-audiobreak.md) para dados de evento.<br/>         |
-| <span id="GUID_DSHOW_CTL"></span><span id="guid_dshow_ctl"></span><dl> <dt>**\_CTL de DShow de GUID \_**</dt> </dl>      | Provedor de eventos do DirectShow.<br/>                                                                                                                        |
+| <span id="GUID_DSHOW_CTL"></span><span id="guid_dshow_ctl"></span><dl> <dt>**\_CTL de DShow de GUID \_**</dt> </dl>      | provedor de eventos de DirectShow.<br/>                                                                                                                        |
 | <span id="GUID_STREAMTRACE"></span><span id="guid_streamtrace"></span><dl> <dt>**\_STREAMTRACE GUID**</dt> </dl> | Evento de streaming geral. Eventos desse tipo usam a estrutura [**PERFINFO do \_ DShow \_ STREAMTRACE**](perfinfo-dshow-streamtrace.md) para dados de evento.<br/> |
 | <span id="GUID_VIDEOREND"></span><span id="guid_videorend"></span><dl> <dt>**\_VIDEOREND GUID**</dt> </dl>       | Evento de renderização de vídeo. Eventos desse tipo usam a estrutura [**PERFINFO do \_ DShow \_ AVREND**](perfinfo-dshow-avrend.md) para dados de evento.<br/>             |
 

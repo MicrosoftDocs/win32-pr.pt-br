@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0f403430f70fde71696ec2a35a34161f08bada9
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 239486792eb218d51c305f9955331e90c6c165586153dab167f2e19d3a0324e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103640559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118641031"
 ---
 # <a name="usesgetlasterror-attribute"></a>atributo usesgetlasterror
 
@@ -72,7 +72,7 @@ O tipo dos dados que o procedimento remoto retornará após a conclusão.
 
 </dd> <dt>
 
-*nome da função* 
+*Nome da função* 
 </dt> <dd>
 
 O nome do procedimento remoto conforme definido no arquivo IDL.
@@ -88,7 +88,7 @@ Zero ou mais parâmetros para o procedimento remoto.
 
 ## <a name="remarks"></a>Comentários
 
-O atributo **\[ \] usesgetlasterror** pode ser definido em um ponto de entrada de módulo, se esse ponto de entrada usar a função [**SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) do Windows para retornar códigos de erro. O atributo informa ao chamador que, se houver um erro ao chamar essa função, o chamador poderá chamar [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) para recuperar o código de erro.
+o atributo **\[ \] usesgetlasterror** pode ser definido em um ponto de entrada de módulo, se esse ponto de entrada usar a função Windows [**SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) para retornar códigos de erro. O atributo informa ao chamador que, se houver um erro ao chamar essa função, o chamador poderá chamar [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) para recuperar o código de erro.
 
 ## <a name="examples"></a>Exemplos
 
@@ -123,6 +123,6 @@ module MyModule
 [Sintaxe do arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -4,16 +4,16 @@ description: ISRResGraphEx e IAttributes
 ms.assetid: 6eb37da1-5252-4c41-891c-c19cca6fb7d1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 659d7d4723bfc5145fb8abcc77043031a0e48e8b
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 81f5e08b77b917e4630afcaeb8baed5aac4e13c20a1ed289418681abbbdca20b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118748992"
 ---
 # <a name="isrresgraphex-and-iattributes"></a>ISRResGraphEx e IAttributes
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 Os objetos de resultados retornados pelo mecanismo devem dar suporte à interface ISRResGraphEx e à interface IAttributes. Simplesmente dar suporte à interface ISRResGraphEx é suficiente para habilitar o editor de som a fornecer informações de quebra de palavras, mas não fornece o suporte necessário para informações de fonema.
 
@@ -49,6 +49,6 @@ Por exemplo, suponha que a palavra falada no arco 4 fosse "feita". Em seguida, a
 
 O SDK do SAPI 4,0 inclui uma ferramenta (SRFunc) para testar a conformidade com a especificação SAPI 4,0. Incluídos nessa ferramenta há um teste de conformidade com esse conjunto de interfaces. O código-fonte para essa ferramenta é um bom ponto de partida para entender como essas interfaces irão interagir com o editor de som e depurar as interfaces durante o desenvolvimento.
 
- 
+ 
 
- 
+ 

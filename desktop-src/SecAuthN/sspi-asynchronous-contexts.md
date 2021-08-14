@@ -4,12 +4,12 @@ description: Visão geral dos contextos assíncronos e do cabeçalho SSPI assín
 ms.topic: article
 ms.keywords: SSPI, Asynchronous Contexts, async contexts, Async SSPI, SSPI Async, Asynchronous SSPI, sspi,SspiAcceptSecurityContextAsync, SspiAcquireCredentialsHandleAsync, SspiAsyncContextRequiresNotify, SspiAsyncNotifyCallback, SspiCreateAsyncContext,SspiDeleteSecurityContextAsync, SspiFreeAsyncContext, SspiFreeCredentialsHandleAsync, SspiGetAsyncCallStatus, SspiInitializeSecurityContextAsync, SspiReinitAsyncContext, SspiSetAsyncNotifyCallback
 ms.date: 06/23/2020
-ms.openlocfilehash: e523112d35e0ddbc38c3374c67e3d81ba74a6dce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e83dbab8c20dd9f9cfe13ec579db304aabd491cba92ab0cd6a9c8afcf4e4af8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118917225"
 ---
 # <a name="asynchronous-contexts"></a>Contextos assíncronos
 
@@ -17,14 +17,14 @@ Os contextos de segurança SSPI assíncronos permitem que os chamadores continue
 
 ## <a name="async-context-management-types"></a>Tipos de gerenciamento de contexto assíncrono
 
-| Nome do Objeto | Descrição |
+| Nome do Objeto | Description |
 |-------------|--------------|
 | [SspiAsyncNotifyCallback](/windows/win32/api/sspi/nc-sspi-sspiasyncnotifycallback) | Retorno de chamada usado para notificar a conclusão de uma chamada SSPI assíncrona. |
 
 
 ## <a name="async-context-management-functions"></a>Funções de gerenciamento de contexto assíncrono
 
-| Nome da API | Descrição |
+| Nome da API | Description |
 |-------------|--------------|
 | [SspiCreateAsyncContext](/windows/win32/api/sspi/nf-sspi-sspicreateasynccontext) | Cria uma instância de SspiAsyncContext que é usada para rastrear a chamada assíncrona. |
 | [SspiReinitAsyncContext](/windows/win32/api/sspi/nf-sspi-sspireinitasynccontext) | Marca um contexto assíncrono para reutilização. |
@@ -37,7 +37,7 @@ Os contextos de segurança SSPI assíncronos permitem que os chamadores continue
 
 As funções a seguir aceitam um contexto assíncrono, além de todos os mesmos parâmetros que a contraparte síncrona.
 
-| Nome da API | Descrição |
+| Nome da API | Description |
 |-------------|--------------|
 | [SspiAcquireCredentialsHandleAsync](/windows/win32/api/sspi/nf-sspi-sspiacquirecredentialshandleasynca) | Adquire de forma assíncrona um identificador para credenciais preexistentes de uma entidade de segurança. |
 | [SspiAcceptSecurityContextAsync](/windows/win32/api/sspi/nf-sspi-sspiacceptsecuritycontextasync) | Permite que o componente de servidor de um aplicativo de transporte estabeleça de forma assíncrona um contexto de segurança entre o servidor e um cliente remoto. |

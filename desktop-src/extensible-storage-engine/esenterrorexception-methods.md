@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentErrorException'
+description: 'Saiba mais sobre: Métodos EsentErrorException'
 title: Métodos EsentErrorException
 TOCTitle: EsentErrorException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentErrorException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101647
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: bc3dee221b80feebea9405ca7e6049cd85345aea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 17c15189197fc47aae4309c2926e83fc30f9729cba0ca60ffb0a370c53efe3d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104553816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118779194"
 ---
 # <a name="esenterrorexception-methods"></a>Métodos EsentErrorException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentErrorException](./esenterrorexception-class.md) expõe os membros a seguir.
+O [tipo EsentErrorException](./esenterrorexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentErrorException](./esenterrorexception-class.md) expõe os membros a
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -55,16 +55,16 @@ O tipo [EsentErrorException](./esenterrorexception-class.md) expõe os membros a
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn334369(v=exchg.10).md">GetObjectData</a></td>
-<td>Quando substituído em uma classe derivada, define <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> com informações sobre a exceção. (Substitui <a href="/dotnet/api/system.exception.getobjectdata#System_Exception_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_">Exception. GetObjectData (SerializationInfo, StreamingContext)</a>.)</td>
+<td>Quando substituído em uma classe derivada, define <a href="/dotnet/api/system.runtime.serialization.serializationinfo">SerializationInfo</a> com informações sobre a exceção. (Substitui <a href="/dotnet/api/system.exception.getobjectdata#System_Exception_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_">Exception.GetObjectData(SerializationInfo, StreamingContext)</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentErrorException](./esenterrorexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

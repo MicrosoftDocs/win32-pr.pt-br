@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c6713f3de47cfbde6df67662f89ab3c094d0674
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3af26786c8ef021794876d8876ae5d8faee65b8cbbfc39b434b000ff502c64c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105789633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118939431"
 ---
 # <a name="inapsystemhealthagentcallbackcomparesohrequests-method"></a>Método INapSystemHealthAgentCallback:: CompareSoHRequests
 
@@ -70,13 +70,13 @@ Um ponteiro para um **bool** que é **verdadeiro** se *LHS* e *RHS* são semanti
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
 
 
-| Código de retorno                                                                               | Descrição                                           |
+| Código de retorno                                                                               | Description                                           |
 |-------------------------------------------------------------------------------------------|-------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>      | Indica êxito.<br/>                         |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl> | O método não foi implementado pelo SHA.<br/> |
@@ -101,8 +101,8 @@ Se os SHAs não tiverem colocado carimbos de data/hora ou IDs em seus SoHs, eles
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                      |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                |
 | parâmetro<br/>                   | <dl> <dt>NapSystemHealthAgent. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>NapSystemHealthAgent. idl</dt> </dl> |
 

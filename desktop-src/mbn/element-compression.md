@@ -1,5 +1,5 @@
 ---
-description: MBNProfileExt \/ ... \/ Compactação (v4)
+description: MBNProfileExt... \/ \/ Compactação (v4)
 MS-HAID: WWAN\_profile\_v4.element\_Compression
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -16,18 +16,18 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 64a5387aafdce7042c46f48fcda18454a3d99f3f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7782052ef467725a099929e8940262d1f08329431f68525b8c401f36a276ebcf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118745099"
 ---
-# <a name="span-idwwan_profile_v4element_compressionspanmbnprofileextcompression-v4"></a><span id="WWAN_profile_v4.element_Compression"></span>MBNProfileExt \/ ... \/ Compactação (v4)
+# <a name="span-idwwan_profile_v4element_compressionspanmbnprofileextcompression-v4"></a><span id="WWAN_profile_v4.element_Compression"></span>MBNProfileExt... \/ \/ Compactação (v4)
 
-Especifica se a compactação será usada no link de dados para a transferência de dados e de cabeçalho.
+Especifica se a compactação será usada no link de dados para transferência de dados e de título.
 
-Para obter mais informações, consulte a documentação do elemento de [**compactação**](./schema-compression-contexttype-element.md) v1.
+Para obter mais informações, consulte a documentação do elemento [**Compression**](./schema-compression-contexttype-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Hierarquia de elementos
 
@@ -39,7 +39,7 @@ Para obter mais informações, consulte a documentação do elemento de [**compa
 &nbsp;&nbsp;[\<Context\>](element-1-context.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;**\<Compression\>**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` syntax
 <Compression>

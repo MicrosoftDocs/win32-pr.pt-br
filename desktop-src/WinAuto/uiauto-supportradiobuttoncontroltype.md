@@ -21,12 +21,12 @@ keywords:
 - tipos de controle, RadioButton
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4702a2227a5164ff694378c82fa3b7cde33f9823
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 358a71f74b40d8465c910f8afe258183c8ea4d5c322fb70e6b6ea946ef7d44ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118825472"
 ---
 # <a name="radiobutton-control-type"></a>Tipo de controle RadioButton
 
@@ -37,7 +37,7 @@ Um botão de opção consiste em um botão redondo e um texto definido pelo apli
 > [!Note]  
 > Outra generalização de controle para botões em que apenas um em um grupo pode ser selecionado é o conteúdo de um botão de alternância. Algumas estruturas de interface do usuário consideram um botão de opção como um botão de alternância especializado.
 
- 
+ 
 
 As seções a seguir definem a estrutura de árvore de automação da interface do usuário, propriedades, padrões de controle e eventos necessários para o tipo de controle **RadioButton** . Os requisitos de automação da interface do usuário se aplicam a todos os controles de botão onde a estrutura/plataforma da interface do usuário integra o suporte à automação da interface do usuário para tipos de controle
 
@@ -81,7 +81,7 @@ A tabela a seguir descreve um controle típico e a exibição de conteúdo da á
 
 
 
- 
+ 
 
 Não há filhos na exibição de controle nem no modo de exibição de conteúdo.
 
@@ -106,7 +106,7 @@ A tabela a seguir lista as propriedades de automação da interface do usuário 
 
 
 
- 
+ 
 
 ## <a name="required-control-patterns"></a>Padrões de controle necessários
 
@@ -122,7 +122,7 @@ A tabela a seguir lista os padrões de controle de automação da interface do u
 
 
 
- 
+ 
 
 ## <a name="required-events"></a>Eventos necessários
 
@@ -130,29 +130,29 @@ A tabela a seguir lista os eventos de automação da interface do usuário aos q
 
 
 
-| Evento de automação da interface do usuário                                                                                                                     | Observações                                                                                                                          |
+| Automação da Interface do Usuário evento                                                                                                                     | Observações                                                                                                                          |
 |-----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | [**UIA \_ AutomationFocusChangedEventId**](uiauto-event-ids.md)                                        |                                                                                                                                |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade BoundingRectanglePropertyId.   |                                                                                                                                |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade IsEnabledPropertyId.                   | Se o controle oferecer suporte à propriedade [**IsEnabled**](uiauto-automation-element-propids.md) , ele deverá dar suporte a esse evento.       |
-| [**UIA \_**](uiauto-automation-element-propids.md) Evento de alteração de propriedade IsOffscreenPropertyId.               | Se o controle oferecer suporte à propriedade [**IsOffscreen**](uiauto-automation-element-propids.md) , ele deverá dar suporte a esse evento.     |
-| [**UIA \_ SelectionItem \_ ElementRemovedFromSelectionEventId**](uiauto-event-ids.md) | Se o controle der suporte ao padrão de controle [SelectionItem](uiauto-implementingselectionitem.md) , ele deverá dar suporte a esse evento. |
-| [**UIA \_ SelectionItem \_ ElementSelectedEventId**](uiauto-event-ids.md)                         | Se o controle der suporte ao padrão de controle [SelectionItem](uiauto-implementingselectionitem.md) , ele deverá dar suporte a esse evento. |
+| [**UIA \_ Evento boundingRectanglePropertyId**](uiauto-automation-element-propids.md) alterado por propriedade.   |                                                                                                                                |
+| [**UIA \_ Evento de propriedade isEnabledPropertyId**](uiauto-automation-element-propids.md) alterado.                   | Se o controle for compatível com a [**propriedade IsEnabled,**](uiauto-automation-element-propids.md) ele deverá dar suporte a esse evento.       |
+| [**UIA \_ Evento de propriedade IsOffscreenPropertyId**](uiauto-automation-element-propids.md) alterado.               | Se o controle for compatível com [**a propriedade IsOffscreen,**](uiauto-automation-element-propids.md) ele deverá dar suporte a esse evento.     |
+| [**Elemento UIA \_ \_ SelectionItemRemovedFromSelectionEventId**](uiauto-event-ids.md) | Se o controle for compatível com o padrão de controle [SelectionItem,](uiauto-implementingselectionitem.md) ele deverá dar suporte a esse evento. |
+| [**Elemento UIA \_ \_ SelectionItemSelectedEventId**](uiauto-event-ids.md)                         | Se o controle for compatível com o padrão de controle [SelectionItem,](uiauto-implementingselectionitem.md) ele deverá dar suporte a esse evento. |
 | [**UIA \_ StructureChangedEventId**](uiauto-event-ids.md)                                                    |                                                                                                                                |
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Comentários
 
-Um botão de opção representa uma única opção selecionável entre um grupo de botões de opção de mesmo nível. O ideal é que os botões de rádio tenham um elemento de agrupamento que esclarece os limites dos botões de opção de pares. Geralmente, no entanto, o limite é implícito pela estrutura do elemento da interface do usuário. Por exemplo, um menu pode conter um conjunto de botões de opção consecutivos em vez de itens de menu, ou um conjunto de botões de opção que ocorrem após um rótulo de grupo, mas antes de um elemento acionável, como Button.
+Um botão de opção representa uma única opção selecionável entre um grupo de botões de opção pares. O ideal é que os botões de opção tenham um elemento de grupo que esclarece os limites dos botões de opção par. Geralmente, no entanto, o limite é implícito pela estrutura do elemento da interface do usuário. Por exemplo, um menu pode conter um conjunto de botões de opção consecutivos em vez de itens de menu ou um conjunto de botões de opção que ocorrem após um rótulo de grupo, mas antes de um elemento a ação, como botão.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Visão Geral dos Tipos de Controle de Automação de Interface do Usuário](uiauto-controltypesoverview.md)
@@ -161,9 +161,9 @@ Um botão de opção representa uma única opção selecionável entre um grupo 
 [Visão geral de automação da interface do usuário](uiauto-uiautomationoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

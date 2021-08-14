@@ -4,12 +4,12 @@ ms.assetid: 1ace09da-7dee-469e-a533-63b40ac747ab
 title: Propriedade MFPKEY_ENHANCED_WMA (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df1c7ddc0e7bfb6d62d51e535f10b257eac6f2ef
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1ab3fdcd3087773ea760615224b148bd497c1f89114c0f761a7d2f90fb0b5a8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118738013"
 ---
 # <a name="mfpkey_enhanced_wma-property"></a>\_Propriedade WMA MFPKEY Enhanced \_
 
@@ -29,7 +29,7 @@ Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-pro
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade está disponível somente para o Windows Media Audio sem perdas.
+essa propriedade só está disponível para Windows sem perdas de áudio de mídia.
 
 Se você deixar essa propriedade com seu valor padrão de 0 ou se defini-la como 1, o codificador principal decidirá se a parte "Plus" deve ser usada. Se você definir essa propriedade como 2, o codificador principal não usará o recurso "Plus".
 

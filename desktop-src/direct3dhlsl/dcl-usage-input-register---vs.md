@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ae4b024bbce0636127b0ed0fc5f42bc466e1b7fd
-ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.openlocfilehash: f94a9fb8e46da811652b334824779d59153c87616f7f9815dbebd8224870ddec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113129683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118792818"
 ---
 # <a name="dcl_usage-input-sm1-sm2-sm3---vs-asm"></a>entrada de \_ uso dcl (sm1, sm2, sm3 – vs asm)
 
@@ -31,7 +31,7 @@ dcl \_ usage \[ index \_ \] v\#
 Em que:
 
 -   O uso de dcl \_ identifica como os dados de registro serão usados. Esse é o mesmo valor que os membros [**de D3DDECLUSAGE**](/windows/desktop/direct3d9/d3ddeclusage) sem o prefixo D3DDECLUSAGE.
--   índice \_ de uso é um índice inteiro opcional entre 0 e 15. Ele modifica os dados de uso. O índice corresponde ao índice de uso em uma declaração de vértice. Consulte [Declaração de vértice (Direct3D 9)](/windows/desktop/direct3d9/vertex-declaration). O índice é anexado ao valor de uso (uso de dcl \_ ) sem espaço. Se não for fornecido, supõe-se que seja 0.
+-   índice \_ de uso é um índice inteiro opcional entre 0 e 15. Modifica os dados de uso. O índice corresponde ao índice de uso em uma declaração de vértice. Consulte [Declaração de vértice (Direct3D 9)](/windows/desktop/direct3d9/vertex-declaration). O índice é anexado ao valor de uso (uso de dcl \_ ) sem espaço. Se não for fornecido, supõe-se que seja 0.
 -   v \# é um Registro de [Entrada](dx9-graphics-reference-asm-vs-registers-input.md).
 
 ## <a name="remarks"></a>Comentários

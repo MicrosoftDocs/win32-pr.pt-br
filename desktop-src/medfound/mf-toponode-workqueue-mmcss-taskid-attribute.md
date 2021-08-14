@@ -4,12 +4,12 @@ ms.assetid: ccecc1e6-2d30-4e89-849f-c3acad97f312
 title: Atributo MF_TOPONODE_WORKQUEUE_MMCSS_TASKID (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 53af119c58d725d42ec5737ffd9bf96286a65ac1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0bf75dc911c9d00cab2d21d937ef16a43b38cc4271299c6fae4f2ed7381ec63a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118739624"
 ---
 # <a name="mf_toponode_workqueue_mmcss_taskid-attribute"></a>\_Atributo TOPONODE da \_ fila de \_ \_ tarefas do MF MMCSS
 
@@ -40,8 +40,8 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
 | parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 

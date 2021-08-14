@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 7bf2366d9cd4e86c3141e5bc247f2dc03a6f7c76
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
-ms.translationtype: HT
+ms.openlocfilehash: 7efe4beb49706779c68ee5d70837526295d8ebe5c860b976630923d303a00a51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104968458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118786264"
 ---
 # <a name="texturecubearraysamplecmp-methods"></a>Métodos TextureCubeArray:: SampleCmp
 

@@ -1,18 +1,18 @@
 - name: 'API de criptografia: próxima geração'
   href: cng-portal.md
   items:
-    - name: Sobre a CNG
+    - name: Sobre o CNG
       href: about-cng.md
       items:
-        - name: Recursos da CNG
+        - name: Recursos CNG
           href: cng-features.md
         - name: Primitivos criptográficos
           href: cryptographic-primitives.md
-        - name: Armazenamento e recuperação de chave
+        - name: Chave Armazenamento recuperação e recuperação
           href: key-storage-and-retrieval.md
         - name: Importação e exportação de chave
           href: key-import-and-export.md
-        - name: DPAPI CNG
+        - name: CNG DPAPI
           href: cng-dpapi.md
           items:
             - name: Provedores de proteção
@@ -21,10 +21,10 @@
               href: protection-descriptors.md
             - name: Formato de dados protegidos
               href: protected-data-format.md
-    - name: Usando o CNG
+    - name: Usando CNG
       href: using-cng.md
       items:
-        - name: Usando os recursos de configuração de criptografia da CNG
+        - name: Usando os recursos de configuração de criptografia do CNG
           href: using-the-cryptography-configuration-features-of-cng.md
         - name: Programação CNG típica
           href: typical-cng-programming.md
@@ -35,27 +35,27 @@
               href: signing-data-with-cng.md
             - name: Criptografando dados com CNG
               href: encrypting-data-with-cng.md
-    - name: Referência CNG
+    - name: Referência de CNG
       href: cng-reference.md
       items:
         - name: Constantes CNG
           href: cng-constants.md
           items:
-            - name: CNG denominada curvas elípticas
+            - name: Curvas elípticas nomeadas em CNG
               href: cng-named-elliptic-curves.md
-            - name: Pseudo-identificadores de algoritmo CNG
+            - name: Pseudo-alças do algoritmo CNG
               href: cng-algorithm-pseudo-handles.md
             - name: Identificadores de algoritmo CNG
               href: cng-algorithm-identifiers.md
-            - name: Constantes CNG DPAPI
+            - name: Constantes DPAPI de CNG
               href: cng-dpapi-constants.md
             - name: Identificadores de interface CNG
               href: cng-interface-identifiers.md
             - name: Identificadores de propriedade primitiva de criptografia
               href: cng-property-identifiers.md
-            - name: Identificadores de propriedade de armazenamento de chave
+            - name: Identificadores de Armazenamento chave
               href: key-storage-property-identifiers.md
-        - name: Funções de configuração criptográfica de CNG
+        - name: Funções de configuração criptográfica CNG
           href: cng-cryptographic-configuration-functions.md
           items:
             - name: BCryptAddContextFunction
@@ -90,7 +90,7 @@
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptquerycontextfunctionproperty
             - name: BCryptQueryProviderRegistration
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptqueryproviderregistration
-            - name: BCryptRegisterConfigChangeNotify (identificador *)
+            - name: BCryptRegisterConfigChangeNotify(HANDLE*)
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptregisterconfigchangenotify
             - name: BCryptRegisterConfigChangeNotify(PRKEVENT)
               href: /windows/desktop/api/bcrypt/nf-bcrypt-bcryptregisterconfigchangenotify
@@ -100,11 +100,11 @@
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptresolveproviders
             - name: BCryptSetContextFunctionProperty
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptsetcontextfunctionproperty
-            - name: BCryptUnregisterConfigChangeNotify (identificador)
+            - name: BCryptUnregisterConfigChangeNotify(HANDLE)
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptunregisterconfigchangenotify
             - name: BCryptUnregisterConfigChangeNotify(PRKEVENT)
               href: /windows/desktop/api/bcrypt/nf-bcrypt-bcryptunregisterconfigchangenotify
-        - name: Funções primitivas de criptografia CNG
+        - name: Funções primitivas criptográficas CNG
           href: cng-cryptographic-primitive-functions.md
           items:
             - name: BCryptCloseAlgorithmProvider
@@ -167,7 +167,7 @@
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptsignhash
             - name: BCryptVerifySignature
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcryptverifysignature
-        - name: Funções CNG DPAPI
+        - name: Funções DPAPI CNG
           href: cng-dpapi-functions.md
           items:
             - name: NCryptCreateProtectionDescriptor
@@ -207,7 +207,7 @@
               href: /windows/desktop/api/Bcrypt/nf-bcrypt-bcrypt_init_auth_mode_info
             - name: SystemPrng
               href: systemprng.md
-        - name: Funções de armazenamento de chaves CNG
+        - name: Funções de Armazenamento CNG
           href: cng-key-storage-functions.md
           items:
             - name: NCryptCreateClaim
@@ -264,7 +264,7 @@
               href: /windows/desktop/api/ncrypt/nf-ncrypt-ncryptverifyclaim
             - name: NCryptVerifySignature
               href: /windows/desktop/api/Ncrypt/nf-ncrypt-ncryptverifysignature
-        - name: Funções do provedor de SSL CNG
+        - name: Funções do provedor SSL CNG
           href: cng-ssl-provider-functions.md
           items:
             - name: SslChangeNotify

@@ -1,5 +1,5 @@
 ---
-description: O objeto UIPreview é usado para exibir caixas de diálogo de interface do usuário e murals durante a criação. Esse objeto é criado pelo método EnableUIPreview do objeto Database.
+description: O objeto UIPreview é usado para exibir caixas de diálogo e painéis da interface do usuário durante a complicação. Esse objeto é criado pelo método EnableUIPreview do objeto Database.
 ms.assetid: 5df2a4f3-6352-4575-b822-1811150a86be
 title: Objeto UIPreview
 ms.topic: reference
@@ -13,34 +13,34 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 6650dc9bcc66a24d0e8a9d7f0d971884a2379f60
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 82436f21cc3920c2e1f635f8d1612118831e7d29f3fb1202105511f2e61f7a3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118623495"
 ---
 # <a name="uipreview-object"></a>Objeto UIPreview
 
-O objeto **UIPreview** é usado para exibir caixas de diálogo de interface do usuário e murals durante a criação. Esse objeto é criado pelo método [**EnableUIPreview**](database-enableuipreview.md) do objeto [**Database**](database-object.md) .
+O **objeto UIPreview** é usado para exibir caixas de diálogo e painéis da interface do usuário durante a complicação. Esse objeto é criado pelo método [**EnableUIPreview**](database-enableuipreview.md) do [**objeto Database.**](database-object.md)
 
 ## <a name="members"></a>Membros
 
-O objeto **UIPreview** tem estes tipos de membros:
+O **objeto UIPreview** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-O objeto **UIPreview** tem esses métodos.
+O **objeto UIPreview** tem esses métodos.
 
 
 
 | Método                                           | Descrição                                                                                             |
 |:-------------------------------------------------|:--------------------------------------------------------------------------------------------------------|
-| [**ViewBillboard**](uipreview-viewbillboard.md) | Exibe um mural criado usando o controle de host na caixa de diálogo exibida no momento.<br/> |
-| [**ViewDialog**](uipreview-viewdialog.md)       | Exibe uma caixa de diálogo de IU criada armazenada no banco de dados atual.<br/>                           |
+| [**ViewBillboard**](uipreview-viewbillboard.md) | Exibe um cartaz autoral usando o controle de host na caixa de diálogo exibida no momento.<br/> |
+| [**ViewDialog**](uipreview-viewdialog.md)       | Exibe uma caixa de diálogo de interface do usuário autorada armazenada no banco de dados atual.<br/>                           |
 
 
 
@@ -48,13 +48,13 @@ O objeto **UIPreview** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-O objeto **UIPreview** tem essas propriedades.
+O **objeto UIPreview** tem essas propriedades.
 
 
 
 | Propriedade                                          | Tipo de acesso           | Descrição                                                                                                                                                                       |
 |:--------------------------------------------------|:----------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Propriedade**](uipreview-property.md)<br/> | Leitura/gravação<br/> | Representa o valor da cadeia de caracteres de uma propriedade nomeada do instalador ou, se prefixado com um sinal de porcentagem (%), o valor de uma variável de ambiente do sistema para o processo atual.<br/> |
+| [**Propriedade**](uipreview-property.md)<br/> | Leitura/gravação<br/> | Representa o valor de cadeia de caracteres de uma propriedade do instalador nomeado ou, se prefixado com um sinal de porcentagem (%), o valor de uma variável de ambiente do sistema para o processo atual.<br/> |
 
 
 
@@ -66,9 +66,9 @@ O objeto **UIPreview** tem essas propriedades.
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IUIPreview é definido como 000C109A-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IUIPreview é definido como \_ 000C109A-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 
@@ -76,7 +76,7 @@ O objeto **UIPreview** tem essas propriedades.
 
 <dl> <dt>
 
-[Exemplos de script de Windows Installer](windows-installer-scripting-examples.md)
+[Windows Exemplos de script do instalador](windows-installer-scripting-examples.md)
 </dt> </dl>
 
  

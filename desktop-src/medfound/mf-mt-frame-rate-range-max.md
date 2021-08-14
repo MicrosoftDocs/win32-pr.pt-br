@@ -4,12 +4,12 @@ ms.assetid: 8e0c4996-9f78-424e-b012-502228b6a27a
 title: Atributo MF_MT_FRAME_RATE_RANGE_MAX (Mfapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62399445cd31c7820ea9de7082fce71febbf3ba2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5988a6aee872489327707c7e87639f7467560014c5bdd29bc9b0bd9a136ccbac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118742038"
 ---
 # <a name="mf_mt_frame_rate_range_max-attribute"></a>\_ \_ \_ \_ Atributo máximo do intervalo de taxa de quadros MF MT \_
 
@@ -41,8 +41,8 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/>                                  |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2008 R2 \|\]<br/>                     |
+| Cliente mínimo com suporte<br/> | \[aplicativos UWP para aplicativos de área de trabalho Windows 7 \|\]<br/>                                  |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos de aplicativos de área de trabalho do servidor 2008 R2 \[ \| UWP\]<br/>                     |
 | parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
 
 

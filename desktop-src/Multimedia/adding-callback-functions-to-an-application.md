@@ -4,23 +4,23 @@ description: Adicionando funções de retorno de chamada a um aplicativo
 ms.assetid: b7bde1be-b229-4e00-8906-22d7dcf9ea04
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d4f5f3dc43227f92305032decaf917bf521d95b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6dcd72b1a95a416398f482b90d7cd15cd80e1698a66a4b1c482bc92fc523ab2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104498712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118941824"
 ---
 # <a name="adding-callback-functions-to-an-application"></a>Adicionando funções de retorno de chamada a um aplicativo
 
-Um aplicativo pode registrar funções de retorno de chamada com a janela de captura para que ela notifique o aplicativo nas seguintes circunstâncias:
+Um aplicativo pode registrar funções de retorno de chamada com a janela de captura para que ele notifique o aplicativo nas seguintes circunstâncias:
 
--   O status é alterado
--   Ocorreram erros
--   Quadros de vídeo e buffers de áudio tornam-se disponíveis
+-   O status muda
+-   Ocorrem erros
+-   Buffers de áudio e quadro de vídeo ficam disponíveis
 -   O aplicativo deve produzir durante a captura de streaming
 
-O exemplo a seguir cria uma janela de captura e registra as funções de status, erro, fluxo de vídeo e retorno de chamada de quadro no loop de processamento de mensagens de um aplicativo. Ele também inclui uma instrução de exemplo para desabilitar uma função de retorno de chamada. Os exemplos subsequentes mostram as funções de retorno de chamada de status, erro e quadro simples.
+O exemplo a seguir cria uma janela de captura e registra funções de status, erro, fluxo de vídeo e retorno de chamada de quadro no loop de processamento de mensagens de um aplicativo. Ele também inclui uma instrução de exemplo para desabilitar uma função de retorno de chamada. Exemplos subsequentes mostram funções simples de status, erro e retorno de chamada de quadro.
 
 
 ```C++
@@ -77,12 +77,12 @@ case WM_CLOSE:
 
 <dl> <dt>
 
-[Usando a captura de vídeo](using-video-capture.md)
+[Usando a Captura de Vídeo](using-video-capture.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

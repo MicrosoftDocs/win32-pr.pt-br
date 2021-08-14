@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24608d0626ae4bcd6adb70a646d95121615c29e5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e01c46041bb870841e6266078c078a4da8fc224b3e19495574921c8aa6b56d6f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118685681"
 ---
 # <a name="ms-ds-auxiliary-classes-attribute"></a>atributo ms-DS-auxiliar-classes
 
@@ -36,7 +36,7 @@ Esse atributo lista as classes auxiliares que foram anexadas dinamicamente a um 
 | Frequência de atualização  | \-                                                              |
 | Attribute-Id      | 1.2.840.113556.1.4.1458                                         |
 | System-ID-GUID    | c4af1073-ee50-4be0-b8c0-89a41fe99abe                            |
-| Syntax            | [**Cadeia de caracteres (identificador de objeto)**](s-string-object-identifier.md) |
+| Sintaxe            | [**Cadeia de caracteres (identificador de objeto)**](s-string-object-identifier.md) |
 
 
 
@@ -121,10 +121,10 @@ Esse atributo lista as classes auxiliares que foram anexadas dinamicamente a um 
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | True         |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000008   |
@@ -142,10 +142,10 @@ Esse atributo lista as classes auxiliares que foram anexadas dinamicamente a um 
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | True         |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000008   |
@@ -163,10 +163,10 @@ Esse atributo lista as classes auxiliares que foram anexadas dinamicamente a um 
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | True         |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000008   |

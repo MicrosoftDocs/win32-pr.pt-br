@@ -1,7 +1,7 @@
 ---
 description: Associa um sistema virtual a um instantâneo que foi capturado do sistema virtual.
 ms.assetid: CF1C1C04-02BC-4AC3-8327-FEE54ECE8541
-title: Classe Msvm_SnapshotOfVirtualSystem
+title: Msvm_SnapshotOfVirtualSystem classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: bd006093347d7eb9354944409082a0e069b0cd54
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cc1971c1123ab30fb88da9278b1d4f142e35785a393a75e1bf8a3ec69771f98a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950295"
 ---
-# <a name="msvm_snapshotofvirtualsystem-class"></a>\_Classe Msvm SnapshotOfVirtualSystem
+# <a name="msvm_snapshotofvirtualsystem-class"></a>Classe Msvm \_ SnapshotOfVirtualSystem
 
 Associa um sistema virtual a um instantâneo que foi capturado do sistema virtual.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,17 +41,17 @@ class Msvm_SnapshotOfVirtualSystem : CIM_SnapshotOfVirtualSystem
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ SnapshotOfVirtualSystem** tem estes tipos de membros:
+A **classe Msvm \_ SnapshotOfVirtualSystem** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ SnapshotOfVirtualSystem** tem essas propriedades.
+A **classe Msvm \_ SnapshotOfVirtualSystem** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **[ **Msvm \_ ComputerSystem**](msvm-computersystem.md)**
@@ -60,11 +60,11 @@ Tipo de dados: **[ **Msvm \_ ComputerSystem**](msvm-computersystem.md)**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma referência a uma instância da classe [**Msvm \_ ComputerSystem**](msvm-computersystem.md) que representa o sistema virtual. Essa propriedade é derivada da [**\_ dependência CIM**](/windows/desktop/CIMWin32Prov/cim-dependency).
+Uma referência a uma instância da [**classe Msvm \_ ComputerSystem**](msvm-computersystem.md) que representa o sistema virtual. Essa propriedade é derivada da Dependência [**CIM. \_**](/windows/desktop/CIMWin32Prov/cim-dependency)
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **[ **Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md)**
@@ -73,7 +73,7 @@ Tipo de dados: **[ **Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsetti
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma referência a uma instância da classe [**Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) que representa o instantâneo. Essa propriedade é derivada da [**\_ dependência CIM**](/windows/desktop/CIMWin32Prov/cim-dependency).
+Uma referência a uma instância da [**classe Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) que representa o instantâneo. Essa propriedade é derivada da Dependência [**CIM. \_**](/windows/desktop/CIMWin32Prov/cim-dependency)
 
 </dd> </dl>
 
@@ -83,10 +83,10 @@ Uma referência a uma instância da classe [**Msvm \_ VirtualSystemSettingData**
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -95,7 +95,7 @@ Uma referência a uma instância da classe [**Msvm \_ VirtualSystemSettingData**
 
 <dl> <dt>
 
-[**\_SNAPSHOTOFVIRTUALSYSTEM CIM**](cim-snapshotofvirtualsystem.md)
+[**CIM \_ SnapshotOfVirtualSystem**](cim-snapshotofvirtualsystem.md)
 </dt> <dt>
 
 [**CreateSnapshot**](createsnapshot-msvm-virtualsystemsnapshotservice.md)

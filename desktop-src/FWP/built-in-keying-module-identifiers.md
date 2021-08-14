@@ -1,6 +1,6 @@
 ---
 title: Identificadores de módulo de chave interna (Fwpmu. h)
-description: Os identificadores para os módulos de criação de chaves que são internos para a WFP (Windows Filtering Platform) são representados por um GUID.
+description: os identificadores para os módulos de criação de chaves que são internos para a Windows a plataforma de filtragem (WFP) são representados por um GUID.
 ms.assetid: ba3aaf0f-5524-4d61-bb74-e4714b11b2a9
 topic_type:
 - apiref
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc9e6feb726a62de02130d64cef27cd9078395b3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0b978832d65ab930f172c205144ba352f028c486d4d04c6f680ee963c6cf2ae2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951335"
 ---
 # <a name="built-in-keying-module-identifiers"></a>Identificadores de módulo de chave interna
 
-Os identificadores para os módulos de criação de chaves que são internos para a WFP (Windows Filtering Platform) são representados por um GUID.
+os identificadores para os módulos de criação de chaves que são internos para a Windows a plataforma de filtragem (WFP) são representados por um GUID.
 
 Esses identificadores são definidos da seguinte maneira.
 
@@ -34,7 +34,7 @@ Esses identificadores são definidos da seguinte maneira.
 
 
 
-Módulo de chaveamento de protocolo IKE (IKE).
+módulo de chaveamento de protocolo IKE (IKE).
 
 
 </dt> </dl> </dd> <dt>
@@ -44,10 +44,10 @@ Módulo de chaveamento de protocolo IKE (IKE).
 
 
 
-Módulo de chaveamento da versão 2 do protocolo IKE (IKEv2).
+módulo de chaveamento da versão 2 do protocolo IKE (IKEv2).
 
 > [!Note]  
-> Disponível apenas no Windows Server 2008 R2 e no Windows 7.
+> disponível somente no Windows Server 2008 R2 e Windows 7.
 
  
 
@@ -70,9 +70,9 @@ Módulo de chaveamento de AuthIP.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
 
 
 

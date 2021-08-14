@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: e6e31e57376f987b2b5cb47e5e6bd8a0d5e85fba
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 981ff6e1343f836ef145d1dac8c66b93d7a89c885a04cb2fe024740d7e35a53d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118900376"
 ---
 # <a name="signedcodefilename-property"></a>Propriedade SignedCode. FileName
 
@@ -49,7 +49,7 @@ Se o valor da propriedade **filename** for modificado, o estado do objeto [**Sig
 
 | Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Redistribuível<br/> | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

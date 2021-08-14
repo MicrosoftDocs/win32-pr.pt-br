@@ -1,11 +1,11 @@
 ---
-title: atributo de sintaxe RPC-NS-Transfer-
+title: Atributo rpc-Ns-Transfer-Syntax
 description: O UUID da sintaxe de transferência com suporte pela entrada atual.
 ms.assetid: e40beedb-68f3-4af9-89a8-268c90693082
 ms.tgt_platform: multiple
 keywords:
-- RPC-NS-transferência-sintaxe do esquema do AD
-- Esquema de AD do atributo rpcNsTransferSyntax
+- Esquema do AD do atributo rpc-Ns-Transfer-Syntax
+- Esquema do AD do atributo rpcNsTransferSyntax
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbd980b89461fabfde0d96465cdbac2210dd4580
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2ba9d638919686b29f592ebed91a409a768f15104c2d9135ca7725f856d697d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118681545"
 ---
-# <a name="rpc-ns-transfer-syntax-attribute"></a>atributo de sintaxe RPC-NS-Transfer-
+# <a name="rpc-ns-transfer-syntax-attribute"></a>Atributo rpc-Ns-Transfer-Syntax
 
 O UUID da sintaxe de transferência com suporte pela entrada atual.
 
@@ -29,14 +29,14 @@ O UUID da sintaxe de transferência com suporte pela entrada atual.
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | RPC-NS-Transfer-Syntax                      |
-| LDAP-Display-Name | rpcNsTransferSyntax                         |
+| CN                | rpc-Ns-Transfer-Syntax                      |
+| Ldap-Display-Name | rpcNsTransferSyntax                         |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.314                      |
-| System-ID-GUID    | 29401c4a-7a27-11d0-afd6-00c04fd930c9        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 29401c4a-7a27-11d0-afd6-00c04fd930c9        |
+| Sintaxe            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,15 +58,15 @@ O UUID da sintaxe de transferência com suporte pela entrada atual.
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| É de valor único       | True                                                        |
+| Tem valor único       | True                                                        |
 | É indexado             | True                                                        |
-| No catálogo global      | Falso                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
+| No Catálogo Global      | Falso                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000001                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classes usadas em        | [**Servidor RPC-elemento**](c-rpcserverelement.md)<br/> |
+| Classes usadas em        | [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O UUID da sintaxe de transferência com suporte pela entrada atual.
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| É de valor único       | True                                                        |
+| Tem valor único       | True                                                        |
 | É indexado             | True                                                        |
-| No catálogo global      | Falso                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
+| No Catálogo Global      | Falso                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000001                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classes usadas em        | [**Servidor RPC-elemento**](c-rpcserverelement.md)<br/> |
+| Classes usadas em        | [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ O UUID da sintaxe de transferência com suporte pela entrada atual.
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| É de valor único       | True                                                        |
+| Tem valor único       | True                                                        |
 | É indexado             | True                                                        |
-| No catálogo global      | Falso                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
+| No Catálogo Global      | Falso                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000001                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classes usadas em        | [**Servidor RPC-elemento**](c-rpcserverelement.md)<br/> |
+| Classes usadas em        | [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 

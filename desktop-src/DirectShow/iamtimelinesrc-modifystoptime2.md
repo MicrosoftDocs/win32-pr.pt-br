@@ -1,7 +1,7 @@
 ---
-description: 'O método ModifyStopTime2 define a hora de parada. Esse método é equivalente a IAMTimelineSrc:: ModifyStopTime, mas usa um valor de REFTIME.'
+description: O método ModifyStopTime2 define a hora de parada. Esse método é equivalente a IAMTimelineSrc::ModifyStopTime, mas aceita um valor REFTIME.
 ms.assetid: 8bebda47-3e52-42a2-870c-acc14561fa25
-title: 'Método IAMTimelineSrc:: ModifyStopTime2 (QEdit. h)'
+title: Método IAMTimelineSrc::ModifyStopTime2 (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 42ca3c9c1f8fa47abc7a9c21a44458540007939f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fa2ec7a019200f91c9fb2a894c978ce93896926024f55efb229c7e5fde6fbe85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952805"
 ---
-# <a name="iamtimelinesrcmodifystoptime2-method"></a>Método IAMTimelineSrc:: ModifyStopTime2
+# <a name="iamtimelinesrcmodifystoptime2-method"></a>Método IAMTimelineSrc::ModifyStopTime2
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-O `ModifyStopTime2` método define a hora de parada. Esse método é equivalente a [**IAMTimelineSrc:: ModifyStopTime**](iamtimelinesrc-modifystoptime.md), mas usa um valor de [**REFTIME**](reftime.md) .
+O `ModifyStopTime2` método define a hora de parada. Esse método é equivalente a [**IAMTimelineSrc::ModifyStopTime**](iamtimelinesrc-modifystoptime.md), mas obtém um [**valor REFTIME.**](reftime.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -52,19 +52,19 @@ Nova hora de parada, em segundos.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará S \_ OK se for bem-sucedido, ou E \_ INVALIDARG se a hora especificada não for válida.
+Retornará S \_ OK se for bem-sucedido ou E \_ INVALIDARG se a hora especificada não for válida.
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Retornará S \_ OK se for bem-sucedido, ou E \_ INVALIDARG se a hora especificad
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Retornará S \_ OK se for bem-sucedido, ou E \_ INVALIDARG se a hora especificad
 
 <dl> <dt>
 
-[**Interface IAMTimelineSrc**](iamtimelinesrc.md)
+[**IAMTimelineSrc Interface**](iamtimelinesrc.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

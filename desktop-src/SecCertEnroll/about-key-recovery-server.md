@@ -4,12 +4,12 @@ ms.assetid: c6535dbf-c3fe-4f70-9a70-02805253a651
 title: Servidor de recuperação de chave
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b4e9fd60b7ee6596b98953d382978be64695c035
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a313ac46bf540d6d0f356f7e2c4910e31bee1f2a4268931ac6a942085505b423
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118903769"
 ---
 # <a name="key-recovery-server"></a>Servidor de recuperação de chave
 
@@ -36,8 +36,8 @@ Um cliente normalmente solicita um certificado usando um modelo. Se o modelo exi
 
 Não há suporte direto para a recuperação de chave por Active Directory serviços de certificados ou a API de registro de certificado. No entanto, a Microsoft fornece os seguintes aplicativos para ajudar com o processo:
 
--   Certutil.exe é um programa de linha de comando que pode ser usado para recuperar informações de configuração de autoridade de certificação, verificar certificados, pares de chaves e cadeias de certificados e fazer backup e restaurar chaves. Ele está incluído em sistemas operacionais de servidor que começam com o Windows Server 2003.
--   Krecover.exe é um programa baseado na caixa de diálogo que permite a recuperação de chave. Ele está incluído no kit de recursos a partir do Windows Server 2003.
+-   Certutil.exe é um programa de linha de comando que pode ser usado para recuperar informações de configuração de autoridade de certificação, verificar certificados, pares de chaves e cadeias de certificados e fazer backup e restaurar chaves. ele está incluído em sistemas operacionais de servidor que começam com o Windows server 2003.
+-   Krecover.exe é um programa baseado na caixa de diálogo que permite a recuperação de chave. ele está incluído no Kit de recursos a partir do Windows Server 2003.
 
 As etapas a seguir são executadas para recuperar uma chave privada:
 

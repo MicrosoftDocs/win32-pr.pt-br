@@ -1,15 +1,15 @@
 ---
-description: Os desenvolvedores de Windows Installer pacotes podem optar por usar um tipo de ação personalizada 7 quando as ações padrão são insuficientes para executar a instalação.
+description: os desenvolvedores de Windows Installer pacotes podem optar por usar um tipo de ação personalizada 7 quando as ações padrão são insuficientes para executar a instalação.
 ms.assetid: 4a8f35f9-58a8-417e-b72e-159f4af7d83f
 title: Tipo de ação personalizada 7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2d3cc1c68fae098c6ef70797ed87df887ff898a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f6735546b4db55bc8f9875fa2cd267eb0877a52c92e0a0073a942165dc413055
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118947907"
 ---
 # <a name="custom-action-type-7"></a>Tipo de ação personalizada 7
 
@@ -53,7 +53,7 @@ Essa ação personalizada não usa essa opção.
 
 ## <a name="return-values"></a>Valores de retorno
 
-O status de retorno da saída do usuário, falha, suspensão ou êxito de uma instalação simultânea é processado da mesma maneira que qualquer outra ação. No entanto, observe que Windows Installer converte os valores de retorno de todas as ações quando grava o valor de retorno no arquivo de log. Por exemplo, se o valor de retorno da ação aparecer como 1 no arquivo de log, isso significa que a ação retornou êxito de erro \_ . Para obter mais informações sobre essa conversão, consulte [log de valores de retorno de ação](logging-of-action-return-values.md).
+O status de retorno da saída do usuário, falha, suspensão ou êxito de uma instalação simultânea é processado da mesma maneira que qualquer outra ação. no entanto, observe que Windows Installer converte os valores de retorno de todas as ações quando grava o valor de retorno no arquivo de log. Por exemplo, se o valor de retorno da ação aparecer como 1 no arquivo de log, isso significa que a ação retornou êxito de erro \_ . Para obter mais informações sobre essa conversão, consulte [log de valores de retorno de ação](logging-of-action-return-values.md).
 
 Observe que, se uma instalação simultânea tiver **msidbCustomActionTypeContinue** definido, um retorno de erro \_ instalar o \_ UserExit, erro de \_ instalação \_ reinicializar, erro de \_ instalação \_ reinicializar \_ agora ou \_ \_ a reinicialização de êxito de erro \_ necessária é tratada como êxito do erro \_ . Isso significa que, se você definir **msidbCustomActionTypeContinue** e sua instalação simultânea exigir uma reinicialização, o requisito para a reinicialização será ignorado. Além disso, o código de erro da ação personalizada de instalação simultânea será ignorado.
 

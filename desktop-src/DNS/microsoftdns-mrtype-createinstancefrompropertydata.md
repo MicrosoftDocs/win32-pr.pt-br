@@ -1,10 +1,10 @@
 ---
-title: Método CreateInstanceFromPropertyData da classe MicrosoftDNS_MRType
-description: O método CreateInstanceFromPropertyData instancia um registro de recurso Sr (renomeação da caixa de correio).
+title: Método CreateInstanceFromPropertyData da classe MicrosoftDNS_MRType dados
+description: O método CreateInstanceFromPropertyData cria uma instanância de um registro de recurso MR (Mailbox Rename).
 ms.assetid: 7dab86e0-bf05-4e98-b1f8-e1daecd4425c
 keywords:
-- DNS do método CreateInstanceFromPropertyData
-- Método CreateInstanceFromPropertyData DNS, classe MicrosoftDNS_MRType
+- Método CREATEInstanceFromPropertyData DNS
+- Classe MicrosoftDNS_MRType DNS do método CreateInstanceFromPropertyData
 - MicrosoftDNS_MRType classe DNS, método CreateInstanceFromPropertyData
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f41478d4ff59ff7999f6f3b052f203aeda78803
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d08ca8b36f65b25f0ab35d3aba531d4d734c1a768f3b4d092e2b4be0075c7889
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967276"
 ---
-# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_mrtype-class"></a>Método CreateInstanceFromPropertyData da \_ classe MRType MicrosoftDNS
+# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_mrtype-class"></a>Método CreateInstanceFromPropertyData da classe MRType do MicrosoftDNS \_
 
-O método **CreateInstanceFromPropertyData** instancia um registro de recurso Sr (renomeação da caixa de correio).
+O **método CreateInstanceFromPropertyData** cria uma instanância de um registro de recurso MR (Mailbox Rename).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,28 +48,28 @@ void CreateInstanceFromPropertyData(
 
 <dl> <dt>
 
-*DnsServerName* \[ no\]
+*DnsServerName* \[ Em\]
 </dt> <dd>
 
-FQDN ou endereço IP do servidor DNS que contém este RR.
+FQDN ou endereço IP do Servidor DNS que contém esse RR.
 
 </dd> <dt>
 
-*ContainerName* \[ no\]
+*ContainerName* \[ Em\]
 </dt> <dd>
 
-Nome do contêiner para a zona, o cache ou a instância de RootHints que contém esse RR.
+Nome do Contêiner para a instância Zone, Cache ou RootHints que contém esse RR.
 
 </dd> <dt>
 
-*OwnerName* \[ no\]
+*OwnerName* \[ Em\]
 </dt> <dd>
 
-Nome do proprietário do RR.
+Nome do proprietário para a RR.
 
 </dd> <dt>
 
-*RecordClass* \[ em, opcional\]
+*RecordClass* \[ in, opcional\]
 </dt> <dd>
 
 Classe do RR. O valor padrão é 1. Os valores a seguir são válidos.
@@ -78,10 +78,10 @@ Classe do RR. O valor padrão é 1. Os valores a seguir são válidos.
 
 | Valor                                                                                                | Significado                  |
 |------------------------------------------------------------------------------------------------------|--------------------------|
-| <span id="1"></span><dl> <dt>**1**</dt> </dl> | NO (Internet)<br/> |
+| <span id="1"></span><dl> <dt>**1**</dt> </dl> | IN (Internet)<br/> |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | CS (CSNET)<br/>    |
-| <span id="3"></span><dl> <dt>**3**</dt> </dl> | CH (CAOS)<br/>    |
-| <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | HS (Hesiod)<br/>   |
+| <span id="3"></span><dl> <dt>**3**</dt> </dl> | CH (CHAOS)<br/>    |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Hesiod)<br/>   |
 
 
 
@@ -89,28 +89,28 @@ Classe do RR. O valor padrão é 1. Os valores a seguir são válidos.
 
 </dd> <dt>
 
-*TTL* \[ em, opcional\]
+*TTL* \[ in, opcional\]
 </dt> <dd>
 
-Tempo, em segundos, que o RR pode ser armazenado em cache por um resolvedor de DNS.
+Tempo, em segundos, em que o RR pode ser armazenado em cache por um resolvedor de DNS.
 
 </dd> <dt>
 
-*MRMailbox* \[ no\]
+*MRMailbox* \[ Em\]
 </dt> <dd>
 
-FQDN que especifica uma caixa de correio que é a renomeação correta da caixa de correio especificada no nome do proprietário do registro.
+FQDN especificando uma caixa de correio que é a renomeação adequada da caixa de correio especificada no Nome do Proprietário do registro.
 
 </dd> <dt>
 
 *RR* \[ out, ref\]
 </dt> <dd>
 
-Referência ao novo objeto.
+Referência ao novo objeto .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -123,7 +123,7 @@ Esse método não retorna um valor.
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
 | Namespace<br/>                | \\MicrosoftDNS raiz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -134,7 +134,7 @@ Esse método não retorna um valor.
 [**MicrosoftDNS \_ MRType**](microsoftdns-mrtype.md)
 </dt> <dt>
 
-[**Método Modify da classe MicrosoftDNS \_ MRType**](microsoftdns-mrtype-modify.md)
+[**Método Modify da classe MRType MicrosoftDNS \_**](microsoftdns-mrtype-modify.md)
 </dt> <dt>
 
 [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)

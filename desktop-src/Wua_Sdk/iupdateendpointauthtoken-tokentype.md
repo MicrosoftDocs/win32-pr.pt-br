@@ -1,7 +1,7 @@
 ---
-description: Obtém o tipo do token do ponto de extremidade, como um token WS-Security SAML (Security Assertion Markup Language) 1,1.
+description: Obtém o tipo do token de ponto de extremidade, como um token WS-Security SAML (Security Assertion Markup Language) 1.1.
 ms.assetid: 1C6FFAD7-DC80-4957-96B4-FA0D954786DD
-title: 'Método IUpdateEndpointAuthToken:: TokenType (UpdateEndpointAuth. h)'
+title: Método IUpdateEndpointAuthToken::TokenType (UpdateEndpointAuth.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - UpdateEndpointAuth.dll
-ms.openlocfilehash: bc2373c5dd49a3bf01d39b63360a3cf9df9f57d5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a4479adc05eba8160098bd60c349645c4e30853abc693396f18f69ec722a06d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118815287"
 ---
-# <a name="iupdateendpointauthtokentokentype-method"></a>Método IUpdateEndpointAuthToken:: TokenType
+# <a name="iupdateendpointauthtokentokentype-method"></a>Método IUpdateEndpointAuthToken::TokenType
 
-Obtém o tipo do token do ponto de extremidade, como um token WS-Security SAML (Security Assertion Markup Language) 1,1.
+Obtém o tipo do token de ponto de extremidade, como um token WS-Security SAML (Security Assertion Markup Language) 1.1.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,16 +39,16 @@ HRESULT TokenType(
 
 <dl> <dt>
 
-*pTokenType* \[ fora\]
+*pTokenType* \[ out\]
 </dt> <dd>
 
 O tipo do token de ponto de extremidade.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará **S \_ OK** se for bem-sucedido. Caso contrário, retorna um código de erro COM do Windows.
+Retornará **S \_ OK** se for bem-sucedido. Caso contrário, retornará um com ou Windows código de erro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,11 +56,11 @@ Retornará **S \_ OK** se for bem-sucedido. Caso contrário, retorna um código 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows XP, Windows 2000 Professional com \[ aplicativos de área de trabalho do SP3\]<br/>                   |
-| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server com aplicativos de área de trabalho do SP3 \[ somente\]<br/>                |
-| parâmetro<br/>                   | <dl> <dt>UpdateEndpointAuth. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>UpdateEndpointAuth. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>UpdateEndpointAuth. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP, Windows 2000 Professional somente com aplicativos da área de trabalho SP3 \[\]<br/>                   |
+| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server somente com aplicativos da área de trabalho SP3 \[\]<br/>                |
+| Cabeçalho<br/>                   | <dl> <dt>UpdateEndpointAuth.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>UpdateEndpointAuth.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>UpdateEndpointAuth.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>UpdateEndpointAuth.dll</dt> </dl> |
 
 

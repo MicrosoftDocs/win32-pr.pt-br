@@ -1,29 +1,29 @@
 ---
-description: Se essa política do sistema por usuário estiver definida como &\# 0034; 1&\# 0034;; o instalador pesquisará arquivos de transformação na raiz de qualquer fonte de rede na lista de origem do produto. Por padrão, as transformações são armazenadas na pasta de dados do aplicativo do perfil de um usuário.
+description: Se essa política de sistema por usuário estiver definida como &\# 0034;1&0034;; o instalador pesquisa arquivos de transformação na raiz de quaisquer fontes de rede na lista de origem do \# produto. Por padrão, as transformação são armazenadas na pasta Dados do Aplicativo do perfil de um usuário.
 ms.assetid: 24881078-1610-4a37-a52d-fcabd78e1738
-title: Política de TransformsAtSource
+title: TransformsAtSource Policy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91be9c56f2e68a27d904acf98088204dc4012b4f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ab909fd728ce1cebba894dd8598879fa055ce762ed027cd8842cc7236a0f24e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118623475"
 ---
-# <a name="transformsatsource-policy"></a>Política de TransformsAtSource
+# <a name="transformsatsource-policy"></a>TransformsAtSource Policy
 
-Se essa [política do sistema](system-policy.md) por usuário estiver definida como "1"; o instalador pesquisa arquivos de transformação na raiz de qualquer fonte de rede na lista de origem do produto. Por padrão, as transformações são armazenadas na pasta de dados do aplicativo do perfil de um usuário.
+Se essa política de sistema [por usuário](system-policy.md) estiver definida como "1"; o instalador procura arquivos de transformação na raiz de quaisquer fontes de rede na lista de origem do produto. Por padrão, as transformação são armazenadas na pasta Dados do Aplicativo do perfil de um usuário.
 
-Windows Installer interpreta a política TransformsAtSource para ser a mesma que a [política TransformsSecure](transformssecure-policy.md).
+Windows O instalador interpreta a política TransformsAtSource como a mesma que a [política TransformsSecure](transformssecure-policy.md).
 
 ## <a name="registry-key"></a>Chave do Registro
 
-**HKEY \_ \_** Políticas de software de usuário atuais \\  \\  \\ **Microsoft** \\ **Windows** \\ **Installer**
+**HKEY \_ Atual \_ USER** \\ **Software** \\ **Policies** \\ **Microsoft** \\ **Windows** \\ **Installer**
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**REG \_ sz**
+**REG \_ SZ**
 
  
 

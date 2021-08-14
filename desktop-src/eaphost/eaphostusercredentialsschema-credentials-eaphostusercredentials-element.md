@@ -1,6 +1,6 @@
 ---
 title: Elemento Credentials (EapHostUserCredentials)
-description: É usado quando a configuração do método está no formato de texto XML em vez de em um BLOB binário.
+description: É usado quando a configuração do método está no formato de texto XML em vez de um BLOB binário.
 ms.assetid: 9c350891-bf40-430d-837a-f2e58bde41fc
 keywords:
 - Elemento Credentials EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 043b82d5fb1ebc89f454ff6680672bda19e1c01e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1e47e63dd6c29d4fbd85111cc5821688610d72c3f2858a371c392e16bee75207
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984206"
 ---
 # <a name="credentials-eaphostusercredentials-element"></a>Elemento Credentials (EapHostUserCredentials)
 
-O elemento **Credentials (EapHostUserCredentials)** é usado quando a configuração do método está no formato de texto XML em vez de em um blob binário.
+O **elemento Credentials (EapHostUserCredentials)** é usado quando a configuração do método está no formato de texto XML em vez de um BLOB binário.
 
 ``` syntax
 <xs:element name="Credentials"
@@ -31,7 +31,7 @@ O elemento **Credentials (EapHostUserCredentials)** é usado quando a configura�
  />
 ```
 
-O elemento **Credentials** é definido pelo elemento [**EapHostUserCredentials**](eaphostusercredentialsschema-eaphostusercredentials-element.md) .
+O **elemento Credentials** é definido pelo [**elemento EapHostUserCredentials.**](eaphostusercredentialsschema-eaphostusercredentials-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,8 +39,8 @@ O elemento **Credentials** é definido pelo elemento [**EapHostUserCredentials**
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

@@ -1,17 +1,17 @@
 ---
-title: Botão (Windows Ribbon Framework)
+title: botão (Windows estrutura da faixa de faixas)
 description: O botão é um controle no qual o usuário pode clicar para fornecer entrada para um aplicativo.
 ms.assetid: 6d4aa571-dbea-4139-a6b7-45a85595dd04
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1514a1ae66e383d18f81d1ca0ee1a5a8e453335d
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: e82a1a71181b3478e065922b5a1836f6cd0f47bf9b3f2e497f45564118449b95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104085046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118707785"
 ---
-# <a name="button-windows-ribbon-framework"></a>Botão (Windows Ribbon Framework)
+# <a name="button-windows-ribbon-framework"></a>botão (Windows estrutura da faixa de faixas)
 
 O botão é um controle no qual o usuário pode clicar para fornecer entrada para um aplicativo.
 
@@ -63,7 +63,7 @@ A tabela a seguir lista as chaves de propriedade que estão associadas ao contro
 
 <dl> <dt>
 
-[Biblioteca de controle do Windows Ribbon Framework](windowsribbon-controls-entry.md)
+[Windows Biblioteca de controle da estrutura de faixa](windowsribbon-controls-entry.md)
 </dt> <dt>
 
 [**Elemento de marcação de botão**](windowsribbon-element-button.md)

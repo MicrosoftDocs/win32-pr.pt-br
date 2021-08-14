@@ -1,11 +1,11 @@
 ---
-title: Atributo address-entry-display-Table-MSDOS
+title: Atributo Address-Entry-Display-Table-MSDOS
 description: A tabela de exibição MAPI para uma entrada de endereço para o cliente MSDOS.
 ms.assetid: 61377f8c-728d-43ee-8e84-c6b5638d5e1e
 ms.tgt_platform: multiple
 keywords:
-- Endereço-entry-display-Table-MSDOS atributo AD Schema
-- Esquema de AD do atributo addressEntryDisplayTableMSDOS
+- Esquema do AD do atributo Address-Entry-Display-Table-MSDOS
+- esquema do AD do atributo addressEntryDisplayTableMSDOS
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25fbb7d84615c79067f5295ac552a13cbbb6a90a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 386c5388116a32193ef8a75e3821fd4312d7a70ba5ce073e1886673589b149a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118688686"
 ---
-# <a name="address-entry-display-table-msdos-attribute"></a>Atributo address-entry-display-Table-MSDOS
+# <a name="address-entry-display-table-msdos-attribute"></a>Atributo Address-Entry-Display-Table-MSDOS
 
 A tabela de exibição MAPI para uma entrada de endereço para o cliente MSDOS.
 
@@ -29,14 +29,14 @@ A tabela de exibição MAPI para uma entrada de endereço para o cliente MSDOS.
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | Endereço-entrada-exibição-tabela-MSDOS                     |
-| LDAP-Display-Name | addressEntryDisplayTableMSDOS                         |
+| CN                | Address-Entry-Display-Table-MSDOS                     |
+| Ldap-Display-Name | addressEntryDisplayTableMSDOS                         |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.2.400                                |
-| System-ID-GUID    | 5fd42462-1262-11d0-a060-00aa006c33ed                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 5fd42462-1262-11d0-a060-00aa006c33ed                  |
+| Sintaxe            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -58,15 +58,15 @@ A tabela de exibição MAPI para uma entrada de endereço para o cliente MSDOS.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8047                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | True                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Display-template**](c-displaytemplate.md)<br/> |
+| Classes usadas em        | [**Exibir modelo**](c-displaytemplate.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ A tabela de exibição MAPI para uma entrada de endereço para o cliente MSDOS.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8047                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | True                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Display-template**](c-displaytemplate.md)<br/> |
+| Classes usadas em        | [**Exibir modelo**](c-displaytemplate.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ A tabela de exibição MAPI para uma entrada de endereço para o cliente MSDOS.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8047                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | True                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Display-template**](c-displaytemplate.md)<br/> |
+| Classes usadas em        | [**Exibir modelo**](c-displaytemplate.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ A tabela de exibição MAPI para uma entrada de endereço para o cliente MSDOS.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8047                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | True                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Display-template**](c-displaytemplate.md)<br/> |
+| Classes usadas em        | [**Exibir modelo**](c-displaytemplate.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ A tabela de exibição MAPI para uma entrada de endereço para o cliente MSDOS.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8047                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | True                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Display-template**](c-displaytemplate.md)<br/> |
+| Classes usadas em        | [**Exibir modelo**](c-displaytemplate.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ A tabela de exibição MAPI para uma entrada de endereço para o cliente MSDOS.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8047                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | True                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Display-template**](c-displaytemplate.md)<br/> |
+| Classes usadas em        | [**Exibir modelo**](c-displaytemplate.md)<br/> |
 
 
 

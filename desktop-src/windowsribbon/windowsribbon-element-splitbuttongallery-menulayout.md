@@ -1,9 +1,9 @@
 ---
-title: Propriedade SplitButtonGallery. MenuLayout
-description: Representa um contêiner para layouts de menu suspenso da Galeria de botões de divisão.
+title: Propriedade SplitButtonGallery.MenuLayout
+description: Representa um contêiner para layouts de menu suspenso da Galeria de Botões Divididos.
 ms.assetid: 4bebdff6-16ea-4cf3-adc7-9b86ea200e81
 keywords:
-- Faixa de SplitButtonGallery de propriedades do Windows. MenuLayout
+- Propriedade SplitButtonGallery.MenuLayout Windows Faixa de Opções
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04428c14b5e47795da47e5c03970610cd08a6e8f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f40cf184d6122fc40041cfb77953bba2b7950d9d1a957d99aae659633ee5c194
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105782692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118706894"
 ---
-# <a name="splitbuttongallerymenulayout-property"></a>Propriedade SplitButtonGallery. MenuLayout
+# <a name="splitbuttongallerymenulayout-property"></a>Propriedade SplitButtonGallery.MenuLayout
 
-Representa um contêiner para layouts de menu suspenso da [Galeria de botões de divisão](windowsribbon-controls-splitbuttongallery.md) .
+Representa um contêiner para [layouts](windowsribbon-controls-splitbuttongallery.md) de menu suspenso da Galeria de Botões Divididos.
 
 ## <a name="usage"></a>Uso
 
@@ -60,7 +60,7 @@ Não há atributos.
 
 Opcional.
 
-Pode ocorrer no máximo uma vez para cada elemento [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) .
+Pode ocorrer no máximo uma vez para cada [**elemento SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
 > [!Note]  
 > Um máximo de um elemento filho ([**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md) ou [**FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)) é permitido.
@@ -69,9 +69,9 @@ Pode ocorrer no máximo uma vez para cada elemento [**SplitButtonGallery**](wind
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra a marcação básica para a [Galeria de botões de divisão](windowsribbon-controls-splitbuttongallery.md).
+O exemplo a seguir demonstra a marcação básica para a Galeria [de Botões divididos.](windowsribbon-controls-splitbuttongallery.md)
 
-Esta seção de código mostra a declaração de controle **SplitButtonGallery. MenuLayout** .
+Esta seção de código mostra a declaração **de controle SplitButtonGallery.MenuLayout.**
 
 
 ```XML
@@ -104,8 +104,8 @@ Esta seção de código mostra a declaração de controle **SplitButtonGallery. 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/> |
 
 
 
@@ -113,7 +113,7 @@ Esta seção de código mostra a declaração de controle **SplitButtonGallery. 
 
 <dl> <dt>
 
-[Controle da Galeria de botões de divisão](windowsribbon-controls-splitbuttongallery.md)
+[Controle Dividir Galeria de Botões](windowsribbon-controls-splitbuttongallery.md)
 </dt> <dt>
 
 [Trabalhando com galerias](ribbon-controls-galleries.md)

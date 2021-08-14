@@ -3,9 +3,9 @@ title: Propriedade AddItem IPropertyFilterCollection (WdsSharedIDL. h)
 description: Adiciona um novo filtro à coleção.
 ms.assetid: 01078e7a-811a-4dfb-b122-4801f39413d8
 keywords:
-- Recursos do ambiente Windows herdado da propriedade AddItem
-- Propriedade AddItem recursos de ambiente do Windows herdados, interface IPropertyFilterCollection
-- Recursos do ambiente Windows herdado da interface IPropertyFilterCollection, Propriedade AddItem
+- recursos de ambiente herdado de Windows de propriedade additem
+- propriedade additem herdada Windows recursos de ambiente, interface IPropertyFilterCollection
+- recursos de ambiente Windows da interface IPropertyFilterCollection herdados, propriedade additem
 topic_type:
 - apiref
 api_name:
@@ -17,17 +17,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b199f0e696f75fb5549b274ac888989f7a723b48
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aeafec95549fefa244dff6ff44ad9110150ae1b410e38b423a0a31f09cf54194
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118755443"
 ---
 # <a name="ipropertyfiltercollectionadditem-property"></a>Propriedade IPropertyFilterCollection:: AddItem
 
 > [!NOTE]
-> O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003. Em versões posteriores, use a [API de pesquisa do Windows](../search/-search-reference-entry-page.md) em vez disso. 
+> Windows o Desktop Search 2. x é uma tecnologia obsoleta que estava originalmente disponível como um suplemento para o Windows XP e o Windows Server 2003. em versões posteriores, use a [API de pesquisa Windows](../search/-search-reference-entry-page.md) em vez disso. 
 
 Adiciona um novo filtro à coleção.
 
@@ -54,10 +54,10 @@ Retorna um ponteiro para o endereço do novo filtro.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows XP com SP2\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003 com SP1\]<br/>                             |
-| Redistribuível<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                             |
-| parâmetro<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos de área de trabalho do SP2\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows Servidor 2003 somente com \[ aplicativos de área de trabalho do SP1\]<br/>                             |
+| Redistribuível<br/>          | Windows Pesquisador de desktops (WDS) 2.6.5<br/>                                             |
+| Cabeçalho<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
 
 
 

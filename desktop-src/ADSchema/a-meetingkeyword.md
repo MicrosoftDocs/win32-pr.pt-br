@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f0bc64d1a863d3b613b8a2876fd20bc8c32fcb1c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b091648b5931c55713e6e9d72d0759b952a087bd8ee8944de591895fc386e1c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105750973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118687742"
 ---
 # <a name="meetingkeyword-attribute"></a>atributo meetingKeyword
 
@@ -120,10 +120,10 @@ Uma palavra-chave que é usada para ajudar a encontrar uma reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | Falso                                   |
+| Tem valor único       | Falso                                   |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -141,10 +141,10 @@ Uma palavra-chave que é usada para ajudar a encontrar uma reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | Falso                                   |
+| Tem valor único       | Falso                                   |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -162,10 +162,10 @@ Uma palavra-chave que é usada para ajudar a encontrar uma reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | Falso                                   |
+| Tem valor único       | Falso                                   |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |

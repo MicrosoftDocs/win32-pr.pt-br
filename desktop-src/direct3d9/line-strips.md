@@ -4,12 +4,12 @@ ms.assetid: 73905718-a4c6-4f73-beef-4cccac7eea8c
 title: Faixas de linha
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3dee7eb79b583ad04dc0ed576a7d9426e8dda9fa
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6dd8ba98518cac542a9b8272e4f96494889ef24f269744626aa24e882c7af509
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118799623"
 ---
 # <a name="line-strips"></a>Faixas de linha
 
@@ -41,7 +41,7 @@ CUSTOMVERTEX Vertices[] =
 
 
 
-O exemplo de código abaixo mostra como renderizar uma faixa de linha no Direct3D 9 usando [**IDirect3DDevice9::D rawprimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive) .
+O exemplo de código abaixo mostra como renderizar uma faixa de linha no Direct3D 9 usando [**IDirect3DDevice9::D rawPrimitive.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive)
 
 
 ```

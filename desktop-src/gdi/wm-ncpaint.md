@@ -4,12 +4,12 @@ ms.assetid: d8a2a8b9-2c5d-484c-be09-67eb33de67c0
 title: Mensagem de WM_NCPAINT (WinUser. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f6c2e211f3dc1602821b0197d295f940606c262
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6be5fa951d50dbaf8663e34a5d9476ecb62576c203095bed9427dcef44425690
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118977996"
 ---
 # <a name="wm_ncpaint-message"></a>Mensagem do WM \_ NCPAINT
 
@@ -47,7 +47,7 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Um aplicativo retornará zero se ele processar essa mensagem.
 
@@ -80,7 +80,7 @@ case WM_NCPAINT:
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

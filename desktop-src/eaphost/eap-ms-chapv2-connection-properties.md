@@ -1,19 +1,19 @@
 ---
-title: Propriedades de conexão do EAP MS-CHAPv2
-description: Saiba mais sobre as propriedades de conexão do EAP MS-CHAPv2. Veja um exemplo que é uma instância do esquema herdado mschapv2connectionpropertiesv1.
+title: Propriedades de conexão MS-CHAPv2 EAP
+description: Saiba mais sobre as propriedades de conexão MS-CHAPv2 EAP. Veja um exemplo que é uma instância do esquema herdado mschapv2connectionpropertiesv1.
 ms.assetid: d6a057e0-56f6-4a31-9391-fde631ac2898
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e353c4685e131c2e7301db35de26d927b5882c06
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: 28ec894f8e95aa08e68aae418ed2b194c02a90cd008b9ac8d810d3c497e76f9e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104366850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984256"
 ---
-# <a name="eap-ms-chapv2-connection-properties"></a>Propriedades de conexão do EAP MS-CHAPv2
+# <a name="eap-ms-chapv2-connection-properties"></a>Propriedades de conexão MS-CHAPv2 EAP
 
-Este exemplo é uma instância do esquema herdado [mschapv2connectionpropertiesv1](mschapv2connectionpropertiesv1schema-schema.md) ..
+Este exemplo é uma instância do [esquema herdado mschapv2connectionpropertiesv1..](mschapv2connectionpropertiesv1schema-schema.md)
 
 ``` syntax
   <?xml version="1.0" ?> 
@@ -41,15 +41,15 @@ Este exemplo é uma instância do esquema herdado [mschapv2connectionpropertiesv
 
 <dl> <dt>
 
-[Propriedades da conexão](connection-profiles.md)
+[Propriedades de conexão](connection-profiles.md)
 </dt> <dt>
 
 [EAPHost e esquema herdado](eaphost-schemas.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,12 +4,12 @@ description: Um controle guia é análogo aos divisores em um bloco de anotaçõ
 ms.assetid: 55ed2863-7f8d-43ce-a0f9-6f6d41e3f947
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c45ac7caa05c73e1dcf22a8e6f0eb4d031ca079
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 512955ec2b3426227366ef109669c52a6c07c8882374d935023123182de194ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104084934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118670416"
 ---
 # <a name="about-tab-controls"></a>Sobre controles de guia
 
@@ -36,7 +36,7 @@ Este tópico inclui as seções a seguir.
 
 Você pode criar um controle guia chamando a função [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) , especificando a classe da janela do [**\_ TABCONTROL WC**](common-control-window-classes.md) . Essa classe de janela é registrada quando a DLL de controles comuns é carregada. Para garantir que a DLL seja carregada, use a função [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) .
 
-No Microsoft Visual Studio, você pode criar um controle guia usando a caixa de ferramentas.
+no Microsoft Visual Studio, você pode criar um controle guia usando a caixa de ferramentas.
 
 Você envia mensagens a um controle guia para adicionar guias e, caso contrário, afeta a aparência e o comportamento do controle. Cada mensagem tem uma macro correspondente que você pode usar em vez de enviar a mensagem explicitamente. Não é possível desabilitar uma guia individual em um controle guia. No entanto, você pode desabilitar um controle guia em uma folha de propriedades desabilitando a página correspondente.
 
@@ -150,8 +150,8 @@ Esta seção descreve o processamento de mensagens executado por um controle gui
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

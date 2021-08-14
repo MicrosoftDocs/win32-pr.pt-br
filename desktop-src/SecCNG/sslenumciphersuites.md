@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 8991842f38f3d3dc3d721cd30ebfb857ad20308a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7d9fb40bf6bfebff6d0659640dfb68b718586ac822c8a779a56de300b8d55b73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906688"
 ---
 # <a name="sslenumciphersuites-function"></a>Função SslEnumCipherSuites
 
@@ -89,7 +89,7 @@ Esse parâmetro é reservado para uso futuro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, ela retornará zero.
 
@@ -119,8 +119,8 @@ Para enumerar todos os conjuntos de codificação com suporte pelo provedor SSL,
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                     |
 | parâmetro<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>NCrypt. lib</dt> </dl>    |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |

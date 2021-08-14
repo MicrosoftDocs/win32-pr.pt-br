@@ -4,18 +4,18 @@ ms.assetid: f93060dc-cb64-4623-847d-5d78bca59d50
 title: Usando MFTrace
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 022f888ba8b202e4b77a3a571a25874032ec233e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a03cb19f17978236b3e4edd8415f524913c90d99d7a7caf4183dd885d340cfbb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118737319"
 ---
 # <a name="using-mftrace"></a>Usando MFTrace
 
 MFTrace é uma ferramenta para gerar logs de rastreamento para aplicativos Microsoft Media Foundation.
 
-O MFTrace usa a biblioteca de desvios para conectar Media Foundation chamadas à API e gerar logs de rastreamento. O MFTrace também pode registrar rastreamentos de qualquer componente que usa o ETW (rastreamento de eventos para Windows) ou o WPP (pré-processador de rastreamento de software) para gerar rastreamentos. Os logs de rastreamento podem ser gerados iniciando um novo processo do MFTrace ou anexando MFTrace a um processo existente.
+O MFTrace usa a biblioteca de desvios para conectar Media Foundation chamadas à API e gerar logs de rastreamento. o MFTrace também pode registrar rastreamentos de qualquer componente que usa o rastreamento de eventos para Windows (ETW) ou o WPP (pré-processador de rastreamento de software) para gerar rastreamentos. Os logs de rastreamento podem ser gerados iniciando um novo processo do MFTrace ou anexando MFTrace a um processo existente.
 
 ## <a name="usage"></a>Uso
 
@@ -73,7 +73,7 @@ O MFTrace usa a biblioteca de desvios para conectar Media Foundation chamadas à
 <td>Grave a saída de rastreamento no arquivo especificado. Por padrão, a saída vai para <strong>stdout</strong>.<br/> Se um arquivo de saída for especificado, a extensão de nome de arquivo deverá ser uma das seguintes:<br/>
 <ul>
 <li>. etl: arquivo de log de rastreamento de eventos (ETL).</li>
-<li>. log ou. txt: arquivo de texto.</li>
+<li>. log ou .txt: arquivo de texto.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -106,7 +106,7 @@ O MFTrace usa a biblioteca de desvios para conectar Media Foundation chamadas à
 <span id="TRACE_FORMAT_SEARCH_PATH"></span><span id="trace_format_search_path"></span>TRACE_FORMAT_SEARCH_PATH
 </dt> <dd>
 
-Para rastrear os componentes que usam o WPP (pré-processador de rastreamento de software) do Windows, defina essa variável de ambiente para especificar o caminho para os arquivos de formato de mensagem de rastreamento (TMF) para o componente.
+para rastrear os componentes que usam o Windows WPP (pré-processador de rastreamento de software), defina essa variável de ambiente para especificar o caminho para os arquivos de formato de mensagem de rastreamento (TMF) para o componente.
 
 </dd> <dt>
 
@@ -229,42 +229,42 @@ Você pode usar o MFTrace para responder a perguntas sobre o que acontece dentro
 </tr>
 <tr class="odd">
 <td>Quais objetos foram criados?</td>
-<td>&quot;COle32ExportDetours:: CoCreateInstance&quot;</td>
+<td>&quot;COle32ExportDetours::CoCreateInstance&quot;</td>
 </tr>
 <tr class="even">
-<td>As transformações Media Foundation (MFTs) no pipeline processam dados?</td>
-<td>&quot;CMFTransformDetours::P rocessOutput &quot; , &quot; CMFTransformDetours::P rocessinput&quot;</td>
+<td>As MFTs (Media Foundation de dados) no pipeline processaram dados?</td>
+<td>&quot;CMFTransformDetours::P rocessOutput, &quot; &quot; CMFTransformDetours::P rocessInput&quot;</td>
 </tr>
 <tr class="odd">
-<td>Quais Estados foram definidos no MFTs?</td>
+<td>Quais estados foram definidos nos MFTs?</td>
 <td>&quot;CMFTransformDetours::P rocessMessage&quot;</td>
 </tr>
 <tr class="even">
-<td>Uma MFT solicitou dados de entrada?</td>
-<td>&quot;MF_E_TRANSFORM_NEED_MORE_INPUT &quot; (MFT síncrona), &quot; METRANSFORMNEEDINPUT &quot; (MFT assíncrono).</td>
+<td>Uma solicitação MFT solicitou dados de entrada?</td>
+<td>&quot;MF_E_TRANSFORM_NEED_MORE_INPUT &quot; (MFT síncrono), &quot; METransformNeedInput &quot; (MFT assíncrono).</td>
 </tr>
 <tr class="odd">
-<td>Uma MFT assíncrona produz dados de saída?</td>
-<td>&quot;ProcessOutputs disponível&quot;</td>
+<td>Uma MFT assíncrona produziu dados de saída?</td>
+<td>&quot;ProcessOutputs disponíveis&quot;</td>
 </tr>
 <tr class="even">
-<td>Houve amostras de solicitação de coletor de mídia?</td>
+<td>Um sink de mídia solicitou exemplos?</td>
 <td>&quot;MEStreamSinkRequestSample&quot;</td>
 </tr>
 <tr class="odd">
-<td>Um coletor de mídia recebeu amostras?</td>
+<td>Um sink de mídia recebeu exemplos?</td>
 <td>&quot;CMFStreamSinkDetours::P rocessSample&quot;</td>
 </tr>
 <tr class="even">
-<td>DirectShow: quais exemplos foram processados?</td>
-<td>&quot;exemplo &quot; , &quot; CMemInputPinDetours&quot;</td>
+<td>DirectShow: Quais exemplos foram processados?</td>
+<td>&quot;sample &quot; , &quot; CMemInputPinDetours&quot;</td>
 </tr>
 <tr class="odd">
 <td>DirectShow: qual grafo de filtro foi usado?</td>
-<td>&quot;CGraphHelpers:: Trace&quot;</td>
+<td>&quot;CGraphHelpers::Trace&quot;</td>
 </tr>
 <tr class="even">
-<td>Houve vários processos?</td>
+<td>Havia vários processos?</td>
 <td>&quot;CreateProcess&quot;
 <blockquote>
 [!Note]<br />

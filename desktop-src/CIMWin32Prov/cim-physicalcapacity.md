@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM PhysicalCapacity é uma classe abstrata que representa os requisitos mínimos e máximos de um elemento físico e sua capacidade de dar suporte a diferentes tipos de hardware.
+description: A classe Cim PhysicalCapacity é uma classe abstrata que representa os requisitos mínimos e máximos de um elemento físico e sua capacidade de dar suporte \_ a diferentes tipos de hardware.
 ms.assetid: e422aec0-1830-464e-ac52-2911652165a2
 ms.tgt_platform: multiple
-title: Classe CIM_PhysicalCapacity
+title: CIM_PhysicalCapacity classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,23 +17,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 50f928f69d34600c0f90865a4df44a5d7697fc89
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 78574fc7acc8e4b96be745d5eb2d00d2715d1ba3a570dd514be1ba0a3a706581
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118678358"
 ---
-# <a name="cim_physicalcapacity-class"></a>\_Classe CIM PhysicalCapacity
+# <a name="cim_physicalcapacity-class"></a>Classe Cim \_ PhysicalCapacity
 
-A classe **CIM \_ PhysicalCapacity** é uma classe abstrata que representa os requisitos mínimos e máximos de um elemento físico e sua capacidade de dar suporte a diferentes tipos de hardware. Por exemplo, os requisitos mínimos e máximos de memória podem ser modelados como uma subclasse de **\_ PhysicalCapacity CIM**.
+A **classe Cim \_ PhysicalCapacity** é uma classe abstrata que representa os requisitos mínimos e máximos de um elemento físico e sua capacidade de dar suporte a diferentes tipos de hardware. Por exemplo, requisitos mínimos e máximos de memória podem ser modelados como uma **subclasse de Cim \_ PhysicalCapacity**.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) modelo CIM DMTF são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
-A sintaxe a seguir é simplificada do código formato MOF (MOF) e inclui todas as suas propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
+A sintaxe a seguir é simplificada Managed Object Format código (MOF) e inclui todas as suas propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,13 +49,13 @@ class CIM_PhysicalCapacity
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ PhysicalCapacity** tem estes tipos de membros:
+A **classe \_ Cim PhysicalCapacity** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ PhysicalCapacity** tem essas propriedades.
+A **classe \_ Cim PhysicalCapacity** tem essas propriedades.
 
 <dl> <dt>
 
@@ -68,10 +68,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrição textual do objeto.
+Descrição textual curta do objeto.
 
 </dd> <dt>
 
@@ -97,10 +97,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Rótulo pelo qual o objeto é conhecido. Quando em uma subclasse, essa propriedade pode ser substituída como uma propriedade de chave.
+Rótulo pelo qual o objeto é conhecido. Quando subclasse, essa propriedade pode ser substituído para ser uma propriedade de chave.
 
 </dd> </dl>
 
@@ -108,7 +108,7 @@ Rótulo pelo qual o objeto é conhecido. Quando em uma subclasse, essa proprieda
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -118,8 +118,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

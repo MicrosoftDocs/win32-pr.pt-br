@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d592ad0b11abf2b349b0810d67b05f2ee4086060
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 60765a6cfd90ae1ea244b9b521e58bb5aeb3c4afd4217d5e39c51c94de02c324
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118940059"
 ---
 # <a name="inapenforcementclientconnectiongetenforcerprivatedata-method"></a>Método INapEnforcementClientConnection:: GetEnforcerPrivateData
 
@@ -54,7 +54,7 @@ Um ponteiro para um ponteiro para um blob de dados opaco [**PrivateData**](/wind
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Outros códigos de erro específicos de COM também podem ser retornados.
 
@@ -62,7 +62,7 @@ Outros códigos de erro específicos de COM também podem ser retornados.
 
 | Código de retorno                                                                                     | Descrição                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>           | Operação bem-sucedida.<br/>                                    |
+| <dl> <dt>**S \_ OK**</dt> </dl>           | Êxito na operação.<br/>                                    |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Erro de permissões, acesso negado.<br/>                       |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | O limite de recursos do sistema não pôde executar a operação.<br/> |
 
@@ -76,9 +76,9 @@ Outros códigos de erro específicos de COM também podem ser retornados.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                |
-| parâmetro<br/>                   | <dl> <dt>NapEnforcementClient. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                      |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                |
+| Cabeçalho<br/>                   | <dl> <dt>NapEnforcementClient. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>NapEnforcementClient. idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 

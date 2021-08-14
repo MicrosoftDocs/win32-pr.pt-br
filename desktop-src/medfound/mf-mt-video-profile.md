@@ -4,12 +4,12 @@ ms.assetid: 29D1CCCA-CC11-46F1-A094-8BA8F74F7EE9
 title: Atributo MF_MT_VIDEO_PROFILE (Mfapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf6dbf8d324c7a451c1d2affb9f348a3ef2e1806
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9d2af7c6ebbbbb78626e96385a6eda5a25c38a3ae8473fac866866248570cc48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105812042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118741389"
 ---
 # <a name="mf_mt_video_profile-attribute"></a>\_Atributo de \_ perfil de vídeo MF MT \_
 
@@ -37,8 +37,8 @@ Padrão recomendado: [**perfil \_ principal do eAVEncH264VProfile**](/windows/de
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                            |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ somente aplicativos da área de trabalho\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Somente aplicativos da área de trabalho R2\]<br/>                            |
 | parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
 
 

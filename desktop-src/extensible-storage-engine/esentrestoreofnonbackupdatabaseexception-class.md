@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2c9057d309e7aad37892a1e12ba56dd262d9785d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cdac997bfed469129e2b1999c0ddf75cd01b3d237be529f85e8614a77a534d01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105791055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118774004"
 ---
 # <a name="esentrestoreofnonbackupdatabaseexception-class"></a>Classe EsentRestoreOfNonBackupDatabaseException
 
@@ -38,7 +38,7 @@ Classe base para JET_err. RestoreOfNonBackupDatabase exceções.
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
+  [System.Exception](/dotnet/api/system.exception)  
     [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
       [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
         [Microsoft. ISAM. ESENT. Interop. EsentApiException](./esentapiexception-class.md)  
@@ -48,7 +48,7 @@ Classe base para JET_err. RestoreOfNonBackupDatabase exceções.
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` vb
 'Declaration

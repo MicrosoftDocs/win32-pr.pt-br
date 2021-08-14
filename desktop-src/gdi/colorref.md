@@ -5,12 +5,12 @@ title: COLORREF (windef. h)
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 07/27/2020
-ms.openlocfilehash: 6836cfcc1b18d0b20d5e347fb83206551b27de06
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3e51b2a906af5939a5c7a8753e5fcc4fbcfae64590e62bcb6df1da2c2bd8426d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104989460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118761889"
 ---
 # <a name="colorref"></a>COLORREF
 
@@ -45,7 +45,7 @@ const COLORREF rgbBlack =  0x00000000;
 const COLORREF rgbWhite =  0x00FFFFFF;
 ```
 
-Exemplo de [exemplos clássicos do Windows](https://github.com/microsoft/Windows-classic-samples) no github.
+exemplo de [exemplos clássicos Windows](https://github.com/microsoft/Windows-classic-samples) em GitHub.
 
 ## <a name="requirements"></a>Requisitos
 
