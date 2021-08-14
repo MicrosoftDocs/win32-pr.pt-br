@@ -4,12 +4,12 @@ ms.assetid: 42b6b82b-ac64-4a07-956c-473dd57a128d
 title: Propriedade MFPKEY_WMAAECMA_DEVICE_INDEXES (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b377e4335e78e81c8e7d3c5a9a0c1d00b8f9bae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c4e9fd9eae8d53f1fa19bd8b55d94d292b9cd6cbf214b7a71a6473f1af647f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117872976"
 ---
 # <a name="mfpkey_wmaaecma_device_indexes-property"></a>\_Propriedade de \_ índices de dispositivo MFPKEY WMAAECMA \_
 
@@ -66,9 +66,9 @@ varDeviceIndexes.lVal = (unsigned long)(iSpeakerIndex << 16) +
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 
 
 

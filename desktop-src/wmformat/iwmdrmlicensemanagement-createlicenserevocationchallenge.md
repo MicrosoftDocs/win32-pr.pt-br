@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMLicenseManagement CreateLicenseRevocationChallenge (wmdrmsdk. h)
+title: Método IWMDRMLicenseManagement CreateLicenseRevocationChallenge (Wmdrmsdk.h)
 description: O método CreateLicenseRevocationChallenge gera um desafio de revogação de licença.
 ms.assetid: 31fcf7a7-1af8-4474-abac-eddb1070975b
 keywords:
-- Formato de mídia do Windows do método CreateLicenseRevocationChallenge
-- Método CreateLicenseRevocationChallenge Windows Media Format, interface IWMDRMLicenseManagement
-- Formato de mídia do Windows de interface IWMDRMLicenseManagement, método CreateLicenseRevocationChallenge
+- Formato de mídia do windows do método CreateLicenseRevocationChallenge
+- O método CreateLicenseRevocationChallenge windows Formato de Mídia , interface IWMDRMLicenseManagement
+- Formato de mídia da interface IWMDRMLicenseManagement , método CreateLicenseRevocationChallenge
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e7fd0acb41b9a2548e5be708611529bea92e131
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 851233229d7dde113cf21cfb38419067679843b34ae59ece0e32e326c2a91c46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105815499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117846945"
 ---
-# <a name="iwmdrmlicensemanagementcreatelicenserevocationchallenge-method"></a>Método IWMDRMLicenseManagement:: CreateLicenseRevocationChallenge
+# <a name="iwmdrmlicensemanagementcreatelicenserevocationchallenge-method"></a>Método IWMDRMLicenseManagement::CreateLicenseRevocationChallenge
 
-O método **CreateLicenseRevocationChallenge** gera um desafio de revogação de licença.
+O **método CreateLicenseRevocationChallenge** gera um desafio de revogação de licença.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,51 +47,51 @@ HRESULT CreateLicenseRevocationChallenge(
 
 <dl> <dt>
 
-*pbMachineID* \[ no\]
+*pbMachineID* \[ Em\]
 </dt> <dd>
 
-Identificador de máquina especificado pelo usuário. Esse valor é usado para consultar uma licença no servidor e deve estar de acordo com qualquer formato que o servidor de licença usa.
+Identificador de computador especificado pelo usuário. Esse valor é usado para consultar uma licença no servidor e deve estar em conformidade com qualquer formato usado pelo servidor de licença.
 
 </dd> <dt>
 
-*cbMachineID* \[ no\]
+*cbMachineID* \[ Em\]
 </dt> <dd>
 
-Tamanho, em bytes, do identificador da máquina.
+Tamanho, em bytes, do identificador do computador.
 
 </dd> <dt>
 
-*pbChallenge* \[ no\]
+*pbChallenge* \[ Em\]
 </dt> <dd>
 
-Dados de desafio especificados pelo usuário. Esses dados, além do identificador da máquina, são usados para consultar o servidor de licença para que as licenças sejam revogadas.
+Dados de desafio especificados pelo usuário. Esses dados, além do identificador do computador, são usados para consultar o servidor de licença para que as licenças sejam revogadas.
 
 </dd> <dt>
 
-*cbChallenge* \[ no\]
+*cbChallenge* \[ Em\]
 </dt> <dd>
 
 Tamanho, em bytes, dos dados de desafio.
 
 </dd> <dt>
 
-*ppbChallengeOutput* \[ fora\]
+*ppbChallengeOutput* \[ out\]
 </dt> <dd>
 
-Endereço de um ponteiro que recebe o endereço da saída de desafio. Esse buffer é o dado que é enviado para o serviço de revogação de licença. Quando terminar com esses dados, você deverá liberar a memória chamando **CoTaskMemFree**.
+Endereço de um ponteiro que recebe o endereço da saída do desafio. Esse buffer são os dados que são enviados para o serviço de revogação de licença. Quando terminar com esses dados, você deverá liberar a memória chamando **CoTaskMemFree.**
 
 </dd> <dt>
 
-*pcbChallengeOutput* \[ fora\]
+*pcbChallengeOutput* \[ out\]
 </dt> <dd>
 
 Endereço de uma variável que recebe o tamanho dos dados de saída de desafio alocados, em bytes.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -113,7 +113,7 @@ Nenhum.
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
@@ -121,7 +121,7 @@ Nenhum.
 
 <dl> <dt>
 
-[**Interface IWMDRMLicenseManagement**](iwmdrmlicensemanagement.md)
+[**IWMDRMLicenseManagement Interface**](iwmdrmlicensemanagement.md)
 </dt> </dl>
 
  

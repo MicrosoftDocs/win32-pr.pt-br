@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45f8fdfe9576b2985ecfb80238635eea49d55c82
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 406f75bf780faf10488e54cddfe617b7f219478209171afa03491958957af266
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103638435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117847629"
 ---
 # <a name="hasscript"></a>HasScript
 
@@ -35,7 +35,7 @@ g \_ wszWMHasScript
 
 Este é um atributo codificado.
 
-Este atributo não pode ser duplicado no nível do arquivo. Se esse atributo for usado para um fluxo individual, ele será tratado como metadados personalizados e não transmitirá seu significado normal para os objetos do SDK do Windows Media Format.
+Este atributo não pode ser duplicado no nível do arquivo. se esse atributo for usado para um fluxo individual, ele será tratado como metadados personalizados e não transmitirá seu significado normal para os objetos do SDK do formato de mídia Windows.
 
 ## <a name="see-also"></a>Confira também
 
@@ -44,9 +44,9 @@ Este atributo não pode ser duplicado no nível do arquivo. Se esse atributo for
 [**Lista de Atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

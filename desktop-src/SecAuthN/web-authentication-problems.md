@@ -4,12 +4,12 @@ ms.assetid: 25A024AA-9A70-40A5-BF5E-452FD148D0D2
 title: Problemas de autenticação da Web
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f996527c58b9620b8417ac3e6cdd6e0f61bd5217
-ms.sourcegitcommit: 6377cd944d1f09f2dfe5727170ca8b330c8235bf
+ms.openlocfilehash: 7c722aefa35849485d2c8958e17c654b5bb6477479ac1765e76e648fe15f9826
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "113353659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117785856"
 ---
 # <a name="web-authentication-problems"></a>Problemas de autenticação da Web
 
@@ -21,7 +21,7 @@ Este tópico descreve dicas de solução de problemas para usar as APIs do Agent
 
 ## <a name="operational-logs"></a>Logs operacionais
 
-Geralmente é possível determinar o que não está funcionando usando logs operacionais. Há um canal de log de eventos dedicado Microsoft-Windows-WebAuth Operational que permite aos desenvolvedores de sites entender como suas páginas da Web estão sendo processadas pelo Agente de Autenticação \\ da Web. Para habilita-lo, eventvwr.exe e habilitar o log operacional no Aplicativo e Serviços \\ Microsoft \\ Windows \\ WebAuth. Além disso, o Agente de Autenticação da Web anexa uma cadeia de caracteres exclusiva à cadeia de caracteres do agente do usuário para se identificar no servidor Web. A cadeia de caracteres é "MSAuthHost/1.0". Observe que o número da versão pode mudar no futuro, portanto você não deve depender do número daquela versão no seu código. Um exemplo da cadeia de caracteres de agente de usuário completa é o seguinte:
+Geralmente é possível determinar o que não está funcionando usando logs operacionais. Há um canal de log de eventos dedicado Microsoft-Windows-WebAuth Operational que permite aos desenvolvedores de sites entender como suas páginas da Web estão sendo processadas pelo \\ Agente de Autenticação da Web. Para habilita-lo, eventvwr.exe e habilitar o log operacional no Aplicativo e Serviços \\ microsoft \\ Windows \\ WebAuth. Além disso, o Agente de Autenticação da Web anexa uma cadeia de caracteres exclusiva à cadeia de caracteres do agente do usuário para se identificar no servidor Web. A cadeia de caracteres é "MSAuthHost/1.0". Observe que o número da versão pode mudar no futuro, portanto você não deve depender do número daquela versão no seu código. Um exemplo da cadeia de caracteres completa do agente do usuário é o seguinte:
 
 `User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Win64; x64; Trident/6.0; MSAuthHost/1.0)`
 
@@ -40,11 +40,11 @@ Exemplo de uso de logs operacionais
 
 ## <a name="using-fiddler-with-web-authentication-broker"></a>Usando o Fiddler com o Agente de Autenticação da Web
 
-O depurador da Web fiddler pode ser usado com Windows 8 aplicativos.
+O depurador da Web do Fiddler pode ser usado com Windows 8 aplicativos.
 
 1.  Por o AuthHost executar no seu próprio contêiner de aplicativo para dar maior capacidade de rede privada, você deve definir uma chave de registro: Windows Registry Editor Version 5.00
 
-    **HKEY \_ LOCAL \_ MACHINE** SOFTWARE Microsoft Windows NT opções de execução de arquivo de imagem \\  \\  \\  \\ **CurrentVersion** \\  \\ **authhost.exe** \\ **EnablePrivateNetwork** = 00000001<dl> <dt>
+    **HKEY \_ SOFTWARE \_ DE COMPUTADOR LOCAL** A Microsoft Windows NT opções de execução de arquivo de imagem \\  \\  \\  \\ **CurrentVersion** \\  \\ **authhost.exe** \\ **EnablePrivateNetwork** = 00000001<dl> <dt>
 
                      Data type
 </dt> <dd>                     DWORD</dd> </dl>

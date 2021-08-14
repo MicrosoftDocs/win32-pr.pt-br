@@ -3,9 +3,9 @@ title: Evento Player. CurrentPlaylistItemAvailable
 description: O evento CurrentPlaylistItemAvailable ocorre quando a playlist atual fica disponível. | Evento Player. CurrentPlaylistItemAvailable
 ms.assetid: 4894e2fc-3464-413f-8abf-8b5e91899946
 keywords:
-- Evento CurrentPlaylistItemAvailable do Windows Media Player
-- Evento CurrentPlaylistItemAvailable Windows Media Player, classe Player
-- Classe de jogador Windows Media Player, evento CurrentPlaylistItemAvailable
+- Windows Media Player de eventos CurrentPlaylistItemAvailable
+- Windows Media Player de eventos CurrentPlaylistItemAvailable, classe Player
+- classe de jogador Windows Media Player, evento CurrentPlaylistItemAvailable
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fe5809e50d572cfb8eb7a36220d083ec18a0a76
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1c4c2543f99d9bc645fa021d7dc5c94f66369b3c3151647dc4d575aab0a32f62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105771526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118338132"
 ---
 # <a name="playercurrentplaylistitemavailable-event"></a>Evento Player. CurrentPlaylistItemAvailable
 
@@ -49,7 +49,7 @@ Player.CurrentPlaylistItemAvailable(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -57,7 +57,7 @@ Esse evento não retorna um valor.
 
 O nome da lista de reprodução atual pode ser usado para recuperar o objeto de **playlist** correspondente usando a *playlistcollection*. método **getByName** .
 
-O valor dos parâmetros de evento é especificado pelo Windows Media Player e pode ser acessado ou transmitido para um método em um arquivo JScript importado usando o nome de parâmetro fornecido. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
+o valor dos parâmetros de evento é especificado por Windows Media Player e pode ser acessado ou passado para um método em um arquivo de JScript importado usando o nome de parâmetro fornecido. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
 
 **Windows Media Player 10 Mobile:** Não há suporte para esse evento.
 

@@ -3,7 +3,7 @@ title: NM_RETURN código de notificação (commctrl. h)
 description: Notifica uma janela pai do controle que o controle tem o foco de entrada e que o usuário pressionou a tecla ENTER. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 2c4839bc-6b23-469b-978f-cdf5f7bc0549
 keywords:
-- NM_RETURN de código de notificação controles do Windows
+- NM_RETURN código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c6cebd089873df5471c9b25710efafaab4d246f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b5bc3104f87c6b0adf8c9ce486b62dc42ecd5e4a0fff6c407ce93bec9a3c8f90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118410526"
 ---
 # <a name="nm_return-notification-code"></a>Código de notificação de retorno de NM \_
 
@@ -45,7 +45,7 @@ Um ponteiro para uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-rich
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é ignorado pelo controle.
 
@@ -55,8 +55,8 @@ O valor de retorno é ignorado pelo controle.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 

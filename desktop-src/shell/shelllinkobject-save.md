@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 0283b839069464a1a059bd11ef52b522f7ec7072
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4d0d03b10aca45fadb5a0072eb94114103ab37d0c478c8a90241b5ab97ec36a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104989099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857165"
 ---
 # <a name="shelllinkobjectsave-method"></a>Método ShellLinkObject. Save
 
@@ -50,9 +50,9 @@ Um valor de cadeia de caracteres que contém o caminho totalmente qualificado do
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra o uso apropriado desse método para JScript, VBScript e Visual Basic.
+o exemplo a seguir mostra o uso apropriado desse método para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -172,7 +172,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows 2000 Professional com SP3 \[\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional somente com \[ aplicativos da área de trabalho do SP3\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                          |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |

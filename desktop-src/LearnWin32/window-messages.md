@@ -1,26 +1,26 @@
 ---
-title: Mensagens de janela (introdução ao Win32 e ao C++)
-description: Mensagens de janela (introdução ao Win32 e ao C++)
+title: mensagens de janela (Introdução com Win32 e C++)
+description: mensagens de janela (Introdução com Win32 e C++)
 ms.assetid: 90c20456-44ed-4f0f-a6d3-b6c5660f0bc7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c00da564396e0f95947e33fb7d8db8b217ac5cdf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d0e3655ddbd053cf9f84b4298518c4616679e83fe1eb48fb60011e865ca8a605
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118387509"
 ---
-# <a name="window-messages-get-started-with-win32-and-c"></a>Mensagens de janela (introdução ao Win32 e ao C++)
+# <a name="window-messages-get-started-with-win32-and-c"></a>mensagens de janela (Introdução com Win32 e C++)
 
 Um aplicativo de GUI deve responder a eventos do usuário e do sistema operacional.
 
 - Os **eventos do usuário** incluem todas as maneiras pelas quais alguém pode interagir com seu programa: cliques do mouse, traços-chave, gestos de tela sensível ao toque e assim por diante.
-- **Os eventos do sistema operacional** incluem qualquer "fora" do programa que possa afetar a forma como o programa se comporta. Por exemplo, o usuário pode conectar um novo dispositivo de hardware ou o Windows pode entrar em um estado de energia menor (suspensão ou hibernação).
+- **Os eventos do sistema operacional** incluem qualquer "fora" do programa que possa afetar a forma como o programa se comporta. por exemplo, o usuário pode conectar um novo dispositivo de hardware ou Windows pode entrar em um estado de energia menor (suspensão ou hibernação).
 
 Esses eventos podem ocorrer a qualquer momento enquanto o programa estiver em execução, em quase qualquer ordem. Como você estrutura um programa cujo fluxo de execução não pode ser previsto com antecedência?
 
-Para resolver esse problema, o Windows usa um modelo de passagem de mensagens. O sistema operacional se comunica com a janela do aplicativo passando mensagens para ele. Uma mensagem é simplesmente um código numérico que designa um evento específico. Por exemplo, se o usuário pressionar o botão esquerdo do mouse, a janela receberá uma mensagem com o seguinte código de mensagem.
+para resolver esse problema, Windows usa um modelo de passagem de mensagens. O sistema operacional se comunica com a janela do aplicativo passando mensagens para ele. Uma mensagem é simplesmente um código numérico que designa um evento específico. Por exemplo, se o usuário pressionar o botão esquerdo do mouse, a janela receberá uma mensagem com o seguinte código de mensagem.
 
 ```C++
 #define WM_LBUTTONDOWN    0x0201

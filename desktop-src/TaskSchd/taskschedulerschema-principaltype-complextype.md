@@ -1,9 +1,9 @@
 ---
-title: Tipo complexo de PrincipalType
-description: Define o atributo, os elementos filho e as informações de sequenciamento para o elemento principal.
+title: Tipo complexo principalType
+description: Define o atributo, elementos filho e informações de sequenciamento para o elemento Principal.
 ms.assetid: 0f39d0a7-c9c9-402f-afe1-4378466ac1b6
 keywords:
-- tipo complexo de PrincipalType Agendador de Tarefas
+- tipo complexo principalType Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 037013a4b40984df41e52aa13be69c1247b1c05c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e6b2d7e71642ab0294f6e930eef40c5841aa5832fcc3a8d1c45aef2d7e80bbda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118611908"
 ---
-# <a name="principaltype-complex-type"></a>Tipo complexo de PrincipalType
+# <a name="principaltype-complex-type"></a>Tipo complexo principalType
 
-Define o atributo, os elementos filho e as informações de sequenciamento para o elemento [**principal**](taskschedulerschema-principal-principaltype-element.md) .
+Define o atributo, elementos filho e informações de sequenciamento para o [**elemento Principal.**](taskschedulerschema-principal-principaltype-element.md)
 
 ``` syntax
 <xs:complexType name="principalType">
@@ -71,13 +71,13 @@ Define o atributo, os elementos filho e as informações de sequenciamento para 
 
 | Elemento                                                                                             | Type                                                                                     | Descrição                                                                                                                 |
 |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| [**DisplayName**](taskschedulerschema-displayname-principaltype-element.md)                        | string                                                                                   | Especifica o nome da entidade de segurança que é exibida na interface do usuário do Agendador de Tarefas (UI).<br/>                 |
-| [**GroupId**](taskschedulerschema-groupid-principaltype-element.md)                                | [**não vazio**](taskschedulerschema-nonemptystring-simpletype.md)                  | Especifica o identificador do grupo de usuários que é necessário para executar tarefas associadas à entidade de segurança.<br/> |
-| [**LogonType**](taskschedulerschema-logontype-principaltype-element.md)                            | [**logonType**](taskschedulerschema-logontype-simpletype.md)                            | Especifica o método de logon de segurança que é necessário para executar tarefas associadas à entidade.<br/>        |
-| [**ProcessTokenSidType**](taskschedulerschema-processtokensidtype-principaltype-element.md)        | [**processTokenSidType**](taskschedulerschema-processtokensidtype-simpletype.md)        | Especifica os tipos de SID (identificador de segurança do processo) que podem ser usados pelas tarefas.<br/>                              |
+| [**Displayname**](taskschedulerschema-displayname-principaltype-element.md)                        | string                                                                                   | Especifica o nome da entidade de entidade que é exibida na interface do usuário Agendador de Tarefas usuário.<br/>                 |
+| [**Groupid**](taskschedulerschema-groupid-principaltype-element.md)                                | [**nonEmptyString**](taskschedulerschema-nonemptystring-simpletype.md)                  | Especifica o identificador do grupo de usuários necessário para executar tarefas associadas à entidade de entidade.<br/> |
+| [**LogonType**](taskschedulerschema-logontype-principaltype-element.md)                            | [**logonType**](taskschedulerschema-logontype-simpletype.md)                            | Especifica o método de logon de segurança necessário para executar tarefas associadas à entidade de segurança.<br/>        |
+| [**ProcessTokenSidType**](taskschedulerschema-processtokensidtype-principaltype-element.md)        | [**processTokenSidType**](taskschedulerschema-processtokensidtype-simpletype.md)        | Especifica os tipos de SID (identificador de segurança) do processo que podem ser usados por tarefas.<br/>                              |
 | [**RequiredPrivileges**](taskschedulerschema-requiredprivileges-requiredprivilegestype-element.md) | [**requiredPrivilegesType**](taskschedulerschema-requiredprivilegestype-complextype.md) | Especifica os privilégios necessários para executar a tarefa.<br/>                                                               |
-| [**RunLevel**](taskschedulerschema-runlevel-principaltype-element.md)                              | [**runLevelType**](taskschedulerschema-runleveltype-simpletype.md)                      | Especifica o nível de permissão em que a tarefa será executada.<br/>                                                     |
-| [**ID**](taskschedulerschema-userid-principaltype-element.md)                                  | [**não vazio**](taskschedulerschema-nonemptystring-simpletype.md)                  | Especifica o identificador de usuário que é necessário para executar tarefas associadas à entidade de segurança.<br/>              |
+| [**Runlevel**](taskschedulerschema-runlevel-principaltype-element.md)                              | [**runLevelType**](taskschedulerschema-runleveltype-simpletype.md)                      | Especifica o nível de permissão em que a tarefa será executado.<br/>                                                     |
+| [**Userid**](taskschedulerschema-userid-principaltype-element.md)                                  | [**nonEmptyString**](taskschedulerschema-nonemptystring-simpletype.md)                  | Especifica o identificador de usuário necessário para executar tarefas associadas à entidade de entidade.<br/>              |
 
 
 
@@ -87,7 +87,7 @@ Define o atributo, os elementos filho e as informações de sequenciamento para 
 
 | Nome | Tipo | Descrição                                           |
 |------|------|-------------------------------------------------------|
-| id   | ID   | Especifica o identificador da entidade de segurança.<br/> |
+| id   | ID   | Especifica o identificador da entidade de entidade de trabalho.<br/> |
 
 
 
@@ -97,8 +97,8 @@ Define o atributo, os elementos filho e as informações de sequenciamento para 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/> |
 
 
 
@@ -106,7 +106,7 @@ Define o atributo, os elementos filho e as informações de sequenciamento para 
 
 <dl> <dt>
 
-[Tipos complexos de esquema de Agendador de Tarefas](task-scheduler-schema-complex-types.md)
+[Agendador de Tarefas complexos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

@@ -4,12 +4,12 @@ ms.assetid: 74d9fe65-f7f4-4971-9550-27884ac4146b
 title: Localizar um par de filtros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1717f6ad61ad7310fdaa11ea5baaab4dcb7f8011
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 60d2f20a7145d2365e7ee1ec261ea861ddc5fa1eb01d0c3b2503f6f53fa25815
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104009878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118401760"
 ---
 # <a name="find-a-filters-peer"></a>Localizar um par de filtros
 
@@ -95,7 +95,7 @@ if (SUCCEEDED(GetNextFilter(pF, PINDIR_INPUT, &pUpstream)))
 
 Um filtro pode estar conectado a dois ou mais filtros em qualquer direção. Por exemplo, pode ser um filtro de divisão, com vários filtros downstream. Ou pode ser um filtro Mux, com vários filtros upstream a partir dele. Portanto, talvez você queira coletar todos eles em uma lista.
 
-O código a seguir mostra uma maneira possível de implementar tal função. Ele usa a classe [**CGenericList**](cgenericlist.md) do DirectShow; Você poderia escrever uma função equivalente usando alguma outra estrutura de dados.
+O código a seguir mostra uma maneira possível de implementar tal função. ele usa a classe DirectShow [**CGenericList**](cgenericlist.md) ; Você poderia escrever uma função equivalente usando alguma outra estrutura de dados.
 
 
 ```C++

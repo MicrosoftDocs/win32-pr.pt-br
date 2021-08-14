@@ -1,6 +1,6 @@
 ---
-title: opção/i (MDMERGE)
-description: A opção/i especifica o diretório que contém os arquivos de metadados a serem mesclados.
+title: /i switch (MDMERGE)
+description: A opção /i especifica o diretório que contém arquivos de metadados a serem mesclados.
 ms.assetid: 52CFCB90-555F-487E-BB42-76B6DFC5DA93
 keywords:
 - /i alternar MIDL
@@ -12,29 +12,29 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3fbf038d16d05933fe889fc7d4088708765173dc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 881fa5f6428e85a089fb914e4a4b7dadf36415d1c2c67a0c58ce6d66974853e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105775710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118385464"
 ---
-# <a name="i-switch"></a>opção/i
+# <a name="i-switch"></a>/i switch
 
-A opção **/i** especifica o diretório que contém os arquivos de metadados a serem mesclados.
+A **opção /i** especifica o diretório que contém arquivos de metadados a serem mesclados.
 
 ``` syntax
 mdmerge /i metadata_directory
 ```
 
-## <a name="switch-options"></a>Opções de comutação
+## <a name="switch-options"></a>Opções de opção
 
 <dl> <dt>
 
-*diretório de metadados \_* 
+*diretório de \_ metadados* 
 </dt> <dd>
 
-Especifica o diretório que contém os arquivos de metadados a serem mesclados.
+Especifica o diretório que contém arquivos de metadados a serem mesclados.
 
 </dd> </dl>
 
@@ -42,7 +42,7 @@ Especifica o diretório que contém os arquivos de metadados a serem mesclados.
 
 ## <a name="examples"></a>Exemplos
 
-**diretório de metadados mdmerge/i \_**
+**Diretório de metadados mdmerge /i \_**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ Especifica o diretório que contém os arquivos de metadados a serem mesclados.
 
 <dl> <dt>
 
-[Sintaxe de linha de comando MIDL geral](general-midl-command-line-syntax.md)
+[Sintaxe geral da linha de comando MIDL](general-midl-command-line-syntax.md)
 </dt> </dl>
 
  

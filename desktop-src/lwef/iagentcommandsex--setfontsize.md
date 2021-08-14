@@ -1,17 +1,17 @@
 ---
-title: IAgentCommandsEx setfontize
-description: IAgentCommandsEx setfontize
+title: IAgentCommandsEx SetFontSize
+description: IAgentCommandsEx SetFontSize
 ms.assetid: 095f78d2-ef91-4880-ad49-dd9a94f02891
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19bb9a638141dc3cebe683748500510ea848a664
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: b92319178f2fbceb7b2e0cad9bdb35b740ebeaf108f864edb84b4413353e85e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104454000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118477198"
 ---
-# <a name="iagentcommandsexsetfontsize"></a>IAgentCommandsEx:: setfontize
+# <a name="iagentcommandsexsetfontsize"></a>IAgentCommandsEx::SetFontSize
 
 \[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
@@ -34,15 +34,15 @@ Tamanho da fonte.
 
 </dd> </dl>
 
-Essa propriedade determina o tamanho do ponto da fonte usada para exibir o texto no menu pop-up do caractere quando o aplicativo cliente é de entrada-ativo. O valor padrão para a configuração de fonte é baseado na configuração de fonte do menu para a configuração de ID de idioma do caractere-ou se não estiver definido, a configuração de idioma padrão do usuário. Se não houver entrada-ativa, o texto da [](/windows/desktop/lwef/the-command-object) [**legenda**](caption-property.md) do comando do aplicativo cliente aparecerá no tamanho do ponto especificado para o cliente de entrada-ativo.
+Essa propriedade determina o tamanho do ponto da fonte usada para exibir texto no menu pop-up do caractere quando o aplicativo cliente está ativo de entrada. O valor padrão para a configuração de fonte é baseado na configuração de fonte de menu para a configuração de ID de idioma do caractere ou se essa não for a configuração de idioma padrão do usuário. Se não for input-active, [](/windows/desktop/lwef/the-command-object) [](caption-property.md) o texto de Legenda de Comando do aplicativo cliente aparecerá no tamanho do ponto especificado para o cliente de entrada ativa.
 
-Essa propriedade aplica-se somente ao uso do caractere do aplicativo cliente; a configuração não afeta outros clientes do caractere ou outros caracteres do seu aplicativo cliente.
+Essa propriedade se aplica somente ao uso do caractere pelo aplicativo cliente; A configuração não afeta outros clientes do caractere ou outros caracteres do aplicativo cliente.
 
 ## <a name="see-also"></a>Consulte Também
 
-[**IAgentCommandsEx:: Getfonte**](iagentcommandsex--getfontsize.md), [**IAgentCommandsEx:: getnomedafonte**](iagentcommandsex--getfontname.md), [**IAgentCommandsEx:: setnomedafontename**](iagentcommandsex--setfontname.md)
+[**IAgentCommandsEx::GetFontSize**](iagentcommandsex--getfontsize.md), [**IAgentCommandsEx::GetFontName**](iagentcommandsex--getfontname.md), [**IAgentCommandsEx::SetFontName**](iagentcommandsex--setfontname.md)
 
 
- 
+ 
 
- 
+ 

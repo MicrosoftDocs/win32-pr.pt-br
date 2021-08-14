@@ -4,16 +4,16 @@ description: IAgentCharacterEx GetAutoPopupMenu
 ms.assetid: c29bfd6e-c7eb-426e-be38-2fa0bdb13211
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e0c7a3b8d1075c596f27af17df34c7cb94d8a1ab
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d2b9e23f9c8d9f6fefcc7b2606ebd18ab31ff93c8f8f82c1faf692f92545662d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118477974"
 ---
 # <a name="iagentcharacterexgetautopopupmenu"></a>IAgentCharacterEx::GetAutoPopupMenu
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT GetAutoPopupMenu(
@@ -30,22 +30,22 @@ Recupera se o servidor exibe automaticamente o menu pop-up do caractere.
 <span id="pbAutoPopupMenu"></span><span id="pbautopopupmenu"></span><span id="PBAUTOPOPUPMENU"></span>*pbAutoPopupMenu*
 </dt> <dd>
 
-Endereço de uma variável que recebe **true** se o servidor do Microsoft Agent manipular automaticamente a exibição do menu pop-up do caractere e **false** se não.
+Endereço de uma variável que receberá **True se** o servidor do Microsoft Agent manipular automaticamente a exibição do menu pop-up do caractere e **False** se não.
 
 </dd> </dl>
 
-Quando essa propriedade é definida como **false**, seu aplicativo deve exibir o menu pop-up usando o método [**IAgentCharacterEx:: ShowPopupMenu**](iagentcharacterex--showpopupmenu.md) .
+Quando essa propriedade é definida como **False**, seu aplicativo deve exibir o menu pop-up usando o [**método IAgentCharacterEx::ShowPopupMenu.**](iagentcharacterex--showpopupmenu.md)
 
-Essa propriedade aplica-se somente ao uso do caractere do aplicativo cliente; a configuração não afeta outros clientes do caractere ou outros caracteres do seu aplicativo cliente.
+Essa propriedade se aplica somente ao uso do caractere pelo aplicativo cliente; A configuração não afeta outros clientes do caractere ou outros caracteres do aplicativo cliente.
 
 ## <a name="see-also"></a>Consulte Também
 
-[**IAgentCharacterEx:: SetAutoPopupMenu**](iagentcharacterex--setautopopupmenu.md), [ **IAgentCharacterEx:: ShowPopupMenu**](iagentcharacterex--showpopupmenu.md)
+[**IAgentCharacterEx::SetAutoPopupMenu**](iagentcharacterex--setautopopupmenu.md), [ **IAgentCharacterEx::ShowPopupMenu**](iagentcharacterex--showpopupmenu.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

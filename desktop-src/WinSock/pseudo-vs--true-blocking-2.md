@@ -1,25 +1,25 @@
 ---
-description: Operações de bloqueio de Pseudoblocking no Windows Sockets (Winsock).
+description: Pseudobloqueamento de operações de pseudobloqueamento Windows soquetes (Winsock).
 ms.assetid: fa8f29f1-bb4f-4814-ab8a-52d3c83232bb
-title: Pseudo-bloqueio e verdadeiro bloqueio
+title: Pseudo bloqueio e bloqueio verdadeiro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 082992aba884aebec30d35bc65d2cb6c49e29051
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 371935a2f8984ebd080da48492807b3f5ffa9286b991b16b516244ccf26ee093
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105807202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117740938"
 ---
-# <a name="pseudo-blocking-and-true-blocking"></a>Pseudo-bloqueio e verdadeiro bloqueio
+# <a name="pseudo-blocking-and-true-blocking"></a>Pseudo bloqueio e bloqueio verdadeiro
 
-Em 16 ambientes do Windows, o sistema operacional não dá suporte ao bloqueio verdadeiro. Portanto, uma operação de bloqueio que não pode ser concluída imediatamente é manipulada da seguinte maneira:
+Em 16 Windows ambientes, o bloqueio verdadeiro não é suportado pelo sistema operacional; portanto, uma operação de bloqueio que não pode ser concluída imediatamente é tratada da seguinte forma:
 
--   O provedor de serviços inicia a operação e, em seguida, insere um loop durante o qual ele despacha qualquer mensagem do Windows (produzindo o processador para outro thread, se necessário)
--   Em seguida, ele verifica a conclusão da função do Windows Sockets.
--   Se a função tiver sido concluída, ou se [**WSPCancelBlockingCall**](/previous-versions/windows/desktop/legacy/ms742269(v=vs.85)) tiver sido invocado, o loop será encerrado e a função de bloqueio é concluída com um resultado apropriado.
+-   O provedor de serviços inicia a operação e, em seguida, insinua um loop durante o qual ele envia Windows mensagens ( yielding the processor to another thread, se necessário)
+-   Em seguida, ele verifica a conclusão da função Windows Sockets.
+-   Se a função tiver sido concluída ou se [**WSPCancelBlockingCall**](/previous-versions/windows/desktop/legacy/ms742269(v=vs.85)) tiver sido invocado, o loop será encerrado e a função de bloqueio será concluída com um resultado apropriado.
 
-Isso é o que se destina ao pseudodispositivo do termo, e o loop mencionado acima é conhecido como o gancho de bloqueio padrão.
+Isso é o que se refere ao termo pseudo bloqueio e o loop mencionado acima é conhecido como o gancho de bloqueio padrão.
 
  
 

@@ -3,7 +3,7 @@ title: Propriedade Ribbon. QuickAccessToolbar
 description: Representa um contêiner para a barra de ferramentas de acesso rápido (QAT).
 ms.assetid: 8a873a48-4f8b-439d-acad-7da2081fbf40
 keywords:
-- Faixa de QuickAccessToolbar da propriedade Windows da faixa de propriedades
+- Windows da propriedade ribbon. QuickAccessToolbar
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad0e09b220bd60b60ccbb8ee05c2da9c4317ba78
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 83e1fa4cb5de43be2b7316d4ed1786c2a1325fa4468538e2ffea41d5d8c9ef0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118202313"
 ---
 # <a name="ribbonquickaccesstoolbar-property"></a>Propriedade Ribbon. QuickAccessToolbar
 
@@ -87,8 +87,8 @@ O exemplo a seguir demonstra a marcação básica para o elemento **Ribbon. Quic
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/> |
 
 
 

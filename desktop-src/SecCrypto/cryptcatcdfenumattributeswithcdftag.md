@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Wintrust.dll
-ms.openlocfilehash: bd3c5905c57d234d42cd89d18c2a141c4026250f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f1bffd01865b524b0f06003a6a46b8f81542d7f6113f98db55202e08d8dd7ee9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117768891"
 ---
 # <a name="cryptcatcdfenumattributeswithcdftag-function"></a>Função CryptCATCDFEnumAttributesWithCDFTag
 
@@ -85,7 +85,7 @@ Um ponteiro para uma função definida pelo usuário para manipular erros de an�
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Após o êxito, essa função retorna um ponteiro para uma estrutura [**CRYPTCATATTRIBUTE**](/windows/win32/api/mscat/ns-mscat-cryptcatattribute) . A função **CryptCATCDFEnumAttributesWithCDFTag** retornará um ponteiro **nulo** se falhar.
 
@@ -141,8 +141,8 @@ O exemplo a seguir mostra a sequência correta de atribuições para o parâmetr
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
 | DLL<br/>                      | <dl> <dt>Wintrust.dll</dt> </dl> |
 
 

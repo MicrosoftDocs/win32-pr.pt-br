@@ -6,12 +6,12 @@ keywords:
 - AriaRangeControlAttributesIncompatibleId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aef55ee57c4966896e666dd5a7ac1d20eb5257c6
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: 991f5de18be88682046cac6c4d4156f48fd3e4994d2e7b9ab1bbdc52f0a2e768
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104499178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118326739"
 ---
 # <a name="aria-range-control-attributes-incompatible"></a>Atributos de controle de intervalo do ARIA incompatíveis
 
@@ -38,9 +38,9 @@ Para corrigir esse erro, verifique sua implementação para garantir que os atri
 [Atributos de controle de intervalo do ARIA ausentes](aria-range-control-attributes-missing.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

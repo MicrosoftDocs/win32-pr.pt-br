@@ -3,9 +3,9 @@ title: Método IWMPNetwork setProxyBypassForLocal
 description: O método setProxyBypassForLocal especifica se o servidor proxy será ignorado se o servidor de origem estiver em uma rede local.
 ms.assetid: b308957a-0d7e-45be-8625-db198b276dad
 keywords:
-- método setProxyBypassForLocal Windows Media Player
+- Windows Media Player do método setProxyBypassForLocal
 - método setProxyBypassForLocal Windows Media Player, interface IWMPNetwork
-- Interface IWMPNetwork Windows Media Player, método setProxyBypassForLocal
+- Windows Media Player de interface IWMPNetwork, método setProxyBypassForLocal
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 35f869125d43529a039804fe28c0f0dc493f481e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dc751d05c87e780a2006e232d0b5d95e5d937e2719ad7e0c17ef6ac3d4b15333
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118331133"
 ---
 # <a name="iwmpnetworksetproxybypassforlocal-method"></a>Método IWMPNetwork:: setProxyBypassForLocal
 
@@ -69,7 +69,7 @@ Um valor **System. Boolean** que indica se o servidor proxy é ignorado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -81,7 +81,7 @@ Esse método falha a menos que o aplicativo de chamada esteja em execução no c
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir usa **setProxyBypassForLocal** para especificar se o servidor proxy do Windows Media Player foi ignorado, ao usar o protocolo MMS, se o servidor de origem estiver em uma rede local. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
+o exemplo de código a seguir usa **setProxyBypassForLocal** para especificar se o servidor proxy de Windows Media Player é ignorado, ao usar o protocolo MMS, se o servidor de origem estiver em uma rede local. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
 
 
 ```CSharp

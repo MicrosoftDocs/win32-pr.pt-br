@@ -4,12 +4,12 @@ ms.assetid: 70a48c58-4443-4899-9af1-3ef41973f012
 title: Tarefas avançadas de programação de documentos XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c61540f4acec0d54140068a91930d1ab4ac8999c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ff32e76457f2b4587e11ccdd893659302f6484c90262d440f0b8bb46e7f5784
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117868609"
 ---
 # <a name="advanced-xps-document-programming-tasks"></a>Tarefas avançadas de programação de documentos XPS
 
@@ -20,7 +20,7 @@ Os tópicos nesta seção demonstram como executar tarefas mais avançadas com a
 <dl>
 
 [Mesclar documentos XPS](merging-xps-documents.md)  
-[Processando documentos XPS em um filtro XPSDrv](processing-xps-documents-in-an-xpsdrv-filter.md)  
+[Processamento de documentos XPS em um filtro XPSDrv](processing-xps-documents-in-an-xpsdrv-filter.md)  
 </dl>
 
 ## <a name="related-topics"></a>Tópicos relacionados

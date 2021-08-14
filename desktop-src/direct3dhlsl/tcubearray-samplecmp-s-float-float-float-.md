@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e65b1747d03b3a0555267f7b57e95a4d5aba54da
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: c5d5e8945dc04f11e62cf668cfdd81fc2f8f616bce00482cadad4a7e1cde398f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104968714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117723294"
 ---
 # <a name="samplecmpsamplecmpsfloatfloatfloat-function-for-texturecubearray"></a>Função SampleCmp:: SampleCmp (S, float, float, float) para TextureCubeArray
 
@@ -91,7 +91,7 @@ Um valor opcional para fixe os valores de LOD de exemplo para. Por exemplo, se v
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **\_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 

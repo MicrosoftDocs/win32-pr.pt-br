@@ -1,7 +1,7 @@
 ---
 description: Obtém o local do ícone atribuído ao link.
 ms.assetid: 3bb7f0f0-7ab9-41e6-b738-274efbcd52ab
-title: Método ShellLinkObject. GetIconLocation (shlobj \_ Core. h)
+title: Método ShellLinkObject.GetIconLocation (Shlobj \_ core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: ef2f502d30116def68aa43269b3020d404ce177d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09ace233291d5eac285ac1115866a54cb9792c85aefbb8faa5a2d1f6c37393e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857577"
 ---
-# <a name="shelllinkobjectgeticonlocation-method"></a>Método ShellLinkObject. GetIconLocation
+# <a name="shelllinkobjectgeticonlocation-method"></a>Método ShellLinkObject.GetIconLocation
 
 Obtém o local do ícone atribuído ao link.
 
@@ -39,26 +39,26 @@ iRetVal = ShellLinkObject.GetIconLocation(
 
 <dl> <dt>
 
-*sPath* \[ fora\]
+*sPath* \[ out\]
 </dt> <dd>
 
-Tipo: **[**BSTR**](/previous-versions/windows/desktop/automat/bstr) \** _
+Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)\***
 
-Quando esse método retorna, ele contém o caminho totalmente qualificado do arquivo que contém o ícone.
+Quando esse método retorna, ele mantém o caminho totalmente qualificado do arquivo que contém o ícone.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: _*inteiro \**_
+Tipo: **\* Inteiro**
 
-Retorna o índice do ícone no arquivo especificado por _sPath *.
+Retorna o índice do ícone no arquivo especificado por *sPath*.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra o uso apropriado desse método para JScript, VBScript e Visual Basic.
+O exemplo a seguir mostra o uso adequado desse método para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -95,7 +95,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -175,11 +175,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows 2000 Professional com SP3 \[\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional somente com aplicativos da área de trabalho SP3 \[\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                          |
-| Cabeçalho<br/>                   | <dl> <dt>Shlobj \_ Core. h (incluir shldisp. h)</dt> </dl> |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shlobj \_ core.h (inclua Shldisp.h)</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5.0 ou posterior)</dt> </dl> |
 
 
 

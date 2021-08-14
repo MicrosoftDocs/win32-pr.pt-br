@@ -24,12 +24,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5df4c1e944920759f56f5d4b493b9cd47e7ebc29
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e331fde1a8f7013c376b99184a90e7b3bb9f599197259b044c4d1cbd38841584
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105782880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118352153"
 ---
 # <a name="imsrdpclientadvancedsettings7networkconnectiontype-property"></a>Propriedade IMsRdpClientAdvancedSettings7:: NetworkConnectionType
 

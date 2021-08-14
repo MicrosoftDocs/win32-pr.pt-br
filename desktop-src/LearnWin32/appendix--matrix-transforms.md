@@ -4,16 +4,16 @@ description: Este tópico fornece uma visão geral matemática das transformaç�
 ms.assetid: 8cc01f45-dd84-4f3e-a5f2-26edc5cbdfa1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a5a9b09f75b17e4baf8afe5e7fde8643c06982f
-ms.sourcegitcommit: ee06501cc29132927ade9813e0888aaa4decc487
+ms.openlocfilehash: 12d02976446824bba07829173bb326338a55732b39c640c93319630a209096b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "104559295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118389181"
 ---
 # <a name="appendix-matrix-transforms"></a>Apêndice: transformações de matriz
 
-Este tópico fornece uma visão geral matemática das transformações de matriz para gráficos 2D. No entanto, você não precisa conhecer matriz matemática para usar transformações no Direct2D. Leia este tópico se você estiver interessado na matemática; caso contrário, fique à vontade para ignorar este tópico.
+Este tópico fornece uma visão geral matemática das transformações de matriz para gráficos 2D. No entanto, você não precisa conhecer a matriz Math para usar transformações em Direct2D. Leia este tópico se você estiver interessado na matemática; caso contrário, fique à vontade para ignorar este tópico.
 
 -   [Introdução às matrizes](#introduction-to-matrices)
     -   [Operações de matriz](#matrix-operations)
@@ -23,7 +23,7 @@ Este tópico fornece uma visão geral matemática das transformações de matriz
     -   [Rotação em volta da origem](#rotation-around-the-origin)
     -   [Rotação em um ponto arbitrário](#rotation-around-an-arbitrary-point)
     -   [Transformação de distorção](#skew-transform)
--   [Representando transformações em Direct2D](#representing-transforms-in-direct2d)
+-   [Representando transformações no Direct2D](#representing-transforms-in-direct2d)
 -   [Próximo](#next)
 
 ## <a name="introduction-to-matrices"></a>Introdução às matrizes
@@ -125,7 +125,7 @@ Para obter o ponto transformado, pegue os dois primeiros elementos da matriz P '
 </dl>
 
 > [!Note]  
-> Uma matriz 1 × *n* é chamada de *vetor de linha*. Direct2D e Direct3D usam vetores de linha para representar pontos em espaço 2D ou 3D. Você pode obter um resultado equivalente usando um vetor de coluna (*n* × 1) e transposando a matriz de transformação. A maioria dos textos de elementos gráficos usa o formulário de vetor de coluna. Este tópico apresenta o formulário de vetor de linha para consistência com Direct2D e Direct3D.
+> Uma matriz 1 × *n* é chamada de *vetor de linha*. Direct2D e Direct3D usam vetores de linha para representar pontos em espaço 2d ou 3d. Você pode obter um resultado equivalente usando um vetor de coluna (*n* × 1) e transposando a matriz de transformação. A maioria dos textos de elementos gráficos usa o formulário de vetor de coluna. este tópico apresenta o formulário de vetor de linha para consistência com Direct2D e Direct3D.
 
  
 
@@ -152,159 +152,159 @@ A matriz de transformação de dimensionamento tem o seguinte formato.
 
 ![transformação de dimensionamento.](images/matrix09.png)
 
-A conexão de um ponto *P* a esta equação resulta:
+Conectar um ponto *P* a essa equação gera:
 
-<dl> P ' = (*x* ∙ *DX*, *y* ∙ *DY*)
+<dl> P' = (*x* ∙ *dx*, *y* ∙ *dy*)
 </dl>
 
-que corresponde ao ponto (x, y) dimensionado por *DX* e *DY*.
+que corresponde ao ponto (x,y) dimensionado por *dx* e *dy.*
 
 ![um diagrama que mostra o dimensionamento de dois pontos.](images/graphics23.png)
 
-### <a name="rotation-around-the-origin"></a>Rotação em volta da origem
+### <a name="rotation-around-the-origin"></a>Rotação em torno da origem
 
-A matriz para girar um ponto em volta da origem tem o seguinte formato.
+A matriz para girar um ponto em torno da origem tem o seguinte formato.
 
 ![Mostra uma fórmula para uma transformação de rotação.](images/matrix11.png)
 
 O ponto transformado é:
 
-<dl> P ' = (*x* CosΘ – ysinΘ, *x* sinΘ + *y* cosΘ)
+<dl> P' = (*x* cosΘ – ysinΘ, *x* sinΘ + *y* cosΘ)
 </dl>
 
-Gramatica. Para mostrar que P ' representa uma rotação, considere o diagrama a seguir.
+Prova. Para mostrar que P' representa uma rotação, considere o diagrama a seguir.
 
-![um diagrama que mostra a rotação em volta da origem.](images/graphics24.png)
+![um diagrama que mostra a rotação em torno da origem.](images/graphics24.png)
 
 Considerando:
 
 <dl> <dt>
 
-<span id="P____x_y_"></span><span id="p____x_y_"></span><span id="P____X_Y_"></span>P = (x, y)
+<span id="P____x_y_"></span><span id="p____x_y_"></span><span id="P____X_Y_"></span>P = (x,y)
 </dt> <dd>
 
-O ponto original a ser transformado.
+O ponto original a transformar.
 
 </dd> <dt>
 
 Φ
 </dt> <dd>
 
-O ângulo formado pela linha (0, 0) a P.
+O ângulo formado pela linha (0,0) para P.
 
 </dd> <dt>
 
 Θ
 </dt> <dd>
 
-O ângulo pelo qual girar (x, y) sobre a origem.
+O ângulo pelo qual girar (x,y) sobre a origem.
 
 </dd> <dt>
 
-<span id="P_____x__y__"></span><span id="p_____x__y__"></span><span id="P_____X__Y__"></span>P ' = (x ', y ')
+<span id="P_____x__y__"></span><span id="p_____x__y__"></span><span id="P_____X__Y__"></span>P' = (x',y')
 </dt> <dd>
 
 O ponto transformado.
 
 </dd> <dt>
 
-<span id="R"></span><span id="r"></span>D
+<span id="R"></span><span id="r"></span>R
 </dt> <dd>
 
-O comprimento da linha (0, 0) a P. Também o raio do círculo de rotação.
+O comprimento da linha (0,0) para P. Além disso, o raio do círculo de rotação.
 
 </dd> </dl>
 
 > [!Note]  
-> Esse diagrama usa o sistema de coordenadas padrão usado em Geometry, onde o eixo y positivo aponta para cima. Direct2D usa o sistema de coordenadas do Windows, onde o eixo y positivo aponta para baixo.
+> Este diagrama usa o sistema de coordenadas padrão usado em geometria, em que o eixo y positivo aponta para cima. Direct2D usa o Windows de coordenadas, em que o eixo y positivo aponta para baixo.
 
  
 
-O ângulo entre o eixo x e a linha (0, 0) para P ' é Φ + Θ. As identidades a seguir contêm:
+O ângulo entre o eixo x e a linha (0,0) para P' é A + Θ. As seguintes identidades são resdados:
 
-<dl> x = R cosΦ  
-y = R sinΦ  
-x ' = R cos (Φ + Θ)  
-y ' = R sin (Φ + Θ)  
+<dl> x = R cosA  
+y = R sinA  
+x' = R cos(Θ + Θ)  
+y' = R sin(Θ+ Θ)  
 </dl>
 
-Agora, resolva para x ' e y ' em termos de Θ. Pelas fórmulas de adição trigonométrica:
+Agora, resolva x' e y' em termos de Θ. Pelas fórmulas de adição trigonométrica:
 
-<dl> x ' = R (cosΦcosΘ – sinΦsinΘ) = RcosΦcosΘ – RsinΦsinΘ  
-y ' = R (sinΦcosΘ + cosΦsinΘ) = RsinΦcosΘ + RcosΦsinΘ  
+<dl> x' = R(cosScosΘ – sinΘsinΘ) = RcosOcosS – Rsin A  
+y' = R(sin AcosS + cosSinΘ) = Rsin AcosS + RcosSin A  
 </dl>
 
-Substituindo, obtemos:
+Substituindo, podemos obter:
 
-<dl> x ' = xcosΘ – ysinΘ  
-y ' = xsinΘ + ycosΘ  
+<dl> x' = xcosΘ – ysinΘ  
+y' = xsinΘ + ycosO  
 </dl>
 
-que corresponde ao ponto transformado P ' mostrado anteriormente.
+que corresponde ao ponto transformado P' mostrado anteriormente.
 
-### <a name="rotation-around-an-arbitrary-point"></a>Rotação em um ponto arbitrário
+### <a name="rotation-around-an-arbitrary-point"></a>Rotação em torno de um ponto arbitrário
 
-Para girar em um ponto (x, y) diferente da origem, a matriz a seguir é usada.
+Para girar em torno de um ponto (x,y) diferente da origem, a matriz a seguir é usada.
 
 ![transformação de rotação.](images/matrix13.png)
 
-Você pode derivar essa matriz levando o ponto (x, y) para a origem.
+Você pode derivar essa matriz levando o ponto (x,y) para ser a origem.
 
-![um diagrama que mostra a rotação em um ponto.](images/graphics25.png)
+![um diagrama que mostra a rotação em torno de um ponto.](images/graphics25.png)
 
-Let (x1, y1) é o ponto que resulta da rotação do ponto (x0, y0) ao contrário do ponto (x, y). Podemos derivar X1 da seguinte maneira.
+Let (x1, y1) é o ponto que resulta da rotação do ponto (x0, y0) ao redor do ponto (x,y). Podemos derivar x1 da seguinte forma.
 
-<dl> X1 = (x0 – x) cosΘ – (y0 – y) sinΘ + x  
-X1 = x0cosΘ – y0sinΘ + \[ (1 – cosΘ) + ysinΘ \]  
+<dl> x1 = (x0 – x)cosΘ– (y0 – y)sinΘ + x  
+x1 = x0cosΘ – y0sinΘ + \[ (1 – cosΘ) + ysinΘ \]  
 </dl>
 
-Agora, conecte esta equação novamente à matriz de transformação, usando a fórmula X1 = aX0 + cy0 + e anterior. Use o mesmo procedimento para derivar Y1.
+Agora, conecte essa equação de volta à matriz de transformação, usando a fórmula x1 = ax0 + cy0 + e de anterior. Use o mesmo procedimento para derivar y1.
 
-### <a name="skew-transform"></a>Transformação de distorção
+### <a name="skew-transform"></a>Transformação distorção
 
 A transformação de distorção é definida por quatro parâmetros:
 
--   Θ: o valor a ser distorcido ao longo do eixo x, medido como um ângulo do eixo y.
--   Φ: o valor a ser distorcido ao longo do eixo y, medido como um ângulo do eixo x.
--   (*PX*, *py*): as coordenadas x e y do ponto sobre o qual a distorção é executada.
+-   Θ: a quantidade a ser distorcida ao longo do eixo x, medida como um ângulo do eixo y.
+-   ª: a quantidade a ser distorcida ao longo do eixo y, medida como um ângulo do eixo x.
+-   (*px*, *py*): as coordenadas x e y do ponto sobre o qual a distorção é executada.
 
 A transformação de distorção usa a matriz a seguir.
 
-![transformação de distorção.](images/matrix14.png)
+![distorção de transformação.](images/matrix14.png)
 
 O ponto transformado é:
 
-<dl> P ' = (*x*  +  *y* tanΘ – *py* tanΘ, *y*  +  *x* tanΦ) – *py* tanΦ
+<dl> P' = (*x*  +  *y* tanΘ – *py* tanΘ, *y*  +  *x* tanA) – *py* tanA
 </dl>
 
-ou de maneira equivalente:
+ou de forma equivalente:
 
-<dl> P ' = (*x* + (*y* – *py*) tanΘ, *y* + (*x* – *PX*) tanΦ)
+<dl> P' = (*x* + (*y* – *py*)tanΘ, *y* + (*x* – *px*)tanA)
 </dl>
 
-Para ver como essa transformação funciona, considere cada componente individualmente. O parâmetro Θ move todos os pontos na direção x por um valor igual a tanΘ. O diagrama a seguir mostra a relação entre Θ e a distorção do eixo x.
+Para ver como essa transformação funciona, considere cada componente individualmente. O parâmetro Θ move cada ponto na direção x por um valor igual a tanE. O diagrama a seguir mostra a relação entre Θ e a distorção do eixo x.
 
-![Diagrama que mostra a inclinação ao longo do eixo x.](images/graphics26.png)
+![Diagrama que mostra distorção ao longo do eixo x.](images/graphics26.png)
 
 Aqui está a mesma distorção aplicada a um retângulo:
 
-![Diagrama que mostra a inclinação ao longo do eixo x quando aplicado a um retângulo.](images/graphics27.png)
+![Diagrama que mostra distorção ao longo do eixo x quando aplicado a um retângulo.](images/graphics27.png)
 
-O parâmetro Φ tem o mesmo efeito, mas ao longo do eixo y:
+O parâmetro ª tem o mesmo efeito, mas ao longo do eixo y:
 
-![Diagrama que mostra a inclinação ao longo do eixo y.](images/graphics28.png)
+![Diagrama que mostra distorção ao longo do eixo y.](images/graphics28.png)
 
-O próximo diagrama mostra a inclinação do eixo y aplicada a um retângulo.
+O diagrama a seguir mostra a distorção do eixo y aplicada a um retângulo.
 
-![Diagrama que mostra a inclinação ao longo do eixo y quando aplicado a um retângulo.](images/graphics29.png)
+![Diagrama que mostra distorção ao longo do eixo y quando aplicado a um retângulo.](images/graphics29.png)
 
-Por fim, os parâmetros *PX* e *py* alternam o ponto central para a distorção ao longo dos eixos x e y.
+Por fim, os parâmetros *px* e *py* deslocam o ponto central para a distorção ao longo dos eixos x e y.
 
-## <a name="representing-transforms-in-direct2d"></a>Representando transformações em Direct2D
+## <a name="representing-transforms-in-direct2d"></a>Representando as transformação em Direct2D
 
-Todas as transformações de Direct2D são transformações afim. Direct2D não oferece suporte a transformações não afim. As transformações são representadas pela estrutura [**d2d1 \_ matriz \_ 3x2 \_ F**](/windows/desktop/Direct2D/d2d1-matrix-3x2-f) . Essa estrutura define uma matriz de 3 × 2. Como a terceira coluna de uma transformação afim é sempre a mesma ( \[ 0, 0, 1 \] ) e como Direct2D não oferece suporte a transformações não afim, não é necessário especificar a matriz 3 × 3 inteira. Internamente, o Direct2D usa matrizes de 3 × 3 para computar as transformações.
+Todas as Direct2D são transformações affine. Direct2D não dá suporte a transformação não affine. As transformaçãos são representadas pela [**estrutura D2D1 \_ MATRIX \_ 3X2 \_ F.**](/windows/desktop/Direct2D/d2d1-matrix-3x2-f) Essa estrutura define uma matriz 3 × 2. Como a terceira coluna de uma transformação de afinidade é sempre a mesma ( 0, 0, 1 ) e como o Direct2D não dá suporte a transformação não affine, não é necessário especificar toda a \[ \] matriz 3 × 3. Internamente, Direct2D usa três × três matrizes para calcular as transformaçãos.
 
-Os membros da [**matriz d2d1 \_ \_ 3x2 \_ F**](/windows/desktop/Direct2D/d2d1-matrix-3x2-f) são nomeados de acordo com sua posição de índice: o membro **\_ 11** é o elemento (1, 1), o membro **\_ 12** é o elemento (1, 2) e assim por diante. Embora você possa inicializar os membros da estrutura diretamente, é recomendável usar a classe [**d2d1:: Matrix3x2F**](/windows/desktop/api/d2d1helper/nl-d2d1helper-matrix3x2f) . Essa classe herda o **d2d1 \_ Matrix \_ 3x2 \_ F** e fornece métodos auxiliares para a criação de qualquer uma das transformações de afinidade básicas. A classe também define o [**operador \* ()**](/windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-operator-mult) para compor duas ou mais transformações, conforme descrito em [aplicando transformações em Direct2D](applying-transforms-in-direct2d.md).
+Os membros do [**D2D1 \_ MATRIX \_ 3X2 \_ F**](/windows/desktop/Direct2D/d2d1-matrix-3x2-f) são nomeados de acordo com sua posição de índice: **\_ o membro 11** é elemento (1,1), **\_ o 12** membro é elemento (1,2) e assim por diante. Embora você possa inicializar os membros da estrutura diretamente, é recomendável usar a classe [**D2D1::Matrix3x2F.**](/windows/desktop/api/d2d1helper/nl-d2d1helper-matrix3x2f) Essa classe herda **D2D1 \_ MATRIX \_ 3X2 \_ F** e fornece métodos auxiliares para criar qualquer uma das transformaçãos de afinidade básicas. A classe também define [**o operador \* ()**](/windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-operator-mult) para compor duas ou mais transformaçãos, conforme descrito em [Aplicando transformes em Direct2D](applying-transforms-in-direct2d.md).
 
 ## <a name="next"></a>Avançar
 

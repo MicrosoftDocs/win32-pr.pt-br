@@ -1,8 +1,8 @@
 ---
-description: A \_ propriedade de derivação do objeto SWbemObject contém uma matriz de cadeias de caracteres que descreve a hierarquia de derivação de classe para a instância que está sendo referenciada.
+description: A propriedade \_ Derivation do objeto SWbemObject contém uma matriz de cadeias de caracteres que descrevem a hierarquia de derivação de classe para a instância que está sendo referenciada.
 ms.assetid: 8a4daab0-7d10-4a37-aacd-1f3f499b859a
 ms.tgt_platform: multiple
-title: Propriedade SWbemObject.Derivation_ (Wbemdisp. h)
+title: SWbemObject.Derivation_ propriedade (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 84e7b4e53a1a5544c92bb5116f3f83189789487f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 35195a6e3067fa68db747f04df8ec2c70480d297e4780c48059a1ba7f031e453
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105797648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118313898"
 ---
-# <a name="swbemobjectderivation_-property"></a>Propriedade SWbemObject. Derivation \_
+# <a name="swbemobjectderivation_-property"></a>Propriedade SWbemObject.Derivation \_
 
-A propriedade de **derivação \_** do objeto [**SWbemObject**](swbemobject.md) contém uma matriz de cadeias de caracteres que descreve a hierarquia de derivação de classe para a instância que está sendo referenciada. O primeiro elemento na matriz define a classe pai e o último elemento define a classe dinastia. Esta propriedade é somente para leitura.
+A **propriedade \_ Derivation** do [**objeto SWbemObject**](swbemobject.md) contém uma matriz de cadeias de caracteres que descrevem a hierarquia de derivação de classe para a instância que está sendo referenciada. O primeiro elemento na matriz define a classe pai e o último elemento define a classe de arbitrária. Esta propriedade é somente para leitura.
 
-Para obter uma explicação dessa sintaxe, consulte [convenções de documento para a API de script](document-conventions-for-the-scripting-api.md).
+Para uma explicação dessa sintaxe, consulte [Convenções de documento para a API de Script](document-conventions-for-the-scripting-api.md).
 
 Esta propriedade é somente para leitura.
 
@@ -44,7 +44,7 @@ SWbemObject.Derivation_ As String
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de VBScript a seguir descreve como recuperar a hierarquia de classe para o disco lógico do Win32 \_ .
+O exemplo de VBScript a seguir descreve como recuperar a hierarquia de classe para o disco lógico \_ win32.
 
 
 ```VB
@@ -64,7 +64,7 @@ end if
 
 
 
-Ele seguinte exemplo de Perl descreve como recuperar a hierarquia de classe para o disco lógico do Win32 \_ .
+ele seguindo o exemplo de Perl descreve como recuperar a hierarquia de classe para o \_ logicaldisk win32.
 
 
 ```
@@ -105,11 +105,11 @@ else
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemObject<br/>                                                           |
-| IID<br/>                      | ISWbemObject de IID \_<br/>                                                            |
+| IID<br/>                      | IID \_ ISWbemObject<br/>                                                            |
 
 
 

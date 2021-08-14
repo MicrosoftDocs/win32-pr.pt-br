@@ -1,12 +1,12 @@
 ---
-title: Método ProvisioningEnumerateJobs da classe Win32_RDMSVirtualDesktopCollection
-description: Enumera os trabalhos de provisionamento de área de trabalho virtual para este serviço.
+title: Método ProvisioningEnumerateJobs da classe Win32_RDMSVirtualDesktopCollection dados
+description: Enumera trabalhos de provisionamento de área de trabalho virtual para esse serviço.
 ms.assetid: 4bd2b03f-ba8c-483e-af09-270424f9b1ed
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método ProvisioningEnumerateJobs
-- Método ProvisioningEnumerateJobs Serviços de Área de Trabalho Remota, classe Win32_RDMSVirtualDesktopCollection
-- Classe Win32_RDMSVirtualDesktopCollection Serviços de Área de Trabalho Remota, método ProvisioningEnumerateJobs
+- Método ProvisioningEnumerateJobs Serviços de Área de Trabalho Remota
+- Método ProvisioningEnumerateJobs Serviços de Área de Trabalho Remota , Win32_RDMSVirtualDesktopCollection classe
+- Win32_RDMSVirtualDesktopCollection classe Serviços de Área de Trabalho Remota , método ProvisioningEnumerateJobs
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aaa2b54a0599c2bbcaf6b0f9a9acb3ab3028389b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5b24ef80acdb29c75327447f61db7dae1689a883f69c9e19ef199710de216fc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118350218"
 ---
 # <a name="provisioningenumeratejobs-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Método ProvisioningEnumerateJobs da classe Win32 \_ RDMSVirtualDesktopCollection
 
-Enumera os trabalhos de provisionamento de área de trabalho virtual para este serviço.
+Enumera trabalhos de provisionamento de área de trabalho virtual para esse serviço.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,7 +45,7 @@ uint32 ProvisioningEnumerateJobs(
 
 <dl> <dt>
 
-*JobType* \[ no\]
+*JobType* \[ Em\]
 </dt> <dd>
 
 Um inteiro que especifica o tipo de trabalho a ser enumerado.
@@ -68,21 +68,21 @@ Trabalhos concluídos
 
 </dd> </dl> </dd> <dt>
 
-*CollectionAlias* \[ no\]
+*CollectionAlias* \[ Em\]
 </dt> <dd>
 
-O alias da coleção de áreas de trabalho virtuais a ser enumerada. O valor padrão para esse parâmetro é FALSE, que especifica que todos os trabalhos em execução devem ser enumerados.
+O alias da coleção de área de trabalho virtual a ser enumerada. O valor padrão para esse parâmetro é FALSE, que especifica que todos os trabalhos em execução devem ser enumerados.
 
 </dd> <dt>
 
-*JobGuids* \[ fora\]
+*JobGuids* \[ out\]
 </dt> <dd>
 
-Uma matriz que contém os **GUIDs** de trabalhos de provisionamento a serem enumerados.
+Uma matriz que contém os **GUIDs de** trabalhos de provisionamento a enumerar.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 
@@ -94,8 +94,8 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                   |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                              |
-| Namespace<br/>                | \\RDMs CIMv2 \\ raiz<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Namespace<br/>                | \\rdms CIMv2 \\ raiz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -104,7 +104,7 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 
 <dl> <dt>
 
-[**\_RDMSVirtualDesktopCollection Win32**](win32-rdmsvirtualdesktopcollection.md)
+[**Win32 \_ RDMSVirtualDesktopCollection**](win32-rdmsvirtualdesktopcollection.md)
 </dt> </dl>
 
  

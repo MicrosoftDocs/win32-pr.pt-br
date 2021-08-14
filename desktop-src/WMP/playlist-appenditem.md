@@ -1,11 +1,11 @@
 ---
-title: Método playlist. appendItem
-description: O método appendItem adiciona um item de mídia ao final da lista de reprodução.
+title: Método Playlist.appendItem
+description: O método appendItem adiciona um item de mídia ao final da playlist.
 ms.assetid: cc956491-7936-49e7-90ca-1f71e03448cd
 keywords:
-- método appendItem Windows Media Player
-- método appendItem Windows Media Player, classe playlist
-- Classe playlist Windows Media Player, método appendItem
+- Método appendItem Windows Media Player
+- método appendItem Windows Media Player , classe Playlist
+- Classe de playlist Windows Media Player , método appendItem
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 828799d5b6e71e7ff0e7be4c1e55714f6343be51
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 79361ebcf2ea23b754a7bc86cb6fa4a0af465e4e6619ed692c027bc28eb7aa87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105772979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117747115"
 ---
-# <a name="playlistappenditem-method"></a>Método playlist. appendItem
+# <a name="playlistappenditem-method"></a>Método Playlist.appendItem
 
-O método **appendItem** adiciona um item de mídia ao final da lista de reprodução.
+O **método appendItem** adiciona um item de mídia ao final da playlist.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,24 +42,24 @@ Playlist.appendItem(
 
 <dl> <dt>
 
-*Item* \[ de no\]
+*item* \[ Em\]
 </dt> <dd>
 
-Objeto de **mídia** a ser adicionado.
+**Objeto de** mídia a ser adicionado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Para usar esse método, é necessário ter acesso completo à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
+Para usar esse método, é necessário ter acesso completo à biblioteca. Para obter mais informações, consulte [Acesso à biblioteca.](library-access.md)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa a *lista de reprodução*. **appendItem** para adicionar o item de mídia atual à lista de reprodução denominada "trêslist". O objeto de **jogador** foi criado com ID = "Player".
+O exemplo de JScript a *seguir* usa Playlist . **appendItem para** adicionar o item de mídia atual à playlist chamada "ThreeList". O **objeto** Player foi criado com ID="Player".
 
 
 ```JScript
@@ -82,7 +82,7 @@ plThreeList.appendItem(currMedia);
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -91,13 +91,13 @@ plThreeList.appendItem(currMedia);
 
 <dl> <dt>
 
-[**Objeto playlist**](playlist-object.md)
+[**Objeto Playlist**](playlist-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

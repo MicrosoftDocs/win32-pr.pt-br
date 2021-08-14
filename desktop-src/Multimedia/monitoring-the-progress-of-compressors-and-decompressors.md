@@ -8,20 +8,20 @@ keywords:
 - Função ICSetStatusProc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39ef5449e8d4e985217ee60f075d22b16dcc5c3b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 44707cb6a8fbdb19b1d71fed6c71498b51936b9d089354277c6767586b4b8267
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105760412"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118373454"
 ---
 # <a name="monitoring-the-progress-of-compressors-and-decompressors"></a>Monitorando o progresso de compactadores e descompactadores
 
 Seu aplicativo pode monitorar o progresso de uma operação demorada executada por um compactador ou descompactador enviando-lhe o endereço de uma função de retorno de chamada. Você pode usar a função [**ICSetStatusProc**](/windows/desktop/api/Vfw/nf-vfw-icsetstatusproc) para enviar o endereço para o compactador ou descompactador. Quando o compactador ou o descompactador recebe esse endereço, ele envia mensagens de status para a função. Essas mensagens indicam se a operação está iniciando, parando, gerando ou continuando.
 
- 
+ 
 
- 
+ 
 
 
 

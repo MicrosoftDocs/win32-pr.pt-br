@@ -1,24 +1,24 @@
 ---
-title: Para localizar formatos de áudio
-description: Para localizar formatos de áudio
+title: Para encontrar formatos de áudio
+description: Para encontrar formatos de áudio
 ms.assetid: f2001ed5-f07d-45a5-a566-45697024870e
 keywords:
-- fluxos, localizando formatos de áudio
-- fluxos de áudio, localizando formatos de áudio
+- fluxos, localizar formatos de áudio
+- fluxos de áudio, localizar formatos de áudio
 - fluxos, formatos de áudio
 - fluxos de áudio, formatos de áudio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d85897d4d76a3bdb1e99902eb4f52336a3ad0874
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5c596c8efc1fc5315ad68bad51676888823ac4b3518232ec948ce38b2fb77075
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118196502"
 ---
-# <a name="to-find-audio-formats"></a>Para localizar formatos de áudio
+# <a name="to-find-audio-formats"></a>Para encontrar formatos de áudio
 
-O código de exemplo a seguir demonstra como localizar um formato de áudio que corresponde aos critérios especificados. A função **FindAudioFormat** aceita um ponteiro para uma estrutura [**WAVEFORMATEX**](/previous-versions/windows/desktop/legacy/dd757720(v=vs.85)) que contém o número de canais, bits por amostra e taxa de amostragem que você deseja usar. A função localiza o formato que corresponde a esses requisitos e tem a taxa de bits mais alta que não excede o parâmetro *dwMaxRate* . Se você definir *fAVSync* como **true**, a função só validará os formatos que podem ser sincronizados com o vídeo. Para simplificar, essa função funciona apenas com formatos de CBR de 1 passagem.
+O código de exemplo a seguir demonstra como encontrar um formato de áudio que corresponde aos critérios especificados. A **função FindAudioFormat** aceita um ponteiro para uma estrutura [**WAVEFORMATEX**](/previous-versions/windows/desktop/legacy/dd757720(v=vs.85)) que contém o número de canais, bits por exemplo e taxa de amostra que você deseja usar. A função localiza o formato que corresponde a esses requisitos e tem a taxa de bits mais alta que não excede o *parâmetro dwMaxRate.* Se você definir *fAVSync como* **TRUE,** a função validará apenas os formatos que podem ser sincronizados com o vídeo. Para simplificar, essa função funciona apenas com formatos CBR de 1 passagem.
 
 
 ```C++
@@ -245,12 +245,12 @@ Exit:
 
 <dl> <dt>
 
-[**Configurando fluxos de áudio**](configuring-audio-streams.md)
+[**Configurando o Fluxos**](configuring-audio-streams.md)
 </dt> <dt>
 
-[**Para enumerar formatos de codec**](to-enumerate-codec-formats.md)
+[**Para enumerar formatos codec**](to-enumerate-codec-formats.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
