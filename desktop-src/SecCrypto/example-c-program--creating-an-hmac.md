@@ -1,24 +1,24 @@
 ---
 description: Usado para verificar se uma mensagem não foi alterada durante o trânsito.
 ms.assetid: a4bb67fb-8217-4e76-b1bf-461ccd39f58a
-title: 'Programa de exemplo C: Criando um HMAC'
+title: 'Exemplo de programa C: criando um HMAC'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a18da226c9e88d535b34fe9c319a042132749e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 25d4f6a91025ed159e580cfcb9780527536a31f4f72ae54d5a821a328d45abec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117765884"
 ---
-# <a name="example-c-program-creating-an-hmac"></a>Programa de exemplo C: Criando um HMAC
+# <a name="example-c-program-creating-an-hmac"></a>Exemplo de programa C: criando um HMAC
 
-Uma soma de verificação de autenticação de mensagem com hash (HMAC) normalmente é usada para verificar se uma mensagem não foi alterada durante o trânsito. Ambas as partes da mensagem devem ter uma chave secreta compartilhada. O remetente combina a chave e a mensagem em uma cadeia de caracteres, cria um resumo da cadeia de caracteres usando um algoritmo como SHA-1 ou MD5 e transmite a mensagem e o resumo. O receptor combina a chave compartilhada com a mensagem, aplica o algoritmo apropriado e compara o resumo obtido com aquele transmitido pelo remetente. Se os resumos forem exatamente iguais, a mensagem não foi violada.
+Uma HMAC (verificação de autenticação de mensagem com hashed) normalmente é usada para verificar se uma mensagem não foi alterada durante o trânsito. Ambas as partes da mensagem devem ter uma chave secreta compartilhada. O remetente combina a chave e a mensagem em uma cadeia de caracteres, cria um resumo da cadeia de caracteres usando um algoritmo como SHA-1 ou MD5 e transmite a mensagem e o resumo. O receptor combina a chave compartilhada com a mensagem, aplica o algoritmo apropriado e compara o resumo obtido assim com o transmitido pelo remetente. Se os resumos são exatamente os mesmos, a mensagem não foi adulterada.
 
-Este exemplo demonstra as seguintes tarefas e funções de CryptoAPI:
+Este exemplo demonstra as seguintes tarefas e funções CryptoAPI:
 
--   Adquirir um identificador para um [*provedor de serviços de criptografia*](../secgloss/c-gly.md) chamando [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta).
--   Derivar uma chave simétrica de uma cadeia de caracteres de byte chamando [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash), [**CryptHashData**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata)e [**CryptDeriveKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptderivekey).
+-   Adquirir um handle para um provedor [*de serviços criptográfico*](../secgloss/c-gly.md) chamando [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta).
+-   Derivando uma chave simétrica de uma cadeia de caracteres de byte chamando [**CryptCreateHash,**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash) [**CryptHashData**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata)e [**CryptDeriveKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptderivekey).
 -   Usando a chave simétrica para criar um objeto de hash HMAC chamando [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash) e [**CryptSetHashParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsethashparam).
 -   Hash de uma mensagem chamando [**CryptHashData**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata).
 -   Recuperando o hash chamando [**CryptGetHashParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgethashparam).

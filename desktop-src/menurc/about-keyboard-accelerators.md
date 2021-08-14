@@ -14,12 +14,12 @@ keywords:
 - tabelas de acelerador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88e97f0b4997d15d55601e571270276e7d7a3bd4
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 1b81240feb0ca21028c9d1813f4c8004e1c3bb932fe1ec8767e3719c26e7a5db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117870723"
 ---
 # <a name="about-keyboard-accelerators"></a>Sobre aceleradores de teclado
 
@@ -59,11 +59,11 @@ Uma tabela de acelerador também pode ser criada para um aplicativo em tempo de 
 
 O sistema destrói automaticamente as tabelas de acelerador carregadas por [**LoadAccelerators**](/windows/desktop/api/Winuser/nf-winuser-loadacceleratorsa) ou criadas por [**CreateAcceleratorTable.**](/windows/desktop/api/Winuser/nf-winuser-createacceleratortablea) No entanto, um aplicativo pode liberar recursos enquanto está em execução, destrói tabelas de acelerador não mais necessárias chamando a [**função DestroyAcceleratorTable.**](/windows/desktop/api/Winuser/nf-winuser-destroyacceleratortable)
 
-Uma tabela de acelerador existente pode ser copiada e modificada. A tabela do acelerador existente é copiada usando a [**função CopyAcceleratorTable.**](/windows/desktop/api/Winuser/nf-winuser-copyacceleratortablea) Depois que a cópia é modificada, um handle para a nova tabela de acelerador é recuperado chamando [**CreateAcceleratorTable**](/windows/desktop/api/Winuser/nf-winuser-createacceleratortablea). Por fim, o alça é passado [**para TranslateAccelerator**](/windows/desktop/api/Winuser/nf-winuser-translateacceleratora) para ativar a nova tabela.
+Uma tabela de acelerador existente pode ser copiada e modificada. A tabela de acelerador existente é copiada usando a [**função CopyAcceleratorTable.**](/windows/desktop/api/Winuser/nf-winuser-copyacceleratortablea) Depois que a cópia é modificada, um handle para a nova tabela do acelerador é recuperado chamando [**CreateAcceleratorTable**](/windows/desktop/api/Winuser/nf-winuser-createacceleratortablea). Por fim, o alça é passado [**para TranslateAccelerator**](/windows/desktop/api/Winuser/nf-winuser-translateacceleratora) para ativar a nova tabela.
 
 ## <a name="accelerator-keystroke-assignments"></a>Atribuições de teclas de acelerador
 
-Um código de caractere ASCII ou um código de chave virtual pode ser usado para definir o acelerador. Um código de caractere ASCII diferencia as minúsculas do acelerador. Portanto, usar o caractere ASCII "C" define o acelerador como ALT+C em vez de ALT+c. No entanto, aceleradores sensíveis a minúsculas podem ser confusos de usar. Por exemplo, o acelerador ALT+C será gerado se a tecla CAPS LOCK estiver inoC ou se a tecla SHIFT estiver inocíntea, mas não se ambas estão inoc baixo.
+Um código de caractere ASCII ou um código de chave virtual pode ser usado para definir o acelerador. Um código de caractere ASCII diferencia as minúsculas do acelerador. Portanto, usar o caractere ASCII "C" define o acelerador como ALT+C em vez de ALT+c. No entanto, aceleradores sensíveis a minúsculas podem ser confusos de usar. Por exemplo, o acelerador ALT+C será gerado se a tecla CAPS LOCK estiver inobada ou se a tecla SHIFT estiver inoC, mas não se ambas estão inoc baixo.
 
 Normalmente, os aceleradores não precisam diferenciação de minúsculas, portanto, a maioria dos aplicativos usa códigos de chave virtual para aceleradores em vez de códigos de caractere ASCII.
 
@@ -107,7 +107,7 @@ Um acelerador que corresponde a um item de menu deve ser incluído no texto do i
 
 ## <a name="ui-state"></a>Estado da interface do usuário
 
-O Windows permite que os aplicativos ocultem ou mostrem vários recursos em sua interface do usuário. Essas configurações são conhecidas como o estado da interface do usuário. O estado da interface do usuário inclui as seguintes configurações:
+Windows permite que os aplicativos ocultem ou mostrem vários recursos em sua interface do usuário. Essas configurações são conhecidas como o estado da interface do usuário. O estado da interface do usuário inclui as seguintes configurações:
 
 -   indicadores de foco (como retângulos de foco em botões)
 -   aceleradores de teclado (indicados por sublinhados em rótulos de controle)

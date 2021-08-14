@@ -3,35 +3,35 @@ title: Manipulações e inércia
 description: Esta seção contém tópicos relacionados a manipulações e inércia.
 ms.assetid: ba56fa56-c74f-47ac-a15c-ba82a0521995
 keywords:
-- Windows Touch, manipulações
-- Windows Touch, inércia
+- Windows Toque, manipulações
+- Windows Toque, inércia
 - manipulações, sobre
 - inércia, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a55def8acb5f3dcf517ae90f4f220511e0650a1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 03d47661630fd0cc3f14125d1590816145d48a0f3485cedde68c76b52064eb4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118199484"
 ---
 # <a name="manipulations-and-inertia"></a>Manipulações e inércia
 
 Esta seção contém tópicos relacionados a manipulações e inércia.
 
-Esta seção consiste nos seguintes tópicos.
+Esta seção consiste nos tópicos a seguir.
 
 
 
 | Tópico                                                   | Descrição                               |
 |---------------------------------------------------------|-------------------------------------------|
-| [Manipulações](getting-started-with-manipulations.md) | Explica as manipulações do Windows Touch. |
-| [Inércia](getting-started-with-inertia.md)             | Explica o inércia para o Windows Touch.       |
+| [Manipulações](getting-started-with-manipulations.md) | Explica as manipulações para Windows Touch. |
+| [Inércia](getting-started-with-inertia.md)             | Explica a inércia para Windows Touch.       |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -40,9 +40,9 @@ Esta seção consiste nos seguintes tópicos.
 [Guia de programação](programming-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

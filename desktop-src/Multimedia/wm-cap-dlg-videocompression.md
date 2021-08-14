@@ -3,7 +3,7 @@ title: Mensagem de WM_CAP_DLG_VIDEOCOMPRESSION (VFW. h)
 description: A mensagem do WM \_ Cap \_ DLG \_ VIDEOCOMPRESSION exibe uma caixa de diálogo na qual o usuário pode selecionar um compressor para usar durante o processo de captura.
 ms.assetid: 526e4b5d-49a4-4bb5-92d6-cdd567636354
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_DLG_VIDEOCOMPRESSION
+- mensagem de WM_CAP_DLG_VIDEOCOMPRESSION Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d851f73df7adbc205585eb7c69ad9d4d969aba66
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 816aeb26455ba375b4446edc275ec4fbaa318b67b1fea64bd6049760f45d8235
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118135439"
 ---
 # <a name="wm_cap_dlg_videocompression-message"></a>Mensagem de VIDEOCOMPRESSION do WM \_ Cap \_ DLG \_
 

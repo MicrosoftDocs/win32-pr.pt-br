@@ -1,25 +1,25 @@
 ---
-description: 'As constantes RENDBIND são sinalizadores usadas pelo método ITDirectory:: BIND para indicar os tipos de autenticação fornecidos.'
+description: As constantes RENDBIND são sinalizadores usados pelo método ITDirectory::Bind para indicar os tipos de autenticação fornecidos.
 ms.assetid: 27bcf36a-1826-4603-9821-22fcc5c1e186
-title: Constantes de RENDBIND_ (rend. h)
+title: RENDBIND_ constantes (Rend.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: badd2a48b2ae0632e317522533c664d4f74a6c77
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c618ed2cf5d9dda4c2ee14b331e3603f8021e9c5f4755e38ecfb5929b5f45c23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117760859"
 ---
-# <a name="rendbind_-constants"></a>\_Constantes RENDBIND
+# <a name="rendbind_-constants"></a>Constantes RENDBIND \_
 
-\[ Os controles e as interfaces da conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e nas versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[As interfaces e controles de conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. A API do Cliente RTC fornece funcionalidade semelhante.\]
 
-As constantes RENDBIND são sinalizadores usadas pelo método [**ITDirectory:: bind**](/windows/desktop/api/Rend/nf-rend-itdirectory-bind) para indicar os tipos de autenticação fornecidos.
+As constantes RENDBIND são sinalizadores usados pelo [**método ITDirectory::Bind**](/windows/desktop/api/Rend/nf-rend-itdirectory-bind) para indicar os tipos de autenticação fornecidos.
 
 <dl> <dt>
 
-<span id="RENDBIND_AUTHENTICATE"></span><span id="rendbind_authenticate"></span>**RENDBIND \_ autenticar**
+<span id="RENDBIND_AUTHENTICATE"></span><span id="rendbind_authenticate"></span>**AUTENTICAÇÃO RENDBIND \_**
 </dt> <dd> <dl> <dt>
 
  0x00000001
@@ -32,7 +32,7 @@ Autenticar usuário.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RENDBIND_DEFAULTDOMAINNAME"></span><span id="rendbind_defaultdomainname"></span>**RENDBIND \_ DEFAULTdomainname**
+<span id="RENDBIND_DEFAULTDOMAINNAME"></span><span id="rendbind_defaultdomainname"></span>**RENDBIND \_ DEFAULTDOMAINNAME**
 </dt> <dd> <dl> <dt>
 
  0x00000002
@@ -45,7 +45,7 @@ Use o nome de domínio padrão.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RENDBIND_DEFAULTUSERNAME"></span><span id="rendbind_defaultusername"></span>**RENDBIND \_ DEFAULTusername**
+<span id="RENDBIND_DEFAULTUSERNAME"></span><span id="rendbind_defaultusername"></span>**RENDBIND \_ DEFAULTUSERNAME**
 </dt> <dd> <dl> <dt>
 
  0x00000004
@@ -58,7 +58,7 @@ Use o nome de usuário padrão.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RENDBIND_DEFAULTPASSWORD"></span><span id="rendbind_defaultpassword"></span>**RENDBIND \_ DEFAULTpassword**
+<span id="RENDBIND_DEFAULTPASSWORD"></span><span id="rendbind_defaultpassword"></span>**RENDBIND \_ DEFAULTPASSWORD**
 </dt> <dd> <dl> <dt>
 
  0x00000008
@@ -71,7 +71,7 @@ Use a senha padrão.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RENDBIND_DEFAULTCREDENTIALS"></span><span id="rendbind_defaultcredentials"></span>**RENDBIND \_ DEFAULTcredentials**
+<span id="RENDBIND_DEFAULTCREDENTIALS"></span><span id="rendbind_defaultcredentials"></span>**RENDBIND \_ DEFAULTCREDENTIALS**
 </dt> <dd> <dl> <dt>
 
  0x0000000e
@@ -79,7 +79,7 @@ Use a senha padrão.
 
 
 
-Os três vinculantes anteriores juntos para sua conveniência.
+Os três anteriores ORed juntos para conveniência.
 
 
 </dt> </dl> </dd> </dl>
@@ -90,8 +90,8 @@ Os três vinculantes anteriores juntos para sua conveniência.
 
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>Rend. h</dt> </dl> |
+| Versão do TAPI<br/> | Requer TAPI 3.0 ou posterior<br/>                                             |
+| Cabeçalho<br/>       | <dl> <dt>Rend.h</dt> </dl> |
 
 
 
@@ -102,7 +102,7 @@ Os três vinculantes anteriores juntos para sua conveniência.
 [**ITDirectory**](/windows/desktop/api/Rend/nn-rend-itdirectory)
 </dt> <dt>
 
-[**ITDirectory:: bind**](/windows/desktop/api/Rend/nf-rend-itdirectory-bind)
+[**ITDirectory::Bind**](/windows/desktop/api/Rend/nf-rend-itdirectory-bind)
 </dt> </dl>
 
  

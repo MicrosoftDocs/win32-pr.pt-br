@@ -1,5 +1,5 @@
 ---
-description: As informações de configuração que podem ser mantidas para cada usuário são salvas em perfis de usuário.
+description: As informações de configuração que podem ser retidas para cada usuário são salvas em perfis de usuário.
 title: Perfis de Usuário
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 94c5405a29e11c3906dc1b21d6fc9fa9dbe84b49
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 95479a3bdc9a5ef5a00402db6708b817ade1e180182b47d604770045ccc77d16
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118046467"
 ---
 # <a name="user-profiles"></a>Perfis de Usuário
 
-As informações de configuração que podem ser mantidas para cada usuário são salvas em [perfis de usuário](about-user-profiles.md). Essas informações incluem a organização de área de trabalho, grupos de programas pessoais, itens de programa nos grupos de programas pessoais, cores de tela, proteções de tela, conexões de rede, conexões de impressora, configurações do mouse, tamanho e posição da janela e assim por diante. Quando um usuário faz logon, o sistema carrega o perfil do usuário e configura o ambiente de acordo com as informações no perfil.
+As informações de configuração que podem ser retidas para cada usuário são salvas em [perfis de usuário](about-user-profiles.md). Essas informações incluem a organização da área de trabalho, grupos de programas pessoais, itens de programa nos grupos de programas pessoais, cores da tela, proteção de tela, conexões de rede, conexões de impressora, configurações do mouse, tamanho e posição da janela e assim por diante. Quando um usuário faz o login, o sistema carrega o perfil do usuário e configura o ambiente de acordo com as informações no perfil.
 
 Esta seção inclui os seguintes tópicos.
 

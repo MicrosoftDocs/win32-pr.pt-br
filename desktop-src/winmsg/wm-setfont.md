@@ -4,12 +4,12 @@ ms.assetid: 7db6b8af-dbec-4c29-8bf7-d7e95d9813c3
 title: Mensagem de WM_SETFONT (WinUser. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3fc334e6b8c937759555c471f00ec56254a629c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 811bee30237a64955197588f87866d4a64af89edc640762ec16333839aee9220
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118199932"
 ---
 # <a name="wm_setfont-message"></a>\_Mensagem de SETfont do WM
 
@@ -40,7 +40,7 @@ A palavra de ordem inferior de *lParam* especifica se o controle deve ser redese
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **LRESULT**
 
@@ -69,7 +69,7 @@ Quando uma caixa de diálogo usa o estilo de [ \_ fonte de domínio DS](../dlgbo
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

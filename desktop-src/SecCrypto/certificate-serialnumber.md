@@ -1,7 +1,7 @@
 ---
 description: Recupera uma cadeia de caracteres que contém o número de série do certificado.
 ms.assetid: d08be744-4ae8-49f9-8b00-48e76c296f2b
-title: Propriedade Certificate. SerialNumber
+title: Propriedade Certificate.SerialNumber
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 6dbd9485891cc89e686cef118e12dd43ec400f60
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f69836534dc9a45bcdecd88be83d9051c24852d966c0d0a4949016ff7feea3e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105788115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117771267"
 ---
-# <a name="certificateserialnumber-property"></a>Propriedade Certificate. SerialNumber
+# <a name="certificateserialnumber-property"></a>Propriedade Certificate.SerialNumber
 
-\[O CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, use a [**classe X509Certificate2**](/previous-versions/windows/embedded/hh424017(v=msdn.10)) no namespace [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) .\]
+\[CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, [**use a Classe X509Certificate2**](/previous-versions/windows/embedded/hh424017(v=msdn.10)) no namespace [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
-A propriedade **SerialNumber** recupera uma cadeia de caracteres que contém o número de série do certificado.
+A **propriedade SerialNumber** recupera uma cadeia de caracteres que contém o número de série do certificado.
 
 Esta propriedade é somente para leitura.
 
@@ -47,9 +47,9 @@ Uma cadeia de caracteres que contém o número de série do certificado.
 
 | Requisito | Valor |
 |----------------------------------|----------------------------------------------------------------------------------------|
-| Fim do suporte do cliente<br/> | Windows Vista<br/>                                                               |
-| Fim do suporte do servidor<br/> | Windows Server 2008<br/>                                                         |
-| Redistribuível<br/>       | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Fim do suporte ao cliente<br/> | Windows Vista<br/>                                                               |
+| Fim do suporte ao servidor<br/> | Windows Server 2008<br/>                                                         |
+| Redistribuível<br/>       | CAPICOM 2.0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

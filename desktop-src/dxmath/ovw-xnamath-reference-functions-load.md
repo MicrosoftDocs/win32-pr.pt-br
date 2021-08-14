@@ -4,12 +4,12 @@ ms.assetid: 3434ea7d-edc3-a8eb-3481-9e76ba724800
 title: Funções de carregamento de vetor da biblioteca DirectXMath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fe794550cc3363101897c2a44fed5965dd9db31
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 51842e117cc55cc94e93bb5e06179d735b6e6666af138bc6c23ede9ed928028d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118087709"
 ---
 # <a name="directxmath-library-vector-load-functions"></a>Funções de carregamento de vetor da biblioteca DirectXMath
 
@@ -67,18 +67,18 @@ A lista a seguir inclui as funções de carregamento atualmente parte da bibliot
 | [**XMLoadUByteN2**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadubyten2) | Carrega um [**XMUBYTEN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmubyten2) em um [**XMVECTOR**](xmvector-data-type.md). |
 | [**XMLoadUByteN4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadubyten4) | Carrega um [**XMUBYTEN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmubyten4) em um [**XMVECTOR**](xmvector-data-type.md). |
 | [**XMLoadUDec4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadudec4) | Carrega um [**XMUDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudec4) em um [**XMVECTOR**](xmvector-data-type.md). |
-| [**XMLoadUDecN4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadudecn4) | Carrega um [**XMUDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudecn4) em um [**XMVECTOR**](xmvector-data-type.md). |
-| [**XMLoadUDecN4 \_ XR**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadudecn4_xr) | Carrega um intervalo estendido [**XMUDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudecn4) em um [**XMVECTOR**](xmvector-data-type.md). |
-| [**XMLoadUInt2**](/windows/win32/api/directxmath/nf-directxmath-xmloaduint2) | Carrega dados inteiros não assinados nos componentes x e y de um [**XMVECTOR**](xmvector-data-type.md). |
-| [**XMLoadUInt3**](/windows/win32/api/directxmath/nf-directxmath-xmloaduint3) | Carrega dados inteiros não assinados nos componentes x, y e z de um [**XMVECTOR**](xmvector-data-type.md), sem verificação de tipo. |
-| [**XMLoadUInt4**](/windows/win32/api/directxmath/nf-directxmath-xmloaduint4) | Carrega dados inteiros não assinados em um [**XMVECTOR**](xmvector-data-type.md). |
-| [**XMLoadUNibble4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadunibble4) | Carrega um [**XMUNIBBLE4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmunibble4) em um [**XMVECTOR**](xmvector-data-type.md). |
-| [**XMLoadUShort2**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadushort2) | Carrega um [**XMUSHORT2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort2) em um [**XMVECTOR**](xmvector-data-type.md). |
-| [**XMLoadUShort4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadushort4) | Carrega um [**XMUSHORT4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort4) em um [**XMVECTOR**](xmvector-data-type.md). |
-| [**XMLoadUShortN2**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadushortn2) | Carrega um [**XMUSHORTN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2) em um [**XMVECTOR**](xmvector-data-type.md). |
-| [**XMLoadUShortN4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadushortn4) | Carrega um [**XMUSHORTN4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn4) em um [**XMVECTOR**](xmvector-data-type.md). |
-| [**XMLoadXDec4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadxdec4) | Carrega um [**XMXDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmxdec4) em um [**XMVECTOR**](xmvector-data-type.md). |
-| [**XMLoadXDecN4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadxdecn4) | Carrega um [**XMXDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmxdecn4) em um [**XMVECTOR**](xmvector-data-type.md). |
+| [**XMLoadUDecN4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadudecn4) | Carrega um [**XMUDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudecn4) em um [**XMVECTOR.**](xmvector-data-type.md) |
+| [**XMLoadUDecN4 \_ XR**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadudecn4_xr) | Carrega um intervalo estendido [**XMUDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudecn4) em [**um XMVECTOR.**](xmvector-data-type.md) |
+| [**XMLoadUInt2**](/windows/win32/api/directxmath/nf-directxmath-xmloaduint2) | Carrega dados inteiros sem sinal nos componentes x e y de [**um XMVECTOR.**](xmvector-data-type.md) |
+| [**XMLoadUInt3**](/windows/win32/api/directxmath/nf-directxmath-xmloaduint3) | Carrega dados inteiros sem sinal nos componentes x, y e z de [**um XMVECTOR**](xmvector-data-type.md), sem verificação de tipo. |
+| [**XMLoadUInt4**](/windows/win32/api/directxmath/nf-directxmath-xmloaduint4) | Carrega dados inteiros sem sinal em [**um XMVECTOR.**](xmvector-data-type.md) |
+| [**XMLoadUNibble4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadunibble4) | Carrega um [**XMUNIBBLE4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmunibble4) em um [**XMVECTOR.**](xmvector-data-type.md) |
+| [**XMLoadUShort2**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadushort2) | Carrega um [**XMUSHORT2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort2) em um [**XMVECTOR.**](xmvector-data-type.md) |
+| [**XMLoadUShort4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadushort4) | Carrega um [**XMUSHORT4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort4) em um [**XMVECTOR.**](xmvector-data-type.md) |
+| [**XMLoadUShortN2**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadushortn2) | Carrega um [**XMUSHORTN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2) em um [**XMVECTOR.**](xmvector-data-type.md) |
+| [**XMLoadUShortN4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadushortn4) | Carrega um [**XMUSHORTN4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn4) em um [**XMVECTOR.**](xmvector-data-type.md) |
+| [**XMLoadXDec4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadxdec4) | Carrega um [**XMXDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmxdec4) em um [**XMVECTOR.**](xmvector-data-type.md) |
+| [**XMLoadXDecN4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmloadxdecn4) | Carrega um [**XMXDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmxdecn4) em [**um XMVECTOR.**](xmvector-data-type.md) |
 
 ## <a name="related-topics"></a>Tópicos relacionados
-[Funções de biblioteca DirectXMath](ovw-xnamath-reference-functions.md)
+[Funções da biblioteca DirectXMath](ovw-xnamath-reference-functions.md)

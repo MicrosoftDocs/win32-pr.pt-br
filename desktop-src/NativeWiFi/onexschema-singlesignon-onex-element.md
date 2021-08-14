@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: fd25767ed311e9a6f0e75f8dec090d4b80d3f0af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5d0e002133366527624a0954df9054272cc08d894ba8dc3121b8a86b807caab6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105787050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117798027"
 ---
 # <a name="singlesignon-onex-element"></a>Elemento logon único (OneX)
 
@@ -25,7 +25,7 @@ O elemento logon único (OneX) especifica as informações de configuração de 
 
 Esse elemento é opcional. Não use o elemento logon único em um perfil se a rede não o exigir.
 
-**Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Esse elemento será ignorado se estiver presente em um perfil.
+**Windows xp com SP3 e API de LAN sem fio para Windows XP com SP2:** Esse elemento será ignorado se estiver presente em um perfil.
 
 ``` syntax
 <xs:element name="singleSignOn">
@@ -96,8 +96,8 @@ Esse parâmetro pode ser definido na linha de comando usando o comando **netsh w
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

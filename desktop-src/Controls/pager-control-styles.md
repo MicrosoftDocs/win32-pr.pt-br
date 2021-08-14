@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 496737f714ecb58c0d5a349207114cbf338e2c54
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 97b97c7df35fc1883274e42fe54c9ff62415da5dca7e2f020b9371ea873fecc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118170213"
 ---
 # <a name="pager-control-styles"></a>Estilos de controle de pager
 

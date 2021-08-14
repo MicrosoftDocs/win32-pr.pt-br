@@ -1,29 +1,29 @@
 ---
-description: Enviado por uma fonte de captura de áudio quando o formato de áudio é alterado.
+description: Enviado por uma fonte de captura de áudio quando o formato de áudio muda.
 ms.assetid: 8197BBAD-8102-43C3-BA61-8DC3BC13B7D6
-title: Evento MECaptureAudioSessionFormatChanged (Mfobjects. h)
+title: Evento MECaptureAudioSessionFormatChanged (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cfb260d186a9e4d8434669e6a8c3ef08078b93af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fdb8c4a31eeb11e0a07e10eeeb95db9f2cdfda7d31b8fa46cfcb45aa43c3a092
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118062381"
 ---
 # <a name="mecaptureaudiosessionformatchanged-event"></a>Evento MECaptureAudioSessionFormatChanged
 
-Enviado por uma fonte de captura de áudio quando o formato de áudio é alterado.
+Enviado por uma fonte de captura de áudio quando o formato de áudio muda.
 
 ## <a name="event-values"></a>Valores de evento
 
-Os valores possíveis recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluem o seguinte.
+Os valores possíveis recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluem o seguinte.
 
 
 
-| VARTYPE               | Descrição                           |
+| Vartype               | Descrição                           |
 |-----------------------|---------------------------------------|
-| VT \_ vazio <br/> | Nenhum dado do evento.<br/> <br/> |
+| VT \_ VAZIO <br/> | Nenhum dado do evento.<br/> <br/> |
 
 
 
@@ -31,7 +31,7 @@ Os valores possíveis recuperados de [**IMFMediaEvent:: GetValue**](/windows/des
 
 Esse evento é enviado pelo fluxo de mídia da fonte de captura de áudio.
 
-A origem de captura envia esse evento quando recebe um evento [**IAudioSessionEvents:: OnSessionDisconnected**](/windows/win32/api/audiopolicy/nf-audiopolicy-iaudiosessionevents-onsessiondisconnected) da sessão de áudio com o motivo de desconexão igual a **DisconnectReasonFormatChanged**.
+A origem da captura envia esse evento quando recebe um evento [**IAudioSessionEvents::OnSessionDisconnected**](/windows/win32/api/audiopolicy/nf-audiopolicy-iaudiosessionevents-onsessiondisconnected) da sessão de áudio com o motivo de desconexão igual a **DisconnectReasonFormatChanged.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,9 +39,9 @@ A origem de captura envia esse evento quando recebe um evento [**IAudioSessionEv
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>Mfobjects. h (incluir Mfidl. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                               |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Mfobjects.h (inclua Mfidl.h)</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ A origem de captura envia esse evento quando recebe um evento [**IAudioSessionEv
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> </dl>
 
  

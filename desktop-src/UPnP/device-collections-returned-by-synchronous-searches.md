@@ -4,12 +4,12 @@ description: Coleções de dispositivos são objetos que contêm um ou mais obje
 ms.assetid: 45455c3f-7281-4f96-a609-2efd2cf36aa2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6fd581b7c79fe67a825e411d53e8c44c0f3d4326
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 94901dd2f3988327c32d7c21799ff4db7647e76fd987247e903501bd8937851a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117755522"
 ---
 # <a name="device-collections-returned-by-synchronous-searches"></a>Coleções de dispositivos retornadas por pesquisas síncronas
 
@@ -84,6 +84,6 @@ HRESULT TraverseCollection(IUPnPDevices * pDevices)
 
 A primeira etapa é solicitar um novo enumerador para a coleção usando a propriedade [**\_ NewEnum**](/windows/win32/api/upnp/nf-upnp-iupnpdevices-get__newenum) . Isso retorna um enumerador como a interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . O código de exemplo chama [**IUnknown:: QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) para obter a interface [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) . Em seguida, o código de exemplo define o enumerador como o início da coleção invocando o método [**IEnumVARIANT:: Reset**](/windows/win32/api/oaidl/nf-oaidl-ienumvariant-reset) . Por fim, o código de exemplo invoca o método [**IEnumVARIANT:: Next**](/windows/win32/api/oaidl/nf-oaidl-ienumvariant-next) para atravessar a coleção. Os objetos de dispositivo na coleção estão contidos em estruturas de **variante** . Essas estruturas contêm ponteiros para interfaces [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) nos objetos do dispositivo. Para obter a interface [**IUPnPDevice**](/windows/desktop/api/Upnp/nn-upnp-iupnpdevice) , o código de exemplo invoca **QueryInterface** na interface **IDispatch** .
 
- 
+ 
 
- 
+ 

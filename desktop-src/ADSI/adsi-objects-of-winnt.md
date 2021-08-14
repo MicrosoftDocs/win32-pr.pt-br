@@ -1,22 +1,22 @@
 ---
 title: Objetos ADSI do WinNT
-description: O provedor do ADSI WinNT implementa os seguintes objetos COM para dar suporte a recursos e serviços de várias interfaces ADSI.
+description: O provedor WinNT ADSI implementa os seguintes objetos COM para dar suporte a recursos e serviços de várias interfaces ADSI.
 ms.assetid: ce6f8638-aa9e-4036-b597-077da4c3c534
 ms.tgt_platform: multiple
 keywords:
-- ADSI do provedor de serviços do WinNT, objetos ADSI
+- Objetos ADSI e ADSI do provedor de serviços WinNT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77d0c9e5c486d07e1e392a9f307ecd9af4509ed3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 93332a2b0501c9c7c4140d83ff7358f18ae68adc50f9f9f3b689765d947ef01c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104084013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118180580"
 ---
 # <a name="adsi-objects-of-winnt"></a>Objetos ADSI do WinNT
 
-O provedor do ADSI WinNT implementa os seguintes objetos COM para dar suporte a recursos e serviços de várias interfaces ADSI.
+O provedor WinNT ADSI implementa os seguintes objetos COM para dar suporte a recursos e serviços de várias interfaces ADSI.
 
 
 
@@ -56,7 +56,7 @@ O provedor do ADSI WinNT implementa os seguintes objetos COM para dar suporte a 
 </tr>
 <tr class="odd">
 <td><strong>FileShare</strong></td>
-<td>Um objeto ADSI que representa um compartilhamento de arquivos.</td>
+<td>Um objeto ADSI que representa um compartilhamento de arquivo.</td>
 <td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadsfileshare"><strong>IADsFileShare</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadspropertylist"><strong>IADsPropertyList</strong></a></dt> </dl></td>
 </tr>
 <tr class="even">
@@ -66,7 +66,7 @@ O provedor do ADSI WinNT implementa os seguintes objetos COM para dar suporte a 
 </tr>
 <tr class="odd">
 <td><strong>FPNWFileShare</strong></td>
-<td>Um objeto ADSI que representa um compartilhamento de arquivos.</td>
+<td>Um objeto ADSI que representa um compartilhamento de arquivo.</td>
 <td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadsfileshare"><strong>IADsFileShare</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadspropertylist"><strong>IADsPropertyList</strong></a></dt> </dl></td>
 </tr>
 <tr class="even">
@@ -77,7 +77,7 @@ O provedor do ADSI WinNT implementa os seguintes objetos COM para dar suporte a 
 <tr class="odd">
 <td><strong>FPNWResourcesCollection</strong></td>
 <td>Um objeto ADSI que representa uma coleção de recursos.</td>
-<td><a href="/windows/desktop/api/Iads/nn-iads-iadscollection"><strong>IADscollection</strong></a></td>
+<td><a href="/windows/desktop/api/Iads/nn-iads-iadscollection"><strong>IADsCollection</strong></a></td>
 </tr>
 <tr class="even">
 <td><strong>FPNWSession</strong></td>
@@ -87,27 +87,27 @@ O provedor do ADSI WinNT implementa os seguintes objetos COM para dar suporte a 
 <tr class="odd">
 <td><strong>FPNWSessionsCollection</strong></td>
 <td>Um objeto ADSI que representa uma coleção de sessões.</td>
-<td><a href="/windows/desktop/api/Iads/nn-iads-iadscollection"><strong>IADscollection</strong></a></td>
+<td><a href="/windows/desktop/api/Iads/nn-iads-iadscollection"><strong>IADsCollection</strong></a></td>
 </tr>
 <tr class="even">
 <td><strong>Grupo</strong></td>
 <td>Um objeto ADSI que representa um grupo.</td>
-<td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadsgroup"><strong>IADs</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadspropertylist"><strong>IADsPropertyList</strong></a></dt> </dl>
+<td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadsgroup"><strong>IADsGroup</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadspropertylist"><strong>IADsPropertyList</strong></a></dt> </dl>
 <blockquote>
 [!Note]<br />
-GetInfo não pode ser usada para grupos que contêm membros que são entidades de segurança wellKnown no escopo WinNT.
+GetInfo não pode ser usado para grupos que contêm membros que são entidades de segurança wellKnown no escopo do WinNT.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
-<td><strong>GroupCollection</strong></td>
+<td><strong>Groupcollection</strong></td>
 <td>Um objeto ADSI que representa uma coleção de grupos.</td>
 <td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt> <a href="/windows/desktop/api/Iads/nn-iads-iadsmembers"> <strong>IADsMembers</strong></a></dt> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Localgroup</strong></td>
 <td>Um objeto ADSI que representa um grupo local.</td>
-<td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadsgroup"><strong>IADs</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadspropertylist"><strong>IADsPropertyList</strong></a></dt> </dl></td>
+<td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadsgroup"><strong>IADsGroup</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadspropertylist"><strong>IADsPropertyList</strong></a></dt> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>LocalgroupCollection</strong></td>
@@ -116,7 +116,7 @@ GetInfo não pode ser usada para grupos que contêm membros que são entidades d
 </tr>
 <tr class="even">
 <td><strong>Namespace</strong></td>
-<td>Um objeto ADSI que representa o namespace WinNT.</td>
+<td>Um objeto ADSI que representa o namespace do WinNT.</td>
 <td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadscontainer"><strong>IADsContainer</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadsopendsobject"><strong>IADsOpenDSObject</strong></a></dt> </dl></td>
 </tr>
 <tr class="odd">
@@ -125,9 +125,9 @@ GetInfo não pode ser usada para grupos que contêm membros que são entidades d
 <td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadsprintjob"><strong>IADsPrintJob</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadsprintjoboperations"><strong>IADsPrintJobOperations</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadspropertylist"><strong>IADsPropertyList</strong></a></dt> </dl></td>
 </tr>
 <tr class="even">
-<td><strong>Trabalhos de trabalho</strong></td>
+<td><strong>PrintJobsCollection</strong></td>
 <td>Um objeto ADSI que representa uma coleção de trabalhos de impressão.</td>
-<td><a href="/windows/desktop/api/Iads/nn-iads-iadscollection"><strong>IADscollection</strong></a></td>
+<td><a href="/windows/desktop/api/Iads/nn-iads-iadscollection"><strong>IADsCollection</strong></a></td>
 </tr>
 <tr class="odd">
 <td><strong>PrintQueue</strong></td>
@@ -137,7 +137,7 @@ GetInfo não pode ser usada para grupos que contêm membros que são entidades d
 <tr class="even">
 <td><strong>Propriedade</strong></td>
 <td>Um objeto ADSI que representa uma definição de atributo.</td>
-<td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt> <a href="/windows/desktop/api/Iads/nn-iads-iadsproperty"> <strong>iadsproperty</strong></a></dt> </dl></td>
+<td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt> <a href="/windows/desktop/api/Iads/nn-iads-iadsproperty"> <strong>IADsProperty</strong></a></dt> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>Recurso</strong></td>
@@ -145,9 +145,9 @@ GetInfo não pode ser usada para grupos que contêm membros que são entidades d
 <td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadsresource"><strong>IADsResource</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadspropertylist"><strong>IADsPropertyList</strong></a></dt> </dl></td>
 </tr>
 <tr class="even">
-<td><strong>Recursos</strong></td>
+<td><strong>ResourcesCollection</strong></td>
 <td>Um objeto ADSI que representa uma coleção de recursos.</td>
-<td><a href="/windows/desktop/api/Iads/nn-iads-iadscollection"><strong>IADscollection</strong></a></td>
+<td><a href="/windows/desktop/api/Iads/nn-iads-iadscollection"><strong>IADsCollection</strong></a></td>
 </tr>
 <tr class="odd">
 <td><strong>Esquema</strong></td>
@@ -165,9 +165,9 @@ GetInfo não pode ser usada para grupos que contêm membros que são entidades d
 <td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadssession"><strong>IADsSession</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadspropertylist"><strong>IADsPropertyList</strong></a></dt> </dl></td>
 </tr>
 <tr class="even">
-<td><strong>Sessõescollection</strong></td>
+<td><strong>SessionsCollection</strong></td>
 <td>Um objeto ADSI que representa uma coleção de sessões.</td>
-<td><a href="/windows/desktop/api/Iads/nn-iads-iadscollection"><strong>IADscollection</strong></a></td>
+<td><a href="/windows/desktop/api/Iads/nn-iads-iadscollection"><strong>IADsCollection</strong></a></td>
 </tr>
 <tr class="odd">
 <td><strong>Sintaxe</strong></td>
@@ -180,7 +180,7 @@ GetInfo não pode ser usada para grupos que contêm membros que são entidades d
 <td><dl> <dt><a href="/windows/desktop/api/Iads/nn-iads-iads"><strong>IADs</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadsuser"><strong>IADsUser</strong></a></dt> <dt><a href="/windows/desktop/api/Iads/nn-iads-iadspropertylist"><strong>IADsPropertyList</strong></a></dt> </dl></td>
 </tr>
 <tr class="odd">
-<td><strong>Usergroupcollection</strong></td>
+<td><strong>UserGroupCollection</strong></td>
 <td>Um objeto ADSI que representa uma coleção de grupos de usuários.</td>
 <td><a href="/windows/desktop/api/Iads/nn-iads-iadsmembers"><strong>IADsMembers</strong></a></td>
 </tr>

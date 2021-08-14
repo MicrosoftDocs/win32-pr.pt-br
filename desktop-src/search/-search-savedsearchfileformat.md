@@ -1,39 +1,39 @@
 ---
-description: Os usuários do Windows podem salvar pesquisas como uma pasta de pesquisa que é gerada por um arquivo XML que armazena a consulta em um formulário que pode ser usado pelo subsistema de pesquisa do Windows.
+description: Windows os usuários podem salvar pesquisas como uma Pasta de Pesquisa gerada por um arquivo XML que armazena a consulta em um formulário que pode ser usado pelo subsistema Windows search.
 ms.assetid: 1c73e220-a999-4243-879c-ac7310151def
 title: Formato de arquivo de pesquisa salvo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d19cf936f78b045814bf7cba31a123c40d61927a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 614eb357a82d2c70e068a9fa5258974423d755c48e779d5f5fe8be184a864d9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117863719"
 ---
 # <a name="saved-search-file-format"></a>Formato de arquivo de pesquisa salvo
 
-No Windows Vista e posterior, os usuários podem salvar pesquisas como uma pasta de pesquisa que é gerada por um arquivo XML que armazena a consulta em um formulário que pode ser usado pelo subsistema de pesquisa do Windows. Este tópico descreve o formato de arquivo ( \* . Search-MS) e inclui as seguintes seções:
+No Windows Vista e posterior, os usuários podem salvar pesquisas como uma Pasta de Pesquisa que é gerada por um arquivo XML que armazena a consulta em um formulário que pode ser usado pelo subsistema Windows search. Este tópico descreve o formato de arquivo ( \* .search-ms) e inclui as seguintes seções:
 
 - [Visão geral das pesquisas salvas](#overview-of-saved-searches)
-- [\<viewInfo> Elementos](/windows)
+- [\<viewInfo> Elemento](/windows)
   - [\<viewInfo> Atributos](/windows)
   - [\<viewInfo> Elementos filho](/windows)
-- [\<query> Elementos](/windows)
+- [\<query> Elemento](/windows)
   - [\<query> Elementos filho](/windows)
-- [\<properties> Elementos](/windows)
-- [Especificação completa do formato de arquivo Search-MS](#full-specification-of-the-search-ms-file-format)
+- [\<properties> Elemento](/windows)
+- [Especificação completa do formato de arquivo search-ms](#full-specification-of-the-search-ms-file-format)
 - [Exemplos de pesquisas salvas](#examples-of-saved-searches)
 
 ## <a name="overview-of-saved-searches"></a>Visão geral das pesquisas salvas
 
-Os usuários podem salvar uma consulta de pesquisa como uma pasta de pesquisa, uma pasta virtual exibida no Windows Explorer na pasta pesquisas. A abertura de uma pasta de pesquisa executa a pesquisa salva e exibe os resultados atualizados. O arquivo de pesquisa salvo armazena a consulta em um formato em que o Windows Search pode agir, especificando o que Pesquisar, onde Pesquisar e como apresentar os resultados.
+Os usuários podem salvar uma consulta de pesquisa como uma Pasta de Pesquisa, uma pasta virtual exibida Windows Explorer na pasta Pesquisas. Abrir uma Pasta de Pesquisa executa a pesquisa salva e exibe os resultados atualizados. O arquivo de pesquisa salvo armazena a consulta em um formato Windows Search pode agir, especificando o que pesquisar, onde pesquisar e como apresentar os resultados.
 
-A pesquisa salva é gerada a partir de um arquivo XML ( \* . Search-MS) na pasta% UserProfile% \\ pesquisas. Os dados são divididos em três elementos principais no arquivo XML:
+A pesquisa salva é gerada de um arquivo XML ( \* .search-ms) na pasta %userprofile% \\ Searches. Os dados são divididos em três elementos primários no arquivo XML:
 
-- \<viewInfo> Especifica as informações de apresentação
-- \<query> Especifica (informações de consulta de pesquisa
-- \<properties> Especifica as propriedades do \* arquivo. Search-MS em si
+- \<viewInfo> especifica informações de apresentação
+- \<query> especifica (informações de consulta de pesquisa
+- \<properties> especifica as propriedades do próprio \* arquivo .search-ms
 
 O exemplo a seguir mostra a estrutura de alto nível de um arquivo de pesquisa salvo.
 
@@ -58,7 +58,7 @@ O exemplo a seguir mostra a estrutura de alto nível de um arquivo de pesquisa s
 
 ## <a name="viewinfo-element"></a>Elemento \<viewInfo>
 
-O \<viewInfo> elemento especifica como os resultados são apresentados ao usuário final. O exemplo a seguir mostra a estrutura do elemento.
+O \<viewInfo> elemento especifica como os resultados são apresentados ao usuário final. O exemplo a seguir mostra a estrutura do elemento .
 
 ```XML
 ...
@@ -103,30 +103,30 @@ A tabela a seguir descreve os atributos do elemento \<viewInfo>.
 
 | Atributo     | Descrição                                                                     | Valores                     |
 |---------------|---------------------------------------------------------------------------------|----------------------------|
-| viewMode      | Especifica a exibição de pasta.                                                      | \|Blocos de ícones de detalhes \|  |
-| iconSize      | Controla o tamanho padrão dos ícones e das miniaturas de itens quando não empilhar. | Inteiro entre 16 e 256 |
-| stackIconSize | Somente para uso interno. Não use.                                              | N/D                        |
-| displayName   | Somente para uso interno. Não use.                                              | N/D                        |
-| autoListFlags | Somente para uso interno. Não use.                                              | N/D                        |
-| folderFlags   | Somente para uso interno. Não use.                                              | N/D                        |
-| taskFlags     | Somente para uso interno. Não use.                                              | N/D                        |
+| Viewmode      | Especifica a exibição de pasta.                                                      | Blocos \| de ícones \| de detalhes  |
+| iconSize      | Controla o tamanho padrão dos ícones e miniaturas dos itens quando não são empilhados. | Inteiro entre 16 e 256 |
+| stackIconSize | Somente para uso interno. Não use.                                              | n/d                        |
+| displayName   | Somente para uso interno. Não use.                                              | n/d                        |
+| autoListFlags | Somente para uso interno. Não use.                                              | n/d                        |
+| folderFlags   | Somente para uso interno. Não use.                                              | n/d                        |
+| taskFlags     | Somente para uso interno. Não use.                                              | n/d                        |
 
 ### <a name="viewinfo-child-elements"></a>\<viewInfo> Elementos filho
 
-Os elementos filho do \<viewInfo> elemento especificam quais colunas aparecem nos resultados da pesquisa do Windows Explorer e como os resultados são agrupados e classificados. Cada elemento filho contém um conjunto ordenado de colunas, identificado por nomes canônicos das propriedades do sistema (por exemplo, System. DisplayName). Se não estiver definido no arquivo de pesquisa salvo, os resultados da pesquisa serão apresentados com um conjunto padrão de colunas apropriado para os tipos de arquivo exibidos.
+Os elementos filho do elemento especificam quais colunas aparecem nos resultados da pesquisa Windows Explorer e como os resultados são \<viewInfo> agrupados e classificação. Cada elemento filho contém um conjunto ordenado de colunas, identificado por nomes canônicos de propriedades do sistema (por exemplo, System.DisplayName). Se não estiver definido no arquivo de pesquisa salvo, os resultados da pesquisa serão apresentados com um conjunto padrão de colunas apropriado para os tipos de arquivo exibidos.
 
 | Elemento               | Descrição                                                                                        | Valores                                                       |
 |-----------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| visibleColumns        | Especifica uma lista ordenada de colunas a serem exibidas na exibição de resultados. O usuário pode alterar essa lista. | Qualquer Propriedade do sistema.                                         |
-| frequentlyUsedColumns | Somente para uso interno. Não use.                                                                 | N/D                                                          |
-| columnChooserColumns  | Somente para uso interno. Não use.                                                                 | N/D                                                          |
-| groupBy               | Especifica uma única propriedade do sistema pela qual agrupar os resultados. O usuário pode alterar esse valor.  | Qualquer Propriedade do sistema.                                         |
-| modo de classificação              | Especifica uma lista ordenada de colunas para classificar os resultados.                                       | Até quatro propriedades do sistema. O usuário pode alterar essa lista. |
-| pilhalist             | Somente para uso interno. Não use.                                                                 | N/D                                                          |
+| visibleColumns        | Especifica uma lista ordenada de colunas a aparecer na exibição de resultados. O usuário pode alterar essa lista. | Qualquer propriedade do sistema.                                         |
+| frequentlyUsedColumns | Somente para uso interno. Não use.                                                                 | n/d                                                          |
+| columnChooserColumns  | Somente para uso interno. Não use.                                                                 | n/d                                                          |
+| Groupby               | Especifica uma única propriedade do sistema pela qual agrupar os resultados. O usuário pode alterar esse valor.  | Qualquer propriedade do sistema.                                         |
+| Sortlist              | Especifica uma lista ordenada de colunas para classificar os resultados.                                       | Até quatro propriedades do sistema. O usuário pode alterar essa lista. |
+| stackList             | Somente para uso interno. Não use.                                                                 | n/d                                                          |
 
 ## <a name="query-element"></a>Elemento \<query>
 
-O \<query> elemento Especifica os atributos que definem como os resultados são consultados. O exemplo a seguir mostra a estrutura do elemento.
+O \<query> elemento especifica os atributos que definem como os resultados são consultados. O exemplo a seguir mostra a estrutura do elemento .
 
 ```XML
 ...
@@ -168,8 +168,8 @@ A tabela a seguir descreve os elementos filho do elemento \<scope>.
 
 | Elemento    | Descrição                                                                                                               | Valor                                                                                                                                                                                                                                                          |
 |------------|---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| providers  | Somente para uso interno. Não use.                                                                                        | N/D                                                                                                                                                                                                                                                            |
-| Subconsultas | Somente para uso interno. Não use.                                                                                        | N/D                                                                                                                                                                                                                                                            |
+| providers  | Somente para uso interno. Não use.                                                                                        | n/d                                                                                                                                                                                                                                                            |
+| Subconsultas | Somente para uso interno. Não use.                                                                                        | n/d                                                                                                                                                                                                                                                            |
 | Escopo      | Identifica os locais a serem incluídos ou excluídos na pesquisa.                                                                 | Um caminho ou uma [ID de pasta conhecida](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iknownfolder-getid) do local a ser incluído ou excluído. Esse elemento também pode especificar se a pesquisa deve incluir/excluir caminhos filho (uma pesquisa superficial ou profunda). |
 | tipo de   | Identifica o tipo de arquivo (s) a ser pesquisado.                                                                             | Qualquer valor de System. Kind.                                                                                                                                                                                                                                         |
 | condições | Especifica regras para filtrar resultados. Por exemplo, os resultados podem ser limitados a emails enviados por ou a uma pessoa específica. | andCondition, orCondition, não Condition, leafCondition.                                                                                                                                                                                                        |
@@ -247,9 +247,9 @@ O tipo de condição pode ser um dos seguintes:
 
 | Tipo          | Descrição                                 | Atributos disponíveis                               |
 |---------------|---------------------------------------------|----------------------------------------------------|
-| andCondition  | Conjunto de duas ou mais condições filho | N/D                                                |
-| orCondition   | Disjunção de duas de mais condições filho | N/D                                                |
-| Não condição  | Negação de uma condição filho               | N/D                                                |
+| andCondition  | Conjunto de duas ou mais condições filho | n/d                                                |
+| orCondition   | Disjunção de duas de mais condições filho | n/d                                                |
+| Não condição  | Negação de uma condição filho               | n/d                                                |
 | leafCondition | Compara uma propriedade com o valor                | Propriedade, propertyType, operador, valor, ValueType |
 
 Os \<leafCondition> atributos do elemento identificam as propriedades e os valores nos quais os resultados são filtrados.

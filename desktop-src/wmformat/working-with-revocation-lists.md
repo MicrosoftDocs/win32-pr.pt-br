@@ -3,7 +3,7 @@ title: Trabalhando com listas de revogação
 description: Trabalhando com listas de revogação
 ms.assetid: 4463abb5-f48f-484f-b837-512313572c0a
 keywords:
-- SDK do Windows Media Format, listas de revogação
+- Windows SDK do formato de mídia, listas de revogação
 - ASF (Advanced Systems Format), listas de revogação
 - ASF (formato de sistemas avançados), listas de revogação
 - listas de revogação
@@ -11,12 +11,12 @@ keywords:
 - DRM (gerenciamento de direitos digitais), listas de revogação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75f4eca82dd82c9225406a85034ff2a6df227fce
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 3d022b9b55a1a14b147d76d289efeac956bae8f1858d155f138efa579d533fa9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104498974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118194863"
 ---
 # <a name="working-with-revocation-lists"></a>Trabalhando com listas de revogação
 
@@ -39,9 +39,9 @@ Os aplicativos do Player podem receber uma mensagem de erro de revogação nos s
 [**Lidando com eventos de aquisição de licença**](handling-license-acquisition-events.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

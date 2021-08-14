@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a3db71fbc931f7bdb3e73c8d949a163607e66c31
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 48053a238806c223067742b62675f1c0b8bc5a53e8bdf05f78f3fc56520b8388
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105762217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118299885"
 ---
 # <a name="d3dxcomputeimtfrompertexelsignal-function"></a>Função D3DXComputeIMTFromPerTexelSignal
 
@@ -149,7 +149,7 @@ Um ponteiro para o buffer (consulte [**ID3DXBuffer**](id3dxbuffer.md)) que cont�
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

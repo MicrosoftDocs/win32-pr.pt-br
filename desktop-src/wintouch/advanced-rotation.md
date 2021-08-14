@@ -3,20 +3,20 @@ title: Rotação avançada
 description: Esta seção explica como girar um objeto com base em onde o usuário está executando a manipulação de rotação.
 ms.assetid: 56b339b1-a062-4c0e-91c8-aec08a17bc65
 keywords:
-- Windows Touch, rotação
-- Windows Touch, rotação avançada
-- Windows Touch, manipulações
+- Windows Toque, rotação
+- Windows Toque, rotação avançada
+- Windows Toque, manipulações
 - manipulações, rotação
 - manipulações, rotação avançada
 - rotação, avançada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc3a84679f4189d28941262cda2585887b0932c5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1a6dda17ae8076061f7b5b7b935afb2b7f8e5fb10cb270280f7edbb8c23aa896
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103915989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118199512"
 ---
 # <a name="advanced-rotation"></a>Rotação avançada
 
@@ -56,9 +56,9 @@ RotateVector(FLOAT *vector, FLOAT *tVector, FLOAT fAngle) {
 [Manipulações](getting-started-with-manipulations.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

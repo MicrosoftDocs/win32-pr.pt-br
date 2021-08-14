@@ -9,12 +9,12 @@ keywords:
 - Macro MCIWndUseFrames
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e390e811bde4d797572c19f372923906f6b738b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 50c14303879a3d13d018be8691eb1947ee1ed67907df796ae38cffc3936bf2ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117801699"
 ---
 # <a name="specifying-time-formats"></a>Especificando formatos de hora
 
@@ -25,11 +25,11 @@ Você pode recuperar o formato de hora atual para um arquivo ou dispositivo usan
 > [!Note]  
 > Formatos não contínuos, como trilhas e SMPTE, podem fazer com que a barra de ferramentas se comporte incorretamente. Para esses formatos de tempo, talvez você queira desativar a barra de ferramentas especificando o \_ estilo de janela MCIWNDF NOPLAYBAR ao criar uma janela MCIWnd.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

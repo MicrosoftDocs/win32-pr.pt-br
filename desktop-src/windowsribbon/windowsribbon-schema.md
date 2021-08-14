@@ -1,69 +1,69 @@
 ---
-title: Declarando comandos e controles com marcação de faixa de medida
-description: O Windows Ribbon Framework usa uma linguagem de marcação baseada em linguagem XAML (XAML) para implementar de forma declarativa a aparência de um aplicativo da faixa de faixas.
+title: Declarando comandos e controles com marcação de faixa de opções
+description: A Windows ribbon usa uma linguagem de marcação baseada em Extensible Application Markup Language (XAML) para implementar declarativamente a aparência de um aplicativo de Faixa de Opções.
 ms.assetid: 76bacfb3-ecaf-47b3-be97-afa5e7e52330
 keywords:
-- Faixa de medida do Windows, estrutura de marcação
-- Faixa de faixas, estrutura de marcação
-- Faixa de-se do Windows, separando a apresentação da lógica de comando
-- Faixa de faixas, separando a apresentação da lógica de comando
-- Faixa de, componentes do Windows
-- Faixa de, componentes
-- sistema de comandos para Windows Ribbon
-- controles para a faixa de faixas do Windows
+- Windows Faixa de opções, estrutura de marcação
+- Faixa de opções, estrutura de marcação
+- Windows Faixa de opções, separando a apresentação da lógica de comando
+- Faixa de opções, separando a apresentação da lógica de comando
+- Windows Faixa de opções, componentes
+- Faixa de opções, componentes
+- sistema de comandos para Windows faixa de opções
+- controles para Windows faixa de opções
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c97c5c193332ce217709c825a58f0ae546c03c9c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 20ae6c8d62012fac240c6d044c688295d89d8d5899e3673a3b914d8d142111d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118201318"
 ---
-# <a name="declaring-commands-and-controls-with-ribbon-markup"></a>Declarando comandos e controles com marcação de faixa de medida
+# <a name="declaring-commands-and-controls-with-ribbon-markup"></a>Declarando comandos e controles com marcação de faixa de opções
 
-O Windows Ribbon Framework usa uma linguagem de marcação baseada em linguagem XAML (XAML) para implementar de forma declarativa a aparência de um aplicativo da faixa de faixas.
+A Windows ribbon usa uma linguagem de marcação baseada em Extensible Application Markup Language (XAML) para implementar declarativamente a aparência de um aplicativo de Faixa de Opções.
 
--   [Separando apresentação da lógica de comando](#separating-presentation-from-command-logic)
+-   [Separando a apresentação da lógica de comando](#separating-presentation-from-command-logic)
 -   [Estrutura de marcação](#markup-structure)
--   [Componentes da faixa de das](#ribbon-components)
+-   [Componentes da faixa de opções](#ribbon-components)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="separating-presentation-from-command-logic"></a>Separando apresentação da lógica de comando
+## <a name="separating-presentation-from-command-logic"></a>Separando a apresentação da lógica de comando
 
-A separação dos atributos de apresentação e visuais da lógica de comando na estrutura da faixa de faixas é realizada por meio de duas plataformas de desenvolvimento diferentes, mas dependentes. Layouts de controle, comportamentos de dimensionamento, declarações de comando e especificações de recursos são o domínio de tempo de design de uma sintaxe de marcação declarativa com base na especificação de [linguagem XAML (XAML)](/dotnet/framework/wpf/advanced/xaml-in-wpf) . Funcionalidade de nível baixo, ganchos de aplicativo e manipuladores de comando são definidos em implementações de interface com base em Component Object Model (COM).
+A separação de atributos visuais e de apresentação da lógica de comando na estrutura da Faixa de Opções é realizada por meio de duas plataformas de desenvolvimento distintas, mas dependentes. Layouts de controle, comportamentos de dimensionamento, declarações de comando e especificações de recurso são o domínio de tempo de design de uma sintaxe de marcação declarativa com base [na especificação Extensible Application Markup Language (XAML).](/dotnet/framework/wpf/advanced/xaml-in-wpf) A funcionalidade de baixo nível, os ganchos de aplicativo e os manipuladores de comando são definidos em implementações de interface baseadas Component Object Model (COM).
 
 Essa separação de apresentação e lógica oferece os seguintes benefícios:
 
--   Um ciclo de desenvolvimento de aplicativos mais eficiente que permite que desenvolvedores e designers da interface do usuário implementem a GUI do aplicativo da faixa de faixas independentemente da funcionalidade do aplicativo principal. Essa funcionalidade básica pode ser deixada para os desenvolvedores de software dedicados.
--   Manutenção menos dispendiosa porque as alterações na GUI são possíveis sem alterações na funcionalidade básica (e vice-versa).
+-   Um ciclo de desenvolvimento de aplicativos mais eficiente que permite que desenvolvedores e designers de interface do usuário implementem a GUI do aplicativo da Faixa de Opções independentemente da funcionalidade principal do aplicativo. Essa funcionalidade principal pode ser deixada para desenvolvedores de software dedicados.
+-   Manutenção menos custosa porque as alterações na GUI são possíveis sem alterações na funcionalidade principal (e vice-versa).
 -   Especificação simples de recursos de cadeia de caracteres e imagem por meio de marcação.
--   Facilidade de protótipos.
+-   Facilidade de criação de protótipos.
 
 ## <a name="markup-structure"></a>Estrutura de marcação
 
-Existem duas ramificações distintas dentro da estrutura da marcação da estrutura da faixa de faixas.
+Existem dois branches distintos dentro da estrutura de marcação da estrutura ribbon.
 
-A primeira ramificação contém um manifesto de declarações de comando e recurso (cadeias de caracteres e imagens). Cada entrada de comando é usada pela estrutura para associar um controle da faixa de faixas, por meio de uma ID de comando, a um manipulador de comandos definido no código do aplicativo.
+O primeiro branch contém um manifesto de declarações de comando e de recurso (cadeias de caracteres e imagens). Cada entrada Command é usada pela estrutura para vincular um controle ribbon, por meio de uma ID de comando, a um manipulador de comandos definido no código do aplicativo.
 
-A segunda ramificação contém as declarações de controle reais. Cada controle é associado a um comando por meio de um atributo *CommandName* que é mapeado para um atributo de *nome* especificado em cada declaração de comando.
+O segundo branch contém as declarações de controle reais. Cada controle é associado a um Comando por meio de um atributo *CommandName* que mapeia para um *atributo Name* especificado em cada declaração command.
 
-## <a name="ribbon-components"></a>Componentes da faixa de das
+## <a name="ribbon-components"></a>Componentes da faixa de opções
 
-A funcionalidade da interface do usuário do Framework é exposta por meio de [exibições](windowsribbon-reference-elements-view.md). Uma exibição é essencialmente um contêiner, como a [**faixa**](windowsribbon-element-ribbon.md) de e- [**ContextPopup**](windowsribbon-element-contextpopup.md), que é usada para apresentar os controles de estrutura e os comandos aos quais eles estão vinculados.
+A funcionalidade de interface do usuário da estrutura de faixa de opções é exposta por meio de [Exibições](windowsribbon-reference-elements-view.md). Uma Exibição é essencialmente um [](windowsribbon-element-ribbon.md) contêiner, como a Faixa de Opções e [**ContextPopup**](windowsribbon-element-contextpopup.md), que é usado para apresentar controles de estrutura e os Comandos aos qual eles estão vinculados.
 
-O modo de exibição da [**faixa**](windowsribbon-element-ribbon.md) de visão é composto por vários componentes que incluem um [menu de aplicativo](windowsribbon-controls-applicationmenu.md), a barra de [ferramentas de acesso rápido (qat)](windowsribbon-controls-quickaccesstoolbar.md) para exibir comandos comumente usados da interface do usuário da faixa de [guia, guias](windowsribbon-controls-tab.md) de núcleo e contextual que contêm [grupos](windowsribbon-controls-group.md) de controles e o sistema de menus de contexto avançado do [**ContextPopup**](windowsribbon-element-contextpopup.md).
+A [](windowsribbon-element-ribbon.md) Exibição da Faixa de Opções é composta por vários componentes que incluem um [Menu](windowsribbon-controls-applicationmenu.md)de Aplicativos, a [QAT (Barra](windowsribbon-controls-quickaccesstoolbar.md) de Ferramentas de Acesso Rápido) para exibir Comandos comumente usados da interface do usuário da faixa de opções, guias principais e contextuais que contêm grupos de [controles](windowsribbon-controls-tab.md) e o sistema de menus de contexto avançados [**do ContextPopup.**](windowsribbon-element-contextpopup.md) [](windowsribbon-controls-group.md)
 
-Todos os componentes da faixa de faixas são declarados em um arquivo de marcação autônomo que:
+Todos os componentes da Faixa de Opções são declarados em um arquivo de marcação autônomo que:
 
 -   Especifica as propriedades básicas para cada elemento.
--   Mostra as relações hierárquicas claramente.
--   Fornece preferências de layout e dicas de dimensionamento. Para obter mais informações sobre modelos de layout da faixa de faixas, consulte [Personalizando uma faixa de opção por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md).
--   Fornece uma maneira de definir recursos como imagens e rótulos. Para obter mais informações sobre recursos de imagem, consulte [especificando recursos de imagem da faixa de Ribbon](windowsribbon-imageformats.md).
+-   Mostra relações hierárquicas claramente.
+-   Fornece preferências de layout e dicas de dimensionamento. Para obter mais informações sobre modelos de layout de estrutura de faixa de opções, consulte Personalização de uma faixa de opções por definições [de tamanho e políticas de dimensionamento](windowsribbon-templates.md).
+-   Fornece uma maneira de definir recursos como imagens e rótulos. Para obter mais informações sobre recursos de imagem, consulte [Especificando recursos de](windowsribbon-imageformats.md)imagem da faixa de opções .
 
-Os dois exemplos de marcação da faixa de opções a seguir demonstram como um conjunto de itens de menu do aplicativo da faixa de opções é associado a um nome de comando e ID.
+Os dois exemplos de marcação da Faixa de Opções a seguir demonstram como um conjunto de itens de Menu do Aplicativo da Faixa de Opções está associado a um nome de comando e uma ID.
 
-1.  Esta seção mostra as declarações de comando necessárias para um menu de aplicativo com comandos básicos, como novo, abrir e salvar.
+1.  Esta seção mostra as declarações de comando necessárias para um Menu de Aplicativo com comandos básicos, como Novo, Abrir e Salvar.
     ```XML
     <!-- Command declarations for the Application Menu. -->
     <Command Name="cmdFileMenu"
@@ -114,7 +114,7 @@ Os dois exemplos de marcação da faixa de opções a seguir demonstram como um 
 
     
 
-2.  Esta seção mostra as declarações de controle associadas.
+2.  Esta seção mostra as declarações de Controle associadas.
     ```XML
     <!-- Control declarations for Application Menu items. -->
     <Ribbon.ApplicationMenu>
@@ -139,9 +139,9 @@ Os dois exemplos de marcação da faixa de opções a seguir demonstram como um 
 
     
 
-Quando a marcação é compilada com a ferramenta UICC (compilador de comando de interface do usuário), os nomes de comando e as IDs são colocados em um arquivo de cabeçalho usado pelo aplicativo host da faixa de faixas.
+Quando a marcação é compilada com a ferramenta UICC (Compilador de Comando da Interface do Usuário), os nomes de comando e as IDs são colocados em um arquivo de header usado pelo aplicativo host da Faixa de Opções.
 
-Veja a seguir um exemplo de um arquivo de cabeçalho gerado pelo UICC.
+A seguir está um exemplo de um arquivo de header gerado pelo UICC.
 
 
 ```
@@ -169,12 +169,12 @@ Veja a seguir um exemplo de um arquivo de cabeçalho gerado pelo UICC.
 
 <dl> <dt>
 
-[Linguagem XAML (XAML)](/dotnet/framework/wpf/advanced/xaml-in-wpf)
+[Extensible Application Markup Language (XAML)](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 </dt> <dt>
 
-[Compilando marcação da faixa de medida](windowsribbon-intentcl.md)
+[Compilando marcação de faixa de opções](windowsribbon-intentcl.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

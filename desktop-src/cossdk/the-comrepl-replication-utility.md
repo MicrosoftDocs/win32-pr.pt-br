@@ -4,12 +4,12 @@ ms.assetid: 11aa7603-61f1-4af0-b6f9-81f484788052
 title: O utilitário de replicação COMREPL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a08ecd77a679b6fc150e7a91fc0214eb829792dd
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 446cfc0e627463e8c142ccab624c3773123034c2becebc402a6069f74d30ccd4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118305291"
 ---
 # <a name="the-comrepl-replication-utility"></a>O utilitário de replicação COMREPL
 
@@ -17,7 +17,7 @@ COMREPL é um utilitário que replicará o catálogo COM+ de um determinado comp
 
 A unidade de replicação é a configuração COM+ inteira no computador mestre. Todos os aplicativos COM+ no mestre são replicados para os computadores de destino; é tudo ou nada. Além disso, todos os aplicativos COM+ instalados anteriormente nos computadores de destino, com exceção dos aplicativos pré-instalados em COM+, serão excluídos como parte do processo de replicação.
 
-COMREPL replica somente os dados de configuração do COM+. Isso inclui aplicativos COM+ e configurações de computador específicas do COM+. O Microsoft Serviços de Informações da Internet (IIS) tem um utilitário semelhante (IISSync), que utiliza o COMREPL para replicar a configuração do IIS e do COM+.
+COMREPL replica somente os dados de configuração do COM+. Isso inclui aplicativos COM+ e configurações de computador específicas do COM+. o Serviços de Informações da Internet da Microsoft (IIS) tem um utilitário semelhante (IISSync), que usa COMREPL para replicar a configuração do IIS e do COM+.
 
 Para obter informações detalhadas sobre como iniciar e usar o COMREPL, consulte os seguintes tópicos nesta seção:
 

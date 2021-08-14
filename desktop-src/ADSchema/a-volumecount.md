@@ -1,11 +1,11 @@
 ---
 title: Volume-Count atributo
-description: A cota de volume controlado para um determinado computador.
+description: A cota de volume rastreada para um determinado computador.
 ms.assetid: a764a650-2cce-4df4-9a5e-d5fc8de196cb
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Volume-Count do atributo AD
-- Esquema de AD do atributo volumeCount
+- Volume-Count atributo AD Schema
+- Esquema do AD do atributo volumeCount
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd2242926ce379cdba9a19ae1ad0dc2612a3375f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e83fba5496bd954bf4f774ca30da6f5ba1b030999e549d52b3d7bcb172736440
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118176138"
 ---
 # <a name="volume-count-attribute"></a>Volume-Count atributo
 
-A cota de volume controlado para um determinado computador.
+A cota de volume rastreada para um determinado computador.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Volume-Count                         |
-| LDAP-Display-Name | volumeCount                          |
+| Ldap-Display-Name | volumeCount                          |
 | Tamanho              | 4 bytes                              |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.507               |
-| System-ID-GUID    | 34aaa217-b699-11d0-afee-0000f80367c1 |
+| System-Id-Guid    | 34aaa217-b699-11d0-afee-0000f80367c1 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,10 +58,10 @@ A cota de volume controlado para um determinado computador.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| Tem valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
-| No catálogo global      | Falso                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
+| No Catálogo Global      | Falso                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -79,10 +79,10 @@ A cota de volume controlado para um determinado computador.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| Tem valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
-| No catálogo global      | Falso                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
+| No Catálogo Global      | Falso                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -100,10 +100,10 @@ A cota de volume controlado para um determinado computador.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| Tem valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
-| No catálogo global      | Falso                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
+| No Catálogo Global      | Falso                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -121,7 +121,7 @@ A cota de volume controlado para um determinado computador.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| É de valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
@@ -142,7 +142,7 @@ A cota de volume controlado para um determinado computador.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| É de valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
@@ -163,7 +163,7 @@ A cota de volume controlado para um determinado computador.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| É de valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |

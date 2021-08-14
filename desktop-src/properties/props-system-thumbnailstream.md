@@ -1,19 +1,19 @@
 ---
-description: Dados que representam a miniatura no \_ formato de fluxo VT, com suporte do Windows GDI+ e de codecs do Windows, como. jpg e. png.
+description: os dados que representam a miniatura no \_ formato de fluxo VT, com suporte de Windows GDI+ e Windows codecs como .jpg e .png.
 ms.assetid: 7ffdf9e4-69b1-4946-8867-73696cd241e0
 title: System. ThumbnailStream
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 378fbb885dfac216186fbc402090a2786d2b27ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ecabbcc3f634e3ff2e614b81a839f2108dfd4261fa1a3ec7e06cc07e74c05cf7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117864249"
 ---
 # <a name="systemthumbnailstream"></a>System. ThumbnailStream
 
-Dados que representam a miniatura no \_ formato de fluxo VT, com suporte do Windows GDI+ e de codecs do Windows, como. jpg e. png.
+os dados que representam a miniatura no \_ formato de fluxo VT, com suporte de Windows GDI+ e Windows codecs como .jpg e .png.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1
 

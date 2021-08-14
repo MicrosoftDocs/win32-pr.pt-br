@@ -1,9 +1,9 @@
 ---
-title: Tipo de Weekly Complex
+title: Tipo complexo weeksType
 description: Define o elemento filho e as informações de sequenciamento para o elemento Week.
 ms.assetid: c9e8814c-b8f9-426d-943d-ca3efa5d914b
 keywords:
-- tipo complexo de weektype Agendador de Tarefas
+- tipo complexo weeksType Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 597cc72c043a478a414187f63a9aa89516dee658
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 876d798acdf1f8684fc4f2cecac8e77bceb73dddd0036f2117d4bb55a77a71ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117757983"
 ---
-# <a name="weekstype-complex-type"></a>Tipo de Weekly Complex
+# <a name="weekstype-complex-type"></a>Tipo complexo weeksType
 
-Define o elemento filho e as informações de sequenciamento para o elemento [**Week**](taskschedulerschema-week-weekstype-element.md) .
+Define o elemento filho e as informações de sequenciamento para o [**elemento Week.**](taskschedulerschema-week-weekstype-element.md)
 
 ``` syntax
 <xs:complexType name="weeksType">
@@ -42,7 +42,7 @@ Define o elemento filho e as informações de sequenciamento para o elemento [**
 
 | Elemento                                                    | Type                                                        | Descrição                                             |
 |------------------------------------------------------------|-------------------------------------------------------------|---------------------------------------------------------|
-| [**Semana**](taskschedulerschema-week-weekstype-element.md) | [**weektype**](taskschedulerschema-weektype-simpletype.md) | Especifica a semana em que a tarefa é executada.<br/> |
+| [**Semana**](taskschedulerschema-week-weekstype-element.md) | [**weekType**](taskschedulerschema-weektype-simpletype.md) | Especifica a semana em que a tarefa é executado.<br/> |
 
 
 
@@ -52,8 +52,8 @@ Define o elemento filho e as informações de sequenciamento para o elemento [**
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

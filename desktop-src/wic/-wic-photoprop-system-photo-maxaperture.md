@@ -1,21 +1,21 @@
 ---
-description: A política de metadados de foto para a propriedade System. Photo. MaxAperture.
+description: A política de metadados de foto para a propriedade System.Photo.MaxAperture.
 ms.assetid: 9d12d265-0b0a-44d9-bbf6-ca7d748382ee
-title: Política de metadados de foto System. Photo. MaxAperture
+title: Política de metadados de foto System.Photo.MaxAperture
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9f3dab4d5ebf89033de03dfce887a7cea10fa11
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d692c12b9a5df584331a9a5ff4a82707d8549ab7891e1d9162eef318a77fe4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105812862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118204708"
 ---
-# <a name="systemphotomaxaperture-photo-metadata-policy"></a>Política de metadados de foto System. Photo. MaxAperture
+# <a name="systemphotomaxaperture-photo-metadata-policy"></a>Política de metadados de foto System.Photo.MaxAperture
 
-A política de metadados de foto para a propriedade [System. Photo. MaxAperture](../properties/props-system-photo-maxaperture.md) .
+A política de metadados de foto para a [propriedade System.Photo.MaxAperture.](../properties/props-system-photo-maxaperture.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
 PKEY \_ Photo \_ MaxAperture
 
@@ -25,29 +25,29 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-Yes
+Sim
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
 
-R8 de VT \_
+VT \_ R8
 
 ### <a name="input-type"></a>Tipo de entrada
 
 Double
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
 
-Esse valor é gerado em System. Photo. MaxApertureNumerator e System. Photo. MaxApertureDenominator. Ele não pode ser gravado diretamente. Os valores de esquemas diferentes são reconciliados.
+Esse valor é gerado de System.Photo.MaxApertureNumerator e System.Photo.MaxApertureDenominator. Ele não pode ser gravado diretamente. Valores de esquemas diferentes são reconciliados.
 
 ### <a name="jpeg-policy"></a>Política JPEG
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{UShort = 37381} |             |
+| 1     | /app1/ifd/exif/{ushort=37381} |             |
 | 2     | /xmp/exif:MaxApertureValue    |             |
 
 
@@ -60,7 +60,7 @@ Esse valor é gerado em System. Photo. MaxApertureNumerator e System. Photo. Max
 
 | Ordem | Caminho                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{UShort = 37381} |             |
+| 1     | /app1/ifd/exif/{ushort=37381} |             |
 | 2     | /xmp/exif:MaxApertureValue    |             |
 
 
@@ -73,7 +73,7 @@ Esse valor é gerado em System. Photo. MaxApertureNumerator e System. Photo. Max
 
 | Ordem | Caminho                          |
 |-------|-------------------------------|
-| 1     | /App1/IFD/EXIF/{UShort = 37381} |
+| 1     | /app1/ifd/exif/{ushort=37381} |
 | 2     | /xmp/exif:maxaperturevalue    |
 
 
@@ -82,13 +82,13 @@ Esse valor é gerado em System. Photo. MaxApertureNumerator e System. Photo. Max
 
 ### <a name="tiff-policies"></a>Políticas TIFF
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                           | Formato de disco |
 |-------|--------------------------------|-------------|
-| 1     | /IFD/EXIF/{UShort = 37381}       |             |
+| 1     | /ifd/exif/{ushort=37381}       |             |
 | 2     | /ifd/xmp/exif:MaxApertureValue |             |
 
 
@@ -101,7 +101,7 @@ Esse valor é gerado em System. Photo. MaxApertureNumerator e System. Photo. Max
 
 | Ordem | Caminho                           | Formato de disco |
 |-------|--------------------------------|-------------|
-| 1     | /IFD/EXIF/{UShort = 37381}       |             |
+| 1     | /ifd/exif/{ushort=37381}       |             |
 | 2     | /ifd/xmp/exif:MaxApertureValue |             |
 
 
@@ -114,7 +114,7 @@ Esse valor é gerado em System. Photo. MaxApertureNumerator e System. Photo. Max
 
 | Ordem | Caminho                           |
 |-------|--------------------------------|
-| 1     | /IFD/EXIF/{UShort = 37381}       |
+| 1     | /ifd/exif/{ushort=37381}       |
 | 2     | /ifd/xmp/exif:maxaperturevalue |
 
 
@@ -127,7 +127,7 @@ Esse valor é gerado em System. Photo. MaxApertureNumerator e System. Photo. Max
 
 <dl> <dt>
 
-[System. Photo. MaxAperture](../properties/props-system-photo-maxaperture.md)
+[System.Photo.MaxAperture](../properties/props-system-photo-maxaperture.md)
 </dt> </dl>
 
  

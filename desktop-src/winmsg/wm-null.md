@@ -1,21 +1,21 @@
 ---
-description: Não executa nenhuma operação. Um aplicativo enviará a \_ mensagem nula do WM se quiser postar uma mensagem que a janela do destinatário ignorará.
+description: Não executa nenhuma operação. Um aplicativo envia a mensagem WM \_ NULL se quiser postar uma mensagem que a janela do destinatário ignorará.
 ms.assetid: edbcfba6-7b79-4d53-84e3-2e4227e17369
-title: Mensagem de WM_NULL (WinUser. h)
+title: WM_NULL mensagem (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b445e13200bdeb2947e4d8fd363a1a39f0c86db
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e9ade89ee83a7d0d0b9d012248da729facbd07d269387a86cd4dfac873b76be3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118199942"
 ---
-# <a name="wm_null-message"></a>\_Mensagem nula do WM
+# <a name="wm_null-message"></a>Mensagem WM \_ NULL
 
-Não executa nenhuma operação. Um aplicativo enviará a mensagem **\_ nula do WM** se quiser postar uma mensagem que a janela do destinatário ignorará.
+Não executa nenhuma operação. Um aplicativo envia a **mensagem WM \_ NULL** se quiser postar uma mensagem que a janela do destinatário ignorará.
 
-Uma janela recebe essa mensagem por meio de sua função [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Uma janela recebe essa mensagem por meio de [**sua função WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -42,17 +42,17 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **LRESULT**
 
-Um aplicativo retornará zero se ele processar essa mensagem.
+Um aplicativo retornará zero se ele processa essa mensagem.
 
 ## <a name="remarks"></a>Comentários
 
-Por exemplo, se um aplicativo tiver instalado um gancho de **qu \_** e quiser impedir que uma mensagem seja processada, a função de retorno de chamada [**GetMsgProc**](/previous-versions/windows/desktop/legacy/ms644981(v=vs.85)) poderá alterar o número da mensagem para o **WM \_ NULL** para que o destinatário o ignore.
+Por exemplo, se um aplicativo tiver instalado um gancho **\_ GETMESSAGE WH** e quiser impedir que uma mensagem seja processada, a função de retorno de chamada [**GetMsgProc**](/previous-versions/windows/desktop/legacy/ms644981(v=vs.85)) poderá alterar o número da mensagem para **WM \_ NULL** para que o destinatário a ignore.
 
-Como outro exemplo, um aplicativo pode verificar se uma janela está respondendo às mensagens enviando a **mensagem \_ nula do WM** com a função [**SendMessageTimeout**](/windows/win32/api/winuser/nf-winuser-sendmessagetimeouta) .
+Como outro exemplo, um aplicativo pode verificar se uma janela está respondendo às mensagens enviando a mensagem **WM \_ NULL** com a [**função SendMessageTimeout.**](/windows/win32/api/winuser/nf-winuser-sendmessagetimeouta)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,7 +62,7 @@ Como outro exemplo, um aplicativo pode verificar se uma janela está respondendo
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ Como outro exemplo, um aplicativo pode verificar se uma janela está respondendo
 
 <dl> <dt>
 
-[Visão geral do Windows](windows.md)
+[Windows Visão geral](windows.md)
 </dt> </dl>
 
  

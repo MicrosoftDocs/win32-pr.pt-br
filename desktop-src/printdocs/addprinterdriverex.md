@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: c431d710ddad7f723d063fd5bf046bae08b77b7a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00bd65ad415a97bbab825e4a13c8ad985d1d7f9b79d7b46e3f8f7ea6b5e5f0dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105757654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117868805"
 ---
 # <a name="addprinterdriverex-function"></a>Função AddPrinterDriverEx
 
@@ -74,7 +74,7 @@ Um ponteiro para uma estrutura que contém informações de driver de impressora
 |------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | [**Informações do DRIVER \_ \_ 2**](driver-info-2.md)<br/> |
 | <span id="3"></span><dl> <dt>**3**</dt> </dl> | [**Informações do DRIVER \_ \_ 3**](driver-info-3.md)<br/> |
-| <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | [**Informações do DRIVER \_ \_ 4**](driver-info-4.md)<br/> |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | [**Informações do DRIVER \_ \_ 4**](driver-info-4.md)<br/> |
 | <span id="6"></span><dl> <dt>**6**</dt> </dl> | [**Informações do DRIVER \_ \_ 6**](driver-info-6.md)<br/> |
 | <span id="8"></span><dl> <dt>**8**</dt> </dl> | [**Informações do DRIVER \_ \_ 8**](driver-info-8.md)<br/> |
 
@@ -107,7 +107,7 @@ As opções para copiar os arquivos de driver. Esse parâmetro pode usar um dos 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno será um valor diferente de zero.
 
@@ -141,7 +141,7 @@ Antes de chamar a função **AddPrinterDriverEx** , todos os arquivos exigidos p
 
 Para determinar quais drivers de impressora estão instalados no momento, chame a função [**EnumPrinterDrivers**](enumprinterdrivers.md) .
 
-Se o driver de impressora tiver sido adicionado com êxito, a função chamará a função DrvDriverEvent (inicialização de evento de DRIVER \_ \_ , nível, \_ informações \_ \* de driver, lParam) para permitir que o driver execute as inicializações necessárias durante a instalação de um driver de impressora. Para obter mais informações sobre o **DrvDriverEvent**, consulte o Microsoft Windows Driver Development Kit (DDK)
+Se o driver de impressora tiver sido adicionado com êxito, a função chamará a função DrvDriverEvent (inicialização de evento de DRIVER \_ \_ , nível, \_ informações \_ \* de driver, lParam) para permitir que o driver execute as inicializações necessárias durante a instalação de um driver de impressora. para obter mais informações sobre o **DrvDriverEvent**, consulte o Microsoft Windows Driver Development Kit (DDK)
 
 O driver não deve usar uma chamada de interface do usuário durante a chamada para **DrvDriverEvent**. Para fazer trabalhos relacionados à interface do usuário, o instalador deve usar a entrada VendorSetup no arquivo. inf da impressora ou, para dispositivos Plug and Play, o instalador pode usar um coinstalador específico do dispositivo. Para obter mais informações sobre VendorSetup, consulte o DDK.
 
@@ -178,13 +178,13 @@ Os arquivos que são referenciados na [**estrutura \_ informações \_ sobre o d
 [**Informações do DRIVER \_ \_ 2**](driver-info-2.md)
 </dt> <dt>
 
-[**Informações do DRIVER \_ \_ 3**](driver-info-3.md)
+[**INFORMAÇÕES \_ DO DRIVER \_ 3**](driver-info-3.md)
 </dt> <dt>
 
-[**Informações do DRIVER \_ \_ 4**](driver-info-4.md)
+[**INFORMAÇÕES \_ DO DRIVER \_ 4**](driver-info-4.md)
 </dt> <dt>
 
-[**Informações do DRIVER \_ \_ 6**](driver-info-6.md)
+[**INFORMAÇÕES \_ DO DRIVER \_ 6**](driver-info-6.md)
 </dt> <dt>
 
 [**DeletePrinterDriverEx**](deleteprinterdriverex.md)

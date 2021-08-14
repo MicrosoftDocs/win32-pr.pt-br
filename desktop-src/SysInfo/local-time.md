@@ -4,12 +4,12 @@ ms.assetid: a6570ec5-ac77-427a-86d9-32cbecc62e37
 title: Hora local
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c60eb9ca53245a12eba1bc0096b522eae97de75a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 95835b76f09ae328c3e1509da68e0fbd989286b2e2669efc9f2280dbce72e35a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117763995"
 ---
 # <a name="local-time"></a>Hora local
 

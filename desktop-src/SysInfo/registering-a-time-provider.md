@@ -4,12 +4,12 @@ ms.assetid: 67f79c31-9dd7-4e3f-bfe1-701b10611f91
 title: Registrando um provedor de tempo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a98e5e516db6b2c800c917c5e47da9bd75ba5c2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6eeb7bce1370e443eaf3eb42d78cdfd058cf2c38147da038de1e921d85e957f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117763921"
 ---
 # <a name="registering-a-time-provider"></a>Registrando um provedor de tempo
 
@@ -24,7 +24,7 @@ A tabela a seguir descreve os valores que devem existir na chave de cada provedo
 | Valor             | Descrição                                                                                                                                                                                                              |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **DllName**       | O nome da DLL que contém o provedor. Esse valor tem o tipo **reg \_ sz**.                                                                                                                                     |
-| **Enabled**       | Indica se o provedor deve ser iniciado. Se esse valor for 1, o provedor será iniciado. Caso contrário, o provedor não será iniciado. Esse valor tem o tipo **reg \_ DWORD**.                                           |
+| **Habilitada**       | Indica se o provedor deve ser iniciado. Se esse valor for 1, o provedor será iniciado. Caso contrário, o provedor não será iniciado. Esse valor tem o tipo **reg \_ DWORD**.                                           |
 | **InputProvider** | Indica se o provedor é um provedor de entrada ou um provedor de saída. Se esse valor for 1, o provedor será um provedor de entrada. Caso contrário, o provedor será um provedor de saída. Esse valor tem o tipo **reg \_ DWORD**. |
 
 

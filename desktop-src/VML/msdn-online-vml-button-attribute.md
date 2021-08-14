@@ -1,26 +1,26 @@
 ---
-title: Atributo do botão VML
-description: Atributo do botão VML
+title: Atributo de botão VML
+description: Atributo de botão VML
 ms.assetid: 273024ac-683f-48d2-b6a0-574824f4c05d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f2760fceaf52e3f9ee217d4c3d249fb670a845f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c505feebbf4614f7e56c856fa2c757e93160823d8bcd2fd5d539da80c436f32b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105782288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117754971"
 ---
-# <a name="vml-button-attribute"></a>Atributo do botão VML
+# <a name="vml-button-attribute"></a>Atributo de botão VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina se uma forma será processada como um botão. Leitura/gravação. **VgTriState**.
+Determina se uma forma será processada como um botão. Leitura/gravação. **VgTriState.**
 
 **Aplica-se a**
 
@@ -28,13 +28,13 @@ Determina se uma forma será processada como um botão. Leitura/gravação. **Vg
 
 **Sintaxe de marca**
 
-<v: *Element* o:Button = " *expressão* " >
+<v: *elemento* o:button=" *expressão* ">
 
 **Comentários**
 
-O padrão é **False**. Se **for true**, a forma será processada como um botão.
+O padrão é **False**. Se **True**, a forma será processada como um botão.
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo Extensions*
 
 **Exemplo**
 
@@ -49,6 +49,6 @@ A forma é um botão.
 
 
 
- 
+ 
 
- 
+ 

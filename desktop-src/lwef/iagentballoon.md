@@ -4,16 +4,16 @@ description: IAgentBalloon
 ms.assetid: 94a48cd9-bea5-4993-8991-50c6c86a646b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b811956e368abbaf2d2782c68017084f5e17a09f
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 4b463503ecf73b152a8b6fbe0b57d264908115055f33e86b7f2651ffe82fd73d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103640667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117693257"
 ---
 # <a name="iagentballoon"></a>IAgentBalloon
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 **IAgentBalloon** define uma interface que permite que os aplicativos consultem Propriedades para o balão do Microsoft Agent Word. Essas funções também estão disponíveis em [**IAgentBalloonEx**](https://www.bing.com/search?q=**IAgentBalloonEx**).
 
@@ -46,8 +46,8 @@ Os padrões iniciais para o balão de palavras de um caractere são definidos no
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

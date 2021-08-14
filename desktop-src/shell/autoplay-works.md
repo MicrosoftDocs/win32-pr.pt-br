@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 24a944b011c926d1638e5d0bcb0d35fc348e5783
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f3a3c265f71b0bdf66d7825e65eb69ab975bfc6bffa5c9a8674ed5a0fb8feb38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118224928"
 ---
 # <a name="creating-an-autorun-enabled-application"></a>Criando um aplicativo AutoRun-Enabled
 
@@ -36,16 +36,16 @@ Quando um usuário insere um disco em uma unidade de CD-ROM em um computador com
 Autorun. inf é um arquivo de texto localizado no diretório raiz do CD-ROM que contém seu aplicativo. Sua função principal é fornecer ao sistema o nome e o local do programa de inicialização do aplicativo que será executado quando o disco for inserido.
 
 > [!Note]  
-> Não há suporte para arquivos autorun. inf no Windows XP para unidades que retornam \_ removível de unidade de [**GetDriveType**](/windows/win32/api/fileapi/nf-fileapi-getdrivetypea).
+> não há suporte para arquivos Autorun. inf no Windows XP para unidades que retornam \_ removível de unidade de [**getdrivetype**](/windows/win32/api/fileapi/nf-fileapi-getdrivetypea).
 
  
 
 O arquivo autorun. inf também pode conter informações opcionais, incluindo:
 
--   O nome de um arquivo que contém um ícone que representará a unidade de CD-ROM do aplicativo. Esse ícone será exibido pelo Windows Explorer no lugar do ícone de unidade padrão.
+-   O nome de um arquivo que contém um ícone que representará a unidade de CD-ROM do aplicativo. esse ícone será exibido pelo Windows Explorer no lugar do ícone de unidade padrão.
 -   Comandos adicionais para o menu de atalho que é exibido quando o usuário clica com o botão direito do mouse no ícone do CD-ROM. Você também pode especificar o comando padrão que é executado quando o usuário clica duas vezes no ícone.
 
-Os arquivos autorun. inf são semelhantes aos arquivos. ini. Elas consistem em uma ou mais seções, cada uma com um nome entre colchetes. Cada seção contém uma série de comandos que serão executados pelo shell quando o disco for inserido. Há duas seções que estão definidas no momento para arquivos autorun. inf.
+Os arquivos autorun. inf são semelhantes aos arquivos .ini. Elas consistem em uma ou mais seções, cada uma com um nome entre colchetes. Cada seção contém uma série de comandos que serão executados pelo shell quando o disco for inserido. Há duas seções que estão definidas no momento para arquivos autorun. inf.
 
 -   A seção **\[ autorun \]** contém os comandos padrão de Autorun. Todos os arquivos autorun. inf devem ter uma seção de **\[ autorun \]** .
 -   Uma seção opcional **\[ autorun. \] Alpha** pode ser incluída para sistemas em execução em computadores baseados em RISC. Quando um disco é inserido em uma unidade de CD-ROM em um sistema baseado em RISC, o Shell executará os comandos nesta seção em vez daqueles na seção de **\[ autorun \]** .
@@ -62,7 +62,7 @@ Cada seção contém uma série de comandos que determinam como ocorre a operaç
 | Comando                         | Descrição                                                                            |
 |---------------------------------|----------------------------------------------------------------------------------------|
 | [DefaultIcon](autorun-cmds.md) | Especifica o ícone padrão para o aplicativo.                                        |
-| [cone](autorun-cmds.md)        | Especifica o caminho e o nome do arquivo de um ícone específico do aplicativo para a unidade de CD-ROM. |
+| [ícone](autorun-cmds.md)        | Especifica o caminho e o nome do arquivo de um ícone específico do aplicativo para a unidade de CD-ROM. |
 | [open](autorun-cmds.md)        | Especifica o caminho e o nome de arquivo do aplicativo de inicialização.                           |
 | [useautorun](autorun-cmds.md)  | Especifica que os recursos de reprodução automática v2 devem ser usados se houver suporte.                       |
 | [Shell](autorun-cmds.md)       | Define o comando padrão no menu de atalho do CD-ROM.                             |
@@ -100,14 +100,14 @@ icon=IconFile.ico
 
 ## <a name="the-deviceinstall-section"></a>A \[ \] seção DeviceInstall
 
-Você pode usar a seção **\[ DeviceInstall \]** em qualquer mídia removível. Há suporte apenas no Windows XP. Você usa **DriverPath** para especificar um caminho de diretório no qual o Windows XP procura por arquivos de driver, o que impede uma pesquisa demorada por todo o conteúdo.
+Você pode usar a seção **\[ DeviceInstall \]** em qualquer mídia removível. há suporte apenas no Windows XP. você usa **DriverPath** para especificar um caminho de diretório onde Windows XP procura por arquivos de driver, o que impede uma pesquisa demorada por todo o conteúdo.
 
-Use a seção **\[ DeviceInstall \]** com uma instalação de driver para especificar diretórios em que o Windows XP deve pesquisar arquivos de driver na mídia. No Windows XP, toda a mídia não é mais pesquisada por padrão, portanto, exigir **\[ DeviceInstall \]** para especificar locais de pesquisa. A seguir estão as únicas mídias removíveis que o Windows XP pesquisa totalmente sem uma seção **\[ DeviceInstall \]** em um arquivo autorun. inf.
+use a seção **\[ DeviceInstall \]** com uma instalação de driver para especificar diretórios em que Windows XP deve pesquisar arquivos de driver na mídia. no Windows XP, toda a mídia não é mais pesquisada por padrão, portanto, exigir **\[ DeviceInstall \]** para especificar locais de pesquisa. a seguir estão as únicas mídias removíveis que Windows XP pesquisa totalmente sem uma seção **\[ DeviceInstall \]** em um arquivo Autorun. inf.
 
 -   Disquetes encontrados nas unidades A ou B.
 -   Mídia de CD/DVD com menos de 1 gigabyte (GB) de tamanho.
 
-Todas as outras mídias devem incluir uma seção **\[ DeviceInstall \]** para o Windows XP detectar quaisquer drivers armazenados nessa mídia.
+todas as outras mídias devem incluir uma seção **\[ DeviceInstall \]** para Windows XP para detectar quaisquer drivers armazenados nessa mídia.
 
 > [!Note]  
 > Assim como acontece com a seção **\[ autorun \]** , a seção **\[ DeviceInstall \]** pode ser específica da arquitetura.

@@ -1,10 +1,10 @@
 ---
-title: Estrutura de WMDRMNET_POLICY_TRANSCRYPTPLAY (wmdrmsdk. h)
-description: A \_ estrutura TRANSCRYPTPLAY da política WMDRMNET \_ contém as informações de política para reproduzir conteúdo usando o Windows Media DRM para dispositivos de rede.
+title: WMDRMNET_POLICY_TRANSCRYPTPLAY estrutura (Wmdrmsdk.h)
+description: A estrutura WMDRMNET POLICY TRANSCRYPTPLAY contém as informações de política para reprodução de conteúdo usando Windows DRM de \_ Mídia para \_ Dispositivos de Rede.
 ms.assetid: 95671c58-a593-40bb-856e-28ad1cba340e
 keywords:
-- Formato de mídia do Windows de estrutura de WMDRMNET_POLICY_TRANSCRYPTPLAY
-- estruturar formato de mídia do Windows
+- WMDRMNET_POLICY_TRANSCRYPTPLAY formato de mídia windows da estrutura
+- formato de mídia de janelas de estrutura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0681251428b87b323c9ad3e73277ec8cdd2b95f0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8fe64c796a1f2f15e4733e7dd3d82e918306fb95d78c61fb85ad2d813d946d60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118195501"
 ---
-# <a name="wmdrmnet_policy_transcryptplay-structure"></a>\_Estrutura TRANSCRYPTPLAY da política de WMDRMNET \_
+# <a name="wmdrmnet_policy_transcryptplay-structure"></a>Estrutura WMDRMNET \_ POLICY \_ TRANSCRYPTPLAY
 
-A **estrutura \_ \_ TRANSCRYPTPLAY da política WMDRMNET** contém as informações de política para reproduzir conteúdo usando o Windows Media DRM para dispositivos de rede.
+A **estrutura WMDRMNET \_ POLICY \_ TRANSCRYPTPLAY** contém as informações de política para reprodução de conteúdo usando Windows DRM de Mídia para Dispositivos de Rede.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -52,7 +52,7 @@ Estrutura de política global.
 **playOPLs**
 </dt> <dd>
 
-Níveis de proteção de saída para reprodução. **WMDRMNET \_ A \_ reprodução \_ de política OPL** é um tipo definido como [**DRM \_ Play \_ OPL \_ ex**](drm-play-opl-ex.md).
+Níveis de proteção de saída para reprodução. **WMDRMNET \_ POLICY \_ PLAY \_ OPL** é um tipo definido como [**DRM PLAY \_ \_ OPL \_ EX.**](drm-play-opl-ex.md)
 
 </dd> </dl>
 
@@ -66,7 +66,7 @@ Nenhum.
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
@@ -77,7 +77,7 @@ Nenhum.
 [**Estruturas**](drm-structures.md)
 </dt> <dt>
 
-[**política de WMDRMNET \_**](wmdrmnet-policy.md)
+[**POLÍTICA \_ WMDRMNET**](wmdrmnet-policy.md)
 </dt> </dl>
 
  

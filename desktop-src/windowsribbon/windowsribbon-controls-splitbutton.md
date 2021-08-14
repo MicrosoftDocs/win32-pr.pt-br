@@ -1,46 +1,46 @@
 ---
 title: Botão de Divisão
-description: O botão de divisão é um controle composto com o qual o usuário pode selecionar um valor padrão associado a um botão primário ou selecionar em uma lista de valores mutuamente exclusivos exibidos em uma lista suspensa associada a um botão secundário.
+description: O Botão Dividir é um controle composto com o qual o usuário pode selecionar um valor padrão vinculado a um botão primário ou selecionar em uma lista de valores mutuamente exclusivos exibidos em uma lista de listas listadas vinculadas a um botão secundário.
 ms.assetid: 0939b3be-fa88-4864-8096-a664ab2e97b5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b78aa261eebb24404eeaf8b3fdad7f630331f58
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.openlocfilehash: 9bc5d9554af8c580b5288a2f18eaef89a1d7e864bae628ebac59599f6b7f820f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "105784991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118202483"
 ---
 # <a name="split-button"></a>Botão de Divisão
 
-O botão de divisão é um controle composto com o qual o usuário pode selecionar um valor padrão associado a um botão primário ou selecionar em uma lista de valores mutuamente exclusivos exibidos em uma lista suspensa associada a um botão secundário.
+O Botão Dividir é um controle composto com o qual o usuário pode selecionar um valor padrão vinculado a um botão primário ou selecionar em uma lista de valores mutuamente exclusivos exibidos em uma lista de listas listadas vinculadas a um botão secundário.
 
 -   [Introdução](#introduction)
--   [Propriedades do botão de divisão](#split-button-properties)
+-   [Propriedades do botão Dividir](#split-button-properties)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="introduction"></a>Introdução
 
-Esse controle é útil para expor itens bem relacionados em casos em que um padrão óbvio está disponível e onde os itens individuais podem ser representados por uma imagem, texto ou ambos.
+Esse controle é útil para expor itens intimamente relacionados em casos em que um padrão óbvio está disponível e em que os itens individuais podem ser representados por uma imagem, texto ou ambos.
 
-A captura de tela a seguir ilustra o botão de divisão da faixa de opções.
+A captura de tela a seguir ilustra o Botão de Divisão da Faixa de Opções.
 
-![captura de tela de um controle SplitButton em uma faixa de uma amostra.](images/controls/splitbutton.png)
+![captura de tela de um controle splitbutton em uma faixa de opções de exemplo.](images/controls/splitbutton.png)
 
-## <a name="split-button-properties"></a>Propriedades do botão de divisão
+## <a name="split-button-properties"></a>Propriedades do botão Dividir
 
-A estrutura da faixa de faixas define uma coleção de [chaves de propriedade](windowsribbon-reference-properties.md) para o controle do botão de divisão.
+A estrutura ribbon define uma coleção de chaves [de propriedade](windowsribbon-reference-properties.md) para o controle Dividir Botão.
 
-Normalmente, uma propriedade de botão de divisão é atualizada na interface do usuário da faixa de forma invalidando o comando associado ao controle por meio de uma chamada para o método [**IUIFramework:: InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) . O evento Invalidation é tratado e as atualizações de propriedade são definidas pelo método de retorno de chamada [**IUICommandHandler:: updateproperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) .
+Normalmente, uma propriedade Botão de Divisão é atualizada na interface do usuário da faixa de opções invalidando o Comando associado ao controle por meio de uma chamada para o método [**IUIFramework::InvalidateUICommand.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) O evento de invalidação é tratado e as atualizações de propriedade definidas pelo método de retorno de chamada [**IUICommandHandler::UpdateProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)
 
-O método de retorno de chamada [**IUICommandHandler:: updateproperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) não é executado e o aplicativo consultou um valor de propriedade atualizado, até que a propriedade seja exigida pela estrutura. Por exemplo, quando uma guia é ativada e um controle revelado na interface do usuário da faixa de ferramentas, ou quando uma dica de ferramenta é exibida.
+O método de retorno de chamada [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) não é executado e o aplicativo consulta um valor de propriedade atualizado até que a propriedade seja exigida pela estrutura. Por exemplo, quando uma guia é ativada e um controle é revelado na interface do usuário da faixa de opções ou quando uma dica de ferramenta é exibida.
 
 > [!Note]  
-> Em alguns casos, uma propriedade pode ser recuperada por meio do método [**IUIFramework:: GetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty) e definida com o método [**IUIFramework:: SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) .
+> Em alguns casos, uma propriedade pode ser recuperada por meio do método [**IUIFramework::GetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty) e definida com o [**método IUIFramework::SetUICommandProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty)
 
  
 
-A tabela a seguir lista as chaves de propriedade que estão associadas com o controle de botão de divisão.
+A tabela a seguir lista as chaves de propriedade associadas ao controle Dividir Botão.
 
 
 
@@ -58,10 +58,10 @@ A tabela a seguir lista as chaves de propriedade que estão associadas com o con
 <tbody>
 <tr class="odd">
 <td><a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a></td>
-<td>Dá suporte a <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>IUIFramework:: GetUICommandProperty</strong></a> e <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>IUIFramework:: SetUICommandProperty</strong></a>.<br/> Se todos os itens filho estiverem desabilitados, a estrutura definirá <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> como false (0). Caso contrário, se um ou mais itens filhos estiverem habilitados, UI_PKEY_Enabled será definido como true (-1).
+<td>Dá <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty"><strong>suporte a IUIFramework::GetUICommandProperty</strong></a> <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty"><strong>e IUIFramework::SetUICommandProperty.</strong></a><br/> Se todos os itens filho estão desabilitados, a estrutura <a href="windowsribbon-reference-properties-uipkey-enabled.md">define UI_PKEY_Enabled</a> como false (0). Caso contrário, se um ou mais itens filho estão habilitados, UI_PKEY_Enabled é definido como true (-1).
 <blockquote>
 [!Important]<br />
-A propriedade <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> para o controle do botão de divisão deve ser invalidada depois que um ou mais itens filho são habilitados ou desabilitados. Isso garante que a estrutura consulta o valor da propriedade atualizado e atualiza o estado do controle do botão de divisão na interface do usuário da faixa de da.
+A <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_PKEY_Enabled</a> para o controle Dividir Botão deve ser invalidada depois que um ou mais itens filho são habilitados ou desabilitados. Isso garante que a estrutura consulte o valor da propriedade atualizada e atualize o estado do controle Dividir Botão na interface do usuário da faixa de opções.
 </blockquote>
 <br/> <br/></td>
 </tr>
@@ -88,7 +88,7 @@ A propriedade <a href="windowsribbon-reference-properties-uipkey-enabled.md">UI_
 
 <dl> <dt>
 
-[Biblioteca de controle do Windows Ribbon Framework](windowsribbon-controls-entry.md)
+[Windows Biblioteca de Controle da Estrutura de Faixa de Opções](windowsribbon-controls-entry.md)
 </dt> <dt>
 
 [**Elemento de marcação SplitButton**](windowsribbon-element-splitbutton.md)

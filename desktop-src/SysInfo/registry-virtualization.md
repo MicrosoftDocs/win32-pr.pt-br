@@ -4,26 +4,26 @@ ms.assetid: dace2f65-df60-419a-8be8-ab60668e6396
 title: Virtualização do registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 642bda46b43fc0b4f7efa60cfcd9e2178643811f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f14d8a82a12be74d3c5f2963e8b4edf47baaa85c4a8299e4ff632284bbac83fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105751055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117763583"
 ---
 # <a name="registry-virtualization"></a>Virtualização do registro
 
-A *virtualização do registro* é uma tecnologia de compatibilidade de aplicativos que permite que operações de gravação do registro que têm impacto global sejam redirecionadas para locais por usuário. Esse redirecionamento é transparente para os aplicativos que lêem ou gravam no registro. Há suporte a partir do Windows Vista.
+A *virtualização do registro* é uma tecnologia de compatibilidade de aplicativos que permite que operações de gravação do registro que têm impacto global sejam redirecionadas para locais por usuário. Esse redirecionamento é transparente para os aplicativos que lêem ou gravam no registro. há suporte a partir do Windows Vista.
 
-Essa forma de virtualização é uma tecnologia de compatibilidade de aplicativos provisória; A Microsoft pretende removê-la de versões futuras do sistema operacional Windows, pois mais aplicativos são compatíveis com o Windows Vista e versões posteriores do Windows. Portanto, é importante que seu aplicativo não se torne dependente do comportamento da virtualização do registro no sistema.
+Essa forma de virtualização é uma tecnologia de compatibilidade de aplicativos provisória; a Microsoft pretende removê-la de versões futuras do sistema operacional Windows, pois mais aplicativos são compatíveis com o Windows Vista e versões posteriores do Windows. Portanto, é importante que seu aplicativo não se torne dependente do comportamento da virtualização do registro no sistema.
 
-A virtualização destina-se apenas a fornecer compatibilidade para aplicativos existentes. Os aplicativos projetados para o Windows Vista e versões posteriores do Windows não devem gravar em áreas confidenciais do sistema, nem devem confiar na virtualização para solucionar problemas. Ao atualizar o código existente para ser executado no Windows Vista e em versões posteriores do Windows, os desenvolvedores devem garantir que os aplicativos só armazenem dados em locais por usuário ou em locais de computadores dentro de% USERPROFILE% que usem corretamente uma ACL (lista de controle de acesso).
+A virtualização destina-se apenas a fornecer compatibilidade para aplicativos existentes. os aplicativos projetados para o Windows Vista e versões posteriores do Windows não devem gravar em áreas confidenciais do sistema, nem devem confiar na virtualização para solucionar problemas. ao atualizar o código existente para ser executado no Windows Vista e em versões posteriores do Windows, os desenvolvedores devem garantir que os aplicativos só armazenem dados em locais por usuário ou em locais de computadores dentro de% userprofile% que usem corretamente uma ACL (lista de controle de acesso).
 
 Para obter mais informações sobre a criação de aplicativos em conformidade com o UAC, consulte o [Guia do desenvolvedor do UAC](/previous-versions/dotnet/articles/aa480150(v=msdn.10)).
 
 ## <a name="virtualization-overview"></a>Visão geral da virtualização
 
-Antes do Windows Vista, os aplicativos eram normalmente executados por administradores. Como resultado, os aplicativos podem acessar livremente os arquivos do sistema e as chaves do registro. Se esses aplicativos foram executados por um usuário padrão, eles falharão devido a direitos de acesso insuficientes. O Windows Vista e versões posteriores do Windows melhoram a compatibilidade de aplicativos para esses aplicativos ao redirecionar automaticamente essas operações. Por exemplo, as operações de registro para o repositório global (**HKEY \_ local \_ Machine \\ software**) são redirecionadas para um local por usuário dentro do perfil do usuário conhecido como o *repositório virtual* (**HKEY \_ Users \\ <User SID> \_ classes \\ VirtualStore \\ Machine \\ software**).
+antes do Windows Vista, os aplicativos eram normalmente executados por administradores. Como resultado, os aplicativos podem acessar livremente os arquivos do sistema e as chaves do registro. Se esses aplicativos foram executados por um usuário padrão, eles falharão devido a direitos de acesso insuficientes. Windows o Vista e versões posteriores do Windows melhoram a compatibilidade de aplicativos para esses aplicativos ao redirecionar automaticamente essas operações. Por exemplo, as operações de registro para o repositório global (**HKEY \_ local \_ Machine \\ software**) são redirecionadas para um local por usuário dentro do perfil do usuário conhecido como o *repositório virtual* (**HKEY \_ Users \\ <User SID> \_ classes \\ VirtualStore \\ Machine \\ software**).
 
 A virtualização do registro pode ser classificada em grande escala nos seguintes tipos:
 
@@ -64,7 +64,7 @@ A virtualização do registro é habilitada apenas para o seguinte:
 
 -   processos interativos de 32 bits.
 -   Chaves em **HKEY \_ local \_ Machine \\ software**.
--   Chaves para as quais um administrador pode gravar. (Se um administrador não puder gravar em uma chave, o aplicativo terá falhado em versões anteriores do Windows, mesmo que fosse executado por um administrador.)
+-   Chaves para as quais um administrador pode gravar. (se um administrador não puder gravar em uma chave, o aplicativo terá falhado em versões anteriores do Windows mesmo que tenha sido executado por um administrador.)
 
 A virtualização do registro está desabilitada para o seguinte:
 
@@ -76,7 +76,7 @@ A virtualização do registro está desabilitada para o seguinte:
 -   Processos que representam um usuário. Se um processo tentar uma operação enquanto representa um usuário, essa operação não será virtualizada.
 -   Processos de modo kernel, como drivers.
 -   Processos que têm **requestedExecutionLevel** especificado em seus manifestos.
--   Chaves e subchaves **das \_ \_ classes de \\ software \\ do computador local** hKey, **HKEY \_ local \_ Machine \\ software \\ Microsoft \\ Windows** e **HKEY \_ local \_ Machine \\ software \\ Microsoft \\ Windows NT**.
+-   chaves e subchaves **das \_ \_ Classes de \\ Software \\ do computador local** hkey, **hkey \_ local \_ machine \\ software \\ microsoft \\ Windows** e **HKEY \_ local \_ machine \\ software \\ microsoft \\ Windows NT**.
 
 ## <a name="controlling-registry-virtualization"></a>Controlando a virtualização do registro
 

@@ -1,65 +1,65 @@
 ---
 title: Chaves de propriedade
-description: Documentação de referência para as chaves de Propriedade do Windows Ribbon Framework, uma coleção de PROPVARIANT e pares chave-valor de consulta usados para descrever o estado de um comando da estrutura da faixa de bits.
+description: Documentação de referência para as chaves de propriedade da estrutura Windows Ribbon, uma coleção de pares chave-valor PROPERTYKEY e PROPVARIANT usados para descrever o estado de um comando da estrutura ribbon.
 ms.assetid: 12bc7fda-ff69-4316-8baf-cc97e19a231c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6dbf916de92b4819797846b889b42306c7c00f21
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9a55d7c1cb84bc3491c07c566b9ae3f0ecf7b2829c84203d382339c0123650c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364432"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118201328"
 ---
 # <a name="property-keys"></a>Chaves de propriedade
 
-Documentação de referência para as chaves de Propriedade do Windows Ribbon Framework, uma coleção de **PROPVARIANT** e pares chave-valor de consulta usados para descrever o estado de um comando da estrutura da **faixa de bits** .
+Documentação de referência para as chaves de propriedade da estrutura Windows Ribbon, uma coleção de pares **chave-valor PROPERTYKEY** e **PROPVARIANT** usados para descrever o estado de um Comando da estrutura ribbon.
 
 > [!Note]  
-> Uma chave deve ser exclusiva na coleção para cada comando.
+> Uma chave deve ser exclusiva na coleção para cada Comando.
 
- 
+ 
 
 ## <a name="property-types"></a>Tipos de propriedade
 
 [Propriedades da coleção](windowsribbon-reference-properties-collection.md)
 
-Documentação de referência em chaves de propriedade para controles baseados em coleção da estrutura de faixa.
+Documentação de referência sobre chaves de propriedade para controles baseados em coleção da estrutura ribbon.
 
-[Propriedades do seletor de cores](windowsribbon-reference-properties-colorpicker.md)
+[Seletor de Cor propriedades](windowsribbon-reference-properties-colorpicker.md)
 
-Documentação de referência em chaves de propriedade para o [seletor de cores suspenso](windowsribbon-controls-dropdowncolorpicker.md)da estrutura da faixa de faixas.
+Documentação de referência sobre chaves de propriedade para a lista Seletor de Cor [.](windowsribbon-controls-dropdowncolorpicker.md)
 
-[Propriedades de controle de fonte](windowsribbon-reference-properties-fontcontrol.md)
+[Propriedades do controle de fonte](windowsribbon-reference-properties-fontcontrol.md)
 
-Documentação de referência em chaves de propriedade para o [controle de fonte](windowsribbon-controls-fontcontrol.md)da estrutura da faixa de faixas.
+Documentação de referência sobre chaves de propriedade para o Controle de Fonte da estrutura da Faixa [de Opções](windowsribbon-controls-fontcontrol.md).
 
 [Propriedades da estrutura](windowsribbon-reference-properties-framework.md)
 
-Documentação de referência sobre chaves de propriedade global para a estrutura da faixa de faixas.
+Documentação de referência sobre chaves de propriedade globais para a estrutura da Faixa de Opções.
 
 [Propriedades do recurso](windowsribbon-reference-properties-resource.md)
 
-Documentação de referência sobre chaves de propriedade para recursos de estrutura da faixa de das faixas.
+Documentação de referência sobre chaves de propriedade para recursos da estrutura da Faixa de Opções.
 
-[Propriedades da faixa de faixas](windowsribbon-reference-properties-ribbon.md)
+[Propriedades da faixa de opções](windowsribbon-reference-properties-ribbon.md)
 
-Documentação de referência em chaves de propriedade para a exibição da faixa de visão da estrutura da faixa de faixas.
+Documentação de referência sobre chaves de propriedade para a exibição faixa de opções da estrutura da Faixa de Opções.
 
 [Propriedades de estado](windowsribbon-reference-properties-state.md)
 
-Documentação de referência em chaves de propriedade para o contexto ou estado de controle da estrutura da faixa de faixas.
+Documentação de referência sobre chaves de propriedade para o estado ou contexto de controle da estrutura da Faixa de Opções.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Referência do Windows Ribbon Framework](windowsribbon-reference-entry.md)
+[Windows Referência da Estrutura de Faixa de Opções](windowsribbon-reference-entry.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

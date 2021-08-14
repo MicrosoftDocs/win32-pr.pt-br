@@ -4,12 +4,12 @@ description: O botão Drop-Down consiste em um botão que, quando clicado, exibe
 ms.assetid: 41c5da07-43f7-4544-83be-248941cb8633
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e87e6a776dd705fe503e5e93ec601baf6cc2b3cf
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.openlocfilehash: 66945384d7df3e3ba656f75baf0661001022fa762690dc9c3ffd819ff1096691
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "104294558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118202543"
 ---
 # <a name="drop-down-button"></a>Botão de Drop-Down
 
@@ -125,7 +125,7 @@ Se o comando associado ao controle for invalidado por meio de uma chamada para <
 
 <dl> <dt>
 
-[Biblioteca de controle do Windows Ribbon Framework](windowsribbon-controls-entry.md)
+[Windows Biblioteca de controle da estrutura de faixa](windowsribbon-controls-entry.md)
 </dt> <dt>
 
 [**Elemento de marcação DropDownButton**](windowsribbon-element-dropdownbutton.md)

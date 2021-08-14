@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 29c7b2fd95708e38ab4a849069cfc2c43c69cb27
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7b2d969694028b1c944900e820006798b1e82a061d7724efc4288396a91daf69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104567744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118076210"
 ---
 # <a name="jet_bklogtimeequals-method"></a>JET_BKLOGTIME. Método Equals
 
@@ -39,12 +39,12 @@ Incluir membros herdados
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="hh578873(v=exchg.10).md">Equals (Object)</a></td>
-<td>Retorna um valor que indica se essa instância é igual a outra instância. (Substitui <a href="/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType. Equals (Object)</a>.)</td>
+<td><a href="hh578873(v=exchg.10).md">Equals(Object)</a></td>
+<td>Retorna um valor que indica se essa instância é igual a outra instância. (Substitui <a href="/dotnet/api/system.valuetype.equals#System_ValueType_Equals_System_Object_">ValueType.Equals(Object)</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="hh596744(v=exchg.10).md">Equals (JET_BKLOGTIME)</a></td>
+<td><a href="hh596744(v=exchg.10).md">Equals(JET_BKLOGTIME)</a></td>
 <td>Retorna um valor que indica se essa instância é igual a outra instância.</td>
 </tr>
 </tbody>
@@ -57,8 +57,8 @@ Parte superior
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_BKLOGTIME](./jet-bklogtime-structure2.md)
+[JET_BKLOGTIME estrutura](./jet-bklogtime-structure2.md)
 
-[Membros do JET_BKLOGTIME](./jet-bklogtime-members.md)
+[JET_BKLOGTIME membros](./jet-bklogtime-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
