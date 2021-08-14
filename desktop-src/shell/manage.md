@@ -4,12 +4,12 @@ ms.assetid: d9ffda6f-adc0-44a3-b410-e23bf5f4f165
 title: Gerenciando o sistema de arquivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee0f3b47e17e691c540a9775f3b8588b311b9878
-ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
+ms.openlocfilehash: f64bce2bea08794451d80fc4b1921baa21ee0fc26544b62ed9412d13b9bcb242
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113581614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118049225"
 ---
 # <a name="managing-the-file-system"></a>Gerenciando o sistema de arquivos
 
@@ -186,44 +186,44 @@ Esse valor normalmente não está definido e a conexão do arquivo está habilit
 
 ## <a name="moving-copying-renaming-and-deleting-files"></a>Movendo, copiando, renomeando e excluindo arquivos
 
-O namespace não é estático e normalmente os aplicativos precisam gerenciar o sistema de arquivos executando uma das seguintes operações.
+O namespace não é estático e os aplicativos geralmente precisam gerenciar o sistema de arquivos executando uma das operações a seguir.
 
 -   Copiando um objeto para outra pasta.
 -   Movendo um objeto para outra pasta.
--   Excluindo um objeto.
--   Renomeando um objeto.
+-   Excluindo um objeto .
+-   Renomeando um objeto .
 
-Todas essas operações são executadas com [**SHFileOperation**](/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa). Essa função usa um ou mais arquivos de origem e produz arquivos de destino correspondentes. No caso da operação de exclusão, o sistema tenta colocar os arquivos excluídos na lixeira.
+Todas essas operações são executadas com [**SHFileOperation.**](/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa) Essa função pega um ou mais arquivos de origem e produz arquivos de destino correspondentes. No caso da operação de exclusão, o sistema tenta colocar os arquivos excluídos no Lixeira.
 
-Também é possível mover arquivos usando a funcionalidade de [arrastar e soltar](dragdrop.md) .
+Também é possível mover arquivos usando a [funcionalidade do "arrastar e](dragdrop.md) soltar".
 
-Para usar a função, você deve preencher os membros de uma estrutura [**SHFILEOPSTRUCT**](/windows/desktop/api/Shellapi/ns-shellapi-shfileopstructa) e passá-la para [**SHFileOperation**](/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa). Os principais membros da estrutura são **pFrom** e **PTO**.
+Para usar a função , você deve preencher os membros de uma estrutura [**SHFILEOPSTRUCT**](/windows/desktop/api/Shellapi/ns-shellapi-shfileopstructa) e passá-la para [**SHFileOperation**](/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa). Os principais membros da estrutura são **pFrom** e **pTo.**
 
-O membro **pFrom** é uma cadeia de caracteres dupla terminada com **nulo** que contém um ou mais nomes de arquivo de origem. Esses nomes podem ser caminhos totalmente qualificados ou curingas de DOS padrão, como \* . \* . Embora esse membro seja declarado como uma cadeia de caracteres terminada em **nulo**, ele é usado como um buffer para manter vários nomes de arquivo. Cada nome de arquivo deve ser terminado pelo caractere **nulo** único usual. Um caractere **nulo** adicional deve ser acrescentado ao final do nome final para indicar o fim de **pFrom**.
+O **membro pFrom** é uma cadeia **de** caracteres terminada em nulo duplo que contém um ou mais nomes de arquivo de origem. Esses nomes podem ser caminhos totalmente qualificados ou curingas padrão do DOS, como \* \* . Embora esse membro seja declarado como uma **cadeia** de caracteres terminada em nulo, ele é usado como um buffer para manter vários nomes de arquivo. Cada nome de arquivo deve ser encerrado pelo caractere **NULL único** normal. Um caractere **NULL** adicional deve ser anexado ao final do nome final para indicar o final de **pFrom**.
 
-O membro **PTO** é uma cadeia de caracteres dupla terminada com **nulo**, muito parecida com **pFrom**. O membro **PTO** contém os nomes de um ou mais nomes de destino totalmente qualificados. Eles são incluídos em **PTO** da mesma forma que são para o **pFrom**. Se **PTO** contiver vários nomes, você também deverá definir o sinalizador **fof \_ MULTIDESTFILES** no membro **fFlags** . O uso de **PTO** depende da operação, conforme descrito aqui.
+O **membro pTo** é uma cadeia **de** caracteres terminada em nulo duplo, assim como **pFrom**. O **membro pTo** contém os nomes de um ou mais nomes de destino totalmente qualificados. Eles são empacotados **em pTo** da mesma maneira que são para **pFrom**. Se **pTo** contiver vários nomes, você também deverá definir o **sinalizador FOF \_ MULTIESTFILES** no **membro fFlags.** O uso de **pTo** depende da operação, conforme descrito aqui.
 
--   Para operações de cópia e movimentação, se todos os arquivos estiverem indo para um único diretório, **PTO** conterá o nome do diretório totalmente qualificado. Se os arquivos estiverem em destinos diferentes, **PTO** também poderá conter um diretório totalmente qualificado ou nome de arquivo para cada arquivo de origem. Se um diretório não existir, o sistema o criará.
--   Para operações de renomeação, **PTO** contém um caminho totalmente qualificado para cada arquivo de origem em **pFrom**.
--   Para operações de exclusão, **PTO** não é usado.
+-   Para operações de cópia e movimentação, se todos os arquivos estão indo para um único diretório, **pTo** contém o nome do diretório totalmente qualificado. Se os arquivos estão indo para destinos diferentes, **pTo** também pode conter um diretório totalmente qualificado ou um nome de arquivo para cada arquivo de origem. Se um diretório não existir, o sistema o criará.
+-   Para operações de renomeação, **pTo** contém um caminho totalmente qualificado para cada arquivo de origem **em pFrom**.
+-   Para operações de exclusão, **pTo** não é usado.
 
 ### <a name="notifying-the-shell"></a>Notificando o Shell
 
-Notifique o Shell da alteração depois de usar o [**SHFileOperation**](/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa) para mover, copiar, renomear ou excluir arquivos, ou depois de realizar qualquer outra ação que afete o namespace. As ações que devem ser acompanhadas por notificação incluem o seguinte:
+Notifique o Shell sobre a alteração depois de usar [**SHFileOperation**](/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa) para mover, copiar, renomear ou excluir arquivos ou depois de tomar qualquer outra ação que afete o namespace. As ações que devem ser acompanhadas pela notificação incluem o seguinte:
 
--   Adicionando ou excluindo arquivos ou pastas.
--   Mover, copiar ou renomear arquivos ou pastas.
--   Alteração de uma associação de arquivo.
+-   Adicionar ou excluir arquivos ou pastas.
+-   Movendo, copiando ou renomeando arquivos ou pastas.
+-   Alterando uma associação de arquivo.
 -   Alterando atributos de arquivo.
 -   Adicionar ou remover unidades ou mídia de armazenamento.
--   Criando ou desabilitando uma pasta compartilhada.
+-   Criar ou desabilitar uma pasta compartilhada.
 -   Alterando a lista de imagens do sistema.
 
-Um aplicativo notifica o Shell chamando [**SHChangeNotify**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotify) com os detalhes do que mudou. O Shell pode então atualizar sua imagem do namespace para refletir com precisão seu novo estado.
+Um aplicativo notifica o Shell chamando [**SHChangeNotify**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotify) com os detalhes do que foi alterado. Em seguida, o Shell pode atualizar sua imagem do namespace para refletir com precisão seu novo estado.
 
-## <a name="simple-example-of-managing-files-with-shfileoperation"></a>Exemplo simples de gerenciamento de arquivos com o SHFileOperation
+## <a name="simple-example-of-managing-files-with-shfileoperation"></a>Exemplo simples de gerenciamento de arquivos com SHFileOperation
 
-O exemplo de aplicativo de console a seguir ilustra o uso de [**SHFileOperation**](/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa) para copiar arquivos de um diretório para outro. Os diretórios de origem e de destino, C: \\ My \_ docs e C: \\ My \_ Docs2, são embutidos em código no aplicativo para simplificar a simplicidade.
+O aplicativo de console de exemplo a seguir ilustra o uso de [**SHFileOperation**](/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa) para copiar arquivos de um diretório para outro. Os diretórios de origem e destino, C: Meus Documentos e \\ \_ C: Meus Documentos2, são codificados no aplicativo \\ \_ para simplificar.
 
 
 ```C++
@@ -303,17 +303,17 @@ int main(void)
 
 
 
-O aplicativo primeiro recupera um ponteiro para a interface [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) da área de trabalho. Em seguida, ele recupera o PIDL do diretório de origem passando seu caminho totalmente qualificado para [**IShellFolder::P arsedisplayname**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-parsedisplayname). Observe que **IShellFolder::P arsedisplayname** requer que o caminho do diretório seja uma cadeia de caracteres Unicode. Em seguida, o aplicativo é associado ao diretório de origem e usa sua interface **IShellFolder** para recuperar a interface [**IEnumIDList**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ienumidlist) de um objeto enumerador.
+O aplicativo primeiro recupera um ponteiro para a interface [**IShellFolder da**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) área de trabalho. Em seguida, ele recupera o PIDL do diretório de origem passando seu caminho totalmente qualificado para [**IShellFolder::P arseDisplayName**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-parsedisplayname). Observe que **IShellFolder::P arseDisplayName** requer que o caminho do diretório seja uma cadeia de caracteres Unicode. Em seguida, o aplicativo se vincula ao diretório de origem e usa sua interface **IShellFolder** para recuperar a interface [**IEnumIDList**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ienumidlist) de um objeto enumerador.
 
-Como cada arquivo no diretório de origem é enumerado, [**IShellFolder:: GetDisplayNameOf**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof) é usado para recuperar seu nome. O \_ sinalizador SHGDN FORPARSING está definido, o que faz com que **IShellFolder:: GetDisplayNameOf** retorne o caminho totalmente qualificado do arquivo. Os caminhos de arquivo, incluindo os caracteres **nulos** de terminação, são concatenados em uma única matriz, *szSourceFiles*. Um segundo caractere **nulo** é acrescentado ao caminho final para encerrar a matriz corretamente.
+Como cada arquivo no diretório de origem é enumerado, [**IShellFolder::GetDisplayNameOf**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getdisplaynameof) é usado para recuperar seu nome. O sinalizador SHGDN FORPARSING está definido, o que faz com que \_ **IShellFolder::GetDisplayNameOf** retorne o caminho totalmente qualificado do arquivo. Os caminhos de arquivo, incluindo os caracteres **NULL** de terminação, são concatenados em uma única matriz, *szSourceFiles*. Um segundo **caractere NULL** é anexado ao caminho final para encerrar a matriz corretamente.
 
-Depois que a enumeração for concluída, o aplicativo atribuirá valores a uma estrutura [**SHFILEOPSTRUCT**](/windows/desktop/api/Shellapi/ns-shellapi-shfileopstructa) . Observe que a matriz atribuída a **PTO** para especificar o destino também deve ser terminada por um **nulo** duplo. Nesse caso, ele é simplesmente incluído na cadeia de caracteres que é atribuída a **PTO**. Como esse é um aplicativo de console, os \_ sinalizadores fof silencioso, FOF \_ confirmion e fof \_ NOCONFIRMMKDIR são definidos para suprimir as caixas de diálogo que podem aparecer. Depois que [**SHFileOperation**](/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa) retorna, [**SHChangeNotify**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotify) é chamado para notificar o Shell da alteração. Em seguida, o aplicativo executa a limpeza e o retornos usuais.
+Depois que a enumeração for concluída, o aplicativo atribuirá valores a uma estrutura [**SHFILEOPSTRUCT.**](/windows/desktop/api/Shellapi/ns-shellapi-shfileopstructa) Observe que a matriz atribuída a **pTo** para especificar o destino também deve ser encerrada por um NULL **duplo.** Nesse caso, ele é simplesmente incluído na cadeia de caracteres atribuída a **pTo**. Como esse é um aplicativo de console, os sinalizadores \_ FOF SILENT, FOF \_ NOCONFIRMATION e FOF NOCONFIRMMKDIR são definidos para suprimir as caixas de diálogo que possam \_ aparecer. Depois [**que SHFileOperation retorna,**](/windows/desktop/api/Shellapi/nf-shellapi-shfileoperationa) [**SHChangeNotify**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotify) é chamado para notificar o Shell sobre a alteração. Em seguida, o aplicativo executa a limpeza normal e retorna.
 
-## <a name="adding-files-to-the-shells-list-of-recent-documents"></a>Adicionando arquivos à lista de documentos recentes do Shell
+## <a name="adding-files-to-the-shells-list-of-recent-documents"></a>Adicionando arquivos à lista de documentos recentes do shell
 
-O Shell mantém uma lista de documentos recentemente adicionados ou modificados para cada usuário. o usuário pode exibir uma lista de links para esses arquivos clicando em documentos na menu Iniciar. Assim como acontece com meus documentos, cada usuário tem um diretório do sistema de arquivos para manter os links reais. Para recuperar o PIDL do diretório recente do usuário atual, seu aplicativo pode chamar [**SHGetFolderLocation**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderlocation) com CSIDL \_ recente ou chamar [**SHGetFolderPath**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderpatha) para recuperar seu caminho.
+O Shell mantém uma lista de documentos recém-adicionados ou modificados para cada usuário. O usuário pode exibir uma lista de links para esses arquivos clicando em Documentos no menu Iniciar. Assim como Meus Documentos, cada usuário tem um diretório do sistema de arquivos para manter os links reais. Para recuperar o PIDL do diretório Recente do usuário atual, seu aplicativo pode chamar [**SHGetFolderLocation**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderlocation) com CSIDL RECENT ou chamar \_ [**SHGetFolderPath**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderpatha) para recuperar seu caminho.
 
-Seu aplicativo pode enumerar o conteúdo da pasta recente usando as técnicas discutidas anteriormente neste documento. No entanto, um aplicativo não deve modificar o conteúdo da pasta como se fosse uma pasta normal do sistema de arquivos. se isso ocorrer, a lista de documentos recentes do Shell não será atualizada corretamente e as alterações não serão refletidas na menu Iniciar. Em vez disso, para adicionar um link de documento à pasta recente de um usuário, seu aplicativo pode chamar [**SHAddToRecentDocs**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shaddtorecentdocs). o Shell adicionará um link à pasta do sistema de arquivos apropriada, bem como atualizando sua lista de documentos recentes e o menu Iniciar. Você também pode usar essa função para limpar a pasta.
+Seu aplicativo pode enumerar o conteúdo da pasta Recente usando as técnicas discutidas anteriormente neste documento. No entanto, um aplicativo não deve modificar o conteúdo da pasta como se fosse uma pasta normal do sistema de arquivos. Se isso acontecer, a lista de documentos recentes do Shell não será atualizada corretamente e as alterações não serão refletidas no menu Iniciar. Em vez disso, para adicionar um link de documento à pasta Recente de um usuário, seu aplicativo pode chamar [**SHAddToRecentDocs**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shaddtorecentdocs). O Shell adicionará um link à pasta do sistema de arquivos apropriada, bem como atualizará sua lista de documentos recentes e a menu Iniciar. Você também pode usar essa função para limpar a pasta.
 
  
 

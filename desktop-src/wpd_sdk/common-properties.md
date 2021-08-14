@@ -1,5 +1,5 @@
 ---
-description: Os dispositivos portáteis do Windows (WPD) oferecem suporte às seguintes propriedades de parâmetros de comando.
+description: Windows Os dispositivos portáteis (WPD) oferecem suporte às seguintes propriedades de parâmetros de comando.
 ms.assetid: 03eff101-5c36-48ea-9dcd-2c4ee29a2ac6
 title: Parâmetros de comando (PortableDevice. h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 7687488c38f95fd6d7e7b69d64ad6ae32631700d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e5c58652c27d62e2954e86b9170e2f0a2d4ae4021743ced769adbf46a1f082b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105765003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118431053"
 ---
 # <a name="command-parameters"></a>Parâmetros de comando
 
-Os dispositivos portáteis do Windows (WPD) oferecem suporte às seguintes propriedades de parâmetros de comando.
+Windows Os dispositivos portáteis (WPD) oferecem suporte às seguintes propriedades de parâmetros de comando.
 
 
 

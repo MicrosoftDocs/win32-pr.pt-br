@@ -3,7 +3,7 @@ title: comando de quebra
 description: O comando Break especifica uma chave para anular um comando que foi invocado usando o \ 0034; Wait \ 0034; identificar. Esse comando é um comando do sistema MCI; Ele é interpretado diretamente pelo MCI.
 ms.assetid: 959df85f-5020-4e37-952b-15ba5e6fb672
 keywords:
-- comando de quebra de multimídia do Windows
+- comando de quebra Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f727fb6cf375e09a260ee68f62eac83816ff5d4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f99c8609b1364d374d91965816fde2d9c48b750d7bf0b3f6fb2957ed205a85a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118375468"
 ---
 # <a name="break-command"></a>comando de quebra
 

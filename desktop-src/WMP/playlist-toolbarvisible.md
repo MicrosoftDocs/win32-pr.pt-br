@@ -3,7 +3,7 @@ title: PLAYLIST. toolbarVisible
 description: O atributo toolbarVisible especifica ou recupera um valor que indica se a barra de ferramentas de playlist é exibida.
 ms.assetid: cf5d1d53-ed0a-4018-8b07-758d6790260e
 keywords:
-- PLAYLIST. toolbarVisible Windows Media Player
+- Windows Media Player de PLAYLIST. toolbarVisible
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72bf2fae4f62facfde9284f00c580431d615c07f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dc7a85dde2c3bb0a8ee7a6208e2eb84a6797dda7265a5181e10e92409add4d4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118335669"
 ---
 # <a name="playlisttoolbarvisible"></a>PLAYLIST. toolbarVisible
 

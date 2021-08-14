@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Windows.UI.Xaml.dll
-ms.openlocfilehash: f9561a179ec4501406e26cb2bbc38ea69b64b979
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 247d676e3e2c85404f96324b1d78e1cd6ec2ab2159092d9a66717b2653ee5a02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118323428"
 ---
 # <a name="createxamluipresenter-function"></a>Função CreateXamlUIPresenter
 
@@ -54,7 +54,7 @@ A interface **\[ \] exclusiveto** para um [**XamlUIPresenter**](/uwp/api/Windows
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Um **HRESULT** padrão, **S \_ OK** para sucesso.
 
@@ -62,7 +62,7 @@ Um **HRESULT** padrão, **S \_ OK** para sucesso.
 
 Chamar esse método requer um **DllImport** de Windows.UI.Xaml.dll.
 
-Você não pode chamar esse método de um aplicativo da Windows Store.
+você não pode chamar esse método de um aplicativo da Windows Store.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ Você não pode chamar esse método de um aplicativo da Windows Store.
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Windows. UI. XAML-coretypes. idl</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Windows. ui. xaml-coretypes. idl</dt> </dl> |
 | DLL<br/>    | <dl> <dt>Windows.UI.Xaml.dll</dt> </dl>           |
 
 

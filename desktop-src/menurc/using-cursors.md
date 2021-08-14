@@ -18,12 +18,12 @@ keywords:
 - cursores, confinados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6cf681fd17f3e79e4559e9936be232ae09f8453
-ms.sourcegitcommit: dc2f43e0f23f4a4ce239118cf9a5180f3ff0dd1d
+ms.openlocfilehash: 23ac8c90ec2e988dc0051ed441c96fce61fdbbd9f095a370569fdecc69ce4d65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "108327121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118472604"
 ---
 # <a name="using-cursors"></a>Usando cursores
 
@@ -173,7 +173,7 @@ Para criar o cursor, [**CreateCursor**](/windows/desktop/api/Winuser/nf-winuser-
 
 
 
-| E máscara | Máscara XOR | Monitor        |
+| E máscara | Máscara XOR | Exibir        |
 |----------|----------|----------------|
 | 0        | 0        | Preto          |
 | 0        | 1        | Branca          |

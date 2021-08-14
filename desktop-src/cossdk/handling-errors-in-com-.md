@@ -4,12 +4,12 @@ ms.assetid: 12f41eef-9953-4125-8490-07ff64967f95
 title: Tratamento de erros no COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fc1979fc49ff8f14bb83b194be7e1787feaf7d86
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 04b66ecfd2d66d30b601fdc9e3e580d258ab912db5c10e3af422b9e7fde2b7a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118306545"
 ---
 # <a name="handling-errors-in-com"></a>Tratamento de erros no COM+
 
@@ -29,7 +29,7 @@ Esta seção inclui tópicos, descritos na tabela a seguir, que discutem técnic
 | [Como o COM+ modifica valores de retorno](how-com--modifies-return-values.md)<br/>               | Identifica a única condição na qual o COM+ converte um HRESULT padrão em um código de erro COM+ antes de passá-lo de volta para o chamador.<br/>             |
 | [Política de FailFast e isolamento de falhas](fault-isolation-and-failfast-policy.md)<br/>       | Mostra como o isolamento de falhas e a política de FailFast afetam o comportamento do COM+.<br/>                                                                          |
 | [Localizando a origem de um erro](finding-the-source-of-an-error.md)<br/>                 | Descreve como você pode diagnosticar a origem e obter uma descrição dos erros do aplicativo. <br/>                                                       |
-| [Interpretando códigos de erro](interpreting-error-codes.md)<br/>                             | Identifica o mecanismo predominante de tratamento de erros para Microsoft Visual C++, a linguagem Java e o Microsoft Visual Basic. <br/>                    |
+| [Interpretando códigos de erro](interpreting-error-codes.md)<br/>                             | identifica o mecanismo predominante de tratamento de erros para Microsoft Visual C++, a linguagem Java e o Microsoft Visual Basic. <br/>                    |
 | [Solução de problemas](troubleshooting.md)<br/>                                               | Fornece assistência adicional no diagnóstico de erros.<br/>                                                                                             |
 | [Entrando em contato com o suporte](contacting-support.md)<br/>                                         | Identifica informações importantes de solução de problemas que você deve fornecer ao contatar o suporte.<br/>                                                     |
 

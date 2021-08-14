@@ -3,7 +3,7 @@ title: Mensagem de WM_CUT (WinUser. h)
 description: Um aplicativo envia uma \_ mensagem de recorte do WM para um controle de edição ou caixa de combinação para excluir (recortar) a seleção atual, se houver, no controle de edição e copiar o texto excluído para a área de transferência no \_ formato de texto cf.
 ms.assetid: 6ac45589-3e34-491c-9562-e072ddc478f9
 keywords:
-- Troca de dados de mensagem WM_CUT
+- WM_CUT Exchange de dados da mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a63dfe85fb637636fbabbce5fa139699fd09a65
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d117e0a942c0d9e24e1a9c40d3d66e605ab8d5cf26bbad0e287e9b03a9b25780
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105754237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118304482"
 ---
 # <a name="wm_cut-message"></a>\_Mensagem de recorte do WM
 
@@ -50,7 +50,7 @@ Esse parâmetro não é usado e deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem não retorna um valor.
 
@@ -70,7 +70,7 @@ Quando enviado para uma caixa de combinação, a mensagem de **\_ recorte do WM*
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

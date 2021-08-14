@@ -12,22 +12,22 @@ keywords:
 - Especificação do modo MIDI geral
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3aff9a70d791bd0a0812f2cbd78aaff13a9e4875
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3a825d44f3ec61d876828a804e22e10e691bb2c93cc0e11decd28e862491017f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117801496"
 ---
 # <a name="standard-midi-key-assignments"></a>Atribuições de chave MIDI padrão
 
-As atribuições de chave MIDI padrão para instrumentos de percussão se baseiam na especificação do modo MIDI geral do MMA. A ilustração a seguir mostra as atribuições de chave padrão para arquivos MIDI criados para o Windows.
+As atribuições de chave MIDI padrão para instrumentos de percussão se baseiam na especificação do modo MIDI geral do MMA. A ilustração a seguir mostra as atribuições de chave padrão para arquivos MIDI criados para Windows.
 
 ![imagem de atribuição de chave Midi](images/pian-a01.gif)
 
- 
+ 
 
- 
+ 
 
 
 

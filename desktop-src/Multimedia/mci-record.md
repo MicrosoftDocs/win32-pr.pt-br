@@ -3,7 +3,7 @@ title: MCI_RECORD comando (mmsystem. h)
 description: O \_ comando de registro MCI inicia a gravação a partir da posição atual ou de um local especificado para outro local especificado.
 ms.assetid: d3c4e8a3-7d81-428e-91d8-d8d63fc0aa02
 keywords:
-- Multimídia do Windows de comando MCI_RECORD
+- MCI_RECORD comando Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec1cd15974753b8f40abd87b8d93622c090e2a57
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 327b9ed9b138b581bec17d8bfcfe19ae67bb07d59be2781af54e22a85e2133c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117803447"
 ---
 # <a name="mci_record-command"></a>\_Comando de registro MCI
 

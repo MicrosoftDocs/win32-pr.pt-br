@@ -1,10 +1,10 @@
 ---
-title: Enumeração de MPDETECTION_STATE (MpClient. h)
+title: MPDETECTION_STATE enumeração (MpClient.h)
 description: O estado da ameaça detectada no momento.
 ms.assetid: 293771FF-A210-41D0-88A5-3B52ACAA9295
 keywords:
-- Recursos do ambiente Windows herdado de enumeração de MPDETECTION_STATE
-- PMPDETECTION_STATE recursos de ambiente herdados do ponteiro de enumeração do Windows
+- MPDETECTION_STATE enumeração herdada Windows recursos de ambiente
+- PMPDETECTION_STATE de enumeração herdado Windows recursos de ambiente
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9265a15641d2072d87b33af2782f17974bf07be
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0443e0c47eef4d4943d39bd671c28c19db0ff5e1fbe79e5af8d034603b1ab78d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454945"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117883513"
 ---
-# <a name="mpdetection_state-enumeration"></a>\_Enumeração de estado MPDETECTION
+# <a name="mpdetection_state-enumeration"></a>Enumeração MPDETECTION \_ STATE
 
 O estado da ameaça detectada no momento.
 
@@ -47,49 +47,49 @@ typedef enum tagMPDETECTION_STATE {
 
 <dl> <dt>
 
-<span id="MPDETECTION_STATE_UNKNOWN"></span><span id="mpdetection_state_unknown"></span>**Estado de MPDETECTION \_ \_ desconhecido**
+<span id="MPDETECTION_STATE_UNKNOWN"></span><span id="mpdetection_state_unknown"></span>**ESTADO DE MPDETECTION \_ \_ DESCONHECIDO**
 </dt> <dd>
 
 Em um estado de erro.
 
 </dd> <dt>
 
-<span id="MPDETECTION_STATE_ACTIVE"></span><span id="mpdetection_state_active"></span>**\_estado \_ ativo do MPDETECTION**
+<span id="MPDETECTION_STATE_ACTIVE"></span><span id="mpdetection_state_active"></span>**ESTADO DE MPDETECTION \_ \_ ATIVO**
 </dt> <dd>
 
 Ameaça ativa.
 
 </dd> <dt>
 
-<span id="MPDETECTION_STATE_FINISHED"></span><span id="mpdetection_state_finished"></span>**\_estado MPDETECTION \_ concluído**
+<span id="MPDETECTION_STATE_FINISHED"></span><span id="mpdetection_state_finished"></span>**ESTADO DE MPDETECTION \_ \_ CONCLUÍDO**
 </dt> <dd>
 
-24 horas pendentes para mover para limpo.
+24 horas pendentes para uma movimentação para desempurada.
 
 </dd> <dt>
 
-<span id="MPDETECTION_STATE_ADDITIONAL_ACTIONS"></span><span id="mpdetection_state_additional_actions"></span>**\_ \_ ações adicionais de estado MPDETECTION \_**
+<span id="MPDETECTION_STATE_ADDITIONAL_ACTIONS"></span><span id="mpdetection_state_additional_actions"></span>**AÇÕES ADICIONAIS DE ESTADO \_ MPDETECTION \_ \_**
 </dt> <dd>
 
 Ações adicionais necessárias.
 
 </dd> <dt>
 
-<span id="MPDETECTION_STATE_FAILED"></span><span id="mpdetection_state_failed"></span>**\_ \_ falha no estado MPDETECTION**
+<span id="MPDETECTION_STATE_FAILED"></span><span id="mpdetection_state_failed"></span>**FALHA NO ESTADO DE MPDETECTION \_ \_**
 </dt> <dd>
 
 Falha de correção não crítica.
 
 </dd> <dt>
 
-<span id="MPDETECTION_STATE_CRITICALLY_FAILED"></span><span id="mpdetection_state_critically_failed"></span>**o \_ estado MPDETECTION \_ falhou criticamente \_**
+<span id="MPDETECTION_STATE_CRITICALLY_FAILED"></span><span id="mpdetection_state_critically_failed"></span>**ESTADO DE MPDETECTION \_ \_ COM FALHA \_ CRÍTICA**
 </dt> <dd>
 
 Falha de correção crítica.
 
 </dd> <dt>
 
-<span id="MPDETECTION_STATE_CLEARED"></span><span id="mpdetection_state_cleared"></span>**\_estado MPDETECTION \_ limpo**
+<span id="MPDETECTION_STATE_CLEARED"></span><span id="mpdetection_state_cleared"></span>**ESTADO DE MPDETECTION \_ \_ LIMPO**
 </dt> <dd>
 
 A ameaça não aparece na consulta de estado, somente no histórico.
@@ -102,9 +102,9 @@ A ameaça não aparece na consulta de estado, somente no histórico.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

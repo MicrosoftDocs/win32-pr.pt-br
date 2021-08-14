@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 323604d104be3432a5fc251901c4308bfc989f90
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: abfabc93947f5eb583c4178fa47b20468eb7eaf9a8f651c76baf0c1e1256311e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118219772"
 ---
 # <a name="tabthumbnails-sample"></a>Exemplo de TabThumbnails
 
@@ -22,7 +22,7 @@ Demonstra como um aplicativo pode expor vários destinos de comutador (como para
 
 Este tópico inclui as seções a seguir.
 
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Baixando o exemplo](#downloading-the-sample)
 -   [Compilando o exemplo](#building-the-sample)
 -   [Executando o exemplo](#running-the-sample)
@@ -42,7 +42,7 @@ Este tópico inclui as seções a seguir.
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-| Localização      | URL do caminho                                                                                             |
+| Location      | URL do caminho                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Exemplo de TabThumbnails](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/TabThumbnails) |
 
@@ -51,18 +51,18 @@ Este tópico inclui as seções a seguir.
 Para criar o exemplo do prompt de comando:
 
 1.  Abra a janela do prompt de comando e navegue até o diretório do projeto **TabThumbnails** .
-2.  Digite `msbuild TabThumbnails.sln`.
+2.  Insira `msbuild TabThumbnails.sln`.
 
-Para criar o exemplo usando Microsoft Visual Studio (preferencial):
+para criar o exemplo usando Microsoft Visual Studio (preferencial):
 
-1.  Abra o Windows Explorer e navegue até o diretório do projeto **TabThumbnails** .
+1.  abra Windows Explorer e navegue até o diretório do projeto **TabThumbnails** .
 2.  Clique duas vezes no ícone do arquivo TabThumbnails. sln para abrir o projeto no Visual Studio.
-3.  No menu **Compilar** , selecione **Compilar solução**.
+3.  No menu **Compilar**, selecione **Compilar Solução**.
 
 ## <a name="running-the-sample"></a>Executando o exemplo
 
-1.  Navegue até o diretório que contém o novo executável, usando o prompt de comando ou o Windows Explorer.
-2.  Na linha de comando, digite `TabThumbnails.exe` . Como alternativa, no Windows Explorer, clique duas vezes no ícone para TabThumbnails.exe.
+1.  navegue até o diretório que contém o novo executável, usando o prompt de comando ou o gerenciador de Windows.
+2.  Na linha de comando, digite `TabThumbnails.exe` . como alternativa, no Windows Explorer, clique duas vezes no ícone para TabThumbnails.exe.
 
  
 

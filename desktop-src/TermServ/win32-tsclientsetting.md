@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSClientSetting
-description: Define as definições de configuração para a \_ classe de terminal Win32 relacionada à política de conexão.
+title: Win32_TSClientSetting classe
+description: Define as definições de configuração para a classe do Terminal Win32 \_ relacionada à política de conexão.
 ms.assetid: 438baf22-adc2-410e-bf9b-4b17a05c5ce4
 ms.tgt_platform: multiple
 keywords:
-- Classe de Win32_TSClientSetting Serviços de Área de Trabalho Remota
-- Serviços de Área de Trabalho Remota de Win32_TSClientSetting classe, descrita
+- Win32_TSClientSetting classe Serviços de Área de Trabalho Remota
+- Win32_TSClientSetting classe Serviços de Área de Trabalho Remota , descrita
 topic_type:
 - apiref
 api_name:
@@ -70,16 +70,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 204f38570e1e023ca070ed1845e4574d9570b8ff
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dff3e4eb9d99288914fb6d4e9a6e2d22aa38689cdc6b60f227e7e5ba2e0c5323
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118349360"
 ---
-# <a name="win32_tsclientsetting-class"></a>\_Classe Win32 TSClientSetting
+# <a name="win32_tsclientsetting-class"></a>Classe Win32 \_ TSClientSetting
 
-A classe WMI **\_ TSClientSetting do Win32** define as definições de configuração para a classe de [**\_ terminal Win32**](win32-terminal.md) relacionada à política de conexão.
+A classe WMI **Win32 \_ TSClientSetting** define definições de configuração para a [**classe do \_ Terminal Win32**](win32-terminal.md) relacionada à política de conexão.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades definidas e herdadas, em ordem alfabética. Para obter informações de referência sobre métodos, consulte a tabela de métodos mais adiante neste tópico.
 
@@ -148,27 +148,27 @@ class Win32_TSClientSetting : Win32_TerminalSetting
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ TSClientSetting** tem estes tipos de membros:
+A **classe Win32 \_ TSClientSetting** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **Win32 \_ TSClientSetting** tem esses métodos.
+A **classe \_ Win32 TSClientSetting** tem esses métodos.
 
 
 
 | Método                                                                   | Descrição                                                                                                                                                  |
 |:-------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**ConnectionSettings**](win32-tsclientsetting-connectionsettings.md)   | Define as propriedades **ConnectClientDrivesAtLogon**, **ConnectPrinterAtLogon** e **DefaultToClientPrinter** dessa classe.<br/>                      |
-| [**SetAllowDwm**](setallowdwm-win32-tsclientsetting.md)                 | Não há suporte.<br/> **Windows 7 e Windows Server 2008 R2:** Define a propriedade **AllowDwm** .<br/>                                               |
-| [**Setclientproperty**](win32-tsclientsetting-setclientproperty.md)     | Define a propriedade **LPTPortMapping**, **COMPortMapping**, **AudioMapping**, **ClipboardMapping**, **DriveMapping** ou **WindowsPrinterMapping** .<br/> |
-| [**SetColorDepth**](win32-tsclientsetting-setcolordepth.md)             | Define a propriedade **ColorDepth** .<br/>                                                                                                                 |
-| [**SetColorDepthPolicy**](win32-tsclientsetting-setcolordepthpolicy.md) | Define a propriedade **ColorDepthPolicy** .<br/>                                                                                                           |
-| [**SetMaxMonitors**](setmaxmonitors-win32-tsclientsetting.md)           | Define a propriedade **MaxMonitors** .<br/>                                                                                                                |
-| [**SetMaxXResolution**](setmaxxresolution-win32-tsclientsetting.md)     | Define a propriedade **MaxXResolution** .<br/>                                                                                                             |
-| [**SetMaxYResolution**](setmaxyresolution-win32-tsclientsetting.md)     | Define a propriedade **MaxYResolution** .<br/>                                                                                                             |
+| [**ConnectionSettings**](win32-tsclientsetting-connectionsettings.md)   | Define as **propriedades ConnectClientDrivesAtLogon,** **ConnectPrinterAtLogon** e **DefaultToClientPrinter** dessa classe.<br/>                      |
+| [**SetAllowDwm**](setallowdwm-win32-tsclientsetting.md)                 | Sem suporte.<br/> **Windows 7 e Windows Server 2008 R2:** Define a **propriedade AllowDwm.**<br/>                                               |
+| [**SetClientProperty**](win32-tsclientsetting-setclientproperty.md)     | Define a **propriedade LPTPortMapping**, **COMPortMapping,** **AudioMapping,** **ClipboardMapping,** **DriveMapping** ou **WindowsPrinterMapping.**<br/> |
+| [**SetColorDepth**](win32-tsclientsetting-setcolordepth.md)             | Define a **propriedade ColorDepth.**<br/>                                                                                                                 |
+| [**SetColorDepthPolicy**](win32-tsclientsetting-setcolordepthpolicy.md) | Define a **propriedade ColorDepthPolicy.**<br/>                                                                                                           |
+| [**SetMaxMonitors**](setmaxmonitors-win32-tsclientsetting.md)           | Define a **propriedade MaxMonitors.**<br/>                                                                                                                |
+| [**SetMaxXResolution**](setmaxxresolution-win32-tsclientsetting.md)     | Define a **propriedade MaxXResolution.**<br/>                                                                                                             |
+| [**SetMaxYResolution**](setmaxyresolution-win32-tsclientsetting.md)     | Define a **propriedade MaxYResolution.**<br/>                                                                                                             |
 
 
 
@@ -176,44 +176,44 @@ A classe **Win32 \_ TSClientSetting** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ TSClientSetting** tem essas propriedades.
+A **classe Win32 \_ TSClientSetting** tem essas propriedades.
 
 <dl> <dt>
 
 **AdvancedRemoteAppGraphics**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Especifica se é para habilitar gráficos RemoteFX avançados para o RemoteApp.
+Especifica se é necessário habilitar gráficos RemoteFX avançados para RemoteApp.
 
-**Windows server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes do Windows Server 2012 R2 e Windows 8.1.
+**Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes Windows Server 2012 R2 e Windows 8.1.
 
 <dt>
 
 <span id="FALSE"></span><span id="false"></span>
 
-<span id="FALSE"></span><span id="false"></span>**False** (0)
+<span id="FALSE"></span><span id="false"></span>**FALSE** (0)
 
 
 </dt> <dd>
 
-Os gráficos avançados estão desabilitados.
+Gráficos avançados estão desabilitados.
 
 </dd> <dt>
 
 <span id="TRUE"></span><span id="true"></span>
 
-<span id="TRUE"></span><span id="true"></span>**Verdadeiro** (1)
+<span id="TRUE"></span><span id="true"></span>**TRUE** (1)
 
 
 </dt> <dd>
 
-Os gráficos avançados estão habilitados.
+Gráficos avançados estão habilitados.
 
 </dd> </dl>
 
@@ -222,47 +222,47 @@ Os gráficos avançados estão habilitados.
 **AllowDwm**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Esta propriedade não está disponível.
+Essa propriedade não está disponível.
 
-* * Windows 7 e Windows Server 2008 R2: * *
+**Windows 7 e Windows Server 2008 R2: **
 
-Especifica se a composição da área de trabalho remota deve ser habilitada ou desabilitada. Zero desabilitará a composição de área de trabalho remota e um valor diferente de zero permitirá isso.
+Especifica se a composição da área de trabalho remota deve ser habilitada ou desabilitada. Zero desabilitará a composição da área de trabalho remota e um valor diferente de zero o habilita.
 
-Use o método [**SetAllowDwm**](setallowdwm-win32-tsclientsetting.md) para modificar essa propriedade.
+Use o [**método SetAllowDwm**](setallowdwm-win32-tsclientsetting.md) para modificar essa propriedade.
 
 </dd> <dt>
 
 **AudioCaptureRedir**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica se o redirecionamento de captura de áudio deve ser permitido.
+Especifica se é possível permitir o redirecionamento de captura de áudio.
 
-**Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes do Windows Server 2008 R2 e do Windows 7.
+**Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes Windows Server 2008 R2 e Windows 7.
 
 <dt>
 
 <span id="FALSE"></span><span id="false"></span>
 
-**False** (0)
+**FALSE** (0)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="TRUE"></span><span id="true"></span>
 
-**Verdadeiro** (1)
+**TRUE** (1)
 
 
 </dt> <dd></dd> </dl>
@@ -272,7 +272,7 @@ Especifica se o redirecionamento de captura de áudio deve ser permitido.
 **AudioMapping**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -284,7 +284,7 @@ Especifica se o mapeamento de áudio está desabilitado ou habilitado.
 
 <span id="FALSE"></span><span id="false"></span>
 
-<span id="FALSE"></span><span id="false"></span>**False** (0)
+<span id="FALSE"></span><span id="false"></span>**FALSE** (0)
 
 
 </dt> <dd>
@@ -295,7 +295,7 @@ O mapeamento de áudio está habilitado.
 
 <span id="TRUE"></span><span id="true"></span>
 
-<span id="TRUE"></span><span id="true"></span>**Verdadeiro** (1)
+<span id="TRUE"></span><span id="true"></span>**TRUE** (1)
 
 
 </dt> <dd>
@@ -309,28 +309,28 @@ O mapeamento de áudio está desabilitado.
 **AVC444ModePreferred**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Especifica se o modo AVC444 é preferencial.
 
-**Windows 8.1, Windows server 2012 R2, Windows 8, Windows server 2012, Windows 7, Windows Server 2008 R2, Windows Vista e Windows server 2008:** Essa propriedade não está disponível antes do Windows 10 ou do Windows Server 2016.
+**Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Server 2008 R2, Windows Vista e Windows Server 2008:** Essa propriedade não está disponível antes de Windows 10 ou Windows Server 2016.
 
 <dt>
 
 <span id="FALSE"></span><span id="false"></span>
 
-**False** (0)
+**FALSE** (0)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="TRUE"></span><span id="true"></span>
 
-**Verdadeiro** (1)
+**TRUE** (1)
 
 
 </dt> <dd></dd> </dl>
@@ -346,19 +346,19 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrição (cadeia de caracteres de uma linha) do objeto.
+Descrição curta (cadeia de caracteres de uma linha) do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **ClipboardMapping**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -370,7 +370,7 @@ Especifica se o mapeamento da área de transferência está desabilitado ou habi
 
 <span id="FALSE"></span><span id="false"></span>
 
-<span id="FALSE"></span><span id="false"></span>**False** (0)
+<span id="FALSE"></span><span id="false"></span>**FALSE** (0)
 
 
 </dt> <dd>
@@ -381,7 +381,7 @@ O mapeamento da área de transferência está habilitado.
 
 <span id="TRUE"></span><span id="true"></span>
 
-<span id="TRUE"></span><span id="true"></span>**Verdadeiro** (1)
+<span id="TRUE"></span><span id="true"></span>**TRUE** (1)
 
 
 </dt> <dd>
@@ -392,16 +392,16 @@ O mapeamento da área de transferência está desabilitado.
 
 </dd> <dt>
 
-**ColorDepth**
+**Colordepth**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica a profundidade de cor. Para obter os valores possíveis, consulte o método [**SetColorDepth**](win32-tsclientsetting-setcolordepth.md) .
+Especifica a profundidade da cor. Para valores possíveis, consulte [**o método SetColorDepth.**](win32-tsclientsetting-setcolordepth.md)
 
 <dt>
 
@@ -727,7 +727,7 @@ Tipo de acesso: leitura/gravação
 
 Especifica a qualidade da imagem para a experiência RDP.
 
-**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** Essa propriedade não está disponível antes do Windows 8 ou do Windows Server 2012.
+**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** essa propriedade não está disponível antes de Windows 8 ou Windows Server 2012.
 
 <dt>
 
@@ -765,7 +765,7 @@ Tipo de acesso: leitura/gravação
 
 Especifica se o servidor de Host da Sessão RD usa o processador de gráficos de hardware como o adaptador padrão.
 
-**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** Essa propriedade não está disponível antes do Windows 8 ou do Windows Server 2012.
+**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** essa propriedade não está disponível antes de Windows 8 ou Windows Server 2012.
 
 <dt>
 
@@ -851,7 +851,7 @@ Tipo de acesso: Somente leitura
 
 O número máximo de monitores com suporte no servidor. Use o método [**SetMaxMonitors**](setmaxmonitors-win32-tsclientsetting.md) para modificar essa propriedade.
 
-**Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes do Windows Server 2008 R2 e do Windows 7.
+**Windows Server 2008 e Windows Vista:** essa propriedade não está disponível antes de Windows Server 2008 R2 e Windows 7.
 
 </dd> <dt>
 
@@ -864,24 +864,24 @@ Tipo de dados: **UInt32**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A resolução máxima de X com suporte do servidor. Use o método [**SetMaxXResolution**](setmaxxresolution-win32-tsclientsetting.md) para modificar essa propriedade.
+A resolução máxima de X com suporte do servidor. Use o [**método SetMaxXResolution**](setmaxxresolution-win32-tsclientsetting.md) para modificar essa propriedade.
 
-**Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes do Windows Server 2008 R2 e do Windows 7.
+**Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes Windows Server 2008 R2 e Windows 7.
 
 </dd> <dt>
 
 **MaxYResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A resolução de Y máxima com suporte no servidor. Use o método [**SetMaxYResolution**](setmaxyresolution-win32-tsclientsetting.md) para modificar essa propriedade.
+A resolução Y máxima com suporte pelo servidor. Use o [**método SetMaxYResolution**](setmaxyresolution-win32-tsclientsetting.md) para modificar essa propriedade.
 
-**Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes do Windows Server 2008 R2 e do Windows 7.
+**Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes Windows Server 2008 R2 e Windows 7.
 
 </dd> <dt>
 
@@ -896,42 +896,42 @@ Tipo de acesso: Somente leitura
 
 O nome do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **PNPRedirection**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica se o redirecionamento de Plug and Play deve ser permitido.
+Especifica se é preciso permitir Plug and Play redirecionamento.
 
 <dt>
 
 <span id="FALSE"></span><span id="false"></span>
 
-<span id="FALSE"></span><span id="false"></span>**False** (0)
+<span id="FALSE"></span><span id="false"></span>**FALSE** (0)
 
 
 </dt> <dd>
 
-Permitir redirecionamento de Plug and Play.
+Permitir Plug and Play redirecionamento.
 
 </dd> <dt>
 
 <span id="TRUE"></span><span id="true"></span>
 
-<span id="TRUE"></span><span id="true"></span>**Verdadeiro** (1)
+<span id="TRUE"></span><span id="true"></span>**TRUE** (1)
 
 
 </dt> <dd>
 
-Não permitir redirecionamento de Plug and Play.
+Não permita o Plug and Play redirecionamento.
 
 </dd> </dl>
 
@@ -940,15 +940,15 @@ Não permitir redirecionamento de Plug and Play.
 **PolicyAdvancedRemoteAppGraphics**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a propriedade **AdvancedRemoteAppGraphics** está configurada pelo servidor ou pela política de grupo.
+Indica se a **propriedade AdvancedRemoteAppGraphics** está configurada pela política de servidor ou grupo.
 
-**Windows server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes do Windows Server 2012 R2 e Windows 8.1.
+**Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes Windows Server 2012 R2 e Windows 8.1.
 
 <dt>
 
@@ -971,17 +971,17 @@ Política de grupo
 **PolicySourceAllowDwm**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Esta propriedade não está disponível.
+Essa propriedade não está disponível.
 
-* * Windows 7 e Windows Server 2008 R2: * *
+**Windows 7 e Windows Server 2008 R2: **
 
-Indica se a propriedade **AllowDwm** está configurada pelo servidor ou pela política de grupo.
+Indica se a **propriedade AllowDwm** está configurada pela política de servidor ou grupo.
 
 <dt>
 
@@ -1004,15 +1004,15 @@ Política de grupo
 **PolicySourceAudioCaptureRedir**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a propriedade **AudioCaptureRedir** está configurada pelo servidor ou pela política de grupo.
+Indica se a **propriedade AudioCaptureRedir** está configurada pela política de servidor ou grupo.
 
-**Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes do Windows Server 2008 R2 e do Windows 7.
+**Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes Windows Server 2008 R2 e Windows 7.
 
 <dt>
 
@@ -1035,13 +1035,13 @@ Política de grupo
 **PolicySourceAudioMapping**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a propriedade **AudioMapping** é configurada pelo servidor, pela política de grupo ou por padrão.
+Indica se a **propriedade AudioMapping** está configurada pelo servidor, pela política de grupo ou por padrão.
 
 <dt>
 
@@ -1071,15 +1071,15 @@ Padrão
 **PolicySourceAvc444ModePreferred**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica como a propriedade **AVC444ModePreferredis** é configurada.
+Indica como a **propriedade AVC444ModePreferredis** está configurada.
 
-**Windows 8.1, Windows server 2012 R2, Windows 8, Windows server 2012, Windows 7, Windows Server 2008 R2, Windows Vista e Windows server 2008:** Essa propriedade não está disponível antes do Windows 10 ou do Windows Server 2016.
+**Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Server 2008 R2, Windows Vista e Windows Server 2008:** Essa propriedade não está disponível antes de Windows 10 ou Windows Server 2016.
 
 <dt>
 
@@ -1102,13 +1102,13 @@ Política de Grupo
 **PolicySourceClipboardMapping**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a propriedade **ClipboardMapping** é configurada pelo servidor, pela política de grupo ou por padrão.
+Indica se a **propriedade ClipboardMapping** está configurada pelo servidor, pela política de grupo ou por padrão.
 
 <dt>
 
@@ -1138,13 +1138,13 @@ Padrão
 **PolicySourceColorDepth**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a propriedade **ColorDepth** é configurada pelo servidor, pela política de grupo ou por padrão.
+Indica se a **propriedade ColorDepth** está configurada pelo servidor, pela política de grupo ou por padrão.
 
 <dt>
 
@@ -1174,13 +1174,13 @@ Padrão
 **PolicySourceColorDepthPolicy**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a propriedade **ColorDepthPolicy** é configurada pelo servidor, pela política de grupo ou por padrão.
+Indica se a **propriedade ColorDepthPolicy** está configurada pelo servidor, pela política de grupo ou por padrão.
 
 <dt>
 
@@ -1210,7 +1210,7 @@ Padrão
 **PolicySourceCOMPortMapping**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -1326,7 +1326,7 @@ Tipo de acesso: Somente leitura
 
 Indica como o **EncodeImageQualityi** é configurado.
 
-**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** Essa propriedade não está disponível antes do Windows 8 ou do Windows Server 2012.
+**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** essa propriedade não está disponível antes de Windows 8 ou Windows Server 2012.
 
 <dt>
 
@@ -1357,7 +1357,7 @@ Tipo de acesso: Somente leitura
 
 Indica como o **HardwareGraphicsAdapter** é configurado.
 
-**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** Essa propriedade não está disponível antes do Windows 8 ou do Windows Server 2012.
+**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** essa propriedade não está disponível antes de Windows 8 ou Windows Server 2012.
 
 <dt>
 
@@ -1447,7 +1447,7 @@ Padrão
 
 </dd> </dl>
 
-**Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes do Windows Server 2008 R2 e do Windows 7.
+**Windows Server 2008 e Windows Vista:** essa propriedade não está disponível antes de Windows Server 2008 R2 e Windows 7.
 
 </dd> <dt>
 
@@ -1462,7 +1462,7 @@ Tipo de acesso: Somente leitura
 
 Indica se as propriedades **MaxXResolution** e **MaxYResolution** são configuradas pelo servidor, pela política de grupo ou por padrão.
 
-**Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes do Windows Server 2008 R2 e do Windows 7.
+**Windows Server 2008 e Windows Vista:** essa propriedade não está disponível antes de Windows Server 2008 R2 e Windows 7.
 
 <dt>
 
@@ -1529,7 +1529,7 @@ Tipo de acesso: Somente leitura
 
 Indica como o **RemoteSessionProfile** é configurado.
 
-**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** Essa propriedade não está disponível antes do Windows 8 ou do Windows Server 2012.
+**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** esta propriedade não está disponível antes de Windows 8 ou Windows Server 2012.
 
 <dt>
 
@@ -1560,7 +1560,7 @@ Tipo de acesso: Somente leitura
 
 Indica como a propriedade **SelectNetworkDetect** é configurada.
 
-**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** Essa propriedade não está disponível antes do Windows 8 ou do Windows Server 2012.
+**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** essa propriedade não está disponível antes de Windows 8 ou Windows Server 2012.
 
 <dt>
 
@@ -1583,15 +1583,15 @@ Política de Grupo
 **PolicySourceSelectTransport**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica como a propriedade **SelectTransport** é configurada.
+Indica como a propriedade **SelectTransport** está configurada.
 
-**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** Essa propriedade não está disponível antes do Windows 8 ou do Windows Server 2012.
+**Windows 7, Windows Server 2008 R2, Windows Vista e Windows Server 2008:** Essa propriedade não está disponível antes de Windows 8 ou Windows Server 2012.
 
 <dt>
 
@@ -1614,15 +1614,15 @@ Política de Grupo
 **PolicySourceVideoPlaybackRedir**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a propriedade **VideoPlaybackRedir** está configurada pelo servidor ou pela política de grupo.
+Indica se a **propriedade VideoPlaybackRedir** está configurada pela política de servidor ou grupo.
 
-**Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes do Windows Server 2008 R2 e do Windows 7.
+**Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes Windows Server 2008 R2 e Windows 7.
 
 <dt>
 
@@ -1645,13 +1645,13 @@ Política de grupo
 **PolicySourceWindowsPrinterMapping**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a propriedade **WindowsPrinterMapping** é configurada pelo servidor, pela política de grupo ou por padrão.
+Indica se a **propriedade WindowsPrinterMapping** está configurada pelo servidor, pela política de grupo ou por padrão.
 
 <dt>
 
@@ -1681,21 +1681,21 @@ Padrão
 **RemoteSessionProfile**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Especifica o perfil para a experiência de RDP.
 
-**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** Essa propriedade não está disponível antes do Windows 8 ou do Windows Server 2012.
+**Windows 7, Windows Server 2008 R2, Windows Vista e Windows Server 2008:** Essa propriedade não está disponível antes de Windows 8 ou Windows Server 2012.
 
 <dt>
 
 <span id="scale"></span><span id="SCALE"></span>
 
-**escala** (1)
+**scale** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -1709,7 +1709,7 @@ Especifica o perfil para a experiência de RDP.
 
 <span id="bandwidth"></span><span id="BANDWIDTH"></span>
 
-**largura de banda** (3)
+**largura de** banda (3)
 
 
 </dt> <dd></dd> </dl>
@@ -1719,22 +1719,22 @@ Especifica o perfil para a experiência de RDP.
 **SelectNetworkDetect**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Especifica se a detecção de rede é usada.
 
-**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** Essa propriedade não está disponível antes do Windows 8 ou do Windows Server 2012.
+**Windows 7, Windows Server 2008 R2, Windows Vista e Windows Server 2008:** Essa propriedade não está disponível antes de Windows 8 ou Windows Server 2012.
 
 <dt>
 
 0
 </dt> <dd>
 
-usado no momento da conexão e no estado Steady.
+usado no momento da conexão e em estado estável.
 
 </dd> <dt>
 
@@ -1748,14 +1748,14 @@ desabilitado no momento da conexão
 2
 </dt> <dd>
 
-desabilitado no estado estável
+desabilitado em estado estável
 
 </dd> <dt>
 
 3
 </dt> <dd>
 
-desabilitado no momento da conexão e no estado Steady.
+desabilitado no momento da conexão e em estado estável.
 
 </dd> </dl>
 
@@ -1764,15 +1764,15 @@ desabilitado no momento da conexão e no estado Steady.
 **SelectTransport**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Especifica quais protocolos de transporte podem ser usados para acesso de RDP ao servidor.
+Especifica quais protocolos de transporte podem ser usados para acesso RDP ao servidor.
 
-**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** Essa propriedade não está disponível antes do Windows 8 ou do Windows Server 2012.
+**Windows 7, Windows Server 2008 R2, Windows Vista e Windows Server 2008:** Essa propriedade não está disponível antes de Windows 8 ou Windows Server 2012.
 
 <dt>
 
@@ -1808,12 +1808,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Status atual do objeto. Vários status de operação e não operacional podem ser definidos. Os status operacionais incluem: "OK", "degradado" e "Pred falha" (um elemento, como uma unidade de disco rígido habilitado para inteligente, pode estar funcionando corretamente, mas prevendo uma falha em um futuro próximo). Os status não operacionais incluem: "erro", "Iniciando", "parando" e "serviço". O último, "Service", pode ser aplicado durante o espelhamento de espelho de um disco, recarregar uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros Estados.
+Status atual do objeto. Vários status operacionais e não operacionais podem ser definidos. Os status operacionais incluem: "OK", "Degradado" e "Pred Fail" (um elemento, como uma unidade de disco rígido habilitada para SMART, pode estar funcionando corretamente, mas prevendo uma falha em um futuro próximo). Os status nãooperacionais incluem: "Error", "Starting", "Stopping" e "Service". O último, "Serviço", pode ser aplicado durante o espelhamento de um disco, o recarregamento de uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros estados.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
@@ -1875,7 +1875,7 @@ Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsyst
 
 </dd> <dt>
 
-**Terminalname**
+**TerminalName**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -1886,35 +1886,35 @@ Tipo de acesso: Somente leitura
 
 O nome do terminal.
 
-Esta propriedade é herdada do [**Win32 \_ TerminalSetting**](win32-terminalsetting.md).
+Essa propriedade é herdada de [**\_ TerminalSetting do Win32.**](win32-terminalsetting.md)
 
 </dd> <dt>
 
 **VideoPlaybackRedir**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica se o redirecionamento de reprodução de vídeo deve ser permitido.
+Especifica se é possível permitir o redirecionamento de reprodução de vídeo.
 
-**Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes do Windows Server 2008 R2 e do Windows 7.
+**Windows Server 2008 e Windows Vista:** Essa propriedade não está disponível antes Windows Server 2008 R2 e Windows 7.
 
 <dt>
 
 <span id="FALSE"></span><span id="false"></span>
 
-**False** (0)
+**FALSE** (0)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="TRUE"></span><span id="true"></span>
 
-**Verdadeiro** (1)
+**TRUE** (1)
 
 
 </dt> <dd></dd> </dl>
@@ -1924,7 +1924,7 @@ Especifica se o redirecionamento de reprodução de vídeo deve ser permitido.
 **WindowsPrinterMapping**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -1936,7 +1936,7 @@ Especifica se o mapeamento de impressora está desabilitado ou habilitado para a
 
 <span id="FALSE"></span><span id="false"></span>
 
-<span id="FALSE"></span><span id="false"></span>**False** (0)
+<span id="FALSE"></span><span id="false"></span>**FALSE** (0)
 
 
 </dt> <dd>
@@ -1962,9 +1962,9 @@ O mapeamento de impressora está desabilitado.
 
 Lembre-se de que uma estação de janela associada à sessão de console não pode acessar os métodos e as propriedades dessa classe. Se for feita uma tentativa de fazer isso especificando "console" como o valor da propriedade **terminalname** , os métodos desse objeto retornarão o **WBEM \_ E não \_ terão \_ suporte**. Esse código de erro também será retornado se uma estação de janela tentar chamar métodos desse objeto para adicionar ou modificar as propriedades de segurança das contas LocalSystem, LocalService ou NetworkService.
 
-Para se conectar ao \\ \\ \\ namespace TerminalServices de cimv2 raiz, o nível de autenticação deve incluir a privacidade do pacote. Para chamadas C/C++, esse é um nível de autenticação **da \_ \_ privacidade do \_ PCT no \_ nível \_ do autenticação RPC C**. Para chamadas de script e de Visual Basic, esse é um nível de autenticação de **WbemAuthenticationLevelPktPrivacy** ou "PktPrivacy", com um valor de seis.
+Para se conectar ao \\ \\ \\ namespace TerminalServices de cimv2 raiz, o nível de autenticação deve incluir a privacidade do pacote. Para chamadas C/C++, esse é um nível de autenticação **da \_ \_ privacidade do \_ PCT no \_ nível \_ do autenticação RPC C**. para chamadas de script e de Visual Basic, esse é um nível de autenticação de **WbemAuthenticationLevelPktPrivacy** ou "pktPrivacy", com um valor de seis.
 
-O exemplo a seguir Visual Basic Scripting Edition (VBScript) mostra como se conectar a um computador remoto com privacidade de pacote.
+o exemplo a seguir Visual Basic scripting Edition (VBScript) mostra como se conectar a um computador remoto com privacidade de pacote.
 
 
 ```VB
@@ -1975,7 +1975,7 @@ Set objServices = GetObject( _
 
 
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisitos
 

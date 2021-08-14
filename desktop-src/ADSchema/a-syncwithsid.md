@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 845a95b737a56a853fa7fb4e77d5612f1efc3c37
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 795fff281a75fe02f459c6128b0ac244b62d5542594532aefc5e9b1901a3841f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802016"
 ---
 # <a name="sync-with-sid-attribute"></a>Atributo Sync-with-SID
 
@@ -58,7 +58,7 @@ Para a sincronização de diretiva local/objeto de grupo do SAM Builtin, esse é
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -79,7 +79,7 @@ Para a sincronização de diretiva local/objeto de grupo do SAM Builtin, esse é
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -100,7 +100,7 @@ Para a sincronização de diretiva local/objeto de grupo do SAM Builtin, esse é
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -121,10 +121,10 @@ Para a sincronização de diretiva local/objeto de grupo do SAM Builtin, esse é
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -142,10 +142,10 @@ Para a sincronização de diretiva local/objeto de grupo do SAM Builtin, esse é
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -163,10 +163,10 @@ Para a sincronização de diretiva local/objeto de grupo do SAM Builtin, esse é
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |

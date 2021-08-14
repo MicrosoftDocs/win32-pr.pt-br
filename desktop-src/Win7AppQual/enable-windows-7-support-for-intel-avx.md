@@ -1,22 +1,22 @@
 ---
-description: Habilitar o suporte do Windows 7 para Intel AVX
+description: habilitar suporte a Windows 7 para Intel AVX
 ms.assetid: fe19e337-3109-42d6-a704-70662ac7c684
-title: Habilitar o suporte do Windows 7 para Intel AVX
+title: habilitar suporte a Windows 7 para Intel AVX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1509bac62634c85aa733b2c1de0c152169ac6cda
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f30469d0218f5da2c9f6df2b4f5637edffe09153ebad721f48b47401ecb1f3d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108088454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118329810"
 ---
-# <a name="enable-windows-7-support-for-intel-avx"></a>Habilitar o suporte do Windows 7 para Intel AVX
+# <a name="enable-windows-7-support-for-intel-avx"></a>habilitar suporte a Windows 7 para Intel AVX
 
 ## <a name="affected-platforms"></a>Plataformas afetadas
 
- **Clientes** -Windows 7 SP1  
-**Servidores** -Windows Server 2008 R2 SP1  
+ **clientes** -Windows 7 SP1  
+**servidores** -Windows Server 2008 R2 SP1  
 
 
 ## <a name="feature-impact"></a>Impacto do recurso
@@ -78,7 +78,7 @@ Há três níveis gerais de impacto potencial.
 
 ## <a name="links-to-other-resources"></a>Links para outros recursos
 
--   Para obter informações sobre as funções XState no SDK do Windows, consulte [Debugging Functions](../debug/debugging-functions.md).
+-   para obter informações sobre as funções XState no SDK do Windows, consulte [Debugging functions](../debug/debugging-functions.md).
 -   Para obter uma visão geral das instruções e dos recursos do Intel AVX, consulte [Intel AVX: novas fronteiras em melhorias de desempenho e eficiência energética](https://software.intel.com/articles/intel-avx-new-frontiers-in-performance-improvements-and-energy-efficiency/).
 
  

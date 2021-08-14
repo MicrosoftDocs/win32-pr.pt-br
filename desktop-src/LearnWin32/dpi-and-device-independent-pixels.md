@@ -4,16 +4,16 @@ ms.assetid: d282de02-62f4-4a12-a77c-f602f6db0216
 description: 'Saiba mais sobre: DPI e Device-Independent pixels'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e6f04e1a056611fcdfe8b59ff65b38ecec99eaf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0c9b3aebca97ac466f5158b07d1d976994030b4ba2c83b361a5d7a6d88b572fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118388334"
 ---
 # <a name="dpi-and-device-independent-pixels"></a>DPI e Device-Independent pixels
 
-Para programar com eficiência com gráficos do Windows, você deve entender dois conceitos relacionados:
+para programar com eficiência com gráficos Windows, você deve entender dois conceitos relacionados:
 
 -   Pontos por polegada (DPI)
 -   Pixel independente de dispositivo (DIPs).
@@ -34,14 +34,14 @@ A ilustração a seguir mostra uma fonte de ponto de 72. As linhas sólidas most
 
 ![uma ilustração que mostra uma fonte de ponto de 72.](images/graphics11.png)
 
-No entanto, quando se trata de uma exibição de computador, a medição do tamanho do texto é problemática, pois os pixels não têm o mesmo tamanho. O tamanho de um pixel depende de dois fatores: a resolução de vídeo e o tamanho físico do monitor. Portanto, as polegadas físicas não são uma medida útil, pois não há nenhuma relação fixa entre polegadas físicas e pixels. Em vez disso, as fontes são medidas em unidades *lógicas* . Uma fonte de ponto 72 é definida para ter uma polegada lógica de altura. Em seguida, as polegadas lógicas são convertidas em pixels. Por muitos anos, o Windows usou a seguinte conversão: uma polegada lógica é igual a 96 pixels. Usando esse fator de dimensionamento, uma fonte de ponto de 72 é renderizada como 96 pixels de altura. Uma fonte de 12 pontos tem 16 pixels de altura.
+No entanto, quando se trata de uma exibição de computador, a medição do tamanho do texto é problemática, pois os pixels não têm o mesmo tamanho. O tamanho de um pixel depende de dois fatores: a resolução de vídeo e o tamanho físico do monitor. Portanto, as polegadas físicas não são uma medida útil, pois não há nenhuma relação fixa entre polegadas físicas e pixels. Em vez disso, as fontes são medidas em unidades *lógicas* . Uma fonte de ponto 72 é definida para ter uma polegada lógica de altura. Em seguida, as polegadas lógicas são convertidas em pixels. por muitos anos, Windows usou a seguinte conversão: uma polegada lógica é igual a 96 pixels. Usando esse fator de dimensionamento, uma fonte de ponto de 72 é renderizada como 96 pixels de altura. Uma fonte de 12 pontos tem 16 pixels de altura.
 
 <dl> 12 pontos = 12/72 polegada lógica = 1/6 de polegada lógica = 96/6 pixels = 16 pixels  
 </dl>
 
 Esse fator de dimensionamento é descrito como 96 pontos por polegada (DPI). Os pontos de termo derivam da impressão, em que pontos físicos de tinta são colocados em papel. Para o computador ser exibido, seria mais preciso dizer 96 pixels por polegada lógica, mas o termo DPI travou.
 
-Como os tamanhos de pixel reais variam, o texto legível em um monitor pode ser muito pequeno em outro monitor. Além disso, as pessoas têm preferências diferentes — algumas pessoas preferem texto maior. Por esse motivo, o Windows permite que o usuário altere a configuração de DPI. Por exemplo, se o usuário definir a exibição como 144 DPI, uma fonte de ponto 72 será de 144 pixels de altura. As configurações de DPI padrão são 100% (96 DPI), 125% (120 DPI) e 150% (144 DPI). O usuário também pode aplicar uma configuração personalizada. A partir do Windows 7, o DPI é uma configuração por usuário.
+Como os tamanhos de pixel reais variam, o texto legível em um monitor pode ser muito pequeno em outro monitor. Além disso, as pessoas têm preferências diferentes — algumas pessoas preferem texto maior. por esse motivo, Windows permite que o usuário altere a configuração de DPI. Por exemplo, se o usuário definir a exibição como 144 DPI, uma fonte de ponto 72 será de 144 pixels de altura. As configurações de DPI padrão são 100% (96 DPI), 125% (120 DPI) e 150% (144 DPI). O usuário também pode aplicar uma configuração personalizada. a partir do Windows 7, o DPI é uma configuração por usuário.
 
 ## <a name="dwm-scaling"></a>Dimensionamento do DWM
 
@@ -60,7 +60,7 @@ Esse comportamento significa que os programas mais antigos "simplesmente funcion
 
 Para evitar o dimensionamento do DWM, um programa pode se marcar como com reconhecimento de DPI. Isso diz ao DWM para não executar nenhum dimensionamento automático de DPI. Todos os novos aplicativos devem ser criados para reconhecer DPI, pois o reconhecimento de DPI melhora a aparência da interface do usuário em configurações de DPI mais altas.
 
-Um programa declara a si mesmo o reconhecimento de DPI por meio de seu manifesto do aplicativo. Um *manifesto* é simplesmente um arquivo XML que descreve uma DLL ou um aplicativo. O manifesto normalmente é inserido no arquivo executável, embora possa ser fornecido como um arquivo separado. Um manifesto contém informações como dependências de DLL, o nível de privilégio solicitado e a qual versão do Windows o programa foi projetado.
+Um programa declara a si mesmo o reconhecimento de DPI por meio de seu manifesto do aplicativo. Um *manifesto* é simplesmente um arquivo XML que descreve uma DLL ou um aplicativo. O manifesto normalmente é inserido no arquivo executável, embora possa ser fornecido como um arquivo separado. um manifesto contém informações como dependências de DLL, o nível de privilégio solicitado e a qual versão do Windows programa foi projetado.
 
 Para declarar que o seu programa tem reconhecimento de DPI, inclua as seguintes informações no manifesto.
 
@@ -74,9 +74,9 @@ Para declarar que o seu programa tem reconhecimento de DPI, inclua as seguintes 
 </assembly>
 ```
 
-A listagem mostrada aqui é apenas um manifesto parcial, mas o vinculador do Visual Studio gera o restante do manifesto para você automaticamente. Para incluir um manifesto parcial em seu projeto, execute as etapas a seguir no Visual Studio.
+a listagem mostrada aqui é apenas um manifesto parcial, mas o vinculador Visual Studio gera o restante do manifesto para você automaticamente. Para incluir um manifesto parcial em seu projeto, execute as etapas a seguir em Visual Studio.
 
-1.  No menu **projeto** , clique em **Propriedade**.
+1.  no menu **Project** , clique em **propriedade**.
 2.  No painel esquerdo, expanda **Propriedades de configuração**, expanda **ferramenta de manifesto** e clique em **entrada e saída**.
 3.  Na caixa de texto **arquivos de manifesto adicionais** , digite o nome do arquivo de manifesto e clique em **OK**.
 
@@ -92,7 +92,7 @@ Se seu aplicativo reconhece DPI e você usa GDI para desenhar, dimensione todas 
 
 ## <a name="direct2d-and-dpi"></a>Direct2D e DPI
 
-O Direct2D executa automaticamente o dimensionamento para corresponder à configuração de DPI. No Direct2D, as coordenadas são medidas em unidades chamadas de DIPs ( *pixels independentes de dispositivo* ). Um DIP é definido como 1/1/96 de uma polegada *lógica* . No Direct2D, todas as operações de desenho são especificadas em DIPs e, em seguida, dimensionadas para a configuração de DPI atual.
+Direct2D executa automaticamente o dimensionamento para corresponder à configuração de DPI. em Direct2D, as coordenadas são medidas em unidades chamadas de DIPs ( *pixels independentes de dispositivo* ). Um DIP é definido como 1/1/96 de uma polegada *lógica* . em Direct2D, todas as operações de desenho são especificadas em DIPs e, em seguida, dimensionadas para a configuração de DPI atual.
 
 
 
@@ -106,7 +106,7 @@ O Direct2D executa automaticamente o dimensionamento para corresponder à config
 
  
 
-Por exemplo, se a configuração de DPI do usuário for 144 DPI e você solicitar que Direct2D desenhe um retângulo 200 × 100, o retângulo será de 300 × 150 pixels físicos. Além disso, DirectWrite mede os tamanhos de fonte em DIPs, em vez de pontos. Para criar uma fonte de 12 pontos, especifique 16 DIPs (12 pontos = 1/6 polegada lógica = 96/6 DIPs). Quando o texto é desenhado na tela, Direct2D converte o DIPs em pixels físicos. O benefício desse sistema é que as unidades de medida são consistentes para o texto e o desenho, independentemente da configuração de DPI atual.
+por exemplo, se a configuração de DPI do usuário for 144 DPI e você solicitar que Direct2D desenhe um retângulo 200 × 100, o retângulo será de 300 × 150 pixels físicos. além disso, DirectWrite mede os tamanhos de fonte em DIPs, em vez de pontos. Para criar uma fonte de 12 pontos, especifique 16 DIPs (12 pontos = 1/6 polegada lógica = 96/6 DIPs). quando o texto é desenhado na tela, Direct2D converte o DIPs em pixels físicos. O benefício desse sistema é que as unidades de medida são consistentes para o texto e o desenho, independentemente da configuração de DPI atual.
 
 Uma palavra de cuidado: as coordenadas do mouse e da janela ainda são dadas em pixels físicos, não DIPs. Por exemplo, se você processar a mensagem do [**WM \_ LBUTTONDOWN**](/windows/desktop/inputdev/wm-lbuttondown) , a posição do mouse para baixo será fornecida em pixels físicos. Para desenhar um ponto nessa posição, você deve converter as coordenadas de pixel em DIPs.
 
@@ -162,7 +162,7 @@ void InitializeDPIScale(HWND hwnd)
 }
 ```
 > [!Note]  
-> No Windows 10, a versão 1903,  [**ID2D1Factory:: GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) foi preterida e a recomendação é [**DisplayInformation:: LogicalDpi**](/uwp/api/windows.graphics.display.displayinformation.logicaldpi?view=winrt-19041) para aplicativos da Windows Store ou [**GetDpiForWindow**](/windows/win32/api/winuser/nf-winuser-getdpiforwindow) para aplicativos da área de trabalho. Se você ainda quiser usá-lo, suprime a mensagem de erro do compilador escrevendo a linha [**#pragma Aviso (suprimir: 4996)**](/cpp/error-messages/compiler-warnings/compiler-warning-level-3-c4996?view=vs-2019) logo antes da chamada [**ID2D1Factory:: GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) . Embora não seja recomendado, é possível definir o reconhecimento de DPI padrão programaticamente usando [**SetProcessDpiAwarenessContext**](/windows/win32/api/winuser/nf-winuser-setprocessdpiawarenesscontext). Depois que uma janela (um HWND) tiver sido criada em seu processo, não haverá mais suporte para a alteração do modo de reconhecimento de DPI. Se você estiver configurando o modo de reconhecimento de DPI de processo padrão programaticamente, deverá chamar a API correspondente antes que quaisquer HWNDs tenham sido criados. Para obter informações, consulte [definindo o reconhecimento de DPI padrão para um processo](../hidpi/setting-the-default-dpi-awareness-for-a-process.md).
+> no Windows 10, a versão 1903, [**ID2D1Factory:: GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) foi preterida e a recomendação é [**DisplayInformation:: LogicalDpi**](/uwp/api/windows.graphics.display.displayinformation.logicaldpi?view=winrt-19041) para aplicativos da loja Windows ou [**GetDpiForWindow**](/windows/win32/api/winuser/nf-winuser-getdpiforwindow) para aplicativos da área de trabalho. Se você ainda quiser usá-lo, suprime a mensagem de erro do compilador escrevendo a linha [**#pragma Aviso (suprimir: 4996)**](/cpp/error-messages/compiler-warnings/compiler-warning-level-3-c4996?view=vs-2019) logo antes da chamada [**ID2D1Factory:: GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) . Embora não seja recomendado, é possível definir o reconhecimento de DPI padrão programaticamente usando [**SetProcessDpiAwarenessContext**](/windows/win32/api/winuser/nf-winuser-setprocessdpiawarenesscontext). Depois que uma janela (um HWND) tiver sido criada em seu processo, não haverá mais suporte para a alteração do modo de reconhecimento de DPI. Se você estiver configurando o modo de reconhecimento de DPI de processo padrão programaticamente, deverá chamar a API correspondente antes que quaisquer HWNDs tenham sido criados. Para obter informações, consulte [definindo o reconhecimento de DPI padrão para um processo](../hidpi/setting-the-default-dpi-awareness-for-a-process.md).
 
 ## <a name="resizing-the-render-target"></a>Redimensionando o destino de renderização
 

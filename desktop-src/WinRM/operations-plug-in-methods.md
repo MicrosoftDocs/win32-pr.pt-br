@@ -5,12 +5,12 @@ ms.assetid: 81fe751f-51fd-4da6-b44a-0af9007eea9a
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff64a53c4c63b9e552efe90ac057b8a31d603b64
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a8bcfc2263a9ecd35c050499f0547b5bc5190e5896b430edabe6be8490239b62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103915848"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118323888"
 ---
 # <a name="operations-plug-in-methods"></a>Métodos de plug-in de operações
 
@@ -22,19 +22,19 @@ A tabela a seguir fornece uma visão geral dos métodos de retorno de chamada de
 
 | Método                                                                         | Descrição                                                                                                                                          |
 |--------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**WSManPluginFreeRequestDetails**](/windows/desktop/api/Wsman/nf-wsman-wsmanpluginfreerequestdetails)         | Libera a memória alocada para a estrutura de [**\_ \_ solicitação de plug-in do WSMan**](/windows/desktop/api/Wsman/ns-wsman-wsman_plugin_request) .                                          |
-| [**WSManPluginGetOperationParameters**](/windows/desktop/api/Wsman/nf-wsman-wsmanplugingetoperationparameters) | Obtém informações operacionais, tais como tempos limite e restrições de dados associadas a uma operação.                                         |
+| [**WSManPluginFreeRequestDetails**](/windows/desktop/api/Wsman/nf-wsman-wsmanpluginfreerequestdetails)         | Libera a memória alocada para a estrutura DE SOLICITAÇÃO DE [**\_ PLUG-IN \_ do WSMAN.**](/windows/desktop/api/Wsman/ns-wsman-wsman_plugin_request)                                          |
+| [**WSManPluginGetOperationParameters**](/windows/desktop/api/Wsman/nf-wsman-wsmanplugingetoperationparameters) | Obtém informações operacionais, como tempos-limites e restrições de dados associadas a uma operação.                                         |
 | [**WSManPluginOperationComplete**](/windows/desktop/api/Wsman/nf-wsman-wsmanpluginoperationcomplete)           | Registra a conclusão de uma operação.                                                                                                              |
-| [**WSManPluginReceiveResult**](/windows/desktop/api/Wsman/nf-wsman-wsmanpluginreceiveresult)                   | Relata resultados para Gerenciamento Remoto do Windows (WinRM) plug-ins.                                                                                       |
-| [**WSManPluginReportContext**](/windows/desktop/api/Wsman/nf-wsman-wsmanpluginreportcontext)                   | Relata o Shell e o contexto de comando de volta para a infraestrutura do WinRM para que outras operações possam ser executadas em relação ao shell e/ou ao comando. |
+| [**WSManPluginReceiveResult**](/windows/desktop/api/Wsman/nf-wsman-wsmanpluginreceiveresult)                   | Relata os resultados Windows plug-ins do WinRM (Gerenciamento Remoto).                                                                                       |
+| [**WSManPluginReportContext**](/windows/desktop/api/Wsman/nf-wsman-wsmanpluginreportcontext)                   | Relata o contexto de shell e comando de volta para a infraestrutura do WinRM para que outras operações possam ser executadas no shell e/ou comando. |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

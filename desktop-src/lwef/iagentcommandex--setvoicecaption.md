@@ -4,16 +4,16 @@ description: IAgentCommandEx SetVoiceCaption
 ms.assetid: 672fdc13-25d3-4ced-b295-2b687767c17f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 358514dd33fc97a98f9b63107eabc98e0387bab8
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: fe76edb17c2b099db5e16e2b6160703c6b11e8a9f52bcbc24a9ca4bfcb7077c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118477209"
 ---
 # <a name="iagentcommandexsetvoicecaption"></a>IAgentCommandEx::SetVoiceCaption
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT SetVoiceCaption(
@@ -43,6 +43,6 @@ Se você definir um objeto de [**comando**](/windows/desktop/lwef/the-command-ob
 [**IAgentCommand:: getCaption**](iagentcommand--getcaption.md), [**IAgentCommand:: sethabilited**](iagentcommand--setenabled.md), [**IAgentCommand:: setvisível**](iagentcommand--setvisible.md), [**IAgentCommand:: setvoice**](iagentcommand--setvoice.md), [**IAgentCommandsEx:: AddEx**](iagentcommandsex--addex.md), [**IAgentCommandsEx:: InsertEx**](iagentcommandsex--insertex.md), [**IAgentCommands:: Add**](iagentcommands--add.md), [**IAgentCommands:: Insert**](iagentcommands--insert.md)
 
 
- 
+ 
 
- 
+ 

@@ -4,12 +4,12 @@ ms.assetid: eed8ca97-39ad-4188-afc6-8670b5073fad
 title: Coleções de administração COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ceb49ecd382e5a5a570e3e479714ad905a5eaf5f
-ms.sourcegitcommit: d39e82e232f6510f843fdb8d55d25b4e9e02e880
+ms.openlocfilehash: bc19ff14959c151dc5736fb4a52c5346d0f5a30b6565551aca2f0edb3cee61b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "104558613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118308433"
 ---
 # <a name="com-administration-collections"></a>Coleções de administração COM+
 

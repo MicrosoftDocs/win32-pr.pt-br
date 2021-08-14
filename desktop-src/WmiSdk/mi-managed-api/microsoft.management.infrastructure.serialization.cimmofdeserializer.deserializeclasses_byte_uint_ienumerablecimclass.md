@@ -20,12 +20,12 @@ topic_type:
 - apiref
 product_family_name: VS
 ms.topic: reference
-ms.openlocfilehash: edcdb84e9c3a3fe7a070263385c9ee6551341152
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 160925b45cb7ca710c674b5c6f379669460f071adcc8ebf14f2310ceced052f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105793753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118317369"
 ---
 # <a name="cimmofdeserializerdeserializeclasses-method-byteuint32ienumerablecimclass"></a>Método CimMofDeserializer. DeserializeClasses (byte \[ \] , UInt32, IEnumerable \<CimClass\> )
 
@@ -89,7 +89,7 @@ Public Function DeserializeClasses (
     
     Um cache opcional de classes CIM pai.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. Collections. Generic. IEnumerable](/dotnet/api/system.collections.generic.ienumerable-1?view=netframework-4.8)\<[CimClass](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832269(v=vs.85))\>
 

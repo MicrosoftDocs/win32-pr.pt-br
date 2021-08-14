@@ -4,12 +4,12 @@ description: As funções gratuitas a seguir são declaradas em dxcore. h.
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: 33b0e6cf1c8b77ad64a85c4d602cf6a1231cdcbf
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c140e967b26e2267497829e70d1124e6d46aa364ca56bfdfd03d8dc30c7db89f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105762224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118502587"
 ---
 # <a name="dxcore-functions"></a>Funções de DXCore
 

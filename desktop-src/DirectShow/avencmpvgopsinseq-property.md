@@ -1,21 +1,21 @@
 ---
-description: Especifica o número de grupos de imagens (GOPS segundos) entre cabeçalhos de sequência. Essa propriedade se aplica a codificadores de vídeo MPEG.
+description: Especifica o número de GOPs (grupos de imagens) entre os headers de sequência. Essa propriedade se aplica a codificadores de vídeo MPEG.
 ms.assetid: 439be951-0185-4578-8b79-a5dfce254a68
-title: Propriedade AVEncMPVGOPSInSeq (Codecapi. h)
+title: Propriedade AVEncMPVGOPSInSeq (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b61414bd7389448e7ae43a52a065142fc40867f0
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 61a4aba43159bc50509ee2ed045e2f5b2d277f7dff7011a3f959c3d1735a6f0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105768411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403748"
 ---
 # <a name="avencmpvgopsinseq-property"></a>Propriedade AVEncMPVGOPSInSeq
 
-Especifica o número de grupos de imagens (GOPS segundos) entre cabeçalhos de sequência. Essa propriedade se aplica a codificadores de vídeo MPEG.
+Especifica o número de GOPs (grupos de imagens) entre os headers de sequência. Essa propriedade se aplica a codificadores de vídeo MPEG.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -27,7 +27,7 @@ Esta propriedade é de leitura/gravação.
 
 ## <a name="remarks"></a>Comentários
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ Esta propriedade é de leitura/gravação.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional \[ aplicativos UWP da área de \| trabalho\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows aplicativos da área de trabalho do servidor 2000 \[ \| aplicativos UWP\]<br/>                           |
+| parâmetro<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,10 +45,10 @@ Esta propriedade é de leitura/gravação.
 
 <dl> <dt>
 
-[Propriedades da API do codec](codec-api-properties.md)
+[Propriedades da API do Codec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interface ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI Interface**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: 'Não há suporte. Chame o método IAMTimeline:: CreateEmptyNode para criar um novo objeto de linha do tempo. Depois que um objeto é criado, você não pode alterar seu tipo.'
+description: 'Sem suporte. Chame o método IAMTimeline:: CreateEmptyNode para criar um novo objeto de linha do tempo. Depois que um objeto é criado, você não pode alterar seu tipo.'
 ms.assetid: 127b7435-84b0-46c4-b072-bb8eb54b6a4f
 title: 'Método IAMTimelineObj:: settimelinetype (QEdit. h)'
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: a63031968a2dfb43d98f9b7f59bd2d9051042732
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4592c92c4c40f9fff8294ea546601654afd0111e38fd9f64473512c27b6f1a34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105812981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118400847"
 ---
 # <a name="iamtimelineobjsettimelinetype-method"></a>Método IAMTimelineObj:: settimelinetype
 
@@ -28,7 +28,7 @@ ms.locfileid: "105812981"
 
  
 
-Não há suporte. Chame o método [**IAMTimeline:: CreateEmptyNode**](iamtimeline-createemptynode.md) para criar um novo objeto de linha do tempo. Depois que um objeto é criado, você não pode alterar seu tipo.
+Sem suporte. Chame o método [**IAMTimeline:: CreateEmptyNode**](iamtimeline-createemptynode.md) para criar um novo objeto de linha do tempo. Depois que um objeto é criado, você não pode alterar seu tipo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -52,7 +52,7 @@ Reservado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -64,7 +64,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 

@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 14657536e09b65912afa1715c296663d8d1916b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30b2f6ffbefad955034f520162b6fdc44d80198d926f35443ce21fefd80ef5c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118363822"
 ---
 # <a name="setnppetypesapfilter-function"></a>Função SetNPPEtypeSapFilter
 
@@ -94,7 +94,7 @@ O identificador para um BLOB de erro que especifica onde ocorreu o erro (se houv
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será NMERR com \_ êxito.
 

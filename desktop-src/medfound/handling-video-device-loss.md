@@ -4,12 +4,12 @@ ms.assetid: 2bffe156-c507-437e-8f32-62aaebedd6f0
 title: Lidando com a perda de dispositivo de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0d083ebeb1203b0bba49a63745f62a4dff6b231
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6219518d3018aae5600e66387363bbd71e29e72b83174b370bf25377c8c6b669
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105808195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117878948"
 ---
 # <a name="handling-video-device-loss"></a>Lidando com a perda de dispositivo de vídeo
 

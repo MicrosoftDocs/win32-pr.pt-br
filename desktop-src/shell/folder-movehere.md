@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: da6590d63f4a3c79252e25f3625c0ee75b146b6d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb826d23a168d81d838341e96fa5e613f8b6f5261a3cda548a2be320acebbde8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118458914"
 ---
 # <a name="foldermovehere-method"></a>Método Folder. MoveHere
 
@@ -54,7 +54,7 @@ O item ou os itens a serem movidos. Pode ser uma cadeia de caracteres que repres
 
 Tipo: **variante**
 
-Opções para a operação de movimentação. Esse valor pode ser zero ou uma combinação dos valores a seguir. Esses valores se baseiam nos sinalizadores definidos para uso com o membro **fFlags** da estrutura C++ [**SHFILEOPSTRUCT**](/windows/desktop/api/Shellapi/ns-shellapi-shfileopstructa) . Esses sinalizadores não são definidos como tal para Visual Basic, VBScript ou JScript, portanto, você deve defini-los por conta própria ou usar seus equivalentes numéricos.
+Opções para a operação de movimentação. Esse valor pode ser zero ou uma combinação dos valores a seguir. Esses valores se baseiam nos sinalizadores definidos para uso com o membro **fFlags** da estrutura C++ [**SHFILEOPSTRUCT**](/windows/desktop/api/Shellapi/ns-shellapi-shfileopstructa) . esses sinalizadores não são definidos como tal para Visual Basic, VBScript ou JScript, portanto, você deve defini-los por conta própria ou usar seus equivalentes numéricos.
 
 <dt>
 
@@ -179,7 +179,7 @@ Operar somente no diretório local. Não opere recursivamente em subdiretórios.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -192,9 +192,9 @@ Esse método não retorna um valor.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **MoveHere** para mover o arquivo Temp.txt do diretório raiz da unidade c para a pasta c: \\ Windows. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+o exemplo a seguir usa **MoveHere** para mover o arquivo Temp.txt do diretório raiz da unidade c para a pasta c: \\ Windows. o uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -273,7 +273,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |

@@ -4,21 +4,21 @@ description: Atributo Margin-Right de VML
 ms.assetid: 7b635bea-df3f-4a24-aa22-cfca95575599
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d5529257a0e21c8a8f8c7a1a2f8381c10a6e3b7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1a5569f4f89cbe5320cfc348f2e2929b986736412f4cb864a62dd4584bde43a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104008340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118346454"
 ---
 # <a name="vml-margin-right-attribute"></a>Atributo Margin-Right de VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Especifica a borda direita da forma que contém o retângulo em relação à âncora de forma. Leitura/gravação. **Cadeia de caracteres**.
 
@@ -48,13 +48,13 @@ Os valores são:
 
 | Valor      | Descrição                                                                                                                                                                                       |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Automático       | Posição padrão de um elemento no fluxo da página.                                                                                                                                           |
+| Auto       | Posição padrão de um elemento no fluxo da página.                                                                                                                                           |
 | units      | Padrão. Um número com um designador de unidades absolutas (cm, mm, em, pt, PC ou px) ou um designador de unidades relativas (em ou ex). Se nenhuma unidade for fornecida, serão assumidos pixels (px). O valor padrão é 0. |
 | percentage | Valor expresso como uma porcentagem da altura do objeto pai.                                                                                                                                    |
 
 
 
- 
+ 
 
 *Atributo padrão da VML*
 
@@ -77,6 +77,6 @@ A margem direita é definida como 25 pixels.
 
 [Exemplo do atributo margin-right](/previous-versions/bb229677(v=vs.85)). (Requer o Microsoft Internet Explorer 5 ou superior.)
 
- 
+ 
 
- 
+ 

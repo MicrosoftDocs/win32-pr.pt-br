@@ -13,18 +13,18 @@ keywords:
 - carregando patches de MIDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc54eccdaa0a0c9aa16f206e7e036f322b615d96
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: de389e058c015c38d05fb8ff2a960ca3ef75a662faa6a1ce519c26afe14f09b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118372493"
 ---
 # <a name="preloading-patches-with-internal-midi-synthesizers"></a>Precarregamento de patches com sintetizadores MIDI internos
 
 Alguns dispositivos de sintetizador MIDI internos não podem manter todos os seus patches carregados simultaneamente. Esses dispositivos devem pré-carregar seus dados de patch.
 
-O Windows fornece as seguintes funções para solicitar que um sintetizador seja pré-carregar e armazene em cache os patches especificados.
+Windows fornece as seguintes funções para solicitar que um sintetizador seja pré-carregar e armazene em cache os patches especificados.
 
 
 
@@ -35,10 +35,10 @@ O Windows fornece as seguintes funções para solicitar que um sintetizador seja
 
 
 
- 
+ 
 
 Para obter informações sobre como determinar se um dispositivo específico dá suporte a patches de pré-carregamento, consulte [consultando dispositivos de saída de Midi](querying-midi-output-devices.md).
 
- 
+ 
 
- 
+ 

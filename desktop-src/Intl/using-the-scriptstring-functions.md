@@ -4,16 +4,16 @@ ms.assetid: bfbba5df-ce06-4012-a7b1-55d8ea580942
 title: Usando as funções ScriptString
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93a2df5e7515bd605ad48cc7a246941e9b6f08f2
-ms.sourcegitcommit: 3d718d8f69d3f86eaecf94c5705d761c5a9ef4a1
+ms.openlocfilehash: 6685af7dad2c9e1b8d0cf460d526155f967a9105e1b107047afb99c18a5124f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104008558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118389402"
 ---
 # <a name="using-the-scriptstring-functions"></a>Usando as funções ScriptString
 
-Para um aplicativo lidando com texto não formatado, o Uniscribe fornece as funções de **ScriptString \*** . Essas funções são semelhantes a [**ExtTextOut**](/windows/win32/api/wingdi/nf-wingdi-exttextouta), [**DrawText**](/windows/win32/api/winuser/nf-winuser-drawtext)e [**GetTextExtent**](/cpp/mfc/reference/cdc-class#gettextextent), mas fornecem suporte completo a scripts complexos, incluindo o posicionamento do cursor. Essas funções são semelhantes às outras funções do Uniscribe, mas são adaptadas aos requisitos mais simples de processamento de texto sem formatação.
+Para um aplicativo lidando com texto não formatado, o Uniscribe fornece as funções **ScriptString \** _. Essas funções são semelhantes a [_ *ExtTextOut* *](/windows/win32/api/wingdi/nf-wingdi-exttextouta), [**DrawText**](/windows/win32/api/winuser/nf-winuser-drawtext)e [**GetTextExtent**](/cpp/mfc/reference/cdc-class#gettextextent), mas fornecem suporte completo a scripts complexos, incluindo o posicionamento do cursor. Essas funções são semelhantes às outras funções do Uniscribe, mas são adaptadas aos requisitos mais simples de processamento de texto sem formatação.
 
 A tabela a seguir detalha as funções **ScriptString \*** e quaisquer contrapartes nas outras funções de Uniscribe.
 
@@ -52,7 +52,7 @@ A tabela a seguir detalha as funções **ScriptString \*** e quaisquer contrapar
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Usp10/nf-usp10-scriptstringgetorder"><strong>ScriptStringGetOrder</strong></a></td>
-<td>Mapeia posições de glifos de caracteres de forma semelhante a <a href="/windows/desktop/api/wingdi/nf-wingdi-getcharacterplacementa">GetCharacterPlacement</a>, apenas para uso herdado. Essa função não funciona bem com scripts que geram mais de um glifo por ponto de código.</td>
+<td>Mapas posições de glifo de caractere de forma semelhante a <a href="/windows/desktop/api/wingdi/nf-wingdi-getcharacterplacementa">GetCharacterPlacement</a>, somente para uso herdado. Essa função não funciona bem com scripts que geram mais de um glifo por ponto de código.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Usp10/nf-usp10-scriptstringout"><strong>ScriptStringOut</strong></a></td>
@@ -90,6 +90,6 @@ Para exibir apenas texto sem formatação sem modificações, um aplicativo deve
 [Usando o Uniscribe](using-uniscribe.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

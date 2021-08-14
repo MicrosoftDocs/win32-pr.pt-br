@@ -1,43 +1,43 @@
 ---
-title: Atributos de lista de reprodução de CD
-description: Atributos de lista de reprodução de CD
+title: Atributos de playlist de CD
+description: Atributos de playlist de CD
 ms.assetid: 3f447fa8-2d09-49c3-8efd-6bf048429a6b
 keywords:
-- Windows Media Player, atributos de lista de reprodução de CD
-- Windows Media Player Mobile, atributos de lista de reprodução de CD
-- Modelo de objeto do Windows Media Player, atributos de lista de reprodução de CD
-- modelo de objeto, atributos de lista de reprodução de CD
-- Controle ActiveX, atributos de lista de reprodução de CD
-- Controle ActiveX do Windows Media Player, atributos de lista de reprodução de CD
-- Controle ActiveX móvel do Windows Media Player, atributos de lista de reprodução de CD
-- referência para modelo de objeto, atributos de lista de reprodução de CD
-- atributos, listas de reprodução
-- Atributos de lista de reprodução de CD
+- Windows Media Player,atributos de playlist de CD
+- Windows Media Player Dispositivos móveis, atributos de playlist de CD
+- Windows Media Player de objeto, atributos de playlist de CD
+- modelo de objeto, atributos de playlist de CD
+- ActiveX controle, atributos de playlist de CD
+- Windows Media Player ActiveX controle, atributos de playlist de CD
+- Windows Media Player Controle de ActiveX móvel, atributos de playlist de CD
+- referência para modelo de objeto, atributos de playlist de CD
+- atributos, playlists
+- Atributos de playlist de CD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 689b2b3b722a18a0e73305b959a2b4966a3bce79
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1fdc35b110b690952ffff9ad1a525f8b0e5a634c094ac07ad066b2d09e947a15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105760276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118342648"
 ---
-# <a name="cd-playlist-attributes"></a>Atributos de lista de reprodução de CD
+# <a name="cd-playlist-attributes"></a>Atributos de playlist de CD
 
-Os atributos e aliases de atributo a seguir estão disponíveis para um CD. Esses atributos se aplicam à lista de reprodução de CD recuperada usando o *cdrom*. **lista de reprodução**.
+Os seguintes atributos e aliases de atributo estão disponíveis para um CD. Esses atributos se aplicam à playlist de CD recuperada usando *Cdrom*. **playlist**.
 
--   [Alias do artista](author-attribute.md)
--   [Atributo de autor](author-attribute.md)
+-   [Alias de artista](author-attribute.md)
+-   [Atributo Author](author-attribute.md)
 -   [Atributo BuyNow](buynow-attribute.md)
--   [Alias do Composer](wm-composer-attribute.md)
--   [Atributo de direitos autorais](copyright-attribute.md)
+-   [Composer alias](wm-composer-attribute.md)
+-   [Atributo Copyright](copyright-attribute.md)
 -   [Alias de gênero](wm-genre-attribute.md)
--   [Alias do rótulo](wm-publisher-attribute.md)
+-   [Alias de rótulo](wm-publisher-attribute.md)
 -   [Atributo MoreInfo](moreinfo-attribute.md)
--   [Alias do nome](title-attribute.md)
--   [Atributo de provedor](provider-attribute.md)
+-   [Alias de nome](title-attribute.md)
+-   [Atributo provider](provider-attribute.md)
 -   [Alias de classificação](wm-providerrating-attribute.md)
--   [Atributo liberado](releasedate-attribute.md)
+-   [Atributo ReleaseDate](releasedate-attribute.md)
 -   [Alias de estilo](wm-providerstyle-attribute.md)
 -   [Atributo TotalDuration](totalduration-attribute.md)
 -   [Atributo WM/UniqueFileIdentifier](wm-uniquefileidentifier-attribute.md)
@@ -51,15 +51,15 @@ Os atributos e aliases de atributo a seguir estão disponíveis para um CD. Esse
 [**Referência de atributo**](attribute-reference.md)
 </dt> <dt>
 
-[**Cdrom. playlist**](cdrom-playlist.md)
+[**Cdrom.playlist**](cdrom-playlist.md)
 </dt> <dt>
 
 [**Faixas de CD**](cd-track-attributes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

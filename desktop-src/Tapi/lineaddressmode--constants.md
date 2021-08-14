@@ -1,28 +1,28 @@
 ---
-description: As \_ constantes de sinalizador de bit LINEADDRESSMODE descrevem várias maneiras de identificar um endereço em um dispositivo de linha.
+description: As constantes de sinalizador de bits LINEADDRESSMODE descrevem várias maneiras de \_ identificar um endereço em um dispositivo de linha.
 ms.assetid: f0f132a0-2e8e-478f-909b-c100aa360daa
-title: Constantes de LINEADDRESSMODE_ (TAPI. h)
+title: LINEADDRESSMODE_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e5e926772c82a36865c7f3b95c1ca1321db5682
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4863b79c4527395f6ecb2d28c4d9ef718ff5a7fd99681185ba892bac2b4639ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117761858"
 ---
-# <a name="lineaddressmode_-constants"></a>\_Constantes LINEADDRESSMODE
+# <a name="lineaddressmode_-constants"></a>Constantes LINEADDRESSMODE \_
 
-As constantes de sinalizador de bit **LINEADDRESSMODE \_** descrevem várias maneiras de identificar um endereço em um dispositivo de linha.
+As constantes de sinalizador de bits **LINEADDRESSMODE \_** descrevem várias maneiras de identificar um endereço em um dispositivo de linha.
 
 <dl> <dt>
 
-<span id="LINEADDRESSMODE_ADDRESSID"></span><span id="lineaddressmode_addressid"></span>**LINEADDRESSMODE \_ AddressID**
+<span id="LINEADDRESSMODE_ADDRESSID"></span><span id="lineaddressmode_addressid"></span>**LINEADDRESSMODE \_ ADDRESSID**
 </dt> <dd> <dl> <dt>
 
 
 
-O endereço é especificado com um pequeno inteiro no intervalo de 0 a *dwNumAddresses* menos um, em que *dwNumAddresses* é o valor nos recursos do dispositivo da linha.
+O endereço é especificado com um inteiro pequeno no intervalo de 0 a *dwNumAddresses* menos um, em que *dwNumAddresses é* o valor nas funcionalidades do dispositivo da linha.
 
 
 </dt> </dl> </dd> <dt>
@@ -39,9 +39,9 @@ O endereço é especificado por meio de seu número de telefone.
 
 ## <a name="remarks"></a>Comentários
 
-Os 16 bits de ordem superior podem ser atribuídos para extensões específicas do dispositivo. Os 16 bits de ordem inferior são reservados.
+Os 16 bits de ordem alta podem ser atribuídos a extensões específicas do dispositivo. Os 16 bits de ordem baixa são reservados.
 
-Essa constante é usada para selecionar um endereço em uma linha na qual uma chamada deve ser originada. O modelo usual selecionaria o endereço por meio de seu identificador de endereço. Identificadores de endereço são o mecanismo usado para identificar endereços em toda a TAPI. No entanto, em alguns ambientes, ao fazer uma chamada, geralmente é mais prático identificar o endereço de origem de uma chamada por número de telefone em vez de pelo identificador de endereço. Um exemplo é a possível modelagem de um grande número de estações (terceiros) no comutador por meio de um dispositivo de linha com muitos endereços. A linha representa o conjunto de todas as estações e cada estação é mapeada para um endereço com seu próprio número de telefone principal e identificador de endereço.
+Essa constante é usada para selecionar um endereço em uma linha na qual originar uma chamada. O modelo comum selecionaria o endereço por meio de seu identificador de endereço. Identificadores de endereço são o mecanismo usado para identificar endereços em toda a TAPI. No entanto, em alguns ambientes, ao fazer uma chamada, geralmente é mais prático identificar o endereço de origem de uma chamada por número de telefone, em vez de pelo identificador de endereço. Um exemplo é a possível modelagem de um grande número de estações (de terceiros) na opção por meio de um dispositivo de linha com muitos endereços. A linha representa o conjunto de todas as estações e cada estação é mapeada para um endereço com seu próprio número de telefone primário e identificador de endereço.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,8 +49,8 @@ Essa constante é usada para selecionar um endereço em uma linha na qual uma ch
 
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versão do TAPI<br/> | Requer TAPI 2.0 ou posterior<br/>                                             |
+| Cabeçalho<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

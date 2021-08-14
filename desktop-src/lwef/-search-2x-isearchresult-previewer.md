@@ -1,11 +1,11 @@
 ---
-title: Método de visualização do ISearchResult
-description: Reservado. | Método de visualização do ISearchResult
+title: Método visualizador ISearchResult
+description: Reservado. | Método visualizador ISearchResult
 ms.assetid: e20e39be-be54-4d34-b62e-9a823144115a
 keywords:
-- Recursos do ambiente herdado do Windows do método de visualização
-- Método de visualização herdado recursos de ambiente do Windows, interface ISearchResult
-- Recursos de ambiente do Windows herdados da interface ISearchResult, método de visualização
+- Método previewer Herdado Windows de ambiente
+- Método previewer Legacy Windows Environment Features , interface ISearchResult
+- Interface ISearchResult Herdada Windows recursos de ambiente, método previewer
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 63cf7d8ed08a8e2e761ec200d59928019054db6c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: ba2cf215cd0b54effa69a0a8e6e47f1201a2c4898b7a20c9744219755adfe83b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105751580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117694589"
 ---
-# <a name="isearchresultpreviewer-method"></a>ISearchResult: método de revisor de:P
+# <a name="isearchresultpreviewer-method"></a>Método ISearchResult::P reviewer
 
 Este método não está implementado.
 

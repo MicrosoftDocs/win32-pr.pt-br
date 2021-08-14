@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 11622078354012de4796ddd43a698ac812951742
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8faa4dd2cbd4d54fa0fb43b371529a4e867c50c9ff7237f2860c83cff911628
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105779600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118366034"
 ---
 # <a name="getnpptriggerfromblob-function"></a>Função GetNPPTriggerFromBlob
 
@@ -62,7 +62,7 @@ Identificador para um BLOB de erro que especifica onde ocorreu o erro (se houver
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será NMERR com \_ êxito.
 

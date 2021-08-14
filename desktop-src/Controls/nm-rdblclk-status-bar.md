@@ -3,7 +3,7 @@ title: Código de notificação de NM_RDBLCLK (barra de status) (commctrl. h)
 description: Notifica as janelas pai de um controle de barra de status que o usuário clicou duas vezes com o botão direito do mouse dentro do controle. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 57d8c5a7-e179-4b65-a3aa-5566d5780c18
 keywords:
-- NM_RDBLCLK (barra de status) controles do Windows do código de notificação
+- NM_RDBLCLK (barra de status) código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18092b03a599c75a88deb56bb256d96728b96328
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d8aa5c754eed028d050f1f42ab6ab7ae652bfb3a3dc8bedb49df81357db6b5af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104456047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118410677"
 ---
 # <a name="nm_rdblclk-status-bar-notification-code"></a>\_Código de notificação nm RDBLCLK (barra de status)
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**NMMOUSE**](/windows/win32/api/commctrl/ns-commctr
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornar **true** para indicar que o clique do mouse foi tratado e suprimir o processamento padrão pelo sistema. Retorne **false** para permitir o processamento padrão do clique.
 
@@ -55,8 +55,8 @@ Retornar **true** para indicar que o clique do mouse foi tratado e suprimir o pr
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 

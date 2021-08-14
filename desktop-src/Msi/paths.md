@@ -1,17 +1,17 @@
 ---
 description: O tipo de dados de caminhos é uma cadeia de caracteres de texto que contém uma lista de tipos de dados de caminho, separados por ponto-e-vírgula (;).
 ms.assetid: 8bf4fdaa-ec2d-4a90-b4ad-8e9e45b19183
-title: Caminhos (Windows Installer)
+title: caminhos (Windows Installer)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 883461bbf3288be5a64f8a7f2b5d19a5bb614f01
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 28671a295031b9bb49641e09c6eb9bf54ab7656bc37889df21ea7bda33ebf29a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105766866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118377619"
 ---
-# <a name="paths-windows-installer"></a>Caminhos (Windows Installer)
+# <a name="paths-windows-installer"></a>caminhos (Windows Installer)
 
 O tipo de dados de caminhos é uma cadeia de caracteres de texto que contém uma lista de tipos de dados de [caminho](path.md) , separados por ponto-e-vírgula (;).
 

@@ -4,12 +4,12 @@ ms.assetid: d9ecb00b-1f97-4f53-909f-30231104d398
 title: Política de metadados de foto System. GPS. AreaInformation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 86e14837da9ffa8b688caf1a544e222043988cf3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4eee2cf4234902049241c833d1077814f5daf88187323c43bc1cb00f6f44aa6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104296932"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118205517"
 ---
 # <a name="systemgpsareainformation-photo-metadata-policy"></a>Política de metadados de foto System. GPS. AreaInformation
 
@@ -25,7 +25,7 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-No
+Não
 
 ### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 

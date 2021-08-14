@@ -1,11 +1,11 @@
 ---
-title: Atributo MSMQ-NT4-flags
-description: O atributo MSMQ-NT4-flags contém informações de modo misto do MSMQ.
+title: Atributo MSMQ-Nt4-Flags
+description: O atributo MSMQ-Nt4-Flags contém informações de modo misto do MSMQ.
 ms.assetid: 08984fd8-7bbb-4d3e-accc-8fee033457fb
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-NT4-flags atributo AD Schema
-- Esquema de AD do atributo mSMQNt4Flags
+- Esquema do AD do atributo MSMQ-Nt4-Flags
+- Atributo MSMQNt4Flags Esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6603efdfa094b893e4e67a7114a0563f316ed95
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 94d39b494fbb8f1c4e4f0d9919e38f9906dce258469b5945d9b9b0f2e9398ab7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803222"
 ---
-# <a name="msmq-nt4-flags-attribute"></a>Atributo MSMQ-NT4-flags
+# <a name="msmq-nt4-flags-attribute"></a>Atributo MSMQ-Nt4-Flags
 
-O atributo **MSMQ-NT4-flags** contém informações de modo misto do MSMQ.
+O **atributo MSMQ-Nt4-Flags** contém informações de modo misto do MSMQ.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MSMQ-NT4-flags                       |
-| LDAP-Display-Name | mSMQNt4Flags                         |
+| CN                | Sinalizadores MSMQ-Nt4                       |
+| Ldap-Display-Name | mSMQNt4Flags                         |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.964               |
-| System-ID-GUID    | eb38a158-d57f-11d1-90a2-00c04fd91ab1 |
+| System-Id-Guid    | eb38a158-d57f-11d1-90a2-00c04fd91ab1 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ O atributo **MSMQ-NT4-flags** contém informações de modo misto do MSMQ.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configurações**](c-msmqsettings.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O atributo **MSMQ-NT4-flags** contém informações de modo misto do MSMQ.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configurações**](c-msmqsettings.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ O atributo **MSMQ-NT4-flags** contém informações de modo misto do MSMQ.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configurações**](c-msmqsettings.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ O atributo **MSMQ-NT4-flags** contém informações de modo misto do MSMQ.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| É de valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
 | No catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
@@ -129,7 +129,7 @@ O atributo **MSMQ-NT4-flags** contém informações de modo misto do MSMQ.
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**Configurações MSMQ**](c-msmqsettings.md)<br/> |
 
 
 
@@ -142,7 +142,7 @@ O atributo **MSMQ-NT4-flags** contém informações de modo misto do MSMQ.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| É de valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
 | No catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
@@ -150,7 +150,7 @@ O atributo **MSMQ-NT4-flags** contém informações de modo misto do MSMQ.
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**Configurações MSMQ**](c-msmqsettings.md)<br/> |
 
 
 
@@ -163,7 +163,7 @@ O atributo **MSMQ-NT4-flags** contém informações de modo misto do MSMQ.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| É de valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
 | No catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
@@ -171,7 +171,7 @@ O atributo **MSMQ-NT4-flags** contém informações de modo misto do MSMQ.
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**Configurações MSMQ**](c-msmqsettings.md)<br/> |
 
 
 
