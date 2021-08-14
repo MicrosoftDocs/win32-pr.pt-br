@@ -4,12 +4,12 @@ ms.assetid: bf290b59-1ecb-410f-b1f6-fdbeebebe3d3
 title: Ação de instalação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04279ba66f189ff83146fc2010e6843c20b404d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b5f648084b7386465f6bb59dd6b523cb51489e4cb83677c0b5cb47fe845be42
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810996"
 ---
 # <a name="install-action"></a>Ação de instalação
 
@@ -25,7 +25,7 @@ Não há nenhuma mensagem ActionData.
 
 ## <a name="remarks"></a>Comentários
 
-A ação de instalação não é chamada de dentro da sequência da tabela de ações, ela é passada para Windows Installer quando [**MsiInstallProduct**](/windows/desktop/api/Msi/nf-msi-msiinstallproducta) é chamado ou o executável de linha de comando Msiexec.exe é chamado com a opção de linha de comando '**/i**' ou quando qualquer função do instalador é chamada que pode executar uma tarefa de instalação, como [**MsiConfigureFeature**](/windows/desktop/api/Msi/nf-msi-msiconfigurefeaturea), [**MsiProvideComponent**](/windows/desktop/api/Msi/nf-msi-msiprovidecomponenta)ou [**MsiInstallMissingFile**](/windows/desktop/api/Msi/nf-msi-msiinstallmissingfilea).
+a ação de instalação não é chamada de dentro da sequência da tabela de ações, ela é passada para Windows Installer quando [**MsiInstallProduct**](/windows/desktop/api/Msi/nf-msi-msiinstallproducta) é chamado ou o executável de linha de comando Msiexec.exe é chamado com a opção de linha de comando '**/i**' ou quando qualquer função do instalador é chamada que pode executar uma tarefa de instalação, como [**MsiConfigureFeature**](/windows/desktop/api/Msi/nf-msi-msiconfigurefeaturea), [**MsiProvideComponent**](/windows/desktop/api/Msi/nf-msi-msiprovidecomponenta)ou [**MsiInstallMissingFile**](/windows/desktop/api/Msi/nf-msi-msiinstallmissingfilea).
 
  
 

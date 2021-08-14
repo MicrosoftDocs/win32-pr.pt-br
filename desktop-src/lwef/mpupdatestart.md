@@ -3,7 +3,7 @@ title: Função MpUpdateStart (MpClient. h)
 description: Inicia uma operação de atualização de assinatura.
 ms.assetid: BB056356-17E5-42F0-9636-9E1C254361E4
 keywords:
-- Recursos do ambiente Windows herdado da função MpUpdateStart
+- recursos de ambiente de Windows herdado da função MpUpdateStart
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 39867525529339c6b354ae771b070589ca52acfa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a61cda213ecfbb23c9ef366fcce7b5c91e806f26f0f4ebe8b45dc596b63d1b5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975886"
 ---
 # <a name="mpupdatestart-function"></a>Função MpUpdateStart
 
@@ -117,7 +117,7 @@ O identificador de atualização retornado que identifica a operação de atuali
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -131,9 +131,9 @@ Se a função falhar, o valor de retorno será um código **HRESULT** com falha.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>MpClient.dll</dt> </dl> |
 
 
@@ -154,7 +154,7 @@ Se a função falhar, o valor de retorno será um código **HRESULT** com falha.
 [**dados do MPCALLBACK \_**](mpcallback-data.md)
 </dt> <dt>
 
-[**dados do MPSIGUPDATE \_**](mpsigupdate-data.md)
+[**DADOS MPSIGUPDATE \_**](mpsigupdate-data.md)
 </dt> </dl>
 
  

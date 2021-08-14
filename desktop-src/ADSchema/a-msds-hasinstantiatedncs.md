@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2900d68f82e859bac7ce1dabbfea2d28fd8998b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: efde9ef1cd9a7230e4493d3e542e1f5f661ed33027ad3e9a88ded9679df812c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804046"
 ---
 # <a name="ms-ds-has-instantiated-ncs-attribute"></a>ms-DS-tem-atributo-NCs-instanciado
 
@@ -57,7 +57,7 @@ Informações de estado de replicação DS, análogas a (e um superconjunto de) 
 |------------------------|------------------------------------------|
 | ID do link                | 2002                                     |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
+| System-Only            | Verdadeiro                                     |
 | É de valor único       | Falso                                    |
 | É indexado             | Falso                                    |
 | No catálogo global      | Falso                                    |
@@ -78,7 +78,7 @@ Informações de estado de replicação DS, análogas a (e um superconjunto de) 
 |------------------------|------------------------------------------|
 | ID do link                | 2002                                     |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
+| System-Only            | Verdadeiro                                     |
 | É de valor único       | Falso                                    |
 | É indexado             | Falso                                    |
 | No catálogo global      | Falso                                    |
@@ -99,11 +99,11 @@ Informações de estado de replicação DS, análogas a (e um superconjunto de) 
 |------------------------|------------------------------------------|
 | ID do link                | 2002                                     |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
+| System-Only            | Verdadeiro                                     |
 | É de valor único       | Falso                                    |
 | É indexado             | Falso                                    |
 | No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | 4                                        |
 | Range-Upper            | 4                                        |
 | Search-Flags           | 0x00000000                               |
@@ -120,11 +120,11 @@ Informações de estado de replicação DS, análogas a (e um superconjunto de) 
 |------------------------|------------------------------------------|
 | ID do link                | 2002                                     |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| É de valor único       | Falso                                    |
+| System-Only            | Verdadeiro                                     |
+| Tem valor único       | Falso                                    |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | 4                                        |
 | Range-Upper            | 4                                        |
 | Search-Flags           | 0x00000000                               |
@@ -141,11 +141,11 @@ Informações de estado de replicação DS, análogas a (e um superconjunto de) 
 |------------------------|------------------------------------------|
 | ID do link                | 2002                                     |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| É de valor único       | Falso                                    |
+| System-Only            | Verdadeiro                                     |
+| Tem valor único       | Falso                                    |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | 4                                        |
 | Range-Upper            | 4                                        |
 | Search-Flags           | 0x00000000                               |
@@ -162,11 +162,11 @@ Informações de estado de replicação DS, análogas a (e um superconjunto de) 
 |------------------------|------------------------------------------|
 | ID do link                | 2002                                     |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| É de valor único       | Falso                                    |
+| System-Only            | Verdadeiro                                     |
+| Tem valor único       | Falso                                    |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | 4                                        |
 | Range-Upper            | 4                                        |
 | Search-Flags           | 0x00000000                               |

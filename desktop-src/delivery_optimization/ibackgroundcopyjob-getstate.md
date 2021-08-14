@@ -1,11 +1,11 @@
 ---
-title: Método GetState método ibackgroundcopyjob (Deliveryoptimization. h)
+title: Método GetState IBackgroundCopyJob (Deliveryoptimization.h)
 description: Recupera o estado do trabalho.
 ms.assetid: 975AF0FB-37AE-4CE8-9EC1-35A972E422D8
 keywords:
 - Método GetState
-- Método GetState, interface método ibackgroundcopyjob
-- Interface método ibackgroundcopyjob, método GetState
+- Método GetState, interface IBackgroundCopyJob
+- Interface IBackgroundCopyJob, método GetState
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5b195377a44cab8f336bae8090bacc5ca5624d7c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 64a26d1cc301230a9bb8330b9a2b2daf3178b1538ec95f593cd5e3f4d3099d7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119755296"
 ---
-# <a name="ibackgroundcopyjobgetstate-method"></a>Método método ibackgroundcopyjob:: GetState
+# <a name="ibackgroundcopyjobgetstate-method"></a>Método IBackgroundCopyJob::GetState
 
 Recupera o estado do trabalho.
 
@@ -43,22 +43,22 @@ HRESULT GetState(
 
 <dl> <dt>
 
-*pJobState* \[ fora\]
+*pJobState* \[ out\]
 </dt> <dd>
 
-O estado do trabalho. Por exemplo, o estado reflete se o trabalho está em erro, transferindo dados ou suspenso. Para obter uma lista de Estados de trabalho, consulte a enumeração [**BG_JOB_STATE**](bg-job-state-.md) .
+O estado do trabalho. Por exemplo, o estado reflete se o trabalho está com erro, transferindo dados ou suspenso. Para ver uma lista de estados de trabalho, [**consulte a enumeração BG_JOB_STATE**](bg-job-state-.md) trabalho.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Esse método retorna os valores **HRESULT** a seguir, bem como outros.
+Esse método retorna os seguintes **valores HRESULT,** bem como outros.
 
 
 
 | Código de retorno                                                                              | Descrição                                                 |
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| <dl> <dt>S_OK * * * *</dt> </dl> | O estado do trabalho foi recuperado com êxito.<br/> |
+| <dl> <dt>S_OK****</dt> </dl> | O estado do trabalho foi recuperado com êxito.<br/> |
 
 
 
@@ -66,7 +66,7 @@ Esse método retorna os valores **HRESULT** a seguir, bem como outros.
 
 ## <a name="remarks"></a>Comentários
 
-Se você quiser saber quando um trabalho está com erro ou transferiu todos os arquivos do trabalho, você pode usar esse método para sondar o estado do trabalho ou pode se registrar para receber notificações quando ocorrerem eventos. Para obter detalhes sobre como registrar-se para receber a notificação de eventos, consulte a interface [**IBackgroundCopyCallback**](ibackgroundcopycallback.md) .
+Se você quiser saber quando um trabalho está com erro ou tiver transferido todos os arquivos no trabalho, poderá usar esse método para sondar o estado do trabalho ou registrar-se para receber notificação quando ocorrerem eventos. Para obter detalhes sobre como se registrar para receber a notificação de eventos, consulte a interface [**IBackgroundCopyCallback.**](ibackgroundcopycallback.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,11 +74,11 @@ Se você quiser saber quando um trabalho está com erro ou transferiu todos os a
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1709\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | Windows Server, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1709 somente para \[ aplicativos da área de trabalho\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 somente \[ aplicativos da área de trabalho\]<br/>                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyJob é definido como 37668D37-507E-4160-9316-26306D150B12<br/>               |
 
@@ -88,7 +88,7 @@ Se você quiser saber quando um trabalho está com erro ou transferiu todos os a
 
 <dl> <dt>
 
-[**Método ibackgroundcopyjob**](ibackgroundcopyjob-.md)
+[**IBackgroundCopyJob**](ibackgroundcopyjob-.md)
 </dt> <dt>
 
 [**BG_JOB_STATE**](bg-job-state-.md)

@@ -1,9 +1,9 @@
 ---
-title: função glLightModelf (GL. h)
-description: A função glLightModelf define os parâmetros do modelo de iluminação.
+title: Função glLightModelf (Gl.h)
+description: A função glLightModelf define parâmetros de modelo de iluminação.
 ms.assetid: 7002c157-514e-4102-93f7-21a0df97a5c2
 keywords:
-- função glLightModelf OpenGL
+- Função glLightModelf OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee2c17f7dc82080544a9055805cf62726227c200
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d1b413f4cd3daa1eeeaeaf1857018cae21edf5b4ab36bea7474bfd6bcd7e64ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493255"
 ---
-# <a name="gllightmodelf-function"></a>função glLightModelf
+# <a name="gllightmodelf-function"></a>Função glLightModelf
 
-A função **glLightModelf** define os parâmetros do modelo de iluminação.
+A **função glLightModelf** define parâmetros de modelo de iluminação.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,17 +41,17 @@ void WINAPI glLightModelf(
 
 <dl> <dt>
 
-*pname* 
+*Pname* 
 </dt> <dd>
 
-Um parâmetro de modelo de iluminação de valor único. Os valores a seguir são aceitos.
+Um parâmetro de modelo de iluminação com valor único. Os valores a seguir são aceitos.
 
 
 
 | Valor                                                                                                                                                                                                      | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GL_LIGHT_MODEL_LOCAL_VIEWER"></span><span id="gl_light_model_local_viewer"></span><dl> <dt>**\_ \_ Visualizador local de modelo Light \_ GL \_**</dt> </dl> | O parâmetro *param* é um único valor de ponto flutuante que especifica como os ângulos de reflexão especular são computados. Se *param* for 0 (ou 0,0), os ângulos de reflexo especular usam a direção de exibição para serem paralelos e na direção do eixo-*z* , independentemente do local do vértice em coordenadas de olho. Caso contrário, os reflexos especulares são computados a partir da origem do sistema de coordenadas de olho. O padrão é 0. <br/>                                                                                                                                                                                                                                                                                                                |
-| <span id="GL_LIGHT_MODEL_TWO_SIDE"></span><span id="gl_light_model_two_side"></span><dl> <dt>**\_Método Light \_ GL \_ dois \_ lados**</dt> </dl>             | O parâmetro *param* é um único valor de ponto flutuante que especifica se os cálculos de iluminação com um ou dois lados são feitos para polígonos. Ele não tem nenhum efeito sobre os cálculos de iluminação para pontos, linhas ou bitmaps. Se *param* for 0 (ou 0,0), a iluminação unidirecional será especificada e somente os parâmetros de material frontal serão usados na equação de iluminação. Caso contrário, a iluminação em dois lados será especificada. <br/> Nesse caso, os vértices de polígonos voltados são iluminados usando os parâmetros de material de apoio e têm seus normais invertidos antes que a equação de iluminação seja avaliada. Os vértices de polígonos front-end sempre são iluminados usando os parâmetros de material frontal, sem nenhuma alteração em seus normais. O padrão é 0.<br/> |
+| <span id="GL_LIGHT_MODEL_LOCAL_VIEWER"></span><span id="gl_light_model_local_viewer"></span><dl> <dt>**VISUALIZADOR \_ LOCAL DO MODELO DE LUZ \_ \_ \_ GL**</dt> </dl> | O *parâmetro param* é um único valor de ponto flutuante que especifica como ângulos de reflexão especular são computados. Se *param* for 0 (ou 0,0), os ângulos de reflexão especular levarão a direção de exibição em paralelo para e na direção do eixo *- z,* independentemente do local do vértice nas coordenadas de olho. Caso contrário, as reflexões especular serão calculadas da origem do sistema de coordenadas ocular. O padrão é 0. <br/>                                                                                                                                                                                                                                                                                                                |
+| <span id="GL_LIGHT_MODEL_TWO_SIDE"></span><span id="gl_light_model_two_side"></span><dl> <dt>**GL \_ LIGHT \_ MODEL \_ TWO \_ SIDE**</dt> </dl>             | O *parâmetro param* é um único valor de ponto flutuante que especifica se os cálculos de iluminação de um ou dois lados são feitos para polígonos. Ele não tem nenhum efeito sobre os cálculos de iluminação para pontos, linhas ou bitmaps. Se *param* for 0 (ou 0,0), a iluminação de um lado será especificada e somente os parâmetros de material frontal serão usados na equação de iluminação. Caso contrário, a iluminação de dois lados será especificada. <br/> Nesse caso, os vértices de polígonos voltados para trás são claros usando os parâmetros de material de fundo e têm seus normais invertidos antes que a equação de iluminação seja avaliada. Os vértices de polígonos voltados para a frente sempre são claros usando os parâmetros de material frontal, sem nenhuma alteração em seus normais. O padrão é 0.<br/> |
 
 
 
@@ -62,7 +62,7 @@ Um parâmetro de modelo de iluminação de valor único. Os valores a seguir sã
 *param* 
 </dt> <dd>
 
-O valor para o qual *param* será definido.
+O valor para o *qual o param* será definido.
 
 </dd> </dl>
 
@@ -72,40 +72,40 @@ Essa função não retorna um valor.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**](glgeterror.md) .
+Os códigos de erro a seguir podem ser recuperados pela [**função glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | *pname* não era um valor aceito.<br/>                                                                                         |
-| <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**GL \_ INVALID \_ ENUM**</dt> </dl>      | *pname* não era um valor aceito.<br/>                                                                                         |
+| <dl> <dt>**OPERAÇÃO \_ GL \_ INVÁLIDA**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd.**](glend.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-A função **glLightModelf** define o parâmetro do modelo de iluminação. O parâmetro *pname* nomeia um parâmetro e *param* fornece o novo valor. o valor ou os valores de parâmetros de fonte de luz individuais.
+A **função glLightModelf** define o parâmetro do modelo de iluminação. O *parâmetro pname* nomeia um parâmetro *e o parâmetro param* fornece o novo valor.o valor ou os valores de parâmetros de fonte de luz individuais.
 
-No modo RGBA, a cor clara de um vértice é a soma da intensidade de emissão de material, do produto do material de reflexão de ambiente e da intensidade de ambiente de cena completa e a contribuição de cada fonte de luz habilitada. Cada fonte de luz contribui com a soma de três termos: ambiente, difuso e especular.
+No modo RGBA, a cor clara de um vértice é a soma da intensidade de emissão do material, o produto da reflexão do ambiente do material e a intensidade do ambiente de cena inteira do modelo de iluminação e a contribuição de cada fonte de luz habilitada. Cada fonte de luz contribui com a soma de três termos: ambiente, difuso e especular.
 
--   A contribuição de fonte de luz ambiente é o produto da reflexão de ambiente material e a intensidade de ambiente da luz.
--   A contribuição de origem da luz difusa é o produto da reflexão difusa do material, a intensidade difusa da luz e o produto do ponto do vértice normal com o vetor normalizado do vértice para a fonte de luz.
--   A contribuição de fonte de luz especular é o produto da reflexão de especulação de material, a intensidade especular da luz e o produto de ponto dos vetores de vértice-to-light e de vértice para claro, aumentados para o poder da luminosidade do material.
+-   A contribuição da fonte de luz ambiente é o produto da reflexão do ambiente do material e da intensidade do ambiente da luz.
+-   A contribuição difusa da fonte de luz é o produto da reflexão difusa do material, da intensidade difusa da luz e do produto de ponto do normal do vértice com o vetor normalizado do vértice para a fonte de luz.
+-   A contribuição da fonte de luz especular é o produto da reflexão especular do material, da intensidade especular da luz e do produto de ponto dos vetores de vértice para olho normalizados e vértice para luz, elevados à potência da prontidão do material.
 
-Todas as três contribuições de fonte de luz são atenuadas igualmente com base na distância do vértice até a fonte de luz e na direção da fonte de luz, no expoente de espalhamento e no ângulo de corte de espalhamento. Todos os produtos de ponto serão substituídos por zero se forem avaliados como um valor negativo.
+Todas as três contribuições de fonte de luz são atenuadas igualmente com base na distância do vértice para a fonte de luz e na direção da fonte de luz, propagam o expoente e estendem o ângulo de corte. Todos os produtos de ponto serão substituídos por zero se avaliarem como um valor negativo.
 
-O componente alfa da cor declarada resultante é definido como o valor alfa da reflexão difusa do material.
+O componente alfa da cor clara resultante é definido como o valor alfa da reflexão difusa do material.
 
-No modo de índice de cor, o valor do índice claro de um vértice varia do ambiente para os valores especulares passados para [**glMaterial**](glmaterial-functions.md) usando índices de \_ cores GL \_ . Coeficientes difusas e especulares, computados com um peso (. 30,. 59, .11) das cores da luz, da luminosidade do material e das mesmas equações de reflexão e atenuação que no caso de RGBA, determinam o quanto acima do ambiente o índice resultante é.
+No modo de índice de cores, o valor do índice claro de um vértice varia do ambiente até os valores especular passados para [**glMaterial**](glmaterial-functions.md) usando GL \_ COLOR \_ INDEXES. Coeficientes difusos e especular, calculados com uma ponderação (.30, .59, .11) das cores da luz, a prontidão do material e as mesmas equações de reflexão e atenuação que no caso RGBA, determinam o nível acima do ambiente do índice resultante.
 
-As funções a seguir recuperam informações relacionadas à função **glLightModelf** :
+As funções a seguir recuperam informações relacionadas à **função glLightModelf:**
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento GL \_ Light \_ modelo \_ local \_ Viewer
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento GL \_ LIGHT MODEL LOCAL \_ \_ \_ VIEWER
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento GL \_ Light de \_ \_ dois \_ lados
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento GL \_ LIGHT MODEL TWO \_ \_ \_ SIDE
 
-[**glIsEnabled**](glisenabled.md) com iluminação do argumento GL \_
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ LIGHTING
 
 ## <a name="requirements"></a>Requisitos
 
@@ -115,8 +115,8 @@ As funções a seguir recuperam informações relacionadas à função **glLight
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

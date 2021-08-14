@@ -3,29 +3,29 @@ title: FileRepServiceExample
 description: FileRep recupera arquivos de um servidor e os copia para um cliente.
 ms.assetid: 9f446999-8f10-4ce4-86eb-e9289e131733
 keywords:
-- FileRepServiceExample Web Services para Windows
+- Serviços Web FileRepServiceExample para Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bfc230de8716566574dbe95b914d8ff22cbc2f75
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5a995dbb885631575aceedfeeb371440034558ecd40af9a1323a6edbc51e300c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963425"
 ---
 # <a name="filerepserviceexample"></a>FileRepServiceExample
 
-FileRep recupera arquivos de um servidor e os copia para um cliente. Para fazer isso, ele emprega três componentes: o serviço do servidor em execução no computador com o arquivo de origem, o serviço do cliente em execução no computador onde o arquivo de destino será armazenado e uma ferramenta de linha de comando para controlar a cópia. Os serviços de cliente e servidor estão constantemente executando serviços da Web enquanto a ferramenta de linha de comando é iniciada pelo usuário e é encerrada após uma solicitação.
+FileRep recupera arquivos de um servidor e os copia para um cliente. Para fazer isso, ele emprega três componentes : o serviço de servidor em execução no computador com o arquivo de origem, o serviço cliente em execução no computador em que o arquivo de destino será armazenado e uma ferramenta de linha de comando para controlar a cópia. Os serviços de cliente e servidor estão executando serviços Web constantemente, enquanto a ferramenta de linha de comando é iniciada pelo usuário e sai após uma solicitação.
 
-Este exemplo ilustra o uso da camada de canal e de serialização.
+Este exemplo ilustra o uso do canal e da camada de serialização.
 
-Este é o serviço. A ferramenta de linha de comando pode ser encontrada [aqui](filereptoolexample.md). O serviço tem um cliente e um modo de servidor, onde o servidor envia arquivos e o cliente recebe arquivos.
+Esse é o serviço. A ferramenta de linha de comando pode ser encontrada [aqui.](filereptoolexample.md) O serviço tem um cliente e um modo de servidor, em que o servidor envia arquivos e o cliente recebe arquivos.
 
-Os parâmetros de linha de comando para o modo de cliente são os seguintes:
+Os parâmetros de linha de comando para o modo de cliente são os seguinte:
 
-**WsFileRepService.exe cliente** *<Service Url>* **\[ /reporting: <Error/info/verbose>\] \[ /Encoding: <Text/Binary/MTOM>\] \[ /Connections ***<number of connections>*** \] :**
+**WsFileRepService.exe cliente** *<Service Url>* **\[ /reporting:<error/info/verbose>\] \[ /encoding:<text/binary/MTOM>\] \[ /connections:**_<number of connections>_*_\]_*
 
 <dl> <dt>
 
@@ -39,21 +39,21 @@ Obrigatórios. Indica que o serviço é executado como cliente.
 <span id="Service_Url"></span><span id="service_url"></span><span id="SERVICE_URL"></span>URL do serviço
 </dt> <dd>
 
-Obrigatórios. Denota a URL em que o serviço escuta.
+Obrigatórios. Indica a URL em que o serviço escuta.
 
 </dd> <dt>
 
-<span id="Encoding"></span><span id="encoding"></span><span id="ENCODING"></span>Mecanismo
+<span id="Encoding"></span><span id="encoding"></span><span id="ENCODING"></span>Codificação
 </dt> <dd>
 
-Opcional. Especifica a codificação usada ao se comunicar com a ferramenta de linha de comando. Observe que a ferramenta atual não dá suporte à especificação de uma codificação para essa transferência, portanto, alterar essa configuração provavelmente produzirá um erro. A configuração existe para que a ferramenta possa ser alterada e estendida independentemente do servidor.
+Opcional. Especifica a codificação usada ao se comunicar com a ferramenta de linha de comando. Observe que a ferramenta atual não dá suporte à especificação de uma codificação para essa transferência, portanto, alterar essa configuração provavelmente produzirá um erro. A configuração está lá para que a ferramenta possa ser alterada e estendida independentemente do servidor.
 
 </dd> <dt>
 
-<span id="Reporting"></span><span id="reporting"></span><span id="REPORTING"></span>Gerar
+<span id="Reporting"></span><span id="reporting"></span><span id="REPORTING"></span>Relatórios
 </dt> <dd>
 
-Opcional. Habilita o relatório de erro, informações ou nível detalhado. O padrão é Error. As mensagens são impressas no console.
+Opcional. Habilita erros, informações ou relatórios de nível detalhado. O padrão é erro. As mensagens são impressas no console.
 
 </dd> <dt>
 
@@ -64,9 +64,9 @@ Opcional. Especifica o número máximo de solicitações simultâneas que serão
 
 </dd> </dl>
 
-Os parâmetros de linha de comando para o modo de servidor são os seguintes:
+Os parâmetros de linha de comando para o modo de servidor são os seguinte:
 
-**Servidor** *<Service Url>* deWsFileRepService.exe **\[ /Reporting: <Error/info/Verbose>\] \[ /Encoding: <Text/Binary/MTOM>\] \[ /Connections: ***<number of connections>*** \] \[ /Chunk ***<size of the payload per message in bytes>*** \] :**
+**WsFileRepService.exe servidor** *<Service Url>* **\[ /reporting:<error/info/verbose>\] \[ /encoding:<text/binary/MTOM>\] \[ /connections:** _<number of connections>_ *_\] \[ /chunk:_*_<size of the payload per message in bytes>_*_\]_*
 
 <dl> <dt>
 
@@ -77,45 +77,45 @@ Obrigatórios. Indica que o serviço é executado como servidor de arquivos.
 
 </dd> <dt>
 
-<span id="Chunk"></span><span id="chunk"></span><span id="CHUNK"></span>Codificação
+<span id="Chunk"></span><span id="chunk"></span><span id="CHUNK"></span>Pedaço
 </dt> <dd>
 
 Opcional. Os arquivos transferidos são divididos em partes do tamanho especificado. Cada mensagem contém uma parte. O padrão é 32768 bytes.
 
 </dd> </dl>
 
-Detalhes da implementação. Como este exemplo é escrito na camada de canal, ele precisa executar manualmente determinadas tarefas que a camada de modelo de serviço pode fazer automaticamente. Uma dessas tarefas é o gerenciamento de canal. Para fornecer uma resposta rápida às solicitações, há sempre (até um limite) vários canais prontos para aceitar solicitações. Ter vários canais prontos é mais eficaz no caso de várias solicitações do que ter apenas um canal à medida que a criação de um canal leva tempo. Além disso, a reutilização do estado também melhora o desempenho. O Sapphire fornece APIs para redefinir a maior parte do estado para evitar ter que liberá-la e recriá-la. Este exemplo aproveita isso reutilizando o canal e o estado de solicitação sempre que possível e apenas criando ou destruindo o estado quando determinados limites são passados. O código relacionado ao gerenciamento de canal pode ser encontrado em CChannelManager.
+Detalhes da implementação. Como este exemplo é gravado na camada de canal, ele precisa executar manualmente determinadas tarefas que a camada de modelo de serviço poderia fazer automaticamente. Uma dessas tarefas é o gerenciamento de canais. Para fornecer uma resposta rápida às solicitações, há sempre (até um limite) vários canais prontos para aceitar solicitações. Ter vários canais prontos é mais bem-desempenho no caso de várias solicitações do que ter apenas um canal, pois a criação de um canal leva tempo. Além disso, a reutilização do estado também melhora o desempenho. O Sapfitre fornece APIs para redefinir a maioria dos estados para evitar a liberação e a recriação. Este exemplo aproveita isso reutilizar o canal e solicitar o estado sempre que possível e apenas criar ou destruir o estado quando determinados limites forem passados. O código relacionado ao gerenciamento de canais pode ser encontrado em CChannelManager.
 
-O loop de processamento de mensagens principal está em CRequest. Essa classe contém o estado independente do aplicativo e os métodos necessários para um loop de processamento de mensagens do Sapphire assíncrono. O código específico do aplicativo está em CFileRepClient (serviço de cliente) e CFileRepServer (serviço de servidor). Ambas as classes herdam de CFileRep, que contém código genérico relacionado ao serviço.
+O loop de processamento de mensagens principal está em CRequest. Essa classe contém o estado independente do aplicativo e os métodos necessários para um loop de processamento de mensagens Sapousre assíncrono. O código específico do aplicativo está em CFileRepClient (serviço cliente) e CFileRepServer (serviço de servidor). Ambas as classes herdam de CFileRep, que contém código genérico relacionado ao serviço.
 
-O exemplo usa o serializador e executa a serialização personalizada. A serialização personalizada é usada ao lidar com grandes partes de dados para minimizar o consumo de memória, otimizando manualmente a alocação de memória para a finalidade específica. Como isso leva a um código complexo e de baixo nível, fazer a serialização manual só deve ser feito quando absolutamente necessário.
+O exemplo usa o serializador e executa a serialização personalizada. A serialização personalizada é usada ao lidar com grandes partes de dados para minimizar o consumo de memória otimizando manualmente a alocação de memória para fins específicos. Como isso leva a um código complexo e de baixo nível, a serialização manual só deve ser feita quando absolutamente necessário.
 
 Padrão de troca de mensagens:
 
 -   O serviço cliente obtém uma mensagem de solicitação da ferramenta de linha de comando.
--   Se a solicitação for assíncrona, envie novamente uma confirmação imediatamente.
--   O serviço de cliente envia uma solicitação de informações de arquivo para o serviço do servidor. Uma solicitação de descoberta é indicada por uma posição de parte de-1.
--   O serviço servidor retorna as informações do arquivo.
--   O serviço cliente solicita as partes individuais sequencialmente uma por uma do servidor. As partes são identificadas pela sua posição dentro do arquivo.
--   Repita até que a transferência de arquivo seja concluída ou uma falha tenha ocorrido.
--   Se a solicitação estiver síncrona, envie uma mensagem de êxito ou falha para a ferramenta de linha de comando.
+-   Se a solicitação for assíncrona, envie uma confirmação imediatamente.
+-   O serviço cliente envia uma solicitação de informações de arquivo para o serviço de servidor. Uma solicitação de descoberta é anotada por uma posição de parte de -1.
+-   O serviço de servidor retorna as informações do arquivo.
+-   O serviço cliente solicita as partes individuais sequencialmente uma a uma do servidor. As partes são identificadas por sua posição dentro do arquivo.
+-   Repita até que a transferência de arquivo seja concluída ou ocorreu uma falha.
+-   Se a solicitação for síncrona, envie uma mensagem de êxito ou falha para a ferramenta de linha de comando.
 
-Para as estruturas de dados individuais associadas a cada mensagem, consulte Common. h.
+Para as estruturas de dados individuais associadas a cada mensagem, consulte common.h.
 
--   [Service. cpp](#servicecpp)
--   [Serviço. h](#serviceh)
--   [CChannelManager. cpp](#cchannelmanagercpp)
--   [CFileRep. cpp](#cfilerepcpp)
--   [CRequest. cpp](#crequestcpp)
--   [CFileRepClient. cpp](#cfilerepclientcpp)
--   [CFileRepServer. cpp](#cfilerepservercpp)
--   [Common. h](#commonh)
+-   [Service.cpp](#servicecpp)
+-   [Service.h](#serviceh)
+-   [CChannelManager.cpp](#cchannelmanagercpp)
+-   [CFileRep.cpp](#cfilerepcpp)
+-   [CRequest.cpp](#crequestcpp)
+-   [CFileRepClient.cpp](#cfilerepclientcpp)
+-   [CFileRepServer.cpp](#cfilerepservercpp)
+-   [common.h](#commonh)
 -   [FileRep.mc](#filerepmc)
--   [FileRep. rc](#filereprc)
+-   [FileRep.rc](#filereprc)
 -   [Makefile](#makefile)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="servicecpp"></a>Service. cpp
+## <a name="servicecpp"></a>Service.cpp
 
 
 ```C++
@@ -345,7 +345,7 @@ int __cdecl wmain(int argc, __in_ecount(argc) wchar_t **argv)
 
 
 
-## <a name="serviceh"></a>Serviço. h
+## <a name="serviceh"></a>Service.h
 
 
 ```C++
@@ -695,7 +695,7 @@ void CleanupChannel(WS_CHANNEL* channel);
 
 
 
-## <a name="cchannelmanagercpp"></a>CChannelManager. cpp
+## <a name="cchannelmanagercpp"></a>CChannelManager.cpp
 
 
 ```C++
@@ -971,7 +971,7 @@ void CChannelManager::WaitForCleanup()
 
 
 
-## <a name="cfilerepcpp"></a>CFileRep. cpp
+## <a name="cfilerepcpp"></a>CFileRep.cpp
 
 
 ```C++
@@ -1340,7 +1340,7 @@ HRESULT CFileRep::InitializeListener()
 
 
 
-## <a name="crequestcpp"></a>CRequest. cpp
+## <a name="crequestcpp"></a>CRequest.cpp
 
 
 ```C++
@@ -1906,7 +1906,7 @@ CRequest::~CRequest()
 
 
 
-## <a name="cfilerepclientcpp"></a>CFileRepClient. cpp
+## <a name="cfilerepclientcpp"></a>CFileRepClient.cpp
 
 
 ```C++
@@ -2574,7 +2574,7 @@ HRESULT CFileRepClient::SendUserResponse(CRequest* request, TRANSFER_RESULTS res
 
 
 
-## <a name="cfilerepservercpp"></a>CFileRepServer. cpp
+## <a name="cfilerepservercpp"></a>CFileRepServer.cpp
 
 
 ```C++
@@ -3602,7 +3602,7 @@ Failed to create file.
 .
 ```
 
-## <a name="filereprc"></a>FileRep. rc
+## <a name="filereprc"></a>FileRep.rc
 
 ``` syntax
 LANGUAGE 0x9,0x1
@@ -3649,9 +3649,9 @@ WsFileRepService.exe: Service.obj CFileRep.obj CFileRepServer.obj CFileRepClient
 [FileRepToolExample](filereptoolexample.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

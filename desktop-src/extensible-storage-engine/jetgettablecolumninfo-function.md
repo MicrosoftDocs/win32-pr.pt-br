@@ -20,17 +20,17 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f8c7b073ca9be90e89a1c6b99c010707e6405323
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 63e913e68a3aea8f220c713b07becdeecb785a619b73a833bb6a0e9c3c1d37a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104173227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979015"
 ---
 # <a name="jetgettablecolumninfo-function"></a>Função JetGetTableColumnInfo
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetgettablecolumninfo-function"></a>Função JetGetTableColumnInfo
 
@@ -122,25 +122,25 @@ As seguintes opções podem ser definidas para este parâmetro:
 <tr class="even">
 <td><p>JET_ColInfoBaseByColId</p></td>
 <td><p>O mesmo que JET_ColInfoBase, <em>pvResult</em> é interpretado como um <a href="gg269194(v=exchg.10).md">JET_COLUMNBASE</a>, exceto que esse <em>InfoLevel</em> indica que a coluna solicitada (<em>szColumName</em>) não é o nome da coluna de cadeia de caracteres, mas um ponteiro para um <a href="gg294104(v=exchg.10).md">JET_COLUMNID</a>.</p>
-<p><strong>Windows Vista:  </strong> Isso está disponível no Windows Vista e versões posteriores.</p></td>
+<p><strong>Windows Vista:</strong> isso está disponível no Windows Vista e versões posteriores.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_ColInfoGrbitNonDerivedColumnsOnly</p></td>
 <td><p>Retornar apenas colunas não derivadas (se a tabela for derivada de um modelo).</p>
 <p>Esse valor pode ser logicamente ou inserido no <em>InfoLevel</em>, quando o <em>InfoLevel</em> de base é JET_ColInfoList.</p>
-<p><strong>Windows Vista:  </strong> Esse valor é introduzido no Windows Vista.</p></td>
+<p><strong>Windows Vista:</strong> esse valor é introduzido no Windows Vista.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_ColInfoGrbitMinimalInfo</p></td>
 <td><p>Retorna apenas o nome da coluna e columnid de cada coluna.</p>
 <p>Esse valor pode ser logicamente ou inserido no <em>InfoLevel</em>, quando o <em>InfoLevel</em> de base é JET_ColInfoList.</p>
-<p><strong>Windows Vista:  </strong> Esse valor é introduzido no Windows Vista.</p></td>
+<p><strong>Windows Vista:</strong> esse valor é introduzido no Windows Vista.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_ColInfoGrbitSortByColumnid</p></td>
 <td><p>Classifique a lista de colunas retornada por ColumnID (o padrão é classificar a lista por nome de coluna).</p>
 <p>Esse valor pode ser logicamente ou inserido no <em>InfoLevel</em>, quando o <em>InfoLevel</em> de base é JET_ColInfoList.</p>
-<p><strong>Windows Vista:  </strong> Esse valor é introduzido no Windows Vista.</p></td>
+<p><strong>Windows Vista:</strong> esse valor é introduzido no Windows Vista.</p></td>
 </tr>
 </tbody>
 </table>
@@ -148,7 +148,7 @@ As seguintes opções podem ser definidas para este parâmetro:
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -215,19 +215,19 @@ Ao recuperar dados com JET_ColInfoList, JET_ColInfoListSortColumnid ou JET_ColIn
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
+<td><p>Declarado em Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
+<td><p>Use ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>
@@ -243,8 +243,8 @@ Ao recuperar dados com JET_ColInfoList, JET_ColInfoListSortColumnid ou JET_ColIn
 
 #### <a name="see-also"></a>Consulte Também
 
-[Erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md)  
-[Parâmetros de tratamento de erros](./error-handling-parameters.md)  
+[Erros extensíveis Armazenamento mecanismo](./extensible-storage-engine-errors.md)  
+[Parâmetros de tratamento de erro](./error-handling-parameters.md)  
 [JET_COLUMNBASE](./jet-columnbase-structure.md)  
 [JET_COLUMNDEF](./jet-columndef-structure.md)  
 [JET_COLUMNID](./jet-columnid.md)  

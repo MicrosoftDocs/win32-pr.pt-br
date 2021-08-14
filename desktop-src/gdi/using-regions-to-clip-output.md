@@ -1,25 +1,25 @@
 ---
-description: Esta seção contém um único exemplo que demonstra como você pode usar regiões para permitir que o usuário defina como uma parte da saída da área do cliente pode ser exibida. As regiões usadas para essa finalidade são chamadas de regiões de recorte.
+description: Esta seção contém um único exemplo que demonstra como você pode usar regiões para permitir que o usuário defina como uma parte da saída da área do cliente pode aparecer. As regiões usadas para essa finalidade são chamadas de regiões de recorte.
 ms.assetid: 78371180-e0b6-4d01-8c3b-751cfaa3ff03
-title: Usando regiões para saída de clipe
+title: Usando regiões para cortar a saída
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 86948e35972a0de61106ff77958b65adb0b5ef70
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1240251e1f2bcc65a7c082a021b34418a183b97bfd359231d17a09b5af485b5d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119360146"
 ---
-# <a name="using-regions-to-clip-output"></a>Usando regiões para saída de clipe
+# <a name="using-regions-to-clip-output"></a>Usando regiões para cortar a saída
 
-Esta seção contém um único exemplo que demonstra como você pode usar regiões para permitir que o usuário defina como uma parte da saída da área do cliente pode ser exibida. As regiões usadas para essa finalidade são chamadas de regiões de recorte.
+Esta seção contém um único exemplo que demonstra como você pode usar regiões para permitir que o usuário defina como uma parte da saída da área do cliente pode aparecer. As regiões usadas para essa finalidade são chamadas de regiões de recorte.
 
-O exemplo desta seção é obtido de um aplicativo que permite que um usuário Capture toda a área de trabalho como um bitmap e, em seguida, isole e salve uma parte dessa imagem como um. Arquivo BMP.
+O exemplo desta seção é retirado de um aplicativo que permite que um usuário capture toda a área de trabalho como um bitmap e, em seguida, isole e salve uma parte dessa imagem como um arquivo .BMP arquivo.
 
-Ao clicar em **definir a região do clipe** no menu do aplicativo, o usuário é capaz de selecionar uma região de recorte clicando com o botão esquerdo do mouse e arrastando o mouse. À medida que o usuário arrasta o mouse, o aplicativo desenha um retângulo que corresponde à nova região de recorte.
+Clicando em **Definir** Região de Recorte no menu do aplicativo, o usuário pode selecionar uma região de recorte clicando no botão esquerdo do mouse e arrastando o mouse. À medida que o usuário arrasta o mouse, o aplicativo desenha um retângulo que corresponde à nova região de recorte.
 
-Ao clicar em **clipe** no menu do aplicativo, o usuário é capaz de redesenhar a parte isolada da imagem dentro dos limites do retângulo especificado.
+Clicando em **Clip** no menu do aplicativo, o usuário pode redesenhar a parte isolada da imagem dentro dos limites do retângulo especificado.
 
 Esta seção fornece informações sobre os tópicos a seguir.
 

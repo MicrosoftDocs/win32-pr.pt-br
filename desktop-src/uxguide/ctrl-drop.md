@@ -1,22 +1,22 @@
 ---
 title: Caixas de combinação de listas suspensas
-description: Com uma lista ou caixa de combinação, os usuários fazem uma escolha entre uma lista de valores mutuamente exclusivos.
+description: Com uma lista suspensa ou uma caixa de combinação, os usuários fazem uma escolha entre uma lista de valores mutuamente exclusivos.
 ms.assetid: dbe88cf1-7946-4343-bc16-ce12be7ce205
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: ce9cbcac3495022edbb398bcbd78b35ac5265150
-ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
+ms.openlocfilehash: e74589da084a9f4c9f950336b3093452988052b57aba42e6a7a8f449f24a254f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111524570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966201"
 ---
-# <a name="drop-down-lists--combo-boxes"></a>Listas de listas & caixas de combinação
+# <a name="drop-down-lists--combo-boxes"></a>Listas suspensas & caixas de combinação
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
+> este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
 
-Com uma lista ou caixa de combinação, os usuários fazem uma escolha entre uma lista de valores mutuamente exclusivos. Os usuários podem escolher uma e apenas uma opção. Com uma lista de opções padrão, os usuários estão limitados às opções na lista, mas com uma caixa de combinação, eles podem inserir uma opção que não está na lista.
+Com uma lista suspensa ou uma caixa de combinação, os usuários fazem uma escolha entre uma lista de valores mutuamente exclusivos. Os usuários podem escolher uma e apenas uma opção. Com uma lista suspensa padrão, os usuários estão limitados a escolhas na lista, mas com uma caixa de combinação, eles podem inserir uma opção que não está na lista.
 
 ![captura de tela da caixa de combinação de tempo de lembrete ](images/ctrl-drop-image1.png)
 
@@ -25,13 +25,13 @@ Uma caixa de combinação típica.
 Os termos a seguir são importantes para entender conforme você lê este artigo:
 
 -   Uma caixa de listagem padrão é uma caixa que contém uma lista de vários itens, com vários itens visíveis.
--   Uma lista lista listada é uma lista na qual o item selecionado está sempre visível e os outros ficam visíveis sob demanda clicando em um botão de lista listada.
--   Uma caixa de combinação é uma combinação de uma caixa de [](ctrl-text-boxes.md)listagem padrão ou uma lista de listas e uma caixa de texto editável, permitindo que os usuários insiram um valor que não está na lista.
-    -   Uma lista lista listada editável é uma combinação de uma lista de listas e uma caixa de texto editável.
+-   Uma lista suspensa é uma lista na qual o item selecionado está sempre visível e os outros são visíveis sob demanda clicando em um botão suspenso.
+-   Uma caixa de combinação é uma combinação de uma caixa de listagem padrão ou uma lista suspensa e uma [caixa de texto](ctrl-text-boxes.md)editável, permitindo, assim, que os usuários insiram um valor que não esteja na lista.
+    -   Uma lista suspensa editável é uma combinação de uma lista suspensa e uma caixa de texto editável.
     -   Uma caixa de listagem editável é uma combinação de uma caixa de listagem padrão e uma caixa de texto editável.
 
 > [!Note]  
-> As diretrizes relacionadas [ao layout](vis-layout.md) são apresentadas em um artigo separado.
+> As diretrizes relacionadas ao [layout](vis-layout.md) são apresentadas em um artigo separado.
 
  
 
@@ -39,67 +39,67 @@ Os termos a seguir são importantes para entender conforme você lê este artigo
 
 Para decidir, considere estas perguntas:
 
--   **O controle é usado para escolher uma opção em uma lista de valores mutuamente exclusivos?** Se não, use outro controle. Para escolher várias opções, use uma lista [padrão](ctrl-list-boxes.md)de seleção múltipla, lista de caixas de seleção, construtor de lista ou adicionar/remover lista.
--   **Os comandos de opções são?** Em caso afirmado, use um [botão de menu](ctrl-command-buttons.md) ou um botão dividir. Use listas listadas e caixas de combinação para objetos (substantivos) ou atributos (adjetivos), mas não comandos (verbos).
--   **A lista apresenta dados, em vez de opções de programa?** De qualquer forma, uma lista ou caixa de combinação é uma opção adequada. Por outro lado, [os botões de](ctrl-radio-buttons.md) opção são adequados apenas para um pequeno número de opções de programa.
+-   **O controle é usado para escolher uma opção de uma lista de valores mutuamente exclusivos?** Se não, use outro controle. Para escolher várias opções, use uma lista de [seleção múltipla padrão](ctrl-list-boxes.md), lista de caixas de seleção, Construtor de listas ou adicionar/remover lista em vez disso.
+-   **São os comandos de opções?** Nesse caso, use um [botão de menu](ctrl-command-buttons.md) ou um botão de divisão em vez disso. Use listas suspensas e caixas de combinação para objetos (substantivos) ou atributos (adjetivos), mas não com comandos (verbos).
+-   **A lista apresenta dados, em vez de opções de programa?** De qualquer forma, uma lista suspensa ou caixa de combinação é uma opção adequada. Por outro lado, os [botões de opção](ctrl-radio-buttons.md) são adequados apenas para um pequeno número de opções de programa.
 
 **Listas suspensas**
 
--   **Há uma opção padrão recomendada para a maioria dos usuários na maioria das situações?** É muito mais importante ver a opção selecionada do que ver as alternativas? Considere usar uma listada se você não quiser incentivar os usuários a fazer alterações ocultando as alternativas. Caso não, considere botões de opção, uma lista de seleção única ou uma caixa de listagem editável, que dão mais ênfase às opções alternativas.
+-   **Há uma opção padrão que é recomendada para a maioria dos usuários na maioria das situações?** Está vendo a opção selecionada muito mais importante do que ver as alternativas? Considere usar uma lista suspensa se você não quiser encorajar os usuários a fazer alterações ocultando as alternativas. Caso contrário, considere os botões de opção, uma lista de seleção única ou uma caixa de listagem editável, que fornece mais ênfase às opções alternativas.
 
-    ![captura de tela da mais alta qualidade como botão padrão ](images/ctrl-drop-image2.png)
+    ![captura de tela da qualidade mais alta como botão padrão ](images/ctrl-drop-image2.png)
 
-    Neste exemplo, a qualidade de cor mais alta é a melhor opção para a maioria dos usuários, portanto, uma listada é uma boa opção para fazer downplay das alternativas.
+    Neste exemplo, a qualidade de cor mais alta é a melhor opção para a maioria dos usuários; portanto, uma lista suspensa é uma boa opção para minimizar as alternativas.
 
--   **Você deseja chamar a atenção para a opção?** Se sim, considere botões de opção, uma lista de seleção única ou uma caixa de listagem editável, que tendem a chamar mais atenção, ocupando mais espaço na tela. Como as listas listadas são compactas, elas são boas opções para opções que você deseja subemfasar.
--   **O espaço na tela está em um premium?** Se sim, use uma listada porque o espaço de tela usado é fixo e independente do número de opções.
--   **Há outras listas listadas na janela?** Se sim, considere o uso de uma lista de listas para consistência.
+-   **Deseja chamar a atenção para a opção?** Nesse caso, considere os botões de opção, uma lista de seleção única ou uma caixa de listagem editável, que tende a chamar mais atenção ao usar mais espaço na tela. Como as listas suspensas são compactos, são boas opções para as opções que você deseja enfatizar.
+-   **O espaço na tela é Premium?** Nesse caso, use uma lista suspensa porque o espaço da tela usado é fixo e independente do número de opções.
+-   **Há outras listas suspensas na janela?** Nesse caso, considere usar uma lista suspensa para fins de consistência.
 
-**Listas de listas listadas editáveis**
+**Listas suspensas editáveis**
 
-Além dos princípios fornecidos apenas para listas listadas, o seguinte também se aplica:
+Além dos princípios que acabou de ser fornecido para listas suspensas, o seguinte também se aplica:
 
--   **As opções possíveis estão restritas?** Em caso afirmado, use uma lista de espera normal. As caixas de combinação são para entrada irr pouco restrita, na qual os usuários talvez precisem inserir um valor que não está atualmente na lista. Como a entrada não é restrita, se os usuários inserirem um texto que não é válido, você deverá tratar o erro com uma mensagem de erro.
--   **Você pode enumerar as opções mais prováveis com antecedência?** Caso contrário, use uma caixa de texto.
--   **A lista lista listada está sendo usada para listar a entrada do usuário anterior?** A menos que os usuários precisem revisar a lista completa de entrada anterior, use uma caixa de texto com a opção de conclusão automática.
+-   **As opções possíveis são restritas?** Em caso afirmativo, use uma lista suspensa normal. As caixas de combinação são para entrada irrestrita, na qual os usuários podem precisar inserir um valor que não esteja na lista no momento. Como a entrada não é restringida, se os usuários inserirem texto que não seja válido, você deverá tratar o erro com uma mensagem de erro.
+-   **Você pode enumerar as opções mais prováveis com antecedência**? Caso contrário, use uma caixa de texto.
+-   **A lista suspensa está sendo usada para listar a entrada do usuário anterior?** A menos que os usuários precisem examinar a lista completa de entradas anteriores, use uma caixa de texto com a opção preenchimento automático em vez disso.
 
-    ![captura de tela da caixa de diálogo Executar com a lista lista listada ](images/ctrl-drop-image3.png)
+    ![captura de tela da caixa de diálogo Executar com lista suspensa ](images/ctrl-drop-image3.png)
 
-    Neste exemplo, os usuários talvez precisem revisar suas entradas anteriores, portanto, uma lista de listas listadas editáveis é uma boa opção.
+    Neste exemplo, os usuários podem precisar revisar sua entrada anterior, portanto, uma lista suspensa editável é uma boa opção.
 
-    ![captura de tela do outlook para linha e conclusão automática ](images/ctrl-drop-image4.png)
+    ![captura de tela do Outlook para linha e preenchimento automático ](images/ctrl-drop-image4.png)
 
-    Neste exemplo, uma caixa de texto com auto-complete é uma boa opção.
+    Neste exemplo, uma caixa de texto com preenchimento automático é uma boa opção.
 
--   **Os usuários precisarão de assistência para selecionar valores válidos?** Em caso afirmado, use uma caixa de texto com [um botão Procurar.](ctrl-command-buttons.md)
+-   **Os usuários precisarão de ajuda para selecionar valores válidos?** Em caso afirmativo, use uma caixa de texto com um [botão procurar](ctrl-command-buttons.md) .
 
-    ![captura de tela do outlook para o botão de linha e procura ](images/ctrl-drop-image5.png)
+    ![captura de tela do Outlook para o botão de linha e de procura ](images/ctrl-drop-image5.png)
 
-    Neste exemplo, os usuários podem clicar em "Para" para ajudá-los a selecionar valores válidos.
+    Neste exemplo, os usuários podem clicar em "para" para ajudá-los a selecionar valores válidos.
 
--   **É importante incentivar os usuários a revisar as opções alternativas ou convidar alterações?** Em caso afirmaível, considere usar uma caixa de listagem editável. Com uma lista de listas listadas editáveis, os usuários não estarão cientes das alternativas até que a lista seja descartado.
--   **Os usuários precisam localizar um item rapidamente em uma lista grande?** (Somente Win32) Em caso afirmativos, use uma caixa de combinação porque os usuários podem selecionar um item digitando seu nome completo. Por outro lado, a lista de listas listadas do Win32 seleciona itens baseados apenas no último caractere digitado (portanto, digitar "Jun" em uma lista de meses corresponderia a novembro, não junho). Nesse caso, use uma caixa de combinação mesmo que as opções possíveis sejam restritas.
+-   **É importante encorajar os usuários a revisarem as opções alternativas ou a alteração de convite?** Em caso afirmativo, considere usar uma caixa de listagem editável. Com uma lista suspensa editável, os usuários não vão estar cientes das alternativas até que a lista seja descartada.
+-   **Os usuários precisam localizar um item rapidamente em uma lista grande?** (Somente Win32) Nesse caso, use uma caixa de combinação porque os usuários podem selecionar um item digitando seu nome completo. Por outro lado, a lista suspensa do Win32 seleciona itens com base apenas no último caractere digitado (portanto, digitar "Jun" em uma lista de meses corresponde a novembro, e não a junho). Nesse caso, use uma caixa de combinação mesmo que as opções possíveis sejam restritas.
 
 **Caixas de listagem editáveis**
 
--   **As opções possíveis estão restritas?** Em caso afirmado, use uma lista de seleção única ou uma lista de opções normal. As caixas de combinação são para entrada irr pouco restrita, em que os usuários talvez precisem inserir um valor que não está atualmente na lista. Como a entrada não é restrita, se os usuários inserirem um texto que não é válido, você deverá tratar o erro com uma mensagem de erro.
+-   **As opções possíveis são restritas?** Nesse caso, use uma lista de seleção única ou uma lista suspensa normal em vez disso. As caixas de combinação são para entrada irrestrita, em que os usuários talvez precisem inserir um valor que não esteja na lista no momento. Como a entrada não é restringida, se os usuários digitarem texto que não é válido, você deverá tratar o erro com uma mensagem de erro.
 -   **Você pode enumerar as opções mais prováveis com antecedência?** Caso contrário, use uma caixa de texto.
--   **É importante incentivar os usuários a revisar as opções alternativas ou convidar alterações?** Caso contrário, considere uma lista de listas listadas editáveis.
--   **Você deseja chamar a atenção para a opção?** Caso contrário, considere uma lista de listas listadas editáveis. Como as listas listadas são compactas, elas são boas opções para opções que você deseja subemfasar.
--   **O espaço na tela está em um premium?** Em caso afirmaível, use uma lista de listas listadas editáveis porque o espaço da tela usado é fixo e independente do número de opções.
+-   **É importante encorajar os usuários a revisarem as opções alternativas ou a alteração de convite?** Caso contrário, considere uma lista suspensa editável em vez disso.
+-   **Deseja chamar a atenção para a opção?** Caso contrário, considere uma lista suspensa editável em vez disso. Como as listas suspensas são compactos, são boas opções para as opções que você deseja enfatizar.
+-   **O espaço na tela é Premium?** Nesse caso, use uma lista suspensa editável porque o espaço de tela usado é fixo e independente do número de opções.
 
-Para listas **listadas,** o número de itens na lista não é um fator na escolha do controle porque eles são dimensionadas de milhares de itens até um. As listas listadas editáveis são dimensionadas de milhares de itens para nenhum, porque os usuários podem inserir um valor que não está na lista. Como as listas listadas podem ser usadas para dados, o número de itens pode não ser conhecido com antecedência e talvez não possa ser garantido. **Sempre inclua pelo menos três itens em caixas de listagem editáveis para justificar o espaço adicional na tela.**
+Para listas suspensas, **o número de itens na lista não é um fator na escolha do controle** porque eles são dimensionados de milhares de itens até um todo. As listas suspensas editáveis redimensionam de milhares de itens para nenhum, porque os usuários podem inserir um valor que não está na lista. Como as listas suspensas podem ser usadas para dados, o número de itens pode não ser conhecido com antecedência e talvez não seja garantido. **Inclua sempre pelo menos três itens em caixas de listagem editáveis para justificar o espaço de tela adicional.**
 
 ## <a name="usage-patterns"></a>Padrões de uso
 
-As listas listadas e as caixas de combinação têm vários padrões de uso:
+Listas suspensas e caixas de combinação têm vários padrões de uso:
 
 
 
 |   Uso     |    Exemplo   |
 |-------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Lista de listas listadas** padrão, com um conjunto fixo de valores predeterminados. <br/>                                 | quando fechado, somente o item selecionado fica visível. quando os usuários clicam no botão de lista listada, todas as opções ficam visíveis. para alterar o valor, os usuários abrem a lista e clicam em outro valor.<br/> ![captura de tela da lista de menus, opções ocultas ](images/ctrl-drop-image6.png)<br/> neste exemplo, a lista está em seu estado normal.<br/> ![captura de tela da lista de menus, opções exibidas ](images/ctrl-drop-image7.png)<br/> Neste exemplo, a lista foi listada.<br/> |
-| **Lista de listas listadas de** visualização que visualiza os resultados da seleção para ajudar os usuários a escolher.<br/>             | ![captura de tela das opções de cor e texto ](images/ctrl-drop-image8.png)<br/> Nesses exemplos, as listas listadas listadas visualizam os resultados da seleção.<br/>                                                                                                                                                                                                                                                                                                                                           |
+| **Lista** suspensa uma lista suspensa padrão, com um conjunto fixo de valores predeterminados. <br/>                                 | quando fechado, somente o item selecionado fica visível. Quando os usuários clicarem no botão suspenso, todas as opções se tornarão visíveis. para alterar o valor, os usuários abrem a lista e clicam em outro valor.<br/> ![captura de tela da lista suspensa, opções ocultas ](images/ctrl-drop-image6.png)<br/> Neste exemplo, a lista está em seu estado normal.<br/> ![captura de tela da lista suspensa, opções exibidas ](images/ctrl-drop-image7.png)<br/> Neste exemplo, a lista foi descartada.<br/> |
+| **Visualização lista** suspensa uma lista suspensa que visualiza os resultados da seleção para ajudar os usuários a escolherem.<br/>             | ![captura de tela das opções de cor e texto ](images/ctrl-drop-image8.png)<br/> Nesses exemplos, as listas suspensas visualizam os resultados da seleção.<br/>                                                                                                                                                                                                                                                                                                                                           |
 | **Lista suspensa editável** uma caixa de combinação suspensa, que permite aos usuários inserir um valor que não esteja na lista suspensa.<br/> | ![aa511458. dropdownlists27 (en-US, msdn. 10) .png](images/ctrl-drop-image9.png)![captura de tela da caixa de combinação de tamanho de fonte editável ](images/ctrl-drop-image10.png)<br/> Exemplos de uma lista suspensa editável nos modos editar e descartar.<br/> Use esse controle quando desejar dar a flexibilidade de uma caixa de texto, mas quiser ajudar os usuários fornecendo uma lista conveniente de opções prováveis.<br/>                                                                                                   |
 | **Caixas de listagem editáveis** uma caixa de combinação regular, que permite aos usuários inserir um valor que não esteja na lista sempre visível. <br/> | ![captura de tela da lista suspensa de opções de fonte ](images/ctrl-drop-image11.png)<br/> Nesses exemplos, as caixas de listagem editáveis são sempre exibidas.<br/> Esse controle é uma opção melhor do que a lista suspensa editável quando é importante encorajar os usuários a revisarem as opções alternativas ou a alteração de convite.<br/>                                                                                                                                                                      |
 

@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 64e0fec72cf17a15dd1f7d984f108388fc423bf9
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 09c34890c1bd14c2bb161c8bc9dee5c6e121e9976fbfb953690807c5f3f6ed69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105815483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985686"
 ---
 # <a name="span-idvspixengineirunexperimentcallbackspanirunexperimentcallback-interface"></a><span id="vspixengine.irunexperimentcallback"></span>Interface IRunExperimentCallback
 
@@ -44,7 +44,7 @@ A interface **IRunExperimentCallback** tem esses métodos.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 

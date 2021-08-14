@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b9c3c973306d1861c8a0ec725aca9d00e2e8d569
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a979ad1a61e907bcc1d14b402b72999590909001e5214dca83e5920dceeac1bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119439816"
 ---
 # <a name="setpowerstate-method-of-the-cim_aggregatepsextent-class"></a>Método SetPowerState da classe CIM \_ AggregatePSExtent
 
@@ -102,7 +102,7 @@ Quando o estado de energia deve ser definido, seja como um valor de data/hora re
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará 0 (zero) se for bem-sucedido, 1 (um) se o *PowerState* e a solicitação de *tempo* especificados não forem suportados e outro valor se ocorrer algum outro erro.
 

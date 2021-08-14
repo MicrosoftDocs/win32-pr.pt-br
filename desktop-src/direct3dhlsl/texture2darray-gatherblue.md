@@ -1,5 +1,5 @@
 ---
-title: 'Métodos Texture2DArray:: Texture2DArray GatherBlue'
+title: Métodos Texture2DArray::Texture2DArray GatherBlue
 description: Amostra um Texture2DArray e retorna o componente azul.
 ms.assetid: aaaa5f14-c316-499a-bcf2-1ccb6bca2796
 keywords:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: ae32fb35dda8c445237e1cf6f928b30551e38c75
-ms.sourcegitcommit: 5724b38883e518ac565e1b266defa85ad0941bb2
+ms.openlocfilehash: 05f08bbc7b0faf4746451bad135be21785b459e6d2a61cb0b9034c3b4322c210
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "104989126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118787142"
 ---
-# <a name="texture2darraygatherblue-methods"></a>Métodos Texture2DArray:: GatherBlue
+# <a name="texture2darraygatherblue-methods"></a>Métodos Texture2DArray::GatherBlue
 
-Retorna os componentes azuis dos quatro valores de Texel de um [**Texture2DArray**](sm5-object-texture2darray.md)que seriam usados em uma operação de filtragem de bi-linear.
+Retorna os componentes azuis de quatro valores de texel de [**Texture2DArray**](sm5-object-texture2darray.md)que seriam usados em uma operação de filtragem bi-linear.
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -29,10 +29,10 @@ Retorna os componentes azuis dos quatro valores de Texel de um [**Texture2DArray
 
 | Método                                                                                                        | Descrição                                                                                                                                      |
 |:--------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GatherBlue (S, float, int)**](sm5-object-texture2darray-gatherblue.md)                                        | Retorna os componentes azuis dos quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear.<br/>                                 |
-| [**GatherBlue (S, float, int, uint)**](t2darray-gatherblue-s-float-int-uint-.md)                                  | Retorna os componentes azuis dos quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear, juntamente com o status de mapeamento de bloco.<br/> |
-| [**GatherBlue (S, float, Int2, Int2, Int2, Int2)**](t2array-gatherblue-s-float-int2-int2-int2-int2-.md)             | Retorna os componentes azuis dos quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear.<br/>                                 |
-| [**GatherBlue (S, float, Int2, Int2, Int2, Int2, uint)**](t2darray-gatherblue-s-float-int2-int2-int2-int2-uint-.md)  | Retorna os componentes azuis dos quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear, juntamente com o status de mapeamento de bloco.<br/> |
+| [**GatherBlue(S, float,int)**](sm5-object-texture2darray-gatherblue.md)                                        | Retorna os componentes azuis dos quatro valores de texel que seriam usados em uma operação de filtragem bi-linear.<br/>                                 |
+| [**GatherBlue(S,float,int,uint)**](t2darray-gatherblue-s-float-int-uint-.md)                                  | Retorna os componentes azuis dos quatro valores de texel que seriam usados em uma operação de filtragem bi-linear, juntamente com o status de mapeamento de peças.<br/> |
+| [**GatherBlue(S,float,int2, int2, int2,int2)**](t2array-gatherblue-s-float-int2-int2-int2-int2-.md)             | Retorna os componentes azuis dos quatro valores de texel que seriam usados em uma operação de filtragem bi-linear.<br/>                                 |
+| [**GatherBlue(S,float,int2, int2, int2, int2,uint)**](t2darray-gatherblue-s-float-int2-int2-int2-int2-uint-.md)  | Retorna os componentes azuis dos quatro valores de texel que seriam usados em uma operação de filtragem bi-linear, juntamente com o status de mapeamento de peças.<br/> |
 
 
 

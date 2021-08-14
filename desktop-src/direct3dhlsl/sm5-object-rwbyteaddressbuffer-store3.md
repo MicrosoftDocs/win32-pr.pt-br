@@ -1,9 +1,9 @@
 ---
-title: 'Função RWByteAddressBuffer:: Store3'
+title: Função RWByteAddressBuffer::Store3
 description: Define três valores.
 ms.assetid: eaf12b5a-c9c6-413a-9646-3d14e7825460
 keywords:
-- HLSL da função Store3
+- Função Store3 HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fd27684c3adf506e086fb17f789272c6b263ab20
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: a752ada16db4800e6160ad7b1c2c0b480deee75ff760d0c7f270dac36d1cff51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104293461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118790058"
 ---
 # <a name="store3-function"></a>Função Store3
 
@@ -28,8 +28,8 @@ Define três valores.
 
 ``` syntax
 void Store3(
-  in uint address,
-  in uint3 values
+  in uint address,
+  in uint3 values
 );
 ```
 
@@ -37,7 +37,7 @@ void Store3(
 
 <dl> <dt>
 
-*endereço* \[ no\]
+*endereço* \[ Em\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -46,7 +46,7 @@ O endereço de entrada em bytes, que deve ser um múltiplo de 4.
 
 </dd> <dt>
 
-*valores* \[ de no\]
+*valores* \[ Em\]
 </dt> <dd>
 
 Tipo: **uint3**
@@ -65,13 +65,13 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -83,9 +83,9 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

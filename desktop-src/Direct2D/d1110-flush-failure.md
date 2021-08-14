@@ -3,7 +3,7 @@ title: Falha de liberação de D1110
 ms.assetid: 44f122b0-08e3-4f63-a575-0f3619144823
 description: Uma chamada de liberação por um destino de renderização falhou
 keywords:
-- D1110 de falha de liberação de Direct2D
+- Falha de liberação de D1110 Direct2D
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 721fb27e8cfd5e83f94b93079ee66e4a1c35992d
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 12d6a990d3d65c1a711825e6d45720f3df977ca78efb16c1d39bb9b2251c53b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119758146"
 ---
 # <a name="d1110-flush-failure"></a>D1110: falha de liberação
 
@@ -122,11 +122,11 @@ DEBUG WARNING - A Flush call by a render target failed [88990001]. Tags [0, 0].
 
 ## <a name="possible-causes"></a>Possíveis causas
 
-A [**chamada Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) pode falhar por um dos dois motivos. Ele pode falhar porque o método foi chamado fora da chamada [**BeginDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw)EndDraw ou pode falhar porque houve um erro produzido por uma das operações de destino de renderização que foram processadas desde a última chamada flush ou / [](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) **EndDraw.**  Para corrigir o problema, o aplicativo deve determinar a causa do erro e tomar a ação apropriada.
+A chamada de [**liberação**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) pode falhar por uma das duas razões. Ele pode falhar porque o método foi chamado fora da chamada [**BeginDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw) / [**EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) , ou pode falhar porque houve um erro produzido por uma das operações de destino render que foram processadas desde a última chamada **flush** ou **EndDraw** . Para corrigir o problema, o aplicativo deve determinar a causa do erro e executar a ação apropriada.
 
 ## <a name="fixes"></a>Correções
 
-Há muitos motivos pelos quais uma [**chamada flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) pode falhar. O aplicativo deve determinar a causa do erro e tomar a ação apropriada.
+Há muitas razões pelas quais uma chamada de [**liberação**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) pode falhar. O aplicativo deve determinar a causa do erro e executar a ação apropriada.
 
  
 

@@ -1,37 +1,37 @@
 ---
-title: Início rápido do Direct2D
-description: Resume as etapas necessárias para desenhar com Direct2D e fornece código de exemplo.
+title: Direct2D TUTORIAIS
+description: resume as etapas necessárias para desenhar com Direct2D e fornece código de exemplo.
 ms.assetid: 19d9ad76-b1e3-449f-8582-e00287b05874
 keywords:
 - Direct2D, exemplo de código de retângulo de desenho
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa59d7da057a7a9922e270d83937307762b06a40
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1f9c4f7ee6ca99feb3cf7169a59ce73ff3b8f8c62c08ddad88b9e5acf5d9a814
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119260057"
 ---
-# <a name="direct2d-quickstart"></a>Início rápido do Direct2D
+# <a name="direct2d-quickstart"></a>Direct2D TUTORIAIS
 
-Direct2D é uma API de modo imediato, de código nativo para a criação de gráficos 2D. Este tópico ilustra como usar o Direct2D em um aplicativo Win32 típico para desenhar um **HWND**.
+Direct2D é uma API de modo imediato, de código nativo para criar gráficos 2d. este tópico ilustra como usar Direct2D em um aplicativo Win32 típico para desenhar em um **HWND**.
 
 > [!Note]  
-> Se você quiser criar um aplicativo da Windows Store que usa Direct2D, consulte o tópico [início rápido do Direct2D para Windows 8](direct2d-quickstart-with-device-context.md) .
+> se você quiser criar um aplicativo de Windows Store que usa Direct2D, consulte o tópico guia de [início rápido do Direct2D para Windows 8](direct2d-quickstart-with-device-context.md) .
 
- 
+ 
 
 Este tópico contém as seguintes seções:
 
 -   [Desenhando um retângulo simples](#drawing-a-simple-rectangle)
--   [Etapa 1: incluir o cabeçalho Direct2D](#step-1-include-direct2d-header)
+-   [etapa 1: incluir cabeçalho de Direct2D](#step-1-include-direct2d-header)
 -   [Etapa 2: criar um ID2D1Factory](#step-2-create-an-id2d1factory)
 -   [Etapa 3: criar um ID2D1HwndRenderTarget](#step-3-create-an-id2d1hwndrendertarget)
 -   [Etapa 4: criar um pincel](#step-4-create-a-brush)
 -   [Etapa 5: desenhar o retângulo](#step-5-draw-the-rectangle)
 -   [Etapa 6: liberar recursos](#step-6-release-resources)
--   [Criar um aplicativo Direct2D simples](#create-a-simple-direct2d-application)
+-   [criar um aplicativo Direct2D simples](#create-a-simple-direct2d-application)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="drawing-a-simple-rectangle"></a>Desenhando um retângulo simples
@@ -90,15 +90,15 @@ switch(message)
 
 
 
-O código para desenhar o mesmo retângulo com Direct2D é semelhante: ele cria recursos de desenho, descreve uma forma para desenhar, desenha a forma e libera os recursos de desenho. As seções a seguir descrevem cada uma dessas etapas em detalhes.
+o código para desenhar o mesmo retângulo com Direct2D é semelhante: ele cria recursos de desenho, descreve uma forma para desenhar, desenha a forma e libera os recursos de desenho. As seções a seguir descrevem cada uma dessas etapas em detalhes.
 
-## <a name="step-1-include-direct2d-header"></a>Etapa 1: incluir o cabeçalho Direct2D
+## <a name="step-1-include-direct2d-header"></a>etapa 1: incluir cabeçalho de Direct2D
 
 Além dos cabeçalhos necessários para um aplicativo Win32, inclua o cabeçalho d2d1. h.
 
 ## <a name="step-2-create-an-id2d1factory"></a>Etapa 2: criar um ID2D1Factory
 
-Uma das primeiras coisas que qualquer exemplo de Direct2D faz é criar um [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory).
+uma das primeiras coisas que qualquer Direct2D exemplo faz é criar um [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory).
 
 
 ```C++
@@ -111,7 +111,7 @@ HRESULT hr = D2D1CreateFactory(
 
 
 
-A interface [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) é o ponto de partida para usar Direct2D; Use um **ID2D1Factory** para criar recursos do Direct2D.
+A interface [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) é o ponto de partida para usar Direct2D; use um **ID2D1Factory** para criar Direct2D recursos.
 
 Ao criar uma fábrica, você pode especificar se ela é de vários ou de thread único. (Para obter mais informações sobre fábricas com vários threads, consulte os comentários na [**página de referência do ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory).) Este exemplo cria uma fábrica de thread único.
 
@@ -178,9 +178,9 @@ if (SUCCEEDED(hr))
 
 Um pincel é um objeto que pinta uma área, como o traço de uma forma ou o preenchimento de uma geometria. O pincel neste exemplo pinta uma área com uma cor sólida predefinida, preta.
 
-O Direct2D também fornece outros tipos de pincéis: pincéis de gradiente para pintar gradientes lineares e radiais e um pincel de bitmap para pintura com bitmaps e padrões.
+Direct2D também fornece outros tipos de pincéis: pincéis de gradiente para pintar gradientes lineares e radiais e um pincel de bitmap para pintura com bitmaps e padrões.
 
-Algumas APIs de desenho fornecem canetas para desenhar contornos e pincéis para preencher formas. Direct2D é diferente: ele não fornece um objeto Pen, mas usa um pincel para desenhar contornos e preencher formas. Ao desenhar contornos, use a interface [**ID2D1StrokeStyle**](/windows/win32/api/d2d1/nn-d2d1-id2d1strokestyle) com um pincel para controlar as operações de traçado de caminho.
+Algumas APIs de desenho fornecem canetas para desenhar contornos e pincéis para preencher formas. Direct2D é diferente: ele não fornece um objeto pen, mas usa um pincel para desenhar contornos e preencher formas. Ao desenhar contornos, use a interface [**ID2D1StrokeStyle**](/windows/win32/api/d2d1/nn-d2d1-id2d1strokestyle) com um pincel para controlar as operações de traçado de caminho.
 
 Um pincel só pode ser usado com o destino de renderização que o criou e com outros destinos de renderização no mesmo domínio de recurso. Em geral, você deve criar pincéis uma vez e remantê-las para a vida útil do destino de renderização que as criou. [**ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1solidcolorbrush) é a exceção solitário; Como é relativamente barato criar, você pode criar um **ID2D1SolidColorBrush** toda vez que desenhar um quadro, sem qualquer impacto perceptível no desempenho. Você também pode usar um único **ID2D1SolidColorBrush** e apenas alterar sua cor toda vez que usá-lo.
 
@@ -223,7 +223,7 @@ SafeRelease(pBlackBrush);
 
 
 
-Quando o aplicativo terminar de usar os recursos do Direct2D (como quando está prestes a sair), libere a fábrica do Direct2D.
+quando o aplicativo tiver terminado de usar Direct2D recursos (como quando está prestes a sair), libere a fábrica de Direct2D.
 
 
 ```C++
@@ -233,17 +233,17 @@ SafeRelease(pD2DFactory);
 
 
 
-## <a name="create-a-simple-direct2d-application"></a>Criar um aplicativo Direct2D simples
+## <a name="create-a-simple-direct2d-application"></a>criar um aplicativo Direct2D simples
 
-O código neste tópico mostra os elementos básicos de um aplicativo Direct2D. Para resumir, o tópico omite a estrutura do aplicativo e o código de tratamento de erros que é característica de um aplicativo bem escrito. Para obter um passo a passo mais detalhado que mostra o código completo para criar um aplicativo Direct2D simples e demonstra as melhores práticas de design, consulte [criando um aplicativo Direct2D simples](direct2d-quickstart.md).
+o código neste tópico mostra os elementos básicos de um aplicativo Direct2D. Para resumir, o tópico omite a estrutura do aplicativo e o código de tratamento de erros que é característica de um aplicativo bem escrito. para obter um passo a passo mais detalhado que mostra o código completo para criar um aplicativo Direct2D simples e demonstra as melhores práticas de design, consulte [criando um aplicativo simples de Direct2D](direct2d-quickstart.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Criando um aplicativo Direct2D simples](direct2d-quickstart.md)
+[criando um aplicativo simples de Direct2D](direct2d-quickstart.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

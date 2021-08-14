@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_TABLECREATE. rgcolumncreate'
-title: Propriedade JET_TABLECREATE. rgcolumncreate
+description: 'Saiba mais sobre: JET_TABLECREATE.rgcolumncreate property'
+title: JET_TABLECREATE.rgcolumncreate propriedade
 TOCTitle: 'rgcolumncreate property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_TABLECREATE.rgcolumncreate
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_tablecreate.rgcolumncreate(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 97392c9dd89502dc713f4fa7dd2c79de90360930
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cbbdea76b79bf650009a7e667c4a5136697079569f6d43f9a93f11febba00369
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119472856"
 ---
-# <a name="jet_tablecreatergcolumncreate-property"></a>Propriedade JET_TABLECREATE. rgcolumncreate
+# <a name="jet_tablecreatergcolumncreate-property"></a>JET_TABLECREATE.rgcolumncreate propriedade
 
-Obtém ou define uma matriz de informações de criação de coluna, do tipo [JET_COLUMNCREATE](./jet-columncreate-class.md).
+Obtém ou define uma matriz de informações de criação de coluna, do [tipo JET_COLUMNCREATE](./jet-columncreate-class.md).
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public JET_COLUMNCREATE[] rgcolumncreate { get; set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Escreva \[\]  
+Tipo: \[\]  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_TABLECREATE](./jet-tablecreate-class.md)
+[JET_TABLECREATE classe](./jet-tablecreate-class.md)
 
-[Membros do JET_TABLECREATE](./jet-tablecreate-members.md)
+[JET_TABLECREATE membros](./jet-tablecreate-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -4,12 +4,12 @@ description: A API WinSNMP fornece várias funções de utilitário WinSNMP que 
 ms.assetid: 6ca5f5bc-aa49-4826-97a7-2ea4a882dc2d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f9745cb8018b6833a1ef0569e69f201c621aa38e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 362adbf445901f25307452d67c313ef2a8d0ac5aea038ebfcf61863a72370cd4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104453696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119009414"
 ---
 # <a name="managing-object-identifiers"></a>Gerenciando identificadores de objeto
 
@@ -25,9 +25,9 @@ A função [**SnmpOidCompare**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpoidc
 
 Para obter informações adicionais sobre como gerenciar a memória alocada para identificadores de objeto, consulte [alocando objetos de memória WinSNMP](allocating-winsnmp-memory-objects.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 854a6304-5d62-4f00-9366-8c2244568250
 title: Aplicativo WpdApiSample
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87c384d542c9b93ac733c91ee249938d744e40ca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ef1741f2cad07e28bee514cf6109cdbbf7347966e1a8184a88a11936cbccdcc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963465"
 ---
 # <a name="wpdapisample-application"></a>Aplicativo WpdApiSample
 

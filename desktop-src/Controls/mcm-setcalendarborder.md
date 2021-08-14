@@ -3,7 +3,7 @@ title: Mensagem de MCM_SETCALENDARBORDER (commctrl. h)
 description: Define o tamanho da borda, em pixels. Você pode enviar essa mensagem explicitamente ou usando a macro calendário mensal \_ SetCalendarBorder.
 ms.assetid: 2a64a08f-a1fb-47a8-8f09-725807e87a03
 keywords:
-- Controles de MCM_SETCALENDARBORDER de mensagens do Windows
+- controles de Windows de mensagem de MCM_SETCALENDARBORDER
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 09b870346e8d8b475833657dd83141ba1fe11715
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 08e020ad282ce21555e6c3a74198a0034013ac1d7cfac8f4eb68e52137e5f684
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697196"
 ---
 # <a name="mcm_setcalendarborder-message"></a>\_Mensagem MCM SETCALENDARBORDER
 
@@ -43,7 +43,7 @@ Número de pixels do tamanho da borda.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Não usado.
 
@@ -53,9 +53,9 @@ Não usado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

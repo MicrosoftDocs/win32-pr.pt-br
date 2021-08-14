@@ -1,6 +1,6 @@
 ---
-description: Método Shell::WindowScher – exibe as janelas abertas em uma pilha 3D que você pode inverter.
-title: Método Shell::WindowScher (Shldisp.h)
+description: 'Método Shell:: WindowSwitcher – exibe as janelas abertas em uma pilha 3D que você pode percorrer.'
+title: Método Shell::WindowSwitcher (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shldisp.h
 ms.assetid: 89825430-C28E-4d38-A8F7-69A1408DDD73
-ms.openlocfilehash: 04d54f4262dbe589ab753fd929bc02fcf7bee0d4
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 9b07ccfa0db23cf7d2092f87893b0bf9b0974728ba7d95923b7f9b4bb0f9e16f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118047708"
 ---
-# <a name="shellwindowswitcher-method"></a>Método Shell::WindowScher
+# <a name="shellwindowswitcher-method"></a>Método Shell:: WindowSwitcher
 
-Exibe as janelas abertas em uma pilha 3D que você pode inverter.
+Exibe as janelas abertas em uma pilha 3D que você pode percorrer.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,7 +45,7 @@ Sub WindowSwitcher()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 
@@ -61,10 +61,10 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente \[ aplicativos da área de trabalho do Windows Vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | Somente aplicativos da área de trabalho do Windows Server 2008 \[\]<br/>                                   |
-| parâmetro<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>   |
+| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl> |
 
 
 

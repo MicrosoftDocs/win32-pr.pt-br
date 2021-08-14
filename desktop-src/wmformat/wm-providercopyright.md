@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 07e61496b42a7311c57f776a58caaf7f8d21c1db
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 1fd4a984128a05747515eb0bfb868ba1f7c491c29f00793b30d03c3287f8b66c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105798068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118027852"
 ---
 # <a name="wmprovidercopyright"></a>WM/ProviderCopyright
 
@@ -42,9 +42,9 @@ Nenhum.
 [**Lista de Atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

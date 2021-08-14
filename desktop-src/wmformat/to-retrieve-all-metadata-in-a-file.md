@@ -3,24 +3,24 @@ title: Para recuperar todos os metadados em um arquivo
 description: Para recuperar todos os metadados em um arquivo
 ms.assetid: c1de58d7-25a8-4416-9ee9-6ebe641ed640
 keywords:
-- SDK do Windows Media Format, Recuperando metadados
-- ASF (Advanced Systems Format), Recuperando metadados
-- ASF (formato de sistemas avançados), Recuperando metadados
+- Windows SDK de Formato de Mídia, recuperando metadados
+- ASF (Advanced Systems Format), recuperando metadados
+- ASF (Formato de Sistemas Avançados), recuperando metadados
 - metadados, recuperando todos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc5d63a27cd4455d8d39cebee894dfbfc8d5bf2c
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: fab81f151cbb661cc7769128e2d4371dd0b24869317d1888769ed66a60de86f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "105770044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807466"
 ---
 # <a name="to-retrieve-all-metadata-in-a-file"></a>Para recuperar todos os metadados em um arquivo
 
-O exemplo de código a seguir é uma função que exibe todos os metadados em um arquivo. Para usar a função, você deve passar um ponteiro para a interface [**IWMHeaderInfo3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo3) de um objeto editor de metadados, objeto leitor, objeto leitor síncrono ou objeto gravador. Você também deve incluir o arquivo de cabeçalho stdio. h em algum lugar em seu projeto. Para obter mais informações sobre como usar este exemplo, consulte [usando os exemplos de código](using-the-code-examples.md).
+O exemplo de código a seguir é uma função que exibe todos os metadados em um arquivo. Para usar a função , você deve passar um ponteiro para a interface [**IWMHeaderInfo3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo3) de um objeto do editor de metadados, objeto de leitor, objeto de leitor síncrono ou objeto de autor. Você também deve incluir o arquivo de header Stdio.h em algum lugar do projeto. Para obter mais informações sobre como usar este exemplo, consulte [Usando os exemplos de código](using-the-code-examples.md).
 
-Para maior clareza, este exemplo não exibe os valores dos atributos Binary e GUID. Para atributos binários, você deve verificar se o nome do atributo corresponde a qualquer um dos atributos de metadados complexos conhecidos. Se tiver, você deverá Formatar a saída de acordo com a estrutura usada para esse atributo. Da mesma forma, os valores de atributo GUID podem ser exibidos de várias maneiras. Você pode optar por exibir cada membro da estrutura um de cada vez ou converter a estrutura em uma cadeia de caracteres e exibi-la como um valor.
+Para maior clareza, este exemplo não exibe os valores de atributos binários e GUID. Para atributos binários, você deve verificar se o nome do atributo corresponde a qualquer um dos atributos de metadados complexos conhecidos. Se isso acontecer, você deverá formatar a saída de acordo com a estrutura usada para esse atributo. Da mesma forma, os valores de atributo GUID podem ser exibidos de várias maneiras. Você pode optar por exibir cada membro da estrutura um de cada vez ou converter a estrutura em uma cadeia de caracteres e exibi-la como um valor.
 
 
 ```C++
@@ -139,9 +139,9 @@ Exit:
 [**Recuperando atributos de metadados**](retrieving-metadata-attributes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

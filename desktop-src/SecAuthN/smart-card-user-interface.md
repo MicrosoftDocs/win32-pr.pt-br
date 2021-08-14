@@ -4,12 +4,12 @@ ms.assetid: a64a617a-b2ae-471f-a88f-a73f0fc3a791
 title: Interface do usuário do cartão inteligente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fc558446516149529e9a98d28aa9fe94f80b2777
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b3b94a82889d196b01f8a1d1ca6af7b4788398d9508accc2d5ca245f7929d9d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105751086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118917326"
 ---
 # <a name="smart-card-user-interface"></a>Interface do usuário do cartão inteligente
 
@@ -28,14 +28,14 @@ A seguir, há duas maneiras de usar a caixa de diálogo comum. Ambos supõem que
 
 1.  Declare uma variável do tipo **OPENCARDNAME**.
 2.  Forneça informações suficientes na caixa de diálogo comum para restringir a pesquisa de um cartão inteligente que o aplicativo de chamada está procurando. Isso inclui a especificação de **lpstrGroupNames**, **lpstrCardNames** e **rgguidInterfaces**.
-3.  Crie as funções de retorno de chamada **conectar**, **verificar** e **Desconectar** e defina os membros de dados **lpfnConnect**, **lpfnCheck** e **lpfnDisconnect** adequadamente.
+3.  crie as funções de retorno de chamada **Conexão**, **Check** e **Disconnect** e defina os membros de dados **lpfnConnect**, **lpfnCheck** e **lpfnDisconnect** adequadamente.
     > [!Note]  
     > Todas as três funções e membros devem estar disponíveis ao usar a caixa de diálogo comum dessa maneira.
 
      
 
 4.  Chame a função de caixa de diálogo [**GetOpenCardName**](/windows/desktop/api/Winscard/nf-winscard-getopencardnamea) comum.
-5.  A caixa de diálogo comum irá procurar os cartões solicitados. Se uma [*cadeia de caracteres ATR*](../secgloss/a-gly.md) ou nome do cartão de correspondência for encontrada, as funções de retorno de chamada **conectar**, **verificar** e **Desconectar** serão chamadas em sequência. Se um cartão passar a rotina de **verificação** (ou seja, o retorno de chamada de **verificação** retornar **true**), esse cartão será realçado na exibição para o usuário.
+5.  A caixa de diálogo comum irá procurar os cartões solicitados. se for encontrada uma cadeia de [*caracteres ATR*](../secgloss/a-gly.md) ou nome de cartão de correspondência, as funções de retorno de chamada **Conexão**, **verificar** e **desconectar** serão chamadas em sequência. Se um cartão passar a rotina de **verificação** (ou seja, o retorno de chamada de **verificação** retornar **true**), esse cartão será realçado na exibição para o usuário.
     > [!Note]  
     > Se vários nomes de cartão forem fornecidos, o primeiro leitor que contém um dos cartões solicitados e passará a rotina de **verificação** será o cartão selecionado.
 

@@ -1,28 +1,28 @@
 ---
-description: A ferramenta de configuração de certificado do Microsoft Windows HTTP Services (WinHTTP), &\# 0034; WinHttpCertCfg.exe&\# 0034;, permite que os administradores instalem e configurem certificados de cliente em qualquer repositório de certificados que possa ser acessado pela conta do Gerenciador de aplicativos da Web do servidor da Internet (IWAM). A ferramenta também elimina a necessidade de fazer qualquer coisa especial para contas como a conta IWAM para obter acesso aos certificados ao usar páginas de Active Server (ASP).
+description: a ferramenta de configuração de certificado do Microsoft Windows HTTP Services (WinHTTP), &\# 0034; WinHttpCertCfg.exe&\# 0034;, permite que os administradores instalem e configurem certificados de cliente em qualquer repositório de certificados que possa ser acessado pela conta do gerenciador de aplicativos da Web do servidor da Internet (IWAM). A ferramenta também elimina a necessidade de fazer qualquer coisa especial para contas como a conta IWAM para obter acesso aos certificados ao usar páginas de Active Server (ASP).
 ms.assetid: e4c2afc2-0fd3-4bdd-812e-f112958e1576
 title: WinHttpCertCfg.exe, uma ferramenta de configuração de certificado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4250cd717b9f611f4f23f17c93069760c283c97
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 51ce9978f6e2ffcafa1357a45dbeff80c12bf0e6ea2f7f3fb9656376b33dfb23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117743794"
 ---
 # <a name="winhttpcertcfgexe-a-certificate-configuration-tool"></a>WinHttpCertCfg.exe, uma ferramenta de configuração de certificado
 
-A ferramenta de configuração de certificado do [Microsoft Windows http Services (WinHTTP)](about-winhttp.md) , "WinHttpCertCfg.exe", permite que os administradores instalem e configurem certificados de cliente em qualquer [*repositório de certificados*](glossary.md) que possa ser acessado pela conta do Gerenciador de aplicativos da Web do servidor da Internet (IWAM). A ferramenta também elimina a necessidade de fazer qualquer coisa especial para contas como a conta IWAM para obter acesso aos certificados ao usar páginas de Active Server (ASP).
+a ferramenta de configuração de certificado do [Microsoft Windows HTTP Services (WinHTTP)](about-winhttp.md) , "WinHttpCertCfg.exe", permite que os administradores instalem e configurem certificados de cliente em qualquer [*repositório de certificados*](glossary.md) que possa ser acessado pela conta do gerenciador de aplicativos da Web do servidor da Internet (IWAM). A ferramenta também elimina a necessidade de fazer qualquer coisa especial para contas como a conta IWAM para obter acesso aos certificados ao usar páginas de Active Server (ASP).
 
-O MMC (console de gerenciamento Microsoft) permite que os administradores importem certificados de cliente para um computador local. No entanto, a importação de um certificado não concede automaticamente acesso à chave privada para outras contas. Essa chave privada é necessária para a autenticação de certificado do cliente. A ferramenta de configuração de certificado do Microsoft Windows HTTP Services (WinHTTP) fornece a capacidade de conceder acesso a contas adicionais, como a conta IWAM, quando necessário.
+O MMC (console de gerenciamento Microsoft) permite que os administradores importem certificados de cliente para um computador local. No entanto, a importação de um certificado não concede automaticamente acesso à chave privada para outras contas. Essa chave privada é necessária para a autenticação de certificado do cliente. a ferramenta de configuração de certificado do Microsoft Windows HTTP Services (WinHTTP) fornece a capacidade de conceder acesso a contas adicionais, como a conta IWAM, quando necessário.
 
 -   [Usando a ferramenta de configuração de certificado](#using-the-certificate-configuration-tool)
 -   [Exemplos](#examples)
 
 ## <a name="using-the-certificate-configuration-tool"></a>Usando a ferramenta de configuração de certificado
 
-A ferramenta de configuração de certificado WinHTTP, WinHttpCertCfg.exe, está disponível como um download no site de [Ferramentas do Windows Server 2003 Resource Kit](https://www.microsoft.com/downloads/details.aspx?familyid=9d467a69-57ff-4ae7-96ee-b18c4790cffd) . O código de exemplo a seguir mostra os parâmetros de linha de comando válidos a serem usados com essa ferramenta.
+a ferramenta de configuração de certificado WinHTTP, WinHttpCertCfg.exe, está disponível como um download no site de [ferramentas do Kit de recursos do Windows Server 2003](https://www.microsoft.com/downloads/details.aspx?familyid=9d467a69-57ff-4ae7-96ee-b18c4790cffd) . O código de exemplo a seguir mostra os parâmetros de linha de comando válidos a serem usados com essa ferramenta.
 
 ``` syntax
 winhttpcertcfg [-?]
@@ -54,7 +54,7 @@ A tabela a seguir lista os parâmetros para a ferramenta de configuração do.
 </tr>
 <tr class="even">
 <td>-i</td>
-<td>Especifica que o certificado deve ser importado de um arquivo de troca de informações pessoais (PFX). Esse parâmetro deve ser seguido pelo nome do arquivo. Quando esse parâmetro é especificado, &quot; -a &quot; e &quot; -c &quot; também devem ser especificados.</td>
+<td>especifica que o certificado deve ser importado de um arquivo de informações pessoais Exchange (PFX). Esse parâmetro deve ser seguido pelo nome do arquivo. Quando esse parâmetro é especificado, &quot; -a &quot; e &quot; -c &quot; também devem ser especificados.</td>
 </tr>
 <tr class="odd">
 <td>-g</td>

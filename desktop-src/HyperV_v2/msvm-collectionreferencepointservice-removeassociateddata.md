@@ -1,7 +1,7 @@
 ---
-description: Método RemoveAssociatedData da classe Msvm_CollectionReferencePointService – remove o log de dados associado ao ponto de referência.
+description: Método RemoveAssociatedData da classe Msvm_CollectionReferencePointService - remove o log de dados associado ao ponto de referência.
 ms.assetid: 42242b76-9123-41a7-b8b1-82d2e827ea53
-title: Método RemoveAssociatedData da classe Msvm_CollectionReferencePointService
+title: Método RemoveAssociatedData da classe Msvm_CollectionReferencePointService dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 66a5cf068545f31f9919a9da60a1b09b32f78e4d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7352c00ead9647c887bf9901f8c159dae2883f77d6d263fcea39de0063b34a27
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119431506"
 ---
-# <a name="removeassociateddata-method-of-the-msvm_collectionreferencepointservice-class"></a>Método RemoveAssociatedData da \_ classe CollectionReferencePointService Msvm
+# <a name="removeassociateddata-method-of-the-msvm_collectionreferencepointservice-class"></a>Método RemoveAssociatedData da classe Msvm \_ CollectionReferencePointService
 
 Remove o log de dados associado ao ponto de referência.
 
@@ -40,17 +40,17 @@ uint32 RemoveAssociatedData(
 
 <dl> <dt>
 
-*AffectedReferencePointCollection* \[ no\]
+*AffectedReferencePointCollection* \[ Em\]
 </dt> <dd>
 
 Referência à coleção de pontos de referência do sistema virtual afetado.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Se a operação for de longa execução, opcionalmente, um trabalho poderá ser retornado.
+Se a operação for de execução longa, opcionalmente, um trabalho poderá ser retornado.
 
 </dd> </dl>
 
@@ -69,7 +69,7 @@ Se for bem-sucedido, retornará 0 (sem erro) ou 4096 (trabalho iniciado); caso c
 **Falha** (2)
 </dt> <dt>
 
-**Tempo limite** (3)
+**Tempoout** (3)
 </dt> <dt>
 
 **Parâmetro inválido** (4)
@@ -81,16 +81,16 @@ Se for bem-sucedido, retornará 0 (sem erro) ou 4096 (trabalho iniciado); caso c
 **Tipo inválido** (6)
 </dt> <dt>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (4097.. 32767)
+**Método Reservado** (4097..32767)
 </dt> <dt>
 
-**Específico do fornecedor** (32768.. 65535)
+**Específico do** fornecedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -99,15 +99,15 @@ Se for bem-sucedido, retornará 0 (sem erro) ou 4096 (trabalho iniciado); caso c
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                             |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

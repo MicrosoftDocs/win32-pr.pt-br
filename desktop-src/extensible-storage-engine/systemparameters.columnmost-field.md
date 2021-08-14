@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: campo SystemParameters. ColumnMost'
-title: Campo SystemParameters. ColumnMost
+description: 'Saiba mais sobre: campo SystemParameters.ColumnMost'
+title: Campo SystemParameters.ColumnMost
 TOCTitle: ColumnMost field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.SystemParameters.ColumnMost
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.systemparameters.columnmost(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 16d7a6e4a96b5a01d259c1c73fb55c5df2a70dec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d5490dbbb6edb79f1aee8e2225cbde3d11041040acb4561976b7d4c8ae8f2ae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105807294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119361016"
 ---
-# <a name="systemparameterscolumnmost-field"></a>Campo SystemParameters. ColumnMost
+# <a name="systemparameterscolumnmost-field"></a>Campo SystemParameters.ColumnMost
 
-Tamanho máximo para colunas que não são JET_coltyp. LongBinary ou JET_coltyp. LONGTEXT.
+Tamanho máximo para colunas que não são JET_coltyp. LongBinary ou JET_coltyp. Longtext.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -61,4 +61,4 @@ public const int ColumnMost
 
 [Membros do SystemParameters](./systemparameters-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -3,7 +3,7 @@ title: EN_OBJECTPOSITIONS código de notificação (RichEdit. h)
 description: Notifica uma janela pai do controle de edição rico quando o controle lê em objetos. Um controle de edição rico envia esse código de notificação na forma de uma \_ mensagem de notificação do WM.
 ms.assetid: 1965185f-8a13-4989-8574-af8b9b30f6b0
 keywords:
-- EN_OBJECTPOSITIONS de código de notificação controles do Windows
+- EN_OBJECTPOSITIONS código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 35681f6734457eb6b6ebcac1bcb67227cbd3b9e9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f3be6f3f41877a56396ef021e97130f4c174516160d7243144f10ea1dfd3951b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119436686"
 ---
 # <a name="en_objectpositions-notification-code"></a>\_Código de notificação de OBJECTPOSIÇÕES en
 
@@ -45,7 +45,7 @@ Uma estrutura de [**objectposições**](/windows/desktop/api/Richedit/ns-richedi
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornar zero para continuar a operação de **leitura** .
 
@@ -61,8 +61,8 @@ Para receber um \_ código de notificação en objectposições, especifique o s
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 

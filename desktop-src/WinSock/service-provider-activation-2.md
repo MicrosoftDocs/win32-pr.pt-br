@@ -1,24 +1,24 @@
 ---
-description: As seções a seguir descrevem a sequência de eventos envolvidos na colocação de uma DLL do provedor de serviço de transporte na memória, inicialização e, eventualmente, cancelamento da inicialização it.Inios relatórios do tializationCleanupError e as suposições de ordenação ValidationByte de parâmetros
+description: As seções a seguir descrevem a sequência de eventos envolvidos em colocar uma DLL do provedor de serviços de transporte na memória, inicializando-a e, por fim, não inicializando it.InitializationCleanupError Reporting e Validation Parameter ValidationByte Ordering Assumptions
 ms.assetid: fa71fcb9-c35f-4b5f-ac04-34a24dec5055
 title: Ativação do provedor de serviços
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3754ccaeb4d1cd6ed5b9d6ec34371d24b4a33baf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ddec04576c18ef36efbbd0e1eae72e76faa102f523bd518f5709d12822ae3a03
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105807909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119245157"
 ---
 # <a name="service-provider-activation"></a>Ativação do provedor de serviços
 
-As seções a seguir descrevem a sequência de eventos envolvidos na colocação de uma DLL de provedor de serviço de transporte na memória, inicialização e, eventualmente, cancelamento da inicialização.
+As seções a seguir descrevem a sequência de eventos envolvidos em colocar uma DLL do provedor de serviços de transporte na memória, inicializando-a e, por fim, não inicializando-a.
 
--   [Initialization](initialization-2.md)
+-   [Inicialização](initialization-2.md)
 -   [Limpeza](cleanup-2.md)
--   [Relatório de erros e validação de parâmetros](error-reporting-and-parameter-validation-2.md)
--   [Suposições de ordenação de bytes](byte-ordering-assumptions-2.md)
+-   [Relatório de erros e validação de parâmetro](error-reporting-and-parameter-validation-2.md)
+-   [Suposições de ordenação de byte](byte-ordering-assumptions-2.md)
 
  
 

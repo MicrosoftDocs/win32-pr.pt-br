@@ -3,7 +3,7 @@ title: Mensagem de MM_MOM_POSITIONCB (mmsystem. h)
 description: A \_ mensagem mm Mom \_ POSITIONCB é enviada para uma janela quando um \_ evento de retorno de chamada MEVT F \_ é atingido no fluxo de saída de Midi.
 ms.assetid: afd2ba4c-ff6a-4e47-a7e8-a0da62650963
 keywords:
-- Multimídia do Windows de mensagem MM_MOM_POSITIONCB
+- mensagem de MM_MOM_POSITIONCB Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e86fd6f34ab44d307bbbb0e5fc9fd61d083ccda4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4f68afecddd9b6ca8a0e5f6305b430b059b93db5a2abb966c0a7aed9ab350f7d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807156"
 ---
 # <a name="mm_mom_positioncb-message"></a>\_Mensagem mm Mom \_ POSITIONCB
 

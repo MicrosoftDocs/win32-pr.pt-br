@@ -1,10 +1,10 @@
 ---
-title: atributo ms-net-IEEE-80211-GP-PolicyData
-description: Contém todas as configurações e dados que compõem uma configuração Política de Grupo para redes sem fio 802,11.
+title: Atributo ms-net-ieee-80211-GP-PolicyData
+description: Contém todas as configurações e dados que comem uma configuração Política de Grupo para redes sem fio 802.11.
 ms.assetid: 556e0b4f-49cf-4493-a731-8b12c1d5ad71
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-net-IEEE-80211-GP-PolicyData
+- ms-net-ieee-80211-GP-PolicyData atributo AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a24583ad306d21a64cb4549fee6a3e13565418e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2c0fa6f99fe09616d3d5934f29df5931767b8f71f8e8acb38acae0417024c3ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086725"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300216"
 ---
-# <a name="ms-net-ieee-80211-gp-policydata-attribute"></a>atributo ms-net-IEEE-80211-GP-PolicyData
+# <a name="ms-net-ieee-80211-gp-policydata-attribute"></a>Atributo ms-net-ieee-80211-GP-PolicyData
 
-Contém todas as configurações e dados que compõem uma configuração Política de Grupo para redes sem fio 802,11.
+Contém todas as configurações e dados que comem uma configuração Política de Grupo para redes sem fio 802.11.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-net-IEEE-80211-GP-PolicyData             |
-| LDAP-Display-Name | MS-net-IEEE-80211-GP-PolicyData             |
+| CN                | ms-net-ieee-80211-GP-PolicyData             |
+| Ldap-Display-Name | ms-net-ieee-80211-GP-PolicyData             |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1952                     |
-| System-ID-GUID    | 9c1495a5-4d76-468e-991e-1433b0a67855        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 9c1495a5-4d76-468e-991e-1433b0a67855        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -54,15 +54,15 @@ Contém todas as configurações e dados que compõem uma configuração Políti
 | ID do link                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
 | System-Only            | Falso                                                                               |
-| É de valor único       | True                                                                                |
+| Tem valor único       | Verdadeiro                                                                                |
 | É indexado             | Falso                                                                               |
-| No catálogo global      | Falso                                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                        |
+| No Catálogo Global      | Falso                                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000000                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Classes usadas em        | [**MS-net-IEEE-80211-GroupPolicy**](c-ms-net-ieee-80211-grouppolicy.md)<br/> |
+| Classes usadas em        | [**ms-net-ieee-80211-GroupPolicy**](c-ms-net-ieee-80211-grouppolicy.md)<br/> |
 
 
 
@@ -75,15 +75,15 @@ Contém todas as configurações e dados que compõem uma configuração Políti
 | ID do link                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
 | System-Only            | Falso                                                                               |
-| É de valor único       | True                                                                                |
+| Tem valor único       | Verdadeiro                                                                                |
 | É indexado             | Falso                                                                               |
-| No catálogo global      | Falso                                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                        |
+| No Catálogo Global      | Falso                                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000000                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Classes usadas em        | [**MS-net-IEEE-80211-GroupPolicy**](c-ms-net-ieee-80211-grouppolicy.md)<br/> |
+| Classes usadas em        | [**ms-net-ieee-80211-GroupPolicy**](c-ms-net-ieee-80211-grouppolicy.md)<br/> |
 
 
 
@@ -96,15 +96,15 @@ Contém todas as configurações e dados que compõem uma configuração Políti
 | ID do link                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
 | System-Only            | Falso                                                                               |
-| É de valor único       | True                                                                                |
+| Tem valor único       | Verdadeiro                                                                                |
 | É indexado             | Falso                                                                               |
-| No catálogo global      | Falso                                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                        |
+| No Catálogo Global      | Falso                                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000000                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Classes usadas em        | [**MS-net-IEEE-80211-GroupPolicy**](c-ms-net-ieee-80211-grouppolicy.md)<br/> |
+| Classes usadas em        | [**ms-net-ieee-80211-GroupPolicy**](c-ms-net-ieee-80211-grouppolicy.md)<br/> |
 
 
 

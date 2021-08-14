@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: enumeração de JET_SNP'
-title: Enumeração de JET_SNP
+description: 'Saiba mais sobre: JET_SNP enumeração'
+title: JET_SNP enumeração
 TOCTitle: JET_SNP enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_SNP
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_snp(v=EXCHG.10)
@@ -36,19 +36,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 10061d0c00d90aa5ca4e0778cba046d2e6f62f4d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a18858b7dba79c8e8d0d2a6ab51783ab0a602d595214895f1798b2ef0e084731
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979256"
 ---
-# <a name="jet_snp-enumeration"></a>Enumeração de JET_SNP
+# <a name="jet_snp-enumeration"></a>JET_SNP enumeração
 
-O tipo de operação em que o progresso está sendo relatado.
+O tipo de operação para a qual o progresso está sendo relatado.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -87,22 +87,22 @@ public enum JET_SNP
 <tr class="odd">
 <td></td>
 <td>Restaurar</td>
-<td>O retorno de chamada é para uma opção de restauração.</td>
+<td>O retorno de chamada é para opções de restauração.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>Backup</td>
-<td>O retorno de chamada é para uma opção de backup.</td>
+<td>O retorno de chamada é para opções de backup.</td>
 </tr>
 <tr class="odd">
 <td></td>
-<td>Scrubbing</td>
-<td>O retorno de chamada é para zeroing de banco de dados.</td>
+<td>Esfregue</td>
+<td>O retorno de chamada é para zero de banco de dados.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>UpgradeRecordFormat</td>
-<td>O retorno de chamada é para o processo de atualização do formato de registro de todas as páginas de banco de dados.</td>
+<td>O retorno de chamada é para o processo de atualização do formato de registro de todas as páginas do banco de dados.</td>
 </tr>
 </tbody>
 </table>
@@ -112,4 +112,4 @@ public enum JET_SNP
 
 #### <a name="reference"></a>Referência
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,9 +1,9 @@
 ---
-title: Propriedade Tab. ScalingPolicy
-description: Representa um contêiner para as especificações de dimensionamento de tabulação.
+title: Propriedade Tab.ScalingPolicy
+description: Representa um contêiner para especificações de dimensionamento de tabulação.
 ms.assetid: cc1e4a35-9348-459b-a2f1-25c34d49e5e8
 keywords:
-- Ribbon. ScalingPolicy da propriedade Windows
+- Propriedade Tab.ScalingPolicy Windows Faixa de Opções
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c46528e7b5957415db55f1a51dd6dafed7e1da98
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 11b98174ff5c3426a4805905f0aa7ada86d63a644f4245135bcede5c71d11e75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117850784"
 ---
-# <a name="tabscalingpolicy-property"></a>Propriedade Tab. ScalingPolicy
+# <a name="tabscalingpolicy-property"></a>Propriedade Tab.ScalingPolicy
 
-Representa um contêiner para as especificações de dimensionamento de [Tabulação](windowsribbon-controls-tab.md) .
+Representa um contêiner para [especificações de](windowsribbon-controls-tab.md) dimensionamento de tabulação.
 
 ## <a name="usage"></a>Uso
 
@@ -59,13 +59,13 @@ Não há atributos.
 
 Opcional.
 
-Pode ocorrer no máximo uma vez para cada [**guia**](windowsribbon-element-tab.md).
+Pode ocorrer no máximo uma vez para cada [**Guia**](windowsribbon-element-tab.md).
 
-As especificações de dimensionamento descrevem o tamanho e o comportamento de layout dos controles em uma [guia](windowsribbon-controls-tab.md) quando a faixa de opção é redimensionada.
+As especificações de dimensionamento descrevem o tamanho e o comportamento de layout para os controles em uma [guia quando](windowsribbon-controls-tab.md) a Faixa de Opções é re dimensionada.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir demonstra um manifesto [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md) que especifica uma preferência de [**ScalingPolicy. IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) [**SizeDefinition**](windowsribbon-element-sizedefinition.md) para cada um dos quatro grupos de controles em uma guia **página inicial** . Além disso, os elementos [**Scale**](windowsribbon-element-scale.md) são especificados para influenciar o comportamento de recolhimento, em ordem de tamanho decrescente, de cada grupo.
+O exemplo de código a seguir demonstra um manifesto [**ScalingPolicy**](windowsribbon-element-scalingpolicy.md) que especifica uma preferência [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) [**SizeDefinition**](windowsribbon-element-sizedefinition.md) para cada um dos quatro grupos de controles em uma guia Página **Base.** Além disso, [**os elementos Scale**](windowsribbon-element-scale.md) são especificados para influenciar o comportamento de ressução, em ordem de tamanho decrescente, de cada grupo.
 
 
 ```C++
@@ -137,8 +137,8 @@ O exemplo de código a seguir demonstra um manifesto [**ScalingPolicy**](windows
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/> |
 
 
 
@@ -146,7 +146,7 @@ O exemplo de código a seguir demonstra um manifesto [**ScalingPolicy**](windows
 
 <dl> <dt>
 
-[Personalizando uma faixa de guia por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
+[Personalização de uma faixa de opções por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  

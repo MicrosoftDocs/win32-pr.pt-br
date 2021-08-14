@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 26e045fdb269e3b0f852265e621c991561a9ad3b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 27e6c306d88e471a37f9f2c5579e33a10c45daa6602c4d290b0e603cb9c45f85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105812047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119368636"
 ---
 # <a name="span-idvspixengineisymbolsettingsspanisymbolsettings-interface"></a><span id="vspixengine.isymbolsettings"></span>Interface ISymbolSettings
 

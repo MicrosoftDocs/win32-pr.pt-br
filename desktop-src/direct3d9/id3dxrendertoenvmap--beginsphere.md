@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 872aa06734ae818ef248b03fbc14dcd1c33fe815
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3f8bc555e3ea4f4fbb895c42f5c7a407cea88aedeacb9604ad1e78c7003bdf34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118801286"
 ---
 # <a name="id3dxrendertoenvmapbeginsphere-method"></a>Método ID3DXRenderToEnvMap:: BeginSphere
 
@@ -49,7 +49,7 @@ Ponteiro para uma interface [**IDirect3DTexture9**](/windows/win32/api/d3d9helpe
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

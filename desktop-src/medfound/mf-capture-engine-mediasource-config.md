@@ -1,19 +1,19 @@
 ---
-description: Contém propriedades de configuração para a origem de captura.
+description: Contém propriedades de configuração para a origem da captura.
 ms.assetid: 9A21D21B-E77F-4C7C-B41F-361CEDA322E7
-title: Atributo MF_CAPTURE_ENGINE_MEDIASOURCE_CONFIG (Mfcaptureengine. h)
+title: MF_CAPTURE_ENGINE_MEDIASOURCE_CONFIG atributo (Mfcaptureengine.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8afaea6e47b729e325e67135c8a1d39fa88bdc4c
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: a3d111aa41d423f39bb55597d75ec18cc2ee24d93a7f250074a10882c6f38f66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103837596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119464366"
 ---
-# <a name="mf_capture_engine_mediasource_config-attribute"></a>\_Atributo de \_ \_ configuração de mediaprovider do mecanismo de captura MF \_
+# <a name="mf_capture_engine_mediasource_config-attribute"></a>Atributo MF \_ CAPTURE \_ ENGINE \_ MEDIASOURCE \_ CONFIG
 
-Contém propriedades de configuração para a origem de captura.
+Contém propriedades de configuração para a origem da captura.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -21,7 +21,7 @@ Contém propriedades de configuração para a origem de captura.
 
 ## <a name="remarks"></a>Comentários
 
-No momento, esse atributo é ignorado. No futuro, ele pode ser usado para passar Propriedades de configuração para a origem da mídia.
+Atualmente, esse atributo é ignorado. No futuro, ele pode ser usado para passar propriedades de configuração para a fonte de mídia.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -29,9 +29,9 @@ No momento, esse atributo é ignorado. No futuro, ele pode ser usado para passar
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                   |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                         |
-| parâmetro<br/>                   | <dl> <dt>Mfcaptureengine. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                   |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                         |
+| parâmetro<br/>                   | <dl> <dt>Mfcaptureengine.h</dt> </dl> |
 
 
 
@@ -39,13 +39,13 @@ No momento, esse atributo é ignorado. No futuro, ele pode ser usado para passar
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos do mecanismo de captura](capture-engine-attributes.md)
+[Atributos do Mecanismo de Captura](capture-engine-attributes.md)
 </dt> <dt>
 
-[**IMFCaptureEngine:: Initialize**](/windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcaptureengine-initialize)
+[**IMFCaptureEngine::Initialize**](/windows/desktop/api/mfcaptureengine/nf-mfcaptureengine-imfcaptureengine-initialize)
 </dt> </dl>
 
  

@@ -3,8 +3,8 @@ title: Estrutura READERMODEINFO
 description: Contém as informações necessárias para inicializar a função doreadermode.
 ms.assetid: 7b9c73bc-b093-4592-befd-67508fb86fe0
 keywords:
-- Controles do Windows da estrutura READERMODEINFO
-- Controles do Windows de ponteiro de estrutura PREADERMODEINFO
+- controles de Windows de estrutura READERMODEINFO
+- ponteiro de estrutura PREADERMODEINFO Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2dacf0fc59ef62447ca12b7a470689e13967d687
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 510dc7a763d50b42f06b2510e609e0bc7c3c6f31fa1f4c08393964cef75487fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118169116"
 ---
 # <a name="readermodeinfo-structure"></a>Estrutura READERMODEINFO
 
-\[O **READERMODEINFO** é compatível com o Windows XP com Service Pack 2 (SP2). Ele pode não ter suporte em versões subsequentes.\]
+\[o **READERMODEINFO** tem suporte por meio do Windows XP com Service Pack 2 (SP2). Ele pode não ter suporte em versões subsequentes.\]
 
 Contém as informações necessárias para inicializar a função [**Doreadermode**](doreadermode.md) .
 
@@ -147,8 +147,8 @@ Essa estrutura não é declarada em nenhum cabeçalho público. Para usá-lo, vo
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Vista, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/> |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>          |
+| Cliente mínimo com suporte<br/> | Windows vista, somente aplicativos do Windows vista \[ desktop\]<br/> |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>          |
 
 
 

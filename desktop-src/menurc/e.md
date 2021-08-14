@@ -5,12 +5,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 14e12ba3-8451-4a93-a555-e1c9e6040a67
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 029f8d26d341a114ab7bfeae269a391f8df90423
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: b4f2423b002afe055c425978a643753e029d817eee5e7eccfc4379d2410f88ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104085098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119461246"
 ---
 # <a name="e-menus-and-other-resources"></a>E (menus e outros recursos)
 
@@ -21,7 +21,7 @@ ms.locfileid: "104085098"
 <span id="tools.e_1_gly"></span><span id="TOOLS.E_1_GLY"></span>**Menus vazios não são permitidos**
 </dt> <dd>
 
-Uma palavra-chave **end** é exibida antes de qualquer item de menu ser definido na instrução de [**menu**](menu-resource.md) . Os menus vazios não são permitidos pelo compilador de recursos do Microsoft Windows 32 (RC). Certifique-se de que você não tem aspas de abertura dentro da instrução de **menu** .
+Uma palavra-chave **end** é exibida antes de qualquer item de menu ser definido na instrução de [**menu**](menu-resource.md) . os menus vazios não são permitidos pelo compilador de recursos do Microsoft Windows 32 (RC). Certifique-se de que você não tem aspas de abertura dentro da instrução de **menu** .
 
 </dd> <dt>
 
@@ -42,14 +42,14 @@ A palavra-chave **end** deve aparecer no final de uma instrução de [**menu**](
 <span id="tools.e_4_gly"></span><span id="TOOLS.E_4_GLY"></span>**Erro Creatingresource-nome**
 </dt> <dd>
 
-O compilador de recursos do Microsoft Windows 32 (RC) não pôde criar o recurso binário especificado (. RES). Certifique-se de que ele não está sendo criado em uma unidade somente leitura. Use a opção **/v** para descobrir se o arquivo está sendo criado.
+o compilador de recursos do Microsoft Windows 32 (RC) não pôde criar o recurso binário especificado (. RES). Certifique-se de que ele não está sendo criado em uma unidade somente leitura. Use a opção **/v** para descobrir se o arquivo está sendo criado.
 
 </dd> <dt>
 
 <span id="tools.e_5_gly"></span><span id="TOOLS.E_5_GLY"></span>**Vírgula esperada na tabela do acelerador**
 </dt> <dd>
 
-O compilador de recursos do Microsoft Windows 32 (RC) requer uma vírgula entre os parâmetros *Event* e *idvalue* na instrução [**Accelerators**](accelerators-resource.md) .
+o compilador de recursos do Microsoft Windows 32 (RC) requer uma vírgula entre os parâmetros *event* e *idvalue* na instrução [**accelerators**](accelerators-resource.md) .
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Cada instrução [**MenuItem**](menuitem-statement.md) e [**Popup**](popup-resou
 <span id="tools.e_10_gly"></span><span id="TOOLS.E_10_GLY"></span>**Valor de comando numérico esperado**
 </dt> <dd>
 
-O compilador de recursos do Microsoft Windows (RC) estava esperando um parâmetro numérico *idvalue* na instrução [**Accelerators**](accelerators-resource.md) . Certifique-se de que você usou uma instrução de [**\# definição**](-define.md) para especificar o valor e que a constante usada esteja grafada corretamente.
+o compilador de recursos do Microsoft Windows (RC) estava esperando um parâmetro numérico *idvalue* na instrução [**accelerators**](accelerators-resource.md) . Certifique-se de que você usou uma instrução de [**\# definição**](-define.md) para especificar o valor e que a constante usada esteja grafada corretamente.
 
 </dd> <dt>
 
@@ -119,7 +119,7 @@ Uma cadeia de caracteres é esperada após cada parâmetro de *stringid* numéri
 <span id="tools.e_15_gly"></span><span id="TOOLS.E_15_GLY"></span>**Cadeia de caracteres esperada ou comando acelerador de constante**
 </dt> <dd>
 
-O compilador de recursos do Microsoft Windows (RC) não pôde determinar qual chave estava sendo configurada para o acelerador. O parâmetro de *evento* na instrução [**Accelerators**](accelerators-resource.md) pode ser inválido.
+o compilador de recursos do Microsoft Windows (RC) não pôde determinar qual chave estava sendo configurada para o acelerador. O parâmetro de *evento* na instrução [**Accelerators**](accelerators-resource.md) pode ser inválido.
 
 </dd> <dt>
 

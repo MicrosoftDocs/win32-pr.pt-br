@@ -4,12 +4,12 @@ ms.assetid: 96a9e472-9b92-4976-9379-dc0c96524963
 title: API de instalação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6101c2673e72095d0cf4ebe59c1cece83449d647
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 36c80ca80f3a75a592dbb543768f26c54945de7d115b116128f4c0e70bd75f78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105756546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117964906"
 ---
 # <a name="setup-api"></a>API de instalação
 
@@ -19,7 +19,7 @@ A API de instalação fornece um conjunto de funções que um aplicativo de inst
 
 ## <a name="where-applicable"></a>Quando aplicável
 
-Essas funções de instalação estão disponíveis para desenvolver um aplicativo de instalação. A API de instalação não deve mais ser usada para instalar aplicativos. Em vez disso, use o [Windows Installer](/windows/desktop/Msi/windows-installer-portal)para desenvolver instaladores de aplicativos. A API de instalação continua a ser usada para instalar drivers de dispositivo.
+Essas funções de instalação estão disponíveis para desenvolver um aplicativo de instalação. A API de instalação não deve mais ser usada para instalar aplicativos. em vez disso, use o [Windows Installer](/windows/desktop/Msi/windows-installer-portal)para desenvolver instaladores de aplicativos. A API de instalação continua a ser usada para instalar drivers de dispositivo.
 
 A API de instalação destina-se ao desenvolvimento de aplicativos de estilo de área de trabalho.
 

@@ -4,25 +4,25 @@ description: Tipo de arquivo e modelo de associações de URI
 ms.assetid: 4DE7DD08-088A-4E09-B1C7-AE9033EA533D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c78540a072405aade01a9f94503999ad105d2078
-ms.sourcegitcommit: ea4baf9953a78d2d6bd530b680601e39f3884541
+ms.openlocfilehash: aabcdb40bd38aeee24ee0e5d86f11651633a7eead1748810e8c1c6a846827690
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "104008502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028854"
 ---
 # <a name="file-type-and-uri-associations-model"></a>Tipo de arquivo e modelo de associações de URI
 
 ## <a name="platforms"></a>Plataformas
 
- **Clientes** -Windows 8  
-**Servidores** -Windows Server 2012  
+ **clientes** -Windows 8  
+**servidores** -Windows Server 2012  
 
 
 
 ## <a name="description"></a>Descrição
 
-O tipo de arquivo e o modelo de associação de URI foram alterados no Windows 8. Os aplicativos não são mais capazes de se definir por meio de programação como o manipulador padrão para um tipo de arquivo ou URI. Em vez disso, agora o usuário controla o que é o manipulador padrão para um tipo de arquivo ou esquema de URI.
+O modelo de associação de tipo de arquivo e URI foi alterado em Windows 8. Os aplicativos não são mais capazes de se definir por meio de programação como o manipulador padrão para um tipo de arquivo ou URI. Em vez disso, agora o usuário controla o que é o manipulador padrão para um tipo de arquivo ou esquema de URI.
 
 ## <a name="manifestation"></a>Manifestação
 
@@ -38,7 +38,7 @@ Há várias coisas que os usuários podem fazer para acomodar essas alterações
 -   Os usuários são solicitados a escolher um aplicativo padrão para manipular tipos de arquivo, esquemas de URI ou ambos quando um não tiver sido especificado
 -   Os usuários recebem a opção de alterar seu manipulador padrão depois de instalar novos aplicativos que podem manipular um tipo de arquivo ou esquema de URI
 -   O painel de controle programas padrão permite que os usuários definam padrões para um aplicativo ou para um tipo de arquivo, esquema de URI ou ambos; os aplicativos podem vincular ao painel de controle
--   Os padrões podem ser alterados no Windows Explorer
+-   os padrões podem ser alterados no Windows Explorer
 
 ## <a name="solution"></a>Solução
 
@@ -72,9 +72,9 @@ Como resultado dessas alterações, estas diretrizes de API são fornecidas:
 
 ## <a name="resources"></a>Recursos
 
--   [Práticas recomendadas para tipos de arquivo e associações de URI em aplicativos de área de trabalho do Windows 8](/previous-versions/windows/desktop/legacy/cc144156(v=vs.85))
+-   [práticas recomendadas para tipos de arquivo e associações de URI em aplicativos de área de trabalho Windows 8](/previous-versions/windows/desktop/legacy/cc144156(v=vs.85))
 -   [Associação de tipo de arquivo e apresentação de conferência de Build de reprodução automática](https://channel9.msdn.com/events/BUILD/BUILD2011/PLAT-282T)
 
- 
+ 
 
- 
+ 

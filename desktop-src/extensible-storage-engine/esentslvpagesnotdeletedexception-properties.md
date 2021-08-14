@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: Propriedades de EsentSLVPagesNotDeletedException'
-title: Propriedades de EsentSLVPagesNotDeletedException
+description: 'Saiba mais sobre: propriedades EsentSLVPagesNotDeletedException'
+title: Propriedades EsentSLVPagesNotDeletedException
 TOCTitle: EsentSLVPagesNotDeletedException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentSLVPagesNotDeletedException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentslvpagesnotdeletedexception_properties(v=EXCHG.10)
 ms:contentKeyID: 55102803
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 9267e25ba6bc10ec116a6e987d89cb262e944e8f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 234d67c1d91a50db574286004ee3812ccf4bece95cba9bf46e10d4fd5e50a53c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119476856"
 ---
-# <a name="esentslvpagesnotdeletedexception-properties"></a>Propriedades de EsentSLVPagesNotDeletedException
+# <a name="esentslvpagesnotdeletedexception-properties"></a>Propriedades EsentSLVPagesNotDeletedException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentSLVPagesNotDeletedException](./esentslvpagesnotdeletedexception-class.md) expõe os membros a seguir.
+O [tipo EsentSLVPagesNotDeletedException](./esentslvpagesnotdeletedexception-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,16 +40,16 @@ O tipo [EsentSLVPagesNotDeletedException](./esentslvpagesnotdeletedexception-cla
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ O tipo [EsentSLVPagesNotDeletedException](./esentslvpagesnotdeletedexception-cla
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe EsentSLVPagesNotDeletedException](./esentslvpagesnotdeletedexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

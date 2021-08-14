@@ -1,11 +1,11 @@
 ---
-title: Atributo CRL-Partitiond-Revocation-List
-description: Listas de revogação da infraestrutura de chave pública \ 8211;.
+title: Atributo CRL-Partitioned-Revocation-List
+description: Infraestrutura de Chave Pública \ 8211;listas de revogação.
 ms.assetid: ecee7ee6-21e7-4861-a7f5-5e8e3579978a
 ms.tgt_platform: multiple
 keywords:
-- CRL-particionado – atributo de lista de revogação – esquema do AD
-- Esquema de AD do atributo cRLPartitionedRevocationList
+- Esquema do AD do atributo CRL-Partitioned-Revocation-List
+- Esquema do AD do atributo cRLPartitionedRevocationList
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6c19629cab11e9e6e02069213487135bea4d2aa
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 413f117b5c0fedfc5b9e0ed4d9e9a341209ec3997119e34981280b1aad8ceb7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119706736"
 ---
-# <a name="crl-partitioned-revocation-list-attribute"></a>Atributo CRL-Partitiond-Revocation-List
+# <a name="crl-partitioned-revocation-list-attribute"></a>Atributo CRL-Partitioned-Revocation-List
 
-Listas de revogação de infraestrutura de chave pública.
+Listas de revogação da Infraestrutura de Chave Pública.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | CRL-particionado-lista de revogação                       |
-| LDAP-Display-Name | cRLPartitionedRevocationList                          |
+| CN                | CRL-Partitioned-Revocation-List                       |
+| Ldap-Display-Name | cRLPartitionedRevocationList                          |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.683                                |
-| System-ID-GUID    | 963d2731-48be-11d1-a9c3-0000f80367c1                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 963d2731-48be-11d1-a9c3-0000f80367c1                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -58,15 +58,15 @@ Listas de revogação de infraestrutura de chave pública.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**CRL-ponto de distribuição**](c-crldistributionpoint.md)<br/> |
+| Classes usadas em        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Listas de revogação de infraestrutura de chave pública.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**CRL-ponto de distribuição**](c-crldistributionpoint.md)<br/> |
+| Classes usadas em        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Listas de revogação de infraestrutura de chave pública.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**CRL-ponto de distribuição**](c-crldistributionpoint.md)<br/> |
+| Classes usadas em        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ Listas de revogação de infraestrutura de chave pública.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -142,7 +142,7 @@ Listas de revogação de infraestrutura de chave pública.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -163,7 +163,7 @@ Listas de revogação de infraestrutura de chave pública.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |

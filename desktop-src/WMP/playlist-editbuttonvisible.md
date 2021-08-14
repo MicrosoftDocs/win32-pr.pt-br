@@ -3,7 +3,7 @@ title: PLAYLIST. editButtonVisible
 description: O atributo editButtonVisible especifica ou recupera um valor que indica se o botão de edição da playlist está visível.
 ms.assetid: 716e5484-b4b0-49a6-a778-ead1479fda54
 keywords:
-- PLAYLIST. editButtonVisible Windows Media Player
+- Windows Media Player de PLAYLIST. editButtonVisible
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 48534d9e933f5c0e304fe0bb743c048c765cc772
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c8e22712e37f3fcd800677af0659673d9ca85d818b86b1efdf8f039f731b0306
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119467736"
 ---
 # <a name="playlisteditbuttonvisible"></a>PLAYLIST. editButtonVisible
 

@@ -1,23 +1,23 @@
 ---
-description: A política de metadados de foto para a propriedade System. GPS. satélites.
+description: A política de metadados de foto para a propriedade System.GPS.Satellites.
 ms.assetid: 5dbbbeaf-e67d-45f6-95b2-de3287202d41
-title: Política de metadados de foto System. GPS. satélites
+title: Política de metadados de foto system.GPS.Satellites
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 980393accdb1bee3d2a44dd539f3c9fb169c648b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a65bdc244324df513b5029c682e9c2cb355da58f2c95d13910fe093ce2521c8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964835"
 ---
-# <a name="systemgpssatellites-photo-metadata-policy"></a>Política de metadados de foto System. GPS. satélites
+# <a name="systemgpssatellites-photo-metadata-policy"></a>Política de metadados de foto system.GPS.Satellites
 
-A política de metadados de foto para a propriedade [System. GPS. satélites](../properties/props-system-gps-satellites.md) .
+A política de metadados de foto para a [propriedade System.GPS.Satellites.](../properties/props-system-gps-satellites.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-\_Satélites de GPS PKEY \_
+PKEY \_ GPS \_ Satellites
 
 ### <a name="containers"></a>Contêineres
 
@@ -25,29 +25,29 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-No
+Não
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
 
-LPWStr do VT \_
+VT \_ LPWSTR
 
 ### <a name="input-type"></a>Tipo de entrada
 
 Cadeia de caracteres.
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
 
-Os valores de esquemas diferentes são reconciliados.
+Valores de esquemas diferentes são reconciliados.
 
 ### <a name="jpeg-policies"></a>Políticas JPEG
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /App1/IFD/GPS/{UShort = 8} | ascii       |
+| 1     | /app1/ifd/gps/{ushort=8} | ascii       |
 | 2     | /xmp/exif:GPSSatellites  | Unicode     |
 
 
@@ -60,7 +60,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /App1/IFD/GPS/{UShort = 8} | ascii       |
+| 1     | /app1/ifd/gps/{ushort=8} | ascii       |
 | 2     | /xmp/exif:GPSSatellites  | Unicode     |
 
 
@@ -73,7 +73,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                     |
 |-------|--------------------------|
-| 1     | /App1/IFD/GPS/{UShort = 8} |
+| 1     | /app1/ifd/gps/{ushort=8} |
 | 2     | /xmp/exif:gpssatellites  |
 
 
@@ -82,13 +82,13 @@ Os valores de esquemas diferentes são reconciliados.
 
 ### <a name="tiff-policies"></a>Políticas TIFF
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                        | Formato de disco |
 |-------|-----------------------------|-------------|
-| 1     | /IFD/GPS/{UShort = 8}         | ascii       |
+| 1     | /ifd/gps/{ushort=8}         | ascii       |
 | 2     | /ifd/xmp/exif:GPSSatellites | Unicode     |
 
 
@@ -101,7 +101,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                        | Formato de disco |
 |-------|-----------------------------|-------------|
-| 1     | /IFD/GPS/{UShort = 8}         | ascii       |
+| 1     | /ifd/gps/{ushort=8}         | ascii       |
 | 2     | /ifd/xmp/exif:GPSSatellites | Unicode     |
 
 
@@ -114,7 +114,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                        |
 |-------|-----------------------------|
-| 1     | /IFD/GPS/{UShort = 8}         |
+| 1     | /ifd/gps/{ushort=8}         |
 | 2     | /ifd/xmp/exif:gpssatellites |
 
 
@@ -127,7 +127,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 <dl> <dt>
 
-[System. GPS. satélites](../properties/props-system-gps-satellites.md)
+[System.GPS.Satellites](../properties/props-system-gps-satellites.md)
 </dt> </dl>
 
  

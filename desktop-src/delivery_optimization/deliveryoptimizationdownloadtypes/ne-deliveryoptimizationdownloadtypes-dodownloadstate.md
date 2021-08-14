@@ -14,18 +14,18 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/02/2019
-ms.openlocfilehash: 4fb882a26d20de3094aa46763d6e1538ccf0c643
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5df8f7b20c8cff3b905acec9852b26c9a5ee360645fddb1bec22990a8bb9daba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047134"
 ---
 # <a name="dodownloadstate-enumeration"></a>Enumeração dodownloadstate
 
 A enumeração **Dodownloadstate** especifica a ID do estado de download atual, que faz parte da estrutura de **DO_DOWNLOAD_STATUS** .
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```cpp
 typedef enum _DODownloadState
@@ -54,6 +54,6 @@ typedef enum _DODownloadState
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cliente mínimo com suporte** | Somente aplicativos do Windows 10, versão 1809 \[ Win32\] |
-| **Servidor mínimo com suporte** | Somente aplicativos do Windows Server, versão 1809 \[ Win32\] |
+| **Cliente mínimo com suporte** | Windows 10, versão 1809 \[ Somente aplicativos Win32\] |
+| **Servidor mínimo com suporte** | Windows Somente aplicativos Win32 do servidor versão 1809 \[\] |
 | **Cabeçalho** | DeliveryOptimizationDownloadTypes. h |

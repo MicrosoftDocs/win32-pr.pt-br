@@ -1,7 +1,7 @@
 ---
-description: Exporta uma máquina virtual, ou um instantâneo de uma máquina virtual, para um arquivo.
+description: Exporta uma máquina virtual ou um instantâneo de uma máquina virtual para um arquivo.
 ms.assetid: b88712e4-a1a6-4188-8082-f4973f89018d
-title: Método ExportSystemDefinition da classe Msvm_VirtualSystemManagementService
+title: Método ExportSystemDefinition da classe Msvm_VirtualSystemManagementService dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 9f6b6dc5728a4275965ccd482d851601ecd1c6e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 72198055a81ce13a6b38859ed5ba6370faf7de046bc9f2cc3a158548c2679685
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119254026"
 ---
-# <a name="exportsystemdefinition-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método ExportSystemDefinition da \_ classe VirtualSystemManagementService Msvm
+# <a name="exportsystemdefinition-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método ExportSystemDefinition da classe Msvm \_ VirtualSystemManagementService
 
-Exporta uma máquina virtual, ou um instantâneo de uma máquina virtual, para um arquivo. A máquina virtual deve estar no estado "desligado" ou "salvo" para ser exportada. A máquina virtual, suas definições de configuração associadas e suas configurações de recurso associadas serão preservadas no arquivo resultante.
+Exporta uma máquina virtual ou um instantâneo de uma máquina virtual para um arquivo. A máquina virtual deve estar no estado "desligado" ou "salvo" a ser exportado. A máquina virtual, suas definições de configuração associadas e suas configurações de recurso associadas serão preservadas no arquivo resultante.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,35 +42,35 @@ uint32 ExportSystemDefinition(
 
 <dl> <dt>
 
-*ComputerSystem* \[ no\]
+*ComputerSystem* \[ Em\]
 </dt> <dd>
 
-Uma referência a um [**\_ sistema**](/windows/desktop/CIMWin32Prov/cim-computersystem) de computador CIM que representa a máquina virtual a ser exportada.
+Uma referência a um [**\_ ComputerSystem cim**](/windows/desktop/CIMWin32Prov/cim-computersystem) que representa a máquina virtual a ser exportada.
 
 </dd> <dt>
 
-*ExportDirectory* \[ no\]
+*ExportDirectory* \[ Em\]
 </dt> <dd>
 
-O caminho totalmente qualificado do diretório no qual a máquina virtual deve ser exportada. Se a propriedade **CreateVmExportSubdirectory** da classe [**Msvm \_ VirtualSystemExportSettingData**](msvm-virtualsystemexportsettingdata.md) no parâmetro *ExportSettingData* for definida como **true**, esse diretório poderá ser reutilizado para exportar várias máquinas virtuais e esse método colocará cada definição de máquina virtual em um subdiretório separado sob esse caminho.
+O caminho totalmente qualificado do diretório para o qual a máquina virtual deve ser exportada. Se a propriedade **CreateVmExportSubdirectory** da classe [**Msvm \_ VirtualSystemExportSettingData**](msvm-virtualsystemexportsettingdata.md) no parâmetro *ExportSettingData* for definida como **True**, esse diretório poderá ser reutilizado para exportar várias máquinas virtuais e esse método colocará cada definição de máquina virtual em um subdiretório separado nesse caminho.
 
 </dd> <dt>
 
-*ExportSettingData* \[ no\]
+*ExportSettingData* \[ Em\]
 </dt> <dd>
 
-Uma instância inserida da classe [**Msvm \_ VirtualSystemExportSettingData**](msvm-virtualsystemexportsettingdata.md) que representa as configurações da operação de exportação.
+Uma instância inserida da [**classe Msvm \_ VirtualSystemExportSettingData**](msvm-virtualsystemexportsettingdata.md) que representa as configurações para a operação de exportação.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Se a operação for executada de forma assíncrona, esse método retornará 4096, e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Se a operação for executada de forma assíncrona, esse método retornará 4096 e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob.**](/previous-versions//cc136808(v=vs.85))
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos valores a seguir.
 
@@ -79,7 +79,7 @@ Esse método retorna um dos valores a seguir.
 **Concluído sem erro** (0)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
 **Falha** (32768)
@@ -91,16 +91,16 @@ Esse método retorna um dos valores a seguir.
 **Sem suporte** (32770)
 </dt> <dt>
 
-O **status é desconhecido** (32771)
+**O status é desconhecido** (32771)
 </dt> <dt>
 
-**Tempo limite** (32772)
+**Tempoout** (32772)
 </dt> <dt>
 
 **Parâmetro inválido** (32773)
 </dt> <dt>
 
-O **sistema está em uso** (32774)
+**O sistema está em uso** (32774)
 </dt> <dt>
 
 **Estado inválido para esta operação** (32775)
@@ -109,10 +109,10 @@ O **sistema está em uso** (32774)
 **Tipo de dados incorreto** (32776)
 </dt> <dt>
 
-O **sistema não está disponível** (32777)
+**O sistema não está disponível** (32777)
 </dt> <dt>
 
-**Memória insuficiente** (32778)
+**Memória sem memória** (32778)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -121,10 +121,10 @@ O **sistema não está disponível** (32777)
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

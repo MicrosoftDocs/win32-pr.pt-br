@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Wmistr.h
-ms.openlocfilehash: 6a2ed615d2b67cbd47a817234a14b7cf1221f601
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: e8ad8bd5e1fd4917fa031e7553ed0e7e460244b8ab7c7da347a62d7430036cc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104968762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015234"
 ---
 # <a name="wnode_header-structure"></a>\_Estrutura de cabeçalho WNODE
 
@@ -118,7 +118,7 @@ Se você iniciar uma sessão que não seja um agente de log de kernel ou uma ses
 
 Não é possível iniciar mais de uma sessão com o mesmo GUID de sessão.
 
-**Antes do Windows Vista:** Você pode iniciar mais de uma sessão com o mesmo GUID de sessão.
+**antes do Windows Vista:** Você pode iniciar mais de uma sessão com o mesmo GUID de sessão.
 
 </dd> <dt>
 
@@ -127,11 +127,11 @@ Não é possível iniciar mais de uma sessão com o mesmo GUID de sessão.
 
 Resolução de relógio a ser usada ao registrar em log o carimbo de data/hora para cada evento. O padrão é o contador de desempenho de consulta (QPC).
 
-**Antes do Windows Vista:** O padrão é hora do sistema.
+**antes do Windows Vista:** O padrão é hora do sistema.
 
-**Antes do Windows 10, versão 1703:** Não mais do que 2 tipos de relógio distintos podem ser usados simultaneamente por qualquer agente de log do sistema.
+**antes da Windows 10, versão 1703:** Não mais do que 2 tipos de relógio distintos podem ser usados simultaneamente por qualquer agente de log do sistema.
 
-**A partir do Windows 10, versão 1703:** A restrição de tipo de relógio foi removida. Todos os três tipos de relógio agora podem ser usados simultaneamente por agentes de log do sistema.
+**a partir do Windows 10, versão 1703:** A restrição de tipo de relógio foi removida. Todos os três tipos de relógio agora podem ser usados simultaneamente por agentes de log do sistema.
 
 Você pode especificar um dos valores a seguir.
 
@@ -157,14 +157,14 @@ Você pode especificar um dos valores a seguir.
 <td><dl> <dt>2</dt> </dl></td>
 <td>Hora do sistema. A hora do sistema fornece um carimbo de data/hora que controla as alterações no relógio do sistema, por exemplo, se o relógio do sistema for ajustado para frente devido à sincronização com um servidor NTP enquanto o rastreamento estiver em andamento, os carimbos de hora do sistema no rastreamento também serão encaminhados para corresponder à nova configuração do relógio do sistema. <br/>
 <ul>
-<li>Em sistemas anteriores ao Windows 10, o carimbo de data/hora armazenado no evento é equivalente ao valor retornado da API GetSystemTimeAsFileTime.</li>
-<li>No Windows 10 ou posterior, o carimbo de data/hora armazenado no evento é equivalente ao valor retornado da API GetSystemTimePreciseAsFileTime.</li>
+<li>em sistemas anteriores à Windows 10, o carimbo de data/hora armazenado no evento é equivalente ao valor retornado da API GetSystemTimeAsFileTime.</li>
+<li>no Windows 10 ou posterior, o carimbo de data/hora armazenado no evento é equivalente ao valor retornado da API GetSystemTimePreciseAsFileTime.</li>
 </ul>
-Antes do Windows 10, a resolução desse carimbo de data/hora foi a resolução de um tique de relógio do sistema, conforme indicado pelo membro TimerResolution de TRACE_LOGFILE_HEADER. A partir do Windows 10, a resolução desse carimbo de data/hora é a resolução do contador de desempenho, conforme indicado pelo membro PerfFreq de TRACE_LOGFILE_HEADER.<br/> Para converter o carimbo de data/hora de um evento em unidades 100-NS, use a seguinte fórmula de conversão: <br/> scaledTimestamp = eventRecord. EventHeader. TimeStamp. QuadPart<br/> Observe que quando os eventos são capturados em um sistema que executa um so anterior ao Windows 10, se o volume de eventos for alto, a resolução do tempo do sistema poderá não ser suficiente para determinar a sequência de eventos. Nesse caso, um conjunto de eventos terá o mesmo carimbo de data/hora, mas a ordem na qual o ETW entrega os eventos pode não estar correta. A partir do Windows 10, o carimbo de data/hora é capturado com precisão adicional, embora alguma instabilidade ainda possa ocorrer nos casos em que o relógio do sistema foi ajustado enquanto o rastreamento estava sendo capturado.<br/></td>
+antes da Windows 10, a resolução desse carimbo de data/hora foi a resolução de um tique de relógio do sistema, conforme indicado pelo membro TimerResolution de TRACE_LOGFILE_HEADER. a partir do Windows 10, a resolução desse carimbo de data/hora é a resolução do contador de desempenho, conforme indicado pelo membro PerfFreq de TRACE_LOGFILE_HEADER.<br/> Para converter o carimbo de data/hora de um evento em unidades 100-NS, use a seguinte fórmula de conversão: <br/> scaledTimestamp = eventRecord. EventHeader. TimeStamp. QuadPart<br/> observe que, quando os eventos são capturados em um sistema que executa um so antes de Windows 10, se o volume de eventos for alto, a resolução do tempo do sistema pode não ser suficiente para determinar a sequência de eventos. Nesse caso, um conjunto de eventos terá o mesmo carimbo de data/hora, mas a ordem na qual o ETW entrega os eventos pode não estar correta. a partir do Windows 10, o carimbo de data/hora é capturado com precisão adicional, embora alguma instabilidade ainda possa ocorrer nos casos em que o relógio do sistema foi ajustado enquanto o rastreamento estava sendo capturado.<br/></td>
 </tr>
 <tr class="odd">
 <td><dl> <dt>Beta</dt> </dl></td>
-<td>Contador de ciclo de CPU. O contador de CPU fornece o carimbo de data e hora de resolução mais alto e consome menos recursos para recuperar. No entanto, o contador de CPU não é confiável e não deve ser usado na produção. Por exemplo, em alguns computadores, os temporizadores mudarão a frequência devido a alterações térmicas e de energia, além de serem interrompidos em alguns Estados.<br/> Para determinar a resolução, use o membro <strong>CpuSpeedInMHz</strong> de <a href="/windows/win32/api/evntrace/ns-evntrace-trace_logfile_header"><strong>TRACE_LOGFILE_HEADER</strong></a> ao consumir o evento.<br/> Se o hardware não oferecer suporte a esse tipo de relógio, o ETW usará a hora do sistema.<br/> <strong>Windows Server 2003, Windows XP com SP1 e Windows XP:</strong> Esse valor não tem suporte, foi introduzido no Windows Server 2003 com SP1 e no Windows XP com SP2.<br/></td>
+<td>Contador de ciclo de CPU. O contador de CPU fornece o carimbo de data e hora de resolução mais alto e consome menos recursos para recuperar. No entanto, o contador de CPU não é confiável e não deve ser usado na produção. Por exemplo, em alguns computadores, os temporizadores mudarão a frequência devido a alterações térmicas e de energia, além de serem interrompidos em alguns Estados.<br/> Para determinar a resolução, use o membro <strong>CpuSpeedInMHz</strong> de <a href="/windows/win32/api/evntrace/ns-evntrace-trace_logfile_header"><strong>TRACE_LOGFILE_HEADER</strong></a> ao consumir o evento.<br/> Se o hardware não oferecer suporte a esse tipo de relógio, o ETW usará a hora do sistema.<br/> <strong>Windows Server 2003, Windows xp com SP1 e Windows XP:</strong> esse valor não tem suporte, ele foi introduzido no Windows Server 2003 com SP1 e no Windows XP com SP2.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -205,9 +205,9 @@ c. Se ReservedFlags = = 3 (contador de ciclo de CPU): DOUBLE timeStampScale = 10
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                   |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                         |
-| parâmetro<br/>                   | <dl> <dt>Wmistr. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                   |
+| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                         |
+| Cabeçalho<br/>                   | <dl> <dt>Wmistr. h</dt> </dl> |
 
 
 

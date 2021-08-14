@@ -4,12 +4,12 @@ ms.assetid: b75249d1-3c8f-4dd5-b4a5-f698513d18e2
 title: Conceitos de cartão inteligente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1f77825ebc5021e9e8be90b7826fa6a135fbc64
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ba9946ba58a6faacf9b840c8991b2b0b7c4751c0e6cd573b5b09c433d4536cfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118917812"
 ---
 # <a name="smart-card-concepts"></a>Conceitos de cartão inteligente
 

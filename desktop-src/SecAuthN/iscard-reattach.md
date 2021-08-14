@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 3f5ff4cd46b2b523b0031e1389b96d9c2c3973a1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f28caee7a40574bf7f31fdc4fb55ddd81ea9e22cca12f1664950c96922d50902
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119482106"
 ---
 # <a name="iscardreattach-method"></a>Método iscard:: reattach
 
-\[O método de **reanexação** está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele não está disponível para uso no Windows Server 2003 com Service Pack 1 (SP1) e posterior, no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. Os [módulos de cartão inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
+\[O método de **reanexação** está disponível para uso nos sistemas operacionais especificados na seção requisitos. ele não está disponível para uso no Windows server 2003 com Service Pack 1 (SP1) e posterior, Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. Os [módulos de cartão inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
 
 O método de **reanexação** redefine ou reinicializa o [*cartão inteligente*](../secgloss/s-gly.md).
 
@@ -70,7 +70,7 @@ Indica o que fazer com o cartão.
 | Valor                                                                                                                                      | Significado                                                                                                            |
 |--------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
 | <span id="LEAVE"></span><span id="leave"></span><dl> <dt>**Deixe**</dt> </dl>       | Deixa o cartão inteligente no [*estado*](../secgloss/s-gly.md)atual.<br/> |
-| <span id="RESET"></span><span id="reset"></span><dl> <dt>**DEFINIDO**</dt> </dl>       | Redefine o cartão inteligente para algum estado conhecido.<br/>                                                              |
+| <span id="RESET"></span><span id="reset"></span><dl> <dt>**RESET**</dt> </dl>       | Redefine o cartão inteligente para algum estado conhecido.<br/>                                                              |
 | <span id="UNPOWER"></span><span id="unpower"></span><dl> <dt>**Desligamento**</dt> </dl> | Remove a energia do cartão inteligente.<br/>                                                                      |
 | <span id="EJECT"></span><span id="eject"></span><dl> <dt>**EJEÇÃO**</dt> </dl>       | Ejeta o cartão inteligente se o leitor tiver recursos de ejeção.<br/>                                             |
 
@@ -80,7 +80,7 @@ Indica o que fazer com o cartão.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um dos seguintes valores possíveis.
 
@@ -124,8 +124,8 @@ if (FAILED(hr))
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
 | Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                   |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                          |
 | parâmetro<br/>                   | <dl> <dt>Scardmgr. h</dt> </dl>   |

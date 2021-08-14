@@ -1,26 +1,26 @@
 ---
-title: Guia de início rápido do Direct2D para Windows 8
-description: Resume as etapas necessárias para desenhar com o Direct2D para Windows 8 e fornece código de exemplo. Direct2D é uma API de código nativo para criar gráficos 2D.
+title: Direct2D Início rápido para Windows 8
+description: resume as etapas necessárias para desenhar com Direct2D para Windows 8 e fornece código de exemplo. Direct2D é uma API de código nativo para criar gráficos 2d.
 ms.assetid: FF4623FA-CA60-4637-9EE6-34C4EC84E51A
 keywords:
 - Direct2D, exemplo de código de retângulo de desenho
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43442e57ed0949bdf39fc05ce1a69fded42b4b3d
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: a3fd732d1d18cd731f6e6caa46f456f4896f47f778f8edc824442dfee5f6ac4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117825427"
 ---
-# <a name="direct2d-quickstart-for-windows-8"></a>Guia de início rápido do Direct2D para Windows 8
+# <a name="direct2d-quickstart-for-windows-8"></a>Direct2D Início rápido para Windows 8
 
-Direct2D é uma API de modo imediato, de código nativo para a criação de gráficos 2D. Este tópico ilustra como usar o Direct2D para desenhar para um [**Windows:: UI:: Core:: CoreWindow**](/uwp/api/Windows.UI.Core.CoreWindow).
+Direct2D é uma API de modo imediato, de código nativo para criar gráficos 2d. este tópico ilustra como usar Direct2D para desenhar para um [**Windows:: UI:: Core:: CoreWindow**](/uwp/api/Windows.UI.Core.CoreWindow).
 
 Este tópico contém as seguintes seções:
 
 -   [Desenhando um retângulo simples](#drawing-a-simple-rectangle)
--   [Etapa 1: incluir o cabeçalho Direct2D](#step-1-include-direct2d-header)
+-   [etapa 1: incluir cabeçalho de Direct2D](#step-1-include-direct2d-header)
 -   [Etapa 2: criar um ID2D1Factory1](#step-2-create-an-id2d1factory1)
 -   [Etapa 3: criar um ID2D1Device e um ID2D1DeviceContext](#step-3-create-an-id2d1device-and-an-id2d1devicecontext)
 -   [Etapa 4: criar um pincel](#step-4-create-a-brush)
@@ -83,15 +83,15 @@ switch(message)
 
 
 
-O código para desenhar o mesmo retângulo com Direct2D é semelhante: ele cria recursos de desenho, descreve uma forma para desenhar, desenha a forma e libera os recursos de desenho. As seções a seguir descrevem cada uma dessas etapas em detalhes.
+o código para desenhar o mesmo retângulo com Direct2D é semelhante: ele cria recursos de desenho, descreve uma forma para desenhar, desenha a forma e libera os recursos de desenho. As seções a seguir descrevem cada uma dessas etapas em detalhes.
 
-## <a name="step-1-include-direct2d-header"></a>Etapa 1: incluir o cabeçalho Direct2D
+## <a name="step-1-include-direct2d-header"></a>etapa 1: incluir cabeçalho de Direct2D
 
 Além dos cabeçalhos necessários para o aplicativo, inclua os cabeçalhos d2d1. h e d2d1 \_ 1. h.
 
 ## <a name="step-2-create-an-id2d1factory1"></a>Etapa 2: criar um ID2D1Factory1
 
-Uma das primeiras coisas que qualquer exemplo de Direct2D faz é criar um [**ID2D1Factory1**](/windows/desktop/api/d2d1_1/nn-d2d1_1-id2d1factory1).
+uma das primeiras coisas que qualquer Direct2D exemplo faz é criar um [**ID2D1Factory1**](/windows/desktop/api/d2d1_1/nn-d2d1_1-id2d1factory1).
 
 
 ```C++
@@ -107,7 +107,7 @@ DX::ThrowIfFailed(
 
 
 
-A interface [**ID2D1Factory1**](/windows/desktop/api/d2d1_1/nn-d2d1_1-id2d1factory1) é o ponto de partida para usar Direct2D; Use um **ID2D1Factory1** para criar recursos do Direct2D.
+A interface [**ID2D1Factory1**](/windows/desktop/api/d2d1_1/nn-d2d1_1-id2d1factory1) é o ponto de partida para usar Direct2D; use um **ID2D1Factory1** para criar Direct2D recursos.
 
 Ao criar uma fábrica, você pode especificar se ela é de vários ou de thread único. (Para obter mais informações sobre fábricas com vários threads, consulte os comentários na [**página de referência do ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory).) Este exemplo cria uma fábrica de thread único.
 
@@ -115,7 +115,7 @@ Em geral, seu aplicativo deve criar a fábrica uma vez e mantê-la para a vida �
 
 ## <a name="step-3-create-an-id2d1device-and-an-id2d1devicecontext"></a>Etapa 3: criar um ID2D1Device e um ID2D1DeviceContext
 
-Depois de criar uma fábrica, use-a para criar um dispositivo Direct2D e, em seguida, use o dispositivo para criar um contexto de dispositivo Direct2D. Para criar esses objetos Direct2D, você deve ter um [**dispositivo Direct3D 11**](/windows/desktop/api/d3d11/nn-d3d11-id3d11device) , um [**dispositivo dxgi**](/windows/desktop/api/dxgi/nn-dxgi-idxgidevice)e uma [**cadeia de permuta dxgi**](/windows/desktop/api/dxgi1_2/nn-dxgi1_2-idxgiswapchain1). Confira [dispositivos e contextos de dispositivo](devices-and-device-contexts.md) para obter informações sobre como criar os pré-requisitos necessários.
+depois de criar uma fábrica, use-a para criar um dispositivo Direct2D e, em seguida, use o dispositivo para criar um contexto de dispositivo Direct2D. para criar esses Direct2D objetos, você deve ter um [**dispositivo Direct3D 11**](/windows/desktop/api/d3d11/nn-d3d11-id3d11device) , um [**dispositivo DXGI**](/windows/desktop/api/dxgi/nn-dxgi-idxgidevice)e uma [**cadeia de permuta DXGI**](/windows/desktop/api/dxgi1_2/nn-dxgi1_2-idxgiswapchain1). Confira [dispositivos e contextos de dispositivo](devices-and-device-contexts.md) para obter informações sobre como criar os pré-requisitos necessários.
 
 
 ```C++
@@ -143,9 +143,9 @@ Depois de criar uma fábrica, use-a para criar um dispositivo Direct2D e, em seg
 
 Um contexto de dispositivo é um dispositivo que pode executar operações de desenho e criar recursos de desenho dependentes de dispositivo, como pincéis. Você também usa o contexto do dispositivo para vincular um [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) a uma superfície DXGI para usar como um destino de renderização. O contexto do dispositivo pode ser renderizado para diferentes tipos de destinos.
 
-O código aqui declara as propriedades de bitmap que vincula a uma cadeia de permuta DXGI que é renderizada para um [**CoreWindow**](/uwp/api/Windows.UI.Core.CoreWindow). O método [**ID2D1DeviceContext:: CreateBitmapFromDxgiSurface**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromdxgisurface(idxgisurface_constd2d1_bitmap_properties1_id2d1bitmap1)) Obtém uma superfície de Direct2D da superfície DXGI. Isso faz com que tudo que seja processado para o [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) de destino seja renderizado para a superfície da cadeia de permuta.
+O código aqui declara as propriedades de bitmap que vincula a uma cadeia de permuta DXGI que é renderizada para um [**CoreWindow**](/uwp/api/Windows.UI.Core.CoreWindow). o método [**ID2D1DeviceContext:: CreateBitmapFromDxgiSurface**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromdxgisurface(idxgisurface_constd2d1_bitmap_properties1_id2d1bitmap1)) obtém uma superfície Direct2Dda da superfície DXGI. Isso faz com que tudo que seja processado para o [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) de destino seja renderizado para a superfície da cadeia de permuta.
 
-Quando você tiver a superfície Direct2D, use o método [**ID2D1DeviceContext:: SetTarget**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-settarget) para defini-lo como o destino de renderização ativo.
+quando você tiver a superfície de Direct2D, use o método [**ID2D1DeviceContext:: settarget**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-settarget) para defini-lo como o destino de renderização ativo.
 
 
 ```C++
@@ -200,9 +200,9 @@ DX::ThrowIfFailed(
 
 Um pincel é um objeto que pinta uma área, como o traço de uma forma ou o preenchimento de uma geometria. O pincel neste exemplo pinta uma área com uma cor sólida predefinida, preta.
 
-O Direct2D também fornece outros tipos de pincéis: pincéis de gradiente para pintura de gradientes lineares e radiais, um [**pincel de bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) para pintura com bitmaps e padrões e, a partir do Windows 8, um [**pincel de imagem**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1imagebrush) para pintar com uma imagem renderizada.
+o Direct2D também fornece outros tipos de pincéis: pincéis de gradiente para pintura de gradientes lineares e radiais, um [**pincel de bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) para pintura com bitmaps e padrões e, a partir de Windows 8, um [**pincel de imagem**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1imagebrush) para pintar com uma imagem renderizada.
 
-Algumas APIs de desenho fornecem canetas para desenhar contornos e pincéis para preencher formas. Direct2D é diferente: ele não fornece um objeto Pen, mas usa um pincel para desenhar contornos e preencher formas. Ao desenhar contornos, use a interface [**ID2D1StrokeStyle**](/windows/win32/api/d2d1/nn-d2d1-id2d1strokestyle) ou a partir do Windows 8, a interface [**ID2D1StrokeStyle1**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1strokestyle1) , com um pincel para controlar as operações de traçado de caminho.
+Algumas APIs de desenho fornecem canetas para desenhar contornos e pincéis para preencher formas. Direct2D é diferente: ele não fornece um objeto pen, mas usa um pincel para desenhar contornos e preencher formas. ao desenhar contornos, use a interface [**ID2D1StrokeStyle**](/windows/win32/api/d2d1/nn-d2d1-id2d1strokestyle) ou começando em Windows 8 interface [**ID2D1StrokeStyle1**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1strokestyle1) , com um pincel para controlar as operações de traçado de caminho.
 
 Um pincel só pode ser usado com o destino de renderização que o criou e com outros destinos de renderização no mesmo domínio de recurso. Em geral, você deve criar pincéis uma vez e remantê-las para a vida útil do destino de renderização que as criou. [**ID2D1SolidColorBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1solidcolorbrush) é a exceção solitário; Como é relativamente barato criar, você pode criar um **ID2D1SolidColorBrush** toda vez que desenhar um quadro, sem qualquer impacto perceptível no desempenho. Você também pode usar um único **ID2D1SolidColorBrush** e apenas alterar sua cor ou opacidade sempre que usá-lo.
 
@@ -242,7 +242,7 @@ O método [**IDXGISwapChain::P reenviado**](/windows/desktop/api/dxgi/nf-dxgi-id
 
 ## <a name="example-code"></a>Código de exemplo
 
-O código neste tópico mostra os elementos básicos de um aplicativo Direct2D. Para resumir, o tópico omite a estrutura do aplicativo e o código de tratamento de erros que é característica de um aplicativo bem escrito.
+o código neste tópico mostra os elementos básicos de um aplicativo Direct2D. Para resumir, o tópico omite a estrutura do aplicativo e o código de tratamento de erros que é característica de um aplicativo bem escrito.
 
  
 

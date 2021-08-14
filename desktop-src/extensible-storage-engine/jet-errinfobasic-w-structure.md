@@ -7,23 +7,23 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Hh475861(v=EXCHG.10)
 ms:contentKeyID: 37033567
 ms.date: 04/11/2016
 ms.topic: article
-ms.openlocfilehash: 99be77326fe9e037430203bf9744e550e8495fe1
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: f6a91d14fe636a2ccf3b00935af53db7caa0bf257833e72780d706e14822d5a3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103930774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119401835"
 ---
 # <a name="jet_errinfobasic_w-structure"></a>Estrutura de JET_ERRINFOBASIC_W
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_errinfobasic_w-structure"></a>Estrutura de JET_ERRINFOBASIC_W
 
 A estrutura de **JET_ERRINFOBASIC_W** define os dados que são retornados do método [JetGetErrorInfo ()](./jetgeterrorinfow-function.md) quando o JET_ErrorInfoSpecificErr InfoLevel é passado.
 
-Observação: esta documentação se baseia em uma versão preliminar do mecanismo de armazenamento extensível. Essas informações estão sujeitas a alterações.
+observação: esta documentação se baseia em uma versão preliminar do mecanismo de Armazenamento extensível. Essas informações estão sujeitas a alterações.
 
 ```cpp
 typedef struct { 
@@ -72,11 +72,11 @@ Reservado.
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows 8.</p></td>
+<td><p>Requer Windows 8.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows 8 Server.</p></td>
+<td><p>requer Windows 8 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>

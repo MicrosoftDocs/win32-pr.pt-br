@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.inst
 ms:contentKeyID: 55103301
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 254d8cc59b616cb5d885cc19dd747a919765123b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b95be0963e0b13928fbaa699c4b167fefdf33862c9c46f619fa319a3ab752347
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118076973"
 ---
 # <a name="instance-properties"></a>Propriedades da instância
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo de [instância](./instance-class.md) expõe os membros a seguir.
+O [Tipo](./instance-class.md) de instância expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -34,23 +34,23 @@ O tipo de [instância](./instance-class.md) expõe os membros a seguir.
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.runtime.interopservices.safehandle.isclosed#System_Runtime_InteropServices_SafeHandle_IsClosed">IsClosed</a></td>
+<td><a href="/dotnet/api/system.runtime.interopservices.safehandle.isclosed#System_Runtime_InteropServices_SafeHandle_IsClosed">Isclosed</a></td>
 <td>(Herdado de <a href="/dotnet/api/system.runtime.interopservices.safehandle">SafeHandle</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/microsoft.win32.safehandles.safehandlezeroorminusoneisinvalid.isinvalid#Microsoft_Win32_SafeHandles_SafeHandleZeroOrMinusOneIsInvalid_IsInvalid">Não inválido</a></td>
-<td>(Herdado de <a href="/dotnet/api/microsoft.win32.safehandles.safehandlezeroorminusoneisinvalid">SafeHandleZeroOrMinusOneIsInvalid</a>.)</td>
+<td><a href="/dotnet/api/microsoft.win32.safehandles.safehandlezeroorminusoneisinvalid.isinvalid#Microsoft_Win32_SafeHandles_SafeHandleZeroOrMinusOneIsInvalid_IsInvalid">Isinvalid</a></td>
+<td>(Herdado <a href="/dotnet/api/microsoft.win32.safehandles.safehandlezeroorminusoneisinvalid">de SafeHandleZeroOrMinusOneIsInvalid</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn350941(v=exchg.10).md">JetInstance</a></td>
-<td>Obtém o JET_INSTANCE que essa instância contém.</td>
+<td>Obtém a JET_INSTANCE que essa instância contém.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn350962(v=exchg.10).md">Parâmetros</a></td>
-<td>Obtém Instanceparameters para esta instância.</td>
+<td>Obtém os InstanceParameters para esta instância.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
@@ -69,4 +69,4 @@ Parte superior
 
 [Classe de instância](./instance-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -8,12 +8,12 @@ keywords:
 - ANÚNCIO do nome da entidade de serviço, formatos de nome para
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bda13cf5a095f8f2fd7ef1a209c6f3aeebd6654
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ce939d642180192500790253158eaa03dc41c8d173aed2d96d5175f07e39c101
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025714"
 ---
 # <a name="name-formats-for-unique-spns"></a>Formatos de nome para SPNs exclusivos
 
@@ -66,7 +66,7 @@ Um SPN deve ser exclusivo na floresta em que está registrado. Se não for exclu
 
 
 
- 
+ 
 
 Os componentes presentes nos SPNs de um serviço dependem de como o serviço é identificado e replicado. Há dois cenários básicos: serviços baseados em host e serviços replicáveis.
 
@@ -127,9 +127,9 @@ Outro exemplo de um serviço replicável é aquele que fornece serviços a um do
 
 Lembre-se de que, se o nome DNS de um computador for alterado, o sistema atualizará o &lt; elemento "host &gt; " para todos os SPNs registrados para esse host na floresta.
 
- 
+ 
 
- 
+ 
 
 
 
