@@ -4,12 +4,12 @@ ms.assetid: B0F5E19F-36A6-4965-A119-42AF601A64BE
 title: Gerenciamento do Hyper-V
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29dd0e50af0e9a79edb8c899097474b00176b750
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00dff327c204a1e48cf147c4e89d1ee620dbefed1280771590985df71cb1e77a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827881"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118392560"
 ---
 # <a name="hyper-v-management"></a>Gerenciamento do Hyper-V
 

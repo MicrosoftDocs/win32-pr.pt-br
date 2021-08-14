@@ -9,18 +9,18 @@ keywords:
 - AD de classe, modificando o defaultSecurityDescriptor para uma classe de objeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: efc3bd441cb19c43ee36550520d18ee38726b05e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: be0d837530454e8e563718d3f5974be22e5b7d42dfa5e29b8424a51c7a5c993d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103915937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118186321"
 ---
 # <a name="modifying-the-defaultsecuritydescriptor-for-an-object-class"></a>Modificando o defaultSecurityDescriptor para uma classe de objeto
 
 O exemplo de código a seguir recupera o descritor de segurança padrão para uma classe de objeto, adiciona uma ACE à DACL e, em seguida, define o descritor de segurança modificado na classe de objeto.
 
-Lembre-se de que a modificação de esquema está desabilitada, por padrão, em todos os controladores de domínio do Windows 2000. Para habilitar a modificação de esquema em um determinado DC, defina um \_ valor reg DWORD denominado "atualização de esquema permitido" na seguinte chave do registro:
+lembre-se de que a modificação de esquema está desabilitada, por padrão, em todos os controladores de domínio Windows 2000. Para habilitar a modificação de esquema em um determinado DC, defina um \_ valor reg DWORD denominado "atualização de esquema permitido" na seguinte chave do registro:
 
 **HKEY \_ \_** \\  \\  \\  \\  \\ **Parâmetros** NTDS dos serviços do sistema de máquina local CurrentControlSet
 
@@ -276,9 +276,9 @@ return hr;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

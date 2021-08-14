@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 19587cbaa79e2b89633560a7b7889219172d0c25
-ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
+ms.openlocfilehash: 79145936709e43fab9b87602233225567a0067528a31036aacc11c5b425c0dfe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112010859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118512885"
 ---
 # <a name="ps_3_0"></a>ps \_ 3 \_ 0
 
@@ -31,7 +31,7 @@ Um sombreador de pixel programável é feito de um conjunto de instruções que 
 
 Adicione um registro facial. Adicione um registro de posição. Registros de cores (v ) agora são um ponto totalmente flutuante e os registros de coordenadas de textura \# (t \# ) foram consolidados. As declarações de entrada têm os nomes de uso e vários usos são permitidos para componentes de um determinado registro.
 
-## <a name="dynamic-flow-control"></a>Controle de fluxo dinâmico
+## <a name="dynamic-flow-control"></a>Controle Flow dinâmico
 
 O dispositivo dá suporte ao controle de fluxo dinâmico ([se bool - ps](if-bool---ps.md), [break - ps](break---ps.md)e [break comp - \_ ps](break-comp---ps.md)). A profundidade do aninhamento varia de 0 a 24.
 
@@ -39,7 +39,7 @@ O dispositivo dá suporte ao controle de fluxo dinâmico ([se bool - ps](if-bool
 
 O número de registros temporários com suporte é 32.
 
-## <a name="static-flow-control-nesting-depth"></a>Profundidade de aninhamento do controle de fluxo estático
+## <a name="static-flow-control-nesting-depth"></a>Profundidade de aninhamento Flow controle estático
 
 A [chamada - ps](call---ps.md) / [callnz](callnz-bool---ps.md)  / [call \_ pred](callnz-pred---ps.md) pode ser aninhada a uma profundidade máxima de 4. Independentemente, [loop – ps](loop---ps.md)rep – as instruções / [ps](rep---ps.md) podem ser aninhadas a uma profundidade máxima de 4.
 
@@ -84,11 +84,11 @@ Se há suporte para ps 3 0, há suporte para as seguintes \_ \_ maiúsculas no h
 | Max Ltda                                                                                                | 16                                                                                                                                                                                                                                                                                                    |
 | PixelShaderVersion                                                                                           | 3 \_ 0                                                                                                                                                                                                                                                                                                  |
 | MaxPixelShader30InstructionSlots                                                                             | 512                                                                                                                                                                                                                                                                                                   |
-| Os seguintes limites primitivos são definidos:                                                                        | \_D3DPMISCCAPS BLENDOP, D3DPMISCCAPS \_ CLIPPLANESCALEDPOINTS, D3DPMISCCAPS \_ CLIPTLVERTS, D3DPMISCCAPS \_ CULLCCW, \_ D3DPMISCCAPS CULLCW, D3DPMISCCAPS \_ CULLNONE, D3DPMISCCAPS \_ BLENDINFVF, D3DPMISCCAPS \_ MASKZZ                                                                                               |
+| Os seguintes limites primitivos são definidos:                                                                        | D3DPMISCCAPS \_ BLENDOP, D3DPMISCCAPS \_ CLIPPLANESCALEDPOINTS, D3DPMISCCAPS \_ CLIPTLVERTS, D3DPMISCCAPS \_ CULLCCW, \_ D3DPMISCCAPS CULLCW, D3DPMISCCAPS \_ CULLNONE, D3DPMISCCAPS \_ BLENDINFVF, D3DPMISCCAPS \_ MASKZZ                                                                                               |
 | Os seguintes limites de raster estão definidos:                                                                           | D3DPRASTERCAPS \_ MIPMAPLODBIAS, D3DPRASTERCAPS \_ ANISOLANTAY, D3DPRASTERCAPS \_ COLORPERSPECTIVE, D3DPRASTERCAPS \_ SCISSORTEST em D3DCAPS9                                                                                                                                                                  |
 | Suporte completo para desvio de profundidade, incluindo:                                                                       | D3DPRASTERCAPS \_ SLOPESCALEDEPTHBIAS, D3DPRASTERCAPS \_ DEPTHBIAS                                                                                                                                                                                                                                        |
 | Conjunto completo de comparações de profundidade e teste alfa, incluindo:                                                  | Todos os D3DPCMPCAPS em D3DCAPS9.                                                                                                                                                                                                                                                                      |
-| Modos de mesclagem de origem                                                                                        | Todos os modos de mesclagem têm suporte como uma origem (exceto D3DPBLENDCAPS \_ SRCALPHASAT, D3DPBLENDCAPS \_ BOTHSRCALPHA e D3DPBLENDCAPS \_ BOTHINVSRCALPHA).                                                                                                                                                    |
+| Modos de mesclagem de origem                                                                                        | Todos os modos de mesclagem têm suporte como fonte (exceto D3DPBLENDCAPS \_ SRCALPHASAT, D3DPBLENDCAPS \_ BOTHSRCALPHA e D3DPBLENDCAPS \_ BOTHINVSRCALPHA).                                                                                                                                                    |
 | Há suporte para as seguintes tampas de textura:                                                                    | D3DPTEXTURECAPS \_ CUBEMAP, D3DPTEXTURECAPS \_ MIPCUBEMAP, D3DPTEXTURECAPS \_ MIPMAP, D3DPTEXTURECAPS \_ MIPVOLUMEMAP, D3DPTEXTURECAPS \_ PERSPECTIVE, D3DPTEXTURECAPS \_ PROJECTED, D3DPTEXTURECAPS \_ TEXREPEATNOTSCALEDBYSIZE, D3DPTEXTURECAPS \_ VOLUMEMAP                                                        |
 | Há suporte para os seguintes recursos em maiúsculas de filtro de textura, em maiúsculas de filtro de textura de volume e em maiúsculas de filtro de textura de cubo: | D3DPTFILTERCAPS \_ MINFPOINT, D3DPTFILTERCAPS \_ MINFLINEAR, D3DPTFILTERCAPS MINFANISFILTER (isso não é necessário para \_ VolumeTextureFilterCaps e CubeTextureFilterCaps ), \_ D3DPTFILTERCAPS MIPFPOINT, D3DPTFILTERCAPS \_ MIPFLINEAR, D3DPTFILTERCAPS \_ MAGFPOINT, D3DPTFILTERCAPS \_ MAGFLINEAR             |
 | Os seguintes modos de endereço de textura têm suporte em estágios de vértice e pixel:                                | D3DPTADDRESSCAPS \_ WRAP, D3DPTADDRESSCAPS \_ MIRROR, D3DPTADDRESSCAPS \_ FIX, D3DPTADDRESSCAPS \_ BORDER, D3DPTADDRESSCAPS \_ INDEPENDENTUV, D3DPTADDRESSCAPS \_ MIRRORONCE                                                                                                                                    |

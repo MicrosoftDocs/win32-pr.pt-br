@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. JetSetSystemParameter (JET_INSTANCE, JET_SESID, JET_param, Int32, Cadeia de caracteres)'
-title: Método API. JetSetSystemParameter (JET_INSTANCE, JET_SESID, JET_param, Int32, Cadeia de caracteres)
+description: 'Saiba mais sobre: Método Api.JetSetSystemParameter (JET_INSTANCE, JET_SESID, JET_param, Int32, String)'
+title: Método Api.JetSetSystemParameter (JET_INSTANCE, JET_SESID, JET_param, Int32, String)
 TOCTitle: JetSetSystemParameter method (JET_INSTANCE, JET_SESID, JET_param, Int32, String)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetSetSystemParameter(Microsoft.Isam.Esent.Interop.JET_INSTANCE,Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_param,System.Int32,System.String)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetsetsystemparameter(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bd320c42e1d24c0919010706ae3f7e61a65b78a2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 89bdd742f24949c6ced1d0b1639a02209dddd93e13ae160e6bae8b44996b2449
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105781440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119977496"
 ---
-# <a name="apijetsetsystemparameter-method-jet_instance-jet_sesid-jet_param-int32-string"></a>Método API. JetSetSystemParameter (JET_INSTANCE, JET_SESID, JET_param, Int32, Cadeia de caracteres)
+# <a name="apijetsetsystemparameter-method-jet_instance-jet_sesid-jet_param-int32-string"></a>Método Api.JetSetSystemParameter (JET_INSTANCE, JET_SESID, JET_param, Int32, String)
 
-Define opções de configuração do banco de dados.
+Define as opções de configuração do banco de dados.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -70,42 +70,42 @@ public static JET_wrn JetSetSystemParameter(
 #### <a name="parameters"></a>Parâmetros
 
   - instance  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
-    A instância na qual definir a opção ou [nil](./jet-instance.nil-property.md) para definir a opção em todas as instâncias.
+    A instância para definir a opção em ou [Nil](./jet-instance.nil-property.md) para definir a opção em todas as instâncias.
 
 <!-- end list -->
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
   - paramid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_param](./jet-param-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_param](./jet-param-enumeration.md)  
     
     O parâmetro a ser definido.
 
 <!-- end list -->
 
   - paramValue  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     O valor do parâmetro a ser definido, se o parâmetro for um tipo inteiro.
 
 <!-- end list -->
 
-  - paramstring  
-    Tipo: [System. String](/dotnet/api/system.string)  
+  - paramString  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     O valor do parâmetro a ser definido, se o parâmetro for um tipo de cadeia de caracteres.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [Microsoft.ISAM.ESENT.Interop.JET_wrn](./jet-wrn-enumeration.md)  
-Um código de aviso de ESENT.  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
+Um código de aviso ESENT.  
 
 ## <a name="see-also"></a>Confira também
 
@@ -115,6 +115,6 @@ Um código de aviso de ESENT.
 
 [Membros da API](./api-members.md)
 
-[Sobrecarga de JetSetSystemParameter](./api.jetsetsystemparameter-method.md)
+[Sobrecarga JetSetSystemParameter](./api.jetsetsystemparameter-method.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

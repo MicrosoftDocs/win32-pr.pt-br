@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 957ae5974d65430bd39ea41f2e094e9f9c7efb06
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b693c78ba3a3d7c68c33f68ec1494997536ffb10272cc384d89d9e94ded7145b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118206742"
 ---
 # <a name="iwicbitmaplock_getdatapointer_sta_proxy-function"></a>\_Função de proxy IWICBitmapLock Getdatapointr \_ STA \_
 
@@ -45,22 +45,22 @@ HRESULT IWICBitmapLock_GetDataPointer_STA_Proxy(
 *Isso \_ PTR* \[\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapLock**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmaplock) \** _
+Tipo: **[ **IWICBitmapLock**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmaplock)\***
 
-Ponteiro para este objeto [_ *IWICBitmapLock* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmaplock) .
+Ponteiro para este objeto [**IWICBitmapLock**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmaplock) .
 
 </dd> <dt>
 
 *pcbBufferSize* \[ fora\]
 </dt> <dd>
 
-Tipo: **uint \** _
+Tipo: **uint \***
 
 Um ponteiro que recebe o tamanho do buffer.
 
 </dd> <dt>
 
-_ppbData * \[ out\]
+*ppbData* \[ fora\]
 </dt> <dd>
 
 Tipo: **byte \* \***
@@ -69,7 +69,7 @@ Um ponteiro que recebe um ponteiro para o pixel superior esquerdo no retângulo 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -83,8 +83,8 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, somente aplicativos do Windows Vista \[ desktop\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                                                                             |
 | DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
 
 

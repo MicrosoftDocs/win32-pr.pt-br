@@ -4,12 +4,12 @@ ms.assetid: 48A515C2-96D3-4CBF-A48F-3F0B91F0CB2C
 title: Conjuntos de codificação TLS no Windows 8.1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 14580b70168fd032005e7fa6bc418f1eff9e9593
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 316dc649379f785662d1d818d0af11d882c33f1236113a0c8a8f71458b7e964b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118916125"
 ---
 # <a name="tls-cipher-suites-in-windows-81"></a>Conjuntos de codificação TLS no Windows 8.1
 
@@ -18,7 +18,7 @@ Os conjuntos de codificação só podem ser negociados para versões de TLS que 
 A disponibilidade de conjuntos de codificação deve ser controlada de uma das duas maneiras:
 
 -   A ordem de prioridade padrão é substituída quando uma lista de prioridades é configurada. Os conjuntos de codificação que não estão na lista de prioridades não serão usados.
--   Permitido quando o aplicativo passa \_ SCH \_ usar \_ criptografia forte: o provedor Microsoft Schannel filtrará pacotes de criptografia fracos conhecidos quando o aplicativo usar o \_ \_ sinalizador de criptografia forte do SCH \_ . No Windows 8.1, os conjuntos de codificação RC4 são filtrados.
+-   Permitido quando o aplicativo passa \_ SCH \_ usar \_ criptografia forte: o provedor Microsoft Schannel filtrará pacotes de criptografia fracos conhecidos quando o aplicativo usar o \_ \_ sinalizador de criptografia forte do SCH \_ . no Windows 8.1, os conjuntos de codificação RC4 são filtrados.
 
 > [!IMPORTANT]
 > Os serviços Web HTTP/2 falham com conjuntos de codificação não compatíveis com HTTP/2. Para garantir que seus serviços Web funcionem com clientes e navegadores HTTP/2, consulte [como implantar a ordenação personalizada do conjunto de codificação](https://support.microsoft.com/help/4032720/how-to-deploy-custom-cipher-suite-ordering-in-windows-server-2016).
@@ -27,7 +27,7 @@ A disponibilidade de conjuntos de codificação deve ser controlada de uma das d
 
 O FIPS-Compliance tornou-se mais complexo com a adição de curvas elípticas, tornando a coluna habilitada para o modo FIPS em versões anteriores desta tabela enganosa. Por exemplo, um conjunto de codificação como o TLS \_ ECDHE \_ RSA com o \_ \_ AES \_ 128 \_ CBC \_ sha256 é apenas uma reclamação de FIPS ao usar as curvas elípticas do NIST. Para descobrir quais combinações de curvas elípticas e conjuntos de codificação serão habilitados no modo FIPS, consulte a seção 3.3.1 de [diretrizes para a seleção, a configuração e o uso de implementações de TLS]( https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-52r1.pdf).
 
-O Windows 8.1 e o Windows Server 2012 R2 são atualizados pelo Windows Update pela [atualização 2919355](https://support.microsoft.com/kb/2919355) aplicada, que adiciona os novos conjuntos de codificação e altera a ordem de prioridade. Os seguintes conjuntos de codificação estão habilitados e nesta ordem de prioridade por padrão pelo provedor Microsoft Schannel:
+Windows 8.1 e Windows Server 2012 R2 são atualizados pelo Windows Update pela [atualização 2919355](https://support.microsoft.com/kb/2919355) aplicada, que adiciona os novos conjuntos de codificação e altera a ordem de prioridade. Os seguintes conjuntos de codificação estão habilitados e nesta ordem de prioridade por padrão pelo provedor Microsoft Schannel:
 
 
 
@@ -108,7 +108,7 @@ Os seguintes conjuntos de codificação têm suporte do Microsoft Schannel Provi
 
  
 
-Para adicionar conjuntos de codificação, use a opção política de grupo SSL Cipher Suite Order em configuração do computador > Modelos Administrativos > rede > definições de configuração SSL para configurar uma lista de prioridades para todos os conjuntos de codificação que você deseja habilitar.
+para adicionar conjuntos de codificação, use a opção política de grupo conjunto de criptografia SSL ordem em configuração do computador > Modelos Administrativos > rede > configuração ssl Configurações para configurar uma lista de prioridades para todos os conjuntos de codificação que você deseja habilitar.
 
  
 

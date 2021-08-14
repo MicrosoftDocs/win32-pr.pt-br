@@ -1,27 +1,27 @@
 ---
 title: O aplicativo de servidor
-description: Veja a parte do aplicativo do servidor de um exemplo de RPC (chamada de procedimento remoto). O exemplo é do aplicativo "Olá, Mundo" no SDK da Plataforma.
+description: Exiba a parte do aplicativo de servidor de um exemplo de RPC (chamada de procedimento remoto). O exemplo é do aplicativo ' Olá, Mundo ' no SDK da plataforma.
 ms.assetid: 82ccfd67-6626-49c4-8974-86ebc5841444
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34b8a2bb66fd415a9b8f778134edb4903f88a717
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: c393e16a4c26b39efb95d23a2745f75cbeb984cac466c869046f9775f94c80c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118923985"
 ---
 # <a name="the-server-application"></a>O aplicativo de servidor
 
-O exemplo a seguir é do aplicativo "Olá, Mundo" no diretório RPC Hello do SDK (Kit de Desenvolvimento de Software de \\ Plataforma). O lado do servidor do aplicativo distribuído informa ao sistema que seus serviços estão disponíveis. Em seguida, ele aguarda solicitações do cliente. O compilador MIDL deve ser usado com o exemplo abaixo.
+O exemplo a seguir é do aplicativo ' Olá, Mundo ' no diretório RPC \\ Hello do SDK (Software Development Kit) da plataforma. O lado do servidor do aplicativo distribuído informa ao sistema que seus serviços estão disponíveis. Em seguida, ele aguarda as solicitações do cliente. O compilador MIDL deve ser usado com o exemplo abaixo.
 
-Dependendo do tamanho do aplicativo e das preferências de codificação, você pode optar por implementar procedimentos remotos em um ou mais arquivos separados. Neste programa de tutorial, o arquivo de origem Hellos.c contém a rotina principal do servidor. O arquivo Hellop.c contém o procedimento remoto.
+Dependendo do tamanho do seu aplicativo e das suas preferências de codificação, você pode optar por implementar procedimentos remotos em um ou mais arquivos separados. Neste programa tutorial, o arquivo de origem hellos. c contém a rotina de servidor principal. O arquivo Hellop. c contém o procedimento remoto.
 
-O benefício de organizar os procedimentos remotos em arquivos separados é que os procedimentos podem ser vinculados a um programa autônomo para depurar o código antes que ele seja convertido em um aplicativo distribuído. Depois que os procedimentos funcionarem no programa autônomo, você poderá compilar e vincular os arquivos de origem que contêm os procedimentos remotos com o aplicativo de servidor. Assim como no arquivo de origem do aplicativo cliente, o arquivo de origem do aplicativo de servidor deve incluir o arquivo de header Hello.h.
+O benefício de organizar os procedimentos remotos em arquivos separados é que os procedimentos podem ser vinculados a um programa autônomo para depurar o código antes que ele seja convertido em um aplicativo distribuído. Depois que os procedimentos funcionam no programa autônomo, você pode compilar e vincular os arquivos de origem que contêm os procedimentos remotos com o aplicativo de servidor. Assim como no arquivo de origem do aplicativo cliente, o arquivo de origem do aplicativo do servidor deve incluir o arquivo de cabeçalho Hello. h.
 
-O servidor chama as funções de tempo de run time [**RPC RpcServerUseProtseqEp**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserveruseprotseqep) e [**RpcServerRegisterIf**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserverregisterif) para disponibilizar informações de associação ao cliente. Este programa de exemplo passa o nome do alça de interface **para RpcServerRegisterIf.** Os outros parâmetros são definidos como **NULL.** Em seguida, o servidor chama a [**função RpcServerListen**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserverlisten) para indicar que está aguardando solicitações do cliente.
+O servidor chama as funções de tempo de execução RPC [**RpcServerUseProtseqEp**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserveruseprotseqep) e [**RpcServerRegisterIf**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserverregisterif) para tornar as informações de associação disponíveis para o cliente. Este programa de exemplo passa o nome do identificador de interface para **RpcServerRegisterIf**. Os outros parâmetros são definidos como **NULL**. Em seguida, o servidor chama a função [**RpcServerListen**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserverlisten) para indicar que está aguardando as solicitações do cliente.
 
-O aplicativo de servidor também deve incluir as duas funções de gerenciamento de memória chamadas pelo stub do servidor: [**midl \_ user \_ allocate**](the-midl-user-allocate-function.md) e [**midl \_ user \_ free.**](the-midl-user-free-function.md) Essas funções alocam e liberam memória no servidor quando um procedimento remoto passa parâmetros para o servidor. Neste programa de exemplo, **\_ \_ alocar** usuário médio e usuário **midl \_ \_** gratuito são simplesmente wrappers para as funções de biblioteca C [**malloc**](pointers-and-memory-allocation.md) e **free**. (Observe que, nas declarações de encaminhamento geradas pelo compilador MIDL, "MIDL" está em letras maiúsculas. O arquivo de header Rpcndr.h define o usuário midl gratuito e o usuário médio alocado para ser usuário MIDL gratuito e alocar usuário \_ \_ \_ \_ \_ \_ \_ MIDL, \_ respectivamente.)
+O aplicativo de servidor também deve incluir as duas funções de gerenciamento de memória que o stub de servidor chama: [**\_ \_ alocar usuário**](the-midl-user-allocate-function.md) de MIDL e [**usuário de MIDL \_ \_ gratuito**](the-midl-user-free-function.md). Essas funções alocam e liberam memória no servidor quando um procedimento remoto passa parâmetros para o servidor. Neste programa de exemplo, **o \_ usuário \_ de MIDL Allocate** e o **usuário de MIDL \_ \_ Free** são simplesmente invólucros para as funções [**malloc**](pointers-and-memory-allocation.md) e **Free** da biblioteca C. (Observe que, nas declarações de encaminhamento geradas pelo compilador MIDL, "MIDL" é maiúsculo. O arquivo de cabeçalho Rpcndr. h define o \_ usuário MIDL \_ gratuito e o \_ usuário de MIDL \_ alocar para ser o \_ usuário MIDL \_ gratuito e o \_ usuário MIDL \_ ALLOCATE, respectivamente.)
 
 
 ```C++

@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: c86a29c4a7d01fad3b91db20035cb84751e0b78a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8af53b6617ad2d655367969195e16854715e9ab75b65416bd9c75deaa9932988
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118219812"
 ---
 # <a name="search-folder-sample"></a>Exemplo da pasta de pesquisa
 
@@ -23,12 +23,12 @@ Demonstra como criar uma pesquisa com restrições de consulta usando o modelo d
 Este tópico inclui as seções a seguir.
 
 -   [Descrição](#description)
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Baixando o exemplo](#downloading-the-sample)
 -   [Compilando o exemplo](#building-the-sample)
 -   [Executando o exemplo](#running-the-sample)
 
-## <a name="description"></a>Description
+## <a name="description"></a>Descrição
 
 Este exemplo mostra como criar uma pesquisa restrita usando a interface [**ISearchFolderItemFactory**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-isearchfolderitemfactory) para construir um item de Shell de pasta (um contêiner) que representa a consulta. Os resultados são exibidos usando a caixa de diálogo abrir arquivo.
 
@@ -49,7 +49,7 @@ Para obter requisitos adicionais, consulte o arquivo Leiame incluído com o exem
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-| Localização      | URL do caminho                                                                                             |
+| Location      | URL do caminho                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Exemplo de SearchFolder](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/searchfolder) |
 

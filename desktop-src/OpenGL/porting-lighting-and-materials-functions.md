@@ -1,104 +1,104 @@
 ---
 title: Portando funções de iluminação e materiais
-description: As funções OpenGL para iluminação e materiais diferem substancialmente das funções da íris GL. Diferentemente do íris GL, o OpenGL tem funções separadas para definir luzes, modelos leves e materiais.
+description: As funções OpenGL para iluminação e materiais diferem substancialmente das funções IRIS GL. Ao contrário do IRIS GL, o OpenGL tem funções separadas para definir luzes, modelos de luz e materiais.
 ms.assetid: de57d041-1ea1-46d0-b584-009608625ea5
 keywords:
-- Portabilidade do íris GL, iluminação
-- portando do íris GL, iluminação
-- portando para OpenGL do íris GL, iluminação
-- Portabilidade OpenGL do íris GL, iluminação
-- Portabilidade do íris GL, materiais
-- portando do íris GL, materiais
-- portando para OpenGL do íris GL, materiais
-- Portabilidade OpenGL do íris GL, materiais
+- Portação IRIS GL, iluminação
+- portando do IRIS GL, iluminação
+- portando para OpenGL do IRIS GL, iluminação
+- Portação openGL de IRIS GL, iluminação
+- Portação IRIS GL, materiais
+- portando do IRIS GL, materiais
+- portando para OpenGL do IRIS GL, materiais
+- Portação openGL de IRIS GL, materiais
 - iluminação
 - materiais
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c775670b7ae49e41fed35c192385c72e72e880b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 45041dde0902f983648c6d258f4c4a8220085d0d8bbeddc6fbdbc970033a50ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118933026"
 ---
 # <a name="porting-lighting-and-materials-functions"></a>Portando funções de iluminação e materiais
 
-As funções OpenGL para iluminação e materiais diferem substancialmente das funções da íris GL. Diferentemente do íris GL, o OpenGL tem funções separadas para definir luzes, modelos leves e materiais.
+As funções OpenGL para iluminação e materiais diferem substancialmente das funções IRIS GL. Ao contrário do IRIS GL, o OpenGL tem funções separadas para definir luzes, modelos de luz e materiais.
 
-Tenha os seguintes pontos em mente ao portar funções de iluminação e materiais:
+Lembre-se dos seguintes pontos ao portar funções de iluminação e materiais:
 
--   O OpenGL não tem nenhuma tabela de definições armazenadas. Você pode usar listas de exibição para imitar o mecanismo de definição/ligação do íris GL. Para obter mais informações sobre defs e associações, consulte [portando defs, associações e conjuntos](porting-defs--binds--and-sets.md).
+-   O OpenGL não tem nenhuma tabela de definições armazenadas. Você pode usar listas de exibição para imitar o mecanismo de def/bind do IRIS GL. Para obter mais informações sobre defs e binds, consulte [Portando Defs, Binds e Sets](porting-defs--binds--and-sets.md).
 -   Com o OpenGL, a atenuação é associada a cada fonte de luz, em vez do modelo de iluminação geral.
--   Os componentes difuso e especular são separados em fontes de luz OpenGL.
--   As fontes de luz OpenGL têm um componente alfa. Ao portar seu código de íris GL, defina este componente alfa como 1,0, indicando 100% opaco. Os valores Alfa são determinados pelo componente alfa somente de seus materiais, de modo que os objetos em sua cena terão a mesma aparência que faziam no íris GL.
+-   Componentes difusos e especulantes são separados em fontes de luz OpenGL.
+-   As fontes de luz OpenGL têm um componente alfa. Ao portar o código IRIS GL, de definir esse componente alfa como 1,0, indicando 100% opaco. Os valores alfa são determinados apenas pelo componente alfa de seus materiais, de modo que os objetos em sua cena terão a mesma aparência que no IRIS GL.
 
-A tabela a seguir lista as funções de iluminação e materiais da íris GL e suas funções OpenGL equivalentes.
+A tabela a seguir lista as funções de materiais e iluminação IRIS GL e suas funções equivalentes do OpenGL.
 
 
 
-| Função GL de íris                 | Função OpenGL                               | Significado                                                       |
+| Função IRIS GL                 | Função OpenGL                               | Significado                                                       |
 |----------------------------------|-----------------------------------------------|---------------------------------------------------------------|
-| **Imdef (deflight**,... **)**    | [glLight](gllight-functions.md)              | Defina uma fonte de luz.                                        |
-| **Imdef (DEFLMODEL**,... **)**   | [glLightModel](gllightmodel-functions.md)    | Defina um modelo de iluminação.                                      |
-| **Desassociar**                       | [**glEnable**](glenable.md) (GL \_ leve *i*) | Habilitar leve *i*.                                             |
-| **Desassociar**                       | **glEnable**( \_ iluminação GL)                  | Habilitar iluminação.                                              |
-| **Imdef (DEFMATERIAL**,... **)** | [**glMaterial**](glmaterial-functions.md)    | Defina um material.                                            |
-| **Imcolorização**                      | [**glColorMaterial**](glcolormaterial.md)    | Alterar o efeito de comandos de cor enquanto a iluminação estiver ativa. |
+| **Imdef(DEFLIGHT,**... **)**    | [glLight](gllight-functions.md)              | Defina uma fonte de luz.                                        |
+| **Imdef(DEFLMODEL,**... **)**   | [glLightModel](gllightmodel-functions.md)    | Defina um modelo de iluminação.                                      |
+| **Imbind**                       | [**glEnable**](glenable.md) ( GL \_ LIGHT *i*) | Habilitar light *i*.                                             |
+| **Imbind**                       | **glEnable**( GL \_ LIGHTING )                  | Habilitar a iluminação.                                              |
+| **Imdef(DEFMATERIAL,**... **)** | [**glMaterial**](glmaterial-functions.md)    | Defina um material.                                            |
+| **Imcolor**                      | [**glColorMaterial**](glcolormaterial.md)    | Altere o efeito dos comandos de cor enquanto a iluminação está ativa. |
 |                                  | [**glGetMaterial**](glgetmaterial.md)        | Obter parâmetros de material.                                      |
 
 
 
  
 
-A tabela a seguir lista vários parâmetros de material do íris GL e seus parâmetros OpenGL equivalentes.
+A tabela a seguir lista vários parâmetros de material IRIS GL e seus parâmetros equivalentes do OpenGL.
 
 
 
-| Índice de Imdef  | parâmetro glMaterial                              | Padrão              | Significado                                                                                       |
+| Índice Imdef  | Parâmetro glMaterial                              | Padrão              | Significado                                                                                       |
 |--------------|---------------------------------------------------|----------------------|-----------------------------------------------------------------------------------------------|
-| Alfa        | \_difusão GL                                       |                      | O quarto valor no parâmetro de \_ difusão GL especifica o valor alfa.                      |
-| TEMPERATURA      | \_ambiente GL                                       | (0,2, 0,2, 0,2, 1,0) | Cor do ambiente.                                                                                |
-| DIFUSA      | \_difusão GL                                       | (0,8, 0,8, 0,8, 1,0) | Cor difusa.                                                                                |
-| Alce     | \_ESPECULA GL                                      | (0,0, 0,0, 0,0, 1,0) | Cor emissiva.                                                                               |
-| LUMINOSIDADE    | GL \_ SHININESSGL \_ ambiente \_ e \_ difuso<br/> | 0.0                  | Expoente especular. Equivalente a chamar **glMaterial** duas vezes com os mesmos valores.<br/> |
-| COLORINDEXES | \_índices de cores GL \_                                |                      | Índices de cores para iluminação ambiente, difusa e especular.                                    |
+| Alfa        | GL \_ DIFUSO                                       |                      | O quarto valor no parâmetro GL \_ DIFFUSE especifica o valor alfa.                      |
+| Ambiente      | GL \_ AMBIENT                                       | (0.2, 0.2, 0.2, 1.0) | Cor do ambiente.                                                                                |
+| Difusa      | GL \_ DIFUSO                                       | (0.8, 0.8, 0.8, 1.0) | Cor difusa.                                                                                |
+| Especular     | GL \_ SPECULAR                                      | (0.0, 0.0, 0.0, 1.0) | Cor emissiva.                                                                               |
+| Brilho    | \_GLINESSGL \_ AMBIENTE E \_ \_ DIFUSO<br/> | 0,0                  | Expoente especular. Equivalente a chamar **glMaterial** duas vezes com os mesmos valores.<br/> |
+| COLORINDEXES | ÍNDICES \_ DE \_ CORES GL                                |                      | Índices de cores para iluminação ambiente, difusa e especular.                                    |
 
 
 
  
 
-Quando o primeiro parâmetro de **Imdef** é DEFMODEL, a conversão OpenGL equivalente é a função [**glLightModel**](gllightmodel-functions.md). A exceção é quando o parâmetro seguinte DEFMODEL é ATENUAtion: a função OpenGL equivalente é [**glLight**](gllight-functions.md).
+Quando o primeiro parâmetro de **Imdef** é DEFMODEL, a tradução openGL equivalente é a [**função glLightModel.**](gllightmodel-functions.md) A exceção é quando o parâmetro a seguir DEFMODEL é ATTENUATION: a função Equivalente do OpenGL é [**glLight.**](gllight-functions.md)
 
-A tabela a seguir lista os parâmetros de modelo de iluminação equivalentes para íris GL e OpenGL.
+A tabela a seguir lista os parâmetros de modelo de iluminação equivalentes para IRIS GL e OpenGL.
 
 
 
-| Índice de Imdef | parâmetro glLightModel          | Padrão              | Significado                                          |
+| Índice Imdef | Parâmetro glLightModel          | Padrão              | Significado                                          |
 |-------------|---------------------------------|----------------------|--------------------------------------------------|
-| TEMPERATURA     | \_ambiente de \_ modelo \_ Light GL       | (0,2, 0,2, 0,2, 1,0) | Cor do ambiente da cena.                          |
-| ATENUAÇÃO |                                 |                      | Consulte [**glLight**](gllight-functions.md).        |
-| LOCALVIEWER | \_ \_ Visualizador local de modelo Light \_ GL \_ | GL \_ falso            | Visualizador local (**true**) ou infinito (**false**). |
-| TWOSIDE     | GL \_ LIGHTMODEL \_ dois \_ lados       | GL \_ falso            | Use a iluminação em dois lados quando **for verdadeiro**.            |
+| Ambiente     | AMBIENTE \_ DO MODELO DE LUZ \_ \_ GL       | (0.2, 0.2, 0.2, 1.0) | Cor do ambiente da cena.                          |
+| Atenuação |                                 |                      | Consulte [**glLight**](gllight-functions.md).        |
+| LOCALVIEWER | VISUALIZADOR \_ LOCAL DO MODELO DE LUZ \_ \_ \_ GL | GL \_ FALSE            | Visualizador local (**TRUE**) ou infinito (**FALSE**). |
+| TWOSIDE     | GL \_ LIGHTMODEL \_ TWO \_ SIDE       | GL \_ FALSE            | Use a iluminação de dois lados quando **TRUE.**            |
 
 
 
  
 
-Quando o primeiro parâmetro de **Imdef** é deflight, a conversão OpenGL equivalente é a função [**glLight**](gllight-functions.md) .
+Quando o primeiro parâmetro de **Imdef** é DEFLIGHT, a tradução openGL equivalente é a [**função glLight.**](gllight-functions.md)
 
-A tabela a seguir lista os parâmetros de iluminação equivalentes para íris GL e OpenGL.
+A tabela a seguir lista os parâmetros de iluminação equivalentes para IRIS GL e OpenGL.
 
 
 
-| Índice de Imdef           | parâmetro glLight                                                                                 | Padrão                                                                             | Significado                                                                        |
+| Índice Imdef           | Parâmetro glLight                                                                                 | Padrão                                                                             | Significado                                                                        |
 |-----------------------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| TEMPERATURA               | GL \_ AMBIENTGL \_ difuso<br/> \_ESPECULA GL<br/>                                         | (0,0, 0,0, 0,0, 1,0) (1,0, 1,0, 1,0, 1,0)<br/> (1,0, 1,0, 1,0, 1,0)<br/> | Intensidade de ambiente. Intensidade difusa.<br/> Intensidade especular.<br/> |
+| Ambiente               | GL \_ AMBIENTGL \_ DIFUSO<br/> GL \_ SPECULAR<br/>                                         | (0.0, 0.0, 0.0, 1.0) (1.0, 1.0, 1.0, 1.0)<br/> (1.0, 1.0, 1.0, 1.0)<br/> | Intensidade do ambiente. Intensidade difusa.<br/> Intensidade especular.<br/> |
 | LCOLOR                | Não há equivalência.                                                                                    |                                                                                     |                                                                                |
-| PROPOSTAS              | \_posição GL                                                                                      | (0,0, 0,0, 1,0, 0,0)                                                                | Posição de luz.                                                             |
-| SPOTDIRECTION         | \_direção de spot GL \_                                                                               | (0, 0, 1)                                                                           | Direção do Spotlight.                                                        |
-| LUZ             | \_corte de \_ spot de EXPONENTGL Spot \_ de GL \_<br/>                                                     | 0180<br/>                                                                     | Distribuição de intensidade. Ângulo de propagação máximo da fonte de luz.<br/>        |
-| DEFMODEL, ATENUAÇÃO | \_ \_ atenuação de constante ATTENUATIONGL \_ linear \_ ingl<br/> \_atenuação quadrática do GL \_<br/> | (1, 0, 0)                                                                           | Fatores de atenuação.                                                           |
+| Posição              | POSIÇÃO \_ GL                                                                                      | (0.0, 0.0, 1.0, 0.0)                                                                | Posição da luz.                                                             |
+| SPOTDIRECTION         | DIREÇÃO \_ DO SPOT \_ GL                                                                               | (0, 0, 1)                                                                           | Direção do destaque.                                                        |
+| Holofotes             | CORTE \_ SPOT DE GL SPOT \_ EXPONENTGL \_ \_<br/>                                                     | 0180<br/>                                                                     | Distribuição de intensidade. Ângulo máximo de propagação da fonte de luz.<br/>        |
+| DEFMODEL, ATENUAÇÃO | ATENUAÇÃO \_ LINEAR GL CONSTANT \_ ATTENUATIONGL \_ \_<br/> \_ATENUAÇÃO \_ QUADRÁTICA GL<br/> | (1, 0, 0)                                                                           | Fatores de atenuação.                                                           |
 
 
 

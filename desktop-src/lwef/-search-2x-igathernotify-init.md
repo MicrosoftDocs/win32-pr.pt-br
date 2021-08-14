@@ -1,11 +1,11 @@
 ---
 title: Método IGatherNotify init (preterido)
-description: Este tópico da interface do Windows Desktop Search foi preterido e é substituído pela API ISearchPersistentItemsChangedSink do Windows Search no SDK do Windows. | Método IGatherNotify init (preterido)
+description: este tópico Windows interface de pesquisa da área de trabalho foi preterido e é substituído pela API do ISearchPersistentItemsChangedSink search Windows no SDK do Windows. | Método IGatherNotify init (preterido)
 ms.assetid: 6a5f89eb-10f4-4262-89bf-b47e345f12eb
 keywords:
-- Método init (preterido) recursos de ambiente herdado do Windows
-- Método init (preterido) recursos de ambiente herdado do Windows, interface IGatherNotify
-- Recursos do ambiente Windows herdado da interface IGatherNotify, método init (preterido)
+- método Init (preterido) Windows recursos de ambiente herdados
+- método Init (preterido) herdado Windows recursos de ambiente, interface IGatherNotify
+- IGatherNotify interface herdada Windows recursos do ambiente, método Init (preterido)
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 81379bb4a9a7c6099912bfc9ebca170141d76cd2
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: db5666197524afb454927036cdd68375dfb2937197ed211646b63d80a09e5b12
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105781439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119359296"
 ---
 # <a name="igathernotifyinit-deprecated-method"></a>Método IGatherNotify:: init (preterido)
 
 \[**Init** pode ser alterado ou indisponível nas versões subsequentes do sistema operacional ou produto.\]
 
-Este tópico da interface do Windows Desktop Search foi preterido e é substituído pela API [**ISearchPersistentItemsChangedSink**](/windows/desktop/api/searchapi/nn-searchapi-isearchpersistentitemschangedsink) do Windows Search no SDK do Windows.
+este tópico Windows interface de pesquisa da área de trabalho foi preterido e é substituído pela API do [**ISearchPersistentItemsChangedSink**](/windows/desktop/api/searchapi/nn-searchapi-isearchpersistentitemschangedsink) search Windows no SDK do Windows.
 
 Inicializa a interface do gatherer. Também especifica o índice a ser notificado e a loja de aplicativos a ser monitorada.
 
@@ -74,13 +74,13 @@ Parâmetro opcional, que permite que você passe uma matriz de escopos a ser ini
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Inicialize com Application = "RSApp", Project = "MyIndex".
+inicialize com application = "RSApp", Project = "myindex".
 
  
 

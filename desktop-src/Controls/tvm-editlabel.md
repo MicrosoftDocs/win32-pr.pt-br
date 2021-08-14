@@ -3,7 +3,7 @@ title: Mensagem de TVM_EDITLABEL (commctrl. h)
 description: Inicia a edição in-loco do texto do item especificado, substituindo o texto do item por um controle de edição de linha única que contém o texto.
 ms.assetid: ae844cbf-fa43-4f91-90cc-688f44bf77a5
 keywords:
-- Controles de TVM_EDITLABEL de mensagens do Windows
+- controles de Windows de mensagem de TVM_EDITLABEL
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3608c3f959c45571d9bc085518b763cf505180ee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 87ba9f9d0af4d6afb3c454f5e5477ccd67728bdec7f378b0f0a04adc901ba322
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118408583"
 ---
 # <a name="tvm_editlabel-message"></a>\_Mensagem TVM EDITLABEL
 
@@ -41,7 +41,7 @@ Identificador para o item a ser editado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o identificador para o controle de edição usado para editar o texto do item, se for bem-sucedido, ou **NULL** de outra forma.
 
@@ -59,8 +59,8 @@ O controle deve ter o foco antes de você enviar esta mensagem para o controle. 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **TVM \_ EDITLABELW** (Unicode) e **TVM \_ EDITLABELA** (ANSI)<br/>               |
 

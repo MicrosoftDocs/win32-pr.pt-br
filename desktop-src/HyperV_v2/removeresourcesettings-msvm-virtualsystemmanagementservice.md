@@ -1,5 +1,5 @@
 ---
-description: Remove as configurações de recursos virtuais de uma configuração de máquina virtual.
+description: Remove as configurações de recurso virtual de uma configuração de máquina virtual.
 ms.assetid: 74d9a70a-5258-4e4b-8131-b25513d11a4b
 title: Método RemoveResourceSettings da classe Msvm_VirtualSystemManagementService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 20a7c9fb10e4f7a6356e47f8c743266095de2042
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a55dd7fa6091257fc2bd81e3b8755c9cfb68a4e0830a99c9d0f3727cd0b35c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105768502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980026"
 ---
-# <a name="removeresourcesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método RemoveResourceSettings da \_ classe VirtualSystemManagementService Msvm
+# <a name="removeresourcesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método RemoveResourceSettings da classe Msvm \_ VirtualSystemManagementService
 
-Remove as configurações de recursos virtuais de uma configuração de máquina virtual. Quando aplicado a partes de uma configuração de máquina virtual atual, a máquina virtual ativa pode ser removida.
+Remove as configurações de recurso virtual de uma configuração de máquina virtual. Quando aplicada a partes de uma configuração de máquina virtual atual, a máquina virtual ativa pode ser removida.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,21 +40,21 @@ uint32 RemoveResourceSettings(
 
 <dl> <dt>
 
-*ResourceSettings* \[ no\]
+*ResourceSettings* \[ Em\]
 </dt> <dd>
 
-Uma matriz de referências a instâncias da classe [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata) , em que cada instância representa as configurações de um recurso virtual em uma configuração de máquina virtual que devem ser removidas.
+Uma matriz de referências a instâncias da classe [**CIM \_ ResourceAllocationSettingData,**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata) em que cada instância representa as configurações de um recurso virtual em uma configuração de máquina virtual que deve ser removida.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Se a operação for executada de forma assíncrona, esse método retornará 4096, e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Se a operação for executada de forma assíncrona, esse método retornará 4096 e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob.**](/previous-versions//cc136808(v=vs.85))
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos valores a seguir.
 
@@ -69,7 +69,7 @@ Esse método retorna um dos valores a seguir.
 **Falha** (2)
 </dt> <dt>
 
-**Tempo limite** (3)
+**Tempoout** (3)
 </dt> <dt>
 
 **Parâmetro inválido** (4)
@@ -78,16 +78,16 @@ Esse método retorna um dos valores a seguir.
 **Estado inválido** (5)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 </dt> <dt>
 
-**Método reservado** (4097.. 32767)
+**Método Reservado** (4097..32767)
 </dt> <dt>
 
-**Específico do fornecedor** (32768.. 65535)
+**Específico do** fornecedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -96,10 +96,10 @@ Esse método retorna um dos valores a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

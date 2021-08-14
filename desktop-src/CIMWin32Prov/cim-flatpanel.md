@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM FlatPanel representa os recursos e o gerenciamento do dispositivo lógico do painel plano.
+description: A classe \_ FlatPanel CIM representa os recursos e o gerenciamento do dispositivo lógico de painel simples.
 ms.assetid: 0c515621-4ff9-42af-a281-ac49af6d96ba
 ms.tgt_platform: multiple
-title: Classe CIM_FlatPanel
+title: CIM_FlatPanel classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -40,19 +40,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 0c399383223734d2f8ebe68528352c229a74bfbc
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 691d1f19ae7da4ce4df5901c8d105ea6e39458eaa9f4a4dcaad44a13c7470833
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119320926"
 ---
-# <a name="cim_flatpanel-class"></a>\_Classe CIM FlatPanel
+# <a name="cim_flatpanel-class"></a>Classe Cim \_ FlatPanel
 
-A classe **CIM \_ FlatPanel** representa os recursos e o gerenciamento do dispositivo lógico do painel plano.
+A **classe \_ FlatPanel CIM** representa os recursos e o gerenciamento do dispositivo lógico de painel simples.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) modelo CIM DMTF são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -95,14 +95,14 @@ class CIM_FlatPanel : CIM_Display
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ FlatPanel** tem estes tipos de membros:
+A **classe Cim \_ FlatPanel** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **CIM \_ FlatPanel** tem esses métodos.
+A **classe \_ FlatPanel cim** tem esses métodos.
 
 
 
@@ -117,31 +117,31 @@ A classe **CIM \_ FlatPanel** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ FlatPanel** tem essas propriedades.
+A **classe \_ FlatPanel CIM** tem essas propriedades.
 
 <dl> <dt>
 
 **Disponibilidade**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Estado operacional da DMTF \| 3,5 "," MIB. IETF \| host-REsources-MIB. hrDeviceStatus ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Estado Operacional DMTF \| \| 003.5", "MIB. IETF \| HOST-RESOURCES-MIB.hrDeviceStatus")
 </dt> </dl>
 
 Disponibilidade e status do dispositivo.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -155,7 +155,7 @@ Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 <span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>
 
-<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Execução/energia completa** (3)
+<span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>**Executando/energia completa** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -169,7 +169,7 @@ Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 <span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>
 
-<span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>**Em teste** (5)
+<span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>**Em Teste** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -183,21 +183,21 @@ Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 <span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>
 
-<span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>**Desligar (7** )
+<span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>**Desligar** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>
 
-<span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>**Off line** (8)
+<span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>**Off Line** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Off_Duty"></span><span id="off_duty"></span><span id="OFF_DUTY"></span>
 
-<span id="Off_Duty"></span><span id="off_duty"></span><span id="OFF_DUTY"></span>**Fora do imposto** (9)
+<span id="Off_Duty"></span><span id="off_duty"></span><span id="OFF_DUTY"></span>**Fora de** serviço (9)
 
 
 </dt> <dd></dd> <dt>
@@ -225,7 +225,7 @@ Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 <span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>
 
-<span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>Economia **de energia-desconhecido** (13)
+<span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>**Power Save – Desconhecido** (13)
 
 
 </dt> <dd>
@@ -236,47 +236,47 @@ O dispositivo é conhecido por estar em um modo de economia de energia, mas seu 
 
 <span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>
 
-<span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>Economia **de energia-modo de baixa energia** (14)
+<span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>**Economia de energia – modo de energia baixa** (14)
 
 
 </dt> <dd>
 
-O dispositivo está em um estado de economia de energia, mas ainda está funcionando e pode exibir o desempenho degradado.
+O dispositivo está em um estado de economia de energia, mas ainda está funcionando e pode apresentar desempenho degradado.
 
 </dd> <dt>
 
 <span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>
 
-<span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>**Power Save-em espera** (15)
+<span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>**Economia de energia – espera** (15)
 
 
 </dt> <dd>
 
-O dispositivo não está funcionando, mas pode ser levado a uma potência completa rapidamente.
+O dispositivo não está funcionando, mas pode ser levado ao máximo rapidamente.
 
 </dd> <dt>
 
 <span id="Power_Cycle"></span><span id="power_cycle"></span><span id="POWER_CYCLE"></span>
 
-<span id="Power_Cycle"></span><span id="power_cycle"></span><span id="POWER_CYCLE"></span>**Ciclo de energia** (16)
+<span id="Power_Cycle"></span><span id="power_cycle"></span><span id="POWER_CYCLE"></span>**Power Cycle** (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>
 
-<span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>Economia **de energia-aviso** (17)
+<span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>**Power Save – Aviso** (17)
 
 
 </dt> <dd>
 
-O dispositivo está em um estado de aviso, embora também esteja em um modo de economia de energia.
+O dispositivo está em um estado de aviso, embora também em um modo de economia de energia.
 
 </dd> <dt>
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-<span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>Em **pausa** (18)
+<span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>**Pausado** (18)
 
 
 </dt> <dd>
@@ -309,7 +309,7 @@ O dispositivo não está configurado.
 
 <span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>
 
-<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Desativado** (21)
+<span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>**Quiesced** (21)
 
 
 </dt> <dd>
@@ -329,19 +329,19 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Legenda")
 </dt> </dl>
 
-Breve descrição textual do objeto.
+Descrição textual curta do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **ConfigManagerErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -350,15 +350,15 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Código de erro do Win32 Configuration Manager.
+Código de erro Gerenciador de Configurações Win32.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
 <span id="This_device_is_working_properly."></span><span id="this_device_is_working_properly."></span><span id="THIS_DEVICE_IS_WORKING_PROPERLY."></span>
 
-<span id="this_device_is_working_properly."></span><span id="THIS_DEVICE_IS_WORKING_PROPERLY."></span>**Este dispositivo está funcionando corretamente.**  acima (0)
+<span id="this_device_is_working_properly."></span><span id="THIS_DEVICE_IS_WORKING_PROPERLY."></span>**Esse dispositivo está funcionando corretamente.**  acima (0)
 
 
 </dt> <dd>
@@ -369,7 +369,7 @@ O dispositivo está funcionando corretamente.
 
 <span id="This_device_is_not_configured_correctly."></span><span id="this_device_is_not_configured_correctly."></span><span id="THIS_DEVICE_IS_NOT_CONFIGURED_CORRECTLY."></span>
 
-<span id="this_device_is_not_configured_correctly."></span><span id="THIS_DEVICE_IS_NOT_CONFIGURED_CORRECTLY."></span>**Este dispositivo não está configurado corretamente.** (1)
+<span id="this_device_is_not_configured_correctly."></span><span id="THIS_DEVICE_IS_NOT_CONFIGURED_CORRECTLY."></span>**Esse dispositivo não está configurado corretamente.** (1)
 
 
 </dt> <dd>
@@ -380,25 +380,25 @@ O dispositivo não está configurado corretamente.
 
 <span id="Windows_cannot_load_the_driver_for_this_device."></span><span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>
 
-<span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>**O Windows não pode carregar o driver para este dispositivo.** (2)
+<span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>**Windows pode carregar o driver para este dispositivo.** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="The_driver_for_this_device_might_be_corrupted__or_your_system_may_be_running_low_on_memory_or_other_resources."></span><span id="the_driver_for_this_device_might_be_corrupted__or_your_system_may_be_running_low_on_memory_or_other_resources."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_MIGHT_BE_CORRUPTED__OR_YOUR_SYSTEM_MAY_BE_RUNNING_LOW_ON_MEMORY_OR_OTHER_RESOURCES."></span>
 
-<span id="the_driver_for_this_device_might_be_corrupted__or_your_system_may_be_running_low_on_memory_or_other_resources."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_MIGHT_BE_CORRUPTED__OR_YOUR_SYSTEM_MAY_BE_RUNNING_LOW_ON_MEMORY_OR_OTHER_RESOURCES."></span>**O driver para este dispositivo pode estar corrompido ou o sistema pode estar com pouca memória ou outros recursos.** (3)
+<span id="the_driver_for_this_device_might_be_corrupted__or_your_system_may_be_running_low_on_memory_or_other_resources."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_MIGHT_BE_CORRUPTED__OR_YOUR_SYSTEM_MAY_BE_RUNNING_LOW_ON_MEMORY_OR_OTHER_RESOURCES."></span>**O driver para esse dispositivo pode estar corrompido ou seu sistema pode estar com pouca memória ou outros recursos.** (3)
 
 
 </dt> <dd>
 
-O driver para este dispositivo pode estar corrompido ou o sistema pode estar com pouca memória ou outros recursos.
+O driver para esse dispositivo pode estar corrompido ou o sistema pode estar com pouca memória ou outros recursos.
 
 </dd> <dt>
 
 <span id="This_device_is_not_working_properly._One_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="this_device_is_not_working_properly._one_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY._ONE_OF_ITS_DRIVERS_OR_YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>
 
-<span id="This_device_is_not_working_properly._One_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="this_device_is_not_working_properly._one_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY._ONE_OF_ITS_DRIVERS_OR_YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>**Este dispositivo não está funcionando corretamente. Um de seus drivers ou seu registro pode estar corrompido.** (4)
+<span id="This_device_is_not_working_properly._One_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="this_device_is_not_working_properly._one_of_its_drivers_or_your_registry_might_be_corrupted."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY._ONE_OF_ITS_DRIVERS_OR_YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>**Esse dispositivo não está funcionando corretamente. Um de seus drivers ou seu registro pode estar corrompido.** (4)
 
 
 </dt> <dd>
@@ -409,23 +409,23 @@ O dispositivo não está funcionando corretamente. Um de seus drivers ou o regis
 
 <span id="The_driver_for_this_device_needs_a_resource_that_Windows_cannot_manage."></span><span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>
 
-<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**O driver para este dispositivo precisa de um recurso que o Windows não possa gerenciar.** (5)
+<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**O driver para esse dispositivo precisa de um recurso que Windows pode gerenciar.** (5)
 
 
 </dt> <dd>
 
-O driver para o dispositivo requer um recurso que o Windows não pode gerenciar.
+O driver para o dispositivo requer um recurso que Windows pode gerenciar.
 
 </dd> <dt>
 
 <span id="The_boot_configuration_for_this_device_conflicts_with_other_devices."></span><span id="the_boot_configuration_for_this_device_conflicts_with_other_devices."></span><span id="THE_BOOT_CONFIGURATION_FOR_THIS_DEVICE_CONFLICTS_WITH_OTHER_DEVICES."></span>
 
-<span id="the_boot_configuration_for_this_device_conflicts_with_other_devices."></span><span id="THE_BOOT_CONFIGURATION_FOR_THIS_DEVICE_CONFLICTS_WITH_OTHER_DEVICES."></span>**A configuração de inicialização para este dispositivo está em conflito com outros dispositivos.**  (6)
+<span id="the_boot_configuration_for_this_device_conflicts_with_other_devices."></span><span id="THE_BOOT_CONFIGURATION_FOR_THIS_DEVICE_CONFLICTS_WITH_OTHER_DEVICES."></span>**A configuração de inicialização para esse dispositivo entra em conflito com outros dispositivos.**  (6)
 
 
 </dt> <dd>
 
-A configuração de inicialização para o dispositivo está em conflito com outros dispositivos.
+A configuração de inicialização para o dispositivo entra em conflito com outros dispositivos.
 
 </dd> <dt>
 
@@ -449,7 +449,7 @@ O carregador de driver para o dispositivo está ausente.
 
 <span id="This_device_is_not_working_properly_because_the_controlling_firmware_is_reporting_the_resources_for_the_device_incorrectly."></span><span id="this_device_is_not_working_properly_because_the_controlling_firmware_is_reporting_the_resources_for_the_device_incorrectly."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THE_CONTROLLING_FIRMWARE_IS_REPORTING_THE_RESOURCES_FOR_THE_DEVICE_INCORRECTLY."></span>
 
-<span id="this_device_is_not_working_properly_because_the_controlling_firmware_is_reporting_the_resources_for_the_device_incorrectly."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THE_CONTROLLING_FIRMWARE_IS_REPORTING_THE_RESOURCES_FOR_THE_DEVICE_INCORRECTLY."></span>**Este dispositivo não está funcionando corretamente porque o firmware de controle está relatando os recursos para o dispositivo incorretamente.** (9)
+<span id="this_device_is_not_working_properly_because_the_controlling_firmware_is_reporting_the_resources_for_the_device_incorrectly."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THE_CONTROLLING_FIRMWARE_IS_REPORTING_THE_RESOURCES_FOR_THE_DEVICE_INCORRECTLY."></span>**Esse dispositivo não está funcionando corretamente porque o firmware de controle está relatando os recursos para o dispositivo incorretamente.** (9)
 
 
 </dt> <dd>
@@ -493,12 +493,12 @@ O dispositivo não pode encontrar recursos livres suficientes para usar.
 
 <span id="Windows_cannot_verify_this_device_s_resources."></span><span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>
 
-<span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>**O Windows não pode verificar os recursos deste dispositivo.** (13)
+<span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>**Windows não pode verificar os recursos desse dispositivo.** (13)
 
 
 </dt> <dd>
 
-O Windows não pode verificar os recursos do dispositivo.
+Windows não pode verificar os recursos do dispositivo.
 
 </dd> <dt>
 
@@ -526,12 +526,12 @@ O dispositivo não está funcionando corretamente devido a um possível problema
 
 <span id="Windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>
 
-<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**O Windows não pode identificar todos os recursos que este dispositivo usa.** (16)
+<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows não pode identificar todos os recursos que este dispositivo usa.** (16)
 
 
 </dt> <dd>
 
-O Windows não pode identificar todos os recursos que o dispositivo usa.
+Windows não pode identificar todos os recursos que o dispositivo usa.
 
 </dd> <dt>
 
@@ -577,12 +577,12 @@ O registro pode estar corrompido.
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>
 
-<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Falha do sistema: Tente alterar o driver deste dispositivo. Se isso não funcionar, consulte a documentação do hardware. O Windows está removendo este dispositivo.** (21)
+<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Falha do sistema: Tente alterar o driver deste dispositivo. Se isso não funcionar, consulte a documentação do hardware. Windows está removendo este dispositivo.** (21)
 
 
 </dt> <dd>
 
-Falha do sistema. Se a alteração do driver de dispositivo não for eficaz, consulte a documentação do hardware. O Windows está removendo o dispositivo.
+Falha do sistema. Se a alteração do driver de dispositivo não for eficaz, consulte a documentação do hardware. Windows está removendo o dispositivo.
 
 </dd> <dt>
 
@@ -621,23 +621,23 @@ O dispositivo não está presente, não está funcionando corretamente ou não t
 
 <span id="Windows_is_still_setting_up_this_device."></span><span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>
 
-<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**O Windows ainda está configurando este dispositivo.** (25)
+<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows ainda está configurando este dispositivo.** (25)
 
 
 </dt> <dd>
 
-O Windows ainda está configurando o dispositivo.
+Windows ainda está configurando o dispositivo.
 
 </dd> <dt>
 
 <span id="Windows_is_still_setting_up_this_device."></span><span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>
 
-<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**O Windows ainda está configurando este dispositivo.** (26)
+<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows ainda está configurando este dispositivo.** (26)
 
 
 </dt> <dd>
 
-O Windows ainda está configurando o dispositivo.
+Windows ainda está configurando o dispositivo.
 
 </dd> <dt>
 
@@ -687,12 +687,12 @@ O dispositivo está usando um recurso de IRQ que outro dispositivo está usando.
 
 <span id="This_device_is_not_working_properly_because_Windows_cannot_load_the_drivers_required_for_this_device."></span><span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>
 
-<span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>**Este dispositivo não está funcionando corretamente porque o Windows não pode carregar os drivers necessários para este dispositivo.** (31)
+<span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>**este dispositivo não está funcionando corretamente porque Windows não pode carregar os drivers necessários para este dispositivo.** (31)
 
 
 </dt> <dd>
 
-O dispositivo não está funcionando corretamente; O Windows não pode carregar os drivers de dispositivo necessários.
+O dispositivo não está funcionando corretamente; Windows não pode carregar os drivers de dispositivo necessários.
 
 </dd> </dl>
 
@@ -1196,10 +1196,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Status atual do objeto. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Status atual do objeto. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Os valores incluem o seguinte:
 
@@ -1214,28 +1214,28 @@ Os valores incluem o seguinte:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Erro** ("erro")
+**Erro** ("Erro")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconhecido** ("desconhecido")
+**Desconhecido** ("Desconhecido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Falha de Pred** ("Pred Fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
@@ -1249,42 +1249,42 @@ Os valores incluem o seguinte:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Parando** ("parando")
+**Parando** ("Parando")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Serviço** ("serviço")
+**Serviço** ("Serviço")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sob estresse** ("sob estresse")
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-Não **recuperar** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sem contato** ("sem contato")
+**Sem contato** ("Sem contato")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Perda de comunicação** ("perda de comunicação")
+**Perda de vírgula** ("comm perdida")
 
 
 </dt> <dd></dd> </dl>
@@ -1294,24 +1294,24 @@ Não **recuperar** ("Recover")
 **StatusInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Estado operacional da DMTF \| 3,3 ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Estado Operacional DMTF \| \| 003.3")
 </dt> </dl>
 
-Estado do dispositivo lógico. Se essa propriedade não se aplicar ao dispositivo lógico, o valor 5 (não aplicável) deverá ser usado.
+Estado do dispositivo lógico. Se essa propriedade não se aplicar ao dispositivo lógico, o valor 5 (Não Aplicável) deverá ser usado.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -1346,16 +1346,16 @@ Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 </dd> <dt>
 
-**SupportsColor**
+**Supportscolor**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se **for true**, o painel Flat oferecerá suporte à exibição de cores.
+Se **TRUE**, o painel simples dá suporte à exibição de cores.
 
 </dd> <dt>
 
@@ -1368,16 +1368,16 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ sistema CIM**](cim-system.md).**CreationClassName**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**chave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nome da classe de criação do sistema de escopo.
+Nome da classe de criação do sistema de definição de scoping.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
-**SystemName**
+**Systemname**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -1386,25 +1386,25 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ sistema CIM**](cim-system.md).**Name**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Sistema CIM \_**](cim-system.md).**Nome**"), [**Chave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nome do sistema de escopo.
+Nome do sistema de definição de scoping.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **VerticalResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("pixels")
+Qualificadores: [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("pixels")
 </dt> </dl>
 
 Resolução vertical, em pixels.
@@ -1413,11 +1413,11 @@ Resolução vertical, em pixels.
 
 ## <a name="remarks"></a>Comentários
 
-A classe **CIM \_ FlatPanel** é derivada da [**\_ exibição de CIM**](cim-display.md).
+A **classe \_ FlatPanel CIM** é derivada da [**exibição CIM. \_**](cim-display.md)
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -1427,8 +1427,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -1437,7 +1437,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**Exibição de CIM \_**](cim-display.md)
+[**Exibição cim \_**](cim-display.md)
 </dt> </dl>
 
  

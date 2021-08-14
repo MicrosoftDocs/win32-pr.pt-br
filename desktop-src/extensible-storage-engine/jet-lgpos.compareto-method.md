@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método JET_LGPOS. CompareTo'
-title: Método JET_LGPOS. CompareTo
+description: 'Saiba mais sobre: JET_LGPOS.CompareTo'
+title: método JET_LGPOS.CompareTo
 TOCTitle: 'CompareTo method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_LGPOS.CompareTo(Microsoft.Isam.Esent.Interop.JET_LGPOS)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_lgpos.compareto(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 83012ed755ab876618147c013e99868927e16f1f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9908933a65faad3908e60b2ce64b072b51b271dffd95bb159c6513c120f3e8b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761431"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119358666"
 ---
-# <a name="jet_lgposcompareto-method"></a>Método JET_LGPOS. CompareTo
+# <a name="jet_lgposcompareto-method"></a>método JET_LGPOS.CompareTo
 
 Compara essa posição de log com outra posição de log e determina se essa instância é anterior, a mesma que ou após a outra instância.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -62,25 +62,25 @@ public int CompareTo(
 #### <a name="parameters"></a>Parâmetros
 
   - outros  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
     
-    A posição do log para comparar com a instância atual.
+    A posição de log a ser comparada com a instância atual.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
-Um número assinado que indica as posições relativas dessa instância e o parâmetro de valor.  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
+Um número com sinal que indica as posições relativas dessa instância e o parâmetro value.  
 
 #### <a name="implements"></a>Implementações
 
-[IComparable \<T\> . CompareTo (T)](/dotnet/api/system.icomparable-1.compareto#System_IComparable_1_CompareTo__0_)  
+[\<T\>IComparable. CompareTo(T)](/dotnet/api/system.icomparable-1.compareto#System_IComparable_1_CompareTo__0_)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_LGPOS](./jet-lgpos-structure2.md)
+[JET_LGPOS estrutura](./jet-lgpos-structure2.md)
 
-[Membros do JET_LGPOS](./jet-lgpos-members.md)
+[JET_LGPOS membros](./jet-lgpos-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

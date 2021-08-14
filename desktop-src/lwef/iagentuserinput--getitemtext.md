@@ -4,16 +4,16 @@ description: IAgentUserInput GetItemText
 ms.assetid: 69653806-c001-4015-bd05-3c261a312ede
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7010172147f86282903641c46aa5137ce69c80be
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3dd9c1392bd56e3bb59212edeb79d862260786edb87583c0e8fdf049e8345b40
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104004780"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119359036"
 ---
 # <a name="iagentuserinputgetitemtext"></a>IAgentUserInput::GetItemText
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT GetItemText(
@@ -49,9 +49,9 @@ Se a entrada de voz não foi a origem do comando, por exemplo, se o usuário sel
 [**IAgentUserInput:: GetItemConfidence**](iagentuserinput--getitemconfidence.md), [**IAgentUserInput:: getitemid**](iagentuserinput--getitemid.md), [**IAgentUserInput:: GetAllItemData**](iagentuserinput--getallitemdata.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

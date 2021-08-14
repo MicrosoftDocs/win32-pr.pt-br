@@ -1,7 +1,7 @@
 ---
-description: Método IShellDispatch2. instop – interrompe um serviço nomeado.
+description: Método IShellDispatch2.ServiceStop – interrompe um serviço nomeado.
 ms.assetid: f4cd0e2c-4ecc-4e9f-a0b5-d2a8a739f0e2
-title: Método IShellDispatch2. OnStop (shldisp. h)
+title: Método IShellDispatch2.ServiceStop (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 651138eb687cfd83406bc6e1a7fcf520ff001171
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 71bc0502d45e4092decfe1b712ed11f75a02bf50d112436ad1d21f9e02c17e72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118221017"
 ---
-# <a name="ishelldispatch2servicestop-method"></a>Método IShellDispatch2. OnStop
+# <a name="ishelldispatch2servicestop-method"></a>Método IShellDispatch2.ServiceStop
 
 Interrompe um serviço nomeado.
 
@@ -51,21 +51,21 @@ IShellDispatch2.ServiceStop( _
 
 <dl> <dt>
 
-*sServiceName* \[ no\]
+*sServiceName* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Uma **cadeia de caracteres** que contém o nome do serviço.
+Uma **Cadeia de** caracteres que contém o nome do serviço.
 
 </dd> <dt>
 
-*vPersistent* \[ no\]
+*vPersistent* \[ Em\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variante**
 
-Defina como **true** para que o serviço seja iniciado pelo Gerenciador de controle de serviço quando o [**instart**](ishelldispatch2-servicestart.md) for chamado. Para deixar a configuração de serviço inalterada, defina *vPersistent* como **false**.
+Definido como **true** para que o serviço seja iniciado pelo gerenciador de controle de serviço [**quando ServiceStart**](ishelldispatch2-servicestart.md) for chamado. Para deixar a configuração do serviço inalterada, de *acordo com vPersistent* como **false.**
 
 </dd> </dl>
 
@@ -73,29 +73,29 @@ Defina como **true** para que o serviço seja iniciado pelo Gerenciador de contr
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **variante \***
+Tipo: **\* Variante**
 
-Retornará **true** se for bem-sucedido; caso contrário, **false**.
+Retornará **true se** for bem-sucedido; caso contrário, **false.**
 
 ### <a name="vb"></a>VB
 
-Tipo: **variante \***
+Tipo: **\* Variante**
 
-Retornará **true** se for bem-sucedido; caso contrário, **false**.
+Retornará **true se** for bem-sucedido; caso contrário, **false.**
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é implementado e acessado por meio do método [**shell. OnStop**](./shell-servicestop.md) .
+Esse método é implementado e acessado por meio do [**método Shell.ServiceStop.**](./shell-servicestop.md)
 
-O método retornará **false** se o serviço já tiver sido interrompido. Antes de chamar esse método, você pode chamar [**shell. IsServiceRunning**](./shell-isservicerunning.md) para verificar o status do serviço.
+O método **retornará false** se o serviço já tiver sido interrompido. Antes de chamar esse método, você pode chamar [**Shell.IsServiceRunning**](./shell-isservicerunning.md) para determinar o status do serviço.
 
-Este método não está disponível atualmente no Microsoft Visual Basic.
+Esse método não está disponível atualmente no Microsoft Visual Basic.
 
 ## <a name="examples"></a>Exemplos
 
-Os exemplos a seguir mostram o uso de **OnStop** para interromper o serviço de mensageiro. O uso é mostrado para JScript e VBScript.
+Os exemplos a seguir mostram o uso de **ServiceStop** para interromper o serviço Messenger. O uso é mostrado para JScript e VBScript.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -112,7 +112,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -138,11 +138,11 @@ VBScript
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                          |
+| parâmetro<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5.0 ou posterior)</dt> </dl> |
 
 
 

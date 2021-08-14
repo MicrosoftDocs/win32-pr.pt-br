@@ -4,12 +4,12 @@ description: Os atributos de matriz também podem ser usados com matrizes multid
 ms.assetid: a01b904c-fbe8-4af4-8393-6864f7ef7364
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6eb7bcf94d97e1f35fdd6ab432ea5869e47f79ed
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 52f7dac2b6d093fa56383ecaf976a83acf13fec9aa0c3820c1d608ccb69e9e9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118928075"
 ---
 # <a name="multidimensional-arrays"></a>Matrizes multidimensionais
 
@@ -38,7 +38,7 @@ O método totalmente interpretado realiza marshaling de dados completamente offl
 > [!Caution]  
 > Tenha cuidado ao compilar arquivos IDL nesse modo. O uso de matrizes multidimensionais no modo misto pode resultar em parâmetros que não são empacotados corretamente. A opção de linha de comando [**/Oicf**](/windows/desktop/Midl/-oi) é recomendada quando sua interface define parâmetros que são matrizes multidimensionais.
 
- 
+ 
 
 O \[ atributo de [**cadeia de caracteres**](/windows/desktop/Midl/string) \] também pode ser usado com matrizes multidimensionais. O atributo aplica-se à dimensão menos significativa, como uma matriz de cadeias de caracteres compatível. Você também pode usar atributos de ponteiro multidimensional. Por exemplo:
 
@@ -66,6 +66,6 @@ Compare isso com a seguinte instrução inválida:
 
 `long a1[20] []`
 
- 
+ 
 
- 
+ 

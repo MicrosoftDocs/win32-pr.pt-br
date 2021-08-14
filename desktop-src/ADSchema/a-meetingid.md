@@ -1,10 +1,10 @@
 ---
-title: atributo MeetingID
+title: Atributo meetingID
 description: A ID da reunião.
 ms.assetid: 7ad205d1-e37d-4090-bfbf-86ada8c06aa6
 ms.tgt_platform: multiple
 keywords:
-- atributo de anúncio de atributos de reuniãoid
+- Esquema do AD do atributo meetingID
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 78c7b8f5e706bbf089cffe19dd28e91e84046cb3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c981ebe9b5fdac7690ed3b82d663f71bcf693a7862d4a4a1d22aad6dfba9bb05
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300876"
 ---
-# <a name="meetingid-attribute"></a>atributo MeetingID
+# <a name="meetingid-attribute"></a>Atributo meetingID
 
 A ID da reunião.
 
@@ -28,14 +28,14 @@ A ID da reunião.
 
 | Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
-| CN                | reuniãoid                                                                        |
-| LDAP-Display-Name | reuniãoid                                                                        |
+| CN                | meetingID                                                                        |
+| Ldap-Display-Name | meetingID                                                                        |
 | Tamanho              | \-                                                                               |
 | Privilégio de atualização  | Qualquer pessoa pode atualizar esse objeto com base na segurança do objeto que está sendo criado. |
 | Frequência de atualização  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.4.565                                                           |
-| System-ID-GUID    | 11b6cc7c-48c4-11d1-a9c3-0000f80367c1                                             |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                      |
+| System-Id-Guid    | 11b6cc7c-48c4-11d1-a9c3-0000f80367c1                                             |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -57,10 +57,10 @@ A ID da reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -78,10 +78,10 @@ A ID da reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -99,10 +99,10 @@ A ID da reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -120,7 +120,7 @@ A ID da reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| É de valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
 | No catálogo global      | Falso                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
@@ -141,7 +141,7 @@ A ID da reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| É de valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
 | No catálogo global      | Falso                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
@@ -162,7 +162,7 @@ A ID da reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| É de valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
 | No catálogo global      | Falso                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |

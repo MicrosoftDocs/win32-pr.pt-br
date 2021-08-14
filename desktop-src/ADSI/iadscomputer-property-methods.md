@@ -64,12 +64,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f2f3c455e2e43436627b62d142781bb6a605bef
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5692ffadde78c338845c497a1209cc6466923fe83e32fbf25649b4cd1d4b367d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118179574"
 ---
 # <a name="iadscomputer-property-methods"></a>Métodos de propriedade IADsComputer
 
@@ -188,7 +188,7 @@ HRESULT put_Division(
 
 </dt> </dl> </dd> <dt>
 
-**Localidade**
+**Localização**
 </dt> <dd> <dl>
 
 O local físico atribuído deste computador.
@@ -216,7 +216,7 @@ HRESULT put_Location(
 
 </dt> </dl> </dd> <dt>
 
-**Tamanho da memória**
+**MemorySize**
 </dt> <dd> <dl>
 
 O tamanho, em megabytes, da memória de acesso aleatório para este computador.
@@ -561,7 +561,7 @@ Para examinar o status de um computador ou executar a operação de desligamento
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir Visual Basic examina as propriedades do computador com suporte pelo provedor ADSI WinNT.
+o exemplo de código a seguir Visual Basic examina as propriedades do computador com suporte pelo provedor ADSI WinNT.
 
 
 ```VB
@@ -622,7 +622,7 @@ Cleanup:
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
 | parâmetro<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsComputer é definido como EFE3CC70-1D9F-11CF-B1F3-02608C9E7553<br/>         |
+| IID<br/>                      | IID IADsComputer é definido como \_ EFE3CC70-1D9F-11CF-B1F3-02608C9E7553<br/>         |
 
 
 
@@ -642,7 +642,7 @@ Cleanup:
 [**IADsComputerOperations**](/windows/desktop/api/Iads/nn-iads-iadscomputeroperations)
 </dt> <dt>
 
-[Métodos de propriedade de interface](interface-property-methods.md)
+[Métodos de propriedade interface](interface-property-methods.md)
 </dt> </dl>
 
  

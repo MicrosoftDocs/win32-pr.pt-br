@@ -1,7 +1,7 @@
 ---
 description: Obtém todos os perfis de verificação associados a um dispositivo.
 ms.assetid: 2e509f01-9c5e-4d17-8888-b08b6b4b9fa9
-title: 'Método IScanProfileMgr:: GetProfilesforDeviceID (Scanprofilemgr. h)'
+title: Método IScanProfileMgr::GetProfilesforDeviceID (Scanprofilemgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Scanprofilemgr.h
-ms.openlocfilehash: 10a7d891a114fc36de3f91341febf1616a06ed22
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ca150d02aff2f84becf8b36aca87e2da24b2b83c9ccd85c0cf5a1c5ced0d664
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118209052"
 ---
-# <a name="iscanprofilemgrgetprofilesfordeviceid-method"></a>Método IScanProfileMgr:: GetProfilesforDeviceID
+# <a name="iscanprofilemgrgetprofilesfordeviceid-method"></a>Método IScanProfileMgr::GetProfilesforDeviceID
 
 Obtém todos os perfis de verificação associados a um dispositivo.
 
@@ -41,7 +41,7 @@ HRESULT GetProfilesforDeviceID(
 
 <dl> <dt>
 
-*bstrDeviceID* \[ no\]
+*bstrDeviceID* \[ Em\]
 </dt> <dd>
 
 Tipo: **BSTR**
@@ -50,16 +50,16 @@ A ID do dispositivo.
 
 </dd> <dt>
 
-*pulNumProfiles* \[ entrada, saída\]
+*pulNumProfiles* \[ in, out\]
 </dt> <dd>
 
-Tipo: **ULONG \** _
+Tipo: **ULONG \***
 
-Quando passado, um ponteiro para o número máximo de perfis a serem retornados. Quando retornado, o ponteiro para o número de perfis retornado.
+Quando passado, um ponteiro para o número máximo de perfis a serem retornados. Quando retornado, o ponteiro para o número de perfis retornados.
 
 </dd> <dt>
 
-_ppScanProfile * \[ out\]
+*ppScanProfile* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IScanProfile**](-wia-iscanprofile.md)\*\***
@@ -68,15 +68,15 @@ O endereço de um ponteiro para uma matriz de perfis.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Se o número total de perfis associados ao dispositivo for menor do que o valor passado para *pulNumProfiles*, então *pulNumProfiles* retornará esse total. Caso contrário, ele retorna o mesmo valor que foi passado para ele.
+Se o número total de perfis associados ao dispositivo for menor que o valor passado para *pulNumProfiles,* *pulNumProfiles* retornará esse total. Caso contrário, retornará o mesmo valor que foi passado para ele.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,10 +84,10 @@ Se o número total de perfis associados ao dispositivo for menor do que o valor 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>Scanprofilemgr. h</dt> </dl> |
-| INSERI<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                        |
+| parâmetro<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 
@@ -98,7 +98,7 @@ Se o número total de perfis associados ao dispositivo for menor do que o valor 
 [**IScanProfileMgr**](-wia-iscanprofilemgr.md)
 </dt> <dt>
 
-[Esquema do perfil de verificação](-wia-scan-profile-schema.md)
+[Esquema de perfil de verificação](-wia-scan-profile-schema.md)
 </dt> </dl>
 
  

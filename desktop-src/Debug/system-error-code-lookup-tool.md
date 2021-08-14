@@ -3,12 +3,12 @@ description: Descreve como usar a ferramenta de pesquisa de erros da Microsoft p
 title: A ferramenta de pesquisa de erros da Microsoft
 ms.topic: article
 ms.date: 12/4/2019
-ms.openlocfilehash: e39b5623458fc176f5ecc81eae71212ba279945c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 534b2af92b8dc0e906bd033e8ce1f0fbd08ead0cda21406d1818a318356db613
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105812135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118405886"
 ---
 # <a name="the-microsoft-error-lookup-tool"></a>A ferramenta de pesquisa de erros da Microsoft
 
@@ -75,4 +75,4 @@ C:\Tools>Err_6.4.5.exe 7b
 
 ## <a name="more-information"></a>Mais informações
 
-Tenha em mente que essa é uma ferramenta "pontual". A ferramenta de pesquisa de erros da Microsoft decodifica a maioria dos códigos de erro da Microsoft a partir da data em que a ferramenta foi compilada. À medida que novas versões do Windows adicionam novos eventos e códigos de erro, talvez seja necessário baixar uma nova versão da ferramenta de pesquisa de erros. Verifique o centro de download da Microsoft para obter uma nova versão ou veja os [códigos de erro](system-error-codes.md).
+Tenha em mente que essa é uma ferramenta "pontual". A ferramenta de pesquisa de erros da Microsoft decodifica a maioria dos códigos de erro da Microsoft a partir da data em que a ferramenta foi compilada. à medida que novas versões do Windows adicionar novos códigos de evento e de erro, talvez seja necessário baixar uma nova versão da ferramenta de pesquisa de erros. Verifique o centro de download da Microsoft para obter uma nova versão ou veja os [códigos de erro](system-error-codes.md).

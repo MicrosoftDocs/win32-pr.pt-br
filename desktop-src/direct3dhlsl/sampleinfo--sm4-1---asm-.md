@@ -1,23 +1,23 @@
 ---
-title: sampleinfo (SM 4.1-ASM)
-description: Consulta o número de amostras em uma determinada exibição de recurso do sombreador ou no rasterizador.
+title: sampleinfo (sm4.1 – asm)
+description: Consulta o número de amostras em uma determinada exibição de recurso de sombreador ou no rasterizador.
 ms.assetid: 1F0968D7-01E9-4213-9F83-172B88374C3C
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d307dbc8c79618a6401737874a9f6e060a899ccc
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 2227afbf7a08a0010efc2efb8fcf87bae85c8f5775e596d92b761b556f8bfb93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103823467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118510464"
 ---
-# <a name="sampleinfo-sm41---asm"></a>sampleinfo (SM 4.1-ASM)
+# <a name="sampleinfo-sm41---asm"></a>sampleinfo (sm4.1 – asm)
 
-Consulta o número de amostras em uma determinada exibição de recurso do sombreador ou no rasterizador.
+Consulta o número de amostras em uma determinada exibição de recurso de sombreador ou no rasterizador.
 
 
 
-| \[\_\]dest \[ . Mask \] , srcResource \[ . swizzle\] |
+| \[\_uint \] dest \[ .mask \] , srcResource \[ .swizzle\] |
 |---------------------------------------------------|
 
 
@@ -28,8 +28,8 @@ Consulta o número de amostras em uma determinada exibição de recurso do sombr
 
 | Item                                                                                                               | Descrição                                                    |
 |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/>                                                    | \[no \] endereço dos resultados da operação.<br/> |
-| <span id="srcResource"></span><span id="srcresource"></span><span id="SRCRESOURCE"></span>*srcResource*<br/> | \[no \] recurso do sombreador.<br/>                         |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/>                                                    | \[em \] O endereço dos resultados da operação.<br/> |
+| <span id="srcResource"></span><span id="srcresource"></span><span id="SRCRESOURCE"></span>*srcResource*<br/> | \[em \] O recurso de sombreador.<br/>                         |
 
 
 
@@ -37,13 +37,13 @@ Consulta o número de amostras em uma determinada exibição de recurso do sombr
 
 ## <a name="remarks"></a>Comentários
 
-Essa instrução retorna o número de amostras para o recurso fornecido ou o rasterizador. Ele é válido somente para recursos que podem ser carregados usando [**ld2dms**](ld2dms--sm4-1---asm-.md) , a menos que o rasterizador seja especificado como *srcResource*. *srcResource* poderia ser um \# registro t (uma exibição de recurso do sombreador) ou um registro do rasterizador.
+Essa instrução retorna o número de amostras para o recurso ou o rasterizador determinado. Ele é válido somente para recursos que podem ser carregados usando [**ld2dms,**](ld2dms--sm4-1---asm-.md) a menos que o rasterizador seja especificado *como srcResource*. *srcResource pode* ser um registro t (uma exibição de recurso de \# sombreador) ou um registro de rasterizador.
 
-A instrução computa o vetor (SampleCount, 0, 0, 0).
+A instrução calcula o vetor (SampleCount,0,0,0).
 
-O swizzle no *srcResource* permite que os valores retornados sejam swizzled arbitrariamente antes de serem gravados no destino. O valor retornado é ponto flutuante, a menos que o \_ modificador uint seja usado; nesse caso, o valor retornado é inteiro. Se não houver nenhum recurso associado ao slot especificado, 0 será retornado.
+O swizzle em *srcResource* permite que os valores retornados sejam swizzled arbitrariamente antes de serem gravados no destino. O valor retornado é um ponto flutuante, a menos que o modificador uint seja usado; nesse \_ caso, o valor retornado é inteiro. Se não houver nenhum recurso vinculado ao slot especificado, 0 será retornado.
 
-Essa instrução se aplica aos seguintes estágios de sombreador:
+Essa instrução se aplica aos seguintes estágios do sombreador:
 
 
 
@@ -55,16 +55,16 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                              | Com suporte |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
-| [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sim       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sim       |
 | [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | não        |
 | [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | não        |
 | [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | não        |
@@ -78,7 +78,7 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 <dl> <dt>
 
-[Assembly do Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly do modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

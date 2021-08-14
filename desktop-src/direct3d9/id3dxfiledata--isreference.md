@@ -1,7 +1,7 @@
 ---
-description: Indica se este objeto de dados de arquivo é um objeto de referência que aponta para outro objeto de dados filho.
+description: Indica se esse objeto de dados de arquivo é um objeto de referência que aponta para outro objeto de dados filho.
 ms.assetid: 4894308d-4f61-4015-8b80-6caab9fcb054
-title: 'Método ID3DXFileData:: IsReference (D3DX9Xof. h)'
+title: Método ID3DXFileData::IsReference (D3DX9Xof.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: fb49a46b3a6caa559febb0ab38bc1b1bd9282025
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: aa32832c42f1e28c9e9acec1a3a9b400808a766455aa6025d10e7153e9c67dd6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119407356"
 ---
-# <a name="id3dxfiledataisreference-method"></a>Método ID3DXFileData:: IsReference
+# <a name="id3dxfiledataisreference-method"></a>Método ID3DXFileData::IsReference
 
-Indica se este objeto de dados de arquivo é um objeto de referência que aponta para outro objeto de dados filho.
+Indica se esse objeto de dados de arquivo é um objeto de referência que aponta para outro objeto de dados filho.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,11 +38,11 @@ BOOL IsReference();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Retornará **true** se o objeto de dados do arquivo for um objeto de referência; retorna **false** caso contrário.
+Retornará **TRUE** se o objeto de dados do arquivo for um objeto de referência; retorna **FALSE caso** contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Retornará **true** se o objeto de dados do arquivo for um objeto de referência
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Xof. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| parâmetro<br/>  | <dl> <dt>D3DX9Xof.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

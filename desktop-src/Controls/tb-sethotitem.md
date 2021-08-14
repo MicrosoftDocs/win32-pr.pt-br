@@ -3,7 +3,7 @@ title: Mensagem de TB_SETHOTITEM (commctrl. h)
 description: TB_SETHOTITEM mensagem – define o item ativo em uma barra de ferramentas.
 ms.assetid: 15005741-29d2-48c6-b5f0-15178a49b917
 keywords:
-- Controles de TB_SETHOTITEM de mensagens do Windows
+- controles de Windows de mensagem de TB_SETHOTITEM
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a90e5b38675d33a361857c4303fa2a89f22cff29
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a48de58e07d877d999c2d0388bf32845fce349511da563c3a6b1fa9f9c7b3d20
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119318836"
 ---
 # <a name="tb_sethotitem-message"></a>TB de \_ mensagem SETHOTITEM
 
@@ -53,8 +53,8 @@ O comportamento dessa mensagem não é definido para barras de ferramentas que n
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 

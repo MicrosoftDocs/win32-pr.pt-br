@@ -4,12 +4,12 @@ ms.assetid: 4f9c13da-8fe3-43e7-875f-04850495edf3
 title: Interfaces de cartão inteligente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d5f11f619e69cafa484e209c3346357aa5a031d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6db3fb5369f36f76e8bf5909afad94959ff70541d9026762234d65ae181b0172
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118917765"
 ---
 # <a name="smart-card-interfaces"></a>Interfaces de cartão inteligente
 

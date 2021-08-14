@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4b30de0c45c8d78b2e07d6ff57a4e94b9753298a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8aac453ce7a2cfec9c31d5807714c1b80c3e4251ca0c68ae684c4547096d04c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118525262"
 ---
 # <a name="d3dxmatrixrotationquaternion-function-d3dx9mathh"></a>Função D3DXMatrixRotationQuaternion (D3dx9math. h)
 
@@ -82,7 +82,7 @@ Para obter informações sobre como calcular valores de Quaternion de um vetor d
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -1,11 +1,11 @@
 ---
-title: ms-TPM-TPM-Information-atributo for-Computer
-description: Esse atributo vincula um objeto de computador a um objeto TPM.
+title: Atributo ms-TPM-Tpm-Information-For-Computer
+description: Esse atributo vincula um objeto Computer a um objeto TPM.
 ms.assetid: 6b0711a6-ef7f-4afa-9bea-e09515b56882
 ms.tgt_platform: multiple
 keywords:
-- ms-TPM-TPM-Information-for-Computer atributo AD Schema
-- Esquema de AD do atributo msTPM-TpmInformationForComputer
+- Ms-TPM-Tpm-Information-For-Computer atributo AD Schema
+- Esquema do AD do atributo msTPM-TpmInformationForComputer
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f5b1576ee14af1027b525e7232d6581c01809f9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 05496febb9395a753aaaf0eb34c4bfe7843a36502a8bfbdd5439314be32f7378
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105748274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118424885"
 ---
-# <a name="ms-tpm-tpm-information-for-computer-attribute"></a>ms-TPM-TPM-Information-atributo for-Computer
+# <a name="ms-tpm-tpm-information-for-computer-attribute"></a>Atributo ms-TPM-Tpm-Information-For-Computer
 
-Esse atributo vincula um objeto de computador a um objeto TPM.
+Esse atributo vincula um objeto Computer a um objeto TPM.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | ms-TPM-TPM-Information-for-Computer     |
-| LDAP-Display-Name | msTPM-TpmInformationForComputer         |
+| CN                | ms-TPM-Tpm-Information-for-Computer     |
+| Ldap-Display-Name | msTPM-TpmInformationForComputer         |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2109                 |
-| System-ID-GUID    | ea1b7b93-5e48-46d5-bc6c-4df4fda78a35    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | ea1b7b93-5e48-46d5-bc6c-4df4fda78a35    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -53,10 +53,10 @@ Esse atributo vincula um objeto de computador a um objeto TPM.
 | ID do link                | 2182                                      |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| Tem valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
-| No catálogo global      | Falso                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
+| No Catálogo Global      | Falso                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000010                                |

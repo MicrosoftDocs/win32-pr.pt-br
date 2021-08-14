@@ -1,33 +1,33 @@
 ---
-description: TIPO DE CONTEÚDO WPD \_ \_ NÃO \_ ESPECIFICADO
+description: '\_tipo de conteúdo WPD \_ \_ não especificado'
 ms.assetid: 0175940e-2de2-4e2b-a98e-8dcc59e7020f
 title: WPD_CONTENT_TYPE_UNSPECIFIED
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cd955ee5ebf31b2348efd3f70c85ae9c004edb83
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 98e6f68cf5ee2a989bbef1554217c579eab77566ee0a3d3f894961d2ac08759f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110423676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118193307"
 ---
-# <a name="wpd_content_type_unspecified"></a>TIPO DE CONTEÚDO WPD \_ \_ NÃO \_ ESPECIFICADO
+# <a name="wpd_content_type_unspecified"></a>\_tipo de conteúdo WPD \_ \_ não especificado
 
-Um objeto que descreve seu tipo como WPD \_ CONTENT \_ TYPE UNSPECIFIED representa um objeto genérico que pode ou não ter \_ um arquivo físico subjacente. A diferença entre esse tipo e WPD CONTENT TYPE GENERIC FILE é que os objetos WPD CONTENT TYPE GENERIC FILE devem \_ ter um arquivo \_ físico \_ \_ \_ \_ \_ \_ subjacente.
+Um objeto que descreve seu tipo como \_ tipo de conteúdo WPD \_ \_ não especificado representa um objeto genérico que pode ou não ter um arquivo físico subjacente. A diferença entre este tipo e o \_ arquivo genérico do tipo de conteúdo WPD \_ \_ \_ é que os \_ objetos de arquivo genéricos do tipo de conteúdo WPD \_ \_ \_ devem ter um arquivo físico subjacente.
 
 Esse tipo de objeto dá suporte às propriedades a seguir.
 
 
 
-| Nome da propriedade       | Obrigatório ou Opcional         |
+| Nome da Propriedade       | Obrigatório ou opcional         |
 |-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| [ID DO \_ \_ OBJETO WPD](object-properties.md)                                                                | Obrigatório, somente leitura. Um cliente não pode definir essa propriedade mesmo no momento da criação. |
-| [ID PAI \_ \_ DO OBJETO \_ WPD](object-properties.md)                                                 | Obrigatórios.                                                                     |
-| [NOME DO OBJETO WPD \_ \_](object-properties.md)                                                            | Necessário se o objeto representar um arquivo.                                     |
-| [ID EXCLUSIVA \_ \_ PERSISTENTE DO OBJETO \_ \_ WPD](object-properties.md)                          | Obrigatório, somente leitura. Um cliente não pode definir essa propriedade mesmo no momento da criação. |
-| [FORMATO DE OBJETO WPD \_ \_](object-properties.md)                                                        | Obrigatórios.                                                                     |
-| [TIPO DE CONTEÚDO \_ \_ DO OBJETO \_ WPD](object-properties.md)                                           | Obrigatórios.                                                                     |
-| [\_ \_ ISHIDDEN DE OBJETO WPD](object-properties.md)                                                    | Necessário se o objeto estiver oculto.                                             |
+| [\_ID de objeto WPD \_](object-properties.md)                                                                | Obrigatório, somente leitura. Um cliente não pode definir essa propriedade mesmo no momento da criação. |
+| [\_ \_ ID pai do objeto WPD \_](object-properties.md)                                                 | Obrigatórios.                                                                     |
+| [\_nome do objeto WPD \_](object-properties.md)                                                            | Necessário se o objeto representar um arquivo.                                     |
+| [\_ \_ \_ ID exclusiva persistente do objeto WPD \_](object-properties.md)                          | Obrigatório, somente leitura. Um cliente não pode definir essa propriedade mesmo no momento da criação. |
+| [\_formato de objeto WPD \_](object-properties.md)                                                        | Obrigatórios.                                                                     |
+| [\_tipo de \_ conteúdo de objeto WPD \_](object-properties.md)                                           | Obrigatórios.                                                                     |
+| [objeto WPD- \_ \_ oculto](object-properties.md)                                                    | Necessário se o objeto estiver oculto.                                             |
 | [IsSystem de \_ objetos WPD \_](object-properties.md)                                                    | Obrigatório se o objeto for um objeto do sistema (representa um arquivo do sistema).         |
 | [\_tamanho do objeto WPD \_](object-properties.md)                                                            | Necessário se o objeto tiver pelo menos um recurso.                             |
 | [\_nome de \_ \_ arquivo original do objeto \_ WPD](object-properties.md)                              | Necessário se o objeto representar um arquivo.                                     |
@@ -41,9 +41,9 @@ Esse tipo de objeto dá suporte às propriedades a seguir.
 | [\_data do objeto WPD \_ \_ criado](object-properties.md)                                         | Opcional.                                                                     |
 | [\_referências de \_ retorno de objeto WPD \_](object-properties.md)                                                                | Recomendado se o objeto for referenciado por outro objeto.                    |
 | [\_ID de \_ \_ objeto funcional \_ do contêiner de objetos WPD \_](object-properties.md)     | Opcional.                                                                     |
-| [OBJETO WPD \_ \_ GERAR MINIATURA DO \_ \_ \_ RECURSO](object-properties.md) | Opcional.                                                                     |
-| [O OBJETO WPD \_ \_ PODE \_ EXCLUIR](object-properties.md)                                                                     | Necessário se o objeto não puder ser excluído.                                     |
-| [LOCALIDADE DA \_ LINGUAGEM \_ DE OBJETO \_ WPD](object-properties.md)                                                                | Opcional.                                                                     |
+| [o \_ objeto WPD \_ gera \_ miniaturas \_ do \_ recurso](object-properties.md) | Opcional.                                                                     |
+| [o \_ objeto WPD \_ pode \_ excluir](object-properties.md)                                                                     | Obrigatório se o objeto não puder ser excluído.                                     |
+| [\_localidade do \_ idioma do objeto WPD \_](object-properties.md)                                                                | Opcional.                                                                     |
 
 
 
@@ -51,13 +51,13 @@ Esse tipo de objeto dá suporte às propriedades a seguir.
 
 ## <a name="typical-resources"></a>Recursos típicos
 
-Esses objetos normalmente incluem os recursos a seguir.
+Esses objetos normalmente incluem os seguintes recursos.
 
 
 
-| Nome do Recurso                                          | Obrigatório ou Opcional                             | Descrição               |
+| Nome do Recurso                                          | Obrigatório ou opcional                             | Descrição               |
 |--------------------------------------------------------|--------------------------------------------------|---------------------------|
-| [**WPD \_ RESOURCE \_ DEFAULT**](wpd-resource-default.md) | Necessário se o objeto for apoiado por dados binários. | Contém os dados binários. |
+| [**\_padrão de recursos WPD \_**](wpd-resource-default.md) | Necessário se o objeto for apoiado por dados binários. | Contém os dados binários. |
 
 
 

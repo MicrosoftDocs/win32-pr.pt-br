@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: d1311e4e56b6396266ece72277e8ddadcdb9d835
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2d127b56c834c293c501a27f40d4edee8f1f4c4661704123a999cbdc15c615f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119340186"
 ---
 # <a name="geterror-method-of-the-msvm_virtualsystemreferencepointexportjob-class"></a>Método GetError da \_ classe Msvm VirtualSystemReferencePointExportJob
 
@@ -94,7 +94,7 @@ O **sistema não está disponível** (32777)
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1703\]<br/>                                               |
+| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1703\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
@@ -102,7 +102,7 @@ O **sistema não está disponível** (32777)
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

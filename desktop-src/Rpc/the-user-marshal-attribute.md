@@ -7,12 +7,12 @@ keywords:
 - user_marshal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2bb3237b2d5df001dc94ede5fb03de72b5563eb
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5d0501cfd3199d41a49da7f54919c86f9332ce976f33963f23c63a7938338da0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104454237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118923526"
 ---
 # <a name="the-user_marshal-attribute"></a>O \_ atributo de marshaling do usuário
 
@@ -24,7 +24,7 @@ Assim como acontece com o atributo de **\[ \_ marshaling \] de fio** , você for
 
 
 
-| Rotina                                                            | Descrição                                                               |
+| Rotina                                                            | Description                                                               |
 |--------------------------------------------------------------------|---------------------------------------------------------------------------|
 | [<type>\_Usersize](the-type-usersize-function.md)           | Dimensiona o buffer de dados RPC antes do marshaling no lado do cliente ou do servidor. |
 | [<type>\_Usermarshal](the-type-usermarshal-function.md)     | Realiza marshaling dos dados no lado do cliente ou do servidor.                           |
@@ -33,7 +33,7 @@ Assim como acontece com o atributo de **\[ \_ marshaling \] de fio** , você for
 
 
 
- 
+ 
 
 Essas rotinas fornecidas pelo usuário são fornecidas pelo cliente ou pelo aplicativo de servidor, com base nos atributos direcionais.
 
@@ -60,6 +60,6 @@ Para um \[ [](/windows/desktop/Midl/out-idl) \] parâmetro somente out, o servid
 [**NdrGetUserMarshalInfo**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrgetusermarshalinfo)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

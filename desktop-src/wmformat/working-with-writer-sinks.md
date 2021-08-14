@@ -11,18 +11,18 @@ keywords:
 - coletores de gravador, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d5b690d9e1ab25d15f7c1e8612bf20e32f87c81
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 407e5bf2e87bfbf3084d19f75170a12be693d804d4d902f919096dca5aeab057
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103640113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118194861"
 ---
 # <a name="working-with-writer-sinks"></a>Trabalhando com coletores de gravador
 
-O objeto gravador do SDK do Windows Media Format processa dados de mídia de entrada em um fluxo de bits. No entanto, o objeto Writer não entrega o fluxo de bits para seu destino final (seja para um arquivo ou um local de rede). Para gravar o conteúdo do ASF em um formato utilizável, você deve usar coletores de gravador.
+o objeto do gravador do SDK do formato de mídia Windows processa dados de mídia de entrada em um fluxo de bits. No entanto, o objeto Writer não entrega o fluxo de bits para seu destino final (seja para um arquivo ou um local de rede). Para gravar o conteúdo do ASF em um formato utilizável, você deve usar coletores de gravador.
 
-O objeto Writer dá suporte a três tipos de coletores: coletores de arquivos, coletores de rede e coletores de push. Um coletor de arquivos grava o conteúdo ASF em um arquivo ASF no disco. Um coletor de rede transmite o conteúdo do ASF de um endereço de rede. Um coletor de push entrega dados a um servidor que executa os serviços de mídia do Windows para que o servidor possa disponibilizar o conteúdo para seu público-alvo. Você também pode criar seus próprios coletores para fornecer dados de ASF de qualquer maneira que seja necessária para seu aplicativo. Para obter informações sobre coletores de rede e coletores de push, consulte [enviando dados de ASF por meio de uma rede](sending-asf-data-over-a-network.md). O restante desta seção aborda os coletores de gravador.
+O objeto Writer dá suporte a três tipos de coletores: coletores de arquivos, coletores de rede e coletores de push. Um coletor de arquivos grava o conteúdo ASF em um arquivo ASF no disco. Um coletor de rede transmite o conteúdo do ASF de um endereço de rede. um coletor de push entrega dados a um servidor executando Windows Media Services para que o servidor possa disponibilizar o conteúdo para seu público-alvo. Você também pode criar seus próprios coletores para fornecer dados de ASF de qualquer maneira que seja necessária para seu aplicativo. Para obter informações sobre coletores de rede e coletores de push, consulte [enviando dados de ASF por meio de uma rede](sending-asf-data-over-a-network.md). O restante desta seção aborda os coletores de gravador.
 
 Você pode configurar um ou mais coletores para cada instância do gravador que você usa. Cada coletor manipula apenas um único destino. Por exemplo, se você quiser escrever três arquivos ao mesmo tempo, deverá criar e configurar um coletor de arquivo separado para cada um.
 
@@ -40,7 +40,7 @@ As seções a seguir descrevem o uso de coletores de gravador.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -55,9 +55,9 @@ As seções a seguir descrevem o uso de coletores de gravador.
 [**Gravando arquivos ASF**](writing-asf-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

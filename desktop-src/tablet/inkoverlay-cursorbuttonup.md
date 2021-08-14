@@ -4,12 +4,12 @@ ms.assetid: ce7205f7-727c-4acf-a727-4dbb3cc42441
 title: Evento InkOverlay. CursorButtonUp (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f22590362c6eb9a987da94bf3adb4e99943c12cd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 60e94fb9c1727e0c8fce13f3696397462fdf590c076627df869dcafd177190c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118220838"
 ---
 # <a name="inkoverlaycursorbuttonup-event"></a>Evento InkOverlay. CursorButtonUp
 
@@ -63,14 +63,14 @@ Esse método de evento é definido nas \_ \_ interfaces somente de expedição I
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                           |
 | parâmetro<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

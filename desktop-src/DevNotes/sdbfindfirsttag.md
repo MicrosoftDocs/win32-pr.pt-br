@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: dc8b752d536be83d90ded55474166d14521f0f7a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f6562589158e5c3a5e1b65273451f812802c1c73b76f52c47274c06b9639f5ca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119390226"
 ---
 # <a name="sdbfindfirsttag-function"></a>Função SdbFindFirstTag
 
@@ -62,7 +62,7 @@ A marca a ser correspondida. Consulte a [marca](tag.md) para obter uma lista de 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O **TagId** da primeira correspondência.
 
@@ -72,8 +72,8 @@ O **TagId** da primeira correspondência.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

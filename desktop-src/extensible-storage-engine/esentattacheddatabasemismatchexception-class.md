@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8fca9c0dcb7526df0373cbf26099a8ca810ab3eb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cbf30cc758fac35cb881759ad6c1e3c916ab0159906e4767bc1739f4b6ff6884
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105784578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119404196"
 ---
 # <a name="esentattacheddatabasemismatchexception-class"></a>Classe EsentAttachedDatabaseMismatchException
 
@@ -38,7 +38,7 @@ Classe base para JET_err. AttachedDatabaseMismatch exceções.
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
+  [System.Exception](/dotnet/api/system.exception)  
     [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
       [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
         [Microsoft. ISAM. ESENT. Interop. EsentDataException](./esentdataexception-class.md)  

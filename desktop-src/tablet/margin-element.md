@@ -4,12 +4,12 @@ ms.assetid: c3047706-affd-4feb-9d48-cfb4c7dd6fa0
 title: Elemento Margin
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 547177a10fc3724f3b9bf3dde65f857d03f0f2a4
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: b0ff764585919ff144ebc25ac568caf1af74410a2f337beb03d5ce484f7d1abe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119350436"
 ---
 # <a name="margin-element"></a>Elemento Margin
 
@@ -58,7 +58,7 @@ Nenhum..
 <tbody>
 <tr class="odd">
 <td><strong>Estilo</strong></td>
-<td><a href="linelayoutstyletype-simple-type.md"><strong>LineLayoutStyleType</strong></a> simpleType</td>
+<td><a href="linelayoutstyletype-simple-type.md"><strong>SimpleType LineLayoutStyleType</strong></a></td>
 <td>Obrigatório</td>
 <td>Especifica o tipo de linha a ser desenhada.</td>
 <td><ul>
@@ -73,16 +73,16 @@ Nenhum..
 </tr>
 <tr class="even">
 <td><strong>Cor</strong></td>
-<td>SimpleType de <a href="colortype-simple-type.md"><strong>ColorType</strong></a></td>
+<td><a href="colortype-simple-type.md"><strong>ColorType</strong></a> simpleType</td>
 <td>Opcional</td>
 <td>Cor do elemento.</td>
-<td>Um valor RGB hexadecimal. Corresponde à seguinte expressão regular: # [0-9A-zA-Z] {6} . Por exemplo, #4a79B5.<br/></td>
+<td>Um valor RGB hexadecimal. Corresponde à seguinte expressão regular: #[0-9a-zA-Z] {6} . Por exemplo, #4a79B5.<br/></td>
 </tr>
 <tr class="odd">
 <td><strong>Tipo</strong></td>
 <td><a href="margintypetype-simple-type.md"><strong>MarginTypeType</strong></a> simpleType</td>
 <td>Opcional</td>
-<td>Indica a margem esquerda ou direita.</td>
+<td>Indica margem esquerda ou direita.</td>
 <td><ul>
 <li>Esquerda</li>
 <li>Direita</li>
@@ -108,9 +108,9 @@ Nenhum..
 
 |  Elemento     | Valor                                                     |
 |--------------|-----------------------------------------------------------|
-| Tipo de elemento | ComplexType de [**margintype**](margintype-complex-type.md) |
-| Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk                |
-| Nome do esquema  | Leitor de diário                                            |
+| Tipo de elemento | [**ComplexType MarginType**](margintype-complex-type.md) |
+| Namespace    | urn:schemas-microsoft-com:tabletpc:richink                |
+| Nome do esquema  | Leitor de Diário                                            |
 
 
 

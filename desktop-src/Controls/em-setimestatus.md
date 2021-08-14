@@ -3,7 +3,7 @@ title: Mensagem de EM_SETIMESTATUS (WinUser. h)
 description: Define os sinalizadores de status que determinam como um controle de edição interage com o IME (editor de método de entrada).
 ms.assetid: 3de2e8b5-bdd8-4b25-9427-38a11b77a17a
 keywords:
-- Controles de EM_SETIMESTATUS de mensagens do Windows
+- controles de Windows de mensagem de EM_SETIMESTATUS
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e896c358281b2d4b5012fe13003720e0d008e6a4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bb5a3e5413c577fcecd89ebb27bc61e5fff31f7e71b3ec7e6da67523d6ee9392
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118412393"
 ---
 # <a name="em_setimestatus-message"></a>\_Mensagem em SETIMESTATUS
 
@@ -65,7 +65,7 @@ Dados específicos para o tipo de status. Se *wParam* for **EMSIS \_ Composition
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o valor anterior do parâmetro *lParam* .
 
@@ -79,9 +79,9 @@ Retorna o valor anterior do parâmetro *lParam* .
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| parâmetro<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

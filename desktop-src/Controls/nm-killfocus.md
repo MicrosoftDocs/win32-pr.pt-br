@@ -3,7 +3,7 @@ title: NM_KILLFOCUS código de notificação (commctrl. h)
 description: Notifica uma janela pai do controle que o controle perdeu o foco de entrada. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: d7538697-8b4c-4bbd-8b06-02cbc8069a22
 keywords:
-- NM_KILLFOCUS de código de notificação controles do Windows
+- NM_KILLFOCUS código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 873af3315dd58a12a61249ca59a317ca5af4b105
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6ee87f90a24ba495ecc8c051d68c0ccc2a0c43c7021021d4f1d651c347145a0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118410886"
 ---
 # <a name="nm_killfocus-notification-code"></a>\_Código de notificação nm KILLFOCUS
 
@@ -45,7 +45,7 @@ Um ponteiro para uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-rich
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é ignorado pelo controle.
 
@@ -55,8 +55,8 @@ O valor de retorno é ignorado pelo controle.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 

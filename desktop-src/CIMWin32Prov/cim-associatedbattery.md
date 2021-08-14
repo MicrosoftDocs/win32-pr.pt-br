@@ -1,8 +1,8 @@
 ---
-description: A dependência do CIM \_ AssociatedBattery associa uma bateria a um dispositivo lógico. Use essa associação para modelar baterias individuais que compõem uma fonte de alimentação ininterrupta (UPS).
+description: A dependência \_ Cim AssociatedBattery associa uma bateria a um dispositivo lógico. Use essa associação para modelar baterias individuais que comem uma fonte de alimentação ininterrupta (UPS).
 ms.assetid: f8d8b3d3-edc5-438a-8be6-3ea4d765085b
 ms.tgt_platform: multiple
-title: Classe CIM_AssociatedBattery
+title: CIM_AssociatedBattery classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 98c6394df79e53698ab6394f8572768f3728c503
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 76529a63b2600543602727c14aea4c7972e8b51f7c67924da9eb06f1185c427e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119284586"
 ---
-# <a name="cim_associatedbattery-class"></a>\_Classe CIM AssociatedBattery
+# <a name="cim_associatedbattery-class"></a>Classe CIM \_ AssociatedBattery
 
-A dependência do **CIM \_ AssociatedBattery** associa uma bateria a um dispositivo lógico. Use essa associação para modelar baterias individuais que compõem uma fonte de alimentação ininterrupta (UPS).
+A **dependência \_ Cim AssociatedBattery** associa uma bateria a um dispositivo lógico. Use essa associação para modelar baterias individuais que comem uma fonte de alimentação ininterrupta (UPS).
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) modelo CIM DMTF são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -47,55 +47,55 @@ class CIM_AssociatedBattery : CIM_Dependency
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ AssociatedBattery** tem estes tipos de membros:
+A **classe CIM \_ AssociatedBattery** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ AssociatedBattery** tem essas propriedades.
+A **classe CIM \_ AssociatedBattery** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ bateria CIM**
+Tipo de dados: **Bateria CIM \_**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecessor")
 </dt> </dl>
 
-Uma [**\_ bateria CIM**](cim-battery.md) que descreve a bateria.
+Uma [**bateria CIM \_**](cim-battery.md) que descreve a bateria.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ LogicalDevice CIM**
+Tipo de dados: **Cim \_ LogicalDevice**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente")
 </dt> </dl>
 
-Um [**\_ LogicalDevice CIM**](cim-logicaldevice.md) que contém o dispositivo lógico que precisa ou está associado à bateria.
+Um [**\_ LogicalDevice cim**](cim-logicaldevice.md) que contém o dispositivo lógico que precisa ou está associado à bateria.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe **CIM \_ AssociatedBattery** é derivada da [**\_ dependência CIM**](cim-dependency.md).
+A **classe CIM \_ AssociatedBattery** é derivada da [**\_ Dependência CIM.**](cim-dependency.md)
 
-O WMI não implementa essa classe. Para obter mais informações sobre classes derivadas de **CIM \_ AssociatedBattery**, consulte [classes Win32](win32-provider.md).
+O WMI não implementa essa classe. Para obter mais informações sobre classes derivadas de **CIM \_ AssociatedBattery**, consulte [Classes Win32](win32-provider.md).
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**\_Dependência CIM**](cim-dependency.md)
+[**Dependência cim \_**](cim-dependency.md)
 </dt> </dl>
 
  

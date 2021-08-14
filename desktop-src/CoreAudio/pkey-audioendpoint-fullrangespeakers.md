@@ -4,12 +4,12 @@ ms.assetid: c0a54b3d-84dc-4771-8891-167ce00e2218
 title: PKEY_AudioEndpoint_FullRangeSpeakers (Mmdeviceapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0990d08e3d78eddf0fa6397e888b1e26c9f9a767
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ad27e5623189ce3ba78707377837493c1ea8dccb248d02ddd3d8e2c64570bed6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118406442"
 ---
 # <a name="pkey_audioendpoint_fullrangespeakers"></a>PKEY \_ AudioEndpoint \_ FullRangeSpeakers
 
@@ -19,14 +19,14 @@ O membro **VT** da estrutura **PROPVARIANT** é definido como VT \_ UI4.
 
 O membro **uintVal** da estrutura **PROPVARIANT** contém uma máscara de configuração de canal que é convertida para o tipo **uint**.
 
-Um palestrante de intervalo completo é capaz de reproduzir sons em todo o intervalo de baixo a agudos. Normalmente, os alto-falantes maiores são um intervalo completo, mas os altifalantes menores são significativamente menos capazes de reproduzir sons graves. No Windows Vista, o mecanismo de áudio usa essa propriedade para gerenciar os níveis de baixo desempenho no fluxo de saída de áudio que é reproduzido pelo dispositivo de ponto de extremidade de áudio.
+Um palestrante de intervalo completo é capaz de reproduzir sons em todo o intervalo de baixo a agudos. Normalmente, os alto-falantes maiores são um intervalo completo, mas os altifalantes menores são significativamente menos capazes de reproduzir sons graves. no Windows Vista, o mecanismo de áudio usa essa propriedade para gerenciar os níveis de baixo desempenho no fluxo de saída de áudio que é reproduzido pelo dispositivo de ponto de extremidade de áudio.
 
 A máscara de configuração de canal para essa propriedade está no mesmo formato que a máscara de configuração de canal para a propriedade [**PKEY \_ AudioEndpoint \_ PhysicalSpeakers**](pkey-audioendpoint-physicalspeakers.md) . Para obter mais informações sobre máscaras de configuração de canal, consulte o seguinte:
 
--   A descrição da propriedade de \_ configuração do canal de áudio KSPROPERTY \_ \_ na documentação do Windows DDK.
--   A white paper intitulada "suporte de driver de áudio para configurações de alto-falante de Home Theater" no site de [tecnologias de dispositivo de áudio para Windows](https://www.microsoft.com/whdc/device/audio/default.mspx) .
+-   a descrição da propriedade de \_ configuração do canal de áudio KSPROPERTY \_ \_ na documentação do Windows DDK.
+-   a white paper intitulada "suporte de Driver de áudio para configurações de alto-falante de Home Theater" no site [tecnologias de dispositivo de áudio para Windows](https://www.microsoft.com/whdc/device/audio/default.mspx) .
 
-O sistema Obtém a máscara de configuração de canal para a \_ Propriedade PKEY AudioEndpoint \_ FullRangeSpeakers do usuário. O usuário insere essas informações por meio do painel de controle multimídia do Windows Mmsys.cpl. Para obter mais informações sobre Mmsys.cpl, consulte a documentação do Windows DDK.
+O sistema Obtém a máscara de configuração de canal para a \_ Propriedade PKEY AudioEndpoint \_ FullRangeSpeakers do usuário. o usuário insere essas informações por meio do Windows painel de controle multimídia Mmsys.cpl. para obter mais informações sobre Mmsys.cpl, consulte a documentação do Windows DDK.
 
 A máscara de configuração de canal para a \_ Propriedade PKEY AudioEndpoint \_ FullRangeSpeakers de um dispositivo de ponto de extremidade de áudio é um subconjunto da máscara de configuração de canal para a \_ Propriedade PKEY AudioEndpoint \_ PhysicalSpeakers do mesmo dispositivo.
 
@@ -38,8 +38,8 @@ Por exemplo, se um dispositivo de ponto de extremidade de áudio direcionar um c
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                     |
 | parâmetro<br/>                   | <dl> <dt>Mmdeviceapi. h</dt> </dl> |
 
 

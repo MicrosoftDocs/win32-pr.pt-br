@@ -3,7 +3,7 @@ title: CBEN_ENDEDIT código de notificação (commctrl. h)
 description: Enviado quando o usuário concluiu uma operação na caixa de edição ou selecionou um item na lista suspensa do controle. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: b6b50951-7304-4499-b57b-a5b592de2190
 keywords:
-- CBEN_ENDEDIT de código de notificação controles do Windows
+- CBEN_ENDEDIT código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 679b9f878dbd8f7f374b461ee548f9ce2c62e281
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 22ae9205e84e4f1c0b10e516b1f406f2d167f1bc5cc38417a31379d20e16fcac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118413946"
 ---
 # <a name="cben_endedit-notification-code"></a>Código de notificação do CBEN \_ ENDEDIT
 
@@ -47,7 +47,7 @@ Um ponteiro para uma estrutura [**NMCBEENDEDIT**](/windows/desktop/api/Commctrl/
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 **False** para aceitar o código de notificação e permitir que o controle exiba o item selecionado; caso contrário, **true**.
 
@@ -57,8 +57,8 @@ Um ponteiro para uma estrutura [**NMCBEENDEDIT**](/windows/desktop/api/Commctrl/
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **CBEN \_ ENDEDITW** (Unicode) e **CBEN \_ endediçãoa** (ANSI)<br/>                 |
 

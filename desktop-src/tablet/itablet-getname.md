@@ -1,7 +1,7 @@
 ---
-description: Retorna uma cadeia de caracteres que contém o nome do dispositivo tablet.
+description: Retorna uma cadeia de caracteres que contém o nome do dispositivo de tablet.
 ms.assetid: 025620b5-ab68-4e36-ae26-2226a2fdeb61
-title: 'Método ITablet:: GetName'
+title: Método ITablet::GetName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: c2d6bd20a011b1bf5cfbe7582445de45728bbd7a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 089bebc48fce9c720933f829ab83d04bf24fac3d8e2678369865cf2fe58650f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119350675"
 ---
-# <a name="itabletgetname-method"></a>Método ITablet:: GetName
+# <a name="itabletgetname-method"></a>Método ITablet::GetName
 
-Retorna uma cadeia de caracteres que contém o nome do dispositivo tablet.
+Retorna uma cadeia de caracteres que contém o nome do dispositivo de tablet.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,23 +40,23 @@ HRESULT GetName(
 
 <dl> <dt>
 
-*ppwszName* \[ fora\]
+*ppwszName* \[ out\]
 </dt> <dd>
 
-Ponteiro para uma cadeia de caracteres que contém o nome do dispositivo tablet.
+Ponteiro para uma cadeia de caracteres que contém o nome do dispositivo de tablet.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
 
 
-| Código de retorno                                                                            | Descrição                               |
+| Código de retorno                                                                            | Description                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>   | Êxito.<br/>                       |
-| <dl> <dt>**E \_ falha**</dt> </dl> | Ocorreu um erro não especificado.<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | Ocorreu um erro não especificado.<br/> |
 
 
 
@@ -64,7 +64,7 @@ Esse método pode retornar um desses valores.
 
 ## <a name="remarks"></a>Comentários
 
-É responsabilidade do chamador liberar a memória retornada desse método usando [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree).
+É responsabilidade do chamador liberar a memória retornada desse método usando [**CoTaskMemFree.**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,7 +72,7 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
@@ -82,7 +82,7 @@ Esse método pode retornar um desses valores.
 
 <dl> <dt>
 
-[**Interface ITablet**](itablet.md)
+[**ITablet Interface**](itablet.md)
 </dt> </dl>
 
  

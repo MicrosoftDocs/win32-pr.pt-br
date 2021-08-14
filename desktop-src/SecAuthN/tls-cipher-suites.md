@@ -1,19 +1,19 @@
 ---
-description: O Schannel dá suporte aos seguintes conjuntos de codificação para o TLS 1,0 no Windows Server 2003 e no Windows XP.
+description: o Schannel dá suporte aos seguintes conjuntos de codificação para o TLS 1,0 no Windows Server 2003 e Windows XP.
 ms.assetid: af9a749d-9ed4-48d0-a5f0-497be0435e34
 title: Conjuntos de codificação TLS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a113d72306b77b0d2c870b309cffb83b9d44fa5e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d002de6df85f3057e9d4494ef11da963e27785f7229cce46dc298a55edbf329
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105749760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118916054"
 ---
 # <a name="tls-cipher-suites"></a>Conjuntos de codificação TLS
 
-O Schannel dá suporte aos seguintes conjuntos de codificação para o TLS 1,0 no Windows Server 2003 e no Windows XP. Os pacotes são listados na ordem padrão em que são escolhidos. Para conjuntos de codificação para o Windows Server 2008 e o Windows Vista, consulte [pacotes de codificação no Schannel](cipher-suites-in-schannel.md).
+o Schannel dá suporte aos seguintes conjuntos de codificação para o TLS 1,0 no Windows Server 2003 e Windows XP. Os pacotes são listados na ordem padrão em que são escolhidos. para conjuntos de codificação para Windows Server 2008 e Windows Vista, consulte [pacotes de codificação no Schannel](cipher-suites-in-schannel.md).
 
 -   TLS \_ RSA \_ com \_ RC4 \_ 128 \_ MD5
 -   TLS \_ RSA \_ com \_ RC4 \_ 128 \_ Sha

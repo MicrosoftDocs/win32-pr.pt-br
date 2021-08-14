@@ -4,19 +4,19 @@ ms.assetid: edd5c6ad-7103-4486-bd11-16ff02b68be4
 title: Código SSPI de exemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1edd11fcddd8e5442f4b1f15cf5afc37409c5175
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a63529c1eff25dcaee1eb9b70281adc188993fed167b5d6815cc33fb9f2b177
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118918872"
 ---
 # <a name="sample-sspi-code"></a>Código SSPI de exemplo
 
 Esta seção inclui dois exemplos completos:
 
--   [Usando SSPI com um cliente do Windows Sockets](using-sspi-with-a-windows-sockets-client.md)
--   [Usando SSPI com um Windows Sockets Server](using-sspi-with-a-windows-sockets-server.md)
+-   [usando SSPI com um cliente Windows sockets](using-sspi-with-a-windows-sockets-client.md)
+-   [usando SSPI com um servidor Windows sockets](using-sspi-with-a-windows-sockets-server.md)
 
 Os exemplos de cliente e servidor são projetados para funcionar juntos. Ambos os exemplos usam o arquivo de cabeçalho Security. h, que pode ser encontrado no [arquivo de cabeçalho para exemplos de cliente e servidor SSPI](header-file-for-sspi-client-and-server.md).
 

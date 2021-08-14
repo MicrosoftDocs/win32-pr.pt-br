@@ -3,9 +3,9 @@ title: Método IWMPMediaCollection2 getByAttributeAndMediaType
 description: O método getByAttributeAndMediaType retorna uma interface IWMPPlaylist que fornece acesso a itens de mídia que têm um tipo de mídia e um atributo especificado.
 ms.assetid: dce9cef4-1d12-4bee-a75d-42274556c5bc
 keywords:
-- método getByAttributeAndMediaType Windows Media Player
+- Windows Media Player do método getByAttributeAndMediaType
 - método getByAttributeAndMediaType Windows Media Player, interface IWMPMediaCollection2
-- Interface IWMPMediaCollection2 Windows Media Player, método getByAttributeAndMediaType
+- Windows Media Player de interface IWMPMediaCollection2, método getByAttributeAndMediaType
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb1ee4e9421b4546cdc8ace6173dacab5034b905
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e08d38954dd24246b4d35b7842f890caba6eea94868901a528396e9a22b38c1a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105764104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119246418"
 ---
 # <a name="iwmpmediacollection2getbyattributeandmediatype-method"></a>Método IWMPMediaCollection2:: getByAttributeAndMediaType
 
@@ -78,7 +78,7 @@ O **System. String** que é o tipo de mídia especificado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Uma interface **WMPLib. IWMPPlaylist** para a lista de reprodução recuperada.
 

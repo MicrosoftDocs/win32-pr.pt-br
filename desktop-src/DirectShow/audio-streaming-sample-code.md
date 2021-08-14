@@ -4,17 +4,17 @@ ms.assetid: f3ba32c5-c3de-4f6b-bc89-f7860ca5f65b
 title: Código de exemplo de streaming de áudio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ba09e4d0305fa2eca92755422a76fd06130c51c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 5fdd93279c92813db61c44b4f7d45b478ea89bc188415fb0b5966a1d6e550cf7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105782856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119384896"
 ---
 # <a name="audio-streaming-sample-code"></a>Código de exemplo de streaming de áudio
 
 > [!Note]  
-> Essas APIs são preteridas. Os aplicativos devem usar o filtro de [**apoio de exemplo**](sample-grabber-filter.md) ou implementar um filtro personalizado para obter dados de um grafo de filtro do DirectShow.
+> Essas APIs são preteridas. os aplicativos devem usar o filtro de [**apoio de exemplo**](sample-grabber-filter.md) ou implementar um filtro personalizado para obter dados de um DirectShow gráfico de filtro.
 
  
 

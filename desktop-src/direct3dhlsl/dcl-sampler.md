@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 45b6da3bcdb027a00edeb4f009773533424efeb8
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
-ms.translationtype: HT
+ms.openlocfilehash: 86e0e04558c9ca1c10f89e924605c8999a7f7346d2278850d7cd6449968fd13c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "104366812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118515535"
 ---
 # <a name="dcl_sampler-sm4---asm"></a>\_amostra de DCL (sm4-ASM)
 
@@ -102,7 +102,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 | Sombreador de vértice | Sombreador de geometria | Sombreador de pixel |
 |---------------|-----------------|--------------|
-| x             | x               | x\*          |
+| x             | x               | w.x.y.\*          |
 
 
 
