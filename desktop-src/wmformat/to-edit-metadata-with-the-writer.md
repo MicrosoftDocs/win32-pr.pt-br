@@ -1,45 +1,45 @@
 ---
-title: Para editar metadados com o gravador
-description: Para editar metadados com o gravador
+title: Para editar metadados com o writer
+description: Para editar metadados com o writer
 ms.assetid: 86badfe3-64bc-4285-a231-f6c0ebf4f262
 keywords:
-- SDK do Windows Media Format, editando metadados com o gravador
-- SDK do Windows Media Format, edição de metadados
-- ASF (Advanced Systems Format), editando metadados com o gravador
-- ASF (formato de sistemas avançados), editando metadados com o gravador
+- Windows SDK de Formato de Mídia, editando metadados com o autor
+- Windows SDK de Formato de Mídia, edição de metadados
+- ASF (Advanced Systems Format), editando metadados com o autor
+- ASF (Formato de Sistemas Avançados), editando metadados com o autor
 - ASF (Advanced Systems Format), edição de metadados
-- ASF (formato de sistemas avançados), edição de metadados
-- metadados, edição com o gravador
+- ASF (Formato de Sistemas Avançados), edição de metadados
+- metadados, edição com o autor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f2823b266b51da366683ac0b5cf65e10debf1ad
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: 3d09db09a2cd7dbc50130243e322085ab2113e76f71d8b6760bd602d16f29d3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "104365755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118197066"
 ---
-# <a name="to-edit-metadata-with-the-writer"></a>Para editar metadados com o gravador
+# <a name="to-edit-metadata-with-the-writer"></a>Para editar metadados com o writer
 
-Você pode acessar o, diretamente do gravador, os metadados que vão para o cabeçalho do arquivo. Chame o método **QueryInterface** de qualquer interface no objeto do gravador para obter um ponteiro para a interface [**IWMHeaderInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo) ou [**IWMHeaderInfo2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo2) . Depois de ter um ponteiro para a interface apropriada, você poderá manipular os metadados da mesma forma que faria se tivesse carregado o arquivo no objeto editor de metadados. Para obter mais informações sobre como editar metadados, consulte [trabalhando com metadados](working-with-metadata.md).
+Você pode acessar, diretamente do autor, os metadados que entrarão no header do arquivo. Chame o **método QueryInterface** de qualquer interface no objeto writer para obter um ponteiro para a interface [**IWMHeaderInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo) ou [**IWMHeaderInfo2.**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo2) Depois de ter um ponteiro para a interface apropriada, você poderá manipular os metadados da mesma forma que faria se tivesse carregado o arquivo no objeto do editor de metadados. Para obter mais informações sobre como editar metadados, consulte [Trabalhando com metadados](working-with-metadata.md).
 
-Você deve fazer todas as alterações nos metadados antes de chamar [**IWMWriter:: BeginWriting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-beginwriting).
+Você deve fazer todas as alterações nos metadados antes de chamar [**IWMWriter::BeginWriting.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-beginwriting)
 
 > [!Note]  
-> Se você definir metadados para um arquivo, gravar o arquivo e, em seguida, se preparar para gravar um novo arquivo sem liberar o gravador, alguns metadados que foram definidos para o primeiro arquivo permanecerão definidos e serão incluídos nos arquivos subsequentes. Ao gravar vários arquivos com a mesma instância do objeto Writer, você tem duas opções: verificar todos os metadados antes de gravar cada arquivo ou apenas gravar os metadados do gravador que se aplicam a todos os arquivos que você está gravando.
+> Se você definir metadados para um arquivo, gravar o arquivo e, em seguida, preparar-se para gravar um novo arquivo sem liberar o autor, alguns metadados que foram definidos para o primeiro arquivo permanecerão definidos e serão incluídos nos arquivos subsequentes. Ao gravar vários arquivos com a mesma instância do objeto writer, você tem duas opções: verificar todos os metadados antes de gravar cada arquivo ou gravar apenas nos metadados de gravação que se aplica a todos os arquivos que você está escrevendo.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Gravando arquivos ASF**](writing-asf-files.md)
+[**Escrevendo arquivos ASF**](writing-asf-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

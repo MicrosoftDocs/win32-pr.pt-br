@@ -4,12 +4,12 @@ ms.assetid: be50912e-b9fd-4ef7-b81a-e37617a96955
 title: Processo operacional de CRM do COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d39dba3dedcbdefebe0f62144547ebb6985fa51f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c6d294d60429faeaad7a4d58808760ecd327bcaff252f2b71070c6605f5327ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118308125"
 ---
 # <a name="com-crm-operating-process"></a>Processo operacional de CRM do COM+
 
@@ -35,7 +35,7 @@ A interface [**ICrmLogControl**](/windows/desktop/api/ComSvcs/nn-comsvcs-icrmlog
 
 Esses dois métodos de gravação gravam um registro de log no disco, mas não garantem a durabilidade do registro. Embora permitir que as gravações lentas sejam acumuladas antes de forçar o disco possa melhorar o desempenho, você pode usar o método [**ICrmLogControl:: ForceLog**](/windows/desktop/api/ComSvcs/nf-comsvcs-icrmlogcontrol-forcelog) em vez de garantir que todas as gravações feitas pelo CRM sejam duráveis em disco, o que é importante para a recuperação de falhas.
 
-Quando o trabalhador do CRM é concluído com suas ações e concluiu a gravação e a força de registros no log, ele deve liberar [**ICrmLogControl**](/windows/desktop/api/ComSvcs/nn-comsvcs-icrmlogcontrol). Quando a transação é concluída (normalmente devido ao componente de aplicativo chamando [**SetComplete**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-setcomplete) ou [**SetAbort**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-setabort)), a infraestrutura de CRM cria o componente compensador de CRM, que implementa a interface [**ICrmCompensator**](/windows/desktop/api/ComSvcs/nn-comsvcs-icrmcompensator) ou a interface [**ICrmCompensatorVariants**](/windows/desktop/api/ComSvcs/nn-comsvcs-icrmcompensatorvariants) . Essas interfaces são usadas para passar os registros não estruturados (Visual C++) ou estruturados (Visual Basic) para o compensador de CRM junto com as notificações de resultado da transação.
+Quando o trabalhador do CRM é concluído com suas ações e concluiu a gravação e a força de registros no log, ele deve liberar [**ICrmLogControl**](/windows/desktop/api/ComSvcs/nn-comsvcs-icrmlogcontrol). Quando a transação é concluída (normalmente devido ao componente de aplicativo chamando [**SetComplete**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-setcomplete) ou [**SetAbort**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-setabort)), a infraestrutura de CRM cria o componente compensador de CRM, que implementa a interface [**ICrmCompensator**](/windows/desktop/api/ComSvcs/nn-comsvcs-icrmcompensator) ou a interface [**ICrmCompensatorVariants**](/windows/desktop/api/ComSvcs/nn-comsvcs-icrmcompensatorvariants) . essas interfaces são usadas para passar os registros não estruturados (Visual C++) ou estruturados (Visual Basic) para o compensador de CRM junto com as notificações de resultado da transação.
 
 O compensador de CRM é notificado primeiro da fase de preparação da conclusão da transação e pode votar em Sim ou não na solicitação de preparação. Se o compensador de CRM não receber nenhuma outra notificação de anulação. Se ele tiver votos de Sim para a solicitação de preparação, ele receberá as notificações de confirmação ou anulação. No caso de uma anulação de cliente, nenhuma notificação de preparação é recebida, somente as notificações de anulação. O compensador de CRM deve estar preparado para lidar com todos esses casos e também deve lidar com o caso em que nenhum registro de log foi gravado com êxito pelo trabalhador do CRM. O compensador de CRM não deve assumir que a mesma instância de compensador de CRM receberá as notificações da fase 1 (preparação) e da fase 2 (confirmação ou anulação), pois elas podem ser interrompidas pela recuperação.
 

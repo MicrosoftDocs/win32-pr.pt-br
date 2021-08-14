@@ -1,35 +1,35 @@
 ---
-title: Arquivo enviado por push
-description: Arquivo enviado por push
+title: Arquivo pressionado
+description: Arquivo pressionado
 ms.assetid: bea803d2-1237-4983-9673-afdcddc32748
 keywords:
-- Capas móveis do Windows Media Player, arquivos de arte
+- Windows Media Player Capas móveis, arquivos de arte
 - capas, arquivos de arte
 - arquivos para capas, arte
-- arquivos de arte para capas, arquivos enviados por push
-- Capas móveis do Windows Media Player, arquivos enviados por push
-- capas, arquivos enviados por push
-- Arquivos enviados por push em capas
+- arquivos de arte para capas, arquivos pressionados
+- Windows Media Player Capas móveis, arquivos pressionados
+- capas, arquivos pressionados
+- Arquivos pressionados em capas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 071a6a4fd00eee7040d2fadb8fb80db343dc0ac6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e0526cad560abfbee3a7ec6cbaa0c355a51d93c2080d7c1ef933f7caaf867ba2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118570667"
 ---
-# <a name="pushed-file"></a>Arquivo enviado por push
+# <a name="pushed-file"></a>Arquivo pressionado
 
-O arquivo enviado contém as imagens que serão exibidas quando o usuário tocar em um botão. Você também pode incluir as imagens normal e push para o estado de pausa do botão PlayPause.
+O arquivo por pushed contém as imagens que serão exibidas quando o usuário tocar em um botão. Você também pode incluir as imagens normais e pressionadas para o estado de pausa do botão PlayPause.
 
-A imagem a seguir é um arquivo Push típico.
+A imagem a seguir é um arquivo típico por pushed.
 
-![arquivo enviado por push](images/cesdkpus.png)
+![arquivo pressionado](images/cesdkpus.png)
 
-Isso armazena as imagens que serão exibidas quando os botões de tipo de clique forem tocados. Também armazenados nesse arquivo são as imagens normais e enviadas por push para a imagem pausada do botão PlayPause. Exceto pelas imagens secundárias PlayPause à direita, as outras imagens de botão são alinhadas com a imagem de plano de fundo, usando o deslocamento definido na seção bitmaps do arquivo de definição de capa.
+Isso armazena as imagens que serão exibidas quando os botões de tipo de clique são mapeados. Também são armazenadas nesse arquivo as imagens normais e enviada por pushed para a imagem em pausa do botão PlayPause. Com exceção das imagens secundárias do PlayPause à direita, as outras imagens de botão são alinhadas com a imagem De plano de fundo, usando o deslocamento definido na seção Bitmaps do arquivo de definição de capa.
 
-Observe que o plano de fundo da imagem do botão corresponde exatamente à área correspondente no arquivo de plano de fundo. Isso é importante, porque quando o usuário toca em um botão de tipo de ocorrência, o retângulo inteiro definido para a imagem enviada por push substituirá a área correspondente no arquivo em segundo plano. Mantenha o gráfico consistente com a imagem de plano de fundo para garantir que apenas as partes do botão que você deseja que sejam diferentes sejam alteradas de fato.
+Observe que a plano de fundo da imagem do botão corresponde exatamente à área correspondente no arquivo Background. Isso é importante, porque quando o usuário toca em um botão de tipo de clique, todo o retângulo definido para a imagem pressionada substituirá a área correspondente no arquivo Background. Mantenha o gráfico consistente com a imagem de plano de fundo para garantir que apenas as partes do botão que você deseja que apareçam diferentes realmente serão mudadas.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -38,9 +38,9 @@ Observe que o plano de fundo da imagem do botão corresponde exatamente à área
 [**Arquivos de arte**](art-files-mobile.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

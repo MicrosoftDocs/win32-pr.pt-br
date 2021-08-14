@@ -1,30 +1,30 @@
 ---
-title: Referência de rede do Windows
-description: Os seguintes elementos de API são usados na rede do Windows
+title: Windows Referência de rede
+description: Os seguintes elementos de API são usados em Windows Rede
 ms.assetid: 2f930380-fc6e-4a39-98c6-a03b64f1bba5
 keywords:
-- WNet de rede do Windows, referência
+- Windows WNet de rede, referência
 - WNet WNet, referência
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20f1d0c8dfaa492bf787a8d0c6b2c5a55940eacc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 044300b7f4dfb50e7ec94fcabfe607ea7f5ab4a81d69b189d3363482547df389
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104498619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118330801"
 ---
-# <a name="windows-networking-reference"></a>Referência de rede do Windows
+# <a name="windows-networking-reference"></a>Windows Referência de rede
 
-Os seguintes elementos de API são usados na rede do Windows:
+Os seguintes elementos de API são usados em Windows Rede:
 
--   [Retornos de chamada de rede do Windows](windows-networking-callbacks.md)
--   [Funções de rede do Windows](windows-networking-functions.md)
--   [Estruturas de rede do Windows](windows-networking-structures.md)
+-   [Windows Retornos de chamada de rede](windows-networking-callbacks.md)
+-   [Windows Funções de rede](windows-networking-functions.md)
+-   [Windows Estruturas de rede](windows-networking-structures.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Função de proxy de função IWICColorContext_InitializeFromMemory_Proxy para o método InitializeFromMemory.
+description: IWICColorContext_InitializeFromMemory_Proxy função - função proxy para o método InitializeFromMemory.
 ms.assetid: d98fe40c-c3f1-4c46-a558-1910e3dee51b
-title: Função IWICColorContext_InitializeFromMemory_Proxy
+title: IWICColorContext_InitializeFromMemory_Proxy função
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: e77bbcf1e430891b031b2e77bc168c33f781eacf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e662e4a88858d413636289e6418e38fb1a1fe0bb864620d029cc8975bde7278f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118711467"
 ---
-# <a name="iwiccolorcontext_initializefrommemory_proxy-function"></a>\_Função de \_ proxy IWICColorContext InitializeFromMemory
+# <a name="iwiccolorcontext_initializefrommemory_proxy-function"></a>Função proxy IWICColorContext \_ InitializeFromMemory \_
 
-Função de proxy para o método [**InitializeFromMemory**](/windows/desktop/api/Wincodec/nf-wincodec-iwiccolorcontext-initializefrommemory) .
+Função proxy para o [**método InitializeFromMemory.**](/windows/desktop/api/Wincodec/nf-wincodec-iwiccolorcontext-initializefrommemory)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,28 +42,28 @@ HRESULT IWICColorContext_InitializeFromMemory_Proxy(
 
 <dl> <dt>
 
-*Isso \_ PTR* \[\]
+*ESTE \_ PTR* \[ em\]
 </dt> <dd>
 
 Tipo: **[ **IWICColorContext**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolorcontext)\***
 
 </dd> <dt>
 
-*pbBuffer* \[ no\]
+*pbBuffer* \[ Em\]
 </dt> <dd>
 
-Tipo: **byte \* const**
+Tipo: **const \* BYTE**
 
-O buffer usado para inicializar o [**IWICColorContext**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolorcontext).
+O buffer usado para inicializar [**o IWICColorContext.**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolorcontext)
 
 </dd> <dt>
 
-*cbBufferSize* \[ no\]
+*cbBufferSize* \[ Em\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-O tamanho do buffer *pbBuffer* .
+O tamanho do *buffer pbBuffer.*
 
 </dd> </dl>
 
@@ -71,7 +71,7 @@ O tamanho do buffer *pbBuffer* .
 
 Tipo: **HRESULT**
 
-Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
@@ -81,9 +81,9 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, Windows aplicativos da área de trabalho do Vista \[\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c52661c4fa1ebce57011f4424901dd1ec18250f
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 1975dcf38a04fc127de199e7cc663c8af41b63e6ce8f92d38be2115316ed0727
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103916778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118382837"
 ---
 # <a name="switch_is-attribute"></a>a opção \_ é um atributo
 
@@ -95,7 +95,7 @@ Especifica zero ou mais declaradores de ponteiro. Um Declarador de ponteiro é o
 
 </dd> <dt>
 
-*nome da função* 
+*Nome da função* 
 </dt> <dd>
 
 Especifica o nome do procedimento remoto.
@@ -199,7 +199,7 @@ typedef struct _WINNER_TYPE
 [**o tamanho \_ é**](size-is.md)
 </dt> <dt>
 
-[**Strings**](string.md)
+[**string**](string.md)
 </dt> <dt>
 
 [**struct**](struct.md)
@@ -214,9 +214,9 @@ typedef struct _WINNER_TYPE
 [**diferente**](unique.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: b9d14b3aa5386f187b2f6cdf0a5d435e2e57d31e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5a559732a5a5b2b669402e2e0526dce1a08e37e4bfa31ba97cb41930a15b6cd1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118219832"
 ---
 # <a name="parsing-with-parameters-sample"></a>Exemplo de análise com parâmetros
 
@@ -22,7 +22,7 @@ Demonstra como aproveitar os auxiliares do shell que usam o nome de análise par
 
 Este tópico inclui as seções a seguir.
 
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Baixando o exemplo](#downloading-the-sample)
 -   [Compilando o exemplo](#building-the-sample)
 -   [Executando o exemplo](#running-the-sample)
@@ -44,7 +44,7 @@ Para obter requisitos adicionais, consulte o arquivo Leiame incluído com o exem
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-| Localização      | URL do caminho                                                                                             |
+| Location      | URL do caminho                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Exemplo de ParsingWithParameters](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/ParsingWithParameters) |
 

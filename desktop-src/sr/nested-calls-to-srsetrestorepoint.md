@@ -4,12 +4,12 @@ description: Este tópico descreve o suporte para chamadas aninhadas para SRSetR
 ms.assetid: ee2dea47-f95d-4293-ac33-eff622b84db6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5654dc7bb6e42ae55cbad18fc2418df3bdd942d2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 12286a69bdb83cb5fd119280e8996c6612e359bf93b9371b6a088a98bf6fd881
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857631"
 ---
 # <a name="nested-calls-to-srsetrestorepoint"></a>Chamadas aninhadas para SRSetRestorePoint
 
@@ -23,9 +23,9 @@ Para o ponto de restauração A com dwEventType = encerrar \_ alteração do sis
 
 A segunda chamada não cria um novo ponto de restauração porque a chamada está aninhada.
 
- 
+ 
 
- 
+ 
 
 
 

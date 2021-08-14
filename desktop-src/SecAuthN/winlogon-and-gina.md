@@ -4,21 +4,21 @@ ms.assetid: d049d83f-b962-4c47-a79a-da556831e319
 title: Winlogon e GINA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a683077f275dc9bf38efca6649cbd8131e0b9334
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e9cc39b905d6a49eb84ccab164f99481561133e6cdd9ea40cfd0b1067315569a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118915065"
 ---
 # <a name="winlogon-and-gina"></a>Winlogon e GINA
 
 O [*Winlogon*](../secgloss/w-gly.md), a [*Gina*](../secgloss/g-gly.md)e os provedores de rede são as partes do modelo de logon interativo. O procedimento de logon interativo normalmente é controlado por Winlogon, MSGina.dll e provedores de rede. Para alterar o procedimento de logon interativo, MSGina.dll pode ser substituído por uma DLL GINA personalizada.
 
-Para trabalhar com o Winlogon, a GINA e os provedores de rede, você deve ter conhecimento da arquitetura de segurança do Windows, especialmente em relação a [*tokens*](../secgloss/a-gly.md), [*pacotes de autenticação*](../secgloss/a-gly.md)e assuntos relacionados.
+para trabalhar com o Winlogon, a GINA e os provedores de rede, você deve ter conhecimento da arquitetura de segurança Windows, especialmente em relação a [*tokens*](../secgloss/a-gly.md), [*pacotes de autenticação*](../secgloss/a-gly.md)e assuntos relacionados.
 
 > [!Note]  
-> As DLLs GINAs são ignoradas no Windows Vista.
+> as DLLs ginas são ignoradas no Windows Vista.
 
  
 
@@ -26,7 +26,7 @@ Para obter informações sobre funções e estruturas específicas, consulte [re
 
 O código de GINA de exemplo pode ser encontrado nos exemplos de segurança do SDK (Software Development Kit) da plataforma. Os exemplos contêm código C para implementar um stub GINA e um gancho GINA. Para obter mais informações sobre o desenvolvimento de DLL de GINA personalizada, envie uma mensagem de email para: ginareqs@microsoft.com .
 
-Para obter informações sobre o modelo de autenticação com suporte do Windows e para obter detalhes sobre os serviços da [*autoridade de segurança local*](../secgloss/l-gly.md) (LSA) e as interfaces do [*pacote de autenticação*](../secgloss/a-gly.md) , consulte [autenticação LSA](lsa-authentication.md).
+para obter informações sobre o modelo de autenticação com suporte pelo Windows e para obter detalhes sobre os serviços da [*autoridade de segurança Local*](../secgloss/l-gly.md) (LSA) e as interfaces do [*pacote de autenticação*](../secgloss/a-gly.md) , consulte [autenticação LSA](lsa-authentication.md).
 
 Para obter informações sobre os aspectos da autoridade de segurança local relacionada à administração da política de segurança, que inclui relações de confiança com outros computadores e domínios, atribuição de privilégios, controle de geração de auditoria, acessibilidade do sistema e outros tópicos semelhantes, consulte [política de LSA](../secmgmt/lsa-policy.md).
 

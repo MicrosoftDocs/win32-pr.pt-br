@@ -1,24 +1,24 @@
 ---
-title: Código de exemplo para publicação do ponto de conexão do RnR
-description: O exemplo de código a seguir é usado pelo serviço Winsock para registrar o ponto de conexão do RnR para o serviço.
+title: Código de exemplo para publicar o ponto de conexão RnR
+description: O exemplo de código a seguir é usado pelo serviço Winsock para registrar o ponto de conexão RnR para o serviço.
 ms.assetid: dd2c7ac9-76fc-4366-8654-8048e6793a16
 ms.tgt_platform: multiple
 keywords:
-- Código de exemplo para publicar o AD do ponto de conexão do RnR
-- Registro do Windows Sockets, anúncio de resolução, código de exemplo, publicação do ponto de conexão do RnR
-- Publicando o AD do ponto de conexão do RnR, código de exemplo
+- Código de exemplo para publicar o AD do ponto de conexão RnR
+- Windows Registro e resolução de soquetes do AD , código de exemplo, publicando o ponto de conexão RnR
+- Publicando o AD do ponto de conexão RnR, código de exemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d2e8f5337f80f9d05bcd1e9b25a963dadba4da21
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6a66581ea20acc42993451a8074e08f8b15f2244d4db1c997da2a978c717aaa3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118693199"
 ---
-# <a name="example-code-for-publishing-the-rnr-connection-point"></a>Código de exemplo para publicação do ponto de conexão do RnR
+# <a name="example-code-for-publishing-the-rnr-connection-point"></a>Código de exemplo para publicar o ponto de conexão RnR
 
-O exemplo de código a seguir é usado pelo serviço Winsock para registrar o ponto de conexão do RnR para o serviço.
+O exemplo de código a seguir é usado pelo serviço Winsock para registrar o ponto de conexão RnR para o serviço.
 
 
 ```C++
@@ -84,9 +84,9 @@ INT serverRegister(SOCKADDR * sa,
 
 
 
- 
+ 
 
- 
+ 
 
 
 

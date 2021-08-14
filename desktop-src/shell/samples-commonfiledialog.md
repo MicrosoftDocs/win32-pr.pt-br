@@ -1,5 +1,5 @@
 ---
-description: Demonstra como criar uma caixa de diálogo abrir/salvar de arquivo personalizado usando diferentes APIs de caixa de diálogo de arquivo comum.
+description: Demonstra como criar uma caixa de diálogo de abertura/salvar arquivo personalizado usando diferentes APIs de Caixa de Diálogo de Arquivo Comum.
 title: Exemplo de caixa de diálogo de arquivo comum
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,20 +9,20 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 42dc86cb1e777f3580a7f6fb349310621b703913
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d2cb9a1a89f122d41066de75002ea0ed2c575a6208a06f0be99b5c7c7bfd2b97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117858579"
 ---
 # <a name="common-file-dialog-sample"></a>Exemplo de caixa de diálogo de arquivo comum
 
-Demonstra como criar uma caixa de diálogo abrir/salvar de arquivo personalizado usando diferentes APIs de caixa de diálogo de arquivo comum.
+Demonstra como criar uma caixa de diálogo de abertura/salvar arquivo personalizado usando diferentes APIs de Caixa de Diálogo de Arquivo Comum.
 
 Este tópico inclui as seções a seguir.
 
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Baixando o exemplo](#downloading-the-sample)
 -   [Compilando o exemplo](#building-the-sample)
 -   [Executando o exemplo](#running-the-sample)
@@ -41,7 +41,7 @@ Este tópico inclui as seções a seguir.
 
  
 
-Para obter requisitos adicionais, consulte o arquivo Leiame incluído com o exemplo.
+Para obter requisitos adicionais, consulte o arquivo Leiame incluído no exemplo.
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 

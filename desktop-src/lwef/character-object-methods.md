@@ -4,28 +4,28 @@ description: Métodos de objeto de caractere
 ms.assetid: 0f926b7b-c1cf-4bd6-ba8c-1b2877eb1d24
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 19bb0dbb256c99660cbce1613c9fdd27d85a92dc
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 141c0fbcfe26e198984fd4a4d8c6c67858085e41178786d2cb78d2938231fdf2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118480310"
 ---
 # <a name="character-object-methods"></a>Métodos de objeto de caractere
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 O servidor também expõe métodos para cada caractere em uma coleção de [**caracteres**](/windows/desktop/lwef/the-characters-object) . Os métodos a seguir têm suporte:
 
--   [**Activate**](activate-method.md)
+-   [**Ativar**](activate-method.md)
 -   [**GestureAt**](gestureat-method.md)
 -   [**Obter**](get-method.md)
 -   [**Ocultar**](hide-method.md)
 -   [**Atividades**](interrupt-method.md)
--   [**Escutar**](listen-method.md)
+-   [**Ouvir**](listen-method.md)
 -   [**Mover**](moveto-method.md)
 -   [**Reproduzir**](play-method.md)
--   [**programa**](show-method.md)
+-   [**Mostrar**](show-method.md)
 -   [**ShowPopupMenu**](showpopupmenu-method.md)
 -   [**Speak**](speak-method.md)
 -   [**Stop**](stop-method.md)
@@ -33,7 +33,7 @@ O servidor também expõe métodos para cada caractere em uma coleção de [**ca
 -   [**Pensar**](think-method.md)
 -   [**Aguarde**](wait-method.md)
 
-Para usar um método, referencie o caractere na coleção. No VBScript e Visual Basic, você faz isso especificando a ID de um caractere:
+Para usar um método, referencie o caractere na coleção. no VBScript e Visual Basic, você faz isso especificando a ID de um caractere:
 
 
 ```
@@ -52,7 +52,7 @@ Para usar um método, referencie o caractere na coleção. No VBScript e Visual 
 
 
 
-Para simplificar a sintaxe do seu código, você pode definir uma variável de objeto e defini-la para fazer referência a um objeto de caractere na coleção de [**caracteres**](/windows/desktop/lwef/the-characters-object) ; em seguida, você pode usar a variável para referenciar métodos ou propriedades do caractere. O exemplo a seguir demonstra como você pode fazer isso usando a instrução Visual Basic set:
+Para simplificar a sintaxe do seu código, você pode definir uma variável de objeto e defini-la para fazer referência a um objeto de caractere na coleção de [**caracteres**](/windows/desktop/lwef/the-characters-object) ; em seguida, você pode usar a variável para referenciar métodos ou propriedades do caractere. o exemplo a seguir demonstra como você pode fazer isso usando a instrução Visual Basic Set:
 
 
 ```
@@ -81,7 +81,7 @@ Para simplificar a sintaxe do seu código, você pode definir uma variável de o
 
 
 
-No Visual Basic 5,0, você também pode criar sua referência declarando sua variável como um objeto de [**caractere**](/windows/desktop/lwef/the-characters-object):
+no Visual Basic 5,0, você também pode criar sua referência declarando sua variável como um objeto de [**caractere**](/windows/desktop/lwef/the-characters-object):
 
 
 ```
@@ -171,6 +171,6 @@ Além disso, você também pode criar uma referência ao objeto [**Character**](
 
 
 
- 
+ 
 
- 
+ 

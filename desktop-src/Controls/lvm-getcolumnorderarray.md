@@ -3,7 +3,7 @@ title: Mensagem de LVM_GETCOLUMNORDERARRAY (commctrl. h)
 description: Obtém a ordem da esquerda para a direita atual de colunas em um controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usar a \_ macro GetColumnOrderArray do ListView.
 ms.assetid: d4636aa8-c61e-4467-abc7-eea897bf370e
 keywords:
-- Controles de LVM_GETCOLUMNORDERARRAY de mensagens do Windows
+- controles de Windows de mensagem de LVM_GETCOLUMNORDERARRAY
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aee387f65abd3f30826e361778d5acac02dfab7c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ea54c633c7ffc9bc580609678e8ba5f62e29429aaea6f866bb7d72b6ea326eb2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008867"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118411492"
 ---
 # <a name="lvm_getcolumnorderarray-message"></a>\_Mensagem GETCOLUMNORDERARRAY LVM
 
@@ -43,7 +43,7 @@ Um ponteiro para uma matriz de inteiros que recebe os valores de índice das col
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se for bem-sucedido, retornará zero e o buffer em *lParam* receberá o índice de coluna de cada coluna no controle na ordem em que aparecem da esquerda para a direita. Caso contrário, o valor de retorno será zero.
 
@@ -53,8 +53,8 @@ Se for bem-sucedido, retornará zero e o buffer em *lParam* receberá o índice 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 

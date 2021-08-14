@@ -4,12 +4,12 @@ ms.assetid: 40622282-e190-40d0-80d4-cab9eddc2091
 title: Criptografando dados com CNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a8f161cd23ec6863bee7f5ffd5b696fa99880e3b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b264518c2a0ccfe0f626c869ba3062c0429941234ca0c286f9e7801961485b74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118907734"
 ---
 # <a name="encrypting-data-with-cng"></a>Criptografando dados com CNG
 

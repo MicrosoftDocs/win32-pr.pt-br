@@ -4,16 +4,16 @@ ms.assetid: f8196a9c-786a-49a3-85a4-1bd5f414a653
 title: Código de exemplo SecBuffer e SecBufferDesc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee7d28e885d6eec65c209caeda299b2f7e5f2ad3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b60b776dd85e29c3f91d2840849d18e48d100dada6037bff556074b1041bdb8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118918443"
 ---
 # <a name="secbuffer-and-secbufferdesc-example-code"></a>Código de exemplo SecBuffer e SecBufferDesc
 
-Este exemplo demonstra como inicializar uma matriz de buffers de segurança. Ele mostra os buffers de segurança de entrada inicializados pelo lado do servidor de uma conexão para se preparar para uma chamada para [**AcceptSecurityContext (geral)**](/windows/win32/api/sspi/nf-sspi-acceptsecuritycontext). Observe que o último buffer contém o token de segurança opaco recebido pelo cliente e que o \_ sinalizador SECBUFFER ReadOnly está definido em [**SECBUFFER**](/windows/desktop/api/Sspi/ns-sspi-secbuffer).
+Este exemplo demonstra como inicializar uma matriz de buffers de segurança. Ele mostra buffers de segurança de entrada inicializados pelo lado do servidor de uma conexão para se preparar para uma chamada para [**AcceptSecurityContext (Geral).**](/windows/win32/api/sspi/nf-sspi-acceptsecuritycontext) Observe que o último buffer contém o token de segurança opaco recebido pelo cliente e que o sinalizador SECBUFFER \_ READONLY está definido em [**SecBuffer**](/windows/desktop/api/Sspi/ns-sspi-secbuffer).
 
 
 ```C++

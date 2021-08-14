@@ -1,19 +1,19 @@
 ---
-description: Uma cadeia de caracteres de regra de descritor de proteção contém uma lista sequencial de um ou mais protetores.
+description: Uma cadeia de caracteres de regra do descritor de proteção contém uma lista sequencial de um ou mais protetores.
 ms.assetid: FBFE2143-DC40-40F3-83CE-E6D8841F9C11
 title: Descritores de proteção
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11814df2af5bd9abee4260f4aadab5bb74c77a9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4e99d4ec8de08ad2f657d2b3ac1992ce6e399ede277f8fde3e12f0732571b01a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118907248"
 ---
 # <a name="protection-descriptors"></a>Descritores de proteção
 
-Uma cadeia de caracteres de regra de descritor de proteção contém uma lista sequencial de um ou mais protetores. Deve haver pelo menos um protetor. Se houver mais de um, os protetores deverão ser separados na cadeia de caracteres por **e** ou **ou**. Esses valores devem estar em letras maiúsculas. A sintaxe a seguir mostra o formato de cadeia de caracteres de um descritor de proteção.
+Uma cadeia de caracteres de regra do descritor de proteção contém uma lista sequencial de um ou mais protetores. Deve haver pelo menos um protetor. Se houver mais de um, os protetores deverão ser separados na cadeia de caracteres **por AND** ou **OR.** Esses valores devem estar em maiúsculas. A sintaxe a seguir mostra o formato de cadeia de caracteres de um descritor de proteção.
 
 
 ```C++
@@ -100,40 +100,40 @@ Descriptor = [ Protector-or
 
 
 
-Os descritores de proteção podem ser definidos no momento para os seguintes tipos de autorização:
+Atualmente, os descritores de proteção podem ser definidos para os seguintes tipos de autorização:
 
--   Um grupo em uma floresta Active Directory.
+-   Um grupo em uma floresta do Active Directory.
 -   Um conjunto de credenciais da Web.
--   Um certificado no repositório de certificados do usuário.
+-   Um certificado no armazenamento de certificados do usuário.
 
-Exemplos de cadeias de caracteres de regra de descritor de proteção para um grupo de Active Directory incluem o seguinte:
+Exemplos de cadeias de caracteres de regra do descritor de proteção para um grupo do Active Directory incluem o seguinte:
 
--   "SID = S-1-5-21-4392301 E SID = S-1-5-21-3101812"
--   "SDDL = O:S-1-5-5-0-290724G: SDA: (A;; CCDC;;; S-1-5-5-0-290724) (A;;D C;;; WD) "
--   "LOCAL = usuário"
--   "LOCAL = computador"
+-   "SID=S-1-5-21-4392301 E SID=S-1-5-21-3101812"
+-   "SDDL=O:S-1-5-5-0-290724G:SYDNE:(A;; CCDC;;; S-1-5-5-0-290724)(A;;D C;;; WD)"
+-   "LOCAL=user"
+-   "LOCAL=machine"
 
 Exemplos de cadeias de caracteres de regra do descritor de proteção para um conjunto de credenciais da Web incluem o seguinte:
 
--   "Webcredentials = mypasswordname"
--   "Webcredentials = mypasswordname, myweb. com"
+-   "WEBCREDENTIALS=MyPasswordName"
+-   "WEBCREDENTIALS=MyPasswordName,myweb.com"
 
-Exemplos de cadeias de caracteres de regra de descritor de proteção para um certificado incluem o seguinte:
+Exemplos de cadeias de caracteres de regra do descritor de proteção para um certificado incluem o seguinte:
 
--   "Certificado = HashId: \_ hash SHA1 \_ do \_ certificado"
--   "Certificado = CertBlob: base64string"
+-   "CERTIFICATE=HashID:sha1 \_ hash \_ de \_ certificado"
+-   "CERTIFICATE=CertBlob:base64String"
 
-O descritor de proteção especificado determina automaticamente qual provedor de proteção de chave é usado. Para obter mais informações, consulte [provedores de proteção](protection-providers.md).
+O descritor de proteção especificado determina automaticamente qual provedor de proteção de chave é usado. Para obter mais informações, consulte [Provedores de proteção](protection-providers.md).
 
-Observe que o lado esquerdo do sinal de igual (=) deve ser **Sid**, **SDDL**, **local**, **webcredentials** ou **certificado**. Esses valores não diferenciam maiúsculas de minúsculas.
+Observe que o lado esquerdo do sinal de igual (=) deve ser **SID,** **SDDL,** **LOCAL,** **WEBCREDENTIALS** ou **CERTIFICATE.** Esses valores não diferenciam maiúsculas de minúsculas.
 
-Você deve especificar uma cadeia de caracteres de regra (ou um nome de exibição associado a uma cadeia de caracteres de regra) ao chamar a função [**NCryptCreateProtectionDescriptor**](/windows/desktop/api/NCryptprotect/nf-ncryptprotect-ncryptcreateprotectiondescriptor) . Como alternativa, como as cadeias de caracteres de regra do descritor de proteção são um pouco complicadas de usar e lembrar, você pode associar um nome de exibição com a cadeia de caracteres de regra e registrá-los usando a função [**NCryptRegisterProtectionDescriptorName**](/windows/desktop/api/NCryptprotect/nf-ncryptprotect-ncryptregisterprotectiondescriptorname) . Em seguida, você pode usar o nome de exibição em **NCryptCreateProtectionDescriptor**.
+Você deve especificar uma cadeia de caracteres de regra (ou um nome de exibição associado a uma cadeia de caracteres de regra) ao chamar a [**função NCryptCreateProtectionDescriptor.**](/windows/desktop/api/NCryptprotect/nf-ncryptprotect-ncryptcreateprotectiondescriptor) Como alternativa, como as cadeias de caracteres de regra do descritor de proteção são um pouco complicadas de usar e lembrar, você pode associar um nome de exibição à cadeia de caracteres de regra e registrar ambos usando a [**função NCryptRegisterProtectionDescriptorName.**](/windows/desktop/api/NCryptprotect/nf-ncryptprotect-ncryptregisterprotectiondescriptorname) Em seguida, você pode usar o nome de **exibição em NCryptCreateProtectionDescriptor**.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[DPAPI CNG](cng-dpapi.md)
+[CNG DPAPI](cng-dpapi.md)
 </dt> <dt>
 
 [Provedores de proteção](protection-providers.md)

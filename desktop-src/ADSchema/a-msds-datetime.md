@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DS-date-time
+title: Atributo ms-DS-Date-Time
 description: Um atributo para armazenar um valor de data e hora.
 ms.assetid: 64813ce7-5ec0-45b8-8d27-f4d1e308789c
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-data-time atributo AD Schema
-- atributo msDS-DateTime do AD Schema
+- Esquema do AD do atributo ms-DS-Date-Time
+- Esquema do AD do atributo msDS-DateTime
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e8367c4e9ca38fb12767eba6cd42ca6ecb082a1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 57b3417f1447e3c1a7b62b832c962e64317cef6f59a3167fc699742c05c59adb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105753603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118426699"
 ---
-# <a name="ms-ds-date-time-attribute"></a>atributo ms-DS-date-time
+# <a name="ms-ds-date-time-attribute"></a>Atributo ms-DS-Date-Time
 
 Um atributo para armazenar um valor de data e hora.
 
@@ -29,14 +29,14 @@ Um atributo para armazenar um valor de data e hora.
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------------------------|
-| CN                | ms-DS-data/hora                                               |
-| LDAP-Display-Name | msDS-DateTime                                                 |
+| CN                | ms-DS-Date-Time                                               |
+| Ldap-Display-Name | msDS-DateTime                                                 |
 | Tamanho              | \-                                                            |
 | Privilégio de atualização  | \-                                                            |
 | Frequência de atualização  | \-                                                            |
 | Attribute-Id      | 1.2.840.113556.1.4.1832                                       |
-| System-ID-GUID    | 234fcbd8-fb52-4908-a328-fd9f6e58e403                          |
-| Syntax            | [**Cadeia de caracteres (em tempo geral)**](s-string-generalized-time.md) |
+| System-Id-Guid    | 234fcbd8-fb52-4908-a328-fd9f6e58e403                          |
+| Syntax            | [**String(Generalized-Time)**](s-string-generalized-time.md) |
 
 
 
@@ -57,15 +57,15 @@ Um atributo para armazenar um valor de data e hora.
 | ID do link                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| É de valor único       | Falso                                                                                                                      |
+| Tem valor único       | Falso                                                                                                                      |
 | É indexado             | Falso                                                                                                                      |
-| No catálogo global      | Falso                                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                               |
+| No Catálogo Global      | Falso                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classes usadas em        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
+| Classes usadas em        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Um atributo para armazenar um valor de data e hora.
 | ID do link                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| É de valor único       | Falso                                                                                                                      |
+| Tem valor único       | Falso                                                                                                                      |
 | É indexado             | Falso                                                                                                                      |
-| No catálogo global      | Falso                                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                               |
+| No Catálogo Global      | Falso                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classes usadas em        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
+| Classes usadas em        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Um atributo para armazenar um valor de data e hora.
 | ID do link                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| É de valor único       | Falso                                                                                                                      |
+| Tem valor único       | Falso                                                                                                                      |
 | É indexado             | Falso                                                                                                                      |
-| No catálogo global      | Falso                                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                               |
+| No Catálogo Global      | Falso                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classes usadas em        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
+| Classes usadas em        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Um atributo para armazenar um valor de data e hora.
 | ID do link                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| É de valor único       | Falso                                                                                                                      |
+| Tem valor único       | Falso                                                                                                                      |
 | É indexado             | Falso                                                                                                                      |
-| No catálogo global      | Falso                                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                               |
+| No Catálogo Global      | Falso                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classes usadas em        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
+| Classes usadas em        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Um atributo para armazenar um valor de data e hora.
 | ID do link                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| É de valor único       | Falso                                                                                                                      |
+| Tem valor único       | Falso                                                                                                                      |
 | É indexado             | Falso                                                                                                                      |
-| No catálogo global      | Falso                                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                               |
+| No Catálogo Global      | Falso                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classes usadas em        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
+| Classes usadas em        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: d2d5825e-02a5-44b8-8615-55b7259d24ba
 title: Mensagem de WM_NCCALCSIZE (WinUser. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b7d63fea3ad0a80bba686d8d86aa5354f0bb45b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6f0a73b469a920bcba79cc19670a7b9536c1bac9e0b0ffcab7ddf5930b984dae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105762133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118200072"
 ---
 # <a name="wm_nccalcsize-message"></a>Mensagem do WM \_ NCCALCSIZE
 
@@ -46,7 +46,7 @@ Se *wParam* for **false**, *lParam* apontará para uma estrutura [**Rect**](/pre
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **LRESULT**
 
@@ -79,7 +79,7 @@ A janela pode ser redesenhada, dependendo se o estilo de classe [cs \_ HREDRAW](
 
 Quando *wParam* é **true**, simplesmente retornar 0 sem processar os retângulos de [**\_ params NCCALCSIZE**](/windows/win32/api/winuser/ns-winuser-nccalcsize_params) fará com que a área do cliente seja redimensionada para o tamanho da janela, incluindo o quadro da janela. Isso removerá os itens de quadro e legenda da janela da janela, deixando apenas a área do cliente exibida.
 
-Começando com o Windows Vista, remover o quadro padrão simplesmente retornando 0 quando *wParam* é **true** não afeta os quadros estendidos na área do cliente usando a função [**DwmExtendFrameIntoClientArea**](/windows/win32/api/dwmapi/nf-dwmapi-dwmextendframeintoclientarea) . Somente o quadro padrão será removido.
+a partir do Windows Vista, remover o quadro padrão simplesmente retornando 0 quando *wParam* é **TRUE** não afeta os quadros estendidos na área do cliente usando a função [**DwmExtendFrameIntoClientArea**](/windows/win32/api/dwmapi/nf-dwmapi-dwmextendframeintoclientarea) . Somente o quadro padrão será removido.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -89,7 +89,7 @@ Começando com o Windows Vista, remover o quadro padrão simplesmente retornando
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

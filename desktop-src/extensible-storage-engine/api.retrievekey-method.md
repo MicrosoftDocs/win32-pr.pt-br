@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. RetrieveKey'
-title: Método API. RetrieveKey
+description: 'Saiba mais sobre: Método Api.RetrieveKey'
+title: Método Api.RetrieveKey
 TOCTitle: 'RetrieveKey method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.RetrieveKey(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.RetrieveKeyGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.retrievekey(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fcabab7639a9cf3128b0b2c314ba60c2de8f8e09
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 70eb4900c1b3fc4ea8b66f138db4b51328ae019c15c6fdfc05d7b786a574d5c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117717840"
 ---
-# <a name="apiretrievekey-method"></a>Método API. RetrieveKey
+# <a name="apiretrievekey-method"></a>Método Api.RetrieveKey
 
-Recupera a chave da entrada de índice na posição atual de um cursor.
+Recupera a chave para a entrada de índice na posição atual de um cursor.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -68,27 +68,27 @@ public static byte[] RetrieveKey(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - Tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    O cursor do qual recuperar a chave.
+    O cursor do onde recuperar a chave.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. ESENT. Interop. RetrieveKeyGrbit](./retrievekeygrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.RetrieveKeyGrbit](./retrievekeygrbit-enumeration.md)  
     
     Recuperar opções de chave.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Escreva \[\]  
+Tipo: \[\]  
 A chave recuperada.  
 
 ## <a name="see-also"></a>Confira também
@@ -99,4 +99,4 @@ A chave recuperada.
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -4,12 +4,12 @@ ms.assetid: 832f2e6d-26ff-416e-a92e-ebaa33d4e7e5
 title: Operações de administração COM+ em transações
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 21612ffec1b9f082dc6a91861882a71f18fb07be
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4182b143de38d838aea7c5aabd2d91bdb84f94480b2bed4c4441e204412ac834
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118308245"
 ---
 # <a name="com-administration-operations-within-transactions"></a>Operações de administração COM+ em transações
 
@@ -43,14 +43,14 @@ Se você estiver fazendo várias operações de administração em uma transaç�
 
 ## <a name="non-transactional-com-catalog-resources"></a>Recursos de catálogo COM+ não transacionais
 
-O registro, o sistema de arquivos e o Windows Installer (MSI) são recursos de catálogo COM+ que não são transacionais.
+o registro, o sistema de arquivos e o Windows Installer (MSI) são recursos de catálogo COM+ que não são transacionais.
 
 > [!Note]  
 > Se houver um erro que anule uma transação, as alterações nesses recursos não poderão ser revertidas.
 
  
 
-Se houver um erro durante a instalação de um aplicativo COM+ existente a partir de um arquivo. msi, o aplicativo não aparecerá no snap-in Serviços de componentes, mas poderá aparecer em Adicionar ou remover programas, caso em que você precisa removê-lo manualmente.
+Se houver um erro ao instalar um aplicativo COM+ existente de um arquivo .msi, o aplicativo não aparecerá no snap-in Serviços de componentes, mas poderá ser exibido em Adicionar ou remover programas, caso em que você precisa removê-lo manualmente.
 
 ## <a name="recovering-in-the-event-of-system-hangs"></a>Recuperando no caso de travamentos do sistema
 
@@ -58,7 +58,7 @@ Se um componente que está realizando operações de administração em uma tran
 
 ## <a name="scripting-with-a-transactioncontext-object"></a>Criando scripts com um objeto TransactionContext
 
-Uma maneira simples de realizar operações de administração em transações é usar um objeto [**TransactionContext**](transactioncontext.md) para controlar a transação. Por exemplo, o script de Visual Basic a seguir demonstra como adicionar transacionalmente dois novos aplicativos para que ambos os aplicativos ou nenhum dos aplicativos sejam criados:
+Uma maneira simples de realizar operações de administração em transações é usar um objeto [**TransactionContext**](transactioncontext.md) para controlar a transação. por exemplo, o script de Visual Basic a seguir demonstra como adicionar transacionalmente dois novos aplicativos para que ambos os aplicativos ou nenhum dos aplicativos sejam criados:
 
 
 ```VB

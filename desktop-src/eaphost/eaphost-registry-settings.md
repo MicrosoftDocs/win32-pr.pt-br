@@ -1,23 +1,23 @@
 ---
-title: Configurações do registro EAPHost
+title: Configurações de registro do EAPHost
 description: Os valores do registro nas chaves do registro a seguir controlam aspectos da funcionalidade do EAPHost.
 ms.assetid: 2b954911-7c2e-4c86-b031-24632235a669
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67e4d258062ee2ae365924ecda22c2660ed5b742
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: ec08a7428dac4c68044b0491e084574c6ff3d006fcf06f59912754c5a9f93833
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "103823482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119482976"
 ---
-# <a name="eaphost-registry-settings"></a>Configurações do registro EAPHost
+# <a name="eaphost-registry-settings"></a>Configurações de registro do EAPHost
 
 Os valores do registro nas chaves do registro a seguir controlam aspectos da funcionalidade do EAPHost.
 
 
 
-| Subchave                                                                 | Description                                                                                                                                                              |
+| Subchave                                                                 | Descrição                                                                                                                                                              |
 |------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [BypassNegotiation](bypassnegotiation.md)                             | Determina se a negociação de recursos entre o servidor RAS e o cliente ocorre.<br/>                                                                              |
 | [AssumePhase2Fragmentation](assumephase2fragmentation.md)             | Determina se o servidor RAS e o cliente pressupõem a fragmentação da fase 2.<br/>                                                                                         |

@@ -1,21 +1,21 @@
 ---
-description: O Gerenciador de recursos é executado como um serviço confiável em um único processo. Todas as solicitações de acesso ao cartão inteligente são feitas ao Gerenciador de recursos, que as roteia para o leitor que contém o cartão de destino.
+description: O gerenciador de recursos é executado como um serviço confiável em um único processo. Todas as solicitações de acesso de cartão inteligente são feitas ao gerenciador de recursos, que as encaminha para o leitor que contém o cartão de o alvo.
 ms.assetid: 4a62588a-14d9-43dc-9572-25a9cbcd0efd
-title: Implementação do Resource Manager
+title: Resource Manager implementação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04ec653f999b74bb9851893b11e1fa49120a7bd6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9d0dfd21ed7da466f84e867a6d28b0e826fc5c4733f24d2f5e1f0562f1b4156
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105752224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118919145"
 ---
-# <a name="resource-manager-implementation"></a>Implementação do Resource Manager
+# <a name="resource-manager-implementation"></a>Resource Manager implementação
 
-O [*Gerenciador de recursos*](../secgloss/r-gly.md) é executado como um serviço confiável em um único processo. Todas as solicitações de acesso ao [*cartão inteligente*](../secgloss/s-gly.md) são feitas ao Gerenciador de recursos, que as roteia para o [*leitor*](../secgloss/r-gly.md) que contém o cartão de destino.
+O [*gerenciador de recursos*](../secgloss/r-gly.md) é executado como um serviço confiável em um único processo. Todas as solicitações [*de acesso de cartão*](../secgloss/s-gly.md) inteligente são feitas ao gerenciador de recursos, que as encaminha para o [*leitor*](../secgloss/r-gly.md) que contém o cartão de o alvo.
 
-Os cartões inteligentes são frequentemente usados em conjunto com segurança e privacidade pessoal. Sempre que possível, o Gerenciador de recursos usa os mecanismos de segurança existentes no sistema operacional subjacente ao acessar um leitor ou cartão inteligente.
+Cartões inteligentes geralmente são usados em conjunto com segurança e privacidade pessoal. Sempre que possível, o gerenciador de recursos usa os mecanismos de segurança existentes no sistema operacional subjacente ao acessar um leitor ou cartão inteligente.
 
  
 

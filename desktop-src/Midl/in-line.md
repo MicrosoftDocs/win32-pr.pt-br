@@ -12,20 +12,20 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c48778d3ff54ddfb3dc8c07bc606a0d9cac5acb
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 2c8d9f59cff23c1dfc7a258658f2a9839b8b6d135b44b40c49f81e44b478de76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105792638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118383700"
 ---
 # <a name="in_line-attribute"></a>\_atributo in line
 
 Não há suporte para a palavra-chave de IDL do DCE **na \_ linha** no Microsoft RPC.
 
- 
+ 
 
- 
+ 
 
 
 

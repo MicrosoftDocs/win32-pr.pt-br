@@ -1,7 +1,7 @@
 ---
 description: O método OnApplyChanges é chamado quando o usuário aplica alterações à página de propriedades.
 ms.assetid: 15a55644-b7bf-4c72-8e26-18fc4fb714b9
-title: Método CBasePropertyPage. OnApplyChanges (cProp. h)
+title: Método CBasePropertyPage.OnApplyChanges (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cbcea308a8daaa8b9fdf15be765dc5d3a0df182c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f822bed433af6e3fab0250e06a04911ee10187039036211974b046b32df6b7b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823102"
 ---
-# <a name="cbasepropertypageonapplychanges-method"></a>Método CBasePropertyPage. OnApplyChanges
+# <a name="cbasepropertypageonapplychanges-method"></a>Método CBasePropertyPage.OnApplyChanges
 
 O `OnApplyChanges` método é chamado quando o usuário aplica alterações à página de propriedades.
 
@@ -40,13 +40,13 @@ virtual HRESULT OnApplyChanges();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A implementação da classe base retorna S \_ OK.
 
 ## <a name="remarks"></a>Comentários
 
-O método [**CBasePropertyPage:: apply**](cbasepropertypage-apply.md) chama `OnApplyChanges` se o sinalizador [**CBasePropertyPage:: m \_ bDirty**](cbasepropertypage-m-bdirty.md) é **true**. Substitua `OnApplyChanges` para processar as alterações e redefinir **m \_ bDirty** como **false**.
+O [**método CBasePropertyPage::Apply**](cbasepropertypage-apply.md) chamará se o sinalizador `OnApplyChanges` [**CBasePropertyPage::m \_ bDirty**](cbasepropertypage-m-bdirty.md) for **TRUE.** Substitua `OnApplyChanges` para processar as alterações e **redefinir m \_ bDirty** para **FALSE.**
 
 ## <a name="examples"></a>Exemplos
 
@@ -67,8 +67,8 @@ HRESULT CMyProp::OnApplyChanges(void)
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>CProp. h (incluir fluxos. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Cprop.h (incluir Fluxos.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

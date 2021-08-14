@@ -1,9 +1,9 @@
 ---
 title: Função CheckAccessFullyMapped
-description: Determina se todos os valores de uma operação de exemplo, de coleta ou de carregamento acessaram blocos mapeados em um recurso de lado.
+description: Determina se todos os valores de uma operação de Exemplo, Coleta ou Carregamento acessaram blocos mapeados em um recurso lado a lado.
 ms.assetid: 2CAB7770-143E-4E29-A57F-96C27021AC5F
 keywords:
-- HLSL da função CheckAccessFullyMapped
+- Função CheckAccessFullyMapped HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c7310e0ebac496fc8f5a56ba3843b7496b8ce7c7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8e7241fa5546edffb2b7c5ff36d2e43919e6d0b6fef9ff617c0fb63a674ffee5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118516669"
 ---
 # <a name="checkaccessfullymapped-function"></a>Função CheckAccessFullyMapped
 
-Determina se todos os valores de uma operação de **exemplo**, de **coleta** ou de **carregamento** acessaram blocos mapeados em um [recurso de lado](/windows/desktop/direct3d11/direct3d-11-2-features).
+Determina se todos os valores de  **uma** operação de exemplo , **Coletar** ou Carregar acessaram blocos mapeados em um recurso lado a [lado.](/windows/desktop/direct3d11/direct3d-11-2-features)
 
 ## <a name="syntax"></a>Sintaxe
 
 ``` syntax
 bool CheckAccessFullyMapped(
-  in uint_only status
+  in uint_only status
 );
 ```
 
@@ -36,48 +36,48 @@ bool CheckAccessFullyMapped(
 
 <dl> <dt>
 
-*status* \[ do no\]
+*status* \[ Em\]
 </dt> <dd>
 
-Tipo: **\_ apenas uint**
+Tipo: **somente \_ uint**
 
-O valor de status que é retornado de uma operação de **exemplo**, de **coleta** ou de **carregamento** . Como não é possível acessar esse valor de status diretamente, você precisa passá-lo para **CheckAccessFullyMapped**.
+O valor de status retornado de uma operação **De exemplo,** **Coletar** **ou** Carregar. Como não é possível acessar esse valor de status diretamente, você precisa passá-lo para **CheckAccessFullyMapped.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **bool**
 
-Retorna um valor **booliano** que indica se todos os valores de uma operação de **exemplo**, **coleta** ou **carregamento** acessaram blocos mapeados em um [recurso de lado](/windows/desktop/direct3d11/direct3d-11-2-features). Retorna **true** se todos os valores da operação acessaram blocos mapeados; caso contrário, retornará **false** se algum valor tiver sido obtido de um bloco não mapeado.
+Retorna um **valor booliana** que indica se todos os valores de uma operação sample **,** **Gather** ou **Load** acessaram blocos mapeados em um recurso lado a [lado.](/windows/desktop/direct3d11/direct3d-11-2-features) Retornará **TRUE** se todos os valores da operação acessarem blocos mapeados; caso contrário, **retornará FALSE** se quaisquer valores foram retirados de um lado não mapeado.
 
 ## <a name="remarks"></a>Comentários
 
-### <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                                                | Com suporte |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelo](d3d11-graphics-reference-sm5.md) de sombreador 5 e modelos de sombreador mais altos | sim       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) e modelos de sombreador superior | sim       |
 
 
 
- 
+ 
 
 Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -86,6 +86,6 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 [Funções intrínsecas](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

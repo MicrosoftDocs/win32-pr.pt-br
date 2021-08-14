@@ -3,7 +3,7 @@ title: MCI_MARK comando (mmsystem. h)
 description: O \_ comando de marca MCI registra ou apaga marcas que podem ser usadas com o \_ comando MCI Seek para pesquisas de alta velocidade. Os dispositivos VCR reconhecem este comando.
 ms.assetid: 69b17e5b-99a1-4fb9-bc0e-30e772c1f11f
 keywords:
-- Multimídia do Windows de comando MCI_MARK
+- MCI_MARK comando Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ddc80decb4559659efb29132f17f18459c334fb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e83cdb6c8c62fa19d66dc6042b6c8b16837f9dc4657060c0955098ed90e1c016
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118374991"
 ---
 # <a name="mci_mark-command"></a>\_Comando de marca MCI
 

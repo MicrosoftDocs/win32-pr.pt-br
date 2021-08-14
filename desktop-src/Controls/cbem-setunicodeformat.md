@@ -1,9 +1,9 @@
 ---
-title: Mensagem de CBEM_SETUNICODEFORMAT (commctrl. h)
-description: Define o sinalizador de formato de caractere UNICODE para o controle. Essa mensagem permite que você altere o conjunto de caracteres usado pelo controle em tempo de execução em vez de ter que recriar o controle.
+title: CBEM_SETUNICODEFORMAT mensagem (Commctrl.h)
+description: Define o sinalizador de formato de caractere UNICODE para o controle . Essa mensagem permite que você altere o conjunto de caracteres usado pelo controle em tempo de executar, em vez de precisar criar o controle.
 ms.assetid: 4811709b-1639-4468-8598-97d9dc8d9057
 keywords:
-- Controles de CBEM_SETUNICODEFORMAT de mensagens do Windows
+- CBEM_SETUNICODEFORMAT controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 89540d4e942b8b705685c13addeeb17adf0b4f5f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d59730922c1d72da90e1c7ba47a287e42ce4ad40375d8216be114e7c280b5a38
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119699296"
 ---
-# <a name="cbem_setunicodeformat-message"></a>\_Mensagem CBEM SETUNICODEFORMAT
+# <a name="cbem_setunicodeformat-message"></a>Mensagem CBEM \_ SETUNICODEFORMAT
 
-Define o sinalizador de formato de caractere UNICODE para o controle. Essa mensagem permite que você altere o conjunto de caracteres usado pelo controle em tempo de execução em vez de ter que recriar o controle.
+Define o sinalizador de formato de caractere UNICODE para o controle . Essa mensagem permite que você altere o conjunto de caracteres usado pelo controle em tempo de executar, em vez de precisar criar o controle.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,20 +32,20 @@ Define o sinalizador de formato de caractere UNICODE para o controle. Essa mensa
 *wParam* 
 </dt> <dd>
 
-Determina o conjunto de caracteres que é usado pelo controle. Se esse valor for diferente de zero, o controle usará caracteres Unicode. Se esse valor for zero, o controle usará caracteres ANSI.
+Determina o conjunto de caracteres usado pelo controle . Se esse valor for diferentes de zero, o controle usará caracteres Unicode. Se esse valor for zero, o controle usará caracteres ANSI.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o sinalizador de formato Unicode anterior para o controle.
+Retorna o sinalizador de formato Unicode anterior para o controle .
 
 ## <a name="remarks"></a>Comentários
 
-Consulte os comentários para [**CCM \_ SETUNICODEFORMAT**](ccm-setunicodeformat.md) para uma discussão sobre esta mensagem.
+Consulte os comentários de [**CCM \_ SETUNICODEFORMAT para**](ccm-setunicodeformat.md) uma discussão sobre essa mensagem.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Consulte os comentários para [**CCM \_ SETUNICODEFORMAT**](ccm-setunicodeformat
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

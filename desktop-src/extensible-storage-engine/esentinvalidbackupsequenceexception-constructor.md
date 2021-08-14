@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1a1ade6f81a962d7b10365f269f3681c57b9ce4f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3399bffeb1f6422012b69d086469599e837d49390703da4368a34996a0f2b60e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105781523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118494552"
 ---
 # <a name="esentinvalidbackupsequenceexception-constructor"></a>Construtor EsentInvalidBackupSequenceException
 
 Inicializa uma nova instância da classe EsentInvalidBackupSequenceException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentInvalidBackupSequenceException()
 
 [Classe EsentInvalidBackupSequenceException](./esentinvalidbackupsequenceexception-class.md)
 
-[Membros do EsentInvalidBackupSequenceException](./esentinvalidbackupsequenceexception-members.md)
+[Membros EsentInvalidBackupSequenceException](./esentinvalidbackupsequenceexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

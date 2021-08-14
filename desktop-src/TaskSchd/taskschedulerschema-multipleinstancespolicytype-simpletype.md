@@ -1,9 +1,9 @@
 ---
-title: Tipo simples de multipleInstancesPolicyType
-description: Define as constantes de política de instância para o elemento MultipleInstancesPolicy (settingstype).
+title: Tipo simples multipleInstancesPolicyType
+description: Define as constantes de política de instância para o elemento MultipleInstancesPolicy (settingsType).
 ms.assetid: 6e3f83b0-b71e-49c9-9c27-5a37f996746b
 keywords:
-- Agendador de Tarefas tipo simples de multipleInstancesPolicyType
+- tipo simples multipleInstancesPolicyType Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 29a3523ef16224836ada474fb32265084453479c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0e8e847e268486e58bc36bd1bcf9f454b2d8af7b7664d0372613c40c818f932f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918664"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117758504"
 ---
-# <a name="multipleinstancespolicytype-simple-type"></a>Tipo simples de multipleInstancesPolicyType
+# <a name="multipleinstancespolicytype-simple-type"></a>Tipo simples multipleInstancesPolicyType
 
-Define as constantes de política de instância para o elemento [**MultipleInstancesPolicy (settingstype)**](taskschedulerschema-multipleinstancespolicy-settingstype-element.md) .
+Define as constantes de política de instância para o [**elemento MultipleInstancesPolicy (settingsType).**](taskschedulerschema-multipleinstancespolicy-settingstype-element.md)
 
 ``` syntax
 <xs:simpleType name="multipleInstancesPolicyType">
@@ -47,16 +47,16 @@ Define as constantes de política de instância para o elemento [**MultipleInsta
 
 ## <a name="enumeration-values"></a>Valores de enumeração
 
-O tipo simples **multipleInstancesPolicyType** define os valores a seguir.
+O **tipo simples multipleInstancesPolicyType** define os valores a seguir.
 
 
 
 | Valor        | Descrição                                                                                     |
 |--------------|-------------------------------------------------------------------------------------------------|
-| Paralelo     | Inicia a nova instância enquanto uma instância existente está em execução.<br/>                           |
-| Fila        | Inicia a nova instância da tarefa depois que todas as outras instâncias da tarefa são concluídas.<br/>      |
-| IgnoreNew    | Padrão. Não iniciará nova instância se uma instância existente da tarefa estiver em execução.<br/> |
-| StopExisting | Interrompe uma instância existente da tarefa antes de iniciar nova instância.<br/>                |
+| Paralelo     | Inicia uma nova instância enquanto uma instância existente está em execução.<br/>                           |
+| Fila        | Inicia uma nova instância da tarefa depois que todas as outras instâncias da tarefa são concluídas.<br/>      |
+| IgnoreNew    | Padrão. Não iniciará a nova instância se uma instância existente da tarefa estiver em execução.<br/> |
+| StopExisting | Interrompe uma instância existente da tarefa antes de iniciar a nova instância.<br/>                |
 
 
 
@@ -66,8 +66,8 @@ O tipo simples **multipleInstancesPolicyType** define os valores a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -75,7 +75,7 @@ O tipo simples **multipleInstancesPolicyType** define os valores a seguir.
 
 <dl> <dt>
 
-[Tipos simples de esquema de Agendador de Tarefas](task-scheduler-schema-complex-types.md)
+[Agendador de Tarefas tipos simples de esquema de Agendador de Tarefas](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

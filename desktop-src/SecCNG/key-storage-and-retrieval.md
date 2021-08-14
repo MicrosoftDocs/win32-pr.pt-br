@@ -4,29 +4,29 @@ ms.assetid: 95e5750f-fdc5-41f3-a4ce-9593a7081e95
 title: Armazenamento e recuperação de chave
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5abfd6319353440c580d53990075a71613a1eba9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e81b2100f005f0ff293e34a3f4c0a7460b7a4d4e9c2b15fbe0b3577b5e52394a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118907677"
 ---
 # <a name="key-storage-and-retrieval"></a>Armazenamento e recuperação de chave
 
--   [Arquitetura de armazenamento de chaves](#key-storage-architecture)
+-   [arquitetura de Armazenamento de chave](#key-storage-architecture)
 -   [Tipos de Chave](#key-types)
 -   [Algoritmos com suporte](#supported-algorithms)
 -   [Diretórios-chave e arquivos](#key-directories-and-files)
 
-## <a name="key-storage-architecture"></a>Arquitetura de armazenamento de chaves
+## <a name="key-storage-architecture"></a>arquitetura de Armazenamento de chave
 
 A CNG fornece um modelo de armazenamento de chave privada que permite adaptar às demandas atuais e futuras da criação de aplicativos que usam recursos de criptografia, como criptografia de chave privada ou pública, bem como as demandas do armazenamento de material da chave. O roteador de armazenamento de chaves é a rotina central nesse modelo e é implementado em Ncrypt.dll. Um aplicativo acessa os KSPs (provedores de armazenamento de chaves) no sistema por meio do roteador de armazenamento de chaves, que oculta os detalhes, como o isolamento de chave, do aplicativo e do próprio provedor de armazenamento. A ilustração a seguir mostra o design e a função da arquitetura de isolamento de chave CNG.
 
 ![provedor de armazenamento de chaves CNG](images/cng-key-storage-provider.png)
 
-Para atender aos requisitos de protocolo CC, as chaves de vida longa devem ser isoladas para que nunca estejam presentes no processo do aplicativo. Atualmente, a CNG dá suporte ao armazenamento de chaves privadas assimétricas usando o KSP de software da Microsoft que está incluído no Windows Server 2008 e no Windows Vista e instalado por padrão.
+Para atender aos requisitos de protocolo CC, as chaves de vida longa devem ser isoladas para que nunca estejam presentes no processo do aplicativo. atualmente, a CNG dá suporte ao armazenamento de chaves privadas assimétricas usando o KSP de software da Microsoft que está incluído com o Windows Server 2008 e Windows Vista e instalado por padrão.
 
-O isolamento de chave é habilitado por padrão no Windows Server 2008 e no Windows Vista. O recurso de isolamento de chave não está disponível em plataformas antes delas. Além disso, KSPs de terceiros não são carregados no serviço de isolamento de chaves (processo LSA). Somente o KSP da Microsoft é carregado no serviço de isolamento de chave.
+o isolamento de chave é habilitado por padrão no Windows Server 2008 e Windows Vista. O recurso de isolamento de chave não está disponível em plataformas antes delas. Além disso, KSPs de terceiros não são carregados no serviço de isolamento de chaves (processo LSA). Somente o KSP da Microsoft é carregado no serviço de isolamento de chave.
 
 O processo LSA é usado como o processo de isolamento de chave para maximizar o desempenho. Todo o acesso a chaves privadas passa pelo roteador de armazenamento de chaves, que expõe um conjunto abrangente de funções para gerenciar e usar chaves privadas.
 
@@ -34,7 +34,7 @@ A CNG armazena a parte pública da chave armazenada separadamente da parte priva
 
 Conforme descrito acima, é possível oferecer suporte a uma grande variedade de dispositivos de armazenamento de hardware. Em cada caso, a interface para todos esses dispositivos de armazenamento é idêntica. Ele inclui funções para executar várias operações de chave privada, bem como funções que pertencem ao armazenamento e gerenciamento de chaves.
 
-A CNG fornece um conjunto de APIs que são usadas para criar, armazenar e recuperar chaves criptográficas. Para obter uma lista dessas APIs, consulte [funções de armazenamento de chave CNG](cng-key-storage-functions.md).
+A CNG fornece um conjunto de APIs que são usadas para criar, armazenar e recuperar chaves criptográficas. para obter uma lista dessas APIs, consulte [funções de Armazenamento de chave CNG](cng-key-storage-functions.md).
 
 ## <a name="key-types"></a>Tipos de Chave
 
@@ -112,7 +112,7 @@ Ao persistir uma chave, a CNG pode criar dois arquivos. O primeiro arquivo cont�
 
 Quando um aplicativo tenta abrir uma chave persistente existente, a CNG tenta primeiro abrir o arquivo CNG nativo. Se esse arquivo não existir, a CNG tentará localizar uma chave correspondente no contêiner de chave CryptoAPI herdado.
 
-Quando você move ou copia chaves de CryptoAPI de um computador de origem para um computador de destino com Ferramenta de Migração do Usuário Windows (USMT), a CNG falhará ao acessar as chaves no computador de destino. Para acessar essas chaves migradas, você deve usar o CryptoAPI.
+quando você move ou copia chaves de CryptoAPI de um computador de origem para um computador de destino com Ferramenta de Migração do Usuário Windows (USMT), a CNG falhará ao acessar as chaves no computador de destino. Para acessar essas chaves migradas, você deve usar o CryptoAPI.
 
  
 

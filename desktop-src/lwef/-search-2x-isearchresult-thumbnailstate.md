@@ -3,9 +3,9 @@ title: Método ISearchResult Thumbnailstate
 description: Reservado. | Método ISearchResult Thumbnailstate
 ms.assetid: b91727a6-a193-4767-a8ff-05ac64f1f27f
 keywords:
-- Método thumbnailstate recursos de ambiente herdados do Windows
-- Método thumbnailstate recursos de ambiente herdados do Windows, interface ISearchResult
-- Recursos do ambiente Windows herdado da interface ISearchResult, método Thumbnailstate
+- recursos herdados do método thumbnailstate Windows ambiente
+- método thumbnailstate herdado Windows recursos de ambiente, interface ISearchResult
+- ISearchResult interface herdada Windows recursos de ambiente, método thumbnailstate
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 73d9220753081a6016f60eaad35ea6e116aed958
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6164445de7cd88f37877154e0f0c03845dfe3904e5af117ecd521c82907cbf4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104172750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118481080"
 ---
 # <a name="isearchresultthumbnailstate-method"></a>Método ISearchResult:: Thumbnailstate
 

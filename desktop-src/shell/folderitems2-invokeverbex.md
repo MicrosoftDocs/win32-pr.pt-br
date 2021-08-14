@@ -1,7 +1,7 @@
 ---
-description: Executa um verbo em uma coleção de objetos FolderItem. Esse método é uma extensão do método InvokeVerb, permitindo um controle adicional da operação por meio de um conjunto de sinalizadores.
+description: Executa um verbo em uma coleção de objetos FolderItem. Esse método é uma extensão do método InvokeVerb, permitindo o controle adicional da operação por meio de um conjunto de sinalizadores.
 ms.assetid: 2c02985d-8877-4a02-a232-6aeb1716928c
-title: Método FolderItems2. InvokeVerbEx (shldisp. h)
+title: Método FolderItems2.InvokeVerbEx (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: aa9b986b5cb76f14cc950f522e1e289224c17b58
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94d62de132a61bb357acac77aea41d2278ba1eb4453afa826ac32be90095ab25
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117860145"
 ---
-# <a name="folderitems2invokeverbex-method"></a>Método FolderItems2. InvokeVerbEx
+# <a name="folderitems2invokeverbex-method"></a>Método FolderItems2.InvokeVerbEx
 
-Executa um verbo em uma coleção de objetos [**FolderItem**](folderitem.md) . Esse método é uma extensão do método [**InvokeVerb**](folderitem-invokeverb.md) , permitindo um controle adicional da operação por meio de um conjunto de sinalizadores.
+Executa um verbo em uma coleção de [**objetos FolderItem.**](folderitem.md) Esse método é uma extensão do método [**InvokeVerb,**](folderitem-invokeverb.md) permitindo o controle adicional da operação por meio de um conjunto de sinalizadores.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,33 +40,33 @@ iRetVal = FolderItems2.InvokeVerbEx(
 
 <dl> <dt>
 
-*vVerb* \[ em, opcional\]
+*vVerb* \[ in, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variante**
 
-Uma **variante** com a cadeia de caracteres de verbo que corresponde ao comando a ser executado. Se nenhum verbo for especificado, o verbo padrão será executado.
+Uma **Variante** com a cadeia de caracteres de verbo que corresponde ao comando a ser executado. Se nenhum verbo for especificado, o verbo padrão será executado.
 
 </dd> <dt>
 
-*vArgs* \[ em, opcional\]
+*vArgs* \[ in, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variante**
 
-Uma **variante** que consiste em uma cadeia de caracteres com um ou mais argumentos para o comando especificado por *vVerb*. O formato dessa cadeia de caracteres depende do verbo específico.
+Uma **Variante** que consiste em uma cadeia de caracteres com um ou mais argumentos para o comando especificado por *vVerb*. O formato dessa cadeia de caracteres depende do verbo específico.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Um verbo é uma cadeia de caracteres usada para especificar uma ação específica associada a um item ou a uma coleção de itens. Normalmente, chamar um verbo inicia um aplicativo relacionado. Por exemplo, chamar o verbo **Open** em um arquivo. txt normalmente abre o arquivo com um editor de texto, geralmente o bloco de notas da Microsoft. Para obter mais informações sobre verbos, consulte [iniciando aplicativos](launch.md).
+Um verbo é uma cadeia de caracteres usada para especificar uma ação específica associada a um item ou coleção de itens. Normalmente, chamar um verbo inicia um aplicativo relacionado. Por exemplo, chamar o **verbo aberto** em um arquivo .txt normalmente abre o arquivo com um editor de texto, geralmente Microsoft Bloco de notas. Para mais discussão sobre verbos, consulte [Iniciando aplicativos](launch.md).
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **InvokeVerbEx** para invocar o verbo padrão ("Open") em **meu computador**. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir **usa InvokeVerbEx** para invocar o verbo padrão ("open") no **Meu Computador**. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -94,7 +94,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -161,11 +161,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5.0 ou posterior)</dt> </dl> |
 
 
 

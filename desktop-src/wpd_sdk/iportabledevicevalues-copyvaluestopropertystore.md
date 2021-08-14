@@ -1,7 +1,7 @@
 ---
-description: O método CopyValuesToPropertyStore copia todos os valores de uma coleção para uma interface IPropertyStore.
+description: O método CopyValuesToPropertyStore copia todos os valores de uma coleção em uma interface IPropertyStore.
 ms.assetid: 417a8723-fa46-44c8-9bdc-412c0f20969a
-title: 'Método IPortableDeviceValues:: CopyValuesToPropertyStore (PortableDeviceTypes. h)'
+title: Método IPortableDeviceValues::CopyValuesToPropertyStore (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: d6ab6b4614c336d3e0da50c0291b2e69a260ae1f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2d134cb61831426451b1c6068bde5ca787b027fbe5b153587b45d9693ef739c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105797958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118697243"
 ---
-# <a name="iportabledevicevaluescopyvaluestopropertystore-method"></a>Método IPortableDeviceValues:: CopyValuesToPropertyStore
+# <a name="iportabledevicevaluescopyvaluestopropertystore-method"></a>Método IPortableDeviceValues::CopyValuesToPropertyStore
 
-O método **CopyValuesToPropertyStore** copia todos os valores de uma coleção para uma interface **IPropertyStore** .
+O **método CopyValuesToPropertyStore** copia todos os valores de uma coleção em uma interface **IPropertyStore.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,16 +40,16 @@ HRESULT CopyValuesToPropertyStore(
 
 <dl> <dt>
 
-*Pstore* \[ no\]
+*pStore* \[ Em\]
 </dt> <dd>
 
-Ponteiro para um objeto de repositório.
+Ponteiro para um objeto de armazenamento.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -63,9 +63,9 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 ## <a name="remarks"></a>Comentários
 
-Este método não converte valores de VT \_ LPWSTR em VT \_ BSTR. Muitos aplicativos externos ou componentes que se comunicam com seu aplicativo, como alguns aplicativos de Shell, usam a interface **IPropertyStore** . Esse método fornece uma maneira rápida e fácil de trocar dados com esses programas.
+Esse método não converte valores de VT \_ LPWSTR em VT \_ BSTR. Muitos aplicativos externos ou componentes que se comunicam com seu aplicativo, como alguns aplicativos shell, usam a interface **IPropertyStore.** Esse método fornece uma maneira rápida e fácil de trocar dados com esses programas.
 
-Esse método tem suporte no Windows Vista e em versões posteriores do Windows.
+Esse método tem suporte no Windows Vista e versões posteriores do Windows.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,8 +73,8 @@ Esse método tem suporte no Windows Vista e em versões posteriores do Windows.
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -82,7 +82,7 @@ Esse método tem suporte no Windows Vista e em versões posteriores do Windows.
 
 <dl> <dt>
 
-[**Interface IPortableDeviceValues**](iportabledevicevalues.md)
+[**IPortableDeviceValues Interface**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**IPortableDeviceValues::CopyValuesFromPropertyStore**](iportabledevicevalues-copyvaluesfrompropertystore.md)

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b718254082095592f097097500d2690be320dd63
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 79a1ce202d504364075f0d71754fb1c9b7a70ff9627de910a47cd6d09cafe005
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475796"
 ---
 # <a name="jet_bklogtime-structure"></a>Estrutura de JET_BKLOGTIME
 
@@ -38,7 +38,7 @@ Descreve uma data/hora em que um backup ocorreu.
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` vb
 'Declaration

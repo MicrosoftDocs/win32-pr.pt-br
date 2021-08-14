@@ -4,16 +4,16 @@ description: Propriedade MoveCause
 ms.assetid: 8f78a6da-8498-4a39-a4b9-5ab7a43d97f5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dfc7f91d068befa2b919c04818c46dbc1a48faa0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: aa797338e64edfd67ae2347f2983df624464df923a64883e3adc5143671b15dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117883827"
 ---
 # <a name="movecause-property"></a>Propriedade MoveCause
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Retorna um valor inteiro que especifica o que causou a última movimentação do
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-*agente* do. **Caracteres ("***characterid***"). MoveCause**
+*agente* do. **Caracteres ("**_characterid_*_"). MoveCause_*
 
 
 
@@ -41,7 +41,7 @@ Retorna um valor inteiro que especifica o que causou a última movimentação do
 
 
 
- 
+ 
 
 </dd> </dl>
 
@@ -54,9 +54,9 @@ Você pode usar essa propriedade para determinar o que causou o caractere a ser 
 [**Mover evento**](move-event.md), [ **método MoveTo**](moveto-method.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

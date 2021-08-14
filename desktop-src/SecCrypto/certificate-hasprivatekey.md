@@ -1,7 +1,7 @@
 ---
-description: Determina se o certificado tem uma chave privada associada a ele. O método determina isso verificando se a \_ propriedade de ID prop da chave de certificado \_ Prov \_ \_ \_ está presente.
+description: Determina se o certificado tem uma chave privada associada a ele. O método determina isso verificando se a propriedade CERT \_ KEY \_ PROV \_ INFO PROP \_ \_ ID está presente.
 ms.assetid: 80478956-1ed7-4c25-9ae3-d7176649e6d7
-title: 'Método ICertificate2:: HasPrivateKey'
+title: Método ICertificate2::HasPrivateKey
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 43110e48a1172977ad979d6ec2d94c5b8e3ffc50
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ac38a62e11d75e21de5fd61dffd821cb4384e4e9b59d2bf11f6e217589ab578b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117771521"
 ---
-# <a name="icertificate2hasprivatekey-method"></a>Método ICertificate2:: HasPrivateKey
+# <a name="icertificate2hasprivatekey-method"></a>Método ICertificate2::HasPrivateKey
 
-\[O CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, use a [**classe X509Certificate2**](/previous-versions/windows/embedded/hh424017(v=msdn.10)) no namespace [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) .\]
+\[CAPICOM é um componente de apenas 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, [**use a Classe X509Certificate2**](/previous-versions/windows/embedded/hh424017(v=msdn.10)) no namespace [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
-O método **HasPrivateKey** determina se o [*certificado*](../secgloss/c-gly.md) tem uma [*chave privada*](../secgloss/p-gly.md) associada a ele. O método determina isso verificando se a \_ propriedade de ID prop da chave de certificado \_ Prov \_ \_ \_ está presente.
+O **método HasPrivateKey** determina se [*o*](../secgloss/c-gly.md) certificado tem uma [*chave privada*](../secgloss/p-gly.md) associada a ele. O método determina isso verificando se a propriedade CERT \_ KEY \_ PROV \_ INFO PROP \_ \_ ID está presente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,9 +47,9 @@ Esse método não tem parâmetros.
 
 | Requisito | Valor |
 |----------------------------------|----------------------------------------------------------------------------------------|
-| Fim do suporte do cliente<br/> | Windows Vista<br/>                                                               |
-| Fim do suporte do servidor<br/> | Windows Server 2008<br/>                                                         |
-| Redistribuível<br/>       | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Fim do suporte ao cliente<br/> | Windows Vista<br/>                                                               |
+| Fim do suporte ao servidor<br/> | Windows Server 2008<br/>                                                         |
+| Redistribuível<br/>       | CAPICOM 2.0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
@@ -58,13 +58,13 @@ Esse método não tem parâmetros.
 
 <dl> <dt>
 
-[**PrivateKey. Open**](privatekey-open.md)
+[**PrivateKey.Open**](privatekey-open.md)
 </dt> <dt>
 
 [Objetos de criptografia](cryptography-objects.md)
 </dt> <dt>
 
-[**Certificate**](certificate.md)
+[**Certificado**](certificate.md)
 </dt> </dl>
 
  

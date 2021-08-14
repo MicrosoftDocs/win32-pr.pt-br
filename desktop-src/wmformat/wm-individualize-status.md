@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ddec51fbdfecd407a68b3e168a82af449decce6a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: eb083c2a90a791099f6438f2911ac9735ecd4dada9118811aa0ff581a8db37ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105814095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118699016"
 ---
 # <a name="wm_individualize_status-structure-drmexternalsh"></a>Estrutura de WM_INDIVIDUALIZE_STATUS (Drmexternals. h)
 
@@ -107,7 +107,7 @@ Essa estrutura é preenchida pelos componentes de tempo de execução do DRM e �
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                      |
-| Versão<br/>                  | SDK do Windows Media Format 7 ou versões posteriores do SDK<br/>                       |
+| Versão<br/>                  | Windows SDK do Media Format 7 ou versões posteriores do SDK<br/>                       |
 | parâmetro<br/>                   | <dl> <dt>Drmexternals. h</dt> </dl> |
 
 

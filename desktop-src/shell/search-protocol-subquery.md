@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: c27ce11d4d2e6ac36792f3ce47c053e9646d9903
-ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
+ms.openlocfilehash: fc478c9aff21b20566ffcd8d10580abaf8affa8eb36c39adb8c3c75486ca999d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113581594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118452862"
 ---
 # <a name="subquery-argument-the-windows-shell"></a>argumento de subconsulta (o Shell de Windows)
 

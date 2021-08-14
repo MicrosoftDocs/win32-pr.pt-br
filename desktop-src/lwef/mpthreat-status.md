@@ -3,8 +3,8 @@ title: Enumeração de MPTHREAT_STATUS (MpClient. h)
 description: Possível status de ameaça.
 ms.assetid: 64B57C8B-231B-4A2C-BF2E-45DB62B8350E
 keywords:
-- Recursos do ambiente Windows herdado de enumeração de MPTHREAT_STATUS
-- PMPTHREAT_STATUS recursos de ambiente herdados do ponteiro de enumeração do Windows
+- recursos do ambiente de Windows herdado de enumeração de MPTHREAT_STATUS
+- Windows recursos de ambiente herdados do ponteiro de enumeração PMPTHREAT_STATUS
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 978a152d6f14d7b3577ece0a2e8bd5a8ba741a3b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 92d800cbfb0adbeb994586a69e38ac4a1ad2a8957091508b147bd582fef5233e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105756950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118476258"
 ---
 # <a name="mpthreat_status-enumeration"></a>\_Enumeração de status MPTHREAT
 
@@ -98,8 +98,8 @@ typedef enum tagMPTHREAT_STATUS {
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
 
 

@@ -4,12 +4,12 @@ ms.assetid: 334aa2b9-0ef2-4a4b-9352-de5ded95afa6
 title: Instrução SELECT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e05832dab0184870a626fa4bce502d908c9b05f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1df8cc5f4b6bab673d20c981e44386d3fdbd651b5a2753d8c965ee55023a6562
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105814059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118227191"
 ---
 # <a name="select-statement"></a>Instrução SELECT
 
@@ -44,7 +44,7 @@ Os especificadores de coluna devem ser colunas de nome de propriedade válidas, 
 
 Quando a consulta retorna um documento que não tem a coluna solicitada, o valor dessa coluna para o documento é **nulo**.
 
-Você deve fornecer pelo menos um nome de coluna em uma instrução SELECT. Na consulta linguagem SQL (SQL), você pode usar o asterisco ( \* ) para especificar que todas as colunas em uma tabela sejam retornadas. No entanto, nenhum conjunto definido e fixo de propriedades se aplica a todos os documentos. Por esse motivo, o asterisco do SQL não é permitido no <columns> especificador da instrução SELECT.
+Você deve fornecer pelo menos um nome de coluna em uma instrução SELECT. na consulta linguagem SQL (SQL), você pode usar o asterisco ( \* ) para especificar que todas as colunas em uma tabela sejam retornadas. No entanto, nenhum conjunto definido e fixo de propriedades se aplica a todos os documentos. por esse motivo, o asterisco SQL não é permitido no <columns> especificador da instrução SELECT.
 
 ## <a name="getting-the-top-n-results"></a>Obtendo os n maiores resultados
 

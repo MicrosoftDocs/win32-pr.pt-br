@@ -3,21 +3,21 @@ title: Fluxos de imagem
 description: Fluxos de imagem
 ms.assetid: 17a945aa-463a-4aac-82cc-68b49c720c0a
 keywords:
-- SDK do Windows Media Format, fluxos de imagem
+- Windows SDK do formato de mídia, fluxos de imagem
 - ASF (Advanced Systems Format), fluxos de imagem
 - ASF (formato de sistemas avançados), fluxos de imagem
-- SDK do Windows Media Format, fluxos
+- Windows SDK do formato de mídia, fluxos
 - ASF (Advanced Systems Format), fluxos
 - ASF (formato de sistemas avançados), fluxos
 - fluxos de imagem, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 280d029715a3c722d05ee335a3a88ae4632cabbb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c2067710e6b2be627bd16125d73e567a2f1ba1557ae01b81f55712d8c5a7b8bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118702860"
 ---
 # <a name="image-streams"></a>Fluxos de imagem
 
@@ -29,7 +29,7 @@ Os fluxos de imagem são como fluxos de vídeo, pois são criados a partir de ex
 
 <dl> <dt>
 
-[**Fluxos arbitrários**](arbitrary-streams.md)
+[**Fluxos arbitrário**](arbitrary-streams.md)
 </dt> <dt>
 
 [**Recursos de arquivo ASF**](asf-file-features.md)
@@ -38,12 +38,12 @@ Os fluxos de imagem são como fluxos de vídeo, pois são criados a partir de ex
 [**Fluxos de áudio e vídeo**](audio-and-video-streams.md)
 </dt> <dt>
 
-[**Gravando fluxos de imagem**](writing-image-streams.md)
+[**Fluxos de gravação de imagem**](writing-image-streams.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

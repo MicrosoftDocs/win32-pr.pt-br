@@ -1,9 +1,9 @@
 ---
-title: Código de notificação do NM_NCHITTEST (rebar) (commctrl. h)
-description: Código de notificação de NM_NCHITTEST (rebar) – enviado por um controle rebar quando o controle recebe uma mensagem de NCHITTEST do WM \_ . Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: NM_NCHITTEST (rebar) de notificação (Commctrl.h)
+description: NM_NCHITTEST (rebar) de notificação – enviado por um controle de barra novamente quando o controle recebe uma mensagem WM \_ NCHITTEST. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: b345d83e-682d-4067-a783-689d64f9b7bc
 keywords:
-- Controles do Windows de código de notificação de NM_NCHITTEST (rebar)
+- NM_NCHITTEST (rebar) de código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7935f1b3e990db55518c9d22537e8fb6db97962
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b5831ca9dbeda35c7757613cae1d31db921aa80f4b749d4c9407339a2531abcf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118410697"
 ---
-# <a name="nm_nchittest-rebar-notification-code"></a>\_Código de notificação do NCHITTEST nm (rebar)
+# <a name="nm_nchittest-rebar-notification-code"></a>Código de \_ notificação NM NCHITTEST (rebar)
 
-Enviado por um controle rebar quando o controle recebe uma mensagem de [**\_ NCHITTEST do WM**](/windows/desktop/inputdev/wm-nchittest) . Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Enviado por um controle de barra de rebar quando o controle recebe uma [**mensagem WM \_ NCHITTEST.**](/windows/desktop/inputdev/wm-nchittest) Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ NM_NCHITTEST
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**NMMOUSE**](/windows/win32/api/commctrl/ns-commctrl-nmmouse) que contém informações sobre o código de notificação. O membro **dwItemSpec** contém o índice de banda sobre o qual ocorreu a mensagem de teste de ocorrência e o membro **pt** contém as coordenadas do mouse da mensagem de teste de clique.
+Ponteiro para uma [**estrutura NMMOUSE**](/windows/win32/api/commctrl/ns-commctrl-nmmouse) que contém informações sobre o código de notificação. O **membro dwItemSpec** contém o índice de banda sobre o qual ocorreu a mensagem de teste de clique e o membro **pt** contém as coordenadas do mouse da mensagem de teste de clique.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorne zero para permitir que o rebar execute o processamento padrão da mensagem de teste de clique ou retorne um dos valores de HT \* documentados em [**WM \_ NCHITTEST**](/windows/desktop/inputdev/wm-nchittest) para substituir o processamento de teste de clique padrão.
+Retorne zero para permitir que a barra de rebar execute o processamento padrão da mensagem de teste de acerto ou retorne um dos valores de HT documentados em \* [**WM \_ NCHITTEST**](/windows/desktop/inputdev/wm-nchittest) para substituir o processamento de teste de acerto padrão.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ Retorne zero para permitir que o rebar execute o processamento padrão da mensag
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| parâmetro<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

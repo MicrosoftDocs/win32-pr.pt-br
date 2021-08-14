@@ -4,16 +4,16 @@ description: IAgentBalloon GetNumLines
 ms.assetid: 82deeed0-d4a7-46e4-9077-edd933dcf4e2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a7d66c18d75af77a2559efc86f775710fb32e6e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 461ebc4fa7c7e0ae9080544e9114db9f8c179925dae665925d893288f95de027
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118478620"
 ---
 # <a name="iagentballoongetnumlines"></a>IAgentBalloon::GetNumLines
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT GetNumLines(
@@ -41,9 +41,9 @@ O servidor do Microsoft Agent rola automaticamente as linhas exibidas para a sa�
 [**IAgentBalloon::GetNumCharsPerLine**](iagentballoon--getnumcharsperline.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

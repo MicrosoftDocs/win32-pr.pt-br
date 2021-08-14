@@ -4,16 +4,16 @@ ms.assetid: 9e770bfc-2bcb-45f0-a7fc-ba526349839e
 title: Objeto de plex de volume
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54a858bc6ce98761bb687e8dca473b1b68879da8
-ms.sourcegitcommit: 37f276b5d887a3aad04b1ba86e390dea9d87e591
+ms.openlocfilehash: c140cbf50e1939be7f62499aa90a299e07c157cd22b1a2e039e5e7bb2053b497
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "104297827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118603019"
 ---
 # <a name="volume-plex-object"></a>Objeto de plex de volume
 
-\[A partir do Windows 8 e do Windows Server 2012, a interface com do [serviço de disco virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de armazenamento do Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[a partir do Windows 8 e Windows Server 2012, a interface COM do [serviço de disco Virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de Armazenamento Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
 
 Um objeto de volume Plex modela um plex de volume que está contido por um volume. Somente um volume espelhado pode ter vários plexes; todos os outros tipos de volume têm um plex. Cada plex contém uma cópia dos dados no volume. O VDS dá suporte a quatro tipos de plex de volume: simples, estendido, distribuído e distribuído com paridade. Para obter uma descrição de cada um desses tipos de volume, consulte o [objeto volume](volume-object.md).
 
@@ -29,7 +29,7 @@ A tabela a seguir lista as interfaces, as enumerações e as estruturas relacion
 
 
 
-| Tipo                                              | Elemento                                                                                                                                                                            |
+| Digite                                              | Elemento                                                                                                                                                                            |
 |---------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Interfaces que são sempre expostas por este objeto | [**IVdsVolumePlex**](/windows/desktop/api/Vds/nn-vds-ivdsvolumeplex).                                                                                                                                          |
 | Enumerações associadas                           | [**VDS \_ \_ \_ Status de plex de volume**](/windows/desktop/api/Vds/ne-vds-vds_volume_plex_status), [**\_ \_ \_ tipo de plex de volume VDS**](/windows/desktop/api/Vds/ne-vds-vds_volume_plex_type)e [**\_ \_ \_ tipo de extensão de disco VDS**](/windows/desktop/api/Vds/ne-vds-vds_disk_extent_type). |

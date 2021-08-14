@@ -3,7 +3,7 @@ title: Estrutura de MCI_VCR_SETAUDIO_PARMS (VCR. h)
 description: A estrutura do MCI de \_ SetAudio de videocassetes \_ \_ contém parâmetros para o \_ comando de SetAudio do MCI para gravadores de vídeo-fita.
 ms.assetid: 328d8e63-7ddd-4c9b-85d6-2e56fd802dbc
 keywords:
-- Multimídia do Windows da estrutura de MCI_VCR_SETAUDIO_PARMS
+- estrutura de MCI_VCR_SETAUDIO_PARMS Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 143345f494f381054335d2dfec3b0c10222adca4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fa07d4cf8b88eb246019bf18dd1c1328413718a70b17ebb16e27606958473f5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117802954"
 ---
 # <a name="mci_vcr_setaudio_parms-structure"></a>\_Estrutura de \_ parâmetros de áudio \_ MCI de VCR
 

@@ -4,7 +4,7 @@ description: Contém informações adicionais sobre o status de um registro em a
 ms.assetid: 2FDDF4D3-6A3E-4DF5-ACA4-423F893C6F2B
 keywords:
 - API de Windows Biometric Framework de estrutura de WINBIO_EXTENDED_ENROLLMENT_STATUS
-- Ponteiro de estrutura de PWINBIO_EXTENDED_ENROLLMENT_STATUS Windows Biometric Framework API
+- ponteiro de estrutura de PWINBIO_EXTENDED_ENROLLMENT_STATUS Windows Biometric Framework API
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 937e56e438feadc646329c673af4454cb39eaddd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 16ab3736e3ad5b0bcf10bed1fb606d3e6283715a6b10c44dcb4923920597d5e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118910441"
 ---
 # <a name="winbio_extended_enrollment_status-structure"></a>\_Estrutura de \_ status de registro ESTENDIdo WINBIO \_
 
@@ -118,7 +118,7 @@ Um valor de **\_ \_ subtipo biométrico WINBIO** que fornece informações adici
 
 </dd> <dt>
 
-**Específicas**
+**Determinados**
 </dt> <dd>
 
 Informações sobre o status de um registro que está em andamento para um fator biométrico específico.
@@ -146,7 +146,7 @@ A posição dentro do quadro da câmera da face do indivíduo a ser registrado, 
 
 </dd> <dt>
 
-**Distância**
+**Alcance**
 </dt> <dd>
 
 A distância entre o local real da face e a distância focal ideal para a face. Esse valor varia de-100 a 100. 0 indica a distância ideal, os valores positivos indicam que o local real da face está muito distante, e os valores negativos indicam que o local real está muito próximo.
@@ -202,7 +202,7 @@ O número de amostras para a borda direita da impressão digital necessária par
 
 </dd> </dl> </dd> <dt>
 
-**Íris**
+**Iris**
 </dt> <dd>
 
 Informações sobre o status de um registro que está em andamento para padrões de íris.
@@ -241,7 +241,7 @@ A posição do centro de um dos Pupils do indivíduo a ser registrado. Se o sist
 
 </dd> <dt>
 
-**Distância**
+**Alcance**
 </dt> <dd>
 
 A distância entre o local real da íris e a distância focal ideal para a íris. Esse valor varia de-100 a 100. 0 indica a distância ideal, os valores positivos indicam que o local real da íris está muito distante, e os valores negativos indicam que o local real está muito próximo.
@@ -268,9 +268,9 @@ Reservado.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h para aplicativos cliente ou WinBio \_ Adapters. h para adaptadores)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                                                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2016 somente aplicativos da área de trabalho\]<br/>                                                                                                                     |
+| parâmetro<br/>                   | <dl> <dt>Winbio \_ types.h (inclua Winbio.h para aplicativos cliente ou \_ adaptadores Winbio.h para adaptadores)</dt> </dl> |
 
 
 

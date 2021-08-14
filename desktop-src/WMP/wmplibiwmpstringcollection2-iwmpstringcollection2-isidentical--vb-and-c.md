@@ -3,9 +3,9 @@ title: Método isidêntico IWMPStringCollection2
 description: O método isidêntico retorna um valor que indica se o objeto representado pela interface fornecida é o mesmo que o atual.
 ms.assetid: 826e7fd8-88f8-4a2a-9ca0-82a500099272
 keywords:
-- método isidêntico do Windows Media Player
+- método isidêntico Windows Media Player
 - método isidêntico Windows Media Player, interface IWMPStringCollection2
-- Interface IWMPStringCollection2 do Windows Media Player, método isidêntico
+- Windows Media Player de interface IWMPStringCollection2, método isidêntico
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bb760dae213f28d44fbc707b4430cb151cfe578
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4576522c1b6d6834ded5e100a2618dcb45204f887420968a5828fdc5c9bd0fef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118330900"
 ---
 # <a name="iwmpstringcollection2isidentical-method"></a>Método IWMPStringCollection2:: isidêntico
 
@@ -60,7 +60,7 @@ A interface **WMPLib. IWMPStringCollection2** que representa o objeto a ser comp
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O **System. Boolean** que é o resultado da comparação. Um valor **true** indica que os objetos da coleção de cadeia de caracteres são os mesmos.
 

@@ -1,11 +1,11 @@
 ---
 title: Other-Mailbox atributo
-description: Contém outros endereços de email adicionais em um formato como CCMAIL BruceKeever.
+description: Contém outros endereços de email adicionais em um formulário, como CCMAIL LtdKeever.
 ms.assetid: c7e49fbc-fb3a-487e-835b-ad2c1481425a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Other-Mailbox do atributo AD
-- Esquema de AD do atributo otherMailbox
+- Other-Mailbox atributo AD Schema
+- Esquema do AD do atributo otherMailbox
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d02bb4031da8938fc38bf25562918204089db08
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 99e3ce258d9adde1083d288d3668dce97dc43c3787a58606499636fa05702e92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105750361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704436"
 ---
 # <a name="other-mailbox-attribute"></a>Other-Mailbox atributo
 
-Contém outros endereços de email adicionais em um formato como CCMAIL: BruceKeever.
+Contém outros endereços de email adicionais em um formulário, como CCMAIL: LtdKeever.
 
 
 
 | Entrada | Valor |
 |-------------------|----------------------------------------------------------|
 | CN                | Other-Mailbox                                            |
-| LDAP-Display-Name | otherMailbox                                             |
+| Ldap-Display-Name | otherMailbox                                             |
 | Tamanho              | \-                                                       |
 | Privilégio de atualização  | Administrador de domínio                                     |
-| Frequência de atualização  | Cada vez que o usuário recebe um endereço de email adicional. |
+| Frequência de atualização  | Sempre que o usuário é emitido um endereço de email adicional. |
 | Attribute-Id      | 1.2.840.113556.1.4.651                                   |
-| System-ID-GUID    | 0296c123-40da-11d1-a9c0-0000f80367c1                     |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)              |
+| System-Id-Guid    | 0296c123-40da-11d1-a9c0-0000f80367c1                     |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)              |
 
 
 
@@ -58,10 +58,10 @@ Contém outros endereços de email adicionais em um formato como CCMAIL: BruceKe
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | Falso                                                              |
+| Tem valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -79,10 +79,10 @@ Contém outros endereços de email adicionais em um formato como CCMAIL: BruceKe
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | Falso                                                              |
+| Tem valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -100,10 +100,10 @@ Contém outros endereços de email adicionais em um formato como CCMAIL: BruceKe
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | Falso                                                              |
+| Tem valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |

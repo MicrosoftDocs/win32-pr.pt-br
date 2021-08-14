@@ -4,11 +4,11 @@ description: O nome do RemoteApp.
 ms.assetid: e6bde351-dd4c-4b14-bb11-f155c526aced
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade RemoteApplicationName
-- Propriedade RemoteApplicationName Serviços de Área de Trabalho Remota, interface ITSRemoteProgram2
-- Serviços de Área de Trabalho Remota de interface ITSRemoteProgram2, Propriedade RemoteApplicationName
-- Propriedade RemoteApplicationName Serviços de Área de Trabalho Remota, interface ITSRemoteProgram3
-- Serviços de Área de Trabalho Remota de interface ITSRemoteProgram3, Propriedade RemoteApplicationName
+- Propriedade RemoteApplicationName Serviços de Área de Trabalho Remota
+- Propriedade RemoteApplicationName Serviços de Área de Trabalho Remota , interface ITSRemoteProgram2
+- Interface ITSRemoteProgram2 Serviços de Área de Trabalho Remota , propriedade RemoteApplicationName
+- Propriedade RemoteApplicationName Serviços de Área de Trabalho Remota , interface ITSRemoteProgram3
+- Interface ITSRemoteProgram3 Serviços de Área de Trabalho Remota , propriedade RemoteApplicationName
 topic_type:
 - apiref
 api_name:
@@ -22,14 +22,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b5fd26ea4d9b7ca4bad5cbd8f16a0526978c2abc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2508b382fc3d79b64e976c69ab98932f5e4b38565b264d29729f5dc47008f9fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117756741"
 ---
-# <a name="itsremoteprogram2remoteapplicationname-property"></a>Propriedade ITSRemoteProgram2:: RemoteApplicationName
+# <a name="itsremoteprogram2remoteapplicationname-property"></a>Propriedade ITSRemoteProgram2::RemoteApplicationName
 
 O nome do RemoteApp.
 

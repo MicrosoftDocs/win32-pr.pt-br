@@ -1,33 +1,33 @@
 ---
-title: Buscando arquivos ASF (SDK Windows Media Format 11)
-description: Saiba como o Leitor do WM ASF pode executar uma busca temporal muito precisa no conteúdo baseado em Mídia do Windows que tem um índice temporal no SDK Windows Media Format 11.
+title: procurando arquivos ASF (Windows Media Format 11 SDK)
+description: saiba como o leitor ASF do WM pode executar uma busca temporal muito precisa em Windows conteúdo baseado em mídia que tem um índice temporal no SDK do formato de mídia 11 do Windows.
 ms.assetid: a1717cb4-9f41-4148-b088-a6517be7da9b
 keywords:
-- Windows Media Format SDK, buscando em arquivos ASF
-- Windows Media Format SDK, DirectShow
+- Windows SDK do formato de mídia, buscando arquivos ASF
+- Windows SDK do formato de mídia, DirectShow
 - ASF (Advanced Systems Format), DirectShow
 - ASF (formato de sistemas avançados), DirectShow
 - ASF (Advanced Systems Format), buscando
-- ASF (Formato de Sistemas Avançados), buscando
-- DirectShow, buscando em arquivos ASF
+- ASF (formato de sistemas avançados), buscando
+- DirectShow, buscando arquivos ASF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 807631861cdc820457360058f22fca380fca29ea
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 6730f1535c9601cfd0697e374ddfa35b05250ed49fc4b575fa3458b69e389285
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117845891"
 ---
-# <a name="seeking-in-asf-files-windows-media-format-11-sdk"></a>Buscando arquivos ASF (SDK Windows Media Format 11)
+# <a name="seeking-in-asf-files-windows-media-format-11-sdk"></a>procurando arquivos ASF (Windows Media Format 11 SDK)
 
-O [Leitor do WM ASF,](wm-asf-reader-filter.md)por meio de sua interface **IMediaSeeking,** pode executar uma busca temporal muito precisa no conteúdo baseado em Mídia do Windows que tem um índice temporal. (Todo o conteúdo indexado por quadro também contém um índice temporal.) A busca com precisão de quadro garantida não tem suporte direto no Leitor do WM ASF, mas há uma maneira de fazer isso se você precisar dessa funcionalidade. Primeiro, use o SDK do Windows Media Format diretamente para criar uma instância do objeto de leitor síncrono, abra o arquivo, obtenha o carimbo de data/hora associado a um quadro especificado e, em seguida, use a interface **DirectShow IMediaSeeking** para buscar até esse momento. A interface **IVideoFrameStep** do DirectShow não dá suporte à busca precisa de quadros de conteúdo baseado em mídia do Windows. O exemplo DSSeekFm no SDK do Windows Media Format demonstra como executar a busca com precisão de quadro usando o Leitor do WM ASF.
+o [leitor ASF do WM](wm-asf-reader-filter.md), por meio de sua interface **IMediaSeeking** , pode executar uma busca temporal muito precisa em Windows conteúdo baseado em mídia que tem um índice temporal. (Todo conteúdo indexado por quadro também contém um índice temporal.) A busca com precisão de quadro garantido não tem suporte direto no leitor ASF do WM, mas há uma maneira de fazer isso se você precisar dessa funcionalidade. primeiro, use o SDK do formato de mídia Windows diretamente para criar uma instância do objeto leitor síncrono, abra o arquivo, obtenha o carimbo de data/hora associado a um quadro especificado e, em seguida, use a interface **IMediaSeeking** DirectShow para buscar esse horário. a interface do DirectShow **IVideoFrameStep** não dá suporte à busca com precisão de quadro de conteúdo baseado em mídia de Windows. o exemplo DSSeekFm no SDK do formato de mídia Windows demonstra como executar a busca precisa de quadro usando o leitor ASF do WM.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Filtro de Leitor do WM ASF**](wm-asf-reader-filter.md)
+[**Filtro de leitor ASF do WM**](wm-asf-reader-filter.md)
 </dt> </dl>
 
  

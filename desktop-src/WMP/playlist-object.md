@@ -3,7 +3,7 @@ title: Objeto playlist
 description: O objeto playlist fornece uma maneira de organizar itens de mídia em uma lista para facilitar a manipulação usando as propriedades e os métodos a seguir.
 ms.assetid: c2d2f265-b207-4b82-bb76-aee467f00659
 keywords:
-- Objeto de playlist Windows Media Player
+- Windows Media Player de objeto de playlist
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d517e13f8da103b1f9cee9498cce58a62eaf6462
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 0709b24779d3aac90d496b38b4654596479ad7a9122660158b53b4b2e75ba622
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104006318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118336714"
 ---
 # <a name="playlist-object"></a>Objeto playlist
 
@@ -37,7 +37,7 @@ O objeto **playlist** oferece suporte às propriedades a seguir.
 
 
 
- 
+ 
 
 O objeto **playlist** dá suporte aos seguintes métodos.
 
@@ -57,7 +57,7 @@ O objeto **playlist** dá suporte aos seguintes métodos.
 
 
 
- 
+ 
 
 O objeto **playlist** é acessado por meio das propriedades e métodos a seguir.
 
@@ -65,7 +65,7 @@ O objeto **playlist** é acessado por meio das propriedades e métodos a seguir.
 
 | Objeto                                              | Propriedade ou método                                                                                                                                                                                                                                                                 |
 |-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ROMs](cdrom-object.md)                           | [playlist](cdrom-playlist.md)                                                                                                                                                                                                                                                     |
+| [ROMs](cdrom-object.md)                           | [7.1](cdrom-playlist.md)                                                                                                                                                                                                                                                     |
 | [Mediacollection](mediacollection-object.md)       | [getAll](mediacollection-getall.md), [getByAlbum](mediacollection-getbyalbum.md), [getByAttribute](mediacollection-getbyattribute.md), [getByAuthor](mediacollection-getbyauthor.md), [getByGenre](mediacollection-getbygenre.md), [getByName](mediacollection-getbyname.md) |
 | [Jogador](player-object.md)                         | [currentPlaylist](player-currentplaylist.md), [newPlaylist](player-newplaylist.md)                                                                                                                                                                                               |
 | [PlaylistArray](playlistarray-object.md)           | [item](playlistarray-item.md)                                                                                                                                                                                                                                                     |
@@ -73,7 +73,7 @@ O objeto **playlist** é acessado por meio das propriedades e métodos a seguir.
 
 
 
- 
+ 
 
 Porque é o meio mais comum de acesso, *Player*. **currentPlaylist** é usado para fins de ilustração nas seções de sintaxe de referência.
 
@@ -84,9 +84,9 @@ Porque é o meio mais comum de acesso, *Player*. **currentPlaylist** é usado pa
 [**Referência de modelo de objeto para scripts**](object-model-reference-for-scripting.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

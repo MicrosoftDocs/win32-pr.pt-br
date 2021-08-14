@@ -4,12 +4,12 @@ ms.assetid: 10dc1909-bfbc-4ea0-b77a-e33149205107
 title: Evento InkOverlay. NewInAirPackets (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f39e568941b1af0727ad9c8464913325409b4604
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7198fe2d105421654bfba037049e46a592d603bd94409350e97b794882ab4de2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118219164"
 ---
 # <a name="inkoverlaynewinairpackets-event"></a>Evento InkOverlay. NewInAirPackets
 
@@ -80,14 +80,14 @@ Para definir quais propriedades estão contidas nessa matriz, use a propriedade 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                           |
 | parâmetro<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

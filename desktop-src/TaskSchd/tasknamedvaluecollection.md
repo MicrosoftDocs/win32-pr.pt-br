@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27331eb3c768dba7b0c91026acca719921cc9474
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 297b52df30c7b17190e91e323f104f0e8df68bed751b28264603e9ca5135dbd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118357463"
 ---
 # <a name="tasknamedvaluecollection-object"></a>Objeto TaskNamedValueCollection
 
@@ -41,8 +41,8 @@ O objeto **TaskNamedValueCollection** tem esses métodos.
 
 | Método                                            | Descrição                                                        |
 |:--------------------------------------------------|:-------------------------------------------------------------------|
-| [**Formatação**](tasknamedvaluecollection-clear.md)   | Limpa toda a coleção de pares de nome-valor.<br/>       |
-| [**Criada**](tasknamedvaluecollection-create.md) | Cria um par de nome-valor na coleção.<br/>            |
+| [**Limpar**](tasknamedvaluecollection-clear.md)   | Limpa toda a coleção de pares de nome-valor.<br/>       |
+| [**Criar**](tasknamedvaluecollection-create.md) | Cria um par de nome-valor na coleção.<br/>            |
 | [**Remover**](tasknamedvaluecollection-remove.md) | Remove um par de nome-valor selecionado da coleção.<br/> |
 
 
@@ -57,7 +57,7 @@ O objeto **TaskNamedValueCollection** tem essas propriedades.
 
 | Propriedade                                                   | Descrição                                                        |
 |:-----------------------------------------------------------|:-------------------------------------------------------------------|
-| [**Contar**](tasknamedvaluecollection-count.md)<br/> | Obtém o número de pares de nome-valor na coleção.<br/>  |
+| [**Contagem**](tasknamedvaluecollection-count.md)<br/> | Obtém o número de pares de nome-valor na coleção.<br/>  |
 | [**Item**](tasknamedvaluecollection-item.md)<br/>   | Obtém o par nome-valor especificado da coleção.<br/> |
 
 
@@ -70,8 +70,8 @@ O objeto **TaskNamedValueCollection** tem essas propriedades.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
 | Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 

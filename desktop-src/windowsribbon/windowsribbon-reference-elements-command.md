@@ -1,19 +1,19 @@
 ---
 title: Comandos e recursos
-description: Documentação de referência para elementos de marcação de comando e recurso na estrutura da faixa de referência do Windows.
+description: documentação de referência para elementos de marcação de comando e recurso na estrutura da faixa de Windows.
 ms.assetid: b98ed90e-d2a6-4fdb-bcf9-962f8b41c313
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec7c04b0300b50a46c3ffcf8a079624dd8fed92f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: df28c3e77ba5c11ca1d2d15806b62e8b6eb891a6e99cc5a3bb09b8457a1c7213
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117850489"
 ---
 # <a name="commands-and-resources"></a>Comandos e recursos
 
-Documentação de referência para elementos de marcação de comando e recurso na estrutura da faixa de referência do Windows.
+documentação de referência para elementos de marcação de comando e recurso na estrutura da faixa de Windows.
 
 
 
