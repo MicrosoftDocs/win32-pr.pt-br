@@ -3,7 +3,7 @@ title: Objeto cdrom
 description: O objeto cdrom fornece uma maneira de acessar um CD ou DVD em sua unidade.
 ms.assetid: 9045b130-3e08-4880-a4e7-79b704c4c1f9
 keywords:
-- Objeto de cdrom Windows Media Player
+- Windows Media Player de objeto de cdrom
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 17c2de88749b4dd4a0ab756b77866c16e8878486
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 60c4e1081dec3e44107778e45fd911e0c4bb673d27b5e19874508ddbacb270ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104292987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118342639"
 ---
 # <a name="cdrom-object"></a>Objeto cdrom
 
@@ -31,11 +31,11 @@ O objeto **cdrom** dá suporte às propriedades a seguir.
 | Propriedade                                   | Descrição                                                                                                                                             |
 |--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [driveSpecifier](cdrom-drivespecifier.md) | Recupera a letra da unidade de CD ou DVD.                                                                                                                   |
-| [playlist](cdrom-playlist.md)             | Recupera um objeto [playlist](playlist-object.md) que representa as faixas no CD atualmente na unidade de CD ou as entradas de título no nível raiz do DVD. |
+| [7.1](cdrom-playlist.md)             | Recupera um objeto [playlist](playlist-object.md) que representa as faixas no CD atualmente na unidade de CD ou as entradas de título no nível raiz do DVD. |
 
 
 
- 
+ 
 
 O objeto **cdrom** dá suporte ao método a seguir.
 
@@ -47,7 +47,7 @@ O objeto **cdrom** dá suporte ao método a seguir.
 
 
 
- 
+ 
 
 O objeto **cdrom** é acessado por meio do método a seguir.
 
@@ -59,7 +59,7 @@ O objeto **cdrom** é acessado por meio do método a seguir.
 
 
 
- 
+ 
 
 Para fins de ilustração, Player. cdromCollection. Item (*índice*) é usado nas seções de sintaxe de referência.
 
@@ -70,9 +70,9 @@ Para fins de ilustração, Player. cdromCollection. Item (*índice*) é usado na
 [**Referência de modelo de objeto para scripts**](object-model-reference-for-scripting.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -15,18 +15,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d53d126d9419f87d91b027b0d69847f67de84be6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fb9be0e4cf5c0395efa93d308fdfa45362a7ac8919ab49a108700106aff6081b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989816"
 ---
 # <a name="itssbtargetex-interface"></a>Interface ITsSbTargetEx
 
 Expõe propriedades que armazenam informações de configuração e estado sobre um destino.
 
-Essa interface só está disponível no Windows Server 2012 R2 com o [KB3091411](https://support.microsoft.com/kb/3091411) instalado. A propriedade [**TargetLoad**](itssbtarget-targetload.md) da interface [**ITsSbTarget**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbtarget) está disponível a partir do Windows Server 2016.
+essa interface só está disponível no Windows Server 2012 R2 com o [KB3091411](https://support.microsoft.com/kb/3091411) instalado. A propriedade [**TargetLoad**](itssbtarget-targetload.md) da interface [**ITsSbTarget**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbtarget) está disponível a partir de Windows Server 2016.
 
 ## <a name="members"></a>Membros
 

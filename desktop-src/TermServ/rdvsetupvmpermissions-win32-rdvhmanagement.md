@@ -4,9 +4,9 @@ description: Define as permissões em uma máquina virtual para o usuário atual
 ms.assetid: 6ac45983-d468-4a3b-875f-48717ba23ed0
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método RdvSetupVMPermissions
-- Método RdvSetupVMPermissions Serviços de Área de Trabalho Remota, classe Win32_RdvhManagement
-- Classe Win32_RdvhManagement Serviços de Área de Trabalho Remota, método RdvSetupVMPermissions
+- Método RdvSetupVMPermissions Serviços de Área de Trabalho Remota
+- Método RdvSetupVMPermissions Serviços de Área de Trabalho Remota , Win32_RdvhManagement classe
+- Win32_RdvhManagement classe Serviços de Área de Trabalho Remota , método RdvSetupVMPermissions
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd8028a33bc772f9dd37f25a1dc22074baf771b6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e6628e3ac1660c1f0c505e3d5349dd481c7c48b09a77aaedeac1352ecbaf4562
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119988806"
 ---
 # <a name="rdvsetupvmpermissions-method-of-the-win32_rdvhmanagement-class"></a>Método RdvSetupVMPermissions da classe Win32 \_ RdvhManagement
 
@@ -43,16 +43,16 @@ uint32 RdvSetupVMPermissions(
 
 <dl> <dt>
 
-*VmName* \[ no\]
+*VmName* \[ Em\]
 </dt> <dd>
 
-O nome da máquina virtual para a qual definir permissões.
+O nome da máquina virtual para definir permissões.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md) para obter uma lista desses valores.
+Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Consulte Serviços de Área de Trabalho Remota códigos de erro do provedor [WMI](terminal-services-wmi-provider-error-codes.md) para ver uma lista desses valores.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,8 +62,8 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Co
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                             |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                   |
-| MOF<br/>                      | <dl> <dt>TSVmHost. mof</dt> </dl>    |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                   |
+| MOF<br/>                      | <dl> <dt>TSVmHost.mof</dt> </dl>    |
 | DLL<br/>                      | <dl> <dt>TSVmHostWmi.dll</dt> </dl> |
 
 
@@ -72,7 +72,7 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Co
 
 <dl> <dt>
 
-[**\_RdvhManagement Win32**](win32-rdvhmanagement.md)
+[**Win32 \_ RdvhManagement**](win32-rdvhmanagement.md)
 </dt> </dl>
 
  

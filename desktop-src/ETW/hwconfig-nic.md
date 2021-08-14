@@ -13,12 +13,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: df3897c67ed65eeec5ace49dac1088ca35223a35
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d9b82f8a97c1ca47734b5bb0a1db09167510978c53f86870df01f2acc59b2ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118394720"
 ---
 # <a name="hwconfig_nic-class"></a>\_Classe NIC HWConfig
 
@@ -70,7 +70,7 @@ Nome da placa de interface de rede.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                   |
 
 

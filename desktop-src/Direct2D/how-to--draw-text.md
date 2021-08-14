@@ -4,12 +4,12 @@ description: Mostra como renderizar texto com Direct2D.
 ms.assetid: 914dd9d0-78c8-44a3-8504-837faf3201d2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd841f3b07edbde5e3fc6ed70f679cd58b3725f4
-ms.sourcegitcommit: d5f16b9d3d5d2e2080ba7b6837eb37250fa67a30
+ms.openlocfilehash: 6edd9b98417d81cf1cd3222faf771f56cb009f9a327c44f0f0962feb9bf41cf5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "111349965"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119259976"
 ---
 # <a name="how-to-draw-text"></a>Como desenhar texto
 
@@ -133,9 +133,9 @@ HRESULT DemoApp::OnRender()
 
 ## <a name="the-drawtextlayout-method"></a>O método DrawTextLayout
 
-O [**método DrawTextLayout**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) renderiza um [**objeto IDWriteTextLayout.**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextlayout) Use esse método para aplicar vários formatos a um bloco de texto (como sublinhado uma parte do texto), para usar recursos avançados do OpenType ou para executar o suporte a testes de acerto.
+O [**método DrawTextLayout**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) renderiza um [**objeto IDWriteTextLayout.**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextlayout) Use esse método para aplicar vários formatos a um bloco de texto (como sublinhado de uma parte do texto), para usar recursos avançados do OpenType ou para executar o suporte a testes de acerto.
 
-O [**método DrawTextLayout**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) também fornece benefícios de desempenho para desenhar o mesmo texto repetidamente. O [**objeto IDWriteTextLayout**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextlayout) mede e estabelece seu texto quando você o cria. Se você criar um objeto **IDWriteTextLayout** apenas uma vez e reutilizar sempre que você tiver que redesenhar o texto, o desempenho melhorará porque o sistema não precisa medir e reaproveitar o texto.
+O [**método DrawTextLayout**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) também fornece benefícios de desempenho para desenhar o mesmo texto repetidamente. O [**objeto IDWriteTextLayout**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextlayout) mede e estabelece seu texto quando você o cria. Se você criar um objeto **IDWriteTextLayout** apenas uma vez e reutilizar-o sempre que você tiver que redesenhar o texto, o desempenho melhorará porque o sistema não precisa medir e reaproveitar o texto.
 
 Antes de usar o [**método DrawTextLayout,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) você deve usar [**um IDWriteFactory**](/windows/desktop/api/dwrite/nn-dwrite-idwritefactory) para criar [**objetos IDWriteTextFormat**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) e [**IDWriteTextLayout.**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextlayout) Depois que esses objetos são criados, chame o **método DrawTextLayout.**
 

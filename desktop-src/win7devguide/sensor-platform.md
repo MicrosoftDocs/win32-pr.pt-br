@@ -1,31 +1,31 @@
 ---
-title: Plataforma de sensor
-description: O Windows 7 mudou como os desenvolvedores usam sensores.
+title: Plataforma sensor
+description: Windows 7 mudou a maneira como os desenvolvedores usam sensores.
 ms.assetid: ed323658-dfd6-4c1b-ada2-5d68ebb56482
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 98fe94fd48ffa16080054a22b4d377ab4757d61d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c7072a19ee0a746b0764850230a06de1ca72be8ca4633f1350165297f1ef4036
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118203886"
 ---
-# <a name="sensor-platform"></a>Plataforma de sensor
+# <a name="sensor-platform"></a>Plataforma sensor
 
-O Windows 7 mudou como os desenvolvedores usam sensores. Ele inclui suporte nativo para sensores, expandido por uma nova plataforma de desenvolvimento para trabalhar com sensores, incluindo sensores de localização, como dispositivos GPS (Global Positioning Systems).
+Windows 7 mudou a maneira como os desenvolvedores usam sensores. Ele inclui suporte nativo para sensores, expandido por uma nova plataforma de desenvolvimento para trabalhar com sensores, incluindo sensores de localização, como dispositivos GPS (Sistemas de Posicionamento Global).
 
-Criado na plataforma do sensor, as APIs de *localização do Windows* são um novo recurso do Windows 7 que permite que os desenvolvedores de aplicativos acessem as informações de local físico do usuário. As APIs de *localização do Windows* podem abstrair hardware, dar suporte simultâneo a vários aplicativos e alternar diretamente entre diferentes tecnologias, aliviando o desenvolvedor do aplicativo da carga de gerenciar essas restrições. As APIs de *localização* podem ser usadas pelos programadores por meio da linguagem de programação C++ (por programadores familiarizados com Component Object Model (com)) ou usando objetos com em linguagens de script, como o Microsoft JScript. O suporte a scripts fornece fácil acesso a dados de localização para projetos como gadgets.
+Criadas na Plataforma de Sensor, as APIs de Windows *local* são um novo recurso Windows 7 que permite que os desenvolvedores de aplicativos acessem as informações de localização física do usuário. As APIs Windows *Local* do Windows podem abstrair o hardware, dar suporte simultaneamente a vários aplicativos e alternar perfeitamente entre diferentes tecnologias, aliviando o desenvolvedor de aplicativos da carga de gerenciamento dessas restrições. As APIs de Localização podem ser usadas por programadores por meio da linguagem de programação C++ (por programadores familiarizados com Component Object Model (COM)) ou usando objetos COM em linguagens de script, como o Microsoft JScript. O suporte a scripts fornece acesso fácil aos dados de localização para projetos como buges.
 
-O Windows 7 fornece uma plataforma sólida e fácil de usar para usar dispositivos de sensor, como um sensor de luz ambiente ou um medidor de temperatura, para criar conscientização ambiental em aplicativos do Windows. Os computadores podem usar sensores que são incorporados ao computador, conectados por meio de conexões com ou sem fio, ou conectados por meio de uma rede ou da *Internet*.
+Windows 7 fornece uma plataforma sólida e fácil de usar para usar dispositivos de sensor, como um sensor de luz ambiente ou um medidor de temperatura, para criar reconhecimento ambiental em Windows aplicativos. Os computadores podem usar sensores internos no computador, conectados por meio de conexões com ou sem fio ou conectados por meio de uma rede ou da *Internet.*
 
-As APIs do *sensor* e do *local* fornecem uma maneira padrão de descobrir sensores e acessar programaticamente os dados que os sensores fornecem.
+As *APIs* *sensor e local* fornecem uma maneira padrão de descobrir sensores e acessar programaticamente os dados que os sensores fornecem.
 
-O painel de controle do *sensor* permite que os usuários habilitem ou desabilitem sensores, controlem o acesso a sensores que podem expor dados confidenciais, exibir propriedades do sensor e alterar as descrições dos sensores.
+O *painel de* controle Sensor permite que os usuários habilitam ou desabilitem sensores, controlam o acesso a sensores que podem expor dados confidenciais, exibir propriedades do sensor e alterar as descrições dos sensores.
 
-A [extensão de classe de sensor](/windows-hardware/drivers/sensors/about-the-sensor-class-extension) é uma parte principal do modelo de desenvolvimento de driver para a plataforma do sensor. Ele fornece os seguintes mecanismos, que são usados ao escrever um driver de sensor de [estrutura de driver de modo de usuário (UMDF)](https://developer.microsoft.com/windows/hardware) :
+A [Extensão de Classe do Sensor](/windows-hardware/drivers/sensors/about-the-sensor-class-extension) é uma parte fundamental do modelo de desenvolvimento de driver para a Plataforma de Sensor. Ele fornece os seguintes mecanismos, que são usados ao escrever um driver de sensor [do UMDF (User-Mode Driver Framework)](https://developer.microsoft.com/windows/hardware) :
 
--   Integração com a plataforma do sensor
+-   Integração com a Plataforma de Sensor
 -   Imposição de segurança
 
 ## <a name="related-topics"></a>Tópicos relacionados

@@ -3,7 +3,7 @@ title: RBN_DELETINGBAND código de notificação (commctrl. h)
 description: Enviado por um controle rebar quando uma banda está prestes a ser excluída. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 92840cb1-375e-4c37-bde4-7ba02a1ff4f1
 keywords:
-- RBN_DELETINGBAND de código de notificação controles do Windows
+- RBN_DELETINGBAND código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf810fd8800d7774a0dbf9a65cdf08c2d53d92ba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6174bec0ad2ca659182330bd8da22e078df61c5f09b15cf9027e0092e1f0f339
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985066"
 ---
 # <a name="rbn_deletingband-notification-code"></a>Código de notificação do RBN \_ DELETINGBAND
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**NMREBAR**](/windows/win32/api/commctrl/ns-commctr
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno para essa notificação não é usado.
 
@@ -55,9 +55,9 @@ O valor de retorno para essa notificação não é usado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

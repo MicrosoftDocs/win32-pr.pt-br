@@ -4,12 +4,12 @@ ms.assetid: ccc40d3c-6764-469a-baac-fa625d664ea7
 title: A interface DLL da interface do usuário do provedor de serviços de telefonia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bdab33dd9c9630aed7d7aed168982cfac2daee2b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f6aea6dfd68773dcd96602803230bd160552eab1414135b75a3205a0fac88dd2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119403936"
 ---
 # <a name="the-telephony-service-provider-ui-dll-interface"></a>A interface DLL da interface do usuário do provedor de serviços de telefonia
 

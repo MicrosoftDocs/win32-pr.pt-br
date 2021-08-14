@@ -1,5 +1,5 @@
 ---
-title: Área de Trabalho Remota interfaces de controle ActiveX
+title: Área de Trabalho Remota ActiveX interfaces de controle
 description: Interfaces que você pode usar para criar e implantar canais virtuais programáveis dentro de Serviços de Área de Trabalho Remota aplicativos Web.
 ms.assetid: 8258411e-eef6-4dcf-a7a2-7d04b0ea3744
 ms.tgt_platform: multiple
@@ -8,16 +8,16 @@ keywords:
 - Serviços de Área de Trabalho Remota protocolo RDP (RDP), interfaces
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a80c80dcf9799efe2eb5609f54142fd0780cfe54
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: feac7c2ab5d836191f5321d87fafc50350f1d5713bf18cb27dbb879aff127271
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119988666"
 ---
-# <a name="remote-desktop-activex-control-interfaces"></a>Área de Trabalho Remota interfaces de controle ActiveX
+# <a name="remote-desktop-activex-control-interfaces"></a>Área de Trabalho Remota ActiveX interfaces de controle
 
-O controle ActiveX Área de Trabalho Remota dá suporte às seguintes interfaces programáveis e não programáveis, que são agrupadas de acordo com a hierarquia de herança.
+o controle de ActiveX de Área de Trabalho Remota dá suporte às seguintes interfaces programáveis e não programáveis, que são agrupadas de acordo com a hierarquia de herança.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -131,70 +131,70 @@ Gerencia configurações avançadas do cliente. Deriva da interface [**IMsRdpCli
 [**IMsRdpClientAdvancedSettings6**](imsrdpclientadvancedsettings6.md)
 </dt> <dd>
 
-Expõe as propriedades que gerenciam as configurações avançadas do controle ActiveX.
+expõe propriedades que gerenciam configurações de controle de ActiveX avançadas.
 
 </dd> <dt>
 
 [**IMsRdpClientAdvancedSettings7**](imsrdpclientadvancedsettings7.md)
 </dt> <dd>
 
-Expõe métodos e propriedades que gerenciam as configurações avançadas do controle ActiveX.
+expõe métodos e propriedades que gerenciam as configurações avançadas do controle de ActiveX.
 
 </dd> <dt>
 
 [**IMsRdpClientAdvancedSettings8**](imsrdpclientadvancedsettings8.md)
 </dt> <dd>
 
-Expõe métodos e propriedades que gerenciam as configurações avançadas do controle ActiveX Área de Trabalho Remota.
+expõe métodos e propriedades que gerenciam as configurações avançadas do controle de ActiveX de Área de Trabalho Remota.
 
 </dd> <dt>
 
 [**IMsRdpClientNonScriptable**](imsrdpclientnonscriptable-interface.md)
 </dt> <dd>
 
-Fornece acesso às propriedades não programáveis da sessão remota de um cliente no controle ActiveX Área de Trabalho Remota. Deriva da interface [**IMsTscNonScriptable**](imstscnonscriptable-interface.md) .
+fornece acesso às propriedades não programáveis da sessão remota de um cliente no controle de ActiveX de Área de Trabalho Remota. Deriva da interface [**IMsTscNonScriptable**](imstscnonscriptable-interface.md) .
 
 </dd> <dt>
 
 [**IMsRdpClientNonScriptable2**](imsrdpclientnonscriptable2.md)
 </dt> <dd>
 
-Fornece acesso às propriedades não programáveis da sessão remota de um cliente no controle ActiveX Área de Trabalho Remota. Deriva da interface [**IMsRdpClientNonScriptable**](imsrdpclientnonscriptable-interface.md) .
+fornece acesso às propriedades não programáveis da sessão remota de um cliente no controle de ActiveX de Área de Trabalho Remota. Deriva da interface [**IMsRdpClientNonScriptable**](imsrdpclientnonscriptable-interface.md) .
 
 </dd> <dt>
 
 [**IMsRdpClientNonScriptable3**](imsrdpclientnonscriptable3.md)
 </dt> <dd>
 
-Fornece acesso às propriedades não programáveis da sessão remota de um cliente no controle ActiveX Área de Trabalho Remota. Deriva da interface [**IMsRdpClientNonScriptable2**](imsrdpclientnonscriptable2.md) .
+fornece acesso às propriedades não programáveis da sessão remota de um cliente no controle de ActiveX de Área de Trabalho Remota. Deriva da interface [**IMsRdpClientNonScriptable2**](imsrdpclientnonscriptable2.md) .
 
 </dd> <dt>
 
 [**IMsRdpClientNonScriptable4**](imsrdpclientnonscriptable4.md)
 </dt> <dd>
 
-Fornece acesso às propriedades não programáveis da sessão remota de um cliente no controle ActiveX Área de Trabalho Remota. Deriva da interface [**IMsRdpClientNonScriptable3**](imsrdpclientnonscriptable3.md) .
+fornece acesso às propriedades não programáveis da sessão remota de um cliente no controle de ActiveX de Área de Trabalho Remota. Deriva da interface [**IMsRdpClientNonScriptable3**](imsrdpclientnonscriptable3.md) .
 
 </dd> <dt>
 
 [**IMsRdpClientNonScriptable5**](imsrdpclientnonscriptable5.md)
 </dt> <dd>
 
-Fornece acesso às propriedades não programáveis da sessão remota de um cliente no controle ActiveX Área de Trabalho Remota. Deriva da interface [**IMsRdpClientNonScriptable4**](imsrdpclientnonscriptable4.md) .
+fornece acesso às propriedades não programáveis da sessão remota de um cliente no controle de ActiveX de Área de Trabalho Remota. Deriva da interface [**IMsRdpClientNonScriptable4**](imsrdpclientnonscriptable4.md) .
 
 </dd> <dt>
 
 [**IMsRdpClientSecuredSettings**](imsrdpclientsecuredsettings-interface.md)
 </dt> <dd>
 
-Inclui métodos para recuperar e definir as propriedades do Área de Trabalho Remota controle ActiveX que são restritos a zonas de segurança de URL específicas do Internet Explorer.
+inclui métodos para recuperar e definir propriedades do controle de ActiveX de Área de Trabalho Remota que são restritos a zonas de segurança de URL específicas do Internet Explorer.
 
 </dd> <dt>
 
 [**IMsRdpClientSecuredSettings2**](imsrdpclientsecuredsettings2.md)
 </dt> <dd>
 
-Define propriedades adicionais do controle ActiveX Área de Trabalho Remota que são restritas a zonas de segurança de URL específicas do Internet Explorer.
+define propriedades adicionais do controle de ActiveX de Área de Trabalho Remota que são restritas a zonas de segurança de URL específicas do Internet Explorer.
 
 </dd> <dt>
 
@@ -271,7 +271,7 @@ Contém informações sobre um objeto de unidade.
 [**IMsRdpDriveV2**](imsrdpdrivev2.md)
 </dt> <dd>
 
-Contém informações sobre um objeto de unidade. Esse é um aprimoramento da interface [**IMsRdpDrive**](imsrdpdrive.md) .
+Contém informações sobre um objeto de unidade. Esse é um aprimoramento da interface [**IMsRdpDrive.**](imsrdpdrive.md)
 
 </dd> <dt>
 
@@ -292,100 +292,100 @@ Usado para definir e recuperar propriedades nomeadas para o controle de cliente.
 [**IMsRdpInputSink**](imsrdpinputsink.md)
 </dt> <dd>
 
-Coletor de entrada da área de trabalho remota.
+Área de trabalho remota de entrada.
 
 </dd> <dt>
 
 [**IMsRdpPreferredRedirectionInfo**](imsrdppreferredredirectioninfo.md)
 </dt> <dd>
 
-Fornece uma propriedade para controlar o uso de um servidor de redirecionamento.
+Fornece uma propriedade para controlar usando um servidor de redirecionamento.
 
 </dd> <dt>
 
-[**IMsTscAdvancedSettings**](imstscadvancedsettings-interface.md)
+[**Imstscadvancedsettings**](imstscadvancedsettings-interface.md)
 </dt> <dd>
 
-Inclui métodos para recuperar e definir propriedades que habilitam o cache de bitmaps, a compactação e a impressora e o redirecionamento de área de transferência.
+Inclui métodos para recuperar e definir propriedades que habilitam o cache de bitmap, a compactação e o redirecionamento de impressora e área de transferência.
 
 </dd> <dt>
 
-[**IMsTscAx**](imstscax-interface.md)
+[**Imstscax**](imstscax-interface.md)
 </dt> <dd>
 
-Permite que você conecte e desconecte o controle de cliente, crie objetos de canal virtual e envie dados por meio de um canal virtual.
+Permite que você se conecte e desconecte o controle de cliente, crie objetos de canal virtual e envie dados por um canal virtual.
 
 </dd> <dt>
 
-[**IMsTscAxEvents**](imstscaxevents-interface.md)
+[**Imstscaxevents**](imstscaxevents-interface.md)
 </dt> <dd>
 
-Inclui métodos que recebem informações do servidor que estão relacionados a eventos de controle de cliente.
+Inclui métodos que recebem informações do servidor relacionadas a eventos de controle de cliente.
 
 </dd> <dt>
 
-[**IMsTscNonScriptable**](imstscnonscriptable-interface.md)
+[**Imstscnonscriptable**](imstscnonscriptable-interface.md)
 </dt> <dd>
 
-Contém propriedades e métodos relacionados ao aplicativo de uma senha para o controle ActiveX Área de Trabalho Remota.
+Contém propriedades e métodos relacionados à aplicação de uma senha ao Área de Trabalho Remota ActiveX controle.
 
 </dd> <dt>
 
-[**IMsTscSecuredSettings**](imstscsecuredsettings-interface.md)
+[**Imstscsecuredsettings**](imstscsecuredsettings-interface.md)
 </dt> <dd>
 
-Inclui métodos para recuperar e definir as propriedades do Área de Trabalho Remota controle ActiveX que são restritos a zonas de segurança de URL específicas do Internet Explorer.
+Inclui métodos para recuperar e definir propriedades do controle Área de Trabalho Remota ActiveX que são restritas a zonas de segurança Internet Explorer URL específicas.
 
 </dd> <dt>
 
 [**IRemoteDesktopClient**](/windows/win32/api/rdpappcontainerclient/nn-rdpappcontainerclient-iremotedesktopclient)
 </dt> <dd>
 
-Fornece métodos e propriedades usados para configurar e usar o controle de cliente do contêiner de aplicativo protocolo RDP (RDP).
+Fornece métodos e propriedades usados para configurar e usar o controle de cliente de contêiner de aplicativo protocolo RDP (RDP).
 
 </dd> <dt>
 
 [**IRemoteDesktopClientActions**](/windows/win32/api/rdpappcontainerclient/nn-rdpappcontainerclient-iremotedesktopclientactions)
 </dt> <dd>
 
-Fornece os métodos usados para interagir com o controle de cliente do contêiner de aplicativo protocolo RDP (RDP).
+Fornece os métodos usados para interagir com o controle de cliente protocolo RDP contêiner de aplicativo (RDP).
 
 </dd> <dt>
 
 [**IRemoteDesktopClientEvents**](iremotedesktopclientevents.md)
 </dt> <dd>
 
-Fornece métodos que recebem informações do servidor que estão relacionados a eventos de controle de cliente.
+Fornece métodos que recebem informações do servidor relacionadas a eventos de controle de cliente.
 
 </dd> <dt>
 
 [**IRemoteDesktopClientSettings**](/windows/win32/api/rdpappcontainerclient/nn-rdpappcontainerclient-iremotedesktopclientsettings)
 </dt> <dd>
 
-Fornece os métodos necessários para definir as configurações de conexão para o controle de cliente do contêiner de aplicativo protocolo RDP (RDP).
+Fornece os métodos necessários para definir as configurações de conexão para o controle de cliente do contêiner protocolo RDP aplicativo (RDP).
 
-Use a propriedade [**IRemoteDesktopClient**](/windows/win32/api/rdpappcontainerclient/nn-rdpappcontainerclient-iremotedesktopclient)[**Settings**](iremotedesktopclient-settings.md) para obter um ponteiro para essa interface.
+Use a [**propriedade Configurações IRemoteDesktopClient**](/windows/win32/api/rdpappcontainerclient/nn-rdpappcontainerclient-iremotedesktopclient)[](iremotedesktopclient-settings.md) para obter um ponteiro para essa interface.
 
 </dd> <dt>
 
 [**IRemoteDesktopClientTouchPointer**](/windows/win32/api/rdpappcontainerclient/nn-rdpappcontainerclient-iremotedesktopclienttouchpointer)
 </dt> <dd>
 
-Fornece as propriedades necessárias para controlar o recurso de ponteiro de toque do controle de cliente do contêiner de aplicativo protocolo RDP (RDP).
+Fornece as propriedades necessárias para controlar o recurso de ponteiro de toque do controle de cliente protocolo RDP contêiner de aplicativo (RDP).
 
 </dd> <dt>
 
 [**ITSRemoteProgram**](itsremoteprogram.md)
 </dt> <dd>
 
-Inclui métodos para definir e recuperar o modo RemoteApp e os parâmetros de inicialização para um programa RemoteApp, como o caminho do arquivo executável e o diretório de trabalho.
+Inclui métodos para definir e recuperar o modo RemoteApp e os parâmetros de início para um programa RemoteApp, como o caminho do arquivo executável e o diretório de trabalho.
 
 </dd> <dt>
 
 [**ITSRemoteProgram2**](itsremoteprogram2.md)
 </dt> <dd>
 
-Define as propriedades para uso com um RemoteApp.
+Define propriedades para uso com um RemoteApp.
 
 </dd> <dt>
 
@@ -398,17 +398,17 @@ Define propriedades e métodos para uso com um RemoteApp.
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
-Para obter uma discussão geral sobre métodos de propriedade, consulte [interface Property Methods](/windows/desktop/ADSI/interface-property-methods).
+Para uma discussão geral sobre métodos de propriedade, consulte [Métodos de propriedade de interface](/windows/desktop/ADSI/interface-property-methods).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Referência de Serviços de Área de Trabalho Remota](terminal-services-reference.md)
+[Serviços de Área de Trabalho Remota referência](terminal-services-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

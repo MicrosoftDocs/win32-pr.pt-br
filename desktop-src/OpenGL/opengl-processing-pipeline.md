@@ -9,12 +9,12 @@ keywords:
 - framebuffers, pipeline de processamento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73d67447066b9d397bbb272932f51c6d3003f11e
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 0b52568de344404e9bddbedbacc40beda064b09d3e3af96c2657f670e677c32a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104556328"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118936856"
 ---
 # <a name="opengl-processing-pipeline"></a>Pipeline de processamento OpenGL
 

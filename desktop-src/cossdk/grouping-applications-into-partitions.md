@@ -4,12 +4,12 @@ ms.assetid: bdfe2428-9769-4bcb-b74e-a141ba67a67e
 title: Agrupando aplicativos em partições
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28b35c726662d7dbe2cf039678ba5cdb4f94eeea
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 40491e95313544a32e23db78d8959736665db8c21782d3f1b30729e6eda6f1db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105778518"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991096"
 ---
 # <a name="grouping-applications-into-partitions"></a>Agrupando aplicativos em partições
 
@@ -27,25 +27,25 @@ Existem outras restrições ao decidir como agrupar aplicativos COM+. Essas rest
 | Se um aplicativo for:              | Em seguida, os componentes em uma partição podem ser:                                                                                   |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | Um aplicativo de servidor<br/>    | Público e privado.<br/>                                                                                           |
-| Um aplicativo de biblioteca<br/>   | Somente público. Caso contrário, o aplicativo de chamadores poderia ter os mesmos componentes, o que criaria ambiguidade.<br/> |
-| Na partição global<br/> | Somente público. Isso garante a compatibilidade com versões anteriores.<br/>                                                             |
+| Um aplicativo de biblioteca<br/>   | Somente público. Caso contrário, o aplicativo chamador pode ter os mesmos componentes, o que criaria ambiguidade.<br/> |
+| Na partição global<br/> | Somente público. Isso garante a compatibilidade com compatibilidade com backward.<br/>                                                             |
 
 
 
  
 
-## <a name="application-ids"></a>IDs de aplicativo
+## <a name="application-ids"></a>IDs do aplicativo
 
-Cada aplicativo COM+ instalado em um computador tem uma ID de aplicativo exclusiva. No entanto, os nomes de aplicativos só precisam ser exclusivos em uma única partição e não em todo o computador.
+Cada aplicativo COM+ instalado em um computador tem uma ID de aplicativo exclusiva. No entanto, os nomes de aplicativo só precisam ser exclusivos em uma única partição e não em todo o computador.
 
-A tabela a seguir mostra o que acontece com a ID do aplicativo quando um aplicativo é importado para uma partição ou exportada de uma partição.
+A tabela a seguir mostra o que acontece com a ID do aplicativo quando um aplicativo é importado para uma partição ou exportado de uma partição.
 
 
 
 | Se um aplicativo for:                                              | Em seguida, a ID do aplicativo:                    |
 |--------------------------------------------------------------------|---------------------------------------------|
 | Importado para a partição global<br/>                        | Permanece o mesmo<br/>                 |
-| Importado para uma partição que não seja a partição global<br/> | É alterado<br/>                       |
+| Importado para uma partição diferente da partição global<br/> | Foi alterado<br/>                       |
 | Exportado<br/>                                                | Está incluído no arquivo exportado<br/> |
 
 
@@ -68,7 +68,7 @@ A tabela a seguir mostra o que acontece com a ID do aplicativo quando um aplicat
 [Gerenciando partições no Active Directory](managing-partitions-within-active-directory.md)
 </dt> <dt>
 
-[Configurando direitos administrativos para uma partição](setting-administrative-rights-for-a-partition.md)
+[Definindo direitos administrativos para uma partição](setting-administrative-rights-for-a-partition.md)
 </dt> </dl>
 
  

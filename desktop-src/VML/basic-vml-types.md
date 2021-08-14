@@ -1,6 +1,6 @@
 ---
 title: Tipos de VML básicos
-description: Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. Migre páginas da Web e aplicativos que dependem de VML para SVG ou outros padrões amplamente suportados.
+description: este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. Migre páginas da Web e aplicativos que dependem de VML para SVG ou outros padrões amplamente suportados.
 ms.assetid: 07c17e7b-5ac4-4a8d-a468-559307408d5b
 keywords:
 - Linguagem VML (VML), tipos básicos
@@ -22,19 +22,19 @@ keywords:
 - tipo de vetor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f05b058c919496b608b875f96e6c03bbeb0d50e8
-ms.sourcegitcommit: 5b98bf8c68922f8f03c14f793fbe17504900559c
+ms.openlocfilehash: 70dbb2e540e809b88b446cceda9973f8988c7241cae7f4f96402a0edc7906550
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "104562340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118347751"
 ---
 # <a name="basic-vml-types"></a>Tipos de VML básicos
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
 
  
 
@@ -79,7 +79,7 @@ Essa proposta usa um pequeno número de tipos básicos, listados na tabela a seg
 | [color](#color)       | [c](#color)       | complex                    | Um elemento que permite que uma cor seja derivada.                                                        |
 | [la](#font)         | [la](#font)     | complex                    | Uma descrição de uma fonte.                                                                             |
 | [bitmap](#bitmap)     | [bitmap](#bitmap) | href                       | Uma referência a um arquivo de imagem externa.                                                             |
-| [vetor](#vector)     | [l](#vector)      | complex                    | Uma descrição de um caminho de vetor                                                                       |
+| [vetor](#vector)     | [v](#vector)      | complex                    | Uma descrição de um caminho de vetor                                                                       |
 
 
 
@@ -117,7 +117,7 @@ Um valor booliano é representado como uma palavra-chave que indica o estado do 
 
 
 
-| Valor para verdadeiro | Valor para false |
+| Valor para true | Valor para false |
 |----------------|-----------------|
 | true           | false           |
 | sim            | não              |
@@ -129,9 +129,9 @@ Um valor booliano é representado como uma palavra-chave que indica o estado do 
 
  
 
-Uma implementação pode gravar qualquer valor e deve reconhecer todos os valores. Uma implementação é gratuita para alterar valores de uma representação para outra.
+Uma implementação pode gravar qualquer valor e deve reconhecer todos os valores. Uma implementação é livre para alterar valores de uma representação para outra.
 
-[![voltar ao início ](images/top.gif) para cima](#top)
+[![voltar ao início ](images/top.gif) Voltar ao início](#top)
 
 ## <a name="fraction"></a>fração
 
@@ -143,7 +143,7 @@ fraction
 
 
 
-Todos os valores numéricos (ou seja, valores de quantidades com dimensão) dentro dessa proposta podem ser armazenados como inteiros, dimensionando-os por 2 6 (65536). Um número pode ser fornecido neste formulário, com o sufixo f ou como um número decimal sem sufixo. Assim, os seguintes elementos hipotéticos representam o mesmo valor.
+Todos os valores numéricos (ou seja, valores de quantidades dimensionáveis) dentro dessa proposta podem ser armazenados como inteiros dimensionando-os em 2 6 (65536). Um número pode ser dado nesse formato, com o sufixo f ou como um número decimal sem sufixo. Portanto, os seguintes elementos hipotéticos representam o mesmo valor.
 
 
 ```HTML
@@ -153,17 +153,17 @@ Todos os valores numéricos (ou seja, valores de quantidades com dimensão) dent
 
 
 
-Uma quantidade com o sufixo f deve ser um número inteiro; números fracionários não são permitidos. O inteiro resultante deve ser representável como um número assinado do complemento de 32 bits 2; assim, o intervalo efetivo da representação é 32768 (na verdade, menor que 32768 e maior ou igual a-32768).
+Uma quantidade com o sufixo f deve ser um número inteiro; Números fracionais não são permitidos. O inteiro resultante deve ser representável como um número assinado de complemento de 2 de 32 bits; portanto, o intervalo efetivo da representação é 32768 (na verdade, menor que 32768 e maior ou igual a -32768.)
 
-Uma implementação de conformidade é necessária para preservar valores que são expressos como valores f. Os valores representados como números decimais podem ser convertidos em um valor f e armazenados dessa forma. Um aplicativo tem permissão para registrar valores gerados internamente em qualquer unidade apropriada; no entanto, um valor lido em de um documento existente deve ser mantido para a precisão original completa ou deve ser convertido em um valor f.
+Uma implementação em conformidade é necessária para preservar valores expressos como valores f. Valores representados como números decimais podem ser convertidos em um valor f e armazenados dessa forma. Um aplicativo tem permissão para registrar valores gerados internamente em qualquer unidade apropriada; no entanto, um valor lido de um documento existente deve ser mantido para a precisão original completa ou deve ser convertido em um valor f.
 
-Se a implementação não puder fazer isso, ela deverá avisar o usuário de que os dados podem ser perdidos. (É aceitável emitir um aviso desse tipo quando os dados gerados externamente são encontrados pela primeira vez.)
+Se a implementação não puder fazer isso, ela deverá avisar o usuário de que os dados podem ser perdidos. (É aceitável emitir esse aviso uma vez quando dados gerados externamente são encontrados pela primeira vez.)
 
-Quando um valor decimal é convertido em formato f, a implementação pode usar qualquer modo de arredondamento aritmético; no entanto, um número inteiro deve ser convertido para o formato f exatamente. É recomendável que as implementações convertam por arredondamento para menos infinito e que a conversão sempre seja exata.
+Quando um valor decimal é convertido no formato f, a implementação pode usar qualquer modo de arredondamento aritmético; no entanto, um número inteiro deve ser convertido no formato f exatamente. É recomendável que as implementações convertam arredondamento para menos infinito e que a conversão sempre seja exata.
 
-[![voltar ao início ](images/top.gif) para cima](#top)
+[![voltar ao início ](images/top.gif) Voltar ao início](#top)
 
-## <a name="ordinate"></a>ordenada
+## <a name="ordinate"></a>Ordenada
 
 
 ```HTML
@@ -173,13 +173,13 @@ ordinate
 
 
 
-As unidades do sistema de coordenadas estabelecido por coord são de algum tipo nominal, que é conhecido como ordenada. Essa é uma medida de comprimento, mas é usada somente em relação ao retângulo que o coord estabelece. Qualquer valor do tipo ordenada será dimensionado pelos valores *w* e *h* de coord e a taxa resultante usada para estabelecer uma medida real no dispositivo de saída.
+As unidades do sistema de coordenadas estabelecidas por coord são de algum tipo nominal, que é conhecido como ordinado. Essa é uma medida de comprimento, mas só é usada em relação ao retângulo que o coord estabelece. Qualquer valor do tipo ordinado será dimensionado pelos valores *w* e *h* do coord e a taxa resultante usada para estabelecer uma medida real no dispositivo de saída.
 
-Uma implementação em conformidade deve ser capaz de lidar com valores de ordenada de até 30 bits de sinal de adição (ou seja, um inteiro com sinal de 31 bits, não um inteiro com sinal de 32 bits). No entanto, é recomendável que as implementações tentem produzir coordenadas para o caminho e elementos semelhantes que têm cerca de 16 bits de precisão. Isso minimizará a chance de estouro negativo em uma implementação de não conformidade.
+Uma implementação em conformidade deve ser capaz de lidar com valores ordinados de até 30 bits mais sinal (ou seja, um inteiro com sinal de 31 bits, não um inteiro com sinal de 32 bits). No entanto, é recomendável que as implementações tentem produzir coordenadas para o caminho e elementos semelhantes que tenham cerca de 16 bits de precisão. Isso minimizará a chance de estouro ou subfluxo em uma implementação não compatível.
 
-os valores de ordenada são sempre integrais. Um ponto decimal pode não aparecer em um valor do tipo ordenada. Nenhum especificador de unidade pode ser anexado aos valores do tipo ordenada.
+os valores ordinados são sempre integrais. Um ponto decimal pode não aparecer em um valor do tipo ordinate. Nenhum especificador de unidade pode ser anexado a valores do tipo ordinate.
 
-[![voltar ao início ](images/top.gif) para cima](#top)
+[![voltar ao início ](images/top.gif) Voltar ao início](#top)
 
 ## <a name="length"></a>comprimento
 
@@ -191,42 +191,42 @@ length
 
 
 
-Um comprimento é uma medida do mundo real ou, às vezes, uma medida em pixels de dispositivo. É recomendável que as implementações evitem o uso de pixels de dispositivo (px).
+Um comprimento é uma medida do mundo real ou, às vezes, uma medida em pixels do dispositivo. É recomendável que as implementações evitem o uso de pixels de dispositivo (px).
 
-Todos os qualificadores de unidade [CSS1](https://www.w3.org/pub/WWW/TR/REC-CSS1) padrão são permitidos em um comprimento. Além disso, o qualificador da emu pode ser usado. Esse qualificador refere-se a uma unidade – a EMU (unidade de métrica em inglês), que é um denominador comum das quantidades de medidas em uso generalizado em gráficos de computador. A EMU é <sup>centímetro</sup> /914400, ou seja, há 914400 de Emu por polegada. A tabela a seguir lista o número de EMUs em um pequeno número de unidades geralmente encontradas.
+Todos os qualificadores [de unidade CSS1](https://www.w3.org/pub/WWW/TR/REC-CSS1) padrão são permitidos em um comprimento. Além disso, a emu do qualificador pode ser usada. Esse qualificador refere-se a uma unidade – a EMU (Unidade de Métrica em Inglês) – que é um denominador comum das quantidades de medição em uso difundido em gráficos de computador. A EMU é de polegada/914400, ou seja, há 914400 EMU por polegada. <sup></sup> A tabela a seguir lista o número de EMUs em um pequeno número de unidades comumente encontradas.
 
 
 
-| Número de EMUs | Número por polegada | Número por milímetro | Descrição             |
+| Número de EMUs | Número por Polegada | Número por milímetro | Descrição             |
 |----------------|-----------------|-----------------------|-------------------------|
-| 360            |                 | 0,01                  | HIMETRIC Win32          |
-| 12700          | 72              |                       | empresas                 |
-| 635            | 1440            |                       | TWIP Win32              |
+| 360            |                 | 0,01                  | Win32 HIMETRIC          |
+| 12700          | 72              |                       | "point"                 |
+| 635            | 1440            |                       | Win32 TWIP              |
 | 762            | 1200            |                       | Impressora de alta resolução |
 
 
 
  
 
-Números fracionários de EMUs não são permitidos. Qualquer medida deve ser representável como um número integral assinado de 32 bits de EMUs--isso limita a magnitude de uma medida a 2348 polegadas--cerca de 59 metros ou 65 metros. Como as medidas sempre se referem ao tamanho de uma renderização em um dispositivo de saída de tamanho nominal da tela ou da página, elas sempre estarão dentro desse intervalo.
+Números fracionados de EMUs não são permitidos. Qualquer medida deve ser representável como um número integral com assinatura de 32 bits de EMUs – isso limita a magnitude de uma medida a 2348 polegadas – cerca de 59 metros ou 65 centímetros. Como as medidas sempre se referem ao tamanho de uma renderização em um dispositivo de saída de tela ou de página nominalmente, elas sempre estarão dentro desse intervalo.
 
-Observe, no entanto, que a representação não é apropriada para medidas do mundo real e que onde elas são registradas (por exemplo, para registrar o tamanho real de um caminho), alguma outra representação deve ser usada.
+Observe, no entanto, que a representação é inadequada para medidas do mundo real e que, onde elas são registradas (por exemplo, para registrar o tamanho real de um caminho), alguma outra representação deve ser usada.
 
-Uma implementação de conformidade é necessária para preservar valores que são exatamente números de EMUs. Os valores representados de qualquer outra maneira podem ser convertidos em um valor de UME e armazenados dessa maneira. Um aplicativo tem permissão para registrar valores gerados internamente em qualquer unidade apropriada; no entanto, um valor lido em de um documento existente deve ser mantido para a precisão original completa ou deve ser convertido em um valor de UME.
+Uma implementação em conformidade é necessária para preservar valores que são números exatos de EMUs. Os valores representados de qualquer outra maneira podem ser convertidos em um valor de EMU e armazenados dessa maneira. Um aplicativo tem permissão para registrar valores gerados internamente em qualquer unidade apropriada; no entanto, um valor lido de um documento existente deve ser mantido para a precisão original completa ou deve ser convertido em um valor de EMU.
 
-Se a implementação não puder fazer isso, ela deverá avisar o usuário de que os dados podem ser perdidos. (É aceitável emitir um aviso desse tipo quando os dados gerados externamente são encontrados pela primeira vez.)
+Se a implementação não puder fazer isso, ela deverá avisar o usuário de que os dados podem ser perdidos. (É aceitável emitir esse aviso uma vez quando dados gerados externamente são encontrados pela primeira vez.)
 
-Na prática, os comprimentos físicos são usados para relativamente poucas medições nesta proposta. Os dados que normalmente são mais importantes são os dados de caminho e são codificados no sistema de coordenadas definido, de acordo com a forma, por coord.
+Na prática, os comprimentos físicos são usados para relativamente poucas medidas nesta proposta. Os dados que normalmente são mais importantes são os dados de caminho e são codificados no sistema de coordenadas definido, por forma, por coord.
 
 ### <a name="alternative-representations"></a>Representações alternativas
 
-As representações de comprimento padrão de HTML são definidas por [CSS1](https://www.w3.org/pub/WWW/TR/REC-CSS1#length-units) . As unidades relativas, com exceção do pixel, não são significativas no contexto no qual os comprimentos são usados nesta proposta e não devem ser usados. Se o documento registra o tamanho de pixel pretendido (destino), isso define a tradução de pixels para a EMU; caso contrário, o padrão de 90 dpi definido por [CSS1](https://www.w3.org/pub/WWW/TR/REC-CSS1#length-units) deve ser usado.
+As representações de comprimento padrão de HTML são definidas por [CSS1.](https://www.w3.org/pub/WWW/TR/REC-CSS1#length-units) Unidades relativas, com exceção do pixel, não são significativas no contexto dentro do qual os comprimentos são usados nesta proposta e não devem ser usados. Se o documento registra o tamanho de pixel pretendido (destino), isso define a conversão de pixels em EMU; caso contrário, o padrão de 90 dpi definido por [CSS1](https://www.w3.org/pub/WWW/TR/REC-CSS1#length-units) deve ser usado.
 
-Com exceção da UME, qualquer valor pode ser dado como uma fração decimal. Quando um valor decimal é convertido em EMU, a implementação pode usar qualquer modo de arredondamento aritmético. (A única maneira de um aplicativo de criação garantir um resultado específico é especificá-lo na Emu.)
+Com exceção da emu, qualquer valor pode ser dado como uma fração decimal. Quando um valor decimal é convertido em EMU, a implementação pode usar qualquer modo de arredondamento aritmético. (A única maneira de um aplicativo de autor garantir um resultado específico é especificá-lo em emu.)
 
-Se nenhum especificador de unidade for fornecido em um valor de comprimento, a implementação deverá assumir a emu.
+Se nenhum especificador de unidade for dado em um valor de comprimento, a implementação deverá assumir emu.
 
-[![voltar ao início ](images/top.gif) para cima](#top)
+[![voltar ao início ](images/top.gif) Voltar ao início](#top)
 
 ## <a name="measure"></a>medida
 
@@ -238,21 +238,21 @@ measure
 
 
 
-Uma medida é uma quantidade que pode ser um [comprimento](#length) ou uma [fração](#fraction). Isso se assemelha bastante às medidas de comprimento HTML e CSS, que podem, em muitos casos, ser medidas físicas ou porcentagens de alguma outra quantidade. Se nenhum especificador de unidade for fornecido, o valor deve ser considerado uma fração decimal (portanto, esse comportamento é herdado de fração, não de comprimento).
+Uma medida é uma quantidade que pode ser um [comprimento ou](#length) uma [fração](#fraction). Isso se assemelha muito às medidas de comprimento HTML e CSS, que podem, em muitos casos, ser medidas físicas ou percentuais de alguma outra quantidade. Se nenhum especificador de unidade for especificado, o valor deverá ser presumido como uma fração decimal (portanto, esse comportamento é herdado de fração, não de comprimento).)
 
-Diferentemente do comprimento, um valor de pixel tem um significado definido pelo contexto, portanto, a conversão para a emu normalmente é inadequada. Há três representações fundamentais possíveis que a implementação deve manter (ou seja, uma representação não pode ser convertida em outra sem perda de informações).
+Ao contrário do comprimento, um valor de pixel tem um significado definido pelo contexto, portanto, a conversão em emu normalmente é inadequada. Há três representações fundamentais possíveis que a implementação deve manter (ou seja, uma representação não pode ser convertida em outra sem perda de informações).
 
-1.  Um valor fracionário deve ser mantido no formato de [fração](#fraction) (um valor "f").
+1.  Um valor fracionado deve ser mantido no formato [de](#fraction) fração (um valor " f ").
 2.  Um comprimento físico deve ser mantido na EMU.
 3.  Um valor de pixel deve ser mantido como um número inteiro de pixels.
 
-Números fracionários de pixels não são permitidos.
+Números fracionados de pixels não são permitidos.
 
 ### <a name="alternative-representations"></a>Representações alternativas
 
-Todas as representações alternativas de [fração](#fraction) e [comprimento](#length) são permitidas.
+Todas as representações alternativas de fração [e](#fraction) [comprimento](#length) são permitidas.
 
-[![voltar ao início ](images/top.gif) para cima](#top)
+[![voltar ao início ](images/top.gif) Voltar ao início](#top)
 
 ## <a name="angle"></a>angle
 
@@ -264,18 +264,18 @@ angle
 
 
 
-A representação fundamental de um ângulo é um número de graus múltiplos por 2 6 (65536) e armazenada como um inteiro. Como o espaço de coordenadas é invertido (o eixo y positivo está inoperante), um ângulo no sentido horário é positivo. Uma implementação de conformidade é necessária para preservar a precisão total de tal valor.
+A representação fundamental de um ângulo é um número de graus múltiplos por 2 6 (65536) e armazenado como um inteiro. Como o espaço de coordenadas é invertido (o eixo y positivo está ino mesmo), um ângulo no sentido horário é positivo. Uma implementação em conformidade é necessária para preservar a precisão total desse valor.
 
-Uma implementação tem permissão para usar qualquer intervalo para ângulos e tem permissão para normalise um ângulo (por exemplo, de-180 a + 180 ou 0 a 360). Não é necessário que as implementações sejam consistentes; no entanto, a representação integral de um ângulo não deve exceder o intervalo de um inteiro com sinal de 32 bits.
+Uma implementação tem permissão para usar qualquer intervalo para ângulos e tem permissão para normalizar um ângulo (por exemplo, -180 a +180 ou 0 a 360 ). As implementações não precisam ser consistentes; no entanto, a representação integral de um ângulo não deve exceder o intervalo de um inteiro com sinal de 32 bits.
 
-O sufixo FD é usado para identificar essa representação de um ângulo (grau fracionário). Observe que isso é diferenciado do sufixo f para uma fração sem dimensão, embora aritmética idêntica possa ser usada para dar suporte a ela. O padrão para um valor angular é um grau simples, ou seja, um valor não dimensionado. Isso também pode ser sinalizado com o sufixo "" (o símbolo de grau); no entanto, o uso disso depende de ter uma codificação de documento adequada – consequentemente, o sufixo graus também é definido como média graus. O conjunto completo de possíveis suficientes é o seguinte.
+O sufixo fd é usado para identificar essa representação de um ângulo (grau fracionado). Observe que isso é diferenciado do sufixo f para uma fração sem dimensão, embora aritmética idêntica possa ser usada para dar suporte a ela. O padrão para um valor angular é graus simples, ou seja, um valor não escalado. Isso também pode ser sinalizado com o sufixo " " (o símbolo de grau); No entanto, o uso disso depende de ter uma codificação de documento adequada – consequentemente, o sufixo deg também é definido como graus médias. O conjunto completo de possíveis suficientes é o seguinte.
 
 
 
 | Sufixo       | Fator de conversão | Comentários                               |
 |--------------|-------------------|----------------------------------------|
-| FD           | 1                 | Representação interna de alta precisão |
-| nenhum, graus,   | 65536             | Degrees                                |
+| Fd           | 1                 | Representação interna de alta precisão |
+| none, deg,   | 65536             | Degrees                                |
 | rad          | 65536pi/180       | Radians                                |
 
 
@@ -284,18 +284,18 @@ O sufixo FD é usado para identificar essa representação de um ângulo (grau f
 
 ### <a name="alternative-representations"></a>Representações alternativas
 
-A transformação de dimensionamento tem descontinuidades em múltiplos estranhos de 45. Portanto, é extremamente importante que a conversão de qualquer quantidade inexata seja bem definida. Por esse motivo, a aritmética de conversão é definida para arredondar em direção a menos infinito.
+A transformação de dimensionamento tem descontinuidades em múltiplos ímpares de 45 . Portanto, é extremamente importante que a conversão de qualquer quantidade inexata seja bem definida. Por esse motivo, a aritmética de conversão é definida para arredondar para menos infinito.
 
-Como isso pode ser difícil ou impossível de garantir em algumas implementações, o uso do seguinte é definido para ser um recurso de nível 3:
+Como isso pode ser difícil ou impossível de garantir em algumas implementações, o uso do seguinte é definido como um recurso de nível 3:
 
-1.  Qualquer valor de grau fracionário.
-2.  Qualquer valor de radianos
+1.  Qualquer valor de grau fracionado.
+2.  Qualquer valor radiano
 
-Assim, os valores são qualificados FD e valores integrais não qualificados, ou valores integral qualificados graus ou devem ser tratados exatamente por uma implementação de nível 0 de conformidade; outros valores não precisam. É altamente recomendável que qualquer implementação manipule a conversão de um valor de grau fracionário para um valor de grau em escala (FD) exatamente. Isso pode ser feito sem o suporte de ponto flutuante.
+Portanto, valores fd qualificados e valores integrais não qualificados ou valores integrais qualificados deg ou devem ser tratados exatamente por uma implementação de nível 0 em conformidade; outros valores não precisam. É altamente recomendável que qualquer implementação manipular a conversão de um valor de grau fracionado em um valor de grau dimensionado (fd) exatamente. Isso pode ser feito sem suporte a ponto flutuante.
 
-Os requisitos mais exagindo para conversão distingue FD da f.
+Os requisitos mais exatos para conversão distinguem fd de f.
 
-[![voltar ao início ](images/top.gif) para cima](#top)
+[![voltar ao início ](images/top.gif) Voltar ao início](#top)
 
 ## <a name="color"></a>cor
 
@@ -307,12 +307,12 @@ c
 
 
 
-As cores são uma parte essencial dos gráficos de computadores modernos. A proposta usa os métodos estabelecidos para especificar cores fixas. No entanto, as cores em diagramas raramente são cores estáticas simples; Geralmente, eles são derivados de outros elementos no diagrama. Grande parte dessas informações é muito específica do aplicativo, portanto, essa proposta fornece dois mecanismos muito básicos para especificar esse comportamento:
+As cores são uma parte essencial dos gráficos de computador modernos. A proposta usa os métodos estabelecidos para especificar cores fixas. No entanto, as cores em diagramas raramente são cores estáticas simples; eles geralmente são derivados de outros elementos no diagrama. Grande parte dessas informações é muito específica do aplicativo, portanto, essa proposta fornece dois mecanismos muito básicos para especificar esse comportamento:
 
 1.  Uma cor pode ser derivada de outra cor na mesma forma.
 2.  Um pequeno número de operações aritméticas é definido para derivar ou modificar uma cor.
 
-O mecanismo de forma de protótipo complementa isso permitindo que os protótipos sejam definidos a partir dos quais as cores podem ser herdadas.
+O mecanismo de forma de protótipo complementa isso permitindo que protótipos sejam definidos dos quais as cores podem ser herdadas.
 
 
 ```HTML
@@ -324,35 +324,35 @@ color
 
 Um valor de cor é um superconjunto da [definição de cor CSS1](https://www.w3.org/pub/WWW/TR/REC-CSS1#color-units) . As extensões permitem que o valor de cor RGB seja determinado de outras cores dentro da forma ou de um esquema de cores geral definido usando CSS1.
 
-Se o valor de um elemento for definido para ser uma cor, o *conteúdo* de um elemento definirá o valor de cor por meio de um único token de cor, opcionalmente modificado por uma operação aritmética na cor RGB correspondente.
+Se o valor de um elemento for  definido como uma cor, o conteúdo de um elemento definirá o valor de cor por meio de um único token de cor opcionalmente modificado por uma operação aritmética na cor RGB correspondente.
 
-[![voltar ao início ](images/top.gif) para cima](#top)
+[![voltar ao início ](images/top.gif) Voltar ao início](#top)
 
 ### <a name="color-units"></a>Unidades de cores
 
-O conjunto completo de tokens de cor é proveniente de uma variedade de fontes: HTML, CSS1 e esta proposta. Eles são definidos da seguinte maneira usando a notação de [CSS1](https://www.w3.org/pub/WWW/TR/REC-CSS1) ou a notação XPointer definida para vinculação XML.
+O conjunto completo de tokens de cores vem de uma variedade de fontes: HTML, CSS1 e esta proposta. Eles são definidos da seguinte forma usando a notação de [CSS1](https://www.w3.org/pub/WWW/TR/REC-CSS1) ou a notação XPointer definida para vinculação XML.
 
-Nas definições de XPointer, a origem local é o elemento que contém o valor de cor e a expressão se refere a todo o conjunto de elementos da forma como se qualquer elemento de protótipo base tivesse sido mesclado com a forma. Quando o elemento correspondente não existir, o valor padrão desse elemento será usado em seu lugar.
+Nas definições do XPointer, a origem do local é o elemento que contém o valor de cor e a expressão refere-se ao conjunto de elementos inteiro da forma como se todos os elementos de protótipo base tivessem sido mesclados com a forma. Quando o elemento correspondente não existe, o valor padrão desse elemento é usado em seu lugar.
 
 
 
-| Cor            | Definição                                                                                                  | Nível | Descrição                                                                                                                                                               |
+| Color            | Definição                                                                                                  | Nível | Descrição                                                                                                                                                               |
 |------------------|-------------------------------------------------------------------------------------------------------------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| name             | Veja abaixo                                                                                                   | 0     | Nome da cor HTML, conforme listado na tabela a seguir.                                                                                                                            |
-| \#rr'gg'bb'      | \#rr'gg'bb'                                                                                                 | 0     | Representação de cor padrão CSS1/sRGB usando valores no intervalo 0.. 255 representados usando 2 dígitos hexadecimais cada.                                                     |
-| \#RGB            | \#RRGGBB                                                                                                    | 1     | O formulário CSS1 foi reduzido com apenas três dígitos hexadecimais.                                                                                                                   |
-| RGB (r, g, b)       | \#d m b                                                                                                 | 1     | Formulário CSS1 RGB; os elementos do valor RGB são convertidos conforme definido em [CSS1](https://www.w3.org/pub/WWW/TR/REC-CSS1#color-units) .                                      |
-| fill             | ancestral (1, forma)<br/> filho (1, preenchimento)<br/> filho (1, cor)<br/>                           | 1     | A cor de preenchimento do primeiro plano da forma.                                                                                                                                   |
-| fillBack         | ancestral (1, forma)<br/> filho (1, preenchimento)<br/> filho (1, voltar)<br/> filho (1, cor)<br/> | 1     | A cor do plano de fundo do preenchimento da forma.                                                                                                                                   |
-| line             | ancestral (1, forma)<br/> filho (1, linha)<br/> filho (1, cor)<br/>                           | 1     | A cor da linha de primeiro plano da forma.                                                                                                                                   |
-| lineBack         | ancestral (1, forma)<br/> filho (1, linha)<br/> filho (1, voltar) <br/> filho (1, cor)<br/> | 1     | A cor da linha do plano de fundo da forma.                                                                                                                                   |
-| lineOrFill       | linha, preenchimento                                                                                                  | 1     | O valor da linha, se não for padronizado, caso contrário, o valor de preenchimento. Isso efetivamente retorna a cor que está na borda da forma.                                           |
-| fillThenLine     | preenchimento, linha                                                                                                  | 1     | O valor de preenchimento, se não for padronizado, caso contrário, o valor da linha. Isso efetivamente retorna a cor da forma principal (se a forma não estiver preenchida, o resultado será a cor da linha).   |
-| shadow           | ancestral (1, forma)<br/> filho (1, sombra)<br/> filho (1, cor)<br/>                         | 2     | A cor da sombra (esse é um recurso de nível 2).                                                                                                                      |
-| scheme           | Veja abaixo                                                                                                   | 1     | Uma cor do esquema do esquema definido para o documento; Veja abaixo.                                                                                                       |
-| esquema (*índice*)  | Veja abaixo                                                                                                   | 1     | *Índice* de cores do esquema, começando em 0; Veja abaixo.                                                                                                                         |
-| this             | Implícita                                                                                                     | 2     | A operação (preencher um caminho ou desenhá-la) é definida de alguma outra maneira (por exemplo, como um bitmap) e a cor especifica uma "modificação" nas cores, portanto implícita. |
-| paleta (*índice*) | Implícita                                                                                                     | 3     | Se comporta da mesma maneira, exceto que exatamente uma entrada em uma tabela de cores de bitmap é identificada. Permitido apenas onde explicitamente declarado.                             |
+| name             | Veja abaixo                                                                                                   | 0     | Nome da cor HTML, conforme listado na tabela abaixo.                                                                                                                            |
+| \#rr'gg'bb'      | \#rr'gg'bb'                                                                                                 | 0     | Representação de cor CSS1/sRGB padrão usando valores no intervalo 0,255 representados usando dois dígitos hexadecimais cada.                                                     |
+| \#Rgb            | \#Rrggbb                                                                                                    | 1     | Formulário CSS1 abreviado com apenas três dígitos hexadecimais.                                                                                                                   |
+| rgb(r,g,b)       | \#(r) (g) (b)                                                                                                 | 1     | Formulário css1 rgb; os elementos do valor rgb são convertidos conforme definido em [CSS1.](https://www.w3.org/pub/WWW/TR/REC-CSS1#color-units)                                      |
+| fill             | ancestor(1,shape)<br/> child(1, fill)<br/> child(1, color)<br/>                           | 1     | A cor de preenchimento de primeiro plano da forma.                                                                                                                                   |
+| fillBack         | ancestor(1,shape)<br/> child(1, fill)<br/> child(1, back)<br/> child(1, color)<br/> | 1     | A cor da tela de fundo do preenchimento de forma.                                                                                                                                   |
+| line             | ancestor(1,shape)<br/> child(1, line)<br/> child(1, color)<br/>                           | 1     | A cor da linha de primeiro plano da forma.                                                                                                                                   |
+| lineBack         | ancestor(1,shape)<br/> child(1, line)<br/> child(1,back) <br/> child(1, color)<br/> | 1     | A cor da linha da tela de fundo da forma.                                                                                                                                   |
+| lineOrFill       | linha, preenchimento                                                                                                  | 1     | O valor da linha, se não for padrão, caso contrário, o valor de preenchimento. Isso retorna efetivamente a cor que está na borda da forma.                                           |
+| fillThenLine     | fill, line                                                                                                  | 1     | O valor de preenchimento, se não for padrão, caso contrário, o valor de linha. Isso efetivamente retorna a cor da forma principal (se a forma for des preenchida, o resultado será a cor da linha).   |
+| shadow           | ancestor(1,shape)<br/> child(1, shadow)<br/> child(1, color)<br/>                         | 2     | A cor da sombra (esse é um recurso de nível 2).                                                                                                                      |
+| scheme           | Veja abaixo                                                                                                   | 1     | Uma cor de esquema do esquema definido para o documento; veja abaixo.                                                                                                       |
+| scheme(*index*)  | Veja abaixo                                                                                                   | 1     | Índice de cores *do esquema,* começando em 0; veja abaixo.                                                                                                                         |
+| this             | Implícita                                                                                                     | 2     | A operação (preenchendo um caminho ou desenhando-o) é definida de alguma outra maneira (por exemplo, como um bitmap) e a cor especifica uma "modificação" nas cores, de modo implícito. |
+| paleta(*índice*) | Implícita                                                                                                     | 3     | Comporta-se da mesma maneira que isso, exceto que exatamente uma entrada em uma tabela de cores de bitmap é identificada. Permitido somente quando explicitamente declarado.                             |
 | nenhum             | \-                                                                                                          | 2     | Indica a ausência de uma cor; pode ser usado para cancelar uma operação de desenho que usa a cor.                                                                          |
 | sistema           | Veja abaixo                                                                                                   | 3     | Uma cor definida pela interface do usuário do sistema.                                                                                                                             |
 
@@ -360,59 +360,59 @@ Nas definições de XPointer, a origem local é o elemento que contém o valor d
 
  
 
-Essa cor permite que um valor de cor especifique uma modificação em uma cor que seja derivada de alguma outra maneira; em particular, uma única operação pode ser especificada para todas as cores em um bitmap. A cor da paleta (*índice*) identifica uma determinada entrada em um bitmap mapeado para a paleta. O uso dele só é definido para gravar uma entrada de tabela de cores que deve ser considerada transparente nesse bitmap.
+Essa cor permite que um valor de cor especifique uma modificação em uma cor derivada de alguma outra maneira; em particular, uma única operação pode ser especificada para todas as cores em um bitmap. A cor da paleta (*índice*) identifica uma entrada específica em um bitmap mapeado por paleta. O uso disso só é definido para registrar uma entrada de tabela de cores que deve ser considerada transparente em tal bitmap.
 
-A definição de um valor de cor não deve se referir, direta ou indiretamente. Se essa definição for encontrada, é recomendável, mas não necessária, que a implementação trate o valor indefinido como preto.
+A definição de um valor de cor não deve se referir a si mesma, direta ou indiretamente. Se essa definição for encontrada, é recomendável, mas não necessário, que a implementação trate o valor indefinido como preto.
 
-[![voltar ao início ](images/top.gif) para cima](#top)
+[![voltar ao início ](images/top.gif) Voltar ao início](#top)
 
 ### <a name="html-colors"></a>Cores HTML
 
-O [HTML](https://www.w3.org/TR/wd-html40-970708/types.mdl#type-color) define os dezesseis nomes de cor a seguir:
+[HTML](https://www.w3.org/TR/wd-html40-970708/types.mdl#type-color) define os seguintes 16 nomes de cores:
 
 
 
-Nomes de cor e valores sRGB
+Nomes de cores e valores sRGB
 
 ![Exemplo de cor preta.](images/black.gif)
 
-Black = " \# 000000"
+Preto = " \# 000000"
 
 ![Exemplo de cor verde.](images/green.gif)
 
 Verde = " \# 008000"
 
-![Exemplo de cor prateada.](images/silver.gif)
+![Exemplo de cor prata.](images/silver.gif)
 
 Prata = " \# C0C0C0"
 
-![Exemplo de cor de verde-limão.](images/lime.gif)
+![Exemplo de cor de cinza.](images/lime.gif)
 
-Verde-limão = " \# 00FF00"
+Calca = " \# 00FF00"
 
 ![Exemplo de cor cinza.](images/gray.gif)
 
 Cinza = " \# 808080"
 
-![Exemplo de cor de verde-oliva.](images/olive.gif)
+![Exemplo de cor da coloração.](images/olive.gif)
 
-Verde-oliva = " \# 808000"
+Verde-verde = " \# 808000"
 
 ![Exemplo de cor branca.](images/white.gif)
 
-Branco = " \# FFFFFF"
+White = " \# FFFFFF"
 
-![Exemplo de cor de ywllow.](images/yellow.gif)
+![Exemplo de cor ywllow.](images/yellow.gif)
 
 Amarelo = " \# FFFF00"
 
-![Exemplo de cor de bordô.](images/maroon.gif)
+![Exemplo de cor da coloração.](images/maroon.gif)
 
-Bordô = " \# 800000"
+Mário = " \# 800000"
 
-![Exemplo de cor azul.](images/navy.gif)
+![Exemplo de cor da cor da coloração.](images/navy.gif)
 
-Azul = " \# 000080"
+Ão = " \# 000080"
 
 ![Exemplo de cor vermelha.](images/red.gif)
 
@@ -420,33 +420,33 @@ Vermelho = " \# FF0000"
 
 ![Exemplo de cor azul.](images/blue.gif)
 
-Blue = " \# 0000FF"
+Azul = " \# 0000FF"
 
 ![Exemplo de cor roxa.](images/purple.gif)
 
 Roxo = " \# 800080"
 
-![Exemplo de cor azul-petróleo.](images/teal.gif)
+![Exemplo de cor teal.](images/teal.gif)
 
-Azul-petróleo = " \# 008080"
+Teal = " \# 008080"
 
-![Exemplo de cor de Fuchsia.](images/fuchsia.gif)
+![Exemplo de cor de fuchsia.](images/fuchsia.gif)
 
 Fuchsia = " \# FF00FF"
 
-![Exemplo de cor de azul-piscina.](images/aqua.gif)
+![Exemplo de cor azul-azul.](images/aqua.gif)
 
-Azul-piscina = " \# 00ffff"
+Aqua = " \# 00FFFF"
 
 
 
  
 
-[![voltar ao início ](images/top.gif) para cima](#top)
+[![voltar ao início ](images/top.gif) Voltar ao início](#top)
 
 ### <a name="scheme-colors"></a>Cores do esquema
 
-As cores do esquema referenciadas pelo esquema são definidas no nível do documento usando a marca meta com um atributo Name de "esquema de cores do tema".
+As cores do esquema referenciadas por esquema são definidas no nível do documento usando a meta tag com um atributo de nome de "Esquema de Cores do Tema".
 
 
 ```HTML
@@ -456,15 +456,15 @@ As cores do esquema referenciadas pelo esquema são definidas no nível do docum
 
 
 
-Essa marca permite que até oito cores de esquema sejam definidas. As cores indefinidas devem padronizar para preto. As cores do esquema permitem que o esquema de cores usado para um documento completo seja alterado apenas alterando o conteúdo do esquema de cores do tema. Para garantir que os gráficos importados de diferentes aplicativos de criação façam uso consistente das cores do esquema, as seguintes interpretações são definidas. O "uso" é uma breve descrição da finalidade e a coluna "Descrição" fornece detalhes adicionais.
+Essa marca permite que até oito cores de esquema sejam definidas. As cores indefinidas devem ser o padrão preto. As cores do esquema permitem que o esquema de cores usado para um documento completo seja alterado apenas alterando o conteúdo do Esquema de Cores do Tema. Para garantir que gráficos importados de diferentes aplicativos de criação façam uso consistente das cores do esquema, as interpretações a seguir são definidas. O "uso" é uma breve descrição da finalidade e a coluna "descrição" fornece detalhes adicionais.
 
 
 
 | Índice | Nome              | Uso                         | Descrição                                                                                                              |
 |-------|-------------------|-------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| 0     | esquema. plano de fundo | Tela de fundo                    | A cor usada para o plano de fundo de um elemento gráfico (e, frequentemente, para a página inteira).                                    |
-| 1     | esquema. texto       | Texto e linhas                | A cor do texto anexado a uma forma e a cor da linha padrão.                                                      |
-| 2     | esquema. sombra     | Sombras                       | Cor de sombra padrão – a cor normalmente usada para sombras de formas.                                                     |
+| 0     | scheme.background | Segundo plano                    | A cor usada para a tela de fundo de um gráfico (e, com frequência, para toda a página).                                    |
+| 1     | scheme.text       | Texto e linhas                | A cor do texto anexado a uma forma e a cor da linha padrão.                                                      |
+| 2     | scheme.shadow     | Sombras                       | Cor de sombra padrão – a cor normalmente usada para sombras de formas.                                                     |
 | 3     | esquema. title      | Texto do título                    | A cor a ser usada para o texto de título ou título.                                                                              |
 | 4     | esquema. Fill       | Esgota                         | Cor de preenchimento padrão – a cor normalmente usada para preencher formas.                                                          |
 | 5     | esquema. acentuação     | Ênfase                        | Cor normal de "Realce" usada para enfatizar um elemento importante de um elemento gráfico.                                             |
@@ -485,7 +485,7 @@ As cores do esquema não participarão do esquema padrão se uma cor não for es
 
 Às vezes, os aplicativos registram cores com base nas configurações do sistema operacional em gráficos. Normalmente, eles são transitórios e não precisam ser gravados; as definições de thesystemcolor existem exclusivamente para dar suporte a isso. Uma cor do sistema é introduzida definindo uma marca apropriada em um novo namespace e inserindo as informações apropriadas no conteúdo do elemento.
 
-Essa proposta define tal marca para codificar as cores da interface do usuário do Windows definidas no arquivo de cabeçalho WinUser. h.
+essa proposta define tal marca para codificar as cores da interface do usuário Windows definidas no arquivo de cabeçalho winuser. h.
 
 
 ```HTML
@@ -567,7 +567,7 @@ O parâmetro das seis primeiras operações é um único valor numérico integra
     |-----------------|------------------------------------|
     | escureça          | c: = CXP/255                       |
     | clarea         | c: = 255-(255-c) XP/255           |
-    | add             | c: = c + p                         |
+    | adicionar             | c: = c + p                         |
     | subtrair        | c: = c-p                         |
     | reversesubtract | c: = p-c                         |
     | blackwhite      | se c < p thenc: = 0elsec: = 255 |
@@ -656,29 +656,29 @@ Esses valores são dicas para o comportamento esperado. A opção separada refer
 
 É válido fazer com que o URI href e o atributo title tenham o mesmo valor (léxico) – isso é apropriado se o bitmap referenciado não for "armazenado com" o documento. Ele é destinado (embora não necessário) que href seja usado para a própria cópia do documento do bitmap, que pode ser excluído se as formas de referência forem excluídas--e esse título for usado para indicar uma cópia compartilhada. Portanto, se ambos contiverem o mesmo valor, não haverá cópia específica do documento.
 
-Os aplicativos podem desconsiderar a dica se não couber com o modelo de armazenamento real dos dados XML.
+Os aplicativos poderão desconsiderar a dica se não se ajustarem ao modelo de armazenamento real dos dados XML.
 
-[![voltar ao início ](images/top.gif) para cima](#top)
+[![voltar ao início ](images/top.gif) Voltar ao início](#top)
 
 ### <a name="picture-file-formats"></a>Formatos de arquivo de imagem
 
-Dentro do contexto dessa proposta, os dados externos são invariavelmente um bitmap ou um arquivo que é usado para produzir um bitmap. No nível de renderização 0, nenhum formato de bitmap externo precisa ser suportado-os caminhos só podem ser preenchidos com cores sólidas. Para renderizar o conjunto completo de preenchimentos de nível 1 de renderização, os bitmaps precisam ter suporte. O nível de renderização 1 inclui (apenas) os seguintes formatos:
+Dentro do contexto dessa proposta, os dados externos são invariavelmente um bitmap ou um arquivo que é usado para produzir um bitmap. No nível de renderização 0, não é necessário ter suporte para nenhum formato de bitmap externo– os caminhos só podem ser preenchidos com cores sólidas. Para renderizar o conjunto completo de preenchimentos de nível de renderização 1, é necessário dar suporte a bitmaps. O nível de renderização 1 inclui (somente) os seguintes formatos:
 
-1.  JFIF, ou seja, dados de formato ISO/IEC 10918 inseridos em um arquivo com o cabeçalho JFIF (que pode ser considerado um marcador APP0 específico após o SOI Maker) e incluindo (somente) o intervalo de formatos JPEG com suporte no código V6 IJG.
-2.  PNG, conforme definido pela especificação do PNG versão 1,0.
+1.  JFIF, ou seja, dados de formato ISO/IEC 10918 inseridos em um arquivo com o header JFIF (que pode ser considerado um marcador APP0 específico após o criador soi) e incluindo (somente) o intervalo de formatos JPEG com suporte pelo código IJG v6.
+2.  PNG, conforme definido pela especificação PNG versão 1.0.
 
 O nível de renderização 2 também inclui suporte para o seguinte:
 
--   GIF, conforme definido pela especificação GIF publicada por CompuServ em 1987 (normalmente chamado de "GIF87a"). GIF89a também deve ter suporte nesse nível, sujeito à restrição de que os dados não devem conter nenhum bloco de extensão que precise de interpretação para exibir o bitmap diferente do requisito de extensionswithouta de controle de gráficos para a entrada do usuário ou um tempo de atraso. Isso permite que os comentários sejam incluídos, mas não a extensão de texto sem formatação. Um aplicativo pode inserir extensões de aplicativo (0x21, 0xFF), mas, usando a terminologia desta proposta, elas devem conter apenas os dados de edição, não de renderização.
+-   GIF, conforme definido pela especificação GIF publicada por CompuServ em 1987 (normalmente conhecido como "GIF87a"). GIF89a também deve ter suporte nesse nível, sujeito à restrição de que os dados não devem conter nenhum bloco de extensão que precise de interpretação para exibir o bitmap diferente de extensões de controle de gráficos sem um requisito de entrada do usuário ou um tempo de atraso. Isso permite que os comentários sejam incluídos, mas não a extensão de texto sem-texto. Um aplicativo pode inserir extensões de aplicativo (0x21, 0xFF), mas, usando a terminologia dessa proposta, elas devem conter apenas os dados de edição, não de renderização.
 
-Qualquer outro formato de dados usado no gráfico força esse gráfico a ser pelo menos o nível 3 de edição e, possivelmente, o nível 3 de renderização (se os dados forem necessários para renderizar o gráfico). Um aplicativo é incentivado a publicar os formatos que ele suporta. Por exemplo, Microsoft Office dá suporte aos seguintes formatos adicionais nativamente e, portanto, pode gravar dados de edição neste formulário:
+Qualquer outro formato de dados usado no gráfico força esse gráfico a ser pelo menos editando o nível 3 e possivelmente renderizar o nível 3 (se os dados são necessários para renderizar o gráfico). Um aplicativo é incentivado a publicar os formatos aos quais ele dá suporte. Por exemplo, Microsoft Office dá suporte aos seguintes formatos adicionais na verdade e, portanto, pode gravar dados de edição neste formulário:
 
-1.  WMF--metarquivo do Windows (formato Win 3,1)
-2.  EMF--metarquivo "avançado" do Windows (formato Win32)
-3.  PICT--Mac OS arquivo QuickDraw PICT (todas as versões, mas sem registros QuickTime ou outras extensões)
-4.  BMP--formato de arquivo de bitmap do Windows, formatos "os/2" (BITMAPCORE), BITMAPINFO, BITMAPV4 e BITMAPV5
+1.  WMF – Windows metarquivo (formato Win 3.1)
+2.  EMF – Windows metarquivo "avançado" (formato Win32)
+3.  PICT – Mac OS arquivo PICT quickDraw (todas as versões, mas sem registros de QuickTime ou outras extensões)
+4.  BMP -- Windows formato de arquivo bitmap, "os/2" (BITMAPCORE), BITMAPINFO, BITMAPV4 e formatos BITMAPV5
 
-[![voltar ao início ](images/top.gif) para cima](#top)
+[![voltar ao início ](images/top.gif) Voltar ao início](#top)
 
 ## <a name="vector"></a>vector
 
@@ -690,9 +690,9 @@ v
 
 
 
-Um caminho gráfico vetorial é codificado como PCDATA. O conteúdo do elemento v é misto, contendo uma descrição de caminho de vetor opcionalmente parametrizada com elementos p.
+Um caminho gráfico de vetor é codificado como pcdata. O conteúdo do elemento v é misto, contendo uma descrição de caminho de vetor opcionalmente parametrizada com elementos p.
 
-[Voltar para a visão geral da VML](web-workshop---specs---standards----how-to-use-vml-on-web-pages.md)
+[Voltar à visão geral do VML](web-workshop---specs---standards----how-to-use-vml-on-web-pages.md)
 
  
 

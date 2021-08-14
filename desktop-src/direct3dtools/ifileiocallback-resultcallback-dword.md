@@ -4,7 +4,7 @@ MS-HAID: vspixengine.IFileIOCallback\_ResultCallback\_DWORD
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Método IFileIOCallback:: ResultCallback'
+title: Método IFileIOCallback::ResultCallback
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: E4418A63-47C6-4F12-94FA-0F1B5465FE84
@@ -17,14 +17,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 751c4d0b57165e148002218ae2151aaba69e48f8
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f1adc4fdc72cd26e317a2d8dc4a82049a2ef6ad99734d5e8bfc631bffdf4df99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119981516"
 ---
-# <a name="span-idvspixengineifileiocallback_resultcallback_dwordspanifileiocallbackresultcallback-method"></a><span id="vspixengine.ifileiocallback_resultcallback_dword"></span>Método IFileIOCallback:: ResultCallback
+# <a name="span-idvspixengineifileiocallback_resultcallback_dwordspanifileiocallbackresultcallback-method"></a><span id="vspixengine.ifileiocallback_resultcallback_dword"></span>Método IFileIOCallback::ResultCallback
 
 Uma função de retorno de chamada usada para notificar o host de erros durante a captura ou reprodução.
 
@@ -39,16 +39,16 @@ HRESULT ResultCallback(
 
 ## <a name="parameters"></a>Parâmetros
 
-*resultadostate*   
+*resultState*   
 Indica o tipo de erro encontrado.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Confira também
 

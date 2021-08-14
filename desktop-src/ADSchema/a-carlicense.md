@@ -1,10 +1,10 @@
 ---
-title: atributo carLicense
-description: Licença de veículo ou placa de registro.
+title: Atributo carLicense
+description: Placa de registro ou licença do veículo.
 ms.assetid: 09505889-3dcc-46a3-851d-d9594c3a2ccb
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo carLicense
+- Esquema do AD do atributo carLicense
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00a9b9a249b5076bf821c17156b090466aefe3ab
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a1308fd63f675d8d58d7450999032b0330bac8a0b8635319bb4bb89da4ad47bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105753829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118427590"
 ---
-# <a name="carlicense-attribute"></a>atributo carLicense
+# <a name="carlicense-attribute"></a>Atributo carLicense
 
-Licença de veículo ou placa de registro.
+Placa de registro ou licença do veículo.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | carLicense                                  |
-| LDAP-Display-Name | carLicense                                  |
+| Ldap-Display-Name | carLicense                                  |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 2.16.840.1.113730.3.1.1                     |
-| System-ID-GUID    | d4159c92-957d-4a87-8a67-8d2934e01649        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | d4159c92-957d-4a87-8a67-8d2934e01649        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -56,10 +56,10 @@ Licença de veículo ou placa de registro.
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | Falso                                                                                 |
+| Tem valor único       | Falso                                                                                 |
 | É indexado             | Falso                                                                                 |
-| No catálogo global      | Falso                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
+| No Catálogo Global      | Falso                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
@@ -77,10 +77,10 @@ Licença de veículo ou placa de registro.
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | Falso                                                                                 |
+| Tem valor único       | Falso                                                                                 |
 | É indexado             | Falso                                                                                 |
-| No catálogo global      | Falso                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
+| No Catálogo Global      | Falso                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
@@ -98,10 +98,10 @@ Licença de veículo ou placa de registro.
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | Falso                                                                                 |
+| Tem valor único       | Falso                                                                                 |
 | É indexado             | Falso                                                                                 |
-| No catálogo global      | Falso                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
+| No Catálogo Global      | Falso                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
@@ -119,10 +119,10 @@ Licença de veículo ou placa de registro.
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | Falso                                                                                 |
+| Tem valor único       | Falso                                                                                 |
 | É indexado             | Falso                                                                                 |
-| No catálogo global      | Falso                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
+| No Catálogo Global      | Falso                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
@@ -140,10 +140,10 @@ Licença de veículo ou placa de registro.
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | Falso                                                                                 |
+| Tem valor único       | Falso                                                                                 |
 | É indexado             | Falso                                                                                 |
-| No catálogo global      | Falso                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
+| No Catálogo Global      | Falso                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |

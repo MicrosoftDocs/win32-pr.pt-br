@@ -1,23 +1,23 @@
 ---
-description: Um conjunto de acompanhamento especifica os protocolos que seguem um protocolo. Monitor de Rede usa um conjunto de acompanhamento quando o analisador não pode identificar o próximo protocolo dos dados em uma instância de protocolo.
+description: Um conjunto a seguir especifica os protocolos que seguem um protocolo. Monitor de Rede usa um conjunto a seguir quando o analisador não pode identificar o próximo protocolo dos dados em uma instância de protocolo.
 ms.assetid: 9e73c724-a540-42f8-b273-4f02c39d81c4
-title: Especificando um conjunto de acompanhamento
+title: Especificando um conjunto a seguir
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b9e36268be82d2fed7c3d0c56a078e41dff1733
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b11320872cc07d69f5796e344a1d5ed4dea4594e48f9697901126d915fd7b42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118363042"
 ---
-# <a name="specifying-a-follow-set"></a>Especificando um conjunto de acompanhamento
+# <a name="specifying-a-follow-set"></a>Especificando um conjunto a seguir
 
-Um conjunto de acompanhamento especifica os protocolos que seguem um protocolo. Monitor de Rede usa um conjunto de acompanhamento quando o analisador não pode identificar o próximo protocolo dos dados em uma instância de protocolo.
+Um conjunto a seguir especifica os protocolos que seguem um protocolo. Monitor de Rede usa um conjunto a seguir quando o analisador não pode identificar o próximo protocolo dos dados em uma instância de protocolo.
 
-Por exemplo, o analisador NetBIOS especifica um conjunto de acompanhamento porque os dados no protocolo NetBIOS não identificam qual protocolo é o próximo. Como resultado, o analisador NetBIOS deve criar um conjunto de todos os protocolos que podem ser seguidos.
+Por exemplo, o analisador NetBIOS especifica um conjunto a seguir porque os dados no protocolo NetBIOS não identificam qual protocolo é o próximo. Como resultado, o analisador NetBIOS deve criar um conjunto de acompanhamento de todos os protocolos que podem ser seguidos.
 
-O exemplo de código a seguir identifica o conjunto de acompanhamento de NetBIOS no arquivo de [*Parser.ini*](p.md) . O conjunto de acompanhamento contém o protocolo SMB e os protocolos de chamada de procedimento remoto da Microsoft (MSRPC). Esses são os únicos protocolos que podem seguir uma instância do protocolo NetBIOS.
+O exemplo de código a seguir identifica o netBIOS a seguir definido no [*arquivoParser.ini*](p.md) dados. O conjunto a seguir contém protocolos SMB (server message block) e MSRPC (chamada de procedimento remoto da Microsoft). Esses são os únicos protocolos que podem seguir uma instância do protocolo NetBIOS.
 
 ``` syntax
 [NETBIOS]
@@ -26,7 +26,7 @@ O exemplo de código a seguir identifica o conjunto de acompanhamento de NetBIOS
    HelpFile   =
 ```
 
-Um analisador especifica um conjunto de acompanhamento durante a implementação da função [**ParserAutoInstallInfo**](parserautoinstallinfo.md) . Um analisador pode especificar quais protocolos são precedidos e quais protocolos seguem. Quando um analisador especifica os protocolos que precedem, Monitor de Rede adiciona o protocolo analisador aos seguintes conjuntos de protocolos especificados. Quando um analisador especifica os protocolos a seguir, Monitor de Rede cria uma nova seção no arquivo de Parser.ini que inclui o conjunto de acompanhamento do analisador.
+Um analisador especifica um conjunto a seguir durante a implementação da [**função ParserAutoInstallInfo.**](parserautoinstallinfo.md) Um analisador pode especificar quais protocolos precedem e quais protocolos seguem. Quando um analisador especifica os protocolos que precedem, Monitor de Rede adiciona o protocolo de analisador aos conjuntos a seguir dos protocolos especificados. Quando um analisador especifica os protocolos a seguir, Monitor de Rede cria uma nova seção no arquivo Parser.ini que inclui o conjunto a seguir do analisador.
 
  
 

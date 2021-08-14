@@ -1,5 +1,5 @@
 ---
-description: A classe LogFileEventConsumer grava cadeias de caracteres personalizadas em um arquivo de log de texto quando os eventos são entregues a ela.
+description: A classe LogFileEventConsumer grava cadeias de caracteres personalizadas em um arquivo de log de texto quando os eventos são entregues a ele.
 ms.assetid: 8934b60e-3763-4b85-89fd-58fe6136dff6
 ms.tgt_platform: multiple
 title: Classe LogFileEventConsumer
@@ -22,16 +22,16 @@ api_type:
 - DllExport
 api_location:
 - Wbemcons.dll
-ms.openlocfilehash: 462989b740aaf6a6bd78968c951b7c676038cea5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dbcf0f90a8bca0cf1f648f74d1b58d7037b79fa8bc9d2d13c4fe2c6dc8306eba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105781353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119996516"
 ---
 # <a name="logfileeventconsumer-class"></a>Classe LogFileEventConsumer
 
-A classe **LogFileEventConsumer** grava cadeias de caracteres personalizadas em um arquivo de log de texto quando os eventos são entregues a ela. As cadeias de caracteres são separadas por sequências de fim de linha. Essa classe é um dos consumidores de eventos padrão que o WMI fornece. Para obter mais informações, consulte [monitorando e respondendo a eventos com consumidores padrão](monitoring-and-responding-to-events-with-standard-consumers.md).
+A **classe LogFileEventConsumer** grava cadeias de caracteres personalizadas em um arquivo de log de texto quando os eventos são entregues a ele. As cadeias de caracteres são separadas por sequências de fim de linha. Essa classe é um dos consumidores de eventos padrão que o WMI fornece. Para obter mais informações, [consulte Monitoramento e resposta a eventos com consumidores padrão.](monitoring-and-responding-to-events-with-standard-consumers.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -52,28 +52,28 @@ class LogFileEventConsumer : __EventConsumer
 
 ## <a name="members"></a>Membros
 
-A classe **LogFileEventConsumer** tem estes tipos de membros:
+A **classe LogFileEventConsumer** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **LogFileEventConsumer** tem essas propriedades.
+A **classe LogFileEventConsumer** tem essas propriedades.
 
 <dl> <dt>
 
 **CreatorSID**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz **uint8**
+Tipo de dados: **matriz uint8**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-SID (identificador de segurança) que identifica exclusivamente o usuário que cria um filtro. O WMI armazena o SID do usuário que cria uma instância de [**\_ \_ EventConsumer**](--eventconsumer.md) ou o SID do administrador, dependendo do sistema operacional. Para obter mais informações, consulte [associando um filtro de eventos a um consumidor lógico](binding-an-event-filter-with-a-logical-consumer.md) e [monitorando e respondendo a eventos com consumidores padrão](monitoring-and-responding-to-events-with-standard-consumers.md).
+SID (identificador de segurança) que identifica exclusivamente o usuário que cria um filtro. O WMI armazena o SID do usuário que cria uma instância do [**\_ \_ EventConsumer**](--eventconsumer.md) ou o SID do Administrador, dependendo do sistema operacional. Para obter mais informações, consulte [Binding an Event Filter with a Logical Consumer](binding-an-event-filter-with-a-logical-consumer.md) and [Monitoring and Responding to Events with Standard Consumers](monitoring-and-responding-to-events-with-standard-consumers.md).
 
-Essa propriedade é herdada de [**\_ \_ EventConsumer**](--eventconsumer.md).
+Essa propriedade é herdada [**\_ \_ de EventConsumer.**](--eventconsumer.md)
 
 </dd> <dt>
 
@@ -86,20 +86,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Nome de um arquivo que inclui o caminho para o qual as entradas de log são acrescentadas. Se o arquivo não existir, o **LogFileEventConsumer** tentará criá-lo. O consumidor falha quando o caminho não existe ou quando o usuário que cria o consumidor não tem permissões de gravação para o arquivo ou caminho.
+Nome de um arquivo que inclui o caminho ao qual as entradas de log são anexadas. Se o arquivo não existir, **LogFileEventConsumer** tentará crie-o. O consumidor falha quando o caminho não existe ou quando o usuário que cria o consumidor não tem permissões de gravação para o arquivo ou caminho.
 
 </dd> <dt>
 
-**Isunicode**
+**IsUnicode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se for **true**, o arquivo de log será um arquivo de texto Unicode. Se for **false**, o arquivo de log será um arquivo de texto de código multibyte. Se o arquivo existir, essa propriedade será ignorada e a configuração de arquivo atual será usada. Por exemplo, se **isunicode** for **false**, mas o arquivo existente for um arquivo Unicode, o Unicode será usado. Se **isunicode** for **true**, mas o arquivo for um código multibyte, o código multibyte será usado.
+Se **TRUE**, o arquivo de log será um arquivo de texto Unicode. Se **FALSE**, o arquivo de log será um arquivo de texto de código multibyte. Se o arquivo existir, essa propriedade será ignorada e a configuração de arquivo atual será usada. Por exemplo, se **IsUnicode** for **FALSE,** mas o arquivo existente for um arquivo Unicode, Unicode será usado. Se **IsUnicode** for **TRUE,** mas o arquivo for um código multibyte, o código multibyte será usado.
 
 </dd> <dt>
 
@@ -112,36 +112,36 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Nome do computador ao qual Instrumentação de Gerenciamento do Windows (WMI) envia eventos.
+Nome do computador para o qual Windows WMI (Instrumentação de Gerenciamento) envia eventos.
 
-Essa propriedade é herdada de [**\_ \_ EventConsumer**](--eventconsumer.md).
+Essa propriedade é herdada [**\_ \_ de EventConsumer.**](--eventconsumer.md)
 
 </dd> <dt>
 
-**MaximumFileSize**
+**Maximumfilesize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Tamanho máximo de um arquivo de log em bytes. Se o arquivo primário exceder seu tamanho máximo, o conteúdo será movido para um arquivo diferente e o arquivo primário será esvaziado. Um valor de 0 (zero) significa que não há limite de tamanho. O valor padrão é 65.535 bytes. O tamanho do arquivo é verificado antes de uma operação de gravação. Portanto, você pode ter um arquivo ligeiramente maior do que o limite de tamanho especificado. A próxima operação de gravação o captura e inicia um novo arquivo.
+Tamanho máximo de um arquivo de log em bytes. Se o arquivo primário exceder seu tamanho máximo, o conteúdo será movido para um arquivo diferente e o arquivo primário será esvaziado. Um valor de 0 (zero) significa que não há nenhum limite de tamanho. O valor padrão é 65.535 bytes. O tamanho do arquivo é verificado antes de uma operação de gravação. Portanto, você pode ter um arquivo um pouco maior que o limite de tamanho especificado. A próxima operação de gravação o captura e inicia um novo arquivo.
 
-A lista a seguir identifica a estrutura de nomenclatura para o arquivo de backup:
+A lista a seguir identifica a estrutura de nomeação para o arquivo de backup:
 
--   Se o nome de arquivo original for 8,3, a extensão será substituída por uma cadeia de caracteres no formato "001", "002" e assim por diante com o menor número maior do que todos os números usados anteriormente e escolhidos. Se "999" for usado, o número escolhido será o menor número não utilizado.
--   Se o nome de arquivo original não for 8,3, uma cadeia de caracteres no formato "001", "002" e assim por diante será anexada ao nome do arquivo.
+-   Se o nome de arquivo original for 8.3, a extensão será substituída por uma cadeia de caracteres no formato "001", "002" e assim por diante com o menor número maior do que todos os números usados anteriormente e escolhidos. Se "999" for usado, o número escolhido será o menor número não utilizado.
+-   Se o nome de arquivo original não for 8.3, uma cadeia de caracteres no formato "001", "002" e assim por diante será anexada ao nome do arquivo.
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
-**MaximumQueueSize**
+**Maximumqueuesize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -149,7 +149,7 @@ Tipo de acesso: Somente leitura
 
 Fila máxima para um consumidor específico, em bytes.
 
-Essa propriedade é herdada de [**\_ \_ EventConsumer**](--eventconsumer.md).
+Essa propriedade é herdada [**\_ \_ de EventConsumer.**](--eventconsumer.md)
 
 </dd> <dt>
 
@@ -165,7 +165,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](key-qualifier.md)
 </dt> </dl>
 
-Nome exclusivo para este consumidor.
+Nome exclusivo para esse consumidor.
 
 </dd> <dt>
 
@@ -178,22 +178,22 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-[Modelo](using-standard-string-templates.md) de cadeia de caracteres padrão para o texto de uma entrada de log.
+Modelo de cadeia [de caracteres](using-standard-string-templates.md) padrão para o texto de uma entrada de log.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O **LogFileEventConsumer** não protege o arquivo de log. Portanto, ao configurar o **LogFileEventConsumer**, é importante especificar um diretório que seja protegido para o nível de que você precisa.
+> O **LogFileEventConsumer** não segura o arquivo de log. Portanto, ao configurar o **LogFileEventConsumer**, é importante especificar um diretório protegido para o nível necessário.
 
  
 
-A classe **LogFileEventConsumer** é derivada da classe abstrata [**\_ \_ EventConsumer**](--eventconsumer.md) .
+A **classe LogFileEventConsumer** é derivada da [**\_ \_ classe abstrata EventConsumer.**](--eventconsumer.md)
 
 ## <a name="examples"></a>Exemplos
 
-Para obter um exemplo de como usar o **LogFileEventConsumer** para criar um consumidor, consulte [gravando em um arquivo de log com base em um evento](writing-to-a-log-file-based-on-an-event.md).
+Para ver um exemplo de **como usar LogFileEventConsumer** para criar um consumidor, consulte Escrevendo em um arquivo de [log com base em um evento](writing-to-a-log-file-based-on-an-event.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -203,8 +203,8 @@ Para obter um exemplo de como usar o **LogFileEventConsumer** para criar um cons
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | \\Assinatura raiz<br/>                                                           |
-| MOF<br/>                      | <dl> <dt>Wbemcons. mof</dt> </dl> |
+| Namespace<br/>                | Assinatura \\ raiz<br/>                                                           |
+| MOF<br/>                      | <dl> <dt>Wbemcons.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemcons.dll</dt> </dl> |
 
 
@@ -216,7 +216,7 @@ Para obter um exemplo de como usar o **LogFileEventConsumer** para criar um cons
 [Classes de consumidor padrão](standard-consumer-classes.md)
 </dt> <dt>
 
-[Gravando em um arquivo de log baseado em um evento](writing-to-a-log-file-based-on-an-event.md)
+[Escrevendo em um arquivo de log com base em um evento](writing-to-a-log-file-based-on-an-event.md)
 </dt> <dt>
 
 [Criando um consumidor lógico](creating-a-logical-consumer.md)

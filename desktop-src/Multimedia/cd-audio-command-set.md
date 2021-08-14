@@ -1,45 +1,45 @@
 ---
-title: Conjunto de comandos de CD de áudio
-description: Conjunto de comandos de CD de áudio
+title: Conjunto de comandos de áudio de CD
+description: Conjunto de comandos de áudio de CD
 ms.assetid: f8b97449-d695-4ec9-874a-de81ed9b95dd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c5f8723aca83111ff3ba3fa4dfa67cd649796cf
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0ca5eb37b738c5d8ae4d88926cb5674a8a1f966368a523b1c0c0d32985ed54db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104084121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118375272"
 ---
-# <a name="cd-audio-command-set"></a>Conjunto de comandos de CD de áudio
+# <a name="cd-audio-command-set"></a>Conjunto de comandos de áudio de CD
 
-Os dispositivos de áudio de CD dão suporte ao seguinte conjunto de comandos.
+Os dispositivos de áudio CD são compatíveis com o seguinte conjunto de comandos.
 
 
 
 | Formulário de cadeia de caracteres                      | Formulário de mensagem                              |
 |----------------------------------|-------------------------------------------|
-| [**interrupção**](break.md)           | [**interrupção de MCI \_**](mci-break.md)           |
-| [**recursos**](capability.md) | [**\_GETDEVCAPS MCI**](mci-getdevcaps.md) |
-| [**inclui**](close.md)           | [**fechamento de MCI \_**](mci-close.md)           |
-| [**detalhes**](info.md)             | [**informações do MCI \_**](mci-info.md)             |
-| [**abrir**](open.md)             | [**MCI \_ aberto**](mci-open.md)             |
-| [**temporariamente**](pause.md)           | [**pausa de MCI \_**](mci-pause.md)           |
-| [**reproduzir**](play.md)             | [**\_reprodução MCI**](mci-play.md)             |
-| [**Volte**](resume.md)         | [**retomar MCI \_**](mci-resume.md)         |
-| [**Procure**](seek.md)             | [**busca de MCI \_**](mci-seek.md)             |
-| [**Definição**](set.md)               | [**conjunto de MCI \_**](mci-set.md)               |
-| [**Estado**](status.md)         | [**STATUS do MCI \_**](mci-status.md)         |
-| [**deixar**](stop.md)             | [**parada do MCI \_**](mci-stop.md)             |
-| [SysInfo](sysinfo.md)           | [**SysInfo do MCI \_**](mci-sysinfo.md)       |
+| [**Quebrar**](break.md)           | [**MCI \_ BREAK**](mci-break.md)           |
+| [**Capacidade**](capability.md) | [**MCI \_ GETDEVCAPS**](mci-getdevcaps.md) |
+| [**Perto**](close.md)           | [**MCI \_ CLOSE**](mci-close.md)           |
+| [**informações**](info.md)             | [**INFORMAÇÕES \_ DA MCI**](mci-info.md)             |
+| [**Aberto**](open.md)             | [**MCI \_ OPEN**](mci-open.md)             |
+| [**Pausa**](pause.md)           | [**PAUSA DA \_ MCI**](mci-pause.md)           |
+| [**Jogar**](play.md)             | [**MCI \_ PLAY**](mci-play.md)             |
+| [**Currículo**](resume.md)         | [**MCI \_ RESUME**](mci-resume.md)         |
+| [**Procurar**](seek.md)             | [**MCI \_ SEEK**](mci-seek.md)             |
+| [**Definir**](set.md)               | [**MCI \_ SET**](mci-set.md)               |
+| [**Status**](status.md)         | [**STATUS DA MCI \_**](mci-status.md)         |
+| [**Parar**](stop.md)             | [**MCI \_ STOP**](mci-stop.md)             |
+| [Sysinfo](sysinfo.md)           | [**MCI \_ SYSINFO**](mci-sysinfo.md)       |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

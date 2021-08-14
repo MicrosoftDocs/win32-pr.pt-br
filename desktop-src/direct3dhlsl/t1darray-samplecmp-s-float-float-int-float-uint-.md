@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e3415539cc59b156c99492d3a4174d171bb5e8c3
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 54f87f4ecdc23b9b745fa781d7a121f3fda39945713ff07d0b4a0fbdc7220349
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104298885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118507829"
 ---
 # <a name="samplecmpsamplecmpsfloatfloatintfloatuint-function-for-texture1darray"></a>Função SampleCmp:: SampleCmp (S, float, float, int, float, uint) para Texture1DArray
 
@@ -124,7 +124,7 @@ O status da operação. Você não pode acessar o status diretamente; em vez dis
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **\_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 

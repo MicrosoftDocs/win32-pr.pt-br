@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbSyntax
-ms.openlocfilehash: bd02a0ec6512aa7637f0d6b2b281e1b862e61d3d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 517c2b72e830c00b105048adc63923291f896cd5d0d77569c91b1aa12e034e60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118459788"
 ---
 # <a name="how-to-enable-desktop-toast-notifications-through-an-appusermodelid"></a>Como habilitar notificações do sistema de área de trabalho por meio de um AppUserModelID
 
-Este tópico mostra como criar um atalho para seu aplicativo, atribuí-lo a um [AppUserModelID](appids.md)e instalá-lo na tela inicial. É altamente recomendável que você faça isso na Windows Installer em vez de no código do aplicativo. Sem um atalho válido instalado na tela inicial ou em **todos os programas**, você não pode gerar uma notificação do sistema de um aplicativo de desktop.
+Este tópico mostra como criar um atalho para seu aplicativo, atribuí-lo a um [AppUserModelID](appids.md)e instalá-lo na tela inicial. é altamente recomendável que você faça isso na Windows Installer em vez de no código do aplicativo. Sem um atalho válido instalado na tela inicial ou em **todos os programas**, você não pode gerar uma notificação do sistema de um aplicativo de desktop.
 
 > [!Note]  
 > Os métodos de exemplo usados neste tópico são extraídos do [exemplo de notificação do sistema de área de trabalho](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/DesktopToasts).
@@ -36,8 +36,8 @@ Este tópico mostra como criar um atalho para seu aplicativo, atribuí-lo a um [
 -   Bibliotecas
     -   C++: Runtime. Object. lib
     -   C \# : Windows. Winmd
--   C \# : pacote de códigos da API do Windows para Microsoft .NET Framework
--   Uma versão do Microsoft Visual Studio que oferece suporte a pelo menos o Windows 8
+-   C \# : Windows o pacote de código da API para o Microsoft .NET Framework
+-   uma versão do Microsoft Visual Studio que oferece suporte a pelo menos Windows 8
 
 ## <a name="instructions"></a>Instruções
 
@@ -146,7 +146,7 @@ HRESULT DesktopToastsApp::InstallShortcut(_In_z_ wchar_t *shortcutPath)
 
 ## <a name="remarks"></a>Comentários
 
-Como alternativa à abordagem mostrada neste tópico, você pode usar uma estrutura como o Windows Installer XML (WiX) para gerar o atalho e implantá-lo como parte do Windows Installer. Nesse caso, esse código deve ser incluído no MSI em vez de no código do aplicativo. Para obter mais informações, consulte o arquivo de configuração do WiX de exemplo incluído com o exemplo [enviar notificações do sistema de aplicativos da área de trabalho](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/Toast%20notifications%20sample%20(Windows%208)) .
+como alternativa à abordagem mostrada neste tópico, você pode usar uma estrutura como o Windows Installer XML (WiX) para gerar o atalho e implantá-lo como parte do Windows Installer. Nesse caso, esse código deve ser incluído no MSI em vez de no código do aplicativo. Para obter mais informações, consulte o arquivo de configuração do WiX de exemplo incluído com o exemplo [enviar notificações do sistema de aplicativos da área de trabalho](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/Toast%20notifications%20sample%20(Windows%208)) .
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -161,7 +161,7 @@ Como alternativa à abordagem mostrada neste tópico, você pode usar uma estrut
 [IDs de modelo de usuário de aplicativo (AppUserModelIDs)](appids.md)
 </dt> <dt>
 
-[Como instalar as ferramentas do Windows Installer XML (WiX)](/previous-versions/windows/server-essentials/gg513936(v=msdn.10))
+[como instalar as ferramentas do Windows Installer XML (WiX)](/previous-versions/windows/server-essentials/gg513936(v=msdn.10))
 </dt> <dt>
 
 [Esquema XML do sistema](/uwp/schemas/tiles/toastschema/schema-root)

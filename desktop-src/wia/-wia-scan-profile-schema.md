@@ -1,19 +1,19 @@
 ---
-description: O esquema do perfil de verificação define um formato XML que pode ser usado para armazenar as propriedades de itens de aquisição de imagem do Windows (WIA), como scanners e câmeras.
+description: o esquema do perfil de verificação define um formato XML que pode ser usado para armazenar as propriedades de itens de aquisição de imagem Windows (WIA), como scanners e câmeras.
 ms.assetid: e0848db3-652a-45be-a18b-99b82420c586
 title: Esquema do perfil de verificação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 331c52e933e1e6b771c477bdc8a38f1c5f749448
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 81091e75269206b6b3b5a89f86c6f92da5c1d2080d90382ac6af48c6d1cc32ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105759851"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118208012"
 ---
 # <a name="scan-profile-schema"></a>Esquema do perfil de verificação
 
-O esquema do perfil de verificação define um formato XML que pode ser usado para armazenar as propriedades de itens de aquisição de imagem do Windows (WIA), como scanners e câmeras. Esses arquivos persistentes permitem que os aplicativos forneçam verificação automática sem exigir que os usuários se lembrem das configurações de propriedade dos itens.
+o esquema do perfil de verificação define um formato XML que pode ser usado para armazenar as propriedades de itens de aquisição de imagem Windows (WIA), como scanners e câmeras. Esses arquivos persistentes permitem que os aplicativos forneçam verificação automática sem exigir que os usuários se lembrem das configurações de propriedade dos itens.
 
 Qualquer dispositivo [**IWiaItem2**](-wia-iwiaitem2.md) pode ter um perfil de verificação. No entanto, **IWiaItem2** itens dos \_ tipos \_ grupo WIA concluído \_ arquivo e \_ raiz da categoria WIA \_ não podem ter perfis.
 

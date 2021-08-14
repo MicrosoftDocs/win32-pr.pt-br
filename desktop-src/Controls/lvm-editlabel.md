@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LVM_EDITLABEL (commctrl. h)
-description: Inicia a edição in-loco do texto do item de exibição de lista especificado. A mensagem seleciona implicitamente e concentra o item especificado. Você pode enviar essa mensagem explicitamente ou usando a \_ macro EditLabel do ListView.
+title: LVM_EDITLABEL mensagem (Commctrl.h)
+description: Inicia a edição in-place do texto do item de exibição de lista especificado. A mensagem seleciona implicitamente e concentra o item especificado. Você pode enviar essa mensagem explicitamente ou usando a \_ macro EditLabel listView.
 ms.assetid: b63f13f1-6e66-4770-af84-30bcdb241727
 keywords:
-- Controles de LVM_EDITLABEL de mensagens do Windows
+- LVM_EDITLABEL controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25cb4e119731c41130e1c19fdea2f74882796435
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a9be1896c39e06c25bf06e033d74a17107b3e194a43b1c574e1dcb7f9a456413
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118411840"
 ---
-# <a name="lvm_editlabel-message"></a>\_Mensagem EDITLABEL LVM
+# <a name="lvm_editlabel-message"></a>Mensagem EDITLABEL do LVM \_
 
-Inicia a edição in-loco do texto do item de exibição de lista especificado. A mensagem seleciona implicitamente e concentra o item especificado. Você pode enviar essa mensagem explicitamente ou usando a macro [**\_ EditLabel do ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_editlabel) .
+Inicia a edição in-place do texto do item de exibição de lista especificado. A mensagem seleciona implicitamente e concentra o item especificado. Você pode enviar essa mensagem explicitamente ou usando a [**macro \_ EditLabel listView.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_editlabel)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -34,24 +34,24 @@ Inicia a edição in-loco do texto do item de exibição de lista especificado. 
 *wParam* 
 </dt> <dd>
 
-O índice do item de exibição de lista. Para cancelar a edição, defina o índice como-1.
+O índice do item de exibição de lista. Para cancelar a edição, de definir o índice como -1.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o identificador para o controle de edição que é usado para editar o texto do item, se for bem-sucedido, ou **NULL** caso contrário.
+Retorna o alça para o controle de edição usado para editar o texto do item se for bem-sucedido ou **NULL** caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Quando o usuário conclui ou cancela a edição, o controle de edição é destruído e o identificador não é mais válido. Você pode subclassear o controle de edição, mas não deve destruí-lo.
+Quando o usuário conclui ou cancela a edição, o controle de edição é destruído e o handle não é mais válido. Você pode subclasse do controle de edição, mas não deve destruir.
 
-O controle deve ter o foco antes de você enviar esta mensagem para o controle. O foco pode ser definido usando a função [**SetFocus**](/windows/desktop/api/winuser/nf-winuser-setfocus) .
+O controle deve ter o foco antes de enviar essa mensagem para o controle . O foco pode ser definido usando a [**função SetFocus.**](/windows/desktop/api/winuser/nf-winuser-setfocus)
 
-Se *wParam* for-1, um código de notificação [LVN \_ ENDLABELEDIT](lvn-endlabeledit.md) será enviado.
+Se *wParam* for -1, um código de notificação [LVN \_ ENDLABELEDIT](lvn-endlabeledit.md) será enviado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Se *wParam* for-1, um código de notificação [LVN \_ ENDLABELEDIT](lvn-endlabe
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| parâmetro<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **LVM \_ EDITLABELW** (Unicode) e **LVM \_ EDITLABELA** (ANSI)<br/>               |
 
 
@@ -70,7 +70,7 @@ Se *wParam* for-1, um código de notificação [LVN \_ ENDLABELEDIT](lvn-endlabe
 
 <dl> <dt>
 
-[**cancelamento do WM \_**](/windows/desktop/winmsg/wm-cancelmode)
+[**WM \_ CANCELMODE**](/windows/desktop/winmsg/wm-cancelmode)
 </dt> </dl>
 
  

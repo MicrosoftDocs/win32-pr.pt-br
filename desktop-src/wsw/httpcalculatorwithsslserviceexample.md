@@ -3,27 +3,27 @@ title: HttpCalculatorWithSslServiceExample
 description: Este exemplo mostra como usar o host de serviço para hospedar um serviço de calculadora por HTTP, com segurança de transporte SSL.
 ms.assetid: 15e61f32-73b5-4359-957d-9694fe947b1e
 keywords:
-- HttpCalculatorWithSslServiceExample nativo – Web-Services
+- HttpCalculatorWithSslServiceExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9222fc6ffb95e294858b2aca54e4f7450c61232c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ace02b58f075121613a07845237ddc2e0c20934c2b4fd865180a8900a8001eb5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105811677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119344916"
 ---
 # <a name="httpcalculatorwithsslserviceexample"></a>HttpCalculatorWithSslServiceExample
 
 Este exemplo mostra como usar o host de serviço para hospedar um serviço de calculadora por HTTP, com segurança de transporte SSL.
 
--   [HttpCalculatorServiceWithSsl. cpp](#httpcalculatorservicewithsslcpp)
--   [CalculatorService. WSDL](#calculatorservicewsdl)
+-   [HttpCalculatorServiceWithSsl.cpp](#httpcalculatorservicewithsslcpp)
+-   [CalculatorService.wsdl](#calculatorservicewsdl)
 -   [Makefile](#makefile)
 
-## <a name="httpcalculatorservicewithsslcpp"></a>HttpCalculatorServiceWithSsl. cpp
+## <a name="httpcalculatorservicewithsslcpp"></a>HttpCalculatorServiceWithSsl.cpp
 
 
 ```C++
@@ -266,7 +266,7 @@ Exit:
 
 
 
-## <a name="calculatorservicewsdl"></a>CalculatorService. WSDL
+## <a name="calculatorservicewsdl"></a>CalculatorService.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -396,9 +396,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

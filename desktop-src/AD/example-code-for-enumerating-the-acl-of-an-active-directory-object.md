@@ -1,24 +1,24 @@
 ---
-title: Código de exemplo para enumerar a ACL de um objeto no Active Directory Domain Services
-description: Os exemplos de código a seguir podem ser usados para enumerar a lista de controle de acesso (ACL) de um objeto no Active Directory Domain Services.
+title: Código de exemplo para enumerar a ACL de um objeto em Active Directory Domain Services
+description: Os exemplos de código a seguir podem ser usados para enumerar a ACL (lista de controle de acesso) de um objeto Active Directory Domain Services.
 ms.assetid: 3629ffde-c516-4566-8b40-a913b8355656
 ms.tgt_platform: multiple
 keywords:
-- Código de exemplo para enumerar a ACL de um objeto de Active Directory de anúncio
+- Código de exemplo para enumerar a ACL de um AD de objeto do Active Directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61c30bdec125d0f7bbc40fe6903460165722a614
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 17ff3a28b66b0217e2b10037ec5a6ebb817aec33780a5ad1ba4efa6092a3cbe5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104004920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118190624"
 ---
-# <a name="example-code-for-enumerating-the-acl-of-an-object-in-active-directory-domain-services"></a>Código de exemplo para enumerar a ACL de um objeto no Active Directory Domain Services
+# <a name="example-code-for-enumerating-the-acl-of-an-object-in-active-directory-domain-services"></a>Código de exemplo para enumerar a ACL de um objeto em Active Directory Domain Services
 
-Os exemplos de código a seguir podem ser usados para enumerar a lista de controle de acesso (ACL) de um objeto no Active Directory Domain Services.
+Os exemplos de código a seguir podem ser usados para enumerar a ACL (lista de controle de acesso) de um objeto Active Directory Domain Services.
 
-O exemplo de código a seguir mostra uma função que enumera os objetos de confiança de um objeto.
+O exemplo de código a seguir mostra uma função que enumera os objetos de confiança de um objeto .
 
 
 ```C++
@@ -171,7 +171,7 @@ HRESULT EnumAccessInfo(IADs *pads)
 
 
 
-O exemplo de código a seguir mostra uma função que enumera os objetos de confiança de um objeto.
+O exemplo de código a seguir mostra uma função que enumera os objetos de confiança de um objeto .
 
 
 ```VB
@@ -202,9 +202,9 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 
 
 
 

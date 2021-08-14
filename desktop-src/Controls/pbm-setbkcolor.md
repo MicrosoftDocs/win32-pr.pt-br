@@ -1,9 +1,9 @@
 ---
-title: Mensagem de PBM_SETBKCOLOR (commctrl. h)
-description: Define a cor do plano de fundo na barra de progresso.
+title: PBM_SETBKCOLOR mensagem (Commctrl.h)
+description: Define a cor da tela de fundo na barra de progresso.
 ms.assetid: e28af958-babb-4c2e-9202-89b608c22f8e
 keywords:
-- Controles de PBM_SETBKCOLOR de mensagens do Windows
+- PBM_SETBKCOLOR controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ddfaf84695221cf998275d76a9d2d67773150da
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 54bdee330aba5a4ff96fc5b26fa7f99553ff8331dd8822fcd350fbae5813c813
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986176"
 ---
-# <a name="pbm_setbkcolor-message"></a>Mensagem do SETBKCOLOR do PBM \_
+# <a name="pbm_setbkcolor-message"></a>Mensagem PBM \_ SETBKCOLOR
 
-Define a cor do plano de fundo na barra de progresso.
+Define a cor da tela de fundo na barra de progresso.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -39,17 +39,17 @@ Deve ser zero.
 *lParam* 
 </dt> <dd>
 
-Valor **COLORREF** que especifica a nova cor do plano de fundo. Especifique o \_ valor padrão do CLR para fazer com que a barra de progresso Use sua cor de plano de fundo padrão.
+**Valor COLORREF** que especifica a nova cor da tela de fundo. Especifique o valor \_ CLR DEFAULT para fazer com que a barra de progresso use sua cor de plano de fundo padrão.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna a cor do plano de fundo anterior ou o \_ padrão CLR se a cor do plano de fundo for a cor padrão.
+Retorna a cor da tela de fundo anterior ou CLR \_ DEFAULT se a cor da tela de fundo for a cor padrão.
 
 ## <a name="remarks"></a>Comentários
 
-Quando os estilos visuais são habilitados, essa mensagem não tem nenhum efeito.
+Quando os estilos visuais estão habilitados, essa mensagem não tem nenhum efeito.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Quando os estilos visuais são habilitados, essa mensagem não tem nenhum efeito
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

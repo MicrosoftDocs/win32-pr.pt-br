@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 94848023d2cd331545f97d3bea6d92f2fcd4b49c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c99275930155724f47b77de4f85905b92de9d7a7eb612ab713d725a16c1239d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105762078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118339798"
 ---
 # <a name="errorerrorcount"></a>Erro. errorCount
 
@@ -36,11 +36,11 @@ Essa propriedade é um **número** somente leitura (**Long**).
 
 ## <a name="remarks"></a>Comentários
 
-Você deve definir *as configurações*. **enableErrorDialogs** como false se você optar por exibir mensagens de erro personalizadas.
+você deve definir *Configurações*. **enableErrorDialogs** como false se você optar por exibir mensagens de erro personalizadas.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa *erro*. **errorCount** em um manipulador de eventos para alertar o usuário sobre o erro mais recente na fila de erros. O objeto de **jogador** foi criado com ID = "Player".
+o exemplo a seguir JScript usa *erro*. **errorCount** em um manipulador de eventos para alertar o usuário sobre o erro mais recente na fila de erros. O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript

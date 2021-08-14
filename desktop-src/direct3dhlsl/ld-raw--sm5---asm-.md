@@ -4,12 +4,12 @@ description: Leitura aleatória-acesso de componentes de 1-4 32 bits de um buffe
 ms.assetid: F7DBA80D-4DD5-4271-B571-24FB6188ABFE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd4a9480ef60098b394e0eff2b06043fd9a32e45
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 85fd8ec84b574d506a02812b20f4728e3f7a996ec76ad8569645d4c1643b0ec6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104967112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118511086"
 ---
 # <a name="ld_raw-sm5---asm"></a>LD \_ bruto (SM5-ASM)
 
@@ -74,7 +74,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -82,11 +82,11 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
  
 
-Como UAVs estão disponíveis em todos os estágios de sombreador para o Direct3D 11,1, essa instrução se aplica a todos os estágios de sombreador para UAVs para o tempo de execução do Direct3D 11,1, que está disponível a partir do Windows 8.
+Como UAVs estão disponíveis em todos os estágios de sombreador para o Direct3D 11,1, essa instrução se aplica a todos os estágios de sombreador para UAVs para o tempo de execução do Direct3D 11,1, que está disponível a partir de Windows 8.
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 

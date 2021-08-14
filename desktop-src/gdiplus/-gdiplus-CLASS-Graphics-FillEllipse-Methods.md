@@ -4,12 +4,12 @@ ms.assetid: 92f6f3ca-337b-4f57-9472-2dc677550b39
 title: Métodos Graphics. FillEllipse
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 59187f9dd3e58f3e99d1892e08d1107a7c5261f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a4f1556a0ccc95696bd90bd2879181b7e80bf2a95c3e3eac582cfe919612bf38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118482882"
 ---
 # <a name="graphicsfillellipse-methods"></a>Métodos Graphics. FillEllipse
 

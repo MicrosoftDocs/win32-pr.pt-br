@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: 915d5b843287602c80572d739d8b369d8c301770
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 861295c9068bee9e40174d877a78628aa405b9cfa5d46414190fbb7b37904e89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105772634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118527252"
 ---
 # <a name="d3dvs_version-macro"></a>Macro de versão do D3DVS \_
 
@@ -40,7 +40,7 @@ DWORD D3DVS_VERSION(
 
 <dl> <dt>
 
-*\_Primária* 
+*\_Principal* 
 </dt> <dd>
 
 A versão principal do sombreador de vértice. Consulte comentários para obter os valores apropriados.
@@ -54,7 +54,7 @@ A versão secundária do sombreador de vértice. Consulte comentários para obte
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor DWORD que é uma versão de sombreador de vértice.
 

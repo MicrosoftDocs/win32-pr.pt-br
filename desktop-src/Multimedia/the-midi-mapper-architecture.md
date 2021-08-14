@@ -16,12 +16,12 @@ keywords:
 - mapas de chaves
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba337b05fcff1bd0bb0e948e36e7d290eacb9604
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1a20e73c9a361487468870698d3c36d59ef35bb6a28da1b03957dd24f1d7b7dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118136394"
 ---
 # <a name="the-midi-mapper-architecture"></a>A arquitetura do mapeador de MIDI
 
@@ -29,15 +29,15 @@ O mapeador de MIDI usa um mapa de instalação de MIDI para determinar como conv
 
 -   [O mapa do canal](the-channel-map.md)
 -   [Mapas de patch](patch-maps.md)
--   [Mapas de chaves](key-maps.md)
+-   [Mapas de chave](key-maps.md)
 
 A ilustração a seguir mostra as funções de canal, patch e mapas de chave em um mapa de instalação de MIDI.
 
 ![as funções de canal, patch e mapas de chave em uma imagem de mapa de instalação Midi](images/mmap-a02.gif)
 
- 
+ 
 
- 
+ 
 
 
 

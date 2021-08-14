@@ -1,19 +1,19 @@
 ---
 title: Visão geral de realizações de geometria
-description: Este tópico descreve como usar a realização de geometria de Direct2D para melhorar o desempenho de renderização de geometria do aplicativo em determinados cenários.
+description: este tópico descreve como usar Direct2D a realização de geometria para melhorar o desempenho de renderização de geometria do aplicativo em determinados cenários.
 ms.assetid: E8C4C4E5-3102-4F53-847E-A4C2D12A6921
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b903e047ee58a803a7584aaca407281fc803e30
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5108537e9ea9b38bebaab590178d990b44e611e56e82690e9d91ad9b56c19372
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105749282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119260126"
 ---
 # <a name="geometry-realizations-overview"></a>Visão geral de realizações de geometria
 
-Este tópico descreve como usar a realização de geometria de [Direct2D](direct2d-portal.md) para melhorar o desempenho de renderização de geometria do aplicativo em determinados cenários.
+este tópico descreve como usar [Direct2D](direct2d-portal.md) a realização de geometria para melhorar o desempenho de renderização de geometria do aplicativo em determinados cenários.
 
 Ele contém as seções a seguir:
 
@@ -30,13 +30,13 @@ Ele contém as seções a seguir:
 
 ## <a name="what-are-geometry-realizations"></a>O que são a realização de geometria?
 
-As realizações de geometria, introduzidas na Windows 8.1, são um novo tipo de primitivo de desenho que facilita para aplicativos [Direct2D](direct2d-portal.md) melhorar o desempenho de renderização de geometria em determinados casos. As realizações de geometria são representadas pela interface [**ID2D1GeometryRealization**](/windows/win32/api/d2d1_2/nn-d2d1_2-id2d1geometryrealization) .
+as realizações de geometria, introduzidas na Windows 8.1, são um novo tipo de primitivo de desenho que facilita para [Direct2D](direct2d-portal.md) aplicativos melhorar o desempenho de renderização de geometria em determinados casos. As realizações de geometria são representadas pela interface [**ID2D1GeometryRealization**](/windows/win32/api/d2d1_2/nn-d2d1_2-id2d1geometryrealization) .
 
 ## <a name="why-use-geometry-realizations"></a>Por que usar a realização de geometria?
 
-Quando [Direct2D](direct2d-portal.md) renderiza um objeto [**ID2D1Geometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry) , ele deve converter essa geometria em um formulário que o hardware de gráficos entenda através de um processo chamado Mosaicing. Normalmente, Direct2D deve incluí Geometry a cada quadro que é desenhado, mesmo que a geometria não seja alterada. Se seu aplicativo renderizar a mesma geometria de cada quadro, a nova estrutura de remosaico representará um esforço computacional desperdiçado. É mais eficiente em cache o mosaico, ou até mesmo a rasterização completa, da geometria e para desenhar essa representação em cache em cada quadro, em vez de inclusão repetidamente.
+quando [Direct2D](direct2d-portal.md) renderiza um objeto [**ID2D1Geometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry) , ele deve converter essa geometria em uma forma que o hardware de gráficos entenda por um processo chamado mosaico. normalmente, Direct2D deve incluí a geometria de cada quadro que é desenhado, mesmo que a geometria não seja alterada. Se seu aplicativo renderizar a mesma geometria de cada quadro, a nova estrutura de remosaico representará um esforço computacional desperdiçado. É mais eficiente em cache o mosaico, ou até mesmo a rasterização completa, da geometria e para desenhar essa representação em cache em cada quadro, em vez de inclusão repetidamente.
 
-Uma maneira comum de os desenvolvedores resolverem esse problema é armazenar em cache a rasterização completa da geometria. Em particular, é comum criar um novo bitmap, rasterizar a geometria para esse bitmap e, em seguida, desenhar esse bitmap para a cena, conforme necessário. (Essa abordagem é descrita na seção [renderização de geometria](improving-direct2d-performance.md) de aprimorar o desempenho de aplicativos Direct2D.) Embora essa abordagem seja computacionalmente eficiente, ela tem algumas desvantagens:
+Uma maneira comum de os desenvolvedores resolverem esse problema é armazenar em cache a rasterização completa da geometria. Em particular, é comum criar um novo bitmap, rasterizar a geometria para esse bitmap e, em seguida, desenhar esse bitmap para a cena, conforme necessário. (essa abordagem é descrita na seção [renderização de geometria](improving-direct2d-performance.md) de aprimorar o desempenho de aplicativos Direct2D.) Embora essa abordagem seja computacionalmente eficiente, ela tem algumas desvantagens:
 
 -   O bitmap armazenado em cache é sensível a alterações na transformação aplicada à cena. Por exemplo, dimensionar a rasterização pode resultar em um artefato de dimensionamento perceptível. A mitigação desses artefatos com algoritmos de dimensionamento de alta qualidade pode ser computacionalmente cara.
 -   O bitmap em cache consome uma quantidade significativa de memória, especialmente se for rasterizado em uma resolução alta.
@@ -47,7 +47,7 @@ A realização de geometria fornece uma maneira alternativa de armazenar em cach
 
 Considere o uso de comparações de geometria quando seu aplicativo renderizar geometrias complexas cujas formas mudam com pouca frequência, mas que podem estar sujeitas a alterações de transformações.
 
-Por exemplo, considere um aplicativo de mapeamento que mostra um mapa estático, mas que permite ao usuário ampliar e reduzir. Este aplicativo pode se beneficiar com a realização de contratações de geometria. Como as geometrias que estão sendo renderizadas permanecem estáticas, é útil armazená-las em cache para salvar o trabalho de mosaico. Mas como os mapas são dimensionados quando o usuário se aplica, o cache de uma rasterização completa não é o ideal, devido aos artefatos de dimensionamento. O cache de realizações de geometria permitiria que o aplicativo evitasse o trabalho de novo mosaico, mantendo a alta qualidade visual durante o dimensionamento.
+Por exemplo, considere um aplicativo de mapeamento que mostra um mapa estático, mas que permite ao usuário ampliar e reduzir. Este aplicativo pode se beneficiar com a realização de contratações de geometria. Como as geometrias que estão sendo renderizadas permanecem estáticas, é útil armazená-las em cache para salvar o trabalho de mosaico. Mas como os mapas são dimensionados quando o usuário se aplica, o cache de uma rasterização completa não é o ideal, devido aos artefatos de dimensionamento. Caching a realização de geometria permitiria que o aplicativo evitasse o trabalho de novo mosaico, mantendo a alta qualidade visual durante o dimensionamento.
 
 Por outro lado, considere um aplicativo caleidoscópio com geometria animada que muda continuamente. Esse aplicativo provavelmente não se beneficiaria do uso de realizações de geometria. Como as próprias formas mudam de quadro para quadro, não é útil armazenar em cache seus mosaicos. A melhor abordagem para esse aplicativo é desenhar objetos [**ID2D1Geometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry) diretamente.
 
@@ -60,20 +60,20 @@ Um objeto [**ID2D1GeometryRealization**](/windows/win32/api/d2d1_2/nn-d2d1_2-id2
 
 Os dois tipos de realização de geometria são representados pela interface [**ID2D1GeometryRealization**](/windows/win32/api/d2d1_2/nn-d2d1_2-id2d1geometryrealization) .
 
-Ao criar uma realização de geometria, [Direct2D](direct2d-portal.md) deve mesclar todas as curvas na geometria fornecida para as aproximaçãos poligonal. Você deve fornecer um parâmetro de tolerância de nivelamento para o método de criação — isso especifica a distância máxima, em pixels independentes de dispositivo (DIPs), entre a curva verdadeira da geometria e sua aproximação poligonal. Quanto menor a tolerância de nivelamento que você fornece, maior a fidelidade do objeto de realização de geometria resultante. Da mesma forma, fornecer uma tolerância de nivelamento maior produz uma realização de geometria de baixa fidelidade. Observe que as realizações de geometria de alta fidelidade são mais caras de desenhar do que as menos baratas, mas elas podem ser ampliadas ainda mais antes de introduzir artefatos visíveis. Para obter orientação sobre como usar tolerâncias de nivelamento, confira [dimensionamento](#scaling-geometry-realizations) de conversões de geometria abaixo.
+ao criar uma realização de geometria, [Direct2D](direct2d-portal.md) deve mesclar todas as curvas na geometria fornecida para as aproximaçãos poligonal. Você deve fornecer um parâmetro de tolerância de nivelamento para o método de criação — isso especifica a distância máxima, em pixels independentes de dispositivo (DIPs), entre a curva verdadeira da geometria e sua aproximação poligonal. Quanto menor a tolerância de nivelamento que você fornece, maior a fidelidade do objeto de realização de geometria resultante. Da mesma forma, fornecer uma tolerância de nivelamento maior produz uma realização de geometria de baixa fidelidade. Observe que as realizações de geometria de alta fidelidade são mais caras de desenhar do que as menos baratas, mas elas podem ser ampliadas ainda mais antes de introduzir artefatos visíveis. Para obter orientação sobre como usar tolerâncias de nivelamento, confira [dimensionamento](#scaling-geometry-realizations) de conversões de geometria abaixo.
 
 > [!Note]  
 > Os objetos de realização de geometria são associados a um dispositivo de gráficos específico: eles são recursos dependentes de dispositivo.
 
- 
+ 
 
 ## <a name="drawing-geometry-realizations"></a>Desenhando a realização de geometria
 
-O desenho de realizações de geometria é semelhante ao desenho de outros primitivos de [Direct2D](direct2d-portal.md) , como bitmaps. Para fazer isso, chame o método [**DrawGeometryRealization**](/windows/win32/api/d2d1_2/nf-d2d1_2-id2d1devicecontext1-drawgeometryrealization) e passe o objeto de realização de geometria a ser desenhado e o pincel a ser usado. Assim como ocorre com outros métodos de desenho Direct2D, você deve chamar **DrawGeometryRealization** entre chamadas para [**BeginDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw) e [**EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw).
+o desenho de realizações de geometria é semelhante ao desenho de outros primitivos de [Direct2D](direct2d-portal.md) , como bitmaps. Para fazer isso, chame o método [**DrawGeometryRealization**](/windows/win32/api/d2d1_2/nf-d2d1_2-id2d1devicecontext1-drawgeometryrealization) e passe o objeto de realização de geometria a ser desenhado e o pincel a ser usado. assim como ocorre com outros métodos de desenho Direct2D, você deve chamar **DrawGeometryRealization** entre chamadas para [**BeginDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw) e [**enddraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw).
 
 ## <a name="scaling-geometry-realizations"></a>Dimensionamento de comparações de geometria
 
-A realização de geometria, como outras primitivas de [Direct2D](direct2d-portal.md) , respeitam a transformação definida no contexto do dispositivo. Embora as transformações de conversão e de rotação não tenham efeito sobre a qualidade visual da realização de geometria, as transformações de escala podem produzir artefatos visuais.
+a realização de geometria, como outras [Direct2D](direct2d-portal.md) primitivas, respeitam a transformação definida no contexto do dispositivo. Embora as transformações de conversão e de rotação não tenham efeito sobre a qualidade visual da realização de geometria, as transformações de escala podem produzir artefatos visuais.
 
 Em particular, aplicar uma escala grande o suficiente a qualquer realização de geometria pode revelar a aproximação poligonal das curvas reais. A imagem aqui mostra um par de realizações de geometria elíptico (preenchimento e traço) que foram dimensionados muito longe. Os artefatos de mesclagem de curva são visíveis.
 
@@ -133,13 +133,13 @@ Além disso, o aplicativo sempre cria realizações usando uma tolerância menor
 > [!Note]  
 > A abordagem descrita aqui pode não ser apropriada para todos os aplicativos. Por exemplo, se seu aplicativo permitir que a cena seja dimensionada por fatores muito grandes muito rapidamente (por exemplo, se ele contiver um controle deslizante de "zoom" que possa ser movido de 100% para 1 milhão% no intervalo de alguns quadros), essa abordagem poderá resultar em excesso de trabalho recriando a realização de geometria a cada quadro. Uma abordagem alternativa é recriar a realização de geometria somente após a conclusão de cada manipulação da escala da cena (por exemplo, depois que o usuário tiver concluído um gesto de pinçar).
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 [Visão geral de geometrias](direct2d-geometries-overview.md)
 
-[Melhorando o desempenho de aplicativos Direct2D](improving-direct2d-performance.md)
+[melhorando o desempenho de aplicativos Direct2D](improving-direct2d-performance.md)
 
 [Diretrizes gerais para a renderização de conteúdo estático complexo](improving-direct2d-performance.md)
 

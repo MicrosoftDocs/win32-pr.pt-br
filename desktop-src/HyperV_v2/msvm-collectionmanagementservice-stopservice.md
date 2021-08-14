@@ -1,7 +1,7 @@
 ---
-description: Método StopService da classe Msvm_CollectionManagementService-para o serviço.
+description: Método StopService da classe Msvm_CollectionManagementService - interrompe o serviço.
 ms.assetid: 26d0aa9f-f5ca-481f-9bed-6788b0dc2803
-title: Método StopService da classe Msvm_CollectionManagementService
+title: Método StopService da classe Msvm_CollectionManagementService serviço
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: f46b7416a3f17788cbfc0af5aacba014d680dbf6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: cfbd33b1c16cabbe7196283b0afac31fbe28aba7b6d5b3f82b067b3bfbe7e8fe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980406"
 ---
 # <a name="stopservice-method-of-the-msvm_collectionmanagementservice-class"></a>Método StopService da classe Msvm \_ CollectionManagementService
 
@@ -55,15 +55,15 @@ Retornará 0 se for bem-sucedido; caso contrário, retornará um erro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                             |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

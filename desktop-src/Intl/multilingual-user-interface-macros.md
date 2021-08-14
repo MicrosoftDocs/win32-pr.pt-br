@@ -1,17 +1,17 @@
 ---
 description: 'O MUI fornece as seguintes macros, usadas para recuperar informações de uma estrutura FILEMUIINFO:'
 ms.assetid: d910d922-33f5-48ff-be0a-1ac11a13383a
-title: Macros de interface do usuário multilíngüe
+title: Interface de Usuário Multilíngue Macros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4e41150ccadc68fbb5921ae295e464c91a8bbc4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 408200fccab9914c60d2dbc7a7f17a4de9c1f2c2b9c424c3beab1210aa875d82
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118390799"
 ---
-# <a name="multilingual-user-interface-macros"></a>Macros de interface do usuário multilíngüe
+# <a name="multilingual-user-interface-macros"></a>Interface de Usuário Multilíngue Macros
 
 O MUI fornece as seguintes macros, usadas para recuperar informações de uma estrutura [**FILEMUIINFO**](/windows/desktop/api/Winnls/ns-winnls-filemuiinfo) :
 

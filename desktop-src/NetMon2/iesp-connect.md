@@ -1,7 +1,7 @@
 ---
-description: O método Connect conecta o NPP à rede usando uma NIC especificada e fornece informações de configuração sobre a conexão.
+description: o método Conexão conecta o NPP à rede usando uma NIC especificada e fornece informações de configuração sobre a conexão.
 ms.assetid: 48189b2b-9889-4bd8-8972-26005fb7c341
-title: 'Método IESP:: Connect (Netmon. h)'
+title: 'método IESP:: Conexão (Netmon. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 4fc9c88b0eb4671c61f268c5857dceba3dc500f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2095f25128e524b32b8ad8561ee85119537c32be5e61f77d5c72637396a2183
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118365604"
 ---
-# <a name="iespconnect-method"></a>Método IESP:: Connect
+# <a name="iespconnect-method"></a>método IESP:: Conexão
 
-O método **Connect** conecta o NPP à rede usando uma NIC especificada e fornece informações de configuração sobre a conexão.
+o método **Conexão** conecta o NPP à rede usando uma NIC especificada e fornece informações de configuração sobre a conexão.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -71,7 +71,7 @@ Identificador para um BLOB de erro que contém informações adicionais sobre o 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -101,7 +101,7 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 </tr>
 <tr class="odd">
 <td><dl> <dt><strong>NMERR_BLOB_ENTRY_DOES_NOT_EXIST</strong></dt> </dl></td>
-<td>O BLOB de entrada especificado pelo parâmetro <em>hInputBlob</em> não tem uma entrada necessária para executar esta operação. Esse erro pode ser gerado pela chamada <strong>IESP:: Connect</strong> ou <strong>IESP:: Configure</strong> . Examine o BLOB de erro retornado por <em>hErrorBlob</em> para determinar qual entrada não foi encontrada.<br/></td>
+<td>O BLOB de entrada especificado pelo parâmetro <em>hInputBlob</em> não tem uma entrada necessária para executar esta operação. esse erro pode ser gerado pela chamada <strong>IESP:: Conexão</strong> ou <strong>IESP:: Configure</strong> . Examine o BLOB de erro retornado por <em>hErrorBlob</em> para determinar qual entrada não foi encontrada.<br/></td>
 </tr>
 <tr class="even">
 <td><dl> <dt><strong>NMERR_BLOB_NOT_INITIALIZED</strong></dt> </dl></td>
@@ -145,7 +145,7 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 
 ## <a name="remarks"></a>Comentários
 
-Quando o método **Connect** é chamado, monitor de rede chama automaticamente **IESP:: Configure** usando o blob fornecido pelo parâmetro *hInputBlob* . Observe que todos os códigos de erro retornados pela chamada para **IESP:: Configure** são passados de volta e retornados pela chamada **IESP:: Connect** .
+quando o método **Conexão** é chamado, Monitor de Rede chama automaticamente **IESP:: Configure** usando o BLOB fornecido pelo parâmetro *hInputBlob* . observe que todos os códigos de erro retornados pela chamada para **IESP:: Configure** são passados de volta e retornados pela chamada **IESP:: Conexão** .
 
 Esse método deve ser chamado antes que você possa iniciar a captura de quadros. Observe que quando você se conecta à rede usando esse método, você deve continuar a usar a interface **IESP** para capturar quadros.
 

@@ -45,12 +45,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c5c07213a2d2a3a1b64621dbc40f707b0900703
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4a795195af94e248f304747ba7edcf4f7a55e11e051e1cb66937242de1d732bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118427622"
 ---
 # <a name="iadssecuritydescriptor-property-methods"></a>Métodos de propriedade IADsSecurityDescriptor
 
@@ -91,7 +91,7 @@ HRESULT put_Control(
 **DaclDefaulted**
 </dt> <dd> <dl>
 
-Um sinalizador do tipo BOOL que indica se a DACL é derivada de um mecanismo padrão, em vez de ser fornecida explicitamente pelo provedor original do descritor de segurança. Por exemplo, se o criador de um objeto não especificar uma DACL, o objeto receberá a DACL padrão do token de acesso do criador. Esse sinalizador pode afetar como o sistema trata a DACL, em relação à herança de ACE. O sistema ignora esse sinalizador se o sinalizador SE a \_ DACL \_ presente não estiver definido.
+Um sinalizador do tipo BOOL que indica se a DACL é derivada de um mecanismo padrão, em vez de ser fornecida explicitamente pelo provedor original do descritor de segurança. Por exemplo, se o criador de um objeto não especificar uma DACL, o objeto receberá a DACL padrão do token de acesso do criador. Esse sinalizador pode afetar como o sistema trata a DACL, em relação à herança de ACE. o sistema ignorará esse sinalizador se o sinalizador de ES \_ DACL \_ presente não estiver definido.
 
 <dt>
 
@@ -287,7 +287,7 @@ HRESULT put_Revision(
 **SaclDefaulted**
 </dt> <dd> <dl>
 
-Um sinalizador do tipo BOOL que indica que a SACL é derivada de um mecanismo padrão, em vez de ser explicitamente fornecido pelo provedor original do descritor de segurança. Esse sinalizador pode afetar como o sistema manipula a SACL, com relação à herança de ACE. O sistema ignora esse sinalizador se o sinalizador da \_ SACL \_ presente não estiver definido.
+Um sinalizador do tipo BOOL que indica que a SACL é derivada de um mecanismo padrão, em vez de ser explicitamente fornecido pelo provedor original do descritor de segurança. Esse sinalizador pode afetar como o sistema manipula a SACL, com relação à herança de ACE. o sistema ignora esse sinalizador se o sinalizador de ES \_ SACL \_ presente não estiver definido.
 
 <dt>
 

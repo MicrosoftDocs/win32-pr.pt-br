@@ -1,9 +1,9 @@
 ---
-title: Propriedade Image. Source
-description: Representa o caminho de diretório de uma imagem.
+title: Propriedade Image.Source
+description: Representa o caminho do diretório de uma imagem.
 ms.assetid: 174a518a-e9a3-4461-a9a3-d61b62d2b718
 keywords:
-- Ribbon da Propriedade Image. Source do Windows
+- Propriedade Image.Source Windows Faixa de Opções
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ace2a907280a11c54452b54bfb6172539980e38
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 20612f0d25f914cb4c80ae77bb001a678af79e4605c3e1358ed7e33f6b19d805
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118202401"
 ---
-# <a name="imagesource-property"></a>Propriedade Image. Source
+# <a name="imagesource-property"></a>Propriedade Image.Source
 
-Representa o caminho de diretório de uma imagem.
+Representa o caminho do diretório de uma imagem.
 
 ## <a name="usage"></a>Uso
 
@@ -51,13 +51,13 @@ Não há elementos filho.
 
 Opcional.
 
-Pode ocorrer no máximo uma vez para cada [**imagem**](windowsribbon-element-image.md).
+Pode ocorrer no máximo uma vez para cada [**Imagem**](windowsribbon-element-image.md).
 
-Esse elemento contém um valor do tipo *xs: anyURI* ou qualquer sequência de caracteres que representa um Uniform Resource Identifier (URI). O valor do URI é um caminho de diretório absoluto ou relativo (para o arquivo de marcação da faixa de tipos) de um recurso de imagem do tipo bitmap (BMP).
+Esse elemento contém um valor do tipo *xs:anyURI* ou qualquer sequência de caracteres que representa um Uniform Resource Identifier (URI). O valor de URI é um caminho de diretório absoluto ou relativo (ao arquivo de marcação faixa de opções) de um recurso de imagem do tipo bitmap (BMP).
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir mostra a marcação necessária para declarar, por meio de um conjunto de elementos [**Image**](windowsribbon-element-image.md) , uma coleção de recursos de imagem que são projetados para dar suporte a quatro configurações específicas de dpi de tela. A propriedade **Image. Source** é usada para especificar o caminho para o recurso de imagem.
+O exemplo de código a seguir mostra a marcação necessária para declarar, por meio de um conjunto de elementos [**Image,**](windowsribbon-element-image.md) uma coleção de recursos de imagem projetados para dar suporte a quatro configurações específicas de dpi de tela. A **propriedade Image.Source** é usada para especificar o caminho para o recurso de imagem.
 
 
 ```C++
@@ -90,8 +90,8 @@ O exemplo de código a seguir mostra a marcação necessária para declarar, por
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/> |
 
 
 

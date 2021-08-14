@@ -1,22 +1,22 @@
 ---
-title: Propriedade IMsRdpClient5 TransportSettings
-description: Recupera o que passou por um script para a interface IMsRdpClientTransportSettings.
+title: Propriedade TransportSettings IMsRdpClient5
+description: Recupera o que foi passado por meio de um script para a interface IMsRdpClientTransportSettings.
 ms.assetid: 38f5a735-55c7-425a-835b-22f6e0900d57
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade TransportSettings
-- Propriedade TransportSettings Serviços de Área de Trabalho Remota, interface IMsRdpClient5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient5, Propriedade TransportSettings
-- Propriedade TransportSettings Serviços de Área de Trabalho Remota, interface IMsRdpClient6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient6, Propriedade TransportSettings
-- Propriedade TransportSettings Serviços de Área de Trabalho Remota, interface IMsRdpClient7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient7, Propriedade TransportSettings
-- Propriedade TransportSettings Serviços de Área de Trabalho Remota, interface IMsRdpClient8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient8, Propriedade TransportSettings
-- Propriedade TransportSettings Serviços de Área de Trabalho Remota, interface IMsRdpClient9
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient9, Propriedade TransportSettings
-- Propriedade TransportSettings Serviços de Área de Trabalho Remota, interface IMsRdpClient10
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient10, Propriedade TransportSettings
+- Propriedade TransportSettings Serviços de Área de Trabalho Remota
+- Propriedade TransportSettings Serviços de Área de Trabalho Remota , interface IMsRdpClient5
+- Interface IMsRdpClient5 Serviços de Área de Trabalho Remota , propriedade TransportSettings
+- Propriedade TransportSettings Serviços de Área de Trabalho Remota , interface IMsRdpClient6
+- Interface IMsRdpClient6 Serviços de Área de Trabalho Remota , propriedade TransportSettings
+- Propriedade TransportSettings Serviços de Área de Trabalho Remota , interface IMsRdpClient7
+- Interface IMsRdpClient7 Serviços de Área de Trabalho Remota , propriedade TransportSettings
+- Propriedade TransportSettings Serviços de Área de Trabalho Remota , interface IMsRdpClient8
+- Interface IMsRdpClient8 Serviços de Área de Trabalho Remota , propriedade TransportSettings
+- Propriedade TransportSettings Serviços de Área de Trabalho Remota , interface IMsRdpClient9
+- Interface IMsRdpClient9 Serviços de Área de Trabalho Remota , propriedade TransportSettings
+- A propriedade TransportSettings Serviços de Área de Trabalho Remota , interface IMsRdpClient10
+- Interface IMsRdpClient10 Serviços de Área de Trabalho Remota , propriedade TransportSettings
 topic_type:
 - apiref
 api_name:
@@ -38,16 +38,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 077ed94253c0ebadeed775e54c4db2ae6cbacf13
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1ddfd24a941ff89bd74e2d737e7b042d1d2b87342026779793013b1d6e9564d0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119990536"
 ---
-# <a name="imsrdpclient5transportsettings-property"></a>Propriedade IMsRdpClient5:: TransportSettings
+# <a name="imsrdpclient5transportsettings-property"></a>Propriedade IMsRdpClient5::TransportSettings
 
-Recupera o que passou por um script para a interface [**IMsRdpClientTransportSettings**](imsrdpclienttransportsettings.md) .
+Recupera o que foi passado por meio de um script para a interface [**IMsRdpClientTransportSettings.**](imsrdpclienttransportsettings.md)
 
 Esta propriedade é somente para leitura.
 
@@ -64,7 +64,7 @@ HRESULT get_TransportSettings(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um ponteiro de interface [**IMsRdpClientTransportSettings**](imsrdpclienttransportsettings.md) .
+Um ponteiro de interface [**IMsRdpClientTransportSettings.**](imsrdpclienttransportsettings.md)
 
 ## <a name="requirements"></a>Requisitos
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5a642a92756f3f0774e5719aa1fcf9ec302eecb5
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 43e6d60505964beb47eb14bb797a60a3c78089371c9e1fd67463586ba1e5db0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104968727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118513149"
 ---
 # <a name="tex2d-hlsl-reference---select-the-mip-level"></a>tex2D (referência de HLSL) – Selecione o nível de MIP
 

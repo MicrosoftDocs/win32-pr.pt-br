@@ -4,12 +4,12 @@ ms.assetid: 4b7961cd-58a3-4e75-bb9e-fbb6dc225d3d
 title: Evento InkPicture. MouseLeave (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7283bbee20416691e5e9351897c7af2074fa4164
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ff08c3ffbac12911d5eda02a67da2bd31213f943a14afe77f5e7fc17ca885933
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105798008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118218368"
 ---
 # <a name="inkpicturemouseleave-event"></a>Evento InkPicture. MouseLeave
 
@@ -28,7 +28,7 @@ void MouseLeave();
 
 Este evento não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -42,7 +42,7 @@ Esse método de evento é definido na interface **\_ IInkPictureEvents** . A int
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                           |
 | parâmetro<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |

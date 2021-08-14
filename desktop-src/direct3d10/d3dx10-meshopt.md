@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Mesh.h
-ms.openlocfilehash: 7b3085cf9970f2c1f6fe3748cc4db8f4fb2b2a78
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 193bf832f00c9812a515ae9b5c478f6baed637d87605e9f8d04349a12d79aac6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105444"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119989216"
 ---
 # <a name="d3dx10_meshopt-enumeration"></a>\_Enumeração D3DX10 MESHOPT
 
 Especifica o tipo de otimização de malha a ser executada.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -110,7 +110,7 @@ O \_ sinalizador D3DXMESHOPT SHAREVB foi removido desta enumeração. \_ \_ Em v
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

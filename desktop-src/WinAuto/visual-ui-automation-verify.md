@@ -1,19 +1,19 @@
 ---
 title: Verificação de automação da interface do usuário Visual
-description: Verificação de automação da interface do usuário Visual (verificação de UIA Visual) é um Windows \ 32; Driver de GUI para a biblioteca de teste UIA projetada para teste manual da automação da interface do usuário.
+description: verificação de automação da interface do usuário visual (verificação de UIA visual) é um Windows \ 32; Driver de GUI para a biblioteca de teste UIA projetada para teste manual da automação da interface do usuário.
 ms.assetid: 8AEB083E-785E-4F15-B708-2098A9A41B4E
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96e224a52d243427af86c6cd27a3add3be03d9b7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1c50fdd123d24c8a6ef4215ae2451cf49b854b60b26c5d741db1921c42f6f7aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118563632"
 ---
 # <a name="visual-ui-automation-verify"></a>Verificação de automação da interface do usuário Visual
 
-A verificação de automação da interface do usuário Visual (verificação do Visual UIA) é um driver de GUI do Windows para a biblioteca de teste UIA, projetada para teste manual da automação da interface do usuário. Ele fornece uma interface para a funcionalidade de biblioteca de teste UIA que elimina a sobrecarga de codificação de uma ferramenta de linha de comando.
+a verificação de automação da interface do usuário visual (verificação do visual UIA) é um driver de GUI Windows para a biblioteca de testes UIA que foi projetada para teste manual da automação da interface do usuário. Ele fornece uma interface para a funcionalidade de biblioteca de teste UIA que elimina a sobrecarga de codificação de uma ferramenta de linha de comando.
 
 -   [Comandos de menu](#menu-commands)
 -   [Painéis funcionais](#functional-panes)
@@ -141,7 +141,7 @@ A tabela a seguir descreve os comandos no menu verificar do Visual UIA.
 
 
 
- 
+ 
 
 ## <a name="functional-panes"></a>Painéis funcionais
 
@@ -182,36 +182,36 @@ A captura de tela a seguir mostra o painel **testes** .
 
 ![painel de teste](images/test-pane.png)
 
-Os comandos disponíveis na barra de ferramentas **testes** incluem:
+Os comandos disponíveis na barra **de ferramentas Testes** incluem:
 
--   **Mostrar**— especifica os testes de automação da interface do usuário a serem exibidos; ou seja, exiba todos os testes ou apenas testes adequados para o tipo de controle do elemento selecionado na **árvore de elementos de automação** (padrão).
--   **Tipo**— especifica os tipos de teste a serem exibidos: **elemento de automação**, **padrão** ou **controle**.
--   **Prioridades**— especifica as prioridades de teste a serem exibidas: **verificação de compilação**, **prioridade 0**, **prioridade 1**, **prioridade 2** ou **prioridade 3**.
--   **Ir** para a esquerda — vá para o pai do nó atual.
--   **Subir**– vá para o irmão anterior do nó atual.
--   **Descer**– vá para o próximo irmão do nó atual.
--   **Vá** para a direita — vá para o primeiro filho do nó atual.
--   **Executar teste (s) selecionados**– executa os testes no elemento selecionado na árvore de **elementos de automação**.
+-   **Mostrar**– especifica o Automação da Interface do Usuário testes a exibir; ou seja, exibir todos os testes ou apenas testes adequados para o tipo de controle do elemento selecionado na Árvore de Elementos de **Automação** (padrão).
+-   **Tipo**— especifica os tipos de teste a exibir: **Elemento de Automação,** **Padrão** ou **Controle**.
+-   **Prioridades**— especifica as prioridades de teste a exibir: Verificação de **Build,** Prioridade **0,** **Prioridade 1,** **Prioridade 2** ou **Prioridade 3.**
+-   **Ir para** a esquerda — vá para o pai do nó atual.
+-   **Ir para Cima**— vá para o irmão anterior do nó atual.
+-   **Ir para** Baixo – vá para o próximo irmão do nó atual.
+-   **Ir para** a direita — vá para o primeiro filho do nó atual.
+-   **Executar testes selecionados**— executa os testes no elemento selecionado na Árvore **de Elementos de Automação**.
 
 ### <a name="test-results-pane"></a>Painel de resultados de testes
 
-O painel de **resultados de teste** contém a funcionalidade de log de verificação de UIA Visual. A captura de tela a seguir mostra o painel **resultados de teste** .
+O **Resultados de Teste** painel contém a funcionalidade de registro em log do Visual UIA Verify. A captura de tela a seguir mostra **o Resultados de Teste** painel.
 
-![painel de resultados de teste](images/test-results-pane.png)
+![painel de resultados do teste](images/test-results-pane.png)
 
-Os comandos disponíveis na barra de ferramentas **resultados dos testes** incluem:
+Os comandos disponíveis na barra **de ferramentas Resultados** de Testes incluem:
 
--   **Voltar**— Page Backward no histórico de exibição de relatório.
--   **Avançar**– avanço de página no histórico de exibição de relatório.
--   **Geral**— exibe um resumo dos resultados do teste (**passado**, **com falha** e um **erro inesperado**). O resultado do teste é vinculado à exibição **todos os resultados** . O comando **geral** exibe uma tabela como a mostrada a seguir.
+-   **Voltar**– página para trás no histórico de exibição de relatório.
+-   **Encaminhar**– encaminhar página no histórico de exibição de relatório.
+-   **Geral**— Exibe um resumo dos resultados do teste (**Aprovado,** **Com Falha** e **Erro Inesperado).** O resultado do teste é vinculado à **exibição Todos os** Resultados. O **comando** Geral exibe uma tabela como a seguinte.
 
-    ![tabela de resultados de teste geral](images/overall-test-results.png)
+    ![tabela geral de resultados do teste](images/overall-test-results.png)
 
--   **Todos os resultados**— exibe um log detalhado para cada resultado de teste, conforme mostrado nas tabelas a seguir.
+-   **Todos os** Resultados – exibe um log detalhado para cada resultado de teste, conforme mostrado nas tabelas a seguir.
 
-    ![exemplo de detalhes de resultado de log da exibição todos os resultados](images/all-results-log.png)
+    ![exemplo de detalhes do resultado do log da exibição todos os resultados](images/all-results-log.png)
 
-    O nome do teste na tabela **todos os resultados** está vinculado a uma descrição do caso de teste para o elemento, como na tabela a seguir.
+    O nome do teste na **tabela Todos os Resultados** está vinculado a uma descrição de caso de teste para o elemento , como na tabela a seguir.
 
     ![detalhes do caso de teste](images/test-case-detail.png)
 
@@ -219,28 +219,28 @@ Os comandos disponíveis na barra de ferramentas **resultados dos testes** inclu
 
     ![exibição alternativa de um detalhe de caso de teste](images/alt-view-of-test-case-detail.png)
 
--   **XML**— EXIBE o XML bruto gerado pelo agente de log XML.
--   **Localização rápida**— pesquisa de texto simples da exibição atual no painel de **resultados de teste** .
--   **Abrir em nova janela**— abre a exibição atual em uma nova instância do Internet Explorer.
+-   **XML**— exibe o XML bruto gerado pelo agente XML.
+-   **Pesquisa Rápida**– pesquisa de texto simples da exibição atual no **Resultados de Teste** de texto.
+-   **Abrir em Nova Janela**— abre a exibição atual em uma nova instância do Internet Explorer.
 
 ### <a name="properties-pane"></a>Painel Propriedades
 
-O painel **Propriedades** contém uma lista de propriedades de automação da interface do usuário e valores de propriedade organizados por tipo de propriedade: **acessibilidade geral**, **identificação**, **padrões** (padrões de controle), **estado** e **visibilidade**. Os valores de propriedade são preenchidos dinamicamente com base no tipo de controle do objeto selecionado no painel de **árvore elementos de automação** . A captura de tela a seguir mostra o painel **Propriedades** .
+O **painel** Propriedades contém uma lista de Automação da Interface do Usuário propriedades e valores de propriedade organizados por tipo de propriedade: Acessibilidade **Geral,** **Identificação,** **Padrões** (padrões de controle), **Estado** e **Visibilidade.** Os valores de propriedade são preenchidos dinamicamente com base no tipo de controle do objeto selecionado no painel Árvore de **Elementos de** Automação. A captura de tela a seguir mostra **o painel** Propriedades.
 
-![painel Propriedades](images/properties-pane.png)
+![painel propriedades](images/properties-pane.png)
 
-Se o controle selecionado oferecer suporte a um padrão de controle específico, a verificação de UIA Visual fornecerá a capacidade de chamar métodos que são suportados por esse padrão de controle. Por exemplo, o [tipo de controle Window](uiauto-supportwindowcontroltype.md) dá suporte ao [padrão de controle Window](uiauto-implementingwindow.md), que tem um método [**Close**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationwindowpattern-close) que pode ser invocado no painel **Propriedades** , conforme mostrado na captura de tela a seguir. Para obter mais informações, consulte [visão geral de tipos de controle de automação da interface do usuário](uiauto-controltypesoverview.md).
+Se o controle selecionado dá suporte a um padrão de controle específico, o Visual UIA Verify fornece a capacidade de chamar métodos compatíveis com esse padrão de controle. Por exemplo, [](uiauto-supportwindowcontroltype.md) o tipo de controle Janela dá suporte ao padrão de  controle Janela [,](uiauto-implementingwindow.md)que tem um método [**Close**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationwindowpattern-close) que pode ser invocado do painel Propriedades, conforme mostrado na captura de tela a seguir. Para obter mais informações, consulte [Visão geral Automação da Interface do Usuário tipos de controle .](uiauto-controltypesoverview.md)
 
-![método Close do padrão de controle Window invocado no painel Propriedades](images/close-invoked-from-properties-pane.png)
+![método close do padrão de controle de janela invocado do painel de propriedades](images/close-invoked-from-properties-pane.png)
 
-Os comandos disponíveis na barra de ferramentas **Propriedades** incluem:
+Os comandos disponíveis na barra **de ferramentas Propriedades** incluem:
 
--   **Atualizar**– atualize a árvore de **Propriedades** .
--   **Expandir tudo**– expande todos os nós na árvore de **Propriedades** .
+-   **Atualizar**– atualize a **árvore** Propriedades.
+-   **Expanda Tudo**— expande todos os nós na **árvore Propriedades.**
 
- 
+ 
 
- 
+ 
 
 
 

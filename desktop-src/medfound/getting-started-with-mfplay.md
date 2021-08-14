@@ -1,47 +1,47 @@
 ---
-description: MFPlay é uma API para criar aplicativos de reprodução de mídia em C++.
+description: O MFPlay é uma API para criar aplicativos de reprodução de mídia no C++.
 ms.assetid: 55612f49-5995-4bdf-aa12-8a853e5a2b24
-title: Introdução com MFPlay
+title: Ponto de Partida com MFPlay
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd9e0405d3138a22e0d20e94849d416b29d62945
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc2afb0b20189501530116c252a4d11a9b3e2d8d0dff07482b1998b73400071e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118063485"
 ---
-# <a name="getting-started-with-mfplay"></a>Introdução com MFPlay
+# <a name="getting-started-with-mfplay"></a>Ponto de Partida com MFPlay
 
-\[O MFPlay está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. \]
+\[O MFPlay está disponível para uso nos sistemas operacionais especificados na seção Requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. \]
 
-MFPlay é uma API para criar aplicativos de reprodução de mídia em C++.
+O MFPlay é uma API para criar aplicativos de reprodução de mídia no C++.
 
 Este tópico contém as seguintes seções:
 
 -   [Requirements](#requirements)
 -   [Sobre o MFPlay](#about-mfplay)
--   [Reprodução de um arquivo de mídia](#playing-a-media-file)
+-   [Como tocar um arquivo de mídia](#playing-a-media-file)
 -   [Controlando a reprodução](#controlling-playback)
--   [Recebendo eventos do Player](#receiving-events-from-the-player)
--   [Obtendo informações sobre um arquivo de mídia](#getting-information-about-a-media-file)
+-   [Recebendo eventos do player](#receiving-events-from-the-player)
+-   [Obter informações sobre um arquivo de mídia](#getting-information-about-a-media-file)
 -   [Gerenciando a reprodução de vídeo](#managing-video-playback)
 -   [Limitações do MFPlay](#limitations-of-mfplay)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="requirements"></a>Requisitos
 
-O MFPlay requer o Windows 7.
+O MFPlay requer Windows 7.
 
 ## <a name="about-mfplay"></a>Sobre o MFPlay
 
-O MFPlay tem um modelo de programação simples, ao mesmo tempo em que fornece o conjunto principal de recursos de que a maioria dos aplicativos de reprodução precisa. Um aplicativo cria um objeto de *jogador* que controla a reprodução. Para reproduzir um arquivo de mídia, o objeto Player cria um *item de mídia*, que pode ser usado para obter informações sobre o conteúdo do arquivo de mídia. O aplicativo controla a reprodução por meio de métodos na interface [**IMFPMediaPlayer**](/windows/desktop/api/mfplay/nn-mfplay-imfpmediaplayer) do objeto de jogador. Opcionalmente, o aplicativo pode obter notificações de eventos por meio de uma interface de retorno de chamada. o diagrama a seguir ilustra esse processo.
+O MFPlay tem um modelo de programação simples, fornecendo o conjunto principal de recursos de que a maioria dos aplicativos de reprodução precisa. Um aplicativo cria um objeto *de player* que controla a reprodução. Para reproduzir um arquivo de mídia, o objeto player cria um item de *mídia*, que pode ser usado para obter informações sobre o conteúdo do arquivo de mídia. O aplicativo controla a reprodução por meio de métodos na interface [**IMFPMediaPlayer**](/windows/desktop/api/mfplay/nn-mfplay-imfpmediaplayer) do objeto do player. Opcionalmente, o aplicativo pode obter notificações de eventos por meio de uma interface de retorno de chamada O diagrama a seguir ilustra esse processo.
 
-![diagrama conceitual: o aplicativo e o ponto do Player entre si, ambos apontam para o item de mídia, que aponta para o arquivo de mídia](images/mfplay.png)
+![diagrama conceitual: o aplicativo e o player apontam um para o outro, ambos apontam para o item de mídia, que aponta para o arquivo de mídia](images/mfplay.png)
 
-## <a name="playing-a-media-file"></a>Reprodução de um arquivo de mídia
+## <a name="playing-a-media-file"></a>Como tocar um arquivo de mídia
 
-Para reproduzir um arquivo de mídia, chame a função [**MFPCreateMediaPlayer**](/windows/desktop/api/mfplay/nf-mfplay-mfpcreatemediaplayer) .
+Para reproduzir um arquivo de mídia, chame a [**função MFPCreateMediaPlayer.**](/windows/desktop/api/mfplay/nf-mfplay-mfpcreatemediaplayer)
 
 
 ```C++
@@ -67,17 +67,17 @@ HRESULT PlayVideo(HWND hwnd, const WCHAR* sURL)
 
 
 
-A função [**MFPCreateMediaPlayer**](/windows/desktop/api/mfplay/nf-mfplay-mfpcreatemediaplayer) cria uma nova instância do objeto MFPlay Player. A função usa os seguintes parâmetros:
+A [**função MFPCreateMediaPlayer**](/windows/desktop/api/mfplay/nf-mfplay-mfpcreatemediaplayer) cria uma nova instância do objeto de player MFPlay. A função assume os seguintes parâmetros:
 
 -   O primeiro parâmetro é a URL do arquivo a ser aberto. Pode ser um arquivo local ou um arquivo em um servidor de mídia.
--   O segundo parâmetro especifica se a reprodução é iniciada automaticamente. Ao definir essa paremeter como **true**, o arquivo será reproduzido assim que MFPlay o carregar.
+-   O segundo parâmetro especifica se a reprodução é iniciada automaticamente. Ao definir esse parêntese **como TRUE,** o arquivo será reproduzida assim que o MFPlay o carregar.
 -   O terceiro parâmetro define várias opções. Para as opções padrão, passe zero (0).
--   O quarto parâmetro é um ponteiro para uma interface de retorno de chamada opcional. Esse parâmetro pode ser **nulo**, conforme mostrado. O retorno de chamada é descrito na seção [recebendo eventos do Player](#receiving-events-from-the-player).
--   O quinto parâmetro é um identificador para a janela do aplicativo. Se o arquivo de mídia contiver um fluxo de vídeo, o vídeo aparecerá dentro da área do cliente desta janela. Para reprodução somente de áudio, esse parâmetro pode ser **nulo**.
+-   O quarto parâmetro é um ponteiro para uma interface de retorno de chamada opcional. Esse parâmetro pode ser **NULL,** conforme mostrado. O retorno de chamada é descrito na seção [Recebendo eventos do player](#receiving-events-from-the-player).
+-   O quinto parâmetro é um handle para a janela do aplicativo. Se o arquivo de mídia contiver um fluxo de vídeo, o vídeo aparecerá dentro da área do cliente dessa janela. Para reprodução somente áudio, esse parâmetro pode ser **NULL.**
 
-O último parâmetro recebe um ponteiro para a interface [**IMFPMediaPlayer**](/windows/desktop/api/mfplay/nn-mfplay-imfpmediaplayer) do objeto de jogador.
+O último parâmetro recebe um ponteiro para a interface [**IMFPMediaPlayer**](/windows/desktop/api/mfplay/nn-mfplay-imfpmediaplayer) do objeto do player.
 
-Antes de o aplicativo ser desligado, certifique-se de liberar o ponteiro [**IMFPMediaPlayer**](/windows/desktop/api/mfplay/nn-mfplay-imfpmediaplayer) . Você pode fazer isso no manipulador de mensagens de **\_ fechamento do WM** .
+Antes que o aplicativo seja desligado, certifique-se de liberar o [**ponteiro IMFPMediaPlayer.**](/windows/desktop/api/mfplay/nn-mfplay-imfpmediaplayer) Você pode fazer isso no manipulador **de mensagens WM \_ CLOSE.**
 
 
 ```C++
@@ -92,7 +92,7 @@ void OnClose(HWND /*hwnd*/)
 
 
 > [!Note]  
-> Este exemplo usa a função [SafeRelease](saferelease.md) para liberar ponteiros de interface.
+> Este exemplo usa a [função SafeRelease](saferelease.md) para liberar ponteiros de interface.
 
  
 
@@ -100,13 +100,13 @@ Para reprodução de vídeo simples, esse é todo o código de que você precisa
 
 ## <a name="controlling-playback"></a>Controlando a reprodução
 
-O código mostrado na seção anterior reproduzirá o arquivo de mídia até atingir o final do arquivo. Você pode parar e iniciar a reprodução chamando os seguintes métodos na interface [**IMFPMediaPlayer**](/windows/desktop/api/mfplay/nn-mfplay-imfpmediaplayer) :
+O código mostrado na seção anterior reproduzirá o arquivo de mídia até chegar ao final do arquivo. Você pode parar e iniciar a reprodução chamando os seguintes métodos na interface [**IMFPMediaPlayer:**](/windows/desktop/api/mfplay/nn-mfplay-imfpmediaplayer)
 
 -   [**IMFPMediaPlayer::P ause**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-pause) pausa a reprodução. Enquanto a reprodução é pausada, o quadro de vídeo mais recente é exibido e o áudio é silencioso.
--   [**IMFPMediaPlayer:: Stop**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-stop) interrompe a reprodução. Nenhum vídeo é exibido e a posição de reprodução é redefinida para o início do arquivo.
--   [**IMFPMediaPlayer::P o Lay**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-play) retoma a reprodução após parar ou pausar.
+-   [**IMFPMediaPlayer::Stop interrompe**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-stop) a reprodução. Nenhum vídeo é exibido e a posição de reprodução é redefinida para o início do arquivo.
+-   [**IMFPMediaPlayer::P lay**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-play) retoma a reprodução após parar ou pausar.
 
-O código a seguir pausa ou retoma a reprodução quando você pressiona a **barra de espaços**.
+O código a seguir pausa ou retoma a reprodução quando você pressiona **SPACEBAR**.
 
 
 ```C++
@@ -148,16 +148,16 @@ void OnKeyDown(HWND hwnd, UINT vk, BOOL fDown, int cRepeat, UINT flags)
 
 
 
-Este exemplo chama o método [**IMFPMediaPlayer:: GetState**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-getstate) para obter o estado de reprodução atual (em pausa, parado ou em execução) e pausa ou retomada de acordo.
+Este exemplo chama o método [**IMFPMediaPlayer::GetState**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-getstate) para obter o estado de reprodução atual (pausado, interrompido ou reproduzindo) e pausa ou retoma de acordo.
 
-## <a name="receiving-events-from-the-player"></a>Recebendo eventos do Player
+## <a name="receiving-events-from-the-player"></a>Recebendo eventos do player
 
 O MFPlay usa uma interface de retorno de chamada para enviar eventos para seu aplicativo. Há dois motivos para esse retorno de chamada:
 
--   A reprodução ocorre em um thread separado. Durante a reprodução, determinados eventos podem ocorrer, como chegar ao final do arquivo. O MFPlay usa o retorno de chamada para notificar seu aplicativo do evento.
--   Muitos dos métodos [**IMFPMediaPlayer**](/windows/desktop/api/mfplay/nn-mfplay-imfpmediaplayer) são assíncronos, o que significa que eles retornam antes da conclusão da operação. Os métodos assíncronos permitem que você inicie uma operação do seu thread de interface do usuário que pode levar muito tempo para ser concluída, sem que a interface do usuário seja bloqueada. Após a conclusão da operação, MFPlay sinaliza o retorno de chamada.
+-   A reprodução ocorre em um thread separado. Durante a reprodução, determinados eventos podem ocorrer, como atingir o final do arquivo. O MFPlay usa o retorno de chamada para notificar seu aplicativo do evento.
+-   Muitos dos métodos [**IMFPMediaPlayer**](/windows/desktop/api/mfplay/nn-mfplay-imfpmediaplayer) são assíncronos, o que significa que eles retornam antes da conclusão da operação. Métodos assíncronos permitem que você inicie uma operação do thread da interface do usuário que pode levar muito tempo para ser concluída, sem que isso faça com que sua interface do usuário bloqueie. Após a conclusão da operação, o MFPlay sinaliza o retorno de chamada.
 
-Para receber notificações de retorno de chamada, implemente a interface [**IMFPMediaPlayerCallback**](/windows/desktop/api/mfplay/nn-mfplay-imfpmediaplayercallback) . Essa interface herda **IUnknown** e define um único método, [**OnMediaPlayerEvent**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayercallback-onmediaplayerevent). Para configurar o retorno de chamada, passe um ponteiro para a implementação de **IMFPMediaPlayerCallback** no parâmetro *PCallback* da função [**MFPCreateMediaPlayer**](/windows/desktop/api/mfplay/nf-mfplay-mfpcreatemediaplayer) .
+Para receber notificações de retorno de chamada, implemente a interface [**IMFPMediaPlayerCallback.**](/windows/desktop/api/mfplay/nn-mfplay-imfpmediaplayercallback) Essa interface herda **IUnknown** e define um único método, [**OnMediaPlayerEvent.**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayercallback-onmediaplayerevent) Para configurar o retorno de chamada, passe um ponteiro para a implementação **de IMFPMediaPlayerCallback** no parâmetro *pCallback* da [**função MFPCreateMediaPlayer.**](/windows/desktop/api/mfplay/nf-mfplay-mfpcreatemediaplayer)
 
 Este é o primeiro exemplo deste tutorial, modificado para incluir o retorno de chamada.
 
@@ -189,9 +189,9 @@ if (SUCCEEDED(hr))
 
 
 
-O método [**OnMediaPlayerEvent**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayercallback-onmediaplayerevent) tem um único parâmetro, que é um ponteiro para a estrutura do [**\_ \_ cabeçalho do evento MFP**](/windows/desktop/api/mfplay/ns-mfplay-mfp_event_header) . O membro **eEventType** dessa estrutura informa qual evento ocorreu. Por exemplo, quando a reprodução é iniciada, o MFPlay envia o evento de **\_ reprodução do \_ tipo \_ de evento MFP** .
+O [**método OnMediaPlayerEvent**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayercallback-onmediaplayerevent) tem um único parâmetro, que é um ponteiro para a estrutura DE HEADER DE EVENTO [**\_ \_ MFP.**](/windows/desktop/api/mfplay/ns-mfplay-mfp_event_header) O **membro eEventType** dessa estrutura informa qual evento ocorreu. Por exemplo, quando a reprodução é iniciada, o MFPlay envia o **evento MFP \_ EVENT TYPE \_ \_ PLAY.**
 
-Cada tipo de evento tem uma estrutura de dados correspondente que contém informações para esse evento. Cada uma dessas estruturas começa com uma estrutura de [**\_ \_ cabeçalho de evento MFP**](/windows/desktop/api/mfplay/ns-mfplay-mfp_event_header) . No retorno de chamada, converta o ponteiro do **\_ \_ cabeçalho do evento MFP** na estrutura de dados específica do evento. Por exemplo, se o tipo de evento for o **\_ \_ evento de reprodução da MFP**, a estrutura de dados será o [**\_ \_ evento de reprodução da MFP**](/windows/desktop/api/mfplay/ns-mfplay-mfp_play_event). O código a seguir mostra como tratar esse evento no retorno de chamada.
+Cada tipo de evento tem uma estrutura de dados correspondente que contém informações para esse evento. Cada uma dessas estruturas começa com uma estrutura DE HEADER DE EVENTO [**\_ \_ MFP.**](/windows/desktop/api/mfplay/ns-mfplay-mfp_event_header) No retorno de chamada, caste o **ponteiro \_ DO \_ HEADER DE EVENTO MFP** para a estrutura de dados específica do evento. Por exemplo, se o tipo de evento for **MFP \_ PLAY \_ EVENT**, a estrutura de dados será [**MFP \_ PLAY \_ EVENT**](/windows/desktop/api/mfplay/ns-mfplay-mfp_play_event). O código a seguir mostra como manipular esse evento no retorno de chamada.
 
 
 ```
@@ -222,17 +222,17 @@ void OnPlay(MFP_PLAY_EVENT *pEvent)
 
 
 
-Este exemplo usa o evento de [**\_ \_ \_ evento MFP Get Play**](/windows/desktop/api/mfplay/nf-mfplay-mfp_get_play_event) para converter o ponteiro *pEventHeader* em uma estrutura de [**evento de \_ reprodução \_ de MFP**](/windows/desktop/api/mfplay/ns-mfplay-mfp_play_event) . O **HRESULT** da operação que disparou o evento é armazenado no campo **hrEvent** da estrutura.
+Este exemplo usa o [**evento MFP \_ GET PLAY \_ \_ EVENT**](/windows/desktop/api/mfplay/nf-mfplay-mfp_get_play_event) para lançar o *ponteiro pEventHeader* em uma [**estrutura MFP PLAY \_ \_ EVENT.**](/windows/desktop/api/mfplay/ns-mfplay-mfp_play_event) O **HRESULT** da operação que disparou o evento é armazenado no **campo hrEvent** da estrutura.
 
-Para obter uma lista de todos os tipos de eventos e as estruturas de dados correspondentes, consulte [**\_ \_ tipo de evento MFP**](/windows/desktop/api/mfplay/ne-mfplay-mfp_event_type).
+Para ver uma lista de todos os tipos de evento e as estruturas de dados correspondentes, consulte [**MFP \_ EVENT \_ TYPE**](/windows/desktop/api/mfplay/ne-mfplay-mfp_event_type).
 
-Uma observação sobre Threading: por padrão, MFPlay invoca o retorno de chamada do mesmo thread que chamou [**MFPCreateMediaPlayer**](/windows/desktop/api/mfplay/nf-mfplay-mfpcreatemediaplayer). Esse thread deve ter um loop de mensagem. Como alternativa, você pode passar a **opção MFP sinalizador de \_ \_ retorno de \_ \_ chamada segmentado sem thread** no parâmetro *creationOptions* de **MFPCreateMediaPlayer**. Esse sinalizador faz com que o MFPlay invoque retornos de chamada de um thread separado. Qualquer opção tem implicações para seu aplicativo. A opção padrão significa que o retorno de chamada não pode fazer nada que aguarde em seu loop de mensagem, como aguardar uma ação de interface do usuário, porque isso bloqueará o procedimento de janela. A opção de thread livre significa que você precisa usar seções críticas para proteger quaisquer dados que você acessar em seu retorno de chamada. Na maioria dos casos, a opção padrão é mais simples.
+Uma observação sobre o threading: por padrão, o MFPlay invoca o retorno de chamada do mesmo thread que chamou [**MFPCreateMediaPlayer**](/windows/desktop/api/mfplay/nf-mfplay-mfpcreatemediaplayer). Esse thread deve ter um loop de mensagem. Como alternativa, você pode passar o sinalizador **MFP \_ OPTION FREE \_ \_ THREADED \_ CALLBACK** no parâmetro *creationOptions* **de MFPCreateMediaPlayer**. Esse sinalizador faz com que o MFPlay invoque retornos de chamada de um thread separado. Qualquer opção tem implicações para seu aplicativo. A opção padrão significa que o retorno de chamada não pode fazer nada que aguarda no loop de mensagem, como aguardar uma ação de interface do usuário, pois isso bloqueará o procedimento de janela. A opção de thread livre significa que você precisa usar seções críticas para proteger todos os dados que acessar no retorno de chamada. Na maioria dos casos, a opção padrão é mais simples.
 
-## <a name="getting-information-about-a-media-file"></a>Obtendo informações sobre um arquivo de mídia
+## <a name="getting-information-about-a-media-file"></a>Obter informações sobre um arquivo de mídia
 
-Quando você abre um arquivo de mídia no MFPlay, o Player cria um objeto chamado *item de mídia* que representa o arquivo de mídia. Esse objeto expõe a interface [**IMFPMediaItem**](/windows/desktop/api/mfplay/nn-mfplay-imfpmediaitem) , que pode ser usada para obter informações sobre o arquivo de mídia. Muitas das estruturas de evento MFPlay contêm um ponteiro para o item de mídia atual. Você também pode obter o item de mídia atual chamando [**IMFPMediaPlayer:: GetMediaItem**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-getmediaitem) no Player.
+Quando você abre um arquivo de mídia no MFPlay, o player cria um objeto chamado *um item* de mídia que representa o arquivo de mídia. Esse objeto expõe a interface [**IMFPMediaItem,**](/windows/desktop/api/mfplay/nn-mfplay-imfpmediaitem) que você pode usar para obter informações sobre o arquivo de mídia. Muitas das estruturas de evento MFPlay contêm um ponteiro para o item de mídia atual. Você também pode obter o item de mídia atual chamando [**IMFPMediaPlayer::GetMediaItem**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-getmediaitem) no player.
 
-Dois métodos particularmente úteis são [**IMFPMediaItem:: HasVideo**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaitem-hasvideo) e [**IMFPMediaItem:: HasAudio**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaitem-hasaudio). Esses métodos consultam se a origem da mídia contém vídeo ou áudio.
+Dois métodos particularmente úteis são [**IMFPMediaItem::HasVideo**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaitem-hasvideo) e [**IMFPMediaItem::HasAudio**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaitem-hasaudio). Esses métodos consultam se a fonte de mídia contém vídeo ou áudio.
 
 Por exemplo, o código a seguir testa se o arquivo de mídia atual contém um fluxo de vídeo.
 
@@ -252,11 +252,11 @@ if (SUCCEEDED(hr))
 
 
 
-Se o arquivo de origem contiver um fluxo de vídeo selecionado para reprodução, *bHasVideo* e *bIsSelected* serão definidos como **true**.
+Se o arquivo de origem contiver um fluxo de vídeo selecionado para reprodução, *bHasVideo* e *bIsSelected* serão definidos como **TRUE.**
 
 ## <a name="managing-video-playback"></a>Gerenciando a reprodução de vídeo
 
-Quando o MFPlay reproduz um arquivo de vídeo, ele desenha o vídeo na janela que você especificou na função [**MFPCreateMediaPlayer**](/windows/desktop/api/mfplay/nf-mfplay-mfpcreatemediaplayer) . Isso ocorre em um thread separado de Propriedade do pipeline de reprodução de Microsoft Media Foundation. Para a maior parte, seu aplicativo não precisa gerenciar esse processo. No entanto, há duas situações em que o aplicativo deve notificar o MFPlay para atualizar o vídeo.
+Quando o MFPlay reproduz um arquivo de vídeo, ele desenha o vídeo na janela que você especificou na [**função MFPCreateMediaPlayer.**](/windows/desktop/api/mfplay/nf-mfplay-mfpcreatemediaplayer) Isso ocorre em um thread separado de Propriedade do pipeline de reprodução de Microsoft Media Foundation. Para a maior parte, seu aplicativo não precisa gerenciar esse processo. No entanto, há duas situações em que o aplicativo deve notificar o MFPlay para atualizar o vídeo.
 
 -   Se a reprodução for pausada ou interrompida, MFPlay deverá ser notificado sempre que a janela de vídeo do aplicativo receber uma mensagem de pintura do WM \_ . Isso permite que o MFPlay repinte a janela.
 -   Se a janela for redimensionada, MFPlay deverá ser notificado para que possa dimensionar o vídeo para corresponder ao novo tamanho da janela.

@@ -4,12 +4,12 @@ ms.assetid: 8eadbd42-3538-412e-9bf8-b2355d23437e
 title: Predicados de escopo e diretório
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2418b2149a5bf05bd000460c787b7f967856c5c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f221ba4048f1ab7f5096321cc00aed209acb5ca3e5616e6e6a4fbbc516dfc28b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118462465"
 ---
 # <a name="scope-and-directory-predicates"></a>Predicados de escopo e diretório
 
@@ -22,7 +22,7 @@ Predicados de profundidade de pasta controlam o escopo de uma pesquisa especific
 
 
 
-O predicado é seguido por um sinal de igual. O caminho é revelado entre aspas simples e deve começar com um protocolo e dois-pontos (por exemplo,, `file:` `mapi:` ou `csc:` ). O predicado de escopo executa uma passagem profunda do caminho, incluindo todas as subpastas, enquanto o predicado de diretório faz uma passagem superficial apenas da pasta especificada. Assim como outras restrições de linguagem SQL (SQL), você pode especificar mais de uma restrição de profundidade de pasta em uma única consulta.
+O predicado é seguido por um sinal de igual. O caminho é revelado entre aspas simples e deve começar com um protocolo e dois-pontos (por exemplo,, `file:` `mapi:` ou `csc:` ). O predicado de escopo executa uma passagem profunda do caminho, incluindo todas as subpastas, enquanto o predicado de diretório faz uma passagem superficial apenas da pasta especificada. assim como outras restrições de linguagem SQL (SQL), você pode especificar mais de uma restrição de profundidade de pasta em uma única consulta.
 
 Para consultar o catálogo local de um computador remoto, inclua o nome do computador antes do catálogo e um caminho UNC (Convenção de nomenclatura universal) no computador remoto na cláusula SCOPE ou DIRECTORY.
 

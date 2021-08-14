@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc077fe793a523b41974280ada7e54b82335d733
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b03901c7caeec4107a00ac8f3ba4f18af8f281ce152612a62a82de61812262bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105811227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301846"
 ---
 # <a name="local-policy-flags-attribute"></a>Atributo local-sinalizadores de política
 
@@ -58,7 +58,7 @@ Sinalizadores que determinam onde um computador obtém sua política. Referênci
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| É de valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
@@ -79,7 +79,7 @@ Sinalizadores que determinam onde um computador obtém sua política. Referênci
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| É de valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
@@ -100,7 +100,7 @@ Sinalizadores que determinam onde um computador obtém sua política. Referênci
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| É de valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
@@ -121,7 +121,7 @@ Sinalizadores que determinam onde um computador obtém sua política. Referênci
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| É de valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
@@ -142,7 +142,7 @@ Sinalizadores que determinam onde um computador obtém sua política. Referênci
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| É de valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
@@ -163,7 +163,7 @@ Sinalizadores que determinam onde um computador obtém sua política. Referênci
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| É de valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
