@@ -1,9 +1,9 @@
 ---
-title: EQUALIZERSETTINGS. bypass
-description: O atributo bypass especifica ou recupera um valor que indica se o filtro de equalizador é ignorado no gráfico de filtro.
+title: EQUALIZERSETTINGS.bypass
+description: O atributo bypass especifica ou recupera um valor que indica se o filtro do equalizador é ignorado no grafo de filtro.
 ms.assetid: b189a6f1-e0d0-4cfa-9a99-73d3ccd705e0
 keywords:
-- EQUALIZERSETTINGS. bypass do Windows Media Player
+- EQUALIZERSETTINGS.bypass Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b78fe6f4ce7608ff02ecb5b125b00171610ec112
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 636995cd62c83f46f97ea7371257a5fdfc8f1c79fec1873b229f80d92be6335d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117748934"
 ---
-# <a name="equalizersettingsbypass"></a>EQUALIZERSETTINGS. bypass
+# <a name="equalizersettingsbypass"></a>EQUALIZERSETTINGS.bypass
 
-O atributo **bypass** especifica ou recupera um valor que indica se o filtro de equalizador é ignorado no gráfico de filtro.
+O **atributo bypass** especifica ou recupera um valor que indica se o filtro do equalizador é ignorado no grafo de filtro.
 
 ``` syntax
         elementID.bypass
@@ -29,14 +29,14 @@ O atributo **bypass** especifica ou recupera um valor que indica se o filtro de 
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **booliano** de leitura/gravação.
+Esse atributo é um booliana **de leitura/gravação.**
 
 
 
 | Valor | Descrição                                |
 |-------|--------------------------------------------|
 | true  | Padrão. O filtro do equalizador é ignorado. |
-| false | O filtro do equalizador é usado.              |
+| false | O filtro de equalizador é usado.              |
 
 
 
@@ -44,7 +44,7 @@ Esse atributo é um **booliano** de leitura/gravação.
 
 ## <a name="remarks"></a>Comentários
 
-Se esse atributo não for especificado, o valor anterior será retido.
+Se esse atributo não for especificado, o valor anterior será mantido.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ Se esse atributo não for especificado, o valor anterior será retido.
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Recupera o estado de chave de uma chave.
+description: Recupera o estado da chave de uma chave.
 ms.assetid: 4AEB732D-274E-42BB-AA97-9E4D30B81338
-title: Método iskeypressed da classe Msvm_Keyboard
+title: Método IsKeyPressed da classe Msvm_Keyboard classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 44af7a3dc82c0d4d20a2e4c6aff21f7a47837490
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bb8b4e2da0a6f1cd3c30e3d65404ecf308c71e88483e322193497216586b20b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118392439"
 ---
-# <a name="iskeypressed-method-of-the-msvm_keyboard-class"></a>Método iskeypressed da \_ classe Keyboard Msvm
+# <a name="iskeypressed-method-of-the-msvm_keyboard-class"></a>Método IsKeyPressed da classe Teclado Msvm \_
 
-Recupera o estado de chave de uma chave.
+Recupera o estado da chave de uma chave.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,36 +40,36 @@ uint32 IsKeyPressed(
 
 <dl> <dt>
 
-*KeyCode* \[ no\]
+*keyCode* \[ Em\]
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-O código de chave virtual da chave a ser consultada. Para obter a lista de códigos de chave virtual, consulte [**códigos de chave virtual**](../inputdev/virtual-key-codes.md).
+O código de chave virtual da chave a ser consultada. Para ver a lista de códigos de chave virtual, consulte [**Códigos de chave virtual.**](../inputdev/virtual-key-codes.md)
 
 </dd> <dt>
 
-*keyState* \[ fora\]
+*keyState* \[ out\]
 </dt> <dd>
 
-Tipo: **booliano**
+Tipo: **booliana**
 
-O estado de inatividade atual da chave. Um valor **verdadeiro** significa que a chave está inoperante.
+O estado down atual da chave. Um **valor True** significa que a chave está inobada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Um valor de retorno igual A zero indica êxito. Um valor diferente de zero indica uma falha ao consultar o estado da chave.
+Um valor de retorno de zero indica êxito. Um valor não zero indica uma falha ao consultar o estado da chave.
 
 <dl> <dt>
 
 **Concluído sem erro** (0)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
 **Falha** (32768)
@@ -81,16 +81,16 @@ Um valor de retorno igual A zero indica êxito. Um valor diferente de zero indic
 **Sem suporte** (32770)
 </dt> <dt>
 
-O **status é desconhecido** (32771)
+**O status é desconhecido** (32771)
 </dt> <dt>
 
-**Tempo limite** (32772)
+**Tempoout** (32772)
 </dt> <dt>
 
 **Parâmetro inválido** (32773)
 </dt> <dt>
 
-O **sistema está em uso** (32774)
+**O sistema está em usado** (32774)
 </dt> <dt>
 
 **Estado inválido para esta operação** (32775)
@@ -99,17 +99,17 @@ O **sistema está em uso** (32774)
 **Tipo de dados incorreto** (32776)
 </dt> <dt>
 
-O **sistema não está disponível** (32777)
+**O sistema não está disponível** (32777)
 </dt> <dt>
 
-**Memória insuficiente** (32778)
+**Memória sem memória** (32778)
 </dt> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O método **Iskeypressd** sempre retornará **false** para o **\_ menu VK** (18), o **\_ controle VK** (17) e o **VK \_ Shift** (16) porque eles não são chaves reais em um teclado. Esses códigos de chave virtual sempre são mapeados para **VK \_ LMENU** (164), **VK \_ LCONTROL** (162) e **VK \_ LSHIFT** (160), respectivamente, pelos métodos [**PressKey**](presskey-msvm-keyboard.md) e [**ReleaseKey**](releasekey-msvm-keyboard.md) .
+O **método IsKeyPressed** sempre retornará **False** para o **\_ MENU da VK** (18), CONTROLE **de VK \_** (17) e **SHIFT da VK \_** (16) porque essas não são chaves reais em um teclado. Esses códigos de chave virtual são sempre mapeados para **\_ LMENU** da VK (164), **VK \_ LCONTROL** (162) e **VK \_ LSHIFT** (160), respectivamente, pelos métodos [**PressKey**](presskey-msvm-keyboard.md) e [**ReleaseKey.**](releasekey-msvm-keyboard.md)
 
-O acesso à classe de [**\_ teclado Msvm**](msvm-keyboard.md) pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à [**classe \_ Teclado Msvm**](msvm-keyboard.md) pode ser restrito pela Filtragem de UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -117,10 +117,10 @@ O acesso à classe de [**\_ teclado Msvm**](msvm-keyboard.md) pode ser restringi
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -129,7 +129,7 @@ O acesso à classe de [**\_ teclado Msvm**](msvm-keyboard.md) pode ser restringi
 
 <dl> <dt>
 
-[**\_Teclado Msvm**](msvm-keyboard.md)
+[**Teclado Msvm \_**](msvm-keyboard.md)
 </dt> <dt>
 
 [**Códigos de chave virtual**](../inputdev/virtual-key-codes.md)

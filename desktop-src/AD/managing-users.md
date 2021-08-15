@@ -9,12 +9,12 @@ keywords:
 - usuários do AD, gerenciando usuários
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8154dc9d062b86d10b0df6418b5b4cbb79b44d2
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 0aa4c780a943d45833c3af5418337fe4d27584e2c944e19ff247479f3b29513d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118186682"
 ---
 # <a name="managing-users"></a>Gerenciando usuários
 

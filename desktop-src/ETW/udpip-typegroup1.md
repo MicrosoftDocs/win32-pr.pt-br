@@ -1,7 +1,7 @@
 ---
-description: Essa classe é a classe de tipo de evento para eventos de envio e recebimento IPv4 de UDP/IP. A sintaxe a seguir é simplificada do código MOF.
+description: Essa classe é a classe de tipo de evento para eventos de envio e recebimento UDP/IP IPv4. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: f04e0b4c-6a2b-4452-9bdf-38c08b487863
-title: Classe UdpIp_TypeGroup1
+title: UdpIp_TypeGroup1 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,16 +20,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 8d977841cbfe9a88d14056d77a9b943f4d5d4a3e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7a34d459cd4d9cefc4abbf08a97367309b4d90b31c63148159f57fccf6646c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118393645"
 ---
-# <a name="udpip_typegroup1-class"></a>\_Classe UdpIp TypeGroup1
+# <a name="udpip_typegroup1-class"></a>Classe \_ TypeGroup1 UdpIp
 
-Essa classe é a classe de tipo de evento para eventos de envio e recebimento IPv4 de UDP/IP.
+Essa classe é a classe de tipo de evento para eventos de envio e recebimento UDP/IP IPv4.
 
 A sintaxe a seguir é simplificada do código MOF.
 
@@ -52,33 +52,33 @@ class UdpIp_TypeGroup1 : UdpIp
 
 ## <a name="members"></a>Membros
 
-A classe **UdpIp \_ TypeGroup1** tem estes tipos de membros:
+A **classe \_ TypeGroup1 UdpIp** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **UdpIp \_ TypeGroup1** tem essas propriedades.
+A **classe \_ TypeGroup1 UdpIp** tem essas propriedades.
 
 <dl> <dt>
 
-CONNID
+connid
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (8), ponteiro
+Qualificadores: WmiDataId(8), Pointer
 </dt> </dl>
 
 Um identificador de conexão exclusivo para correlacionar eventos pertencentes à mesma conexão.
 
 </dd> <dt>
 
-daddr
+paidr
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **objeto**
@@ -87,14 +87,14 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (3), extensão ("IPAddrV4")
+Qualificadores: WmiDataId(3), Extension("IPAddrV4")
 </dt> </dl>
 
 Endereço IP de destino.
 
 </dd> <dt>
 
-dport
+Dport
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **objeto**
@@ -103,7 +103,7 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (5), extensão ("porta")
+Qualificadores: WmiDataId(5), Extension("Port")
 </dt> </dl>
 
 Número da porta de destino.
@@ -113,13 +113,13 @@ Número da porta de destino.
 PID
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (1)
+Qualificadores: WmiDataId(1)
 </dt> </dl>
 
 Identificador do processo associado à solicitação.
@@ -135,7 +135,7 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (4), extensão ("IPAddrV4")
+Qualificadores: WmiDataId(4), Extension("IPAddrV4")
 </dt> </dl>
 
 Endereço IP de origem.
@@ -145,36 +145,36 @@ Endereço IP de origem.
 seqnum
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (7)
+Qualificadores: WmiDataId(7)
 </dt> </dl>
 
-Número de sequência.
+Número da sequência.
 
 </dd> <dt>
 
 tamanho
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (2)
+Qualificadores: WmiDataId(2)
 </dt> </dl>
 
 Tamanho do pacote.
 
 </dd> <dt>
 
-esporte
+Esporte
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **objeto**
@@ -183,7 +183,7 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (6), extensão ("porta")
+Qualificadores: WmiDataId(6), Extension("Port")
 </dt> </dl>
 
 Número da porta de origem.
@@ -196,8 +196,8 @@ Número da porta de origem.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

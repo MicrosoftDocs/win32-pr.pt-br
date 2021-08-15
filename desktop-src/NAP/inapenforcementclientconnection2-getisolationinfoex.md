@@ -1,11 +1,11 @@
 ---
-title: Método INapEnforcementClientConnection2 GetIsolationInfoEx (NapEnforcementClient. h)
+title: Método INapEnforcementClientConnection2 GetIsolationInfoEx (NapEnforcementClient.h)
 description: É usado para obter informações de isolamento sobre o cliente.
 ms.assetid: ebacd056-5ab8-4096-821c-8f2987d853c4
 keywords:
-- Método GetIsolationInfoEx NAP
+- Nap do método GetIsolationInfoEx
 - Método GetIsolationInfoEx NAP, interface INapEnforcementClientConnection2
-- INapEnforcementClientConnection2 interface NAP, método GetIsolationInfoEx
+- INapEnforcementClientConnection2 interface NAP , método GetIsolationInfoEx
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6586dd5fc277e62d4478e685f49ac132e744bcc6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: eb89cc4a5fed046173ebdef2d5ed38574e52648fddd5cb357d8726c07581f51b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104456023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118368049"
 ---
-# <a name="inapenforcementclientconnection2getisolationinfoex-method"></a>Método INapEnforcementClientConnection2:: GetIsolationInfoEx
+# <a name="inapenforcementclientconnection2getisolationinfoex-method"></a>Método INapEnforcementClientConnection2::GetIsolationInfoEx
 
 > [!Note]  
-> A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
+> A plataforma de Proteção de Acesso à Rede não está disponível a partir do Windows 10
 
  
 
-O método **INapEnforcementClientConnection2:: GetIsolationInfoEx** é usado para obter informações de isolamento sobre o cliente.
+O **método INapEnforcementClientConnection2::GetIsolationInfoEx** é usado para obter informações de isolamento sobre o cliente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,24 +47,24 @@ HRESULT GetIsolationInfoEx(
 
 <dl> <dt>
 
-*isolationInfo* \[ fora\]
+*isolationInfo* \[ out\]
 </dt> <dd>
 
 Um ponteiro para um ponteiro para uma estrutura [**IsolationInfoEx**](/windows/win32/api/naptypes/ns-naptypes-isolationinfoex) que contém a conectividade e as informações de estado estendido do cliente.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Outros códigos de erro específicos de COM também podem ser retornados.
+Outros códigos de erro específicos do COM também podem ser retornados.
 
 
 
 | Código de retorno                                                                                     | Descrição                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>           | Operação bem-sucedida.<br/>                                    |
+| <dl> <dt>**S \_ OK**</dt> </dl>           | Êxito na operação.<br/>                                    |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Erro de permissões, acesso negado.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | O limite de recursos do sistema não pôde executar a operação.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite de recursos do sistema, não foi possível executar a operação.<br/> |
 
 
 
@@ -72,9 +72,9 @@ Outros códigos de erro específicos de COM também podem ser retornados.
 
 ## <a name="remarks"></a>Comentários
 
-Essas informações são definidas pelo NapAgent após o processamento de um [**SoHResponse**](/windows/win32/api/naptypes/ns-naptypes-soh) e não devem ser definidas pelo aplicador.
+Essas informações são definidas pelo NapAgent após o processamento [**de um SoHResponse**](/windows/win32/api/naptypes/ns-naptypes-soh) e não devem ser definidas pelo executor.
 
-O SHA deve liberar a estrutura [**IsolationInfoEx**](/windows/win32/api/naptypes/ns-naptypes-isolationinfoex) chamando [**FreeIsolationInfoEx**](freeisolationinfoex.md).
+O SHA deve liberar a estrutura [**IsolationInfoEx**](/windows/win32/api/naptypes/ns-naptypes-isolationinfoex) chamando [**FreeIsolationInfoEx.**](freeisolationinfoex.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,10 +82,10 @@ O SHA deve liberar a estrutura [**IsolationInfoEx**](/windows/win32/api/naptypes
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                |
-| parâmetro<br/>                   | <dl> <dt>NapEnforcementClient. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>NapEnforcementClient. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                      |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                |
+| Cabeçalho<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

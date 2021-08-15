@@ -3,9 +3,9 @@ title: Evento Player. MouseMove
 description: O evento MouseMove ocorre quando o ponteiro do mouse é movido. | Evento Player. MouseMove
 ms.assetid: 026928a3-25a6-4e67-837a-df71c05e49ee
 keywords:
-- Evento MouseMove Windows Media Player
-- Evento MouseMove Windows Media Player, classe Player
-- Classe Player Windows Media Player, evento MouseMove
+- Windows Media Player de evento MouseMove
+- Windows Media Player de evento MouseMove, classe de jogador
+- classe Player Windows Media Player, evento MouseMove
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a536609ba5e3095fed9826b071084491a81b385f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fb864e2a8bf686bd39f2d44ba8f5558516d72034f606579a79c76a5d86ab3990
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105765644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118338092"
 ---
 # <a name="playermousemove-event"></a>Evento Player. MouseMove
 
@@ -73,13 +73,13 @@ Player.MouseMove(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-O valor dos parâmetros de evento é especificado pelo Windows Media Player e pode ser acessado ou transmitido para um método em um arquivo JScript importado usando o nome de parâmetro fornecido. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
+o valor dos parâmetros de evento é especificado por Windows Media Player e pode ser acessado ou passado para um método em um arquivo de JScript importado usando o nome de parâmetro fornecido. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
 
 **Windows Media Player 10 Mobile:** Não há suporte para esse evento.
 

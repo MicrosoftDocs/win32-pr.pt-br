@@ -4,12 +4,12 @@ ms.assetid: ad996a03-e94e-4743-90a2-aa390984a231
 title: Impondo níveis de gerenciamento de pais
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7548721613c36369aaa34e5b5a62b665100e9495
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 58bb9613af2bafb353df15bd84849724890faeb5c1191701cf2599522fd26fe7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117819929"
 ---
 # <a name="enforcing-parental-management-levels"></a>Impondo níveis de gerenciamento de pais
 

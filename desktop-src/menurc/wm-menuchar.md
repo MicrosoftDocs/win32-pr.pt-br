@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_MENUCHAR (WinUser. h)
-description: Enviado quando um menu está ativo e o usuário pressiona uma tecla que não corresponde a nenhum mnemônico ou tecla de aceleração. Essa mensagem é enviada para a janela que possui o menu.
+title: WM_MENUCHAR mensagem (Winuser.h)
+description: Enviado quando um menu está ativo e o usuário pressiona uma tecla que não corresponde a nenhuma tecla mnemônica ou de acelerador. Essa mensagem é enviada para a janela que possui o menu.
 ms.assetid: de6c91bb-80fd-44b2-8d96-d016477a6547
 keywords:
-- WM_MENUCHAR menus de mensagens e outros recursos
+- WM_MENUCHAR menus de mensagem e outros recursos
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a278e4a1b4333631741a6a542318a8a55e40b512
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5d276418636857fb7ce76159111b8e8b24519235823225fccb68fa1523b4137d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117869605"
 ---
-# <a name="wm_menuchar-message"></a>Mensagem do WM \_ MENUCHAR
+# <a name="wm_menuchar-message"></a>Mensagem \_ WM MENUCHAR
 
-Enviado quando um menu está ativo e o usuário pressiona uma tecla que não corresponde a nenhum mnemônico ou tecla de aceleração. Essa mensagem é enviada para a janela que possui o menu.
+Enviado quando um menu está ativo e o usuário pressiona uma tecla que não corresponde a nenhuma tecla mnemônica ou de acelerador. Essa mensagem é enviada para a janela que possui o menu.
 
 
 ```C++
@@ -39,16 +39,16 @@ Enviado quando um menu está ativo e o usuário pressiona uma tecla que não cor
 *wParam* 
 </dt> <dd>
 
-A palavra de ordem inferior Especifica o código de caractere que corresponde à chave que o usuário pressionou.
+A palavra de ordem baixa especifica o código de caractere que corresponde à chave pressionada pelo usuário.
 
-A palavra de ordem superior especifica o tipo de menu ativo. Esse parâmetro pode usar um dos valores a seguir.
+A palavra de ordem alta especifica o tipo de menu ativo. Esse parâmetro pode usar um dos valores a seguir.
 
 
 
 | Valor                                                                                                                                                                                                                 | Significado                                                 |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| <span id="MF_POPUP"></span><span id="mf_popup"></span><dl> <dt>**MF \_ 0x00000010L pop-up**</dt> <dt></dt> </dl>       | Um menu suspenso, submenu ou menu de atalho.<br/> |
-| <span id="MF_SYSMENU"></span><span id="mf_sysmenu"></span><dl> <dt>**MF \_ SYSMENU**</dt> <dt>0x00002000L</dt> </dl> | O menu janela.<br/>                             |
+| <span id="MF_POPUP"></span><span id="mf_popup"></span><dl> <dt>**MF \_ POPUP**</dt> <dt>0x00000010L</dt> </dl>       | Um menu suspenso, submenu ou menu de atalho.<br/> |
+| <span id="MF_SYSMENU"></span><span id="mf_sysmenu"></span><dl> <dt>**MF \_ SYSMENU**</dt> <dt>0x00002000L</dt> </dl> | O menu da janela.<br/>                             |
 
 
 
@@ -59,22 +59,22 @@ A palavra de ordem superior especifica o tipo de menu ativo. Esse parâmetro pod
 *lParam* 
 </dt> <dd>
 
-Um identificador para o menu ativo.
+Um alça para o menu ativo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Um aplicativo que processa essa mensagem deve retornar um dos valores a seguir na palavra de ordem superior do valor de retorno.
+Um aplicativo que processa essa mensagem deve retornar um dos valores a seguir na palavra de ordem alta do valor de retorno.
 
 
 
-| Código/valor de retorno                                                                                                                                  | Descrição                                                                                                                                                                              |
+| Valor/código de retorno                                                                                                                                  | Descrição                                                                                                                                                                              |
 |----------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**MNC \_ PERTO**</dt> de <dt>1</dt> </dl>   | Informa ao sistema que ele deve fechar o menu ativo.<br/>                                                                                                                      |
-| <dl> <dt>**MNC \_ EXECUTAR**</dt> <dt>2</dt> </dl> | Informa ao sistema que ele deve escolher o item especificado na palavra de ordem inferior do valor de retorno. A janela do proprietário recebe uma mensagem de [**\_ comando do WM**](wm-command.md) .<br/> |
-| <dl> <dt>**MNC \_ IGNORAR**</dt> <dt>0</dt> </dl>  | Informa ao sistema que ele deve descartar o caractere que o usuário pressionou e criar um bipe curto no alto-falante do sistema.<br/>                                                       |
-| <dl> <dt>**MNC \_ Selecione**</dt> <dt>3</dt> </dl>  | Informa ao sistema que ele deve selecionar o item especificado na palavra de ordem inferior do valor de retorno. <br/>                                                                       |
+| <dl> <dt>**MNC \_ CLOSE**</dt> <dt>1</dt> </dl>   | Informa ao sistema que ele deve fechar o menu ativo.<br/>                                                                                                                      |
+| <dl> <dt>**MNC \_ EXECUTE**</dt> <dt>2</dt> </dl> | Informa ao sistema que ele deve escolher o item especificado na palavra de ordem baixa do valor de retorno. A janela proprietário recebe uma mensagem [**WM \_ COMMAND.**](wm-command.md)<br/> |
+| <dl> <dt>**MNC \_ IGNORAR**</dt> <dt>0</dt> </dl>  | Informa ao sistema que ele deve descartar o caractere pressionado pelo usuário e criar um aviso curto no alto-falante do sistema.<br/>                                                       |
+| <dl> <dt>**MNC \_ SELECT**</dt> <dt>3</dt> </dl>  | Informa ao sistema que ele deve selecionar o item especificado na palavra de ordem baixa do valor de retorno. <br/>                                                                       |
 
 
 
@@ -82,7 +82,7 @@ Um aplicativo que processa essa mensagem deve retornar um dos valores a seguir n
 
 ## <a name="remarks"></a>Comentários
 
-A palavra de ordem inferior será ignorada se a palavra de ordem superior contiver 0 ou 1.
+A palavra de ordem baixa será ignorada se a palavra de ordem alta contiver 0 ou 1.
 
 Um aplicativo deve processar essa mensagem quando um acelerador é usado para selecionar um item de menu que exibe um bitmap.
 
@@ -94,7 +94,7 @@ Um aplicativo deve processar essa mensagem quando um acelerador é usado para se
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -105,13 +105,13 @@ Um aplicativo deve processar essa mensagem quando um acelerador é usado para se
 **Referência**
 </dt> <dt>
 
-[**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))
+[**Hiword**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))
 </dt> <dt>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
+[**Loword**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Aceleradores de teclado](keyboard-accelerators.md)

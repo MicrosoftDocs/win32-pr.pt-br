@@ -1,7 +1,7 @@
 ---
 description: Evento que ocorre quando uma transferência de dados é concluída com êxito.
 ms.assetid: 6110867b-21e2-48ab-97ad-0e084a0ccf07
-title: Evento WIA. OnTransferComplete
+title: Evento Wia.OnTransferComplete
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: d33685e0e8fe233f96e9841359e56f759032d17c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9095302a2f3fe75e1939ebb979ec4aad4d87b0462a5b40997e5523e7313d98e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169547"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118209270"
 ---
-# <a name="wiaontransfercomplete-event"></a>Evento WIA. OnTransferComplete
+# <a name="wiaontransfercomplete-event"></a>Evento Wia.OnTransferComplete
 
 Evento que ocorre quando uma transferência de dados é concluída com êxito.
 
@@ -43,7 +43,7 @@ Wia.OnTransferComplete(
 *Item* 
 </dt> <dd>
 
-O objeto [**Item**](-wia-item.md) transferido.
+O [**objeto Item**](-wia-item.md) transferido.
 
 </dd> <dt>
 
@@ -54,15 +54,15 @@ O caminho e o nome do arquivo da imagem transferida.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-O WIA notifica o script ou o aplicativo quando uma transferência de dados, imagem ou som é concluída com êxito. Implemente a sub-rotina **objWia** \_ **OnTransferComplete ()** para permitir que seu script ou aplicativo responda à conclusão da transferência de dados.
+O WIA notifica o script ou o aplicativo quando uma transferência de dados, imagem ou som é concluída com êxito. Implemente a sub-rotina **objWia** \_ **OnTransferComplete()** para permitir que seu script ou aplicativo responda à conclusão da transferência de dados.
 
-Por exemplo, talvez você queira que um script exiba uma imagem depois que ela for transferida.
+Por exemplo, talvez você queira um script para exibir uma imagem depois que ela for transferida.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,9 +70,9 @@ Por exemplo, talvez você queira que um script exiba uma imagem depois que ela f
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Wiascr.dll (versão 4,90 ou posterior)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Wiascr.dll (versão 4.90 ou posterior)</dt> </dl> |
 
 
 

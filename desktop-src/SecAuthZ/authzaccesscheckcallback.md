@@ -12,12 +12,12 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 82e100092dd7c59e9cc689aa8723365fae8bed29
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5079b740d268174715b6c944787bb687cd9b8b1ecb12a27c04eeb26c79811034
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117784152"
 ---
 # <a name="authzaccesscheckcallback-callback-function"></a>Função de retorno de chamada AuthzAccessCheckCallback
 
@@ -71,7 +71,7 @@ Os resultados serão **verdadeiros** se a lógica determinar que a ACE é aplic�
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, a função retornará **true**.
 
@@ -89,9 +89,9 @@ Para obter mais informações, consulte as visões gerais [sobre como o AccessCh
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                   |
-| Redistribuível<br/>          | Pacote de ferramentas de administração do Windows Server 2003 no Windows XP<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                            |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                   |
+| Redistribuível<br/>          | Windows pacote de ferramentas de administração do Server 2003 no Windows XP<br/> |
 
 
 

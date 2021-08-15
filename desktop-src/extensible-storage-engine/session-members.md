@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.sess
 ms:contentKeyID: 55104004
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 05619d765b5a85a7f5330936ceb88266cced3cb0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 77a82e2792b984aebfc72c68c15d8c356a4176d6cd9c228064a102346d70bb29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118071752"
 ---
 # <a name="session-members"></a>Membros da sessão 
 
@@ -100,7 +100,7 @@ Parte superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="dn351128(v=exchg.10).md">Completo</a></td>
+<td><a href="dn351128(v=exchg.10).md">End</a></td>
 <td>Encerrar a sessão.</td>
 </tr>
 <tr class="odd">

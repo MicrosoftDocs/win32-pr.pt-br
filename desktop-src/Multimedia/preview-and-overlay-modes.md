@@ -11,12 +11,12 @@ keywords:
 - macro capPreviewScale
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af4dc293587160d950856fccb15709a11e9533bf
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9359b1380c5d6efe049bc4bea52a08a92f880af5d35558f4e65e21070f20c0cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118372365"
 ---
 # <a name="preview-and-overlay-modes"></a>Modos de visualização e sobreposição
 
@@ -36,9 +36,9 @@ O modo de sobreposição é uma função de hardware que exibe o conteúdo do bu
 
 Você também pode definir a posição de rolagem do quadro de vídeo dentro da área do cliente da janela de captura para o modo de visualização ou o modo de sobreposição enviando a mensagem de [**\_ \_ \_ rolagem set do WM Cap**](wm-cap-set-scroll.md) (ou a macro [**capSetScrollPos**](/windows/desktop/api/Vfw/nf-vfw-capsetscrollpos) ) para uma janela de captura.
 
- 
+ 
 
- 
+ 
 
 
 

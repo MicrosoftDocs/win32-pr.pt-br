@@ -1,6 +1,6 @@
 ---
 title: atributo oculto
-description: O atributo \ Hidden \ indica que o item existe, mas não deve ser exibido em um navegador orientado ao usuário.
+description: O atributo \ hidden\ indica que o item existe, mas não deve ser exibido em um navegador orientado pelo usuário.
 ms.assetid: bf1f9270-fb93-4421-804e-d56e2c863bbd
 keywords:
 - atributo oculto MIDL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1718351ef84199b60ba720ed2f3569cfa78a0a50
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: a907a608376d9ad13f97427bd7a941b99221a0f14a6fa9fe35944ced10770b66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105750021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118384041"
 ---
 # <a name="hidden-attribute"></a>atributo oculto
 
-O atributo **\[ Hidden \]** indica que o item existe, mas não deve ser exibido em um navegador orientado ao usuário.
+O **\[ atributo \]** oculto indica que o item existe, mas não deve ser exibido em um navegador orientado pelo usuário.
 
 ``` syntax
 [
@@ -47,24 +47,24 @@ Zero ou mais atributos MIDL opcionais.
 
 </dd> <dt>
 
-*elementos* 
+*Elemento* 
 </dt> <dd>
 
-Uma das seguintes diretivas: [**coclass**](coclass.md), [**dispinterface**](dispinterface.md), [**interface**](interface.md)ou [**library**](library.md).
+Uma das seguintes diretivas: [**coclass**](coclass.md), [**dispinterface,**](dispinterface.md) [**interface**](interface.md)ou [**biblioteca**](library.md).
 
 </dd> <dt>
 
-*nome do elemento* 
+*element-name* 
 </dt> <dd>
 
 O nome que outros componentes de software podem usar para delinear o elemento atual.
 
 </dd> <dt>
 
-*definições* 
+*Definições* 
 </dt> <dd>
 
-Especifica as instruções que compõem a definição do elemento.
+Especifica instruções que comem a definição do elemento.
 
 </dd> <dt>
 
@@ -75,14 +75,14 @@ Tipo de retorno da função.
 
 </dd> <dt>
 
-*nome da função* 
+*Nome da função* 
 </dt> <dd>
 
 Nome usado para invocar a função.
 
 </dd> <dt>
 
-*opcional-lista de parâmetros* 
+*optional-parameter-list* 
 </dt> <dd>
 
 Zero ou mais parâmetros de função.
@@ -91,9 +91,9 @@ Zero ou mais parâmetros de função.
 
 ## <a name="remarks"></a>Comentários
 
-O atributo **\[ Hidden \]** permite remover membros de sua interface (blindando-os de uso adicional) enquanto mantém a compatibilidade com o código existente. Você pode usar o atributo **\[ \] Hidden** em Propriedades, métodos e as instruções [**coclass**](coclass.md), [**dispinterface**](dispinterface.md), [**interface**](interface.md)e [**library**](library.md) .
+O **\[ atributo \]** oculto permite que você remova membros da interface (blindando-os de uso posterior), mantendo a compatibilidade com o código existente. Você pode usar o **\[ atributo \] oculto** em propriedades, métodos e as instruções de [**coclasse**](coclass.md), [**dispinterface,**](dispinterface.md) [**interface**](interface.md)e [**biblioteca.**](library.md)
 
-Quando especificado para uma biblioteca, o atributo **\[ Hidden \]** impede que toda a biblioteca seja exibida. Esse uso destina-se ao uso com controles. Os hosts precisam criar uma nova biblioteca de tipos que encapsula o controle com propriedades estendidas.
+Quando especificado para uma biblioteca, o **\[ atributo oculto \]** impede que toda a biblioteca seja exibida. Esse uso destina-se ao uso com controles . Os hosts precisam criar uma nova biblioteca de tipos que envolva o controle com propriedades estendidas.
 
 ### <a name="flags"></a>Flags
 
@@ -120,7 +120,7 @@ library HiddenLib
 
 <dl> <dt>
 
-[TYPEFLAGS](/windows/win32/api/oaidl/ne-oaidl-typeflags)
+[Typeflags](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> <dt>
 
 [**dispinterface**](dispinterface.md)
@@ -132,18 +132,18 @@ library HiddenLib
 [Gerando uma biblioteca de tipos com MIDL](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[**interface**](interface.md)
+[**Interface**](interface.md)
 </dt> <dt>
 
-[**biblioteca**](library.md)
+[**Biblioteca**](library.md)
 </dt> <dt>
 
-[Sintaxe do arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxe de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [Exemplo de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

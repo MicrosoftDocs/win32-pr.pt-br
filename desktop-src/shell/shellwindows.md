@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 6a3a782dd4e29d56f5edc7a869004ac7b3fb7ccd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b558bf4df33e84fabae7e70c1722d78647514a52df8f62d05f8ecba8916c488a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104967965"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117857085"
 ---
 # <a name="shellwindows-object"></a>Objeto ShellWindows
 
@@ -52,9 +52,9 @@ O objeto **ShellWindows** tem essas propriedades.
 
 
 
-| Propriedade                                       | Tipo de acesso          | Description                                                |
+| Propriedade                                       | Tipo de acesso          | Descrição                                                |
 |:-----------------------------------------------|:---------------------|:-----------------------------------------------------------|
-| [**Contar**](shellwindows-count.md)<br/> | Somente leitura<br/> | Contém o número de itens na coleção.<br/> |
+| [**Contagem**](shellwindows-count.md)<br/> | Somente leitura<br/> | Contém o número de itens na coleção.<br/> |
 
 
 
@@ -66,7 +66,7 @@ O objeto **ShellWindows** tem essas propriedades.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>O textdisp. h</dt> </dl>                            |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |

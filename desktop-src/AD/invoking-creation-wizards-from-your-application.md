@@ -1,32 +1,32 @@
 ---
-title: Invocando assistentes de criação do seu aplicativo
-description: Um aplicativo ou componente pode usar os mesmos assistentes de criação de objeto de serviço de diretório usados pelos snap-ins administrativos do MMC Active Directory. Isso é feito com a interface IDsAdminCreateObj.
+title: Invocando assistentes de criação de seu aplicativo
+description: Um aplicativo ou componente pode usar os mesmos assistentes de criação de objeto de serviço de diretório usados pelos snap-ins administrativos do MMC do Active Directory. Isso é feito com a interface IDsAdminCreateObj.
 ms.assetid: be4b6101-f795-403b-b93e-960759ac4f14
 ms.tgt_platform: multiple
 keywords:
 - Invocando assistentes de criação do AD do aplicativo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa523d3b861d1d4a7588455b04c1a9633734253a
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: ba1d5f8c722e3f673d998d3baaf33b4110293c70875a68fd03e8117f667351bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104453916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118187070"
 ---
-# <a name="invoking-creation-wizards-from-your-application"></a>Invocando assistentes de criação do seu aplicativo
+# <a name="invoking-creation-wizards-from-your-application"></a>Invocando assistentes de criação de seu aplicativo
 
-Um aplicativo ou componente pode usar os mesmos assistentes de criação de objeto de serviço de diretório usados pelos snap-ins administrativos do MMC Active Directory. Isso é feito com a interface [**IDsAdminCreateObj**](/windows/desktop/api/DSAdmin/nn-dsadmin-idsadmincreateobj) .
+Um aplicativo ou componente pode usar os mesmos assistentes de criação de objeto de serviço de diretório usados pelos snap-ins administrativos do MMC do Active Directory. Isso é feito com a interface [**IDsAdminCreateObj.**](/windows/desktop/api/DSAdmin/nn-dsadmin-idsadmincreateobj)
 
 ## <a name="using-the-idsadmincreateobj-interface"></a>Usando a interface IDsAdminCreateObj
 
-Um aplicativo ou componente (cliente) cria uma instância da interface [**IDsAdminCreateObj**](/windows/desktop/api/DSAdmin/nn-dsadmin-idsadmincreateobj) chamando [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) com o identificador de **classe \_ DsAdminCreateObj do CLSID** . COM deve ser inicializado chamando [**CoInitialize**](/windows/win32/api/objbase/nf-objbase-coinitialize) antes de **CoCreateInstance** ser chamado.
+Um aplicativo ou componente (cliente) cria uma instância da interface [**IDsAdminCreateObj**](/windows/desktop/api/DSAdmin/nn-dsadmin-idsadmincreateobj) chamando [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) com o identificador de classe **CLSID \_ DsAdminCreateObj.** O COM deve ser inicializado chamando [**CoInitialize**](/windows/win32/api/objbase/nf-objbase-coinitialize) antes que **CoCreateInstance** seja chamado.
 
-Em seguida, o cliente chama [**IDsAdminCreateObj:: Initialize**](/windows/desktop/api/DSAdmin/nf-dsadmin-idsadmincreateobj-initialize) para inicializar o objeto [**IDsAdminCreateObj**](/windows/desktop/api/DSAdmin/nn-dsadmin-idsadmincreateobj) . **IDsAdminCreateObj:: Initialize** aceita um ponteiro de interface [**IADsContainer**](/windows/desktop/api/iads/nn-iads-iadscontainer) que representa o contêiner no qual o objeto deve ser criado e o nome da classe do objeto a ser criado. Ao criar objetos de usuário, também é possível especificar um objeto existente que será copiado para o novo objeto.
+Em seguida, o cliente chama [**IDsAdminCreateObj::Initialize**](/windows/desktop/api/DSAdmin/nf-dsadmin-idsadmincreateobj-initialize) para inicializar o [**objeto IDsAdminCreateObj.**](/windows/desktop/api/DSAdmin/nn-dsadmin-idsadmincreateobj) **IDsAdminCreateObj::Initialize** aceita um ponteiro de interface [**IADsContainer**](/windows/desktop/api/iads/nn-iads-iadscontainer) que representa o contêiner em que o objeto deve ser criado e o nome de classe do objeto a ser criado. Ao criar objetos de usuário, também é possível especificar um objeto existente que será copiado para o novo objeto.
 
-Quando o objeto [**IDsAdminCreateObj**](/windows/desktop/api/DSAdmin/nn-dsadmin-idsadmincreateobj) tiver sido inicializado, o cliente chamará [**IDsAdminCreateObj:: createjanelarestrita**](/windows/desktop/api/DSAdmin/nf-dsadmin-idsadmincreateobj-createmodal) para exibir o assistente de criação de objeto.
+Quando o [**objeto IDsAdminCreateObj**](/windows/desktop/api/DSAdmin/nn-dsadmin-idsadmincreateobj) tiver sido inicializado, o cliente chamará [**IDsAdminCreateObj::CreateModal**](/windows/desktop/api/DSAdmin/nf-dsadmin-idsadmincreateobj-createmodal) para exibir o assistente de criação de objeto.
 
-Ao contrário da maioria dos identificadores de classe e de interface, **CLSID \_ DsAdminCreateObj** e **IID \_ ADsAdminCreateObj** não são definidos em um arquivo de biblioteca. Isso significa que você deve definir o armazenamento para esses identificadores em seu aplicativo. Para fazer isso, você deve incluir o arquivo Initguid. h imediatamente antes de incluir o DSAdmin. h. O arquivo Initguid. h deve ser incluído apenas uma vez em um aplicativo. O exemplo de código a seguir mostra como incluir esses arquivos.
+Ao contrário da maioria dos identificadores de classe e interface, **CLSID \_ DsAdminCreateObj** e **IID \_ ADsAdminCreateObj** não são definidos em um arquivo de biblioteca. Isso significa que você deve definir o armazenamento para esses identificadores em seu aplicativo. Para fazer isso, você deve incluir o arquivo initguid.h imediatamente antes de incluir dsadmin.h. O arquivo initguid.h só deve ser incluído uma vez em um aplicativo. O exemplo de código a seguir mostra como incluir esses arquivos.
 
 
 ```C++
@@ -150,6 +150,6 @@ int main(void)
 
 
 
- 
+ 
 
- 
+ 

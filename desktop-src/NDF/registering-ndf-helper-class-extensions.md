@@ -4,12 +4,12 @@ description: Cada extensão de classe auxiliar tem um número de chaves do regis
 ms.assetid: 9ff3266d-5ffc-4a00-be24-2f85461c6ea6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f211517a975bdef61db7937fffa95f13beddc156
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6457e144abdeb1dbed1e33bb10e21302f918da8cdc5a6fd2090f3665e83f0316
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103637292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117798493"
 ---
 # <a name="registering-ndf-helper-class-extensions"></a>Registrando extensões de classe auxiliar NDF
 
@@ -33,13 +33,13 @@ O procedimento a seguir mostra como adicionar extensões de classe auxiliar ao r
 
     | Valor               | Type    | Significado                                                                      |
     |---------------------|---------|------------------------------------------------------------------------------|
-    | *Nome_do_Fornecedor*        | REG \_ sz | O nome do fornecedor.                                                      |
+    | *VendorName*        | REG \_ sz | O nome do fornecedor.                                                      |
     | *DLL de classe auxiliar*  | REG \_ sz | Nome da DLL, sem extensão.                                          |
     | *Nome da classe auxiliar* | REG \_ sz | O nome da classe auxiliar na qual a classe auxiliar atual é dependente. |
 
     
 
-     
+     
 
 2.  Em cada chave de *nome de classe auxiliar* , publique as informações a seguir.
 
@@ -49,12 +49,12 @@ O procedimento a seguir mostra como adicionar extensões de classe auxiliar ao r
     |---------------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | **CLSID**     | REG \_ sz    | Uma cadeia de caracteres que contém a ID de classe COM da classe auxiliar.                                                                                                            |
     | **Versão**   | REG \_ sz    | Uma cadeia de caracteres contém as versões principal e secundária da classe auxiliar no formato <major> <minor> .                                                        |
-    | **Checked** | REG \_ DWORD | Um valor de 1 significa que essa classe auxiliar deve ser invocada diretamente do cliente de diagnóstico. 0 significa que ele pode ser chamado somente de outra classe auxiliar. |
+    | **Publicado** | REG \_ DWORD | Um valor de 1 significa que essa classe auxiliar deve ser invocada diretamente do cliente de diagnóstico. 0 significa que ele pode ser chamado somente de outra classe auxiliar. |
     | **Pai**    | REG \_ sz    | Uma cadeia de caracteres que nomeia a classe auxiliar extensível da Microsoft que está sendo estendida.                                                                                       |
 
     
 
-     
+     
 
 3.  Para cada classe auxiliar, publique a lista de atributos correspondentes criando uma chave em
 
@@ -68,11 +68,11 @@ O procedimento a seguir mostra como adicionar extensões de classe auxiliar ao r
 
     
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,7 @@ title: Mensagem de WM_CAP_DRIVER_GET_NAME (VFW. h)
 description: A \_ \_ \_ mensagem obter nome do driver do WM Cap \_ retorna o nome do driver de captura conectado à janela de captura. Você pode enviar essa mensagem explicitamente ou usando a macro capDriverGetName.
 ms.assetid: 84cecaf1-e0ff-424f-8c10-8bfe5cc2e7ea
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_DRIVER_GET_NAME
+- mensagem de WM_CAP_DRIVER_GET_NAME Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 256b5f7913c83ddd278f3f3a05552b3d81070c73
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0dc44efae992f2967cb069c0866fbb7f9febed51ea73f94853a1b017bc57a068
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454860"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118369677"
 ---
 # <a name="wm_cap_driver_get_name-message"></a>\_Mensagem de \_ \_ nome Get do driver do WM Cap \_
 

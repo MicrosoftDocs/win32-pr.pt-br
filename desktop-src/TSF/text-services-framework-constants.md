@@ -13,12 +13,12 @@ keywords:
 - armazenamentos de texto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0e6dcc124247e31f3915eea89a4cc910305e115
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 055ddb32bd0336c93bfad91d6086bdd5ad1c0979558439b617dd38cf5b1d04b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117951331"
 ---
 # <a name="text-services-framework-constants"></a>Constantes da estrutura de serviços de texto
 
@@ -29,9 +29,9 @@ Esta seção apresenta tópicos sobre as constantes a seguir.
 -   [**Constantes do Framework**](framework-constants.md)
 -   [**Constantes de armazenamento de texto**](text-store-constants.md)
 
- 
+ 
 
- 
+ 
 
 
 

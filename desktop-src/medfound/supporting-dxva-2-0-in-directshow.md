@@ -1,19 +1,19 @@
 ---
-description: Este tópico descreve como dar suporte a DXVA (DirectX Video Acceleration) 2,0 em um filtro de decodificador do DirectShow.
+description: este tópico descreve como dar suporte a DXVA (DirectX Video Acceleration) 2,0 em um filtro de decodificador DirectShow.
 ms.assetid: 40deaddb-bb17-4a34-8294-5c7dc8a8a457
 title: Suporte a DXVA 2,0 no DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dda956b60d4905c2392e1a50bd62ee8421b944b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58631a407e42c0561ebee0ad2b3187e248fc2d25dc0bdf4e98ed0219d8dae916
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118238079"
 ---
 # <a name="supporting-dxva-20-in-directshow"></a>Suporte a DXVA 2,0 no DirectShow
 
-Este tópico descreve como dar suporte a DXVA (DirectX Video Acceleration) 2,0 em um filtro de decodificador do DirectShow. Especificamente, ele descreve a comunicação entre o decodificador e o processador de vídeo. Este tópico não descreve como implementar a decodificação de DXVA.
+este tópico descreve como dar suporte a DXVA (DirectX Video Acceleration) 2,0 em um filtro de decodificador DirectShow. Especificamente, ele descreve a comunicação entre o decodificador e o processador de vídeo. Este tópico não descreve como implementar a decodificação de DXVA.
 
 -   [Pré-requisitos](#prerequisites)
 -   [Notas de migração](#migration-notes)
@@ -25,7 +25,7 @@ Este tópico descreve como dar suporte a DXVA (DirectX Video Acceleration) 2,0 e
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Este tópico pressupõe que você esteja familiarizado com a gravação de filtros do DirectShow. Para obter mais informações, consulte o tópico [escrevendo filtros do DirectShow](../directshow/writing-directshow-filters.md) na documentação do SDK do DirectShow. Os exemplos de código neste tópico pressupõem que o filtro de decodificador seja derivado da classe [**CTransformFilter**](../directshow/ctransformfilter.md) , com a seguinte definição de classe:
+este tópico pressupõe que você esteja familiarizado com a gravação de filtros de DirectShow. para obter mais informações, consulte o tópico [Writing DirectShow filters](../directshow/writing-directshow-filters.md) na documentação do SDK do DirectShow. Os exemplos de código neste tópico pressupõem que o filtro de decodificador seja derivado da classe [**CTransformFilter**](../directshow/ctransformfilter.md) , com a seguinte definição de classe:
 
 
 ```C++
@@ -623,7 +623,7 @@ void CDecoderAllocator::Free()
 
 
 
-Para obter mais informações sobre como implementar os alocadores personalizados, consulte o tópico [fornecendo um alocador personalizado](../directshow/providing-a-custom-allocator.md) na documentação do SDK do DirectShow.
+para obter mais informações sobre como implementar os alocadores personalizados, consulte o tópico [fornecendo um alocador personalizado](../directshow/providing-a-custom-allocator.md) na documentação do SDK do DirectShow.
 
 ## <a name="decoding"></a>Decodificação
 
@@ -650,7 +650,7 @@ O DXVA 2,0 usa as mesmas estruturas de dados que a DXVA 1,0 para operações de 
 
 Em cada par de [](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-beginframe) / chamadas de [**execução**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-execute) BeginFrame, você pode chamar [**GetBuffer**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-getbuffer) várias vezes, mas apenas uma vez para cada tipo de buffer de DXVA. Se você chamá-lo duas vezes com o mesmo tipo de buffer, os dados serão substituídos.
 
-Depois de chamar [**Execute**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-execute), chame [**IMemInputPin:: Receive**](/windows/win32/api/strmif/nf-strmif-imeminputpin-receive) para entregar o quadro ao processador de vídeo, assim como com a decodificação de software. O método **Receive** é assíncrono; Depois de retornar, o decodificador pode continuar decodificando o próximo quadro. O driver de vídeo impede que qualquer comando de decodificação substitua o buffer enquanto o buffer está em uso. O decodificador não deve reutilizar uma superfície para decodificar outro quadro até que o renderizador tenha liberado o exemplo. Quando o renderizador libera o exemplo, o alocador coloca o exemplo de volta em seu pool de exemplos disponíveis. Para obter o próximo exemplo disponível, chame [**CBaseOutputPin:: GetDeliveryBuffer**](../directshow/cbaseoutputpin-getdeliverybuffer.md), que por sua vez chama [**IMemAllocator:: GetBuffer**](/windows/win32/api/strmif/nf-strmif-imemallocator-getbuffer). Para obter mais informações, consulte o tópico [visão geral do fluxo de dados no DirectShow](../directshow/overview-of-data-flow-in-directshow.md) na documentação do DirectShow.
+Depois de chamar [**Execute**](/windows/desktop/api/dxva2api/nf-dxva2api-idirectxvideodecoder-execute), chame [**IMemInputPin:: Receive**](/windows/win32/api/strmif/nf-strmif-imeminputpin-receive) para entregar o quadro ao processador de vídeo, assim como com a decodificação de software. O método **Receive** é assíncrono; Depois de retornar, o decodificador pode continuar decodificando o próximo quadro. O driver de vídeo impede que qualquer comando de decodificação substitua o buffer enquanto o buffer está em uso. O decodificador não deve reutilizar uma superfície para decodificar outro quadro até que o renderizador tenha liberado o exemplo. Quando o renderizador libera o exemplo, o alocador coloca o exemplo de volta em seu pool de exemplos disponíveis. Para obter o próximo exemplo disponível, chame [**CBaseOutputPin:: GetDeliveryBuffer**](../directshow/cbaseoutputpin-getdeliverybuffer.md), que por sua vez chama [**IMemAllocator:: GetBuffer**](/windows/win32/api/strmif/nf-strmif-imemallocator-getbuffer). para obter mais informações, consulte o tópico [visão geral de dados Flow em DirectShow](../directshow/overview-of-data-flow-in-directshow.md) na documentação do DirectShow.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

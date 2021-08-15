@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. setColumnResizeMode
-description: O método setColumnResizeMode especifica como os tamanhos de coluna indexados em si.
+title: PLAYLIST.setColumnResizeMode
+description: O método setColumnResizeMode especifica como a coluna indexada se tamanhou.
 ms.assetid: 84ca0e60-ca24-4058-ae08-5b9cf3d7c38f
 keywords:
-- PLAYLIST. setColumnResizeMode Windows Media Player
+- PLAYLIST.setColumnResizeMode Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9a1b83020f4400f4f1095c84e281fe498f2b67da
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 72f356108ff016c404468a9b152b4adac247cd72ee089a9e82ea3206c4c2ffea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105773046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118335798"
 ---
-# <a name="playlistsetcolumnresizemode"></a>PLAYLIST. setColumnResizeMode
+# <a name="playlistsetcolumnresizemode"></a>PLAYLIST.setColumnResizeMode
 
-O método **setColumnResizeMode** especifica como os tamanhos de coluna indexados em si.
+O **método setColumnResizeMode** especifica como a coluna indexada se tamanhou.
 
 ``` syntax
         elementID.setColumnResizeMode(column, mode)
@@ -32,26 +32,26 @@ O método **setColumnResizeMode** especifica como os tamanhos de coluna indexado
 
 <dl> <dt>
 
-<span id="column"></span><span id="COLUMN"></span>*pilha*
+<span id="column"></span><span id="COLUMN"></span>*Coluna*
 </dt> <dd>
 
-**Número** (**longo**) indicando o índice da coluna a ser alterada.
+**Número** (**longo**) que indica o índice da coluna a ser alterada.
 
 </dd> <dt>
 
-<span id="mode"></span><span id="MODE"></span>*moda*
+<span id="mode"></span><span id="MODE"></span>*Modo*
 </dt> <dd>
 
-**Cadeia de caracteres** que indica o modo de dimensionamento. Contém um dos seguintes valores.
+**Cadeia de** caracteres que indica o modo deizing. Contém um dos seguintes valores.
 
 
 
 | Valor          | Descrição                                                                                                    |
 |----------------|----------------------------------------------------------------------------------------------------------------|
-| AutosizeHeader | A coluna é redimensionada para acomodar todos os dados na coluna e no cabeçalho.                                  |
-| AutosizeData   | A coluna é redimensionada para acomodar todos os dados somente na coluna.                                                 |
+| AutosizeHeader | A coluna é relize para acomodar todos os dados na coluna e no header.                                  |
+| AutosizeData   | A coluna é relize para acomodar todos os dados somente na coluna.                                                 |
 | Fixo          | A coluna é um tamanho fixo.                                                                                    |
-| Se estende      | A coluna é redimensionada para usar o espaço restante no elemento **playlist** depois que todas as outras colunas são redimensionadas. |
+| Trechos      | A coluna é reorganizada para usar o espaço restante no elemento **PLAYLIST** depois que todas as outras colunas são resized. |
 
 
 
@@ -69,7 +69,7 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 

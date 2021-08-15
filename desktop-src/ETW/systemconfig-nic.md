@@ -1,7 +1,7 @@
 ---
 description: Essa classe é a classe de tipo de evento para eventos de configuração de placa de interface de rede. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 66b2c116-810e-489d-ad5e-f9c09902005b
-title: Classe SystemConfig_NIC
+title: SystemConfig_NIC classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,14 +19,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 63d522eee993f0766554eb9bc4fb09d842e9cd8f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 822e8404137eee9731bbfcee9f5d9f4495609078c4251b53269371dd4904cea7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118393812"
 ---
-# <a name="systemconfig_nic-class"></a>\_Classe NIC SystemConfig
+# <a name="systemconfig_nic-class"></a>Classe NIC SystemConfig \_
 
 Essa classe é a classe de tipo de evento para eventos de configuração de placa de interface de rede.
 
@@ -69,14 +69,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (7), StringTermination ("NullTerminated"), Format ("w")
+Qualificadores: WmiDataId(7), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
-Endereços IP a serem usados na consulta de servidores DNS. A lista de endereços é delimitada por vírgula.
+Endereços IP a serem usados na consulta para servidores DNS. A lista de endereços é delimitada por vírgulas.
 
 </dd> <dt>
 
-IpAddresses
+Ipaddresses
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -85,42 +85,42 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (6), StringTermination ("NullTerminated"), Format ("w")
+Qualificadores: WmiDataId(6), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
-Endereços IP associados à placa de interface de rede. A lista de endereços é delimitada por vírgula.
+Endereços IP associados à placa de interface de rede. A lista de endereços é delimitada por vírgulas.
 
 </dd> <dt>
 
 Ipv4Index
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (3)
+Qualificadores: WmiDataId(3)
 </dt> </dl>
 
-Índice de adaptador para NIC IPv4. O índice do adaptador pode ser alterado quando um adaptador está desabilitado e, em seguida, habilitado ou em outras circunstâncias, e não deve ser considerado persistente.
+Índice de adaptador para NIC IPv4. O índice do adaptador pode mudar quando um adaptador é desabilitado e habilitado ou em outras circunstâncias e não deve ser considerado persistente.
 
 </dd> <dt>
 
 Ipv6Index
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (4)
+Qualificadores: WmiDataId(4)
 </dt> </dl>
 
-Índice de adaptador para NIC IPv6. O índice do adaptador pode ser alterado quando um adaptador está desabilitado e, em seguida, habilitado ou em outras circunstâncias, e não deve ser considerado persistente.
+Índice de adaptador para NIC IPv6. O índice do adaptador pode mudar quando um adaptador é desabilitado e habilitado ou em outras circunstâncias e não deve ser considerado persistente.
 
 </dd> <dt>
 
@@ -133,7 +133,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (5), StringTermination ("NullTerminated"), Format ("w")
+Qualificadores: WmiDataId(5), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Descrição do adaptador.
@@ -143,29 +143,29 @@ Descrição do adaptador.
 PhysicalAddr
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (1), formato ("x")
+Qualificadores: WmiDataId(1), Format("x")
 </dt> </dl>
 
-Endereço de hardware do adaptador.
+Endereço de hardware para o adaptador.
 
 </dd> <dt>
 
 PhysicalAddrLen
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (2)
+Qualificadores: WmiDataId(2)
 </dt> </dl>
 
 Comprimento do endereço de hardware para o adaptador.
@@ -178,8 +178,8 @@ Comprimento do endereço de hardware para o adaptador.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

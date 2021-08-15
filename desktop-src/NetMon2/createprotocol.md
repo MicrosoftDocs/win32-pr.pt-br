@@ -1,7 +1,7 @@
 ---
-description: A função createprotocol notifica Monitor de Rede de que existe um analisador de protocolo específico.
+description: A função CreateProtocol notifica Monitor de Rede que existe um analisador de protocolo específico.
 ms.assetid: 13ae261f-b1c0-4afc-b718-d64b3d4ec5ee
-title: Função createprotocol (Netmon. h)
+title: Função CreateProtocol (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 0b35f9505758256750ae02d24d6c2a84ed0646b1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 173f744406ef2b360c0af7158e397c2001f146b9f2339bf6aaf3468b9a1465dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104091725"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117796347"
 ---
-# <a name="createprotocol-function"></a>Função createprotocol
+# <a name="createprotocol-function"></a>Função CreateProtocol
 
-A função **createprotocol** notifica monitor de rede de que existe um analisador de protocolo específico.
+A **função CreateProtocol** notifica Monitor de Rede que existe um analisador de protocolo específico.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,51 +41,51 @@ HPROTOCOL WINAPI CreateProtocol(
 
 <dl> <dt>
 
-*ProtocolName* \[ no\]
+*ProtocolName* \[ Em\]
 </dt> <dd>
 
 Nome do protocolo que o analisador detectará.
 
 </dd> <dt>
 
-*lpEntryPoints* \[ no\]
+*lpEntryPoints* \[ Em\]
 </dt> <dd>
 
-Uma estrutura de [entryPoints](entrypoints.md) que contém os pontos de entrada da dll do analisador restante. Consulte comentários para obter uma lista das funções de exportação às quais cada ponto de entrada faz referência. Os pontos de entrada devem ser fornecidos na ordem que a estrutura de **entryPoints** especifica.
+Uma [estrutura ENTRYPOINTS](entrypoints.md) que contém os pontos de entrada de DLL do analisador restantes. Consulte Comentários para ver uma lista das funções de exportação referenciadas por cada ponto de entrada. Os pontos de entrada devem ser fornecidos na ordem especificada pela estrutura **ENTRYPOINTS.**
 
 </dd> <dt>
 
-*cbEntryPoints* \[ no\]
+*cbEntryPoints* \[ Em\]
 </dt> <dd>
 
-O tamanho da estrutura de **entryPoints** . Monitor de Rede fornece uma \_ macro de tamanho de entryPoints que você pode usar para especificar o tamanho da estrutura.
+O tamanho da estrutura **ENTRYPOINTS.** Monitor de Rede fornece uma macro ENTRYPOINTS SIZE que você pode \_ usar para especificar o tamanho da estrutura.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida, o valor de retorno será um identificador para o protocolo.
+Se a função for bem-sucedida, o valor de retorno será um alçado para o protocolo.
 
-Se a função não for bem-sucedida, o valor de retorno será **nulo**.
+Se a função não for bem-sucedida, o valor de retorno será **NULL.**
 
 ## <a name="remarks"></a>Comentários
 
-A DLL do analisador chama **createprotocol** durante sua implementação de [DllMain](dllmain-parser.md). A função **createprotocol** é chamada quando o sistema operacional carrega a DLL do analisador pela primeira vez.
+A DLL do analisador chama **CreateProtocol** durante sua implementação [de DllMain](dllmain-parser.md). A **função CreateProtocol** é chamada quando o sistema operacional carrega a DLL do analisador pela primeira vez.
 
-Os pontos de entrada referenciados no parâmetro *lpEntryPoints* incluem ponteiros para as seguintes funções de exportação que devem ser fornecidas na ordem apresentada aqui.
+Os pontos de entrada referenciados no *parâmetro lpEntryPoints* incluem ponteiros para as seguintes funções de exportação que devem ser fornecidas na ordem apresentada aqui.
 
 -   [Registrar](register-parser.md)
 -   [Cancelar registro](deregister.md)
 -   [RecognizeFrame](recognizeframe.md)
--   [Anexarproperties](attachproperties.md)
--   [Formatproperties](formatproperties.md)
+-   [AttachProperties](attachproperties.md)
+-   [FormatProperties](formatproperties.md)
 
 
 
 | Para obter informações sobre                                                                                 | Consulte                                                     |
 |----------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| Quais analisadores são e como eles funcionam com Monitor de Rede.                                          | [Analisadores](parsers.md)                                  |
-| Como implementar **DllMain** inclui um exemplo de chamada de **createprotocol** em **DllMain**. | [Implementando DllMain](implementing-dllmain-parser.md) |
+| O que são analisadores e como eles funcionam com Monitor de Rede.                                          | [Analisadores](parsers.md)                                  |
+| Como implementar **DllMain inclui** um exemplo de chamada **a CreateProtocol** em **DllMain**. | [Implementando DllMain](implementing-dllmain-parser.md) |
 
 
 
@@ -99,8 +99,8 @@ Os pontos de entrada referenciados no parâmetro *lpEntryPoints* incluem ponteir
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 
@@ -109,7 +109,7 @@ Os pontos de entrada referenciados no parâmetro *lpEntryPoints* incluem ponteir
 
 <dl> <dt>
 
-[DllMain](/windows/desktop/Dlls/dllmain)
+[Dllmain](/windows/desktop/Dlls/dllmain)
 </dt> </dl>
 
  

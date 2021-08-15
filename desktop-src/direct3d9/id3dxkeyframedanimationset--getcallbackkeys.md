@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5f3bdb7049de3b5d6aad10b5ff5100d01d05e3ee
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0ee5a86fa5f016bd6707ec4464c79b1dc182e1ebebde80fa9f73d62e3bba3a13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118294982"
 ---
 # <a name="id3dxkeyframedanimationsetgetcallbackkeys-method"></a>Método ID3DXKeyframedAnimationSet:: GetCallbackKeys
 
@@ -49,7 +49,7 @@ Ponteiro para uma matriz alocada pelo usuário de estruturas de [**\_ retorno de
 
 </dd> </dl>
 
-## <a name="return-value"></a>Valor retornado
+## <a name="return-value"></a>Retornar valor
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -66,7 +66,7 @@ Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método fa
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

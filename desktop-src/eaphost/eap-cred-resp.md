@@ -6,12 +6,12 @@ keywords:
 - EAP_CRED_RESP
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e5c2176377dbde0f7c02d2a7d8083ad1bcff9e71
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d16b9bda55ed1b4aee9a9847740b25d46418c6ec3544dfdd6ba71b2c282042b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105771347"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117904633"
 ---
 # <a name="eap_cred_resp"></a>\_resp de credenciais EAP \_
 
@@ -45,9 +45,9 @@ A **estrutura \_ \_ resp de credenciais de EAP** é idêntica à estrutura req. 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Eaptypes. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Eaptypes. h</dt> </dl> |
 
 
 

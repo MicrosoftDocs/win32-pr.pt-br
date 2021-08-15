@@ -1,11 +1,11 @@
 ---
 title: Método PlayerApplication. switchToControl
-description: O método switchToControl alterna um controle do Windows Media Player remoto para o estado encaixado.
+description: o método switchToControl alterna um controle de Windows Media Player remoto para o estado encaixado.
 ms.assetid: 3c321b8f-8208-4c55-8872-38626d8ef9c9
 keywords:
-- método switchToControl Windows Media Player
+- Windows Media Player do método switchToControl
 - método switchToControl Windows Media Player, classe PlayerApplication
-- Classe PlayerApplication Windows Media Player, método switchToControl
+- classe PlayerApplication Windows Media Player, método switchToControl
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e175c586631bcdf4345a421270521595332c51d4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 759040ccb54d5dd32df83811f9878418dbe0a1108719eac4e3b7467b9b3c76f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105814018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117747210"
 ---
 # <a name="playerapplicationswitchtocontrol-method"></a>Método PlayerApplication. switchToControl
 
-O método **switchToControl** alterna um controle do Windows Media Player remoto para o estado encaixado.
+o método **switchToControl** alterna um controle de Windows Media Player remoto para o estado encaixado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,13 +40,13 @@ PlayerApplication.switchToControl()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é usado somente quando você faz a comunicação remota do controle do Windows Media Player.
+esse método é usado somente quando você faz a comunicação remota do controle de Windows Media Player.
 
 **Windows Media Player 10 Mobile:** Não há suporte para esse método.
 

@@ -1,9 +1,9 @@
 ---
-title: atributo de difusão
-description: A palavra-chave \ Broadcast \ especifica que as chamadas de procedimento remoto sejam enviadas a todos os servidores em uma rede local.
+title: atributo broadcast
+description: A palavra-chave \ broadcast\ especifica que as chamadas de procedimento remoto são enviadas a todos os servidores em uma rede local.
 ms.assetid: 3951c80f-b7f1-457b-9eee-6e075291b27e
 keywords:
-- MIDL do atributo de difusão
+- atributo de difusão MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72c2bbb724fc292a5e3942bf2b6de61b5631cdc0
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: f176b03f9d33ee1bbe1d0e805dfc109de477b7499f8fd624ba7732709dc61a10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104293297"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118385232"
 ---
-# <a name="broadcast-attribute"></a>atributo de difusão
+# <a name="broadcast-attribute"></a>atributo broadcast
 
-A **\[ difusão \]** de palavra-chave especifica que as chamadas de procedimento remoto sejam enviadas a todos os servidores em uma rede local.
+A **\[ difusão de \]** palavra-chave especifica que as chamadas de procedimento remoto são enviadas a todos os servidores em uma rede local.
 
 ``` syntax
 [
@@ -37,14 +37,14 @@ interface interface-name
 
 <dl> <dt>
 
-*interface-atributo-lista* 
+*interface-attribute-list* 
 </dt> <dd>
 
 Especifica uma lista de zero ou mais atributos IDL que se aplicam à interface como um todo. Quando dois ou mais atributos de interface estão presentes, eles devem ser separados por vírgulas.
 
 </dd> <dt>
 
-*nome da interface* 
+*interface-name* 
 </dt> <dd>
 
 Especifica o nome da interface.
@@ -58,17 +58,17 @@ Especifica atributos adicionais a serem aplicados à função. Separe vários at
 
 </dd> <dt>
 
-*ReturnType* 
+*Returntype* 
 </dt> <dd>
 
 Especifica o tipo de retorno da função.
 
 </dd> <dt>
 
-*nome da função* 
+*Nome da função* 
 </dt> <dd>
 
-Especifica o nome da função à qual o atributo de **\[ difusão \]** será aplicado.
+Especifica o nome da função à qual o atributo **\[ de difusão \]** será aplicado.
 
 </dd> <dt>
 
@@ -81,11 +81,11 @@ Lista de parâmetros de função.
 
 ## <a name="remarks"></a>Comentários
 
-A palavra-chave **\[ Broadcast \]** especifica que a rotina sempre é transmitida para todos os servidores na rede, em vez de ser entregue a um servidor específico. O cliente recebe a saída da primeira resposta a ser retornada com êxito, enquanto as respostas subsequentes são descartadas.
+A **\[ \] palavra-chave** broadcast especifica que a rotina é sempre transmitida para todos os servidores na rede, em vez de ser entregue a um servidor específico. O cliente recebe a saída da primeira resposta para retornar com êxito, enquanto as respostas subsequentes são descartadas.
 
-Uma operação com o atributo **\[ Broadcast \]** é implicitamente uma operação [**\[ idempotente \]**](idempotent.md) . No entanto, o atributo **\[ Broadcast \]** Especifica propriedades adicionais que funções com o atributo **\[ idempotente \]** não têm. Especificamente, as funções que usam o atributo **\[ Broadcast \]** especificam que a rotina pode ser chamada várias vezes como o resultado de uma chamada de procedimento remoto. Ao mesmo tempo, eles podem ser enviados para vários servidores. Isso é diferente do atributo **\[ idempotente \]** , que especifica apenas que uma chamada pode ser repetida se não for concluída.
+Uma operação com o **\[ atributo broadcast \]** é implicitamente [**\[ \] uma operação idempotente.**](idempotent.md) No entanto, **\[ o atributo broadcast \]** especifica propriedades adicionais que funcionam com o atributo **\[ idempotente \]** não têm. Especificamente, as funções que usam o **\[ atributo broadcast \]** especificam que a rotina pode ser chamada várias vezes como resultado de uma chamada de procedimento remoto. Ao mesmo tempo, eles podem ser enviados para vários servidores. Isso é diferente do atributo **\[ \] idempotente,** que especifica apenas que uma chamada pode ser recuperada se ela não for concluída.
 
-Se um procedimento remoto transmite sua chamada para todos os hosts em uma rede local, ele deve usar a sequência de protocolo [**ncadg \_ IP \_ UDP**](ncadg-ip-udp.md) ou [**ncadg \_ IPX**](ncadg-ipx.md) . Observe que o tamanho de um pacote de **\[ difusão \]** é determinado pelo serviço de datagrama em uso.
+Se um procedimento remoto transmitir sua chamada para todos os hosts em uma rede local, ele deverá usar a sequência de protocolo [**ncadg \_ ip \_ udp**](ncadg-ip-udp.md) ou [**ncadg \_ ipx.**](ncadg-ipx.md) Observe que o tamanho de um **\[ pacote de difusão \]** é determinado pelo serviço de datagrama em uso.
 
 ## <a name="see-also"></a>Confira também
 
@@ -94,21 +94,21 @@ Se um procedimento remoto transmite sua chamada para todos os hosts em uma rede 
 [**idempotente**](idempotent.md)
 </dt> <dt>
 
-[Arquivo de definição de interface (IDL)](interface-definition-idl-file.md)
+[Arquivo IDL (definição de interface)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**Eu**](maybe.md)
+[**Talvez**](maybe.md)
 </dt> <dt>
 
-[**\_UDP IP \_ ncadg**](ncadg-ip-udp.md)
+[**ncadg \_ ip \_ udp**](ncadg-ip-udp.md)
 </dt> <dt>
 
-[**ncadg \_ IPX**](ncadg-ipx.md)
+[**ncadg \_ ipx**](ncadg-ipx.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

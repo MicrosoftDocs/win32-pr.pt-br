@@ -3,7 +3,7 @@ title: Mensagem de CBEM_GETIMAGELIST (commctrl. h)
 description: Obtém o identificador para uma lista de imagens atribuída a um controle ComboBoxEx.
 ms.assetid: d577f920-b8f7-4d51-9507-765b7f925408
 keywords:
-- Controles de CBEM_GETIMAGELIST de mensagens do Windows
+- controles de Windows de mensagem de CBEM_GETIMAGELIST
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d143b8483fb5fb97ebd65fa2a98640089f6d548
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2564739a1904f93c9b1837a1afce2ae73645675ce04818fc9e76ea2ee38946f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105750311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118414076"
 ---
 # <a name="cbem_getimagelist-message"></a>\_Mensagem CBEM GETimagelist
 
@@ -35,7 +35,7 @@ Obtém o identificador para uma lista de imagens atribuída a um controle ComboB
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o identificador para a lista de imagens atribuída ao controle, se for bem-sucedido, ou **NULL** de outra forma.
 
@@ -45,8 +45,8 @@ Retorna o identificador para a lista de imagens atribuída ao controle, se for b
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 

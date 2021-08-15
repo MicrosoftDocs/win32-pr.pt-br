@@ -14,20 +14,20 @@ keywords:
 - selecionando formatos restritos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 800945f4003c0fbe47d7916e0a1bf707745ff6d8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 994fffa7ef13f6febe41eb766b4ecaef7eb735f11f58d36f37adfccbb152bffa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117802036"
 ---
 # <a name="producing-a-dialog-box-for-selecting-restricted-formats"></a>Produzindo uma caixa de diálogo para selecionar formatos restritos
 
 Talvez você queira usar a caixa de diálogo criada pela função [**acmFormatChoose**](/windows/desktop/api/Msacm/nf-msacm-acmformatchoose) , mas limitar ou controlar os formatos na caixa de diálogo. Você pode fazer isso usando o sinalizador ACMFORMATCHOOSE \_ STYLEF \_ ENABLEHOOK para conectar o procedimento da caixa de diálogo. O aplicativo pode, então, filtrar os formatos respondendo à mensagem [**mm \_ ACM \_ FORMATCHOOSE**](mm-acm-formatchoose.md) no procedimento de mensagem da caixa de diálogo.
 
- 
+ 
 
- 
+ 
 
 
 

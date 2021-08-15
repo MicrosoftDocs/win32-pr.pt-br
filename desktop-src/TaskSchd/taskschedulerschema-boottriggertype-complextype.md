@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d16634cacb9c17e5027ac9e6b6dd7abb26b78007
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fc0b04bfaf08ecee87d02a2b410fd1df2fbbe584d5649a5e9fe2ea2e5efacebd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118131855"
 ---
 # <a name="boottriggertype-complex-type"></a>Tipo complexo bootTriggerType
 
@@ -48,7 +48,7 @@ Define o elemento filho e as informações de sequenciamento para o elemento [**
 
 | Elemento                                                            | Type     | Descrição                                                                                 |
 |--------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------|
-| [**Retardo**](taskschedulerschema-delay-boottriggertype-element.md) | duration | Quantidade de tempo entre quando o sistema é inicializado e quando o gatilho é acionado. <br/> |
+| [**Atrasar**](taskschedulerschema-delay-boottriggertype-element.md) | duration | Quantidade de tempo entre quando o sistema é inicializado e quando o gatilho é acionado. <br/> |
 
 
 
@@ -62,8 +62,8 @@ Além do elemento filho definido aqui, o elemento [**BootTrigger**](taskschedule
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

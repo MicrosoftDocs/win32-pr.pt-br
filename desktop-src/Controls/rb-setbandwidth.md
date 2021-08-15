@@ -3,7 +3,7 @@ title: Mensagem de RB_SETBANDWIDTH (commctrl. h)
 description: Define a largura de uma faixa encaixada.
 ms.assetid: dca9dfe9-3e5a-40bb-8de7-a296e6be7d06
 keywords:
-- Controles de RB_SETBANDWIDTH de mensagens do Windows
+- controles de Windows de mensagem de RB_SETBANDWIDTH
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 790f42ab977cfc0554c9a0eca737d541e001b6c9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bcc30b8cd4cdb3a9d6f5e6123ec46df6565a0ccb19d3920fe67c50a57cd15fd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118409176"
 ---
 # <a name="rb_setbandwidth-message"></a>\_Mensagem de largura de banda RB
 
@@ -43,7 +43,7 @@ Nova largura em pixels.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará **true** se o valor tiver sido definido e **false** caso contrário.
 
@@ -53,8 +53,8 @@ Retornará **true** se o valor tiver sido definido e **false** caso contrário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 

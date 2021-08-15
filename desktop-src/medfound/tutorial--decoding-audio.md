@@ -4,12 +4,12 @@ ms.assetid: ed40e201-c6ed-444f-bdaa-a5f33d1cc068
 title: 'Tutorial: decodificando áudio'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 539eb6d9f48419b62fa1c379c636abaf2bb0a63a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4ad5dbac47680c4d8faa73affa711b987edf220e05324d88cd0ffbda3bb93e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104554742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118237656"
 ---
 # <a name="tutorial-decoding-audio"></a>Tutorial: decodificando áudio
 
@@ -30,7 +30,7 @@ Este tutorial mostra como usar o [leitor de origem](source-reader.md) para decod
 
 Neste tutorial, você criará um aplicativo de console que usa dois argumentos de linha de comando: o nome de um arquivo de entrada que contém um fluxo de áudio e o nome do arquivo de saída. O aplicativo lê cinco segundos de dados de áudio do arquivo de entrada e grava o áudio no arquivo de saída como dados de onda.
 
-Para obter os dados de áudio decodificados, o aplicativo usa o objeto de leitor de origem. O leitor de origem expõe a interface [**IMFSourceReader**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereader) . Para gravar o áudio decodificado no arquivo WAVE, os aplicativos usam as funções de e/s do Windows. A imagem a seguir ilustra esse processo.
+Para obter os dados de áudio decodificados, o aplicativo usa o objeto de leitor de origem. O leitor de origem expõe a interface [**IMFSourceReader**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereader) . para gravar o áudio decodificado no arquivo WAVE, os aplicativos usam Windows funções de e/s. A imagem a seguir ilustra esse processo.
 
 ![diagrama mostrando o leitor de origem que obtém os dados de áudio do arquivo de origem.](images/audio-clip-tutorial.gif)
 
@@ -342,16 +342,16 @@ A `ConfigureAudioStream` função faz o seguinte:
 2.  Cria um tipo de mídia *parcial* que especifica o áudio PCM. A função cria o tipo parcial da seguinte maneira:
     1.  Chama [**MFCreateMediaType**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatemediatype) para criar um objeto de tipo de mídia vazio.
     2.  Define o atributo de [**\_ \_ \_ tipo principal MF MT**](mf-mt-major-type-attribute.md) como **MFMediaType \_ Audio**.
-    3.  Define o atributo de [**\_ \_ subtipo MF MT**](mf-mt-subtype-attribute.md) como **MFAudioFormat \_ PCM**.
-3.  Chama [**IMFSourceReader:: SetCurrentMediaType**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-setcurrentmediatype) para definir o tipo parcial no leitor de origem. Se o arquivo de origem contiver áudio codificado, o leitor de origem carregará automaticamente o decodificador de áudio necessário.
-4.  Chama [**IMFSourceReader:: GetCurrentMediaType**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-getcurrentmediatype) para obter o tipo de mídia PCM real. Esse método retorna um tipo de mídia com todos os detalhes de formato preenchidos, como a taxa de amostra de áudio e o número de canais.
-5.  Chama [**IMFSourceReader:: SetStreamSelection**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-setstreamselection) para habilitar o fluxo de áudio.
+    3.  Define o [**atributo \_ MF MT \_ SUBTYPE**](mf-mt-subtype-attribute.md) como **MFAudioFormat \_ PCM**.
+3.  Chama [**IMFSourceReader::SetCurrentMediaType**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-setcurrentmediatype) para definir o tipo parcial no leitor de origem. Se o arquivo de origem contiver áudio codificado, o leitor de origem carregará automaticamente o decodificador de áudio necessário.
+4.  Chama [**IMFSourceReader::GetCurrentMediaType**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-getcurrentmediatype) para obter o tipo de mídia PCM real. Esse método retorna um tipo de mídia com todos os detalhes de formato preenchidos, como a taxa de amostra de áudio e o número de canais.
+5.  Chama [**IMFSourceReader::SetStreamSelection**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-setstreamselection) para habilitar o fluxo de áudio.
 
-## <a name="write-the-wave-file-header"></a>Gravar o cabeçalho do arquivo WAVE
+## <a name="write-the-wave-file-header"></a>Gravar o header de arquivo WAVE
 
-A `WriteWaveHeader` função grava o cabeçalho do arquivo Wave.
+A `WriteWaveHeader` função grava o header de arquivo WAVE.
 
-A única API Media Foundation chamada a partir dessa função é [**MFCreateWaveFormatExFromMFMediaType**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatewaveformatexfrommfmediatype), que converte o tipo de mídia em uma estrutura [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) .
+A única API Media Foundation chamada dessa função é [**MFCreateWaveFormatExFromMFMediaType**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatewaveformatexfrommfmediatype), que converte o tipo de mídia em uma [**estrutura WAVEFORMATEX.**](/previous-versions/dd757713(v=vs.85))
 
 
 ```C++
@@ -424,7 +424,7 @@ HRESULT WriteWaveHeader(
 
 
 
-A `WriteToFile` função é uma função auxiliar simples que encapsula a função **WriteFile** do Windows e retorna um valor **HRESULT** .
+A função é uma função auxiliar simples que envolve a função `WriteToFile` **Windows WriteFile** e retorna um **valor HRESULT.**
 
 
 ```C++
@@ -456,7 +456,7 @@ HRESULT WriteToFile(HANDLE hFile, void* p, DWORD cb)
 
 ## <a name="calculate-the-maximum-data-size"></a>Calcular o tamanho máximo dos dados
 
-Como o tamanho do arquivo é armazenado como um valor de 4 bytes no cabeçalho do arquivo, um arquivo WAVE é limitado a um tamanho máximo de 0xFFFFFFFF bytes – aproximadamente 4 GB. Esse valor inclui o tamanho do cabeçalho do arquivo. O áudio PCM tem uma taxa de bits constante, portanto, você pode calcular o tamanho máximo dos dados do formato de áudio, da seguinte maneira:
+Como o tamanho do arquivo é armazenado como um valor de 4 bytes no header do arquivo, um arquivo WAVE é limitado a um tamanho máximo de 0xFFFFFFFF bytes — aproximadamente 4 GB. Esse valor inclui o tamanho do header do arquivo. O áudio PCM tem uma taxa de bits constante, portanto, você pode calcular o tamanho máximo dos dados do formato de áudio, da seguinte forma:
 
 
 ```C++
@@ -503,11 +503,11 @@ DWORD CalculateMaxAudioDataSize(
 
 
 
-Para evitar quadros de áudio parciais, o tamanho é arredondado para o alinhamento de bloco, que é armazenado no atributo de [**\_ alinhamento de bloco de \_ áudio \_ \_ MF MT**](mf-mt-audio-block-alignment-attribute.md) .
+Para evitar quadros de áudio parciais, o tamanho é arredondado para o alinhamento do bloco, que é armazenado no atributo [**\_ MF MT \_ AUDIO BLOCK \_ \_ ALIGNMENT.**](mf-mt-audio-block-alignment-attribute.md)
 
 ## <a name="decode-the-audio"></a>Decodificar o áudio
 
-A `WriteWaveData` função lê o áudio decodificado do arquivo de origem e grava no arquivo Wave.
+A `WriteWaveData` função lê o áudio decodificado do arquivo de origem e grava no arquivo WAVE.
 
 
 ```C++
@@ -625,25 +625,25 @@ HRESULT WriteWaveData(
 
 A `WriteWaveData` função faz o seguinte em um loop:
 
-1.  Chama [**IMFSourceReader:: ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) para ler áudio do arquivo de origem. O parâmetro *dwFlags* recebe um **ou** bit de sinalizações da enumeração de sinalizador de [**leitor de \_ origem \_ \_ MF**](/windows/desktop/api/mfreadwrite/ne-mfreadwrite-mf_source_reader_flag) . O parâmetro *pSample* recebe um ponteiro para a interface [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) , que é usada para acessar os dados de áudio. Em alguns casos, uma chamada para **ReadSample** não gera dados; nesse caso, o ponteiro **IMFSample** é **nulo**.
-2.  Verifica *dwFlags* para os seguintes sinalizadores:
-    -   **MF \_ \_READERF \_ CURRENTMEDIATYPECHANGED de origem**. Esse sinalizador indica uma alteração de formato no arquivo de origem. Os arquivos WAVE não dão suporte a alterações de formato.
-    -   **MF \_ \_READERF \_ ENDOFSTREAM de origem**. Esse sinalizador indica o fim do fluxo.
-3.  Chama [**IMFSample:: ConvertToContiguousBuffer**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-converttocontiguousbuffer) para obter um ponteiro para um objeto de buffer.
-4.  Chama [**IMFMediaBuffer:: Lock**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-lock) para obter um ponteiro para a memória do buffer.
+1.  Chama [**IMFSourceReader::ReadSample**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-readsample) para ler o áudio do arquivo de origem. O *parâmetro dwFlags* recebe um **OR** bit a bit de sinalizadores da [**enumeração MF \_ SOURCE READER \_ \_ FLAG.**](/windows/desktop/api/mfreadwrite/ne-mfreadwrite-mf_source_reader_flag) O *parâmetro pSample* recebe um ponteiro para a interface [**IMFSample,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) que é usada para acessar os dados de áudio. Em alguns casos, uma chamada para **ReadSample** não gera dados, caso em que o ponteiro **IMFSample** é **NULL.**
+2.  Verifica *dwFlags para* os seguintes sinalizadores:
+    -   **MF \_ SOURCE \_ READERF \_ CURRENTMEDIATYPECHANGED**. Esse sinalizador indica uma alteração de formato no arquivo de origem. Os arquivos WAVE não são suportados por alterações de formato.
+    -   **MF \_ SOURCE \_ READERF \_ ENDOFSTREAM**. Esse sinalizador indica o final do fluxo.
+3.  Chama [**IMFSample::ConvertToContiguousBuffer**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-converttocontiguousbuffer) para obter um ponteiro para um objeto de buffer.
+4.  Chama [**IMFMediaBuffer::Lock**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-lock) para obter um ponteiro para a memória do buffer.
 5.  Grava os dados de áudio no arquivo de saída.
-6.  Chama [**IMFMediaBuffer:: Unlock**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-unlock) para desbloquear o objeto buffer.
+6.  Chama [**IMFMediaBuffer::Unlock para**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediabuffer-unlock) desbloquear o objeto de buffer.
 
-A função divide o loop quando qualquer uma das seguintes ações ocorre:
+A função interrompe o loop quando qualquer um dos seguintes ocorre:
 
--   O formato do fluxo é alterado.
+-   O formato de fluxo muda.
 -   O final do fluxo foi atingido.
--   A quantidade máxima de dados de áudio é gravada no arquivo de saída.
--   Ocorre um erro.
+-   A quantidade máxima de dados de áudio é gravado no arquivo de saída.
+-   Ocorrerá um erro.
 
-## <a name="finalize-the-file-header"></a>Finalizar o cabeçalho do arquivo
+## <a name="finalize-the-file-header"></a>Finalizar o header de arquivo
 
-Os valores de tamanho que são armazenados no cabeçalho de onda não são conhecidos até que a função anterior seja concluída. O `FixUpChunkSizes` preenche esses valores:
+Os valores de tamanho armazenados no header WAVE não são conhecidos até que a função anterior seja concluída. O `FixUpChunkSizes` preenche estes valores:
 
 
 ```C++
@@ -714,7 +714,7 @@ HRESULT FixUpChunkSizes(
 [Tipos de mídia de áudio](audio-media-types.md)
 </dt> <dt>
 
-[Leitor de origem](source-reader.md)
+[Leitor de Origem](source-reader.md)
 </dt> <dt>
 
 [**IMFSourceReader**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereader)

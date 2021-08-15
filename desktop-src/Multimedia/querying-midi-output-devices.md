@@ -13,12 +13,12 @@ keywords:
 - consultando dispositivos de saída de MIDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 292fbacbb4acf182d566e8c98832dfb0f993ea2b
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: b493c0b3554a9a60cfc349d13a5404ec4d2b27915933c14b387df29a582406e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105775686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118371908"
 ---
 # <a name="querying-midi-output-devices"></a>Consultando dispositivos de saída de MIDI
 
@@ -30,6 +30,6 @@ Se o dispositivo for um sintetizador interno, informações adicionais do dispos
 
 O membro **dwSupport** da estrutura **MIDIOUTCAPS** indica se o driver de dispositivo dá suporte a alterações de volume, cache de patch e streaming. As alterações de volume têm suporte apenas por dispositivos do sintetizador interno. As portas de saída MIDI externas não dão suporte a alterações de volume. Para obter informações sobre como alterar o volume, consulte [alterando o volume do sintetizador MIDI interno](changing-internal-midi-synthesizer-volume.md).
 
- 
+ 
 
- 
+ 

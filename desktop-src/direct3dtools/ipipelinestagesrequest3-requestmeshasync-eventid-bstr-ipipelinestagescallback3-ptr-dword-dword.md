@@ -4,7 +4,7 @@ MS-HAID: vspixengine.IPipeLineStagesRequest3\_RequestMeshAsync\_EventID\_BSTR\_I
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Método IPipeLineStagesRequest3:: RequestMeshAsync'
+title: Método IPipeLineStagesRequest3::RequestMeshAsync
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: CAA36C96-3622-4D26-AB26-AD7960700B2A
@@ -17,14 +17,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 50fc73c803f708284ecef73f89ba74a452816bc9
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 39177109630feb09231616173cd8ccc498c9e7f54b99aff7d4ac6b75aa946123
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105812241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117721628"
 ---
-# <a name="span-idvspixengineipipelinestagesrequest3_requestmeshasync_eventid_bstr_ipipelinestagescallback3_ptr_dword_dwordspanipipelinestagesrequest3requestmeshasync-method"></a><span id="vspixengine.ipipelinestagesrequest3_requestmeshasync_eventid_bstr_ipipelinestagescallback3_ptr_dword_dword"></span>Método IPipeLineStagesRequest3:: RequestMeshAsync
+# <a name="span-idvspixengineipipelinestagesrequest3_requestmeshasync_eventid_bstr_ipipelinestagescallback3_ptr_dword_dwordspanipipelinestagesrequest3requestmeshasync-method"></a><span id="vspixengine.ipipelinestagesrequest3_requestmeshasync_eventid_bstr_ipipelinestagescallback3_ptr_dword_dword"></span>Método IPipeLineStagesRequest3::RequestMeshAsync
 
 Uma solicitação assíncrona para obter dados de malha do evento especificado.
 
@@ -43,14 +43,14 @@ HRESULT RequestMeshAsync(
 
 ## <a name="parameters"></a>Parâmetros
 
-*1008*   
+*Eventid*   
 O evento especificado.
 
 *meshFilename*   
-Uma cadeia de caracteres COM que contém o nome do caminho do arquivo onde os dados de malha são gravados.
+Uma cadeia de caracteres COM que contém o nome do caminho do arquivo em que os dados da malha são gravados.
 
 *requestCallback*   
-O endereço do retorno de chamada usado para notificar o host dos resultados.
+O endereço do retorno de chamada usado para notificar o host de resultados.
 
 *requestCookie*   
 Um cookie que identifica exclusivamente a solicitação e pode ser usado para sinalizar para que ela seja cancelada.
@@ -58,13 +58,13 @@ Um cookie que identifica exclusivamente a solicitação e pode ser usado para si
 *progressIntervalMsecs*   
 Não usado.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Confira também
 

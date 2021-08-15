@@ -1,9 +1,9 @@
 ---
 title: atributo appobject
-description: O atributo \ appobject \ identifica a coclass como um objeto de aplicativo, que está associado a um aplicativo EXE completo.
+description: O atributo \ appobject\ identifica a coclasse como um objeto de aplicativo, que está associado a um aplicativo EXE completo.
 ms.assetid: f4fcdf55-7431-4d66-8a46-f741c52fbe56
 keywords:
-- appobject do atributo MIDL
+- atributo appobject MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f0d937d4a83306bc0c29f3c8c806bc043febec6a
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f54cbe8d5c1c7a573216ae9cb55075ba3b3766d0d8c7898233be9364488131e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104365898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117808328"
 ---
 # <a name="appobject-attribute"></a>atributo appobject
 
-O atributo **\[ appobject \]** identifica a [**coclass**](coclass.md) como um objeto Application, que está associado a um aplicativo exe completo.
+O **\[ atributo appobject \]** identifica a [**coclasse**](coclass.md) como um objeto de aplicativo, que está associado a um aplicativo EXE completo.
 
 ``` syntax
 [
@@ -39,21 +39,21 @@ coclass classname
 
 <dl> <dt>
 
-*UUID-número* 
+*uuid-number* 
 </dt> <dd>
 
-Especifica um número de identificação universalmente exclusivo para a [**coclass**](coclass.md).
+Especifica um número de identificação universalmente exclusivo para a [**coclasse**](coclass.md).
 
 </dd> <dt>
 
-*Categoria-atributo-lista* 
+*coclass-attribute-list* 
 </dt> <dd>
 
-Especifica zero ou mais atributos que se aplicam à instrução [**coclass**](coclass.md) . Os atributos **de coclasse** permitidos são [**\[ \] HelpString**](helpstring.md), [**\[ HelpContext \]**](helpcontext.md), [**\[ licenciado \]**](licensed.md), [**\[ version \]**](version.md), [**\[ Control \]**](control.md)e [**\[ Hidden \]**](hidden.md).
+Especifica zero ou mais atributos que se aplicam à [**instrução coclass.**](coclass.md) Os atributos **de coclasse** que permitem [**\[ são \] helpstring**](helpstring.md), [**\[ helpcontext, \]**](helpcontext.md) [**\[ licenciado, \]**](licensed.md) [**\[ versão \]**](version.md), [**\[ controle \]**](control.md)e [**\[ oculto. \]**](hidden.md)
 
 </dd> <dt>
 
-*ClassName* 
+*Classname* 
 </dt> <dd>
 
 Especifica o nome pelo qual o objeto de componente é conhecido na biblioteca de tipos.
@@ -63,15 +63,15 @@ Especifica o nome pelo qual o objeto de componente é conhecido na biblioteca de
 *definição de coclasse* 
 </dt> <dd>
 
-Especifica as instruções que compõem a definição da [**coclasse**](coclass.md) .
+Especifica instruções que comem a [**definição de coclasse.**](coclass.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O atributo **\[ appobject \]** também indica que as funções e as propriedades da [**coclass**](coclass.md) estão disponíveis globalmente na biblioteca de tipos atual.
+O **\[ atributo appobject \]** também indica que as funções e as propriedades da [**coclasse**](coclass.md) estão disponíveis globalmente na biblioteca de tipos atual.
 
-A representação TYPEFLAG para esse atributo é TYPEFLAG \_ FAPPOBJECT
+A representação de typeflag para esse atributo é TYPEFLAG \_ FAPPOBJECT
 
 ## <a name="examples"></a>Exemplos
 
@@ -95,7 +95,7 @@ coclass Hello
 [**coclass**](coclass.md)
 </dt> <dt>
 
-[**controlo**](control.md)
+[**Controle**](control.md)
 </dt> <dt>
 
 [Gerando uma biblioteca de tipos com MIDL](generating-a-type-library-with-midl-2.md)
@@ -107,7 +107,7 @@ coclass Hello
 [**helpcontext**](helpcontext.md)
 </dt> <dt>
 
-[**oculto**](hidden.md)
+[**Escondidos**](hidden.md)
 </dt> <dt>
 
 [**licensed**](licensed.md)
@@ -116,15 +116,15 @@ coclass Hello
 [Exemplo de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintaxe do arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxe de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[TYPEFLAGS](/windows/win32/api/oaidl/ne-oaidl-typeflags)
+[Typeflags](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> <dt>
 
 [**Versão**](version.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,26 +1,26 @@
 ---
 title: Configurações WER
-description: Configurações para personalizar a experiência de relatório de problemas. Todas essas configurações podem ser definidas usando Política de Grupo. Alguns também podem ser alterados na central de ações para Windows 7 e Windows 8. Para o Windows 10, use a função de pesquisa em configurações para localizar exibir configurações avançadas do sistema.
+description: Configurações para personalizar a experiência de relatório de problemas. Todas essas configurações podem ser definidas usando Política de Grupo. alguns também podem ser alterados na central de ações para Windows 7 e Windows 8. para Windows 10, use a função de pesquisa em Configurações para localizar exibir configurações avançadas do sistema.
 ms.assetid: 031c5591-31b0-42f1-9a98-ecf10a5d5571
 keywords:
-- Relatório de Erros do Windows de relatório de erros do Windows, configurações
+- Windows relatório de erros Relatório de Erros do Windows, configurações
 ms.topic: article
 ms.date: 03/12/2021
-ms.openlocfilehash: 28b6abbda7d851daddb75ec534b8128d1a831b3f
-ms.sourcegitcommit: 434d5437d4c31c47358598ea5275177c2698f557
+ms.openlocfilehash: 4586c4f282cbc5c4e2f683c0764eac048f6c05d22a1972cb0ceb84f9699c7925
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "105751388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118442225"
 ---
 # <a name="wer-settings"></a>Configurações WER
 
-Relatório de Erros do Windows (WER) fornece muitas configurações para personalizar a experiência de relatório de problemas. Todas essas configurações podem ser definidas usando Política de Grupo. Alguns também podem ser alterados na **central de ações** para Windows 7 e Windows 8. Para o Windows 10, use a função de pesquisa em configurações para localizar **exibir configurações avançadas do sistema**. As configurações do WER estão localizadas em uma das seguintes subchaves do registro:
+Relatório de Erros do Windows (WER) fornece muitas configurações para personalizar a experiência de relatório de problemas. Todas essas configurações podem ser definidas usando Política de Grupo. alguns também podem ser alterados na **central de ações** para Windows 7 e Windows 8. para Windows 10, use a função de pesquisa em Configurações para localizar **exibir configurações avançadas do sistema**. As configurações do WER estão localizadas em uma das seguintes subchaves do registro:
 
--   **HKEY \_ Software de \_ usuário atual** \\  \\ **Microsoft** \\ **Windows** \\ **relatório de erros do Windows**
--   **HKEY \_ Software do \_ computador local** \\  \\ **Microsoft** \\ **Windows** \\ **relatório de erros do Windows**
+-   **HKEY \_ Software de \_ usuário atual** \\  \\ **Microsoft** \\ **Windows** \\ **Relatório de Erros do Windows**
+-   **HKEY \_ Software do \_ computador LOCAL** \\  \\ Windows da **Microsoft** \\  \\ **Relatório de Erros do Windows**
 
-## <a name="windows-error-reporting-subkey"></a>Subchave Relatório de Erros do Windows
+## <a name="windows-error-reporting-subkey"></a>subchave Relatório de Erros do Windows
 
 <dl> <dt>
 
@@ -127,7 +127,7 @@ Nome do servidor corporativo
 
 Valores possíveis:<dl> <dd>0-não (padrão)</dd> <dd>1 – Sim</dd> </dl>
 
-Se a autenticação integrada do Windows deve ser usada
+se deseja usar Windows autenticação integrada
 
 </dd> <dt>
 
@@ -142,7 +142,7 @@ Se o SSL deve ser usado
 
 </dd> <dt>
 
-<span id="DebugApplications__ExeName___replace___ExeName___with_an_actual_name_of_an_.exe_file__for_example___notepad.exe__"></span><span id="debugapplications__exename___replace___exename___with_an_actual_name_of_an_.exe_file__for_example___notepad.exe__"></span><span id="DEBUGAPPLICATIONS__EXENAME___REPLACE___EXENAME___WITH_AN_ACTUAL_NAME_OF_AN_.EXE_FILE__FOR_EXAMPLE___NOTEPAD.EXE__"></span>**DebugApplications \\ \[ EXEName \] (substitua " \[ EXEName \] " por um nome real de um arquivo. exe, por exemplo, "notepad.exe")**
+<span id="DebugApplications__ExeName___replace___ExeName___with_an_actual_name_of_an_.exe_file__for_example___notepad.exe__"></span><span id="debugapplications__exename___replace___exename___with_an_actual_name_of_an_.exe_file__for_example___notepad.exe__"></span><span id="DEBUGAPPLICATIONS__EXENAME___REPLACE___EXENAME___WITH_AN_ACTUAL_NAME_OF_AN_.EXE_FILE__FOR_EXAMPLE___NOTEPAD.EXE__"></span>**DebugApplications \\ \[ EXEName \] (substitua " \[ EXEName \] " por um nome real de um arquivo .exe, por exemplo, "notepad.exe")**
 </dt> <dd>
 
 **REG \_ DWORD**
@@ -244,7 +244,7 @@ Se deseja enviar todos os relatórios para a fila do usuário
 
 O caminho do diretório. O valor padrão é% LOCALAPPDATA% \\ CrashDumps. Se o padrão não for usado, o aplicativo deverá garantir que a pasta tenha uma ACL suficiente.
 
-**Windows Vista:** Não há suporte para os valores de registro na chave **LocalDumps** . Observe que esse comportamento mudou com o Windows Server 2008 e o Windows Vista com Service Pack 1 (SP1).
+**Windows Vista:** Não há suporte para os valores de registro na chave **LocalDumps** . observe que esse comportamento mudou com Windows Server 2008 e Windows Vista com Service Pack 1 (SP1).
 
 O caminho onde os arquivos de despejo devem ser armazenados.
 
@@ -261,7 +261,7 @@ Essa configuração não tem suporte no hive **HKEY \_ Current \_ User** Registr
 
 O número máximo. O padrão é 10. Quando o valor máximo for excedido, o arquivo de despejo mais antigo na pasta será substituído pelo novo arquivo de despejo.
 
-**Windows Vista:** Não há suporte para os valores de registro na chave **LocalDumps** . Observe que esse comportamento mudou com o Windows Server 2008 e o Windows Vista com SP1.
+**Windows Vista:** Não há suporte para os valores de registro na chave **LocalDumps** . observe que esse comportamento mudou com Windows Server 2008 e Windows Vista com SP1.
 
 O número máximo de arquivos de despejo na pasta.
 
@@ -276,7 +276,7 @@ Essa configuração não tem suporte no hive **HKEY \_ Current \_ User** Registr
 
 Valores possíveis:<dl> <dd>0-despejo personalizado</dd> <dd>1-minidespejo (padrão)</dd> <dd>2-despejo completo</dd> </dl>
 
-**Windows Vista:** Não há suporte para os valores de registro na chave **LocalDumps** . Observe que esse comportamento mudou com o Windows Server 2008 e o Windows Vista com SP1.
+**Windows Vista:** Não há suporte para os valores de registro na chave **LocalDumps** . observe que esse comportamento mudou com Windows Server 2008 e Windows Vista com SP1.
 
 O tipo de despejo.
 
@@ -291,7 +291,7 @@ Essa configuração não tem suporte no hive **HKEY \_ Current \_ User** Registr
 
 Um ou mais valores da enumeração [**de \_ tipo de minidespejo**](/windows/desktop/api/minidumpapiset/ne-minidumpapiset-minidump_type) . O padrão é {**MiniDumpWithDataSegs** \| **MiniDumpWithUnloadedModules** \| **MiniDumpWithProcessThreadData**}.
 
-**Windows Vista:** Não há suporte para os valores de registro na chave **LocalDumps** . Observe que esse comportamento mudou com o Windows Server 2008 e o Windows Vista com SP1.
+**Windows Vista:** Não há suporte para os valores de registro na chave **LocalDumps** . observe que esse comportamento mudou com Windows Server 2008 e Windows Vista com SP1.
 
 As opções de despejo personalizado a serem usadas. Esse valor é usado somente quando **dumptype** é definido como 0.
 
@@ -352,11 +352,11 @@ O conteúdo do valor é ignorado.
 
 O nome do valor é usado para buscar o valor de pwszOutOfProcessCallbackDll.
 
-**Windows server 2008, Windows Vista, Windows server 2003 e Windows XP:** Não há suporte para esse valor de registro.
+**Windows server 2008, Windows Vista, Windows Server 2003 e Windows XP:** Não há suporte para esse valor de registro.
 
 </dd> </dl>
 
-## <a name="wer-live-kernel-reports-settings"></a>Configurações de relatórios de kernel do WER Live
+## <a name="wer-live-kernel-reports-settings"></a>relatórios de Kernel do WER Live Configurações
 
 As configurações de relatórios do kernel ao vivo do WER, que são descritas a seguir, estão localizadas na seguinte subchave do registro:
 
@@ -412,7 +412,7 @@ O limite (em horas) de quantas vezes qualquer componente no sistema pode criar u
 **REG \_ sz**
 
 
-O local de armazenamento Redirecionado de relatórios de kernel ao vivo. O local padrão é%systemroot%\LiveKernelReports. Esse valor deve ser um caminho válido. O caminho deve estar no formato NT Path. Por exemplo, \? ? \c: \LiveDumpsFolder.  Para obter mais informações sobre formatos de caminho, consulte  [formatos de caminho de arquivo em sistemas Windows](/dotnet/standard/io/file-path-formats).
+O local de armazenamento Redirecionado de relatórios de kernel ao vivo. O local padrão é%systemroot%\LiveKernelReports. Esse valor deve ser um caminho válido. O caminho deve estar no formato NT Path. Por exemplo, \? ? \c: \LiveDumpsFolder.  para obter mais informações sobre formatos de caminho, consulte [formatos de caminho de arquivo em sistemas Windows](/dotnet/standard/io/file-path-formats).
 
 </dd> </dl>
 

@@ -1,7 +1,7 @@
 - name: Desligamento do sistema
   href: system-shutdown.md
   items:
-    - name: Alterações de desligamento do Windows Vista
+    - name: alterações de desligamento do Windows Vista
       href: shutdown-changes-for-windows-vista.md
     - name: Sobre o desligamento do sistema
       href: about-system-shutdown.md

@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LVM_GETCOLUMN (commctrl. h)
-description: Obtém os atributos de uma coluna do controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usando a \_ macro GetColumn de ListView.
+title: LVM_GETCOLUMN mensagem (Commctrl.h)
+description: Obtém os atributos da coluna de um controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usando a \_ macro GetColumn ListView.
 ms.assetid: 59b4bbfc-6c38-4faa-8f2e-3ea5d24e55a6
 keywords:
-- Controles de LVM_GETCOLUMN de mensagens do Windows
+- LVM_GETCOLUMN controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3eebf57138d27c31c5594f271e5d36a052b81673
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b65478d1d249740c630499fd4837e31d4eba7b992cf3ef3682c4e7b72d0706cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118411732"
 ---
-# <a name="lvm_getcolumn-message"></a>\_Mensagem de GETcolumn do LVM
+# <a name="lvm_getcolumn-message"></a>Mensagem GETCOLUMN do LVM \_
 
-Obtém os atributos de uma coluna do controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usando a macro [**\_ GetColumn de ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getcolumn) .
+Obtém os atributos da coluna de um controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usando a macro [**\_ GetColumn ListView.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getcolumn)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -39,13 +39,13 @@ O índice da coluna.
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**LVCOLUMN**](/windows/win32/api/commctrl/ns-commctrl-lvcolumna) que especifica as informações para recuperar e receber informações sobre a coluna. O membro **Mask** especifica quais atributos de coluna recuperar. Se o membro de **máscara** especificar o \_ valor de texto LVCF, o membro **pszText** deverá conter o endereço do buffer que receberá o texto do item e o membro **cchTextMax** deverá especificar o tamanho do buffer.
+Um ponteiro para uma [**estrutura LVCOLUMN**](/windows/win32/api/commctrl/ns-commctrl-lvcolumna) que especifica as informações a recuperar e recebe informações sobre a coluna. O **membro mask** especifica quais atributos de coluna recuperar. Se  o membro mask especificar o valor de TEXT LVCF, o membro pszText deverá conter o endereço do buffer que recebe o texto do item e o membro \_ **cchTextMax** deverá especificar o tamanho do buffer. 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
+Retorna **TRUE se** for bem-sucedido ou FALSE **caso** contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| parâmetro<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

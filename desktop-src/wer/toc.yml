@@ -1,21 +1,21 @@
 - name: Relatório de Erros do Windows
   href: windows-error-reporting.md
   items:
-    - name: O que há de novo no WER
+    - name: Novidades no WER
       href: what-s-new-in-wer.md
     - name: Sobre o WER
       href: about-wer.md
-    - name: Usando o WER
+    - name: Usando WER
       href: using-wer.md
       items:
-        - name: Coletando despejos de User-Mode
+        - name: Coletando despejos User-Mode dados
           href: collecting-user-mode-dumps.md
-    - name: Referência do WER
+    - name: Referência wer
       href: wer-reference.md
       items:
-        - name: Códigos de erro do WER
+        - name: Códigos de erro wer
           href: wer-error-codes.md
-        - name: Funções do WER
+        - name: Funções WER
           href: wer-functions.md
           items:
             - name: AddERExcludedApplication
@@ -58,7 +58,7 @@
               href: /windows/desktop/api/Werapi/nf-werapi-werreportclosehandle
             - name: WerReportCreate
               href: /windows/desktop/api/Werapi/nf-werapi-werreportcreate
-            - name: WerReportHang
+            - name: WerReport Ltda
               href: /windows/desktop/api/ErrorRep/nf-errorrep-werreporthang
             - name: WerReportSetParameter
               href: /windows/desktop/api/Werapi/nf-werapi-werreportsetparameter
@@ -94,7 +94,7 @@
               href: /windows/desktop/api/Werapi/nf-werapi-werunregisterruntimeexceptionmodule
         - name: Configurações WER
           href: wer-settings.md
-        - name: Estruturas do WER
+        - name: Estruturas WER
           href: wer-structures.md
           items:
             - name: WER_REPORT_METADATA_V2

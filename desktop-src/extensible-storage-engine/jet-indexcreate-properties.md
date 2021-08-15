@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: Propriedades de JET_INDEXCREATE'
-title: Propriedades de JET_INDEXCREATE
+description: 'Saiba mais sobre: JET_INDEXCREATE propriedades'
+title: JET_INDEXCREATE propriedades
 TOCTitle: JET_INDEXCREATE properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.JET_INDEXCREATE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexcreate_properties(v=EXCHG.10)
 ms:contentKeyID: 55103645
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 66b6ada105e6f6d12cb754f288478e85d75a07e9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0669d00b9c28e5299c5b9f55f0931ec7d22921eddad5e2b6b4876199057d111d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118254246"
 ---
-# <a name="jet_indexcreate-properties"></a>Propriedades de JET_INDEXCREATE
+# <a name="jet_indexcreate-properties"></a>JET_INDEXCREATE propriedades
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo de [JET_INDEXCREATE](./jet-indexcreate-class.md) expõe os membros a seguir.
+O [JET_INDEXCREATE](./jet-indexcreate-class.md) de dados expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,7 +40,7 @@ O tipo de [JET_INDEXCREATE](./jet-indexcreate-class.md) expõe os membros a segu
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn335156(v=exchg.10).md">cbKeyMost</a></td>
-<td>Obtém ou define o tamanho máximo permitido, em bytes, para as chaves no índice. O tamanho mínimo de chave máximo suportado é JET_cbKeyMostMin (255), que é o tamanho de chave máximo herdado. O tamanho máximo da chave depende do tamanho da página do banco de dados <a href="hh596135(v=exchg.10).md">DatabasePageSize</a>. O tamanho máximo da chave pode ser recuperado com o <a href="dn351156(v=exchg.10).md">máximo</a>. Esse parâmetro é ignorado no Windows XP e no Windows Server 2003. Diferentemente da API não gerenciada, <strong>IndexKeyMost ()</strong> (JET_bitIndexKeyMost) não é necessária, ela será adicionada automaticamente.</td>
+<td>Obtém ou define o tamanho máximo permitida, em bytes, para chaves no índice. O tamanho máximo mínimo da chave com suporte é JET_cbKeyMostMin (255), que é o tamanho máximo da chave herdado. O tamanho máximo da chave depende do tamanho da página do banco de <a href="hh596135(v=exchg.10).md">dados DatabasePageSize</a>. O tamanho máximo da chave pode ser recuperado com <a href="dn351156(v=exchg.10).md">KeyMost.</a> Esse parâmetro é ignorado no Windows XP e Windows Server 2003. Ao contrário da API não gerenciamento, <strong>IndexKeyMost()</strong> (JET_bitIndexKeyMost) não é necessário, ela será adicionada automaticamente.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
@@ -54,23 +54,23 @@ O tipo de [JET_INDEXCREATE](./jet-indexcreate-class.md) expõe os membros a segu
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="dn335157(v=exchg.10).md">erra</a></td>
-<td>Obtém ou define o código de erro da criação deste índice.</td>
+<td><a href="dn335157(v=exchg.10).md">Err</a></td>
+<td>Obtém ou define o código de erro da criação desse índice.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn335119(v=exchg.10).md">grbit</a></td>
-<td>Obtém ou define as opções de criação de índice.</td>
+<td>Obtém ou define opções de criação de índice.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn335159(v=exchg.10).md">pidxUnicode</a></td>
-<td>Obtém ou define as opções de comparação Unicode opcionais.</td>
+<td>Obtém ou define as opções opcionais de comparação unicode.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn335120(v=exchg.10).md">pSpaceHints</a></td>
-<td>Obtém ou define as dicas de alocação, manutenção e uso de espaço.</td>
+<td>Obtém ou define dicas de alocação, manutenção e uso de espaço.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
@@ -85,7 +85,7 @@ O tipo de [JET_INDEXCREATE](./jet-indexcreate-class.md) expõe os membros a segu
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn335161(v=exchg.10).md">szKey</a></td>
-<td>Obtém ou define a descrição da chave de índice. Essa é uma cadeia de caracteres dupla com terminação nula de tokens delimitados por nulo. Cada token tem o formato [Direction-especificador] [nome-da-coluna], onde a especificação de direção é &quot; + &quot; ou &quot; - &quot; . por exemplo, um szKey de &quot; + abc\0-def\0 + ghi\0 &quot; será indexado nas três colunas &quot; ABC &quot; (em ordem crescente), &quot; Def &quot; (em ordem decrescente) e &quot; GHI &quot; (em ordem crescente).</td>
+<td>Obtém ou define a descrição da chave de índice. Essa é uma cadeia de caracteres terminada em nulo dupla de tokens delimitados por nulo. Cada token é do formato [direction-specifier][column-name], em que direction-specification é &quot; + &quot; ou &quot; - &quot; . por exemplo, uma szKey de &quot; +abc\0-def\0+gee\0 será indexada sobre as três &quot; colunas abc (em ordem &quot; &quot; crescente), def (em ordem decrescente) e &quot; &quot; &quot; gee (em ordem &quot; crescente).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
@@ -102,6 +102,6 @@ Parte superior
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_INDEXCREATE](./jet-indexcreate-class.md)
+[JET_INDEXCREATE classe](./jet-indexcreate-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

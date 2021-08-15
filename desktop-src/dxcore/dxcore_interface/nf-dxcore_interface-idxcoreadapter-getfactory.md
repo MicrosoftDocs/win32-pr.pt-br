@@ -4,12 +4,12 @@ description: 'Recupera um ponteiro de interface [IDXCoreAdapterFactory](./nn-dxc
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: 1ac3e7fccd39b9b03ecb7016494a610519d26afa
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 759960875f67acefabf9f4207a9ea38150757b0b2bbec673e6feed3b0c197ee9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104172760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118279459"
 ---
 # <a name="idxcoreadaptergetfactory-method"></a>Método IDXCoreAdapter:: GetFactory
 

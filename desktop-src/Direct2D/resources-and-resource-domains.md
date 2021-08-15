@@ -1,26 +1,26 @@
 ---
 title: Visão geral de recursos
-description: Descreve os recursos do Direct2D e como eles podem ser compartilhados.
+description: descreve Direct2D recursos e como eles podem ser compartilhados.
 ms.assetid: afd308a7-9524-4436-9a0e-8575383d96fa
 keywords:
 - Direct2D, recursos
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: bf4eb807a25b592e32a2d83436532af17462d70c
-ms.sourcegitcommit: 7d0cc7eb398fee8f5be55cd654a12d29937d643c
+ms.openlocfilehash: 67dc8c34703c834dbf0f1b651e3c118831d88abe1676feaba68ac53ecb603565
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "104297849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117825107"
 ---
 # <a name="resources-overview"></a>Visão geral de recursos
 
-Um recurso Direct2D é um objeto usado para desenhar e é representado por uma interface Direct2D, como [**ID2D1Geometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry) ou [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget). Este tópico descreve os tipos de recursos do Direct2D e como eles podem ser compartilhados.
+um recurso de Direct2D é um objeto usado para desenhar e é representado por uma interface Direct2D, como [**ID2D1Geometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry) ou [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget). este tópico descreve os tipos de Direct2D recursos e como eles podem ser compartilhados.
 
 Este tópico contém as seguintes seções:
 
--   [Sobre os recursos do Direct2D](#about-direct2d-resources)
+-   [sobre Direct2D recursos](#about-direct2d-resources)
 -   [Recursos independentes de dispositivo](#device-independent-resources)
 -   [Recursos dependentes do dispositivo](#device-dependent-resources)
 -   [Compartilhando recursos de fábrica](#sharing-factory-resources)
@@ -29,18 +29,18 @@ Este tópico contém as seguintes seções:
     -   [Destinos de renderização da superfície DXGI](#dxgi-surface-render-targets)
     -   [Destinos de renderização e bitmaps compartilhados compatíveis](#compatible-render-targets-and-shared-bitmaps)
 
-## <a name="about-direct2d-resources"></a>Sobre os recursos do Direct2D
+## <a name="about-direct2d-resources"></a>sobre Direct2D recursos
 
 Muitas APIs 2D aceleradas por hardware são projetadas em um modelo de recurso focado em CPU e em um conjunto de operações de renderização que funcionam bem em CPUs. em seguida, alguma parte da API é acelerada pelo hardware. A implementação dessas APIs requer um Gerenciador de recursos para o mapeamento de recursos de CPU para recursos na GPU. Devido a limitações de GPU, algumas operações podem não ser aceleradas em todas as circunstâncias. Nesses casos, o Gerenciador de recursos deve se comunicar entre a CPU e a GPU (o que é caro) para que ele possa fazer a transição para a renderização da CPU. Em alguns casos, ele pode forçar a renderização de forma invisível para o retorno completo da CPU. Além disso, as operações de renderização que parecem simples podem exigir etapas de renderização intermediárias temporárias que não são expostas na API e que exigem recursos adicionais de GPU.
 
-O Direct2D fornece um mapeamento mais direto para fazer uso completo da GPU. Ele fornece duas categorias de recursos: independente de dispositivo e dependente de dispositivo.
+Direct2D fornece um mapeamento mais direto para fazer uso completo da GPU. Ele fornece duas categorias de recursos: independente de dispositivo e dependente de dispositivo.
 
 -   Recursos independentes de dispositivo, como [**ID2D1Geometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry), são mantidos na CPU.
 -   Recursos dependentes do dispositivo, como [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget) e [**ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush), mapeiam diretamente para recursos na GPU (quando a aceleração de hardware está disponível). As chamadas de renderização são realizadas combinando informações de vértice e de cobertura de uma geometria com informações de texturing produzidas pelos recursos dependentes do dispositivo.
 
 Quando você cria recursos dependentes do dispositivo, os recursos do sistema (a GPU, se disponíveis ou a CPU) são alocados quando o dispositivo é criado e não são alterados de uma operação de renderização para outra. Essa situação elimina a necessidade de um Gerenciador de recursos. Além dos aprimoramentos gerais de desempenho que são fornecidos pela eliminação de um Gerenciador de recursos, esse modelo permite que você controle diretamente qualquer renderização intermediária.
 
-Como o Direct2D fornece muito controle sobre os recursos, você deve compreender os diferentes tipos de recursos e quando eles podem ser usados juntos.
+como Direct2D fornece tanto controle sobre os recursos, você deve entender os diferentes tipos de recursos e quando eles podem ser usados juntos.
 
 ## <a name="device-independent-resources"></a>Device-Independent recursos
 
@@ -69,7 +69,7 @@ Veja a seguir exemplos de recursos dependentes do dispositivo:
 -   [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget) e as interfaces que herdam dele. Para criar um destino de renderização, use uma fábrica ou outro destino de renderização.
 
 > [!Note]  
-> A partir do Windows 8, há novas interfaces que criam recursos dependentes de dispositivo. Um [**ID2D1Device**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1device) e um [**ID2D1DeviceContext**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) podem compartilhar um recurso se o contexto do dispositivo e o recurso forem criados a partir do mesmo **ID2D1Device**.
+> a partir do Windows 8, há novas interfaces que criam recursos dependentes de dispositivo. Um [**ID2D1Device**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1device) e um [**ID2D1DeviceContext**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) podem compartilhar um recurso se o contexto do dispositivo e o recurso forem criados a partir do mesmo **ID2D1Device**.
 
  
 
@@ -79,7 +79,7 @@ Os recursos dependentes do dispositivo tornam-se inutilizáveis quando os dispos
 
 Você pode compartilhar todos os recursos independentes de dispositivo criados por uma fábrica com todos os outros recursos (independentes do dispositivo ou do dispositivo) criados pela mesma fábrica. Por exemplo, você pode usar dois objetos [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget) para desenhar o mesmo [**ID2D1RectangleGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1rectanglegeometry) se ambos os objetos **ID2D1RenderTarget** tiverem sido criados pela mesma fábrica.
 
-As interfaces do coletor ([**ID2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink), [**ID2D1GeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrysink)e [**ID2D1TessellationSink**](/windows/win32/api/d2d1/nn-d2d1-id2d1tessellationsink)) podem ser compartilhadas com recursos criados por qualquer fábrica. Ao contrário de outras interfaces no Direct2D, qualquer implementação de uma interface de coletor pode ser usada. Por exemplo, você pode usar sua própria implementação de **ID2D1SimplifiedGeometrySink**.
+As interfaces do coletor ([**ID2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink), [**ID2D1GeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrysink)e [**ID2D1TessellationSink**](/windows/win32/api/d2d1/nn-d2d1-id2d1tessellationsink)) podem ser compartilhadas com recursos criados por qualquer fábrica. ao contrário de outras interfaces no Direct2D, qualquer implementação de uma interface de coletor pode ser usada. Por exemplo, você pode usar sua própria implementação de **ID2D1SimplifiedGeometrySink**.
 
 ## <a name="sharing-render-target-resources"></a>Compartilhando recursos de destino de renderização
 

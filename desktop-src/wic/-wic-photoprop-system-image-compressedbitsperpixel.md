@@ -1,23 +1,23 @@
 ---
-description: A política de metadados de foto para a propriedade System. Image. CompressedBitsPerPixel.
+description: A política de metadados de foto para a propriedade System.Image.CompressedBitsPerPixel.
 ms.assetid: e97a5c68-6d4a-44af-8096-22680f8b16b8
-title: Política de metadados de foto System. Image. CompressedBitsPerPixel
+title: Política de metadados de foto System.Image.CompressedBitsPerPixel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b45b3b1e8b29cdf992cd3b451a2e8a43947139a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4a18cc76e22c5c409e19e08fc5a2e667ad374348bc753ffa85cd09003a8bdaf4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105810828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118032705"
 ---
-# <a name="systemimagecompressedbitsperpixel-photo-metadata-policy"></a>Política de metadados de foto System. Image. CompressedBitsPerPixel
+# <a name="systemimagecompressedbitsperpixel-photo-metadata-policy"></a>Política de metadados de foto System.Image.CompressedBitsPerPixel
 
-A política de metadados de foto para a propriedade [System. Image. CompressedBitsPerPixel](../properties/props-system-image-compressedbitsperpixel.md) .
+A política de metadados de foto para a [propriedade System.Image.CompressedBitsPerPixel.](../properties/props-system-image-compressedbitsperpixel.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-PKEY \_ Image \_ CompressedBitsPerPixel
+Imagem PKEY \_ \_ CompressedBitsPerPixel
 
 ### <a name="containers"></a>Contêineres
 
@@ -25,25 +25,25 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-Yes
+Sim
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
 
-R8 de VT \_
+VT \_ R8
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
 
-Esse valor é gerado de System. Image. CompressedBitsPerPixelNumerator e System. Image. CompressedBitsPerPixelDenominator. Ele não pode ser gravado diretamente. Os valores de esquemas diferentes são reconciliados.
+Esse valor é gerado de System.Image.CompressedBitsPerPixelNumerator e System.Image.CompressedBitsPerPixelDenominator. Ele não pode ser gravado diretamente. Valores de esquemas diferentes são reconciliados.
 
 ### <a name="jpeg-policy"></a>Política JPEG
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                             | Formato de disco |
 |-------|----------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{UShort = 37122}    |             |
+| 1     | /app1/ifd/exif/{ushort=37122}    |             |
 | 2     | /xmp/exif:CompressedBitsPerPixel |             |
 
 
@@ -56,7 +56,7 @@ Esse valor é gerado de System. Image. CompressedBitsPerPixelNumerator e System.
 
 | Ordem | Caminho                             |
 |-------|----------------------------------|
-| 1     | /App1/IFD/EXIF/{UShort = 37122}    |
+| 1     | /app1/ifd/exif/{ushort=37122}    |
 | 2     | /xmp/exif:compressedbitsperpixel |
 
 
@@ -65,13 +65,13 @@ Esse valor é gerado de System. Image. CompressedBitsPerPixelNumerator e System.
 
 ### <a name="tiff-policies"></a>Políticas TIFF
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                                 | Formato de disco |
 |-------|--------------------------------------|-------------|
-| 1     | /IFD/EXIF/{UShort = 37122}             |             |
+| 1     | /ifd/exif/{ushort=37122}             |             |
 | 2     | /ifd/xmp/exif:CompressedBitsPerPixel |             |
 
 
@@ -84,7 +84,7 @@ Esse valor é gerado de System. Image. CompressedBitsPerPixelNumerator e System.
 
 | Ordem | Caminho                                 |
 |-------|--------------------------------------|
-| 1     | /IFD/EXIF/{UShort = 37122}             |
+| 1     | /ifd/exif/{ushort=37122}             |
 | 2     | /ifd/xmp/exif:compressedbitsperpixel |
 
 
@@ -97,7 +97,7 @@ Esse valor é gerado de System. Image. CompressedBitsPerPixelNumerator e System.
 
 <dl> <dt>
 
-[System. Image. CompressedBitsPerPixel](../properties/props-system-image-compressedbitsperpixel.md)
+[System.Image.CompressedBitsPerPixel](../properties/props-system-image-compressedbitsperpixel.md)
 </dt> </dl>
 
  

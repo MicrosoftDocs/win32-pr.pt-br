@@ -1,20 +1,20 @@
 ---
 title: Multimídia
-description: Este glossário contém definições para termos usados na documentação de multimídia do Windows.
+description: este glossário contém definições para termos usados na documentação de multimídia do Windows.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 0c35d8cd-0226-4161-bbb9-cb754785274c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ed45a6503e1856f41e892eb6bcad03f4263ddf6
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 243b9eb6d84b133a98d65f24e3486b79d78397f75c17f3ed5ceb52a3f2ff59ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104454044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118373357"
 ---
 # <a name="multimedia"></a>Multimídia
 
-Este glossário contém definições para termos usados na documentação de multimídia do Windows.
+este glossário contém definições para termos usados na documentação de multimídia do Windows.
 
 <dl> <dt>
 
@@ -238,7 +238,7 @@ Uma organização coletiva composta por fabricantes de instrumento MIDI (interfa
 <span id="_win32_midi_mapper_gloss"></span><span id="_WIN32_MIDI_MAPPER_GLOSS"></span>**Mapeador de Midi**
 </dt> <dd>
 
-O software de sistemas Windows que modifica mensagens de saída MIDI (interface digital de instrumento musical) e redireciona-as para um dispositivo de saída MIDI usando valores armazenados em um mapa de instalação MIDI. O mapeador de MIDI pode alterar o canal de destino e o dispositivo de saída para uma mensagem, bem como modificar mensagens de alteração de programa, valores de volume e valores de chave.
+Windows software de sistemas que modifica mensagens de saída midi (Interface Digital de instrumento Musical) e redireciona-as para um dispositivo de saída midi usando valores armazenados em um mapa de instalação midi. O mapeador de MIDI pode alterar o canal de destino e o dispositivo de saída para uma mensagem, bem como modificar mensagens de alteração de programa, valores de volume e valores de chave.
 
 </dd> <dt>
 
@@ -266,7 +266,7 @@ Dados MIDI (interface digital de instrumento musical) que podem ser reproduzidos
 <span id="_win32_midi_sequencer_gloss"></span><span id="_WIN32_MIDI_SEQUENCER_GLOSS"></span>**Sequenciador MIDI**
 </dt> <dd>
 
-Um programa que cria ou desempenha músicas armazenadas como arquivos MIDI (interface digital de instrumento musical). Quando um sequenciador reproduz arquivos MIDI, ele envia dados de MIDI do arquivo para um sintetizador MIDI, que produz os sons. O Windows fornece um sequenciador MIDI, acessível por meio da MCI (interface de controle de mídia), que reproduz arquivos MIDI. Consulte também [MCI (interface de controle de mídia)](/windows).
+Um programa que cria ou desempenha músicas armazenadas como arquivos MIDI (interface digital de instrumento musical). Quando um sequenciador reproduz arquivos MIDI, ele envia dados de MIDI do arquivo para um sintetizador MIDI, que produz os sons. Windows fornece um sequenciador MIDI, acessível por meio da MCI (interface de controle de mídia), que reproduz arquivos MIDI. Consulte também [MCI (interface de controle de mídia)](/windows).
 
 </dd> <dt>
 
@@ -497,52 +497,52 @@ A velocidade na qual um arquivo MIDI (interface digital de instrumento musical) 
 <span id="_win32_threshold_gloss"></span><span id="_WIN32_THRESHOLD_GLOSS"></span>**limite** de
 </dt> <dd>
 
-Para a interface do joystick, a quantidade, em unidades do dispositivo, que as coordenadas do pente devem alterar antes que o aplicativo seja notificado sobre a movimentação. Um limite alto reduz o número de mensagens de joystick enviadas a um aplicativo, mas também reduz a sensibilidade do joystick.
+Para a interface de comando, a quantidade, em unidades de dispositivo, que as coordenadas de stick devem alterar antes que o aplicativo seja notificado sobre a movimentação. Um limite alto reduz o número de mensagens de ponto de comando enviadas a um aplicativo, mas também reduz a sensibilidade do conector.
 
 </dd> <dt>
 
 <span id="_win32_time_stamp_gloss"></span><span id="_WIN32_TIME_STAMP_GLOSS"></span>**carimbo de data/hora**
 </dt> <dd>
 
-Uma marca que permite que um sequenciador de MIDI (interface digital de instrumento musical) reproduza dados MIDI gravados no momento adequado. Consulte também [interface digital de instrumento musical](/windows).
+Uma marca que permite que um sequenciador MIDI (Instrument Digital Interface) replay de dados MIDI gravados no momento adequado. Consulte também [Interface Digital Instrument Instrument](/windows).
 
 </dd> <dt>
 
-<span id="_win32_tmsf_time_format_gloss"></span><span id="_WIN32_TMSF_TIME_FORMAT_GLOSS"></span>**Formato de hora de TMSF**
+<span id="_win32_tmsf_time_format_gloss"></span><span id="_WIN32_TMSF_TIME_FORMAT_GLOSS"></span>**Formato de hora do TMSF**
 </dt> <dd>
 
-Um formato de hora usado pela MCI (interface de controle de mídia) para expressar tempo em faixas, minutos, segundos e quadros. O número de quadros em um segundo depende do tipo de dispositivo que está sendo usado; os dispositivos de áudio de CD usam 75 quadros por segundo. O formato de hora TMSF é usado principalmente por dispositivos de áudio de CD. Consulte também [MCI (interface de controle de mídia)](/windows).
+Um formato de tempo usado pela MCI (Interface de Controle de Mídia) para expressar o tempo em faixas, minutos, segundos e quadros. O número de quadros em um segundo depende do tipo de dispositivo que está sendo usado; compact disc de áudio usam 75 quadros por segundo. O formato de hora do TMSF é usado principalmente por compact disc de áudio. Consulte também [Interface de Controle de Mídia (MCI).](/windows)
 
 </dd> <dt>
 
 <span id="_win32_track_gloss"></span><span id="_WIN32_TRACK_GLOSS"></span>**acompanhar**
 </dt> <dd>
 
-Uma sequência de som em um disco compacto – disco de áudio digital (CD-DA). Com um arquivo MIDI (interface digital de instrumento musical), as informações podem ser separadas em faixas, definidas pelo criador do arquivo. As faixas de arquivos MIDI podem corresponder a canais de MIDI ou podem corresponder a partes de uma música (como melodia ou Chorus); uma faixa de CD-DA geralmente corresponde a uma música. Consulte também CD [-áudio digital](/windows).
+Uma sequência de som em um compact disc – cd-DA (áudio digital). Com um arquivo MIDI (Instrument Digital Interface), as informações podem ser separadas em faixas, definidas pelo criador do arquivo. As faixas de arquivo MIDI podem corresponder a canais MIDI ou podem corresponder a partes de uma música (por exemplo, o canto ou a música); uma faixa CD-DA geralmente corresponde a uma música. Consulte também [compact disc – áudio digital.](/windows)
 
 </dd> <dt>
 
-<span id="_win32_volume_scalar_gloss"></span><span id="_WIN32_VOLUME_SCALAR_GLOSS"></span>**escalar volume**
+<span id="_win32_volume_scalar_gloss"></span><span id="_WIN32_VOLUME_SCALAR_GLOSS"></span>**escalar de volume**
 </dt> <dd>
 
-Um componente de um mapa de patch do Mapeador MIDI (interface digital de instrumentos musicais) que ajusta o volume de um patch em um sintetizador. Por exemplo, se o patch Bass em um sintetizador for muito alto em relação ao patch de piano, o volume escalar poderá reduzir o volume do baixo ou aumentar o volume para o piano. (Os aplicativos que executam áudio de onda também podem ajustar o volume de saída). Consulte também [mapeador de Midi](/windows), [patch](/windows).
+Um componente de um mapa de patch do Mapeador MIDI (Instrument Digital Interface) que ajusta o volume de um patch em um sintetizador. Por exemplo, se o patch de patch de patch em um sintetizador for muito alto em relação ao patch de patch, o escalar de volume poderá reduzir o volume para o tosco ou aumentar o volume para o sr. (Aplicativos que todem áudio de forma de onda também podem ajustar o volume de saída.) Consulte também [Mapeado MIDI](/windows), [patch](/windows).
 
 </dd> <dt>
 
-<span id="_win32_wave_file_gloss"></span><span id="_WIN32_WAVE_FILE_GLOSS"></span>**Arquivo wave**
+<span id="_win32_wave_file_gloss"></span><span id="_WIN32_WAVE_FILE_GLOSS"></span>**Arquivo WAVE**
 </dt> <dd>
 
-Um formato de arquivo padrão para armazenar dados de áudio de forma de onda. Os arquivos WAVE têm um. Extensão de nome de arquivo WAV.
+Um formato de arquivo padrão para armazenar dados de áudio de forma de onda. Os arquivos WAVE têm um . Extensão de nome de arquivo WAV.
 
 </dd> <dt>
 
-<span id="_win32_waveform_audio_gloss"></span><span id="_WIN32_WAVEFORM_AUDIO_GLOSS"></span>**áudio de onda**
+<span id="_win32_waveform_audio_gloss"></span><span id="_WIN32_WAVEFORM_AUDIO_GLOSS"></span>**áudio de forma de onda**
 </dt> <dd>
 
-Uma técnica de recriação de uma onda de áudio de amostras digitais da onda.
+Uma técnica de recriar uma forma de onda de áudio de exemplos digitais da forma de onda.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 

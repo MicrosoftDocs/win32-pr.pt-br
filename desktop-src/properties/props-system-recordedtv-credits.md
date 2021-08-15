@@ -1,19 +1,19 @@
 ---
-description: Indica os créditos do programa, no formato a seguir. &\#0034; Actor1/Actor2/Actor3...;D irector1/Director2/Director3...; Host1/host2/Host3...; GuestStar&\# 0034;.
+description: Indica os créditos para o programa, no formato a seguir. &\#0034; Actor1/Actor2/Actor3...;D irector1/Director2/Director3...; Host1/Host2/Host3...; GuestStar&\# 0034;.
 ms.assetid: 2a464413-c48d-48a2-b1e1-34303ee4dbfa
-title: System. RecordedTV. créditos
+title: System.RecordedTV.Credits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2498e5a5e09b2e530393e7f3e643093f998fac17
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: db080fe6ee8dd697b6fc15505f38baba56c6fbab49909a4caec664ed53971814
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105751132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118227965"
 ---
-# <a name="systemrecordedtvcredits"></a>System. RecordedTV. créditos
+# <a name="systemrecordedtvcredits"></a>System.RecordedTV.Credits
 
-Indica os créditos do programa, no formato a seguir. "Actor1/Actor2/Actor3...;D irector1/Director2/Director3...; Host1/host2/Host3...; GuestStar".
+Indica os créditos para o programa, no formato a seguir. "Actor1/Actor2/Actor3...;D irector1/Director2/Director3...; Host1/Host2/Host3...; GuestStar".
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,13 +32,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -47,19 +47,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -74,7 +74,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

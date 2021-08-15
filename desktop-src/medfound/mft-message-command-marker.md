@@ -4,12 +4,12 @@ ms.assetid: eae1d066-64af-45e2-b8bb-eddf9147ad8b
 title: MFT_MESSAGE_COMMAND_MARKER (Mftransform. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3802cb94c9183d4f392fbcedcf48c0c01071298e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dc55a96ae9680b37d83ec776c66848ed04f4a30b62d1d0378035c88823d2c19d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105765023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117872166"
 ---
 # <a name="mft_message_command_marker"></a>\_marcador de \_ comando de mensagem MFT \_
 
@@ -40,9 +40,9 @@ O MFTs assíncrono deve responder a essa mensagem, conforme descrito. O MFTs sí
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                               |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
 
 
 

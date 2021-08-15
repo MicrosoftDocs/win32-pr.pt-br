@@ -15,17 +15,17 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5d1d4fa75c8a41528e9868bc94fa638042d01cff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ad04730c52bce38e462c2521dc7c34872bfcb69c3337ac6af18d09d865b9cfd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118252510"
 ---
 # <a name="jet_snt"></a>JET_SNT
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_snt"></a>JET_SNT
 
@@ -51,8 +51,8 @@ O [JET_SNT]() grupo de constantes descreve os pontos do progresso de uma operaç
 <tr class="even">
 <td><p>JET_sntRequirements<br />
 7</p></td>
-<td><p>Não há suporte.</p>
-<p><strong>Servidor do Windows 2000:</strong>  A operação foi iniciada. Nesse caso, o último parâmetro da função de retorno de chamada deve ser um ponteiro válido para uma estrutura de <a href="gg269328(v=exchg.10).md">JET_SNPROG</a> indicando o número total de unidades a serem executadas.</p></td>
+<td><p>Sem suporte.</p>
+<p><strong>servidor Windows 2000:</strong>  A operação foi iniciada. Nesse caso, o último parâmetro da função de retorno de chamada deve ser um ponteiro válido para uma estrutura de <a href="gg269328(v=exchg.10).md">JET_SNPROG</a> indicando o número total de unidades a serem executadas.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_sntProgress<br />
@@ -76,7 +76,7 @@ O [JET_SNT]() grupo de constantes descreve os pontos do progresso de uma operaç
 <div class="alert">
 
 > [!NOTE]
-> <P>Esse valor não é aplicável a versões do sistema operacional Windows a partir do Windows 8.</P>
+> <P>esse valor não é aplicável a versões do sistema operacional Windows a partir do Windows 8.</P>
 
 
 </div></td>
@@ -95,11 +95,11 @@ O [JET_SNT]() grupo de constantes descreve os pontos do progresso de uma operaç
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>

@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentOutOfAutoincrementValuesException'
+description: 'Saiba mais sobre: Métodos EsentOutOfAutoincrementValuesException'
 title: 'Métodos EsentOutOfAutoincrementValuesException '
 TOCTitle: EsentOutOfAutoincrementValuesException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentOutOfAutoincrementValuesException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102396
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: cc86249b2a8aaca6f6349e806f76c9f1a321bdfb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: faca85e20e87f5c5ead318c68fcceef7f938e1c3d2cbb08044e3f516eac87fea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104568841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118262737"
 ---
 # <a name="esentoutofautoincrementvaluesexception-methods"></a>Métodos EsentOutOfAutoincrementValuesException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentOutOfAutoincrementValuesException](./esentoutofautoincrementvaluesexception-class.md) expõe os membros a seguir.
+O [tipo EsentOutOfAutoincrementValuesException](./esentoutofautoincrementvaluesexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentOutOfAutoincrementValuesException](./esentoutofautoincrementvaluese
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentOutOfAutoincrementValuesException](./esentoutofautoincrementvaluese
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentOutOfAutoincrementValuesException](./esentoutofautoincrementvaluesexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,17 +1,17 @@
 ---
 description: Especifica a ID de um exemplo criptografado.
 ms.assetid: 09B11406-DF7B-4541-998C-68306654BADC
-title: Atributo MFSampleExtension_Encryption_SampleID (Mfapi. h)
+title: MFSampleExtension_Encryption_SampleID atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb2aadcfcf895ddbfa9820a4df3a366ce409a555
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 42e89eb4213d75ea94bdb3c19ca88b2a1f3f28c8e8b1034ca452f2900f7b61ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118240868"
 ---
-# <a name="mfsampleextension_encryption_sampleid-attribute"></a>\_ \_ Atributo sampleid de criptografia MFSampleExtension
+# <a name="mfsampleextension_encryption_sampleid-attribute"></a>Atributo MFSampleExtension \_ Encryption \_ SampleID
 
 Especifica a ID de um exemplo criptografado.
 
@@ -23,17 +23,17 @@ Especifica a ID de um exemplo criptografado.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                            |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 Somente \[ aplicativos da área de trabalho R2\]<br/>                            |
+| parâmetro<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

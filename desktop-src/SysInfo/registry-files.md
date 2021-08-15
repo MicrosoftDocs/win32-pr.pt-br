@@ -4,12 +4,12 @@ ms.assetid: a71a564d-934a-46e8-b555-989a6fa82337
 title: Arquivos do registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 44916618946f6541495186aa5843799c9b864fbc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f3a5caa34a075e4bffe48a542d02eec896ab28dd93fbdc2745dbc5a08effb9d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103921896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117763809"
 ---
 # <a name="registry-files"></a>Arquivos do registro
 
@@ -19,9 +19,9 @@ Para salvar uma chave e suas subchaves e valores em um arquivo de registro, um a
 
 [**RegSaveKey**](/windows/desktop/api/Winreg/nf-winreg-regsavekeya) e [**RegSaveKeyEx**](/windows/desktop/api/Winreg/nf-winreg-regsavekeyexa) crie o arquivo com o atributo Archive. O arquivo é criado no diretório atual do processo para uma chave local e no diretório% systemroot% \\ System32 para uma chave remota.
 
-Os arquivos do registro têm os dois formatos a seguir: Standard e mais recente. O formato padrão é o único formato suportado pelo Windows 2000. Ele também é compatível com versões posteriores do Windows para compatibilidade com versões anteriores. [**RegSaveKey**](/windows/desktop/api/Winreg/nf-winreg-regsavekeya) cria arquivos no formato padrão.
+Os arquivos do registro têm os dois formatos a seguir: Standard e mais recente. o formato padrão é o único formato suportado pelo Windows 2000. ele também tem suporte em versões posteriores do Windows para compatibilidade com versões anteriores. [**RegSaveKey**](/windows/desktop/api/Winreg/nf-winreg-regsavekeya) cria arquivos no formato padrão.
 
-O formato mais recente tem suporte a partir do Windows XP. Os arquivos do registro criados neste formato não podem ser carregados no Windows 2000. O [**RegSaveKeyEx**](/windows/desktop/api/Winreg/nf-winreg-regsavekeyexa) pode salvar arquivos do registro em qualquer formato especificando o \_ formato padrão do reg ou o \_ \_ formato reg mais recente \_ . Portanto, ele pode ser usado para converter arquivos do registro que usam o formato padrão para o formato mais recente.
+há suporte para o formato mais recente a partir do Windows XP. os arquivos do registro criados neste formato não podem ser carregados no Windows 2000. O [**RegSaveKeyEx**](/windows/desktop/api/Winreg/nf-winreg-regsavekeyexa) pode salvar arquivos do registro em qualquer formato especificando o \_ formato padrão do reg ou o \_ \_ formato reg mais recente \_ . Portanto, ele pode ser usado para converter arquivos do registro que usam o formato padrão para o formato mais recente.
 
 Para gravar o arquivo de registro de volta no registro, um aplicativo pode usar as funções [**RegLoadKey**](/windows/desktop/api/Winreg/nf-winreg-regloadkeya), [**RegReplaceKey**](/windows/desktop/api/Winreg/nf-winreg-regreplacekeya)ou [**RegRestoreKey**](/windows/desktop/api/Winreg/nf-winreg-regrestorekeya) da seguinte maneira.
 

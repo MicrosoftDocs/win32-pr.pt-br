@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31c7474c82cc39e5f43076e6bafb348bcd78aa68
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dd54a79013b747ca923af9f2806ea997afca065f845fc9c9573bf2a8f2d06e1c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104499966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117837549"
 ---
 # <a name="ms-wmi-intmax-attribute"></a>atributo ms-WMI-intMax
 
@@ -57,7 +57,7 @@ O valor máximo para um objeto de parâmetro de inteiro do WMI 32-bit.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -78,7 +78,7 @@ O valor máximo para um objeto de parâmetro de inteiro do WMI 32-bit.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -99,7 +99,7 @@ O valor máximo para um objeto de parâmetro de inteiro do WMI 32-bit.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -120,10 +120,10 @@ O valor máximo para um objeto de parâmetro de inteiro do WMI 32-bit.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -141,10 +141,10 @@ O valor máximo para um objeto de parâmetro de inteiro do WMI 32-bit.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |

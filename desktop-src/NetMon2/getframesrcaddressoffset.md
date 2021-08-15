@@ -1,7 +1,7 @@
 ---
 description: A função GetFrameSrcAddressOffset retorna o deslocamento do endereço de origem dos quadros.
 ms.assetid: 1c5408d7-cf66-4887-93ee-134c0b8c5eff
-title: Função GetFrameSrcAddressOffset (Netmon. h)
+title: Função GetFrameSrcAddressOffset (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: f7310c0ac2c6f402c37537100cc8060fef9eedd1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c8c2315b53d336a06a73e63019daee842439f65aa53e3fb7d34d4944dcab9cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118366090"
 ---
 # <a name="getframesrcaddressoffset-function"></a>Função GetFrameSrcAddressOffset
 
-A função **GetFrameSrcAddressOffset** retorna o deslocamento do endereço de origem do quadro.
+A **função GetFrameSrcAddressOffset** retorna o deslocamento do endereço de origem do quadro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,7 +44,7 @@ DWORD WINAPI GetFrameSrcAddressOffset(
 *hFrame* 
 </dt> <dd>
 
-Identificador para o quadro.
+Lidar com o quadro.
 
 </dd> <dt>
 
@@ -53,25 +53,25 @@ Identificador para o quadro.
 
 Tipo de endereço de origem. O valor do parâmetro pode ser um dos seguintes:
 
--   tipo de endereço \_ \_ Ethernet
--   \_IP do tipo de endereço \_
--   tipo de endereço \_ \_ IPX
--   tipo de endereço \_ \_ TOKENRING
--   tipo de endereço \_ \_ FDDI
--   tipo de endereço \_ \_ XNS
--   \_IP de \_ Vines de tipo de endereço \_
--   tipo de endereço \_ \_ ATM
+-   ETHERNET \_ DE TIPO DE \_ ENDEREÇO
+-   \_IP DO TIPO DE \_ ENDEREÇO
+-   \_TIPO DE ENDEREÇO \_ IPX
+-   TOKENRING \_ DE TIPO \_ DE ENDEREÇO
+-   TIPO \_ DE \_ ENDEREÇO FDDI
+-   TIPO \_ DE \_ ENDEREÇO XNS
+-   IP \_ \_ VINES DE TIPO DE \_ ENDEREÇO
+-   ATM \_ DE \_ TIPO DE ENDEREÇO
 
 </dd> <dt>
 
 *AddressLength* 
 </dt> <dd>
 
-Ponteiro para uma **DWORD**, que, em retorno, contém o comprimento do endereço, em bytes.
+Ponteiro para um **DWORD**, que, no retorno, contém o comprimento do endereço, em bytes.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será o deslocamento para o endereço de origem.
 
@@ -85,8 +85,8 @@ Se a função não for bem-sucedida, o valor de retorno será menos um (-1).
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

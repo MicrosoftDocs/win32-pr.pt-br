@@ -3,26 +3,26 @@ title: Para indexar um arquivo ASF
 description: Para indexar um arquivo ASF
 ms.assetid: 33175444-365c-4b94-8b91-07198431062f
 keywords:
-- SDK do Windows Media Format, indexando arquivos ASF
-- ASF (Advanced Systems Format), arquivos de indexação
-- ASF (formato de sistemas avançados), indexando arquivos
-- índices, indexando arquivos ASF
+- Windows SDK de Formato de Mídia, indexação de arquivos ASF
+- ASF (Advanced Systems Format), indexando arquivos
+- ASF (Formato de Sistemas Avançados), indexação de arquivos
+- índices, indexação de arquivos ASF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7206e1856abb9705e18e885ba06cb8253a93c84b
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 08c2e41ed60ecb8fcee39da35dbc79ec44cece8db62f3e040d42aee3374c5690
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "105759920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117845574"
 ---
 # <a name="to-index-an-asf-file"></a>Para indexar um arquivo ASF
 
-O processo de indexação de um arquivo ASF é muito simples. Faça uma chamada para [**IWMIndexer:: startIndex**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmindexer-startindexing) e passe o nome do arquivo. O indexador faz o resto. A chamada para **startIndex** é assíncrona, portanto, o status deve ser monitorado usando o retorno de chamada **OnStatus** .
+O processo de indexação de um arquivo ASF é muito simples. Faça uma chamada para [**IWMIndexer::StartIndexing**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmindexer-startindexing) e passe o nome do arquivo. O indexador faz o restante. A chamada para **StartIndexing** é assíncrona, portanto, o status deve ser monitorado usando o retorno de chamada **OnStatus.**
 
-O código a seguir mostra como indexar um arquivo ASF. Se você quiser configurar o indexador antes de indexar o arquivo, será necessário incluir o código do exemplo incluído no [para configurar o indexador](to-configure-the-indexer.md).
+O código a seguir mostra como indexar um arquivo ASF. Se você quiser configurar o indexador antes de indexar o arquivo, precisará incluir o código do exemplo incluído em Para configurar [o indexador](to-configure-the-indexer.md).
 
-Para este exemplo, o identificador que aponta para o evento deve ser criado como uma variável global para que possa ser acessado pelo retorno de chamada. A declaração a seguir deve aparecer em um escopo global.
+Para este exemplo, o handle que aponta para o evento deve ser criado como uma variável global para que ele seja acessível pelo retorno de chamada. A declaração a seguir deve aparecer em um escopo global.
 
 
 ```C++
@@ -32,9 +32,9 @@ HANDLE g_hEvent = NULL;
 
 
 
-Em um cenário mais realista, o identificador de evento deve ser um membro de dados da classe que contém o retorno de chamada e a lógica para iniciar o indexador.
+Em um cenário mais realista, o handle de evento deve ser um membro de dados da classe que contém o retorno de chamada e a lógica para iniciar o indexador.
 
-O indexador envia vários eventos para o retorno de chamada **OnStatus** após a chamada para **IWMIndexer:: startIndex**. Você pode interceptar esses itens conforme necessário para seu aplicativo. No mínimo, é necessário interceptar WMT \_ closed, que é enviado quando a indexação é concluída. Use a lógica a seguir dentro da chave de mensagem em sua implementação do retorno de chamada **OnStatus** .
+O indexador envia vários eventos para o retorno de chamada **OnStatus** após a chamada para **IWMIndexer::StartIndexing**. Você pode interceptá-los conforme necessário para seu aplicativo. No mínimo, você precisa interceptar WMT \_ CLOSED, que é enviado quando a indexação é concluída. Use a lógica a seguir na opção de mensagem em sua implementação do retorno **de chamada OnStatus.**
 
 
 ```C++
@@ -51,7 +51,7 @@ case WMT_CLOSED:
 
 
 
-Para este exemplo, supõe-se que a implementação do retorno de chamada **OnStatus** seja acessada por meio de um objeto chamado MyCallback. Para obter mais informações sobre como usar eventos e retornos de chamada com este SDK, consulte [usando os métodos de retorno de chamada](using-the-callback-methods.md).
+Neste exemplo, supõe-se que sua implementação do retorno **de chamada OnStatus** seja acessada por meio de um objeto chamado MyCallback. Para obter mais informações sobre como usar eventos e retornos de chamada com esse SDK, consulte [Usando os métodos de retorno de chamada](using-the-callback-methods.md).
 
 
 ```C++
@@ -91,7 +91,7 @@ g_hEvent = NULL;
 
 <dl> <dt>
 
-[**Interface IWMIndexer**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmindexer)
+[**IWMIndexer Interface**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmindexer)
 </dt> <dt>
 
 [**Para configurar o indexador**](to-configure-the-indexer.md)
@@ -103,9 +103,9 @@ g_hEvent = NULL;
 [**Trabalhando com índices**](working-with-indexes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

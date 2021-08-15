@@ -1,7 +1,7 @@
 ---
 description: Coleção de objetos DeviceInfo que representa todos os dispositivos instalados no computador.
 ms.assetid: 2f124188-2b66-46cc-9b26-bfef3709a1af
-title: Propriedade WIA. Devices
+title: Propriedade Wia.Devices
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,19 +14,19 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: b4d98bfe1552156071efde0b46899ad058e75aec
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: b6cf843d92b5ce2260578b653a1163526b22fb735c01542d772b2687ca890dc8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118208919"
 ---
-# <a name="wiadevices-property"></a>Propriedade WIA. Devices
+# <a name="wiadevices-property"></a>Propriedade Wia.Devices
 
-Coleção de objetos [**DeviceInfo**](-wia-deviceinfo.md) que representa todos os dispositivos instalados no computador. Somente leitura.
+Coleção de [**objetos DeviceInfo**](-wia-deviceinfo.md) que representa todos os dispositivos instalados no computador. Somente leitura.
 
 > [!Note]  
-> Esta coleção é baseada em 0.
+> Essa coleção é baseada em 0.
 
  
 
@@ -45,7 +45,7 @@ propVal = Wia.Devices
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir ilustra o uso da coleção **Devices** para enumerar os dispositivos em um sistema.
+O exemplo a seguir ilustra o uso da coleção **Dispositivos** para enumerar os dispositivos em um sistema.
 
 
 ```JScript
@@ -72,9 +72,9 @@ Next
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Wiascr.dll (versão 4,90 ou posterior)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                          |
+| DLL<br/>                      | <dl> <dt>Wiascr.dll (versão 4.90 ou posterior)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Classe Process_V0_TypeGroup1-essa classe é a classe de tipo de evento para eventos de processo. A sintaxe a seguir é simplificada do código MOF.
+description: Process_V0_TypeGroup1 classe - essa classe é a classe de tipo de evento para eventos de processo. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: fcf2897d-32b4-42b9-892c-f0106687d3c2
-title: Classe Process_V0_TypeGroup1
+title: Process_V0_TypeGroup1 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 524d3c7da9f8ff76608da120834c5365eb1deb41
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0d42ed4704eafcbb335b29c2c2d8d83e2ea82591c75855a6da096cb1e11a7572
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118394432"
 ---
-# <a name="process_v0_typegroup1-class"></a>\_Classe Process V0 \_ TypeGroup1
+# <a name="process_v0_typegroup1-class"></a>Classe \_ Process V0 \_ TypeGroup1
 
 Essa classe é a classe de tipo de evento para eventos de processo.
 
@@ -44,13 +44,13 @@ class Process_V0_TypeGroup1 : Process_V0
 
 ## <a name="members"></a>Membros
 
-A classe **process \_ V0 \_ TypeGroup1** tem estes tipos de membros:
+A **classe Process \_ V0 \_ TypeGroup1** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **process \_ V0 \_ TypeGroup1** tem essas propriedades.
+A **classe Process \_ V0 \_ TypeGroup1** tem essas propriedades.
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (4), StringTermination ("NullTerminated")
+Qualificadores: WmiDataId(4), StringTermination("NullTerminated")
 </dt> </dl>
 
 Caminho para o arquivo executável do processo.
@@ -73,32 +73,32 @@ Caminho para o arquivo executável do processo.
 ParentId
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (2), ponteiro
+Qualificadores: WmiDataId(2), Pointer
 </dt> </dl>
 
-Identificador exclusivo do processo que cria um processo. Os números de identificador de processo são reutilizados, portanto, eles identificam apenas um processo durante o tempo de vida desse processo. É possível que o processo identificado pelo ParentProcessId seja encerrado; portanto, ParentProcessId pode não se referir a um processo em execução. Também é possível que o ParentProcessId incorretamente faça referência a um processo que reutiliza um identificador de processo.
+Identificador exclusivo do processo que cria um processo. Os números do identificador de processo são reutilizados, portanto, eles identificam apenas um processo durante o tempo de vida desse processo. É possível que o processo identificado por ParentProcessId seja encerrado, portanto, ParentProcessId pode não se referir a um processo em execução. Também é possível que ParentProcessId refere-se incorretamente a um processo que reutiliza um identificador de processo.
 
 </dd> <dt>
 
 ProcessId
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (1), ponteiro
+Qualificadores: WmiDataId(1), Pointer
 </dt> </dl>
 
-Identificador de processo global que você pode usar para identificar um processo. O valor é válido a partir do momento em que um processo é criado até ser encerrado.
+Identificador de processo global que você pode usar para identificar um processo. O valor é válido desde o momento em que um processo é criado até ser encerrado.
 
 </dd> <dt>
 
@@ -111,7 +111,7 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (3), extensão ("Sid")
+Qualificadores: WmiDataId(3), Extension("Sid")
 </dt> </dl>
 
 SID (identificador de segurança) para o contexto do usuário no qual o evento ocorre.
@@ -124,16 +124,16 @@ SID (identificador de segurança) para o contexto do usuário no qual o evento o
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**V0 de processo \_**](process-v0.md)
+[**Processo \_ V0**](process-v0.md)
 </dt> </dl>
 
  
