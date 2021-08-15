@@ -1,5 +1,5 @@
 ---
-title: Propriedades do IMsRdpDrive
+title: Propriedades de IMsRdpDrive
 description: A interface IMsRdpDrive expõe as propriedades a seguir.
 ms.assetid: 10F68A31-74CD-4DC3-9D50-D44889E42302
 ms.tgt_platform: multiple
@@ -12,14 +12,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118352113"
 ---
-# <a name="imsrdpdrive-properties"></a>Propriedades do IMsRdpDrive
+# <a name="imsrdpdrive-properties"></a>Propriedades de IMsRdpDrive
 
 A interface [**IMsRdpDrive**](imsrdpdrive.md) expõe as propriedades a seguir.
 
 ## <a name="in-this-section"></a>Nesta seção
 
 -   [**Propriedade Name**](imsrdpdrive-name.md)
--   [**Propriedade RedirectionState**](imsrdpdrive-redirectionstate.md)
+-   [**Propriedade redirectionstate**](imsrdpdrive-redirectionstate.md)
 
  
 

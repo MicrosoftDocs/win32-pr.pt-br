@@ -147,7 +147,7 @@ Os códigos de erro a seguir podem ser recuperados pela [**função glGetError.*
 
 
 
-| Name                                                                                                  | Significado                                                                                                                               |
+| Nome                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**GL \_ INVALID \_ ENUM**</dt> </dl>      | *target* não era um valor aceito.<br/>                                                                                        |
 | <dl> <dt>**VALOR INVÁLIDO DE GL \_ \_**</dt> </dl>     | *u1* era igual a *u2* ou *v1* era igual a *v2*.<br/>                                                                         |
@@ -181,43 +181,43 @@ Lembre-se de que
 
 ![Equações mostrando equivalência para 1.](images/map08.png)
 
-A função **glMap2** é usada para definir a base e especificar que tipo de valores são produzidos. Uma vez definido, um mapa pode ser habilitado e desabilitado chamando [**glEnable**](glenable.md) e **glDisable** com o nome do mapa, um dos nove valores predefinidos para *destino*, descritos acima. Quando [**glEvalCoord2**](glevalcoord-functions.md) apresenta os valores *u* e *v*, a bivariant Bernstein polinomiais são avaliadas usando *u*^ e *v*^, em que
+A **função glMap2** é usada para definir a base e especificar que tipo de valores são produzidos. Depois de definido, um mapa pode ser habilitado e desabilitado chamando [**glEnable**](glenable.md) e **glDisable** com o nome do mapa, um dos nove valores predefinidos para o *destino*, descrito acima. Quando [**glEvalCoord2**](glevalcoord-functions.md) apresenta os valores *u* e *v,* os polinomiais bivariados Deliano são avaliados usando *u*^ e *v*^, em que
 
-![Equação mostrando a definição de você ^.](images/map09.png)
+![Equação mostrando a definição de you^.](images/map09.png)
 
 e
 
-![Equação mostrando a definição de v ^.](images/map10.png)
+![Equação mostrando a definição de v^.](images/map10.png)
 
-O parâmetro de *destino* é uma constante simbólica que indica que tipo de pontos de controle são fornecidos em *pontos* e qual saída é gerada quando o mapa é avaliado.
+O *parâmetro* de destino é uma constante simbólica que indica que tipo de pontos de controle são fornecidos nos pontos *e* qual saída é gerada quando o mapa é avaliado.
 
-Os parâmetros *ustride*, *uorder*, *vstride*, *Vorder* e *Points* definem o endereçamento de matriz para acessar os pontos de controle. O parâmetro *Points* é o local do primeiro ponto de controle, que ocupa um, dois, três ou quatro locais de memória contíguos, dependendo de qual mapa está sendo definido. Há pontos de controle *uorder* x *Vorder* na matriz. O parâmetro *ustride* informa quantos locais flutuantes ou duplos são ignorados para avançar o ponteiro de memória interna do ponto de controle **r** *IJ* para o ponto de controle **r** <sub>(\ + 1 \) j</sub>. O parâmetro *vstride* informa quantos locais flutuantes ou duplos são ignorados para avançar o ponteiro de memória interna do ponto de controle **r** *IJ* para o ponto de controle **r**<sub>i (j \ + 1 \)</sub>.
+Os *parâmetros ustride*, *uorder*, *vstride,* *vorder* e *points* definem o endereçamento de matriz para acessar os pontos de controle. O *parâmetro points* é o local do primeiro ponto de controle, que ocupa um, dois, três ou quatro locais de memória contígua, dependendo de qual mapa está sendo definido. Há pontos *de controle uorder* x *vorder* na matriz. O *parâmetro ustride* informa quantos locais float ou double são ignorados para avançar o ponteiro de memória interno do ponto de controle **R** *ij* para o ponto de controle **R** <sub>(\ i+1\ )j</sub>. O *parâmetro vstride* informa quantos locais float ou double são ignorados para avançar o ponteiro de memória interno do ponto de controle **R** *ij* para o ponto de controle **R**<sub>i(j\ +1\ )</sub>.
 
-Como é o caso com todos os comandos OpenGL que aceitam ponteiros para os dados, é como se o conteúdo dos *pontos* fosse copiado por **glMap2** antes de ser retornado. As alterações no conteúdo de *pontos* não têm efeito depois que **glMap2** é chamado.
+Como é o caso com todos os comandos OpenGL que aceitam  ponteiros para dados, é como se o conteúdo dos pontos fosse copiado por **glMap2** antes de ser retornado. As alterações no conteúdo dos *pontos não* têm efeito depois que **glMap2** é chamado.
 
-As funções a seguir recuperam informações relacionadas ao **glMap2**:
+As funções a seguir recuperam informações relacionadas a **glMap2:**
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento GL \_ Max \_ eval \_ Order
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento GL \_ MAX \_ EVAL \_ ORDER
 
 [**glGetMap**](glgetmap.md)
 
-[**glIsEnabled**](glisenabled.md) com Argument GL \_ map2 \_ vértice \_ 3
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ MAP2 \_ VERTEX \_ 3
 
-**glIsEnabled** com Argument GL \_ map2 \_ vértice \_ 4
+**glIsEnabled com** o argumento GL \_ MAP2 \_ VERTEX \_ 4
 
-índice de **glIsEnabled** com Argument GL \_ map2 \_
+**glIsEnabled com** o argumento GL \_ MAP2 \_ INDEX
 
-**glIsEnabled** com Argument GL \_ map2 \_ cor \_ 4
+**glIsEnabled com** o argumento GL \_ MAP2 \_ COLOR \_ 4
 
-**glIsEnabled** com Argument GL \_ map2 \_ normal
+**glIsEnabled com** o argumento GL \_ MAP2 \_ NORMAL
 
-**glIsEnabled** com Argument GL \_ map2 \_ Texture \_ coord \_ 1
+**glIsEnabled com** o argumento GL \_ MAP2 \_ TEXTURE \_ COORD \_ 1
 
-**glIsEnabled** com Argument GL \_ map2 \_ Texture \_ coord \_ 2
+**glIsEnabled com** o argumento GL \_ MAP2 \_ TEXTURE \_ COORD \_ 2
 
-**glIsEnabled** com Argument GL \_ map2 \_ Texture \_ coord \_ 3
+**glIsEnabled com** o argumento GL \_ MAP2 \_ TEXTURE \_ COORD \_ 3
 
-**glIsEnabled** com Argument GL \_ map2 \_ Texture \_ coord \_ 4
+**glIsEnabled com** o argumento GL \_ MAP2 \_ TEXTURE \_ COORD \_ 4
 
 ## <a name="requirements"></a>Requisitos
 
@@ -227,8 +227,8 @@ As funções a seguir recuperam informações relacionadas ao **glMap2**:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

@@ -1,7 +1,7 @@
 ---
-description: Ocorre antes que o analisador de tinta adicione um objeto IContextLink entre dois objetos IContextNode.
+description: Ocorre antes que o analisador de tinta adiciona um objeto IContextLink entre dois objetos IContextNode.
 ms.assetid: ec56cb8e-5154-45ee-911d-e2a240d19dc3
-title: 'Evento _IAnalysisProxyEvents:: ContextNodeLinkAdding (IACom. h)'
+title: _IAnalysisProxyEvents::Evento ContextNodeLinkAdding (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118452151"
 ---
-# <a name="_ianalysisproxyeventscontextnodelinkadding-event"></a>\_Evento IAnalysisProxyEvents:: ContextNodeLinkAdding
+# <a name="_ianalysisproxyeventscontextnodelinkadding-event"></a>\_Evento IAnalysisProxyEvents::ContextNodeLinkAdding
 
-Ocorre antes que o analisador de tinta adicione um objeto [**IContextLink**](icontextlink.md) entre dois objetos [**IContextNode**](icontextnode.md) .
+Ocorre antes que o analisador de tinta adiciona um [**objeto IContextLink**](icontextlink.md) entre dois [**objetos IContextNode.**](icontextnode.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,29 +40,29 @@ HRESULT ContextNodeLinkAdding(
 
 <dl> <dt>
 
-*pInkAnalyzer* \[ no\]
+*pInkAnalyzer* \[ Em\]
 </dt> <dd>
 
-O [**IInkAnalyzer**](iinkanalyzer.md) adicionando o link.
+O [**IInkAnalyzer adicionando**](iinkanalyzer.md) o link.
 
 </dd> <dt>
 
-*pContextLinkToBeAdded* \[ no\]
+*pContextLinkToBeAdded* \[ Em\]
 </dt> <dd>
 
-O objeto [**IContextLink**](icontextlink.md) a ser adicionado.
+O [**objeto IContextLink**](icontextlink.md) a ser adicionado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Para obter uma descrição dos valores de retorno, consulte [classes e interfaces – análise de tinta](classes-and-interfaces---ink-analysis.md).
+Para ver uma descrição dos valores de retorno, consulte [Classes e interfaces – Análise de Tinta.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Comentários
 
-Use esse evento quando seu aplicativo mantiver sua própria estrutura de dados, que é sincronizada com a do [**IInkAnalyzer**](iinkanalyzer.md). Esse evento ocorre durante a fase de reconciliação da análise de tinta ou em resposta a um método do analisador de tinta que adiciona um novo [**IContextLink**](icontextlink.md) a um [**IContextNode**](icontextnode.md).
+Use esse evento quando seu aplicativo mantiver sua própria estrutura de dados, que é sincronizada com a do [**IInkAnalyzer.**](iinkanalyzer.md) Esse evento ocorre durante a fase de reconciliação da análise de tinta ou em resposta a um método de analisador de tinta que adiciona um novo [**IContextLink**](icontextlink.md) a [**um IContextNode.**](icontextnode.md)
 
-Para obter mais informações sobre como sincronizar os dados do aplicativo com o [**IInkAnalyzer**](iinkanalyzer.md), consulte [proxy de dados com análise de tinta](data-proxy-with-ink-analysis.md).
+Para obter mais informações sobre como sincronizar os dados do aplicativo [**com o IInkAnalyzer,**](iinkanalyzer.md)consulte Proxy de dados [com análise de tinta.](data-proxy-with-ink-analysis.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,9 +70,9 @@ Para obter mais informações sobre como sincronizar os dados do aplicativo com 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>IACom.h (também requer IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -93,10 +93,10 @@ Para obter mais informações sobre como sincronizar os dados do aplicativo com 
 [**IContextLink**](icontextlink.md)
 </dt> <dt>
 
-[**Método IInkAnalyzer:: Analyze**](iinkanalyzer-analyze.md)
+[**Método IInkAnalyzer::Analyze**](iinkanalyzer-analyze.md)
 </dt> <dt>
 
-[**Método IInkAnalyzer:: BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md)
+[**Método IInkAnalyzer::BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md)
 </dt> <dt>
 
 [Referência de análise de tinta](ink-analysis-reference.md)

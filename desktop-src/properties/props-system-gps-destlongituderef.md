@@ -4,12 +4,12 @@ ms.assetid: 47c3720f-4650-49ad-a32b-9339718d7c8f
 title: System. GPS. DestLongitudeRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 865613dc00fe82348a070d29db014e4044547950
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3074d0b53372e30bca4feeba9a7cc522f32636bf7899593922b6f624cb0bdaba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105807988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118466549"
 ---
 # <a name="systemgpsdestlongituderef"></a>System. GPS. DestLongitudeRef
 

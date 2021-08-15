@@ -1,23 +1,23 @@
 ---
-description: O codificador de tela do Windows Media Video 9 é otimizado para codificar capturas de tela sequenciais de monitores de computador.
+description: o codificador de tela do Windows Media Video 9 é otimizado para codificar capturas de tela sequenciais de monitores de computador.
 ms.assetid: 22faebf8-40c0-47f9-b66b-c0a8b5ba7202
-title: Codificador de tela do Windows Media Video 9 (Wmcodecdsp. h)
+title: Windows Codificador de tela de vídeo de mídia 9 (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5e0729a7b8ef09ad9b86b07e6668a933a307550
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a6d9fbe59671d978fb7374acbbc8ed1d8e9ea5afded0154242c4d1ccb4df3d4d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105771266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119713136"
 ---
-# <a name="windows-media-video-9-screen-encoder"></a>Codificador de tela do Windows Media Video 9
+# <a name="windows-media-video-9-screen-encoder"></a>Windows Codificador de tela de vídeo de mídia 9
 
-O codificador de tela do Windows Media Video 9 é otimizado para codificar capturas de tela sequenciais de monitores de computador.
+o codificador de tela do Windows Media Video 9 é otimizado para codificar capturas de tela sequenciais de monitores de computador.
 
 ## <a name="class-identifier"></a>Identificador de classe
 
-O CLSID (identificador de classe) do codificador de tela do Windows Media Video 9 é representado pela constante **CLSID \_ CMSSCEncMediaObject2**. Você pode criar uma instância do codificador chamando **CoCreateInstance**.
+o clsid (identificador de classe) para o codificador de tela do Windows Media Video 9 é representado pela constante **CLSID \_ CMSSCEncMediaObject2**. Você pode criar uma instância do codificador chamando **CoCreateInstance**.
 
 ## <a name="input-types"></a>Tipos de entrada
 
@@ -41,7 +41,7 @@ Os seguintes tipos de entrada são suportados pelo codificador de tela da versã
 
 ## <a name="output-types"></a>Tipos de saída
 
-O FOURCC (código de quatro caracteres) para o conteúdo codificado da tela de vídeo do Windows Media versão 9 é "MSS2".
+o FOURCC (código de quatro caracteres) para Windows conteúdo codificado da tela de vídeo de mídia 9 é "MSS2".
 
 Os tipos de saída a seguir têm suporte no codificador de tela da versão 9.
 
@@ -49,7 +49,7 @@ Os tipos de saída a seguir têm suporte no codificador de tela da versão 9.
 
 ## <a name="encoder-properties"></a>Propriedades do codificador
 
-O codificador de tela do Windows Media Video 9 dá suporte às propriedades a seguir.
+o codificador de tela do Windows Media Video 9 dá suporte às propriedades a seguir.
 
 
 
@@ -210,16 +210,16 @@ Somente leitura.<br />
 
 ## <a name="remarks"></a>Comentários
 
-Um objeto de codificador de tela expõe a interface **IMediaObject** para que o objeto possa ser usado como um objeto de mídia do DirectX (DMO) e expõe a interface **IMFTransform** para que o objeto possa ser usado como uma Media Foundation transformação (MFT).
+um objeto de codificador de tela expõe a interface **IMediaObject** para que o objeto possa ser usado como um objeto de mídia do DirectX (DMO) e expõe a interface **IMFTransform** para que o objeto possa ser usado como uma Media Foundation transformação (MFT).
 
-Um codificador de tela se comporta como DMO ou MFT dependendo de quais interfaces você obtém e qual versão do Windows está sendo executada. A tabela a seguir mostra as condições sob as quais um codificador de tela se comporta como um DMO ou uma MFT.
+um codificador de tela se comporta como um DMO ou um MFT dependendo de quais interfaces você obtém e qual versão do Windows está em execução. a tabela a seguir mostra as condições sob as quais um codificador de tela se comporta como um DMO ou um MFT.
 
 
 
 | Sistema operacional            | Comportamento do codificador                                                                                                                                    |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Windows XP                  | Um codificador de tela do Windows Media sempre se comporta como DMO.                                                                                             |
-| Windows Vista e Windows 7 | Por padrão, um codificador de tela do Windows Media se comporta como DMO. Se você obtiver uma interface **IMFTransform** em um codificador de tela, ela se comporta como um MFT. |
+| Windows XP                  | um codificador de tela de mídia Windows sempre se comporta como um DMO.                                                                                             |
+| Windows Vista e Windows 7 | por padrão, um codificador de tela de mídia Windows se comporta como um DMO. Se você obtiver uma interface **IMFTransform** em um codificador de tela, ela se comporta como um MFT. |
 
 
 
@@ -232,7 +232,7 @@ Um codificador de tela se comporta como DMO ou MFT dependendo de quais interface
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
 | Cliente<br/> | Windows XP, Windows Vista ou Windows 7<br/>                                       |
-| parâmetro<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cabeçalho<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 | DLL<br/>    | <dl> <dt>Wmvsencd.dll</dt> </dl> |
 
 
@@ -247,10 +247,10 @@ Um codificador de tela se comporta como DMO ou MFT dependendo de quais interface
 [Implementação de codec](codecimplementation.md)
 </dt> <dt>
 
-[Usando o codec de tela do Windows Media Video 9](usingthewindowsmediavideo9screencodec.md)
+[usando o Codec de tela Windows Media Video 9](usingthewindowsmediavideo9screencodec.md)
 </dt> <dt>
 
-[Decodificador de tela do Windows Media Video 9](windowsmediavideo9screendecoder.md)
+[Windows Decodificador de tela vídeo de mídia 9](windowsmediavideo9screendecoder.md)
 </dt> </dl>
 
  

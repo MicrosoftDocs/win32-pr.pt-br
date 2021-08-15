@@ -1,9 +1,9 @@
 ---
-title: Mensagem de PGM_GETBKCOLOR (commctrl. h)
-description: Recupera a cor do plano de fundo atual para o controle de pager. Você pode enviar essa mensagem explicitamente ou usar a \_ macro GetBkColor do pager.
+title: PGM_GETBKCOLOR mensagem (Commctrl.h)
+description: Recupera a cor da tela de fundo atual para o controle de pager. Você pode enviar essa mensagem explicitamente ou usar a \_ macro GetBkColor do Pager.
 ms.assetid: c39ad721-fe39-44e9-8305-67444acc5d65
 keywords:
-- Controles de PGM_GETBKCOLOR de mensagens do Windows
+- PGM_GETBKCOLOR controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b58b139dd1caafcdefc6893e2b8a5e3312d3e28
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ff3ee3a4be09a948654d337a47eecdd2a7b15d16b0602016aa99500cd1c3728c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985936"
 ---
-# <a name="pgm_getbkcolor-message"></a>\_Mensagem GETBKCOLOR do PGM
+# <a name="pgm_getbkcolor-message"></a>Mensagem \_ GETBKCOLOR do PGM
 
-Recupera a cor do plano de fundo atual para o controle de pager. Você pode enviar essa mensagem explicitamente ou usar a [**macro \_ GetBkColor do pager**](/windows/desktop/api/Commctrl/nf-commctrl-pager_getbkcolor) .
+Recupera a cor da tela de fundo atual para o controle de pager. Você pode enviar essa mensagem explicitamente ou usar a macro [**\_ GetBkColor do Pager.**](/windows/desktop/api/Commctrl/nf-commctrl-pager_getbkcolor)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,13 +35,13 @@ Recupera a cor do plano de fundo atual para o controle de pager. Você pode envi
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **COLORREF** que contém a cor do plano de fundo atual.
+Retorna um **valor COLORREF** que contém a cor da tela de fundo atual.
 
 ## <a name="remarks"></a>Comentários
 
-Por padrão, o controle de pager usará a cor de face do botão do sistema como a cor do plano de fundo. Essa é a mesma cor que pode ser recuperada chamando [**GetSysColorBrush**](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush) com Color \_ btnface.
+Por padrão, o controle pager usará a cor da face do botão do sistema como a cor da tela de fundo. Essa é a mesma cor que pode ser recuperada chamando [**GetSysColorBrush**](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush) com COLOR \_ BTNFACE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Por padrão, o controle de pager usará a cor de face do botão do sistema como 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

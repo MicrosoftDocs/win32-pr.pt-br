@@ -1,7 +1,7 @@
 ---
-description: 'Contém dados de entrada para o método IDirect3DAuthenticatedChannel9:: Query.'
+description: Contém dados de entrada para o método IDirect3DAuthenticatedChannel9::Query.
 ms.assetid: 6a484652-8da2-4074-96b2-6fe49f4d4200
-title: Estrutura de D3DAUTHENTICATEDCHANNEL_QUERY_INPUT (D3d9types. h)
+title: D3DAUTHENTICATEDCHANNEL_QUERY_INPUT (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: a0bec356b20569b5638848407eff27e930ef76b4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50f9c781ca6d495acd06d3aa67c337dee76b2310f5399615599a52e15000382c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974684"
 ---
-# <a name="d3dauthenticatedchannel_query_input-structure"></a>Estrutura de entrada de \_ consulta D3DAUTHENTICATEDCHANNEL \_
+# <a name="d3dauthenticatedchannel_query_input-structure"></a>Estrutura DE ENTRADA DE CONSULTA D3DAUTHENTICATEDCHANNEL \_ \_
 
-Contém dados de entrada para o método [**IDirect3DAuthenticatedChannel9:: Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query) .
+Contém dados de entrada para [**o método IDirect3DAuthenticatedChannel9::Query.**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,21 +44,21 @@ typedef struct _D3DAUTHENTICATEDCHANNEL_QUERY_INPUT {
 **QueryType**
 </dt> <dd>
 
-Um GUID que especifica a consulta. Para obter uma lista de valores, consulte [proteção de conteúdo consultas](content-protection-queries.md).
+Um GUID que especifica a consulta. Para ver uma lista de valores, [consulte Proteção de Conteúdo Consultas](content-protection-queries.md).
 
 </dd> <dt>
 
-**PROCESSAMENTO**
+**Lidar com**
 </dt> <dd>
 
-Um identificador para o canal autenticado. Para obter o identificador, chame [**IDirect3DDevice9Video:: CreateAuthenticatedChannel**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9video-createauthenticatedchannel).
+Um alça para o canal autenticado. Para obter o handle, chame [**IDirect3DDevice9Video::CreateAuthenticatedChannel.**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9video-createauthenticatedchannel)
 
 </dd> <dt>
 
 **UINT**
 </dt> <dd>
 
-O número de sequência da consulta. No início da sessão, gere um número aleatório de 32 bits de segurança criptograficamente seguro para usar como o número de sequência inicial. Para cada consulta, aumente o número de sequência em 1.
+O número da sequência de consulta. No início da sessão, gere um número aleatório criptograficamente seguro de 32 bits a ser usado como o número de sequência inicial. Para cada consulta, incremente o número de sequência em 1.
 
 </dd> </dl>
 
@@ -68,9 +68,9 @@ O número de sequência da consulta. No início da sessão, gere um número alea
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
@@ -81,7 +81,7 @@ O número de sequência da consulta. No início da sessão, gere um número alea
 [Estruturas de vídeo do Direct3D](direct3d-video-structures.md)
 </dt> <dt>
 
-[**IDirect3DAuthenticatedChannel9:: Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
+[**IDirect3DAuthenticatedChannel9::Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
 </dt> </dl>
 
  

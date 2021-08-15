@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM ProductSupport representa uma associação entre produto e acesso de suporte que transmite como o suporte é obtido para o produto.
+description: A classe CIM ProductSupport representa uma associação entre o produto e o acesso de suporte que transmite como o suporte \_ é obtido para o produto.
 ms.assetid: 61c62556-0cf3-438c-b9c7-152505bf7ed6
 ms.tgt_platform: multiple
-title: Classe CIM_ProductSupport
+title: CIM_ProductSupport classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,16 +23,16 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118421443"
 ---
-# <a name="cim_productsupport-class"></a>\_Classe CIM ProductSupport
+# <a name="cim_productsupport-class"></a>Classe CIM \_ ProductSupport
 
-A classe **CIM \_ ProductSupport** representa uma associação entre produto e acesso de suporte que transmite como o suporte é obtido para o produto. Vários tipos de suporte estão disponíveis para um produto; o mesmo objeto de suporte pode fornecer assistência para vários produtos.
+A **classe CIM \_ ProductSupport** representa uma associação entre o produto e o acesso de suporte que transmite como o suporte é obtido para o produto. Vários tipos de suporte estão disponíveis para um produto; O mesmo objeto de suporte pode fornecer assistência para vários produtos.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
-A sintaxe a seguir é simplificada do código formato MOF (MOF) e inclui todas as suas propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
+A sintaxe a seguir é simplificada Managed Object Format código (MOF) e inclui todas as suas propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,20 +47,20 @@ class CIM_ProductSupport
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ ProductSupport** tem estes tipos de membros:
+A **classe CIM \_ ProductSupport** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ ProductSupport** tem essas propriedades.
+A **classe CIM \_ ProductSupport** tem essas propriedades.
 
 <dl> <dt>
 
 **Product**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ produto CIM**
+Tipo de dados: **Produto CIM \_**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -73,13 +73,13 @@ Referência ao produto.
 **Suporte**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ SupportAccess**
+Tipo de dados: **\_ Suporte cimAccess**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Referência ao suporte do produto.
+Referência ao suporte ao produto.
 
 </dd> </dl>
 
@@ -87,7 +87,7 @@ Referência ao suporte do produto.
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -97,8 +97,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

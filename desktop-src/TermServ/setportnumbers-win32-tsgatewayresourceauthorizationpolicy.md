@@ -1,12 +1,12 @@
 ---
-title: Método setportnumbers da classe Win32_TSGatewayResourceAuthorizationPolicy
-description: Define os números de porta que têm permissão para se conectar ao recurso por meio do gateway de Área de Trabalho Remota (Gateway RD).
+title: Método SetPortNumbers da classe Win32_TSGatewayResourceAuthorizationPolicy dados
+description: Define os números de porta que têm permissão para se conectar ao recurso por meio Área de Trabalho Remota Gateway de Área de Trabalho Remota (Gateway de RD).
 ms.assetid: f8237ec3-84dc-44f8-ad86-54c46be1fd03
 ms.tgt_platform: multiple
 keywords:
-- Método setportnumbers Serviços de Área de Trabalho Remota
-- Método setportnumbers Serviços de Área de Trabalho Remota, classe Win32_TSGatewayResourceAuthorizationPolicy
-- Classe Win32_TSGatewayResourceAuthorizationPolicy Serviços de Área de Trabalho Remota, método setportnumbers
+- Método SetPortNumbers Serviços de Área de Trabalho Remota
+- Método SetPortNumbers Serviços de Área de Trabalho Remota , Win32_TSGatewayResourceAuthorizationPolicy classe
+- Win32_TSGatewayResourceAuthorizationPolicy classe Serviços de Área de Trabalho Remota , método SetPortNumbers
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b938435abab23e3ad27cf13dbe65e64b9ec859eb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3c151302abfda0b6bc42566770c0e8b8fb10dbab789cf2ece886be557efb023e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119987766"
 ---
-# <a name="setportnumbers-method-of-the-win32_tsgatewayresourceauthorizationpolicy-class"></a>Método setportnumbers da classe Win32 \_ TSGatewayResourceAuthorizationPolicy
+# <a name="setportnumbers-method-of-the-win32_tsgatewayresourceauthorizationpolicy-class"></a>Método SetPortNumbers da classe \_ Win32 TSGatewayResourceAuthorizationPolicy
 
-Define os números de porta que têm permissão para se conectar ao recurso por meio do gateway de Área de Trabalho Remota (Gateway RD).
+Define os números de porta que têm permissão para se conectar ao recurso por meio Área de Trabalho Remota Gateway de Área de Trabalho Remota (Gateway de RD).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,16 +43,16 @@ uint32 SetPortNumbers(
 
 <dl> <dt>
 
-*Portnumbers* \[ no\]
+*PortNumbers* \[ Em\]
 </dt> <dd>
 
-Lista de números de porta separados por ponto e vírgula permitidos para este Área de Trabalho Remota RD RAP (política de autorização de recursos). Para permitir qualquer número de porta, defina " \* ".
+Lista de números de porta separados por ponto e vírgula que são permitidos para este Área de Trabalho Remota política de autorização de recursos (RD FEDER). Para permitir qualquer número de porta, de definir " \* ".
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format arquivos (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,8 +62,8 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TS. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
@@ -72,7 +72,7 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_TSGatewayResourceAuthorizationPolicy Win32**](win32-tsgatewayresourceauthorizationpolicy.md)
+[**Win32 \_ TSGatewayResourceAuthorizationPolicy**](win32-tsgatewayresourceauthorizationpolicy.md)
 </dt> </dl>
 
  

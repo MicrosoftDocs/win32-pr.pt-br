@@ -1,7 +1,7 @@
 ---
-description: A enumeração EXPERTSTATUSENUMERATION contém valores de status. Ele é usado pelo membro de status da estrutura EXPERTSTATUS e o parâmetro status em ExpertIndicateStatus.
+description: A enumeração EXPERTSTATUSENUMERATION contém valores de status. Ele é usado pelo membro status da estrutura EXPERTSTATUS e pelo parâmetro Status em ExpertIndicateStatus.
 ms.assetid: 217dce5a-3698-45a9-bb13-8379bcbdd762
-title: Enumeração EXPERTSTATUSENUMERATION (Netmon. h)
+title: Enumeração EXPERTSTATUSENUMERATION (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: b634d4dad2e024c3c995216b5af7de23b14b7da0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee0729deab566717457f03af27a7e31de8cdf8f1b78f9a5f97b3c3ff406641fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105764643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117795789"
 ---
 # <a name="expertstatusenumeration-enumeration"></a>Enumeração EXPERTSTATUSENUMERATION
 
-A enumeração **EXPERTSTATUSENUMERATION** contém valores de status. Ele é usado pelo membro de **status** da estrutura [EXPERTSTATUS](expertstatus.md) e o parâmetro *status* em [ExpertIndicateStatus](expertindicatestatus.md).
+A **enumeração EXPERTSTATUSENUMERATION** contém valores de status. Ele é usado pelo membro **status** da estrutura [EXPERTSTATUS](expertstatus.md) e pelo parâmetro *Status* em [ExpertIndicateStatus](expertindicatestatus.md).
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,45 +44,45 @@ typedef enum  {
 
 <dl> <dt>
 
-<span id="EXPERTSTATUS_INACTIVE"></span><span id="expertstatus_inactive"></span>**EXPERTSTATUS \_ INativo**
+<span id="EXPERTSTATUS_INACTIVE"></span><span id="expertstatus_inactive"></span>**EXPERTSTATUS \_ INACTIVE**
 </dt> <dd>
 
 O especialista nunca começou.
 
 </dd> <dt>
 
-<span id="EXPERTSTATUS_STARTING"></span><span id="expertstatus_starting"></span>**EXPERTSTATUS \_ iniciando**
+<span id="EXPERTSTATUS_STARTING"></span><span id="expertstatus_starting"></span>**EXPERTSTATUS \_ STARTING**
 </dt> <dd>
 
-O especialista está sendo iniciado.
+O especialista está começando.
 
 </dd> <dt>
 
-<span id="EXPERTSTATUS_RUNNING"></span><span id="expertstatus_running"></span>**EXPERTSTATUS \_ em execução**
+<span id="EXPERTSTATUS_RUNNING"></span><span id="expertstatus_running"></span>**EXPERTSTATUS \_ EM EXECUÇÃO**
 </dt> <dd>
 
 O especialista está em execução normalmente.
 
 </dd> <dt>
 
-<span id="EXPERTSTATUS_PROBLEM"></span><span id="expertstatus_problem"></span>**problema de EXPERTSTATUS \_**
+<span id="EXPERTSTATUS_PROBLEM"></span><span id="expertstatus_problem"></span>**PROBLEMA DE \_ EXPERTSTATUS**
 </dt> <dd>
 
-Um problema especificado no *substatus* interrompeu o especialista.
+Um problema especificado em *SubStatus* interrompeu o especialista.
 
 </dd> <dt>
 
-<span id="EXPERTSTATUS_ABORTED"></span><span id="expertstatus_aborted"></span>**EXPERTSTATUS \_ anulado**
+<span id="EXPERTSTATUS_ABORTED"></span><span id="expertstatus_aborted"></span>**EXPERTSTATUS \_ ABORTED**
 </dt> <dd>
 
-Monitor de Rede parou o especialista.
+Monitor de Rede interrompeu o especialista.
 
 </dd> <dt>
 
-<span id="EXPERTSTATUS_DONE"></span><span id="expertstatus_done"></span>**EXPERTSTATUS \_ concluído**
+<span id="EXPERTSTATUS_DONE"></span><span id="expertstatus_done"></span>**EXPERTSTATUS \_ DONE**
 </dt> <dd>
 
-O especialista foi concluído com êxito.
+O especialista concluiu com êxito.
 
 </dd> </dl>
 
@@ -94,7 +94,7 @@ O especialista foi concluído com êxito.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

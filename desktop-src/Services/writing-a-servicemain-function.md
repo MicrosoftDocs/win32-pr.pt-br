@@ -1,31 +1,31 @@
 ---
-description: A função SvcMain no exemplo a seguir é a função usermain para o serviço de exemplo.
+description: A função SvcMain no exemplo a seguir é a função ServiceMain para o serviço de exemplo.
 ms.assetid: 7aa9371d-676c-4633-9831-edf0e74d15f0
-title: Escrevendo uma função de immain
+title: Escrevendo uma função ServiceMain
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ad3e947c356bad6c6d54395a671aa192c93de1d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ca28b09efdc228457ae85d8a3343f334a26f246b6e48e49208d7416551e7f85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118887969"
 ---
-# <a name="writing-a-servicemain-function"></a>Escrevendo uma função de immain
+# <a name="writing-a-servicemain-function"></a>Escrevendo uma função ServiceMain
 
-A função SvcMain no exemplo a seguir é a função [**usermain**](/windows/win32/api/winsvc/nc-winsvc-lpservice_main_functiona) para o serviço de exemplo. SvcMain tem acesso aos argumentos de linha de comando para o serviço da forma que a função **principal** de um aplicativo de console. O primeiro parâmetro contém o número de argumentos que estão sendo passados para o serviço no segundo parâmetro. Sempre haverá pelo menos um argumento. O segundo parâmetro é um ponteiro para uma matriz de ponteiros de cadeia de caracteres. O primeiro item na matriz é sempre o nome do serviço.
+A função SvcMain no exemplo a seguir é a [**função ServiceMain**](/windows/win32/api/winsvc/nc-winsvc-lpservice_main_functiona) para o serviço de exemplo. O SvcMain tem acesso aos argumentos de linha de comando para o serviço da maneira que a **função** principal de um aplicativo de console faz. O primeiro parâmetro contém o número de argumentos que estão sendo passados para o serviço no segundo parâmetro. Sempre haverá pelo menos um argumento. O segundo parâmetro é um ponteiro para uma matriz de ponteiros de cadeia de caracteres. O primeiro item na matriz é sempre o nome do serviço.
 
-A função SvcMain primeiro chama a função [**RegisterServiceCtrlHandler**](/windows/desktop/api/Winsvc/nf-winsvc-registerservicectrlhandlera) para registrar a função SvcCtrlHandler como a função de [**manipulador**](/windows/desktop/api/Winsvc/nc-winsvc-lphandler_function) do serviço e iniciar a inicialização. **RegisterServiceCtrlHandler** deve ser a primeira função que não é de falha no [**usermain**](/windows/win32/api/winsvc/nc-winsvc-lpservice_main_functiona) para que o serviço possa usar o identificador de status retornado por essa função para chamar [**falha em SETSERVICESTATUS**](/windows/desktop/api/Winsvc/nf-winsvc-setservicestatus) com o estado do serviço \_ parado se ocorrer um erro.
+A função SvcMain primeiro chama a função [**RegisterServiceCtrlHandler**](/windows/desktop/api/Winsvc/nf-winsvc-registerservicectrlhandlera) para registrar a função SvcCtrlHandler como a função [**manipulador**](/windows/desktop/api/Winsvc/nc-winsvc-lphandler_function) do serviço e iniciar a inicialização. **RegisterServiceCtrlHandler** deve ser a primeira função não funcional no [**ServiceMain**](/windows/win32/api/winsvc/nc-winsvc-lpservice_main_functiona) para que o serviço possa usar o alça de status retornado por essa função para chamar [**SetServiceStatus**](/windows/desktop/api/Winsvc/nf-winsvc-setservicestatus) com o estado SERVICE STOPPED se ocorrer um \_ erro.
 
-Em seguida, a função SvcMain chama a função ReportSvcStatus para indicar que seu status inicial é \_ início do serviço \_ pendente. Enquanto o serviço está nesse estado, nenhum controle é aceito. Para simplificar a lógica do serviço, é recomendável que o serviço não aceite nenhum controle enquanto estiver executando sua inicialização.
+Em seguida, a função SvcMain chama a função ReportSvcStatus para indicar que seu status inicial é SERVICE \_ START \_ PENDING. Enquanto o serviço estiver nesse estado, nenhum controle será aceito. Para simplificar a lógica do serviço, é recomendável que o serviço não aceite nenhum controle enquanto estiver executando sua inicialização.
 
 Por fim, a função SvcMain chama a função SvcInit para executar a inicialização específica do serviço e iniciar o trabalho a ser executado pelo serviço.
 
-A função de inicialização de exemplo, SvcInit, é um exemplo muito simples; Ele não executa tarefas de inicialização mais complexas, como a criação de threads adicionais. Ele cria um evento que o manipulador de controle de serviço pode sinalizar para indicar que o serviço deve parar e, em seguida, chama ReportSvcStatus para indicar que o serviço entrou no estado de execução do serviço \_ . Neste ponto, o serviço concluiu sua inicialização e está pronto para aceitar controles. Para melhor desempenho do sistema, seu aplicativo deve entrar no estado de execução dentro de 25-100 milissegundos.
+A função de inicialização de exemplo, SvcInit, é um exemplo muito simples; ele não executa tarefas de inicialização mais complexas, como a criação de threads adicionais. Ele cria um evento que o manipulador de controle de serviço pode sinalizar para indicar que o serviço deve parar e, em seguida, chama ReportSvcStatus para indicar que o serviço entrou no estado SERVICE \_ RUNNING. Neste ponto, o serviço concluiu sua inicialização e está pronto para aceitar controles. Para melhor desempenho do sistema, seu aplicativo deve inserir o estado de execução dentro de 25 a 100 milissegundos.
 
-Como esse serviço de exemplo não completa nenhuma tarefa real, SvcInit simplesmente aguarda que o evento de parada do serviço seja sinalizado chamando a função [**WaitForSingleObject**](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject) , chama ReportSvcStatus para indicar que o serviço entrou no estado de serviço \_ parado e retorna. (Observe que é importante que a função seja retornada, em vez de chamar a função [**ExitThread**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread) , porque o retorno permite a limpeza da memória alocada para os argumentos.) Você pode executar tarefas de limpeza adicionais usando a função [**RegisterWaitForSingleObject**](/windows/desktop/api/winbase/nf-winbase-registerwaitforsingleobject) em vez de **WaitForSingleObject**. O thread que está executando a função de [**immain**](/windows/win32/api/winsvc/nc-winsvc-lpservice_main_functiona) é encerrado, mas o próprio serviço continua a ser executado. Quando o manipulador de controle de serviço sinaliza o evento, um thread do pool de threads executa o retorno de chamada para executar a limpeza adicional, incluindo a definição do status como serviço \_ parado.
+Como esse serviço de exemplo não conclui nenhuma tarefa real, o SvcInit simplesmente aguarda que o evento de parada de serviço seja sinalizado chamando a função [**WaitForSingleObject,**](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject) chama ReportSvcStatus para indicar que o serviço entrou no estado SERVICE STOPPED e \_ retorna. (Observe que é importante que a função retorne, em vez de chamar a função [**ExitThread,**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread) porque retornar permite a limpeza da memória alocada para os argumentos.) Você pode executar tarefas de limpeza adicionais usando [**a função RegisterWaitForSingleObject**](/windows/desktop/api/winbase/nf-winbase-registerwaitforsingleobject) em vez de **WaitForSingleObject**. O thread que está executando a [**função ServiceMain**](/windows/win32/api/winsvc/nc-winsvc-lpservice_main_functiona) é encerrado, mas o próprio serviço continua sendo executado. Quando o manipulador de controle de serviço sinaliza o evento, um thread do pool de threads executa o retorno de chamada para executar a limpeza adicional, incluindo a definição do status como SERVICE \_ STOPPED.
 
-Observe que este exemplo usa SvcReportEvent para gravar eventos de erro no log de eventos. Para o código-fonte para SvcReportEvent, consulte [svc. cpp](svc-cpp.md). Para obter uma função de manipulador de controle de exemplo, consulte [escrevendo uma função de manipulador de controle](writing-a-control-handler-function.md).
+Observe que este exemplo usa SvcReportEvent para gravar eventos de erro no log de eventos. Para o código-fonte de SvcReportEvent, consulte [Svc.cpp](svc-cpp.md). Para uma função de manipulador de controle de exemplo, consulte [Escrevendo uma função de manipulador de controle](writing-a-control-handler-function.md).
 
 As definições globais a seguir são usadas neste exemplo.
 
@@ -40,7 +40,7 @@ HANDLE                  ghSvcStopEvent = NULL;
 
 
 
-O fragmento de exemplo a seguir é obtido do exemplo de serviço completo.
+O fragmento de exemplo a seguir é retirado do exemplo de serviço completo.
 
 
 ```C++
@@ -183,7 +183,7 @@ VOID ReportSvcStatus( DWORD dwCurrentState,
 
 <dl> <dt>
 
-[Função Service-Main](service-servicemain-function.md)
+[Função ServiceMain](service-servicemain-function.md)
 </dt> <dt>
 
 [O exemplo de serviço completo](the-complete-service-sample.md)

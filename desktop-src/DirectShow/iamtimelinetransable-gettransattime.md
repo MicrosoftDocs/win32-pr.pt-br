@@ -74,7 +74,7 @@ Retorna um dos seguintes valores de **HRESULT** :
 
 
 
-| Código de retorno                                                                                  | Description                           |
+| Código de retorno                                                                                  | Descrição                           |
 |----------------------------------------------------------------------------------------------|---------------------------------------|
 | <dl> <dt>**\_falso**</dt> </dl>      | Nenhuma transição foi encontrada.<br/>   |
 | <dl> <dt>**S \_ OK**</dt> </dl>         | A transição foi encontrada.<br/>      |

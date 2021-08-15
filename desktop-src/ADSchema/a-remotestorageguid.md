@@ -1,10 +1,10 @@
 ---
-title: Atributo Armazenamento-GUID remoto
+title: Atributo Armazenamento GUID remoto
 description: Esse atributo contém o GUID de um objeto de armazenamento remoto.
 ms.assetid: 9051666f-539c-4339-8652-3ebdab1af301
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo Armazenamento-GUID remoto
+- Esquema do AD Armazenamento guid remoto
 - Esquema do AD do atributo remoteStorageGUID
 topic_type:
 - apiref
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118423772"
 ---
-# <a name="remote-storage-guid-attribute"></a>Atributo Armazenamento-GUID remoto
+# <a name="remote-storage-guid-attribute"></a>Atributo Armazenamento GUID remoto
 
 Esse atributo contém o GUID de um objeto de armazenamento remoto.
 

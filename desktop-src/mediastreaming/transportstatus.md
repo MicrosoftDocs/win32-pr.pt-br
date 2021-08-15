@@ -1,9 +1,9 @@
 ---
 title: Enumeração TransportStatus
-description: Define o status de transporte disponível conforme definido pelas diretrizes de UPnP.
+description: Define o status de transporte disponível conforme definido pelas Diretrizes de UPnP.
 ms.assetid: 6fde82f0-9bc4-4abb-9d10-0000501c2b24
 keywords:
-- API de streaming de mídia de enumeração TransportStatus
+- API de Streaming de Mídia de enumeração TransportStatus
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "118472992"
 ---
 # <a name="transportstatus-enumeration"></a>Enumeração TransportStatus
 
-Define o status de transporte disponível conforme definido pelas diretrizes de UPnP.
+Define o status de transporte disponível conforme definido pelas Diretrizes de UPnP.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,10 +43,10 @@ typedef enum TransportStatus {
 
 <dl> <dt>
 
-<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Conhecidos**
+<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Desconhecido**
 </dt> <dd>
 
-Status do dispositivo errôneo.
+Status do dispositivo errado.
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Ocorreu um erro no dispositivo.
 <span id="Last"></span><span id="last"></span><span id="LAST"></span>**Última**
 </dt> <dd>
 
-O status do dispositivo anterior para o status de transporte atual.
+O status anterior do dispositivo para o status de transporte atual.
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ O status do dispositivo anterior para o status de transporte atual.
 
 | Requisito | Valor |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| INSERI<br/> | <dl> <dt>Windows. Media. streaming. idl (Windows de referência. Media. streaming. idl)</dt> </dl> |
+| Idl<br/> | <dl> <dt>Windows. Media.Streaming.idl (referência Windows. Media.Streaming.idl)</dt> </dl> |
 
 
 

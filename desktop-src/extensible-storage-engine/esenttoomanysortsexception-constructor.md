@@ -35,8 +35,8 @@ ms.locfileid: "118487991"
 
 Inicializa uma nova instância da classe EsentTooManySortsException.
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentTooManySortsException()
 
 [Classe EsentTooManySortsException](./esenttoomanysortsexception-class.md)
 
-[Membros EsentTooManySortsException](./esenttoomanysortsexception-members.md)
+[Membros do EsentTooManySortsException](./esenttoomanysortsexception-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

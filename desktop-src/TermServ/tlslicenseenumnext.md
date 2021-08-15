@@ -15,19 +15,19 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c13b0a3137258015fe311c49b2cc9b999e3a13f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 945c0afb931770a36049342f32c71613bd8fb1a0a9b16142c1ffbc6a67ccc288
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986796"
 ---
 # <a name="tlslicenseenumnext-function"></a>Função TLSLicenseEnumNext
 
-Continua de uma chamada anterior para a função [**TLSLicenseEnumBegin**](tlslicenseenumbegin.md) e retorna a próxima licença instalada em um servidor de licença área de trabalho remota que corresponde aos critérios de pesquisa.
+Continua de uma chamada anterior para a função [**TLSLicenseEnumBegin**](tlslicenseenumbegin.md) e retorna a próxima licença instalada em um servidor de licença Área de Trabalho Remota que corresponde aos critérios de pesquisa.
 
 > [!Note]  
-> Esta função não tem nenhum arquivo de cabeçalho ou biblioteca de importação associado. Para chamar essa função, você deve criar um arquivo de cabeçalho definido pelo usuário e usar as funções [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a Mstlsapi.dll.
+> Essa função não tem nenhum arquivo de header associado ou biblioteca de importação. Para chamar essa função, você deve criar um arquivo de título definido pelo usuário e usar as funções [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a Mstlsapi.dll.
 
  
 
@@ -48,30 +48,30 @@ DWORD WINAPI TLSLicenseEnumNext(
 
 <dl> <dt>
 
-*hHandle* \[ no\]
+*hHandle* \[ Em\]
 </dt> <dd>
 
-Identificador para um servidor de licença Área de Trabalho Remota. Especifique um identificador que é aberto pela função [**TLSConnectToLsServer**](tlsconnecttolsserver.md) .
+Lidar com um servidor Área de Trabalho Remota licença. Especifique um alça que é aberto pela [**função TLSConnectToLsServer.**](tlsconnecttolsserver.md)
 
 </dd> <dt>
 
-*lpLicense* \[ no\]
+*lpLicense* \[ Em\]
 </dt> <dd>
 
-Ponteiro para uma estrutura [**LSLicense**](lslicense.md) que recebe a próxima licença que corresponde aos critérios de pesquisa.
+Ponteiro para uma [**estrutura LSLicense**](lslicense.md) que recebe a próxima licença que corresponde aos critérios de pesquisa.
 
 </dd> <dt>
 
-*pdwErrCode* \[ fora\]
+*pdwErrCode* \[ out\]
 </dt> <dd>
 
-Ponteiro para uma variável que recebe um dos seguintes códigos de erro no retorno.
+Ponteiro para uma variável que recebe um dos códigos de erro a seguir no retorno.
 
 <dt>
 
 <span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>
 
-<span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>**LSERVER \_ S com \_ êxito** (0)
+<span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>**LSERVER \_ S \_ SUCCESS** (0)
 
 
 </dt> <dd>
@@ -82,18 +82,18 @@ A chamada foi bem-sucedida.
 
 <span id="LSERVER_I_NO_MORE_DATA"></span><span id="lserver_i_no_more_data"></span>
 
-<span id="LSERVER_I_NO_MORE_DATA"></span><span id="lserver_i_no_more_data"></span>**LSERVER \_ \_Não há \_ mais \_ dados** (4001)
+<span id="LSERVER_I_NO_MORE_DATA"></span><span id="lserver_i_no_more_data"></span>**LSERVER \_ NÃO \_ HÁ \_ MAIS \_ DADOS** (4001)
 
 
 </dt> <dd>
 
-Não há mais licenças correspondentes aos critérios de pesquisa.
+Não há mais licenças que corresponderem aos critérios de pesquisa.
 
 </dd> <dt>
 
 <span id="LSERVER_E_INTERNAL_ERROR"></span><span id="lserver_e_internal_error"></span>
 
-<span id="LSERVER_E_INTERNAL_ERROR"></span><span id="lserver_e_internal_error"></span>**LSERVER \_ \_ \_ Erro interno E** (5001)
+<span id="LSERVER_E_INTERNAL_ERROR"></span><span id="lserver_e_internal_error"></span>**LSERVER \_ ERRO \_ \_ INTERNO DO E** (5001)
 
 
 </dt> <dd>
@@ -104,23 +104,23 @@ Erro interno no servidor de licença.
 
 <span id="LSERVER_E_INVALID_SEQUENCE"></span><span id="lserver_e_invalid_sequence"></span>
 
-<span id="LSERVER_E_INVALID_SEQUENCE"></span><span id="lserver_e_invalid_sequence"></span>**LSERVER \_ \_ \_ Sequência inválida E** (5006)
+<span id="LSERVER_E_INVALID_SEQUENCE"></span><span id="lserver_e_invalid_sequence"></span>**LSERVER \_ E \_ SEQUÊNCIA \_ INVÁLIDA** (5006)
 
 
 </dt> <dd>
 
-A sequência de chamada não era válida. Deve chamar a função [**TLSLicenseEnumBegin ()**](tlslicenseenumbegin.md) antes disso.
+A sequência de chamada não era válida. Deve chamar a [**função TLSLicenseEnumBegin()**](tlslicenseenumbegin.md) antes disso.
 
 </dd> <dt>
 
 <span id="LSERVER_E_SERVER_BUSY"></span><span id="lserver_e_server_busy"></span>
 
-<span id="LSERVER_E_SERVER_BUSY"></span><span id="lserver_e_server_busy"></span>**LSERVER \_ \_Servidor E \_ ocupado** (5007)
+<span id="LSERVER_E_SERVER_BUSY"></span><span id="lserver_e_server_busy"></span>**LSERVER \_ E \_ SERVER \_ BUSY** (5007)
 
 
 </dt> <dd>
 
-O servidor de licenças está muito ocupado para processar a solicitação.
+O servidor de licença está muito ocupado para processar a solicitação.
 
 </dd> <dt>
 
@@ -135,7 +135,7 @@ Não é possível processar a solicitação devido à memória insuficiente.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função retorna os seguintes valores de retorno possíveis.
 
@@ -144,11 +144,11 @@ Essa função retorna os seguintes valores de retorno possíveis.
 **RPC \_ S \_ OK**
 </dt> <dd>
 
-A chamada foi bem-sucedida. Verifique o valor do parâmetro *pdwErrCode* para obter o código de retorno para a chamada.
+A chamada foi bem-sucedida. Verifique o valor do parâmetro *pdwErrCode* para obter o código de retorno da chamada.
 
 </dd> <dt>
 
-**ARG. de RPC \_ \_ inválido \_**
+**RPC \_ S \_ \_ ARG INVÁLIDO**
 </dt> <dd>
 
 O argumento não era válido.

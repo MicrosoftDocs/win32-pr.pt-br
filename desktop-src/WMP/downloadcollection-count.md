@@ -1,9 +1,9 @@
 ---
-title: Baixar. Count
-description: Observação Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. A propriedade Count recupera o número de downloads pendentes na coleção.
+title: DownloadCollection.count
+description: Observação Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. A propriedade count recupera o número de downloads pendentes na coleção.
 ms.assetid: 8f9245aa-6d92-4dd3-9b45-97ee37de680d
 keywords:
-- Downloadcollection. contagem do Windows Media Player
+- DownloadCollection.count Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95f161143cf599dcfbc71b2e55764009ec5d4e67
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7d563ea49629c2ae4eee517c503f866672c3bd18d9d75bd4602e5bb70ed78a5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997086"
 ---
-# <a name="downloadcollectioncount"></a>Baixar. Count
+# <a name="downloadcollectioncount"></a>DownloadCollection.count
 
 > [!Note]  
 > Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online.
 
  
 
-A propriedade **Count** recupera o número de downloads pendentes na coleção.
+A **propriedade** count recupera o número de downloads pendentes na coleção.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,7 +41,7 @@ DownloadManager.getDownloadCollection(
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Essa propriedade é um **número** somente leitura (**Long**).
+Essa propriedade é um Número somente **leitura** (**long**).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,7 +49,7 @@ Essa propriedade é um **número** somente leitura (**Long**).
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/>                                  |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/>                                  |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -58,7 +58,7 @@ Essa propriedade é um **número** somente leitura (**Long**).
 
 <dl> <dt>
 
-[**Objeto downloadcollection**](downloadcollection-object.md)
+[**Objeto DownloadCollection**](downloadcollection-object.md)
 </dt> </dl>
 
  

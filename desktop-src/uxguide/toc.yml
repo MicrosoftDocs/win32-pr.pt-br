@@ -104,7 +104,7 @@
           href: win-common-dlg.md
         - name: Assistentes
           href: win-wizards.md
-        - name: Janelas de propriedades
+        - name: Windows de propriedade
           href: win-property-win.md
     - name: Visuais
       href: visuals.md
@@ -113,7 +113,7 @@
           href: vis-layout.md
         - name: Fontes
           href: vis-fonts.md
-        - name: Cor
+        - name: Color
           href: vis-color.md
         - name: Ícones
           href: vis-icons.md
@@ -139,7 +139,7 @@
     - name: Ambiente do Windows
       href: windows-environment.md
       items:
-        - name: Área de trabalho
+        - name: Desktop
           href: winenv-desktop.md
         - name: Barra de tarefas
           href: winenv-taskbar.md

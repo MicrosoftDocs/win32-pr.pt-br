@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56d4439e5ee10fba11db831024d6b1958b75cd81
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 546e6f0fe88cb379ec3b4623a7223c6f88a17421766d5a5be2b24adf146972a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961375"
 ---
 # <a name="fsmo-role-owner-attribute"></a>Atributo FSMO-role-Owner
 
@@ -59,8 +59,8 @@ Operação de Single-Master flexível: o nome distinto do DC em que o esquema po
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
-| É indexado             | True                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
@@ -80,8 +80,8 @@ Operação de Single-Master flexível: o nome distinto do DC em que o esquema po
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
-| É indexado             | True                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
@@ -101,8 +101,8 @@ Operação de Single-Master flexível: o nome distinto do DC em que o esquema po
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
-| É indexado             | True                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
@@ -122,8 +122,8 @@ Operação de Single-Master flexível: o nome distinto do DC em que o esquema po
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
-| É indexado             | True                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
@@ -143,8 +143,8 @@ Operação de Single-Master flexível: o nome distinto do DC em que o esquema po
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
-| É indexado             | True                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
@@ -164,8 +164,8 @@ Operação de Single-Master flexível: o nome distinto do DC em que o esquema po
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
-| É indexado             | True                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
@@ -185,8 +185,8 @@ Operação de Single-Master flexível: o nome distinto do DC em que o esquema po
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
-| É indexado             | True                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |

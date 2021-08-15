@@ -52,7 +52,7 @@ As configurações recomendadas para componentes crm são as a seguir.
 
 <dl> <dt>
 
-[Conceitos de Resource Manager com+](com--compensating-resource-manager-concepts.md)
+[Conceitos de Resource Manager COM+](com--compensating-resource-manager-concepts.md)
 </dt> </dl>
 
  

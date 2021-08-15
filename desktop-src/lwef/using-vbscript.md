@@ -4,16 +4,16 @@ description: Usando o VBScript
 ms.assetid: a078eb60-aa12-42ea-850c-7b845fc8037c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 691ed6bf520c83e4b679bb174274abb984eaa2f8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7afa94bd5b3576e80cf8a0c17857bbb0902bd254e95113d87ae9d1d1fca1e38b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159941"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975496"
 ---
 # <a name="using-vbscript"></a>Usando o VBScript
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 O VBScript é uma linguagem de programação incluída no Microsoft Internet Explorer. Para outros navegadores, entre em contato com seu fornecedor sobre o suporte. O VBScript 2,0 (ou posterior) é recomendado para uso com o Agent. Embora as versões anteriores do VBScript possam funcionar com o Agent, elas não têm determinadas funções que talvez você queira usar. Você pode baixar o VBScript 2,0 e obter mais informações sobre o VBScript no site de downloads da Microsoft e no site do Microsoft VBScript.
 
@@ -77,9 +77,9 @@ End Function
 </SCRIPT>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

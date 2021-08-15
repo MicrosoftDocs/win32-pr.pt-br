@@ -4,12 +4,12 @@ ms.assetid: dddae10f-3ed2-4444-af5b-f2cf46c52e7c
 title: Propriedade MFPKEY_RESIZE_MINAPHEIGHT (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f2f7ddafc73562a24b1e68a0969ac0a545c0a61
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6fb061fc1b1ba2a041f1689e8129eae7cbda4e45ff84407781ef4b693e33b1f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105773053"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973425"
 ---
 # <a name="mfpkey_resize_minapheight-property"></a>MFPKEY \_ redimensionar \_ MINAPHEIGHT Propriedade
 
@@ -33,9 +33,9 @@ Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-pro
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 
 
 

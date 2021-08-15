@@ -1,4 +1,4 @@
-- name: Informações do sistema Windows
+- name: Windows Informações do Sistema
   href: windows-system-information.md
   items:
     - name: Identificadores e objetos
@@ -48,7 +48,7 @@
           items:
             - name: Estrutura do registro
               href: structure-of-the-registry.md
-            - name: Espaço de armazenamento do registro
+            - name: espaço de Armazenamento do registro
               href: registry-storage-space.md
             - name: Chaves predefinidas
               href: predefined-keys.md
@@ -216,7 +216,7 @@
     - name: Informações do sistema
       href: system-information.md
       items:
-        - name: Sobre as informações do sistema
+        - name: sobre Informações do Sistema
           href: about-system-information.md
           items:
             - name: Configuração de hardware
@@ -227,14 +227,14 @@
               href: operating-system-version.md
             - name: Configuração do sistema operacional
               href: operating-system-configuration.md
-        - name: Usando informações do sistema
+        - name: usando Informações do Sistema
           href: using-system-information.md
           items:
-            - name: Acessar informações de SMBIOS de um aplicativo universal do Windows
+            - name: acessar informações de SMBIOS de um aplicativo Universal Windows
               href: access-smbios-information-from-a-universal-windows-app.md
-            - name: Acessar variáveis de firmware UEFI de um aplicativo universal do Windows
+            - name: acessar variáveis de firmware UEFI de um aplicativo Universal Windows
               href: access-uefi-firmware-variables-from-a-universal-windows-app.md
-            - name: Obtendo informações do sistema
+            - name: obtendo Informações do Sistema
               href: getting-system-information.md
             - name: Obtendo a versão do sistema
               href: getting-the-system-version.md
@@ -246,10 +246,10 @@
               href: getting-hardware-information.md
             - name: Direcionando seu aplicativo para Windows
               href: targeting-your-application-at-windows-8-1.md
-        - name: Referência de informações do sistema
+        - name: Informações do Sistema Referência
           href: system-information-reference.md
           items:
-            - name: Funções de informações do sistema
+            - name: Informações do Sistema Funções
               href: system-information-functions.md
               items:
                 - name: ApiSetQueryApiSetPresence
@@ -367,7 +367,7 @@
                       href: /windows/desktop/api/VersionHelpers/nf-versionhelpers-iswindowsversionorgreater
                 - name: ZwQuerySystemInformation
                   href: zwquerysysteminformation.md
-            - name: Estruturas de informações do sistema
+            - name: Informações do Sistema Estruturas
               href: system-information-structures.md
               items:
                 - name: HW_PROFILE_INFO
@@ -378,12 +378,12 @@
                   href: /windows/win32/api/Winnt/ns-winnt-osversioninfoexa
                 - name: SYSTEM_INFO
                   href: /windows/win32/api/sysinfoapi/ns-sysinfoapi-system_info
-            - name: Macros de informações do sistema
+            - name: Informações do Sistema Macros
               href: system-information-macros.md
               items:
                 - name: VER_SET_CONDITION
                   href: /windows/desktop/api/Winnt/nf-winnt-ver_set_condition
-            - name: Tipos de enumeração de informações do sistema
+            - name: Informações do Sistema Tipos de enumeração
               href: system-information-enumeration-types.md
               items:
                 - name: COMPUTER_NAME_FORMAT
@@ -394,7 +394,7 @@
                   href: /windows/win32/api/Winnt/ne-winnt-firmware_type
             - name: Constantes de máquina de arquivo de imagem
               href: image-file-machine-constants.md
-    - name: Hora
+    - name: Tempo
       href: time.md
       items:
         - name: Sobre o tempo
@@ -431,9 +431,9 @@
               items:
                 - name: CompareFileTime
                   href: /windows/desktop/api/FileAPI/nf-fileapi-comparefiletime
-                - name: ConvertAuxiliaryCounterToPerformanceCounter
+                - name: ConvertIliaryCounterToPerformanceCounter
                   href: /windows/desktop/api/realtimeapiset/nf-realtimeapiset-convertauxiliarycountertoperformancecounter
-                - name: ConvertPerformanceCounterToAuxiliaryCounter
+                - name: ConvertPerformanceCounterToIliaryCounter
                   href: /windows/desktop/api/realtimeapiset/nf-realtimeapiset-convertperformancecountertoauxiliarycounter
                 - name: DosDateTimeToFileTime
                   href: /windows/desktop/api/Winbase/nf-winbase-dosdatetimetofiletime
@@ -449,11 +449,11 @@
                   href: /windows/desktop/api/timezoneapi/nf-timezoneapi-getdynamictimezoneinformation
                 - name: GetDynamicTimeZoneInformationEffectiveYears
                   href: /windows/desktop/api/timezoneapi/nf-timezoneapi-getdynamictimezoneinformationeffectiveyears
-                - name: GetFileTime
+                - name: Getfiletime
                   href: /windows/desktop/api/FileAPI/nf-fileapi-getfiletime
                 - name: GetLocalTime
                   href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-getlocaltime
-                - name: GetSystemTime
+                - name: Getsystemtime
                   href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsystemtime
                 - name: GetSystemTimeAdjustment
                   href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsystemtimeadjustment
@@ -465,11 +465,11 @@
                   href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsystemtimepreciseasfiletime
                 - name: GetSystemTimes
                   href: /windows/desktop/api/processthreadsapi/nf-processthreadsapi-getsystemtimes
-                - name: GetTickCount
+                - name: Obtercontagemmarcaescala
                   href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-gettickcount
                 - name: GetTickCount64
                   href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-gettickcount64
-                - name: GetTimeZoneInformation
+                - name: Gettimezoneinformation
                   href: /windows/desktop/api/timezoneapi/nf-timezoneapi-gettimezoneinformation
                 - name: GetTimeZoneInformationForYear
                   href: /windows/desktop/api/timezoneapi/nf-timezoneapi-gettimezoneinformationforyear
@@ -477,7 +477,7 @@
                   href: /windows/desktop/api/FileAPI/nf-fileapi-localfiletimetofiletime
                 - name: NtQuerySystemTime
                   href: /windows/desktop/api/Winternl/nf-winternl-ntquerysystemtime
-                - name: QueryAuxiliaryCounterFrequency
+                - name: QueryIliaryCounterFrequency
                   href: /windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryauxiliarycounterfrequency
                 - name: QueryInterruptTime
                   href: /windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryinterrupttime
@@ -522,28 +522,28 @@
                   href: /windows/desktop/api/timezoneapi/ns-timezoneapi-dynamic_time_zone_information
                 - name: FILETIME
                   href: /windows/desktop/api/minwinbase/ns-minwinbase-filetime
-                - name: SYSTEMTIME
+                - name: Systemtime
                   href: /windows/desktop/api/minwinbase/ns-minwinbase-systemtime
-                - name: TIME_ZONE_INFORMATION
+                - name: Time_zone_information
                   href: /windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information
-            - name: Mensagens de hora
+            - name: Mensagens de tempo
               href: time-messages.md
               items:
                 - name: WM_TIMECHANGE
                   href: wm-timechange.md
-    - name: Provedor de tempo
+    - name: Provedor de Tempo
       href: time-provider.md
       items:
         - name: Criando um provedor de tempo
           href: creating-a-time-provider.md
         - name: Registrando um provedor de tempo
           href: registering-a-time-provider.md
-        - name: Provedor de tempo de exemplo
+        - name: Provedor de Tempo de Exemplo
           href: sample-time-provider.md
         - name: Referência do provedor de tempo
           href: time-provider-reference.md
           items:
-            - name: Funções de provedor de tempo
+            - name: Funções do provedor de tempo
               href: time-provider-functions.md
               items:
                 - name: AlertSamplesAvailFunc
@@ -562,23 +562,23 @@
                   href: /windows/desktop/api/Timeprov/nf-timeprov-timeprovcommand
                 - name: TimeProvOpen
                   href: /windows/desktop/api/Timeprov/nf-timeprov-timeprovopen
-            - name: Estruturas de provedor de tempo
+            - name: Estruturas do provedor de tempo
               href: time-provider-structures.md
               items:
                 - name: SetProviderStatusInfo
                   href: /windows/desktop/api/Timeprov/ns-timeprov-setproviderstatusinfo
                 - name: TimeProvSysCallbacks
                   href: /windows/desktop/api/Timeprov/ns-timeprov-timeprovsyscallbacks
-                - name: Exemplo de
+                - name: TimeSample
                   href: /windows/desktop/api/Timeprov/ns-timeprov-timesample
                 - name: TpcGetSamplesArgs
                   href: /windows/desktop/api/Timeprov/ns-timeprov-tpcgetsamplesargs
     - name: Plataforma de avaliação do WaaS
       href: update-assessor-service.md
       items:
-        - name: Sobre a plataforma de avaliação do WaaS
+        - name: Sobre a Plataforma de Avaliação do WaaS
           href: about-update-assessor-service.md
-        - name: Usando a plataforma de avaliação WaaS
+        - name: Usando a Plataforma de Avaliação do WaaS
           href: using-update-assessor-service.md
         - name: Referência de avaliação do WaaS
           href: update-assessor-reference.md

@@ -1,9 +1,9 @@
 ---
 title: Verificando opções de pré-processador
-description: O compilador MIDL invoca implicitamente o pré-processador e não exibe suas opções de pré-processador.
+description: O compilador MIDL chama implicitamente o pré-processador e não exibe suas opções de pré-processador.
 ms.assetid: 2f402af4-18d7-480c-a8d2-d16f402ef87a
 keywords:
-- MIDL compiler MIDL , verificando opções de pré-processador
+- MIDL do compilador MIDL, verificando opções de pré-processador
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: acb9f5055623a44e88ed57b5ed0cadd0034c6962e160a081c7a55a9a51ca9e13
@@ -15,11 +15,11 @@ ms.locfileid: "118382737"
 ---
 # <a name="verifying-preprocessor-options"></a>Verificando opções de pré-processador
 
-O compilador MIDL invoca implicitamente o pré-processador e não exibe suas opções de pré-processador. Na ausência da opção MIDL [**/cpp \_ opt,**](-cpp-opt.md) a linha de comando do pré-processador é composta por todas as opções [**/I**](-i.md), [**/D**](-d.md) e [**/U**](-u.md) usadas na linha de comando MIDL, bem como as opções **/E** e [**/nologo.**](-nologo.md) Para ver as opções passadas para o pré-processador, use a opção [**/confirm do**](-confirm.md) compilador.
+O compilador MIDL chama implicitamente o pré-processador e não exibe suas opções de pré-processador. Na ausência da opção MIDL [**/cpp \_ opt**](-cpp-opt.md) , a linha de comando do pré-processador é composta de todas as opções [**/I**](-i.md), [**/d**](-d.md) e [**/u**](-u.md) usadas na linha de comando MIDL, bem como opções **/e** e [**/nologo**](-nologo.md) . Para ver as opções passadas para o pré-processador, use a opção [**/Confirm**](-confirm.md) do compilador.
 
 Por exemplo, a linha a seguir
 
-**midl.exe -D \_ WIN32 \_ WINNT=0x501 -robust -DNTENV=1 -Id: \\ nt \\ public \\ sdk \\ inc -confirm -Oicf -env win32 -out x86 stub.idl**
+**midl.exe-D \_ Win32 \_ WinNT = 0x501-robusto-DNTENV = 1-ID: \\ NT \\ Public \\ SDK \\ Inc-Confirm-Oicf-env Win32-out x86 stub. idl**
 
 produz a seguinte saída:
 

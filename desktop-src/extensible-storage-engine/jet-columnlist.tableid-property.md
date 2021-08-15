@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: JET_COLUMNLIST.tableid'
-title: propriedade JET_COLUMNLIST.tableid
+description: 'Saiba mais sobre a propriedade: JET_COLUMNLIST. TableName'
+title: Propriedade JET_COLUMNLIST. TableName
 TOCTitle: 'tableid property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_COLUMNLIST.tableid
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columnlist.tableid(v=EXCHG.10)
@@ -33,12 +33,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118486851"
 ---
-# <a name="jet_columnlisttableid-property"></a>propriedade JET_COLUMNLIST.tableid
+# <a name="jet_columnlisttableid-property"></a>Propriedade JET_COLUMNLIST. TableName
 
-Obtém tableid da tabela temporária. Isso deve ser fechado quando a tabela não for mais necessária.
+Obtém TableName da tabela temporária. Isso deve ser fechado quando a tabela não for mais necessária.
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -60,14 +60,14 @@ public JET_TABLEID tableid { get; internal set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[JET_COLUMNLIST classe](./jet-columnlist-class.md)
+[Classe JET_COLUMNLIST](./jet-columnlist-class.md)
 
-[JET_COLUMNLIST membros](./jet-columnlist-members.md)
+[Membros do JET_COLUMNLIST](./jet-columnlist-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

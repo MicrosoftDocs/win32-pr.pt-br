@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd05f5ad6b3c48ad6664f883a9db03fb3c7f27d9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 38eb210efda56d1742f19b324354cc97ccdd8eaee2c8113215bd5a3071990fbc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961765"
 ---
 # <a name="company-attribute"></a>Atributo da empresa
 
@@ -58,7 +58,7 @@ O nome da empresa do usuário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x3A16                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -79,7 +79,7 @@ O nome da empresa do usuário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x3A16                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -100,7 +100,7 @@ O nome da empresa do usuário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x3A16                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -121,7 +121,7 @@ O nome da empresa do usuário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x3A16                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -142,7 +142,7 @@ O nome da empresa do usuário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x3A16                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -163,7 +163,7 @@ O nome da empresa do usuário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x3A16                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |

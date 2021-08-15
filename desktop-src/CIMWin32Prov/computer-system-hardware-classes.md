@@ -195,9 +195,9 @@ A subcategoria de impressão agrupa classes que representam impressoras, configu
 | [**\_PrinterController Win32**](win32-printercontroller.md)       | Relaciona uma impressora e o dispositivo local ao qual a impressora está conectada.<br/>                                                     |
 | [**\_PrinterDriver Win32**](win32-printerdriver.md)               | Representa os drivers para uma instância de [**\_ impressora Win32**](win32-printer.md) .<br/>                                                |
 | [**\_PrinterDriverDll Win32**](win32-printerdriverdll.md)         | Relaciona uma impressora local e seu arquivo de driver (não o próprio driver).<br/>                                                          |
-| [**Impressora \_ Win32Conjunto**](win32-printersetting.md)             | Relaciona uma impressora e suas definições de configuração.<br/>                                                                             |
-| [**Win32 \_ PrintJob**](win32-printjob.md)                         | Representa um trabalho de impressão gerado por um Windows baseado em dados.<br/>                                                              |
-| [**Win32 \_ TCPIPPrinterPort**](win32-tcpipprinterport.md)         | Representa um ponto de acesso do serviço TCP/IP.<br/>                                                                                     |
+| [**\_PrinterSetting Win32**](win32-printersetting.md)             | Relaciona uma impressora e suas definições de configuração.<br/>                                                                             |
+| [**PrintJob do Win32 \_**](win32-printjob.md)                         | representa um trabalho de impressão gerado por um aplicativo baseado em Windows.<br/>                                                              |
+| [**\_TCPIPPrinterPort Win32**](win32-tcpipprinterport.md)         | Representa um ponto de acesso do serviço TCP/IP.<br/>                                                                                     |
 
 
 
@@ -205,14 +205,14 @@ A subcategoria de impressão agrupa classes que representam impressoras, configu
 
 ## <a name="telephony-classes"></a>Classes de telefonia
 
-A subcategoria Telefonia grupos classes que representam dispositivos de modem "telefone antigo sem-valor" e suas conexões seriais associadas.
+A subcategoria de telefonia agrupa classes que representam dispositivos de modem "telefone antigo" e suas conexões seriais associadas.
 
 
 
 | Classe                                                               | Descrição                                                                                                                                |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Win32 \_ POTSModem**](win32-potsmodem.md)                         | Representa os serviços e as características de um modem DOLS (Serviço de Telefone Antigo Simples) em um sistema de computador executando Windows.<br/> |
-| [**Win32 \_ POTSModemToSerialPort**](win32-potsmodemtoserialport.md) | Relaciona um modem e a porta serial que o modem usa.<br/>                                                                             |
+| [**\_POTSModem Win32**](win32-potsmodem.md)                         | Representa os serviços e as características de um modem de serviço de telefonia comum (POTS) em um sistema de computador que executa o Windows.<br/> |
+| [**\_POTSModemToSerialPort Win32**](win32-potsmodemtoserialport.md) | Relaciona um modem e a porta serial que o modem usa.<br/>                                                                             |
 
 
 
@@ -220,16 +220,16 @@ A subcategoria Telefonia grupos classes que representam dispositivos de modem "t
 
 ## <a name="video-and-monitor-classes"></a>Classes de vídeo e monitor
 
-As classes de subcategoria Vídeo e Monitores que representam monitores, placas de vídeo e suas configurações associadas.
+A subcategoria vídeo e monitores agrupa as classes que representam monitores, placas de vídeo e suas configurações associadas.
 
 
 
 | Classe                                                                                 | Descrição                                                                                                                                                                                                                                                                                                                                                                        |
 |---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md)                                 | Representa o tipo de monitor ou dispositivo de exibição anexado ao sistema de computador.<br/>                                                                                                                                                                                                                                                                                       |
-| [**Win32 \_ DisplayControllerConfiguration**](win32-displaycontrollerconfiguration.md) | Representa as informações de configuração do adaptador de vídeo de um sistema de computador executando Windows. Essa classe está obsoleta. No lugar dessa classe, use as propriedades nas classes [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md)e [CIM \_ VideoControllerResolution.](cim-videocontrollerresolution.md)<br/> |
-| [**VideoController do Win32 \_**](win32-videocontroller.md)                               | Representa os recursos e a capacidade de gerenciamento do controlador de vídeo em um sistema de computador executando Windows.<br/>                                                                                                                                                                                                                                                       |
-| [**VideoSettings do Win32 \_**](win32-videosettings.md)                                   | Relaciona um controlador de vídeo e configurações de vídeo que podem ser aplicadas a ele.<br/>                                                                                                                                                                                                                                                                                                |
+| [**\_DesktopMonitor Win32**](win32-desktopmonitor.md)                                 | Representa o tipo de monitor ou dispositivo de exibição conectado ao sistema de computador.<br/>                                                                                                                                                                                                                                                                                       |
+| [**\_DisplayControllerConfiguration Win32**](win32-displaycontrollerconfiguration.md) | Representa as informações de configuração do adaptador de vídeo de um sistema de computador que executa o Windows. Essa classe está obsoleta. No lugar dessa classe, use as propriedades nas classes [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md)e [CIM \_ VideoControllerResolution](cim-videocontrollerresolution.md) .<br/> |
+| [**\_VideoController Win32**](win32-videocontroller.md)                               | Representa os recursos e a capacidade de gerenciamento do controlador de vídeo em um sistema de computador que executa o Windows.<br/>                                                                                                                                                                                                                                                       |
+| [**\_VideoSettings Win32**](win32-videosettings.md)                                   | Relaciona um controlador de vídeo e as configurações de vídeo que podem ser aplicadas a ele.<br/>                                                                                                                                                                                                                                                                                                |
 
 
 
@@ -239,7 +239,7 @@ As classes de subcategoria Vídeo e Monitores que representam monitores, placas 
 
 <dl> <dt>
 
-[Win32 Classes](/previous-versions//aa394084(v=vs.85))
+[Classes Win32](/previous-versions//aa394084(v=vs.85))
 </dt> </dl>
 
  

@@ -4,16 +4,16 @@ description: IAgentCommand sethabilitado
 ms.assetid: e0a724b4-3613-400f-a801-efc8bf66e355
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8377307d66257f7a9b74ac82512edc6e4ec64034
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: da164b6603d93496e3381ccc6938a3b6d8f520bcea887cfd11f031cec7d845a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976306"
 ---
 # <a name="iagentcommandsetenabled"></a>IAgentCommand:: sethabilitado
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT SetEnabled(
@@ -41,6 +41,6 @@ Um [**comando**](/windows/desktop/lwef/the-command-object) deve ter sua propried
 [**IAgentCommand:: getCaption**](iagentcommand--getcaption.md), [**IAgentCommand:: setvoice**](iagentcommand--setvoice.md), [**IAgentCommands:: Adicionar**](iagentcommands--add.md), [**IAgentCommands:: Insert**](iagentcommands--insert.md)
 
 
- 
+ 
 
- 
+ 

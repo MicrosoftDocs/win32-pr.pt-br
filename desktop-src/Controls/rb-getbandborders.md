@@ -1,9 +1,9 @@
 ---
-title: Mensagem de RB_GETBANDBORDERS (commctrl. h)
-description: Recupera as bordas de uma banda. O resultado dessa mensagem pode ser usado para calcular a área utilizável em uma banda.
+title: RB_GETBANDBORDERS mensagem (Commctrl.h)
+description: Recupera as bordas de uma banda. O resultado dessa mensagem pode ser usado para calcular a área acessível em uma banda.
 ms.assetid: 45f2ae7e-636e-474b-a0d0-5235c6401e6a
 keywords:
-- Controles de RB_GETBANDBORDERS de mensagens do Windows
+- RB_GETBANDBORDERS controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 521dfecaf5e2573b30f606b7b4d7ecdec9bd896d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1c6b07303c10ef6f466907b11cf0e100927f63480690e77ac3dcbe80df80af97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118409708"
 ---
-# <a name="rb_getbandborders-message"></a>\_Mensagem GETBANDBORDERS RB
+# <a name="rb_getbandborders-message"></a>Mensagem \_ GETBANDBORDERS RB
 
-Recupera as bordas de uma banda. O resultado dessa mensagem pode ser usado para calcular a área utilizável em uma banda.
+Recupera as bordas de uma banda. O resultado dessa mensagem pode ser usado para calcular a área acessível em uma banda.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,18 +32,18 @@ Recupera as bordas de uma banda. O resultado dessa mensagem pode ser usado para 
 *wParam* 
 </dt> <dd>
 
-Índice de base zero da banda para a qual as bordas serão recuperadas.
+Índice baseado em zero da faixa para a qual as bordas serão recuperadas.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**Rect**](/previous-versions//dd162897(v=vs.85)) que receberá as bordas da faixa. Se o controle rebar tiver o estilo [**RBS \_ BANDBORDERS**](rebar-control-styles.md) , cada membro dessa estrutura receberá o número de pixels, no lado correspondente da faixa, que constitui a borda. Se o controle rebar não tiver o estilo **RBS \_ BANDBORDERS** , somente o membro **à esquerda** dessa estrutura receberá informações válidas.
+Ponteiro para uma [**estrutura RECT**](/previous-versions//dd162897(v=vs.85)) que receberá as bordas da banda. Se o controle de barra de rebar tiver o estilo [**\_ BANDBORDERS do RBS,**](rebar-control-styles.md) cada membro dessa estrutura receberá o número de pixels, no lado correspondente da faixa, que constituem a borda. Se o controle de barra de rebar não tiver  o estilo **\_ RBS BANDBORDERS,** somente o membro esquerdo dessa estrutura receberá informações válidas.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno não é usado.
 
@@ -53,9 +53,9 @@ O valor de retorno não é usado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

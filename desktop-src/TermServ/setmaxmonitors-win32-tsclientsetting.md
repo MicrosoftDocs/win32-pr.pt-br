@@ -4,9 +4,9 @@ description: Define a propriedade MaxMonitors.
 ms.assetid: 1c8266e1-ff2b-4fbc-af70-6f7b4499d88c
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método SetMaxMonitors
-- Método SetMaxMonitors Serviços de Área de Trabalho Remota, classe Win32_TSClientSetting
-- Classe Win32_TSClientSetting Serviços de Área de Trabalho Remota, método SetMaxMonitors
+- Método SetMaxMonitors Serviços de Área de Trabalho Remota
+- Método SetMaxMonitors Serviços de Área de Trabalho Remota , Win32_TSClientSetting classe
+- Win32_TSClientSetting classe Serviços de Área de Trabalho Remota , método SetMaxMonitors
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 76cdbe29079f5006cbf596751bef73cda1e94e52
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e91cc6a53bbec769236e5c1b462e7bdfe5859cc140a11366299a3eaab46e1777
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105769377"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119987906"
 ---
-# <a name="setmaxmonitors-method-of-the-win32_tsclientsetting-class"></a>Método SetMaxMonitors da classe Win32 \_ TSClientSetting
+# <a name="setmaxmonitors-method-of-the-win32_tsclientsetting-class"></a>Método SetMaxMonitors da classe \_ Win32 TSClientSetting
 
-Define a propriedade **MaxMonitors** .
+Define a **propriedade MaxMonitors.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,16 +43,16 @@ uint32 SetMaxMonitors(
 
 <dl> <dt>
 
-*MaxMonitors* \[ no\]
+*MaxMonitors* \[ Em\]
 </dt> <dd>
 
-Especifica o novo número máximo de monitores com suporte no servidor. O valor mínimo é 1 e o valor máximo é 10.
+Especifica o novo número máximo de monitores com suporte pelo servidor. O valor mínimo é 1 e o valor máximo é 10.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md) para obter uma lista desses valores. O método retornará um erro se as configurações de conexão do usuário forem substituídas pelo servidor.
+Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Consulte Serviços de Área de Trabalho Remota códigos de erro do provedor [WMI](terminal-services-wmi-provider-error-codes.md) para ver uma lista desses valores. O método retornará um erro se as configurações de conexão do usuário são substituídos pelo servidor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,8 +62,8 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Co
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2<br/>                                                       |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -72,7 +72,7 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Co
 
 <dl> <dt>
 
-[**\_TSClientSetting Win32**](win32-tsclientsetting.md)
+[**Win32 \_ TSClientSetting**](win32-tsclientsetting.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
 title: GetRenderTargetSamplePosition
-description: Obtém a posição de amostragem (x,y) para um determinado índice de exemplo.
+description: Obtém a posição de amostragem (x, y) para um determinado índice de exemplo.
 ms.assetid: 07f14d1c-4fe5-4838-acce-d664cdc641e6
 keywords:
 - GetRenderTargetSamplePosition HLSL
@@ -22,9 +22,9 @@ ms.locfileid: "118514330"
 ---
 # <a name="getrendertargetsampleposition"></a>GetRenderTargetSamplePosition
 
-Obtém a posição de amostragem (x,y) para um determinado índice de exemplo.
+Obtém a posição de amostragem (x, y) para um determinado índice de exemplo.
 
-float<2> GetRenderTargetSamplePosition( int<1> Index<br/>);
+float<2> GetRenderTargetSamplePosition (em int<1> índice<br/>);
 
 
 
@@ -36,7 +36,7 @@ float<2> GetRenderTargetSamplePosition( int<1> Index<br/>);
 
 | Item                                                                                       | Descrição                                  |
 |--------------------------------------------------------------------------------------------|----------------------------------------------|
-| <span id="Index"></span><span id="index"></span><span id="INDEX"></span>*Índice*<br/> | \[em \] Um índice de exemplo baseado em zero.<br/> |
+| <span id="Index"></span><span id="index"></span><span id="INDEX"></span>*Index*<br/> | \[em \] um índice de exemplo com base em zero.<br/> |
 
 
 
@@ -44,21 +44,21 @@ float<2> GetRenderTargetSamplePosition( int<1> Index<br/>);
 
 ## <a name="return-value"></a>Valor Retornado
 
-A posição (x,y) do exemplo determinado.
+A posição (x, y) do exemplo fornecido.
 
 ## <a name="remarks"></a>Comentários
 
 Use essa função e [**GetRenderTargetSampleCount**](dx-graphics-hlsl-getrendertargetsamplecount.md) para descobrir o número e a posição dos locais de amostragem para um destino de renderização.
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
 
-Essa função tem suporte nos modelos de sombreador a seguir.
+Essa função tem suporte nos seguintes modelos de sombreador.
 
 
 
 | Modelo de Sombreador                                                        | Com suporte |
 |---------------------------------------------------------------------|-----------|
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md) e modelos de sombreador superior | sim       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md) e modelos de sombreador mais altos | sim       |
 | [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)           | não        |
 | [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md)           | não        |
 | [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)           | não        |

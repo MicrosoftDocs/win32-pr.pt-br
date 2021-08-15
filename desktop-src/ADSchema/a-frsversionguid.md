@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f12cfadd1086fbb8ee79bafb8d0ee5f947ff503e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 701fb9da7a876a39858cb6d38383f58d8ddc1231940df2c2fb922e0e05e00520
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104500018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961425"
 ---
 # <a name="frs-version-guid-attribute"></a>Atributo FRS-Version-GUID
 
@@ -58,7 +58,7 @@ Se houver, a alteração desse valor indicará que uma alteração de configura�
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -79,7 +79,7 @@ Se houver, a alteração desse valor indicará que uma alteração de configura�
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -100,7 +100,7 @@ Se houver, a alteração desse valor indicará que uma alteração de configura�
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -121,7 +121,7 @@ Se houver, a alteração desse valor indicará que uma alteração de configura�
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -142,7 +142,7 @@ Se houver, a alteração desse valor indicará que uma alteração de configura�
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -163,7 +163,7 @@ Se houver, a alteração desse valor indicará que uma alteração de configura�
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |

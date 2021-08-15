@@ -21,7 +21,7 @@ ms.locfileid: "118476723"
 
 
 
-| Métodos IAgentPropertySheet                             | Description                                                                                  |
+| Métodos IAgentPropertySheet                             | Descrição                                                                                  |
 |---------------------------------------------------------|----------------------------------------------------------------------------------------------|
 | [**Getvisible**](iagentpropertysheet--getvisible.md)   | Retorna se a folha de propriedades do Microsoft Agent está visível.                               |
 | [**Setvisible**](iagentpropertysheet--setvisible.md)   | Define a [**propriedade Visible**](visible-property.md) da folha de propriedades do Microsoft Agent. |

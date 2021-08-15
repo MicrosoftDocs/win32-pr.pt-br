@@ -79,11 +79,11 @@ O NPS, por meio de NAP, interopera com o CISCO NAC.<br/> A IAS não dá suporte 
 </tr>
 <tr class="odd">
 <td><a href="https://www.niap-ccevs.org/cc-scheme/">Critérios comuns</a> Apoio<br/></td>
-<td>O NPS foi atualizado para dar suporte à implantação em ambientes que devem atender aos padrões de segurança de Critérios Comuns.<br/></td>
+<td>O NPS foi atualizado para dar suporte à sua implantação em ambientes que devem atender aos padrões de segurança de Critérios Comuns.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="ias-extensions.md">API de Extensões do NPS</a><br/></td>
-<td>As DLLs de extensão nps são executados em um processo separado do serviço NPS. Se uma DLL de extensão falhar, o NPS continuará em execução e as solicitações futuras serão rejeitadas.<br/> As DLLs de extensão de IAS são executados no mesmo processo que o serviço IAS e podem afetar negativamente o serviço.<br/></td>
+<td>As DLLs de extensão NPS são executados em um processo separado do serviço NPS. Se uma DLL de extensão falhar, o NPS continuará em execução e as solicitações futuras serão rejeitadas.<br/> As DLLs de extensão de IAS são executados no mesmo processo que o serviço IAS e podem afetar negativamente o serviço.<br/></td>
 </tr>
 <tr class="odd">
 <td>Gerenciamento Interface do Usuário<br/></td>
@@ -99,7 +99,7 @@ O NPS, por meio de NAP, interopera com o CISCO NAC.<br/> A IAS não dá suporte 
 </tr>
 <tr class="even">
 <td>Isolamento de política<br/></td>
-<td>O NPS permite a implementação do isolamento de política definindo a Fonte de Política de Rede. As políticas podem ser configuradas que são aplicáveis somente a um tipo de NAS predeterminado.<br/> A IAS não dá suporte ao isolamento de política.<br/></td>
+<td>O NPS permite a implementação do isolamento de política definindo a Fonte de Política de Rede. As políticas podem ser configuradas aplicável somente a um tipo de NAS predeterminado.<br/> A IAS não dá suporte ao isolamento de política.<br/></td>
 </tr>
 </tbody>
 </table>

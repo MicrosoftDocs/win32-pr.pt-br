@@ -1,5 +1,5 @@
 ---
-description: Os tópicos nesta seção fornecem as especificações de referência para a manipulação direta.
+description: Os tópicos nesta seção fornecem as especificações de referência para Manipulação Direta.
 ms.assetid: D9AEDA9D-D6EB-4567-8C12-362DA0F17667
 title: Referência de manipulação direta
 ms.topic: article
@@ -13,16 +13,16 @@ ms.locfileid: "118504301"
 ---
 # <a name="direct-manipulation-reference"></a>Referência de manipulação direta
 
-Os tópicos nesta seção fornecem as especificações de referência para a [manipulação direta](direct-manipulation-portal.md).
+Os tópicos nesta seção fornecem as especificações de referência para [Manipulação Direta.](direct-manipulation-portal.md)
 
 ## <a name="in-this-section"></a>Nesta seção
 
 | Tópico                                                                               | Descrição                                                                                                                                                  |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Constantes de manipulação direta**](direct-manipulation-constants.md)<br/>   | Esta seção fornece as especificações de referência para constantes de [manipulação direta](direct-manipulation-portal.md) .<br/>                           |
-| [GUIDs de manipulação direta](direct-manipulation-guids.md)<br/>               | Os GUIDs de classe de [manipulação direta](direct-manipulation-portal.md) a seguir são definidos em DirectManipulation. idl.<br/>                            |
-| [Enumerações de manipulação direta](direct-manipulation-enumerations.md)<br/> | Os tópicos contidos nesta seção fornecem as especificações de referência para enumerações de [manipulação direta](direct-manipulation-portal.md) .<br/> |
-| [Interfaces de manipulação direta](direct-manipulation-interfaces.md)<br/>     | Os tópicos contidos nesta seção fornecem as especificações de referência para interfaces de [manipulação direta](direct-manipulation-portal.md) . <br/>  |
+| [**Constantes de manipulação direta**](direct-manipulation-constants.md)<br/>   | Esta seção fornece as especificações de referência para [constantes de Manipulação](direct-manipulation-portal.md) Direta.<br/>                           |
+| [GUIDs de Manipulação Direta](direct-manipulation-guids.md)<br/>               | Os SEGUINTES GUIDs [de](direct-manipulation-portal.md) classe de manipulação direta são definidos em DirectManipulation.idl.<br/>                            |
+| [Enumerações de manipulação direta](direct-manipulation-enumerations.md)<br/> | Os tópicos contidos nesta seção fornecem as especificações de referência para [enumerações de Manipulação](direct-manipulation-portal.md) Direta.<br/> |
+| [Interfaces de manipulação direta](direct-manipulation-interfaces.md)<br/>     | Os tópicos contidos nesta seção fornecem as especificações de referência para interfaces [de Manipulação](direct-manipulation-portal.md) Direta. <br/>  |
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

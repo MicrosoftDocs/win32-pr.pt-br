@@ -1,19 +1,19 @@
 ---
-description: Em suma, a disposição da textura muda a forma básica com que o Direct3D rasteriza polígonos texturizados usando as coordenadas de textura especificadas para cada vértice.
+description: Em resumo, a quebra de textura altera a maneira básica que o Direct3D rasteriza polígonos texturizado usando as coordenadas de textura especificadas para cada vértice.
 ms.assetid: 00683d3f-3e3c-4ee4-9aec-a0d7fd9c8941
-title: Disposição de textura (Direct3D 9)
+title: Quebra de textura (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d7c0f8cb6d7793536999d5f3df128849572d3dd
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a6c29ebe78bcfa237f46eacb247432185adedd1e53ae0774e767807269bb3bb0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119984711"
 ---
-# <a name="texture-wrapping-direct3d-9"></a>Disposição de textura (Direct3D 9)
+# <a name="texture-wrapping-direct3d-9"></a>Quebra de textura (Direct3D 9)
 
-Em suma, a disposição da textura muda a forma básica com que o Direct3D rasteriza polígonos texturizados usando as coordenadas de textura especificadas para cada vértice. Durante a rasterização de um polígono, o sistema faz a interpolação entre as coordenadas de textura em cada um dos vértices do polígono para determinar os texels que devem ser usados para cada pixel do polígono. Normalmente, o sistema trata a textura como um plano 2D, interpolando novos texels pegando a rota mais curta do ponto A de uma textura ao ponto B. Se o ponto A representar a posição u, v (0.8, 0.1) e o ponto B estiver em (0.1,0.1), a linha de interpolação terá a aparência do diagrama a seguir.
+Em resumo, a quebra de textura altera a maneira básica que o Direct3D rasteriza polígonos texturizado usando as coordenadas de textura especificadas para cada vértice. Durante a rasterização de um polígono, o sistema faz a interpolação entre as coordenadas de textura em cada um dos vértices do polígono para determinar os texels que devem ser usados para cada pixel do polígono. Normalmente, o sistema trata a textura como um plano 2D, interpolando novos texels pegando a rota mais curta do ponto A de uma textura ao ponto B. Se o ponto A representar a posição u, v (0.8, 0.1) e o ponto B estiver em (0.1,0.1), a linha de interpolação terá a aparência do diagrama a seguir.
 
 ![diagrama de uma linha de interpolação entre dois pontos](images/interp1.png)
 
@@ -37,9 +37,9 @@ Com o encapsulado habilitado na direção u, o pilar texturizado mostra as cores
 
 Se o encapsulamento de textura não estiver habilitado, o rasterizador não fará a interpolação na direção necessária para gerar uma imagem refletida verossímil. Em vez disso, a área na frente do pilar contém uma versão compactada horizontalmente dos texels entre as coordenadas u 0.175 e 0.875, pois passam pelo centro da textura. O efeito de encapsulamento está arruinado.
 
-## <a name="using-texture-wrapping"></a>Usando o encapsulamento de textura
+## <a name="using-texture-wrapping"></a>Usando a quebra de textura
 
-Para habilitar o encapsulamento de textura, chame o método [**IDirect3DDevice9:: Setrenderingstate**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) , conforme mostrado no exemplo de código abaixo.
+Para habilitar a quebra de textura, chame o método [**IDirect3DDevice9::SetRenderState,**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) conforme mostrado no exemplo de código abaixo.
 
 
 ```
@@ -48,11 +48,11 @@ d3dDevice->SetRenderState(D3DRS_WRAP0, D3DWRAPCOORD_0);
 
 
 
-O primeiro parâmetro aceito por [**IDirect3DDevice9:: Setrenderingstate**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) é um estado de renderização a ser definido. Especifique um dos D3DRS \_ WRAP0 por meio de D3DRS \_ WRAP7 valores enumerados que especificam a qual nível de textura definir o encapsulamento. Especifique os \_ sinalizadores D3DWRAPCOORD 0 a D3DWRAPCOORD \_ 3 no segundo parâmetro para habilitar a disposição da textura na direção correspondente ou combiná-los para habilitar o encapsulamento em várias direções. Se você omitir um sinalizador, a disposição da textura na direção correspondente será desabilitada. Para desabilitar o encapsulamento de textura para um conjunto de coordenadas de textura, defina o valor para o estado de renderização correspondente como 0.
+O primeiro parâmetro aceito por [**IDirect3DDevice9::SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) é um estado de renderização a ser definido. Especifique um dos valores enumerados D3DRS \_ WRAP0 a D3DRS WRAP7 que especificam para qual nível de textura \_ definir o wrap. Especifique os sinalizadores D3DWRAPCOORD 0 a \_ D3DWRAPCOORD 3 no segundo parâmetro para habilitar a quebra de textura na direção correspondente ou combiná-los para habilitar o empacotamento em várias \_ direções. Se você omitir um sinalizador, a quebra de textura na direção correspondente será desabilitada. Para desabilitar a quebra de textura para um conjunto de coordenadas de textura, de definido o valor para o estado de renderização correspondente como 0.
 
-Não confunda encapsulamento de textura com os modos de endereçamento de textura de nomes similares. O encapsulamento de textura é executado antes do endereçamento de textura. Verifique se os dados de disposição da textura não contêm nenhuma coordenada de textura fora do intervalo de \[ 0,0, 1,0 \] porque isso produzirá resultados indefinidos. Para obter mais informações sobre o endereçamento de textura, consulte [modos de endereçamento de textura (Direct3D 9)](texture-addressing-modes.md).
+Não confunda encapsulamento de textura com os modos de endereçamento de textura de nomes similares. O encapsulamento de textura é executado antes do endereçamento de textura. Certifique-se de que os dados de quebra de textura não contenham nenhuma coordenada de textura fora do intervalo de \[ 0,0, 1,0 porque isso produzirá resultados \] indefinido. Para obter mais informações sobre o endereçamento de textura, consulte Modos de [endereçamento de textura (Direct3D 9)](texture-addressing-modes.md).
 
-## <a name="displacement-map-wrapping"></a>Disposição do mapa de deslocamento
+## <a name="displacement-map-wrapping"></a>Empacotamento do mapa de deslocamento
 
 Os mapas de deslocamento são interpolados pelo mecanismo de mosaico. Como o modo de encapsulamento não pode ser especificado para o mecanismo de mosaico, o encapsulamento de textura não pode ser executado com mapas de deslocamento. Um aplicativo é capaz de usar um conjunto de vértices que força a interpolação para encapsular em qualquer direção. O aplicativo também pode especificar a interpolação para ser feita como uma simples interpolação linear.
 
@@ -60,7 +60,7 @@ Os mapas de deslocamento são interpolados pelo mecanismo de mosaico. Como o mod
 
 <dl> <dt>
 
-[Texturas do Direct3D](direct3d-textures.md)
+[Texturas Direct3D](direct3d-textures.md)
 </dt> </dl>
 
  

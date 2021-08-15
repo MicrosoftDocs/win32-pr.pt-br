@@ -3,18 +3,18 @@ title: H
 description: H
 ms.assetid: ef592c79-52cd-4a61-a8f3-ca7f1433cf47
 keywords:
-- WCS (sistema de cores do Windows), Glossário
-- WCS (sistema de cores do Windows), Glossário
+- Windows Sistema de cores (WCS), Glossário
+- WCS (Windows sistema de cores), glossário
 - gerenciamento de cores de imagem, Glossário
 - gerenciamento de cores, Glossário
 - cores, Glossário
-- WCS (sistema de cores do Windows), definições
-- WCS (sistema de cores do Windows), definições
+- Windows Sistema de cores (WCS), definições
+- WCS (Windows sistema de cores), definições
 - gerenciamento de cores de imagem, definições
 - gerenciamento de cores, definições
 - cores, definições
-- WCS (sistema de cores do Windows), termos
-- WCS (sistema de cores do Windows), termos
+- Windows Sistema de cores (WCS), termos
+- WCS (Windows sistema de cores), termos
 - gerenciamento de cores de imagem, termos
 - gerenciamento de cores, termos
 - cores, termos
@@ -31,12 +31,12 @@ keywords:
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45c0b57b972f5cecfb26bc25c69a766a84b168bb
-ms.sourcegitcommit: 38954f8f0d70f44bff4a943784f468ebd7ef691a
+ms.openlocfilehash: 846b60e728396134c04328add7cd4930e806ff62af73f6b47c22d8b8afe4eb0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "105780768"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119711006"
 ---
 # <a name="h"></a>H
 

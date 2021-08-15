@@ -3,7 +3,7 @@ title: Tipo complexo InputTypeListType
 description: Define uma lista de tipos de entrada.
 ms.assetid: e6bba894-7c17-411e-92e5-9276728a5e4b
 keywords:
-- Log de eventos do tipo complexo InputTypeListType
+- Tipo complexo InputTypeListType EventLog
 topic_type:
 - apiref
 api_name:
@@ -41,7 +41,7 @@ Define uma lista de tipos de entrada.
 
 | Elemento                                                                | Type                                                           | Descrição                       |
 |------------------------------------------------------------------------|----------------------------------------------------------------|-----------------------------------|
-| [**intipo**](eventmanifestschema-intype-inputtypelisttype-element.md) | [**InputType**](eventmanifestschema-inputtype-complextype.md) | Define um tipo de entrada.<br/> |
+| [**inType**](eventmanifestschema-intype-inputtypelisttype-element.md) | [**InputType**](eventmanifestschema-inputtype-complextype.md) | Define um tipo de entrada.<br/> |
 
 
 
@@ -51,8 +51,8 @@ Define uma lista de tipos de entrada.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

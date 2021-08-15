@@ -31,7 +31,7 @@ A tabela a seguir identifica as variáveis, seus tipos e seus intervalos.
 
 
 
-| Parâmetro    | Valor padrão | Digite          | Descrição                                                                                                         |
+| Parâmetro    | Valor padrão | Tipo          | Descrição                                                                                                         |
 |--------------|---------------|---------------|---------------------------------------------------------------------------------------------------------------------|
 | Cₛ           | (0,0,0,0)     | D3DCOLORVALUE | Cor especular.                                                                                                     |
 | Sum          | N/D           | N/D           | Referência do componente especular cada da luz.                                                                       |
@@ -79,7 +79,7 @@ O vetor de metade (H) existe situado entre dois vetores: o vetor de um vértice 
 
 
 
-| Parâmetro       | Valor padrão | Digite      | Descrição                                                  |
+| Parâmetro       | Valor padrão | Tipo      | Descrição                                                  |
 |-----------------|---------------|-----------|--------------------------------------------------------------|
 | Cₚ              | N/D           | D3DVECTOR | Posição da câmera.                                             |
 | Vₚ              | N/D           | D3DVECTOR | Posição do vértice.                                             |

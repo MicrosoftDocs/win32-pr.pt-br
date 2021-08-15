@@ -4,12 +4,12 @@ ms.assetid: e6a324d0-9b62-4625-a604-cb1eeca22aae
 title: Formatos de certificado com suporte
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 912f37f3e4c29ae765f68484aecf0bf9d9b8aea9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 85ae0c4d638e957df5ddcf251ca64578a67a58b98890401c68593dd7a12c3952
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118897627"
 ---
 # <a name="supported-certificate-formats"></a>Formatos de certificado com suporte
 
@@ -34,7 +34,7 @@ Além desses certificados, os serviços de certificados também podem ser usados
 
  
 
-Além disso, os serviços de certificados incluem modelos de certificado na configuração da autoridade de certificação corporativa da Microsoft. Consulte a documentação de ajuda do Windows para modelos de certificado para entender como eles definem as finalidades de certificado.
+Além disso, os serviços de certificados incluem modelos de certificado na configuração da autoridade de certificação corporativa da Microsoft. consulte a documentação de ajuda do Windows para modelos de certificado para entender como eles definem as finalidades do certificado.
 
  
 

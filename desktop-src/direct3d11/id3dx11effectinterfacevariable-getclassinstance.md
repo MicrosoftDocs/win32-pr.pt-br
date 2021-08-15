@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f729da6ee84d76dd37a40a7946438e367c1a4cbd
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fa6fb05473b2671e0224fe36214fa7d8be93dc3bea17ceb90b0b8f0a871cc755
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119988456"
 ---
 # <a name="id3dx11effectinterfacevariablegetclassinstance-method"></a>Método ID3DX11EffectInterfaceVariable:: GetClassInstance
 
@@ -52,7 +52,7 @@ Ponteiro para um ponteiro [**ID3DX11EffectClassInstanceVariable**](id3dx11effect
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

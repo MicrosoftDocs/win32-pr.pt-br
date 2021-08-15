@@ -1,5 +1,5 @@
 ---
-description: Define um quadro de coordenadas ou &\# 0034;frame of reference.&\# 0034; O modelo Frame está aberto e pode conter qualquer objeto. As funções de carregamento de malha D3DX reconhecem instâncias de modelo De malha, FrameTransformMatrix e Frame como objetos filho ao carregar uma instância frame.
+description: Define um quadro de coordenadas ou &\# 0034;quadro de reference.&\# 0034; O modelo Frame está aberto e pode conter qualquer objeto. As funções de carregamento de malha D3DX reconhecem instâncias de modelo De malha, FrameTransformMatrix e Frame como objetos filho ao carregar uma instância frame.
 ms.assetid: vs|directx_sdk|~\frame.htm
 title: Quadro (elementos gráficos do Direct3D 9)
 ms.topic: article

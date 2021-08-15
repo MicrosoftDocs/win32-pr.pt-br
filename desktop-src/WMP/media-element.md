@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2e693c8b17345d3ba7875d48b83b5e3e90d682dc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c67f4321d85ec52babbc6f24c2cd9e3512f7c970eb3360ba2ddfd7ba53f82152
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996316"
 ---
 # <a name="media-element"></a>Elemento de mídia
 
@@ -62,7 +62,7 @@ O elemento **Media** especifica um dos itens de mídia em uma lista de reproduç
 
 ## <a name="remarks"></a>Comentários
 
-O atributo **CID** (a ID de conteúdo) é preenchido pelo Windows Media Player como uma maneira de identificar exclusivamente um conteúdo de mídia, mesmo que seus atributos de metadados tenham sido alterados. Isso permite o compartilhamento de listas de reprodução entre computadores, pois o conteúdo pode ser identificado em outro computador e o caminho para ele pode ser "reparado automaticamente" pela lista de reprodução do Windows Media. O atributo **tid** (a ID de rastreamento) usa o sistema de arquivos do Windows para reparar automaticamente o caminho para a mídia se o nome ou o local do arquivo for alterado.
+o atributo **cid** (a ID de conteúdo) é preenchido pelo Windows Media Player como uma maneira de identificar exclusivamente um conteúdo de mídia, mesmo que seus atributos de metadados tenham sido alterados. isso permite o compartilhamento de listas de reprodução entre computadores, pois o conteúdo pode ser identificado em outro computador, e o caminho para ele pode ser "reparado automaticamente" pela lista de reprodução de mídia Windows. o atributo **tid** (a ID de rastreamento) usa o sistema de arquivos Windows para reparar automaticamente o caminho para a mídia se o nome ou o local do arquivo for alterado.
 
 ## <a name="examples"></a>Exemplos
 
@@ -95,7 +95,7 @@ O atributo **CID** (a ID de conteúdo) é preenchido pelo Windows Media Player c
 [**Elemento seq**](seq-element.md)
 </dt> <dt>
 
-[**Referência de elementos da playlist do Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Referência de elementos de playlist de mídia**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

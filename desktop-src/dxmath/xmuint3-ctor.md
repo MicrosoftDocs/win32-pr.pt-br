@@ -1,7 +1,7 @@
 ---
 description: Construtores expostos por XMUINT3.
 ms.assetid: f3737cb1-36a0-4dbc-94d5-237e7395670e
-title: Construtores XMUINT3 (Directxmath. h)
+title: Construtores XMUINT3 (Directxmath.h)
 ms.date: 07/02/2019
 ms.topic: reference
 ms.openlocfilehash: 40dd1701cf984cab0e725b3b0fa5598c704cc28818756cc382e08ea2ead716fb
@@ -15,7 +15,7 @@ ms.locfileid: "118499590"
 
 Construtores expostos por `XMUINT3` .
 
-Constrói instâncias da estrutura [**XMUINT3**](/windows/win32/api/directxmath/ns-directxmath-xmuint3) .
+Constrói instâncias da [**estrutura XMUINT3.**](/windows/win32/api/directxmath/ns-directxmath-xmuint3)
 
 > [!Note]  
 > Os construtores listados aqui só estão disponíveis em C++.
@@ -39,8 +39,8 @@ Constrói instâncias da estrutura [**XMUINT3**](/windows/win32/api/directxmath/
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">[<strong>XMUINT3 ()</strong>] (/Windows/Win32/API/directxmath/NF-directxmath-xmuint3-xmuint3 (constuint32_t))</td>
-<td style="text-align: left;">Construtor padrão para <code>XMUINT3</code> .<br/> Construtor padrão para [<strong>XMUINT3</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmuint3).<br/>
+<td style="text-align: left;">[<strong>XMUINT3 ()</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmuint3-xmuint3(constuint32_t))</td>
+<td style="text-align: left;">Construtor padrão para <code>XMUINT3</code> .<br/> Construtor padrão para [<strong>XMUINT3</strong>](/windows/win32/api/directxmath/ns-directxmath-xmuint3).<br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.
@@ -48,8 +48,8 @@ Esse construtor só está disponível em C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">[<strong>XMUINT3 (const uint32_t *)</strong>] (/Windows/Win32/API/directxmath/NF-directxmath-xmuint3-xmuint3 (constuint32_t))</td>
-<td style="text-align: left;">Inicializa uma nova instância de <code>XMUINT3</code> de um argumento de matriz de três elementos <code>uint32_t</code> .<br/> Esse construtor inicializa uma nova instância de [<strong>XMUINT3</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmuint3) de um argumento de matriz de três elementos <code>uint32_t</code> .<br/>
+<td style="text-align: left;">[<strong>XMUINT3 (const uint32_t*)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmuint3-xmuint3(constuint32_t))</td>
+<td style="text-align: left;">Inicializa uma nova instância de de um <code>XMUINT3</code> argumento de matriz de três <code>uint32_t</code> elementos.<br/> Esse construtor inicializa uma nova instância de [<strong>XMUINT3</strong>](/windows/win32/api/directxmath/ns-directxmath-xmuint3) de um argumento de matriz de três <code>uint32_t</code> elementos.<br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.
@@ -57,8 +57,8 @@ Esse construtor só está disponível em C++.
 <br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">[<strong>XMUINT3 (uint32_t, uint32_t, uint32_t)</strong>] (/Windows/Win32/API/directxmath/NF-directxmath-xmuint3-xmuint3 (uint32_t_uint32_t_uint32_t))</td>
-<td style="text-align: left;">Inicializa uma nova instância do de <code>XMUINT3</code> três <code>uint32_t</code> argumentos.<br/> Esse construtor inicializa uma nova instância de [<strong>XMUINT3</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmuint3) de três <code>uint32_t</code> argumentos.<br/>
+<td style="text-align: left;">[<strong>XMUINT3 (uint32_t,uint32_t,uint32_t)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmuint3-xmuint3(uint32_t_uint32_t_uint32_t))</td>
+<td style="text-align: left;">Inicializa uma nova instância de de <code>XMUINT3</code> três <code>uint32_t</code> argumentos.<br/> Esse construtor inicializa uma nova instância de [<strong>XMUINT3</strong>](/windows/win32/api/directxmath/ns-directxmath-xmuint3) de três <code>uint32_t</code> argumentos.<br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.
@@ -76,7 +76,7 @@ Esse construtor só está disponível em C++.
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Directxmath. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Directxmath.h</dt> </dl> |
 
 
 

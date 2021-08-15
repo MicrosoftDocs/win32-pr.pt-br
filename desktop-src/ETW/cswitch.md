@@ -1,5 +1,5 @@
 ---
-description: Essa classe é a classe de tipo de evento para eventos de alternância de contexto. A sintaxe a seguir é simplificada do código MOF.
+description: Essa classe é a classe de tipo de evento para eventos de opção de contexto. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 3f9f84d0-18a9-493c-b104-8236b2bd8404
 title: Classe CSwitch
 ms.topic: reference
@@ -33,7 +33,7 @@ ms.locfileid: "118395342"
 ---
 # <a name="cswitch-class"></a>Classe CSwitch
 
-Essa classe é a classe de tipo de evento para eventos de alternância de contexto.
+Essa classe é a classe de tipo de evento para eventos de opção de contexto.
 
 A sintaxe a seguir é simplificada do código MOF.
 
@@ -60,26 +60,26 @@ class CSwitch : Thread_V2
 
 ## <a name="members"></a>Membros
 
-A classe **CSwitch** tem estes tipos de membros:
+A **classe CSwitch** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CSwitch** tem essas propriedades.
+A **classe CSwitch** tem essas propriedades.
 
 <dl> <dt>
 
 **NewThreadId**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (1), formato ("x")
+Qualificadores: WmiDataId(1), Format("x")
 </dt> </dl>
 
 Nova ID de thread após a opção.
@@ -95,23 +95,23 @@ Tipo de dados: **sint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (3)
+Qualificadores: WmiDataId(3)
 </dt> </dl>
 
-Prioridade do thread do novo thread.
+Prioridade de thread do novo thread.
 
 </dd> <dt>
 
 **NewThreadWaitTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (11), formato ("x")
+Qualificadores: WmiDataId(11), Format("x")
 </dt> </dl>
 
 Tempo de espera para o novo thread.
@@ -121,16 +121,16 @@ Tempo de espera para o novo thread.
 **OldThreadId**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (2), formato ("x")
+Qualificadores: WmiDataId(2), Format("x")
 </dt> </dl>
 
-ID de thread anterior.
+ID do thread anterior.
 
 </dd> <dt>
 
@@ -143,7 +143,7 @@ Tipo de dados: **sint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (4)
+Qualificadores: WmiDataId(4)
 </dt> </dl>
 
 Prioridade de thread do thread anterior.
@@ -159,10 +159,10 @@ Tipo de dados: **sint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (9)
+Qualificadores: WmiDataId(9)
 </dt> </dl>
 
-Estado do thread anterior. Estes são os valores de estado possíveis:
+Estado do thread anterior. A seguir estão os valores de estado possíveis:
 
 | Estado | Descrição                                   |
 |-------|-----------------------------------------------|
@@ -173,7 +173,7 @@ Estado do thread anterior. Estes são os valores de estado possíveis:
 | 4     | Terminado                                    |
 | 5     | Aguardando                                       |
 | 6     | Transição                                    |
-| 7     | DeferredReady (adicionado ao Windows Server 2003) |
+| 7     | DeferredReady (adicionado para Windows Server 2003) |
 
 
 
@@ -190,7 +190,7 @@ Tipo de dados: **sint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (10), formato ("x")
+Qualificadores: WmiDataId(10), Format("x")
 </dt> </dl>
 
 Tempo de espera ideal do thread anterior.
@@ -206,7 +206,7 @@ Tipo de dados: **sint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (8)
+Qualificadores: WmiDataId(8)
 </dt> </dl>
 
 Modo de espera para o thread anterior. O valores possíveis são os seguintes:
@@ -214,7 +214,7 @@ Modo de espera para o thread anterior. O valores possíveis são os seguintes:
 | Estado | Descrição |
 |-------|-------------|
 | 0     | KernelMode  |
-| 1     | Modo    |
+| 1     | Usermode    |
 
 
 
@@ -231,10 +231,10 @@ Tipo de dados: **sint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (7)
+Qualificadores: WmiDataId(7)
 </dt> </dl>
 
-Motivo de espera para o thread anterior. O valores possíveis são os seguintes:
+Aguarde o motivo do thread anterior. O valores possíveis são os seguintes:
 
 | Estado | Descrição       |
 |-------|-------------------|
@@ -244,7 +244,7 @@ Motivo de espera para o thread anterior. O valores possíveis são os seguintes:
 | 3     | PoolAllocation    |
 | 4     | DelayExecution    |
 | 5     | Suspenso         |
-| 6     | Solicitação de pedido       |
+| 6     | UserRequest       |
 | 7     | WrExecutive       |
 | 8     | WrFreePage        |
 | 9     | WrPageIn          |
@@ -258,7 +258,7 @@ Motivo de espera para o thread anterior. O valores possíveis são os seguintes:
 | 17    | WrLpcReply        |
 | 18    | WrVirtualMemory   |
 | 19    | WrPageOut         |
-| 20    | WrRevous      |
+| 20    | WrRendezvous      |
 | 21    | WrKeyedEvent      |
 | 22    | WrTerminated      |
 | 23    | WrProcessInSwap   |
@@ -292,23 +292,23 @@ Tipo de dados: **uint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId(5)
+Qualificadores: WmiDataId (5)
 </dt> </dl>
 
-O índice do estado C que foi usado pela última vez pelo processador. Um valor de 0 representa o estado ocioso mais claro com valores mais altos que representam estados C mais profundos.
+O índice do estado C que foi usado pela última vez pelo processador. Um valor de 0 representa o estado ocioso mais leve com valores mais altos que representam os mais avançados.
 
 </dd> <dt>
 
 **Reserved**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint32**
+Tipo de dados: **UInt32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId(12)
+Qualificadores: WmiDataId (12)
 </dt> </dl>
 
 Reservado.
@@ -324,7 +324,7 @@ Tipo de dados: **sint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId(6)
+Qualificadores: WmiDataId (6)
 </dt> </dl>
 
 Não usado.
@@ -341,8 +341,8 @@ Esses eventos produzem um alto volume de eventos.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 
@@ -350,10 +350,10 @@ Esses eventos produzem um alto volume de eventos.
 
 <dl> <dt>
 
-[**Thread**](thread.md)
+[**Processo**](thread.md)
 </dt> <dt>
 
-[**Thread \_ V2**](thread-v2.md)
+[**Thread \_ v2**](thread-v2.md)
 </dt> </dl>
 
  

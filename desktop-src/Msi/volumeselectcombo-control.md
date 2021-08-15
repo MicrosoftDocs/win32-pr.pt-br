@@ -51,9 +51,9 @@ Você pode usar os atributos a seguir com esse controle. Para alterar o valor de
 
 ## <a name="remarks"></a>Comentários
 
-Esse controle pode ser criado na classe COMBOBOX usando a [**função CreateWindowEx.**](/windows/win32/api/winuser/nf-winuser-createwindowexa) Ele tem os estilos **CBS \_ DROPDOWNLIST**, **CBS \_ OWNERDRAWFIXED,** **CBS \_ HASSTRINGS,** **\_ WS VSCROLL,** **WS \_ CHILD,** **WS \_ GROUP,** **WS \_ TABSTOP** e **CBS \_ SORT.** Para obter informações sobre como desenvolver uma interface do usuário com Windows, consulte [Design e desenvolvimento Interface do Usuário.](/previous-versions/aa286531(v=msdn.10))
+Esse controle pode ser criado na classe COMBOBOX usando a [**função CreateWindowEx.**](/windows/win32/api/winuser/nf-winuser-createwindowexa) Ele tem os estilos **CBS \_ DROPDOWNLIST**, **CBS \_ OWNERDRAWFIXED,** **CBS \_ HASSTRINGS,** **\_ WS VSCROLL,** **WS \_ CHILD,** **WS \_ GROUP,** **WS \_ TABSTOP** e **CBS \_ SORT.** Para obter informações sobre como desenvolver uma interface do usuário com Windows, [consulte design Interface do Usuário desenvolvimento e design.](/previous-versions/aa286531(v=msdn.10))
 
-Para compatibilidade com leitores de tela, ao fazer uma caixa de diálogo com um controle VolumeSelectCombo como o primeiro controle ativo, você deve tornar o campo de texto pertencente ao campo de edição o primeiro controle ativo na tabela [Dialog](dialog-table.md). Como o texto estático não pode se concentrar, quando a caixa de diálogo é criada, o campo de edição terá o foco inicialmente como pretendido. Isso garante que os leitores de tela mostrem as informações corretas.
+Para compatibilidade com leitores de tela, ao fazer uma caixa de diálogo com um controle VolumeSelectCombo como o primeiro controle ativo, você deve tornar o campo de texto pertencente ao campo de edição o primeiro controle ativo na tabela [Dialog](dialog-table.md). Como o texto estático não pode se concentrar, quando a caixa de diálogo é criada, o campo de edição terá o foco inicialmente conforme o esperado. Isso garante que os leitores de tela mostrem as informações corretas.
 
  
 

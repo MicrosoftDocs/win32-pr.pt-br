@@ -1,11 +1,11 @@
 ---
-title: Atributo MS-SQL-LastDiagnosticDate
+title: atributo MS-SQL-LastDiagnosticDate
 description: A última data em que o DBCC CHECKDB foi executado.
 ms.assetid: 7060e111-e4cb-4c5a-bce1-32712cbea00e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-SQL-LastDiagnosticDate
-- Esquema de AD do atributo mS-SQL-LastDiagnosticDate
+- esquema de AD do atributo MS-SQL-LastDiagnosticDate
+- esquema de AD do atributo mS-SQL-LastDiagnosticDate
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f25b8322a9f83b96c0ab4883478e6c0ffa2f3b49
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d0a0f752673692be98e4033e7555653a2e1ac7376f63b26ff8c2c44ddccc8567
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961115"
 ---
-# <a name="ms-sql-lastdiagnosticdate-attribute"></a>Atributo MS-SQL-LastDiagnosticDate
+# <a name="ms-sql-lastdiagnosticdate-attribute"></a>atributo MS-SQL-LastDiagnosticDate
 
 A última data em que o DBCC CHECKDB foi executado.
 
@@ -58,7 +58,7 @@ A última data em que o DBCC CHECKDB foi executado.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
@@ -66,7 +66,7 @@ A última data em que o DBCC CHECKDB foi executado.
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> |
+| Classes usadas em        | [**MS-SQL-sqldatabase**](c-ms-sql-sqldatabase.md)<br/> |
 
 
 
@@ -79,7 +79,7 @@ A última data em que o DBCC CHECKDB foi executado.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
@@ -87,7 +87,7 @@ A última data em que o DBCC CHECKDB foi executado.
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> |
+| Classes usadas em        | [**MS-SQL-sqldatabase**](c-ms-sql-sqldatabase.md)<br/> |
 
 
 
@@ -100,7 +100,7 @@ A última data em que o DBCC CHECKDB foi executado.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
@@ -108,7 +108,7 @@ A última data em que o DBCC CHECKDB foi executado.
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> |
+| Classes usadas em        | [**MS-SQL-sqldatabase**](c-ms-sql-sqldatabase.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ A última data em que o DBCC CHECKDB foi executado.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
@@ -129,7 +129,7 @@ A última data em que o DBCC CHECKDB foi executado.
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> |
+| Classes usadas em        | [**MS-SQL-sqldatabase**](c-ms-sql-sqldatabase.md)<br/> |
 
 
 
@@ -142,7 +142,7 @@ A última data em que o DBCC CHECKDB foi executado.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
@@ -150,7 +150,7 @@ A última data em que o DBCC CHECKDB foi executado.
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> |
+| Classes usadas em        | [**MS-SQL-sqldatabase**](c-ms-sql-sqldatabase.md)<br/> |
 
 
 
@@ -163,7 +163,7 @@ A última data em que o DBCC CHECKDB foi executado.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
@@ -171,7 +171,7 @@ A última data em que o DBCC CHECKDB foi executado.
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> |
+| Classes usadas em        | [**MS-SQL-sqldatabase**](c-ms-sql-sqldatabase.md)<br/> |
 
 
 

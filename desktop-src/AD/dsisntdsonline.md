@@ -101,7 +101,7 @@ Essa função só pode ser chamada de um controlador de domínio que também sej
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Ntdsbcli. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Ntdsbcli. h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>Ntdsbcli. lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ntdsbcli.dll</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **DsIsNTDSOnlineW** (Unicode) e **DsIsNTDSOnlineA** (ANSI)<br/>                 |

@@ -1,6 +1,6 @@
 ---
-title: Codificação de vídeo entrelaçadas (SDK Windows Media Format 11)
-description: Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e APIs DSP. | Codificação de vídeo entrelaçadas (Windows SDK de formato de mídia 11)
+title: Codificação de vídeo entrelaçadas (Windows SDK de formato de mídia 11)
+description: Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e APIs DSP. | Codificação de vídeo entrelaçadas (SDK Windows Media Format 11)
 ms.assetid: f9015e77-02b1-494f-af54-e27901511236
 keywords:
 - Formato de mídia do Windows de codificação de vídeo entrelaçados
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118433645"
 ---
-# <a name="interlaced-video-encoding-windows-media-format-11-sdk"></a>Codificação de vídeo entrelaçadas (SDK Windows Media Format 11)
+# <a name="interlaced-video-encoding-windows-media-format-11-sdk"></a>Codificação de vídeo entrelaçadas (Windows SDK de formato de mídia 11)
 
-Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
+Para ver a documentação atual Windows codecs de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

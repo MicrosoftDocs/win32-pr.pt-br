@@ -1,5 +1,5 @@
 ---
-title: Desenvolvendo aplicativos de Windows RPC
+title: Desenvolvendo aplicativos RPC Windows RPC
 description: Quando você instala o SDK (Kit de Desenvolvimento de Software de Plataforma), o ambiente de desenvolvimento RPC a seguir, as bibliotecas em tempo de run time e as ferramentas são instalados automaticamente
 ms.assetid: d5da3bca-5251-4ba4-b873-0817fe0f298d
 ms.topic: article
@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118930791"
 ---
-# <a name="developing-rpc-windows-applications"></a>Desenvolvendo aplicativos de Windows RPC
+# <a name="developing-rpc-windows-applications"></a>Desenvolvendo aplicativos RPC Windows RPC
 
 Quando você instala o SDK (Kit de Desenvolvimento de Software de Plataforma), o seguinte ambiente de desenvolvimento RPC, as bibliotecas em tempo de run time e as ferramentas são instalados automaticamente:
 
@@ -31,10 +31,10 @@ As bibliotecas de importação RPC a seguir.
 
 
 
-| Biblioteca de importação | Description                |
+| Biblioteca de importação | Descrição                |
 |----------------|----------------------------|
 | Rpcns4.lib     | Funções de serviço de nome     |
-| Rpcrt4.lib     | Windows funções em tempo de run time |
+| Rpcrt4.lib     | Windows de tempo de executar |
 
 
 

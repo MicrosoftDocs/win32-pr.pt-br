@@ -1,59 +1,59 @@
 ---
-title: Lidando com proteções de tela
-description: A API do Microsoft Win32 dá suporte a aplicativos especiais chamados de proteções de tela.
+title: Manipulação de salvadores de tela
+description: A API do Microsoft Win32 dá suporte a aplicativos especiais chamados de protetores de tela.
 ms.assetid: cda5e690-71fe-4df7-b8a2-3a2ad65b1bfb
 keywords:
-- proteções de tela
-- Painel de controle, proteções de tela
+- salvadores de tela
+- Painel de Controle, salvadores de tela
 - ScreenSaverConfigureDialog
 - arquivos de definição de módulo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08b7e0d0c177af2798b041fa12b4cc5793bf9be0
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: b61343cd586ed022c334b797a77320ee25eccdf48653b4732adc597f4aedde26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104454040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975716"
 ---
-# <a name="handling-screen-savers"></a>Lidando com proteções de tela
+# <a name="handling-screen-savers"></a>Manipulação de salvadores de tela
 
-A API do Microsoft Win32 dá suporte a aplicativos especiais chamados de *proteções de tela*. As proteções de tela iniciam quando o mouse e o teclado ficam ociosos por um período de tempo especificado. Eles são usados por esses dois motivos:
+A API do Microsoft Win32 dá suporte a aplicativos especiais chamados *de protetores de tela.* As economias de tela começam quando o mouse e o teclado estão ociosos por um período especificado. Eles são usados por estes dois motivos:
 
--   Para proteger uma tela da gravação Phosphor causada por imagens estáticas.
--   Ocultar informações confidenciais deixadas em uma tela.
+-   Para proteger uma tela contra ardósia de burn causada por imagens estáticas.
+-   Para ocultar informações confidenciais deixadas em uma tela.
 
 Este tópico é dividido nas seções a seguir.
 
--   [Sobre as proteções de tela](#about-screen-savers)
--   [Usando as funções de proteção de tela](#using-the-screen-saver-functions)
-    -   [Criando uma proteção de tela](#creating-a-screen-saver)
-    -   [Instalando novas proteções de tela](#installing-new-screen-savers)
-    -   [Adicionando ajuda à caixa de diálogo configuração de proteção de tela](#adding-help-to-the-screen-saver-configuration-dialog-box)
+-   [Sobre os Salvadores de Tela](#about-screen-savers)
+-   [Usando as funções de economia de tela](#using-the-screen-saver-functions)
+    -   [Criando uma economia de tela](#creating-a-screen-saver)
+    -   [Instalando novos protetores de tela](#installing-new-screen-savers)
+    -   [Adicionando ajuda à caixa de diálogo Configuração do Protetor de Tela](#adding-help-to-the-screen-saver-configuration-dialog-box)
 
-## <a name="about-screen-savers"></a>Sobre as proteções de tela
+## <a name="about-screen-savers"></a>Sobre os Salvadores de Tela
 
-O aplicativo de área de trabalho no painel de controle do Windows permite que os usuários selecionem em uma lista de proteções de tela, especifiquem quanto tempo deve decorrer antes que a proteção de tela seja iniciada, configure as proteções de tela e visualize as proteções de tela. As proteções de tela são carregadas automaticamente quando o Windows é iniciado ou quando um usuário ativa a proteção de tela por meio do painel de controle.
+O aplicativo desktop no Windows Painel de Controle permite que os usuários selecionem em uma lista de economias de tela, especifique quanto tempo deve passar antes que a economia de tela seja iniciada, configure as economias de tela e os protetores de tela de visualização. As economias de tela são carregadas automaticamente quando Windows é iniciada ou quando um usuário ativa a economia de tela por meio do Painel de Controle.
 
-Quando uma proteção de tela é escolhida, o Windows monitora os pressionamentos de tecla e os movimentos do mouse e, em seguida, inicia a proteção de tela após um período de inatividade. No entanto, o Windows não iniciará a proteção de tela se qualquer uma das seguintes condições existir:
+Depois que uma economia de tela é escolhida, Windows monitora os movimentos de teclas e do mouse e, em seguida, inicia a economia de tela após um período de inatividade. No entanto, Windows iniciará a economia de tela se alguma das seguintes condições existir:
 
--   O aplicativo ativo não é um aplicativo baseado no Windows.
--   Uma janela de treinamento baseado em computador (CBT) está presente.
--   O aplicativo ativo recebe a [mensagem \_ SYSCOMMAND do WM](../menurc/wm-syscommand.md) com o parâmetro *wParam* definido como o \_ valor SC SCREENSAVE, mas não passa a mensagem para a função [DefWindowProc](/windows/win32/api/winuser/nf-winuser-defwindowproca) .
+-   O aplicativo ativo não é um Windows baseado em dados.
+-   Uma janela CBT (treinamento baseado em computador) está presente.
+-   O aplicativo ativo recebe a mensagem [WM \_ SYSCOMMAND](../menurc/wm-syscommand.md) com o parâmetro *wParam* definido como o valor SC SCREENSAVE, mas não passa a mensagem para a \_ função [DefWindowProc.](/windows/win32/api/winuser/nf-winuser-defwindowproca)
 
-**Contexto de segurança da proteção de tela**
+**Contexto de segurança da economia de tela**
 
-O contexto de segurança da proteção de tela depende de se um usuário está conectado interativamente. Se um usuário estiver conectado interativamente quando a proteção de tela for chamada, a proteção de tela será executada no contexto de segurança do usuário interativo. Se nenhum usuário estiver conectado, o contexto de segurança da proteção de tela dependerá da versão do Windows que está sendo usada.
+O contexto de segurança da economia de tela depende se um usuário está conectado interativamente. Se um usuário estiver conectado interativamente quando a economia de tela for invocada, a economia de tela será executado no contexto de segurança do usuário interativo. Se nenhum usuário estiver conectado, o contexto de segurança da economia de tela dependerá da versão do Windows sendo usado.
 
--   Windows XP e Windows 2000-a proteção de tela é executada no contexto de LocalSystem com contas restritas.
--   Windows 2003-a proteção de tela é executada no contexto de LocalService com todos os privilégios removidos e grupo de administradores desabilitado.
+-   Windows XP e Windows 2000 – a economia de tela é executado no contexto de LocalSystem com contas restritas.
+-   Windows 2003 – a economia de tela é executado no contexto de LocalService com todos os privilégios removidos e o grupo de administradores desabilitado.
 -   Não se aplica ao Windows NT4.
 
-O contexto de segurança determina o nível de operações privilegiadas que podem ser feitas em uma proteção de tela.
+O contexto de segurança determina o nível de operações privilegiadas que podem ser feitas de uma economia de tela.
 
-**Windows Vista e posterior:** Se a proteção por senha estiver habilitada pela política, a proteção de tela será iniciada, independentemente do que um aplicativo faz com a \_ notificação SC SCREENSAVE.
+**Windows Vista e posterior:** Se a proteção por senha estiver habilitada pela política, a proteção de tela será iniciada independentemente do que um aplicativo faz com a notificação SC \_ SCREENSAVE.
 
-As proteções de tela contêm funções exportadas específicas, definições de recursos e declarações de variáveis. A biblioteca de proteção de tela contém a função **principal** e outro código de inicialização necessário para uma proteção de tela. Quando uma proteção de tela é iniciada, o código de inicialização na biblioteca de proteção de tela cria uma janela de tela inteira. A classe de janela dessa janela é declarada da seguinte maneira:
+As economias de tela contêm funções exportadas específicas, definições de recursos e declarações de variável. A biblioteca de economia de tela contém **a função principal** e outro código de inicialização necessários para uma economia de tela. Quando uma economia de tela é iniciada, o código de inicialização na biblioteca de economia de tela cria uma janela de tela inteira. A classe de janela para essa janela é declarada da seguinte forma:
 
 
 ```
@@ -72,65 +72,65 @@ cls.cbClsExtra     = 0;
 
 
 
-Para criar uma proteção de tela, a maioria dos desenvolvedores cria um módulo de código-fonte que contém três funções necessárias e as vincula à biblioteca de proteção de tela. Um módulo de proteção de tela é responsável apenas pela configuração e pelo fornecimento de efeitos visuais.
+Para criar uma economia de tela, a maioria dos desenvolvedores cria um módulo de código-fonte contendo três funções necessárias e as vincula à biblioteca de economia de tela. Um módulo de economia de tela é responsável apenas por se configurar e fornecer efeitos visuais.
 
-Uma das três funções necessárias em um módulo de proteção de tela é [**ScreenSaverProc**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverproc). Essa função processa mensagens específicas e passa todas as mensagens não processadas de volta para a biblioteca de proteção de tela. A seguir estão algumas das mensagens típicas processadas pelo **ScreenSaverProc**.
+Uma das três funções necessárias em um módulo de economia de tela é [**ScreenSaverProc.**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverproc) Essa função processa mensagens específicas e passa todas as mensagens não processadas de volta para a biblioteca de economia de tela. A seguir estão algumas das mensagens típicas processadas **pelo ScreenSaverProc.**
 
 
 
 | Mensagem        | Significado                                                                                                                                                                                    |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| criação do WM \_     | Recupere todos os dados de inicialização do arquivo de Regedit.ini. Defina um timer de janela para a janela de proteção de tela. Execute qualquer outra inicialização necessária.                                     |
-| ERASEBKGND do WM \_ | Apague a janela proteção de tela e prepare-se para operações de desenho subsequentes.                                                                                                               |
-| \_temporizador do WM      | Executar operações de desenho.                                                                                                                                                                |
-| destruição do WM \_    | Destrua os temporizadores criados quando o aplicativo processou a mensagem de [ \_ criação do WM](../winmsg/wm-create.md) . Execute qualquer limpeza adicional necessária. |
+| WM \_ CREATE     | Recupere todos os dados de inicialização do arquivo Regedit.ini dados. Definir um temporizador de janela para a janela de economia de tela. Execute qualquer outra inicialização necessária.                                     |
+| WM \_ ERASEBKGND | Apague a janela de economia de tela e prepare-se para operações de desenho subsequentes.                                                                                                               |
+| TEMPORIZADOR \_ DE WM      | Executar operações de desenho.                                                                                                                                                                |
+| WM \_ DESTROY    | Destruir os temporizadores criados quando o aplicativo processou a [mensagem WM \_ CREATE.](../winmsg/wm-create.md) Execute qualquer limpeza adicional necessária. |
 
 
 
- 
+ 
 
-O [**ScreenSaverProc**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverproc) passa mensagens não processadas para a biblioteca de proteção de tela chamando a função [**DefScreenSaverProc**](/windows/desktop/api/scrnsave/nf-scrnsave-defscreensaverproc) . A tabela a seguir descreve como essa função processa várias mensagens.
+[**ScreenSaverProc**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverproc) passa mensagens não processadas para a biblioteca de proteção de tela chamando a [**função DefScreenSaverProc.**](/windows/desktop/api/scrnsave/nf-scrnsave-defscreensaverproc) A tabela a seguir descreve como essa função processa várias mensagens.
 
 
 
 | Mensagem         | Ação                                                                    |
 |-----------------|---------------------------------------------------------------------------|
-| WM \_ SETcursor   | Defina o cursor para o cursor NULL, removendo-o da tela.           |
-| pintura do WM \_       | Pinte o plano de fundo da tela.                                              |
-| LBUTTONDOWN do WM \_ | Encerre a proteção de tela.                                               |
-| MBUTTONDOWN do WM \_ | Encerre a proteção de tela.                                               |
-| RBUTTONDOWN do WM \_ | Encerre a proteção de tela.                                               |
-| o WM \_ KEYDOWN     | Encerre a proteção de tela.                                               |
-| admousemove do WM \_   | Encerre a proteção de tela.                                               |
-| ativar o WM \_    | Encerre a proteção de tela se o parâmetro *wParam* estiver definido como **false**. |
+| WM \_ SETCURSOR   | De definir o cursor como o cursor nulo, removendo-o da tela.           |
+| WM \_ PAINT       | Paint tela de fundo.                                              |
+| WM \_ LBUTTONDOWN | Encente a economia de tela.                                               |
+| WM \_ MBUTTONDOWN | Encente a economia de tela.                                               |
+| WM \_ RBUTTONDOWN | Encente a economia de tela.                                               |
+| WM \_ KEYDOWN     | Encente a economia de tela.                                               |
+| WM \_ MOUSEMOVE   | Encente a economia de tela.                                               |
+| WM \_ ACTIVATE    | Encente a economia de tela se *o parâmetro wParam* estiver definido como **FALSE.** |
 
 
 
- 
+ 
 
-A segunda função necessária em um módulo de proteção de tela é [**ScreenSaverConfigureDialog**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverconfiguredialog). Essa função exibe uma caixa de diálogo que permite ao usuário configurar a proteção de tela (um aplicativo deve fornecer um modelo de caixa de diálogo correspondente). O Windows exibe a caixa de diálogo configuração quando o usuário seleciona o botão **instalação** na caixa de diálogo proteção de tela do painel de controle.
+A segunda função necessária em um módulo de economia de tela [**é ScreenSaverConfigureDialog.**](/windows/desktop/api/scrnsave/nf-scrnsave-screensaverconfiguredialog) Essa função exibe uma caixa de diálogo que permite que o usuário configure a economia de tela (um aplicativo deve fornecer um modelo de caixa de diálogo correspondente). Windows exibe a caixa de diálogo de configuração  quando o usuário seleciona o botão Instalação na Painel de Controle da caixa de diálogo Salvar Tela do usuário.
 
-A terceira função necessária em um módulo de proteção de tela é [**RegisterDialogClasses**](/windows/desktop/api/scrnsave/nf-scrnsave-registerdialogclasses). Essa função deve ser chamada por todos os aplicativos de proteção de tela. No entanto, os aplicativos que não exigem janelas especiais ou controles personalizados na caixa de diálogo de configuração podem simplesmente retornar **true**. Aplicativos que exigem controles especiais do Windows ou personalizados devem usar essa função para registrar as classes de janela correspondentes.
+A terceira função necessária em um módulo de economia de tela [**é RegisterDialogClasses.**](/windows/desktop/api/scrnsave/nf-scrnsave-registerdialogclasses) Essa função deve ser chamada por todos os aplicativos de economia de tela. No entanto, os aplicativos que não exigem janelas especiais ou controles personalizados na caixa de diálogo de configuração podem simplesmente retornar **TRUE.** Os aplicativos que exigem janelas especiais ou controles personalizados devem usar essa função para registrar as classes de janela correspondentes.
 
-Além de criar um módulo que dê suporte às três funções que acabamos de descrever, uma proteção de tela deve fornecer um ícone. Esse ícone só é visível quando a proteção de tela é executada como um aplicativo autônomo. (Para ser executado pelo painel de controle, uma proteção de tela deve ter a extensão de nome de arquivo. SCR; para ser executada como um aplicativo autônomo, ela deve ter a extensão de nome de arquivo. exe.) O ícone deve ser identificado no arquivo de recurso da proteção de tela pelo aplicativo de ID de constante \_ , que é definido no arquivo de cabeçalho SCRNSAVE. h.
+Além de criar um módulo que dá suporte às três funções descritas, uma economia de tela deve fornecer um ícone. Esse ícone fica visível somente quando a economia de tela é executado como um aplicativo autônomo. (Para ser executado pelo Painel de Controle, uma salvação de tela deve ter a extensão de nome de arquivo .scr; para ser executado como um aplicativo autônomo, ele deve ter a extensão .exe nome de arquivo.) O ícone deve ser identificado no arquivo de recurso do protetor de tela pelo APLICATIVO de ID constante, que é definido no arquivo de \_ header Scrnsave.h.
 
-Um requisito final é uma cadeia de caracteres de descrição de proteção de tela. O arquivo de recurso para uma proteção de tela deve conter uma cadeia de caracteres que o painel de controle exibe como o nome da proteção de tela. A cadeia de caracteres de descrição deve ser a primeira cadeia de caracteres na tabela de cadeias de caracteres do arquivo de recurso (identificada com o valor ordinal 1). No entanto, a cadeia de caracteres de descrição será ignorada pelo painel de controle se a proteção de tela tiver um nome de arquivo longo. Nesse caso, o nome do arquivo será usado como a cadeia de caracteres de descrição.
+Um requisito final é uma cadeia de caracteres de descrição da economia de tela. O arquivo de recurso para uma economia de tela deve conter uma cadeia de caracteres que o Painel de Controle exibe como o nome da economia de tela. A cadeia de caracteres de descrição deve ser a primeira cadeia de caracteres na tabela de cadeia de caracteres do arquivo de recurso (identificada com o valor ordinal 1). No entanto, a cadeia de caracteres de descrição será ignorada pelo Painel de Controle se a salvação de tela tiver um nome de arquivo longo. Nesse caso, o nome do arquivo será usado como a cadeia de caracteres de descrição.
 
-## <a name="using-the-screen-saver-functions"></a>Usando as funções de proteção de tela
+## <a name="using-the-screen-saver-functions"></a>Usando as funções de economia de tela
 
-Esta seção usa o código de exemplo obtido de um aplicativo de proteção de tela para ilustrar as seguintes tarefas:
+Esta seção usa o código de exemplo tirado de um aplicativo de economia de tela para ilustrar as seguintes tarefas:
 
--   [Criando uma proteção de tela](#creating-a-screen-saver)
--   [Instalando novas proteções de tela](#installing-new-screen-savers)
--   [Adicionando ajuda à caixa de diálogo configuração de proteção de tela](#adding-help-to-the-screen-saver-configuration-dialog-box)
+-   [Criando uma economia de tela](#creating-a-screen-saver)
+-   [Instalando novos protetores de tela](#installing-new-screen-savers)
+-   [Adicionando ajuda à caixa de diálogo Configuração do Protetor de Tela](#adding-help-to-the-screen-saver-configuration-dialog-box)
 
-### <a name="creating-a-screen-saver"></a>Criando uma proteção de tela
+### <a name="creating-a-screen-saver"></a>Criando uma economia de tela
 
-Em intervalos variando de 1 a 10 segundos, o aplicativo neste exemplo redesenha a tela com uma das quatro cores: branco, cinza claro, cinza escuro e preto. O aplicativo pinta a tela toda vez que recebe uma mensagem de [ \_ temporizador do WM](../winmsg/wm-timer.md) . O usuário pode ajustar o intervalo no qual essa mensagem é enviada, selecionando a caixa de diálogo configuração do aplicativo e ajustando uma barra de rolagem horizontal única.
+Em intervalos que variam de 1 a 10 segundos, o aplicativo neste exemplo reintintsa a tela com uma das quatro cores: branco, cinza claro, cinza escuro e preto. O aplicativo pinta a tela sempre que recebe uma mensagem [TIMER \_ WM.](../winmsg/wm-timer.md) O usuário pode ajustar o intervalo no qual essa mensagem é enviada, selecionando a caixa de diálogo configuração do aplicativo e ajustando uma barra de rolagem horizontal única.
 
 ### <a name="screen-saver-library"></a>Biblioteca de proteção de tela
 
-As funções de proteção de tela estática estão contidas na biblioteca de proteção de tela. Há duas versões da biblioteca disponíveis, SCRNSAVE. lib e Scrnsavw. lib. Você deve vincular seu projeto com um deles. SCRNSAVE. lib é usado para proteções de tela que usam caracteres ANSI e Scrnsavw. lib é usado para proteções de tela que usam caracteres Unicode. Uma proteção de tela vinculada a Scrnsavw. lib será executada somente em plataformas Windows que dão suporte a Unicode, enquanto uma proteção de tela vinculada a SCRNSAVE. lib será executada em qualquer plataforma Windows.
+As funções de proteção de tela estática estão contidas na biblioteca de proteção de tela. Há duas versões da biblioteca disponíveis, SCRNSAVE. lib e Scrnsavw. lib. Você deve vincular seu projeto com um deles. SCRNSAVE. lib é usado para proteções de tela que usam caracteres ANSI e Scrnsavw. lib é usado para proteções de tela que usam caracteres Unicode. uma proteção de tela vinculada a Scrnsavw. lib só será executada em plataformas Windows que dão suporte a Unicode, enquanto uma proteção de tela vinculada a Scrnsave. lib será executada em qualquer plataforma de Windows.
 
 ### <a name="supporting-the-configuration-dialog-box"></a>Suporte à caixa de diálogo de configuração
 
@@ -423,12 +423,12 @@ EXPORTS
 
 ### <a name="installing-new-screen-savers"></a>Instalando novas proteções de tela
 
-Ao compilar a lista de proteções de tela disponíveis, o painel de controle pesquisa o diretório de inicialização do Windows em busca de arquivos com a extensão. SCR. Como as proteções de tela são arquivos executáveis padrão do Windows com extensões. exe, você deve renomeá-los para que eles tenham as extensões. SCR e copiá-los para o diretório correto.
+ao compilar a lista de proteções de tela disponíveis, o painel de controle pesquisa o Windows diretório de inicialização para arquivos com a extensão. scr. como os salvadores de tela são arquivos executáveis Windows padrão com extensões de .exe, você deve renomeá-los para que tenham extensões. scr e copiá-los para o diretório correto.
 
 ### <a name="adding-help-to-the-screen-saver-configuration-dialog-box"></a>Adicionando ajuda à caixa de diálogo configuração de proteção de tela
 
-A caixa de diálogo configuração de uma proteção de tela normalmente inclui um botão de **ajuda** . Os aplicativos de proteção de tela podem verificar o identificador do botão de ajuda e chamar a função [**WinHelp**](/windows/desktop/api/winuser/nf-winuser-winhelpa) da mesma forma que a ajuda é fornecida em outros aplicativos baseados no Windows.
+A caixa de diálogo configuração de uma proteção de tela normalmente inclui um botão de **ajuda** . os aplicativos de proteção de tela podem verificar o identificador do botão de ajuda e chamar a função [**WinHelp**](/windows/desktop/api/winuser/nf-winuser-winhelpa) da mesma forma que a ajuda é fornecida em outros aplicativos baseados em Windows.
 
- 
+ 
 
- 
+ 
