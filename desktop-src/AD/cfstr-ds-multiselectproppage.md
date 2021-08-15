@@ -1,6 +1,6 @@
 ---
 title: CFSTR_DS_MULTISELECTPROPPAGE
-description: O \_ formato de área de transferência CFSTR DS \_ MULTISELECTPROPPAGE fornece um identificador de memória global (HGLOBAL) que contém uma cadeia de caracteres Unicode terminada em nulo.
+description: O formato da área de transferência CFSTR DS MULTISELECTPROPPAGE fornece um HGLOBAL (global memory handle) que contém uma cadeia \_ \_ de caracteres Unicode terminada em nulo.
 ms.assetid: cff8d696-b947-4cc2-a3b2-5b69f388957b
 ms.tgt_platform: multiple
 topic_type:
@@ -11,12 +11,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 50c56927b615616bf9fab822cd96d5170237967e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3bd62a35d3feb105b08000ec131616ee7c811c86e90bd8cc27158a14c1f72e4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118023674"
 ---
 # <a name="cfstr_ds_multiselectproppage"></a>CFSTR \_ DS \_ MULTISELECTPROPPAGE
 
@@ -30,10 +30,10 @@ ms.locfileid: "103918289"
 
 
 
-O formato de área de transferência **CFSTR \_ DS \_ MULTISELECTPROPPAGE** fornece um identificador de memória global (**HGLOBAL**) que contém uma cadeia de caracteres Unicode terminada em nulo que contém um nome exclusivo que é usado para criar o objeto de notificação para uma extensão de folha de propriedades de seleção múltipla.
+O formato da área de transferência **CFSTR \_ DS \_ MULTISELECTPROPPAGE** fornece um identificador de memória global (**HGLOBAL**) que contém uma cadeia de caracteres Unicode terminada em nulo que contém um nome exclusivo que é usado para criar o objeto de notificação para uma extensão de folha de propriedades de várias seleções.
 
 > [!Note]  
-> O valor do formato da área de transferência não está definido em um arquivo de cabeçalho publicado. Para usar esse valor de formato da área de transferência, você mesmo deve defini-lo no formato exato mostrado.
+> Esse valor de formato de área de transferência não está definido em um arquivo de header publicado. Para usar esse valor de formato de área de transferência, você deve defini-lo por conta própria no formato exato mostrado.
 
  
 

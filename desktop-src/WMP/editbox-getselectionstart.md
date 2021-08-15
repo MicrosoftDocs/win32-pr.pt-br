@@ -1,9 +1,9 @@
 ---
-title: EDITBOX.getSelectionStart
-description: O método getSelectionStart recupera a posição inicial do texto selecionado no controle de caixa de edição.
+title: GetSelectionStart de edição
+description: O método getSelectionStart recupera a posição inicial do texto selecionado no controle admy.
 ms.assetid: 2d7efe14-549c-4f73-96a7-b8ce88b881ad
 keywords:
-- EDITBOX.getSelectionStart Windows Media Player
+- GetSelectionStart Windows Media Player de edição
 topic_type:
 - apiref
 api_name:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118340027"
 ---
-# <a name="editboxgetselectionstart"></a>EDITBOX.getSelectionStart
+# <a name="editboxgetselectionstart"></a>GetSelectionStart de edição
 
-O **método getSelectionStart** recupera a posição inicial do texto selecionado no controle de caixa de edição.
+O método **getSelectionStart** recupera a posição inicial do texto selecionado no controle admy.
 
 ``` syntax
         elementID.getSelectionStart()
@@ -34,15 +34,15 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor Retornado
 
-Esse método retorna um **Número** (**long**).
+Esse método retorna um **número** (**longo**).
 
 ## <a name="remarks"></a>Comentários
 
 Se nenhum texto for selecionado, esse método retornará a posição do ponto de inserção.
 
-Se o controle for multilinha, esse método retornará o índice de caracteres no controle, não o índice de linha.
+Se o controle for Multiline, esse método retornará o índice de caracteres no controle, não o índice de linha.
 
-Esse método só pode ser chamado depois que o controle se torna visível.
+Esse método só pode ser chamado depois que o controle se tornar visível.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,16 +58,16 @@ Esse método só pode ser chamado depois que o controle se torna visível.
 
 <dl> <dt>
 
-[**Elemento EDITBOX**](editbox-element.md)
+[**Elemento admy**](editbox-element.md)
 </dt> <dt>
 
-[**EDITBOX.getSelectionEnd**](editbox-getselectionend.md)
+[**GetSelectionEnd de edição**](editbox-getselectionend.md)
 </dt> <dt>
 
-[**EDITBOX.replaceSelection**](editbox-replaceselection.md)
+[**ReplaceSelection de edição**](editbox-replaceselection.md)
 </dt> <dt>
 
-[**EDITBOX.setSelection**](editbox-setselection.md)
+[**Autoseleção de myselecting**](editbox-setselection.md)
 </dt> </dl>
 
  

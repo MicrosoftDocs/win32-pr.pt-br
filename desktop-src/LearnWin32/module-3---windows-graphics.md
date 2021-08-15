@@ -25,8 +25,8 @@ Este módulo começa com uma visão geral de alto nível da arquitetura Windows 
 -   [Seu primeiro Direct2D programa](your-first-direct2d-program.md)
 -   [Renderizar Alvos, Dispositivos e Recursos](render-targets--devices--and-resources.md)
 -   [Desenhar com Direct2D](drawing-with-direct2d.md)
--   [DPI e Device-Independent pixels](dpi-and-device-independent-pixels.md)
--   [Usando Cor em Direct2D](using-color-in-direct2d.md)
+-   [DPI e Device-Independent Pixels](dpi-and-device-independent-pixels.md)
+-   [Usando Cor no Direct2D](using-color-in-direct2d.md)
 -   [Aplicar transformações em Direct2D](applying-transforms-in-direct2d.md)
 -   [Apêndice: Transformaçãos de Matriz](appendix--matrix-transforms.md)
 

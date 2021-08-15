@@ -3,8 +3,8 @@ title: Estrutura de MPSTATUS_INFO (MpClient. h)
 description: Informações de status do Malware Protection Manager.
 ms.assetid: 614F14EC-64CC-4E3F-8A89-42AA1E0DC95D
 keywords:
-- Recursos do ambiente Windows herdado da estrutura de MPSTATUS_INFO
-- Ponteiro de estrutura de PMPSTATUS_INFO recursos de ambiente herdados do Windows
+- recursos de ambiente de Windows herdado da estrutura de MPSTATUS_INFO
+- Windows recursos de ambiente herdados do ponteiro de estrutura do PMPSTATUS_INFO
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: efe31981f819d85d13457553beb1ce3c869b98bd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8cb93bd15fe05955c9e8d87828d4b94b08e3d577659c629b52b3f908cb045ba3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117883297"
 ---
 # <a name="mpstatus_info-structure"></a>Estrutura de informações do MPSTATUS \_
 
@@ -130,9 +130,9 @@ Carimbo de data/hora de validade do produto em UNC. Isso será válido somente s
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
 
 
 

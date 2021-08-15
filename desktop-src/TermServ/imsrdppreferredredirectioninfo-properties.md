@@ -1,5 +1,5 @@
 ---
-title: Propriedades IMsRdpPreferredRedirectionInfo
+title: Propriedades de IMsRdpPreferredRedirectionInfo
 description: A interface IMsRdpPreferredRedirectionInfo expõe as propriedades a seguir.
 ms.assetid: B06F7253-DAB6-4731-AB9F-B8388A2EC7B4
 ms.tgt_platform: multiple
@@ -12,7 +12,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118351628"
 ---
-# <a name="imsrdppreferredredirectioninfo-properties"></a>Propriedades IMsRdpPreferredRedirectionInfo
+# <a name="imsrdppreferredredirectioninfo-properties"></a>Propriedades de IMsRdpPreferredRedirectionInfo
 
 A interface [**IMsRdpPreferredRedirectionInfo**](imsrdppreferredredirectioninfo.md) expõe as propriedades a seguir.
 
@@ -23,7 +23,7 @@ A interface [**IMsRdpPreferredRedirectionInfo**](imsrdppreferredredirectioninfo.
 [**Propriedade UseRedirectionServerName**](imsrdppreferredredirectioninfo-useredirectionservername.md)
 </dt> <dd>
 
-Obtém e define se o nome do servidor de redirecionamento deve ser usado.
+Obtém e define se deve ser usado o nome do servidor de redirecionamento.
 
 </dd> </dl>
 

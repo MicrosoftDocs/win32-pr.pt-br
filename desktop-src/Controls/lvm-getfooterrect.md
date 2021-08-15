@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LVM_GETFOOTERRECT (commctrl. h)
-description: Recupera as coordenadas do rodapé de um controle de exibição de lista. Envie essa mensagem explicitamente ou usando a \_ macro GetFooterRect do ListView.
+title: LVM_GETFOOTERRECT mensagem (Commctrl.h)
+description: Recupera as coordenadas do rodapé para um controle de exibição de lista. Envie essa mensagem explicitamente ou usando a \_ macro ListView GetFooterRect.
 ms.assetid: f8816f35-c1d2-4072-81d3-0a9a3df53d64
 keywords:
-- Controles de LVM_GETFOOTERRECT de mensagens do Windows
+- LVM_GETFOOTERRECT controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31df3a1b7b29e5ad9191da9e990e04daec99e948
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 39bc2c5cd724c9b5b4885b99123489e49ead52243d43388e7eb22808fb43a826
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118411455"
 ---
-# <a name="lvm_getfooterrect-message"></a>\_Mensagem GETFOOTERRECT LVM
+# <a name="lvm_getfooterrect-message"></a>Mensagem \_ GETFOOTERRECT LVM
 
-Recupera as coordenadas do rodapé de um controle de exibição de lista. Envie essa mensagem explicitamente ou usando a macro [**\_ GetFooterRect do ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getfooterrect) .
+Recupera as coordenadas do rodapé para um controle de exibição de lista. Envie essa mensagem explicitamente ou usando a [**macro \_ ListView GetFooterRect.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getfooterrect)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -36,16 +36,16 @@ Não usado. Deve ser 0.
 
 </dd> <dt>
 
-*lParam* \[ entrada, saída\]
+*lParam* \[ in, out\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**Rect**](/previous-versions//dd162897(v=vs.85)) para receber as coordenadas. O processo de chamada é responsável por alocar essa estrutura. As coordenadas recebidas são expressas como coordenadas do cliente.
+Um ponteiro para uma [**estrutura RECT**](/previous-versions//dd162897(v=vs.85)) para receber as coordenadas. O processo de chamada é responsável por alocar essa estrutura. As coordenadas recebidas são expressas como coordenadas de cliente.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
+Retorna **TRUE se** for bem-sucedido ou FALSE **caso** contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
+| parâmetro<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

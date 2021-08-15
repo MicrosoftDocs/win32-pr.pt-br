@@ -4,12 +4,12 @@ ms.assetid: ee4ae7f9-0c4f-4127-9098-282641f9ab46
 title: System. Media. UserNoAutoInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed168c26ffcc05deeb37cf19629b3864f26c88ce
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 829456f11e71f561bfc5e5c06d94bac5c88b16dbeb8f90e250daa43c6f479615
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104011920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118724836"
 ---
 # <a name="systemmediausernoautoinfo"></a>System. Media. UserNoAutoInfo
 

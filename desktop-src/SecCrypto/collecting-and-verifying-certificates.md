@@ -4,16 +4,16 @@ ms.assetid: 59ae22f6-aa6d-4b53-8a27-73e1e5c62755
 title: Coletando e verificando certificados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c0b160f373d5ade65679fcc4dd87e3c1c86dc4ac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 60b793cf4aeca7d05d166a4b205b924db53faee09683cefcef7b0244a9eb0289
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105779369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117769526"
 ---
 # <a name="collecting-and-verifying-certificates"></a>Coletando e verificando certificados
 
-\[O CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, use o .NET Framework para implementar recursos de segurança. Para obter mais informações, consulte [alternativas ao uso do CApicom](alternatives-to-using-capicom.md).\]
+\[o capicom é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. em vez disso, use o .NET Framework para implementar recursos de segurança. Para obter mais informações, consulte [alternativas ao uso do CApicom](alternatives-to-using-capicom.md).\]
 
 Geralmente, um grupo de [*certificados*](../secgloss/c-gly.md) precisa ser coletado e verificado. Isso geralmente seria feito para preparar um grupo de destinatários para uma mensagem envelopada. No exemplo a seguir, os certificados em um repositório local são enumerados e verificados quanto à validade. Em seguida, um repositório de Active Directory é aberto para recuperar e adicionar ao repositório local novos certificados. Os certificados recuperados do repositório do Active Directory são verificados quanto à validade e, se forem válidos, são adicionados ao repositório local. Os dois repositórios são então fechados.
 

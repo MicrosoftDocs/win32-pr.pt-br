@@ -1,18 +1,18 @@
 ---
-title: Glossário do Windows Touch
-description: Este tópico fornece as definições de termos que são usados pelo Windows Touch.
+title: Windows Glossário de toque
+description: este tópico fornece as definições de termos que são usados por Windows toque.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 25341532-c431-41a5-ad16-c88e31fd60b1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ebc0c4b426bf43bf011b2011dc987753ec2fe542
-ms.sourcegitcommit: 622d149edf775af5a9633c2d12ccfddf7000b8fd
+ms.openlocfilehash: d23ef834622dc4c0925a1dd315c3394ec9a5a27c6f471297fe640c777db114f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "104007200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118435971"
 ---
-# <a name="windows-touch-glossary"></a>Glossário do Windows Touch
+# <a name="windows-touch-glossary"></a>Windows Glossário de toque
 
 <dl> <dt>
 

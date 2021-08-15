@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Wxdebug.h
-ms.openlocfilehash: 5db5e78d198cc9f66aa5de6fdb0160e325b82591
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 871a8e4a04ec1dc31f3240b539a943c9c1733f083166fa4b7e6f6b52d14a466c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750637"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118401781"
 ---
 # <a name="execute_assert-macro"></a>EXECUTAR \_ macro Assert
 
@@ -46,7 +46,7 @@ Expressão para avaliar.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa macro não retorna um valor.
 
@@ -60,7 +60,7 @@ Ao contrário da macro [**Assert**](assert.md) , essa macro avalia a expressão 
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wxdebug. h (incluir fluxos. h)</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wxdebug. h (incluir Fluxos. h)</dt> </dl> |
 
 
 

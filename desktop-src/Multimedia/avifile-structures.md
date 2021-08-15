@@ -1,9 +1,9 @@
 ---
-title: Estruturas AVIFile
-description: Estruturas AVIFile
+title: Estruturas DE ARQUIVO AVI
+description: Estruturas DE ARQUIVO AVI
 ms.assetid: 2b7cdbb6-8c53-49ad-a171-b58357531887
 keywords:
-- Referência do AVIFile, estruturas
+- Referência de AVIFile, estruturas
 - referência para AVIFile, estruturas
 ms.topic: article
 ms.date: 05/31/2018
@@ -14,7 +14,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118375623"
 ---
-# <a name="avifile-structures"></a>Estruturas AVIFile
+# <a name="avifile-structures"></a>Estruturas DE ARQUIVO AVI
 
 As estruturas a seguir são usadas com AVIFile.
 

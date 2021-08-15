@@ -1,6 +1,6 @@
 ---
-title: callnz bool-PS
-description: Chamar se não for zero. Executa uma chamada condicional para a instrução marcada pelo índice de rótulo. | callnz bool-PS
+title: callnz bool - ps
+description: Chame se não for zero. Executa uma chamada condicional para a instrução marcada pelo índice de rótulo. | callnz bool - ps
 ms.assetid: 1b9ff276-c2b8-46cc-96ac-a5b5455c5cc0
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0516e62ce07c60866715591bc59123f38dc5c272
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 793feb1934b86b46f26050a67b5f26d94b9f277e31735c4d1912805374bab903
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104989259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118516619"
 ---
-# <a name="callnz-bool---ps"></a>callnz bool-PS
+# <a name="callnz-bool---ps"></a>callnz bool - ps
 
-Chamar se não for zero. Executa uma chamada condicional para a instrução marcada pelo índice de rótulo.
+Chame se não for zero. Executa uma chamada condicional para a instrução marcada pelo índice de rótulo.
 
 ## <a name="syntax"></a>Syntax
 
 
 
-| callnz l \# , \[ ! \] b\# |
+| callnz l \# , \[ ! \] B\# |
 |----------------------|
 
 
@@ -33,17 +33,17 @@ Chamar se não for zero. Executa uma chamada condicional para a instrução marc
 
 Em que:
 
--   l \# é um [rótulo-PS](label---ps.md) marcando o início da sub-rotina a ser chamada.
--   \[!\] é um modificador opcional de negação.
--   b \# identifica um [registro booliano constante](dx9-graphics-reference-asm-ps-registers-constant-boolean.md).
+-   l \# é um rótulo – [ps](label---ps.md) marcando o início da sub-rotina a ser chamada.
+-   \[!\] é um modificador de negação opcional.
+-   b \# identifica um Registro [Booliana Constante](dx9-graphics-reference-asm-ps-registers-constant-boolean.md).
 
 ## <a name="remarks"></a>Comentários
 
 
 
-| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| bool callnz           |      |      |      |      |      | x    | x     | x    | x     |
+| callnz bool           |      |      |      |      |      | x    | x     | x    | x     |
 
 
 

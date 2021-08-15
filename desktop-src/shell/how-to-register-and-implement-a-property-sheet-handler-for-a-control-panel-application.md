@@ -3,12 +3,12 @@ description: Muitos aplicativos do painel de controle exibem uma folha de propri
 title: Como registrar e implementar um manipulador de folha de propriedades para um aplicativo do painel de controle
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47f7f8fe80bf5c7baceddac64d513d950378bcdf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c6865e8e50aefdea3e3d25c29c9abd3bbbabf5c6af3b770537ed187f8b055bdc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117859585"
 ---
 # <a name="how-to-register-and-implement-a-property-sheet-handler-for-a-control-panel-application"></a>Como registrar e implementar um manipulador de folha de propriedades para um aplicativo do painel de controle
 
@@ -69,13 +69,13 @@ O procedimento para implementar um manipulador de folhas de propriedades do pain
 
 Quando um aplicativo do painel de controle está prestes a exibir sua folha de propriedades, ele chama o método [**IShellPropSheetExt:: ReplacePage**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellpropsheetext-replacepage) do manipulador de folhas de propriedades uma vez para cada página que pode ser substituída. O parâmetro *uPageID* é definido como a ID da página. As IDs para as páginas disponíveis são definidas em Cplext. h. As IDs disponíveis no momento estão listadas na tabela a seguir. 
 
-| ID da página                      | Description         | Aplicativo do painel de controle |
+| ID da página                      | Descrição         | Aplicativo do painel de controle |
 |------------------------------|---------------------|---------------------------|
 | CPLPAGE \_ botões de mouse \_      | A página botões    | Mouse                     |
 | CPLPAGE \_ mouse \_ PTRMOTION    | A página de movimento     | Mouse                     |
 | \_roda do mouse CPLPAGE \_        | A página de roda      | Mouse                     |
 | \_velocidade do teclado CPLPAGE \_     | A página velocidade      | Keyboard                  |
-| \_tela de \_ fundo do CPLPAGE | A página de plano de fundo | Monitor                   |
+| \_tela de \_ fundo do CPLPAGE | A página de plano de fundo | Exibir                   |
 
 
 

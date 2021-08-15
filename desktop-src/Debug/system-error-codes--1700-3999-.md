@@ -4,17 +4,17 @@ ms.assetid: 7e57c087-53e4-443d-9227-21d9eb3cc71f
 title: Códigos de erro do sistema (1700-3999) (WinError. h)
 ms.topic: reference
 ms.date: 07/18/2019
-ms.openlocfilehash: 23b90db71a6e2e84b28f4aafc94475e9e82e3e7a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 707425f7714c84d92bf5bc001f57c1677183b9edbd9170236d1c629bc0aaf121
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118405597"
 ---
 # <a name="system-error-codes-1700-3999"></a>Códigos de erro do sistema (1700-3999)
 
 > [!NOTE]
-> Essas informações destinam-se a desenvolvedores Depurando erros do sistema. Para outros erros, como problemas com Windows Update, há uma lista de recursos na página códigos de [erro](system-error-codes.md) .
+> Essas informações destinam-se a desenvolvedores Depurando erros do sistema. para outros erros, como problemas com Windows Update, há uma lista de recursos na página códigos de [erro](system-error-codes.md) .
 
 A lista a seguir descreve os [códigos de erro do sistema](system-error-codes.md) para erros 1700 a 3999. Elas são retornadas pela função [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) quando muitas funções falham. Para recuperar o texto de descrição do erro em seu aplicativo, use a função [**FormatMessage**](/windows/desktop/api/WinBase/nf-winbase-formatmessage) com a **mensagem de formato \_ \_ do sinalizador do \_ sistema** .
 
@@ -852,7 +852,7 @@ Nenhum contexto de segurança está disponível para permitir a representação.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_INTERNAL_ERROR"></span><span id="rpc_s_internal_error"></span>**\_ \_ erro interno de RPC S \_**
+<span id="RPC_S_INTERNAL_ERROR"></span><span id="rpc_s_internal_error"></span>**ERRO INTERNO \_ DO \_ \_ RPC**
 </dt> <dd> <dl> <dt>
 
 1766 (0x6E6)
@@ -860,12 +860,12 @@ Nenhum contexto de segurança está disponível para permitir a representação.
 
 
 
-Ocorreu um erro interno em uma chamada de procedimento remoto (RPC).
+Ocorreu um erro interno em uma RPC (chamada de procedimento remoto).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_ZERO_DIVIDE"></span><span id="rpc_s_zero_divide"></span>**Divisão de RPC \_ S \_ zero \_**
+<span id="RPC_S_ZERO_DIVIDE"></span><span id="rpc_s_zero_divide"></span>**RPC \_ S \_ ZERO \_ DIVIDE**
 </dt> <dd> <dl> <dt>
 
 1767 (0x6E7)
@@ -873,12 +873,12 @@ Ocorreu um erro interno em uma chamada de procedimento remoto (RPC).
 
 
 
-O servidor RPC tentou uma divisão de número inteiro por zero.
+O servidor RPC tentou uma divisão de inteiros por zero.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_ADDRESS_ERROR"></span><span id="rpc_s_address_error"></span>**\_erro de \_ endereço RPC S \_**
+<span id="RPC_S_ADDRESS_ERROR"></span><span id="rpc_s_address_error"></span>**ERRO DE \_ ENDEREÇO DO \_ \_ RPC**
 </dt> <dd> <dl> <dt>
 
 1768 (0x6E8)
@@ -891,7 +891,7 @@ Ocorreu um erro de endereçamento no servidor RPC.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_FP_DIV_ZERO"></span><span id="rpc_s_fp_div_zero"></span>**RPC \_ S \_ FP \_ div \_ zero**
+<span id="RPC_S_FP_DIV_ZERO"></span><span id="rpc_s_fp_div_zero"></span>**RPC \_ S \_ FP \_ DIV \_ ZERO**
 </dt> <dd> <dl> <dt>
 
 1769 (0x6E9)
@@ -904,7 +904,7 @@ Uma operação de ponto flutuante no servidor RPC causou uma divisão por zero.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_FP_UNDERFLOW"></span><span id="rpc_s_fp_underflow"></span>**\_ \_ \_ estouro negativo do RPC S**
+<span id="RPC_S_FP_UNDERFLOW"></span><span id="rpc_s_fp_underflow"></span>**RPC \_ S \_ FP \_ UNDERFLOW**
 </dt> <dd> <dl> <dt>
 
 1770 (0x6EA)
@@ -912,12 +912,12 @@ Uma operação de ponto flutuante no servidor RPC causou uma divisão por zero.
 
 
 
-Um estouro negativo de ponto flutuante ocorreu no servidor RPC.
+Ocorreu um subfluxo de ponto flutuante no servidor RPC.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_FP_OVERFLOW"></span><span id="rpc_s_fp_overflow"></span>**estouro de FP de RPC \_ S \_ \_**
+<span id="RPC_S_FP_OVERFLOW"></span><span id="rpc_s_fp_overflow"></span>**ESTOURO \_ RPC S \_ FP \_**
 </dt> <dd> <dl> <dt>
 
 1771 (0x6EB)
@@ -930,7 +930,7 @@ Ocorreu um estouro de ponto flutuante no servidor RPC.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_X_NO_MORE_ENTRIES"></span><span id="rpc_x_no_more_entries"></span>**RPC \_ X \_ não há \_ mais \_ entradas**
+<span id="RPC_X_NO_MORE_ENTRIES"></span><span id="rpc_x_no_more_entries"></span>**RPC \_ X SEM MAIS \_ \_ \_ ENTRADAS**
 </dt> <dd> <dl> <dt>
 
 1772 (0x6EC)
@@ -938,12 +938,12 @@ Ocorreu um estouro de ponto flutuante no servidor RPC.
 
 
 
-A lista de servidores RPC disponíveis para a associação de identificadores automáticos foi esgotada.
+A lista de servidores RPC disponíveis para a associação de alças automáticas foi esgotada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_X_SS_CHAR_TRANS_OPEN_FAIL"></span><span id="rpc_x_ss_char_trans_open_fail"></span>**\_falha ao \_ \_ \_ \_ abrir trans \_ . de car de RPC X SS**
+<span id="RPC_X_SS_CHAR_TRANS_OPEN_FAIL"></span><span id="rpc_x_ss_char_trans_open_fail"></span>**FALHA NO RPC \_ X \_ SS \_ CHAR TRANS \_ \_ \_ OPEN**
 </dt> <dd> <dl> <dt>
 
 1773 (0x6ED)
@@ -951,12 +951,12 @@ A lista de servidores RPC disponíveis para a associação de identificadores au
 
 
 
-Não é possível abrir o arquivo da tabela de conversão de caracteres.
+Não é possível abrir o arquivo de tabela de conversão de caracteres.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_X_SS_CHAR_TRANS_SHORT_FILE"></span><span id="rpc_x_ss_char_trans_short_file"></span>**RPC \_ X \_ SS \_ Char \_ Trans \_ \_ arquivo curto**
+<span id="RPC_X_SS_CHAR_TRANS_SHORT_FILE"></span><span id="rpc_x_ss_char_trans_short_file"></span>**RPC \_ X \_ SS \_ CHAR \_ TRANS \_ SHORT \_ FILE**
 </dt> <dd> <dl> <dt>
 
 1774 (0x6EE)
@@ -969,7 +969,7 @@ O arquivo que contém a tabela de conversão de caracteres tem menos de 512 byte
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_X_SS_IN_NULL_CONTEXT"></span><span id="rpc_x_ss_in_null_context"></span>**RPC \_ X \_ SS \_ em \_ \_ contexto nulo**
+<span id="RPC_X_SS_IN_NULL_CONTEXT"></span><span id="rpc_x_ss_in_null_context"></span>**RPC \_ X \_ SS NO CONTEXTO \_ \_ \_ NULO**
 </dt> <dd> <dl> <dt>
 
 1775 (0x6EF)
@@ -977,12 +977,12 @@ O arquivo que contém a tabela de conversão de caracteres tem menos de 512 byte
 
 
 
-Um identificador de contexto nulo foi passado do cliente para o host durante uma chamada de procedimento remoto.
+Um handle de contexto nulo foi passado do cliente para o host durante uma chamada de procedimento remoto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_X_SS_CONTEXT_DAMAGED"></span><span id="rpc_x_ss_context_damaged"></span>**contexto de RPC \_ X \_ SS \_ \_ danificado**
+<span id="RPC_X_SS_CONTEXT_DAMAGED"></span><span id="rpc_x_ss_context_damaged"></span>**CONTEXTO RPC \_ X \_ SS \_ \_ DANIFICADO**
 </dt> <dd> <dl> <dt>
 
 1777 (0x6F1)
@@ -990,12 +990,12 @@ Um identificador de contexto nulo foi passado do cliente para o host durante uma
 
 
 
-O identificador de contexto foi alterado durante uma chamada de procedimento remoto.
+O handle de contexto foi alterado durante uma chamada de procedimento remoto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_X_SS_HANDLES_MISMATCH"></span><span id="rpc_x_ss_handles_mismatch"></span>**\_ \_ identificadores RPC X SS \_ \_ incompatíveis**
+<span id="RPC_X_SS_HANDLES_MISMATCH"></span><span id="rpc_x_ss_handles_mismatch"></span>**RPC \_ X \_ SS LIDA COM \_ \_ INCOMPATIBILIDADE**
 </dt> <dd> <dl> <dt>
 
 1778 (0x6F2)
@@ -1003,12 +1003,12 @@ O identificador de contexto foi alterado durante uma chamada de procedimento rem
 
 
 
-Os identificadores de associação passados para uma chamada de procedimento remoto não correspondem.
+Os alças de associação passados para uma chamada de procedimento remoto não são semelhantes.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_X_SS_CANNOT_GET_CALL_HANDLE"></span><span id="rpc_x_ss_cannot_get_call_handle"></span>**RPC \_ X \_ SS \_ não \_ pode \_ obter \_ identificador de chamada**
+<span id="RPC_X_SS_CANNOT_GET_CALL_HANDLE"></span><span id="rpc_x_ss_cannot_get_call_handle"></span>**RPC \_ X \_ SS NÃO PODE OBTER O \_ \_ \_ ALÇAMENTO DE \_ CHAMADA**
 </dt> <dd> <dl> <dt>
 
 1779 (0x6F3)
@@ -1016,12 +1016,12 @@ Os identificadores de associação passados para uma chamada de procedimento rem
 
 
 
-O stub não pode obter o identificador de chamada de procedimento remoto.
+O stub não pode obter o alça de chamada de procedimento remoto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_X_NULL_REF_POINTER"></span><span id="rpc_x_null_ref_pointer"></span>**ponteiro de referência de RPC \_ X \_ nulo \_ \_**
+<span id="RPC_X_NULL_REF_POINTER"></span><span id="rpc_x_null_ref_pointer"></span>**PONTEIRO REF \_ \_ NULO \_ RPC X \_**
 </dt> <dd> <dl> <dt>
 
 1780 (0x6F4)
@@ -1034,7 +1034,7 @@ Um ponteiro de referência nulo foi passado para o stub.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_X_ENUM_VALUE_OUT_OF_RANGE"></span><span id="rpc_x_enum_value_out_of_range"></span>**\_ \_ \_ valor de enumeração de RPC X \_ fora \_ do \_ intervalo**
+<span id="RPC_X_ENUM_VALUE_OUT_OF_RANGE"></span><span id="rpc_x_enum_value_out_of_range"></span>**RPC \_ X \_ VALOR ENUM FORA DO \_ \_ \_ \_ INTERVALO**
 </dt> <dd> <dl> <dt>
 
 1781 (0x6F5)
@@ -1047,7 +1047,7 @@ O valor da enumeração está fora do intervalo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_X_BYTE_COUNT_TOO_SMALL"></span><span id="rpc_x_byte_count_too_small"></span>**contagem de bytes de RPC \_ X \_ \_ \_ muito \_ pequena**
+<span id="RPC_X_BYTE_COUNT_TOO_SMALL"></span><span id="rpc_x_byte_count_too_small"></span>**CONTAGEM DE BYTE DE RPC \_ X \_ MUITO \_ \_ \_ PEQUENA**
 </dt> <dd> <dl> <dt>
 
 1782 (0x6F6)
@@ -1055,12 +1055,12 @@ O valor da enumeração está fora do intervalo.
 
 
 
-A contagem de bytes é muito pequena.
+A contagem de byte é muito pequena.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_X_BAD_STUB_DATA"></span><span id="rpc_x_bad_stub_data"></span>**\_dados de \_ stub inválidos RPC X \_ \_**
+<span id="RPC_X_BAD_STUB_DATA"></span><span id="rpc_x_bad_stub_data"></span>**RPC \_ X DADOS DE \_ \_ STUB \_ RUINS**
 </dt> <dd> <dl> <dt>
 
 1783 (0x6F7)
@@ -1068,12 +1068,12 @@ A contagem de bytes é muito pequena.
 
 
 
-O stub recebeu dados inválidos.
+O stub recebeu dados ruins.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_USER_BUFFER"></span><span id="error_invalid_user_buffer"></span>**ERRO \_ de \_ buffer de usuário inválido \_**
+<span id="ERROR_INVALID_USER_BUFFER"></span><span id="error_invalid_user_buffer"></span>**ERRO \_ BUFFER DE USUÁRIO \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 1784 (0x6F8)
@@ -1086,7 +1086,7 @@ O buffer de usuário fornecido não é válido para a operação solicitada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNRECOGNIZED_MEDIA"></span><span id="error_unrecognized_media"></span>**ERRO de \_ mídia não reconhecida \_**
+<span id="ERROR_UNRECOGNIZED_MEDIA"></span><span id="error_unrecognized_media"></span>**ERRO \_ DE MÍDIA NÃO \_ INTERNA**
 </dt> <dd> <dl> <dt>
 
 1785 (0x6F9)
@@ -1094,12 +1094,12 @@ O buffer de usuário fornecido não é válido para a operação solicitada.
 
 
 
-A mídia de disco não é reconhecida. Ele não pode ser formatado.
+A mídia de disco não é reconhecida. Ele pode não ser formatado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_TRUST_LSA_SECRET"></span><span id="error_no_trust_lsa_secret"></span>**ERRO \_ sem \_ confiança \_ no \_ segredo LSA**
+<span id="ERROR_NO_TRUST_LSA_SECRET"></span><span id="error_no_trust_lsa_secret"></span>**ERRO \_ NENHUM \_ SEGREDO \_ LSA \_ DE CONFIANÇA**
 </dt> <dd> <dl> <dt>
 
 1786 (0x6FA)
@@ -1112,7 +1112,7 @@ A estação de trabalho não tem um segredo de confiança.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_TRUST_SAM_ACCOUNT"></span><span id="error_no_trust_sam_account"></span>**ERRO \_ sem \_ confiança \_ na \_ conta Sam**
+<span id="ERROR_NO_TRUST_SAM_ACCOUNT"></span><span id="error_no_trust_sam_account"></span>**ERRO \_ NENHUMA CONTA SAM DE \_ \_ \_ CONFIANÇA**
 </dt> <dd> <dl> <dt>
 
 1787 (0x6FB)
@@ -1125,7 +1125,7 @@ O banco de dados de segurança no servidor não tem uma conta de computador para
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRUSTED_DOMAIN_FAILURE"></span><span id="error_trusted_domain_failure"></span>**ERRO \_ de \_ falha de domínio confiável \_**
+<span id="ERROR_TRUSTED_DOMAIN_FAILURE"></span><span id="error_trusted_domain_failure"></span>**ERRO \_ FALHA DE DOMÍNIO \_ \_ CONFIÁVEL**
 </dt> <dd> <dl> <dt>
 
 1788 (0x6FC)
@@ -1138,7 +1138,7 @@ Falha na relação de confiança entre o domínio primário e o domínio confiá
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRUSTED_RELATIONSHIP_FAILURE"></span><span id="error_trusted_relationship_failure"></span>**ERRO \_ de \_ falha de relação confiável \_**
+<span id="ERROR_TRUSTED_RELATIONSHIP_FAILURE"></span><span id="error_trusted_relationship_failure"></span>**FALHA \_ DE RELAÇÃO CONFIÁVEL DE \_ \_ ERRO**
 </dt> <dd> <dl> <dt>
 
 1789 (0x6FD)
@@ -1151,7 +1151,7 @@ A relação de confiança entre esta estação de trabalho e o domínio primári
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRUST_FAILURE"></span><span id="error_trust_failure"></span>**\_falha de confiança de erro \_**
+<span id="ERROR_TRUST_FAILURE"></span><span id="error_trust_failure"></span>**FALHA \_ DE CONFIANÇA DE \_ ERRO**
 </dt> <dd> <dl> <dt>
 
 1790 (0x6FE)
@@ -1164,7 +1164,7 @@ Falha no logon de rede.
 
 </dt> </dl> </dd> <dt>
 
-<span id="RPC_S_CALL_IN_PROGRESS"></span><span id="rpc_s_call_in_progress"></span>**\_chamada RPC \_ S \_ em \_ andamento**
+<span id="RPC_S_CALL_IN_PROGRESS"></span><span id="rpc_s_call_in_progress"></span>**CHAMADA \_ RPC S \_ \_ EM \_ ANDAMENTO**
 </dt> <dd> <dl> <dt>
 
 1791 (0x6FF)
@@ -1172,12 +1172,12 @@ Falha no logon de rede.
 
 
 
-Uma chamada de procedimento remoto já está em andamento para este thread.
+Uma chamada de procedimento remoto já está em andamento para esse thread.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NETLOGON_NOT_STARTED"></span><span id="error_netlogon_not_started"></span>**ERRO \_ Netlogon \_ não \_ iniciado**
+<span id="ERROR_NETLOGON_NOT_STARTED"></span><span id="error_netlogon_not_started"></span>**ERRO \_ NETLOGON \_ NÃO \_ INICIADO**
 </dt> <dd> <dl> <dt>
 
 1792 (0x700)
@@ -1190,7 +1190,7 @@ Foi feita uma tentativa de logon, mas o serviço de logon de rede não foi inici
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ACCOUNT_EXPIRED"></span><span id="error_account_expired"></span>**conta de erro \_ \_ expirada**
+<span id="ERROR_ACCOUNT_EXPIRED"></span><span id="error_account_expired"></span>**CONTA \_ DE ERRO \_ EXPIRADA**
 </dt> <dd> <dl> <dt>
 
 1793 (0x701)
@@ -1203,7 +1203,7 @@ A conta do usuário expirou.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_REDIRECTOR_HAS_OPEN_HANDLES"></span><span id="error_redirector_has_open_handles"></span>**o \_ REdirecionador de erros \_ tem \_ \_ identificadores abertos**
+<span id="ERROR_REDIRECTOR_HAS_OPEN_HANDLES"></span><span id="error_redirector_has_open_handles"></span>**REDIRECIONADOR \_ DE \_ ERRO TEM \_ \_ ALÇAS ABERTAS**
 </dt> <dd> <dl> <dt>
 
 1794 (0x702)
@@ -1216,7 +1216,7 @@ O redirecionador está em uso e não pode ser descarregado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRINTER_DRIVER_ALREADY_INSTALLED"></span><span id="error_printer_driver_already_installed"></span>**o \_ Driver de impressora de erro \_ \_ já está \_ instalado**
+<span id="ERROR_PRINTER_DRIVER_ALREADY_INSTALLED"></span><span id="error_printer_driver_already_installed"></span>**DRIVER \_ DE IMPRESSORA DE ERRO JÁ \_ \_ \_ INSTALADO**
 </dt> <dd> <dl> <dt>
 
 1795 (0x703)
@@ -1229,7 +1229,7 @@ O driver de impressora especificado já está instalado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNKNOWN_PORT"></span><span id="error_unknown_port"></span>**porta de erro \_ desconhecida \_**
+<span id="ERROR_UNKNOWN_PORT"></span><span id="error_unknown_port"></span>**ERRO \_ PORTA \_ DESCONHECIDA**
 </dt> <dd> <dl> <dt>
 
 1796 (0x704)
@@ -1242,7 +1242,7 @@ A porta especificada é desconhecida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNKNOWN_PRINTER_DRIVER"></span><span id="error_unknown_printer_driver"></span>**ERRO \_ de \_ Driver de impressora desconhecido \_**
+<span id="ERROR_UNKNOWN_PRINTER_DRIVER"></span><span id="error_unknown_printer_driver"></span>**ERRO \_ DRIVER DE IMPRESSORA \_ \_ DESCONHECIDO**
 </dt> <dd> <dl> <dt>
 
 1797 (0x705)
@@ -1255,7 +1255,7 @@ O driver de impressora é desconhecido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNKNOWN_PRINTPROCESSOR"></span><span id="error_unknown_printprocessor"></span>**ERRO \_ de \_ multiprocessador desconhecido**
+<span id="ERROR_UNKNOWN_PRINTPROCESSOR"></span><span id="error_unknown_printprocessor"></span>**ERRO \_ \_ PRINTPROCESSOR DESCONHECIDO**
 </dt> <dd> <dl> <dt>
 
 1798 (0x706)
@@ -1268,7 +1268,7 @@ O processador de impressão é desconhecido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_SEPARATOR_FILE"></span><span id="error_invalid_separator_file"></span>**ERRO \_ de \_ arquivo separador inválido \_**
+<span id="ERROR_INVALID_SEPARATOR_FILE"></span><span id="error_invalid_separator_file"></span>**ERRO \_ ARQUIVO \_ SEPARADOR \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 1799 (0x707)
@@ -1588,7 +1588,7 @@ Nenhum nome de entidade de segurança registrado.
 
 
 
-O erro especificado não é um código de erro de RPC do Windows válido.
+o erro especificado não é um código de erro de RPC de Windows válido.
 
 
 </dt> </dl> </dd> <dt>
@@ -2438,7 +2438,7 @@ O espaço de cores especificado é inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ICM_NOT_ENABLED"></span><span id="error_icm_not_enabled"></span>**ERRO \_ ICM \_ não \_ habilitado**
+<span id="ERROR_ICM_NOT_ENABLED"></span><span id="error_icm_not_enabled"></span>**erro \_ ICM \_ não \_ habilitado**
 </dt> <dd> <dl> <dt>
 
 2018 (0x7E2)
@@ -2451,7 +2451,7 @@ O gerenciamento de cores de imagem não está habilitado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DELETING_ICM_XFORM"></span><span id="error_deleting_icm_xform"></span>**ERRO ao \_ excluir o \_ XFORM de ICM \_**
+<span id="ERROR_DELETING_ICM_XFORM"></span><span id="error_deleting_icm_xform"></span>**erro ao \_ excluir \_ ICM \_ XFORM**
 </dt> <dd> <dl> <dt>
 
 2019 (0x7E3)
@@ -2939,8 +2939,8 @@ Emita novamente a operação especificada como uma operação de e/s em cache.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>WinError. h</dt> </dl> |
 
 

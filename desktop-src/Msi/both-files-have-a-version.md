@@ -1,15 +1,15 @@
 ---
-description: Se ambos os arquivos tiverem um número de versão, o Windows Installer usará a lógica ilustrada pelo seguinte diagrama de fluxo para determinar se todos os arquivos instalados pertencentes ao componente devem ser substituídos.
+description: se ambos os arquivos tiverem um número de versão, o Windows Installer usará a lógica ilustrada pelo seguinte diagrama de fluxo para determinar se todos os arquivos instalados pertencentes ao componente devem ser substituídos.
 ms.assetid: c4c8a23b-e1c2-4c96-b708-7cbcbcab4cd4
 title: Ambos os arquivos têm uma versão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ddb52c7333e5455d40475c9f845643535b271d0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f1338a93b4a45094a9a5951c3c59def15affde96dbbe74f3b134ba9dd7532092
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118380741"
 ---
 # <a name="both-files-have-a-version"></a>Ambos os arquivos têm uma versão
 

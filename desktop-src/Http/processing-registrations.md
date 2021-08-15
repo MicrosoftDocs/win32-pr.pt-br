@@ -4,12 +4,12 @@ description: As APIs do servidor HTTP usam o banco de dados de roteamento para a
 ms.assetid: d72aa213-b8e8-4fe9-b98c-41114d2cea56
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c1e02d2511d9967454d5cbddd93b2c0380d1172
-ms.sourcegitcommit: 73417d55867c804274a55abe5ca71bcba7006119
+ms.openlocfilehash: 74454d888cccf083e27fc9067c8a5485e286b4f55df4c5c18f2b2e490dc9db39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104454443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118393839"
 ---
 # <a name="processing-registrations"></a>Processando registros
 
@@ -34,9 +34,9 @@ Os exemplos a seguir ilustram o processo para instalar um registro no banco de d
 
 A verificação de acesso para o registro não inclui verificações de privilégios de delegação. Não há verificações de acesso com base em reservas (consulte [**HttpRemoveUrl**](/windows/desktop/api/Http/nf-http-httpremoveurl)). O único requisito para excluir um registro dos EUA que o processo de chamada deve ter criado o registro.
 
- 
+ 
 
- 
+ 
 
 
 

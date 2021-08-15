@@ -1,7 +1,7 @@
 ---
-description: Identificador para o contexto do dispositivo da janela.
+description: Lidar com o contexto do dispositivo da janela.
 ms.assetid: a9fa4340-f20f-44a4-b553-052fe5c3e0e6
-title: 'Membro CBaseWindow:: m_hdc (Winutil. h)'
+title: Membro CBaseWindow::m_hdc (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1e6bb2661af96ab4c32f97d56856c5420dab4c0a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0cd5f994f43a1b96be2ce19b0e7d38b0416286e4d39b4f89a425e5468737de47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117822491"
 ---
-# <a name="cbasewindowm_hdc-member"></a>Membro HDC CBaseWindow:: m \_
+# <a name="cbasewindowm_hdc-member"></a>Membro CBaseWindow::m \_ hdc
 
-Identificador para o contexto do dispositivo da janela.
+Lidar com o contexto do dispositivo da janela.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,8 +42,8 @@ HDC m_hdc;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

@@ -1,24 +1,24 @@
 ---
-title: GUIDs preteridos
-description: Este tópico descreve os GUIDs que são usados com a função UiaLookupId.
+title: GUIDs preterido
+description: Este tópico descreve os GUIDs usados com a função UiaLookupId.
 ms.assetid: b8e9e33c-9781-4f50-bbb7-a9950409f2e6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c5203f63fa3f05e1d25e5623815101cd48ada34
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 361341b7a2c58d8e2ee2842bd0d9d7f50ed0680aa9845f84b7b70b905976f5d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118324717"
 ---
-# <a name="deprecated-guids"></a>GUIDs preteridos
+# <a name="deprecated-guids"></a>GUIDs preterido
 
-Este tópico descreve os GUIDs que são usados com a função [**UiaLookupId**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uialookupid) .
+Este tópico descreve os GUIDs usados com a [**função UiaLookupId.**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uialookupid)
 
 > [!Note]  
-> A função [**UiaLookupId**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uialookupid) e os GUIDs descritos neste tópico foram preteridos. Em vez disso, os aplicativos devem usar os identificadores descritos nas seções a seguir:
+> A [**função UiaLookupId**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uialookupid) e os GUIDs descritos neste tópico foram preterido. Em vez disso, os aplicativos devem usar os identificadores descritos nas seções a seguir:
 
- 
+ 
 
 -   [Identificadores de padrão de controle](uiauto-controlpattern-ids.md)
 -   [Identificadores de tipo de controle](uiauto-controltype-ids.md)
@@ -28,230 +28,230 @@ Este tópico descreve os GUIDs que são usados com a função [**UiaLookupId**](
 
 Esta seção lista os seguintes GUIDs:
 
--   [GUIDs de PATTERNid](#patternid-guids)
--   [GUIDs de CONTROLTYPEid](#controltypeid-guids)
--   [GUIDs EVENTID](#eventid-guids)
--   [GUIDs de PROPERTYid](#propertyid-guids)
--   [GUIDs textattributeid](#textattributeid-guids)
+-   [PATTERNID GUIDs](#patternid-guids)
+-   [CONTROLTYPEID GUIDs](#controltypeid-guids)
+-   [EVENTID GUIDs](#eventid-guids)
+-   [PROPERTYID GUIDs](#propertyid-guids)
+-   [TEXTATTRIBUTEID GUIDs](#textattributeid-guids)
 
-## <a name="patternid-guids"></a>GUIDs de PATTERNid
+## <a name="patternid-guids"></a>PATTERNID GUIDs
 
-Os GUIDs de PATTERNid que representam padrões de controle na função [**UiaLookupId**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uialookupid) são listados na tabela a seguir.
+Os GUIDs PATTERNID que representam padrões de controle na [**função UiaLookupId**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uialookupid) são listados na tabela a seguir.
 
 
 
-| GUIDs de PATTERNid                  |
+| PATTERNID GUIDs                  |
 |----------------------------------|
-| \_GUID do padrão de anotação \_        |
-| \_GUID do padrão Dock \_              |
-| Arrastar \_ GUID do padrão \_              |
-| \_GUID do padrão de DropTarget \_        |
-| \_GUID do padrão de ExpandCollpase \_    |
-| \_GUID do padrão de grade \_              |
-| \_GUID do padrão GridItem \_          |
-| Invocar \_ GUID de padrão \_            |
-| GUID de padrão do contêiner \_ \_     |
-| \_GUID do padrão de LegacyIAccessible \_ |
-| \_GUID do padrão de ObjectModel \_       |
-| GUID do \_ padrão RangeValue \_        |
-| \_GUID do padrão de rolagem \_            |
-| \_GUID do padrão de ScrollItem \_        |
-| Padrão de seleção \_               |
-| \_GUID do padrão de SelectionItem \_     |
-| \_GUID do padrão de planilha \_       |
-| \_GUID do padrão de SpreadsheetItem \_   |
-| \_GUID do padrão de SynchronizedInput \_ |
-| \_GUID do padrão de estilos \_            |
-| \_GUID de padrão de tabela \_             |
-| \_GUID do padrão de TableItem \_         |
-| GUID do \_ padrão Textchild \_         |
-| \_GUID do padrão de texto \_              |
-| \_GUID de Pattern2 de texto \_             |
-| Alternar \_ GUID do padrão \_            |
-| Padrão de transformação \_               |
-| \_Pattern2 \_ GUID de transformação        |
-| \_GUID do padrão de valor \_             |
-| \_GUID do padrão de VirtualizedItem \_   |
-| \_GUID de padrão de janela \_            |
+| GUID do padrão \_ de \_ anotação        |
+| \_GUID do padrão de \_ encaixe              |
+| Arrastar \_ GUID do \_ padrão              |
+| GUID do padrão DropTarget \_ \_        |
+| GUID do padrão ExpandCollpase \_ \_    |
+| \_GUID do padrão de \_ grade              |
+| GUID do padrão GridItem \_ \_          |
+| Invocar \_ GUID de \_ Padrão            |
+| GUID do padrão ItemContainer \_ \_     |
+| GUID de padrão LegacyIAccessible \_ \_ |
+| GUID do padrão ObjectModel \_ \_       |
+| GUID do padrão RangeValue \_ \_        |
+| \_GUID do padrão de \_ rolagem            |
+| GUID do padrão ScrollItem \_ \_        |
+| Padrão de \_ seleção               |
+| GUID do padrão SelectionItem \_ \_     |
+| \_GUID do padrão de \_ planilha       |
+| GUID de Padrão de SpreadsheetItem \_ \_   |
+| GUID do padrão SynchronizedInput \_ \_ |
+| \_GUID de Padrão de \_ Estilos            |
+| \_GUID do padrão de \_ tabela             |
+| GUID do padrão TableItem \_ \_         |
+| GUID do padrão TextChild \_ \_         |
+| \_GUID do padrão de \_ texto              |
+| \_GUID padrão de \_ texto2             |
+| GUID do \_ padrão de \_ alternância            |
+| Padrão de \_ transformação               |
+| Transform \_ Pattern2 \_ GUID        |
+| \_GUID do padrão de \_ valor             |
+| GUID do padrão VirtualizedItem \_ \_   |
+| \_GUID do padrão de \_ janela            |
 
 
 
- 
+ 
 
-## <a name="controltypeid-guids"></a>GUIDs de CONTROLTYPEid
+## <a name="controltypeid-guids"></a>CONTROLTYPEID GUIDs
 
-Os GUIDs de CONTROLTYPEid que representam tipos de controle na função [**UiaLookupId**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uialookupid) são listados na tabela a seguir.
+Os GUIDs CONTROLTYPEID que representam tipos de controle na [**função UiaLookupId**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uialookupid) são listados na tabela a seguir.
 
 
 
-| GUIDs de CONTROLTYPEid        |
+| CONTROLTYPEID GUIDs        |
 |----------------------------|
-| \_GUID de controle de botão \_      |
-| \_GUID de controle de calendário \_    |
-| \_GUID de controle da caixa de seleção \_    |
-| \_GUID de controle da ComboBox \_    |
-| \_GUID de controle personalizado \_      |
-| \_GUID de controle DataGrid \_    |
-| \_GUID de controle de DataItem \_    |
-| \_GUID de controle de documento \_    |
-| Editar \_ GUID de controle \_        |
-| \_GUID de controle de grupo \_       |
-| \_GUID de controle de cabeçalho \_      |
-| \_GUID de controle HeaderItem \_  |
-| \_GUID de controle de hiperlink \_   |
-| \_GUID de controle de imagem \_       |
-| \_GUID de controle de lista \_        |
-| \_GUID de controle de ListItem \_    |
-| \_GUID de controle de menu \_        |
-| \_GUID de controle de BarraDeMenu \_     |
-| \_GUID de controle MenuItem \_    |
-| \_GUID de controle do painel \_        |
-| \_GUID de controle ProgressBar \_ |
-| \_GUID de controle RadioButton \_ |
-| \_GUID de controle do ScrollBar \_   |
-| \_GUID de controle Separator \_   |
-| \_GUID de controle do controle deslizante \_      |
-| \_GUID de controle Spinner \_     |
-| \_GUID do controle SplitButton \_ |
-| \_GUID de controle StatusBar \_   |
-| \_GUID de controle de guia \_         |
-| \_GUID de controle TabItem \_     |
-| \_GUID de controle de tabela \_       |
-| \_GUID de controle de texto \_        |
-| \_GUID de controle Thumb \_       |
-| \_GUID de controle do TitleBar \_    |
-| \_GUID de controle da barra de ferramentas \_     |
-| \_GUID de controle de dica de ferramenta \_     |
-| \_GUID de controle de árvore \_        |
-| \_GUID de controle TreeItem \_    |
-| \_GUID de controle de janela \_      |
+| \_GUID de Controle de \_ Botão      |
+| \_GUID de Controle de \_ Calendário    |
+| GUID de controle \_ CheckBox \_    |
+| GUID de controle ComboBox \_ \_    |
+| \_GUID de Controle \_ Personalizado      |
+| GUID do controle DataGrid \_ \_    |
+| GUID de controle DataItem \_ \_    |
+| GUID de \_ Controle de \_ Documento    |
+| Editar \_ GUID de \_ Controle        |
+| \_GUID de Controle de \_ Grupo       |
+| GUID de Controle \_ de \_ Header      |
+| GUID de controle HeaderItem \_ \_  |
+| GUID de Controle \_ de \_ Hiperlink   |
+| GUID de \_ Controle de \_ Imagem       |
+| \_GUID de Controle de \_ Lista        |
+| GUID de controle ListItem \_ \_    |
+| \_GUID de Controle de \_ Menu        |
+| GUID de controle \_ MenuBar \_     |
+| GUID de controle MenuItem \_ \_    |
+| GUID de Controle \_ de \_ Painel        |
+| GUID de controle \_ ProgressBar \_ |
+| GUID de controle RadioButton \_ \_ |
+| GUID de controle \_ ScrollBar \_   |
+| GUID de \_ Controle \_ separador   |
+| GUID de controle \_ \_ deslizante      |
+| GUID de controle \_ de \_ rotação     |
+| GUID de controle SplitButton \_ \_ |
+| GUID do controle StatusBar \_ \_   |
+| \_GUID de Controle de \_ Tabulação         |
+| GUID de controle TabItem \_ \_     |
+| \_GUID de Controle de \_ Tabela       |
+| \_GUID de Controle de \_ Texto        |
+| \_GUID de controle de \_ miniatura       |
+| GUID de controle TitleBar \_ \_    |
+| GUID de Controle da Barra \_ de \_ Ferramentas     |
+| GUID de Controle \_ de Dica de \_ Ferramenta     |
+| GUID de \_ Controle de \_ Árvore        |
+| GUID de controle TreeItem \_ \_    |
+| GUID de \_ Controle de \_ Janela      |
 
 
 
- 
+ 
 
-## <a name="eventid-guids"></a>GUIDs EVENTID
+## <a name="eventid-guids"></a>EVENTID GUIDs
 
-Os GUIDs EVENTID que representam eventos de automação da interface do usuário da Microsoft na função [**UiaLookupId**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uialookupid) estão listados na tabela a seguir.
+Os GUIDs eventid que representam Automação da Interface do Usuário eventos da Microsoft na [**função UiaLookupId**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uialookupid) são listados na tabela a seguir.
 
 
 
-| GUIDs EVENTID                                                |
+| EVENTID GUIDs                                                |
 |--------------------------------------------------------------|
-| \_GUID do evento AsyncContentLoaded \_                              |
-| \_GUID do evento AutomationFocusChanged \_                          |
-| \_GUID do evento AutomationPropertyChanged \_                       |
-| Arrastar \_ o \_ GUID do evento DragCancel \_                                |
-| Arrastar \_ o \_ GUID do evento DragComplete \_                              |
-| Arrastar \_ o \_ GUID do evento DragStart \_                                 |
-| \_GUID de \_ evento DropTarget DragEnter \_                           |
-| \_GUID de \_ evento DropTarget DragLeave \_                           |
-| \_GUID do \_ evento DropTarget Descartado \_                             |
-| \_GUID do evento HostedFragmentRootsInvalidated \_                  |
-| \_GUID do evento InputDiscarded \_                                  |
-| \_GUID do evento InputReachedOtherElement \_                        |
-| \_GUID do evento InputReachedTarget \_                              |
-| Invocar \_ GUID de evento invocado \_ \_                                 |
-| \_GUID do evento LayoutInvalidated \_                               |
-| \_GUID do evento LiveRegionChanged \_                               |
-| \_GUID do evento MenuClosed \_                                      |
-| \_GUID do evento MenuModeEnd \_                                     |
-| \_GUID do evento MenuModeStart \_                                   |
-| \_GUID do evento MenuOpened \_                                      |
-| \_GUID do \_ evento \_ InvalidatedEvent de seleção                     |
-| \_GUID de \_ evento SelectionItem ElementAddedToSelectionEvent \_     |
-| \_GUID de \_ evento SelectionItem ElementRemovedFromSelectionEvent \_ |
-| \_GUID de \_ evento SelectionItem ElementSelectedEvent \_             |
-| GUID do \_ evento structurechanged \_                                |
-| \_GUID do evento SystemAlert \_                                     |
-| \_GUID do \_ evento \_ TextChangedEvent de texto                          |
-| \_GUID do \_ evento \_ TextSelectionChangedEvent de texto                 |
-| \_GUID do evento ToolTipClosed \_                                   |
-| \_GUID do \_ evento Window WindowOpened \_                            |
-| \_GUID do evento ToolTipOpened \_                                   |
-| \_GUID do \_ evento Window WindowClosed \_                            |
+| GUID do evento AsyncContentLoaded \_ \_                              |
+| GUID de Evento AutomationFocusChanged \_ \_                          |
+| GUID de Evento AutomationPropertyChanged \_ \_                       |
+| Arrastar \_ GUID do evento DragCancel \_ \_                                |
+| Arrastar \_ GUID do evento DragComplete \_ \_                              |
+| \_GUID do evento DragStart \_ \_                                 |
+| GUID do evento DropTarget \_ DragEnter \_ \_                           |
+| GUID de Evento DropTarget \_ DragLeave \_ \_                           |
+| GUID do evento DropTarget \_ \_ dropped \_                             |
+| GUID de Evento HostedFragmentRootsInvalidated \_ \_                  |
+| GUID de Evento \_ InputDiscarded \_                                  |
+| GUID do evento InputReachedOtherElement \_ \_                        |
+| GUID do evento InputReachedTarget \_ \_                              |
+| Invocar \_ GUID de Evento \_ \_ Invocado                                 |
+| GUID de Evento LayoutInvalidated \_ \_                               |
+| GUID do evento LiveRegionChanged \_ \_                               |
+| MENU GUID de \_ Evento \_ Fechado                                      |
+| GUID do evento MenuModeEnd \_ \_                                     |
+| GUID do evento MenuModeStart \_ \_                                   |
+| Menu GUID de \_ Evento \_ Aberto                                      |
+| \_GUID do evento Selection InvalidatedEvent \_ \_                     |
+| Guid de Evento \_ SelectionItem ElementAddedToSelectionEvent \_ \_     |
+| Elemento \_ SelectionItemRemovedFromSelectionEvent \_ \_ Event GUID |
+| Guid de Evento SelectionItem \_ ElementSelectedEvent \_ \_             |
+| GUID do evento StructureChanged \_ \_                                |
+| GUID do evento SystemAlert \_ \_                                     |
+| \_GUID do evento TextChangedEvent \_ \_                          |
+| \_GUID do evento Text TextSelectionChangedEvent \_ \_                 |
+| GUID de Evento ToolTipClosed \_ \_                                   |
+| Janela \_ Guid de Evento \_ \_ Aberto                            |
+| GUID de Evento ToolTipOpened \_ \_                                   |
+| Guid \_ de Evento WindowClosed \_ \_                            |
 
 
 
- 
+ 
 
-## <a name="propertyid-guids"></a>GUIDs de PROPERTYid
+## <a name="propertyid-guids"></a>PROPERTYID GUIDs
 
-Os GUIDs de PROPERTYid que representam as propriedades de automação da interface do usuário na função [**UiaLookupId**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uialookupid) são listados na tabela a seguir.
+Os GUIDs PROPERTYID que Automação da Interface do Usuário propriedades na [**função UiaLookupId**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uialookupid) são listados na tabela a seguir.
 
 
 
-| GUIDs de PROPERTYid                                    |
+| PROPERTYID GUIDs                                    |
 |-----------------------------------------------------|
-| \_GUID da propriedade AcceleratorKey \_                      |
-| \_GUID da propriedade AccessKey \_                           |
-| \_GUID da \_ propriedade \_ AnnotationTypeId da anotação        |
-| \_GUID da \_ propriedade \_ AnnotationTypeName da anotação      |
-| \_GUID da \_ Propriedade do autor da anotação \_                  |
-| \_GUID da \_ propriedade \_ DateTime da anotação                |
-| \_GUID da \_ propriedade de destino da anotação \_                  |
-| GUID da \_ Propriedade AriaProperties \_                      |
-| \_GUID da propriedade AriaRole \_                            |
-| \_GUID da propriedade AutomationId \_                        |
-| \_GUID da propriedade BoundingRectangle \_                   |
-| \_GUID da Propriedade ClassName \_                           |
-| \_GUID da propriedade ClickablePoint \_                      |
-| \_GUID da propriedade ControllerFor \_                       |
-| \_GUID da propriedade ControlType \_                         |
-| \_GUID de propriedade de cultura \_                             |
-| \_GUID da propriedade DescribedBy \_                         |
-| Encaixar \_ \_ GUID da propriedade DockPosition \_                  |
-| Arrastar \_ \_ GUID da propriedade DropEffect \_                    |
-| Arrastar \_ \_ GUID da propriedade DropEffects \_                   |
-| Arrastar \_ \_ GUID da propriedade GrabbedItems \_                  |
-| Arrastar \_ GUID de propriedade Iscapturadod \_ \_                     |
-| \_GUID da \_ Propriedade DropTarget DropTargetEffect \_        |
-| \_GUID da \_ Propriedade DropTarget DropTargetEffects \_       |
-| \_GUID da \_ Propriedade ExpandCollapse ExpandCollapseState \_ |
-| GUID da \_ Propriedade flowto \_                             |
-| GUID da \_ Propriedade FrameworkId \_                         |
-| \_GUID da \_ propriedade \_ ColumnCount da grade                   |
-| \_GUID da \_ propriedade \_ RowCount de grade                      |
-| \_GUID de \_ propriedade de coluna GridItem \_                    |
-| \_GUID da \_ propriedade \_ ColumnSpan de GridItem                |
-| \_GUID da \_ propriedade \_ pai GridItem                    |
-| \_GUID da \_ propriedade da linha GridItem \_                       |
-| \_GUID de \_ propriedade de RowSpan de GridItem \_                   |
-| \_GUID da propriedade HasKeyboardFocus \_                    |
-| \_GUID da propriedade HelpText \_                            |
-| \_GUID da propriedade IsAnnotationPatternAvailable \_        |
-| GUID da propriedade iscontence \_ \_                    |
+| GUID da propriedade AcceleratorKey \_ \_                      |
+| GUID da propriedade AccessKey \_ \_                           |
+| GUID da propriedade \_ AnnotationTypeId \_ \_        |
+| GUID da propriedade \_ AnnotationTypeName \_ \_      |
+| GUID de propriedade \_ do autor \_ da \_ anotação                  |
+| GUID da propriedade \_ DateTime \_ de \_ anotação                |
+| GUID da propriedade \_ de destino \_ de \_ anotação                  |
+| GUID da propriedade AriaProperties \_ \_                      |
+| GUID da propriedade AriaRole \_ \_                            |
+| GUID da propriedade AutomationId \_ \_                        |
+| GUID da propriedade BoundingRectangle \_ \_                   |
+| GUID da propriedade ClassName \_ \_                           |
+| GUID da propriedade ClickablePoint \_ \_                      |
+| GUID da propriedade ControllerFor \_ \_                       |
+| GUID da propriedade ControlType \_ \_                         |
+| \_GUID da propriedade \_ Culture                             |
+| GUID da propriedade DescribedBy \_ \_                         |
+| \_GUID da propriedade DockPosition \_ \_                  |
+| Arrastar o GUID da \_ propriedade DropEffect \_ \_                    |
+| Arrastar o GUID da \_ propriedade DropEffects \_ \_                   |
+| Arrastar \_ GUID da propriedade Deditems \_ \_                  |
+| Arrastar \_ GUID da propriedade IsGrabbed \_ \_                     |
+| GUID da propriedade \_ DropTargetEffect \_ \_        |
+| GUID da Propriedade \_ DropTarget DropTargetEffects \_ \_       |
+| GUID da propriedade ExpandCollapse \_ ExpandCollapseState \_ \_ |
+| GUID da propriedade FlowsTo \_ \_                             |
+| GUID da propriedade FrameworkId \_ \_                         |
+| \_GUID da propriedade ColumnCount de \_ \_ Grade                   |
+| \_GUID da propriedade RowCount da \_ \_ Grade                      |
+| GUID da propriedade de coluna GridItem \_ \_ \_                    |
+| GUID da propriedade GridItem \_ ColumnSpan \_ \_                |
+| GUID da propriedade pai GridItem \_ \_ \_                    |
+| GUID da propriedade de linha GridItem \_ \_ \_                       |
+| GUID da propriedade GridItem \_ RowSpan \_ \_                   |
+| GUID da propriedade HasKeyboardFocus \_ \_                    |
+| GUID da propriedade HelpText \_ \_                            |
+| GUID da propriedade IsAnnotationPatternAvailable \_ \_        |
+| GUID da propriedade IsContentElement \_ \_                    |
 | GUID da propriedade IsControlElement \_ \_                    |
-| \_GUID da propriedade IsDataValidForForm \_                  |
-| \_GUID da propriedade IsDockPatternAvailable \_              |
-| \_GUID da propriedade IsDragPatternAvailable \_              |
-| \_GUID da propriedade IsDropTargetPatternAvailable \_        |
-| \_GUID da propriedade IsEnabled \_                           |
-| \_GUID da propriedade IsExpandCollapsePatternAvailable \_    |
-| \_GUID da propriedade IsGridItemPatternAvailable \_          |
-| \_GUID da propriedade IsGridPatternAvailable \_              |
-| \_GUID da propriedade IsInvokePatternAvailable \_            |
-| \_GUID da propriedade IsItemContainerPatternAvailable \_     |
-| \_GUID da Propriedade IsKeyboardFocusable \_                 |
-| \_GUID da propriedade IsLegacyIAccessiblePatternAvailable \_ |
-| \_GUID da propriedade IsMultipleViewPatternAvailable \_      |
-| \_GUID da propriedade IsObjectModelPatternAvailable \_       |
-| \_GUID da propriedade IsOffscreen \_                         |
-| GUID da \_ Propriedade IsPassword \_                          |
-| \_GUID da propriedade IsRangeValuePatternAvailable \_        |
-| \_GUID da propriedade IsRequiredForForm \_                   |
-| \_GUID da propriedade IsScrollItemPatternAvailable \_        |
-| \_GUID da propriedade IsScrollPatternAvailable \_            |
-| \_GUID da propriedade IsSelectionItemPatternAvailable \_     |
-| \_GUID da propriedade IsSelectionPatternAvailable \_         |
-| \_GUID da propriedade IsSpreadsheetPatternAvailable \_       |
-| \_GUID da propriedade IsSpreadsheetItemPatternAvailable \_   |
-| \_GUID da propriedade IsStylesPatternAvailable \_            |
-| \_GUID da propriedade IsSynchronizedInputPatternAvailable \_ |
-| \_GUID da propriedade IsTableItemPatternAvailable \_         |
-| \_GUID da propriedade IsTablePatternAvailable \_             |
-| \_GUID da propriedade IsTextChildPatternAvailable \_         |
-| \_GUID da propriedade IsTextPatternAvailable \_              |
+| GUID da propriedade IsDataValidForForm \_ \_                  |
+| GUID da propriedade IsDockPatternAvailable \_ \_              |
+| GUID da propriedade IsDragPatternAvailable \_ \_              |
+| GUID da propriedade IsDropTargetPatternAvailable \_ \_        |
+| GUID da propriedade IsEnabled \_ \_                           |
+| GUID da propriedade IsExpandCollapsePatternAvailable \_ \_    |
+| GUID da propriedade IsGridItemPatternAvailable \_ \_          |
+| GUID da propriedade IsGridPatternAvailable \_ \_              |
+| GUID da propriedade IsInvokePatternAvailable \_ \_            |
+| GUID da propriedade IsItemContainerPatternAvailable \_ \_     |
+| GUID da propriedade IsKeyboardFocusable \_ \_                 |
+| GUID da propriedade IsLegacyIAccessiblePatternAvailable \_ \_ |
+| GUID da propriedade IsMultipleViewPatternAvailable \_ \_      |
+| GUID da propriedade IsObjectModelPatternAvailable \_ \_       |
+| GUID da propriedade IsOffscreen \_ \_                         |
+| GUID da propriedade IsPassword \_ \_                          |
+| GUID da propriedade IsRangeValuePatternAvailable \_ \_        |
+| GUID da propriedade IsRequiredForForm \_ \_                   |
+| GUID da propriedade IsScrollItemPatternAvailable \_ \_        |
+| GUID da propriedade IsScrollPatternAvailable \_ \_            |
+| GUID da propriedade IsSelectionItemPatternAvailable \_ \_     |
+| GUID da propriedade IsSelectionPatternAvailable \_ \_         |
+| GUID da propriedade IsSpreadsheetPatternAvailable \_ \_       |
+| GUID da propriedade IsSpreadsheetItemPatternAvailable \_ \_   |
+| GUID da propriedade IsStylesPatternAvailable \_ \_            |
+| GUID da propriedade IsSynchronizedInputPatternAvailable \_ \_ |
+| GUID da propriedade IsTableItemPatternAvailable \_ \_         |
+| GUID da propriedade IsTablePatternAvailable \_ \_             |
+| GUID da propriedade IsTextChildPatternAvailable \_ \_         |
+| GUID da propriedade IsTextPatternAvailable \_ \_              |
 | \_GUID da propriedade IsTextPattern2Available \_             |
 | \_GUID da propriedade IsTogglePatternAvailable \_            |
 | \_GUID da propriedade IsTransformPatternAvailable \_         |
@@ -334,7 +334,7 @@ Os GUIDs de PROPERTYid que representam as propriedades de automação da interfa
 
 
 
- 
+ 
 
 ## <a name="textattributeid-guids"></a>GUIDs textattributeid
 
@@ -387,11 +387,11 @@ Os GUIDs de textattributeid que representam atributos de texto na função [**Ui
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

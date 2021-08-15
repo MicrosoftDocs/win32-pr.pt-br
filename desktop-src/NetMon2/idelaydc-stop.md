@@ -1,7 +1,7 @@
 ---
-description: 'Método IDelaydC:: Stop – o método Stop interrompe a captura atual.'
+description: Método IDelaydC::Stop – o método Stop interrompe a captura atual.
 ms.assetid: 1b627137-e72d-4425-98d9-e296fb07e509
-title: 'Método IDelaydC:: Stop (Netmon. h)'
+title: Método IDelaydC::Stop (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 38be5b6ba4c3f6edcd716f4d0235150e96dd692a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b5fb6442481574de6732aef1359cf9586b9cdcc1815d9f0b206a1f8a597f1967
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118365996"
 ---
-# <a name="idelaydcstop-method"></a>Método IDelaydC:: Stop
+# <a name="idelaydcstop-method"></a>Método IDelaydC::Stop
 
-O método **Stop** interrompe a captura atual.
+O **método Stop** interrompe a captura atual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,16 +40,16 @@ HRESULT STDMETHODCALLTYPE Stop(
 
 <dl> <dt>
 
-*lpStats* \[ fora\]
+*lpStats* \[ out\]
 </dt> <dd>
 
-Ponteiro para uma estrutura de [estatísticas](statistics.md) que contém estatísticas de rede, como total de quadros e total de bytes capturados.
+Ponteiro para uma [estrutura STATISTICS](statistics.md) que contém estatísticas de rede, como total de quadros e total de bytes capturados.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
+Se o método for bem-sucedido, o valor de retorno será NMERR \_ SUCCESS.
 
 Se o método não for bem-sucedido, o valor de retorno será um dos seguintes códigos de erro:
 
@@ -57,9 +57,9 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 
 | Código de retorno                                                                                          | Descrição                                                                                                                           |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl> | O NPP não está conectado à rede. Chame [IDelaydC:: Connect](idelaydc-connect.md) para conectar o NPP à rede.<br/> |
-| <dl> <dt>**NMERR \_ não \_ capturando**</dt> </dl> | O NPP não está capturando dados. Chame [IDelaydC:: Start](idelaydc-start.md) para iniciar a captura.<br/>                            |
-| <dl> <dt>**NMERR \_ não \_ atrasada**</dt> </dl>   | O NPP está conectado à rede, mas não com o método [IDelaydC:: Connect](idelaydc-connect.md) .<br/>                     |
+| <dl> <dt>**NMERR \_ NÃO \_ CONECTADO**</dt> </dl> | O NPP não está conectado à rede. Chame [IDelaydC::Conexão](idelaydc-connect.md) para conectar o NPP à rede.<br/> |
+| <dl> <dt>**NMERR \_ NÃO CAPTURA \_**</dt> </dl> | O NPP não está capturando dados. Chame [IDelaydC::Start](idelaydc-start.md) para iniciar a captura.<br/>                            |
+| <dl> <dt>**NMERR \_ NÃO \_ ATRASADO**</dt> </dl>   | O NPP está conectado à rede, mas não ao [método IDelaydC::Conexão.](idelaydc-connect.md)<br/>                     |
 
 
 
@@ -67,9 +67,9 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 
 ## <a name="remarks"></a>Comentários
 
-Quando **IDelaydC:: Stop** é chamado, monitor de rede para de capturar dados e fecha o [*arquivo de captura*](c.md). (O nome do arquivo de captura foi retornado quando [IDelaydC:: Start](idelaydc-start.md) foi chamado). Agora você pode examinar o conteúdo do arquivo de captura.
+Quando **IDelaydC::Stop** é chamado, o Monitor de Rede para de capturar dados e fecha o [*arquivo de captura*](c.md). (O nome do arquivo de captura foi retornado quando [IDelaydC::Start](idelaydc-start.md) foi chamado). Agora você pode ver o conteúdo do arquivo de captura.
 
-Quando você parar e iniciar a captura, certifique-se de chamar o método [IDelaydC:: Configure](idelaydc-configure.md) cada vez que chamar [IDelaydC:: Start](idelaydc-start.md) para reiniciar a captura.
+Ao parar e iniciar a captura, chame o método [IDelaydC::Configure](idelaydc-configure.md) sempre que chamar [IDelaydC::Start](idelaydc-start.md) para reiniciar a captura.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,28 +79,28 @@ Quando você parar e iniciar a captura, certifique-se de chamar o método [IDela
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl>                                                                      |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl>                                                                      |
 | DLL<br/>                      | <dl> <dt>Ndisnpp.dll; </dt> <dt>Rmtnpp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [IDelaydC](idelaydc.md)
 </dt> <dt>
 
-[IDelaydC:: conectar](idelaydc-connect.md)
+[IDelaydC::Conexão](idelaydc-connect.md)
 </dt> <dt>
 
-[IDelaydC:: configurar](idelaydc-configure.md)
+[IDelaydC::Configure](idelaydc-configure.md)
 </dt> <dt>
 
-[IDelaydC:: iniciar](idelaydc-start.md)
+[IDelaydC::Start](idelaydc-start.md)
 </dt> <dt>
 
-[ESTATÍSTICA](statistics.md)
+[Estatísticas](statistics.md)
 </dt> </dl>
 
  

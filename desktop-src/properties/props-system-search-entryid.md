@@ -1,19 +1,19 @@
 ---
-description: A ID de entrada para um item em um determinado catálogo no índice do Windows Search.
+description: a ID de entrada para um item em um determinado catálogo no índice de Windows pesquisa.
 ms.assetid: 9162e92b-b738-4462-b346-68410f088e95
 title: System. Search. EntryID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: acd647338102d17e215973c85ea0e5d84c9bbdf7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f5160e6c0dc51d9b4a3877acab3b923106eef2094f64a8636424731ddb2b113
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105788794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117865157"
 ---
 # <a name="systemsearchentryid"></a>System. Search. EntryID
 
-A ID de entrada para um item em um determinado catálogo no índice do Windows Search.
+a ID de entrada para um item em um determinado catálogo no índice de Windows pesquisa.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,7 +33,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-[System. Search. EntryID]() é usado no SQL que é gerado para consultar o índice. Esse valor não é considerado exclusivo ao longo do tempo porque pode ser reciclado.
+[System. Search. entryid]() é usado no SQL que é gerado para consultar o índice. Esse valor não é considerado exclusivo ao longo do tempo porque pode ser reciclado.
 
 Os valores de PKEY são definidos em Propkey. h.
 

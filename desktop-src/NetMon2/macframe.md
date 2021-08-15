@@ -1,7 +1,7 @@
 ---
-description: A estrutura MACFRAME é uma União dos protocolos iniciais mais comuns.
+description: A estrutura MACFRAME é uma união dos protocolos iniciais mais comuns.
 ms.assetid: ec7e3a54-a47f-4390-a137-9574c63c9a11
-title: MACFRAME Union (Netmon. h)
+title: União MACFRAME (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: a7901daf467a63586543c52ca8a214d5d0094982
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dcff7294d2800e797b43b3a05bd25c35418c6fb466c95130b97be73f25040d3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105769304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118364704"
 ---
-# <a name="macframe-union"></a>MACFRAME Union
+# <a name="macframe-union"></a>União do MACFRAME
 
-A estrutura **MACFRAME** é uma União dos protocolos iniciais mais comuns.
+A **estrutura MACFRAME** é uma união dos protocolos iniciais mais comuns.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,14 +56,14 @@ Ponteiro Ethernet para um quadro.
 
 </dd> <dt>
 
-**Tokenring**
+**Tokening**
 </dt> <dd>
 
-Ponteiro de token ring para um quadro.
+Ponteiro de anel de token para um quadro.
 
 </dd> <dt>
 
-**FDDI**
+**Fddi**
 </dt> <dd>
 
 Ponteiro FDDI para um quadro.
@@ -72,7 +72,7 @@ Ponteiro FDDI para um quadro.
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura é usada com mais frequência como uma sobreposição. Para tornar as propriedades do primeiro protocolo acessíveis, converta o quadro como o mesmo tipo do protocolo.
+Essa estrutura é usada com mais frequência como uma sobreposição. Para tornar as propriedades do primeiro protocolo acessíveis, caste o quadro como o mesmo tipo que o protocolo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,7 +82,7 @@ Essa estrutura é usada com mais frequência como uma sobreposição. Para torna
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

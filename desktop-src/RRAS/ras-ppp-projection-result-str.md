@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a9aa3aef828249b5c72f9e7cdd1bd3b69c96832
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6ce1bb82b34490f8a1f3734225cbde1e761c575a2019a30db7790bfc7fa3c169
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117789580"
 ---
 # <a name="ras_ppp_projection_result-structure"></a>\_Estrutura de \_ resultados da projeção do RAS PPP \_
 
-\[A estrutura de **\_ \_ \_ resultados de projeção de Ras PPP** não tem suporte no Windows Vista.\]
+\[a estrutura de **\_ \_ \_ resultados de projeção de RAS PPP** não tem suporte a partir do Windows Vista.\]
 
 A estrutura de **\_ \_ \_ resultados de projeção de Ras PPP** é usada para relatar os resultados das várias operações de projeção de PPP para uma porta.
 
@@ -62,7 +62,7 @@ Uma estrutura de resultado do protocolo [**\_ \_ IPCP \_ de Ras PPP**](ras-ppp-i
 **IPX**
 </dt> <dd>
 
-Uma estrutura de [**\_ \_ \_ resultados do protocolo**](ras-ppp-ipxcp-result-str.md) de rede IP do PPP do RAS que relata o resultado de uma operação de projeção de IPX (troca de pacotes de Internet) PPP.
+uma estrutura de [**\_ \_ \_ resultados do protocolo**](ras-ppp-ipxcp-result-str.md) de rede ip do ppp do RAS que relata o resultado de uma operação de projeção IPX (Exchange de pacotes de internet ppp).
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Essa estrutura relata os resultados da projeção para protocolos NetBEUI, TCP/I
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
 | Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                       |
-| parâmetro<br/>                   | <dl> <dt>Rassapi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Rassapi. h</dt> </dl> |
 
 
 

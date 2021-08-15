@@ -1,7 +1,7 @@
 - name: Mecanismos de sincronização de nuvem
   href: cloud-files-api-portal.md
   items:
-    - name: Criar um mecanismo de sincronização de nuvem que dê suporte a arquivos de espaço reservado
+    - name: Criar um Mecanismo de Sincronização de Nuvem que dá suporte a arquivos de espaço reservado
       href: build-a-cloud-file-sync-engine.md
     - name: Referência de filtro de nuvem
       href: cloud-filter-reference.md

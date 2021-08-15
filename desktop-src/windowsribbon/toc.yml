@@ -1,10 +1,10 @@
-- name: Estrutura da faixa de dasgem do Windows
+- name: Windows Estrutura da faixa de faixas
   href: '-uiplat-windowsribbon-entry.md'
   items:
     - name: Visões gerais da estrutura da faixa de visão
       href: windowsribbon-overviews-entry.md
       items:
-        - name: Apresentando o Windows Ribbon Framework
+        - name: introdução à estrutura da faixa de Windows
           href: windowsribbon-introduction.md
         - name: Declarando comandos e controles com marcação de faixa de medida
           href: windowsribbon-schema.md
@@ -13,7 +13,7 @@
       items:
         - name: Criando um aplicativo de faixa de faixas
           href: windowsribbon-stepbystep.md
-        - name: Migrando para o Windows Ribbon Framework
+        - name: migrando para a estrutura da faixa de Windows
           href: ribbon-migration.md
         - name: Noções básicas sobre comandos e controles
           href: windowsribbon-commandscontrols.md
@@ -60,7 +60,7 @@
           href: windowsribbon-controls-dropdowngallery.md
         - name: Controle de fonte
           href: windowsribbon-controls-fontcontrol.md
-        - name: Grupo
+        - name: Agrupar
           href: windowsribbon-controls-group.md
         - name: Botão ajuda
           href: windowsribbon-controls-helpbutton.md
@@ -98,7 +98,7 @@
                   items:
                     - name: Comentário
                       href: windowsribbon-element-command-comment.md
-                    - name: ID
+                    - name: Id
                       href: windowsribbon-element-command-id.md
                     - name: KeyTip
                       href: windowsribbon-element-command-keytip.md
@@ -132,7 +132,7 @@
                   items:
                     - name: Conteúdo
                       href: windowsribbon-element-string-content.md
-                    - name: ID
+                    - name: Id
                       href: windowsribbon-element-string-id.md
                     - name: Símbolo
                       href: windowsribbon-element-string-symbol.md
@@ -194,7 +194,7 @@
                       href: windowsribbon-element-dropdowngallery-menulayout.md
                 - name: FontControl
                   href: windowsribbon-element-fontcontrol.md
-                - name: Grupo
+                - name: Agrupar
                   href: windowsribbon-element-group.md
                 - name: HelpButton
                   href: windowsribbon-element-helpbutton.md
@@ -449,7 +449,7 @@
                   href: windowsribbon-reference-properties-uipkey-itemssource.md
                 - name: UI_PKEY_SelectedItem
                   href: windowsribbon-reference-properties-uipkey-selecteditem.md
-            - name: Propriedades do seletor de cores
+            - name: Seletor de Cor propriedades
               href: windowsribbon-reference-properties-colorpicker.md
               items:
                 - name: UI_PKEY_AutomaticColorLabel
@@ -539,7 +539,7 @@
                   href: windowsribbon-reference-properties-uipkey-tooltipdescription.md
                 - name: UI_PKEY_TooltipTitle
                   href: windowsribbon-reference-properties-uipkey-tooltiptitle.md
-            - name: Propriedades da faixa de faixas
+            - name: Propriedades da faixa de opções
               href: windowsribbon-reference-properties-ribbon.md
               items:
                 - name: UI_PKEY_Minimized
@@ -584,7 +584,7 @@
               href: /windows/win32/api/Uiribbon/ns-uiribbon-ui_eventparams
             - name: UI_EVENTPARAMS_COMMAND
               href: /windows/win32/api/Uiribbon/ns-uiribbon-ui_eventparams_command
-    - name: Amostras da estrutura da faixa de faixas
+    - name: Exemplos da Estrutura de Faixa de Opções
       href: windowsribbon-samples-entry.md
       items:
         - name: Exemplo de SimpleRibbon
@@ -593,11 +593,11 @@
           href: windowsribbon-contextpopupsample.md
         - name: Exemplo de DropDownColorPicker
           href: windowsribbon-dropdowncolorpickersample.md
-        - name: Exemplo de galeria
+        - name: Exemplo da Galeria
           href: windowsribbon-gallerysample.md
         - name: Exemplo de HTMLEditRibbon
           href: windowsribbon-htmleditribbonsample.md
         - name: Exemplo de FontControl
           href: windowsribbon-fontcontrolsample.md
-    - name: Glossário do Framework da faixa de faixas
+    - name: Glossário da Estrutura de Faixa de Opções
       href: windowsribbon-glossary.md

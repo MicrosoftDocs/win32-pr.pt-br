@@ -4,12 +4,12 @@ ms.assetid: 44f7e6d5-c4d9-4b41-b6c6-15145abb7983
 title: Sistema. Photo. Exposiçãotime
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5811a3d375f41883d1db8f392e714b7bbe0dfa8b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c2bc1c767344187efd0107d4efa7bcec23d6f099497d9a26f29b89153a73a2e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118723861"
 ---
 # <a name="systemphotoexposuretime"></a>Sistema. Photo. Exposiçãotime
 

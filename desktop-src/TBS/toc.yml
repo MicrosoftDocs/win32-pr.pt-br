@@ -46,7 +46,7 @@
               href: /windows/desktop/api/Tbs/nf-tbs-tbsip_context_close
             - name: Tbsip_Submit_Command
               href: /windows/desktop/api/Tbs/nf-tbs-tbsip_submit_command
-        - name: Códigos de retorno TBS
+        - name: Códigos de retorno de TBS
           href: tbs-return-codes.md
         - name: Estruturas TBS
           href: tbs-structures.md

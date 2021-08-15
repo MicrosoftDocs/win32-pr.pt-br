@@ -4,12 +4,12 @@ ms.assetid: 8873c161-a709-48b8-a66f-fe2ee9be859f
 title: Tabela AdvtExecuteSequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b68a3f69cc7473b2364f169545743941d752f51
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fed9a566b721be1065e825cbf7cd6650a52c83ace653dc2730f1fcf7785d125c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118381585"
 ---
 # <a name="advtexecutesequence-table"></a>Tabela AdvtExecuteSequence
 
@@ -51,9 +51,9 @@ As colunas são idênticas às da [tabela InstallExecuteSequence](installexecute
 
 | Coluna    | Tipo                         | Chave | Nullable |
 |-----------|------------------------------|-----|----------|
-| Ação    | [Identificador](identifier.md) | S   | N        |
-| Condição | [Condição](condition.md)   | N   | S        |
-| Sequência  | [Inteiro](integer.md)       | N   | S        |
+| Ação    | [Identificador](identifier.md) | Y   | N        |
+| Condição | [Condição](condition.md)   | N   | Y        |
+| Sequência  | [Inteiro](integer.md)       | N   | Y        |
 
 
 

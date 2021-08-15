@@ -1,6 +1,6 @@
 ---
 title: Propriedades da conexão
-description: Saiba mais sobre as propriedades de conexão. Consulte Propriedades XML de exemplo para várias configurações de rede e exibir recursos adicionais disponíveis.
+description: Saiba mais sobre as propriedades de conexão. Consulte propriedades XML de exemplo para várias configurações de rede e exibir recursos adicionais disponíveis.
 ms.assetid: 95c8f5d5-75c5-48c7-b6af-e9908df56c71
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,15 +13,15 @@ ms.locfileid: "118498625"
 ---
 # <a name="connection-properties"></a>Propriedades da conexão
 
-Os tópicos a seguir mostram as propriedades XML de exemplo para várias configurações de rede. Essas propriedades XML usam elementos de esquema **EapHostConfig** e **config** .
+Os tópicos a seguir mostram propriedades XML de exemplo para várias configurações de rede. Essas propriedades XML usam **elementos de esquema EapHostConfig** e **Config.**
 
-Para obter exemplos de esquema adicionais, consulte [esquema EAP](https://go.microsoft.com/fwlink/p/?linkid=83914).
+Para obter exemplos de esquema adicionais, consulte [Esquema EAP](https://go.microsoft.com/fwlink/p/?linkid=83914).
 
--   [Propriedades de conexão do EAP MS-CHAPv2](eap-ms-chapv2-connection-properties.md)
+-   [Propriedades de conexão MS-CHAPv2 EAP](eap-ms-chapv2-connection-properties.md)
 -   [Propriedades de conexão EAP-TLS](eap-tls-connection-properties.md)
--   [Propriedades de conexão de MS-CHAPv2 PEAP](peap-ms-chapv2-connection-properties.md)
+-   [Propriedades de conexão MS-CHAPv2 PEAP](peap-ms-chapv2-connection-properties.md)
 -   [Propriedades de conexão PEAP-TLS](peap-tls-connection-properties.md)
--   [Propriedades de conexão EAP do SDK](sdk-connection-properties.md)
+-   [Propriedades de conexão do SDK EAP](sdk-connection-properties.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

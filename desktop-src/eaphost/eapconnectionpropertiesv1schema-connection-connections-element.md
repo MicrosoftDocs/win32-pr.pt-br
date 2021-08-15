@@ -47,7 +47,7 @@ O elemento **Connection** é definido pelo elemento [**Connections**](eapconnect
 
 
 
-| Elemento                                                                 | Digite   | Description                                                                                                             |
+| Elemento                                                                 | Type   | Descrição                                                                                                             |
 |-------------------------------------------------------------------------|--------|-------------------------------------------------------------------------------------------------------------------------|
 | [**EAP**](baseeapconnectionpropertiesv1schema-eap-element.md)          |        | Identifica o elemento de configuração EAP.<br/>                                                                    |
 | [**Nome**](eapconnectionpropertiesv1schema-name-connection-element.md) | string | Captura o nome da conexão que está sendo definida, auxiliando na identificação de várias conexões. <br/> |

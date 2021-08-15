@@ -1,17 +1,17 @@
 ---
 description: A interface IX509CertificateRequestCmc expõe as propriedades a seguir.
 ms.assetid: 3D084301-273C-490F-9946-BA8F6DE7ABFA
-title: Propriedades de IX509CertificateRequestCmc
+title: Propriedades IX509CertificateRequestCmc
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cae99af5078a4cf3cd3365d1cdd614f4c54f997
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2801c1f13f18f53025b2b72b2aa8c052ed610562d457418907e6d499cd620462
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117776616"
 ---
-# <a name="ix509certificaterequestcmc-properties"></a>Propriedades de IX509CertificateRequestCmc
+# <a name="ix509certificaterequestcmc-properties"></a>Propriedades IX509CertificateRequestCmc
 
 A interface [**IX509CertificateRequestCmc**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestcmc) expõe as propriedades a seguir.
 
@@ -19,7 +19,7 @@ A interface [**IX509CertificateRequestCmc**](/windows/desktop/api/CertEnroll/nn-
 
 -   [**Propriedade ArchivePrivateKey**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_archiveprivatekey)
 -   [**Propriedade CriticalExtensions**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_criticalextensions)
--   [**Propriedade cript.**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_cryptattributes)
+-   [**Propriedade CryptAttributes**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_cryptattributes)
 -   [**Propriedade EncryptedKeyHash**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_encryptedkeyhash)
 -   [**Propriedade EncryptionAlgorithm**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_encryptionalgorithm)
 -   [**Propriedade EncryptionStrength**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequestcmc-get_encryptionstrength)

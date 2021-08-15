@@ -1,9 +1,9 @@
 ---
-title: g_wszWMVCEndOfPass (Wmcodecdsp. h)
-description: Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte codec de áudio e vídeo do Windows Media e APIs do DSP. | g_wszWMVCEndOfPass (Wmcodecdsp. h)
+title: g_wszWMVCEndOfPass (Wmcodecdsp.h)
+description: Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e APIs DSP. | g_wszWMVCEndOfPass (Wmcodecdsp.h)
 ms.assetid: e590436f-85b2-472b-8e6d-6f82d4a1fe9d
 keywords:
-- g_wszWMVCEndOfPass o formato Windows Media
+- g_wszWMVCEndOfPass formato de mídia do Windows
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2642a4d790a3419b816aa947238a70aa79755ea6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ba32702d5f2de0b836ce0b5e45a7274ab5f3ab60e4bad1d5095fe530bb0768b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105767004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118198921"
 ---
 # <a name="g_wszwmvcendofpass"></a>g \_ wszWMVCEndOfPass
 
-Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
+Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,7 +31,7 @@ Para obter a documentação atual sobre os codecs de mídia do Windows e os proc
 
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

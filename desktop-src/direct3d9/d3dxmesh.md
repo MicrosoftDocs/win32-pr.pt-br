@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: a312c2618960691184182039afe38acc8947eb6a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6b83389ae4d92027245877e24e01621f0d93f123dee9ff4f040586b3e7c5111d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118525263"
 ---
 # <a name="d3dxmesh-enumeration"></a>Enumeração D3DXMESH
 
 Sinalizadores usados para especificar as opções de criação para uma malha.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -228,7 +228,7 @@ Uma malha de 32 bits (D3DXMESH \_ 32bit) pode teoricamente dar suporte a (2 ^ 32
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
 title: Elemento head
-description: O elemento head contém metadados que se aplicam a toda a lista de reprodução.
+description: O elemento head contém metadados que se aplica à playlist inteira.
 ms.assetid: 9554c84a-34af-4492-964a-4b262cd7c4a4
 keywords:
-- Elemento de cabeçalho Windows Media Player
+- elemento head Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8708a8a683f7457e6568df3a897c71253ad76c02
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a865419a005927cd85ea6b03d4fabad2e2ac3ef15a840b3bd01209a4df00c075
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118339160"
 ---
 # <a name="head-element"></a>Elemento head
 
-O elemento **Head** contém metadados que se aplicam a toda a lista de reprodução.
+O **elemento head** contém metadados que se aplica à playlist inteira.
 
 ``` syntax
 <head>
@@ -39,8 +39,8 @@ Esse elemento não tem atributos.
 
 | Hierarquia | Elementos                                                  |
 |-----------|-----------------------------------------------------------|
-| Pai    | [SMIL](smil-element.md)                                  |
-| Filho     | [título](title-element--wpl.md), [meta](meta-element.md) |
+| Pai    | [Smil](smil-element.md)                                  |
+| Filho     | [title](title-element--wpl.md), [meta](meta-element.md) |
 
 
 
@@ -48,7 +48,7 @@ Esse elemento não tem atributos.
 
 ## <a name="remarks"></a>Comentários
 
-Normalmente, o elemento **Head** contém um elemento **title** e um ou mais **meta** Elements que definem características globais da playlist.
+Normalmente, o **elemento principal** contém um elemento **de título** e um ou mais **metadados** que definem características globais da playlist.
 
 ## <a name="examples"></a>Exemplos
 
@@ -72,7 +72,7 @@ Normalmente, o elemento **Head** contém um elemento **title** e um ou mais **me
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior.<br/> |
+| Versão<br/> | Windows Media Player Série 9 ou posterior.<br/> |
 
 
 
@@ -80,13 +80,13 @@ Normalmente, o elemento **Head** contém um elemento **title** e um ou mais **me
 
 <dl> <dt>
 
-[**Elemento meta**](meta-element.md)
+[**elemento meta**](meta-element.md)
 </dt> <dt>
 
-[**Elemento Title (WPL)**](title-element--wpl.md)
+[**Elemento title (WPL)**](title-element--wpl.md)
 </dt> <dt>
 
-[**Referência de elementos da playlist do Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Referência de elementos da playlist de mídia**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Especifica se o aplicativo requer desempenho de codificação em tempo real.
 ms.assetid: 7e98a9f4-113b-45d0-ae55-7dc3f2af099e
-title: Propriedade AVEncCommonRealTime (Codecapi.h)
+title: Propriedade AVEncCommonRealTime (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: b718f4f58d230448689700fc2e681c109e645d48cb33eb1788e45ac607350951
@@ -15,11 +15,11 @@ ms.locfileid: "118403886"
 
 Especifica se o aplicativo requer desempenho de codificação em tempo real.
 
-Essa propriedade é leitura/gravação.
+Esta propriedade é de leitura/gravação.
 
 ## <a name="data-type"></a>Tipo de dados
 
-**VARIANT \_ BOOL** (**VT \_ BOOL**)
+**Variante \_ BOOL** (**VT \_ bool**)
 
 ## <a name="property-guid"></a>GUID da propriedade
 
@@ -27,7 +27,7 @@ Essa propriedade é leitura/gravação.
 
 ## <a name="remarks"></a>Comentários
 
-Para especificar que a codificação deve ser executada em tempo real, de definir essa propriedade como **VARIANT \_ TRUE.** Codecs também podem retornar essa propriedade como uma funcionalidade.
+Para especificar que a codificação deve ser executada em tempo real, defina essa propriedade como **Variant \_ true**. Os codecs também podem retornar essa propriedade como um recurso.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ Para especificar que a codificação deve ser executada em tempo real, de defini
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional \[ aplicativos UWP da área de \| trabalho\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Windows aplicativos da área de trabalho do servidor 2000 \[ \| aplicativos UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 
 
@@ -45,10 +45,10 @@ Para especificar que a codificação deve ser executada em tempo real, de defini
 
 <dl> <dt>
 
-[Propriedades da API do Codec](codec-api-properties.md)
+[Propriedades da API do codec](codec-api-properties.md)
 </dt> <dt>
 
-[**ICodecAPI Interface**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**Interface ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

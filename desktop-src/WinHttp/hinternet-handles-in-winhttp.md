@@ -1,19 +1,19 @@
 ---
-description: O Microsoft Windows HTTP Services (WinHTTP) usa identificadores para controlar as configurações e as informações necessárias ao usar o protocolo HTTP.
+description: o Microsoft Windows serviços HTTP (WinHTTP) usa identificadores para controlar as configurações e as informações necessárias ao usar o protocolo HTTP.
 ms.assetid: 0bd82860-1347-40c8-ae77-c4d865c109be
 title: HINTERNET identificadores no WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf374675ad6f2114dd48e0a3ff1db50cd0dd7f9c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a76f925d11646ed2fe5b5d3732fe8972d979cdc6383a4d47e955c0e60a1390e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104568407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118563262"
 ---
 # <a name="hinternet-handles-in-winhttp"></a>HINTERNET identificadores no WinHTTP
 
-O Microsoft Windows HTTP Services (WinHTTP) usa identificadores para controlar as configurações e as informações necessárias ao usar o protocolo HTTP. Cada identificador mantém informações pertinentes a uma sessão HTTP, uma conexão com um servidor HTTP ou um recurso específico. Este tópico descreve os vários tipos de identificadores, as convenções de nomenclatura para esses identificadores e sua estrutura hierárquica.
+o Microsoft Windows serviços HTTP (WinHTTP) usa identificadores para controlar as configurações e as informações necessárias ao usar o protocolo HTTP. Cada identificador mantém informações pertinentes a uma sessão HTTP, uma conexão com um servidor HTTP ou um recurso específico. Este tópico descreve os vários tipos de identificadores, as convenções de nomenclatura para esses identificadores e sua estrutura hierárquica.
 
 -   [Sobre identificadores de HINTERNET](#about-hinternet-handles)
 -   [Identificadores de nomenclatura](#naming-handles)

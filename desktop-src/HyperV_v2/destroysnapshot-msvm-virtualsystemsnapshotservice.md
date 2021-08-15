@@ -1,7 +1,7 @@
 ---
 description: Destrói um instantâneo de máquina virtual existente.
 ms.assetid: 84752bb3-cae1-4a93-89bc-e735c058feda
-title: Método DestroySnapshot da classe Msvm_VirtualSystemSnapshotService
+title: Método DestroySnapshot da Msvm_VirtualSystemSnapshotService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118393377"
 ---
-# <a name="destroysnapshot-method-of-the-msvm_virtualsystemsnapshotservice-class"></a>Método DestroySnapshot da \_ classe VirtualSystemSnapshotService Msvm
+# <a name="destroysnapshot-method-of-the-msvm_virtualsystemsnapshotservice-class"></a>Método DestroySnapshot da classe Msvm \_ VirtualSystemSnapshotService
 
 Destrói um instantâneo de máquina virtual existente. Esse método pode, como um efeito colateral, destruir outros instantâneos que dependem do instantâneo afetado.
 
@@ -40,17 +40,17 @@ uint32 DestroySnapshot(
 
 <dl> <dt>
 
-*AffectedSnapshot* \[ no\]
+*AffectedSnapshot* \[ Em\]
 </dt> <dd>
 
-Uma referência do [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)) que representa o instantâneo da máquina virtual a ser destruído.
+Uma [**referência CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)) que representa o instantâneo da máquina virtual a ser destruído.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Se a operação for executada de forma assíncrona, esse método retornará 4096, e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Se a operação for executada de forma assíncrona, esse método retornará 4096 e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob.**](/previous-versions//cc136808(v=vs.85))
 
 </dd> </dl>
 
@@ -69,7 +69,7 @@ Esse método retorna um dos valores a seguir.
 **Falha** (2)
 </dt> <dt>
 
-**Tempo limite** (3)
+**Tempoout** (3)
 </dt> <dt>
 
 **Parâmetro inválido** (4)
@@ -81,16 +81,16 @@ Esse método retorna um dos valores a seguir.
 **Tipo inválido** (6)
 </dt> <dt>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (4097.. 32767)
+**Método Reservado** (4097..32767)
 </dt> <dt>
 
-**Específico do fornecedor** (32768.. 65535)
+**Específico do** fornecedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -99,10 +99,10 @@ Esse método retorna um dos valores a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -114,7 +114,7 @@ Esse método retorna um dos valores a seguir.
 [**Msvm \_ VirtualSystemSnapshotService**](msvm-virtualsystemsnapshotservice.md)
 </dt> <dt>
 
-[**RemoveVirtualSystemSnapshot (v1)**](/previous-versions/windows/desktop/virtual/removevirtualsystemsnapshot-msvm-virtualsystemmanagementservice)
+[**RemoveVirtualSystemSnapshot (V1)**](/previous-versions/windows/desktop/virtual/removevirtualsystemsnapshot-msvm-virtualsystemmanagementservice)
 </dt> </dl>
 
  

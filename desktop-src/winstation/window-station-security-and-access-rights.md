@@ -17,7 +17,7 @@ A segurança permite que você controle o acesso a objetos de estação de janel
 
 Você pode especificar um [descritor de segurança para](/windows/desktop/SecAuthZ/security-descriptors) um objeto de estação de janela ao chamar a [**função CreateWindowStation.**](/windows/win32/api/winuser/nf-winuser-createwindowstationa) Se você especificar NULL, a estação de janelas obtém um descritor de segurança padrão. As ACLs no descritor de segurança padrão para uma estação de janela vêm do token primário ou de representação do criador.
 
-Para obter ou definir o descritor de segurança de um objeto de estação de janela, chame as funções [**GetSecurityInfo**](/windows/desktop/api/aclapi/nf-aclapi-getsecurityinfo) e [**SetSecurityInfo.**](/windows/desktop/api/aclapi/nf-aclapi-setsecurityinfo)
+Para obter ou definir o descritor de segurança de um objeto de estação de janela, chame as [**funções GetSecurityInfo**](/windows/desktop/api/aclapi/nf-aclapi-getsecurityinfo) e [**SetSecurityInfo.**](/windows/desktop/api/aclapi/nf-aclapi-setsecurityinfo)
 
 Quando você chama a [**função OpenWindowStation,**](/windows/win32/api/winuser/nf-winuser-openwindowstationa) o sistema verifica os direitos de acesso solicitados no descritor de segurança do objeto.
 
@@ -166,7 +166,7 @@ WINSTA_READATTRIBUTES<br />
 
  
 
-Você pode solicitar o direito de acesso ACCESS SYSTEM SECURITY a um objeto de estação de janela se quiser ler ou gravar \_ \_ a SACL do objeto. Para obter mais informações, consulte [ACLs (Listas de Controle](/windows/desktop/SecAuthZ/access-control-lists) de Acesso) e [Direito de Acesso SACL.](/windows/desktop/SecAuthZ/sacl-access-right)
+Você pode solicitar o direito de acesso de segurança do sistema de acesso \_ \_ a um objeto de estação de janela se desejar ler ou gravar a SACL do objeto. Para obter mais informações, consulte [listas de controle de acesso (ACLs)](/windows/desktop/SecAuthZ/access-control-lists) e [direito de acesso SACL](/windows/desktop/SecAuthZ/sacl-access-right).
 
  
 

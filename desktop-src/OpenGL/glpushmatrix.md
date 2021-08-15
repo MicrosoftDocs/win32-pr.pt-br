@@ -1,9 +1,9 @@
 ---
-title: função glPushMatrix (GL. h)
-description: As funções glPushMatrix e glPopMatrix enviam por push e pop a pilha de matriz atual. | função glPushMatrix (GL. h)
+title: Função glPushMatrix (Gl.h)
+description: As funções glPushMatrix e glPopMatrix e push e pop da pilha de matriz atual. | Função glPushMatrix (Gl.h)
 ms.assetid: 97d8e644-50bb-4130-b6b7-d87df4468e73
 keywords:
-- função glPushMatrix OpenGL
+- Função glPushMatrix OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee62b03e221f44db829a7167d642a766af8e129c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: a0d6af41bb02c82a28b667a2b5ad62d942c036c7f744a68fa9bb79188e26ae8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103930429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117795131"
 ---
-# <a name="glpushmatrix-function"></a>função glPushMatrix
+# <a name="glpushmatrix-function"></a>Função glPushMatrix
 
-As funções **glPushMatrix** e [**glPopMatrix**](glpopmatrix.md) enviam por push e pop a pilha de matriz atual.
+As **funções glPushMatrix** e [**glPopMatrix**](glpopmatrix.md) e push e pop da pilha de matriz atual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,52 +38,52 @@ void WINAPI glPushMatrix(void);
 
 Essa função não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função não retorna um valor.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-É um erro enviar por push uma pilha de matriz completa ou exibir uma pilha de matriz que contém apenas uma única matriz. Em ambos os casos, o sinalizador de erro é definido e nenhuma outra alteração é feita no estado OpenGL.
+É um erro fazer push de uma pilha de matriz completa ou para abrir uma pilha de matriz que contém apenas uma única matriz. Em ambos os casos, o sinalizador de erro é definido e nenhuma outra alteração é feita no estado OpenGL.
 
-Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**](glgeterror.md) .
+Os códigos de erro a seguir podem ser recuperados pela [**função glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_estouro de pilha GL \_**</dt> </dl>    | A função foi chamada enquanto a pilha de matriz atual estava cheia.<br/>                                                           |
-| <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**GL \_ STACK \_ OVERFLOW**</dt> </dl>    | A função foi chamada enquanto a pilha de matriz atual estava cheia.<br/>                                                           |
+| <dl> <dt>**OPERAÇÃO \_ GL \_ INVÁLIDA**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd.**](glend.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Há uma pilha de matrizes para cada um dos modos de matriz. No \_ modo MODELVIEW GL, a profundidade da pilha é de pelo menos 32. Nos outros dois modos, \_ a projeção GL e \_ a textura GL, a profundidade é pelo menos 2. A matriz atual em qualquer modo é a matriz na parte superior da pilha para esse modo.
+Há uma pilha de matrizes para cada um dos modos de matriz. No modo GL \_ MODELVIEW, a profundidade da pilha é pelo menos 32. Nos outros dois modos, GL \_ PROJECTION e GL \_ TEXTURE, a profundidade é pelo menos 2. A matriz atual em qualquer modo é a matriz na parte superior da pilha para esse modo.
 
-A função **glPushMatrix** envia por push a pilha da matriz atual por uma, duplicando a matriz atual. Ou seja, após uma chamada **glPushMatrix** , a matriz na parte superior da pilha é idêntica à seguinte. A função **glPopMatrix** exibe a pilha da matriz atual, substituindo a matriz atual pela que está abaixo dela na pilha. Inicialmente, cada uma das pilhas contém uma matriz, uma matriz de identidade.
+A **função glPushMatrix** esmaeia a pilha de matriz atual em um, duplicando a matriz atual. Ou seja, após uma **chamada glPushMatrix,** a matriz na parte superior da pilha é idêntica à que está abaixo dela. A **função glPopMatrix** abre a pilha de matriz atual, substituindo a matriz atual pela que está abaixo dela na pilha. Inicialmente, cada uma das pilhas contém uma matriz, uma matriz de identidade.
 
-As funções a seguir recuperam informações relacionadas a **glPushMatrix** e **glPopMatrix**:
+As funções a seguir recuperam informações relacionadas **a glPushMatrix** e **glPopMatrix**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o \_ modo de matriz GL de argumento \_
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento GL \_ MATRIX \_ MODE
 
-**glGet** com o argumento GL \_ MODELVIEW \_ Matrix
+**glGet** com o argumento GL \_ MODELVIEW \_ MATRIX
 
- \_ matriz de projeção GLGET com Argument GL \_
+**glGet com** o argumento GL \_ PROJECTION \_ MATRIX
 
-**glGet** com matriz de \_ textura Argument GL \_
+**glGet** com o argumento GL \_ TEXTURE \_ MATRIX
 
-profundidade de pilha **glGet** com Argument GL \_ MODELVIEW \_ \_
+**glGet com** o argumento GL \_ MODELVIEW \_ STACK \_ DEPTH
 
- profundidade da pilha de \_ projeção GLGET com Argument GL \_ \_
+**glGet com** o argumento GL \_ PROJECTION STACK \_ \_ DEPTH
 
- profundidade da pilha de textura glGet com Argument GL \_ \_ \_
+**glGet com** o argumento GL \_ TEXTURE STACK \_ \_ DEPTH
 
-**glGet** com o argumento GL \_ Max \_ MODELVIEW de \_ profundidade de pilha \_
+**glGet com** o argumento GL \_ MAX \_ MODELVIEW STACK \_ \_ DEPTH
 
- \_ profundidade máxima da pilha de \_ projeção glGet \_ com Argument GL \_
+**glGet com** o argumento GL \_ MAX PROJECTION STACK \_ \_ \_ DEPTH
 
- \_ profundidade máxima da pilha de \_ textura \_ glGet com Argument GL \_
+**glGet com** o argumento GL \_ MAX TEXTURE STACK \_ \_ \_ DEPTH
 
 ## <a name="requirements"></a>Requisitos
 
@@ -93,8 +93,8 @@ profundidade de pilha **glGet** com Argument GL \_ MODELVIEW \_ \_
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

@@ -1,5 +1,5 @@
 ---
-description: Demonstra como criar arquivos e pastas em contêineres do Shell. Também mostra como salvar no item de shell que é retornado da caixa de diálogo arquivo.
+description: Demonstra como criar arquivos e pastas em contêineres do Shell. Também mostra como salvar no item shell retornado da caixa de diálogo de arquivo.
 title: Exemplo de armazenamento de shell
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,20 +9,20 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: af4b1f13daf9cd0ec99dce542195d5e5e374a6d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3698a89566b65a8a263d39b3957285d4ffde07fda1ff754792b545959b987d85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117858255"
 ---
 # <a name="shell-storage-sample"></a>Exemplo de armazenamento de shell
 
-Demonstra como criar arquivos e pastas em contêineres do Shell. Também mostra como salvar no item de shell que é retornado da caixa de diálogo arquivo.
+Demonstra como criar arquivos e pastas em contêineres do Shell. Também mostra como salvar no item shell retornado da caixa de diálogo de arquivo.
 
 Este tópico inclui as seções a seguir.
 
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Baixando o exemplo](#downloading-the-sample)
 -   [Compilando o exemplo](#building-the-sample)
 -   [Executando o exemplo](#running-the-sample)
@@ -40,7 +40,7 @@ Este tópico inclui as seções a seguir.
 
  
 
-Para obter requisitos adicionais, consulte o arquivo Leiame incluído com o exemplo.
+Para obter requisitos adicionais, consulte o arquivo Leiame incluído no exemplo.
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 

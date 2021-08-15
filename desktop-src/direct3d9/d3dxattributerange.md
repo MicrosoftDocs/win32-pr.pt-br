@@ -1,7 +1,7 @@
 ---
 description: Estrutura D3DXATTRIBUTERANGE – armazena uma entrada de tabela de atributo.
 ms.assetid: b9f13b12-35ba-4e4c-93ac-3dd44d611b47
-title: Estrutura D3DXATTRIBUTERANGE (D3dx9mesh. h)
+title: Estrutura D3DXATTRIBUTERANGE (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 7dfdf15f653fda77b1ca8c9a14cd32decee9658e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 73fe2214b2c1b8acb1bc657bd41803c425b4c86f34d022d6367c3011eebd6d50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118526804"
 ---
 # <a name="d3dxattributerange-structure"></a>Estrutura D3DXATTRIBUTERANGE
 
@@ -43,25 +43,25 @@ typedef struct D3DXATTRIBUTERANGE {
 
 <dl> <dt>
 
-**Atribid**
+**AttribId**
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Identificador de tabela de atributo.
+Identificador da tabela de atributos.
 
 </dd> <dt>
 
-**FaceStart**
+**Início de Face**
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Iniciando face.
+Iniciando a face.
 
 </dd> <dt>
 
@@ -72,22 +72,22 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Contagem de face.
+Contagem facial.
 
 </dd> <dt>
 
-**VertexStart**
+**VérticeStart**
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Iniciando vértice.
+Iniciando o vértice.
 
 </dd> <dt>
 
-**Contagemdevértice**
+**VertexCount**
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -100,9 +100,9 @@ Contagem de vértices.
 
 ## <a name="remarks"></a>Comentários
 
-Uma tabela de atributos é usada para identificar áreas da malha que precisam ser desenhadas com texturas diferentes, Estados de renderização, materiais e assim por diante. Além disso, o aplicativo pode usar a tabela de atributos para ocultar partes de uma malha por não desenhar um determinado identificador de atributo (attrib) ao desenhar o quadro.
+Uma tabela de atributos é usada para identificar áreas da malha que precisam ser desenhadas com texturas diferentes, estados de renderização, materiais e assim por diante. Além disso, o aplicativo pode usar a tabela de atributos para ocultar partes de uma malha, não desenhando um identificador de atributo específico (AttribId) ao desenhar o quadro.
 
-O tipo LPD3DXATTRIBUTERANGE é definido como um ponteiro para a estrutura **D3DXATTRIBUTERANGE** .
+O tipo LPD3DXATTRIBUTERANGE é definido como um ponteiro para a **estrutura D3DXATTRIBUTERANGE.**
 
 
 ```
@@ -117,11 +117,11 @@ typedef D3DXATTRIBUTERANGE* LPD3DXATTRIBUTERANGE;
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

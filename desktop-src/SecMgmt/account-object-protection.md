@@ -4,20 +4,20 @@ ms.assetid: a07ef46e-f4b6-4e21-bdd7-72d03e1c88b3
 title: Proteção de objeto de conta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f495a3dc943ef73eef5074e0edc73247ceb02d09
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c49610827c8f27b2ad1dd645faca1374534b9d4acb8353421fc55901da724dd5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105758267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117969754"
 ---
 # <a name="account-object-protection"></a>Proteção de objeto de conta
 
-Os objetos de [**conta**](account-object.md) são protegidos da seguinte maneira:
+[**Os**](account-object.md) objetos de conta são protegidos da seguinte maneira:
 
--   O **mundo** do grupo tem \_ execução genérica.
--   O **\_ administrador local** do grupo tem exclusão, \_ leitura genérica, \_ gravação genérica, \_ execução genérica e gravação de \_ acesso à DACL.
--   O **\_ administrador local** do grupo é atribuído como proprietário e grupo primário de objetos de conta.
+-   O grupo **WORLD** tem GENERIC \_ EXECUTE.
+-   O grupo **ADMINISTRADOR LOCAL \_** tem acesso DELETE, GENERIC \_ READ, \_ GENERIC WRITE, GENERIC \_ EXECUTE e \_ WRITE DACL.
+-   O grupo **ADMINISTRADOR LOCAL \_** é atribuído como proprietário e grupo primário de objetos Account.
 
  
 

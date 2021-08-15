@@ -109,17 +109,17 @@ Essa não é uma alteração pequena. A remoção da barra de menus altera funda
 
 -   **Direção.** Para economizar espaço e evitar resíduos, comandos usados com menos frequência podem ser movidos para botões de menu, tornando-os menos diretos.
 
-As barras de ferramentas usadas para complementar uma barra de menus são criadas de forma diferente das barras de ferramentas criadas para uso com uma barra de menus removida ou oculta. E, como você não pode supor que os usuários exibirão uma barra de menus oculta para executar um único comando, ocultar uma barra de menus deve ser tratado da mesma forma que removê-lo completamente ao tomar decisões de design. (Se você ocultar a barra de menus por padrão, não presuma que os usuários vão considerar a exibição da barra de menus para localizar um comando ou até mesmo descobrir como exibi-lo.)
+As barras de ferramentas usadas para complementar uma barra de menus são criadas de forma diferente das barras de ferramentas criadas para uso com uma barra de menus removida ou oculta. E, como você não pode supor que os usuários exibirão uma barra de menus oculta para executar um único comando, ocultar uma barra de menus deve ser tratado da mesma forma que removê-lo completamente ao tomar decisões de design. (Se você ocultar a barra de menus por padrão, não suponha que os usuários pensarão em exibir a barra de menus para encontrar um comando ou até mesmo descubram como exibi-lo.)
 
-A criação de uma barra de ferramentas para trabalhar sem uma barra de menus geralmente envolve alguns comprometimentos. Mas, para obter eficiência, não comprometa muito. Se ocultar a barra de menus resultar em uma barra de ferramentas ineficiente, não oculte a barra de menus!
+A criação de uma barra de ferramentas para funcionar sem uma barra de menus geralmente envolve alguns comprometimentos. Mas, para eficiência, não comprometa muito. Se ocultar a barra de menus resulta em uma barra de ferramentas ineficiente, não o hide the menu bar!
 
 ### <a name="keyboard-accessibility"></a>Acessibilidade do teclado
 
-Do teclado, o acesso às barras de ferramentas é bastante diferente de acessar barras de menus. As barras de menu recebem o foco de entrada quando os usuários pressionam a tecla Alt e perdem o foco de entrada com a tecla ESC. Quando uma barra de menus tem o foco de entrada, ela é navegada independentemente do restante da janela, manipulando todas as teclas de direção, as teclas Home, end e Tab. Por outro lado, as barras de ferramentas recebem o foco de entrada quando os usuários pressionam a tecla Tab por todo o conteúdo da janela. Como as barras de ferramentas são a última em ordem de tabulação, elas podem levar algum esforço significativo para serem ativadas em uma página ocupada (a menos que os usuários saibam usar Shift + Tab para mover para trás).
+No teclado, acessar barras de ferramentas é muito diferente de acessar barras de menu. As barras de menu recebem o foco de entrada quando os usuários pressionam a tecla Alt e perdem o foco de entrada com a tecla Esc. Depois que uma barra de menus tem o foco de entrada, ela é navegada independentemente do restante da janela, manipulando todas as teclas de direção, Página Inicial, Fim e Teclas tab. Por outro lado, as barras de ferramentas recebem o foco de entrada quando os usuários pressionam a tecla Tab por todo o conteúdo da janela. Como as barras de ferramentas são as últimas na ordem de tabulação, elas podem ter algum esforço significativo para ativar em uma página ocupada (a menos que os usuários saibam usar Shift+Tab para mover para trás).
 
-A acessibilidade apresenta um dilema aqui: embora as barras de ferramentas sejam mais fáceis para os usuários do mouse, elas são menos acessíveis para usuários de teclado. Isso não é um problema se houver uma barra de menus e uma barra de ferramentas, mas se a barra de menus for removida ou ocultada.
+A acessibilidade apresenta um problema aqui: embora as barras de ferramentas sejam mais fáceis para usuários de mouse, elas são menos acessíveis para usuários de teclado. Isso não será um problema se houver uma barra de menus e uma barra de ferramentas, mas se a barra de menus for removida ou ocultada.
 
-Por motivos de acessibilidade, prefira manter a barra de menus em vez de removê-la completamente em favor de uma barra de ferramentas. Se você precisar escolher entre remover a barra de menus e simplesmente ocultá-la, prefira ocultá-la.
+Por motivos de acessibilidade, prefira manter a barra de menus em vez de removê-la completamente em favor de uma barra de ferramentas. Se você tiver que escolher entre remover a barra de menus e simplesmente oculta-la, prefira oá-la.
 
 ## <a name="usage-patterns"></a>Padrões de uso
 
@@ -129,11 +129,11 @@ As barras de ferramentas têm vários padrões de uso:
 
 |     Uso                                                                                                                 |     Exemplo                                                                                                                                                                                                                                                                                                                                          |
 |----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Barras de ferramentas primárias**<br/> uma barra de ferramentas projetada para funcionar sem uma barra de menus, oculta ou removida. <br/> | as barras de ferramentas principais devem equilibrar a necessidade de eficiência com abrangência, para que elas funcionem melhor para programas simples. <br/> ![captura de tela da barra de ferramentas do Windows Explorer ](images/cmd-toolbars-image8.png)<br/> uma barra de ferramentas primária do Windows Explorer.<br/>                                                                        |
-| **Barras de ferramentas complementares**<br/> uma barra de ferramentas projetada para trabalhar com uma barra de menus. <br/>                         | as barras de ferramentas complementares podem se concentrar na eficiência sem comprometimento. <br/> ![captura de tela de uma barra de menus em uma barra de ferramentas ](images/cmd-toolbars-image9.png)<br/> uma barra de ferramentas complementar do Windows Movie Maker.<br/>                                                                                                                  |
-| **Menus da barra de ferramentas**<br/> uma barra de menus implementada como uma barra de ferramentas. <br/>                                        | os menus da barra de ferramentas são barras de ferramentas que consistem principalmente em comandos em [botões de menu](ctrl-command-buttons.md) e botões de divisão, com apenas alguns comandos diretos, se houver. <br/> ![captura de tela da barra de menus com ícones e comandos ](images/cmd-toolbars-image10.png)<br/> um menu de barra de ferramentas na galeria de fotos Windows.<br/> |
-| **Barras de ferramentas personalizáveis**<br/> uma barra de ferramentas que pode ser personalizada por usuários. <br/>                          | barras de ferramentas personalizáveis permitem que os usuários adicionem ou removam barras de ferramentas, alterem seu tamanho e local e até mesmo alterem seu conteúdo. <br/> ![captura de tela de uma barra de ferramentas com dezenas de ícones ](images/cmd-toolbars-image11.png)<br/> Uma barra de ferramentas personalizável de Microsoft Visual Studio.<br/>                                             |
-| **Janelas de paleta**<br/> uma caixa de diálogo sem janela restrita que apresenta uma matriz de comandos. <br/>                 | as janelas de paleta são barras de ferramentas desencaixadas. <br/> ![captura de tela de uma caixa de diálogo cores ](images/cmd-toolbars-image12.png)<br/> ![captura de tela de uma caixa de diálogo fontes ](images/cmd-toolbars-image13.png)<br/> janelas de paleta do Windows Paint.<br/>                                                                             |
+| **Barras de ferramentas primárias**<br/> uma barra de ferramentas projetada para funcionar sem uma barra de menus, oculta ou removida. <br/> | As barras de ferramentas primárias devem equilibrar a necessidade de eficiência com a abrangência, para que funcionem melhor para programas simples. <br/> ![captura de tela da barra de ferramentas do Windows Explorer ](images/cmd-toolbars-image8.png)<br/> Uma barra de ferramentas primária do Windows Explorer.<br/>                                                                        |
+| **Barras de ferramentas complementares**<br/> uma barra de ferramentas projetada para trabalhar com uma barra de menus. <br/>                         | As barras de ferramentas complementares podem se concentrar na eficiência sem comprometimento. <br/> ![captura de tela de uma barra de menus em uma barra de ferramentas ](images/cmd-toolbars-image9.png)<br/> Uma barra de ferramentas complementar do Windows Movie Maker.<br/>                                                                                                                  |
+| **Menus da barra de ferramentas**<br/> uma barra de menus implementada como uma barra de ferramentas. <br/>                                        | Os menus da barra de ferramentas são barras de ferramentas que consistem principalmente em comandos em botões de [menu](ctrl-command-buttons.md) e botões de divisão, com apenas alguns comandos diretos, se for o caso. <br/> ![captura de tela da barra de menus com ícones e comandos ](images/cmd-toolbars-image10.png)<br/> Um menu da barra de ferramentas Windows Galeria de Fotos.<br/> |
+| **Barras de ferramentas personalizáveis**<br/> uma barra de ferramentas que pode ser personalizada pelos usuários. <br/>                          | As barras de ferramentas personalizáveis permitem que os usuários adicionem ou removam barras de ferramentas, alterem seu tamanho e local e até mesmo alterem seu conteúdo. <br/> ![captura de tela de uma barra de ferramentas com dezenas de ícones ](images/cmd-toolbars-image11.png)<br/> Uma barra de ferramentas personalizável Microsoft Visual Studio.<br/>                                             |
+| **Janelas de paleta**<br/> uma caixa de diálogo sem modo que apresenta uma matriz de comandos. <br/>                 | janelas de paleta são barras de ferramentas desencaixadas. <br/> ![captura de tela de uma caixa de diálogo cores ](images/cmd-toolbars-image12.png)<br/> ![captura de tela de uma caixa de diálogo fontes ](images/cmd-toolbars-image13.png)<br/> Janelas de paleta Windows Paint.<br/>                                                                             |
 
 
 
@@ -145,11 +145,11 @@ As barras de ferramentas têm estes estilos:
 
 |   Estilo                                                                                                                                     | Exemplo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Ícones sem rótulo**<br/> uma ou mais linhas de pequenos botões de ícone sem rótulo. <br/>                                           | Use este estilo se houver muitos botões para rotular ou se o programa for usado com frequência. com esse estilo, os programas com funcionalidade complexa podem ter várias linhas e, portanto, esse é o único estilo que precisa ser personalizável. com esse estilo, alguns botões de comando podem ser rotulados se forem usados com frequência. <br/> ![captura de tela da barra de ferramentas com ícones pequenos e sem rótulo ](images/cmd-toolbars-image14.png)<br/> Uma barra de ferramentas de ícones sem rótulo do WordPad.<br/> |
-| **Ícones grandes não rotulados**<br/> uma única linha de botões de ícone não rotulados grandes. <br/>                                         | Use esse estilo para utilitários simples que têm ícones facilmente reconhecíveis e normalmente são executados em pequenas janelas. <br/> ![captura de tela da barra de ferramentas com ícones grandes e não rotulados ](images/cmd-toolbars-image15.png)<br/> ![captura de tela da barra de ferramentas com ícones grandes ](images/cmd-toolbars-image16.png)<br/> as barras de ferramentas de ícones não rotulados grandes de Windows Live Messenger e a ferramenta de recorte de Windows.<br/>                                                                       |
-| **Ícones rotulados**<br/> uma única linha de ícones pequenos rotulados. <br/>                                                          | Use esse estilo se houver poucos comandos ou se o programa não for usado com frequência. Esse estilo sempre tem uma única linha. <br/> ![captura de tela da barra de ferramentas com ícones rotulados ](images/cmd-toolbars-image8.png)<br/> uma barra de ferramentas de ícones rotulados do Windows Explorer.<br/>                                                                                                                                                                                                               |
-| **Barras de ferramentas parciais**<br/> uma linha parcial de ícones pequenos usados para economizar espaço quando uma barra de ferramentas completa não é necessária. <br/>       | Use esse estilo para Windows com botões de navegação, uma caixa de pesquisa ou guias para eliminar o peso desnecessário na parte superior da janela. <br/> ![captura de tela da barra de menus, barra de ferramentas e barra de favoritos ](images/cmd-toolbars-image17.png)<br/> As barras de ferramentas parciais podem ser combinadas com botões de navegação, uma caixa de pesquisa ou guias.<br/>                                                                                                                                                  |
-| **Barras de ferramentas parciais grandes**<br/> uma linha parcial de ícones grandes usados para economizar espaço quando uma barra de ferramentas completa não é necessária. <br/> | Use esse estilo para utilitários simples que têm botões de navegação ou uma caixa de pesquisa para eliminar peso desnecessário na parte superior da janela. <br/> ![captura de tela de uma barra de ferramentas parcial grande ](images/cmd-toolbars-image18.png)<br/> Uma grande barra de ferramentas parcial da Windows Defender.<br/>                                                                                                                                                                                         |
+| **Ícones sem rótulo**<br/> uma ou mais linhas de pequenos botões de ícone sem rótulo. <br/>                                           | use esse estilo se houver muitos botões para rotular ou se o programa for usado com frequência. com esse estilo, programas com funcionalidade complexa podem ter várias linhas e, portanto, esse é o único estilo que precisa ser personalizável. com esse estilo, alguns botões de comando poderão ser rotulados se eles são usados com frequência. <br/> ![captura de tela da barra de ferramentas com ícones pequenos e sem rótulo ](images/cmd-toolbars-image14.png)<br/> Uma barra de ferramentas de ícones sem rótulo do WordPad.<br/> |
+| **Ícones grandes sem rótulo**<br/> uma única linha de botões grandes de ícone sem rótulo. <br/>                                         | use esse estilo para utilitários simples que têm ícones facilmente reconhecíveis e geralmente são executados em janelas pequenas. <br/> ![captura de tela da barra de ferramentas com ícones grandes e sem rótulo ](images/cmd-toolbars-image15.png)<br/> ![captura de tela da barra de ferramentas com ícones grandes ](images/cmd-toolbars-image16.png)<br/> Barras de ferramentas de ícones grandes sem rótulo de Windows Live Messenger e do Windows Ferramenta de Captura.<br/>                                                                       |
+| **Ícones rotulados**<br/> uma única linha de pequenos ícones rotulados. <br/>                                                          | use esse estilo se houver alguns comandos ou o programa não for usado com frequência. esse estilo sempre tem uma única linha. <br/> ![captura de tela da barra de ferramentas com ícones rotulados ](images/cmd-toolbars-image8.png)<br/> Uma barra de ferramentas de ícones rotulados Windows Explorer.<br/>                                                                                                                                                                                                               |
+| **Barras de ferramentas parciais**<br/> uma linha parcial de ícones pequenos usados para economizar espaço quando uma barra de ferramentas completa não é necessária. <br/>       | use esse estilo para janelas com botões de navegação, uma caixa de pesquisa ou guias para eliminar o peso desnecessário na parte superior da janela. <br/> ![captura de tela da barra de menus, da barra de ferramentas e da barra de favoritos ](images/cmd-toolbars-image17.png)<br/> As barras de ferramentas parciais podem ser combinadas com botões de navegação, uma caixa de pesquisa ou guias.<br/>                                                                                                                                                  |
+| **Barras de ferramentas parciais grandes**<br/> uma linha parcial de ícones grandes usada para economizar espaço quando uma barra de ferramentas completa não é necessária. <br/> | use esse estilo para utilitários simples que têm botões de navegação ou uma caixa de pesquisa para eliminar o peso desnecessário na parte superior da janela. <br/> ![captura de tela de uma barra de ferramentas parcial grande ](images/cmd-toolbars-image18.png)<br/> Uma barra de ferramentas parcial grande Windows Defender.<br/>                                                                                                                                                                                         |
 
 
 
@@ -161,13 +161,13 @@ Por fim, os controles da barra de ferramentas têm vários padrões de uso:
 
 |     Uso                                                                                                                 |     Exemplo                                                                                                                                                                                                                                                                                                                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Botões de ícone de comando**<br/> clicar em um botão de comando inicia uma ação imediata. <br/>                                                                                                 | ![captura de tela de uma barra de ferramentas de ícones rotulados ](images/cmd-toolbars-image19.png)<br/> exemplos de botões de comando de ícone de Windows Fax e Scan.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| **Botões de ícone de modo**<br/> clicar em um botão de modo entra no modo selecionado. <br/>                                                                                                            | ![captura de tela de uma barra de ferramentas vertical ](images/cmd-toolbars-image20.png)<br/> exemplos de botões de modo de Windows Paint.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| **Botões de ícone de propriedade**<br/> o estado de um botão de propriedade reflete o estado dos objetos atualmente selecionados, se houver. clicar no botão aplica a alteração aos objetos selecionados. <br/> | ![captura de tela de ícones de formatação e texto selecionado ](images/cmd-toolbars-image21.png)<br/> Exemplos de botões de propriedade de Microsoft Word.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| **Botões de ícone rotulados**<br/> um botão de comando ou botão de propriedade rotulado com um ícone e um rótulo de texto. <br/>                                                                               | esses botões são usados para botões da barra de ferramentas usados com frequência cujo ícone não é suficientemente auto-explicativo. Eles também são usados em barras de ferramentas que têm poucos botões que cada botão pode ter um rótulo de texto. <br/> ![Captura de tela que mostra a barra de ferramentas com ícones rotulados para os botões usados com mais frequência. ](images/cmd-toolbars-image22.png)<br/> Uma barra de ferramentas com seus botões usados com mais frequência rotulados.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| **Botões de menu**<br/> um botão de comando usado para apresentar um pequeno conjunto de comandos relacionados. <br/>                                                                                                | um único triângulo apontando para baixo indica que clicar no botão mostra um menu. <br/> ![captura de tela da barra de ferramentas e da lista suspensa de comandos ](images/cmd-toolbars-image23.png)<br/> Um botão de menu com um pequeno conjunto de comandos relacionados.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| **Botões de divisão**<br/> um botão de comando usado para consolidar variações de um comando, especialmente quando um dos comandos é usado na maioria das vezes. <br/>                                     | ![captura de tela do botão de impressão de divisão ](images/cmd-toolbars-image24.png)<br/> um botão de divisão em seu estado normal.<br/> como um botão de menu, um único triângulo apontando para baixo indica que clicar na parte mais à direita do botão mostra um menu. <br/> ![captura de tela de comandos do botão de impressão de divisão ](images/cmd-toolbars-image25.png)<br/> um botão de divisão suspenso.<br/> Neste exemplo, um botão de divisão é usado para consolidar todos os comandos relacionados à impressão. o comando de impressão imediata é usado na maioria das vezes, de modo que os usuários normalmente não precisam ver os outros comandos. <br/> ao contrário de um botão de menu, clicar na parte esquerda do botão executa a ação diretamente no rótulo. os botões de divisão entram em vigor em situações em que o próximo comando provavelmente será igual ao último comando. Nesse caso, o rótulo é alterado para o último comando, como com um seletor de cores:<br/> ![captura de tela do ícone de Bucket derramando pintura ](images/cmd-toolbars-image26.png)<br/> Neste exemplo, o rótulo é alterado para o último comando.<br/> |
-| **Listas suspensas**<br/> uma lista suspensa (editável ou somente leitura) usada para exibir ou alterar uma propriedade. <br/>                                                                                   | ![captura de tela da lista suspensa de fontes ](images/cmd-toolbars-image27.png)<br/> Neste exemplo, as listas suspensas são usadas para exibir e definir atributos de fonte.<br/> Uma lista suspensa em uma barra de ferramentas reflete o estado do objeto atualmente selecionado, se houver. Alterar a lista altera o estado do objeto selecionado. <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Botões de ícone de comando**<br/> clicar em um botão de comando inicia uma ação imediata. <br/>                                                                                                 | ![captura de tela de uma barra de ferramentas de ícones rotulados ](images/cmd-toolbars-image19.png)<br/> Exemplos de botões de comando de ícone Windows Fax e Verificação.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Botões de ícone de modo**<br/> clicar em um botão de modo entra no modo selecionado. <br/>                                                                                                            | ![captura de tela de uma barra de ferramentas vertical ](images/cmd-toolbars-image20.png)<br/> Exemplos de botões de modo Windows Paint.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Botões do ícone de propriedade**<br/> O estado de um botão de propriedade reflete o estado dos objetos selecionados no momento, se algum. clicar no botão aplica a alteração aos objetos selecionados. <br/> | ![captura de tela de ícones de formatação e texto selecionado ](images/cmd-toolbars-image21.png)<br/> Exemplos de botões de propriedade de Microsoft Word.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Botões de ícone rotulados**<br/> um botão de comando ou um botão de propriedade rotulado com um ícone e um rótulo de texto. <br/>                                                                               | esses botões são usados para botões de barra de ferramentas usados com frequência cujo ícone não é suficientemente autoexplicativo. eles também são usados em barras de ferramentas que têm tão poucos botões que cada botão pode ter um rótulo de texto. <br/> ![Captura de tela que mostra a barra de ferramentas com ícones rotulados para os botões usados com mais frequência. ](images/cmd-toolbars-image22.png)<br/> Uma barra de ferramentas com seus botões mais usados rotulados.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Botões de menu**<br/> um botão de comando usado para apresentar um pequeno conjunto de comandos relacionados. <br/>                                                                                                | um único triângulo que aponta para baixo indica que clicar no botão mostra um menu. <br/> ![captura de tela da barra de ferramentas e lista de comandos na lista de comandos ](images/cmd-toolbars-image23.png)<br/> Um botão de menu com um pequeno conjunto de comandos relacionados.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Botões de divisão**<br/> um botão de comando usado para consolidar variações de um comando, especialmente quando um dos comandos é usado na maioria das vezes. <br/>                                     | ![captura de tela do botão dividir impressão ](images/cmd-toolbars-image24.png)<br/> um botão de divisão em seu estado normal.<br/> como um botão de menu, um único triângulo que aponta para baixo indica que clicar na parte mais à direita do botão mostra um menu. <br/> ![captura de tela de comandos de botão de impressão dividida ](images/cmd-toolbars-image25.png)<br/> um botão de divisão descartado.<br/> neste exemplo, um botão de divisão é usado para consolidar todos os comandos relacionados à impressão. O comando de impressão imediata é usado na maioria das vezes, portanto, os usuários normalmente não precisam ver os outros comandos. <br/> ao contrário de um botão de menu, clicar na parte esquerda do botão executa a ação no rótulo diretamente. Os botões de divisão são eficazes em situações em que o próximo comando provavelmente será o mesmo que o último comando. nesse caso, o rótulo é alterado para o último comando, assim como ocorre com um selador de cores:<br/> ![captura de tela da pintura com ícone de bucket ](images/cmd-toolbars-image26.png)<br/> Neste exemplo, o rótulo é alterado para o último comando.<br/> |
+| **Listas suspensas**<br/> uma lista lista listada (editável ou somente leitura) usada para exibir ou alterar uma propriedade. <br/>                                                                                   | ![captura de tela da lista de fontes listada ](images/cmd-toolbars-image27.png)<br/> Neste exemplo, as listas listadas são usadas para exibir e definir atributos de fonte.<br/> Uma lista lista listada em uma barra de ferramentas reflete o estado do objeto selecionado no momento, se for o caso. Alterar a lista altera o estado do objeto selecionado. <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 
 
@@ -177,21 +177,21 @@ Por fim, os controles da barra de ferramentas têm vários padrões de uso:
 
 ### <a name="presentation"></a>Apresentação
 
--   **Escolha um estilo de barra de ferramentas adequado com base no número de comandos e seu uso.** Consulte a tabela de estilo da barra de ferramentas anterior para obter diretrizes sobre como escolher. Evite usar uma configuração de barra de ferramentas que leve muito espaço na área de trabalho do programa.
--   **Coloque as barras de ferramentas logo acima da área de conteúdo,** abaixo da barra de menus e da barra de endereços, se presente.
--   **Se o espaço estiver em um Premium, Economize espaço:**
+-   **Escolha um estilo de barra de ferramentas adequado com base no número de comandos e no uso.** Consulte a tabela de estilo da barra de ferramentas anterior para obter diretrizes sobre como escolher. Evite usar uma configuração de barra de ferramentas que ocupa muito espaço da área de trabalho do programa.
+-   **Coloque barras de ferramentas logo acima da área de conteúdo,** abaixo da barra de menus e da barra de endereços, se estiver presente.
+-   **Se o espaço estiver em um premium, economize espaço:**
 
-    -   Omitir os rótulos de ícones bem conhecidos e comandos usados com menos frequência.
+    -   Omitir os rótulos de ícones conhecidos e comandos usados com menos frequência.
     -   Usando apenas uma barra de ferramentas parcial em vez de toda a largura da janela.
     -   Consolidando comandos relacionados com um botão de menu ou botão de divisão.
     -   Usando uma [divisa de estouro](glossary.md) para revelar comandos usados com menos frequência.
     -   Exibindo comandos somente quando eles se aplicam ao contexto atual.
 
-    ![captura de tela dos ícones comuns da barra de ferramentas não rotuladas ](images/cmd-toolbars-image28.png)
+    ![captura de tela dos ícones comuns da barra de ferramentas não rotulados ](images/cmd-toolbars-image28.png)
 
-    a barra de ferramentas do Windows Internet Explorer economiza espaço omitindo rótulos de ícones bem conhecidos, usando uma barra de ferramentas parcial e usando uma divisa de estouro para comandos usados com menos frequência.
+    A Windows Internet Explorer de ferramentas economiza espaço omitindo rótulos de ícones conhecidos, usando uma barra de ferramentas parcial e usando uma divisa de estouro para comandos usados com menos frequência.
 
--   **Para o padrão da barra de ferramentas de ícones sem rótulo, use uma configuração padrão com no máximo duas linhas de barras de ferramentas.** Se mais de duas linhas puderem ser úteis, torne as barras de ferramentas personalizáveis. Começar com mais de duas linhas pode sobrecarregar os usuários e levar muito espaço na área de trabalho do programa.
+-   **Para o padrão de barra de ferramentas ícones sem rótulo, use uma configuração padrão com não mais de duas linhas de barras de ferramentas.** Se mais de duas linhas podem ser úteis, faça com que as barras de ferramentas sejam personalizáveis. Começando com mais de duas linhas, os usuários podem sobrecarregar e obter muito espaço da área de trabalho do programa.
 
     **Incorreto:**
 
@@ -199,45 +199,45 @@ Por fim, os controles da barra de ferramentas têm vários padrões de uso:
 
     Uma configuração padrão com mais de duas linhas de barras de ferramentas resulta em muita confusão visual.
 
--   **Desabilite os botões da barra de ferramentas individuais que não se aplicam ao contexto atual,** em vez de removê-los. Isso torna o conteúdo da barra de ferramentas estável e mais fácil de encontrar.
--   **Desabilite os botões individuais da barra de ferramentas se clicar neles resultaria em um erro diretamente.** Fazer isso é necessário para manter uma sensação direta.
--   **Para o padrão da barra de ferramentas ícones sem rótulo, remova as barras de ferramentas inteiras se elas não se aplicarem ao contexto atual.** Exiba-os somente nos modos aplicáveis.
+-   **Desabilite os botões da barra de ferramentas individuais que não se aplicam ao contexto atual, em** vez de removê-los. Isso torna o conteúdo da barra de ferramentas estável e mais fácil de encontrar.
+-   **Desabilitar botões de barra de ferramentas individuais se clicar neles resultaria diretamente em um erro.** Fazer isso é necessário para manter uma sensação direta.
+-   **Para o padrão de barra de ferramentas de ícones sem rótulo, remova barras de ferramentas inteiras se elas não se aplicarem ao contexto atual.** Exibe-os somente nos modos aplicáveis.
 
     ![captura de tela da barra de ferramentas de depuração ](images/cmd-toolbars-image30.png)
 
-    Neste exemplo, a barra de ferramentas de depuração é mostrada somente quando o programa está sendo executado.
+    Neste exemplo, a barra de ferramentas Depurar é mostrada somente quando o programa está sendo executado.
 
--   **Exibir botões da barra de ferramentas alinhados à esquerda.** O ícone de ajuda, se presente, está alinhado à direita.
+-   **Exibir botões da barra de ferramentas alinhados à esquerda.** O ícone ajuda, se presente, está alinhado à direita.
 
     ![captura de tela da barra de ferramentas, ícone de ajuda alinhado à direita ](images/cmd-toolbars-image31.png)
 
-    Todos os botões da barra de ferramentas são alinhados à esquerda, com exceção da ajuda.
+    Todos os botões da barra de ferramentas são alinhados à esquerda, exceto para a Ajuda.
 
-    **exceção:** Windows barras de ferramentas no estilo 7 alinham comandos específicos do programa, mas alinhando à direita os comandos padrão, bem conhecidos, como opções, exibição e ajuda.
+    **Exceção:** Windows de ferramentas de estilo 7 alinha comandos específicos do programa à esquerda, mas alinha à direita comandos padrão e conhecidos, como Opções, Exibição e Ajuda.
 
--   **Não altere os rótulos do botão da barra de ferramentas dinamicamente.** Isso é confuso e inesperado. No entanto, você pode alterar o ícone para refletir o estado atual.
+-   **Não altere os rótulos de botão da barra de ferramentas dinamicamente.** Fazer isso é confuso e inesperado. No entanto, você pode alterar o ícone para refletir o estado atual.
 
-    ![captura de tela do ícone de Bucket derramando pintura ](images/cmd-toolbars-image26.png)
+    ![captura de tela da pintura com ícone de bucket ](images/cmd-toolbars-image26.png)
 
     Neste exemplo, o ícone é alterado para indicar o comando padrão.
 
 ### <a name="controls-and-commands"></a>Controles e comandos
 
 -   **Prefira os comandos usados com mais frequência.**
-    -   **Para barras de ferramentas primárias, forneça comandos abrangentes.** As barras de ferramentas primárias não precisam ser tão abrangentes quanto as barras de menus, mas precisam fornecer todos os comandos que não são prontamente detectáveis em outro lugar. As barras de ferramentas primárias não precisam ter comandos para:
+    -   **Para barras de ferramentas primárias, forneça comandos abrangentes.** As barras de ferramentas primárias não precisam ser tão abrangentes quanto as barras de menu, mas precisam fornecer todos os comandos que não são prontamente descobertos em outro lugar. As barras de ferramentas primárias não precisam ter comandos para:
         -   Comandos que estão diretamente na própria interface do usuário.
         -   Comandos normalmente acessados por meio de menus de contexto.
-        -   Comandos padrão e conhecidos, como recortar, copiar e colar.
-    -   **Para barras de ferramentas complementares, forneça comandos que são usados com mais frequência.** Os comandos da barra de menus são um superconjunto dos comandos da barra de ferramentas, de modo que você não precisa fornecer tudo. Concentre-se no acesso rápido e conveniente aos comandos e pule o restante.
--   **Prefira controles diretos.** Use os botões da barra de ferramentas na seguinte ordem de preferência:
-    -   **Botão de ícone.** Direto e consome espaço mínimo.
-    -   **Botão de ícone rotulado.** Direto, mas leva mais espaço.
-    -   **Botão de divisão.** Direto para o comando mais comum, mas lida com variações de comando.
+        -   Comandos padrão e conhecidos, como Recortar, Copiar e Colar.
+    -   **Para barras de ferramentas complementares, forneça comandos que são usados com mais frequência.** Os comandos da barra de menus são um superconjunto dos comandos da barra de ferramentas, portanto, você não precisa fornecer tudo. Concentre-se no acesso rápido e conveniente ao comando e ignore o restante.
+-   **Prefira controles diretos.** Use botões de barra de ferramentas na seguinte ordem de preferência:
+    -   **Botão ícone.** Direto e ocupa espaço mínimo.
+    -   **Botão de ícone rotulado.** Direto, mas ocupa mais espaço.
+    -   **Botão Dividir.** Direto para o comando mais comum, mas lida com variações de comando.
     -   **Botão de menu.** Indireto, mas apresenta muitos comandos.
--   **Prefira comandos imediatos.** Para comandos que podem ser imediatos ou ter entrada adicional para flexibilidade:
-    -   Para barras de ferramentas primárias, use as versões flexíveis dos comandos (como Print...).
-    -   Para barras de ferramentas complementares, use as versões imediatas na barra de ferramentas (como impressão) e use versões flexíveis na barra de menus (como Print...).
--   **Forneça rótulos para comandos usados com frequência,** especialmente se seus ícones não forem ícones bem conhecidos.
+-   **Prefira comandos imediatos.** Para comandos que podem ser imediatos ou têm entrada adicional para flexibilidade:
+    -   Para barras de ferramentas primárias, use as versões flexíveis de comandos (como Imprimir...).
+    -   Para barras de ferramentas complementares, use as versões imediatas na barra de ferramentas (como Imprimir) e use versões flexíveis na barra de menus (como Imprimir...).
+-   **Forneça rótulos para comandos usados com frequência,** especialmente se seus ícones não são ícones conhecidos.
 
     **Aceitável:**
 
@@ -247,20 +247,20 @@ Por fim, os controles da barra de ferramentas têm vários padrões de uso:
 
     ![captura de tela da barra de ferramentas com alguns ícones rotulados ](images/cmd-toolbars-image33.png)
 
-    a barra de ferramentas Windows Fax e Scan tem poucos comandos, portanto, a versão melhor rotula as mais importantes.
+    A Windows de ferramentas Fax e Verificação tem alguns comandos, portanto, a versão melhor rotula os mais importantes.
 
--   Não coloque comandos em menus da barra de ferramentas que também estejam diretamente na barra de ferramentas.
+-   Não coloque comandos em menus da barra de ferramentas que também estão diretamente na barra de ferramentas.
 
     **Incorreto:**
 
-    ![captura de tela do comando Imprimir na barra de ferramentas e no menu ](images/cmd-toolbars-image34.png)
+    ![captura de tela do comando print na barra de ferramentas e no menu ](images/cmd-toolbars-image34.png)
 
-    Neste exemplo, Print está diretamente na barra de ferramentas, portanto, ele não precisa estar no menu.
+    Neste exemplo, Imprimir está diretamente na barra de ferramentas, portanto, não precisa estar no menu.
 
-### <a name="organization-and-order"></a>Organização e pedido
+### <a name="organization-and-order"></a>Organização e ordem
 
--   **Organize os comandos dentro de uma barra de ferramentas em grupos relacionados.**
--   **Coloque os grupos usados com mais frequência primeiro. Dentro de um grupo, coloque os comandos em sua ordem lógica.** Em geral, os comandos devem ter um fluxo lógico para facilitar a localização, ao mesmo tempo em que os comandos usados com mais frequência aparecem primeiro. Isso é mais eficiente, especialmente se houver estouro.
+-   **Organize os comandos em uma barra de ferramentas em grupos relacionados.**
+-   **Coloque os grupos usados com mais frequência primeiro. Em um grupo, coloque os comandos em sua ordem lógica.** Em geral, os comandos devem ter um fluxo lógico para torná-los fáceis de encontrar, enquanto ainda têm os comandos usados com mais frequência aparecem primeiro. Isso é mais eficiente, especialmente se houver estouro.
 -   **Use os divisores de grupo somente se os comandos entre grupos estão fracamente aparados.** Isso torna os agrupamentos óbvios e os comandos mais fáceis de encontrar.
 
     ![Captura de tela que mostra uma barra de ferramentas com ícones bem organizados usando divisores de grupo.](images/cmd-toolbars-image35.png)
@@ -337,7 +337,7 @@ Em geral, as barras de ferramentas funcionam muito bem junto com barras de menu,
 
     As listas listadas não precisam de ícones, mas todos os outros controles da barra de ferramentas precisam.
 
-    **Exceção:** Windows de ferramentas de estilo 7 usam ícones somente para comandos cujos ícones são bem conhecidos; caso contrário, eles usarão rótulos de texto sem ícones. Isso melhora a clareza dos rótulos, mas requer mais espaço.
+    **Exceção:** Windows barras de ferramentas de estilo 7 usam ícones somente para comandos cujos ícones são bem conhecidos; caso contrário, eles usarão rótulos de texto sem ícones. Isso melhora a clareza dos rótulos, mas requer mais espaço.
 
 -   **Certifique-se de que os ícones da barra de ferramentas estão claramente visíveis em relação à cor da tela de fundo da barra de ferramentas.** Sempre avalie os ícones da barra de ferramentas no contexto e no modo de alto contraste.
 -   **Escolha designs de ícone que comuniquem claramente sua finalidade, especialmente para os comandos usados com mais frequência.** As barras de ferramentas bem projetadas precisam de ícones autoexplicativos porque os usuários não conseguem encontrar comandos com eficiência usando suas dicas de ferramenta. No entanto, as barras de ferramentas ainda funcionarão bem se os ícones de alguns comandos usados com menos frequência não são autoexplicativos.
@@ -376,123 +376,123 @@ Encontrar... Ctrl+F
 Encontrar nextF3(comando geralmente não determinado)  
 Substituir... Ctrl+H  
 Ir para... Ctrl+G
-</dl> </dd> <dd>Print(split button) <dl> Imprimir... CTRL + P  
-Visualizar impressão <separator>  
+</dl> </dd> <dd>Print(split button) <dl> Imprimir... Ctrl+P  
+Visualização de impressão <separator>  
 Configuração de página
-</dl> </dd> Exibir (botão de menu) <dl> Barra de menus (verificar se visível)  
-Painel de detalhes (verificar se visível)  
-Painel de visualização (verificar se visível)  
-Barra de status (verificar se visível) <separator>  
+</dl> </dd> Exibir(botão de menu) <dl> Barra de menus (verifique se está visível)  
+Painel Detalhes (verifique se está visível)  
+Painel de visualização (verifique se está visível)  
+Barra de status (verifique se está visível) <separator>  
 Zoom  
-Zoom de InCtrl + +  
-Ampliar CTRL +- <separator>  
-Tamanho do texto (a configuração selecionada tem marcador) <dl> Melhor  
+Aplicar zoom emCtrl++  
+ReduzirCtrl+- <separator>  
+Tamanho do texto (a configuração selecionada tem marcador) <dl> Maior  
 Maior  
 Médio  
 Menor  
 Menor
-</dl> </dd> <separator> ScreenF11 completo  
+</dl> </dd> <separator> Tela inteiraF11  
 RefreshF5
 </dl> </dd> Tools(menu button) <dl> ... <separator>  
 Opções
 </dl>> </dd> Help(split button, use the Help icon) <dl> <program name> helpF1 <separator>  
-Pensar <program name>  
+Sobre <program name>  
 </dl> </dd> </dl>
 
 **Barras de ferramentas complementares**
 
-Esses comandos complementam as barras de menu padrão. Esta lista mostra os rótulos de botão (e o tipo) com a ordem e os separadores, as teclas de atalho e as reticências. **Observe que o comando para exibir e ocultar a barra de menus está no menu ferramentas.**
+Esses comandos complementam barras de menu padrão. Esta lista mostra os rótulos de botão (e tipo) com seu pedido e separadores, teclas de atalho e reellipses. **Observe que o comando para exibir e ocultar a barra de menus está no menu Ferramentas.**
 
-Os nomes das categorias da barra de ferramentas suplementares diferem dos nomes de categoria de menu padrão, pois precisam ser mais abrangentes. Por exemplo, a categoria organizar é usada em vez de editar porque contém comandos que não estão relacionados à edição. **Para manter a consistência entre barras de menus e barras de ferramentas, use os nomes de categoria de menu padrão, caso isso não seja enganoso.**
+Os nomes de categoria da barra de ferramentas complementares diferem dos nomes de categoria de menu padrão porque precisam ser mais abrangentes. Por exemplo, a categoria Organizar é usada em vez de Editar porque contém comandos que não estão relacionados à edição. **Para manter a consistência entre barras de menu e barras de ferramentas, use os nomes de categoria de menu padrão se isso não for enganoso.**
 
 **Incorreto:**
 
 ![captura de tela das mesmas opções para comandos diferentes ](images/cmd-toolbars-image44.png)
 
-Neste exemplo, a barra de ferramentas deve usar editar em vez de organizar para consistência porque ela tem os comandos de menu de edição padrão.
+Neste exemplo, a barra de ferramentas deve usar Editar em vez de Organizar para consistência porque tem os comandos de menu Editar padrão.
 
 ### <a name="palette-windows"></a>Janelas de paleta
 
--   **As janelas de paleta usam barras de título mais curtas para minimizar o espaço da tela.** Coloque um botão fechar na barra de título.
--   **Defina o texto da barra de título para o comando que exibiu a janela da paleta.**
--   **Use maiúsculas e minúsculas no estilo de frase sem pontuação final.**
--   **Forneça um menu de contexto para comandos de gerenciamento do Windows.** Exiba esse menu de contexto quando os usuários clicarem com o botão direito do mouse na barra de título.
+-   **As janelas de paleta usam barras de título mais curtas para minimizar o espaço na tela.** Coloque um botão Fechar na barra de título.
+-   **De definir o texto da barra de título como o comando que exibiu a janela da paleta.**
+-   **Use a capitalização de estilo de frase sem terminar a pontuação.**
+-   **Forneça um menu de contexto para comandos de gerenciamento de janela.** Exibe esse menu de contexto quando os usuários clicam com o botão direito do mouse na barra de título.
 
     ![captura de tela da caixa de ferramentas com o menu de contexto ](images/cmd-toolbars-image45.png)
 
     Neste exemplo, os usuários podem clicar com o botão direito do mouse na barra de título para exibir o menu de contexto.
 
--   **Quando possível e úteis, torne as janelas de paleta redimensionáveis.** Indique que a janela é redimensionável, usando ponteiros de redimensionamento quando estiver sobre o quadro da janela.
--   **Quando uma janela de paleta é exibida novamente, exiba-a usando o mesmo estado que o último acessado.** Ao fechar, salve o tamanho e o local da janela. Ao Reexibir, restaure o tamanho e o local da janela salvo. Além disso, considere tornar esses atributos persistentes entre as instâncias do programa por usuário.
+-   **Quando possível e útil, tornar as janelas de paleta resizáveis.** Indique que a janela é resizável, usando ponteiros de resize quando estiver sobre o quadro da janela.
+-   **Quando uma janela de paleta é exibida em redisplay, exibe-a usando o mesmo estado acessado pela última vez.** Ao fechar, salve o tamanho e o local da janela. Ao repetir, restaure o tamanho e o local da janela salvos. Além disso, considere tornar esses atributos persistentes entre instâncias do programa por usuário.
 
 ### <a name="customization"></a>Personalização
 
--   **Fornecer personalização para barras de ferramentas que consistem em duas ou mais linhas.** Somente o estilo de ícones sem rótulo precisa de personalização. Barras de ferramentas simples com poucos comandos não precisam de personalização.
--   **Forneça uma boa configuração padrão.** Os usuários não devem ter que personalizar suas barras de ferramentas para cenários comuns. Não dependem de os usuários personalizarem seu caminho de uma configuração inicial incorreta. Suponha que a maioria dos usuários não personalize suas barras de ferramentas.
+-   **Forneça personalização para barras de ferramentas que consistem em duas ou mais linhas.** Somente o estilo de ícones sem rótulo precisa de personalização. Barras de ferramentas simples com alguns comandos não precisam de personalização.
+-   **Forneça uma boa configuração padrão.** Os usuários não devem ter que personalizar suas barras de ferramentas para cenários comuns. Não dependa que os usuários personalizem sua saída de uma configuração inicial ruim. Suponha que a maioria dos usuários não personalize suas barras de ferramentas.
 -   **Forneça um menu de contexto com os seguintes comandos:**
     -   Uma lista de caixas de seleção para exibir as barras de ferramentas disponíveis
     -   Bloquear/desbloquear barras de ferramentas
     -   Personalizar...
--   **Bloquear barras de ferramentas personalizáveis por padrão**, para evitar alterações acidentais.
--   **Para o comando Personalizar, exiba uma caixa de diálogo opções** que forneça a capacidade de escolher quais barras de ferramentas são exibidas e os comandos em cada barra de ferramentas.
+-   **Bloqueie barras de ferramentas personalizáveis por padrão** para evitar alterações acidentais.
+-   **Para o comando Personalizar, exibe uma** caixa de diálogo opções que fornece a capacidade de escolher quais barras de ferramentas são exibidas e os comandos em cada barra de ferramentas.
 
-    ![captura de tela de opções e caixa de diálogo Personalizar ](images/cmd-toolbars-image46.png)
+    ![captura de tela da caixa de diálogo de personalização e das opções ](images/cmd-toolbars-image46.png)
 
-    neste exemplo, Visual Studio fornece uma caixa de diálogo opções para personalizar suas barras de ferramentas.
+    Neste exemplo, o Visual Studio fornece uma caixa de diálogo de opções para personalizar suas barras de ferramentas.
 
--   Forneça um comando de redefinição para retornar à configuração da barra de ferramentas original na caixa de diálogo Personalizar opções.
--   **Forneça a capacidade de personalizar as barras de ferramentas usando o recurso de arrastar e soltar das seguintes maneiras:**
+-   Forneça um comando Redefinir para retornar à configuração da barra de ferramentas original na caixa de diálogo Personalizar opções.
+-   **Forneça a capacidade de personalizar as barras de ferramentas usando o "arrastar e soltar" das seguintes maneiras:**
 
-    -   Definir ordem e posições da barra de ferramentas.
-    -   Defina comprimentos da barra de ferramentas, exibindo as barras de ferramentas que são muito pequenas para exibir seu conteúdo com uma divisa de estouro.
-    -   Se houver suporte, desencaixe as barras de ferramentas para se tornarem janelas de paleta e vice-versa.
+    -   Definir posição e ordem da barra de ferramentas.
+    -   Definir comprimentos da barra de ferramentas, exibindo todas as barras de ferramentas muito pequenas para exibir seu conteúdo com uma divisa de estouro.
+    -   Se tiver suporte, desencaixe as barras de ferramentas para se tornar janelas de paleta e vice-versa.
 
-    Quando a caixa de diálogo Personalizar opções for exibida:
+    Quando a caixa de diálogo Personalizar opções é exibida:
 
-    -   Defina o conteúdo da barra de ferramentas.
-    -   Defina a ordem do conteúdo da barra de ferramentas.
+    -   Definir o conteúdo da barra de ferramentas.
+    -   Definir a ordem do conteúdo da barra de ferramentas.
 
     Isso permite que os usuários façam alterações de forma mais direta e eficiente.
 
--   **Salve todas as personalizações da barra de ferramentas,** em uma base por usuário.
+-   **Salve todas as personalizações da barra de ferramentas,** por usuário.
 
-### <a name="using-ellipses"></a>Usando reticências
+### <a name="using-ellipses"></a>Usando reellipses
 
-Enquanto os comandos da barra de ferramentas são usados para ações imediatas, às vezes, mais informações são necessárias para executar a ação. Use uma elipse para indicar que um comando requer mais informações para que ele possa entrar em vigor. Coloque as reticências no final da dica de ferramenta e do rótulo, se houver uma.
+Embora os comandos da barra de ferramentas sejam usados para ações imediatas, às vezes, mais informações são necessárias para executar a ação. Use uma reellipse para indicar que um comando requer mais informações antes que ele possa ter efeito. Coloque as reellipses no final da dica de ferramenta e do rótulo, se houver uma.
 
-![captura de tela do texto da dica de ferramenta de impressão com reticências ](images/cmd-toolbars-image47.png)
+![captura de tela do texto da dica de ferramenta de impressão com reellipses ](images/cmd-toolbars-image47.png)
 
-Neste exemplo, a impressão... comando exibe uma caixa de diálogo de impressão para coletar mais informações.
+Neste exemplo, a Imprime... O comando exibe uma caixa de diálogo Imprimir para coletar mais informações.
 
-No entanto, se um comando não puder entrar em vigor imediatamente, não será necessária nenhuma elipse. Portanto, por exemplo, as configurações de compartilhamento não têm reticências, embora precise de informações adicionais, porque o comando possivelmente não pode entrar em vigor imediatamente.
+Se um comando não puder ter efeito imediatamente, no entanto, nenhuma reellipse será necessária. Portanto, por exemplo, as configurações de compartilhamento não têm reellipses, embora precisem de informações adicionais, porque o comando não pode ter efeito imediatamente.
 
-![captura de tela da barra de ferramentas, comando e dica de ferramenta ](images/cmd-toolbars-image48.png)
+![captura de tela da barra de ferramentas, do comando e da dica de ferramenta ](images/cmd-toolbars-image48.png)
 
-o comando Sharing Configurações não tem reticências porque ele não pode entrar em vigor imediatamente.
+O comando Configurações Compartilhamento não tem reellipse porque não pode ter efeito imediatamente.
 
-Como as barras de ferramentas são constantemente exibidas e o espaço está em uma parte Premium, as **reticências devem ser usadas com pouca frequência**.
+Como as barras de ferramentas são constantemente exibidas e o espaço está em um premium, as reellipses devem ser usadas **com pouca pouca inconsciência.**
 
 > [!Note]  
-> Para os menus exibidos por uma barra de ferramentas, aplique as [diretrizes de reticências de menu](cmd-menus.md).
+> Para menus exibidos por uma barra de ferramentas, aplique as diretrizes [de replicação de menu](cmd-menus.md).
 
  
 
-## <a name="recommended-sizing-and-spacing"></a>Dimensionamento e espaçamento recomendados
+## <a name="recommended-sizing-and-spacing"></a>Espaçamento e o espaçamento recomendados
 
 ![captura de tela de barras de ferramentas com informações de espaçamento ](images/cmd-toolbars-image49.png)
 
-Dimensionamento e espaçamento recomendados para barras de ferramentas padrão.
+O espaçamento e o espaçamento recomendados para barras de ferramentas padrão.
 
 ## <a name="labels"></a>Rótulos
 
 ### <a name="general"></a>Geral
 
 -   **Use a capitalização com estilo de frase.**
-    -   **Exceção:** Para aplicativos herdados, você pode usar a capitalização no estilo de título, se necessário, para evitar a mistura de estilos de capitalização.
+    -   **Exceção:** Para aplicativos herdado, você pode usar a capitalização de estilo de título, se necessário, para evitar a combinação de estilos de capitalização.
 
 ### <a name="unlabeled-icon-buttons"></a>Botões de ícone sem rótulo
 
--   **Use uma dica de ferramenta para rotular o comando.** Para o texto da dica de ferramenta, use o que o rótulo seria se o botão fosse rotulado, mas inclua a tecla de atalho se houver uma.
+-   **Use uma dica de ferramenta para rotular o comando.** Para o texto da dica de ferramenta, use qual seria o rótulo se o botão fosse rotulado, mas inclua a tecla de atalho se houver um.
 
     ![captura de tela da barra de ferramentas, ícone de impressora e dica de ferramenta ](images/cmd-toolbars-image50.png)
 
@@ -500,13 +500,13 @@ Dimensionamento e espaçamento recomendados para barras de ferramentas padrão.
 
 ### <a name="labeled-icon-buttons"></a>Botões de ícone rotulados
 
--   **Use um rótulo conciso.** Use uma única palavra, se possível, com quatro palavras no máximo.
+-   **Use um rótulo conciso.** Use uma única palavra, se possível, no máximo quatro palavras.
 -   **Coloque o rótulo à direita do ícone.**
--   **Use um InfoTip para descrever o comando.** Como os botões são rotulados, usar uma dica de ferramenta em vez de um InfoTip seria redundante.
+-   **Use uma infotip para descrever o comando.** Como os botões são rotulados, usar uma dica de ferramenta em vez de uma infotip seria redundante.
 
-    ![captura de tela do botão rotulado com InfoTip ](images/cmd-toolbars-image51.png)
+    ![captura de tela do botão rotulado com infotip ](images/cmd-toolbars-image51.png)
 
-    Um exemplo de um botão de ícone rotulado InfoTip.
+    Um exemplo de uma infotip de botão de ícone rotulado.
 
 ### <a name="drop-down-lists"></a>Listas suspensas
 
@@ -514,63 +514,63 @@ Dimensionamento e espaçamento recomendados para barras de ferramentas padrão.
 
     ![captura de tela da barra de ferramentas com opções de fonte ](images/cmd-toolbars-image52.png)
 
-    Neste exemplo, o nome da fonte atualmente selecionada atua como o rótulo.
+    Neste exemplo, o nome da fonte atualmente selecionado atua como o rótulo.
 
--   Se uma lista suspensa editável não tiver um valor, use um [prompt](glossary.md).
+-   Se uma lista de listas listadas editáveis não tiver um valor, use um [prompt](glossary.md).
 
-    ![captura de tela dos catálogos de endereços de pesquisa de rótulo de lista ](images/cmd-toolbars-image53.png)
+    ![captura de tela dos livros de endereços de pesquisa de rótulo de lista ](images/cmd-toolbars-image53.png)
 
-    Neste exemplo, um prompt é usado para o rótulo da lista suspensa.
+    Neste exemplo, um prompt é usado para o rótulo da lista lista de listas.
 
 ### <a name="menu-buttons-and-split-buttons"></a>Botões de menu e botões de divisão
 
--   **Prefira nomes de botão de menu baseados em verbo.** No entanto, omita o verbo se ele for criar, mostrar, exibir ou gerenciar. Por exemplo, **ferramentas** e botões de menu de **página** não têm verbos.
--   **Use uma única palavra específica que descreva claramente e precisamente o conteúdo do menu.** Embora os nomes não precisem ser tão gerais que descrevam tudo no menu, eles devem ser previsíveis o suficiente para que os usuários não fiquem surpresos com o que eles consideram no menu.
--   **Embora não seja necessário, forneça descrições de infotip se elas forem úteis.**
+-   **Prefira nomes de botão de menu baseado em verbo.** No entanto, omita o verbo se ele for Criar, Mostrar, Exibir ou Gerenciar. Por exemplo, **os botões** **de** menu Ferramentas e Página não têm verbos.
+-   **Use uma única palavra específica que descreva com clareza e precisão o conteúdo do menu.** Embora os nomes não tenham que ser tão gerais que descrevam tudo no menu, eles devem ser previsíveis o suficiente para que os usuários não sejam surpresas com o que encontram no menu.
+-   **Embora não seja necessário, forneça descrições de infotip se elas são úteis.**
 
 ### <a name="menu-items"></a>Itens de menu
 
--   **Use nomes de itens de menu que começam com uma frase Verb, substantivo ou substantivo.**
--   **Prefira nomes de menu baseados em verbo.** No entanto, omita o verbo se ele for criar, mostrar, exibir ou gerenciar. Por exemplo, os seguintes comandos não usam verbos:
+-   **Use nomes de item de menu que começam com uma frase de verbo, substantivo ou substantivo.**
+-   **Prefira nomes de menu baseados em verbo.** No entanto, omita o verbo se ele for Criar, Mostrar, Exibir ou Gerenciar. Por exemplo, os seguintes comandos não usam verbos:
     -   Sobre
     -   Avançado
     -   Tela inteira
     -   Novo
     -   Opções
     -   Propriedades
--   **Use verbos específicos.** Evite verbos genéricos, não auxiliares, como alterar e gerenciar.
--   **Use substantivos singulares para comandos que se aplicam a um único objeto;** caso contrário, use os substantivos do plural.
--   **Para pares de comandos complementares, escolha nomes claramente complementares.** Exemplos: Adicionar, remover; Mostrar, ocultar; Inserir, excluir.
--   **Escolha nomes de itens de menu com base em metas e tarefas do usuário, não em tecnologia.**
--   Use os seguintes nomes de item de menu para a finalidade indicada:
+-   **Use verbos específicos.** Evite verbos genéricos e sem ajuda, como Alterar e Gerenciar.
+-   **Use substantivos singulares para comandos que se aplicam a um único objeto; caso contrário,** use substantivos plurais.
+-   **Para pares de comandos complementares, escolha nomes claramente complementares.** Exemplos: Adicionar, Remover; Mostrar, Ocultar; Inserir, Excluir.
+-   **Escolha nomes de item de menu com base nas metas e tarefas do usuário, não na tecnologia.**
+-   Use os seguintes nomes de item de menu para a finalidade afirmada:
     -   **Opções:** Para exibir as opções do programa.
-    -   **Personalizar:** Para exibir as opções de programa especificamente relacionadas à configuração de interface do usuário mecânica.
-    -   **Personalizar:** Para exibir um resumo das configurações de [personalização](glossary.md) comumente usadas.
-    -   **Preferências:** Não use. Use as opções em vez disso.
+    -   **Personalizar:** Para exibir as opções de programa relacionadas especificamente à configuração de interface do usuário mecânica.
+    -   **Personalizar:** Para exibir um resumo das configurações de [personalização comumente](glossary.md) usadas.
+    -   **Preferências:** Não use. Em vez disso, use Opções.
     -   **Propriedades:** Para exibir a janela de propriedades de um objeto.
-    -   **Configurações:** Não use como um rótulo de menu. Use as opções em vez disso.
--   **Os itens de menu que exibem submenus nunca têm reticências em seu rótulo.** A seta do submenu indica que outra seleção é necessária.
+    -   **Configurações:** Não use como um rótulo de menu. Em vez disso, use Opções.
+-   **Itens de menu que exibem submenus nunca têm reellipses em seu rótulo.** A seta de submenu indica que outra seleção é necessária.
 
 ## <a name="documentation"></a>Documentação
 
 Ao fazer referência a barras de ferramentas:
 
 -   Se houver apenas uma barra de ferramentas, consulte-a como a barra de ferramentas.
--   Se houver várias barras de ferramentas, consulte-as por nome, seguidos da barra de ferramentas do Word. Consulte a barra de ferramentas principal que está ativada por padrão e contém botões para tarefas básicas, como abrir e imprimir um arquivo, como a barra de ferramentas padrão.
--   A barra de ferramentas é uma palavra única e não capitalizada. (Por outro lado, a barra de menus é de duas palavras.)
--   Consulte os botões da barra de ferramentas por seus rótulos de dica de ferramenta. Use o texto exato do rótulo, incluindo sua capitalização, mas não inclua reticências.
--   Consulte os botões de menu da barra de ferramentas por seus rótulos e o menu do Word. Use o texto exato do rótulo, incluindo sua capitalização.
+-   Se houver várias barras de ferramentas, consulte-as por nome, seguidas pela palavra barra de ferramentas. Consulte a barra de ferramentas principal que está em por padrão e contém botões para tarefas básicas, como abrir e imprimir um arquivo, como a barra de ferramentas padrão.
+-   A barra de ferramentas é uma única palavra não localizada. (Por outro lado, a barra de menus tem duas palavras.)
+-   Consulte os botões da barra de ferramentas por seus rótulos de dica de ferramenta. Use o texto exato do rótulo, incluindo sua capitalização, mas não inclua reellipses.
+-   Consulte os botões de menu da barra de ferramentas por seus rótulos e o menu de palavras. Use o texto exato do rótulo, incluindo sua capitalização.
 -   Consulte os controles da barra de ferramentas geralmente como botões da barra de ferramentas.
--   Para descrever a interação do usuário, use clicar para botões da barra de ferramentas e listas suspensas somente leitura e insira para listas suspensas editáveis. Não use escolher, selecionar ou escolher.
--   Não use cascata, suspenso, suspenso ou pop-up para descrever botões de menu, exceto na documentação de programação.
--   Consulte itens indisponíveis como não disponíveis, não como esmaecidos, desabilitados ou esmaecidos. Use Disabled na documentação de programação.
--   Quando possível, formate os rótulos usando texto em negrito. Caso contrário, coloque os rótulos entre aspas somente se necessário para evitar confusão.
+-   Para descrever a interação do usuário, use clique para botões de barra de ferramentas e listas de listas listadas somente leitura e insira para listas de listas listadas editáveis. Não use escolher, selecionar ou escolher.
+-   Não use em cascata, pull-down, menu suspenso ou pop-up para descrever botões de menu, exceto na documentação de programação.
+-   Consulte itens indisponíveis como indisponíveis, não como esmaecidas, desabilitadas ou esmaecidas. Use desabilitado na documentação de programação.
+-   Quando possível, forja os rótulos usando texto em negrito. Caso contrário, coloque os rótulos entre aspas somente se necessário para evitar confusão.
 
 Exemplos:
 
--   No menu **página** da barra de ferramentas, clique em **Enviar página por email**.
--   Na caixa **fontes** , na barra de ferramentas, digite "Segoe UI".
--   Na barra de ferramentas **formatação** , aponte para **Mostrar** e clique em **comentários**.
+-   No menu **Página** na barra de ferramentas, clique **em Enviar página por email.**
+-   Na caixa **Fontes** na barra de ferramentas, insira "Segoe UI".
+-   Na barra **de ferramentas Formatação,** aponte para **Mostrar** e clique em **Comentários**.
 
  
 

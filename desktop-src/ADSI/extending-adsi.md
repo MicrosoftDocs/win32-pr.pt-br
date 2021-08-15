@@ -1,6 +1,6 @@
 ---
 title: Estendendo ADSI
-description: Com o modelo de extensão ADSI, você pode associar uma classe de diretório com seu próprio objeto COM.
+description: Com o modelo de extensão ADSI, você pode associar uma classe de diretório ao seu próprio objeto COM.
 ms.assetid: bf9a324d-14eb-4eb9-a80d-b0431db3af26
 ms.tgt_platform: multiple
 ms.topic: article
@@ -14,7 +14,7 @@ ms.locfileid: "118428449"
 ---
 # <a name="extending-adsi"></a>Estendendo ADSI
 
-Com o modelo de extensão ADSI, você pode associar uma classe de diretório com seu próprio objeto COM. De uma perspectiva de programador ADSI ou gravador de script, a extensão se torna parte integrante da ADSI. por exemplo, quando um novo funcionário ingressar na Fabrikam, o administrador do Windows NT criará um objeto de usuário no diretório e o administrador da folha de pagamento precisará configurar algumas entradas nos sistemas de recursos humanos para esse usuário. Com uma extensão ADSI, esse processo pode ser simplificado em um único script.
+Com o modelo de extensão ADSI, você pode associar uma classe de diretório ao seu próprio objeto COM. Da perspectiva de um programador adsi ou de um criador de script, a extensão se torna uma parte integral do ADSI. Por exemplo, quando um novo funcionário ingressar na Fabrikam, o administrador do Windows NT criará um objeto de usuário no diretório e o administrador da folha de pagamento precisará configurar algumas entradas nos sistemas de recursos humanos para esse usuário. Com uma extensão ADSI, esse processo pode ser simplificado em um único script.
 
 
 ```VB
@@ -53,7 +53,7 @@ Debug.Print "User: " & usr.Name & "has been created"
 
 
 
-Para obter mais informações, consulte [extensões ADSI](adsi-extensions.md).
+Para obter mais informações, consulte [Extensões ADSI](adsi-extensions.md).
 
  
 

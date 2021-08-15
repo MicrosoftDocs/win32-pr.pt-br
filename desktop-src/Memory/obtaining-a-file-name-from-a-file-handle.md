@@ -1,19 +1,19 @@
 ---
-description: O GetFinalPathNameByHandle, introduzido no Windows Vista e no Windows Server 2008, retornará um caminho de um identificador.
+description: GetFinalPathNameByHandle, introduzido no Windows Vista e Windows Server 2008, retornará um caminho de um handle.
 ms.assetid: 359673bf-cc4c-4881-b946-ecdbef4a7ecb
-title: Obtendo um nome de arquivo de um identificador de arquivo
+title: Obtendo um nome de arquivo de um alçamento de arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee7d0c6fd8ea6839fdbfbe887f7a28b38571013b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f905051fdc9c26d16c00f3f1acb2629ae06b8581abb5e5de50944a74e0c6b8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105766885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118386409"
 ---
-# <a name="obtaining-a-file-name-from-a-file-handle"></a>Obtendo um nome de arquivo de um identificador de arquivo
+# <a name="obtaining-a-file-name-from-a-file-handle"></a>Obtendo um nome de arquivo de um alçamento de arquivo
 
-O [**GetFinalPathNameByHandle**](/windows/win32/api/fileapi/nf-fileapi-getfinalpathnamebyhandlea), introduzido no Windows Vista e no windows Server 2008, retornará um caminho de um identificador. Se você precisar fazer isso em versões anteriores do Windows, o exemplo a seguir obtém um nome de arquivo de um identificador para um objeto de arquivo usando um objeto de mapeamento de arquivo. Ele usa as funções [**CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) e [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) para criar o mapeamento. Em seguida, ele usa a função [**GetMappedFileName**](/windows/win32/api/psapi/nf-psapi-getmappedfilenamea) para obter o nome do arquivo. Para arquivos remotos, ele imprime o caminho do dispositivo recebido dessa função. Para arquivos locais, ele converte o caminho para usar uma letra de unidade e imprime esse caminho. Para testar esse código, crie uma função **Main** que abra um arquivo usando [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) e passe o identificador resultante para `GetFileNameFromHandle` .
+[**GetFinalPathNameByHandle**](/windows/win32/api/fileapi/nf-fileapi-getfinalpathnamebyhandlea), introduzido no Windows Vista e Windows Server 2008, retornará um caminho de um handle. Se você precisar fazer isso em versões anteriores do Windows, o exemplo a seguir obterá um nome de arquivo de um identificador para um objeto de arquivo usando um objeto de mapeamento de arquivo. Ele usa as [**funções CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) [**e MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) para criar o mapeamento. Em seguida, ele usa a [**função GetMappedFileName**](/windows/win32/api/psapi/nf-psapi-getmappedfilenamea) para obter o nome do arquivo. Para arquivos remotos, ele imprime o caminho do dispositivo recebido dessa função. Para arquivos locais, ele converte o caminho para usar uma letra da unidade e imprime esse caminho. Para testar esse código, crie uma **função principal** que abra um arquivo usando [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) e passe o alça resultante para `GetFileNameFromHandle` .
 
 
 ```C++
@@ -146,7 +146,7 @@ int _tmain(int argc, TCHAR *argv[])
 
 <dl> <dt>
 
-[Usando mapeamento de arquivo](using-file-mapping.md)
+[Usando o mapeamento de arquivos](using-file-mapping.md)
 </dt> <dt>
 
 [**GetFinalPathNameByHandle**](/windows/win32/api/fileapi/nf-fileapi-getfinalpathnamebyhandlea)

@@ -3,7 +3,7 @@ title: Propriedade IVMHostInfo OSVersionString (VPCCOMInterfaces.h)
 description: Recupera a versão do sistema operacional em execução no computador host.
 ms.assetid: ac3a162a-d3e6-420d-ac26-d77f1c9646a6
 keywords:
-- Propriedade OSVersionString Pc Virtual
+- PROPRIEDADE OSVersionString Pc Virtual
 - Propriedade OSVersionString Pc Virtual , interface IVMHostInfo
 - INTERFACE IVMHostInfo PC Virtual, propriedade OSVersionString
 topic_type:

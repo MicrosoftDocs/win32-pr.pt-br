@@ -1,9 +1,9 @@
 ---
 title: show cachestate
-description: Lista todos os recursos e suas propriedades associadas que são armazenadas em cache no cache de resposta HTTP ou exibe um único recurso e suas propriedades associadas.
+description: Lista todos os recursos e suas propriedades associadas armazenadas em cache no cache de resposta HTTP ou exibe um único recurso e suas propriedades associadas.
 ms.assetid: 9daa445e-dd2f-4b73-8938-58df931c015b
 keywords:
-- Mostrar HTTPstate de cache
+- show cachestate HTTP
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 088a59eaa92db8ed9e8cbe59075d540507e51535
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: c13051b3ba7367eac4e40e941749767308a7e156beb1b086e196f96942bfdace
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104293451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118393546"
 ---
 # <a name="show-cachestate"></a>show cachestate
 
-Lista todos os recursos e suas propriedades associadas que são armazenadas em cache no cache de resposta HTTP ou exibe um único recurso e suas propriedades associadas.
+Lista todos os recursos e suas propriedades associadas armazenadas em cache no cache de resposta HTTP ou exibe um único recurso e suas propriedades associadas.
 
 ``` syntax
 show cachestate [[url=]string]
@@ -32,7 +32,7 @@ show cachestate [[url=]string]
 
 <dl> <dt>
 
-<span id="__url__string_"></span><span id="__URL__STRING_"></span>**\[\[URL = \] ***cadeia de caracteres***\]**
+<span id="__url__string_"></span><span id="__URL__STRING_"></span>**\[ \[ url= \]**_string_*_\]_*
 </dt> <dd>
 
 URL totalmente qualificada. Se não for especificado, implica todas as URLs. A URL também pode ser um prefixo para URLs registradas.
@@ -41,11 +41,11 @@ URL totalmente qualificada. Se não for especificado, implica todas as URLs. A U
 
 ## <a name="examples"></a>Exemplos
 
-**Mostrar URL de CacheState =https://www.contoso.com:80/myresource**
+**show cachestate url=https://www.contoso.com:80/myresource**
 
- 
+ 
 
- 
+ 
 
 
 
