@@ -4,16 +4,16 @@ ms.assetid: 0b309ac9-177d-425f-8b78-71fe73e41979
 title: Tirando a propriedade do objeto em C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae43c28cb55193d43a15ed08f5905defded3dc2b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f0fba581c449309dcfbfaeba6ca207b58f26f966088e43b99717bbd4fb89323f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119413296"
 ---
 # <a name="taking-object-ownership-in-c"></a>Tirando a propriedade do objeto em C++
 
-O exemplo a seguir tenta alterar a DACL de um objeto de arquivo assumindo a propriedade desse objeto. Isso só terá sucesso se o chamador tiver acesso de DAC de gravação \_ ao objeto ou for o proprietário do objeto. Se a tentativa inicial de alterar a DACL falhar, um administrador poderá apropriar-se do objeto. Para fornecer a propriedade do administrador, o exemplo habilita o \_ privilégio se obter \_ nome de propriedade \_ no [*token de acesso*](/windows/desktop/SecGloss/a-gly)do chamador e torna o grupo de administradores do sistema local o proprietário do objeto. Se o chamador for um membro do grupo Administradores, o código será capaz de alterar a DACL do objeto.
+O exemplo a seguir tenta alterar a DACL de um objeto de arquivo assumindo a propriedade desse objeto. Isso só terá sucesso se o chamador tiver acesso de DAC de gravação \_ ao objeto ou for o proprietário do objeto. Se a tentativa inicial de alterar a DACL falhar, um administrador poderá apropriar-se do objeto. para fornecer a propriedade do administrador, o exemplo habilita o \_ privilégio de ES assumir \_ nome de propriedade \_ no [*token de acesso*](/windows/desktop/SecGloss/a-gly)do chamador e torna o grupo de administradores do sistema local o proprietário do objeto. Se o chamador for um membro do grupo Administradores, o código será capaz de alterar a DACL do objeto.
 
 Para habilitar e desabilitar privilégios, este exemplo usa a função de exemplo SetPrivilege descrita em [Habilitando e desabilitando privilégios em C++](enabling-and-disabling-privileges-in-c--.md).
 

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a8119a070173b85a7674771d6df4beb6ae74cc3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e54437fc9de7e622b147abe7855fdbe658f0b453dbf8eb7ca9fde255171c5466
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960155"
 ---
 # <a name="ms-ts-licenseversion2-attribute"></a>Atributo MS-TS-LicenseVersion2
 
@@ -55,8 +55,8 @@ Versão da segunda CAL por usuário do Terminal Server.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
-| É indexado             | True         |
+| É de valor único       | Verdadeiro         |
+| É indexado             | Verdadeiro         |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
 | Range-Lower            | 0            |
@@ -76,8 +76,8 @@ Versão da segunda CAL por usuário do Terminal Server.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
-| É indexado             | True         |
+| É de valor único       | Verdadeiro         |
+| É indexado             | Verdadeiro         |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
 | Range-Lower            | 0            |
@@ -97,8 +97,8 @@ Versão da segunda CAL por usuário do Terminal Server.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
-| É indexado             | True         |
+| É de valor único       | Verdadeiro         |
+| É indexado             | Verdadeiro         |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
 | Range-Lower            | 0            |

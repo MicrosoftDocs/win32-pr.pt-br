@@ -4,12 +4,12 @@ ms.assetid: 7bce4079-994c-4eb0-ab86-9044701d85a1
 title: Mensagem de SMC_CHEVRONGETTIP (shobjidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 118056627d19990648e81b69aa355f3df99ec286
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9e64636994743d4b13a96fe75947fb515c4dbd3edcc94e6dee0fa85efb8bc9d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968056"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968235"
 ---
 # <a name="smc_chevrongettip-message"></a>Mensagem do SMC \_ CHEVRONGETTIP
 
@@ -43,7 +43,7 @@ Um ponteiro para um buffer que recebe uma cadeia de caracteres Unicode terminada
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornar S \_ OK.
 

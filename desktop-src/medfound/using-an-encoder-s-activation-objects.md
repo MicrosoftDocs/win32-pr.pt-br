@@ -1,19 +1,19 @@
 ---
-description: Para converter arquivos de mídia em formato ASF, você pode usar codificadores de Mídia do Windows. Saiba mais sobre como usar objetos de ativação de um codificador.
+description: Para converter arquivos de mídia em formato ASF, você pode usar Windows de mídia. Saiba mais sobre como usar objetos de ativação de um codificador.
 ms.assetid: 18c26619-6047-4f7f-bb65-ca418f02e5b1
 title: Usando objetos de ativação de codificadores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c4111d116c8864cc0a500fa3a0c2f612d1d6345
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: 24915020c1b888be6a1aeaca1e21af95d11cfc181a5c00a91c8359c3f780fa0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112067973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972735"
 ---
 # <a name="using-an-encoders-activation-objects"></a>Usando objetos de ativação de um codificador
 
-Para converter arquivos de mídia em formato ASF, você pode usar codificadores de Mídia do Windows. Para usar esses codificadores, eles devem ser registrados no sistema.
+Para converter arquivos de mídia em formato ASF, você pode usar Windows de mídia. Para usar esses codificadores, eles devem ser registrados no sistema.
 
 Para obter informações sobre o registro do codificador, consulte [Instando um codificador MFT](instantiating-the-encoder-mft.md).
 
@@ -25,8 +25,8 @@ Para obter informações sobre o registro do codificador, consulte [Instando um 
 
 Como alternativa ao uso da interface [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) de um codificador (descrita em Criando um codificador usando [CoCreateInstance),](using-an-encoder-s-imftransform--interface.md)você pode criar uma instância do objeto de ativação para o codificador. Os objetos de ativação facilitam a criação do codificador e Media Foundation fornece as duas funções a seguir para essa abordagem:
 
--   [**MFCreateWMAEncoderActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreatewmaencoderactivate) para inferência do codificador de áudio da Mídia do Windows.
--   [**MFCreateWMVEncoderActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreatewmvencoderactivate) para inferência do codificador de vídeo da Mídia do Windows.
+-   [**MFCreateWMAEncoderActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreatewmaencoderactivate) para inferência do codificador de áudio Windows Media.
+-   [**MFCreateWMVEncoderActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreatewmvencoderactivate) para inferência do codificador de vídeo Windows Media.
 
 Essas duas funções exigem a criação do tipo de mídia de destino e a definição das propriedades de codificação antes de chamar essas funções. Se seu aplicativo estiver usando componentes [ASF](pipeline-layer-asf-components.md) de camada de pipeline para codificar um arquivo no formato ASF e já tiver criado e configurado os Sinks de Mídia do [ASF,](asf-media-sinks.md)você poderá obter esse conjunto de informações do sink de mídia do ASF.
 
@@ -53,7 +53,7 @@ Ao criar o nó de transformação na topologia de codificação, você pode defi
 
 ## <a name="encoder-enumeration-in-windows-7-and-later"></a>Enumeração do codificador no Windows 7 e posterior
 
-Para aplicativos em execução no Windows 7, além do [**MFTEnum,**](/windows/desktop/api/mfapi/nf-mfapi-mftenum) você pode enumerar os MFTs do codificador chamando [**MFTEnumEx**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex). Essa função retorna um ponteiro para o objeto de ativação do MFT do codificador. A estrutura da função é muito semelhante à **MFTEnum** descrita acima, exceto que **MFTEnumEx** retorna uma matriz de ponteiros [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) para os MFTs do codificador que corresponderem aos critérios de pesquisa.
+Para aplicativos em execução no Windows 7, além do [**MFTEnum,**](/windows/desktop/api/mfapi/nf-mfapi-mftenum) você pode enumerar os MFTs do codificador chamando [**MFTEnumEx.**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex) Essa função retorna um ponteiro para o objeto de ativação do codificador MFT. A estrutura da função é muito semelhante à **MFTEnum** descrita acima, exceto que **MFTEnumEx** retorna uma matriz de ponteiros [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) para os MFTs do codificador que corresponderem aos critérios de pesquisa.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -62,7 +62,7 @@ Para aplicativos em execução no Windows 7, além do [**MFTEnum,**](/windows/de
 [Inciando um MFT codificador](instantiating-the-encoder-mft.md)
 </dt> <dt>
 
-[Codificadores de mídia do Windows](windows-media-encoders.md)
+[Windows Codificadores de mídia](windows-media-encoders.md)
 </dt> <dt>
 
 [Objetos de ativação](activation-objects.md)

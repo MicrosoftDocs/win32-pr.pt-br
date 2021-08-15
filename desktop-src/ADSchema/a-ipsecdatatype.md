@@ -1,11 +1,11 @@
 ---
-title: Atributo IPSec-tipo de dados
-description: O atributo IPSec-tipo de dados é somente para uso interno.
+title: Atributo Ipsec-Data-Type
+description: O atributo Ipsec-Data-Type é apenas para uso interno.
 ms.assetid: 1e03c13d-6d8d-42c2-bba4-9c86e5aba5e1
 ms.tgt_platform: multiple
 keywords:
-- Esquema de tipo de dados de protocolo IPsec do AD
-- Esquema de AD do atributo ipsecDataType
+- Esquema do AD do atributo Ipsec-Data-Type
+- Esquema do AD do atributo ipsecDataType
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 91b39c28e36e14c2dc4026361527dccbc479617d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e55e66561811adceece14f6a975ac5fad6807ac71e826a67910b6420346efee3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105756310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322596"
 ---
-# <a name="ipsec-data-type-attribute"></a>Atributo IPSec-tipo de dados
+# <a name="ipsec-data-type-attribute"></a>Atributo Ipsec-Data-Type
 
-O atributo **IPSec-tipo de dados** é somente para uso interno.
+O **atributo Ipsec-Data-Type** é apenas para uso interno.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | IPSec-tipo de dados                      |
-| LDAP-Display-Name | ipsecDataType                        |
+| CN                | Tipo de dados Ipsec                      |
+| Ldap-Display-Name | ipsecDataType                        |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.622               |
-| System-ID-GUID    | b40ff81e-427a-11d1-a9c2-0000f80367c1 |
+| System-Id-Guid    | b40ff81e-427a-11d1-a9c2-0000f80367c1 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ O atributo **IPSec-tipo de dados** é somente para uso interno.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**Base de IPSec**](c-ipsecbase.md)<br/> |
+| Classes usadas em        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O atributo **IPSec-tipo de dados** é somente para uso interno.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**Base de IPSec**](c-ipsecbase.md)<br/> |
+| Classes usadas em        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ O atributo **IPSec-tipo de dados** é somente para uso interno.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**Base de IPSec**](c-ipsecbase.md)<br/> |
+| Classes usadas em        | [**Ipsec-Base**](c-ipsecbase.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ O atributo **IPSec-tipo de dados** é somente para uso interno.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -142,7 +142,7 @@ O atributo **IPSec-tipo de dados** é somente para uso interno.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -163,7 +163,7 @@ O atributo **IPSec-tipo de dados** é somente para uso interno.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |

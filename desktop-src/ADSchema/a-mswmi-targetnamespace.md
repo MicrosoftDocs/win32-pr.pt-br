@@ -1,11 +1,11 @@
 ---
-title: atributo ms-WMI-TargetNameSpace
+title: Atributo ms-WMI-TargetNameSpace
 description: Namespace no qual o objeto deve ser criado.
 ms.assetid: 2a577b0c-644f-4816-981d-bec627c8b1d3
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-WMI-TargetNameSpace
-- msWMI-esquema de AD do atributo TargetNameSpace
+- Esquema do AD do atributo ms-WMI-TargetNameSpace
+- Atributo AD msWMI-TargetNameSpace
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 654e5669963adac94e2f6a221a2f3942e9fc2442
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ed3cda9b667763a6e4b4780908e44c1bc1af721ae5bf2da75a7ecc4ddefc2735
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119326246"
 ---
-# <a name="ms-wmi-targetnamespace-attribute"></a>atributo ms-WMI-TargetNameSpace
+# <a name="ms-wmi-targetnamespace-attribute"></a>Atributo ms-WMI-TargetNameSpace
 
 Namespace no qual o objeto deve ser criado.
 
@@ -29,14 +29,14 @@ Namespace no qual o objeto deve ser criado.
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-WMI-TargetNameSpace                      |
-| LDAP-Display-Name | msWMI-TargetNameSpace                       |
-| Tamanho              | Menos de vinte caracteres.                |
-| Privilégio de atualização  | Administrador de Política de Grupo                  |
+| CN                | ms-WMI-TargetNameSpace                      |
+| Ldap-Display-Name | msWMI-TargetNameSpace                       |
+| Tamanho              | Menos de 20 caracteres.                |
+| Privilégio de atualização  | Política de Grupo administrador                  |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1646                     |
-| System-ID-GUID    | 1c4ab61f-3420-44e5-849d-8b5dbf60feb7        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 1c4ab61f-3420-44e5-849d-8b5dbf60feb7        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -57,15 +57,15 @@ Namespace no qual o objeto deve ser criado.
 | ID do link                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| É de valor único       | True                                                                                                              |
+| Tem valor único       | Verdadeiro                                                                                                              |
 | É indexado             | Falso                                                                                                             |
-| No catálogo global      | Falso                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                      |
+| No Catálogo Global      | Falso                                                                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classes usadas em        | [**MS-WMI-Policytemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-Rule**](c-mswmi-rule.md)<br/> |
+| Classes usadas em        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-Rule**](c-mswmi-rule.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Namespace no qual o objeto deve ser criado.
 | ID do link                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| É de valor único       | True                                                                                                              |
+| Tem valor único       | Verdadeiro                                                                                                              |
 | É indexado             | Falso                                                                                                             |
-| No catálogo global      | Falso                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                      |
+| No Catálogo Global      | Falso                                                                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classes usadas em        | [**MS-WMI-Policytemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-Rule**](c-mswmi-rule.md)<br/> |
+| Classes usadas em        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-Rule**](c-mswmi-rule.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Namespace no qual o objeto deve ser criado.
 | ID do link                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| É de valor único       | True                                                                                                              |
+| Tem valor único       | Verdadeiro                                                                                                              |
 | É indexado             | Falso                                                                                                             |
-| No catálogo global      | Falso                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                      |
+| No Catálogo Global      | Falso                                                                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classes usadas em        | [**MS-WMI-Policytemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-Rule**](c-mswmi-rule.md)<br/> |
+| Classes usadas em        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-Rule**](c-mswmi-rule.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Namespace no qual o objeto deve ser criado.
 | ID do link                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| É de valor único       | True                                                                                                              |
+| Tem valor único       | Verdadeiro                                                                                                              |
 | É indexado             | Falso                                                                                                             |
-| No catálogo global      | Falso                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                      |
+| No Catálogo Global      | Falso                                                                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classes usadas em        | [**MS-WMI-Policytemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-Rule**](c-mswmi-rule.md)<br/> |
+| Classes usadas em        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-Rule**](c-mswmi-rule.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Namespace no qual o objeto deve ser criado.
 | ID do link                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| É de valor único       | True                                                                                                              |
+| Tem valor único       | Verdadeiro                                                                                                              |
 | É indexado             | Falso                                                                                                             |
-| No catálogo global      | Falso                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                      |
+| No Catálogo Global      | Falso                                                                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Classes usadas em        | [**MS-WMI-Policytemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-Rule**](c-mswmi-rule.md)<br/> |
+| Classes usadas em        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-Rule**](c-mswmi-rule.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Filtra os níveis de mipmap de uma textura.
 ms.assetid: bfeae9b0-9480-4a26-a225-4a34780546ce
-title: Função D3DXFilterTexture (D3dx9tex. h)
+title: Função D3DXFilterTexture (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e8a0d1c211b50379451c8b04830e9c97fe988137
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: dc07336edb5f7bb8672fbbec415b0a3b312335a3a3a4b0de32aec4fdde558363
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105785270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988496"
 ---
 # <a name="d3dxfiltertexture-function"></a>Função D3DXFilterTexture
 
@@ -43,7 +43,7 @@ HRESULT D3DXFilterTexture(
 
 <dl> <dt>
 
-*pBaseTexture* \[ no\]
+*pBaseTexture* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DBASETEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dbasetexture9)**
@@ -52,48 +52,48 @@ Ponteiro para uma interface [**IDirect3DBaseTexture9**](/windows/win32/api/d3d9h
 
 </dd> <dt>
 
-*pPalette* \[ fora\]
+*pPalette* \[ out\]
 </dt> <dd>
 
-Tipo: **const [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
+Tipo: **const [**PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) \***
 
-Ponteiro para uma estrutura [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) que representa uma paleta de cor de 256 para preencher ou **nulo** para formatos nonpalettized. Se uma paleta não for especificada, a paleta padrão do Direct3D (uma paleta branca opaca) será fornecida. Consulte Observações.
+Ponteiro para uma [**estrutura PALETTEENTRY**](/windows/win32/api/wingdi/ns-wingdi-paletteentry) que representa uma paleta de 256 cores a ser preenchida ou **NULL** para formatos não sem formatação. Se uma paleta não for especificada, a paleta padrão do Direct3D (uma paleta branca opaca) será fornecida. Consulte Observações.
 
 </dd> <dt>
 
-*SrcLevel* \[ no\]
+*SrcLevel* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Nível cuja imagem é usada para gerar os níveis subsequentes. A especificação \_ do padrão D3DX para esse parâmetro é equivalente à especificação de 0.
+Nível cuja imagem é usada para gerar os níveis subsequentes. Especificar D3DX \_ DEFAULT para esse parâmetro é equivalente a especificar 0.
 
 </dd> <dt>
 
-*MipFilter* \[ no\]
+*MipFilter* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinação de um ou mais [ \_ filtros D3DX](d3dx-filter.md) controlando como o mipmap é filtrado. A especificação de D3DX \_ padrão para esse parâmetro é o equivalente à especificação da \_ caixa de filtro D3DX \_ se o tamanho da textura for uma potência de dois e D3DX \_ caixa de filtro D3DX de filtro de \_ \| \_ \_ outra forma.
+Combinação de um ou mais [FILTRO D3DX \_ ](d3dx-filter.md) controlando como o mipmap é filtrado. Especificar D3DX DEFAULT para esse parâmetro é o equivalente a especificar D3DX FILTER BOX se o tamanho da textura for uma potência de \_ \_ dois e \_ D3DX \_ FILTER BOX \_ \| D3DX \_ FILTER DITHER caso \_ contrário.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
 
 ## <a name="remarks"></a>Comentários
 
 Um filtro é aplicado recursivamente a cada nível de textura para gerar o próximo nível de textura.
 
-Gravar em uma superfície de não nível zero da textura não fará com que o retângulo sujo seja atualizado. Se **D3DXFilterTexture** for chamado e a superfície já não tiver sido suja (isso é improvável em cenários de uso normal), o aplicativo precisa chamar [**AddDirtyRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-adddirtyrect) explicitamente na textura.
+A escrita em uma superfície de nível zero da textura não fará com que o retângulo sujo seja atualizado. Se **D3DXFilterTexture** for chamado e a superfície ainda não estiver suja (isso é improvável em cenários de uso normal), o aplicativo precisará chamar explicitamente [**AddDirtyRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dtexture9-adddirtyrect) na textura.
 
-As texturas criadas no pool padrão (D3DPOOL \_ padrão) não podem ser usadas com **D3DXFilterTexture** (a menos que criadas com D3DUSAGE \_ dinâmico), pois uma operação de bloqueio é necessária no objeto. Observe que os bloqueios são proibidos em texturas no pool padrão (a menos que sejam dinâmicos).
+Texturas criadas no pool padrão (D3DPOOL DEFAULT) não podem ser usadas com \_ **D3DXFilterTexture** (a menos que criadas com D3DUSAGE DYNAMIC) porque uma operação de bloqueio é necessária no objeto \_ . Observe que os bloqueios são proibidos em texturas no pool padrão (a menos que sejam dinâmicos).
 
-Para obter detalhes sobre o [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-paletteentry), consulte o SDK da plataforma. Observe que, a partir do DirectX 8,0, o membro peFlags da estrutura **PaletteEntry** não funciona conforme documentado no SDK da plataforma. O membro peFlags agora é o canal alfa para formatos de palettized de 8 bits.
+Para obter detalhes [**sobre PALETTEENTRY,**](/windows/win32/api/wingdi/ns-wingdi-paletteentry)consulte o SDK da plataforma. Observe que, a partir do DirectX 8.0, o membro peFlags da estrutura **PALETTEENTRY** não funciona conforme documentado no SDK da Plataforma. O membro peFlags agora é o canal alfa para formatos palettized de 8 bits.
 
 Há apenas uma função de filtragem de textura, mas duas macros que chamam esse método.
 
@@ -111,8 +111,8 @@ Há apenas uma função de filtragem de textura, mas duas macros que chamam esse
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9tex. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| parâmetro<br/>  | <dl> <dt>D3dx9tex.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

@@ -5,12 +5,12 @@ ms.assetid: 7342DA09-25E9-4154-83BA-B03ADBB8B671
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df4d2f3a823f5f4b5d2d5f365235d7e3f8817207
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 00cc3d78314b5c9130f69c65ebc5fa056d51d7305135025ecf2e4329ecbe6350
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "74103773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989466"
 ---
 # <a name="stream-output-counters"></a>Contadores de saída de fluxo
 
@@ -56,9 +56,9 @@ Não há nenhuma API especial para definir deslocamentos de buffer de saída de 
 [Contadores e consultas](counters-and-queries.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

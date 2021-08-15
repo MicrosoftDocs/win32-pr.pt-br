@@ -4,12 +4,12 @@ ms.assetid: 37869822-aed7-4102-8110-5a896400885c
 title: Reprodução simples
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a7d07e37721bc84abb71c683ce4441580a80e6c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 51724b92fea0a46850609e96de85231a9f1df1f7e538f6def4df07442ef19ca2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105789846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118862222"
 ---
 # <a name="simple-playback"></a>Reprodução simples
 

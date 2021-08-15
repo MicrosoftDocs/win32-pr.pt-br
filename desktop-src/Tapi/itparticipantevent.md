@@ -4,16 +4,16 @@ ms.assetid: 1199ec91-ee06-4e6c-8d8f-1585a3da3db0
 title: Interface ITParticipantEvent (Confpriv. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ac6e2b43a528bc041a71962e84b4e1be62152a4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1d4f47e57bf1698a97be6811316409e596c9dfb03181e50b5f487798463c5cb9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118864456"
 ---
 # <a name="itparticipantevent-interface"></a>Interface ITParticipantEvent
 
-\[O **ITParticipantEvent** não está disponível para uso no Windows Vista, no windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[o **ITParticipantEvent** não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
 A interface **ITParticipantEvent** contém métodos que recuperam a descrição dos eventos de participante. Quando a implementação do aplicativo do método [**ITTAPIEventNotification:: Event**](/windows/desktop/api/Tapi3if/nf-tapi3if-ittapieventnotification-event) indica um [**\_ evento TAPI**](/windows/desktop/api/Tapi3if/ne-tapi3if-tapi_event) igual a **te \_ Private**, o parâmetro *pEvent* do método é um ponteiro **IDispatch** para a interface **ITParticipantEvent** . Os métodos dessa interface podem ser usados para recuperar informações relacionadas a uma alteração de participante que ocorreu.
 
@@ -51,7 +51,7 @@ A interface **ITParticipantEvent** tem esses métodos.
 | Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                                 |
-| parâmetro<br/>       | <dl> <dt>Confpriv. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>Confpriv. h</dt> </dl> |
 | Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl>  |
 

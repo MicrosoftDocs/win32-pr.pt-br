@@ -4,12 +4,12 @@ ms.assetid: 37f8f5f6-ddcb-44ab-a727-632b78e6f599
 title: Propriedade AVEncVideoHeaderDropFrame (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 741911c400256f02f917e143dbc83bfa0eca04bc
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 3ffd9cdcfee05a52803c19216e62f7d51d52248bcc2bdc4ad0ad7d2b45293989
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119342476"
 ---
 # <a name="avencvideoheaderdropframe-property"></a>Propriedade AVEncVideoHeaderDropFrame
 
@@ -39,8 +39,8 @@ O modo de descarte de quadros é usado no vídeo NTSC para corrigir a discrepân
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
+| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                           |
 | parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 

@@ -49,12 +49,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5f761d7ef18ef7e27a46d6b5e8a5a00442752561
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2066d2f592d4d1d2dac50aee868da233bd41dd71b635b17744d4d3abe9a76595
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105755668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119547826"
 ---
 # <a name="cim_tachometer-class"></a>\_Classe de tacômetro CIM
 
@@ -126,7 +126,7 @@ A classe do **\_ tacômetro CIM** tem esses métodos.
 
 | Método                                                                | Descrição                                                                                                                              |
 |:----------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
-| [**Redefinir**](reset-method-in-class-cim-tachometer.md)                 | Solicita uma redefinição do dispositivo lógico. Não implementado pelo WMI.<br/>                                                               |
+| [**Definido**](reset-method-in-class-cim-tachometer.md)                 | Solicita uma redefinição do dispositivo lógico. Não implementado pelo WMI.<br/>                                                               |
 | [**SetPowerState**](setpowerstate-method-in-class-cim-tachometer.md) | Define o estado de energia desejado para um dispositivo lógico e quando um dispositivo deve ser colocado nesse estado. Não implementado pelo WMI.<br/> |
 
 
@@ -139,7 +139,7 @@ A classe do **\_ tacômetro CIM** tem essas propriedades.
 
 <dl> <dt>
 
-**Correta**
+**Precisão**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **sint32**
@@ -420,7 +420,7 @@ O dispositivo não está configurado corretamente.
 
 <span id="Windows_cannot_load_the_driver_for_this_device."></span><span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>
 
-<span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>**O Windows não pode carregar o driver para este dispositivo.** (2)
+<span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>**Windows não pode carregar o driver para este dispositivo.** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -449,12 +449,12 @@ O dispositivo não está funcionando corretamente. Um de seus drivers ou o regis
 
 <span id="The_driver_for_this_device_needs_a_resource_that_Windows_cannot_manage."></span><span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>
 
-<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**O driver para este dispositivo precisa de um recurso que o Windows não possa gerenciar.** (5)
+<span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>**o driver para este dispositivo precisa de um recurso que Windows não pode gerenciar.** (5)
 
 
 </dt> <dd>
 
-O driver para o dispositivo requer um recurso que o Windows não pode gerenciar.
+o Driver para o dispositivo requer um recurso que Windows não pode gerenciar.
 
 </dd> <dt>
 
@@ -533,12 +533,12 @@ O dispositivo não pode encontrar recursos livres suficientes para usar.
 
 <span id="Windows_cannot_verify_this_device_s_resources."></span><span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>
 
-<span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>**O Windows não pode verificar os recursos deste dispositivo.** (13)
+<span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>**Windows não pode verificar os recursos desse dispositivo.** (13)
 
 
 </dt> <dd>
 
-O Windows não pode verificar os recursos do dispositivo.
+Windows não pode verificar os recursos do dispositivo.
 
 </dd> <dt>
 
@@ -566,12 +566,12 @@ O dispositivo não está funcionando corretamente devido a um possível problema
 
 <span id="Windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>
 
-<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**O Windows não pode identificar todos os recursos que este dispositivo usa.** (16)
+<span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>**Windows não pode identificar todos os recursos que este dispositivo usa.** (16)
 
 
 </dt> <dd>
 
-O Windows não pode identificar todos os recursos que o dispositivo usa.
+Windows não pode identificar todos os recursos que o dispositivo usa.
 
 </dd> <dt>
 
@@ -617,12 +617,12 @@ O registro pode estar corrompido.
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>
 
-<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Falha do sistema: Tente alterar o driver deste dispositivo. Se isso não funcionar, consulte a documentação do hardware. O Windows está removendo este dispositivo.** (21)
+<span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>**Falha do sistema: Tente alterar o driver deste dispositivo. Se isso não funcionar, consulte a documentação do hardware. Windows está removendo este dispositivo.** (21)
 
 
 </dt> <dd>
 
-Falha do sistema. Se a alteração do driver de dispositivo não for eficaz, consulte a documentação do hardware. O Windows está removendo o dispositivo.
+Falha do sistema. Se a alteração do driver de dispositivo não for eficaz, consulte a documentação do hardware. Windows está removendo o dispositivo.
 
 </dd> <dt>
 
@@ -661,23 +661,23 @@ O dispositivo não está presente, não está funcionando corretamente ou não t
 
 <span id="Windows_is_still_setting_up_this_device."></span><span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>
 
-<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**O Windows ainda está configurando este dispositivo.** (25)
+<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows ainda está configurando este dispositivo.** (25)
 
 
 </dt> <dd>
 
-O Windows ainda está configurando o dispositivo.
+Windows ainda está configurando o dispositivo.
 
 </dd> <dt>
 
 <span id="Windows_is_still_setting_up_this_device."></span><span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>
 
-<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**O Windows ainda está configurando este dispositivo.** (26)
+<span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>**Windows ainda está configurando este dispositivo.** (26)
 
 
 </dt> <dd>
 
-O Windows ainda está configurando o dispositivo.
+Windows ainda está configurando o dispositivo.
 
 </dd> <dt>
 
@@ -727,12 +727,12 @@ O dispositivo está usando um recurso de IRQ que outro dispositivo está usando.
 
 <span id="This_device_is_not_working_properly_because_Windows_cannot_load_the_drivers_required_for_this_device."></span><span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>
 
-<span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>**Este dispositivo não está funcionando corretamente porque o Windows não pode carregar os drivers necessários para este dispositivo.** (31)
+<span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>**este dispositivo não está funcionando corretamente porque Windows não pode carregar os drivers necessários para este dispositivo.** (31)
 
 
 </dt> <dd>
 
-O dispositivo não está funcionando corretamente. O Windows não pode carregar os drivers de dispositivo necessários.
+O dispositivo não está funcionando corretamente. Windows não pode carregar os drivers de dispositivo necessários.
 
 </dd> </dl>
 
@@ -783,12 +783,12 @@ Tipo de dados: **sint32**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CurrentReading"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("rotações por minuto")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("CurrentReading"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("rotações por minuto")
 </dt> </dl>
 
 Valor atual indicado pelo sensor.
 
-Essa propriedade é herdada [**de \_ NumericSensor de CIM**](cim-numericsensor.md).
+Essa propriedade é herdada [**de CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -806,11 +806,11 @@ Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (
 
 Descrição textual do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**DeviceID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -819,27 +819,27 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [ **Chave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Endereço ou outras informações de identificação para nomear exclusivamente o dispositivo lógico.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **ErrorCleared**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se **for true**, o erro relatado na propriedade **LastErrorCode** será apagado agora.
+Se **TRUE**, o erro relatado na **propriedade LastErrorCode** agora será limpo.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -852,57 +852,57 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Cadeia de caracteres de forma livre que fornece informações sobre o erro registrado na propriedade **LastErrorCode** e as ações corretivas a serem executadas.
+Cadeia de caracteres de forma livre que fornece informações sobre o erro registrado na propriedade **LastErrorCode** e ações corretivas a executar.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Componente DMTF \| 1,5 "), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" data de instalação ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Data de instalação")
 </dt> </dl>
 
 Data e hora em que o objeto foi instalado. Essa propriedade não precisa de um valor para indicar que o objeto está instalado.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**Islinear**
+**IsLinear**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se **for true**, o sensor será linear sobre seu intervalo dinâmico.
+Se **TRUE**, o sensor será linear em seu intervalo dinâmico.
 
-Essa propriedade é herdada [**de \_ NumericSensor de CIM**](cim-numericsensor.md).
+Essa propriedade é herdada [**de CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
 **LastErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Código do último erro relatado pelo dispositivo lógico.
+Último código de erro relatado pelo dispositivo lógico.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -915,12 +915,12 @@ Tipo de dados: **sint32**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("LowerThresholdCritical"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("rotações por minuto")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("LowerThresholdCritical"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("rotações por minuto")
 </dt> </dl>
 
-Valor de limite que especifica os intervalos (valores mínimos e máximos) para determinar se o sensor está operando em condições normais, não críticas, críticas ou fatais. Se a propriedade **CurrentReading** estiver entre **LowerThresholdCritical** e **LowerThresholdFatal**, o estado atual será crítico.
+Valor limite que especifica os intervalos (valores mínimo e máximo) para determinar se o sensor está operando em condições normais, não críticas, críticas ou fatais. Se a **propriedade CurrentReading** estiver entre **LowerThresholdCritical** e **LowerThresholdFatal**, o estado atual será crítico.
 
-Essa propriedade é herdada [**de \_ NumericSensor de CIM**](cim-numericsensor.md).
+Essa propriedade é herdada [**de CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -933,12 +933,12 @@ Tipo de dados: **sint32**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("LowerThresholdFatal"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("rotações por minuto")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("LowerThresholdFatal"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("rotações por minuto")
 </dt> </dl>
 
-Valor de limite que especifica os intervalos (valores mínimos e máximos) para determinar se o sensor está operando em condições normais, não críticas, críticas ou fatais. Se a propriedade **CurrentReading** estiver abaixo de **LowerThresholdFatal**, o estado atual será fatal.
+Valor limite que especifica os intervalos (valores mínimo e máximo) para determinar se o sensor está operando em condições normais, não críticas, críticas ou fatais. Se a **propriedade CurrentReading** estiver abaixo **de LowerThresholdFatal,** o estado atual será fatal.
 
-Essa propriedade é herdada [**de \_ NumericSensor de CIM**](cim-numericsensor.md).
+Essa propriedade é herdada [**de CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -951,12 +951,12 @@ Tipo de dados: **sint32**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("LowerThresholdNonCritical"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("rotações por minuto")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("LowerThresholdNonCritical"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("rotações por minuto")
 </dt> </dl>
 
-Valor de limite que especifica os intervalos (valores mínimos e máximos) para determinar se o sensor está operando em condições normais, não críticas, críticas ou fatais. Se a propriedade **CurrentReading** estiver entre **LowerThresholdNonCritical** e **UpperThresholdNonCritical**, o sensor estará relatando um valor normal. Se a propriedade **CurrentReading** estiver entre **LowerThresholdNonCritical** e **LowerThresholdCritical**, o estado atual será não crítico.
+Valor limite que especifica os intervalos (valores mínimo e máximo) para determinar se o sensor está operando em condições normais, não críticas, críticas ou fatais. Se a **propriedade CurrentReading** estiver entre **LowerThresholdNonCritical** e **UpperThresholdNonCritical,** o sensor relatará um valor normal. Se a **propriedade CurrentReading** estiver entre **LowerThresholdNonCritical** e **LowerThresholdCritical**, o estado atual será não crítico.
 
-Essa propriedade é herdada [**de \_ NumericSensor de CIM**](cim-numericsensor.md).
+Essa propriedade é herdada [**de CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -969,12 +969,12 @@ Tipo de dados: **sint32**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("MaxReadable"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("rotações por minuto")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("MaxReadable"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("rotações por minuto")
 </dt> </dl>
 
-Maior valor da propriedade medida que pode ser lido pelo sensor numérico.
+Maior valor da propriedade medida que pode ser lida pelo sensor numérico.
 
-Essa propriedade é herdada [**de \_ NumericSensor de CIM**](cim-numericsensor.md).
+Essa propriedade é herdada [**de CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -987,12 +987,12 @@ Tipo de dados: **sint32**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("MinReadable"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("rotações por minuto")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("MinReadable"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("rotações por minuto")
 </dt> </dl>
 
-Menor valor da propriedade medida que pode ser lido pelo sensor numérico.
+O menor valor da propriedade medida que pode ser lido pelo sensor numérico.
 
-Essa propriedade é herdada [**de \_ NumericSensor de CIM**](cim-numericsensor.md).
+Essa propriedade é herdada [**de CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -1005,12 +1005,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
+Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nome")
 </dt> </dl>
 
-Rótulo pelo qual o objeto é conhecido. Quando em uma subclasse, essa propriedade pode ser substituída como uma propriedade de chave.
+Rótulo pelo qual o objeto é conhecido. Quando subclasse, essa propriedade pode ser substituído para ser uma propriedade de chave.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -1023,12 +1023,12 @@ Tipo de dados: **sint32**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("NominalReading"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("rotações por minuto")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("NominalReading"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("rotações por minuto")
 </dt> </dl>
 
 Valor esperado ou normal para o sensor numérico.
 
-Essa propriedade é herdada [**de \_ NumericSensor de CIM**](cim-numericsensor.md).
+Essa propriedade é herdada [**de CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -1041,12 +1041,12 @@ Tipo de dados: **sint32**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("NormalMax"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("rotações por minuto")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("NormalMax"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("rotações por minuto")
 </dt> </dl>
 
 Intervalo máximo normal para o sensor numérico.
 
-Essa propriedade é herdada [**de \_ NumericSensor de CIM**](cim-numericsensor.md).
+Essa propriedade é herdada [**de CIM \_ NumericSensor.**](cim-numericsensor.md)
 
 </dd> <dt>
 
@@ -1059,7 +1059,7 @@ Tipo de dados: **sint32**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("NormalMin"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("rotações por minuto")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("NormalMin"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("rotações por minuto")
 </dt> </dl>
 
 Intervalo mínimo normal para o sensor numérico.

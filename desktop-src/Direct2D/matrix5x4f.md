@@ -3,8 +3,8 @@ title: Classe Matrix5x4F (auxiliar de D2d1 \_ . h)
 description: A classe Matrix5x4F representa uma matriz 5 por 4 e fornece métodos de conveniência para a criação de matrizes.
 ms.assetid: F014694B-5117-48E1-89F7-2F943515AEC6
 keywords:
-- Classe Matrix5x4F Direct2D
-- Classe Matrix5x4F Direct2D, descrita
+- Direct2D classe Matrix5x4F
+- Direct2D classe Matrix5x4F, descrita
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 328214224f23b4afafc52d8eb2883a58b5bf2f38
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6fac5a913edad772a77255c861272c27a372a75f4eadaf8f874303d894ec57d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104456039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119430566"
 ---
 # <a name="matrix5x4f-class"></a>Classe Matrix5x4F
 
@@ -53,8 +53,8 @@ A classe **Matrix5x4F** tem esses construtores.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 7, Windows Vista com SP2 e atualização de plataforma para aplicativos UWP do Windows Vista \[ Desktop apps \|\]<br/>                          |
-| Servidor mínimo com suporte<br/> | Windows Server 2008 R2, Windows Server 2008 com SP2 e atualização de plataforma para aplicativos de aplicativos de desktop do Windows Server 2008 \[ \| UWP\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7, Windows vista com SP2 e atualização de plataforma para aplicativos UWP do Windows Vista \[ desktop apps \|\]<br/>                          |
+| Servidor mínimo com suporte<br/> | Windows server 2008 R2, Windows Server 2008 com SP2 e atualização de plataforma para aplicativos do Windows Server 2008 \[ desktop aplicativos \| UWP\]<br/> |
 | Número mínimo de telefone com suporte<br/>  | Windows Phone 8,1 \[ Windows Phone Silverlight 8,1 e aplicativos de Windows Runtime\]<br/>                                                  |
 | Namespace<br/>                | D2D1<br/>                                                                                                                          |
 | parâmetro<br/>                   | <dl> <dt>\_Auxiliar D2d1. h</dt> </dl>                                                |

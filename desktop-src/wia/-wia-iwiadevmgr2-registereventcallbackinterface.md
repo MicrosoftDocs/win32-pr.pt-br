@@ -1,5 +1,5 @@
 ---
-description: Registra um aplicativo em execução para notificação de eventos de aquisição de imagem do Windows (WIA) 2,0.
+description: registra um aplicativo em execução para notificação de eventos de aquisição de Windows Image (WIA) 2,0.
 ms.assetid: 978dcd41-d63b-421d-b7e1-8e9368b36180
 title: 'Método IWiaDevMgr2:: RegisterEventCallbackInterface (WIA. h)'
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 7cd3a7e00cff56bc5d91bfc843ab79fe71aa1123
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e2658654254257c707d12f4e676aee3371f0ad491dfedeb0637508ca3f33a057
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965635"
 ---
 # <a name="iwiadevmgr2registereventcallbackinterface-method"></a>Método IWiaDevMgr2:: RegisterEventCallbackInterface
 
-Registra um aplicativo em execução para notificação de eventos de aquisição de imagem do Windows (WIA) 2,0.
+registra um aplicativo em execução para notificação de eventos de aquisição de Windows Image (WIA) 2,0.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -64,18 +64,18 @@ Especifica o identificador exclusivo de um dispositivo WIA 2,0. Defina esse par�
 *pEventGUID* \[ no\]
 </dt> <dd>
 
-Tipo: **const GUID \** _
+Tipo: **GUID \* const**
 
 Especifica um ponteiro para o identificador de evento para o qual o aplicativo está se registrando. Consulte [identificadores de evento WIA](-wia-wia-event-identifiers.md) para identificadores de evento padrão.
 
 </dd> <dt>
 
-_pIWiaEventCallback * \[ in\]
+*pIWiaEventCallback* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IWiaEventCallback**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaeventcallback) \** _
+Tipo: **[ **IWiaEventCallback**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaeventcallback)\***
 
-Especifica um ponteiro para a interface [_ *IWiaEventCallback* *](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaeventcallback) que o WIA 2,0 usa para enviar a notificação de eventos.
+Especifica um ponteiro para a interface [**IWiaEventCallback**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaeventcallback) que o WIA 2,0 usa para enviar a notificação de eventos.
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ Recebe o endereço de um ponteiro para a interface [IUnknown](/windows/win32/api
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -126,9 +126,9 @@ Os aplicativos devem chamar o método [IUnknown:: Release](/windows/win32/api/un
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
 
 

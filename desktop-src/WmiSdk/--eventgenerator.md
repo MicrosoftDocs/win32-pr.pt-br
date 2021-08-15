@@ -2,7 +2,7 @@
 description: Serve como uma classe pai para classes que controlam a geração de eventos, como eventos de temporizador.
 ms.assetid: 381b06e7-2857-4932-9f52-f1d62efa8b79
 ms.tgt_platform: multiple
-title: Classe __EventGenerator
+title: __EventGenerator classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: b40524405c3b284e7ec61414e36448cb37afeab8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0033bef55915865ba1945c9f17705ed40cd0d3db4cd572efd13cdadf99d4bbab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119732898"
 ---
 # <a name="__eventgenerator-class"></a>\_\_Classe EventGenerator
 
-A classe de sistema **\_ \_ EventGenerator** é uma classe base abstrata que serve como uma classe pai para classes que controlam a geração de eventos, como [eventos de temporizador](receiving-a-timed-or-repeating-event.md).
+A **\_ \_ classe de sistema EventGenerator** é uma classe base abstrata que serve como uma classe pai para classes que controlam a geração de eventos, como eventos [de temporizador](receiving-a-timed-or-repeating-event.md).
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
@@ -38,11 +38,11 @@ class __EventGenerator : __IndicationRelated
 
 ## <a name="members"></a>Membros
 
-A classe **\_ \_ EventGenerator** não define nenhum membro.
+A **\_ \_ classe EventGenerator** não define nenhum membro.
 
 ## <a name="remarks"></a>Comentários
 
-A classe **\_ \_ EventGenerator** é derivada de [**\_ \_ IndicationRelated**](--indicationrelated.md), que não tem propriedades.
+A **\_ \_ classe EventGenerator** é derivada de [**\_ \_ IndicationRelated,**](--indicationrelated.md)que não tem nenhuma propriedade.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ A classe **\_ \_ EventGenerator** é derivada de [**\_ \_ IndicationRelated**](-
 |-------------------------------------|--------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>       |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/> |
-| Namespace<br/>                | Todos os namespaces do WMI<br/>  |
+| Namespace<br/>                | Todos os namespaces WMI<br/>  |
 
 
 
@@ -60,7 +60,7 @@ A classe **\_ \_ EventGenerator** é derivada de [**\_ \_ IndicationRelated**](-
 
 <dl> <dt>
 
-[**\_\_IndicationRelated**](/windows/desktop/WmiSdk/--indicationrelated)
+[**\_\_IndicaçãoRelated**](/windows/desktop/WmiSdk/--indicationrelated)
 </dt> <dt>
 
 [Classes do sistema WMI](wmi-system-classes.md)

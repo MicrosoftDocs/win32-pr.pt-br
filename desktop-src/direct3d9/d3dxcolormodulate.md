@@ -1,7 +1,7 @@
 ---
 description: Combina duas cores.
 ms.assetid: deff70c7-2359-48b2-ab40-8c418acf5a07
-title: Função D3DXColorModulate (D3dx9math. h)
+title: Função D3DXColorModulate (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: cf9b202da786f6ec87ceca9816c2a4fc86776577
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3be2b2174a4f6e76a211e0da43dab85e81c490495173f2d2323caa71a463de79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988706"
 ---
 # <a name="d3dxcolormodulate-function"></a>Função D3DXColorModulate
 
@@ -42,44 +42,44 @@ D3DXCOLOR* D3DXColorModulate(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Ponteiro para uma estrutura [**D3DXCOLOR**](d3dxcolor.md) que é o resultado da operação.
+Ponteiro para uma [**estrutura D3DXCOLOR**](d3dxcolor.md) que é o resultado da operação.
 
 </dd> <dt>
 
- \ \[ no\]
+*pC1* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXCOLOR**](d3dxcolor.md) \***
 
-Ponteiro para uma estrutura de [**D3DXCOLOR**](d3dxcolor.md) de origem.
+Ponteiro para uma estrutura [**D3DXCOLOR de origem.**](d3dxcolor.md)
 
 </dd> <dt>
 
-*pC2* \[ no\]
+*pC2* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXCOLOR**](d3dxcolor.md) \***
 
-Ponteiro para uma estrutura de [**D3DXCOLOR**](d3dxcolor.md) de origem.
+Ponteiro para uma estrutura [**D3DXCOLOR de origem.**](d3dxcolor.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Essa função retorna um ponteiro para uma estrutura [**D3DXCOLOR**](d3dxcolor.md) que é o resultado da operação de mesclagem.
+Essa função retorna um ponteiro para uma [**estrutura D3DXCOLOR**](d3dxcolor.md) que é o resultado da operação de mesclagem.
 
 ## <a name="remarks"></a>Comentários
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função **D3DXColorModulate** pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a **função D3DXColorModulate** pode ser usada como um parâmetro para outra função.
 
-Essa função combina duas cores multiplicando os componentes de cor correspondentes, conforme mostrado no exemplo a seguir.
+Essa função combina duas cores multiplicando componentes de cores correspondentes, conforme mostrado no exemplo a seguir.
 
 
 ```
@@ -94,8 +94,8 @@ pOut->r = pC1->r * pC2->r;
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

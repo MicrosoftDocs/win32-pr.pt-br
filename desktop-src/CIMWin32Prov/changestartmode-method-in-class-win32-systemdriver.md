@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: edb6dfc9d745f5e408871246b581e6fab7eb72d3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2e2067ae7da8a6f112671237ebc7f77dd26644c5e0b2fa0b77a443c160468581
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118959125"
 ---
 # <a name="changestartmode-method-of-the-win32_systemdriver-class"></a>Método ChangeStartMode da \_ classe SystemDriver Win32
 
@@ -45,7 +45,7 @@ uint32 ChangeStartMode(
 *StartMode* \[ no\]
 </dt> <dd>
 
-Modo de início do serviço base do Windows.
+modo de início do serviço base de Windows.
 
 <dt>
 
@@ -104,7 +104,7 @@ Serviço que não pode mais ser iniciado.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) se o serviço tiver sido modificado com êxito, 1 (um) se a solicitação não tiver suporte e qualquer outro número para indicar um erro.
 

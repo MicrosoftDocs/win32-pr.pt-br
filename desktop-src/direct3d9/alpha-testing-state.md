@@ -4,12 +4,12 @@ ms.assetid: 368c3d12-2c8b-43e3-94c3-bccfe6c73e66
 title: Estado de teste alfa (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 020322ee31bc08352dbb2796ea5e7141d03c77c3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b853eb779860d5fc490f4061fde03c852a9c3d9f7bda48baa8e5a84ebd43173c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105791340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989436"
 ---
 # <a name="alpha-testing-state-direct3d-9"></a>Estado de teste alfa (Direct3D 9)
 

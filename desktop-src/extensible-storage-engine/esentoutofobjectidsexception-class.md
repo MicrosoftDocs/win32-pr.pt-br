@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: classe EsentOutOfObjectIDsException'
+description: 'Saiba mais sobre: Classe EsentOutOfObjectIDsException'
 title: Classe EsentOutOfObjectIDsException
 TOCTitle: EsentOutOfObjectIDsException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentOutOfObjectIDsException
@@ -24,29 +24,29 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 18cf8d1b7c98db8f855cf970eed7be87185fc9fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8194f233683cdb1e80c1fa3307a088a2d12ed67065287a665fc7bcf471499d50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105785032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119363417"
 ---
 # <a name="esentoutofobjectidsexception-class"></a>Classe EsentOutOfObjectIDsException
 
-Classe base para JET_err. OutOfObjectIDs exceções.
+Classe base para JET_err. Exceções outOfObjectIDs.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. ESENT. Interop. EsentDataException](./esentdataexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentFragmentationException](./esentfragmentationexception-class.md)  
-            Microsoft. ISAM. ESENT. Interop. EsentOutOfObjectIDsException  
+  [System.Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentDataException](./esentdataexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentFragmentationException](./esentfragmentationexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentOutOfObjectIDsException  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -72,6 +72,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentOutOfObjectIDsException](./esentoutofobjectidsexception-members.md)
+[Membros EsentOutOfObjectIDsException](./esentoutofobjectidsexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

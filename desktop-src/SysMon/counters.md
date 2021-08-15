@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbcbf8da93f13dce2ce2a290adeab9394ee8addb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f8349c1425450491c3fc658f6ac1ac3c5fcf75d3e617a92f6e34b91f2f5802e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105749186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118883333"
 ---
 # <a name="counters-collection"></a>Coleção de contadores
 
@@ -58,7 +58,7 @@ A coleção de **contadores** tem essas propriedades.
 
 | Propriedade                                   | Descrição                                                                                         |
 |:-------------------------------------------|:----------------------------------------------------------------------------------------------------|
-| [**Contar**](counters-count.md)<br/> | Recupera o número de instâncias de [**monoitem**](counteritem.md) na coleção.<br/>  |
+| [**Contagem**](counters-count.md)<br/> | Recupera o número de instâncias de [**monoitem**](counteritem.md) na coleção.<br/>  |
 | [**Item**](counters-item.md)<br/>   | Recupera a instância de [**monoitem**](counteritem.md) especificada da coleção.<br/> |
 
 

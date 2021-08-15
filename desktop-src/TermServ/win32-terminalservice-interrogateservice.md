@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 850953b210ea11b9dd1000326d6793e3651ce538
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 012229ccb8cd259db6ec649717aaea5ef6c4ba94880dd01b24b6be91d7b9bfc9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119422176"
 ---
 # <a name="interrogateservice-method-of-the-win32_service-class-remote-desktop-services"></a>Método InterrogateService da classe Win32_Service (Serviços de Área de Trabalho Remota)
 
@@ -182,7 +182,7 @@ O serviço tem dependências circulares quando é iniciado.
 
 </dd> <dt>
 
-**aprimora**
+**19**
 </dt> <dd>
 
 Um serviço está sendo executado com o mesmo nome.
@@ -238,7 +238,7 @@ O serviço está pausado atualmente no sistema.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

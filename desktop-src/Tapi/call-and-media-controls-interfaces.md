@@ -1,19 +1,19 @@
 ---
-description: A seguir estão as interfaces de controles de mídia e de chamada TAPI 3. x. Para obter uma lista dessas interfaces por funcionalidade, consulte referência rápida de controles de mídia e chamada.
+description: A seguir estão as interfaces de chamada TAPI 3.x e controles de mídia. Para ver uma lista dessas interfaces por funcionalidade, consulte Referência rápida de controles de chamada e mídia.
 ms.assetid: aa43013d-826e-487b-b0a3-2d890f93a512
-title: Interfaces de controles de mídia e chamada
+title: Interfaces de controles de mídia e de chamada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d9e80ea4ae8abcdad4c3629249faeaf30a1472d3
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 1936820838ff355ffc3c4e7fd3aba5a4df9dcdb188337d763a510bdaadee80d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103930138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118871003"
 ---
-# <a name="call-and-media-controls-interfaces"></a>Interfaces de controles de mídia e chamada
+# <a name="call-and-media-controls-interfaces"></a>Interfaces de controles de mídia e de chamada
 
-A seguir estão as interfaces de controles de mídia e de chamada TAPI 3. x. Para obter uma lista dessas interfaces por funcionalidade, consulte [referência rápida de controles de mídia e chamada](call-and-media-controls-quick-reference.md).
+A seguir estão as interfaces de chamada TAPI 3.x e controles de mídia. Para ver uma lista dessas interfaces por funcionalidade, consulte [Referência rápida de](call-and-media-controls-quick-reference.md)controles de chamada e mídia .
 
 -   [**IEnumAddress**](/windows/desktop/api/tapi3if/nn-tapi3if-ienumaddress)
 -   [**IEnumBstr**](/windows/desktop/api/tapi3if/nn-tapi3if-ienumbstr)
@@ -113,7 +113,7 @@ A seguir estão as interfaces de controles de mídia e de chamada TAPI 3. x. Par
 -   [**ITToneTerminalEvent**](/windows/desktop/api/tapi3if/nn-tapi3if-ittoneterminalevent)
 -   [**ITTTSTerminalEvent**](/windows/desktop/api/tapi3if/nn-tapi3if-itttsterminalevent)
 
-As seguintes interfaces estarão disponíveis se um MSP estiver associado à chamada. As interfaces MSP controlam streaming de mídia e terminais para a chamada.
+As interfaces a seguir estarão disponíveis se um MSP estiver associado à chamada. As interfaces do MSP controlam o streaming de mídia e os terminais para a chamada.
 
 -   [**ITStream (MSPI)**](itstream-mspi-.md)
 -   [**ITStreamControl (MSPI)**](itstreamcontrol-mspi-.md)

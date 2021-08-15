@@ -4,12 +4,12 @@ ms.assetid: 009aa503-3fcd-4046-9a74-23a1a9c23e6a
 title: Interfaces de instrumentação COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 250e44e0283ccd44bbaa421d22ff1612fa5fb1c1
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e83e8f81fd2d8ea2c092a974e842c900506bb4b637eb94a07b5be48afbb68bea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119129198"
 ---
 # <a name="com-instrumentation-interfaces"></a>Interfaces de instrumentação COM+
 
@@ -26,7 +26,7 @@ As interfaces de instrumentação COM+ descritas na tabela a seguir permitem que
 | [**IComApp2Events**](/windows/desktop/api/ComSvcs/nn-comsvcs-icomapp2events)<br/>                                                                               | O usuário implementa [**IComApp2Events**](/windows/desktop/api/ComSvcs/nn-comsvcs-icomapp2events) para ser notificado se um aplicativo do servidor com+ for carregado, desligado ou pausado. O assinante também será notificado se o aplicativo estiver marcado para reciclagem.<br/>                                                                                          |
 | [**IComCRMEvents**](/windows/desktop/api/ComSvcs/nn-comsvcs-icomcrmevents)<br/>                                                                                 | O usuário implementa [**IComCRMEvents**](/windows/desktop/api/ComSvcs/nn-comsvcs-icomcrmevents) para ser notificado quando a recuperação do CRM (Compensating Resource Manager) é iniciada ou concluída. <br/>                                                                                                                                                          |
 | [**IComExceptionEvents**](/windows/desktop/api/ComSvcs/nn-comsvcs-icomexceptionevents)<br/>                                                                     | O usuário implementa [**IComExceptionEvents**](/windows/desktop/api/ComSvcs/nn-comsvcs-icomexceptionevents) para ser notificado quando uma exceção de usuário ocorre em um componente transacional. <br/>                                                                                                                                                        |
-| [**IComIdentityEvents**](/windows/desktop/api/ComSvcs/nn-comsvcs-icomidentityevents)<br/>                                                                       | A interface [**IComIdentityEvents**](/windows/desktop/api/ComSvcs/nn-comsvcs-icomidentityevents) notifica o Assinante de uma atividade que faz parte de uma página serviços de informações da Internet (IIS) Active Server Pages (ASP).<br/>                                                                                                                   |
+| [**IComIdentityEvents**](/windows/desktop/api/ComSvcs/nn-comsvcs-icomidentityevents)<br/>                                                                       | a interface [**IComIdentityEvents**](/windows/desktop/api/ComSvcs/nn-comsvcs-icomidentityevents) notifica o assinante de uma atividade que faz parte de uma página Serviços de Informações da Internet (IIS) Active Server Pages (ASP).<br/>                                                                                                                   |
 | [**IComInstanceEvents**](/windows/desktop/api/ComSvcs/nn-comsvcs-icominstanceevents) <br/> [**IComInstance2Events**](/windows/desktop/api/ComSvcs/nn-comsvcs-icominstance2events)<br/>        | A interface [**IComInstanceEvents**](/windows/desktop/api/ComSvcs/nn-comsvcs-icominstanceevents) ou [**IComInstance2Events**](/windows/desktop/api/ComSvcs/nn-comsvcs-icominstance2events) notifica o assinante da criação ou versão de um objeto.<br/>                                                                                                                               |
 | [**IComMethodEvents**](/windows/desktop/api/ComSvcs/nn-comsvcs-icommethodevents) <br/> [**IComMethod2Events**](/windows/desktop/api/ComSvcs/nn-comsvcs-icommethod2events)<br/>                | O usuário implementa [**IComMethodEvents**](/windows/desktop/api/ComSvcs/nn-comsvcs-icommethodevents) ou [**IComMethod2Events**](/windows/desktop/api/ComSvcs/nn-comsvcs-icommethod2events) para ser notificado quando o método de um objeto é chamado, retornado ou gera uma exceção.<br/>                                                                                                      |
 | [**IComObjectConstructionEvents**](/windows/desktop/api/ComSvcs/nn-comsvcs-icomobjectconstructionevents)<br/>                                                   | A interface [**IComObjectConstructionEvents**](/windows/desktop/api/ComSvcs/nn-comsvcs-icomobjectconstructionevents) notificará o assinante se um objeto construído for criado em um pool de objetos.<br/>                                                                                                                                               |

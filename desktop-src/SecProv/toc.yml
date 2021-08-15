@@ -12,7 +12,7 @@
             - name: Win32_EncryptableVolume
               href: win32-encryptablevolume.md
               items:
-                - name: Métodos de Win32_EncryptableVolume
+                - name: Win32_EncryptableVolume de dados
                   href: win32-encryptablevolume-methods.md
                   items:
                     - name: Método BackupRecoveryInformationToActiveDirectory
@@ -57,7 +57,7 @@
                       href: gethardwareencryptionstatus-win32-encryptablevolume.md
                     - name: Método GetHardwareTestStatus
                       href: gethardwareteststatus-win32-encryptablevolume.md
-                    - name: Método getidentificafield
+                    - name: Método GetIdentificationField
                       href: getidentificationfield-win32-encryptablevolume.md
                     - name: Método GetKeyPackage
                       href: getkeypackage-win32-encryptablevolume.md
@@ -123,7 +123,7 @@
                       href: resumeconversion-win32-encryptablevolume.md
                     - name: Método SaveExternalKeyToFile
                       href: saveexternalkeytofile-win32-encryptablevolume.md
-                    - name: Método setidentificafield
+                    - name: Método SetIdentificationField
                       href: setidentificationfield-win32-encryptablevolume.md
                     - name: Método UnlockWithAdSid
                       href: unlockwithadsid-win32-encryptablevolume.md
@@ -139,13 +139,13 @@
                       href: unlockwithpassphrase-win32-encryptablevolume.md
                     - name: Método UpgradeVolume
                       href: upgradevolume-win32-encryptablevolume.md
-        - name: Provedor de Trusted Platform Module
+        - name: provedor Trusted Platform Module de dados
           href: trusted-platform-module-provider.md
           items:
             - name: Win32_Tpm
               href: win32-tpm.md
               items:
-                - name: Métodos de Win32_Tpm
+                - name: Win32_Tpm métodos de Win32_Tpm
                   href: win32-tpm-methods.md
                   items:
                     - name: Método AddBlockedCommand
@@ -158,11 +158,11 @@
                       href: converttoownerauth-win32-tpm.md
                     - name: Método CreateEndorsementKeyPair
                       href: createendorsementkeypair-win32-tpm.md
-                    - name: Desabilitar método
+                    - name: Método Disable
                       href: disable-win32-tpm.md
                     - name: Método DisableAutoProvisioning
                       href: win32-tpm-disableautoprovisioning.md
-                    - name: Habilitar método
+                    - name: Método Enable
                       href: enable-win32-tpm.md
                     - name: Método EnableAutoProvisioning
                       href: win32-tpm-enableautoprovisioning.md
@@ -182,7 +182,7 @@
                       href: win32-tpm-getsrkpublickeymodulus.md
                     - name: Método ImportOwnerAuth
                       href: win32-tpm-importownerauth.md
-                    - name: Método isActivated
+                    - name: Método IsActivated
                       href: isactivated-win32-tpm.md
                     - name: Método IsAutoProvisioningEnabled
                       href: win32-tpm-isautoprovisioningenabled.md
@@ -194,7 +194,7 @@
                       href: isenabled-win32-tpm.md
                     - name: Método IsEndorsementKeyPairPresent
                       href: isendorsementkeypairpresent-win32-tpm.md
-                    - name: Método isdelen
+                    - name: Método IsOwned
                       href: isowned-win32-tpm.md
                     - name: Método IsOwnerClearDisabled
                       href: isownercleardisabled-win32-tpm.md

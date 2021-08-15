@@ -1,9 +1,9 @@
 ---
-title: EQUALIZERSETTINGS. fading cruzado
-description: O atributo fading cruzado especifica ou recupera um valor que indica se o esmaecimento cruzado está habilitado.
+title: EQUALIZERSETTINGS.crossFade
+description: O atributo crossFade especifica ou recupera um valor que indica se o esmaeçamento cruzado está habilitado.
 ms.assetid: 6c5a31f3-982e-4660-80ff-30b7a4290a15
 keywords:
-- EQUALIZERSETTINGS. fading cruzado Windows Media Player
+- EQUALIZERSETTINGS.crossFade Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0472f90f94b5c4ba56948848476b6585502427c7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1ff38ee7634f31da7717bfca015ebaacd88796d9c8186faef155704a449bbb07
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760448"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118838621"
 ---
-# <a name="equalizersettingscrossfade"></a>EQUALIZERSETTINGS. fading cruzado
+# <a name="equalizersettingscrossfade"></a>EQUALIZERSETTINGS.crossFade
 
-O atributo **fading cruzado** especifica ou recupera um valor que indica se o esmaecimento cruzado está habilitado.
+O **atributo crossFade** especifica ou recupera um valor que indica se o esmaeçamento cruzado está habilitado.
 
 ``` syntax
         elementID.crossFade
@@ -29,14 +29,14 @@ O atributo **fading cruzado** especifica ou recupera um valor que indica se o es
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **booliano** de leitura/gravação.
+Esse atributo é um booliana **de leitura/gravação.**
 
 
 
 | Valor | Descrição                      |
 |-------|----------------------------------|
-| true  | O esmaecimento cruzado está habilitado.           |
-| false | Padrão. O esmaecimento cruzado está desabilitado. |
+| true  | O esmaeçando cruzado está habilitado.           |
+| false | Padrão. O esmaeçando cruzado está desabilitado. |
 
 
 
@@ -44,7 +44,7 @@ Esse atributo é um **booliano** de leitura/gravação.
 
 ## <a name="remarks"></a>Comentários
 
-Cross-esmaecimento é um recurso de processamento de áudio que diminui gradualmente o volume de um item de mídia próximo ao final de sua reprodução enquanto inicia simultaneamente a reprodução do próximo item de mídia no volume mínimo e o aumenta gradualmente para o volume normal. A sobreposição entre o início do segundo item de mídia e o final do primeiro item de mídia é especificado pelo atributo **crossFadeWindow** .
+O esmaeçamento cruzado é um recurso de processamento de áudio que diminui gradualmente o volume de um item de mídia próximo ao final de sua reprodução, iniciando simultaneamente a reprodução do próximo item de mídia no volume mínimo e aumentando-o gradualmente para o volume normal. A sobreposição entre o início do segundo item de mídia e o final do primeiro item de mídia é especificada pelo **atributo crossFadeWindow.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ Cross-esmaecimento é um recurso de processamento de áudio que diminui gradualm
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 

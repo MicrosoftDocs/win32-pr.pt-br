@@ -12,12 +12,12 @@ keywords:
 - caneta
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 8cd3814fcdb4fce74ea8734f43b74d1c212b27de
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 1779bba1d244dbb451ce03c51bec322ebb0cf58c701c40f1fe34478b1517c2c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104294049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119466656"
 ---
 # <a name="input-feedback-configuration-reference"></a>Referência de configuração de comentários de entrada
 
@@ -29,7 +29,7 @@ Os tópicos nesta seção fornecem as especificações de referência para a [co
 
 | Tópico                                       | Descrição                                                                                                                                                          |
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Constantes**](constants.md)<br/>   | Esta seção fornece as especificações de referência para as constantes de [configuração de comentários de entrada](input-feedback-configuration-portal.md) .<br/>                 |
+| [**:**](constants.md)<br/>   | Esta seção fornece as especificações de referência para as constantes de [configuração de comentários de entrada](input-feedback-configuration-portal.md) .<br/>                 |
 | [Enumerações](enumerations.md)<br/> | Os tópicos nesta seção fornecem as especificações de referência para enumerações de [configuração de comentários de entrada](input-feedback-configuration-portal.md) .<br/> |
 | [Funções](functions.md)<br/>       | Os tópicos nesta seção fornecem as especificações de referência para funções de [configuração de comentários de entrada](input-feedback-configuration-portal.md) .<br/>    |
 

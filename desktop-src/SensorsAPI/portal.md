@@ -4,18 +4,18 @@ ms.assetid: a6ea76e6-9721-453a-a657-96f53660e09d
 title: API do Sensor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a36259910fb7583c91b695f69066aa2abf9be1e0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fc5c3fd3cbdbf2aac9a161a6cb8bc150d2828c2d48a346b94843878cda49a6a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118889667"
 ---
 # <a name="sensor-api"></a>API do Sensor
 
 ## <a name="purpose"></a>Finalidade
 
-O Windows 7 inclui suporte nativo para sensores, que são dispositivos que podem medir fenômenos físicos, como temperatura ou localização. Esta documentação descreve a API do sensor, que permite que os aplicativos obtenham e usem dados de sensores de forma padronizada.
+o Windows 7 inclui suporte nativo para sensores, que são dispositivos que podem medir fenômenos físicos, como temperatura ou localização. Esta documentação descreve a API do sensor, que permite que os aplicativos obtenham e usem dados de sensores de forma padronizada.
 
 Como seres humanos, nós confiamos em nossos sentidos para nos fornecer informações sobre o mundo em torno dos EUA. Quando criamos máquinas para executar algum de nossos trabalhos, adicionamos mecanismos de sensor para que os computadores possam responder adequadamente às condições em constante mudança.
 
@@ -23,9 +23,9 @@ Por exemplo, os mecanismos de automóvel normalmente usam uma variedade de senso
 
 Embora o doorbell puramente mecânico atenda à sua finalidade, as informações fornecidas por sensores complexos se tornam muito mais poderosas quando combinadas com o software. Os sensores modernos podem fornecer muitos dados com muita rapidez e, em uma variedade de formatos, de forma que o software fornece um mecanismo natural para fazer sentido dos dados do sensor.
 
-Hoje, os desenvolvedores de software podem escrever programas que usam sensores, mas a falta de padronização torna a programação de sensores uma tarefa árdua. Depois que um programa baseado em sensor é concluído, geralmente é sempre dependente de um determinado tipo de hardware. Usar uma ou mais soluções verticais para habilitar a implantação de um sistema baseado em software limitou a integração de sensores com hardware de computador e, até agora, os computadores baseados em Windows não têm nenhuma exceção.
+Hoje, os desenvolvedores de software podem escrever programas que usam sensores, mas a falta de padronização torna a programação de sensores uma tarefa árdua. Depois que um programa baseado em sensor é concluído, geralmente é sempre dependente de um determinado tipo de hardware. usar uma ou mais soluções verticais para habilitar a implantação de um sistema baseado em software limitou a integração de sensores com hardware de computador e, até agora, os computadores baseados em Windows não têm nenhuma exceção.
 
-O Windows 7 inclui suporte nativo para sensores, expandido por uma nova plataforma de desenvolvimento para trabalhar com sensores, incluindo sensores de local, como dispositivos GPS. A plataforma de sensor e localização do Windows fornece uma maneira padrão para que os fabricantes de dispositivos exponham dispositivos de sensor a desenvolvedores e consumidores de software, fornecendo aos desenvolvedores uma API (interface de programação de aplicativo) padronizada para trabalhar com sensores e dados de sensor.
+o Windows 7 inclui suporte nativo para sensores, expandido por uma nova plataforma de desenvolvimento para trabalhar com sensores, incluindo sensores de local, como dispositivos GPS. o Sensor de Windows e a plataforma de localização fornecem uma maneira padrão para que os fabricantes de dispositivos exponham dispositivos de Sensor a desenvolvedores e consumidores de software, fornecendo aos desenvolvedores uma API (interface de programação de aplicativo) padronizada para trabalhar com sensores e dados de Sensor.
 
 Sensores são dispositivos ou mecanismos que podem medir fenômenos físicos, fornecer dados descritivos ou fornecer informações sobre o estado de um objeto ou ambiente físico. Os computadores podem fazer uso de sensores internos, sensores conectados por meio de conexões com ou sem fio, ou sensores que fornecem dados por meio de uma rede ou da Internet.
 

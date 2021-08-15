@@ -1,9 +1,9 @@
 ---
-title: Mensagem de HDM_HITTEST (commctrl. h)
-description: Testa um ponto para determinar qual item de cabeçalho, se houver, está no ponto especificado.
+title: HDM_HITTEST mensagem (Commctrl.h)
+description: Testa um ponto para determinar qual item de header, se algum, está no ponto especificado.
 ms.assetid: ff866bd1-9f2a-457c-921d-549610ab9088
 keywords:
-- Controles de HDM_HITTEST de mensagens do Windows
+- HDM_HITTEST controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8b6634396dbd5ecd4510a4f7341fc6380dbb0ba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1cc219640d9dd9d5d9a4c9537169401f681e37660554266b3edd653365cf8cc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544766"
 ---
-# <a name="hdm_hittest-message"></a>\_Mensagem HDM HITTEST
+# <a name="hdm_hittest-message"></a>Mensagem DO \_ HDM HITTEST
 
-Testa um ponto para determinar qual item de cabeçalho, se houver, está no ponto especificado.
+Testa um ponto para determinar qual item de header, se algum, está no ponto especificado.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,13 +35,13 @@ Testa um ponto para determinar qual item de cabeçalho, se houver, está no pont
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**HDHITTESTINFO**](/windows/win32/api/commctrl/ns-commctrl-hdhittestinfo) que contém a posição para testar e receber informações sobre os resultados do teste.
+Um ponteiro para uma [**estrutura HDHITTESTINFO**](/windows/win32/api/commctrl/ns-commctrl-hdhittestinfo) que contém a posição a ser testada e recebe informações sobre os resultados do teste.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o índice do item na posição especificada, se houver, ou 1 caso contrário.
+Retorna o índice do item na posição especificada, se for o caso, ou 1 caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Retorna o índice do item na posição especificada, se houver, ou 1 caso contr�
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

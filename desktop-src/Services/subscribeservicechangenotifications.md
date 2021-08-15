@@ -17,12 +17,12 @@ api_location:
 - API-MS-Win-Service-Private-L1-1-1.dll
 - Advapi32.dll
 - API-MS-Win-Service-Private-L1-1-2.dll
-ms.openlocfilehash: e327a44d613b514123862b1ddcb1bf302fea63ef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 83bd7bc3f937794f14cbe1d2877bc53ce7d347a8f45fd4f0ddb3e9d0ee9a52a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105755551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118888452"
 ---
 # <a name="subscribeservicechangenotifications-function"></a>Função SubscribeServiceChangeNotifications
 
@@ -96,7 +96,7 @@ Retorna um ponteiro para a assinatura resultante do registro de retorno de chama
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno **será \_ êxito no erro**.
 
@@ -127,9 +127,9 @@ A função de retorno de chamada não deve bloquear a execução. Se você esper
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                   |
-| parâmetro<br/>                   | <dl> <dt>Winsvcp. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Winsvcp. h</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>SecHost.dll</dt> </dl> |
 
 

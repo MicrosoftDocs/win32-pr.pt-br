@@ -1,19 +1,19 @@
 ---
-description: Saiba mais sobre o GUID do serviço Bluetooth. Esta página de referência descreve a propriedade System.DeviceInterface.Bluetooth.ServiceGuid.
+description: saiba mais sobre o GUID do serviço de Bluetooth. Esta página de referência descreve o System. DeviceInterface. Bluetooth. Propriedade do perguid.
 ms.assetid: a6df61fa-5e6d-45cb-9012-e550fb1d08d4
-title: System.DeviceInterface.Bluetooth.ServiceGuid
+title: System. DeviceInterface. Bluetooth. Próprio GUID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c8a8eea07a06e615dd5f0adbbf35a8074094ffc
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: 2d3583688ebf1bd63be42ace44e5446a8f43229fbcd68345be21171235c781af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112261948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970435"
 ---
-# <a name="systemdeviceinterfacebluetoothserviceguid"></a>System.DeviceInterface.Bluetooth.ServiceGuid
+# <a name="systemdeviceinterfacebluetoothserviceguid"></a>System. DeviceInterface. Bluetooth. Próprio GUID
 
-GUID do serviço Bluetooth.
+GUID de serviço Bluetooth.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores PKEY são definidos em Propkey.h.
+Os valores de PKEY são definidos em Propkey. h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Propertydescription](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,19 +48,19 @@ Os valores PKEY são definidos em Propkey.h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Typeinfo](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[Stringformat](./propdesc-schema-stringformat.md)
+[stringFormat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numberformat](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -75,7 +75,7 @@ Os valores PKEY são definidos em Propkey.h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[Filtercontrol](./propdesc-schema-filtercontrol.md)
+[filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

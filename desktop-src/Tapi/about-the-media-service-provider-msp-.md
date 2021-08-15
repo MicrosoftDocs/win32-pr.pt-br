@@ -4,12 +4,12 @@ ms.assetid: 2dd1268f-b31a-443b-a36b-05c1570e7a8a
 title: Sobre o MSP (provedor de serviços de mídia)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05ef4d19a2f01c047d5fc2afd4a0323d7908fcac
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 5f6113fa6c5fcceddaf379894d5680cbdccccec5be228041967dabb11fcc2caf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104091873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118872918"
 ---
 # <a name="about-the-media-service-provider-msp"></a>Sobre o MSP (provedor de serviços de mídia)
 
@@ -17,7 +17,7 @@ Um MSP (provedor de serviços de mídia) da TAPI 3 permite um controle consider�
 
 Um MSP permite o controle de mídia por meio do uso de interfaces especiais de terminal, Stream e substream definidas pela TAPI. O diagrama em [sobre controles de mídia e de chamada](about-call-and-media-controls.md) ilustra como essas interfaces aparecem para um aplicativo TAPI 3.
 
-Além disso, um MSP pode implementar [interfaces específicas de provedor](provider-specific-interfaces.md)privada, que a TAPI agregará aos objetos padrão expostos a um aplicativo. Por exemplo, o Microsoft IPConf MSP, que é instalado com o Microsoft Windows 2000, implementa a interface [**ITParticipant**](itparticipant.md) , que fornece controles para membros individuais de uma conferência.
+Além disso, um MSP pode implementar [interfaces específicas de provedor](provider-specific-interfaces.md)privada, que a TAPI agregará aos objetos padrão expostos a um aplicativo. por exemplo, o microsoft IPConf MSP, que é instalado com o microsoft Windows 2000, implementa a interface [**ITParticipant**](itparticipant.md) , que fornece controles para membros individuais de uma conferência.
 
 O tópico a seguir descreve brevemente o MSPs que pode ser instalado com um sistema operacional da Microsoft. Para obter detalhes sobre a configuração e o uso, consulte o kit de recursos para a plataforma de destino.
 

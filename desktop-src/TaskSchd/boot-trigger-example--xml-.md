@@ -1,6 +1,6 @@
 ---
 title: Exemplo de gatilho de inicialização (XML)
-description: O XML neste exemplo define uma tarefa que inicia o bloco de notas quando o sistema é inicializado.
+description: o XML neste exemplo define uma tarefa que inicia Bloco de notas quando o sistema é inicializado.
 ms.assetid: 6dd7155c-6163-4408-9cef-c313134beeb0
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a8f9f5ea10f92979b0798b12a6225f8ba74a38ee
-ms.sourcegitcommit: 40dd8501397fc79a643deb528c6c57ac2e9726ce
+ms.openlocfilehash: 75b4c9628da5ef56ec006faf9d7301661dfd0f76894ebb4f5f37cc1035d40f75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "104293699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118860315"
 ---
 # <a name="boot-trigger-example-xml"></a>Exemplo de gatilho de inicialização (XML)
 
-O XML neste exemplo define uma tarefa que inicia o bloco de notas quando o sistema é inicializado.
+o XML neste exemplo define uma tarefa que inicia Bloco de notas quando o sistema é inicializado.
 
-Para registrar uma tarefa que é definida em XML, você pode usar a função [**ITaskFolder:: RegisterTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertask) ([**TaskFolder. RegisterTask**](taskfolder-registertask.md) para scripts) ou a ferramenta de linha de comando Schtasks.exe. Se você usar a ferramenta de Schtasks.exe (localizada no diretório C: \\ Windows \\ System32), poderá usar o comando a seguir para registrar a tarefa: **SCHTASKS/CREATE/XML** *<path to the XML file containing the task definition>* **/TN** *<task name>* .
+Para registrar uma tarefa que é definida em XML, você pode usar a função [**ITaskFolder:: RegisterTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertask) ([**TaskFolder. RegisterTask**](taskfolder-registertask.md) para scripts) ou a ferramenta de linha de comando Schtasks.exe. se você usar a ferramenta de Schtasks.exe (localizada no diretório C: \\ Windows \\ System32), poderá usar o comando a seguir para registrar a tarefa: **schtasks/create/xml** *<path to the XML file containing the task definition>* **/tn** *<task name>* .
 
-## <a name="to-define-a-task-to-start-notepad-on-system-boot"></a>Para definir uma tarefa para iniciar o bloco de notas na inicialização do sistema
+## <a name="to-define-a-task-to-start-notepad-on-system-boot"></a>para definir uma tarefa para iniciar o Bloco de notas na inicialização do sistema
 
-O exemplo de XML a seguir mostra como definir uma tarefa com uma única ação de execução (iniciando o bloco de notas), um único gatilho de inicialização que inicia a tarefa quando o sistema é inicializado e várias outras configurações de tarefa que afetam o modo como a tarefa é manipulada pelo Agendador de Tarefas.
+o exemplo de XML a seguir mostra como definir uma tarefa com uma única ação de execução (iniciando Bloco de notas), um único gatilho de inicialização que inicia a tarefa quando o sistema é inicializado e várias outras configurações de tarefa que afetam o modo como a tarefa é manipulada pelo Agendador de Tarefas.
 
 
 ```XML
@@ -77,8 +77,8 @@ Aqui estão alguns elementos importantes para ter em mente ao usar este exemplo.
 -   [**Triggers**](taskschedulerschema-triggers-tasktype-element.md): define o gatilho que inicia a tarefa.
 -   [**BootTrigger**](taskschedulerschema-boottrigger-triggergroup-element.md): define o gatilho de inicialização. Nesse caso, somente dois elementos filho são usados: os limites inicial e final que especificam quando o gatilho é ativado e desativado.
 -   [**Principal**](taskschedulerschema-principal-principaltype-element.md): define o contexto de segurança em que uma tarefa é executada.
--   [**Configurações**](taskschedulerschema-settings-tasktype-element.md): define as configurações de tarefa que o Agendador de tarefas usa para executar a tarefa.
--   [**Ações**](taskschedulerschema-actions-tasktype-element.md): define as ações que a tarefa executa. Nesse caso, executar o bloco de notas.
+-   [**Configurações**](taskschedulerschema-settings-tasktype-element.md): define as configurações de tarefa que o Agendador de Tarefas usa para executar a tarefa.
+-   [**Ações**](taskschedulerschema-actions-tasktype-element.md): define as ações que a tarefa executa. nesse caso, a execução de Bloco de notas.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -87,9 +87,9 @@ Aqui estão alguns elementos importantes para ter em mente ao usar este exemplo.
 [Usando o Agendador de Tarefas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

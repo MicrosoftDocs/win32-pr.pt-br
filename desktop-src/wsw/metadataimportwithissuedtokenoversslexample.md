@@ -1,25 +1,25 @@
 ---
 title: MetadataImportWithIssuedTokenOverSslExample
-description: Este exemplo ilustra a importação de metadados de um ponto de extremidade que dá suporte ao uso de um token emitido que é obtido do serviço de token de segurança (STS) emissor usando WsRequestSecurityToken e apresentado ao serviço usando a \_ Associação de segurança de mensagem de token XML WS \_ \_ \_ \_ com \_ Associação de segurança de transporte WS SSL \_ \_ \_ . Consulte Federação para obter mais informações.
+description: Este exemplo ilustra a importação de metadados de um ponto de extremidade que dá suporte ao uso de um token emitido obtido do STS (serviço de token de segurança) em emissão usando WsRequestSecurityToken e apresentado ao serviço usando a ASSOCIAÇÃO DE SEGURANÇA DE MENSAGEM DE TOKEN XML do WS com A ASSOCIAÇÃO DE SEGURANÇA DE TRANSPORTE \_ \_ SSL do \_ \_ \_ \_ \_ WS. \_ \_ Consulte Federação para obter mais informações.
 ms.assetid: 31d1386a-1733-4e7a-add1-9050528075c8
 keywords:
-- API de serviços Web do Windows MetadataImportWithIssuedTokenOverSslExample
+- MetadataImportWithIssuedTokenOverSslExample Windows API de Serviços Web
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7922c8145489841543a7f69cac0abac06c95c78c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6ae41d6c957abeeb17cf0ee26be1dfe44cf0380559b0a8d9b527b5bb8bb90e98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119325736"
 ---
 # <a name="metadataimportwithissuedtokenoversslexample"></a>MetadataImportWithIssuedTokenOverSslExample
 
-Este exemplo ilustra a importação de metadados de um ponto de extremidade que dá suporte ao uso de um token emitido que é obtido do serviço de token de segurança (STS) emissor usando [**WsRequestSecurityToken**](/windows/desktop/api/WebServices/nf-webservices-wsrequestsecuritytoken) e apresentado ao serviço usando a [**Associação de \_ segurança de \_ mensagem de token \_ \_ \_ XML**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_token_message_security_binding) WS com [**Associação de \_ segurança de \_ transporte \_ \_ WS SSL**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding). Consulte [Federação](federation.md) para obter mais informações.
+Este exemplo ilustra a importação de metadados de um ponto de extremidade que dá suporte ao uso de um token emitido obtido do STS (serviço de token de segurança) em emissão usando [**WsRequestSecurityToken**](/windows/desktop/api/WebServices/nf-webservices-wsrequestsecuritytoken) e apresentado ao serviço usando a ASSOCIAÇÃO DE SEGURANÇA DE MENSAGEM DE TOKEN XML do [**WS com A ASSOCIAÇÃO DE SEGURANÇA \_ \_ \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_token_message_security_binding) DE TRANSPORTE [**\_ SSL \_ \_ \_ do WS.**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding) Consulte [Federação](federation.md) para obter mais informações.
 
-## <a name="metadataimportwithissuedtokenoversslexamplecpp"></a>MetadataImportWithIssuedTokenOverSslExample. cpp
+## <a name="metadataimportwithissuedtokenoversslexamplecpp"></a>MetadataImportWithIssuedTokenOverSslExample.cpp
 
 
 ```C++
@@ -634,18 +634,18 @@ Exit:
 [**WsRequestSecurityToken**](/windows/desktop/api/WebServices/nf-webservices-wsrequestsecuritytoken)
 </dt> <dt>
 
-[**\_Associação de \_ \_ segurança de mensagem de token XML \_ WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_token_message_security_binding)
+[**ASSOCIAÇÃO DE SEGURANÇA DE \_ MENSAGEM DE TOKEN XML \_ \_ \_ \_ DO WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_token_message_security_binding)
 </dt> <dt>
 
-[**\_Associação de \_ segurança de transporte WS SSL \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding)
+[**ASSOCIAÇÃO DE SEGURANÇA \_ DE TRANSPORTE SSL \_ \_ \_ DO WS**](/windows/desktop/api/WebServices/ns-webservices-ws_ssl_transport_security_binding)
 </dt> <dt>
 
 [Federação](federation.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

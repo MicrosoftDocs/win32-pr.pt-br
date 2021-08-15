@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: função JetCreateDatabase'
+description: 'Saiba mais sobre: Função JetCreateDatabase'
 title: Função JetCreateDatabase
 TOCTitle: JetCreateDatabase Function
 ms:assetid: 2b13b038-1694-46d8-b903-9be64384cb06
@@ -20,21 +20,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b8fbec76e3b38f9b42c36156b2312a8e77a6b43a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 788c8e9fcc97d834843f42752d59cd6c8754fd49b99eac829ed5a68ae18cf287
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105798497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119358295"
 ---
 # <a name="jetcreatedatabase-function"></a>Função JetCreateDatabase
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetcreatedatabase-function"></a>Função JetCreateDatabase
 
-A função **JetCreateDatabase** cria e anexa um arquivo de banco de dados a ser usado com o mecanismo de banco de dados ESE. Chamar [JetCreateDatabase2](./jetcreatedatabase2-function.md) com *cpgDatabaseSizeMax* definido como zero é idêntico a chamar **JETCREATEDATABASE** com *szConnect* definido como nulo. Atualmente, até sete bancos de dados podem ser criados por instância.
+A **função JetCreateDatabase** cria e anexa um arquivo de banco de dados a ser usado com o mecanismo de banco de dados ESE. Chamar [JetCreateDatabase2](./jetcreatedatabase2-function.md) com *cpgDatabaseSizeMax* definido como zero é idêntico a chamar **JetCreateDatabase** com *szConnect* definido como NULL. Atualmente, até sete bancos de dados podem ser criados por instância.
 
 ```cpp
     JET_ERR JET_API JetCreateDatabase(
@@ -50,7 +50,7 @@ A função **JetCreateDatabase** cria e anexa um arquivo de banco de dados a ser
 
 *sesid*
 
-O contexto da sessão de banco de dados a ser usado para a chamada à API.
+O contexto de sessão do banco de dados a ser usado para a chamada à API.
 
 *szFilename*
 
@@ -86,11 +86,11 @@ Um grupo de bits que especifica zero ou mais das opções a seguir.
 </tr>
 <tr class="even">
 <td><p>JET_bitDbRecoveryOff</p></td>
-<td><p>JET_bitDbRecoveryOff desativa o registro em log. A definição desse bit perde a capacidade de reproduzir arquivos de log e recuperar o banco de dados para um estado utilizável consistente após um evento catastrófico.</p></td>
+<td><p>JET_bitDbRecoveryOff o registro em log. Definir esse bit perde a capacidade de repetir arquivos de log e recuperar o banco de dados para um estado acessível consistente após um evento catastrófico.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_bitDbShadowingOff</p></td>
-<td><p>A configuração JET_bitDbShadowingOff desabilitará a duplicação de algumas estruturas de banco de dados internas (sombreamento). A duplicação dessas estruturas é feita para manter a resiliência. portanto, a configuração JET_bitDbShadowingOff removerá essa resiliência.</p></td>
+<td><p>Definir JET_bitDbShadowingOff desabilitará a duplicação de algumas estruturas de banco de dados internas (sombreamento). A duplicação dessas estruturas é feita para resiliência, portanto, definir JET_bitDbShadowingOff removerá essa resiliência.</p></td>
 </tr>
 </tbody>
 </table>
@@ -98,7 +98,7 @@ Um grupo de bits que especifica zero ou mais das opções a seguir.
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o [JET_ERR](./jet-err.md) tipo de dados com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros de ESE, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -108,7 +108,7 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 <thead>
 <tr class="header">
 <th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
+<th><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
@@ -118,19 +118,19 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 </tr>
 <tr class="even">
 <td><p>JET_errDatabaseDuplicate</p></td>
-<td><p>O banco de dados nomeado em <em>szFilename</em> já existe. Quando esse erro é retornado, o banco de dados não é anexado.</p></td>
+<td><p>O banco de dados chamado <em>em szFilename</em> já existe. Quando esse erro é retornado, o banco de dados não é anexado.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errDatabaseInUse</p></td>
-<td><p>Pode ser retornado se o acesso exclusivo tiver sido solicitado, mas não puder ser concedido ou se outra sessão já tiver aberto o banco de dados exclusivamente.</p></td>
+<td><p>Poderá ser retornado se o acesso exclusivo tiver sido solicitado, mas não puder ser concedido ou se outra sessão já tiver aberto o banco de dados exclusivamente.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errDatabaseInvalidPages</p></td>
-<td><p>Retornado quando <em>cpgDatabaseSizeMax</em> é maior do que o número máximo de páginas permitido em um banco de dados. O máximo atual é 2147483646 (0x7FFFFFFE).</p></td>
+<td><p>Retornado quando <em>cpgDatabaseSizeMax</em> é maior que o número máximo de páginas permitidas em um banco de dados. O máximo atual é 2147483646 (0x7ffffffe).</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errDatabaseInvalidPath</p></td>
-<td><p>Um caminho inválido foi fornecido em <em>szFilename</em>. <em>szFilename</em> deve ser não nulo. Por padrão, <em>szFilename</em> deve apontar para um diretório existente. O caminho será criado se <em>JET_paramCreatePathIfNotExist</em> estiver definido (consulte <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a>).</p></td>
+<td><p>Um caminho inválido foi dado em <em>szFilename.</em> <em>szFilename</em> deve ser não NULL. Por padrão, <em>szFilename</em> deve apontar para um diretório existente. O caminho será criado se <em>JET_paramCreatePathIfNotExist</em> estiver definido (consulte <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a>).</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errDatabaseLocked</p></td>
@@ -154,7 +154,7 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 </tr>
 <tr class="odd">
 <td><p>JET_errOneDatabasePerSession</p></td>
-<td><p>Foi feita uma tentativa de abrir mais de um banco de dados e JET_paramOneDatabasePerSession foi definido. Consulte <a href="gg269337(v=exchg.10).md">parâmetros de banco de dados</a>.</p></td>
+<td><p>Foi feita uma tentativa de abrir mais de um banco de dados e JET_paramOneDatabasePerSession foi definido. Consulte <a href="gg269337(v=exchg.10).md">Parâmetros de banco de dados</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errOutOfMemory</p></td>
@@ -166,11 +166,11 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 </tr>
 <tr class="even">
 <td><p>JET_wrnDatabaseAttached</p></td>
-<td><p>Um aviso não fatal que indica que o arquivo de banco de dados já foi anexado por esta sessão.</p></td>
+<td><p>Um aviso nãofatal que indica que o arquivo de banco de dados já foi anexado por esta sessão.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_wrnFileOpenReadOnly</p></td>
-<td><p>JET_wrnFileOpenReadOnly indica que o arquivo foi anexado somente leitura, mas <strong>JetCreateDatabase</strong> não passou JET_bitDbReadOnly. O banco de dados ainda está aberto com acesso somente leitura.</p></td>
+<td><p>JET_wrnFileOpenReadOnly indica que o arquivo foi anexado somente leitura, mas <strong>JetCreateDatabase</strong> não passou JET_bitDbReadOnly. O banco de dados ainda é aberto com acesso somente leitura.</p></td>
 </tr>
 </tbody>
 </table>
@@ -178,11 +178,11 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 
 #### <a name="remarks"></a>Comentários
 
-Se o banco de dados especificado em *szFilename* existir e JET_bitDbOverwriteExisting não tiver sido passado, a chamada à API falhará. Se JET_bitDbOverwriteExisting foi passado, o arquivo de banco de dados antigo será excluído primeiro.
+Se o banco de dados especificado *em szFilename* existir e JET_bitDbOverwriteExisting não tiver sido passado, a chamada à API falhará. Se JET_bitDbOverwriteExisting foi passado, o arquivo de banco de dados antigo será excluído primeiro.
 
-Se a API criar um arquivo de banco de dados e, em seguida, atingir outro erro, ele limpará e excluirá o arquivo.
+Se a API criar um arquivo de banco de dados e, em seguida, ocorrer outro erro, ela limpará e excluirá o arquivo.
 
-**JetCreateDatabase** irá abrir implicitamente o banco de dados. Não é necessariamente chamar [JetOpenDatabase](./jetopendatabase-function.md).
+**JetCreateDatabase abrirá** implicitamente o banco de dados. Não é necessariamente chamar [JetOpenDatabase subsequentemente.](./jetopendatabase-function.md)
 
 #### <a name="requirements"></a>Requisitos
 
@@ -194,19 +194,19 @@ Se a API criar um arquivo de banco de dados e, em seguida, atingir outro erro, e
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
+<td><p>Declarado em Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
+<td><p>Use ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>
@@ -222,7 +222,7 @@ Se a API criar um arquivo de banco de dados e, em seguida, atingir outro erro, e
 
 #### <a name="see-also"></a>Consulte Também
 
-[Arquivos do mecanismo de armazenamento extensível](./extensible-storage-engine-files.md)  
+[Arquivos extensíveis Armazenamento mecanismo](./extensible-storage-engine-files.md)  
 [JET_ERR](./jet-err.md)  
 [JET_DBID](./jet-dbid.md)  
 [JET_GRBIT](./jet-grbit.md)  

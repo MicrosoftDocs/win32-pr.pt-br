@@ -1,9 +1,9 @@
 ---
-title: Propriedade Command. LabelDescription
-description: Representa uma descrição do rótulo.
+title: Propriedade Command.LabelDescription
+description: Representa uma descrição de rótulo.
 ms.assetid: 6c683e9e-0742-466e-9fdd-3d29f8ccb9ff
 keywords:
-- Faixa de das propriedades do Windows de Propriedade Command. LabelDescription
+- Propriedade Command.LabelDescription Windows Ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f748425b4c8363feee737d18c750b3a1d91121b5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9051b4f645744416f290906559e054405726f36f9616e8f38f3cfbae357137dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964205"
 ---
-# <a name="commandlabeldescription-property"></a>Propriedade Command. LabelDescription
+# <a name="commandlabeldescription-property"></a>Propriedade Command.LabelDescription
 
-Representa uma descrição do rótulo.
+Representa uma descrição de rótulo.
 
 ## <a name="usage"></a>Uso
 
@@ -41,7 +41,7 @@ Não há atributos.
 
 | Elemento                                                   | Descrição                                   |
 |-----------------------------------------------------------|-----------------------------------------------|
-| [**Strings**](windowsribbon-element-string.md)<br/> | Pode ocorrer no máximo uma vez<br/> <br/> |
+| [**String**](windowsribbon-element-string.md)<br/> | Pode ocorrer no máximo uma vez<br/> <br/> |
 
 
 
@@ -59,29 +59,29 @@ Não há atributos.
 
 Opcional.
 
-Pode ocorrer no máximo uma vez para cada [**comando**](windowsribbon-element-command.md).
+Pode ocorrer no máximo uma vez para cada [**Comando**](windowsribbon-element-command.md).
 
-**Command. LabelDescription** pode conter um valor do *tipo xs: String* restrito a qualquer sequência de caracteres, incluindo espaços em branco e caracteres de quebra de linha.
+**Command.LabelDescription** pode conter um valor do tipo *xs:string* restrito a qualquer sequência de caracteres, incluindo espaços em branco e caracteres de quebra de linha.
 
 > [!Note]  
-> Use a referência de caractere XML UCS (conjunto de caracteres universal) `&#xA;` para especificar uma quebra de linha.
+> Use a referência de caractere XML do Conjunto de Caracteres Universal (UCS) `&#xA;` para especificar uma quebra de linha.
 
  
 
-O comprimento máximo é não associado.
+O comprimento máximo não é desaconsudido.
 
-Se nenhum valor for fornecido para **Command. LabelDescription**, o elemento filho da [**cadeia de caracteres**](windowsribbon-element-string.md) será necessário.
+Se nenhum valor for fornecido para **Command.LabelDescription,** o elemento [**filho String**](windowsribbon-element-string.md) será necessário.
 
 > [!Note]  
-> Se **Command. LabelDescription** contiver um valor e um elemento filho de [**cadeia**](windowsribbon-element-string.md) de caracteres, a **cadeia de caracteres** terá precedência.
+> Se **Command.LabelDescription contiver** um valor e um elemento [**filho String,**](windowsribbon-element-string.md) String **tem** precedência.
 
  
 
-O **comando. LabelDescription** só dá suporte ao alinhamento à esquerda.
+**Command.LabelDescription dá suporte** apenas ao alinhamento à esquerda.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra um manifesto dos comandos da área de transferência com várias declarações **Command. LabelDescription** .
+O exemplo a seguir mostra um manifesto de Comandos da área de transferência com várias declarações **Command.LabelDescription.**
 
 
 ```XML
@@ -155,8 +155,8 @@ O exemplo a seguir mostra um manifesto dos comandos da área de transferência c
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/> |
 
 
 
@@ -164,7 +164,7 @@ O exemplo a seguir mostra um manifesto dos comandos da área de transferência c
 
 <dl> <dt>
 
-[\_LabelDescription PKEY \_ UI](windowsribbon-reference-properties-uipkey-labeldescription.md)
+[IU \_ PKEY \_ LabelDescription](windowsribbon-reference-properties-uipkey-labeldescription.md)
 </dt> </dl>
 
  

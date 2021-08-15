@@ -5,12 +5,12 @@ ms.assetid: f1caccd2-3453-448e-b194-bf899eff8091
 title: E (Glossário de segurança)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed30465ef5764d4553ceb03e1094b73d940f85f8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf2807dc99754fd424898c3df8d89634c7b940a7ab2fa9399ca85cd8cbc14d1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104506032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118895626"
 ---
 # <a name="e-security-glossary"></a>E (Glossário de segurança)
 
@@ -91,7 +91,7 @@ Dados que foram convertidos de texto não criptografado em texto cifrado. Mensag
 <span id="_security_encrypting_file_system_gly"></span><span id="_SECURITY_ENCRYPTING_FILE_SYSTEM_GLY"></span>**sistema de arquivos com criptografia**
 </dt> <dd>
 
-EFS Um recurso no sistema operacional Windows que permite aos usuários criptografar arquivos e pastas em um disco de volume NTFS para mantê-los protegidos contra o acesso de intrusos.
+EFS um recurso no sistema operacional Windows que permite aos usuários criptografar arquivos e pastas em um disco de volume NTFS para mantê-los protegidos contra o acesso de intrusos.
 
 </dd> <dt>
 
@@ -135,7 +135,7 @@ Consulte *par de chaves do Exchange*.
 <span id="_security_exchange_key_pair_gly"></span><span id="_SECURITY_EXCHANGE_KEY_PAIR_GLY"></span>**par de chaves do Exchange**
 </dt> <dd>
 
-Um par de chaves pública/privada usado para criptografar chaves de sessão para que elas possam ser armazenadas e trocadas com segurança com outros usuários. Os pares de chaves do Exchange são criados chamando a função **CryptGenKey** .
+Um par de chaves pública/privada usado para criptografar chaves de sessão para que elas possam ser armazenadas e trocadas com segurança com outros usuários. Exchange pares de chaves são criados chamando a função **CryptGenKey** .
 
 Compare o [*par de chaves de assinatura*](s-gly.md).
 

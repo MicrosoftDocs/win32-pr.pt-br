@@ -1,7 +1,7 @@
 ---
 description: O método SetType especifica o tipo principal.
 ms.assetid: 3fd93d5e-73ea-453e-8f08-652d5a81239f
-title: Método CMediaType. SetType (mtype. h)
+title: Método CMediaType.SetType (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dfcf6ca634bce92701eb89f26dcfb6bdfb51f698
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 37d035202d4674da11016620dc3c3d1ba3ab99f6ca514b9581f7dd2e4d9592d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105771850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954385"
 ---
-# <a name="cmediatypesettype-method"></a>Método CMediaType. SetType
+# <a name="cmediatypesettype-method"></a>Método CMediaType.SetType
 
 O `SetType` método especifica o tipo principal.
 
@@ -42,14 +42,14 @@ void SetType(
 
 <dl> <dt>
 
-*ptype* 
+*Ptype* 
 </dt> <dd>
 
 Ponteiro para um **GUID** que especifica o tipo principal.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -59,8 +59,8 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Mtype. h (incluir fluxos. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Mtype.h (incluir Fluxos.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 38357331db2440c35ca7557d08c97729fde9c9f0
-ms.sourcegitcommit: d6bf2018c588c9782e1eed21b3cdea3523ec6955
+ms.openlocfilehash: b572d62895a4f5df503df3ed78bfcf931af331ded25596267f0dd5b4286a4c4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "105811020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118877367"
 ---
 # <a name="isoftkbdsetsoftkeyboardcolors-method"></a>Método ISoftKbd:: SetSoftKeyboardColors
 
@@ -57,7 +57,7 @@ Um valor de [**COLORREF**](/windows/desktop/gdi/colorref) de 32 bits especifican
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -80,8 +80,8 @@ Esse método pode retornar um desses valores.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                             |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
-| Redistribuível<br/>          | TSF 1,0 no Windows 2000 Professional<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>Softkbdc. h</dt> </dl>  |
+| Redistribuível<br/>          | TSF 1,0 em Windows 2000 Professional<br/>                                        |
+| Cabeçalho<br/>                   | <dl> <dt>Softkbdc. h</dt> </dl>  |
 | INSERI<br/>                      | <dl> <dt>Softkbd. idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Softkbd.dll</dt> </dl> |
 

@@ -1,7 +1,7 @@
 ---
 description: Se o Trusted Platform Module (TPM) estiver disponível, esse método protegerá a chave de criptografia do volume aprimorada por um número de identificação pessoal especificado pelo usuário.
 ms.assetid: 8c4c434a-dd60-491a-a983-b3fa78c91c0d
-title: Método ProtectKeyWithTPMAndPIN da classe Win32_EncryptableVolume
+title: Método ProtectKeyWithTPMAndPIN da classe Win32_EncryptableVolume dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: e5a0a7a253723bec84df7a86fa94ab182bd192dc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0eab283a0eaec97d7f7c9e03cf8d8064e08e0e25bea606b393fb35a38143f7fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118891401"
 ---
-# <a name="protectkeywithtpmandpin-method-of-the-win32_encryptablevolume-class"></a>Método ProtectKeyWithTPMAndPIN da classe Win32 \_ EncryptableVolume
+# <a name="protectkeywithtpmandpin-method-of-the-win32_encryptablevolume-class"></a>Método ProtectKeyWithTPMAndPIN da classe EncryptableVolume do Win32 \_
 
-O método **ProtectKeyWithTPMAndPIN** da classe [**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md) protege a chave de criptografia do volume usando o hardware de segurança Trusted Platform Module (TPM) no computador, se disponível, aprimorado por um PIN (número de identificação pessoal) especificado pelo usuário que deve ser fornecido ao computador na inicialização.
+O **método ProtectKeyWithTPMAndPIN** da classe [**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md) protege a chave de criptografia do volume usando o Hardware de Segurança do Trusted Platform Module (TPM) no computador, se disponível, aprimorado por um PIN (número de identificação pessoal) especificado pelo usuário que deve ser fornecido ao computador na inicialização.
 
-A validação do TPM e a entrada da cadeia de caracteres de identificação pessoal são necessárias para acessar a chave de criptografia do volume e desbloquear o conteúdo do volume.
+Tanto a validação pelo TPM quanto a entrada da cadeia de caracteres de identificação pessoal são necessárias para acessar a chave de criptografia do volume e desbloquear o conteúdo do volume.
 
 Esse método só é aplicável ao volume que contém o sistema operacional em execução no momento.
 
@@ -48,58 +48,58 @@ uint32 ProtectKeyWithTPMAndPIN(
 
 <dl> <dt>
 
-*FriendlyName* \[ em, opcional\]
+*FriendlyName* \[ in, opcional\]
 </dt> <dd>
 
-Tipo: **cadeia de caracteres**
+Tipo: cadeia **de caracteres**
 
 Um identificador de cadeia de caracteres atribuído pelo usuário para esse protetor de chave. Se esse parâmetro não for especificado, um valor em branco será usado.
 
 </dd> <dt>
 
-*PlatformValidationProfile* \[ em, opcional\]
+*PlatformValidationProfile* \[ in, opcional\]
 </dt> <dd>
 
 Tipo: **uint8 \[ \]**
 
-Uma matriz de inteiros que especifica como o hardware de segurança do Trusted Platform Module do computador (TPM) protege a chave de criptografia do volume do disco.
+Uma matriz de inteiros que especifica como o hardware de segurança Trusted Platform Module (TPM) do computador garante a chave de criptografia do volume de disco.
 
-Um perfil de validação de plataforma consiste em um conjunto de índices de PCR (registro de configuração de plataforma) que variam de 0 a 23, inclusive. Os valores de repetição no parâmetro são ignorados. Cada índice de PCR é associado a serviços que são executados quando o sistema operacional é iniciado. Cada vez que o computador for iniciado, o TPM verificará se os serviços especificados no perfil de validação de plataforma não foram alterados. Se qualquer um desses serviços for alterado enquanto a proteção Criptografia de Unidade de Disco BitLocker (BDE) permanecer ativada, o TPM não liberará a chave de criptografia para desbloquear o volume do disco e o computador entrará no modo de recuperação.
+Um perfil de validação de plataforma consiste em um conjunto de índices do PCR (Registro de Configuração de Plataforma) que variam de 0 a 23, inclusive. Os valores de repetição no parâmetro são ignorados. Cada índice PCR é associado a serviços que são executados quando o sistema operacional é iniciado. Sempre que o computador for iniciado, o TPM verificará se os serviços especificados no perfil de validação da plataforma não foram alterados. Se qualquer um desses serviços mudar enquanto Criptografia de Unidade de Disco BitLocker proteção (BDE) permanecer, o TPM não liberará a chave de criptografia para desbloquear o volume de disco e o computador entrará no modo de recuperação.
 
-Se esse parâmetro for especificado enquanto a configuração de Política de Grupo correspondente tiver sido habilitada, ela deverá corresponder à configuração de Política de Grupo.
+Se esse parâmetro for especificado enquanto a configuração Política de Grupo correspondente tiver sido habilitada, ele deverá corresponder à configuração Política de Grupo configuração.
 
-Se esse parâmetro não for especificado, o padrão 0, 2, 4, 5, 8, 9, 10 e 11 será usado. O perfil de validação de plataforma padrão protege a chave de criptografia contra alterações nos seguintes elementos:
+Se esse parâmetro não for especificado, o padrão de 0, 2, 4, 5, 8, 9, 10 e 11 será usado. O perfil de validação de plataforma padrão garante a chave de criptografia contra alterações nos seguintes elementos:
 
--   Principal raiz de confiança de medida (CRTM)
+-   Raiz principal de confiança de medida (CRTM)
 -   BIOS
 -   Extensões de plataforma (PCR 0)
--   Código ROM de opção (PCR 2)
--   Código de MBR (registro mestre de inicialização) (PCR 4)
--   Tabela de partição MBR (registro mestre de inicialização) (PCR 5)
+-   Opção Código ROM (PCR 2)
+-   Código MBR (Registro Mestre de Inicialização) (PCR 4)
+-   Tabela de partição MBR (Registro Mestre de Inicialização) (PCR 5)
 -   Setor de inicialização NTFS (PCR 8)
 -   Bloco de inicialização NTFS (PCR 9)
--   Gerenciador de inicialização (PCR 10)
+-   Gerenciador de Inicialização (PCR 10)
 -   Controle de acesso do BitLocker (PCR 11)
 
-Para a segurança do seu computador, recomendamos o perfil padrão. Para proteção adicional contra alterações de configuração de inicialização antecipada, use um perfil de PCRs 0, 1, 2, 3, 4, 5, 8, 9, 10, 11. Os computadores baseados em Unified Extensible Firmware Interface (UEFI) não usam a PCR 5 por padrão.
+Para a segurança do computador, recomendamos o perfil padrão. Para proteção adicional contra alterações de configuração de inicialização antecipada, use um perfil de PCRs 0, 1, 2, 3, 4, 5, 8, 9, 10, 11. Computadores baseados em UEFI (Unified Extensible Firmware Interface) não usam PCR 5 por padrão.
 
-A alteração do perfil padrão afeta a segurança e a capacidade de gerenciamento do seu computador. A sensibilidade do BitLocker com as modificações de plataforma (maliciosas ou autorizadas) é aumentada ou reduzida, dependendo da inclusão ou exclusão, respectivamente, do PCRs. Para que a proteção do BitLocker seja habilitada, o perfil de validação de plataforma deve incluir o PCR 11.
+A alteração do perfil padrão afeta a segurança e a capacidade de gerenciamento do computador. A sensibilidade do BitLocker a modificações de plataforma (mal-intencionados ou autorizados) é aumentada ou reduzida dependendo da inclusão ou exclusão, respectivamente, dos PCRs. Para que a proteção do BitLocker seja habilitada, o perfil de validação da plataforma deve incluir PCR 11.
 
 
 
 | Valor                                                                         | Significado                                                                            |
 |-------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| <dl> <dt>0</dt> </dl>  | Principal raiz de CRTM (relação de confiança de medida), BIOS e extensões de plataforma<br/> |
-| <dl> <dt>1</dt> </dl>  | Configuração e dados da plataforma e da placa-mãe<br/>                         |
-| <dl> <dt>2</dt> </dl>  | Código da ROM de opção<br/>                                                         |
-| <dl> <dt>3</dt> </dl>  | Configuração de ROM de opção e dados<br/>                                       |
-| <dl> <dt>4</dt> </dl>  | Código de registro mestre de inicialização (MBR)<br/>                                           |
-| <dl> <dt>5</dt> </dl>  | Tabela de partição MBR (registro mestre de inicialização)<br/>                                |
-| <dl> <dt>6</dt> </dl>  | Transição de estado e eventos de ativação<br/>                                        |
-| <dl> <dt>7</dt> </dl>  | Manufacturer-Specific do computador<br/>                                          |
+| <dl> <dt>0</dt> </dl>  | Raiz principal da crtm (confiança de medida), BIOS e extensões de plataforma<br/> |
+| <dl> <dt>1</dt> </dl>  | Configuração de plataforma e placa-mãe e dados<br/>                         |
+| <dl> <dt>2</dt> </dl>  | Código ROM da opção<br/>                                                         |
+| <dl> <dt>3</dt> </dl>  | Configuração e dados de ROM da opção<br/>                                       |
+| <dl> <dt>4</dt> </dl>  | Código MBR (Registro mestre de inicialização)<br/>                                           |
+| <dl> <dt>5</dt> </dl>  | Tabela de partição MBR (Registro Mestre de Inicialização)<br/>                                |
+| <dl> <dt>6</dt> </dl>  | Eventos de transição de estado e a adoção<br/>                                        |
+| <dl> <dt>7</dt> </dl>  | Computador Manufacturer-Specific<br/>                                          |
 | <dl> <dt>8</dt> </dl>  | Setor de inicialização NTFS<br/>                                                        |
 | <dl> <dt>9</dt> </dl>  | Bloco de inicialização NTFS<br/>                                                         |
-| <dl> <dt>10</dt> </dl> | Gerenciador de inicialização<br/>                                                            |
+| <dl> <dt>10</dt> </dl> | Gerenciador de Inicialização<br/>                                                            |
 | <dl> <dt>11</dt> </dl> | Controle de acesso do BitLocker<br/>                                                |
 | <dl> <dt>12</dt> </dl> | Definido para uso pelo sistema operacional estático<br/>                          |
 | <dl> <dt>13</dt> </dl> | Definido para uso pelo sistema operacional estático<br/>                          |
@@ -107,10 +107,10 @@ A alteração do perfil padrão afeta a segurança e a capacidade de gerenciamen
 | <dl> <dt>15</dt> </dl> | Definido para uso pelo sistema operacional estático<br/>                          |
 | <dl> <dt>16</dt> </dl> | Usado para depuração<br/>                                                      |
 | <dl> <dt>17</dt> </dl> | CRTM dinâmico<br/>                                                            |
-| <dl> <dt>anos</dt> </dl> | Definido pela plataforma<br/>                                                        |
-| <dl> <dt>aprimora</dt> </dl> | Usado por um sistema operacional confiável<br/>                                      |
+| <dl> <dt>18</dt> </dl> | Plataforma definida<br/>                                                        |
+| <dl> <dt>19</dt> </dl> | Usado por um sistema operacional confiável<br/>                                      |
 | <dl> <dt>20</dt> </dl> | Usado por um sistema operacional confiável<br/>                                      |
-| <dl> <dt>Abril</dt> </dl> | Usado por um sistema operacional confiável<br/>                                      |
+| <dl> <dt>21</dt> </dl> | Usado por um sistema operacional confiável<br/>                                      |
 | <dl> <dt>22</dt> </dl> | Usado por um sistema operacional confiável<br/>                                      |
 | <dl> <dt>23</dt> </dl> | Suporte a aplicativos<br/>                                                     |
 
@@ -120,29 +120,29 @@ A alteração do perfil padrão afeta a segurança e a capacidade de gerenciamen
 
 </dd> <dt>
 
-*Fixar* \[ no\]
+*PIN* \[ Em\]
 </dt> <dd>
 
-Tipo: **cadeia de caracteres**
+Tipo: cadeia **de caracteres**
 
-Uma cadeia de caracteres de identificação pessoal especificada pelo usuário. Essa cadeia de caracteres deve consistir em uma sequência de 6 a 20 dígitos ou, se a política de grupo "permitir PINs avançados para inicialização" estiver habilitada, de 6 a 20 letras, símbolos, espaços ou números.
+Uma cadeia de caracteres de identificação pessoal especificada pelo usuário. Essa cadeia de caracteres deve consistir em uma sequência de 6 a 20 dígitos ou, se a política de grupo "Permitir PINs aprimorados para inicialização" estiver habilitada, de 6 a 20 letras, símbolos, espaços ou números.
 
 </dd> <dt>
 
-*VolumeKeyProtectorID* \[ fora\]
+*VolumeKeyProtectorID* \[ out\]
 </dt> <dd>
 
-Tipo: **cadeia de caracteres**
+Tipo: cadeia **de caracteres**
 
 O identificador de cadeia de caracteres exclusivo atualizado usado para gerenciar um protetor de chave de volume criptografado.
 
-Se a unidade oferecer suporte à criptografia de hardware e o BitLocker não tiver usado a propriedade Band, a cadeia de caracteres de ID será definida como "BitLocker" e o protetor de chave será gravado nos metadados por banda.
+Se a unidade for compatível com criptografia de hardware e o BitLocker não tiver assumido a propriedade da banda, a cadeia de caracteres de ID será definida como "BitLocker" e o protetor de chave será gravado em metadados por banda.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Esse método retornará um dos códigos a seguir ou outro código de erro se ele falhar.
 
@@ -180,7 +180,7 @@ Use [**ProtectKeyWithExternalKey**](protectkeywithexternalkey-win32-encryptablev
 
 Embora seja possível ter tanto um protetor de chave do tipo "TPM" quanto outro do tipo "TPM e PIN", a presença do tipo de protetor de chave "TPM" nega os efeitos de outros protetores de chave baseados em TPM.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK do Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](../wmisdk/managed-object-format--mof-.md).
+os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). os arquivos MOF não são instalados como parte do SDK do Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](../wmisdk/managed-object-format--mof-.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -188,8 +188,8 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Vista Enterprise, Windows Vista Ultimate \[ Desktop apps somente\]<br/>                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows vista Enterprise, \[ somente aplicativos de área de trabalho do vista Ultimate Windows\]<br/>                       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                    |
 | Namespace<br/>                | \\MicrosoftVolumeEncryption de \\ segurança \\ cimv2 raiz<br/>                                             |
 | MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume. mof</dt> </dl> |
 

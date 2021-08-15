@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae0f4e8af391fed5717f47bb4b80398129cb98ce
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cc045b40105a698c9d051de791991c49d2b6d0dd4672d50f344e8781999dd5c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103837970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989956"
 ---
 # <a name="d3dx11_effect_type_desc-structure"></a>\_ \_ Estrutura desc de tipo de efeito D3DX11 \_
 

@@ -1,6 +1,6 @@
 ---
 description: Obtém o nome de exibição do usuário.
-title: Propriedade DIDiskQuotaUser.DisplayName
+title: Propriedade DIDiskQuotaUser. DisplayName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 2951c2fb-1682-4ec2-bb48-470a7c2d2b15
-ms.openlocfilehash: 51e708bb406a79e7cfdd29c7a4a23f414e93335d
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: a9232540551e6f7efd76969e1677cc7cadb5380d93ecc16bfe07c7cfb4bd8b2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969455"
 ---
-# <a name="didiskquotauserdisplayname-property"></a>Propriedade DIDiskQuotaUser.DisplayName
+# <a name="didiskquotauserdisplayname-property"></a>Propriedade DIDiskQuotaUser. DisplayName
 
 Obtém o nome de exibição do usuário.
 
@@ -37,7 +37,7 @@ DisplayName = DIDiskQuotaUser.DisplayName
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um valor de cadeia de caracteres definido como o nome de exibição do usuário.
+Um valor de cadeia de caracteres que é definido como o nome de exibição do usuário.
 
 ## <a name="remarks"></a>Comentários
 
@@ -51,7 +51,7 @@ Essa propriedade contém o "nome amigável" do usuário. Seu valor não é neces
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5.0 ou posterior)</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
 
 
 

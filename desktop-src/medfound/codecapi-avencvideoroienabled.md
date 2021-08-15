@@ -1,19 +1,19 @@
 ---
-description: Indica se o \_ atributo MFSampleExtension ROIRectangle definido no exemplo de entrada será respeitado ou não.
+description: Indica se o atributo ROIRectangle de MFSampleExtension definido no exemplo de entrada \_ será ou não acatado.
 ms.assetid: 6B3CB513-43E8-4D30-B5A0-CD2E9C9F46BA
-title: Propriedade CODECAPI_AVEncVideoROIEnabled (Codecapi. h)
+title: CODECAPI_AVEncVideoROIEnabled propriedade (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 345e6ba27a983be910f0dc0ea5d3db34191bdcb1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f86185f6dbb9dfe16a84e7e85c3faddc8da3a7c1ead91dee2b1086e6fafa456
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119346976"
 ---
-# <a name="codecapi_avencvideoroienabled-property"></a>\_Propriedade CODECAPI AVEncVideoROIEnabled
+# <a name="codecapi_avencvideoroienabled-property"></a>Propriedade CODECAPI \_ AVEncVideoROIEnabled
 
-Indica se o atributo [MFSampleExtension \_ ROIRectangle](mfsampleextension-roirectangle.md) definido no exemplo de entrada será respeitado ou não.
+Indica se o [atributo \_ ROIRectangle de MFSampleExtension](mfsampleextension-roirectangle.md) definido no exemplo de entrada será ou não acatado.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -27,7 +27,7 @@ Indica se o atributo [MFSampleExtension \_ ROIRectangle](mfsampleextension-roire
 
 O valor padrão é 0.
 
-Se um MFT do codificador aceitar um valor diferente de zero, espera-se que o codificador obedeça o atributo [MFSampleExtension \_ ROIRectangle](mfsampleextension-roirectangle.md) definido no exemplo de entrada.
+Se um codificador MFT aceitar um valor não zero, espera-se que o codificador aceite o atributo [ \_ ROIRectangle MFSampleExtension](mfsampleextension-roirectangle.md) definido no exemplo de entrada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ Se um MFT do codificador aceitar um valor diferente de zero, espera-se que o cod
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos Windows 8.1 aplicativos de \[ área de trabalho \| UWP\]<br/>                                   |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2012 R2 \|\]<br/>                        |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8.1 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                                   |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 Aplicativos UWP de aplicativos da área \[ de trabalho \| R2\]<br/>                        |
+| parâmetro<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ Se um MFT do codificador aceitar um valor diferente de zero, espera-se que o cod
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> </dl>
 
  

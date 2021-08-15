@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - wldp.dll
-ms.openlocfilehash: a8f5e4da11e8ce7443d9a9bab323742cfc1b3a9d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 47ae90c966ac259791d0ffb9c60d736430ede610db3932dd08ff60cc9e3b7b21
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119390186"
 ---
 # <a name="wldpgetlockdownpolicy-function"></a>Função WldpGetLockdownPolicy
 
@@ -61,7 +61,7 @@ Os seguintes valores de sinalizador são definidos WLDP \_ flags \_ SKIPSIGNATUR
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retornará S \_ OK, se for bem-sucedido ou um código de falha.
 
@@ -79,8 +79,8 @@ Os \_ sinalizadores SKIPSIGNATUREVALIDATION WLDP dwFlag \_ podem ser usados para
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Server 2016 \[ somente aplicativos da área de trabalho\]<br/>                                |
 | parâmetro<br/>                   | <dl> <dt>Wldp. h</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>Wldp.dll</dt> </dl> |
 

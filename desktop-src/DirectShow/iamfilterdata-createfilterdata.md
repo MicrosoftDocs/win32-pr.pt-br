@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Quartz.dll
-ms.openlocfilehash: 0a0126266fc33dca030abad65ccf9f0d35f6e195
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: 81c2ba3a56ba9c09a2ce7b23bcad1a83880e61256402c291b5aebde9988218c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119428666"
 ---
 # <a name="iamfilterdatacreatefilterdata-method"></a>Método IAMFilterData:: CreateFilterData
 
@@ -29,7 +29,7 @@ ms.locfileid: "111989451"
 
 O `CreateFilterData` método cria dados de registro binários para um filtro. Esses dados podem ser gravados no registro como uma \_ subchave binária reg chamada FilterData, na chave CLSID do filtro.
 
-Normalmente, não há motivo para um aplicativo chamar esse método. O método [**IFilterMapper2:: RegisterFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-registerfilter) cria automaticamente os dados binários e os adiciona ao local correto no registro. Para obter mais informações, consulte [como registrar filtros do DirectShow](how-to-register-directshow-filters.md).
+Normalmente, não há motivo para um aplicativo chamar esse método. O método [**IFilterMapper2:: RegisterFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltermapper2-registerfilter) cria automaticamente os dados binários e os adiciona ao local correto no registro. para obter mais informações, consulte [como registrar filtros de DirectShow](how-to-register-directshow-filters.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -69,14 +69,14 @@ Ponteiro para uma variável que recebe o tamanho dos dados binários, em bytes.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem sucedido, ele retornará S \_ OK. Se falhar, retornará um código de erro.
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O cabeçalho Fil \_ Data. h está localizado no diretório de [exemplo do mapeador](mapper-sample.md) no SDK do Windows.
+> o cabeçalho Fil \_ data. h está localizado no diretório de [exemplo do mapeador](mapper-sample.md) no SDK do Windows.
 
  
 

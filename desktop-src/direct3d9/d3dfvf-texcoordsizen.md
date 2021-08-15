@@ -1,7 +1,7 @@
 ---
-description: Constrói padrões de bits que são usados para identificar formatos de coordenadas de textura em uma descrição de FVF. Os resultados dessas macros podem ser combinados em uma descrição de FVF usando o operador OR.
+description: Constrói padrões de bits usados para identificar formatos de coordenadas de textura dentro de uma descrição de FVF. Os resultados dessas macros podem ser combinados dentro de uma descrição FVF usando o operador OR.
 ms.assetid: c3076d7c-7935-40ee-b513-7ff6551a535f
-title: D3DFVF_TEXCOORDSIZEN (D3d9types. h)
+title: D3DFVF_TEXCOORDSIZEN (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: 58288667954e3414aa3d8ae1550e02e7216ffb4e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f5a39827f94f0415d6235797489f6e18c5fb515a5e5c36c0f26153b7ba8303ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105797934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988906"
 ---
 # <a name="d3dfvf_texcoordsizen"></a>D3DFVF \_ TEXCOORDSIZEN
 
-Constrói padrões de bits que são usados para identificar formatos de coordenadas de textura em uma descrição de FVF. Os resultados dessas macros podem ser combinados em uma descrição de FVF usando o operador OR.
+Constrói padrões de bits usados para identificar formatos de coordenadas de textura dentro de uma descrição de FVF. Os resultados dessas macros podem ser combinados dentro de uma descrição FVF usando o operador OR.
 
 ``` syntax
 #define D3DFVF_TEXCOORDSIZEN(CoordIndex) 
@@ -38,7 +38,7 @@ Constrói padrões de bits que são usados para identificar formatos de coordena
 
 | Parâmetro                                                                                                    | Descrição                                                                                                                              |
 |--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="CoordIndex"></span><span id="coordindex"></span><span id="COORDINDEX"></span>CoordIndex<br/> | Valor que identifica o conjunto de coordenadas de textura no qual o tamanho da coordenada de textura (1-, 2-, 3 ou 4Dimensional) se aplica. <br/> |
+| <span id="CoordIndex"></span><span id="coordindex"></span><span id="COORDINDEX"></span>CoordIndex<br/> | Valor que identifica o conjunto de coordenadas de textura no qual o tamanho da coordenada de textura (1-, 2-, 3-ou 4Dimensional) se aplica. <br/> |
 
 
 
@@ -58,7 +58,7 @@ As macros **D3DFVF \_ TEXCOORDSIZEN** usam as constantes a seguir.
 
 
 
-A seguinte descrição de FVF identifica um formato de vértice que tem uma posição; um normal; cores difusas e especulares; e dois conjuntos de coordenadas de textura. O primeiro conjunto de coordenadas de textura inclui um único elemento e o segundo conjunto inclui dois elementos:
+A descrição de FVF a seguir identifica um formato de vértice que tem uma posição; um normal; cores difusas e especular; e dois conjuntos de coordenadas de textura. O primeiro conjunto de coordenadas de textura inclui um único elemento e o segundo conjunto inclui dois elementos:
 
 
 ```C++
@@ -78,7 +78,7 @@ DWORD dwFVF = D3DFVF_XYZ | D3DFVF_NORMAL | D3DFVF_DIFFUSE |
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

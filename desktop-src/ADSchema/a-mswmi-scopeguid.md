@@ -1,11 +1,11 @@
 ---
-title: atributo ms-WMI-ScopeGuid
-description: O GUID do escopo no qual a codificação associada está localizada.
+title: Atributo ms-WMI-ScopeGuid
+description: O GUID para o escopo no qual a codificação associada está localizada.
 ms.assetid: e01fc3a0-1c0d-4a78-8206-34a29077e14d
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-WMI-ScopeGuid
-- Esquema de AD do atributo msWMI-ScopeGuid
+- Esquema do AD do atributo ms-WMI-ScopeGuid
+- Esquema do AD do atributo msWMI-ScopeGuid
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d5900b076ae07308247db04719e83ef1695289a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 78f3d45cf1abf626b0443e47ccdf959f69ac0baf25f295449ad63dd34c80416d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119326506"
 ---
-# <a name="ms-wmi-scopeguid-attribute"></a>atributo ms-WMI-ScopeGuid
+# <a name="ms-wmi-scopeguid-attribute"></a>Atributo ms-WMI-ScopeGuid
 
-O GUID do escopo no qual a codificação associada está localizada.
+O GUID para o escopo no qual a codificação associada está localizada.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------------------------------|
-| CN                | MS-WMI-ScopeGuid                                                |
-| LDAP-Display-Name | msWMI-ScopeGuid                                                 |
+| CN                | ms-WMI-ScopeGuid                                                |
+| Ldap-Display-Name | msWMI-ScopeGuid                                                 |
 | Tamanho              | 16 bytes                                                        |
 | Privilégio de atualização  | Administrador de domínio                                            |
 | Frequência de atualização  | Sempre que uma classe que contém o atributo é adicionada ou modificada. |
 | Attribute-Id      | 1.2.840.113556.1.4.1686                                         |
-| System-ID-GUID    | 87b78d51-405f-4b7f-80ed-2bd28786f48d                            |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                     |
+| System-Id-Guid    | 87b78d51-405f-4b7f-80ed-2bd28786f48d                            |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                     |
 
 
 
@@ -57,15 +57,15 @@ O GUID do escopo no qual a codificação associada está localizada.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classes usadas em        | [**MS-WMI-objectencoding**](c-mswmi-objectencoding.md)<br/> |
+| Classes usadas em        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ O GUID do escopo no qual a codificação associada está localizada.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classes usadas em        | [**MS-WMI-objectencoding**](c-mswmi-objectencoding.md)<br/> |
+| Classes usadas em        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ O GUID do escopo no qual a codificação associada está localizada.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classes usadas em        | [**MS-WMI-objectencoding**](c-mswmi-objectencoding.md)<br/> |
+| Classes usadas em        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ O GUID do escopo no qual a codificação associada está localizada.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classes usadas em        | [**MS-WMI-objectencoding**](c-mswmi-objectencoding.md)<br/> |
+| Classes usadas em        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ O GUID do escopo no qual a codificação associada está localizada.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classes usadas em        | [**MS-WMI-objectencoding**](c-mswmi-objectencoding.md)<br/> |
+| Classes usadas em        | [**ms-WMI-ObjectEncoding**](c-mswmi-objectencoding.md)<br/> |
 
 
 

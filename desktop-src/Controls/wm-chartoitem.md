@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_CHARTOITEM (WinUser. h)
-description: Enviado por uma caixa de listagem com o \_ estilo de lbs WANTKEYBOARDINPUT para seu proprietário em resposta a uma mensagem do WM \_ Char.
+title: WM_CHARTOITEM mensagem (Winuser.h)
+description: Enviado por uma caixa de listagem com o estilo WANTKEYBOARDINPUT do LBS para seu proprietário em \_ resposta a uma mensagem WM \_ CHAR.
 ms.assetid: f941c00b-b836-4f1b-b8cf-8ac2b0704af3
 keywords:
-- Controles de WM_CHARTOITEM de mensagens do Windows
+- WM_CHARTOITEM controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2dc9df55dcf9f507cb57e91fe0214eab94c53f22
-ms.sourcegitcommit: ac62be2f60f757f61ea647a95c168c9841ffabac
+ms.openlocfilehash: 4f3809ae800cfc753925e7c27d87f970ce56c10d90ace7c23e87b46f3e0067fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "104298432"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957525"
 ---
-# <a name="wm_chartoitem-message"></a>Mensagem do WM \_ CHARTOITEM
+# <a name="wm_chartoitem-message"></a>Mensagem WM \_ CHARTOITEM
 
-Enviado por uma caixa de listagem com o estilo de [**lbs \_ WANTKEYBOARDINPUT**](list-box-styles.md) para seu proprietário em resposta a uma mensagem do [**WM \_ Char**](/windows/desktop/inputdev/wm-char) .
+Enviado por uma caixa de listagem com o estilo [**\_ WANTKEYBOARDINPUT**](list-box-styles.md) do LBS para seu proprietário em resposta a uma [**mensagem WM \_ CHAR.**](/windows/desktop/inputdev/wm-char)
 
 
 ```C++
@@ -42,28 +42,28 @@ WM_CHARTOITEM
 *wParam* 
 </dt> <dd>
 
-O [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) especifica o código de caractere da chave que o usuário pressionou. O [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica a posição atual do cursor.
+A [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) especifica o código de caractere da chave que o usuário pressionou. O [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica a posição atual do caret.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Identificador para a caixa de listagem.
+Lidar com a caixa de listagem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de retorno especifica a ação que o aplicativo realizou em resposta à mensagem. Um valor de retorno de-1 ou-2 indica que o aplicativo tratou todos os aspectos da seleção do item e não requer nenhuma ação adicional na caixa de listagem. Um valor de retorno igual a 0 ou superior especifica o índice de base zero de um item na caixa de listagem e indica que a caixa de listagem deve executar a ação padrão para o pressionamento de tecla no item especificado.
+O valor de retorno especifica a ação que o aplicativo realizou em resposta à mensagem. Um valor de retorno de -1 ou -2 indica que o aplicativo tratou de todos os aspectos da seleção do item e não requer mais nenhuma ação pela caixa de listagem. Um valor de retorno de 0 ou superior especifica o índice baseado em zero de um item na caixa de listagem e indica que a caixa de listagem deve executar a ação padrão para o controle de teclas no item especificado.
 
 ## <a name="remarks"></a>Comentários
 
-A função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) retorna-1.
+A [**função DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) retorna -1.
 
-Somente as caixas de listagem desenhadas pelo proprietário que não têm o estilo de [**lb \_ HASSTRINGS**](list-box-styles.md) podem receber essa mensagem.
+Somente caixas de listagem desenhadas pelo proprietário que não têm o estilo [**\_ HASSTRINGS do LBS**](list-box-styles.md) podem receber essa mensagem.
 
-Se um procedimento da caixa de diálogo tratar essa mensagem, ele deverá converter o valor de retorno desejado em um **bool** e retornar o valor diretamente. O valor de *\_ MSGRESULT DWL* definido pela função [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) é ignorado.
+Se um procedimento de caixa de diálogo tratar essa mensagem, ele deverá lançar o valor de retorno desejado para um **BOOL** e retornar o valor diretamente. O *valor \_ MSGRESULT* do DWL definido pela função [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) é ignorado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,9 +71,9 @@ Se um procedimento da caixa de diálogo tratar essa mensagem, ele deverá conver
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -84,22 +84,22 @@ Se um procedimento da caixa de diálogo tratar essa mensagem, ele deverá conver
 **Referência**
 </dt> <dt>
 
-[**VKEYTOITEM do WM \_**](wm-vkeytoitem.md)
+[**WM \_ VKEYTOITEM**](wm-vkeytoitem.md)
 </dt> <dt>
 
 **Outros recursos**
 </dt> <dt>
 
-[**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
+[**Defwindowproc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
 </dt> <dt>
 
-[**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))
+[**Hiword**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))
 </dt> <dt>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
+[**Loword**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**caractere do WM \_**](/windows/desktop/inputdev/wm-char)
+[**WM \_ CHAR**](/windows/desktop/inputdev/wm-char)
 </dt> </dl>
 
  

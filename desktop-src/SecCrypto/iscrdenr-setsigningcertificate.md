@@ -1,7 +1,7 @@
 ---
-description: Especifica um certificado de autenticação (também conhecido como o certificado do agente de registro).
+description: Especifica um certificado de assinatura (também conhecido como certificado do agente de registro).
 ms.assetid: db2437a9-46f6-48c3-9630-82ec556df645
-title: 'Método ISCrdEnr:: setSigningCertificate'
+title: Método ISCrdEnr::setSigningCertificate
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: dd00ba19872cb0ba2b21981c79e8f7be03aa4937
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b93e2b76e46ed75abcd6460f351dfc2780826c2ff5e7dc8d07e8d48ae617e4a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105755043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119425726"
 ---
-# <a name="iscrdenrsetsigningcertificate-method"></a>Método ISCrdEnr:: setSigningCertificate
+# <a name="iscrdenrsetsigningcertificate-method"></a>Método ISCrdEnr::setSigningCertificate
 
-O método **setSigningCertificate** especifica um certificado de autenticação (também conhecido como o *certificado do agente de registro*).
+O **método setSigningCertificate** especifica um certificado de assinatura (também conhecido como certificado *do agente de registro*).
 
-Antes de registrar em nome dos usuários, você deve selecionar ou definir um certificado de autenticação. A [*chave privada*](../secgloss/p-gly.md) associada a esse certificado de autenticação é usada para assinar uma \# solicitação PKCS 7. O PKCS \# 7, por sua vez, contém a solicitação PKCS \# 10 do usuário (que é assinada com a chave privada do usuário).
+Antes de se registrar em nome dos usuários, você deve selecionar ou definir um certificado de assinatura. A [*chave privada*](../secgloss/p-gly.md) associada a esse certificado de assinatura é usada para assinar uma solicitação PKCS \# 7. O PKCS 7, por sua vez, contém a solicitação \# PKCS 10 do usuário (que é assinada com a \# chave privada do usuário).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,35 +54,35 @@ SCrdEnr.setSigningCertificate( _
 
 <dl> <dt>
 
-*dwFlags* \[ no\]
+*dwFlags* \[ Em\]
 </dt> <dd>
 
-Reservado para uso futuro. Defina esse valor como zero.
+Reservado para uso futuro. De definir esse valor como zero.
 
 </dd> <dt>
 
-*bstrCertTemplateName* \[ no\]
+*bstrCertTemplateName* \[ Em\]
 </dt> <dd>
 
-Nome do modelo de certificado para o certificado de autenticação. Você pode usar o valor "EnrollmentAgent" se tiver obtido um certificado EnrollmentAgent.
+Nome do modelo de certificado para o certificado de assinatura. Você poderá usar o valor "EnrollmentAgent" se tiver obtido um certificado EnrollmentAgent.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="vb"></a>VB
 
-Se o método for bem sucedido, o método retornará S \_ OK.
+Se o método for bem-sucedido, o método retornará S \_ OK.
 
-Se o método falhar, ele retornará um valor **HRESULT** que indica o erro. Para obter uma lista de códigos de erro comuns, consulte [valores comuns de HRESULT](common-hresult-values.md).
+Se o método falhar, ele retornará um **valor HRESULT** que indica o erro. Para ver uma lista de códigos de erro comuns, consulte [Valores comuns de HRESULT.](common-hresult-values.md)
 
 ## <a name="remarks"></a>Comentários
 
-Antes de registrar em nome de um usuário, primeiro você deve obter um certificado de autenticação. Você pode obter um certificado de autenticação usando o snap-in do MMC do Gerenciador de certificados. O método **setSigningCertificate** não obtém o certificado de autenticação, mas informa ao controle de registro de cartão inteligente que anteriormente obteve o certificado de autenticação a ser usado. O método **setSigningCertificate** pesquisa o repositório "My" do chamador para o certificado de autenticação mais recente correspondente ao modelo de certificado especificado por *bstrCertTemplateName*.
+Antes de se registrar em nome de um usuário, primeiro você deve obter um certificado de assinatura. Você pode obter um certificado de assinatura usando o snap-in do MMC do Gerenciador de Certificados. O **método setSigningCertificate** não obtém o certificado de assinatura, mas informa o Controle de Registro de Cartão Inteligente que obteve anteriormente o certificado de assinatura a ser usado. O **método setSigningCertificate** pesquisa o armazenamento "Meu" do chamador para o certificado de assinatura mais recente correspondente ao modelo de certificado especificado por *bstrCertTemplateName*.
 
-Uma alternativa para **setSigningCertificate** é **ISCrdEnr:: setSigningCertificate**.
+Uma alternativa para **setSigningCertificate** **é ISCrdEnr::setSigningCertificate.**
 
-Depois que um certificado de assinatura é definido, seu nome pode ser recuperado chamando [**ISCrdEnr:: getSigningCertificateName**](iscrdenr-getsigningcertificatename.md).
+Depois que um certificado de assinatura é definido, seu nome pode ser recuperado chamando [**ISCrdEnr::getSigningCertificateName**](iscrdenr-getsigningcertificatename.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,9 +91,9 @@ Depois que um certificado de assinatura é definido, seu nome pode ser recuperad
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                    |
 | DLL<br/>                      | <dl> <dt>Scrdenrl.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCrdEnr é definido como 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
+| IID<br/>                      | IID ISCrdEnr é definido como \_ 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
 
 
 

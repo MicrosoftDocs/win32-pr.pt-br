@@ -14,12 +14,12 @@ api_type:
 api_location:
 - InkDiv.dll
 - InkDiv.dll.dll
-ms.openlocfilehash: 11878e6a0ac953b9b7eb27ce21bb67001f9d88d4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2e5f3060f261ba84b70272ed358a7c544f2b0e1582de310ed759b4ea40714359
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967755"
 ---
 # <a name="calldivideresults-function"></a>Função CallDivideResults
 
@@ -153,7 +153,7 @@ Uma matriz que contém os ângulos pelos quais girar as linhas para obter melhor
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função pode retornar um desses valores.
 
@@ -179,7 +179,7 @@ Para evitar vazamentos de memória, você deve liberar os recursos para *pastrWo
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                         |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                         |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                             |
 | Biblioteca<br/>                  | <dl> <dt>InkDiv.dll</dt> </dl> |
 

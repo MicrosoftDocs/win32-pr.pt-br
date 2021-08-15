@@ -3,7 +3,7 @@ title: TVN_ITEMEXPANDING código de notificação (commctrl. h)
 description: Notifica uma janela pai do controle de exibição de árvore que a lista de itens filho de um item pai está prestes a ser expandida ou recolhida. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 5ce256df-49e5-4fbf-9cdc-79dd2edbd8ec
 keywords:
-- TVN_ITEMEXPANDING de código de notificação controles do Windows
+- TVN_ITEMEXPANDING código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c9ed93eacb6d5b492d509b40cc789a803d04623
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7f4403b41682590d305b527d6445c208011b368b2d2474d66720ed32d29c80ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957785"
 ---
 # <a name="tvn_itemexpanding-notification-code"></a>Código de notificação do TVN- \_ Expanding
 
@@ -47,7 +47,7 @@ Ponteiro para uma estrutura [**NMTREEVIEW**](/windows/win32/api/commctrl/ns-comm
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **true** para impedir que a lista expanda ou recolha.
 
@@ -57,9 +57,9 @@ Retorna **true** para impedir que a lista expanda ou recolha.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **TVN \_ ITEMEXPANDINGW** (Unicode) e **TVN \_** (ANSI)<br/>       |
 
 
