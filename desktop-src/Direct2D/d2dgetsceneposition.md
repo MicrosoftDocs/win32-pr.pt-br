@@ -1,9 +1,9 @@
 ---
-title: Função D2DGetScenePosition (D2d1effecthelpers. h)
-description: Retorna o valor da posição da cena de entrada \_ . Disponível somente quando D2D \_ requer \_ que \_ a posição da cena seja declarada no arquivo de origem.
+title: Função D2DGetScenePosition (D2d1effecthelpers.h)
+description: Retorna o valor da SCENE \_ POSITION de entrada. Disponível somente quando D2D \_ REQUER SCENE POSITION é declarado no arquivo de \_ \_ origem.
 ms.assetid: 451E4C31-D93D-44B6-81D1-AC5FD986ACBD
 keywords:
-- Direct2D da função D2DGetScenePosition
+- Função D2DGetScenePosition Direct2D
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ace0ee4d60f8c140825e41ba47de941bca09e67c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fbcd7a1ee987cf64a92aa76b0f8910bee1c9a15465872bbd3ccfe2502629f700
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119641636"
 ---
 # <a name="d2dgetsceneposition-function"></a>Função D2DGetScenePosition
 
-Retorna o valor da posição da cena de entrada \_ . Disponível somente quando D2D \_ requer \_ que \_ a posição da cena seja declarada no arquivo de origem.
+Retorna o valor da SCENE \_ POSITION de entrada. Disponível somente quando D2D \_ REQUER SCENE POSITION é declarado no arquivo de \_ \_ origem.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,11 +37,11 @@ Essa função não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-A função retorna um **FLOAT4** no formato posição da cena \_ .
+A função retorna um **float4** no formato SCENE \_ POSITION.
 
 ## <a name="remarks"></a>Comentários
 
-O exemplo a seguir mostra o uso da função na geração de um padrão de dissolução.
+O exemplo a seguir mostra o uso da função na geração de um padrão de sempre.
 
 ``` syntax
 D2D_PS_ENTRY(BlendDissolve)  
@@ -66,7 +66,7 @@ D2D_PS_ENTRY(BlendDissolve)
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D2d1effecthelpers. hlsli</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D2d1effecthelpers.hlsli</dt> </dl> |
 | DLL<br/>    | <dl> <dt>D2d1.dll</dt> </dl>                |
 
 
@@ -78,7 +78,7 @@ D2D_PS_ENTRY(BlendDissolve)
 [Vinculação de Sombreador de Efeito](effect-shader-linking.md)
 </dt> <dt>
 
-[Auxiliares de HLSL](hlsl-helpers.md)
+[Auxiliares HLSL](hlsl-helpers.md)
 </dt> </dl>
 
  

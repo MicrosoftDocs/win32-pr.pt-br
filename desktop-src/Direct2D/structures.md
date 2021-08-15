@@ -1,21 +1,21 @@
 ---
-title: Estruturas Direct2D
-description: O Direct2D fornece as seguintes estruturas. Estruturas adicionais são definidas no namespace D2D1.
+title: estruturas de Direct2D
+description: Direct2D fornece as estruturas a seguir. Estruturas adicionais são definidas no namespace D2D1.
 ms.assetid: 6c34a8c8-4b0b-4a95-8f13-25ca25c370ba
 keywords:
 - Direct2D, estruturas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ba4b668e143b3ab5b166582e504c68a05722da7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b6be3735335abc5b9242ec150ac583f837ae5c15936aaca677b322526b1c19f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105760103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119537696"
 ---
-# <a name="direct2d-structures"></a>Estruturas Direct2D
+# <a name="direct2d-structures"></a>estruturas de Direct2D
 
-O Direct2D fornece as seguintes estruturas. Estruturas adicionais são definidas no [namespace D2D1](d2d1-namespace.md).
+Direct2D fornece as estruturas a seguir. Estruturas adicionais são definidas no [namespace D2D1](d2d1-namespace.md).
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -46,7 +46,7 @@ O Direct2D fornece as seguintes estruturas. Estruturas adicionais são definidas
 | [**\_Descrição da combinação de d2d1 \_**](/windows/desktop/api/D2d1effectauthor/ns-d2d1effectauthor-d2d1_blend_description) | Define uma descrição de mistura a ser usada em uma transformação de mesclagem específica. |
 | [**\_Propriedades do pincel d2d1 \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_brush_properties) | Descreve a opacidade e a transformação de um pincel. |
 | [**D2D1 \_ cor \_ F**](d2d1-color-f.md) | Descreve os componentes vermelho, verde, azul e alfa de uma cor. |
-| [**\_Propriedades de criação de d2d1 \_**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_creation_properties) | Especifica as opções com as quais o dispositivo [Direct2D](./direct2d-portal.md) , a fábrica e o contexto do dispositivo são criados.  |
+| [**\_Propriedades de criação de d2d1 \_**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_creation_properties) | especifica as opções com as quais o dispositivo [Direct2D](./direct2d-portal.md) , a fábrica e o contexto do dispositivo são criados.  |
 | [**\_Propriedades do \_ buffer de vértice personalizado \_ do d2d1 \_**](/windows/desktop/api/d2d1effectauthor/ns-d2d1effectauthor-d2d1_custom_vertex_buffer_properties) | Define um sombreador de vértice e a descrição do elemento de entrada para definir o layout de entrada. |
 | [**\_Descrição do \_ estado de desenho do d2d1 \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_drawing_state_description) | Descreve o estado de desenho de um destino de renderização.  |
 | [**\_DESCRIPTION1 do \_ estado de desenho d2d1 \_**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_drawing_state_description1) | Descreve o estado de desenho de um contexto de dispositivo. |
@@ -64,45 +64,45 @@ O Direct2D fornece as seguintes estruturas. Estruturas adicionais são definidas
 | [**\_Ponto de tinta d2d1 \_**](/windows/desktop/api/d2d1_3/ns-d2d1_3-d2d1_ink_point) | Representa um par de ponto, raio que faz parte de um [**\_ segmento de \_ BEZIER \_ de tinta d2d1**](/windows/desktop/api/d2d1_3/ns-d2d1_3-d2d1_ink_bezier_segment). |
 | [**\_Descrição de entrada do d2d1 \_**](/windows/desktop/api/D2d1effectauthor/ns-d2d1effectauthor-d2d1_input_description) | Descreve as opções que as transformações podem definir em texturas de entrada. |
 | [**\_Elemento de entrada d2d1 \_ \_ desc**](/windows/desktop/api/D2d1effectauthor/ns-d2d1effectauthor-d2d1_input_element_desc) | Uma descrição de um único elemento para o layout de vértice. |
-| [**\_Parâmetros da camada d2d1 \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) | Contém os limites de conteúdo, as informações de máscara, as configurações de opacidade e outras opções para um recurso de camada.  |
-| [**D2D1 \_ camada \_ PARAMETERS1**](/windows/desktop/api/d2d1_1/ns-d2d1_1-d2d1_layer_parameters1) | Contém os limites de conteúdo, as informações de máscara, as configurações de opacidade e outras opções para um recurso de camada. |
-| [**\_Propriedades do \_ pincel de gradiente linear d2d1 \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_linear_gradient_brush_properties) | Contém o ponto de partida e a extremidade do eixo de gradiente para um [**ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush).  |
-| [**D2D1 \_ matriz \_ 3x2 \_ F**](d2d1-matrix-3x2-f.md) | Representa uma matriz 3 por 2.  |
-| [**D2D1 \_ matriz \_ 4x3 \_ F**](d2d1-matrix-4x3-f.md) | Representa uma matriz de 4 por 3.  |
-| [**D2D1 \_ matriz \_ 4x4 \_ F**](d2d1-matrix-4x4-f.md) | Representa uma matriz de 4 por 4.  |
-| [**D2D1 \_ matriz \_ 5X4 \_ F**](d2d1-matrix-5x4-f.md) | Representa uma matriz de 5 por 4.  |
-| [**\_Rect MAPEADO \_ d2d1**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_mapped_rect) | Descreve a memória mapeada da API [**ID2D1Bitmap1:: map**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1bitmap1-map) . |
-| [**\_Formato de pixel d2d1 \_**](/windows/desktop/api/dcommon/ns-dcommon-d2d1_pixel_format) | Contém o formato de dados e o modo alfa para um bitmap ou destino de renderização.  |
-| [**\_Ponto d2d1 \_ 2F**](d2d1-point-2f.md) | Representa um par de coordenadas x e y em espaço bidimensional. |
-| [**D2D1 \_ Point \_ 2L**](/previous-versions/windows/desktop/legacy/hh847948(v=vs.85)) | A estrutura de ponto define as coordenadas x e y de um ponto. |
-| [**D2D1 \_ ponto \_ 2U**](d2d1-point-2u.md) | Representa um par de coordenadas x e y em espaço bidimensional.  |
-| [**\_Descrição do ponto de d2d1 \_**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_point_description) | Descreve um ponto em uma geometria de caminho. |
-| [**\_Propriedades do \_ controle de impressão d2d1 \_**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_print_control_properties) | As propriedades de criação para um objeto [**ID2D1PrintControl**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1printcontrol) . |
-| [**\_Associação de propriedade d2d1 \_**](/windows/desktop/api/d2d1effectauthor/ns-d2d1effectauthor-d2d1_property_binding) | Define uma associação de propriedade a um par de funções que obtêm e definem a propriedade correspondente.  |
-| [**\_Segmento de \_ BEZIER \_ quadrática d2d1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_quadratic_bezier_segment) | Contém o ponto de controle e o ponto de extremidade de um segmento de Bezier quadrática. |
-| [**\_Propriedades do \_ pincel de gradiente radial d2d1 \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_radial_gradient_brush_properties) | Contém o deslocamento de origem do gradiente e o tamanho e a posição da elipse de gradiente para um [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush).  |
-| [**D2D1 \_ Rect \_ F**](d2d1-rect-f.md) | Representa um retângulo definido pelas coordenadas do canto superior esquerdo (esquerda, superior) e as coordenadas do canto inferior direito (direita, inferior).  |
-| [**D2D1 \_ Rect \_ L**](/previous-versions/windows/desktop/legacy/hh847950(v=vs.85)) | A estrutura RECT define as coordenadas dos cantos superior esquerdo e inferior direito de um retângulo. |
-| [**D2D1 \_ Rect \_ U**](d2d1-rect-u.md) | Representa um retângulo definido pelas coordenadas do canto superior esquerdo (esquerda, superior) e as coordenadas do canto inferior direito (direita, inferior).  |
-| [**\_Propriedades de \_ textura do recurso d2d1 \_**](/windows/desktop/api/D2d1effectauthor/ns-d2d1effectauthor-d2d1_resource_texture_properties) | Define uma textura de recurso quando a textura do recurso original é criada. |
-| [**\_Uso do recurso d2d1 \_**](/previous-versions/windows/desktop/legacy/hh404326(v=vs.85)) | Descreve a memória usada por texturas de imagem e sombreadores. |
-| [**\_Propriedades de \_ destino de renderização d2d1 \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_render_target_properties) | Contém opções de renderização (hardware ou software), formato de pixel, informações de DPI, opções de comunicação remota e requisitos de suporte do Direct3D para um destino de renderização.  |
-| [**\_Controles de RENDERIZAÇÃO d2d1 \_**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_rendering_controls) | Descreve as limitações a serem aplicadas a um renderizador de efeito de imagem. |
-| [**\_Ret. arredondado d2d1 \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_rounded_rect) | Contém as dimensões e o raios de canto de um retângulo arredondado. |
-| [**\_Perfil de \_ cor \_ simples do d2d1**](/windows/desktop/api/d2d1_3/ns-d2d1_3-d2d1_simple_color_profile) | Descrição simples de um espaço de cores. |
-| [**D2D1 \_ tamanho \_ F**](d2d1-size-f.md) | Armazena um par ordenado de floats, normalmente a largura e a altura de um retângulo. |
-| [**D2D1 \_ tamanho \_ U**](d2d1-size-u.md) | Armazena um par ordenado de inteiros, normalmente a largura e a altura de um retângulo. |
-| [**\_Propriedades de \_ estilo de traço d2d1 \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_stroke_style_properties) | Descreve o traço que destaca uma forma.  |
-| [**D2D1 \_ estilo de traço \_ \_ PROPERTIES1**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_stroke_style_properties1) | Descreve o traço que destaca uma forma. |
-| [**\_Comprimento d2d1 SVG \_**](/windows/desktop/api/d2d1svg/ns-d2d1svg-d2d1_svg_length) | Representa um comprimento SVG. |
-| [**\_Taxa de \_ proporção de preservar d2d1 SVG \_ \_**](/windows/desktop/api/d2d1svg/ns-d2d1svg-d2d1_svg_preserve_aspect_ratio) | Representa todas as configurações de preserveAspectRatio SVG. |
-| [**D2D1 \_ SVG \_ VIEWBOX**](/windows/desktop/api/d2d1svg/ns-d2d1svg-d2d1_svg_viewbox) | Representa um viewBox SVG. |
-| [**\_Propriedades da \_ origem da imagem transformada d2d1 \_ \_**](/windows/desktop/api/d2d1_3/ns-d2d1_3-d2d1_transformed_image_source_properties) | Propriedades de uma fonte de imagem transformada. |
-| [**\_Triângulo d2d1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_triangle) | Contém os três vértices que descrevem um triângulo. |
-| [**\_Vetor d2d1 \_ 2F**](/windows/win32/api/dcommon/ns-dcommon-d2d_vector_2f) | Um vetor de dois valores FLOAT (x, y). |
-| [**\_3F de vetor d2d1 \_**](/windows/win32/api/dcommon/ns-dcommon-d2d_vector_3f) | Um vetor de 3 valores FLOAT (x, y, z). |
-| [**\_4F de vetor d2d1 \_**](/windows/win32/api/dcommon/ns-dcommon-d2d_vector_4f) | Um vetor de quatro valores FLOAT (x, y, z, w). |
-| [**\_Propriedades do \_ buffer de vértice d2d1 \_**](/windows/desktop/api/D2d1effectauthor/ns-d2d1effectauthor-d2d1_vertex_buffer_properties) | Define as propriedades de um buffer de vértice que são padrão para todas as definições de sombreador de vértice. |
-| [**\_Intervalo de vértices d2d1 \_**](/windows/desktop/api/D2d1effectauthor/ns-d2d1effectauthor-d2d1_vertex_range) | Define um intervalo de vértices que são usados ao renderizar menos do que o conteúdo completo de um buffer de vértice. |
-| [**D3DCOLORVALUE**](/previous-versions/windows/desktop/legacy/dd368193(v=vs.85)) | Armazena informações de canal alfa e cor. |
-| [*\_Fábrica de efeito do PD2D1 \_*](/windows/desktop/api/D2D1_1/nc-d2d1_1-pd2d1_effect_factory) | Descreve a implementação de um efeito. |
+| [**PARÂMETROS DE CAMADA D2D1 \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) | Contém os limites de conteúdo, informações de máscara, configurações de opacidade e outras opções para um recurso de camada.  |
+| [**D2D1 \_ LAYER \_ PARAMETERS1**](/windows/desktop/api/d2d1_1/ns-d2d1_1-d2d1_layer_parameters1) | Contém os limites de conteúdo, informações de máscara, configurações de opacidade e outras opções para um recurso de camada. |
+| [**PROPRIEDADES DO PINCEL \_ DE \_ GRADIENTE LINEAR \_ D2D1 \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_linear_gradient_brush_properties) | Contém o ponto de partida e o ponto de extremidade do eixo de gradiente para [**um ID2D1LinearGradientBrush.**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush)  |
+| [**D2D1 \_ MATRIX \_ 3X2 \_ F**](d2d1-matrix-3x2-f.md) | Representa uma matriz 3 por 2.  |
+| [**D2D1 \_ MATRIX \_ 4X3 \_ F**](d2d1-matrix-4x3-f.md) | Representa uma matriz 4 por 3.  |
+| [**D2D1 \_ MATRIX \_ 4X4 \_ F**](d2d1-matrix-4x4-f.md) | Representa uma matriz 4 por 4.  |
+| [**D2D1 \_ MATRIX \_ 5X4 \_ F**](d2d1-matrix-5x4-f.md) | Representa uma matriz 5 por 4.  |
+| [**D2D1 \_ \_ RECT MAPEADO**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_mapped_rect) | Descreve a memória mapeada da [**API ID2D1Bitmap1::Map.**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1bitmap1-map) |
+| [**FORMATO DE PIXEL D2D1 \_ \_**](/windows/desktop/api/dcommon/ns-dcommon-d2d1_pixel_format) | Contém o formato de dados e o modo alfa para um bitmap ou destino de renderização.  |
+| [**D2D1 \_ POINT \_ 2F**](d2d1-point-2f.md) | Representa um par de coordenadas x e y no espaço bidimensional. |
+| [**D2D1 \_ POINT \_ 2L**](/previous-versions/windows/desktop/legacy/hh847948(v=vs.85)) | A estrutura POINT define as coordenadas x e y de um ponto. |
+| [**D2D1 \_ POINT \_ 2U**](d2d1-point-2u.md) | Representa um par de coordenadas x e y no espaço bidimensional.  |
+| [**D2D1 \_ POINT \_ DESCRIPTION**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_point_description) | Descreve um ponto em uma geometria de caminho. |
+| [**PROPRIEDADES DO CONTROLE DE IMPRESSÃO D2D1 \_ \_ \_**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_print_control_properties) | As propriedades de criação de [**um objeto ID2D1PrintControl.**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1printcontrol) |
+| [**ASSOCIAÇÃO DE PROPRIEDADE D2D1 \_ \_**](/windows/desktop/api/d2d1effectauthor/ns-d2d1effectauthor-d2d1_property_binding) | Define uma associação de propriedade para um par de funções que obter e definir a propriedade correspondente.  |
+| [**SEGMENTO DE \_ \_ BÉZIER QUADRÁTICO D2D1 \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_quadratic_bezier_segment) | Contém o ponto de controle e o ponto de extremidade para um segmento de Bézier quadrático. |
+| [**PROPRIEDADES DO PINCEL \_ DE \_ GRADIENTE RADIAL \_ D2D1 \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_radial_gradient_brush_properties) | Contém o deslocamento de origem do gradiente e o tamanho e a posição da elipse de gradiente para [**um ID2D1RadialGradientBrush.**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush)  |
+| [**D2D1 \_ RECT \_ F**](d2d1-rect-f.md) | Representa um retângulo definido pelas coordenadas do canto superior esquerdo (esquerda, superior) e as coordenadas do canto inferior direito (direita, inferior).  |
+| [**D2D1 \_ RECT \_ L**](/previous-versions/windows/desktop/legacy/hh847950(v=vs.85)) | A estrutura RECT define as coordenadas dos cantos superior esquerdo e inferior direito de um retângulo. |
+| [**D2D1 \_ RECT \_ U**](d2d1-rect-u.md) | Representa um retângulo definido pelas coordenadas do canto superior esquerdo (esquerda, superior) e as coordenadas do canto inferior direito (direita, inferior).  |
+| [**PROPRIEDADES DE TEXTURA DO RECURSO D2D1 \_ \_ \_**](/windows/desktop/api/D2d1effectauthor/ns-d2d1effectauthor-d2d1_resource_texture_properties) | Define uma textura de recurso quando a textura do recurso original é criada. |
+| [**USO DE RECURSOS D2D1 \_ \_**](/previous-versions/windows/desktop/legacy/hh404326(v=vs.85)) | Descreve a memória usada por texturas e sombreadores de imagem. |
+| [**PROPRIEDADES DE DESTINO DE \_ \_ RENDERIZAÇÃO D2D1 \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_render_target_properties) | Contém opções de renderização (hardware ou software), formato de pixel, informações de DPI, opções de comunicação comunicação e requisitos de suporte do Direct3D para um destino de renderização.  |
+| [**CONTROLES DE RENDERIZAÇÃO D2D1 \_ \_**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_rendering_controls) | Descreve as limitações a serem aplicadas a um renderador de efeito de imagem. |
+| [**D2D1 \_ \_ RECT ARREDONDADO**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_rounded_rect) | Contém as dimensões e os raios de canto de um retângulo arredondado. |
+| [**PERFIL DE COR SIMPLES D2D1 \_ \_ \_**](/windows/desktop/api/d2d1_3/ns-d2d1_3-d2d1_simple_color_profile) | Descrição simples de um espaço de cores. |
+| [**D2D1 \_ TAMANHO \_ F**](d2d1-size-f.md) | Armazena um par ordenado de floats, normalmente a largura e a altura de um retângulo. |
+| [**D2D1 \_ TAMANHO \_ U**](d2d1-size-u.md) | Armazena um par ordenado de inteiros, normalmente a largura e a altura de um retângulo. |
+| [**PROPRIEDADES DE ESTILO DE TRAÇO D2D1 \_ \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_stroke_style_properties) | Descreve o traço que descreve uma forma.  |
+| [**PROPRIEDADES DE ESTILO \_ DE TRAÇO D2D1111 \_ \_**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_stroke_style_properties1) | Descreve o traço que descreve uma forma. |
+| [**COMPRIMENTO DO SVG D2D1 \_ \_**](/windows/desktop/api/d2d1svg/ns-d2d1svg-d2d1_svg_length) | Representa um comprimento SVG. |
+| [**D2D1 \_ SVG \_ PRESERVAR TAXA DE \_ \_ PROPORÇÃO**](/windows/desktop/api/d2d1svg/ns-d2d1svg-d2d1_svg_preserve_aspect_ratio) | Representa todas as configurações de preserveAspectRatio do SVG. |
+| [**D2D1 \_ SVG \_ VIEWBOX**](/windows/desktop/api/d2d1svg/ns-d2d1svg-d2d1_svg_viewbox) | Representa uma exibição SVGBox. |
+| [**PROPRIEDADES DE ORIGEM DA \_ \_ IMAGEM TRANSFORMADA \_ D2D1 \_**](/windows/desktop/api/d2d1_3/ns-d2d1_3-d2d1_transformed_image_source_properties) | Propriedades de uma fonte de imagem transformada. |
+| [**TRIÂNGULO D2D1 \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_triangle) | Contém os três vértices que descrevem um triângulo. |
+| [**D2D1 \_ VECTOR \_ 2F**](/windows/win32/api/dcommon/ns-dcommon-d2d_vector_2f) | Um vetor de 2 valores FLOAT (x, y). |
+| [**D2D1 \_ VECTOR \_ 3F**](/windows/win32/api/dcommon/ns-dcommon-d2d_vector_3f) | Um vetor de 3 valores FLOAT (x, y, z). |
+| [**D2D1 \_ VECTOR \_ 4F**](/windows/win32/api/dcommon/ns-dcommon-d2d_vector_4f) | Um vetor de 4 valores FLOAT (x, y, z, w). |
+| [**PROPRIEDADES DO \_ BUFFER DE VÉRTICE D2D1 \_ \_**](/windows/desktop/api/D2d1effectauthor/ns-d2d1effectauthor-d2d1_vertex_buffer_properties) | Define as propriedades de um buffer de vértice que são padrão para todas as definições de sombreador de vértice. |
+| [**INTERVALO DE \_ VÉRTICE D2D1 \_**](/windows/desktop/api/D2d1effectauthor/ns-d2d1effectauthor-d2d1_vertex_range) | Define um intervalo de vértices que são usados ao renderizar menos que o conteúdo completo de um buffer de vértice. |
+| [**D3DCOLORVALUE**](/previous-versions/windows/desktop/legacy/dd368193(v=vs.85)) | Armazena informações de cor e canal alfa. |
+| [*PD2D1 \_ EFFECT \_ FACTORY*](/windows/desktop/api/D2D1_1/nc-d2d1_1-pd2d1_effect_factory) | Descreve a implementação de um efeito. |

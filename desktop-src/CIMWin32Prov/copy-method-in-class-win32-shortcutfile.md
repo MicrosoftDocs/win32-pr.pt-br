@@ -1,8 +1,8 @@
 ---
-description: Copia o arquivo de atalho lógico ou o diretório especificado no caminho do objeto para o local especificado pelo parâmetro de entrada.
+description: Copia o arquivo de atalho lógico ou diretório especificado no caminho do objeto para o local especificado pelo parâmetro de entrada.
 ms.assetid: 1c8e9eac-340b-4c37-a52e-6cfade47ccf6
 ms.tgt_platform: multiple
-title: Método Copy da classe Win32_ShortcutFile
+title: Método copy da classe Win32_ShortcutFile dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 58de9d1b2a88a7fa02504f5eac91e9a55e286304
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e32043747b7493d8f59b2028587d60b5b9593a73ac60bf99a81beea8b5c97ae3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119080190"
 ---
-# <a name="copy-method-of-the-win32_shortcutfile-class"></a>Método Copy da \_ classe shortcutfile do Win32
+# <a name="copy-method-of-the-win32_shortcutfile-class"></a>Método copy da classe ShortcutFile win32 \_
 
-O método **Copy** [WMI Class](/windows/desktop/WmiSdk/retrieving-a-class) copia o arquivo de atalho lógico ou o diretório especificado no caminho do objeto para o local especificado pelo parâmetro de entrada. Não haverá suporte para uma cópia se a substituição de um arquivo lógico existente for necessária.
+O **método** [de classe Copy WMI](/windows/desktop/WmiSdk/retrieving-a-class) copia o arquivo de atalho lógico ou diretório especificado no caminho do objeto para o local especificado pelo parâmetro de entrada. Não há suporte para uma cópia se a substituição de um arquivo lógico existente for necessária.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,7 +42,7 @@ uint32 Copy(
 
 <dl> <dt>
 
-*Nome do arquivo* \[ no\]
+*FileName* \[ Em\]
 </dt> <dd>
 
 Nome totalmente qualificado da cópia do arquivo (ou diretório).
@@ -51,9 +51,9 @@ Exemplo: c: \\ temp \\ newdirectory
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o valor 0 (zero) se o arquivo foi copiado com êxito e qualquer outro número para indicar um erro.
+Retornará o valor de 0 (zero) se o arquivo tiver sido copiado com êxito e qualquer outro número para indicar um erro.
 
 <dl> <dt>
 
@@ -67,7 +67,7 @@ A solicitação foi bem-sucedida.
 **2**
 </dt> <dd>
 
-Acesso negado.
+O acesso foi negado.
 
 </dd> <dt>
 
@@ -102,7 +102,7 @@ O sistema de arquivos não é NTFS.
 **12**
 </dt> <dd>
 
-A plataforma não é o Windows.
+A plataforma não é Windows.
 
 </dd> <dt>
 
@@ -130,7 +130,7 @@ Houve uma violação de compartilhamento.
 **16**
 </dt> <dd>
 
-O arquivo de inicialização especificado não era válido.
+O arquivo inicial especificado não era válido.
 
 </dd> <dt>
 
@@ -141,7 +141,7 @@ Um privilégio necessário para a operação não é mantido.
 
 </dd> <dt>
 
-**Abril**
+**21**
 </dt> <dd>
 
 Um parâmetro especificado não é válido.
@@ -156,8 +156,8 @@ Um parâmetro especificado não é válido.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -169,7 +169,7 @@ Um parâmetro especificado não é válido.
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Atalho do Win32 \_**](win32-shortcutfile.md)
+[**Win32 \_ ShortcutFile**](win32-shortcutfile.md)
 </dt> </dl>
 
  

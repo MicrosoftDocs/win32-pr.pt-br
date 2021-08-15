@@ -1,26 +1,26 @@
 ---
-title: Atributo oculto de VML
-description: Atributo oculto de VML
+title: Atributo obscurecido de VML
+description: Atributo obscurecido de VML
 ms.assetid: b8cdb066-e4fc-4dd6-a55a-7c2488f89e61
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3e383061d3210c9c52dc8c89322bd617257555e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f9122b3a9828fde816684cb20035949628ef25e38d06fb188d8271f0d5384f1f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119308276"
 ---
-# <a name="vml-obscured-attribute"></a>Atributo oculto de VML
+# <a name="vml-obscured-attribute"></a>Atributo obscurecido de VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina se uma sombra é transparente. Leitura/gravação. **VgTriState**.
+Determina se uma sombra é transparente. Leitura/gravação. **VgTriState.**
 
 **Aplica-se a**
 
@@ -28,23 +28,23 @@ Determina se uma sombra é transparente. Leitura/gravação. **VgTriState**.
 
 **Sintaxe de marca**
 
-<v: *Element* obscurecido = " *expression* " >
+<v: *element* obscured=" *expressão* ">
 
 **Sintaxe do script**
 
-*elemento* . obscurecido = "*expressão*"
+*expressão element* .obscured=""
 
-*expressão* = de *elemento*. obscurecido
+*expressão* = *elemento*.obscured
 
 **Comentários**
 
-Se for **true**, permitirá que você veja por meio da sombra se não houver preenchimento da forma. O padrão é **False**.
+Se **True**, permitirá que você veja pela sombra se não houver nenhum preenchimento na forma. O padrão é **False**.
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
-O plano de fundo mostra a sombra.
+A plano de fundo mostra a sombra.
 
 
 ```HTML
@@ -59,6 +59,6 @@ O plano de fundo mostra a sombra.
 
 
 
- 
+ 
 
- 
+ 

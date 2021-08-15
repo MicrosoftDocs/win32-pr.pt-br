@@ -1,21 +1,21 @@
 ---
-description: A política de metadados de foto para a propriedade System. GPS. DestBearingRef.
+description: A política de metadados de foto para a propriedade System.GPS.DestBearingRef.
 ms.assetid: d1c8b3cc-ed52-43ca-a0ba-045a2c5fe274
-title: Política de metadados de foto System. GPS. DestBearingRef
+title: Política de metadados de foto System.GPS.DestBearingRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f00d3083459fe365fc54e81dc485ddd26887a46
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 26ee4b984d0a759769b80be76b53499690673c7ec630c759aa0371b53ea9368f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087847"
 ---
-# <a name="systemgpsdestbearingref-photo-metadata-policy"></a>Política de metadados de foto System. GPS. DestBearingRef
+# <a name="systemgpsdestbearingref-photo-metadata-policy"></a>Política de metadados de foto System.GPS.DestBearingRef
 
-A política de metadados de foto para a propriedade [System. GPS. DestBearingRef](../properties/props-system-gps-destbearingref.md) .
+A política de metadados de foto [para a propriedade System.GPS.DestBearingRef.](../properties/props-system-gps-destbearingref.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
 PKEY \_ GPS \_ DestBearingRef
 
@@ -25,29 +25,29 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-No
+Não
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
 
-LPWStr do VT \_
+VT \_ LPWSTR
 
 ### <a name="input-type"></a>Tipo de entrada
 
 Cadeia de caracteres.
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
 
-Os valores de esquemas diferentes são reconciliados.
+Valores de esquemas diferentes são reconciliados.
 
 ### <a name="jpeg-policies"></a>Políticas JPEG
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                        | Formato de disco |
 |-------|-----------------------------|-------------|
-| 1     | /App1/IFD/GPS/{UShort = 23}   | ascii       |
+| 1     | /app1/ifd/gps/{ushort=23}   | ascii       |
 | 2     | /xmp/exif:GPSDestBearingRef | Unicode     |
 
 
@@ -60,7 +60,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                        | Formato de disco |
 |-------|-----------------------------|-------------|
-| 1     | /App1/IFD/GPS/{UShort = 23}   | ascii       |
+| 1     | /app1/ifd/gps/{ushort=23}   | ascii       |
 | 2     | /xmp/exif:GPSDestBearingRef | Unicode     |
 
 
@@ -73,7 +73,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                        |
 |-------|-----------------------------|
-| 1     | /App1/IFD/GPS/{UShort = 23}   |
+| 1     | /app1/ifd/gps/{ushort=23}   |
 | 2     | /xmp/exif:gpsdestbearingref |
 
 
@@ -82,13 +82,13 @@ Os valores de esquemas diferentes são reconciliados.
 
 ### <a name="tiff-policies"></a>Políticas TIFF
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                            | Formato de disco |
 |-------|---------------------------------|-------------|
-| 1     | /IFD/GPS/{UShort = 23}            | ascii       |
+| 1     | /ifd/gps/{ushort=23}            | ascii       |
 | 2     | /ifd/xmp/exif:GPSDestBearingRef | Unicode     |
 
 
@@ -101,7 +101,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                            | Formato de disco |
 |-------|---------------------------------|-------------|
-| 1     | /IFD/GPS/{UShort = 23}            | ascii       |
+| 1     | /ifd/gps/{ushort=23}            | ascii       |
 | 2     | /ifd/xmp/exif:GPSDestBearingRef | Unicode     |
 
 
@@ -114,7 +114,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | ordem | caminho                            |
 |-------|---------------------------------|
-| 1     | /IFD/GPS/{UShort = 23}            |
+| 1     | /ifd/gps/{ushort=23}            |
 | 2     | /ifd/xmp/exif:gpsdestbearingref |
 
 
@@ -127,7 +127,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 <dl> <dt>
 
-[System. GPS. DestBearingRef](../properties/props-system-gps-destbearingref.md)
+[System.GPS.DestBearingRef](../properties/props-system-gps-destbearingref.md)
 </dt> </dl>
 
  

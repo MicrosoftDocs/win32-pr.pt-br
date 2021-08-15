@@ -3,23 +3,23 @@ title: Estratégias de tipo de perfil comuns do sistema de cores do Windows, con
 description: Estratégias de tipo de perfil comuns do sistema de cores do Windows, controle de versão e localização
 ms.assetid: 295522c6-7c53-47f6-9b98-aeee2b0e34fc
 keywords:
-- WCS (sistema de cores do Windows), tipos de perfil comuns
-- WCS (sistema de cores do Windows), tipos de perfil comuns
+- Windows Sistema de cores (WCS), tipos de perfil comuns
+- WCS (Windows sistema de cores), tipos de perfil comuns
 - gerenciamento de cores de imagem, tipos de perfil comuns
 - gerenciamento de cores, tipos de perfil comuns
 - cores, tipos de perfil comuns
-- WCS (sistema de cores do Windows), perfis
-- WCS (sistema de cores do Windows), perfis
+- Windows Sistema de cores (WCS), perfis
+- WCS (Windows sistema de cores), perfis
 - gerenciamento de cores de imagem, perfis
 - gerenciamento de cores, perfis
 - cores, perfis
-- WCS (sistema de cores do Windows), controle de versão
-- WCS (sistema de cores do Windows), controle de versão
+- Windows Sistema de cores (WCS), controle de versão
+- WCS (Windows sistema de cores), controle de versão
 - gerenciamento de cores de imagem, controle de versão
 - gerenciamento de cores, controle de versão
 - cores, controle de versão
-- WCS (sistema de cores do Windows), localização
-- WCS (sistema de cores do Windows), localização
+- Windows Sistema de cores (WCS), localização
+- WCS (Windows sistema de cores), localização
 - gerenciamento de cores de imagem, localização
 - gerenciamento de cores, localização
 - cores, localização
@@ -30,12 +30,12 @@ keywords:
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4814b652b654b6416b42a7a3484950273a93ea96
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: 6c9df44fa7095d8cbcd3df6de00c92ba2d4ab2ddb7ef7d3565a820e925265ea0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "105798341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442286"
 ---
 # <a name="windows-color-system-common-profile-types-schema-versioning-and-localization-strategies"></a>Estratégias de tipo de perfil comuns do sistema de cores do Windows, controle de versão e localização
 
@@ -116,7 +116,7 @@ Somente há suporte para codificações UTF-8 ou UTF-16. Todas as outras codific
 
 ## <a name="wcs-common-profile-types-schema-v2-additions"></a>Adições do esquema v2 de tipos de perfil comuns do WCS
 
-No Windows 7, o esquema de tipos de perfil comum WCS foi atualizado para incluir tipos para dar suporte ao [esquema de calibração WCS](wcs-calibration-schema.md).
+no Windows 7, o esquema de tipos de perfil comum wcs foi atualizado para incluir tipos para dar suporte ao [esquema de calibração wcs](wcs-calibration-schema.md).
 
 
 ```XML
@@ -319,15 +319,15 @@ O esquema CDMP impõe a restrição de que cada WCS: Text Child do elemento CDM:
 
 Ao decidir qual versão de idioma de um elemento localizável exibir, o código do aplicativo deve selecionar a "versão mais próxima" para a "linguagem atual". O que "versão mais próxima" e "idioma atual" realmente significam que depende da plataforma; Veja abaixo. Se o perfil não contiver uma versão de idioma que corresponda ao idioma atual, o aplicativo deverá selecionar a primeira versão no perfil (o primeiro elemento de texto filho WCS: Text do elemento localizável).
 
-No Windows Vista, a seleção de idioma é feita da seguinte maneira: cada thread tem uma lista associada de "linguagens de interface do usuário preferenciais", que pode ser obtida chamando [**GetThreadPreferredUILanguages**](/windows/win32/api/winnls/nf-winnls-getthreadpreferreduilanguages). A lista é retornada em ordem de preferência do usuário. Por exemplo, em um sistema configurado para inglês americano, a lista retornada por **GetThreadPreferredUILanguages** é {"en-US", "en"}. Isso significa: 1) inglês americano, se presente. 2) caso contrário, use qualquer variante regional do inglês, como "en-GB" ou simplesmente "en" simples.
+no Windows Vista, a seleção de idioma é feita da seguinte maneira: cada thread tem uma lista associada de "linguagens de interface do usuário preferenciais", que pode ser obtida chamando [**GetThreadPreferredUILanguages**](/windows/win32/api/winnls/nf-winnls-getthreadpreferreduilanguages). A lista é retornada em ordem de preferência do usuário. Por exemplo, em um sistema configurado para inglês americano, a lista retornada por **GetThreadPreferredUILanguages** é {"en-US", "en"}. Isso significa: 1) inglês americano, se presente. 2) caso contrário, use qualquer variante regional do inglês, como "en-GB" ou simplesmente "en" simples.
 
 Para cada idioma nessa lista, em ordem de lista, o código da interface do usuário procura um elemento WCS: Text cujo atributo XML: lang é uma correspondência exata. A primeira versão correspondente é usada. Se nenhuma versão corresponder, o primeiro elemento WCS: Text será usado.
 
 ### <a name="built-in-profiles"></a>Perfis internos
 
-Os perfis WCS padrão fornecidos com o Windows Vista, como sRGB. CDMP, têm as mesmas propriedades localizáveis que outros perfis.
+os perfis WCS padrão fornecidos com o Windows Vista, como sRGB. cdmp, têm as mesmas propriedades localizáveis que outros perfis.
 
-A solução padrão do Windows seria colocar as cadeias de caracteres localizadas em uma DLL do MUI e consultá-las da seguinte maneira:
+a solução de Windows padrão seria colocar as cadeias de caracteres localizadas em uma DLL MUI e consultá-las da seguinte maneira:
 
 
 ```XML
@@ -338,7 +338,7 @@ A solução padrão do Windows seria colocar as cadeias de caracteres localizada
 
 
 
-Em um sistema Windows, o texto de descrição seria extraído da ID de recurso 101 na versão localizada apropriada dos recursos do MUI para mscms.dll. Os sistemas não Windows usariam os subelementos WCS: Text, conforme descrito acima.
+em um sistema Windows, o texto de descrição seria extraído da ID de recurso 101 na versão localizada apropriada dos recursos do MUI para mscms.dll. sistemas não Windowss usariam os subelementos wcs: Text, conforme descrito acima.
 
 Apresentamos um atributo de ID opcional, globalmente exclusivo, no elemento raiz de cada esquema de perfil do WCS. O perfil padrão wcsRGB. CDMP pode ser assim:
 
@@ -357,7 +357,7 @@ Apresentamos um atributo de ID opcional, globalmente exclusivo, no elemento raiz
 
 
 
-Para os perfis de cores WCS fornecidos com o Windows, a CPL de cor exibe informações descritivas dos recursos, em vez dos elementos WCS: Text nos perfis. Isso permite que o Windows exiba informações localizadas para esses perfis em todos os idiomas com suporte, sem exigir que os perfis themlselves contenham informações descritivas em todos os idiomas.
+Para os perfis de cores WCS fornecidos com o Windows, a CPL de cor exibe informações descritivas dos recursos, em vez dos elementos WCS: Text nos perfis. isso permite que Windows exiba informações localizadas para esses perfis em todos os idiomas com suporte, sem exigir que os perfis themlselves contenham informações descritivas em todos os idiomas.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

@@ -4,12 +4,12 @@ description: O compilador MIDL gera até três funções para cada tipo ao qual 
 ms.assetid: 948f1dd7-c8b0-4fa0-88d8-9d122de52ba1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4674617bc98c92dbc684a29d1a3c91ac6a7429e1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 681d898a077ff55bb03a76fbd7579e28a8bcdf18c792330b32b1eb832c6b9058
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084695"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011094"
 ---
 # <a name="type-serialization"></a>Serialização de tipo
 
@@ -59,6 +59,6 @@ size_t MyType_AlignSize (handle_t Handle, MyType __RPC_FAR * pObject);
 
 Observe que os procedimentos remotos com identificadores de ligação implícita e tipos serializados com identificadores de serialização implícitas usam a mesma variável de identificador global. Portanto, é aconselhável não misturar serialização de tipo e procedimentos remotos em uma interface com identificadores implícitos. Para obter detalhes, consulte [identificadores implícitos versus explícitos](implicit-versus-explicit-handles.md).
 
- 
+ 
 
- 
+ 

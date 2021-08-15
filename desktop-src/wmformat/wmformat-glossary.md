@@ -5,12 +5,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 7142163b-ee2c-43e3-9c17-3e039abbeeaf
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ebf5623b1ed0b1ea312625f6682a0f35e31c2578
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2877c4b9000adf15fbef4cd43c48ab292a7f418c20b8a896f9ed08ffa88078bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119083770"
 ---
 # <a name="wmformat-glossary"></a>Glossário do WMFormat
 
@@ -51,7 +51,7 @@ Um exemplo compactado que não depende de nenhum outro exemplo de descompactaç�
 <span id="wmformat.clear_content"></span><span id="WMFORMAT.CLEAR_CONTENT"></span>**Limpar conteúdo**
 </dt> <dd>
 
-Um arquivo de mídia do Windows que não está criptografado.
+um arquivo de mídia Windows que não está criptografado.
 
 </dd> <dt>
 
@@ -72,14 +72,14 @@ Uma abreviação de compressor/descompactador. Software ou hardware usado para c
 <span id="wmformat.content_header"></span><span id="WMFORMAT.CONTENT_HEADER"></span>**cabeçalho do conteúdo**
 </dt> <dd>
 
-Parte da estrutura de arquivos de um arquivo de mídia do Windows que contém as informações necessárias para que um computador cliente descompacte e processe os dados de conteúdo. Em um arquivo empacotado, existe um cabeçalho de conteúdo adicional e contém a ID de chave, a ID de conteúdo e a URL de aquisição de licença. Esse cabeçalho de conteúdo também pode incluir um número de versão de individualização e atributos definidos pelo provedor de conteúdo.
+parte da estrutura de arquivos de um arquivo de mídia Windows que contém informações necessárias para que um computador cliente descompacte e processe os dados de conteúdo. Em um arquivo empacotado, existe um cabeçalho de conteúdo adicional e contém a ID de chave, a ID de conteúdo e a URL de aquisição de licença. Esse cabeçalho de conteúdo também pode incluir um número de versão de individualização e atributos definidos pelo provedor de conteúdo.
 
 </dd> <dt>
 
 <span id="wmformat.content_owner"></span><span id="WMFORMAT.CONTENT_OWNER"></span>**proprietário do conteúdo**
 </dt> <dd>
 
-A pessoa ou organização que cria arquivos de mídia do Windows, por exemplo, um rótulo de registro, um estúdio de filmes ou um artista.
+a pessoa ou organização que cria Windows arquivos de mídia, por exemplo, um rótulo de registro, um estúdio de filmes ou um artista.
 
 </dd> <dt>
 
@@ -132,7 +132,7 @@ O componente de um player que lida com todas as funções do gerenciamento de di
 
 </dd> <dt>
 
-<span id="wmformat.directx_media_object__dmo_"></span><span id="WMFORMAT.DIRECTX_MEDIA_OBJECT__DMO_"></span>**Objeto de mídia do DirectX (DMO)**
+<span id="wmformat.directx_media_object__dmo_"></span><span id="WMFORMAT.DIRECTX_MEDIA_OBJECT__DMO_"></span>**Objeto de mídia DirectX (DMO)**
 </dt> <dd>
 
 Um objeto COM que processa fluxos de dados de multimídia de buffers alocados pelo cliente.
@@ -142,7 +142,7 @@ Um objeto COM que processa fluxos de dados de multimídia de buffers alocados pe
 <span id="wmformat.dmo"></span><span id="WMFORMAT.DMO"></span>**DMO**
 </dt> <dd>
 
-Consulte a definição para: [ *objeto de mídia do DirectX (DMO)*](/windows)
+Consulte a definição de: [ *objeto de mídia DirectX (DMO)*](/windows)
 
 </dd> <dt>
 
@@ -191,7 +191,7 @@ Um padrão para adicionar metadados a arquivos MP3.
 <span id="wmformat.index"></span><span id="WMFORMAT.INDEX"></span>**índice** do
 </dt> <dd>
 
-Um marcador produzido pelo SDK (Software Development Kit) do Windows Media Format para habilitar a busca em um arquivo de vídeo.
+um marcador produzido pelo SDK (Software Development Kit) Windows Media Format para habilitar a busca em um arquivo de vídeo.
 
 </dd> <dt>
 
@@ -219,7 +219,7 @@ O processo que remove os quadros que foram adicionados quando o filme de 24 fps 
 <span id="wmformat.key"></span><span id="WMFORMAT.KEY"></span>**chave**
 </dt> <dd>
 
-Um dado que é necessário para desbloquear um arquivo de mídia do Windows empacotado. Essa chave é incluída em uma licença separada.
+um dado que é necessário para desbloquear um arquivo de mídia de Windows empacotado. Essa chave é incluída em uma licença separada.
 
 </dd> <dt>
 
@@ -233,7 +233,7 @@ Um quadro de vídeo que contém todos os dados necessários para construir uma i
 <span id="wmformat.key_id"></span><span id="WMFORMAT.KEY_ID"></span>**ID da chave**
 </dt> <dd>
 
-Um valor que identifica a chave para um arquivo protegido do Windows Media.
+um valor que identifica a chave para um arquivo de mídia Windows protegido.
 
 </dd> <dt>
 
@@ -247,14 +247,14 @@ Dados anexados a conteúdo protegido que descreve como o conteúdo pode ser usad
 <span id="wmformat.license_acquisition"></span><span id="WMFORMAT.LICENSE_ACQUISITION"></span>**aquisição de licença**
 </dt> <dd>
 
-O processo de obtenção de uma licença para reproduzir um arquivo de mídia do Windows empacotado. O Player tenta obter uma licença de uma URL de aquisição de licença, que é especificada no arquivo de mídia do Windows.
+o processo de obtenção de uma licença para reproduzir um arquivo de mídia de Windows empacotado. o player tenta obter uma licença de uma URL de aquisição de licença, que é especificada no arquivo de mídia Windows.
 
 </dd> <dt>
 
 <span id="wmformat.license_management_service"></span><span id="WMFORMAT.LICENSE_MANAGEMENT_SERVICE"></span>**Serviço de gerenciamento de licenças**
 </dt> <dd>
 
-O serviço da Microsoft que executa o processo de gerenciamento de licenças no SDK (Software Development Kit) do Windows Media Rights Manager.
+o serviço da Microsoft que executa o processo de gerenciamento de licenças no Windows Software Development Kit (SDK) do Media rights Manager.
 
 </dd> <dt>
 
@@ -289,14 +289,14 @@ Uma resposta a um desafio de revogação de licença que indica quais licenças 
 <span id="wmformat.licensing_server"></span><span id="WMFORMAT.LICENSING_SERVER"></span>**servidor de licenciamento**
 </dt> <dd>
 
-Um computador que executa o serviço de licença do Windows Media e emite licenças.
+um computador que executa Windows serviço de licença de mídia e emite licenças.
 
 </dd> <dt>
 
 <span id="wmformat.marker"></span><span id="WMFORMAT.MARKER"></span>**marcador** de
 </dt> <dd>
 
-Uma cadeia de texto associada a uma hora designada no conteúdo baseado no Windows Media. Marcadores geralmente denotam pontos convenientes para começar a reprodução, como o início de uma nova cena.
+uma cadeia de texto que está associada a uma hora designada em Windows conteúdo baseado em mídia. Marcadores geralmente denotam pontos convenientes para começar a reprodução, como o início de uma nova cena.
 
 </dd> <dt>
 
@@ -335,17 +335,17 @@ Uma configuração em uma licença que indica quais tecnologias podem ser usadas
 
 </dd> <dt>
 
-<span id="wmformat.packaged_windows_media_file"></span><span id="WMFORMAT.PACKAGED_WINDOWS_MEDIA_FILE"></span>**arquivo de mídia do Windows empacotado**
+<span id="wmformat.packaged_windows_media_file"></span><span id="WMFORMAT.PACKAGED_WINDOWS_MEDIA_FILE"></span>**arquivo de mídia de Windows empacotado**
 </dt> <dd>
 
-Um arquivo de mídia do Windows criptografado com uma chave, que os consumidores não podem reproduzir, a menos que tenham uma chave fornecida por uma licença. Um arquivo de mídia do Windows empacotado é produzido por e protegido por meio da implementação do gerenciamento de direitos digitais usando o SDK (Software Development Kit) do Windows Media Rights Manager ou um programa baseado no SDK do Microsoft Windows Media Format.
+um arquivo de mídia Windows criptografado com uma chave, que os consumidores não podem reproduzir, a menos que tenham uma chave fornecida por uma licença. um arquivo de mídia de Windows empacotado é produzido por e protegido por meio da implementação do gerenciamento de direitos digitais usando o sdk (Software Development Kit) do Windows Media rights Manager ou um programa baseado no sdk do formato de mídia do Microsoft Windows.
 
 </dd> <dt>
 
 <span id="wmformat.packaging"></span><span id="WMFORMAT.PACKAGING"></span>**empacotamento**
 </dt> <dd>
 
-O processo que protege e assina um arquivo de mídia do Windows, produzindo um arquivo de mídia do Windows empacotado. O processo de empacotamento inclui gerar ou especificar uma chave, gerar e assinar o cabeçalho do conteúdo e, em seguida, criptografar o arquivo de mídia do Windows com essas informações.
+o processo que protege e assina um arquivo de mídia Windows, produzindo um arquivo de mídia de Windows empacotado. o processo de empacotamento inclui gerar ou especificar uma chave, gerar e assinar o cabeçalho do conteúdo e, em seguida, criptografar o arquivo de mídia Windows com essas informações.
 
 </dd> <dt>
 
@@ -475,24 +475,24 @@ Consulte a definição para: [ *taxa de bits variável (VBR)*](/windows)
 
 </dd> <dt>
 
-<span id="wmformat.windows_media_file"></span><span id="WMFORMAT.WINDOWS_MEDIA_FILE"></span>**Arquivo de mídia do Windows**
+<span id="wmformat.windows_media_file"></span><span id="WMFORMAT.WINDOWS_MEDIA_FILE"></span>**Windows arquivo de mídia**
 </dt> <dd>
 
-Um arquivo que contém dados de áudio, vídeo ou script. O conteúdo do arquivo é codificado com um dos codecs de mídia do Windows.
+Um arquivo que contém dados de áudio, vídeo ou script. o conteúdo do arquivo é codificado com um dos codecs de mídia Windows.
 
 </dd> <dt>
 
-<span id="wmformat.windows_media_format"></span><span id="WMFORMAT.WINDOWS_MEDIA_FORMAT"></span>**Formato de mídia do Windows**
+<span id="wmformat.windows_media_format"></span><span id="WMFORMAT.WINDOWS_MEDIA_FORMAT"></span>**formato de mídia Windows**
 </dt> <dd>
 
-O formato de um arquivo de mídia digital ou fluxo que foi codificado com os codecs de mídia do Windows.
+o formato de um arquivo de mídia digital ou fluxo que foi codificado com Windows codecs de mídia.
 
 </dd> <dt>
 
-<span id="wmformat.windows_media_license_service"></span><span id="WMFORMAT.WINDOWS_MEDIA_LICENSE_SERVICE"></span>**Serviço de licença do Windows Media**
+<span id="wmformat.windows_media_license_service"></span><span id="WMFORMAT.WINDOWS_MEDIA_LICENSE_SERVICE"></span>**serviço de licença de mídia Windows**
 </dt> <dd>
 
-Um componente do SDK do Windows Media Rights Manager que fornece serviços de aquisição de licença.
+um componente do SDK do Windows Media rights Manager que fornece serviços de aquisição de licença.
 
 </dd> <dt>
 
@@ -503,6 +503,6 @@ Um modelo de cores que descreve informações de cores em termos de seu brilho (
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 

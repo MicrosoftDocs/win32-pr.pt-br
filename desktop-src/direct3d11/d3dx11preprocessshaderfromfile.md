@@ -1,6 +1,6 @@
 ---
-title: Função D3DX11PreprocessShaderFromFile (D3DX11async. h)
-description: Observe que a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store. Observação em vez de usar essa função, recomendamos que você use a API D3DPreprocess. Crie um sombreador de um arquivo sem compilá-lo.
+title: Função D3DX11PreprocessShaderFromFile (D3DX11async.h)
+description: Observação A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para Windows 8 e não tem suporte para aplicativos da Windows Store. Observação Em vez de usar essa função, recomendamos que você use a API D3DPreprocess. Crie um sombreador de um arquivo sem compilá-lo.
 ms.assetid: aab08efd-b6b0-44e5-bd68-f32c242d9e94
 keywords:
 - Função D3DX11PreprocessShaderFromFile Direct3D 11
@@ -15,22 +15,22 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b1987ef25688e83a48059805f79af4dc8a88c1ac
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 00ef5c7c9a00475ead0904cbf62d6d21fd647ce0de9fe402d1499dac7ee1bd09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104968621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124661"
 ---
 # <a name="d3dx11preprocessshaderfromfile-function"></a>Função D3DX11PreprocessShaderFromFile
 
 > [!Note]  
-> A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+> A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para Windows 8 e não tem suporte para aplicativos da Windows Store.
 
  
 
 > [!Note]  
-> Em vez de usar essa função, recomendamos que você use a API [**D3DPreprocess**](/windows/desktop/direct3dhlsl/d3dpreprocess) .
+> Em vez de usar essa função, recomendamos que você use a API [**D3DPreprocess.**](/windows/desktop/direct3dhlsl/d3dpreprocess)
 
  
 
@@ -57,74 +57,74 @@ HRESULT D3DX11PreprocessShaderFromFile(
 
 <dl> <dt>
 
-*pFileName* \[ no\]
+*pFileName* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](/windows/desktop/WinProg/windows-data-types)**
 
-Nome do arquivo do sombreador.
+Nome do arquivo de sombreador.
 
 </dd> <dt>
 
-*pDefines* \[ no\]
+*pDefines* \[ Em\]
 </dt> <dd>
 
-Tipo: **\_ \_ macro \* do sombreador D3D11 const**
+Tipo: **const D3D11 \_ SHADER \_ MACRO \***
 
-Uma matriz com terminação nula de macros de sombreador; Defina como **NULL** para não especificar nenhuma macro.
+Uma matriz terminada em NULL de macros de sombreador; de definir isso como **NULL** para especificar nenhuma macro.
 
 </dd> <dt>
 
-*pInclude* \[ no\]
+*pInclude* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPD3D10INCLUDE**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85))**
 
-Um ponteiro para uma interface de inclusão; Defina como **NULL** para especificar que não há nenhum arquivo de inclusão.
+Um ponteiro para uma interface de inclusão; de definido como **NULL** para especificar que não há nenhum arquivo de inclusão.
 
 </dd> <dt>
 
-*pPump* \[ no\]
+*pPump* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX11ThreadPump**](id3dx11threadpump.md)\***
 
-Um ponteiro para uma interface de bombeamento de thread (consulte a [**interface ID3DX11ThreadPump**](id3dx11threadpump.md)). Use **NULL** para especificar que essa função não deve retornar até que seja concluída.
+Um ponteiro para uma interface de bomba de thread (consulte Interface [**ID3DX11ThreadPump**](id3dx11threadpump.md)). Use **NULL** para especificar que essa função não deve retornar até que seja concluída.
 
 </dd> <dt>
 
-*ppShaderText* \[ fora\]
+*ppShaderText* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Blob**](/windows/desktop/api/d3dcommon/nn-d3dcommon-id3d10blob)\*\***
 
-Um ponteiro para a memória que contém o sombreador não compilado.
+Um ponteiro para a memória que contém o sombreador descompilado.
 
 </dd> <dt>
 
-*ppErrorMsgs* \[ fora\]
+*ppErrorMsgs* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Blob**](/windows/desktop/api/d3dcommon/nn-d3dcommon-id3d10blob)\*\***
 
-O endereço de um ponteiro para memória que contém erros de criação de efeito, se houver.
+O endereço de um ponteiro para a memória que contém erros de criação de efeito, se ocorreu algum.
 
 </dd> <dt>
 
-*pHResult* \[ fora\]
+*pHResult* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)\***
 
-Um ponteiro para o valor de retorno. Pode ser **NULL**. Se *pPump* não for **NULL**, *pHResult* deverá ser um local de memória válido até que a execução assíncrona seja concluída.
+Um ponteiro para o valor de retorno. Pode ser **NULL.** Se *pPump* não for **NULL,** *o pHResult* deverá ser um local de memória válido até que a execução assíncrona seja concluída.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-O valor de retorno é um dos valores listados nos [códigos de retorno do Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+O valor de retorno é um dos valores listados em Códigos de Retorno [do Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -132,8 +132,8 @@ O valor de retorno é um dos valores listados nos [códigos de retorno do Direct
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX11async. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX11. lib</dt> </dl>    |
+| parâmetro<br/>  | <dl> <dt>D3DX11async.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX11.lib</dt> </dl>    |
 
 
 

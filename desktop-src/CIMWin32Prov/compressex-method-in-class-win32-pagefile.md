@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2823d12fc474b5a5023890596a116062d94a045f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e24c4f8a34984c010a8a22fbad7cf94211698bc8de873fc004f6c813a443862f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119080200"
 ---
 # <a name="compressex-method-of-the-win32_pagefile-class"></a>Método CompressEx da classe de \_ arquivo de paginação Win32
 
@@ -70,7 +70,7 @@ Se **for true**, a alteração de propriedade será aplicada recursivamente aos 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) se o arquivo tiver sido compactado com êxito e qualquer outro número para indicar um erro.
 
@@ -121,7 +121,7 @@ O sistema de arquivos não é NTFS.
 **12**
 </dt> <dd>
 
-A plataforma não é o Windows.
+A plataforma não é Windows.
 
 </dd> <dt>
 

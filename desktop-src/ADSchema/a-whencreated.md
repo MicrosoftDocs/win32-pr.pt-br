@@ -122,10 +122,10 @@ A data em que este objeto foi criado. Esse valor é replicado e está no catálo
 | ID do link                | \-                              |
 | MAPI-Id                | 0x3007                          |
 | System-Only            | Verdadeiro                            |
-| É de valor único       | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Verdadeiro                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -143,10 +143,10 @@ A data em que este objeto foi criado. Esse valor é replicado e está no catálo
 | ID do link                | \-                              |
 | MAPI-Id                | 0x3007                          |
 | System-Only            | Verdadeiro                            |
-| É de valor único       | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Verdadeiro                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -164,10 +164,10 @@ A data em que este objeto foi criado. Esse valor é replicado e está no catálo
 | ID do link                | \-                              |
 | MAPI-Id                | 0x3007                          |
 | System-Only            | Verdadeiro                            |
-| É de valor único       | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Verdadeiro                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -185,10 +185,10 @@ A data em que este objeto foi criado. Esse valor é replicado e está no catálo
 | ID do link                | \-                              |
 | MAPI-Id                | 0x3007                          |
 | System-Only            | Verdadeiro                            |
-| É de valor único       | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Verdadeiro                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

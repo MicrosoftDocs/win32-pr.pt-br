@@ -215,19 +215,19 @@ Ao recuperar dados com JET_ColInfoList, JET_ColInfoListSortColumnid ou JET_ColIn
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
+<td><p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
+<td><p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em Esent.h.</p></td>
+<td><p>Declarado em ESENT. h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT.lib.</p></td>
+<td><p>Use ESENT. lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>
@@ -243,8 +243,8 @@ Ao recuperar dados com JET_ColInfoList, JET_ColInfoListSortColumnid ou JET_ColIn
 
 #### <a name="see-also"></a>Consulte Também
 
-[Erros extensíveis Armazenamento mecanismo](./extensible-storage-engine-errors.md)  
-[Parâmetros de tratamento de erro](./error-handling-parameters.md)  
+[erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md)  
+[Parâmetros de tratamento de erros](./error-handling-parameters.md)  
 [JET_COLUMNBASE](./jet-columnbase-structure.md)  
 [JET_COLUMNDEF](./jet-columndef-structure.md)  
 [JET_COLUMNID](./jet-columnid.md)  

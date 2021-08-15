@@ -3,7 +3,7 @@ title: Mensagem de WM_CAP_DRIVER_GET_VERSION (VFW. h)
 description: A \_ \_ mensagem obter versão do driver do WM Cap \_ \_ retorna as informações de versão do driver de captura conectado a uma janela de captura. Você pode enviar essa mensagem explicitamente ou usando a macro capDriverGetVersion.
 ms.assetid: 762ebe7e-0d09-46ea-ab17-86061f0bd8f9
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_DRIVER_GET_VERSION
+- mensagem de WM_CAP_DRIVER_GET_VERSION Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ced70f2d0159ef4bbad3f2d7a8027c30b2c71a5f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 49f6bed4513383c5dd889639a78e9f00e409fe347bfd6b64b112ea830571ae55
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105755072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687086"
 ---
 # <a name="wm_cap_driver_get_version-message"></a>\_Mensagem de \_ obtenção \_ de \_ versão do driver do WM Cap
 

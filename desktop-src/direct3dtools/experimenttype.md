@@ -1,10 +1,10 @@
 ---
-description: <span id="vspixengine.experimenttype"></span>Enumeração de EXPERIMENTOtype
+description: <span id="vspixengine.experimenttype"></span>Enumeração EXPERIMENTTYPE
 MS-HAID: vspixengine.EXPERIMENTTYPE
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Enumeração de EXPERIMENTOtype
+title: Enumeração EXPERIMENTTYPE
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 9AEBCF2D-4556-43A4-9C97-8184BA9DB22D
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 58c0ce661bb428c699127fd9b07ad67ab0b5ee7f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2bfc626434674643834a25dec7e87532bcded26567b393ce673916c56b66f13a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095046"
 ---
-# <a name="span-idvspixengineexperimenttypespanexperimenttype-enumeration"></a><span id="vspixengine.experimenttype"></span>Enumeração de EXPERIMENTOtype
+# <a name="span-idvspixengineexperimenttypespanexperimenttype-enumeration"></a><span id="vspixengine.experimenttype"></span>Enumeração EXPERIMENTTYPE
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -43,7 +43,7 @@ ms.locfileid: "108097404"
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

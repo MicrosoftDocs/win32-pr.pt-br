@@ -16,12 +16,12 @@ keywords:
 - Criando arquivos MIDI, atribuições de chave padrão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6fcfec1b5089fa3c58c18eb8990156df12db0ae
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fe148c2fe1bb562aad994608a8c87c35e84bccb7d63ba1bc3ee3e5dd3bbc56a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104006075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065636"
 ---
 # <a name="authoring-guidelines-for-midi-files"></a>Diretrizes de criação para arquivos MIDI
 
@@ -33,9 +33,9 @@ Siga estas diretrizes para criar arquivos MIDI independentes de dispositivo para
 -   Use um valor de 80 (0x50) para o controlador de volume principal para os níveis de escuta normais. Para níveis mais silenciosos ou mais altos, você pode usar valores menores ou mais altos.
 -   Use apenas as seguintes mensagens de MIDI: observação-em com velocidade, anotação, alteração de programa, curva de densidade, volume principal (controlador 7) e pedal de amortecedor (controlador 64). Os sintetizadores internos são necessários para responder a essas mensagens e a maioria dos instrumentos musicais MIDI também responde a elas.
 
- 
+ 
 
- 
+ 
 
 
 

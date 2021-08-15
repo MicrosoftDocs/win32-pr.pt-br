@@ -1,9 +1,9 @@
 ---
-title: Mensagem de ICM_DECOMPRESS_END (VFW. h)
-description: A \_ mensagem de término de DEScompactação ICM \_ Notifica um driver de descompactação de vídeo para encerrar a descompactação e liberar recursos alocados para descompactação. Você pode enviar essa mensagem explicitamente ou usando a macro ICDecompressEnd.
+title: ICM_DECOMPRESS_END mensagem (Vfw.h)
+description: A ICM DECOMPRESS END notifica um driver de descompactação de vídeo para encerrar a descompactação e liberar recursos alocados para \_ \_ descompactação. Você pode enviar essa mensagem explicitamente ou usando a macro ICDecompressEnd.
 ms.assetid: 16ce2424-9606-455f-afbd-84326457538e
 keywords:
-- Multimídia do Windows de mensagem ICM_DECOMPRESS_END
+- ICM_DECOMPRESS_END mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e25155755b6bfbb893905e6facad890dbf98f175
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a0c877afac3db0e4cf4d7c476ca3806d2acd15bdf72764549b2958490574a4f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119691156"
 ---
-# <a name="icm_decompress_end-message"></a>\_Mensagem de final de DEScompactação ICM \_
+# <a name="icm_decompress_end-message"></a>\_ICM Mensagem DECOMPRESS \_ END
 
-A mensagem de **\_ \_ término de descompactação ICM** notifica um driver de descompactação de vídeo para encerrar a descompactação e liberar recursos alocados para descompactação. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICDecompressEnd**](/windows/desktop/api/Vfw/nf-vfw-icdecompressend) .
+A **ICM \_ DECOMPRESS \_ END** notifica um driver de descompactação de vídeo para encerrar a descompactação e liberar recursos alocados para descompactação. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICDecompressEnd.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressend)
 
 
 ```C++
@@ -36,13 +36,13 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará ICERR \_ OK se for bem-sucedido ou um erro de outra forma.
+Retornará ICERR \_ OK se for bem-sucedido ou se um erro for o contrário.
 
 ## <a name="remarks"></a>Comentários
 
-O driver deve liberar todos os recursos alocados para a mensagem de [**\_ \_ início de descompactação do ICM**](icm-decompress-begin.md) .
+O driver deve liberar todos os recursos alocados para a [**ICM \_ DECOMPRESS \_ BEGIN.**](icm-decompress-begin.md)
 
-[**ICM \_ Descompactar \_ início**](icm-decompress-begin.md) e **\_ descompactação \_ de ICM** não aninhe. Se o driver receber **a \_ descompactação ICM \_ começar** antes que a descompactação seja interrompida com o **\_ \_ ponto de descompactação ICM**, ela deverá reiniciar a descompactação com novos parâmetros.
+[**ICM \_ DECOMPRESS \_ BEGIN**](icm-decompress-begin.md) e **ICM \_ DECOMPRESS \_ END não** aninham. Se o driver receber ICM **\_ DECOMPRESS \_ BEGIN** antes que a descompactação seja interrompida com **ICM \_ DECOMPRESS \_ END**, ele deverá reiniciar a descompactação com novos parâmetros.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ O driver deve liberar todos os recursos alocados para a mensagem de [**\_ \_ in�
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 
@@ -60,7 +60,7 @@ O driver deve liberar todos os recursos alocados para a mensagem de [**\_ \_ in�
 
 <dl> <dt>
 
-[Gerenciador de compactação de vídeo](video-compression-manager.md)
+[Gerenciador de Compactação de Vídeo](video-compression-manager.md)
 </dt> <dt>
 
 [Mensagens de compactação de vídeo](video-compression-messages.md)

@@ -1,17 +1,17 @@
 ---
 description: Indica se a unidade para o armazenamento é portátil.
 ms.assetid: d9ac5df6-9f25-4f11-a7fd-63cdc0060d8b
-title: System. Storage. portátil
+title: Sistema. Armazenamento. Portátil
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fb2f52fcd2c76836691f12de3305f2c91fab98c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c36f92485455f4213aad09411784f1263166c333fbde015410d00c242d40e6f9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104091693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119598116"
 ---
-# <a name="systemstorageportable"></a>System. Storage. portátil
+# <a name="systemstorageportable"></a>Sistema. Armazenamento. Portátil
 
 Indica se a unidade para o armazenamento é portátil.
 

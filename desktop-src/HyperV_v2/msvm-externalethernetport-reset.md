@@ -1,7 +1,7 @@
 ---
-description: Método Reset da classe Msvm_ExternalEthernetPort – solicita uma redefinição.
+description: Método reset da classe Msvm_ExternalEthernetPort - Solicita uma redefinição.
 ms.assetid: 6a4ca61c-b431-40d1-a241-f402aa667ebe
-title: Método Reset da classe Msvm_ExternalEthernetPort
+title: Método reset da classe Msvm_ExternalEthernetPort dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3fbc6e2533270ebe1ca124b94be858631268358b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3eb23d0c7782a41b8cee946387f4819326e24318654ca0bf01dec3ccf8db056e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119523786"
 ---
-# <a name="reset-method-of-the-msvm_externalethernetport-class"></a>Método Reset da classe Msvm \_ ExternalEthernetPort
+# <a name="reset-method-of-the-msvm_externalethernetport-class"></a>Método reset da classe Msvm \_ ExternalEthernetPort
 
 Solicita uma redefinição.
 
@@ -57,13 +57,13 @@ Esse método retorna um dos seguintes valores:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

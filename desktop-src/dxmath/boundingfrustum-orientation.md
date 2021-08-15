@@ -1,19 +1,19 @@
 ---
-description: A orientação do BoundingFrustum representada como um Quaternion.
+description: A orientação do BoundingFrustum representado como um quaternion.
 ms.assetid: 080ac6f5-aa1d-47ce-804a-f1beb113b769
-title: BoundingFrustum. Orientation (DirectXCollision. h)
+title: BoundingFrustum.Orientation (DirectXCollision.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed3838a8e962da996fd62f3420cef0bd90a36b98
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b5fe40634db9cce10286553895d036aa5ead4aae411dd9207c569d70f13d3866
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105765226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985056"
 ---
-# <a name="boundingfrustumorientation"></a>BoundingFrustum. Orientation
+# <a name="boundingfrustumorientation"></a>BoundingFrustum.Orientation
 
-A orientação do [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum) representada como um Quaternion.
+A orientação do [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum) representado como um quaternion.
 
 
 ```C++
@@ -27,7 +27,7 @@ public:
 
 ### <a name="platform-requirements"></a>Requisitos de plataforma
 
-Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. Com suporte para aplicativos de área de trabalho Win32, aplicativos da Windows Store e aplicativos Windows Phone 8.
+Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. Com suporte para aplicativos da área de trabalho win32, aplicativos Windows Store e Windows Phone 8 aplicativos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,7 +35,7 @@ Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Window
 
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>DirectXCollision. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>DirectXCollision.h</dt> </dl> |
 
 
 

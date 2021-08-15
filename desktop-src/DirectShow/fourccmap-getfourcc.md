@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c76493ff172f7a5611367fd50aa3b7957cf5441b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 381625f5d0a585f212c8f7b076d1cd58ea5215958bf09025e1db864ce2f624b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015714"
 ---
 # <a name="fourccmapgetfourcc-method"></a>Método FOURCCMap:: GetFOURCC
 
@@ -40,7 +40,7 @@ DWORD GetFOURCC();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o valor **DWORD** **FOURCC** . Observe que se você construir um **GUID** que não foi originalmente derivado de um **FOURCC**, o valor de retorno será essencialmente aleatório.
 
@@ -50,7 +50,7 @@ Retorna o valor **DWORD** **FOURCC** . Observe que se você construir um **GUID*
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>FourCC. h (incluir fluxos. h)</dt> </dl>                                                                                    |
+| parâmetro<br/>  | <dl> <dt>Fourcc. h (incluir Fluxos. h)</dt> </dl>                                                                                    |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

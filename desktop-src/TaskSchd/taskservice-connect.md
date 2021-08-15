@@ -1,11 +1,11 @@
 ---
-title: Método TaskService. Connect
+title: TaskService. método de Conexão
 description: Para scripts, o se conecta a um computador remoto e associa todas as chamadas subsequentes nessa interface a uma sessão remota.
 ms.assetid: 206087df-307c-4ba9-9e83-915f5287f281
 keywords:
-- Agendador de Tarefas do método Connect
-- Método Connect Agendador de Tarefas, objeto TaskService
-- Agendador de Tarefas de objeto TaskService, método Connect
+- método de Conexão Agendador de Tarefas
+- método de Conexão Agendador de Tarefas, objeto TaskService
+- Agendador de Tarefas de objeto TaskService, Conexão método
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1db5f13e20da825cbdaf45ae399279687f6ff4aa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d4da8fb2aed018eab9880ab6c8a6bed310e6d89bb293d52efc5d6ac6d8baf190
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059734"
 ---
-# <a name="taskserviceconnect-method"></a>Método TaskService. Connect
+# <a name="taskserviceconnect-method"></a>TaskService. método de Conexão
 
 Para scripts, o se conecta a um computador remoto e associa todas as chamadas subsequentes nessa interface a uma sessão remota. Se o parâmetro ServerName estiver vazio, esse método será executado no computador local. Se a userId não for especificada, o token atual será usado.
 
@@ -73,15 +73,15 @@ A senha usada para se conectar ao computador. Se o nome de usuário e a senha n�
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-O método **TaskService. Connect** deve ser chamado antes de chamar qualquer um dos outros métodos [**TaskService**](taskservice.md) .
+o método **TaskService. Conexão** deve ser chamado antes de chamar qualquer um dos outros métodos [**TaskService**](taskservice.md) .
 
-Se o método Connect falhar, você poderá coletar o identificador de erro para localizar o significado do erro. A tabela a seguir lista os identificadores de erro e suas descrições.
+se o método de Conexão falhar, você poderá coletar o identificador de erro para localizar o significado do erro. A tabela a seguir lista os identificadores de erro e suas descrições.
 
 
 
@@ -114,13 +114,13 @@ Se o método Connect falhar, você poderá coletar o identificador de erro para 
 <td>Esse erro é retornado nas seguintes situações:
 <ul>
 <li>O nome do computador especificado no parâmetro <em>ServerName</em> não existe.</li>
-<li>Quando você está tentando se conectar a um computador com Windows Server 2003 ou Windows XP, o computador remoto não tem a exceção de firewall de compartilhamento de arquivos e impressoras habilitada ou o serviço de registro remoto não está em execução.</li>
-<li>Quando você estiver tentando se conectar a um computador com Windows Vista e o computador remoto não tiver a exceção de firewall de gerenciamento de tarefas agendadas remotas habilitada e a exceção de firewall de compartilhamento de arquivos e impressoras estiver habilitada ou o serviço de registro remoto não estiver em execução.</li>
+<li>quando você está tentando se conectar a um computador Windows Server 2003 ou Windows XP, o computador remoto não tem a exceção de firewall de compartilhamento de arquivos e impressoras habilitada ou o serviço de registro remoto não está em execução.</li>
+<li>quando você estiver tentando se conectar a um computador Windows Vista e o computador remoto não tiver a exceção de firewall de gerenciamento de tarefas agendadas remotas habilitada e a exceção de firewall de compartilhamento de arquivos e impressoras estiver habilitada ou o serviço de registro remoto não estiver em execução.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>50</td>
-<td>Os parâmetros de <em>usuário</em>, <em>senha</em>ou <em>domínio</em> não podem ser especificados ao se conectar a um computador remoto com Windows XP ou Windows Server 2003 de um computador com Windows Vista.</td>
+<td>os parâmetros de <em>usuário</em>, <em>senha</em>ou <em>domínio</em> não podem ser especificados ao se conectar a um computador remoto Windows XP ou Windows Server 2003 de um computador Windows Vista.</td>
 </tr>
 </tbody>
 </table>
@@ -129,9 +129,9 @@ Se o método Connect falhar, você poderá coletar o identificador de erro para 
 
  
 
-Se você estiver se conectando a um computador remoto com Windows Vista de um Windows Vista, será necessário permitir a exceção de firewall de gerenciamento de tarefas agendadas remotas no computador remoto. Para permitir essa exceção, clique em Iniciar, painel de controle, segurança, permitir um programa pelo firewall do Windows e marque a caixa de seleção gerenciamento remoto de tarefas agendadas. Em seguida, clique no botão OK na caixa de diálogo Configurações do firewall do Windows.
+se você estiver se conectando a um computador remoto Windows vista de um Windows vista, será necessário permitir a exceção de firewall de gerenciamento de tarefas agendadas remotas no computador remoto. para permitir essa exceção, clique em iniciar, painel de controle, segurança, permitir um programa por meio de Windows Firewall e marque a caixa de seleção gerenciamento remoto de tarefas agendadas. em seguida, clique no botão Ok na caixa de diálogo Windows Firewall Configurações.
 
-Se você estiver se conectando a um computador remoto com Windows XP ou Windows Server 2003 de um computador com Windows Vista, será necessário permitir a exceção de firewall de compartilhamento de arquivos e impressoras no computador remoto. Para permitir essa exceção, clique em Iniciar, painel de controle, clique duas vezes em Firewall do Windows, selecione a guia exceções e selecione a exceção de firewall de compartilhamento de arquivos e impressoras. Em seguida, clique no botão OK na caixa de diálogo Firewall do Windows. O serviço registro remoto também deve estar em execução no computador remoto.
+se você estiver se conectando a um computador remoto Windows XP ou Windows Server 2003 de um computador Windows Vista, será necessário permitir a exceção de firewall de compartilhamento de arquivos e impressoras no computador remoto. para permitir essa exceção, clique em iniciar, painel de controle, clique duas vezes em Windows Firewall, selecione a guia exceções e, em seguida, selecione a exceção de Firewall de compartilhamento de arquivos e impressoras. em seguida, clique no botão OK na caixa de diálogo Windows Firewall. O serviço registro remoto também deve estar em execução no computador remoto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -139,8 +139,8 @@ Se você estiver se conectando a um computador remoto com Windows XP ou Windows 
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
 | Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 

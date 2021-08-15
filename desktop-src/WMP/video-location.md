@@ -1,24 +1,24 @@
 ---
-title: Local do vídeo
-description: Local do vídeo
+title: Localização do vídeo
+description: Localização do vídeo
 ms.assetid: d7785890-36a1-4077-b878-4845f2829101
 keywords:
-- Aparências móveis do Windows Media Player, vídeo
-- capas, vídeo
+- Windows Media Player Capas móveis, vídeo
+- skins,video
 - referência para capas, vídeo
 - vídeo em capas, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d12a21343e0eef035bd4ff860bb0a30c1db0f30
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2df310c1c439ac06317ff67c36bea340339233f93821fba059db642400f00e35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054154"
 ---
-# <a name="video-location"></a>Local do vídeo
+# <a name="video-location"></a>Localização do vídeo
 
-Você deve definir o local da área de exibição de vídeo em sua capa. Você deve inserir quatro inteiros positivos, separados por vírgulas, que definem a esquerda, a parte superior, a largura e a altura da exibição do vídeo, em pixels, em relação à imagem de plano de fundo.
+Você deve definir o local da área de exibição de vídeo em sua capa. Você deve inserir quatro inteiros positivos, separados por vírgulas, que definem a esquerda, a parte superior, a largura e a altura da exibição do vídeo, em pixels, em relação à imagem de tela de fundo.
 
 
 ```C++
@@ -35,9 +35,9 @@ Você deve definir o local da área de exibição de vídeo em sua capa. Você d
 [**Vídeo**](video.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

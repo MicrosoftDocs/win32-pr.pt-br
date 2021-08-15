@@ -3,7 +3,7 @@ title: Código de notificação CBN_EDITUPDATE (WinUser. h)
 description: Enviado quando a parte do controle de edição de uma caixa de combinação está prestes a exibir o texto alterado.
 ms.assetid: cae9cbf5-d420-4dfb-a46f-8c1a77de6ecf
 keywords:
-- CBN_EDITUPDATE de código de notificação controles do Windows
+- CBN_EDITUPDATE código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ef56b97bf8f4c4aebb4a11383be1b5a1941167b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: eeaf787fd241d9dd87457273bd76c07eebe12fa99f2635643b4a4eaa8eaf4952
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119314726"
 ---
 # <a name="cbn_editupdate-notification-code"></a>Código de notificação do CBN \_ EDITUPDATE
 
@@ -63,9 +63,9 @@ Se a caixa de combinação tiver o estilo do [**CBS \_ DROPDOWNLIST**](combo-box
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| parâmetro<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

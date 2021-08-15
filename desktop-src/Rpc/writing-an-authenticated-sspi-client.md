@@ -6,12 +6,12 @@ keywords:
 - RPC de chamada de procedimento remoto, tarefas, gravando um cliente SSPI autenticado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c8476772a2ed652f6646b078c2876234cbcc0d6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7445d5340b03f07805a9e2ab89deb8c915a76160db67b504259ae8de0bbabee5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119010354"
 ---
 # <a name="writing-an-authenticated-sspi-client"></a>Gravando um cliente SSPI autenticado
 
@@ -70,9 +70,9 @@ Outro método é deixar os identificadores de associação fora do arquivo IDL e
 O processo de extração das credenciais do cliente do identificador de associação ocorre da seguinte maneira:
 
 -   Os clientes RPC chamam [**RpcBindingSetAuthInfo**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingsetauthinfo) e incluem suas informações de autenticação como parte das informações de associação passadas para o servidor.
--   Normalmente, o servidor chama [**RpcImpersonateClient**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcimpersonateclient) para se comportar como se fosse o cliente. Se o identificador de associação não for autenticado, a chamada falhará com RPC \_ S \_ nenhum \_ contexto \_ disponível. Para obter o nome de usuário do cliente, chame [**RpcBindingInqAuthClient**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindinginqauthclient) enquanto estiver representando ou no Windows XP ou em versões posteriores do Windows, chame [**RpcGetAuthorizationContextForClient**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcgetauthorizationcontextforclient) para obter o contexto de autorização e, em seguida, use as funções AuthZ para recuperar o nome.
+-   Normalmente, o servidor chama [**RpcImpersonateClient**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcimpersonateclient) para se comportar como se fosse o cliente. Se o identificador de associação não for autenticado, a chamada falhará com RPC \_ S \_ nenhum \_ contexto \_ disponível. para obter o nome de usuário do cliente, chame [**RpcBindingInqAuthClient**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindinginqauthclient) ao representar ou no Windows XP ou em versões posteriores do Windows, chame [**RpcGetAuthorizationContextForClient**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcgetauthorizationcontextforclient) para obter o contexto de autorização e, em seguida, use as funções Authz para recuperar o nome.
 -   Normalmente, o servidor chamará [**CreatePrivateObjectSecurity**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurity) para criar objetos com ACLs. Depois que isso for feito, as verificações de segurança posteriores se tornarão automáticas.
 
- 
+ 
 
- 
+ 

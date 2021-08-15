@@ -4,12 +4,12 @@ ms.assetid: daf45180-2cc3-433d-823e-395e85ce3410
 title: Partições e dispositivos de disco
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e063b943d33118a45cb6ab4c304569094af2c32e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 758454c9fc9e684e918646bf99869c7544b3b02c0201eb2ba507f8ffbdc303d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104557046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015365"
 ---
 # <a name="disk-devices-and-partitions"></a>Partições e dispositivos de disco
 
@@ -19,7 +19,7 @@ A menor unidade endereçável de uma faixa é um *setor*. Um *cilindro* é defin
 
 ![disco rígido, incluindo faixas, setores e platters](images/diskdevice.png)
 
-Um disco rígido pode conter uma ou mais regiões lógicas chamadas *partições*. As partições são criadas quando o usuário formata um disco rígido como um *disco básico*. O Windows também dá suporte a *discos dinâmicos*, que não são discutidos neste tópico. Para obter mais informações sobre discos básicos e discos dinâmicos, consulte [discos básicos e dinâmicos](basic-and-dynamic-disks.md).
+Um disco rígido pode conter uma ou mais regiões lógicas chamadas *partições*. As partições são criadas quando o usuário formata um disco rígido como um *disco básico*. o Windows também dá suporte a *discos dinâmicos*, que não são discutidos neste tópico. Para obter mais informações sobre discos básicos e discos dinâmicos, consulte [discos básicos e dinâmicos](basic-and-dynamic-disks.md).
 
 A criação de várias partições em um disco permite a aparência de discos rígidos separados. Por exemplo, um sistema com um disco rígido que tem uma partição contém um único volume, designado pelo sistema como a unidade C. Um sistema com um disco rígido com duas partições normalmente contém as unidades C e D. Ter várias partições em um disco rígido pode facilitar o gerenciamento do sistema, por exemplo, para organizar arquivos ou dar suporte a vários usuários.
 

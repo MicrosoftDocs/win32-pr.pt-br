@@ -1,7 +1,7 @@
 ---
 description: Cria um contexto.
 ms.assetid: f972ab40-c9e9-4d2a-88f6-4c7817d5533f
-title: Função NtGdiD3DContextCreate (Ntgdi. h)
+title: Função NtGdiD3DContextCreate (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Ntgdi.h
-ms.openlocfilehash: f59a80d3efd5e077bc1eadea66255ff5e6ea7523
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a11ae1d1e9b9469f22971ec3fc7447d8552b6d263bb43f4a8fe336ccbbc37a69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104088926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017734"
 ---
 # <a name="ntgdid3dcontextcreate-function"></a>Função NtGdiD3DContextCreate
 
-\[Essa função está sujeita a alterações em cada revisão do sistema operacional. Em vez disso, use o Microsoft DirectDraw e o Microsoft Direct3DAPIs; essas APIs isolam os aplicativos dessas alterações do sistema operacional e ocultam muitas outras dificuldades envolvidas na interação direta com os drivers de vídeo.\]
+\[Essa função está sujeita a alterações com cada revisão do sistema operacional. Em vez disso, use o Microsoft DirectDraw e o Microsoft Direct3DAPIs; essas APIs isolam aplicativos dessas alterações do sistema operacional e ocultam muitas outras dificuldades envolvidas na interação diretamente com drivers de exibição.\]
 
 Cria um contexto.
 
@@ -44,35 +44,35 @@ BOOL APIENTRY NtGdiD3DContextCreate(
 
 <dl> <dt>
 
-*hDirectDrawLocal* \[ no\]
+*hDirectDrawLocal* \[ Em\]
 </dt> <dd>
 
-Identificador para um objeto DirectDraw no modo kernel, criado anteriormente com [**NtGdiDdCreateDirectDrawObject**](-dxgkernel-ntgdiddcreatedirectdrawobject.md), que representa o dispositivo no qual o contexto do Direct3D deve ser criado.
+Identificador para um objeto DirectDraw no modo kernel, criado anteriormente com [**NtGdiDdCreateDirectDrawObject**](-dxgkernel-ntgdiddcreatedirectdrawobject.md), representando o dispositivo no qual o contexto direct3D deve ser criado.
 
 </dd> <dt>
 
-*hSurfColor* \[ no\]
+*hSurfColor* \[ Em\]
 </dt> <dd>
 
-Identificador para uma [**estrutura \_ \_ local de superfície do DD**](/windows/win32/api/ddrawint/ns-ddrawint-dd_surface_local) que descreve a superfície do DirectDraw a ser usada como o destino de renderização.
+Lidar com uma [**estrutura LOCAL do DD \_ SURFACE \_**](/windows/win32/api/ddrawint/ns-ddrawint-dd_surface_local) que descreve a superfície do DirectDraw a ser usada como o destino de renderização.
 
 </dd> <dt>
 
-*hSurfZ* \[ no\]
+*hSurfZ* \[ Em\]
 </dt> <dd>
 
-Identificador para uma [**estrutura \_ \_ local de superfície do DD**](/windows/win32/api/ddrawint/ns-ddrawint-dd_surface_local) que descreve a superfície do DirectDraw a ser usada como um buffer de profundidade. Se esse membro for **nulo**, nenhum buffer de profundidade será executado.
+Lidar com uma [**estrutura LOCAL do DD \_ SURFACE \_**](/windows/win32/api/ddrawint/ns-ddrawint-dd_surface_local) que descreve a superfície do DirectDraw a ser usada como um buffer de profundidade. Se esse membro for **NULL,** nenhum buffer de profundidade será executado.
 
 </dd> <dt>
 
-*pdcci* \[ entrada, saída\]
+*pdcci* \[ in, out\]
 </dt> <dd>
 
-Ponteiro para uma estrutura [**D3DNTHAL \_ CONTEXTCREATEDATA**](/windows-hardware/drivers/ddi/) que contém as informações necessárias para criar um contexto e os dados que o driver deve armazenar no novo contexto.
+Ponteiro para uma [**estrutura D3DNTHAL \_ CONTEXTCREATEDATA**](/windows-hardware/drivers/ddi/) que contém as informações necessárias para criar um contexto e os dados que o driver deve armazenar no novo contexto.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 **NtGdiD3DContextCreate** retorna um dos seguintes códigos de retorno de chamada.
 
@@ -80,8 +80,8 @@ Ponteiro para uma estrutura [**D3DNTHAL \_ CONTEXTCREATEDATA**](/windows-hardwar
 
 | Código de retorno                                                                                              | Descrição                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_Driver DDHAL \_ manipulado**</dt> </dl>    | O driver executou a operação e retornou um código de retorno válido para essa operação. Se esse código for DD \_ OK, o DirectDraw ou Direct3D continuará com a função. Caso contrário, o DirectDraw ou o Direct3D retorna o código de erro fornecido pelo driver e anula a função.<br/>                                                                                 |
-| <dl> <dt>**Driver DDHAL não \_ \_ manipulado**</dt> </dl> | O driver não tem nenhum comentário sobre a operação solicitada. Se for necessário que o driver implementou um retorno de chamada específico, o DirectDraw ou o Direct3D relatará uma condição de erro. Caso contrário, o DirectDraw ou o Direct3D tratará a operação como se o retorno de chamada do driver não tivesse sido definido pela execução da implementação do DirectDraw ou do Direct3D independente de dispositivo.<br/> |
+| <dl> <dt>**DRIVER DDHAL \_ \_ MANIPULADO**</dt> </dl>    | O driver realizou a operação e retornou um código de retorno válido para essa operação. Se esse código for DD \_ OK, DirectDraw ou Direct3D prosseguirá com a função . Caso contrário, DirectDraw ou Direct3D retornará o código de erro fornecido pelo driver e anulará a função.<br/>                                                                                 |
+| <dl> <dt>**DDHAL \_ DRIVER \_ NOTHANDLED**</dt> </dl> | O driver não tem nenhum comentário sobre a operação solicitada. Se o driver precisar ter implementado um retorno de chamada específico, DirectDraw ou Direct3D relata uma condição de erro. Caso contrário, DirectDraw ou Direct3D tratará a operação como se o retorno de chamada do driver não tivesse sido definido executando a implementação independente de dispositivo DirectDraw ou Direct3D.<br/> |
 
 
 
@@ -95,7 +95,7 @@ Ponteiro para uma estrutura [**D3DNTHAL \_ CONTEXTCREATEDATA**](/windows-hardwar
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                               |
-| Cabeçalho<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 

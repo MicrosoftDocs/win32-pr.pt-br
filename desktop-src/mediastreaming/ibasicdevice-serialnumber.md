@@ -3,9 +3,9 @@ title: Método SerialNumber IBasicDevice
 description: Recupera o número de série do dispositivo.
 ms.assetid: 238A5999-0E8B-4462-AFCF-790DB58CFCB4
 keywords:
-- API de streaming de mídia do método SerialNumber
-- API de streaming de mídia do método SerialNumber, interface IBasicDevice
-- API de streaming de mídia da interface IBasicDevice, método SerialNumber
+- API de Streaming de Mídia do método SerialNumber
+- Api de Streaming de Mídia do método SerialNumber, interface IBasicDevice
+- API de Streaming de Mídia da interface IBasicDevice, método SerialNumber
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f24fad2e74c3ec2a5b489d8f5dd57265ea6d21bf
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 37a4985754982b8b64246d8d0d0fac0d2c37f4a37f159d2e5087497442c97a75
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104293175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119712936"
 ---
-# <a name="ibasicdeviceserialnumber-method"></a>Método IBasicDevice:: SerialNumber
+# <a name="ibasicdeviceserialnumber-method"></a>Método IBasicDevice::SerialNumber
 
 Recupera o número de série do dispositivo.
 
@@ -41,16 +41,16 @@ HRESULT SerialNumber(
 
 <dl> <dt>
 
-*valor* \[ do fora\]
+*value* \[ out\]
 </dt> <dd>
 
 Recebe um ponteiro para o número de série do dispositivo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 4e476be2-fa73-4b3e-b0cc-799c8d16b5de
 title: elemento de codinome
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9be7292135e79477d0a66d2a0667ebd51bd7567c
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 71e778e6d55e9902ec03597d7776afce9850a93be18f578416246908310fa666
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991766"
 ---
 # <a name="codename-element"></a>elemento de codinome
 
@@ -49,7 +49,7 @@ Esse elemento substitui o nome de código padrão usado para o código gerado. P
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

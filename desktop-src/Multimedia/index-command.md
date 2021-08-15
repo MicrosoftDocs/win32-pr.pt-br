@@ -3,7 +3,7 @@ title: comando de índice
 description: O comando index controla a exibição na tela de um videocassete. Os dispositivos VCR reconhecem este comando.
 ms.assetid: 16066acf-37aa-4bff-b97e-5eb2420ac3c4
 keywords:
-- comando de índice multimídia do Windows
+- comando de índice Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da652b1a7a48dffd9850c435345fcfcb11c2e674
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e9044ce01db5f35354390fd8d09cc085416202f670c8378a2e1a10311b12ab94
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119690546"
 ---
 # <a name="index-command"></a>comando de índice
 

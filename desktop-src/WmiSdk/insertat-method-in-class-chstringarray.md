@@ -3,21 +3,21 @@ description: O método InsertAt insere um elemento (ou várias cópias de um ele
 audience: developer
 ms.assetid: 1d6355bc-7df2-4aa3-8e47-0239d726ed7d
 ms.tgt_platform: multiple
-title: 'Métodos CHStringArray:: InsertAt (ChStrArr. h)'
+title: Métodos CHStringArray::InsertAt (ChStrArr.h)
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 4047b740778c8d0adf1f2b5981b2f3aac5ba9529
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 75332e300987233c0a6f3d6755d27fd7c305a7d86fb6cd9a6143c417222c0dcf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105764114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097246"
 ---
-# <a name="chstringarrayinsertat-methods"></a>Métodos CHStringArray:: InsertAt
+# <a name="chstringarrayinsertat-methods"></a>Métodos CHStringArray::InsertAt
 
-\[A classe [**CHStringArray**](/windows/win32/api/chstrarr/nl-chstrarr-chstringarray) faz parte da estrutura do provedor de WMI, que agora é considerada no estado final, e nenhum outro desenvolvimento, melhoria ou atualização estará disponível para problemas não relacionados à segurança que afetem essas bibliotecas. As [APIs de mi](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) devem ser usadas para todo o novo desenvolvimento.\]
+\[A [**classe CHStringArray**](/windows/win32/api/chstrarr/nl-chstrarr-chstringarray) faz parte do WMI Provider Framework, que agora é considerado no estado final e nenhum desenvolvimento, aprimoramentos ou atualizações adicionais estará disponível para problemas não relacionados à segurança que afetam essas bibliotecas. As [APIs de MI](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) devem ser usadas para todo o novo desenvolvimento.\]
 
-O método **InsertAt** insere um elemento (ou várias cópias de um elemento) ou todos os elementos de outra matriz em um índice especificado.
+O **método InsertAt** insere um elemento (ou várias cópias de um elemento) ou todos os elementos de outra matriz em um índice especificado.
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -25,8 +25,8 @@ O método **InsertAt** insere um elemento (ou várias cópias de um elemento) ou
 
 | Método                                                                               | Descrição                                                                                                             |
 |:-------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------|
-| [**InsertAt (int, LPCWSTR, int)**](/previous-versions/windows/desktop/legacy/aa385383(v=vs.85))       | Insere um ou mais elementos em um índice especificado em uma matriz.<br/>                                               |
-| [**InsertAt (int, CHStringArray \* )**](/windows/win32/api/chstrarr/nf-chstrarr-chstringarray-insertat(int_chstringarray)) | Insere todos os elementos de outro [**CHStringArray**](/windows/win32/api/chstrarr/nl-chstrarr-chstringarray) em um índice especificado em uma matriz.<br/> |
+| [**InsertAt(int,LPCWSTR,int)**](/previous-versions/windows/desktop/legacy/aa385383(v=vs.85))       | Insere um ou mais elementos em um índice especificado em uma matriz.<br/>                                               |
+| [**InsertAt(int,CHStringArray \* )**](/windows/win32/api/chstrarr/nf-chstrarr-chstringarray-insertat(int_chstringarray)) | Insere todos os elementos de [**outro CHStringArray**](/windows/win32/api/chstrarr/nl-chstrarr-chstringarray) em um índice especificado em uma matriz.<br/> |
 
 
 
@@ -37,9 +37,9 @@ O método **InsertAt** insere um elemento (ou várias cópias de um elemento) ou
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                                                                                      |
-| Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                                                                                                |
-| parâmetro<br/>                   | <dl> <dt>ChStrArr. h (incluir FwCommon. h)</dt> </dl>                                                    |
-| Biblioteca<br/>                  | <dl> <dt>FrameDyn. lib</dt> </dl>                                                                       |
+| Servidor mínimo com suporte<br/> | Windows Servidor 2008<br/>                                                                                                                                |
+| Cabeçalho<br/>                   | <dl> <dt>ChStrArr.h (inclua FwCommon.h)</dt> </dl>                                                    |
+| Biblioteca<br/>                  | <dl> <dt>FrameDyn.lib</dt> </dl>                                                                       |
 | DLL<br/>                      | <dl> <dt>FrameDynOS.dll; </dt> <dt>FrameDyn.dll</dt> </dl> |
 
 

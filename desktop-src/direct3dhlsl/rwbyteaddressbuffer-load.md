@@ -1,5 +1,5 @@
 ---
-title: 'Métodos de carga RWByteAddressBuffer:: RWByteAddressBuffer'
+title: Métodos RWByteAddressBuffer::RWByteAddressBuffer Load
 description: Obtém um valor de um RWByteAddressBuffer.
 ms.assetid: AD284B6B-A552-4036-954A-988A9593E0A4
 keywords:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 791737968529223b2899a5df23ffd6e2a359d9a4
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: f5ae121afc09f84dbc4e8e4b773bb3c028db1887f1391cdd485d55a28eb4aefd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104006777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095286"
 ---
-# <a name="rwbyteaddressbufferload-methods"></a>Métodos RWByteAddressBuffer:: Load
+# <a name="rwbyteaddressbufferload-methods"></a>Métodos RWByteAddressBuffer::Load
 
-Obtém um valor de um [**RWByteAddressBuffer**](sm5-object-rwbyteaddressbuffer.md).
+Obtém um valor de [**um RWByteAddressBuffer.**](sm5-object-rwbyteaddressbuffer.md)
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -29,8 +29,8 @@ Obtém um valor de um [**RWByteAddressBuffer**](sm5-object-rwbyteaddressbuffer.m
 
 | Método                                                         | Descrição                                                    |
 |:---------------------------------------------------------------|:---------------------------------------------------------------|
-| [**Carga (int, uint)**](rwbyteaddressbuffer-load-float-uint-.md) | Obtém um valor e retorna o status da operação.<br/> |
-| [**Carga (int)**](rwbyteaddressbuffer-load-float-.md)           | Obtém um valor.<br/>                                     |
+| [**Load(int,uint)**](rwbyteaddressbuffer-load-float-uint-.md) | Obtém um valor e retorna o status da operação.<br/> |
+| [**Load(int)**](rwbyteaddressbuffer-load-float-.md)           | Obtém um valor.<br/>                                     |
 
 
 

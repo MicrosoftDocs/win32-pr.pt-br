@@ -1,9 +1,9 @@
 ---
-title: Elemento Events (ProviderType)
+title: Elemento events (ProviderType)
 description: Contém uma lista dos eventos que o provedor define.
 ms.assetid: e6d0b70d-cd44-41f6-820b-b2f39577b282
 keywords:
-- evento EventLog do elemento Events
+- elemento events EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: de830101452d610bd96c68494446f01fed9a835f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ec3dfbf469d41da2597c2635b3cb7c0442e103e75327f9c2d636d879519b961c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055974"
 ---
-# <a name="events-providertype-element"></a>Elemento Events (ProviderType)
+# <a name="events-providertype-element"></a>Elemento events (ProviderType)
 
 Contém uma lista dos eventos que o provedor define.
 
@@ -30,7 +30,7 @@ Contém uma lista dos eventos que o provedor define.
  />
 ```
 
-O elemento **Events** é definido pelo tipo complexo [**ProviderType**](eventmanifestschema-providertype-complextype.md) .
+O **elemento** events é definido pelo [**tipo complexo ProviderType.**](eventmanifestschema-providertype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **Events** é definido pelo tipo complexo [**ProviderType**](eventman
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ O elemento **Events** é definido pelo tipo complexo [**ProviderType**](eventman
 **Elemento pai**
 </dt> <dt>
 
-[**provedor (EventType)**](eventmanifestschema-provider-eventstype-element.md)
+[**provider (EventsType)**](eventmanifestschema-provider-eventstype-element.md)
 </dt> </dl>
 
  

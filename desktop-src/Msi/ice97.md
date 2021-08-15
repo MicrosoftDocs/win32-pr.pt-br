@@ -4,12 +4,12 @@ ms.assetid: 76eeb238-02a1-43c1-a3d7-5178e3c3eaee
 title: ICE97
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34c41701ce04c0071d6599f888083dfbea4bfc0c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29575d533e945cef922110315cd3300f56fe62ae61b34c92de7175916e6657ea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105747550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119315236"
 ---
 # <a name="ice97"></a>ICE97
 
@@ -21,7 +21,7 @@ ICE97 posta os seguintes avisos.
 
 
 
-| Aviso de ICE97                                                                                                                                                                    | Descrição                                                               |
+| Aviso de ICE97                                                                                                                                                                    | Description                                                               |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | Este componente \[ 1 \] instala o componente compartilhado no mesmo diretório 2 que o \[ \] outro, que interrompe as regras de componente se ambos (ou mais) componentes são selecionados para instalação. | Dois componentes não devem isolar um componente compartilhado para o mesmo diretório. |
 

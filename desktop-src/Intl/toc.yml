@@ -1,43 +1,43 @@
 - name: Internacionalização para aplicativos do Windows
   href: international-support.md
   items:
-    - name: Introdução com desenvolvimento internacional do Windows
+    - name: Ponto de Partida com o Desenvolvimento Windows Internacional
       href: getting-started-with-international-development.md
       items:
-        - name: Entendendo a internacionalização
+        - name: Noções básicas sobre internacionalização
           href: understanding-internationalization.md
         - name: Lista de verificação de internacionalização
           href: internationalization-checklist.md
-        - name: Adicionando suporte à interface do usuário multilíngue a um aplicativo
+        - name: Adicionando Interface de Usuário Multilíngue suporte a um aplicativo
           href: creating-a-multilingual-user-interface-application.md
-    - name: Serviços de globalização
+    - name: Serviços de Globalização
       href: globalization-services.md
       items:
-        - name: Serviços lingüísticos estendidos
+        - name: Serviços Linguísticos Estendidos
           href: extended-linguistic-services.md
           items:
-            - name: Sobre os serviços lingüísticos estendidos
+            - name: Sobre os Serviços Linguísticos Estendidos
               href: about-extended-linguistic-services.md
               items:
-                - name: Detecção de Idioma da Microsoft
+                - name: Microsoft Detecção de Idioma
                   href: microsoft-language-detection.md
                 - name: Detecção de script da Microsoft
                   href: microsoft-script-detection.md
-                - name: Serviços de transliteração
+                - name: Serviços de Transliteração
                   href: transliteration-services.md
-            - name: Usando serviços lingüísticos estendidos
+            - name: Usando serviços linguísticos estendidos
               href: using-extended-linguistic-services.md
               items:
                 - name: Enumerando e liberando serviços
                   href: enumerating-and-freeing-services.md
                 - name: Solicitando reconhecimento de texto
                   href: requesting-text-recognition.md
-                - name: Fornecendo retornos de chamada para serviços ELSs
+                - name: Fornecendo retornos de chamada para serviços ELS
                   href: providing-callbacks-for-els-services.md
-            - name: Referência de serviços linguísticos estendidos
+            - name: Referência de Serviços Linguísticos Estendidos
               href: extended-linguistic-services-reference.md
               items:
-                - name: Funções de serviços linguísticas estendidos
+                - name: Funções de Serviços Linguísticos Estendidos
                   href: extended-linguistic-services-functions.md
                   items:
                     - name: PFN_MAPPINGCALLBACKPROC
@@ -52,7 +52,7 @@
                       href: /windows/desktop/api/Elscore/nf-elscore-mappinggetservices
                     - name: MappingRecognizeText
                       href: /windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext
-                - name: Estruturas de serviços linguísticas estendidos
+                - name: Estruturas de Serviços Linguísticos Estendidos
                   href: extended-linguistic-services-structures.md
                   items:
                     - name: MAPPING_DATA_RANGE
@@ -67,15 +67,15 @@
                       href: /windows/win32/api/Elscore/ns-elscore-mapping_service_info
         - name: ICU (Componentes Internacionais para Unicode)
           href: international-components-for-unicode--icu-.md
-        - name: Suporte ao idioma nacional
+        - name: Suporte a idiomas nacionais
           href: national-language-support.md
           items:
-            - name: Sobre o suporte ao idioma nacional
+            - name: Sobre o suporte a idiomas nacionais
               href: about-national-language-support.md
               items:
-                - name: Data e calendário
+                - name: Data e Calendário
                   href: date-and-calendar.md
-                - name: Formas de dígitos
+                - name: Formas de dígito
                   href: digit-shapes.md
                 - name: Localidades e idiomas
                   href: locales-and-languages.md
@@ -84,7 +84,7 @@
                       href: custom-locales.md
                     - name: Identificadores de idioma
                       href: language-identifiers.md
-                    - name: Nomes de idiomas
+                    - name: Nomes de idioma
                       href: language-names.md
                     - name: Identificadores de localidade
                       href: locale-identifiers.md
@@ -92,49 +92,49 @@
                       href: locale-names.md
                     - name: Pseudo-Locales
                       href: pseudo-locales.md
-                - name: Terminologia do NLS
+                - name: Terminologia de NLS
                   href: nls-terminology.md
                 - name: Classificação
                   href: sorting.md
-                - name: Data e hora
+                - name: Hora e data
                   href: time-and-date.md
-            - name: Usando o suporte ao idioma nacional
+            - name: Usando o suporte a idiomas nacionais
               href: using-national-language-support.md
               items:
-                - name: Chamando as &quot; funções de nome de localidade &quot;
+                - name: Chamando as &quot; funções de nome de &quot; localidade
                   href: calling-the--locale-name--functions.md
-                - name: Tratando IDNs (nomes de domínio internacionalizados)
+                - name: Manipulando IDNs (nomes de domínio internacionalizados)
                   href: handling-internationalized-domain-names--idns.md
-                - name: Lidando com a classificação em seus aplicativos
+                - name: Manipulando a classificação em seus aplicativos
                   href: handling-sorting-in-your-applications.md
                 - name: Mapeando dados de localidade
                   href: mapping-locale-data.md
-                - name: Recuperando e definindo informações de localidade
+                - name: Recuperando e configurando informações de localidade
                   href: retrieving-and-setting-locale-information.md
                 - name: Recuperando informações de data e hora
                   href: retrieving-time-and-date-information.md
                 - name: Gerenciamento de eras para o calendário japonês
                   href: era-handling-for-the-japanese-calendar.md
-                - name: Usando dados de localidade persistente
+                - name: Usando dados de localidade persistentes
                   href: using-persistent-locale-data.md
-                - name: Usando pseudo-locais para teste de possibilidade de localização
+                - name: Usando pseudo-localidades para teste de localizabilidade
                   href: using-pseudo-locales-for-localization-testing.md
                 - name: Usando a normalização Unicode para representar cadeias de caracteres
                   href: using-unicode-normalization-to-represent-strings.md
                 - name: Trabalhando com localidades personalizadas
                   href: working-with-custom-locales.md
-                - name: Exemplo de conversão de nome de domínio NLS-internacionalizado
+                - name: NLS – Exemplo de conversão de nome de domínio internacionalizado
                   href: nls--internationalized-domain-name--idn--conversion-sample.md
-                - name: NLS-exemplo de mitigação de nome de domínio internacionalizado
+                - name: NLS – Exemplo de mitigação de nome de domínio internacionalizado
                   href: nls--internationalized-domain-name--idn--mitigation-sample.md
-                - name: Exemplo de APIs baseadas no NLS-Name
+                - name: NLS – Exemplo de APIs baseadas em nome
                   href: nls--name-based-apis-sample.md
-                - name: NLS-exemplo de normalização Unicode
+                - name: NLS – Exemplo de normalização Unicode
                   href: nls--unicode-normalization-sample.md
-            - name: Referência de suporte ao idioma nacional
+            - name: Referência de suporte à linguagem nacional
               href: national-language-support-reference.md
               items:
-                - name: Funções de suporte ao idioma nacional
+                - name: Funções de suporte a idiomas nacionais
                   href: national-language-support-functions.md
                   items:
                     - name: AdjustCalendarDate
@@ -169,7 +169,7 @@
                       href: /windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoa
                     - name: EnumCalendarInfoEx
                       href: /windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoexa
-                    - name: EnumCalendarInfoExEx
+                    - name: EnumCalendarInfoExExEx
                       href: /windows/desktop/api/Winnls/nf-winnls-enumcalendarinfoexex
                     - name: EnumDateFormats
                       href: /windows/desktop/api/Winnls/nf-winnls-enumdateformatsa
@@ -177,7 +177,7 @@
                       href: /windows/desktop/api/Winnls/nf-winnls-enumdateformatsexa
                     - name: EnumDateFormatsExEx
                       href: /windows/desktop/api/Winnls/nf-winnls-enumdateformatsexex
-                    - name: EnumLanguageGroupLocales
+                    - name: Enumlanguagegrouplocales
                       href: /windows/desktop/api/Winnls/nf-winnls-enumlanguagegrouplocalesa
                     - name: EnumLanguageGroupLocalesProc
                       href: /windows/desktop/api/winnls/nc-winnls-langgrouplocale_enumproca
@@ -209,7 +209,7 @@
                       href: /windows/desktop/api/stringapiset/nf-stringapiset-foldstringw
                     - name: Geo_EnumNameProc
                       href: /windows/desktop/api/Winnls/nc-winnls-geo_enumnameproc
-                    - name: GetACP
+                    - name: Getacp
                       href: /windows/desktop/api/Winnls/nf-winnls-getacp
                     - name: GetCalendarDateFormatEx
                       href: getcalendardateformatex.md
@@ -219,7 +219,7 @@
                       href: /windows/desktop/api/Winnls/nf-winnls-getcalendarinfoex
                     - name: GetCalendarSupportedDateRange
                       href: getcalendarsupporteddaterange.md
-                    - name: GetCPInfo
+                    - name: Getcpinfo
                       href: /windows/desktop/api/Winnls/nf-winnls-getcpinfo
                     - name: GetCPInfoEx
                       href: /windows/desktop/api/Winnls/nf-winnls-getcpinfoexa
@@ -227,7 +227,7 @@
                       href: /windows/desktop/api/Winnls/nf-winnls-getcurrencyformata
                     - name: GetCurrencyFormatEx
                       href: /windows/desktop/api/Winnls/nf-winnls-getcurrencyformatex
-                    - name: GetDateFormat
+                    - name: Getdateformat
                       href: /windows/desktop/api/datetimeapi/nf-datetimeapi-getdateformata
                     - name: GetDateFormatEx
                       href: /windows/desktop/api/datetimeapi/nf-datetimeapi-getdateformatex
@@ -239,9 +239,9 @@
                       href: /windows/desktop/api/Winnls/nf-winnls-getgeoinfoa
                     - name: GetGeoInfoEx
                       href: /windows/desktop/api/Winnls/nf-winnls-getgeoinfoex
-                    - name: GetLocaleInfo
+                    - name: Getlocaleinfo
                       href: /windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa
-                    - name: GetLocaleInfoEx
+                    - name: Getlocaleinfoex
                       href: /windows/desktop/api/Winnls/nf-winnls-getlocaleinfoex
                     - name: GetNLSVersion
                       href: /windows/desktop/api/Winnls/nf-winnls-getnlsversion
@@ -269,7 +269,7 @@
                       href: /windows/desktop/api/Winnls/nf-winnls-getsystemdefaultlocalename
                     - name: GetThreadLocale
                       href: /windows/desktop/api/Winnls/nf-winnls-getthreadlocale
-                    - name: GetTimeFormat
+                    - name: Gettimeformat
                       href: /windows/desktop/api/datetimeapi/nf-datetimeapi-gettimeformata
                     - name: GetTimeFormatEx
                       href: /windows/desktop/api/datetimeapi/nf-datetimeapi-gettimeformatex
@@ -307,7 +307,7 @@
                       href: /windows/desktop/api/Winnls/nf-winnls-isvalidnlsversion
                     - name: LCIDToLocaleName
                       href: /windows/desktop/api/Winnls/nf-winnls-lcidtolocalename
-                    - name: LCMapString
+                    - name: Lcmapstring
                       href: /windows/desktop/api/Winnls/nf-winnls-lcmapstringa
                     - name: LCMapStringEx
                       href: /windows/desktop/api/Winnls/nf-winnls-lcmapstringex
@@ -315,7 +315,7 @@
                       href: /windows/desktop/api/Winnls/nf-winnls-loadstringbyreference
                     - name: LocaleNameToLCID
                       href: /windows/desktop/api/Winnls/nf-winnls-localenametolcid
-                    - name: Normalizestring
+                    - name: NormalizeString
                       href: /windows/desktop/api/Winnls/nf-winnls-normalizestring
                     - name: NotifyUILanguageChange
                       href: /windows/desktop/api/Winnls/nf-winnls-notifyuilanguagechange
@@ -350,7 +350,7 @@
                       href: /windows/desktop/api/Winnt/nf-winnt-langidfromlcid
                     - name: MAKELANGID
                       href: /windows/desktop/api/Winnt/nf-winnt-makelangid
-                    - name: MAKELCID
+                    - name: Makelcid
                       href: /windows/desktop/api/Winnt/nf-winnt-makelcid
                     - name: MAKESORTLCID
                       href: /windows/desktop/api/Winnt/nf-winnt-makesortlcid
@@ -362,7 +362,7 @@
                       href: /windows/desktop/api/Winnt/nf-winnt-sortversionfromlcid
                     - name: SUBLANGID
                       href: /windows/desktop/api/Winnt/nf-winnt-sublangid
-                - name: Estruturas de suporte ao idioma nacional
+                - name: Estruturas de suporte a idiomas nacionais
                   href: national-language-support-structures.md
                   items:
                     - name: CALDATETIME
@@ -392,7 +392,7 @@
                       href: /windows/desktop/api/Winnls/ne-winnls-sysgeotype
                     - name: SYSNLS_FUNCTION
                       href: /windows/desktop/api/Winnls/ne-winnls-sysnls_function
-                - name: Constantes de suporte ao idioma nacional
+                - name: Constantes de suporte à linguagem nacional
                   href: national-language-support-constants.md
                   items:
                     - name: Identificadores de calendário
@@ -403,7 +403,7 @@
                       href: day--month--year--and-era-format-pictures.md
                     - name: 'Imagens de formato de hora, minuto e segundo'
                       href: hour--minute--and-second-format-pictures.md
-                    - name: Constantes e cadeias de caracteres de identificador de linguagem
+                    - name: Constantes e cadeias de caracteres do identificador de idioma
                       href: language-identifier-constants-and-strings.md
                     - name: Constantes de informações de localidade
                       href: locale-information-constants.md
@@ -416,7 +416,7 @@
                           href: locale-allow-neutral-names.md
                         - name: LOCALE_ALTERNATE_SORTS
                           href: locale-alternate-sorts.md
-                        - name: Constantes LOCALE_CUSTOM *
+                        - name: constantes LOCALE_CUSTOM*
                           href: locale-custom-constants.md
                         - name: LOCALE_FONTSIGNATURE
                           href: locale-fontsignature.md
@@ -434,7 +434,7 @@
                           href: locale-idate.md
                         - name: LOCALE_IDAYLZERO
                           href: locale-idaylzero.md
-                        - name: Constantes LOCALE_IDEFAULT *
+                        - name: constantes LOCALE_IDEFAULT*
                           href: locale-idefault-constants.md
                         - name: LOCALE_IDIGITS
                           href: locale-idigits.md
@@ -460,11 +460,11 @@
                           href: locale-imonlzero.md
                         - name: LOCALE_INEGATIVEPERCENT
                           href: locale-inegativepercent.md
-                        - name: Constantes LOCALE_INEG *
+                        - name: constantes LOCALE_INEG*
                           href: locale-ineg-constants.md
                         - name: LOCALE_INEUTRAL
                           href: locale-ineutral.md
-                        - name: LOCALE_INVARIANT
+                        - name: Locale_invariant
                           href: locale-invariant.md
                         - name: LOCALE_IOPTIONALCALENDAR
                           href: locale-ioptionalcalendar.md
@@ -472,7 +472,7 @@
                           href: locale-ipapersize.md
                         - name: LOCALE_IPOSITIVEPERCENT
                           href: locale-ipositivepercent.md
-                        - name: Constantes LOCALE_IPOS *
+                        - name: constantes LOCALE_IPOS*
                           href: locale-ipos-constants.md
                         - name: LOCALE_IREADINGLAYOUT
                           href: locale-ireadinglayout.md
@@ -486,23 +486,23 @@
                           href: locale_iuseutf8legacyacp.md
                         - name: LOCALE_IUSEUTF8LEGACYOEMCP
                           href: locale_iuseutf8legacyoemcp.md
-                        - name: Constantes LOCALE_NAME *
+                        - name: constantes LOCALE_NAME*
                           href: locale-name-constants.md
                         - name: LOCALE_NEUTRAL
                           href: locale-neutral.md
                         - name: LOCALE_NEUTRALDATA
                           href: locale-neutraldata.md
-                        - name: LOCALE_NOUSEROVERRIDE
+                        - name: Locale_nouseroverride
                           href: locale-nouseroverride.md
                         - name: LOCALE_REPLACEMENT
                           href: locale-replacement.md
-                        - name: Constantes LOCALE_RETURN *
+                        - name: constantes LOCALE_RETURN*
                           href: locale-return-constants.md
                         - name: LOCALE_S1159
                           href: locale-s1159.md
                         - name: LOCALE_S2359
                           href: locale-s2359.md
-                        - name: Constantes LOCALE_SABBREV *
+                        - name: constantes LOCALE_SABBREV*
                           href: locale-sabbrev-constants.md
                         - name: LOCALE_SCONSOLEFALLBACKNAME
                           href: locale-sconsolefallbackname.md
@@ -512,15 +512,15 @@
                           href: locale-scurrency.md
                         - name: LOCALE_SDATE
                           href: locale-sdate.md
-                        - name: Constantes LOCALE_SDAYNAME *
+                        - name: constantes LOCALE_SDAYNAME*
                           href: locale-sdayname-constants.md
                         - name: LOCALE_SDECIMAL
                           href: locale-sdecimal.md
                         - name: LOCALE_SDURATION
                           href: locale-sduration.md
-                        - name: Constantes LOCALE_SENG *
+                        - name: constantes LOCALE_SENG*
                           href: locale-seng-constants.md
-                        - name: Constantes LOCALE_SENGLISH *
+                        - name: constantes LOCALE_SENGLISH*
                           href: locale-senglish-constants.md
                         - name: LOCALE_SGROUPING
                           href: locale-sgrouping.md
@@ -528,7 +528,7 @@
                           href: locale-sietflanguage.md
                         - name: LOCALE_SINTLSYMBOL
                           href: locale-sintlsymbol.md
-                        - name: Constantes LOCALE_SISO *
+                        - name: constantes LOCALE_SISO*
                           href: locale-siso-constants.md
                         - name: LOCALE_SKEYBOARDSTOINSTALL
                           href: locale-skeyboardstoinstall.md
@@ -538,21 +538,21 @@
                           href: locale-slanguage.md
                         - name: LOCALE_SLIST
                           href: locale-slist.md
-                        - name: Constantes LOCALE_SLOCALIZED *
+                        - name: constantes LOCALE_SLOCALIZED*
                           href: locale-slocalized-constants.md
                         - name: LOCALE_SLONGDATE
                           href: locale-slongdate.md
-                        - name: Constantes LOCALE_SMON *
+                        - name: constantes LOCALE_SMON*
                           href: locale-smon-constants.md
                         - name: LOCALE_SMONTHDAY
                           href: locale-smonthday.md
-                        - name: Constantes LOCALE_SMONTHNAME *
+                        - name: constantes LOCALE_SMONTHNAME*
                           href: locale-smonthname-constants.md
                         - name: LOCALE_SNAME
                           href: locale-sname.md
                         - name: LOCALE_SNAN
                           href: locale-snan.md
-                        - name: Constantes LOCALE_SNATIVE *
+                        - name: constantes LOCALE_SNATIVE*
                           href: locale-snative-constants.md
                         - name: LOCALE_SNEGATIVESIGN
                           href: locale-snegativesign.md
@@ -580,7 +580,7 @@
                           href: locale-sshortdate.md
                         - name: LOCALE_SSHORTESTAM
                           href: locale-sshortestam.md
-                        - name: Constantes LOCALE_SSHORTESTDAYNAME *
+                        - name: constantes LOCALE_SSHORTESTDAYNAME*
                           href: locale-sshortestdayname-constants.md
                         - name: LOCALE_SSHORTESTPM
                           href: locale-sshortestpm.md
@@ -590,7 +590,7 @@
                           href: locale-ssort-constants.md
                         - name: LOCALE_STHOUSAND
                           href: locale-sthousand.md
-                        - name: Constantes LOCALE_STIME *
+                        - name: constantes LOCALE_STIME*
                           href: locale-stime-constants.md
                         - name: LOCALE_SUPPLEMENTAL
                           href: locale-supplemental.md
@@ -600,7 +600,7 @@
                           href: locale-system-default.md
                         - name: LOCALE_USE_CP_ACP
                           href: locale-use-cp-acp.md
-                        - name: LOCALE_USER_DEFAULT
+                        - name: Locale_user_default
                           href: locale-user-default.md
                         - name: LOCALE_WINDOWS
                           href: locale-windows.md
@@ -610,15 +610,15 @@
                       href: sort-order-identifiers.md
                     - name: Tabela de localizações geográficas
                       href: table-of-geographical-locations.md
-        - name: API de verificação ortográfica
+        - name: API de Verificação Ortagem
           href: spell-checker-api.md
           items:
-            - name: Sobre a API de verificação ortográfica
+            - name: Sobre a API de Verificação Ortagem
               href: about-the-spell-checker-api.md
-            - name: Referência de API de verificação ortográfica
+            - name: Referência da API de Verificação Ortgráfica
               href: spell-checker-api-reference.md
               items:
-                - name: Interfaces de verificação ortográfica
+                - name: Interfaces de verificação ortagem
                   href: spell-checker-interfaces.md
                   items:
                     - name: IComprehensiveSpellCheckProvider
@@ -769,7 +769,7 @@
               href: ime-window-class.md
             - name: Contexto de entrada
               href: input-context.md
-            - name: 'Janelas de status, composição e candidatos'
+            - name: 'Status, composição e candidatos Windows'
               href: status--composition--and-candidates-windows.md
         - name: Usando o Gerenciador de métodos de entrada
           href: using-input-method-manager.md
@@ -851,22 +851,22 @@
                   href: imr-documentfeed.md
                 - name: IMR_QUERYCHARPOSITION
                   href: imr-querycharposition.md
-                - name: IMR_RECONVERTSTRING
+                - name: Imr_reconvertstring
                   href: imr-reconvertstring.md
-            - name: Constantes do Gerenciador de método de entrada
+            - name: Constantes do Gerenciador de Métodos de Entrada
               href: input-method-manager-constants.md
               items:
-                - name: Valores da cadeia de caracteres de composição do IME
+                - name: Valores de cadeia de caracteres de composição do IME
                   href: ime-composition-string-values.md
                 - name: Valores do modo de conversão do IME
                   href: ime-conversion-mode-values.md
-                - name: Escapes do IME
+                - name: IME Escapes
                   href: ime-escapes.md
-                - name: Identificadores de teclas de acesso do IME
+                - name: Identificadores de chave quente do IME
                   href: ime-hot-key-identifiers.md
-                - name: Valores do modo de frase do IME
+                - name: Valores de modo de frase do IME
                   href: ime-sentence-mode-values.md
-            - name: Funções do Gerenciador de métodos de entrada
+            - name: Funções do Gerenciador de Métodos de Entrada
               href: input-method-manager-functions.md
               items:
                 - name: CreateIFECommonInstance
@@ -909,7 +909,7 @@
                   href: /windows/desktop/api/Imm/nf-imm-immgetcandidatewindow
                 - name: ImmGetCompositionFont
                   href: /windows/desktop/api/Imm/nf-imm-immgetcompositionfonta
-                - name: ImmGetCompositionString
+                - name: Immgetcompositionstring
                   href: /windows/desktop/api/Imm/nf-imm-immgetcompositionstringa
                 - name: ImmGetCompositionWindow
                   href: /windows/desktop/api/Imm/nf-imm-immgetcompositionwindow
@@ -971,7 +971,7 @@
                   href: /windows/desktop/api/Imm/nf-imm-immsimulatehotkey
                 - name: ImmUnregisterWord
                   href: /windows/desktop/api/Imm/nf-imm-immunregisterworda
-            - name: Interfaces do Gerenciador de métodos de entrada
+            - name: Interfaces do Gerenciador de Métodos de Entrada
               href: input-method-manager-interfaces.md
               items:
                 - name: IFECommon
@@ -992,13 +992,13 @@
                       href: /windows/desktop/api/Msime/nf-msime-ifedictionary-close
                     - name: Método de criação
                       href: /windows/desktop/api/Msime/nf-msime-ifedictionary-create
-                    - name: Método displayproperty
+                    - name: Método DisplayProperty
                       href: /windows/desktop/api/msime/nf-msime-ifedictionary-displayproperty
                     - name: Método ExistWord
                       href: /windows/desktop/api/Msime/nf-msime-ifedictionary-existword
                     - name: Método GetHeader
                       href: /windows/desktop/api/Msime/nf-msime-ifedictionary-getheader
-                    - name: Método getpós-execução
+                    - name: Método GetPosTable
                       href: /windows/desktop/api/Msime/nf-msime-ifedictionary-getpostable
                     - name: Método GetWords
                       href: /windows/desktop/api/Msime/nf-msime-ifedictionary-getwords
@@ -1015,7 +1015,7 @@
                   items:
                     - name: Método Close
                       href: /windows/desktop/api/Msime/nf-msime-ifelanguage-close
-                    - name: Método getconversion
+                    - name: Método GetConversion
                       href: /windows/desktop/api/Msime/nf-msime-ifelanguage-getconversion
                     - name: Método GetConversionModeCaps
                       href: /windows/desktop/api/Msime/nf-msime-ifelanguage-getconversionmodecaps
@@ -1037,7 +1037,7 @@
                       href: /previous-versions/windows/desktop/legacy/hh851787(v=vs.85)
                     - name: Método Initialize
                       href: /windows/desktop/api/Imepad/nf-imepad-iimepadapplet-initialize
-                    - name: Notificar método
+                    - name: Método Notify
                       href: /windows/desktop/api/Imepad/nf-imepad-iimepadapplet-notify
                     - name: Método Terminate
                       href: /windows/desktop/api/Imepad/nf-imepad-iimepadapplet-terminate
@@ -1302,7 +1302,7 @@
     - name: Interface do Usuário Multilíngue
       href: multilingual-user-interface.md
       items:
-        - name: Sobre a interface do usuário multilíngue
+        - name: sobre Interface de Usuário Multilíngue
           href: about-multilingual-user-interface.md
           items:
             - name: Entendendo o MUI
@@ -1312,7 +1312,7 @@
                   href: overview-of-mui.md
                 - name: Conceitos fundamentais do MUI explicados
                   href: mui-fundamental-concepts-explained.md
-                - name: Evolução do suporte do MUI em versões do Windows
+                - name: evolução do suporte a MUI em versões de Windows
                   href: evolution-of-mui-support-across-windows-versions.md
                 - name: Benefícios do MUI explicado
                   href: benefits-of-mui-explained.md
@@ -1328,7 +1328,7 @@
               href: development-of-mui-applications.md
             - name: Implantação do aplicativo
               href: application-deployment.md
-        - name: Usando a interface do usuário multilíngue
+        - name: usando Interface de Usuário Multilíngue
           href: using-multilingual-user-interface.md
           items:
             - name: Preparando recursos
@@ -1343,9 +1343,9 @@
             - name: Definindo preferências de idioma do aplicativo
               href: setting-application-language-preferences.md
               items:
-                - name: Configurações de idioma do sistema de suporte
+                - name: suporte ao idioma do sistema Configurações
                   href: supporting-system-language-settings.md
-                - name: Suporte a configurações de idioma Application-Specific
+                - name: suporte ao idioma do Application-Specific Configurações
                   href: supporting-application-specific-language-settings.md
                 - name: Filtrando linguagens em um aplicativo de console do MUI
                   href: filtering-languages-in-a-mui-console-application.md
@@ -1362,16 +1362,16 @@
               href: locating-non-win32-pe-resources.md
             - name: Localizando recursos e compilando o aplicativo
               href: localizing-resources-and-building-the-application.md
-            - name: 'MUI: exemplo de aplicativo de configurações do sistema'
+            - name: 'MUI: System Configurações aplicativo de exemplo'
               href: mui-system-settings-application-sample.md
-            - name: 'MUI: exemplo de configurações de Application-Specific (Windows Vista)'
+            - name: 'MUI: exemplo de Configurações de Application-Specific (Windows Vista)'
               href: mui-application-specific-settings-sample-vista.md
-            - name: 'MUI: exemplo de configurações de Application-Specific (pré-Windows Vista)'
+            - name: 'MUI: exemplo de Configurações de Application-Specific (pré-Windows Vista)'
               href: mui-application-specific-settings-sample-pre-vista.md
-        - name: Referência de interface do usuário multilíngue
+        - name: Interface de Usuário Multilíngue Referência
           href: multilingual-user-interface-reference.md
           items:
-            - name: Funções de interface do usuário multilíngüe
+            - name: Interface de Usuário Multilíngue Funções
               href: multilingual-user-interface-functions.md
               items:
                 - name: EnumUILanguages
@@ -1410,7 +1410,7 @@
                   href: /windows/desktop/api/Winnls/nf-winnls-setthreadpreferreduilanguages
                 - name: SetThreadUILanguage
                   href: /windows/desktop/api/Winnls/nf-winnls-setthreaduilanguage
-            - name: Macros de interface do usuário multilíngüe
+            - name: Interface de Usuário Multilíngue Macros
               href: multilingual-user-interface-macros.md
               items:
                 - name: FILEMUIINFO_GET_CULTURE
@@ -1427,7 +1427,7 @@
                   href: /windows/desktop/api/Winnls/nf-winnls-filemuiinfo_get_mui_typeid
                 - name: FILEMUIINFO_GET_MUI_TYPENAMES
                   href: /windows/desktop/api/Winnls/nf-winnls-filemuiinfo_get_mui_typenames
-            - name: Estruturas de interface do usuário multilíngüe
+            - name: Interface de Usuário Multilíngue Estruturas
               href: multilingual-user-interface-structures.md
               items:
                 - name: FILEMUIINFO
@@ -1476,7 +1476,7 @@
                   href: command-line-arguments.md
                 - name: Convenções para protótipos de função
                   href: conventions-for-function-prototypes.md
-                - name: Funções padrão C
+                - name: Funções C padrão
                   href: standard-c-functions.md
                 - name: Diferenças de função de cadeia de caracteres
                   href: string-function-differences.md
@@ -1484,7 +1484,7 @@
                   href: translation-between-string-types.md
                 - name: Tipos de dados do Windows para cadeias de caracteres
                   href: windows-data-types-for-strings.md
-        - name: Usando Unicode e conjuntos de caracteres
+        - name: Usando unicode e conjuntos de caracteres
           href: using-unicode-and-character-sets.md
           items:
             - name: Registrando classes de janela
@@ -1506,16 +1506,16 @@
                   href: using-escape-sequences-and-control-characters.md
                 - name: Usando separadores de linha e parágrafo
                   href: using-line-and-paragraph-separators.md
-                - name: Usando caracteres de não espaçamento e sinais diacríticos
+                - name: Usando caracteres sem espaçamento e diacríticas
                   href: using-nonspacing-characters-and-diacritics.md
                 - name: Usando cadeias de caracteres terminadas em nulo
                   href: using-null-terminated-strings.md
-            - name: 'Gravando, mapeando e classificando os caracteres EUDC e PUA'
+            - name: 'Escrevendo, mapeando e classificação de caracteres EUDC e PUA'
               href: writing-mapping-and-sorting-eudc-and-pua-characters.md
-        - name: Referência de conjunto de caracteres e Unicode
+        - name: Referência de Unicode e conjunto de caracteres
           href: unicode-and-character-set-reference.md
           items:
-            - name: Funções de conjunto de caracteres e Unicode
+            - name: Funções Unicode e conjunto de caracteres
               href: unicode-and-character-set-functions.md
               items:
                 - name: BytesToUnicode
@@ -1540,28 +1540,28 @@
                   href: /previous-versions/windows/desktop/legacy/dd374082(v=vs.85)
                 - name: WideCharToMultiByte
                   href: /windows/desktop/api/Stringapiset/nf-stringapiset-widechartomultibyte
-            - name: Macros Unicode e de conjunto de caracteres
+            - name: Macros Unicode e conjunto de caracteres
               href: unicode-and-character-set-macros.md
               items:
                 - name: TEXT
                   href: /windows/desktop/api/Winnt/nf-winnt-text
-            - name: Estruturas de conjunto de caracteres e Unicode
+            - name: Estruturas unicode e conjunto de caracteres
               href: unicode-and-character-set-structures.md
               items:
                 - name: CHARSETINFO
                   href: /windows/win32/api/Wingdi/ns-wingdi-charsetinfo
-                - name: FONTSIGNATURE
+                - name: Fontsignature
                   href: /windows/win32/api/Wingdi/ns-wingdi-fontsignature
                 - name: LOCALESIGNATURE
                   href: /windows/win32/api/Wingdi/ns-wingdi-localesignature
-            - name: Unicode e constantes de conjunto de caracteres
+            - name: Constantes unicode e conjunto de caracteres
               href: unicode-and-character-set-constants.md
               items:
-                - name: Página de código bitfields
+                - name: Campos de bits da página de código
                   href: code-page-bitfields.md
                 - name: Identificadores de página de código
                   href: code-page-identifiers.md
-                - name: Subconjunto Unicode bitfields
+                - name: Campos de bits do subconjunto Unicode
                   href: unicode-subset-bitfields.md
     - name: 'Considerações sobre segurança: recursos internacionais'
       href: security-considerations--international-features.md

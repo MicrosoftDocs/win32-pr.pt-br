@@ -1,7 +1,7 @@
 ---
-description: CGenericList. ~ CGenericList destruidor-método Destruitor.
+description: Destruidor CGenericList.~CGenericList – método destruidor.
 ms.assetid: a5594dd2-b29b-49d6-b4de-5074ba3d0ce3
-title: CGenericList. ~ CGenericList Destruitor (Wxlist. h)
+title: Destruidor CGenericList.~CGenericList (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,7 +23,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119697535"
 ---
-# <a name="cgenericlistcgenericlist-destructor"></a>Destruidor CGenericList. ~ CGenericList
+# <a name="cgenericlistcgenericlist-destructor"></a>Destruidor CGenericList.~CGenericList
 
 Método destruidor.
 
@@ -42,8 +42,8 @@ Método destruidor.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxlist. h (incluir Fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxlist.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

@@ -4,8 +4,8 @@ description: Representa um fluxo de resultados retornados de operações, como u
 ms.assetid: 8d8b461d-06a7-4600-8b68-2faf741a394b
 ms.tgt_platform: multiple
 keywords:
-- Objeto de enumerador Gerenciamento Remoto do Windows
-- Objeto Enumerator Gerenciamento Remoto do Windows, descrito
+- objeto de enumerador Gerenciamento Remoto do Windows
+- objeto Enumerator Gerenciamento Remoto do Windows, descrito
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ad2395ae0ba17b1f221cd0a6dc0f7517a89db71
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 83799c4c67ad0b0f7c1ad89c77c3abab5989f1231508757c47dfe4c1705d7e20
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051824"
 ---
 # <a name="enumerator-object"></a>Objeto Enumerator
 
@@ -120,7 +120,7 @@ End Sub
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
@@ -137,7 +137,7 @@ End Sub
 [Enumerando ou listando todas as instâncias de um recurso](enumerating-or-listing-all-instances-of-a-resource.md)
 </dt> <dt>
 
-[Criando scripts no Gerenciamento Remoto do Windows](scripting-in-windows-remote-management.md)
+[criando scripts no Gerenciamento Remoto do Windows](scripting-in-windows-remote-management.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: d064855b-8c10-476e-9570-cc3ab48ae998
 title: Tabela de _Tables
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d2dc3ebafd969a07676f64f674f76c3e16ebe059
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 10c251693d89bb23634b222518e98dba270856e672362bcdc9acddd3c0b86c56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013314"
 ---
 # <a name="_tables-table"></a>\_Tabela de tabelas
 
@@ -21,7 +21,7 @@ A \_ tabela tabelas tem a seguinte coluna.
 
 | Coluna | Tipo             | Chave | Nullable |
 |--------|------------------|-----|----------|
-| Nome   | [Text](text.md) | S   | N        |
+| Nome   | [Text](text.md) | Y   | N        |
 
 
 
@@ -40,7 +40,7 @@ Nome de uma das tabelas.
 
 ## <a name="remarks"></a>Comentários
 
-Como a \_ tabela tabelas é uma tabela do sistema que não pode ser modificada por meio de consultas SQL, você não pode obter as chaves primárias com a função [**MsiDatabaseGetPrimaryKeys**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasegetprimarykeysa) ou a [**Propriedade primarykeys**](database-primarykeys.md).
+como a \_ tabela tabelas é uma tabela do sistema que não pode ser modificada por meio de consultas SQL, não é possível obter as chaves primárias com a função [**MsiDatabaseGetPrimaryKeys**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasegetprimarykeysa) ou a [**propriedade primarykeys**](database-primarykeys.md).
 
  
 

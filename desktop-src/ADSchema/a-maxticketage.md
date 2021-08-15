@@ -1,11 +1,11 @@
 ---
-title: Atributo Max-ticket-age
-description: Esse atributo determina a quantidade máxima de tempo, em horas, que o tíquete de concessão de tíquete (TGT) de um usuário pode ser usado para a finalidade da autenticação Kerberos.
+title: Atributo Max-Ticket-Age
+description: Esse atributo determina a quantidade máxima de tempo, em horas, que o TGT (tíquete de concessão de tíquete) de um usuário pode ser usado para fins de autenticação Kerberos.
 ms.assetid: 54ab0f2b-31eb-45d7-9a43-e70dc78136b5
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo Max-ticket-age
-- Esquema de AD do atributo maxTicketAge
+- Esquema do AD do atributo Max-Ticket-Age
+- Esquema do AD do atributo maxTicketAge
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83d68bca2f8dd87d37be7215e26f549424cd32b9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d9c876bbab2b60d655464129d0a59aeda110f78d8e2514866a3bcf28a859cb3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301006"
 ---
-# <a name="max-ticket-age-attribute"></a>Atributo Max-ticket-age
+# <a name="max-ticket-age-attribute"></a>Atributo Max-Ticket-Age
 
-Esse atributo determina a quantidade máxima de tempo, em horas, que o tíquete de concessão de tíquete (TGT) de um usuário pode ser usado para a finalidade da autenticação Kerberos. Quando o TGT de um usuário expira, um novo deve ser solicitado ou o existente deve ser renovado. Por padrão, essa configuração é definida como 10 horas no objeto de Política de Grupo de domínio padrão (GPO).
+Esse atributo determina a quantidade máxima de tempo, em horas, que o TGT (tíquete de concessão de tíquete) de um usuário pode ser usado para fins de autenticação Kerberos. Quando o TGT de um usuário expira, um novo deve ser solicitado ou o existente deve ser renovado. Por padrão, essa configuração é definida como 10 horas no GPO (objeto Política de Grupo Domínio Padrão).
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | Duração máxima de tíquetes                       |
-| LDAP-Display-Name | maxTicketAge                         |
+| CN                | Idade máxima do tíquete                       |
+| Ldap-Display-Name | maxTicketAge                         |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.77                |
-| System-ID-GUID    | bf9679be-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf9679be-0de6-11d0-a285-00aa003049e2 |
 | Syntax            | [**Intervalo**](s-interval.md)       |
 
 
@@ -58,10 +58,10 @@ Esse atributo determina a quantidade máxima de tempo, em horas, que o tíquete 
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -79,10 +79,10 @@ Esse atributo determina a quantidade máxima de tempo, em horas, que o tíquete 
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -100,10 +100,10 @@ Esse atributo determina a quantidade máxima de tempo, em horas, que o tíquete 
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -121,10 +121,10 @@ Esse atributo determina a quantidade máxima de tempo, em horas, que o tíquete 
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -142,10 +142,10 @@ Esse atributo determina a quantidade máxima de tempo, em horas, que o tíquete 
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -163,10 +163,10 @@ Esse atributo determina a quantidade máxima de tempo, em horas, que o tíquete 
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |

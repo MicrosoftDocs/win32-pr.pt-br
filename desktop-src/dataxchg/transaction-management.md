@@ -1,109 +1,109 @@
 ---
-title: Gerenciamento de transações (troca de dados)
+title: Gerenciamento de transações (data Exchange)
 description: Este tópico discute como um cliente pode enviar transações para obter dados e serviços do servidor.
 ms.assetid: 2d08ffa3-cbd7-4806-b94f-979938322c38
 keywords:
-- Interface do usuário do Windows, troca dinâmica de dados (DDE)
-- Troca dinâmica de dados (DDE), transações
-- DDE (troca dinâmica de dados), transações
-- troca de dados, troca dinâmica de dados (DDE)
-- Interface do usuário do Windows, biblioteca de gerenciamento de troca dinâmica de dados (DDEML)
-- DDEML (biblioteca de gerenciamento de troca dinâmica de dados), transações
-- DDEML (biblioteca de gerenciamento de troca dinâmica de dados), transações
-- Data Exchange, biblioteca de gerenciamento de troca dinâmica de dados (DDEML)
-- Troca dinâmica de dados (DDE), transações de solicitação
-- DDE (troca dinâmica de dados), transações de solicitação
-- DDEML (biblioteca de gerenciamento de troca dinâmica de dados), transações de solicitação
-- DDEML (troca dinâmica de dados biblioteca de gerenciamento), transações de solicitação
-- Troca dinâmica de dados (DDE), reobter transações
-- DDE (troca dinâmica de dados), reobter transações
-- DDEML (biblioteca de gerenciamento de troca dinâmica de dados), transações de regestão
-- DDEML (biblioteca de gerenciamento de troca dinâmica de dados), transações de regestão
-- Troca dinâmica de dados (DDE), transações de aviso
-- DDE (troca dinâmica de dados), avisar transações
-- DDEML (biblioteca de gerenciamento de troca dinâmica de dados), transações de aviso
-- DDEML (biblioteca de gerenciamento de troca dinâmica de dados), transações de aviso
-- Troca dinâmica de dados (DDE), executar transações
-- DDE (troca dinâmica de dados), executar transações
-- DDEML (biblioteca de gerenciamento de troca dinâmica de dados), executar transações
-- DDEML (troca dinâmica de dados biblioteca de gerenciamento), executar transações
-- Troca dinâmica de dados (DDE), transações síncronas
-- DDE (troca dinâmica de dados), transações síncronas
-- DDEML (biblioteca de gerenciamento de troca dinâmica de dados), transações síncronas
-- DDEML (biblioteca de gerenciamento de troca dinâmica de dados), transações síncronas
-- Troca dinâmica de dados (DDE), transações assíncronas
-- DDE (troca dinâmica de dados), transações assíncronas
-- DDEML (biblioteca de gerenciamento de troca dinâmica de dados), transações assíncronas
-- DDEML (biblioteca de gerenciamento de troca dinâmica de dados), transações assíncronas
+- Windows Interface do Usuário,Dados Dinâmicos Exchange (DDE)
+- Dados Dinâmicos Exchange (DDE), transações
+- DDE (Dados Dinâmicos Exchange), transações
+- troca de dados, Dados Dinâmicos Exchange (DDE)
+- Windows Interface do Usuário,Dados Dinâmicos Exchange DDEML (Biblioteca de Gerenciamento de Dados Dinâmicos Exchange)
+- DDEML (biblioteca de gerenciamento de Dados Dinâmicos Exchange), transações
+- DDEML (biblioteca Dados Dinâmicos Exchange gerenciamento de dados), transações
+- troca de dados, Dados Dinâmicos Exchange DDEML (Biblioteca de Gerenciamento de Dados)
+- Dados Dinâmicos Exchange (DDE), solicitação de transações
+- DDE (Dados Dinâmicos Exchange), solicitação de transações
+- DDEML (biblioteca de gerenciamento de Dados Dinâmicos Exchange), transações de solicitação
+- DDEML (biblioteca Dados Dinâmicos Exchange de gerenciamento), solicitação de transações
+- Dados Dinâmicos Exchange (DDE), transações de transações de transações
+- DDE (Dados Dinâmicos Exchange), transações de transações de transações
+- DDEML (Biblioteca de Gerenciamento do Dados Dinâmicos Exchange), transações de transações de
+- DDEML (biblioteca Dados Dinâmicos Exchange gerenciamento de dados), transações de transações de
+- Dados Dinâmicos Exchange (DDE), aconselhar transações
+- DDE (Dados Dinâmicos Exchange), aconselhar transações
+- DDEML (biblioteca de gerenciamento Dados Dinâmicos Exchange), aconselha transações
+- DDEML (biblioteca Dados Dinâmicos Exchange de gerenciamento), aconselha transações
+- Dados Dinâmicos Exchange (DDE), executar transações
+- DDE (Dados Dinâmicos Exchange), executar transações
+- DDEML (biblioteca de gerenciamento Dados Dinâmicos Exchange), executar transações
+- DDEML (biblioteca Dados Dinâmicos Exchange gerenciamento de dados), executar transações
+- Dados Dinâmicos Exchange (DDE), transações síncronas
+- DDE (Dados Dinâmicos Exchange), transações síncronas
+- DDEML (biblioteca de gerenciamento de Dados Dinâmicos Exchange), transações síncronas
+- DDEML (biblioteca Dados Dinâmicos Exchange de gerenciamento), transações síncronas
+- Dados Dinâmicos Exchange (DDE), transações assíncronas
+- DDE (Dados Dinâmicos Exchange), transações assíncronas
+- DDEML (biblioteca de gerenciamento de Dados Dinâmicos Exchange), transações assíncronas
+- DDEML (biblioteca Dados Dinâmicos Exchange gerenciamento de dados), transações assíncronas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 570aa48b4dcdbb31855b3e1b15a091908feb2ba4
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5065c9e909a4589cd7d2d157fc1151c2efd42a4ddfc3c29d84fd26f0ea184dea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128568"
 ---
-# <a name="transaction-management-data-exchange"></a>Gerenciamento de transações (troca de dados)
+# <a name="transaction-management-data-exchange"></a>Gerenciamento de transações (data Exchange)
 
 Depois de estabelecer uma conversa com um servidor, um cliente pode enviar transações para obter dados e serviços do servidor.
 
 Os tópicos a seguir descrevem os tipos de transações que os clientes podem usar para interagir com um servidor.
 
--   [Transação de solicitação](#request-transaction)
--   [Examinar transação](#poke-transaction)
--   [Transação de aviso](#advise-transaction)
--   [Executar transação](#execute-transaction)
+-   [Solicitação de transação](#request-transaction)
+-   [Transação transações de transações de transa](#poke-transaction)
+-   [Aconselhar transação](#advise-transaction)
+-   [Executar Transação](#execute-transaction)
 -   [Transações síncronas e assíncronas](#synchronous-and-asynchronous-transactions)
 -   [Controle de transação](#transaction-control)
 -   [Classes de transação](#transaction-classes)
 -   [Tipos de transação](#transaction-types)
 
-## <a name="request-transaction"></a>Transação de solicitação
+## <a name="request-transaction"></a>Solicitação de transação
 
-Um aplicativo cliente pode usar a transação de [**\_ solicitação XTYP**](xtyp-request.md) para solicitar um item de dados de um aplicativo de servidor. O cliente chama a função [**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction) , especificando **a \_ solicitação XTYP** como o tipo de transação e especificando o item de dados que o aplicativo precisa.
+Um aplicativo cliente pode usar a transação [**XTYP \_ REQUEST**](xtyp-request.md) para solicitar um item de dados de um aplicativo de servidor. O cliente chama a [**função DdeClientTransaction,**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction) especificando **SOLICITAÇÃO XTYP \_** como o tipo de transação e especificando o item de dados de que o aplicativo precisa.
 
-A biblioteca de gerenciamento de troca dinâmica de dados (DDEML) passa a transação de [**\_ solicitação XTYP**](xtyp-request.md) para o servidor, especificando o nome do tópico, o nome do item e o formato de dados solicitado pelo cliente. Se o servidor oferecer suporte ao tópico, item e formato solicitados, o servidor deverá retornar um identificador de dados que identifica o valor atual do item. O DDEML passa esse identificador para o cliente como o valor de retorno de [**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction). O servidor deverá retornar **NULL** se não der suporte ao tópico, ao item ou ao formato solicitado.
+A DDEML (biblioteca de gerenciamento de Dados Dinâmicos Exchange) passa a transação [**XTYP \_ REQUEST**](xtyp-request.md) para o servidor, especificando o nome do tópico, o nome do item e o formato de dados solicitados pelo cliente. Se o servidor for compatível com o tópico, o item e o formato solicitados, o servidor deverá retornar um identificador de dados que identifique o valor atual do item. O DDEML passa esse handle para o cliente como o valor de retorno de [**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction). O servidor deverá retornar **NULL** se não tiver suporte para o tópico, item ou formato solicitado.
 
-[**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction) usa o parâmetro *lpdwResult* para retornar um sinalizador Transaction-status para o cliente. Se o servidor não processar a transação [**de \_ solicitação XTYP**](xtyp-request.md) , **DdeClientTransaction** retornará **NULL** e *lpdwResult* apontará para o \_ sinalizador DDE FNOTPROCESSED ou DDE \_ FBUSY. Se o \_ sinalizador DDE FNOTPROCESSED for retornado, o cliente não poderá determinar por que o servidor não processou a transação.
+[**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction) usa o *parâmetro lpdwResult* para retornar um sinalizador de status de transação para o cliente. Se o servidor não processar a transação DE SOLICITAÇÃO [**XTYP, \_**](xtyp-request.md) **DdeClientTransaction** retornará **NULL** e *lpdwResult* aponta para o sinalizador \_ FNOTPROCESSED ou DDE \_ FBUSY DDE. Se o sinalizador FNOTPROCESSED de DDE for retornado, o cliente não poderá determinar por que o \_ servidor não processou a transação.
 
-Se um servidor não oferecer suporte à transação de [**\_ solicitação XTYP**](xtyp-request.md) , ele deverá especificar o \_ sinalizador de filtro CBF Fail \_ requests na função [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) . Esse sinalizador impede que o DDEML envie a transação para o servidor.
+Se um servidor não dá suporte à transação [**de \_ SOLICITAÇÃO XTYP,**](xtyp-request.md) ele deve especificar o sinalizador de filtro SOLICITAÇÕES DE FALHA CBF na \_ função \_ [**DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) Esse sinalizador impede que o DDEML envie a transação para o servidor.
 
-## <a name="poke-transaction"></a>Examinar transação
+## <a name="poke-transaction"></a>Transação transações de transações de transa
 
-Um cliente pode enviar dados não solicitados para um servidor usando o [**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction) para enviar uma [**transação \_ XTYP**](xtyp-poke.md) de envio para a função de retorno de chamada de um servidor.
+Um cliente pode enviar dados não solicitados para um servidor usando [**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction) para enviar uma transação [**XTYP? \_**](xtyp-poke.md)
 
-O aplicativo cliente primeiro cria um buffer que contém os dados a serem enviados ao servidor e, em seguida, passa um ponteiro para o buffer como um parâmetro para [**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction). Como alternativa, o cliente pode usar a função [**DdeCreateDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle) para obter um identificador de dados que identifica os dados e, em seguida, passar o identificador para **DdeClientTransaction**. Em ambos os casos, o cliente também especifica o nome do tópico, o nome do item e o formato de dados quando ele chama **DdeClientTransaction**.
+O aplicativo cliente primeiro cria um buffer que contém os dados a enviar para o servidor e, em seguida, passa um ponteiro para o buffer como um parâmetro [**para DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction). Como alternativa, o cliente pode usar a função [**DdeCreateDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle) para obter um identificador de dados que identifica os dados e, em seguida, passar o identificador para **DdeClientTransaction**. Em ambos os casos, o cliente também especifica o nome do tópico, o nome do item e o formato de dados quando chama **DdeClientTransaction**.
 
-O DDEML passa a [**transação \_ XTYP**](xtyp-poke.md) para o servidor, especificando o nome do tópico, o nome do item e o formato de dados solicitados pelo cliente. Para aceitar o item de dados e o formato, o servidor deve retornar \_ FACK DDE. Para rejeitar os dados, o servidor deve retornar \_ FNOTPROCESSED DDE. Se o servidor estiver muito ocupado para aceitar os dados, o servidor deverá retornar \_ FBUSY DDE.
+O DDEML passa a transação [**XTYP \_ CUT PARA**](xtyp-poke.md) O servidor, especificando o nome do tópico, o nome do item e o formato de dados solicitados pelo cliente. Para aceitar o item de dados e o formato, o servidor deve retornar O \_ FACK de DDE. Para rejeitar os dados, o servidor deve retornar DDE \_ FNOTPROCESSED. Se o servidor estiver muito ocupado para aceitar os dados, o servidor deverá retornar O DDE \_ FBUSY.
 
-Quando [**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction) retorna, o cliente pode usar o parâmetro *lpdwResult* para acessar o sinalizador Transaction-status. Se o sinalizador for DDE \_ FBUSY, o cliente deverá enviar a transação novamente mais tarde.
+Quando [**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction) retorna, o cliente pode usar o *parâmetro lpdwResult* para acessar o sinalizador transaction-status. Se o sinalizador for DDE \_ FBUSY, o cliente deverá enviar a transação novamente mais tarde.
 
-Se um servidor não oferecer suporte à [**transação \_ de XTYP**](xtyp-poke.md) de refazer, ele deverá especificar o sinalizador de filtro CBF Fail ensupports \_ \_ em [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea). Esse sinalizador impede que o DDEML envie essa transação para o servidor.
+Se um servidor não dá suporte à transação [**XTYP \_ IRON,**](xtyp-poke.md) ele deve especificar o sinalizador de filtro CBF \_ FAIL \_ WIDGETS [**em DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea). Esse sinalizador impede que o DDEML envie essa transação para o servidor.
 
-## <a name="advise-transaction"></a>Transação de aviso
+## <a name="advise-transaction"></a>Aconselhar transação
 
-Um aplicativo cliente pode usar o DDEML para estabelecer um ou mais links para itens em um aplicativo de servidor. Quando esse link é estabelecido, o servidor envia atualizações periódicas sobre o item vinculado ao cliente (normalmente, sempre que o valor do item associado ao aplicativo do servidor é alterado). A vinculação estabelece um loop de aviso entre os dois aplicativos que permanecem no local até que o cliente o encerre.
+Um aplicativo cliente pode usar o DDEML para estabelecer um ou mais links para itens em um aplicativo de servidor. Quando esse link é estabelecido, o servidor envia atualizações periódicas sobre o item vinculado para o cliente (normalmente, sempre que o valor do item associado ao aplicativo do servidor muda). A vinculação estabelece um loop de consultoria entre os dois aplicativos que permanecem em local até que o cliente o termine.
 
-Há dois tipos de loops de aviso: "quente" e "quente". Em um loop de aviso quente, o servidor envia imediatamente um identificador de dados que identifica o valor alterado. Em um loop de aviso quente, o servidor notifica o cliente de que o valor do item foi alterado, mas não envia o identificador de dados até que o cliente o solicite.
+Há dois tipos de loops de consultoria: "quente" e "quente". Em um loop de consultoria a quente, o servidor envia imediatamente um identificador de dados que identifica o valor alterado. Em um loop de consultoria warm, o servidor notifica o cliente de que o valor do item foi alterado, mas não envia o alça de dados até que o cliente o solicita.
 
-Um cliente pode solicitar um loop de aviso quente com um servidor especificando o tipo de transação [**XTYP \_ ADVSTART**](xtyp-advstart.md) em uma chamada para [**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction). Para solicitar um loop de aviso quente, o cliente deve combinar o \_ sinalizador NODATA XTYPF com o tipo de transação **XTYP \_ ADVSTART** . Em qualquer evento, o DDEML passa a transação **XTYP \_ ADVSTART** para a função de retorno de chamada do troca dinâmica de dados do servidor (DDE). A função de retorno de chamada DDE do servidor deve examinar os parâmetros que acompanham a transação **XTYP \_ ADVSTART** (incluindo o formato solicitado, o nome do tópico e o nome do item) e retornar **true** para permitir que o loop de aviso ou **false** o negue.
+Um cliente pode solicitar um loop de consultoria a quente com um servidor especificando o tipo de transação [**\_ ADVSTART XTYP**](xtyp-advstart.md) em uma chamada para [**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction). Para solicitar um loop de consultoria warm, o cliente deve combinar o sinalizador NODATA XTYPF com o tipo de transação \_ **\_ ADVSTART XTYP.** Em ambos os eventos, o DDEML passa a transação **\_ ADVSTART XTYP** para a função de retorno de chamada Dados Dinâmicos Exchange (DDE) do servidor. A função de retorno de chamada DDE do servidor deve examinar os parâmetros que acompanham a transação **DO XTYP \_ ADVSTART** (incluindo o formato solicitado, o nome do tópico e o nome do item) e retornar **TRUE** para permitir que o loop de consultoria ou **FALSE** o negue.
 
-Depois que um loop de aviso tiver sido estabelecido, o aplicativo de servidor deverá chamar a função [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) sempre que o valor do item associado ao nome do item solicitado for alterado. Essa chamada resulta em uma transação [**XTYP \_ ADVREQ**](xtyp-advreq.md) que está sendo enviada para a própria função de retorno de chamada DDE do servidor. A função de retorno de chamada DDE do servidor deve retornar um identificador de dados que identifica o novo valor do item de dados. Em seguida, o DDEML notifica o cliente de que o item especificado foi alterado enviando a transação [**XTYP \_ ADVDATA**](xtyp-advdata.md) para a função de retorno de chamada DDE do cliente.
+Depois que um loop de consultoria tiver sido estabelecido, o aplicativo de servidor deverá chamar a função [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) sempre que o valor do item associado ao nome do item solicitado mudar. Essa chamada faz com que uma [**transação XTYP \_ ADVREQ**](xtyp-advreq.md) seja enviada para a própria função de retorno de chamada DDE do servidor. A função de retorno de chamada DDE do servidor deve retornar um identificador de dados que identifica o novo valor do item de dados. Em seguida, o DDEML notifica o cliente de que o item especificado foi alterado enviando a transação [**\_ ADVDATA XTYP**](xtyp-advdata.md) para a função de retorno de chamada DDE do cliente.
 
-Se o cliente solicitou um loop de aviso quente, o DDEML passa o identificador de dados para o item alterado para o cliente durante a transação [**XTYP \_ ADVDATA**](xtyp-advdata.md) . Caso contrário, o cliente pode enviar uma transação de [**\_ solicitação XTYP**](xtyp-request.md) para obter o identificador de dados.
+Se o cliente solicitou um loop de consultoria a quente, o DDEML passa o controle de dados para o item alterado para o cliente durante a transação [**XTYP \_ ADVDATA.**](xtyp-advdata.md) Caso contrário, o cliente pode enviar uma transação [**\_ DE SOLICITAÇÃO XTYP**](xtyp-request.md) para obter o handle de dados.
 
-É possível que um servidor envie atualizações mais rapidamente do que um cliente pode processar os novos dados. A velocidade das atualizações pode ser um problema para um cliente que deve executar operações de processamento demoradas nos dados. Nesse caso, o cliente deve especificar o sinalizador XTYPF \_ ACKREQ ao solicitar um loop de aviso. Esse sinalizador faz com que o servidor aguarde até que o cliente confirme que recebeu e processou um item de dados antes que o servidor envie o próximo item de dados. Os loops de aviso que são estabelecidos com o \_ sinalizador XTYPF ACKREQ são mais robustos com servidores rápidos, mas podem ocasionalmente perder atualizações. Loops de aviso estabelecidos sem o \_ sinalizador XTYPF ACKREQ têm a garantia de não perder atualizações, desde que o cliente continue com o servidor.
+É possível que um servidor envie atualizações mais rapidamente do que um cliente possa processar os novos dados. A velocidade das atualizações pode ser um problema para um cliente que deve executar operações de processamento demoradas nos dados. Nesse caso, o cliente deve especificar o sinalizador ACKREQ do XTYPF \_ ao solicitar um loop de consultoria. Esse sinalizador faz com que o servidor aguarde até que o cliente confirme que recebeu e processou um item de dados antes que o servidor envie o próximo item de dados. Loops de consultoria estabelecidos com o sinalizador ACKREQ do XTYPF são mais robustos com servidores rápidos, mas ocasionalmente podem perder \_ atualizações. Loops de aviso estabelecidos sem o sinalizador ACKREQ do XTYPF têm a garantia de não perder atualizações, desde que o cliente continue \_ acompanhando o servidor.
 
-Um cliente pode encerrar um loop de aviso especificando o tipo de transação [**XTYP \_ ADVSTOP**](xtyp-advstop.md) em uma chamada para [**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction).
+Um cliente pode encerrar um loop de consultoria especificando o tipo de transação [**\_ ADVSTOP XTYP**](xtyp-advstop.md) em uma chamada para [**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction).
 
-Se um servidor não oferecer suporte a loops de aviso, ele deverá especificar o \_ sinalizador de filtro CBF falha \_ de avisos na função [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) . Esse sinalizador impede que o DDEML envie as transações [**XTYP \_ ADVSTART**](xtyp-advstart.md) e [**XTYP \_ ADVSTOP**](xtyp-advstop.md) para o servidor.
+Se um servidor não dá suporte a loops de consultoria, ele deve especificar o sinalizador de filtro CBF FAIL ADVISES na \_ \_ função [**DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) Esse sinalizador impede que o DDEML envie as transações [**\_ ADVSTART**](xtyp-advstart.md) E [**XTYP \_ ADVSTOP**](xtyp-advstop.md) para o servidor.
 
-## <a name="execute-transaction"></a>Executar transação
+## <a name="execute-transaction"></a>Executar Transação
 
-Um cliente pode usar a transação [**XTYP \_ Execute**](xtyp-execute.md) para fazer com que um servidor execute um comando ou uma série de comandos.
+Um cliente pode usar a [**transação EXECUTE \_ XTYP**](xtyp-execute.md) para fazer com que um servidor execute um comando ou uma série de comandos.
 
-Para executar um comando de servidor, o cliente primeiro cria um buffer que contém uma cadeia de caracteres de comando para o servidor executar e, em seguida, passa um ponteiro para o buffer ou um identificador de dados identificando o buffer quando ele chama [**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction). Outros parâmetros necessários incluem o identificador de conversa, o identificador de cadeia de caracteres de nome de item, a especificação de formato e o tipo de transação [**XTYP \_ Execute**](xtyp-execute.md) . Um aplicativo que cria um identificador de dados para transmitir dados de execução deve especificar **NULL** para o parâmetro *HszItem* da função [**DdeCreateDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle) e zero para o parâmetro *uFmt* .
+Para executar um comando de servidor, o cliente primeiro cria um buffer que contém uma cadeia de caracteres de comando para o servidor executar e, em seguida, passa um ponteiro para o buffer ou um identificador de dados que identifica o buffer quando ele chama [**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction). Outros parâmetros necessários incluem o identificador de conversa, o identificador de cadeia de caracteres do nome do item, a especificação de formato e o tipo de [**transação EXECUTE \_ XTYP.**](xtyp-execute.md) Um aplicativo que cria um identificador de dados para transmitir dados de execução deve especificar **NULL** para o parâmetro *HszItem* da função [**DdeCreateDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle) e zero para o parâmetro *uFmt* .
 
 O DDEML passa a transação [**XTYP \_ Execute**](xtyp-execute.md) para a função de retorno de chamada DDE do servidor e especifica o nome do formato, o identificador de conversa, o nome do tópico e o identificador de dados que identificam a cadeia de caracteres do comando. Se o servidor oferecer suporte ao comando, ele deverá usar a função [**DdeAccessData**](/windows/desktop/api/Ddeml/nf-ddeml-ddeaccessdata) para obter um ponteiro para a cadeia de caracteres de comando, executar o comando e retornar \_ FACK DDE. Se o servidor não oferecer suporte ao comando ou não puder concluir a transação, ele deverá retornar \_ FNOTPROCESSED DDE. O servidor deve retornar \_ FBUSY DDE se estiver muito ocupado para concluir a transação.
 
@@ -158,7 +158,7 @@ A classe de uma transação determina o valor de retorno que uma função de ret
 
 
 
-| Classe                | Retornar valor                                                     | Transação                                                                                                                                                                                                                                                                                                                                                                                    |
+| Classe                | Valor retornado                                                     | Transação                                                                                                                                                                                                                                                                                                                                                                                    |
 |----------------------|------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \_bool XCLASS         | **Verdadeiro** ou **falso**                                            | [**XTYP \_ ADVSTART**](xtyp-advstart.md)<br/> [**XTYP \_ conectar**](xtyp-connect.md)<br/>                                                                                                                                                                                                                                                                                            |
 | dados do XCLASS \_         | Um identificador de dados, o \_ código de retorno do bloco CBR ou **nulo**           | [**XTYP \_ ADVREQ**](xtyp-advreq.md)<br/> [**solicitação de XTYP \_**](xtyp-request.md)<br/> [**XTYP \_ WILDCONNECT**](xtyp-wildconnect.md)<br/>                                                                                                                                                                                                                                       |

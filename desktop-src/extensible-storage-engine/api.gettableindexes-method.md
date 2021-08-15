@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. GetTableIndexes'
-title: Método API. GetTableIndexes
+description: 'Saiba mais sobre: Método Api.GetTableIndexes'
+title: Método Api.GetTableIndexes
 TOCTitle: 'GetTableIndexes method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.Api.GetTableIndexes
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.gettableindexes(v=EXCHG.10)
@@ -14,14 +14,14 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 32a3587b23766345417ecb23b37e6d6daccb7f81
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c9cf1a72f6aee03c559ac97c5722908d6426b86ffb93789d14d860c8c5c373ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104554481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983816"
 ---
-# <a name="apigettableindexes-method"></a>Método API. GetTableIndexes
+# <a name="apigettableindexes-method"></a>Método Api.GetTableIndexes
 
 Incluir membros protegidos  
 Incluir membros herdados  
@@ -39,12 +39,12 @@ Incluir membros herdados
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><a href="dn292093(v=exchg.10).md">GetTableIndexes (JET_SESID, JET_TABLEID)</a></td>
+<td><a href="dn292093(v=exchg.10).md">GetTableIndexes(JET_SESID, JET_TABLEID)</a></td>
 <td>Itera em todos os índices na tabela, retornando informações sobre cada um.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><a href="dn292092(v=exchg.10).md">GetTableIndexes (JET_SESID, JET_DBID, Cadeia de caracteres)</a></td>
+<td><a href="dn292092(v=exchg.10).md">GetTableIndexes(JET_SESID, JET_DBID, String)</a></td>
 <td>Itera em todos os índices na tabela, retornando informações sobre cada um.</td>
 </tr>
 </tbody>
@@ -61,4 +61,4 @@ Parte superior
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

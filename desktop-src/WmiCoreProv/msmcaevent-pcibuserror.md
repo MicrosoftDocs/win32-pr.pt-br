@@ -1,5 +1,5 @@
 ---
-description: Representa um erro de barramento PCI de MCA (arquitetura de verificação de máquina). Essa classe está disponível somente para computadores que executam o em um sistema operacional Windows de 64 bits.
+description: Representa um erro de barramento PCI de MCA (arquitetura de verificação de máquina). essa classe está disponível somente para computadores que executam o em um sistema operacional Windows de 64 bits.
 ms.assetid: d8995909-a91b-4fcc-a37f-011d8df95ce8
 title: Classe MSMCAEvent_PCIBusError
 ms.topic: reference
@@ -33,16 +33,16 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: 7f2b800a07c0b979468a5df5a8be67e6adee39de
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b3ae66c684ab6a0e2573e2c82d6087a3405ce3d8bef5704bb392337699daaea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051274"
 ---
 # <a name="msmcaevent_pcibuserror-class"></a>\_Classe MSMCAEvent PCIBusError
 
-A classe **MSMCAEvent \_ PCIBusError** representa um erro de barramento PCI MCA (arquitetura de verificação de máquina). Essa classe está disponível somente para computadores que executam o em um sistema operacional Windows de 64 bits.
+A classe **MSMCAEvent \_ PCIBusError** representa um erro de barramento PCI MCA (arquitetura de verificação de máquina). essa classe está disponível somente para computadores que executam o em um sistema operacional Windows de 64 bits.
 
 A sintaxe a seguir é simplificada do código formato MOF (MOF) e inclui todas as suas propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem de MOF.
 
@@ -140,7 +140,7 @@ Nível de severidade do erro relatado.
 
 | Valor                                                                                                | Significado                |
 |------------------------------------------------------------------------------------------------------|------------------------|
-| <span id="0"></span><dl> <dt>**0**</dt> </dl> | Recuperado<br/> |
+| <span id="0"></span><dl> <dt>**0**</dt> </dl> | Recuperável<br/> |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | Fatais<br/>       |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | Corrigível<br/> |
 
@@ -258,8 +258,8 @@ Tipo de erro de barramento PCI.
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | Erro de paridade de dados.<br/>                               |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | Erro do sistema.<br/>                                    |
 | <span id="3"></span><dl> <dt>**3**</dt> </dl> | Anulação mestre.<br/>                                    |
-| <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | Tempo limite de barramento ou nenhum dispositivo presente (sem DEVSEL \# ).<br/> |
-| <span id="5"></span><dl> <dt>**05**</dt> </dl> | Erro de paridade de dados mestre.<br/>                        |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | Tempo limite de barramento ou nenhum dispositivo presente (sem DEVSEL \# ).<br/> |
+| <span id="5"></span><dl> <dt>**5**</dt> </dl> | Erro de paridade de dados mestre.<br/>                        |
 | <span id="6"></span><dl> <dt>**6**</dt> </dl> | Erro de paridade de endereço.<br/>                            |
 | <span id="7"></span><dl> <dt>**7**</dt> </dl> | Erro de paridade de comando.<br/>                            |
 
@@ -334,7 +334,7 @@ Tipo de dados: matriz **uint8**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Matriz de bytes que contém o registro de erro bruto conforme apresentado ao Windows pela camada de abstração do sistema (SAL). O número de elementos na matriz é especificado pela propriedade **size** .
+matriz de bytes que contém o registro de erro bruto, conforme apresentado a Windows pela camada de abstração do sistema (SAL). O número de elementos na matriz é especificado pela propriedade **size** .
 
 </dd> <dt>
 
@@ -375,7 +375,7 @@ Tipo de dados: **UInt32**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Tipo de mensagem de log de eventos. Essas mensagens correspondem aos códigos de mensagem de log de eventos usados para inserir mensagens de log de eventos pelo provedor de consumidor do log de eventos do Windows quando ele recebe um dos eventos.
+Tipo de mensagem de log de eventos. essas mensagens correspondem aos códigos de mensagem de log de eventos usados para inserir mensagens de log de eventos pelo provedor de consumidor Windows log de eventos quando ele recebe um dos eventos.
 
 </dd> <dt>
 

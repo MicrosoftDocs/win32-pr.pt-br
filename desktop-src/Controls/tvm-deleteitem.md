@@ -3,7 +3,7 @@ title: Mensagem de TVM_DELETEITEM (commctrl. h)
 description: Remove um item e todos os seus filhos de um controle de exibição de árvore. Você pode enviar essa mensagem explicitamente ou usando a macro TreeView \_ DeleteItem.
 ms.assetid: 225420a5-6ded-4786-a080-2817aa5f66c9
 keywords:
-- Controles de TVM_DELETEITEM de mensagens do Windows
+- controles de Windows de mensagem de TVM_DELETEITEM
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8783fd5acdf7319699cdc67cbb3ea075e4dbbc28
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7ef0165ffaf1f0f04b32cda43e21c97fed012ad6d61b32f8919612f8924f7c66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018684"
 ---
 # <a name="tvm_deleteitem-message"></a>\_Mensagem TVM DELETEITEM
 
@@ -39,7 +39,7 @@ Remove um item e todos os seus filhos de um controle de exibição de árvore. V
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
@@ -61,9 +61,9 @@ Se você excluir todos os itens de um controle de exibição de árvore que tem 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Método PauseZone da classe MicrosoftDNS_Zone
-description: O método PauseZone pausa a zona DNS.
+title: Método PauseZone da classe MicrosoftDNS_Zone dados
+description: O método PauseZone pausa a Zona DNS.
 ms.assetid: dcca318d-b6fc-4efa-a33f-f9dea1831395
 keywords:
-- DNS do método PauseZone
-- Método PauseZone DNS, classe MicrosoftDNS_Zone
-- MicrosoftDNS_Zone classe DNS, método PauseZone
+- Método PauseZone DNS
+- Método DNS pauseZone, MicrosoftDNS_Zone classe
+- MicrosoftDNS_Zone classe DNS , método PauseZone
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c4057beb37d5d1431bc1df68a54185bedd55f08
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a1939ed0607363c1786f09f96fef30c319aee67ed620ca9410cd69a9aabf272a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076650"
 ---
-# <a name="pausezone-method-of-the-microsoftdns_zone-class"></a>Método PauseZone da classe de \_ zona MicrosoftDNS
+# <a name="pausezone-method-of-the-microsoftdns_zone-class"></a>Método PauseZone da classe Zona \_ MicrosoftDNS
 
-O método **PauseZone** pausa a zona DNS.
+O **método PauseZone** pausa a Zona DNS.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,7 +40,7 @@ void PauseZone();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -53,7 +53,7 @@ Esse método não retorna um valor.
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
 | Namespace<br/>                | \\MicrosoftDNS raiz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -61,37 +61,37 @@ Esse método não retorna um valor.
 
 <dl> <dt>
 
-[**\_Zona MicrosoftDNS**](microsoftdns-zone.md)
+[**Zona \_ MicrosoftDNS**](microsoftdns-zone.md)
 </dt> <dt>
 
-[**Método AgeAllRecords da classe de \_ zona MicrosoftDNS**](microsoftdns-zone-ageallrecords.md)
+[**Método AgeAllRecords da classe de zona \_ MicrosoftDNS**](microsoftdns-zone-ageallrecords.md)
 </dt> <dt>
 
-[**Método ChangeZoneType da classe de \_ zona MicrosoftDNS**](microsoftdns-zone-changezonetype.md)
+[**Método ChangeZoneType da classe de zona \_ MicrosoftDNS**](microsoftdns-zone-changezonetype.md)
 </dt> <dt>
 
-[**Método createzone da classe de \_ zona MicrosoftDNS**](microsoftdns-zone-createzone.md)
+[**Método CreateZone da classe de zona \_ MicrosoftDNS**](microsoftdns-zone-createzone.md)
 </dt> <dt>
 
-[**Método ForceRefresh da classe de \_ zona MicrosoftDNS**](microsoftdns-zone-forcerefresh.md)
+[**Método ForceRefresh da classe de zona \_ MicrosoftDNS**](microsoftdns-zone-forcerefresh.md)
 </dt> <dt>
 
-[**Método getdistinguiname da classe de \_ zona MicrosoftDNS**](microsoftdns-zone-getdistinguishedname.md)
+[**Método GetDistinguishedName da classe de zona \_ MicrosoftDNS**](microsoftdns-zone-getdistinguishedname.md)
 </dt> <dt>
 
-[**Método ReloadZone da classe de \_ zona MicrosoftDNS**](microsoftdns-zone-reloadzone.md)
+[**Método ReloadZone da classe de zona \_ MicrosoftDNS**](microsoftdns-zone-reloadzone.md)
 </dt> <dt>
 
-[**Método ResetSecondaries da classe de \_ zona MicrosoftDNS**](microsoftdns-zone-resetsecondaries.md)
+[**Método ResetSecondaries da classe de zona \_ MicrosoftDNS**](microsoftdns-zone-resetsecondaries.md)
 </dt> <dt>
 
-[**Método ResumeZone da classe de \_ zona MicrosoftDNS**](microsoftdns-zone-resumezone.md)
+[**Método ResumeZone da classe de zona \_ MicrosoftDNS**](microsoftdns-zone-resumezone.md)
 </dt> <dt>
 
-[**Método UpdateFromDS da classe de \_ zona MicrosoftDNS**](microsoftdns-zone-updatefromds.md)
+[**Método UpdateFromDS da classe de zona \_ MicrosoftDNS**](microsoftdns-zone-updatefromds.md)
 </dt> <dt>
 
-[**Método WriteBackZone da classe de \_ zona MicrosoftDNS**](microsoftdns-zone-writebackzone.md)
+[**Método WriteBackZone da classe de zona \_ MicrosoftDNS**](microsoftdns-zone-writebackzone.md)
 </dt> </dl>
 
  

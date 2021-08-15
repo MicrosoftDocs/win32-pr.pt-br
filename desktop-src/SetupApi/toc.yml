@@ -470,7 +470,7 @@
               href: spfilenotify-targetexists.md
             - name: SPFILENOTIFY_TARGETNEWER
               href: spfilenotify-targetnewer.md
-        - name: Códigos de erro (API de instalação)
+        - name: Códigos de erro (API de Instalação)
           href: error-codes--setup-api-.md
-        - name: Chaves do registro Run e RunOnce
+        - name: Executar e executar chaves do Registro do RunOnce
           href: run-and-runonce-registry-keys.md

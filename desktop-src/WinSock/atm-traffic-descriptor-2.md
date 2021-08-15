@@ -1,19 +1,19 @@
 ---
-description: Esta seção lista o descritor de tráfego ATM.
+description: Esta seção lista o descritor de tráfego do ATM.
 ms.assetid: 8d15af95-2003-416e-b3b0-a9201972a899
-title: Descritor de tráfego ATM
+title: Descritor de tráfego do ATM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bb841cea1cacd3a613162a7e7da779872eb7ffc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 18cd4ec218f8f3a6719bb71a1eb2d6ef11179ca44878641aaf25906e6eae1dc6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097916"
 ---
-# <a name="atm-traffic-descriptor"></a>Descritor de tráfego ATM
+# <a name="atm-traffic-descriptor"></a>Descritor de tráfego do ATM
 
-Esta seção lista o descritor de tráfego ATM.
+Esta seção lista o descritor de tráfego do ATM.
 
 ``` syntax
 typedef struct {

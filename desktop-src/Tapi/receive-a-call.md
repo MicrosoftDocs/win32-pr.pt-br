@@ -4,23 +4,23 @@ ms.assetid: 77f6e1b5-b60e-4e8d-b747-7eceae8b0611
 title: Receber uma chamada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6a78ebf5b77569f8468a8b2c0a30217f4f7430e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b9e4ce02ec11a1373d16b9b9ebd0fba29313b1d532175894c6fd1b12a38e2bf3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060464"
 ---
 # <a name="receive-a-call"></a>Receber uma chamada
 
-O exemplo de código a seguir demonstra o tratamento de novas notificações de chamada, como localizar ou criar terminais apropriados para renderizar a mídia. Este exemplo é uma parte da instrução switch que um aplicativo deve implementar para manipulação de eventos. O próprio código pode estar contido na implementação de [**ITTAPIEventNotification:: Event**](/windows/desktop/api/Tapi3if/nf-tapi3if-ittapieventnotification-event)ou o método de **evento** pode postar uma mensagem em um thread de trabalho que contém a opção.
+O exemplo de código a seguir demonstra o tratamento de novas notificações de chamada, como localizar ou criar terminais apropriados para renderizar a mídia. Este exemplo é uma parte da instrução switch que um aplicativo deve implementar para manipulação de eventos. O próprio código pode estar contido na implementação de [**ITTAPIEventNotification::Event**](/windows/desktop/api/Tapi3if/nf-tapi3if-ittapieventnotification-event)ou o método Event pode postar uma mensagem em um thread de trabalho que contém a opção . 
 
-Antes de usar este exemplo de código, você deve executar as operações em [inicializar TAPI](initialize-tapi.md), [selecionar um endereço](select-an-address.md)e [registrar eventos](register-events.md).
+Antes de usar este exemplo de código, você deve executar as operações em [Inicializar TAPI,](initialize-tapi.md)Selecionar um [Endereço](select-an-address.md)e [Registrar Eventos](register-events.md).
 
-Além disso, você deve executar as operações ilustradas em [selecionar um terminal](select-a-terminal.md) seguindo a recuperação dos ponteiros de interface [**ITBasicCallControl**](/windows/desktop/api/tapi3if/nn-tapi3if-itbasiccallcontrol) e [**ITAddress**](/windows/desktop/api/tapi3if/nn-tapi3if-itaddress) .
+Além disso, você deve executar as operações ilustradas em Selecionar um Terminal após [a](select-a-terminal.md) recuperação dos ponteiros de interface [**ITBasicCallControl**](/windows/desktop/api/tapi3if/nn-tapi3if-itbasiccallcontrol) e [**ITAddress.**](/windows/desktop/api/tapi3if/nn-tapi3if-itaddress)
 
 > [!Note]  
-> Este exemplo não tem a verificação de erros e as versões apropriadas para o código de produção.
+> Este exemplo não tem a verificação de erro e as versões apropriadas para o código de produção.
 
  
 
