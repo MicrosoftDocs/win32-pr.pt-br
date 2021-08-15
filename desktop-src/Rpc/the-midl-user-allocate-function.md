@@ -4,12 +4,12 @@ description: A \_ função de alocação de usuário MIDL \_ é um procedimento 
 ms.assetid: 3def405c-da05-4cce-9dc4-499864a0de6e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12b2e3196de79992f5856b7117b25f05ad782d26
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: eb8e064fc16a303660be96a4a3c47aa361c4616f54a8cb825c1fce5334543fc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118924245"
 ---
 # <a name="the-midl_user_allocate-function"></a>A função de alocação de \_ usuário MIDL \_
 
@@ -44,8 +44,8 @@ void __RPC_FAR * __RPC_USER midl_user_allocate(size_t cBytes)
 > [!Note]  
 > Se o pacote RpcSs estiver habilitado (por exemplo, como resultado do uso do atributo \[ [**habilitar \_ alocação**](/windows/desktop/Midl/enable-allocate) \] ), use [**RpcSmAllocate**](/windows/desktop/api/Rpcndr/nf-rpcndr-rpcsmallocate) para alocar memória no lado do servidor. Para obter informações adicionais sobre \[ **habilitar \_ alocar** \] , consulte [referência de MIDL](/windows/desktop/Midl/midl-language-reference).
 
- 
+ 
 
- 
+ 
 
- 
+ 

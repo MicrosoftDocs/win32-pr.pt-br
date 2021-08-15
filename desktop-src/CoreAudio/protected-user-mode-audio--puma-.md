@@ -1,21 +1,21 @@
 ---
-description: O Windows Vista introduziu o áudio do modo de usuário protegido (PUMA), o mecanismo de áudio do modo de usuário no ambiente protegido (PE) que fornece um ambiente mais seguro para processamento e renderização de áudio.
+description: Windows O vista introduziu o áudio do modo de usuário protegido (PUMA), o mecanismo de áudio do modo de usuário no ambiente protegido (PE) que fornece um ambiente mais seguro para processamento e renderização de áudio.
 ms.assetid: 27a50026-9e48-48b1-9249-7528a97333c9
 title: Áudio do modo de usuário protegido (PUMA)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 233dc82109feb66472e66e4235031696937d70d2
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3f119094440297c90ae67c46d5a6b39b1ba6e2e9931b43b4bdda17393d0273dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077450"
 ---
 # <a name="protected-user-mode-audio-puma"></a>Áudio do modo de usuário protegido (PUMA)
 
-O Windows Vista introduziu o áudio do modo de usuário protegido (PUMA), o mecanismo de áudio do modo de usuário no ambiente protegido (PE) que fornece um ambiente mais seguro para processamento e renderização de áudio. Ele permite que apenas as saídas de áudio aceitáveis sejam habilitadas e garante que as saídas sejam desabilitadas de forma confiável. Para obter mais informações sobre PUMA, consulte [saída proteção de conteúdo e Windows Vista](https://download.microsoft.com/download/5/D/6/5D6EAF2B-7DDF-476B-93DC-7CF0072878E6/output_protect.doc).
+Windows O vista introduziu o áudio do modo de usuário protegido (PUMA), o mecanismo de áudio do modo de usuário no ambiente protegido (PE) que fornece um ambiente mais seguro para processamento e renderização de áudio. Ele permite que apenas as saídas de áudio aceitáveis sejam habilitadas e garante que as saídas sejam desabilitadas de forma confiável. para obter mais informações sobre PUMA, consulte [Proteção de Conteúdo de saída e Windows Vista](https://download.microsoft.com/download/5/D/6/5D6EAF2B-7DDF-476B-93DC-7CF0072878E6/output_protect.doc).
 
-O PUMA foi atualizado para o Windows 7 para fornecer os seguintes recursos:
+o PUMA foi atualizado para o Windows 7 para fornecer os seguintes recursos:
 
 -   Definir bits SCMS (sistema de gerenciamento de cópia serial) em pontos de extremidade S/PDIF e bits de Proteção de Conteúdo Digital de largura de banda alta (HDCP) em pontos de extremidade de HDMI (High-Definition Multimedia Interface).
 -   Habilitando controles de proteção SCMS e HDMI fora de um ambiente protegido (PE).
@@ -24,37 +24,37 @@ O PUMA foi atualizado para o Windows 7 para fornecer os seguintes recursos:
 
 O DRM (Rights Management digital) fornece a capacidade de empacotar dados de mídia em um contêiner seguro e anexar regras de uso ao conteúdo. Por exemplo, o provedor de conteúdo pode usar a **proteção de cópia** ou a **saída digital desabilitar** para desabilitar cópias digitais diretas ou a transmissão do sistema de PC.
 
-A pilha de áudio em determinados produtos da Microsoft oferece suporte a DRM implementando as regras de uso que regem a reprodução do conteúdo de áudio. Para reproduzir o conteúdo protegido, o driver de áudio subjacente deve ser um *Driver confiável*; ou seja, o driver deve ser certificado pelo logotipo para DRMLevel 1300. Para obter informações sobre como desenvolver drivers confiáveis, você pode usar interfaces que são definidas no Windows 2000 Driver Development Kit ("DDK") ou posterior. Os drivers desenvolvidos com o DDK implementarão as interfaces necessárias para DRM. Para obter mais informações, consulte [Digital Rights Management](/windows-hardware/drivers/audio/digital-rights-management).
+A pilha de áudio em determinados produtos da Microsoft oferece suporte a DRM implementando as regras de uso que regem a reprodução do conteúdo de áudio. Para reproduzir o conteúdo protegido, o driver de áudio subjacente deve ser um *Driver confiável*; ou seja, o driver deve ser certificado pelo logotipo para DRMLevel 1300. para obter informações sobre como desenvolver drivers confiáveis, você pode usar interfaces que são definidas no Windows 2000 Driver Development Kit ("DDK") ou posterior. Os drivers desenvolvidos com o DDK implementarão as interfaces necessárias para DRM. Para obter mais informações, consulte [Digital Rights Management](/windows-hardware/drivers/audio/digital-rights-management).
 
 Para renderizar o conteúdo protegido, o driver confiável deve verificar se a **proteção de cópia** e a **desabilitação da saída digital** estão definidas no conteúdo que flui pela pilha de áudio e responder às configurações de acordo.
 
 ### <a name="copy-protection-rule"></a>Copiar regra de proteção
 
-A **proteção de cópia** indica que cópias digitais diretas não são permitidas no sistema. O anexo B para o contrato de teste de WHQL foi atualizado para refletir as novas expectativas e os requisitos de um driver quando a **proteção de cópia** está definida no conteúdo. Para o Windows 7, o driver de classe de áudio HD interno está em conformidade com os requisitos mais recentes.
+A **proteção de cópia** indica que cópias digitais diretas não são permitidas no sistema. O anexo B para o contrato de teste de WHQL foi atualizado para refletir as novas expectativas e os requisitos de um driver quando a **proteção de cópia** está definida no conteúdo. para o Windows 7, o driver de classe de áudio HD interno está em conformidade com os requisitos mais recentes.
 
 Além de garantir que o conteúdo não tenha permissão para passar para outro componente ou ser armazenado em qualquer mídia de armazenamento não volátil que não seja autenticada pelo sistema DRM, o driver de áudio executa as seguintes tarefas quando a **proteção de cópia** é definida:
 
 -   O driver habilita HDCP em pontos de extremidade HDMI.
 -   Para interfaces S/PDIF, o driver valida que a combinação dos bits de código L, CP e Category indica um estado SCMS de "Copy Never", conforme definido no IEC 60958.
--   O L bit é definido como 0 e o código da categoria é definido como "mixer de sinal digital".
+-   O L bit é definido como 0 e o código da categoria é definido como "Digital Signal Mixer".
 
 A estrutura **DRMRIGHTS** , usada por drivers de áudio confiáveis, especifica os direitos de conteúdo de DRM atribuídos a um PIN de áudio KS ou a um objeto de fluxo do driver de classe de porta. O membro **CopyProtect** indica se a **proteção de cópia** está definida no conteúdo de áudio.
 
-Para o Windows 7, o uso de **CopyProtect** é mais estrito. O driver garante que os controles de proteção sejam definidos nas interfaces de áudio, HDCP está definido para saída de HDMI e SCMS é definido para a saída S/PDIF definindo o estado como "Copy Never".
+para Windows 7, o uso de **CopyProtect** é mais estrito. O driver garante que os controles de proteção sejam definidos nas interfaces de áudio, HDCP está definido para saída de HDMI e SCMS é definido para a saída S/PDIF definindo o estado como "Copy Never".
 
 ### <a name="digital-output-disable-rule"></a>Regra de desabilitação de saída digital
 
-A **desabilitação da saída digital** indica que o conteúdo não pode ser transmitido do sistema. No Windows 7, o driver interno de classe de áudio HD responde a essa configuração habilitando HDCP em pontos de extremidade HDMI. Isso é semelhante à resposta do driver para a configuração de **proteção de cópia** .
+A **desabilitação da saída digital** indica que o conteúdo não pode ser transmitido do sistema. no Windows 7, o driver interno de classe de áudio HD responde a essa configuração habilitando HDCP em pontos de extremidade HDMI. Isso é semelhante à resposta do driver para a configuração de **proteção de cópia** .
 
 ## <a name="enabling-content-protection-mechanisms-outside-of-a-protected-environment"></a>Habilitando mecanismos de proteção de conteúdo fora de um ambiente protegido
 
-O PUMA reside em um processo separado no PE (ambiente protegido). No Windows Vista, para usar os controles de proteção de conteúdo de áudio oferecidos pelo PUMA, um aplicativo de mídia deve estar em um PE. Como somente as APIs Media Foundation podem interagir com um PE, os controles de proteção de conteúdo são limitados a aplicativos que usam APIs Media Foundation para transmitir conteúdo de áudio.
+O PUMA reside em um processo separado no PE (ambiente protegido). no Windows Vista, para usar os controles de proteção de conteúdo de áudio oferecidos pelo PUMA, um aplicativo de mídia deve estar em um PE. Como somente as APIs Media Foundation podem interagir com um PE, os controles de proteção de conteúdo são limitados a aplicativos que usam APIs Media Foundation para transmitir conteúdo de áudio.
 
-No Windows 7, qualquer aplicativo pode acessar os controles de proteção de conteúdo fornecidos pela PUMA output Trust Authority (OTA), independentemente de estarem em um PE ou usando Media Foundation APIs para reprodução de áudio.
+no Windows 7, qualquer aplicativo pode acessar os controles de proteção de conteúdo fornecidos pela PUMA Output Trust Authority (OTA), independentemente de estarem em um PE ou usando APIs Media Foundation para reprodução de áudio.
 
 ## <a name="implementation-instructions"></a>Instruções de implementação
 
-As etapas a seguir são necessárias para que um aplicativo de áudio controle a proteção de conteúdo SCMS ou HDCP em um ponto de extremidade de áudio. As APIs de áudio com suporte são DirectShow, DirectSound e WASAPI.
+As etapas a seguir são necessárias para que um aplicativo de áudio controle a proteção de conteúdo SCMS ou HDCP em um ponto de extremidade de áudio. as APIs de áudio com suporte são DirectShow, DirectSound e WASAPI.
 
 Este código de exemplo usa as seguintes interfaces.
 
@@ -182,7 +182,7 @@ O aplicativo de mídia deve executar as seguintes tarefas.
 
 3.  Use o ponteiro [**IMMDevice**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdevice) para o ponto de extremidade retornado pelo processo de enumeração para ativar a API de streaming de áudio desejada e preparar para streaming. Diferentes APIs de áudio exigem uma preparação ligeiramente diferente.
     -   Para aplicativos de áudio do DShow:
-        1.  Crie um objeto COM do DirectShow chamando [**IMMDevice:: Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) e ESPECIFICANDO \_ IBaseFilter IID como o identificador de interface.
+        1.  crie um DirectShow objeto com chamando [**IMMDevice:: Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) e especificando IBaseFilter IID \_ como o identificador de interface.
             ```cpp
             IUnknown *pDShowFilter = NULL;
             ...
@@ -194,7 +194,7 @@ O aplicativo de mídia deve executar as seguintes tarefas.
 
             
 
-        2.  Crie um grafo de filtro do DirectShow com este objeto COM ativado pelo dispositivo. Para obter mais informações sobre esse processo, consulte "criando o grafo de filtro" na documentação do SDK do DirectShow.
+        2.  crie um DirectShow gráfico de filtro com este objeto com ativado pelo dispositivo. para obter mais informações sobre esse processo, consulte "criando o filtro Graph" na documentação do SDK do DirectShow.
     -   Para aplicativos de áudio DSound:
         1.  Crie um objeto COM DSound chamando [**IMMDevice:: Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) e especificando IID \_ IDirectSound8 como o identificador de interface.
             ```cpp

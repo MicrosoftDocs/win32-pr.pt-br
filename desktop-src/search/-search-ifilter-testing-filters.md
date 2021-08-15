@@ -1,51 +1,51 @@
 ---
-description: O conjunto de testes do IFilter valida seus manipuladores de filtro.
+description: O conjunto de testes IFilter valida seus manipuladores de filtro.
 ms.assetid: 5ee02af1-1dc9-4d21-868f-4c439970b1ba
 title: Testando manipuladores de filtro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d2a2b0b6a6728051ab22590a481ad23a7197692
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 62b77fe098c2413e4f582ebfd98985dd09bf0ab9b5fc2def85fc7e954804dc1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118463085"
 ---
 # <a name="testing-filter-handlers"></a>Testando manipuladores de filtro
 
-O conjunto de testes do [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) valida seus manipuladores de filtro. O conjunto de testes faz isso: chamando métodos [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) e verificando os valores retornados quanto à conformidade com a especificação da interface **IFilter** ; e verificar se os identificadores de partes são exclusivos e crescentes, se a interface do **IFilter** se comporta consistentemente após a reinicialização e se as chamadas de método **IFilter** com parâmetros inválidos retornam os códigos de erro esperados. Os programas do conjunto de testes também despejam a saída de um arquivo filtrado por um manipulador de filtro e verificam as informações de registro do **IFilter** no registro.
+O [**conjunto de testes IFilter**](/windows/win32/api/filter/nn-filter-ifilter) valida seus manipuladores de filtro. O conjunto de testes faz isso chamando métodos [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) e verificando os valores retornados quanto à conformidade com a especificação da interface **IFilter;** e verificar se os identificadores de partes são exclusivos e crescentes, que a interface **IFilter** se comporta de forma consistente após a nova inicialização e se todas as chamadas de método **IFilter** com parâmetros inválidos retornam códigos de erro esperados. Os programas do conjunto de testes também despejam a saída de um arquivo filtrado por um manipulador de filtro e verificam as informações de registro **de IFilter** no Registro.
 
-Este tópico é organizado da seguinte maneira:
+Este tópico é organizado da seguinte forma:
 
 - [Invocação de linha de comando](#command-line-invocation)
   - [ifilttst.exe](#ifilttstexe)
   - [filtdump.exe](#filtdumpexe)
   - [filtreg.exe](#filtregexe)
   - [ifilttst.ini](#ifilttstini)
-- [Procedimento de teste do IFilter](#ifilter-test-procedure)
+- [Procedimento de teste IFilter](#ifilter-test-procedure)
   - [Teste de validação](#validation-test)
   - [Teste de consistência](#consistency-test)
   - [Teste de entrada inválido](#invalid-input-test)
   - [Testando diferentes configurações de IFilter](#testing-different-ifilter-configurations)
-- [Garantindo que os itens registrados sejam indexados](#ensuring-registered-items-get-indexed)
+- [Garantir que os itens registrados são indexados](#ensuring-registered-items-get-indexed)
   - [Arquivo de log de exemplo](#sample-log-file)
-  - [Exemplo de arquivo de despejo](#sample-dump-file)
+  - [Arquivo de despejo de exemplo](#sample-dump-file)
 - [Recursos adicionais](#additional-resources)
 - [Tópicos relacionados](#related-topics)
 
 > [!NOTE]  
-> Se um novo manipulador de filtro para um tipo de arquivo estiver sendo instalado como uma substituição para um registro de filtro existente, o instalador deverá salvar o registro atual e restaurá-lo se o novo manipulador de filtro for desinstalado. Não há nenhum mecanismo para encadear filtros. Portanto, o novo manipulador de filtro é responsável por replicar qualquer funcionalidade necessária do filtro antigo.
+> Se um novo manipulador de filtro para um tipo de arquivo estiver sendo instalado como uma substituição para um registro de filtro existente, o instalador deverá salvar o registro atual e restaurá-lo se o novo manipulador de filtros for desinstalado. Não há nenhum mecanismo para encadear filtros. Portanto, o novo manipulador de filtro é responsável por replicar qualquer funcionalidade necessária do filtro antigo.
 
-## <a name="command-line-invocation"></a>Invocação de Command-Line
+## <a name="command-line-invocation"></a>invocação Command-Line dados
 
-O conjunto de testes do [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) consiste em três aplicativos de linha de comando – [ifilttst.exe](#ifilttstexe), [filtdump.exe](#filtdumpexe)e [filtreg.exe](#filtregexe) e um arquivo de inicialização [ifilttst.ini](#ifilttstini).
+O conjunto de testes [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) consiste em três aplicativos de linha de comando [ –ifilttst.exe](#ifilttstexe), [filtdump.exe](#filtdumpexe)e [filtreg.exe](#filtregexe) e um arquivo de inicialização, [ifilttst.ini](#ifilttstini).
 
 > [!IMPORTANT]
-> No Windows 7 e posterior, os filtros gravados em código gerenciado são explicitamente bloqueados. Os filtros devem ser escritos em código nativo devido a problemas de controle de versão do CLR (Common Language Runtime potencial) com o processo em que vários suplementos são executados.
+> No Windows 7 e posteriores, os filtros gravados em código gerenciado são explicitamente bloqueados. Os filtros DEVEM ser escritos em código nativo devido a possíveis problemas de versão do CLR (Common Language Runtime) com o processo em que vários complementos são executados.
 
 ### <a name="ifilttstexe"></a>ifilttst.exe
 
-O programa de ifilttst.exe executa vários testes para validar um manipulador de filtro. O exemplo a seguir ilustra como invocar o programa de ifilttst.exe da linha de comando:
+O ifilttst.exe executa vários testes para validar um manipulador de filtro. O exemplo a seguir ilustra como invocar o programa ifilttst.exe da linha de comando:
 
 
 ```
@@ -55,9 +55,9 @@ ifilttst /i test.htm /l /d /v 1
 O exemplo executa as seguintes tarefas:
 
 - Direciona o programa para filtrar o arquivo test.htm
-- Redireciona as mensagens de log para test.htm. log
-- Redireciona as mensagens de despejo para test.htm. dmp
-- Define o detalhamento como 1
+- Redireciona as mensagens de log para test.htm.log
+- Redireciona as mensagens de despejo para test.htm.dmp
+- Define o detalhes como 1
 
 Para que o comando anterior funcione, três arquivos devem estar localizados no diretório de trabalho atual: `test.htm` , [ifilttst.exe](#ifilttstexe)e [ifilttst.ini](#ifilttstini). As opções de linha de comando são listadas na tabela a seguir.
 
@@ -68,67 +68,67 @@ Para que o comando anterior funcione, três arquivos devem estar localizados no 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Switch e variáveis possíveis</th>
+<th>Alternar e possíveis variáveis</th>
 <th>Descrição</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><strong>/i nome do arquivo</strong></td>
-<td>O arquivo ou diretório de entrada a ser filtrado. O nome do arquivo pode conter os caracteres curinga <code>*</code> e <code>?</code> .</td>
+<td>O arquivo de entrada ou diretório a ser filtrado. O nome do arquivo pode conter os caracteres curinga <code>*</code> e <code>?</code> .</td>
 </tr>
 <tr class="even">
 <td><strong>/l</strong></td>
-<td>As mensagens de log são direcionadas para um arquivo em vez da tela. As mensagens de log descrevem os testes individuais executados e os resultados de aprovação/reprovação dos testes. O nome do arquivo de log é o mesmo que o nome do arquivo de entrada, mas com uma extensão. log.</td>
+<td>As mensagens de log são direcionadas para um arquivo em vez da tela. As mensagens de log descrevem os testes individuais executados e os resultados de aprovação/falha dos testes. O nome do arquivo de log é o mesmo que o nome do arquivo de entrada, mas com uma extensão .log.</td>
 </tr>
 <tr class="odd">
 <td><strong>/d</strong></td>
-<td>Mensagens de despejo são direcionadas para um arquivo em vez da tela. Mensagens de despejo descrevem o conteúdo das partes. A estrutura da parte é despejada quando o nível de detalhes é 3. O nome do arquivo de despejo é o mesmo que o nome do arquivo de entrada, mas com uma extensão. dmp.</td>
+<td>As mensagens de despejo são direcionadas para um arquivo em vez da tela. Mensagens de despejo descrevem o conteúdo das partes. A estrutura da parte é despejada quando o nível de detalhes é 3. O nome do arquivo de despejo é o mesmo que o nome do arquivo de entrada, mas com uma extensão .dmp.</td>
 </tr>
 <tr class="even">
 <td><strong>/-l</strong></td>
-<td>Desabilite o registro em log. Esse sinalizador substitui a <code>/l</code> opção.</td>
+<td>Desabilite o registro em log. Esse sinalizador substitui a <code>/l</code> opção .</td>
 </tr>
 <tr class="odd">
 <td><strong>/-d</strong></td>
-<td>Desabilitar despejo. Esse sinalizador substitui a <code>/d</code> opção.</td>
+<td>Desabilite o despejo. Esse sinalizador substitui a <code>/d</code> opção .</td>
 </tr>
 <tr class="even">
-<td><strong>/v inteiro</strong></td>
+<td><strong>/v integer</strong></td>
 <td>O nível de detalhes. O padrão é 3.
 <ul>
-<li>0-o teste registra somente as mensagens relacionadas a falhas de interface <a href="https://www.bing.com/search?q=<strong>IFilter</strong>"><strong>IFilter</strong></a> específicas. O teste despeja o conteúdo da parte.</li>
-<li>1-o teste Registra mensagens de aviso, bem como aquelas para o nível 0.</li>
-<li>2-o teste registra as mensagens relacionadas a testes que passaram e para o nível 1.</li>
-<li>3-o teste Registra mensagens informativas, bem como aquelas para o nível 2. Além disso, o teste despeja a estrutura da parte.</li>
+<li>0 - O teste registra apenas mensagens referentes a falhas de interface <a href="https://www.bing.com/search?q=<strong>IFilter</strong>"><strong>IFilter</strong></a> específicas. O teste despeja o conteúdo da parte.</li>
+<li>1 - O teste registra mensagens de aviso, bem como aquelas do nível 0.</li>
+<li>2 - O teste registra em logs mensagens referentes a testes que foram aprovados, bem como aquelas do nível 1.</li>
+<li>3 - O teste registra mensagens informativas, bem como as do nível 2. Além disso, o teste despeja a estrutura da parte.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><strong>/t inteiro</strong></td>
-<td>O número de threads a serem iniciados. O padrão é 1.</td>
+<td><strong>/t integer</strong></td>
+<td>O número de threads a iniciar. O padrão é 1.</td>
 </tr>
 <tr class="even">
-<td><strong>/r inteiro</strong>]</td>
-<td>Filtra recursivamente os subdiretórios. O parâmetro inteiro opcional especifica a profundidade para a recursão de exercício. Se nenhum inteiro for especificado, ou se o inteiro for 0, a recursão completa será assumida. Por padrão, a profundidade da recursão é 1.</td>
+<td><strong>/r integer</strong>]</td>
+<td>Filtra recursivamente subdireários. O parâmetro inteiro opcional especifica a profundidade para a qual a recursão deve ser exercido. Se nenhum inteiro for especificado ou se o inteiro for 0, será assumida a recursão completa. Por padrão, a profundidade de recursão é 1.</td>
 </tr>
 <tr class="odd">
-<td><strong>/c inteiro</strong></td>
-<td>O número de vezes para o loop. Se o inteiro for 0, o teste fará o loop infinitamente. Por padrão, o teste executa um loop apenas uma vez.</td>
+<td><strong>/c integer</strong></td>
+<td>O número de vezes a ser loop. Se o inteiro for 0, o teste será loop infinito. Por padrão, o teste é loop somente uma vez.</td>
 </tr>
 </tbody>
 </table>
 
 > [!NOTE]  
-> Você deve incluir um espaço entre a opção de linha de comando e o valor.
+> Você deve incluir um espaço entre a opção de linha de comando e o valor .
 
 ### <a name="filtdumpexe"></a>filtdump.exe
 
-O programa filtdump.exe carrega um manipulador de filtro para um documento especificado e imprime a saída produzida pela DLL do [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) . O exemplo a seguir ilustra como invocar o programa filtdump.exe.
+O filtdump.exe carrega um manipulador de filtro para um documento especificado e imprime a saída produzida pela [**DLL de IFilter.**](/windows/win32/api/filter/nn-filter-ifilter) O exemplo a seguir ilustra como invocar o filtdump.exe programa.
 
 ```
 filtdump filename.ext
 ```
-Filtdump.exe usa o método [ILoadFilter:: loadifilter](/windows/desktop/api/filtereg/nf-filtereg-iloadfilter-loadifilter) para carregar a DLL do [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) apropriada para a extensão de nome de arquivo especificada e imprime os resultados. Por exemplo, o comando a seguir instrui filtdump.exe a carregar o manipulador de filtro de smpfilt.dll para a extensão. SMP, extrair todo o texto e as propriedades do arquivo MyFile. SMP e imprimir os resultados.
+Filtdump.exe usa o [método ILoadFilter::LoadIFilter](/windows/desktop/api/filtereg/nf-filtereg-iloadfilter-loadifilter) para carregar a DLL [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) apropriada para a extensão de nome de arquivo especificada e imprime os resultados. Por exemplo, o comando a seguir instrui filtdump.exe carregar o manipulador de filtro smpfilt.dll para a extensão .smp, extrair todo o texto e propriedades do arquivo myfile.smp e imprimir os resultados.
 
 ```
 filtdump myfile.smp
@@ -136,24 +136,24 @@ filtdump myfile.smp
 
 ### <a name="filtregexe"></a>filtreg.exe
 
-O programa de filtreg.exe inspeciona as informações de instalação do [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) no registro. Você invoca o programa filtreg.exe na linha de comando, digitando seu nome, como no exemplo a seguir.
+O filtreg.exe inspecione as informações de instalação do [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) no Registro. Invoque o filtreg.exe da linha de comando digitando seu nome, como no exemplo a seguir.
 
 ```
 filtreg
 ```
 
-Filtreg.exe enumera todas as extensões de nome de arquivo que têm manipuladores de filtro associados a elas, imprimindo a extensão de nome de arquivo e o nome da dll do [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) para a extensão. Essa é uma maneira simples de verificar a instalação correta de um **IFilter**.
+Filtreg.exe enumera todas as extensões de nome de arquivo que têm manipuladores de filtro associados a elas imprimindo a extensão de nome de arquivo e o nome da [**DLL IFilter**](/windows/win32/api/filter/nn-filter-ifilter) para a extensão. Essa é uma maneira simples de verificar a instalação correta de um **IFilter.**
 
 ### <a name="ifilttstini"></a>ifilttst.ini
 
-Uma interface [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) é inicializada chamando o método [**IFilter:: init**](/windows/win32/api/filter/nf-filter-ifilter-init) . O método **IFilter:: init** usa os quatro parâmetros a seguir:
+Uma interface [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) é inicializada chamando o [**método IFilter::Init.**](/windows/win32/api/filter/nf-filter-ifilter-init) O **método IFilter::Init** assume os quatro parâmetros a seguir:
 
-1. *grfFlags*
+1. *Grfflags*
 2. *cAttributes*
 3. *aAttributes*
-4. *pdwFlags*
+4. *Pdwflags*
 
-O usuário do programa de ifilttst.exe do conjunto de testes do [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) pode especificar os valores para esses parâmetros em um arquivo chamado ifilttst.ini. A tabela a seguir descreve as entradas no arquivo de ifilttst.ini que especificam os três primeiros parâmetros (os parâmetros de entrada). Para obter um arquivo de exemplo, consulte [arquivo de ifilttst.ini de exemplo](#sample-ifilttstini-file).
+O usuário do programa ifilttst.exe do conjunto de testes [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) pode especificar os valores para esses parâmetros em um arquivo chamado ifilttst.ini. A tabela a seguir descreve as entradas no arquivo ifilttst.ini que especificam os três primeiros parâmetros (os parâmetros de entrada). Para obter um arquivo de exemplo, consulte [arquivo de ifilttst.ini de exemplo](#sample-ifilttstini-file).
 
 > [!NOTE]  
 > Não há nenhuma entrada de tabela para o parâmetro *pdwFlags* porque ele é um parâmetro de saída; Ele não precisa ter nenhum valor especial antes da chamada para o método [**IFilter:: init**](/windows/win32/api/filter/nf-filter-ifilter-init) .
@@ -218,7 +218,7 @@ O arquivo de ifilttst.ini é organizado em seções, com o nome da seção entre
 
 ## <a name="ifilter-test-procedure"></a>Procedimento de teste do IFilter
 
-Depois que o [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) tiver sido inicializado, o programa de ifilttst.exe conduzirá uma série de testes no **IFilter**. Além de seguir os procedimentos de teste do **IFilter** , certifique-se de que sua implementação do **IFilter** empregue práticas de código seguras. Consulte "práticas de código de segurança para o Windows Search" em [implementando manipuladores de filtro no Windows Search](-search-ifilter-constructing-filters.md).
+Depois que o [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) tiver sido inicializado, o programa de ifilttst.exe conduzirá uma série de testes no **IFilter**. Além de seguir os procedimentos de teste do **IFilter** , certifique-se de que sua implementação do **IFilter** empregue práticas de código seguras. consulte "práticas de código de segurança para Windows search" em [implementando manipuladores de filtro na pesquisa do Windows](-search-ifilter-constructing-filters.md).
 
 ### <a name="validation-test"></a>Teste de validação
 
@@ -266,9 +266,9 @@ O programa ifilttst.exe libera a interface [**IFilter**](/windows/win32/api/filt
 
 ## <a name="ensuring-registered-items-get-indexed"></a>Garantindo que os itens registrados sejam indexados
 
-O teste final de seu [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) garante que o **IFilter** seja registrado corretamente e que seja invocado para indexar os itens que você registrou para usá-lo. Você pode usar o Gerenciador de catálogo para iniciar a reindexação ou usar o Gerenciador de escopo de rastreamento (CSM) para configurar as regras padrão que indicam as URLs que você deseja que o indexador rastreie. Após a conclusão da indexação, use a interface do usuário do Windows Search para procurar uma cadeia de caracteres no conteúdo ou nas propriedades de itens. Se os itens foram indexados, eles serão exibidos nos resultados da pesquisa.
+O teste final de seu [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) garante que o **IFilter** seja registrado corretamente e que seja invocado para indexar os itens que você registrou para usá-lo. Você pode usar o Gerenciador de catálogo para iniciar a reindexação ou usar o Gerenciador de escopo de rastreamento (CSM) para configurar as regras padrão que indicam as URLs que você deseja que o indexador rastreie. após a conclusão da indexação, use a interface do usuário do Windows search para procurar uma cadeia de caracteres no conteúdo ou nas propriedades de itens. Se os itens foram indexados, eles serão exibidos nos resultados da pesquisa.
 
-Para obter mais informações sobre a reindexação, consulte [usando o Gerenciador de catálogo](-search-3x-wds-mngidx-catalog-manager.md) e [usando o Gerenciador de escopo de rastreamento](-search-3x-wds-extidx-csm.md). O exemplo de código ReindexMatchingUrls demonstra maneiras de especificar quais arquivos reindexar e como. O exemplo de código CrawlScopeCommandLine demonstra como definir opções de linha de comando para operações de indexação do Gerenciador de escopo de rastreamento (CSM). Ambos os exemplos de código estão disponíveis no [GitHub](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/WindowsSearch).
+Para obter mais informações sobre a reindexação, consulte [usando o Gerenciador de catálogo](-search-3x-wds-mngidx-catalog-manager.md) e [usando o Gerenciador de escopo de rastreamento](-search-3x-wds-extidx-csm.md). O exemplo de código ReindexMatchingUrls demonstra maneiras de especificar quais arquivos reindexar e como. O exemplo de código CrawlScopeCommandLine demonstra como definir opções de linha de comando para operações de indexação do Gerenciador de escopo de rastreamento (CSM). Ambos os exemplos de código estão disponíveis em [GitHub](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/WindowsSearch).
 
 ### <a name="sample-log-file"></a>Arquivo de log de exemplo
 
@@ -365,29 +365,29 @@ As nove primeiras linhas descrevem a estrutura da parte atual. O GUID e o PID co
 10. This is an HTML IFilter test page
 ```
 
-A próxima parte, começando na linha 11, tem um GUID diferente, correspondente ao `HTML IFilter` e um PID diferente, correspondente a um href HTML. Essa é uma propriedade interna de tipo de valor, exportada pelo `HTML IFilter` .
+A próxima parte, começando na linha 11, tem um GUID diferente, correspondente ao `HTML IFilter` e um PID diferente, correspondente a um href HTML. Essa é uma propriedade de tipo de valor interno, exportada pelo `HTML IFilter` .
 
-A próxima parte, começando na linha 21, tem o mesmo GUID e PID, mas seu estado de bloco é `VALUE` em vez de `TEXT` . Observe que o texto nessas duas últimas partes é o mesmo que para a primeira parte. Mas como o [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) foi projetado para três atributos (texto sem formatação, href HTML como texto e href HTML como um valor) a serem aplicados a essa frase, os resultados são emitidos em três partes separadas.
+A próxima parte, começando na linha 21, tem o mesmo GUID e PID, mas seu estado de parte é `VALUE` em vez de `TEXT` . Observe que o texto nessas duas últimas partes é igual ao da primeira parte. Mas como o [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) foi projetado para três atributos (texto sem-formato, HTML HREF como texto e HTML HREF como um valor) a serem aplicados a essa frase, os resultados são emitidos em três partes separadas.
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-- O exemplo de código [IFilterSample](-search-sample-ifiltersample.md) , disponível no [GitHub](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/WindowsSearch/IFilterSample), demonstra como criar uma classe base IFilter para implementar a interface [**IFilter**](/windows/win32/api/filter/nn-filter-ifilter) .
-- Para obter uma visão geral do processo de indexação, consulte [o processo de indexação](-search-indexing-process-overview.md).
-- Para obter uma visão geral dos tipos de arquivo, consulte [tipos de arquivo](../shell/fa-file-types.md).
-- Para consultar atributos de associação de arquivo para um tipo de arquivo, consulte [PerceivedTypes, SystemFileAssociations e registro de aplicativo](/previous-versions/windows/desktop/legacy/cc144150(v=vs.85)).
+- O exemplo de código [IFilterSample,](-search-sample-ifiltersample.md) disponível [no GitHub](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/WindowsSearch/IFilterSample), demonstra como criar uma classe base IFilter para implementar a interface [**IFilter.**](/windows/win32/api/filter/nn-filter-ifilter)
+- Para uma visão geral do processo de indexação, consulte [O processo de indexação](-search-indexing-process-overview.md).
+- Para uma visão geral dos tipos de arquivo, consulte [Tipos de arquivo](../shell/fa-file-types.md).
+- Para consultar atributos de associação de arquivo para um tipo de arquivo, consulte [PerceivedTypes, SystemFileAssociations e Registro de Aplicativo.](/previous-versions/windows/desktop/legacy/cc144150(v=vs.85))
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 [Desenvolvendo manipuladores de filtro](-search-ifilter-conceptual.md)
 
-[Sobre manipuladores de filtro no Windows Search](-search-ifilter-about.md)
+[Sobre manipuladores de filtro na Windows Search](-search-ifilter-about.md)
 
-[Práticas recomendadas para a criação de manipuladores de filtro no Windows Search](-search-3x-wds-extidx-filters.md)
+[Práticas recomendadas para criar manipuladores de filtro na Windows Search](-search-3x-wds-extidx-filters.md)
 
-[Retornando Propriedades de um manipulador de filtro](-search-ifilter-property-filtering.md)
+[Retornando propriedades de um manipulador de filtro](-search-ifilter-property-filtering.md)
 
-[Manipuladores de filtro que acompanham o Windows](-search-ifilter-implementations.md)
+[Manipuladores de filtros que são Windows](-search-ifilter-implementations.md)
 
-[Implementando manipuladores de filtro no Windows Search](-search-ifilter-constructing-filters.md)
+[Implementando manipuladores de filtro na Windows Search](-search-ifilter-constructing-filters.md)
 
 [Registrando manipuladores de filtro](-search-ifilter-registering-filters.md)

@@ -6,12 +6,12 @@ keywords:
 - RPC de chamada de procedimento remoto, práticas recomendadas, manutenção do estado entre chamadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 00090fb317cba8c33e7b60ac81762d7d21dd4dc9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e564acbb4748cd76988c1b064a58ede2169d3d20da4033774f3141883a7193bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103634797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118928581"
 ---
 # <a name="maintaining-state-on-the-server-between-calls"></a>Mantendo o estado no servidor entre as chamadas
 
@@ -29,9 +29,9 @@ Os coregistros desse design são os seguintes:
 
 Se o cliente falhar, o servidor receberá uma notificação e limpará seus identificadores de contexto usando o mecanismo de execução.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: LOCALE \_ SCOUNTRY
+description: SCOUNTRY de localidade \_
 ms.assetid: c7e8c9c9-b210-432a-8fa5-4cfa094e8c45
 title: LOCALE_SCOUNTRY
 ms.topic: article
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118391559"
 ---
-# <a name="locale_scountry"></a>LOCALE \_ SCOUNTRY
+# <a name="locale_scountry"></a>SCOUNTRY de localidade \_
 
-Preterido para Windows 7 e posterior. Nome completo localizado do país/região. Consulte [LOCALE \_ SLOCALIZEDCOUNTRYNAME](locale-slocalized-constants.md).
+preterido para o Windows 7 e posterior. Nome localizado completo do país/região. Consulte [localidade \_ SLOCALIZEDCOUNTRYNAME](locale-slocalized-constants.md).
 
  
 

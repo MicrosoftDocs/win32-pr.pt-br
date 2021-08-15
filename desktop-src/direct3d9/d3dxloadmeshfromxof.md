@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ac58e5e0c27fb3daaa4795f3d4c4a8488e6c3571
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 703ca249fd5ef8011824f9eb7afb5f833a3e4430a71f51c7ca72933a810b51a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044934"
 ---
 # <a name="d3dxloadmeshfromxof-function"></a>Função D3DXLoadMeshFromXof
 
@@ -119,7 +119,7 @@ Endereço de um ponteiro para uma interface [**ID3DXMesh**](id3dxmesh.md) , que 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

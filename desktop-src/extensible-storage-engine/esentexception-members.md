@@ -1,27 +1,27 @@
 ---
-description: 'Saiba mais sobre: membros do EsentException'
-title: Membros EsentException (Microsoft. ISAM. ESENT)
+description: 'Saiba mais sobre: Membros EsentException'
+title: Membros EsentException (Microsoft.Isam.Esent)
 TOCTitle: EsentException members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.EsentException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.esentexception_members(v=EXCHG.10)
 ms:contentKeyID: 55107214
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 8edc1bc32b4a4a1f3b4036fcd53dc09ab53a5a54
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 48021c85ea523bb5dc5749b02cc326f81493e12f5e9524e67ba0450deef4c098
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118779043"
 ---
-# <a name="esentexception-members"></a>Membros do EsentException
+# <a name="esentexception-members"></a>Membros EsentException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-Classe base para exceções de ESENT.
+Classe base para exceções ESENT.
 
-O tipo [EsentException](./esentexception-class.md) expõe os membros a seguir.
+O [tipo EsentException](./esentexception-class.md) expõe os membros a seguir.
 
 ## <a name="constructors"></a>Construtores
 
@@ -41,13 +41,13 @@ O tipo [EsentException](./esentexception-class.md) expõe os membros a seguir.
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn292119(v=exchg.10).md">EsentException (cadeia de caracteres)</a></td>
+<td><a href="dn292119(v=exchg.10).md">EsentException(String)</a></td>
 <td>Inicializa uma nova instância da classe EsentException com uma mensagem de erro especificada.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn292125(v=exchg.10).md">EsentException (SerializationInfo, StreamingContext)</a></td>
-<td>Inicializa uma nova instância da classe EsentException. Esse construtor é usado para desserializar uma exceção serializada.</td>
+<td><a href="dn292125(v=exchg.10).md">EsentException(SerializationInfo, StreamingContext)</a></td>
+<td>Inicializa uma nova instância da classe EsentException. Esse construtor é usado para desserlizar uma exceção serializada.</td>
 </tr>
 </tbody>
 </table>
@@ -73,12 +73,12 @@ Parte superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -98,7 +98,7 @@ Parte superior
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -135,7 +135,7 @@ Parte superior
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -150,12 +150,12 @@ Parte superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -175,4 +175,4 @@ Parte superior
 
 [Classe EsentException](./esentexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT](./microsoft.isam.esent-namespace.md)
+[Namespace Microsoft.Isam.Esent](./microsoft.isam.esent-namespace.md)

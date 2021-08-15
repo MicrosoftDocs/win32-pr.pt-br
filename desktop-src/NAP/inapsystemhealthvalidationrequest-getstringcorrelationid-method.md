@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 554a5a31f0aa46f6bcbd7a750662d47ab2c78040
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5818ebd219dd38633da92a269e63d5641f393371cfa67b6910844523c37929ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118939357"
 ---
 # <a name="inapsystemhealthvalidationrequestgetstringcorrelationid-method"></a>Método INapSystemHealthValidationRequest:: GetStringCorrelationId
 
@@ -54,15 +54,15 @@ Um ponteiro para um ponteiro para um [**StringCorrelationId**](nap-type-constant
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Outros códigos de erro específicos de COM também podem ser retornados.
 
 
 
-| Código de retorno                                                                                     | Descrição                                                        |
+| Código de retorno                                                                                     | Description                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>           | Operação bem-sucedida.<br/>                                    |
+| <dl> <dt>**S \_ OK**</dt> </dl>           | Êxito na operação.<br/>                                    |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Erro de permissões, acesso negado.<br/>                       |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | O limite de recursos do sistema não pôde executar a operação.<br/> |
 
@@ -77,7 +77,7 @@ Outros códigos de erro específicos de COM também podem ser retornados.
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                    |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                    |
 | parâmetro<br/>                   | <dl> <dt>NapSystemHealthValidator. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>NapSystemHealthValidator. idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qshvhost.dll</dt> </dl>                 |

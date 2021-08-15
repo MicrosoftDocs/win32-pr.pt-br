@@ -3,7 +3,7 @@ title: Mensagem de WM_CTLCOLORLISTBOX (WinUser. h)
 description: Enviado para a janela pai de uma caixa de listagem antes de o sistema desenhar a caixa de listagem. Ao responder a essa mensagem, a janela pai pode definir o texto e as cores de plano de fundo da caixa de listagem usando o identificador de contexto do dispositivo de exibição especificado.
 ms.assetid: e128e77f-e966-44c4-9f0e-efcf421b6c82
 keywords:
-- Controles de WM_CTLCOLORLISTBOX de mensagens do Windows
+- controles de Windows de mensagem de WM_CTLCOLORLISTBOX
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e949af76bd05aa9ad3a3e720c89be33cfe76ed8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1713c7251dfe837d5796b708fa5b77f0aa5e372c031c251199cb871dbd7c5608
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077660"
 ---
 # <a name="wm_ctlcolorlistbox-message"></a>Mensagem do WM \_ CTLCOLORLISTBOX
 
@@ -53,7 +53,7 @@ Identificador para a caixa de listagem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar um identificador para um pincel. O sistema usa o pincel para pintar o plano de fundo da caixa de listagem.
 
@@ -71,9 +71,9 @@ Se um procedimento de caixa de diálogo tratar essa mensagem, ele deverá conver
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: 918e4289f8f2c38af2a4a51bfe92f82a74b30b22
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 67b36703883825d4144037c54ffb55c00308ed1cfb8ee3e4b074d75d63bf7390
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118891542"
 ---
 # <a name="preparevolume-method-of-the-win32_encryptablevolume-class"></a>Método PrepareVolume da classe Win32 \_ EncryptableVolume
 
-O método **PrepareVolume** da classe [**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md) cria um volume do BitLocker com o tipo de sistema de arquivos especificado do volume de descoberta. Esse método deve ser chamado antes que o volume possa ser protegido com qualquer um dos métodos **ProtectKeyWith \** _.
+O método **PrepareVolume** da classe [**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md) cria um volume do BitLocker com o tipo de sistema de arquivos especificado do volume de descoberta. Esse método deve ser chamado antes que o volume possa ser protegido com qualquer um dos métodos **ProtectKeyWith \*** .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,7 +37,7 @@ uint32 PrepareVolume(
 
 <dl> <dt>
 
-_DiscoveryVolumeType * \[ in\]
+*DiscoveryVolumeType* \[ no\]
 </dt> <dd>
 
 Tipo: **cadeia de caracteres**
@@ -67,7 +67,7 @@ Inteiro que especifica o tipo de criptografia. Isso pode ser um dos valores a se
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **UInt32**
 
@@ -85,8 +85,8 @@ Se você não chamar esse método ao habilitar um volume do BitLocker, ele será
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows 7 Enterprise, Windows 7 Ultimate \[\]<br/>                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows 7 Enterprise, \[ somente os aplicativos de área de trabalho do Windows 7 Ultimate\]<br/>                               |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                                 |
 | Namespace<br/>                | \\MicrosoftVolumeEncryption de \\ segurança \\ cimv2 raiz<br/>                                             |
 | MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume. mof</dt> </dl> |
 

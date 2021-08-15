@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_TooltipTitle
-description: Identifica a propriedade \_ PKEY TooltipTitle da interface do \_ usuário.
+description: Identifica a \_ Propriedade PKEY TooltipTitle da interface do usuário \_ .
 ms.assetid: ed9f422d-a782-4950-a579-060185550891
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118437781"
 ---
-# <a name="ui_pkey_tooltiptitle"></a>Dica de \_ ferramenta PKEY \_ da interface do usuário
+# <a name="ui_pkey_tooltiptitle"></a>\_TooltipTitle PKEY \_ UI
 
-Identifica a propriedade \_ PKEY TooltipTitle da interface do \_ usuário.
+Identifica a \_ Propriedade PKEY TooltipTitle da interface do usuário \_ .
 
 ```
 propertyDescription
@@ -27,20 +27,20 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-A ferramenta PKEY da interface do usuárioTipTitle é usada por um aplicativo para consultar a dica de ferramenta de \_ guias, grupos, botões, itens da galeria e outros controles de Faixa \_ de Opções.
+A interface do usuário \_ PKEY \_ TooltipTitle é usada por um aplicativo para consultar a dica de ferramenta de guias, grupos, botões, itens da galeria e outros controles da faixa de tipos.
 
 O valor da propriedade é uma cadeia de caracteres restrita a qualquer sequência de caracteres, incluindo espaços em branco e caracteres de quebra de linha.
 
 > [!Note]  
-> Use a referência de caractere XML do Conjunto de Caracteres Universal (UCS) `&#xA;` para especificar uma quebra de linha.
+> Use a referência de caractere XML UCS (conjunto de caracteres universal) `&#xA;` para especificar uma quebra de linha.
 
  
 
-Não há suporte para o alinhamento à direita.
+Não há suporte para alinhamento à direita.
 
-O comprimento máximo da ferramenta PKEY da interface do \_ \_ usuárioTipTitle é ilimitado.
+O comprimento máximo da interface do usuário \_ PKEY \_ TooltipTitle é não associado.
 
-Para exibir um e ampersand em uma dica de ferramenta, escape da designação de caractere especial com um e ampersand duplo ( ), conforme `&&` mostrado no exemplo a seguir.
+Para exibir um e comercial em uma dica de ferramenta, escape a designação de caractere especial com um e comercial duplo ( `&&` ), conforme mostrado no exemplo a seguir.
 
 
 ```XML
@@ -56,10 +56,10 @@ Para exibir um e ampersand em uma dica de ferramenta, escape da designação de 
 [Propriedades do recurso](windowsribbon-reference-properties-resource.md)
 </dt> <dt>
 
-[**Command.TooltipTitle**](windowsribbon-element-command-tooltiptitle.md)
+[**Comando. TooltipTitle**](windowsribbon-element-command-tooltiptitle.md)
 </dt> <dt>
 
-[Dica \_ de ferramenta PKEY \_ da interface do usuárioDescription](windowsribbon-reference-properties-uipkey-tooltipdescription.md)
+[\_TooltipDescription PKEY \_ UI](windowsribbon-reference-properties-uipkey-tooltipdescription.md)
 </dt> </dl>
 
  

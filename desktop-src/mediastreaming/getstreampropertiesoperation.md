@@ -1,10 +1,10 @@
 ---
 title: Classe GetStreamPropertiesOperation
-description: Registra um manipulador de eventos que é invocado quando a operação assíncrona iniciada pelo GetStreamPropertiesAsync é concluída e fornece um método que retorna os resultados da operação.
+description: Registra um manipulador de eventos que é invocado quando a operação assíncrona iniciada por GetStreamPropertiesAsync é concluída e fornece um método que retorna os resultados da operação.
 ms.assetid: 1D1C9B73-9D7B-4886-AFA4-D35DF10367CD
 keywords:
-- API de streaming de mídia de classe GetStreamPropertiesOperation
-- API de streaming de mídia de classe GetStreamPropertiesOperation, descrita
+- API de Streaming de Mídia da classe GetStreamPropertiesOperation
+- Api de Streaming de Mídia da classe GetStreamPropertiesOperation, descrita
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "118473438"
 ---
 # <a name="getstreampropertiesoperation-class"></a>Classe GetStreamPropertiesOperation
 
-Registra um manipulador de eventos que é invocado quando a operação assíncrona iniciada pelo [**GetStreamPropertiesAsync**](/previous-versions/windows/desktop/legacy/hh829001(v=vs.85)) é concluída e fornece um método que retorna os resultados da operação.
+Registra um manipulador de eventos que é invocado quando a operação assíncrona iniciada por [**GetStreamPropertiesAsync**](/previous-versions/windows/desktop/legacy/hh829001(v=vs.85)) é concluída e fornece um método que retorna os resultados da operação.
 
 **GetStreamPropertiesOperation** tem estes tipos de membros:
 
@@ -32,13 +32,13 @@ Registra um manipulador de eventos que é invocado quando a operação assíncro
 
 ### <a name="methods"></a>Métodos
 
-A classe **GetStreamPropertiesOperation** tem esses métodos.
+A **classe GetStreamPropertiesOperation** tem esses métodos.
 
 
 
 | Método                                                        | Descrição                                                                                                                                          |
 |:--------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GetResults**](getstreampropertiesoperation-getresults.md) | Retorna os resultados da operação assíncrona iniciada pelo [**GetStreamPropertiesAsync**](/previous-versions/windows/desktop/legacy/hh829001(v=vs.85)).<br/> |
+| [**GetResults**](getstreampropertiesoperation-getresults.md) | Retorna os resultados da operação assíncrona iniciada por [**GetStreamPropertiesAsync.**](/previous-versions/windows/desktop/legacy/hh829001(v=vs.85))<br/> |
 
 
 
@@ -46,13 +46,13 @@ A classe **GetStreamPropertiesOperation** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **GetStreamPropertiesOperation** tem essas propriedades.
+A **classe GetStreamPropertiesOperation** tem essas propriedades.
 
 
 
-| Propriedade                                                               | Tipo de acesso           | Description                                                                                                                                                                                   |
+| Propriedade                                                               | Tipo de acesso           | Descrição                                                                                                                                                                                   |
 |:-----------------------------------------------------------------------|:----------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Concluído**](getstreampropertiesoperation-completed.md)<br/> | Leitura/gravação<br/> | Obtém ou define um manipulador de eventos que é invocado quando a operação assíncrona iniciada pelo [**GetStreamPropertiesAsync**](/previous-versions/windows/desktop/legacy/hh829001(v=vs.85)) é concluída.<br/> |
+| [**Concluído**](getstreampropertiesoperation-completed.md)<br/> | Leitura/gravação<br/> | Obtém ou define um manipulador de eventos que é invocado quando a operação assíncrona iniciada por [**GetStreamPropertiesAsync**](/previous-versions/windows/desktop/legacy/hh829001(v=vs.85)) é concluída.<br/> |
 
 
 

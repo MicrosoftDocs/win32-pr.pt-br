@@ -18,12 +18,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 665cb91a55298012e4e906c2972da5371e3960be
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f15a55765a10afef10087e7b28d04304ab0cc2668915a6e6ffa71fc770eb54a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105755902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082400"
 ---
 # <a name="iadsgroup-property-methods"></a>Métodos de propriedade IADs
 
@@ -67,11 +67,11 @@ HRESULT put_Description(
 
 ### <a name="using-iadsgroup-to-retrieve-descriptions-of-built-in-groups"></a>Usando o IADs para recuperar descrições de grupos internos
 
-Os exemplos a seguir mostram como recuperar informações sobre objetos de grupo do Windows por nome. Em um ambiente multilíngue, os grupos internos são, às vezes, conhecidos por diferentes nomes localizados, o que significa que eles não podem ser recuperados diretamente usando identificadores de cadeia de caracteres como "WinNT://Microsoft/Administrators". Nesse caso, o usuário pode se associar ao objeto SID conhecido para o grupo, recuperar o nome do grupo localizado e fornecê-lo ao método GetObject. Para obter mais informações, consulte [SIDs conhecidos](/windows/desktop/SecAuthZ/well-known-sids).
+os exemplos a seguir mostram como recuperar informações sobre Windows objetos de grupo por nome. Em um ambiente multilíngue, os grupos internos são, às vezes, conhecidos por diferentes nomes localizados, o que significa que eles não podem ser recuperados diretamente usando identificadores de cadeia de caracteres como "WinNT://Microsoft/Administrators". Nesse caso, o usuário pode se associar ao objeto SID conhecido para o grupo, recuperar o nome do grupo localizado e fornecê-lo ao método GetObject. Para obter mais informações, consulte [SIDs conhecidos](/windows/desktop/SecAuthZ/well-known-sids).
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir Visual Basic mostra como associar a um objeto de grupo e exibir a descrição do grupo.
+o exemplo a seguir Visual Basic mostra como associar a um objeto de grupo e exibir a descrição do grupo.
 
 
 ```VB
@@ -126,7 +126,7 @@ Cleanup:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Cabeçalho<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
 | IID<br/>                      | \_O IID IADs é definido como 27636B00-410f-11CF-B1FF-02608C9E7553<br/>            |
 

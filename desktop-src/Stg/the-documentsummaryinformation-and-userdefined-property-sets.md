@@ -1,65 +1,65 @@
 ---
 title: Os conjuntos de propriedades DocumentSummaryInformation e UserDefined
-description: Um conjunto de propriedades DocumentSummaryInformation e UserDefined é uma extensão para o conjunto de propriedades de informações resumidas. Os dois conjuntos de propriedades podem existir simultaneamente.
+description: Um conjunto de propriedades DocumentSummaryInformation e UserDefined é uma extensão para o conjunto de propriedades Informações resumidas. Ambos os conjuntos de propriedades podem existir simultaneamente.
 ms.assetid: c6d4e2bc-f7f6-429d-aa91-432d833c69d1
 keywords:
 - DocumentSummaryInformation
 - Conjuntos de propriedades UserDefined
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 411c6081ec098539baa2b26b6594d04216f5b455
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4d76c679fd8b4059e821598bed37d68735c45f914e4685e43a1c514b832e199e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104498688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118886832"
 ---
 # <a name="the-documentsummaryinformation-and-userdefined-property-sets"></a>Os conjuntos de propriedades DocumentSummaryInformation e UserDefined
 
-Um conjunto de propriedades **DocumentSummaryInformation** **e UserDefined** é uma extensão para [o conjunto de propriedades de informações resumidas](the-summary-information-property-set.md). Os dois conjuntos de propriedades podem existir simultaneamente.
+Um **conjunto de propriedades DocumentSummaryInformation** e **UserDefined** é uma extensão para o conjunto de [propriedades Informações resumidas](the-summary-information-property-set.md). Ambos os conjuntos de propriedades podem existir simultaneamente.
 
-O nome do fluxo que contém o conjunto de propriedades **DocumentSummaryInformation** é **" \\ 005DocumentSummaryInformation"**. O identificador de formato (FMTID) para o conjunto de propriedades **DocumentSummaryInformation** é **D5CDD502-2E9C-101B-9397-08002B2CF9AE**.
+O nome do fluxo que contém o conjunto de propriedades **DocumentSummaryInformation** **é " \\ 005DocumentSummaryInformation".** O FMTID (identificador de formato) do conjunto de propriedades **DocumentSummaryInformation** é **D5CDD502-2E9C-101B-9397-08002B2CF9AE.**
 
-A declaração para esse valor está disponível nos arquivos de cabeçalho fornecidos como **FMTID \_ DocSummaryInformation**. Para obter mais informações, consulte [nomes em IStorage](names-in-istorage.md), [o resumo de propriedades de informações de resumido](the-summary-information-property-set.md), [**IPropertySetStorage:: criar**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-create) e [Formatar identificadores](format-identifiers.md).
+A declaração para esse valor está disponível nos arquivos de título fornecidos como **FMTID \_ DocSummaryInformation**. Para obter mais informações, consulte [Names in IStorage](names-in-istorage.md), [The Summary Information Property Set](the-summary-information-property-set.md), [**IPropertySetStorage::Create**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-create) and [Format Identifiers](format-identifiers.md).
 
-Esse fluxo também tem uma seção separada para as propriedades definidas pelo usuário personalizado, como nos conjuntos de propriedades **DocumentSummaryInformation** **e UserDefined** . Esta seção aparece na interface [**IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage) como um conjunto de propriedades separado, com o seguinte FMTID (disponível como **FMTID \_ userdefineproperties**): **D5CDD505-2E9C-101B-9397-08002B2CF9AE**.
+Esse fluxo também tem uma seção separada para as propriedades definidas pelo usuário personalizado como nos conjuntos de propriedades **DocumentSummaryInformation** e **UserDefined.** Esta seção aparece na interface [**IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage) como um conjunto de propriedades separado, com o seguinte FMTID (disponível como **FmTID \_ UserDefinedProperties**): **D5CDD505-2E9C-101B-9397-08002B2CF9AE**.
 
-Esses dois conjuntos de propriedades são os únicos para os quais um único fluxo pode conter vários conjuntos de propriedades. O fato de que esses dois conjuntos de propriedades estão em um único fluxo afeta o comportamento da interface **IPropertySetStorage** . Para obter mais informações, consulte [**IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage).
+Esses dois conjuntos de propriedades são os únicos para os quais um único fluxo pode conter vários conjuntos de propriedades. O fato de que esses dois conjuntos de propriedades estão em um único fluxo afeta o comportamento da interface **IPropertySetStorage.** Para obter mais informações, [**consulte IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage).
 
-A tabela a seguir lista as propriedades adicionadas ao conjunto **de propriedades** **DocumentSummaryInformation** e UserDefined. Como no conjunto de propriedades **SummaryInformation** , os nomes normalmente não são armazenados no conjunto de propriedades, mas são inferidos do identificador de propriedade.
+A tabela a seguir lista as propriedades adicionadas ao conjunto de propriedades **DocumentSummaryInformation** e **UserDefined.** Assim como no conjunto de propriedades **SummaryInformation,** os nomes normalmente não são armazenados no conjunto de propriedades, mas são inferidos do identificador de propriedade.
 
 
 
-| Nome da propriedade      | Identificador de propriedade     | Valor do identificador de propriedade | Tipo de variante                      |
+| Nome da propriedade      | Identificador de propriedade     | Valor do identificador de propriedade | Tipo VARIANT                      |
 |--------------------|-------------------------|---------------------------|-----------------------------------|
-| Categoria           | **\_categoria PIDDSI**    | 0x00000002                | **a VT \_ LPSTR**                     |
-| PresentationTarget | **PIDDSI \_ PRESFORMAT**  | 0x00000003                | **a VT \_ LPSTR**                     |
-| Bytes              | **BYTECOUNT do PIDDSI \_**   | 0x00000004                | **\_I4 VT**                        |
-| Linhas              | **PIDDSI \_ LINECOUNT**   | 0x00000005                | **\_I4 VT**                        |
-| Parágrafos         | **PIDDSI \_ PARCOUNT**    | 0x00000006                | **\_I4 VT**                        |
-| Slides             | **PIDDSI \_ SLIDECOUNT**  | 0x00000007                | **\_I4 VT**                        |
-| Observações              | **PIDDSI \_ NOTECOUNT**   | 0x00000008                | **\_I4 VT**                        |
-| HiddenSlides       | **PIDDSI \_ HIDDENCOUNT** | 0x00000009                | **\_I4 VT**                        |
-| MMClips            | **PIDDSI \_ MMCLIPCOUNT** | 0x0000000A                | **\_I4 VT**                        |
-| ScaleCrop          | **escala de PIDDSI \_**       | 0x0000000B                | **BOOL do VT \_**                      |
-| HeadingPairs       | **PIDDSI \_ HEADINGPAIR** | 0x0000000C                | **VT \_** \| **\_ vetor VT** de variante |
-| TitlesofParts      | **PIDDSI \_ DOCPARTS**    | 0x0000000D                | **VT \_** \| **\_ LPSTR** de vetor VT   |
-| Gerente            | **Gerenciador de PIDDSI \_**     | 0x0000000E                | **a VT \_ LPSTR**                     |
-| Empresa            | **\_empresa PIDDSI**     | 0x0000000F                | **a VT \_ LPSTR**                     |
-| LinksUpToDate      | **PIDDSI \_ LINKSDIRTY**  | 0x00000010                | **BOOL do VT \_**                      |
+| Categoria           | **CATEGORIA PIDDSI \_**    | 0x00000002                | **VT \_ LPSTR**                     |
+| PresentationTarget | **PRÉ-FORMATO PIDDSI \_**  | 0x00000003                | **VT \_ LPSTR**                     |
+| Bytes              | **PIDDSI \_ BYTECOUNT**   | 0x00000004                | **VT \_ I4**                        |
+| Linhas              | **PIDDSI \_ LINECOUNT**   | 0x00000005                | **VT \_ I4**                        |
+| Parágrafos         | **PIDDSI \_ PARCOUNT**    | 0x00000006                | **VT \_ I4**                        |
+| Slides             | **PIDDSI \_ SLIDECOUNT**  | 0x00000007                | **VT \_ I4**                        |
+| Observações              | **PIDDSI \_ NOTECOUNT**   | 0x00000008                | **VT \_ I4**                        |
+| HiddenSlides       | **PIDDSI \_ HIDDENCOUNT** | 0x00000009                | **VT \_ I4**                        |
+| MMClips            | **PIDDSI \_ MMCLIPCOUNT** | 0x0000000A                | **VT \_ I4**                        |
+| ScaleCrop          | **ESCALA PIDDSI \_**       | 0x0000000B                | **BOOL da VT \_**                      |
+| HeadingPairs       | **TÍTULO PIDDSIPAIR \_** | 0x0000000C                | **VT \_ VARIANT** \| **VT \_ VECTOR** |
+| TitlesofParts      | **PIDDSI \_ DOCPARTS**    | 0x0000000D                | **VT \_ VECTOR** \| **VT \_ LPSTR**   |
+| Gerente            | **PIDDSI \_ MANAGER**     | 0x0000000E                | **VT \_ LPSTR**                     |
+| Empresa            | **PIDDSI \_ COMPANY**     | 0x0000000F                | **VT \_ LPSTR**                     |
+| LinksUpToDate      | **LINKS DO PIDDSIDIRTY \_**  | 0x00000010                | **BOOL da VT \_**                      |
 
 
 
- 
+ 
 
 Essas propriedades têm os seguintes usos:
 
 <dl> <dt>
 
-<span id="Category"></span><span id="category"></span><span id="CATEGORY"></span>Categorias
+<span id="Category"></span><span id="category"></span><span id="CATEGORY"></span>Categoria
 </dt> <dd>
 
-Uma cadeia de texto digitada pelo usuário que indica a qual categoria o arquivo pertence (memorando, proposta e assim por diante). É útil para localizar arquivos do mesmo tipo.
+Uma cadeia de caracteres de texto digitada pelo usuário que indica a qual categoria o arquivo pertence (memorando, proposta e assim por diante). É útil para localizar arquivos do mesmo tipo.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Quantidade de bytes.
 
 </dd> <dt>
 
-<span id="Lines"></span><span id="lines"></span><span id="LINES"></span>Alinha
+<span id="Lines"></span><span id="lines"></span><span id="LINES"></span>Linhas
 </dt> <dd>
 
 Número de linhas.
@@ -98,7 +98,7 @@ Número de slides.
 
 </dd> <dt>
 
-<span id="Notes"></span><span id="notes"></span><span id="NOTES"></span>Registra
+<span id="Notes"></span><span id="notes"></span><span id="NOTES"></span>Notas
 </dt> <dd>
 
 Número de páginas que contêm anotações.
@@ -162,15 +162,15 @@ Valor booliano para indicar se os links personalizados são dificultados por ru�
 > [!Note]  
 > Conforme descrito em 12,3. Formato serializado para conjuntos de propriedades da especificação de design de OLE 2,0, os elementos de vetor nas propriedades **HeadingPairs** e **TitlesofParts** devem ser alinhados em limites de bit 32 dentro do conjunto de propriedades. No entanto, nos conjuntos de propriedades **DocumentSummaryInformation** **e UserDefined** , quando a página de código do conjunto de propriedades não é Unicode, esses elementos devem ser empacotados.
 
- 
+ 
 
 </dd> </dl>
 
 O conjunto de propriedades **UserDefined** pode ser usado para manter qualquer propriedade. Normalmente, ele é usado para armazenar as propriedades nomeadas criadas por um usuário.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -18,7 +18,7 @@ ms.locfileid: "118512992"
 ---
 # <a name="variables"></a>Variáveis
 
-As variáveis HLSL são semelhantes às variáveis definidas na linguagem de programação C. Semelhante ao C, as variáveis têm algumas restrições de nomenclação, têm propriedades de definição de scoping que dependem de onde são declaradas e podem ter metadados de usuário anexados a elas. Assim como o C, há vários tipos de dados padrão. Ao contrário do C, também há tipos de dados adicionais definidos pelo HLSL para ajudar a maximizar o desempenho de vetores de quatro componentes que usam matemática de matriz para operar em dados gráficos 3D.
+As variáveis HLSL são semelhantes às variáveis definidas na linguagem de programação C. Semelhante a C, as variáveis têm algumas restrições de nomenclatura, têm propriedades de escopo que dependem de onde elas são declaradas e podem ter metadados de usuário anexados a elas. Como C, há vários tipos de dados padrão. Ao contrário de C, também há tipos de dados adicionais definidos pelo HLSL para ajudar a maximizar o desempenho de vetores de 4 componentes que usam matriz Math para operar em dados gráficos 3D.
 
 -   [Sintaxe de Variável](dx-graphics-hlsl-variable-syntax.md)
 -   [Data Types](dx-graphics-hlsl-data-types.md)

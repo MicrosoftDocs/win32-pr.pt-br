@@ -1,7 +1,7 @@
 ---
 description: A função SetNetworkInfoInBlob preenche a estrutura NETWORKINFO no BLOB.
 ms.assetid: 1a511c26-2fa7-4fe4-a5a9-23188c59bc34
-title: Função SetNetworkInfoInBlob (Netmon. h)
+title: Função SetNetworkInfoInBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,7 +22,7 @@ ms.locfileid: "118364064"
 ---
 # <a name="setnetworkinfoinblob-function"></a>Função SetNetworkInfoInBlob
 
-A função **SetNetworkInfoInBlob** preenche a estrutura **NETWORKINFO** no BLOB.
+A **função SetNetworkInfoInBlob** preenche a **estrutura NETWORKINFO** no BLOB.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,14 +40,14 @@ DWORD SetNetworkInfoInBlob(
 
 <dl> <dt>
 
-*hBlob* \[ no\]
+*hBlob* \[ Em\]
 </dt> <dd>
 
-Identificador para um BLOB.
+Lidar com um BLOB.
 
 </dd> <dt>
 
-*lpNetworkInfo* \[ no\]
+*lpNetworkInfo* \[ Em\]
 </dt> <dd>
 
 Ponteiro para a estrutura [NETWORKINFO](networkinfo.md) alocada pelo usuário que a função preenche.
@@ -56,7 +56,7 @@ Ponteiro para a estrutura [NETWORKINFO](networkinfo.md) alocada pelo usuário qu
 
 ## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida, o valor de retorno será NMERR com \_ êxito.
+Se a função for bem-sucedida, o valor de retorno será NMERR \_ SUCCESS.
 
 Se a função não for bem-sucedida, o valor de retorno será um valor NMERR que indica o erro.
 
@@ -68,8 +68,8 @@ Se a função não for bem-sucedida, o valor de retorno será um valor NMERR que
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

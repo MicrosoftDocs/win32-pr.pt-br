@@ -1,6 +1,6 @@
 ---
-title: Referência de programação da API de acesso do dispositivo C++
-description: Fornece páginas de referência para as funções e interfaces na API de acesso do dispositivo.
+title: API de Acesso a Dispositivo referência de programação C++
+description: Fornece páginas de referência para as funções e interfaces no API de Acesso a Dispositivo.
 ms.assetid: 8B2DD325-53D6-4221-A175-88754242D7A3
 ms.topic: article
 ms.date: 02/11/2020
@@ -11,17 +11,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118541931"
 ---
-# <a name="device-access-api-c-programming-reference"></a>Referência de programação da API de acesso do dispositivo C++
+# <a name="device-access-api-c-programming-reference"></a>API de Acesso a Dispositivo referência de programação C++
 
-Fornece páginas de referência para as funções e interfaces na API de acesso do dispositivo.
+Fornece páginas de referência para as funções e interfaces no API de Acesso a Dispositivo.
 
 ## <a name="in-this-section"></a>Nesta seção
 
 | Tópico | Descrição |
 |---|---|
-| [Funções](functions.md)<br/>           | Funções na API de acesso do dispositivo.<br/>                               |
-| [Interfaces COM](com-interfaces.md)<br/> | Interfaces de Component Object Model (COM) na API de acesso do dispositivo.<br/> |
+| [Funções](functions.md)<br/>           | Funções no API de Acesso a Dispositivo.<br/>                               |
+| [Interfaces COM](com-interfaces.md)<br/> | Component Object Model interfaces (COM) no API de Acesso a Dispositivo.<br/> |
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[exemplo de acesso de Driver personalizado](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/Custom%20driver%20access%20sample), [aplicativos de dispositivo UWP para dispositivos internos](/windows-hardware/drivers/devapps/uwp-device-apps-for-specialized-devices), [Centro de Desenvolvimento de Hardware](/windows-hardware/drivers/)
+[Exemplo de acesso de driver personalizado,](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/Custom%20driver%20access%20sample)aplicativos de dispositivo [UWP para dispositivos internos,](/windows-hardware/drivers/devapps/uwp-device-apps-for-specialized-devices) [Centro de Desenvolvimento de Hardware](/windows-hardware/drivers/)

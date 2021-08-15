@@ -1,9 +1,9 @@
 ---
-title: Elemento Title (showMessageType)
+title: Elemento Title (defaultmessagetype)
 description: Contém o título da caixa de mensagem.
 ms.assetid: 089d2043-41ed-4050-b794-af24ab7ac8b9
 keywords:
-- Elemento Title Agendador de Tarefas
+- Elemento de título Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118355673"
 ---
-# <a name="title-showmessagetype-element"></a>Elemento Title (showMessageType)
+# <a name="title-showmessagetype-element"></a>Elemento Title (defaultmessagetype)
 
 Contém o título da caixa de mensagem.
 
@@ -30,7 +30,7 @@ Contém o título da caixa de mensagem.
  />
 ```
 
-O **elemento Title** é definido pelo tipo complexo [**showMessageType.**](taskschedulerschema-showmessagetype-complextype.md)
+O elemento **title** é definido pelo tipo complexo [**exmessagetype**](taskschedulerschema-showmessagetype-complextype.md) .
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -38,15 +38,15 @@ O **elemento Title** é definido pelo tipo complexo [**showMessageType.**](tasks
 
 | Elemento                                                                                  | Derivado de                                                               | Descrição                                               |
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------|
-| [**ShowMessage (actionGroup)**](taskschedulerschema-showmessage-actiongroup-element.md) | [**showMessageType**](taskschedulerschema-showmessagetype-complextype.md) | Representa uma ação que mostra uma caixa de mensagem.<br/> |
+| [**Exmessage (The Action)**](taskschedulerschema-showmessage-actiongroup-element.md) | [**defaultmessagetype**](taskschedulerschema-showmessagetype-complextype.md) | Representa uma ação que mostra uma caixa de mensagem.<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Para desenvolvimento em C++, consulte [**Propriedade Title de IShowMessageAction**](/windows/desktop/api/taskschd/nf-taskschd-ishowmessageaction-get_title).
+Para desenvolvimento em C++, consulte a [**Propriedade Title de IShowMessageAction**](/windows/desktop/api/taskschd/nf-taskschd-ishowmessageaction-get_title).
 
-Para desenvolvimento de scripts, [**consulte ShowMessageAction.Title**](showmessageaction-title.md).
+Para o desenvolvimento de scripts, consulte o " [**nome do email". título**](showmessageaction-title.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Para desenvolvimento de scripts, [**consulte ShowMessageAction.Title**](showmess
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

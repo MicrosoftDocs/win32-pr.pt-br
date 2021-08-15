@@ -1,7 +1,7 @@
 ---
-description: A estrutura do gatilho indica uma ação a ser tomada pelo driver em um horário especificado.
+description: A estrutura TRIGGER indica uma ação a ser tomada pelo driver em um momento especificado.
 ms.assetid: 63541796-b0d8-456c-8544-697fedbe05f7
-title: Estrutura do gatilho (Netmon. h)
+title: Estrutura TRIGGER (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118363014"
 ---
-# <a name="trigger-structure"></a>Estrutura do gatilho
+# <a name="trigger-structure"></a>Estrutura TRIGGER
 
-A estrutura do **gatilho** indica uma ação a ser tomada pelo driver em um horário especificado.
+A **estrutura TRIGGER** indica uma ação a ser tomada pelo driver em um momento especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,21 +48,21 @@ typedef struct _TRIGGER {
 **TriggerActive**
 </dt> <dd>
 
-Um valor booliano que determina se o gatilho deve ser pago pelo driver.
+Um valor booliana que determina se o gatilho deve receber atenção do driver.
 
 </dd> <dt>
 
 **TriggerType**
 </dt> <dd>
 
-O código op do gatilho.
+O código de operação do gatilho.
 
 </dd> <dt>
 
-**TriggerAction**
+**Triggeraction**
 </dt> <dd>
 
-Ação que o gatilho deve tomar se for acionado.
+Ação que o gatilho deve tomar se ele for acionado.
 
 </dd> <dt>
 
@@ -76,14 +76,14 @@ Sinalizadores de gatilho.
 **TriggerPatternMatch**
 </dt> <dd>
 
-A correspondência do padrão de gatilho.
+A combinação do padrão de gatilho.
 
 </dd> <dt>
 
 **TriggerBufferSize**
 </dt> <dd>
 
-Tamanho do buffer de gatilho.
+Tamanho do buffer do gatilho.
 
 </dd> <dt>
 
@@ -102,7 +102,7 @@ Reservado.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

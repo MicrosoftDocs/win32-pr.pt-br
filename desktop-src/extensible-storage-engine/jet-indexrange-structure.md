@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: estrutura de JET_INDEXRANGE'
-title: Estrutura de JET_INDEXRANGE
+description: 'Saiba mais sobre: estrutura JET_INDEXRANGE dados'
+title: estrutura JET_INDEXRANGE de JET_INDEXRANGE
 TOCTitle: JET_INDEXRANGE Structure
 ms:assetid: 8e437f7d-1e21-4a0b-a5a5-1c78235a4f80
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269335(v=EXCHG.10)
@@ -22,14 +22,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118485594"
 ---
-# <a name="jet_indexrange-structure"></a>Estrutura de JET_INDEXRANGE
+# <a name="jet_indexrange-structure"></a>estrutura JET_INDEXRANGE de JET_INDEXRANGE
 
 
 _**Aplica-se a:** Windows | Windows Servidor_
 
-## <a name="jet_indexrange-structure"></a>Estrutura de JET_INDEXRANGE
+## <a name="jet_indexrange-structure"></a>estrutura JET_INDEXRANGE de JET_INDEXRANGE
 
-A estrutura de **JET_INDEXRANGE** identifica um intervalo de índice quando ele é usado com a função [JetIntersectIndexes](./jetintersectindexes-function.md) .
+A **JET_INDEXRANGE** de dados identifica um intervalo de índice quando é usado com a [função JetIntersectIndexes.](./jetintersectindexes-function.md)
 
 ```cpp
     typedef struct {
@@ -41,17 +41,17 @@ A estrutura de **JET_INDEXRANGE** identifica um intervalo de índice quando ele 
 
 ### <a name="members"></a>Membros
 
-**cbStruct**
+**Cbstruct**
 
 O tamanho, em bytes, do **JET_INDEXRANGE**.
 
-**TableID**
+**Tableid**
 
 Um cursor que anteriormente tinha um intervalo de índice definido com [JetSetIndexRange](./jetsetindexrange-function.md).
 
 **grbit**
 
-Um bitmask composto de exatamente um dos seguintes.
+Um bitmask composto exatamente por um dos seguintes.
 
 <table>
 <colgroup>
@@ -79,7 +79,7 @@ Um bitmask composto de exatamente um dos seguintes.
 
 ### <a name="remarks"></a>Comentários
 
-Cada estrutura de **JET_INDEXRANGE** que é passada para [JetIntersectIndexes](./jetintersectindexes-function.md) representa um intervalo de índice, que será interseccionado pela chamada à API. O cursor que é fornecido em **JET_INDEXRANGE** deve ter um conjunto de intervalos de índice válido já, com uma chamada bem-sucedida para [JetSetIndexRange](./jetsetindexrange-function.md).
+Cada **JET_INDEXRANGE** estrutura passada para [JetIntersectIndexes](./jetintersectindexes-function.md) representa um intervalo de índices, que será interseccionada pela chamada à API. O cursor que é dado **em JET_INDEXRANGE** deve ter um intervalo de índice válido definido nele já, com uma chamada bem-sucedida para [JetSetIndexRange](./jetsetindexrange-function.md).
 
 ### <a name="requirements"></a>Requisitos
 
@@ -91,15 +91,15 @@ Cada estrutura de **JET_INDEXRANGE** que é passada para [JetIntersectIndexes](.
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
+<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p></td>
+<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
+<td><p>Declarado em Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

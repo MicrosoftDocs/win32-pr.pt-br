@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: b3d97c5aa23dd0711cfb00585e5b8ba7d410fc02
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5f0b329502e6b5e957e1d8c0761fe19fa6bc1e8420269a6329435ba27a53f44c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105769636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118526550"
 ---
 # <a name="d3dxcreateeffectfromfileex-function"></a>Função D3DXCreateEffectFromFileEx
 
@@ -93,7 +93,7 @@ Uma cadeia de parâmetros de efeito que será ignorada pelo sistema de efeito. A
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Sinalizadores* \[ de no\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -129,7 +129,7 @@ Retorna um ponteiro para um buffer que contém uma lista de erros de compilaçã
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

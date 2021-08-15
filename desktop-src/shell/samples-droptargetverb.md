@@ -1,5 +1,5 @@
 ---
-description: Demonstra como implementar um verbo do shell usando o método DropTarget.
+description: Demonstra como implementar um verbo shell usando o método DropTarget.
 title: Exemplo de verbo DropTarget
 ms.topic: article
 ms.date: 05/31/2018
@@ -18,7 +18,7 @@ ms.locfileid: "118719528"
 ---
 # <a name="droptarget-verb-sample"></a>Exemplo de verbo DropTarget
 
-Demonstra como implementar um verbo do shell usando o método DropTarget.
+Demonstra como implementar um verbo shell usando o método DropTarget.
 
 Este tópico inclui as seções a seguir.
 
@@ -30,7 +30,7 @@ Este tópico inclui as seções a seguir.
 
 ## <a name="description"></a>Descrição
 
-Este exemplo mostra como implementar um verbo do shell usando o método DropTarget. esse método é preferido para implementações de verbo que devem funcionar no Windows XP. Este exemplo implementa um objeto COM (servidor local Component Object Model) autônomo, mas espera-se que a implementação do verbo seja integrada aos aplicativos existentes. Para fazer isso, o objeto de aplicativo principal registra uma fábrica de classes para si mesmo. Esse objeto implementa [**IDropTarget**](/windows/win32/api/oleidl/nn-oleidl-idroptarget) para verbos do seu aplicativo. Observe que COM inicia seu aplicativo se ele ainda não estiver em execução, mas se conectará a uma instância em execução do seu aplicativo, se houver um.
+Este exemplo mostra como implementar um verbo shell usando o método DropTarget. Esse método é preferencial para implementações verbais que devem funcionar Windows XP. Este exemplo implementa um objeto COM (servidor Component Object Model local) autônomo, mas espera-se que a implementação do verbo seja integrada a aplicativos existentes. Para fazer isso, o objeto de aplicativo principal registra uma fábrica de classes para si mesmo. Esse objeto implementa [**IDropTarget para**](/windows/win32/api/oleidl/nn-oleidl-idroptarget) os verbos do seu aplicativo. Observe que o COM iniciará seu aplicativo se ele ainda não estiver em execução, mas se conectar a uma instância em execução do seu aplicativo se ele estiver presente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,27 +47,27 @@ Este exemplo mostra como implementar um verbo do shell usando o método DropTarg
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-| Location      | URL do caminho                                                                                             |
+| Localização      | URL do caminho                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Exemplo de DropTargetVerb](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/DropTargetVerb) |
 
 ## <a name="building-the-sample"></a>Compilando o exemplo
 
-Para criar o exemplo do prompt de comando:
+Para criar o exemplo no prompt de comando:
 
-1.  Abra a janela do prompt de comando e navegue até o diretório do projeto **DropTargetVerb** .
-2.  Insira `msbuild DropTargetVerb.sln`.
+1.  Abra a janela do prompt de comando e navegue até o **diretório do projeto DropTargetVerb.**
+2.  Digite `msbuild DropTargetVerb.sln`.
 
-para criar o exemplo usando Microsoft Visual Studio (preferencial):
+Para criar o exemplo usando Microsoft Visual Studio (preferencial):
 
-1.  abra Windows Explorer e navegue até o diretório do projeto **DropTargetVerb** .
-2.  Clique duas vezes no ícone do arquivo DropTargetVerb. sln para abrir o projeto no Visual Studio.
+1.  Abra Windows Explorer e navegue até o **diretório do projeto DropTargetVerb.**
+2.  Clique duas vezes no ícone do arquivo DropTargetVerb.sln para abrir o projeto Visual Studio.
 3.  No menu **Compilar**, selecione **Compilar Solução**.
 
 ## <a name="running-the-sample"></a>Executando o exemplo
 
-1.  navegue até o diretório que contém o novo executável, usando o prompt de comando ou o gerenciador de Windows.
-2.  Na linha de comando, digite `DropTargetVerb.exe` . como alternativa, no Windows Explorer, clique duas vezes no ícone para DropTargetVerb.exe.
+1.  Navegue até o diretório que contém o novo executável usando o prompt de comando ou Windows Explorer.
+2.  Na linha de comando, insira `DropTargetVerb.exe` . Como alternativa, no Windows Explorer, clique duas vezes no ícone para DropTargetVerb.exe.
 3.  Siga as instruções na caixa de diálogo exibida
 
  

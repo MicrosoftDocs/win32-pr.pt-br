@@ -13,7 +13,7 @@ ms.locfileid: "118535961"
 ---
 # <a name="direct3d-111-features"></a>Recursos do Direct3D 11.1
 
-A funcionalidade a seguir foi adicionada ao Direct3D 11.1, que está incluído no Windows 8, Windows RT e Windows Server 2012. O suporte parcial para [o Direct3D 11.1](direct3d-11-features.md) está disponível no Windows 7 e no Windows Server 2008 R2 por meio da Atualização da Plataforma [para Windows 7](/windows/desktop/direct3darticles/platform-update-for-windows-7), que está disponível por meio da Atualização da Plataforma [para Windows 7](https://support.microsoft.com/kb/2670838).
+A funcionalidade a seguir foi adicionada ao Direct3D 11.1, que está incluído no Windows 8, Windows RT e Windows Server 2012. O suporte parcial para [o Direct3D 11.1](direct3d-11-features.md) está disponível no Windows 7 e no Windows Server 2008 R2 por meio da Atualização de Plataforma [para Windows 7](/windows/desktop/direct3darticles/platform-update-for-windows-7), que está disponível por meio da Atualização da Plataforma [para Windows 7](https://support.microsoft.com/kb/2670838).
 
 -   [Aprimoramentos do compilador e rastreamento do sombreador](#shader-tracing-and-compiler-enhancements)
 -   [Compartilhamento de dispositivo Direct3D](#direct3d-device-sharing)
@@ -69,7 +69,7 @@ A API de rastreamento de sombreador e os aprimoramentos para o compilador HLSL c
 A biblioteca D3dcompiler.lib requer D3dcompiler \_nn.dll. Essa DLL não faz parte do Windows 8; ele está na pasta bin do SDK do Windows para Windows 8 juntamente com a Fxc.exe de linha de comando do \\ compilador HLSL.
 
 > [!Note]  
-> Embora você possa usar essa biblioteca e a combinação de DLL para desenvolvimento, não é possível implantar aplicativos Windows Store que usam essa combinação. Portanto, você deve compilar sombreadores HLSL antes de enviar seu aplicativo Windows Store. Você pode gravar binários de compilação HLSL no disco ou o compilador pode gerar os headers com matrizes de byte estáticos que contêm os dados do blob do sombreador. Use a interface [**ID3DBlob**](/previous-versions/windows/desktop/legacy/ff728743(v=vs.85)) para acessar os dados do blob. Para desenvolver seu aplicativo Windows Store, chame [**D3DCompile2**](/windows/desktop/direct3dhlsl/d3dcompile2) ou [**D3DCompileFromFile**](/windows/desktop/direct3dhlsl/d3dcompilefromfile) para compilar a origem HLSL bruta e, em seguida, alimente os dados de blob resultantes para o Direct3D.
+> Embora você possa usar essa combinação de biblioteca e DLL para desenvolvimento, não é possível implantar aplicativos Windows Store que usam essa combinação. Portanto, você deve compilar sombreadores HLSL antes de enviar seu aplicativo Windows Store. Você pode gravar binários de compilação HLSL em disco ou o compilador pode gerar os headers com matrizes de byte estáticos que contêm os dados do blob do sombreador. Use a interface [**ID3DBlob**](/previous-versions/windows/desktop/legacy/ff728743(v=vs.85)) para acessar os dados do blob. Para desenvolver seu aplicativo Windows Store, chame [**D3DCompile2**](/windows/desktop/direct3dhlsl/d3dcompile2) ou [**D3DCompileFromFile**](/windows/desktop/direct3dhlsl/d3dcompilefromfile) para compilar a origem HLSL bruta e, em seguida, alimente os dados de blob resultantes para o Direct3D.
 
  
 
@@ -104,11 +104,11 @@ Sombreadores de precisão mínima HLSL não funcionam em sistemas operacionais a
 
 ## <a name="specify-user-clip-planes-in-hlsl-on-feature-level-9-and-higher"></a>Especificar planos de clipe de usuário em HLSL no nível de recurso 9 e superior
 
-A partir do Windows 8, você pode usar o atributo de função [](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-function-syntax) **clipplanes** em uma declaração de função HLSL em vez de [SV \_ ClipDistance](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-semantics) para fazer com que o sombreador funcione no nível [do](overviews-direct3d-11-devices-downlevel-intro.md) recurso 9 x, bem como no nível de \_ recurso 10 e superior. Para obter mais informações, consulte [Planos de clipe de usuário no hardware de nível de recurso 9.](/windows/desktop/direct3dhlsl/user-clip-planes-on-10level9)
+A partir do Windows 8, você pode usar o atributo de função [](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-function-syntax) **clipplanes** em uma declaração de função HLSL em vez de [SV \_ ClipDistance](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-semantics) para fazer com que o sombreador funcione no nível [de](overviews-direct3d-11-devices-downlevel-intro.md) recurso 9 x, bem como no nível de \_ recurso 10 e superior. Para obter mais informações, consulte [Planos de clipe de usuário no hardware de nível de recurso 9.](/windows/desktop/direct3dhlsl/user-clip-planes-on-10level9)
 
 ## <a name="create-larger-constant-buffers-than-a-shader-can-access"></a>Criar buffers constantes maiores do que um sombreador pode acessar
 
-O Direct3D 11.1 permite que você crie buffers constantes maiores que o tamanho máximo do buffer constante que um sombreador pode acessar (constantes de 4 componentes de 32 bits de 4 bits – \* 64KB). Posteriormente, ao vincular os buffers ao pipeline, por exemplo, por meio de [**PSSetConstantBuffers**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-pssetconstantbuffers) ou [**PSSetConstantBuffers1**](/windows/desktop/api/D3D11_1/nf-d3d11_1-id3d11devicecontext1-pssetconstantbuffers1), você pode especificar um intervalo de buffers que o sombreador pode acessar que se ajuste ao limite 4096.
+O Direct3D 11.1 permite que você crie buffers constantes maiores que o tamanho máximo do buffer constante que um sombreador pode acessar (constantes de 4 componentes de 32 bits de 4 bits \* – 64KB). Posteriormente, ao vincular os buffers ao pipeline, por exemplo, por meio de [**PSSetConstantBuffers**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-pssetconstantbuffers) ou [**PSSetConstantBuffers1**](/windows/desktop/api/D3D11_1/nf-d3d11_1-id3d11devicecontext1-pssetconstantbuffers1), você pode especificar um intervalo de buffers que o sombreador pode acessar que se ajuste ao limite 4096.
 
 O Direct3D 11.1 atualiza o [**método ID3D11Device::CreateBuffer**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createbuffer) para esse recurso.
 
@@ -134,113 +134,113 @@ Esse recurso do Direct3D 11.1 consiste na API a seguir.
 >
 > -   Não a bind depth-stencil views.
 > -   Desabilite o teste de profundidade.
-> -   Certifique-se de que o sombreador não gere profundidade.
-> -   Se você tiver quaisquer exibições de destino de renderização vinculadas ([**\_ destino de \_ renderização \_ de associação D3D11**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_bind_flag)) e tiver forçado a contagem de amostras para maior que 1, verifique se cada destino de renderização tem apenas um único exemplo.
-> -   Não opere o sombreador na frequência de exemplo. Portanto, [**ID3D11ShaderReflection:: IsSampleFrequencyShader**](/windows/desktop/api/D3D11Shader/nf-d3d11shader-id3d11shaderreflection-issamplefrequencyshader) retorna **false**.
+> -   Verifique se o sombreador não tem profundidade de saída.
+> -   Se você tiver exibições de destino de renderização vinculadas [**(D3D11 \_ BIND \_ RENDER \_ TARGET)**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_bind_flag)e tiver forçado a contagem de amostras para maior que 1, verifique se cada destino de renderização tem apenas um único exemplo.
+> -   Não opere o sombreador na frequência de exemplo. Portanto, [**ID3D11ShaderReflection::IsSampleFrequencyShader**](/windows/desktop/api/D3D11Shader/nf-d3d11shader-id3d11shaderreflection-issamplefrequencyshader) retorna **FALSE.**
 >
-> Caso contrário, o comportamento de renderização será indefinido. Para obter informações sobre como configurar o estêncil de profundidade, consulte [Configurando Depth-Stencil funcionalidade](d3d10-graphics-programming-guide-depth-stencil.md).
+> Caso contrário, o comportamento de renderização será indefinido. Para obter informações sobre como configurar o estencil de profundidade, consulte [Configurando Depth-Stencil funcionalidade .](d3d10-graphics-programming-guide-depth-stencil.md)
 
  
 
 ## <a name="process-video-resources-with-shaders"></a>Processar recursos de vídeo com sombreadores
 
-O Direct3D 11,1 permite criar modos de exibição (SRV/RTV/UAV) para recursos de vídeo para que os sombreadores de Direct3D possam processar esses recursos de vídeo. O formato de um recurso de vídeo subjacente restringe os formatos que o modo de exibição pode usar. A enumeração de [**\_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) contém novos valores de formato de recurso de vídeo. Esses valores de **\_ formato dxgi** especificam os formatos de exibição válidos que você pode criar e como o tempo de execução do Direct3D 11,1 mapeia a exibição. Você pode criar várias exibições de partes diferentes da mesma superfície e, dependendo do formato, os tamanhos das exibições podem diferir uns dos outros.
+O Direct3D 11.1 permite que você crie exibições (SRV/RTV/UAV) para recursos de vídeo para que os sombreadores direct3D possam processar esses recursos de vídeo. O formato de um recurso de vídeo subjacente restringe os formatos que a exibição pode usar. A [**enumeração DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) contém novos valores de formato de recurso de vídeo. Esses **valores DXGI \_ FORMAT especificam** os formatos de exibição válidos que você pode criar e como o runtime do Direct3D 11.1 mapeia a exibição. Você pode criar várias exibições de diferentes partes da mesma superfície e, dependendo do formato, os tamanhos das exibições podem ser diferentes entre si.
 
-O Direct3D 11,1 atualiza os seguintes métodos para esse recurso.
+O Direct3D 11.1 atualiza os métodos a seguir para esse recurso.
 
 -   [**ID3D11Device::CreateShaderResourceView**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createshaderresourceview)
 -   [**ID3D11Device::CreateRenderTargetView**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createrendertargetview)
 -   [**ID3D11Device::CreateUnorderedAccessView**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createunorderedaccessview)
 
-## <a name="extended-support-for-shared-texture2d-resources"></a>Suporte estendido para recursos de Texture2D compartilhados
+## <a name="extended-support-for-shared-texture2d-resources"></a>Suporte estendido para recursos texture2D compartilhados
 
-O Direct3D 11,1 garante que você possa compartilhar recursos Texture2D criados com tipos e formatos de recursos específicos. para compartilhar recursos do Texture2D, use o recurso [**D3D11 \_ \_ misc \_**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)compartilhado, o [**D3D11 \_ \_ misc \_ \_ compartilhado**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)do recurso, ou uma combinação dos sinalizadores D3D11 do **\_ recurso \_ \_ \_** KEYEDMUTEX dishare e D3D11 [**\_ \_ \_ multishared \_**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag) NTHANDLE (novo para Windows 8) ao criar esses recursos.
+O Direct3D 11.1 garante que você possa compartilhar recursos Texture2D criados com formatos e tipos de recursos específicos. Para compartilhar recursos texture2D, use os sinalizadores [**D3D11 \_ RESOURCE \_ MISC \_ SHARED**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag), [**D3D11 \_ RESOURCE \_ MISC \_ SHARED \_ KEYEDMUTEX**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)ou uma combinação dos sinalizadores [**\_ \_ \_ \_ NTHANDLE**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag) COMPARTILHADOS DE MISC SHARED **\_ \_ \_ \_ KEYEDMUTEX** e D3D11 RESOURCE MISC (novo para Windows 8) quando você criar esses recursos.
 
-O Direct3D 11,1 garante que você possa compartilhar recursos de Texture2D que você criou com esses valores de [**\_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) :
+O Direct3D 11.1 garante que você possa compartilhar recursos Texture2D criados com esses [**valores de FORMATO DXGI: \_**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
--   \_Formato dxgi \_ R8G8B8A8 \_ UNORM
--   \_Formato dxgi \_ R8G8B8A8 \_ UNORM \_ sRGB
--   \_Formato dxgi \_ B8G8R8A8 \_ UNORM
--   \_Formato dxgi \_ B8G8R8A8 \_ UNORM \_ sRGB
--   \_Formato dxgi \_ B8G8R8X8 \_ UNORM
--   \_Formato dxgi \_ B8G8R8X8 \_ UNORM \_ sRGB
--   \_Formato dxgi \_ R10G10B10A2 \_ UNORM
--   \_ \_ Float R16G16B16A16 de formato dxgi \_
+-   DXGI \_ FORMAT \_ R8G8B8A8 \_ UNORM
+-   FORMATO DXGI \_ \_ R8G8B8A8 \_ UNORM \_ SRGB
+-   DXGI \_ FORMAT \_ B8G8R8A8 \_ UNORM
+-   FORMATO DXGI \_ \_ B8G8R8A8 \_ UNORM \_ SRGB
+-   FORMATO DXGI \_ \_ B8G8R8X8 \_ UNORM
+-   FORMATO DXGI \_ \_ B8G8R8X8 \_ UNORM \_ SRGB
+-   DXGI \_ FORMAT \_ R10G10B10A2 \_ UNORM
+-   DXGI \_ FORMAT \_ R16G16B16A16 \_ FLOAT
 
-Além disso, o Direct3D 11,1 garante que você possa compartilhar recursos de Texture2D que você criou com um nível de mipmap de 1, tamanho da matriz de 1, associar sinalizadores do [**\_ \_ \_ recurso do sombreador de ligação do D3D11**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_bind_flag) e o [**\_ \_ \_ destino de renderização do D3D11 associado**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_bind_flag) , padrão de uso ([**\_ \_ padrão de uso de D3D11**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_usage)) e somente esses valores de [**\_ \_ \_ sinalizador diverso de recurso D3D11**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag) :
+Além disso, o Direct3D 11.1 garante que você possa compartilhar recursos Texture2D criados com um nível de mipmap de 1, tamanho da matriz de 1, sinalizadores de vinculação de [**D3D11 \_ BIND \_ SHADER \_ RESOURCE**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_bind_flag) e [**D3D11 \_ BIND RENDER \_ \_ TARGET**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_bind_flag) combinados, padrão de uso ([**D3D11 \_ USAGE \_ DEFAULT)**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_usage)e apenas esses valores de SINALIZADOR MISC de RECURSO [**D3D11: \_ \_ \_**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
 
--   [**\_Recurso \_ diverso \_ compartilhado do D3D11**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
--   [**D3D11 \_ \_ \_ dishared \_ KEYEDMUTEX de recursos**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
--   [**D3D11 \_ \_ \_ dishared \_ NTHANDLE de recursos**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
--   [**\_ \_ \_ Compatível com GDI variado do recurso D3D11 \_**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
+-   [**D3D11 \_ RESOURCE \_ MISC \_ SHARED**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
+-   [**D3D11 \_ RESOURCE \_ MISC \_ SHARED \_ KEYEDMUTEX**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
+-   [**NTHANDLE COMPARTILHADO COMPARTILHADO \_ \_ DE MISC \_ DO RECURSO D3D11 \_**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
+-   [**D3D11 \_ RESOURCE \_ MISC \_ GDI \_ COMPATIBLE**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
 
-O Direct3D 11,1 permite que você compartilhe uma maior variedade de formatos e tipos de recursos Texture2D. Você pode consultar se o driver de gráficos e o hardware dão suporte ao compartilhamento de recursos Texture2D estendido chamando [**ID3D11Device:: CheckFeatureSupport**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport) com o valor de [**\_ \_ \_ Opções D3D11 de recurso D3D11**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_feature) . Nesta chamada **ID3D11Device:: CheckFeatureSupport** , passe um ponteiro para uma estrutura [**de \_ \_ Opções de \_ D3D11 \_ de dados do recurso D3D11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options) . **ID3D11Device:: CheckFeatureSupport** define o membro **ExtendedResourceSharing** de **D3D11 \_ recurso \_ Data \_ D3D11 \_ Opções** como **true** se o hardware e o driver dão suporte ao compartilhamento estendido de recursos de Texture2D.
+O Direct3D 11.1 permite que você compartilhe uma variedade maior de formatos e tipos de recursos Texture2D. Você pode consultar se o driver gráfico e o hardware são compatíveis com o compartilhamento de recursos Estendido texture2D chamando [**ID3D11Device::CheckFeatureSupport**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport) com o [**valor D3D11 \_ FEATURE \_ D3D11 \_ OPTIONS.**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_feature) Nesta **chamada ID3D11Device::CheckFeatureSupport,** passe um ponteiro para uma estrutura [**D3D11 \_ FEATURE DATA \_ \_ D3D11 \_ OPTIONS.**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options) **ID3D11Device::CheckFeatureSupport** define o membro **ExtendedResourceSharing** de **D3D11 \_ FEATURE DATA \_ \_ D3D11 \_ OPTIONS** como **TRUE** se o hardware e o driver deem suporte ao compartilhamento estendido de recursos Texture2D.
 
-Se [**ID3D11Device:: CheckFeatureSupport**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport) retornar **true** em **ExtendedResourceSharing**, você poderá compartilhar os recursos que criou com esses valores de [**\_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) :
+Se [**ID3D11Device::CheckFeatureSupport**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport) retornar **TRUE** em **ExtendedResourceSharing,** você poderá compartilhar recursos criados com esses valores [**de FORMATO DXGI: \_**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
--   \_Tipo de \_ R32G32B32A32 de formato dxgi \_
--   \_ \_ Float R32G32B32A32 de formato dxgi \_
--   \_Formato dxgi \_ R32G32B32A32 \_ uint
--   \_Formato dxgi \_ R32G32B32A32 \_ Santo
--   \_Tipo de \_ R16G16B16A16 de formato dxgi \_
--   \_ \_ Float R16G16B16A16 de formato dxgi \_
--   \_Formato dxgi \_ R16G16B16A16 \_ UNORM
--   \_Formato dxgi \_ R16G16B16A16 \_ uint
--   \_Formato dxgi \_ R16G16B16A16 \_ SNORM
--   \_Formato dxgi \_ R16G16B16A16 \_ Santo
--   \_Formato dxgi \_ R10G10B10A2 \_ UNORM
--   \_Formato dxgi \_ R10G10B10A2 \_ uint
--   \_Tipo de \_ R8G8B8A8 de formato dxgi \_
--   \_Formato dxgi \_ R8G8B8A8 \_ UNORM
--   \_Formato dxgi \_ R8G8B8A8 \_ UNORM \_ sRGB
--   \_Formato dxgi \_ R8G8B8A8 \_ uint
--   \_Formato dxgi \_ R8G8B8A8 \_ SNORM
--   \_Formato dxgi \_ R8G8B8A8 \_ Santo
--   \_Tipo de \_ B8G8R8A8 de formato dxgi \_
--   \_Formato dxgi \_ B8G8R8A8 \_ UNORM
--   \_Formato dxgi \_ B8G8R8X8 \_ UNORM
--   \_Formato dxgi \_ B8G8R8A8 \_ UNORM \_ sRGB
--   \_Tipo de \_ B8G8R8X8 de formato dxgi \_
--   \_Formato dxgi \_ B8G8R8X8 \_ UNORM \_ sRGB
--   \_Tipo de \_ R32 de formato dxgi \_
--   \_ \_ Float R32 de formato dxgi \_
--   \_Formato dxgi \_ R32 \_ uint
--   \_Formato dxgi \_ R32 \_ Santo
--   \_Tipo de \_ R16 de formato dxgi \_
--   \_ \_ Float R16 de formato dxgi \_
--   \_Formato dxgi \_ R16 \_ UNORM
--   \_Formato dxgi \_ R16 \_ uint
--   \_Formato dxgi \_ R16 \_ SNORM
--   \_Formato dxgi \_ R16 \_ Santo
--   \_Tipo de \_ R8 de formato dxgi \_
--   \_UNORM de \_ R8 de formato dxgi \_
--   \_R8 de formato dxgi \_ \_ uint
--   \_SNORM de \_ R8 de formato dxgi \_
--   \_R8 de formato dxgi \_ \_ Santo
--   \_Formato dxgi \_ a8 \_ UNORM
--   \_AYUV de formato dxgi \_
--   \_YUY2 de formato dxgi \_
--   \_NV12 de formato dxgi \_
--   \_NV11 de formato dxgi \_
--   \_P016 de formato dxgi \_
--   \_P010 de formato dxgi \_
--   \_Y216 de formato dxgi \_
--   \_Y210 de formato dxgi \_
--   \_Y416 de formato dxgi \_
--   \_Y410 de formato dxgi \_
+-   FORMATO DXGI \_ \_ R32G32B32A32 \_ SEM TIPO
+-   DXGI \_ FORMAT \_ R32G32B32A32 \_ FLOAT
+-   FORMATO DXGI \_ \_ R32G32B32A32 \_ UINT
+-   DXGI \_ FORMAT \_ R32G32B32A32 \_ SINT
+-   FORMATO DXGI \_ \_ R16G16B16A16 \_ SEM TIPO
+-   DXGI \_ FORMAT \_ R16G16B16A16 \_ FLOAT
+-   DXGI \_ FORMAT \_ R16G16B16A16 \_ UNORM
+-   FORMATO DXGI \_ \_ R16G16B16A16 \_ UINT
+-   FORMATO DXGI \_ \_ R16G16B16A16 \_ SNORM
+-   DXGI \_ FORMAT \_ R16G16B16A16 \_ SINT
+-   DXGI \_ FORMAT \_ R10G10B10A2 \_ UNORM
+-   FORMATO DXGI \_ \_ R10G10B10A2 \_ UINT
+-   FORMATO DXGI \_ \_ R8G8B8A8 \_ SEM TIPO
+-   DXGI \_ FORMAT \_ R8G8B8A8 \_ UNORM
+-   FORMATO DXGI \_ \_ R8G8B8A8 \_ UNORM \_ SRGB
+-   FORMATO DXGI \_ \_ R8G8B8A8 \_ UINT
+-   FORMATO DXGI \_ \_ R8G8B8A8 \_ SNORM
+-   DXGI \_ FORMAT \_ R8G8B8A8 \_ SINT
+-   FORMATO DXGI \_ \_ B8G8R8A8 \_ SEM TIPO
+-   DXGI \_ FORMAT \_ B8G8R8A8 \_ UNORM
+-   FORMATO DXGI \_ \_ B8G8R8X8 \_ UNORM
+-   FORMATO DXGI \_ \_ B8G8R8A8 \_ UNORM \_ SRGB
+-   FORMATO DXGI \_ \_ B8G8R8X8 \_ SEM TIPO
+-   FORMATO DXGI \_ \_ B8G8R8X8 \_ UNORM \_ SRGB
+-   FORMATO DXGI \_ \_ R32 \_ SEM TIPO
+-   DXGI \_ FORMAT \_ R32 \_ FLOAT
+-   FORMATO DXGI \_ \_ R32 \_ UINT
+-   DXGI \_ FORMAT \_ R32 \_ SINT
+-   FORMATO DXGI \_ \_ R16 \_ SEM TIPO
+-   DXGI \_ FORMAT \_ R16 \_ FLOAT
+-   DXGI \_ FORMAT \_ R16 \_ UNORM
+-   FORMATO DXGI \_ \_ R16 \_ UINT
+-   FORMATO DXGI \_ \_ R16 \_ SNORM
+-   DXGI \_ FORMAT \_ R16 \_ SINT
+-   FORMATO DXGI \_ \_ R8 \_ SEM TIPO
+-   DXGI \_ FORMAT \_ R8 \_ UNORM
+-   FORMATO DXGI \_ \_ R8 \_ UINT
+-   FORMATO DXGI \_ \_ R8 \_ SNORM
+-   DXGI \_ FORMAT \_ R8 \_ SINT
+-   FORMATO DXGI \_ \_ A8 \_ UNORM
+-   FORMATO DXGI \_ \_ AYUV
+-   FORMATO DXGI \_ \_ YUY2
+-   FORMATO DXGI \_ \_ NV12
+-   FORMATO DXGI \_ \_ NV11
+-   FORMATO DXGI \_ \_ P016
+-   FORMATO DXGI \_ \_ P010
+-   FORMATO DXGI \_ \_ Y216
+-   FORMATO DXGI \_ \_ Y210
+-   FORMATO DXGI \_ \_ Y416
+-   FORMATO DXGI \_ \_ Y410
 
-Se [**ID3D11Device:: CheckFeatureSupport**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport) retornar **true** em **ExtendedResourceSharing**, você poderá compartilhar recursos que você criou com estes recursos e sinalizadores:
+Se [**ID3D11Device::CheckFeatureSupport**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport) retornar **TRUE** em **ExtendedResourceSharing,** você poderá compartilhar recursos criados com esses recursos e sinalizadores:
 
--   [**\_Padrão de uso de D3D11 \_**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_usage)
--   [**\_Recurso do \_ sombreador do D3D11 BIND \_**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_bind_flag)
--   [**\_Destino de \_ renderização de associação D3D11 \_**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_bind_flag)
--   [**D3D11 \_ de \_ regeração de recursos diversos de recurso \_ \_**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
--   [**D3D11 \_ associar \_ acesso não ordenado \_**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_bind_flag)
--   Níveis de mipmap (um ou mais níveis) nos recursos de textura 2D (especificados no membro **MipLevels** de [**D3D11 \_ TEXTURE2D \_ desc**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_texture2d_desc))
--   Matrizes de recursos de textura 2D (uma ou mais texturas) (especificado no membro de **matrizes** de [**D3D11 \_ TEXTURE2D \_ desc**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_texture2d_desc))
--   [**\_Decodificador de associação D3D11 \_**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_bind_flag)
--   [**\_ \_ \_ Conteúdo multirestricted do recurso D3D11 \_**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
--   [**\_ \_ Recurso compartilhado D3D11 misc \_ restrict \_ \_**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
+-   [**PADRÃO DE USO D3D11 \_ \_**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_usage)
+-   [**RECURSO DE SOMBREADOR \_ DE \_ VINCULAÇÃO D3D11 \_**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_bind_flag)
+-   [**DESTINO DE \_ RENDERIZAÇÃO DE \_ VINCULAÇÃO D3D11 \_**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_bind_flag)
+-   [**D3D11 \_ RESOURCE \_ MISC \_ GENERATE \_ MIPS**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
+-   [**D3D11 \_ BIND \_ UNORDERED \_ ACCESS**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_bind_flag)
+-   Níveis de Mipmap (um ou mais níveis) nos recursos de textura 2D (especificados no **membro MipLevels** [**do D3D11 \_ TEXTURE2D \_ DESC**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_texture2d_desc))
+-   Matrizes de recursos de textura 2D (uma ou mais texturas) (especificadas no membro **ArraySize** de [**D3D11 \_ TEXTURE2D \_ DESC**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_texture2d_desc))
+-   [**D3D11 \_ BIND \_ DECODER**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_bind_flag)
+-   [**CONTEÚDO RESTRITO DE \_ \_ MISC \_ DO RECURSO D3D11 \_**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
+-   [**D3D11 \_ RESOURCE \_ MISC \_ RESTRICT \_ SHARED \_ RESOURCE**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
 -   [**D3D11 \_ RESOURCE \_ MISC \_ RESTRICT \_ SHARED \_ RESOURCE \_ DRIVER**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
 
 > [!Note]  

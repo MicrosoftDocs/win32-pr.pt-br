@@ -1,19 +1,19 @@
 ---
 title: Buffers
-description: Os buffers contêm dados que são usados para descrever a geometria, indexar informações de geometria e constantes de sombreador. Esta seção descreve os buffers usados no Direct3D 11 e links para a documentação baseada em tarefas para cenários comuns.
+description: Buffers contêm dados usados para descrever geometria, indexação de informações de geometria e constantes de sombreador. Esta seção descreve os buffers usados no Direct3D 11 e os links para a documentação baseada em tarefas para cenários comuns.
 ms.assetid: 4ab4c9e5-9155-4bfd-b69b-40b3e8cdd4ba
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c544f00515f25c9c311f6c75fda109d3e88294b4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a3b45b7aff9883036103fd21b0827536ed3c86d8c6e91ee7bf181b55b2388fcf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045514"
 ---
 # <a name="buffers"></a>Buffers
 
-Os buffers contêm dados que são usados para descrever a geometria, indexar informações de geometria e constantes de sombreador. Esta seção descreve os buffers usados no Direct3D 11 e links para a documentação baseada em tarefas para cenários comuns.
+Buffers contêm dados usados para descrever geometria, indexação de informações de geometria e constantes de sombreador. Esta seção descreve os buffers usados no Direct3D 11 e os links para a documentação baseada em tarefas para cenários comuns.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -31,10 +31,10 @@ Os buffers contêm dados que são usados para descrever a geometria, indexar inf
 
 <dl> <dt>
 
-[Como: criar um buffer de constantes](overviews-direct3d-11-resources-buffers-constant-how-to.md)
+[Como criar um buffer constante](overviews-direct3d-11-resources-buffers-constant-how-to.md)
 </dt> <dt>
 
-[Como: criar um buffer de índice](overviews-direct3d-11-resources-buffers-index-how-to.md)
+[Como criar um buffer de índice](overviews-direct3d-11-resources-buffers-index-how-to.md)
 </dt> <dt>
 
 [Como criar um buffer de vértice](overviews-direct3d-11-resources-buffers-vertex-how-to.md)

@@ -1,7 +1,7 @@
 ---
 description: Função D3DXGetShaderConstantTable – Obtém a tabela de constante de sombreador inserida dentro de um sombreador.
 ms.assetid: eb965074-819f-44d2-889b-6c6eada4f062
-title: Função D3DXGetShaderConstantTable (D3DX9Shader. h)
+title: Função D3DXGetShaderConstantTable (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b397901578a1e6ce6fecc01ed25c99d4681d1c40
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a1375dfcf1bc75d6f2dee6f9923360b1b90fef01df5489f9f710175e7e1c2652
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045004"
 ---
 # <a name="d3dxgetshaderconstanttable-function"></a>Função D3DXGetShaderConstantTable
 
-Obtém a tabela de sombreador-constante inserida dentro de um sombreador.
+Obtém a tabela constante do sombreador inserida dentro de um sombreador.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,21 +41,21 @@ HRESULT D3DXGetShaderConstantTable(
 
 <dl> <dt>
 
-*pFunction* \[ no\]
+*pFunction* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Ponteiro para a função de fluxo DWORD.
+Ponteiro para o fluxo DWORD da função.
 
 </dd> <dt>
 
- *ppConstantTable* \[ fora\]
+ *ppConstantTable* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXCONSTANTTABLE**](id3dxconstanttable.md)\***
 
-Retorna a interface da tabela de constantes (consulte [**ID3DXConstantTable**](id3dxconstanttable.md)) que gerencia a tabela de constantes.
+Retorna a interface de tabela constante (consulte [**ID3DXConstantTable**](id3dxconstanttable.md)) que gerencia a tabela constante.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Retorna a interface da tabela de constantes (consulte [**ID3DXConstantTable**](i
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Comentários
 
-Uma tabela constante é gerada por [**D3DXCompileShader**](d3dxcompileshader.md) e inserida no corpo do sombreador. Se você precisar de espaço de endereço virtual adicional, consulte [**D3DXGetShaderConstantTableEx**](d3dxgetshaderconstanttableex.md).
+Uma tabela constante é gerada por [**D3DXCompileShader**](d3dxcompileshader.md) e inserida no corpo do sombreador. Se você precisar de espaço de endereço virtual adicional, [**consulte D3DXGetShaderConstantTableEx**](d3dxgetshaderconstanttableex.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,12 +75,12 @@ Uma tabela constante é gerada por [**D3DXCompileShader**](d3dxcompileshader.md)
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| parâmetro<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
-title: Marca de pau
-description: Marca de pau
+title: Marca pau
+description: Marca pau
 ms.assetid: c3278320-1a19-4d96-8a3b-3aafa9dd211f
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118475776"
 ---
-# <a name="pau-tag"></a>Marca de pau
+# <a name="pau-tag"></a>Marca pau
 
-\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Ndescrição**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descrição**
 </dt> <dd>
 
 Pausa a fala para o número especificado de milissegundos.
@@ -27,13 +27,13 @@ Pausa a fala para o número especificado de milissegundos.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-**\\ Pau =**_número_*_\\_*
+**\\ Pau=**_number_*_\\_*
 
 
 
 | Parte     | Descrição                          |
 |----------|--------------------------------------|
-| *number* | O número de milissegundos para pausar. |
+| *number* | O número de milissegundos a pausar. |
 
 
 
@@ -43,7 +43,7 @@ Pausa a fala para o número especificado de milissegundos.
 
 ### <a name="remarks"></a>Comentários
 
-Essa marca só tem suporte para a saída gerada por TTS. O intervalo de valores para o parâmetro pode variar dependendo do mecanismo de TTS instalado.
+Essa marca só tem suporte para a saída gerada pelo TTS. O intervalo de valores para o parâmetro pode variar dependendo do mecanismo TTS instalado.
 
  
 

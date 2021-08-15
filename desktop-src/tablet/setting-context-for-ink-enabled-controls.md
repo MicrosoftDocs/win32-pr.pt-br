@@ -4,12 +4,12 @@ ms.assetid: 453993a7-f055-4d84-870c-256d1ec17731
 title: Configurando contexto para controles de Ink-Enabled
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6776978834f030353a84c04f03e5ecf05ba060cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 306ae4c76ce5187c930c24a10631ec703f684cc8a3e4b0a94f46414bddbd058f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119091288"
 ---
 # <a name="setting-context-for-ink-enabled-controls"></a>Configurando contexto para controles de Ink-Enabled
 
@@ -27,7 +27,7 @@ theRecoContext.Factoid = "(!IS_URL)";
 
 
 > [!Note]  
-> Os escopos de entrada, conforme definido na enumeração [**InputScope**](/windows/win32/api/inputscope/ne-inputscope-inputscope) , substituem as entradas que estavam disponíveis nas versões anteriores do SDK do Windows XP Tablet PC Edition, embora essas paraestas continuem a funcionar para fornecer compatibilidade com versões anteriores.
+> os escopos de entrada, conforme definido na enumeração [**InputScope**](/windows/win32/api/inputscope/ne-inputscope-inputscope) , substituem as entradas que estavam disponíveis nas versões anteriores do SDK do Windows XP Tablet PC Edition, embora essas paraestas continuem a funcionar para fornecer compatibilidade com versões anteriores.
 
  
 

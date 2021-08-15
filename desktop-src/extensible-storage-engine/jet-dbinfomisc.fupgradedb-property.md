@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 702f66afe13a0355744477d23e79eb147a463328
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50c2d6ee59ead89c9da6c8a628b029e65ea78110442828bbeef4735f5ef76609
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118766388"
 ---
 # <a name="jet_dbinfomiscfupgradedb-property"></a>Propriedade JET_DBINFOMISC. fUpgradeDb
 

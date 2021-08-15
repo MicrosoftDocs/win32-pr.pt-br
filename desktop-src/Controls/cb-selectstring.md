@@ -3,7 +3,7 @@ title: Mensagem de CB_SELECTSTRING (WinUser. h)
 description: Pesquisa a lista de uma caixa de combinação de um item que começa com os caracteres em uma cadeia de caracteres especificada. Se um item correspondente for encontrado, ele será selecionado e copiado para o controle de edição.
 ms.assetid: c08dff72-7e44-40ed-8b64-513359292829
 keywords:
-- Controles de CB_SELECTSTRING de mensagens do Windows
+- controles de Windows de mensagem de CB_SELECTSTRING
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2913b95c02cdfd3c7a9c96a8652038a04d8fde8f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4bedef20646664e37405c97a97f9e49147cad8acc08c05e33172e44a34298f5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019963"
 ---
 # <a name="cb_selectstring-message"></a>\_Mensagem SelectString do CB
 
@@ -43,7 +43,7 @@ Um ponteiro para a cadeia de caracteres terminada em nulo que contém os caracte
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a cadeia de caracteres for encontrada, o valor de retorno será o índice do item selecionado. Se a pesquisa não for bem-sucedida, o valor de retorno será CB \_ Err e a seleção atual não será alterada.
 
@@ -59,9 +59,9 @@ Se você criar a caixa de combinação com um estilo desenhado pelo proprietári
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

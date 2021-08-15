@@ -1,9 +1,9 @@
 ---
-title: 'Função StructuredBuffer:: Operator'
+title: Função StructuredBuffer::Operator
 description: Retorna uma variável de recurso somente leitura de um StructuredBuffer.
 ms.assetid: e2a1b0f7-f374-44a3-b567-8a2318e8b2b8
 keywords:
-- Função Operator HLSL
+- Função de operador HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1f0d75bdfbcd3bfc560e896416f241f1291120d6
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: c852a56769df2179daf6055542c9ebf4724a353312e295daecd59af08163711c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104085082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118509112"
 ---
-# <a name="structuredbufferoperator--function"></a>Função StructuredBuffer:: Operator
+# <a name="structuredbufferoperator--function"></a>Função StructuredBuffer::Operator
 
-Retorna uma variável de recurso somente leitura de um [**StructuredBuffer**](sm5-object-structuredbuffer.md).
+Retorna uma variável de recurso somente leitura de [**um StructuredBuffer.**](sm5-object-structuredbuffer.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -36,7 +36,7 @@ R Operator[](
 
 <dl> <dt>
 
-*pos* \[ no\]
+*pos* \[ Em\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -45,7 +45,7 @@ A posição do índice.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **R**
 
@@ -57,7 +57,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

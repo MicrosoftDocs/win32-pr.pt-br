@@ -1,9 +1,9 @@
 ---
 title: Função WaveActiveBitXor
-description: Retorna o XOR bit a bit de todos os valores da expressão em todas as pistas ativas na onda atual e a Replica de volta para todas as pistas ativas.
+description: Retorna o XOR bit a bit de todos os valores da expressão em todas as faixas ativas na onda atual e o replica de volta para todas as faixas ativas.
 ms.assetid: A6807D17-1E6E-4997-AB52-32FAB5857219
 keywords:
-- HLSL da função WaveActiveBitXor
+- Função WaveActiveBitXor HLSL
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "118504876"
 ---
 # <a name="waveactivebitxor-function"></a>Função WaveActiveBitXor
 
-Retorna o XOR bit a bit de todos os valores da expressão em todas as pistas ativas na onda atual e a Replica de volta para todas as pistas ativas.
+Retorna o XOR bit a bit de todos os valores da expressão em todas as faixas ativas na onda atual e o replica de volta para todas as faixas ativas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,11 +45,11 @@ A expressão a ser avaliada.
 
 ## <a name="return-value"></a>Valor retornado
 
-O valor de XOR de bits.
+O valor XOR bit a bit.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função tem suporte do modelo de sombreador 6,0 em todos os estágios de sombreador. 
+Essa função tem suporte do modelo de sombreador 6.0 em todos os estágios do sombreador. 
 
 
 
@@ -59,10 +59,10 @@ Essa função tem suporte do modelo de sombreador 6,0 em todos os estágios de s
 
 <dl> <dt>
 
-[Visão geral do modelo do sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
+[Visão geral do Modelo de Sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
-[Modelo do sombreador 6](shader-model-6-0.md)
+[Modelo de sombreador 6](shader-model-6-0.md)
 </dt> </dl>
 
  

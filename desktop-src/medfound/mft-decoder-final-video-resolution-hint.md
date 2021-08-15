@@ -4,12 +4,12 @@ ms.assetid: 067867D8-155C-4406-BE07-720016B2AEBC
 title: Atributo MFT_DECODER_FINAL_VIDEO_RESOLUTION_HINT (Mftransform. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7bbc0f01ef2a1d7062c6ab58c528b015383fc68
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 847a2925f2249c741e9a45a1dcc4826a1cbe3d6bb12cda4d8017ee0fb5de0069
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973135"
 ---
 # <a name="mft_decoder_final_video_resolution_hint-attribute"></a>\_Atributo de \_ \_ dica de resolução de vídeo final \_ do DEcodificador de MFT \_
 
@@ -36,9 +36,9 @@ Para definir este atributo:
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                        |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                        |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                |
-| parâmetro<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
 
 
 

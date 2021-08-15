@@ -1,11 +1,11 @@
 ---
-title: Atributo Partial-Attribute-Set
-description: Rastreia o estado de replicação interno de réplicas parciais (ou seja, em GCs). Atributo do objeto NC de réplica parcial. Define o conjunto de atributos presentes em um NC de réplica parcial específico.
+title: Atributo parcial-conjunto de atributos
+description: Controla o estado de replicação interna de réplicas parciais (ou seja, em GCs). Atributo do objeto NC de réplica parcial. Define o conjunto de atributos presentes em um NC de réplica parcial específico.
 ms.assetid: 2840d2b7-e186-4ef2-9107-f1e5c0c2f760
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo Partial-Attribute-Set
-- Esquema do AD do atributo partialAttributeSet
+- Atributo de AD de atributos de conjunto de atributos parciais
+- Esquema de AD do atributo partialAttributeSet
 topic_type:
 - apiref
 api_name:
@@ -21,22 +21,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119325446"
 ---
-# <a name="partial-attribute-set-attribute"></a>Atributo Partial-Attribute-Set
+# <a name="partial-attribute-set-attribute"></a>Atributo parcial-conjunto de atributos
 
-Rastreia o estado de replicação interno de réplicas parciais (ou seja, em GCs). Atributo do objeto NC de réplica parcial. Define o conjunto de atributos presentes em um NC de réplica parcial específico.
+Controla o estado de replicação interna de réplicas parciais (ou seja, em GCs). Atributo do objeto NC de réplica parcial. Define o conjunto de atributos presentes em um NC de réplica parcial específico.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | Conjunto de atributos parcial                                 |
-| Ldap-Display-Name | partialAttributeSet                                   |
+| CN                | Conjunto de atributos parciais                                 |
+| LDAP-Display-Name | partialAttributeSet                                   |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.                      |
 | Frequência de atualização  | Durante a replicação                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.640                                |
-| System-Id-Guid    | 19405b9e-3cfa-11d1-a9c0-0000f80367c1                  |
-| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-ID-GUID    | 19405b9e-3cfa-11d1-a9c0-0000f80367c1                  |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 
@@ -44,7 +44,7 @@ Rastreia o estado de replicação interno de réplicas parciais (ou seja, em GCs
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**Adam**](#adam)
+-   [**ADAM**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,10 +59,10 @@ Rastreia o estado de replicação interno de réplicas parciais (ou seja, em GCs
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Verdadeiro                            |
-| Tem valor único       | Verdadeiro                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No Catálogo Global      | Verdadeiro                            |
-| Descritor de segurança NT | O:BAG:BAD:S:                    |
+| No catálogo global      | Verdadeiro                            |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -80,10 +80,10 @@ Rastreia o estado de replicação interno de réplicas parciais (ou seja, em GCs
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Verdadeiro                            |
-| Tem valor único       | Verdadeiro                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No Catálogo Global      | Verdadeiro                            |
-| Descritor de segurança NT | O:BAG:BAD:S:                    |
+| No catálogo global      | Verdadeiro                            |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,7 +92,7 @@ Rastreia o estado de replicação interno de réplicas parciais (ou seja, em GCs
 
 
 
-## <a name="adam"></a>Adam
+## <a name="adam"></a>ADAM
 
 
 
@@ -101,10 +101,10 @@ Rastreia o estado de replicação interno de réplicas parciais (ou seja, em GCs
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Verdadeiro                            |
-| Tem valor único       | Verdadeiro                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No Catálogo Global      | Verdadeiro                            |
-| Descritor de segurança NT | O:BAG:BAD:S:                    |
+| No catálogo global      | Verdadeiro                            |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

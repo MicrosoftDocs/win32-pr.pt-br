@@ -13,7 +13,7 @@ ms.locfileid: "118501024"
 ---
 # <a name="xmhalf4-operators"></a>Operadores XMHALF4
 
-A estrutura [**XMHALF4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf4) expõe os operadores a seguir.
+A [**estrutura XMHALF4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf4) expõe os operadores a seguir.
 
 > [!Note]  
 > Os operadores listados aqui só estão disponíveis em C++.
@@ -26,7 +26,7 @@ A estrutura [**XMHALF4**](/windows/desktop/api/DirectXPackedVector/ns-directxpac
 
 | Métodos                                              | Descrição                                                                                                        |
 |------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| [**operador =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmhalf4-operator-assign)<br/> | Atribui os dados do componente de vetor de uma instância do `XMHALF4` à instância atual do `XMHALF4` . <br/> |
+| [**operator =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmhalf4-operator-assign)<br/> | Atribui os dados do componente de vetor de uma instância `XMHALF4` do à instância atual do `XMHALF4` . <br/> |
 
 
 

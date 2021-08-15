@@ -1,11 +1,11 @@
 ---
-title: Atributo time-Vol-Change
-description: Esse atributo indica a última vez em que um arquivo no volume de armazenamento remoto foi alterado.
+title: Atributo Time-Vol-Change
+description: Esse atributo indica a última vez que um arquivo no volume de armazenamento remoto foi alterado.
 ms.assetid: e0a985fb-1b50-457e-80db-e71ab5570c51
 ms.tgt_platform: multiple
 keywords:
-- Data-Vol-alterar esquema de atributo do AD
-- Esquema de AD do atributo timeVolChange
+- Esquema do AD do atributo Time-Vol-Change
+- Esquema do AD do atributo timeVolChange
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 315715996e685949f35f7088fff5368b95c5ba54
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c4db9a1eb7a7c42d72557368a88353a5fb36c073fbc41136bb83c5546f3fb527
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081340"
 ---
-# <a name="time-vol-change-attribute"></a>Atributo time-Vol-Change
+# <a name="time-vol-change-attribute"></a>Atributo Time-Vol-Change
 
-Esse atributo indica a última vez em que um arquivo no volume de armazenamento remoto foi alterado.
+Esse atributo indica a última vez que um arquivo no volume de armazenamento remoto foi alterado.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | Tempo-Vol-alteração                      |
-| LDAP-Display-Name | timeVolChange                        |
+| CN                | Time-Vol-Change                      |
+| Ldap-Display-Name | timeVolChange                        |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.502               |
-| System-ID-GUID    | ddac0cf0-af8f-11d0-afeb-00c04fd930c9 |
+| System-Id-Guid    | ddac0cf0-af8f-11d0-afeb-00c04fd930c9 |
 | Syntax            | [**Intervalo**](s-interval.md)       |
 
 
@@ -58,15 +58,15 @@ Esse atributo indica a última vez em que um arquivo no volume de armazenamento 
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
-| É indexado             | True                                                           |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| Tem valor único       | Verdadeiro                                                           |
+| É indexado             | Verdadeiro                                                           |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Esse atributo indica a última vez em que um arquivo no volume de armazenamento 
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
-| É indexado             | True                                                           |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| Tem valor único       | Verdadeiro                                                           |
+| É indexado             | Verdadeiro                                                           |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Esse atributo indica a última vez em que um arquivo no volume de armazenamento 
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
-| É indexado             | True                                                           |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| Tem valor único       | Verdadeiro                                                           |
+| É indexado             | Verdadeiro                                                           |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Esse atributo indica a última vez em que um arquivo no volume de armazenamento 
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
-| É indexado             | True                                                           |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| Tem valor único       | Verdadeiro                                                           |
+| É indexado             | Verdadeiro                                                           |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Esse atributo indica a última vez em que um arquivo no volume de armazenamento 
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
-| É indexado             | True                                                           |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| Tem valor único       | Verdadeiro                                                           |
+| É indexado             | Verdadeiro                                                           |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Esse atributo indica a última vez em que um arquivo no volume de armazenamento 
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
-| É indexado             | True                                                           |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| Tem valor único       | Verdadeiro                                                           |
+| É indexado             | Verdadeiro                                                           |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 

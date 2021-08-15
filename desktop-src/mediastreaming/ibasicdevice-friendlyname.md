@@ -3,9 +3,9 @@ title: Método FriendlyName IBasicDevice
 description: Recupera o nome amigável do dispositivo.
 ms.assetid: 693806E1-CA66-457D-A25B-D79064776965
 keywords:
-- API de streaming de mídia do método FriendlyName
-- API de streaming de mídia do método FriendlyName, interface IBasicDevice
-- API de streaming de mídia da interface IBasicDevice, método FriendlyName
+- API de Streaming de Mídia do método FriendlyName
+- API de Streaming de Mídia do método FriendlyName, interface IBasicDevice
+- API de Streaming de Mídia da interface IBasicDevice, método FriendlyName
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118735606"
 ---
-# <a name="ibasicdevicefriendlyname-method"></a>Método IBasicDevice:: FriendlyName
+# <a name="ibasicdevicefriendlyname-method"></a>Método IBasicDevice::FriendlyName
 
 Recupera o nome amigável do dispositivo.
 
@@ -41,7 +41,7 @@ HRESULT FriendlyName(
 
 <dl> <dt>
 
-*valor* \[ do fora\]
+*value* \[ out\]
 </dt> <dd>
 
 Recebe um ponteiro para o nome amigável do dispositivo.
@@ -50,7 +50,7 @@ Recebe um ponteiro para o nome amigável do dispositivo.
 
 ## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 

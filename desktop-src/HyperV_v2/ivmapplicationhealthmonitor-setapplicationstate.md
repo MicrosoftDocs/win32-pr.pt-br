@@ -1,7 +1,7 @@
 ---
-description: Define o estado de saúde de um aplicativo que está em execução em uma máquina virtual.
+description: Define o estado de integridade de um aplicativo que está sendo executado em uma máquina virtual.
 ms.assetid: 012190CA-9CBF-47B6-9C5D-F75D73B0499B
-title: Método IVmApplicationHealthMonitor::SetApplicationState
+title: 'Método IVmApplicationHealthMonitor:: setapplicationstate'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118392351"
 ---
-# <a name="ivmapplicationhealthmonitorsetapplicationstate-method"></a>Método IVmApplicationHealthMonitor::SetApplicationState
+# <a name="ivmapplicationhealthmonitorsetapplicationstate-method"></a>Método IVmApplicationHealthMonitor:: setapplicationstate
 
-Define o estado de saúde de um aplicativo que está em execução em uma máquina virtual.
+Define o estado de integridade de um aplicativo que está sendo executado em uma máquina virtual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,33 +44,33 @@ HRESULT SetApplicationState(
 *ID* \[ em\]
 </dt> <dd>
 
-Uma **representação BSTR** do **GUID** que identifica o aplicativo. É responsabilidade do aplicativo de chamada criar e manter os identificadores que ele usa para os aplicativos que estão sendo monitorados.
+Uma representação **BSTR** do **GUID** que identifica o aplicativo. É responsabilidade do aplicativo de chamada criar e manter os identificadores que ele usa para os aplicativos que estão sendo monitorados.
 
 </dd> <dt>
 
-*Nome* \[ Em\]
+*Nome* \[ do no\]
 </dt> <dd>
 
-O nome de exibição do aplicativo. Esse nome é usado em uma entrada de log de eventos informacional para a alteração de estado.
+O nome de exibição do aplicativo. Esse nome é usado em uma entrada de log de eventos informativa para a alteração de estado.
 
 </dd> <dt>
 
-*Estado* \[ Em\]
+*Estado* \[ no\]
 </dt> <dd>
 
-Um valor da [**enumeração \_ APPLICATION STATE**](application-state.md) que especifica o novo estado de saúde do aplicativo.
+Um valor da enumeração [**de \_ estado do aplicativo**](application-state.md) que especifica o novo estado de integridade do aplicativo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
+Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
 ## <a name="remarks"></a>Comentários
 
-O estado dos aplicativos em execução na máquina virtual é refletido no valor da propriedade **OperationalStatus** 1 da \[ \] classe [**\_ HeartbeatComponent Msvm.**](msvm-heartbeatcomponent.md)
+O estado dos aplicativos em execução na máquina virtual é refletido no valor da propriedade **OperationalStatus** \[ 1 \] da classe [**Msvm \_ HeartbeatComponent**](msvm-heartbeatcomponent.md) .
 
-Para usar esse elemento de programação, Windows 8 componentes de integração devem ser instalados na máquina virtual em que o aplicativo está sendo executado.
+para usar esse elemento de programação, os componentes de integração do Windows 8 devem ser instalados na máquina virtual em que o aplicativo está sendo executado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -78,10 +78,10 @@ Para usar esse elemento de programação, Windows 8 componentes de integração 
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                                |
-| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                      |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                                |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                      |
 | Versão<br/>                  | Componentes de integração para Windows 8<br/>                                                           |
-| Idl<br/>                      | <dl> <dt>VmApplicationHealthMonitor.idl</dt> </dl> |
+| INSERI<br/>                      | <dl> <dt>VmApplicationHealthMonitor. idl</dt> </dl> |
 
 
 

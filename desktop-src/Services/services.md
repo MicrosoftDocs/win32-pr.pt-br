@@ -4,12 +4,12 @@ ms.assetid: 711391da-05c6-4d89-88d6-c68c2e5c2f86
 title: Serviços (serviços)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04c13f9f09bd2731a60b80fbc198ca7ce709bd06
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e829f1a6a29aca521cf18600ffbf5ed7d6c271c0d2b9a607e6ccae57d858aa5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103836968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118888533"
 ---
 # <a name="services-services"></a>Serviços (serviços)
 
@@ -19,9 +19,9 @@ Um *serviço de driver* está em conformidade com os protocolos de driver de dis
 
 Os gatilhos agora podem ser usados para controlar o início do serviço. Para obter mais informações, consulte [configuração de serviço](service-configuration.md).
 
--   [O que há de novo nos serviços do Windows 8](what-s-new-in-services-for-windows-8.md)
--   [O que há de novo nos serviços do Windows 7](what-s-new-in-services.md)
--   [Alterações de serviço do Windows Vista](service-changes-for-windows-vista.md)
+-   [O que há de novo em serviços para Windows 8](what-s-new-in-services-for-windows-8.md)
+-   [o que há de novo nos serviços para Windows 7](what-s-new-in-services.md)
+-   [alterações de serviço para o Windows Vista](service-changes-for-windows-vista.md)
 -   [Sobre serviços](about-services.md)
 -   [Usando serviços](using-services.md)
 -   [Referência de serviço](service-reference.md)

@@ -4,12 +4,12 @@ ms.assetid: d94e015b-6735-4a88-9d24-b73f0b5f6542
 title: Trabalhando com a seleção para backup
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4bd20bd0c9139f8ed1c9f56cc8f499f1b6aaf14
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 82081bb9cef51572afc2a8b5c08cf845ee22736dd8fdc20edf60fa0082ce8c9b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104461132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118842310"
 ---
 # <a name="working-with-selectability-for-backup"></a>Trabalhando com a seleção para backup
 
@@ -48,11 +48,11 @@ O caso "myWriter" abordado em um [caminho lógico de componentes](logical-pathin
 |----------------|-------------------------|-----------------------|
 | Executáveis  | ""                      | N                     |
 | "ConfigFiles"  | Executáveis           | N                     |
-| "LicenseInfo"  | ""                      | S                     |
-| “Segurança”     | ""                      | S                     |
+| "LicenseInfo"  | ""                      | Y                     |
+| “Segurança”     | ""                      | Y                     |
 | UserInfo     | “Segurança”              | N                     |
 | Certificado | “Segurança”              | N                     |
-| "writerData"   | ""                      | S                     |
+| "writerData"   | ""                      | Y                     |
 | Conjunto1         | "writerData"            | N                     |
 | Janeiro          | "writerData \\ conjunto1"      | N                     |
 | Dez          | "writerData \\ conjunto1"      | N                     |
@@ -60,7 +60,7 @@ O caso "myWriter" abordado em um [caminho lógico de componentes](logical-pathin
 | Janeiro          | "writerData \\ conjunto2"      | N                     |
 | Dez          | "writerData \\ conjunto2"      | N                     |
 | Consultá        | "writerData \\ QueryLogs" | N                     |
-| Usos        | "writerData"            | S                     |
+| Usos        | "writerData"            | Y                     |
 | Janeiro          | "uso de writerData \\ "     | N                     |
 | Dez          | "uso de writerData \\ "     | N                     |
 

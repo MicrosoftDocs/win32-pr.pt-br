@@ -4,12 +4,12 @@ description: Fornece uma abordagem passo a passo para resolver o comportamento d
 ms.assetid: c52ffeb8-ecee-4398-a7df-388b523c737c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 005fe5191b3bdccf2bb1643be50817a3b0405336
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: d438dd41466809805f159fde4a2db698d11b1f7899e48e1f96ccce2c811111cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "105749417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042794"
 ---
 # <a name="sso-password-change-behavior"></a>Comportamento de alteração de senha de SSO
 
@@ -29,7 +29,7 @@ A lista a seguir representa uma abordagem passo a passo para resolver o comporta
     > [!Note]  
     > O [**sinalizador \_ \_ \_ \_ \_ \_ somente leitura das propriedades do campo de entrada da interface do usuário do EAP**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_config_input_field_data) é para os campos de membro que precisam ser alterados.
 
-     
+     
 
 -   Depois de coletar o contexto de interface do usuário informtion, o processo da interface do usuário renderiza uma interface de usuário para coletar informações de alteração de senha. Essas informações são populadas no parâmetro *NewCreds* da estrutura de [**\_ \_ \_ req expiração de credenciais EAP**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_cred_expiry_req) .
 -   O processo da interface do usuário passa a estrutura [**\_ \_ resp de credenciais de EAP**](eap-cred-resp.md) de volta para o EAPHost por meio de [**EapHostPeerQueryUIBlobFromInteractiveUIInputFields**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerqueryuiblobfrominteractiveuiinputfields).
@@ -45,9 +45,9 @@ A lista a seguir representa uma abordagem passo a passo para resolver o comporta
 [SSO e PLAP](understanding-sso-and-plap.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

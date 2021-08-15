@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: f9455cb7f34344e49363573432c00c6a86138a2a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 57f4c34deefe6850605a4bbe30837f266346b87f8347d8eb9f1f2effb71df697
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968755"
 ---
 # <a name="using-image-factory-sample"></a>Usar exemplo da fábrica de imagens
 
@@ -22,7 +22,7 @@ Demonstra como usar a interface [**IShellItemImageFactory**](/windows/desktop/ap
 
 Este tópico inclui as seções a seguir.
 
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Baixando o exemplo](#downloading-the-sample)
 -   [Compilando o exemplo](#building-the-sample)
 -   [Executando o exemplo](#running-the-sample)

@@ -35,8 +35,8 @@ ms.locfileid: "118770044"
 
 Inicializa uma nova instância da classe EsentSPAvailExtCorruptedException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentSPAvailExtCorruptedException()
 
 [Classe EsentSPAvailExtCorruptedException](./esentspavailextcorruptedexception-class.md)
 
-[Membros do EsentSPAvailExtCorruptedException](./esentspavailextcorruptedexception-members.md)
+[Membros EsentSPAvailExtCorruptedException](./esentspavailextcorruptedexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

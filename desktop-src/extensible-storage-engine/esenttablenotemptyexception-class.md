@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: Classe EsentTableNotEmptyException'
+description: 'Saiba mais sobre: classe EsentTableNotEmptyException'
 title: Classe EsentTableNotEmptyException
 TOCTitle: EsentTableNotEmptyException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentTableNotEmptyException
@@ -33,20 +33,20 @@ ms.locfileid: "118488758"
 ---
 # <a name="esenttablenotemptyexception-class"></a>Classe EsentTableNotEmptyException
 
-Classe base para JET_err. Exceções TableNotEmpty.
+Classe base para JET_err. TableNotEmpty exceções.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
-      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft.Isam.Esent.Interop.EsentApiException](./esentapiexception-class.md)  
-          [Microsoft.Isam.Esent.Interop.EsentUsageException](./esentusageexception-class.md)  
-            Microsoft.Isam.Esent.Interop.EsentTableNotEmptyException  
+    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
+      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft. ISAM. ESENT. Interop. EsentApiException](./esentapiexception-class.md)  
+          [Microsoft. ISAM. ESENT. Interop. EsentUsageException](./esentusageexception-class.md)  
+            Microsoft. ISAM. ESENT. Interop. EsentTableNotEmptyException  
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -72,6 +72,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros EsentTableNotEmptyException](./esenttablenotemptyexception-members.md)
+[Membros do EsentTableNotEmptyException](./esenttablenotemptyexception-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

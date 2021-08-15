@@ -4,23 +4,23 @@ description: Aqui está uma coleção de algumas das diretrizes importantes no g
 ms.assetid: 4705a807-5949-4957-8ea6-70871beaf8e0
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: d1006b7ad9de30941b6ceb4cc7282ec578450840
-ms.sourcegitcommit: 8755905962e156f29203705d09d6df8b7d0e2fca
+ms.openlocfilehash: 712b31a7a5166e41e590470aea48f60a1f159850da3ea6917b36ece9ada80fa0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105763322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119332466"
 ---
 # <a name="ux-checklist-for-desktop-applications"></a>Lista de verificação de UX para aplicativos de área de trabalho
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
 
 Aqui está uma coleção de algumas das diretrizes importantes no guia do UX. Você pode usar isso como uma lista de verificação para verificar se a interface do usuário do programa obtém esses itens importantes.
 
 ## <a name="windows"></a>Windows
 
--   **Suporte à resolução mínima efetiva do Windows de 800x600 pixels.** Para interfaces de usuário críticas (UIs) que devem funcionar no modo de segurança, dê suporte a uma [resolução efetiva](glossary.md) de 640x480 pixels. Certifique-se de considerar o espaço usado pela barra de tarefas reservando 48 [pixels relativos](glossary.md) verticais para o Windows exibido com a barra de tarefas.
+-   **suporte à resolução mínima Windows efetiva de 800x600 pixels.** Para interfaces de usuário críticas (UIs) que devem funcionar no modo de segurança, dê suporte a uma [resolução efetiva](glossary.md) de 640x480 pixels. Certifique-se de considerar o espaço usado pela barra de tarefas reservando 48 [pixels relativos](glossary.md) verticais para o Windows exibido com a barra de tarefas.
 -   **Otimize layouts de janela redimensionáveis para uma resolução efetiva de 1024x768 pixels.** Redimensione automaticamente essas janelas para resoluções de tela mais baixa de uma maneira que ainda está funcional.
 -   **Certifique-se de testar suas janelas em 96 pontos por polegada (DPI) (em 800x600 pixels), 120 DPI (a 1024x768 pixels) e 144 DPI (em 1200x900 pixels).** Verifique se há problemas de layout, como recorte de controles, texto e janelas, e alargamento de ícones e bitmaps.
 -   **Para programas com cenários de uso móvel e de toque, otimize para 120 dpi.** As telas de alto dpi atualmente são predominantes em PCs móveis e de toque.
@@ -38,10 +38,10 @@ Aqui está uma coleção de algumas das diretrizes importantes no guia do UX. Vo
 
 ## <a name="text"></a>Texto
 
--   **Use termos comuns e de conversação quando puder.** Concentre-se nas metas do usuário, não na tecnologia. Isso é especialmente eficaz se você estiver explicando uma ação ou um conceito técnico complexo. Imagine-se examinando o ressalto do usuário e explicando como realizar a tarefa.
+-   **Use termos comuns e de conversação quando puder.** Concentre-se nas metas do usuário, não na tecnologia. Isso é especialmente eficaz se você estiver explicando uma ação ou um conceito técnico complexo. Imagine examinando o ressalto do usuário e explicando como realizar a tarefa.
 -   **Seja educado, de apoio e incentivador.** O usuário nunca deve se sentir à vontade, à culpa ou intimidação.
 -   **Remova o texto redundante.** Procure texto redundante em títulos de janela, instruções principais, instruções complementares, áreas de conteúdo, links de comando e botões de confirmação. Em geral, deixe texto completo nas instruções principais e nos controles interativos e remova qualquer redundância dos outros locais.
--   **Use a capitalização de estilo de título para títulos e a capitalização de estilo de frase para todos os outros elementos da interface do usuário.** Fazer isso é mais apropriado para o tom do Windows.
+-   **Use a capitalização de estilo de título para títulos e a capitalização de estilo de frase para todos os outros elementos da interface do usuário.** fazer isso é mais apropriado para o tom de Windows.
     -   **Exceção:** Para aplicativos herdados, você pode usar a capitalização de estilo de título para botões de comando, menus e títulos de coluna, se necessário, para evitar a mistura de estilos de capitalização.
 -   **Para nomes de recursos e tecnologias, seja conservador em maiúsculas.** Normalmente, somente os principais componentes devem ser capitalizados (usando a capitalização de estilo de título).
 -   **Para nomes de recursos e tecnologias, seja consistente em maiúsculas.** Se o nome aparecer mais de uma vez em uma tela de interface do usuário, ele sempre deverá aparecer da mesma maneira. Da mesma forma, em todas as telas de interface do usuário no programa, o nome deve ser apresentado consistentemente.
@@ -49,7 +49,7 @@ Aqui está uma coleção de algumas das diretrizes importantes no guia do UX. Vo
     -   **Exceções:** Barra de endereços, barra de links, faixa de faixas.
 -   **Não use todas as letras maiúsculas para as teclas do teclado.** Em vez disso, siga as letras maiúsculas usadas por teclados padrão ou em minúsculas se a chave não estiver rotulada como um painel.
 -   **As reticências significam inintegridade.** Use reticências no texto da interface do usuário da seguinte maneira:
-    -   **Comandos.** Indique que um comando precisa de informações adicionais. Não use reticências sempre que uma ação exibir outra janela — somente quando forem necessárias informações adicionais. Os comandos cujo verbo implícito é mostrar outra janela não têm uma elipse, como avançado, ajuda, opções, propriedades ou configurações.
+    -   **Comandos.** Indique que um comando precisa de informações adicionais. Não use reticências sempre que uma ação exibir outra janela — somente quando forem necessárias informações adicionais. os comandos cujo verbo implícito é mostrar outra janela não têm uma elipse, como avançado, ajuda, opções, propriedades ou Configurações.
     -   **Dado.** Indica que o texto está truncado.
     -   **Las.** Indique que uma tarefa está em andamento (por exemplo, "pesquisando...").
 
@@ -173,7 +173,7 @@ onde \[ fazer isso \] e \[ não fazer isso \] são respostas específicas para a
 -   **Verifique se as propriedades são necessárias.** Não contorne suas páginas de propriedades com propriedades desnecessárias apenas para evitar tomar decisões de design rígido.
 -   **Apresente as propriedades em termos de metas de usuário em vez de tecnologia.** Só porque uma propriedade configura uma tecnologia específica não significa que você deve apresentar a propriedade em termos dessa tecnologia.
     -   Se você precisar apresentar as configurações em termos de tecnologia (talvez porque seus usuários reconheçam o nome da tecnologia), inclua uma breve descrição do benefício do usuário.
--   **Use rótulos de guias específicos e significativos.** Evite rótulos de guia genéricos que possam se aplicar a qualquer guia, como geral, avançado ou configurações.
+-   **Use rótulos de guias específicos e significativos.** evite rótulos de guia genéricos que possam se aplicar a qualquer guia, como geral, avançado ou Configurações.
 -   **Evite páginas gerais.** Não é necessário ter uma página geral. Use uma página Geral somente se:
     -   As propriedades se aplicam a várias tarefas e são significativas para a maioria dos usuários. Não coloque propriedades especializadas ou avançadas em uma página geral, mas você pode torná-las acessíveis por meio de um botão de comando na página geral.
     -   As propriedades não se ajustam a uma categoria mais específica. Em vez disso, use esse nome para a página.
@@ -187,13 +187,13 @@ onde \[ fazer isso \] e \[ não fazer isso \] são respostas específicas para a
 -   **Considere as alternativas leves primeiro, como caixas de diálogo, painéis de tarefas ou páginas únicas.** Os assistentes são uma interface do usuário pesada, melhor usada para tarefas de várias etapas executadas com pouca frequência. Você não precisa usar assistentes — você pode fornecer informações úteis e assistência em qualquer interface do usuário.
 -   **Use o próximo somente ao avançar para a próxima página sem compromisso.** Avançar para a próxima página é considerado um compromisso quando seu efeito não pode ser desfeito ao clicar em voltar ou cancelar.
 -   **Use novamente para corrigir erros.** Além de corrigir erros, os usuários não precisam clicar em voltar para fazer o progresso em uma tarefa.
--   **Quando os usuários estão confirmando uma tarefa, use um botão confirmar que seja uma resposta específica para a instrução principal (por exemplo, imprimir, conectar ou iniciar).** Não use rótulos genéricos como Next (que não implicam em compromisso) ou Finish (que não é específico) para confirmar uma tarefa. Os rótulos desses botões de confirmação devem fazer sentido por conta própria. Sempre iniciar os rótulos do botão de confirmação com um verbo. **Exceção**
+-   **quando os usuários estão confirmando uma tarefa, use um botão confirmar que seja uma resposta específica para a instrução principal (por exemplo, imprimir, Conexão ou iniciar).** Não use rótulos genéricos como Next (que não implicam em compromisso) ou Finish (que não é específico) para confirmar uma tarefa. Os rótulos desses botões de confirmação devem fazer sentido por conta própria. Sempre iniciar os rótulos do botão de confirmação com um verbo. **Exceções:**
     -   Use concluir quando as respostas específicas ainda forem genéricas, como salvar, selecionar, escolher ou obter.
     -   Use concluir para alterar uma configuração específica ou uma coleção de configurações.
 -   **Use links de comando somente para escolhas, não para compromissos.** Botões de confirmação específicos indicam o compromisso muito melhor do que os links de comando em um assistente.
 -   **Ao usar links de comando, oculte o botão Avançar, mas deixe o botão Cancelar.**
 -   **Use fechar para obter Follow-Up e páginas de conclusão.** Não use cancelar porque fechar a janela não abandonará nenhuma alteração ou ação feita neste momento. Não use o Done porque não é um verbo imperativo.
--   **Não use "assistente" em nomes de assistente.** Por exemplo, use "conectar-se a uma rede" em vez de "Assistente de configuração de rede". No entanto, é aceitável referir-se a assistentes como assistentes. Por exemplo: "se você estiver configurando uma rede pela primeira vez, poderá obter ajuda usando o assistente conectar-se a uma rede".
+-   **Não use "assistente" em nomes de assistente.** por exemplo, use "Conexão para uma rede" em vez de "assistente de configuração de rede". No entanto, é aceitável referir-se a assistentes como assistentes. por exemplo: "se você estiver configurando uma rede pela primeira vez, poderá obter ajuda usando o Conexão para um assistente de rede".
 -   **Preserve as seleções de usuário por meio de navegação.** Por exemplo, se o usuário fizer alterações, clicar em voltar e, em seguida, essas alterações deverão ser preservadas. Os usuários não esperam ter de reinserir as alterações, a menos que decidam explicitamente desmarcá-las.
 
 ## <a name="wizard-pages"></a>Páginas do Assistente
@@ -226,7 +226,7 @@ onde \[ fazer isso \] e \[ não fazer isso \] são respostas específicas para a
     -   Abort, Kill e Terminate (use parar em vez disso)
     -   Catastrófico, fatal (em vez disso, use grave)
 
-Esses termos são desnecessários e ao contrário do Tom incentivado do Windows. Em vez disso, um ícone de erro, [quando usado corretamente](vis-std-icons.md), comunica suficientemente que há um problema.
+Esses termos são desnecessários e ao contrário do Tom incentivado de Windows. Em vez disso, um ícone de erro, [quando usado corretamente](vis-std-icons.md), comunica suficientemente que há um problema.
 
 -   **Não acompanha mensagens de erro com efeitos de som.** Fazer isso é dissonante e desnecessário.
 
@@ -247,7 +247,7 @@ Esses termos são desnecessários e ao contrário do Tom incentivado do Windows.
 
 ## <a name="icons"></a>Ícones
 
--   **Todos os ícones devem aderir às diretrizes de ícone do** [estilo Aero](vis-icons.md). Substitua todos os ícones de estilo do Windows XP.
+-   **Todos os ícones devem aderir às diretrizes de ícone do** [estilo Aero](vis-icons.md). substituir todos os ícones de estilo do Windows XP.
 -   **Escolha ícones padrão com base em seu tipo de mensagem, não a severidade do problema subjacente:**
     -   **Ao.** Erro ou problema ocorrido.
     -   **Alerta.** Uma condição que pode causar um problema no futuro.
